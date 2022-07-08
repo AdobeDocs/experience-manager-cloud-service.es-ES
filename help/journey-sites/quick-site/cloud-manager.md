@@ -3,9 +3,9 @@ title: Comprender Cloud Manager y el flujo de trabajo de creación rápida de si
 description: Obtenga información sobre Cloud Manager y cómo vincula el nuevo proceso de creación rápida de sitios.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -17,18 +17,18 @@ Obtenga información sobre Cloud Manager y cómo vincula el nuevo proceso de cre
 >
 >Si su función es exclusivamente desarrollo front-end, puede saltar al artículo [Recuperar información de acceso al repositorio de Git](retrieve-access.md) en este recorrido.
 >
->Si es administrador de AEM, administrador de Cloud Manager, es responsable de las tareas de desarrollo del front-end y de administrador, o simplemente desea comprender el proceso de extremo a extremo en AEM para el desarrollo del front-end, siga leyendo el documento actual y continúe con este recorrido.
+>Si es administrador de AEM y de Cloud Manager y es responsable de las tareas de desarrollo del front-end y de administrador, o simplemente es una persona que desea comprender el proceso de extremo a extremo en AEM para el desarrollo del front-end, siga leyendo el documento actual y continúe con este recorrido.
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo funciona la AEM herramienta de creación rápida de sitios y le ofrece una visión general del flujo de extremo a extremo. Después de leer, debe:
+Este documento le ayuda a comprender cómo funciona la herramienta de creación rápida de sitios de AEM y le ofrece una visión general del flujo de extremo a extremo. Después de leer, debería haber logrado lo siguiente:
 
-* Comprender cómo AEM Sites y Cloud Manager trabajan juntos para facilitar el desarrollo del front-end
-* Vea cómo el paso de personalización del front-end está completamente disociado del AEM y no requiere conocimientos AEM.
+* Comprender cómo AEM Sites y Cloud Manager colaboran para facilitar el desarrollo front-end
+* Vea cómo el paso de personalización del front-end está completamente disociado de AEM y no requiere conocimientos de AEM.
 
 Este documento se centra en comprender estas partes fundamentales de la solución de creación rápida de sitios antes de pasar al siguiente paso del recorrido en el que se inicia la configuración.
 
-Aunque se recomienda continuar con este recorrido paso a paso, si ya comprende que AEM Sites y Cloud Manager trabajan juntos y desean comenzar directamente con la configuración, puede [vaya al siguiente paso del recorrido.](create-site.md)
+Aunque se recomienda continuar con este recorrido paso a paso, si ya comprende que AEM Sites y Cloud Manager trabajan juntos y desean comenzar directamente con la configuración, puede [ir al siguiente paso del recorrido.](create-site.md)
 
 ## Función responsable {#responsible-role}
 
@@ -50,7 +50,7 @@ Es importante comprender que para el desarrollador del front-end no es necesario
 | Conocimientos básicos sobre cómo crear y administrar sitios en AEM | Administrador de AEM |
 | Conocimientos básicos de Cloud Manager | Administrador de Cloud Manager |
 
-Para el desarrollador de front-end, no se necesita ningún conocimiento AEM.
+Para el desarrollador de front-end, no se necesita ningún conocimiento sobre AEM.
 
 ### Herramientas {#tools}
 
@@ -60,17 +60,17 @@ Para el desarrollador de front-end, no se necesita ningún conocimiento AEM.
 | npm | Desarrollador front-end |
 | webpack | Desarrollador front-end |
 | Acceso a Cloud Manager | Administrador de Cloud Manager |
-| Ser miembro de **Propietario empresarial** función en Cloud Manager | Administrador de Cloud Manager |
+| Ser miembro de la función **Propietario empresarial** en Cloud Manager | Administrador de Cloud Manager |
 | Ser administrador de sistemas en Cloud Manager | Administrador de Cloud Manager |
-| Acceso al Admin Console | Administrador de Cloud Manager |
-| Sea miembro de **Administrador de implementación** función en Cloud Manager | Administrador de Cloud Manager |
-| Sea miembro de **Administrador de implementación** función en Cloud Manager | Desarrollador front-end |
+| Acceso a Admin Console | Administrador de Cloud Manager |
+| Sea miembro de la función **Administrador de implementación** en Cloud Manager | Administrador de Cloud Manager |
+| Sea miembro de la función de **Administrador de implementación** en Cloud Manager | Desarrollador front-end |
 
 Para el desarrollador front-end, no es necesario utilizar AEM.
 
 >[!TIP]
 >
->Si no está familiarizado con las funciones y la administración de funciones de Cloud Manager, consulte el documento Permisos basados en roles en la [Recursos adicionales](#additional-resources) para obtener más información.
+>Si no está familiarizado con las funciones y la administración de funciones de Cloud Manager, consulte el documento Permisos basados en roles en la sección [Recursos adicionales](#additional-resources).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -82,48 +82,48 @@ A los efectos del presente recorrido, no es necesario tener una comprensión com
 
 ![Estructura de Cloud Manager](assets/cloud-manager-structure.png)
 
-* **INQUILINO** - Cada cliente está aprovisionado con un inquilino.
-* **PROGRAMAS** - Cada inquilino tiene uno o más programas, que a menudo reflejan las soluciones con licencia del cliente.
-* **ENTORNOS** - Cada programa tiene múltiples entornos, como producción para contenido en directo, uno para ensayo y otro para desarrollo.
-* **REPOSITORIO** - Los entornos tienen repositorios Git donde se mantiene el código de la aplicación y del front-end.
-* **HERRAMIENTAS Y FLUJOS DE TRABAJO** : Las canalizaciones administran la implementación de código desde los repositorios a los entornos.
+* **INQUILINO**: cada cliente está aprovisionado con un inquilino.
+* **PROGRAMAS**: cada inquilino tiene uno o más programas, que a menudo reflejan las soluciones con licencia del cliente.
+* **ENTORNOS**: cada programa tiene múltiples entornos, como producción para contenido en directo, uno para ensayo y otro para desarrollo.
+* **REPOSITORIO**: los entornos tienen repositorios Git donde se mantiene el código de la aplicación y del front-end.
+* **HERRAMIENTAS Y FLUJOS DE TRABAJO**: las canalizaciones administran la implementación de código desde los repositorios a los entornos.
 
 Un ejemplo suele ser útil para contextualizar esta jerarquía.
 
-* WKND Las empresas de viajes y aventura pueden ser una **inquilino** que se centra en medios relacionados con viajes.
-* El inquilino de WKND Travel and Adventure Enterprises puede tener dos **programas**: un programa Sites para WKND Magazine y un programa Assets para WKND Media.
-* Los programas WKND Magazine y WKND Media tendrían desarrollo, escenario y producción **entornos**.
+* Las empresas de viajes y aventura de WKND pueden ser un **inquilino** que se centra en medios relacionados con viajes.
+* El inquilino de empresas de viajes y aventura de WKND puede tener dos **programas**: un programa de Sites para la revista de WKND y uno de Assets para los medios de WKND.
+* Los programas de revista de WKND y de medios de WKND tendrían **entornos** de desarrollo, ensayo y producción.
 
-## Flujo de desarrollo del front-end para la creación rápida de sitios {#flow}
+## El flujo de desarrollo front-end para la Creación rápida de sitios {#flow}
 
-El flujo general es sencillo e intuitivo, aunque aún no tenga una amplia experiencia con Cloud Manager.
+El flujo general es sencillo e intuitivo, incluso si aún no tiene mucha experiencia con Cloud Manager.
 
 1. El administrador de AEM inicia sesión en un entorno de AEM y crea un nuevo sitio con una plantilla de sitio.
-1. El administrador de Cloud Manager crea una canalización de front-end en Cloud Manager. La canalización organiza la implementación de código desde un repositorio de Git a un entorno AEM.
-1. El administrador de AEM exporta el tema del sitio desde la instancia AEM del programa y lo proporciona al desarrollador de front-end.
-1. El administrador de Cloud Manager concede al desarrollador del front-end acceso al repositorio de Git de AEM donde se pueden realizar personalizaciones.
-1. El desarrollador de front-end recupera las credenciales de acceso para acceder a Git y a la canalización.
+1. El administrador de Cloud Manager crea una canalización front-end en Cloud Manager. La canalización organiza la implementación de código desde un repositorio de Git a un entorno de AEM.
+1. El administrador de AEM exporta el tema del sitio desde la instancia de AEM del programa y lo proporciona al desarrollador front-end.
+1. El administrador de Cloud Manager concede al desarrollador front-end acceso al repositorio de Git de AEM donde se pueden llevar a cabo personalizaciones.
+1. El desarrollador front-end recupera las credenciales de acceso para acceder a Git y a la canalización.
 1. El desarrollador front-end personaliza el tema, lo prueba con contenido real del sitio mediante un proxy y luego confirma los cambios en el repositorio de Git.
-1. El desarrollador de front-end ejecuta la canalización para implementar las personalizaciones de temas en el entorno de producción del programa.
+1. El desarrollador front-end ejecuta la canalización para implementar las personalizaciones de temas en el entorno de producción del programa.
 
-![Flujo de creación rápida del sitio](assets/qsc-flow.png)
+![Flujo de Creación rápida de sitios](assets/qsc-flow.png)
 
-La principal ventaja de utilizar la herramienta de creación rápida de sitios es que el desarrollador de front-end es el único responsable de la personalización real. El desarrollador de front-end no tiene interacción con AEM o necesita tener conocimientos de AEM.
+La principal ventaja de utilizar la herramienta de Creación rápida de sitios es que el desarrollador front-end es el único responsable de la personalización real. El desarrollador front-end no interactúa con AEM ni necesita tener conocimientos de AEM.
 
 ## Siguientes pasos {#what-is-next}
 
-Ahora que ha completado esta parte del recorrido de creación rápida AEM sitio, debe:
+Ahora que ha completado esta parte del Recorrido de creación rápida de sitios de AEM, debe hacer lo siguiente:
 
-* Comprender cómo AEM Sites y Cloud Manager trabajan juntos para facilitar el desarrollo del front-end
-* Vea cómo el paso de personalización del front-end está completamente disociado del AEM y no requiere conocimientos AEM.
+* Comprender cómo AEM Sites y Cloud Manager colaboran para facilitar el desarrollo front-end
+* Vea cómo el paso de personalización del front-end está completamente disociado de AEM y no requiere conocimientos de AEM.
 
-Aproveche este conocimiento y continúe con su recorrido de Creación Rápida AEM Sitio revisando el documento [Crear sitio a partir de una plantilla,](create-site.md) donde aprenderá a crear rápidamente un nuevo sitio AEM con una plantilla.
+Aproveche este conocimiento y continúe con su recorrido de Creación rápida de sitios de AEM revisando el documento [Creación de un sitio a partir de una plantilla,](create-site.md) donde aprenderá a crear rápidamente un nuevo sitio de AEM con una plantilla.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida del sitio revisando el documento [Crear sitio a partir de una plantilla,](create-site.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
+Aunque se recomienda pasar a la siguiente parte del Recorrido de creación rápida de sitios de AEM revisando el documento [Creación de un sitio a partir de una plantilla,](create-site.md) los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para proseguir el recorrido.
 
-* [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) : Si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
-* [Permisos basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) : Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Consulte este documento para obtener detalles sobre estas funciones y cómo administrarlas.
-* [npm](https://www.npmjs.com) - AEM temas utilizados para construir sitios rápidamente se basan en npm.
-* [webpack](https://webpack.js.org) - AEM temas utilizados para construir sitios rápidamente dependen del webpack.
+* [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=es): si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
+* [Permisos basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=es): Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Consulte este documento para obtener detalles sobre estas funciones y cómo administrarlas.
+* [npm](https://www.npmjs.com): los temas de AEM utilizados para construir sitios rápidamente se basan en npm.
+* [webpack](https://webpack.js.org): los temas de AEM utilizados para construir sitios rápidamente dependen del webpack.
