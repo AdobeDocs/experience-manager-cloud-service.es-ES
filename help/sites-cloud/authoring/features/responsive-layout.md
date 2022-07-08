@@ -3,9 +3,9 @@ title: Diseño adaptable
 description: El AEM le permite llevar a cabo un diseño interactivo para sus páginas
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1765'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -229,9 +229,9 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
    >
    >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
 
-   * **Mostrar componentes**
-Seleccione los componentes principales para mostrar la barra de herramientas de acciones con la variable 
-**Mostrar componentes ocultos** . En este ejemplo, hay dos componentes ocultos.
+   * **Mostrar los componentes** 
+Seleccione los componentes principales para mostrar la barra de herramientas de acciones con la 
+Opción **Mostrar componentes ocultos**. En este ejemplo, hay dos componentes ocultos.
 
       ![Mostrar componentes](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.
