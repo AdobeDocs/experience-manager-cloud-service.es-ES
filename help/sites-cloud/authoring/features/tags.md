@@ -3,9 +3,9 @@ title: Uso de etiquetas
 description: Las etiquetas son un método rápido y fácil de clasificar contenido dentro del sitio web
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 96%
 Las etiquetas son un método rápido y fácil de clasificar contenido dentro de un sitio web. Las etiquetas pueden considerarse como palabras clave o marcas que se pueden adjuntar a una página, un recurso o cualquier otro contenido para que con las búsquedas se encuentre ese contenido y el contenido relacionado.
 
 * Consulte Administración de etiquetas para obtener información sobre cómo crear y administrar las etiquetas, así como sobre las etiquetas de contenido que se han aplicado. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* Consulte [Etiquetado para desarrolladores](/help/implementing/developing/introduction/tagging-framework.md) para obtener información sobre el marco de etiquetado, así como la inclusión y ampliación de etiquetas en aplicaciones personalizadas.
+* Consulte [Etiquetado para desarrolladores](/help/implementing/developing/introduction/tagging-framework.md) para obtener información sobre el marco de etiquetado, así como la forma de incluir y ampliar las etiquetas en aplicaciones personalizadas.
 
 ## Diez motivos para utilizar etiquetas {#ten-reasons-to-use-tagging}
 
