@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
 workflow-type: tm+mt
 source-wordcount: '2993'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ En Navegación, las consolas disponibles son:
 | Proyectos | La consola Proyectos le proporciona acceso directo a sus proyectos. [Los proyectos son paneles virtuales](/help/sites-cloud/authoring/projects/overview.md) que se pueden utilizar para crear un equipo. A continuación, puede proporcionar a ese equipo acceso a recursos, flujos de trabajo y tareas, lo que permite a las personas colaborar para lograr un objetivo común. |
 | Sitios | La consola Sitios le permite [crear, ver y administrar sitios web](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) que se ejecuten en su instancia de AEM. Mediante esta consola puede crear, editar, copiar, mover y eliminar páginas, iniciar flujos de trabajo y publicar páginas. |
 | Fragmentos de experiencias | Un [fragmento de experiencia](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) es una experiencia independiente que puede reutilizarse en diversos canales y tener variaciones, de manera que se evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias. |
-| Assets | La consola Recursos permite importar y administrar [recursos digitales, como imágenes, vídeos, documentos y archivos de audio](/help/assets/overview.md). Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. También puede crear y administrar [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) desde la consola Recursos . |
+| Assets | La consola Recursos le permite importar y administrar [recursos digitales, como imágenes, vídeos, documentos y archivos de audio](/help/assets/overview.md). Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. También puede crear y administrar [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) desde la consola Recursos. |
 | Personalización | [Esta consola ofrece un marco de herramientas para crear contenido dirigido y presentar experiencias personalizadas.](/help/sites-cloud/authoring/personalization/overview.md) |
 | Fragmentos de contenido | [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md) permite diseñar, crear, depurar y publicar contenido independiente de las páginas. Permiten preparar contenido estructurado listo para su uso en varias ubicaciones/en varios canales, y es ideal tanto para la creación de páginas como para la entrega sin encabezado. |
 
@@ -99,7 +99,7 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
    También puede utilizar la [tecla de método abreviado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra inclinada) para iniciar una búsqueda desde cualquier consola.
 
-* [Soluciones](https://www.adobe.com/experience-cloud.html)
+* [Soluciones](https://www.adobe.com/es/experience-cloud.html)
 
    ![Botón Soluciones](/help/sites-cloud/authoring/assets/solutions.png)
 
@@ -318,7 +318,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
    * La plantilla de la página se basa en
    * Detalles de la modificación
    * Idioma de la página
-   * Detalles de publicación y vista previa
+   * Detalles de publicación y previsualización
 
 
 ### Vista de tarjeta {#card-view}
@@ -364,7 +364,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
    * **Nombre**: nombre de página, que puede resultar útil en un entorno de creación multilingüe, ya que forma parte de la dirección URL de la página y no cambia con el idioma
    * **Modificada**: fecha de la última modificación y el usuario que la efectuó
    * **Publicada**: estado de publicación
-   * **Vista previa** - Estado de la vista previa
+   * **Vista previa**: estado de la vista previa
    * **Plantilla**: plantilla en la que se basa la página
    * **Flujo de trabajo**: flujo de trabajo aplicado actualmente en la página. Tiene más información disponible al pasar el ratón o abrir la línea de tiempo.
    * **Análisis de la página**
@@ -386,13 +386,13 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
    ![Lista de pedidos](/help/sites-cloud/authoring/assets/order-list.png)
 
-## Selector de raíl {#rail-selector}
+## Selector de carril {#rail-selector}
 
 El **Selector de carril** está disponible en la parte superior izquierda de la ventana y las opciones que muestra dependen de tus consolas actuales.
 
 ![Selector de carril expandido](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-Por ejemplo, en la **Sitios** consola puede seleccionar contenido solamente (el valor predeterminado), el árbol de contenido, la cronología, las referencias, los detalles del sitio o el panel lateral de filtro.
+Por ejemplo, en la consola **Sitios** puede seleccionar solo contenido (el valor predeterminado), árboles de contenido, la cronología, referencias o el panel lateral de filtro.
 
 Si se selecciona contenido solamente, después solo aparece el icono de raíl. Cuando se selecciona cualquier otra opción, el nombre de la opción aparece al lado del icono de raíl.
 
@@ -414,7 +414,7 @@ Al utilizar el panel lateral del árbol de contenido junto con una vista de list
 >
 >Consulte los [métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) para obtener más información.
 
-### Escala de tiempo {#timeline}
+### Escala de cronología {#timeline}
 
 La cronología puede utilizarse para ver o iniciar eventos que se hayan producido en el recurso seleccionado. Para abrir la columna de cronología, utilice el selector del raíl:
 
@@ -462,15 +462,15 @@ La sección **Referencias** muestra cualquier conexión con el recurso seleccion
 
 ### Sitio {#site}
 
-**Sitio** muestra detalles de sitios [creado mediante una plantilla de sitio.](/help/sites-cloud/administering/site-creation/create-site.md)
+**Sitio** muestra detalles de sitios [creados mediante una plantilla de sitio.](/help/sites-cloud/administering/site-creation/create-site.md)
 
 ![Carril del sitio](../assets/site-rail.png)
 
-Consulte el documento [Uso del carril del sitio para administrar el tema del sitio](/help/sites-cloud/administering/site-creation/site-rail.md) para obtener más información sobre cómo puede utilizar el carril para administrar el [del sitio.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Consulte el documento [Uso del carril del sitio para administrar el tema del sitio](/help/sites-cloud/administering/site-creation/site-rail.md) para obtener más información sobre cómo puede utilizar el carril para administrar el [tema del sitio.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
->Puede encontrar una descripción completa del proceso de crear un nuevo sitio a partir de una plantilla y personalizar su tema en la [Recorrido de creación rápida de sitios.](/help/journey-sites/quick-site/overview.md)
+>Puede encontrar una descripción completa del proceso de creación de un nuevo sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios.](/help/journey-sites/quick-site/overview.md)
 
 ### Filtro {#filter}
 

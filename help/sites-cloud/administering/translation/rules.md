@@ -1,5 +1,5 @@
 ---
-title: Identificación del contenido para traducir
+title: Identificación del contenido a traducir
 description: Descubra cómo las reglas de traducción identifican el contenido que necesita traducción.
 feature: Language Copy
 role: Admin
@@ -7,25 +7,25 @@ exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Identificación del contenido para traducir {#identifying-content-to-translate}
+# Identificación del contenido a traducir {#identifying-content-to-translate}
 
-Las reglas de traducción identifican el contenido que se debe traducir para páginas, componentes y recursos que se incluyen en proyectos de traducción o que se excluyen de ellos. Cuando se traduce una página o un recurso, AEM extrae este contenido para que se pueda enviar al servicio de traducción.
+Las reglas de traducción identifican el contenido que se debe traducir para páginas, componentes y recursos que se incluyen en proyectos de traducción o que se excluyen de ellos. Cuando se traduce una página o un recurso, AEM extrae ese contenido para que se pueda enviar al servicio de traducción.
 
 >[!TIP]
 >
->Si es nuevo en traducir contenido, consulte nuestra [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia de traducción ni AEM.
+>Si acaba de empezar a traducir contenido, consulte nuestro [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia con la traducción o con AEM.
 
 ## Fragmentos de contenido y reglas de traducción {#content-fragments}
 
-Las reglas de traducción descritas en este documento solo se aplican a los fragmentos de contenido si la variable **Habilitar campos del modelo de contenido para su traducción** no se ha activado en la [nivel de configuración del marco de integración de traducción.](integration-framework.md#assets-configuration-properties)
+Las reglas de traducción descritas en este documento solo se aplican a los fragmentos de contenido si la opción **Habilitar campos de modelo de contenido para la traducción** no se ha activado en el [nivel de configuración del marco trabajo de integración de traducción.](integration-framework.md#assets-configuration-properties)
 
-Si la variable **Habilitar campos del modelo de contenido para su traducción** está activa, AEM usará la opción **Translatable** campo en [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) para determinar si el campo se va a traducir y crea automáticamente reglas de traducción según corresponda. Esta opción reemplaza las reglas de traducción que haya creado y no requiere intervención ni pasos adicionales.
+Si la opción **Habilitar campos de modelo de contenido para la traducción** está activa, AEM usará el campo **Traducible** en [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) para determinar si el campo se va a traducir y crea automáticamente reglas de traducción según corresponda. Esta opción reemplaza las reglas de traducción que haya creado y no requiere intervención ni pasos adicionales.
 
-Si desea utilizar reglas de traducción para traducir los fragmentos de contenido, la variable **Habilitar campos del modelo de contenido para su traducción** en la configuración del marco de integración de traducción debe estar desactivada y debe seguir los pasos descritos a continuación para crear las reglas.
+Si desea utilizar reglas de traducción para traducir los fragmentos de contenido, la opción **Habilitar campos de modelo de contenido para la traducción** en la configuración del marco trabajo de integración de traducción debe estar desactivada y debe seguir los pasos descritos a continuación para crear las reglas.
 
 ## Información general {#overview}
 
@@ -46,19 +46,19 @@ Las reglas incluyen la siguiente información:
 * Nombres de las propiedades del nodo que contienen el contenido que se va a traducir
    * La propiedad puede ser específica para un tipo de recurso específico o para todos los tipos de recurso.
 
-Por ejemplo, puede crear una regla que traduzca el contenido que los autores añaden a todos los componentes de texto de sus páginas. La regla puede identificar la variable `/content` y `text` para la variable `core/wcm/components/text/v2/text` componente.
+Por ejemplo, puede crear una regla que traduzca el contenido que los autores añaden a todos los componentes de texto de las páginas. La regla puede identificar el nodo `/content` y la propiedad `text` para el componente `core/wcm/components/text/v2/text`.
 
-Hay un [consola](#translation-rules-ui) que se ha añadido para configurar reglas de traducción. Las definiciones de la IU rellenarán el archivo por usted.
+Hay una [consola](#translation-rules-ui) que se ha añadido para configurar reglas de traducción. Las definiciones de la IU rellenarán el archivo por usted.
 
-Para obtener una descripción general de las funciones de traducción de contenido de AEM, consulte [Traducción de contenido para sitios multilingües](overview.md).
+Para obtener información general sobre las funciones de traducción de contenido de AEM, consulte [Traducción de contenido para sitios multilingües](overview.md).
 
 >[!NOTE]
 >
->AEM admite la asignación individual entre tipos de recursos y atributos de referencia para la traducción del contenido al que se hace referencia en una página.
+>AEM admite la asignación individual entre tipos de recursos y atributos de referencia para la traducción del contenido referenciado en una página.
 
 ## Sintaxis de reglas para páginas, componentes y recursos {#rule-syntax-for-pages-components-and-assets}
 
-Una regla es `node` elemento con uno o más elementos secundarios `property` elementos y cero o más elementos secundarios `node` elementos:
+Una regla es un `node` elemento con uno o más elementos `property` secundarios y cero o más elementos `node` secundarios:
 
 ```xml
 <node path="content path">
@@ -69,17 +69,17 @@ Una regla es `node` elemento con uno o más elementos secundarios `property` ele
 </node>
 ```
 
-Cada uno de estos `node` tiene las siguientes características:
+Cada uno de estos elementos `node` tiene las siguientes características:
 
-* La variable `path` contiene la ruta al nodo raíz de la rama a la que se aplican las reglas.
-* Niño `property` los elementos identifican las propiedades del nodo que se deben traducir para todos los tipos de recursos:
-   * La variable `name` contiene el nombre de la propiedad.
-   * La opción `translate` el atributo es igual a `false` si la propiedad no está traducida. De forma predeterminada, el valor es `true`. Este atributo es útil cuando se anulan reglas anteriores.
-* Niño `node` los elementos identifican las propiedades del nodo que se deben traducir para tipos de recursos específicos:
-   * La variable `resourceType` contiene la ruta que se resuelve en el componente que implementa el tipo de recurso.
-   * Niño `property` identifique la propiedad node que desea traducir. Utilice este nodo del mismo modo que el nodo secundario `property` elementos para reglas de nodo.
+* El atributo `path` contiene la ruta al nodo raíz de la rama a la que se aplican las reglas.
+* Los elementos secundarios `property` identifican las propiedades del nodo que se deben traducir para todos los tipos de recursos:
+   * El atributo `name` contiene el nombre de la propiedad.
+   * El atributo opcional `translate` es igual a `false` si la propiedad no está traducida. El valor predeterminado es `true`. Este atributo es útil cuando se anulan reglas anteriores.
+* Los elementos secundarios `node` identifican las propiedades del nodo que se deben traducir para tipos de recursos específicos:
+   * El atributo `resourceType` contiene la ruta que se resuelve en el componente que implementa el tipo de recurso.
+   * Los elementos secundarios `property` identifican la propiedad del nodo que se debe traducir. Utilice este nodo del mismo modo que los elementos secundarios `property` para reglas de nodo.
 
-La siguiente regla de ejemplo causa el contenido de todas las `text` propiedades que se van a traducir para todas las páginas debajo de la variable `/content` nodo . La regla es efectiva para cualquier componente que almacene contenido en un `text` , como el componente de texto.
+La siguiente regla de ejemplo hace que el contenido de todas las propiedades `text` se traduzca para todas las páginas debajo del nodo `/content`. La regla es efectiva para cualquier componente que almacene contenido en una propiedad `text`, como el componente de texto.
 
 ```xml
 <node path="/content">
@@ -87,7 +87,7 @@ La siguiente regla de ejemplo causa el contenido de todas las `text` propiedades
 </node>
 ```
 
-El siguiente ejemplo traduce el contenido de todas las `text` y traduce también otras propiedades del componente de imagen. Si otros componentes tienen propiedades con el mismo nombre, la regla no se les aplica.
+El siguiente ejemplo traduce el contenido de todas las propiedades `text` y traduce también otras propiedades del componente de imagen. Si otros componentes tienen propiedades con el mismo nombre, la regla no se les aplica.
 
 ```xml
 <node path="/content">
@@ -102,16 +102,16 @@ El siguiente ejemplo traduce el contenido de todas las `text` y traduce también
 
 ## Sintaxis de reglas para extraer recursos de páginas  {#rule-syntax-for-extracting-assets-from-pages}
 
-Utilice la siguiente sintaxis de regla para incluir recursos incrustados en componentes o a los que se hace referencia desde ellos:
+Utilice la siguiente sintaxis de regla para incluir recursos incrustados o referenciados en componentes:
 
 ```xml
 <assetNode resourceType="path to component" assetReferenceAttribute="property that stores asset"/>
 ```
 
-Cada `assetNode` tiene las siguientes características:
+Cada elemento `assetNode` tiene las siguientes características:
 
-* One `resourceType` que es igual a la ruta que se resuelve en el componente
-* One `assetReferenceAttribute` atributo igual al nombre de la propiedad que almacena el binario de recursos (para recursos incrustados) o la ruta al recurso al que se hace referencia
+* Un atributo `resourceType` igual a la ruta que se resuelve en el componente
+* Un atributo `assetReferenceAttribute` igual al nombre de la propiedad que almacena el binario de recursos (para recursos incrustados) o la ruta al recurso referenciado
 
 El siguiente ejemplo extrae imágenes del componente de imagen:
 
@@ -121,7 +121,7 @@ El siguiente ejemplo extrae imágenes del componente de imagen:
 
 ## Reglas de anulación {#overriding-rules}
 
-La variable `translation_rules.xml` consta de `nodelist` elemento con varios elementos secundarios `node` elementos. AEM lee la lista de nodos de arriba a abajo. Cuando varias reglas se dirigen al mismo nodo, se utiliza la regla que se encuentra más abajo en el archivo. Por ejemplo, las siguientes reglas causan todo el contenido en `text` propiedades que se van a traducir excepto para `/content/mysite/en` rama de páginas:
+El archivo `translation_rules.xml` consta de un elemento `nodelist` con varios elementos secundarios `node`. AEM lee la lista de nodos de arriba a abajo. Cuando varias reglas se dirigen al mismo nodo, se utiliza la regla que se encuentra más abajo en el archivo. Por ejemplo, las siguientes reglas hacen que todo el contenido de `text` propiedades se traduzca excepto para la `/content/mysite/en` rama de páginas:
 
 ```xml
 <nodelist>
@@ -136,9 +136,9 @@ La variable `translation_rules.xml` consta de `nodelist` elemento con varios ele
 
 ## Filtrado de propiedades {#filtering-properties}
 
-Puede filtrar nodos que tengan una propiedad específica utilizando una `filter` elemento.
+Puede filtrar nodos que tengan una propiedad específica utilizando un `filter` elemento.
 
-Por ejemplo, las siguientes reglas causan todo el contenido en `text` propiedades que desea traducir excepto para los nodos que tienen la propiedad `draft` configure como `true`.
+Por ejemplo, las siguientes reglas hacen que todo el contenido en `text` propiedades se traduzca a excepción de los nodos que tienen la propiedad `draft` configurada como `true`.
 
 ```xml
 <nodelist>
@@ -151,31 +151,31 @@ Por ejemplo, las siguientes reglas causan todo el contenido en `text` propiedade
 <nodelist>
 ```
 
-## Interfaz de usuario de reglas de traducción {#translation-rules-ui}
+## Reglas de traducción de la IU {#translation-rules-ui}
 
 También hay una consola disponible para configurar las reglas de traducción.
 
-Para acceder a él:
+Para acceder a ella:
 
-1. Vaya a **Herramientas** y luego **General**.
+1. Vaya a **Herramientas** y luego a **General**.
 
-1. Select **Configuración de traducción**.
+1. Seleccione **Configuración de traducción**.
 
-En la interfaz de usuario de las reglas de traducción puede:
+En la IU de las reglas de traducción puede:
 
-1. **Agregar contexto**, que le permite añadir una ruta.
+1. **Agregar contexto**, lo que le permite agregar una ruta.
 
    ![Agregar contexto de traducción](../assets/add-translation-context.png)
 
-1. Utilice el navegador de rutas para seleccionar el contexto necesario y toque o haga clic en el **Confirmar** para guardar.
+1. Utilice el navegador de rutas para seleccionar el contexto necesario y toque o haga clic en el botón **Confirmar** para guardar.
 
    ![Seleccionar contexto](../assets/select-context.png)
 
-1. A continuación, debe seleccionar el contexto y hacer clic en **Editar**. Se abrirá el Editor de reglas de traducción.
+1. A continuación, debe seleccionar el contexto y hacer clic en **Editar**. Se abrirá el editor de reglas de traducción.
 
    ![Editor de reglas de traducción](../assets/translation-rules-editor.png)
 
-Hay cuatro atributos que puede cambiar mediante la interfaz de usuario:
+Hay cuatro atributos que puede cambiar mediante la IU:
 
 * `isDeep`
 * `inherit`
@@ -184,15 +184,15 @@ Hay cuatro atributos que puede cambiar mediante la interfaz de usuario:
 
 ### isDeep {#isdeep}
 
-**`isDeep`**  es aplicable en los filtros de nodo y es true de forma predeterminada. Comprueba si el nodo (o sus antecesores) contiene esa propiedad con el valor de propiedad especificado en el filtro. Si es false, solo comprueba en el nodo actual.
+**`isDeep`** es aplicable en los filtros de nodo y es true de forma predeterminada. Comprueba si el nodo (o sus antecesores) contiene esa propiedad con el valor de propiedad especificado en el filtro. Si es false, solo lo comprueba en el nodo actual.
 
-Por ejemplo, los nodos secundarios se agregan a un trabajo de traducción incluso cuando el nodo principal tiene la propiedad `draftOnly` se establece en true para marcar el contenido de borrador. Aquí `isDeep` entra en juego y comprueba si los nodos principales tienen propiedad `draftOnly` como true y excluye esos nodos secundarios.
+Por ejemplo, los nodos secundarios se agregan a un trabajo de traducción incluso cuando el nodo principal tiene la propiedad `draftOnly` establecida en true para marcar el contenido de borrador. Aquí `isDeep` entra en juego y comprueba si los nodos principales tienen la propiedad `draftOnly` como true y excluye esos nodos secundarios.
 
-En el editor, puede marcar o desmarcar **Es profundo** en el **Filtros** pestaña .
+En el editor, puede marcar o desmarcar **isDeep** en la pestaña **Filtros**.
 
 ![Filtrar reglas](../assets/translation-rules-editor-filters.png)
 
-Este es un ejemplo del XML resultante cuando **Es profundo** está desmarcada en la interfaz de usuario:
+Este es un ejemplo del XML resultante cuando **isDeep** está desmarcado en la IU:
 
 ```xml
  <filter>
@@ -202,25 +202,25 @@ Este es un ejemplo del XML resultante cuando **Es profundo** está desmarcada en
 
 ### heredar {#inherit}
 
-**`inherit`** es aplicable a las propiedades. De forma predeterminada, todas las propiedades se heredan, pero si desea que el elemento secundario no herede alguna propiedad, puede marcar esta propiedad como falsa para que se aplique únicamente a ese nodo específico.
+**`inherit`** es aplicable a las propiedades. De forma predeterminada, todas las propiedades se heredan, pero si desea que el nodo secundario no herede alguna propiedad, puede marcar esta propiedad como falsa para que se aplique únicamente a ese nodo específico.
 
-En la interfaz de usuario, puede marcar o desmarcar **Heredar** en el **Propiedades** pestaña .
+En la IU, puede marcar o desmarcar **Heredar** en la pestaña **Propiedades**.
 
 ### traducir {#translate}
 
 **`translate`** se utiliza simplemente para especificar si se desea traducir o no una propiedad.
 
-En la interfaz de usuario, puede marcar o desmarcar **Traducir** en el **Propiedades** pestaña .
+En la IU, puede marcar o desmarcar **Traducir** en la pestaña **Propiedades**.
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
 **`updateDestinationLanguage`** se utiliza para propiedades que no tienen texto, sino códigos de idioma, por ejemplo `jcr:language`. El usuario no traduce texto sino la configuración regional del idioma de origen a destino. Estas propiedades no se envían para su traducción.
 
-En la interfaz de usuario, puede marcar o desmarcar **Traducir** en el **Propiedades** para modificar este valor, pero para las propiedades específicas que tienen códigos de idioma como valor.
+En la IU, puede marcar o desmarcar **Traducir** en la pestaña **Propiedades** para modificar este valor, pero para las propiedades específicas que tienen códigos de idioma como valor.
 
-Para ayudar a aclarar la diferencia entre `updateDestinationLanguage` y `translate`, aquí hay un ejemplo sencillo de contexto con solo dos reglas:
+Para aclarar la diferencia entre `updateDestinationLanguage` y `translate`, aquí hay un ejemplo sencillo de contexto con solo dos reglas:
 
-![ejemplo updateDestinationLanguage](../assets/translation-rules-updatedestinationlanguage.png)
+![ejemplo de updateDestinationLanguage](../assets/translation-rules-updatedestinationlanguage.png)
 
 El resultado en el xml tendrá este aspecto:
 
@@ -231,13 +231,13 @@ El resultado en el xml tendrá este aspecto:
 
 ## Edición manual del archivo de reglas {#editing-the-rules-file-manually}
 
-La variable `translation_rules.xml` que se instala con AEM contiene un conjunto predeterminado de reglas de traducción. Puede editar el archivo para satisfacer los requisitos de sus proyectos de traducción. Por ejemplo, puede agregar reglas para que se traduzca el contenido de los componentes personalizados.
+El archivo `translation_rules.xml` que se instala con AEM contiene un conjunto predeterminado de reglas de traducción. Puede editar el archivo para satisfacer los requisitos de sus proyectos de traducción. Por ejemplo, puede agregar reglas para que se traduzca el contenido de los componentes personalizados.
 
-Si edita la variable `translation_rules.xml` mantenga una copia de seguridad en un paquete de contenido. La reinstalación de ciertos paquetes de AEM puede reemplazar al actual `translation_rules.xml` con el original. Para restaurar las reglas en esta situación, puede instalar el paquete que contiene la copia de seguridad.
+Si edita el archivo `translation_rules.xml`, mantenga una copia de seguridad en un paquete de contenido. La reinstalación de ciertos paquetes de AEM puede reemplazar al archivo `translation_rules.xml` actual con el original. Para restaurar las reglas en esta situación, puede instalar el paquete que contiene la copia de seguridad.
 
 >[!NOTE]
 >
->Después de crear el paquete de contenido, reconstruya el paquete cada vez que edite el archivo.
+>Después de crear el paquete de contenido, vuelva a compilar el paquete cada vez que edite el archivo.
 
 ## Ejemplo de archivo de reglas de traducción {#example-translation-rules-file}
 

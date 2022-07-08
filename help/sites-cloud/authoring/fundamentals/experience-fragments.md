@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -23,12 +23,12 @@ Un fragmento de experiencia:
 * Forma parte de una experiencia (página).
 * Se puede utilizar en varias páginas.
 * Se basa en una plantilla (solo editable) para definir la estructura y los componentes.
-* Esta plantilla se utiliza para crear la variable *página raíz* del fragmento de experiencias.
+* Esta plantilla se utiliza para crear la *página raíz* del Fragmento de experiencia.
 * Se compone de uno o varios componentes, con diseño, en un sistema de párrafos.
 * Puede contener otros fragmentos de experiencias.
 * Se puede combinar con otros componentes (incluidos otros fragmentos de experiencias) para formar una página completa (experiencia).
 * Se pueden crear una o más variaciones basadas en la página raíz.
-* Estas variaciones pueden compartir contenido o componentes.
+* Estas pueden compartir contenido o componentes.
 * Se puede desglosar en bloques de construcción que se pueden utilizar en varias variaciones del fragmento.
 
 Puede utilizar los fragmentos de experiencias:
@@ -180,7 +180,7 @@ Para crear un fragmento de experiencia:
 
    >[!NOTE]
    >
-   >Las etiquetas de la plantilla Fragmento de experiencia no se combinarán con etiquetas en esta página raíz del fragmento de experiencia.
+   >Las etiquetas de la plantilla de Fragmento de experiencia no se combinarán con etiquetas en esta página raíz del Fragmento de experiencia.
    >
    >Son totalmente independientes.
 
@@ -291,7 +291,7 @@ Para crear un nuevo bloque de creación:
 
 El bloque de creación se puede ver en la pestaña **Bloques de creación**. Para cada bloque, están disponibles las siguientes acciones:
 
-* **Ir a maestro**: abra la variación de la página raíz en una pestaña nueva
+* **Ir a la variación principal**: abrir la variación de la página raíz en una nueva pestaña
 * **Cambiar nombre**
 * **Eliminar**
 
