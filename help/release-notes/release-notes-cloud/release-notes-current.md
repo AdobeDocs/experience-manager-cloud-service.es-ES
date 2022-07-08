@@ -1,12 +1,12 @@
 ---
-title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 88506fd4538c55a880904ea37055eb97d4ae05b3
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 18%
+ht-degree: 20%
 
 ---
 
@@ -39,7 +39,7 @@ Consulte el vídeo Información general de la versión de junio de 2022 para ver
 
 ### Nuevas funciones de [!DNL Sites] {#sites-features}
 
-* Un nuevo [interfaz de usuario](/help/headless/content-fragments/content-fragment-console.md) ya está disponible para administradores de contenido y autores de contenido para administrar de forma eficaz (realizar acciones como publicar, cancelar la publicación, copiar, mover, etc.), buscar/filtrar y crear fragmentos de contenido para casos de uso sin encabezado.
+* Un nuevo [interfaz de usuario](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ya está disponible para administradores de contenido y autores de contenido para administrar de forma eficaz (realizar acciones como publicar, cancelar la publicación, copiar, mover, etc.), buscar/filtrar y crear fragmentos de contenido para casos de uso sin encabezado.
 
    ![Consola de fragmento de contenido](/help/release-notes/assets/cf-ui.png)
 
@@ -100,7 +100,7 @@ Experience Manager Assets utiliza las capacidades de Adobe Sensei AI ahora [dist
 
 ## Cloud Manager {#cloud-manager}
 
-Puede encontrar una lista completa de las versiones mensuales de Cloud Manager [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Puede encontrar una lista completa de las versiones mensuales de Cloud Manager [aquí](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
 ## Herramientas de migración {#migration-tools}
 

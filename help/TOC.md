@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 778a3687447c1e07605fdb95b3934b10d22483e8
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3691'
 ht-degree: 94%
 
 ---
@@ -342,7 +342,7 @@ ht-degree: 94%
 + Assets {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [Información general y novedades](/help/assets/overview.md)
-   + [Cambios importantes en [!DNL Assets] como [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
+   + [Cambios importantes en  [!DNL Assets]  como  [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] arquitectura](/help/assets/architecture.md)
    + [Formatos de archivo compatibles](/help/assets/file-format-support.md)
    + [Información general sobre los microservicios de recursos](/help/assets/asset-microservices-overview.md)
@@ -359,7 +359,7 @@ ht-degree: 94%
       + [Etiquetas inteligentes para imágenes](/help/assets/smart-tags.md)
       + [Etiquetado inteligente de activos de vídeo](/help/assets/smart-tags-video-assets.md)
       + [Organizar recursos](/help/assets/organize-assets.md)
-      + [Uso [!DNL Adobe Stock] activos](/help/assets/aem-assets-adobe-stock.md)
+      + [Uso  [!DNL Adobe Stock]  activos](/help/assets/aem-assets-adobe-stock.md)
       + [Administrar colecciones](/help/assets/manage-collections.md)
       + [Información general sobre metadatos](/help/assets/manage-metadata.md)
       + [Integrar con [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
@@ -394,9 +394,9 @@ ht-degree: 94%
       + [Funciones de MediaLibrary](/help/assets/medialibrary.md)
       + [Importación y exportación metadatos de recursos](/help/assets/metadata-import-export.md)
    + Compartir y distribuir recursos {#brand-portal}
-      + [Configuración de [!DNL Assets] con [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [Configuración de  [!DNL Assets]  con  [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publicación de recursos en  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [Publicación de recursos desde [!DNL Brand Portal] en [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es)
+      + [Publicación de recursos desde  [!DNL Brand Portal]  en  [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es)
    + Fragmentos de contenido {#content-fragments}
       + [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
       + [Entrega sin encabezado con fragmentos de contenido y GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -465,9 +465,9 @@ ht-degree: 94%
       + [Fin de vida útil de los visualizadores DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Integración con Adobe Workfront {#integrations}
       + [Integraciones con  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
-      + [Instalación de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-install.md)
+      + [Instalación de  [!DNL enhanced connector]  para  [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Eliminación de dependencias externas para instalaciones existentes](/help/assets/remove-external-dependencies.md)
-      + [Configuración de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Configuración de  [!DNL enhanced connector]  para  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Actualizar [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
       + [Configuración de la asignación de metadatos de recursos](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
@@ -525,9 +525,9 @@ ht-degree: 94%
       + [Configuración del portal de Forms](/help/forms/configure-forms-portal.md)
    + Integración de un formulario con una o más fuentes de datos {#use-form-data-model}
       + [Configuración de fuentes de datos](/help/forms/configure-data-sources.md)
-      + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+      + [Configuración de  [!DNL Microsoft Dynamics]  OData](/help/forms/ms-dynamics-odata-configuration.md)
       + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
-      + [Configurar [!DNL Microsoft Dynamics 365] y [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
+      + [Configurar  [!DNL Microsoft Dynamics 365]  y  [!DNL Salesforce]  cloud services](/help/forms/configure-msdynamics-salesforce.md)
       + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
       + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
       + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
@@ -546,7 +546,7 @@ ht-degree: 94%
       + [API de comunicaciones: procesamiento por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Uso de fuentes personalizadas en documentos PDF](/help/forms/use-custom-fonts.md)
       + [Problemas conocidos, prácticas recomendadas y preguntas más frecuentes](/help/forms/communications-known-issues-limitations.md)
-   + [Migración a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+   + [Migración a  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [Preguntas frecuentes](/help/forms/faq.md)
    + [Problemas conocidos](/help/forms/known-issues.md)
    + Solución de problemas {#troubleshooting-aem-forms-cloud-service}
@@ -634,7 +634,7 @@ ht-degree: 94%
       + [Punto de conexión de GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de contenido {#content-fragments}
       + [Información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [Consola Fragmentos de contenido](/help/headless/content-fragments/content-fragment-console.md)
+      + [Consola Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
       + [Modelos de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
       + [Administración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
       + Creación {#authoring}
