@@ -1,11 +1,11 @@
 ---
 title: Personalización y targeting de contenido
-description: Descubra cómo AEM crear contenido personalizado
+description: Descubra cómo AEM puede crear contenido personalizado
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ AEM ofrece un marco de herramientas para crear contenido dirigido y presentar ex
 
 Las actividades definen y organizan los esfuerzos de marketing. Las actividades constan de las audiencias a las que desea dirigirse y el período de tiempo durante el que se aplica el targeting.
 
-Por ejemplo, el catálogo de productos puede incluir teasers que centran la atención en los productos de temporada. La actividad de deportes de verano define los segmentos de marketing a los que se dirigen los teasers durante los meses de verano.
+Por ejemplo, el catálogo de productos puede incluir teasers que destacan los productos de temporada. La actividad de deportes de verano define los segmentos de marketing a los que se dirigen los teasers durante los meses de verano.
 
 Las actividades también identifican el [motor de targeting](#targeting-engine) que usan las páginas.
 
-Utilice la variable [Consola de actividades](/help/sites-cloud/authoring/personalization/activities.md) para crear y administrar las actividades de sus marcas. También puede crear actividades a medida que [crea contenido de destino](/help/sites-cloud/authoring/personalization/targeted-content.md).
+Utilice la [consola Actividades](/help/sites-cloud/authoring/personalization/activities.md) para crear y administrar las actividades de sus marcas. También puede crear actividades a medida que [crea contenido de destino](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
 ## Experiencias {#experiences}
 
@@ -43,7 +43,7 @@ Se definen experiencias para una actividad. Puede utilizar [consola Actividades]
 
 Una oferta es el contenido que aparece en una ubicación de una página para una experiencia. Utilice ofertas diferentes para distintas experiencias con el fin de maximizar la eficacia del contenido para las audiencias.
 
-Por ejemplo, la página para mujeres de un sitio web de muestra puede utilizar ofertas como la imagen de teaser que aparece en la parte superior de la página. Se utiliza una oferta diferente como teaser para la experiencia de mujeres mayores de 30 años y la experiencia de muyeres menores de 30 años.
+Por ejemplo, la página para mujeres de un sitio web de ejemplo puede utilizar ofertas para la imagen de teaser que aparece en la parte superior de la página. Se utiliza una oferta diferente como teaser para la experiencia de mujeres mayores de 30 años y la experiencia de muyeres menores de 30 años.
 
 Utilice la [consola Ofertas](/help/sites-cloud/authoring/personalization/offers.md) para crear ofertas que se pueden usar en varias experiencias. Cree ofertas de un solo uso o añada ofertas de una biblioteca de ofertas al [crear el contenido de destino](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
