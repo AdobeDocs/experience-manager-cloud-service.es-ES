@@ -3,9 +3,9 @@ title: Aplicación de flujos de trabajo a páginas
 description: Durante la creación, puede invocar flujos de trabajo para realizar acciones en las páginas; también es posible aplicar más de un flujo de trabajo.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '662'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ A la hora de aplicar el flujo de trabajo, puede especificar la siguiente informa
 Los flujos de trabajo se pueden iniciar desde lo siguiente:
 
 * [la consola Sitios](#starting-a-workflow-from-the-sites-console).
-* [al editar una página, en  Información de la página](#starting-a-workflow-from-the-page-editor). 
+* [al editar una página, en Información de la página](#starting-a-workflow-from-the-page-editor). 
 
 >[!NOTE]
 >
->Consulte también:
+>Consulte también lo siguiente:
 >
 >* Cómo aplicar flujos de trabajo a recursos DAM.
 >* [Uso de flujos de trabajo de proyecto](/help/sites-cloud/authoring/projects/workflows.md).
@@ -59,11 +59,11 @@ En ambos casos, tendrá que realizar lo siguiente:
 
 ### Inicio de un flujo de trabajo desde la barra de herramientas Sitios {#starting-a-workflow-from-the-sites-toolbar}
 
-Puede iniciar un flujo de trabajo desde la barra de herramientas de **Sitios** consola:
+Puede iniciar un flujo de trabajo desde la barra de herramientas de la consola **Sitios**:
 
 1. Busque y seleccione la página deseada. 
 
-1. En el **Crear** en la barra de herramientas, ahora puede seleccionar **Flujo de trabajo**.
+1. En la opción **Crear** de la barra de herramientas, ahora puede seleccionar el **Flujo de trabajo**.
 
    ![Crear flujo de trabajo desde la barra de herramientas](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
@@ -73,10 +73,10 @@ Puede iniciar un flujo de trabajo desde la barra de herramientas de **Sitios** c
 
 Desde **Escala de tiempo**, puede iniciar un flujo de trabajo para aplicarlo al recurso seleccionado.
 
-1. [Seleccione el recurso](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) y abrir [Cronología](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (o abra Escala de tiempo y seleccione el recurso).
+1. [Seleccione el recurso](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) y abra [Cronología](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (o abra Cronología y seleccione el recurso).
 1. La punta de flecha junto al campo Comentario puede utilizarse para mostrar **Iniciar flujo de trabajo**:
 
-   ![Crear flujo de trabajo a partir de la línea de tiempo](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
+   ![Crear flujo de trabajo a partir de la cronología](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
 1. El asistente **Crear flujo de trabajo** le ayudará a [especificar los detalles del flujo de trabajo](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -118,7 +118,7 @@ Puede especificar los detalles:
 
 1. En la etapa **Ámbito**, puede seleccionar lo siguiente:
 
-   * **Añadir contenido** para abrir el [navegador de rutas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) y seleccionar recursos adicionales; en el explorador, toque o haga clic en **Select** para añadir el contenido a la instancia de flujo de trabajo.
+   * **Añadir contenido** para abrir el [explorador de rutas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) y seleccionar recursos adicionales. En el explorador, haga clic o pulse en **Seleccionar** para añadir contenido a la instancia de flujo de trabajo.
 
    * Un recurso existente para ver acciones adicionales:
 
@@ -139,10 +139,10 @@ Se abrirá un cuadro de diálogo para que pueda ajustar la selección según lo 
    >
    >Si agrega recursos adicionales, puede utilizar **Atrás** para ajustar la configuración **Mantener flujo de trabajo del paquete** en el paso **Propiedades**.
 
-1. Uso **Crear** para cerrar el asistente y crear la instancia de flujo de trabajo. Se muestra una notificación en la consola Sitios.
+1. Use la opción **Crear** para cerrar el asistente y crear la instancia de flujo de trabajo. Se muestra una notificación en la consola Sitios.
 
 ## Inicio de un flujo de trabajo desde el Editor de página {#starting-a-workflow-from-the-page-editor}
 
 Al editar una página, puede seleccionar **Información de la página** en la barra de herramientas. En el menú desplegable se incluye la opción **Iniciar en flujo de trabajo**. Se abrirá un cuadro de diálogo en el que puede especificar el flujo de trabajo necesario junto con un título, si fuera necesario: 
 
-![Inicio de un flujo de trabajo desde el editor de páginas](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)
+![Inicio de un flujo de trabajo desde el Editor de página](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)
