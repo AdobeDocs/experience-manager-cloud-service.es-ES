@@ -1,42 +1,42 @@
 ---
-title: Configurar reglas de traducción
+title: Configuración de las reglas de traducción
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '790'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configurar reglas de traducción {#configure-translation-rules}
+# Configuración de las reglas de traducción {#configure-translation-rules}
 
 Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de traducción de AEM Sites, [Configuración del conector de traducción](configure-connector.md) ha aprendido a instalar y configurar el conector de traducción y ahora debe:
+En el documento anterior del recorrido de traducción de AEM Sites, [Configuración del conector de traducción](configure-connector.md) ha aprendido a instalar y configurar el conector de traducción y ahora debe hacer lo siguiente:
 
-* Comprender los parámetros importantes del marco de integración de traducción en AEM.
+* Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.
 
 Ahora que el conector está configurado, este artículo le explica el siguiente paso para identificar qué contenido debe traducir.
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo utilizar AEM reglas de traducción para identificar el contenido de la traducción. Después de leer este documento, debe:
+Este documento le ayuda a comprender cómo utilizar las reglas de traducción de AEM para identificar el contenido de la traducción. Después de leer este documento, debería poder hacer lo siguiente:
 
 * Comprender lo que hacen las reglas de traducción.
-* Puede definir sus propias reglas de traducción.
+* Poder definir sus propias reglas de traducción.
 
 ## Reglas de traducción {#translation-rules}
 
 Las páginas de AEM Sites pueden contener mucha información. Según las necesidades del proyecto, es probable que no toda la información de una página deba traducirse.
 
-Las reglas de traducción identifican el contenido que se incluye en los proyectos de traducción o que se excluye de ellos. Cuando se traduce el contenido, AEM extrae o cosecha el contenido en función de estas reglas. De este modo, solo el contenido que debe traducirse se envía al servicio de traducción.
+Las reglas de traducción identifican el contenido que se incluye en los proyectos de traducción o que se excluye de ellos. Cuando se traduce contenido, AEM lo extrae o saca en función de estas reglas. De este modo, solo el contenido que debe traducirse se envía al servicio de traducción.
 
 Las reglas de traducción incluyen la siguiente información:
 
@@ -53,32 +53,32 @@ Se pueden crear varias reglas para admitir requisitos de traducción complejos. 
 
 Las reglas de traducción están diseñadas para manejar estos escenarios. Sin embargo, en este ejemplo ilustramos cómo crear reglas centrándose en una configuración simple y única.
 
-Hay un **Configuración de traducción** consola disponible para configurar reglas de traducción.
+Hay una consola de **Configuración de traducción** disponible para configurar las reglas de traducción.
 
-Para acceder a él:
+Para acceder a ella:
 
 1. Vaya a **Herramientas** -> **General**.
-1. Toque o haga clic **Configuración de traducción**.
+1. Toque o haga clic en **Configuración de traducción**.
 
-AEM crea automáticamente reglas de traducción para todo el contenido. Para ver estas reglas:
+AEM crea automáticamente reglas de traducción para todo el contenido. Para ver estas reglas, haga lo siguiente:
 
-1. Seleccione el `/content` contexto y luego la variable **Editar** en la barra de herramientas.
-1. El Editor de reglas de traducción se abre con las reglas que AEM creadas automáticamente para el `/content` ruta.
+1. Seleccione el `/content` contexto y luego la opción **Editar** en la barra de herramientas.
+1. El Editor de reglas de traducción se abre con las reglas que AEM crea automáticamente para la ruta `/content`.
 
    ![Editor de reglas de traducción](assets/translation-rules-editor.png)
 
 1. Las propiedades de página que se traducirán se encuentran en la sección **General** de la lista. Puede agregar o actualizar nombres de propiedades existentes que desee incluir explícitamente en la traducción.
-   1. Introduzca el nombre de la propiedad en la variable **Nueva propiedad** campo .
+   1. Introduzca el nombre de la propiedad en el campo **Nueva propiedad**.
    1. Las opciones **Traducir** y **Heredar** se marcan automáticamente.
-   1. Toque o haga clic **Agregar**.
+   1. Haga clic o pulse **Agregar**.
    1. Repita estos pasos para todos los campos que debe traducir.
-   1. Toque o haga clic **Guardar**.
+   1. Haga clic o pulse **Guardar**.
 
 Ya ha configurado las reglas de traducción.
 
 >[!NOTE]
 >
->AEM crea automáticamente reglas de traducción. Para una sencilla configuración de traducción o para probar un flujo de trabajo de traducción, no es necesario crear nuevas reglas ni modificar las reglas creadas automáticamente existentes. Los detalles de estos pasos se presentan para explicar cómo funcionan las reglas y dar contexto a cómo procesan AEM traducciones.
+>AEM crea automáticamente las reglas de traducción. Para una configuración de traducción sencilla o para probar un flujo de trabajo de traducción, no es necesario crear nuevas reglas ni modificar las reglas creadas automáticamente existentes. Los detalles de estos pasos se presentan para explicar cómo funcionan las reglas y dar contexto a cómo AEM procesa las traducciones.
 
 >[!TIP]
 >
@@ -88,19 +88,19 @@ Ya ha configurado las reglas de traducción.
 
 Hay varias propiedades adicionales que se pueden configurar como parte de las reglas de traducción. Además, puede especificar las reglas manualmente como XML, lo que permite una mayor especificidad y flexibilidad.
 
-Estas funciones generalmente no son necesarias para empezar a localizar el contenido, pero puede leer más sobre ellas en la sección [Recursos adicionales](#additional-resources) si está interesado.
+Estas funciones generalmente no son necesarias para empezar a localizar el contenido. De igual manera, puede leer más sobre ellas en la sección [Recursos adicionales](#additional-resources).
 
 ## Siguientes pasos {#what-is-next}
 
 Ahora que ha completado esta parte del recorrido de traducción de AEM Sites, debe:
 
 * Comprender lo que hacen las reglas de traducción.
-* Puede definir sus propias reglas de traducción.
+* Poder definir sus propias reglas de traducción.
 
-Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento [Traducir contenido](translate-content.md) donde aprenderá cómo funcionan juntos el conector y las reglas para traducir contenido.
+Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites. Revise el documento [Traducir contenido](translate-content.md) donde aprenderá cómo funcionan juntos el conector y las reglas para traducir contenido.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de traducción revisando el documento [Traducción de contenido,](translate-content.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
+Aunque se recomienda pasar a la siguiente parte del recorrido de traducción al revisar el documento [Traducción de contenido,](translate-content.md) los siguientes son algunos recursos opcionales que profundizan ciertos conceptos mencionados en este documento, pero que no son necesarios para continuar el recorrido.
 
-* [Identificación del contenido para traducir](/help/sites-cloud/administering/translation/rules.md) : Aprenda cómo las reglas de traducción identifican el contenido que necesita traducción.
+* [Identificación del contenido para traducir](/help/sites-cloud/administering/translation/rules.md): aprenda cómo las reglas de traducción identifican el contenido que necesita traducirse.
