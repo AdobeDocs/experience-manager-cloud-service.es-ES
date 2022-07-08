@@ -3,9 +3,9 @@ title: Creación de un programa
 description: Obtenga información sobre cómo configurar un nuevo programa y una canalización para implementar el complemento.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '715'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Obtenga información sobre cómo configurar un nuevo programa y una canalizació
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido del complemento de las demostraciones de referencia de AEM, [Comprender la instalación del complemento de demostración de referencia,](installation.md) ha aprendido cómo funciona el proceso de instalación del complemento de demostraciones de referencia, ilustrando cómo funcionan juntas las diferentes piezas. Ahora debería:
+En el documento anterior del recorrido del complemento de las demostraciones de referencia de AEM, [Comprender la instalación del complemento de demostración de referencia,](installation.md) ha aprendido cómo funciona el proceso de instalación del complemento de demostraciones de referencia, ilustrando cómo funcionan juntas las diferentes piezas. Ahora debería hacer lo siguiente:
 
 * Obtenga información básica sobre Cloud Manager.
 * Comprenda cómo las canalizaciones ofrecen contenido y configuración a AEM.
@@ -25,19 +25,19 @@ Este artículo se basa en estos aspectos básicos y realiza el primer paso de co
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo configurar un nuevo programa y canalización para implementar el complemento. Después de leer, debe:
+Este documento le ayuda a comprender cómo configurar un nuevo programa y canalización para implementar el complemento. Después de leer, debería haber logrado lo siguiente:
 
-* Obtenga información sobre cómo utilizar Cloud Manager para crear un nuevo programa.
-* Obtenga información sobre cómo activar el complemento Demostraciones de referencia para el nuevo programa.
+* Aprenda a utilizar Cloud Manager para crear un nuevo programa.
+* Obtenga información sobre cómo activar el complemento de demostraciones de referencia para el nuevo programa.
 * Poder ejecutar una canalización para implementar el contenido del complemento.
 
 ## Crear un programa {#create-program}
 
-Después de iniciar sesión en Cloud Manager, puede crear un nuevo programa de simulación de pruebas para realizar pruebas y demostraciones.
+Después de iniciar sesión en Cloud Manager, puede crear un nuevo programa de zona protegida para realizar pruebas y demostraciones.
 
 >[!NOTE]
 >
->El usuario debe ser miembro de **Propietario empresarial** en Cloud Manager en su organización para crear programas.
+>El usuario debe ser miembro de la función **Propietario empresarial** en Cloud Manager en su organización para crear programas.
 
 1. Inicie sesión en Adobe Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
@@ -45,18 +45,18 @@ Después de iniciar sesión en Cloud Manager, puede crear un nuevo programa de s
 
    ![Información general de Cloud Manager](assets/cloud-manager.png)
 
-1. Toque o haga clic **Agregar programa** en la parte superior derecha de la ventana.
+1. Toque o haga clic en **Agregar programa** en la parte superior derecha de la ventana.
 
-1. En el **Vamos a crear su programa** , asegúrese de que **Adobe Experience Manager** se selecciona en **Productos** y, a continuación, toque o haga clic en **Continuar**.
+1. En el cuadro de diálogo **Vamos a crear su programa**, asegúrese de que **Adobe Experience Manager** se selecciona en **Productos** y, a continuación, toque o haga clic en **Continuar**.
 
    ![Cuadro de diálogo Crear programa](assets/create-program.png)
 
 1. En el siguiente cuadro de diálogo:
 
    * Proporcione un **Nombre del programa** para describir su programa.
-   * Toque o haga clic **Configuración de un simulador para pruebas** para su **Objetivo del programa**
+   * Toque o haga clic en **Configuración de una zona protegida** para su **Objetivo del programa**
 
-   A continuación, toque o haga clic en **Crear**.
+   Haga clic o pulse **Crear**.
 
    ![Nombre del programa](assets/program-name.png)
 
@@ -72,11 +72,11 @@ Después de iniciar sesión en Cloud Manager, puede crear un nuevo programa de s
 
    ![Editar programa](assets/edit-program.png)
 
-1. En el **Editar programa** , cambie a la **Soluciones y complementos** pestaña .
+1. En el cuadro de diálogo **Editar programa**, cambie a la pestaña **Soluciones y complementos**.
 
    ![Cuadro de diálogo Editar programa](assets/edit-program-dialog.png)
 
-1. En el **Soluciones y complementos** expanda la pestaña **Sitios** en la lista y, a continuación, marque **Demostraciones de referencia**. Si también desea crear demostraciones para AEM Screens, consulte la **Pantallas** también en la lista. Toque o haga clic **Actualizar**.
+1. En la pestaña **Soluciones y complementos** expanda la entrada **Sitios** en la lista y, a continuación, marque **Demostraciones de referencia**. Si también desea crear demostraciones para AEM Screens, consulte la opción **Screens** también en la lista. Haga clic o pulse **Actualización de estado**.
 
    ![Comprobar la opción de demostraciones de referencia](assets/edit-program-add-on.png)
 
@@ -92,14 +92,14 @@ Una vez finalizada la canalización, el complemento y su contenido de demostraci
 
 ## Siguientes pasos {#what-is-next}
 
-Ahora que ha completado esta parte del recorrido del complemento de demostración de referencia de AEM, debe:
+Ahora que ha completado esta parte del recorrido del complemento de demostración de referencia de AEM, podrá hacer lo siguiente:
 
-* Obtenga información sobre cómo utilizar Cloud Manager para crear un nuevo programa.
-* Obtenga información sobre cómo activar el complemento Demostraciones de referencia para el nuevo programa.
+* Aprenda a utilizar Cloud Manager para crear un nuevo programa.
+* Obtenga información sobre cómo activar el complemento de demostraciones de referencia para el nuevo programa.
 * Poder ejecutar una canalización para implementar el contenido del complemento.
 
 Aproveche este conocimiento y continúe con su recorrido de demostración de referencia de AEM al revisar el documento [Crear un sitio de demostración,](create-site.md) donde aprenderá a crear un sitio de demostración en AEM basado en una biblioteca de plantillas preconfiguradas que implementó la canalización.
 
 ## Recursos adicionales {#additional-resources}
 
-* [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) : Si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
+* [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=es): Si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
