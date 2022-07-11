@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Solución de problemas y preguntas más frecuentes sobre MSM {#troubleshooting-msm}
 
-##  Primeros pasos en la solución de problemas {#first-steps}
+## Primeros pasos en la solución de problemas {#first-steps}
 
 Si está experimentando lo que cree que es un comportamiento incorrecto o un error en MSM, antes de comenzar y realizar la solución de problemas detallada, asegúrese de lo siguiente:
 
