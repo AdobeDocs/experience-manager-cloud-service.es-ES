@@ -1,10 +1,10 @@
 ---
 title: Administrar fragmentos de contenido
 description: Aprenda a utilizar la consola Fragmentos de contenido para administrar los fragmentos de contenido AEM; para la creación de páginas o como base del contenido sin encabezado.
-source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
+source-git-commit: 9de8becfd69ea2a65a847cba88468c94e2fdf484
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 3%
+source-wordcount: '2047'
+ht-degree: 2%
 
 ---
 
@@ -63,6 +63,21 @@ Para crear un fragmento de contenido:
    ![Nuevo cuadro de diálogo Fragmento de contenido](assets/cfm-managing-new-cf-01.png)
 
 1. Select **Crear** o **Crear y abrir** para mantener la definición.
+
+## Estados de los fragmentos de contenido {#statuses-content-fragments}
+
+Durante su existencia, un fragmento de contenido puede tener varios estados, como se muestra en la variable [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
+
+* **Nuevo**
+Se ha creado un nuevo fragmento de contenido, pero nunca se ha editado ni abierto, en el editor de fragmentos de contenido.
+* **Borrador**
+Alguien ha editado o abierto el (nuevo) fragmento de contenido en el Editor de fragmentos de contenido, pero aún no se ha publicado.
+* **Publicado**
+Se ha publicado el fragmento de contenido.
+* **Modificado**
+El fragmento de contenido se ha editado después de publicarse (pero antes de publicar la modificación).
+* **Sin publicar**
+Se canceló la publicación del fragmento de contenido.
 
 ## Acciones para un fragmento de contenido en la consola Fragmentos de contenido {#actions-content-fragment-console}
 
