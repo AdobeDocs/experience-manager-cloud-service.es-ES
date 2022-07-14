@@ -2,10 +2,10 @@
 title: 'Novedades y diferencias: Adobe Experience Manager as a Cloud Service'
 description: 'Novedades y diferencias: Adobe Experience Manager (AEM) as a Cloud Service.'
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 96%
+source-wordcount: '1904'
+ht-degree: 95%
 
 ---
 
@@ -125,10 +125,6 @@ Cloud Manager crea entornos en centros de datos de muchas regiones geográficas,
 
 ## Incorporación {#onboarding}
 
->[!NOTE]
->
->Para obtener más información, consulte [Incorporación](/help/onboarding/home.md).
-
 El inicio y la administración de un proyecto de AEM es sencillo al usar AEM as a Cloud Service, ya que Adobe es responsable de muchos aspectos:
 
 * Las imágenes de AEM de línea de base están optimizadas para casos de uso específicos.
@@ -150,6 +146,10 @@ También es significativamente diferente, ya que ahora hay:
    * Actualizaciones de código; cualquier aplicación de cliente desarrollada para una versión anterior de AEM deberá revisarse y posiblemente actualizarse.
 
    * Migración de contenido
+
+>[!TIP]
+>
+>Para obtener una descripción general completa del proceso de incorporación, consulte la [recorrido de incorporación.](/help/journey-onboarding/overview.md)
 
 ## Desarrollo de {#developing}
 
@@ -273,6 +273,6 @@ Para obtener más información, consulte:
 
 >[!TIP]
 >
->Una vez que tenga una visión general de AEM as a Cloud Service, podrá incorporarse rápidamente revisando el [Recorrido de incorporación](/help/journey-onboarding/home.md).
+>Una vez que tenga una visión general de AEM as a Cloud Service, podrá incorporarse rápidamente revisando el [Recorrido de incorporación](/help/journey-onboarding/overview.md).
 >
 >¿Ya incorporado o listo para sumergirse en las funciones de AEM de prueba? Instale el [complemento de demostraciones de referencia de AEM](/help/journey-sites/demos-add-on/overview.md) para explorar las potentes funciones de AEM con interesantes ejemplos.

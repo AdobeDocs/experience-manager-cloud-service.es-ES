@@ -1,16 +1,16 @@
 ---
-title: recorridos de documentación de AEM
+title: Recorridos de documentación de AEM
 description: Los Recorridos de documentación proporcionan una estructura narrativa dentro de AEM documentación al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Diseñados pensando en AEM principiantes, los recorridos presentan los conceptos y características para lograr un objetivo de A a Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 3%
 
 ---
 
-# recorridos de documentación de AEM {#aem-documentation-journeys}
+# Recorridos de documentación de AEM {#aem-documentation-journeys}
 
 Los Recorridos de documentación proporcionan una estructura narrativa dentro de AEM documentación al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Diseñados pensando en AEM principiantes, los recorridos presentan los conceptos y características para lograr un objetivo de A a Z.
 
@@ -90,7 +90,7 @@ Ya tiene a su disposición varios Recorridos de documentación. Dado que cada re
 | [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md) | Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto sin objetivos. |
 | [Recorrido para arquitectos de Headless](/help/journey-headless/architect/overview.md) | Comience aquí para obtener una introducción a las potentes y flexibles funciones de Adobe Experience Manager as a Cloud Service y a cómo modelar contenido para su proyecto. |
 | [Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md) | Comience aquí para ver cómo configurar y administrar sus proyectos de traducción sin encabezado en AEM. |
-| [AEM Recorrido de incorporación](/help/journey-onboarding/home.md) | Empiece aquí para ponerse en marcha rápidamente con su nuevo entorno as a Cloud Service AEM! |
+| [AEM Recorrido de incorporación](/help/journey-onboarding/overview.md) | Empiece aquí para ponerse en marcha rápidamente con su nuevo entorno as a Cloud Service AEM! |
 | [AEM Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) | Comience aquí para obtener un recorrido guiado a través de la herramienta de creación rápida de sitios de AEM fácil de usar para optimizar el desarrollo front-end de su sitio AEM y personalizar rápidamente su sitio sin AEM conocimiento del servidor. |
 | recorrido de comercio AEM | ¡Muy pronto! |
 | [Recorrido de migración de AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Comience aquí para obtener un recorrido paso a paso sobre cómo migrar de la instalación local o de AEM administrada por Adobe a la totalmente basada en la nube AEM as a Cloud Service y conocer sus numerosas ventajas. |

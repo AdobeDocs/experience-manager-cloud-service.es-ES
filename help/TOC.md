@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 778a3687447c1e07605fdb95b3934b10d22483e8
+source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
 workflow-type: tm+mt
-source-wordcount: '3691'
-ht-degree: 94%
+source-wordcount: '3674'
+ht-degree: 92%
 
 ---
 
@@ -123,24 +123,19 @@ ht-degree: 94%
    + [Compatibilidad con cookies del mismo sitio para AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
 + Incorporación {#onboarding}
-   + [Incorporación a AEM as a Cloud Service](/help/onboarding/home.md)
-   + Descubra los conceptos de integración {#onboarding-concepts}
-      + [Administrador del sistema](/help/onboarding/learn-concepts/system-administrator.md)
-      + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
-      + [Sistema Identity Management de Adobe](/help/onboarding/learn-concepts/ims.md)
-      + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
-      + [Introducción a Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
-      + [AEM perfiles as a Cloud Service de equipo y producto](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
-      + [Soporte de Adobe](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+   + [Iniciar aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + Recorrido de incorporación {#journey}
-      + [Recorrido de incorporación](/help/journey-onboarding/home.md)
-      + [Información general sobre el recorrido de incorporación](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
-      + [Introducción al proceso de integración](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md)
-      + [Asignar integrantes del equipo a perfiles de producto de Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md)
-      + [Configuración de recursos de la nube mediante Cloud Manager](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md)
-      + [Asignar integrantes del equipo a perfiles de producto de AEM as a Cloud Service](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
-      + [Ruta de aprendizaje para desarrolladores y administradores de implementación](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
-      + [Ruta de aprendizaje para usuarios de AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+      + [Recorrido de incorporación Información general](/help/journey-onboarding/overview.md)
+      + [Preparación de la incorporación](/help/journey-onboarding/preparation.md)
+      + [Terminología as a Cloud Service AEM](/help/journey-onboarding/terminology.md)
+      + [El Admin Console](/help/journey-onboarding/admin-console.md)
+      + [Asignación de perfiles de producto de Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+      + [Acceso a Cloud Manager](/help/journey-onboarding/cloud-manager.md)
+      + [Crear un programa](/help/journey-onboarding/create-program.md)
+      + [Crear entornos](/help/journey-onboarding/create-environments.md)
+      + [Asignación AEM perfiles de producto](/help/journey-onboarding/assign-profiles-aem.md)
+      + [Tareas del desarrollador y del administrador de implementación](/help/journey-onboarding/developers.md)
+      + [Tareas del usuario AEM](/help/journey-onboarding/aem-users.md)
    + Recorrido del complemento de demostraciones de referencia de AEM {#demo-add-on}
       + [Información general](/help/journey-sites/demos-add-on/overview.md)
       + [Instalación](/help/journey-sites/demos-add-on/installation.md)
@@ -148,6 +143,9 @@ ht-degree: 94%
       + [Creación de un sitio de muestra](/help/journey-sites/demos-add-on/create-site.md)
       + [Activar Screens](/help/journey-sites/demos-add-on/screens.md)
       + [Administración del sitio de muestra](/help/journey-sites/demos-add-on/manage.md)
+   + Otros conceptos de incorporación {#concepts}
+      + [Introducción a Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
+      + [AEM perfiles as a Cloud Service de equipo y producto](/help/onboarding/aem-cs-team-product-profiles.md)
 + Recorrido de migración de AEM as a Cloud Service {#migration-journey}
    + [Introducción al traslado de AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparación](/help/journey-migration/readiness.md)
@@ -750,7 +748,7 @@ ht-degree: 94%
          + [Aplicación y cancelación de la aplicación de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Administración de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Panel de licencias](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Preguntas frecuentes sobre Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+      + [Preguntas frecuentes sobre Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Desarrollo para AEM as a Cloud Service {#developing}
       + [Estructura del proyecto AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Paquete de estructura del repositorio de proyectos de AEM](/help/implementing/developing/introduction/repository-structure-package.md)

@@ -1,14 +1,14 @@
 ---
 title: Guía as a Cloud Service de Assets
-description: Obtenga información sobre Recursos as a Cloud Service y consulte las novedades.
+description: Obtenga información sobre Assets as a Cloud Service y consulte las novedades.
 landing-page-description: Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 37%
+source-wordcount: '294'
+ht-degree: 42%
 
 ---
 
@@ -30,7 +30,7 @@ Obtenga información sobre [!DNL AEM Assets as a Cloud Service] y obtenga inform
 | [Información general](/help/overview/home.md) | Introducción y glosario de [!DNL Experience Manager] como [!DNL Cloud Service]. |
 | [Notas de la versión](/help/release-notes/home.md) | Notas de la versión, novedades, funciones obsoletas y eliminadas, y problemas conocidos. |
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con [!DNL Experience Manager] como [!DNL Cloud Service]. |
-| [Incorporación](/help/onboarding/home.md) | Introducción a [!DNL Experience Manager] como [!DNL Cloud Service] obtenga acceso y proteja datos importantes. |
+| [Recorrido de incorporación](/help/journey-onboarding/overview.md) | Introducción a [!DNL Experience Manager] como [!DNL Cloud Service] obtenga acceso y proteja datos importantes. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear y administrar con [!DNL Experience Manager Sites] como [!DNL Cloud Service]. |
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Descubra cómo crear y personalizar experiencias utilizando las potentes funciones de Experience Manager explorando estos temas de desarrollo e implementación. |
 | [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | Explore este recorrido guiado a través de las potentes y flexibles funciones de Experience Manager para prepararse para su primer proyecto sin objetivos. |

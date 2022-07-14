@@ -2,10 +2,10 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo crearlos para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ Las capacidades de los entornos individuales dependen de las soluciones habilita
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
 * [Forms](/help/forms/home.md)
-* [Pantallas](/help/screens-cloud/home.md)
+* [Screens](/help/screens-cloud/home.md)
 
 >[!NOTE]
 >

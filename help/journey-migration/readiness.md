@@ -2,9 +2,9 @@
 title: Fase de preparación
 description: Obtenga información sobre los pasos que debe seguir para asegurarse de que la instalación de AEM está lista para moverse a la nube
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2079'
 ht-degree: 7%
 
 ---
@@ -123,7 +123,7 @@ La lista de elementos de la tabla siguiente es el subconjunto de los cambios má
     <td>Cualquier generación de representación personalizada, conversiones de imagen o codificaciones de vídeo debe descargarse en el servicio de procesamiento de recursos creando los perfiles de procesamiento correspondientes.</td>
   </tr>
   <tr>
-    <td>Buscar contenido e indexar</td>
+    <td>Búsqueda de contenido e indexación</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en">Búsqueda de contenido e indexación de cambios</a></td>
     <td>Hay cambios considerables en el procesamiento subyacente de los índices y cuando se está iniciando.<br>Comprenda y refactorice completamente los índices Oak antes de administrarlos en el código que implementará.</td>
   </tr>
@@ -220,4 +220,4 @@ Una vez que entienda el alcance de los cambios necesarios para pasar a AEM as a 
 * [AEM as a Cloud Service: Introducción, arquitectura y pensamiento diferentes](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
 * [AEM de una página principal del Cloud Service](/help/overview/home.md) : para obtener una descripción general de la documentación as a Cloud Service del Experience Manager, comience aquí.
 * [Información general as a Cloud Service de AEM](/help/overview/home.md) : Esta guía proporciona información general sobre Experience Manager as a Cloud Service, incluida una introducción, terminología y arquitectura.
-* [Incorporación](/help/onboarding/home.md)- Esta guía proporciona un resumen de cómo empezar a trabajar con Experience Manager as a Cloud Service, incluida cómo obtener acceso y configurar su equipo
+* [Recorrido de incorporación](/help/journey-onboarding/overview.md)- Esta guía proporciona un resumen de cómo empezar a trabajar con Experience Manager as a Cloud Service, incluida cómo obtener acceso y configurar su equipo
