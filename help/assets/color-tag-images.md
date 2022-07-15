@@ -2,9 +2,9 @@
 title: Etiquetas de color para imágenes
 description: Experience Manager Assets le permite distinguir entre colores en una imagen y aplicarlos automáticamente como etiquetas. A continuación, puede utilizar estas etiquetas para buscar y filtrar imágenes.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
+source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1195'
 ht-degree: 3%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 3%
 Experience Manager Assets utiliza las funciones de Adobe Sensei AI para distinguir entre colores en una imagen y aplicarlos automáticamente al ingerirlos. Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen.
 
 Puede configurar el número de colores, dentro de un rango de uno a cuarenta, que están etiquetados en una imagen para que pueda buscar imágenes basadas en esos colores más adelante. Experience Manager Assets aplica las etiquetas en función de la cobertura de color de una imagen. También puede configurar el formato de visualización para una etiqueta de color.
-
->[!NOTE]
->
->Esta función está disponible en el canal de prelanzamiento. Consulte [Documentación del canal previa al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
 
 La siguiente ilustración ilustra la secuencia de tareas que se realizan para configurar y administrar el etiquetado de color de las imágenes en Experience Manager Assets:
 
