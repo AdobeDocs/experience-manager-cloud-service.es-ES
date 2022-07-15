@@ -4,9 +4,9 @@ description: Descubra cómo los modelos de fragmentos de contenido sirven de bas
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: a5a5ec2211fe51bb04a1016f34fdac2f25cfe4e1
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2890'
 ht-degree: 7%
 
 ---
@@ -75,7 +75,7 @@ El modelo de fragmento de contenido define efectivamente la estructura de los fr
 
          >[!CAUTION]
          >
-         >Al actualizar manualmente la propiedad **Nombre de propiedad** para un tipo de datos, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como caracteres especiales.
+         >Al actualizar manualmente la propiedad **Nombre de propiedad** para un tipo de datos, tenga en cuenta que los nombres deben contener únicamente A-Z, a-z, 0-9 y el guion bajo &quot;_&quot; como carácter especial.
          >
          >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimine o actualice dichos caracteres.
       Por ejemplo:
@@ -141,7 +141,7 @@ Muchas propiedades se explican por sí mismas; para determinadas propiedades, a 
 
 * **Nombre de propiedad**
 
-   Cuando actualice manualmente esta propiedad para un tipo de datos, tenga en cuenta que los nombres **must** contain *only* Caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como caracteres especiales.
+   Cuando actualice manualmente esta propiedad para un tipo de datos, tenga en cuenta que los nombres **must** contain *only* A-Z, a-z, 0-9 y guión bajo &quot;_&quot; como carácter especial.
 
    >[!CAUTION]
    >
