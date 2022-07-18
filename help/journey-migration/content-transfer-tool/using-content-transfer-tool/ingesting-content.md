@@ -2,10 +2,10 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
+source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 17%
+source-wordcount: '908'
+ht-degree: 13%
 
 ---
 
@@ -44,8 +44,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
    >[!IMPORTANT]
    >
-   >Solo podrá iniciar una ingesta en el entorno de destino si pertenece al entorno local **Administradores de AEM** en la instancia de Cloud Service que está transfiriendo el contenido. Si no pertenece al grupo de administradores de AEM, verá un error como se muestra a continuación cuando intente iniciar una ingesta.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
+   >Solo podrá iniciar una ingesta en el entorno de destino si pertenece al entorno local **Administradores de AEM** en el servicio de autor del Cloud Service de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más información.
 
    >[!IMPORTANT]
    >
@@ -103,7 +102,25 @@ Para ello, cree un nuevo trabajo de ingesta y asegúrese de que **Barrido** se d
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## Solución de problemas {#troubleshooting}
 
+### CAM No se puede recuperar el token de migración {#cam-unable-to-retrieve-the-migration-token}
+
+La recuperación automática del token de migración puede fallar por diferentes motivos, incluido usted [configuración de una lista de permitidos IP mediante Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) en el entorno de Cloud Service de destino.  En estos casos, verá el cuadro de diálogo siguiente cuando intente iniciar una ingesta:
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+Deberá recuperar el token de migración manualmente haciendo clic en el vínculo &quot;Obtener token&quot; del cuadro de diálogo. Se abrirá otra ficha que muestra el token. A continuación, puede copiar el token y pegarlo en el **Entrada del token de migración** campo . Ahora, debería poder iniciar la ingesta.
+
+>[!NOTE]
+>
+>El token estará disponible para los usuarios que pertenezcan a la función local **Administradores de AEM** en el servicio de autor del Cloud Service de destino.
+
+### No se puede iniciar la ingesta {#unable-to-start-ingestion}
+
+Solo podrá iniciar una ingesta en el entorno de destino si pertenece al entorno local **Administradores de AEM** en el servicio de autor del Cloud Service de destino. Si no pertenece al grupo de administradores de AEM, verá un error como se muestra a continuación cuando intente iniciar una ingesta. Puede solicitar al administrador que lo añada a la **Administradores de AEM** o pida el propio token, que puede pegar en el **Entrada del token de migración** campo .
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ## Siguientes pasos {#whats-next}
 
