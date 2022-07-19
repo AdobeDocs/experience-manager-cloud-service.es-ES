@@ -2,9 +2,9 @@
 title: Replicación
 description: Distribución y resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
+source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1259'
 ht-degree: 4%
 
 ---
@@ -172,6 +172,9 @@ Si no proporciona dicho filtro y solo utiliza el agente &quot;publicar&quot;, no
 
 El conjunto `ReplicationStatus` de un recurso solo se modifica si la acción de replicación incluye al menos un agente activo de forma predeterminada. En el ejemplo anterior, este no es el caso, ya que la replicación está utilizando el agente de &quot;vista previa&quot;. Por lo tanto, debe utilizar el nuevo `getStatusForAgent()` , que permite consultar el estado de un agente específico. Este método también funciona para el agente &quot;publicar&quot;. Devuelve un valor no nulo si se ha realizado alguna acción de replicación con el agente proporcionado.
 
+### Métodos de invalidación de contenido {#invalidating-content}
+
+Puede invalidar el contenido directamente utilizando la Invalidación de contenido de Sling (SCD) del autor (el método preferido) o utilizando la API de replicación para invocar el agente de replicación de vaciado del despachante de publicación. Consulte la [Almacenamiento en caché](/help/implementing/dispatcher/caching.md) para obtener más información.
 
 **Límites de capacidad de la API de replicación**
 
@@ -179,6 +182,7 @@ Se recomienda duplicar menos de 100 rutas a la vez, siendo 500 el límite estric
 Si la lógica de la aplicación no requiere replicación atómica, este límite se puede superar configurando la variable `ReplicationOptions.setUseAtomicCalls` como false, que acepta cualquier cantidad de rutas, pero crea bloques internamente para permanecer por debajo de este límite.
 
 El tamaño del contenido transmitido por llamada de replicación no debe superar `10 MB`. Esto incluye los nodos y las propiedades, pero no ningún binario (los paquetes de flujo de trabajo y los paquetes de contenido se consideran binarios).
+
 
 ## Solución de problemas {#troubleshooting}
 
