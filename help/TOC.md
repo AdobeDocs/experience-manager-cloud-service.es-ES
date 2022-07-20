@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
+source-git-commit: 0ee8f080c0e712e4a34086a75cbd8750a7d08b74
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3680'
 ht-degree: 92%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 92%
    + Notas de la versión de las herramientas de migración {#migration-tools}
       + [Notas de la versión actual](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2022 {#2022}
+         + [Notas de la versión 2022.5.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
          + [Notas de la versión 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
          + [Notas de la versión 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
          + [Notas de la versión 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
@@ -499,6 +500,7 @@ ht-degree: 92%
       + Adición de componentes a un formulario adaptable {#add-components-to-an-adaptive-form}
          + [Uso de CAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms.md)
          + [Usar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+         + [Aplicar firma manuscrita](/help/forms/signing-forms-using-scribble.md)
       + Configuración del diseño y aplicación de estilo a un formulario adaptable {#configure-layout-of-an-adaptive-form}
          + [Definición del diseño de un formulario adaptable](/help/forms/layout-capabilities-adaptive-forms.md)
          + [Uso del modo Diseño para cambiar el tamaño de los componentes](/help/forms/resize-using-layout-mode.md)

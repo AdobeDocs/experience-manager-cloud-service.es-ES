@@ -2,7 +2,8 @@
 title: '¿Cómo asignar un flujo de trabajo a otro usuario, enviar correo electrónico, utilizar Adobe Sign en un flujo de trabajo? '
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo adaptables basados en Forms. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varios orígenes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
+google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
+source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
 workflow-type: tm+mt
 source-wordcount: '5467'
 ht-degree: 0%
@@ -166,7 +167,7 @@ El paso de correo electrónico tiene las siguientes propiedades:
 * **[!UICONTROL Metadatos del flujo de trabajo]**: Utilice la opción cuando el valor que desea utilizar se guarde en una propiedad de metadatos de flujo de trabajo. Después de seleccionar la opción , introduzca el nombre de la propiedad de metadatos en el cuadro de texto vacío debajo de la opción Metadatos del flujo de trabajo . Por ejemplo, emailAddress.
 
 <!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
-* **[!UICONTROL Imagen]**: Utilice la opción para incrustar una imagen en el correo electrónico. Después de seleccionar la opción , busque y elija la imagen. La opción de imagen solo está disponible para las etiquetas de imagen (&lt;img src=&quot;*&quot; />) disponibles en la plantilla de correo electrónico.
+* **[!UICONTROL Imagen]**: Utilice la opción para incrustar una imagen en el correo electrónico. Después de seleccionar la opción , busque y elija la imagen. La opción de imagen solo está disponible para las etiquetas de imagen (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) disponibles en la plantilla de correo electrónico.&#42;
 
 **[!UICONTROL Dirección de correo electrónico del remitente/destinatario]**: Seleccione el **[!UICONTROL Literal]** para especificar manualmente una dirección de correo electrónico o seleccionar la opción **[!UICONTROL Recuperar de metadatos del flujo de trabajo]** para recuperar la dirección de correo electrónico de una propiedad de metadatos. También puede especificar una lista de matrices de propiedades de metadatos para el **[!UICONTROL Recuperar de metadatos del flujo de trabajo]** . Seleccione el **[!UICONTROL Variable]** para recuperar la dirección de correo electrónico del valor almacenado en una variable de tipo de datos de cadena.
 
