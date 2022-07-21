@@ -3,9 +3,9 @@ title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager as
 description: Obtenga información sobre la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de AEM función de envío sin encabezado.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
+source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -143,7 +143,7 @@ Si la API de REST de Assets se utiliza en un entorno sin requisitos de autentica
 
 >[!NOTE]
 >
->Para obtener más información, consulte:
+>Para obtener más información, consulte lo siguiente:
 >
 >* [Se explica el CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vídeo: Desarrollo para CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
@@ -256,47 +256,6 @@ El uso puede variar en función de si utiliza un entorno de publicación o autor
 >
 >Para obtener más información, consulte la [Referencia de API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En particular, [API de Adobe Experience Manager Assets: Fragmentos de contenido](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
-### Lectura/Entrega {#read-delivery}
-
-El uso se realiza mediante:
-
-`GET /{cfParentPath}/{cfName}.json`
-
-Por ejemplo:
-
-`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
-La respuesta es un archivo JSON serializado con el contenido estructurado como en el fragmento de contenido. Las referencias se envían como direcciones URL de referencia.
-
-Se pueden realizar dos tipos de operaciones de lectura:
-
-* Al leer un fragmento de contenido específico por ruta, esto devuelve la representación JSON del fragmento de contenido.
-* Leer una carpeta de fragmentos de contenido por ruta: esto devuelve las representaciones JSON de todos los fragmentos de contenido de la carpeta.
-
-### Crear {#create}
-
-El uso se realiza mediante:
-
-`POST /{cfParentPath}/{cfName}`
-
-El cuerpo debe contener una representación JSON del fragmento de contenido que se va a crear, incluido cualquier contenido inicial que se deba configurar en los elementos del fragmento de contenido. Es obligatorio configurar la variable `cq:model` y debe señalar a un modelo de fragmento de contenido válido. Si no lo hace, se producirá un error. También es necesario añadir un encabezado `Content-Type` que está configurado como `application/json`.
-
-### Actualizar {#update}
-
-El uso se realiza mediante
-
-`PUT /{cfParentPath}/{cfName}`
-
-El cuerpo debe contener una representación JSON de lo que se debe actualizar para el fragmento de contenido determinado.
-
-Puede ser simplemente el título o la descripción de un fragmento de contenido, o un solo elemento, o todos los valores o metadatos de elementos.
-
-### Eliminar {#delete}
-
-El uso se realiza mediante:
-
-`DELETE /{cfParentPath}/{cfName}`
-
 ## Restricciones     {#limitations}
 
 Existen algunas limitaciones:
@@ -386,7 +345,7 @@ Consulte aquí las referencias de API detalladas:
 
 ## Recursos adicionales {#additional-resources}
 
-Para obtener más información, consulte:
+Para obtener más información, consulte lo siguiente:
 
 * [Documentación de la API HTTP de Assets](/help/assets/mac-api-assets.md)
 * [AEM sesión de Gem: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
