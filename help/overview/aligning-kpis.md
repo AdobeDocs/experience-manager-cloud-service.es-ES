@@ -2,14 +2,14 @@
 title: Alineación de los KPI
 description: Alineación de los KPI
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
+source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 100%
 
 ---
 
-# Para elegir los KPI adecuados, comience con las metas empresariales
+# Para elegir los KPI adecuados, comience con las metas empresariales {#choose-the-right-kpis}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_alignkpis"
