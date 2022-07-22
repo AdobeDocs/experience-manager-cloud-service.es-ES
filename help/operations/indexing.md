@@ -2,10 +2,10 @@
 title: Búsqueda de contenido e indexación
 description: Búsqueda de contenido e indexación
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
+source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 90%
+source-wordcount: '2251'
+ht-degree: 88%
 
 ---
 
@@ -280,17 +280,7 @@ Si se va a eliminar un índice en una versión posterior de la aplicación, se p
 
 Si ya no es necesario tener una personalización de un índice predeterminado, debe copiar la definición de índice predeterminada. Por ejemplo, si ya ha implementado `damAssetLucene-8-custom-3`, pero ya no necesita las personalizaciones y desea volver al índice `damAssetLucene-8` predeterminado, debe añadir un índice `damAssetLucene-8-custom-4` que contenga la definición de índice de `damAssetLucene-8`.
 
-## Optimizaciones de índice {#index-optimizations}
+## Optimizaciones de índice y consulta {#index-query-optimizations}
 
-Apache Jackrabbit Oak permite configuraciones de índice flexibles para gestionar de forma eficiente las consultas de búsqueda. Los índices son especialmente importantes para repositorios más grandes. Asegúrese de que todas las consultas estén respaldadas por un índice adecuado. Las consultas sin un índice adecuado pueden leer miles de nodos, que luego se registran como advertencia. Este tipo de consultas deben identificarse analizando los archivos de registro para poder optimizar las definiciones de índice. Consulte [esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=es#tips-for-creating-efficient-indexes) para obtener más información.
-
-### Índice de texto completo de Lucene en AEM as a Cloud Service {#index-lucene}
-
-El índice de texto completo `/oak:index/lucene-2` puede llegar a ser muy grande porque indexa todos los nodos del repositorio de AEM de forma predeterminada.  Siguiendo los planes de Adobe para retirar este índice, ya no se utilizará en el lado del producto en AEM as a Cloud Service y no se debería necesitar ejecutar el código de cliente. Para entornos de AEM as a Cloud Service con índices Lucene comunes, Adobe está trabajando con los clientes de forma individual para lograr un enfoque coordinado que compense este índice y utilice otros mejores y optimizados. Los clientes no tienen que hacer nada si no reciben ningún aviso de Adobe. Adobe informará a los clientes de AEM as a Cloud Service cuando haya necesidad de actuar respecto a esta optimización. Si este índice es necesario para consultas personalizadas, como solución temporal, se debe crear una copia con un nombre diferente, por ejemplo: `/oak:index/acme.lucene-1-custom-1`, tal como se describe [aquí](/help/operations/indexing.md).
-Esta optimización no se aplica de forma predeterminada a otros entornos de AEM alojados de forma local o administrados por Adobe Managed Services.
-
-## Optimizaciones de consultas {#index-query}
-
-La herramienta **Rendimiento de la consulta** permite observar consultas JCR populares y lentas. Además, puede analizar consultas y mostrar información diversa acerca de ellas, sobre todo en cuanto a si se está utilizando un índice para ella o no.
-
-A diferencia de en AEM local, AEM as a Cloud Service ya no muestra la herramienta **Rendimiento de la consulta** en la IU. Ahora está disponible a través de Developer Console (en Cloud Manager), en la pestaña [Consultas](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries).
+Apache Jackrabbit Oak permite configuraciones de índice flexibles para gestionar de forma eficiente las consultas de búsqueda. Los índices son especialmente importantes para repositorios más grandes. Asegúrese de que todas las consultas estén respaldadas por un índice adecuado. Las consultas sin un índice adecuado pueden leer miles de nodos, que luego se registran como advertencia.
+Consulte [esta página](best-practices-for-querying-and-indexing.md) sobre cómo se pueden optimizar las consultas y los índices.
