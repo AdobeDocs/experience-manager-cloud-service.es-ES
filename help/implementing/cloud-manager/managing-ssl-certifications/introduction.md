@@ -2,10 +2,10 @@
 title: Introducción a la administración de certificados SSL
 description: Descubra cómo Cloud Manager le proporciona herramientas de autoservicio para instalar certificados SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 898f7bc46a3f1b0ac93ee43fbf7b60a11682a073
+source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 1%
+source-wordcount: '638'
+ht-degree: 2%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 1%
 >id="aemcloud_golive_sslcert"
 >title="Administrar certificados SSL"
 >abstract="Descubra cómo Cloud Manager le proporciona herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio para los usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Ver, actualizar y reemplazar un certificado SSL"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Comprobar el estado de un certificado SSL"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Ver, actualizar y reemplazar un certificado SSL"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Comprobar el estado de un certificado SSL"
 
 Cloud Manager le proporciona herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio para los usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar los certificados SSL y las claves privadas que son propiedad de los clientes y que se obtienen de entidades de certificación de terceros, como Let&#39;s Encrypt.
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service solo admite seguro `https` sitios web.
 * Los clientes con varios dominios personalizados no querrán cargar un certificado cada vez que añadan un dominio.
 * Estos clientes se beneficiarán de obtener un certificado con varios dominios.
 
-## Requisitos {#requirements}
+## Requisitos  {#requirements}
 
 * AEM as a Cloud Service solo aceptará certificados que se ajusten a la directiva OV (validación de organización) o EV (validación extendida).
 * Cualquier certificado debe ser un certificado TLS X.509 de una entidad de certificación (CA) de confianza con una clave privada RSA de 2048 bits que corresponda.
