@@ -4,10 +4,10 @@ description: Aprenda a habilitar ciertas funciones de fragmento de contenido en 
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 18%
+source-wordcount: '371'
+ht-degree: 23%
 
 ---
 
@@ -63,6 +63,9 @@ Hasta [usar ciertas funciones de fragmento de contenido](#creating-a-content-fra
 1. Uso **Crear** para abrir el cuadro de diálogo, donde:
 
    1. Especifique un **Título**.
+   1. El **Nombre** se convertirá en el nombre de nodo en el repositorio.
+      * Se generará automáticamente en función del título y se ajustará según las [convenciones de nomenclatura de AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Puede ajustarlo si es necesario.
    1. Para habilitar su uso, seleccione
       * **Modelos de fragmentos de contenido**
       * **Consultas persistentes de GraphQL**

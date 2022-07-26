@@ -3,10 +3,10 @@ title: Configuración de Dispatcher con AEM Headless
 description: Dispatcher es una capa de almacenamiento en caché y seguridad situada frente a los entornos de publicación de Adobe Experience Manager. Se utilizan varias configuraciones para abrir puntos de conexión de GraphQL en aplicaciones sin encabezado.
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -38,4 +38,4 @@ La solicitud de consultas persistentes se realiza con un punto de conexión dife
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Las consultas persistentes se pueden solicitar utilizando `GET`, por lo que se almacena así la respuesta en caché en el nivel de Dispatcher y la red de distribución de contenido (CDN). Se pueden encontrar más detalles acerca del almacenamiento en caché e invalidación de caché [aquí](/help/implementing/dispatcher/caching.md).
+Las consultas persistentes se pueden solicitar utilizando `GET`, almacenando así la respuesta en caché en el nivel de Dispatcher y CDN. Se pueden encontrar más detalles acerca del almacenamiento en caché e invalidación de caché [aquí](/help/implementing/dispatcher/caching.md).

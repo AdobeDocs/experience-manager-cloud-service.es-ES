@@ -1,10 +1,11 @@
 ---
 title: 'Fragmentos de contenido: navegador de configuración'
 description: Obtenga información sobre cómo habilitar una funcionalidad de fragmento de contenido específica en el navegador de configuración.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 19%
+source-wordcount: '358'
+ht-degree: 24%
 
 ---
 
@@ -60,6 +61,9 @@ Hasta [usar ciertas funciones de fragmento de contenido](#creating-a-content-fra
 1. Uso **Crear** para abrir el cuadro de diálogo, donde:
 
    1. Especifique un **Título**.
+   1. El **Nombre** se convertirá en el nombre de nodo en el repositorio.
+      * Se generará automáticamente en función del título y se ajustará según las [convenciones de nomenclatura de AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Puede ajustarlo si es necesario.
    1. Para habilitar su uso, seleccione
       * **Modelos de fragmentos de contenido**
       * **Consultas persistentes de GraphQL**

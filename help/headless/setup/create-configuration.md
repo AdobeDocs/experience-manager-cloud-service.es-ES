@@ -2,10 +2,10 @@
 title: 'Creación de una configuración: configuración sin encabezado'
 description: Cree una configuración como primer paso para empezar a utilizar sin encabezado en AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ Si es necesario, puede crear varias configuraciones. Las configuraciones tambié
 
 >[!NOTE]
 >
->Pueden ser necesarias opciones de configuración además de los **Modelos de fragmentos de contenido** y **Consultas persistentes de GraphQL** en función de los requisitos de implementación.
+>Opciones de configuración además de **Modelos de fragmento de contenido** y **Consultas persistentes de GraphQL** puede ser necesario en función de los requisitos de implementación.
 
 ## Siguientes pasos {#next-steps}
 
