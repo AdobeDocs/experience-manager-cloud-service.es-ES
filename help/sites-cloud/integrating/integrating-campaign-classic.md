@@ -1,96 +1,164 @@
 ---
 title: Integración con Adobe Campaign Classic
-description: 'Integración con Adobe Campaign Classic '
+description: Aprenda a integrar AEM as a Cloud Service con Adobe Campaign Classic para crear contenido atractivo para sus campañas.
 feature: Administering
 role: Admin
-source-git-commit: f68f5a457bbbcd76681cccabe5a3f4c92b6f8770
+exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
+source-git-commit: 9ad97fdb26c0049f1b6a4b0958c93e2d4af803fb
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 2%
+source-wordcount: '1302'
+ht-degree: 0%
 
 ---
 
-
 # Integración con Adobe Campaign Classic {#integrating-campaign-classic}
 
-Al integrarse con Adobe Campaign, puede administrar la entrega de correo electrónico, el contenido y los formularios directamente en AEM as a Cloud Service. Se necesitan pasos de configuración tanto en Adobe Campaign Classic como AEM as a Cloud Service para habilitar la comunicación bidireccional entre soluciones.
+Al integrar AEM as a Cloud Service con Adobe Campaign, puede administrar la entrega de correo electrónico, el contenido y los formularios directamente en AEM as a Cloud Service. Se necesitan pasos de configuración tanto en Adobe Campaign Classic como AEM as a Cloud Service para habilitar la comunicación bidireccional entre soluciones.
 
-Tenga en cuenta que AEM as a Cloud Service y Adobe Campaign Classic también pueden utilizarse de forma independiente. Por ejemplo, los especialistas en marketing pueden crear campañas y utilizar la segmentación en Adobe Campaign, mientras que los creadores de contenido pueden trabajar en el diseño en AEM as a Cloud Service.
+Esta integración permite utilizar AEM as a Cloud Service y Adobe Campaign Classic de forma independiente. Los especialistas en marketing pueden crear campañas y utilizar la segmentación en Adobe Campaign, mientras que los creadores de contenido en paralelo pueden trabajar en el diseño de contenido en AEM as a Cloud Service. La integración permite que el contenido y el diseño de la campaña en AEM sean dirigidos y entregados por Campaign.
 
-## Flujo de trabajo de integración {#integration-workflow}
+## Pasos de la integración {#integration-steps}
 
-Los siguientes capítulos detallan cómo integrar las soluciones. Esto requiere pasos de configuración tanto en Adobe Campaign Classic como AEM as a Cloud Service. Como tal, aprenderá a:
+La integración entre AEM y Campaign requiere una serie de pasos en ambas soluciones.
 
-* [Crear el usuario del operador](#create-operator)
-* [Configuración de AEM as a Cloud Service para la integración](#aem-configuration)
-* [Configuración del usuario remoto de Campaign](#configure-user)
-* [Configuración de la cuenta externa de Adobe Campaign Classic](#acc-setup)
+1. [Instale el paquete de integración de AEM en Campaign.](#install-package)
+1. [Creación de un operador para AEM en Campaign](#create-operator)
+1. [Configuración de la integración de Campaign en AEM](#campaign-integration)
+1. [Configuración del AEM externalizador](#externalizer)
+1. [Configure el usuario remoto de la campaña en AEM](#configure-user)
+1. [Configuración de la cuenta externa AEM en Campaign](#acc-setup)
 
-### Requisitos previos {#prerequisites}
+Este documento le guía en cada uno de estos pasos en detalle
 
-**Adobe Campaign Classic**
+## Requisitos previos {#prerequisites}
 
-Para realizar la integración necesita una instancia de Adobe Campaign Classic en funcionamiento, incluida una base de datos. Si necesita más información sobre cómo configurar y configurar Adobe Campaign Classic, lea la [Documentación de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) especialmente la guía Instalación y configuración. Tenga en cuenta que para realizar las operaciones que se presentan a continuación también debe tener la función de administrador.
+* Acceso de administrador a Adobe Campaign Classic
+   * Para realizar la integración, necesita una instancia de Adobe Campaign Classic en funcionamiento, incluida una base de datos configurada.
+   * Si necesita más información sobre cómo configurar y configurar Adobe Campaign Classic, consulte la [documentación de Adobe Campaign Classic,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) especialmente la guía de instalación y configuración.
 
-**AEM as a Cloud Service**
+* Acceso de administrador a AEM as a Cloud Service
 
-Necesita el [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html) solución.
+## Instalación del paquete de integración de AEM en Campaign {#install-package}
 
-### Creación del usuario del operador en Adobe Campaign Classic {#create-operator}
+La variable **Integración AEM** en Adobe Campaign incluye una serie de configuraciones estándar necesarias para conectarse a AEM.
 
-Abra la consola del cliente de Adobe Campaign Classic desde el menú de inicio e inicie sesión. Debería aparecer la página principal.
+1. Como administrador, inicie sesión en la instancia de Adobe Campaign mediante la consola del cliente.
 
-1. Haga clic en **Explorer** para abrir la vista del explorador.
-   ![explorador](assets/explorer.png)
-1. En la vista de árbol de la izquierda, vaya a **Administración->Administración de acceso->Operadores**.
-1. Haga doble clic en el `aemserver` en la lista Operadores de la derecha.
-1. Cambie a la **Editar** pestaña . Establezca la contraseña para aemserver.
-   ![password](assets/aemserveredit.png)
-1. Haga clic en el **Derechos de acceso** y haga clic en **Edición de los parámetros de acceso** en la configuración de seguridad.
-1. En Cifrado, seleccione Red pública como zona de conexión autorizada. Haga clic en **Aceptar**.
-   ![zona de conexión](assets/auth.png)
+1. Select **Herramientas** > **Avanzadas** > **Importar paquete...**.
+
+   ![Importar paquete](assets/import-package.png)
+
+1. Haga clic en **Instalación de un paquete estándar** y haga clic en **Siguiente**.
+
+1. Marque la **Integración AEM** paquete.
+
+   ![Instalación de un paquete estándar](assets/select-package.png)
+
+1. Haga clic en **Siguiente** y luego **Inicio** para iniciar la instalación.
+
+   ![Progreso de instalación](assets/installation.png)
+
+1. Haga clic en **Cerrar** cuando se complete la instalación.
+
+El paquete de integración ya está instalado.
+
+## Creación del operador para AEM en Campaign {#create-operator}
+
+El paquete de integración crea automáticamente el `aemserver` operador que AEM utiliza para conectarse a Adobe Campaign. Debe definir una zona de seguridad para este operador y establecer su contraseña.
+
+1. Inicie sesión en Adobe Campaign como administrador mediante la consola del cliente.
+
+1. Select **Herramientas** -> **Explorer** en la barra de menús.
+
+1. En el explorador, vaya a la **Administración** > **Gestión de acceso** > **Operadores** nodo .
+
+1. Seleccione el `aemserver` operador.
+
+1. En el **Editar** del operador, seleccione **Derechos de acceso** y, a continuación, haga clic en la pestaña **Editar los parámetros de acceso...** vínculo.
+
+   ![Establecer zona de seguridad](assets/access-rights.png)
+
+1. Seleccione la zona de seguridad adecuada y defina la máscara IP de confianza según sea necesario.
+
 1. Haga clic en **Guardar**.
-1. Cierre la sesión.
-1. Vaya a la ubicación de instalación de Adobe Campaign Classic v7, por ejemplo `C:\Program Files\Adobe\Adobe Campaign Classic v7\conf` y abra el `serverConf.xml` como administrador.
-   * Buscar **zona de seguridad**.
-   * Establezca los siguientes parámetros `allowHTTP="true"` `sessionTokenOnly="true"` `allowUserPassword="true"`.
-   * Guarde el archivo.
-1. Asegúrese de que la zona de seguridad no se sobrescriba con la configuración correspondiente en `config-<server name>.xml` (C:\Program Files\Adobe\Adobe Campaign Classic v7\conf\config_acc-test.xml).
-   * Si el archivo de configuración contiene una configuración de zona de seguridad independiente, cambie la variable `allowUserPassword` como true.
-1. Si desea cambiar el puerto del servidor de Adobe Campaign Classic, sustituya 8080 por el puerto deseado (por ejemplo: 80).
+
+1. Cierre la sesión del cliente de Adobe Campaign.
+
+1. En el sistema de archivos del servidor de Adobe Campaign, vaya a la ubicación de instalación de Campaign y edite el `serverConf.xml` como administrador. Este archivo generalmente se encuentra en:
+   * `C:\Program Files\Adobe\Adobe Campaign Classic v7\conf` en Windows.
+   * `/usr/local/neolane/nl6/conf/eng` en Linux.
+
+1. Buscar `securityZone` y asegúrese de que los siguientes parámetros están establecidos para la zona de seguridad del operador AEM.
+
+   * `allowHTTP="true"`
+   * `sessionTokenOnly="true"`
+   * `allowUserPassword="true"`.
+
+1. Guarde el archivo.
+
+1. Asegúrese de que la zona de seguridad no se sobrescriba con la configuración correspondiente en la variable `config-<server name>.xml` archivo.
+
+   * Si el archivo de configuración contiene una configuración de zona de seguridad independiente, cambie la variable `allowUserPassword` atributo a `true`.
+
+1. Si desea cambiar el puerto del servidor de Adobe Campaign Classic, sustituya `8080` con el puerto deseado.
+
+>[!CAUTION]
+>
+>De forma predeterminada, no hay ninguna zona de seguridad configurada para el operador. Para que AEM se conecte a Adobe Campaign, debe seleccionar una zona como se detalla en los pasos anteriores.
+>
+>Adobe recomienda encarecidamente crear una zona de seguridad dedicada a AEM para evitar problemas de seguridad. Para obtener más información, consulte la [Documentación de Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+
+1. En el cliente de Campaign, vuelva a la `aemserver` y seleccione **General** pestaña .
+
+1. Haga clic en el **Restablecer contraseña...** vínculo.
+
+1. Especifique una contraseña y guárdela en una ubicación segura para uso futuro.
+
+1. Haga clic en **OK** para guardar la contraseña de `aemserver` operador.
+
+## Configuración de la integración de Campaign en AEM {#campaign-integration}
+
+AEM usa [el operador que ya ha configurado en Campaign](#create-operator) para comunicarse con Campaign
+
+1. Inicie sesión en la instancia de creación de AEM como administrador.
+
+1. En el carril lateral de navegación global, seleccione **Herramientas** > **Cloud Services** > **Cloud Services heredados** > **Adobe Campaign** y haga clic en **Configurar ahora**.
+
+   ![Configuración de Adobe Campaign](assets/configure-campaign-service.png)
+
+1. En el cuadro de diálogo, cree una configuración de servicio de Campaign introduciendo una **Título** y haga clic en **Crear**.
+
+   ![Cuadro de diálogo Configurar campaña](assets/configure-campaign-dialog.png)
+
+1. Se abre una nueva ventana y un cuadro de diálogo para editar la configuración. Proporcione la información necesaria.
+
+   * **Nombre de usuario** - Esto es [el operador de paquete Adobe Campaign AEM Integration creado en el paso anterior.](#create-operator) De forma predeterminada, es `aemserver`.
+   * **Contraseña** - Esta es la contraseña de [el operador de paquete Adobe Campaign AEM Integration creado en el paso anterior.](#create-operator)
+   * **Punto final de API** : Esta es la URL de instancia de Adobe Campaign.
+
+   ![Configuración de Adobe Campaign en AEM](assets/configure-campaign.png)
+
+1. Select **Conectarse a Adobe Campaign** para verificar la conexión y, a continuación, haga clic en **OK**.
+
+AEM ahora puede comunicarse con Adobe Campaign.
 
 >[!NOTE]
 >
->De forma predeterminada, no hay ninguna zona de seguridad configurada para el operador. Para conectarse a Adobe Campaign con AEM as a Cloud Service, debe seleccionar una (consulte los pasos anteriores). Recomendamos encarecidamente que cree una zona de seguridad dedicada a AEM para evitar problemas de seguridad.
+>Asegúrese de que el servidor de Adobe Campaign esté disponible a través de Internet. AEM as a Cloud Service no puede acceder a redes privadas.
 
-### Configuración de AEM as a Cloud Service {#aem-configuration}
+## Configuración del AEM externalizador {#externalizer}
 
-1. Inicie sesión en cloud manager e inicie la instancia de autor as a Cloud Service AEM.
-1. Vaya a **Herramientas → Cloud Service → Cloud Service heredado**.
-   ![servicio de nube heredado](assets/legacy.png)
-1. Desplácese hacia abajo hasta Adobe Campaign y haga clic en el **Configurar ahora** vínculo.
-   * Introduzca un título.
-   * Introduzca un nombre.
-   * Haga clic en **Crear**.
-1. En la pantalla Editar componente
-   * Escriba el nombre de usuario; consulte [Crear el usuario del operador](#create-operator).
-   * Introduzca la Contraseña.
-   * Introduzca el punto final de la API del servidor de Adobe Campaign Classic (por ejemplo, `http://3.22625.51:80`).
-   * Haga clic en **Conectarse a Adobe Campaign**.
-   * Haga clic en **Aceptar**.
+El externalizador es un servicio OSGi en AEM que transforma una ruta de recurso en una URL externa y absoluta, que es necesario para que AEM el contenido que Campaign puede utilizar.
 
-   >[!NOTE]
-   >
-   >Asegúrese de que el servidor de Adobe Campaign esté disponible en Internet porque AEM as a Cloud Service no puede acceder a redes privadas.
-1. Compruebe la instancia de publicación en la configuración del externalizador de vínculos.
-Puede ver esta configuración comprobando el volcado de estado de los servicios OSGi en el [consola de desarrollador](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#osgi-services).
-Si no es correcto, realice cambios en el repositorio de Git de la instancia correspondiente y luego implemente la configuración utilizando [administrador de nube](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Inicie sesión en la instancia de creación de AEM como administrador.
+1. Confirme la instancia de publicación en la configuración del externalizador comprobando el volcado de estado de los servicios OSGi en la [consola para desarrolladores.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#osgi-services)
+1. Si no es correcto, realice los cambios necesarios en el repositorio de Git de la instancia correspondiente y [implemente la configuración mediante cloud manager.](/help/implementing/cloud-manager/deploy-code.md)
 
-```
-Service 3310 - [com.day.cq.commons.Externalizer] (pid: com.day.cq.commons.impl.ExternalizerImpl)",
+```text
+Service 3310 - [com.day.cq.commons.externalizer] (pid: com.day.cq.commons.impl.externalizerImpl)",
 "  from Bundle 420 - Day Communique 5 Commons Library (com.day.cq.cq-commons), version 5.12.16",
 "    component.id: 2149",
-"    component.name: com.day.cq.commons.impl.ExternalizerImpl",
+"    component.name: com.day.cq.commons.impl.externalizerImpl",
 "    externalizer.contextpath: ",
 "    externalizer.domains: [local https://author-p17558-e33255-cmstg.adobeaemcloud.com, author https://author-p17558-e33255-cmstg.adobeaemcloud.com,
      publish https://publish-p17558-e33255-cmstg.adobeaemcloud.com]",
@@ -105,37 +173,56 @@ Service 3310 - [com.day.cq.commons.Externalizer] (pid: com.day.cq.commons.impl.E
 
 >[!NOTE]
 >
->También se debe poder acceder a la instancia de publicación desde el servidor de Adobe Campaign.
+>Se debe poder acceder a la instancia de publicación desde el servidor de Adobe Campaign.
 
-### Configuración del usuario remoto de Adobe Campaign {#configure-user}
+## Configuración del usuario remoto de la campaña en AEM {#configure-user}
 
-Debe establecer una contraseña para el usuario remoto de la campaña. Es necesario para conectar Adobe Campaign Classic con AEM as a Cloud Service.
+Para que Campaign se comunique con AEM, debe establecer una contraseña para la variable `campaign-remote` usuario en AEM.
 
-1. Vaya a **AEM → Herramientas → Seguridad → Usuarios**.
-   ![usuarios de seguridad](assets/user.png)
-1. Busque la variable `campaign-remote` y haga clic en él.
-1. Haga clic en Cambiar contraseña
-   * Escriba la nueva contraseña dos veces.
-   * Escriba la contraseña de AEM.
-   * Haga clic en **Guardar**.
+1. Inicie sesión en AEM como administrador.
+1. En la consola de navegación principal, haga clic en **Herramientas** en el carril izquierdo.
+1. A continuación, haga clic en **Seguridad** -> **Usuarios** para abrir la consola de administración de usuarios.
+1. Busque la variable `campaign-remote` usuario.
+1. Seleccione el `campaign-remote` usuario y haga clic en **Propiedades** para editar el usuario.
+1. En el **Editar configuración de usuario** ventana, haga clic en **Cambiar contraseña**.
+1. Proporcione una nueva contraseña para el usuario y anote la contraseña en una ubicación segura para uso futuro.
+1. Haga clic en **Guardar** para guardar el cambio de contraseña.
+1. Haga clic en **Guardar y cerrar** para guardar los cambios en la variable `campaign-remote` usuario.
 
-### Configuración de la cuenta externa de Adobe Campaign Classic {#acc-setup}
+## Configuración de la cuenta externa de AEM en Campaign {#acc-setup}
 
-También debe configurar una cuenta externa para conectar Adobe Campaign Classic con la instancia as a Cloud Service AEM.
+When [instalación del **Integración AEM** paquete en Campaign,](#install-package) se crea una cuenta externa para AEM. Al configurar esta cuenta externa, Adobe Campaign puede conectarse a AEM as a Cloud Service, lo que permite una comunicación bidireccional entre las soluciones.
 
-1. Inicie sesión en el servidor de Adobe Campaign Classic mediante la consola del cliente.
-1. Vaya a la vista del explorador.
-1. En la vista de árbol de la izquierda, vaya a **Administración → Plataforma → Cuentas Externas**.
-1. En la vista de lista de la parte superior derecha, haga clic en AEM instancia.
-1. En la configuración de la instancia de AEM
-   * Introducir AEM IP/FQDN de autor as a Cloud Service, por ejemplo `https://author-p17558-e33255-cmstg.adobeaemcloud.com`.
-   * Introduzca el usuario y la cuenta.
-   * Introduzca la contraseña del usuario remoto de la campaña que configuró en la instancia as a Cloud Service de AEM (consulte el procedimiento anterior).
-   * Seleccione el **Habilitado** casilla de verificación.
-   * Haga clic en **Guardar**.
+1. Inicie sesión en Adobe Campaign como administrador mediante la consola del cliente.
 
-   >[!NOTE]
-   >
-   >La IP/FQDN del servidor de AEM Author debe ser accesible desde la instancia del servidor de Adobe Campaign Classic. Además, no agregue el carácter de barra invertida en la IP/FQDN del servidor de AEM Author.
+1. Select **Herramientas** -> **Explorer** en la barra de menús.
 
-Después de configurar Adobe Campaign Classic y AEM as a Cloud Service, la integración ya se ha completado. Además, también puede aprender a crear un boletín de Adobe Experience Manager leyendo [esta página](/help/sites-cloud/integrating/creating-newsletter.md).
+1. En el explorador, vaya a la **Administración** > **Plataforma** > **Cuentas externas** nodo .
+
+   ![Cuentas externas](assets/external-accounts.png)
+
+1. Busque la cuenta de AEM externa. De forma predeterminada, tiene los valores siguientes:
+
+   * **Tipo** - AEM
+   * **Etiqueta** - Instancia AEM
+   * **Nombre interno** - aemInstance
+
+1. En el **General** de esta cuenta, introduzca la información de usuario que definió en la [Establecer la contraseña de usuario remota de la campaña](#set-campaign-remote-password) paso a paso.
+
+   * **Servidor** - La dirección del servidor de autor de AEM
+      * Se debe poder acceder al servidor de creación de AEM desde la instancia de servidor de Adobe Campaign Classic.
+      * Asegúrese de que la dirección del servidor **not** termine con una barra diagonal.
+   * **Cuenta** - De forma predeterminada, esta es la variable `campaign-remote` que haya establecido en AEM en la [Establecer la contraseña de usuario remota de la campaña](#set-campaign-remote-password) paso a paso.
+   * **Contraseña** - Esta contraseña es la misma que la `campaign-remote` que haya establecido en AEM en la [Establecer la contraseña de usuario remota de la campaña](#set-campaign-remote-password) paso a paso.
+
+1. Seleccione el **Habilitado** casilla de verificación.
+
+1. Haga clic en **Guardar**.
+
+Adobe Campaign ahora puede comunicarse con AEM.
+
+## Siguientes pasos {#next-steps}
+
+Con tanto Adobe Campaign Classic como AEM as a Cloud Service configurados, la integración ya se ha completado.
+
+Ahora puede aprender a crear una newsletter en Adobe Experience Manager continuando con [este documento.](/help/sites-cloud/integrating/creating-newsletter.md)
