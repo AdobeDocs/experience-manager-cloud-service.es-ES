@@ -3,9 +3,9 @@ title: Validación y depuración mediante las herramientas de Dispatcher
 description: Validación y depuración mediante las herramientas de Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
+source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2536'
 ht-degree: 2%
 
 ---
@@ -78,6 +78,10 @@ Los siguientes archivos se pueden personalizar y se transferirán a la instancia
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
 Puede tener uno o más de estos archivos. Contienen `<VirtualHost>` entradas que coinciden con los nombres de host y permiten a Apache gestionar cada tráfico de dominio con reglas diferentes. Los archivos se crean en la variable `available_vhosts` y habilitado con un vínculo simbólico en la variable `enabled_vhosts` directorio. En el `.vhost` se incluirán otros archivos, como reescrituras y variables.
+
+>[!NOTE]
+>
+>En el modo flexible debe utilizar rutas relativas en lugar de rutas absolutas.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -480,11 +484,15 @@ $ docker exec d75fbd23b29 httpd-test
 Con la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager generan estructuras de proyecto maven con [AEM arquetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) o superior, que incluye el archivo **opt-in/USE_SOURCES_DIRECTLY**. Esto elimina las limitaciones anteriores de la variable [modo heredado](/help/implementing/dispatcher/validation-debug-legacy.md) el número y el tamaño de los archivos, lo que también hace que el SDK y el tiempo de ejecución validen e implementen la configuración de una forma mejorada. Si la configuración de Dispatcher no tiene este archivo, se recomienda migrar. Siga estos pasos para garantizar una transición segura:
 
 1. **Pruebas locales.** Con el SDK de las herramientas de Dispatcher más recientes, añada la carpeta y el archivo `opt-in/USE_SOURCES_DIRECTLY`. Siga las instrucciones de &quot;validación local&quot; de este artículo para probar que Dispatcher funciona localmente.
-2. **Pruebas de desarrollo en la nube:**
+1. **Pruebas de desarrollo en la nube:**
    * Confirmar el archivo `opt-in/USE_SOURCES_DIRECTLY` a una rama de Git implementada por la canalización sin producción a un entorno de desarrollo de Cloud.
    * Utilice Cloud Manager para implementar en un entorno de desarrollo de Cloud.
    * Haga pruebas exhaustivas. Es fundamental validar que la configuración de Apache y Dispatcher se comporta como espera antes de implementar los cambios en entornos más altos. Compruebe todo el comportamiento relacionado con la configuración personalizada. Presente un ticket de asistencia al cliente si cree que la configuración implementada de Dispatcher no refleja su configuración personalizada.
-3. **Implementar en producción:**
+
+   >[!NOTE]
+   >
+   >En el modo flexible debe utilizar rutas relativas en lugar de rutas absolutas.
+1. **Implementar en producción:**
    * Confirmar el archivo `opt-in/USE_SOURCES_DIRECTLY` a una rama de Git implementada por la canalización de producción en los entornos de producción y fase de Cloud.
    * Utilice Cloud Manager para implementar en el entorno de ensayo.
    * Haga pruebas exhaustivas. Es fundamental validar que la configuración de Apache y Dispatcher se comporta como espera antes de implementar los cambios en entornos más altos. Compruebe todo el comportamiento relacionado con la configuración personalizada. Presente un ticket de asistencia al cliente si cree que la configuración implementada de Dispatcher no refleja su configuración personalizada.
