@@ -3,10 +3,10 @@ title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a C
 description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 75621ba378d59bd36146b15995823c43c458d349
+source-git-commit: 2340c9416d90f7973109ba57c1769ae892049026
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 20%
+source-wordcount: '921'
+ht-degree: 16%
 
 ---
 
@@ -25,78 +25,92 @@ En la siguiente sección se describen las notas de la versión generales de la v
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] la versión actual (2022.6.0) es el 30 de junio de 2022.
+La fecha de lanzamiento de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] la versión actual (2022.7.0) es el 8 de agosto de 2022.
 
-La próxima versión (2022.7.0) está planificada para el 8 de agosto de 2022.
+La próxima versión (2022.8.0) está planificada para el 25 de agosto de 2022.
 
 ## Vídeo de la versión {#release-video}
 
-Consulte el vídeo Información general de la versión de junio de 2022 para ver un resumen de las funciones agregadas en la versión 2022.6.0:
+Eche un vistazo al vídeo Información general de la versión de julio de 2022 para ver un resumen de las funciones agregadas en la versión 2022.7.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/344308/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nuevas funciones de [!DNL Sites] {#sites-features}
 
-* Un nuevo [interfaz de usuario](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ya está disponible para administradores de contenido y autores de contenido para administrar de forma eficaz (realizar acciones como publicar, cancelar la publicación, copiar, mover, etc.), buscar/filtrar y crear fragmentos de contenido para casos de uso sin encabezado.
+* La variable [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ahora admite métodos abreviados del teclado.
 
-   ![Consola de fragmento de contenido](/help/release-notes/assets/cf-ui.png)
+* AEM como del Cloud Service [entrega de imágenes optimizada para la web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) permite mejorar significativamente la velocidad de la página al entregar formatos como WebP. Este nuevo servicio también ofrece opciones más flexibles de cambio de tamaño y transformación de imágenes. Todas las versiones de [Componente de imagen principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es) permite aprovechar este servicio y ofrecer imágenes como WebP haciendo clic en una opción de la política del componente de imagen.
 
-* El nuevo [Componente Tabla de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) funciona no solo con los componentes principales, sino con todos los componentes, procesando automáticamente ToCs en las páginas de contenido. Y como se procesa en el lado del servidor y se almacena en caché completamente por parte del Dispatcher, también es eficiente cargar.
+* AEM actividades de personalización ahora pueden aprovechar los fragmentos de experiencia en lugar de nuestras ofertas heredadas. Esta función:
+   * permite una ruta de migración en la que AEM contenido promocionaría ofertas de fragmentos de experiencias en lugar de ofertas de bibliotecas heredadas para proporcionar contenido con un estilo adecuado que se alinee con la personalización a escala en el futuro.
+   * evita que los autores de contenido sirvan accidentalmente contenido sin estilo en su sitio.
+   * permite convertir el modo de objetivo de cualquier componente en un fragmento de experiencia (tanto de tipo JSON como de HTML) que utilice plantillas editables.
+
+>[!NOTE]
+>
+>Las actividades de personalización existentes que ya utilizan ofertas heredadas pueden seguir haciéndolo, pero deben crearse nuevas actividades de personalización como fragmentos de experiencia, ya que ese es el enfoque recomendado a partir de ahora.
 
 ## [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#assets}
 
-### Nuevas funciones de [!DNL Assets] {#assets-features}
+### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Assets] {#prerelease-features-assets}
 
-Experience Manager Assets utiliza las capacidades de Adobe Sensei AI ahora [distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente al ingerirlos](../../assets/color-tag-images.md). Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen. Puede configurar el número de colores, dentro de un rango de uno a cuarenta, que están etiquetados en una imagen para que pueda buscar imágenes basadas en esos colores más adelante.
+Ahora puede configurar Adobe Experience Manager Assets en [restringir el tipo de recursos que los usuarios pueden cargar en función del tipo MIME](/help/assets/configure-asset-upload-restrictions.md).
+
+![Restricciones de carga de recursos](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
 ### Nuevas funciones de [!DNL Forms] {#forms-features}
 
-* **[Integración de Forms adaptable con Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**: Ahora puede configurar un formulario adaptable para ejecutar un flujo de nube Microsoft® Power Automate en el envío. El formulario adaptable configurado envía los datos capturados, los archivos adjuntos y el documento de registro al flujo de Power Automate Cloud para su procesamiento. Le ayuda a crear una experiencia de captura de datos personalizada mientras aprovecha el poder de Microsoft® Power Automate para crear lógicas empresariales en torno a los datos capturados y automatizar los flujos de trabajo de los clientes.
+* **Compatibilidad de entrada de teclado con firmas Scribble**: Los Forms adaptables se utilizan cada vez más en dispositivos táctiles y uno de los requisitos comunes es admitir firmas. La firma de documentos en dispositivos táctiles se ha convertido en una forma aceptada de firmar formularios. Adaptive Forms es compatible de forma nativa con Scribble Signatures y con Adobe Sign en estos casos de uso. Ahora, junto con otras opciones ya compatibles, también puede utilizar el teclado para crear anotaciones en un formulario adaptable. También ayuda a mejorar el cumplimiento de las normas de accesibilidad.
 
-* **Asistente para crear un formulario adaptable**: Puede utilizar el asistente para usuarios empresariales con el fin de crear Forms adaptable rápidamente. El asistente proporciona un desplazamiento rápido por las fichas para seleccionar fácilmente la plantilla preconfigurada, el estilo, los campos y las opciones de envío para crear un formulario adaptable.
+![Compatibilidad de entrada de teclado con firmas Scribble en iphone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
-   ![Asistente para crear un formulario adaptable](/help/release-notes/assets/wizard.png)
+* **Uso del asistente de Forms adaptable en idioma local**: Puede utilizar el asistente en el idioma que prefiera. Ahora es compatible con todos los idiomas compatibles con Adobe Experience Manager.
+
+### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
+
+<!-- * **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) -->
+
+* **Invocar: un paso AEM del flujo de trabajo**: Document Description XML (DDX) es un lenguaje declarativo de marcado cuyos elementos representan componentes básicos de documentos. Estos componentes básicos incluyen documentos de PDF y XDP, y otros elementos como comentarios, marcadores y texto con estilo. Los documentos DDX son plantillas para los documentos y describen las características deseadas de los documentos de origen que deberían aparecer en los documentos resultantes. Se puede utilizar un solo DDX con una amplia gama de documentos de origen. Puede utilizar el paso Invocar y el flujo de trabajo AEM para realizar varias operaciones, como ensamblar documentos desensamblados, crear y modificar Acrobat y XFA Forms, y otras operaciones descritas en [Referencia de DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentación.
+
+* **Convertir en PDF/A: un paso AEM del flujo de trabajo**: PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Ahora, puede utilizar el paso Convertir en PDF/A y Flujo de trabajo AEM para convertir sus documentos o archivos en cualquier formato a formato de PDF/A.
+
 
 ## Complemento CIF {#cloud-services-cif}
 
 ### Novedades {#what-is-new-cif}
 
-* Nueva página de propiedades de la cabina de productos para una descripción general mejor y simplificada
+* El enriquecimiento del catálogo de productos ahora admite páginas AEM. Esto permite a los autores administrar la asociación de páginas y productos.
 
-![información general sobre las propiedades de la cabina de productos](/help/assets/CIF/product_cockpit_properties_overview.png)
-
-* Compatibilidad y solidez mejoradas para conectores de terceros en I/O Runtime
-
-* Compatibilidad mejorada con las sobrescrituras de configuración del cliente GQL (p. ej., establecer el comportamiento de almacenamiento en caché personalizado)
-
-* Ahora se admiten varios extremos de comercio predeterminados y se pueden configurar mediante Cloud Manager. Puede encontrar detalles en el blog del CIF [here](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
-
+* Varias mejoras en los componentes principales del CIF
 
 ### Corrección de errores {#bug-fixes-cif}
 
-* El campo de selección de varios valores muestra el segundo y el resto de los productos adicionales como no válidos
+* Agregar token de inicio de sesión a la recuperación de precios del lado del cliente
 
-* El selector de productos se oculta ocasionalmente detrás de los componentes
-
-## Complemento Demostraciones de Referencia {#cloud-services-demos}
-
-### Novedades {#what-is-new-demos}
-
-* Nueva plantilla de Contenido y comercio de WKND que amplía WKND con una experiencia de compra E2E que incluye catálogo de productos, carro de compras, cierre de compra y myAccount. Esta plantilla utiliza CIF y sus componentes principales del CIF, por lo que también debe instalar el complemento CIF. Puede encontrar detalles en el blog del CIF [here](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
-
-![Tienda WKND](/help/assets/CIF/wknd_shop.png)
-
-![WKND pdp](/help/assets/CIF/wknd_pdp.png)
+* Componente de página incorrecto en la capa de datos
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Novedades {#what-is-new-foundation}
 
-* Como se menciona en las notas de la versión de mayo (2022.5.0), la opción &quot;Agregar árbol&quot; en la pantalla del administrador del agente de replicación **Distribuir** se ha eliminado. Los paquetes con una jerarquía de contenido de árbol deben replicarse usando [Administrar publicación](/help/operations/replication.md#manage-publication) o [Árbol de contenido de publicación](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) flujo de trabajo.
+* La variable [Explorador del repositorio](/help/implementing/developing/tools/repository-browser.md) ahora tiene un campo de entrada de ruta, lo que permite saltar directamente a una carpeta específica en la jerarquía del repositorio
+* Sling Content Distribution (SCD) ahora admite una acción explícita de &quot;invalidación&quot; para invalidar contenido sin que se publique dicho contenido. Consulte la [Almacenamiento en caché en AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) para obtener más información.
+* mod_macro ahora está disponible en AEM as a Cloud Service. Consulte [esta tabla](/help/implementing/dispatcher/disp-overview.md) para obtener una lista de los módulos Apache compatibles.
+
+### AEM mejoras as a Cloud Service en las herramientas de Dispatcher de SDK {#dispatcher-tools-enhancements}
+
+* Apache puede iniciarse con `update_sdk.sh` script, que cargará y validará automáticamente cualquier cambio posterior en la configuración de Apache y Dispatcher, mejorando así la velocidad del desarrollador. Solo se admite en el modo flexible de herramientas de Dispatcher. Consulte también [Depuración de la configuración de Apache y Dispatcher](/help/implementing/dispatcher/validation-debug.md#automatic-loading) para obtener más información sobre la carga y validación automáticas.
+* La configuración de Apache/Dispatcher local realizará un seguimiento más detallado de los cambios en los entornos de la nube, lo que aumentará la paridad entre los dos entornos.
+
+### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Experience Manager] {#prerelease-features-foundation}
+
+* AEM as a Cloud Service está ahora integrado con Unified Shell para mejorar la experiencia del usuario y unificarlo con todas las demás aplicaciones de Experience Cloud. Consulte [AEM as a Cloud Service en el shell unificado](/help/overview/aem-cloud-service-on-unified-shell.md) para obtener más información.
 
 ## Cloud Manager {#cloud-manager}
 

@@ -3,9 +3,9 @@ title: '¿Cómo asignar un flujo de trabajo a otro usuario, enviar correo electr
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo adaptables basados en Forms. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varios orígenes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
+source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
 workflow-type: tm+mt
-source-wordcount: '5467'
+source-wordcount: '6098'
 ht-degree: 0%
 
 ---
@@ -140,6 +140,23 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 >
 >Las opciones para guardar el paso Asignar tarea como borrador y para recuperar el historial del paso Asignar tarea se desactivan al configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos. Además, en la Bandeja de entrada, la opción para guardar está desactivada.
 
+## Convertir en paso PDF/A {#convert-pdfa}
+
+PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, al incrustar las fuentes y descomprimir el archivo. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Puede usar la variable ***Convertir en PDF/A*** paso en un flujo de trabajo AEM para convertir los documentos de su PDF a formato PDF/A.
+
+El paso convertir en PDF/A tiene las siguientes propiedades:
+
+**[!UICONTROL Documento de entrada]**: El documento de entrada puede ser relativo a la carga útil, tener una ruta absoluta, puede proporcionarse como carga útil o almacenarse en una variable del tipo Document data .
+
+**[!UICONTROL Opciones de conversión]**: Con esta propiedad, se especifica la configuración para convertir documentos de PDF a documentos de PDF/A. Hay varias opciones disponibles en esta pestaña:
+* **[!UICONTROL Cumplimiento]**: Especifica los estándares a los que debe ajustarse el documento del PDF/A de salida.
+* **[!UICONTROL Nivel de resultado]**: Especifica el nivel de resultado como PassFail, Summary o Detailed, para la salida de conversión.
+* **[!UICONTROL Espacio de color]**: Especifica el espacio de color predefinido que se utiliza para los archivos A/PDF de salida.
+* **[!UICONTROL Contenido opcional]**: Permite que objetos gráficos específicos y/o anotaciones estén visibles en el documento del PDF de salida/A, solo cuando se cumple un conjunto específico de criterios.
+
+**[!UICONTROL Documentos de salida]**: Especifica la ubicación para guardar el archivo de salida. El archivo de salida se puede guardar en una ubicación relativa a la carga útil, sobrescribe la carga útil, si la carga útil es un archivo o en una variable del tipo Document data .
+
+
 ## Enviar paso de correo electrónico {#send-email-step}
 
 Utilice el paso de correo electrónico para enviar un correo electrónico, por ejemplo un correo electrónico con un documento de registro, un vínculo de un formulario adaptable <!-- , link of an interactive communication-->o con un documento PDF adjunto. Compatibilidad con los pasos de envío por correo electrónico [correo electrónico del HTML](https://en.wikipedia.org/wiki/HTML_email). Los correos electrónicos del HTML responden y se adaptan al cliente de correo electrónico y al tamaño de pantalla de los destinatarios. Puede utilizar una plantilla de correo electrónico de HTML para definir el aspecto, el esquema de colores y el comportamiento del correo electrónico.
@@ -197,6 +214,31 @@ Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos 
 **[!UICONTROL Guardar documento generado de registro usando las siguientes opciones]**: Especifique la ubicación para mantener un archivo de documento de registro. Puede sobrescribir la carpeta de carga útil, colocar el documento de registro en una ubicación del directorio de carga útil o almacenar el documento de registro en una variable del tipo de datos Document.
 
 **[!UICONTROL Configuración regional]**: Especifique el idioma del documento de registro. Select **[!UICONTROL Literal]** para seleccionar la configuración regional de una lista desplegable o seleccione **[!UICONTROL Variable]** para recuperar la configuración regional del valor almacenado en una variable de tipo de datos de cadena. Debe definir el código de configuración regional mientras almacena el valor de la configuración regional en una variable. Por ejemplo, especifique **en_US** para inglés y **fr_FR** para francés.
+
+## Invocar paso DDX {#invokeddx}
+
+Document Description XML (DDX) es un lenguaje declarativo de marcado cuyos elementos representan componentes básicos de documentos. Estos componentes básicos incluyen documentos de PDF y XDP, y otros elementos como comentarios, marcadores y texto con estilo. DDX define un conjunto de operaciones que se pueden aplicar en uno o varios documentos de entrada para generar uno o más documentos de salida.  Se puede utilizar un solo DDX con una amplia gama de documentos de origen. Puede usar la variable ***Invocar paso DDX*** en un flujo de trabajo AEM para realizar varias operaciones, como ensamblar documentos de desensamblaje, crear y modificar Acrobat y XFA Forms, y otras que se describen en [Documentación de referencia DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+
+El paso Invocar DDX tiene las siguientes propiedades:
+
+**[!UICONTROL Documentos de entrada]**: Se utiliza para establecer las propiedades de un documento de entrada. Hay varias opciones disponibles en esta pestaña:
+* **[!UICONTROL Especificar DDX usando]**: Especifica los documentos de entrada relativos a la carga útil, tienen una ruta absoluta, se pueden proporcionar como carga útil o se almacenan en una variable de tipo Document data .
+* **[!UICONTROL Crear mapa de carga útil]**: Agrega todos los documentos de la carpeta de carga útil al mapa del documento de entrada para la API de invocación en Assembler. El nombre de nodo de cada documento se utiliza como clave en el mapa.
+* **[!UICONTROL Mapa del documento de entrada]**: La opción se usa para agregar varias entradas usando **[!UICONTROL AGREGAR]** botón. Cada entrada representa la clave del documento en el mapa y el origen del documento.
+
+**[!UICONTROL Opciones de entorno]**: Esta opción se utiliza para definir la configuración de procesamiento de la API de invocación. Hay varias opciones disponibles en esta pestaña:
+* **[!UICONTROL Validar solo]**: Comprueba la validez del documento DDX de entrada.
+* **[!UICONTROL Error en el error]**: Comprueba si el servicio de API de invocación falla, en caso de error. De forma predeterminada, su valor se establece en False.
+* **[!UICONTROL Número de Bates]**: Especifica el número, que se incrementa automáticamente. Este número de aumento automático se muestra automáticamente en cada página consecutiva.
+* **[!UICONTROL Estilo predeterminado]**: Define el estilo predeterminado del archivo de salida.
+
+>[!NOTE]
+>
+>Las opciones de entorno se mantienen sincronizadas con las API HTTP.
+
+**[!UICONTROL Documentos de salida]**: Especifica la ubicación para guardar el archivo de salida. Hay varias opciones disponibles en esta pestaña:
+* **[!UICONTROL Guardar salida en carga útil]**: Guarda los documentos de salida en la carpeta de carga útil o sobrescribe la carga útil, en caso de que la carga útil sea un archivo.
+* **[!UICONTROL Mapa del documento de salida]**: Especifica la ubicación para guardar cada archivo de documento explícitamente, añadiendo una entrada por documento. Cada entrada representa el documento y la ubicación, donde guardarlo. Si hay varios documentos de salida, se utiliza esta opción.
 
 ## Invocar el paso del servicio del modelo de datos de formulario {#invoke-form-data-model-service-step}
 

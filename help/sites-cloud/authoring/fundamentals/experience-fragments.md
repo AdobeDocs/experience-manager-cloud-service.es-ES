@@ -2,9 +2,9 @@
 title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencia Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1566'
 ht-degree: 97%
 
 ---
@@ -346,6 +346,10 @@ Los detalles se muestran en todas las vistas de la consola de **fragmentos de ex
       * **Tablero de Pinterest**
    * **Referencias**
       * Una lista de referencias
+   * **Personalización**
+      * **Ruta de ContextHub**
+      * **Ruta de segmentos**
+      * **Marca**
 
 ## Representación HTML sin formato {#the-plain-html-rendition}
 

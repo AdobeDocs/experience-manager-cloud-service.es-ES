@@ -2,18 +2,18 @@
 title: 'Métodos abreviados del teclado para las consolas  '
 description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
-workflow-type: ht
-source-wordcount: '346'
-ht-degree: 100%
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 92%
 
 ---
 
 # Métodos abreviados del teclado para las consolas   {#keyboard-shortcuts-for-consoles}
 
-Los siguientes métodos abreviados están disponibles para las consolas Sitios, Recursos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias.
+Los siguientes métodos abreviados están disponibles para las consolas Sitios, Recursos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias. También existen métodos abreviados específicos para la variable [Consola Fragmentos de contenido](#keyboard-shortcuts-for-the-content-fragments-console).
 
-| Ubicación | Método abreviado | Descripción |
+| Lugar de residencia | Método abreviado | Descripción |
 |---|---|---|
 | General | `Ctrl+Click` | Selección múltiple |
 | Consola: vista de columna y vista de contenido | `Right Arrow` | Desplácese hacia abajo en la estructura del sitio web / amplíe el nodo de árbol |
@@ -81,3 +81,7 @@ Puede desactivar los métodos abreviados del teclado en dos ubicaciones:
 ## Atajos de teclado para el editor de páginas {#keyboard-shortcuts-for-the-page-editor}
 
 Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas, mientras que otros se refieren a la [edición de páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+## Métodos abreviados de teclado para la consola Fragmentos de contenido {#keyboard-shortcuts-for-the-content-fragments-console}
+
+Algunos métodos abreviados del teclado son aplicables a la variable [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
