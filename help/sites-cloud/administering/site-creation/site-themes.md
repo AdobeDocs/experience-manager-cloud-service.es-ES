@@ -4,10 +4,10 @@ description: Descubra cómo se pueden utilizar los temas del sitio de AEM para p
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+source-git-commit: 62ae8bf09e616135cbd5498d1d083a74bb6b0e2a
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Los temas del sitio no son más que paquetes con una estructura lógica que refl
 
 ## Tema estándar del sitio {#standard-site-theme}
 
-Adobe proporciona un tema de referencia de prácticas recomendadas que puede usar como base para crear su propio tema. [El tema estándar del sitio está disponible en GitHub.](https://github.com/adobe/aem-site-template-standard-theme-e2e)
+Adobe proporciona un tema de referencia de prácticas recomendadas que puede usar como base para crear su propio tema. [El tema estándar del sitio está disponible en GitHub](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
 
 ## Desarrollo de temas del sitio {#developing-themes}
 
