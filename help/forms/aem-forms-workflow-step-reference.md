@@ -3,7 +3,7 @@ title: '¿Cómo asignar un flujo de trabajo a otro usuario, enviar correo electr
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo adaptables basados en Forms. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varios orígenes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
+source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
 workflow-type: tm+mt
 source-wordcount: '6098'
 ht-degree: 0%
@@ -54,18 +54,25 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **[!UICONTROL Tiempo de espera después de la fecha de vencimiento]**: Seleccione esta opción para habilitar el campo de selección Controlador de tiempo de espera .
 * **[!UICONTROL Controlador de tiempo de espera]**: Seleccione la secuencia de comandos que se ejecutará cuando el paso asignar tarea cruce la fecha de vencimiento. Scripts colocados en el repositorio CRX en [apps]/fd/dashboard/scripts/timeoutHandler están disponibles para su selección. La ruta especificada no existe en el repositorio crx. Un administrador crea la ruta antes de utilizarla.
 * **[!UICONTROL Resalte la acción y el comentario de la última tarea en Detalles de la tarea]**: Seleccione esta opción para mostrar la última acción realizada y el comentario recibido en la sección de detalles de la tarea de una tarea.
-* **[!UICONTROL Tipo]**: Elija el tipo de documento que desea rellenar al iniciar el flujo de trabajo. Puede elegir un formulario adaptable, un formulario adaptable de sólo lectura, un documento PDF no interactivo. <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+* **[!UICONTROL Tipo]**: Elija el tipo de documento que desea rellenar al iniciar el flujo de trabajo. Puede elegir un formulario adaptable, un formulario adaptable de sólo lectura, un documento PDF no interactivo.
+
+<!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+
+
 * **[!UICONTROL Utilizar formulario adaptable]**: Especifique el método para localizar el formulario adaptable de entrada. Esta opción está disponible si selecciona Formulario adaptable o Formulario adaptable de solo lectura en la lista desplegable Tipo . Puede utilizar el formulario adaptable enviado al flujo de trabajo, disponible en una ruta absoluta o disponible en una ruta de acceso de una variable. Puede utilizar una variable de tipo String para especificar la ruta.\
    Puede asociar varios Forms adaptables a un flujo de trabajo. Como resultado, se puede especificar un formulario adaptable en tiempo de ejecución mediante los métodos de entrada disponibles.
 
 <!-- 
+
 * **[!UICONTROL Use Interactive Communication]**: Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
 
 > [!NOTE]
 >
->You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  -->
+>You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  
 
-* **[!UICONTROL Ruta de formulario adaptable]**: Especifique la ruta del formulario adaptable.<!--  or Interactive Communication.--> Puede utilizar el formulario adaptable <!-- or interactive communication --> que se envía al flujo de trabajo, disponible en una ruta absoluta, o que recupera el formulario adaptable de una ruta almacenada en una variable de tipo de datos de cadena.
+-->
+
+* **[!UICONTROL Ruta de formulario adaptable]**: Especifique la ruta del formulario adaptable. Puede utilizar el formulario adaptable que se envía al flujo de trabajo, que está disponible en una ruta absoluta, o recuperar el formulario adaptable de una ruta almacenada en una variable de tipo de datos de cadena.
 * **[!UICONTROL Seleccione el PDF de entrada mediante]**: Especifique la ruta de un documento de PDF no interactivo. El campo está disponible cuando se elige un documento de PDF no interactivo en el campo Tipo. Puede seleccionar el PDF de entrada utilizando la ruta relativa a la carga útil, guardada en una ruta absoluta o utilizando una variable del tipo Document data . Por ejemplo, [Payload_Directory]/Workflow/PDF/credit-card.pdf. La ruta no existe en el repositorio crx. Un administrador crea la ruta antes de utilizarla. Se necesita una opción Documento de registro habilitada o Forms adaptable basado en plantillas de formulario para usar la opción Ruta del PDF .
 * **[!UICONTROL Para las tareas completadas, procese el formulario adaptable como]**: Cuando se marca una tarea como completada, puede procesar el formulario adaptable como un formulario adaptable de solo lectura o un documento PDF. Se necesita una opción Documento de registro activada o una Forms adaptable basada en plantillas de formulario para procesar el formulario adaptable como documento de registro.
 * **[!UICONTROL Rellenado previamente]**: Los siguientes campos sirven como entradas para la tarea:
@@ -73,14 +80,23 @@ También puede utilizar el componente para controlar el comportamiento de la tar
    * **[!UICONTROL Seleccione el archivo de datos de entrada mediante]**: Ruta del archivo de datos de entrada (.json, .xml, .doc o modelo de datos de formulario). Puede recuperar el archivo de datos de entrada mediante una ruta relativa a la carga útil o recuperar el archivo almacenado en una variable de tipo de datos Document, XML o JSON. Por ejemplo, el archivo contiene los datos enviados para el formulario a través de una aplicación Bandeja de entrada AEM. Una ruta de ejemplo es [Payload_Directory]/workflow/data.
    * **[!UICONTROL Seleccionar datos adjuntos de entrada mediante]**: Los archivos adjuntos disponibles en la ubicación se adjuntan al formulario asociado a la tarea. La ruta puede ser relativa a la carga útil o recuperar el archivo adjunto almacenado en una variable de un documento. Una ruta de ejemplo es [Payload_Directory]/attachment/. Puede especificar archivos adjuntos colocados en relación con la carga útil o utilizar una variable de tipo de documento (Array list > Document) para especificar un archivo adjunto de entrada para el formulario adaptable.
 
-   <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+   <!-- 
+    
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
-    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. -->
+    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. 
+    
+    -->
+
    * **[!UICONTROL Asignación de atributos de solicitud]**: Utilice la sección Asignación de atributos de solicitud para definir la variable [nombre y valor del atributo de solicitud](work-with-form-data-model.md#bindargument). Recupere los detalles de la fuente de datos en función del nombre del atributo y el valor especificados en la solicitud. Puede definir un valor de atributo de solicitud utilizando un valor literal o una variable del tipo de datos String .
 
-   <!--  The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. -->
+   <!--  
+     
+     The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
+     
+     -->
 
 * **[!UICONTROL Información enviada]**: Los siguientes campos sirven como ubicaciones de salida para la tarea:
 
@@ -88,9 +104,13 @@ También puede utilizar el componente para controlar el comportamiento de la tar
    * **[!UICONTROL Guardar archivos adjuntos mediante]**: Guarde los datos adjuntos del formulario proporcionados en una tarea. Puede guardar los archivos adjuntos utilizando una ruta relativa a la carga útil o almacenarla en una variable de lista de matriz del tipo Document data .
    * **[!UICONTROL Guardar documento de registro usando]**: Ruta para guardar un archivo de documento de registro. Por ejemplo, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puede guardar el documento de registro mediante una ruta relativa a la carga útil o almacenarlo en una variable del tipo de datos Document . Si selecciona **[!UICONTROL Relativo a carga útil]** , el documento de registro no se genera si el campo de ruta se deja vacío. Esta opción solo está disponible si selecciona Formulario adaptable en la lista desplegable Tipo .
 
-   <!-- * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+   <!-- 
+    
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
-    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
+    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
+    
+    -->
 
 * **[!UICONTROL Usuario asignado]** > **[!UICONTROL Asignar opciones]**: Especifique el método para asignar la tarea a un usuario. Puede asignar dinámicamente la tarea a un usuario o grupo mediante la secuencia de comandos del selector de participantes o asignar la tarea a un usuario o grupo AEM específico.
 * **[!UICONTROL Selector de participante]**: La opción está disponible cuando la variable **[!UICONTROL Dinámicamente a un usuario o grupo]** está seleccionada en el campo Assign options . Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte [Asignar dinámicamente un flujo de trabajo a los usuarios](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) y [Crear un paso de participante dinámico de Adobe Experience Manager personalizado.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
@@ -183,7 +203,12 @@ El paso de correo electrónico tiene las siguientes propiedades:
 
 * **[!UICONTROL Metadatos del flujo de trabajo]**: Utilice la opción cuando el valor que desea utilizar se guarde en una propiedad de metadatos de flujo de trabajo. Después de seleccionar la opción , introduzca el nombre de la propiedad de metadatos en el cuadro de texto vacío debajo de la opción Metadatos del flujo de trabajo . Por ejemplo, emailAddress.
 
-<!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
+<!-- 
+
+* **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. 
+
+-->
+
 * **[!UICONTROL Imagen]**: Utilice la opción para incrustar una imagen en el correo electrónico. Después de seleccionar la opción , busque y elija la imagen. La opción de imagen solo está disponible para las etiquetas de imagen (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) disponibles en la plantilla de correo electrónico.&#42;
 
 **[!UICONTROL Dirección de correo electrónico del remitente/destinatario]**: Seleccione el **[!UICONTROL Literal]** para especificar manualmente una dirección de correo electrónico o seleccionar la opción **[!UICONTROL Recuperar de metadatos del flujo de trabajo]** para recuperar la dirección de correo electrónico de una propiedad de metadatos. También puede especificar una lista de matrices de propiedades de metadatos para el **[!UICONTROL Recuperar de metadatos del flujo de trabajo]** . Seleccione el **[!UICONTROL Variable]** para recuperar la dirección de correo electrónico del valor almacenado en una variable de tipo de datos de cadena.
@@ -367,7 +392,9 @@ El paso Firmar documento tiene las siguientes propiedades:
 * **[!UICONTROL Secuencia de comandos o servicio para seleccionar firmantes]**: La opción solo está disponible si la opción Dinámicamente está seleccionada en el campo Seleccionar firmantes . Puede especificar un ECMAScript o un servicio para elegir los firmantes y las opciones de verificación de un documento.
 * **[!UICONTROL Detalles del firmante]**: La opción solo está disponible si la opción Manualmente está seleccionada en el campo Seleccionar firmantes . Especifique la dirección de correo electrónico y elija un mecanismo de verificación opcional. Antes de seleccionar un mecanismo de verificación de 2 pasos, asegúrese de que la opción de verificación correspondiente esté habilitada para el [!DNL Adobe Sign] cuenta. Puede utilizar una variable del tipo de datos String para definir los valores de los campos Email, Country Code y Phone Number. Los campos Código del país y Número de teléfono solo se muestran si selecciona Verificación del teléfono en la lista desplegable de verificación de 2 pasos.
 
-<!-- ## Document Services steps {#document-services-steps}
+<!-- 
+
+## Document Services steps {#document-services-steps}
 
 AEM Document services are a set of services for creating, assembling, and securing PDF Documents. [!DNL AEM Forms] provides a separate AEM Workflow step for each document service.
 
@@ -519,4 +546,6 @@ The Generate Printed Output step has the following properties:
 * **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
     * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
     * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
-    * **[!UICONTROL Simplex]**: Use single-sided printing.-->
+    * **[!UICONTROL Simplex]**: Use single-sided printing.
+    
+    -->
