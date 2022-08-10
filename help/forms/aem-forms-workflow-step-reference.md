@@ -3,9 +3,9 @@ title: '¿Cómo asignar un flujo de trabajo a otro usuario, enviar correo electr
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo adaptables basados en Forms. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varios orígenes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
+source-git-commit: a8dae80f79e32117341519b31c389f8fc30b5957
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6132'
 ht-degree: 0%
 
 ---
@@ -169,10 +169,10 @@ El paso convertir en PDF/A tiene las siguientes propiedades:
 **[!UICONTROL Documento de entrada]**: El documento de entrada puede ser relativo a la carga útil, tener una ruta absoluta, puede proporcionarse como carga útil o almacenarse en una variable del tipo Document data .
 
 **[!UICONTROL Opciones de conversión]**: Con esta propiedad, se especifica la configuración para convertir documentos de PDF a documentos de PDF/A. Hay varias opciones disponibles en esta pestaña:
-* **[!UICONTROL Cumplimiento]**: Especifica los estándares a los que debe ajustarse el documento del PDF/A de salida.
+* **[!UICONTROL Cumplimiento]**: Especifica el estándar que debe cumplir el documento A/PDF de salida. Admite diferentes estándares de PDF, como PDF/A-1b, PDF/A-2b o PDF/A-3b.
 * **[!UICONTROL Nivel de resultado]**: Especifica el nivel de resultado como PassFail, Summary o Detailed, para la salida de conversión.
-* **[!UICONTROL Espacio de color]**: Especifica el espacio de color predefinido que se utiliza para los archivos A/PDF de salida.
-* **[!UICONTROL Contenido opcional]**: Permite que objetos gráficos específicos y/o anotaciones estén visibles en el documento del PDF de salida/A, solo cuando se cumple un conjunto específico de criterios.
+* **[!UICONTROL Espacio de color]**: Especifica el espacio de color predefinido como S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED o SWOP, que se puede utilizar para archivos PDF/A de salida.
+* **[!UICONTROL Contenido opcional]**: Permitir que objetos gráficos específicos o anotaciones estén visibles en un documento del PDF de salida/A, solo cuando se cumpla un conjunto especificado de criterios.
 
 **[!UICONTROL Documentos de salida]**: Especifica la ubicación para guardar el archivo de salida. El archivo de salida se puede guardar en una ubicación relativa a la carga útil, sobrescribe la carga útil, si la carga útil es un archivo o en una variable del tipo Document data .
 
@@ -247,13 +247,13 @@ Document Description XML (DDX) es un lenguaje declarativo de marcado cuyos eleme
 El paso Invocar DDX tiene las siguientes propiedades:
 
 **[!UICONTROL Documentos de entrada]**: Se utiliza para establecer las propiedades de un documento de entrada. Hay varias opciones disponibles en esta pestaña:
-* **[!UICONTROL Especificar DDX usando]**: Especifica los documentos de entrada relativos a la carga útil, tienen una ruta absoluta, se pueden proporcionar como carga útil o se almacenan en una variable de tipo Document data .
-* **[!UICONTROL Crear mapa de carga útil]**: Agrega todos los documentos de la carpeta de carga útil al mapa del documento de entrada para la API de invocación en Assembler. El nombre de nodo de cada documento se utiliza como clave en el mapa.
+* **[!UICONTROL Especificar DDX usando]**: Especifica el documento de entrada relativo a la carga útil, tienen una ruta absoluta, pueden proporcionarse como carga útil o almacenarse en una variable de tipo Document data .
+* **[!UICONTROL Crear mapa de carga útil]**: Agregue todos los documentos de la carpeta de carga útil al mapa del documento de entrada para la API de invocación en Assembler. El nombre de nodo de cada documento se utiliza como clave en el mapa.
 * **[!UICONTROL Mapa del documento de entrada]**: La opción se usa para agregar varias entradas usando **[!UICONTROL AGREGAR]** botón. Cada entrada representa la clave del documento en el mapa y el origen del documento.
 
 **[!UICONTROL Opciones de entorno]**: Esta opción se utiliza para definir la configuración de procesamiento de la API de invocación. Hay varias opciones disponibles en esta pestaña:
 * **[!UICONTROL Validar solo]**: Comprueba la validez del documento DDX de entrada.
-* **[!UICONTROL Error en el error]**: Comprueba si el servicio de API de invocación falla, en caso de error. De forma predeterminada, su valor se establece en False.
+* **[!UICONTROL Error en el error]**: Valor booleano que indica si el servicio de API de invocación falla, en caso de error o no. De forma predeterminada, su valor se establece en False.
 * **[!UICONTROL Número de Bates]**: Especifica el número, que se incrementa automáticamente. Este número de aumento automático se muestra automáticamente en cada página consecutiva.
 * **[!UICONTROL Estilo predeterminado]**: Define el estilo predeterminado del archivo de salida.
 
