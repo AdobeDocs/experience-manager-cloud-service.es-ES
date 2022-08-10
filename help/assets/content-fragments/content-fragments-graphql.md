@@ -5,9 +5,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless
 role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
+source-git-commit: e776368891457d3d8cb91b1bb31c1563131f7557
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '731'
 ht-degree: 17%
 
 ---
@@ -37,11 +37,7 @@ Esto se logra mediante los fragmentos de contenido, junto con la API de AEM Grap
 
 ## CMS sin encabezado {#headless-cms}
 
-Un sistema de administración de contenido sin objetivos (CMS) es:
-
-* &quot;*Un sistema de administración de contenido sin encabezado, o CMS sin encabezado, es un sistema de administración de contenido (CMS) de back-end creado desde cero como repositorio de contenido que hace que el contenido sea accesible a través de una API para su visualización en cualquier dispositivo.*
-
-   Consulte [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+Un sistema de administración de contenido sin encabezado (CMS) es un sistema de administración de contenido exclusivo en el back-end, diseñado y creado explícitamente como repositorio de contenido que hace que el contenido sea accesible a través de una API, para su visualización en cualquier dispositivo.
 
 En cuanto a la creación de fragmentos de contenido en AEM, esto significa que:
 

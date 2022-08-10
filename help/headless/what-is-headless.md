@@ -1,13 +1,13 @@
 ---
 title: ¿Qué es un CMS sin cabeza?
 description: Obtenga información sobre CMS sin encabezado. ¿Cómo funcionan? ¿Cuáles son las alternativas y diferencias? ¿Por qué querría utilizar un CMS sin encabezado?
-source-git-commit: 35064ef7d9a4a3f2368667be02b11840b29d56f0
+exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
-
 
 # ¿Qué es un CMS sin cabeza? {#what-is-a-headless-cms}
 
@@ -31,11 +31,7 @@ Muy potente, que le permite un control total del contenido y del formato, pero q
 
 Con un sistema de administración de contenido sin objetivos, el back-end y el front-end están ahora disociados.
 
-La parte sin encabezado es el back-end de contenido.
-
-* &quot;*Un sistema de administración de contenido sin encabezado, o CMS sin encabezado, es un sistema de administración de contenido (CMS) de back-end creado desde cero como repositorio de contenido que hace que el contenido sea accesible a través de una API para su visualización en cualquier dispositivo.*
-
-   Consulte [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+La parte sin encabezado es el back-end de contenido, ya que un Content Management System (CMS) sin encabezado es un sistema de administración de contenido exclusivo en el back-end, diseñado y creado explícitamente como un repositorio de contenido que hace que el contenido sea accesible a través de una API, para su visualización en cualquier dispositivo.
 
 El front-end, que se desarrolla y mantiene de forma independiente, obtiene contenido del backend sin encabezado mediante una API de envío de contenido, normalmente en formato JSON. Por ejemplo, esto podría ser como una aplicación React o Angular (Aplicación de una sola página (SPA)).
 
