@@ -3,7 +3,7 @@ title: Validación y depuración mediante las herramientas de Dispatcher
 description: Validación y depuración mediante las herramientas de Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 2%
@@ -231,7 +231,7 @@ Durante una implementación de Cloud Manager, la variable `httpd -t` la comproba
 
 >[!NOTE]
 >
->Consulte la [Carga y validación automáticas](#automatic-loading) para obtener una alternativa eficaz a la ejecución `validate.sh` después de cada modificación de configuración.
+>Consulte la [Recarga y validación automáticas](#automatic-loading) para obtener una alternativa eficaz a la ejecución `validate.sh` después de cada modificación de configuración.
 
 ### Fase 1 {#first-phase}
 
@@ -422,7 +422,7 @@ Al ejecutar Dispatcher localmente, los registros se imprimen directamente en la 
 
 Los registros para entornos de nube se exponen a través del servicio de registro disponible en Cloud Manager.
 
-### Carga y validación automáticas {#automatic-loading}
+### Recarga y validación automáticas {#automatic-reloading}
 
 >[!NOTE]
 >
