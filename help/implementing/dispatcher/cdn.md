@@ -3,9 +3,9 @@ title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 472a4311372ce9a01730f7ced6d4b26018aae4b9
+source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1042'
 ht-degree: 8%
 
 ---
@@ -70,6 +70,8 @@ Instrucciones de configuración:
    * Esto es necesario para que la CDN de Adobe pueda validar el origen de las solicitudes y pasar el `X-Forwarded-*` encabezados a la aplicación AEM. Por ejemplo,`X-Forwarded-For` se usa para determinar la IP del cliente. Por lo tanto, es responsabilidad del llamador de confianza (es decir, la CDN administrada por el cliente) garantizar la exactitud de la variable `X-Forwarded-*` encabezados (consulte la nota siguiente).
    * Opcionalmente, el acceso a la entrada de la CDN de Adobe se puede bloquear cuando se `X-AEM-Edge-Key` no está presente. Informe a Adobe si necesita acceso directo a la entrada de CDN de Adobe (para ser bloqueado).
 
+Consulte la [Ejemplos de configuraciones de proveedor de CDN](#sample-configurations) para obtener ejemplos de configuración de los principales proveedores de CDN.
+
 Antes de aceptar el tráfico activo, debe validar con el servicio de asistencia al cliente de Adobe que el enrutamiento de tráfico de extremo a extremo funciona correctamente.
 
 Después de obtener la variable `X-AEM-Edge-Key`, puede probar que la solicitud se ha enrutado correctamente de la siguiente manera.
@@ -99,6 +101,25 @@ Tenga en cuenta que al utilizar su propia CDN, no es necesario instalar los domi
 Existe potencialmente una pequeña visita de rendimiento debido al salto adicional, aunque es probable que los saltos de la CDN del cliente a la CDN administrada de AEM sean eficientes.
 
 Tenga en cuenta que esta configuración de CDN de cliente es compatible con el nivel de publicación, pero no delante del nivel de creación.
+
+### Ejemplos de configuraciones de proveedor de CDN {#sample-configurations}
+
+A continuación se presentan varios ejemplos de configuración de varios proveedores líderes de CDN.
+
+**Akamai**
+
+![Akamai1](assets/akamai1.png "Akamai")
+![Akamai2](assets/akamai2.png "Akamai")
+
+**Amazon CloudFront**
+
+![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
+![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
+
+**Cloudflare**
+
+![Cloudflare1](assets/cloudflare1.png "Cloudflare")
+![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
 ## Encabezados de geolocalización {#geo-headers}
 
