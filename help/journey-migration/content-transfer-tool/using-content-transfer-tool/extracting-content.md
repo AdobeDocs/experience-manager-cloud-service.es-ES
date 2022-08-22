@@ -2,7 +2,7 @@
 title: Extracción de contenido del origen
 description: Extracción de contenido del origen
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 5075482f48bf9aaf2c7386af74c14a50b4469840
+source-git-commit: e9af2bee0867b6787cd25f4af80cf8bf6a4d706a
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 21%
@@ -30,37 +30,38 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 
 1. Seleccionar un conjunto de migraciones de **Transferencia de contenido** asistente y haga clic en **Extraer** para iniciar la extracción.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
-   >!![IMPORTANT]
-   Asegúrese de que la clave de Extracción sea válida y no esté cerca de su caducidad. Si está cerca de su fecha de caducidad, puede renovar la clave de Extracción seleccionando el conjunto de migración y haciendo clic en Propiedades. Haga clic en **Renovar**. Esto le llevará al Cloud Acceleration Manager, donde puede hacer clic en **Copiar clave de extracción**. Cada vez que haga clic en **Copiar clave de extracción**, se genera una nueva clave de Extracción que es válida durante 14 días desde el momento de la creación.
-   [!image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >[!IMPORTANT]
+   >
+   >Asegúrese de que la clave de Extracción sea válida y no esté cerca de su caducidad. Si está cerca de su fecha de caducidad, puede renovar la clave de Extracción seleccionando el conjunto de migración y haciendo clic en Propiedades. Haga clic en **Renovar**. Esto le llevará al Cloud Acceleration Manager, donde puede hacer clic en **Copiar clave de extracción**. Cada vez que haga clic en **Copiar clave de extracción**, se genera una nueva clave de Extracción que es válida durante 14 días desde el momento de la creación.
+   >[!imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. Esto abrirá el cuadro de diálogo Extracción . Haga clic en **Extraer** para iniciar la fase de extracción.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
 
    >[!NOTE]
-Tiene la opción de sobrescribir el contenedor de ensayo durante la fase de extracción. If **Sobrescribir contenedor de ensayo** está desactivado, puede acelerar las extracciones para migraciones posteriores en las que las rutas de contenido o la configuración de versiones de inclusión no hayan cambiado. Sin embargo, si las rutas de contenido o la configuración de las versiones de inclusión han cambiado, **Sobrescribir contenedor de ensayo** debe estar habilitado.
+   >Tiene la opción de sobrescribir el contenedor de ensayo durante la fase de extracción. If **Sobrescribir contenedor de ensayo** está desactivado, puede acelerar las extracciones para migraciones posteriores en las que las rutas de contenido o la configuración de versiones de inclusión no hayan cambiado. Sin embargo, si las rutas de contenido o la configuración de las versiones de inclusión han cambiado, **Sobrescribir contenedor de ensayo** debe estar habilitado.
 
    >[!IMPORTANT]
-Si la Asignación de usuarios no se ha ejecutado en este conjunto de migración antes de extraer contenido del origen, verá una advertencia mostrando que el paso Asignación de usuarios está pendiente, como se muestra en la figura anterior. Haga clic en **Asignar usuarios** para ejecutar la herramienta Asignación de usuarios.
+   >Si la Asignación de usuarios no se ha ejecutado en este conjunto de migración antes de extraer contenido del origen, verá una advertencia mostrando que el paso Asignación de usuarios está pendiente, como se muestra en la figura anterior. Haga clic en **Asignar usuarios** para ejecutar la herramienta Asignación de usuarios.
 
 1. La variable **Extracción** ahora muestra la variable **EJECUCIÓN** para indicar que la extracción está en curso.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png)
 
    Puede hacer clic en **Ver progreso** para obtener una vista granular de la extracción en curso.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
    También puede supervisar el progreso de la fase de Extracción desde Cloud Acceleration Manager visitando la página de Transferencia de contenido.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
 1. Una vez completada la extracción, revise las demás columnas como **Fuente** y **Rutas** para obtener más información sobre el conjunto de migración que ha rellenado haciendo clic en **...** y luego **Ver detalles**.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
 
 
 ## Extracción superior {#top-up-extraction-process}
@@ -68,8 +69,8 @@ Si la Asignación de usuarios no se ha ejecutado en este conjunto de migración 
 La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior.
 
 >[!NOTE]
-Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service. Si ha utilizado el paso de precopia para la primera extracción completa, puede omitir la precopia para las siguientes extracciones adicionales (si el tamaño del conjunto de migración superior es inferior a 200 GB) porque puede añadir tiempo al proceso completo.
-Además, es esencial que la estructura de contenido del contenido existente no cambie desde el momento en que se toma la extracción inicial hasta cuando se ejecuta la extracción superior. Las superposiciones no se pueden ejecutar en contenido cuya estructura haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
+>Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service. Si ha utilizado el paso de precopia para la primera extracción completa, puede omitir la precopia para las siguientes extracciones adicionales (si el tamaño del conjunto de migración superior es inferior a 200 GB) porque puede añadir tiempo al proceso completo.
+>Además, es esencial que la estructura de contenido del contenido existente no cambie desde el momento en que se toma la extracción inicial hasta cuando se ejecuta la extracción superior. Las superposiciones no se pueden ejecutar en contenido cuya estructura haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
 
 Una vez completado el proceso de extracción, se puede transferir contenido delta mediante el método de extracción superior.
 
@@ -81,8 +82,9 @@ Complete los siguientes pasos:
 
 1. La variable **Extracción de conjunto de migración** se abre. Haga clic en **Extraer**.
 
-   >[!IMPORTANT]Se debe desactivar la opción **Sobrescribir el contenedor de ensayo durante la extracción** .
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >[!IMPORTANT]
+   >Se debe desactivar la opción **Sobrescribir el contenedor de ensayo durante la extracción** .
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
 
 
 ## Siguientes pasos {#whats-next}
