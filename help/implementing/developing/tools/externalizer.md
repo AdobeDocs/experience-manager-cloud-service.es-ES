@@ -2,9 +2,9 @@
 title: Externalización de direcciones URL
 description: El externalizador es un servicio OSGi que le permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 28903c1cbadece9d0ef575cdc0f0d7fd32219538
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,28 @@ Este artículo explica cómo configurar el servicio externalizador y cómo utili
 
 ## Comportamiento predeterminado del externalizador y cómo ignorarlo {#default-behavior}
 
-De serie, el servicio externalizador tiene valores como `author-p12345-e6789.adobeaemcloud.com` y `publish-p12345-e6789.adobeaemcloud.com`.
+De forma predeterminada, el servicio externalizador asigna un puñado de identificadores de dominio a prefijos de URL absolutos que coinciden con las direcciones URL del servicio de AEM que se han generado para el entorno, como `author https://author-p12345-e6789.adobeaemcloud.com` y `publish https://publish-p12345-e6789.adobeaemcloud.com`. Las direcciones URL base de cada uno de estos dominios predeterminados se leen desde variables de entorno definidas por Cloud Manager.
 
-Para anular estos valores, utilice variables de entorno de Cloud Manager como se describe en el artículo [Configuración de OSGi para AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) y configurar los `AEM_CDN_DOMAIN_AUTHOR` y `AEM_CDN_DOMAIN_PUBLISH` variables.
+Como referencia, la configuración OSGi predeterminada para `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` es eficaz:
+
+```json
+{
+   "externalizer.domains": [
+      "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+      "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+      "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]",
+      "preview $[env:AEM_EXTERNALIZER_PREVIEW;default=http://localhost:4503]"
+   ]
+}
+```
+
+>[!CAUTION]
+>
+>El valor predeterminado `local`, `author`, `preview`y `publish` Las asignaciones de dominio externalizador en la configuración OSGi deben conservarse con el `$[env:...]` valores enumerados anteriormente.
+>
+>Implementación de un `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` para AEM as a Cloud Service que omita cualquiera de estas asignaciones de dominio predeterminadas puede provocar un comportamiento de aplicación impredecible.
+
+Para anular la variable `preview` y `publish` utilice las variables de entorno de Cloud Manager como se describe en el artículo [Configuración de OSGi para AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) y configurar los `AEM_CDN_DOMAIN_PUBLISH` y `AEM_CDN_DOMAIN_PREVIEW` variables.
 
 ## Configuración del servicio externalizador {#configuring-the-externalizer-service}
 
