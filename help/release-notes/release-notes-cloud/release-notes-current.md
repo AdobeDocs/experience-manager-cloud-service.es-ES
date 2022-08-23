@@ -3,10 +3,10 @@ title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a C
 description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
+source-git-commit: 1c27b66bcd0536ec10a878b39b9ec76073634c06
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 15%
+ht-degree: 21%
 
 ---
 
@@ -27,7 +27,7 @@ En la siguiente sección se describen las notas de la versión generales de la v
 
 La fecha de lanzamiento de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] la versión actual (2022.7.0) es el 8 de agosto de 2022.
 
-La próxima versión (2022.8.0) está planificada para el 25 de agosto de 2022.
+La próxima versión (2022.8.0) está planificada para el 1 de septiembre de 2022.
 
 ## Vídeo de la versión {#release-video}
 
@@ -114,7 +114,7 @@ Ahora puede configurar Adobe Experience Manager Assets en [restringir el tipo de
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Experience Manager] {#prerelease-features-foundation}
 
-* AEM as a Cloud Service está ahora integrado con Unified Shell para mejorar la experiencia del usuario y unificarlo con todas las demás aplicaciones de Experience Cloud. Consulte [AEM as a Cloud Service en el shell unificado](/help/overview/aem-cloud-service-on-unified-shell.md) para obtener más información.
+* AEM as a Cloud Service está ahora integrado con Unified Shell para mejorar la experiencia del usuario y unificarlo con todas las demás aplicaciones de Experience Cloud. Consulte [AEM as a Cloud Service en Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obtener más información.
 
 ## Conectores de Adobe Learning Manager {#learn-manage}
 
@@ -127,4 +127,4 @@ Puede encontrar una lista completa de las versiones mensuales de Cloud Manager [
 
 ## Herramientas de migración {#migration-tools}
 
-Puede encontrar una lista completa de las versiones de las herramientas de migración [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+Puede encontrar una lista completa de las versiones de las herramientas de migración [aquí](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
