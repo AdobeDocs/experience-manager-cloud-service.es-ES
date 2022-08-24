@@ -3,9 +3,9 @@ title: “Canal de prelanzamiento de [!DNL Adobe Experience Manager] as a Cloud 
 description: “Canal de prelanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service”
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ Las funciones de la versión preliminar se pueden experimentar de diferentes man
 
 ### Entornos de la nube {#cloud-environments}
 
-Para actualizar un entorno de Cloud para utilizar el prelanzamiento, agregue una nueva [variable de entorno](../implementing/cloud-manager/environment-variables.md) uso de la interfaz de usuario de configuración de entorno en Cloud Manager:
+Para actualizar un entorno de Cloud para utilizar el prelanzamiento, agregue una nueva [variable de entorno](../implementing/cloud-manager/environment-variables.md) usando la interfaz de usuario de configuración de entorno en Cloud Manager:
 
-1. Vaya a la **Programa** > **Entorno** > **Configuración del entorno** desea actualizar.
+1. Vaya al **Programa** > **Entorno** > **Configuración del entorno** que desea actualizar.
 1. Agregar una nueva [variable de entorno](../implementing/cloud-manager/environment-variables.md):
 
    | Nombre | Value | Servicio aplicado | Tipo |
@@ -45,7 +45,7 @@ Para actualizar un entorno de Cloud para utilizar el prelanzamiento, agregue una
 
 **Alternativamente** puede utilizar la API y la CLI de Cloud Manager para actualizar las variables de entorno:
 
-* Uso [Punto final de las variables de entorno de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), establezca la variable **AEM_RELEASE_CHANNEL** variable de entorno al valor **versión preliminar**.
+* Al usar el [punto de conexión de las variables de entorno de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), establezca la variable de entorno **AEM_RELEASE_CHANNEL** al valor **versión preliminar**.
 
    ```
    PATCH /program/{programId}/environment/{environmentId}/variables
@@ -63,7 +63,7 @@ Para actualizar un entorno de Cloud para utilizar el prelanzamiento, agregue una
    ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
 
 
-La variable se puede eliminar o volver a establecer en un valor diferente si desea que el entorno se restaure al comportamiento del canal normal (que no es de prelanzamiento).
+La variable se puede eliminar o volver a establecerse en un valor diferente si desea que el entorno se restaure al comportamiento del canal normal (que no es de prelanzamiento).
 
 ### SDK local {#local-sdk}
 
