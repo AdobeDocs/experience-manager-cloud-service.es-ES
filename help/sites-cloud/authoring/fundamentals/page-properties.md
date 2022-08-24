@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
 workflow-type: tm+mt
 source-wordcount: '1987'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -98,8 +98,8 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * **Idioma**: el idioma de la página
    * **Raíz del idioma**: si la página es la raíz de una copia en un idioma, es necesario marcar esta opción
-   * **Redirigir**: indica la página a la cual esta deberá redirigirse automáticamente con un HTML `302 Found` estado.
-      * **Redirección permanente** - Cuando se selecciona, la página redirige a la ruta de destino proporcionada junto con un HTML `301 Moved Permanently` estado.
+   * **Redirigir**: indica la página a la cual esta deberá redirigirse automáticamente con un estado HTML `302 Found`.
+      * **Redirección permanente**: cuando se selecciona, la página redirige a la ruta de destino proporcionada junto con un estado HTML `301 Moved Permanently`.
    * **Diseño**: indica si se muestra o se oculta la página en la navegación de páginas del sitio resultante
    * **Alias**: especifica un alias que se usará con esta página
       * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, se puede acceder a esta página también mediante `/content/wknd/us/en/magazine/private`

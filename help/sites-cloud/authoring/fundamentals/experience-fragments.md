@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
 workflow-type: tm+mt
 source-wordcount: '1566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -361,9 +361,9 @@ Uso del selector de `.plain.` en la URL; puede acceder a la representación HTML
 
 ## Publicación de fragmentos de experiencias {#publishing-experience-fragments}
 
-La publicación del fragmento de experiencia es básicamente la misma que [publicación de una página](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (desde la consola o el editor de fragmentos de experiencias).
+La publicación del fragmento de experiencia es básicamente la misma que la [publicación de una página](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (desde la consola o el editor de fragmentos de experiencias).
 
-También puede [publicar en vista previa](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (de nuevo desde la consola o el editor de fragmentos de experiencias).
+También puede [publicar en previsualización](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (desde la consola o el editor de fragmentos de experiencias).
 
 ## Exportación de fragmentos de experiencias   {#exporting-experience-fragments}
 

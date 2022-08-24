@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 5e8f70da6de27bf59e4a89e196a016820245a068
 workflow-type: tm+mt
 source-wordcount: '3709'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 91%
    + [Terminología: Novedades para la nube](/help/overview/terminology.md)
    + [Introducción a la arquitectura de AEM as a Cloud Service](/help/overview/architecture.md)
    + [Administración de direcciones SEO y URL](/help/overview/seo-and-url-management.md)
-   + [AEM as a Cloud Service en el shell unificado](/help/overview/aem-cloud-service-on-unified-shell.md)
+   + [AEM as a Cloud Service en Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [Evaluación de los KPI](/help/overview/assessing-kpis.md)
    + [Alineación de los KPI](/help/overview/aligning-kpis.md)
    + [Elección del equipo adecuado](/help/overview/choose-right-team.md)
@@ -112,7 +112,7 @@ ht-degree: 91%
          + [Notas de la versión 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Notas de la versión 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Notas de la versión de Workfront para el conector mejorado de Experience Manager{#workfront}
-      + [Notas de la versión actuales de Workfront para el conector mejorado del Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
+      + [Notas de la versión de Workfront para el conector mejorado de Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [¿Qué hay de nuevo? ](/help/release-notes/what-is-new.md)
    + [Cambios importantes en AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Problemas conocidos](/help/release-notes/known-issues.md)
@@ -187,7 +187,7 @@ ht-degree: 91%
             + [Información general](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [Consideraciones importantes](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
             + [Uso de la herramienta de asignación de usuarios](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
-         + Herramienta de transferencia de contenido heredada {#legacy}
+         + Herramienta de transferencia de contenido heredado {#legacy}
             + [Información general](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
             + [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
             + [Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
@@ -419,9 +419,9 @@ ht-degree: 91%
       + [Árbol de estructura](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Previsualización: representación JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
-      + recorrido de Dynamic Media: Conceptos básicos {#dm-journey}
-         + [Parte I: Dynamic Media - Casos de uso - Flujo de recursos a través del sistema](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [Parte II: Anatomía de una URL de Dynamic Media: Aspectos básicos de los ajustes preestablecidos de imagen: Acerca de los conjuntos de imágenes, los conjuntos de giros y los conjuntos de medios mixtos](/help/assets/dynamic-media/dm-journey-part2.md)
+      + Recorrido de Dynamic Media: Conceptos básicos {#dm-journey}
+         + [Parte I: Dynamic Media, Casos de uso, Flujo de recursos a través del sistema](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [Parte II, Anatomía de una URL de Dynamic Media, Aspectos básicos de los ajustes preestablecidos de imagen, Acerca de los conjuntos de imágenes, los conjuntos de giros y los conjuntos de medios mixtos](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Archivo de newsletters sobre Dynamic Media de Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuración de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Trabajo con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -588,7 +588,7 @@ ht-degree: 91%
       + [Instalación del reproductor de Screens](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
       + [Registro del reproductor](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [Asignación del reproductor a una pantalla](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-   + Uso de las funciones principales del producto {#core-product-features}
+   + Uso de funciones de producto de código {#core-product-features}
       + [Compatibilidad con miniaturas para vídeos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
    + Desarrollo en Screens as a Cloud Service {#developing-screens-cloud}
       + [API de REST](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
@@ -631,7 +631,7 @@ ht-degree: 91%
    + [Migración](/help/commerce-cloud/migration.md)
    + [Preguntas más frecuentes](/help/commerce-cloud/faq.md)
 + Headless {#headless}
-   + [¿Qué es un CMS sin cabeza?](/help/headless/what-is-headless.md)
+   + [¿Qué es un CMS sin encabezado?](/help/headless/what-is-headless.md)
    + [Introducción a AEM Headless](/help/headless/introduction.md)
    + Configuración {#setup}
       + [Introducción](/help/headless/setup/introduction.md)
@@ -641,18 +641,18 @@ ht-degree: 91%
       + [Fragmento de contenido](/help/headless/setup/create-content-fragment.md)
       + [Punto de conexión de GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de contenido {#content-fragments}
-      + [Información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [Consola Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
-      + [Modelos de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
-      + [Administración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
+      + [Información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html?lang=es)
+      + [Consola Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es)
+      + [Modelos de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html?lang=es)
+      + [Administración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html?lang=es)
       + Creación {#authoring}
-         + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
-         + [Editor de texto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
-         + [Contenido asociado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
-         + [Variaciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
-      + [Metadatos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
-      + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
-      + [Vista previa de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
+         + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=es)
+         + [Editor de texto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html?lang=es)
+         + [Contenido asociado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html?lang=es)
+         + [Variaciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations?lang=es)
+      + [Metadatos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html?lang=es)
+      + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=es)
+      + [Vista previa de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html?lang=es)
    + API de GraphQL {#graphql-api}
       + [API de GraphQL para fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)
       + [Administración de puntos de conexión de GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
@@ -757,7 +757,7 @@ ht-degree: 91%
          + [Adición de una lista de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
          + [Aplicación y cancelación de la aplicación de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Administración de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
-      + [Panel de licencias](/help/implementing/cloud-manager/license-dashboard.md)
+      + [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md)
       + [Preguntas frecuentes sobre Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Desarrollo para AEM as a Cloud Service {#developing}
       + [Estructura del proyecto AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)

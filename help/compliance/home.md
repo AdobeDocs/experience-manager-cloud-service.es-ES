@@ -1,12 +1,12 @@
 ---
 title: Compatibilidad
-description: Obtenga información general sobre el cumplimiento de normas en Experience Manager as a Cloud Service.
+description: Obtenga información general sobre el cumplimiento en Experience Manager as a Cloud Service.
 landing-page-description: Para obtener información general sobre el cumplimiento en AEM as a Cloud Service, incluido de la privacidad y accesibilidad, comience aquí.
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '378'
+ht-degree: 100%
 
 ---
 
@@ -47,4 +47,4 @@ Obtenga información general sobre el cumplimiento en Experience Manager as a Cl
 * [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
-* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)
+* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

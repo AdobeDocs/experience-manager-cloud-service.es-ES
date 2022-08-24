@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
 source-wordcount: '2253'
-ht-degree: 88%
+ht-degree: 99%
 
 ---
 
@@ -64,15 +64,15 @@ Tenga en cuenta que tanto la personalización de un índice predeterminado como 
 
 >[!NOTE]
 >
->Si se personaliza un índice predeterminado, por ejemplo `damAssetLucene-6`, copie la última definición de índice lista para usar de un *entorno de Cloud Service* uso del administrador de paquetes CRX DE (`/crx/packmgr/`). A continuación, cambie el nombre de la configuración, por ejemplo, a `damAssetLucene-6-custom-1`. Añada sus personalizaciones en la parte superior. Esto garantiza que las configuraciones necesarias no se eliminen de forma involuntaria. Por ejemplo, el nodo `tika` bajo `/oak:index/damAssetLucene-6/tika` es necesario en el índice personalizado del servicio en la nube. No existe en el SDK de la nube.
+>Si personaliza un índice predeterminado, como `damAssetLucene-6`, copie la última definición de índice lista para usarse de un *entorno de Cloud Service* con el Administrador de paquetes CRX DE (`/crx/packmgr/`). A continuación, cambie el nombre de la configuración, por ejemplo, a `damAssetLucene-6-custom-1`. Añada sus personalizaciones en la parte superior. Esto garantiza que las configuraciones necesarias no se eliminen de forma involuntaria. Por ejemplo, el nodo `tika` bajo `/oak:index/damAssetLucene-6/tika` es necesario en el índice personalizado del servicio en la nube. No existe en el SDK de la nube.
 
 Debe preparar un nuevo paquete de definición de índice que contenga la definición de índice real, con este patrón de nomenclatura:
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-que luego debe ir bajo `ui.apps/src/main/content/jcr_root`. Todas las definiciones de índice personalizadas y personalizadas deben almacenarse en `/oak:index`.
+que luego debe ir bajo `ui.apps/src/main/content/jcr_root`. Todas las definiciones de índice personalizadas deben almacenarse en `/oak:index`.
 
-El filtro del paquete debe configurarse de modo que los índices existentes (predeterminados) se mantengan. En el archivo `ui.apps/src/main/content/META-INF/vault/filter.xml`, cada índice personalizado (o personalizado) debe enumerarse, por ejemplo, como `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Si la versión del índice se cambia posteriormente, es necesario ajustar el filtro.
+El filtro del paquete debe configurarse de modo que los índices existentes (predeterminados) se mantengan. En el archivo `ui.apps/src/main/content/META-INF/vault/filter.xml`, cada índice personalizado debe enumerarse, por ejemplo, como `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Si la versión del índice cambia posteriormente, es necesario ajustar el filtro.
 
 El paquete de la muestra anterior se crea como `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
@@ -84,11 +84,11 @@ El paquete de la muestra anterior se crea como `com.adobe.granite:new-index-cont
 
 ## Implementación de definiciones de índice {#deploying-index-definitions}
 
-Las definiciones de índice se marcan como personalizadas y con versiones:
+Las definiciones de índice están marcadas como personalizadas y con versiones:
 
 * La definición del índice en sí (por ejemplo `/oak:index/ntBaseLucene-custom-1`)
 
-Para implementar un índice personalizado o personalizado, la definición del índice (`/oak:index/definitionname`) debe entregarse mediante `ui.apps` mediante Git y el proceso de implementación de Cloud Manager. En el filtro FileVault, por ejemplo, `ui.apps/src/main/content/META-INF/vault/filter.xml`, enumere cada índice personalizado y personalizado individualmente, por ejemplo, `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definición de índice personalizada/personalizada se almacenará en el archivo `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, como se indica a continuación:
+Para implementar un índice personalizado, la definición del índice (`/oak:index/definitionname`) debe entregarse mediante `ui.apps` mediante Git y el proceso de implementación de Cloud Manager. En el filtro FileVault, por ejemplo, `ui.apps/src/main/content/META-INF/vault/filter.xml`, enumere cada índice personalizado individualmente, por ejemplo, `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definición de índice personalizada se almacenará en el archivo `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, como se indica a continuación:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -108,7 +108,7 @@ El ejemplo anterior contiene una configuración para Apache Tika. El archivo de 
 
 ### Configuración del proyecto
 
-Dependiendo de la versión del plugin de paquete Jackrabbit Filevault Maven que se use, se requiere algo más de configuración en el proyecto. Cuando se utiliza la versión del complemento Jackrabbit Filevault Maven Package Plugin **1.1.6** o posterior, el archivo `pom.xml` debe contener la siguiente sección en la configuración del complemento para `filevault-package-maven-plugin`, en `configuration/validatorsSettings` (justo antes de `jackrabbit-nodetypes`):
+Dependiendo de la versión del complemento de paquete Jackrabbit Filevault Maven que se use, se requiere algo más de configuración en el proyecto. Cuando se utiliza la versión del complemento de paquete Jackrabbit Filevault Maven **1.1.6** o posterior, el archivo `pom.xml` debe contener la siguiente sección en la configuración del complemento para `filevault-package-maven-plugin`, en `configuration/validatorsSettings` (justo antes de `jackrabbit-nodetypes`):
 
 ```xml
 <jackrabbit-packagetype>
@@ -118,7 +118,7 @@ Dependiendo de la versión del plugin de paquete Jackrabbit Filevault Maven que 
 </jackrabbit-packagetype>
 ```
 
-Además, en este caso, la variable `vault-validation` La versión debe actualizarse a una versión más reciente:
+Además, en este caso, la versión `vault-validation` debe actualizarse a una versión más reciente:
 
 ```xml
 <dependency>
@@ -142,7 +142,7 @@ A continuación, en `ui.apps.structure/pom.xml` y `ui.apps/pom.xml`, la configur
     ...
 ```
 
-En `ui.apps.structure/pom.xml`, el `filters` para este complemento debe contener una raíz de filtro como se indica a continuación:
+En `ui.apps.structure/pom.xml`, la sección `filters` para este complemento debe contener una raíz de filtro como se indica a continuación:
 
 ```xml
 <filter><root>/oak:index</root></filter>

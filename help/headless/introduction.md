@@ -5,21 +5,21 @@ landing-page-description: Obtenga información sobre cómo utilizar y administra
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 100%
 
 ---
 
 
-# Introducción a Adobe Experience Manager as a Headless CMS {#introduction-aem-headless}
+# Introducción a Adobe Experience Manager como CMS sin encabezado {#introduction-aem-headless}
 
-Aprenda a utilizar Adobe Experience Manager (AEM) como un CMS sin encabezado, con funciones como modelos de contenido, fragmentos de contenido y una API de GraphQL que potencia experiencias sin encabezado a escala.
+Aprenda a utilizar Adobe Experience Manager (AEM) como CMS sin encabezado, con funciones como modelos de contenido, fragmentos de contenido y una API de GraphQL que potencia experiencias sin encabezado a escala.
 
 Puede leer la documentación detallada de las distintas funciones implicadas o seguir la selección de [Recorridos sin encabezado para obtener información general sobre los primeros pasos](#first-steps).
 
 >[!NOTE]
 >
->Consulte también [¿Qué es Headless?](/help/headless/what-is-headless.md) para obtener una introducción a los conceptos y la terminología sin encabezado.
+>Consulte también [¿Qué es sin encabezado?](/help/headless/what-is-headless.md) para obtener una introducción a los conceptos y la terminología sin encabezado.
 
 ## Información general {#overview}
 

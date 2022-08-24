@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
 workflow-type: tm+mt
 source-wordcount: '2708'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -107,19 +107,19 @@ También puede realizar:
 
 ### Prácticas recomendadas para consultas de GraphQL (Dispatcher) {#graphql-query-best-practices}
 
-La variable [Consultas persistentes](/help/headless/graphql-api/persisted-queries.md) son el método recomendado como:
+Las [Consultas persistentes](/help/headless/graphql-api/persisted-queries.md) son el método recomendado ya que:
 
-* se almacenan en caché
-* se administran centralmente mediante AEM as a Cloud Service
+* Se almacenan en caché.
+* Se administran centralmente mediante AEM as a Cloud Service.
 
-No se recomiendan las consultas directas o POST, ya que no se almacenan en caché, por lo que en una instancia predeterminada Dispatcher está configurado para bloquear dichas consultas.
+No se recomiendan las consultas directas o POST, ya que no se almacenan en caché, por lo que en una instancia predeterminada, Dispatcher está configurado para bloquear dichas consultas.
 
 >[!NOTE]
 >
->Para permitir consultas directas o POST en Dispatcher, puede pedir al administrador del sistema que:
+>Para permitir consultas directas o POST en Dispatcher, puede pedir al administrador del sistema que realice lo siguiente:
 >
 >* Cree una variable de entorno de Cloud Manager llamada `ENABLE_GRAPHQL_ENDPOINT`
->* con el valor `true`
+>* con el valor `true`.
 
 
 >[!NOTE]

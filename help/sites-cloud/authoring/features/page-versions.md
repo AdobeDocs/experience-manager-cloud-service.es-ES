@@ -95,7 +95,7 @@ Hasta **Revertir** la página seleccionada a una versión anterior:
 
 1. Desplácese para mostrar la página que quiere revertir a una versión anterior.
 1. Seleccione la página en [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**. Se enumerarán las versiones de página de la página seleccionada.
+1. Abra la columna **Cronología** y seleccione **Mostrar todo** o **Versiones**. Se enumerarán las versiones de página de la página seleccionada.
 1. Seleccione la versión a la que desee revertir. Se mostrarán las opciones posibles:
 
    ![Volver a esta versión](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -115,6 +115,7 @@ Este método se puede utilizar para restaurar versiones de páginas especificada
    >Si:
    >* ha seleccionado una sola página, que nunca ha tenido páginas secundarias,
    >* o ninguna de las páginas de la carpeta tiene versiones,
+
    >
    >A continuación, la pantalla estará vacía, ya que no hay versiones aplicables.
 

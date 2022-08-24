@@ -1,17 +1,17 @@
 ---
 title: Introducción a Experience Manager as a Cloud Service
-description: Conozca cómo funciona el as a Cloud Service Experience Manager y qué puede hacer el software por usted.
+description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '359'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Información general de Experience Manager as a Cloud Service {#aem-overview-guide}
 
-Empiece aquí para aprender cómo funciona el as a Cloud Service Experience Manager y qué puede hacer el software por usted.
+Empiece aquí para aprender cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 
 ## Artículos sobre la información general {#key-articles}
 
@@ -46,4 +46,4 @@ Empiece aquí para aprender cómo funciona el as a Cloud Service Experience Mana
 * [Preparación para el RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
-* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)
+* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

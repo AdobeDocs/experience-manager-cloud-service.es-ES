@@ -1,11 +1,11 @@
 ---
 title: API obsoletas
-description: Notas de la versión específicas de las API en desuso y eliminadas de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+description: Notas de la versión específicas de las API en desuso y eliminadas de  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 9e84b57efef89613c7ddf7abec3e71d1d844ed30
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -196,7 +196,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
     <td>com.github.jknack.handlebars.js</td>
     <td>Se requiere la actualización de Handlebars de 4.0.5 a 4.3.0 debido a una vulnerabilidad de seguridad. Este paquete ya no está presente en los controladores actualizados.</td>
     <td>5/5/2022</td>
-    <td>5/8/2022</td>
+    <td>8/5/2022</td>
   </tr>
 </tbody>
 </table>

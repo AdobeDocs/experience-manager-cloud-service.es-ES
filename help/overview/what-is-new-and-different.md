@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1904'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -171,7 +171,7 @@ Para que las aplicaciones de AEM existentes se ejecuten en AEM as a Cloud Servic
 
 Este proceso se conoce comúnmente como desarrollo con prioridad en la nube. Dado que se espera que la duración de extremo a extremo tarde unos cuantos minutos (de 20 a 50 según la complejidad de la aplicación), es necesario adoptar metodologías de desarrollo rápido antes de que se intenten en la nube los cambios de código y configuración pendientes.
 
-La consola web, en la que se administran los paquetes OSGI y su configuración asociada, y que anteriormente formaba parte de QuickStart de AEM, ya no está disponible en AEM as a Cloud Service. La nueva consola para desarrolladores proporciona una interfaz de solo lectura para la mayoría de la información de tiempo de ejecución. Con esta consola, los desarrolladores pueden seleccionar e iniciar sesión directamente en cualquier nodo concreto de un autor o servicio de publicación, y ver la información relevante.
+La consola web, en la que se administran los paquetes OSGi y su configuración asociada, y que anteriormente formaba parte de QuickStart de AEM, ya no está disponible en AEM as a Cloud Service. La nueva consola para desarrolladores proporciona una interfaz de solo lectura para la mayoría de la información de tiempo de ejecución. Con esta consola, los desarrolladores pueden seleccionar e iniciar sesión directamente en cualquier nodo concreto de un autor o servicio de publicación y ver la información relevante.
 
 >[!NOTE]
 >

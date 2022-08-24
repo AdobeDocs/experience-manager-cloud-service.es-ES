@@ -5,14 +5,14 @@ landing-page-description: Obtenga información sobre los conectores, lo que pued
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '395'
+ht-degree: 100%
 
 ---
 
 # Implementación de conectores para Experience Manager as a Cloud Service {#aem-connectors-guide}
 
-Obtenga información sobre los conectores para el Experience Manager as a Cloud Service, qué pueden hacer y cómo implementar estas valiosas herramientas en Experience Manager.
+Obtenga información acerca los conectores para Experience Manager as a Cloud Service, qué pueden hacer y cómo implementar estas valiosas herramientas en Experience Manager.
 
 ## Artículos clave sobre conectores de Experience Manager as a Cloud Service {#key-articles}
 

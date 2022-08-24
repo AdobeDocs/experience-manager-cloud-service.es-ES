@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
 workflow-type: tm+mt
 source-wordcount: '3016'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ La configuración de nivel de programa se puede actualizar invocando el punto de
 
 Las reglas de reenvío de puertos por entorno se pueden actualizar invocando de nuevo el punto de conexión `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`. Asegúrese de incluir el conjunto completo de parámetros de configuración en lugar de un subconjunto.
 
-### Desactivación de la salida de puerto flexible {#disabling-flexible-port-egress-provision}
+### Desactivación de salida de puerto flexible {#disabling-flexible-port-egress-provision}
 
 Para **desactivar** la salida de puerto flexible desde un entorno particular, invoque `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
@@ -203,7 +203,7 @@ Al decidir entre una salida de puerto flexible y una dirección IP de salida ded
 
 ### Desactivación de la dirección IP de salida dedicada {#disabling-dedicated-egress-IP-address}
 
-Para **disable** Dirección IP de salida dedicada de un entorno en particular, invocar `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Para **desactivar** la dirección IP de salida dedicada de un entorno en particular, invocar `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 Para obtener más información sobre las API, consulte la [Documentación de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -496,7 +496,7 @@ El diagrama siguiente proporciona una representación visual de un conjunto de d
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>IP del tráfico proveniente del lado AEM de la VPN al lado del cliente. Esto puede verse incluido en la lista de permitidos en la configuración del cliente para garantizar que las conexiones solo se puedan realizar desde AEM.</td>
-    <td>Si el cliente desea permitir el acceso VPN a AEM, debe configurar las entradas DNS CNAME para asignar su dominio personalizado o <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> y/o <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> a esto.</td>
+    <td>Si el cliente desea permitir el acceso de VPN a AEM, debe configurar las entradas DNS CNAME para asignar el dominio personalizado <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> o <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> a esto.</td>
   </tr>
 </tbody>
 </table>
@@ -518,7 +518,7 @@ Header always set Cache-Control private
 
 ## Eliminación de la infraestructura de red de un programa {#deleting-network-infrastructure}
 
-Hasta **delete** la infraestructura de red de un programa, invocar `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+Hasta **eliminar** la infraestructura de red de un programa, invocar `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
 
 >[!NOTE]
 >
