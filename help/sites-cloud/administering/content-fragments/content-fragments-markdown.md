@@ -1,20 +1,20 @@
 ---
 title: Markdown
-description: Comprenda cómo el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle crear fácilmente contenido tanto para la creación de páginas como para la entrega sin encabezado.
+description: Comprenda cómo el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle crear fácilmente contenido, tanto para la creación de páginas como para la entrega sin encabezado.
 source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '534'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 # Markdown {#markdown}
 
-Cuando [creación](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza *markdown* sintaxis para permitirle escribir fácilmente contenido tanto para la creación de páginas como para la entrega sin encabezado:
+Cuando [crea](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza la sintaxis *Markdown* para permitirle escribir fácilmente contenido, tanto para la creación de páginas como para la entrega sin encabezado:
 
-![editor de markdown](/help/sites-cloud/administering/content-fragments/assets/cfm-markdown-01.png)
+![Editor de Markdown](/help/sites-cloud/administering/content-fragments/assets/cfm-markdown-01.png)
 
-Puede definir:
+Puede definir lo siguiente:
 
 * [Anotación de encabezado](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#heading-notation)
 * [Párrafos y saltos de línea](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
@@ -24,11 +24,11 @@ Puede definir:
 * [Listas](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#lists)
 * [Énfasis](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#emphasis)
 * [Bloques de código](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#code-blocks)
-* [Fuentes de barra invertida](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#backslash-escapes)
+* [Escapes de barra invertida](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
 ## Anotación de encabezado {#heading-notation}
 
-Para crear un encabezado, coloque una etiqueta (#) delante del encabezado. Se utiliza una etiqueta (#) para H1, dos etiquetas hash (##) para H2, etc. Se pueden usar hasta 6 etiquetas hash. Por ejemplo:
+Para crear un encabezado, coloque una almohadilla (#) delante del encabezado. Se utiliza una almohadilla (#) para un H1, dos (##) para un H2, etc. Se pueden usar hasta seis almohadillas. Por ejemplo:
 
     `## This is an H2`
 
@@ -36,7 +36,7 @@ Para crear un encabezado, coloque una etiqueta (#) delante del encabezado. Se ut
 
     `###### This is a H6`
 
-De forma opcional, puede crear una H1 subrayando el texto en signos iguales y creando una H2 subrayando el texto en signos menos. Por ejemplo:
+De forma opcional, puede crear un H1 subrayando el texto en signos iguales y un H2 subrayando el texto en signos menos. Por ejemplo:
 
     `This is an H1`
 
@@ -48,9 +48,9 @@ De forma opcional, puede crear una H1 subrayando el texto en signos iguales y cr
 
 ## Párrafos y saltos de línea {#paragraphs-and-line-breaks}
 
-Un párrafo es simplemente una o más líneas consecutivas de texto, separadas por una o más líneas en blanco. Una línea en blanco es una línea que contiene únicamente espacios o tabulaciones. Los párrafos normales no deben tener sangría con espacios o tabulaciones.
+Un párrafo es simplemente una o más líneas consecutivas de texto, separadas por una o más líneas en blanco. Una línea en blanco es una que contiene únicamente espacios o tabulaciones. Los párrafos normales no deben tener sangría con espacios o tabulaciones.
 
-Un salto de línea se crea terminando una línea con dos o más espacios que un retorno.
+Un salto de línea se crea terminando una línea con dos o más espacios y un retorno.
 
 ## Vínculos {#links}
 
@@ -86,7 +86,7 @@ Por ejemplo, una imagen en línea tiene la siguiente sintaxis:
 
     `![Alt text](/path/to/img.jpg "Optional title")`
 
-La sintaxis incluye:
+La sintaxis incluye lo siguiente:
 
 * Un signo de exclamación: !;
 * seguido de un conjunto de corchetes, que contienen el texto del atributo alternativo de la imagen;
@@ -96,7 +96,7 @@ Una imagen de estilo de referencia tiene la siguiente sintaxis:
 
     `![Alt text][id]`
 
-Donde &quot;id&quot; es el nombre de una referencia de imagen definida. Las referencias de imagen se definen con una sintaxis idéntica a las referencias de vínculo:
+Donde “id” es el nombre de una referencia de imagen definida. Las referencias de imagen se definen con una sintaxis idéntica a las referencias de vínculo:
 
     `[id]: url/to/image "Optional title attribute"`
 
@@ -110,7 +110,7 @@ Puede citar texto añadiendo el símbolo > antes del texto. Por ejemplo:
 
     `>asdfahsdlfasdfj`
 
-Puede tener comillas de bloque anidadas. Por ejemplo:
+Puede tener citas de bloque anidadas. Por ejemplo:
 
     `> This is the first level of quoting.`
 
@@ -124,9 +124,9 @@ Puede tener comillas de bloque anidadas. Por ejemplo:
 
 ## Listas {#lists}
 
-Puede crear listas ordenadas y sin ordenar.
+Puede crear listas ordenadas y desordenadas.
 
-Para crear una lista desordenada, utilice &amp;ast; antes de los elementos de la lista. Por ejemplo:
+Para crear una lista desordenada, utilice el símbolo &amp;ast; antes de los elementos de la lista. Por ejemplo:
 
     `* item in list`
 
@@ -144,9 +144,9 @@ Para crear una lista ordenada, añada los números, seguidos de un punto, antes 
 
 ## Énfasis {#emphasis}
 
-Puede agregar estilo en cursiva o negrita al texto.
+Puede añadir estilos de cursiva o negrita a su texto.
 
-Para agregar cursiva de la siguiente manera:
+Se agrega cursiva de la siguiente manera:
 
     `*single asterisks*`
 
@@ -162,7 +162,7 @@ Puede aplicar negrita al texto de la siguiente manera:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Para indicar un intervalo de código, encapsúlelo con comillas de rebote (&grave;). A diferencia de los bloques de código preformateados, un intervalo de código indica el código dentro de un párrafo normal.
+Para indicar un intervalo de código, encapsúlelo con acentos graves (&grave;). A diferencia de los bloques de código con formato previo, un intervalo de código indica el código dentro de un párrafo normal.
 
 Por ejemplo:
 
@@ -170,15 +170,15 @@ Por ejemplo:
 
 ## Bloques de código {#code-blocks}
 
-Los bloques de código generalmente se utilizan para ilustrar el código fuente. Puede crear bloques de código aplicando sangría al código utilizando una pestaña o un mínimo de 4 espacios. Por ejemplo:
+Los bloques de código suelen emplearse para ilustrar el código fuente. Puede crear bloques de código sangrándolos con una tabulación o con un mínimo de cuatro espacios. Por ejemplo:
 
     `This is a normal paragraph.`
 
         `This is a code block.`
 
-## Fuentes de barra invertida {#backslash-escapes}
+## Escapes de barra invertida {#backslash-escapes}
 
-Se pueden utilizar caracteres de escape de barra invertida para generar caracteres literales que tengan un significado especial en la sintaxis de formato. Por ejemplo, si desea rodear una palabra con asteriscos literales (en lugar de una etiqueta HTML), puede utilizar barras invertidas antes de los asteriscos, de esta manera:
+Se pueden utilizar secuencias de escape de barra invertida para generar caracteres literales que tengan un significado especial en la sintaxis de formato. Por ejemplo, si desea rodear una palabra con asteriscos literales (en lugar de una &lt;em> etiqueta HTML), puede utilizar barras invertidas antes de los asteriscos, de esta manera:
 
     `\\*literal asterisks\\*`
 
