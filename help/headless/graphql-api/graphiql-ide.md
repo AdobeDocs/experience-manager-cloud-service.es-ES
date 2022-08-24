@@ -4,9 +4,9 @@ description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1008'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Hay una implementación del IDE de [GraphiQL](https://graphql.org/learn/serving-
 >
 >GraphiQL se incluye en todos los entornos de AEM (pero solo será accesible/visible al configurar los extremos).
 >
->En versiones anteriores, se necesitaba un paquete para instalar el IDE de GraphiQL. Si tiene esto instalado, ahora se puede quitar.
+>En versiones anteriores, se necesitaba un paquete para instalar el IDE de GraphiQL. Si tiene esto instalado, ahora lo puede quitar.
 
 >[!NOTE]
 >Debe tener [configurados los puntos de conexión](/help/headless/graphql-api/graphql-endpoint.md) en el [explorador de configuración](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) antes de utilizar el IDE de GraphiQL.
@@ -31,7 +31,7 @@ La herramienta **GraphiQL** permite probar y depurar las consultas de GraphQL pe
 * ejecutar las consultas para ver inmediatamente los resultados
 * administrar **variables de consulta**
 * guardar y administrar **consultas persistentes**
-* publicar o cancelar la publicación, **Consultas persistentes** (por ejemplo, para/desde `dev-publish`)
+* publicar o cancelar la publicación de **consultas persistentes** (por ejemplo, a/de `dev-publish`)
 * consultar el **historial** de las consultas anteriores
 * usar el **Explorador de documentación** para acceder a la documentación; le ayuda a conocer y comprender qué métodos están disponibles.
 
@@ -42,7 +42,7 @@ Puede acceder al editor de consultas desde:
 
 ![Interfaz de GraphiQL](assets/cfm-graphiql-interface.png "Interfaz de GraphiQL")
 
-Puede utilizar GraphiQL en el sistema para que la aplicación cliente pueda solicitar consultas mediante solicitudes de GET y para publicar consultas. Para el uso de producción, puede [mueva las consultas al entorno de producción](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inicialmente, al creador de producción para validar contenido recién creado con las consultas y, después, para publicar la producción para consumo activo.
+Puede utilizar GraphiQL en el sistema para que la aplicación cliente pueda solicitar consultas mediante peticiones GET y consultas de publicación. Para el uso en producción, debe [mover las consultas al entorno de producción](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inicialmente, al creador de producción para validar contenido recién creado con las consultas y, después, para publicar la producción para consumo activo.
 
 ## Selección del punto de conexión {#selecting-endpoint}
 
@@ -98,22 +98,22 @@ Por ejemplo:
 
 ## Administración de la caché para las consultas persistentes {#managing-cache}
 
-[Consultas persistentes](/help/headless/graphql-api/persisted-queries.md) se recomiendan ya que se pueden almacenar en caché en las capas de Dispatcher y CDN, mejorando finalmente el rendimiento de la aplicación cliente solicitante. De forma predeterminada, AEM invalidará la caché de la red de entrega de contenido (CDN) en función de un tiempo de vida predeterminado (TTL).
+Se recomiendan las [Consultas persistentes](/help/headless/graphql-api/persisted-queries.md), ya que se pueden almacenar en caché en las capas de Dispatcher y CDN, mejorando finalmente el rendimiento de la aplicación cliente solicitante. De forma predeterminada, AEM invalidará la caché de la red de distribución de contenido (CDN) en función de un tiempo de vida predeterminado (TTL).
 
 Con GraphQL puede configurar los encabezados de caché HTTP para controlar estos parámetros para la consulta persistente individual.
 
-1. La variable **Encabezados** es accesible a través de los tres puntos verticales a la derecha del nombre de la consulta persistente (panel de la izquierda):
+1. La opción **Encabezados** es accesible a través de los tres puntos verticales a la derecha del nombre de la consulta persistente (panel de la izquierda):
 
    ![Encabezados de caché HTTP de consulta persistentes](assets/cfm-graphqlapi-headers-01.png "Encabezados de caché HTTP de consulta persistentes")
 
-1. Si selecciona esta opción, se abrirá la variable **Configuración de caché** diálogo:
+1. Si selecciona esta opción, se abre el cuadro de diálogo **Configuración de caché**:
 
    ![Configuración de encabezado de caché HTTP de consulta persistente](assets/cfm-graphqlapi-headers-02.png "Configuración de encabezado de caché HTTP de consulta persistente")
 
 1. Seleccione el parámetro adecuado y, a continuación, ajuste el valor según sea necesario:
 
    * **cache-control** - **max-age**
-Las cachés pueden almacenar este contenido durante un número determinado de segundos. Normalmente es el TTL del navegador (Tiempo de vida).
+Las cachés pueden almacenar este contenido durante un número determinado de segundos. Normalmente, es el TTL del explorador (Tiempo de vida).
    * **control de sustitución** - **s-maxage**
 Igual que max-age, pero se aplica específicamente a las cachés proxy.
    * **control de sustitución** - **stale-while-revalidate**
@@ -121,11 +121,11 @@ Las cachés pueden seguir ofreciendo una respuesta en caché después de que que
    * **control de sustitución** - **stale-if-error**
 Las cachés pueden seguir ofreciendo una respuesta en caché en caso de error o de origen, hasta el número especificado de segundos.
 
-1. Select **Guardar** para mantener los cambios.
+1. Seleccione **Guardar** para mantener los cambios.
 
 ## Publicación de consultas persistentes {#publishing-persisted-queries}
 
-Una vez seleccionada la consulta persistente en la lista (panel izquierdo), puede utilizar las acciones **Publicación** y **Cancelar la publicación**. Esto los activará en el entorno de publicación (por ejemplo, `dev-publish`) para facilitar el acceso de las aplicaciones durante las pruebas.
+Una vez seleccionada la consulta persistente en la lista (panel izquierdo), puede utilizar las acciones **Publicación** y **Cancelar la publicación**. Esto las activará en el entorno de publicación (por ejemplo, `dev-publish`) para facilitar el acceso a las aplicaciones a la hora de realizar pruebas.
 
 >[!NOTE]
 >
