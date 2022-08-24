@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: e950f2399553c301c97c4fcac549a7ef6a234164
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '570'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 84%
 
 La integración de Adobe Analytics y AEM as a Cloud Service permite rastrear la actividad de la página web. La integración requiere lo siguiente:
 
-* uso de la interfaz de usuario táctil para crear una configuración de Analytics en AEM as a Cloud Service. Tenga en cuenta que se requiere autenticación IMS para integrar Adobe Analytics con AEM as a Cloud Service.
+* El uso de la interfaz de usuario táctil para crear una configuración de Analytics en AEM as a Cloud Service. Tenga en cuenta que se requiere autenticación IMS para integrar Adobe Analytics con AEM as a Cloud Service.
 * adición y configuración de Adobe Analytics como extensión en [Adobe Launch](#analytics-launch). Para obtener más información sobre Adobe Launch, consulte [esta página](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=es).
 
 En comparación con las versiones anteriores de AEM, la configuración de Analytics en AEM as a Cloud Service no ofrece compatibilidad con el marco de trabajo. Ahora se realiza a través de Adobe Launch, que es la herramienta de facto para instrumentar un sitio AEM con capacidades de Analytics (bibliotecas JS). En Adobe Launch, se crea una propiedad donde se puede configurar la extensión de Adobe Analytics y se crean reglas para enviar datos a Adobe Analytics. Adobe Launch ha reemplazado la tarea de análisis proporcionada por SiteCatalyst.
@@ -41,13 +41,13 @@ Los campos presentes en la ventana de configuración son los siguientes:
 | Propiedad | Descripción |
 |---|---|
 | Título | El nombre de la configuración |
-| Configuración de IMS | Seleccione la configuración de IMS (consulte el capítulo siguiente) |
+| Configuración de IMS | Seleccione la configuración de IMS (consulte la sección siguiente) |
 | Segmento | Opción para usar un segmento de Analytics definido en el grupo de informes actual. Los informes de Analytics se filtrarán según el segmento. Consulte [esta página](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=es) para obtener más información. |
 | Grupos de informes | Repositorio en el que se envían datos y se extraen informes. Los grupos de informes definen los informes completos e independientes de un sitio web concreto, de un conjunto de sitios web o de un subconjunto de páginas de sitios web. Puede ver los informes recuperados de un único grupo de informes y puede editar este campo en una configuración en cualquier momento según sus necesidades. |
 
 ### Adobe Analytics con autenticación IMS {#configuration-parameters-ims}
 
-Se requiere una configuración de IMS para integrar correctamente Adobe Analytics con AEM as a Cloud Service. Esta configuración debe crearse para que consulte esta [página](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) para aprender a crear la configuración de IMS de Analytics.
+Se requiere una configuración de IMS para integrar correctamente Adobe Analytics con AEM as a Cloud Service. Esta configuración debe crearse, así que consulte esta [página](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) para aprender a crear la configuración de IMS de Analytics.
 
 ### Adición de una configuración a un sitio {#add-configuration}
 
@@ -63,7 +63,7 @@ Adobe Analytics se puede añadir como extensión en la propiedad Launch. Se pued
 
 >[!NOTE]
 >
->La configuración de IMS (cuentas técnicas) para Launch está preconfigurada en AEM as a Cloud Service. No es necesario crear esta configuración.
+>La configuración de IMS (cuentas técnicas) para Launch está preconfigurada en AEM as a Cloud Service. No tiene que crear esta configuración.
 
 >[!NOTE]
 >
