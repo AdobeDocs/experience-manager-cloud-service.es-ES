@@ -3,9 +3,9 @@ title: Vista previa del contenido
 description: Aprenda a utilizar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Para obtener más información acerca de los entornos de vista previa, consulte 
 
 >[!NOTE]
 >
->La publicación de un fragmento de experiencia para vista previa básicamente sigue el mismo procedimiento que para una página, aunque desde la consola o el editor de fragmentos de experiencias.
+>La publicación de un fragmento de experiencia para previsualización básicamente sigue el mismo procedimiento que para una página, aunque desde la consola o el editor de fragmentos de experiencias.
 
 ## Publicación de contenido para su previsualización {#publishing-content-to-preview}
 
