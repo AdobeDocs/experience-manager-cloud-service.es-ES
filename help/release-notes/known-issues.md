@@ -3,9 +3,9 @@ title: Problemas conocidos
 description: Problemas conocidos con Adobe Experience Manager as a Cloud Service
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 source-git-commit: 755c0072148ad73486df2ccfed69248b9d73ec2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
