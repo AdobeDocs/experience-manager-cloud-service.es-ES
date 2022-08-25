@@ -2,9 +2,9 @@
 title: Registro para AEM as a Cloud Service
 description: Aprenda a utilizar Logging para AEM as a Cloud Service a fin de configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
+source-git-commit: 690939074570fb5285f242fe8d782380cfa5abc1
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2324'
 ht-degree: 3%
 
 ---
@@ -549,7 +549,7 @@ El ancho de banda de red asociado con los registros enviados a Splunk se conside
 
 En la solicitud de asistencia, los clientes deben indicar:
 
-* Dirección de extremo HEC de Splunk
+* Dirección del extremo HEC del zorrillo. Este extremo debe tener un certificado SSL válido
 * Índice de Splunk
 * Puerto de Splunk
 * El token HEC de Splunk. Consulte [esta página](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) para obtener más información.
