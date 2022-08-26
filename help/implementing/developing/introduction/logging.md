@@ -2,9 +2,9 @@
 title: Registro para AEM as a Cloud Service
 description: Aprenda a utilizar Logging para AEM as a Cloud Service a fin de configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 690939074570fb5285f242fe8d782380cfa5abc1
+source-git-commit: 197bff164df83788b4b8b16ba4c7a82021f86002
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2334'
 ht-degree: 3%
 
 ---
@@ -560,7 +560,7 @@ Las propiedades anteriores deben especificarse para cada combinación de program
 >
 >No se admite el reenvío de fragmentos para entornos de programa de entornos limitados.
 
-Debe asegurarse de que la solicitud inicial incluya todos los entornos de desarrollo que deben habilitarse, además de los entornos de ensayo/producción.
+Debe asegurarse de que la solicitud inicial incluya todos los entornos de desarrollo que deben habilitarse, además de los entornos de ensayo/producción. Splunk debe tener un certificado SSL y ser público.
 
 Si cualquier nuevo entorno de desarrollo creado después de la solicitud inicial pretende tener el reenvío de Splunk, pero no lo tiene habilitado, se debe realizar una solicitud adicional.
 
