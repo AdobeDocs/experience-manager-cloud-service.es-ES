@@ -1,15 +1,15 @@
 ---
-title: Panel de licencias
+title: Tablero de licencias
 description: Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
+source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 1%
+source-wordcount: '787'
+ht-degree: 4%
 
 ---
 
-# Panel de licencias {#license-dashboard}
+# Tablero de licencias {#license-dashboard}
 
 Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
 
@@ -32,7 +32,7 @@ Para acceder al panel de licencias, siga estos pasos.
 
 1. En la página de información general de productos, cambie a la **Licencia** pestaña .
 
-![Panel de licencias](assets/license-dashboard.png)
+![Tablero de licencias](assets/license-dashboard.png)
 
 El tablero se divide en tres secciones que le muestran:
 
@@ -67,35 +67,21 @@ Las solicitudes de contenido se rastrean en los servidores Edge de AEM as a Clou
 
 AEM también dispone de reglas para excluir bots conocidos, incluidos servicios bien conocidos que visitan el sitio regularmente para actualizar su índice de búsqueda o servicio.
 
-La siguiente es una lista no exhaustiva de ejemplos de servicios bien conocidos excluidos.
-
-* AddSearchBot
-* AhrefsBot
-* Applebot
-* Pregunte a Jeeves la araña corporativa
-* Bingbot
-* BingPreview
-* BLEXBot
-* IntegradoCon
-* Bytespider
-* CrawlerKengo
-* Visita externa de Facebook
-* Google AdsBot
-* Google AdsBot Mobile
-
 ### ¿Por qué en mi informe de Analytics se muestran resultados diferentes a los de las solicitudes de contenido de AEM? {#why-are-reports-different}
 
 Las solicitudes de contenido tendrán variaciones con las herramientas de informes de Analytics de una organización, como se resume en esta tabla.
 
 | Motivo De La Varianza | Explicación |
 |---|---|
-| Etiquetado | Todas las páginas que se rastrean como solicitudes de contenido AEM pueden o no estar etiquetadas con el seguimiento de Analytics.<br>La herramienta Analytics de una organización no etiquetará todas las llamadas de API rastreadas como solicitudes de contenido AEM.<br>Las páginas o llamadas a la API pueden etiquetarse para realizar el seguimiento de acciones en lugar de vistas. |
+| Etiquetado | Todas las páginas que se rastrean como solicitudes de contenido AEM pueden o no estar etiquetadas con el seguimiento de Analytics. La herramienta Analytics de una organización no etiquetará todas las llamadas de API que se rastreen como solicitudes de contenido AEM.<br>Las páginas o llamadas a la API pueden etiquetarse para rastrear acciones o solo vistas de página únicas en lugar de todas las vistas. |
 | Reglas de Tag Management | La configuración de reglas de Tag Management puede dar como resultado una variedad de configuraciones de recopilación de datos en una página, lo que da como resultado una combinación de discrepancias con el seguimiento de solicitudes de contenido. |
 | Bots | Los bots desconocidos que no han sido identificados previamente y eliminados por AEM pueden causar discrepancias de seguimiento. |
 | Grupos de informes | Las páginas que forman parte de la misma instancia de AEM y del mismo dominio pueden enviar datos a diferentes grupos de informes de Analytics. |
 | Herramientas de seguridad y supervisión de terceros | Las herramientas de monitorización y análisis de seguridad pueden generar solicitudes de contenido para AEM que no se rastrean en informes de Analytics. |
 | Solicitudes de recuperación previa | El uso de un servicio de recuperación previa para cargar previamente las páginas a fin de aumentar la velocidad puede provocar aumentos significativos en el tráfico de las solicitudes de contenido. |
-| DDOS | Aunque el Adobe hace todo lo posible por detectar y filtrar automáticamente el tráfico de los ataques de DDOS, no hay garantías de que se detecten todos los posibles ataques de DDOS. |
+| DDOS | Mientras que el Adobe hace todo lo posible por detectar y filtrar automáticamente el tráfico de los ataques de DDOS, no hay garantías de que se detecten todos los posibles ataques de DDOS |
+| Bloqueadores de tráfico | El uso de un bloqueador de rastreadores en un navegador puede excluir el seguimiento de algunas solicitudes. |
+| Firewalls | Los cortafuegos pueden bloquear el seguimiento de Analytics. Esto es más frecuente con los cortafuegos corporativos. |
 
 ### ¿Qué sucede si utilizo mi propia CDN? {#using-own-cdn}
 
