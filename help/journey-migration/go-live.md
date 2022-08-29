@@ -2,9 +2,9 @@
 title: Go-Live
 description: Obtenga información sobre cómo realizar la migración una vez que el código y el contenido estén listos para la nube
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1718'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_prep"
->title="Go-Live Preparation"
+>title="Preparación de Go-Live"
 >abstract="Para garantizar un lanzamiento sin problemas y exitoso en AEM as a Cloud Service, debe planificar los periodos de congelación de código y contenido, las iteraciones de prueba, las recargas de contenido, las pruebas de rendimiento, las pruebas de seguridad y mucho más."
 
 En esta parte del recorrido, aprenderá a planificar y realizar la migración una vez que el código y el contenido estén listos para moverse a AEM as a Cloud Service. Además, aprenderá cuáles son las prácticas recomendadas y las limitaciones conocidas al realizar la migración.
@@ -22,8 +22,8 @@ En esta parte del recorrido, aprenderá a planificar y realizar la migración un
 
 En las fases anteriores del recorrido:
 
-* You learned how to get started with the move to AEM as a Cloud Service in the [Getting Started](/help/journey-migration/getting-started.md) page.
-* Determined if your deployment is ready to be moved to the cloud by reading the [Readiness phase](/help/journey-migration/readiness.md)
+* Aprendió a empezar con el paso a AEM as a Cloud Service en la [Introducción](/help/journey-migration/getting-started.md) página.
+* Se determinó si la implementación está lista para moverse a la nube leyendo el informe [Fase de preparación](/help/journey-migration/readiness.md)
 * Familiarícese con las herramientas y el proceso a través del cual puede preparar su código y la nube de contenido con el [Fase de implementación](/help/journey-migration/implementation.md).
 
 ## Objetivo {#objective}
@@ -32,13 +32,13 @@ Este documento le ayudará a comprender cómo realizar la migración a AEM as a 
 
 ## Migración de producción inicial {#initial-migration}
 
-Before you can perform the production migration, please follow the fitment and proof of migration steps outlined in the [Content migration strategy and timeline](/help/journey-migration/implementation.md##strategy-timeline) section of the [Implementation phase](/help/journey-migration/implementation.md).
+Antes de poder realizar la migración de producción, siga los pasos de ajuste y prueba de la migración que se describen en la sección [Estrategia y cronología de migración de contenido](/help/journey-migration/implementation.md##strategy-timeline) de la sección [Fase de implementación](/help/journey-migration/implementation.md).
 
 * Inicie la migración desde la producción en función de la experiencia adquirida durante la migración de la fase as a Cloud Service AEM realizada en los clones:
-   * Author-Author
-   * Publish-Publish
+   * Autor-Autor
+   * Publicación
 
-* Validate the content ingested into both the AEM as a Cloud Service author and publish tiers.
+* Valide el contenido introducido en los niveles de creación y publicación as a Cloud Service de AEM.
 * Indica al equipo de creación de contenido que evite mover contenido tanto en el origen como en el destino hasta que se complete la ingesta
 * Se puede añadir, editar o eliminar contenido nuevo, pero evite moverlo. Esto se aplica tanto al origen como al destino.
 * Registre el [tiempo empleado](/help/journey-migration/implementation.md#gathering-data) para la extracción e ingesta completas con una estimación de futuros cronogramas de migración adicionales.
@@ -69,7 +69,7 @@ Al planificar o realizar la migración, debe tener en cuenta las siguientes dire
 
 * Migrar de autor a autor y publicar para publicación
 * Solicite un clon de producción que se pueda utilizar para:
-   * Capture repository statistics
+   * Capturar estadísticas del repositorio
    * Prueba de las actividades de migración
    * Preparación del plan de migración
    * Identificar los requisitos de congelación de contenido
@@ -111,7 +111,7 @@ Comparado con la sección anterior a la ingesta **no** falla debido a las siguie
 
 Los dos elementos anteriores se identificarán y presentarán informes en la [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) informe.
 
-## Go-Live Checklist {#Go-Live-Checklist}
+## Lista de comprobación de Go-Live {#Go-Live-Checklist}
 
 Revise esta lista de actividades para asegurarse de que realiza una migración sin problemas y sin problemas.
 
@@ -144,6 +144,7 @@ Revise esta lista de actividades para asegurarse de que realiza una migración s
          * [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [Administración del certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Administración de nombres de dominio personalizados (DNS)
+         * Para asegurarse de que el cambio de DNS no introduzca problemas inesperados, es mejor crear un subdominio de prueba al que conectar la instancia de producción antes de lanzarse y realizar una ronda de pruebas de UAT. Por lo tanto, si su dominio es ejemplo.com, puede crear un subdominio test.example.com y aplicarlo a la producción. Durante la prueba de UAT del dominio, querrá buscar cosas como la redirección de vínculos adecuada, el almacenamiento en caché y las configuraciones de Dispatcher.
          * [Introducción a los nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [Adición de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
