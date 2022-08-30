@@ -2,9 +2,9 @@
 title: Entorno de compilación
 description: Obtenga información sobre el entorno de compilación de Cloud Manager y cómo crea y prueba su código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: c138f0be15550df85a2ec23b6b551ccba07996c8
+source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
@@ -84,12 +84,12 @@ Las combinaciones de proveedor/versión disponibles actualmente son:
 
 | Proveedor | Versión |
 |---|---|
-| `oracle` | `1.8` |
-| `oracle` | `1.11` |
+| `oracle` | `8` |
 | `oracle` | `11` |
-| `sun` | `1.8` |
-| `sun` | `1.11` |
+| `sun` | `8` |
 | `sun` | `11` |
+
+Esta tabla se refiere a los números de versión del producto. Los números de compilación de Java o las rutas de instalación pueden reflejar convenciones de versiones de Java antiguas, como 1.8 para Java 8.
 
 >[!NOTE]
 >

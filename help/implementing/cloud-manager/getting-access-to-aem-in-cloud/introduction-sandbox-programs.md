@@ -2,10 +2,10 @@
 title: 'Introducción a los programas de espacio aislado '
 description: Descubra cuáles son las diferencias entre los programas de simulación de pruebas y los programas de producción.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 05cba12cdd14c2e29f6a471047ce95fcf720abc4
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 0%
+source-wordcount: '437'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ Un programa de simulación de pruebas es uno de los dos tipos de programas dispo
 Los programas de espacio aislado incluyen la creación automática. Siempre que cree un nuevo programa de espacio aislado, Cloud Manager automáticamente:
 
 * Añade AEM Sites y AEM Assets como soluciones en su programa.
-* Establece un repositorio de Git de proyecto con un proyecto de ejemplo basado en la variable [AEM tipo de archivo del proyecto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* Establece un repositorio de Git de proyecto con un proyecto de ejemplo basado en la variable [AEM tipo de archivo del proyecto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 * Crea un entorno de desarrollo.
 * Crea una canalización que no es de producción y se implementa en el entorno de desarrollo.
 
@@ -46,6 +46,10 @@ Los entornos creados en un programa de simulación de pruebas no están configur
 ### Sin dominios personalizados ni Listas de permitidos IP {#ip-allow}
 
 Los dominios personalizados y las listas de permitidos IP no están disponibles en los programas de entornos limitados.
+
+### Sin redes avanzadas {#advanced-networking}
+
+[Funciones de red avanzadas](/help/security/configuring-advanced-networking.md) (por ejemplo, aprovisionamiento de autoservicio de VPN, puertos no estándar, direcciones IP de salida dedicadas, etc.) no están disponibles en programas de simulación de pruebas.
 
 ### Actualizaciones AEM manuales {#updates}
 
