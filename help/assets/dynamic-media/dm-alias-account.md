@@ -8,9 +8,9 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 1932476a2ca8f46c1f73214c15982d7baa6c56ff
+source-git-commit: 7a7a3de89d02ac34d40a59e87cc049652730a72d
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 <!-- hide: yes
 hidefromtoc: yes -->
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->Esta función para crear una cuenta de alias de empresa de Dynamic Media se encuentra en el canal de prelanzamiento de enero de 2022. Consulte [Documentación del canal previa al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno. La función estará disponible para el público en general en la versión de febrero de 2022.
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature will be generally available in the February 2022 release. -->
 
 Las direcciones URL de Dynamic Media y el código incrustado del visor contienen el nombre de cuenta de la empresa. Este nombre de cuenta se creó en el momento del aprovisionamiento de Dynamic Media. Puede haber escenarios en los que su empresa haya pasado por una adquisición o un cambio de marca, o simplemente desee utilizar un nombre más memorable. En estos casos, no es fácil actualizar manualmente el nombre de la cuenta de la empresa en todas las direcciones URL y el código incrustado del visor que salen de la caja. Además, existe la posibilidad de que afecte al repositorio de Dynamic Media existente o al contenido en directo. Para resolver este problema, puede configurar una cuenta de alias de empresa de Dynamic Media.
 
