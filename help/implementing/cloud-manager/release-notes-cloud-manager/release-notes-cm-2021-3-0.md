@@ -3,10 +3,10 @@ title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Servic
 description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.3.0
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.3.0 es el 1
    * Elimine Sitios o Recursos de un programa existente con Sitios y Recursos.
    * Agregue el derecho a una solución no utilizada a un programa existente o como un nuevo programa.
 
-* **Actualización de AEM** ahora se muestra para las pantallas Ejecución de la canalización y Actividad .
+* **Actualización de mantenimiento de AEM** ahora se muestra para las pantallas Ejecución de la canalización y Actividad .
 
 * Si un entorno está en hibernación pero también hay una actualización de AEM disponible, la variable **Hibernado** el estado tendrá prioridad sobre **Actualización disponible**.
 
@@ -45,7 +45,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.3.0 es el 1
 
 * La canalización de producción de Cloud Manager ahora incluye [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) capacidad.
 
-### Corrección de errores  {#bug-fixes}
+### Correcciones de errores  {#bug-fixes}
 
 * En algunos casos, las versiones de paquetes se omitían durante AEM actualización push.
 
