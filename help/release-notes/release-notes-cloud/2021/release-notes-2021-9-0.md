@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.9.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2021.9.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2021.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2021.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -78,7 +78,7 @@ CQ-4328183 was not reported on CS so not documented here.
    * Habilite la funcionalidad de guardar y reanudar de Forms Portal y almacene borradores de formularios adaptables en un repositorio de datos administrado por el cliente.
    * Almacene datos de flujos de trabajo AEM en proceso (AEM datos de variables de flujo de trabajo) que contengan datos personales confidenciales (SPD) en un repositorio administrado por el cliente.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    * Generar documentos rellenando archivos de plantilla con datos XML.
    * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    * Genere archivos de PDF de impresión desde un PDF de formularios XFA y un formulario de Adobe Acrobat.
@@ -99,7 +99,7 @@ Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa b
 
 * Respetar la propiedad &quot;include_in_menu&quot; en el componente de navegación
 
-### Corrección de errores {#bug-fixes-cif}
+### Correcciones de errores {#bug-fixes-cif}
 
 * El vaciado de la caché del menú no funciona como se espera
 
@@ -117,7 +117,7 @@ Consulte [Monitorización de reproducción básica](https://experienceleague.ado
 * Compatibilidad con miniaturas para vídeos en ahora se admite en Screens as a Cloud Service. Un autor de contenido puede definir una miniatura para los vídeos, de modo que la imagen pueda utilizarse como marcador de posición y probar correctamente la reproducción y el destino del contenido, mientras el equipo adecuado está finalizando el vídeo en sí. También se puede utilizar la imagen en caso de que falle la reproducción del vídeo.
 Consulte [Compatibilidad con miniaturas para vídeos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) para obtener más información.
 
-### Corrección de errores {#bug-fixes-screens}
+### Correcciones de errores {#bug-fixes-screens}
 
 * El reproductor no pudo mostrar contenido de la página integrada y este problema se ha corregido.
 
@@ -168,7 +168,7 @@ La próxima versión está planificada para el 7 de octubre de 2021.
 
 * Al hacer clic directamente en la tarjeta de programa, ahora accederá a la página Información general de Cloud Manager .
 
-### Corrección de errores {#bug-fixes-sept}
+### Correcciones de errores {#bug-fixes-sept}
 
 * El usuario ahora verá un mensaje más comprensible al intentar agregar una nueva Lista de permitidos IP en un programa que haya alcanzado el número máximo permitido de Listas de permitidos IP que se pueden configurar.
 
@@ -213,6 +213,6 @@ La fecha de versión de Best Practices Analyzer v2.1.18 es el 2 de septiembre de
 
 * Capacidad para detectar y crear informes sobre el tipo y el tamaño del almacén de nodos.
 
-### Corrección de errores {#bug-fixes-bpa}
+### Correcciones de errores {#bug-fixes-bpa}
 
 * La BPA estaba detectando falsamente la presencia del marco de integración comercial.

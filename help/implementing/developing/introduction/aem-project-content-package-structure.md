@@ -2,7 +2,7 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2930'
 ht-degree: 13%
@@ -13,7 +13,7 @@ ht-degree: 13%
 
 >[!TIP]
 >
->Familiarícese con básico [Uso del tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)y [Complemento Maven de contenido de FileVault](/help/implementing/developing/tools/maven-plugin.md) a medida que este artículo se basa en estas lecciones y conceptos.
+>Familiarícese con básico [Uso del tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)y [Complemento Maven de contenido de FileVault](/help/implementing/developing/tools/maven-plugin.md) a medida que este artículo se basa en estas lecciones y conceptos.
 
 Este artículo describe los cambios necesarios para que los proyectos de Adobe Experience Manager Maven sean AEM compatibles de forma as a Cloud Service, asegurándose de que respeten la división del contenido mutable e inmutable, de que las dependencias se establezcan para crear implementaciones determinísticas y no conflictivas y de que se empaqueten en una estructura implementable.
 
@@ -144,12 +144,12 @@ Por ejemplo, un proyecto de AEM que incluya 2 aplicaciones de AEM de proveedor p
 
 Los paquetes deben marcarse con su tipo de paquete declarado. Los tipos de paquetes ayudan a aclarar el propósito y la implementación de un paquete.
 
-+ Los paquetes de contenedores deben configurar su `packageType` a `container`. Los paquetes de contenedores no deben contener nodos regulares. Solo se permiten paquetes, configuraciones y subpaquetes OSGi. No se permite el uso de contenedores en AEM as a Cloud Service [instalar enlaces](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Los paquetes de contenedores deben configurar su `packageType` a `container`. Los paquetes de contenedores no deben contener nodos regulares. Solo se permiten paquetes, configuraciones y subpaquetes OSGi. No se permite el uso de contenedores en AEM as a Cloud Service [instalar enlaces](https://jackrabbit.apache.org/filevault/installhooks.html).
 + Los paquetes de código (inmutables) deben configurar sus `packageType` a `application`.
 + Los paquetes de contenido (mutables) deben configurar sus `packageType` a `content`.
 
 
-Para obtener más información, consulte [Apache Jackrabbit FileVault: Documentación del complemento Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Tipos de paquetes de Apache Jackrabbit](http://jackrabbit.apache.org/filevault/packagetypes.html)y [Fragmento de configuración Maven de FileVault](#marking-packages-for-deployment-by-adoube-cloud-manager) más abajo.
+Para obtener más información, consulte [Apache Jackrabbit FileVault: Documentación del complemento Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Tipos de paquetes de Apache Jackrabbit](https://jackrabbit.apache.org/filevault/packagetypes.html)y [Fragmento de configuración Maven de FileVault](#marking-packages-for-deployment-by-adoube-cloud-manager) más abajo.
 
 >[!TIP]
 >
@@ -625,4 +625,4 @@ En el `all/pom.xml` añada la variable `maven-clean-plugin` que limpiará el dir
 ## Recursos adicionales {#additional-resources}
 
 + [Administración de paquetes con Maven](/help/implementing/developing/tools/maven-plugin.md)
-+ [Complemento Maven del paquete de contenido de FileVault](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [Complemento Maven del paquete de contenido de FileVault](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

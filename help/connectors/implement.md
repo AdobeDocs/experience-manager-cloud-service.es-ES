@@ -2,10 +2,10 @@
 title: Implementación de un conector de AEM
 description: Implementación de un conector de AEM
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Documentación útil
 
 La [documentación](../overview/introduction.md) de Experience Manager as a Cloud Service proporciona información valiosa sobre el desarrollo en AEM. A continuación, se presentan algunos temas técnicos específicos y referencias que pueden resultar útiles al implementar un conector de AEM:
 
-* Las [Muestras de AEM](http://adobe-consulting-services.github.io/acs-aem-samples/) de los Servicios de consultoría de Adobe (ACS) para obtener código bien comentado que ayude a formar a los desarrolladores de AEM
+* Las [Muestras de AEM](https://adobe-consulting-services.github.io/acs-aem-samples/) de los Servicios de consultoría de Adobe (ACS) para obtener código bien comentado que ayude a formar a los desarrolladores de AEM
 * Los diversos vínculos de documentación de la sección Patrones de integración comunes de este artículo
 
 Recursos de la comunidad
@@ -45,9 +45,9 @@ Recursos de la comunidad
 
 Además de la documentación estática anterior, Adobe y la comunidad de AEM ofrecen recursos para ayudar a llevar un conector al mercado:
 
-* El [Foro de AEM](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) de la Comunidad de Adobe es un sitio activo donde sus iguales formulan y responden preguntas
+* El [Foro de AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) de la Comunidad de Adobe es un sitio activo donde sus iguales formulan y responden preguntas
 * Hay recursos técnicos de Adobe adicionales disponibles para ciertos niveles de socios. Obtenga más información acerca del [Programa de Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
-* Si su organización desea ayuda para la implementación, considere al equipo de [Servicios profesionales de Adobe](http://www.adobe.com/es/experience-cloud/consulting-services.html) o consulte el [Buscador de socios de soluciones](https://solutionpartners.adobe.com/home/partnerFinder.html) para obtener una lista de los socios de Adobe de todo el mundo
+* Si su organización desea ayuda para la implementación, considere al equipo de [Servicios profesionales de Adobe](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) o consulte el [Buscador de socios de soluciones](https://solutionpartners.adobe.com/home/partnerFinder.html) para obtener una lista de los socios de Adobe de todo el mundo
 
 Reglas de estructura del paquete
 -----------------------

@@ -2,7 +2,7 @@
 title: Notas de la versión 2020.7.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.7.0."'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 82%
@@ -57,13 +57,13 @@ AEM Commerce ahora está disponible en Cloud Service.
 
 Consulte [Introducción a AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) para obtener más información.
 
-## Componentes principales {#core-components}
+## Componentes principales  {#core-components}
 
 ### Novedades {#what-is-new-core-components}
 
 La versión 2.11.0 de los [componentes principales de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) ya está disponible como parte de AEM Sites, incluidos:
 
-* Introducción a un nuevo [componente visualizador de PDF](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
+* Introducción a un nuevo [componente visualizador de PDF](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * Ya está disponible la compatibilidad con las páginas móviles aceleradas (AMP) de los componentes principales. Produce experiencias de cliente más rápidas al hacer la transición de página instantáneamente al entrar al sitio desde un resultado de búsqueda móvil de Google, lo que mejora la participación del usuario y la optimización de los motores de búsqueda.
 Consulte [Compatibilidad con AMP para los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) para obtener más detalles.
@@ -95,7 +95,7 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.7.0 es 9 de jul
 * El contenedor de generación de Cloud Manager ahora admite Java 8 y Java 11.
 Consulte Uso de la compatibilidad con Java 11 para obtener más información.
 
-### Corrección de errores {#bug-fixes-cm}
+### Correcciones de errores {#bug-fixes-cm}
 
 * Antes de que se crearan completamente los entornos, el vínculo de Cloud Manager a la consola de desarrollador no se activaba correctamente.
 
@@ -133,7 +133,7 @@ Consulte Uso de la compatibilidad con Java 11 para obtener más información.
 
 Consulte esta sección para conocer las novedades y las actualizaciones de Cloud Manager versión 1.0.2.
 
-### Corrección de errores {#cra-bug-fixes}
+### Correcciones de errores {#cra-bug-fixes}
 
 * La versión anterior de CRA no se podía ejecutar en Adobe Experience Manager (AEM) 6.1. Se agregó compatibilidad explícita para permitir usuarios en el grupo de administradores.
 

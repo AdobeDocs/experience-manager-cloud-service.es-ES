@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3763'
 ht-degree: 16%
@@ -162,7 +162,7 @@ Para configurar [!DNL Dynamic Media] en [!DNL Assets] y [!DNL Sites] implementac
    * En local [!DNL Sites], en el **[!UICONTROL Publicar recursos]** , seleccione **[!UICONTROL Publicación selectiva]**. No seleccione **[!UICONTROL Sincronizar todo el contenido]**.
    * En remoto [!DNL Assets] implementación, en [!UICONTROL Modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Habilitado de forma predeterminada]**.
 
-1. Habilitar [[!DNL Dynamic Media] compatibilidad con el componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esta función habilita la opción predeterminada [Componente de imagen](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) para mostrar [!DNL Dynamic Media] imágenes al [!DNL Dynamic Media] los autores utilizan las imágenes en las páginas web locales [!DNL Sites] implementación.
+1. Habilitar [[!DNL Dynamic Media] compatibilidad con el componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esta función habilita la opción predeterminada [Componente de imagen](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) para mostrar [!DNL Dynamic Media] imágenes al [!DNL Dynamic Media] los autores utilizan las imágenes en las páginas web locales [!DNL Sites] implementación.
 
 ## Usar recursos remotos {#use-remote-assets}
 

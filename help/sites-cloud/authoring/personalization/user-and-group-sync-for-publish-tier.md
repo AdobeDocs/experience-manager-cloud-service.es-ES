@@ -2,10 +2,10 @@
 title: 'Registro, inicio de sesión y perfil de usuario '
 description: Obtenga información sobre el registro, el inicio de sesión, los datos de usuario y la sincronización de grupos para AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -59,7 +59,7 @@ El inicio de sesión se puede implementar con los dos enfoques siguientes:
 Los clientes pueden escribir sus propios componentes personalizados. Para obtener más información, considere la posibilidad de familiarizarse con lo siguiente:
 
 * El [marco de trabajo de autenticación de Sling](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
-* Y considere [preguntar en la sesión de expertos de la comunidad AEM](http://bit.ly/ATACEFeb15) acerca del inicio de sesión.
+* Y considere [preguntar en la sesión de expertos de la comunidad AEM](https://bit.ly/ATACEFeb15) acerca del inicio de sesión.
 
 ### Integración con un proveedor de identidad {#integration-with-an-idp}
 

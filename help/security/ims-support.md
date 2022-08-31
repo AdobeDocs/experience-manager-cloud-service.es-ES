@@ -2,7 +2,7 @@
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 100%
@@ -229,7 +229,7 @@ Consulte Definiciones de funciones para obtener más información sobre las func
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. Una vez agregado al perfil correspondiente, debe poder acceder a los inquilinos respectivos en Cloud Manager a través de [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) usando la esquina superior derecha de la interfaz de usuario.
+1. Una vez agregado al perfil correspondiente, debe poder acceder a los inquilinos respectivos en Cloud Manager a través de [Adobe Experience Cloud](https://my.cloudmanager.adobe.com) usando la esquina superior derecha de la interfaz de usuario.
 
 
 ### Acceder a una instancia en AEM as a Cloud Service {#accessing-instance-cloud-service}

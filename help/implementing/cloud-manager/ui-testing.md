@@ -2,10 +2,10 @@
 title: Pruebas de IU
 description: La prueba de IU personalizada es una función opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones personalizadas
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ La prueba de IU personalizada es una función opcional que le permite crear y ej
 
 AEM ofrece un conjunto integrado de [Puertas de calidad de Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantizar actualizaciones sin problemas en las aplicaciones personalizadas. En concreto, las puertas de prueba de TI ya se han creado y automatizado pruebas personalizadas mediante API AEM.
 
-Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de idiomas y marcos (como Java y Maven, Node y WebDriver.io, o cualquier otro marco y tecnología creados en Selenium). Además, un proyecto de pruebas de interfaz de usuario se puede generar fácilmente mediante el uso de [el tipo de archivo del proyecto de AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de idiomas y marcos (como Java y Maven, Node y WebDriver.io, o cualquier otro marco y tecnología creados en Selenium). Además, un proyecto de pruebas de interfaz de usuario se puede generar fácilmente mediante el uso de [el tipo de archivo del proyecto de AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 
 Las pruebas de interfaz de usuario se ejecutan como parte de una puerta de calidad específica para cada canalización de Cloud Manager con un [dedicated **Pruebas de IU personalizadas** paso a paso.](/help/implementing/cloud-manager/deploy-code.md) Cualquier prueba de la interfaz de usuario, incluidas la regresión y las nuevas funcionalidades, permite detectar y notificar errores.
 
@@ -79,7 +79,7 @@ Para generar un contexto de compilación de Docker, necesita un módulo Maven qu
 * Produce un archivo que contiene un `Dockerfile` y todos los demás archivos necesarios para crear la imagen Docker con sus pruebas.
 * Etiqueta el archivo con la variable `ui-test-docker-context` clasificador.
 
-La forma más sencilla de hacerlo es configurar la variable [Complemento Ensamblado de Maven](http://maven.apache.org/plugins/maven-assembly-plugin/) para crear el archivo de contexto de compilación de Docker y asignarle el clasificador adecuado.
+La forma más sencilla de hacerlo es configurar la variable [Complemento Ensamblado de Maven](https://maven.apache.org/plugins/maven-assembly-plugin/) para crear el archivo de contexto de compilación de Docker y asignarle el clasificador adecuado.
 
 Puede crear pruebas de interfaz de usuario con diferentes tecnologías y marcos, pero en esta sección se da por hecho que el diseño del proyecto es similar al siguiente.
 

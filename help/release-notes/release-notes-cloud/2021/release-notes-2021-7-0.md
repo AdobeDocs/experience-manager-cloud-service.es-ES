@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.7.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2021.7.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2021.7.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2021.7.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 13%
+source-wordcount: '1316'
+ht-degree: 12%
 
 ---
 
@@ -88,7 +88,7 @@ La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=es) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    * Generar documentos rellenando archivos de plantilla con datos XML.
    * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    * Genere archivos de PDF de impresión desde un PDF de formularios XFA y un formulario de Adobe Acrobat.
@@ -112,7 +112,7 @@ La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!
 
 ## [!DNL Experience Manager Screens] como [!DNL Cloud Service] {#screens}
 
-### Corrección de errores {#bug-fixes-screens}
+### Correcciones de errores {#bug-fixes-screens}
 
 * La configuración del proveedor de contenido ahora se valida durante la creación o actualización.
 
@@ -134,11 +134,11 @@ La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!
 
 * Antes no se podían crear etiquetas con el mismo nombre pero con diferentes áreas de nombres.
 
-## Documentación XML para Experience Manager as a Cloud Service {#xml-documentation}
+## XML Documentation para Experience Manager as a Cloud Service {#xml-documentation}
 
 ### Novedades {#what-is-new-xml-documentation}
 
-La documentación XML para el Experience Manager as a Cloud Service está disponible de forma general. Permite a los clientes as a Cloud Service Experience Manager adquirir un complemento de documentación XML para importar, crear, administrar y entregar contenido técnico en varios canales, incluido Experience Manager Sites.
+XML Documentation para Experience Manager as a Cloud Service está disponible de forma general. Permite a los clientes as a Cloud Service Experience Manager adquirir complementos de XML Documentation para importar, crear, administrar y entregar contenido técnico en varios canales, incluido Experience Manager Sites.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -165,7 +165,7 @@ La próxima versión está planificada para el 12 de agosto de 2021.
 
 * La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 28.
 
-### Corrección de errores {#bug-fixes-cm-july}
+### Correcciones de errores {#bug-fixes-cm-july}
 
 * En algunos casos, Vista previa no era una opción disponible al enlazar una Lista de permitidos IP a un entorno.
 
