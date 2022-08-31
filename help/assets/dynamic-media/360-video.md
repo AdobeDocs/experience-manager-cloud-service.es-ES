@@ -4,9 +4,9 @@ description: Aprenda a trabajar con 360 y vídeo de realidad virtual (VR) en Dyn
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Consulte también [Administración de ajustes preestablecidos de visor](/help/as
 
 ## 360 Vídeo en acción {#video-in-action}
 
-Select [Estación espacial 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del explorador y ver un vídeo de 360°. Durante la reproducción de vídeo, arrastre el puntero a una nueva ubicación para cambiar el ángulo de visualización.
+Select [Estación espacial 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del explorador y ver un vídeo de 360°. Durante la reproducción de vídeo, arrastre el puntero a una nueva ubicación para cambiar el ángulo de visualización.
 
 ![360 Ejemplo de vídeo](assets/6_5_360videoiss_simplified.png)
 *Fotograma de vídeo de la estación espacial 360*
@@ -43,18 +43,18 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit
 360 recursos de vídeo que se cargan en [!DNL Experience Manager] se etiquetan como **Multimedia** en una página de Asset, similar al recurso de vídeo normal.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*Recurso de vídeo 360 cargado que se ve en la vista de tarjeta. El recurso está etiquetado como multimedia.*
+*Recurso de vídeo cargado 360 que se ve en la vista de tarjeta. El recurso está etiquetado como multimedia.*
 
 **Cargue recursos para utilizarlos con el visor de vídeos 360:**
 
 1. Se ha creado una carpeta dedicada al recurso de vídeo 360.
 1. [Aplicación de un perfil de vídeo adaptable a la carpeta](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-   El procesamiento de contenido de vídeo 360 supone un requisito mayor para la resolución de vídeo de origen y para la resolución de representaciones codificadas que el contenido de vídeo estándar no 360.
+   El procesamiento de contenido de vídeo 360 supone requisitos más altos para la resolución de vídeo de origen y para la resolución de representaciones codificadas que el contenido de vídeo estándar no 360.
 
-   Puede utilizar el perfil de vídeo adaptable incorporado que ya viene con Dynamic Media. Sin embargo, tiene como resultado una calidad de vídeo 360 perceptiblemente inferior a la que obtendría para el vídeo no 360 codificado con la misma configuración representada con un visor de vídeo no 360. Por lo tanto, si se requiere vídeo 360 de alta calidad, haga lo siguiente:
+   Puede utilizar el perfil de vídeo adaptable incorporado que ya viene con Dynamic Media. Sin embargo, tiene como resultado una calidad de vídeo de 360 perceptiblemente inferior a la que obtendría para los vídeos que no sean 360 codificados con la misma configuración representada con un visor de vídeo que no sea 360. Por lo tanto, si se requiere vídeo 360 de alta calidad, haga lo siguiente:
 
-   * Lo ideal es que el contenido de vídeo original de 360 tenga una de las siguientes resoluciones:
+   * Lo ideal es que el contenido original de 360 vídeos tenga una de las siguientes resoluciones:
 
       * 1080p - 1920 x 1080, conocida como resolución Full HD o FHD,
       * 2160p - 3840 x 2160, conocida como resolución de alta definición de 4 k, UHD o Ultra. Esta gran resolución de pantalla suele encontrarse en los televisores de gama alta y en los monitores de ordenador. La resolución 2160p a menudo se denomina &quot;4k&quot; porque la anchura es cercana a los 4000 píxeles. En otras palabras, ofrece cuatro veces los píxeles de 1080p.
@@ -92,7 +92,7 @@ Start by uploading 360 Videos.
 
 ## Vista previa del vídeo 360 {#previewing-video}
 
-Puede usar Vista previa para ver el aspecto que tendrá el vídeo 360 para los clientes y asegurarse de que se comporta según lo esperado.
+Puede usar Vista previa para ver cómo aparece el vídeo 360 para los clientes y asegurarse de que se comporta según lo esperado.
 
 Consulte también [Edición de ajustes preestablecidos de visor](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets).
 
@@ -108,7 +108,7 @@ Consulte [Adición de Dynamic Media Assets a las páginas](/help/assets/dynamic-
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
-   Para previsualizar el vídeo, seleccione el recurso de vídeo 360.
+   Para previsualizar el vídeo, seleccione el recurso de vídeo de 360.
 
 1. En la página de vista previa, cerca de la esquina superior izquierda de la página, seleccione la lista desplegable y, a continuación, seleccione **[!UICONTROL Visualizadores]**.
 
@@ -119,7 +119,7 @@ Consulte [Adición de Dynamic Media Assets a las páginas](/help/assets/dynamic-
    * Para modificar el ángulo de visualización de la escena estática, arrastre el puntero por el vídeo.
    * Para comenzar la reproducción, seleccione la **[!UICONTROL Play]** botón. A medida que se reproduce el vídeo, arrastre el puntero por el vídeo para modificar su ángulo de visualización.
 
-   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de un video 360.*
+   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de 360 videos.*
 
    * En la lista Visualizadores, seleccione **[!UICONTROL Video360VR]**.
 
