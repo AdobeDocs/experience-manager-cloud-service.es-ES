@@ -2,9 +2,9 @@
 title: AEM perfiles as a Cloud Service de equipo y producto
 description: Conozca cómo AEM equipo as a Cloud Service y perfiles de producto y conceda y limite el acceso a sus soluciones de Adobe con licencia.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
+source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Cloud Manager tiene perfiles de producto preconfigurados que se pueden considera
 
 Cada uno de los perfiles de producto tiene permisos específicos asociados a ellos.
 
-* **Propietario empresarial** - En esta función, tiene permiso para agregar un nuevo programa o editar un programa, agregar o actualizar un entorno, agregar, editar, eliminar o ejecutar canalizaciones, implementar código en AEM entorno o ejecutar comprobaciones de calidad del código.
+* **Propietario empresarial** - En esta función, tiene permiso para agregar un nuevo programa o editar un programa, agregar o actualizar un entorno, implementar código en AEM entorno o ejecutar comprobaciones de calidad del código.
 * **Administrador de implementación** : En esta función, tiene permiso para agregar o actualizar un entorno, ejecutar cualquier canalización e implementar código en AEM entorno, o ejecutar comprobaciones de calidad del código.
 * **Desarrollador** - En esta función, tiene el permiso para generar tokens de acceso personal para acceder a Git.
 * **Administrador de programas** - En esta función, tiene permiso para programar canalizaciones, anular las puertas de calidad de 3 niveles y proporcionar la aprobación de producción.
