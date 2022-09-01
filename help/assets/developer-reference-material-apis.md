@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
+source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1869'
 ht-degree: 3%
 
 ---
@@ -84,6 +84,8 @@ El método proporciona una gestión escalable y más eficaz de las cargas de rec
 
 >[!NOTE]
 Consulte el código de cliente para implementar este método en el código abierto [biblioteca aem-upload](https://github.com/adobe/aem-upload).
+[!IMPORTANT]
+En determinadas circunstancias, es posible que los cambios no se propaguen completamente entre las solicitudes al Experience Manager debido a la naturaleza eventualmente consistente del almacenamiento en Cloud Service. Esto lleva a 404 respuestas para iniciar o completar llamadas de carga debido a que las creaciones de carpetas requeridas no se propagan. Los clientes deben esperar 404 respuestas y manejarlas implementando un reintento con una estrategia de back-off.
 
 ### Iniciar carga {#initiate-upload}
 
