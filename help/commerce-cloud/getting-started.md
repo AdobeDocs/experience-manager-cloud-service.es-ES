@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1099'
 ht-degree: 29%
 
 ---
@@ -141,3 +141,5 @@ Para obtener configuraciones más complejas que utilizan varias estructuras de s
 - [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
 - [Tienda de referencia de Venia de AEM](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuración de varias tiendas de comercio](configuring/multi-store-setup.md)
+- [Configuración de varios sistemas de comercio](configuring/multiple-commerce-systems-setup.md)
+
