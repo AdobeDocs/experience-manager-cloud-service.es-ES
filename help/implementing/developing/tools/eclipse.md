@@ -2,7 +2,7 @@
 title: Herramientas para desarrolladores de AEM para Eclipse
 description: Herramientas para desarrolladores de AEM para Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 3%
@@ -25,7 +25,7 @@ Ofrece varias funciones que facilitan el desarrollo de AEM:
 * Inicio sencillo de AEM proyectos a través de un Asistente específico para la creación de proyectos
 * Fácil edición de las propiedades JCR
 
-## Requisitos {#requirements}
+## Requisitos  {#requirements}
 
 Antes de utilizar las herramientas para desarrolladores de AEM, debe:
 
@@ -38,9 +38,9 @@ Antes de utilizar las herramientas para desarrolladores de AEM, debe:
 
 ## Instalación de las herramientas para desarrolladores de AEM para Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Una vez que haya cumplido la [requisitos](#requirements) anteriormente, puede instalar el complemento de la siguiente manera:
+Cuando haya cumplido, [requisitos](#requirements) anteriormente, puede instalar el complemento de la siguiente manera:
 
-1. Abra el [Sitio Web AEM herramientas para desarrolladores.](https://eclipse.adobe.com/aem/dev-tools/)
+1. Abra el [Sitio Web de AEM Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. Copie el **Vínculo de instalación**.
 

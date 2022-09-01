@@ -2,9 +2,9 @@
 title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1176'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ En la tabla siguiente se resumen las clasificaciones y los umbrales de fallo de 
 
 >[!NOTE]
 >
->Consulte [Definiciones de métricas de SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) para obtener definiciones más detalladas.
+>Consulte [Definiciones de métricas de SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) para obtener definiciones más detalladas.
 
 >[!NOTE]
 >

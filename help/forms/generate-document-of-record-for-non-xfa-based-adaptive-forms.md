@@ -2,9 +2,9 @@
 title: Generar documento de registro para Forms adaptable
 description: Explica cómo se puede generar una plantilla para un documento de registro (DoR) para Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: e9f235f4e4a1d314370a423ee8a2ef997346a794
+source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
 workflow-type: tm+mt
-source-wordcount: '3677'
+source-wordcount: '3659'
 ht-degree: 2%
 
 ---
@@ -408,8 +408,8 @@ Un archivo XCI ayuda a establecer varias propiedades de un documento. Forms as a
 
 | Opción XCI | Descripción |
 |--- |--- |
-| config/actual/pdf/creator | Identifica al creador del documento mediante la entrada Creador del diccionario de información del documento. Para obtener información sobre este diccionario, consulte la [Guía de referencia del PDF](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
-| config/actual/pdf/production | Identifica al productor del documento mediante la entrada Producer del diccionario de información del documento. Para obtener información sobre este diccionario, consulte la [Guía de referencia del PDF](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/actual/pdf/creator | Identifica al creador del documento mediante la entrada Creador del diccionario de información del documento. Para obtener información sobre este diccionario, consulte la [Guía de referencia del PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/actual/pdf/production | Identifica al productor del documento mediante la entrada Producer del diccionario de información del documento. Para obtener información sobre este diccionario, consulte la [Guía de referencia del PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
 | config/current/layout | Controla si la salida es un solo panel o paginado. |
 | config/current/pdf/compression/level | Especifica el grado de compresión que se utilizará al generar un documento de PDF. |
 | config/actual/pdf/fontInfo/embed | Controla la incrustación de fuentes en el documento de salida. |

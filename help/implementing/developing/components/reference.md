@@ -2,10 +2,10 @@
 title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores sobre los detalles de los componentes y su estructura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -41,7 +41,7 @@ Antes de invertir tiempo en la creación de un componente completamente nuevo, c
 
 #### Ampliación de componentes principales {#extending-core-components}
 
-Los componentes principales también ofrecen [borrar patrones de personalización](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html) que puede utilizar para adaptarlas a las necesidades de su propio proyecto.
+Los componentes principales también ofrecen [borrar patrones de personalización](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=es) que puede utilizar para adaptarlas a las necesidades de su propio proyecto.
 
 #### Superposición de componentes {#overlying-components}
 
@@ -59,11 +59,11 @@ El componente se procesará con [HTML.](https://www.w3schools.com/htmL/html_intr
 
 Se recomienda mantener el código responsable del marcado y el procesamiento separado del código que controla la lógica utilizada para seleccionar el contenido del componente.
 
-Esta filosofía está respaldada por [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es), un lenguaje de plantilla limitado intencionalmente para garantizar que se utilice un lenguaje de programación real para definir la lógica empresarial subyacente. Este mecanismo resalta el código que se llama para una vista determinada y, si es necesario, permite una lógica específica para diferentes vistas del mismo componente.
+Esta filosofía está respaldada por [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), un lenguaje de plantilla limitado intencionalmente para garantizar que se utilice un lenguaje de programación real para definir la lógica empresarial subyacente. Este mecanismo resalta el código que se llama para una vista determinada y, si es necesario, permite una lógica específica para diferentes vistas del mismo componente.
 
 Esta lógica (opcional) se puede implementar de diferentes maneras y se invoca desde HTL con comandos específicos:
 
-* Uso de Java - [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) habilita un archivo HTL para acceder a los métodos de ayuda en una clase Java personalizada. Esto le permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
+* Uso de Java - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) habilita un archivo HTL para acceder a los métodos de ayuda en una clase Java personalizada. Esto le permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
 * Uso de JavaScript [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) habilita un archivo HTL para acceder al código de ayuda escrito en JavaScript. Esto le permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
 * Uso de bibliotecas del lado del cliente : los sitios web modernos dependen en gran medida del procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. Consulte el documento [Uso de bibliotecas del lado del cliente en AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obtener más información.
 

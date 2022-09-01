@@ -2,7 +2,7 @@
 title: Usar fuentes personalizadas
 description: Usar fuentes personalizadas
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Junto con las operaciones mencionadas anteriormente, puede utilizar las fuentes 
 
 ## Comportamiento de los documentos del PDF
 
-Puede [incrustar una fuente](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) a un documento de PDF. Cuando se incrusta una fuente, el documento del PDF aparecerá (se verá) de forma idéntica en todas las plataformas. Utiliza fuentes incrustadas para garantizar una apariencia uniforme. Cuando una fuente no está incrustada, la renderización de la fuente depende de la configuración de renderización de clientes del visor de PDF como Acrobat o Acrobat Reader. Si la fuente está disponible en el equipo cliente, el PDF utiliza la fuente especificada; de lo contrario, el PDF se procesa con una fuente de reserva predeterminada.
+Puede [incrustar una fuente](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) a un documento de PDF. Cuando se incrusta una fuente, el documento del PDF aparecerá (se verá) de forma idéntica en todas las plataformas. Utiliza fuentes incrustadas para garantizar una apariencia uniforme. Cuando una fuente no está incrustada, la renderización de la fuente depende de la configuración de renderización de clientes del visor de PDF como Acrobat o Acrobat Reader. Si la fuente está disponible en el equipo cliente, el PDF utiliza la fuente especificada; de lo contrario, el PDF se procesa con una fuente de reserva predeterminada.
 
 ## Añada fuentes personalizadas al entorno as a Cloud Service de Forms. {#custom-fonts-cloud-service}
 

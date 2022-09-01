@@ -2,9 +2,9 @@
 title: Reglas de calidad de código personalizadas
 description: Esta página describe las reglas de calidad de código personalizadas ejecutadas por Cloud Manager como parte de [las pruebas de calidad del código. Se basan en las prácticas recomendadas de Ingeniería AEM.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3493'
 ht-degree: 4%
 
 ---
@@ -772,7 +772,7 @@ Los componentes de AEM que tengan un cuadro de diálogo de IU clásica siempre d
 * Un componente con un cuadro de diálogo de diseño de IU clásica (es decir, un `design_dialog` debe tener un cuadro de diálogo de diseño de la interfaz de usuario táctil correspondiente (es decir, un `cq:design_dialog` nodo secundario).
 * Un componente con un cuadro de diálogo de IU clásica y un cuadro de diálogo de diseño de IU clásica debe tener un cuadro de diálogo de IU táctil correspondiente y un cuadro de diálogo de diseño de IU táctil correspondiente.
 
-La documentación AEM Herramientas de modernización proporciona documentación y herramientas para convertir componentes de la IU clásica a la IU táctil. Consulte [la documentación de las herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) para obtener más información.
+La documentación AEM Herramientas de modernización proporciona documentación y herramientas para convertir componentes de la IU clásica a la IU táctil. Consulte [la documentación de las herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/) para obtener más información.
 
 ### Los paquetes no deben mezclar contenido mutable e inmutable {#oakpal-packages-immutable}
 

@@ -3,9 +3,9 @@ title: Implementación en AEM as a Cloud Service
 description: 'Implementación en AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3358'
+source-wordcount: '3346'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ Después de cambiar a una nueva versión de la aplicación:
    * Carpetas (añadir, modificar, quitar)
    * Plantillas editables (añadir, modificar, quitar)
    * Configuración según el contexto (cualquier elemento de `/conf`) (añadir, modificar, quitar)
-   * Scripts (los paquetes pueden déclencheur Instalar enlaces en varias etapas del proceso de instalación del paquete. Consulte la [Documentación de Jackrabbit filevault](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) acerca de los enlaces de instalación. Tenga en cuenta que AEM CS actualmente utiliza Filevault versión 3.4.0, que limita los enlaces de instalación a los usuarios administradores, usuarios del sistema y miembros del grupo de administradores).
+   * Scripts (los paquetes pueden déclencheur Instalar enlaces en varias etapas del proceso de instalación del paquete. <!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. --> Tenga en cuenta que AEM CS actualmente utiliza Filevault versión 3.4.0, que limita los enlaces de instalación a los usuarios administradores, usuarios del sistema y miembros del grupo de administradores).
 
 Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. La reestructuración para reflejar esta separación se llevó a cabo en el AEM 6.5 y en el [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es)
 
