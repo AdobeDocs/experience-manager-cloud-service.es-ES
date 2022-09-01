@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: 16b27bc4f56519a0f1d2dfd9bd0b3090e77a8cc1
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 2%
+source-wordcount: '421'
+ht-degree: 1%
 
 ---
 
@@ -21,23 +21,28 @@ ht-degree: 2%
 
 Descubra cómo los especialistas en marketing pueden enriquecer los datos de productos con contenido asociado de Adobe Experience Manager. El contenido, como los recursos, los fragmentos de experiencias y los fragmentos de contenido de AEM, se pueden asociar con productos de comercio. Una vez asociados, estos tipos de contenido se pueden insertar de forma dinámica en un marcador de posición dentro de una página de producto o de categoría. Esto abre una amplia gama de posibilidades para que los especialistas en marketing se dirijan a una página de producto específica con contenido adicional, como imágenes y vídeos.
 
-## Recursos digitales
+## Recursos digitales {#digital-assets}
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
 Los recursos digitales se pueden asociar con uno o más SKU de producto. Una vez asociado, el recurso digital se puede descubrir con búsquedas de palabras clave basadas en el SKU. El recurso también aparecerá automáticamente como contenido asociado cuando edite una página que incluya el producto relevante, lo que facilita aún más la creación de la siguiente experiencia digital.
 
-## Fragmentos de experiencias
+## Fragmentos de experiencias {#experience-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
 Los fragmentos de experiencias son una función de Adobe Experience Manager que permite a un especialista en marketing crear **sin estructurar** contenido reutilizable. Los fragmentos de experiencias pueden asociarse con un SKU de producto o un ID de catálogo. Una vez asociados, los especialistas en marketing pueden descubrir fácilmente fragmentos relacionados basados en productos mostrados en una página. Los fragmentos de experiencias también se pueden incluir dinámicamente en una página de catálogo de productos mediante el uso de un marcador de posición y una asociación.
 
-## Fragmentos de contenido
+## Fragmentos de contenido {#content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
 
 Los fragmentos de contenido son una función de Adobe Experience Manager que permite a un especialista en marketing crear **estructurado** contenido reutilizable. Los fragmentos de contenido se pueden asociar con un SKU de producto o ID de catálogo. Una vez asociados, los especialistas en marketing pueden descubrir fácilmente fragmentos relacionados basados en productos mostrados en una página. Los fragmentos de contenido también se pueden incluir dinámicamente en una página de catálogo de productos mediante el uso de un marcador de posición y una asociación.
+
+## Páginas de contenido {#content-pages}
+
+Las páginas de contenido se pueden asociar con uno o más SKU de producto. Una vez asociada, la página se puede descubrir con búsquedas de palabras clave basadas en el SKU. Las páginas de contenido también se pueden incluir dinámicamente en una página de catálogo de productos mediante el uso de un marcador de posición y una asociación.
+
 
 ## Medios relacionados {#related}
 

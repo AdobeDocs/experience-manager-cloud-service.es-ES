@@ -1,12 +1,12 @@
 ---
 title: Consola Fragmentos de contenido
 description: Obtenga información sobre cómo administrar fragmentos de contenido desde la consola Fragmentos de contenido.
-landing-page-description: Aprenda a administrar fragmentos de contenido desde la consola Fragmentos de contenido, que se centra en el uso de gran volumen de los fragmentos de contenido para casos de uso remoto, pero que también se utiliza al crear páginas.
+landing-page-description: Aprenda a administrar fragmentos de contenido desde la consola Fragmentos de contenido, que se centra en el uso de gran volumen de los fragmentos de contenido para casos de uso sin encabezado, pero que también se utiliza al crear páginas.
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
+source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 0%
+source-wordcount: '882'
+ht-degree: 66%
 
 ---
 
@@ -24,8 +24,8 @@ La consola Fragmentos de contenido está dedicada a administrar, buscar y crear 
 >
 >Actualmente, se puede acceder a los fragmentos de contenido mediante:
 >
->* this **Fragmentos de contenido** consola
->* el **Recursos** consola: consulte [Administración de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
+>* esta consola **Fragmentos de contenido**
+>* la consola **Recursos**: consulte [Administración de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
 
 
 >[!NOTE]
@@ -36,7 +36,9 @@ Se puede acceder directamente a la consola Fragmentos de contenido desde el nive
 
 ![Navegación global: consola de fragmentos de contenido](assets/cfc-global-navigation.png)
 
-Selección **Fragmentos de contenido** abrirá la consola en una pestaña nueva.
+## Estructura y gestión básicas de la consola {#basic-structure-handling-content-fragments-console}
+
+La selección **Fragmentos de contenido** abrirá la consola en una pestaña nueva.
 
 ![Consola Fragmentos de contenido: información general](assets/cfc-console-overview.png)
 
@@ -48,43 +50,107 @@ Aquí se pueden ver tres áreas principales:
 * El panel izquierdo
    * Aquí puede ocultar o mostrar el árbol de carpetas
    * Puede seleccionar una rama específica del árbol
-* Panel principal/derecho: desde aquí puede:
-   * Consulte la lista de todos los fragmentos de contenido en la rama seleccionada del árbol
-      * La ubicación se indica mediante las rutas de exploración; también se pueden usar para cambiar la ubicación
-      * Se mostrarán los fragmentos de contenido de la carpeta seleccionada y todas las carpetas secundarias
-         * Varios campos de información sobre un fragmento de contenido proporcionan vínculos; esto puede abrir el fragmento apropiado en el editor
+* Panel principal/derecho, desde aquí puede hacer lo siguiente:
+   * Consultar la lista de todos los fragmentos de contenido en la rama seleccionada del árbol:
+      * La ubicación se indica mediante las rutas de exploración; también se pueden usar para cambiar la ubicación.
+      * Se mostrarán los fragmentos de contenido de la carpeta seleccionada y todas las carpetas secundarias.:
+         * [Varios campos de información](#selectuse-available-columns) acerca de un fragmento de contenido para proporcionar vínculos; según el campo , pueden:
+            * Abra el fragmento correspondiente en el editor
+            * Mostrar información sobre referencias
+            * Mostrar información sobre las versiones de idioma del fragmento
+         * Puede [seleccione uno o varios fragmentos de contenido para mostrar las acciones disponibles](#actions-selected-content-fragment)
       * Puede seleccionar un encabezado de columna para ordenar la tabla según esa columna; volver a seleccionar para alternar entre ascendente y descendente
    * **[Crear](#creating-new-content-fragment)** un nuevo fragmento de contenido
-   * [Filtro](#filtering-fragments) los fragmentos de contenido de acuerdo con una selección de predicados y guarde el filtro para uso futuro
+   * [Filtrar](#filtering-fragments) los fragmentos de contenido de acuerdo con una selección de predicados y guardar el filtro para uso futuro
    * [Buscar](#searching-fragments) los fragmentos de contenido
-   * Personalice la vista de tabla para mostrar columnas de información seleccionadas
-   * Uso **Abrir en Assets** para abrir directamente la ubicación actual en la **Recursos** consola.
+   * [Personalice la vista de tabla para mostrar columnas de información seleccionadas](#selectuse-available-columns)
+   * Use **Abrir en Recursos** para abrir directamente la ubicación actual en la consola **Recursos**
 
       >[!NOTE]
       >
-      >La variable **Recursos** La consola se utiliza para acceder a recursos como imágenes, vídeos, etc.  Se puede acceder a esta consola:
+      >La consola **Recursos** se utiliza para acceder a recursos como imágenes, vídeos, etc.  Se puede acceder a esta consola:
       >
-      >* usando la variable **Abrir en Assets** vínculo (en la consola Fragmentos de contenido)
+      >* usando el vínculo **Abrir en Recursos** (en la consola Fragmentos de contenido)
       >* directamente desde el panel de navegación global
 
+
+## Acciones para un fragmento de contenido (seleccionado) {#actions-selected-content-fragment}
 
 Si se selecciona un fragmento específico, se abrirá una barra de herramientas centrada en las acciones disponibles para dicho fragmento. También puede seleccionar varios fragmentos: la selección de acciones se ajustará en consecuencia.
 
 ![Consola Fragmentos de contenido: barra de herramientas para un fragmento seleccionado](assets/cfc-fragment-toolbar.png)
 
+* **Abrir**
+* **Publicación** (y **Cancelar la publicación**)
+* **Copiar**
+* **Mover**
+* **Cambiar nombre**
+* **Eliminar**
+
+>[!NOTE]
+>
+>Acciones como Publicar, Cancelar la publicación, Eliminar, Mover, Cambiar el nombre, Copiar, activar un trabajo asincrónico. El progreso de ese trabajo se puede monitorizar a través de la interfaz de usuario de trabajos asincrónicos de AEM.
+
+## La información proporcionada sobre los fragmentos de contenido {#information-content-fragments}
+
+El panel principal/derecho (vista de tabla) de la consola proporciona una amplia gama de información sobre los fragmentos de contenido. Algunos elementos también proporcionan vínculos directos a otras acciones o información:
+
+* **Nombre**
+   * Proporciona un vínculo para abrir el fragmento en el editor.
+* **Modelo**
+   * Proporciona un vínculo para abrir el fragmento en el editor.
+* **Carpeta**
+   * Proporciona un vínculo para abrir la carpeta en la consola.
+Al pasar el ratón por encima del nombre de la carpeta, se mostrará la ruta JCR.
+* **Estado**
+   * Solo información
+* **Modificado**
+   * Solo información
+* **Modificado por**
+   * Solo información
+* **Publicado en**
+   * Solo información
+* **Publicado por**
+   * Solo información
+* **Referido por**
+
+   * Proporciona un vínculo que abre un cuadro de diálogo con todas las referencias principales de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas. Para abrir una referencia específica, haga clic en el botón **Título** en el cuadro de diálogo.
+
+      ![Consola Fragmentos de contenido: cuadro de diálogo Referencias](assets/cfc-console-references-dialog.png)
+
+* **Idioma**
+
+   * Indica la configuración regional del fragmento de contenido, junto con el número total de configuraciones regionales o copias de idioma asociadas al fragmento de contenido.
+
+      ![Consola Fragmentos de contenido: Indicador de idioma](assets/cfc-console-language-indicator.png)
+
+      * Pulse o haga clic en el recuento para abrir un cuadro de diálogo que muestre todas las copias de idioma. Para abrir una copia de idioma específica, haga clic en el botón **Título** en el cuadro de diálogo.
+
+         ![Consola Fragmentos de contenido: cuadro de diálogo Idioma](assets/cfc-console-languages-dialog.png)
+
+## Seleccionar las columnas disponibles {#select-available-columns}
+
+Al igual que con otras consolas, puede configurar las columnas que son visibles y están disponibles para la acción:
+
+![Consola Fragmentos de contenido: configuración de columna](assets/cfc-console-column-icon.png)
+
+Se mostrará una lista de columnas que puede ocultar o mostrar:
+
+![Consola Fragmentos de contenido: configuración de columna](assets/cfc-console-column-selection.png)
+
 ## Creación de un nuevo fragmento de contenido {#creating-new-content-fragment}
 
-Selección **Crear** abre la compacta **Nuevo fragmento de contenido** diálogo:
+La selección **Crear** abre el diálogo compacto **Nuevo fragmento de contenido**:
 
 ![Consola Fragmentos de contenido: Creación de un nuevo fragmento](assets/cfc-console-create.png)
 
 ## Filtrado de fragmentos {#filtering-fragments}
 
-El panel Filtro ofrece:
+El panel Filtro ofrece lo siguiente:
 
 * una selección de predicados que se pueden seleccionar y combinar
 * la oportunidad de **Guardar** su configuración
-* la opción recuperar un filtro de búsqueda guardado para reutilizarlo
+* la opción recuperar un filtro de búsqueda guardada para reutilizarlo
 
 ![Consola Fragmentos de contenido: filtrado](assets/cfc-console-filter.png)
 
