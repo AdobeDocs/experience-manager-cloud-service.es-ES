@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - Comunicaciones
 description: Combine datos automáticamente con plantillas XDP y PDF o genere resultados en los formatos PCL, ZPL y PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
+source-git-commit: 07b9118b8cfc27bc9e2bfa134fbb57c7ae2728ad
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 0%
+source-wordcount: '731'
+ht-degree: 1%
 
 ---
 
@@ -29,8 +29,8 @@ Una operación sincrónica es un proceso de generación de documentos de forma l
 
 * Genera un documento PDF a partir de una plantilla y combina los datos con ella.
 * Genere un documento PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) desde un archivo XDP o documento PDF.
-* Montaje de documentos de PDF
-* Desmontar documentos del PDF
+* Montar los documentos PDF
+* Desmontar los documentos PDF
 * Convertir un documento en documento compatible con el PDF/A
 * Validación de un documento compatible con el PDF/A
 
@@ -75,7 +75,7 @@ Una organización suele tener varias plantillas. Por ejemplo, una plantilla para
 
 ### Invocar una API
 
-La variable [Documentación de referencia de API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) proporciona información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios proporcionados por las API. La documentación de referencia de la API también proporciona un archivo de definición de API en formato .yaml. Puede descargar el archivo .yaml y cargarlo en postman para comprobar la funcionalidad de las API.
+La variable [Documentación de referencia de API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) proporciona información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios proporcionados por las API. La documentación de referencia de la API también proporciona un archivo de definición de API en formato .yaml. Puede descargar el archivo .yaml y cargarlo en postman para comprobar la funcionalidad de las API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
