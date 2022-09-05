@@ -1,43 +1,43 @@
 ---
-title: 'Fragmentos de contenido: navegador de configuración'
+title: 'Fragmentos de contenido: navegador de configuración (Recursos - Fragmentos de contenido)'
 description: Aprenda a habilitar ciertas funciones de fragmento de contenido en el navegador de configuración para aprovechar AEM potentes funciones de envío sin periféricos.
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 23%
+source-wordcount: '374'
+ht-degree: 78%
 
 ---
 
-# Fragmentos de contenido: navegador de configuración{#content-fragments-configuration-browser}
+# Fragmentos de contenido: explorador de configuración{#content-fragments-configuration-browser}
 
 Aprenda a habilitar ciertas funciones de fragmento de contenido en el navegador de configuración para aprovechar AEM potentes funciones de envío sin periféricos.
 
 ## Habilitación de la funcionalidad de fragmento de contenido para la instancia {#enable-content-fragment-functionality-instance}
 
-Antes de usar fragmentos de contenido, debe usar la variable **Explorador de configuración** para habilitar:
+Antes de usar fragmentos de contenido, debe usar el **Explorador de configuración** para habilitar lo siguiente:
 
-* **Modelos de fragmento de contenido** - obligatorio
+* **Modelos de fragmentos de contenido**: obligatorio
 * **Consultas persistentes de GraphQL** - opcional
 
 >[!CAUTION]
 >
->Si no habilita **Modelos de fragmento de contenido**:
+>Si no habilita **Modelos de fragmentos de contenido**:
 >
->* el **Crear** no estará disponible para crear nuevos modelos.
->* no podrá [seleccione la configuración Sitios para crear el punto final relacionado](/help/headless/graphql-api/graphql-endpoint.md).
+>* la opción **Crear** no estará disponible para crear nuevos modelos.
+>* no podrá [seleccionar la configuración de Sites para crear el punto de conexión relacionado](/help/headless/graphql-api/graphql-endpoint.md).
 
 
-Para habilitar la funcionalidad de fragmento de contenido, debe:
+Para habilitar la funcionalidad de fragmento de contenido, debe hacer lo siguiente:
 
-* Habilitar el uso de la funcionalidad de fragmento de contenido mediante el navegador de configuración
-* Aplique la configuración a la carpeta Assets
+* Habilitar el uso de la funcionalidad de fragmento de contenido mediante el Explorador de configuración
+* Aplicar la configuración a la carpeta de Assets
 
-### Habilitar la funcionalidad de fragmento de contenido en el navegador de configuración {#enable-content-fragment-functionality-in-configuration-browser}
+### Habilitación de la funcionalidad de fragmento de contenido en el Explorador de configuración {#enable-content-fragment-functionality-in-configuration-browser}
 
-Hasta [usar ciertas funciones de fragmento de contenido](#creating-a-content-fragment-model) you **must** primero, actívelos a través de la variable **Explorador de configuración**:
+Para [usar ciertas funcionalidades de fragmentos de contenido](#creating-a-content-fragment-model), primero **debe** activarlas a través del **Explorador de configuración**:
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Hasta [usar ciertas funciones de fragmento de contenido](#creating-a-content-fra
 >
 >[Subconfiguraciones](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (una configuración anidada en otra configuración) es totalmente compatible para su uso con fragmentos de contenido, modelos de fragmentos de contenido y consultas de GraphQL.
 >
->Sólo para tener en cuenta que:
+>Solo tenga en cuenta lo siguiente:
 >
 >
 >* Después de crear modelos en una subconfiguración, NO es posible mover o copiar el modelo a otra subconfiguración.
@@ -60,7 +60,7 @@ Hasta [usar ciertas funciones de fragmento de contenido](#creating-a-content-fra
 
 1. Vaya a **Herramientas**, **General**, luego abra el **Explorador de configuración**.
 
-1. Uso **Crear** para abrir el cuadro de diálogo, donde:
+1. Use **Crear** para abrir el cuadro de diálogo, donde:
 
    1. Especifique un **Título**.
    1. El **Nombre** se convertirá en el nombre de nodo en el repositorio.
@@ -73,7 +73,7 @@ Hasta [usar ciertas funciones de fragmento de contenido](#creating-a-content-fra
       ![Definir configuración](assets/cfm-conf-01.png)
 
 
-1. Select **Crear** para guardar la definición.
+1. Seleccione **Crear** para guardar la definición.
 
 <!-- 1. Select the location appropriate to your website. -->
 

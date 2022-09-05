@@ -1,41 +1,41 @@
 ---
-title: 'Fragmentos de contenido: Eliminar consideraciones'
-description: Revise estas consideraciones importantes antes de definir las políticas de eliminación de fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse cuidadosamente.
+title: 'Fragmentos de contenido: Eliminar consideraciones (Recursos: Fragmentos de contenido)'
+description: Revise estas consideraciones importantes antes de definir las políticas de eliminación de fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse detenidamente.
 feature: Content Fragments
 role: User
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 10%
+source-wordcount: '473'
+ht-degree: 98%
 
 ---
 
 # Fragmentos de contenido: Eliminar consideraciones {#content-fragments-delete-considerations}
 
-Revise estas consideraciones importantes antes de definir las políticas de eliminación de fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse cuidadosamente.
+Revise estas consideraciones importantes antes de definir las políticas de eliminación de fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse detenidamente.
 
 ## Permisos: Eliminar o no eliminar {#permissions-delete-or-not-delete}
 
-La capacidad para eliminar contenido es poderosa, pero potencialmente sensible, y muchas industrias necesitan restringir y controlar cómo se distribuyen estos privilegios.
+La capacidad para eliminar contenido es potente, pero potencialmente sensible, y muchas industrias necesitan restringir y controlar cómo se distribuyen estos privilegios.
 
 En relación con los permisos de eliminación, los fragmentos de contenido deben considerarse en dos niveles:
 
 1. **El fragmento de contenido como una sola entidad.**
 
-   * **Caso de uso**: Un usuario que necesita editar/actualizar un fragmento de contenido: **y eliminar un fragmento completo**.
-   * **Permisos**: El permiso Eliminar se puede asignar a través de Administración de usuarios o grupos. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **Caso de uso**: un usuario que necesita editar/actualizar un fragmento de contenido: **y eliminar un fragmento completo**.
+   * **Permisos**: el permiso Eliminar se puede asignar a través de Administración de usuarios o grupos. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-2. **Las varias subentidades que conforman un fragmento de contenido; por ejemplo, variaciones, subnodos.**
+2. **Las diversas subentidades que conforman un fragmento de contenido; por ejemplo, variaciones, subnodos.**
 
    La operación básica del editor de fragmentos de contenido requiere que se puedan eliminar estos subelementos transitorios. Por ejemplo, al manipular variaciones; también al editar metadatos o administrar contenido asociado.
 
-   * **Caso de uso**: Un usuario que necesita editar/actualizar un fragmento de contenido: **sin permitir eliminar un fragmento completo**.
-   * **Permisos**: Consulte [Permisos necesarios para la funcionalidad del editor únicamente](#permissions-required-for-editor-functionality-only).
+   * **Caso de uso**: un usuario que necesita editar/actualizar un fragmento de contenido: **sin permitir eliminar un fragmento completo**.
+   * **Permisos**: consulte [Permisos necesarios para la funcionalidad del editor únicamente](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
->Cuando un usuario no tiene permisos de eliminación, el editor de fragmentos de contenido funciona en *solo lectura* en el menú contextual. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>Cuando un usuario no tiene permisos de eliminación, el editor de fragmentos de contenido funciona en modo de *solo lectura*.<!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
@@ -61,13 +61,13 @@ Por ejemplo, una carpeta que contendrá todos los fragmentos de contenido, como:
 >
 >Configuración de permisos en `/content/dam` también es posible, ya que todos los fragmentos de contenido se almacenan aquí.
 >
->Sin embargo, esta acción aplica los mismos permisos de eliminación a *all* otros tipos de recursos también.
+>Sin embargo, esta acción se aplica a los mismos permisos de eliminación a *todos* los demás tipos de recursos también.
 
-Los permisos previos para permitir que un usuario o grupo específico edite o actualice un fragmento de contenido son:
+Los permisos previos para permitir que un usuario o grupo específico edite o actualice un fragmento de contenido son los siguientes:
 
 >[!NOTE]
 >
->Esta lista muestra todos los privilegios necesarios, no solo los privilegios de eliminación.
+>Esta lista muestra todos los privilegios necesarios, no solo los de eliminación.
 
 * Para los nodos o carpetas del fragmento de contenido:
 

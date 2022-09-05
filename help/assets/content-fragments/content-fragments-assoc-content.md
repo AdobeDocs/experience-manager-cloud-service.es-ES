@@ -1,13 +1,13 @@
 ---
-title: Contenido asociado
+title: Contenido asociado (Recursos - Fragmentos de contenido)
 description: Comprender cómo AEM función de contenido asociada proporciona la conexión para que los recursos se puedan utilizar opcionalmente con el fragmento cuando se añada a una página de contenido, añadiendo flexibilidad adicional a la entrega de contenido sin encabezado.
 feature: Content Fragments
 role: User
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 14%
+source-wordcount: '247'
+ht-degree: 58%
 
 ---
 
@@ -21,32 +21,32 @@ AEM función Contenido asociado proporciona la conexión para que los recursos s
 >
 >Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
 
-Para realizar la asociación, primero debe [añadir los recursos multimedia a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede:
+Para realizar la asociación, primero debe [agregar los recursos multimedia a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede hacer lo siguiente:
 
-1. Abra el fragmento y seleccione **Contenido asociado** en el panel lateral.
+1. Abrir el fragmento y seleccionar **Contenido asociado** en el panel lateral.
 
    ![Contenido asociado](assets/cfm-assoc-content-01.png)
 
 1. Dependiendo de si alguna colección ya se ha asociado o no, seleccione:
 
-   * **Asociar contenido** - esta será la primera colección asociada
-   * **Asociar colección** - las colecciones asociadas ya están configuradas
+   * **Asociar contenido**: esta será la primera colección asociada
+   * **Asociar colección**: las colecciones asociadas ya están configuradas
 
 1. Seleccione la colección requerida.
 
-   Si lo desea, puede añadir el fragmento a la colección seleccionada; esto ayuda al seguimiento.
+   Si lo desea, puede agregar el fragmento a la colección seleccionada; esto ayuda al seguimiento.
 
-   ![Seleccionar colección](assets/cfm-assoc-content-02.png)
+   ![Seleccionar la colección](assets/cfm-assoc-content-02.png)
 
-1. Confirmar (con **Select**). La colección se enumerará como asociada.
+1. Confirmar (con **Seleccionar**). La colección se enumerará como asociada.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
 ## Edición de contenido asociado {#editing-associated-content}
 
-Una vez asociada una colección, puede:
+Una vez asociada una colección, puede hacer lo siguiente:
 
-* **Eliminar** la asociación.
-* **Agregar recursos** a la colección.
+* **Quitar** la asociación.
+* **Agregar recursos** a una colección.
 * Seleccione un recurso para realizar más acciones.
 * Editar el recurso.
