@@ -2,7 +2,7 @@
 title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencia Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
+source-git-commit: 456b754fad3dc2d8f684f344b69d57d47b823b03
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 100%
@@ -313,7 +313,7 @@ Al editar un fragmento de experiencia, los bloques de creación disponibles se m
 Se pueden ver los detalles del fragmento:
 
 1. Vaya a la ubicación de los fragmentos de experiencias (no vaya más allá hacia las variaciones dentro del fragmento).
-Los detalles se muestran en todas las vistas de la consola de **fragmentos de experiencias**, con una **vista de lista** que incluye los detalles de una exportación a destino: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+Los detalles se muestran en todas las vistas de la consola de **fragmentos de experiencias**, con una **vista de lista**[ que incluye los detalles de una exportación a destino](/help/sites-cloud/integrating/integrating-adobe-target.md):
 
    ![Detalles del fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-15.png)
 
