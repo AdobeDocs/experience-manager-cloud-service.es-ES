@@ -3,9 +3,9 @@ title: Configuración del Cloud Service de Dynamic Media
 description: Obtenga información sobre cómo configurar Dynamic Media en Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 7a7a3de89d02ac34d40a59e87cc049652730a72d
+source-git-commit: 58aee2ad24b38fd8abc197961adda524832d2614
 workflow-type: tm+mt
-source-wordcount: '3566'
+source-wordcount: '3596'
 ht-degree: 3%
 
 ---
@@ -92,7 +92,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | Propiedad | Descripción |
    |---|---|
-   | Compañía | Nombre de la cuenta de Dynamic Media. Puede tener una cuenta de Dynamic Media en Experience Manager.<!-- CQDOC-19579 and CQDOC-19612 --><br>Consulte también [Configurar una cuenta de alias de empresa de Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md). |
+   | Compañía | Nombre de la cuenta de Dynamic Media.<br>**Importante**: Solo se admite una configuración de Dynamic Media en Cloud Services en una instancia de Experience Manager; no agregue más de una configuración. Varias configuraciones de Dynamic Media en una instancia de Experience Manager son _not_ compatible o recomendado por Adobe.<!-- CQDOC-19579 and CQDOC-19612 --><br>Consulte también [Configurar una cuenta de alias de empresa de Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md). |
    | Ruta de carpeta raíz de la empresa | Ruta de la carpeta raíz de su empresa. |
    | Publicación de recursos | Puede elegir entre las tres opciones siguientes:<br>**[!UICONTROL Inmediatamente ]**: Cuando se cargan recursos, el sistema los incorpora y proporciona la URL o la Incrustar instantáneamente. No es necesario que el usuario intervenga para publicar recursos.<br>**[!UICONTROL Al activar]** : Debe publicar el recurso explícitamente primero antes de proporcionar un vínculo de URL/incrustación.<br>**[!UICONTROL Publicación selectiva ]**- Los recursos se publican automáticamente solo para vista previa segura. También pueden publicarse explícitamente en el Experience Manager as a Cloud Service sin publicarse en DMS7 para su envío en el dominio público. En el futuro, esta opción pretende publicar recursos en un Experience Manager as a Cloud Service y publicar recursos en Dynamic Media, mutuamente excluyentes entre sí. Es decir, puede publicar recursos en DMS7 para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas. O bien, puede publicar recursos exclusivamente en un Experience Manager as a Cloud Service para la vista previa; esos mismos recursos no se publican en DMS7 para su envío en el dominio público. |
    | Servidor de previsualización segura | Permite especificar la ruta URL del servidor de vista previa de representaciones seguras. Es decir, una vez generadas las representaciones, el Experience Manager as a Cloud Service puede acceder y previsualizar de forma segura las representaciones remotas de Dynamic Media (no se devuelven binarios a la instancia as a Cloud Service del Experience Manager).<br>A menos que tenga una disposición especial para utilizar el servidor de su propia empresa o un servidor especial, Adobe recomienda que deje esta configuración como se ha especificado. |
