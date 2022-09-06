@@ -2,10 +2,10 @@
 title: Edición del contenido de una página
 description: Una vez creada la página, puede actualizarla según sus necesidades editando el contenido
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '2974'
-ht-degree: 100%
+source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
+workflow-type: tm+mt
+source-wordcount: '2992'
+ht-degree: 97%
 
 ---
 
@@ -76,7 +76,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
    ![Botón Selector de modo](/help/sites-cloud/authoring/assets/mode-selector.png)
 
-* **Vista previa**
+* **Previsualizar**
 
    Activa el [modo de vista previa](#preview-mode). Aquí se muestra la página tal y como aparecerá cuando se publique.
 
@@ -466,7 +466,7 @@ Una vez bloqueada, se actualiza la información de la vista de la consola y, al 
 
 >[!CAUTION]
 >
->El bloqueo de páginas se puede realizar al suplantar a un usuario. Sin embargo, una página bloqueada de este modo solo la puede desbloquear el usuario que ha suplantado a otro usuario o un usuario con privilegios de administrador.
+>El bloqueo de páginas se puede realizar al suplantar a un usuario. Sin embargo, una página bloqueada de este modo solo puede desbloquearse para el usuario que ha suplantado o para un usuario con derechos de administrador (un miembro AEM perfil IMS del administrador).
 >
 >Las páginas no se pueden bloquear al suplantar al usuario que ha bloqueado la página.
 <!--
@@ -483,7 +483,7 @@ El menú Información de página muestra la opción **Desbloquear** y el icono B
 
 >[!CAUTION]
 >
->El bloqueo de páginas se puede realizar al suplantar a un usuario. Sin embargo, una página bloqueada de este modo solo la puede desbloquear el usuario que ha suplantado a otro usuario o un usuario con privilegios de administrador.
+>El bloqueo de páginas se puede realizar al suplantar a un usuario. Sin embargo, una página bloqueada de este modo solo puede desbloquearse para el usuario que ha suplantado o para un usuario con derechos de administrador (un miembro AEM perfil IMS del administrador).
 >
 >Las páginas no se pueden bloquear al suplantar al usuario que ha bloqueado la página.
 <!--
