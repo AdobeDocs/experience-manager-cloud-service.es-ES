@@ -1,11 +1,11 @@
 ---
 title: Configuración de OSGi para Adobe Experience Manager as a Cloud Service
-description: 'Configuración de OSGi con valores secretos y valores específicos de entorno '
+description: Configuración de OSGi con valores secretos y valores específicos de entorno
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 339030fc5edd22f81f977046185b53649869cc83
 workflow-type: tm+mt
-source-wordcount: '3216'
+source-wordcount: '3285'
 ht-degree: 1%
 
 ---
@@ -295,6 +295,14 @@ Se recomienda escribir una secuencia de comandos bash simple que establezca las 
 Los valores de los secretos se leen a partir de archivos. Por lo tanto, para cada marcador de posición que utilice un secreto se debe crear un archivo de texto que contenga el valor secreto.
 
 Por ejemplo, si `$[secret:server_password]` se utiliza, un archivo de texto llamado **server_password** debe crearse. Todos estos archivos secretos deben almacenarse en el mismo directorio y en la propiedad framework `org.apache.felix.configadmin.plugin.interpolation.secretsdir` debe configurarse con ese directorio local.
+
+La variable `org.apache.felix.configadmin.plugin.interpolation.secretsdir` es una propiedad de marco de Sling; por lo tanto, esta propiedad no se establece en la consola felix (/system/console), sino que se establece en el archivo sling.properties que se utiliza cuando se inicia el sistema. Este archivo se puede encontrar en el subdirectorio /conf de la carpeta Jar/install extraída (crx-quickstart/conf).
+
+ejemplo: añada esta línea al final del archivo &#39;crx-quickstart/conf/sling.properties&#39; para configurar &#39;crx-quickstart/secretsdir&#39; como carpeta secreta:
+
+```
+org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secretsdir
+```
 
 ### Configuración de autor frente a publicación {#author-vs-publish-configuration}
 

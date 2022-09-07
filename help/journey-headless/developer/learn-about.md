@@ -2,10 +2,10 @@
 title: Obtenga Información Sobre El Desarrollo Sin Cabeza De CMS
 description: En esta parte del Recorrido para desarrolladores AEM sin encabezado, conozca la tecnología sin encabezado y por qué la utilizaría.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 2abceb1333877c41c61d1036ab82ec40058011fe
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender la entrega de contenido sin encabezado y por qué debería usarse. Después de leer, debe:
+Este documento le ayuda a comprender la entrega de contenido sin encabezado y por qué debería usarse. Después de leer, debería haber logrado lo siguiente:
 
 * Comprender los conceptos básicos y la terminología de la entrega de contenido sin encabezado
 * Comprender por qué y cuándo se requiere un proceso sin encabezado
