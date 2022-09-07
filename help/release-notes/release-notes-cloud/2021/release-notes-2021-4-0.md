@@ -1,8 +1,8 @@
 ---
-title: Notas de la versión 2021.4.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2021.4.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2021.4.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2021.4.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 8f4b504898b1332c21f3cb82ab9bbf663c9dc312
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 9%
@@ -11,7 +11,7 @@ ht-degree: 9%
 
 # Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión generales de la versión actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión generales de la versión actual (la más reciente) de [!DNL Adobe Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >Desde aquí puede navegar hasta las notas de versiones de versiones anteriores; por ejemplo, para los de 2020, 2021 y así sucesivamente.
@@ -138,7 +138,7 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
 * El extremo de comercio ahora se puede configurar mediante la interfaz de usuario de Cloud Manager
 
-### Corrección de errores {#bug-fixes-commerce}
+### Correcciones de errores {#bug-fixes-commerce}
 
 * El campo de categoría raíz no se mostraba en la pestaña de comercio de las propiedades de página de las páginas de categoría
 
@@ -173,7 +173,7 @@ La próxima versión está planificada para el 06 de mayo de 2021.
 
 * Los paquetes OSGi proporcionados por los proyectos de Eclipse ahora se excluyen de la regla `CQBP-84--dependencies`.
 
-### Corrección de errores {#bug-fixes-cm-april}
+### Correcciones de errores {#bug-fixes-cm-april}
 
 * Al editar la página de auditoría de experiencias de una canalización, una ruta de entrada que comience con una barra diagonal `( / )` ya no hará que el paso se bloquee en estado pendiente.
 
@@ -189,7 +189,7 @@ La próxima versión está planificada para el 06 de mayo de 2021.
 
 La fecha de versión de Best Practices Analyzer v2.1.12 es el 12 de abril de 2021.
 
-### Corrección de errores {#bug-fixes-bpa-april}
+### Correcciones de errores {#bug-fixes-bpa-april}
 
-* Se vieron filas duplicadas en el BPA registrado. Esto se ha solucionado.
-* La interfaz de usuario de BPA de AEM versión 6.4.2 generaba un error de JS que desactivaba el botón Generar informe . Esto se ha solucionado
+* Se vieron filas duplicadas en el BPA registrado. Esto se ha corregido.
+* La interfaz de usuario de BPA de AEM versión 6.4.2 generaba un error de JS que desactivaba el botón Generar informe . Esto se ha corregido.
