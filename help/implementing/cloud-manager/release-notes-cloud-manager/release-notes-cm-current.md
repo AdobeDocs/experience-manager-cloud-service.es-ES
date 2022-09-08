@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión para Cloud Manager 2022.8.0 en Adobe Experience Manager as a Cloud Service
-description: Estas son las notas de la versión de Cloud Manager 2022.8.0 en AEM as a Cloud Service.
+title: Notas de la versión para Cloud Manager 2022.9.0 en Adobe Experience Manager as a Cloud Service
+description: Estas son las notas de la versión de Cloud Manager 2022.9.0 en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 0b453290cd0e7dc5ec319e8ddbfa085f109717df
+source-git-commit: f7f4f1c81b1dd611b723514b8c06aad6909a73c1
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 7%
+source-wordcount: '212'
+ht-degree: 2%
 
 ---
 
 
-# Notas de la versión para Cloud Manager 2022.8.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión para Cloud Manager 2022.9.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta las notas de la versión de Cloud Manager 2022.8.0 en AEM as a Cloud Service.
+Esta página documenta las notas de la versión de Cloud Manager 2022.9.0 en AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,16 +21,16 @@ Esta página documenta las notas de la versión de Cloud Manager 2022.8.0 en AEM
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de Cloud Manager 2022.8.0 en AEM as a Cloud Service es el 11 de agosto de 2022. La próxima versión está prevista para el 9 de septiembre de 2022.
+La fecha de la versión de Cloud Manager 2022.9.0 en AEM as a Cloud Service es el 8 de septiembre de 2022. La próxima versión está prevista para el 6 de octubre de 2022.
 
 ## Novedades {#what-is-new}
 
-* Hay una experiencia de interfaz de usuario actualizada en la [añadir flujo de trabajo de entorno.](/help/implementing/cloud-manager/manage-environments.md)
-* [El Tipo De Archivo Del Proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) incluido en Cloud Manager se ha actualizado a la versión 37.
+* AEM guías ahora se pueden configurar de forma autoservicio en programas de espacio aislado.
+* Los clientes que no tengan ninguna función de Cloud Manager no podrán acceder a los detalles del programa. Sin embargo, pueden navegar a los puntos finales de Autor desde las páginas de aterrizaje de Cloud Manager.
+* Los clientes pueden configurar **Incidente y notificación dinámica** grupos a los que desee escuchar desde el Adobe sobre incidentes o recomendaciones relacionados con su aplicación AEMaaCS.
+* Agregar la asequibilidad del programa en la interfaz de usuario proporcionará información del objeto de forma coherente cuando esté deshabilitada por motivos relacionados con permisos o autorizaciones.
 
 ## Correcciones de errores {#bug-fixes}
 
-* Se ha corregido un caso en el que los usuarios de Nueva relación no se creaban ni eliminaban en la interfaz de usuario de Cloud Manager.
-* Algunos casos de errores poco frecuentes de creación de repositorios se han vuelto más resistentes.
-* Los errores poco frecuentes de configuración de la organización de VSTS ahora se reducen debido a los reintentos introducidos.
-* La validación mejorada durante la creación de la subcuenta de New Relic ahora evita ciertos errores.
+* El flujo de trabajo Añadir entorno incluye validaciones adicionales para garantizar un resultado satisfactorio.
+* Se han mejorado los comentarios de los clientes relacionados con la creación de aplicaciones AEM clientes cuando maven enfrenta problemas de conectividad con repos privados.
