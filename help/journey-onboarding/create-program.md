@@ -2,13 +2,13 @@
 title: Crear un programa
 description: Aprenda a utilizar Cloud Manager para crear su primer programa.
 role: Admin, User, Developer
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
+source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 2%
+source-wordcount: '648'
+ht-degree: 4%
 
 ---
-
 
 # Crear un programa {#create-program}
 
@@ -38,6 +38,10 @@ Existen dos tipos diferentes de programas:
 * A **programa de simulación de pruebas** normalmente se crea para servir los propósitos de formación, ejecución de demostraciones, habilitación, POCs o documentación.
 
 Dado que sirven para diferentes propósitos, los diferentes entornos tienen diferentes opciones. Sin embargo, el proceso de creación es similar. Para este recorrido de integración crearemos un entorno de entorno limitado.
+
+>[!NOTE]
+>
+>De forma predeterminada, un usuario con acceso a un entorno AEM también tendrá la función de usuario de Cloud >Manager. Esta función por sí sola no es suficiente para dar al usuario acceso a la vista de detalles del programa. Un usuario de este tipo que solo tenga la función de usuario de Cloud Manager puede navegar mediante las opciones del menú de programa a la URL de creación del entorno de AEM (si existen entornos). Estos usuarios deben ponerse en contacto con su administrador si desean obtener acceso a nivel de programa.
 
 ## Creación de un programa de zona protegida {#create-sandbox}
 
