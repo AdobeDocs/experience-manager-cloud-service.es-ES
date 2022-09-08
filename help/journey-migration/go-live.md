@@ -2,9 +2,9 @@
 title: Go-Live
 description: Obtenga información sobre cómo realizar la migración una vez que el código y el contenido estén listos para la nube
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
+source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1729'
 ht-degree: 1%
 
 ---
@@ -153,6 +153,7 @@ Revise esta lista de actividades para asegurarse de que realiza una migración s
       * Si tiene un TTL muy alto, las actualizaciones del registro DNS tardarán más en propagarse.
 * Ejecute pruebas de rendimiento y seguridad que cumplan con los requisitos y objetivos de su negocio.
 * Realice un corte y asegúrese de que el lanzamiento real se realiza sin ninguna implementación nueva o actualización de contenido.
+* Crear grupos de notificaciones de usuarios Admin Console. Consulte [Grupos de usuarios para notificaciones](/help/journey-onboarding/user-groups.md)
 
 Siempre puede hacer referencia a la lista en caso de que necesite volver a calibrar las tareas mientras realiza la migración.
 
