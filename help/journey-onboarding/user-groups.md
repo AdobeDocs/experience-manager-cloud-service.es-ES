@@ -3,7 +3,7 @@ title: Grupos de usuarios para notificaciones
 description: Obtenga información sobre cómo crear un grupo de usuarios en el Admin Console para administrar la recepción de notificaciones de correo electrónico importantes.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: a663e21d100953f87c012a1d7962fb0e88e6a7f2
+source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -49,17 +49,17 @@ Para configurar correctamente la recepción de notificaciones, deberá crear dos
 
    ![Crear grupo de usuarios](assets/cloud_manager_profiles.png)
 
-1. Haga clic en Nuevo perfil e introduzca los siguientes detalles:
+1. Haga clic en **Nuevo perfil** e introduzca los siguientes detalles:
 
-* Nombre del perfil de producto: Notificación de incidentes: Cloud Service
-* Nombre para mostrar: Notificación de incidentes: Cloud Service
-* Descripción: Perfil de Cloud Manager para los usuarios que recibirán notificaciones durante un incidente o cuando el Adobe haya identificado un posible problema de disponibilidad con su entorno as a Cloud Service AEM.
+   * Nombre del perfil de producto: Notificación de incidentes: Cloud Service
+   * Nombre para mostrar: Notificación de incidentes: Cloud Service
+   * Descripción: Perfil de Cloud Manager para los usuarios que recibirán notificaciones durante un incidente o cuando el Adobe haya identificado un posible problema de disponibilidad con su entorno as a Cloud Service AEM.
 
-1. Haga clic en Guardar y repita el paso 4 con los siguientes detalles:
+1. Haga clic en **Guardar** y repita el paso 5 con los siguientes detalles:
 
-* Nombre del perfil de producto: Notificación dinámica: Cloud Service
-* Nombre para mostrar: Notificación dinámica: Cloud Service
-* Descripción: Perfil de Cloud Manager para los usuarios que recibirán notificaciones cuando un miembro del equipo de asistencia de Adobe desee proporcionar orientación sobre una posible optimización o recomendación relacionada con la configuración de entorno as a Cloud Service de su AEM.
+   * Nombre del perfil de producto: Notificación dinámica: Cloud Service
+   * Nombre para mostrar: Notificación dinámica: Cloud Service
+   * Descripción: Perfil de Cloud Manager para los usuarios que recibirán notificaciones cuando un miembro del equipo de asistencia de Adobe desee proporcionar orientación sobre una posible optimización o recomendación relacionada con la configuración de entorno as a Cloud Service de su AEM.
 
 >[!NOTE]
 >
@@ -83,10 +83,10 @@ Ahora que se han creado los grupos, debe asignar los usuarios adecuados. Puede h
 
 ![Usuarios](assets/cloud_manager_add_user.png)
 
-1. En el cuadro de diálogo Agregar usuarios a su equipo, introduzca el ID de correo electrónico del usuario que desea agregar.
+1. En el **Agregar usuarios a su equipo** , introduzca el ID de correo electrónico del usuario que desea agregar.
 
-* Si el Federated ID para los integrantes del equipo aún no se ha configurado, seleccione Adobe ID para el tipo de ID.
-* Si el usuario ya existe, consulte el paso 7.
+   * Si el Federated ID para los integrantes del equipo aún no se ha configurado, seleccione Adobe ID para el tipo de ID.
+   * Si el usuario ya existe, consulte el paso 9.
 
 1. Haga clic en el botón más debajo de la etiqueta **Seleccionar productos** encabezado para comenzar la selección de productos y seleccionar **Adobe Experience Manager as a Cloud Service** y asigne **Notificación de incidentes: Cloud Service** o **Notificación dinámica: Cloud Service**, o ambas al usuario.
 
@@ -96,7 +96,7 @@ Ahora que se han creado los grupos, debe asignar los usuarios adecuados. Puede h
 
 1. En caso de que el usuario ya exista, busque el nombre del usuario y:
 
-* Haga clic en el nombre del usuario.
-* En el **Productos** , haga clic en **Editar**.
-* Haga clic en el botón Lápiz en el botón **Seleccionar productos** encabezado para comenzar la selección de productos y seleccionar **Adobe Experience Manager as a Cloud Service** y asigne **Notificación de incidentes: Cloud Service** o **Notificación dinámica: Cloud Service**, o ambas al usuario.
-* Haga clic en **Guardar** y se envía un correo electrónico de bienvenida al usuario que ha añadido. El usuario invitado recibirá ahora las notificaciones.
+   * Haga clic en el nombre del usuario.
+   * En el **Productos** , haga clic en **Editar**.
+   * Haga clic en el botón Lápiz en el botón **Seleccionar productos** encabezado para comenzar la selección de productos y seleccionar **Adobe Experience Manager as a Cloud Service** y asigne **Notificación de incidentes: Cloud Service** o **Notificación dinámica: Cloud Service**, o ambas al usuario.
+   * Haga clic en **Guardar** y se envía un correo electrónico de bienvenida al usuario que ha añadido. El usuario invitado recibirá ahora las notificaciones.
