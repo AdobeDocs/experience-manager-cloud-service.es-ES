@@ -5,7 +5,7 @@ exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
 source-wordcount: '1886'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Se activa una acción de envío cuando un usuario hace clic en el **[!UICONTROL Submit]** en un formulario adaptable. Forms adaptable proporciona algunas acciones de envío listas para usar. Las acciones de envío disponibles de fábrica son:
 
-* [Enviar al extremo REST](#submit-to-rest-endpoint)
+* [Enviar al punto final REST](#submit-to-rest-endpoint)
 * [Enviar mensaje de correo electrónico](#send-email)
 * [Enviar mediante modelo de datos de formulario](#submit-using-form-data-model)
 * [Invocar un flujo de trabajo AEM](#invoke-an-aem-workflow)
@@ -50,7 +50,7 @@ Puede configurar una acción de envío en la variable **[!UICONTROL Envío]** de
 
 
 
-## Enviar al extremo REST {#submit-to-rest-endpoint}
+## Enviar al punto final REST {#submit-to-rest-endpoint}
 
 Utilice la variable **[!UICONTROL Enviar a extremo REST]** acción para publicar los datos enviados en una URL de reposo. La URL puede ser de un servidor interno (el servidor en el que se representa el formulario) o externo.
 

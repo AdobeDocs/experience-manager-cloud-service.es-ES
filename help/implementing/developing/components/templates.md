@@ -5,7 +5,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -115,7 +115,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
 >[!NOTE]
 >
->Las plantillas son herramientas útiles para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden sobrecargar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
+>Las plantillas son herramientas útiles para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden saturar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
 >
 >Adobe no recomienda tener más de 1000 plantillas debido a posibles impactos en el rendimiento.
 
@@ -233,7 +233,7 @@ La siguiente tabla detalla los permisos necesarios para la edición de plantilla
 <table>
  <tbody>
   <tr>
-   <th>Ruta</th>
+   <th>Ruta </th>
    <th>Función/Grupo</th>
    <th>Permisos<br /> </th>
    <th>Descripción</th>

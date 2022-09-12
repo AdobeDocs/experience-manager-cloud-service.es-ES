@@ -5,7 +5,7 @@ exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
 workflow-type: tm+mt
 source-wordcount: '1444'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ La incorporación de un nuevo proyecto requiere la inclusión en el archivo de p
 
 ![Diagrama del flujo de trabajo](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-El repositorio de Git para cada se configura con la variable [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) y, por lo tanto, sigue las prácticas recomendadas para configurar AEM proyectos. La única excepción es la configuración de Dispatcher que se realiza en el repositorio de Git compartido como se describe más arriba.
+El repositorio de Git para cada se configura con la variable [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) y, por lo tanto, sigue las prácticas recomendadas para configurar AEM proyectos. La única excepción es la configuración de Dispatcher que se realiza en el repositorio de Git compartido como se describe más arriba.
 
 Cada equipo utiliza un flujo de trabajo de Git simplificado con dos ramas + N, siguiendo el modelo de flujo de Git:
 

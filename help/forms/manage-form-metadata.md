@@ -1,5 +1,5 @@
 ---
-title: Administrar metadatos
+title: Administración de metadatos
 seo-title: Manage [!DNL AEM Forms] metadata
 description: Los metadatos facilitan la categorización y organización de los recursos, y ayudan a los usuarios que buscan un recurso específico.
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
@@ -7,7 +7,7 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ Los metadatos facilitan la categorización y organización de los recursos, y ay
 
 <!-- If you're a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you're using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
-## Metadatos de [!DNL AEM Forms] {#metadata-in-aem-forms}
+## Metadatos en [!DNL AEM Forms] {#metadata-in-aem-forms}
 
 En [!DNL AEM Forms], la lista de propiedades de metadatos asociadas a un recurso depende de su tipo. Además, si agrega cualquier propiedad de metadatos personalizada, se agrega a todos los recursos del tipo en el que se agregaron los metadatos personalizados.
 
@@ -112,7 +112,7 @@ A continuación se ofrece una extensa lista de propiedades de metadatos admitida
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Dirección URL de envío</td> 
+   <td>URL de envío</td> 
    <td><p>Plantilla de formulario</p> <p>formulario en PDF</p> </td> 
    <td><p>Para configurar una dirección URL especificada por el usuario para enviar datos de formulario a un servlet.</p> <p>La dirección URL de envío se puede configurar utilizando cualquiera de los métodos siguientes, enumerados por orden de prioridad:</p> 
     <ul> 

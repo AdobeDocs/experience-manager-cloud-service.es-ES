@@ -1,7 +1,8 @@
 ---
 title: Configurar restricciones de carga de recursos
-description: 'Configure Recursos Adobe Experience Manager para restringir el tipo de recursos que los usuarios pueden cargar en función del tipo MIME. Ayuda a evitar cargas accidentales de formatos no deseados y archivos malintencionados. '
-source-git-commit: 3be29e4f76b53b4be7815e50ec42c627fec84b68
+description: Configure Recursos Adobe Experience Manager para restringir el tipo de recursos que los usuarios pueden cargar en función del tipo MIME. Ayuda a evitar cargas accidentales de formatos no deseados y archivos malintencionados.
+exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 1%
@@ -49,7 +50,3 @@ Para agregar formatos de imagen específicos a los tipos MIME permitidos y restr
 ![Restricciones de recursos](assets/asset-restrictions.png)
 
 Según la configuración mostrada en la imagen, puede cargar imágenes en los formatos .JPG, .PNG y .GIF a Experience Manager Assets.
-
-
-
-

@@ -197,7 +197,7 @@ Puede realizar varias operaciones en los fragmentos de formulario adaptables uti
    <td><p>Descarga el fragmento seleccionado.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Vista previa</p> </td>
+   <td><p>Previsualizar</p> </td>
    <td><p>Proporciona opciones para obtener una vista previa del fragmento como HTML o una vista previa personalizada mediante la combinación de datos de un archivo XML con el fragmento. <!-- For more information, see <a href="previewing-forms.md" target="_blank">Previewing a form</a>.<br /> <br /> --></p> </td>
   </tr>
   <tr>

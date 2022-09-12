@@ -26,7 +26,7 @@ La validación de una transferencia de contenido es una función opcional. La ac
 1. Utilice el botón de icono de lápiz para editar sus valores de configuración
 1. Active la variable **Habilitar la validación de migración durante la extracción** configuración y, a continuación, pulse **Guardar**:
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
 Con esta configuración habilitada, y el entorno de AEM Cloud Service de destino que ejecute una versión compatible, la validación de la migración se producirá durante todas las extracciones y entregas posteriores.
 
@@ -44,11 +44,11 @@ Para ver una ilustración gráfica de esto, consulte los ejemplos siguientes:
 
 * **Extracción (sobrescritura)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **Ingesta (Borrar)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **Notas**
 
@@ -58,11 +58,11 @@ Para ver una ilustración gráfica de esto, consulte los ejemplos siguientes:
 
 * **Extracción**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **Ingesta**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **Notas**
 
@@ -130,7 +130,7 @@ El ejemplo de error anterior se logró ejecutando una ingesta y luego ejecutando
 Además de incluirse en el registro de ingesta, también se puede acceder al informe de validación desde el **Trabajos de Ingesta** interfaz de usuario en Cloud Acceleration Manager. Para ello, haga clic en los tres puntos (**...**) y haga clic en **Informe de validación** en la lista desplegable para ver el informe de validación.
 
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
 ## Solución de problemas {#troubleshooting}
 

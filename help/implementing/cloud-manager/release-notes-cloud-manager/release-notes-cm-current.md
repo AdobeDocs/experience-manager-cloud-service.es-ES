@@ -3,9 +3,9 @@ title: Notas de la versión para Cloud Manager 2022.9.0 en Adobe Experience Mana
 description: Estas son las notas de la versión de Cloud Manager 2022.9.0 en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4c04ab85f8760b9f72f7540b991edc7691995f66
+source-git-commit: f7f4f1c81b1dd611b723514b8c06aad6909a73c1
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '212'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ La fecha de la versión de Cloud Manager 2022.9.0 en AEM as a Cloud Service es e
 
 * AEM guías ahora se pueden configurar de forma autoservicio en programas de espacio aislado.
 * Los clientes que no tengan ninguna función de Cloud Manager no podrán acceder a los detalles del programa. Sin embargo, pueden navegar a los puntos finales de Autor desde las páginas de aterrizaje de Cloud Manager.
-* Los clientes pueden configurar **Incidente y notificación dinámica** grupos a los que desee escuchar desde el Adobe sobre incidentes o recomendaciones relacionados con su aplicación AEMaaCS. Consulte [Grupo de usuarios para notificaciones](/help/journey-onboarding/user-groups.md) para obtener más información.
+* Los clientes pueden configurar **Incidente y notificación dinámica** grupos a los que desee escuchar desde el Adobe sobre incidentes o recomendaciones relacionados con su aplicación AEMaaCS.
 * Agregar la asequibilidad del programa en la interfaz de usuario proporcionará información del objeto de forma coherente cuando esté deshabilitada por motivos relacionados con permisos o autorizaciones.
 
 ## Correcciones de errores {#bug-fixes}

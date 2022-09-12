@@ -1,11 +1,11 @@
 ---
-title: '"[!DNL AEM Forms] Notas de la versión as a Cloud Service"'
-description: '"[!DNL AEM Forms] Notas de la versión as a Cloud Service"'
+title: "[!DNL AEM Forms] Notas de la versión as a Cloud Service"
+description: "[!DNL AEM Forms] Notas de la versión as a Cloud Service"
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 17%
+ht-degree: 19%
 
 ---
 
@@ -64,7 +64,7 @@ Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa b
 
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](aem-forms-cloud-service-communications.md) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](aem-forms-cloud-service-communications.md) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    - Generar documentos rellenando archivos de plantilla con datos XML.
    - Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    - Genere archivos de PDF de impresión desde un PDF de formularios XFA y un formulario de Adobe Acrobat.
@@ -114,7 +114,7 @@ Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa b
    - Habilite la funcionalidad de guardar y reanudar de Forms Portal y almacene borradores de formularios adaptables en un repositorio de datos administrado por el cliente.
    - Almacene datos de flujos de trabajo AEM en proceso (AEM datos de variables de flujo de trabajo) que contengan datos personales confidenciales (SPD) en un repositorio administrado por el cliente.
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](aem-forms-cloud-service-communications.md) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](aem-forms-cloud-service-communications.md) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    - Generar documentos rellenando archivos de plantilla con datos XML.
    - Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    - Genere archivos de PDF de impresión desde un PDF de formularios XFA y un formulario de Adobe Acrobat.
@@ -146,7 +146,7 @@ Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa b
 
 ### Función beta de [!DNL Forms] {#july-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](aem-forms-cloud-service-communications.md) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](aem-forms-cloud-service-communications.md) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    - Generar documentos rellenando archivos de plantilla con datos XML.
    - Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    - Genere archivos de PDF de impresión desde un PDF de formularios XFA y un formulario de Adobe Acrobat.
@@ -162,7 +162,7 @@ Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa b
 
 ### Función beta de [!DNL Forms] {#june-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: Las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos de impresión en varios formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: Las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos de impresión en varios formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
 
    - Genere documentos de formulario finales rellenando archivos de plantilla con datos XML.
    - Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.

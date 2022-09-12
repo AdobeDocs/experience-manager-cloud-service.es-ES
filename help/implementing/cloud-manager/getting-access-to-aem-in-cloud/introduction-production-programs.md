@@ -1,5 +1,5 @@
 ---
-title: 'Introducción a los programas de producción '
+title: Introducción a los programas de producción
 description: Conozca qué son los programas de producción y sugerencias para configurar los suyos.
 exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 source-git-commit: a6152a1529b5c70bcf056857204e7ff97fc614e4

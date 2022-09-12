@@ -1,11 +1,11 @@
 ---
 title: Exportador JSON para servicios de contenido
-description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío de contenido desde o hacia AEM más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web AEM tradicionales, utilizando métodos estandarizados que cualquier cliente puede consumir.
+description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido desde o hacia AEM, más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web de AEM tradicionales, mediante métodos estandarizados que cualquier cliente puede consumir.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 12%
+ht-degree: 31%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío de contenido desde o hacia AEM fuera del foco de las páginas web.
 
-Proporcionan la entrega de contenido a canales que no son páginas web AEM tradicionales, utilizando métodos estandarizados que cualquier cliente puede consumir. Estos canales pueden incluir:
+Proporcionan la entrega de contenido a canales que no son páginas web de AEM tradicionales, mediante métodos estandarizados que cualquier cliente puede consumir. Estos canales pueden incluir lo siguiente:
 
 * Aplicaciones de una sola página
 * Aplicaciones móviles nativas

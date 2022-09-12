@@ -20,7 +20,7 @@ En combinación con esto, también hay un conjunto de opciones predefinidas para
 Juntos, estos elementos pretenden ayudarle a localizar su contenido de forma rápida y sencilla desde:
 
 * [Buscar y filtrar](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [Selector de raíl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* [Selector de carril](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 * el [Navegador de recursos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (al editar páginas)
 
 >[!NOTE]
@@ -268,7 +268,7 @@ Los siguientes predicados están disponibles, según la configuración:
     </ul> </td>
   </tr>
   <tr>
-   <td>Propiedad Options</td>
+   <td>Opciones Propiedad</td>
    <td>Busque una o varias propiedades de la opción .</td>
    <td>
     <ul>
@@ -292,7 +292,7 @@ Los siguientes predicados están disponibles, según la configuración:
     </ul> </td>
   </tr>
   <tr>
-   <td>Ruta</td>
+   <td>Ruta </td>
    <td>Filtre según la ruta específica. Se pueden especificar varias rutas como opciones.</td>
    <td>
     <ul>
@@ -702,7 +702,7 @@ En la tabla siguiente se enumeran los permisos necesarios para realizar acciones
    <td>Permisos de lectura, escritura y eliminación en <code>/apps</code> node</td>
   </tr>
   <tr>
-   <td>Vista previa</td>
+   <td>Previsualizar</td>
    <td>Permisos de lectura, escritura y eliminación en <code>/var/dam/content</code> nodo .<br /> Permisos de lectura y escritura en la variable <code>/apps</code> nodo .</td>
   </tr>
  </tbody>

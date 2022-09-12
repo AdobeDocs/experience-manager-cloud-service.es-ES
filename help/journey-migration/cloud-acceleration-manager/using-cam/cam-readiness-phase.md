@@ -22,11 +22,11 @@ Siga los pasos a continuación para ir a la fase de preparación:
 
 1. Haga clic en la tarjeta del proyecto para abrir la página de aterrizaje del proyecto.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
 1. Vaya a la **Preparación** como se muestra en la figura siguiente.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
    >Consulte Creación y administración de un proyecto en Cloud Acceleration Manager para obtener más información.
@@ -37,7 +37,7 @@ Siga los pasos a continuación para utilizar la tarjeta de Análisis de práctic
 
 1. Haga clic en el **Consulte** del **Análisis de prácticas recomendadas** tarjeta.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
 1. Siga estos pasos para descargar el Analizador de prácticas recomendadas (BPA).
 
@@ -53,14 +53,14 @@ Siga los pasos a continuación para utilizar la tarjeta de Análisis de práctic
 
 1. Haga clic en **Cargar nuevo informe** para cargar el informe BPA en CAM.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3.png)
 
    >[!IMPORTANT]
    >El informe no se puede cargar si se encuentra en el modo Incognito del explorador.
 
 1. Una vez que haya cargado un nuevo informe, verá el informe Análisis de prácticas recomendadas .
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 1. Revise y explore el tablero de Análisis de prácticas recomendadas en CAM. Consulte la sección siguiente [Revisión del informe de Análisis de prácticas recomendadas](#analysis-report) para obtener más información.
 
@@ -75,7 +75,7 @@ Complete los siguientes pasos:
 
 1. Haga clic en **Vista previa de impresión** como se muestra a continuación.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
 
 1. Haga clic en **Vista previa de impresión** abre una nueva ficha con el informe mostrado en una vista previa imprimible. Haga clic en **Imprimir** para imprimir el informe en formato de PDF.
 
@@ -84,7 +84,7 @@ Complete los siguientes pasos:
    >* Si se utiliza el botón de impresión del navegador, se imprimirá una sola página.
 
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Uso de Ver línea de tendencia {#trendline-view-cam}
 
@@ -97,22 +97,22 @@ Siga los pasos a continuación para ver los informes desde la opción de línea 
 
 1. Vaya al proyecto y haga clic en **Consulte** de la variable **Análisis de prácticas recomendadas** en el **Preparación** fase.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Haga clic en el **...** para mostrar la lista desplegable.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
    >El informe mostrado es siempre el informe que tiene la última fecha del informe.
 
 1. Haga clic en **Ver línea de tendencia**, como se muestra en la figura siguiente.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
 1. Haga clic en **Ver línea de tendencia** abre la vista de línea de tendencia del informe, como se muestra en la figura siguiente.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
@@ -124,14 +124,14 @@ Siga los pasos a continuación para ver los informes desde la opción de línea 
 
    >
    >Puede añadir o cambiar la vista gráfica a través de la lista desplegable, como se muestra en la figura siguiente:
-   >![image](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
+   >![imagen](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### Revisión del informe de Análisis de prácticas recomendadas {#analysis-report}
 
 Explore las siguientes tarjetas disponibles en la página Informe de análisis de prácticas recomendadas :
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+![imagen](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > Con cada tarjeta, tiene la capacidad de:
@@ -144,21 +144,21 @@ Explore las siguientes tarjetas disponibles en la página Informe de análisis d
 
 La variable **Propiedades del informe** tarjeta proporciona información sobre las propiedades del informe, como la fecha, duración, filtros, fecha de carga y detalles de Adobe Experience Manager (AEM).
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
+![imagen](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Información general del informe {#report-overview}
 
 Esta **Información general del informe** tarjeta proporciona los resultados del informe y los niveles de gravedad que se aplican al evaluar la preparación para pasar a AEM as a Cloud Service, como se muestra en la figura siguiente.
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
+![imagen](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
 Al hacer clic en este informe, se abre la **Informe** pestaña .
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
+![imagen](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
 Puede filtrar el informe en función de su importancia, subtipo o recuento.
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
+![imagen](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
 >Consulte [Interpretación del informe de Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) para obtener más información sobre las categorías de hallazgos y los niveles de importancia.
@@ -183,7 +183,7 @@ Puede revisar la siguiente información desde esta pestaña:
 * Evaluación
 * Consideraciones sobre la migración de contenido
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Uso de la tarjeta de planificación y configuración {#planning-setup}
 
@@ -191,11 +191,11 @@ Siga esta sección para explorar la tarjeta de actividad Planificación y config
 
 1. Haga clic en el **Ver** del **Planificación Y Configuración** tarjeta. Esta tarjeta proporciona todo el contenido relevante que le ayudará a planificar y configurar su migración AEM.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. Un carrusel de contenido muestra toda la información relevante para esta fase del recorrido de migración.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ### Eliminación de un informe de análisis de prácticas recomendadas {#delete-trendline}
 
@@ -206,23 +206,23 @@ Siga los pasos a continuación para eliminar un informe de la vista Línea de te
 
 1. Vaya al proyecto y haga clic en **Consulte** de la variable **Análisis de prácticas recomendadas** en el **Preparación** fase.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Haga clic en el **...** para mostrar la lista desplegable.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
 1. Haga clic en **Ver línea de tendencia**, como se muestra en la figura siguiente.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
 1. Haga clic en el icono Eliminar de la **Informe de línea de tendencia** en el Navegador.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Haga clic en **Eliminar** para confirmar la eliminación.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## Siguientes pasos {#whats-next}
 

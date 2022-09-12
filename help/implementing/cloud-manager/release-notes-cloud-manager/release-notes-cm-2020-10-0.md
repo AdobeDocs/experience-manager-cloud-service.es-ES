@@ -34,7 +34,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.10.0 es el 
 Consulte [Entorno de visualización](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obtener más información.
 
 
-### Corrección de errores {#bug-fixes-cloud-manager}
+### Correcciones de errores {#bug-fixes-cloud-manager}
 
 * Antes de que se crearan completamente los entornos, el vínculo de Cloud Manager a la consola de desarrollador no se activaba correctamente.
 

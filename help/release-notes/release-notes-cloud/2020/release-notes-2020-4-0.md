@@ -40,7 +40,7 @@ Obtenga información sobre las nuevas funciones, mejoras y correcciones de error
 
    * [!DNL Dynamic Media]: Se añadió la configuración de publicación selectiva para que los recursos se publiquen automáticamente solo para vista previa segura. Además, los recursos se pueden publicar explícitamente en Experience Manager sin publicar en DMS7 para envío de dominio público.
 
-### Corrección de errores {#assets-bug-fixes}
+### Correcciones de errores {#assets-bug-fixes}
 
 * Correcciones de problemas de procesamiento de recursos.
 * Correcciones en la configuración de [!DNL Dynamic Media] y publicación de recursos en el servicio de envío [!DNL Dynamic Media] .
@@ -64,7 +64,7 @@ Obtenga información sobre las nuevas funciones, mejoras y correcciones de error
 * Los entornos con error ahora se pueden eliminar a través de la interfaz de usuario y la API.
 * El proceso utilizado para generar contraseñas de git se ha vuelto más resistente a los problemas en la capa de servicio subyacente.
 
-### Corrección de errores {#bug-fixes-cloud-manager}
+### Correcciones de errores {#bug-fixes-cloud-manager}
 
 * Los vínculos al entorno de ensayo en la página de detalles de la ejecución de la canalización no navegaban de manera consistente a la ubicación correcta.
 * Los pasos individuales dentro del proceso de creación de entornos agotarían el tiempo de espera antes de lo necesario, lo que causaría fallas en el proceso.

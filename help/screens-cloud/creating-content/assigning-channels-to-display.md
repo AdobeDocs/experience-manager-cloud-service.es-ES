@@ -32,11 +32,11 @@ Siga los pasos a continuación para asignar un canal a una visualización:
 
 1. Haga clic en **Asignar canal** a la visualización.
 
-   ![image](/help/screens-cloud/assets/display/assignchannel-1.png)
+   ![imagen](/help/screens-cloud/assets/display/assignchannel-1.png)
 
 1. Rellene los campos siguientes desde **Asignar un canal** para abrir el Navegador.
 
-   ![image](/help/screens-cloud/assets/display/assignchannel-2.png)
+   ![imagen](/help/screens-cloud/assets/display/assignchannel-2.png)
 
    1. Seleccione el nombre del canal en la lista desplegable.
    1. Elija la prioridad .
@@ -47,7 +47,7 @@ Siga los pasos a continuación para asignar un canal a una visualización:
 
 1. Haga clic en **+ Añadir recurrencia** para agregar una programación de periodicidad para el canal.
 
-   ![image](/help/screens-cloud/assets/create-content/recurrence-1.png)
+   ![imagen](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
    >[!NOTE]
    >Puede agregar varias programaciones recurrentes al canal. Las programaciones de periodicidad introducen DayParting, que permite establecer una programación global con varios canales que se ejecutan en momentos específicos del día, y reutilizar esa configuración para todas las visualizaciones a la vez.
@@ -63,7 +63,7 @@ Siga los pasos a continuación para asignar un canal a una visualización:
 
 1. Haga clic en **Crear** y ahora verá el que un canal está asignado para esa pantalla, como se muestra en la figura siguiente.
 
-   ![image](/help/screens-cloud/assets/display/assignchannel-3.png)
+   ![imagen](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
 ## Siguientes pasos {#whats-next}

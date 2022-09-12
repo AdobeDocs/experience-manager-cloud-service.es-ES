@@ -33,11 +33,11 @@ Siga los pasos a continuación para registrar el reproductor:
    >[!NOTE]
    >Si no existen códigos válidos/no caducados, haga clic en crear código, introduzca un nombre para el código y elija la configuración de caducidad según sus necesidades.
 
-   ![image](/help/screens-cloud/assets/player/register-player1.png)
+   ![imagen](/help/screens-cloud/assets/player/register-player1.png)
 
 1. Rellene los campos siguientes en **Creación de un código de registro** cuadro de diálogo:
 
-   ![image](/help/screens-cloud/assets/player/register-player2.png)
+   ![imagen](/help/screens-cloud/assets/player/register-player2.png)
 
    1. **Nombre del código de registro**: Nombre del código de registro
    1. **Caducidad del código de registro**: Fecha de caducidad del código de registro
@@ -46,22 +46,22 @@ Siga los pasos a continuación para registrar el reproductor:
 
 1. Haga clic en **Crear** para crear el código de registro. Verá su reproductor con el código de registro en la lista.
 
-   ![image](/help/screens-cloud/assets/player/register-player3.png)
+   ![imagen](/help/screens-cloud/assets/player/register-player3.png)
 
 1. Haga clic en el valor debajo de la columna **CÓDIGO DE REGISTRO**  para copiar el valor en el portapapeles.
 
 1. Pegue este valor en la variable **Introducir código** en el campo **Registro del reproductor** en la interfaz de usuario de administración del reproductor AEM Screens y haga clic en **Registro**.
 
-   ![image](/help/screens-cloud/assets/player/register-player4.png)
+   ![imagen](/help/screens-cloud/assets/player/register-player4.png)
 
 
 1. Una vez que haya añadido el código, verá que el reproductor se ha registrado desde la IU de administración del reproductor.
 
-   ![image](/help/screens-cloud/assets/player/register-player5.png)
+   ![imagen](/help/screens-cloud/assets/player/register-player5.png)
 
 1. Debería ver que este reproductor ahora aparece en **Reproductores** del panel de navegación izquierdo. El código que se muestra en el proveedor de servicios de Screens coincide con la variable **Información del sistema** en la interfaz de usuario de administración, en Código de reproductor.
 
-   ![image](/help/screens-cloud/assets/player/register-player6.png)
+   ![imagen](/help/screens-cloud/assets/player/register-player6.png)
 
    >[!IMPORTANT]
    >**Recomendaciones de prácticas recomendadas de seguridad al usar código de registro**

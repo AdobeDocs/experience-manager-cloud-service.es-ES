@@ -26,7 +26,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.5.0 es el 7
 * Se ha mejorado el rendimiento de la página de Actividad y de la API de Lista de ejecuciones de canalización.
 * El registro de calidad del código ahora contiene todos los seguimientos de pila para excepciones.
 
-### Corrección de errores  {#bug-fixes}
+### Correcciones de errores  {#bug-fixes}
 
 * Se mostraba una tarjeta engañosa en la página de información general mientras se ejecutaba la canalización de producción.
 * La regla de calidad del código *DontImplementeOrExtendProviderTypesPomCheck* puede producir a veces una excepción de puntero nulo.

@@ -1,7 +1,7 @@
 ---
 title: Importar, exportar y organizar Forms adaptable, PDF forms y otros recursos
 seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
-description: '¿Quiere migrar Forms adaptable y recursos a y desde una instancia de AEM? Obtenga información aquí sobre cómo importar y exportar Forms adaptable, PDF forms, temas y otros recursos de soporte desde un [!DNL AEM Forms] instancia. '
+description: ¿Quiere migrar Forms adaptable y recursos a y desde una instancia de AEM? Obtenga información aquí sobre cómo importar y exportar Forms adaptable, PDF forms, temas y otros recursos de soporte desde un [!DNL AEM Forms] instancia.
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0

@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.6.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2021.6.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -30,12 +30,12 @@ La siguiente versión (2021.7.0) será el 29 de julio de 2021.
 
 Eche un vistazo a la [Información general sobre la versión de junio de 2021](https://video.tv.adobe.com/v/334296) vídeo para ver un resumen de las funciones añadidas.
 
-## Documentación XML para AEM as a cloud Service {#xml-documentation}
+## XML Documentation para AEM as a cloud Service {#xml-documentation}
 
 ### Novedades {#what-is-new-xml-documentation}
 
-* La documentación XML para AEM as a Cloud Service ahora es GA.
-* Esto permitirá a los clientes existentes de AEM Cloud Service adquirir un complemento de documentación XML para importar, crear, administrar y entregar contenido técnico en varios canales, incluidos sitios de AEM
+* XML Documentation para AEM as a Cloud Service es ahora GA.
+* Esto permitirá a los clientes existentes de AEM Cloud Service adquirir un complemento de XML Documentation para importar, crear, administrar y entregar contenido técnico en varios canales, incluidos sitios de AEM
 
 ## Cloud Manager {#cloud-manager}
 
@@ -70,7 +70,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 * La página de detalles del entorno ahora mostrará varios nombres de dominio para los servicios de publicación y vista previa (según corresponda). Consulte [Detalles del entorno](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obtener más información.
 
-### Corrección de errores {#bug-fixes-junecm}
+### Correcciones de errores {#bug-fixes-junecm}
 
 * Las definiciones de nodo JCR que contenían una nueva línea después del nombre del elemento raíz no se analizaron correctamente.
 
@@ -78,7 +78,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 * Se mostraba un mensaje de error incorrecto cuando se proporcionaba un valor no válido para el paso de programación.
 
-* En ocasiones, el usuario puede ver un verde *active* junto a una Lista de permitidos IP incluso cuando esa configuración no se ha implementado.
+* En ocasiones, el usuario puede ver un verde *active* junto a una Lista de permitidos IP incluso cuando esa configuración no se haya implementado.
 
 * Algunas secuencias de edición de programas podrían resultar en la incapacidad de crear o editar la canalización de producción.
 
@@ -128,7 +128,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 ### Función beta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: Las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos de impresión en varios formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: Las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos de impresión en varios formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    * Genere documentos de formulario finales rellenando archivos de plantilla con datos XML.
    * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    * Genere PDF de impresión desde un PDF de formularios XFA y un formulario de Adobe Acrobat (AcroForm).
@@ -190,9 +190,9 @@ La fecha de versión de la herramienta de transferencia de contenido v1.5.4 es e
 
 * Se han añadido mensajes de estado de ingesta más descriptivos en la interfaz de usuario.
 
-### Corrección de errores {#bug-fixes-ctt-latest}
+### Correcciones de errores {#bug-fixes-ctt-latest}
 
-* Al detener una ingesta en la instancia de autor, la interfaz de usuario sobrescribió una ingesta finalizada anteriormente en la instancia de publicación en `STOPPED` from `FINISHED`. Esto se ha solucionado.
+* Al detener una ingesta en la instancia de autor, la interfaz de usuario sobrescribió una ingesta finalizada anteriormente en la instancia de publicación en `STOPPED` from `FINISHED`. Esto se ha corregido.
 
 ## Analizador de prácticas recomendadas {#best-practices-analyzer}
 
@@ -206,6 +206,6 @@ La fecha de versión de Best Practices Analyzer v2.1.16 es el 30 de junio de 202
 
 * Capacidad para detectar e informar sobre la versión de Best Practices Analyzer utilizada.
 
-### Corrección de errores {#bug-fixes-bpa-latest}
+### Correcciones de errores {#bug-fixes-bpa-latest}
 
 * Se ha corregido un error de registro relacionado con la estructura de repositorio no admitida (URS).

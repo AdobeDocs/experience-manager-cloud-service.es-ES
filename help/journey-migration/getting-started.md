@@ -4,8 +4,8 @@ description: Inicie el recorrido de migración familiarizándose con los concept
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '587'
+ht-degree: 11%
 
 ---
 
@@ -37,11 +37,11 @@ El recorrido de migración al Cloud Service incluye las siguientes fases:
 
 En la figura siguiente se muestra una representación de alto nivel del recorrido de transición recomendado a AEM as a Cloud Service.
 
-![image](/help/journey-migration/assets/move-aemcloud-process.png)
+![imagen](/help/journey-migration/assets/move-aemcloud-process.png)
 
 También puede consultar el diagrama siguiente para obtener una vista más detallada y granular del recorrido de migración.
 
-![image](/help/journey-migration/assets/migration-process.png)
+![imagen](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 

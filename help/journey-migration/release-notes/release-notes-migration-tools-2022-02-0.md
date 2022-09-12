@@ -26,10 +26,10 @@ La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.24 es el 
 * Capacidad para detectar y crear informes sobre la versión de componente principal utilizada.
 * Capacidad para detectar y crear informes sobre el tipo de nivel de origen (autor o publicación) en el que se ejecutó BPA.
 
-### Corrección de errores {#bug-fixes-bpa}
+### Correcciones de errores {#bug-fixes-bpa}
 
 * La lógica de tamaño de BPA se hizo más rápida y eficiente.
-* En algunos casos, el BPA no incrementó el recuento analizado cuando se ejecutó. Esto se ha solucionado.
+* En algunos casos, el BPA no incrementó el recuento analizado cuando se ejecutó. Esto se ha corregido.
 
 ## Herramienta de transferencia de contenido {#ctt-release}
 
@@ -41,6 +41,6 @@ La fecha de versión de la herramienta de transferencia de contenido v1.8.6 es e
 
 * Validación de contenido: los usuarios tienen la capacidad de determinar de forma fiable si todo el contenido extraído por la herramienta de transferencia de contenido se ha introducido correctamente en la instancia de destino. Para utilizar esta función, deberá activarla en la `System Console` del entorno de AEM de origen. Consulte [Validación de transferencias de contenido: introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=es#getting-started) para obtener más información.
 
-### Corrección de errores {#bug-fixes-ctt}
+### Correcciones de errores {#bug-fixes-ctt}
 
-* Algunos usuarios no estaban asignados porque la asignación de usuarios distinguía entre mayúsculas y minúsculas. Esto se ha solucionado. La asignación de usuarios ya no distingue entre mayúsculas y minúsculas.
+* Algunos usuarios no estaban asignados porque la asignación de usuarios distinguía entre mayúsculas y minúsculas. Esto se ha corregido. La asignación de usuarios ya no distingue entre mayúsculas y minúsculas.

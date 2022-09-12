@@ -35,7 +35,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.7.0 es 9 de
 * El contenedor de generación de Cloud Manager ahora admite Java 8 y Java 11.
 Consulte Uso de la compatibilidad con Java 11 para obtener más información.
 
-### Corrección de errores {#bug-fixes-cm}
+### Correcciones de errores {#bug-fixes-cm}
 
 * Antes de que se crearan completamente los entornos, el vínculo de Cloud Manager a la consola de desarrollador no se activaba correctamente.
 

@@ -13,7 +13,7 @@ ht-degree: 6%
 
 ---
 
-# Buscar recursos en [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Búsqueda de recursos en [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 [!DNL Adobe Experience Manager Assets] proporciona métodos de detección de recursos sólidos que le ayudan a alcanzar una mayor velocidad de contenido. Sus equipos pueden reducir el tiempo de salida al mercado con una experiencia de búsqueda inteligente y optimizada mediante la funcionalidad y los métodos personalizados integrados. La búsqueda de recursos es fundamental para el uso de un sistema de administración de recursos digitales, ya sea para su uso posterior por parte de los creativos, para la sólida administración de recursos por parte de los usuarios comerciales y los especialistas en marketing, o para la administración por parte de los administradores de DAM. Búsquedas simples, avanzadas y personalizadas que puede realizar mediante [!DNL Assets] la interfaz de usuario u otras aplicaciones y superficies ayudan a cumplir estos casos de uso.
 
@@ -166,7 +166,7 @@ Puede buscar recursos en función de los valores exactos de los campos de metada
 | Tiempo de activación | ontime:AAAA-MM-DDTHH |
 | Tiempo de inactividad | offtime:AAAA-MM-DDTHH |
 | Intervalo de tiempo (caduca dateontime, offtime) | campo de faceta : límite inferior..Upperbound |
-| Ruta | /content/dam/&lt;folder name=&quot;&quot;> |
+| Ruta  | /content/dam/&lt;folder name=&quot;&quot;> |
 | Título del PDF | pdftitle:&quot;Documento de Adobe&quot; |
 | Asunto | asunto: &quot;Formación&quot; |
 | Etiquetas | etiquetas: &quot;Ubicación Y Viaje&quot; |
@@ -204,7 +204,7 @@ Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al conten
 
 Los profesionales creativos utilizan la aplicación de escritorio para realizar la [!DNL Experience Manager Assets] se puede buscar fácilmente y está disponible en su escritorio local (Win o Mac). Los elementos creativos pueden revelar fácilmente los recursos deseados en el Buscador de Mac o en el Explorador de Windows, abrirlos en aplicaciones de escritorio y cambiarlos localmente. Los cambios se guardan de nuevo en [!DNL Experience Manager] con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas mediante una o más palabras clave, `*` y `?` caracteres comodín y `AND` operador. Consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en la aplicación de escritorio.
 
-### Buscar recursos en [!DNL Brand Portal] {#brand-portal}
+### Búsqueda de recursos en [!DNL Brand Portal] {#brand-portal}
 
 Los usuarios y especialistas en marketing de la línea de negocios utilizan Brand Portal para compartir de forma eficaz y segura los recursos digitales aprobados con sus equipos internos, socios y distribuidores ampliados. Consulte [buscar recursos en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 

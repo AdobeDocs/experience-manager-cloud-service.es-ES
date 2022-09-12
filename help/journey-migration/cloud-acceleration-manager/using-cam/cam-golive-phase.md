@@ -15,7 +15,7 @@ La tarjeta Go Live proporciona todo el contenido relevante que resalta la prepar
 
 Haga clic en la tarjeta del proyecto para abrir la página de aterrizaje del proyecto y vaya hasta la página **Go Live** como se muestra en la figura siguiente.
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+![imagen](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
 >Consulte [Creación y administración de un proyecto en Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) para obtener más información.
@@ -27,8 +27,8 @@ Siga esta sección para explorar la tarjeta de actividad Go Live :
 
 1. Haga clic en el **Ver** del **Go Live** tarjeta.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 1. Un carrusel de contenido muestra información relevante para esta fase del recorrido de migración.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)
+   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)

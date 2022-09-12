@@ -5,7 +5,7 @@ exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ El componente RemotePage obtiene todos los recursos necesarios del `asset-manife
 
 Consulte el artículo [Edición de un SPA externo dentro de AEM](editing-external-spa.md) para obtener más información sobre SPA externas editables en AEM.
 
-## Requisitos {#requirements}
+## Requisitos  {#requirements}
 
 * Habilitar CORS en desarrollo
 * Configuración de URL remota en Propiedades de página

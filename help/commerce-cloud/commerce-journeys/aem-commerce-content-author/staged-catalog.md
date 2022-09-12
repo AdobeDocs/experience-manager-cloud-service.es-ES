@@ -5,7 +5,7 @@ exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -64,7 +64,7 @@ Ahora que ha completado esta parte del recorrido, debe:
 * comprender los conceptos de catálogo de productos por etapas y contenido con lanzamientos
 * poder acceder a los datos del catálogo de productos clasificados mediante la cabina y el editor de productos
 
-Ya está listo para administrar [experiencias de producto](product-experience-management.md). Sin embargo, AEM Contenido y Comercio tienen muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la [Sección Recursos adicionales](#additional-resources) para obtener más información sobre las funciones que ha visto en este recorrido.
+Ya está listo para administrar [experiencias de producto](product-experience-management.md). Sin embargo, AEM Contenido y Comercio tienen muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la sección [Recursos adicionales](#additional-resources) para obtener más información acerca de las funciones que ha visto en este recorrido.
 
 ## Recursos adicionales {#additional-resources}
 

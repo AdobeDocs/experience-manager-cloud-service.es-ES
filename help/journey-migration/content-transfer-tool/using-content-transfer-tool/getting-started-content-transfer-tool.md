@@ -54,7 +54,7 @@ A veces es difícil comprender los problemas de conexión SSL/TLS. Para solucion
 1. Utilice el botón de icono de lápiz para editar sus valores de configuración
 1. Active la variable **Habilitar el registro ssl para la extracción** configuración y, a continuación, pulse **Guardar**:
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 
 ## Ejecución de la herramienta de transferencia de contenido {#running-tool}
@@ -85,7 +85,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
 1. Haga clic en el **Transferencia de contenido** tarjeta. Esto le llevará a la vista Lista de conjunto de migración.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
 1. Cree un conjunto de migraciones haciendo clic en **Crear conjunto de migración**.
 
@@ -93,9 +93,9 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
    >
    >Se puede crear un máximo de cinco conjuntos de migración por proyecto en Cloud Acceleration Manager.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
 1. Ahora debería ver la lista de migración en la vista de lista. Haga clic en el símbolo de tres puntos (**...**) para abrir el menú desplegable y hacer clic en **Copiar clave de extracción**. Necesitará esta clave durante la fase de Extracción. Copie esta clave de Extracción.
 
@@ -103,7 +103,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
    >
    >La clave de extracción permite que el entorno de AEM de origen se conecte de forma segura al conjunto de migración. Trate esta clave con el mismo cuidado que si usara una contraseña, y nunca la comparta en un medio no seguro como correo electrónico.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
 ### Rellenado del conjunto de migración {#populating-the-migration-set}
 
@@ -118,7 +118,7 @@ Para rellenar el conjunto de migración creado en Cloud Acceleration Manager, de
 
 1. Haga clic en **Crear conjunto de migración**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
 1. Pegue la clave de extracción que se copió de CAM anteriormente en el campo de entrada de la clave de extracción de **Crear conjunto de migración** formulario. Una vez que lo haga, los campos Nombre del conjunto de migración y Nombre del proyecto de Cloud Acceleration Manager (CAM) se rellenarán automáticamente. Estas deberían coincidir con el nombre del conjunto de migración en CAM y con el nombre del proyecto CAM que ha creado. Ahora puede agregar rutas de contenido. Una vez que haya añadido rutas de contenido, podrá guardar el conjunto de migración. Puede ejecutar la extracción con versiones incluidas o excluidas.
 
@@ -126,13 +126,13 @@ Para rellenar el conjunto de migración creado en Cloud Acceleration Manager, de
    >
    >Asegúrese de que la clave de extracción sea válida y no esté cerca de su caducidad. Puede obtener esta información en la **Crear conjunto de migración** después de pegar la clave de extracción. Si se produce un error de conexión, consulte [Conectividad del entorno de origen](#source-environment-connectivity) para obtener más información.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
 1. A continuación, seleccione los siguientes parámetros para crear un conjunto de migración:
 
    1. **Incluir versión**: seleccione la opción que desee. Cuando se incluyen versiones, la ruta `/var/audit` se incluye automáticamente para migrar eventos de auditoría.
 
-      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+      ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
 
       >[!NOTE]
       >Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza complementos con `wipe=false`, debe desactivar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
@@ -175,19 +175,19 @@ Siga los pasos a continuación para ejecutar una comprobación de tamaño:
 
 1. Seleccione un conjunto de migración y haga clic en **Comprobar tamaño**.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
 1. Esto abrirá las **Comprobar tamaño** diálogo.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
 1. Haga clic en **Comprobar tamaño** para iniciar el proceso. A continuación, volverá a la vista de la lista de conjuntos de migración y verá un mensaje que indique que **Comprobar tamaño** se está ejecutando.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
 1. Una vez **Comprobar tamaño** se completa el proceso, el estado cambiará a **FINALIZADO**. Seleccione el mismo conjunto de migración y haga clic en **Comprobar tamaño** para ver los resultados. A continuación se muestra un ejemplo de **Comprobar tamaño** resultados sin advertencias.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
 1. Si la variable **Comprobar tamaño** los resultados indican que no hay suficiente espacio en disco o que el conjunto de migración supera los límites del producto, **ADVERTENCIA** se muestra.
 

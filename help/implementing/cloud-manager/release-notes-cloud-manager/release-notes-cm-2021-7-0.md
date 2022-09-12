@@ -38,7 +38,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.7.0 es el 1
 
 * La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 28.
 
-### Corrección de errores {#bug-fixes}
+### Correcciones de errores {#bug-fixes}
 
 * En algunos casos, Vista previa no era una opción disponible al enlazar una Lista de permitidos IP a un entorno.
 

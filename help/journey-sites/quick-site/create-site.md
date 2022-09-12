@@ -3,7 +3,7 @@ title: Creación de un sitio a partir de una plantilla
 description: Obtenga información sobre cómo crear rápidamente un nuevo sitio de AEM con una plantilla de sitio.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Usar una plantilla para crear un nuevo sitio es muy sencillo.
 
    ![Detalles del nuevo sitio](assets/create-site-details.png)
 
-1. En el cuadro de diálogo de confirmación que aparece, pulse o haga clic en **Listo**.
+1. En el cuadro de diálogo de confirmación que aparece, toque o haga clic en **Listo**.
 
    ![Cuadro de diálogo de éxito](assets/success.png)
 

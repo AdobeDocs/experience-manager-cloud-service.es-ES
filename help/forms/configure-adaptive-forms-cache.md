@@ -1,7 +1,7 @@
 ---
 title: Configuración de la caché de Forms adaptable
 seo-title: Configure Adaptive Forms cache
-description: 'La caché de Forms adaptable está diseñada específicamente para Forms adaptable y documentos. Almacena en caché Forms adaptable y documentos adaptables con el objetivo de reducir el tiempo necesario para procesar un formulario adaptable o un documento en el cliente. '
+description: La caché de Forms adaptable está diseñada específicamente para Forms adaptable y documentos. Almacena en caché Forms adaptable y documentos adaptables con el objetivo de reducir el tiempo necesario para procesar un formulario adaptable o un documento en el cliente.
 seo-description: The Adaptive Forms cache is designed specifically for Adaptive Forms and documents. It caches Adaptive Forms and adaptive documents with the objective of reducing the time required to render an Adaptive Form or document on the client.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference

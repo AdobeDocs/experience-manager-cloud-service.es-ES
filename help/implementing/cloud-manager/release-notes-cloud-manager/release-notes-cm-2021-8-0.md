@@ -40,7 +40,7 @@ Consulte [Informes de SLA](https://experienceleague.adobe.com/docs/experience-ma
 
 * La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 29.
 
-### Corrección de errores {#bug-fixes}
+### Correcciones de errores {#bug-fixes}
 
 * Actualizar el estado disponible no se debe mostrar cuando la última versión sea menor que la versión actual.
 

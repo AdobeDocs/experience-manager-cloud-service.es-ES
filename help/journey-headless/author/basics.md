@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
@@ -72,20 +72,20 @@ En la consola, puede seleccionar carpetas en el panel izquierdo para desplazarse
 
 ### Acciones, Seleccionar, Ver {#actions-selecting-viewing}
 
-En el **Fragmentos de contenido** para sus fragmentos de contenido desde la barra de herramientas:
+En la consola **Fragmentos de contenido** está disponible un rango de acciones para sus fragmentos de contenido desde la barra de herramientas:
 
 <!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
-* **Abrir en Assets**
+* **Abrir en Recursos**
 * **Crear**
-* La variable **Referenciado por** también proporciona un vínculo directo para mostrar todas las referencias principales de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas.
+* La columna **Referenciado por** también proporciona un vínculo directo para mostrar todas las referencias principales de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas.
 * Al pasar el ratón por encima del nombre de la carpeta, se mostrará la ruta JCR.
 
 Después de seleccionar el fragmento, están disponibles todas las acciones apropiadas:
 
 <!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
-* **Abra**
+* **Abrir**
 * **Publicación** (y **Cancelar la publicación**)
 * **Copiar**
 * **Mover**
@@ -94,7 +94,7 @@ Después de seleccionar el fragmento, están disponibles todas las acciones apro
 
 >[!NOTE]
 >
->Acciones como Publicar, Cancelar la publicación, Eliminar, Mover, Cambiar el nombre, Copiar, déclencheur de un trabajo asincrónico. El progreso de ese trabajo se puede monitorizar a través de la interfaz de usuario de trabajos asincrónicos de AEM.
+>Acciones como Publicar, Cancelar la publicación, Eliminar, Mover, Cambiar el nombre, Copiar, activar un trabajo asincrónico. El progreso de ese trabajo se puede monitorizar a través de la interfaz de usuario de trabajos asincrónicos de AEM.
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
@@ -172,7 +172,7 @@ En el **Fragmentos de contenido** consola, puede usar **Crear** para abrir el **
 
 Especifique el:
 
-* **Ubicación**
+* **Lugar de residencia**
 * **Modelo de fragmento de contenido**
 * **Título**
 * **Nombre**
@@ -249,7 +249,7 @@ Los modelos de fragmento de contenido son vitales para los fragmentos de conteni
 
    Los fragmentos de contenido han estado disponibles en AEM durante algunas versiones. Originalmente estaban disponibles para uso &quot;tradicional&quot; al crear páginas....y se siguen utilizando en este contexto. Esto puede implicar asociar recursos (por ejemplo imágenes) que, aunque no estén incrustados en el fragmento, deben estar disponibles para el autor al crear una página.
 
-* **Vista previa**
+* **Previsualizar**
 
    Esta es otra ficha del editor y proporciona una vista técnica, principalmente para desarrolladores.
 
@@ -287,7 +287,7 @@ Ahora que ha aprendido lo básico, el siguiente paso es [Obtenga información so
 
    * [Visualización y selección de los recursos](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 
-   * [Selector de raíl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+   * [Selector de carril](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
    * Publicación
 

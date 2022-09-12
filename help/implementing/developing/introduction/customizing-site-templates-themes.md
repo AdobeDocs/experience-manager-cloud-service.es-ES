@@ -7,7 +7,7 @@ exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 4%
+ht-degree: 25%
 
 ---
 
@@ -31,4 +31,4 @@ Porque [creación del sitio](/help/sites-cloud/administering/site-creation/creat
 
 >[!TIP]
 >
->Puede encontrar una descripción completa del proceso de crear un sitio a partir de una plantilla y personalizar su tema en la [Recorrido de creación rápida de sitios.](/help/journey-sites/quick-site/overview.md)
+>Puede encontrar una descripción completa del proceso de crear un sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios.](/help/journey-sites/quick-site/overview.md)

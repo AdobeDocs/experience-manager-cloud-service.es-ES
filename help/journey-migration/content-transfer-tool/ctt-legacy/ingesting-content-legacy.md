@@ -3,7 +3,8 @@ title: Ingesta de contenido en Target (heredado)
 description: Ingesta de contenido en Target
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 326b3e98-5055-49b5-a005-63fd3ca35202
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 27%
@@ -20,11 +21,11 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
 1. Seleccionar un conjunto de migraciones de **Transferencia de contenido** página y haga clic en **Ingesta** para iniciar la ingesta.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
 1. Aparece el cuadro de diálogo **ingesta de conjunto de migración** . El contenido se puede ingerir en una instancia de Autor o en una instancia de Publicación a la vez. Seleccione la instancia en la que desee introducir el contenido. Haga clic en **Ingesta** para iniciar la fase de ingesta.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
 
    >[!IMPORTANT]
    >Si se utiliza la ingesta con precopia (para S3 o Azure Data Store), se recomienda ejecutar la ingesta de Autor solo primero. Esto acelera la ingesta de Publicar cuando se ejecute más adelante.
@@ -32,17 +33,17 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
    >[!IMPORTANT]
    >Cuando la variable **Borrar el contenido existente en la instancia de Cloud antes de la ingesta** está activada, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece toda la configuración, incluidos los permisos, en la instancia de Cloud Service de destino. Esto también se aplica a los usuarios administradores agregados a la variable **administradores** grupo.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
 
    Además, haga clic en **Servicio de atención al cliente** para registrar un ticket, como se muestra en la figura siguiente.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
 
    Además, consulte [Consideraciones importantes sobre el uso de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) para obtener más información.
 
 1. Una vez finalizada la ingesta, el estado de **Ingesta de autor** actualizaciones para **FINALIZADO**.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## Ingesta superior {#top-up-ingestion-process}
 

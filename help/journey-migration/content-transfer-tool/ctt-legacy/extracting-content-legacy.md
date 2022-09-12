@@ -3,7 +3,8 @@ title: Extracción de contenido del origen (heredado)
 description: Extracción de contenido del origen
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 9f43356c-ba51-48bc-97f5-f1f5db81e7f3
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 36%
@@ -23,18 +24,18 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 
 1. Seleccionar un conjunto de migraciones de **Transferencia de contenido** asistente y haga clic en **Extraer** para iniciar la extracción.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-01.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-01.png)
 
 1. La variable **Extracción de conjunto de migración** aparece el cuadro de diálogo y haga clic en **Extraer** para iniciar la fase de extracción.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-02.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-02.png)
 
    >[!NOTE]
    >Tiene la opción de sobrescribir el contenedor de ensayo durante la fase de extracción.
 
    >[!IMPORTANT]
    >Si la Asignación de usuarios no se ha ejecutado en este conjunto de migración antes de extraer contenido del origen, verá una advertencia mostrando que el paso Asignación de usuarios está pendiente, como se muestra en la figura siguiente. Haga clic en **Asignar usuarios** para ejecutar la herramienta Asignación de usuarios.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/user-mapping-extract.png)
+   >![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. La variable **Extracción** ahora muestra la variable **EJECUCIÓN** para indicar que la extracción está en curso.
 

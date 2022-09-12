@@ -30,7 +30,7 @@ La versión 2.9.0 de los [componentes principales](https://experienceleague.adob
 * Un nuevo componente de barra de progreso.
 * Muchas correcciones de errores.
 
-### Corrección de errores {#sites-bug-fixes}
+### Correcciones de errores {#sites-bug-fixes}
 
 * Los componentes dentro del contenedor de diseño no están visibles cuando el contenedor de diseño se copia y se vuelve a pegar en una página.
 
@@ -88,7 +88,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 * El paso Generar ahora valida que la compilación produjo al menos un paquete de contenido.
 
-### Corrección de errores {#bug-fixes-cm}
+### Correcciones de errores {#bug-fixes-cm}
 
 * En determinadas situaciones, los iconos del cuadro de diálogo **Crear Programa** estaban desalineados.
 
@@ -179,7 +179,7 @@ La versión incorpora las siguientes mejoras adicionales:
 * Ordene en &quot;Crear&quot; (Fecha) cuando visualice recursos en la vista de listas en la interfaz de recursos y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
 * Compatibilidad para convertir archivos EPS en imágenes mediante microservicios de recursos.
 
-### Corrección de errores {#assets-bug-fixes}
+### Correcciones de errores {#assets-bug-fixes}
 
 Además de las nuevas funciones anteriores, la versión actual proporciona las siguientes correcciones de errores en función de los comentarios de los clientes para [!DNL Assets].
 

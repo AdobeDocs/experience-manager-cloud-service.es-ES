@@ -33,13 +33,13 @@ Siga los pasos a continuación para actualizar el reproductor:
 
 1. Haga clic en el **Configuración** y haga clic en **A fábrica** botón debajo de **Restablecer** .
 
-   ![image](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![imagen](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Haga clic en **Confirmar** para restablecer el reproductor.
 
 1. De nuevo desde el **Configuración** y haga clic en **Cambiar al modo de nube** botón debajo de **Alternar modo de ejecución** .
 
-   ![image](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![imagen](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Haga clic en **Confirmar** que se indica al cambiar al modo de nube, anulará el registro del reproductor.
 

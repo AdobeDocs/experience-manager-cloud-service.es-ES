@@ -1,5 +1,5 @@
 ---
-title: 'Preguntas más frecuentes as a Cloud Service de Forms '
+title: Preguntas más frecuentes as a Cloud Service de Forms
 description: Preguntas más frecuentes as a Cloud Service de Forms
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
@@ -37,7 +37,7 @@ Puede descargar la documentación de referencia de la API de Java™ desde [!DNL
 
 * **¿Dónde puedo conseguir? [!DNL JavaScript™] Referencia de API para Adaptive Forms?**
 Puede descargar [!DNL JavaScript™] Documentación de referencia de API de[!DNL  Maven Central Repository]. Para descargar:
-   1. Abra [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
+   1. Abrir [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Busque y abra la página que contiene la última versión de [!DNL Experience Manager Forms] SDK.
    1. Haga clic en la opción Ver todo para ver todos los archivos.
    1. Descargue y extraiga el `aem-forms-sdk-api-<version>-jsdoc.jar`.

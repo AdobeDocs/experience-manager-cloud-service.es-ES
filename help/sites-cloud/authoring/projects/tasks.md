@@ -3,7 +3,7 @@ title: Uso de tareas
 description: Las tareas representan elementos de trabajo que tienen que implementarse en el contenido y se utilizan en los proyectos para determinar el nivel de conclusión de las tareas actuales
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 100%
 

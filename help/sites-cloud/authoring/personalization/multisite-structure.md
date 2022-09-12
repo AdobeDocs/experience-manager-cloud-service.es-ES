@@ -3,7 +3,7 @@ title: Estructurar la administración de diversos sitios para el contenido segme
 description: En un diagrama se muestra la estructuración de la compatibilidad con el uso de varios sitios para contenido de destino
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 

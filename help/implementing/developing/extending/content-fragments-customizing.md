@@ -345,6 +345,6 @@ Si desea establecer un intervalo de guardado automático de 5 minutos, debe defi
 
 ## Componentes para la creación de páginas {#components-for-page-authoring}
 
-Para obtener más información, consulte
+Para obtener más información, consulte lo siguiente
 
 * [Componentes principales: componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (recomendado)

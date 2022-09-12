@@ -10,7 +10,7 @@ discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -62,7 +62,7 @@ La tabla siguiente muestra las opciones de vista previa disponibles para los dis
 
    Las opciones son:
 
-   * Vista previa como HTML
+   * Previsualizar como HTML
    * Vista previa con datos
    * Vista previa como PDF (disponible para plantillas de formulario)
 

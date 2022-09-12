@@ -1,5 +1,5 @@
 ---
-title: 'Introducción a los programas de espacio aislado '
+title: Introducción a los programas de espacio aislado
 description: Descubra cuáles son las diferencias entre los programas de simulación de pruebas y los programas de producción.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: 05cba12cdd14c2e29f6a471047ce95fcf720abc4

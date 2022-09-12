@@ -3,7 +3,7 @@ title: Recuperación de información de acceso al repositorio de Git
 description: Descubra cómo el desarrollador front-end utiliza Cloud Manager para acceder a la información del repositorio de Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 100%
 

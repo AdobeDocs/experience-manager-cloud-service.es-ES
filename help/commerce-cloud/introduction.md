@@ -6,7 +6,7 @@ exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c5141
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -58,7 +58,7 @@ Las potentes herramientas del CIF en AEM permiten a los creadores de contenido c
 
 ### Tiempo para el valor (TTV) {#ttv}
 
-Acelera el desarrollo de proyectos con [Componentes principales AEM](https://www.aemcomponents.dev/), [Tienda de referencia de Venia AEM](https://github.com/adobe/aem-cif-guides-venia), [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)y patrones de integración para PWA (contenido sin encabezado y comercio).
+Acelera el desarrollo de proyectos con [Componentes principales AEM](https://www.aemcomponents.dev/), [Tienda de referencia de Venia AEM](https://github.com/adobe/aem-cif-guides-venia), [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)y patrones de integración para PWA (contenido sin encabezado y comercio).
 
 El CIF está diseñado para la innovación continua con un complemento siempre actualizado, que permite al cliente acceder a funciones nuevas y mejoradas.
 

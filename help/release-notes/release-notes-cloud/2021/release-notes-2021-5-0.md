@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.5.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2021.5.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2021.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2021.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -33,7 +33,7 @@ La siguiente versión (2021.6.0) se publicará el 28 de junio de 2021.
 
 * [Desaprobación de API](/help/release-notes/deprecated-apis.md): hay disponible una lista de las API obsoletas más recientes para AEM as a Cloud Service.
 
-* [Complemento Maven de AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Actualice sus proyectos de maven a la versión más reciente, que incluye una comprobación de API de Java obsoleta y otras mejoras.
+* [Complemento Maven de AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es): Actualice sus proyectos de maven a la versión más reciente, que incluye una comprobación de API de Java obsoleta y otras mejoras.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -124,7 +124,7 @@ La próxima versión está planificada para el 3 de junio de 2021.
 
 * El mensaje de error en el registro de pasos de compilación cuando la compilación no produjo ningún paquete de contenido implementado no estaba claro.
 
-### Corrección de errores {#bug-fixes-cm-may}
+### Correcciones de errores {#bug-fixes-cm-may}
 
 * En ocasiones, el usuario puede ver un estado &quot;activo&quot; verde junto a una Lista de permitidos IP incluso cuando esa configuración no se implementó.
 
@@ -150,11 +150,11 @@ La fecha de versión de la herramienta de transferencia de contenido v1.4.6 es e
 
 * Cuando un usuario elimina un conjunto de migración de la interfaz de usuario de CTT, donde se realizó una extracción, la variable `tmp` la carpeta asociada a ese conjunto de migración se eliminará para ahorrar espacio.
 
-### Corrección de errores {#bug-fixes-ctt-latest}
+### Correcciones de errores {#bug-fixes-ctt-latest}
 
-* Al eliminar un conjunto de migraciones, en ocasiones aparecía un mensaje de error no útil en la interfaz de usuario de CTT. Esto se ha solucionado.
+* Al eliminar un conjunto de migraciones, en ocasiones aparecía un mensaje de error no útil en la interfaz de usuario de CTT. Esto se ha corregido.
 
-* Al ejecutar la Asignación de usuarios, si los usuarios tenían la misma dirección de correo electrónico en el destino y el host pero nombres de usuario diferentes, se producía un error en toda la ingesta. Esto se ha solucionado. En este caso de conflicto, el usuario o grupo se omite y se registra como conflicto en el archivo de registro.
+* Al ejecutar la Asignación de usuarios, si los usuarios tenían la misma dirección de correo electrónico en el destino y el host pero nombres de usuario diferentes, se producía un error en toda la ingesta. Esto se ha corregido. En este caso de conflicto, el usuario o grupo se omite y se registra como conflicto en el archivo de registro.
 
 ### Fecha de la versión {#release-date-ctt}
 
@@ -165,10 +165,10 @@ La fecha de versión de la herramienta de transferencia de contenido v1.4.0 es e
 * Esta versión de la herramienta de transferencia de contenido crea representaciones de texto para los recursos que se migran a Cloud Service. Las representaciones de texto son necesarias para admitir la búsqueda de texto completo en recursos ingestados.
 * El número máximo de conjuntos de migración de la herramienta de transferencia de contenido que un usuario puede crear ha aumentado de 4 a 10.
 
-### Corrección de errores {#bug-fixes-ctt-may}
+### Correcciones de errores {#bug-fixes-ctt-may}
 
 * Varias correcciones de errores relacionadas con la función de actualización automática en la interfaz de usuario de la herramienta de transferencia de contenido.
-* Herramienta de transferencia de contenido con `wipe=true` se ha producido un índice de contador incorrecto en el destino. Esto se ha solucionado.
+* Herramienta de transferencia de contenido con `wipe=true` se ha producido un índice de contador incorrecto en el destino. Esto se ha corregido.
 
 ## Complemento de comercio {#cloud-services-commerce}
 
@@ -176,7 +176,7 @@ La fecha de versión de la herramienta de transferencia de contenido v1.4.0 es e
 
 * Compatibilidad de paginación para contenido asociado en propiedades de la consola del producto
 
-### Corrección de errores {#bug-fixes-commerce}
+### Correcciones de errores {#bug-fixes-commerce}
 
 * Las miniaturas de los recursos no se muestran en la ficha Recurso de las propiedades del producto
 

@@ -20,7 +20,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.1.0 es el 1
 
 ## Cloud Manager {#cloud-manager}
 
-### Corrección de errores  {#bug-fixes}
+### Correcciones de errores  {#bug-fixes}
 
 * En ocasiones, la instancia de producción de recursos puede mostrar el estado de Brand Portal en la variable **Entornos** página de detalles como *Pendiente* sin permitir al usuario realizar ninguna acción.
 

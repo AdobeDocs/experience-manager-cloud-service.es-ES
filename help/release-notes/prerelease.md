@@ -3,7 +3,7 @@ title: “Canal de prelanzamiento de [!DNL Adobe Experience Manager] as a Cloud 
 description: “Canal de prelanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service”
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 100%
 

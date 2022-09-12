@@ -41,7 +41,7 @@ La próxima versión está planificada para el 06 de mayo de 2021.
 
 * Los paquetes OSGi proporcionados por los proyectos de Eclipse ahora se excluyen de la regla `CQBP-84--dependencies`.
 
-### Corrección de errores {#bug-fixes-cm-april}
+### Correcciones de errores {#bug-fixes-cm-april}
 
 * Al editar la página de auditoría de experiencias de una canalización, una ruta de entrada que comience con una barra diagonal `( / )` ya no hará que el paso se bloquee en estado pendiente.
 

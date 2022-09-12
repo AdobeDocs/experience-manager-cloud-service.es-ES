@@ -401,7 +401,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
 -->
 
-## Escala de tiempo {#timeline}
+## Escala de cronología {#timeline}
 
 La cronología permite ver varios eventos de un elemento seleccionado, como flujos de trabajo activos de un recurso, comentarios/anotaciones, registros de actividades y versiones.
 

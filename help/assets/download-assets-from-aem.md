@@ -1,5 +1,5 @@
 ---
-title: Descargar recursos
+title: Descarga de recursos
 description: Descargar recursos desde [!DNL Adobe Experience Manager Assets] y habilite o deshabilite la funcionalidad de descarga.
 contentOwner: Vishabh Gupta
 feature: Asset Management
@@ -135,5 +135,5 @@ Si no necesita la funcionalidad de descarga, deshabilite el servlet para evitar 
 >
 >* [Descargar recursos protegidos DRM](drm.md)
 >* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Win o Mac Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [Descargar recursos mediante el vínculo de recursos de Adobe desde las aplicaciones de Adobe Creative Cloud compatibles](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Descargar recursos mediante el vínculo de recursos de Adobe desde las aplicaciones de Adobe Creative Cloud compatibles](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)
 

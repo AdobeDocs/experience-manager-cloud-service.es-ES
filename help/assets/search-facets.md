@@ -183,12 +183,12 @@ De forma similar a como se agrega un predicado Propiedad o un predicado Opciones
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Ruta</p> </td>
+   <td><p>Ruta </p> </td>
    <td><p>Utilícelo para filtrar los resultados según la ubicación. Puede especificar diferentes rutas como opciones.</p> </td>
    <td>
     <ul>
      <li>Etiqueta</li>
-     <li>Ruta</li>
+     <li>Ruta </li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -252,7 +252,7 @@ De forma similar a como se agrega un predicado Propiedad o un predicado Opciones
     <ul>
      <li>Etiqueta</li>
      <li>Nombre de la propiedad</li>
-     <li>Ruta</li>
+     <li>Ruta </li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -321,7 +321,7 @@ Si no se le ha asignado una función de administrador, aquí tiene una lista de 
 |---|---|
 | Editar | Permisos de lectura y escritura en la variable `/apps` en CRX. |
 | Eliminar | Permisos de lectura, escritura y eliminación en `/apps` en CRX. |
-| Vista previa | Permisos de lectura, escritura y eliminación en `/var/dam/content` en CRX. Además, permisos de lectura y escritura en `/apps` nodo . |
+| Previsualizar | Permisos de lectura, escritura y eliminación en `/var/dam/content` en CRX. Además, permisos de lectura y escritura en `/apps` nodo . |
 
 >[!MORELIKETHIS]
 >

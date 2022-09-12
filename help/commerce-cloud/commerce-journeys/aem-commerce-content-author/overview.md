@@ -5,7 +5,7 @@ exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 6%
+ht-degree: 35%
 
 ---
 
@@ -23,19 +23,19 @@ Esta guía le guía por los temas de creación de contenido y comercio AEM más 
 * Administrar experiencias de catálogo de productos por etapas
 * Enriquezca los datos del producto con el contenido mediante las herramientas de administración de experiencia del producto
 
-## recorridos de documentación de AEM {#documentation-journeys}
+## Recorridos de documentación de AEM {#documentation-journeys}
 
-[Un Recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en AEM, entender y resolver un problema de negocios de principio a fin, mientras asume un mínimo de conocimiento previo o AEM.
+[Un recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados. Proporciona una narrativa que ayuda al lector (que puede ser nuevo en AEM) a entender y resolver un problema empresarial de principio a fin, mientras asume un conocimiento previo mínimo de AEM.
 
-Los Recorridos de documentación están diseñados en torno a los principios de las mejores prácticas, basados en las últimas investigaciones del Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios de los proyectos de los clientes.
+Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
-Si desea saber cómo recomienda Adobe resolver los casos comerciales del sitio con AEM, los Recorridos de AEM Sites son el punto de inicio.
+Si desea saber cómo recomienda Adobe resolver los casos de sitios comerciales con AEM, los recorridos de AEM Sites son el punto de inicio.
 
 ## Audiencia {#audience}
 
 Este recorrido está diseñado para el autor de contenido de AEM Commerce. Este recorrido describe los requisitos, pasos y enfoques para comenzar y administrar las páginas de catálogo, las plantillas y las experiencias de producto completas.
 
-La información de este recorrido puede ser útil para otras personas, pero cierta información será superflua para ciertas funciones. Manténgase atento a los próximos recorridos que cubran funciones adicionales.
+La información de este recorrido puede ser útil para otras personas, pero cierta información será superflua para ciertas funciones. Manténgase atento a recorridos futuros que cubran funciones adicionales.
 
 ## El Recorrido {#the-journey}
 

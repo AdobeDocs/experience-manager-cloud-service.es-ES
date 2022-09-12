@@ -5,7 +5,7 @@ exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 21%
+ht-degree: 25%
 
 ---
 
@@ -27,7 +27,7 @@ El objetivo de este tutorial en varias partes es enseñar a un desarrollador nue
 
 La implementación del tutorial aprovecha muchas funciones potentes de AEM. El sitio se implementará utilizando:
 
-* [Tipo de archivo del proyecto Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Tipo de archivo del proyecto Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
 * [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html)

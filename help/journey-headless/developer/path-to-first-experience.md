@@ -33,7 +33,7 @@ Este documento le ayuda a comprender los pasos necesarios para implementar su pr
 * Conozca qué herramientas y configuraciones de AEM necesarias son necesarias.
 * Conozca las prácticas recomendadas para que su recorrido sin objetivos sea fluido, mantenga la eficiencia de la generación de contenido y asegúrese de que el contenido se entregue rápidamente.
 
-## Requisitos {#requirements}
+## Requisitos  {#requirements}
 
 Antes de continuar con este documento, asegúrese de haber revisado el documento anterior en el Recorrido para desarrolladores sin encabezado de AEM, [Introducción a AEM sin encabezado as a Cloud Service](getting-started.md) asegurarse de que:
 

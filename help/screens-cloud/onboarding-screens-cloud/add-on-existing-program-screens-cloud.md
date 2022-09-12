@@ -5,7 +5,7 @@ exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -27,18 +27,18 @@ Siga los pasos a continuación para agregar Screens como complemento a un progra
 1. Vaya a [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Consulte [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) para obtener más información sobre Cloud Manager.
+   >Consulte [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=es?lang=en) para obtener más información sobre Cloud Manager.
 
 1. Vaya al proyecto y haga clic en **Editar programa** desde la **Información general** página.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
    >La variable **Editar programa** la página muestra dos fichas **General** y **Soluciones y complementos**.
 
 1. La variable **Soluciones y complementos** muestra las opciones, como Sitios, Recursos y Pantallas. Select **Pantallas** como se muestra en la figura siguiente.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. Haga clic en **Actualizar**, una vez que haya seleccionado las opciones.
 

@@ -1,5 +1,5 @@
 ---
-title: '¿Cómo asignar un flujo de trabajo a otro usuario, enviar correo electrónico, utilizar Adobe Sign en un flujo de trabajo? '
+title: ¿Cómo asignar un flujo de trabajo a otro usuario, enviar correo electrónico, utilizar Adobe Sign en un flujo de trabajo?
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo adaptables basados en Forms. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varios orígenes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4

@@ -29,7 +29,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.4.0 es el 9
 * Los entornos con error ahora se pueden eliminar a través de la interfaz de usuario y la API.
 * El proceso utilizado para generar contraseñas de git se ha vuelto más resistente a los problemas en la capa de servicio subyacente.
 
-### Corrección de errores {#bug-fixes-cloud-manager}
+### Correcciones de errores {#bug-fixes-cloud-manager}
 
 * Los vínculos al entorno de ensayo en la página de detalles de la ejecución de la canalización no navegaban de manera consistente a la ubicación correcta.
 * Los pasos individuales dentro del proceso de creación de entornos agotarían el tiempo de espera antes de lo necesario, lo que causaría fallas en el proceso.

@@ -118,7 +118,7 @@ Consulte [Crear una configuración de Dynamic Media](#configuring-dynamic-media-
 
 1. En **[!UICONTROL Programación]**, establezca el tiempo de publicación.
 
-   | Programa | Descripción |
+   | Programación | Descripción |
    | --- | --- |
    | **[!UICONTROL Ahora]** | Seleccione para publicar los recursos inmediatamente. |
    | **[!UICONTROL Más tarde]** | Seleccione para publicar los recursos en una fecha y hora concretas. |
@@ -149,7 +149,7 @@ Consulte [Crear una configuración de Dynamic Media](#configuring-dynamic-media-
 
 1. En **[!UICONTROL Programación]**, establezca el tiempo de desactivación.
 
-   | Programa | Descripción |
+   | Programación | Descripción |
    | --- | --- |
    | **[!UICONTROL Ahora]** | Seleccione para cancelar la publicación de los recursos inmediatamente. |
    | **[!UICONTROL Más tarde]** | Seleccione para cancelar la publicación de los recursos en una fecha y hora concretas. |

@@ -1,9 +1,9 @@
 ---
-title: 'Búsqueda  '
+title: Búsqueda
 description: Encuentre contenido más rápidamente con una búsqueda detallada
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 100%
 

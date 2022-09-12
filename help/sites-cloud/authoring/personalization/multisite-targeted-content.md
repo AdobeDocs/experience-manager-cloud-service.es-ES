@@ -3,7 +3,7 @@ title: Uso del contenido de destino de varios sitios
 description: Si necesita administrar el contenido de destino, como actividades, experiencias y ofertas entre sus sitios, puede aprovechar la compatibilidad multisitio integrada de AEM, para el contenido de destino.
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2893'
 ht-degree: 100%
 

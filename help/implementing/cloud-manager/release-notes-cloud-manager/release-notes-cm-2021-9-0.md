@@ -33,7 +33,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.9.0 es el 9
 
 * Al hacer clic directamente en la tarjeta de programa, ahora accederá al **Información general** página. Consulte [Creación de un programa de producción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) para obtener más información.
 
-### Corrección de errores {#bug-fixes}
+### Correcciones de errores {#bug-fixes}
 
 * El usuario ahora verá un mensaje más comprensible al intentar agregar una nueva Lista de permitidos IP en un programa que haya alcanzado el número máximo permitido de Listas de permitidos IP que se pueden configurar.
 

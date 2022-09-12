@@ -17,7 +17,7 @@ Cuando los componentes compuestos se implementan correctamente dentro del marco 
 
 Este artículo muestra cómo se puede añadir un componente compuesto a la aplicación de una sola página para trabajar sin problemas con el AEM SPA Editor.
 
-## Caso práctico    {#use-case}
+## Caso práctico {#use-case}
 
 Este artículo utilizará el componente de tarjeta típico como ejemplo de uso. Las tarjetas son un elemento común de la interfaz de usuario para muchas experiencias digitales y normalmente están formadas por una imagen y texto o rótulo asociado. Un autor quiere poder arrastrar y soltar toda la tarjeta, pero puede editar individualmente la imagen de la tarjeta, así como personalizar el texto asociado.
 

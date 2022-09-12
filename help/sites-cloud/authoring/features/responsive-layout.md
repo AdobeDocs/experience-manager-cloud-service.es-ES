@@ -3,7 +3,7 @@ title: Diseño adaptable
 description: El AEM le permite llevar a cabo un diseño interactivo para sus páginas
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 100%
 

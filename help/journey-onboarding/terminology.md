@@ -1,13 +1,13 @@
 ---
 title: Terminología as a Cloud Service AEM
 description: Antes de iniciar sesión en AEMaaCS, es útil conocer parte de la terminología del sistema y su estructura básica.
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 18%
 
 ---
-
 
 # Terminología as a Cloud Service AEM {#terminology}
 

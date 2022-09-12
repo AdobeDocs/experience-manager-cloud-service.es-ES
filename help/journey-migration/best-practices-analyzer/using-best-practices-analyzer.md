@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="Uso del Analizador de prácticas recomendadas"
 >abstract="Revise la documentación para utilizar el Analizador de prácticas recomendadas (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
@@ -59,38 +59,38 @@ Siga esta sección para obtener información sobre cómo ver el informe del Anal
 
 1. Seleccione Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador de prácticas recomendadas**.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. Haga clic en **Generar informe** para ejecutar el Analizador de prácticas recomendadas.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. Mientras el BPA está generando el informe, puede ver el progreso realizado por la herramienta en la pantalla. Muestra el número de elementos analizados y también el número de resultados encontrados.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
 
 1. Una vez generado el informe de BPA, muestra un resumen y el número de conclusiones en un formato de tabla organizado por el tipo de búsqueda y el nivel de importancia. Para obtener más información sobre una búsqueda en particular, puede hacer clic en el número que corresponde al tipo de búsqueda en la tabla.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
    La acción anterior se desplazará automáticamente a la ubicación de esa búsqueda en el informe.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
 
 1. Tiene la opción de descargar el informe en formato de valores separados por comas (CSV) haciendo clic en **Exportar a CSV**, como se muestra en la figura siguiente.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
 Puede forzar el BPA para que borre su caché y vuelva a generar el informe haciendo clic en **Actualizar informe**.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
 Mientras el informe se está regenerando, muestra el progreso en términos de porcentaje completado como se muestra en la imagen siguiente.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 
 
@@ -100,14 +100,14 @@ Para filtrar los resultados relacionados con [ACS Commons](https://adobe-consult
 
 1. Haga clic en el icono del carril izquierdo en el lado izquierdo de la página. Se mostrará la variable **Filtro ACS Commons**. Haga clic en el **Filtro ACS Commons** para mostrar la casilla de verificación interactiva como se muestra en la imagen siguiente.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
 El icono del carril izquierdo aparecerá únicamente si el BPA detecta el uso de ACS Commons.
 
 1. Desmarque la casilla para filtrar todos los hallazgos relacionados con ACS Commons. Debería ver un **Recuento de búsqueda filtrado** en el informe como se muestra en la imagen siguiente. El filtro también se aplica al informe cuando se exporta en formato CSV (valores separados por comas).
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
 Los hallazgos de ACS Commons no deben ser ignorados. Consulte [documentación](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar la compatibilidad con AEM as a Cloud Service.

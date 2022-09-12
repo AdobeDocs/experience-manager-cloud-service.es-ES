@@ -168,7 +168,7 @@ Cada vez que publica un recurso o una carta después de editarlo, se crea una ve
 
    El recurso o la carta se devuelven a su versión publicada anteriormente.
 
-## Eliminar un recurso {#delete-an-asset}
+## Eliminación de un recurso {#delete-an-asset}
 
 >[!NOTE]
 >

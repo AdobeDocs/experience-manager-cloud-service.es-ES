@@ -50,7 +50,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.6.0 es el 4
 
 * El paso Generar ahora valida que la compilación produjo al menos un paquete de contenido.
 
-### Corrección de errores {#bug-fixes-cm}
+### Correcciones de errores {#bug-fixes-cm}
 
 * En determinadas situaciones, los iconos del cuadro de diálogo **Crear Programa** estaban desalineados.
 

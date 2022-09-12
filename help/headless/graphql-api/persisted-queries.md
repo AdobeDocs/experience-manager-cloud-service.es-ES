@@ -6,7 +6,7 @@ exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 47%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Las consultas persistentes son consultas de GraphQL que se crean y almacenan en 
 >
 >Se recomiendan las consultas persistentes. Consulte [Prácticas recomendadas para consultas de GraphQL (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) para obtener más información y la configuración de Dispatcher relacionada.
 
-La variable [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) está disponible en AEM para que desarrolle, pruebe y mantenga sus consultas de GraphQL antes de [transferencia a su entorno de producción](#transfer-persisted-query-production). Para los casos que necesitan personalización (por ejemplo, cuando [personaliza la caché](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) puede utilizar la API; consulte el ejemplo de curl que se proporciona en [Persistencia de una consulta de GraphQL](#how-to-persist-query).
+El [IDE de GraphiQL](/help/headless/graphql-api/graphiql-ide.md) está disponible en AEM para que desarrolle, pruebe y mantenga sus consultas de GraphQL antes de la [transferencia a su entorno de producción](#transfer-persisted-query-production). Para los casos que necesitan personalización (por ejemplo, cuando [personaliza la caché](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) puede utilizar la API; consulte el ejemplo de curl que se proporciona en [Persistencia de una consulta de GraphQL](#how-to-persist-query).
 
 ## Consultas y puntos de conexión persistentes {#persisted-queries-and-endpoints}
 
@@ -59,7 +59,7 @@ Existen varios métodos para hacer que persistan las consultas, entre los que se
 * curl: consulte el siguiente ejemplo
 * Otras herramientas, incluido [Postman](https://www.postman.com/)
 
-El IDE de GraphiQL es el **preferido** para consultas persistentes. Para mantener una consulta determinada utilizando la variable **curl** herramienta de línea de comandos:
+El IDE de GraphiQL es el método **preferido** para consultas persistentes. Para mantener una consulta determinada utilizando la herramienta línea de comandos **curl**:
 
 1. Prepare la consulta colocándola en la nueva URL de punto de conexión `/graphql/persist.json/<config>/<persisted-label>`.
 
@@ -188,7 +188,7 @@ El IDE de GraphiQL es el **preferido** para consultas persistentes. Para mantene
 
 ## Ejecución de una consulta persistente {#execute-persisted-query}
 
-Para ejecutar una consulta persistente, una aplicación cliente realiza una solicitud de GET utilizando la siguiente sintaxis:
+Para ejecutar una consulta persistente, una aplicación cliente realiza una petición GET utilizando la siguiente sintaxis:
 
 ```
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
@@ -257,13 +257,13 @@ Esta consulta se puede mantener en una ruta `wknd/adventures-by-activity`. Para 
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-Tenga en cuenta que `%3B` es la codificación UTF-8 para `;` y `%3D` es la codificación para `=`. Las variables de consulta y los caracteres especiales deben ser [codificado correctamente](#encoding-query-url) para que se ejecute la consulta persistente.
+Tenga en cuenta que `%3B` es la codificación UTF-8 para `;` y `%3D` es la codificación para `=`. Las variables de consulta y los caracteres especiales deben ser [codificados correctamente](#encoding-query-url) para que se ejecute la consulta persistente.
 
 ## Almacenamiento en caché de las consultas persistentes {#caching-persisted-queries}
 
 Se recomiendan las consultas persistentes, ya que se pueden almacenar en caché en las capas de Dispatcher y CDN, lo que a la larga mejora el rendimiento de la aplicación cliente solicitante.
 
-De forma predeterminada, AEM invalidará la caché de la red de entrega de contenido (CDN) en función de un tiempo de vida predeterminado (TTL).
+De forma predeterminada, AEM invalidará la caché de la red de distribución de contenido (CDN) en función de un tiempo de vida predeterminado (TTL).
 
 Este valor se establece en lo siguiente:
 
@@ -272,14 +272,14 @@ Este valor se establece en lo siguiente:
 * 60 es el TTL predeterminado para el cliente (por ejemplo, un explorador)
    * default: maxage=60
 
-Si desea cambiar el TTL para la consulta de GraphLQ, la consulta debe ser:
+Si desea cambiar el TTL para la consulta de GraphLQ, la consulta debe ser la siguiente:
 
-* persistió después de administrar la variable [Encabezados de caché HTTP: desde el IDE de GraphQL](#http-cache-headers)
-* persistió usando la variable [método de API](#cache-api).
+* persistió después de administrar los [Encabezados de caché HTTP: desde el IDE de GraphQL](#http-cache-headers).
+* persistió usando el [método de API](#cache-api).
 
 ### Administración de encabezados de caché HTTP en GraphQL  {#http-cache-headers-graphql}
 
-El IDE de GraphiQL: consulte [Guardar consultas persistentes](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+El IDE de GraphiQL: consulte [Guardado de consultas persistentes](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
 ### Administración de caché desde la API {#cache-api}
 
@@ -300,7 +300,7 @@ El `cache-control` se puede configurar en el momento de la creación (PUT) o má
 
 ## Codificación de la URL de consulta para su uso en una aplicación {#encoding-query-url}
 
-Para su uso por una aplicación, cualquier carácter especial utilizado al construir variables de consulta (es decir, punto y coma (`;`), signo igual (`=`), barras oblicuas `/`) debe convertirse para utilizar la codificación UTF-8 correspondiente.
+Para su uso en una aplicación, cualquier carácter especial utilizado al construir variables de consulta (es decir, punto y coma (`;`), signo igual (`=`), barras oblicuas `/`) debe convertirse para utilizar la codificación UTF-8 correspondiente.
 
 Por ejemplo:
 
@@ -326,7 +326,7 @@ En texto sin formato, el URI de solicitud tiene el siguiente aspecto:
 /graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
 ```
 
-Para utilizar una consulta persistente en una aplicación cliente, se debe utilizar el SDK de cliente AEM sin encabezado para [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java)o [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). El SDK de cliente sin encabezado codificará automáticamente todas las variables de consulta de la forma adecuada en la solicitud.
+Para utilizar una consulta persistente en una aplicación cliente, se debe utilizar el SDK de cliente AEM sin encabezado para [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java) o [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). El SDK de cliente sin encabezado codificará automáticamente todas las variables de consulta de la forma adecuada en la solicitud.
 
 ## Transferencia de una consulta persistente al entorno de producción  {#transfer-persisted-query-production}
 
@@ -334,19 +334,19 @@ Las consultas persistentes siempre deben crearse en un servicio de AEM Author y 
 
 ### Empaquetar consultas persistentes
 
-Las consultas persistentes se pueden incorporar en [Paquetes AEM](/help/implementing/developing/tools/package-manager.md). AEM paquetes se pueden descargar e instalar en diferentes entornos. AEM paquetes también se pueden replicar desde un entorno de AEM Author a entornos de AEM Publish.
+Las consultas persistentes se pueden incorporar en [Paquetes AEM](/help/implementing/developing/tools/package-manager.md). Los paquetes AEM se pueden descargar e instalar en diferentes entornos. Los paquetes AEM también se pueden replicar desde un entorno de AEM Author a entornos de AEM Publish.
 
-Para crear un paquete:
+Para crear un paquete, haga lo siguiente:
 
 1. Vaya a **Herramientas** > **Implementación** > **Paquetes**.
-1. Cree un nuevo paquete tocando **Crear paquete**. Se abrirá un cuadro de diálogo para definir el paquete.
-1. En el cuadro de diálogo Definición de paquete, en **General** introduzca un **Nombre** como &quot;wknd-persistent-queries&quot;.
-1. Escriba un número de versión como &quot;1.0&quot;.
-1. En **Filtros** agregar una nueva **Filtro**. Utilice el Buscador de rutas para seleccionar la variable `persistentQueries` debajo de la configuración. Por ejemplo, para la variable `wknd` configuración de la ruta completa `/conf/wknd/settings/graphql/persistentQueries`.
+1. Cree un nuevo paquete tocando **Crear paquete**. Se abre un cuadro de diálogo para definir el paquete.
+1. En el cuadro de diálogo Definición de paquete, en **General** introduzca un **Nombre** como “wknd-persistent-queries”.
+1. Escriba un número de versión como “1.0”.
+1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para la configuración `wknd` la ruta completa será `/conf/wknd/settings/graphql/persistentQueries`.
 1. Toque **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
-1. Toque . **Generar** en la definición del paquete recién creada.
+1. Toque el botón **Generar** en la definición del paquete recién creada.
 
-Una vez creado el paquete, puede:
+Una vez creado el paquete, puede hacer lo siguiente:
 
 * **Descargar** el paquete y vuelva a cargarlo en un entorno diferente.
 * **Replicar** el paquete tocando **Más** > **Replicar**. Esto replicará el paquete en el entorno de publicación de AEM conectado.

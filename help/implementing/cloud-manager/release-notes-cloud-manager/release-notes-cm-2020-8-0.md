@@ -34,7 +34,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.8.0 es el 6
 
 * Capacidad para realizar comprobaciones de experiencias en páginas, con tecnología Google Lighthouse. Como parte de la canalización de Cloud Manager, se pueden comprobar y validar hasta 25 páginas con KPI de experiencia, y las puntuaciones se muestran en la interfaz de usuario de Cloud Manager.
 
-### Corrección de errores {#bug-fixes-cm}
+### Correcciones de errores {#bug-fixes-cm}
 
 * Algunos complementos innecesarios y no deseados de SonarQube se estaban ejecutando como parte del análisis de calidad del código.
 

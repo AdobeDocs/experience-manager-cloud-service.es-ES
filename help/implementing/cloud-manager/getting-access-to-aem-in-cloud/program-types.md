@@ -5,7 +5,7 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
@@ -18,16 +18,16 @@ Cloud Manager se basa en una jerarquía de entidades. Los detalles de esto no so
 
 * **INQUILINO** - Esta es la parte superior de la jerarquía. Cada cliente se aprovisiona con un inquilino.
 * **PROGRAMAS** - Cada inquilino tiene uno o más programas, [que a menudo reflejan las soluciones con licencia del cliente.](introduction-production-programs.md)
-* **ENTORNOS** - Cada programa tiene múltiples entornos, como producción para contenido en directo, uno para ensayo y otro para desarrollo.
+* **ENTORNOS**: cada programa tiene múltiples entornos, como producción para contenido en directo, uno para ensayo y otro para desarrollo.
    * Cada programa puede tener un solo entorno de producción, pero varios entornos que no sean de producción.
 * **REPOSITORIO** - Los programas tienen repositorios de Git donde el código de la aplicación y del front-end se mantiene para los entornos.
 * **HERRAMIENTAS Y FLUJOS DE TRABAJO** : las canalizaciones administran la implementación de código desde los repositorios a los entornos, mientras que otras herramientas permiten el acceso a los registros, la monitorización y la administración del entorno.
 
 Un ejemplo suele ser útil para contextualizar esta jerarquía.
 
-* WKND Las empresas de viajes y aventura pueden ser una **inquilino** que se centra en medios relacionados con viajes.
-* El inquilino de WKND Travel and Adventure Enterprises puede tener dos **programas**: un programa Sites para WKND Magazine y un programa Assets para WKND Media.
-* Los programas WKND Magazine y WKND Media tendrían desarrollo, escenario y producción **entornos**.
+* Las empresas de viajes y aventura de WKND pueden ser un **inquilino** que se centra en medios relacionados con viajes.
+* El inquilino de empresas de viajes y aventura de WKND puede tener dos **programas**: un programa de Sites para la revista de WKND y uno de Assets para los medios de WKND.
+* Los programas de revista de WKND y de medios de WKND tendrían **entornos** de desarrollo, ensayo y producción.
 
 ## Repositorio de códigos de origen {#source-code-repository}
 

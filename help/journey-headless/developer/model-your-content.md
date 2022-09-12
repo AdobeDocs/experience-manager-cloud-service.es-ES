@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -200,9 +200,9 @@ Por ejemplo, puede hacer referencia a una imagen en una ubicación específica.
 * **Referencia de fragmento**
 Esto proporciona referencias a otros fragmentos de contenido.
 Este tipo de referencia se utiliza para crear contenido anidado y presenta las relaciones necesarias para modelar el contenido.
-El tipo de datos se puede configurar para que los autores de fragmentos puedan:
-   * Edite directamente el fragmento al que se hace referencia.
-   * Cree un nuevo fragmento de contenido basado en el modelo apropiado
+El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
+   * Editar directamente el fragmento al que se hace referencia.
+   * Crear un nuevo fragmento de contenido basado en el modelo apropiado
 
 ### Creación de modelos de fragmento de contenido {#creating-content-fragment-models}
 
@@ -242,7 +242,7 @@ Una vez creado el fragmento, puede abrirlo en el Editor de fragmentos de conteni
 * Asociar contenido.
 * Edite los metadatos.
 * Mostrar la estructura de árbol.
-* Obtenga una vista previa de la representación JSON.
+* Previsualización de la representación JSON.
 
 ### Creación de fragmentos de contenido {#creating-content-fragments}
 

@@ -70,14 +70,14 @@ Es importante determinar el tamaño total del almacén de datos por dos motivos:
 
 Desde la página de propiedades del contenedor en el portal de Azure, utilice el **Calcular tamaño** para determinar el tamaño de todo el contenido del contenedor. Por ejemplo:
 
-![image](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![imagen](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Almacenamiento de datos de Amazon S3 {#amazon-data}
 
 Puede utilizar la ficha Métricas del contenedor para determinar el tamaño de todo el contenido del contenedor. Por ejemplo:
 
 
-![image](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
+![imagen](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 #### Almacén de datos de archivo {#file-data-store-determine-size}
 

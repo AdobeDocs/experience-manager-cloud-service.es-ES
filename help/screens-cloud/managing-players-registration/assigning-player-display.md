@@ -25,11 +25,11 @@ Siga los pasos a continuación para asignar un reproductor a una pantalla:
 
 1. Select **Reproductores** en el panel de administración de red del panel de navegación izquierdo y seleccione el reproductor. Haga clic en **Asignar visualización**
 
-   ![image](/help/screens-cloud/assets/player/register-player7.png)
+   ![imagen](/help/screens-cloud/assets/player/register-player7.png)
 
 1. **Asignar una visualización** se abre. Seleccione la visualización de la lista y haga clic en **Select**.
 
-   ![image](/help/screens-cloud/assets/player/register-player8.png)
+   ![imagen](/help/screens-cloud/assets/player/register-player8.png)
 
 ## Reproducción de contenido {#content-playback}
 
@@ -37,4 +37,4 @@ Una vez que haya asignado una pantalla a un reproductor, como se muestra en la s
 
 Ahora, la pantalla se asigna al reproductor y el canal comienza a reproducir el contenido. El reproductor debería descargar y comenzar a reproducir contenido. **Felicitaciones!**
 
-![image](/help/screens-cloud/assets/player/output.gif)
+![imagen](/help/screens-cloud/assets/player/output.gif)

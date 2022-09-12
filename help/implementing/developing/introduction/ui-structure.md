@@ -5,7 +5,7 @@ exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -60,7 +60,7 @@ El carril izquierdo se puede abrir u ocultar según sea necesario para mostrar:
 
 * **Solo contenido**
 * **Árbol de contenido**
-* **Escala de tiempo**
+* **Escala de cronología**
 * **Referencias**
 * **Filtro**
 

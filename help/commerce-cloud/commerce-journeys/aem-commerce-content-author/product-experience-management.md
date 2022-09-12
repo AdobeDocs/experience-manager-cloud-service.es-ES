@@ -5,7 +5,7 @@ exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -101,15 +101,15 @@ Si ha creado contenido asociado para ese producto, cambie en la barra lateral de
 
 ![página enriquecida por pem](assets/pem-page-enriched.png)
 
-## ¿Fin del Recorrido? {#end-of-journey}
+## ¿Fin del recorrido? {#end-of-journey}
 
-Felicitaciones! ¡Ha completado el recorrido para desarrolladores de contenido y comercio de AEM! Ahora debería:
+¡Felicitaciones! ¡Ha completado el recorrido para desarrolladores de contenido y comercio de AEM! Ahora debería hacer lo siguiente:
 
 * comprender cómo se puede asociar cualquier contenido de AEM a los objetos del catálogo de productos
 * utilice marcadores de posición para enriquecer individualmente las páginas de productos y categorías
 * sepa cómo hacer que el contenido se pueda comprar y utilizar la pestaña de contenido asociada
 
-Ya está listo para administrar experiencias de producto mediante AEM Contenido y comercio. Sin embargo, AEM Contenido y Comercio tienen muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la [Sección Recursos adicionales](#additional-resources) para obtener más información sobre las funciones que ha visto en este recorrido.
+Ya está listo para administrar experiencias de producto mediante AEM Contenido y comercio. Sin embargo, AEM Contenido y Comercio tienen muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la sección [Recursos adicionales](#additional-resources) para obtener más información acerca de las funciones que ha visto en este recorrido.
 
 ## Recursos adicionales {#additional-resources}
 

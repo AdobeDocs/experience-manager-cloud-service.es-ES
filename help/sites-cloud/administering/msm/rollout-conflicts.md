@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ En las secciones siguientes utilizamos el ejemplo de la página nueva `b`, cread
 |---|---|---|---|
 | Value | `b` | `b` | `b` |
 | Comentar | Creado en rama de modelo, listo para su despliegue | Creado manualmente en la rama de Live Copy | Aparece el contenido de la página `b` que se creó manualmente en la rama de Live Copy |
-| Value | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
+| Valor | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Comentar |  | Creado manualmente en la rama de Live Copy | aparece el contenido de la página `child-level-1` que se creó manualmente en la rama de Live Copy |
 
 ## Administrador de despliegue y gestión de conflictos {#rollout-manager-and-conflict-handling}
@@ -97,9 +97,9 @@ Este controlador de conflictos da prioridad al modelo. Por ejemplo, la página d
 
 |  | Modelo después del despliegue | Live Copy después del despliegue | Live Copy después del despliegue | Publicación después del despliegue |
 |---|---|---|---|---|
-| Value | `b` | `b` | `b_msm_moved` | `b` |
+| Valor | `b` | `b` | `b_msm_moved` | `b` |
 | Comentar |  | Tiene el contenido de la página de modelo `b` que se desplegó | Tiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy | Sin cambios, contiene el contenido de la página original `b` que se creó manualmente en la rama de Live Copy y ahora se llama `b_msm_moved` |
-| Value | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
+| Valor | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Comentar |  |  | Sin cambios | Sin cambios |
 
 ### Controladores personalizados {#customized-handlers}
@@ -137,9 +137,9 @@ En este caso, Live Copy tiene prioridad. La página de modelo `/b` no se copia y
 
 |  | Modelo después del despliegue | Live Copy después del despliegue | Publicación después del despliegue |
 |---|---|---|---|
-| Value | `b` | `b` | `b` |
+| Valor | `b` | `b` | `b` |
 | Comentar |  | Sin cambios, tiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy | Sin cambios, contiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy |
-| Value | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
+| Valor | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Comentar |  | Sin cambios | Sin cambios |
 
 ### Clasificación de servicios {#service-rankings}

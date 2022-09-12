@@ -1,6 +1,6 @@
 ---
-title: Notas de la versión 2021.3.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.3.0."'
+title: Notas de la versión 2021.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
@@ -114,7 +114,7 @@ La próxima versión está planificada para el 08 de abril de 2021.
 
 * La canalización de producción de Cloud Manager ahora incluye [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) capacidad.
 
-### Corrección de errores {#bug-fixes-cm-march}
+### Correcciones de errores {#bug-fixes-cm-march}
 
 * En algunos casos, las versiones de paquetes se omitían durante AEM actualización push.
 
@@ -136,9 +136,9 @@ La próxima versión está planificada para el 08 de abril de 2021.
 
 La fecha de versión de la herramienta de transferencia de contenido v1.3.4 es el 19 de marzo de 2021.
 
-### Corrección de errores {#bug-fixes-ctt}
+### Correcciones de errores {#bug-fixes-ctt}
 
-* CTT omitía contenido de carpetas con el mismo nombre pero con un guión en el nombre. Esto se ha solucionado.
+* CTT omitía contenido de carpetas con el mismo nombre pero con un guión en el nombre. Esto se ha corregido.
 
 ### Fecha de la versión {#release-date-ctt-march}
 
@@ -149,15 +149,15 @@ La fecha de versión de la herramienta de transferencia de contenido v1.3.0 es e
 * CTT ahora se instala en `/apps` en lugar de `/libs` Es posible que los marcadores del explorador para ciertas páginas ya no sean válidos.
 * Cuando se instala CTT, el usuario tendrá que navegar un nivel adicional para llegar a la página de transferencia de contenido. Consulte [Uso de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) para obtener más información.
 
-### Corrección de errores {#bug-fixes-ctt-march}
+### Correcciones de errores {#bug-fixes-ctt-march}
 
-* Al migrar contenido desde una ruta específica, CTT obtenía recursos no relacionados. Esto se ha solucionado
+* Al migrar contenido desde una ruta específica, CTT obtenía recursos no relacionados. Esto se ha corregido.
 
 ## Analizador de prácticas recomendadas {#best-practices-analyzer}
 
 ### Fecha de la versión {#release-date-bpa}
 
-La fecha de versión de Best Practices Analyzer v2.1.8 es el 22 de marzo de 2021.
+El 22 de marzo de 2021 es la fecha de lanzamiento del Analizador de prácticas recomendadas versión 2.1.8.
 
 ### Novedades de Best Practices Analyzer {#what-is-new-bpa}
 

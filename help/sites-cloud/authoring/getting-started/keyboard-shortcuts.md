@@ -1,5 +1,5 @@
 ---
-title: 'Métodos abreviados del teclado para las consolas  '
+title: Métodos abreviados del teclado para las consolas
 description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881

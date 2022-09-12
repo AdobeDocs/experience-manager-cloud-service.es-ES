@@ -5,13 +5,13 @@ exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
 # Introducción a AEM Screens as a Cloud Service {#introduction-screens-cloud}
 
-Con AEM Screens as a Cloud Service, puede crear experiencias de señalización digital atractivas y dinámicas que se pretendan consumir en espacios públicos. Es la siguiente evolución del producto AEM Screens y representa un gran avance en la capacidad de uso y la escalabilidad.
+Con AEM Screens as a Cloud Service, puede crear experiencias de señalización digital atractivas y dinámicas pensadas para consumirse en espacios públicos. Es la siguiente evolución del producto AEM Screens y representa un gran avance en la capacidad de uso y la escalabilidad.
 
 AEM Screens as a Cloud Service es una solución de señalización digital que permite a los especialistas en marketing crear y administrar experiencias digitales dinámicas a escala. Además, implica diferentes tipos de pantallas físicas como parte de una estrategia de marketing digital integral. Amplía la oferta omnicanal del Adobe más allá de los canales web y móviles habituales, para incluir también canales de señalización digital que nos rodean. AEM Screens as a Cloud Service permite experiencias de usuario más relevantes, contextuales, productivas y anticipadoras mediante una comprensión profunda de la creación de contenido, el ensamblado de contenido, la administración de eventos activada y la reproducción de contenido para todos los consumidores y visitantes de cualquier espacio público.
 
@@ -28,4 +28,4 @@ Las pantallas as a Cloud Service tienen dos componentes principales:
 
 Como usuario as a Cloud Service de AEM Screens, puede añadir y administrar contenido en canales, registrar y administrar pantallas y reproductores desde las interfaces diseñadas específicamente para Screens as a Cloud Service, concretamente, **Proveedor de servicios de Screens** y **Proveedor de contenido de Screens**.
 
-![image](/help/screens-cloud/assets/architecture-screenscloud.png)
+![imagen](/help/screens-cloud/assets/architecture-screenscloud.png)

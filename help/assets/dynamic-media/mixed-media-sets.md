@@ -69,7 +69,7 @@ Si es necesario, puede editar [Conjuntos de medios mixtos](#editing-mixed-media-
 >
 >Si tiene problemas al crear conjuntos, consulte [Resolución de problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 
-## Cargar recursos {#uploading-assets}
+## Carga de recursos {#uploading-assets}
 
 Comience por cargar las imágenes y los vídeos de los conjuntos de medios mixtos. Recuerde que los usuarios pueden aplicar zoom a las imágenes en el visualizador de conjuntos de medios mixtos. Como tal, elija imágenes con esta capacidad de zoom en mente. Asegúrese de que las imágenes tengan al menos 2000 píxeles en el tamaño más grande.
 

@@ -44,7 +44,7 @@ Puede crear muchos ajustes preestablecidos de conjuntos de lotes para cubrir tod
 
 La variable **[!UICONTROL Convención de nomenclatura de recursos]** en el **[!UICONTROL Ajuste preestablecido de conjunto de lotes]** tiene dos elementos que puede utilizar para definir el ajuste preestablecido de conjunto de lotes: **[!UICONTROL Coincidencia]** y **[!UICONTROL Nombre base]**. Estos elementos permiten definir una convención de nombres e identificar la parte de la convención utilizada para asignar un nombre al conjunto en el que están contenidos. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
-La convención de nombres individual de una empresa a menudo utiliza una o más líneas de definición de cada uno de estos dos elementos. Puede utilizar tantas líneas para su definición única y agruparlas en elementos distintos, como Imagen principal, Elemento de color, Elemento de vista alternativa y Elemento de muestra.
+La convención de nombres individual de una empresa suele utilizar una o más líneas de definición de cada uno de estos dos elementos. Puede utilizar tantas líneas para su definición única y agruparlas en elementos distintos, como Imagen principal, Elemento de color, Elemento de vista alternativa y Elemento de muestra.
 
 Por ejemplo, la sintaxis de una expresión regular de coincidencia literal podría ser similar a la siguiente:
 

@@ -25,7 +25,7 @@ Este artículo se basa en estos fundamentos para que entienda cómo puede utiliz
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender AEM sin encabezado en el contexto de su propio proyecto. Después de leer, debe:
+Este documento le ayuda a comprender AEM sin encabezado en el contexto de su propio proyecto. Después de leer, debería haber logrado lo siguiente:
 
 * Comprender los conceptos básicos de AEM funciones sin encabezado.
 * Conozca los requisitos previos para utilizar AEM funciones sin encabezado.

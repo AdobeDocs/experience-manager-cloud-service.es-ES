@@ -1,6 +1,6 @@
 ---
-title: Notas de la versión 2021.8.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2021.8.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2021.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2021.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -112,7 +112,7 @@ Consulte [Informes de SLA](https://experienceleague.adobe.com/docs/experience-ma
 
 * La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 29.
 
-### Corrección de errores {#bug-fixes-aug}
+### Correcciones de errores {#bug-fixes-aug}
 
 * Actualizar el estado disponible no se debe mostrar cuando la última versión sea menor que la versión actual.
 
@@ -126,7 +126,7 @@ Consulte [Informes de SLA](https://experienceleague.adobe.com/docs/experience-ma
 
 La fecha de versión de la herramienta de transferencia de contenido v1.5.6 es el 11 de agosto de 2021.
 
-### Corrección de errores {#bug-fixes-ctt}
+### Correcciones de errores {#bug-fixes-ctt}
 
 * En algunos casos, no todos los usuarios se migraron a la instancia de destino. Para obtener esta corrección, se requiere CTT v1.5.6 junto con aem-ethos-tools 1.2.354 o una versión posterior en la instancia as a Cloud Service de AEM de destino.
 

@@ -47,7 +47,7 @@ Los pasos exactos de la transición a Cloud Service dependen de los sistemas que
 
 La siguiente figura muestra los pasos principales involucrados en la fase que implica la conversión del código y el contenido para su uso con AEM as a Cloud Service:
 
-![image](/help/journey-migration/assets/exec-image1.png)
+![imagen](/help/journey-migration/assets/exec-image1.png)
 
 Empezaremos a detallar las herramientas que necesita utilizar para lograrlo en los capítulos siguientes.
 
@@ -210,7 +210,7 @@ La siguiente tabla ilustra un rastreador de migración funcional:
 
 En la siguiente sección se muestran los pasos importantes y las tareas asociadas que se pueden utilizar para formular una estrategia y una cronología de migración de contenido.
 
-![image](/help/journey-migration/assets/content-migration2.png)
+![imagen](/help/journey-migration/assets/content-migration2.png)
 
 ### Contratación {#fitment}
 

@@ -3,7 +3,7 @@ title: Recorridos de AEM Sites
 description: Comience aquí para obtener una descripción general de los recorridos guiados disponibles para comprender las potentes funciones de los sitios de AEM.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 

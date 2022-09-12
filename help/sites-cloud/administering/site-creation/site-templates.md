@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Puede agregar varias plantillas a AEM, que luego se pueden usar para [crear siti
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Toque o haga clic **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de una plantilla**.
+1. Toque o haga clic en **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de una plantilla**.
 
    ![Creación de un sitio a partir de una plantilla](../assets/create-site-from-template.png)
 
@@ -60,7 +60,7 @@ Al seleccionar una plantilla existente, muestra información sobre la plantilla 
 Las plantillas de sitio son simplemente paquetes con una estructura lógica que refleja claramente el propósito del contenido del paquete. Una plantilla de sitio tiene la siguiente estructura.
 
 * `files`: carpeta con el kit de interfaz de usuario, XD archivo y, posiblemente, otros archivos
-* `previews`: carpeta con capturas de pantalla de la plantilla del sitio
+* `previews`: carpeta con capturas de pantalla de la plantilla del sitio.
 * `site`: paquete de contenido del contenido que se copia para cada sitio creado a partir de esta plantilla, como plantillas de página, páginas, etc.
 * `theme`: fuentes de [tema del sitio](site-themes.md) para modificar el aspecto del sitio, incluidos CSS, JavaScript, etc.
 

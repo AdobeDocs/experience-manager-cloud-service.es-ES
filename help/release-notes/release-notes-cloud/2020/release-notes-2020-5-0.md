@@ -40,7 +40,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 * Se ha mejorado el rendimiento de la página de Actividad y de la API de Lista de ejecuciones de canalización.
 * El registro de calidad del código ahora contiene todos los seguimientos de pila para excepciones.
 
-### Corrección de errores  {#bug-fixes}
+### Correcciones de errores  {#bug-fixes}
 
 * Se mostraba una tarjeta engañosa en la página de información general mientras se ejecutaba la canalización de producción.
 * La regla de calidad del código *DontImplementeOrExtendProviderTypesPomCheck* puede producir a veces una excepción de puntero nulo.

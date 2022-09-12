@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2020.9.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.9.0."'
+title: Notas de la versión 2020.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.9.0."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -34,7 +34,7 @@ La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service 20
    * Publicación selectiva: ahora es posible que un equipo de marketing acceda [!DNL Dynamic Media] imágenes de recorte inteligente y representaciones dinámicas sincronizadas con [!DNL Dynamic Media] para que puedan crear materiales promocionales, sin necesidad de publicar esos recursos en [!DNL Dynamic Media] para la entrega global. [!DNL Experience Manager] y [!DNL Dynamic Media] la publicación está disociada y puede producirse por separado para conseguirlo. Consulte [publicación selectiva](/help/assets/dynamic-media/selective-publishing.md).
    * Los administradores ahora pueden restablecer [!DNL Dynamic Media] La contraseña del Cloud Service que se recibe en el aprovisionamiento. El restablecimiento se puede realizar en [!DNL Experience Manager] interfaz de usuario, sin necesidad de usar la variable [!DNL Dynamic Media Classic] aplicación de escritorio.
 
-* Para obtener información sobre las siguientes mejoras, consulte [novedades de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+* Para obtener información sobre las siguientes mejoras, consulte [novedades de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es).
 
    * Se ha mejorado la vista previa del PDF con la integración del SDK de vistas de Adobe Document Cloud.
    * Funcionalidad de descarga con un solo clic.
@@ -60,7 +60,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * Funcionalidad de búsqueda de productos agregada a la consola de producto.
 
-### Corrección de errores {#bug-fixes-commerce}
+### Correcciones de errores {#bug-fixes-commerce}
 
 * Las configuraciones de Commerce Cloud no respetaban la herencia. Esto se ha solucionado para garantizar que la configuración herede los valores.
 
@@ -76,7 +76,7 @@ La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2020.9.0 es el
 * El proceso de compilación se ha separado en tres comandos Maven independientes.
 * Si el repositorio Git no se clona, se volverá a crear hasta tres veces.
 
-### Corrección de errores {#bug-fixes-cm}
+### Correcciones de errores {#bug-fixes-cm}
 
 * La pestaña Auditoría de contenido mostraba incorrectamente la URL base utilizando el dominio de autor en lugar del dominio de publicación.
 
@@ -92,7 +92,7 @@ Consulte esta sección para conocer las novedades y las actualizaciones de Cloud
 
 * El informe de CRA muestra un resumen y el número de conclusiones en un formato de tabla organizado por el tipo de búsqueda y el nivel de importancia. Al hacer clic en el número de esa búsqueda, se desplazará automáticamente a la ubicación de esa búsqueda en el informe.
 
-### Corrección de errores {#cra-bug-fixes}
+### Correcciones de errores {#cra-bug-fixes}
 
 * En algunos casos, el informe CRA no se actualizaba después de forzar una actualización. Esto se ha corregido en esta versión.
 

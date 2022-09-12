@@ -120,13 +120,13 @@ Lista de metapropiedades de un tema (que se encuentran en la página de propieda
   </tr>
   <tr>
    <td>5.</td>
-   <td>Nombre del autor</td>
+   <td>Nombre de autor</td>
    <td>Sí</td>
    <td>Autor del tema. Se calcula en el momento de la creación del tema.</td>
   </tr>
   <tr>
    <td>6.</td>
-   <td>Fecha de la última modificación</td>
+   <td>Fecha de última modificación</td>
    <td>No</td>
    <td>Fecha en la que se modificó el tema por última vez.</td>
   </tr>
@@ -138,7 +138,7 @@ Lista de metapropiedades de un tema (que se encuentran en la página de propieda
   </tr>
   <tr>
    <td>8.</td>
-   <td>Publicar a tiempo</td>
+   <td>Tiempo de activación de publicación</td>
    <td>Sí</td>
    <td>Es hora de publicar automáticamente el tema.</td>
   </tr>
@@ -384,7 +384,7 @@ Las opciones para personalizar los estilos de estado varían para los distintos 
  <tbody>
   <tr>
    <td><strong>Propiedad</strong></td>
-   <td><strong>Uso</strong></td>
+   <td><strong>Uso de</strong></td>
   </tr>
   <tr>
    <td><p>Dimensiones y posición</p> </td>

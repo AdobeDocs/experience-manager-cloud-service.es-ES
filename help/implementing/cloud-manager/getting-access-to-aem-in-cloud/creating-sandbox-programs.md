@@ -1,15 +1,15 @@
 ---
-title: 'Creación de programas de Simulador para pruebas '
+title: Creación de programas de zona protegida
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de simulación de pruebas para formación, demostración, POC u otros fines que no sean de producción.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
-# Creación de programas de Simulador para pruebas {#create-sandbox-program}
+# Creación de programas de zona protegida {#create-sandbox-program}
 
 Un programa de simulación de pruebas suele crearse para servir a los fines de formación, ejecución de demostraciones, habilitación, POC o documentación, y no está diseñado para transportar tráfico en directo.
 

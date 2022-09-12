@@ -1,5 +1,5 @@
 ---
-title: 'Administrar publicación    '
+title: Administrar publicación
 description: Publicar o cancelar la publicación de recursos en Experience Manager Assets, Dynamic Media y Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1

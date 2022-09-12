@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.2.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.2.0."'
+title: Notas de la versión 2021.2.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1237'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -107,7 +107,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.2.0 es el 1
 
 * Se han agregado reglas de calidad de código adicionales para cubrir los problemas de compatibilidad con el Cloud Service.
 
-### Corrección de errores {#bug-fixes-cloud-manager}
+### Correcciones de errores {#bug-fixes-cloud-manager}
 
 * La coincidencia del certificado SSL con un nombre de dominio ya no distingue entre mayúsculas y minúsculas.
 
@@ -123,15 +123,15 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.2.0 es el 1
 
 ### Fecha de la versión {#release-date-ctt}
 
-La fecha de versión de la herramienta de transferencia de contenido v1.2.4 es el 10 de febrero de 2021.
+La fecha de lanzamiento de la herramienta de transferencia de contenido versión 1.2.4 es el 10 de febrero de 2021.
 
-### Corrección de errores {#bug-fixes-ctt}
+### Correcciones de errores {#bug-fixes-ctt}
 
-* Al asignar varios usuarios, los ID de IMS de algunos usuarios se asignaban incorrectamente. Esto se ha solucionado.
+* Al asignar varios usuarios, los ID de IMS de algunos usuarios se asignaban incorrectamente. Esto se ha corregido.
 
 ### Fecha de la versión {#release-date-ctt-feb}
 
-La fecha de versión de la herramienta de transferencia de contenido v1.2.2 es el 1 de febrero de 2021.
+La fecha de lanzamiento de la herramienta de transferencia de contenido versión 1.2.2 es el 01 de febrero de 2021.
 
 ### Novedades de la herramienta de transferencia de contenido {#what-is-new-ctt}
 
@@ -161,7 +161,7 @@ La fecha de versión de Best Practices Analyzer v2.1.2 es el 18 de febrero de 20
 * Se ha lanzado una nueva versión del complemento AIO-CLI. La última versión de este complemento incluye varias correcciones de errores para el Modernizador de repositorio.
 Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para obtener más información sobre este complemento.
 
-### Corrección de errores {#bug-fixes-crt}
+### Correcciones de errores {#bug-fixes-crt}
 
 * Se han hecho varias correcciones de errores en el Modernizador de repositorio.
 Consulte [Recurso de GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obtener más información.

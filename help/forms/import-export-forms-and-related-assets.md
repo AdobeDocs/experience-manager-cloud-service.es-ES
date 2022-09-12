@@ -1,5 +1,5 @@
 ---
-title: 'Importación y exportación de recursos '
+title: Importación y exportación de recursos
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: Puede importar y exportar Forms adaptable y recursos relacionados a instancias AEM. Esto ayuda a migrar formularios o a moverlos a través de sistemas.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
@@ -46,7 +46,7 @@ No puede descargar Forms adaptable, fragmentos de formularios adaptables y temas
    >
    >Tanto AEM paquete como los archivos binarios se descargan como un archivo (archivo .zip). Las plantillas de los recursos no se descargan junto con los recursos. Debe exportar las plantillas de recursos por separado.
 
-### Cargar recursos {#upload-forms-amp-documents-assets}
+### Carga de recursos {#upload-forms-amp-documents-assets}
 
 Para cargar recursos de Forms &amp; Documents:
 

@@ -3,7 +3,7 @@ title: Habilitación de AEM Screens para el sitio de demostración
 description: Conozca los pasos para habilitar la experiencia completa de AEM Screens as a Cloud Service en su sitio de demostración.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2671'
 ht-degree: 100%
 

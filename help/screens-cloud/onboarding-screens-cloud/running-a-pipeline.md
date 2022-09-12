@@ -24,35 +24,35 @@ En la siguiente sección se describe cómo configurar la canalización de CI/CD 
 
 1. Una vez que la configuración del entorno se haya completado correctamente, verá la actualización de la tarjeta de llamada a la acción en el **Información general** página.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-environ3.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/add-environ3.png)
 
 1. Haga clic en **Configuración de canalización** de la variable **Información general** página.
 
 1. Haga clic en **Siguiente** después de seleccionar la rama.
 
-   ![image](/help/screens-cloud/assets/onboarding/run-pipeline1.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/run-pipeline1.png)
 
 1. Seleccione las opciones de la lista **Configuración de canalización** asistente. Haga clic en **Guardar**.
 
    >[!NOTE]
    >Para obtener más información sobre las opciones del asistente Configuración de canalización , consulte [Configuración de canalización desde Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) para obtener más información.
 
-   ![image](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Una vez finalizada la canalización de configuración, la tarjeta de llamada a la acción se actualiza, como se muestra en la figura siguiente. Haga clic en Implementar.
 
    >[!NOTE]
    >Para obtener más información sobre las fases de implementación en Cloud Manager, consulte [Implementación del código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en) para obtener más información.
 
-   ![image](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 
 1. Haga clic en **Generar** para iniciar el proceso de compilación.
 
-   ![image](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
 1. Una vez que se complete el proceso de compilación, verá un vínculo de autor desde el **Entornos** Tarjeta de Cloud Manager **Información general** página.
 
-   ![image](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
 ## Siguientes pasos {#whats-next}
 

@@ -1,8 +1,9 @@
 ---
 title: 'Metadatos: Propiedades del fragmento'
 description: Consulte cómo puede ver y editar las propiedades de metadatos de los fragmentos de contenido de AEM.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
-workflow-type: ht
+exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 100%
 

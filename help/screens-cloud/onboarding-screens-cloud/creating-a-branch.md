@@ -5,7 +5,7 @@ exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -26,19 +26,19 @@ En la siguiente sección se describe cómo crear una rama para su programa en Cl
 
 1. Haga clic en **Crear** para crear la rama y el proyecto.
 
-   ![image](/help/screens-cloud/assets/onboarding/create-branch1.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/create-branch1.png)
 
 1. Seleccione el **Título** y **Nuevo nombre de rama** from **Crear una rama y un proyecto** asistente y haga clic en **Crear**.
 
-   ![image](/help/screens-cloud/assets/onboarding/create-branch2.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/create-branch2.png)
 
 1. Verá la tarjeta de llamada a la acción en el **Información general** actualizar el estado como creación de proyecto en curso.
 
-   ![image](/help/screens-cloud/assets/onboarding/create-branch3.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/create-branch3.png)
 
 1. Una vez que la creación del proyecto se haya completado correctamente, verá la actualización de la tarjeta de llamada a la acción en el **Información general** página.
 
-   ![image](/help/screens-cloud/assets/onboarding/create-branch4.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
 ## Siguientes pasos {#whats-next}
 

@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '2360'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -165,7 +165,7 @@ La aplicación es el formulario adaptable asociado al flujo de trabajo. Cuando u
    <td><p>Seleccione un grupo. La aplicación solo está visible en AEM Bandeja de entrada para los miembros del grupo seleccionado. La opción de grupo de acceso hace que todos los grupos de la variable [!DNL workflow-users] grupo disponible para selección. </p> <br /> </td>
   </tr>
   <tr>
-   <td>Servicio de prerrellenar</td>
+   <td>Servicio de rellenado previo</td>
    <td>Seleccione un <a href="prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">servicio prefill</a> para el formulario adaptable.<br /> </td>
   </tr>
   <tr>

@@ -1,6 +1,6 @@
 ---
 title: ¿Cómo se crea un formulario adaptable?
-description: 'Obtenga información sobre cómo crear un formulario adaptable mediante [!DNL Experience Manager Forms]. Los Forms adaptables son formularios HTML5 interactivos que agilizan la recopilación y el procesamiento de la información. Descubra más información sobre cómo crear un formulario adaptable basado en un modelo de datos de formulario y un esquema XML o JSON. '
+description: Obtenga información sobre cómo crear un formulario adaptable mediante [!DNL Experience Manager Forms]. Los Forms adaptables son formularios HTML5 interactivos que agilizan la recopilación y el procesamiento de la información. Descubra más información sobre cómo crear un formulario adaptable basado en un modelo de datos de formulario y un esquema XML o JSON.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner

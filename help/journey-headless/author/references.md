@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -26,7 +26,7 @@ Este artículo se basa en estos elementos para que pueda comprender cómo utiliz
 
    * Referencias de contenido
    * Referencias de recursos/medios
-   * Referencias de fragmento
+   * Referencias a fragmento
    * Referencias ad hoc desde dentro de un bloque de texto
 
 ## ¿Qué son las referencias? {#what-are-references}
@@ -47,7 +47,7 @@ Se puede hacer referencia a los recursos (por ejemplo, imágenes o medios) dentr
 
 ![Fragmentos de contenido: Insertar recurso](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
-## Referencias de fragmento {#fragment-references}
+## Referencias a fragmento {#fragment-references}
 
 Una vez más, las referencias de fragmento hacen precisamente eso: le permiten hacer referencia a otro fragmento. Por qué esto es significativo necesita un poco más de explicación.
 

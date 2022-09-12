@@ -3,7 +3,7 @@ title: La consola Componentes
 description: La consola Componentes permite examinar todos los componentes definidos para una instancia.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 

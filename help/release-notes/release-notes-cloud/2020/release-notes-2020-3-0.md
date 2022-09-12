@@ -26,7 +26,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 * El registro del paso de compilación ya está disponible mientras este se ejecuta.
 * Algunos mensajes de la página de detalles de ejecución de la canalización se han editado para mayor claridad.
 
-### Corrección de errores  {#bug-fixes}
+### Correcciones de errores  {#bug-fixes}
 
 * Los archivos de registro para la prueba funcional personalizada y de producto no se podían descargar a través de la interfaz de usuario.
 * Cuando hay un error al crear el repositorio Git para un programa de Cloud Service, en algunos casos los usuarios con la función de administrador de implementación no podían recuperarse de este error.

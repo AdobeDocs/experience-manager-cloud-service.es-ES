@@ -31,7 +31,7 @@ Cloud Manager ofrece dos tipos de canalizaciones:
 
 ![Tipos de tuberías](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
-## Información general del vídeo {#video}
+## Información general en vídeo {#video}
 
 Para obtener una descripción general rápida de los tipos de canalización, vea este breve vídeo.
 

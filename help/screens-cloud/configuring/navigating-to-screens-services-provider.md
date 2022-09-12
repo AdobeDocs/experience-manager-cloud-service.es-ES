@@ -33,23 +33,23 @@ Siga los pasos a continuación para configurar el proveedor de servicios de Scre
 
 2. Haga clic en el icono del engranaje junto a Proyecto (esquina superior izquierda)
 
-   ![image](/help/screens-cloud/assets/configure/configure-screens0.png)
+   ![imagen](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. Introduzca los siguientes detalles en el cuadro de diálogo Editar configuración.
    * **Publicar Url** - AEM la URL de publicación (p. ej. `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **Url De Autor** - AEM URL del autor (p. ej. `https://author-p12345-e12345.adobeaemcloud.com`)
 
-   ![image](/help/screens-cloud/assets/configure/configure-screens4.png)
+   ![imagen](/help/screens-cloud/assets/configure/configure-screens4.png)
 
 4. Haga clic en **Guardar** para conectarse al proveedor de contenido de Screens
 
 5. Select **Canales** en la barra de navegación izquierda y haga clic en **abrir en el proveedor de contenido**.
 
-   ![image](/help/screens-cloud/assets/configure/configure-screens1.png)
+   ![imagen](/help/screens-cloud/assets/configure/configure-screens1.png)
 
 6. El proveedor de contenido de Screens se abre en otra pestaña que le permite crear su contenido.
 
-   ![image](/help/screens-cloud/assets/configure/configure-screens2.png)
+   ![imagen](/help/screens-cloud/assets/configure/configure-screens2.png)
 
 ## Siguientes pasos {#whats-next}
 

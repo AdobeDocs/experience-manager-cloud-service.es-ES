@@ -5,7 +5,7 @@ exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ Este artículo se basa en estos fundamentos.
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo administrar las plantillas y páginas del catálogo de productos. Después de leer, debe:
+Este documento le ayuda a comprender cómo administrar las plantillas y páginas del catálogo de productos. Después de leer, debería haber logrado lo siguiente:
 
 * comprender los conceptos de las plantillas de catálogo
 * cómo funcionan las plantillas genéricas

@@ -24,6 +24,6 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.9.0 es el 3
 * El proceso de compilación se ha separado en tres comandos Maven independientes.
 * Si el repositorio Git no se clona, se volverá a crear hasta tres veces.
 
-### Corrección de errores {#bug-fixes-cm}
+### Correcciones de errores {#bug-fixes-cm}
 
 * La pestaña Auditoría de contenido mostraba incorrectamente la URL base utilizando el dominio de autor en lugar del dominio de publicación.

@@ -1,6 +1,6 @@
 ---
-title: Notas de la versión 2021.10.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2021.10.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2021.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2021.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -164,7 +164,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.10.0 es el 
 
 * La información del objeto de la tarjeta de programa será más descriptiva si se desactiva una opción de selección en &quot;Navegar a&quot;. Ahora muestra &quot;Un entorno de producción no existe&quot;.
 
-### Corrección de errores {#bug-fixes-cm-oct}
+### Correcciones de errores {#bug-fixes-cm-oct}
 
 * En raras ocasiones, cuando el personal de un Adobe restauraba el entorno de un cliente, la restauración se consideraba completa antes de que el entorno fuera completamente operativo.
 

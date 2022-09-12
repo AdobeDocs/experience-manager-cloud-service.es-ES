@@ -1,7 +1,7 @@
 ---
 title: Creación y administración de revisiones para recursos en formularios
 seo-title: Creating and managing reviews for assets in forms
-description: 'Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre un recurso que está disponible en un formulario. '
+description: Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre un recurso que está disponible en un formulario.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference

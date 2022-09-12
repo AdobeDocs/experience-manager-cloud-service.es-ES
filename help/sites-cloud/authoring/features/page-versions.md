@@ -1,5 +1,5 @@
 ---
-title: 'Uso de versiones de página  '
+title: Uso de versiones de página
 description: Cree, compare y restaure versiones de una página
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
@@ -115,6 +115,7 @@ Este método se puede utilizar para restaurar versiones de páginas especificada
    >Si:
    >* ha seleccionado una sola página, que nunca ha tenido páginas secundarias,
    >* o ninguna de las páginas de la carpeta tiene versiones,
+
    >
    >A continuación, la pantalla estará vacía, ya que no hay versiones aplicables.
 

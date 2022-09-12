@@ -5,7 +5,7 @@ exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -97,16 +97,16 @@ Esta capacidad le permite definir una programación de activación predeterminad
 1. Vaya a la página de detalles del canal que desea configurar.
 1. Busque la variable **Detalles de asignación predeterminados** en la página.
 
-   ![image](/help/screens-cloud/assets/display/Assignment1.png)
+   ![imagen](/help/screens-cloud/assets/display/Assignment1.png)
 
 1. Haga clic en **Definir detalles predeterminados**.
 1. Configure los detalles de asignación predeterminados, incluidas las fechas de prioridad, inicio y finalización, así como los patrones de periodicidad del canal, y haga clic en **Asignar**.
 
-   ![image](/help/screens-cloud/assets/display/Assignments2.png)
+   ![imagen](/help/screens-cloud/assets/display/Assignments2.png)
 
 1. Observe que los detalles de la asignación se muestran en el **Detalles de asignación predeterminados** mosaico:
 
-   ![image](/help/screens-cloud/assets/display/Assignments3.png)
+   ![imagen](/help/screens-cloud/assets/display/Assignments3.png)
 
 Este mosaico muestra la siguiente información:
 * Prioridad predeterminada del canal en la pantalla.
@@ -121,25 +121,25 @@ Los canales con detalles de asignación predeterminados se pueden asignar a mues
 también puede seleccionar la visualización que desee en la vista de inventario y hacer clic en el botón **Asignar canal**.
 1. Se abre el cuadro de diálogo de asignación de canal.
 
-   ![image](/help/screens-cloud/assets/display/Assignments4.png)
+   ![imagen](/help/screens-cloud/assets/display/Assignments4.png)
 
 1. Seleccione el canal que desee y que tenga los detalles de asignación predeterminados en el selector de canales.
 1. Observe los cambios en el cuadro de diálogo de asignación de canal para que pueda elegir los detalles de asignación predeterminados o seleccionar los personalizados:
 
-   ![image](/help/screens-cloud/assets/display/Assignments5.png)
+   ![imagen](/help/screens-cloud/assets/display/Assignments5.png)
 
 1. Haga clic en **Asignar** para finalizar la asignación, o haga clic en **Definir detalles de asignación personalizados** si prefiere anular los valores predeterminados con otros valores en el contexto de esa visualización en particular.
 
-   ![image](/help/screens-cloud/assets/display/Assignments6.png)
+   ![imagen](/help/screens-cloud/assets/display/Assignments6.png)
 
 1. Observe que **Canales asignados** el mosaico se actualiza con la nueva asignación:
 
-   ![image](/help/screens-cloud/assets/display/Assignments7.png)
+   ![imagen](/help/screens-cloud/assets/display/Assignments7.png)
 
 1. Tenga en cuenta que los canales tendrán un icono diferente en función de si están utilizando programas personalizados (icono del reloj) o heredando los detalles predeterminados (icono del reloj del mundo), y al hacer clic en ellos se mostrarán los detalles de la programación.
 1. Tenga en cuenta también que las acciones disponibles para cada tipo diferirán.
 
-   ![image](/help/screens-cloud/assets/display/Assignments8.png)
+   ![imagen](/help/screens-cloud/assets/display/Assignments8.png)
 
 **Nota:** Una asignación de canal que aprovecha los detalles de asignación predeterminados no se puede editar en el contexto de la visualización.
 
@@ -152,20 +152,20 @@ también puede seleccionar la visualización que desee en la vista de inventario
 1. Busque la variable **Detalles de asignación predeterminados** mosaico en la página
 1. Haga clic en el **Eliminar predeterminado**.
 
-   ![image](/help/screens-cloud/assets/display/Assignments9.png)
+   ![imagen](/help/screens-cloud/assets/display/Assignments9.png)
 
 1. Se mostrará un cuadro de diálogo de confirmación y los detalles coincidirán con una de las siguientes condiciones:
    **a.** El canal no se utiliza en ninguna pantalla.
 
-   ![image](/help/screens-cloud/assets/display/Assignments10.png)
+   ![imagen](/help/screens-cloud/assets/display/Assignments10.png)
 
 **b.** El canal se utiliza en una sola pantalla.
 
-![image](/help/screens-cloud/assets/display/Assignment11.png)
+![imagen](/help/screens-cloud/assets/display/Assignment11.png)
 
 **c.** El canal se utiliza en varias pantallas.
 
-![image](/help/screens-cloud/assets/display/Assignments12.png)
+![imagen](/help/screens-cloud/assets/display/Assignments12.png)
 
 1. Haga clic en el *Eliminar* para validar el cambio.
 

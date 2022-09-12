@@ -27,7 +27,7 @@ Consulte [Administración de entornos](/help/implementing/cloud-manager/manage-e
 
 * La variable **Más información** en Cloud Manager se ha actualizado con nuevas imágenes en la interfaz de usuario.
 
-### Corrección de errores {#bug-fixes-cloud-manager}
+### Correcciones de errores {#bug-fixes-cloud-manager}
 
 * La carga de dependencias realizada antes de la ejecución de la compilación requería la descarga de un complemento de Maven.
 * El vínculo del pie de página de Cloud Manager para seleccionar un idioma ahora se desplaza a la ubicación correcta.

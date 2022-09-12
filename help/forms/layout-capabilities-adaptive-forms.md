@@ -6,7 +6,7 @@ exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -32,7 +32,7 @@ Todos estos diseños de panel se definen en la `/libs/fd/af/layouts` ubicación.
 
 Para cambiar la presentación de un formulario adaptable, utilice el modo de creación en [!DNL Experience Manager].
 
-## [!UICONTROL Diseño de panel] {#panel-layout}
+## [!UICONTROL Diseño del panel] {#panel-layout}
 
 Un autor de formularios puede asociar una presentación a cada panel de un formulario adaptable, incluido el panel raíz.
 
@@ -68,7 +68,7 @@ La expresión de resumen se puede utilizar para mostrar los valores proporcionad
 
 ![Paneles repetibles con diseño de acordeón en Forms adaptable](assets/accordion-layout.png)
 
-### [!UICONTROL Presentación en fichas: las pestañas aparecen a la izquierda ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Diseño con pestañas: las pestañas aparecen a la izquierda ]{#tabbed-layout-tabs-appear-on-the-left}
 
 Con este diseño, puede colocar la variable **[!UICONTROL Formulario adaptable del panel]** en un panel con navegación por pestañas. Las pestañas se colocan a la izquierda del contenido del panel.
 
@@ -76,7 +76,7 @@ Con este diseño, puede colocar la variable **[!UICONTROL Formulario adaptable d
 
 Pestañas que aparecen a la izquierda de un panel
 
-### [!UICONTROL Presentación en fichas: las pestañas aparecen en la parte superior] {#tabbed-layout-tabs-appear-on-the-top}
+### [!UICONTROL Diseño con fichas: las fichas aparecen en la parte superior] {#tabbed-layout-tabs-appear-on-the-top}
 
 Con este diseño, puede colocar la variable **[!UICONTROL Formulario adaptable del panel]** Componente de un panel con navegación por fichas. Las pestañas se colocan sobre el contenido del panel.
 
@@ -96,13 +96,13 @@ Seleccione el **[!UICONTROL Agregar elementos navegables de diseño interactivo 
 
 Cuando se utiliza una presentación móvil, el menú de formulario, para acceder a varios paneles de formulario, está disponible pulsando ![aem6forms_form_menu](assets/rail-icon.svg) icono.
 
-### [!UICONTROL Presentación con títulos de panel en el encabezado del formulario] {#layout-with-panel-titles-in-the-form-header}
+### [!UICONTROL Diseño con títulos de panel en la cabecera del formulario] {#layout-with-panel-titles-in-the-form-header}
 
 Este diseño, como su nombre indica, muestra los títulos de los paneles junto con el menú de navegación y la barra de navegación. Este diseño también incluye los iconos Siguiente y Anterior para la navegación.
 
 ![Presentaciones móviles con títulos de panel en los encabezados de formulario](assets/mobile-layout1.png)
 
-### [!UICONTROL Presentación sin títulos de panel en el encabezado del formulario ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Diseño sin títulos de panel en la cabecera del formulario ]{#layout-without-panel-titles-in-the-form-header}
 
 Este diseño, como su nombre indica, muestra únicamente el menú de navegación y la barra de navegación sin títulos de panel. Este diseño también incluye los iconos Siguiente y Anterior para la navegación.
 

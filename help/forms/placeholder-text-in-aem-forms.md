@@ -1,5 +1,5 @@
 ---
-title: 'Texto del marcador de posición en [!DNL AEM Forms] '
+title: Texto del marcador de posición en [!DNL AEM Forms]
 description: El texto del marcador de posición está diseñado para ayudar al usuario con la introducción de datos cuando el control no tiene valor. Podría ser un valor de muestra o una breve descripción del formato esperado.
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt

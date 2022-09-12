@@ -26,12 +26,12 @@ Las organizaciones pueden integrar su empresa [!DNL Adobe Stock] planear con [!D
 
 **Requisitos previos**
 
-La integración requiere:
+La integración requiere lo siguiente:
 
 * Un proceso de puesta en marcha [!DNL Experience Manager Assets] como [!DNL Cloud Service] instancia
 * Un [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/)
 * Un usuario con permisos en Admin Console al perfil de producto predeterminado de Stock
-* Un usuario con permisos para el perfil de acceso de desarrollador para crear integración en Adobe Developer Console
+* Un usuario con permisos para el perfil de acceso de desarrollador para crear integración en la consola de Adobe Developer
 
 Una empresa [!DNL Adobe Stock] plan,
 
@@ -111,7 +111,7 @@ La configuración de IMS incluye dos pasos:
 
 ### Obtener un certificado público {#public-certificate}
 
-La clave pública (certificado) autentica el perfil del producto en Adobe Developer Console.
+La clave pública (certificado) autentica el perfil del producto en la consola de Adobe Developer.
 
 1. Inicie sesión en su [!DNL Experience Manager Assets] instancia de nube.
 
@@ -127,7 +127,7 @@ La clave pública (certificado) autentica el perfil del producto en Adobe Develo
 
 1. Haga clic en **[!UICONTROL Crear certificado]**. A continuación, haga clic en **[!UICONTROL OK]** para generar la clave pública.
 
-1. Haga clic en el **[!UICONTROL Descargar clave pública]** y guarde el archivo de clave pública (.crt) en el equipo. La clave pública se utiliza más adelante para configurar la API para el inquilino de Brand Portal y generar credenciales de cuenta de servicio en Adobe Developer Console.
+1. Haga clic en el **[!UICONTROL Descargar clave pública]** y guarde el archivo de clave pública (.crt) en el equipo. La clave pública se utiliza más adelante para configurar la API para el inquilino de Brand Portal y generar credenciales de cuenta de servicio en la consola de Adobe Developer.
 
    Haga clic en **[!UICONTROL Siguiente]**. 
 
@@ -135,15 +135,15 @@ La clave pública (certificado) autentica el perfil del producto en Adobe Develo
 
 1. En el **Cuenta** , se crea la cuenta de Adobe IMS que requiere las credenciales de la cuenta de servicio.
 
-   Abra una nueva pestaña y [crear una conexión de cuenta de servicio (JWT) en Adobe Developer Console](#createnewintegration).
+   Abra una nueva pestaña y [crear una conexión de cuenta de servicio (JWT) en la consola de Adobe Developer](#createnewintegration).
 
 ### Crear conexión de cuenta de servicio (JWT) {#createnewintegration}
 
-En Adobe Developer Console, los proyectos y las API se configuran a nivel de organización. La configuración de una API crea una conexión de cuenta de servicio (JWT). Existen dos métodos para configurar la API, mediante la generación de un par de claves (claves privadas y públicas) o cargando una clave pública. En este ejemplo, las credenciales de la cuenta de servicio se generan cargando la clave pública.
+En la consola de Adobe Developer, los proyectos y las API se configuran a nivel de organización. La configuración de una API crea una conexión de cuenta de servicio (JWT). Existen dos métodos para configurar la API, mediante la generación de un par de claves (claves privadas y públicas) o cargando una clave pública. En este ejemplo, las credenciales de la cuenta de servicio se generan cargando la clave pública.
 
 Para generar las credenciales de cuenta de servicio y la carga útil JWT:
 
-1. Inicie sesión en Adobe Developer Console con privilegios de administrador del sistema. La dirección URL predeterminada es [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Inicie sesión en la consola de Adobe Developer con privilegios de administrador del sistema. La dirección URL predeterminada es [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    Asegúrese de seleccionar la organización de IMS correcta (derecho de stock) en la lista desplegable (organización).

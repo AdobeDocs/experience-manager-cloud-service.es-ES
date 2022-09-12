@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.1.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.1.0."'
+title: Notas de la versión 2021.1.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.1.0."
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 7%
+ht-degree: 14%
 
 ---
 
@@ -62,7 +62,7 @@ La siguiente versión (2021.2.0) será el 25 de febrero de 2021.
 
 La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.1.0 es el 14 de enero de 2021.
 
-### Corrección de errores {#bug-fixes-cloud-manager}
+### Correcciones de errores {#bug-fixes-cloud-manager}
 
 * En ocasiones, la instancia de producción de recursos puede mostrar el estado de Brand Portal en la variable **Entornos** página de detalles como *Pendiente* sin permitir al usuario realizar ninguna acción.
 
@@ -80,7 +80,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.1.0 es el 1
 
 * Nueva función agregada a [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) que crea un paquete independiente `ui.config` para que contenga todas las configuraciones de OSGi.
 
-### Corrección de errores {#crt-bug-fixes}
+### Correcciones de errores {#crt-bug-fixes}
 
 * Se han hecho varias correcciones de errores en las herramientas AEM Dispatcher Converter y Modernizador de repositorio. Consulte [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
@@ -92,20 +92,20 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.1.0 es el 1
 
 ### Analizadores de creación de SDK {#sdk-build-analyzers}
 
-El complemento Maven de AEM as a Cloud Service SDK Build Analyzer detecta problemas en un proyecto maven, incluidas dependencias que faltan. Proporciona a los desarrolladores la oportunidad de descubrir problemas durante el desarrollo local, mucho antes de implementarlos en entornos de nube con Cloud Manager.
+El complemento Maven de AEM as a Cloud Service SDK Build Analyzer detecta problemas en un proyecto maven, incluidas las dependencias que faltan. Proporciona a los desarrolladores la oportunidad de descubrir problemas durante el desarrollo local, mucho antes de implementarlos en entornos de nube con Cloud Manager.
 
 Se han agregado dos nuevos analizadores para esta versión:
 
 * analizador de informes
 * bundle-nativcode
 
-Para obtener más información, consulte la documentación [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es#developing).
+Para obtener más información, consulte la documentación [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es#developing).
 
 ## Herramientas de Transición de nube {#code-transition-tools}
 
 ### Fecha de la versión {#release-date-ctt}
 
-La fecha de versión de la herramienta de transferencia de contenido v1.2.2 es el 1 de febrero de 2021.
+La fecha de lanzamiento de la herramienta de transferencia de contenido versión 1.2.2 es el 01 de febrero de 2021.
 
 ### Novedades de [!DNL Content Transfer Tool] {#what-is-new-ctt}
 

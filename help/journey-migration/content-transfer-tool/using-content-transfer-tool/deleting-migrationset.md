@@ -24,11 +24,11 @@ Para eliminar un conjunto de migración, siga los pasos a continuación:
 
 1. Vaya a la vista de lista de conjunto de migración en Cloud Acceleration Manager y haga clic en los tres puntos (**...**) junto al conjunto de migración que desea eliminar. La variable **Eliminar** debe ser visible como se muestra a continuación.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
 1. Una vez que haga clic en **Eliminar** verá un cuadro de diálogo para confirmar la acción de eliminar.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
 
 >[!NOTE]
 >
@@ -38,4 +38,4 @@ Para eliminar un conjunto de migración, siga los pasos a continuación:
 
 Para eliminar el conjunto de migración del asistente de transferencia de contenido, seleccione el conjunto de migración y haga clic en **Eliminar** en la barra de acciones.
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)
+![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)

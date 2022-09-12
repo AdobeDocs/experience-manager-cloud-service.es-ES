@@ -10,7 +10,7 @@ ht-degree: 2%
 
 ---
 
-# Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets {#content-fragments-support-in-aem-assets-http-api}
+# Compatibilidad con fragmentos de contenido en la API HTTP de Recursos AEM {#content-fragments-support-in-aem-assets-http-api}
 
 ## Información general {#overview}
 

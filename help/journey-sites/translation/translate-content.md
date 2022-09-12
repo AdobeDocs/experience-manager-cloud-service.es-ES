@@ -6,7 +6,7 @@ hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 100%
 
@@ -216,11 +216,11 @@ Puede utilizar los pasos anteriores para agregar el contenido necesario a todos 
 
 Normalmente, el contenido del trabajo de traducción se inicia en el estado de **Borrador** tal como lo indica la columna **Estado** en la ventana **Trabajo de traducción**.
 
-Para iniciar el trabajo de traducción, vuelva a la descripción general del proyecto de traducción y toque o haga clic en las comillas angulares en la parte superior de la tarjeta **Trabajo de traducción** y seleccione **Iniciar**.
+Para iniciar el trabajo de traducción, vuelva a la descripción general del proyecto de traducción y toque o haga clic en el botón de comillas angulares en la parte superior de la tarjeta **Trabajo de traducción** y seleccione **Inicio**.
 
 ![Iniciar trabajo de traducción](assets/start-translation-job.png)
 
-Ahora, AEM se comunica con la configuración de traducción y con el conector para enviar el contenido al servicio de traducción. Para ver el progreso de la traducción, vuelva a la ventana **Trabajo de traducción** y visualice las entradas de la columna **Estado**.
+Ahora, AEM se comunica con la configuración de traducción y con el conector para enviar el contenido al servicio de traducción. Para ver el progreso de la traducción, vuelva a la ventana **Trabajo de traducción** y visualice la columna **Estado** de las entradas.
 
 ![Trabajo de traducción aprobado](assets/translation-job-approved.png)
 
@@ -228,7 +228,7 @@ Las traducciones automáticas se devuelven automáticamente con un estado de **A
 
 >[!TIP]
 >
->Procesar un trabajo de traducción puede llevar algún tiempo y es posible que vea que los elementos de traducción cambian del estado de **Borrador** al de **Traducción en curso** y al de **Listo para revisión** antes de llegar al estado de **Aprobado**. Esto es lo que se espera que pase.
+>Procesar un trabajo de traducción puede llevar algún tiempo y es posible que vea que los elementos de traducción se mueven del estado de **Borrador** a **Traducción en curso** a **Listo para revisión** antes de llegar al estado de **Aprobado**. Esto es lo que se espera que pase.
 
 >[!NOTE]
 >

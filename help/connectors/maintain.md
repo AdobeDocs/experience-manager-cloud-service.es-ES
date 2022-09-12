@@ -3,7 +3,7 @@ title: Mantenimiento de un conector de AEM
 description: Mantenimiento de un conector de AEM
 exl-id: 8122a8c8-6577-4907-8f6e-52711eed3970
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 100%
 

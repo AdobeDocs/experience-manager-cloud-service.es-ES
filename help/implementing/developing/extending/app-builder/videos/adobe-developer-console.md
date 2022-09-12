@@ -22,21 +22,21 @@ ht-degree: 0%
 >
 > _El proyecto Adobe Firefly, como se menciona en los vídeos de esta serie, ahora se llama App Builder_
 
-## Introducción a Adobe Developer Console
+## Introducción a la consola de Adobe Developer
 
-Obtenga información sobre qué es Adobe Developer Console y cómo acceder a ella y navegarla.
+Descubra qué es la consola de Adobe Developer y cómo acceder a ella y navegarla.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
 
 ## Trabajar con proyectos y plantillas
 
-Obtenga información sobre cómo crear un proyecto de App Builder mediante la plantilla de App Builder de Adobe Developer Console.
+Obtenga información sobre cómo crear un proyecto de App Builder mediante la plantilla de App Builder de la consola de Adobe Developer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
 
 ## Credenciales del proyecto
 
-Aprenda a utilizar las opciones del menú de credenciales de Adobe Developer Console y el proceso de aprobación.
+Obtenga información sobre cómo utilizar las opciones del menú de credenciales de la consola de Adobe Developer y el proceso de aprobación.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
 

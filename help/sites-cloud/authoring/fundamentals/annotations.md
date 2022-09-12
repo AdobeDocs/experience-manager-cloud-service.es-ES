@@ -3,7 +3,7 @@ title: Adición de anotaciones de página
 description: Utilice el modo de anotación para dejar anotaciones y bocetos en páginas de la misma manera que utiliza notas adhesivas para ayudarle en el proceso de revisión de contenido.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 100%
 

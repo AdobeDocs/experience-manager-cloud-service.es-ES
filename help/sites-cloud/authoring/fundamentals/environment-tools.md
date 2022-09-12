@@ -3,7 +3,7 @@ title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2154'
 ht-degree: 100%
 

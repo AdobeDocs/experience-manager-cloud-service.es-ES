@@ -30,7 +30,7 @@ El nombre &quot;root&quot; nunca se utiliza en una consulta, está implícito.
    * **`full`** - renderización JSON de sling del nodo, con `jcr:path` indicando la ruta de la visita: de forma predeterminada, solo enumera las propiedades directas del nodo, incluya un árbol más profundo con `p.nodedepth=N`, con 0 que significa todo el subárbol infinito; add `p.acls=true` para incluir los permisos JCR de la sesión actual en el elemento de resultado dado (asignaciones: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
    * **`selective`** - solo las propiedades especificadas en `p.properties`, que es un espacio separado (utilice `+` en direcciones URL) lista de rutas relativas; si la ruta relativa tiene una profundidad `>1` se representarán como objetos secundarios; el especial `jcr:path` incluye la ruta de acceso de la visita
 
-### grupo {#group}
+### grupo  {#group}
 
 Este predicado permite generar condiciones anidadas. Los grupos pueden contener grupos anidados. Todo en una consulta de Query Builder está implícito en un grupo raíz, que puede tener `p.or` y `p.not` también.
 

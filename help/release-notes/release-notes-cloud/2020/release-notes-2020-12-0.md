@@ -1,6 +1,6 @@
 ---
-title: Notas de la versión 2020.12.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2020.12.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2020.12.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2020.12.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
 workflow-type: tm+mt
@@ -54,7 +54,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.12.0 es el 
 
 * Actualizado **Entorno** La página de detalles ahora permite a los usuarios administrar nombres de dominio personalizados y Listas de permitidos IP en sus entornos.
 
-### Corrección de errores {#bug-fixes-cloud-manager}
+### Correcciones de errores {#bug-fixes-cloud-manager}
 
 * Algunas ocurrencias de errores en la fase de análisis del código sin proporcionar los resultados abordados.
 
@@ -70,7 +70,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.12.0 es el 
 
 * Nueva función agregada a [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) que crea un paquete independiente `ui.config` para que contenga todas las configuraciones de OSGi.
 
-### Corrección de errores {#crt-bug-fixes}
+### Correcciones de errores {#crt-bug-fixes}
 
 * Se han hecho varias correcciones de errores en las herramientas AEM Dispatcher Converter y Modernizador de repositorio. Consulte [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
@@ -82,8 +82,8 @@ La fecha de versión de la herramienta de transferencia de contenido v1.1.20 es 
 
 * Los usuarios ahora pueden saber si su token de acceso ha caducado al pasar el ratón por el icono de estado en la interfaz de usuario de la herramienta de transferencia de contenido (CTT). También se les notificará en la interfaz de usuario de Detalles del conjunto de migración que no pueden conectarse a su instancia de Cloud Service.
 
-### Corrección de errores {#ctt-bug-fixes}
+### Correcciones de errores {#ctt-bug-fixes}
 
-* El estado de la interfaz de usuario de la herramienta de transferencia de contenido (CTT) de un conjunto de migración no se mantuvo y cambió después de un período de inactividad. Esto se ha solucionado.
+* El estado de la interfaz de usuario de la herramienta de transferencia de contenido (CTT) de un conjunto de migración no se mantuvo y cambió después de un período de inactividad. Esto se ha corregido.
 * La opción para ver registros estaba deshabilitada si los registros no estaban disponibles. Esto se ha solucionado y se han añadido mensajes para notificar al usuario por qué faltan los registros.
 * Se mostró el estado de la interfaz de usuario de la herramienta de transferencia de contenido *ERROR* cuando el usuario detuvo una ingesta. Se ha corregido para que se muestre *DETENIDO* en su lugar.

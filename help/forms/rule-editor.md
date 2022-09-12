@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6351'
+source-wordcount: '6346'
 ht-degree: 0%
 
 ---
@@ -628,7 +628,7 @@ Para abrir un formulario en modo de edición, seleccione un formulario y pulse *
 1. Seleccione el cuadro numérico de entrada y pulse ![edit-rules](assets/edit-rules-icon.svg) para abrir el editor de reglas.
 1. Toque **[!UICONTROL Crear regla]**. Con las opciones que se muestran a continuación, cree una regla para guardar el valor al cuadrado de la entrada en el campo Output del formulario.
 
-[![Uso de funciones personalizadas para crear una regla](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+   [![Uso de funciones personalizadas para crear una regla](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. Puntee **[!UICONTROL Listo]**. Se agrega la función personalizada.
 

@@ -1,7 +1,8 @@
 ---
 title: Configuración de la asignación de metadatos de recursos entre Workfront y Experience Manager Assets
 description: Asigne los campos de metadatos de recursos entre las aplicaciones as a Cloud Service de Adobe Workfront y Experience Manager. Como resultado de la asignación de campos de metadatos, al enviar un recurso de Workfront a Experience Manager Assets, puede ver los metadatos de recurso asignados en Experience Manager Assets.
-source-git-commit: 212ecb5330de739b2e479d36462953ce33697c1c
+exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -127,6 +128,3 @@ Para aplicar la configuración de metadatos a la carpeta de imágenes:
 1. Seleccione la carpeta de destino a la que [la imagen se envía desde la aplicación Adobe Workfront](#send-image-workfront-assets) y haga clic en **[!UICONTROL Aplicar]**.
 
 Puede desplazarse a la imagen en Experience Manager Assets y ver los metadatos asociados a la imagen. Seleccione la imagen y haga clic en **[!UICONTROL Propiedades]** para ver los metadatos de la imagen.
-
-
-

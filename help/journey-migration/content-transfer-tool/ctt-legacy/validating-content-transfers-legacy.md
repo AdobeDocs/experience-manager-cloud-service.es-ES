@@ -3,7 +3,8 @@ title: Validación de transferencias de contenido (heredado)
 description: Usar la herramienta de transferencia de contenido para validar transferencias de contenido
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 304b7aee-1d84-4d90-a89b-0c532d5d9c92
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 1%
@@ -27,7 +28,7 @@ La validación de una transferencia de contenido es una función opcional. La ac
 1. Utilice el botón de icono de lápiz para editar sus valores de configuración
 1. Active la variable **Habilitar la validación de migración durante la extracción** configuración y, a continuación, pulse **Guardar**:
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
 Con esta configuración habilitada, y el entorno de AEM Cloud Service de destino que ejecute una versión compatible, la validación de la migración se producirá durante todas las extracciones y entregas posteriores.
 
@@ -45,11 +46,11 @@ Para ver una ilustración gráfica de esto, consulte los ejemplos siguientes:
 
 * **Extracción (sobrescritura)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **Ingesta (Borrar)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **Notas**
 
@@ -59,11 +60,11 @@ Para ver una ilustración gráfica de esto, consulte los ejemplos siguientes:
 
 * **Extracción**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **Ingesta**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **Notas**
 
@@ -131,15 +132,15 @@ El ejemplo de error anterior se logró ejecutando una ingesta y luego ejecutando
 Además de incluirse en el registro de ingesta, también se puede acceder al informe de validación desde la interfaz de usuario de la herramienta de transferencia de contenido. Para ello, seleccione un conjunto de migración y haga clic en el botón **Validar** de la barra de acciones:
 
 
-![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+![imagen](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
 
 Se abrirá el cuadro de diálogo Registros de validación :
 
-![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+![imagen](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
 
 Utilice la variable **Informe Publicación/Autor de validación** para ver el informe de validación de la ingesta más reciente en el nivel dado de su entorno de destino. Vea a continuación un ejemplo de una pequeña ingesta de publicación:
 
-![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+![imagen](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
 
 >[!NOTE]
 >

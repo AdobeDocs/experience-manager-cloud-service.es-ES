@@ -167,7 +167,7 @@ Una vez que se haya acostumbrado a los cambios introducidos con AEM as a Cloud S
 
 La siguiente figura muestra los pasos clave involucrados durante la fase de revisión:
 
-![image](/help/journey-migration/assets/planning-phaseimg1.png)
+![imagen](/help/journey-migration/assets/planning-phaseimg1.png)
 
 A continuación, analizaremos en detalle cada uno de estos pasos.
 

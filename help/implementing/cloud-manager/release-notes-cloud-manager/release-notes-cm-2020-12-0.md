@@ -29,7 +29,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.12.0 es el 
 * Actualizado **Entorno** La página de detalles ahora permite a los usuarios administrar nombres de dominio personalizados y Listas de permitidos IP en sus entornos.
 
 
-### Corrección de errores  {#bug-fixes}
+### Correcciones de errores  {#bug-fixes}
 
 * Algunas ocurrencias de errores en la fase de análisis del código sin proporcionar los resultados abordados.
 

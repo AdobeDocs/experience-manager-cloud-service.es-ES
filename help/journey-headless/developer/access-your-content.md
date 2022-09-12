@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 8%
+ht-degree: 18%
 
 ---
 
@@ -95,7 +95,7 @@ Para ayudarle a introducir y probar consultas directamente, también está dispo
 
 >[!NOTE]
 >
->La implementación de la API de AEM GraphQL se basa en las bibliotecas Java de GraphQL.
+>La implementación de la API de AEM GraphQL se basa en las Bibliotecas Java de GraphQL.
 
 <!--
 ### Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
@@ -121,15 +121,15 @@ Los fragmentos de contenido se pueden usar como base para GraphQL para AEM esque
 
 ### Modelos de fragmento de contenido {#content-fragments-models}
 
-Estos modelos de fragmento de contenido:
+Estos Modelos de fragmentos de contenido:
 
-* se utilizan para generar los esquemas, una vez **Habilitado**.
-* Proporcione los tipos de datos y campos requeridos para GraphQL. Se aseguran de que la aplicación solo solicita lo que es posible y recibe lo que se espera.
+* Se utilizan para generar los Esquemas una vez **Habilitados**.
+* Proporcionan los tipos de datos y campos requeridos para GraphQL. Se aseguran de que la aplicación solo solicita lo que es posible y recibe lo que se espera.
 * El tipo de datos **Referencias de fragmento** se puede utilizar en el modelo para hacer referencia a otro fragmento de contenido y, por lo tanto, introducir niveles de estructura adicionales.
 
-### Referencias de fragmento {#fragment-references}
+### Referencias a fragmento {#fragment-references}
 
-La variable **Referencia de fragmento**:
+La **Referencia de fragmento**:
 
 * Es un tipo de datos específico disponible al definir un modelo de fragmento de contenido.
 * Hace referencia a otro fragmento, según un modelo de fragmento de contenido específico.
@@ -137,7 +137,7 @@ La variable **Referencia de fragmento**:
 
    * Cuando se define como **multifuente**, el fragmento principal puede hacer referencia (recuperar) a varios subfragmentos.
 
-### Vista previa de JSON {#json-preview}
+### Previsualización de JSON {#json-preview}
 
 Para ayudar a diseñar y desarrollar los modelos de fragmento de contenido, puede obtener una vista previa del resultado de JSON en el Editor de fragmentos de contenido.
 
@@ -369,7 +369,7 @@ Ahora que ha aprendido a acceder y consultar el contenido sin encabezado mediant
    * [Consulta de muestra: un solo fragmento de ciudad específico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [Consulta de muestra para metadatos: enumera los metadatos de los premios titulados GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [Consulta de muestra: todas las ciudades con una variación con nombre](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [Habilitar la funcionalidad de fragmento de contenido en el navegador de configuración](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
+* [Habilitación de la funcionalidad de fragmento de contenido en el Explorador de configuración](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Trabajar con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md)
    * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [Salida JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)

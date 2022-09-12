@@ -25,7 +25,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
 1. Vaya a Cloud Acceleration Manager. Haga clic en la tarjeta del proyecto y haga clic en la tarjeta de transferencia de contenido. Vaya a **Trabajos de Ingesta** y haga clic en **Nueva Ingesta**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
 1. Proporcione la información necesaria para crear una nueva ingesta.
 
@@ -52,11 +52,11 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
 1. Haga clic en **Ingesta**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
 1. A continuación, puede controlar la fase de ingesta desde la vista de lista Trabajos de ingesta
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
 1. Una vez finalizada la ingesta, haga clic en el botón (i) en la esquina superior derecha de la pantalla para obtener más información sobre el trabajo de ingesta.
 
@@ -100,7 +100,7 @@ Una vez completado el proceso de ingesta, para ingerir el contenido delta deber�
 
 Para ello, cree un nuevo trabajo de ingesta y asegúrese de que **Barrido** se desactiva durante la fase de ingesta, como se muestra a continuación:
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
+![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## Solución de problemas {#troubleshooting}
 
@@ -108,7 +108,7 @@ Para ello, cree un nuevo trabajo de ingesta y asegúrese de que **Barrido** se d
 
 La recuperación automática del token de migración puede fallar por diferentes motivos, incluido usted [configuración de una lista de permitidos IP mediante Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) en el entorno de Cloud Service de destino.  En estos casos, verá el cuadro de diálogo siguiente cuando intente iniciar una ingesta:
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
 Deberá recuperar el token de migración manualmente haciendo clic en el vínculo &quot;Obtener token&quot; del cuadro de diálogo. Se abrirá otra ficha que muestra el token. A continuación, puede copiar el token y pegarlo en el **Entrada del token de migración** campo . Ahora, debería poder iniciar la ingesta.
 
@@ -120,7 +120,7 @@ Deberá recuperar el token de migración manualmente haciendo clic en el víncul
 
 Solo podrá iniciar una ingesta en el entorno de destino si pertenece al entorno local **Administradores de AEM** en el servicio de autor del Cloud Service de destino. Si no pertenece al grupo de administradores de AEM, verá un error como se muestra a continuación cuando intente iniciar una ingesta. Puede solicitar al administrador que lo añada a la **Administradores de AEM** o pida el propio token, que puede pegar en el **Entrada del token de migración** campo .
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ## Siguientes pasos {#whats-next}
 

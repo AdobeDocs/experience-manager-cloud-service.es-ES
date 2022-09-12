@@ -3,7 +3,7 @@ title: Notas de la versión 2022.1.0 de la versión [!DNL Adobe Experience Manag
 description: Notas de la versión 2022.1.0 de la versión [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
 source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de enero de 20
 
 * Los recursos sin procesar sin representación original se envían a Asset Compute para su procesamiento mientras migran recursos de AEM local a servicios en la nube.
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
 

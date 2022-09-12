@@ -37,7 +37,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.2.0 es el 1
 
 * Se han agregado reglas de calidad de código adicionales para cubrir los problemas de compatibilidad con el Cloud Service.
 
-### Corrección de errores  {#bug-fixes}
+### Correcciones de errores  {#bug-fixes}
 
 * La coincidencia del certificado SSL con un nombre de dominio ya no distingue entre mayúsculas y minúsculas.
 

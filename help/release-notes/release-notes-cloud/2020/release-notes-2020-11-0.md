@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2020.11.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.11.0."'
+title: Notas de la versión 2020.11.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.11.0."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1265'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 
@@ -77,9 +77,9 @@ La siguiente versión (2020.12.0) será el 17 de diciembre de 2020
 
 * Componentes principales de CIF v1.5.0. Consulte [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) para obtener más información.
 
-### Corrección de errores {#bug-fixes-commerce}
+### Correcciones de errores {#bug-fixes-commerce}
 
-* La configuración del cliente de GraphQL no se leyó correctamente cuando la configuración no se especificó directamente en la configuración de Sling CA, sino en una de las configuraciones principales. Esto se ha solucionado.
+* La configuración del cliente de GraphQL no se leyó correctamente cuando la configuración no se especificó directamente en la configuración de Sling CA, sino en una de las configuraciones principales. Esto se ha corregido.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -94,7 +94,7 @@ Consulte [Administración de entornos](/help/implementing/cloud-manager/manage-e
 
 * La variable **Más información** en Cloud Manager se ha actualizado con nuevas imágenes en la interfaz de usuario.
 
-### Corrección de errores {#bug-fixes-cloud-manager}
+### Correcciones de errores {#bug-fixes-cloud-manager}
 
 * La carga de dependencias realizada antes de la ejecución de la compilación requería la descarga de un complemento de Maven.
 * El vínculo del pie de página de Cloud Manager para seleccionar un idioma ahora se desplaza a la ubicación correcta.
@@ -113,7 +113,7 @@ Consulte [Administración de entornos](/help/implementing/cloud-manager/manage-e
 
 ### Analizadores de creación de SDK {#analyzers}
 
-El complemento Maven de AEM as a Cloud Service SDK Build Analyzer detecta problemas en un proyecto maven, incluidas dependencias que faltan. Proporciona a los desarrolladores la oportunidad de descubrir problemas durante el desarrollo local, mucho antes de implementarlos en entornos de nube con Cloud Manager. Para obtener más información, consulte la documentación [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es#developing) y [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+El complemento Maven de AEM as a Cloud Service SDK Build Analyzer detecta problemas en un proyecto maven, incluidas las dependencias que faltan. Proporciona a los desarrolladores la oportunidad de descubrir problemas durante el desarrollo local, mucho antes de implementarlos en entornos de nube con Cloud Manager. Para obtener más información, consulte la documentación [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es#developing) y [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
 
 ### Otros {#others-foundation}
 
@@ -127,9 +127,9 @@ Siga esta sección para conocer las novedades y las actualizaciones de [Herramie
 
 * Se ha mejorado la experiencia del usuario con los registros. Marcas de hora agregadas a los registros de extracción e ingesta. Mensaje añadido para indicar si los registros están vacíos.
 
-### Corrección de errores {#ctt-bug-fixes}
+### Correcciones de errores {#ctt-bug-fixes}
 
-* La herramienta de transferencia de contenido omitía los archivos de contenido si el conjunto de migración contenía rutas con nombres de archivo parcialmente similares. Esto se ha solucionado.
+* La herramienta de transferencia de contenido omitía los archivos de contenido si el conjunto de migración contenía rutas con nombres de archivo parcialmente similares. Esto se ha corregido.
 
 ## Analizador de prácticas recomendadas {#best-practices-analyzer}
 
@@ -143,6 +143,6 @@ La fecha de versión de Best Practices Analyzer es el 13 de noviembre de 2020.
 
 * Se ha añadido un nuevo detector para detectar el uso de `java.io.InputStream`, que puede causar problemas si se utiliza en AEM as a Cloud Service.
 
-### Corrección de errores {#bpa-bug-fixes}
+### Correcciones de errores {#bpa-bug-fixes}
 
 * Error que causa los positivos relacionados con la variable *base de campo de texto* se ha corregido.

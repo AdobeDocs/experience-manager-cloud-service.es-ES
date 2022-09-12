@@ -1,5 +1,5 @@
 ---
-title: Vista previa de recursos
+title: Previsualización de recursos
 description: Obtenga información sobre cómo previsualizar recursos en Dynamic Media.
 feature: Asset Management
 role: User
@@ -7,11 +7,11 @@ exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '1212'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Vista previa de recursos{#previewing-assets}
+# Previsualización de recursos{#previewing-assets}
 
 Puede utilizar Vista previa para ver cómo aparece un recurso digital que ha cargado cuando un cliente lo ve en su propio explorador web. El visor predeterminado integrado entre dispositivos asignado al recurso se utiliza para la vista previa.
 

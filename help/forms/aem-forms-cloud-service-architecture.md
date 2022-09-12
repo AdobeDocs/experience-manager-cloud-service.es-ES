@@ -5,7 +5,7 @@ exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: cd9ef0db59f07173c8c5bd4b38ff946b774ce53c
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -100,7 +100,7 @@ Cloud Manager es un componente esencial para [AEM as a Cloud Service](https://ex
 
 ### Developer Console
 
-Una consola de desarrollador proporciona varios detalles de cada entorno de Forms as a Cloud Service que se ejecuta. Estos detalles son útiles para depurar el entorno. Para obtener más información, consulte [Depuración AEM as a Cloud Service con Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
+Una consola de desarrollador proporciona varios detalles de cada entorno de Forms as a Cloud Service que se ejecuta. Estos detalles son útiles para depurar el entorno. Para obtener más información, consulte [Depuración AEM as a Cloud Service con Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es).
 
 <!--
 

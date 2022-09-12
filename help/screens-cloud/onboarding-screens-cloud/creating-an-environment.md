@@ -5,7 +5,7 @@ exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -28,15 +28,15 @@ Una vez que la creación del proyecto se haya completado correctamente, verá la
 
 1. Haga clic en **Agregar entorno** desde el informe **Información general** página.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-environ1.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
 1. Seleccione los detalles del entorno en el **Agregar entorno** y haga clic en **Guardar**.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-environ2.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
 1. Una vez completado el paso para agregar un entorno, la tarjeta de llamada a la acción se actualiza, como se muestra en la figura siguiente.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-environ3a.png)
+   ![imagen](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
 ## Siguientes pasos {#whats-next}
 
