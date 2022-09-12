@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
+source-git-commit: 4f6901de479086ac40471885292ae82824516bd1
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1189'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ Puede descargar recursos, incluidas representaciones estáticas y dinámicas. Ta
 >Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
 -->
 
-Los tipos de recurso Conjuntos de imágenes, Conjuntos de giros, Conjuntos de medios mixtos y Conjuntos de carrusel no se pueden descargar.
+No se pueden descargar los siguientes tipos de recursos: Conjuntos de imágenes, Conjuntos de giros, Conjuntos de medios mixtos y Conjuntos de carrusel.
 
 Puede descargar recursos de Experience Manager mediante los métodos siguientes:
 
@@ -35,9 +35,9 @@ Puede descargar recursos de Experience Manager mediante los métodos siguientes:
 
 ## Descargar recursos mediante [!DNL Experience Manager] interfaz {#download-assets}
 
-El servicio de descarga asincrónica ofrece un marco para la descarga sin problemas de recursos de gran tamaño. La descarga archiva más de 100 GB en divisiones de tamaño en múltiples archivos zip con un tamaño máximo de 100 GB cada uno. Se pueden descargar individualmente. Los archivos más pequeños se descargan desde la interfaz de usuario en tiempo real. [!DNL Experience Manager] no archiva descargas de recursos individuales en las que se descarga el archivo original. Esta funcionalidad permite descargas más rápidas.
+Experience Manager optimiza la experiencia de descarga en función de la cantidad y el tamaño del recurso. Los archivos más pequeños se descargan desde la interfaz de usuario en tiempo real. [!DNL Experience Manager] descarga directamente solicitudes de recursos individuales para el archivo original en lugar de incluir recursos únicos en un archivo ZIP para permitir descargas más rápidas. Experience Manager admite descargas grandes con solicitudes asincrónicas. Las solicitudes de descarga de más de 100 GB se dividen en varios archivos ZIP con un tamaño máximo de 100 GB cada uno.
 
-De forma predeterminada, [!DNL Experience Manager] déclencheur una notificación una vez completado el flujo de trabajo de descarga. La notificación de descarga aparece en la sección  [[!DNL Experience Manager] Bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
+De forma predeterminada, [!DNL Experience Manager] déclencheur una notificación en la variable [[!DNL Experience Manager] Bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) al generar un archivo de descarga.
 
 ![Notificación de bandeja de entrada](assets/inbox-notification-for-large-downloads.png)
 
@@ -50,15 +50,15 @@ Las descargas asincrónicas se activan en cualquiera de los siguientes casos:
 * Si el tamaño de descarga es superior a 100 MB
 * Si la descarga tarda más de 30 segundos en prepararse
 
-Mientras la descarga asincrónica se ejecuta en el backend, el usuario puede seguir explorando y trabajando más en Experience Manager. Se requiere un mecanismo listo para usar para notificar al usuario una vez completado el proceso de descarga. Para lograr este objetivo, los administradores pueden configurar el servicio de correo electrónico configurando un servidor SMTP. Consulte [configurar el servicio de correo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Mientras la descarga asincrónica se ejecuta en el backend, el usuario puede seguir explorando y trabajando más en Experience Manager. Además de las notificaciones de la bandeja de entrada del Experience Manager, el Experience Manager puede enviar correos electrónicos para notificar al usuario tras completar el proceso de descarga. Para habilitar esta función, los administradores pueden configurar el servicio de correo electrónico de [configuración de una conexión de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Una vez configurado el servicio de correo electrónico, los administradores y usuarios pueden activar las notificaciones por correo electrónico desde la interfaz de Experience Manager.
 
 Para habilitar las notificaciones por correo electrónico:
 
 1. Iniciar sesión en [!DNL Experience Manager Assets].
-1. Haga clic en el icono de usuario en la esquina superior derecha y, a continuación, haga clic en **[!UICONTROL Mis preferencias]**. Se abre la ventana Preferencias de usuario.
-1. Seleccione el **[!UICONTROL Notificaciones por correo electrónico de Asset Download]** y haga clic en **[!UICONTROL Accept]**.
+1. Haga clic en el icono de usuario en la esquina superior derecha y, a continuación, haga clic en **[!UICONTROL Mis preferencias]** para abrir la ventana Preferencias de usuario.
+1. Seleccione el **[!UICONTROL Notificaciones por correo electrónico de Asset Download]** casilla de verificación y haga clic en **[!UICONTROL Accept]**.
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
@@ -66,7 +66,7 @@ Para habilitar las notificaciones por correo electrónico:
 Para descargar recursos, siga estos pasos:
 
 1. En [!DNL Experience Manager] interfaz de usuario, haga clic en **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]**.
-1. Vaya a los recursos que desee descargar. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta. En la barra de herramientas, haga clic en **[!UICONTROL Descargar]**.
+1. Vaya a los recursos que desea descargar. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta. En la barra de herramientas, haga clic en **[!UICONTROL Descargar]**.
 
    ![Opciones disponibles al descargar recursos de [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
@@ -74,16 +74,16 @@ Para descargar recursos, siga estos pasos:
 
    | Opción Descargar | Descripción |
    |---|---|
-   | **[!UICONTROL Crear una carpeta independiente para cada recurso]** | Seleccione esta opción para incluir cada recurso que descargue, incluidos los recursos de carpetas secundarias anidadas en la carpeta principal del recurso, en una carpeta del equipo local. Cuando esta opción esté *not* seleccione, de forma predeterminada, la jerarquía de carpetas se ignora y todos los recursos se descargan en una carpeta del equipo local. |
+   | **[!UICONTROL Crear una carpeta independiente para cada recurso]** | Seleccione esta opción para crear una carpeta para cada recurso que contenga todas las representaciones descargadas del recurso. Si no se selecciona, cada recurso (y sus representaciones si se selecciona para la descarga) se incluirán en la carpeta principal del archivo generado. |
    | **[!UICONTROL Correo electrónico]** | Seleccione esta opción para enviar una notificación por correo electrónico (que contenga un vínculo a la descarga) a otro usuario. El usuario destinatario debe ser miembro de `dam-users` grupo. Las plantillas de correos electrónicos estándar están disponibles en las siguientes ubicaciones:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Las plantillas que personalice durante la implementación están disponibles en las siguientes ubicaciones: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Puede almacenar plantillas personalizadas específicas del inquilino en las siguientes ubicaciones:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
-   | **[!UICONTROL Recursos]** | Seleccione esta opción para descargar el recurso en su formulario original sin ninguna representación.<br>La opción de subrecursos está disponible si el recurso original tiene subrecursos. |
+   | **[!UICONTROL Recursos]** | Seleccione esta opción para descargar el recurso en su formulario original.<br>La opción de subrecursos está disponible si el recurso original tiene subrecursos. |
    | **[!UICONTROL Representaciones]** | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso seleccionado. |
    | **[!UICONTROL Recortes inteligentes]** | Seleccione esta opción para descargar todas las representaciones de recorte inteligente del recurso seleccionado desde [!DNL Experience Manager]. Se crea y descarga un archivo zip con las representaciones de Recorte inteligente en el equipo local. |
    | **[!UICONTROL Representaciones dinámicas]** | Seleccione esta opción para generar una serie de representaciones alternativas en tiempo real. Al seleccionar esta opción, también puede seleccionar las representaciones que desea crear dinámicamente seleccionando una de las opciones del [Ajuste preestablecido de imagen](/help/assets/dynamic-media/image-presets.md) lista. <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen opcional, como invertir la imagen. La opción solo está disponible si tiene [!DNL Dynamic Media] activada. |
 
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Descargar]**.
 
-   Si la notificación por correo electrónico está habilitada para las descargas masivas, en la bandeja de entrada aparecerá un correo electrónico que contiene una dirección URL de descarga de la carpeta zip archivada. Haga clic en el vínculo de descarga del correo electrónico para descargar la carpeta zip.
+   Si la notificación por correo electrónico está habilitada para las descargas masivas, en la bandeja de entrada aparecerá un correo electrónico que contiene una dirección URL de descarga de la carpeta zip archivada. Haga clic en el vínculo de descarga del correo electrónico para descargar el archivo zip.
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
@@ -95,7 +95,7 @@ Para descargar recursos, siga estos pasos:
 
 El uso compartido de recursos mediante un vínculo es una forma cómoda de ponerlo a disposición de los interesados sin que tengan que iniciar sesión en [!DNL Assets]. Consulte [Vincular funcionalidad compartida](/help/assets/share-assets.md#sharelink).
 
-Cuando los usuarios descargan recursos de vínculos compartidos, [!DNL Assets] utiliza un servicio asíncrono que ofrece descargas más rápidas e ininterrumpidas. Los recursos que se van a descargar se ponen en cola en segundo plano en una bandeja de entrada en archivos ZIP de tamaño de archivo manejable. Para descargas muy grandes, la descarga se divide en archivos de 100 GB de tamaño.
+Cuando los usuarios descargan recursos de vínculos compartidos, [!DNL Assets] utiliza un servicio asíncrono que ofrece descargas más rápidas e ininterrumpidas. Los recursos que se van a descargar se ponen en cola en segundo plano en una bandeja de entrada en archivos ZIP de tamaño de archivo manejable. Para descargas más grandes, la descarga se divide en archivos de 100 GB.
 
 La variable [!UICONTROL Descargar bandeja de entrada] muestra el estado de procesamiento de cada archivo. Una vez completado el procesamiento, puede descargar los archivos de la bandeja de entrada.
 
@@ -112,7 +112,7 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, al usar algo como 
    `/apps/<your-app-name>/config.publish`
 
 1. En la carpeta de configuración, cree un nuevo archivo de tipo `nt:file` named `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. Rellenar `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` con lo siguiente: Establece un tamaño máximo (en bytes) para la descarga como valor de `asset.download.prezip.maxcontentsize`. El siguiente ejemplo configura el tamaño máximo de la descarga ZIP para que no supere los 100 kB.
+1. Rellenar `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` con lo siguiente: Establece un tamaño máximo (en bytes) para la descarga como valor de `asset.download.prezip.maxcontentsize`. El siguiente ejemplo configura el tamaño máximo de la descarga ZIP para que no supere los 100 KB.
 
    ```java
    enabled=B"true"
