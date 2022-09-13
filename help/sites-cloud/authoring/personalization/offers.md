@@ -2,10 +2,10 @@
 title: Creación y administración de ofertas (consola Ofertas)
 description: Utilice la consola Ofertas para crear ofertas que se pueden usar en las experiencias de actividad
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
+source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 67%
+source-wordcount: '1393'
+ht-degree: 63%
 
 ---
 
@@ -88,6 +88,23 @@ Agregue etiquetas, si es necesario.
 1. Confirme con **Listo**.
 
    Si ahora va a la **Ofertas de fragmentos de experiencias** , verá el nuevo fragmento de experiencia, junto con sus variaciones asociadas.
+
+### Segmentación con la plantilla de ofertas {#targeting-offers-template}
+
+>[!CAUTION]
+>
+>Esta opción solo está disponible para clientes con ofertas heredadas preexistentes.
+>
+>Como con el **Ofertas** consola, ya no estará disponible:
+>
+>* una vez que la última oferta heredada se haya convertido en fragmentos de experiencias
+>* cuando las ofertas heredadas estén en desuso (en el futuro)
+>
+>Por lo tanto, la opción recomendada es utilizar fragmentos de experiencias, no esta opción.
+
+Para los clientes con ofertas heredadas preexistentes, la variable **Usar plantilla de oferta** las opciones estarán visibles al destinar componentes que **not** Fragmentos de experiencias:
+
+![Cuadro de diálogo Convertir en variación de fragmento de experiencia](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## La consola Ofertas {#offers-console}
 
