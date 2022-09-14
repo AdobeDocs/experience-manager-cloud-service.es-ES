@@ -3,9 +3,9 @@ title: Actualizaciones de la versión de AEM
 description: Actualizaciones de la versión de AEM
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 575be022704e998e63162f19c37ece877efef627
+source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '399'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ AEM actualizaciones pasan por un proceso de validación de productos intenso y t
 
 >[!NOTE]
 >
->Si el código personalizado se insertó en el entorno de ensayo y luego fue rechazado por usted, la siguiente actualización de AEM eliminará esos cambios para reflejar la etiqueta de git de la última versión de cliente en producción que se realizó correctamente.
+>Si el código personalizado se insertó en el entorno de ensayo y no en la producción, la siguiente actualización de AEM eliminará esos cambios para reflejar la etiqueta git de la última versión correcta del cliente en la producción. Por lo tanto, el código personalizado que solo estaba disponible en el entorno de ensayo tendrá que volver a implementarse.
 
 ## Almacenamiento de nodos compuestos {#composite-node-store}
 
