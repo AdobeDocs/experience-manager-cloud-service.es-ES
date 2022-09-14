@@ -2,10 +2,10 @@
 title: Trabajar con fragmentos de contenido
 description: Descubra cómo los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas, lo que resulta ideal para la creación de páginas y la entrega sin encabezado.
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 100%
+source-wordcount: '2107'
+ht-degree: 98%
 
 ---
 
@@ -86,6 +86,11 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en u
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 >
 >Para obtener más información, consulte también [Explicación de los fragmentos de contenido y de experiencias en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments?lang=es).
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="Cree la estructura de contenido para la aplicación"
+>abstract="A medida que siga nuestra serie de guías interactivas aprenderá a crear la estructura (también conocida como el modelo de fragmento de contenido) que sirve como base para todo su contenido sin encabezado."
 
 ## Fragmentos de contenido y servicios de contenido {#content-fragments-and-content-services}
 

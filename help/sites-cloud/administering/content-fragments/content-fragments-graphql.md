@@ -2,10 +2,10 @@
 title: Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL
 description: Aprenda los conceptos básicos de realización de un CMS sin encabezado AEM utilizando fragmentos de contenido con GraphQL para la entrega de contenido sin encabezado.
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 95%
+source-wordcount: '758'
+ht-degree: 92%
 
 ---
 
@@ -31,6 +31,11 @@ Esto se logra usando los fragmentos de contenido, junto con la API de GraphQL de
 >* [AEM Commerce consume datos de una plataforma de Commerce a través de GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* [Los fragmentos de contenido de AEM trabajan junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en aplicaciones](/help/headless/graphql-api/content-fragments.md).
 
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="Extraer contenido mediante la API de GraphQL"
+>abstract="En este módulo aprenderá a utilizar los fragmentos de contenido y la API de GraphQL como sistema de gestión de contenido sin encabezado."
 
 ## CMS sin encabezado {#headless-cms}
 
