@@ -2,9 +2,9 @@
 title: Uso de bibliotecas del lado del cliente en AEM as a Cloud Service
 description: AEM proporciona carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente (clientlibs) en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2565'
 ht-degree: 1%
 
 ---
@@ -211,7 +211,7 @@ La incrustación de código es útil para proporcionar acceso a las bibliotecas 
 
 #### Carpetas de biblioteca de cliente específicas de la aplicación {#app-specific-client-library-folders}
 
-Se recomienda mantener todos los archivos relacionados con la aplicación en la carpeta de la aplicación siguiente `/app`. También es una práctica recomendada denegar el acceso de los visitantes del sitio web al `/app` carpeta. Para satisfacer ambas prácticas recomendadas, cree una carpeta de biblioteca de cliente debajo de la variable `/etc` carpeta que incrusta la biblioteca de cliente que se encuentra a continuación `/app`.
+Se recomienda mantener todos los archivos relacionados con la aplicación en su carpeta de aplicación debajo de /apps. También es una práctica recomendada denegar el acceso a la carpeta /apps a los visitantes de un sitio web. Para satisfacer ambas prácticas recomendadas, cree una carpeta de biblioteca de cliente debajo de la carpeta /etc que incrusta la biblioteca de cliente que se encuentra debajo de /apps.
 
 Utilice la propiedad categories para identificar la carpeta de biblioteca de cliente que desea incrustar. Para incrustar la biblioteca, agregue una propiedad a la incrustación `cq:ClientLibraryFolder` utilizando los siguientes atributos de propiedad:
 
