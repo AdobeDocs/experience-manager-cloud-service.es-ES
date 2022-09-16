@@ -3,9 +3,9 @@ title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
+source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1056'
 ht-degree: 8%
 
 ---
@@ -98,7 +98,7 @@ Tenga en cuenta que al utilizar su propia CDN, no es necesario instalar los domi
 >
 >Los entornos de programa de espacio aislado no admiten una CDN proporcionada por el cliente.
 
-Existe potencialmente una pequeña visita de rendimiento debido al salto adicional, aunque es probable que los saltos de la CDN del cliente a la CDN administrada de AEM sean eficientes.
+El salto adicional entre la CDN del cliente y la CDN AEM solo es necesario en caso de que falte una caché. Al utilizar las estrategias de optimización de caché descritas en este artículo, la adición de una CDN de cliente solo debería introducir una latencia insignificante.
 
 Tenga en cuenta que esta configuración de CDN de cliente es compatible con el nivel de publicación, pero no delante del nivel de creación.
 
