@@ -2,9 +2,9 @@
 title: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
+source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '568'
 ht-degree: 2%
 
 ---
@@ -15,19 +15,24 @@ En la siguiente sección se describen las notas de la versión generales de [!DN
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de la última versión 1.9.2 de [!DNL Workfront for Experience Manager enhanced connector] es 03 de agosto de 2022.
+La fecha de la versión de la última versión 1.9.3 de [!DNL Workfront for Experience Manager enhanced connector] es 16 de septiembre de 2022.
 
 ## Elementos destacados de la versión {#release-highlights}
 
 La última versión de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes mejoras y correcciones de errores:
 
-* La variable **[!UICONTROL Cargar documento]** el paso del flujo de trabajo no puede adjuntar un documento a Workfront.
+* No se puede cargar un archivo de más de 8 GB de tamaño.
+* Problemas durante la publicación automática de recursos que se envían de Workfront a AEM.
+* El campo Ruta de acceso raíz no está disponible para el campo Etiquetas mientras se edita un formulario de esquema de metadatos predeterminado.
+* Problemas al añadir nuevas versiones en Workfront mediante flujos de trabajo AEM
+* Cuando se ejecuta una búsqueda AEM de recursos disponibles en Workfront, AEM muestra un mensaje de error.
+* Cuando se crea un flujo de trabajo AEM para la creación de tareas a partir de un recurso y no se define un nombre de tarea principal, la tarea no se crea en Workfront.
 
-* La variable **[!UICONTROL Cargar documento]** el paso del flujo de trabajo no puede adjuntar un documento a Tareas y problemas en Workfront. El paso de flujo de trabajo adjunta un documento a Proyectos correctamente.
+
 
 >[!IMPORTANT]
 >
->Adobe recomienda que [actualizar a la última versión 1.9.2](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recomienda que [actualizar a la última versión 1.9.3](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conocidos {#known-issues}
 
@@ -35,7 +40,17 @@ La última versión de [!DNL Workfront for Experience Manager enhanced connector
 
 * Cuando utiliza la experiencia clásica de Workfront, la variable **[!UICONTROL Enviar a]** en la **[!UICONTROL Más]** la lista desplegable no permite seleccionar el destino de destino dentro de Experience Manager. La variable **[!UICONTROL Enviar a]** funciona correctamente con la opción **[!UICONTROL Acciones de documento]** lista desplegable. La variable **[!UICONTROL Enviar a]** funciona correctamente para **[!UICONTROL Más]** lista desplegable así como el **[!UICONTROL Acciones de documento]** lista desplegable disponible en la nueva experiencia de Workfront.
 
+* Workfront muestra un `SERVER_ERROR` al vincular documentos a AEM después de actualizar a la versión 8316. Para resolver el problema, asigne `rep:readProperties` a `content/dam/collections` para `wf-workfront-user` AEM grupo de usuarios.
+
 ## Versiones anteriores {#previous-releases}
+
+### Versión de agosto de 2022 {#august-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] La versión 1.9.2, publicada el 3 de agosto, incluye las siguientes actualizaciones:
+
+* La variable **[!UICONTROL Cargar documento]** el paso del flujo de trabajo no puede adjuntar un documento a Workfront.
+
+* La variable **[!UICONTROL Cargar documento]** el paso del flujo de trabajo no puede adjuntar un documento a Tareas y problemas en Workfront. El paso de flujo de trabajo adjunta un documento a Proyectos correctamente.
 
 ### Versión de julio de 2022 {#july-2022-release}
 
