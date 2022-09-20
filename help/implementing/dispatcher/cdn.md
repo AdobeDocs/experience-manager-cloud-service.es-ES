@@ -3,9 +3,9 @@ title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
+source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1093'
 ht-degree: 8%
 
 ---
@@ -127,6 +127,10 @@ La CDN administrada de AEM agrega encabezados a cada solicitud con:
 
 * código de país: `x-aem-client-country`
 * código de continente: `x-aem-client-continent`
+
+>[!NOTE]
+>
+>En el caso de la CDN administrada por el cliente, estos encabezados reflejarán la ubicación del servidor proxy CDN de los clientes en lugar del cliente real.  Por lo tanto, para la CDN administrada por el cliente, los encabezados de geolocalización deben ser administrados por la CDN de los clientes.
 
 Los valores de los códigos de país son los códigos alfa-2 descritos [here](https://en.wikipedia.org/wiki/ISO_3166-1).
 
