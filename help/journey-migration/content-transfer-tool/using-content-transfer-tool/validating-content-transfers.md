@@ -2,10 +2,10 @@
 title: Validación de transferencias de contenido
 description: Usar la herramienta de transferencia de contenido para validar transferencias de contenido
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+source-git-commit: 015f3b0232861ac961922245650cb02db44daf77
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 ## Introducción {#getting-started}
 
-Los usuarios tienen la capacidad de determinar de forma fiable si todo el contenido extraído por la herramienta de transferencia de contenido se incorporó correctamente a la instancia de destino. Esta función de validación funciona comparando un compendio de los nodos involucrados durante la extracción con un compendio de nodos involucrados durante la ingesta. Si hay rutas de nodos incluidas en el compendio de extracción que no aparecen en el compendio de ingesta, se considera que la validación ha fallado y puede que sea necesaria una validación manual adicional.
+Los usuarios tienen la capacidad de determinar de forma fiable si todo el contenido extraído por la herramienta de transferencia de contenido se incorporó correctamente a la instancia de destino. Esta función de validación funciona comparando un compendio de las rutas de todos los nodos involucrados durante la extracción con un compendio de las rutas de todos los nodos involucrados durante la ingesta. Si hay rutas de nodos incluidas en el compendio de extracción que no aparecen en el compendio de ingesta, se considera que la validación ha fallado y puede que sea necesaria una validación manual adicional.
 
 >[!INFO]
 >
