@@ -3,10 +3,10 @@ title: Validación y depuración mediante las herramientas de Dispatcher
 description: Validación y depuración mediante las herramientas de Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
+source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -312,13 +312,26 @@ Esta instrucción está pensada para permitir solicitudes de `css` , pero tambi�
 
 **el archivo incluido (...) no coincide con ningún archivo conocido**
 
-Hay dos tipos de archivos en la configuración del host virtual Apache que se pueden especificar como incluye: reescrituras y variables.
-Los archivos incluidos deben tener el siguiente nombre:
+De forma predeterminada, se pueden especificar dos tipos de archivos en la configuración del host virtual Apache como se incluye: reescrituras y variables.
 
 | Tipo | Incluir nombre de archivo |
 |-----------|---------------------------------|
 | Reescrituras | `conf.d/rewrites/rewrite.rules` |
 | Variables | `conf.d/variables/custom.vars` |
+
+En modo flexible, también se pueden incluir otros archivos, siempre que estén ubicados en subdirectorios (en cualquier nivel) de `conf.d` prefijado de la siguiente manera.
+
+| Incluir prefijo de directorio superior del archivo |
+|-------------------------------------|
+| `conf.d/includes` |
+| `conf.d/modsec` |
+| `conf.d/rewrites` |
+
+Por ejemplo, puede incluir un archivo en algún directorio recién creado en `conf.d/includes` como se indica a continuación:
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 También puede incluir el **default** versión de las reglas de reescritura, cuyo nombre es `conf.d/rewrites/default_rewrite.rules`.
 Tenga en cuenta que no hay una versión predeterminada de los archivos de variables.
