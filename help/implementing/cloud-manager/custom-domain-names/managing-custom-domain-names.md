@@ -2,7 +2,7 @@
 title: Administración de nombres de dominio personalizados
 description: Aprenda a utilizar Cloud Manager para ver, actualizar, reemplazar y eliminar nombres de dominio personalizados.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: 955f4bb55434eeb1a429a1972714b71c5370de1e
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 5%
@@ -35,7 +35,7 @@ Puede seguir [los mismos pasos para ver y actualizar un nombre de dominio person
 >
 >El certificado SSL debe ser válido, [ya configurado,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) y contienen el nombre de dominio personalizado que está actualizando.
 
-##  Eliminación de un nombre de dominio personalizado {#deleting}
+## Eliminación de un nombre de dominio personalizado {#deleting}
 
 Un usuario con la variable **Propietario empresarial** o **Administrador de implementación** puede usar Cloud Manager para eliminar un nombre de dominio personalizado.
 
