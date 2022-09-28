@@ -2,10 +2,10 @@
 title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
+source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 97%
+source-wordcount: '3053'
+ht-degree: 96%
 
 ---
 
@@ -336,7 +336,7 @@ Para validar que el tráfico es realmente saliente en la dirección IP dedicada 
 ## Clientes de direcciones de salida dedicadas heredadas {#legacy-dedicated-egress-address-customers}
 
 Si se le ha aprovisionado con una IP de salida dedicada antes del 30 de septiembre de 2021, su función de IP de salida dedicada solo admite puertos HTTP y HTTPS.
-Esto incluye HTTP/1.1 y HTTP/2 cuando se cifran.
+Esto incluye HTTP/1.1 y HTTP/2 cuando se cifran. Además, un extremo de salida dedicado puede hablar con cualquier destino solo a través de HTTP/HTTPS en los puertos 80/443 respectivamente.
 
 ## Red privada virtual (VPN) {#vpn}
 
