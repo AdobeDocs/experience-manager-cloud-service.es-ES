@@ -2,7 +2,7 @@
 title: Notificaciones
 description: Obtenga información sobre cómo recibir información sobre las implementaciones de canalización mediante el sistema de notificación de Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 0de041211c8257d920bcf354593b3caa2db43572
+source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Puede definir el comportamiento de las alertas.
 * **Las alertas deben permanecer en la pantalla hasta que las descarte** - Controla si las alertas deben persistir a menos que las descarte activamente
 * **Duración** - Define cuánto tiempo debe permanecer la alerta en la pantalla si no ha elegido que permanezcan en ella.
 
-## Correo electrónico {#emails}
+### Correo electrónico {#emails}
 
 Las notificaciones están disponibles en la interfaz de usuario web en todo el Adobe [!UICONTROL Experience Cloud] soluciones. También puede optar por que estas notificaciones se envíen por correo electrónico en la variable **Correos electrónicos** para obtener más información.
 
