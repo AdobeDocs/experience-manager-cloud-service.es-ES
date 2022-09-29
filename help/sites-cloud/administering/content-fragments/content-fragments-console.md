@@ -1,12 +1,14 @@
 ---
 title: Consola Fragmentos de contenido
 description: Obtenga información sobre cómo administrar fragmentos de contenido desde la consola Fragmentos de contenido.
-landing-page-description: Aprenda a administrar fragmentos de contenido desde la consola Fragmentos de contenido, que se centra en el uso de gran volumen de los fragmentos de contenido para casos de uso sin encabezado, pero que también se utiliza al crear páginas.
+landing-page-description: Obtenga información sobre cómo administrar fragmentos de contenido desde la consola Fragmentos de contenido, que se centra en el uso de gran volumen de fragmentos de contenido para casos de uso remoto, pero que también se utiliza al crear páginas.
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 66%
+source-wordcount: '883'
+ht-degree: 63%
 
 ---
 

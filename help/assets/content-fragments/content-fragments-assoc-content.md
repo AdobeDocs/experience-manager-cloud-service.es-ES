@@ -1,13 +1,11 @@
 ---
 title: Contenido asociado (Recursos - Fragmentos de contenido)
-description: Comprender cómo AEM función de contenido asociada proporciona la conexión para que los recursos se puedan utilizar opcionalmente con el fragmento cuando se añada a una página de contenido, añadiendo flexibilidad adicional a la entrega de contenido sin encabezado.
-feature: Content Fragments
-role: User
+description: Comprender cómo AEM función de contenido asociada proporciona la conexión para que los recursos se puedan utilizar opcionalmente con el fragmento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 58%
+source-wordcount: '232'
+ht-degree: 62%
 
 ---
 

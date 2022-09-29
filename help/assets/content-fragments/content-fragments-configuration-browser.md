@@ -1,13 +1,11 @@
 ---
 title: 'Fragmentos de contenido: navegador de configuración (Recursos - Fragmentos de contenido)'
-description: Aprenda a habilitar ciertas funciones de fragmento de contenido en el navegador de configuración para aprovechar AEM potentes funciones de envío sin periféricos.
-feature: Content Fragments
-role: User
+description: Obtenga información sobre cómo habilitar la funcionalidad Fragmento de contenido en el navegador de configuración.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 78%
+source-wordcount: '364'
+ht-degree: 80%
 
 ---
 

@@ -1,10 +1,8 @@
 ---
 title: 'Variaciones: Crear contenido de fragmentos (Recursos - Fragmentos de contenido)'
 description: Comprender cómo las variaciones pueden hacer que el contenido sin encabezado en AEM sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito.
-feature: Content Fragments
-role: User
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2286'
 ht-degree: 96%
