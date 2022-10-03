@@ -3,10 +3,10 @@ title: Configuración de OSGi para Adobe Experience Manager as a Cloud Service
 description: Configuración de OSGi con valores secretos y valores específicos de entorno
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 339030fc5edd22f81f977046185b53649869cc83
+source-git-commit: aeff6c3e81eb71521dbd75fc73d3e177aac60abd
 workflow-type: tm+mt
-source-wordcount: '3285'
-ht-degree: 1%
+source-wordcount: '3297'
+ht-degree: 2%
 
 ---
 
@@ -163,7 +163,7 @@ Utilice solo configuraciones específicas del entorno (`$[env:ENV_VAR_NAME]`) pa
 
 Adobe Experience Manager as a Cloud Service requiere el uso de configuraciones específicas del entorno (`$[secret:SECRET_VAR_NAME]`) para cualquier valor de configuración OSGi secreto, como contraseñas, claves de API privadas o cualquier otro valor que no se pueda almacenar en Git por motivos de seguridad.
 
-Utilice configuraciones específicas de entornos secretos para almacenar el valor de secretos en todos los entornos de Adobe Experience Manager as a Cloud Service, incluidos los entornos de fase y producción.
+Utilice configuraciones específicas del entorno secretas para almacenar el valor de los secretos en todos los entornos de Adobe Experience Manager as a Cloud Service, incluidos Fase y Producción.
 
 ## Creación de configuraciones de OSGi {#creating-sogi-configurations}
 
@@ -195,7 +195,7 @@ La consola web AEM del SDK de AEM Quickstart Jar se puede utilizar para configur
    ![Configuración de OSGi](./assets/configuring-osgi/configuration.png)
 1. Edite los valores de las propiedades de configuración de OSGi a través de la interfaz de usuario web según sea necesario
 1. Registre la identidad persistente (PID) en un lugar seguro. Esto se utiliza más adelante para generar el JSON de configuración OSGi
-1. Toque Guardar
+1. Pulse Guardar
 1. Vaya a OSGi > Impresora de configuración del instalador OSGi
 1. Pegue en el PID copiado en el paso 5, asegúrese de que el Formato de serialización está establecido en &quot;OSGi Configurator JSON&quot;
 1. Toque Imprimir
@@ -295,6 +295,10 @@ Se recomienda escribir una secuencia de comandos bash simple que establezca las 
 Los valores de los secretos se leen a partir de archivos. Por lo tanto, para cada marcador de posición que utilice un secreto se debe crear un archivo de texto que contenga el valor secreto.
 
 Por ejemplo, si `$[secret:server_password]` se utiliza, un archivo de texto llamado **server_password** debe crearse. Todos estos archivos secretos deben almacenarse en el mismo directorio y en la propiedad framework `org.apache.felix.configadmin.plugin.interpolation.secretsdir` debe configurarse con ese directorio local.
+
+>[!CAUTION]
+>
+>El nombre del archivo de texto debe ser **server_password** - sin extensión de archivo.
 
 La variable `org.apache.felix.configadmin.plugin.interpolation.secretsdir` es una propiedad de marco de Sling; por lo tanto, esta propiedad no se establece en la consola felix (/system/console), sino que se establece en el archivo sling.properties que se utiliza cuando se inicia el sistema. Este archivo se puede encontrar en el subdirectorio /conf de la carpeta Jar/install extraída (crx-quickstart/conf).
 
