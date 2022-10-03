@@ -1,63 +1,122 @@
 ---
 title: Personalización y targeting de contenido
-description: Descubra cómo AEM puede crear contenido personalizado
+description: Descubra cómo puede crear contenido personalizado y dirigido con AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 8b741b64db43369bf0ca3bfbe947fb58ef5ec05a
+source-git-commit: 635a9e577f03c865cdb31f539598fb8fe034d7b7
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 97%
+source-wordcount: '1041'
+ht-degree: 12%
 
 ---
 
-# Personalización y targeting de contenido {#personalization}
 
-## Personalización y targeting de contenido {#personalization-and-content-targeting}
+# Personalización y targeting de contenido {#personalization-and-content-targeting}
 
-AEM ofrece un marco de herramientas para crear contenido dirigido y presentar experiencias personalizadas.
+La personalización del contenido web que proporcione a los clientes significa adaptar esas experiencias a sus intereses y necesidades. Puede hacerlo en función de la información que tenga sobre ellos; por ejemplo, resumen de compras, edad, sexo, geografía, entre otros.
 
-## Modo Targeting {#targeting-mode}
+Con Adobe Experience Manager as a Cloud Service (AEM) puede crear una selección de contenido y especificar qué audiencias (grupos de usuarios finales) verán cada experiencia individual. Esto significa que está dirigiendo sus experiencias personalizadas a audiencias específicas.
 
-[Contenido orientado por el autor mediante el modo de Orientación de AEM. ](/help/sites-cloud/authoring/personalization/targeted-content.md) En el modo Targeting y el componente de Target se proporcionan las herramientas necesarias para crear contenido para las experiencias de las actividades de marketing.
+Cuando el lector esté en línea, el motor de orientación revisará la información disponible sobre el usuario final y la comparará con las definiciones de experiencia. A continuación, el motor *&quot;decide&quot;* qué experiencia personalizada se debe mostrar.
 
-## Actividades {#activities}
+AEM proporciona un marco de herramientas para:
 
-Las actividades definen y organizan los esfuerzos de marketing. Las actividades constan de las audiencias a las que desea dirigirse y el período de tiempo durante el que se aplica el targeting.
+* Creación de contenido de destino, adecuado para una amplia gama de audiencias, según la información de cliente disponible.
+* Definición de las reglas utilizadas para resolver la información de usuario conocida respecto a una definición de audiencia.
+* Configuración de las páginas para presentar experiencias personalizadas segmentadas; para procesar el contenido específico aplicable al usuario final actual.
 
-Por ejemplo, el catálogo de productos puede incluir teasers que destacan los productos de temporada. La actividad de deportes de verano define los segmentos de marketing a los que se dirigen los teasers durante los meses de verano.
+La siguiente descripción general presenta algunos de los términos utilizados para la personalización en AEM as a Cloud Service, seguidos de un orden de acción recomendado.
 
-Las actividades también identifican el [motor de targeting](#targeting-engine) que usan las páginas.
+## Experiencia {#experience}
 
-Utilice la [consola Actividades](/help/sites-cloud/authoring/personalization/activities.md) para crear y administrar las actividades de sus marcas. También puede crear actividades a medida que [crea contenido de destino](/help/sites-cloud/authoring/personalization/targeted-content.md).
+Una experiencia es el contenido que desea mostrar a los usuarios finales.
 
-## Experiencias {#experiences}
+## Experiencia personalizada {#personalized-experience}
 
-Para cada actividad, se definen una o más experiencias que identifican las audiencias a las que se va a dirigir. AEM permite controlar el contenido de que consta cada experiencia.
+Una experiencia personalizada es una experiencia que se muestra a una audiencia limitada. Usted define la audiencia y el contenido solo se muestra cuando la información conocida sobre el usuario final actual corresponde a esa definición de audiencia.
 
-Las audiencias se basan en segmentos de marketing que se crean en AEM o Adobe Target. Cuando un visitante abre una página web, la lógica de la página determina la audiencia a la que pertenece y muestra el contenido que ha creado para dicha audiencia.
+Al crear páginas, puede definir varias experiencias, y cada experiencia se resuelve en una o más audiencias. Si no se resuelve ninguna audiencia, se muestra la experiencia predeterminada.
 
-Por ejemplo, una actividad define las experiencias para dos audiencias independientes: mujeres mayores de 30 años y mujeres menores de 30 años. La página para mujeres de un sitio web puede mostrar diferentes productos para cada experiencia.
+### Oferta {#offer}
 
-Se definen experiencias para una actividad. Puede utilizar [consola Actividades](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console) o el [modo Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode) para añadir experiencias a una actividad.
+<!-- not clear - needs clarification -->
+<!-- is an offer a personalized experience, or an activity? -->
 
-## Ofertas {#offers}
+Una oferta es una experiencia personalizada, que a menudo está disponible durante un período de tiempo limitado.
 
-Una oferta es el contenido que aparece en una ubicación de una página para una experiencia. Utilice ofertas diferentes para distintas experiencias con el fin de maximizar la eficacia del contenido para las audiencias.
+Por ejemplo, una página de un sitio web de muestra puede utilizar ofertas como la imagen de teaser que aparece en la parte superior de la página. Una persona mayor de 30 años y una persona menor de 30 años verán diferentes ofertas como teaser de experiencias.
 
-Por ejemplo, la página para mujeres de un sitio web de ejemplo puede utilizar ofertas para la imagen de teaser que aparece en la parte superior de la página. Se utiliza una oferta diferente como teaser para la experiencia de mujeres mayores de 30 años y la experiencia de muyeres menores de 30 años.
+## Audiencia {#audience}
 
-Uso [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) para crear ofertas que se puedan usar en varias experiencias. Cree ofertas de un solo uso o añada ofertas de una biblioteca de ofertas al [crear el contenido de destino](/help/sites-cloud/authoring/personalization/targeted-content.md).
+Una audiencia es un grupo de usuarios finales al que desea dirigirse con contenido personalizado. Cuando un visitante abre una página web, la lógica de página determina la audiencia a la que pertenece en función de la información conocida. En función de esa evaluación, AEM muestra el contenido que ha creado para esa audiencia.
 
-<!--
-Use the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) to create offers that you can use in multiple experiences. Create single-use offers or add offers from an offer library when [authoring targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
--->
+Las audiencias se basan en segmentos de marketing. Se crean en AEM o en Adobe Target; puede crear audiencias de Adobe Target directamente en AEM usando la consola de audiencias .
+
+### Segmento {#segment}
+
+En AEM ContextHub, una audiencia se define como un segmento, en función de reglas (condiciones). A continuación, se resuelven para procesar el contenido requerido.
+
+## Actividad {#activity}
+
+Una actividad:
+
+* define la asignación de una audiencia específica (segmento) con una experiencia específica
+* define el periodo de tiempo para el que se aplica el objetivo
+* identifica el [motor de targeting](#targeting-engine) que sus páginas utilizan
+
+<!-- an example for each of the two types would be good -->
+
+La actividad puede ser una actividad de personalización o una actividad de prueba A/B (en el caso del flujo de trabajo de personalización de AEM y Adobe Target).
+
+Por ejemplo, una actividad de podría definir experiencias para dos audiencias independientes: personas mayores de 30 años y personas menores de 30 años. Una página del sitio web puede mostrar diferentes productos para cada audiencia.
+
+O, como otro ejemplo, su catálogo de productos puede incluir teasers que centran la atención en productos de temporada. Así que una actividad de deportes de verano podría definir las audiencias a las que se dirigen los teasers durante los meses de verano.
+
+Utilice la variable [Consola de actividades](/help/sites-cloud/authoring/personalization/activities.md) para crear y administrar las actividades de [Marcas](#brand). También puede crear actividades a medida que crea su [contenido segmentado](/help/sites-cloud/authoring/personalization/targeted-content.md) con [Modo de Orientación](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode).
+
+### Marca {#brand}
+
+Una marca contiene una selección de actividades y áreas de marketing.
+
+Cuando crea una marca mediante la consola Actividades , esta también aparece en la consola Ofertas .
+
+### Área {#area}
+
+Un área es una subdivisión de una marca.
+
+## Modo de Orientación {#targeting-mode}
+
+Al crear, este es el modo de edición que se utiliza para activar y configurar los componentes para la personalización.
+
+Puede [Creación de contenido dirigido](/help/sites-cloud/authoring/personalization/targeted-content.md) uso del modo de Orientación de AEM. En el modo Targeting y el componente de Target se proporcionan las herramientas necesarias para crear contenido para las experiencias de las actividades de marketing.
+
+## Fragmento de experiencias {#experience-fragments}
+
+Conjunto agrupado de componentes que constituyen una experiencia.
+
+[Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) están hechos de contenido e información (estilo, etc.) para crear una experiencia; se pueden utilizar directamente al crear páginas. Pueden considerarse como un subconjunto de una página AEM. Permiten a los autores de contenido reutilizar contenido en varios canales, incluidas las páginas Sitios y sistemas de terceros.
+
+Para un ejemplo de personalización, se puede combinar un Título, una imagen, una descripción y un botón de llamada a acción para formar una experiencia de teaser. El uso de fragmentos de experiencias es una parte clave del uso de la personalización de Adobe Target.
 
 ## Motor de targeting {#targeting-engine}
 
-El motor de targeting es el mecanismo que lleva a cabo la lógica para el contenido de destino. Las [actividades](/help/sites-cloud/authoring/personalization/activities.md) se configuran para utilizar uno de estos dos motores de targeting disponibles: AEM y Adobe Target.
+El motor de targeting es el mecanismo que resuelve la lógica del contenido de destino. Las [actividades](/help/sites-cloud/authoring/personalization/activities.md) se configuran para utilizar uno de estos dos motores de targeting disponibles: AEM y Adobe Target.
 
-### AEM {#aem}
+El motor de orientación es la plataforma o el mecanismo que decide qué sistema de personalización utilizar.
 
-AEM proporciona un motor de targeting integrado que procesa solicitudes de páginas y determina el contenido que se debe mostrar. Al utilizar el motor de targeting de AEM, el uso se limita a los segmentos que se crean en AEM para definir las audiencias de las experiencias.
+Actualmente AEM puede utilizar:
+
+* [AEM ContextHub](#aem-contexthub) (AEM estándar)
+* el [Adobe Target](#adobe-target) motor de personalización
+
+>[!CAUTION]
+>
+>Una sola página AEM no puede utilizar ambos motores al mismo tiempo.
+>
+>Puede usar ambos motores en páginas separadas dentro del mismo sitio.
+
+### AEM ContextHub {#aem-contexthub}
+
+AEM proporciona el motor de targeting integrado ContextHub que procesa las solicitudes de página y determina el contenido que se va a mostrar. Al utilizar el motor de targeting de AEM, el uso se limita a los segmentos que se crean en AEM para definir las audiencias de las experiencias.
 
 ### Adobe Target {#adobe-target}
 
@@ -66,4 +125,20 @@ El motor de targeting de Adobe Target provoca el seguimiento en Adobe Target de 
 * Al utilizar este motor de targeting, usa los segmentos que importe de Adobe Target para definir audiencias para las experiencias.
 * Las actividades que usan el motor de targeting de Adobe Target [se sincronizan con Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
-Puede utilizar este motor cuando se haya integrado con Adobe Target. <!--You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).-->
+Puede utilizar este motor cuando haya [integrado con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+
+## Configuración del contenido personalizado {#how-to-setup-personalized-content}
+
+Se requieren varios pasos y definiciones para entregar el contenido personalizado:
+
+1. Integre AEM con su motor de orientación.
+
+1. Configure las audiencias.
+
+   1. En función del motor de targeting, defina la audiencia o el segmento, junto con las reglas.
+
+1. Cree su marca y actividades.
+
+1. Cree la selección de experiencias que desea mostrar a las distintas audiencias.
+
+1. Personalice estas experiencias segmentándolas para audiencias específicas (segmentos).
