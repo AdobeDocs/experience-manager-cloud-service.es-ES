@@ -2,7 +2,7 @@
 title: Personalización y targeting de contenido
 description: Descubra cómo puede crear contenido personalizado y dirigido con AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 635a9e577f03c865cdb31f539598fb8fe034d7b7
+source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 12%
@@ -38,9 +38,6 @@ Al crear páginas, puede definir varias experiencias, y cada experiencia se resu
 
 ### Oferta {#offer}
 
-<!-- not clear - needs clarification -->
-<!-- is an offer a personalized experience, or an activity? -->
-
 Una oferta es una experiencia personalizada, que a menudo está disponible durante un período de tiempo limitado.
 
 Por ejemplo, una página de un sitio web de muestra puede utilizar ofertas como la imagen de teaser que aparece en la parte superior de la página. Una persona mayor de 30 años y una persona menor de 30 años verán diferentes ofertas como teaser de experiencias.
@@ -62,8 +59,6 @@ Una actividad:
 * define la asignación de una audiencia específica (segmento) con una experiencia específica
 * define el periodo de tiempo para el que se aplica el objetivo
 * identifica el [motor de targeting](#targeting-engine) que sus páginas utilizan
-
-<!-- an example for each of the two types would be good -->
 
 La actividad puede ser una actividad de personalización o una actividad de prueba A/B (en el caso del flujo de trabajo de personalización de AEM y Adobe Target).
 
