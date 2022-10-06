@@ -2,7 +2,7 @@
 title: Extracción de contenido del origen
 description: Extracción de contenido del origen
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: a2e14d73fd6b8138799799c6408a0846224cd8c9
+source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 21%
@@ -35,7 +35,7 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
    >[!IMPORTANT]
    >
    >Asegúrese de que la clave de Extracción sea válida y no esté cerca de su caducidad. Si está cerca de su fecha de caducidad, puede renovar la clave de Extracción seleccionando el conjunto de migración y haciendo clic en Propiedades. Haga clic en **Renovar**. Esto le llevará al Cloud Acceleration Manager, donde puede hacer clic en **Copiar clave de extracción**. Cada vez que haga clic en **Copiar clave de extracción**, se genera una nueva clave de Extracción que es válida durante 14 días desde el momento de la creación.
-   >[!imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. Esto abrirá el cuadro de diálogo Extracción . Haga clic en **Extraer** para iniciar la fase de extracción.
 
