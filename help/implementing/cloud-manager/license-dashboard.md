@@ -2,10 +2,10 @@
 title: Tablero de licencias
 description: Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
+source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 4%
+source-wordcount: '876'
+ht-degree: 3%
 
 ---
 
@@ -83,6 +83,10 @@ Las solicitudes de contenido tendrán variaciones con las herramientas de inform
 | Bloqueadores de tráfico | El uso de un bloqueador de rastreadores en un navegador puede excluir el seguimiento de algunas solicitudes. |
 | Firewalls | Los cortafuegos pueden bloquear el seguimiento de Analytics. Esto es más frecuente con los cortafuegos corporativos. |
 
+### ¿Qué sucede si deseo obtener más información sobre mi volumen de solicitudes de contenido? {#current-request-volumes}
+
+Si desea obtener información adicional sobre el volumen de solicitud de contenido que se muestra en el panel de licencias, su equipo de Adobe puede proporcionar un informe que muestre los controladores de mayor volumen de las solicitudes de contenido. Póngase en contacto con el equipo de Adobe o con el Servicio de atención al cliente de Adobe para solicitar un informe de uso superior.
+
 ### ¿Qué sucede si utilizo mi propia CDN? {#using-own-cdn}
 
-El panel de solicitudes de contenido de Cloud Manager no mostrará el seguimiento de su propia CDN.
+El panel de licencias solo mostrará los datos rastreados por la CDN de Cloud Service.  Si elige traer su propia CDN (BYOCDN), informará de su volumen de solicitud de contenido a Adobe anualmente, tal como se indica en su contrato.

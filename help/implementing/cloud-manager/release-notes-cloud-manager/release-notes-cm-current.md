@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión para Cloud Manager 2022.9.0 en Adobe Experience Manager as a Cloud Service
-description: Estas son las notas de la versión de Cloud Manager 2022.9.0 en AEM as a Cloud Service.
+title: Notas de la versión para Cloud Manager 2022.10.0 en Adobe Experience Manager as a Cloud Service
+description: Estas son las notas de la versión de Cloud Manager 2022.10.0 en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: f7f4f1c81b1dd611b723514b8c06aad6909a73c1
+source-git-commit: a873b23f7dac8742820300ef154b94a72e4b8a23
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 2%
+source-wordcount: '207'
+ht-degree: 6%
 
 ---
 
 
-# Notas de la versión para Cloud Manager 2022.9.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión para Cloud Manager 2022.10.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta las notas de la versión de Cloud Manager 2022.9.0 en AEM as a Cloud Service.
+Esta página documenta las notas de la versión de Cloud Manager 2022.10.0 en AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,16 +21,15 @@ Esta página documenta las notas de la versión de Cloud Manager 2022.9.0 en AEM
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de Cloud Manager 2022.9.0 en AEM as a Cloud Service es el 8 de septiembre de 2022. La próxima versión está prevista para el 6 de octubre de 2022.
+La fecha de la versión de Cloud Manager 2022.9.0 en AEM as a Cloud Service es el 6 de octubre de 2022. La próxima versión está prevista para el 3 de noviembre de 2022.
 
 ## Novedades {#what-is-new}
 
-* AEM guías ahora se pueden configurar de forma autoservicio en programas de espacio aislado.
-* Los clientes que no tengan ninguna función de Cloud Manager no podrán acceder a los detalles del programa. Sin embargo, pueden navegar a los puntos finales de Autor desde las páginas de aterrizaje de Cloud Manager.
-* Los clientes pueden configurar **Incidente y notificación dinámica** grupos a los que desee escuchar desde el Adobe sobre incidentes o recomendaciones relacionados con su aplicación AEMaaCS.
-* Agregar la asequibilidad del programa en la interfaz de usuario proporcionará información del objeto de forma coherente cuando esté deshabilitada por motivos relacionados con permisos o autorizaciones.
+* La versión de [AEM tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) utilizado por Cloud Manager se ha actualizado a la versión 39.
+* La interfaz de usuario del panel de licencias ahora informará a los usuarios si hay un programa de Sites configurado con una CDN además de AEM as a Cloud Service.
 
 ## Correcciones de errores {#bug-fixes}
 
-* El flujo de trabajo Añadir entorno incluye validaciones adicionales para garantizar un resultado satisfactorio.
-* Se han mejorado los comentarios de los clientes relacionados con la creación de aplicaciones AEM clientes cuando maven enfrenta problemas de conectividad con repos privados.
+* Se corrigió una situación en la que los usuarios con letras mayúsculas en su dirección de correo electrónico no podían agregarse a una subcuenta de Nueva relación en Cloud Manager.
+* La solución Screens ahora se muestra si hay varias soluciones en el programa.
+* Se corrigió una situación en la que la ejecución de la canalización del front-end no se iniciaba cuando el entorno tenía el estado UPDATING.

@@ -8,9 +8,9 @@ user-guide-description: Recursos informativos y enlaces a la documentación sobr
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 05adf79b66c36e6354fe95fe4d5f654b49980589
+source-git-commit: 115c98b207d3dea89cbeb3dbc8559a81efefe461
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3729'
 ht-degree: 97%
 
 ---
@@ -68,6 +68,7 @@ ht-degree: 97%
    + Notas de la versión de Cloud Manager {#cloud-manager}
       + [Notas de la versión actual](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
+         + [Notas de la versión 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
          + [Notas de la versión 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
          + [Notas de la versión 2022.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
          + [Notas de la versión 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
@@ -485,7 +486,7 @@ ht-degree: 97%
 + Forms {#forms}
    + [Introducción](/help/forms/home.md)
    + [Funciones principales](/help/forms/key-features.md)
-   + [Cambios importantes](/help/forms/notable-changes.md)
+   + [Cambios importantes ](/help/forms/notable-changes.md)
    + [Arquitectura](/help/forms/aem-forms-cloud-service-architecture.md)
    + Configuración del servicio {#setup-environment}
       + [Incorporación al entorno de Cloud Service](/help/forms/setup-forms-cloud-service.md)
