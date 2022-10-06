@@ -1,106 +1,106 @@
 ---
-title: Experience Manager [!DNL AEM Forms] Arquitectura as a Cloud Service
-description: Comprender la arquitectura de [!DNL AEM Forms] as a Cloud Service para conocer los aspectos de escalabilidad, resiliencia y rendimiento de la plataforma.
+title: Arquitectura de Experience Manager  [!DNL AEM Forms]  as a Cloud Service
+description: Familiarícese con la arquitectura de  [!DNL AEM Forms]  as a Cloud Service para conocer los aspectos de escalabilidad, resiliencia y rendimiento de la plataforma.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: cd9ef0db59f07173c8c5bd4b38ff946b774ce53c
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# [!DNL AEM] Arquitectura as a Cloud Service de Forms {#architecture}
+# Arquitectura de [!DNL AEM] Forms as a Cloud Service {#architecture}
 
-[!DNL Adobe Experience Manager Forms] as a Cloud Service es una solución nativa de la nube para que las empresas creen, administren, publiquen y actualicen comunicaciones y formularios digitales complejos a la vez que integran los datos enviados con procesos back-end, reglas comerciales y guardan datos en un almacén de datos externo. Se extiende [!DNL Adobe Experience Manager as a Cloud Service]. Para obtener más información sobre la escala, la implementación, los entornos y otras infraestructuras, consulte [Introducción a la arquitectura de [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html).
+[!DNL Adobe Experience Manager Forms] as a Cloud Service es una solución nativa en la nube que permite a las empresas crear, administrar, publicar y actualizar comunicaciones y formularios digitales complejos a la vez que integran los datos enviados con procesos back-end y reglas comerciales y guardan datos en un almacén de datos externo. Es una ampliación de [!DNL Adobe Experience Manager as a Cloud Service]. Para obtener más información sobre la escala, la implementación, los entornos y otras infraestructuras, consulte [Introducción a la arquitectura de [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=es).
 
-AEM Forms as a Cloud Service admite dos casos de uso principales: Inscripción digital y comunicaciones del cliente. Las ilustraciones siguientes ilustran la arquitectura de ambos casos de uso.
+AEM Forms as a Cloud Service admite dos casos de uso principales: inscripción digital y comunicaciones con el cliente. Las ilustraciones siguientes muestran la arquitectura de ambos casos de uso.
 
 ## Inscripción digital en Forms
 
-![Matriculación digital en Forms](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
+![Inscripción digital en Forms](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
 
-## Forms Communications
+## Comunicaciones de Forms
 
-![Forms-Comunicación](assets/forms-cloud-service-architecture-forms-communications.svg)
+![Comunicación-Forms](assets/forms-cloud-service-architecture-forms-communications.svg)
 
 ## Componentes
 
-Forms as a Cloud Service consta de varios componentes:
+Forms as a Cloud Service consta de varios componentes:
 
 ### CDN (red de distribución de contenido)
 
-Todos los programas as a Cloud Service de AEM Forms tienen acceso a [servicio CDN integrado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). Se incluye en la licencia de Forms as a Cloud Services.
+Todos los programas de AEM Forms as a Cloud Service tienen acceso a un [servicio CDN integrado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=es). Este servicio está incluido en la licencia de Forms as a Cloud Services.
 
 ### Autor
 
-Un Autor es una instancia as a Cloud Service de AEM Forms que se ejecuta en el modo de ejecución de Autor estándar. Está pensado para usuarios internos, diseñadores de formularios y desarrolladores. Un entorno Autor permite las siguientes funcionalidades:
+Un autor es una instancia de AEM Forms as a Cloud Service que se ejecuta en el modo de ejecución de autor estándar. Está pensado para usuarios internos, diseñadores de formularios y desarrolladores. Un entorno de autor habilita las siguientes funcionalidades:
 
-* Creación y administración de formularios.
-* Conexión al servicio de Automated forms conversion para convertir un formulario de PDF o XDP a un formulario adaptable.
-* Creación y ejecución de flujos de trabajo centrados en Forms.
-* Administración de recursos de formularios adaptables.
-* Administración de recursos de comunicaciones.
-* API sincrónicas de RESTful (API en tiempo real) y API por lotes para crear, ensamblar y ofrecer comunicaciones personalizadas y orientadas a la marca.
-* API sincrónicas para combinar, reorganizar y validar documentos de PDF.
+* crear y administrar formularios;
+* conectarse al servicio de conversión automatizada de formularios para convertir un formulario PDF o XDP en un formulario adaptable;
+* crear y ejecutar flujos de trabajo centrados en Forms;
+* administrar recursos de formularios adaptables;
+* administrar recursos de comunicaciones;
+* API sincrónicas de RESTful (API en tiempo real) y API por lotes para crear, ensamblar y ofrecer comunicaciones personalizadas y orientadas a la marca;
+* API sincrónicas para combinar, reorganizar y validar documentos PDF.
 
 ### Publicación
 
-Una instancia de publicación es una instancia as a Cloud Service de AEM Forms que se ejecuta en el modo de ejecución de publicación estándar. Las instancias de publicación están destinadas a los usuarios finales de aplicaciones basadas en formularios, por ejemplo, los usuarios que acceden a un sitio web público y envían formularios. Habilita las siguientes funcionalidades:
+Una instancia de publicación es una instancia de AEM Forms as a Cloud Service que se ejecuta en el modo de ejecución de publicación estándar. Las instancias de publicación están destinadas a los usuarios finales de aplicaciones basadas en formularios como, por ejemplo, los usuarios que acceden a un sitio web público y envían formularios. Habilita las siguientes funcionalidades:
 
-* Procesamiento y envío de formularios para usuarios finales.
-* Transporte de datos de formulario enviados sin procesar para su posterior procesamiento y almacenamiento en el sistema final de registro.
-* Conexión al almacenamiento administrado por el cliente para almacenar datos.
-* Conexión con Adobe Sign para firmar por correo electrónico un registro de envío de formulario adaptable.
-* Sincronice las API para crear, ensamblar y ofrecer comunicaciones personalizadas y orientadas a la marca.
-* Sincronizar API para combinar, reorganizar y validar documentos de PDF.
+* procesar y enviar formularios para usuarios finales;
+* transportar datos de formulario enviados sin procesar para su posterior procesamiento y almacenamiento en el sistema final de registro;
+* conectarse a un almacenamiento administrado por el cliente para almacenar datos;
+* conectarse a Adobe Sign para firmar electrónicamente el registro de envío de los formularios adaptables;
+* sincronizar las API para crear, ensamblar y ofrecer comunicaciones personalizadas y orientadas a la marca;
+* sincronizar API para combinar, reorganizar y validar documentos PDF.
 
-La replicación inversa no está disponible en AEM as a Cloud Service para enviar contenido/datos desde el servicio de publicación al servicio de creación. Sin embargo, puede configurar un Forms adaptable que se ejecute en Publicar para enviar datos a un flujo de trabajo en un autor (los flujos de trabajo solo se pueden ejecutar en el autor). Esto resulta útil en casos de uso de aprobación.
+La replicación inversa no está disponible en AEM as a Cloud Service para enviar contenido/datos desde el servicio de Publicación al servicio de Autor. Sin embargo, puede configurar un formulario adaptable que se ejecute en el modo Publicación para enviar datos a un flujo de trabajo en el modo Autor (los flujos de trabajo solo se pueden ejecutar en el modo Autor). Esto resulta útil en casos de uso de aprobación.
 
 #### Dispatcher
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) es la herramienta de equilibrio de carga o almacenamiento en caché de Adobe Experience Manager que se puede utilizar con un servidor web de clase empresarial.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=es) es una herramienta de equilibrio de carga o almacenamiento en caché de Adobe Experience Manager que se puede utilizar junto con un servidor web de nivel empresarial.
 
 ### Servicios de Adobe
 
-**Servicio de automated forms conversion**
+**Servicio de conversión automatizada de formularios**
 
-[servicio de automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es) convierte automáticamente sus formularios PDF y XFA en formularios adaptables, adaptables y basados en HTML5.
+El [servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es) convierte automáticamente los formularios PDF y XFA en formularios adaptables basados en HTML5.
 
 **Adobe Sign**
 
-Adobe Sign es un servicio de firma electrónica basado en la nube que permite al usuario enviar, firmar, rastrear y administrar procesos de firma mediante un explorador o dispositivo móvil. Puede integrar Adobe Sign con un formulario adaptable para automatizar los flujos de trabajo de firma, simplificar los procesos de firma única y múltiple y firmar electrónicamente formularios adaptables.
+Adobe Sign es un servicio de firma electrónica basado en la nube que permite al usuario enviar, firmar, realizar un seguimiento y administrar procesos de firma mediante un explorador o dispositivo móvil. Puede integrar Adobe Sign con un formulario adaptable para automatizar los flujos de trabajo de firma, simplificar los procesos de firma única y múltiple y firmar electrónicamente formularios adaptables.
 
 <!-- **PDF Service API**
 Adobe’s PDF Services API lets create, combine, export, and extract data from PDFs through powerful and flexible cloud-based APIs. -->
 
 ### Almacenamiento administrado por el cliente
 
-Forms as a Cloud Service proporciona opciones para almacenar contenido en un sistema de almacenamiento externo como Blob Store, Database o un servicio de almacenamiento. También puede almacenar datos de flujos de trabajo en proceso (AEM datos de variables de flujo de trabajo) que contengan elementos de datos personales confidenciales (SPD) en un repositorio administrado por el cliente para un procesamiento seguro. Adobe recomienda almacenar datos confidenciales solo en almacenamiento administrado por el cliente.
+Forms as a Cloud Service proporciona opciones para almacenar contenido en un sistema de almacenamiento externo como un almacenamiento de blobs, Database o un servicio de almacenamiento. También puede almacenar datos de flujos de trabajo en proceso (datos de variables de flujos de trabajo de AEM) que contengan elementos de datos personales confidenciales (SPD) en un repositorio administrado por el cliente para un procesamiento seguro. Adobe recomienda almacenar los datos confidenciales únicamente en un almacenamiento administrado por el cliente.
 
-Puede usar la variable **Conector de almacenamiento unificado** para conectarse al almacenamiento de blob y **Modelo de datos de formulario** para conectarse a bases de datos o servicios back-end (RESTful, SOAP, Azure Blob Storage, etc.).
+Puede usar el **conector de almacenamiento unificado** para conectarse a Blob Storage y el **modelo de datos de formulario** para conectarse a bases de datos o servicios back-end (RESTful, SOAP, Azure Blob Storage, etc.).
 
-### Servicios de documento
+### Servicios de documentos
 
 Los servicios de documentos son los siguientes:
 
-* **Servicio de salida (comunicaciones - API de generación de documentos)** ayuda a crear documentos estandarizados, personalizados y aprobados por la marca, como correspondencia comercial, extractos, cartas de procesamiento de reclamaciones, avisos de beneficios, facturas mensuales o kits de bienvenida.
+* El **servicio de salida (Comunicaciones - API de generación de documentos)** ayuda a crear documentos estandarizados, personalizados y aprobados por la marca, como correspondencia comercial, extractos, cartas de procesamiento de reclamaciones, avisos de beneficios, facturas mensuales o kits de bienvenida.
 
-* **Servicio del ensamblador (comunicaciones - API de manipulación de documentos)** ayuda a combinar, reorganizar y validar documentos de PDF.
+* El **servicio del ensamblador (Comunicaciones - API de manipulación de documentos)** ayuda a combinar, reorganizar y validar documentos PDF.
 
-* **Servicio de documento de registro (DoR)** ayuda a generar el documento de registro (DoR). El servicio se ejecuta en sus propios pods de forma independiente Autor y Publicar instancias de Forms as a Cloud Service. Ayuda a proporcionar un mejor rendimiento y a escalar los pods de forma independiente en función de la carga.
+* El **servicio de documentos de registro (DoR)** ayuda a generar documentos de registro (DoR). El servicio se ejecuta en sus propios pods de forma independiente de las instancias de autor y publicación de Forms as a Cloud Service. Ayuda a mejorar el rendimiento y a escalar los pods de forma independiente en función de la carga.
 
-### Cloud Manager
+### Cloud Manager
 
-Cloud Manager es un componente esencial para [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). Es el punto de entrada único para las operaciones y el desarrollador de nuestros clientes. Es el lugar desde donde se pueden administrar los programas y entornos AEM. Cloud Manager ha evolucionado como un portal de autoservicio en el que se pueden crear y configurar los componentes principales del AEM as a Cloud Service:
+Cloud Manager es un componente esencial de [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=es). Se trata del punto de entrada único para las operaciones y el desarrollador de nuestros clientes. Es el lugar desde donde se pueden administrar los programas y entornos AEM. Cloud Manager ha evolucionado como un portal de autoservicio donde se pueden crear y configurar los componentes principales de AEM as a Cloud Service:
 
-* Creación y administración de programas
-* Creación y administración de los entornos AEM dentro de los programas
-* Creación y administración de canalizaciones para implementar el código del cliente y la configuración en un entorno en particular
-* Obtención de notificaciones de eventos de ciclo vital importantes para estos componentes (por ejemplo, actualizaciones de productos) Para obtener más información sobre Cloud Manager, consulte [Comprender Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) y [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es).
+* creación y administración de programas;
+* creación y administración de entornos de AEM dentro de estos programas;
+* creación y administración de canalizaciones para implementar el código del cliente y la configuración relacionada con un entorno específico;
+* obtención de notificaciones de eventos de ciclo de vida importantes para estos componentes (por ejemplo, actualizaciones de productos). Para obtener más información sobre Cloud Manager, consulte [Familiarizarse con Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html?lang=es) e [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es).
 
-### Developer Console
+### Consola de desarrollador
 
-Una consola de desarrollador proporciona varios detalles de cada entorno de Forms as a Cloud Service que se ejecuta. Estos detalles son útiles para depurar el entorno. Para obtener más información, consulte [Depuración AEM as a Cloud Service con Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es).
+Una consola de desarrollador proporciona varios detalles de cada entorno de Forms as a Cloud Service que se ejecuta. Estos detalles son útiles para depurar el entorno. Para obtener más información, consulte [Depuración de AEM as a Cloud Service con la consola de desarrollador](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es).
 
 <!--
 
@@ -183,8 +183,8 @@ Set up your development environment, [Configure your CI/CD Pipeline](https://exp
 
 ### Creación de formularios adaptables {#local-development}
 
-Al configurar y configurar un [!DNL AEM Forms] entorno as a Cloud Service, puede configurar entornos de desarrollo, ensayo y producción. Además, configure un entorno de desarrollo local para realizar iteraciones y procesos de desarrollo rápidos. Puede descargar y configurar AEM SDK y [!DNL AEM Forms] archivo de funciones de complemento para configurar un [!DNL Forms] Entorno de desarrollo as a Cloud Service.  Para obtener instrucciones detalladas, consulte [Configuración de un entorno de desarrollo local](setup-local-development-environment.md).
+Al configurar un entorno de [!DNL AEM Forms] as a Cloud Service, puede configurar entornos de desarrollo, fase y producción. Además, puede configurar un entorno de desarrollo local para realizar iteraciones y procesos de desarrollo rápidos. Puede descargar y configurar el SDK de AEM y el archivo de funciones de complementos de [!DNL AEM Forms] para configurar un entorno de desarrollo local de [!DNL Forms] as a Cloud Service. Para obtener instrucciones detalladas, consulte [Configuración de un entorno de desarrollo local](setup-local-development-environment.md).
 
 ## Depuración {#debugging}
 
-AEM se ejecuta en infraestructura de nube con capacidad de autoservicio, escalable y de autoservicio. Requiere que los desarrolladores de AEM entiendan y depuren varias facetas de AEM as a Cloud Service, desde la compilación y la implementación hasta obtener detalles de la ejecución de aplicaciones de AEM. Para obtener información detallada, consulte [Depuración AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html).
+AEM as a Cloud Service se ejecuta en una infraestructura en la nube escalable con capacidad de autoservicio. Requiere que los desarrolladores de AEM entiendan y depuren varias facetas de AEM as a Cloud Service, desde la compilación y la implementación hasta la obtención de detalles sobre la ejecución de aplicaciones de AEM. Para obtener información detallada, consulte [Depuración de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=es).

@@ -12,7 +12,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '342'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -22,20 +22,20 @@ ht-degree: 0%
 ## Requisitos previos {#prerequisites}
 
 * [Creación de paquetes OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
-* [Desarrollo de componentes AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/overview.html#developing)
-* [Creación de formulario adaptable](creating-adaptive-form.md)
-* [Creación de formularios adaptables](introduction-forms-authoring.md)
+* [Desarrollo de componentes de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/overview.html?lang=es#developing)
+* [Creación de formularios adaptables](creating-adaptive-form.md)
+* [Creación de formularios adaptables en el modo Autor](introduction-forms-authoring.md)
 
 ## Procedimiento para rellenar dinámicamente listas desplegables {#procedure-to-dynamically-populate-drop-down-lists}
 
-Imagine un escenario en el que desee rellenar el **Estado** lista desplegable basada en un valor que seleccione en la **País** lista desplegable. Si selecciona Australia en la **País** lista desplegable, **Estado** la lista desplegable muestra los estados dentro de Australia. El siguiente procedimiento describe cómo realizar esta tarea.
+Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en función del valor que ha seleccionado en la lista desplegable **País**. Si selecciona Australia en la lista desplegable **País**, la lista desplegable **Estado** mostrará los estados de Australia. El siguiente procedimiento describe cómo realizar esta tarea.
 
 1. Cree un proyecto con los siguientes módulos:
 
    * El paquete que contiene la lógica para rellenar la lista desplegable, que en este caso es un servlet.
    * El contenido, que incrusta el archivo .jar y tiene un recurso desplegable. El servlet señala a este recurso.
 
-1. Escriba un servlet basado en el parámetro de solicitud País, que devuelve una matriz que contiene los nombres de estados dentro del país.
+1. Escriba un servlet basado en el parámetro de solicitud País, el cual devuelve una matriz que contiene los nombres de los estados del país.
 
    ```java
    @Component(metatype = false)
@@ -146,16 +146,16 @@ Imagine un escenario en el que desee rellenar el **Estado** lista desplegable ba
    }
    ```
 
-1. Cree un nodo desplegable bajo una jerarquía de carpetas determinada en las aplicaciones (por ejemplo, cree un nodo en /apps/myfolder/demo). Asegúrese de que la variable `sling:resourceType` para el nodo es el mismo que el al que apunta el servlet (/apps/populatedropdown).
+1. Cree un nodo desplegable en una jerarquía de carpetas determinada en las aplicaciones (por ejemplo, cree un nodo en /apps/myfolder/demo). Asegúrese de que el parámetro `sling:resourceType` del nodo sea el mismo que al que apunta el servlet (/apps/populatedropdown).
 
    ![Creación de un nodo desplegable](assets/dropdown-node.png)
 
 1. Empaquete el nodo de contenido e incruste el archivo .jar en una ubicación concreta (por ejemplo, /apps/myfolder/demo/install/). Implemente el mismo archivo en el servidor.
-1. Cree un formulario adaptable y añada dos listas desplegables, País y Estado. La lista de países puede incluir los nombres de los países. La lista Estado puede rellenar dinámicamente los nombres de estados para el país seleccionado en la primera lista.
+1. Cree un formulario adaptable y añada dos listas desplegables, País y Estado. La lista País puede incluir nombres de países. La lista Estado puede rellenar dinámicamente los nombres de los estados del país seleccionado en la primera lista.
 
-   Añada los nombres de los países para mostrarlos en la lista País. En la lista Estado, agregue una secuencia de comandos para rellenarla en función del nombre del país en la lista País.
+   Añada los nombres de los países para mostrarlos en la lista País. En la lista Estado, agregue un script para rellenarla en función del nombre del país de la lista País.
 
-   ![Adición de nombres de país](assets/country-dropdown.png) ![Agregar una secuencia de comandos para rellenar nombres de estado](assets/state-dropdown.png) ![Lista desplegable de país y estado para recopilar](assets/2dropdowns.png)
+   ![Adición de nombres de país](assets/country-dropdown.png) ![Adición de un script para rellenar los nombres de los estados](assets/state-dropdown.png) ![Listas desplegables de País y Estado](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(
@@ -173,6 +173,6 @@ Imagine un escenario en el que desee rellenar el **Estado** lista desplegable ba
    .responseText);
    ```
 
-El paquete de contenido que contiene un ejemplo de Formulario adaptable (demostración/demostración) con el código anterior implementado.
+El paquete de contenido que contiene un formulario adaptable de ejemplo (demo/AFdemo) con el código anterior implementado.
 
 [Obtener archivo](assets/dropdown-demo-content-1.0.1-snapshot.zip)

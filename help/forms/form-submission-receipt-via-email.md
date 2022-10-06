@@ -1,7 +1,7 @@
 ---
-title: Envío de un acuse de recibo de envío de formulario por correo electrónico
+title: Enviar una confirmación de envío de formulario por correo electrónico
 seo-title: Sending a form submission acknowledgement via email
-description: AEM Forms permite configurar la acción de envío por correo electrónico que envía un acuse de recibo a un usuario al enviar el formulario.
+description: AEM Forms permite configurar una acción de envío por correo electrónico que envía una confirmación a un usuario al enviar el formulario.
 seo-description: AEM Forms allows you to configure the email Submit Action that sends an acknowledgement to a user on submitting the form.
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
@@ -12,28 +12,28 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Envío de un acuse de recibo de envío de formulario por correo electrónico {#sending-a-form-submission-acknowledgement-via-email}
+# Enviar una confirmación de envío de formulario por correo electrónico {#sending-a-form-submission-acknowledgement-via-email}
 
-## Envío de datos del formulario adaptable {#adaptive-form-data-submission}
+## Enviar datos de formularios adaptables {#adaptive-form-data-submission}
 
-Forms adaptable proporciona varios [Enviar acciones](configuring-submit-actions.md) flujos de trabajo para enviar los datos del formulario a diferentes extremos.
+Los formularios adaptables proporcionan varios flujos de trabajo de [acciones de envío](configuring-submit-actions.md) predeterminados para enviar los datos del formulario a diferentes extremos.
 
-Por ejemplo, la variable **[!UICONTROL Enviar correo electrónico]** Enviar acción envía un correo electrónico cuando se envía correctamente un formulario adaptable. También se puede configurar para que envíe los datos del formulario y el PDF en el correo electrónico.
+Por ejemplo, la acción de envío **[!UICONTROL Enviar correo electrónico]** envía un correo electrónico cuando se envía correctamente un formulario adaptable. También se puede configurar el envío de los datos del formulario y el PDF en el correo electrónico.
 
-Este artículo detalla los pasos para habilitar la acción Correo electrónico en un formulario adaptable y las diferentes configuraciones que proporciona.
+Este artículo detalla los pasos para habilitar la acción Enviar por correo electrónico en un formulario adaptable y las diferentes configuraciones que proporciona.
 
 >[!NOTE]
 >
->También puede usar la variable **[!UICONTROL Enviar PDF por correo electrónico]** para enviar el formulario completado por correo electrónico como archivo adjunto de PDF. Las opciones de configuración disponibles para esta acción son las mismas que las disponibles para la **[!UICONTROL Enviar correo electrónico]** acción. La acción PDF de correo electrónico solo está disponible para Forms adaptable basado en XFA
+>También puede usar la opción **[!UICONTROL Enviar PDF por correo electrónico]** para enviar el formulario completado por correo electrónico como archivo adjunto PDF. Las opciones de configuración disponibles para esta acción son las mismas que las disponibles para la acción **[!UICONTROL Enviar correo electrónico]**. La acción Enviar PDF por correo electrónico solo está disponible para formularios adaptables basados en XFA.
 
-## Enviar acción de correo electrónico {#email-action}
+## Acción Enviar correo electrónico {#email-action}
 
-La acción Enviar correo electrónico permite a un autor enviar correos electrónicos automáticamente a uno o varios destinatarios cuando el envío de un formulario adaptable se haya realizado correctamente.
+La acción Enviar correo electrónico permite a un autor enviar correos electrónicos automáticamente a uno o varios destinatarios cuando el envío de un formulario adaptable se realiza correctamente.
 
 <!-- >>[!NOTE]
 >
@@ -63,25 +63,25 @@ La acción Enviar correo electrónico permite a un autor enviar correos electró
 
 1. Click ![save](assets/save_icon.svg) to save the changes. -->
 
-### Uso de nombres de campo de formulario adaptable para crear contenido de correo electrónico de forma dinámica {#using-adaptive-form-field-names-to-dynamically-create-email-content}
+### Usar nombres de campo de formulario adaptable para crear contenido de correo electrónico de forma dinámica {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
-Los nombres de campo de un formulario adaptable se denominan marcadores de posición que se sustituyen por el valor de ese campo después de que un usuario envíe el formulario.
+Los nombres de campo de un formulario adaptable se denominan marcadores de posición y se reemplazan por el valor de ese campo una vez que un usuario envía el formulario.
 
-En el **[!UICONTROL Enviar correo electrónico]** , puede utilizar marcadores de posición que se procesen cuando se realice la acción. Significa que los encabezados del correo electrónico (como **[!UICONTROL Hasta]**, **[!UICONTROL CC]**, **[!UICONTROL CCO]**, **[!UICONTROL Asunto]**) se generan cuando el usuario envía el formulario.
+En la acción **[!UICONTROL Enviar correo electrónico]**, puede utilizar marcadores de posición que se procesan cuando se realiza la acción. Eso significa que los encabezados del correo electrónico (como **[!UICONTROL Para]**, **[!UICONTROL CC]**, **[!UICONTROL CCO]** y **[!UICONTROL Asunto]**) se generan cuando el usuario envía el formulario.
 
-Para definir un marcador de posición, especifique `${<field name>}` en un campo después de seleccionar **[!UICONTROL Enviar correo electrónico]** como Acción de envío.
+Para definir un marcador de posición, especifique `${<field name>}` en un campo después de seleccionar **[!UICONTROL Enviar correo electrónico]** como acción de envío.
 
-Por ejemplo, si el formulario contiene la variable **[!UICONTROL Dirección de correo electrónico]** campo, con nombre `email_addr`, para capturar el ID de correo electrónico de un usuario, puede especificar lo siguiente en la sección **[!UICONTROL Hasta]**, **[!UICONTROL CC]** o **[!UICONTROL CCO]** campos.
+Por ejemplo, si el formulario contiene el campo **[!UICONTROL Dirección de correo electrónico]**, denominado `email_addr`, para capturar el ID de correo electrónico de un usuario, puede especificar lo siguiente en los campos **[!UICONTROL Para]**, **[!UICONTROL CC]** o **[!UICONTROL CCO]**.
 
 `${email_addr}`
 
-Cuando un usuario envía el formulario, se envía un correo electrónico al ID de correo electrónico introducido en la variable `email_addr` del formulario.
+Cuando un usuario envía el formulario, se envía un correo electrónico al ID de correo electrónico introducido en el campo `email_addr` del formulario.
 
 >[!NOTE]
 >
->Puede encontrar el nombre de un campo en la **[!UICONTROL Editar]** para el campo .
+>Puede encontrar el nombre de un campo en el cuadro de diálogo **[!UICONTROL Editar]** del campo.
 
-Los marcadores de posición de variables también se pueden usar en la variable **[!UICONTROL Asunto]** y **[!UICONTROL Plantilla de correo electrónico]** campos.
+Los marcadores de posición de variables también se pueden usar en los campos **[!UICONTROL Asunto]** y **[!UICONTROL Plantilla de correo electrónico]**.
 
 Por ejemplo:
 
@@ -95,5 +95,5 @@ Por ejemplo:
 
 >[!NOTE]
 >
->Los campos de los paneles repetibles no se pueden usar como marcadores de posición de variables.
+>Los campos de los paneles repetibles no se pueden usar como marcadores de posición variables.
 

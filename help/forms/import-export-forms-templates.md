@@ -1,53 +1,53 @@
 ---
-title: Importar, exportar y organizar Forms adaptable, PDF forms y otros recursos
+title: Importar, exportar y organizar formularios adaptables, PDF forms y otros recursos
 seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
-description: ¿Quiere migrar Forms adaptable y recursos a y desde una instancia de AEM? Obtenga información aquí sobre cómo importar y exportar Forms adaptable, PDF forms, temas y otros recursos de soporte desde un [!DNL AEM Forms] instancia.
+description: ¿Desea migrar formularios adaptables y recursos a y desde una instancia de AEM? Obtenga información aquí sobre cómo importar y exportar formularios adaptables, PDF forms, temáticas y otros recursos de soporte desde una instancia de  [!DNL AEM Forms] .
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Importación, exportación y organización de formularios adaptables, formularios PDF y otros recursos{#importing-and-exporting-assets-to-aem-forms}
+# Importar, exportar y organizar formularios adaptables, PDF forms y otros recursos {#importing-and-exporting-assets-to-aem-forms}
 
-Puede mover Forms adaptable y recursos relacionados, como temas de Formulario adaptable, Modelos de datos de formulario, Plantillas de formulario adaptable, fragmentos de documento y PDF forms, entre [!DNL AEM Forms] instancias. Puede importar y exportar recursos en paquetes CRX o formatos de archivo binario.
+Puede mover formularios adaptables y recursos relacionados, como temáticas de formulario adaptable, modelos de datos de formulario, plantillas de formulario adaptable, fragmentos de documentos y PDF forms, entre instancias de [!DNL AEM Forms]. Puede importar y exportar recursos en paquetes CRX o formatos de archivo binario.
 
-Al exportar un formulario adaptable, las políticas de contenido y las plantillas no se exportan. Uso [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) para exportar dichos activos.
+Al exportar un formulario adaptable, las directivas de contenido y las plantillas no se exportan. Utilice el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=es#how-rolling-deployments-work) para exportar estos recursos.
 
-## Descargar Forms adaptable, PDF forms o recursos relacionados {#download-forms-amp-documents-assets}
+## Descargar formularios adaptables, PDF forms o recursos relacionados {#download-forms-amp-documents-assets}
 
 Para descargar formularios o recursos relacionados:
 
-1. Inicie sesión en su [!DNL AEM Forms] instancia.
-1. Toque **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > **[!UICONTROL Navegación]** ![brújula](assets/Smock_Compass_18_N.svg) icono > **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
-1. Seleccione los recursos y pulse el botón **[!UICONTROL Descargar]** icono.
-1. En los recursos de descarga, elija una de las siguientes opciones y pulse **[!UICONTROL Descargar]**.
+1. Inicie sesión en su instancia de [!DNL AEM Forms].
+1. Pulse en el icono de **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **[!UICONTROL Navegación]** ![icono de brújula](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
+1. Seleccione los recursos y pulse en el icono **[!UICONTROL Descargar]**.
+1. En Descargar recursos, elija una de las siguientes opciones y pulse **[!UICONTROL Descargar]**.
 
-   * **Descargar como paquete CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de un [!DNL AEM Forms] a otra. Descarga todos los recursos y carpetas como paquete CRX, incluidos los formularios creados en AEM (Forms adaptable y fragmentos de formulario adaptables), conjuntos de formularios, modelos de datos de formulario, plantillas de formulario, documentos de PDF y recursos de referencia (XSD e imágenes).
-La ventaja de descargar recursos como paquete es que también descarga los recursos seleccionados a los que hace referencia. Por ejemplo, si tiene un formulario adaptable que utiliza una plantilla de formulario, XSD y una imagen. Cuando selecciona este formulario adaptable y lo descarga como paquete, el paquete descargado también contiene la plantilla de formulario, XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
+   * **Descargar como paquete CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de [!DNL AEM Forms] a otra. Descarga todos los recursos y carpetas como paquete CRX, incluidos los formularios creados en AEM (formularios adaptables y fragmentos de formularios adaptables), conjuntos de formularios, modelos de datos de formulario, plantillas de formulario, documentos PDF y recursos de referencia (XSD e imágenes). 
+La ventaja de descargar recursos como paquete es que también descarga las referencias de los recursos seleccionados. Por ejemplo, si tiene un formulario adaptable que utiliza una plantilla de formulario, XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como un paquete, el paquete descargado también contiene la plantilla de formulario, XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
 
-   * **Descargar recursos como archivos binarios:** Utilice la opción para descargar solo plantillas de formulario (XDP), PDF forms (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos que tienen binarios, como imágenes, PDF y otros formatos admitidos como archivo .zip.
-No puede descargar Forms adaptable, fragmentos de formularios adaptables, temas y conjuntos de formularios con **[!UICONTROL Descargar recursos como archivos binarios]** . Para descargar estos recursos, debe utilizar **[!UICONTROL Descargar como paquete CRX]** .
+   * **Descargar recursos como archivos binarios:** Utilice la opción para descargar solo plantillas de formulario (XDP), PDF forms (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos que poseen binarios, como imágenes, PDF y otros formatos compatibles como archivo .zip. 
+No puede descargar formularios adaptables, fragmentos de formularios adaptables, temáticas y conjuntos de formularios con la opción **[!UICONTROL Descargar recursos como archivos binarios]**. Para descargar estos recursos, debe utilizar la opción **[!UICONTROL Descargar como paquete CRX]**.
 
    Los recursos seleccionados se descargan como un archivo (archivo .zip).
 
    >[!NOTE]
    >
-   >Tanto AEM paquete como los archivos binarios se descargan como un archivo (archivo .zip). Las plantillas de los recursos no se descargan junto con los recursos. Debe exportar las plantillas de recursos por separado.
+   >Tanto el paquete de AEM como los archivos binarios se descargan como un archivo (archivo .zip). Las plantillas de los recursos no se descargan junto con los recursos. Debe exportar las plantillas de recursos por separado.
 
-## Cargar Forms adaptable, PDF forms o recursos relacionados {#upload-forms-amp-documents-assets}
+## Cargar formularios adaptables, PDF forms o recursos relacionados {#upload-forms-amp-documents-assets}
 
-Puede cargar los tipos de recursos compatibles de forma individual o como archivo ZIP. Para un archivo ZIP, se muestran las rutas relativas de todos los recursos admitidos. Los recursos no compatibles dentro del ZIP se ignoran y no aparecen en la lista. Sin embargo, si el archivo ZIP contiene solo los recursos no compatibles, se muestra un mensaje de error en lugar del cuadro de diálogo emergente.
+Puede cargar los tipos de recursos compatibles de forma individual o como archivo ZIP. Para un archivo ZIP, se muestran las rutas relativas de todos los recursos compatibles. Los recursos que no sean compatibles dentro del ZIP se ignoran y no aparecen en la lista. Sin embargo, si el archivo ZIP contiene solo los recursos no compatibles, se muestra un mensaje de error en lugar del cuadro de diálogo emergente. 
 Para cargar un formulario o un recurso relacionado:
 
-1. Inicie sesión en su [!DNL AEM Forms] instancia.
-1. Toque **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > **[!UICONTROL Navegación]** ![brújula](assets/Smock_Compass_18_N.svg) icono > **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
-1. Toque **[!UICONTROL Crear]** > **[!UICONTROL Carga de archivo]**. Aparecerá un cuadro de diálogo.
-1. En el cuadro de diálogo, busque y seleccione el paquete o el archivo que desea importar. También puede seleccionar otros tipos de archivo compatibles. Toque **[!UICONTROL Apertura]**. La carpeta o el nombre de archivo que seleccione no deben incluir caracteres especiales.
+1. Inicie sesión en su instancia de [!DNL AEM Forms].
+1. Pulse en el icono de **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **[!UICONTROL Navegación]** ![icono de brújula](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
+1. Pulse **[!UICONTROL Crear]** > **[!UICONTROL Cargar archivo]**. Aparecerá un cuadro de diálogo.
+1. En el cuadro de diálogo, examine y seleccione el paquete o el archivo que desea importar. También puede seleccionar otros tipos de archivo compatibles. Pulse **[!UICONTROL Abrir]**. La carpeta o el nombre de archivo que seleccione no deben incluir caracteres especiales.
 
    En el cuadro de diálogo, compruebe los detalles de los recursos que se están cargando y pulse **[!UICONTROL Cargar]**.
 
@@ -55,28 +55,28 @@ Para cargar un formulario o un recurso relacionado:
 
    >[!NOTE]
    >
-   > * Cuando un nombre entra en conflicto con diferentes tipos de recursos, la carga de un paquete no reemplaza la jerarquía de carpetas existente. Por ejemplo, si tiene un formulario adaptable llamado &quot;Formación&quot; en la ubicación /content/dam/formsanddocuments en un servidor. El formulario adaptable se descarga y se carga en otro servidor. El segundo servidor también tiene una carpeta con el nombre &quot;Formación&quot; en la misma ubicación /content/dam/formsanddocuments. La carga falla.
-   > * Solo un miembro del `form-power-user` puede cargar archivos XDP.
+   > * Cuando un nombre entra en conflicto con diferentes tipos de recursos, la carga de un paquete no reemplaza la jerarquía de carpetas existente. Por ejemplo, si tiene un formulario adaptable llamado “Aprendizaje” en la ubicación /content/dam/formsanddocuments en un servidor. El formulario adaptable se descarga y se carga en otro servidor. El segundo servidor también tiene una carpeta llamada “Aprendizaje” en la misma ubicación /content/dam/formsanddocuments. La carga falla.
+   > * Solo un miembro del grupo `form-power-user` puede cargar archivos XDP.
 
 
 
-## Descargar un tema {#downloading-a-theme}
+## Descargar una temática {#downloading-a-theme}
 
-Puede exportar temas en [!DNL AEM Forms] que puede utilizar en otros proyectos o instancias. AEM permite descargar temas como un archivo zip, que se puede cargar en la instancia.
+Puede exportar temáticas en [!DNL AEM Forms], que puede utilizar en otros proyectos o instancias. AEM le permite descargar temáticas como archivo zip, que puede cargar en la instancia.
 
-Para descargar un tema:
+Para descargar una temática:
 
-1. Inicie sesión en su [!DNL AEM Forms] instancia.
-1. Toque **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > **[!UICONTROL Navegación]** ![brújula](assets/Smock_Compass_18_N.svg) icono > **[!UICONTROL Forms]** > **[!UICONTROL Temas]**.
-1. Seleccione el tema y pulse **[!UICONTROL Descargar]**. El tema se descarga como archivo (archivo .zip).
+1. Inicie sesión en su instancia de [!DNL AEM Forms].
+1. Pulse en el icono de **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **[!UICONTROL Navegación]** ![icono de brújula](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formularios]** > **[!UICONTROL Temáticas]**.
+1. Seleccione la temática y pulse **[!UICONTROL Descargar]**. La temática se descarga como archivo (archivo .zip).
 
-## Cargar un tema {#uploading-a-theme}
+## Cargar una temática {#uploading-a-theme}
 
-Puede cargar y usar temas que otros creen en sus formularios. Para cargar un tema:
+Puede cargar y usar temáticas que otros creen en sus formularios. Para cargar una temática:
 
-1. En el Experience Manager, vaya a **[!UICONTROL Forms]** > **[!UICONTROL Temas]**.
-1. En la página Temas , haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Carga de archivo]**.
-1. En la solicitud de carga de archivos, busque y seleccione un paquete de temas en el equipo y haga clic en **[!UICONTROL Cargar]**. El tema cargado está disponible en la página de temas.
+1. En Experience Manager, vaya a **[!UICONTROL Formularios]** > **[!UICONTROL Temáticas]**.
+1. En la página Temáticas, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Cargar archivos]**.
+1. En la solicitud de carga de archivos, examine y seleccione un paquete de temáticas en el equipo y haga clic en **[!UICONTROL Cargar]**. La temática cargada está disponible en la página Temáticas.
 
 <!-- ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
 
@@ -148,47 +148,47 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
    >
    >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. -->
 
-## Exportación de una aplicación de flujo de trabajo {#export-a-workflow-application}
+## Exportar una aplicación de flujo de trabajo {#export-a-workflow-application}
 
 Puede utilizar el administrador de paquetes para exportar aplicaciones de flujo de trabajo. El procedimiento es el siguiente:
 
-1. Apertura [!DNL AEM Forms] gestor de paquetes. La URL del gestor de paquetes es `https://[server]:[port]/crx/packmgr`.
-1. Haga clic en **[!UICONTROL Crear paquete]**. La variable **[!UICONTROL Nuevo paquete]** aparece en el cuadro de diálogo.
-1. Especifique el nombre, la versión y el grupo del paquete. Haga clic en **[!UICONTROL Aceptar]**.
-1. Haga clic en **[!UICONTROL Editar]** y abra el **[!UICONTROL Filtros]** pestaña . Haga clic en **[!UICONTROL Agregar filtro]**. Especifique la ruta de la aplicación de flujo de trabajo. Por ejemplo, /etc/fd/dashboard/startpoints/homemortgage. Haga clic en **[!UICONTROL Agregar regla]**.
+1. Abra el administrador de paquetes de [!DNL AEM Forms]. La URL del administrador de paquetes es `https://[server]:[port]/crx/packmgr`.
+1. Haga clic en **[!UICONTROL Crear paquete]**. Se abre el cuadro de diálogo **[!UICONTROL Nuevo paquete]**.
+1. Especifique el nombre, la versión y el grupo para el paquete. Haga clic en **[!UICONTROL Aceptar]**.
+1. Haga clic en **[!UICONTROL Editar]** y abra la pestaña **[!UICONTROL Filtros]**. Haga clic en **[!UICONTROL Añadir filtro]**. Especifique la ruta de la aplicación de flujo de trabajo. Por ejemplo: /etc/fd/dashboard/startpoints/homemortgage. Haga clic en **[!UICONTROL Añadir regla]**.
 
-1. Abra la pestaña **[!UICONTROL Avanzadas.]** Select **[!UICONTROL Combinar]** o **[!UICONTROL Sobrescribir]** en el campo Administración de ACL. Haga clic en **[!UICONTROL Guardar]**.
+1. Abra la pestaña **[!UICONTROL Avanzado]**. Seleccione **[!UICONTROL Combinar]** o **[!UICONTROL Sobrescribir]** en el campo Administrar ACL. Haga clic en **[!UICONTROL Guardar]**.
 1. Haga clic en **[!UICONTROL Generar]** para crear el paquete.
 
-   Una vez creado el paquete, puede descargarlo e importarlo al otro servidor. La aplicación de flujo de trabajo aparece en el servidor donde se carga el paquete.
+   Una vez generado el paquete, puede descargarlo e importarlo al otro servidor. La aplicación de flujo de trabajo aparece en el servidor donde se carga el paquete.
 
    >[!NOTE]
    >
    >Para que la aplicación de flujo de trabajo funcione correctamente, exporte también el correspondiente modelo de flujo de trabajo y formulario adaptable con la aplicación de trabajo.
 
-## Usar carpetas para organizar Forms adaptable, PDF forms y recursos relacionados  {#folders-and-organizing-assets}
+## Utilizar carpetas para organizar formularios adaptables, PDF forms y otros recursos relacionados  {#folders-and-organizing-assets}
 
-Puede utilizar carpetas para organizar los recursos. La organización de documentos y recursos en una carpeta permite agrupar los archivos para facilitar la gestión. Puede seleccionar una carpeta y elegir descargarla o eliminarla. Para crear una carpeta, complete los siguientes pasos:
+Puede utilizar carpetas para organizar los recursos. La organización de documentos y recursos en una carpeta le permite agrupar los archivos para facilitar la administración. Puede seleccionar una carpeta y elegir descargarla o eliminarla. Para crear una carpeta, complete los siguientes pasos:
 
-### Cree una carpeta  . {#create-a-folder}
+### Cree una carpeta. {#create-a-folder}
 
-1. Inicie sesión en su [!DNL AEM Forms] instancia.
-1. Puntee en el Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > navegación ![brújula](assets/Smock_Compass_18_N.svg) icono> **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
-1. Toque **[!UICONTROL Crear]** > **[!UICONTROL Carpeta]**.
-1. Introduzca los siguientes detalles:
+1. Inicie sesión en su instancia de [!DNL AEM Forms].
+1. Pulse en el icono de Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Navegación ![icono de brújula](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
+1. Pulse **[!UICONTROL Crear]** > **[!UICONTROL Carpeta]**.
+1. Introduzca la siguiente información:
 
    * **[!UICONTROL Título]**: Nombre para mostrar de la carpeta
    * **[!UICONTROL Nombre]**: *(Obligatorio)* El nombre del nodo en el que desea almacenar la carpeta en el repositorio
 
    >[!NOTE]
    >
-   >De forma predeterminada, el valor del campo de nombre se rellena automáticamente desde el título. El nombre solo puede contener caracteres alfanuméricos o caracteres especiales de guion (-) y guion bajo (_). Cualquier otro carácter especial introducido en el título se sustituye automáticamente por un guión y se le solicita que confirme el nuevo nombre. Puede elegir continuar con el nombre sugerido o editarlo más adelante.
+   >De forma predeterminada, el valor del campo de nombre se rellena automáticamente a partir del título. El nombre solo puede contener caracteres alfanuméricos o los caracteres especiales guion (-) y guion bajo (_). Cualquier otro carácter especial especificado en el título se reemplaza automáticamente por un guion y se le solicita que confirme el nuevo nombre. Puede elegir continuar con el nombre sugerido o editarlo más adelante.
 
 1. Se muestra una nueva carpeta con el título que haya definido en la ubicación actual de la lista de recursos.
 
-   Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero sobre él ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) que aparece junto al campo de nombre.
+   Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero sobre el icono de error ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) que aparece junto al campo de nombre.
 
-   Puede pulsar la carpeta recién creada para entrar en ella y crear recursos o carpetas dentro de la carpeta. Además, puede seleccionar una carpeta y elegir colocarla en la cola para su descarga, eliminarla o editar su nombre.
+   Puede pulsar la carpeta recién creada para entrar en ella y crear recursos o carpetas dentro de la carpeta. Además, puede seleccionar una carpeta y elegir colocarla en la cola para descargarla, eliminarla o editar su nombre.
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

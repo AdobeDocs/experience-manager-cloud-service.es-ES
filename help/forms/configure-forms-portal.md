@@ -1,36 +1,36 @@
 ---
-title: Cómo crear un portal de Forms en una página de Experience Manager Sites
+title: Crear un portal de Forms en una página de Experience Manager Sites
 description: Obtenga información sobre cómo crear un portal de Forms y utilizar componentes principales listos para usar en una página de AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 1%
+source-wordcount: '1764'
+ht-degree: 98%
 
 ---
 
-# Enumerar Forms adaptable en un portal {#publish-forms-on-portal}
+# Enumerar formularios adaptables en un portal {#publish-forms-on-portal}
 
-En un escenario típico de implementación de portal centrado en formularios, el desarrollo de formularios y el desarrollo de portales son dos actividades separadas. Mientras los diseñadores de formularios diseñan y almacenan formularios en un repositorio, los desarrolladores web crean una aplicación web para enumerar formularios y gestionar el envío de formularios. Forms se copia en el nivel web, ya que no hay comunicación entre el repositorio de formularios y la aplicación web.
+En un escenario típico de implementación de portal centrado en formularios, el desarrollo de los formularios y el de portales son dos actividades separadas. Mientras los diseñadores de formularios diseñan y almacenan formularios en un repositorio, los desarrolladores web crean una aplicación web para enumerar formularios y administrar su envío. Los formularios se copian en el nivel web, ya que no hay ninguna comunicación entre el repositorio de formularios y la aplicación web.
 
-Estos escenarios suelen dar lugar a problemas de gestión y retrasos en la producción. Por ejemplo, si hay una versión más reciente de un formulario disponible en el repositorio, debe reemplazar el formulario en el nivel web, modificar la aplicación web y volver a implementar el formulario en el sitio público. La reimplementación de la aplicación web puede causar cierto tiempo de inactividad en el servidor. Normalmente, el tiempo de inactividad del servidor es una actividad planificada y, por lo tanto, los cambios no se pueden insertar instantáneamente en el sitio público.
+Estos escenarios suelen dar lugar a problemas de administración y retrasos en la producción. Por ejemplo, si hay una versión más reciente de un formulario disponible en el repositorio, debe reemplazar el formulario en el nivel web, modificar la aplicación web y volver a implementar el formulario en el sitio público. La reimplementación de la aplicación web puede causar cierto tiempo de inactividad en el servidor. Normalmente, el tiempo de inactividad del servidor es una actividad planificada y, por lo tanto, los cambios no se pueden insertar instantáneamente en el sitio público.
 
 AEM Forms proporciona componentes del portal que reducen los gastos generales de administración y los retrasos en la producción. Los componentes equipan a los desarrolladores web para crear y personalizar un portal de Forms en sitios web creados con Adobe Experience Manager (AEM).
 
-Los componentes de Form Portal le permiten añadir las siguientes funciones:
+Los componentes del portal de Forms le permiten agregar las siguientes funciones:
 
-* Enumerar formularios en diseños personalizados. De forma predeterminada, se proporcionan los diseños Vista de lista y Vista de tarjeta . Puede crear sus propios diseños personalizados.
-* Permite mostrar metadatos personalizados y acciones personalizadas al enumerarlos.
-* Enumere los formularios publicados por la interfaz de usuario de AEM Forms en la instancia de publicación en la que se utilizan los componentes de Forms Portal.
-* Permita que los usuarios finales procesen formularios en formato HTML y PDF.
-* Habilite la búsqueda de formularios en función del título y la descripción.
-* Utilice CSS personalizada para personalizar el aspecto del portal.
-* Cree vínculos a formularios.
-* Enumera borradores y envíos relacionados con Forms adaptable creados por el usuario final.
+* Enumerar formularios en diseños personalizados. Se proporcionan los diseños Vista de lista y Vista de tarjeta. Puede crear sus propios diseños personalizados.
+* Permite mostrar metadatos y acciones personalizados al enumerarlos.
+* Enumerar los formularios publicados por la interfaz de usuario de AEM Forms en la instancia Publicación en la que se utilizan los componentes del portal de Forms.
+* Permite que los usuarios finales procesen formularios en formato HTML y PDF.
+* Habilita la búsqueda de formularios en función del título y la descripción.
+* Utiliza CSS personalizada para personalizar la apariencia del portal.
+* Crea vínculos a formularios.
+* Enumera borradores y envíos relacionados con formularios adaptables que haya creado el usuario final.
 
 ## Componentes de una página del portal de Forms {#forms-portal-components}
 
-AEM Forms proporciona los siguientes componentes de portal predeterminados:
+AEM Forms proporciona los siguientes componentes listos para usar del portal:
 
 * Buscar y listar: Este componente le permite enumerar formularios del repositorio de formularios en la página del portal y proporciona opciones de configuración para enumerar formularios basados en criterios específicos.
 
@@ -38,20 +38,20 @@ AEM Forms proporciona los siguientes componentes de portal predeterminados:
 
 * Vínculo: Este componente le permite crear un vínculo a un formulario en cualquier parte de la página.
 
-Puede [importación de los componentes listos para usar del portal de Forms](#import-forms-portal-components-aem-archetype) del tipo de archivo del proyecto de AEM. Después de la importación, realice las siguientes configuraciones:
-* [Configuración de un almacenamiento externo](#configure-azure-storage-adaptive-forms)
-* [Activación de los componentes de Forms Portal](#enable-forms-portal-components)
-* [Configuración de los componentes de Forms Portal](#configure-forms-portal-components)
+Puede [importar los componentes listos para usar del portal de Forms](#import-forms-portal-components-aem-archetype) desde el proyecto AEM Archetype. Después de la importación, realice las siguientes configuraciones:
+* [Configure un almacenamiento externo](#configure-azure-storage-adaptive-forms)
+* [Habilite los componentes del portal de Forms](#enable-forms-portal-components)
+* [Configure los componentes del portal de Forms](#configure-forms-portal-components)
 
 ## Importar componentes del portal de Forms {#import-forms-portal-components-aem-archetype}
 
-Para importar componentes listos para usar de Forms Portal en AEM Forms as a Cloud Service, realice los siguientes pasos:
+Para importar componentes listos para usar del portal de Forms en AEM Forms as a Cloud Service, haga lo siguiente:
 
-1. **Clonar repositorio Git de Cloud Manager en la instancia de desarrollo local:**  El repositorio Git de Cloud Manager contiene un proyecto de AEM predeterminado. Se basa en [Tipo de archivo AEM](https://github.com/adobe/aem-project-archetype/). Clona el repositorio Git de Cloud Manager mediante la administración de cuentas Git de autoservicio de la interfaz de usuario de Cloud Manager para llevar el proyecto a su entorno de desarrollo local. Para obtener más información sobre el acceso al repositorio, consulte [Acceso a repositorios](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
+1. **Clone el repositorio Git de Cloud Manager en su instancia de desarrollo local:** Su repositorio Git de Cloud Manager contiene un proyecto de AEM predeterminado. Se basa en [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone su Repositorio Git de Cloud Manager mediante la administración de cuentas Git de autoservicio desde la interfaz de usuario de Cloud Manager para llevar el proyecto a su entorno de desarrollo local. Para obtener más información sobre el acceso al repositorio, consulte [Acceder a repositorios](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=es).
 
-1. **Crear [!DNL Experience Manager Forms] como [Cloud Service] proyecto:** Crear [!DNL Experience Manager Forms] como [Cloud Service] proyecto basado en [AEM Tipo de archivo 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) o posterior. El arquetipo ayuda a los desarrolladores a empezar a desarrollarse fácilmente para [!DNL AEM Forms] as a Cloud Service. También incluye algunos temas de muestra y plantillas para ayudarle a empezar rápidamente.
+1. **Cree un proyecto [!DNL Experience Manager Forms] as a [Cloud Service]:** Cree un proyecto [!DNL Experience Manager Forms] as a [Cloud Service] basado en [AEM Archetype 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) o posterior. El arquetipo ayuda a los desarrolladores a empezar a desarrollar fácilmente para [!DNL AEM Forms] as a Cloud Service. También incluye algunas temáticas de muestra y plantillas para ayudarle a empezar rápidamente.
 
-   Para crear [!DNL Experience Manager Forms] proyecto as a Cloud Service, abra el símbolo del sistema y ejecute el siguiente comando. Para incluir [!DNL Forms] configuraciones, temas y plantillas específicos, establezca `includeForms=y`.
+   Para crear un proyecto [!DNL Experience Manager Forms] as a Cloud Service, abra el símbolo del sistema y ejecute el siguiente comando. Para incluir [!DNL Forms] configuraciones, temáticas y plantillas específicos, establezca `includeForms=y`.
 
    ```shell
    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
@@ -59,118 +59,116 @@ Para importar componentes listos para usar de Forms Portal en AEM Forms as a Clo
 
    Además, cambie `appTitle`, `appId`y `groupId`, en el comando anterior para reflejar su entorno.
 
-1. **En la versión preliminar, realice los pasos siguientes para utilizar los componentes de Forms Portal:**
-   * [Habilitar el canal de prelanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
-   * Reemplazar `core-forms-components-*` con la versión de prelanzamiento deseada (por ejemplo, 1.0.4-PRERELEASE-20211223) en su `Cloud Manager/AEM Archetype` actualizando el `<core.forms.components.version>x.y.z</core.forms.components.version>` en el nivel superior `pom.xml` del proyecto Arquetipo.
+   Una vez que el proyecto esté listo, actualice la variable `<core.forms.components.version>x.y.z</core.forms.components.version>` en el nivel superior `pom.xml` del proyecto Arquetipo para reflejar la última versión de [core-forms-components](https://github.com/adobe/aem-core-forms-components) en su `AEM Archetype` proyecto.
 
 1. **Implemente el proyecto en su entorno de desarrollo local:** Puede utilizar el siguiente comando para implementar en el entorno de desarrollo local
 
    `mvn -PautoInstallPackage clean install`
 
-   Para obtener la lista completa de comandos, consulte [Creación e instalación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
+   Para obtener la lista completa de comandos, consulte [Creación e instalación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=es#building-and-installing)
 
-1. [Implemente el código en su [!DNL AEM Forms] Entorno as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
+1. [Implemente el código en su entorno de  [!DNL AEM Forms] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=es#embeddeds).
 
 
-## Configuración del almacenamiento de Azure para Forms adaptable {#configure-azure-storage-adaptive-forms}
+## Configuración del almacenamiento de Azure para formularios adaptables {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] Integración de datos](data-integration.md) proporciona [!DNL Azure] configuración de almacenamiento para integrar formularios con [!DNL Azure] servicios de almacenamiento. El Modelo de datos de formulario se puede utilizar para crear un Forms adaptable que interactúe con [!DNL Azure] para habilitar los flujos de trabajo empresariales.
+La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md) proporciona [!DNL Azure]la configuración de almacenamiento para integrar formularios con [!DNL Azure] servicios de almacenamiento. El modelo de datos de formulario se puede utilizar para crear formularios adaptables que interactúen con el servidor [!DNL Azure] para habilitar los flujos de trabajo empresariales.
 
 ### Crear configuración de almacenamiento de Azure {#create-azure-storage-configuration}
 
-Antes de ejecutar estos pasos, asegúrese de que tiene una cuenta de almacenamiento de Azure y una clave de acceso para autorizar el acceso al [!DNL Azure] cuenta de almacenamiento.
+Antes de ejecutar estos pasos, asegúrese de que tiene una cuenta de almacenamiento de Azure y una clave de acceso para autorizar el acceso [!DNL Azure]a ella.
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Almacenamiento de Azure]**.
 1. Seleccione una carpeta para crear la configuración y pulse **[!UICONTROL Crear]**.
-1. Especifique un título para la configuración en la **[!UICONTROL Título]** campo .
-1. Especifique el nombre del [!DNL Azure] cuenta de almacenamiento en la variable **[!UICONTROL Cuenta de almacenamiento de Azure]** campo .
+1. Especifique un título para la configuración en el campo **[!UICONTROL Título]**.
+1. Especifique el nombre de la cuenta de [!DNL Azure] Storage en el campo **[!UICONTROL Cuenta de Azure Storage]**.
 
-### Configuración del conector de almacenamiento unificado para Forms Portal {#configure-usc-forms-portal}
+### Configuración del conector de almacenamiento unificado para el portal de Forms {#configure-usc-forms-portal}
 
-Realice los siguientes pasos para configurar el conector de almacenamiento unificado para AEM flujos de trabajo:
+Para configurar el conector de almacenamiento unificado para flujos de trabajo de AEM, haga lo siguiente:
 
-1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Conector de almacenamiento unificado]**.
-1. En el **[!UICONTROL Portal de Forms]** , seleccione **[!UICONTROL Azure]** de la variable **[!UICONTROL Almacenamiento]** lista desplegable.
-1. Especifique la variable [ruta de configuración para la configuración de almacenamiento de Azure](#create-azure-storage-configuration) en el **[!UICONTROL Ruta de configuración de almacenamiento]** campo .
-1. Toque **[!UICONTROL Publicación]** y, a continuación, toque **[!UICONTROL Guardar]** para guardar la configuración.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Formularios]** > **[!UICONTROL Conector de almacenamiento unificado]**.
+1. En el **[!UICONTROL portal de Forms]**, seleccione **[!UICONTROL Azure]** de la lista desplegable **[!UICONTROL Almacenamiento]**.
+1. Especifique la ruta de configuración [para la configuración del almacenamiento de Azure](#create-azure-storage-configuration) en el campo **[!UICONTROL Ruta de configuración del almacenamiento]**.
+1. Pulse **[!UICONTROL Publicar]** y, a continuación, pulse **[!UICONTROL Guardar]** para guardar la configuración.
 
-## Habilitar componentes de Forms Portal {#enable-forms-portal-components}
+## Habilitar componentes del portal de Forms {#enable-forms-portal-components}
 
-Para utilizar cualquier componente principal (incluidos los componentes de portal predeterminados) en un sitio de Adobe Experience Manager (AEM), debe crear un componente proxy y habilitarlo para su sitio. Para crear un componente proxy y activar los componentes del portal, consulte [Uso de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components).
+Para utilizar cualquier componente principal (incluidos los componentes de portal predeterminados) en un sitio de Adobe Experience Manager (AEM), debe crear un componente proxy y habilitarlo para su sitio. Para crear un componente proxy y habilitar los componentes del portal, consulte [Utilizar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=es#create-proxy-components).
 
-Una vez habilitado un componente de portal, puede utilizarlo en la instancia de autor de la página de sitios.
+Una vez habilitado un componente del portal, puede utilizarlo en la instancia Autor de la página del sitio.
 
-## Añadir y configurar componentes del portal de Forms {#configure-forms-portal-components}
+## Agregar y configurar componentes del portal de Forms {#configure-forms-portal-components}
 
-Puede crear y personalizar Forms Portal en sitios web creados mediante AEM añadiendo y configurando los componentes del portal. Asegúrese de que la variable [los componentes están activados](#enable-forms-portal-components) antes de utilizarlos en el portal de Forms.
+Puede crear y personalizar el portal de Forms en sitios web creados mediante AEM si agrega y configura los componentes del portal. Asegúrese de que los componentes [estén habilitados](#enable-forms-portal-components) antes de utilizarlos en el portal de Forms.
 
-Para agregar un componente, arrástrelo y suéltelo desde el panel Componentes al contenedor de diseño de la página, o bien, pulse el icono Agregar en el contenedor de diseño y agregue el componente desde el panel Componentes [!UICONTROL Insertar nuevo componente] diálogo.
+Para agregar un componente, arrástrelo y suéltelo desde el panel Componentes al contenedor del diseño de la página, o bien, pulse el icono Agregar en el contenedor de diseño y agregue el componente desde el cuadro de diálogo [!UICONTROL Insertar nuevo componente].
 
 ### Configurar Borradores y envíos {#configure-drafts-submissions-component}
 
-El componente Borradores y envíos muestra los formularios guardados como borrador para completarlos posteriormente y enviarlos. Para configurar, pulse el componente y, a continuación, pulse el botón ![Icono Configurar](assets/configure_icon.png). En el [!UICONTROL Borradores y presentaciones] , especifique el título para indicar la lista del formulario como formulario borrador o enviado. Seleccione también si el componente debe enumerar los formularios borrador o enviados en formato de tarjeta o lista.
+El componente Borradores y envíos muestra los formularios guardados como borrador para completarlos posteriormente y enviarlos. Para configurarlo, pulse el componente y, a continuación, pulse el icono ![Configurar](assets/configure_icon.png). En el cuadro de diálogo [!UICONTROL Borradores y envíos], especifique el título para indicar la lista del formulario como formulario borrador o enviado. Seleccione también si el componente debe enumerar los formularios borrador o enviados en formato de tarjeta o lista.
 
 ![Icono Borradores](assets/drafts-component.png)
 
-![Icono de envíos](assets/submission-listing.png)
+![Icono Envíos](assets/submission-listing.png)
 
-### Configurar el componente Búsqueda y listado {#configure-search-lister-component}
+### Configurar el componente Buscar y listar {#configure-search-lister-component}
 
-El componente Búsqueda y lista se utiliza para enumerar los formularios adaptables en una página e implementar la búsqueda en los formularios enumerados.
+El componente Buscar y listar se utiliza para enumerar los formularios adaptables en una página e implementar la búsqueda en los formularios enumerados.
 
 ![Icono Buscar y listar](assets/search-and-lister-component.png)
 
-Para configurar, pulse el componente y, a continuación, pulse el botón ![Icono Configurar](assets/configure_icon.png). La variable [!UICONTROL Buscar y listar] se abre.
+Para configurarlo, pulse el componente y, a continuación, pulse el icono ![Configurar](assets/configure_icon.png). El cuadro de diálogo [!UICONTROL Buscar y listar] se abre.
 
-1. En el [!UICONTROL Mostrar] , configure lo siguiente:
-   * En **[!UICONTROL Título]**, especifique el título del componente Búsqueda y lista . Un título indicativo permite a los usuarios realizar una búsqueda rápida en toda la lista de formularios.
-   * En el **[!UICONTROL Diseño]** , seleccione la presentación para representar los formularios en formato de tarjeta o lista.
-   * Select **[!UICONTROL Ocultar búsqueda]** y **[!UICONTROL Ocultar ordenación]** para ocultar la búsqueda y ordenar por características.
+1. En la pestaña [!UICONTROL Mostrar], configure lo siguiente:
+   * En **[!UICONTROL Título]**, especifique el título del componente Buscar y listar. Un título indicativo permite a los usuarios realizar una búsqueda rápida en toda la lista de formularios.
+   * En la lista **[!UICONTROL Diseño]**, seleccione el diseño para representar los formularios en formato de tarjeta o lista.
+   * Seleccione **[!UICONTROL Ocultar búsqueda]** y **[!UICONTROL Ocultar orden]** para ocultar la búsqueda y ordenar por características.
    * En **[!UICONTROL Información de objeto]**, proporcione la información de objeto que aparece al pasar el ratón por encima del componente.
-1. En el [!UICONTROL Carpeta de recursos] especifique la ubicación desde la que se extraen los formularios y aparezca en la página. Puede configurar varias ubicaciones de carpetas.
-1. En el [!UICONTROL Resultados] configure el número máximo de formularios que se mostrarán por página. El valor predeterminado es de ocho formularios por página.
+1. En la pestaña [!UICONTROL Carpeta de activos] especifique la ubicación desde la que se extraen los formularios se enumeran en la página. Puede configurar varias ubicaciones de carpetas.
+1. En la pestaña [!UICONTROL Resultados] configure el número máximo de formularios que se mostrarán por página. El valor predeterminado es de ocho formularios por página.
 
-### Configurar componente de vínculo {#configure-link-component}
+### Configurar el componente Vínculo {#configure-link-component}
 
-El componente de vínculo le permite proporcionar vínculos a un formulario adaptable en la página. Para configurar, pulse el componente y, a continuación, pulse el botón ![Icono Configurar](assets/configure_icon.png). La variable [!UICONTROL Editar componente de vínculo] se abre.
+El componente Vínculo le permite proporcionar vínculos a un formulario adaptable en la página. Para configurarlo, pulse el componente y, a continuación, pulse el icono ![Configurar](assets/configure_icon.png). Se abrirá el cuadro de diálogo [!UICONTROL Editar el componente Vínculo].
 
-1. En el [!UICONTROL Mostrar] , proporcione el rótulo del vínculo y la información del objeto para facilitar la identificación de los formularios representados por el vínculo.
-1. En el [!UICONTROL Información del recurso] , especifique la ruta del repositorio donde se almacena el recurso.
-1. En el [!UICONTROL Parámetros de consulta] , especifique los parámetros adicionales en el formato de par clave-valor. Cuando se hace clic en el vínculo, estos parámetros adicionales se pasan junto con el formulario.
+1. En la pestaña [!UICONTROL Mostrar], proporcione el pie de ilustración del vínculo y la información del objeto para facilitar la identificación de los formularios representados por el vínculo.
+1. En la pestaña [!UICONTROL Información del activo], especifique la ruta del repositorio donde se almacena el activo.
+1. En la pestaña [!UICONTROL Parámetros de consulta], especifique los parámetros adicionales en el formato de par clave-valor. Cuando se hace clic en el vínculo, estos parámetros adicionales se pasan junto con el formulario.
 
-## Configuración del envío asincrónico de formularios con Adobe Sign {#configure-asynchronous-form-submission-using-adobe-sign}
+## Configurar el envío asincrónico de formularios con Adobe Sign {#configure-asynchronous-form-submission-using-adobe-sign}
 
-Puede configurar para enviar un formulario adaptable solo cuando todos los destinatarios hayan completado la ceremonia de firma. Siga los pasos a continuación para configurar la configuración mediante Adobe Sign.
+Puede enviar un formulario adaptable solo cuando todos los destinatarios hayan completado la ceremonia de firma. Para configurar la configuración mediante Adobe Sign, haga lo siguiente.
 
-1. En la instancia de autor, abra un formulario adaptable en el modo de edición.
-1. En el panel izquierdo, pulse el icono Propiedades y expanda el **[!UICONTROL SEÑALIZACIÓN ELECTRÓNICA]** .
-1. Select **[!UICONTROL Habilitar Adobe Sign]**. Se muestran varias opciones de configuración.
-1. En el [!UICONTROL Enviar el formulario] seleccione **[!UICONTROL después de que cada destinatario complete la ceremonia de firma]** para configurar la acción Enviar formulario, donde el formulario se envía por primera vez a todos los destinatarios para que lo firmen. Una vez que todos los destinatarios han firmado el formulario, solo entonces se envía.
+1. En la instancia Autor, abra un formulario adaptable en el modo de edición.
+1. En el panel izquierdo, pulse el icono Propiedades y expanda la opción **[!UICONTROL FIRMA ELECTRÓNICA]**.
+1. Seleccione **[!UICONTROL Habilitar Adobe Sign]**. Se mostrarán varias opciones de configuración.
+1. En la sección [!UICONTROL Enviar el formulario], seleccione la opción **[!UICONTROL después de que cada destinatario complete la ceremonia de firma]** para configurar la acción Enviar formulario, donde el formulario se enviará por primera vez a todos los destinatarios para que lo firmen. Una vez que todos los destinatarios hayan firmado el formulario, solo entonces se enviará.
 
-## Guardar Forms adaptable como borradores {#save-adaptive-forms-as-drafts}
+## Guardar formularios adaptables como borradores {#save-adaptive-forms-as-drafts}
 
-Los formularios se pueden guardar como Borradores para completarlos más adelante. Existen dos formas de guardar un formulario como borrador:
-* Cree una regla &quot;Guardar formulario&quot; en un componente de formulario, por ejemplo un botón. Al hacer clic en el botón , los déclencheur de regla y el formulario se guardan como borrador.
-* Habilite la función de guardado automático, que guarda el formulario según el evento especificado o después de un intervalo de tiempo configurado.
+Los formularios se pueden guardar como borradores para completarlos más adelante. Existen dos formas de guardar un formulario como borrador:
+* Crear una regla “Guardar formulario” en un componente de formulario, por ejemplo, un botón. Al hacer clic en el botón, los activadores de la regla y el formulario se guardarán como borrador.
+* Habilite la característica de guardado automático, que guarda el formulario según el evento especificado o después de un intervalo de tiempo configurado.
 
 ### Crear reglas para guardar un formulario adaptable como borrador {#rule-to-save-adaptive-form-as-draft}
 
-Para crear una regla &quot;Guardar formulario&quot; en un componente de formulario, por ejemplo un botón, siga los pasos a continuación:
+Para crear una regla “Guardar formulario”; en un componente de formulario, por ejemplo, un botón, haga lo siguiente:
 
-1. En la instancia de autor, abra un formulario adaptable en modo de edición.
-1. En el panel izquierdo, pulse ![Icono de componentes](assets/components_icon.png) y arrastre el [!UICONTROL Botón] al formulario.
-1. Toque . [!UICONTROL Botón] y, a continuación, toque el ![Icono Configurar](assets/configure_icon.png).
-1. Toque . [!UICONTROL Editar reglas] para abrir el Editor de reglas.
-1. Toque **[!UICONTROL Crear]** para configurar y crear la regla.
-1. En el [!UICONTROL When] , seleccione &quot;se hace clic&quot; y en la [!UICONTROL Entonces] seleccione las opciones &quot;Guardar formulario&quot;.
-1. Toque **[!UICONTROL Listo]** para guardar la regla.
+1. En la instancia Autor, abra un formulario adaptable en modo de edición.
+1. En el panel izquierdo, pulse el icono ![Componentes](assets/components_icon.png) y arrastre el componente [!UICONTROL Botón] al formulario.
+1. Pulse el componente [!UICONTROL Botón] y, a continuación, pulse el icono ![Configurar](assets/configure_icon.png).
+1. Pulse el icono [!UICONTROL Editar reglas] para abrir el Editor de reglas.
+1. Pulse **[!UICONTROL Crear]** para configurar y crear la regla.
+1. En la sección [!UICONTROL Cuándo], seleccione “se haga clic” y en la sección [!UICONTROL Entonces] seleccione la opción “Guardar formulario”.
+1. Pulse **[!UICONTROL Listo]** para guardar la regla.
 
 ### Habilitar el guardado automático {#enable-auto-save}
 
-Puede configurar la función de guardado automático para un formulario adaptable de la siguiente manera:
+Puede configurar la característica de guardado automático para un formulario adaptable de la siguiente manera:
 
-1. En la instancia de autor, abra un formulario adaptable en modo de edición.
-1. En el panel izquierdo, pulse el botón ![Icono Propiedades](assets/configure_icon.png) y expanda el [!UICONTROL GUARDAR AUTOMÁTICAMENTE] .
-1. Seleccione el **[!UICONTROL Habilitar]** para habilitar el guardado automático del formulario. Puede configurar lo siguiente:
-* De forma predeterminada, la variable [!UICONTROL Evento de formulario adaptable] se establece en &quot;true&quot;, lo que significa que el formulario se guarda automáticamente después de cada suceso.
-* En [!UICONTROL Déclencheur], configure en déclencheur el guardado automático en función de la aparición de un evento o después de un intervalo de tiempo específico.
+1. En la instancia Autor, abra un formulario adaptable en modo de edición.
+1. En el panel izquierdo, pulse el icono ![Propiedades](assets/configure_icon.png) y expanda la opción [!UICONTROL GUARDAR AUTOMÁTICAMENTE].
+1. Seleccione la casilla de verificación **[!UICONTROL Habilitar]** para habilitar el guardado automático del formulario. Puede configurar lo siguiente:
+* De forma predeterminada, [!UICONTROL Evento de formulario adaptable] se establece en “true”, lo que significa que el formulario se guardará automáticamente después de cada evento.
+* En [!UICONTROL Activador], establezca activar el guardado automático en función de la ocurrencia de un evento o después de un intervalo de tiempo específico.

@@ -1,38 +1,38 @@
 ---
-title: Solución de problemas de instalación y configuración
+title: Resolución de problemas de instalación y configuración
 seo-title: Troubleshooting installation and configuration
-description: Solución de problemas de instalación y configuración
+description: Resolución de problemas de instalación y configuración
 seo-description: Troubleshooting installation and configuration
 contentOwner: khsingh
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Configuración {#installation-and-configuration}
 
-Puede encontrar algunos de los siguientes problemas al configurar un entorno de Cloud Service:
+Puede encontrar algunos de los siguientes problemas al configurar un entorno de Cloud Service:
 
 ## La opción Forms no está disponible
 
-La variable **[!UICONTROL Forms]** no está disponible en la **[!UICONTROL Navegación]** página.
+La opción **[!UICONTROL Forms]** no está disponible en la página **[!UICONTROL Navegación]**.
 
 ![La opción Forms no está disponible](assets/installation-configuration-forms-option-unavailable-troubleshooting.png)
 
-Para habilitar la variable **[!UICONTROL Forms]** opción:
+Para habilitar la opción **[!UICONTROL Forms]**:
 
-1. Inicie sesión en el [Cloud Manager](https://experience.adobe.com/)
-1. Busque el programa y haga clic en el botón ![La opción Forms no está disponible](assets/Smock_Edit_18_N.svg) icono. Se abre la página Editar programa del programa.
-1. Abra el **[!UICONTROL Soluciones y complementos]** pestaña .
-1. Seleccione el **[!UICONTROL Forms]** y haga clic en **[!UICONTROL Guardar]**.
+1. Inicie sesión en [Cloud Manager](https://experience.adobe.com/).
+1. Busque el programa y haga clic en el icono ![La opción Forms no está disponible](assets/Smock_Edit_18_N.svg). Se abre la página Editar programa del programa.
+1. Abra la pestaña **[!UICONTROL Soluciones y complementos]**.
+1. Seleccione la opción **[!UICONTROL Forms]** y haga clic en **[!UICONTROL Guardar]**.
 
-   ![Seleccione la opción Forms](assets/installation-configuration-select-forms-option.png)
-1. [Crear](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) y [run](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) canalizaciones tanto de producción como de no producción.
+   ![Selección de la opción Forms](assets/installation-configuration-select-forms-option.png)
+1. [Cree](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=es#how-to-use) y [ejecute](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es) canalizaciones de producción y de no producción.
 
-Una vez construida e implementada la canalización, la variable **[!UICONTROL Forms]** en la **[!UICONTROL Navegación]** página.
+Una vez construida e implementada la canalización, la opción **[!UICONTROL Forms]** en la página **[!UICONTROL Navegación]**.
 
 <!--  
 ## Environment creation fails {#environment-creation-fails}
@@ -48,8 +48,8 @@ A missing profile can lead to environment creation failure. Check that the profi
 
 If the profile exists and issues still persist, contact Adobe Support. -->
 
-## La canalización de compilación falla {#build-pipeline-fails}
+## Se produce un error en la canalización de compilación {#build-pipeline-fails}
 
-Los usuarios no pueden ejecutar la canalización de compilación. La canalización falla después de ejecutarse durante algún tiempo.
+Los usuarios no pueden ejecutar la canalización de compilación. Se produce un error en la canalización después de ejecutarse durante algún tiempo.
 
-Para resolver el problema, abra Cloud Manager, seleccione la opción **[!UICONTROL Actualizar]** para su entorno y ejecute la canalización.
+Para resolver el problema, abra Cloud Manager, seleccione la opción **[!UICONTROL Actualizar]** correspondiente a su entorno y ejecute la canalización.

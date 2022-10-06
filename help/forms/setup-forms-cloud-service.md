@@ -1,29 +1,29 @@
 ---
-title: Cómo configurar un [!DNL AEM Forms] ¿Entorno as a Cloud Service?
-description: Aprenda a configurar y configurar un [!DNL AEM Forms] Entorno as a Cloud Service
+title: Cómo configurar un entorno de  [!DNL AEM Forms]  as a Cloud Service
+description: Aprenda a instalar y configurar un entorno de  [!DNL AEM Forms]  as a Cloud Service
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Incorporar a [!DNL AEM Forms] as a Cloud Service {#overview}
+# Incorporación de [!DNL AEM Forms] as a Cloud Service {#overview}
 
-## Decidir personalidades {#personas-aem-forms-project}
+## Decidir las personalidades {#personas-aem-forms-project}
 
 <!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Before onboarding to an [!DNL AEM Forms] as a Cloud Service environment, decide personas and structure a team for your project. A typical [!DNL AEM Forms] project team has the following personas:
 
-* **Diseñador de experiencias de usuario (UX)**: Un diseñador de Experiencia del usuario (UX) define el estilo, el diseño y la marca para [!DNL AEM Forms] activos.
+* **Diseñador de experiencias de usuario (UX)**: un diseñador de experiencias del usuario (UX) define el estilo, el diseño y la marca de los recursos de [!DNL AEM Forms].
 
-* **Profesional de Forms**: Un profesional de Forms crea Forms adaptable, temas y plantillas según el estilo, el diseño y la marca que proporcione el diseñador de experiencia de usuario. El profesional también crea e integra formularios adaptables con un modelo de datos de formulario y flujos de trabajo AEM. Un profesional de Forms suele realizar tareas relacionadas con el front-end.
+* **Profesional de Forms**: un profesional de Forms crea formularios adaptables, temáticas y plantillas según el estilo, el diseño y la marca que proporcione el diseñador de experiencias de usuario. El profesional también crea e integra formularios adaptables con un modelo de datos de formulario y flujos de trabajo de AEM. También suele realizar tareas relacionadas con el front-end.
 
-* **Desarrollador de Forms**: Un desarrollador de Forms desarrolla una solución de formularios personalizada.  Un desarrollador de Forms normalmente se encarga del desarrollo del servidor, como el desarrollo de componentes personalizados, AEM flujos de trabajo, servicio de rellenado previo y mucho más.
+* **Desarrollador de Forms**: un desarrollador de Forms desarrolla una solución de formularios personalizada. Normalmente, se encarga del desarrollo back-end, como el desarrollo de componentes personalizados, flujos de trabajo de AEM, el servicio de prerrellenado y mucho más.
 
-* **administrador de AEM**: Un administrador de AEM ayuda con la configuración general, como la configuración de usuarios, el endurecimiento del entorno, la configuración de fuentes de datos, la configuración de correos electrónicos y software de terceros. AEM administrador también ayuda con integraciones como la integración con Adobe Analytics, Adobe Target y Adobe Sign.
+* **Administrador de AEM**: un administrador de AEM ayuda con la configuración general, como la configuración de usuarios, el refuerzo del entorno, la configuración de fuentes de datos, la configuración de correos electrónicos y software de terceros. También ayuda con las integraciones, como la integración con Adobe Analytics, Adobe Target y Adobe Sign.
 
-* **Usuario final**: Un usuario final interactúa con el formulario publicado y lo envía, firma los formularios enviados, rastrea las aplicaciones enviadas a través del portal web y recibe comunicaciones personalizadas.
+* **Usuario final**: un usuario final interactúa con el formulario publicado y lo envía, firma los formularios enviados, realiza un seguimiento de las aplicaciones enviadas a través del portal web y recibe comunicaciones personalizadas.
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 
@@ -35,25 +35,25 @@ ht-degree: 2%
 
 ## Incorporación al servicio {#onboarding}
 
-* [Incorporado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) a [!DNL Adobe Experience Manager] as a Cloud Service.
+* [Incorpórese](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=es) a [!DNL Adobe Experience Manager] as a Cloud Service.
 
-* (Solo para entornos limitados) Después de incorporar el servicio, [crear](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) y [run](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) canalizaciones tanto de producción como de no producción. Activa y ofrece las últimas funciones de [!DNL AEM Forms] as a Cloud Service para su entorno.
+* (Solo para entornos limitados) Después de incorporarse al servicio, [cree](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=es#how-to-use) y [ejecute](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es) canalizaciones de producción y de no producción. Esto habilita e incorpora las últimas funciones de [!DNL AEM Forms] as a Cloud Service a su entorno.
 
-Puede utilizar Forms as a Cloud Service para crear un formulario adaptable (inscripción digital) o generar una comunicación con el cliente. Tras finalizar [Incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) a [!DNL Adobe Experience Manager] as a Cloud Service, realice una de las siguientes acciones para habilitar las funciones de inscripción digital o comunicaciones del cliente. También puede habilitar ambas funciones:
+Puede utilizar Forms as a Cloud Service para crear un formulario adaptable (inscripción digital) o generar una comunicación con el cliente. Tras finalizar la [incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) a [!DNL Adobe Experience Manager] as a Cloud Service, realice una de las siguientes acciones para habilitar las funciones de inscripción digital o comunicaciones con el cliente. También puede habilitar ambas funciones:
 
-1. Inicie sesión en Cloud Manager y abra la instancia as a Cloud Service de AEM Forms.
+1. Inicie sesión en Cloud Manager y abra su instancia de AEM Forms as a Cloud Service.
 
-1. Abra la opción Editar programa , vaya a la pestaña Soluciones y complementos y seleccione la opción **[!UICONTROL Forms: comunicaciones]** .
+1. Abra la opción Editar programa, vaya a la pestaña Soluciones y complementos y seleccione la opción **[!UICONTROL Formularios: comunicaciones]**.
 
    ![Comunicaciones](assets/communications.png)
 
-   Si ya ha habilitado la variable **[!UICONTROL Forms: inscripción digital]** y, a continuación, seleccione **[!UICONTROL Forms: complemento de comunicaciones]** .
+   Si ya ha habilitado la opción **[!UICONTROL Formularios: inscripción digital]**, a continuación, seleccione **[!UICONTROL Formularios: complemento de comunicaciones]**.
 
-   ![Addon](assets/add-on.png)
+   ![Complemento](assets/add-on.png)
 
-1. Haga clic en **[!UICONTROL Actualizar]**.
+1. Haga clic en **[!UICONTROL Actualizar]**.
 
-1. Ejecute la canalización de compilación. Una vez que la canalización de compilación se haya realizado correctamente, las API de comunicaciones se habilitan para su entorno.
+1. Ejecute la canalización de la versión. Una vez que la canalización de la versión se haya realizado correctamente, las API de comunicaciones se habilitan para su entorno.
 
 >[!NOTE]
 >
@@ -62,24 +62,24 @@ Puede utilizar Forms as a Cloud Service para crear un formulario adaptable (insc
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
-## Configurar usuarios {#config-users}
+## Configuración de usuarios {#config-users}
 
-Una vez que haya completado la incorporación al servicio, inicie sesión en su [!DNL AEM Forms] Entorno as a Cloud Service, abrir instancias de Autor y Publicación y agregar usuarios a instancias específicas de Forms [AEM grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing), en función de su personalidad. En la tabla siguiente se enumeran los grupos de AEM específicos de Forms, disponibles de forma predeterminada y los tipos de usuarios correspondientes. La tabla también proporciona AEM tipo de instancia para cada tipo de usuario:
+Una vez que haya completado la incorporación al servicio, inicie sesión en su entorno de [!DNL AEM Forms] as a Cloud Service, abra las instancias de autor y publicación y agregue usuarios a [grupos de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=es#accessing) específicos de Forms en función de su personalidad. En la tabla siguiente se enumeran los grupos de AEM específicos de Forms disponibles de forma predeterminada y los tipos de usuarios correspondientes. La tabla también proporciona el tipo de instancia de AEM de cada tipo de usuario:
 
-| Tipos de usuarios (personas) | Grupos de usuarios | AEM instancia |
+| Tipos de usuarios (personalidades) | Grupos de usuarios | Instancia de AEM |
 |---|---|---|
-| Profesional del formulario/Desarrollador de Forms | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul> | Instancia de autor |
-| Diseñador de experiencias de usuario (UX) | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | Instancia de autor |
-| Administrador de AEM | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul> | Instancia de creación y publicación |
-| Usuario final | <ul> <li>Cuando un usuario debe iniciar sesión para ver y enviar un formulario adaptable, agregue estos usuarios a [!DNL forms-users] grupo. </li> <li>Cuando no se requiera autenticación de usuario para acceder a Forms adaptable, no asigne ningún grupo a esos usuarios. </li> </ul> | Instancia de creación y publicación |
+| Profesional/Desarrollador de Forms | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul> | Instancia de autor |
+| Diseñador de experiencias del usuario (UX) | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | Instancia de autor |
+| Administrador de AEM | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul> | Instancia de autor y publicación |
+| Usuario final | <ul> <li>Cuando los usuarios deban iniciar sesión para ver y enviar un formulario adaptable, agréguelos al grupo [!DNL forms-users]. </li> <li>Cuando no se requiera autenticación de usuario para acceder a los formularios adaptables, no asigne ningún grupo a esos usuarios. </li> </ul> | Instancia de autor y publicación |
 
 Para obtener más información sobre los grupos de AEM específicos de Forms y los permisos correspondientes, consulte [Grupos y permisos](forms-groups-privileges-tasks.md).
 
 <!-- You can also create  [user groups](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) specific  to your organization, assign policies, and [users](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) to the groups. The policies help control permissions of the users that are part of the group. For information a -->
 
-## Paso siguiente {#next-steps}
+## Siguiente paso {#next-steps}
 
-[Configuración de un entorno de desarrollo local](setup-local-development-environment.md). Puede utilizar el entorno de desarrollo local para crear un formulario adaptable y recursos relacionados (temas, plantillas, acciones de envío personalizadas, servicio de rellenado previo y más) y [convertir PDF forms en Forms adaptable](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es) sin iniciar sesión en el entorno de desarrollo de la nube.
+[Configure un entorno de desarrollo de local](setup-local-development-environment.md). Puede utilizar el entorno de desarrollo local para crear un formulario adaptable y recursos relacionados (temáticas, plantillas, acciones de envío personalizadas, servicio de prerrellenado y más) y [convertir PDF forms en formularios adaptables](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es) sin iniciar sesión en el entorno de desarrollo de la nube.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 

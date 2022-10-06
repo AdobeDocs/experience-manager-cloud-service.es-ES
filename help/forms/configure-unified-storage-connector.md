@@ -1,68 +1,68 @@
 ---
-title: ¿Cómo configurar el conector de almacenamiento unificado para AEM Forms?
-description: Obtenga información sobre cómo administrar el conector de almacenamiento unificado para AEM Forms. Utilice el conector de almacenamiento unificado para conectar AEM Forms a almacenes de datos externos.
+title: Cómo configurar el conector de almacenamiento unificado para AEM Forms
+description: Obtenga información sobre cómo administrar el conector de almacenamiento unificado para AEM Forms. Utilice el conector de almacenamiento unificado para conectar AEM Forms a almacenes de datos externos.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Administrar el conector de almacenamiento unificado para AEM Forms {#manage-unified-storage-connector}
+# Administrar el conector de almacenamiento unificado para AEM Forms {#manage-unified-storage-connector}
 
-Puede utilizar el conector de almacenamiento unificado para conectar AEM Forms a almacenes de datos externos.
+Puede utilizar el conector de almacenamiento unificado para conectar AEM Forms a almacenes de datos externos.
 
-Por ejemplo, puede rellenar valores para campos en un formulario adaptable y enviarlos a un flujo de trabajo AEM. Puede configurar aún más AEM Flujos de trabajo para almacenar datos en un almacenamiento externo, como el servidor de almacenamiento de Microsoft Azure. Utilice el conector de almacenamiento unificado para crear una conexión entre AEM flujos de trabajo y el almacenamiento externo.
+Por ejemplo, puede rellenar los valores de los campos de un formulario adaptable y enviarlos a un flujo de trabajo AEM. También puede configurar flujos de trabajo de AEM para almacenar datos en un almacenamiento externo, como el servidor de Microsoft Azure Storage. Utilice el conector de almacenamiento unificado para crear una conexión entre los flujos de trabajo de AEM y el almacenamiento externo.
 
-## Conectar AEM flujos de trabajo con un servidor de almacenamiento de Microsoft Azure {#connect-workflows-with-azure}
+## Conectar los flujos de trabajo de AEM con un servidor de Microsoft Azure Storage {#connect-workflows-with-azure}
 
-Cree una configuración de almacenamiento de Azure y consulte esa configuración mediante el conector de almacenamiento unificado. A continuación, puede configurar AEM modelos de flujo de trabajo para externalizar el almacenamiento de datos y conectarlos a un servidor de almacenamiento de Azure.
+Cree una configuración de Azure Storage y consulte esa configuración mediante el conector de almacenamiento unificado. A continuación, podrá configurar modelos de flujo de trabajo de AEM para externalizar el almacenamiento de datos y conectarlos a un servidor de Azure Storage.
 
-### Crear [!DNL Azure] configuración de almacenamiento {#create-azure-storage-configuration}
+### Crear la configuración de [!DNL Azure] Storage {#create-azure-storage-configuration}
 
-Antes de ejecutar estos pasos, asegúrese de que dispone de un [!DNL Azure] cuenta de almacenamiento y clave de acceso para autorizar el acceso a la variable [!DNL Azure] cuenta de almacenamiento.
+Antes de ejecutar estos pasos, asegúrese de que dispone de una cuenta de [!DNL Azure] Storage y una clave de acceso para autorizar el acceso a la cuenta de [!DNL Azure] Storage.
 
-Siga estos pasos para crear un [!DNL Azure] configuración de almacenamiento:
+Siga estos pasos para crear la configuración de [!DNL Azure] Storage:
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Almacenamiento de Azure]**.
 1. Seleccione una carpeta para crear la configuración y pulse **[!UICONTROL Crear]**.
-1. Especifique un título para la configuración en la **[!UICONTROL Título]** campo .
-1. Especifique el nombre del [!DNL Azure] cuenta de almacenamiento en la variable **[!UICONTROL Cuenta de almacenamiento de Azure]** campo .
-1. Especifique la clave para acceder a la cuenta de almacenamiento de Azure en la **[!UICONTROL Clave de acceso de Azure]** toque y campo **[!UICONTROL Guardar]**.
+1. Especifique un título para la configuración en el campo **[!UICONTROL Título]**.
+1. Especifique el nombre de la cuenta de [!DNL Azure] Storage en el campo **[!UICONTROL Cuenta de Azure Storage]**.
+1. Especifique la clave para acceder a la cuenta de Azure Storage en el campo **[!UICONTROL Clave de acceso de Azure]** y pulse **[!UICONTROL Guardar]**.
 
-### Configuración del conector de almacenamiento unificado para flujos de trabajo AEM {#configure-unified-storage-connector-workflows}
+### Configuración del conector de almacenamiento unificado para flujos de trabajo de AEM {#configure-unified-storage-connector-workflows}
 
-Realice los siguientes pasos para configurar el conector de almacenamiento unificado para AEM flujos de trabajo:
+Para configurar el conector de almacenamiento unificado para flujos de trabajo de AEM, haga lo siguiente:
 
-1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Conector de almacenamiento unificado]**.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Formularios]** > **[!UICONTROL Conector de almacenamiento unificado]**.
 
-1. En el **[!UICONTROL Flujo de trabajo]** , seleccione **[!UICONTROL Azure]** en la lista desplegable Almacenamiento .
-1. Especifique la variable [ruta de configuración para la configuración de almacenamiento de Azure](#create-azure-storage-configuration) en el **[!UICONTROL Ruta de configuración de almacenamiento]** campo .
-1. Toque **[!UICONTROL Publicación]** y, a continuación, toque **[!UICONTROL Guardar]** para guardar la configuración.
+1. En la sección **[!UICONTROL Flujo de trabajo]**, seleccione **[!UICONTROL Azure]** en la lista desplegable Almacenamiento.
+1. Especifique la ruta de configuración [para la configuración del almacenamiento de Azure](#create-azure-storage-configuration) en el campo **[!UICONTROL Ruta de configuración del almacenamiento]**.
+1. Pulse **[!UICONTROL Publicar]** y, a continuación, pulse **[!UICONTROL Guardar]** para guardar la configuración.
 
-### Configuración de un modelo de flujo de trabajo AEM para almacenamiento de datos externos {#configure-workflow-external-data-storage}
+### Configuración de un modelo de flujo de trabajo de AEM para un almacenamiento de datos externo {#configure-workflow-external-data-storage}
 
-Realice los siguientes pasos para configurar un modelo de flujo de trabajo AEM para un almacenamiento de datos externo:
+Realice los siguientes pasos para configurar un modelo de flujo de trabajo de AEM para un almacenamiento de datos externo:
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
-1. Seleccione un nombre de modelo y pulse **[!UICONTROL Editar]**.
-1. Pulse el icono Información de página y pulse **[!UICONTROL Abrir propiedades]**.
-1. Select **[!UICONTROL Externalización del almacenamiento de datos de flujo de trabajo]**.
-1. Toque **[!UICONTROL Guardar y cerrar]** para guardar las propiedades.
+1. Seleccione el nombre de un modelo y pulse **[!UICONTROL Editar]**.
+1. Pulse el icono Información de página y luego pulse **[!UICONTROL Abrir propiedades]**.
+1. Seleccione **[!UICONTROL Externalizar el almacenamiento de los datos del flujo de trabajo]**.
+1. Pulse **[!UICONTROL Guardar y cerrar]** para guardar las propiedades.
 
 >[!NOTE]
 >
->Las opciones para guardar el paso Asignar tarea como borrador y para recuperar el historial del paso Asignar tarea se desactivan al configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos.
+>Las opciones para guardar el paso Asignar tarea como borrador y para recuperar su historial se desactivan al configurar un modelo de flujo de trabajo de AEM para el almacenamiento de datos externo.
 
-### Directrices para flujos de trabajo de AEM para almacenamiento de datos externos {#guidelines-workflows-external-data-storage}
+### Directrices para los flujos de trabajo de AEM de un almacenamiento de datos externo {#guidelines-workflows-external-data-storage}
 
-A continuación se indican las directrices que se siguen cuando se utilizan AEM Flujos de trabajo y se almacenan datos en almacenes de datos externos, como el servidor de almacenamiento de Microsoft Azure:
+Estas son las directrices a seguir a la hora de utilizar flujos de trabajo de AEM y almacenar datos en almacenamientos de datos externos, como el servidor de Microsoft Azure Storage:
 
-* Utilice variables para almacenar datos al definir archivos de datos de entrada y salida y archivos adjuntos en los pasos del modelo de flujo de trabajo. No seleccione **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** opciones. La variable **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** las opciones no se muestran automáticamente una vez que [configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos](#configure-workflow-external-data-storage).
+* Utilice variables para almacenar los datos al definir los archivos de datos de entrada y salida y los archivos adjuntos en los pasos del modelo de flujo de trabajo. No seleccione las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]**. Las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** no se muestran automáticamente una vez que [ha configurado un modelo de flujo de trabajo de AEM para un almacenamiento de datos externo](#configure-workflow-external-data-storage).
 
-* Utilice variables para almacenar archivos de datos y archivos adjuntos al enviar un formulario adaptable a un flujo de trabajo AEM. No seleccione **[!UICONTROL Relativo a carga útil]** al enviar un formulario adaptable a un flujo de trabajo AEM. La variable **[!UICONTROL Relativo a carga útil]** no se muestra automáticamente una vez que [configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos](#configure-workflow-external-data-storage).
+* Utilice variables para almacenar los archivos de datos y los archivos adjuntos cuando envíe un formulario adaptable a un flujo de trabajo de AEM. No seleccione **[!UICONTROL Relativo a carga útil]** cuando envíe un formulario adaptable a un flujo de trabajo de AEM. La opción **[!UICONTROL Relativo a carga útil]** no se muestra automáticamente una vez que [ha configurado un modelo de flujo de trabajo de AEM para un almacenamiento de datos externo](#configure-workflow-external-data-storage).
 
-* No utilice un paso de flujo de trabajo AEM personalizado en un modelo de flujo de trabajo para almacenar datos en el repositorio CRX DE.
+* No utilice un paso de un flujo de trabajo de AEM personalizado de un modelo de flujos de trabajo para almacenar datos en el repositorio CRX DE.
 
-* Cuando [configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos](#configure-workflow-external-data-storage), no cree columnas personalizadas para AEM Bandeja de entrada, ya que los valores de las columnas personalizadas no se recuperan si el elemento de trabajo de la Bandeja de entrada de AEM pertenece a un flujo de trabajo marcado para almacenamiento externo.
+* Cuando [configure un modelo de flujo de trabajo de AEM para un almacenamiento de datos externo](#configure-workflow-external-data-storage), no cree columnas personalizadas para la Bandeja de entrada AEM, ya que los valores de las columnas personalizadas no se recuperan si el elemento de trabajo de la Bandeja de entrada AEM pertenece a un flujo de trabajo marcado para un almacenamiento externo.

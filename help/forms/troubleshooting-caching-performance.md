@@ -8,35 +8,35 @@ exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Rendimiento de almacenamiento en caché {#caching-performance}
+# Rendimiento del almacenamiento en caché {#caching-performance}
 
-Puede encontrar algunos de los siguientes problemas al configurar o utilizar la caché de Forms adaptable en un entorno de Cloud Service:
+Puede experimentar algunos de los siguientes problemas al configurar o utilizar la caché de los formularios adaptables en un entorno de Cloud Service:
 
-## Algunos Forms adaptables que contienen imágenes o vídeos no se invalidan automáticamente de la caché de Dispatcher {#images-videos-not-invalidated}
+## Algunos formularios adaptables que contienen imágenes o vídeos no se invalidan automáticamente en la caché de Dispatcher {#images-videos-not-invalidated}
 
-Puede seleccionar y agregar imágenes o vídeos desde el navegador de recursos a un formulario adaptable. Cuando se editan estas imágenes en el editor de Assets, la versión en caché de un formulario adaptable que contenga dichas imágenes no se invalida. El formulario adaptable sigue mostrando imágenes antiguas.
+Puede seleccionar y agregar imágenes o vídeos desde el Explorador de recursos a un formulario adaptable. Cuando estas imágenes se editan en el Editor de recursos, la versión en caché del formulario adaptable que contiene dichas imágenes no se invalida. El formulario adaptable sigue mostrando las imágenes antiguas.
 
-Para resolver el problema, después de publicar las imágenes y el vídeo, cancele la publicación y publicación explícitamente de la Forms adaptable que hace referencia a estos recursos.
+Para resolver el problema, después de publicar las imágenes y los vídeos, cancele la publicación del formulario adaptable que hace referencia a estos recursos y vuelva a publicarlo explícitamente.
 
-## Algunas Forms adaptables que contienen fragmentos de contenido o fragmentos de experiencia no se invalidan automáticamente de la caché de Dispatcher {#content-fragments-experience-fragments-not-invalidated}
+## Algunos formularios adaptables que contienen fragmentos de contenido o fragmentos de experiencias no se invalidan automáticamente en la caché de Dispatcher {#content-fragments-experience-fragments-not-invalidated}
 
-Puede agregar un fragmento de contenido o un fragmento de experiencia a un formulario adaptable. Cuando estos fragmentos se editan y publican de forma independiente, la versión en caché de un formulario adaptable que contenga dichos fragmentos no se invalida. El formulario adaptable sigue mostrando fragmentos más antiguos.
+Puede agregar un fragmento de contenido o un fragmento de experiencia a un formulario adaptable. Cuando estos fragmentos se editan y publican de forma independiente, la versión en caché del formulario adaptable que contiene estos fragmentos no se invalida. El formulario adaptable sigue mostrando los fragmentos antiguos.
 
-Para resolver el problema, después de publicar un fragmento de contenido actualizado o un fragmento de experiencia, cancele la publicación y la publicación explícitas del Forms adaptable que utiliza estos recursos.
+Para resolver el problema, después de publicar el fragmento de contenido o el fragmento de experiencia actualizado, cancele la publicación del formulario adaptable que utiliza estos recursos y vuelva a publicarlo explícitamente.
 
-## Solo se almacena en caché la primera instancia de Forms adaptable {#only-first-instance-cached}
+## Solo se almacena en caché la primera instancia de un formulario adaptable {#only-first-instance-cached}
 
-Cuando la URL del formulario adaptable no contiene información de localización y la opción Usar configuración regional del explorador está activada, se proporciona una versión localizada del formulario adaptable y una instancia del formulario adaptable, basada en la primera solicitud (configuración regional del explorador solicitada), se almacena en caché y se envía a todos los usuarios posteriores.
+Cuando la URL del formulario adaptable no contiene información de localización y la opción Usar configuración regional del explorador está activada en el Administrador de configuración, se proporciona una versión localizada del formulario adaptable y se almacena en caché y se envía a todos los usuarios posteriores una instancia del formulario adaptable basada en la primera solicitud (configuración regional del explorador solicitada).
 
 Siga estos pasos para resolver el problema:
 
-1. Abra el proyecto de Experience Manager.
-1. Abra el `dispatcher/scr/conf.d/rewrites/rewrite.rules` para editar.
-1. Abra el `conf.d/httpd-dispatcher.conf` o cualquier otro archivo de configuración configurado para cargarse durante la ejecución.
+1. Abra el proyecto de Experience Manager.
+1. Abra `dispatcher/scr/conf.d/rewrites/rewrite.rules` para editarlo.
+1. Abra `conf.d/httpd-dispatcher.conf` o cualquier otro archivo de configuración configurado para cargarse durante la ejecución.
 1. Agregue el siguiente código al archivo y guárdelo. Es un código de ejemplo, puede modificarlo para adaptarlo a su entorno.
 
 ```shellscript
@@ -55,15 +55,15 @@ Siga estos pasos para resolver el problema:
     RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]
 ```
 
-## El almacenamiento en caché de CDN deja de funcionar tras 300 segundos {#cdn-caching-stops-working-after-300-seconds}
+## El almacenamiento en caché de CDN deja de funcionar pasados 300 segundos {#cdn-caching-stops-working-after-300-seconds}
 
-El almacenamiento en caché de CDN deja de funcionar después de 300 segundos y todas las solicitudes de caché en CDN se redirigen a Dispatcher.
+El almacenamiento en caché de CDN deja de funcionar pasados 300 segundos y todas las solicitudes de caché en CDN se redirigen a Dispatcher.
 
-Para resolver el problema, establezca el encabezado de página en 0:
+Para resolver el problema, establezca el encabezado age en 0:
 
-1. Cree un archivo en `src\conf.d\available_vhosts`
+1. Cree un archivo en `src\conf.d\available_vhosts`. 
 
-1. Añada lo siguiente al archivo para establecer el encabezado de página
+1. Añada lo siguiente al archivo para establecer el encabezado age.
 
    ```shellscript
        <IfModule mod_headers.c>
@@ -73,4 +73,4 @@ Para resolver el problema, establezca el encabezado de página en 0:
    ```
 
 1. Guarde y cierre el archivo.
-1. Modifique el vínculo de software para `src\conf.d\enabled_vhosts\default.vhost` para que apunten a un nuevo archivo.
+1. Modifique el vínculo de software de `src\conf.d\enabled_vhosts\default.vhost` para que apunte al nuevo archivo.

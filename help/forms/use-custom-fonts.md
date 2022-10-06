@@ -5,28 +5,28 @@ exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 0%
+ht-degree: 98%
 
 ---
 
 # Usar fuentes personalizadas
 
-**La documentación de Cloud Service Communications está en versión beta**
+**La documentación de Comunicaciones de Cloud Service está en versión beta**
 
-Puede utilizar Comunicaciones as a Cloud Service de Forms para combinar una plantilla XDP, un documento de PDF basado en XDP o un formulario de Acrobat (AcroForm) con datos XML para generar documentos de PDF. También puede utilizar Comunicaciones para combinar, reorganizar y aumentar documentos PDF y XDP y obtener información sobre documentos PDF.
+Puede utilizar Comunicaciones de Forms as a Cloud Service para combinar una plantilla XDP, un documento PDF basado en XDP o un formulario de Acrobat (AcroForm) con datos XML para generar documentos PDF. También puede utilizar Comunicaciones para combinar, reorganizar y aumentar documentos PDF y XDP y obtener información sobre documentos PDF.
 
-Junto con las operaciones mencionadas anteriormente, puede utilizar las fuentes incluidas en las fuentes Cloud Service o personalizadas (fuentes aprobadas por la organización) para procesar los documentos PDF generados. Puede utilizar el proyecto de desarrollo de Cloud Service para agregar fuentes personalizadas al entorno de Cloud Service.
+Junto con las operaciones mencionadas anteriormente, puede utilizar las fuentes incluidas en Cloud Service o fuentes personalizadas (fuentes aprobadas por la organización) para representar los documentos PDF generados. Puede utilizar el proyecto de desarrollo de Cloud Service para agregar fuentes personalizadas al entorno de Cloud Service.
 
-## Comportamiento de los documentos del PDF
+## Comportamiento de los documentos PDF
 
-Puede [incrustar una fuente](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) a un documento de PDF. Cuando se incrusta una fuente, el documento del PDF aparecerá (se verá) de forma idéntica en todas las plataformas. Utiliza fuentes incrustadas para garantizar una apariencia uniforme. Cuando una fuente no está incrustada, la renderización de la fuente depende de la configuración de renderización de clientes del visor de PDF como Acrobat o Acrobat Reader. Si la fuente está disponible en el equipo cliente, el PDF utiliza la fuente especificada; de lo contrario, el PDF se procesa con una fuente de reserva predeterminada.
+Puede [incrustar una fuente](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) en un documento PDF. Cuando se incrusta una fuente, el documento PDF tiene la misma apariencia (aspecto) en todas las plataformas. Se utilizan fuentes incrustadas para garantizar una apariencia uniforme. Cuando una fuente no está incrustada, la representación de la fuente depende de la configuración de representación de los clientes de visor de PDF, como Acrobat o Acrobat Reader. Si la fuente está disponible en el equipo cliente, el PDF utiliza la fuente especificada; de lo contrario, el PDF se representa con una fuente de reserva predeterminada.
 
-## Añada fuentes personalizadas al entorno as a Cloud Service de Forms. {#custom-fonts-cloud-service}
+## Añadir fuentes personalizadas al entorno de Forms as a Cloud Service {#custom-fonts-cloud-service}
 
-Para agregar fuentes personalizadas al entorno del Cloud Service:
+Para agregar fuentes personalizadas al entorno de Cloud Service:
 
 1. Configure y abra el [proyecto de desarrollo local](setup-local-development-environment.md). Puede utilizar cualquier IDE de su elección.
-1. En la estructura de carpetas de nivel superior del proyecto, cree una carpeta (módulo) para guardar fuentes personalizadas y agregar fuentes personalizadas a la carpeta. Por ejemplo, fonts/src/main/resources
+1. En la estructura de carpetas de nivel superior del proyecto, cree una carpeta (módulo) para guardar fuentes personalizadas y agregue fuentes personalizadas a la carpeta; por ejemplo, fonts/src/main/resources.
    ![Carpeta Fuentes](assets/fonts.png)
 
 1. Abra el archivo pom.xml del módulo de fuentes del proyecto de desarrollo.
@@ -49,7 +49,7 @@ Para agregar fuentes personalizadas al entorno del Cloud Service:
    ```
 
 
-1. Agregue la variable `<Font-Archive-Version>` entrada de manifiesto del archivo .pom y establecer el valor de la versión en 1:
+1. Agregue el archivo de entrada de manifiesto .pom `<Font-Archive-Version>` y establezca el valor de la versión en 1:
 
    ```xml
    <plugin>
@@ -93,22 +93,22 @@ Para agregar fuentes personalizadas al entorno del Cloud Service:
 
    La carpeta de fuentes contiene todas las fuentes personalizadas.
 
-1. Compruebe el código actualizado y [ejecutar la canalización](/help/implementing/cloud-manager/deploy-code.md) para implementar las fuentes en el entorno del Cloud Service.
+1. Compruebe el código actualizado y [ejecute la canalización](/help/implementing/cloud-manager/deploy-code.md) para implementar las fuentes en el entorno de Cloud Service.
 
-1. (Opcional) Abra la línea de comandos, vaya a la carpeta local del proyecto y ejecute el siguiente comando. El comando empaqueta las fuentes en un archivo .jar junto con información relevante. Puede utilizar el archivo .jar para agregar fuentes personalizadas al entorno de desarrollo local de Forms Cloud Service.
+1. (Opcional) Abra el símbolo del sistema, vaya a la carpeta local del proyecto y ejecute el siguiente comando. El comando empaqueta las fuentes en un archivo .jar junto con información relevante. Puede utilizar el archivo .jar para agregar fuentes personalizadas al entorno de desarrollo local de Forms Cloud Service.
 
    ```shell
    mvn clean install
    ```
 
-## Añada fuentes personalizadas al entorno de desarrollo de su Cloud Service Forms local. {#custom-fonts-cloud-service-sdk}
+## Añadir fuentes personalizadas al entorno de desarrollo local de Forms Cloud Service {#custom-fonts-cloud-service-sdk}
 
 1. Inicie el entorno de desarrollo local.
-1. Vaya a `<aem install directory>/crx-quickstart/install` carpeta.
-1. Coloque el `<jar file contaning custom fonts and relevant deployment code>.jar` a la carpeta de instalación. Si no tiene el archivo .jar , realice los pasos que se indican en [Añada fuentes personalizadas al entorno as a Cloud Service de Forms.](#custom-fonts-cloud-service) para generar el archivo.
-1. Ejecute el [entorno de SDK basado en docker](setup-local-development-environment.md#docker-microservices)
+1. Vaya a la carpeta `<aem install directory>/crx-quickstart/install`.
+1. Coloque el archivo `<jar file contaning custom fonts and relevant deployment code>.jar` en la carpeta de instalación. Si no tiene el archivo .jar, realice los pasos que se indican en la sección [Añadir fuentes personalizadas al entorno de Forms as a Cloud Service](#custom-fonts-cloud-service) para generar el archivo.
+1. Ejecute el [entorno de SDK basado en Docker](setup-local-development-environment.md#docker-microservices).
 
 
    >[!NOTE]
    >
-   >Siempre que implemente un archivo .jar de fuentes personalizadas actualizado en el entorno de desarrollo local, reinicie el entorno de SDK basado en docker.
+   >Siempre que implemente un archivo .jar de fuentes personalizadas actualizado en el entorno de desarrollo local, reinicie el entorno de SDK basado en Docker.

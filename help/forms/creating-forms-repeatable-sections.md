@@ -1,7 +1,7 @@
 ---
-title: Creación de formularios con secciones repetibles
+title: Crear formularios con secciones repetibles
 seo-title: Creating forms with repeatable sections
-description: Las secciones repetibles son paneles que se pueden agregar o quitar dinámicamente a un formulario.
+description: Las secciones repetibles son paneles que se pueden añadir o quitar dinámicamente a un formulario.
 seo-description: Repeatable sections are panels that can be dynamically added or removed to a form.
 uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,60 +10,60 @@ discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1117'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
 
-# Creación de formularios con secciones repetibles {#creating-forms-with-repeatable-sections}
+# Crear formularios con secciones repetibles {#creating-forms-with-repeatable-sections}
 
-Las secciones repetibles son paneles que se pueden agregar o quitar de forma dinámica a un formulario.
+Las secciones repetibles son paneles que se pueden añadir o quitar dinámicamente a un formulario.
 
-Por ejemplo, mientras solicita un trabajo, el buscador de empleo proporciona detalles de empleo previos, como el nombre de la empresa, la función, el proyecto y otra información. La información de todos los empleadores requiere secciones diferentes pero parecidas. En ese caso, el formulario de empleo proporciona una sección de empleadores y también ofrece la opción de agregar dinámicamente más de esas secciones. Estas secciones, que se agregan dinámicamente, se conocen como secciones repetibles.
+Por ejemplo, mientras se postula para un trabajo, el buscador de empleo aporta detalles de empleo previos, como el nombre de la empresa, la función, el proyecto y otra información. La información de todos los empleadores requiere secciones diferentes pero parecidas. En ese escenario, el formulario de empleo incluye una sección de empleadores y también ofrece la opción de añadir dinámicamente más secciones de ese tipo. Estas secciones, que se añaden dinámicamente, se conocen como secciones repetibles.
 
 Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
-## Uso del Administrador de instancias mediante secuencias de comandos  {#using-instance-manager-via-scripts-nbsp}
+## Utilizar Instance Manager mediante scripts  {#using-instance-manager-via-scripts-nbsp}
 
-1. En el modo de edición, seleccione un panel y pulse ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, active **[!UICONTROL Hacer que el panel sea repetible]**. Especifique los valores para la variable **[!UICONTROL Máximo]** y **[!UICONTROL Mínimo]** campos.
+1. En el modo de edición, seleccione un panel y pulse ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, habilite **[!UICONTROL Hacer que el panel sea repetible]**. Especifique los valores para los campos **[!UICONTROL Máximo]** y **[!UICONTROL Mínimo]**.
 
-   El campo Maximum especifica el número máximo de veces que puede aparecer un panel en la página. Puede especificar -1 en el campo Recuento máximo para permitir que el panel aparezca durante un número infinito de veces.
+   El campo Máximo especifica el número máximo de veces que puede aparecer un panel en la página. Puede especificar -1 en el campo Máximo para permitir que el panel aparezca durante un número infinito de veces.
 
-   El campo Minimum especifica el número mínimo de veces que aparece un panel en el formulario. Si establece el campo Recuento mínimo en cero, más adelante, puede eliminar todas las instancias mediante secuencias de comandos una vez completada la representación.
+   El campo Mínimo especifica el número mínimo de veces que aparece un panel en el formulario. Si establece el campo Mínimo en cero, más adelante, puede quitar todas las instancias mediante scripts una vez completada la representación.
 
    >[!NOTE]
    >
-   >Para crear un panel no repetible, establezca el valor del campo Máximo y Mínimo en uno. El diseño del acordeón no admite -1 en el campo Recuento máximo . Puede especificar un número elevado para dar la noción de valor infinito.
+   >Para crear un panel no repetible, establezca el valor del campo Máximo y Mínimo en uno. El diseño del acordeón no es compatible con -1 en el campo Máximo. Puede especificar un número elevado para dar la noción de valor infinito.
 
-1. El elemento principal del panel, que se va a repetir, debe contener botones de adición y eliminación para administrar las instancias de los paneles repetibles. Realice los siguientes pasos para insertar botones en el elemento principal y activar secuencias de comandos en los botones:
+1. El elemento principal del panel, que se va a repetir, debe contener botones de añadir y eliminar para administrar las instancias de los paneles repetibles. Realice los siguientes pasos para insertar botones en el elemento principal y habilitar scripts en los botones:
 
-   1. Desde la barra lateral, arrastre y suelte un componente de botón en el panel principal. Seleccione el componente y pulse ![edit-rules](assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
+   1. Desde la barra lateral, arrastre y suelte un componente de botón en el elemento principal del panel. Seleccione el componente y pulse ![Editar reglas](assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
    1. En la ventana Editor de reglas, haga clic en **Crear**.
 
-      Select **Editor visual** en la fila Objetos de formulario y funciones.
+      Seleccione **Editor visual** en la fila Objetos y funciones de formularios.
 
-      1. En el área de regla, en CUÁNDO, seleccione estado **se hace clic**.
+      1. En el área de regla, en CUÁNDO, **se hace clic** en seleccionar estado.
       1. En ENTONCES:
 
-         * Para crear un botón agregar panel, seleccione **Agregar instancia** y arrastre el panel utilizando ![alternar panel lateral](assets/toggle-side-panel.png) o selecciónela utilizando **Colocar objeto o seleccionar aquí.**
-         * Para crear un botón de panel de eliminación, seleccione **Quitar instancia** y arrastre el panel utilizando ![alternar panel lateral](assets/toggle-side-panel.png) o selecciónela utilizando **Colocar objeto o seleccionar aquí.**
+         * Para crear un botón de añadir panel, seleccione **Añadir instancia** y arrastre el panel utilizando el ![panel lateral de alternancia](assets/toggle-side-panel.png) o selecciónelo utilizando **Colocar objeto o seleccionar aquí.**
+         * Para crear un botón de eliminar panel, seleccione **Quitar instancia** y arrastre el panel utilizando el ![panel lateral de alternancia](assets/toggle-side-panel.png) o selecciónelo utilizando **Colocar objeto o seleccionar aquí.**
 
-      Select **Editor de código** en la fila Objetos de formulario y funciones. Haga clic en **Editar reglas** y en el área de código:
+      Seleccione **Editor de código** en la fila Objetos y funciones de formularios. Haga clic en **Editar reglas** y en el área de código:
 
-      * Para crear un botón agregar panel, especifique `this.panel.instanceManager.addInstance()`
-      * Para crear un botón de panel de eliminación, especifique `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
+      * Para crear un botón de añadir panel, especifique `this.panel.instanceManager.addInstance()`
+      * Para crear un botón de eliminar panel, especifique `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
       Haga clic en **Listo**.
 
       >[!NOTE]
       >
-      >Si un campo pertenece a un panel repetible, no puede acceder a él directamente utilizando su nombre en las secuencias de comandos. Para acceder al campo , especifique la instancia repetible a la que pertenece el campo utilizando la variable `instances` API en `InstanceManager`. La sintaxis para usar la variable `instances` API en `InstanceManager` es:
+      >Si un campo pertenece a un panel repetible, no puede acceder a él directamente utilizando su nombre en los scripts. Para acceder al campo, especifique la instancia repetible a la que pertenece el campo utilizando el API de `instances` en `InstanceManager`. La sintaxis para usar el API de `instances` en `InstanceManager` es la siguiente:
       >
       >
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
       >
       >
-      >Por ejemplo, se crea un formulario adaptable con un panel repetible que tiene un cuadro de texto. Cuando rellene previamente el formulario con tres cuadros de texto repetibles, necesitará el xml siguiente:
+      >Por ejemplo, se crea un formulario adaptable con un panel repetible que tiene un cuadro de texto. Cuando rellene automáticamente el formulario con tres cuadros de texto repetibles, necesitará el siguiente xml:
       >
       >
       >`<panel1><textbox1>AA1</panel1></textbox1>`
@@ -87,48 +87,48 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
       >`Panel1.instanceManager.instances[1].textbox.value`
       >
       >
-      >Para obtener más información, consulte: Clase: InstanceManager#instances en [Referencia de la API de AEM Forms Java](https://adobe.com/go/learn_aemforms_documentation_63).
+      >Para obtener más información, consulte: Clase: InstanceManager#instances en [Referencia del API de Java de AEM Forms](https://adobe.com/go/learn_aemforms_documentation_63).
 
       >[!NOTE]
       >
-      >Cuando todas las instancias de un panel se eliminen de un formulario adaptable, para agregar una instancia del panel eliminado, utilice la sintaxis _panelName para capturar el administrador de instancias del panel y use la API addInstance de instance manager para agregar la instancia eliminada. Por ejemplo, _panelName.addInstance(). Agrega una instancia del panel eliminado.
+      >Cuando todas las instancias de un panel se quiten de un formulario adaptable, para añadir una instancia del panel eliminado, utilice la sintaxis _panelName para capturar el Instance Manager del panel y use el API addInstance de Instance Manager para añadir la instancia eliminada. Por ejemplo, _panelName.addInstance(). Añade una instancia del panel eliminado.
 
 
 
-## Uso del diseño de acordeón para el panel principal   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
+## Usar el diseño de acordeón para el panel principal   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
-Un panel tiene varias opciones de diseño. La opción Diseño para el diseño de acordeón es compatible de serie con paneles repetibles. Realice los siguientes pasos en el panel repetible con la opción Diseño para diseño acordeón :
+Un panel tiene varias opciones de diseño. La opción Diseño para el diseño de acordeón es compatible de forma predeterminada con los paneles repetibles. Realice los siguientes pasos en el panel repetible con la opción Diseño para el diseño de acordeón:
 
-1. En el panel principal que se va a repetir, pulse ![cmppr](assets/cmppr.png). Puede ver las propiedades en la barra lateral. En el **Diseño** desplegable, seleccione **Acordeón**.
-1. En un panel, que se va a repetir, pulse ![cmppr](assets/cmppr.png). Puede ver las propiedades del panel en la barra lateral. Active la variable **Hacer que el panel sea repetible** y especifique el valor de **Máximo** y **Mínimo** campos.
+1. En el panel principal que se va a repetir, pulse ![cmppr](assets/cmppr.png). Puede ver las propiedades en la barra lateral. En la lista desplegable **Diseño**, seleccione **Acordeón**.
+1. En un panel que se va a repetir, pulse ![cmppr](assets/cmppr.png). Puede ver las propiedades del panel en la barra lateral. Habilite la pestaña **Hacer que el panel sea repetible** y especifique los valores para los campos **Máximo** y **Mínimo**.
 
-   Ahora puede utilizar el signo más (+) y eliminar ( ![panel de eliminación](assets/delete-panel.png)) para añadir y quitar los paneles.
+   Ahora puede utilizar los botones más (+) y eliminar (![eliminar panel](assets/delete-panel.png)) para añadir y quitar los paneles.
 
-## Uso de subformularios de repetición de la plantilla de formulario (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
+## Usar subformularios repetibles de la plantilla de formulario (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
-El subformulario repetible es similar a los paneles repetibles de Forms adaptable. En [!DNL AEM Forms] Designer, realice los siguientes pasos para crear un subformulario de repetición:
+El subformulario repetible es similar a los paneles repetibles de los formularios adaptables. En [!DNL AEM Forms] Designer, realice los siguientes pasos para crear un subformulario repetible:
 
 1. En la paleta Jerarquía, seleccione el subformulario principal del subformulario que desea que se repita.
-1. En la paleta Objeto, haga clic en la ficha Subformulario y seleccione De posición variable en la lista Contenido.
+1. En la paleta Objeto, haga clic en la pestaña Subformulario y seleccione De posición variable en la lista Contenido.
 1. Seleccione el subformulario que desea que se repita.
-1. En la paleta Objeto, haga clic en la ficha Subformulario y seleccione De posición variable o De posición fija en la lista Contenido.
-1. Haga clic en la ficha Enlace y seleccione Repetir subformulario para cada elemento de datos.
+1. En la paleta Objeto, haga clic en la pestaña Subformulario y seleccione De posición variable o De posición fija en la lista Contenido.
+1. Haga clic en la pestaña Enlace y seleccione Repetir subformulario para cada elemento de datos.
 1. Para especificar el número mínimo de repeticiones, seleccione Mínimo y escriba un número en el cuadro correspondiente. Si la opción se ajusta a 0 y no se suministran datos para los objetos del subformulario en el momento de la combinación de datos, el subformulario no se coloca al procesar el formulario.
-1. Para especificar el número máximo de repeticiones de subformulario, seleccione Máx. y escriba un número en el cuadro correspondiente. Si no se especifica ningún valor en el cuadro Máx., el número de repeticiones de subformulario es ilimitado.
-1. Para especificar un número definido de repeticiones de subformulario, independientemente de la cantidad de datos, seleccione la opción Recuento inicial y escriba un número en el cuadro correspondiente. Si se selecciona esta opción y no hay ningún dato disponible o existen menos entradas de datos que el valor especificado en Recuento inicial, las instancias vacías del subformulario aún se colocan en el formulario.
-1. Agregue dos botones en el subformulario principal: uno para agregar instancias y otro para eliminar instancias de subformulario repetibles. Para ver los pasos detallados, consulte [Generar una acción](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. Ahora, vincule la plantilla de formulario al formulario adaptable. Para ver los pasos detallados, consulte [Creación de un formulario adaptable basado en una plantilla](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
-1. Utilice los botones creados en el paso 9 para agregar y quitar subformularios.
+1. Para especificar el número máximo de repeticiones de subformulario, seleccione Máx. y escriba un número en el cuadro correspondiente. Si no se especifica un valor en el cuadro Máx., el número de repeticiones de subformulario es ilimitado.
+1. Para especificar un número definido de repeticiones de subformulario, independientemente de la cantidad de datos, seleccione la opción Recuento inicial y escriba un número en el cuadro correspondiente. Si se selecciona esta opción y no hay ningún dato disponible o existen menos entradas de datos que el valor especificado en Recuento inicial, las instancias vacías del subformulario todavía se colocan en el formulario.
+1. Agregue dos botones en el subformulario principal: uno para añadir instancias y otro para eliminar instancias de subformularios repetibles. Para ver los pasos detallados, consulte [Generar una acción](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
+1. Ahora, vincule la plantilla de formulario al formulario adaptable. Para ver los pasos detallados, consulte [Crear un formulario adaptable basado en una plantilla](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
+1. Utilice los botones creados en el paso 9 para añadir y quitar subformularios.
 
 El archivo .zip adjunto contiene un subformulario repetible de ejemplo.
 
 [Obtener archivo](assets/samplerepeatablesubform.zip)
 
-## Uso de la configuración repetida de un esquema XML (XSD) {#using-repeat-settings-of-an-xml-schema-xsd-br}
+## Utilizar la configuración repetida de un esquema XML (XSD) {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-Puede crear paneles repetibles a partir de un esquema XML y de la propiedad minOccours &amp; maxOccurs de cualquier elemento de tipo complejo. Para obtener información detallada sobre el esquema XML, consulte [Crear Forms adaptable utilizando el esquema XML como modelo de formulario](adaptive-form-xml-schema-form-model.md).
+Puede crear paneles repetibles a partir de un esquema XML y de la propiedad minOccours y maxOccurs de cualquier elemento de tipo complejo. Para obtener información detallada sobre el esquema XML, consulte [Crear formularios adaptables utilizando el esquema XML como modelo de formulario](adaptive-form-xml-schema-form-model.md).
 
-En el siguiente código, la variable `SampleType`El panel utiliza la propiedad minOccours &amp; maxOccurs .
+En el siguiente código, el panel `SampleType` utiliza la propiedad minOccours y maxOccurs.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -172,4 +172,4 @@ En el siguiente código, la variable `SampleType`El panel utiliza la propiedad m
 
 >[!NOTE]
 >
->Para las presentaciones que no son acordes, utilice los componentes de botón Formulario adaptable para agregar y quitar instancias.
+>Para los diseños que no son de acordeón, utilice los componentes de botón del formulario adaptable para añadir y quitar instancias.

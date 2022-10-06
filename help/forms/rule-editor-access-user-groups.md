@@ -1,38 +1,38 @@
 ---
-title: ¿Cómo se concede acceso al Editor de reglas para seleccionar grupos de usuarios?
-description: Existen diferentes tipos de usuarios con diversas habilidades que trabajan con Adaptive Forms. Obtenga información sobre cómo limitar el acceso al editor de reglas a los usuarios en función de su función o función.
+title: Cómo conceder acceso al Editor de reglas a determinados grupos de usuarios
+description: Existen diferentes tipos de usuarios con diversas habilidades que trabajan con formularios adaptables. Obtenga información sobre cómo limitar el acceso de los usuarios al Editor de reglas en función de su rol o función.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Conceder acceso al editor de reglas a determinados grupos de usuarios {#grant-rule-editor-access-to-select-user-groups}
+# Conceder acceso al Editor de reglas a determinados grupos de usuarios {#grant-rule-editor-access-to-select-user-groups}
 
 ## Información general {#overview}
 
-Existen diferentes tipos de usuarios con diversas habilidades que trabajan con Adaptive Forms. Aunque los usuarios expertos pueden tener los conocimientos adecuados para trabajar con secuencias de comandos y reglas complejas, puede haber usuarios de nivel básico que solo deben trabajar con el diseño y las propiedades básicas de Forms adaptable.
+Existen diferentes tipos de usuarios con diversas habilidades que trabajan con formularios adaptables. Aunque es posible que los usuarios expertos tengan los conocimientos necesarios para trabajar con scripts y reglas complejas, puede haber usuarios de nivel básico que únicamente necesiten trabajar con el diseño y las propiedades básicas de los formularios adaptables.
 
-[!DNL Experience Manager Forms] le permite limitar el acceso al editor de reglas a los usuarios en función de su función o función. En los ajustes del servicio de configuración de Forms adaptable, puede especificar la variable [grupos de usuarios](forms-groups-privileges-tasks.md) que pueden ver y acceder al editor de reglas.
+[!DNL Experience Manager Forms] permite limitar el acceso de los usuarios al Editor de reglas en función de su rol o función. En los ajustes del servicio de configuración de los formularios adaptables, puede especificar los [grupos de usuarios](forms-groups-privileges-tasks.md) que pueden ver y acceder al Editor de reglas.
 
-## Especificar grupos de usuarios que pueden acceder al editor de reglas {#specify-user-groups-that-can-access-rule-editor}
+## Especificar qué grupos de usuarios pueden acceder al Editor de reglas {#specify-user-groups-that-can-access-rule-editor}
 
-1. Iniciar sesión en [!DNL Experience Manager Forms] como administrador.
-1. En la instancia de autor, haga clic en ![Adobe Experience Manager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Herramientas ![martillo](assets/hammer-icon.svg) > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**. La consola web se abre en una nueva ventana.
+1. Inicie sesión en [!DNL Experience Manager Forms] como administrador.
+1. En la instancia de autor, haga clic en ![Adobe Experience Manager](assets/adobeexperiencemanager.png) Adobe Experience Manager > Herramientas ![martillo](assets/hammer-icon.svg) > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**. La consola web se abre en una nueva ventana.
 
    ![1-2](assets/1-2.png)
 
-1. En [!UICONTROL Consola web] Ventana, localizar y hacer clic **[!UICONTROL Servicio de configuración de formularios adaptables]**. **[!UICONTROL Servicio de configuración de formularios adaptables]** se abre. No cambie ningún valor y haga clic en **[!UICONTROL Guardar]**.
+1. En la ventana [!UICONTROL Consola web], localice y haga clic en **[!UICONTROL Servicio de configuración de formularios adaptables]**. Se abre el cuadro de diálogo **[!UICONTROL Servicio de configuración de formularios adaptables]**. No cambie ningún valor y haga clic en **[!UICONTROL Guardar]**.
 
-   Crea un archivo `/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config` en el repositorio CRX.
+   Esto crea un archivo `/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config` en el repositorio CRX.
 
-1. Inicie sesión en CRXDE como administrador. Abrir archivo `/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config` para editar.
-1. Utilice la siguiente propiedad para especificar el nombre de un grupo que puede acceder al editor de reglas (por ejemplo, RuleEditorsUserGroup) y haga clic en **[!UICONTROL Guardar todo]**.
+1. Inicie sesión en CRXDE como administrador. Abra el archivo `/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config` para editarlo.
+1. Utilice la siguiente propiedad para especificar el nombre de un grupo que puede acceder al Editor de reglas (por ejemplo, RuleEditorsUserGroup) y haga clic en **[!UICONTROL Guardar todo]**.
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`
 
@@ -42,15 +42,15 @@ Existen diferentes tipos de usuarios con diversas habilidades que trabajan con A
 
    ![Crear usuario](assets/create_user_new.png)
 
-   Ahora, cuando un usuario no forma parte del grupo de usuarios especificado (aquí    `RuleEditorsUserGroup`) toca un campo, el icono Editar regla ( ![edit-rules1](assets/edit-rules1.png)) no está disponible en la barra de herramientas Componentes:
+   Ahora, cuando un usuario que no forma parte del grupo de usuarios especificado (aquí    `RuleEditorsUserGroup`) pulsa un campo, el icono Editar regla ( ![edit-rules1](assets/edit-rules1.png)) no está disponible en la barra de herramientas Componentes:
 
    ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 
-   Barra de herramientas de componentes visible para un usuario con acceso al editor de reglas:
+   Barra de herramientas de componentes visible para un usuario con acceso al Editor de reglas:
 
    ![componentstoolbarwithoutre](assets/componentstoolbarwithoutre.png)
 
-   Barra de herramientas de componentes visible para el usuario sin acceso al editor de reglas
+   Barra de herramientas de componentes visible para un usuario sin acceso al Editor de reglas
 
-   Para obtener instrucciones sobre cómo agregar usuarios a grupos, consulte [Administración de usuarios y seguridad](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+   Para obtener instrucciones sobre cómo agregar usuarios a grupos, consulte [Administración de usuarios y seguridad](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es).
 

@@ -1,6 +1,6 @@
 ---
-title: ¿Cómo se utiliza el modelo de datos de formulario?
-description: Aprenda a crear Forms adaptable y fragmentos de formulario adaptables basados en un modelo de datos de formulario. Profundizar al generar y editar datos de ejemplo para objetos del modelo de datos del formulario. Puede utilizar estos datos para obtener una vista previa y probar Forms adaptable.
+title: Cómo utilizar el modelo de datos de formulario
+description: Aprenda a crear formularios adaptables y fragmentos de formulario adaptable basados en un modelo de datos de formulario. Obtenga información más detallada generando y editando datos de ejemplo para objetos de modelo de datos de formulario. Puede utilizar estos datos para previsualizar y probar formularios adaptables.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
@@ -8,7 +8,7 @@ exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -16,50 +16,50 @@ ht-degree: 1%
 
 ![integración de datos](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] la integración de datos permite utilizar orígenes de datos de backend dispares para crear un Modelo de datos de formulario que se puede utilizar como esquema en varios Forms adaptable <!--and interactive communications--> flujos de trabajo. Requiere configurar los orígenes de datos y crear el Modelo de datos de formulario basado en los objetos y servicios del modelo de datos disponibles en los orígenes de datos. Para obtener más información, consulte:
+La integración de datos de [!DNL Experience Manager Forms] permite utilizar fuentes de datos de diferentes back-end para crear un modelo de datos de formulario que se puede utilizar como esquema en varios flujos de trabajo de formularios adaptables e <!--and interactive communications-->. Para ello, es necesario configurar las fuentes de datos y crear un modelo de datos de formulario basado en los objetos y servicios de modelo de datos disponibles en las fuentes de datos. Para obtener más información, consulte:
 
-* [[!DNL Experience Manager Forms] Integración de datos](data-integration.md)
-* [Configuración de fuentes de datos](configure-data-sources.md)
+* [Integración de datos de [!DNL Experience Manager Forms]](data-integration.md)
+* [Configurar fuentes de datos](configure-data-sources.md)
 * [Crear modelo de datos de formulario](create-form-data-models.md)
-* [Trabajo con el modelo de datos de formulario](work-with-form-data-model.md)
+* [Trabajar con el modelo de datos de formulario](work-with-form-data-model.md)
 
-Un modelo de datos de formulario es una extensión del esquema JSON que puede utilizar para:
+Un modelo de datos de formulario es una extensión del esquema JSON que puede utilizar para lo siguiente:
 
-* [Creación de Forms adaptable y fragmentos](#create-af)
+* [Crear formularios adaptables y fragmentos;](#create-af)
 
 <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
-* [Vista previa con datos de ejemplo](#preview-ic)
-* [uso del servicio Modelo de datos de formulario](#prefill)
-* [Escribir datos de formulario adaptable enviados de nuevo en orígenes de datos](#write-af)
-* [Invocar servicios mediante reglas de formulario adaptable](#invoke-services)
+* [Usar una vista previa con datos de ejemplo;](#preview-ic)
+* [Usar el servicio del modelo de datos de formulario;](#prefill)
+* [Escribir en diferido datos de formulario adaptable en fuentes de datos;](#write-af)
+* [Invocar servicios mediante reglas de formulario adaptable.](#invoke-services)
 
-## Creación de Forms adaptable y fragmentos {#create-af}
+## Crear formularios adaptables y fragmentos; {#create-af}
 
-Puede crear [Forms adaptable](creating-adaptive-form.md) y fragmentos de formulario adaptables <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> basado en un modelo de datos de formulario. Para utilizar un modelo de datos de formulario al crear un formulario adaptable o un fragmento de formulario adaptable, haga lo siguiente:
+Puede crear [formularios adaptables](creating-adaptive-form.md) y fragmentos de formulario adaptables <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> a partir de un modelo de datos de formulario. Para utilizar un modelo de datos de formulario al crear un formulario adaptable o un fragmento de formulario adaptable, haga lo siguiente:
 
-1. En la ficha Modelo de formulario de la pantalla Agregar propiedades, seleccione **[!UICONTROL Modelo de datos de formulario]** en el **[!UICONTROL Seleccionar de]** lista desplegable.
+1. En la pestaña modelo de formulario de la pantalla Agregar propiedades, seleccione **[!UICONTROL Modelo de datos de formulario]** en la lista desplegable **[!UICONTROL Seleccionar desde]**.
 
-   ![create-af-1-1](assets/create-af-1-1.png)
+   ![crear-af-1-1](assets/create-af-1-1.png)
 
-1. Toque para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
+1. Pulse para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
 
-   Seleccione un modelo de datos de .
+   Seleccione un modelo de datos de formulario.
 
-   ![create-af-2-1](assets/create-af-2-1.png)
+   ![crear-af-2-1](assets/create-af-2-1.png)
 
-1. (**Solo fragmentos de formulario adaptables**) Puede crear un fragmento de formulario adaptable basado en un único objeto de modelo de datos en un modelo de datos de formulario. Expandir **[!UICONTROL Definiciones del modelo de datos de formulario]** lista desplegable. Enumera todos los objetos del modelo de datos en el modelo de datos de formulario especificado. Seleccione un objeto del modelo de datos de la lista.
+1. (**Solo fragmentos de formulario adaptable**) Puede crear un fragmento de formulario adaptable basado en un único objeto de modelo de datos en un modelo de datos de formulario. Expanda la lista desplegable **[!UICONTROL Definiciones del modelo de datos de formulario]**. Esta lista enumera todos los objetos de modelo de datos del modelo de datos de formulario especificado. Seleccione un objeto de modelo de datos de la lista.
 
-   ![create-af-3](assets/create-af-3.png)
+   ![crear-af-3](assets/create-af-3.png)
 
-   Una vez creado el formulario adaptable o el fragmento de formulario adaptable basado en un modelo de datos de formulario, los objetos del modelo de datos de formulario aparecen en el **[!UICONTROL Fuentes de datos]** del navegador de contenido en el editor de formularios adaptables.
+   Una vez creado el formulario adaptable o el fragmento de formulario adaptable basado en un modelo de datos de formulario, los objetos de modelo de datos de formulario aparecen en la pestaña **[!UICONTROL Fuentes de datos]** del Explorador de contenido en el Editor de formularios adaptables.
 
    >[!NOTE]
    >
-   >Para un fragmento de formulario adaptable, solo el objeto de modelo de datos seleccionado en el momento de la creación y los objetos de modelo de datos asociados aparecen en la ficha Fuentes de datos.
+   >En el caso de los fragmentos de formulario adaptable, solo el objeto de modelo de datos seleccionado en el momento de la creación y los objetos de modelo de datos asociados aparecen en la pestaña Fuentes de datos.
 
-   ![data-model-object-tab](assets/data-model-objects-tab.png)
+   ![pestaña-objetos-modelo-datos](assets/data-model-objects-tab.png)
 
-   Puede arrastrar y soltar objetos del modelo de datos en el formulario adaptable o en el fragmento para agregar campos de formulario. Los campos de formulario agregados conservan las propiedades de metadatos y el enlace con las propiedades de objeto del modelo de datos. El enlace garantiza que los valores de los campos se actualicen en los orígenes de datos correspondientes al envío del formulario y se rellenen previamente cuando se procesa el formulario.
+   Puede arrastrar y soltar objetos de modelo de datos en el formulario adaptable o en el fragmento para agregar campos de formulario. Los campos de formulario agregados conservan las propiedades de metadatos y el enlace con las propiedades del objeto de modelo de datos. El enlace garantiza que los valores de los campos se actualicen en las fuentes de datos correspondientes al enviar el formulario y se prerrellenen cuando se representa el formulario.
 
 <!-- ## Create interactive communications {#create-ic}
 
@@ -81,9 +81,9 @@ For more information, see:
 
 [List fragments](lists.md) -->
 
-## Vista previa con datos de ejemplo {#preview-ic}
+## Usar una vista previa con datos de ejemplo; {#preview-ic}
 
-El editor del Modelo de datos de formulario permite generar y editar datos de ejemplo para objetos del modelo de datos en el modelo de datos de formulario. Puede utilizar estos datos para previsualizar y probar <!--interactive communications and--> Forms adaptable. Debe generar los datos de ejemplo antes de realizar la vista previa, tal como se describe en [Trabajo con el modelo de datos de formulario](work-with-form-data-model.md#sample).
+El editor del modelo de datos de formulario permite generar y editar datos de ejemplo para objetos de modelo de datos en el modelo de datos de formulario. Puede utilizar estos datos para previsualizar y probar formularios adaptables de <!--interactive communications and-->. Debe generar los datos de ejemplo antes de obtener la vista previa, tal como se describe en [Trabajo con el modelo de datos de formulario](work-with-form-data-model.md#sample).
 
 <!--To preview an interactive communication with sample Form Data Model data:
 
@@ -95,15 +95,15 @@ The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-Para obtener una vista previa de un formulario adaptable con datos de ejemplo, abra el formulario adaptable en modo de autor y pulse **[!UICONTROL Vista previa]**.
+Para obtener una vista previa de un formulario adaptable con datos de ejemplo, abra el formulario adaptable en el modo Autor y pulse **[!UICONTROL Vista previa]**.
 
-## Relleno previo mediante el servicio Modelo de datos de formulario {#prefill}
+## Prerrellenado mediante el servicio del modelo de datos de formulario {#prefill}
 
-[!DNL Experience Manager Forms] proporciona el servicio de rellenado previo del modelo de datos de formulario listo para usar que puede habilitar para Forms adaptable <!--and interactive communications--> basado en el modelo de datos de formulario. El servicio de rellenado previo consulta los orígenes de datos para los objetos del modelo de datos en el formulario adaptable <!--and interactive communication--> y, en consecuencia, prefieren los datos al procesar el formulario o la comunicación.
+[!DNL Experience Manager Forms] proporciona de forma predeterminada un servicio de prerrellenado del modelo de datos de formulario que puede habilitar para formularios adaptables y <!--and interactive communications--> basados en el modelo de datos de formulario. El servicio de prerrellenado consulta las fuentes de datos de los objetos de modelo de datos del formulario adaptable <!--and interactive communication--> y prerrellena los datos de la forma correspondiente al representar el formulario o la comunicación.
 
-Para habilitar el servicio de cumplimentación previa del modelo de datos de formulario para un formulario adaptable, abra las propiedades del contenedor de formularios adaptables y seleccione **[!UICONTROL Servicio de relleno previo del modelo de datos de formulario]** de la variable **[!UICONTROL Servicio de precarga]** en el acordeón Básico . A continuación, guarde las propiedades.
+Para habilitar el servicio de prerrellenado del modelo de datos de formulario de un formulario adaptable, abra las propiedades del contenedor de formulario adaptable y seleccione **[!UICONTROL Servicio de prerrellenado del modelo de datos de formulario]** en la lista desplegable **[!UICONTROL Servicio de prerrellenado]** en el acordeón Básico. A continuación, guarde las propiedades.
 
-![prefill-service](assets/prefill-service.png)
+![servicio-prerrellenado](assets/prefill-service.png)
 
 <!--To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
@@ -111,33 +111,33 @@ Para habilitar el servicio de cumplimentación previa del modelo de datos de for
 
 Edit Properties dialog for an interactive communication-->
 
-## Escribir datos de formulario adaptable enviados en fuentes de datos {#write-af}
+## Escribir los datos de los formularios adaptables enviados en fuentes de datos {#write-af}
 
-Cuando un usuario envía un formulario basado en un modelo de datos de formulario, se puede configurar el formulario para que escriba los datos enviados de un objeto del modelo de datos en sus orígenes de datos. Para lograr este caso de uso, [!DNL Experience Manager Forms] proporcione [Acción de envío del modelo de datos de formulario](configuring-submit-actions.md), disponible de forma predeterminada solo para Forms adaptable basado en un modelo de datos de formulario. Escribe los datos enviados para un objeto de modelo de datos en su origen de datos.
+Cuando un usuario envía un formulario basado en un modelo de datos de formulario, se puede configurar el formulario para que escriba los datos enviados de un objeto de modelo de datos en sus fuentes de datos. Para aplicar este caso de uso, [!DNL Experience Manager Forms] proporciona la [Acción de envío del modelo de datos de formulario](configuring-submit-actions.md), disponible de forma predeterminada solo para formularios adaptables basados en un modelo de datos de formulario. Escribe los datos enviados de un objeto de modelo de datos en su fuente de datos.
 
-Para configurar la acción de envío del modelo de datos de formulario, abra las propiedades del contenedor del formulario adaptable y seleccione **[!UICONTROL Enviar mediante el modelo de datos de formulario]** en la lista desplegable Enviar acción , en el acordeón Envío . A continuación, busque y seleccione un objeto de modelo de datos en el **[!UICONTROL Nombre del objeto del modelo de datos que se va a enviar]** lista desplegable. Guarde las propiedades.
+Para configurar la acción de envío del modelo de datos de formulario, abra las propiedades del contenedor de formulario adaptable y seleccione **[!UICONTROL Enviar mediante el modelo de datos de formulario]** en la lista desplegable Acción de envío, en el acordeón Envío. A continuación, examine y seleccione un objeto de modelo de datos en la lista desplegable **[!UICONTROL Nombre del objeto de modelo de datos que se va a enviar]**. Guarde las propiedades.
 
-Al enviar el formulario, los datos del objeto del modelo de datos configurado se escriben en el origen de datos correspondiente.
+Al enviar el formulario, los datos del objeto de modelo de datos configurado se escriben en la fuente de datos correspondiente.
 
 <!--![data-submission](assets/data-submission.png)-->
 
-También puede enviar archivos adjuntos de formulario a un origen de datos mediante la propiedad de objeto del modelo de datos binario. Haga lo siguiente para enviar archivos adjuntos a una fuente de datos JDBC:
+También puede enviar los archivos adjuntos del formulario a una fuente de datos mediante la propiedad de objeto del modelo de datos binaria. Haga lo siguiente para enviar archivos adjuntos a una fuente de datos JDBC:
 
-1. Agregue un objeto de modelo de datos que incluya una propiedad binaria al modelo de datos del formulario.
-1. En el formulario adaptable, arrastre y suelte la **[!UICONTROL Archivo adjunto]** del navegador Componentes al formulario adaptable.
-1. Toque para seleccionar el componente añadido y toque ![settings_icon](assets/configure-icon.svg) para abrir el navegador Propiedades del componente.
-1. En el campo Referencia de enlace , pulse ![foldersearch_18](assets/folder-search-icon.svg) y desplácese hasta seleccionar la propiedad binaria añadida en el modelo de datos de formulario. Configure otras propiedades según corresponda.
+1. Agregue un objeto de modelo de datos que incluya una propiedad binaria al modelo de datos de formulario.
+1. En el formulario adaptable, arrastre y coloque el componente **[!UICONTROL Archivo adjunto]** desde el Explorador de componente al formulario adaptable.
+1. Pulse para seleccionar el componente añadido y pulse ![icono_configuración](assets/configure-icon.svg) para abrir el Explorador de propiedades del componente.
+1. En el campo Referencia de enlace, pulse ![foldersearch_18](assets/folder-search-icon.svg) y desplácese hasta seleccionar la propiedad binaria añadida en el modelo de datos de formulario. Configure otras propiedades según corresponda.
 
-   Toque ![botón de verificación](assets/save_icon.svg) para guardar las propiedades. El campo de datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos del formulario.
+   Pulse ![botón de verificación](assets/save_icon.svg) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
 
-1. En la sección Envío de las propiedades del contenedor de formulario adaptable, active **[!UICONTROL Enviar archivos adjuntos del formulario]**. Envía el archivo adjunto en el campo de propiedad binaria al origen de datos al enviar el formulario.
+1. En la sección Envío de las propiedades del contenedor de formulario adaptable, active **[!UICONTROL Enviar archivos adjuntos del formulario]**. Esto envía el archivo adjunto del campo de propiedad binaria a la fuente de datos al enviar el formulario.
 
-## Invocar servicios en Forms adaptable mediante reglas {#invoke-services}
+## Invocar servicios desde formularios adaptables mediante reglas {#invoke-services}
 
-En un formulario adaptable basado en un modelo de datos de formulario, puede [crear reglas](rule-editor.md) para invocar servicios configurados en el modelo de datos de formulario. La variable **[!UICONTROL Invocar servicios]** en una regla, se enumeran todos los servicios disponibles en el Modelo de datos de formulario y se pueden seleccionar campos de entrada y salida para el servicio. También puede usar la variable **[!UICONTROL Definir valor]** tipo de regla para invocar un servicio del Modelo de datos de formulario y establecer el valor de un campo en el resultado devuelto por el servicio.
+En un formulario adaptable basado en un modelo de datos de formulario, puede [crear reglas](rule-editor.md) para invocar servicios configurados en el modelo de datos de formulario. La operación **[!UICONTROL Invocar servicios]** en una regla muestra todos los servicios disponibles en el modelo de datos de formulario y permite seleccionar campos de entrada y salida para el servicio. También puede usar el tipo de regla **[!UICONTROL Configurar el valor de]** para invocar un servicio del modelo de datos de formulario y establecer el valor de un campo en la salida devuelta por el servicio.
 
-Por ejemplo, la siguiente regla invoca un servicio de obtención que toma el Id de empleado como entrada y los valores devueltos se rellenan en los campos correspondientes Id dependiente, Apellidos, Nombre y Género del formulario.
+Por ejemplo, la siguiente regla invoca un servicio de obtención que toma el ID de empleado como entrada, y los valores devueltos se rellenan en los campos correspondientes ID de la persona dependiente, Apellidos, Nombre y Género del formulario.
 
-![invoke-service](assets/invoke-service.png)
+![invocar-servicio](assets/invoke-service.png)
 
-Además, puede usar la variable `guidelib.dataIntegrationUtils.executeOperation` API para escribir un JavaScript en el editor de código del editor de reglas. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+Además, puede usar la API `guidelib.dataIntegrationUtils.executeOperation` para escribir un JavaScript en el Editor de código del Editor de reglas. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
