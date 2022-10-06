@@ -3,9 +3,9 @@ title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
+source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1139'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="CDN en AEM as a Cloud Service"
->abstract="AEM como Cloud Service se envía con una CDN integrada. Su principal propósito es reducir la latencia mediante el envío de contenido procesable desde los nodos CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM."
+>abstract="AEM como Cloud Service se envía con una CDN integrada. Su principal propósito es reducir la latencia al enviar contenido procesable desde los nodos CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM."
 
 AEM como Cloud Service se envía con una CDN integrada. Su objetivo principal es reducir la latencia mediante la entrega de contenido procesable desde los nodos de CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM.
 
@@ -25,7 +25,7 @@ Además, consulte los siguientes vídeos [Cloud 5 AEM CDN Parte 1](https://exper
 
 ## AEM CDN gestionada  {#aem-managed-cdn}
 
-Siga las secciones a continuación para utilizar la interfaz de usuario de autoservicio de Cloud Manager para prepararse para la entrega de contenido mediante la CDN predeterminada de AEM:
+Siga las secciones a continuación para utilizar la interfaz de usuario de autoservicio de Cloud Manager para prepararse para la entrega de contenido mediante AEM CDN predeterminada:
 
 1. [Administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -38,7 +38,7 @@ Consulte [Administración de Listas de permitidos IP](/help/implementing/cloud-m
 
 >[!CAUTION]
 >
->Solo las solicitudes de las IP permitidas serán atendidas por la CDN administrada de AEM. Si señala su propia CDN a la CDN administrada de AEM, asegúrese de que las IP de su CDN estén incluidas en la lista de permitidos.
+>Solo las solicitudes de las IP permitidas serán atendidas por AEM CDN gestionado. Si señala su propia CDN a la CDN administrada de AEM, asegúrese de que las IP de su CDN estén incluidas en la lista de permitidos.
 
 ## La CDN del cliente apunta a AEM CDN administrada {#point-to-point-CDN}
 
@@ -120,6 +120,19 @@ A continuación se presentan varios ejemplos de configuración de varios proveed
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+## Disposición de contenido {#content-disposition}
+
+Para el nivel de publicación, el valor predeterminado para los blobs es como archivo adjunto. Esto se puede sobrescribir con el estándar [encabezado de disposición de contenido](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) en el despachante.
+
+A continuación, se muestra un ejemplo de cómo debería ser la configuración:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## Encabezados de geolocalización {#geo-headers}
 
