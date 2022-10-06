@@ -2,10 +2,10 @@
 title: Personalización y targeting de contenido
 description: Descubra cómo puede crear contenido personalizado y dirigido con AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
+source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 12%
+source-wordcount: '1056'
+ht-degree: 10%
 
 ---
 
@@ -111,29 +111,32 @@ Actualmente AEM puede utilizar:
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEM proporciona el motor de targeting integrado ContextHub que procesa las solicitudes de página y determina el contenido que se va a mostrar. Al utilizar el motor de targeting de AEM, el uso se limita a los segmentos que se crean en AEM para definir las audiencias de las experiencias.
+AEM proporciona el motor de targeting integrado [ContextHub](/help/implementing/developing/personalization/contexthub.md) que procesa las solicitudes de página y determina el contenido que se va a mostrar. Al utilizar el motor de targeting de AEM, el uso se limita a los segmentos que se crean en AEM para definir las audiencias de las experiencias.
 
 ### Adobe Target {#adobe-target}
 
-El motor de targeting de Adobe Target provoca el seguimiento en Adobe Target de la información obtenida de las visitas a una página.
+La variable [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) el motor de targeting hace que la información recopilada de las visitas a la página se rastree en Adobe Target.
 
 * Al utilizar este motor de targeting, usa los segmentos que importe de Adobe Target para definir audiencias para las experiencias.
 * Las actividades que usan el motor de targeting de Adobe Target [se sincronizan con Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
-Puede utilizar este motor cuando haya [integrado con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+Puede utilizar este motor cuando haya [integrado con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ## Configuración del contenido personalizado {#how-to-setup-personalized-content}
 
 Se requieren varios pasos y definiciones para entregar el contenido personalizado:
 
-1. Integre AEM con su motor de orientación.
+1. Configure el motor de orientación mediante:
+
+   1. Configuración [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
+   1. Integración con [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
 1. Configure las audiencias.
 
-   1. En función del motor de targeting, defina la audiencia o el segmento, junto con las reglas.
+   1. En función del motor de targeting, defina la variable [Audiencia objetivo](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) o [Segmento de ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md), junto con las reglas.
 
-1. Cree su marca y actividades.
+1. Cree su [Marca y actividades](/help/sites-cloud/authoring/personalization/activities.md).
 
 1. Cree la selección de experiencias que desea mostrar a las distintas audiencias.
 
-1. Personalice estas experiencias segmentándolas para audiencias específicas (segmentos).
+1. Personalice estas experiencias mediante [segmentación](/help/sites-cloud/authoring/personalization/targeted-content.md) a las audiencias específicas (segmentos).
