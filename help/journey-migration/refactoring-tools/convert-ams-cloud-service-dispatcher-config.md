@@ -1,10 +1,10 @@
 ---
 title: Conversión de AMS a una configuración de Dispatcher de Adobe Experience Manager as a Cloud Service
 description: Conversión de AMS a una configuración de Dispatcher de Adobe Experience Manager as a Cloud Service
-source-git-commit: 42c25579e66ed2a98ded1cca403292fd1843e9af
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 99%
+source-wordcount: '1342'
+ht-degree: 95%
 
 ---
 
@@ -36,7 +36,7 @@ Esta sección proporciona las instrucciones paso a paso sobre cómo convertir un
 
 1. Quitar o comentar secciones de host virtual que no hagan referencia al puerto 80
 
-   Si aún hay secciones en los archivos host virtuales que se refieran exclusivamente a otros puertos que no sean el puerto 80, p. ej.
+   Si todavía tiene secciones en los archivos host virtuales que se refieran exclusivamente a otros puertos que no sean el puerto 80, por ejemplo,
 
    `<VirtualHost *:443>`
    `...`

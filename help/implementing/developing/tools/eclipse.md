@@ -2,9 +2,9 @@
 title: Herramientas para desarrolladores de AEM para Eclipse
 description: Herramientas para desarrolladores de AEM para Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1183'
 ht-degree: 3%
 
 ---
@@ -53,7 +53,7 @@ Cuando haya cumplido, [requisitos](#requirements) anteriormente, puede instalar 
 1. En **Ubicación** copie la dirección URL de instalación.
 1. Haga clic en **Agregar**.
 1. Marque ambas **AEM** y **Sling** complementos.
-1. Haga clic en **Siguiente**. 
+1. Haga clic en **Siguiente**.
 1. En el **Detalles de instalación** ventana, haga clic en **Siguiente** de nuevo.
 1. Acepte los acuerdos de licencia y haga clic en **Finalizar**.
 1. Haga clic en **RestartNow** para reiniciar Eclipse.
@@ -79,7 +79,7 @@ Siga estos pasos para crear el proyecto de ejemplo:
 
    ![AEM proyecto de módulo múltiple de muestra](assets/aem-sample-project.png)
 
-1. Haga clic en **Siguiente**. 
+1. Haga clic en **Siguiente**.
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ Siga estos pasos para crear el proyecto de ejemplo:
 
    ![Definir propiedades de tipo de archivo](assets/archetype-properties.png)
 
-1. Haga clic en **Siguiente**. 
+1. Haga clic en **Siguiente**.
 
 1. A continuación, configure un servidor AEM al que se conectará Eclipse.
 

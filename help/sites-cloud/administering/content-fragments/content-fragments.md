@@ -4,10 +4,10 @@ description: Descubra cómo los fragmentos de contenido en Adobe Experience Mana
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 98%
+source-wordcount: '2109'
+ht-degree: 96%
 
 ---
 
@@ -63,8 +63,8 @@ Para ayudarle con esto, puede obtener una previsualización del [Árbol de estru
 
 El número de canales de comunicación aumenta de forma anual. Normalmente, los canales hacen referencia al mecanismo de entrega, ya sea como los siguientes:
 
-* canal físico; p. ej., escritorio o móvil.
-* Forma de entrega en un canal físico; por ejemplo, la “página de detalles del producto”, la “página de categoría del producto” para escritorio o la “web móvil”, la “aplicación móvil” para móvil.
+* Canal físico; por ejemplo, escritorio o móvil.
+* Forma de entrega en un canal físico; por ejemplo, la &quot;página de detalles del producto&quot;, la &quot;página de categoría del producto&quot; para escritorio o la &quot;web móvil&quot;, la &quot;aplicación móvil&quot; para móvil.
 
 Sin embargo, probablemente no desea utilizar exactamente el mismo contenido para todos los canales y necesita optimizar su contenido según el canal específico.
 

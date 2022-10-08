@@ -4,10 +4,10 @@ description: Aprenda a reutilizar el contenido en su proyecto y a administrar si
 feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 100%
+source-wordcount: '411'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Normalmente, se crea un sitio principal en un idioma y para un país específico
 >
 >Limite el uso del Administrador de varios sitios al contenido en un idioma.
 >
->Por ejemplo, use el sitio principal en inglés para crear la versión en inglés de las páginas para EE. UU., Canadá, Reino Unido, etc. y utilice el francés para crear la versión en francés de las páginas para Francia, Suiza, Canadá, etc.
+>Por ejemplo, utilice el patrón inglés para crear la versión en inglés de las páginas para EE. UU., Canadá, Reino Unido, etc. y utilice el francés para crear la versión en francés de las páginas para Francia, Suiza, Canadá, etc.
 
 El diagrama siguiente ilustra cómo se cruzan los conceptos principales (pero no muestra todos los niveles/elementos implicados):
 

@@ -2,9 +2,9 @@
 title: Componente de página SPA
 description: En un SPA, el componente de página no proporciona los elementos de HTML de sus componentes secundarios, sino que lo delega en el marco de SPA. Este documento explica cómo esto hace que el componente de página sea único de un SPA.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '599'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Las propiedades del metarecurso que describen el contenido SPA:
 
 ## Metapropiedades {#meta-properties}
 
-* `cq:wcmmode`: Modo WCM de los editores (p. ej. página, plantilla)
+* `cq:wcmmode`: Modo WCM de los editores (por ejemplo, página, plantilla)
 * `cq:pagemodel_root_url`: URL del modelo raíz de la aplicación. Importante al acceder directamente a una página secundaria, ya que el modelo de página secundaria es un fragmento del modelo raíz de la aplicación. La variable `PageModelManager` a continuación, vuelve a componer sistemáticamente el modelo inicial de la aplicación como si entrara en ella desde su punto de entrada raíz.
 * `cq:pagemodel_router`: Habilitar o deshabilitar el [`ModelRouter`](routing.md) del `PageModelManager` biblioteca
 * `cq:pagemodel_route_filters`: Lista separada por comas o expresiones regulares para proporcionar las rutas del [`ModelRouter`](routing.md) deben ignorar.

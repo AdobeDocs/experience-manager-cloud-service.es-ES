@@ -4,10 +4,10 @@ description: Conozca los conceptos básicos de AEM; administración de paquetes 
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3584'
-ht-degree: 1%
+source-wordcount: '3585'
+ht-degree: 2%
 
 ---
 
@@ -105,7 +105,7 @@ Hay más acciones disponibles debajo de la sección **Más** botón.
 * [Otras versiones](#other-versions)
 * [Desinstalar](#uninstalling-packages)
 * [Probar instalación](#viewing-package-contents-and-testing-installation)
-* [Validar](#validating-packages)
+* [Validate](#validating-packages)
 * [Replicar](#replicating-packages)
 
 ### Estado del paquete {#package-status}
@@ -137,7 +137,7 @@ La variable **Configuración de paquetes** El cuadro de diálogo está disponibl
 | Campo | Descripción |
 |---|---|
 | Nombre | El nombre del paquete |
-| Agrupar | Para organizar paquetes, puede escribir el nombre de un grupo nuevo o seleccionar un grupo existente |
+| Grupo | Para organizar paquetes, puede escribir el nombre de un grupo nuevo o seleccionar un grupo existente |
 | Versión | Texto que se utilizará para la versión |
 | Descripción | Una breve descripción del paquete que permite el marcado del HTML para el formato |
 | Miniatura    | El icono que aparece con la lista de paquetes |

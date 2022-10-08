@@ -2,9 +2,9 @@
 title: Fragmentos de contenido Configurar componentes para procesamiento
 description: Fragmentos de contenido Configurar componentes para procesamiento
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '522'
 ht-degree: 6%
 
 ---
@@ -73,22 +73,22 @@ La configuración OSGi es:
   <tr>
    <td><strong>Tipo de medio</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>El tipo de recurso que se va a registrar; p. ej. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>El tipo de recurso que se va a registrar; por ejemplo, <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Propiedad de referencia</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>El nombre de la propiedad que contiene la referencia al fragmento; p. ej. <code>fragmentPath</code> o <code>fileReference</code></td>
+   <td>El nombre de la propiedad que contiene la referencia al fragmento; por ejemplo, <code>fragmentPath</code> o <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Propiedad Element(s)</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>El nombre de la propiedad que contiene los nombres de los elementos que se van a procesar; p. ej.<code>elementName</code></td>
+   <td>El nombre de la propiedad que contiene los nombres de los elementos que se van a procesar; por ejemplo,<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Propiedad de variación</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>El nombre de la propiedad que contiene el nombre de la variación que se va a procesar; p. ej.<code>variationName</code></td>
+   <td>El nombre de la propiedad que contiene el nombre de la variación que se va a procesar; por ejemplo,<code>variationName</code></td>
   </tr>
  </tbody>
 </table>

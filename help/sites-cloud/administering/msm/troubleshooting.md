@@ -4,10 +4,10 @@ description: Descubra cómo solucionar los problemas más comunes relacionados c
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 100%
+source-wordcount: '760'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Conocer esas propiedades también puede ser útil para consultar el repositorio 
 
 Estas son algunas de las preguntas más frecuentes relacionadas con MSM y Live Copy.
 
-### ¿Por qué algunas propiedades (p. ej., título, anotaciones) no se actualizan durante un despliegue de MSM? {#missing-properties}
+### ¿Por qué algunas propiedades (por ejemplo, título, anotaciones) no se actualizan durante una implementación de MSM? {#missing-properties}
 
 Las acciones de sincronización de MSM son altamente configurables. Las propiedades o los componentes que se modifican durante las implementaciones dependen directamente de las propiedades de dichas configuraciones.
 

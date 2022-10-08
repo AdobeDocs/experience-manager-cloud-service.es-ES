@@ -2,10 +2,10 @@
 title: Uso de los adaptadores de Sling
 description: Sling ofrece un patrón de adaptador para traducir convenientemente los objetos que implementan la interfaz adaptable
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 1%
+source-wordcount: '2221'
+ht-degree: 2%
 
 ---
 
@@ -144,7 +144,7 @@ Para el primer caso, los javadocs pueden indicar qué `adaptTo-targets` son posi
    <td>Si es un <code>cq:Component</code> recurso de nodo.</td>
   </tr>  
   <tr>
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/designer/Design.html">Design</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/designer/Design.html">Diseño</a></td>
    <td>Si es un nodo de diseño (<code>cq:Page</code>).</td>
   </tr>
   <tr>

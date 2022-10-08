@@ -4,10 +4,10 @@ description: Obtenga una introducción para reutilizar contenido con las potente
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 100%
+source-wordcount: '2683'
+ht-degree: 99%
 
 ---
 
@@ -216,7 +216,7 @@ Los cambios se pueden [sincronizar](creating-live-copies.md#synchronizing-your-l
 
 #### Live Copy con páginas que no sean de Live Copy {#live-copy-with-non-live-copy-pages}
 
-Cuando crea una Live Copy en AEM, puede ver y navegar por la rama de Live Copy y utilizar la funcionalidad de AEM normal en la rama de Live Copy. Esto significa que usted (o un proceso) puede crear nuevos recursos (páginas o párrafos) dentro de Live Copy. Por ejemplo, un producto para una región o un país en particular.
+Cuando crea una Live Copy en AEM, puede ver y navegar por la rama de Live Copy y utilizar la funcionalidad de AEM normal en la rama de Live Copy. Esto significa que usted (o un proceso) puede crear nuevos recursos (páginas o párrafos) dentro de Live Copy. Por ejemplo, un producto para una región o país en particular.
 
 * Estos recursos no tienen relación activa con las páginas de origen/modelo y no se sincronizan.
 * Pueden producirse escenarios que MSM gestione como casos especiales. Por ejemplo, cuando usted (o un proceso) crea una página con la misma posición y el mismo nombre en las ramas de origen/modelo y Live Copy. Para estas situaciones, consulte [Conflictos de despliegue de MSM](rollout-conflicts.md) para obtener más información.

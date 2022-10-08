@@ -2,9 +2,9 @@
 title: Introducción a SPA en AEM con React
 description: Este artículo presenta una aplicación de SPA de ejemplo, explica cómo se crea y le permite ponerse en marcha con sus propios SPA rápidamente utilizando el marco React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1144'
 ht-degree: 3%
 
 ---

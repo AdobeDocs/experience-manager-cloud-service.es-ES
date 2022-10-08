@@ -2,9 +2,9 @@
 title: Marco de trabajo de etiquetado de AEM
 description: Etiquete contenido y aproveche la infraestructura de etiquetado de AEM para categorizarla y organizarla.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1570'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Para etiquetar contenido y aprovechar la infraestructura AEM Tagging :
 
 La declaración de una etiqueta se captura en el repositorio en un nodo de tipo `cq:Tag.`
 
-* Una etiqueta puede ser una palabra simple (p. ej. `sky`) o representan una taxonomía jerárquica (p. ej. `fruit/apple`, es decir, tanto la fruta genérica como la manzana más específica).
+* Una etiqueta puede ser una palabra simple (por ejemplo, `sky`) o representan una taxonomía jerárquica (por ejemplo, `fruit/apple`, es decir, tanto la fruta genérica como la manzana más específica).
 * Las etiquetas se identifican mediante una `TagID`.
 * Una etiqueta tiene información meta opcional, como un título, títulos localizados y una descripción. El título debe mostrarse en las interfaces de usuario en lugar del `TagID`, cuando esté presente.
 

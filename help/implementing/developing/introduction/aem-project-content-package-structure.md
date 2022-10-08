@@ -2,10 +2,10 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 13%
+source-wordcount: '2931'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +19,7 @@ Este artículo describe los cambios necesarios para que los proyectos de Adobe E
 
 AEM implementaciones de aplicaciones deben estar formadas por un único paquete de AEM. Este paquete debe a su vez contener subpaquetes que incluyan todo lo que requiere la aplicación para funcionar, incluyendo código, configuración y cualquier contenido de línea de base compatible.
 
-AEM requiere una separación de **contenido** y **código**, lo que significa que un paquete de contenido único **no puede** implementarse **en ambas instancias** `/apps` y en áreas de tiempo de ejecución (p. ej. `/content`, `/conf`, `/home` o cualquier cosa que no sea `/apps`) del repositorio. En su lugar, la aplicación debe separar el código y el contenido en paquetes discretos para su implementación en AEM.
+AEM requiere una separación de **contenido** y **code**, que significa un paquete de contenido único **cannot** implementar a **both** `/apps` y áreas de tiempo de ejecución (por ejemplo, `/content`, `/conf`, `/home`, o cualquier cosa que no sea `/apps`) del repositorio. En su lugar, la aplicación debe separar el código y el contenido en paquetes discretos para su implementación en AEM.
 
 La estructura del paquete descrita en este documento es compatible **tanto** con las implementaciones de desarrollo local, como con las implementaciones de AEM Cloud Service.
 

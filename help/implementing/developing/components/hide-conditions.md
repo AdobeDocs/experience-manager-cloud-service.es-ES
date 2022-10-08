@@ -2,9 +2,9 @@
 title: Uso de Ocultar condiciones
 description: Las condiciones de ocultado se pueden utilizar para determinar si un recurso de componente se representa o no.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '615'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 Al definir la expresión de ocultación, tenga en cuenta:
 
-* Para que sea válido, debe expresarse el ámbito en el que se encuentra la propiedad (p. ej. `cqDesign.myProperty`).
+* Para que sea válido, se debe expresar el ámbito en el que se encuentra la propiedad (por ejemplo, `cqDesign.myProperty`).
 * Los valores son de solo lectura.
 * Las funciones (si es necesario) deben limitarse a un conjunto determinado proporcionado por el servicio.
 

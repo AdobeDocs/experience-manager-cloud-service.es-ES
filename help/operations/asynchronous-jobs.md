@@ -2,10 +2,10 @@
 title: Trabajos asincrónicos
 description: Adobe Experience Manager optimiza el rendimiento completando de manera asincrónica algunas tareas que requieren muchos recursos.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 100%
+source-wordcount: '886'
+ht-degree: 98%
 
 ---
 
@@ -101,7 +101,7 @@ Si el número de recursos o carpetas que se van a eliminar supera el número de 
 
    ![Umbral de eliminación de recursos](assets/async-delete-threshold.png)
 
-1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito o error.
+1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. por ejemplo, éxito, error.
 1. Guarde los cambios.
 
 ### Configurar operaciones asincrónicas de movimiento de recursos {#configuring-asynchronous-move-operations}
@@ -114,7 +114,7 @@ Si el número de recursos, carpetas o referencias que se van a mover supera el n
 
    ![Umbral de movimiento de recursos](assets/async-move-threshold.png)
 
-1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito o error.
+1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito, error.
 1. Guarde los cambios.
 
 ### Configurar operaciones asincrónicas de movimiento de página {#configuring-asynchronous-page-move-operations}
@@ -127,14 +127,14 @@ Si el número de referencias a las páginas que se van a mover supera el número
 
    ![Umbral de movimiento de página](assets/async-page-move.png)
 
-1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito o error.
+1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito, error.
 1. Guarde los cambios.
 
 ### Configurar operaciones de MSM asincrónicas {#configuring-asynchronous-msm-operations}
 
 1. En Navegación global, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajo de operación de movimiento de página.]**
-1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito o error.
+1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito, error.
 
    ![Configuración de MSM](assets/async-msm.png)
 

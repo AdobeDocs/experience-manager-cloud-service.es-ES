@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2043'
 ht-degree: 17%
 
 ---
@@ -50,10 +50,10 @@ Esto configura las direcciones URL de las páginas de producto y admite las sigu
 En el caso del [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` se sustituye por `/content/venia/us/en/products/product-page`
-* `{{sku}}` será reemplazado por el sku del producto, p. ej. `VP09`
-* `{{url_key}}` será reemplazado por el `url_key` propiedad, p. ej. `lenora-crochet-shorts`
-* `{{url_path}}` será reemplazado por el `url_path`, p. ej. `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` se reemplazará por la variante seleccionada actualmente, por ejemplo: `VP09-KH-S`
+* `{{sku}}` será reemplazado por el sku del producto, por ejemplo, `VP09`
+* `{{url_key}}` será reemplazado por el `url_key` propiedad, por ejemplo, `lenora-crochet-shorts`
+* `{{url_path}}` será reemplazado por el `url_path`, por ejemplo, `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` se reemplazará por la variante seleccionada actualmente, por ejemplo, `VP09-KH-S`
 
 Dado que la variable `url_path` En desuso, los formatos de URL de producto predefinidos utilizan la variable `url_rewrites` y elija el que tenga la mayor cantidad de segmentos de ruta como alternativa si la variable `url_path` no está disponible.
 
@@ -199,7 +199,7 @@ Además del `UrlProvider`, también es posible configurar las [asignaciones de S
 
 Las reescrituras de URL también se pueden lograr usando AEM servidor HTTP de Dispatcher con `mod_rewrite` módulo. El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) proporciona una referencia a la configuración de AEM Dispatcher que ya incluye las [reglas de reescritura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para el tamaño generado.
 
-## Prácticas recomendadas   {#best-practices}
+## Prácticas recomendadas {#best-practices}
 
 ### Elija el mejor formato de URL {#choose-url-format}
 

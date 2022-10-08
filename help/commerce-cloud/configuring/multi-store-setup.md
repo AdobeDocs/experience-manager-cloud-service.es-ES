@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 57%
+source-wordcount: '386'
+ht-degree: 50%
 
 ---
 
@@ -52,7 +52,7 @@ Siga los pasos a continuación para conectar un sitio de AEM y los componentes p
 4. Asigne la configuración secundaria a un sitio de AEM.
 
    * Vaya a la consola de AEM Sites.
-   * Navegue hasta la región o la raíz de idioma de la estructura del sitio, por ejemplo: /content/venia/us _o_ /content/venia/us/es para la página de muestra de Venia.
+   * Vaya a la región o a la raíz de idioma de la estructura del sitio, por ejemplo, /content/venia/us _o_ /content/venia/us/es para la página de muestra de Venia
    * Seleccione la página y abra las propiedades de la página.
    * Seleccione la pestaña Avanzadas.
    * En la sección `Configuration` seleccione la configuración que creó en el paso 3

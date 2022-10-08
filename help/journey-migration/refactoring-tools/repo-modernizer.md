@@ -2,10 +2,10 @@
 title: Modernizador de repositorio
 description: Modernizador de repositorio
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 6%
+source-wordcount: '300'
+ht-degree: 12%
 
 ---
 
@@ -15,13 +15,13 @@ Modernizador de repositorio es una utilidad desarrollada para reestructurar paqu
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager as a Cloud Service ofrece muchas nuevas funciones y posibilidades en sus proyectos AEM. Sin embargo, se requieren algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. En un nivel superior, AEM requiere una separación de **contenido** y **code** en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Consulte [AEM estructura del proyecto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) para obtener más información sobre la nueva estructura del proyecto AEM para Cloud Service.
+Adobe Experience Manager as a Cloud Service ofrece muchas nuevas funciones y posibilidades en sus proyectos AEM. Con todo, se requieren algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. En un nivel superior, AEM requiere una separación de **contenido** y **code** en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Consulte [AEM estructura del proyecto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) para obtener más información sobre la nueva estructura del proyecto AEM para Cloud Service.
 
 El Modernizador de repositorio crea una estructura de proyecto de AEM Cloud Service compatible creando la siguiente estructura de implementación:
 
 * `ui.apps` implementación de paquetes a `/apps` y contiene todo el código
 
-* `ui.content` implementaciones de paquetes en áreas de tiempo de ejecución (p. ej. `/content`, `/conf`, `/home`, o cualquier cosa que no sea `/apps`) y contiene todo el contenido y la configuración.
+* `ui.content` implementaciones de paquetes en áreas de tiempo de ejecución (por ejemplo, `/content`, `/conf`, `/home`, o cualquier cosa que no sea `/apps`) y contiene todo el contenido y la configuración.
 
 * `all` es un paquete de contenedor que contiene los subpaquetes `ui.apps` y `ui.content`.
 

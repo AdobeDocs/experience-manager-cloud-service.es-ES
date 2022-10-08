@@ -2,9 +2,9 @@
 title: Estructura de la IU de AEM
 description: La interfaz de usuario de AEM tiene varios principios subyacentes y está formada por varios elementos clave
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '916'
 ht-degree: 4%
 
 ---
@@ -162,7 +162,7 @@ Cada instancia de un componente muestra su barra de herramientas cuando se hace 
 
 Según el espacio disponible, las barras de herramientas de componentes se colocan en la esquina superior derecha o inferior del componente correspondiente.
 
-![Barra de herramientas de componentes](assets/ui-component-toolbar.png)
+![Barra de herramientas de los componentes](assets/ui-component-toolbar.png)
 
 ## Información adicional {#further-information}
 

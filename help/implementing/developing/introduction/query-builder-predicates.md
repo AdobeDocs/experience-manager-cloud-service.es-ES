@@ -2,9 +2,9 @@
 title: Referencia de predicados del generador de consultas
 description: Referencia de predicado para la API de Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2221'
 ht-degree: 2%
 
 ---
@@ -265,7 +265,7 @@ Admite la extracción de facetas y proporciona bloques para cada valor de propie
    * `equals` para coincidencia exacta (predeterminado)
    * `unequals` para comparación de desigualdad
    * `like` para usar la variable `jcr:like` función xpath (opcional)
-   * `not` no coincide (p. ej. `not(@prop)` en xpath, se ignorará value param)
+   * `not` para que no coincida (por ejemplo, `not(@prop)` en xpath, se ignorará value param)
    * `exists` para la comprobación de existencia
       * `true` la propiedad debe existir
       * `false` es igual que `not` y es el valor predeterminado
@@ -370,10 +370,10 @@ No admite la extracción de facetas.
 
 * **`tagsearch`** - palabra clave para buscar en títulos de etiquetas
 * **`property`** - propiedad (o ruta relativa a la propiedad) que se debe tener en cuenta (predeterminado) `cq:tags`)
-* **`lang`** - para buscar solo en un título de etiqueta localizado (p. ej. `de`)
+* **`lang`** - para buscar solo en un título de etiqueta localizado (por ejemplo, `de`)
 * **`all`** - valor booleano para buscar todo el texto completo de la etiqueta, es decir, todos los títulos, descripción, etc. (tiene prioridad sobre `lang`)
 
-### tipo {#type}
+### type {#type}
 
 Este predicado restringe los resultados a un tipo de nodo JCR específico, tanto tipos de nodo primario como tipos de mezcla. También se encontrarán subtipos de ese tipo de nodo. Tenga en cuenta que los índices de búsqueda del repositorio deben cubrir los tipos de nodos para una ejecución eficiente.
 

@@ -2,10 +2,10 @@
 title: Crear contenido accesible para Adobe Experience Manager as a Cloud Service (conformidad con WCAG 2.1)
 description: Utilice AEM as a Cloud Service para ayudar a que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '14053'
-ht-degree: 98%
+source-wordcount: '14061'
+ht-degree: 96%
 
 ---
 
@@ -440,7 +440,7 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 1.3.2](https://ww
 
 Los diseñadores normalmente se centran en características de diseño visuales tales como el color, la forma, el estilo del texto o una parte de la ubicación absoluta o relativa del contenido donde se presenta la información. Estas pueden ser técnicas de diseño muy poderosas para transmitir información (y pueden mejorar la accesibilidad general para los usuarios con visión con necesidades de accesibilidad cognitiva), pero las personas ciegas o con problemas visuales pueden ser incapaces de acceder a la información que requiera la identificación visual de atributos como posición, color o forma.
 
-De la misma manera, la información que requiere distinguir entre sonidos distintos (como contenido cuya voz es masculina o femenina) presentará barreras de accesibilidad para las personas que sufran limitaciones auditivas si el contenido del audio no se refleja en un texto alternativo.
+Del mismo modo, la información que requiere distinguir entre sonidos diferentes (por ejemplo, contenido cuya voz es masculina o femenina) presentará barreras de accesibilidad para las personas que sufran limitaciones auditivas, si no se refleja en ninguna alternativa textual para el contenido del audio.
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ De la misma manera, la información que requiere distinguir entre sonidos distin
 Asegúrese de que cualquier información relativa a las características visuales del contenido de una página se presente también en un formato alternativo.
 
 * Es importante no basarse en la posición visual para dar información. Por ejemplo, para dirigir a los usuarios hacia un menú a la derecha de la página para que accedan a más información, no se debe hacer referencia al *menú de la derecha*; en lugar de eso, es preferible nombrar el menú (por ejemplo mediante un encabezado) y hacer referencia a ese nombre en el texto.
-* También es importante no basarse en el estilo del texto (por ejemplo si se trata de texto en negrita o en cursiva) como la única manera de transmitir la información.
+* No confíe en el estilo del texto (por ejemplo, el texto en negrita o en cursiva) como la única manera de transmitir información.
 
 >[!NOTE]
 >
@@ -492,7 +492,7 @@ En todos los casos donde el color se utilice para transmitir información, es im
 
 Por ejemplo, asegúrese de que la información que proporciona el color también esté explícita en el texto.
 
-Si el color se utiliza como señal para proporcionar información, debe proporcionar una señal visual adicional, como un cambio de estilo (por ejemplo, negrita, cursiva) o de fuente. Esto ayuda a las personas con problemas de visión o a la hora de percibir el color a identificar la información. Sin embargo, no se puede confiar en esta medida totalmente puesto que no ayudaría a aquellos que no puedan ver la página. Por lo tanto, (a veces) resulta útil proporcionar texto oculto o utilizar soluciones programáticas, como el [grupo de estándares web de Aplicaciones de Internet enriquecidas accesibles (ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/), para transmitir esta información a usuarios sin visión.
+Si el color se utiliza como señal para proporcionar información, debe proporcionar una señal visual adicional, como cambiar el estilo (por ejemplo, negrita, cursiva) o la fuente. De esta manera, se ayuda a las personas con poca visión o que tienen una deficiencia de percepción de color a identificar la información. Sin embargo, no se puede confiar en esta medida totalmente puesto que no ayudaría a aquellos que no puedan ver la página. Por lo tanto, (a veces) resulta útil proporcionar texto oculto o utilizar soluciones programáticas, como el [grupo de estándares web de Aplicaciones de Internet enriquecidas accesibles (ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/), para transmitir esta información a usuarios sin visión.
 
 #### Más información: Uso del color (1.4.1) {#more-information-use-of-color}
 
@@ -615,7 +615,7 @@ Además de seguir las directrices de [Cómo cumplir los criterios de éxito 1.4.
 
 #### Objetivo: Imágenes de texto (1.4.5)          {#purpose-images-of-text}
 
-Las imágenes de texto normalmente se utilizan cuando se prefiere un tipo de texto en particular; por ejemplo un logotipo, o si un texto se ha generado desde otra fuente (por ejemplo un documento físico escaneado). Sin embargo, comparadas con el texto presentado en HTML y cuyo estilo utiliza CSS, las imágenes de texto carecen de la flexibilidad de cambiar su tamaño o apariencia que podría resultar necesaria para las personas con deficiencias visuales o dificultades de lectura.
+Las imágenes de texto suelen utilizarse cuando se prefiere un estilo de texto determinado; por ejemplo, un logotipo o si se ha generado texto de otra fuente (por ejemplo, una exploración de un documento en papel). Sin embargo, comparadas con el texto presentado en HTML y cuyo estilo utiliza CSS, las imágenes de texto carecen de la flexibilidad de cambiar su tamaño o apariencia que podría resultar necesaria para las personas con deficiencias visuales o dificultades de lectura.
 
 #### Cómo cumplir: Imágenes de texto (1.4.5)       {#how-to-meet-images-of-text}
 
@@ -1067,7 +1067,7 @@ La intención de este criterio de éxito es garantizar que la funcionalidad sea 
 * nuevas ventanas lanzadas cuando un componente recibe el enfoque;
 * el enfoque se cambia a otro componente cuando ese componente recibe el enfoque;
 
-El enfoque se puede mover a un control mediante el teclado (por ejemplo, presionando la tabulación hasta un control) o el ratón (por ejemplo, haciendo clic en un campo de texto). Mover el ratón sobre un control no mueve el enfoque a menos que el script implemente este comportamiento. Tenga en cuenta que para algunos tipos de controles, hacer clic en un control también puede activar el control (por ejemplo, botón), lo que a su vez puede iniciar un cambio en el contexto.
+El enfoque se puede mover a un control mediante el teclado (por ejemplo, presionando la tabulación hasta un control) o el ratón (por ejemplo, haciendo clic en un campo de texto). Mover el ratón sobre un control no mueve el enfoque a menos que el script implemente este comportamiento. Tenga en cuenta que para algunos tipos de controles, hacer clic en un control también puede activar el control (por ejemplo, botón), que a su vez puede iniciar un cambio en el contexto.
 
 #### Cómo cumplir: Enfoque (3.2.1) {#how-to-meet-on-focus}
 
@@ -1216,8 +1216,7 @@ La colocación de las etiquetas también es importante ya que ayuda a localizar 
 
 * Casillas o botones de opciones: 
 Las etiquetas se colocan inmediatamente a la derecha del campo.
-* Otros componentes del formulario (por ejemplo los cuadros de texto o los cuadros combinados): 
-Las etiquetas se colocan inmediatamente encima o bien a la izquierda del campo.
+* Todos los demás componentes del formulario (por ejemplo, cuadros de texto o cuadros combinados): Las etiquetas se colocan inmediatamente encima o bien a la izquierda del campo.
 
 En formularios simples con una funcionalidad muy limitada, etiquetar de manera correcta un botón de `Submit` puede actuar como una etiqueta para el campo adyacente (por ejemplo: `Search`). Resulta útil cuando puede ser difícil encontrar espacio para el texto de una etiqueta.
 

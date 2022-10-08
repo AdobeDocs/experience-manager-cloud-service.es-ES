@@ -2,10 +2,10 @@
 title: Búsqueda de contenido e indexación
 description: Búsqueda de contenido e indexación
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 99%
+source-wordcount: '2255'
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ Una definición de índice puede ser la siguiente:
 
 1. Un índice predeterminado. Un ejemplo es `/oak:index/cqPageLucene-2`.
 1. Una personalización de un índice predeterminado. El cliente define estas personalizaciones. Un ejemplo es `/oak:index/cqPageLucene-2-custom-1`.
-1. Un índice totalmente personalizado. Un ejemplo es `/oak:index/acme.product-1-custom-2`. Para evitar conflictos de nombres, es necesario que los índices totalmente personalizados tengan un prefijo, por ejemplo, `acme.`
+1. Un índice totalmente personalizado. Un ejemplo es `/oak:index/acme.product-1-custom-2`. Para evitar conflictos de nombres, es necesario que los índices totalmente personalizados tengan un prefijo, por ejemplo `acme.`
 
 Tenga en cuenta que tanto la personalización de un índice predeterminado como los índices totalmente personalizados deben contener `-custom-`. Solo los índices totalmente personalizados deben comenzar con un prefijo.
 
@@ -88,7 +88,7 @@ Las definiciones de índice están marcadas como personalizadas y con versiones:
 
 * La definición del índice en sí (por ejemplo `/oak:index/ntBaseLucene-custom-1`)
 
-Para implementar un índice personalizado, la definición del índice (`/oak:index/definitionname`) debe entregarse mediante `ui.apps` mediante Git y el proceso de implementación de Cloud Manager. En el filtro FileVault, por ejemplo, `ui.apps/src/main/content/META-INF/vault/filter.xml`, enumere cada índice personalizado individualmente, por ejemplo, `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definición de índice personalizada se almacenará en el archivo `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, como se indica a continuación:
+Para implementar un índice personalizado, la definición del índice (`/oak:index/definitionname`) debe entregarse mediante `ui.apps` mediante Git y el proceso de implementación de Cloud Manager. En el filtro FileVault, por ejemplo, `ui.apps/src/main/content/META-INF/vault/filter.xml`, enumere cada índice personalizado y personalizado individualmente, por ejemplo, `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definición de índice personalizada se almacenará en el archivo `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, como se indica a continuación:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

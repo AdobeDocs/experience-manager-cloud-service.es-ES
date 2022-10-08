@@ -2,9 +2,9 @@
 title: Modelo SPA
 description: En este documento se describe el contrato general, independiente del marco de trabajo, que cualquier marco de SPA debería cumplir para implementar componentes SPA editables dentro de AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2057'
 ht-degree: 1%
 
 ---
@@ -227,7 +227,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 Los componentes del proyecto deben generar como mínimo los siguientes atributos de datos para que el editor pueda interactuar con ellos.
 
-* `data-cq-data-path`: Ruta relativa del componente tal como lo proporciona el `PageModel` (p. ej., `"root/responsivegrid/image"`). Este atributo no debe agregarse a las páginas.
+* `data-cq-data-path`: Ruta relativa del componente tal como lo proporciona el `PageModel` (por ejemplo, `"root/responsivegrid/image"`). Este atributo no debe agregarse a las páginas.
 
 En resumen, para que el editor de páginas lo interprete como editable, un componente de proyecto debe respetar el siguiente contrato:
 

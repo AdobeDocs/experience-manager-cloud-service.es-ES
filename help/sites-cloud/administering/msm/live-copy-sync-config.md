@@ -4,10 +4,10 @@ description: Obtenga información acerca de las potentes opciones de sincronizac
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | Activar si se activa el modelo | Publica la Live Copy cuando se publica el origen | En la activación | `targetActivate` |
 | Desactivar si se desactiva el modelo | Desactiva la Live Copy cuando se desactiva el origen | En la desactivación | `targetDeactivate` |
 | Insertar al modificar | Inserta el contenido en Live Copy cuando se modifica el origen<br>Utilice esta configuración de despliegue con moderación, ya que utiliza el activador En la modificación. | En la modificación | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| Insertar al modificar (superficial) | Inserta el contenido en Live Copies cuando se modifica la página del modelo, sin actualizar las referencias (por ejemplo, para copias superficiales)<br>Utilice esta configuración de despliegue con moderación, ya que utiliza el activador En la modificación. | En la modificación | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| Insertar al modificar (superficial) | Inserta el contenido en Live Copy cuando se modifica la página de modelo, sin actualizar las referencias (por ejemplo, para copias superficiales)<br>Utilice esta configuración de lanzamiento con moderación, ya que utiliza el déclencheur On Modification . | En la modificación | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | Lanzamiento de promoción | Configuración del lanzamiento estándar para promocionar páginas de inicio con dicho fin. | En el lanzamiento | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### Acciones de sincronización {#synchronization-actions}

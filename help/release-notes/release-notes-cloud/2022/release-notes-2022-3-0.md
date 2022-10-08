@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1153'
+ht-degree: 97%
 
 ---
 

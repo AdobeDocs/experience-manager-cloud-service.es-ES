@@ -2,9 +2,9 @@
 title: Navegación al proveedor de servicios de Screens
 description: En esta página se describe cómo navegar al proveedor de servicios de Screens.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '266'
 ht-degree: 6%
 
 ---
@@ -36,8 +36,8 @@ Siga los pasos a continuación para configurar el proveedor de servicios de Scre
    ![imagen](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. Introduzca los siguientes detalles en el cuadro de diálogo Editar configuración.
-   * **Publicar Url** - AEM la URL de publicación (p. ej. `https://publish-p12345-e12345.adobeaemcloud.com`)
-   * **Url De Autor** - AEM URL del autor (p. ej. `https://author-p12345-e12345.adobeaemcloud.com`)
+   * **Publicar Url** - AEM URL de publicación (por ejemplo, `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **Url De Autor** - AEM URL de autor (por ejemplo, `https://author-p12345-e12345.adobeaemcloud.com`)
 
    ![imagen](/help/screens-cloud/assets/configure/configure-screens4.png)
 

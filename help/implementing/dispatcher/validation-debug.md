@@ -3,10 +3,10 @@ title: Validación y depuración mediante las herramientas de Dispatcher
 description: Validación y depuración mediante las herramientas de Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2693'
+ht-degree: 1%
 
 ---
 
@@ -281,7 +281,7 @@ Hay cuatro secciones en la configuración de la granja en las que puede incluir 
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-También puede incluir la versión **predeterminada** de esos archivos, cuyos nombres van precedidos de la palabra `default_`, por ejemplo `../filters/default_filters.any`.
+También puede incluir el **default** versión de esos archivos, cuyos nombres van precedidos de la palabra `default_`, por ejemplo, `../filters/default_filters.any`.
 
 **include en (...), fuera de cualquier ubicación conocida: ...**
 
@@ -300,7 +300,7 @@ Este error se genera cuando no se especifica una inclusión para `/renders` y `/
 
 **El filtro no debe utilizar el patrón glob para permitir solicitudes**
 
-No es seguro permitir solicitudes con un `/glob` regla de estilo, que se compara con la línea de solicitud completa, por ejemplo
+No es seguro permitir solicitudes con un `/glob` regla de estilo, que se compara con la línea de solicitud completa, por ejemplo,
 
 ```
 /0100 {
@@ -534,7 +534,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migración del modo heredado al modo flexible {#migrating}
 
-Con la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager generan estructuras de proyecto maven con [AEM arquetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) o superior, que incluye el archivo **opt-in/USE_SOURCES_DIRECTLY**. Esto elimina las limitaciones anteriores de la variable [modo heredado](/help/implementing/dispatcher/validation-debug-legacy.md) el número y el tamaño de los archivos, lo que también hace que el SDK y el tiempo de ejecución validen e implementen la configuración de una forma mejorada. Si la configuración de Dispatcher no tiene este archivo, se recomienda migrar. Siga estos pasos para garantizar una transición segura:
+Con la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager generan estructuras de proyecto maven con [AEM arquetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) o superior, que incluye el archivo **opt-in/USE_SOURCES_DIRECTLY**. Esto elimina las limitaciones anteriores de la variable [modo heredado](/help/implementing/dispatcher/validation-debug-legacy.md) el número y el tamaño de los archivos, lo que también hace que el SDK y el tiempo de ejecución validen e implementen la configuración de una forma mejorada. Si la configuración de Dispatcher no tiene este archivo, se recomienda migrar. Siga estos pasos para garantizar una transición segura:
 
 1. **Pruebas locales.** Con el SDK de las herramientas de Dispatcher más recientes, añada la carpeta y el archivo `opt-in/USE_SOURCES_DIRECTLY`. Siga las instrucciones de &quot;validación local&quot; de este artículo para probar que Dispatcher funciona localmente.
 1. **Pruebas de desarrollo en la nube:**

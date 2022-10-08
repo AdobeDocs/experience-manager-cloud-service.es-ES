@@ -2,9 +2,9 @@
 title: Enrutamiento de modelo SPA
 description: Para las aplicaciones de una sola página en AEM, la aplicación es responsable del enrutamiento. Este documento describe el mecanismo de enrutamiento, el contrato y las opciones disponibles.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 823b6412c9e75fe523e93c4f234ddd9d0ae93f5a
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---

@@ -4,10 +4,10 @@ description: Validación y depuración mediante las herramientas de Dispatcher (
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2345'
+ht-degree: 1%
 
 ---
 
@@ -270,7 +270,7 @@ Hay cuatro secciones en la configuración de la granja en las que puede incluir 
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-También puede incluir la versión **predeterminada** de esos archivos, cuyos nombres van precedidos de la palabra `default_`, por ejemplo `../filters/default_filters.any`.
+También puede incluir el **default** versión de esos archivos, cuyos nombres van precedidos de la palabra `default_`, por ejemplo, `../filters/default_filters.any`.
 
 **include en (...), fuera de cualquier ubicación conocida: ...**
 
@@ -289,7 +289,7 @@ Este error se genera cuando no se especifica una inclusión para `/renders` y `/
 
 **El filtro no debe utilizar el patrón glob para permitir solicitudes**
 
-No es seguro permitir solicitudes con un `/glob` regla de estilo, que se compara con la línea de solicitud completa, por ejemplo
+No es seguro permitir solicitudes con un `/glob` regla de estilo, que se compara con la línea de solicitud completa, por ejemplo,
 
 ```
 /0100 {

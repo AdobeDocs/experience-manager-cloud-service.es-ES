@@ -2,7 +2,7 @@
 title: Registro para AEM as a Cloud Service
 description: Aprenda a utilizar Logging para AEM as a Cloud Service a fin de configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 437c6b3bcd331bf385f2845bfdb0be656a57488e
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 3%
@@ -511,7 +511,7 @@ AEM registros se encuentran en la carpeta `crx-quickstart/logs`, donde se pueden
 * Registro AEM solicitud HTTP: `request.log`
 * Registro AEM acceso HTTP: `access.log`
 
-Los registros de capa de Apache, incluido Dispatcher, se encuentran en el contenedor Docker que alberga el Dispatcher. Consulte la [Documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) para obtener información sobre cómo iniciar Dispatcher.
+Los registros de capa de Apache, incluido Dispatcher, se encuentran en el contenedor Docker que alberga el Dispatcher. Consulte la [Documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=es) para obtener información sobre cómo iniciar Dispatcher.
 
 Para recuperar los registros:
 
@@ -554,7 +554,7 @@ En la solicitud de asistencia, los clientes deben indicar:
 * Puerto de Splunk
 * El token HEC de Splunk. Consulte [esta página](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) para obtener más información.
 
-Las propiedades anteriores deben especificarse para cada combinación de programa/tipo de entorno pertinente.  Por ejemplo, si un cliente desea entornos de desarrollo, ensayo y producción, debe proporcionar tres conjuntos de información, como se indica a continuación.
+Las propiedades anteriores deben especificarse para cada combinación de programa/tipo de entorno pertinente. Por ejemplo, si un cliente desea entornos de desarrollo, ensayo y producción, debe proporcionar tres conjuntos de información, como se indica a continuación.
 
 >[!NOTE]
 >

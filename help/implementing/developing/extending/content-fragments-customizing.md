@@ -2,9 +2,9 @@
 title: Personalizar y ampliar fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1811'
 ht-degree: 3%
 
 ---
@@ -63,9 +63,9 @@ Los fragmentos de contenido, basados en un modelo de fragmento de contenido, se 
    * Los datos del elemento se almacenan en el subnodo maestro:
       `jcr:content/data/master`
 
-   * Las variaciones se almacenan en un subnodo que lleva el nombre de la variación: p. ej. `jcr:content/data/myvariation`
+   * Las variaciones se almacenan en un subnodo que lleva el nombre de la variación: por ejemplo, `jcr:content/data/myvariation`
 
-   * Los datos de cada elemento se almacenan en el subnodo respectivo como una propiedad con el nombre del elemento: Por ejemplo, el contenido del elemento `text` se almacena como propiedad `text` en `jcr:content/data/master`
+   * Los datos de cada elemento se almacenan en el subnodo respectivo como una propiedad con el nombre del elemento: por ejemplo, el contenido del elemento `text` se almacena como propiedad `text` en `jcr:content/data/master`
 
 * A continuación se almacenan los metadatos y el contenido asociado `jcr:content/metadata`
 Excepto el título y la descripción, que no se consideran metadatos tradicionales y se almacenan en 

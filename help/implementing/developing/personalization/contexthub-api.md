@@ -2,9 +2,9 @@
 title: Referencia de la API de JavaScript de ContextHub
 description: La API de JavaScript de ContextHub está disponible para los scripts cuando el componente ContextHub se ha agregado a la página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '4622'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Valores constantes que define la API de JavaScript de ContextHub.
 
 En la tabla siguiente se enumeran los eventos de nombre que se producen en las tiendas de ContextHub. Consulte también [ContextHub.Utils.Event](#contexthub-utils-eventing).
 
-| Constante | Descripción | Value |
+| Constante | Descripción | Valor |
 |---|---|---|
 | `ContextHub.Constants.EVENT_NAMESPACE` | Área de nombres de eventos de ContextHub | `ch` |
 | `ContextHub.Constants.EVENT_ALL_STORES_READY` | Indica que todas las tiendas necesarias están registradas, inicializadas y listas para ser consumidas | `all-stores-ready` |
@@ -39,7 +39,7 @@ En la tabla siguiente se enumeran los eventos de nombre que se producen en las t
 
 En la tabla siguiente se enumeran los nombres de los eventos que se producen en la interfaz de usuario de ContextHub.
 
-| **Constante** | **Descripción** | **Value** |
+| **Constante** | **Descripción** | **Valor** |
 |---|---|---|
 | `ContextHub.Constants.EVENT_UI_MODE_REGISTERED` | Se activa cuando se registra un modo | `ui-mode-registered` |
 | `ContextHub.Constants.EVENT_UI_MODE_UNREGISTERED` | Se activa cuando un modo no está registrado | `ui-mode-unregistered` |

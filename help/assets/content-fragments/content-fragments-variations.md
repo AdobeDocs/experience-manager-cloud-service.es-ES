@@ -2,10 +2,10 @@
 title: 'Variaciones: Crear contenido de fragmentos (Recursos - Fragmentos de contenido)'
 description: Comprender cómo las variaciones pueden hacer que el contenido sin encabezado en AEM sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2286'
-ht-degree: 96%
+source-wordcount: '2288'
+ht-degree: 95%
 
 ---
 
@@ -305,7 +305,7 @@ Se agregarán a la secuencia de párrafo del fragmento sin ningún formato; el f
 
 >[!CAUTION]
 Estos recursos no se pueden mover ni eliminar en una página de referencia; esto debe hacerse en el editor de fragmentos.
-Sin embargo, el formato del recurso (p. ej., su tamaño) debe realizarse en el [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
+Sin embargo, el formato del recurso (por ejemplo, el tamaño) debe realizarse en la variable [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
 
 >[!NOTE]
 Hay varios métodos para agregar [imágenes](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
@@ -341,7 +341,7 @@ Esta opción está disponible cuando su **Texto de varias líneas** está config
 
 >[!CAUTION]
 Estos recursos no se pueden mover ni eliminar en una página de referencia; esto debe hacerse en el editor de fragmentos.
-Sin embargo, el formato del recurso (p. ej., su tamaño) debe realizarse en el [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
+Sin embargo, el formato del recurso (por ejemplo, el tamaño) debe realizarse en la variable [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
 
 >[!NOTE]
 Hay varios métodos para agregar [imágenes](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.

@@ -2,9 +2,9 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan al crear una página que se utilizará como base para la nueva página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3297'
 ht-degree: 10%
 
 ---
@@ -188,7 +188,7 @@ Para crear una carpeta nueva, puede hacer lo siguiente:
    * Tipo: `String`
    * Valor: El título (para la carpeta) que desea que aparezca en la **Plantillas** consola.
 
-1. Además de los permisos y privilegios de creación estándar (p. ej. `content-authors`) ahora debe asignar grupos y definir los derechos de acceso (ACL) necesarios para que sus autores puedan crear plantillas en la nueva carpeta.
+1. Además de los permisos y privilegios de creación estándar (por ejemplo, `content-authors`) ahora debe asignar grupos y definir los derechos de acceso (ACL) necesarios para que sus autores puedan crear plantillas en la nueva carpeta.
 
    La variable `template-authors` grupo es el grupo predeterminado que debe asignarse. Consulte la sección [ACL y grupos](#acls-and-groups) para obtener más información.
 
@@ -494,7 +494,7 @@ Las políticas de página permiten definir la variable [política de contenido](
 
          * Nombre: status
          * Tipo: Cadena
-         * Value: `enabled`
+         * Valor: `enabled`
 
 1. **Plantillas permitidas**
 

@@ -2,9 +2,9 @@
 title: Información general del editor de SPA
 description: Este artículo ofrece una descripción general completa del Editor de SPA y cómo funciona, e incluye flujos de trabajo detallados de interacción del Editor de SPA dentro de AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: c7759e390d9ea6c2196c9f6c895232c4e75c6d23
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1636'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Para obtener más información sobre SPA en AEM, consulte los siguientes documen
 * [Introducción a SPA en AEM con React](getting-started-react.md) para un rápido recorrido por una sencilla SPA usando React
 * [Introducción a SPA en AEM con Angular](getting-started-angular.md) para realizar un rápido recorrido por una sencilla SPA usando Angular
 
-## Design {#design}
+## Diseño {#design}
 
 El componente de página de una SPA no proporciona los elementos HTML de sus componentes secundarios a través del archivo JSP o HTL. Esta operación se delega en el marco SPA. La representación de componentes o modelos secundarios se obtiene como una estructura de datos JSON del JCR. A continuación, los componentes SPA se añaden a la página según esa estructura. Este comportamiento diferencia la composición inicial del cuerpo del componente de página de las contrapartes que no son SPA.
 
@@ -171,11 +171,11 @@ Se pueden definir y utilizar selectores personalizados adicionales como parte de
 Si desea utilizar el editor in situ de un componente de texto creado en SPA se requiere una configuración adicional.
 
 1. Establezca un atributo (puede ser cualquiera) en el elemento contenedor contenedor que contenga el HTML de texto. En el caso del proyecto WKND SPA, es un `<div>` y el selector que se ha utilizado es `data-rte-editelement`.
-1. Establezca la configuración `editElementQuery` en el componente de texto de AEM correspondiente `cq:InplaceEditingConfig` que apunten a ese selector, por ejemplo `data-rte-editelement`. Esto permite al editor saber qué elemento de HTML ajusta el texto del HTML.
+1. Establezca la configuración `editElementQuery` en el componente de texto de AEM correspondiente `cq:InplaceEditingConfig` que apunte a ese selector, por ejemplo, `data-rte-editelement`. Esto permite al editor saber qué elemento de HTML ajusta el texto del HTML.
 
 Para obtener información adicional sobre la variable `editElementQuery` y la configuración del editor de texto enriquecido, consulte [Configure el Editor de texto enriquecido.](/help/implementing/developing/extending/rich-text-editor.md)
 
-### Restricciones     {#limitations}
+### Restricciones {#limitations}
 
 El SDK AEM SPA Editor es totalmente compatible con Adobe y se sigue ampliando y mejorando. El Editor de SPA aún no admite las siguientes funciones de AEM:
 

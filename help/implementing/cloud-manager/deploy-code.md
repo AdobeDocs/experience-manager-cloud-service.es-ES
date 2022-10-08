@@ -2,9 +2,9 @@
 title: Implementación del código
 description: Obtenga información sobre cómo implementar su código mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: cb08fcbd6c1060466ca9e6b4639774d43b70c83c
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ El proceso de compilación implementa el código en tres fases.
 
 La variable **Implementación de fase** fase. implica estos pasos.
 
-* **Validación**  : este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente. Por ejemplo, probar que la rama configurada existe y que los entornos están disponibles.
+* **Validación**  : este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente. por ejemplo, probar que la rama configurada existe y que los entornos están disponibles.
 * **Prueba de compilación y unidad** - Este paso ejecuta un proceso de compilación en contenedores.
    * Consulte el documento [Generar detalles del entorno](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener más información sobre el entorno de compilación.
 * **Escaneo de código** - Este paso evalúa la calidad del código de la aplicación.

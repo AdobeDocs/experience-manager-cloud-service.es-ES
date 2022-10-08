@@ -2,9 +2,9 @@
 title: Edición de un SPA externo dentro de AEM
 description: En este documento se describen los pasos recomendados para cargar un SPA independiente en una instancia de AEM, agregar secciones de contenido editables y habilitar la creación.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2402'
 ht-degree: 1%
 
 ---
@@ -188,7 +188,7 @@ La variable `AEMText` ahora se puede autorizar en AEM.
 ### AEM páginas autorizadas {#aem-authorable-pages}
 
 1. Identifique la página que se agregará para la creación en el SPA. Este ejemplo utiliza `/content/wknd-spa-react/us/en/home.html`.
-1. Cree un nuevo archivo (p. ej. `Page.js`) para el componente de página legible. Aquí, podemos reutilizar el componente de página que se proporciona en `@adobe/cq-react-editable-components`.
+1. Crear un nuevo archivo (por ejemplo, `Page.js`) para el componente de página legible. Aquí, podemos reutilizar el componente de página que se proporciona en `@adobe/cq-react-editable-components`.
 1. Repita el paso cuatro de la sección [AEM componentes de hoja legibles.](#authorable-leaf-components) Uso de la función wrapper `withMappable` en el componente.
 1. Como se hizo anteriormente, aplique `MapTo` a los tipos de recurso AEM para todos los componentes secundarios de la página.
 

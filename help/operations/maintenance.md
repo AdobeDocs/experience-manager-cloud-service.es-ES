@@ -2,10 +2,10 @@
 title: Tareas de mantenimiento en AEM as a Cloud Service
 description: Tareas de mantenimiento en AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: def7f7071dac447397f40186de1380b8e5575608
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 100%
+source-wordcount: '1001'
+ht-degree: 92%
 
 ---
 
@@ -122,7 +122,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
     <p><strong>windowSchedule=weekly</strong> (este valor no debe cambiarse)</p>
     <p><strong>windowStartTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento semanal.</p>
     <p><strong>windowEndTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben dejar de ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento semanal si aún no se han completado.</p>
-    <p><strong>windowScheduleWeekdays=Matriz de dos valores entre 1 y 7 (p. ej., [5,5])</strong> El primer valor de la matriz es el día de inicio, cuando se programa el trabajo, y el segundo es el día de finalización, cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
+    <p><strong>windowScheduleWeekdays= Matriz de 2 valores entre 1 y 7 (por ejemplo, [5,5])</strong> El primer valor de la matriz es el día de inicio cuando se programa el trabajo y el segundo valor es el día de finalización cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
     </td>
   </tr>
   <tr>
@@ -133,7 +133,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
     <p><strong>windowSchedule=daily</strong> (este valor no debe cambiarse)</p>
     <p><strong>windowStartTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento mensual.</p>
     <p><strong>windowEndTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben dejar de ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento mensual si aún no se han completado.</p>
-    <p><strong>windowScheduleWeekdays=Matriz de dos valores entre 1 y 7 (p. ej., [5,5])</strong> El primer valor de la matriz es el día de inicio, cuando se programa el trabajo, y el segundo es el día de finalización, cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
+    <p><strong>windowScheduleWeekdays=Array de 2 valores entre 1 y 7 (por ejemplo, [5,5])</strong> El primer valor de la matriz es el día de inicio cuando se programa el trabajo y el segundo valor es el día de finalización cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 para programar en la primera semana del mes o 1 para programar en la última semana del mes. La ausencia de un valor programaría los trabajos todos los días, según se rige por windowScheduleWeekdays cada mes.</p>
     </td> 
     </tr>

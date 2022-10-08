@@ -2,9 +2,9 @@
 title: Entorno de compilación
 description: Obtenga información sobre el entorno de compilación de Cloud Manager y cómo crea y prueba su código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '986'
 ht-degree: 1%
 
 ---
@@ -220,7 +220,7 @@ Algunas compilaciones requieren que se instalen paquetes de sistema adicionales 
         </profile>
 ```
 
-Esta misma técnica se puede utilizar para instalar paquetes específicos del idioma, por ejemplo, utilizando `gem` para RubyGems o `pip` para paquetes Python.
+Esta misma técnica se puede utilizar para instalar paquetes específicos de idioma, por ejemplo, utilizando `gem` para RubyGems o `pip` para paquetes Python.
 
 >[!NOTE]
 >

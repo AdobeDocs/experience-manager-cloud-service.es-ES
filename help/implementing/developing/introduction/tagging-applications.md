@@ -2,9 +2,9 @@
 title: Creación del etiquetado en aplicaciones de AEM
 description: Trabajo mediante programación con etiquetas o ampliación de etiquetas dentro de una aplicación AEM personalizada
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Para la implementación basada en JCR, que asigna `Tags` en JCR `Nodes`, puede utilizar directamente el `adaptTo` mecanismo si tiene el recurso (p. ej., `/content/cq:tags/default/my/tag`):
+Para la implementación basada en JCR, que asigna `Tags` en JCR `Nodes`, puede utilizar directamente el `adaptTo` mecanismo si tiene el recurso (por ejemplo, `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -136,7 +136,7 @@ La búsqueda de etiquetas y la lista de etiquetas funcionan de la siguiente mane
 
 ## Etiquetas en diferentes idiomas {#tags-in-different-languages}
 
-Una etiqueta `title` puede definirse en diferentes idiomas. A continuación, se agrega una propiedad que distingue entre idiomas al nodo de etiqueta . Esta propiedad tiene el formato `jcr:title.<locale>`, p. ej. `jcr:title.fr` para la traducción al francés. `<locale>` debe ser una cadena de configuración regional ISO en minúscula y usar un guion bajo (`_`) en lugar de guión (`-`), por ejemplo: `de_ch`.
+Una etiqueta `title` puede definirse en diferentes idiomas. A continuación, se agrega una propiedad que distingue entre idiomas al nodo de etiqueta . Esta propiedad tiene el formato `jcr:title.<locale>`, por ejemplo, `jcr:title.fr` para la traducción al francés. `<locale>` debe ser una cadena de configuración regional ISO en minúscula y usar un guion bajo (`_`) en lugar de guión (`-`), por ejemplo: `de_ch`.
 
 Por ejemplo, cuando la variable **Animales** se agrega a la variable **Productos** page, el valor `stockphotography:animals` se añade a la propiedad `cq:tags` del nodo `/content/wknd/en/products/jcr:content`. Se hace referencia a la traducción desde el nodo tag .
 
@@ -159,7 +159,7 @@ Para el etiquetado, la localización depende del contexto como etiqueta `titles`
 
 ### Adición de un nuevo idioma al cuadro de diálogo Editar etiqueta {#adding-a-new-language-to-the-edit-tag-dialog}
 
-El siguiente procedimiento describe cómo agregar un nuevo idioma (por ejemplo, finés) al **Edición de etiquetas** diálogo:
+El siguiente procedimiento describe cómo añadir un nuevo idioma (por ejemplo, finés) al **Edición de etiquetas** diálogo:
 
 1. En **CRXDE**, editar la propiedad de varios valores `languages` del nodo `/content/cq:tags`.
 1. Agregar `fi_fi`, que representa la configuración regional finlandesa, y guarde los cambios.

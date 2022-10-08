@@ -2,10 +2,10 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 100%
+source-wordcount: '2157'
+ht-degree: 97%
 
 ---
 
@@ -58,7 +58,7 @@ Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha 
 
 El aspecto y el control dependerán del tipo de dispositivo que esté utilizando:
 
-* **Dispositivo móvil (por ejemplo, un iPad)**
+* **Dispositivo móvil (por ejemplo, iPad)**
 
    El navegador de componentes cubre totalmente la página que se esté editando.
 
@@ -230,7 +230,7 @@ Seleccione el tipo de referencia apropiado para obtener más información. En de
 
 ## Eventos: línea de tiempo {#events-timeline}
 
-Para obtener los recursos adecuados (p. ej. páginas de la consola **Sitios** o recursos de la consola **Recursos**) se puede utilizar la [cronología para mostrar la actividad reciente de cualquier elemento seleccionado](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+Para obtener los recursos adecuados (por ejemplo, páginas de la variable **Sitios** consola o recursos de **Recursos** consola) [la cronología se puede usar para mostrar la actividad reciente de cualquier elemento seleccionado](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
 Abra la consola en cuestión, desplácese hasta el recurso y abra **Cronología** con el procedimiento siguiente:
 
@@ -282,7 +282,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* En función de las características de la página, es posible que algunos modos no estén disponibles.
 >* El acceso a algunos modos requiere los permisos/privilegios correspondientes.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a limitaciones de espacio.
->* Existe un [atajo de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (p. ej. **Editar**, **Diseño**, etc.).
+>* Hay un [combinación de teclas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).
 >
 
 

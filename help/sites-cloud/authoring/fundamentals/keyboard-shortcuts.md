@@ -2,10 +2,10 @@
 title: Atajos de teclado para editar páginas
 description: Hay varios métodos abreviados del teclado disponibles mediante AEM, incluidos algunos para la edición de páginas
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 82%
+source-wordcount: '238'
+ht-degree: 76%
 
 ---
 
@@ -21,7 +21,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 | Lugar de residencia | Método abreviado | Descripción |
 |---|---|---|
-| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Vista preliminar** y el [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> seleccionado actualmente (p. ej., **Editar**, **Diseño**, etc.).* |
+| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Vista previa** y el [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (por ejemplo, **Editar**, **Diseño**, etc.* |
 | Modo de **edición** | `Ctrl-z` | [Deshacer el último cambio](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rehacer el último cambio](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleccionar varios párrafos |

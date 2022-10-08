@@ -2,16 +2,16 @@
 title: Externalización de direcciones URL
 description: El externalizador es un servicio OSGi que le permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 28903c1cbadece9d0ef575cdc0f0d7fd32219538
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
 
 # Externalización de direcciones URL {#externalizing-urls}
 
-En AEM, la variable **Externalizador** es un servicio OSGi que le permite transformar mediante programación una ruta de recursos (p. ej. `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) añadiendo un prefijo a la ruta con un DNS preconfigurado.
+En AEM, la variable **Externalizador** es un servicio OSGi que le permite transformar mediante programación una ruta de recursos (por ejemplo, `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) añadiendo un prefijo a la ruta con un DNS preconfigurado.
 
 Dado que una instancia as a Cloud Service AEM no puede saber su URL visible externamente y que a veces se debe crear un vínculo fuera del ámbito de la solicitud, este servicio proporciona un lugar central para configurar esas URL externas y crearlas.
 
@@ -68,7 +68,7 @@ Para definir una asignación de dominio para el servicio externalizador:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
-   Donde:
+   donde:
 
    * **`scheme`** generalmente es http o https, pero puede ser otro protocolo.
 

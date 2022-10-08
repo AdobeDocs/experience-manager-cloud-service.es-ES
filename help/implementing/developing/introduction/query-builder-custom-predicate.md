@@ -2,9 +2,9 @@
 title: Implementación de un evaluador de predicados personalizado para el generador de consultas
 description: El Generador de consultas en AEM ofrece una forma fácil y personalizable de consultar el repositorio de contenido
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Un predicado personalizado también podría realizar otras cosas no directamente
 
 Un evaluador predicado gestiona la evaluación de ciertos predicados, que son las restricciones de definición de una consulta.
 
-Asigna una restricción de búsqueda de nivel superior (por ejemplo, `width>200`) a una consulta JCR específica que se ajuste al modelo de contenido real (p. ej. `metadata/@width > 200`). O puede filtrar manualmente los nodos y comprobar sus restricciones.
+Asigna una restricción de búsqueda de nivel superior (por ejemplo, `width>200`) a una consulta JCR específica que se ajuste al modelo de contenido real (por ejemplo, `metadata/@width > 200`). O puede filtrar manualmente los nodos y comprobar sus restricciones.
 
 >[!TIP]
 >

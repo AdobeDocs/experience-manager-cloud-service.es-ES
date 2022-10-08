@@ -2,9 +2,9 @@
 title: Migración al complemento AEM Commerce Integration Framework (CIF)
 description: Cómo migrar al complemento AEM Commerce Integration Framework (CIF) desde una versión antigua
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 45%
 
 ---

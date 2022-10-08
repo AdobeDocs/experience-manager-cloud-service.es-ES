@@ -2,9 +2,9 @@
 title: Uso de bibliotecas del lado del cliente en AEM as a Cloud Service
 description: AEM proporciona carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente (clientlibs) en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2566'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ Para las bibliotecas de cliente en `/apps` para que sea accesible, se utiliza un
 1. Para que las bibliotecas de cliente sean accesibles a través del proxy en `/etc.clientlibs`, seleccione `cq:ClientLibraryFolder` , agregue la siguiente propiedad y, a continuación, haga clic en **Guardar todo**:
    * Nombre: `allowProxy`
    * Tipo: Boolean (booleano)
-   * Value: `true`
+   * Valor: `true`
 1. Si necesita administrar los recursos estáticos, cree una subcarpeta con el nombre `resources` debajo de la carpeta de biblioteca del cliente.
    * Si almacena recursos estáticos en la carpeta `resources`, no se puede hacer referencia a ellos en una instancia de publicación.
 1. Agregue archivos de origen a la carpeta de la biblioteca.
@@ -348,5 +348,5 @@ YUI se establece como minificador predeterminado en AEM. Para cambiar esto a GCC
 1. Busque y edite el **Administrador de biblioteca de HTML de Adobe Granite**.
 1. Active la variable **Minificar** (si no está activada).
 1. Establezca el valor **Configuraciones predeterminadas del procesador JS** a `min:gcc`.
-   * Las opciones se pueden pasar si se separan con un punto y coma, por ejemplo `min:gcc;obfuscate=true`.
+   * Las opciones se pueden pasar si se separan con un punto y coma, por ejemplo, `min:gcc;obfuscate=true`.
 1. Haga clic en **Guardar** para guardar los cambios.
