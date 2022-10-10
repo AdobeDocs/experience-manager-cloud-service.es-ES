@@ -2,12 +2,13 @@
 title: Uso de bibliotecas del lado del cliente en AEM as a Cloud Service
 description: AEM proporciona carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente (clientlibs) en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2568'
 ht-degree: 1%
 
 ---
+
 
 # Uso de bibliotecas del lado del cliente en AEM as a Cloud Service {#using-client-side-libraries}
 
@@ -55,7 +56,7 @@ Una carpeta de biblioteca del lado del cliente es un nodo de repositorio del tip
 
 Cada `cq:ClientLibraryFolder` se rellena con un conjunto de archivos JS o CSS, junto con algunos archivos de apoyo (consulte a continuación). Propiedades importantes de la variable `cq:ClientLibraryFolder` se configuran de la siguiente manera:
 
-* `allowProxy`: Ya que todas las clientlibs deben almacenarse en `apps`, esta propiedad permite el acceso a las bibliotecas de cliente mediante el servlet proxy. Consulte [Localización de una carpeta de biblioteca de cliente y uso del servlet de bibliotecas de cliente proxy](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) más abajo.
+* `allowProxy`: Ya que todas las clientlibs deben almacenarse en `apps`, esta propiedad permite acceder a las bibliotecas de cliente a través del servlet proxy. Consulte la sección [Localización de una carpeta de biblioteca de cliente y uso del servlet de bibliotecas de cliente proxy](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) más abajo.
 * `categories`: Identifica las categorías en las que el conjunto de archivos JS o CSS dentro de esta `cq:ClientLibraryFolder` otoño. La variable `categories` , al tener varios valores, permite que una carpeta de biblioteca forme parte de más de una categoría (consulte a continuación para obtener información sobre su utilidad).
 
 Si la carpeta de la biblioteca del cliente contiene uno o más archivos de origen que, durante la ejecución, se combinan en un solo archivo JS o CSS. El nombre del archivo generado es el nombre del nodo con la variable `.js` o `.css` extensión de nombre de archivo. Por ejemplo, el nodo de biblioteca denominado `cq.jquery` tiene como resultado el archivo generado llamado `cq.jquery.js` o `cq.jquery.css`.
@@ -87,7 +88,7 @@ Para las bibliotecas de cliente en `/apps` para que sea accesible, se utiliza un
    * Tipo: Boolean (booleano)
    * Valor: `true`
 1. Si necesita administrar los recursos estáticos, cree una subcarpeta con el nombre `resources` debajo de la carpeta de biblioteca del cliente.
-   * Si almacena recursos estáticos en la carpeta `resources`, no se puede hacer referencia a ellos en una instancia de publicación.
+   * Si almacena recursos estáticos en cualquier lugar que no esté en la carpeta `resources`, no se puede hacer referencia a ellos en una instancia de publicación.
 1. Agregue archivos de origen a la carpeta de la biblioteca.
    * Esto lo suele hacer el proceso de compilación del front-end de la variable [AEM tipo de archivo del proyecto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * Si lo desea, puede organizar los archivos de origen en subcarpetas.
@@ -211,7 +212,7 @@ La incrustación de código es útil para proporcionar acceso a las bibliotecas 
 
 #### Carpetas de biblioteca de cliente específicas de la aplicación {#app-specific-client-library-folders}
 
-Se recomienda mantener todos los archivos relacionados con la aplicación en su carpeta de aplicación debajo de /apps. También es una práctica recomendada denegar el acceso a la carpeta /apps a los visitantes de un sitio web. Para satisfacer ambas prácticas recomendadas, cree una carpeta de biblioteca de cliente debajo de la carpeta /etc que incrusta la biblioteca de cliente que se encuentra debajo de /apps.
+Se recomienda mantener todos los archivos relacionados con la aplicación en la carpeta de la aplicación siguiente `/apps`. También es una práctica recomendada denegar el acceso de los visitantes del sitio web al `/apps` carpeta. Para satisfacer ambas prácticas recomendadas, cree una carpeta de biblioteca de cliente debajo de la variable `/etc` carpeta que incrusta la biblioteca de cliente que se encuentra a continuación `/apps`.
 
 Utilice la propiedad categories para identificar la carpeta de biblioteca de cliente que desea incrustar. Para incrustar la biblioteca, agregue una propiedad a la incrustación `cq:ClientLibraryFolder` utilizando los siguientes atributos de propiedad:
 
