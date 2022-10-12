@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 01d54ba56ccab372396829a012c4da8ef4a57fe2
 workflow-type: tm+mt
-source-wordcount: '3763'
+source-wordcount: '3797'
 ht-degree: 16%
 
 ---
@@ -66,7 +66,9 @@ A continuación se describen las distintas funciones que se deben configurar y l
 
 ### Arquitectura de recursos conectados {#connected-assets-architecture}
 
-El Experience Manager le permite conectar una implementación remota de DAM como fuente a varios Experience Manager [!DNL Sites] implementaciones. Puede conectar un máximo de cuatro [!DNL Sites] implementaciones en un DAM remoto de origen. Sin embargo, puede conectar un [!DNL Sites] implementación con solo una implementación remota de DAM.
+El Experience Manager le permite conectar una implementación remota de DAM como fuente a varios Experience Manager [!DNL Sites] implementaciones. Sin embargo, puede conectar un [!DNL Sites] implementación con solo una implementación remota de DAM.
+
+Evalúe el número óptimo de instancias de Sites para conectarse a una implementación remota de DAM. Adobe recomienda conectar de forma incremental las instancias de Sites a la implementación y probar que no hay ningún impacto en el rendimiento en el DAM remoto, ya que cada instancia de Sites conectada contribuye al tráfico de datos en el DAM remoto.
 
 Los siguientes diagramas ilustran los escenarios admitidos:
 
@@ -261,9 +263,9 @@ Configure la función Recursos conectados solo cuando necesite utilizar los recu
 
 +++
 
-+++**Cuántos [!DNL Sites] las implementaciones pueden conectarse a una implementación de DAM remota después de configurar los recursos conectados?**
++++**¿Se pueden conectar varias [!DNL Sites] implementaciones en una implementación remota de DAM después de configurar los recursos conectados?**
 
-Puede conectar un máximo de cuatro [!DNL Sites] implementaciones en una implementación de DAM remota después de configurar los recursos conectados. Para obtener más información, consulte [Arquitectura de recursos conectados](#connected-assets-architecture).
+Sí, puede conectar varias [!DNL Sites] implementaciones en una implementación de DAM remota después de configurar los recursos conectados. Para obtener más información, consulte [Arquitectura de recursos conectados](#connected-assets-architecture).
 
 +++
 
