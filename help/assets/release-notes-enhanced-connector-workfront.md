@@ -2,9 +2,9 @@
 title: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
+source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '619'
 ht-degree: 2%
 
 ---
@@ -15,24 +15,19 @@ En la siguiente sección se describen las notas de la versión generales de [!DN
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de la última versión 1.9.3 de [!DNL Workfront for Experience Manager enhanced connector] es 16 de septiembre de 2022.
+La fecha de la versión de la última versión 1.9.4 de [!DNL Workfront for Experience Manager enhanced connector] es 7 de octubre de 2022.
 
 ## Elementos destacados de la versión {#release-highlights}
 
 La última versión de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes mejoras y correcciones de errores:
 
-* No se puede cargar un archivo de más de 8 GB de tamaño.
-* Problemas durante la publicación automática de recursos que se envían de Workfront a AEM.
-* El campo Ruta de acceso raíz no está disponible para el campo Etiquetas mientras se edita un formulario de esquema de metadatos predeterminado.
-* Problemas al agregar nuevas versiones en Workfront mediante flujos de trabajo AEM.
-* Cuando se ejecuta una búsqueda AEM de recursos disponibles en Workfront, AEM muestra un mensaje de error.
-* Cuando se crea un flujo de trabajo AEM para la creación de tareas a partir de un recurso y no se define un nombre de tarea principal, la tarea no se crea en Workfront.
+* No se puede ver la pestaña Suscripciones de eventos en la página de configuración del conector mejorado debido a un gran número de eventos.
 
-
+* Workfront no puede recuperar la lista de carpetas existentes en un proyecto, lo que provoca la creación de carpetas duplicadas.
 
 >[!IMPORTANT]
 >
->Adobe recomienda que [actualizar a la última versión 1.9.3](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recomienda que [actualizar a la última versión 1.9.4](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conocidos {#known-issues}
 
@@ -43,6 +38,17 @@ La última versión de [!DNL Workfront for Experience Manager enhanced connector
 * Workfront muestra un `SERVER_ERROR` al vincular documentos a AEM después de actualizar a la versión 8316. Para resolver el problema, asigne `rep:readProperties` a `content/dam/collections` para `wf-workfront-user` AEM grupo de usuarios.
 
 ## Versiones anteriores {#previous-releases}
+
+### Versión de septiembre de 2022 {#september-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] La versión 1.9.3, publicada el 16 de septiembre, incluye las siguientes actualizaciones:
+
+* No se puede cargar un archivo de más de 8 GB de tamaño.
+* Problemas durante la publicación automática de recursos que se envían de Workfront a AEM.
+* El campo Ruta de acceso raíz no está disponible para el campo Etiquetas mientras se edita un formulario de esquema de metadatos predeterminado.
+* Problemas al agregar nuevas versiones en Workfront mediante flujos de trabajo AEM.
+* Cuando se ejecuta una búsqueda AEM de recursos disponibles en Workfront, AEM muestra un mensaje de error.
+* Cuando se crea un flujo de trabajo AEM para la creación de tareas a partir de un recurso y no se define un nombre de tarea principal, la tarea no se crea en Workfront.
 
 ### Versión de agosto de 2022 {#august-2022-release}
 
