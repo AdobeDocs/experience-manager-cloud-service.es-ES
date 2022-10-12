@@ -8,9 +8,9 @@ user-guide-description: Recursos informativos y enlaces a la documentación sobr
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 115c98b207d3dea89cbeb3dbc8559a81efefe461
+source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3731'
 ht-degree: 97%
 
 ---
@@ -614,6 +614,7 @@ ht-degree: 97%
    + Integraciones {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
       + [Solución de comercio de terceros](/help/commerce-cloud/integrating/third-party.md)
+      + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
       + [Introducción](/help/commerce-cloud/getting-started.md)
       + Creación {#authoring}
