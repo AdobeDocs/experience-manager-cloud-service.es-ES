@@ -3,10 +3,10 @@ title: Dispatcher en la nube
 description: Dispatcher en la nube
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 6%
+source-wordcount: '998'
+ht-degree: 7%
 
 ---
 
@@ -50,11 +50,24 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 Las herramientas de Dispatcher se utilizan para validar y depurar la configuración de Dispatcher de su proyecto. Obtenga más información sobre cómo utilizar estas herramientas en las páginas a las que se hace referencia a continuación, en función de si la configuración de Dispatcher del proyecto está estructurada en modo flexible o en modo heredado:
 
-* **Modo flexible** - el modo recomendado y el valor predeterminado de [AEM arquetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) y superior, que también utiliza Cloud Manager para los nuevos entornos creados después de la versión Cloud Manager 2021.7.0. Los clientes pueden activar este modo añadiendo la carpeta y el archivo `opt-in/USE_SOURCES_DIRECTLY`. Al utilizar este modo más flexible, no hay limitaciones en la estructura de archivos de la carpeta de reescrituras que en el modo heredado requirieran una única `rewrite.rules` archivo. Además, no hay limitación en el número de reglas que se pueden agregar. Para obtener más información sobre la estructura de carpetas y la validación local, consulte [Validación y depuración mediante las herramientas de Dispatcher](/help/implementing/dispatcher/validation-debug.md).
+* **Modo flexible** - el modo recomendado y el valor predeterminado de [AEM arquetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) y superior, que también utiliza Cloud Manager para los nuevos entornos creados después de la versión Cloud Manager 2021.7.0. Los clientes pueden activar este modo añadiendo la carpeta y el archivo `opt-in/USE_SOURCES_DIRECTLY`. Al utilizar este modo más flexible, no hay limitaciones en la estructura de archivos de la carpeta de reescrituras que en el modo heredado requirieran una única `rewrite.rules` archivo. Además, no hay limitación en el número de reglas que se pueden agregar. Para obtener más información sobre la estructura de carpetas y la validación local, consulte [Validación y depuración mediante las herramientas de Dispatcher](/help/implementing/dispatcher/validation-debug.md).
 
 * **Modo heredado** : para obtener más información sobre la estructura de carpetas y la validación local para el modo heredado de configuración de Dispatcher, consulte [Validación y depuración mediante las herramientas de Dispatcher (heredadas)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 Para obtener más información sobre cómo migrar del modelo de configuración heredado al más flexible, proporcionado con AEM tipo de archivo 28 en adelante, consulte [esta documentación](/help/implementing/dispatcher/validation-debug.md#migrating).
+
+## Disposición de contenido {#content-disposition}
+
+Para el nivel de publicación, el valor predeterminado para los blobs es como archivo adjunto. Esto se puede sobrescribir con el estándar [encabezado de disposición de contenido](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) en el despachante.
+
+A continuación, se muestra un ejemplo de cómo debería ser la configuración:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## Módulos Apache compatibles {#supported-directives}
 

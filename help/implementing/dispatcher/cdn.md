@@ -3,10 +3,10 @@ title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 95ec89fa4bb71a63121bc86a74a15cc7812ae342
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 7%
+source-wordcount: '1117'
+ht-degree: 8%
 
 ---
 
@@ -122,19 +122,6 @@ A continuación se presentan varios ejemplos de configuración de varios proveed
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
-
-## Disposición de contenido {#content-disposition}
-
-Para el nivel de publicación, el valor predeterminado para los blobs es como archivo adjunto. Esto se puede sobrescribir con el estándar [encabezado de disposición de contenido](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) en el despachante.
-
-A continuación, se muestra un ejemplo de cómo debería ser la configuración:
-
-```
-<LocationMatch "^\/content\/dam.*\.(pdf).*">
- Header unset Content-Disposition
- Header set Content-Disposition inline
-</LocationMatch>
-```
 
 ## Encabezados de geolocalización {#geo-headers}
 
