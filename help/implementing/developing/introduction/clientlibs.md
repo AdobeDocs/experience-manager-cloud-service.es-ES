@@ -2,9 +2,9 @@
 title: Uso de bibliotecas del lado del cliente en AEM as a Cloud Service
 description: AEM proporciona carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente (clientlibs) en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
+source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2567'
 ht-degree: 1%
 
 ---
@@ -114,7 +114,7 @@ Una vez que la carpeta de la biblioteca del cliente esté [configurado según se
 
 La variable `allowProxy` permite solicitar:
 
-* La clientlib a través de j`/etc.clientlibs/myprojects/clientlibs/foo.js`
+* La clientlib vía `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * La imagen estática a través de `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
 
 ### Carga de bibliotecas de cliente mediante HTL {#loading-via-htl}
