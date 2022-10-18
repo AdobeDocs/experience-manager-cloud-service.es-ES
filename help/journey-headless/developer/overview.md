@@ -1,12 +1,12 @@
 ---
 title: recorrido para desarrolladores AEM sin encabezado
-description: Aprenda a desarrollar su proyecto para la entrega de contenido sin encabezado mediante Adobe Experience Manager (AEM) as a Headless CMS. Aprenda a utilizar funciones como modelos de contenido, fragmentos de contenido y una API de GraphQL para potenciar experiencias sin objetivos.
+description: Obtenga información sobre el desarrollo sin objetivos mediante Adobe Experience Manager (AEM) as a Headless CMS. Aprenda a utilizar funciones como modelos de contenido, fragmentos de contenido y una API de GraphQL para potenciar la entrega de contenido sin encabezado.
 landing-page-description: Obtenga información sobre la entrega e implementación de contenido sin encabezado. Obtenga más información sobre el desarrollo de su estrategia dentro de su empresa.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2d0856b7370b6b50935378ad26c7361e95820f4d
+source-git-commit: 8932a8f158fe478d23457ac24afdd17f05a048f5
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 26%
+source-wordcount: '1268'
+ht-degree: 27%
 
 ---
 
