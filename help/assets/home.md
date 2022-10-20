@@ -19,7 +19,7 @@ Obtenga información sobre [!DNL AEM Assets as a Cloud Service] y obtenga inform
 ## Clave [!DNL Assets] artículos {#key-articles}
 
 * [Información general y novedades](overview.md)
-* [Cambios importantes](/help/assets/assets-cloud-changes.md)
+* [Cambios importantes ](/help/assets/assets-cloud-changes.md)
 * [Arquitectura de [!DNL Assets] como [!DNL Cloud Service]](architecture.md)
 * [Información general sobre los microservicios de recursos](/help/assets/asset-microservices-overview.md)
 
