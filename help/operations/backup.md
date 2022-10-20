@@ -2,9 +2,9 @@
 title: Restauración de contenidos en AEM as a Cloud Service
 description: Obtenga información sobre cómo restaurar el contenido de AEM as a Cloud Service desde la copia de seguridad mediante Cloud Manager.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
+source-git-commit: a32b8d94be8119854e21fc89456474ac554082a3
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1262'
 ht-degree: 80%
 
 ---
@@ -41,7 +41,7 @@ En ambos casos, la versión del código personalizado y la versión AEM permanec
 Las métricas de rendimiento para restaurar contenido en AEM as a ContentService hacen referencia a los puntos de referencia estandarizados:
 
 * **Objetivo de tiempo de recuperación (RTO):** El objetivo de tiempo de recuperación varía en función del tamaño del repositorio, pero como regla general, una vez que comienza la secuencia de recuperación, debe tardar unos 30 minutos.
-* **El objetivo de punto de recuperación (RPO):** El objetivo del punto de recuperación depende de cuánto tiempo haya estado operando la instancia:
+* **El objetivo de punto de recuperación (RPO):** El objetivo del punto de recuperación depende de hasta dónde en el pasado el tiempo de restauración seleccionado sea:
    * para las primeras 24 horas de funcionamiento: cualquier punto en el tiempo durante esas 24 horas.
    * después de las 24 horas iniciales: un máximo de 12 horas para los seis días anteriores.
 
