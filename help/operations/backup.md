@@ -2,10 +2,10 @@
 title: Restauración de contenidos en AEM as a Cloud Service
 description: Obtenga información sobre cómo restaurar el contenido de AEM as a Cloud Service desde la copia de seguridad mediante Cloud Manager.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
+source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 89%
+source-wordcount: '1259'
+ht-degree: 80%
 
 ---
 
@@ -36,12 +36,14 @@ Cloud Manager ofrece dos tipos de copias de seguridad desde las que puede restau
 * **Punto en el tiempo (PIT):** Este tipo restaura los backups continuos del sistema desde las últimas 24 horas desde el momento actual.
 * **Última semana:** este tipo restaura de las copias de seguridad del sistema en los últimos siete días, excluyendo las 24 horas anteriores.
 
-En ambos casos, la versión del código personalizado y de AEM permanecen sin cambios.
+En ambos casos, la versión del código personalizado y la versión AEM permanecen sin cambios.
 
 Las métricas de rendimiento para restaurar contenido en AEM as a ContentService hacen referencia a los puntos de referencia estandarizados:
 
 * **Objetivo de tiempo de recuperación (RTO):** El objetivo de tiempo de recuperación varía en función del tamaño del repositorio, pero como regla general, una vez que comienza la secuencia de recuperación, debe tardar unos 30 minutos.
-* **El objetivo de punto de recuperación (RPO):** El objetivo del punto de recuperación es de 24 horas como máximo
+* **El objetivo de punto de recuperación (RPO):** El objetivo del punto de recuperación depende de cuánto tiempo haya estado operando la instancia:
+   * para las primeras 24 horas de funcionamiento: cualquier punto en el tiempo durante esas 24 horas.
+   * después de las 24 horas iniciales: un máximo de 12 horas para los seis días anteriores.
 
 >[!TIP]
 >
@@ -55,13 +57,13 @@ El uso del mecanismo de restauración de autoservicio está sujeto a las siguien
 * Se permiten un máximo de diez restauraciones exitosas en todos los entornos de un programa por mes calendario.
 * Después de la creación del entorno, la primera instantánea de copia de seguridad tarda seis horas en producirse. Hasta que se genera esta, no se puede llevar a cabo ninguna restauración en el entorno.
 * Una operación de restauración no se iniciará si hay una pila completa o una canalización de configuración de nivel web que se esté ejecutando para el entorno.
-* No se puede iniciar una restauración si ya se está ejecutando otra en el mismo entorno.
+* No se puede iniciar una restauración si ya se está ejecutando otra restauración en el mismo entorno.
 * En casos excepcionales, debido al límite de copias de seguridad de 24 horas y siete días, es posible que la copia de seguridad seleccionada no esté disponible por un retraso entre el momento en que se seleccionó y el momento en que se inició la restauración.
 * Los datos de los entornos eliminados se pierden de forma permanente y no se pueden recuperar.
 
 ## Restauración de contenido {#restoring-content}
 
-En primer lugar, determine el lapso de tiempo del contenido que desea restaurar. A continuación, para restaurar el contenido de su entorno desde una copia de seguridad, siga estos pasos.
+Primero, determine el lapso de tiempo del contenido que desea restaurar. A continuación, para restaurar el contenido de su entorno desde una copia de seguridad, siga estos pasos.
 
 >[!NOTE]
 >
@@ -112,7 +114,7 @@ Cuando la restauración se complete correctamente, el entorno hará lo siguiente
 
 ## Elección de la copia de seguridad adecuada {#choosing-backup}
 
-Restaura solo el contenido de restauración en AEM. Por este motivo, debe tener en cuenta cuidadosamente los cambios que se hayan realizado en el código entre el punto de restauración deseado y el momento actual revisando el historial de compromiso entre su ID de compromiso actual y el que se está restaurando.
+Restaura solo el contenido de restauración en AEM. Por este motivo, debe considerar cuidadosamente los cambios de código que se hayan realizado entre el punto de restauración deseado y el momento actual revisando el historial de confirmación entre el ID de confirmación actual y el que se está restaurando.
 
 Existen varios escenarios.
 
