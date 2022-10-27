@@ -2,9 +2,9 @@
 title: Referencia de predicados del generador de consultas
 description: Referencia de predicado para la API de Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
 workflow-type: tm+mt
-source-wordcount: '2221'
+source-wordcount: '2268'
 ht-degree: 2%
 
 ---
@@ -244,10 +244,12 @@ No admite la extracción de facetas.
 * **`path`** - Define el patrón de ruta.
    * Según el `exact` , coincidirá todo el subárbol (como anexar `//*` en xpath, pero tenga en cuenta que esto no incluye la ruta base) o solo coincide una ruta exacta, que puede incluir caracteres comodín (`*`).
       * El valor predeterminado es `true`
-   * Si la variable `self`, se buscará en todo el subárbol, incluido el nodo base.
+
+<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`** - si `exact` es `true`, la ruta exacta debe coincidir, pero puede contener comodines simples (`*`), que coinciden con los nombres, pero no con `/`; si es `false` (predeterminado) se incluyen todos los descendientes (opcional)
 * **`flat`** - busca solo los elementos secundarios directos (como anexar `/*` en xpath (solo se usa si `exact` no es verdadero, opcional)
-* **`self`** - busca en el subárbol pero incluye el nodo base dado como ruta (sin comodines)
+* **`self`** - busca en el subárbol pero incluye el nodo base dado como ruta (sin comodines).
+   * *Nota importante*: Se ha identificado un problema con `self` en la implementación actual de querybuilder y utilizarla en consultas puede no producir resultados de búsqueda correctos. Cambio de la implementación actual de `self` tampoco es factible, ya que podría romper las aplicaciones existentes que dependen de ella. Debido a esto, `self` se ha desaprobado y se recomienda evitar usarla.
 
 ### propiedad {#property}
 
