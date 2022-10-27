@@ -3,19 +3,19 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: Almacenamiento en caché en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 42c1d4fcfef4487aca6225821c16304ccf4deb04
+source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2580'
 ht-degree: 1%
 
 ---
 
 # Introducción {#intro}
 
-El tráfico pasa a través de la CDN a una capa de servidor web Apache, que admite módulos, incluido el Dispatcher. Para aumentar el rendimiento, Dispatcher se utiliza principalmente como caché para limitar el procesamiento en los nodos de publicación.
+El tráfico pasa a través de la CDN a una capa de servidor web Apache, que admite módulos, incluido Dispatcher. Para aumentar el rendimiento, Dispatcher se utiliza principalmente como caché para limitar el procesamiento en los nodos de publicación.
 Se pueden aplicar reglas a la configuración de Dispatcher para modificar cualquier configuración de caducidad de caché predeterminada, lo que resulta en el almacenamiento en caché en la CDN. Tenga en cuenta que Dispatcher también respeta los encabezados de caducidad de caché resultantes si `enableTTL` está habilitado en la configuración de Dispatcher, lo que implica que actualizará contenido específico incluso fuera del contenido que se está republicando.
 
-Esta página también describe cómo se invalida la caché de Dispatcher, así como cómo funciona el almacenamiento en caché a nivel de explorador con respecto a las bibliotecas del lado del cliente.
+Esta página también describe cómo se invalida la caché de Dispatcher y cómo funciona el almacenamiento en caché a nivel de explorador con respecto a las bibliotecas del lado del cliente.
 
 ## Almacenamiento en caché {#caching}
 
@@ -31,7 +31,7 @@ Define DISABLE_DEFAULT_CACHING
 Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere un ajuste preciso del encabezado de la página (con un valor basado en el día del calendario), ya que de forma predeterminada el encabezado de la página está establecido en 0. Dicho esto, **tenga cuidado al desactivar el almacenamiento en caché predeterminado.**
 
 * se puede anular para todo el contenido de texto o HTML definiendo la variable `EXPIRATION_TIME` en `global.vars` uso de las AEM herramientas as a Cloud Service de SDK Dispatcher.
-* se puede sobrescribir en un nivel más preciso, incluido el control de la CDN y la caché del navegador de forma independiente, con las siguientes directivas apache mod_headers :
+* puede anularse en un nivel más preciso, incluido el control de la CDN y la caché del navegador de forma independiente, con el siguiente Apache `mod_headers` directivas:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -44,7 +44,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
    >[!NOTE]
    >El encabezado Surrogate-Control se aplica a la CDN administrada por Adobe. Si utiliza un [CDN gestionada por el cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), es posible que se requiera un encabezado diferente en función de su proveedor de CDN.
 
-   Tenga cuidado al configurar los encabezados de control de caché globales o los que coinciden con un regex amplio para que no se apliquen a contenido que pueda tener la intención de mantener privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se apliquen de forma precisa. Dicho esto, AEM as a Cloud Service eliminará el encabezado de la caché si detecta que se ha aplicado a lo que detecta que es inaccesible para Dispatcher, como se describe en la documentación de Dispatcher. Para obligar a los AEM a aplicar siempre los encabezados de almacenamiento en caché, se puede añadir la variable **always** como se indica a continuación:
+   Tenga cuidado al configurar encabezados de control de caché globales o aquellos que coinciden con un regex amplio para que no se apliquen a contenido que necesita mantener privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se apliquen de forma precisa. Dicho esto, AEM as a Cloud Service eliminará el encabezado de la caché si detecta que se ha aplicado a lo que detecta que Dispatcher no puede almacenar en caché, tal como se describe en la documentación de Dispatcher. Para obligar a los AEM a aplicar siempre los encabezados de almacenamiento en caché, se puede añadir la variable **always** como se indica a continuación:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -76,7 +76,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
    >Los demás métodos, incluido el [dispatcher-ttl AEM proyecto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anulará correctamente los valores.
 
    >[!NOTE]
-   >Tenga en cuenta que Dispatcher puede seguir almacenando en caché el contenido según su propio [reglas de almacenamiento en caché](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Para que el contenido sea realmente privado, debe asegurarse de que Dispatcher no lo almacene en caché.
+   >Tenga en cuenta que Dispatcher puede seguir almacenando en caché el contenido según su propio [reglas de almacenamiento en caché](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Para que el contenido sea verdaderamente privado, debe asegurarse de que Dispatcher no lo almacene en caché.
 
 ### Bibliotecas de cliente (js, css) {#client-side-libraries}
 
@@ -87,7 +87,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
 
 El comportamiento predeterminado para los programas creados después de mediados de mayo de 2022 (específicamente, para los id de programa superiores a 65000) es almacenar en caché de forma predeterminada, respetando al mismo tiempo el contexto de autenticación de la solicitud. Los programas más antiguos (id de programa iguales o inferiores a 65000) no almacenan en caché el contenido del blob de forma predeterminada.
 
-En ambos casos, los encabezados de almacenamiento en caché se pueden sobrescribir en un nivel granulado más preciso en la capa apache/dispatcher mediante el uso de apache `mod_headers` directivas, por ejemplo:
+En ambos casos, los encabezados de almacenamiento en caché se pueden anular en un nivel más preciso en la capa Apache/Dispatcher mediante el uso de Apache `mod_headers` directivas, por ejemplo:
 
 ```
    <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -100,7 +100,7 @@ Al modificar los encabezados de almacenamiento en caché en la capa de Dispatche
 
 #### Nuevo comportamiento predeterminado de almacenamiento en caché {#new-caching-behavior}
 
-La capa AEM establecerá los encabezados de caché en función de si el encabezado de caché ya se ha establecido y el valor del tipo de solicitud. Tenga en cuenta que si no se ha establecido ningún encabezado de control de caché, el contenido público se almacena en caché y el tráfico autenticado se establece en privado. Si se ha establecido un encabezado de control de caché, los encabezados de caché no se tocarán.
+La capa AEM establecerá los encabezados de caché en función de si el encabezado de caché ya se ha establecido y el valor del tipo de solicitud. Tenga en cuenta que si no se ha establecido ningún encabezado de control de caché, el contenido público se almacena en caché y el tráfico autenticado se establece en privado. Si se ha establecido un encabezado de control de caché, los encabezados de caché se dejarán intactos.
 
 | ¿Existe el encabezado de control de caché? | Tipo de solicitud | AEM establece los encabezados de caché en |
 |------------------------------|---------------|------------------------------------------------|
@@ -195,17 +195,17 @@ La capa AEM no almacenará en caché el contenido del blob de forma predetermina
 
 ### Comportamiento de la solicitud del HEAD {#request-behavior}
 
-Cuando se recibe una solicitud de HEAD en la CDN de Adobe para un recurso que **not** en la caché, la solicitud se transforma y se recibe mediante la instancia de Dispatcher o AEM como una solicitud de GET. Si la respuesta se puede almacenar en caché, las solicitudes de HEAD posteriores se servirán desde la CDN. Si la respuesta no se puede almacenar en caché, las solicitudes de HEAD subsiguientes se pasarán a la instancia de Dispatcher o AEM durante un período de tiempo que depende de la variable `Cache-Control` TTL.
+Cuando se recibe una solicitud de HEAD en la CDN de Adobe para un recurso que **not** en la caché, la solicitud se transforma y se recibe mediante la instancia de Dispatcher o AEM como una solicitud de GET. Si la respuesta se puede almacenar en caché, las solicitudes de HEAD posteriores se servirán desde la CDN. Si la respuesta no se puede almacenar en caché, las solicitudes de HEAD posteriores se pasarán a la instancia de Dispatcher o AEM durante un período de tiempo que depende de la variable `Cache-Control` TTL.
 
 ## Invalidación de caché de Dispatcher {#disp}
 
-En general, no es necesario invalidar la caché de Dispatcher. En su lugar, debe confiar en que Dispatcher actualice su caché cuando el contenido se esté republicando y la CDN respete los encabezados de caducidad de la caché.
+En general, no es necesario invalidar la caché de Dispatcher. En su lugar, debe confiar en que Dispatcher actualice su caché cuando se vuelva a publicar el contenido y en que la CDN respete los encabezados de caducidad de la caché.
 
 ### Invalidación de caché de Dispatcher durante la activación/desactivación {#cache-activation-deactivation}
 
-Al igual que las versiones anteriores de AEM, la publicación o cancelación de la publicación de páginas borrará el contenido de la caché de Dispatcher. Si se sospecha un problema de almacenamiento en caché, los clientes deben volver a publicar las páginas en cuestión y asegurarse de que haya un host virtual disponible que coincida con el host local de ServerAlias, que es necesario para la invalidación de la caché de Dispatcher.
+Al igual que las versiones anteriores de AEM, al publicar o cancelar la publicación de páginas, se borra el contenido de la caché de Dispatcher. Si se sospecha que hay un problema con el almacenamiento en caché, los clientes deben volver a publicar las páginas en cuestión y asegurarse de que haya un host virtual disponible que coincida con la variable `ServerAlias` localhost, que es necesario para la invalidación de caché de Dispatcher.
 
-Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su despachante. La ruta actualizada se elimina de la caché de Dispatcher, junto con sus principales, hasta un nivel (puede configurarla con el [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
+Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su Dispatcher. La ruta actualizada se elimina de la caché de Dispatcher, junto con sus principales, hasta un nivel (puede configurarla con el [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
 ## Invalidación explícita de la caché de Dispatcher {#explicit-invalidation}
 
@@ -219,7 +219,7 @@ La siguiente lista contiene escenarios en los que puede que desee invalidar expl
 Existen dos métodos para invalidar explícitamente la caché:
 
 * El método preferido es usar Sling Content Distribution (SCD) de Author.
-* Mediante el uso de la API de replicación para invocar el agente de replicación de vaciado del despachante de publicación.
+* Mediante el uso de la API de replicación para invocar el agente de replicación de vaciado de Dispatcher de publicación.
 
 Los enfoques difieren en términos de disponibilidad del nivel, la capacidad de deduplicar eventos y la garantía de procesamiento de eventos. La tabla siguiente resume estas opciones:
 
@@ -297,11 +297,11 @@ Tenga en cuenta que las dos acciones directamente relacionadas con la invalidaci
 
 Además, desde la mesa, observamos que:
 
-* La API de SCD es necesaria cuando se debe garantizar cada evento, por ejemplo, sincronizándose con un sistema externo que requiera un conocimiento preciso. Tenga en cuenta que si hay un evento de ampliación del nivel de publicación en el momento de la llamada de invalidación, se generará un evento adicional cuando cada nueva publicación procese la invalidación.
+* La API de SCD es necesaria cuando se debe garantizar cada evento, por ejemplo, sincronizándose con un sistema externo que requiera un conocimiento preciso. Si hay un evento de ampliación del nivel de publicación en el momento de la llamada de invalidación, se genera un evento adicional cuando cada nueva publicación procesa la invalidación.
 
 * El uso de la API de replicación no es un caso de uso común, pero debe utilizarse en casos en los que el déclencheur para invalidar la caché proviene del nivel de publicación y no del de autor. Esto puede resultar útil si el TTL del distribuidor está configurado.
 
-En conclusión, si desea invalidar la caché del Dispatcher, la opción recomendada es utilizar la acción de invalidación de la API SCD de Author. Además, también puede escuchar el evento para luego realizar más déclencheur en las acciones posteriores.
+En conclusión, si desea invalidar la caché de Dispatcher, la opción recomendada es utilizar la acción de invalidación de la API SCD de Author. Además, también puede escuchar el evento para luego realizar más déclencheur en las acciones posteriores.
 
 ### Distribución de contenido de Sling (SCD) {#sling-distribution}
 
@@ -383,13 +383,13 @@ public class InvalidatedHandler implements EventHandler {
 
 >[!NOTE]
 >
->La CDN de Adobe no se vaciará cuando se invalide Dispatcher. La CDN gestionada por Adobe respeta los TTL y, por lo tanto, no es necesario vaciarla.
+>La CDN de Adobe no se vaciará cuando Dispatcher se invalide. La CDN gestionada por Adobe respeta los TTL y, por lo tanto, no es necesario vaciarla.
 
 ### API de replicación {#replication-api}
 
 A continuación se muestra el patrón de implementación al utilizar la acción de desactivación de la API de replicación:
 
-1. En el nivel de publicación, llame a la API de replicación para almacenar en déclencheur el agente de replicación de vaciado del despachante de publicación.
+1. En el nivel de publicación, llame a la API de replicación para almacenar en déclencheur el agente de replicación de vaciado de Dispatcher de publicación.
 
 El extremo del agente de vaciado no se puede configurar, sino que está preconfigurado para apuntar a Dispatcher, coincidiendo con el servicio de publicación que se ejecuta junto al agente de vaciado.
 
@@ -464,5 +464,5 @@ Para habilitar versiones clientlib estrictas en el SDK local Quickstart, realice
 1. Busque la configuración OSGi para el Administrador de biblioteca del HTML de Adobe Granite:
    * Marque la casilla de verificación para activar el control estricto de versiones
    * En el campo denominado Long term client side cache key, introduzca el valor de /.*;hash
-1. Guarde los cambios. Tenga en cuenta que no es necesario guardar esta configuración en el control de código fuente, ya que AEM as a Cloud Service habilitará automáticamente esta configuración en entornos de desarrollo, fase y producción.
+1. Guarde los cambios. No es necesario guardar esta configuración en el control de código fuente, ya que AEM as a Cloud Service habilita automáticamente esta configuración en entornos de desarrollo, fase y producción.
 1. Cada vez que se cambia el contenido de la biblioteca del cliente, se genera una nueva clave hash y se actualiza la referencia del HTML.
