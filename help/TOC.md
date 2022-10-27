@@ -8,7 +8,7 @@ user-guide-description: Recursos informativos y enlaces a la documentación sobr
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
+source-git-commit: 2e0aef129333eb99933bc0adfc8a753069bd656f
 workflow-type: tm+mt
 source-wordcount: '3731'
 ht-degree: 97%
@@ -140,7 +140,7 @@ ht-degree: 97%
       + [Asignación de perfiles de producto de Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md)
       + [Acceso a Cloud Manager](/help/journey-onboarding/cloud-manager.md)
       + [Crear un programa](/help/journey-onboarding/create-program.md)
-      + [Crear entornos](/help/journey-onboarding/create-environments.md)
+      + [Creación de entornos](/help/journey-onboarding/create-environments.md)
       + [Asignación AEM perfiles de producto](/help/journey-onboarding/assign-profiles-aem.md)
       + [Tareas del desarrollador y del administrador de implementación](/help/journey-onboarding/developers.md)
       + [Tareas del usuario AEM](/help/journey-onboarding/aem-users.md)
@@ -478,11 +478,11 @@ ht-degree: 97%
       + [Fin de vida útil de los visualizadores DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Integración con Adobe Workfront {#integrations}
       + [Integraciones con  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
+      + [Configuración de la asignación de metadatos de recursos](/help/assets/configure-asset-metadata-mapping.md)
       + [Instalación de  [!DNL enhanced connector]  para  [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Eliminación de dependencias externas para instalaciones existentes](/help/assets/remove-external-dependencies.md)
       + [Configuración de  [!DNL enhanced connector]  para  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Actualizar [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-      + [Configuración de la asignación de metadatos de recursos](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
    + [Introducción](/help/forms/home.md)
    + [Funciones principales](/help/forms/key-features.md)
