@@ -2,10 +2,10 @@
 title: Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido
 description: Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 98b81d918d60722ddb3f1c7736bc5b3506e05f6f
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 21%
+source-wordcount: '1597'
+ht-degree: 19%
 
 ---
 
@@ -26,13 +26,11 @@ Hay disponible una nueva versión de la herramienta de transferencia de contenid
 * Experiencia del usuario mejorada mediante mejores estados de carga, protecciones y gestión de errores
 * Los registros de ingesta se mantienen y siempre están disponibles para la resolución de problemas
 
-Para empezar a utilizar la nueva versión (v2.0.10), deberá desinstalar las versiones anteriores de la herramienta de transferencia de contenido. Esto es necesario porque la nueva versión viene con un cambio arquitectónico importante. Con la versión 2.0.10, deberá crear nuevos conjuntos de migración y volver a ejecutar la extracción y la ingesta en los nuevos conjuntos de migración. Si la migración ya está en curso, puede seguir utilizando la versión anterior de CTT hasta que se complete.
+Para empezar a utilizar la nueva versión, deberá desinstalar las versiones anteriores de la herramienta de transferencia de contenido. Esto es necesario porque la nueva versión viene con un cambio arquitectónico importante. Con la versión 2.0.10, deberá crear nuevos conjuntos de migración y volver a ejecutar la extracción y la ingesta en los nuevos conjuntos de migración. Si la migración ya está en curso, puede seguir utilizando la versión anterior de CTT hasta que se complete.
 
 Las siguientes directrices y prácticas recomendadas se aplican a la nueva versión de la herramienta de transferencia de contenido:
 
 * Es aconsejable ejecutar [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) y [las comprobaciones de coherencia del almacén de datos](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) en el repositorio de **origen** para identificar posibles problemas y reducir el tamaño del repositorio.
-
-* Si la configuración de la red de distribución de contenido (CDN) del Autor de AEM Cloud está configurada para tener una lista blanca de direcciones IP, debe asegurarse de que las direcciones IP de entorno de origen también se incluyan en la lista de permitidos para que el entorno de origen y el entorno de AEM Cloud puedan comunicarse entre sí.
 
 * En la fase de ingesta se recomienda ejecutarla mediante el modo de *borrado* activado, en el que el repositorio existente (autor o publicación) en el entorno de Cloud Service de AEM de destinatario se eliminará por completo y, a continuación, se actualizará con los datos del conjunto de migración. Este modo es mucho más rápido que el modo sin borrado, donde el conjunto de migración se aplica sobre el contenido  existente.
 
@@ -60,11 +58,11 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * Si está utilizando un *Entorno de espacio aislado*, compruebe que su entorno esté actualizado y actualizado a la versión más reciente. Si utiliza un *Entorno de producción*, se actualiza automáticamente.
 
-* Para utilizar la herramienta de transferencia de contenido, debe ser un usuario administrador en la instancia de origen y pertenecer a la AEM local **administradores** en la instancia de Cloud Service a la que está transfiriendo el contenido. Los usuarios sin privilegios no podrán iniciar las ingestas.
+* Para iniciar una ingesta, debe pertenecer a la AEM local **administradores** en la instancia de Cloud Service a la que está transfiriendo el contenido. Los usuarios sin privilegios no podrán iniciar las ingestas sin proporcionar manualmente el token de migración.
 
 * Si la configuración **Borrar el contenido existente en la instancia de Cloud antes de la ingesta** está activada, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece toda la configuración, incluidos los permisos, en la instancia de Cloud Service de destino. Esto también se aplica a los usuarios administradores agregados a la variable **administradores** grupo. El usuario debe añadirse de nuevo al **administradores** para recuperar el token de acceso para la herramienta de transferencia de contenido.
 
-* La herramienta de transferencia de contenido no admite la combinación de contenido de varias fuentes en la instancia de Cloud Service de destino si el contenido de las dos fuentes se mueve a las mismas rutas en el destino. Para mover contenido de varias fuentes a una sola instancia de Cloud Service de destino, debe asegurarse de que no haya superposición de las rutas de contenido de las fuentes.
+* Las entradas no admiten la combinación de contenido de varios orígenes en la instancia de Cloud Service de destino si el contenido de los dos orígenes se mueve a las mismas rutas en el destino. Para mover contenido de varias fuentes a una sola instancia de Cloud Service de destino, debe asegurarse de que no haya superposición de las rutas de contenido de las fuentes.
 
 * La clave de extracción es válida durante 14 días desde el momento en que se creó o renovó. Se puede renovar en cualquier momento. Si la clave de extracción ha caducado, no podrá realizar una extracción.
 
