@@ -2,9 +2,9 @@
 title: Replicación
 description: Distribución y resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
+source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1262'
 ht-degree: 95%
 
 ---
@@ -84,7 +84,7 @@ También puede conseguirlo creando un modelo de flujo de trabajo que utilice el 
 * `enableVersion` (valor booleano, predeterminado: `true`). Este parámetro determina si se crea una nueva versión tras la replicación.
 * `agentId` (valor de cadena, de forma predeterminada significa que solo se utilizan agentes para la publicación). Se recomienda ser explícito sobre agentId; por ejemplo, si se establece el valor: publicar. Configuración del agente en `preview` se publicará en el servicio de previsualización
 * `filters` (valor de cadena, predeterminado significa que todas las rutas están activadas). Los valores disponibles son los siguientes:
-   * `onlyActivated` - sólo se activarán las rutas marcadas como activadas.
+   * `onlyActivated` - Activar solo las páginas que (ya) están activadas. Actúa como una forma de reactivación.
    * `onlyModified` activar solo las rutas que ya están activadas y que tienen una fecha de modificación posterior a la fecha de activación.
    * Lo anterior puede ser ORed con una barra vertical &quot;|&quot;. Por ejemplo, `onlyActivated|onlyModified`.
 
