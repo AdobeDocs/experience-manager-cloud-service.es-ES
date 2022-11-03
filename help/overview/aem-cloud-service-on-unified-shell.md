@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service en Unified Shell
 description: AEM as a Cloud Service en Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
+source-git-commit: 53e22737e62835872e47ac07530078c3d1dfcf31
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 84%
+source-wordcount: '443'
+ht-degree: 65%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 84%
 
 ## Información general {#overview}
 
-AEM as a Cloud Service está integrado con Unified Shell para mejorar la experiencia del usuario y unificarla con todas las demás aplicaciones de Experience Cloud. El impacto de esta integración se puede ver en el encabezado superior de la aplicación, como se muestra a continuación.
+AEM as a Cloud Service (servicio de autor) está integrado con Unified Shell para mejorar la experiencia del usuario y unificarla con todas las demás aplicaciones de Experience Cloud. El impacto de esta integración se puede ver en el encabezado superior de la aplicación, como se muestra a continuación.
 
-![imagen](/help/overview/assets/unifiedshell1.png)
+![imagen](/help/overview/assets/unifiedshell_header.png)
 
 Los beneficios de esto son los siguientes:
 
@@ -58,6 +58,13 @@ Para cambiar al tema oscuro, haga clic en su icono de perfil. Se mostrará una v
 >El tema oscuro se aplica solo a Unified Shell (la barra superior).
 
 ![imagen](/help/overview/assets/unifiedshell4.png)
+
+## Identificación del entorno as a Cloud Service AEM {#identify-aemaacs-environment}
+
+AEM as a Cloud Service proporciona tres tipos de entornos: Producción, fase y desarrollo. Consulte [Tipos de entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) para obtener más información. Con esta integración con Unified Shell, el tipo de entorno en el que el usuario ha iniciado sesión en el servicio Autor se muestra en el encabezado superior mediante una etiqueta como se muestra a continuación.
+
+![imagen](/help/overview/assets/unifiedshell_header_label.png)
+
 
 ## Acceso a la bandeja de entrada AEM {#accessing-the-aem-inbox}
 
