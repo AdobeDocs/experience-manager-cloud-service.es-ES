@@ -3,7 +3,7 @@ title: Notas de la versión para Cloud Manager 2022.11.0 en Adobe Experience Man
 description: Estas son las notas de la versión para Cloud Manager 2022.11.0 en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b0d57f0ccfb80c8071026a53cab594cfced13497
+source-git-commit: 0b60b0954c98c5d10227b4db002e3c70f47b6901
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 40%
@@ -27,7 +27,7 @@ La fecha de la versión de Cloud Manager 2022.11.0 en AEM as a Cloud Service es 
 
 * El panel de licencias de la solución AEM Sites ahora mostrará los detalles del contrato, incluido si el inquilino está o no dentro de su suscripción.
 * Cuando un entorno asociado a una canalización tiene un estado que no permite que se ejecute la canalización, la acción de ejecución se desactiva con una información de objeto explicativa.
-* Se ha mejorado el mensaje a la interfaz de usuario cuando se utilizaba la variable **Agregar programa** está desactivado debido a que no hay suficientes derechos para el inquilino.
+* Se ha añadido un mensaje mejorado a la interfaz de usuario cuando la función **Agregar programa** está desactivado debido a que no hay suficientes derechos para el inquilino.
 
 ## Correcciones de errores {#bug-fixes}
 
