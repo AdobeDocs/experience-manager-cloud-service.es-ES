@@ -2,10 +2,10 @@
 title: API obsoletas
 description: Notas de la versión específicas de las API en desuso y eliminadas de  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: ed57f15e2e85d1b2d957d396f9d93725d389375c
+source-git-commit: 89a50c17c10a19b394db5709692fb065c19e878f
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 99%
+source-wordcount: '1076'
+ht-degree: 98%
 
 ---
 
@@ -203,6 +203,12 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
     <td>Esta API ya no es compatible. En su lugar, utilice org.apache.sling.api.resource.ResourceResolverFactory .</td>
     <td>29/9/2022</td>
     <td>24/11/2022</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>Esta API está en desuso. Utilice los compiladores de Apache Sling en su lugar.</td>
+    <td>31/10/2022</td>
+    <td>1/1/2023</td>
   </tr>
 </tbody>
 </table>
