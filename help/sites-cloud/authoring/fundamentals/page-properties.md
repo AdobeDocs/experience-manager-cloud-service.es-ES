@@ -2,9 +2,9 @@
 title: Edición de las propiedades de página
 description: Permite definir las propiedades de una página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
+source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
 workflow-type: tm+mt
-source-wordcount: '1987'
+source-wordcount: '1975'
 ht-degree: 100%
 
 ---
@@ -306,7 +306,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
    * Puede actualizar los valores en los campos disponibles.
       * Los nuevos valores se aplicarán a todas las páginas seleccionadas al activar **Listo**.
       * Si el campo admite varios valores (por ejemplo, Etiquetas), puede agregar un valor nuevo o eliminar un valor común.
-   * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se señalizarán con un valor especial; por ejemplo, el texto `<Mixed Entries>`. Se debe tener cuidado al editar estos campos para evitar la pérdida de datos.
+   * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se señalizarán con un valor especial; por ejemplo, el texto `<Mixed Entries>`.
 
 >[!NOTE]
 >
