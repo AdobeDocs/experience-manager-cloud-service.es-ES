@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
+source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '916'
 ht-degree: 13%
 
 ---
@@ -54,7 +54,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. A continuación, puede controlar la fase de ingesta desde la vista de lista Trabajos de ingesta
+1. A continuación, puede controlar la fase de Ingesta desde la vista de la lista Trabajos de Ingesta y utilizar el menú de acción de la ingesta para ver el registro a medida que progresa la ingesta.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -124,4 +124,4 @@ Solo podrá iniciar una ingesta en el entorno de destino si pertenece al entorno
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a Ingresar contenido en Target en la herramienta de transferencia de contenido, puede ver los registros una vez completado cada paso (extracción e ingesta) y buscar errores. Consulte [Visualización de registros de un conjunto de migraciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) para obtener más información.
+Una vez que haya completado la ingesta de contenido en Target, puede ver los registros de cada paso (extracción e ingesta) y buscar errores. Consulte [Visualización de registros de un conjunto de migraciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) para obtener más información.
