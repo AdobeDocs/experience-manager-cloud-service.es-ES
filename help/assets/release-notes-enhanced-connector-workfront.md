@@ -2,10 +2,10 @@
 title: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
+source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 2%
+source-wordcount: '825'
+ht-degree: 1%
 
 ---
 
@@ -13,21 +13,56 @@ ht-degree: 2%
 
 En la siguiente sección se describen las notas de la versión generales de [!DNL Workfront for Experience Manager enhanced connector].
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de la última versión 1.9.4 de [!DNL Workfront for Experience Manager enhanced connector] es 7 de octubre de 2022.
+La fecha de la versión de la última versión 1.9.5 de [!DNL Workfront for Experience Manager enhanced connector] es el 11 de noviembre de 2022.
 
 ## Elementos destacados de la versión {#release-highlights}
 
 La última versión de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes mejoras y correcciones de errores:
 
-* No se puede ver la pestaña Suscripciones de eventos en la página de configuración del conector mejorado debido a un gran número de eventos.
+* Cuando define solo un valor para un campo de varios valores en Workfront, el valor del campo no se asigna correctamente al Experience Manager.
 
-* Workfront no puede recuperar la lista de carpetas existentes en un proyecto, lo que provoca la creación de carpetas duplicadas.
+* El Experience Manager muestra la variable `SERVER_ERROR` en el **[!UICONTROL Vincular archivos y carpetas externos]** al acceder a las carpetas de recursos debido a permisos no válidos en `/content/dam/collections`.
+
+* Al habilitar la variable **[!UICONTROL Publicar recursos en Brand Portal]** en la página de configuración del conector mejorado de Workfront crea un evento incorrecto. El evento no se elimina incluso después de desactivar la opción.
+
+   Para resolver el problema:
+
+   1. Actualice a la versión 1.9.5 del conector mejorado.
+
+   1. Desactive el **[!UICONTROL Publicar recursos en Brand Portal]** en configuración avanzada.
+
+   1. Active la variable **[!UICONTROL Publicar recursos en Brand Portal]** .
+
+   1. Elimine las suscripciones de eventos incorrectas.
+
+      1. Realizar llamadas de GET a `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
+
+         Ejecute una llamada de API por cada número de página.
+
+      1. Busque el siguiente texto para encontrar suscripciones de eventos que coincidan con la siguiente dirección URL y que no tengan un `objId`:
+
+         ```
+              "objId": "",
+             "url": "<your-aem-domain>/bin/workfront-tools/events/linkedfolderprojectupdate<your-aem-domain>/
+         ```
+
+         Asegúrese de que el contenido entre `"objId": "",` y `"url"` coincide con la respuesta JSON. El método recomendado para ello es copiar desde cualquier suscripción de evento que tenga un `objId` y, a continuación, elimine el número.
+
+      1. Tenga en cuenta el ID de suscripción de evento.
+
+      1. Elimine la suscripción de evento incorrecta. Realizar una llamada Eliminar API a `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
+
+         `200` ya que el código de respuesta significa que se han eliminado correctamente suscripciones de eventos incorrectas.
+   >[!NOTE]
+   >
+   >Si ya ha eliminado las suscripciones de eventos incorrectas antes de ejecutar los pasos mencionados en este procedimiento, puede omitir el paso 4.
+
 
 >[!IMPORTANT]
 >
->Adobe recomienda que [actualizar a la última versión 1.9.4](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recomienda que [actualizar a la última versión 1.9.5](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conocidos {#known-issues}
 
@@ -35,9 +70,15 @@ La última versión de [!DNL Workfront for Experience Manager enhanced connector
 
 * Cuando utiliza la experiencia clásica de Workfront, la variable **[!UICONTROL Enviar a]** en la **[!UICONTROL Más]** la lista desplegable no permite seleccionar el destino de destino dentro de Experience Manager. La variable **[!UICONTROL Enviar a]** funciona correctamente con la opción **[!UICONTROL Acciones de documento]** lista desplegable. La variable **[!UICONTROL Enviar a]** funciona correctamente para **[!UICONTROL Más]** lista desplegable así como el **[!UICONTROL Acciones de documento]** lista desplegable disponible en la nueva experiencia de Workfront.
 
-* Workfront muestra un `SERVER_ERROR` al vincular documentos a AEM después de actualizar a la versión 8316. Para resolver el problema, asigne `rep:readProperties` a `content/dam/collections` para `wf-workfront-user` AEM grupo de usuarios.
-
 ## Versiones anteriores {#previous-releases}
+
+### Versión de octubre de 2022 {#october-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] La versión 1.9.4, publicada el 07 de octubre, incluye las siguientes actualizaciones:
+
+* No se puede ver la pestaña Suscripciones de eventos en la página de configuración del conector mejorado debido a un gran número de eventos.
+
+* Workfront no puede recuperar la lista de carpetas existentes en un proyecto, lo que provoca la creación de carpetas duplicadas.
 
 ### Versión de septiembre de 2022 {#september-2022-release}
 
