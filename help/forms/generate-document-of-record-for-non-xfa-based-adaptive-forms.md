@@ -2,10 +2,10 @@
 title: Generar documento de registro para formularios adaptables
 description: Explica cómo se puede generar una plantilla para un documento de registro (DoR) para formularios adaptables.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '3659'
-ht-degree: 99%
+source-wordcount: '4100'
+ht-degree: 86%
 
 ---
 
@@ -330,27 +330,35 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 1. Seleccione un panel (panel raíz) en el documento de registro y, a continuación, pulse ![configure](assets/configure.png).
 1. Pulse ![dortab](assets/dortab.png). Aparecerá la pestaña Documento de registro.
 1. Seleccione la plantilla predeterminada o una plantilla personalizada para procesar el documento de registro. Si selecciona la plantilla predeterminada, aparece una vista previa en miniatura del documento de registro debajo de la lista desplegable Plantilla.
+1. En función de si selecciona una plantilla predeterminada o personalizada, algunas o todas las propiedades siguientes aparecen en la pestaña Documento de registro. Especifique las siguientes propiedades mencionadas para definir el aspecto del documento de registro:
 
-   ![brandingtemplate](assets/brandingtemplate.png)
+   1. **Propiedades básicas**:
+      * **Plantilla**: Si elige seleccionar una plantilla personalizada, busque y seleccione un XDP en su [!DNL AEM Forms] servidor. Si desea utilizar una plantilla que no esté ya en el servidor [!DNL AEM Forms], primero debe cargar el XDP en el servidor [!DNL AEM Forms].
+      * **Color de énfasis**: El color en el que se representan las líneas del texto del encabezado y del separador en el PDF del documento o registro.
+      * **Familia de fuentes**: Familia de fuentes del texto del PDF Documento de registro.
+      * **Incluir objetos de formulario que no estén enlazados al modelo de datos**: La configuración de la propiedad incluye campos no enlazados del formulario adaptable basado en esquema del documento de registro.
+      * **Excluir campos ocultos del documento de registro**: Al establecer la propiedad, se identifican los campos ocultos para su exclusión del documento de registro.
+      * **Ocultar descripción de paneles**: Al establecer la propiedad se excluye la descripción del panel/tabla del documento de registro. Aplicable al panel y a la tabla.
 
-   Si elige una plantilla personalizada, busque y seleccione un XDP en el servidor [!DNL AEM Forms]. Si desea utilizar una plantilla que no esté ya en el servidor [!DNL AEM Forms], primero debe cargar el XDP en el servidor [!DNL AEM Forms].
+      ![Propiedades básicas](/help/forms/assets/basicpropertiesdor.png)
 
-1. En función de si selecciona una plantilla predeterminada o personalizada, algunas o todas las propiedades siguientes aparecen en la pestaña Documento de registro. Especifíquelas correctamente:
+   1. **Propiedades del campo de formulario**:
+      * **Para los componentes Casilla de verificación y Botón de radio , muestre solo los valores seleccionados**: Al establecer la propiedad, solo se muestran los valores seleccionados de la casilla de verificación y el botón de radio en [!UICONTROL Documento de registro].
+      * **Separador para varios valores**: Puede elegir cualquier separador, como coma o salto de línea, para mostrar varios valores.
+      * **Alineación de opciones**: Puede seleccionar la alineación deseada (Horizontal, Vertical, Igual que Formulario adaptable) para definir la alineación de los campos, como la casilla de verificación o el botón de radio, que se mostrarán en [!UICONTROL Documento de registro]. De forma predeterminada, la alineación vertical está definida para los campos de [!UICONTROL Documento de registro]. Configuración de las propiedades desde la variable [!UICONTROL Propiedades del campo de formulario] de DoR sobrescribe las propiedades establecidas en la variable [!UICONTROL Alineación de elementos] para los campos de un formulario adaptable. En caso de que seleccione [!UICONTROL Igual que el formulario adaptable] , se utiliza la alineación tal como está configurada en una instancia de autor del formulario adaptable para [!UICONTROL Documento de registro] campos.
+      * **Número de opciones de alineación horizontal**: puede definir el número de opciones que se mostrarán en el documento de registro para la alineación horizontal.
 
-   * **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
-   * **Título del formulario**
-   * **Texto de encabezado**
-   * **Etiqueta de la exención de responsabilidad**
-   * **Exención de responsabilidad**
-   * **Texto de la exención de responsabilidad**
-   * **Color de énfasis**: el color en el que se representa el texto del encabezado y las líneas de separación en el documento o registro PDF.
-   * **Familia de fuentes**: familia de fuentes del texto en el documento de registro en PDF.
-   * **Para componentes de casilla de verificación y botones de radio, mostrar solo los valores seleccionados**
-   * **Separador para varios valores seleccionados**
-   * **Incluir objetos de formulario que no están enlazados al modelo de datos**
-   * **Excluir los campos ocultos del documento de registro**
-   * **Ocultar descripción de paneles**
+      ![Propiedades del campo de formulario](/help/forms/assets/formfieldpropertiesdor.png)
 
+   1. **Propiedades de página maestra**:
+      * **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
+      * **Título del formulario**: Título del documento de resolución del problema.
+      * **Texto de encabezado**: Texto que aparece en la sección del encabezado del Documento de registro.
+      * **Etiqueta de exención de responsabilidad**: Etiqueta de exención de responsabilidad.
+      * **Renuncia de responsabilidad**: Texto que especifica el alcance de los derechos y obligaciones del Documento de Registro.
+      * **Texto de exención de responsabilidad**: Texto de la renuncia de responsabilidad.
+
+      ![Propiedades de página maestra](/help/forms/assets/masterpagepropertiesdor.png)
    >[!NOTE]
    >
    >Si está utilizando una plantilla de formulario adaptable creada con una versión del diseñador anterior a la 6.3, para que las propiedades Color de énfasis y Familia de fuentes funcionen, asegúrese de que lo siguiente esté presente en su plantilla de formulario adaptable bajo el subformulario raíz:
@@ -367,7 +375,30 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
    </proto>
    ```
 
-1. Para guardar los cambios de personalización de marca, pulse Listo.
+1. Para guardar los cambios de marca, pulse **[!UICONTROL Listo]**.
+
+## Documento de compatibilidad con registros en el Editor de formularios adaptables {#dor-support-in-adaptiveform}
+
+Puede configurar la variable [!UICONTROL Documento de registro] directamente desde el editor de formularios adaptables o el editor de plantillas de formulario adaptable.
+
+Realice los siguientes pasos desde la instancia de autor del editor de formularios adaptables:
+
+1. Seleccione el **[!UICONTROL Contenedor de formulario adaptable (raíz)]** componente.
+1. Haga clic en ![Icono Configurar](/help/forms/assets/configure-icon.svg) para abrir **[!UICONTROL Propiedades]** del contenedor del formulario adaptable.
+1. Abra el **[!UICONTROL Documento de plantilla de registro]** y seleccione entre las siguientes opciones:
+   * **[!UICONTROL Ninguna]**: Cuando se selecciona esta opción, no [!UICONTROL Documento de registro] plantilla creada para el formulario adaptable.
+
+   * **[!UICONTROL Asociar plantilla de formulario como plantilla de documento de registro]**: cuando se selecciona esta opción, el formulario XFA se utiliza como plantilla para el documento de registro.
+
+   * **[!UICONTROL Generar documento de registro]**: Cuando se selecciona esta opción, la variable [!UICONTROL Documento de registro] plantilla se genera automáticamente para el formulario adaptable.
+
+1. Pulse ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
+
+![Compatibilidad con plantillas de documento de registro](/help/forms/assets/dor-templatesupport.png)
+
+>[!NOTE]
+>
+>When [!UICONTROL Documento de registro] la plantilla se crea con un editor de plantillas de formulario adaptable y, a continuación, solo hay dos opciones disponibles en [!UICONTROL Documento de plantilla de registro] como [!UICONTROL Ninguna] y [!UICONTROL Generar documento de registro].
 
 ## Diseños de tablas y columnas para paneles del documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -400,7 +431,7 @@ La configuración del componente de documento de registro está disponible en su
 **Configuración del nivel de formulario**
 
 * **Incluir campos no enlazados en el documento de registro:** al establecer la propiedad, se incluyen los campos no enlazados del formulario adaptable basado en el esquema en el documento de registro. De forma predeterminada, es True.
-* **Excluir campos del documento de registro si están ocultos:** al establecer la propiedad, se anula el comportamiento de la propiedad de nivel de campo “Excluir del documento de registro” cuando no es True. Si los campos están ocultos en el momento del envío del formulario, se excluyen del documento de registro si la propiedad está establecida en True, siempre que la propiedad “Excluir del documento de registro” no esté establecida. Configuración [Revalidate en el servidor](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) property to true identifica los campos ocultos para su exclusión del documento de registro en el servidor.
+* **Excluir campos del documento de registro si están ocultos:** al establecer la propiedad, se anula el comportamiento de la propiedad de nivel de campo “Excluir del documento de registro” cuando no es True. Si los campos están ocultos en el momento del envío del formulario, se excluyen del documento de registro si la propiedad está establecida en True, siempre que la propiedad “Excluir del documento de registro” no esté establecida. Configuración [Revalidate en el servidor](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) a true identifica los campos ocultos para su exclusión del documento de registro en el servidor.
 
 ## Usar un archivo XCI personalizado
 

@@ -4,9 +4,9 @@ description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
+source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3064'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Aunque puede cargar y administrar cualquier archivo binario en [!DNL Experience 
 
 También puede optar por realizar un procesamiento adicional en los recursos cargados. Se pueden configurar varios perfiles de procesamiento de recursos en la carpeta, en la que se cargan los recursos, para añadir metadatos, representaciones o servicios de procesamiento de imágenes específicos. Consulte [procesar recursos al cargarlos](#process-when-uploaded).
 
-[!DNL Assets] proporciona los siguientes métodos de carga. Adobe recomienda comprender el caso de uso y la aplicabilidad de una opción de carga antes de utilizarla.
+[!DNL Assets] proporcione los siguientes métodos de carga. Adobe recomienda comprender el caso de uso y la aplicabilidad de una opción de carga antes de utilizarla.
 
 | Método de carga | Cuándo se usa? | Personal principal |
 |---------------------|----------------|-----------------|
@@ -33,7 +33,7 @@ También puede optar por realizar un procesamiento adicional en los recursos car
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Resulta útil cuando los creativos y los especialistas en marketing trabajan en recursos dentro de los [!DNL Creative Cloud] aplicaciones de escritorio. | Creativo, experto en marketing |
 | [Ingesta masiva de recursos](#asset-bulk-ingestor) | Recomendado para migraciones a gran escala y entradas masivas ocasionales. Solo para almacenes de datos compatibles. | Administrador, Desarrollador |
 
-## Carga de recursos {#upload-assets}
+## Carga de activos {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -118,7 +118,7 @@ Para conservar el recurso duplicado en [!DNL Assets], haga clic en **[!UICONTROL
 
 [!DNL Experience Manager Assets] impide que cargue recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con nombres de archivo que contengan uno o más caracteres no permitidos, [!DNL Assets] muestra un mensaje de advertencia y detiene la carga hasta que elimina estos caracteres o carga con un nombre permitido.
 
-Para adaptarlo a las convenciones específicas de nomenclatura de archivos de su organización, la variable [!UICONTROL Cargar recursos] permite especificar nombres largos para los archivos que se cargan. No se admiten los siguientes caracteres (lista de) separados por espacios:
+Para adaptarlas a convenciones específicas de nomenclatura de archivos de su organización, la variable [!UICONTROL Cargar recursos] permite especificar nombres largos para los archivos que se cargan. No se admiten los siguientes caracteres (lista de) separados por espacios:
 
 * Caracteres no válidos para el nombre del recurso: `* / : [ \\ ] | # % { } ? &`
 * Caracteres no válidos para el nombre de la carpeta de recursos: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -133,7 +133,7 @@ El importador masivo de recursos puede gestionar un gran número de recursos de 
 
 Para cargar un mayor número de archivos, utilice uno de los siguientes métodos. Consulte también la [casos de uso y métodos](#upload-methods-comparison)
 
-* [API de carga de recursos](developer-reference-material-apis.md#asset-upload): Utilice un script de carga personalizado o una herramienta que aproveche las API para agregar un control adicional de los recursos (por ejemplo, traducir metadatos o cambiar el nombre de archivos), si es necesario.
+* [API de carga de recursos](developer-reference-material-apis.md#asset-upload): Utilice un script de carga personalizado o una herramienta que aproveche las API para añadir un control adicional de los recursos (por ejemplo, traducir metadatos o cambiar el nombre de archivos), si es necesario.
 * [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Útil para los profesionales creativos y los especialistas en marketing que cargan recursos desde su sistema de archivos local. Utilícelo para cargar carpetas anidadas disponibles localmente.
 * [Herramienta de ingesta masiva](#asset-bulk-ingestor): Se utiliza para la ingesta de grandes cantidades de recursos, ya sea ocasionalmente o inicialmente al implementar [!DNL Experience Manager].
 
@@ -171,6 +171,8 @@ Para configurar la herramienta Importación masiva, siga estos pasos:
 1. Seleccione el tipo de fuente de datos de la **[!UICONTROL Importar origen]** lista desplegable.
 
 1. Proporcione los valores para crear una conexión con el origen de datos. Por ejemplo, si selecciona **Almacenamiento de Azure Blob** como fuente de datos, especifique los valores de la cuenta de almacenamiento de Azure, el contenedor de blob de Azure y la clave de acceso de Azure.
+
+1. Seleccione el modo de autenticación requerido en la lista desplegable. **Clave de acceso de Azure** proporciona acceso completo a la cuenta de almacenamiento de Azure, mientras que **Token de Azure SAS** permite al administrador limitar las capacidades del token mediante permisos y políticas de caducidad.
 
 1. Proporcione el nombre de la carpeta raíz que contiene recursos en el origen de datos en la **[!UICONTROL Carpeta de origen]** campo .
 

@@ -3,10 +3,10 @@ title: Incrustar un formulario adaptable en una página de AEM Sites
 seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: Puede utilizar el componente Contenedor de AEM Forms para añadir o incrustar formularios adaptables en una página de AEM Sites para rellenar y enviar un formulario sin tener que abandonar la página.
 feature: Adaptive Forms
-source-git-commit: dac38b2a90b2a1969e5332b8a658e8f1e0e5eccb
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1178'
+ht-degree: 86%
 
 ---
 
@@ -20,15 +20,19 @@ AEM Forms permite a los desarrolladores de formularios incrustar sin problemas 
 
 Puede agregar un formulario adaptable en la página de AEM Sites mediante los siguientes elementos:
 
-* **[El componente Contenedor de AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**. AEM Forms proporciona un componente que puede agregar a las páginas de Sites. El componente Contenedor de AEM Forms permite incrustar un formulario adaptable.
+* **El componente Contenedor de AEM Forms**. AEM Forms proporciona un componente que puede agregar a las páginas de Sites. El componente Contenedor de AEM Forms permite incrustar un formulario adaptable.
 
-* **[El Explorador de recursos](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**. Todos los formularios están disponibles en la sección Recursos. Puede arrastrar y colocar el formulario como un recurso en su página.
+* **El Explorador de recursos**. Todos los formularios están disponibles en la sección Recursos. Puede arrastrar y colocar el formulario como un recurso en su página.
 
 ## Requisitos previos {#prerequisites}
 
-Para incrustar un formulario adaptable en una página de AEM Sites que usa una plantilla editable, asegúrese de que el componente de AEM Forms está configurado como un componente permitido en la plantilla asociada. Para obtener más información, consulte la sección **Política y propiedades (Contenedor de diseño)** en [Creación de plantillas de página](/help/sites-authoring/templates.md).
+Para incrustar un formulario adaptable en una página de AEM Sites que usa una plantilla editable, asegúrese de que el componente de AEM Forms está configurado como un componente permitido en la plantilla asociada.
 
-En el caso de las páginas de Sites que usan una plantilla estática, deberá configurarlo en el sistema de párrafos de la página de Sites. Consulte [Configuración de componentes en el modo Diseño](/help/sites-authoring/default-components-designmode.md) para obtener más información.
+En el caso **Componente Contenedor de AEM Forms** no es visible en la variable **Panel del explorador de componentes** de AEM página sitios , realice los pasos siguientes tal como se ilustra en el vídeo.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410544)
+
+En caso de que la página Sitios esté utilizando una plantilla estática, debe configurarla en el sistema de párrafos de la página del sitio.
 
 ## Incrustación de un formulario adaptable {#af-component}
 
@@ -46,21 +50,31 @@ Para incrustar un formulario adaptable mediante el componente Contenedor de AEM�
 1. Pulse el componente Contenedor de AEM Forms incrustado en la página de Sites y, a continuación, pulse ![settings_icon](assets/settings_icon.png) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar contenedor de AEM Forms]**.
 1. En el cuadro de diálogo Editar contenedor de AEM Forms, especifique lo siguiente.
 
-   <!-- * **Asset Type:** Select the type of asset to embed. The options are Adaptive Form -->
+   **Tipo de recurso:** Seleccione el tipo de recurso que desea incrustar.
    * **Ruta del recurso**: examine y seleccione el formulario adaptable que desea incrustar. Se rellena automáticamente si ha colocado el formulario desde el Explorador de recursos.
    * **Después del envío**: seleccione la acción que debe activarse después del envío del formulario. Puede elegir mostrar un mensaje o una página de agradecimiento.
+      * Show
 
       * **Mensaje de agradecimiento**: escriba un mensaje con el editor de texto enriquecido para mostrarlo después del envío del formulario. Esta opción solo está disponible cuando elige mostrar un mensaje de agradecimiento.
       * **Página de agradecimiento**: examine y seleccione la página que desea mostrar después del envío del formulario. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
          * **Redirigir a la página de agradecimiento**: active la opción para reemplazar la página que contiene el formulario adaptable incrustado por una página de agradecimiento. De lo contrario, la página de agradecimiento reemplaza al formulario adaptable en el contenedor de AEM Forms sin actualizar la página de Sites subyacente. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
    * **Usar el idioma de la página**: utilice la configuración local de la página de AEM Sites en lugar de la configuración regional del formulario adaptable.
    * **Definir el enfoque del formulario**: seleccione esta opción para establecer el enfoque en el primer campo del formulario adaptable.
-
    * **Tema**: seleccione un tema que defina el estilo de los componentes del formulario adaptable. El estilo incluye propiedades de apariencia, como el estilo de fuente, el color de fondo, las dimensiones y la alineación.
+   * **El formulario abarca toda la anchura del marco**: Si se selecciona, el iframe no se utiliza para procesar el formulario.
    * **Altura**: especifique la altura del contenedor. Déjelo en blanco para cambiar automáticamente el tamaño del contenedor.
    * **Biblioteca de cliente CSS**: especifique la ruta a una biblioteca de cliente CSS.
 
 1. Guarde la configuración. El formulario adaptable está ahora incrustado en la página.
+
+AEM sitio también le permite crear un formulario adaptable sobre la marcha utilizando el componente contenedor de formularios AEM. Siga los pasos para crear un formulario adaptable mediante **Componente contenedor de AEM Forms** en AEM página sitios:
+1. Abra la página de AEM Sites en la que desee incrustar un formulario adaptable en el modo Edición.
+1. En el panel Explorador de componentes, arrastre y coloque el componente Contenedor de AEM Forms en la página.
+1. Haga clic en el **Más** y se le redirigirá al asistente de creación de formularios.
+
+   ![Componente AEM contenedor de formulario](/help/forms/assets/aemformcontainer.png)
+
+1. Cuando se crea un formulario adaptable, se le redirige a la página AEM sitios y el formulario creado se procesa en la página AEM sitios.
 
 ## Publicación de un formulario adaptable incrustado {#publishing-embedded-adaptive-form}
 

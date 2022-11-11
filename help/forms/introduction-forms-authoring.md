@@ -9,10 +9,10 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '2317'
-ht-degree: 100%
+source-wordcount: '2409'
+ht-degree: 96%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 100%
 
 Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. [!DNL AEM Forms] proporciona una interfaz de usuario intuitiva y componentes predeterminados para crear y trabajar con formularios adaptables. Puede elegir crear un formulario adaptable en base a un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente un modelo del formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y activos de infraestructura existentes. Puede elegir entre las siguientes opciones para crear un formulario adaptable:
 
-<!-- * **Using a form data model**
-  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. -->
+* **Uso de un modelo de datos de formulario**
+   [Integración de datos](data-integration.md) permite integrar entidades y servicios de distintos orígenes de datos en un Modelo de datos de formulario que se puede utilizar para crear Forms adaptable. Elija Modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varios orígenes de datos.
 
 * **Usar una plantilla de formulario XDP**
 Es un modelo de formulario ideal si tiene inversiones en formularios XFA o XDP. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Cualquier regla XFA existente se conservará en el formulario adaptable asociado. El formulario adaptable resultante admitirá construcciones XFA, como validaciones, eventos, propiedades y patrones.
@@ -35,7 +35,11 @@ Los esquemas XML y JSON representan la estructura en la que el sistema back-end 
 * **Usar ninguno o no usar un modelo de formulario**
 Los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
 
-<!--  For more information about creating an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md). -->
+   >[!NOTE]
+   >
+   > Puede modificar las propiedades del modelo de formulario desde el editor de formularios adaptables o el editor de plantillas de formulario adaptable. Para obtener más información, consulte [Editar propiedades del modelo de formulario de un formulario adaptable](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+
+Para crear un formulario adaptable, consulte [Creación de un formulario adaptable](creating-adaptive-form.md).
 
 ## IU de creación de formularios adaptables {#adaptive-form-authoring-ui}
 

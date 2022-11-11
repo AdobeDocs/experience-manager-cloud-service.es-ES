@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: bcd9f3cfe6c22a6db51a9e6f96576bb8cdde7d0c
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 74%
+source-wordcount: '1359'
+ht-degree: 67%
 
 ---
 
@@ -60,10 +60,15 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
    Cuando haya iniciado sesión, en la esquina superior izquierda, pulse **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 
-1. Pulse **[!UICONTROL Crear]** > **[!UICONTROL Formularios adaptables]**. El asistente abre.s
+1. Pulse **[!UICONTROL Crear]** > **[!UICONTROL Formularios adaptables]**. Se abre el asistente.
 1. En la pestaña Fuente, seleccione una plantilla:
 
    * Al seleccionar una plantilla editable, se selecciona automáticamente un tema y una acción de envío especificados en la plantilla, y la variable **[!UICONTROL Crear]** está activado. Puede ir a las pestañas **[!UICONTROL Estilo]** o **[!UICONTROL Envío]** para seleccionar una temática diferente o acción de envío. Si la plantilla editable seleccionada no especifica ningún tema, el botón crear permanece desactivado. Puede ir a la pestaña **[!UICONTROL Estilos]** para seleccionar manualmente una temática.
+
+      >[!NOTE]
+      >
+      > También puede crear [!UICONTROL Documento de registro] con un editor de formularios adaptables. Para obtener más información, consulte [Documento de compatibilidad con registros en el Editor de formularios adaptables](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
    * Al seleccionar una plantilla estática, los datos, el estilo, el envío, la entrega y las opciones de vista previa no están disponibles. Cuando se crea un nuevo formulario adaptable, se recomienda utilizar una plantilla editable.
 
 1. En la pestaña Estilo, seleccione una temática:
@@ -159,3 +164,15 @@ Puede cambiar el modelo de formulario para un formulario adaptable (basado en JS
    * Si el formulario adaptable se basa en un modelo de formulario, puede elegir otro <!-- form template, --> esquema XML o JSON o modelo de datos de formulario para el mismo modelo de formulario.
 
 1. Pulse **[!UICONTROL Guardar]** para guardar las propiedades.
+
+También puede modificar las propiedades del modelo de formulario desde el editor de formularios adaptables o el editor de plantillas de formulario adaptable.
+
+1. Seleccione el **[!UICONTROL Contenedor de formulario adaptable (raíz)]** componente.
+1. Haga clic en ![Icono Configurar](/help/forms/assets/configure-icon.svg) para abrir **[!UICONTROL Propiedades]** del contenedor del formulario adaptable.
+1. Seleccione el **[!UICONTROL Modelo de datos]** y realice una de las siguientes acciones:
+
+   * Si el formulario adaptable no tiene un modelo de formulario, puede elegir un modelo de formulario y, en consecuencia, seleccionar <!-- a form template, --> Esquema XML o JSON, o modelo de datos de formulario.
+   * Si el formulario adaptable se basa en un modelo de formulario, no se puede cambiar. Puede elegir otro <!-- form template, --> Esquema XML o JSON, o Modelo de datos de formulario para el mismo modelo de formulario aplicable.
+1. Pulse ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
+
+![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)

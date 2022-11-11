@@ -3,10 +3,10 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: Almacenamiento en caché en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
+source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
 workflow-type: tm+mt
-source-wordcount: '2580'
-ht-degree: 1%
+source-wordcount: '2663'
+ht-degree: 2%
 
 ---
 
@@ -196,6 +196,19 @@ La capa AEM no almacenará en caché el contenido del blob de forma predetermina
 ### Comportamiento de la solicitud del HEAD {#request-behavior}
 
 Cuando se recibe una solicitud de HEAD en la CDN de Adobe para un recurso que **not** en la caché, la solicitud se transforma y se recibe mediante la instancia de Dispatcher o AEM como una solicitud de GET. Si la respuesta se puede almacenar en caché, las solicitudes de HEAD posteriores se servirán desde la CDN. Si la respuesta no se puede almacenar en caché, las solicitudes de HEAD posteriores se pasarán a la instancia de Dispatcher o AEM durante un período de tiempo que depende de la variable `Cache-Control` TTL.
+
+### Parámetros de campaña de marketing {#marketing-parameters}
+
+Las direcciones URL de sitios web suelen incluir parámetros de campaña de marketing que se utilizan para realizar el seguimiento del éxito de una campaña. Para utilizar la caché de Dispatcher de forma eficaz, se recomienda configurar la configuración de Dispatcher `ignoreUrlParams` property as [documentado](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#ignoring-url-parameters).
+
+La variable `ignoreUrlParams` no debe comentar y debe hacer referencia al archivo `conf.dispatcher.d/cache/marketing_query_parameters.any`, que se pueden modificar descomentando las líneas correspondientes a los parámetros relevantes para sus canales de marketing. También puede agregar otros parámetros.
+
+```
+/ignoreUrlParams {
+{{ /0001 { /glob "*" /type "deny" }}}
+{{ $include "../cache/marketing_query_parameters.any"}}
+}
+```
 
 ## Invalidación de caché de Dispatcher {#disp}
 

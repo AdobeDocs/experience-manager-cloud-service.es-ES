@@ -2,10 +2,10 @@
 title: Creación de contenido orientado mediante el modo de Orientación
 description: El modo de Orientación y el componente Target proporcionan herramientas para crear contenido para las experiencias
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
 workflow-type: tm+mt
-source-wordcount: '5342'
-ht-degree: 100%
+source-wordcount: '5414'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,25 @@ Contenido orientado por el autor mediante el modo de Orientación de AEM. El mod
 * Simule la experiencia de usuario.
 * Para obtener más personalización, configure el componente Target.
 
-Puede utilizar AEM o Adobe Target como motor de orientación (para utilizar Adobe Target, debe tener una cuenta de Adobe Target válida). Si utiliza Adobe Target, primero debe configurar la integración. Consulte las instrucciones para la integración con Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
+>[!NOTE]
+>
+>El modo de Orientación está disponible tanto en el Editor de páginas como en el Editor de fragmentos de experiencias.
+>
+>La siguiente documentación es aplicable a ambos (ya que ambos funcionan de la misma manera) aunque está escrita para el Editor de páginas.
+
+>[!CAUTION]
+>
+>Al establecer objetivos en el Editor de páginas, solo se puede establecer como objetivo los componentes de fragmento de experiencia .
+>
+>Otros tipos de componentes se pueden convertir en un fragmento de experiencia utilizando la variable **Convertir en variación de fragmento de experiencia** en la barra de herramientas de componentes.
+
+<!--
+>Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
+>
+>![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+-->
+
+Puede utilizar AEM o Adobe Target como motor de orientación (para utilizar Adobe Target, debe tener una cuenta de Adobe Target válida). Si utiliza Adobe Target, primero debe configurar la integración. Consulte la [instrucciones para la integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![Contenido de direccionamiento](../assets/targeted-content.png)
 
