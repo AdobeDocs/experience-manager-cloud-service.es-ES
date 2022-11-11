@@ -5,10 +5,10 @@ landing-page-description: Obtenga información sobre cómo administrar fragmento
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 63%
+source-wordcount: '901'
+ht-degree: 62%
 
 ---
 
@@ -33,6 +33,10 @@ La consola Fragmentos de contenido está dedicada a administrar, buscar y crear 
 >[!NOTE]
 >
 >Una selección de [los métodos abreviados del teclado están disponibles para su uso en esta consola](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+
+>[!NOTE]
+>
+>El equipo del proyecto puede personalizar la consola si es necesario. Consulte [Personalización de la consola de fragmentos de contenido](/help/implementing/developing/extending/content-fragment-console-customizing.md) para obtener más información.
 
 Se puede acceder directamente a la consola Fragmentos de contenido desde el nivel superior de la navegación global:
 
