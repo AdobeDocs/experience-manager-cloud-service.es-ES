@@ -8,9 +8,9 @@ user-guide-description: Recursos informativos y enlaces a la documentación sobr
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: dce60b09a93ddf09b6b9285b832de91f6233bdae
+source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3766'
 ht-degree: 97%
 
 ---
@@ -489,8 +489,6 @@ ht-degree: 97%
    + [Funciones principales](/help/forms/key-features.md)
    + [Cambios importantes ](/help/forms/notable-changes.md)
    + [Arquitectura](/help/forms/aem-forms-cloud-service-architecture.md)
-   + Colaterales de referencia de AEM Forms {#formsreference-themes}
-      + [Temas de referencia](/help/forms/reference-themes.md)
    + Configuración del servicio {#setup-environment}
       + [Incorporación al entorno de Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configuración de un entorno de desarrollo local](/help/forms/setup-local-development-environment.md)
@@ -509,6 +507,7 @@ ht-degree: 97%
          + [Creación de una plantilla](/help/forms/template-editor.md)
          + [Creación de un tema](/help/forms/themes.md)
          + [Conexión de las fuentes de datos a Cloud Service](/help/forms/data-integration.md)
+         + [Recursos de referencia](/help/forms/reference-assets.md)
       + Creación de un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
          + [Creación de un formulario adaptable](/help/forms/creating-adaptive-form.md)
          + [Diseño de un esquema JSON para un formulario adaptable](/help/forms/adaptive-form-json-schema-form-model.md)
