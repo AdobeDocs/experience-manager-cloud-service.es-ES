@@ -3,7 +3,7 @@ title: Notas de la versión 2022.5.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2022.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Eche un vistazo al vídeo Información general sobre la versión de mayo de 2022
 * Varias funcionalidades de GraphQL
 * Una [nueva consola](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) optimizada para el uso sin encabezado de fragmentos de contenido
 
-## [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
@@ -52,7 +52,7 @@ Eche un vistazo al vídeo Información general sobre la versión de mayo de 2022
 Experience Manager Assets utiliza las funcionalidades de Adobe Sensei AI para ahora [distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente al ingerirlos](/help/assets/color-tag-images.md). Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen. Puede configurar el número de colores, dentro de un rango de uno a cuarenta, que están etiquetados en una imagen para que pueda buscar imágenes basadas en esos colores más adelante.
 
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 
