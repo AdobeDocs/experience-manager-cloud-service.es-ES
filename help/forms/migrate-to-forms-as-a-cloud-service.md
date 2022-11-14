@@ -8,7 +8,7 @@ level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1218'
 ht-degree: 100%
 
@@ -55,9 +55,9 @@ Realice los siguientes pasos para lograr que sus recursos de [!DNL AEM Forms] se
 
 1. Inicie sesión en su entorno clonado con privilegios administrativos.
 
-1. Ejecute la [herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) para asignar los usuarios con las cuentas de usuario de Adobe IMS correspondientes. Necesita que las cuentas de usuario de Adobe IMS inicien sesión en una instancia de [!DNL AEM Forms] as a Cloud Service.
+1. Ejecute la [herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=es#cloud-migration) para asignar los usuarios con las cuentas de usuario de Adobe IMS correspondientes. Necesita que las cuentas de usuario de Adobe IMS inicien sesión en una instancia de [!DNL AEM Forms] as a Cloud Service.
 
-1. Descargue e instale la [herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) y la utilidad de migración de [!DNL AEM Forms] as a Cloud Service desde el [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en el entorno clonado. Puede utilizar el administrador de paquetes de AEM para instalar la herramienta y la utilidad.
+1. Descargue e instale la [herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es#cloud-migration) y la utilidad de migración de [!DNL AEM Forms] as a Cloud Service desde el [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) en el entorno clonado. Puede utilizar el administrador de paquetes de AEM para instalar la herramienta y la utilidad.
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Migración de contenido]**.
 
@@ -92,7 +92,7 @@ Realice los siguientes pasos para lograr que sus recursos de [!DNL AEM Forms] se
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Ejecute la [herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Al especificar los parámetros en la pantalla **[!UICONTROL Crear conjunto de migración]**, especifique la ruta de los formularios adaptables, temáticas, plantillas, modelos de datos de formulario, servicios en la nube, componentes personalizados y otros recursos específicos de AEM Forms a la opción **[!UICONTROL Rutas que se deben incluir]**. Añade los recursos especificados de [!DNL AEM Forms] al conjunto de migración.
+1. Ejecute la [herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es#cloud-migration). Al especificar los parámetros en la pantalla **[!UICONTROL Crear conjunto de migración]**, especifique la ruta de los formularios adaptables, temáticas, plantillas, modelos de datos de formulario, servicios en la nube, componentes personalizados y otros recursos específicos de AEM Forms a la opción **[!UICONTROL Rutas que se deben incluir]**. Añade los recursos especificados de [!DNL AEM Forms] al conjunto de migración.
 
 ## Rutas de varios recursos específicos de AEM Forms
 
