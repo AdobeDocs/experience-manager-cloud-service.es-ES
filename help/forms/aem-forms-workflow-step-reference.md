@@ -4,7 +4,7 @@ description: Los flujos de trabajo centrados en Forms le permiten crear rápidam
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 source-git-commit: a8dae80f79e32117341519b31c389f8fc30b5957
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6132'
 ht-degree: 100%
 
