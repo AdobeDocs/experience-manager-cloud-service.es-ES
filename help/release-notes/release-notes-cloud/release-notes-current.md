@@ -3,10 +3,10 @@ title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a C
 description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ac209259b8e8ac7c1734c0662dd640809b4e2932
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 16%
+source-wordcount: '1107'
+ht-degree: 15%
 
 ---
 
@@ -75,6 +75,18 @@ Consulte el vídeo Información general de la versión de octubre de 2022 para v
 * Experience Manager Assets ahora [admite token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) además de la clave de acceso para la autenticación al conectarse al origen de datos de almacenamiento de blob de Azure para la ingesta de recursos mediante la herramienta de importación masiva.
 
 ## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+
+### Nuevas funciones disponibles en [!DNL Forms] canal {#new-features-available-in-channel}
+
+* [Asistente para Forms adaptable](/help/forms/creating-adaptive-form.md): AEM Forms proporciona un asistente fácil de usar para las empresas que crea rápidamente Forms adaptable. El asistente dispone de un rápido desplazamiento por pestañas para seleccionar fácilmente plantillas preconfiguradas, estilos, campos y opciones de envío para crear un formulario adaptable. Esta versión incorpora las siguientes mejoras al asistente:
+
+   * Seleccione o anule la selección de campos: El asistente le permite crear un formulario adaptable basado en esquemas JSON y del modelo de datos de formulario. Ahora puede seleccionar un subconjunto de campos dentro de un esquema para incluirlos en un formulario adaptable. Los campos seleccionados se convierten a los correspondientes componentes de captura de datos del formulario adaptable para crear rápidamente los formularios adaptables deseados.
+
+   * Usar plantillas estáticas: Los clientes con inversiones existentes en plantillas estáticas heredadas pueden continuar con su recorrido de adopción en la nube mediante plantillas estáticas en el asistente para crear formularios adaptables. Esto proporciona a los clientes tiempo adicional para migrar plantillas estáticas antiguas a plantillas editables modernas.
+
+* [Eliminar campos ocultos de un documento de registro (DoR) durante el procesamiento en el servidor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Puede generar el PDF de documento de registro para los usuarios finales que contenga únicamente aquellos campos que les fueran visibles durante la experiencia de captura de datos. Al enviar el formulario, el servidor valida qué campos se ocultaron al usuario final en función de los datos enviados y excluye del documento de registro para mantener la coherencia.
+
+
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 
