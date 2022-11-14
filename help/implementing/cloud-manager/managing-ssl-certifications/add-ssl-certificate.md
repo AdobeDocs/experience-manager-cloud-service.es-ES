@@ -1,27 +1,27 @@
 ---
-title: Adición de un certificado SSL
-description: Aprenda a añadir su propio certificado SSL con las herramientas de autoservicio de Cloud Manager.
+title: Agregar un certificado SSL
+description: Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 14e0255b3ce2ca44579b9fc3de6c7b7f5d8f34b6
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Adición de un certificado SSL {#adding-an-ssl-certificate}
+# Agregar un certificado SSL {#adding-an-ssl-certificate}
 
-Aprenda a añadir su propio certificado SSL con las herramientas de autoservicio de Cloud Manager.
+Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio de Cloud Manager.
 
 >[!TIP]
 >
->Un certificado puede tardar unos días en aprovisionarse. Por lo tanto, el Adobe recomienda que el certificado se aprovisione con bastante antelación.
+>Un certificado puede tardar unos días en aprovisionarse. Por lo tanto, Adobe recomienda que el certificado se aprovisione con bastante antelación.
 
 ## Formato del certificado {#certificate-format}
 
 Los archivos de certificado SSL deben tener el formato PEM para que se instalen con Cloud Manager. Las extensiones de archivo comunes del formato PEM incluyen `.pem,` .`crt`, `.cer`, y `.cert`.
 
-Lo siguiente `openssl` para convertir certificados que no sean PEM.
+Los siguientes comandos `openssl` se pueden utilizar para convertir certificados que no sean PEM.
 
 * Convertir PFX a PEM
 
@@ -41,29 +41,29 @@ Lo siguiente `openssl` para convertir certificados que no sean PEM.
    openssl x509 -inform der -in certificate.cer -out certificate.pem
    ```
 
-## Adición de un certificado {#adding-a-cert}
+## Agregar un certificado {#adding-a-cert}
 
 Siga estos pasos para agregar un certificado mediante Cloud Manager.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a **Entornos** de la **Información general** página.
+1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Haga clic en **Certificados SSL** del panel de navegación izquierdo. Se mostrará en la pantalla principal una tabla con detalles de cualquier certificado SSL existente.
+1. Haga clic en **Certificados SSL** en el panel de navegación izquierdo. Se mostrará en la pantalla principal una tabla con detalles de cualquier certificado SSL existente.
 
-   ![Adición de un certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+   ![Agregar un certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Haga clic en **Añadir certificado SSL** para abrir **Añadir certificado SSL** para abrir el Navegador.
+1. Haga clic en **Agregar certificado SSL** para abrir el cuadro de diálogo **Agregar certificado SSL**.
 
    * Escriba un nombre para el certificado en **Nombre del certificado**.
       * Esto es solo para fines informativos y puede ser cualquier nombre que le ayude a hacer referencia al certificado fácilmente.
-   * Pegue el **Certificado**, **Clave privada** y **Cadena de certificados** en sus respectivos campos. Los tres campos son obligatorios.
+   * Pegue los valores **Certificado**, **Clave privada** y **Cadena de certificados** en sus respectivos campos. Los tres campos son obligatorios.
 
    ![Cuadro de diálogo Agregar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
    * Se mostrarán todos los errores detectados.
       * Debe corregir todos los errores antes de guardar el certificado.
-      * Consulte la [Errores de certificado](#certificate-errors) para obtener más información sobre cómo solucionar errores comunes.
+      * Consulte la sección [Errores de certificado](#certificate-errors) para obtener más información sobre cómo solucionar errores comunes.
 
 
 1. Haga clic en **Guardar** para guardar el certificado.
@@ -74,13 +74,13 @@ Una vez guardado, verá el certificado como una fila nueva en la tabla.
 
 >[!NOTE]
 >
->Un usuario debe ser miembro de **Propietario empresarial** o **Administrador de implementación** para instalar un certificado SSL en Cloud Manager.
+>Un usuario debe ser miembro del rol de **Propietario del negocio** o **Administrador de implementación** para instalar un certificado SSL en Cloud Manager.
 
 ## Errores de certificado {#certificate-errors}
 
-Pueden surgir ciertos errores si un certificado no está instalado correctamente o cumple los requisitos de Cloud Manager.
+Pueden surgir ciertos errores si un certificado no está instalado correctamente o si no cumple los requisitos de Cloud Manager.
 
-### Política de certificados {#certificate-policy}
+### Directiva de certificados {#certificate-policy}
 
 Si ve el siguiente error, compruebe la directiva de su certificado.
 
@@ -88,9 +88,9 @@ Si ve el siguiente error, compruebe la directiva de su certificado.
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-Normalmente, las políticas de certificados se identifican mediante valores OID incrustados. Si se envía un certificado a texto y se busca el OID, se revelará la política del certificado.
+Normalmente, las directivas de certificados se identifican mediante valores OID incrustados. Si se envía un certificado a texto y se busca el OID, se revelará la directiva del certificado.
 
-Puede incluir los detalles del certificado como texto usando el siguiente ejemplo como guía.
+Puede incluir los detalles del certificado como texto si usa el siguiente ejemplo como guía.
 
 ```text
 openssl x509 -in 9178c0f58cb8fccc.pem -text
@@ -111,13 +111,13 @@ certificate:
 
 El patrón OID del texto define el tipo de directiva del certificado.
 
-| Patrón | Política | Aceptable en Cloud Manager |
+| Patrón | Directiva | Aceptable en Cloud Manager |
 |---|---|---|
 | `2.23.140.1.1` | EV | Sí |
 | `2.23.140.1.2.2` | OV | Sí |
 | `2.23.140.1.2.1` | DV | No |
 
-Por `grep`ping para los patrones OID en el texto del certificado de salida, puede confirmar la directiva de certificado.
+Por `grep` ping para los patrones OID en el texto del certificado de salida, puede confirmar la directiva de certificado.
 
 ```shell
 # "EV Policy"
@@ -134,7 +134,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 El motivo más común para que una implementación de certificado falle es que los certificados intermedios o de cadena no están en el orden correcto.
 
-Los archivos de certificado intermedios deben finalizar con el certificado raíz o el certificado más cercano a la raíz. Deben estar en orden descendente desde el `main/server` certificado a la raíz.
+Los archivos de certificado intermedios deben finalizar con el certificado raíz o el certificado más cercano a la raíz. Deben estar en orden descendente desde el certificado`main/server` a la raíz.
 
 Puede determinar el orden de los archivos intermedios mediante el siguiente comando.
 
@@ -142,7 +142,7 @@ Puede determinar el orden de los archivos intermedios mediante el siguiente coma
 openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
 ```
 
-Puede verificar que la clave privada y `main/server` coincidencia de certificado mediante los siguientes comandos.
+Puede verificar que la clave privada y el certificado `main/server` coincidan mediante los siguientes comandos.
 
 ```shell
 openssl x509 -noout -modulus -in certificate.pem | openssl md5
@@ -154,7 +154,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->El resultado de estos dos comandos debe ser exactamente el mismo. Si no puede localizar una clave privada que coincida con su `main/server` , deberá volver a escribir el certificado generando un CSR nuevo o solicitando un certificado actualizado a su proveedor SSL.
+>El resultado de estos dos comandos debe ser exactamente el mismo. Si no puede localizar una clave privada que coincida con su certificado `main/server`, deberá volver a escribir el certificado y generar un CSR nuevo o solicitar un certificado actualizado a su proveedor SSL.
 
 ### Fechas de validez del certificado {#certificate-validity-dates}
 

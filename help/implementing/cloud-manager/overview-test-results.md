@@ -5,7 +5,7 @@ exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +17,12 @@ Existen tres categorías de pruebas compatibles con las canalizaciones de Cloud 
 1. [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md)
 
    * Las pruebas de calidad del código evalúan la calidad del código de la aplicación.
-   * La canalización de calidad del código se ejecuta inmediatamente después del paso de compilación en todas las canalizaciones que no sean de producción y .
-   * La variable [reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md) ejecutado por Cloud Manager se crean en función de las prácticas recomendadas de AEM Engineering.
+   * La canalización de la calidad del código se ejecuta inmediatamente después del paso de generación en todas las canalizaciones que sean y no sean de producción.
+   * Las [reglas de calidad del código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md) que ejecuta Cloud Manager se crean en función de las prácticas recomendadas de AEM Engineering.
 
 1. [Pruebas funcionales](/help/implementing/cloud-manager/functional-testing.md)
 
-   * Las pruebas funcionales forman parte de la fase de prueba de fase de una canalización de producción.
+   * Las pruebas funcionales forman parte de la fase de prueba de una canalización de producción.
 
 1. [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md)
 
@@ -30,10 +30,10 @@ Existen tres categorías de pruebas compatibles con las canalizaciones de Cloud 
 
 Estas pruebas pueden ser:
 
-* Escrito por el cliente
-* Adobe escrito
-* Creado con herramientas de código abierto
+* Escritas por el cliente
+* Escritas por Adobe
+* Creadas con herramientas de código abierto
 
 >[!NOTE]
 >
-> Tanto las pruebas escritas por el cliente como las pruebas escritas por el Adobe se ejecutan en una infraestructura contenedorizada diseñada para ejecutar dichas pruebas.
+> Tanto las pruebas escritas por el cliente como las escritas por Adobe se ejecutan en una infraestructura de contenedores diseñada para ejecutar dichas pruebas.

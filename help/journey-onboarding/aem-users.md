@@ -1,85 +1,85 @@
 ---
-title: Tareas del usuario AEM
-description: Una vez que el administrador del sistema haya configurado los recursos de nube necesarios, conozca cómo AEM usuarios pueden acceder AEM as a Cloud Service para crear contenido.
+title: Tareas del usuario de AEM
+description: Una vez que el administrador del sistema haya configurado los recursos de nube necesarios, aprenda cómo los usuarios de AEM pueden acceder a AEM as a Cloud Service para crear contenido.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Tareas del usuario AEM {#aem-user-tasks}
+# Tareas del usuario de AEM {#aem-user-tasks}
 
-En esta parte opcional del [recorrido de incorporación,](overview.md) aprenderá cómo AEM usuarios pueden acceder AEM as a Cloud Service para crear contenido.
+En esta parte opcional del [recorrido de incorporación,](overview.md) aprenderá cómo los usuarios de AEM pueden acceder AEM as a Cloud Service para crear contenido.
 
 ## La historia hasta ahora {#story-so-far}
 
-¡Ha recorrido un largo camino en su recorrido de incorporación! Felicitaciones! El administrador del sistema ha completado el recorrido de incorporación configurando los recursos de nube necesarios y otorgando acceso en el documento [Asignación AEM Perfiles De Producto.](assign-profiles-aem.md)
+¡Ha recorrido un largo camino en su recorrido de incorporación! ¡Enhorabuena! El administrador del sistema ha completado el recorrido de incorporación, ha configurado los recursos de nube necesarios y otorgado acceso en el documento [Asignar perfiles de producto de AEM.](assign-profiles-aem.md)
 
-En este punto, los usuarios de AEM pueden empezar a crear contenido. En este sentido, la incorporación es completa y ahora es el momento de usar su nuevo sistema as a Cloud Service AEM, que ilustra este documento.
+En este punto, los usuarios de AEM pueden empezar a crear contenido. En este sentido, la incorporación es completa y es el momento de usar su nuevo sistema AEM as a Cloud Service, que ilustra este documento.
 
 ## Audiencia {#audience}
 
-Este documento está escrito desde la perspectiva de la **AEM usuario**.
+Este documento está escrito desde la perspectiva de un **usuario de AEM**.
 
-El administrador del sistema también puede realizar estas mismas tareas, pero generalmente estas funciones las tienen distintos usuarios.
+El administrador del sistema también puede realizar estas mismas tareas, pero generalmente estos roles los tienen distintos usuarios.
 
 ## Objetivo {#objective}
 
-Este documento es un complemento del proceso de incorporación para mostrar las tareas básicas de un usuario AEM una vez que el administrador del sistema ha incorporado todos los usuarios y ha creado los recursos de nube necesarios tal y como se describe hasta este punto del recorrido de incorporación.
+Este documento es un complemento del proceso de incorporación para mostrar las tareas básicas de un usuario de AEM una vez que el administrador del sistema ha incorporado todos los usuarios y ha creado los recursos de nube necesarios tal y como se describe hasta este punto del recorrido de incorporación.
 
-Después de leer, debe comprender cómo:
+Después de leerlo, deberá saber cómo:
 
-* Acceso a Cloud Manager.
-* Inicie sesión en una instancia as a Cloud Service AEM.
+* Acceder a Cloud Manager.
+* Iniciar sesión en una instancia de AEM as a Cloud Service.
 
 ## Requisitos previos {#prerequisites}
 
-Antes de comenzar las tareas descritas en este documento como usuario AEM, asegúrese de que el administrador del sistema haya completado todos los pasos de este recorrido de incorporación. Esto significa que:
+Antes de comenzar las tareas descritas en este documento como usuario de AEM, asegúrese de que el administrador del sistema haya completado todos los pasos de este recorrido de incorporación. Esto significa lo siguiente:
 
-* El administrador del sistema ha asignado usuarios al **AEM usuarios** o **Administradores de AEM** perfiles de producto.
+* El administrador del sistema ha asignado usuarios a los perfiles de producto de los **usuarios de AEM** o **administradores de AEM**.
 * Se han configurado los recursos de Cloud.
 
 ## Iniciar sesión en AEM {#login-aem}
 
-Como autor AEM, debe iniciar sesión en AEM para comenzar a crear contenido.
+Como autor de AEM, debe iniciar sesión en AEM para comenzar a crear contenido.
 
-1. Vaya a la página de inicio de sesión de Cloud Manager en [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/)
+1. Navegue hasta la página de inicio de sesión de Cloud Manager en [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/)
 
-1. Seleccione el programa adecuado en el **Programas y productos** para iniciar la **Información general** página. Pregunte al administrador del sistema si no está seguro a qué programa acceder.
+1. Seleccione el programa adecuado de la página **Programas y productos** de Cloud Manager para iniciar la página **Información general**. Pregunte al administrador del sistema si no está seguro a qué programa acceder.
 
-1. En el **Información general** en Cloud Manager, haga clic en el vínculo de autor desde el **Entornos** tarjeta.
+1. En la página **Información general** en Cloud Manager, haga clic en el vínculo de autor desde la tarjeta **Entornos**.
 
-   ![Tarjeta de entorno](/help/journey-onboarding/assets/author-environ.png)
+   ![Tarjeta Entornos](/help/journey-onboarding/assets/author-environ.png)
 
 1. Se abrirá una nueva pestaña en la que podrá iniciar sesión en el entorno de creación con su Adobe ID.
 
-Felicitaciones! Ahora ha iniciado sesión correctamente en Autor.
+¡Enhorabuena! Ahora ha iniciado sesión correctamente en Autor.
 
 >[!TIP]
 >
->Añada un marcador al vínculo a la instancia de creación de AEM y puede abrirlo directamente en lugar de pasar por Cloud Manager cada vez.
+>Agregue un marcador al vínculo a la instancia de creación de AEM y podrá abrirlo directamente en lugar de pasar por Cloud Manager cada vez.
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha leído este documento, debe saber cómo:
+Ahora que ha leído este documento, debería saber cómo:
 
-* Acceso a Cloud Manager.
-* Inicie sesión en una instancia as a Cloud Service AEM.
+* Acceder a Cloud Manager.
+* Iniciar sesión en una instancia de AEM as a Cloud Service.
 
-Felicitaciones! Ya está listo para crear y publicar AEM contenido. Consulte la [Recursos adicionales](#additional-resources) para obtener más información sobre cómo crear contenido en AEM y cómo administrarlo.
+¡Enhorabuena! Ya está listo para crear y publicar contenido de AEM. Consulte la sección [Recursos adicionales](#additional-resources) para obtener más información sobre cómo crear contenido en AEM y cómo administrarlo.
 
-Si le interesa cómo los desarrolladores y los administradores de implementación crean y administran aplicaciones personalizadas para AEM as a Cloud Service, continúe con la segunda parte opcional del recorrido de integración, [Tareas AEM Desarrollador.](developers.md)
+Si le interesa cómo crean y administran los desarrolladores y los administradores de implementación aplicaciones personalizadas para AEM as a Cloud Service, continúe con la segunda parte opcional del recorrido de incorporación, [Tareas del desarrollador de AEM.](developers.md)
 
 >[!TIP]
 >
->Ahora que está integrado, puede [obtenga información sobre cómo agregar fácilmente el complemento de demostraciones de referencia de AEM](/help/journey-sites/demos-add-on/overview.md) a un entorno de entorno limitado con una configuración de AEM mínima y poder probar las potentes funciones de AEM con ejemplos enriquecidos basados en las prácticas recomendadas.
+>Ahora que se ha incorporado, puede [aprender a agregar fácilmente el complemento de demostraciones de referencia de AEM](/help/journey-sites/demos-add-on/overview.md) a un entorno de zona protegida con una configuración mínima de AEM, y puede probar las potentes características de AEM con ricos ejemplos basados en las mejores prácticas.
 
 ## Recursos adicionales {#additional-resources}
 
-[Guía rápida para la creación de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md) - Empiece aquí para obtener una descripción general rápida de los fundamentos de la creación en AEM.
-[Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md) - Si desea crear contenido sin encabezado, siga esta introducción guiada.
+[Guía rápida para la creación de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md): Empiece aquí para ver una descripción general rápida de los fundamentos de la creación en AEM.
+[Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md): Si desea crear contenido sin encabezado, siga esta introducción guiada.

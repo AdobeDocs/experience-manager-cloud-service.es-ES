@@ -1,36 +1,36 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2020.12.0
-description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2020.12.0
+title: Notas de la versión para Cloud Manager en la versión 2020.12.0 de AEM as a Cloud Service
+description: Notas de la versión para Cloud Manager en la versión 2020.12.0 de AEM as a Cloud Service
 feature: Release Information
 exl-id: ac942247-b2c8-42bd-8cb8-410a341e47ef
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2020.12.0 {#release-notes}
 
-Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2020.12.0.
+Esta página describe las notas de la versión para Cloud Manager en AEM as a Cloud Service 2020.12.0.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.12.0 es el 10 de diciembre de 2020.
+La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2020.12.0 es el 10 de diciembre de 2020.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Novedades {#what-is-new}
 
-* Administración de autoservicio de [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) y [Nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Administración del autoservicio de [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) y [Nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Administración de autoservicio de [LISTAS DE PERMITIDOS IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Administración del autoservicio de [Listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-* Actualizado **Entorno** La página de detalles ahora permite a los usuarios administrar nombres de dominio personalizados y Listas de permitidos IP en sus entornos.
+* La página actualizada de detalles del **Entorno** ahora permite a los usuarios administrar nombres de dominio personalizados y listas de IP permitidas en sus entornos.
 
 
 ### Correcciones de errores  {#bug-fixes}
 
-* Algunas ocurrencias de errores en la fase de análisis del código sin proporcionar los resultados abordados.
+* Se dieron algunos errores en la fase de análisis del código sin proporcionar los resultados abordados.
 
-* La tarjeta de entorno no se muestra de forma coherente **Agregar** botón.
+* La tarjeta de entorno no muestra de forma coherente el botón **Agregar**.

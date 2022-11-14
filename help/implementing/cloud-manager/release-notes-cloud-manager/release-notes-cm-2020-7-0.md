@@ -1,28 +1,28 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2020.7.0
-description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2020.7.0
+title: Notas de la versión para Cloud Manager en la versión 2020.7.0 de AEM as a Cloud Service
+description: Notas de la versión para Cloud Manager en la versión 2020.7.0 de AEM as a Cloud Service
 feature: Release Information
 exl-id: b5ac4dd4-18c6-4867-b2df-53711555007f
 source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2020.7.0 {#release-notes}
 
-Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2020.7.0.
+Esta página describe las notas de la versión para Cloud Manager en AEM as a Cloud Service 2020.7.0.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.7.0 es 9 de julio de 2020.
+La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2020.7.0 es el 9 de julio de 2020.
 
 ## Novedades {#whats-new-cloud-manager}
 
 * Se rediseñó la página entornos.
 
-* Cuando están en hibernación, los entornos en hibernación ahora muestran un estado discreto en Cloud Manager.
+* Cuando están en hibernación, los entornos en hibernación ahora muestran el estado discreto en Cloud Manager.
 
 * Se aumentó el número de variables de entorno por entorno a 200.
 
@@ -30,16 +30,16 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.7.0 es 9 de
 
    Consulte Variables de canalización para obtener más detalles.
 
-* Ahora se admiten repositorios Maven privados enlazados a autenticación.
+* Ahora se admiten repositorios de Maven privados enlazados con la autenticación.
 
 * El contenedor de generación de Cloud Manager ahora admite Java 8 y Java 11.
-Consulte Uso de la compatibilidad con Java 11 para obtener más información.
+Consulte Usar la compatibilidad con Java 11 para obtener más información.
 
 ### Correcciones de errores {#bug-fixes-cm}
 
 * Antes de que se crearan completamente los entornos, el vínculo de Cloud Manager a la consola de desarrollador no se activaba correctamente.
 
-* El vínculo a la consola de desarrollador directamente desde Cloud Manager no mostraba la opción de anular la hibernación o hibernar el entorno de un programa simulador para pruebas.
+* El vínculo a la consola de desarrollador directamente desde Cloud Manager no mostraba la opción de anular la hibernación o hibernar el entorno de un programa de zona protegida.
 
 * Las opciones **Cancelar** y **Guardar** de la página de edición de la canalización sin producción no siempre estaban visibles.
 

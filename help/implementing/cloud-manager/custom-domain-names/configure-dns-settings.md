@@ -5,7 +5,7 @@ exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 source-git-commit: 60b496024b3d012033309632999851c08f43c5d7
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ Una vez que el nombre de dominio personalizado se haya verificado e implementado
 
 ## ¿Qué es la configuración de DNS? {#dns-settings}
 
-A `CNAME` O Un registro, una vez aprovisionado, enrutará todo el tráfico de Internet para el dominio a donde señale. Si esa ubicación no está aprovisionada para servir el tráfico, se producirá una interrupción. Si no se ha probado, puede haber errores en el contenido. Esta es la razón por la que este paso siempre se realiza una vez finalizada la prueba y está listo para su lanzamiento.
+Un registro `CNAME` o A, una vez aprovisionado, enrutará todo el tráfico de Internet para el dominio a donde señale. Si esa ubicación no está aprovisionada para servir el tráfico, se producirá una interrupción. Si no se ha probado, puede haber errores en el contenido. Esta es la razón por la que este paso siempre se realiza una vez finalizada la prueba y está listo para su lanzamiento.
 
-Para configurar estos ajustes, debe determinar si una `CNAME` o el registro Apex debe configurarse para que apunte su nombre de dominio personalizado al nombre de dominio de Cloud Manager. Las siguientes secciones le ayudarán a determinar qué tipo de registro es apropiado para su configuración DNS.
+Para configurar estos ajustes, debe determinar si un registro `CNAME` o Apex debe configurarse para que apunte su nombre de dominio personalizado al nombre de dominio de Cloud Manager. Las siguientes secciones le ayudarán a determinar qué tipo de registro es apropiado para su configuración de DNS.
 
 >[!NOTE]
 >
@@ -27,15 +27,15 @@ Para configurar estos ajustes, debe determinar si una `CNAME` o el registro Apex
 
 Un nombre canónico o registro CNAME es un tipo de registro DNS que asigna un nombre de alias a un nombre de dominio verdadero o canónico. Los registros CNAME generalmente se utilizan para asignar un subdominio como `www.example.com` al dominio que hospeda el contenido de ese subdominio.
 
-Inicie sesión en el registrador de dominios y cree un `CNAME` registro para señalar el nombre de dominio personalizado al destino, como en la tabla siguiente.
+Inicie sesión en el registrador de dominios y cree un registro `CNAME` para señalar el nombre de dominio personalizado al destino, como en la tabla siguiente.
 
 | CNAME | Punto de nombre de dominio personalizado en Target |
 |--- |--- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-## Registro APEX {#apex-record}
+## Registro Apex {#apex-record}
 
-Un dominio apex es un dominio personalizado que no contiene un subdominio, como `example.com`. Un dominio de apex está configurado con un `A` , `ALIAS` o `ANAME` registre a través de su proveedor DNS. Los dominios de Apex deben apuntar a direcciones IP específicas.
+Un dominio Apex es un dominio personalizado que no contiene un subdominio, como `example.com`. Un dominio Apex está configurado con un registro `A`, `ALIAS` o `ANAME` a través de su proveedor DNS. Los dominios Apex deben apuntar a direcciones IP específicas.
 
 Agregue todo lo siguiente `A` registra la configuración DNS de su dominio a través de su proveedor de dominios.
 

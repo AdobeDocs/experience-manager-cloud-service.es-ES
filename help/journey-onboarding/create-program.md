@@ -21,7 +21,7 @@ Tras revisar el documento anterior de este recorrido de incorporación, [Acceder
 Después de leer este documento, debería poder hacer lo siguiente:
 
 * Comprender lo que es un programa.
-* Conocer la diferencia entre los programas de producción y los de entornos limitados.
+* Conocer la diferencia entre los programas de producción y los de zonas protegidas.
 * Poder crear su propio programa.
 
 ## ¿Qué es un programa? {#programs}
@@ -34,7 +34,7 @@ Si recuerdan el ejemplo de WKND Travel and Adventure Enterprises teórico, que e
 
 Existen dos tipos diferentes de programas:
 
-* Un **programa de producción** se crea para habilitar el tráfico en directo para el sitio. Este es su entorno &quot;real&quot;.
+* Un **programa de producción** se crea para habilitar el tráfico en directo para el sitio. Este es su entorno “real”.
 * Un **programa de zona protegida** normalmente se crea para servir los propósitos de formación, ejecución de demostraciones, habilitación, POC o documentación.
 
 Dado que sirven para diferentes propósitos, los diferentes entornos tienen diferentes opciones. Sin embargo, el proceso de creación es similar. Para este recorrido de integración crearemos un entorno de entorno de zona protegida.
@@ -70,5 +70,5 @@ Siga los recursos adicionales para obtener más información:
 * [Programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): obtenga información sobre la jerarquía de Cloud Manager y cómo encajan los distintos tipos de programas en su estructura y cómo difieren.
 * [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md): aprenda a utilizar Cloud Manager para crear su propio programa de zona protegida para formación, demostración, POC u otros fines que no sean de producción.
 * [Creación de programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md): aprenda a utilizar Cloud Manager para crear su propio programa de producción y alojar tráfico en directo.
-* [Uso de programas de Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html): los programas de Cloud Manager representan conjuntos de entornos AEM que admiten conjuntos lógicos de iniciativas del negocio, que normalmente corresponden a un Contrato de nivel de servicio (SLA) adquirido.
+* [Uso de programas de Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=es): los programas de Cloud Manager representan conjuntos de entornos AEM que admiten conjuntos lógicos de iniciativas del negocio, que normalmente corresponden a un Contrato de nivel de servicio (SLA) adquirido.
 * [AEM perfiles as a Cloud Service de equipo y producto](/help/onboarding/aem-cs-team-product-profiles.md) - Descubra cómo AEM equipo as a Cloud Service y los perfiles de producto pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia.

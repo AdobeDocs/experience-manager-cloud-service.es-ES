@@ -36,6 +36,6 @@ La fecha de lanzamiento de Cloud Manager 2022.6.0 en AEM as a Cloud Service es e
 
 ## Cambios en la API {#api-changes}
 
-* La [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API se ha desaprobado y [`List Programs for Tenant`se debe utilizar ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) en su lugar.
+* La [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API se ha desaprobado y [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) e debe utilizar en su lugar.
    * `List Programs` sigue funcionando, pero su uso generará mensajes de advertencia en los registros.
    * Dejará de ser compatible después de tres meses.

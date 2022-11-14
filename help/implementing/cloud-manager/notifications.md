@@ -5,14 +5,14 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 1%
+ht-degree: 12%
 
 ---
 
 
 # Notificaciones {#notifications}
 
-Descubra cómo Cloud Manager le notifica de eventos importantes.
+Descubra cómo Cloud Manager le notifica de los eventos importantes.
 
 ## Notificaciones en Cloud Manager {#cloud-manager-notifications}
 
@@ -20,7 +20,7 @@ Descubra cómo Cloud Manager le notifica de eventos importantes.
 
 Estas notificaciones se envían a través de la variable [!UICONTROL Experience Cloud] sistema de notificaciones a los usuarios de **Propietario empresarial**, **Administrador de programas** y **Administrador de implementación** funciones.
 
-Las notificaciones aparecen en una barra lateral dentro de [!UICONTROL Cloud Manager] y en todo el Adobe [!UICONTROL Experience Cloud]. El icono de campana del encabezado se marca cuando se tienen nuevas notificaciones.
+Las notificaciones aparecen en una barra lateral dentro de [!UICONTROL Cloud Manager] y en todo el Adobe [!UICONTROL Experience Cloud]. El icono de campana del encabezado se señala cuando tiene nuevas notificaciones.
 
 ![Icono de notificaciones](assets/notifications-bell-badged.png)
 
@@ -44,7 +44,7 @@ Puede personalizar cómo recibe las notificaciones y qué notificaciones recibe.
 
 Haga clic en el icono de engranaje en la parte superior de la barra lateral de notificaciones.
 
-![Icono de configuración de notificación](assets/notifications-configuration.png)
+![Icono de configuración de notificaciones](assets/notifications-configuration.png)
 
 Esto abre el **preferencias del Experience Cloud** , donde puede definir las suscripciones de notificación y cómo recibe las notificaciones.
 

@@ -5,7 +5,7 @@ exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Obtenga información sobre cómo crear, ver y eliminar repositorios de Git en Cl
 
 Siga estos pasos para ver y administrar repositorios en Cloud Manager.
 
-1. En el **Información general del programa** página, haga clic en **Repositorios** y vaya a **Repositorios** página.
+1. En la página **Información general del programa** página, haga clic en **Repositorios** y vaya a la página **Repositorios**.
 
 1. Haga clic en **Agregar repositorio** para iniciar el asistente.
 
@@ -32,7 +32,7 @@ Siga estos pasos para ver y administrar repositorios en Cloud Manager.
 
    ![Cuadro de diálogo Agregar repositorio](/help/implementing/cloud-manager/assets/repos/repo-1.png)
 
-Cuando se cierre el asistente, el nuevo repositorio se mostrará en la tabla .
+Cuando se cierre el asistente, el nuevo repositorio se mostrará en la tabla.
 
 Puede seleccionar el repositorio en la tabla, hacer clic en el botón de puntos suspensivos y seleccionar **Copiar URL del repositorio**, **Ver y actualizar** o **Eliminar**.
 
@@ -40,7 +40,7 @@ Puede seleccionar el repositorio en la tabla, hacer clic en el botón de puntos 
 
 Los repositorios creados en Cloud Manager también estarán disponibles para su selección al añadir o editar canalizaciones. Consulte el documento [Canalizaciones CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener más información.
 
-Hay un único repositorio principal o una rama para una canalización determinada. con [compatibilidad con el submódulo git](#git-submodule-support), se pueden incluir muchas ramas secundarias en el momento de la compilación.
+Hay un único repositorio principal o una rama para una canalización determinada. Con [compatibilidad con el submódulo git](#git-submodule-support), se pueden incluir muchas ramas secundarias en el momento de la compilación.
 
 >[!NOTE]
 >
@@ -50,23 +50,23 @@ Hay un único repositorio principal o una rama para una canalización determinad
 
 Al eliminar un repositorio:
 
-* Hacer que el nombre del repositorio eliminado no se pueda utilizar para nuevos repositorios que se puedan crear en el futuro.
-   * El mensaje de error `Repository name should be unique within organization.` en estos casos.
-* Haga que el repositorio eliminado no esté disponible en Cloud Manager y no esté disponible para vincularlo a una canalización.
+* Se impide que el nombre del repositorio eliminado se pueda utilizar para nuevos repositorios que se puedan crear en el futuro.
+   * El mensaje de error `Repository name should be unique within organization.` aparecerá en estos casos.
+* Se hace que el repositorio eliminado no esté disponible en Cloud Manager y no esté disponible para vincularlo a una canalización.
 
 Siga estos pasos para eliminar un repositorio en Cloud Manager.
 
-1. En el **Información general del programa** página, haga clic en **Repositorios** y vaya a **Repositorios** página.
+1. En la página **Información general del programa** página, haga clic en **Repositorios** y vaya a la página **Repositorios**.
 
-1. Seleccione el repositorio y haga clic en el botón de elipsis y seleccione **Eliminar** para eliminar el repositorio.
+1. Seleccione el repositorio y haga clic en el botón de tres puntos y seleccione **Eliminar** para eliminar el repositorio.
 
    ![Eliminar repositorio](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 ## Compatibilidad con el submódulo Git {#git-submodule-support}
 
-Los submódulos Git se pueden usar para combinar el contenido de varias ramas en repositorios Git en el momento de la compilación.
+Los submódulos Git se pueden usar para combinar el contenido de varias ramas en repositorios de Git en el momento de la compilación.
 
-Cuando se ejecuta el proceso de creación de Cloud Manager, después de clonar el repositorio configurado para la canalización y de retirar la rama configurada, si la rama contiene un `.gitmodules` en el directorio raíz, se ejecuta el comando .
+Cuando se ejecuta el proceso de creación de Cloud Manager, después de clonar el repositorio configurado para la canalización y de retirar la rama configurada, si la rama contiene un archivo `.gitmodules` en el directorio raíz, se ejecuta el comando.
 
 El siguiente comando extraerá cada submódulo en el directorio correspondiente.
 
@@ -74,9 +74,9 @@ El siguiente comando extraerá cada submódulo en el directorio correspondiente.
 $ git submodule update --init
 ```
 
-Esta técnica es una alternativa potencial a la solución descrita en el documento [Uso de repositorios Git de varias fuentes](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) para organizaciones que se sientan cómodos con el uso de submódulos git y no desean administrar un proceso de combinación externo.
+Esta técnica es una alternativa potencial a la solución descrita en el documento [Uso de repositorios de Git de varias fuentes](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) para organizaciones que se sientan cómodas con el uso de submódulos Git y no desean administrar un proceso de combinación externo.
 
-Por ejemplo, supongamos que hay tres repositorios, cada uno de los cuales contiene una sola rama denominada `main`. En el repositorio principal, es decir, el configurado en las canalizaciones, la variable `main` la rama tiene una `pom.xml` que declara los proyectos contenidos en los otros dos repositorios.
+Por ejemplo, supongamos que hay tres repositorios, cada uno de los cuales contiene una sola rama denominada `main`. En el repositorio principal, es decir, el configurado en las canalizaciones, la rama `main` tiene un archivo `pom.xml` que declara los proyectos contenidos en los otros dos repositorios.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -104,7 +104,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-Esto da como resultado un `.gitmodules` similar al siguiente.
+Esto da como resultado un archivo `.gitmodules` similar al siguiente.
 
 ```text
 [submodule "project-a"]
@@ -117,7 +117,7 @@ Esto da como resultado un `.gitmodules` similar al siguiente.
     branch = main
 ```
 
-Puede encontrar más información sobre los submódulos Git en la [Manual de referencia de Git.](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+Puede encontrar más información sobre los submódulos Git en el [Manual de referencia de Git.](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
 ### Limitaciones y recomendaciones {#limitations-recommendations}
 
@@ -126,7 +126,7 @@ Cuando utilice submódulos Git, tenga en cuenta las siguientes limitaciones.
 * La dirección URL de Git debe estar exactamente en la sintaxis descrita en la sección anterior.
 * Solo se admiten submódulos en la raíz de la rama.
 * Por motivos de seguridad, no incruste credenciales en las direcciones URL de Git.
-* A menos que sea necesario, se recomienda encarecidamente utilizar submódulos superficial.
+* A menos que sea necesario, se recomienda encarecidamente utilizar submódulos superficiales.
    * Para ello, ejecute `git config -f .gitmodules submodule.<submodule path>.shallow true` para cada submódulo.
 * Las referencias del submódulo Git se almacenan en confirmaciones de Git específicas. Como resultado, cuando se realizan cambios en el repositorio de submódulos, es necesario actualizar la confirmación a la que se hace referencia.
    * Por ejemplo, utilizando `git submodule update --remote`

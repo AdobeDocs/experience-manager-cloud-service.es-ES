@@ -1,62 +1,62 @@
 ---
-title: Configuración de canalizaciones que no sean de producción
+title: Configurar canalizaciones que no sean de producción
 description: Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
 source-wordcount: '1119'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configuración de canalizaciones que no sean de producción {#configuring-non-production-pipelines}
+# Configurar canalizaciones que no sean de producción {#configuring-non-production-pipelines}
 
 Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 
 ## Canalizaciones que no son de producción {#non-production-pipelines}
 
-Además de [canalizaciones de producción](#configuring-production-pipelines.md) que se implementa en entornos de ensayo y producción, también puede configurar canalizaciones que no sean de producción para validar el código.
+Además de [canalizaciones de producción](#configuring-production-pipelines.md) que se implementan en entornos de ensayo y producción, también puede configurar canalizaciones que no sean de producción para validar el código.
 
 Existen dos tipos de canalizaciones que no son de producción:
 
-* **Canalizaciones de calidad de código** : ejecutan análisis de calidad del código en el código de una rama de Git y ejecutan los pasos de compilación y calidad del código.
-* **Canalizaciones de implementación** - Además de ejecutar los pasos de compilación y calidad del código como las canalizaciones de calidad del código, estas canalizaciones implementan el código en un entorno que no es de producción.
+* **Canalizaciones de calidad de código**: ejecutan análisis de calidad del código en el código de una rama de Git y ejecutan los pasos de compilación y calidad del código.
+* **Canalizaciones de implementación**: además de ejecutar los pasos de compilación y calidad del código como las canalizaciones de calidad del código, estas canalizaciones implementan el código en un entorno que no es de producción.
 
 >[!NOTE]
 >
->Puede [editar configuración de canalización](managing-pipelines.md) después de la configuración inicial.
+>Puede [editar la configuración de canalización](managing-pipelines.md) después de la configuración inicial.
 
 ## Adición de una nueva canalización que no sea de producción {#adding-non-production-pipeline}
 
 Una vez que haya configurado el programa y tenga al menos un entorno utilizando la interfaz de usuario de Cloud Manager, estará listo para agregar una canalización que no sea de producción siguiendo estos pasos.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Acceda a la **Canalizaciones** de la pantalla de inicio de Cloud Manager. Haga clic en **+Añadir** y seleccione **Agregar canalización que no sea de producción**.
+1. Acceda a la tarjeta **Canalizaciones** de la pantalla de inicio de Cloud Manager. Haga clic en **+Agregar** y seleccione **Agregar canalización que no sea de producción**.
 
-   ![Añadir canalización que no sea de producción](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
+   ![Agregar canalización que no sea de producción](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. En el **Configuración** de la pestaña **Agregar canalización que no sea de producción** , seleccione el tipo de canalización que no sea de producción que desee añadir, ya sea **Canalización de calidad de código** o **Canalización de implementación**.
+1. En la pestaña **Configuración** del cuadro de diálogo **Agregar canalización que no sea de producción**, seleccione el tipo de canalización que no sea de producción que desee añadir, ya sea **Canalización de calidad de código** o **Canalización de implementación**.
 
    ![Cuadro de diálogo Agregar canalización que no sea de producción](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
-1. Proporcione un **Nombre de canalización que no es de producción** para identificar la canalización junto con la siguiente información adicional.
+1. Proporcione un **Nombre de canalización que no sea de producción** para identificar la canalización junto con la siguiente información adicional.
 
-   * **Déclencheur de implementación** : dispone de las siguientes opciones al definir los déclencheur de implementación para iniciar la canalización.
+   * **Activador de implementación**: dispone de las siguientes opciones al definir los activadores de implementación para iniciar la canalización.
 
-      * **Manual** - Utilice esta opción para iniciar manualmente la canalización.
-      * **Cambios en Git** - Esta opción inicia la canalización CI/CD cada vez que se añaden confirmaciones a la rama git configurada. Con esta opción, aún puede iniciar la canalización manualmente según sea necesario.
+      * **Manual**: utilice esta opción para iniciar manualmente la canalización.
+      * **Cambios en Git**: esta opción inicia la canalización CI/CD cada vez que se añaden confirmaciones a la rama git configurada. Con esta opción, aún puede iniciar la canalización manualmente según sea necesario.
 
 1. Haga clic en **Continuar**.
 
-1. En el **Código fuente** de la pestaña **Agregar canalización que no sea de producción** , debe seleccionar qué tipo de código debe procesar la canalización.
+1. En la pestaña **Código fuente** del cuadro de diálogo **Agregar canalización que no sea de producción**, debe seleccionar qué tipo de código debe procesar la canalización.
 
    * **[Código front-end](#front-end-code)**
    * **[Código de pila completa](#full-stack-code)**
    * **[Configuración de nivel web](#web-tier-config)**
 
-Los pasos para completar la creación de la canalización que no es de producción varían según la opción de **Código fuente** ha seleccionado. Siga los enlaces anteriores para ir a la siguiente sección de este documento para completar la configuración de la canalización.
+Los pasos para completar la creación de la canalización que no sea de producción varían según la opción de **Código fuente** que haya seleccionado. Siga los enlaces anteriores para ir a la siguiente sección de este documento para completar la configuración de la canalización.
 
 ### Código front-end {#front-end-code}
 
@@ -64,24 +64,24 @@ Una canalización de código front-end implementa las compilaciones de código f
 
 Para finalizar la configuración de la canalización de no producción de código front-end, siga estos pasos.
 
-1. En el **Código fuente** , debe definir las siguientes opciones.
+1. En el **Código fuente**, debe definir las siguientes opciones.
 
-   * **Entornos de implementación aptos** : Si la canalización es una canalización de implementación, debe seleccionar a qué entornos debe implementar.
-   * **Repositorio** - Esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
+   * **Entornos de implementación aptos**: si la canalización es una canalización de implementación, debe seleccionar a qué entornos debe implementar.
+   * **Repositorio**: esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
 
    >[!TIP]
    > 
    >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
-   * **Rama de Git** - Esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
+   * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
-   * **Ubicación del código** - Esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
+   * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
 
    ![Canalización front-end](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
 
 1. Haga clic en **Guardar**.
 
-La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en el **Canalizaciones** en el **Información general del programa** página.
+La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
 ### Código de pila completa {#full-stack-code}
 
@@ -93,24 +93,24 @@ Una canalización de código de pila completa implementa simultáneamente compil
 
 Para finalizar la configuración de la canalización de no producción de código de pila completa, siga estos pasos.
 
-1. En el **Código fuente** , debe definir las siguientes opciones.
+1. En el **Código fuente**, debe definir las siguientes opciones.
 
-   * **Entornos de implementación aptos** : Si la canalización es una canalización de implementación, debe seleccionar a qué entornos debe implementar.
-   * **Repositorio** - Esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
+   * **Entornos de implementación aptos**: si la canalización es una canalización de implementación, debe seleccionar a qué entornos debe implementar.
+   * **Repositorio**: esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
 
    >[!TIP]
    > 
    >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
-   * **Rama de Git** - Esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
+   * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
-   * **Ignorar configuración de nivel web** : Cuando se selecciona, la canalización no implementa la configuración del nivel web.
+   * **Ignorar configuración de nivel web**: cuando se selecciona, la canalización no implementa la configuración del nivel web.
 
    ![Canalización de pila completa](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
 1. Haga clic en **Guardar**.
 
-La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en el **Canalizaciones** en el **Información general del programa** página.
+La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
 ### Configuración de nivel web {#web-tier-config}
 
@@ -122,19 +122,19 @@ Una canalización de configuración de nivel web implementa las configuraciones 
 
 Para finalizar la configuración de la canalización de no producción de código de capa web, siga estos pasos.
 
-1. En el **Código fuente** , debe definir las siguientes opciones.
+1. En el **Código fuente**, debe definir las siguientes opciones.
 
-   * **Entornos de implementación aptos** : Si la canalización es una canalización de implementación, debe seleccionar a qué entornos debe implementar.
-   * **Repositorio** - Esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
+   * **Entornos de implementación aptos**: si la canalización es una canalización de implementación, debe seleccionar a qué entornos debe implementar.
+   * **Repositorio**: esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
 
    >[!TIP]
    > 
    >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
-   * **Rama de Git** - Esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
-   * **Ubicación del código** - Esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
-      * Para las canalizaciones de configuración de nivel web, esta es normalmente la ruta que contiene `conf.d`, `conf.dispatcher.d`y `opt-in` directorios.
-      * Por ejemplo, si la estructura del proyecto se generó a partir de la variable [AEM tipo de archivo del proyecto,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) la ruta sería `/dispatcher/src`.
+   * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
+   * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
+      * Para las canalizaciones de configuración de nivel web, esta es normalmente la ruta que contiene los directorios `conf.d`, `conf.dispatcher.d` y `opt-in`.
+      * Por ejemplo, si la estructura del proyecto se generó a partir del [tipo de archivo del proyecto de AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) la ruta sería `/dispatcher/src`.
 
    ![Canalización de niveles web](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
 
@@ -144,13 +144,13 @@ Para finalizar la configuración de la canalización de no producción de códig
 >
 >Si tiene una canalización de pila completa existente implementando en un entorno, al crear una canalización de configuración de capa web para el mismo entorno, se omitirá la configuración de capa web existente en la canalización de pila completa.
 
-La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en el **Canalizaciones** en el **Información general del programa** página.
+La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
 ## Omitir paquetes de Dispatcher {#skip-dispatcher-packages}
 
 Si desea que los paquetes de Dispatcher se creen como parte de la canalización, pero no desea que se publiquen para crear almacenamiento, puede desactivar la publicación, lo que puede reducir la duración de la ejecución de la canalización.
 
-La siguiente configuración para deshabilitar la publicación de paquetes de Dispatcher debe agregarse a través del proyecto `pom.xml` archivo. Se basa en una variable de entorno, que sirve como indicador que puede establecer en el contenedor de compilación de Cloud Manager para definir cuándo se deben ignorar los paquetes de Dispatcher.
+La siguiente configuración para deshabilitar la publicación de paquetes de Dispatcher debe agregarse a través del archivo `pom.xml` del proyecto. Se basa en una variable de entorno, que sirve como un indicador que puede establecer en el contenedor de compilación de Cloud Manager para definir cuándo se deben ignorar los paquetes de Dispatcher.
 
 ```xml
 <profile>
