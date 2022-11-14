@@ -3,7 +3,7 @@ title: Introducción a la administración de certificados SSL
 description: Descubra cómo Cloud Manager le proporciona herramientas de autoservicio para instalar certificados SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '638'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >title="Administrar certificados SSL"
 >abstract="Descubra cómo Cloud Manager le proporciona herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio para los usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=es" text="Ver, actualizar y reemplazar un certificado SSL"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Comprobar el estado de un certificado SSL"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=es" text="Comprobar el estado de un certificado SSL"
 
 Cloud Manager le proporciona herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio para los usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros como Let’s Encrypt.
 
