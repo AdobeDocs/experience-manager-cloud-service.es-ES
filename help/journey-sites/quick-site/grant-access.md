@@ -3,7 +3,7 @@ title: Concesión de acceso al desarrollador front-end
 description: Incorpore a los desarrolladores front-end en Cloud Manager para que tengan acceso al repositorio de Git y a la canalización del sitio de AEM.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '785'
 ht-degree: 100%
 
