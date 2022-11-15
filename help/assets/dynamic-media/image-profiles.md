@@ -4,9 +4,9 @@ description: Aprenda a crear perfiles de imagen de Dynamic Media que contengan a
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
+source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
 workflow-type: tm+mt
-source-wordcount: '3351'
+source-wordcount: '3344'
 ht-degree: 8%
 
 ---
@@ -84,14 +84,13 @@ Adobe recomienda revisar los cultivos y muestras generados para asegurarse de qu
 
 La resolución máxima admitida del tamaño del archivo de entrada es de 16 K.
 
-El formato de imagen CMYK no es compatible con el recorte inteligente.
-
 >[!NOTE]
 La resolución de 16K es una resolución de pantalla con aproximadamente 16.000 píxeles horizontalmente. La resolución de 16K más comentada es 15360 × 8640, que duplica el recuento de píxeles de 8K UHD en cada dimensión, por un total de cuatro veces más píxeles. Esta resolución tiene 132,7 megapíxeles, 16 veces la resolución 4K y 64 veces la resolución 1080p.
 
 | Formato de imagen | Extensión de archivo que no distingue entre mayúsculas y minúsculas | Tipo MIME | Espacio de color de entrada admitido | Tamaño máximo del archivo de entrada admitido | ¿Formato de imagen admitido? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Sí |
+| CMYK |  |  |  |  | No |
 | EPS |  |  |  |  | No |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Sí; el primer fotograma del GIF animado se utiliza para la representación. No se puede configurar ni cambiar el primer fotograma. |
 | JPEG | `.jpg` y `.jpeg` | image/jpeg | sRGB | 15 GB | Sí |
