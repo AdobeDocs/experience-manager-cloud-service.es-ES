@@ -2,9 +2,9 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 1dfef0f1157ead7f1240e9a41794436197136daa
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1327'
 ht-degree: 9%
 
 ---
@@ -36,6 +36,9 @@ La instancia de AEM de origen puede estar ejecutándose detrás de un cortafuego
 
 * El servicio de almacenamiento del blob de Azure: `casstorageprod.blob.core.windows.net`
 * El extremo de E/S de asignación de usuario: `usermanagement.adobe.io`
+
+>[!NOTE]
+>Si la extracción falla debido al siguiente error : &quot;javax.net.ssl.SSLHandsysException: sun.security.validator.ValidatorException: Error al crear la ruta PKIX: sun.security.provider.certpath.SunCertPathBuilderException: no se puede encontrar una ruta de certificación válida para el destino solicitado&quot;, esto se puede resolver importando el certificado de CA correspondiente.
 
 ### Habilitar el registro SSL {#enable-ssl-logging}
 
