@@ -3,9 +3,9 @@ title: AEM Recorrido para desarrolladores de CMS sin encabezado
 description: Obtenga información sobre el desarrollo sin objetivos mediante Adobe Experience Manager (AEM) as a Headless CMS. Aprenda a utilizar funciones como modelos de contenido, fragmentos de contenido y una API de GraphQL para potenciar la entrega de contenido sin encabezado.
 landing-page-description: Obtenga información sobre la entrega e implementación de contenido sin encabezado. Obtenga más información sobre el desarrollo de su estrategia dentro de su empresa.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 06aec2fa43db2393416dd5efab886d9c301ffdb2
+source-git-commit: 64862456bfbffe1799a3f0b6ea3353f45e60c52f
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1051'
 ht-degree: 16%
 
 ---
@@ -61,6 +61,8 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 | 7 | [Cómo ponerlo todo juntos: su aplicación y su contenido en AEM sin encabezado](put-it-all-together.md) | Aprenda a tomar su proyecto AEM y prepararlo para su lanzamiento con el SDK sin encabezado de AEM. |
 | 8 | [Publicación de la aplicación sin encabezado](go-live.md) | Obtenga información sobre cómo implementar la aplicación en vivo y tome el código local en Git y muévalo a Cloud Manager Git para la canalización CI/CD. |
 | 9 | [Opcional: Cómo crear aplicaciones de una sola página (SPA) con AEM](create-spa.md) | Explore cómo combinar envíos completos y sin encabezado y aprenda a crear SPA editables con AEM marco SPA Editor. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Siguientes pasos {#what-is-next}
 
