@@ -4,7 +4,7 @@ description: Aprenda a invalidar el contenido almacenado en caché de la CDN (re
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
+source-git-commit: 532d32334456b4b791e3a5ffe17a780f378dd1cc
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
@@ -23,11 +23,11 @@ La red de distribución de contenido (CDN) almacena en caché los recursos de Dy
 
 Si ha activado [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) en su cuenta y está utilizando la CDN empaquetada en Adobe, puede purgar todas las direcciones URL con diferentes cadenas de consulta depurando la URL base única.
 
-Por ejemplo, invalidar `https://weekendsite.scene7.com/is/image/grundfos/image`, también invalida las siguientes direcciones URL:
+Por ejemplo, invalidar `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`, también invalida las siguientes direcciones URL:
 
-* `https://weekendsite.scene7.com/is/image/grundfos/image`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?$PLP$`
 * y así sucesivamente.
 
 Sin embargo, esta invalidación no es el caso de los dominios genéricos que no admiten imágenes inteligentes, como `s7d1.scene7.com`. Estos dominios aún necesitan la dirección URL completa para que la invalidación funcione correctamente.
