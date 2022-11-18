@@ -1,23 +1,23 @@
 ---
 title: Integración de Adobe Analytics con la automatización de la configuración de Experience Cloud
-description: La automatización de la configuración de Experience Cloud proporciona una forma sencilla y automatizada de integrar e instrumentar Experience Manager Sites con Experience Platform Launch y Adobe Analytics mediante una sencilla interfaz de asistente de IU. Aprenda a utilizar la configuración automatizada con su propio sitio.
+description: La automatización de la configuración del Experience Cloud proporciona una forma sencilla y automatizada de integrar e instrumentar Experience Manager Sites con etiquetas del Experience Platform y Adobe Analytics mediante una sencilla interfaz de asistente de IU. Aprenda a utilizar la configuración automatizada con su propio sitio.
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
+source-git-commit: 539d3947964652dd92620ce0b0b057754742be96
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 83%
+ht-degree: 66%
 
 ---
 
 # Integración de Adobe Analytics con la automatización de la configuración de Experience Cloud {#integrate-adobe-analytics-automation-setup}
 
-La automatización de la configuración de Experience Cloud proporciona una forma sencilla y automatizada de integrar e instrumentar Experience Manager Sites con Experience Platform Launch y Adobe Analytics mediante una sencilla interfaz de asistente de IU.
+La automatización de la configuración del Experience Cloud proporciona una forma sencilla y automatizada de integrar e instrumentar Experience Manager Sites con etiquetas del Experience Platform y Adobe Analytics mediante una sencilla interfaz de asistente de IU.
 
 Nunca ha sido más sencillo integrar Adobe Analytics con AEM Sites. Con la automatización de la configuración de Experience Cloud, configure, integre e instrumente su sitio para capturar análisis de rendimiento y comprender cómo los clientes interactúan y se convierten, todo con solo unos pocos clics.
 
-En este vídeo se explica cómo un sitio de AEM está integrado con Experience Platform Launch y Analytics mediante la automatización de la configuración de Experience Cloud:
+En este vídeo se explica cómo un sitio AEM está integrado con las etiquetas de Experience Platform y Analytics mediante la automatización de la configuración del Experience Cloud:
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
@@ -57,7 +57,7 @@ El entorno debe estar listo para la automatización de la configuración del Exp
    La configuración de automatización se produce de forma asíncrona. **Comprobar estado de integración** mostrará el estado actual de la integración.
 
    * **En curso**: indica que el trabajo se está ejecutando.
-   * **Integración finalizada**: indica que el trabajo ha completado la integración de Analytics y Launch, la configuración de extensiones de Launch y reglas de Launch y la creación del nuevo grupo de informes en Adobe Analytics.
+   * **Integración finalizada** : indica que el trabajo ha completado la integración de Analytics y Etiquetas, la configuración de extensiones de Etiquetas y reglas de Etiquetas y la creación del nuevo grupo de informes en Adobe Analytics.
    * **Fallo**: indica que el trabajo automatizado no se pudo completar correctamente. Para comprobar los archivos de registro de este trabajo, haga clic en el vínculo Registros.
 
 ## Validación de la configuración de AEM
@@ -66,7 +66,7 @@ Una vez finalizada la automatización, confirme que su sitio está activando los
 
 1. Abra una página del sitio utilizando el **Editor de sitios**.
 1. Utilice la opción **Ver tal y como aparece publicado** para cargar una versión publicada de la página.
-1. Utilice las herramientas para desarrolladores del explorador para inspeccionar el tráfico de red y que **Launch** y `AppMeasurement.js` los archivos se están cargando.
+1. Utilice las herramientas para desarrolladores del navegador para inspeccionar el tráfico de red y que **Etiquetas** y `AppMeasurement.js` los archivos se están cargando.
 1. Inspeccione la consola del explorador para ver que la capa de datos del cliente de Adobe activa y recopila los eventos de nivel de componente y página.
 
 ## Validación de la configuración de Analytics
