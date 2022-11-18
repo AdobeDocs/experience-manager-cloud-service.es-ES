@@ -2,9 +2,9 @@
 title: Modelos de fragmento de contenido (Recursos - Fragmentos de contenido)
 description: Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en AEM y cómo crear fragmentos de contenido con contenido estructurado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2887'
 ht-degree: 96%
 
 ---
@@ -17,7 +17,7 @@ Para usar modelos de fragmentos de contenido, haga lo siguiente:
 
 1. [Habilite la funcionalidad de modelos de fragmentos de contenido para la instancia.](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Cree](#creating-a-content-fragment-model) y [configure](#defining-your-content-fragment-model) sus modelos de fragmentos de contenido.
-1. [Habilite los modelos de fragmentos de contenido](#enabling-disabling-a-content-fragment-model) para usarlos al crear fragmentos de contenido.
+1. [Habilitar los modelos de fragmento de contenido](#enabling-disabling-a-content-fragment-model) para usar al crear fragmentos de contenido
 1. [Permita los modelos de fragmentos de contenido en las carpetas de recursos necesarias](#allowing-content-fragment-models-assets-folder) configurando **Políticas**.
 
 ## Creación de un modelo de fragmento de contenido {#creating-a-content-fragment-model}

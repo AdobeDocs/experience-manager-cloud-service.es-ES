@@ -4,9 +4,9 @@ description: Descubra cómo los modelos de fragmentos de contenido sirven de bas
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2898'
 ht-degree: 98%
 
 ---
@@ -19,7 +19,7 @@ Para usar modelos de fragmentos de contenido, haga lo siguiente:
 
 1. [Habilite la funcionalidad de modelos de fragmentos de contenido para la instancia.](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 1. [Cree](#creating-a-content-fragment-model) y [configure](#defining-your-content-fragment-model) sus modelos de fragmentos de contenido.
-1. [Habilite los modelos de fragmentos de contenido](#enabling-disabling-a-content-fragment-model) para usarlos al crear fragmentos de contenido.
+1. [Habilitar los modelos de fragmento de contenido](#enabling-disabling-a-content-fragment-model) para usar al crear fragmentos de contenido
 1. [Permita los modelos de fragmentos de contenido en las carpetas de recursos necesarias](#allowing-content-fragment-models-assets-folder) configurando **Políticas**.
 
 ## Creación de un modelo de fragmento de contenido {#creating-a-content-fragment-model}
@@ -78,7 +78,6 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
          >Al actualizar manualmente la propiedad **Nombre de propiedad** para un tipo de datos, tenga en cuenta que los nombres deben contener únicamente A-Z, a-z, 0-9 y el guion bajo &quot;_&quot; como carácter especial.
          >
          >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
-
       Por ejemplo:
 
       ![Propiedades de campo](assets/cfm-models-05.png)
@@ -231,10 +230,10 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 >AEM tiene una protección contra recurrencias para lo siguiente:
 >
 >* Referencias de contenido
->  Esto evita que el usuario agregue una referencia al fragmento actual. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
+   >  Esto evita que el usuario agregue una referencia al fragmento actual. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
 >
 >* Referencias a fragmento en GraphQL
->  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
+   >  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
 
 
 ### Referencia de contenido {#content-reference}
