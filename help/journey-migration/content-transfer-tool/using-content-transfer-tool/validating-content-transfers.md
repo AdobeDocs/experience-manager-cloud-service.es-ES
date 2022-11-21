@@ -2,10 +2,10 @@
 title: Validación de transferencias de contenido
 description: Usar la herramienta de transferencia de contenido para validar transferencias de contenido
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 015f3b0232861ac961922245650cb02db44daf77
+source-git-commit: 99ecf1309b9fa7613bfb9c99de9677700082f128
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '890'
+ht-degree: 2%
 
 ---
 
@@ -136,7 +136,7 @@ Además de incluirse en el registro de ingesta, también se puede acceder al inf
 
 ### Error de validación. ¿Y ahora qué?  {#validation-fail}
 
-El primer paso es determinar si la ingesta realmente falló o si el contenido extraído ya está presente en el entorno de destino. Esto puede ocurrir si se repite una ingesta con el **Borrar el contenido existente en la instancia de Cloud antes de la ingesta** opción desactivada.
+El primer paso es determinar si la ingesta realmente falló o si el contenido extraído ya está presente en el entorno de destino. Esto puede ocurrir si se repite una ingesta con el **Borrar el contenido existente en la instancia de Cloud antes de la ingesta** está desactivada.
 
 Para verificarlo, elija una ruta del informe de validación y compruebe si está presente en el entorno de destino. Si se trata de un entorno de publicación, puede limitarse a comprobar las páginas y los recursos directamente. Abra un ticket con el Servicio de atención al cliente si necesita ayuda con este paso.
 

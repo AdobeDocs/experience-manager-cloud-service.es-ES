@@ -2,7 +2,7 @@
 title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 99ecf1309b9fa7613bfb9c99de9677700082f128
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 44%

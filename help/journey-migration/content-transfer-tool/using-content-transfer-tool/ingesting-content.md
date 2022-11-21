@@ -2,10 +2,10 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
+source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 13%
+source-wordcount: '1029'
+ht-degree: 12%
 
 ---
 
@@ -40,6 +40,10 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
    >[!NOTE]
    >
    >Si el origen era Autor, se recomienda ingerirlo en el nivel Autor del destino. Del mismo modo, si la fuente es Publicada, target también debe ser Publicado.
+
+   >[!NOTE]
+   >
+   >Si el nivel de destino es `Author`, la instancia de autor se cerrará durante la ingesta y no estará disponible para los usuarios (por ejemplo, autores o cualquier persona que realice el mantenimiento, etc.). Esto es para proteger el sistema y evitar cualquier cambio que pueda perderse o causar un conflicto de ingesta. Asegúrese de que su equipo sea consciente de este hecho. Tenga en cuenta también que el entorno aparecerá en hibernación durante la ingesta del autor.
 
    >[!NOTE]
    >
