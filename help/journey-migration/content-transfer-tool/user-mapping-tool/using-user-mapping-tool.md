@@ -2,9 +2,9 @@
 title: Uso de la herramienta de asignación de usuarios
 description: Uso de la herramienta de asignación de usuarios
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '753'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ Siga los pasos a continuación para configurar esto:
 1. Vaya a [Consola de Adobe Developer](https://console.adobe.io) usar su Adobe ID.
 1. Cree un nuevo proyecto o abra un proyecto existente.
 1. Añadir una API: haga clic en **Agregar a proyecto** y seleccione **API**
-1. Seleccione la API de administración de usuarios.  Es posible que necesite obtener permisos para tener esta opción.
+1. Seleccione la API de administración de usuarios.  Debe tener permisos de administrador del sistema para que esta opción esté disponible.
 1. Cree una credencial JWT.
 1. Genere un par de claves o Cargue una clave pública (rsa no es buena).  Hay un botón, **Generación de un par de claves pública/privada**, que lo hará por usted.  Asegúrese de guardar las claves pública y privada.
 1. Vaya a la API de administración de usuarios.
