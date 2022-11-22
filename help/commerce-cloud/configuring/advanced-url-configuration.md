@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 17%
+source-wordcount: '2214'
+ht-degree: 16%
 
 ---
 
@@ -182,6 +182,18 @@ Las páginas de producto específicas se seleccionan según el SKU o la categor�
 La variable `UrlProvider` está preconfigurado para generar vínculos profundos a páginas de productos y categorías específicas en instancias de nivel de autor. Esto resulta útil para los editores que exploran un sitio con el modo de vista previa, navegan a una página de producto o categoría específica y vuelven al modo de edición para editar la página.
 
 Por otro lado, en las instancias de nivel de publicación, las URL de las páginas de catálogo deben mantenerse estables para no perder ganancias en las clasificaciones de los motores de búsqueda, por ejemplo. Debido a que las instancias de nivel de publicación no procesarán vínculos profundos a páginas de catálogo específicas de forma predeterminada. Para cambiar este comportamiento, la variable _Estrategia de página específica del proveedor de URL del CIF_ se puede configurar para que siempre genere direcciones URL de página específicas.
+
+### Varias páginas del catálogo {#multiple-product-pages}
+
+Cuando los editores deseen tener control total de la navegación de nivel superior de un sitio, puede que no se desee utilizar una sola página de catálogo para representar las categorías de nivel superior de un catálogo. En su lugar, los editores pueden crear varias páginas de catálogo, una para cada categoría del catálogo que desean incluir en la navegación de nivel superior.
+
+Para ese caso de uso, cada una de las páginas del catálogo puede tener una referencia a una página de producto y categoría específica para la categoría configurada para la página del catálogo. La variable `UrlProvider` se utilizarán para crear vínculos para las páginas y categorías de la categoría configurada. Sin embargo, por motivos de rendimiento solo se tienen en cuenta los elementos secundarios de página de catálogo directo de la raíz de navegación/página de aterrizaje de un sitio.
+
+Se recomienda que las páginas de producto y categoría de una página de catálogo descendientes de esa página de catálogo; de lo contrario, es posible que componentes como Navegación o Ruta de navegación no funcionen correctamente.
+
+>[!NOTE]
+>
+> La compatibilidad completa con varias páginas de catálogo requiere [Componentes principales de CIF 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) o posterior.
 
 ## Personalizaciones {#customization}
 
