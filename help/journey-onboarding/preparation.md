@@ -3,7 +3,7 @@ title: Preparación de la incorporación
 description: Antes de iniciar el proceso de incorporación, hay que realizar una serie de pasos preparatorios que el administrador del sistema debe conocer antes de iniciar sesión en el sistema.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
 ht-degree: 100%
 
