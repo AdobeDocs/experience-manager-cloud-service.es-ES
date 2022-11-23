@@ -4,7 +4,7 @@ description: Estas son las notas de la versión para Cloud Manager 2022.7.0 en A
 feature: Release Information
 exl-id: c19e4efb-69d6-4915-9e63-c47cd91e941b
 source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '173'
 ht-degree: 100%
 
