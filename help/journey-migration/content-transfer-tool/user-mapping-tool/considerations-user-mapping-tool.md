@@ -2,9 +2,9 @@
 title: Consideraciones importantes sobre la herramienta de asignación de usuarios
 description: Consideraciones importantes sobre la herramienta de asignación de usuarios
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 18047b129a9a347cbf6edcdc07dc6570fca26d3b
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,15 @@ ht-degree: 0%
 
 Se registrarán los siguientes casos específicos:
 
-1. Si un usuario no tiene ninguna dirección de correo electrónico en la `profile/email` campo de *jcr* nodo en el que se migrará el usuario o grupo en cuestión, pero no se asignará.
+1. Si un usuario no tiene ninguna dirección de correo electrónico en la `profile/email` campo de *jcr* nodo en el que se migrará el usuario o grupo en cuestión, pero no se asignará.  Este será el caso incluso si la dirección de correo electrónico se utiliza como nombre de usuario para iniciar sesión.
 
 1. Si no se encuentra un correo electrónico determinado en el sistema Identity Management System de Adobe (IMS) para el ID de organización utilizado (o si el ID de IMS no se puede recuperar por otro motivo), el usuario o grupo en cuestión se migrará, pero no se asignará.
 
 1. Si el usuario está deshabilitado actualmente, se trata igual que si no estuviera deshabilitado. Se asignará, migrará como de costumbre y permanecerá deshabilitado en la instancia de nube.
 
 1. Si existe un usuario en la instancia de AEM Cloud Service de destino con el mismo nombre de usuario (rep:principalName) que uno de los usuarios de la instancia de origen AEM el usuario o grupo en cuestión no se migrará.
+
+1. Si se migra un usuario sin que primero se asigne mediante Asignación de usuarios, en el sistema de nube de destino no podrá iniciar sesión con su ID de IMS.  Es posible que puedan iniciar sesión utilizando el método AEM tradicional, pero tenga en cuenta que esto no es normalmente lo que se desea o se espera.
 
 ## Consideraciones adicionales {#additional-considerations}
 
