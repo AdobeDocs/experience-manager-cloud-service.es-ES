@@ -3,7 +3,7 @@ title: Introducción a Cloud Manager
 description: Obtenga información sobre cómo Cloud Manager admite su proyecto de AEM a través de sus programas, entornos y canalizaciones.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '834'
 ht-degree: 100%
 
