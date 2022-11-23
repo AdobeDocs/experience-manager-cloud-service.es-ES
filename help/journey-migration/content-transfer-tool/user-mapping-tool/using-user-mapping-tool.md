@@ -2,9 +2,9 @@
 title: Uso de la herramienta de asignación de usuarios
 description: Uso de la herramienta de asignación de usuarios
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
+source-git-commit: a9e30f6a15bbc9fc830849e05e1814a2cdd50fd5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '816'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 4%
 La herramienta de asignación de usuarios utiliza una API que le permite buscar usuarios de Adobe Identity Management System (IMS) por correo electrónico y devolver sus ID de IMS. Esta API requiere que el usuario cree un ID de cliente para su organización, un Secreto de cliente y un Token de acceso o portador.
 
 ## Configuración de la herramienta de asignación de usuarios {#setting-up-user-mapping}
+
+**Requisito previo:** La asignación de usuarios requiere que cada usuario que se asigne a su ID de IMS tenga una dirección de correo electrónico en su perfil en AEM y en IMS.  Tenga en cuenta que, aunque el usuario utilice una dirección de correo electrónico como ID de usuario para iniciar sesión, la asignación no funcionará para ese usuario a menos que la dirección de correo electrónico también esté en el perfil y también en IMS.
 
 Siga los pasos a continuación para configurar esto:
 
