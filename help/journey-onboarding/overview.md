@@ -3,7 +3,7 @@ title: Introducción al Recorrido de incorporación a AEM as a Cloud Service
 description: Comience aquí para obtener una descripción general del recorrido guiado a través del proceso de incorporación para AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1175'
 ht-degree: 100%
 
