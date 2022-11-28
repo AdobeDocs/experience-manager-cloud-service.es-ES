@@ -3,9 +3,9 @@ title: Configuración del Cloud Service de Dynamic Media
 description: Obtenga información sobre cómo configurar Dynamic Media en Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 58aee2ad24b38fd8abc197961adda524832d2614
+source-git-commit: 50a7db14a378f99eeadc3f9cb91f228ea4139ff4
 workflow-type: tm+mt
-source-wordcount: '3596'
+source-wordcount: '3795'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | Ruta de carpeta raíz de la empresa | Ruta de la carpeta raíz de su empresa. |
    | Publicación de recursos | Puede elegir entre las tres opciones siguientes:<br>**[!UICONTROL Inmediatamente ]**: Cuando se cargan recursos, el sistema los incorpora y proporciona la URL o la Incrustar instantáneamente. No es necesario que el usuario intervenga para publicar recursos.<br>**[!UICONTROL Al activar]** : Debe publicar el recurso explícitamente primero antes de proporcionar un vínculo de URL/incrustación.<br>**[!UICONTROL Publicación selectiva ]**- Los recursos se publican automáticamente solo para vista previa segura. También pueden publicarse explícitamente en el Experience Manager as a Cloud Service sin publicarse en DMS7 para su envío en el dominio público. En el futuro, esta opción pretende publicar recursos en un Experience Manager as a Cloud Service y publicar recursos en Dynamic Media, mutuamente excluyentes entre sí. Es decir, puede publicar recursos en DMS7 para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas. O bien, puede publicar recursos exclusivamente en un Experience Manager as a Cloud Service para la vista previa; esos mismos recursos no se publican en DMS7 para su envío en el dominio público. |
    | Servidor de previsualización segura | Permite especificar la ruta URL del servidor de vista previa de representaciones seguras. Es decir, una vez generadas las representaciones, el Experience Manager as a Cloud Service puede acceder y previsualizar de forma segura las representaciones remotas de Dynamic Media (no se devuelven binarios a la instancia as a Cloud Service del Experience Manager).<br>A menos que tenga una disposición especial para utilizar el servidor de su propia empresa o un servidor especial, Adobe recomienda que deje esta configuración como se ha especificado. |
-   | Sincronizar todo el contenido | Seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir selectivamente recursos de la sincronización con Dynamic Media. Al anular la selección de esta opción, puede elegir entre los dos modos de sincronización de Dynamic Media siguientes:<br>**[!UICONTROL Modo de sincronización de Dynamic Media]**<br>**[!UICONTROL Habilitar de forma predeterminada ]**- La configuración se aplica a todas las carpetas de forma predeterminada, a menos que marque una carpeta específicamente para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Deshabilitado de forma predeterminada]** - La configuración no se aplica a ninguna carpeta hasta que marque explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.<br>Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, seleccione **[!UICONTROL Propiedades]**. En el **[!UICONTROL Detalles]** en la **[!UICONTROL Modo de sincronización de Dynamic Media]** , elija entre las tres opciones siguientes. Cuando haya terminado, seleccione **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si ha seleccionado **Sincronizar todo el contenido**más temprano.* Consulte también [Trabajar con publicación selectiva en el nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Heredado ]**- No hay ningún valor de sincronización explícito en la carpeta. En su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de la nube. El estado detallado de heredado se muestra mediante una información del objeto.<br>**[!UICONTROL Habilitar para subcarpetas]** - Incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.<br>**[!UICONTROL Deshabilitado para subcarpetas ]**- Excluya todo lo que se encuentra en este subárbol de la sincronización con Dynamic Media. |
+   | Sincronizar todo el contenido | Seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir selectivamente recursos de la sincronización con Dynamic Media. Al anular la selección de esta opción, puede elegir entre los dos modos de sincronización de Dynamic Media siguientes:<br>**[!UICONTROL Modo de sincronización de Dynamic Media]**<br>**[!UICONTROL Habilitar de forma predeterminada ]**- La configuración se aplica a todas las carpetas de forma predeterminada, a menos que marque una carpeta específicamente para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Deshabilitado de forma predeterminada]** - La configuración no se aplica a ninguna carpeta hasta que marque explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.<br>Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, seleccione **[!UICONTROL Propiedades]**. En el **[!UICONTROL Detalles]** en la **[!UICONTROL Modo de sincronización de Dynamic Media]** , elija entre las tres opciones siguientes. Cuando haya terminado, seleccione **[!UICONTROL Guardar]**. _Recuerde: estas tres opciones no están disponibles si ha seleccionado **Sincronizar todo el contenido**más temprano._ Consulte también [Trabajar con publicación selectiva en el nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Heredado ]**- No hay ningún valor de sincronización explícito en la carpeta. En su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de la nube. El estado detallado de heredado se muestra mediante una información del objeto.<br>**[!UICONTROL Habilitar para subcarpetas]** - Incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.<br>**[!UICONTROL Deshabilitado para subcarpetas ]**- Excluya todo lo que se encuentra en este subárbol de la sincronización con Dynamic Media. |
 
    >[!NOTE]
    >
@@ -129,7 +129,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 Ya ha finalizado con la configuración básica; está listo para usar Dynamic Media.
 
-Si desea personalizar aún más la configuración, puede completar opcionalmente cualquiera de las tareas de [Configuración avanzada en Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+Si desea personalizar aún más la configuración, como habilitar los permisos de ACL (Access Control List), puede completar opcionalmente cualquiera de las tareas en [Configuración avanzada en Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ### Resolución de problemas de una nueva configuración de Dynamic Media {#troubleshoot-dm-config}
 
@@ -185,8 +185,9 @@ La contraseña modificada se guarda al seleccionar **[!UICONTROL Guardar]** en l
 
 ## (Opcional) Configuración avanzada en Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-Para personalizar aún más la configuración y configuración de Dynamic Media o optimizar su rendimiento, puede realizar una o más de las siguientes acciones: *opcional* tareas:
+Para personalizar aún más la configuración y configuración de Dynamic Media o optimizar su rendimiento, puede realizar una o más de las siguientes acciones: _opcional_ tareas:
 
+* [(Opcional) Habilite permisos ACL en Dynamic Media](#optional-enable-acl)
 * [(Opcional) Configuración de Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Opcional) Ajuste el rendimiento de Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
@@ -195,6 +196,33 @@ Para personalizar aún más la configuración y configuración de Dynamic Media 
 * [(Optional) Filtering assets for replication](#optional-filtering-assets-for-replication)
 
 -->
+
+### (Opcional) Habilite los permisos de la Lista de control de acceso en Dynamic Media {#optional-enable-acl}
+
+Cuando ejecuta Dynamic Media en AEM, actualmente se reenvía `/is/image` solicitudes para el servicio de imágenes de vista previa segura sin comprobar los permisos de ACL (Access Control List) en PlatformServerServlet. Sin embargo, puede _enable_ Permisos ACL. Al hacerlo, se reenvía el `/is/image` solicitudes. Si un usuario no está autorizado a acceder al recurso, se muestra el error &quot;403 - Prohibido&quot;.
+
+**Para habilitar permisos ACL en Dynamic Media:**
+
+1. En el Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
+
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+
+1. Una nueva pestaña del navegador se abre para **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]** página.
+
+   ![29-08-2019](assets/2019-08-02_16-17-29.png)
+
+1. En la página, desplácese hasta el nombre _Adobe CQ Scene7 Platform Server_.
+
+1. A la derecha del nombre, seleccione el icono de lápiz (**[!UICONTROL Editar los valores de configuración]**).
+
+1. En el **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** seleccione la casilla de verificación para las dos configuraciones siguientes:
+
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Cuando está habilitado, esta configuración almacena en caché los resultados de permisos durante dos minutos (predeterminado) para guardarlos.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` : Cuando está activado, esta configuración valida el acceso de un usuario mientras obtiene una vista previa de los recursos mediante Dynamic Media Image Server.
+
+   ![Habilitar la configuración de la lista de control de acceso en el modo Dynamic Media - Scene7](/help/assets/dynamic-media/assets/acl.png)
+
+1. Cerca de la esquina inferior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 
 ### (Opcional) Configuración de Dynamic Media {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
