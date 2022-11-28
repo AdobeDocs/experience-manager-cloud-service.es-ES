@@ -2,9 +2,9 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 1dfef0f1157ead7f1240e9a41794436197136daa
+source-git-commit: 4c2a02bb7ea981f78e51afc6ee20a3a936dfd666
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1326'
 ht-degree: 9%
 
 ---
@@ -101,7 +101,8 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
->title="Rellenar conjunto de migración&quot; abstract=&quot;Después de crear un conjunto de migración, debe rellenarse con el contenido de la instancia de origen que debe moverse al entorno as a Cloud Service AEM. Para ello, la herramienta de transferencia de contenido debe estar instalada en la instancia de origen."
+>title="Rellenar conjunto de migración"
+>abstract="Después de crear un conjunto de migración, debe rellenarse con el contenido de la instancia de origen que debe moverse al entorno as a Cloud Service AEM. Para ello, la herramienta de transferencia de contenido debe estar instalada en la instancia de origen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Extracción de contenido"
 
 Para rellenar el conjunto de migración creado en Cloud Acceleration Manager, debe instalar la última versión de la herramienta de transferencia de contenido en la instancia de Adobe Experience Manager (AEM) de origen. Siga esta sección para aprender a rellenar el conjunto de migración.
