@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión para Cloud Manager 2022.11.0 en Adobe Experience Manager as a Cloud Service
-description: Estas son las notas de la versión para Cloud Manager 2022.11.0 en AEM as a Cloud Service.
+title: Notas de la versión para Cloud Manager 2022.12.0 en Adobe Experience Manager as a Cloud Service
+description: Estas son las notas de la versión para Cloud Manager 2022.12.0 en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3045c042129951bf693bca36a42c9111862e09f2
+source-git-commit: aa7f2175e2a43a318a6171e622d292ed3a8e958b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 37%
+source-wordcount: '202'
+ht-degree: 38%
 
 ---
 
 
-# Notas de la versión para Cloud Manager 2022.11.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión para Cloud Manager 2022.12.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página describe las notas de la versión para Cloud Manager 2022.11.0 en AEM as a Cloud Service.
+Esta página describe las notas de la versión para Cloud Manager 2022.12.0 en AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,19 +21,15 @@ Esta página describe las notas de la versión para Cloud Manager 2022.11.0 en A
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de Cloud Manager 2022.11.0 en AEM as a Cloud Service es el 3 de noviembre de 2022. La próxima versión está prevista para el 29 de noviembre de 2022.
+La fecha de la versión de Cloud Manager 2022.12.0 en AEM as a Cloud Service es el 29 de noviembre de 2022. La próxima versión está prevista para el 19 de enero de 2023.
 
 ## Novedades {#what-is-new}
 
-* El panel de licencias de la solución AEM Sites ahora mostrará los detalles del contrato, incluido si el inquilino está o no dentro de su suscripción.
-
->[!NOTE]
->
-> Esta función se implantará gradualmente en las próximas semanas para todos los inquilinos.
-
-* Cuando un entorno asociado a una canalización tiene un estado que no permite que se ejecute la canalización, la acción de ejecución se desactiva con una información de objeto explicativa.
-* Se ha añadido un mensaje mejorado a la interfaz de usuario cuando la función **Agregar programa** está desactivado debido a que no hay suficientes derechos para el inquilino.
+* Notificaciones para [Actualizaciones de mantenimiento de AEM](/help/overview/what-is-new-and-different.md#aem-updates) se mostrará en la interfaz de usuario de Cloud Manager. Este cambio se implementará de forma gradual en las semanas posteriores a la versión 2022.12.0.
+* Cuando una ingesta a través de la variable [Herramienta de transferencia de contenido (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) está en curso, el estado del entorno tanto en la consola de desarrollador como en Cloud Manager se mostrará como `Ingestion in Progress`.
+* Mejoras en la disponibilidad y fiabilidad de [Canalizaciones de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) se hicieron.
 
 ## Correcciones de errores {#bug-fixes}
 
-* Los comentarios durante la canalización de producción de edición se mejoraron para captar ocurrencias poco frecuentes de uno o más entornos faltantes.
+* Se hizo un cambio para evitar [canalizaciones front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) cuando se está ejecutando una ejecución de canalización en el mismo entorno.
+* Se realizó un cambio para evitar una `PATCH /program//environment//variables` solicitud de entornos con el `FAILED` estado.
