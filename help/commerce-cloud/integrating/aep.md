@@ -10,13 +10,13 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
+exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
+source-git-commit: c2fd3d33eb02ea671d9811ad527bf167a279ff01
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2080'
 ht-degree: 1%
 
 ---
-
 
 # Integración de los componentes principales AEM-CIF y Adobe Experience Platform {#aem-cif-aep-integration}
 
@@ -471,10 +471,31 @@ El proyecto PWA Studio permite crear tiendas de Progressive Web Application (PWA
 
 A partir de ahora, se admiten los siguientes eventos:
 
-- addToCart
-- pageView
-- customUrl
-- referrerUrl
+__Eventos XDM de experiencias:__
+
+1. Agregar al carro de compras (AEM)
+1. Ver página (AEM)
+1. Ver producto (AEM)
+1. Solicitud de búsqueda enviada (AEM)
+1. Respuesta de búsqueda recibida (AEM)
+
+When [Componentes de Peregrine](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) se vuelven a utilizar en el proyecto AEM Commerce:
+
+__Eventos XDM de experiencias:__
+
+1. Eliminar del carro de compras
+1. Abrir carro
+1. Ver carro
+1. Compra instantánea
+1. Iniciar cierre de compra
+1. Completar cierre de compra
+
+__Eventos XDM de perfil:__
+
+1. Iniciar sesión
+1. Crear cuenta
+1. Editar cuenta
+
 
 ## Recursos adicionales {#additional-resources}
 
@@ -482,5 +503,5 @@ Para obtener más información, consulte los siguientes recursos:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Información general sobre el conector del Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+- [Eventos de conector de Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
 - [Información general de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-
