@@ -8,10 +8,10 @@ user-guide-description: Recursos informativos y enlaces a la documentación sobr
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ce2866c90353a086cd9288c0209bf624c597922d
+source-git-commit: f1e1e12d9a19afd6c98029fc5b7a7b73ebf41686
 workflow-type: tm+mt
-source-wordcount: '3789'
-ht-degree: 97%
+source-wordcount: '3816'
+ht-degree: 96%
 
 ---
 
@@ -158,6 +158,12 @@ ht-degree: 97%
       + [Introducción a Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [Perfiles de AEM as a Cloud Service Team y de producto](/help/onboarding/aem-cs-team-product-profiles.md)
       + [Grupos de usuarios de notificaciones](/help/journey-onboarding/user-groups.md)
++ Pruebas de AEMaaCS {#trials}
+   + Ensayos sin encabezado {#headless}
+      + [Personalizar contenido en una aplicación de ejemplo React](/help/trials/headless/customize-app.md)
+      + [Crear la estructura de contenido para la aplicación](/help/trials/headless/content-structure.md)
+      + [Crear contenido sin encabezado](/help/trials/headless/create-content.md)
+      + [Extraer contenido a través de la API de GraphQL](/help/trials/headless/extract-content.md)
 + Recorrido de migración de AEM as a Cloud Service {#migration-journey}
    + [Introducción al traslado de AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparación](/help/journey-migration/readiness.md)
