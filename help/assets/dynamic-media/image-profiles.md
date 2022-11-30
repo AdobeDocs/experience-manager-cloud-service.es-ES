@@ -4,9 +4,9 @@ description: Aprenda a crear perfiles de imagen de Dynamic Media que contengan a
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
+source-git-commit: 08b523fe66b86867f65c794e843fc55fe0faa050
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3524'
 ht-degree: 8%
 
 ---
@@ -54,19 +54,28 @@ El enfoque se describe en [Enfoque de imágenes](/help/assets/dynamic-media/asse
 
 ## Opciones de recorte {#crop-options}
 
-Al implementar Recorte inteligente en imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica el siguiente límite:
+Al implementar el recorte inteligente en imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica el siguiente límite:
 
 | Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
-| Número de recortes inteligentes por imagen | 5 | 100 |
+| Número de cultivos inteligentes por imagen | 5 | 100 |
 
 Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-Las coordenadas de recorte inteligentes dependen de la relación de aspecto. Para la configuración de recorte inteligente de un perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Adobe recomienda utilizar el mismo área de recorte. De este modo, se garantiza que no haya ningún impacto en las diferentes dimensiones utilizadas en el perfil de imagen.
+Las coordenadas de recorte inteligente dependen de la relación de aspecto. Para la configuración de recorte inteligente de un perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Adobe recomienda utilizar el mismo área de recorte. De este modo, se garantiza que no haya ningún impacto en las diferentes dimensiones utilizadas en el perfil de imagen.
 
-Cada generación de recorte inteligente que cree requiere un procesamiento adicional. Por ejemplo, si se agregan más de cinco relaciones de aspecto de recorte inteligente, la tasa de ingesta de recursos puede ser lenta. También puede causar un aumento de la carga en los sistemas. Como puede aplicar Recorte inteligente en el nivel de carpeta, Adobe recomienda utilizarlo en las carpetas *only* donde sea necesario.
+Cada generación de recorte inteligente que cree requiere un procesamiento adicional. Por ejemplo, si se agregan más de cinco relaciones de aspecto de recorte inteligente, la tasa de consumo de los recursos puede ser lenta. También puede causar un aumento de la carga en los sistemas. Como puede aplicar Recorte inteligente en el nivel de carpeta, Adobe recomienda utilizarlo en las carpetas *only* donde sea necesario.
+
+**Pautas para definir el Recorte inteligente en un perfil de imagen**
+Para mantener bajo control el uso de Smart Crop y optimizar el tiempo de procesamiento y almacenamiento de los cultivos, Adobe recomienda las siguientes directrices y sugerencias:
+
+* Evite crear perfiles de recorte inteligente duplicados que tengan los mismos valores de anchura y altura.
+* Asigne un nombre a los cultivos inteligentes en función de las dimensiones de recorte, no del uso final. Esto ayuda a optimizar para duplicados donde se utiliza una sola dimensión en varias páginas.
+* Cree perfiles de imagen en el tipo página/recurso para carpetas y subcarpetas específicas en lugar de un perfil de recorte inteligente común que se aplique a todas las carpetas o a todos los recursos.
+* Un perfil de imagen que aplique a las subcarpetas anula un perfil de imagen que se aplica a la carpeta.
+* Lo ideal es tener entre 10 y 15 cultivos inteligentes por imagen para optimizar los índices de pantalla y el tiempo de procesamiento.
 
 Tiene dos opciones de recorte de imagen para elegir. También puede automatizar la creación de muestras de color e imagen o conservar el contenido de recorte en las resoluciones de destino.
 
