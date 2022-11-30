@@ -2,10 +2,10 @@
 title: Replicación
 description: Distribución y resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
+source-git-commit: b40c46ff5d4399e6feff0ccaf37bdf0336c88016
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +18,14 @@ Adobe Experience Manager as a Cloud Service utiliza la capacidad [Distribución 
 >Lectura [Distribución](/help/overview/architecture.md#content-distribution) para obtener más información.
 
 ## Métodos de publicación de contenido {#methods-of-publishing-content}
+
+>[!NOTE]
+>
+>Si está interesado en la publicación masiva de contenido, utilice el [Flujo de trabajo del árbol de contenido de publicación](#publish-content-tree-workflow).
+>Este paso del flujo de trabajo se ha creado específicamente para el Cloud Service y puede gestionar de forma eficaz las cargas útiles de gran tamaño.
+>No se recomienda crear su propio código personalizado de publicación masiva.
+>Si necesita personalizar por cualquier razón, puede almacenar en déclencheur este paso de flujo de trabajo o flujo de trabajo mediante las API de flujo de trabajo existentes.
+>Aunque siempre es recomendable publicar solo contenido que deba publicarse y tener cuidado de no intentar publicar un gran número de contenido si no es necesario, no hay límites en cuanto a la cantidad de contenido que puede enviar a través del flujo de trabajo del árbol de contenido de publicación.
 
 ### Cancelación/publicación rápida: cancelación/publicación planeada {#publish-unpublish}
 
