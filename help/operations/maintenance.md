@@ -2,10 +2,10 @@
 title: Tareas de mantenimiento en AEM as a Cloud Service
 description: Tareas de mantenimiento en AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 174e9b2410745ec766dbcd071a3508a509b8367a
+source-git-commit: 0e33ef91ce3668e7ce6aff98053c9f798b940dfd
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 78%
+source-wordcount: '1068'
+ht-degree: 75%
 
 ---
 
@@ -49,6 +49,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
        <li>Se eliminan las versiones con más de 30 días</li>
        <li>Se conservan las cinco versiones más recientes de los últimos 30 días</li>
        <li>Independientemente de las reglas anteriores, se conserva la versión más reciente.</li>
+       <li>Se recomienda que los clientes, que tienen requisitos regulatorios para procesar páginas del sitio exactamente como aparecieron en una fecha específica, se integren con servicios externos especializados.<li>
      </ol></td>
   </td>
   </tr>
@@ -60,6 +61,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
        <li>Para la auditoría de replicación, se eliminan los registros de auditoría con más de tres días</li>
        <li>Para la auditoría de DAM (Assets), se eliminan los registros de auditoría con más de 30 días</li>
        <li>Para la auditoría de páginas, se eliminan los registros con más de tres días.</li>
+       <li>Se recomienda que los clientes, que tienen requisitos regulatorios para producir registros de auditoría no editables, se integren con servicios externos especializados.<li>
      </ol></td>
    </td>
   </tr>
