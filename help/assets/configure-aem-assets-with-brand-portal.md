@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 3255e988c5ec9a0de33660061aeb21d91c3bc4d3
+source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
 workflow-type: tm+mt
-source-wordcount: '2449'
+source-wordcount: '2420'
 ht-degree: 11%
 
 ---
@@ -29,11 +29,11 @@ Debe lo siguiente para activar Brand Portal en su Experience Manager Assets as a
 
 >[!NOTE]
 >
->Una Experience Manager Assets como [!DNL Cloud Service] solo tiene derecho a conectarse con un inquilino de Brand Portal. Puede tener varios entornos (desarrollo, producción y etapa) para su Experience Manager Assets as a [!DNL Cloud Service] instancia, donde Brand Portal se activa en un entorno.
+>Se requiere un entorno de producción configurado para un Experience Manager Assets as a [!DNL Cloud Service] para conectarse con el inquilino de Brand Portal.
 
 **Pasos para activar Brand Portal**
 
-Puede activar Brand Portal al crear entornos para su Experience Manager Assets as a [!DNL Cloud Service] o por separado. Supongamos que los entornos ya se han creado y que ahora debe activar Brand Portal.
+Puede activar Brand Portal al crear entornos de producción para su Experience Manager Assets as a [!DNL Cloud Service] o por separado. Supongamos que el entorno ya se creó y que ahora es necesario que active Brand Portal.
 
 1. Inicie sesión en Adobe Cloud Manager y vaya a **[!UICONTROL Entornos]**.
 
@@ -69,7 +69,7 @@ Puede activar Brand Portal al crear entornos para su Experience Manager Assets a
 * [Administrar entornos en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
-**Inicie sesión en su inquilino de Brand Portal**:
+**Inicie sesión en su inquilino de Brand Portal.**:
 
 Después de activar el inquilino de Brand Portal en Cloud Manager, puede iniciar sesión en Brand Portal desde el Admin Console o directamente utilizando la URL del inquilino.
 
@@ -79,8 +79,8 @@ En este caso, el ID del inquilino es la organización de IMS.
 
 Siga estos pasos si no está seguro de la URL de Brand Portal:
 
-1. Iniciar sesión en [Admin Console](https://adminconsole.adobe.com/) y vaya a **[!UICONTROL Productos]**.
-1. En el carril izquierdo, seleccione **[!UICONTROL Adobe Experience Manager Brand Portal: Brand Portal]**.
+1. Inicie sesión en [Admin Console](https://adminconsole.adobe.com/) y vaya a **[!UICONTROL Productos]**.
+1. En el panel izquierdo, seleccione **[!UICONTROL Adobe Experience Manager Brand Portal: Brand Portal]**.
 1. Haga clic en **[!UICONTROL Vaya a Brand Portal]** para abrir Brand Portal directamente en el explorador.
 
    O bien, copie la dirección URL del inquilino de Brand Portal de la **[!UICONTROL Vaya a Brand Portal]** vincúlelo y péguelo en el navegador para abrir la interfaz de Brand Portal.
@@ -256,7 +256,7 @@ En la consola de Adobe Developer, los proyectos y las API se configuran en el ni
 
 Realice los siguientes pasos para generar las credenciales de cuenta de servicio y la carga útil JWT:
 
-1. Inicie sesión en la consola de Adobe Developer con privilegios de administrador del sistema en la organización IMS (inquilino de Brand Portal). La dirección URL predeterminada es [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Inicie sesión en la consola de Adobe Developer con privilegios de administrador del sistema en la organización de IMS (inquilino de Brand Portal). La dirección URL predeterminada es [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -403,7 +403,7 @@ Ahora puede probar la configuración comprobando el agente de distribución y pu
 
 Perform the following steps to validate the configuration:
 
-1. Log in to AEM Assets.
+1. Login to AEM Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
