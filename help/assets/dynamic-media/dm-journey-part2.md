@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
+source-git-commit: 9e425601c493740050d61e8025ea3f9e3dbdc4d8
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2902'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Ahora agregue un parámetro de procesamiento de imagen al final de la dirección
 
 Observe que se genera una nueva representación del reloj. Una clave para entender de este simple ejercicio de cambiar la anchura de la imagen es que la imagen vista se genera 100% dinámicamente.
 
-Ahora cambie el valor de anchura de `500` píxeles hasta `1000` píxeles y, a continuación, pulse **[!UICONTROL Entrar]**. [Pruébelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000).
+Ahora cambie el valor de anchura de `500` píxeles hasta `1000` píxeles y, a continuación, pulse **[!UICONTROL Entrar]**. [Pruébelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 El momento en que presionas **[!UICONTROL Entrar]**, el explorador vuelve al servidor de imágenes de Dynamic Media. Genera una nueva representación del reloj, basada en el nuevo valor de anchura que acaba de escribir, luego envía la nueva imagen al explorador y la almacena en caché.
 
 Dynamic Media tiene varios parámetros de procesamiento de imágenes que puede utilizar para ajustar los recursos de imagen en páginas web. Puede [vea una lista de ellos aquí](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
@@ -128,7 +128,9 @@ Cuando haya terminado, guarde el ajuste preestablecido y ahora estará disponibl
 ![Aplicación del ajuste preestablecido de imagen *Medio* para generar una representación de una imagen](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Aplicar el ajuste preestablecido de imagen Medio para generar una representación de una imagen._
 
-Copie la dirección URL y péguela en el navegador para comprobar el aspecto de la imagen. [Pruébelo](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}. En el navegador, observe el nombre del ajuste preestablecido de imagen _Medio_ en la ruta URL completa.
+Copie la dirección URL y péguela en el navegador para comprobar el aspecto de la imagen. [Pruébelo](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}.
+
+En el navegador, observe el nombre del ajuste preestablecido de imagen _Medio_ en la ruta URL completa.
 
 Se puede ver el tipo de claridad que se muestra en la imagen. Esa calidad se debe en parte a la forma en que se disparó el tazón de chocolate. Además, se debe en parte a que con Dynamic Media, se pueden almacenar imágenes más grandes que las que se entregan a los canales digitales.
 
