@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
+source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
 workflow-type: tm+mt
-source-wordcount: '3708'
+source-wordcount: '3710'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ A medida que siga leyendo, aprenderá más sobre por qué es importante este con
 
 ### La red de distribución de contenido
 
-Cuando esté listo para lanzarse con un recurso de imagen o un recurso de vídeo, la estructura básica de Dynamic Media, que consta de una red de entrega potente y de nivel superior. La red atiende a cientos de clientes de todo el mundo cada día. Los recursos se distribuyen en la red de distribución de contenido (o CDN) alojada en Akamai. La CDN es un sistema de servicios informáticos conectados en red que cooperan de forma transparente para ofrecer contenido, especialmente contenido multimedia enriquecido de gran tamaño, a los usuarios finales.
+Cuando esté listo para lanzarse con un recurso de imagen o un recurso de vídeo, la estructura básica de Dynamic Media, que consta de una red de entrega potente y de nivel superior. La red atiende a cientos de clientes de todo el mundo cada día. Los recursos se distribuyen en la red de distribución de contenido (o CDN) alojada en Akamai. La CDN es un sistema de servicios informáticos en red que cooperan de forma transparente para ofrecer contenido, especialmente contenido multimedia enriquecido, a los usuarios finales.
 
 En el sistema CDN, el contenido web se almacena en las cachés web a través de Internet. A continuación, se entrega desde la caché web a los usuarios finales para que su envío sea más rápido. Por lo tanto, la primera vez que alguien descarga una página web, los recursos que ve se envían a una caché de CDN. Se almacenan en el servidor para que la próxima vez que alguien en la misma área acceda a la página web, el mismo contenido de caché se entregue más rápido. El contenido se entrega más rápido porque está más cerca del usuario final. Una CDN permite una visualización más rápida de la página web y, sin embargo, reduce las exigencias de ancho de banda del servidor central, ya que el contenido se entrega desde una red de caché, no desde un servidor central en cada caso. Este flujo optimizado significa una mejor experiencia de usuario, lo que produce un aumento de las ventas.
 
@@ -261,7 +261,7 @@ Otro método para obtener una vista previa de un recurso es seleccionar un recur
 ![Vista previa de un recurso en función del ajuste preestablecido de visor de zoom vertical Light](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Vista previa de un recurso en función del ajuste preestablecido de visualizador &quot;ZoomVertical_light&quot; seleccionado. El puntero del ratón (`+`) se movió sobre el reloj para acercar. Observe los botones URL e Incrustar ._
 
-¡La representación de arriba está activa! [Pruébelo](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
+¡La representación de arriba está activa! [Pruébelo](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}.
 
 ## Opcional: Más información
 
