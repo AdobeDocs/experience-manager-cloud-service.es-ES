@@ -4,7 +4,7 @@ description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
+source-git-commit: bc46064093c22d8902a673e76fdb53c626a5cbb0
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 1%
@@ -238,7 +238,7 @@ Los archivos o carpetas con nombres que coincidan con estas condiciones se omite
 Para los nombres de archivo de recursos, el nombre y la ruta de JCR se sanean mediante la API: `JcrUtil.escapeIllegalJcrChars`.
 
 * Los caracteres Unicode no se cambian
-* Sustituya los caracteres especiales por su código de escape de URL, por ejemplo, `new asset.png` se actualiza a `new%20asset.png`:
+* Sustituya los caracteres especiales por su código de escape de URL, por ejemplo, `new%asset.png` se actualiza a `new%25asset.png`:
 
    ```
                    URL escape code   
@@ -247,16 +247,14 @@ Para los nombres de archivo de recursos, el nombre y la ruta de JCR se sanean me
    %               %25
    '               %27
    *               %2A
-   .               %2E
    /               %2F
    :               %3A
    [               %5B
-   \n              %5Cn
-   \r              %5Cr
-   \t              %5Ct
+   \n              %0A
+   \r              %0D
+   \t              %09
    ]               %5D
    |               %7C
-   space char      %20
    ```
 
 **Gestión del nombre de la carpeta en la importación masiva**
