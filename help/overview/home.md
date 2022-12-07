@@ -2,25 +2,25 @@
 title: Introducción a Experience Manager as a Cloud Service
 description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 93%
 
 ---
 
-# Información general de Experience Manager as a Cloud Service {#aem-overview-guide}
+# Documentación as a Cloud Service del Experience Manager {#aem-overview-guide}
 
 Empiece aquí para aprender cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 
-## Artículos sobre la información general {#key-articles}
+## Artículos de información general clave {#key-articles}
 
 * [Introducción](introduction.md)
 * [Terminología](terminology.md)
 * [Novedades y diferencias](what-is-new-and-different.md)
 * [Introducción a la arquitectura](architecture.md)
 
-## Guías de Experience Manager as a Cloud Service {#aem-guides}
+## Guías as a Cloud Service del Experience Manager {#aem-guides}
 
 | Guía del usuario | Descripción |
 |---|---|
@@ -36,7 +36,7 @@ Empiece aquí para aprender cómo funciona Experience Manager as a Cloud Service
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones back-end de Experience Manager as a Cloud Service: tareas de indexación y mantenimiento. |
 | [Guía del usuario de Commerce](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en AEM as a Cloud Service. |
 
-## Otros recursos de Experience Manager {#other-resources}
+## Otros recursos de ayuda de Experience Manager {#other-resources}
 
 * [Actualizaciones recientes de la documentación](https://helpx.adobe.com/es/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Documentación de Dispatcher](/help/implementing/dispatcher/overview.md)

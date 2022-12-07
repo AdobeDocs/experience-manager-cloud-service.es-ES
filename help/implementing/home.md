@@ -1,12 +1,12 @@
 ---
 title: Implementación de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre implementación de Adobe Experience Manager as a Cloud Service
-landing-page-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service Examine la documentación de AEM Cloud Services para desarrollar e implementar sus aplicaciones.
+landing-page-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 94%
+source-wordcount: '402'
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ Busque recursos informativos sobre la implementación para Experience Manager as
 ## Artículos clave sobre implementación {#key-articles}
 
 * [Administración de entornos con Cloud Manager](cloud-manager/manage-environments.md)
-* [Implementación de AEM as a Cloud Service](deploying/overview.md)
+* [Implementación AEM as a Cloud Service](deploying/overview.md)
 * [Desarrollo para AEM as a Cloud Service](developing/introduction/development-guidelines.md)
 * [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md)
 * [Dispatcher en AEM as a Cloud Service](dispatcher/overview.md)
@@ -45,7 +45,7 @@ Busque recursos informativos sobre la implementación para Experience Manager as
 * [Documentación de Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es)
 * [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [Preparación para el RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
