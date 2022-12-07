@@ -3,10 +3,10 @@ title: Crear un programa
 description: Aprenda a utilizar Cloud Manager para crear su primer programa.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
+source-git-commit: 228330465b6266590a5badbfa84644b3d1329033
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 95%
+source-wordcount: '626'
+ht-degree: 91%
 
 ---
 
@@ -38,6 +38,10 @@ Existen dos tipos diferentes de programas:
 * Un **programa de zona protegida** normalmente se crea para servir los propósitos de formación, ejecución de demostraciones, habilitación, POC o documentación.
 
 Dado que sirven para diferentes propósitos, los diferentes entornos tienen diferentes opciones. Sin embargo, el proceso de creación es similar. Para este recorrido de integración crearemos un entorno de entorno de zona protegida.
+
+>[!TIP]
+>
+>Si necesita crear un programa de producción, consulte la [Recursos adicionales](#additional-resources) para obtener un vínculo a la documentación que describe los programas en detalle.
 
 ## Creación de un programa de zona protegida {#create-sandbox}
 

@@ -2,10 +2,10 @@
 title: Creación de programas de producción
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de producción y alojar tráfico en directo.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
+source-git-commit: c68d4240fb70cc1d533c5fad6472c6c192085603
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '541'
+ht-degree: 80%
 
 ---
 
@@ -32,13 +32,26 @@ Siga estos pasos para crear un programa de producción.
 
 1. Haga clic en **Agregar programa** en la esquina superior derecha de la pantalla.
 
-   ![Página de aterrizaje de Cloud Manager](assets/first_timelogin1.png)
+   ![Página de aterrizaje de Cloud Manager](assets/log-in.png)
 
-1. Seleccione **Configurar para producción** en el asistente Crear programa para crear un programa de producción. Puede aceptar el nombre de programa predeterminado o editarlo antes de hacer clic en **Continuar**.
+1. Seleccione **Configurar para producción** en el asistente Crear programa para crear un programa de producción.
 
-   ![Creación del asistente del programa](assets/create-prod1.png)
+   1. Puede aceptar el nombre de programa predeterminado o editarlo.
+   1. Si lo desea, puede arrastrar y soltar una imagen en miniatura para identificar el programa.
+   1. Haga clic o pulse **Continuar**.
+
+   ![Creación del asistente del programa](assets/create-production-program.png)
+
+1. Si ha mejorado los derechos de seguridad, la variable **Seguridad mejorada** proporcionará la opción **Habilitar seguridad mejorada** para su programa de producción. Si es necesario, marque la opción para habilitar la seguridad mejorada y toque o haga clic en **Continuar**.
+
+   * La seguridad mejorada no se puede habilitar ni deshabilitar después de la creación del programa.
+   * [Más información](https://www.adobe.com/go/hipaa-ready) acerca de la implementación de la solución lista para HIPAA de Adobe.
+
+   ![Opción Seguridad mejorada](assets/create-production-program-enhanced.png)
 
 1. En la pestaña **Soluciones y complementos**, seleccione las soluciones que desea incluir en el programa.
+
+   * Si seleccionó la variable **Habilitar seguridad mejorada** anteriormente, solo se le permitirá seleccionar tantas soluciones para las que haya autorizaciones de HIPAA disponibles.
 
    ![Seleccionar soluciones](assets/setup-prod-select.png)
 
