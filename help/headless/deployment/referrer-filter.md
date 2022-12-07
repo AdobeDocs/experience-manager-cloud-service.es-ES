@@ -3,16 +3,21 @@ title: Configuración del filtro de referente con AEM Headless
 description: El filtro de referente de Adobe Experience Manager habilita el acceso desde hosts de terceros. Se necesita una configuración OSGi para el filtro de referente para habilitar el acceso al punto de conexión de GraphQL para aplicaciones sin encabezado.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d8cc024fa5128e4b27098d1bff92588487fe101a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '277'
+ht-degree: 69%
 
 ---
 
 # Filtro de referente {#referrer-filter}
 
-El filtro de referente de Adobe Experience Manager habilita el acceso desde hosts de terceros. Se necesita una configuración OSGi para el filtro de referente para habilitar el acceso al punto de conexión de GraphQL para aplicaciones sin encabezado.
+El filtro de referente de Adobe Experience Manager habilita el acceso desde hosts de terceros.
+
+Se necesita una configuración OSGi para el filtro de referente para habilitar el acceso al extremo GraphQL para aplicaciones sin encabezado a través del POST HTTP. Cuando se utilizan AEM consultas persistentes sin encabezado que acceden a AEM a través de la GET HTTP, no es necesario configurar un filtro de referente.
+
+>[!WARNING]
+> AEM filtro de referente no es una fábrica de configuración OSGi, lo que significa que solo una configuración está activa en un servicio de AEM a la vez. Cuando sea posible, evite agregar configuraciones de filtro de referente personalizadas, ya que esto sobrescribirá AEM configuraciones nativas y puede dañar la funcionalidad del producto.
 
 Para ello, añada una configuración OSGi adecuada para el filtro de referente que:
 
@@ -25,21 +30,21 @@ Por ejemplo, para conceder acceso a solicitudes con el referente `my.domain` pue
 
 ```xml
 {
-    "allow.empty":false,
-    "allow.hosts":[
+    "allow.empty": false,
+    "allow.hosts": [
       "my.domain"
     ],
-    "allow.hosts.regexp":[
+    "allow.hosts.regexp": [
       ""
     ],
-    "filter.methods":[
+    "filter.methods": [
       "POST",
       "PUT",
       "DELETE",
       "COPY",
       "MOVE"
     ],
-    "exclude.agents.regexp":[
+    "exclude.agents.regexp": [
       ""
     ]
 }
