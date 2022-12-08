@@ -2,10 +2,10 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
+source-git-commit: ee2240eac76d4df372d94152a7c17b6e449ef7c8
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 12%
+source-wordcount: '1181'
+ht-degree: 11%
 
 ---
 
@@ -119,7 +119,7 @@ Para ello, cree un nuevo trabajo de ingesta y asegúrese de que **Barrido** se d
 
 ### CAM No se puede recuperar el token de migración {#cam-unable-to-retrieve-the-migration-token}
 
-La recuperación automática del token de migración puede fallar por diferentes motivos, incluido usted [configuración de una lista de permitidos IP mediante Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) en el entorno de Cloud Service de destino.  En estos casos, verá el cuadro de diálogo siguiente cuando intente iniciar una ingesta:
+La recuperación automática del token de migración puede fallar por diferentes motivos, incluido usted [configuración de una lista de permitidos IP mediante Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) en el entorno de Cloud Service de destino. En estos casos, verá el cuadro de diálogo siguiente cuando intente iniciar una ingesta:
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -134,6 +134,14 @@ Deberá recuperar el token de migración manualmente haciendo clic en el víncul
 Solo podrá iniciar una ingesta en el entorno de destino si pertenece al entorno local **Administradores de AEM** en el servicio de autor del Cloud Service de destino. Si no pertenece al grupo de administradores de AEM, verá un error como se muestra a continuación cuando intente iniciar una ingesta. Puede solicitar al administrador que lo añada a la **Administradores de AEM** o pida el propio token, que puede pegar en el **Entrada del token de migración** campo .
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+
+### Las actualizaciones automáticas a través de Release Orchestrator siguen habilitadas
+
+Release Orchestrator mantiene los entornos actualizados automáticamente mediante la aplicación de actualizaciones. Si la actualización se activa cuando se realiza una ingesta, puede causar resultados impredecibles, incluida la corrupción del entorno. Esta es una de las razones por las que se debe registrar un ticket de soporte antes de iniciar una ingesta (consulte &quot;Nota&quot; anterior), de modo que se pueda programar la desactivación temporal de Release Orchestrator.
+
+Si Release Orchestrator aún se está ejecutando cuando se está iniciando una ingesta, la interfaz de usuario presentará este mensaje de error. Puede optar por continuar de todas formas, aceptando el riesgo, marcando el campo y presionando el botón de nuevo.
+
+![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
 ## Siguientes pasos {#whats-next}
 
