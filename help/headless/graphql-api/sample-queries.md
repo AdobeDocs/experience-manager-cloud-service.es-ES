@@ -3,7 +3,7 @@ title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muest
 description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
+source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 93%
@@ -1464,7 +1464,7 @@ Esta consulta busca lo siguiente:
 
 Esta consulta busca lo siguiente:
 
-* para un solo fragmento de contenido de tipo `article` en una ruta específica
+* para un solo fragmento de contenido de tipo `author` en una ruta específica
    * dentro de él, los datos relacionados con la variación: `another`
 
 **Consulta de muestra**
@@ -1487,7 +1487,7 @@ Esta consulta busca lo siguiente:
 
 Esta consulta busca lo siguiente:
 
-* para fragmentos de contenido de tipo `article` con una variación específica: `another`
+* para fragmentos de contenido de tipo `author` con una variación específica: `another`
 
 >[!NOTE]
 >
