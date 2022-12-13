@@ -3,10 +3,10 @@ title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muest
 description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1540'
+ht-degree: 93%
 
 ---
 
@@ -1116,12 +1116,6 @@ Estas consultas de muestra se basan en el proyecto WKND. Esto tiene:
 >
 >Como los resultados pueden ser extensos, no se reproducen aquí.
 
->[!NOTE]
->
->Varias consultas hacen referencia a la variación `variation1`. Esto no está en el paquete WKND estándar. Debe crearse para realizar pruebas.
->
->If `variation1` no existe, entonces la variable `master`se devolverá como valor predeterminado.
-
 ### Consulta de muestra para todos los fragmentos de contenido de un determinado modelo con las propiedades especificadas {#sample-wknd-all-model-properties}
 
 Esta consulta de muestra busca lo siguiente:
@@ -1471,27 +1465,19 @@ Esta consulta busca lo siguiente:
 Esta consulta busca lo siguiente:
 
 * para un solo fragmento de contenido de tipo `article` en una ruta específica
-   * dentro de él, los datos relacionados con la variación: `variation1`
+   * dentro de él, los datos relacionados con la variación: `another`
 
 **Consulta de muestra**
 
 ```graphql
 {
-  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo", variation: "another") {
     item {
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
@@ -1501,29 +1487,23 @@ Esta consulta busca lo siguiente:
 
 Esta consulta busca lo siguiente:
 
-* para fragmentos de contenido de tipo `article` con una variación específica: `variation1`
+* para fragmentos de contenido de tipo `article` con una variación específica: `another`
+
+>[!NOTE]
+>
+>Esto demostrará la alternativa para los fragmentos de contenido que no tienen un [Variación](/help/headless/graphql-api/content-fragments.md#variations) del nombre especificado.
 
 **Consulta de muestra**
 
 ```graphql
 {
-  articleList(variation: "variation1") {
+  authorList(variation: "another") {
     items {
-      _path
-      _variation
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
