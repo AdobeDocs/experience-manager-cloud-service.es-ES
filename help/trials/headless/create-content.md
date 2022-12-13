@@ -4,16 +4,21 @@ description: Utilice el modelo de fragmento de contenido que creó anteriormente
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '814'
+ht-degree: 1%
 
 ---
 
 # Crear contenido sin encabezado {#create-content}
 
 Siguiendo el módulo de aprendizaje del producto, aprenda a utilizar [los modelos de fragmento de contenido que creó anteriormente](content-structure.md) para crear contenido que se pueda utilizar para la creación de páginas o como base para el contenido sin encabezado. Este documento sirve como complemento de la gira interactiva, abarcando los mismos pasos y vinculando con recursos adicionales cuando corresponde.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="Crear nuevo contenido"
+>abstract="Basándose en los modelos que ha creado en el módulo 1, aprenderá a crear contenido que se pueda utilizar para la creación de páginas o como base del contenido sin encabezado."
 
 ## Fragmentos de contenido {#introduction}
 

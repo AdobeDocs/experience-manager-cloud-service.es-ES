@@ -4,10 +4,10 @@ description: Descubra cómo los fragmentos de contenido en Adobe Experience Mana
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 96%
+source-wordcount: '2070'
+ht-degree: 98%
 
 ---
 
@@ -88,11 +88,6 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en u
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 >
 >Para obtener más información, consulte también [Explicación de los fragmentos de contenido y de experiencias en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments?lang=es).
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview"
->title="Cree la estructura de contenido para la aplicación"
->abstract="A medida que siga nuestra serie de guías interactivas aprenderá a crear la estructura (también conocida como el modelo de fragmento de contenido) que sirve como base para todo su contenido sin encabezado."
 
 ## Fragmentos de contenido y servicios de contenido {#content-fragments-and-content-services}
 

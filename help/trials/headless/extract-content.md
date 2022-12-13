@@ -4,10 +4,10 @@ description: Aprenda a utilizar los fragmentos de contenido y la API de GraphQL 
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1216'
+ht-degree: 1%
 
 ---
 
@@ -22,6 +22,11 @@ Primero, aprenderá a ejecutar dos tipos diferentes de consultas: **list** y **b
 >[!TIP]
 >
 >Si desea obtener más información sobre la API de GraphQL, consulte la [Sección Recursos adicionales](#additional-resources) al final de este módulo para la guía de la API de GraphQL.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="Extraer contenido mediante la API de GraphQL"
+>abstract="En este módulo aprenderá a utilizar los fragmentos de contenido y la API de GraphQL como sistema de gestión de contenido sin objetivos."
 
 ## Explorador de GraphQL {#graphql-explorer}
 
@@ -43,7 +48,7 @@ Seleccione el **AEM recursos de demostración** del **Punto final** menú desple
 
 ## Copiar y ejecutar una consulta de lista {#list-query}
 
-Comience con una simple consulta de lista para orientarse sobre cómo funcionan las API de GraphQL de AEM as a Cloud Service. Este ejemplo de consulta de lista devolverá una lista de todo el contenido que utiliza un modelo de fragmento de contenido específico. Las páginas de inventario y categoría suelen utilizar este formato de consulta.
+Comience con una consulta de lista sencilla para orientarse sobre cómo funcionan las API de GraphQL de AEM as a Cloud Service. Este ejemplo de consulta de lista devolverá una lista de todo el contenido que utiliza un modelo de fragmento de contenido específico. Las páginas de inventario y categoría suelen utilizar este formato de consulta.
 
 1. Copie el siguiente fragmento de código.
 
