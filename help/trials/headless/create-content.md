@@ -3,13 +3,13 @@ title: Crear contenido sin encabezado
 description: Utilice el modelo de fragmento de contenido que creó anteriormente para crear contenido que se pueda usar para la creación de páginas o como base para el contenido sin encabezado.
 hidefromtoc: true
 index: false
-source-git-commit: 7d5161d97a93d4731e33eda586179560a6a55ef3
+exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Crear contenido sin encabezado {#create-content}
 
@@ -83,7 +83,7 @@ Una vez guardado el nuevo fragmento de contenido, se abre el editor de fragmento
 
 En este módulo, ha aprendido a crear un fragmento de contenido basado en el modelo que ha creado anteriormente. Así es como un autor de contenido crearía contenido sin encabezado estructurado.
 
-Ahora que el contenido se ha creado y publicado, ahora puede extraer ese contenido a través de Graph QL mediante API AEM. Aprenderá sobre esto en el módulo [Extraer contenido a través de la API de GraphQL.](extract-content.md)
+Ahora que el contenido se ha creado y publicado, ahora puede extraer ese contenido a través de Graph QL mediante API AEM. Aprenderá sobre esto en el módulo [Extraiga contenido a través de la API de GraphQL.](extract-content.md)
 
 Para volver a la pantalla de inicio de la versión de prueba, haga clic en **Soluciones** en la parte superior derecha de la barra de navegación y seleccione **Experience Manager**.
 

@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
-source-wordcount: '4179'
-ht-degree: 59%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -122,11 +122,9 @@ Aunque GraphQL también admite solicitudes de GET, estas pueden alcanzar límite
 >
 >Para permitir consultas directas o POST en Dispatcher, puede pedir al administrador del sistema que realice lo siguiente:
 >
->* Cree una variable de entorno de Cloud Manager llamada `ENABLE_GRAPHQL_ENDPOINT`
+>* Cree un [Variable de entorno de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) llamado `ENABLE_GRAPHQL_ENDPOINT`
 >* con el valor `true`.
 
-
-<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -261,7 +259,7 @@ Estos [campos de ayuda](#helper-fields) se marcan con un `_` que los precede par
 
 #### Ruta  {#path}
 
-El campo de ruta se utiliza como identificador en AEM GraphQL. Representa la ruta del recurso de fragmento de contenido dentro del repositorio de AEM. Lo hemos elegido como identificador de un fragmento de contenido, por los motivos siguientes:
+El campo de ruta se utiliza como identificador en AEM GraphQL. Representa la ruta del recurso de fragmento de contenido dentro del repositorio de AEM. Hemos elegido esto como el identificador de un fragmento de contenido, ya que:
 
 * es único dentro de AEM,
 * se puede recuperar fácilmente.
@@ -296,7 +294,7 @@ Consulte [Consulta de muestra: un solo fragmento de ciudad específico](/help/he
 
 #### Metadatos {#metadata}
 
-A través de GraphQL, AEM también expone los metadatos de un fragmento de contenido. Los metadatos son la información que describe un fragmento de contenido, como su título, la ruta de la miniatura, la descripción de un fragmento de contenido o la fecha en que se creó, entre otros.
+A través de GraphQL, AEM también expone los metadatos de un fragmento de contenido. Los metadatos son la información que describe un fragmento de contenido, como el título de un fragmento de contenido, la ruta de vista en miniatura, la descripción de un fragmento de contenido, la fecha en la que se creó, entre otros.
 
 Dado que los metadatos se generan mediante el Editor de esquemas y, como tales, no tienen una estructura específica, el tipo de GraphQL `TypedMetaData` se ha implementado para exponer los metadatos de un fragmento de contenido. `TypedMetaData` expone la información agrupada por los siguientes tipos escalares:
 
@@ -501,8 +499,8 @@ Algunos tipos también permiten especificar opciones adicionales que modifican c
 
 | Opción | Tipo(s) | Descripción |
 |--- |--- |--- |
-| _ignoreCase | Cadena | Omite las mayúsculas y minúsculas de una cadena, por ejemplo, un valor de `time` coincidirá `TIME`, `time`, `tImE`, ... |
-| _sensibilidad | Flotante | Permite que un cierto margen para valores flotantes se considere igual (para evitar limitaciones técnicas debido a la representación interna de los valores flotantes); debe evitarse, ya que esta opción puede tener un impacto negativo en el rendimiento |
+| `_ignoreCase` | `String` | Omite las mayúsculas y minúsculas de una cadena, por ejemplo, un valor de `time` coincidirá `TIME`, `time`, `tImE`, ... |
+| `_sensitiveness` | `Float` | Permite un determinado margen para `float` para evitar limitaciones técnicas debidas a la representación interna de `float` valores; debe evitarse, ya que esta opción puede tener un impacto negativo en el rendimiento |
 
 Las expresiones se pueden combinar en un conjunto con la ayuda de un operador lógico (`_logOp`):
 
@@ -513,7 +511,7 @@ Cada campo se puede filtrar por su propio conjunto de expresiones. Los conjuntos
 
 Una definición de filtro (que se transfiere como la variable `filter` argumento a una consulta) contiene:
 
-* Una subdefinición para cada campo (se puede acceder al campo a través de su nombre, por ejemplo, hay un `lastName` en el filtro para la variable `lastName` en el tipo de campo).
+* Una subdefinición para cada campo (se puede acceder al campo a través de su nombre, por ejemplo, hay un `lastName` en el filtro para la variable `lastName` en el campo Tipo de datos (campo)
 * Cada subdefinición contiene la variable `_expressions` matriz, proporcionando el conjunto de expresiones y el `_logOp` campo que define el operador lógico con el que se deben combinar las expresiones
 * Cada expresión está definida por el valor (`value` ) y el operador (`_operator` ) el contenido de un campo debe compararse con
 
@@ -652,15 +650,15 @@ query {
 }
 ```
 
-<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
 
-<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
 
 >[!NOTE]
 >
->* La paginación requiere un orden de clasificación estable para funcionar correctamente en varias consultas que soliciten diferentes páginas del mismo conjunto de resultados. De forma predeterminada, utiliza la ruta del repositorio de cada elemento del conjunto de resultados para asegurarse de que el orden sea siempre el mismo. Si se usa un orden diferente y si esa ordenación no se puede realizar a nivel de consulta jcr, entonces habrá un impacto negativo en el rendimiento, ya que todo el conjunto de resultados debe cargarse en la memoria antes de que se puedan determinar las páginas.
+>* La paginación requiere un orden de clasificación estable para funcionar correctamente en varias consultas que soliciten diferentes páginas del mismo conjunto de resultados. De forma predeterminada, utiliza la ruta del repositorio de cada elemento del conjunto de resultados para asegurarse de que el orden sea siempre el mismo. Si se utiliza un criterio de ordenación diferente y si esa ordenación no se puede realizar en el nivel de consulta JCR, habrá un impacto negativo en el rendimiento, ya que todo el conjunto de resultados debe cargarse en la memoria antes de que se puedan determinar las páginas.
 >
->* Cuanto mayor sea el desplazamiento, más tiempo tardará en omitir los elementos del conjunto de resultados de la consulta jcr completa. Una solución alternativa para grandes conjuntos de resultados es utilizar la consulta paginada con `first` y `after` método.
+>* Cuanto mayor sea el desplazamiento, más tiempo tardará en omitir los elementos del conjunto de resultados de la consulta JCR completa. Una solución alternativa para grandes conjuntos de resultados es utilizar la consulta paginada con `first` y `after` método.
 
 
 ### Consulta paginada: primero y después {#paginated-first-after}

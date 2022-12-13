@@ -2,13 +2,13 @@
 title: Notas de la versión para Cloud Manager 2022.11.0 en Adobe Experience Manager as a Cloud Service
 description: Estas son las notas de la versión para Cloud Manager 2022.11.0 en AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: 1fce3525a0c48a68f268634e52f3872a49b7545f
+exl-id: 1014efb5-dddb-4997-8cef-afe6dfa61462
+source-git-commit: 5d9cd24ad11d03f61fa1a84227423d833e00841a
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 37%
+ht-degree: 62%
 
 ---
-
 
 # Notas de la versión para Cloud Manager 2022.11.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
@@ -20,7 +20,7 @@ Esta página describe las notas de la versión para Cloud Manager 2022.11.0 en A
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de Cloud Manager 2022.11.0 en AEM as a Cloud Service es el 3 de noviembre de 2022. La próxima versión está prevista para el 29 de noviembre de 2022.
+La fecha de la versión de Cloud Manager 2022.11.0 en AEM as a Cloud Service es el 3 de noviembre de 2022. La próxima versión está planificada para el 29 de noviembre de 2022.
 
 ## Novedades {#what-is-new}
 
@@ -35,4 +35,4 @@ La fecha de la versión de Cloud Manager 2022.11.0 en AEM as a Cloud Service es 
 
 ## Correcciones de errores {#bug-fixes}
 
-* Los comentarios durante la canalización de producción de edición se mejoraron para captar ocurrencias poco frecuentes de uno o más entornos faltantes.
+* Los comentarios durante la canalización de producción de edición se mejoraron para captar ocurrencias poco frecuentes de uno o más entornos inexistentes.

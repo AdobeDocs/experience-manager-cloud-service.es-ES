@@ -3,10 +3,10 @@ title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muest
 description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: dba0223fd05956934fe5a3405f21fcd099637726
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Para ayudarle con esto, consulte lo siguiente:
 
 * Una [estructura de fragmentos de contenido de muestra](#content-fragment-structure-graphql)
 
-* Y algunas [consultas de muestra de GraphQL](#graphql-sample-queries), en función de la estructura de fragmento de contenido de muestra (modelos de fragmentos de contenido y fragmentos de contenido relacionados).
+* Y algunas [consultas de GraphQL de ejemplo](#graphql-sample-queries), en función de la estructura de fragmento de contenido de ejemplo (modelos de fragmento de contenido y fragmentos de contenido relacionados).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"

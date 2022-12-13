@@ -3,13 +3,13 @@ title: Personalizar contenido en una aplicación de ejemplo React
 description: Utilice una aplicación React de ejemplo para aprender a personalizar el contenido mediante la función sin encabezado establecida en AEM as a Cloud Service.
 hidefromtoc: true
 index: false
-source-git-commit: 62c8be81d0d46e69b44cc803419fafcce2e93d33
+exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '1371'
 ht-degree: 0%
 
 ---
-
 
 # Personalizar contenido en una aplicación de ejemplo React {#customize-app}
 

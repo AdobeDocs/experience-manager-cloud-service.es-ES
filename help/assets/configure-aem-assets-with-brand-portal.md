@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 85de154adbd0bc09aa9960665826c36af05b3a56
+source-git-commit: 4f58f36e646677071d7f9a4aa56238d68c7689ba
 workflow-type: tm+mt
-source-wordcount: '2478'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

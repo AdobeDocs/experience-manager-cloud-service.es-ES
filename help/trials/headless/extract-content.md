@@ -3,33 +3,33 @@ title: Extraer contenido a través de la API de GraphQL
 description: Aprenda a utilizar los fragmentos de contenido y la API de GraphQL como un sistema de administración de contenido remoto.
 hidefromtoc: true
 index: false
-source-git-commit: a832ed1d81866a6470b47d8e30f5c242b10d1422
+exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Extraer contenido a través de la API de GraphQL {#extract-content}
 
 Hasta ahora, en AEM juicios por no tener cabeza, ha [creó sus propios modelos de fragmento de contenido](content-structure.md) también ha creado su propio contenido sin encabezado como [Fragmentos de contenido.](create-content.md) Ahora puede aprender a utilizar los fragmentos de contenido y la API de GraphQL como un sistema de administración de contenido remoto para ofrecer su contenido.
 
-GraphQL proporciona una API basada en consultas que permite a las aplicaciones cliente externas realizar consultas AEM solo del contenido que necesita mediante una sola llamada de API.
+GraphQL proporciona una API basada en consultas que permite a las aplicaciones de cliente externas consultar AEM solo el contenido que necesita mediante una sola llamada de API.
 
 Primero, aprenderá a ejecutar dos tipos diferentes de consultas: **list** y **byPath** consultas. A continuación, aprenderá a recuperar contenido del fragmento de contenido creado anteriormente. Este documento sirve como complemento de la gira interactiva, abarcando los mismos pasos y vinculando con recursos adicionales cuando corresponde.
 
 >[!TIP]
 >
->Si desea obtener más información sobre la API de GraphQL, consulte la [Sección Recursos adicionales](#additional-resources) al final de este módulo para la guía de API de GraphQL.
+>Si desea obtener más información sobre la API de GraphQL, consulte la [Sección Recursos adicionales](#additional-resources) al final de este módulo para la guía de la API de GraphQL.
 
 ## Explorador de GraphQL {#graphql-explorer}
 
-Se inicia en el explorador de GraphQL. Aquí puede crear y ejecutar consultas con su contenido sin encabezado.
+Se inicia en el Explorador de GraphQL. Aquí puede crear y ejecutar consultas con su contenido sin encabezado.
 
-![Editor de consultas de GraphQL](assets/extract-content/query-editor.png)
+![El Editor de consultas de GraphQL](assets/extract-content/query-editor.png)
 
-Si desea navegar al explorador GraphQL por su cuenta fuera de la guía integrada, se encuentra con el icono de Adobe en la parte superior izquierda de la página. Esto abre la navegación global de AEM. Desde aquí puede elegir el **Herramientas** pestaña y luego **General** -> **Editor de consultas de GraphQL**.
+Si desea navegar usted mismo al Explorador de GraphQL fuera de la guía en la aplicación, se encuentra con el icono de Adobe en la parte superior izquierda de la página. Esto abre la navegación global de AEM. Desde aquí puede elegir el **Herramientas** pestaña y luego **General** -> **Editor de consultas de GraphQL**.
 
 >[!TIP]
 >

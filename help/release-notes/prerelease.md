@@ -2,10 +2,10 @@
 title: Canal de prelanzamiento de Adobe Experience Manager as a Cloud Service
 description: Aprenda a utilizar el canal de prelanzamiento para obtener una vista previa de las próximas funciones AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: 5b38e7d0ad97cdf8b7d0d5da79cf3d6721fa618a
+source-git-commit: 9a76a1c2b5e3b7986654b0843842b015811679a2
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 25%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service tiene dos tipos de versiones.
 
 Este patrón garantiza lanzamientos continuos sin interrupción del servicio.
 
-El canal de prelanzamiento le permite obtener una vista previa de las funciones programadas para la próxima versión mensual para evaluar la funcionalidad futura y planificar su posible implementación para sus propios proyectos. Le permite planificar con antelación la próxima versión mensual.
+El canal de prelanzamiento le permite previsualizar las funciones programadas para la próxima versión mensual para evaluar la funcionalidad futura y planificar su posible implementación para sus propios proyectos. Le permite planificar con antelación la próxima versión mensual.
 
 Por ejemplo, si es mayo y está suscrito al canal de prelanzamiento, puede evaluar las funciones en la próxima versión de junio.
 
