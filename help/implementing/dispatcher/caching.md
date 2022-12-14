@@ -3,10 +3,10 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: Almacenamiento en caché en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: df892e49307a5c125016f3b21e4b5551020eb2b6
+source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2833'
+ht-degree: 2%
 
 ---
 
@@ -220,7 +220,10 @@ En general, no es necesario invalidar la caché de Dispatcher. En su lugar, debe
 
 ### Invalidación de caché de Dispatcher durante la activación/desactivación {#cache-activation-deactivation}
 
-Al igual que las versiones anteriores de AEM, al publicar o cancelar la publicación de páginas, se borra el contenido de la caché de Dispatcher. Si se sospecha que hay un problema con el almacenamiento en caché, los clientes deben volver a publicar las páginas en cuestión y asegurarse de que haya un host virtual disponible que coincida con la variable `ServerAlias` localhost, que es necesario para la invalidación de caché de Dispatcher.
+Al igual que las versiones anteriores de AEM, al publicar o cancelar la publicación de páginas, se borra el contenido de la caché de Dispatcher. Si se sospecha un problema de caché, debe volver a publicar las páginas en cuestión y asegurarse de que haya un host virtual disponible que coincida con la variable `ServerAlias` localhost, que es necesario para la invalidación de caché de Dispatcher.
+
+>[!NOTE]
+>Para una correcta invalidación de Dispatcher, asegúrese de que las solicitudes de &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;.local&quot;, &quot;.adobeaemcloud.com&quot; y &quot;.adobeaemcloud.net&quot; estén todas coincididas y gestionadas por una configuración de vhost para que se pueda servir esa solicitud. Puede hacerlo mediante la coincidencia global &quot;*&quot; en una configuración de host global siguiendo el patrón de la referencia [AEM tipo de archivo](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) o asegurándose de que la lista mencionada anteriormente sea capturada por uno de los vhosts.
 
 Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su Dispatcher. La ruta actualizada se elimina de la caché de Dispatcher, junto con sus principales, hasta un nivel (puede configurarla con el [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
