@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 666125abe28ed71e85fdcf4a3b44f26e61c7795f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4174'
+ht-degree: 58%
 
 ---
 
@@ -245,7 +245,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Texto multilínea | Cadena, [Cadena] |  Se utiliza para generar texto como el cuerpo de un artículo |
 | Número |  Flotante, [Flotante] | Se utiliza para mostrar números de coma flotante y números regulares |
 | Booleano |  Booleano |  Se utiliza para mostrar casillas de verificación → instrucciones simples verdaderas/falsas |
-| Fecha y hora | Calendario |  Se utiliza para mostrar la fecha y la hora en formato ISO 8086. Según el tipo seleccionado, hay tres variantes disponibles para usar en AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
+| Fecha y hora | Calendario |  Se utiliza para mostrar la fecha y la hora en formato ISO 8601. Según el tipo seleccionado, hay tres variantes disponibles para usar en AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
 | Lista desglosada |  Cadena |  Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
 |  Etiquetas |  [Cadena] |  Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido |  Cadena, [Cadena] |  Se utiliza para mostrar la ruta hacia otro recurso en AEM |
