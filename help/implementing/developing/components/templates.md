@@ -2,9 +2,9 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan al crear una página que se utilizará como base para la nueva página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3300'
 ht-degree: 10%
 
 ---
@@ -357,7 +357,7 @@ Si ha creado una plantilla que puede servir de base para otras plantillas, puede
 1. Cree una plantilla como lo haría con cualquier plantilla de página [tal como se documenta aquí](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), que servirá de base para su tipo de plantilla.
 1. Con el CRXDE Lite , copie la plantilla recién creada del `templates` al nodo `template-types` en el nodo [carpeta de plantillas](#template-folders).
 1. Elimine la plantilla de la sección `templates` en el nodo [carpeta de plantillas](#template-folders).
-1. En la copia de la plantilla que se encuentra en el `template-types` nodo, eliminar todo `cq:template` y `cq:templateType` `jcr:content` propiedades.
+1. En la copia de la plantilla que se encuentra en el `template-types` nodo, eliminar todo `cq:template` y `cq:templateType` propiedades de todas `jcr:content` nodos.
 
 También puede desarrollar su propio tipo de plantilla utilizando una plantilla editable de ejemplo como base, disponible en GitHub.
 
