@@ -2,10 +2,10 @@
 title: Introducción a las comunicaciones de Forms as a Cloud Service
 description: Combine datos automáticamente con plantillas XDP y PDF o genere salidas en formato PCL, ZPL y PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 100%
+source-wordcount: '1442'
+ht-degree: 77%
 
 ---
 
@@ -21,7 +21,7 @@ La funcionalidad ofrece varias API para generar y manipular documentos. Puede ge
 
 * Las API HTTP para facilitar la integración con sistemas externos. Se incluyen API independientes para operaciones bajo demanda (baja latencia) y por lotes (operaciones de alto rendimiento).
 
-* Un acceso seguro a los datos. Las API de comunicaciones solo se conectan y acceden a los datos de los repositorios de datos designados por el cliente, lo que hace que las comunicaciones sean muy seguras.
+* Un acceso seguro a los datos. Las API de comunicaciones solo se conectan a los datos de los repositorios de datos designados por el cliente y acceden a ellos, lo que hace que las comunicaciones sean muy seguras.
 
 ![Un ejemplo de extracto de tarjeta de crédito](assets/statement.png)
 Se puede crear un extracto de tarjeta de crédito mediante las API de comunicaciones. Este extracto de ejemplo utiliza la misma plantilla pero datos independientes para cada cliente según su uso de la tarjeta de crédito.
@@ -126,13 +126,37 @@ Figura: Dividir un documento fuente basado en marcadores en varios documentos
 
 Puede utilizar las API de manipulación de documentos para convertir un documento PDF en un documento compatible con PDF/A y para determinar si un documento PDF es compatible con PDF/A. PDF/A es un formato de archivo diseñado para la conservación a largo plazo del contenido del documento. Las fuentes están incrustadas en el documento y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo.
 
+## Utilidades de documentos
+
+Las API sincrónicas de utilidades de documento le ayudan a convertir documentos entre los formatos de PDF y XDP, así como a consultar información sobre un documento PDF. Por ejemplo, puede determinar si un documento PDF contiene comentarios o archivos adjuntos.
+
+### Recuperar las propiedades del documento del PDF
+
+Puede [consultar un documento de PDF](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) para obtener la siguiente información:
+
+* Es un documento de PDF: Compruebe si el documento de origen es un documento PDF.
+* Es un formulario que se puede rellenar: Compruebe si el documento del PDF de origen es un formulario que se puede rellenar.
+* Tipo de formulario: Recupere el tipo de formulario del documento.
+* Comprobar archivos adjuntos: Compruebe si el documento del PDF de origen tiene datos adjuntos.
+* Compruebe los comentarios: Compruebe si el documento del PDF de origen tiene algún comentario de revisión.
+* Es un paquete de PDF: Compruebe si el documento es un paquete de PDF.
+* Obtener la versión del PDF: Recupere el [versión del documento del PDF](https://en.wikipedia.org/wiki/History_of_PDF).
+* Versión de Acrobat recomendada: Recupere la versión requerida de Acrobat (Reader) para abrir el documento del PDF.
+* Es un documento XFA: Compruebe si el documento del PDF de origen es un documento PDF basado en XFA.
+* Es PDF de Shell: Compruebe si el documento del PDF de origen es PDF del shell. Un PDF shell contiene solo un flujo XFA, fuentes y recursos de imagen, y una página que está en blanco o contiene una advertencia de que el documento debe abrirse con Acrobat o Adobe Reader. El PDF shell se utiliza con la transformación del PDF para optimizar el envío solo de transformaciones PDFForm.
+* Obtener la versión de XFA: Recupere el [Versión XFA para un documento de PDF basado en XFA](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+
+### Convertir documentos PDF en documentos XDP
+
+La variable [PDF a la API XDP](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) convierte un documento PDF en un archivo XDP. Para que un documento PDF se convierta correctamente en un archivo XDP, el documento PDF debe contener un flujo XFA en el diccionario.
+
 ## Tipos de API de comunicaciones
 
 Las comunicaciones ofrecen API HTTP para la generación de documentos por lotes y bajo demanda:
 
-* **[Las API sincrónicas](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** son adecuadas para casos de uso de generación de documentos bajo demanda, con baja latencia y de registro único. Estas API son más adecuadas para casos de uso basados en las acciones del usuario. Por ejemplo, generar un documento después de que un usuario termine de rellenar un formulario.
+* **[Las API sincrónicas](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** son adecuadas para casos de uso de generación de documentos bajo demanda, con baja latencia y de registro único. Estas API son más adecuadas para casos de uso basados en las acciones del usuario. Por ejemplo, generar un documento después de que un usuario termine de rellenar un formulario.
 
-* **[Las API por lotes (API asíncronas)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** son adecuadas para escenarios planificados, de alto rendimiento y de generación de múltiples documentos. Estas API generan documentos por lotes. Por ejemplo, facturas telefónicas, extractos de tarjetas de crédito y declaraciones de beneficios generados cada mes.
+* **[Las API por lotes (API asíncronas)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** son adecuadas para escenarios planificados, de alto rendimiento y de generación de múltiples documentos. Estas API generan documentos por lotes. Por ejemplo, facturas telefónicas, extractos de tarjetas de crédito y declaraciones de beneficios generados cada mes.
 
 ## Incorporación
 
