@@ -2,12 +2,13 @@
 title: Entorno de compilación
 description: Obtenga información sobre el entorno de compilación de Cloud Manager y cómo crea y prueba su código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 98%
+source-wordcount: '1003'
+ht-degree: 96%
 
 ---
+
 
 # Entorno de compilación {#build-environment}
 
@@ -225,3 +226,7 @@ Esta misma técnica se puede utilizar para instalar paquetes específicos de idi
 >[!NOTE]
 >
 >La instalación de un paquete del sistema de esta manera no lo instala en el entorno de tiempo de ejecución utilizado para ejecutar Adobe Experience Manager. Si necesita instalar un paquete del sistema en el entorno de AEM, póngase en contacto con su representante de Adobe.
+
+>[!TIP]
+>
+>Para obtener más información sobre el entorno de compilación front-end, consulte el documento [Desarrollo de sitios con la canalización front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)

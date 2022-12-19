@@ -3,12 +3,13 @@ title: Configurar canalizaciones de producción
 description: Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: ht
-source-wordcount: '1462'
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+workflow-type: tm+mt
+source-wordcount: '1520'
 ht-degree: 100%
 
 ---
+
 
 # Configuración de una canalización de producción {#configure-production-pipeline}
 
@@ -50,7 +51,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
    **Comportamiento de errores de métricas importantes**: durante la configuración o edición de la canalización, el **Administrador de implementación** tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad. Las opciones disponibles son:
 
    * **Preguntar cada vez**: esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
-   * **Fallo inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+   * **Produjo un error inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
    * **Continuar inmediatamente**: si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
    ![Configuración de canalización de producción](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -168,6 +169,12 @@ Para finalizar la configuración de la canalización de producción de código d
 >Si tiene una canalización de pila completa existente implementando en un entorno, al crear una canalización de configuración de capa web para el mismo entorno, se omitirá la configuración de capa web existente en la canalización de pila completa.
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
+
+## Desarrollo de Sites con la canalización front-end {#developing-with-front-end-pipeline}
+
+Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
+
+Consulte el documento [Desarrollar Sites con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
 
 ## Omitir paquetes de Dispatcher {#skip-dispatcher-packages}
 

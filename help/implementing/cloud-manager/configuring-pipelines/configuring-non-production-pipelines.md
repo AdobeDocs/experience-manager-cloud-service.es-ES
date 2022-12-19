@@ -3,12 +3,13 @@ title: Configurar canalizaciones que no sean de producción
 description: Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1177'
 ht-degree: 100%
 
 ---
+
 
 # Configurar canalizaciones que no sean de producción {#configuring-non-production-pipelines}
 
@@ -145,6 +146,12 @@ Para finalizar la configuración de la canalización de no producción de códig
 >Si tiene una canalización de pila completa existente implementando en un entorno, al crear una canalización de configuración de capa web para el mismo entorno, se omitirá la configuración de capa web existente en la canalización de pila completa.
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
+
+## Desarrollo de Sites con la canalización front-end {#developing-with-front-end-pipeline}
+
+Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
+
+Consulte el documento [Desarrollar Sites con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
 
 ## Omitir paquetes de Dispatcher {#skip-dispatcher-packages}
 

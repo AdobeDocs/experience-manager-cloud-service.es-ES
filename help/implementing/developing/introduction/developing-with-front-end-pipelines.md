@@ -1,21 +1,36 @@
 ---
-title: Desarrollo de sitios con la canalización front-end
-description: Con la canalización de front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar una velocidad sustancial.
+title: Desarrollo de Sites con la canalización front-end
+description: Con la canalización de front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar una velocidad sustancial. En este documento se describen algunas consideraciones particulares del proceso de compilación del front-end que deben darse.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 2%
+source-wordcount: '1157'
+ht-degree: 1%
 
 ---
 
-# Desarrollo de sitios con la canalización front-end {#developing-site-with-front-end-pipeline}
+
+# Desarrollo de Sites con la canalización front-end {#developing-site-with-front-end-pipeline}
 
 [Con la canalización frontal,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar una velocidad sustancial. Este documento describe cómo funciona este proceso junto con algunas consideraciones que hay que tener en cuenta para aprovechar todo el potencial de este proceso.
 
 >[!TIP]
 >
 >Si todavía no conoce cómo utilizar la canalización front-end y los beneficios que puede reportar, consulte la [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) para ver un ejemplo de cómo implementar rápidamente un nuevo sitio y personalizar su tema completamente independiente del desarrollo del back-end.
+
+## Contrato de compilación del front-end {#front-end-build-contract}
+
+Similar a la variable [entorno de compilación de pila completa,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) la canalización front-end tiene su propio entorno. Los desarrolladores tienen cierta flexibilidad en esta canalización siempre y cuando se observe el siguiente contrato de construcción front-end.
+
+La canalización front-end requiere que el proyecto front-end Node.js use el `build` directiva script para generar la compilación que implementará la canalización front-end. Es decir, Cloud Manager utiliza el comando `npm run build` para generar el proyecto implementable en el `dist` carpeta.
+
+El contenido de la variable `dist` carpeta es lo que se implementa finalmente en AEM as a Cloud Service desde la canalización de Cloud Manager.
+
+### Versiones de nodo {#node-versions}
+
+De forma predeterminada, la canalización de front-end utiliza el nodo 14, pero también están disponibles las opciones 16 y 16.
+
+Puede usar la variable `CM_CUSTOM_VAR_NODE_VERSION` para establecer la versión deseada.
 
 ## Fuente única de la verdad {#single-source-of-truth}
 
