@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
+source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
 workflow-type: tm+mt
-source-wordcount: '2899'
-ht-degree: 2%
+source-wordcount: '2902'
+ht-degree: 3%
 
 ---
 
@@ -111,10 +111,10 @@ Puede transformar formatos de imagen, vídeo, documento y otros archivos en dist
 
 Los desarrolladores pueden utilizar el [!DNL Asset Compute Service] a [crear aplicaciones personalizadas](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) para los casos de uso admitidos. [!DNL Experience Manager] puede llamar a estas aplicaciones personalizadas desde la interfaz de usuario utilizando perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso de invocar servicios externos:
 
-* Uso [!DNL Adobe Photoshop]&#39;s [API de ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) y guarde el resultado como representación.
+* Uso [!DNL Adobe Photoshop]&#39;s [API de ImageCutout](https://developer.adobe.com/photoshop/photoshop-api-docs/) y guarde el resultado como representación.
 * Llame a sistemas de terceros para actualizar datos, por ejemplo, un sistema PIM.
 * Uso [!DNL Photoshop] API para generar diversas representaciones basadas en la plantilla de Photoshop.
-* Uso [API de Adobe Lightroom](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) para optimizar los recursos ingestados y guardarlos como representaciones.
+* Uso [API de Adobe Lightroom](https://developer.adobe.com/photoshop/photoshop-api-docs/) para optimizar los recursos ingestados y guardarlos como representaciones.
 
 >[!NOTE]
 >
@@ -129,17 +129,17 @@ Para crear un perfil personalizado, siga estos pasos:
 1. Proporcione la siguiente información.
 
    * Nombre de archivo de cada representación y extensión de archivo admitida.
-   * [URL de punto final de una aplicación personalizada de Firefly](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). La aplicación debe pertenecer a la misma organización que la cuenta de Experience Manager.
+   * [URL de punto final de una aplicación personalizada de App Builder](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). La aplicación debe pertenecer a la misma organización que la cuenta de Experience Manager.
    * Añadir parámetros de servicio a [pasar información o parámetros adicionales a la aplicación personalizada](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
    * Se han incluido y excluido tipos MIME para limitar el procesamiento a algunos formatos de archivo específicos.
 
    Haga clic en **[!UICONTROL Guardar]**.
 
-Las aplicaciones personalizadas no tienen encabezado [Proyecto Firefly](https://github.com/AdobeDocs/project-firefly) aplicaciones. La aplicación personalizada obtiene todos los archivos proporcionados si están configurados con un perfil de procesamiento. La aplicación debe filtrar los archivos.
+Las aplicaciones personalizadas no tienen encabezado [Generador de aplicaciones de proyecto](https://developer.adobe.com/app-builder/docs/overview/) aplicaciones. La aplicación personalizada obtiene todos los archivos proporcionados si están configurados con un perfil de procesamiento. La aplicación debe filtrar los archivos.
 
 >[!CAUTION]
 >
->Si la aplicación Firefly y [!DNL Experience Manager] no son de la misma organización, la integración no funciona.
+>Si la aplicación de App Builder y [!DNL Experience Manager] no son de la misma organización, la integración no funciona.
 
 ### Ejemplo de perfil personalizado {#custom-profile-example}
 
@@ -219,7 +219,7 @@ Una vez que los microservicios de recursos completan el procesamiento de los rec
 
 Para casos de uso típicos posteriores al procesamiento, considere la posibilidad de utilizar el método para aplicar un flujo de trabajo a una carpeta. Aplicación de un modelo de flujo de trabajo en la carpeta [!UICONTROL Propiedades], siga estos pasos:
 
-1. Cree un modelo de flujo de trabajo.
+1. Cree un modelo del flujo de trabajo.
 1. Seleccione una carpeta, haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas y, a continuación, haga clic en **[!UICONTROL Procesamiento de recursos]** pestaña .
 1. En **[!UICONTROL Flujo de trabajo de inicio automático]**, seleccione el flujo de trabajo necesario, proporcione un título para el flujo de trabajo y, a continuación, guarde los cambios.
 
