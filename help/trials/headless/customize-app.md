@@ -4,9 +4,9 @@ description: Utilice una aplicación React de ejemplo para aprender a personaliz
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,13 @@ La propia aplicación se basa en la estructura de los fragmentos de contenido. C
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
 >title="Personalización del contenido en una aplicación React de ejemplo"
 >abstract="Hemos configurado una aplicación React moderna que puede utilizar para aprender a personalizar el contenido mediante el conjunto de funciones sin encabezado."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
+>title="Inicio del editor de fragmentos de contenido"
+>abstract="AEM Trials for headless viene precargado con una aplicación React simple para mostrar contenido sin encabezado. La aplicación se basa en la estructura de los fragmentos de contenido. Con el editor de fragmentos de contenido en AEM, puede modificar el contenido de su aplicación.<br><br>Inicie la función en una nueva pestaña haciendo clic en , a continuación, siga esta guía."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Marcador de posición para el vídeo de introducción"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Miniatura de vídeo: Modificar el contenido de la aplicación en un flash"
 
 ## Editor de fragmentos de contenido {#fragment-editor}
 
