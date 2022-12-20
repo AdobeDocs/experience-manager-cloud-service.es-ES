@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - Comunicaciones
 description: Combine datos automáticamente con plantillas XDP y PDF o genere salidas en formato PCL, ZPL y PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 46%
+source-wordcount: '684'
+ht-degree: 79%
 
 ---
 
@@ -31,9 +31,11 @@ Una operación sincrónica es un proceso de generación de documentos de forma l
 * API de generación de documentos
 * API de manipulación de documentos
 
-### API de varios inquilinos
+<!-- 
+### Multi-tenant APIs
 
-* API de utilidad de documento
+* Document utility APIs -->
+
 
 ### Autenticar una API de un solo inquilino
 
@@ -53,47 +55,52 @@ Las operaciones de API de un solo inquilino admiten dos tipos de autenticación:
    >
    >Adobe recomienda utilizar la autenticación basada en token en un entorno de producción.
 
-### Autenticar una API de varios inquilinos
+<!-- 
 
-#### Encabezados de autenticación
+### Authenticate a multi-tenant API
 
-Cada llamada de API HTTP entrante a la API de Cloud Manager debe contener estos tres encabezados:
+#### Authentication Headers
+
+Every inbound HTTP API call to the multi-tenant API must contain these three headers:
+
 
 * `x-api-key`
 * `x-gw-ims-org-id`
 * `Authorization`
 
-Los valores que deben enviarse en la variable `x-api-key` y `x-gw-ims-org-id` los encabezados se proporcionan en la pantalla de detalles Credenciales de la [Consola de Adobe Developer](https://developer.adobe.com/console). El valor de la variable `x-api-key` es el ID de cliente y el valor de la variable `x-gw-ims-org-id` es el ID de organización.
+The values which should be sent in the `x-api-key` and `x-gw-ims-org-id` headers are provided in the Credentials details screen in the [Adobe Developer Console](https://developer.adobe.com/console). The value of the `x-api-key` header is the Client ID and the value for the `x-gw-ims-org-id` header is the Organization ID.
 
-#### Configuración de la consola de Adobe Developer para generar un token de acceso
+#### Configure Adobe Developer console to generate an access token
 
-Para configurar las API de autenticación, cree un proyecto en la consola de Adobe Developer y añada las API de comunicación al proyecto en la consola de Adobe Developer. La integración genera la clave de API, el secreto del cliente y la carga útil (JWT):
+To set up authentication APIs, create a project in Adobe Developer Console and add Communication APIs to the project on Adobe Developer Console. The integration generates API Key, Client Secret, Payload (JWT):
 
-1. Póngase en contacto con el administrador de la consola de Adobe Developer. Solicite al administrador que añada como desarrollador.
-1. Iniciar sesión en `https://developer.adobe.com/console/`. Utilice su cuenta de desarrollador aprovisionada por el administrador para iniciar sesión en Adobe Developer Console.
-1. Seleccione su organización en la esquina superior derecha. Si no conoce su organización, póngase en contacto con su administrador.
-1. Toque **[!UICONTROL Crear nuevo proyecto]**. Aparece una pantalla para comenzar con el nuevo proyecto. Toque **[!UICONTROL Añadir API]**. Aparece una pantalla con una lista de todas las API habilitadas para su cuenta.
-1. Select **[!UICONTROL AEM Forms: comunicaciones]** y toque **[!UICONTROL Siguiente]**. Aparece una pantalla para configurar la API.
-1. Select **[!UICONTROL OPCIÓN 1 Generar un par de claves]** y toque **[!UICONTROL Generar par de teclas]**. Crea y descarga el archivo de configuración. El archivo de configuración descargado contiene todos los ajustes de la aplicación, junto con la única copia de la clave privada. Adobe no registra la clave privada, asegúrese de almacenar de forma segura el archivo descargado. Pulse **[!UICONTROL Siguiente]**.
-1. Select **[!UICONTROL Integraciones: Cloud Service]** y toque **[!UICONTROL Guardar la API configurada]**. Toque **[!UICONTROL Cuenta de servicio (JWT)]** para ver la clave de API, el secreto del cliente y otra información necesaria para acceder a las API. Se configura para utilizar el token para acceder a las API.
+1. Contact you Adobe Developer Console administrator. Ask the administrator to add as a developer.
+1. Log in to `https://developer.adobe.com/console/`. Use your developer account that your administrator has provisioned to log in to Adobe Developer Console.
+1. Select your organization from the top-right corner. If you do not know your organization, contact your administrator.
+1. Tap **[!UICONTROL Create new project]**. A screen to get started with your new project appears. Tap **[!UICONTROL Add API]**. A screen with list of all the APIs enabled for your account appears.
+1. Select **[!UICONTROL AEM Forms - Communications]** and tap **[!UICONTROL Next]**. A screen to configure the API appears.
+1. Select **[!UICONTROL OPTION 1 Generate a key pair]** and tap **[!UICONTROL Generate keypair]**. It creates and downloads the configuration file. The downloaded configuration file contains all your app settings, along with the only copy of your private key. Adobe does not record your private key, make sure to securely store the downloaded file. Tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Integrations - Cloud Service]** and tap **[!UICONTROL Save configured API]**. Tap **[!UICONTROL Service Account (JWT)]** to view the API Key, Client Secret, and other information required to access the APIs. You set to use the token to access the APIs.
 
-#### Generar y utilizar mediante programación un token de acceso
+#### Programmatically generate and use an access token
 
-Para generar mediante programación un token de acceso, genere un token web de JSON (JWT) y cámbielo por el servicio Identity Management de Adobe (IMS) para obtener un token de acceso.
+To programmatically generate an access token, generate a JSON Web Token (JWT) and exchange it with the Adobe Identity Management Service (IMS) for an access token.
 
-Utilice las claves siguientes, denominadas reclamaciones, para construir el objeto JSON de JWT:
+Use the following keys, referred to as claims, to construct JWT JSON object:
 
-* `exp`: la caducidad solicitada del token de acceso, expresada como un número de segundos desde el 1 de enero de 1970 GMT. Para la mayoría de los casos de uso, este es un valor relativamente pequeño. Por ejemplo, 5 minutos, durante cinco minutos a partir de ahora, este valor debe ser 1670923791.
-* `iss` : el ID de organización del proyecto de la consola de Adobe Developer, con el formato org_ident@AdobeOrg.
-* `sub` : el ID de cuenta técnica de la integración de la consola de Adobe Developer, con el formato: id@techacct.adobe.com.
-* `aud` : el ID de cliente de la integración de la consola de Adobe Developer precedido de `https://ims-na1.adobelogin.com/c/`.
-* `https://ims-na1-stg1.adobelogin.com/s/ent_aemforms_docprocessing` - se establece en el valor literal `true`
 
-Este objeto JSON debe codificarse y firmarse base64 con la clave privada para el proyecto. Finalmente, el valor codificado se envía en el cuerpo de una solicitud de POST a `https://ims-na1.adobelogin.com/ims/exchange/jwt` junto con el ID de cliente y el Secreto de cliente para el proyecto.
+* `exp`- the requested expiration of the access token, expressed as a number of seconds since January 1, 1970 GMT. For most use cases, this is a relatively small value. For example, 5 minutes, for five minutes from now, this value should be 1670923791.
+* `iss` - the Organization ID from the Adobe Developer Console project, in the format org_ident@AdobeOrg.
+* `sub` - the Technical Account ID from the Adobe Developer Console integration, in the format: id@techacct.adobe.com.
+* `aud` - the Client ID from the Adobe Developer Console integration prepended with `https://ims-na1.adobelogin.com/c/`.
+* `https://ims-na1-stg1.adobelogin.com/s/ent_aemforms_docprocessing` - set to the literal value `true`
 
-##### Ejemplo
+This JSON object must be then base64 encoded and signed using the private key for the project. Finally, the encoded value is sent in the body of a POST request to `https://ims-na1.adobelogin.com/ims/exchange/jwt` along with the Client ID and Client Secret for the project.
+
+##### Example
 
 ```JSON
+
     ========================= REQUEST ==========================
     POST https://ims-na1.adobelogin.com/ims/exchange/jwt
     -------------------------- body ----------------------------
@@ -101,11 +108,14 @@ Este objeto JSON debe codificarse y firmarse base64 con la clave privada para el
     ------------------------- headers --------------------------
     Content-Type: application/x-www-form-urlencoded
     Cache-Control: no-cache
+
 ```
 
-#### Compatibilidad de idiomas con JWT
+#### Language Support for JWT
 
-Aunque es posible realizar todo el proceso de generación e intercambio de JWT en código personalizado, es más común utilizar una biblioteca de nivel superior para hacerlo. Algunas de estas bibliotecas se enumeran en la [Documentación de JWT de Adobe I/O](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/).
+While it is possible to do the entire JWT generation and exchange process in custom code, it is more common to use a higher-level library to do so. A number of such libraries are listed on the [Adobe I/O JWT Documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/).
+
+-->
 
 ### (Solo para las API de generación de documentos) Configuración de recursos y permisos
 
