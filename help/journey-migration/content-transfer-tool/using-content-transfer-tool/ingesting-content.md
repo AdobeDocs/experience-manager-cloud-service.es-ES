@@ -2,10 +2,10 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 11%
+source-wordcount: '1375'
+ht-degree: 9%
 
 ---
 
@@ -142,6 +142,18 @@ Release Orchestrator mantiene los entornos actualizados automáticamente mediant
 Si Release Orchestrator aún se está ejecutando cuando se está iniciando una ingesta, la interfaz de usuario presentará este mensaje de error. Puede optar por continuar de todas formas, aceptando el riesgo, marcando el campo y presionando el botón de nuevo.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+
+### Fallo de ingesta superior
+
+Una causa común de una [Ingesta superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) error es un conflicto en los id de nodo. Para identificar este error, descargue el registro de ingesta mediante la interfaz de usuario de Cloud Acceleration Manager y busque una entrada como la siguiente:
+
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Propiedad de restricción de uniformidad violada [jcr:uuid] con el valor a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+
+Cada nodo de AEM debe tener un uuid único. Este error indica que un nodo que se está incorporando tiene el mismo uuid que uno que ya existe en una ruta diferente de la instancia de destino.
+Esto puede suceder si se mueve un nodo en el origen entre una extracción y una [Extracción superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+También puede ocurrir si un nodo del destino se mueve entre una ingesta y una ingesta superior posterior.
+
+Este conflicto debe resolverse manualmente. Alguien familiarizado con el contenido debe decidir cuál de los dos nodos debe eliminarse, teniendo en cuenta otro contenido que hace referencia a él. La solución puede requerir que la extracción superior se realice de nuevo sin el nodo infractor.
 
 ## Siguientes pasos {#whats-next}
 
