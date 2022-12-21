@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 100%
+source-wordcount: '324'
+ht-degree: 91%
 
 ---
 
@@ -28,6 +28,10 @@ Antes de empezar a usar [!DNL AEM Forms] as a Cloud Service, revise los sigu
 * Cuando se envía un formulario adaptable que contiene un campo de carga de HTML estándar desde un dispositivo iOS de Apple, el contenido del archivo no se envía y se recibe un archivo de 0 bytes en el otro extremo. Este problema se produce de forma intermitente y solo cuando se utiliza el envío sincrónico. Se trata de un [problema conocido](https://feedbackassistant.apple.com/feedback/9117687) de iOS de Apple.
 
 * Cuando se envía un formulario que contiene un campo de carga de HTML estándar desde un dispositivo iOS de Apple, a veces el contenido del archivo no se envía y se recibe un archivo de 0 bytes en el otro extremo. Se trata de un problema conocido de iOS de Apple. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+* AEM Forms as a Cloud Service no genera miniaturas para los archivos de esquema XDP y JSON. El servicio muestra los iconos predeterminados en lugar de las miniaturas.
+
+   ![Problema conocido de la miniatura de Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
 
 
 ## Restricciones {#limitations}
