@@ -8,10 +8,10 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: 2d72a826007a41a73e112eed95b82863b2b48cb2
+source-git-commit: 7169354bc15359ff3be786f6692c2241b82d1cbd
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 6%
+source-wordcount: '235'
+ht-degree: 3%
 
 ---
 
@@ -28,13 +28,13 @@ Este tema incluye las siguientes secciones:
 
 Cuando se crea un conjunto de giros o un conjunto de imágenes, o se cargan PDF para la extracción de páginas, Adobe recomienda las siguientes prácticas recomendadas y aplica los límites siguientes:
 
-| Recurso: tipo de límite | Práctica recomendada | Límite impuesto | Cambio al límite el 31 de diciembre de 2022 |
-| --- | --- | --- | --- |
-| **Imagen** - Número de recortes inteligentes por imagen | 5 | 100 | No aplicable |
-| **Todos los conjuntos** - Número de activos duplicados por conjunto | Sin duplicados | 20 | No aplicable |
-| **Todos los conjuntos** - Número máximo de activos por conjunto | 5 a 10 imágenes por conjunto | 1000 | No aplicable |
-| **Conjunto de giros** - Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 | No aplicable |
-| **PDF** - Número máximo de páginas para un PDF a tener en cuenta para la extracción |  | 5000 (para nuevas cargas) | 100 (para todos los PDF) |
+| Recurso: tipo de límite | Práctica recomendada | Límite impuesto |
+| --- | --- | --- |
+| **Imagen** - Número de recortes inteligentes por imagen | 5 | 100 |
+| **Todos los conjuntos** - Número de activos duplicados por conjunto | Sin duplicados | 20 |
+| **Todos los conjuntos** - Número máximo de activos por conjunto | 5 a 10 imágenes por conjunto | 1000 |
+| **Conjunto de giros** - Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
+| **PDF** - Número máximo de páginas para un PDF a tener en cuenta para la extracción |  | 100 (para todos los PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
