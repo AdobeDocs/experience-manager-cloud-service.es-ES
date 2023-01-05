@@ -2,7 +2,7 @@
 title: Modelos de fragmento de contenido (Recursos - Fragmentos de contenido)
 description: Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en AEM y cómo crear fragmentos de contenido con contenido estructurado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
+source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
 workflow-type: tm+mt
 source-wordcount: '2887'
 ht-degree: 96%

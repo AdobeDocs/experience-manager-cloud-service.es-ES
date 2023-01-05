@@ -119,7 +119,7 @@ La capa AEM no almacenará en caché el contenido del blob de forma predetermina
 >[!NOTE]
 >Se recomienda cambiar el comportamiento predeterminado anterior para que sea coherente con el nuevo comportamiento (id de programa superiores a 65000) estableciendo la variable de entorno de Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS en true. Si el programa ya está activo, asegúrese de que, después de los cambios, el contenido se comporta como espera.
 
-Actualmente, las imágenes en almacenamiento de blob que están marcadas como privadas no se pueden almacenar en caché en el dispatcher mediante [Almacenamiento en caché con permisos confidenciales](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). La imagen siempre se solicita desde el origen AEM y se proporciona si el usuario está autorizado.
+Actualmente, las imágenes en almacenamiento de blob que están marcadas como privadas no se pueden almacenar en caché en el dispatcher mediante [Almacenamiento en caché con permisos confidenciales](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es). La imagen siempre se solicita desde el origen AEM y se proporciona si el usuario está autorizado.
 
 >[!NOTE]
 >Los demás métodos, incluido el [dispatcher-ttl AEM proyecto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anulará correctamente los valores.

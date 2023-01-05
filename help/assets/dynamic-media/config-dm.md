@@ -3,7 +3,7 @@ title: Configuración del Cloud Service de Dynamic Media
 description: Obtenga información sobre cómo configurar Dynamic Media en Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 50a7db14a378f99eeadc3f9cb91f228ea4139ff4
+source-git-commit: 8066d24193822a79d88f564a2db26b3acbb4e918
 workflow-type: tm+mt
 source-wordcount: '3795'
 ht-degree: 3%
@@ -105,7 +105,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >
    >Una vez activado un recurso, las actualizaciones se publican inmediatamente en S7 Delivery.
 
-   ![dynamic mediaconfiguration2update](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
+   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
 1. Seleccione **[!UICONTROL Guardar]**. Se guarda la nueva contraseña y configuración de Dynamic Media. Si ha seleccionado **[!UICONTROL Cancelar]** en su lugar, no se actualiza la contraseña.
 1. En el **[!UICONTROL Configuración de Dynamic Media]** cuadro de diálogo, seleccione **[!UICONTROL OK]** para iniciar la configuración.
@@ -209,7 +209,7 @@ Cuando ejecuta Dynamic Media en AEM, actualmente se reenvía `/is/image` solicit
 
 1. Una nueva pestaña del navegador se abre para **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]** página.
 
-   ![29-08-2019](assets/2019-08-02_16-17-29.png)
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
 1. En la página, desplácese hasta el nombre _Adobe CQ Scene7 Platform Server_.
 
@@ -335,7 +335,7 @@ Puede añadir tipos MIME personalizados para formatos no compatibles en Experien
 
 1. Una nueva pestaña del navegador se abre para **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]** página.
 
-   ![29-08-2019](assets/2019-08-02_16-17-29.png)
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
 1. En la página, desplácese hacia abajo hasta el nombre *Servicio MIME de tipo de recurso de Adobe CQ Scene7* como se muestra en la siguiente captura de pantalla. A la derecha del nombre, pulse la opción **[!UICONTROL Editar los valores de configuración]** (icono de lápiz).
 

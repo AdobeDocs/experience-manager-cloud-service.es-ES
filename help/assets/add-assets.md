@@ -6,8 +6,8 @@ role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: a01a9e34fed9182c6c1e7325b2035c63acf875dd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3064'
+ht-degree: 1%
 
 ---
 
@@ -393,8 +393,8 @@ Se proporcionan detalles técnicos sobre las API de carga y el protocolo, así c
 
 >[!MORELIKETHIS]
 >
->* Aplicación de escritorio de [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* Aplicación de escritorio de [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es)
 >* [Acerca de [!DNL Adobe Asset Link]](https://www.adobe.com/es/creativecloud/business/enterprise/adobe-asset-link.html)
->* [[!DNL Adobe Asset Link] documentación.](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] documentación.](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
 >* [Referencia técnica para la carga de recursos](developer-reference-material-apis.md#asset-upload)
 

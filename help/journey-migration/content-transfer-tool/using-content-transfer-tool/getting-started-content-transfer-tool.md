@@ -2,7 +2,7 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 4c2a02bb7ea981f78e51afc6ee20a3a936dfd666
+source-git-commit: eacd418ead2cc754a055449a99037b6541f55f6a
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 9%
@@ -18,8 +18,8 @@ ht-degree: 9%
 >id="aemcloud_ctt_download"
 >title="Descargar"
 >abstract="La herramienta de transferencia de contenido se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM). Asegúrese de descargar la última versión."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Notas de la versión"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portal de distribución de software"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es" text="Notas de la versión"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Portal de distribución de software"
 
 La herramienta de transferencia de contenido se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de Adobe Experience Manager (AEM) de origen. Asegúrese de descargar la última versión. Para obtener más información sobre la versión más reciente, consulte [Notas de la versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 

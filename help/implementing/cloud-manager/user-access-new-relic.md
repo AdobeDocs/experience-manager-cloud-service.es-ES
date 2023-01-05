@@ -16,9 +16,9 @@ Obtenga información sobre el servicio de supervisión del rendimiento de la apl
 
 ## Introducción {#introduction}
 
-Adobe pone un gran énfasis en la monitorización, la disponibilidad y el rendimiento de su aplicación. AEM as a Cloud Service proporciona acceso a un nuevo grupo de monitorización de Relic One personalizado como parte de la oferta de productos estándar para garantizar que sus equipos tengan la máxima visibilidad de su sistema de AEM as a Cloud Service de y sus métricas de rendimiento del entorno.
+Adobe pone un gran énfasis en la monitorización, la disponibilidad y el rendimiento de su aplicación. AEM as a Cloud Service proporciona acceso a un grupo de monitorización de New Relic One personalizado como parte de la oferta de productos estándar para garantizar que sus equipos tengan la máxima visibilidad de su sistema de AEM as a Cloud Service de y sus métricas de rendimiento del entorno.
 
-En este documento se describe cómo administrar el acceso a las características de monitorización del rendimiento de la aplicación (APM) del nuevo Relic One habilitadas en los entornos de AEM as a Cloud Service para ayudar a soportar el rendimiento y permitirle sacar el máximo provecho de AEM as a Cloud Service.
+En este documento se describe cómo administrar el acceso a las características de monitorización del rendimiento de la aplicación (APM) de New Relic One habilitadas en los entornos de AEM as a Cloud Service para ayudar a soportar el rendimiento y permitirle sacar el máximo provecho de AEM as a Cloud Service.
 
 Cuando se crea un nuevo programa de producción, se crea automáticamente la cuenta secundaria de New Relic One asociada a su programa de AEM as a Cloud Service.
 
@@ -150,7 +150,7 @@ Las siguientes limitaciones se aplican a la adición de usuarios a New Relic One
 * Los usuarios agregados a New Relic serán de tipo **Restringido** consulte [la documentación de New Relic para obtener más información.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
 * AEM as a Cloud Service solo ofrece la solución de APM New Relic One y no proporciona soporte para alertas, registros o integraciones de la API.
 
-Para obtener más ayuda o instrucciones adicionales sobre las nuevas ofertas de Relic One para su programa de AEM as a Cloud Service, abra un ticket de asistencia a través del [Portal de asistencia de AEM](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+Para obtener más ayuda o instrucciones adicionales sobre las ofertas de New Relic One para su programa de AEM as a Cloud Service, abra un ticket de asistencia a través del [Portal de asistencia de AEM](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
 
 ## Preguntas más frecuentes sobre New Relic One {#faqs}
 

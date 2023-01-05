@@ -3,10 +3,10 @@ title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a C
 description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 218dd65d1969f92317ae1d9877e2e37bb201ea6a
+source-git-commit: 33bf3dbf6118a9d93e0fe021736b74079100a214
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 15%
+ht-degree: 19%
 
 ---
 
@@ -25,12 +25,12 @@ En la siguiente sección se describen las notas de la versión generales de la v
 
 >[!CAUTION]
 >
->**Período de exclusión de mantenimiento planeado**
+>**Período de exclusión de mantenimiento planificado**
 >
-> No se ejecutará ningún mantenimiento automático de AEMaaCS durante los siguientes lapsos de tiempo, a partir y hasta la medianoche (00:00) CET:
+> No se ejecutará ningún mantenimiento automático de AEMaaCS durante los siguientes períodos de tiempo, a partir de y hasta la medianoche (00:00) CET:
 >
->* Lunes, 21 de noviembre hasta lunes 12 de diciembre
->* Lunes, 19 de diciembre hasta martes, 3 de enero
+>* El lunes 21 de noviembre hasta el lunes 12 de diciembre
+>* El lunes 19 de diciembre hasta el martes 3 de enero
 
 
 ## Fecha de lanzamiento {#release-date}
@@ -56,11 +56,11 @@ Consulte el vídeo Información general de la versión de octubre de 2022 para v
 
 * Reduzca aún más el tiempo de carga de las páginas de los visitantes optimizando la configuración de tamaño de las imágenes en las plantillas. Encontrará más información para el componente de imagen en [Componente principal de WCM](https://github.com/adobe/aem-core-wcm-components)
 
-## [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets ahora le permite cargar documentos en otros tipos de formato compatibles y[ previsualizarlos con el visor del Document Cloud incluido](/help/assets/manage-pdf-documents.md). Los tipos de formato admitidos son TXT, RTF, DOC, DOCX, PPT, PPTX, XLS y XLSX.
+* Experience Manager Assets ahora le permite cargar documentos en otros tipos de formato compatibles y[ previsualizarlos con el visor del Document Cloud incluido](/help/assets/manage-pdf-documents.md). Los tipos de formato compatibles son TXT, RTF, DOC, DOCX, PPT, PPTX, XLS y XLSX.
 
    ![Representación del PDF para otros formatos](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -73,7 +73,7 @@ Consulte el vídeo Información general de la versión de octubre de 2022 para v
 
 * Experience Manager Assets ahora [admite token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) además de la clave de acceso para la autenticación al conectarse al origen de datos de almacenamiento de blob de Azure para la ingesta de recursos mediante la herramienta de importación masiva.
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nuevas funciones disponibles en [!DNL Forms] {#new-features-available-in-channel}
 

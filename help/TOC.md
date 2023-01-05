@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 91d3e2ea02f34963688dd9ee44aed17f55752587
+source-git-commit: 156cf55a33184bd986628d775475ed1f841e8ef4
 workflow-type: tm+mt
-source-wordcount: '3823'
+source-wordcount: '3827'
 ht-degree: 96%
 
 ---
@@ -760,7 +760,7 @@ ht-degree: 96%
          + [Pruebas de IU](/help/implementing/cloud-manager/ui-testing.md)
       + [Acceder y administrar registros](/help/implementing/cloud-manager/manage-logs.md)
       + [Creación de informes de SLA](/help/implementing/cloud-manager/sla-reporting.md)
-      + [Nueva reliquia uno](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Notificaciones](/help/implementing/cloud-manager/notifications.md)
       + Certificados SSL {#manage-ssl-certificates}
          + [Introducción](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -785,6 +785,7 @@ ht-degree: 96%
       + [Estructura del proyecto AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Paquete de estructura del repositorio de proyectos de AEM](/help/implementing/developing/introduction/repository-structure-package.md)
       + [SDK de AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+      + [AEM entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Directrices de desarrollo de AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
       + [Registro](/help/implementing/developing/introduction/logging.md)
       + [Configuraciones y el explorador de configuración](/help/implementing/developing/introduction/configurations.md)

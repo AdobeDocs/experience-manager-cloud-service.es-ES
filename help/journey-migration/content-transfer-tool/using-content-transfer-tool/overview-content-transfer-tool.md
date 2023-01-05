@@ -2,29 +2,20 @@
 title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 99ecf1309b9fa7613bfb9c99de9677700082f128
+source-git-commit: 8a55e011a93ce069f067192f58bd36399a39130b
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '627'
 ht-degree: 44%
 
 ---
 
 # Información general {#overview-content-transfer-tool}
 
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Información general"
 >abstract="Content Transfer Tool es una herramienta desarrollada por Adobe que puede utilizarse para mover contenido existente de una instancia de AEM de origen (local o AMS) a la instancia de AEM Cloud Service de destino. Esta herramienta también transfiere las entidades principales (usuarios o grupos) automáticamente."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="Directrices y prácticas recomendadas"
-
-<!-- Alexandru: Old version of contextual help, keep for failover/debugging
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Overview"
->abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraction Process"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process" -->
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Directrices y prácticas recomendadas"
 
 La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe que se puede utilizar para mover contenido existente de una instancia de AEM de origen (on-premise o AMS) a la instancia de destinatario de AEM de Cloud Service.
 

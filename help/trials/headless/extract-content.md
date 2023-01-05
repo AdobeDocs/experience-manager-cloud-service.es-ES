@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Hasta ahora, en AEM juicios por no tener cabeza, ha [creó sus propios modelos de fragmento de contenido](content-structure.md) también ha creado su propio contenido sin encabezado como [Fragmentos de contenido.](create-content.md) Ahora puede aprender a utilizar los fragmentos de contenido y la API de GraphQL como un sistema de administración de contenido remoto para ofrecer su contenido.
 
-GraphQL proporciona una API basada en consultas que permite a las aplicaciones de cliente externas consultar AEM solo el contenido que necesita mediante una sola llamada de API.
+GraphQL proporciona una API basada en consultas que permite a las aplicaciones cliente externas realizar consultas AEM solo del contenido que necesita mediante una sola llamada de API.
 
 Primero, aprenderá a ejecutar dos tipos diferentes de consultas: **list** y **byPath** consultas. A continuación, aprenderá a recuperar contenido del fragmento de contenido creado anteriormente. Este documento sirve como complemento de la gira interactiva, abarcando los mismos pasos y vinculando con recursos adicionales cuando corresponde.
 
@@ -36,11 +36,11 @@ Primero, aprenderá a ejecutar dos tipos diferentes de consultas: **list** y **b
 
 ## Explorador de GraphQL {#graphql-explorer}
 
-Se inicia en el explorador de GraphQL. Aquí puede crear y ejecutar consultas con su contenido sin encabezado.
+Se inicia en el Explorador de GraphQL. Aquí puede crear y ejecutar consultas con su contenido sin encabezado.
 
-![Editor de consultas de GraphQL](assets/extract-content/query-editor.png)
+![El Editor de consultas de GraphQL](assets/extract-content/query-editor.png)
 
-Si desea navegar al explorador GraphQL por su cuenta fuera de la guía integrada, se encuentra con el icono de Adobe en la parte superior izquierda de la página. Esto abre la navegación global de AEM. Desde aquí puede elegir el **Herramientas** pestaña y luego **General** -> **Editor de consultas de GraphQL**.
+Si desea navegar usted mismo al Explorador de GraphQL fuera de la guía en la aplicación, se encuentra con el icono de Adobe en la parte superior izquierda de la página. Esto abre la navegación global de AEM. Desde aquí puede elegir el **Herramientas** pestaña y luego **General** -> **Editor de consultas de GraphQL**.
 
 >[!TIP]
 >
@@ -54,7 +54,7 @@ Seleccione el **AEM recursos de demostración** del **Punto final** menú desple
 
 ## Copiar y ejecutar una consulta de lista {#list-query}
 
-Comience con una simple consulta de lista para orientarse sobre cómo funcionan las API de GraphQL de AEM as a Cloud Service. Este ejemplo de consulta de lista devolverá una lista de todo el contenido que utiliza un modelo de fragmento de contenido específico. Las páginas de inventario y categoría suelen utilizar este formato de consulta.
+Comience con una consulta de lista sencilla para orientarse sobre cómo funcionan las API de GraphQL de AEM as a Cloud Service. Este ejemplo de consulta de lista devolverá una lista de todo el contenido que utiliza un modelo de fragmento de contenido específico. Las páginas de inventario y categoría suelen utilizar este formato de consulta.
 
 1. Copie el siguiente fragmento de código.
 

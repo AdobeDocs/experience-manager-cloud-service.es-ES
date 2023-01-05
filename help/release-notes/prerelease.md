@@ -4,8 +4,8 @@ description: Aprenda a utilizar el canal de prelanzamiento para obtener una vist
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 9a76a1c2b5e3b7986654b0843842b015811679a2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1306'
+ht-degree: 25%
 
 ---
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service tiene dos tipos de versiones.
 
 Este patrón garantiza lanzamientos continuos sin interrupción del servicio.
 
-El canal de prelanzamiento le permite previsualizar las funciones programadas para la próxima versión mensual para evaluar la funcionalidad futura y planificar su posible implementación para sus propios proyectos. Le permite planificar con antelación la próxima versión mensual.
+El canal de prelanzamiento le permite obtener una vista previa de las funciones programadas para la próxima versión mensual para evaluar la funcionalidad futura y planificar su posible implementación para sus propios proyectos. Le permite planificar con antelación la próxima versión mensual.
 
 Por ejemplo, si es mayo y está suscrito al canal de prelanzamiento, puede evaluar las funciones en la próxima versión de junio.
 
@@ -48,7 +48,7 @@ Para aprovechar al máximo el canal de prelanzamiento se requieren cuatro pasos.
 
 ## Marcar los calendarios {#mark-calendars}
 
-Las versiones mensuales están programadas con mucha antelación y las fechas de lanzamiento se publican en [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Las versiones mensuales están programadas con mucha antelación y las fechas de lanzamiento se publican en [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es#aem-as-cloud-service)
 
 Tenga en cuenta las fechas de lanzamiento para poder planificar el tiempo necesario para revisar y probar las próximas funciones.
 

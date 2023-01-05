@@ -7,8 +7,8 @@ role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: 4f58f36e646677071d7f9a4aa56238d68c7689ba
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2478'
+ht-degree: 11%
 
 ---
 
@@ -406,7 +406,7 @@ Las direcciones IP de salida son las siguientes:
 |--- |--- |
 | ND | 130.248.160.68, 20.94.203.130 |
 | EMEA | 185.34.189.3, 51.132.146.75 |
-| APAC | 63 140 44 54 |
+| APAC | 63.140.44.54 |
 
 <!--
 ### Test configuration {#test-configuration}

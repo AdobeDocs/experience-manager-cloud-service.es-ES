@@ -4,8 +4,8 @@ description: Ampliar fragmentos de experiencias de Adobe Experience Manager as a
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1651'
+ht-degree: 3%
 
 ---
 
