@@ -10,7 +10,7 @@ ht-degree: 88%
 
 ---
 
-# AEM Contenido y comercio {#commerce-guide}
+# AEM Content and Commerce {#commerce-guide}
 
 Descubra cómo utilizar y administrar Experience Manager Content and Commerce as a Cloud Service.
 
@@ -44,7 +44,7 @@ Descubra cómo utilizar y administrar Experience Manager Content and Commerce as
 * [Documentación de Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es)
 * [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [Preparación para el RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
