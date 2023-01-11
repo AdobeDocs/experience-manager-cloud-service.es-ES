@@ -2,10 +2,10 @@
 title: Variables de entorno de Cloud Manager
 description: Las variables de entorno estándar se pueden configurar y administrar mediante Cloud Manager y se proporcionan al entorno de tiempo de ejecución para su uso en la configuración OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
-workflow-type: ht
-source-wordcount: '897'
-ht-degree: 100%
+source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 88%
 
 ---
 
@@ -107,3 +107,29 @@ Puede acceder a las variables y los secretos de entorno a través de XML de la s
 Consulte el documento [Configurar un proyecto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) para ver un ejemplo de cómo utilizar ambos tipos de variables en un `pom.xml` archivo.
 
 Consulte la [documentación oficial de Maven](https://maven.apache.org/settings.html#quick-overview) para obtener más información.
+
+## Disponibilidad de variables de entorno {#availability}
+
+Las variables de entorno se pueden usar en varios lugares.
+
+### Autor, vista previa y publicación {#author-preview-publish}
+
+Tanto las variables de entorno normales como los secretos se pueden usar en los entornos de creación, previsualización y publicación.
+
+### Dispatcher {#dispatcher}
+
+En Dispatcher solo se pueden usar variables de entorno normales. Los secretos no se pueden usar.
+
+Sin embargo, las variables de entorno no se pueden usar en `IfDefine` directivas.
+
+>[!TIP]
+>
+>Debe validar el uso de variables de entorno con la variable [dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) antes de la implementación.
+
+### Configuraciones de OSGi {#osgi}
+
+Tanto las variables de entorno normales como los secretos se pueden utilizar en configuraciones OSGi.
+
+### Variables de canalización {#pipeline}
+
+Además de las variables de entorno, también hay variables de canalización que se exponen durante la fase de compilación. [Obtenga más información sobre las variables de canalización aquí.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
