@@ -2,9 +2,9 @@
 title: Variables de entorno de Cloud Manager
 description: Las variables de entorno estándar se pueden configurar y administrar mediante Cloud Manager y se proporcionan al entorno de tiempo de ejecución para su uso en la configuración OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
+source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1021'
 ht-degree: 88%
 
 ---
@@ -118,7 +118,7 @@ Tanto las variables de entorno normales como los secretos se pueden usar en los 
 
 ### Dispatcher {#dispatcher}
 
-En Dispatcher solo se pueden usar variables de entorno normales. Los secretos no se pueden usar.
+Solo se pueden usar variables de entorno normales con [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) Los secretos no se pueden usar.
 
 Sin embargo, las variables de entorno no se pueden usar en `IfDefine` directivas.
 
@@ -128,7 +128,7 @@ Sin embargo, las variables de entorno no se pueden usar en `IfDefine` directivas
 
 ### Configuraciones de OSGi {#osgi}
 
-Tanto las variables de entorno normales como los secretos se pueden utilizar en configuraciones OSGi.
+Tanto las variables de entorno normales como los secretos se pueden usar en [Configuraciones de OSGi.](/help/implementing/deploying/configuring-osgi.md)
 
 ### Variables de canalización {#pipeline}
 
