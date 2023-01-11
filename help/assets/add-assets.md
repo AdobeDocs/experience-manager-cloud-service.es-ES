@@ -4,7 +4,7 @@ description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a01a9e34fed9182c6c1e7325b2035c63acf875dd
+source-git-commit: 55e117bba7037d44eaadab8bd2de7164e23b47fa
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 1%
@@ -259,11 +259,11 @@ Para los nombres de archivo de recursos, el nombre y la ruta de JCR se sanean me
 
 **Gestión del nombre de la carpeta en la importación masiva**
 
-Para los nombres de archivo de carpeta, el nombre y la ruta de JCR se eliminan mediante la API: `JcrUtil.createValidName`.
+Para los nombres de archivo de carpeta, el nombre y la ruta de JCR se eliminan mediante la API: `DamUtil.getSanitizedFolderName`.
 
 * Los caracteres en mayúsculas se convierten a minúsculas
 * Los caracteres Unicode no se cambian
-* Sustituya los caracteres especiales por un guión (&#39;-&#39;), por ejemplo, `new asset.png` se actualiza a `new-asset.png`:
+* Sustituya los caracteres especiales por un guión (&#39;-&#39;), por ejemplo, `new folder` se actualiza a `new-folder`:
 
    ```
    "                           
@@ -310,7 +310,7 @@ Para programar una importación masiva recurrente o de una sola vez, ejecute los
 
 1. Cree una configuración de importación masiva.
 1. Seleccione la configuración y seleccione **[!UICONTROL Programación]** en la barra de herramientas.
-1. Establezca una ingesta única o programe una programación por hora, diaria o semanal. Haga clic en **[!UICONTROL Submit]**.
+1. Establezca una ingesta única o programe una programación por hora, diaria o semanal. Haga clic en **[!UICONTROL Enviar]**.
 
    ![Programar trabajo de ingesta masiva](assets/bulk-ingest-schedule1.png)
 
