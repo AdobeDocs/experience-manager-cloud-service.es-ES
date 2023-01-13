@@ -2,10 +2,10 @@
 title: Crear contenido accesible para Adobe Experience Manager as a Cloud Service (conformidad con WCAG 2.1)
 description: Utilice AEM as a Cloud Service para ayudar a que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 48ac0566409f74d3ffa389e5016af0d14419dc3a
 workflow-type: tm+mt
-source-wordcount: '14061'
-ht-degree: 96%
+source-wordcount: '14056'
+ht-degree: 94%
 
 ---
 
@@ -76,7 +76,7 @@ Para gráficos estáticos, el requisito principal es proporcionar una alternativ
 >
 >Al implementar versiones de estos componentes para la instancia de AEM, el equipo de desarrollo debe configurarlos para que admitan la variable `alt` para que los autores puedan agregarlo al contenido (consulte Añadir ayuda para elementos y atributos de HTML adicionales).
 >
->Algunos componentes principales listos para usar, como **[Carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, no proporcionan un campo **Texto alternativo** para agregar descripciones de texto alternativas a imágenes individuales, aunque existe el campo **Etiqueta** (pestaña **[Accesibilidad](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para todo el componente.
+>Algunos componentes principales listos para usar, como **[Carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=es)**, no proporcionan un campo **Texto alternativo** para agregar descripciones de texto alternativas a imágenes individuales, aunque existe el campo **Etiqueta** (pestaña **[Accesibilidad](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=es#accessibility-tab)**) para todo el componente.
 >
 >Al implementar versiones de estos componentes para la instancia de AEM, el equipo de desarrollo debe configurarlos para que admitan la variable `alt` para que los autores puedan agregarlo al contenido (consulte [Agregar compatibilidad con elementos y atributos de HTML adicionales](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -106,14 +106,13 @@ Imágenes de personas, objetos o lugares. Es importante pensar en el papel de la
 * Iconos:
 Pequeños pictogramas (gráficos) que transmiten información específica. Se deben utilizar de manera consistente en una página o sitio. Todos los ejemplos del icono en una página o sitio deben contener el mismo texto alternativo, corto y preciso, a menos que se duplique innecesariamente el texto adyacente.
 * Tablas y gráficos: Normalmente representan datos numéricos. Una opción para proporcionar una alternativa textual podría ser incluir un breve resumen de las tendencias principales que se muestran en la tabla o en el gráfico. Si es necesario, proporcione también una descripción más detallada en formato texto utilizando el campo **Descripción** en la pestaña de Propiedades de la imagen **avanzadas**. Además, puede proporcionar los datos de origen en formato tabulado en cualquier otra parte de la página o sitio.
-* Mapas, diagramas, diagramas de flujo: Para los gráficos que proporcionan datos espaciales (por ejemplo, para admitir la descripción de relaciones entre objetos o un proceso), asegúrese de que el mensaje clave se proporcione en formato de texto y de que esta información de texto se coloque cerca de cada punto de datos asociado. En el caso de los mapas, es probable que no sea práctico proporcionar un equivalente textual completo, pero si el mapa se proporciona como una forma de ayudar a las personas a encontrar su camino a una ubicación determinada, el texto alternativo de la imagen del mapa puede indicar brevemente *Mapa de X* y, a continuación, proporcionar direcciones a esa ubicación en texto en cualquier parte de la página o a través del campo **Descripción** en la pestaña **Avanzado** del componente **Imagen**.
+* Mapas, diagramas, diagramas de flujo: Para los gráficos que proporcionan datos espaciales (por ejemplo, para admitir la descripción de relaciones entre objetos o un proceso), asegúrese de que el mensaje clave se proporcione en formato de texto y de que esta información de texto se coloque cerca de cada punto de datos asociado. En el caso de los mapas, es probable que no sea práctico proporcionar un equivalente textual completo, pero si el mapa se proporciona como una forma de ayudar a la gente a encontrar su camino a un lugar en particular, el texto alternativo de la imagen del mapa puede indicar brevemente *Mapa de X* y, a continuación, proporcione las direcciones de esa ubicación en texto en cualquier parte de la página o a través de la **Descripción** en el campo **Avanzadas** de la pestaña **Imagen** componente.
 * CAPTCHA: CAPTCHA se refiere a una *prueba de Turing pública completamente automática que distingue entre ordenadores y humanos*. Es una medida de seguridad que se utiliza en páginas web para distinguir a humanos de software maligno, pero que puede originar barreras de accesibilidad. Se trata de imágenes que requieren que los usuarios describan lo que ven para pasar una prueba de seguridad. Como obviamente no es posible proporcionar una alternativa textual para la imagen, en lugar de ello tendrá que considerar una solución alternativa que no sea gráfica.‪
 W3C proporciona varias sugerencias como: Cada uno de estos enfoques tiene sus propias ventajas e inconvenientes.‪
    * Rompecabezas de lógica
    * Salida de sonido en lugar de imágenes
    * Cuentas de uso limitado y filtros de spam
-* Imágenes de fondo: Se consiguen utilizando hojas de estilo en cascada (CSS) en lugar de HTML. Esto quiere decir que no se puede especificar un valor de texto alternativo. Por ello, las imágenes de fondo no deben proporcionar información textual importante: si lo hacen, dicha información se debe proporcionar en el texto de la página.
-Sin embargo, es importante que se muestre un fondo alternativo cuando la imagen no se pueda mostrar.
+* Imágenes de fondo: Estos se consiguen utilizando hojas de estilo en cascada (CSS) en lugar de en HTML. Esto significa que no es posible especificar un valor de texto alternativo. Por lo tanto, las imágenes de fondo no deben proporcionar información textual importante: si lo hacen, esta información también debe proporcionarse en el texto de la página. Sin embargo, es importante que se muestre un fondo alternativo cuando la imagen no se pueda mostrar.
 
 >[!NOTE]
 >
@@ -438,7 +437,7 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 1.3.2](https://ww
 
 #### Objetivo: Características sensoriales (1.3.3)     {#purpose-sensory-characteristics}
 
-Los diseñadores normalmente se centran en características de diseño visuales tales como el color, la forma, el estilo del texto o una parte de la ubicación absoluta o relativa del contenido donde se presenta la información. Estas pueden ser técnicas de diseño muy poderosas para transmitir información (y pueden mejorar la accesibilidad general para los usuarios con visión con necesidades de accesibilidad cognitiva), pero las personas ciegas o con problemas visuales pueden ser incapaces de acceder a la información que requiera la identificación visual de atributos como posición, color o forma.
+Los diseñadores normalmente se centran en características de diseño visuales, como el color, la forma, el estilo del texto o una parte de la posición absoluta o relativa del contenido al presentar la información. Estas pueden ser técnicas de diseño muy poderosas para transmitir información (y pueden mejorar la accesibilidad general para los usuarios con visión con necesidades de accesibilidad cognitiva), pero las personas ciegas o con problemas visuales pueden ser incapaces de acceder a la información que requiera la identificación visual de atributos como posición, color o forma.
 
 Del mismo modo, la información que requiere distinguir entre sonidos diferentes (por ejemplo, contenido cuya voz es masculina o femenina) presentará barreras de accesibilidad para las personas que sufran limitaciones auditivas, si no se refleja en ninguna alternativa textual para el contenido del audio.
 
@@ -455,7 +454,7 @@ Asegúrese de que cualquier información relativa a las características visuale
 
 >[!NOTE]
 >
->El uso de términos descriptivos se puede considerar aceptable si estos se entienden por su significado en un contexto no visual. Por ejemplo, utilizar *arriba* y *abajo* generalmente estaría aceptado, porque respectivamente implican contenido antes y después de un elemento particular del contexto; tendría sentido cuando el contenido se lee en voz alta.
+>El uso de términos descriptivos será aceptable si se entiende que tienen significado en un contexto no visual. Por ejemplo, al usar *above* y *below* sería generalmente aceptable, ya que respectivamente implican contenido antes y después de un elemento particular de contenido; esto tendría sentido cuando el contenido se lee en voz alta.
 
 #### Más información: Características sensoriales (1.3.3)     {#more-information-sensory-characteristics}
 
@@ -564,16 +563,16 @@ Asegúrese de que el texto contrasta lo suficiente con el fondo. Las relaciones 
 
 >[!NOTE]
 >
->Los siguientes sitios pueden ayudar con las conversiones a otras unidades:
+>Las siguientes herramientas pueden ayudarle a convertir a otras unidades:
 >
->* [Calculadora Px a Em - Omni](https://www.omnicalculator.com/conversion/px-to-em)
->* [Conversión de tamaño de fuente: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: Conversión de PX a EM simplificada](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+>* [Calculadora Px a Em](https://www.omnicalculator.com/conversion/px-to-em)
+>* [Conversión de tamaño de fuente: pixel-point-em-rem-percent](https://websemantics.uk/tools/)
+>* [Píxel to EM Converter](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
 Para comprobar los niveles de contraste, utilice una herramienta de contraste de color como el programa [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) o el [verificador de contraste de color WebAIM](https://webaim.org/resources/contrastchecker/). Estas herramientas permiten comprobar las parejas de color e informar de cualquier problema de contraste.
 
-Alternativamente, si no le preocupa especificar la apariencia de su página, puede optar por no especificar el color del fondo o del texto en primer plano. No es necesario comprobar el contraste, ya que el navegador del usuario determinará los colores del texto y del fondo.
+Alternativamente, si no le preocupa especificar el aspecto de la página, puede optar por no especificar los colores del fondo ni del texto en primer plano. No es necesario comprobar el contraste, ya que el navegador del usuario determinará los colores del texto y del fondo.
 
 Si no se pueden cumplir los niveles de contraste recomendados tendrá que proporcionar un vínculo a una versión alternativa y equivalente de la página (que no presente problemas de contraste de color) o permitir al usuario ajustar el contraste del esquema de color de la página bajo su propio criterio.
 
@@ -861,14 +860,14 @@ En el momento de escribir este artículo, existen algunos problemas relacionados
 
 Por eso, mientras el atributo del título se puede utilizar para proporcionar contenido adicional a un vínculo, es importante tener en cuenta las limitaciones y no utilizarlo como alternativa para un texto de vínculo adecuado.
 
-Cuando el vínculo esté formado por una imagen, asegúrese de que el texto alternativo de la imagen describe el destino del vínculo. Por ejemplo, si la imagen de una estantería es el vínculo a las publicaciones de una persona, el texto alternativo debería ser algo como **Publicaciones de John Smith** y no **Estantería**.
+Cuando el vínculo esté formado por una imagen, asegúrese de que el texto alternativo de la imagen describe el destino del vínculo. Por ejemplo, si la imagen de una estantería es un vínculo a las publicaciones de una persona, el texto alternativo debería ser **Publicaciones de John Smith** y no **Estantería**.
 
 Alternativamente, si el anclaje del vínculo contiene texto que describe el objetivo del vínculo además de la imagen (y por ello el texto aparece junto a la imagen), utilice un atributo alternativo vacío para la imagen:
 
 ```xml
 <a href="publications.html">
 <img src = "bookshelf.jpg" alt = "" />
-John Smith’s publications
+John Smith's publications
 </a>
 ```
 
@@ -949,7 +948,7 @@ La intención de este criterio de éxito es ayudar a una persona a saber qué el
 
 Una persona debe saber cuál elemento de varios elementos tiene el enfoque del teclado. Si solo hay un control accionable por teclado en la pantalla, el criterio de éxito se cumpliría porque el diseño visual presenta solo un elemento procesable por teclado.
 
-Si el criterio de éxito indica &quot;modo de funcionamiento&quot;, se tiene en cuenta para las plataformas que no siempre muestran un indicador de enfoque. En la mayoría de los casos, solo hay un modo de funcionamiento, por lo que se aplican estos criterios de éxito.
+Cuando el criterio de éxito indica &quot;modo de funcionamiento&quot;, se tiene en cuenta para las plataformas que pueden no mostrar siempre un indicador de enfoque. En la mayoría de los casos, solo hay un modo de funcionamiento, por lo que se aplican estos criterios de éxito.
 
 #### Cómo cumplir: Enfoque visible (2.4.7) {#how-to-meet-focus-visible}
 
@@ -983,10 +982,10 @@ El objetivo de este criterio de éxito es asegurarse de que el texto y cualquier
 Para cumplir este criterio de éxito, el idioma por defecto de una página web se puede identificar utilizando el atributo `lang` en el elemento `<html>` en la parte superior de la página. Por ejemplo:
 
 * Si una página está escrita en inglés, el elemento `<html>` debería ser:
-   `<html lang = “en”>`
+   `<html lang = "en">`
 
 * Mientras que una página que se presentará en español debe adoptar el estándar siguiente:
-   `<html lang = “es”>`
+   `<html lang = "es">`
 
 En AEM, el idioma predeterminado de su página se configura cuando se crea la página, pero también se puede cambiar al editar [Propiedades de la página](/help/sites-cloud/authoring/fundamentals/page-properties.md).
 
@@ -1018,7 +1017,7 @@ Las páginas que aplican este criterio de éxito permiten:
 
 #### Cómo cumplir: Idioma de las partes (3.1.2)   {#how-to-meet-language-of-parts}
 
-El atributo `lang` se puede utilizar para identificar los cambios en el idioma del contenido. Por ejemplo, una cita en alemán (ISO 639-1 código “de”) se puede mostrar de la manera siguiente:
+El atributo `lang` se puede utilizar para identificar los cambios en el idioma del contenido. Por ejemplo, una cita en alemán (ISO 639-1 código &quot;de&quot;) se puede mostrar de la siguiente manera:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -1033,7 +1032,7 @@ El atributo `lang` se puede utilizar para identificar los cambios en el idioma d
 De manera similar, el navegador puede mostrar un préstamo poco común o una expresión correcta si el elemento `span` se utiliza de la manera siguiente:
 
 ```xml
-<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</code>.</p>
+<p>The only French phrase I know is <span lang = "fr">je ne sais quoi</code>.</p>
 ```
 
 >[!NOTE]
