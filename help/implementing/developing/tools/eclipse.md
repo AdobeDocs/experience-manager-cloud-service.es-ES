@@ -2,9 +2,9 @@
 title: Herramientas para desarrolladores de AEM para Eclipse
 description: Herramientas para desarrolladores de AEM para Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1179'
 ht-degree: 3%
 
 ---
@@ -196,7 +196,7 @@ Una vez finalizado, el paquete debe ejecutarse en la instancia y, al guardar, cu
 
 Si desea volver a crear un paquete fuera del proyecto, haga clic con el botón derecho en el `PROJECT.ui.apps` o `PROJECT.ui.content` y elija **Ejecutar como** -> **Instalación de Maven**.
 
-Ahora tiene una carpeta de destino que se ha creado con el paquete dentro de (llamada, por ejemplo, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Ahora tiene una carpeta de destino creada con el paquete dentro de (llamada, por ejemplo, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Solución de problemas {#troubleshooting}
 
@@ -216,7 +216,7 @@ Eclipse descarga las dependencias necesarias. Esto puede tardar un momento.
 
 La herramienta oficial Apache Sling IDE para el sitio web Eclipse le proporciona información útil:
 
-* La variable [**Herramientas Apache Sling IDE para Eclipse** Guía del usuario](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentación le guiará a través de los conceptos generales, la integración del servidor y las funcionalidades de implementación compatibles con las herramientas de desarrollo de AEM.
+* La variable [**Herramientas Apache Sling IDE para Eclipse** Guía del usuario](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentación le guía a través de los conceptos generales, la integración del servidor y las funcionalidades de implementación compatibles con las herramientas de desarrollo de AEM.
 * La variable [Sección Resolución de problemas](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * La variable [Lista de problemas conocidos](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
