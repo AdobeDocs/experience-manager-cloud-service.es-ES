@@ -1,26 +1,22 @@
 ---
 title: Tablas en formularios adaptables
-seo-title: Tables in Adaptive Forms
-description: El componente Tabla en  [!DNL AEM Forms] permite crear tablas en formularios adaptables que respondan a diseños móviles y también permite utilizar componentes de tabla XDP.
-seo-description: The Table component in [!DNL AEM Forms] lets you create tables in Adaptive Forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
-topic-tags: author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+seo-title: Tables in adaptive forms
+description: El componente Tabla en AEM Forms le permite crear tablas en formularios adaptables que respondan a diseños móviles y también permite utilizar componentes de tabla XDP.
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Adaptive Forms
+source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
 workflow-type: tm+mt
-source-wordcount: '2311'
-ht-degree: 100%
+source-wordcount: '2418'
+ht-degree: 90%
 
 ---
 
-
-# Tablas en formularios adaptables {#tables-in-adaptive-forms}
+# Tablas en formato adaptable {#tables-in-adaptive-forms}
 
 El uso de tablas es una forma eficaz, simple y organizada de presentar datos complejos. Ayuda a los usuarios a identificar la información fácilmente y a proporcionar entradas en una disposición ordenada de filas y columnas. La mayoría de formularios de los servicios financieros y las organizaciones gubernamentales requieren tablas de datos grandes para poner números y realizar cálculos.
 
-[!DNL AEM Forms] proporciona un componente Tabla en el explorador de componentes de la barra lateral que permite crear tablas en formularios adaptables. Algunas de las funciones clave que proporciona son las siguientes:
+AEM Forms proporciona un componente Tabla en el explorador de componentes de la barra lateral que permite crear tablas en formularios adaptables. Algunas de las funciones clave que proporciona son las siguientes:
 
 * Diseño interactivo en dispositivos móviles
 * Filas y columnas configurables
@@ -54,25 +50,30 @@ Para combinar dos o más celdas del cuerpo, seleccione las celdas que desee comb
 
 Puede agregar y eliminar una fila o columna, y mover una fila hacia arriba o hacia abajo en una tabla.
 
-Para agregar o eliminar una fila o columna o mover una fila, haga clic en cualquier celda de la fila o columna. Aparecerá un menú desplegable en la parte superior de la columna y en la parte izquierda de la fila. El menú de la parte superior ofrece opciones para agregar o eliminar la columna, mientras que el menú de la izquierda permite agregar, eliminar o mover la fila.
+#### Agregar, eliminar o mover una fila
 
-* La operación Agregar agrega una fila debajo o una columna a la derecha de la fila o columna seleccionada.
-* La operación Eliminar elimina la fila o columna seleccionada.
-* La operación Subir y Bajar mueve la fila seleccionada arriba y abajo.
+Para agregar, eliminar o mover la fila, haga clic en cualquier celda de la fila. abra el navegador de contenido ![Navegador de contenido](/help/forms/assets/Smock_Layers_18_N.svg) y seleccione la fila correspondiente, resaltará la fila seleccionada con la opción de barra de herramientas desde la que puede agregar, eliminar o mover la fila hacia arriba o hacia abajo.
+* La variable **[!UICONTROL Subir]** y **[!UICONTROL Bajar]** la operación mueve la fila seleccionada arriba y abajo.
 
-El menú desplegable de la fila también proporciona la operación Editar para editar las propiedades de fila, la configuración y las opciones de estilo.
+* La variable **[!UICONTROL Agregar columna]** agrega una fila debajo de la fila seleccionada.
 
-![add-delete-move-row-column](assets/add-delete-move-row-column.png)
+* La variable **[!UICONTROL Eliminar columna]** elimina la fila seleccionada.
+
+![add-delete-move-row-column](assets/add-delete-move-row.png)
+
+Haga doble clic en la fila para configurar las propiedades de una fila, como Nombre, Referencia de vínculo, Configuración de repetición, Clase CSS.
+![add-delete-move-row-column](assets/row-properties-image.png)
+
+
+#### Agregar o eliminar una columna
+
+Para agregar o eliminar una columna, haga clic en la celda de texto de la sección del encabezado y se abrirá una barra de herramientas con las opciones para agregar o eliminar una columna:
+
+![add-delete-move-row-column](assets/add-delet-column.png)
 
 >[!NOTE]
 >
->* Aunque puede agregar cualquier número de filas en una tabla, el número máximo de columnas que puede agregar es de seis. Tampoco puede eliminar la fila de encabezado de la tabla.
->
->* La conversión automatizada de un formulario PDF a un formulario adaptable puede crear tablas sin encabezados. Puede agregar y eliminar columnas a tablas sin encabezados. Los encabezados ocultos se agregan a estas tablas para ayudarle a agregar y eliminar columnas. Estos encabezados son visibles durante la creación, pero permanecen ocultos en el formulario publicado.
-
-
-
-
+>Aunque puede agregar cualquier número de filas en una tabla, el número máximo de columnas que puede agregar es de seis. Tampoco puede eliminar la fila de encabezado de la tabla.
 
 ### Agregar descripción de la tabla {#add-table-description}
 
@@ -113,6 +114,14 @@ Para habilitar la ordenación:
 
    También puede realizar cambios en la tabla en el modo **Vista previa** y volver a hacer clic en el encabezado de columna para ordenar los valores de la columna.
 
+## Configurar el ancho de columna de una tabla {#set-column-width}
+
+Siga estos pasos para configurar el ancho de columna de una tabla:
+
+1. En la pestaña **[!UICONTROL Contenido]**, pulse el componente **[!UICONTROL Tabla]** y pulse el icono ![Configurar](assets/configure-icon.svg).
+
+1. Introduzca la lista de valores separados por comas en la variable **[!UICONTROL Anchura de columna]** para especificar el ancho proporcionado de cada columna de la tabla. Por ejemplo, para una tabla que incluya 3 columnas, especificando 2, 4, 6 como el valor en el campo **[!UICONTROL Anchura de columna]** configurará el ancho de las columnas como 2/12 para la primera columna, 4/12 para la segunda columna y 6/12 para la tercera columna. 2/12, ya que la anchura de la primera columna se refiere a una sexta parte de la anchura de la tabla. Del mismo modo, 4/12 establece el ancho de la segunda columna como un tercio del ancho de la tabla y 6/12 establece el ancho de la tercera columna como la mitad del ancho de la tabla.
+
 ## Configurar el estilo de la tabla {#configure}
 
 Puede definir el estilo de una tabla mediante el uso del modo Estilo de la barra de herramientas de la página. Realice los siguientes pasos para cambiar al modo de estilo y editar el estilo de la tabla
@@ -126,7 +135,7 @@ Puede ver las propiedades de estilo en la barra lateral.
 
 >[!NOTE]
 >
->Puede cambiar el tema de color de las filas de encabezado y del cuerpo al cambiar los valores de las variables LESS. Para obtener más información, consulte [Temáticas en [!DNL AEM Forms]](themes.md)
+>Puede cambiar el tema de color de las filas de encabezado y de trabajo cambiando los valores de [MENOS variables](https://lesscss.org//). Para obtener más información, consulte [Temáticas en AEM Forms](/help/forms/themes.md).
 
 ## Agregar o eliminar una fila de forma dinámica {#add-or-delete-a-row-dynamically}
 
@@ -136,9 +145,9 @@ Las tablas proporcionan compatibilidad para agregar o eliminar filas de forma di
 1. En la pestaña Repetir configuración, especifique los recuentos mínimo y máximo para limitar el número de filas de la tabla.
 1. Haga clic en **Listo**.
 
-Durante el tiempo de ejecución, verá **+** y *-* para agregar o eliminar una fila.
+En tiempo de ejecución o previsualización, verá **+** y ![Botón Eliminar](/help/forms/assets/Smock_Delete.svg) para añadir o eliminar una fila.
 
-![add-delete-rows-dynamically](assets/add-delete-rows-dynamically.png)
+![add-delete-rows-dynamically](assets/add-delete-layout.png)
 
 >[!NOTE]
 >
@@ -168,7 +177,7 @@ Para obtener la lista completa de clases, eventos, objetos y API públicas de lo
 
 ## Diseños móviles {#mobile-layouts}
 
-Las tablas de formularios adaptables proporcionan una experiencia inigualable en dispositivos móviles debido a su diseño fluido y adaptable. [!DNL AEM Forms] ofrece dos tipos de diseños móviles para tablas: encabezados a la izquierda y columnas contraíbles.
+Las tablas de formularios adaptables proporcionan una experiencia inigualable en dispositivos móviles debido a su diseño fluido y adaptable. AEM Forms ofrece dos tipos de diseños móviles para tablas: encabezados a la izquierda y columnas contraíbles.
 
 Puede configurar un diseño móvil para una tabla desde la pestaña Estilo del cuadro de diálogo Editar componente.
 
@@ -204,7 +213,7 @@ Columna expandida de una tabla en un dispositivo móvil
 
 ## Combinar datos en una tabla {#merge-data-in-a-table}
 
-Las tablas de formularios adaptables permiten rellenar la tabla durante la ejecución al utilizar datos de un archivo XML. El archivo XML de datos puede residir en el sistema de archivos local del equipo donde [!DNL AEM Forms] el servidor se está ejecutando o en el repositorio CRX.
+Las tablas de formularios adaptables permiten rellenar la tabla durante la ejecución al utilizar datos de un archivo XML. El archivo XML de datos puede residir en el sistema de archivos local del equipo donde se ejecuta el servidor de AEM Forms o en el repositorio CRX.
 
 Veamos un ejemplo de la siguiente tabla de resumen de transacciones bancarias que queremos rellenar con datos de un archivo XML.
 
@@ -276,17 +285,17 @@ El archivo XML contiene datos con el siguiente formato:
 </afData>
 ```
 
-En el XML de ejemplo, los datos de una fila se definen mediante las etiquetas `<Row1>`, que es el nombre del elemento para la fila de la tabla. Dentro de la etiqueta`<Row1>`, los datos de cada celda se definen dentro de la etiqueta para el nombre del elemento, como `<tableItem1>`,`<tableItem2>`, `<tableItem3>`y `<type>`.
+En el XML de ejemplo, los datos de una fila se definen mediante las etiquetas `<Row1>`, que es el nombre del elemento para la fila de la tabla. Dentro de la etiqueta`<Row1>`, los datos de cada celda se definen dentro de la etiqueta para el nombre del elemento, como `<tableItem1>`,`<tableItem2>`, `<tableItem3>` y `<type>`.
 
-Para combinar estos datos con la tabla durante la ejecución, es necesario apuntar el formulario adaptable que contiene la tabla a la ubicación XML absoluta con wcmmode deshabilitado. Por ejemplo, si el formulario adaptable se encuentra en *https://`servername`/myForms/bankTransaction.html* y el archivo XML de datos se guarda en *C:/myTransactions/bankSummary.xml*, puede ver la tabla con los datos en la siguiente dirección URL:
+Para combinar estos datos con la tabla durante la ejecución, es necesario apuntar el formulario adaptable que contiene la tabla a la ubicación XML absoluta con wcmmode deshabilitado. Por ejemplo, si el formulario adaptable se encuentra en *https://localhost:4502/myForms/bankTransaction.html* y el archivo XML de datos se guarda en *C:/myTransactions/bankSummary.xml*, puede ver la tabla con los datos en la siguiente dirección URL:
 
-*https://`servername`/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
+*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
 ![data-merged-table](assets/data-merged-table.png)
 
 ## Uso de componentes XDP y tipos complejos XSD {#use-xdp-components-and-xsd-complex-types}
 
-Si ha creado un formulario adaptable basado en una plantilla de formulario XFA, los elementos XFA están disponibles en la pestaña Modelo de datos del Buscador de contenido de AEM. Puede arrastrar y soltar estos elementos XFA, incluidas tablas, en el formulario adaptable.
+Si ha creado un formulario adaptable basado en una plantilla de formulario XFA, los elementos XFA están disponibles en la pestaña Modelo de datos del buscador de contenido de AEM. Puede arrastrar y soltar estos elementos XFA, incluidas tablas, en el formulario adaptable.
 
 El elemento de tabla XFA está asignado al componente Tabla y funciona de forma predeterminada en formularios adaptables. Todas las propiedades y funcionalidades de la tabla XDP se conservan cuando se mueven al formulario adaptable y se puede realizar cualquier operación en él, igual que con la tabla de formulario adaptable nativa. Por ejemplo, si una fila de una tabla XDP se marca como repetible, también se repetirá cuando se suelte en el formulario adaptable.
 
@@ -294,7 +303,7 @@ Además, puede arrastrar y soltar el subformulario XDP para agregar una fila nue
 
 >[!NOTE]
 >
->Una tabla XDP sin una fila de encabezado no se asignará al componente Tabla de un formulario adaptable. En su lugar, se asignará al componente Panel del formulario adaptable con diseño fluido. Además, cuando se agrega una tabla anidada de un XDP a un formulario adaptable, la tabla exterior se convierte en un panel mientras se mantiene la tabla interna.
+>Una tabla XDP sin una fila de encabezado no se asignará al componente Tabla de un formulario adaptable. En lugar de ello, se asignará al componente Panel del formulario adaptable con diseño fluido. Además, cuando se agrega una tabla anidada de un XDP a un formulario adaptable, la tabla exterior se convierte en un panel mientras se mantiene la tabla interna.
 
 Además, puede arrastrar y soltar un grupo de elementos de tipo complejo XSD para crear una fila de tabla. Se crea una fila nueva justo debajo de la fila en la que se han colocado los elementos. Las celdas creadas mediante los elementos de tipo complejos XSD mantienen una referencia de enlace al XSD. También puede reemplazar una celda del cuerpo por un elemento de tipo complejo XSD al soltar el elemento en la celda.
 
@@ -310,4 +319,3 @@ Además, puede arrastrar y soltar un grupo de elementos de tipo complejo XSD par
 * Cada celda del cuerpo de una tabla predeterminada tiene asociado un nombre de elemento predefinido. Si agrega otra tabla al formulario adaptable, las celdas predeterminadas del cuerpo de la tabla nueva tendrán el mismo nombre de elemento que en la primera tabla. En este caso, los datos generados al enviar el formulario incluirán datos en las celdas predeterminadas del cuerpo de solo una de las tablas. Por lo tanto, asegúrese de cambiar el nombre de los elementos de las celdas predeterminadas del cuerpo para que sean únicos en todas las tablas y evitar la pérdida de datos.
 
    Tenga en cuenta que esto solo es aplicable a las celdas predeterminadas del cuerpo. Si agrega más filas o columnas a una tabla, se generarán automáticamente nombres de elementos únicos para las celdas no predeterminadas del cuerpo.
-
