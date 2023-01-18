@@ -4,67 +4,50 @@ description: Aprenda a crear la estructura que sirve como base para todo el cont
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 900f9fc951a2b95b77abc5835ef9651128824826
+source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 1%
+source-wordcount: '492'
+ht-degree: 0%
 
 ---
 
+
 # Crear la estructura de contenido para la aplicación {#content-structure}
-
-Los fragmentos de contenido permiten diseñar, crear, depurar y publicar contenido independiente de cualquier página. Con ellos, puede preparar contenido que esté listo para usar en varias ubicaciones y en varios canales, lo que resulta ideal para una entrega sin periféricos. Los modelos de fragmento de contenido se utilizan para definir la estructura de este contenido y son lo primero que debe crear para administrar el contenido sin encabezado.
-
-Para ayudarle a comprender cómo se hace esto, este módulo de AEM Trials le lleva a través del proceso con un recorrido rápido e interactivo primero creando el modelo y luego agregando su estructura. Este documento sirve como complemento de la visita al producto, abarcando los mismos pasos y vinculando recursos adicionales cuando corresponde.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Cree la estructura de contenido para la aplicación"
->abstract="A medida que siga nuestra serie de guías interactivas aprenderá a crear la estructura (también conocida como el modelo de fragmento de contenido) que sirve como base para todo su contenido sin encabezado."
+>abstract="A medida que sigue esta serie de guías interactivas, aprenderá a crear una estructura (conocida como el modelo de fragmento de contenido) que sirva de base para su contenido sin encabezado."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
->title="Iniciar el editor de modelos"
->abstract="La creación de un modelo de fragmento de contenido comienza con la creación de un elemento de modelo en el flujo de trabajo de administración de modelos y, a continuación, con la adición de elementos de estructura mediante el editor del modelo de fragmento de contenido.<br><br>Haga clic a continuación para iniciar la función en una nueva pestaña y siga este documento de aprendizaje para crear su primer modelo de fragmento de contenido."
+>title="Iniciar la consola del modelo"
+>abstract="Vamos a explorar cómo crear un esquema reutilizable, llamado modelo de fragmento de contenido, para su contenido en Adobe Experience Manager as a Cloud Service. Vea el vídeo para comprender por qué este es un paso importante. <br><br>Inicie este módulo en una nueva pestaña haciendo clic en el botón de abajo y siga esta guía."
 >additional-url="https://video.tv.adobe.com/v/3413261" text="Vídeo introductorio de la estructura de contenido"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
->title="Iniciar el editor de modelos"
->abstract="¡Enhorabuena! Al crear un modelo de fragmento de contenido, se ha dado el primer paso para ofrecer contenido omnicanal de una forma estándar y escalada."
-
-## La consola Modelo de fragmento de contenido {#content-fragment-model-console}
-
-Se inicia en la consola de modelos de fragmento de contenido. La consola de modelos de fragmento de contenido se puede considerar como su biblioteca de modelos. La consola se utiliza para crear nuevos modelos y administrar los modelos existentes. La consola empieza vacía, así que vamos a crear un nuevo modelo.
-
-![La consola del modelo de fragmento de contenido](assets/content-structure/content-fragment-model-console.png)
-
-Si desea navegar a la consola del modelo de fragmento de contenido por su cuenta fuera de la guía en la aplicación, se encuentra con el icono de Adobe en la parte superior izquierda de la página. Esto abre la navegación global de AEM. Desde aquí puede elegir el **Herramientas** pestaña y luego **General** -> **Modelos de fragmento de contenido**.
-
->[!TIP]
->
->Si desea obtener más información sobre la navegación en AEM, consulte la [Sección Recursos adicionales](#additional-resources) de este documento para obtener más información sobre AEM gestión básica.
+>title="¡Enhorabuena! Ha aprendido a crear un modelo de fragmento de contenido para representar la estructura de sus datos sin encabezado y ha dado el primer paso para ofrecer contenido omnicanal de forma escalada y estándar."
+>abstract=""
 
 ## Crear un modelo {#create-model}
 
-Una vez que esté en la consola del modelo de fragmento de contenido, puede crear un nuevo modelo para representar su propio contenido sin encabezado.
+Al hacer clic en **Iniciar la consola del modelo** arriba abre la consola de modelos de fragmento de contenido en una nueva pestaña.
+
+![La consola del modelo de fragmento de contenido](assets/content-structure/content-fragment-model-console.png)
+
+Considere la consola del modelo de fragmento de contenido como su biblioteca de modelos, donde crea nuevos modelos y gestiona los modelos existentes. La consola empieza vacía, así que vamos a crear un nuevo modelo.
 
 1. En la consola del modelo de fragmento de contenido, haga clic en el botón **Crear** en la parte superior derecha de la pantalla para comenzar a crear un modelo de fragmento de contenido.
 
-1. Se inicia el asistente Crear modelo , que le guía a través de la creación de un modelo de fragmento de contenido.
+1. Se inicia el asistente Crear modelo, que le guía.
 
    ![Asistente del modelo de fragmento de contenido](assets/content-structure/model-wizard.png)
 
    Proporcione la información obligatoria.
 
-   * **Título de modelo** - Esta es una breve descripción del modelo y normalmente indica su propósito.
-   * **Habilitar modelo** - Esta opción está activada de forma predeterminada y debe estar marcada para poder crear fragmentos de contenido más adelante basados en este modelo.
-
-   También puede elegir añadir un **Descripción** al modelo, así como **Etiquetas** para clasificarlo y diferenciarlo para los usuarios más adelante dentro de la consola del modelo de fragmento de contenido.
-
-   >[!TIP]
-   >
-   >Si le interesa cómo las etiquetas pueden organizar su contenido, consulte la [Sección Recursos adicionales](#additional-resources) de este documento para obtener más información sobre el etiquetado en AEM.
+   * **Título de modelo** - Esta es una breve descripción del modelo y normalmente indica el propósito del modelo.
+   * **Habilitar modelo** - Esta opción está activada de forma predeterminada y debe estar activada para poder crear fragmentos de contenido basados en este modelo.
 
 1. Una vez rellenados los campos obligatorios, haga clic en **Crear** en la parte superior izquierda para crear el modelo.
 
@@ -72,59 +55,22 @@ Una vez que esté en la consola del modelo de fragmento de contenido, puede crea
 
    ![Cuadro de diálogo de éxito para crear un nuevo modelo de fragmento de contenido](assets/content-structure/success.png)
 
-1. Para poder utilizar el modelo, también debe definir la estructura de sus datos. Haga clic en **Apertura** en el cuadro de diálogo para abrirlo y continuar definiendo el modelo.
-
 ## Agregar campos al modelo {#configure-model}
 
-El modelo de fragmento de contenido es esencialmente un esquema para los fragmentos de contenido. Es decir, define qué campos/tipos de datos contiene el modelo.
+Para poder utilizar el modelo, debe definir la estructura de sus datos.
 
-![Editor del modelo de fragmento de contenido](assets/content-structure/model-editor.png)
+1. Haga clic en **Apertura** en el **Correcto** del paso anterior para abrir el nuevo modelo en el editor del modelo de fragmento de contenido, donde puede definir sus campos.
 
-Con el editor del modelo de fragmento de contenido, puede definir campos para el modelo de fragmento de contenido mediante una interfaz de arrastrar y soltar.
-
-1. Arrastre un campo desde la **Tipos de datos** a la derecha de la pantalla y suéltela en el modelo de fragmento de contenido. Existen varios tipos de datos para elegir, como un texto de una sola línea, texto multilínea, número y referencias a otros fragmentos.
+1. Arrastre un campo desde la **Tipos de datos** a la derecha del editor y suéltelo en el modelo de fragmento de contenido.
 
    ![Añadir un tipo de datos](assets/content-structure/drop-fields.png)
-
-   >[!TIP]
-   >
-   >Si desea obtener más información sobre los tipos de datos disponibles, consulte la [Sección Recursos adicionales](#additional-resources) de este documento para obtener la documentación detallada de los modelos de fragmento de contenido.
 
 1. Una vez colocado el tipo de datos, la variable **Tipos de datos** se ha cambiado automáticamente a **Propiedades** , donde puede definir los detalles del tipo de datos que acaba de colocar.
 
    ![La pestaña Propiedades del campo de datos](assets/content-structure/data-type-properties.png)
 
-   Las propiedades del modelo pueden incluir el nombre del campo, el tipo de campo, la longitud del campo, si es obligatorio, etc.
-
-1. Utilice la variable **Propiedades** del tipo de datos seleccionado para definir propiedades como valor predeterminado, longitud máxima, si es un campo obligatorio, etc.
-
-   >[!TIP]
-   >
-   >Si desea obtener más información sobre las propiedades disponibles, consulte la [Sección Recursos adicionales](#additional-resources) de este documento para obtener la documentación detallada de los modelos de fragmento de contenido.
-
 1. Una vez añadidos todos los campos necesarios para el modelo de fragmento de contenido, haga clic en **Guardar** en la parte superior derecha de la ventana.
 
-1. Esto guarda el modelo y lo devuelve a la consola del modelo de fragmento de contenido, donde puede añadir más modelos si es necesario.
+El modelo se guarda y se vuelve a la consola del modelo de fragmento de contenido, donde puede agregar más modelos según sea necesario.
 
 ![Módulo completado](assets/content-structure/content-fragment-model-console-populated.png)
-
-## Ha aprendido a crear un modelo de fragmento de contenido {#conclusion}
-
-En este módulo, ha aprendido a crear un modelo de fragmento de contenido para representar la estructura de sus datos sin encabezado. Primero creó el modelo y después lo rellenó con tipos de datos y sus propiedades relacionadas, definiendo así un esquema para el contenido sin encabezado.
-
-Ahora que tiene su propio modelo de fragmento de contenido, puede utilizarlo para crear fragmentos de contenido. El módulo [Crear nuevo contenido](create-content.md) detalles para usar el nuevo modelo de fragmento de contenido para crear contenido sin encabezado.
-
-Para volver a la pantalla de inicio de la versión de prueba, haga clic en **Soluciones** en la parte superior derecha de la barra de navegación y seleccione **Experience Manager**.
-
-![Vaya a casa](assets/content-structure/home.png)
-
-## Recursos adicionales {#additional-resources}
-
-Para obtener más información sobre los fragmentos de contenido y AEM, considere la posibilidad de revisar esta documentación adicional.
-
-* [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md) : Documentación sobre cómo navegar y utilizar AEM para nuevos usuarios
-* [Uso de etiquetas](/help/sites-cloud/authoring/features/tags.md) : Documentación sobre cómo utilizar las etiquetas en AEM para organizar el contenido
-* [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) : Información general sobre los fragmentos de contenido y vínculos a documentación completa sobre los fragmentos de contenido
-* [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) : Documentación completa sobre los modelos de fragmentos de contenido
-* [Modelos de fragmento de contenido: tipos de datos](/help/assets/content-fragments/content-fragments-models.md#data-types) : Detalles sobre los distintos tipos de datos disponibles para los modelos de fragmento de contenido
-* [Modelos de fragmento de contenido: propiedades](/help/assets/content-fragments/content-fragments-models.md#data-types) : Detalles sobre las distintas propiedades disponibles para los tipos de datos de los modelos de fragmento de contenido
