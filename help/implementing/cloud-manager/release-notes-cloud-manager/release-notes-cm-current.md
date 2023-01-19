@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión para Cloud Manager 2022.12.0 en Adobe Experience Manager as a Cloud Service
-description: Estas son las notas de la versión para Cloud Manager 2022.12.0 en AEM as a Cloud Service.
+title: Notas de la versión para Cloud Manager 2023.1.0 en Adobe Experience Manager as a Cloud Service
+description: Estas son las notas de la versión para Cloud Manager 2024.1.0 en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 516c0027f917ea1e54286b268e7a0fb4c4e2b3d7
+source-git-commit: 5aabdf22a040a031a3fa2a1a9f70247cf2e38f2e
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 48%
+source-wordcount: '190'
+ht-degree: 36%
 
 ---
 
 
-# Notas de la versión para Cloud Manager 2022.12.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión para Cloud Manager 2023.1.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página describe las notas de la versión para Cloud Manager 2022.12.0 en AEM as a Cloud Service.
+Esta página documenta las notas de la versión de Cloud Manager 2023.1.0 en AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,15 +21,20 @@ Esta página describe las notas de la versión para Cloud Manager 2022.12.0 en A
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de Cloud Manager 2022.12.0 en AEM as a Cloud Service es el 29 de noviembre de 2022. La próxima versión está planificada para el 19 de enero de 2023.
+La fecha de la versión de Cloud Manager 2023.1.0 en AEM as a Cloud Service es el 19 de enero de 2023. La próxima versión está planificada para el 16 de febrero de 2023.
 
 ## Novedades {#what-is-new}
 
-* Notificaciones para [Actualizaciones de mantenimiento de AEM](/help/overview/what-is-new-and-different.md#aem-updates) se mostrará en la interfaz de usuario de Cloud Manager. Este cambio se implementará de forma gradual en las semanas posteriores a la versión 2022.12.0.
-* Cuando una ingesta a través de la variable [Herramienta de transferencia de contenido (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) está en curso, el estado del entorno tanto en la consola de desarrollador como en Cloud Manager se mostrará como `Ingestion in Progress`.
-* Se llevaron a cabo mejoras en la disponibilidad y fiabilidad de las [canalizaciones de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
+* Las mejoras de uso se realizaron actualizando estilos de cursor que distinguen entre dónde los usuarios pueden realizar acciones y el puntero predeterminado.
+
+* Los informes de prueba de la interfaz de usuario personalizada ahora se copian en el almacenamiento de Cloud Manager y se puede acceder a ellos mediante una llamada de API de Cloud Manager.
+
+* Los usuarios ahora pueden realizar la transición entre los estados de los widgets de Go-live utilizando flechas izquierda-derecha.
+
+   ![Transiciones de utilidades de Go-live](assets/go-live-transitions.gif)
+
+* Autoservicio [creación de programas habilitados para HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) ahora es posible cuando están disponibles los derechos y permisos correspondientes.
 
 ## Correcciones de errores {#bug-fixes}
 
-* Se hizo un cambio para evitar [canalizaciones front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) cuando se está ejecutando una ejecución de canalización en el mismo entorno.
-* Se realizó un cambio para evitar una `PATCH /program//environment//variables` solicitud de entornos con el `FAILED` estado.
+* Cloud Manager impedirá que dos ejecuciones de canalización comiencen (o casi al mismo tiempo), evitando así errores de canalización.
