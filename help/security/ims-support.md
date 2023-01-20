@@ -3,7 +3,7 @@ title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2022'
 ht-degree: 100%
 
