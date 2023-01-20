@@ -3,9 +3,9 @@ title: Crear un portal de Forms en una página de Experience Manager Sites
 description: Obtenga información sobre cómo crear un portal de Forms y utilizar componentes principales listos para usar en una página de AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1764'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Para importar componentes listos para usar del portal de Forms en AEM Forms as a
 
    Además, cambie `appTitle`, `appId`y `groupId`, en el comando anterior para reflejar su entorno.
 
-   Una vez que el proyecto esté listo, actualice la variable `<core.forms.components.version>x.y.z</core.forms.components.version>` en el nivel superior `pom.xml` del proyecto Arquetipo para reflejar la última versión de [core-forms-components](https://github.com/adobe/aem-core-forms-components) en su `AEM Archetype` proyecto.
+   Una vez que el proyecto esté listo, actualice la `<core.forms.components.version>x.y.z</core.forms.components.version>` propiedad en el nivel superior `pom.xml` del proyecto Arquetipo para reflejar la última versión de [core-forms-components](https://github.com/adobe/aem-core-forms-components) en su `AEM Archetype` proyecto.
 
 1. **Implemente el proyecto en su entorno de desarrollo local:** Puede utilizar el siguiente comando para implementar en el entorno de desarrollo local
 
