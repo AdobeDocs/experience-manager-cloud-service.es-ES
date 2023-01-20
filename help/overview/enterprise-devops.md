@@ -3,9 +3,9 @@ title: Operaciones de desarrollo empresarial
 description: Para obtener información sobre los procesos, métodos y comunicaciones necesarios para facilitar la implementación y simplificar la colaboración.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ El código siempre debe propagarse de abajo a arriba:
 * A continuación, se vuelve a probar en los entornos de ensayo.
 * Solo entonces debe implementarse el código en los entornos de producción.
 
-El código (por ejemplo, las plantillas de diseño y la funcionalidad personalizada de las aplicaciones web) se transfiere generalmente mediante la exportación e importación de paquetes entre los distintos repositorios de contenido. Cuando es significativa, esta replicación puede configurarse como un proceso automático.
+El código (por ejemplo, las plantillas de diseño y la funcionalidad de la aplicación web personalizadas) se transfiere normalmente por medio de la exportación e importación de paquetes entre los distintos repositorios de contenido. Cuando es significativa, esta replicación puede configurarse como un proceso automático.
 
 Los proyectos de AEM as a Cloud Service suelen activar la implementación de código:
 
