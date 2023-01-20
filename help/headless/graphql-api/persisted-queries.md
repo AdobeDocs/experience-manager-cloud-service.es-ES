@@ -4,9 +4,9 @@ description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Exp
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1311'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Por ejemplo, para crear una consulta persistente específica para la configuraci
 >
 >Consulte [Habilitar la funcionalidad de fragmento de contenido en el explorador de configuración](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) para obtener más información.
 >
->La variable **Consultas persistentes de GraphQL** debe estar habilitado, para la configuración de sitios adecuada.
+>Las **Consultas persistentes de GraphQL** deben estar habilitadas para la configuración de sitios adecuada.
 
 Por ejemplo, si hay una consulta en particular llamada `my-query`, que utiliza un modelo `my-model` desde la configuración de Sites `my-conf`:
 
@@ -194,9 +194,9 @@ Para ejecutar una consulta persistente, una aplicación cliente realiza una peti
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-Donde `PERSISTENT_PATH` es una ruta abreviada en la que se guarda la consulta persistente.
+Donde `PERSISTENT_PATH` es una ruta abreviada donde se guarda la consulta persistente.
 
-1. Por ejemplo `wknd` es el nombre de configuración y `plain-article-query` es el nombre de la consulta persistente. Para ejecutar la consulta:
+1. Por ejemplo, `wknd` es el nombre de configuración y `plain-article-query` es el nombre de la consulta persistente. Para ejecutar la consulta:
 
    ```shell
    $ curl -X GET \
@@ -207,7 +207,7 @@ Donde `PERSISTENT_PATH` es una ruta abreviada en la que se guarda la consulta pe
 
    >[!NOTE]
    >
-   > Las variables y los valores de consulta deben ser correctos [codificado](#encoding-query-url) al ejecutar una consulta persistente.
+   > Las variables y los valores de consulta deben ser [codificados](#encoding-query-url) correctamente al ejecutar una consulta persistente.
 
    Por ejemplo:
 
@@ -312,7 +312,7 @@ La dirección URL se puede desglosar en las siguientes partes:
 
 | Parte URL | Descripción |
 |----------| -------------|
-| `/graphql/execute.json` | Extremo de consulta persistente |
+| `/graphql/execute.json` | Punto de conexión de consulta persistente |
 | `/wknd/adventure-by-path` | Ruta de consulta persistente |
 | `%3B` | Codificación de `;` |
 | `adventurePath` | Variable de consulta |
@@ -334,7 +334,7 @@ Las consultas persistentes siempre deben crearse en un servicio de AEM Author y 
 
 ### Empaquetar consultas persistentes
 
-Las consultas persistentes se pueden incorporar en [Paquetes AEM](/help/implementing/developing/tools/package-manager.md). Los paquetes AEM se pueden descargar e instalar en diferentes entornos. Los paquetes AEM también se pueden replicar desde un entorno de AEM Author a entornos de AEM Publish.
+Las consultas persistentes se pueden integrar en [Paquetes de AEM](/help/implementing/developing/tools/package-manager.md). Los paquetes AEM se pueden descargar e instalar en diferentes entornos. Los paquetes AEM también se pueden replicar desde un entorno de AEM Author a entornos de AEM Publish.
 
 Para crear un paquete, haga lo siguiente:
 
