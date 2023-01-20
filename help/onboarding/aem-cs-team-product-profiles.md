@@ -1,17 +1,17 @@
 ---
 title: Perfiles de AEM as a Cloud Service Team y de producto
-description: Descubra cómo AEM equipo as a Cloud Service y los perfiles de producto pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia.
+description: Aprenda cómo los perfiles de equipo y de producto de AEM as a Cloud Service pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Perfiles de AEM as a Cloud Service Team y de producto {#product-profiles}
 
-Descubra cómo AEM equipo as a Cloud Service y los perfiles de producto pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia.
+Aprenda cómo los perfiles de equipo y de producto de AEM as a Cloud Service pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia.
 
 ## Perfiles de producto {#profiles}
 
@@ -31,13 +31,13 @@ Los integrantes del equipo de AEM as a Cloud Service se agregarán y asignarán 
 
 >[!NOTE]
 >
->Todos los usuarios asignados a un perfil de producto as a Cloud Service AEM tienen acceso de solo lectura a Cloud Manager a través del **Usuario de Cloud Manager** función.
+>Todos los usuarios asignados a un perfil de producto de AEM as a Cloud Service tienen acceso de solo lectura a Cloud Manager a través de la función del **Usuario de Cloud Manager**.
 >
->Usuarios con solo la variable **Usuario de Cloud Manager** puede iniciar sesión en Cloud Manager y navegar a los entornos de creación de AEM (si existen) utilizando la función **Programas** opciones de menú. La variable **Usuario de Cloud Manager** no es suficiente para acceder a los detalles del programa. Si se necesita dicho acceso, el administrador del sistema debe otorgar a los usuarios funciones adicionales.
+>Los usuarios con solo la función de **Usuario de Cloud Manager** pueden iniciar sesión en Cloud Manager y navegar a los entornos de creación de AEM (si existen) utilizando las opciones del menú **Programas**. La función de **Usuario de Cloud Manager** no es suficiente para acceder a los detalles del programa. Si se necesita dicho acceso, el administrador del sistema debe otorgar a los usuarios funciones adicionales.
 
 >[!TIP]
 >
->* Para obtener más información sobre AEM perfiles de producto, consulte el documento [Asignación AEM Perfiles De Producto.](/help/journey-onboarding/assign-profiles-aem.md)
+>* Para obtener más información acerca de los perfiles de producto de AEM, consulte el documento [Asignación de perfiles de producto de AEM.](/help/journey-onboarding/assign-profiles-aem.md)
 >* Para obtener más información sobre el proceso de incorporación, consulte el [recorrido de incorporación.](/help/journey-onboarding/overview.md)
 
 
@@ -70,6 +70,6 @@ Su equipo de Cloud Manager incluirá al menos lo siguiente:
 
 >[!TIP]
 >
->* Para obtener más información sobre los perfiles de producto de Cloud Manager, consulte el documento [Asignación de miembros del equipo a perfiles de producto de Cloud Manager.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* Para obtener más información sobre los perfiles de producto de Cloud Manager, consulte el documento [Asignación de integrantes del equipo a perfiles de producto de Cloud Manager.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
 >* Para obtener más información sobre el proceso de incorporación, consulte el [recorrido de incorporación.](/help/journey-onboarding/overview.md)
 
