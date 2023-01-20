@@ -3,7 +3,7 @@ title: Personas adecuadas, funciones correctas
 description: Personas adecuadas, funciones correctas
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
 ht-degree: 100%
 
@@ -60,11 +60,11 @@ Es posible que ya tenga a la mayoría de las personas que necesita para ejecutar
 | Función | Habilidades | Nivel de capacidad | Cualidades |
 |--- |--- |--- |--- |
 | Gestor de proyectos | Certificación PMP, certificación Agile, experiencia de gestión de riesgos | Experto | Justo, coherente, responsable, organizado, positivo, accesible, dispuesto a aceptar el cambio |
-| Patrón de depuración | Certificación ScrumMaster, certificación Agile, experiencia de facilitación | Experto | Coherente, creativo |
-| Propietario del producto | Certificación Agile, profunda comprensión de las necesidades empresariales | Experto | Equilibrado, seguro |
+| Scrum Master | Certificación ScrumMaster, certificación Agile, experiencia de facilitación | Experto | Coherente, creativo |
+| Product Owner | Certificación Agile, profunda comprensión de las necesidades empresariales | Experto | Equilibrado, seguro |
 | IT Leads en Seguridad, Infraestructura, Herramientas | Certificación CISM, certificación para desarrolladores de componentes de Adobe Experience Manager | Experto | Orientación al detalle |
 | Encargados de estrategias/usuarios avanzados | Competencia en Adobe Experience Manager Sites | De novato a experto | Tenacidad, curiosidad, minuciosidad, mentalidad abierta, disposición al cambio, colaboración |
-| Cliente potencial de control de calidad/UAT | Certificación Agile, comprensión del SDLC | De novato a intermedio | Orientación al detalle, impulso de procesos, coherencia |
+| QA/UAT Lead | Certificación Agile, comprensión del SDLC | De novato a intermedio | Orientación al detalle, impulso de procesos, coherencia |
 | Arquitecto técnico | Experiencia en infraestructura de TI | Experto | Orientado a los detalles, impulsado por el proceso, coherente |
 | Desarrollador de back-end | Certificación Agile, experiencia en programación informática y ciencias de la computación | De novato a intermedio | Orientado a los detalles, impulsado por el proceso, coherente |
 | Desarrollador front-end | Certificación Agile, comprensión de HTML, CSS y JavaScript | De novato a intermedio | Orientado a los detalles, impulsado por el proceso, coherente |
@@ -78,4 +78,4 @@ Ahora que sabe qué funciones son necesarias, consulte el gráfico siguiente par
 
 >[!TIP]
 >
-> Obtenga más información sobre Adobe Experience Cloud y aproveche los recursos en [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) y obtenga la certificación mediante el [Aprendizaje digital de Adobe](https://learning.adobe.com/certification.html).
+> Obtenga más información sobre Adobe Experience Cloud y aproveche los recursos en [Experience League](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager) y obtenga la certificación mediante el [Aprendizaje digital de Adobe](https://learning.adobe.com/certification.html).
