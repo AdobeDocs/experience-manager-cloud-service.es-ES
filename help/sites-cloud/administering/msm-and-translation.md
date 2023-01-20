@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Normalmente, se crea un sitio principal en un idioma y para un país específico
 >
 >Limite el uso del Administrador de varios sitios al contenido en un idioma.
 >
->Por ejemplo, utilice el patrón inglés para crear la versión en inglés de las páginas para EE. UU., Canadá, Reino Unido, etc. y utilice el francés para crear la versión en francés de las páginas para Francia, Suiza, Canadá, etc.
+>Por ejemplo, use el sitio principal en inglés para crear la versión en inglés de las páginas para EE. UU., Canadá, Reino Unido, etc. y utilice el francés para crear la versión en francés de las páginas para Francia, Suiza, Canadá, etc.
 
 El diagrama siguiente ilustra cómo se cruzan los conceptos principales (pero no muestra todos los niveles/elementos implicados):
 
