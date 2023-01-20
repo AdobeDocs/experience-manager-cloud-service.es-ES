@@ -3,9 +3,9 @@ title: 'Novedades y diferencias: Adobe Experience Manager as a Cloud Service'
 description: 'Novedades y diferencias: Adobe Experience Manager (AEM) as a Cloud Service.'
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1903'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -67,23 +67,23 @@ Esto permite adaptarse automáticamente a distintos patrones de uso:
 
 ## Actualizaciones de AEM {#aem-updates}
 
-AEM as a Cloud Service ahora utiliza la integración continua y el envío continuo (CI/CD) para garantizar que sus proyectos se encuentren en la versión de AEM más actual. Esto significa que las instancias de producción y de ensayo se actualizan a la última versión de AEM sin interrupciones del servicio para los usuarios.
+AEM as a Cloud Service ahora utiliza la integración y la entrega continua (CI/CD) para garantizar que sus proyectos se encuentren en la versión de AEM más actual. Esto significa que las instancias de producción y de ensayo se actualizan a la última versión de AEM sin interrupciones del servicio para los usuarios.
 
 >[!NOTE]
 >
->Si la actualización al entorno de producción falla, Cloud Manager restaurará automáticamente el entorno de ensayo. Esto se hace automáticamente para asegurarse de que, después de que se complete una actualización, tanto los entornos de ensayo como de producción estén en la misma versión AEM.
+>Si la actualización al entorno de producción falla, Cloud Manager restablecerá automáticamente el entorno de ensayo. Esto se realiza automáticamente para garantizar que, después de completarse una actualización, tanto los entornos de ensayo como de producción estén en la misma versión de AEM.
 
-Existen dos tipos de actualizaciones de AEM versión:
+Existen dos tipos de actualizaciones versión de AEM:
 
 * **Actualizaciones de mantenimiento de AEM**
 
-   * Se puede publicar diariamente.
+   * Se pueden publicar diariamente.
    * Se utilizan principalmente para fines de mantenimiento, incluidas las últimas correcciones de errores y actualizaciones de seguridad.
    * Tienen un impacto mínimo, ya que los cambios se aplican con regularidad.
 
 * **Nuevas actualizaciones de funciones**
 
-   * Se publican mediante un calendario mensual predecible.
+   * Publicadas mediante una programación mensual predecible.
 
 >[!TIP]
 >
@@ -150,7 +150,7 @@ También es significativamente diferente, ya que ahora hay:
 
 >[!TIP]
 >
->Para obtener una descripción general completa del proceso de incorporación, consulte la [recorrido de incorporación.](/help/journey-onboarding/overview.md)
+>Para obtener una descripción general completa del proceso de incorporación, consulte el [recorrido de incorporación.](/help/journey-onboarding/overview.md)
 
 ## Desarrollo de {#developing}
 
