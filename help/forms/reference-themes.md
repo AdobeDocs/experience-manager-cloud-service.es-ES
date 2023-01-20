@@ -4,19 +4,19 @@ seo-title: Reference Themes
 description: AEM Forms proporciona temas de formularios adaptables que puede obtener de Distribución de software y utilizar para aplicar estilo a un formulario.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 3ca1996ac3a19151c0c05bd972f0aec07edabf69
-workflow-type: tm+mt
+exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
+source-git-commit: bca7d28ab6cd846df0c51a8bece17e11304129df
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
+# Activos de referencia para Forms como Cloud Service {#reference-themes}
 
-# Recursos de referencia para Forms as a Cloud Service {#reference-themes}
+Puede obtener los temas de referencia, las plantillas y los modelos de datos de formulario instalando el [Paquete de activos de referencia](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ayuda a iniciar y acelerar rápidamente su desarrollo de formularios adaptables. Puede usar [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=es) para implementar este paquete en su entorno de AEM Forms as a Cloud Service.
 
-Puede obtener los temas de referencia, las plantillas y los modelos de datos de formulario instalando el [Paquete de recursos de referencia](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ayuda a iniciar y acelerar rápidamente su desarrollo de Forms adaptable. Puede usar [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=es) para implementar este paquete en su entorno as a Cloud Service de AEM Forms.
-
-Los recursos de referencia incluidos en el paquete son:
+Los activos de referencia incluidos en el paquete son:
 
 ## Temáticas {#themes}
 
@@ -28,19 +28,19 @@ Los recursos de referencia incluidos en el paquete son:
 * Urbane
 * Canva
 
-Cada tema contiene un estilo único y elegante que puede utilizar para crear formularios adaptables para los usuarios. Contiene un estilo único para selectores como panel, cuadro de texto, cuadro numérico, botón de radio, tabla y conmutador. Los ajustes en estos temas se basan en requisitos. Por ejemplo, en una situación concreta se requiere un tema minimalista con fuentes limpias. El tema Urbane le permite lograr ese aspecto.
+Cada tema contiene un estilo único y elegante que puede utilizar para crear formularios adaptables para los usuarios. Contiene un estilo único para selectores como panel, cuadro de texto, cuadro numérico, botón de radio, tabla y conmutador. El estilo de estos temas dependerá de los requisitos. Por ejemplo, en un escenario concreto se requiere un tema minimalista con fuentes limpias. El tema Urbane le permite lograr ese aspecto.
 
 ![Temas de referencia](/help/forms/assets/ref-themes.png)
 
-Los temas incluidos en este paquete son interactivos y el estilo de estos temas se define para las pantallas móviles y de escritorio. La mayoría de los navegadores modernos de una variedad de dispositivos pueden procesar formularios aplicados con uno de estos temas sin ningún inconveniente.
+Los temas incluidos en este paquete son adaptables y el estilo de dichos temas está diseñado para las pantallas móviles y de ordenador. La mayoría de los navegadores modernos de una variedad de dispositivos pueden procesar formularios aplicados con uno de estos temas sin ningún inconveniente.
 
 Para obtener más información sobre la instalación del paquete, consulte [Cómo trabajar con paquetes](/help/implementing/developing/tools/package-manager.md).
 
 ### Beryl {#beryl}
 
-El tema Beryl es utilizado por la forma adaptativa We.Gov, y enfatiza el uso de la imagen de fondo, la transparencia y los iconos grandes y planos. En la captura de pantalla siguiente, puede ver el aspecto del tema Beryl y cómo puede mejorar el estilo del formulario.
+El tema Beryl se usa en el formulario adaptativo We.Gov, y enfatiza el uso de la imagen de fondo, la transparencia y los iconos grandes y planos. En la captura de pantalla siguiente, puede ver el aspecto del tema Beryl y cómo puede mejorar el estilo del formulario.
 
-![Tema de Beryl](/help/forms/assets/beryl.png)
+![Tema Beryl](/help/forms/assets/beryl.png)
 
 <!--[Click to enlarge
 
@@ -75,24 +75,24 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 ### Tranquilo {#tranquil}
 
-El tema tranquilo ofrece tonos claros y oscuros de la combinación de colores Tranquilos para resaltar los diferentes componentes de un formulario. Por ejemplo, los botones de radio, los paneles y las pestañas tienen un color verde diferente.
+El tema Tranquil ofrece tonos claros y oscuros de su esquema de colores para resaltar los diferentes componentes de un formulario. Por ejemplo, los botones de radio, los paneles y las pestañas tienen un color verde diferente.
 
-![Tema tranquilo](/help/forms/assets/tranquil.png)
+![Tema Tranquil](/help/forms/assets/tranquil.png)
 
 <!--[Click to enlarge](assets/tranquil-1.png)-->
 
-### Ultramarino {#ultramarine}
+### Ultramarine {#ultramarine}
 
-El tema ultramarino utiliza tonos azules profundos para resaltar componentes como fichas, paneles, cuadros de texto y botones.
+El tema Ultramarine utiliza tonos azules profundos para resaltar componentes como fichas, paneles, cuadros de texto y botones.
 
-![Tema ultramarino](/help/forms/assets/ultramarine.png)
+![Tema Ultramarine](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
 ### Urbane {#urbane}
 
-El tema de Urbane destaca el aspecto minimalista y funcional de su forma. Al aplicar el tema Urbane al formulario, puede ver que los componentes son planos. Los paneles tienen contornos finos para crear un aspecto moderno.
+El tema de Urbane destaca el aspecto minimalista y funcional de su formulario. Al aplicar el tema Urbane al formulario, puede ver que los componentes son planos. Los paneles tienen contornos finos para crear un aspecto moderno.
 
-![Tema de Urbane](/help/forms/assets/urbane.png)
+![Tema Urbane](/help/forms/assets/urbane.png)
 <!--[Click to enlarge](assets/urbane-1.png)-->
 
 <!-- ## U.S. Web Design Standards {#u-s-web-design-standards}
@@ -121,7 +121,7 @@ La plantilla básica proporciona un lienzo vacío para crear la estructura inici
 
 ### Microsoft® Dynamics 365
 
-El modelo de datos de Microsoft Dynamics 365 le ayuda a utilizar Microsoft Dynamics 365 como fuente de datos. También proporciona servicios de ejemplo para leer, actualizar, eliminar y agregar datos al origen de datos de Microsoft Dynamics 365.
+El modelo de datos de Microsoft Dynamics 365 le ayuda a utilizar Microsoft Dynamics 365 como fuente de datos. También proporciona servicios de ejemplo para leer, actualizar, eliminar y agregar datos a la fuente de datos de Microsoft Dynamics 365.
 
 ![Modelo de datos de formulario de Microsoft® Dynamics 365](/help/forms/assets/microsoft-dynamic-fdm.png)
 
