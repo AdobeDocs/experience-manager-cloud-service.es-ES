@@ -3,9 +3,9 @@ title: Fragmentos de contenido
 description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1166'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -153,7 +153,7 @@ Si tiene [contenido asociado](/help/sites-cloud/administering/content-fragments/
 
 >[!NOTE]
 >
->Existen varios métodos para añadir [recursos visuales (por ejemplo, imágenes)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
+>Existen varios métodos para añadir [recursos visuales (por ejemplo, imágenes)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o la página.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Desde aquí podrá arrastrar los recursos a la ubicación requerida (en un compo
 
 ### Recursos insertados en el fragmento {#assets-inserted-into-the-fragment}
 
-Si se insertan recursos (por ejemplo, imágenes) en el propio fragmento (como [fragmentos de medios mixtos](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), las opciones para editar estos recursos en el editor de páginas son limitadas.
+Si se insertan recursos (por ejemplo, imágenes) en el fragmento en sí (como [fragmentos de medios mixtos](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), las opciones para modificarlos en el editor de páginas son limitadas.
 
 Por ejemplo, para una imagen puede
 
