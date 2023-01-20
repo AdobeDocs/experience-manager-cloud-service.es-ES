@@ -1,13 +1,13 @@
 ---
 title: 'Fragmentos de contenido: explorador de configuración'
-description: Aprenda a habilitar la funcionalidad Fragmento de contenido y GraphQL en el navegador de configuración para aprovechar AEM funciones de envío sin encabezado.
+description: Aprenda a habilitar la funcionalidad Fragmento de contenido y GraphQL en el explorador de configuración para aprovechar las funciones de envío sin encabezado de AEM.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '365'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Obtenga información sobre cómo habilitar una funcionalidad de fragmento de con
 Antes de usar fragmentos de contenido, debe usar el **Explorador de configuración** para habilitar lo siguiente:
 
 * **Modelos de fragmentos de contenido**: obligatorio
-* **Consultas persistentes de GraphQL** - opcional
+* **Consultas persistentes de GraphQL**: opcional
 
 >[!CAUTION]
 >
