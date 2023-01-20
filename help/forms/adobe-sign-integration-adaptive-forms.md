@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 72c53bf69c36c265d25d136c0d2887cac2fe98fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 
 1. Copie la URL de la ventana actual del explorador en un bloc de notas. La URL es necesaria para configurar la aplicación [!DNL Adobe Sign] con [!DNL AEM Forms] en un paso posterior. Pulse **[!UICONTROL Siguiente]**.
 
-1. En el **[!UICONTROL Configuración]** , la pestaña **[!UICONTROL URL de OAuth]** contiene la dirección URL predeterminada. El formato del URL es el siguiente:
+1. En la pestaña **[!UICONTROL Configuración]**, el campo **[!UICONTROL URL de OAuth]** contiene la URL predeterminada. El formato del URL es el siguiente:
 
    `https://<shard>/public/oAuth/v2`
 
@@ -57,21 +57,21 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 
    donde:
 
-   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL  Adobe Sign] apuntan a la [partición correcta](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL  Adobe Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
 
    Si crea otra configuración de [!DNL Adobe Sign] para una función o componente de Adobe Experience Manager, asegúrese de que todas las configuraciones en la nube de [!DNL Adobe Sign] apuntan a la misma partición.
 
    >[!NOTE]
    >
-   > Mantenga el **Crear configuración de Adobe Sign** página abierta. No lo cierre. Puede recuperar **ID de cliente** y **Secreto del cliente** después de configurar la configuración de OAuth para [!DNL Adobe Sign] como se describe en los pasos siguientes.
+   > Mantenga la página **Crear la configuración de Adobe Sign** abierta. No la cierre. Puede recuperar la **ID de cliente** y el **Secreto de cliente** después de configurar OAuth para la aplicación [!DNL Adobe Sign] como se describe en los pasos siguientes.
 
 
 1. Configure OAuth para la aplicación [!DNL Adobe Sign]:
 
    1. Abra una ventana del explorador e inicie sesión en su cuenta de desarrollador de [!DNL Adobe Sign].
    1. Seleccione la aplicación configurada para [!DNL AEM Forms] y pulse **[!UICONTROL Configurar OAuth para aplicación]**.
-   1. En el **[!UICONTROL Dirección URL de redireccionamiento]** , añada la URL copiada en un paso anterior (paso 7) y haga clic en **[!UICONTROL Guardar]**.
-   1. Active el siguiente ámbito para la variable [!DNL Adobe Sign] aplicación y haga clic en **[!UICONTROL Guardar]**.
+   1. En el cuadro **[!UICONTROL URL de redireccionamiento]**, añada la URL copiada en el paso anterior (Paso 7) y haga clic en **[!UICONTROL Guardar]**.
+   1. Habilite el siguiente ámbito para la aplicación [!DNL Adobe Sign] y haga clic en **[!UICONTROL Guardar]**.
    * [!DNL aggrement_read]
    * [!DNL aggrement_write]
    * [!DNL aggrement_send]
@@ -83,7 +83,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 
    ![Configuración de OAuth](assets/oauthconfig_new.png)
 
-1. Vuelva a la página **[!UICONTROL Crear configuración de Adobe Sign]**. En el **[!UICONTROL Configuración]** especifique el **[!UICONTROL ID de cliente]** (también denominado ID de aplicación) y **[!UICONTROL Secreto del cliente]**]. Utilice la variable [ID de cliente y Secreto de cliente de la aplicación Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) creado en el paso anterior.
+1. Vuelva a la página **[!UICONTROL Crear configuración de Adobe Sign]**. En la pestaña **[!UICONTROL Configuración]**, especifique la [**[!UICONTROL ID de cliente]** (también denominada como ID de aplicación) y el **[!UICONTROL Secreto de cliente]**]. Utilice el [ID de cliente y el Secreto de cliente de la aplicación Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) que creó en el paso anterior.
 
 1. Seleccione la opción **[!UICONTROL Habilitar Adobe Sign para archivos adjuntos]** para anexar los archivos adjuntos a un formulario adaptable al documento de [!DNL Adobe Sign]correspondiente enviado para su firma.
 
