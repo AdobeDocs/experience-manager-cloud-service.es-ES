@@ -4,7 +4,7 @@ description: Introducción a la integración entre [!DNL Assets] y [!DNL Workfro
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5bc048052ca579707fb2508d3f436f1755a5d218
+source-git-commit: 269dff32b41dba86fb048418da3f3b3ef8a6781e
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 3%
@@ -49,7 +49,7 @@ Consulte la compatibilidad con la plataforma y [requisitos previos para el conec
 A continuación se detallan las funcionalidades disponibles a través de varios tipos de integraciones entre [!DNL Assets] y [!DNL Workfront].
 
 | Función | Descripción | [!DNL Workfront] y [!DNL Assets Essentials] *Sin conector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Requiere conector* | Workfront y [!DNL Experience Manager as a Cloud Service] *Sin conector (OOTB)* |
-|----|----|----|------|-----|-----|
+|----|----|----|-----|-----|
 | Métodos de implementación | Apropiado para el cual [!DNL Assets] oferta. | Assets Essentials | Cloud Service, Adobe Managed Services, On-Premise | Servicio de nube de  |
 | **General** |
 | Enviar archivos digitales desde [!DNL Workfront] a [!DNL Assets] | La última versión de un documento WF se puede cargar en AEM Assets, que se vinculará como una nueva versión del documento. | ✓ | ✓ | ✓ |
