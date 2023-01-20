@@ -1,21 +1,21 @@
 ---
 title: Métodos abreviados de teclado para la consola Fragmentos de contenido
-description: Hay varios métodos abreviados del teclado disponibles a través de AEM, incluidos algunos para administrar fragmentos de contenido
+description: Hay varios métodos abreviados de teclado disponibles mediante AEM, incluidos algunos para la administración de Fragmentos de contenido
 feature: Content Fragments
 role: User
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
 # Métodos abreviados de teclado para la consola Fragmentos de contenido {#keyboard-shortcuts-content-fragments-console}
 
-Hay una selección de métodos abreviados del teclado disponibles para su uso en la consola Fragmentos de contenido .
+Hay una selección de métodos abreviados de teclado disponibles para su uso en la consola Fragmentos de contenido.
 
-Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se aplican cuando [editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), otros al [uso de consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la [edición de páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md) y otros, en el [uso de las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -25,20 +25,20 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->Los métodos abreviados no distinguen entre mayúsculas y minúsculas.
+>Los atajos no distinguen entre mayúsculas y minúsculas.
 
 | Lugar de residencia | Método abreviado | Descripción |
 |---|---|---|
-| No se ha seleccionado ningún fragmento de contenido | `n` | Abrir el cuadro de diálogo crear |
+| No se ha seleccionado ningún fragmento de contenido | `n` | Abrir el cuadro de diálogo Crear |
 | Seleccionar uno o varios fragmentos de contenido | `m` | Abrir el cuadro de diálogo Mover |
 | Seleccionar uno o varios fragmentos de contenido | `Backspace` | Abrir el cuadro de diálogo Eliminar |
 | Seleccionar uno o varios fragmentos de contenido | `r` | Abrir el cuadro de diálogo Cambiar nombre |
-| Seleccionar uno o varios fragmentos de contenido | `Ctrl-c` | Abrir el cuadro de diálogo de copia |
+| Seleccionar uno o varios fragmentos de contenido | `Ctrl-c` | Abrir el cuadro de diálogo Copiar |
 | Seleccionar uno o varios fragmentos de contenido | `p` | Abrir el cuadro de diálogo Publicar ahora |
-| Seleccionar uno o varios fragmentos de contenido | `u` | Abrir el cuadro de diálogo Cancelar publicación ahora |
-| Cualquier cuadro de diálogo abierto | `esc` | El cuadro de diálogo se descarta |
+| Seleccionar uno o varios fragmentos de contenido | `u` | Abrir el cuadro de diálogo Cancelar la publicación ahora |
+| Cualquier cuadro de diálogo abierto | `esc` | El cuadro de diálogo se cierra |
 
-También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio. Algunos se aplican cuando [editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), otros al [uso de consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+También hay varios métodos abreviados de teclado disponibles para los usuarios de escritorio. Algunos se emplean en la [edición de páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md) y otros, en el [uso de las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) habitual.
 
 >[!NOTE]
 >
