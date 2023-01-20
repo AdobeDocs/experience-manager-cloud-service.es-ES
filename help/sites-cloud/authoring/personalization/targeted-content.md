@@ -3,15 +3,15 @@ title: Creación de contenido orientado mediante el modo de Orientación
 description: El modo de Orientación y el componente Target proporcionan herramientas para crear contenido para las experiencias
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5414'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Creación de contenido orientado mediante el modo de Orientación {#authoring-targeted-content-using-targeting-mode}
 
-Contenido orientado por el autor mediante el modo de Orientación de AEM. El modo de Orientación y el componente Target proporcionan herramientas para crear contenido para las experiencias:
+Contenido orientado por el autor mediante el modo de segmentación de AEM. El modo de Orientación y el componente Target proporcionan herramientas para crear contenido para las experiencias:
 
 * Reconozca fácilmente el contenido orientado que se encuentra en la página. Una línea discontinua forma un borde alrededor de todo el contenido orientado.
 * Seleccione una marca y una actividad para ver las experiencias.
@@ -24,15 +24,15 @@ Contenido orientado por el autor mediante el modo de Orientación de AEM. El mod
 
 >[!NOTE]
 >
->El modo de Orientación está disponible tanto en el Editor de páginas como en el Editor de fragmentos de experiencias.
+>El modo de segmentación está disponible tanto en el Editor de páginas como en el Editor de fragmentos de experiencias.
 >
 >La siguiente documentación es aplicable a ambos (ya que ambos funcionan de la misma manera) aunque está escrita para el Editor de páginas.
 
 >[!CAUTION]
 >
->Al establecer objetivos en el Editor de páginas, solo se puede establecer como objetivo los componentes de fragmento de experiencia .
+>Al segmentar objetivos en el Editor de páginas, solo se pueden segmentar los componentes de Fragmento de experiencia.
 >
->Otros tipos de componentes se pueden convertir en un fragmento de experiencia utilizando la variable **Convertir en variación de fragmento de experiencia** en la barra de herramientas de componentes.
+>Otros tipos de componentes se pueden convertir en un Fragmento de experiencia utilizando el icono de **Convertir en variación de fragmento de experiencia** en la barra de herramientas de componentes.
 
 <!--
 >Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
@@ -40,7 +40,7 @@ Contenido orientado por el autor mediante el modo de Orientación de AEM. El mod
 >![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 -->
 
-Puede utilizar AEM o Adobe Target como motor de orientación (para utilizar Adobe Target, debe tener una cuenta de Adobe Target válida). Si utiliza Adobe Target, primero debe configurar la integración. Consulte la [instrucciones para la integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+Puede utilizar AEM o Adobe Target como motor de orientación (para utilizar Adobe Target, debe tener una cuenta de Adobe Target válida). Si utiliza Adobe Target, primero debe configurar la integración. Consulte las [instrucciones para la integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![Contenido de direccionamiento](../assets/targeted-content.png)
 
@@ -520,13 +520,13 @@ Para configurar los objetivos y las configuraciones si utiliza Adobe Target:
 
    ![Fuente de creación de informes](../assets/targeted-reporting-source.png)
 
-1. En el área **Métrica de objetivo**, en **Mi objetivo principal**, seleccione la métrica de éxito que desee rastrear (conversión, ingresos, participación) y especifique cómo se mide esa métrica (o qué acción toma la audiencia para indicar que se ha alcanzado un objetivo). Consulte la definición de las métricas de objetivo en la tabla anterior y consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) sobre las métricas de éxito.
+1. En el área **Métrica de objetivo**, en **Mi objetivo principal**, seleccione la métrica de éxito que desee rastrear (conversión, ingresos, participación) y especifique cómo se mide esa métrica (o qué acción toma la audiencia para indicar que se ha alcanzado un objetivo). Consulte la definición de las métricas de objetivo en la tabla anterior y consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=es) sobre las métricas de éxito.
 
    Para cambiar el nombre del objetivo, haga clic en los tres puntos de la esquina superior derecha y seleccione **Cambiar nombre**.
 
    Si necesita borrar todos los campos, haga clic en los tres puntos de la esquina superior derecha y seleccione **Borrar todos los campos**.
 
-   Todas las métricas también tienen configuraciones avanzadas que puede definir. Seleccione **Configuraciones avanzadas** para acceder a las mismas. Consulte la definición de cómo se cuentan las métricas de éxito en la tabla anterior y consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
+   Todas las métricas también tienen configuraciones avanzadas que puede definir. Seleccione **Configuraciones avanzadas** para acceder a las mismas. Consulte la definición de cómo se cuentan las métricas de éxito en la tabla anterior y consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=es).
 
    >[!NOTE]
    >
