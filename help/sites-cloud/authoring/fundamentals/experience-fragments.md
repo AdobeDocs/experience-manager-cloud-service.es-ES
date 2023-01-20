@@ -3,9 +3,9 @@ title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencia Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1971'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -308,68 +308,70 @@ Al editar un fragmento de experiencia, los bloques de creación disponibles se m
 
 ![Seleccionar bloques de creación](/help/sites-cloud/authoring/assets/xf-14.png)
 
-## Personalización en el fragmento de experiencia {#personalization-experience-fragment}
+## Personalización en el Fragmento de experiencia {#personalization-experience-fragment}
 
-La personalización en el fragmento de experiencia le permite, como especialista en marketing, definir audiencias de destino para el fragmento de experiencia solo una vez y, a continuación, reutilizar el fragmento en cualquier página. Así pues:
+La personalización en el Fragmento de experiencia le permite, como experto en marketing, definir un público objetivo para el Fragmento de experiencia solo una vez y, a continuación, reutilizar el fragmento en cualquier página. Así pues:
 
 * elimina la necesidad de especificar las variaciones necesarias para cada audiencia cada vez que se utiliza el fragmento
 * mantiene el estilo en todas las ofertas
 
-Puede crear un fragmento de experiencia con varios componentes agrupados dentro de este fragmento único. También puede crear variaciones del fragmento para cada segmento de audiencia específico y luego reutilizar estos fragmentos de experiencias en los canales requeridos.
+Puede crear un Fragmento de experiencia con varios componentes agrupados dentro de este fragmento único. También puede crear variaciones del fragmento para cada segmento de audiencia específico y luego reutilizar estos Fragmentos de experiencias en los canales requeridos.
 
-La personalización se logra definiendo la variable **Personalización** propiedades en el fragmento de experiencia o la variación, o en la carpeta que contiene los fragmentos; esto significa que la herencia puede anular las propiedades de personalización.
+La personalización se logra definiendo las propiedades de la variable **Personalización** en el Fragmento de experiencia, en la variación o en la carpeta que contiene los fragmentos; esto significa que la herencia puede anular las propiedades de personalización.
 
-La configuración de estas propiedades también habilita la variable **Segmentación** en el editor de fragmentos de experiencias.
+La configuración de estas propiedades también habilita el modo **Segmentación** en el editor de Fragmento de experiencia.
 
-### Definición de la personalización para el fragmento de experiencias {#defining-personalization-experience-fragment}
+### Definición de la personalización para el Fragmento de experiencia {#defining-personalization-experience-fragment}
 
-Para personalizar el fragmento:
+Para personalizar el fragmento, haga lo siguiente:
 
-1. Vaya a la ubicación requerida en la **Fragmentos de experiencias** consola.
+1. Vaya a la ubicación requerida en la consola **Fragmentos de experiencias**.
 
 1. Seleccione una carpeta o el fragmento y, a continuación, **Propiedades** en la barra de herramientas.
 
    >[!NOTE]
    >
-   >Las propiedades de personalización definidas en una carpeta las heredarán todas las carpetas secundarias a través del subárbol y los fragmentos de experiencias (y variaciones) dentro de ese subárbol. Se pueden anular rompiendo la herencia.
+   >Las propiedades de personalización definidas en una carpeta las heredarán todas las carpetas secundarias a través del subárbol y los Fragmentos de experiencias (y las variaciones) dentro de ese subárbol. Se pueden anular rompiendo la herencia.
 
-1. Abra el **Personalización** para definir y guardar la configuración. Por ejemplo, en una carpeta:
+1. Abra la pestaña **Personalización** para definir y guardar la configuración. Por ejemplo, en una carpeta:
 
    ![Fragmento de experiencia: propiedades de personalización](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
 
    >[!CAUTION]
    >
-   >Cuando un fragmento está incrustado en una página Sitios, y **Personalización** se ha configurado, entonces solo se utilizará la versión de personalización de la página en el momento de procesar la página.
+   >Cuando un fragmento está incrustado en una página Sites, y **Personalización** se ha configurado, entonces solo se utilizará la versión de personalización de la página en el momento de renderizar la página.
    >
    >Para que la segmentación realizada en los componentes de un fragmento funcione en la renderización de la página, se deben cumplir las siguientes condiciones:
    >
-   >La variable **Ruta de ContextHub** seleccionados en el **Personalización** debe ser:
+   >La **Ruta de ContextHub** seleccionada en la pestaña **Personalización** debe ser la siguiente:
    >
-   >* la misma ruta que la configurada para la página en la que se representará el fragmento
+   >* la misma ruta que la configurada para la página en la que se renderizará el fragmento
       >O bien:
    >* una ruta que contiene un subconjunto de los almacenes definidos en ContextHub configurados para la página
 
    >
    > 
-La variable **Ruta de segmentos** seleccionados en el **Personalización** debe ser:
-   * la misma ruta que la configurada para la página en la que se representará el fragmento o
-   * una ruta que contiene un subconjunto de los segmentos configurados para la página
+La **Ruta de segmentos** seleccionados en la pestaña **Personalización** debe ser la siguiente:
+
+   * la misma ruta que la configurada para la página en la que se renderizará el fragmento
+O
+   * una ruta que contenga un subconjunto de los segmentos configurados para la página
 
 
-### Definición del objetivo para el fragmento de experiencia {#defining-targeting-experience-fragment}
+### Definir la segmentación para el Fragmento de experiencia {#defining-targeting-experience-fragment}
 
 Una vez configuradas las propiedades de personalización, el modo Segmentación estará disponible cuando se abra el fragmento para editarlo.
 
-![Editor de fragmentos de experiencias: modo de Orientación](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
+![Editor de Fragmento de experiencia: modo de segmentación](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
-Este modo funciona del mismo modo que para la edición de páginas. Consulte [Modo de orientación del Editor de páginas](/help/sites-cloud/authoring/personalization/targeted-content.md) para obtener más información.
+Este modo funciona del mismo modo que para la edición de páginas. Consulte [Modo de segmentación del editor de páginas](/help/sites-cloud/authoring/personalization/targeted-content.md) para obtener más información.
 
 ## Detalles del fragmento de experiencia {#details-of-your-experience-fragment}
 
 Se pueden ver los detalles del fragmento:
 
 1. Vaya a la ubicación de los fragmentos de experiencias (no vaya más allá hacia las variaciones dentro del fragmento).
-Los detalles se muestran en todas las vistas de la consola de **fragmentos de experiencias**, con una **vista de lista**[ que incluye los detalles de una exportación a destino](/help/sites-cloud/integrating/integrating-adobe-target.md):
+Los detalles se muestran en todas las vistas de la consola de **Fragmentos de experiencias**, con una **vista de lista** que incluye los detalles de una [exportación a destino](/help/sites-cloud/integrating/integrating-adobe-target.md):
 
    ![Detalles del fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-15.png)
 
