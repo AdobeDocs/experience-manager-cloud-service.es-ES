@@ -3,15 +3,15 @@ title: Métodos abreviados del teclado para las consolas
 description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Métodos abreviados del teclado para las consolas   {#keyboard-shortcuts-for-consoles}
 
-Los siguientes métodos abreviados están disponibles para las consolas Sitios, Recursos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias. También existen métodos abreviados específicos para la variable [Consola Fragmentos de contenido](#keyboard-shortcuts-for-the-content-fragments-console).
+Los siguientes métodos abreviados están disponibles para las consolas Sitios, Activos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias. También existen métodos abreviados específicos para la [Consola Fragmentos de contenido](#keyboard-shortcuts-for-the-content-fragments-console).
 
 | Lugar de residencia | Método abreviado | Descripción |
 |---|---|---|
@@ -84,4 +84,4 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
 
 ## Métodos abreviados de teclado para la consola Fragmentos de contenido {#keyboard-shortcuts-for-the-content-fragments-console}
 
-Algunos métodos abreviados del teclado son aplicables a la variable [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+Algunos métodos abreviados del teclado son aplicables a la [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
