@@ -3,7 +3,7 @@ title: Guía rápida de introducción para la creación de páginas
 description: Guía rápida y de alto nivel para empezar a crear contenido de página.
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1585'
 ht-degree: 100%
 
