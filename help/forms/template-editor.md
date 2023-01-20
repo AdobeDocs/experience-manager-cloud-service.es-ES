@@ -3,9 +3,9 @@ title: ¿Cómo se crea una plantilla de formulario adaptable?
 description: Cree plantillas de formularios adaptables para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1806'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -155,8 +155,8 @@ Un formulario funciona con su plantilla. Cuando se descarga un formulario adapta
 
 >[!NOTE]
 >
-> * Puede asociar un [!UICONTROL Esquema del modelo de datos de formulario] a una plantilla Formulario adaptable en un editor de plantillas. Consulte [Creación de un formulario adaptable](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) para obtener más información.
-> * También puede configurar la variable [!UICONTROL Documento de registro] directamente desde el editor de formularios adaptables o el editor de plantillas de formulario adaptable. Para obtener más información, consulte [Generar documento de registro para Forms adaptable](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * Puede asociar un [!UICONTROL Esquema del modelo de datos de formulario] a una plantilla de formulario adaptable en un editor de plantillas. Consulte [Creación de un formulario adaptable](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) para obtener más información.
+> * También puede configurar la plantilla [!UICONTROL Documento de registro] directamente desde el editor de formularios adaptables o desde el editor de plantillas de formulario adaptable. Para obtener más información, consulte [Generación de documento de registro para formularios adaptables](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
 
