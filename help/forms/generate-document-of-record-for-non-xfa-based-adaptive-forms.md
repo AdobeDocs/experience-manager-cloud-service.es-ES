@@ -5,7 +5,7 @@ exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: d9b67c80c2e96b0403f801a20b72c9ed41d021aa
 workflow-type: tm+mt
 source-wordcount: '4065'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -330,33 +330,33 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 1. Seleccione un panel (panel raíz) en el documento de registro y, a continuación, pulse ![configure](assets/configure.png).
 1. Pulse ![dortab](assets/dortab.png). Aparecerá la pestaña Documento de registro.
 1. Seleccione la plantilla predeterminada o una plantilla personalizada para procesar el documento de registro. Si selecciona la plantilla predeterminada, aparece una vista previa en miniatura del documento de registro debajo de la lista desplegable Plantilla.
-1. En función de si selecciona una plantilla predeterminada o personalizada, algunas o todas las propiedades siguientes aparecen en la pestaña Documento de registro. Especifique las siguientes propiedades mencionadas para definir el aspecto del documento de registro:
+1. En función de si selecciona una plantilla predeterminada o personalizada, algunas o todas las propiedades siguientes aparecen en la pestaña Documento de registro. Especifique las siguientes propiedades mencionadas para definir el aspecto del Documento de registro:
 
    1. **Propiedades básicas**:
-      * **Plantilla**: Si elige seleccionar una plantilla personalizada, busque y seleccione un XDP en su [!DNL AEM Forms] servidor. Si desea utilizar una plantilla que no esté ya en el servidor [!DNL AEM Forms], primero debe cargar el XDP en el servidor [!DNL AEM Forms].
-      * **Color de énfasis**: El color en el que se representan las líneas del texto del encabezado y del separador en el PDF del documento o registro.
-      * **Familia de fuentes**: Familia de fuentes del texto del PDF Documento de registro.
-      * **Incluir objetos de formulario que no estén enlazados al modelo de datos**: La configuración de la propiedad incluye campos no enlazados del formulario adaptable basado en esquema del documento de registro.
-      * **Excluir campos ocultos del documento de registro**: Al establecer la propiedad, se identifican los campos ocultos para su exclusión del documento de registro.
-      * **Ocultar descripción de paneles**: Al establecer la propiedad se excluye la descripción del panel/tabla del documento de registro. Aplicable al panel y a la tabla.
+      * **Plantilla**: si elige una plantilla personalizada, busque y seleccione un XDP en el servidor [!DNL AEM Forms]. Si desea utilizar una plantilla que no esté ya en el servidor [!DNL AEM Forms], primero debe cargar el XDP en el servidor [!DNL AEM Forms].
+      * **Color de contraste**: el color en el que se muestra el texto de encabezado y las líneas de separación en el documento de registro en PDF.
+      * **Familia tipográfica**: la familia de fuentes de texto del Documento de registro en PDF.
+      * **Incluir objetos de formulario que no estén enlazados al modelo de datos**: al configurar esta propiedad se incluyen campos no enlazados del formulario adaptable basado en esquemas del Documento de registro.
+      * **Excluir campos ocultos del documento de registro**: al configurar esta propiedad se identifican los campos ocultos para la exclusión del Documento de registro.
+      * **Ocultar la descripción de paneles:** al configurar esta propiedad se excluye la descripción de paneles o tablas del Documento de registro. Aplicable para paneles y tablas.
 
       ![Propiedades básicas](/help/forms/assets/basicpropertiesdor.png)
 
    1. **Propiedades del campo de formulario**:
-      * **Para los componentes Casilla de verificación y Botón de radio , muestre solo los valores seleccionados**: Al establecer la propiedad, solo se muestran los valores seleccionados de la casilla de verificación y el botón de radio en [!UICONTROL Documento de registro].
-      * **Separador para varios valores**: Puede elegir cualquier separador, como coma o salto de línea, para mostrar varios valores.
-      * **Alineación de opciones**: Puede seleccionar la alineación deseada (Horizontal, Vertical, Igual que Formulario adaptable) para definir la alineación de los campos, como la casilla de verificación o el botón de radio, que se mostrarán en [!UICONTROL Documento de registro]. De forma predeterminada, la alineación vertical está definida para los campos de [!UICONTROL Documento de registro]. Configuración de las propiedades desde la variable [!UICONTROL Propiedades del campo de formulario] de DoR sobrescribe las propiedades establecidas en la variable [!UICONTROL Alineación de elementos] para los campos de un formulario adaptable. En caso de que seleccione [!UICONTROL Igual que el formulario adaptable] , se utiliza la alineación tal como está configurada en una instancia de autor del formulario adaptable para [!UICONTROL Documento de registro] campos.
-      * **Número de opciones de alineación horizontal**: puede definir el número de opciones que se mostrarán en el documento de registro para la alineación horizontal.
+      * **Mostrar solo los valores seleccionados para los componentes Casilla de verificación y Botón de radio**: al configurar esta propiedad solo se muestran los valores seleccionados de la casilla de verificación y el botón de radio en [!UICONTROL Documento de registro].
+      * **Separador para varios valores**: puede elegir cualquier separador, como comas o saltos de línea, para mostrar varios valores.
+      * **Alineación de opciones**: puede seleccionar la alineación deseada (Horizontal, Vertical o Igual que el formulario adaptable) para establecer la alineación de los campos, como la casilla de verificación o el botón de radio, que se mostrarán en [!UICONTROL Documento de registro]. De forma predeterminada, la alineación vertical está establecida para los campos de [!UICONTROL Documento de registro]. Al configurar las propiedades desde la variable [!UICONTROL Propiedades del campo de formulario] del documento, se sobrescriben las propiedades establecidas en la variable [!UICONTROL Alineación de elementos] para los campos de un formulario adaptable. En caso de que seleccione la opción [!UICONTROL Igual que el formulario adaptable], se utiliza la alineación tal y como está configurada en una instancia de autor del formulario adaptable para los campos de [!UICONTROL Documento de registro].
+      * **Número de opciones de alineación horizontal**: puede definir el número de opciones que se mostrarán en el Documento de registro para la alineación horizontal.
 
       ![Propiedades del campo de formulario](/help/forms/assets/formfieldpropertiesdor.png)
 
    1. **Propiedades de página maestra**:
       * **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
-      * **Título del formulario**: Título del documento de resolución del problema.
-      * **Texto de encabezado**: Texto que aparece en la sección del encabezado del Documento de registro.
-      * **Etiqueta de exención de responsabilidad**: Etiqueta de exención de responsabilidad.
-      * **Renuncia de responsabilidad**: Texto que especifica el alcance de los derechos y obligaciones del Documento de Registro.
-      * **Texto de exención de responsabilidad**: Texto de la renuncia de responsabilidad.
+      * **Título del formulario**: título del Documento de registro.
+      * **Texto de encabezado**: texto que aparece en la sección de encabezado del Documento de registro.
+      * **Etiqueta de descargo de responsabilidad**: etiqueta de descargo de responsabilidad.
+      * **Descargo de responsabilidad**: texto que especifica el ámbito de derechos y obligaciones del Documento de registro.
+      * **Texto de descargo de responsabilidad**: texto del descargo de responsabilidad.
 
       ![Propiedades de página maestra](/help/forms/assets/masterpagepropertiesdor.png)
    >[!NOTE]
@@ -375,30 +375,30 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
    </proto>
    ```
 
-1. Para guardar los cambios de marca, pulse **[!UICONTROL Listo]**.
+1. Para guardar los cambios de personalización de marca, pulse **[!UICONTROL Listo]**.
 
-## Documento de compatibilidad con registros en el Editor de formularios adaptables {#dor-support-in-adaptiveform}
+## Asistencia del Documento de registro en el Editor de formularios adaptables {#dor-support-in-adaptiveform}
 
-Puede configurar la variable [!UICONTROL Documento de registro] directamente desde el editor de formularios adaptables o el editor de plantillas de formulario adaptable.
+Puede configurar la plantilla [!UICONTROL Documento de registro] directamente desde el editor de formularios adaptables o el editor de plantillas de formulario adaptable.
 
 Realice los siguientes pasos desde la instancia de autor del editor de formularios adaptables:
 
-1. Seleccione el **[!UICONTROL Contenedor de formulario adaptable (raíz)]** componente.
-1. Haga clic en ![Icono Configurar](/help/forms/assets/configure-icon.svg) para abrir **[!UICONTROL Propiedades]** del contenedor del formulario adaptable.
-1. Abra el **[!UICONTROL Documento de plantilla de registro]** y seleccione entre las siguientes opciones:
-   * **[!UICONTROL Ninguna]**: Cuando se selecciona esta opción, no [!UICONTROL Documento de registro] plantilla creada para el formulario adaptable.
+1. Seleccione el componente **[!UICONTROL Contenedor de formulario adaptable (raíz)]**.
+1. Haga clic en el icono ![Icono Configurar](/help/forms/assets/configure-icon.svg) para abrir las **[!UICONTROL Propiedades]** del contenedor del formulario adaptable.
+1. Abra la pestaña **[!UICONTROL Plantilla del documento de registro]** y seleccione una de las siguientes opciones:
+   * **[!UICONTROL Ninguna]**: cuando se selecciona esta opción, no se crea ninguna plantilla de [!UICONTROL Documento de registro] para el formulario adaptable.
 
-   * **[!UICONTROL Asociar plantilla de formulario como plantilla de documento de registro]**: cuando se selecciona esta opción, el formulario XFA se utiliza como plantilla para el documento de registro.
+   * **[!UICONTROL Plantilla de formulario asociado como plantilla de documento de registro]**: cuando se selecciona esta opción, el formulario XFA se utiliza como plantilla para el documento de registro.
 
-   * **[!UICONTROL Generar documento de registro]**: Cuando se selecciona esta opción, la variable [!UICONTROL Documento de registro] plantilla se genera automáticamente para el formulario adaptable.
+   * **[!UICONTROL Generar documento de registro]**: cuando se selecciona esta opción, la plantilla del [!UICONTROL documento de registro] se genera automáticamente para el formulario adaptable.
 
 1. Pulse ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
 
-![Compatibilidad con plantillas de documento de registro](/help/forms/assets/dor-templatesupport.png)
+![Asistencia para la plantilla del documento de registro](/help/forms/assets/dor-templatesupport.png)
 
 >[!NOTE]
 >
->When [!UICONTROL Documento de registro] la plantilla se crea con un editor de plantillas de formulario adaptable y, a continuación, solo hay dos opciones disponibles en [!UICONTROL Documento de plantilla de registro] como [!UICONTROL Ninguna] y [!UICONTROL Generar documento de registro].
+>Cuando se crea la plantilla del [!UICONTROL documento de registro] utilizando un editor de plantillas de formulario adaptable, a continuación, las únicas dos opciones disponibles en la pestaña [!UICONTROL Plantilla de documento de registro] son [!UICONTROL Ninguna] y [!UICONTROL Generar documento de registro].
 
 ## Diseños de tablas y columnas para paneles del documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 

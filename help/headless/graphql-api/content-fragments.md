@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '4174'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 
@@ -755,7 +755,7 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
          >[!NOTE]
          >
-         >Si la variación dada no existe para un fragmento de contenido, la variación maestra se devolverá como predeterminada (reserva).
+         >Si la variación dada no existe para un Fragmento de contenido, la variación principal se devolverá como una predeterminada (alternativa).
 
          * Consulte [Consulta de muestra: todas las ciudades con una variación con nombre](#sample-cities-named-variation)
    * Y operaciones:

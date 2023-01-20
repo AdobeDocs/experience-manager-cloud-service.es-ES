@@ -5,7 +5,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: e98ba2840795f136bf2c10c66863b52beede1342
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 ## Preparación para una versión {#how-to-prepare}
 
-Con el modelo de liberación continua en [!DNL Adobe Experience Manager] as a Cloud Service, la aplicación se actualiza automáticamente de forma continua. Existen dos tipos de actualizaciones, versiones de funciones y versiones de mantenimiento:
+Con el modelo de liberación continua en [!DNL Adobe Experience Manager] as a Cloud Service, la aplicación se actualiza automáticamente de forma continua. Existen dos tipos de actualizaciones, versiones de funciones y de mantenimiento:
 
 * Las versiones de características se realizan con una frecuencia mensual predecible y se centran en nuevas funcionalidades e innovaciones de productos.
 * Las versiones de mantenimiento se realizan con frecuencia y se centran en actualizaciones de seguridad, correcciones de errores y mejoras de rendimiento. Esto garantiza que [!DNL Adobe Experience Manager] as a Cloud Service siempre está actualizado con cualquier corrección crítica.

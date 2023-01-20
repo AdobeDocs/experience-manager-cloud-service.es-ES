@@ -6,7 +6,7 @@ exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -75,4 +75,4 @@ Siga los recursos adicionales para obtener más información:
 * [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md): aprenda a utilizar Cloud Manager para crear su propio programa de zona protegida para formación, demostración, POC u otros fines que no sean de producción.
 * [Creación de programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md): aprenda a utilizar Cloud Manager para crear su propio programa de producción y alojar tráfico en directo.
 * [Uso de programas de Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=es): los programas de Cloud Manager representan conjuntos de entornos AEM que admiten conjuntos lógicos de iniciativas del negocio, que normalmente corresponden a un Contrato de nivel de servicio (SLA) adquirido.
-* [AEM perfiles as a Cloud Service de equipo y producto](/help/onboarding/aem-cs-team-product-profiles.md) - Descubra cómo AEM equipo as a Cloud Service y los perfiles de producto pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia.
+* [Los perfiles de equipo y producto de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) - Descubra cómo los perfiles de equipo y producto de AEM as a Cloud Service pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia.

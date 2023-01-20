@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 5877f3c84ab6303520dd4697144e9b18d717b74f
 workflow-type: tm+mt
 source-wordcount: '3837'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -136,7 +136,7 @@ ht-degree: 96%
    + [Compatibilidad con cookies del mismo sitio para AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
 + Incorporación {#onboarding}
-   + [Iniciar aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
+   + [Empiece aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=es)
    + Recorrido de incorporación {#journey}
       + [Recorrido de incorporación Información general](/help/journey-onboarding/overview.md)
       + [Preparación de la incorporación](/help/journey-onboarding/preparation.md)
@@ -398,7 +398,7 @@ ht-degree: 96%
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
       + [Procesamiento de recursos mediante API de  [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
-      + [Administrar documentos del PDF](/help/assets/manage-pdf-documents.md)
+      + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
    + Configuración, administración y ampliación de [!DNL Assets] {#admin}
       + [Documentación para desarrolladores y referencias de API](/help/assets/developer-reference-material-apis.md)
       + [Carpeta de esquema de metadatos](/help/assets/folder-metadata-schema.md)
@@ -512,7 +512,7 @@ ht-degree: 96%
       + [Revisar y corregir formularios convertidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=es#welcome-to-review-and-correct-editor)
    + Creación y publicación de un formulario adaptable {#create-an-adaptive-form}
       + Antes de comenzar {#before-you-start}
-         + [Introducción a la creación de un Forms adaptable](/help/forms/introduction-forms-authoring.md)
+         + [Introducción a la creación de un formulario adaptable](/help/forms/introduction-forms-authoring.md)
          + [Creación de una plantilla](/help/forms/template-editor.md)
          + [Creación de un tema](/help/forms/themes.md)
          + [Conexión de las fuentes de datos a Cloud Service](/help/forms/data-integration.md)
@@ -535,7 +535,7 @@ ht-degree: 96%
       + Adición de reglas y uso de expresiones en un formulario adaptable {#add-rules-and-use-expressions-in-an-adaptive-form}
          + [Adición de reglas a un formulario adaptable](/help/forms/rule-editor.md)
       + Uso [!DNL Adobe Sign] {#use-adobe-sign}
-         + [Uso de Adobe Acrobat Sign para firmar electrónicamente un formulario adaptable](/help/forms/working-with-adobe-sign.md)
+         + [Uso de Adobe Sign para firmar electrónicamente un formulario adaptable](/help/forms/working-with-adobe-sign.md)
       + Configuración de envío de acciones y envío de metadatos {#configure-submit-actions-and-metadata-submission}
          + [Establecimiento de una acción de envío para un formulario adaptable](/help/forms/configuring-submit-actions.md)
          + [Configuración de la página de redirección](/help/forms/configuring-redirect-page.md)
@@ -558,12 +558,12 @@ ht-degree: 96%
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
       + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
       + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
-      + [Integración con Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+      + [Integración con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
       + [Integración con DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
       + [Integración con Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
       + [Integración con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
       + [Integración de un formulario adaptable con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [Incrustar Forms adaptable en AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
+      + [Incrustar formulario adaptable en AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
    + Creación y uso de flujos de trabajo {#create-form-centric-workflows}
       + [Uso de pasos centrados en Forms en un flujo de trabajo + referencia de paso](/help/forms/aem-forms-workflow-step-reference.md)
       + [Uso de variables en un flujo de trabajo centrado en Forms](/help/forms/variable-in-aem-workflows.md)
@@ -655,7 +655,7 @@ ht-degree: 96%
 + Headless {#headless}
    + [¿Qué es un CMS sin encabezado?](/help/headless/what-is-headless.md)
    + [Introducción a AEM Headless](/help/headless/introduction.md)
-   + [Portal de desarrolladores (recursos adicionales)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [Portal de desarrolladores (recursos adicionales)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
    + Configuración {#setup}
       + [Introducción](/help/headless/setup/introduction.md)
       + [Configuración](/help/headless/setup/create-configuration.md)
@@ -703,7 +703,7 @@ ht-degree: 96%
          + [Cómo ponerlo todo junto](/help/journey-headless/developer/put-it-all-together.md)
          + [Publicación de la aplicación sin encabezado](/help/journey-headless/developer/go-live.md)
          + [Opcional: cómo crear aplicaciones de una sola página con AEM](/help/journey-headless/developer/create-spa.md)
-         + [Portal de desarrolladores (recursos adicionales)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+         + [Portal de desarrolladores (recursos adicionales)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
       + Recorrido de arquitecto de contenido sin encabezado {#architect}
          + [Información general sobre el Recorrido de arquitecto de contenido de AEM Headless](/help/journey-headless/architect/overview.md)
          + [Modelado de contenido para Headless con AEM: introducción](/help/journey-headless/architect/introduction.md)

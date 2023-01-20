@@ -5,7 +5,7 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: aeb8244b4da17a0675b86a69727807abf45ca84a
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 68%
+ht-degree: 82%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 68%
 
 ## Información general {#overview}
 
-AEM as a Cloud Service (servicio de autor) está integrado con Unified Shell para mejorar la experiencia del usuario y unificarla con todas las demás aplicaciones de Experience Cloud. El impacto de esta integración se puede ver en el encabezado superior de la aplicación, como se muestra a continuación.
+AEM as a Cloud Service (Servicio de Autor) está integrado con Unified Shell para mejorar la experiencia del usuario y unificarla con todas las demás aplicaciones de Experience Cloud. El impacto de esta integración se puede ver en el encabezado superior de la aplicación, como se muestra a continuación.
 
 ![imagen](/help/overview/assets/unifiedshell_header.png)
 
@@ -30,7 +30,7 @@ Los beneficios de esto son los siguientes:
 De forma predeterminada, AEM as a Cloud Service tiene habilitado el shell unificado. Sin embargo, en caso de que el encabezado superior se haya personalizado, se recomienda deshabilitar el shell unificado para evitar problemas con las personalizaciones. Para deshabilitar el shell unificado, siga los pasos a continuación:
 
 >[!NOTE]
->El shell unificado solo se puede deshabilitar mediante una cuenta con privilegios administrativos.
+>Unified Shell solo se puede deshabilitar con una cuenta con privilegios administrativos.
 
 1. Vaya a **Herramientas → Cloud Services**.
 

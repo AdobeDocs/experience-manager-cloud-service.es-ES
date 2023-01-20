@@ -7,7 +7,7 @@ exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
 workflow-type: tm+mt
 source-wordcount: '2898'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Para usar modelos de fragmentos de contenido, haga lo siguiente:
 
 1. [Habilite la funcionalidad de modelos de fragmentos de contenido para la instancia.](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 1. [Cree](#creating-a-content-fragment-model) y [configure](#defining-your-content-fragment-model) sus modelos de fragmentos de contenido.
-1. [Habilitar los modelos de fragmento de contenido](#enabling-disabling-a-content-fragment-model) para usar al crear fragmentos de contenido
+1. [Habilite los modelos de fragmento de contenido](#enabling-disabling-a-content-fragment-model) para usar al crear fragmentos de contenido
 1. [Permita los modelos de fragmentos de contenido en las carpetas de recursos necesarias](#allowing-content-fragment-models-assets-folder) configurando **Políticas**.
 
 ## Creación de un modelo de fragmento de contenido {#creating-a-content-fragment-model}
@@ -75,7 +75,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
 
          >[!CAUTION]
          >
-         >Al actualizar manualmente la propiedad **Nombre de propiedad** para un tipo de datos, tenga en cuenta que los nombres deben contener únicamente A-Z, a-z, 0-9 y el guion bajo &quot;_&quot; como carácter especial.
+         >Al actualizar de forma manual la propiedad **Nombre de propiedad** para un tipo de datos, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos “_” como carácter especial.
          >
          >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
       Por ejemplo:
@@ -141,7 +141,7 @@ Muchas propiedades se explican por sí mismas; para otras, a continuación se pr
 
 * **Nombre de propiedad**
 
-   Cuando actualice manualmente esta propiedad para un tipo de datos, tenga en cuenta que los nombres **must** contain *only* A-Z, a-z, 0-9 y guión bajo &quot;_&quot; como carácter especial.
+   Cuando actualice manualmente esta propiedad para un tipo de datos, tenga en cuenta que los nombres **deben** contener *solo* caracteres latinos, dígitos numéricos y guiones bajos “_” como carácter especial.
 
    >[!CAUTION]
    >
