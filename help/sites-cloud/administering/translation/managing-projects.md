@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3992'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -170,7 +170,7 @@ Rellene la copia de idioma para que albergue contenido de la lengua principal qu
 
 ### Actualización de la memoria de traducción {#updating-translation-memory}
 
-Las ediciones manuales del contenido traducido se pueden sincronizar de nuevo con el Sistema de Gestión de Traducciones (TMS) para entrenar su memoria de traducción.
+Las ediciones manuales del contenido traducido se pueden sincronizar de nuevo con el sistema de gestión de traducciones (TMS) para mejorar su memoria de traducción.
 
 1. Desde la consola Sites, después de actualizar el contenido de texto en una página traducida, seleccione **Actualizar memoria de traducción**.
 1. Una vista de lista muestra una comparación en paralelo de la fuente y la traducción de cada componente de texto editado. Seleccione qué actualizaciones de traducción deben sincronizarse con la memoria de traducción y **Actualizar memoria**.
@@ -181,14 +181,14 @@ AEM actualiza la traducción de las cadenas existentes en la memoria de traducci
 
 * La acción actualiza la traducción de cadenas existentes en la memoria de traducción del sistema de administración de etiquetas configurado.
 * No crea nuevos trabajos de traducción.
-* Envía las traducciones de vuelta al sistema de administración de etiquetas, a través de AEM API de traducción (ver abajo).
+* Envía las traducciones de vuelta al sistema de administración de etiquetas, a través de la API de traducción de AEM (se muestra a continuación).
 
-Para usar esta función:
+Para usar esta función, haga lo siguiente:
 
-* Se debe configurar un sistema de administración de etiquetas para su uso con AEM.
+* Configure un sistema de administración de etiquetas para su uso con AEM.
 * El conector debe implementar el método [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
    * El código dentro de este método determina qué sucede con la solicitud de actualización de memoria de traducción.
-   * El marco de traducción de AEM envía los pares de valor de cadena (traducción original y actualizada) al sistema de administración de etiquetas mediante esta implementación de método.
+   * El marco de traducción de AEM envía los pares de valor de cadena (traducción original y actualizada) al sistema de gestión de etiquetas mediante esta implementación de método.
 
 Las actualizaciones de la memoria de traducción se pueden interceptar y enviar a un destino personalizado, en los casos en que se utilice una memoria de traducción propia.
 
