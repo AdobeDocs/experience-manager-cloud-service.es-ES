@@ -3,9 +3,9 @@ title: Introducción a los programas de zona protegida
 description: Descubra cuáles son las diferencias entre los programas de zona protegida y los programas de producción.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Los dominios personalizados y las listas de IP permitidas no están disponibles 
 
 ### Sin redes avanzadas {#advanced-networking}
 
-[Funciones de red avanzadas](/help/security/configuring-advanced-networking.md) (por ejemplo, aprovisionamiento de autoservicio de VPN, puertos no estándar, direcciones IP de salida dedicadas, etc.) no están disponibles en programas de zona protegida.
+[Funciones de red avanzadas](/help/security/configuring-advanced-networking.md) (por ejemplo, aprovisionamiento de autoservicio de VPN, puertos no estándar, direcciones IP de salida dedicada, etc.) no están disponibles en programas de zona protegida.
 
 ### Actualizaciones de los manuales de AEM {#updates}
 
