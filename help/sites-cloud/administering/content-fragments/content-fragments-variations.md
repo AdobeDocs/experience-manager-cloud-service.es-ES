@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2310'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -307,7 +307,7 @@ Se agregarán a la secuencia de párrafo del fragmento sin ningún formato; el f
 
 >[!CAUTION]
 Estos recursos no se pueden mover ni eliminar en una página de referencia; esto debe hacerse en el editor de fragmentos.
-Sin embargo, el formato del recurso (por ejemplo, el tamaño) debe realizarse en la variable [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
+Sin embargo, el formato del recurso (por ejemplo, su tamaño) debe realizarse en el [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
 
 >[!NOTE]
 Hay varios métodos para agregar [imágenes](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
@@ -343,7 +343,7 @@ Esta opción está disponible cuando su **Texto de varias líneas** está config
 
 >[!CAUTION]
 Estos recursos no se pueden mover ni eliminar en una página de referencia; esto debe hacerse en el editor de fragmentos.
-Sin embargo, el formato del recurso (por ejemplo, el tamaño) debe realizarse en la variable [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
+Sin embargo, el formato del recurso (por ejemplo, su tamaño) debe realizarse en el [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
 
 >[!NOTE]
 Hay varios métodos para agregar [imágenes](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
@@ -373,8 +373,8 @@ Hay varios métodos para agregar [imágenes](/help/sites-cloud/administering/con
 [!CONTEXTUALHELP]
 id="aemcloud_sites_contentfragments_variations"
 title="Variaciones: Crear contenido de fragmentos"
-abstract="Aprenda a hacer variaciones de contenido para utilizarlas con canales específicos."
-additional-url="https://video.tv.adobe.com/v/333295" text="Variaciones de fragmento de contenido"
+abstract="Aprenda cómo hacer variaciones de contenido para utilizarlas con canales específicos."
+additional-url="https://video.tv.adobe.com/v/333295/?captions=spa" text="Variaciones de fragmentos de contenido"
 
 ### Creación de una variación {#creating-a-variation}
 
