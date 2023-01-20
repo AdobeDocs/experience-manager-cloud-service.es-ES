@@ -3,9 +3,9 @@ title: Diseño adaptable
 description: El AEM le permite llevar a cabo un diseño interactivo para sus páginas
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1766'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Este componente proporciona un sistema de párrafos que le permite colocar compo
 El contenedor de diseños:
 
 * Proporciona un ajuste horizontal a la cuadrícula, además de la posibilidad de colocar componentes en la cuadrícula uno al lado de otro y de definir cuándo se deben contraer o redistribuir.
-* Utiliza puntos de interrupción predefinidos (por ejemplo, para teléfono, tableta, etc.) que le permiten definir el comportamiento obligatorio del contenido para dispositivos relacionados/su orientación.
+* Usa puntos de interrupción predefinidos (por ejemplo, para un teléfono, una tableta, etc.) que le permiten definir el comportamiento obligatorio del contenido para dispositivos relacionados/su orientación.
    * Por ejemplo, puede personalizar el tamaño del componente o si el componente se puede ver en determinados dispositivos.
 * Se puede anidar para permitir el control de columnas.
 
