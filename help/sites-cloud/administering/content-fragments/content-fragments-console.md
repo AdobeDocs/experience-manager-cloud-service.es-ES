@@ -1,14 +1,14 @@
 ---
 title: Consola Fragmentos de contenido
 description: Obtenga información sobre cómo administrar fragmentos de contenido desde la consola Fragmentos de contenido.
-landing-page-description: Obtenga información sobre cómo administrar fragmentos de contenido desde la consola Fragmentos de contenido, que se centra en el uso de gran volumen de fragmentos de contenido para casos de uso remoto, pero que también se utiliza al crear páginas.
+landing-page-description: Aprenda a administrar fragmentos de contenido desde la consola Fragmentos de contenido, que se centra en el uso de gran volumen de los fragmentos de contenido para casos de uso sin encabezado, pero que también se usa al crear páginas.
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ La consola Fragmentos de contenido está dedicada a administrar, buscar y crear 
 
 >[!NOTE]
 >
->Una selección de [los métodos abreviados del teclado están disponibles para su uso en esta consola](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+>Una selección de los [métodos abreviados de teclado están disponibles para su uso en esta consola](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->El equipo del proyecto puede personalizar la consola si es necesario. Consulte [Personalización de la consola de fragmentos de contenido](/help/implementing/developing/extending/content-fragment-console-customizing.md) para obtener más información.
+>El equipo del proyecto puede personalizar la consola si es necesario. Consulte [Personalización de la consola Fragmentos de contenido](/help/implementing/developing/extending/content-fragment-console-customizing.md) para obtener más información.
 
 Se puede acceder directamente a la consola Fragmentos de contenido desde el nivel superior de la navegación global:
 
@@ -60,11 +60,11 @@ Aquí se pueden ver tres áreas principales:
    * Consultar la lista de todos los fragmentos de contenido en la rama seleccionada del árbol:
       * La ubicación se indica mediante las rutas de exploración; también se pueden usar para cambiar la ubicación.
       * Se mostrarán los fragmentos de contenido de la carpeta seleccionada y todas las carpetas secundarias.:
-         * [Varios campos de información](#selectuse-available-columns) acerca de un fragmento de contenido para proporcionar vínculos; según el campo , pueden:
-            * Abra el fragmento correspondiente en el editor
+         * [Varios campos de información](#selectuse-available-columns) acerca de un fragmento de contenido para proporcionar vínculos; según el campo, pueden realizar lo siguiente:
+            * Abrir el fragmento correspondiente en el editor
             * Mostrar información sobre referencias
             * Mostrar información sobre las versiones de idioma del fragmento
-         * Puede [seleccione uno o varios fragmentos de contenido para mostrar las acciones disponibles](#actions-selected-content-fragment)
+         * Puede [seleccionar uno o varios fragmentos de contenido para mostrar las acciones disponibles](#actions-selected-content-fragment)
       * Puede seleccionar un encabezado de columna para ordenar la tabla según esa columna; volver a seleccionar para alternar entre ascendente y descendente
    * **[Crear](#creating-new-content-fragment)** un nuevo fragmento de contenido
    * [Filtrar](#filtering-fragments) los fragmentos de contenido de acuerdo con una selección de predicados y guardar el filtro para uso futuro
@@ -97,9 +97,9 @@ Si se selecciona un fragmento específico, se abrirá una barra de herramientas 
 >
 >Acciones como Publicar, Cancelar la publicación, Eliminar, Mover, Cambiar el nombre, Copiar, activar un trabajo asincrónico. El progreso de ese trabajo se puede monitorizar a través de la interfaz de usuario de trabajos asincrónicos de AEM.
 
-## La información proporcionada sobre los fragmentos de contenido {#information-content-fragments}
+## La información proporcionada sobre sus fragmentos de contenido {#information-content-fragments}
 
-El panel principal/derecho (vista de tabla) de la consola proporciona una amplia gama de información sobre los fragmentos de contenido. Algunos elementos también proporcionan vínculos directos a otras acciones o información:
+El panel principal/derecho (vista de tabla) de la consola proporciona una amplia gama de información sobre los Fragmentos de contenido. Algunos elementos también proporcionan vínculos directos a otras acciones o información:
 
 * **Nombre**
    * Proporciona un vínculo para abrir el fragmento en el editor.
@@ -107,7 +107,7 @@ El panel principal/derecho (vista de tabla) de la consola proporciona una amplia
    * Proporciona un vínculo para abrir el fragmento en el editor.
 * **Carpeta**
    * Proporciona un vínculo para abrir la carpeta en la consola.
-Al pasar el ratón por encima del nombre de la carpeta, se mostrará la ruta JCR.
+Al pasar el ratón por encima del nombre de la carpeta, se muestra la ruta JCR.
 * **Estado**
    * Solo información
 * **Modificado**
@@ -120,7 +120,7 @@ Al pasar el ratón por encima del nombre de la carpeta, se mostrará la ruta JCR
    * Solo información
 * **Referido por**
 
-   * Proporciona un vínculo que abre un cuadro de diálogo con todas las referencias principales de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas. Para abrir una referencia específica, haga clic en el botón **Título** en el cuadro de diálogo.
+   * Proporciona un vínculo que abre un cuadro de diálogo con todas las referencias principales de ese fragmento; incluida la referencia a Fragmentos de contenido, Fragmentos de experiencias y páginas. Para abrir una referencia específica, haga clic en **Título** en el cuadro de diálogo.
 
       ![Consola Fragmentos de contenido: cuadro de diálogo Referencias](assets/cfc-console-references-dialog.png)
 
@@ -130,7 +130,7 @@ Al pasar el ratón por encima del nombre de la carpeta, se mostrará la ruta JCR
 
       ![Consola Fragmentos de contenido: Indicador de idioma](assets/cfc-console-language-indicator.png)
 
-      * Pulse o haga clic en el recuento para abrir un cuadro de diálogo que muestre todas las copias de idioma. Para abrir una copia de idioma específica, haga clic en el botón **Título** en el cuadro de diálogo.
+      * Pulse o haga clic en el recuento para abrir un cuadro de diálogo que muestre todas las copias de idioma. Para abrir una copia de idioma específica, haga clic en **Título** en el cuadro de diálogo.
 
          ![Consola Fragmentos de contenido: cuadro de diálogo Idioma](assets/cfc-console-languages-dialog.png)
 
