@@ -3,9 +3,9 @@ title: Edición del contenido de una página
 description: Una vez creada la página, puede actualizarla según sus necesidades editando el contenido
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3019'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
    ![Botón Selector de modo](/help/sites-cloud/authoring/assets/mode-selector.png)
 
-* **Previsualizar**
+* **Vista previa**
 
    Activa el [modo de vista previa](#preview-mode). Aquí se muestra la página tal y como aparecerá cuando se publique.
 
@@ -238,7 +238,7 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
    >
    >Si pega contenido en otra página que ya estaba abierta antes de la operación de corte y copia, debe actualizar la página para ver el contenido pegado.
 
-* **Agrupar**
+* **Grupo**
 
    Esta opción le permite seleccionar varios componentes a la vez. En un dispositivo de escritorio puede conseguir lo mismo haciendo **Control + clic** o **Comando + clic**.
 
@@ -468,9 +468,9 @@ Una vez bloqueada, se actualiza la información de la vista de la consola y, al 
 >
 >El bloqueo de páginas se puede realizar al suplantar a un usuario. Sin embargo, una página bloqueada de esta forma solo puede desbloquearse (por clientes) con el usuario que se ha suplantado.
 >
->Las páginas no se pueden desbloquear suplantando al usuario que ha bloqueado la página.
+>Las páginas no se pueden desbloquear al suplantar al usuario que ha bloqueado la página.
 >
->Si el usuario que bloqueó la página no está disponible para desbloquearla, póngase en contacto con el Servicio de atención al cliente para evaluar las opciones para eliminar el bloqueo.
+>Si el usuario que bloqueó la página no está disponible para desbloquearla, póngase en contacto con Asistencia al cliente para evaluar las opciones para quitar el bloqueo.
 
 ## Desbloquear una página {#unlocking-a-page}
 
@@ -484,9 +484,9 @@ El menú Información de página muestra la opción **Desbloquear** y el icono B
 >
 >El bloqueo de páginas se puede realizar al suplantar a un usuario. Sin embargo, una página bloqueada de este modo solo se puede desbloquear (por clientes) utilizando el usuario que se ha suplantado.
 >
->Las páginas no se pueden desbloquear suplantando al usuario que ha bloqueado la página.
+>Las páginas no se pueden desbloquear al suplantar al usuario que ha bloqueado la página.
 >
->Si el usuario que bloqueó la página no está disponible para desbloquearla, póngase en contacto con el Servicio de atención al cliente para evaluar las opciones para eliminar el bloqueo.
+>Si el usuario que bloqueó la página no está disponible para desbloquearla, póngase en contacto con Asistencia al cliente para evaluar las opciones para quitar el bloqueo.
 
 <!--
 >[!CAUTION]
