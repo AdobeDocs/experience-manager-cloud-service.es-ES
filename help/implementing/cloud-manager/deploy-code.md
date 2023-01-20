@@ -3,9 +3,9 @@ title: Implementar el código
 description: Obtenga información sobre cómo implementar su código mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1221'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ Todas las implementaciones de Cloud Service siguen un proceso gradual para garan
 
 >[!NOTE]
 >
->La caché de Dispatcher se borra en cada implementación. Posteriormente se calienta antes de que los nuevos nodos de publicación acepten el tráfico.
+>La caché de Dispatcher se borra en cada implementación. Posteriormente, se calienta antes de que los nuevos nodos de publicación acepten el tráfico.
 
 ## Volver a ejecutar una implementación de producción {#Reexecute-Deployment}
 
