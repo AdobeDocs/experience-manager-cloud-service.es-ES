@@ -3,9 +3,9 @@ title: Vista previa del contenido
 description: Aprenda a utilizar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Consulte el documento [Administración de entornos](/help/implementing/cloud-man
 
 El contenido también se puede publicar para previsualizarse mediante un [flujo de trabajo del árbol de contenido de publicación](/help/operations/replication.md#publish-content-tree-workflow), con el parámetro `agentId` establecido en `preview`, o utilizando la [API de replicación](/help/operations/replication.md#replication-api) con un `AgentFilter` configurado para la vista previa.
 
-## Cancelación de la publicación del contenido desde la vista previa {#unpublishing-content-from-preview}
+## Cancelación de la publicación de contenido desde Vista previa {#unpublishing-content-from-preview}
 
-Cancelación de la publicación de contenido **Vista previa** entorno es básicamente el mismo proceso que [cancelar la publicación de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) de la variable **Publicación** entorno.
+Cancelar la publicación de contenido desde el entorno de **Vista previa** es básicamente el mismo proceso que [cancelar la publicación de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) del entorno de **Publicación**.
 
-La única diferencia es que puede seleccionar la variable **Destino** a **Vista previa**.
+La única diferencia es que puede seleccionar el **Destino** a **Vista previa**.
 
 ## Configuración de OSGi para el nivel de vista previa {#configuring-osgi-settings-for-the-preview-tier}
 
