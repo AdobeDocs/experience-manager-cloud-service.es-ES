@@ -1,13 +1,13 @@
 ---
 title: 'Previsualización: representación JSON'
-description: Obtenga información sobre cómo previsualizar fácilmente una representación JSON de sus fragmentos de contenido al implementar su solución AEM sin encabezado.
+description: Obtenga información sobre cómo previsualizar fácilmente una representación de JSON de sus Fragmentos de contenido al implementar su solución de AEM sin encabezado.
 feature: Content Fragments
 role: User
 exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '114'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 84%
 
 Al desarrollar los modelos para fragmentos de contenido como parte de su implementación sin encabezado de AEM, es posible que desee ver la salida JSON de muestra para un fragmento de contenido, según un modelo. Por ejemplo, para hacerse una idea del aspecto que tendrá el resultado final. Esto podría resultar útil al validar la estructura JSON del modelo, quizá con contenido de muestra predeterminado por tipo de datos.
 
-Uso del icono **Vista previa**:
+Uso del icono **Previsualizar**:
 
 ![Editor de fragmentos de contenido: pestaña Vista previa](assets/cfm-preview-01.png)
 
