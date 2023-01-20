@@ -4,10 +4,10 @@ description: Aprenda a crear la estructura que sirve como base para todo el cont
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 0%
+source-wordcount: '477'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Iniciar la consola del modelo"
 >abstract="Vamos a explorar cómo crear un esquema reutilizable, llamado modelo de fragmento de contenido, para su contenido en Adobe Experience Manager as a Cloud Service. Vea el vídeo para comprender por qué este es un paso importante. <br><br>Inicie este módulo en una nueva pestaña haciendo clic en el botón de abajo y siga esta guía."
->additional-url="https://video.tv.adobe.com/v/3413261" text="Vídeo introductorio de la estructura de contenido"
+>additional-url="https://video.tv.adobe.com/v/3413261/?captions=spa" text="Vídeo introductorio de la estructura de contenido"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
@@ -32,45 +32,31 @@ ht-degree: 0%
 
 ## Crear un modelo {#create-model}
 
-Al hacer clic en **Iniciar la consola del modelo** arriba abre la consola de modelos de fragmento de contenido en una nueva pestaña.
+La consola de modelos de fragmento de contenido se abre en una nueva pestaña. Considere la consola del modelo de fragmento de contenido como su biblioteca de modelos, donde crea nuevos modelos y gestiona los modelos existentes.
 
-![La consola del modelo de fragmento de contenido](assets/content-structure/content-fragment-model-console.png)
+1. Haga clic en el **Crear** en la parte superior derecha de la pantalla para comenzar a crear un modelo de fragmento de contenido.
 
-Considere la consola del modelo de fragmento de contenido como su biblioteca de modelos, donde crea nuevos modelos y gestiona los modelos existentes. La consola empieza vacía, así que vamos a crear un nuevo modelo.
-
-1. En la consola del modelo de fragmento de contenido, haga clic en el botón **Crear** en la parte superior derecha de la pantalla para comenzar a crear un modelo de fragmento de contenido.
-
-1. Se inicia el asistente Crear modelo, que le guía.
-
-   ![Asistente del modelo de fragmento de contenido](assets/content-structure/model-wizard.png)
-
-   Proporcione la información obligatoria.
+1. Se inicia el asistente Crear modelo, que le guía. Proporcione la información obligatoria.
 
    * **Título de modelo** - Esta es una breve descripción del modelo y normalmente indica el propósito del modelo.
    * **Habilitar modelo** - Esta opción está activada de forma predeterminada y debe estar activada para poder crear fragmentos de contenido basados en este modelo.
 
 1. Una vez rellenados los campos obligatorios, haga clic en **Crear** en la parte superior izquierda para crear el modelo.
 
-1. La variable **Correcto** confirma que se creó el modelo.
+1. La variable **Correcto** confirma que se creó el modelo. Haga clic en **Apertura** en el cuadro de diálogo para abrir el nuevo modelo de fragmento de contenido en el editor en una nueva ficha. A continuación, continúe con el siguiente paso para añadir campos de datos al modelo.
 
-   ![Cuadro de diálogo de éxito para crear un nuevo modelo de fragmento de contenido](assets/content-structure/success.png)
+![Pasos dos y tres de la creación de un modelo de fragmento de contenido](assets/do-not-localize/create-model-2-3.png)
 
 ## Agregar campos al modelo {#configure-model}
 
-Para poder utilizar el modelo, debe definir la estructura de sus datos.
-
-1. Haga clic en **Apertura** en el **Correcto** del paso anterior para abrir el nuevo modelo en el editor del modelo de fragmento de contenido, donde puede definir sus campos.
+Para poder utilizar el modelo, debe definir la estructura de sus datos. El editor del modelo de fragmento de contenido es donde se configuran los tipos de datos y las propiedades que definen el contenido del modelo.
 
 1. Arrastre un campo desde la **Tipos de datos** a la derecha del editor y suéltelo en el modelo de fragmento de contenido.
 
-   ![Añadir un tipo de datos](assets/content-structure/drop-fields.png)
-
 1. Una vez colocado el tipo de datos, la variable **Tipos de datos** se ha cambiado automáticamente a **Propiedades** , donde puede definir los detalles del tipo de datos que acaba de colocar.
-
-   ![La pestaña Propiedades del campo de datos](assets/content-structure/data-type-properties.png)
 
 1. Una vez añadidos todos los campos necesarios para el modelo de fragmento de contenido, haga clic en **Guardar** en la parte superior derecha de la ventana.
 
-El modelo se guarda y se vuelve a la consola del modelo de fragmento de contenido, donde puede agregar más modelos según sea necesario.
+1. El modelo se guarda y se vuelve a la consola del modelo de fragmento de contenido.
 
-![Módulo completado](assets/content-structure/content-fragment-model-console-populated.png)
+![Pasos uno, dos y tres para añadir campos al modelo](assets/do-not-localize/define-model-fields-1-2-3.png)
