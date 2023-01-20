@@ -3,9 +3,9 @@ title: Comprobar el estado del nombre de dominio
 description: Obtenga información sobre cómo determinar si Cloud Manager ha verificado correctamente su nombre de dominio personalizado.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Cloud Manager activará automáticamente una verificación TXT al seleccionar **
 
 ## Errores de nombre de dominio {#domain-error}
 
-A continuación se indican algunos errores comunes de nombres de dominio y sus resoluciones típicas.
+A continuación se indican algunos errores comunes de nombres de dominio y sus resoluciones habituales.
 
 ### Error de dominio no instalado {#domain-not-installed}
 
@@ -60,7 +60,7 @@ Este error puede ocurrir durante la validación del dominio del registro TXT inc
 
 #### Causa de error {#cause}
 
-Enciende rápidamente un dominio a la cuenta inicial que lo registró y ninguna otra cuenta puede registrar un subdominio sin solicitar permiso. Además, solo permite asignar un dominio Apex y subdominios asociados a un servicio y una cuenta de Fastly. Si tiene una cuenta existente de Facebook que vincula los mismos Apex y subdominios utilizados para sus dominios de AEM Cloud Service, verá este error.
+Fastly fija un dominio a la cuenta inicial que lo registró y ninguna otra cuenta puede registrar un subdominio sin solicitar permiso. Además, solo permite asignar un dominio Apex y subdominios asociados a un servicio y una cuenta de Fastly. Si tiene una cuenta existente de Facebook que vincula los mismos Apex y subdominios utilizados para sus dominios de AEM Cloud Service, verá este error.
 
 #### Resolución de errores {#resolution}
 
@@ -70,15 +70,15 @@ El error se corrige de la siguiente manera:
 
 * Utilice esta opción para vincular el dominio Apex y todos los subdominios a la cuenta de AEM as a Cloud Service de Fastly. Consulte [Uso de dominios en la documentación de Fastly](https://docs.fastly.com/en/guides/working-with-domains) para obtener más información.
 
-* Si el dominio de apex tiene varios subdominios para AEM sitios as a Cloud Service as a Cloud Service y no AEM que desee vincular a distintas cuentas de Fray, intente instalar el dominio en Cloud Manager. Si la instalación del dominio falla, cree un ticket de asistencia al cliente con Finfinito para que Adobe pueda seguir con Finfinito en su nombre.
+* Si el dominio de Apex tiene varios subdominios para páginas tanto AEM as a Cloud Service como no AEM que desee vincular a distintas cuentas de Fastly, intente instalar el dominio en Cloud Manager. Si la instalación del dominio falla, cree un ticket de asistencia al cliente con Fastly para que Adobe pueda seguir con Fastly en su nombre.
 
 >[!TIP]
 >
->La solución de los problemas de delegación de dominios con Finfinitamente suele tardar entre 1 y 2 días hábiles. Por este motivo, es muy recomendable instalar los dominios mucho antes de la fecha de lanzamiento.
+>La solución de los problemas de delegación de dominios con Fastly suele tardar entre 1 y 2 días hábiles. Por este motivo, es muy recomendable instalar los dominios mucho antes de la fecha de lanzamiento.
 
 >[!NOTE]
 >
->No enrute el DNS del sitio a direcciones IP as a Cloud Service AEM si el dominio no se instaló correctamente.
+>No enrute el DNS del sitio a direcciones IP de AEM as a Cloud Service si el dominio no se instaló correctamente.
 
 ## Configuraciones preexistentes de CDN para nombres de dominio personalizados {#pre-existing-cdn}
 
