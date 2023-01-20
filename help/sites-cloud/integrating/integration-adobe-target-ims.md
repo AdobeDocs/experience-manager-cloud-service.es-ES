@@ -3,9 +3,9 @@ title: Configuración de IMS que usar al integrar con Adobe Target
 description: Obtenga información acerca de la configuración de IMS que usar al integrar con Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -161,7 +161,7 @@ Al volver a AEM, puede completar la configuración de IMS añadiendo los valores
 1. Aquí puede usar los [detalles de la configuración del proyecto de la Adobe Developer Console](#details-stored-for-the-ims-integration-project):
 
    * **Título**: el texto.
-   * **Servidor de autorización**: Copie/pegue esto desde el `aud` línea del **Carga útil** por ejemplo, `https://ims-na1.adobelogin.com` en el ejemplo siguiente
+   * **Servidor de autorización**: copie/pegue esto de la línea `aud` de la sección **Carga útil** a continuación, por ejemplo, `https://ims-na1.adobelogin.com` en la instancia siguiente
    * **Clave de API**: copie esto de la sección [Información general del proyecto](#details-stored-for-the-ims-integration-project)
    * **Secreto del cliente**: genere esto en la sección [Información general del proyecto](#details-stored-for-the-ims-integration-project) y copie
    * **Carga útil**: copie esto desde la sección [Generar JWT](#details-stored-for-the-ims-integration-project)
