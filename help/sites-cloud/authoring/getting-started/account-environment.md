@@ -3,9 +3,9 @@ title: Configuración del entorno de la cuenta
 description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
 * **Presentación de fecha relativa**
 
-   Para mejorar la legibilidad, AEM procesará las fechas dentro de los últimos siete días como fechas relativas (por ejemplo, hace tres días) y las fechas antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
+   Para mejorar la legibilidad, AEM procesará las fechas dentro de los últimos siete días como fechas relativas (por ejemplo, hace tres días) y las fechas más antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
 
    Esta opción define el modo en que se muestran las fechas del sistema. Las opciones disponibles son las siguientes:
 
