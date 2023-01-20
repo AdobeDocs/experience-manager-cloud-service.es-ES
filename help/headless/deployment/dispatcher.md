@@ -4,9 +4,9 @@ description: Dispatcher es una capa de almacenamiento en caché y seguridad situ
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '233'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->Para obtener documentación detallada acerca de Dispatcher, consulte la [Guía de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+>Para obtener documentación detallada acerca de Dispatcher, consulte la [Guía de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
 
 Como parte de un proyecto de AEM, se incluye un módulo de Dispatcher que contiene configuraciones para Dispatcher. Los proyectos recién generados a partir del [Tipo de archivo del proyecto de AEM](https://github.com/adobe/aem-project-archetype) incluyen automáticamente [filtros](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es?#defining-a-filter) que habilitan los puntos de conexión de GraphQL.
 
@@ -38,4 +38,4 @@ La solicitud de consultas persistentes se realiza con un punto de conexión dife
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Las consultas persistentes se pueden solicitar utilizando `GET`, almacenando así la respuesta en caché en el nivel de Dispatcher y CDN. Se pueden encontrar más detalles acerca del almacenamiento en caché e invalidación de caché [aquí](/help/implementing/dispatcher/caching.md).
+Las consultas persistentes se pueden solicitar utilizando `GET`, por lo que se almacena en caché así la respuesta en el nivel de Dispatcher y de la red de distribución de contenido (CDN). Se pueden encontrar más detalles acerca del almacenamiento en caché e invalidación de caché [aquí](/help/implementing/dispatcher/caching.md).
