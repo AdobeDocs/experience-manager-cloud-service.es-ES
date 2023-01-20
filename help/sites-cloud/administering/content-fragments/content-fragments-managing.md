@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1915'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -41,15 +41,15 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 
 ## La consola Fragmentos de contenido {#content-fragments-console}
 
-La consola Fragmentos de contenido proporciona acceso directo a los fragmentos y a las tareas relacionadas. Para obtener más información, consulte:
+La consola Fragmentos de contenido proporciona acceso directo a los fragmentos y a las tareas relacionadas. Para obtener más información detallada, consulte:
 
-* [Estructura básica y administración de la consola de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+* [Estructura básica y administración de la consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
 
-* [La información proporcionada sobre los fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+* [La información proporcionada sobre sus fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
 
 * [Acciones para un fragmento de contenido en la consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
 
-* [Personalización de las columnas disponibles en la consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+* [Personalización de columnas disponible en la consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
 
 * [Buscar y filtrar en la consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
@@ -83,14 +83,14 @@ Crear un fragmento de contenido:
 
 ## Estados de los fragmentos de contenido {#statuses-content-fragments}
 
-Durante su existencia, un fragmento de contenido puede tener varios estados, como se muestra en la variable [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
+Durante su existencia, un fragmento de contenido puede tener varios estados, como se muestra en la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
 
 * **Nuevo**
-Se ha creado un nuevo fragmento de contenido, pero nunca se ha editado ni abierto, en el editor de fragmentos de contenido.
+Se ha creado un nuevo fragmento de contenido, pero nunca se ha editado o abierto en el editor de fragmentos de contenido.
 * **Borrador**
-Alguien ha editado o abierto el (nuevo) fragmento de contenido en el Editor de fragmentos de contenido, pero aún no se ha publicado.
+Alguien ha editado o abierto el fragmento de contenido (nuevo) en el Editor de fragmentos de contenido, pero aún no se ha publicado.
 * **Publicado**
-Se ha publicado el fragmento de contenido.
+El fragmento de contenido se ha publicado.
 * **Modificado**
 El fragmento de contenido se ha editado después de publicarse (pero antes de publicar la modificación).
 * **Sin publicar**
@@ -288,13 +288,13 @@ Para eliminar un fragmento:
    >[!CAUTION]
    Si ya se hace referencia al fragmento a partir de otro fragmento o página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se eliminará de cualquier página de contenido.
 
-## Búsqueda de referencias principales del fragmento {#parent-references-fragment}
+## Búsqueda de referencias principales de su fragmento {#parent-references-fragment}
 
-Se puede acceder a los detalles de las referencias principales desde la **Referencias** de [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+Se puede acceder a los detalles de las referencias principales desde la columna **Referencias** de la [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Búsqueda de copias de idioma del fragmento {#language-copies-fragment}
 
-Se puede acceder a los detalles de las copias de idioma desde la **Idioma** de [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+Se puede acceder a los detalles de las copias de idioma desde la columna **Idioma** de la [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Cronología de los fragmentos de contenido {#timeline-for-content-fragments}
 
