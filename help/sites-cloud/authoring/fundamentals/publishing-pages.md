@@ -3,9 +3,9 @@ title: Publicar páginas
 description: Publicar y cancelar la publicación de páginas con AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1812'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Puede encontrar diferentes términos relacionados con la publicación al trabaja
    * Estos términos son sinónimos de publicar y cancelar la publicación.
    * Estos términos se utilizaban en versiones anteriores de AEM.
 * **Replicar o replicación**
-   * Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro al publicar una página.
+   * Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de páginas, archivos, códigos o comentarios de usuarios) de un entorno a otro cuando publica una página.
    * Los desarrolladores son quienes, principalmente, utilizan estos términos.
 
 ## Publicar páginas {#publishing-pages-1}
@@ -215,9 +215,9 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
 ## Cancelar la publicación de páginas {#unpublishing-pages}
 
-Si se cancela la publicación de una página, se eliminará de la publicación o [vista previa](/help/sites-cloud/authoring/fundamentals/previewing-content.md), entorno para que ya no esté disponible para los lectores.
+Si se cancela la publicación de una página, se eliminará del entorno de publicación (o [previsualización](/help/sites-cloud/authoring/fundamentals/previewing-content.md)) y ya no estará disponible para los lectores.
 
-En un [similar a la publicación](#publishing-pages), se puede cancelar la publicación de una o varias páginas desde el destino deseado:
+De [forma similar a la publicación](#publishing-pages), se puede cancelar la publicación de una o varias páginas del destino deseado:
 
 * [Desde el editor de páginas](#unpublishing-from-the-editor)
 * [Desde la consola Sitios](#unpublishing-from-the-console)
@@ -246,7 +246,7 @@ Al igual que [utiliza la opción Administrar publicación para publicar](#manage
    >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para finalizar el flujo de trabajo correspondiente.
 
    >[!NOTE]
-   >Si tiene una [Vista previa](/help/sites-cloud/authoring/fundamentals/previewing-content.md) entorno puede seleccionar **Destino** durante Administrar publicación.
+   >Si tiene una [Vista previa](/help/sites-cloud/authoring/fundamentals/previewing-content.md) del entorno, puede seleccionar **Destino** durante Administrar publicación.
 
 1. Para completar la cancelación de la publicación, complete el asistente como haría para [publicar la página](#manage-publication).
 
