@@ -3,9 +3,9 @@ title: Tablero de licencias
 description: Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Cada sección resume lo que está disponible y cómo se utiliza actualmente, si 
 
 ### ¿Qué es una solicitud de contenido? {#what-is-a-content-request}
 
-Una solicitud de contenido es una solicitud que llega a AEM Sites o a cualquier sistema de almacenamiento en caché proporcionado por el cliente, como una red de entrega de contenido, para entregar contenido o datos en formato de HTML como una vista de página o en formato JSON como una llamada de API.
+Una solicitud de contenido es una solicitud que llega a AEM Sites o a cualquier sistema de almacenamiento en caché proporcionado por el cliente, como una red de distribución de contenido, para entregar contenido o datos en formato HTML, como una vista de página, o en formato JSON, como una llamada de la API.
 
 Se cuenta una solicitud de contenido por cada vista de página o por cada cinco llamadas a la API, se miden a la entrada del primer sistema de almacenamiento en la memoria caché que recibe una solicitud de contenido. Las solicitudes de contenido se cuentan únicamente en los entornos de producción.
 
@@ -63,7 +63,7 @@ Las solicitudes de contenido excluyen las solicitudes o actividades iniciadas po
 
 ### ¿Cómo mide Adobe Experience Manager las solicitudes de contenido? {#how-are-content-requests-measured}
 
-Las solicitudes de contenido se rastrean en los servidores Edge de AEM as a Cloud Service. El tráfico de origen no se cuenta para las solicitudes de contenido. La CDN integrada en AEM as a Cloud Service rastrea solicitudes de HTML y JSON válidas.
+Las solicitudes de contenido se rastrean en los servidores Edge de AEM as a Cloud Service. El tráfico de origen no se cuenta para las solicitudes de contenido. La red de distribución de contenido (CDN) integrada en AEM as a Cloud Service rastrea solicitudes de HTML y JSON válidas.
 
 AEM también dispone de reglas para excluir bots conocidos, incluidos servicios bien conocidos que visitan el sitio regularmente para actualizar su índice de búsqueda o servicio.
 
@@ -83,10 +83,10 @@ Las solicitudes de contenido tendrán variaciones con las herramientas de inform
 | Bloqueadores de tráfico | El uso de un bloqueador de tráfico en un explorador puede excluir el seguimiento de algunas solicitudes. |
 | Firewalls | Los firewalls pueden bloquear el seguimiento de Analytics. Es más frecuente con los firewalls corporativos. |
 
-### ¿Qué sucede si deseo obtener más información sobre mi volumen de solicitudes de contenido? {#current-request-volumes}
+### ¿Qué sucede si quisiera obtener más información sobre mi volumen de solicitudes de contenido? {#current-request-volumes}
 
-Si desea obtener información adicional sobre el volumen de solicitud de contenido que se muestra en el panel de licencias, su equipo de Adobe puede proporcionar un informe que muestre los controladores de mayor volumen de las solicitudes de contenido. Póngase en contacto con el equipo de Adobe o con el Servicio de atención al cliente de Adobe para solicitar un informe de uso superior.
+Si desea obtener información adicional sobre el volumen de solicitud de contenido que se muestra en el Tablero de licencias, su equipo de Adobe puede proporcionarle un informe que muestre los controladores de mayor volumen de las solicitudes de contenido. Póngase en contacto con el equipo de Adobe o con el Servicio de atención al cliente de Adobe para solicitar un informe de uso superior.
 
 ### ¿Qué sucede si utilizo mi propia CDN? {#using-own-cdn}
 
-El panel de licencias solo mostrará los datos rastreados por la CDN de Cloud Service.  Si elige traer su propia CDN (BYOCDN), informará de su volumen de solicitud de contenido a Adobe anualmente, tal como se indica en su contrato.
+El Tablero de licencias solo mostrará los datos rastreados por la CDN de Cloud Service.  Si opta por traer su propia CDN (BYOCDN), informará de su volumen de solicitud de contenido a Adobe anualmente, tal y como se indica en su contrato.
