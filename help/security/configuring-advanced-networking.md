@@ -3,9 +3,9 @@ title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3053'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,13 +48,14 @@ La salida de puerto flexible es la opción recomendada si no necesita VPN ni una
 
 ### Configuración {#configuring-flexible-port-egress-provision}
 
-Una vez por programa, el punto final de POST `/program/<programId>/networkInfrastructures` se invoca, pasando simplemente el valor de `flexiblePortEgress` para el parámetro `kind` y la región. El punto final responde con la variable `network_id`, así como otra información, incluido el estado. El conjunto completo de parámetros y la sintaxis exacta, así como información importante como los parámetros que no se pueden cambiar posteriormente, [en los documentos de API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+Una vez por programa, el punto final de POST `/program/<programId>/networkInfrastructures` se invoca, pasando simplemente el valor de `flexiblePortEgress` para el parámetro `kind` y la región. El punto final responde con la variable `network_id`, así como otra información, incluido el estado. [Se puede hacer referencia en los documentos de API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) al conjunto completo de parámetros y la sintaxis exacta, así como a información importante como los parámetros que no se pueden cambiar posteriormente.
 
 Una vez realizada la llamada, la infraestructura de red tarda aproximadamente 15 minutos en aprovisionarse. Una llamada al [punto de conexión de GET de infraestructura de red](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) de Cloud Manager mostraría el estado “listo”.
 
 Si la configuración de salida de puerto flexible con alcance de programa está lista, el punto final `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` debe invocarse por entorno para habilitar la red en el nivel de entorno y para declarar opcionalmente cualquier regla de reenvío de puerto. Los parámetros se pueden configurar por entorno para ofrecer flexibilidad.
 
-Las reglas de reenvío de puertos deben declararse para cualquier puerto de destino que no sea 80/443, pero solo si no utiliza el protocolo http o https, especificando el conjunto de hosts de destino (nombres o IP, y con puertos). Para cada host de destino, los clientes deben asignar el puerto de destino deseado a un puerto desde 30000 hasta 30999.
+Las reglas de reenvío de puertos deben declararse para cualquier puerto de destino que no sea 80/443, pero solo si no utiliza el protocolo http o https, 
+especificando el conjunto de hosts de destino (nombres o IP, y con puertos). Para cada host de destino, los clientes deben asignar el puerto de destino deseado a un puerto desde 30000 hasta 30999.
 
 La API debe responder en solo unos segundos e indicar un estado de actualización y, después de unos 10 minutos, el método `GET` del punto de conexión debe indicar que la red avanzada está habilitada.
 
@@ -209,7 +210,7 @@ Para obtener más información sobre las API, consulte la [Documentación de la 
 
 ### Enrutamiento del tráfico {#dedcated-egress-ip-traffic-routing}
 
-El tráfico HTTP o https pasará a través de un proxy preconfigurado, siempre que utilicen propiedades estándar del sistema Java para las configuraciones proxy.
+El tráfico HTTP o HTTPS pasará a través de un proxy preconfigurado, siempre que utilicen propiedades estándar del sistema Java para las configuraciones de proxy.
 
 El tráfico no HTTP/S con destinos a través de puertos declarados en el parámetro `portForwards` debe hacer referencia a una propiedad denominada `AEM_PROXY_HOST`, junto con el puerto asignado. Por ejemplo:
 
