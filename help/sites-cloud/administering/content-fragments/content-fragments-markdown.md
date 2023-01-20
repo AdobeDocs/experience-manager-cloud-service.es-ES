@@ -1,13 +1,13 @@
 ---
 title: Markdown
-description: Comprenda cómo el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle crear contenido fácilmente, tanto para la creación de páginas como para la entrega sin encabezado.
+description: Entender cómo el editor de fragmentos de contenido utiliza la sintaxis de markdown para permitirle crear fácilmente contenido, tanto para la creación de páginas como para la entrega sin encabezado.
 feature: Content Fragments
 role: User
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '534'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
