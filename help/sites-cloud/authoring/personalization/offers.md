@@ -3,83 +3,83 @@ title: Creación y administración de ofertas (consola Ofertas)
 description: Utilice la consola Ofertas para crear ofertas que se pueden usar en las experiencias de actividad
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1393'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # Creación y administración de ofertas (Consola de ofertas) {#creating-and-managing-offers}
 
-La variable **Ofertas** la consola quedará obsoleta en el futuro. Así que, a partir de ahora, es:
+La consola **Ofertas** quedará obsoleta en el futuro. Así que, a partir de ahora, es:
 
-* Solo está disponible para los clientes que *heredado* ofertas ya definidas (es decir, preexistentes)
-* Se recomienda convertir estas ofertas heredadas en ofertas de fragmento de experiencia
-   * Tan pronto como se convierta/elimine la última oferta heredada, la variable **Ofertas** la consola ya no estará disponible.
+* Solo está disponible para los clientes que poseen ofertas *heredadas* ya definidas (es decir, preexistentes)
+* Se recomienda convertir estas ofertas heredadas en ofertas de Fragmento de experiencia
+   * Tan pronto como se convierta/elimine la última oferta heredada, la consola **Ofertas** ya no estará disponible.
 
 ![Consolas de personalización](/help/sites-cloud/authoring/assets/offers-consoles.png)
 
 >[!NOTE]
 >
->Los clientes que tengan ofertas preexistentes heredadas aún pueden usar la variable **Ofertas** para ver las ofertas existentes y crear nuevas ofertas heredadas.
+>Los clientes que tengan ofertas preexistentes heredadas aún pueden usar la consola **Ofertas** para ver las ofertas existentes y crear nuevas ofertas heredadas.
 >
->Los clientes que no tengan ofertas preexistentes heredadas no verán la variable **Ofertas** consola.
+>Los clientes que no tengan ofertas preexistentes heredadas no verán la consola **Ofertas**.
 >
 >Todos los clientes pueden utilizar **Ofertas de fragmentos de experiencias** para crear y administrar ofertas.
 
-## Conversión de una oferta heredada en un fragmento de experiencia {#convert-legacy-offer-to-experience-fragment}
+## Conversión de una oferta heredada en un Fragmento de experiencia {#convert-legacy-offer-to-experience-fragment}
 
-A **Convertir en variación de fragmento de experiencia** y el flujo de trabajo se han implementado para ayudarle a convertir su oferta heredada en un fragmento de experiencia:
-
->[!NOTE]
->
->Este es el flujo de trabajo recomendado para convertir ofertas heredadas en fragmentos de experiencia.
+Se han implementado una opción **Convertir en variación de Fragmento de experiencia** y un flujo de trabajo se han implementado para ayudarle a convertir su oferta heredada en un Fragmento de experiencia:
 
 >[!NOTE]
 >
->También puede crear un nuevo fragmento de experiencia, transferir manualmente el contenido de la oferta heredada al fragmento y, a continuación, eliminar la oferta heredada.
+>Este es el flujo de trabajo recomendado para convertir ofertas heredadas en Fragmentos de experiencia.
+
+>[!NOTE]
+>
+>También puede crear un nuevo Fragmento de experiencia, transferir manualmente el contenido de la oferta heredada al fragmento y, a continuación, eliminar la oferta heredada.
 
 >[!CAUTION]
 >
->La variable **Convertir en variación de fragmento de experiencia** está disponible para todos los componentes principales.
+>La opción **Convertir en variación de Fragmento de experiencia** está disponible para todos los Componentes principales.
 >
->Esta opción no se admitirá en los componentes personalizados. Para estos componentes, debe convertir manualmente el contenido en un fragmento de experiencia.
+>Esta opción no se admitirá en los componentes personalizados. Para estos componentes, debe convertir manualmente el contenido en un Fragmento de experiencia.
 
 >[!CAUTION]
 >
 >En cuanto se convierte/elimina la última oferta heredada:
 >
->* La variable **Ofertas** la consola ya no estará disponible.
+>* La consola **Ofertas** ya no estará disponible.
 >* El icono de destino dentro de la barra de herramientas de cualquier otro componente afectado ya no aparecerá.
 
 
 1. Abra una página que contenga la oferta para editarla.
 
-1. Cambie a **Segmentación** para esa página.
+1. Cambie al modo de **Segmentación** para esa página.
 
-1. Seleccione **Iniciar orientación**.
+1. Seleccione **Iniciar segmentación**.
 
-1. Seleccione el componente apropiado (orientado).
+1. Seleccione el componente apropiado (de destino).
 
-1. La barra de herramientas de componentes proporcionará una opción para **Convertir en variación de fragmento de experiencia**:
+1. La barra de herramientas de componentes proporcionará una opción para **Convertir en variación de Fragmento de experiencia**:
 
-   ![Conversión de ofertas heredadas a fragmentos de experiencias](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+   ![Conversión de ofertas heredadas a Fragmentos de experiencia](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
-1. Se mostrará un cuadro de diálogo. Aquí puede seleccionar el **Acción**:
+1. Se mostrará un cuadro de diálogo. Aquí puede seleccionar la **Acción** requerida:
 
    * Crear un nuevo fragmento de experiencia
-   * Añadir el contenido a un fragmento de experiencia existente
+   * Añadir el contenido a un Fragmento de experiencia existente
 
-   Para este escenario, seleccione **Crear un nuevo fragmento de experiencia**.
+   Para este escenario, seleccione **Crear un nuevo Fragmento de experiencia**.
 
-   ![Cuadro de diálogo Convertir en variación de fragmento de experiencia](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
+   ![Convertir en cuadro de diálogo de Variación de Fragmento de experiencia](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
 
 1. Rellene los campos obligatorios del cuadro de diálogo:
 
    * **Ruta principal**
-Especificar la ruta principal del nuevo fragmento de experiencia
+Especificar la ruta principal del nuevo Fragmento de experiencia
    * **Plantilla**
-Seleccione la plantilla que desea utilizar para crear el fragmento de experiencia.
+Seleccione la plantilla que desea utilizar para crear el Fragmento de experiencia.
    * **Título del fragmento**
 Especifique el título.
    * **Etiquetas de fragmento**
@@ -87,7 +87,7 @@ Agregue etiquetas, si es necesario.
 
 1. Confirme con **Listo**.
 
-   Si ahora va a la **Ofertas de fragmentos de experiencias** , verá el nuevo fragmento de experiencia, junto con sus variaciones asociadas.
+   Si ahora va a la consola **Ofertas de Fragmento de experiencia**, verá su nuevo fragmento de experiencia, junto con sus variaciones asociadas.
 
 ### Segmentación con la plantilla de ofertas {#targeting-offers-template}
 
@@ -95,24 +95,24 @@ Agregue etiquetas, si es necesario.
 >
 >Esta opción solo está disponible para clientes con ofertas heredadas preexistentes.
 >
->Como con el **Ofertas** consola, ya no estará disponible:
+>Con la consola de **Ofertas**, ya no estará disponible:
 >
->* una vez que la última oferta heredada se haya convertido en fragmentos de experiencias
->* cuando las ofertas heredadas estén en desuso (en el futuro)
+>* una vez que la última oferta heredada se haya convertido en Fragmentos de experiencias
+>* cuando las ofertas heredadas estén desaprobadas (en el futuro)
 >
->Por lo tanto, la opción recomendada es utilizar fragmentos de experiencias, no esta opción.
+>Por lo tanto, la opción recomendada es utilizar Fragmentos de experiencia, no esta opción.
 
-Para los clientes con ofertas heredadas preexistentes, la variable **Usar plantilla de oferta** las opciones estarán visibles al destinar componentes que **not** Fragmentos de experiencias:
+Para los clientes con ofertas heredadas preexistentes, las opciones de **Usar plantilla de oferta** estarán visibles al segmentar componentes que **no** son Fragmentos de experiencias:
 
-![Cuadro de diálogo Convertir en variación de fragmento de experiencia](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
+![Convertir a cuadro de diálogo de variación de Fragmento de experiencia](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## La consola Ofertas {#offers-console}
 
 >[!CAUTION]
 >
->Esta consola se va a retirar en el futuro, ya que ofrece una forma heredada de personalizar el contenido.
+>Esta consola se va a desaprobar en el futuro, ya que ofrece una forma heredada de personalizar el contenido.
 >
->Tienes tiempo para prepararte. Consulte cómo [convertir las ofertas heredadas existentes en una oferta de fragmento de experiencia](#convert-legacy-offer-to-experience-fragment).
+>Todavía tiene tiempo para prepararse. Consulte cómo [convertir las ofertas heredadas existentes en una oferta de Fragmento de experiencia](#convert-legacy-offer-to-experience-fragment).
 
 Utilice la consola Ofertas para crear ofertas que se pueden [usar en las experiencias de actividad](/help/sites-cloud/authoring/personalization/targeted-content.md). La creación de ofertas en la consola Ofertas ahorra tiempo cuando varias experiencias requieren la misma oferta:
 
