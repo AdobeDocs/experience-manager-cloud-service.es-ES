@@ -140,6 +140,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
       >[!NOTE]
       >
       >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para finalizar el flujo de trabajo correspondiente.
+
    ![Administrar opciones de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Haga clic en **Siguiente** para continuar.

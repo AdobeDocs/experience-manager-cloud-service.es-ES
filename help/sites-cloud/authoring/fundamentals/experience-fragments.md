@@ -346,11 +346,11 @@ Para personalizar el fragmento, haga lo siguiente:
    >La **Ruta de ContextHub** seleccionada en la pestaña **Personalización** debe ser la siguiente:
    >
    >* la misma ruta que la configurada para la página en la que se renderizará el fragmento
-      >O bien:
+   >O bien:
    >* una ruta que contiene un subconjunto de los almacenes definidos en ContextHub configurados para la página
-
    >
    > 
+
 La **Ruta de segmentos** seleccionados en la pestaña **Personalización** debe ser la siguiente:
 
    * la misma ruta que la configurada para la página en la que se renderizará el fragmento
@@ -382,8 +382,8 @@ Los detalles se muestran en todas las vistas de la consola de **Fragmentos de ex
    Las propiedades están disponibles en varias pestañas:
 
    >[!CAUTION]
-   Estas pestañas se muestran al abrir **Propiedades** desde la consola fragmentos de experiencias.
-   Si se selecciona **Abrir propiedades** al editar un fragmento de experiencia, se muestran las [propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) correspondientes.
+   >Estas pestañas se muestran al abrir **Propiedades** desde la consola fragmentos de experiencias.
+   >Si se selecciona **Abrir propiedades** al editar un fragmento de experiencia, se muestran las [propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) correspondientes.
 
    ![Propiedades del fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -412,7 +412,7 @@ Los detalles se muestran en todas las vistas de la consola de **Fragmentos de ex
 Uso del selector de `.plain.` en la URL; puede acceder a la representación HTML sin formato desde el explorador.
 
 >[!NOTE]
-Aunque esta opción está disponible directamente desde el explorador, [el objetivo principal es permitir a otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) acceder al contenido del fragmento de experiencia directamente, únicamente mediante la URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Aunque esta opción está disponible directamente desde el explorador, [el objetivo principal es permitir a otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) acceder al contenido del fragmento de experiencia directamente, únicamente mediante la URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publicación de fragmentos de experiencias {#publishing-experience-fragments}
 
