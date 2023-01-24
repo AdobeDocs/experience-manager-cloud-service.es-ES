@@ -2,10 +2,10 @@
 title: Entornos de desarrollo rápido
 description: Aprenda a aprovechar los entornos de desarrollo rápido para iteraciones de desarrollo rápidas en un entorno de nube.
 hidefromtoc: true
-source-git-commit: 983901387d059a98942b4f7c533770a55dd4ff4a
+source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
 workflow-type: tm+mt
-source-wordcount: '2114'
-ht-degree: 7%
+source-wordcount: '2350'
+ht-degree: 6%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 >[!AVAILABILITY]
 >
->Esta función aún no está disponible.
+>Esta función está planificada para implementarse gradualmente en los clientes durante el mes de febrero.
 
 Para implementar cambios, los entornos actuales de Cloud Development requieren el uso de un proceso que emplee reglas de calidad y seguridad de código extensas, llamadas canalización CI/CD. En situaciones en las que se necesitan cambios rápidos e iterativos, el Adobe ha introducido entornos de desarrollo rápido (RDEs).
 
@@ -30,9 +30,7 @@ Cada programa está aprovisionado con un RDE. En el caso de las cuentas de Sandb
 
 Normalmente, un desarrollador único utilizaría un RDE en un momento determinado para probar y depurar una función específica. Cuando la sesión de desarrollo ha finalizado, el RDE se puede restablecer a un estado predeterminado para el siguiente uso.
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
-
-Additional RDEs may be purchased for Production programs -->
+Se pueden otorgar licencias de RDE adicionales para programas de producción (que no sean entornos limitados).
 
 ## Habilitar RDE en un programa {#enabling-rde-in-a-program}
 
@@ -388,14 +386,17 @@ Aunque el RDE es en muchos aspectos similar a un entorno de desarrollo de nube, 
 
 Por estos motivos, se recomienda que, después de validar el código en un entorno RDE, implemente el código en un entorno de desarrollo de nube mediante la canalización que no sea de producción. Finalmente, pruebe el código antes de implementarlo con la canalización de producción.
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
+Tenga en cuenta también las siguientes consideraciones específicas de la solución:
 
-## How many RDEs do I need? {#how-many-rds-do-i-need}
+* Actualmente, los RDE no admiten la visualización y depuración del código front-end implementado mediante la canalización front-end de Cloud Manager.
 
-The purchase of additional RDEs for Production programs will be possible beginning with late January.
 
-The number of RDEs needed depends on the make-up and processes of an organization. The most flexible model is where an organization purchases a dedicated RDE for each one of their AEM CS developers. In this model, each developer can test their code on the RDE without needing to coordinate with other team members around whether an RDE environment is available.
+## ¿Cuántos RDE necesito? {#how-many-rds-do-i-need}
 
-At the other extreme, a team with a single RDE may use internal processes to coordinate which developer can use the environment at a given time. This can possibly be whenever a developer has hit an intermediate feature milestone and is ready to validate in a Cloud environment where they can quickly make the changes they need.
+Hay disponible un RDE para cada solución con licencia y el Adobe también ofrece RDE adicionales, que pueden obtener licencia para programas de producción (que no sean entornos limitados).
 
-An intermediate model is one where an organization purchases a number of RDEs that will create a situation in which not every developer will have a dedicated environment, but there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments. -->
+El número de RDE necesarios depende de la composición y los procesos de una organización. El modelo más flexible es aquel en el que una organización compra un RDE específico para cada uno de sus desarrolladores de AEM Cloud Service. En este modelo, cada desarrollador puede probar su código en el RDE sin coordinar con otros integrantes del equipo si hay un entorno RDE disponible.
+
+En el otro extremo, un equipo con un solo RDE puede utilizar procesos internos para coordinar qué desarrollador puede utilizar el entorno en un momento determinado. Esto puede suceder siempre que un desarrollador haya alcanzado un hito de función intermedio y esté listo para validar en un entorno de Cloud, donde pueda realizar rápidamente los cambios que necesite.
+
+Un modelo intermedio es aquel en el que una organización compra varios RDE, por lo que existe una buena probabilidad de que esté disponible un RDE no utilizado. Una estrategia podría consistir en asignar un RDE por equipo de examen o función principal. Los procesos internos pueden utilizarse para coordinar el uso de los entornos.
