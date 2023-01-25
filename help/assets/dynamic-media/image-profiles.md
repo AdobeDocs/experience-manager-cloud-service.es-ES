@@ -4,9 +4,9 @@ description: Aprenda a crear perfiles de imagen de Dynamic Media que contengan a
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 08c4474c71d39ba95191225279bbfca92bb64d7c
+source-git-commit: 163b6b19f0401213813d8de30caf8144855b4e4c
 workflow-type: tm+mt
-source-wordcount: '3524'
+source-wordcount: '3488'
 ht-degree: 8%
 
 ---
@@ -17,15 +17,15 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 
 >[!IMPORTANT]
 >
->・ El formato de imagen CMYK no es compatible con el recorte inteligente.
-・ Los perfiles de imagen no son aplicables a archivos PDF, GIF animado o INDD (Adobe InDesign).
+>Los perfiles de imagen no son aplicables a archivos PDF, GIF animado o INDD (Adobe InDesign).
 
 ## Máscara de enfoque, opción {#unsharp-mask}
 
-Al crear un perfil de imagen, puede usar la variable **[!UICONTROL Máscara de enfoque]** para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora. Este efecto utiliza las mismas opciones que el filtro “Máscara de enfoque” de Adobe Photoshop.
+Al crear un perfil de imagen, puede usar la variable **[!UICONTROL Máscara de enfoque]** para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora. Este efecto utiliza las mismas opciones que el filtro &quot;Máscara de enfoque&quot; de Adobe Photoshop.
 
 >[!NOTE]
-La máscara de enfoque solo se aplica a las representaciones a escala reducida dentro del PTIFF (tiff piramidal) que se reducen a más del 50%. Esto significa que las representaciones de mayor tamaño dentro de la diferencia no se ven afectadas por la máscara de enfoque. Mientras que las representaciones de menor tamaño, como las miniaturas, se modifican (y muestran la máscara de enfoque).
+>
+>La máscara de enfoque solo se aplica a las representaciones a escala reducida dentro del PTIFF (tiff piramidal) que se reducen a más del 50%. Esto significa que las representaciones de mayor tamaño dentro de la diferencia no se ven afectadas por la máscara de enfoque. Mientras que las representaciones de menor tamaño, como las miniaturas, se modifican (y muestran la máscara de enfoque).
 
 En **[!UICONTROL Máscara de enfoque]**, tiene las siguientes opciones de filtrado:
 
@@ -80,8 +80,8 @@ Para mantener bajo control el uso de Smart Crop y optimizar el tiempo de procesa
 Tiene dos opciones de recorte de imagen para elegir. También puede automatizar la creación de muestras de color e imagen o conservar el contenido de recorte en las resoluciones de destino.
 
 >[!IMPORTANT]
-・ Adobe recomienda revisar los cultivos y muestras generados para asegurarse de que sean adecuados y relevantes para su marca y sus valores.
-・ El formato de imagen CMYK no es compatible con el recorte inteligente.
+>
+>Adobe recomienda revisar los cultivos y muestras generados para asegurarse de que sean adecuados y relevantes para su marca y sus valores.
 
 | Opción | Cuándo se usa | Descripción |
 | --- | --- | --- |
@@ -95,12 +95,13 @@ Tiene dos opciones de recorte de imagen para elegir. También puede automatizar 
 La resolución máxima admitida del tamaño del archivo de entrada es de 16 K.
 
 >[!NOTE]
-La resolución de 16K es una resolución de pantalla con aproximadamente 16.000 píxeles horizontalmente. La resolución de 16K más comentada es 15360 × 8640, que duplica el recuento de píxeles de 8K UHD en cada dimensión, por un total de cuatro veces más píxeles. Esta resolución tiene 132,7 megapíxeles, 16 veces la resolución 4K y 64 veces la resolución 1080p.
+>
+>La resolución de 16K es una resolución de pantalla con aproximadamente 16.000 píxeles horizontalmente. La resolución de 16K más comentada es 15360 × 8640, que duplica el recuento de píxeles de 8K UHD en cada dimensión, por un total de cuatro veces más píxeles. Esta resolución tiene 132,7 megapíxeles, 16 veces la resolución 4K y 64 veces la resolución 1080p.
 
 | Formato de imagen | Extensión de archivo que no distingue entre mayúsculas y minúsculas | Tipo MIME | Espacio de color de entrada admitido | Tamaño máximo del archivo de entrada admitido | ¿Formato de imagen admitido? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Sí |
-| CMYK |  |  |  |  | No |
+| CMYK |  |  |  |  | Sí |
 | EPS |  |  |  |  | No |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Sí; el primer fotograma del GIF animado se utiliza para la representación. No se puede configurar ni cambiar el primer fotograma. |
 | JPEG | `.jpg` y `.jpeg` | image/jpeg | sRGB | 15 GB | Sí |
@@ -194,7 +195,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 **Para aplicar un perfil de imagen de Dynamic Media globalmente:**
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Vaya a `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` y aplique el perfil adecuado y seleccione **[!UICONTROL Guardar]**.
 
@@ -209,16 +210,17 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 ## Editar el recorte inteligente o la muestra inteligente de una sola imagen {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-・ Adobe recomienda revisar cualquier cultivo inteligente generado y muestras inteligentes para asegurarse de que sean adecuadas y relevantes para su marca y sus valores.
-・ El formato de imagen CMYK no es compatible con el recorte inteligente.
+>
+>Adobe recomienda revisar los cultivos inteligentes y las muestras inteligentes generados para asegurarse de que sean adecuados y relevantes para su marca y sus valores.
 
 Puede realinear manualmente o cambiar el tamaño de la ventana de recorte inteligente de una imagen para refinar aún más su punto focal.
 
 Después de editar un recorte inteligente y guardarlo, el cambio se propaga en todas partes donde utilice el recorte para imágenes específicas.
 
 >[!IMPORTANT]
-Cuando se vuelve a alinear manualmente o se cambia el tamaño de la ventana de recorte inteligente de un recurso, esa edición se mantiene y se conserva, incluso si posteriormente se decide reprocesar el recurso. Sin embargo, si edita la anchura, la altura o ambas opciones en la variable **[!UICONTROL Recorte de imagen interactivo]** del perfil de imagen, el recurso está sujeto a reprocesamiento.
-Consulte [Volver a procesar los recursos de Dynamic Media en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>
+>Cuando se vuelve a alinear manualmente o se cambia el tamaño de la ventana de recorte inteligente de un recurso, esa edición se mantiene y se conserva, incluso si posteriormente se decide reprocesar el recurso. Sin embargo, si edita la anchura, la altura o ambas opciones en la variable **[!UICONTROL Recorte de imagen interactivo]** del perfil de imagen, el recurso está sujeto a reprocesamiento.
+>Consulte [Volver a procesar los recursos de Dynamic Media en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Si es necesario, puede volver a ejecutar el recorte inteligente para volver a generar los cultivos adicionales.
 
@@ -244,16 +246,17 @@ Consulte también [Editar el recorte inteligente o la muestra inteligente de var
 ## Editar el recorte inteligente o la muestra inteligente de varias imágenes {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 >[!IMPORTANT]
-・ Adobe recomienda revisar cualquier cultivo inteligente generado y muestras inteligentes para asegurarse de que sean adecuadas y relevantes para su marca y sus valores.
-・ El formato de imagen CMYK no es compatible con el recorte inteligente.
+>
+>Adobe recomienda revisar los cultivos inteligentes y las muestras inteligentes generados para asegurarse de que sean adecuados y relevantes para su marca y sus valores.
 
 Después de aplicar un perfil de imagen (que contiene Recorte inteligente) a una carpeta, todas las imágenes de esa carpeta tienen un recorte aplicado a ellas. Si lo desea, puede *manualmente* vuelva a alinear o cambie el tamaño de la ventana de recorte inteligente en varias imágenes para restringir aún más su punto focal.
 
 Después de editar un recorte inteligente y guardarlo, el cambio se propaga en todas partes donde utilice el recorte para imágenes específicas.
 
 >[!IMPORTANT]
-Cuando se realinea o se cambia el tamaño manualmente de la ventana de recorte inteligente de varios recursos, estas ediciones se mantienen y conservan, incluso si después se decide reprocesar dichos recursos. Sin embargo, si edita la anchura, la altura o ambas opciones en el área **[!UICONTROL Recorte de imagen adaptable]** del perfil de imagen, esos recursos se someterán a reprocesamiento.
-Consulte [Volver a procesar los recursos de Dynamic Media en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>
+>Cuando se realinea o se cambia el tamaño manualmente de la ventana de recorte inteligente de varios recursos, estas ediciones se mantienen y conservan, incluso si después se decide reprocesar dichos recursos. Sin embargo, si edita la anchura, la altura o ambas opciones en el área **[!UICONTROL Recorte de imagen adaptable]** del perfil de imagen, esos recursos se someterán a reprocesamiento.
+>Consulte [Volver a procesar los recursos de Dynamic Media en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Si es necesario, puede volver a ejecutar el recorte inteligente para volver a generar los cultivos adicionales.
 

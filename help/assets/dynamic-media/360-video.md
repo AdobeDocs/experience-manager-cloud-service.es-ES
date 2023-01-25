@@ -4,9 +4,9 @@ description: Aprenda a trabajar con 360 y vídeo de realidad virtual (VR) en Dyn
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Consulte también [Administración de ajustes preestablecidos de visor](/help/as
 
 Select [Estación espacial 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del explorador y ver un vídeo de 360°. Durante la reproducción de vídeo, arrastre el puntero a una nueva ubicación para cambiar el ángulo de visualización.
 
-![360 Ejemplo de vídeo](assets/6_5_360videoiss_simplified.png)
+![Fotograma de vídeo de Space Station 360](assets/6_5_360videoiss_simplified.png)
 *Fotograma de vídeo de la estación espacial 360*
 
 ## Vídeo y Adobe Premiere Pro 360/VR {#vr-video-and-adobe-premiere-pro}
@@ -42,7 +42,7 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit
 
 360 recursos de vídeo que se cargan en [!DNL Experience Manager] se etiquetan como **Multimedia** en una página de Asset, similar al recurso de vídeo normal.
 
-![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
+![Un recurso de vídeo 360 cargado que se ve en la vista de tarjeta](assets/6_5_360video-selecttopreview.png)
 *Recurso de vídeo cargado 360 que se ve en la vista de tarjeta. El recurso está etiquetado como multimedia.*
 
 **Cargue recursos para utilizarlos con el visor de vídeos 360:**
@@ -106,25 +106,25 @@ Consulte [Adición de Dynamic Media Assets a las páginas](/help/assets/dynamic-
 
 1. En **[!UICONTROL Recursos]**, vaya a un vídeo de 360 existente que haya creado. Para abrirlo en modo de vista previa, seleccione el recurso de vídeo 360.
 
-   ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
+   ![Captura de pantalla de un recurso de vídeo cargado 360 como se ve en la vista de tarjeta del Experience Manager.](assets/6_5_360video-selecttopreview-1.png)
 
    Para previsualizar el vídeo, seleccione el recurso de vídeo de 360.
 
 1. En la página de vista previa, cerca de la esquina superior izquierda de la página, seleccione la lista desplegable y, a continuación, seleccione **[!UICONTROL Visualizadores]**.
 
-   ![6_5_360visores de vista previa de vídeo](assets/6_5_360video-preview-viewers.png)
+   ![Captura de pantalla de la selección de Visualizadores para ver la lista de visualizadores de vídeo disponibles.](assets/6_5_360video-preview-viewers.png)
 
    En la lista Visualizadores, seleccione **[!UICONTROL Video360_social]** y, a continuación, realice una de las siguientes acciones:
 
    * Para modificar el ángulo de visualización de la escena estática, arrastre el puntero por el vídeo.
    * Para comenzar la reproducción, seleccione la **[!UICONTROL Play]** botón. A medida que se reproduce el vídeo, arrastre el puntero por el vídeo para modificar su ángulo de visualización.
 
-   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de 360 videos.*
+   ![Captura de pantalla de un usuario que selecciona el visor Video360_Social para previsualizar un vídeo de 360 grados.](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de 360 videos.*
 
    * En la lista Visualizadores, seleccione **[!UICONTROL Video360VR]**.
 
       El vídeo de Realidad virtual (VR) es contenido de vídeo inmersivo al que se accede mediante auriculares de realidad virtual. Al igual que con los vídeos normales, se crean vídeos VR al principio cuando se graba o captura un vídeo con cámaras de vídeo de 360°.
-   ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
+   ![Captura de pantalla de un usuario que pasa el puntero del ratón sobre la opción Visor Video360VR.](assets/6_5_360video-preview-video360vr.png)
    *Captura de pantalla de un video de 360 VR.*
 
 1. Cerca de la parte superior derecha de la página de vista previa, seleccione **[!UICONTROL Cerrar]**.
