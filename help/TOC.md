@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a3f7a6759ca41d929e250171e52e43c21ad9450b
+source-git-commit: 592810c45c89d569644263c01b843d51761ebe8d
 workflow-type: tm+mt
-source-wordcount: '3845'
+source-wordcount: '3849'
 ht-degree: 98%
 
 ---
@@ -526,6 +526,7 @@ ht-degree: 98%
          + [Uso de CAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms.md)
          + [Usar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
          + [Aplicar firma manuscrita](/help/forms/signing-forms-using-scribble.md)
+         + [Compatibilidad con la localización de nuevos idiomas](/help/forms/supporting-new-language-localization.md)
          + [Agregar una tabla a un formulario adaptable](/help/forms/adaptive-forms-tables.md)
       + Configuración del diseño y aplicación de estilo a un formulario adaptable {#configure-layout-of-an-adaptive-form}
          + [Definición del diseño de un formulario adaptable](/help/forms/layout-capabilities-adaptive-forms.md)
