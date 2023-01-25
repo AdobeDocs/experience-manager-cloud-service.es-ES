@@ -4,10 +4,10 @@ description: Aprenda a utilizar los fragmentos de contenido y la API de GraphQL 
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 9997e0ea1d78ab2c8bab46a95a664e8537f16b13
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 1%
+source-wordcount: '725'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,6 @@ ht-degree: 1%
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="Iniciar el Explorador de GraphQL"
 >abstract="GraphQL proporciona una API basada en consultas que permite a las aplicaciones de cliente externas realizar consultas AEM solo para el contenido que necesita, mediante una sola llamada de API. Siga este módulo para aprender a ejecutar dos tipos diferentes de consultas. A continuación, aprenda a recuperar el contenido del fragmento de contenido creado en el módulo anterior.<br><br>Inicie este módulo en una nueva pestaña haciendo clic en a continuación."
->additional-url="https://video.tv.adobe.com/v/328618/?captions=spa" text="Extraer contenido: vídeo introductorio"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"

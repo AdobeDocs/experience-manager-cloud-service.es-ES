@@ -4,9 +4,9 @@ description: Utilice una aplicación React de ejemplo para aprender a personaliz
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: c811268d4882204c5a5610c9f45cd344df50b8dd
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ ht-degree: 0%
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Inicio del editor de fragmentos de contenido"
 >abstract="La prueba sin AEM se integra con una aplicación React de muestra, por lo que puede ver lo fácil que es para cualquiera administrar el contenido de forma independiente sin tiempo de desarrollo.<br><br>Inicie este módulo en una nueva pestaña haciendo clic en a continuación y siga esta guía."
->additional-url="https://video.tv.adobe.com/v/328618/?captions=spa" text="Vídeo introductorio de la aplicación"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
