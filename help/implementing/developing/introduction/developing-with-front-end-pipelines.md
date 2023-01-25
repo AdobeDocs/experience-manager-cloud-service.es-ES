@@ -2,7 +2,7 @@
 title: Desarrollo de Sites con la canalización front-end
 description: Con la canalización de front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar una velocidad sustancial. En este documento se describen algunas consideraciones particulares del proceso de compilación del front-end que deben darse.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
+source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 1%
@@ -28,7 +28,7 @@ El contenido de la variable `dist` carpeta es lo que se implementa finalmente en
 
 ### Versiones de nodo {#node-versions}
 
-De forma predeterminada, la canalización de front-end utiliza el nodo 14, pero también están disponibles las opciones 16 y 16.
+De forma predeterminada, la canalización de front-end utiliza el nodo 14, pero también están disponibles los nodos 12 y 16.
 
 Puede usar la variable `CM_CUSTOM_VAR_NODE_VERSION` para establecer la versión deseada.
 
