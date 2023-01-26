@@ -2,12 +2,13 @@
 title: Cambios importantes en AEM Sites en AEM Cloud Service
 description: Cambios importantes en AEM Sites en AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 7becee73a64fbfd2b4f89c307f63868461b0e853
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 100%
+source-wordcount: '534'
+ht-degree: 85%
 
 ---
+
 
 # Cambios importantes en AEM Sites as a Cloud Service {#notable-changes}
 
@@ -45,9 +46,9 @@ El iniciador de estas acciones puede comprobar su estado en una nueva interfaz d
 
 ## Nuevo sitio de referencia y tutorial {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), un nuevo sitio de referencia de AEM, se ha actualizado y publicado para reflejar las prácticas recomendadas para generar un sitio web con AEM, así como el conjunto completo de funciones, componentes y modelos de implementación disponibles en AEM. El nuevo sitio de referencia y el [tutorial complementario](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) cubren temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes con Adobe Experience Manager Sites.
+[WKND](https://wknd.site/), se ha actualizado y publicado un nuevo sitio de referencia de AEM para reflejar las prácticas recomendadas de creación de un sitio web con AEM y con el conjunto completo de funciones, componentes y modelos de implementación disponibles en AEM. El nuevo sitio de referencia y [tutorial complementario](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) cubre temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes con Adobe Experience Manager Sites.
 
-Anteriormente, We.Retail se instalaba de forma predeterminada con AEM (excepto cuando se iniciaba en el modo de producción).  A partir de ahora, no se instalará ningún sitio de referencia de forma predeterminada.  En su lugar, se proporcionan el [repositorio de Git](https://github.com/adobe/aem-guides-wknd/) y el [tutorial complementario](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) con el código de sitio de referencia WKND actualizado.
+Anteriormente, We.Retail se instalaba de forma predeterminada con AEM (excepto cuando se iniciaba en el modo de producción). En AEM as a Cloud Service, un sitio de referencia no está instalado de forma predeterminada. En su lugar, se proporcionan el [repositorio de Git](https://github.com/adobe/aem-guides-wknd/) y el [tutorial complementario](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) con el código de sitio de referencia WKND actualizado.
 
 ## Funciones no disponibles durante la ejecución {#capabilities-not-available-at-runtime}
 

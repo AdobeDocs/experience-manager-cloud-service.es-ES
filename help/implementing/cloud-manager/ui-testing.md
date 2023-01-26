@@ -2,10 +2,10 @@
 title: Pruebas de IU
 description: La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones personalizadas
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
+source-git-commit: 00cbf0b9fa50ab3f42a0a3917caf40708c7209b9
 workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ A diferencia de las pruebas funcionales personalizadas, que son pruebas HTTP esc
 
 ### Inclusión del cliente {#customer-opt-in}
 
-Para que Cloud Manager pueda crear y ejecutar sus pruebas de interfaz de usuario, debe incluirse en esta característica al agregar un archivo al repositorio.
+Para que Cloud Manager cree y ejecute sus pruebas de IU, debe incluirse en esta función añadiendo un archivo al repositorio.
 
 * El nombre del archivo debe ser `testing.properties`.
 * El contenido del archivo debe ser `ui-tests.version=1`.
@@ -195,11 +195,11 @@ La imagen Docker debe generar informes de prueba en formato XML JUnit y guardarl
 
 Si la imagen Docker está implementada con otros lenguajes de programación o ejecutores de prueba, compruebe la documentación de las herramientas seleccionadas para generar informes XML de JUnit.
 
-### Captación de capturas de pantalla y vídeos {#capture-screenshots}
+### Captura de pantallas y vídeos {#capture-screenshots}
 
-La imagen del Docker puede generar resultados de prueba adicionales (por ejemplo, capturas de pantalla, vídeos) y guardarlos en la ruta especificada por la variable de entorno `REPORTS_PATH`. Cualquier archivo que se encuentre debajo de la variable `REPORTS_PATH` se incluyen en el archivo de resultados de la prueba.
+La imagen del Docker puede generar resultados de prueba adicionales (por ejemplo, capturas de pantalla o vídeos) y guardarlos en la ruta especificada por la variable de entorno `REPORTS_PATH`. Cualquier archivo que se encuentre debajo de `REPORTS_PATH` se incluirá en el archivo de resultados de la prueba.
 
-Si se ha creado un archivo de resultados de prueba durante una ejecución de prueba de interfaz de usuario, el archivo de registro de prueba contiene al final una referencia a la ubicación del archivo de resultados de la prueba.
+Si un archivo de resultados de prueba se crea durante la ejecución de prueba de la IU, el archivo de registro de prueba contiene al final una referencia a la ubicación del archivo de resultados de la prueba.
 
 ```
 [...]
