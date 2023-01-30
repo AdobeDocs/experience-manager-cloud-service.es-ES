@@ -1,9 +1,10 @@
 ---
 title: Configuración del Cloud Service de Dynamic Media
 description: Obtenga información sobre cómo configurar Dynamic Media en Adobe Experience Manager as a Cloud Service.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 8066d24193822a79d88f564a2db26b3acbb4e918
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3795'
 ht-degree: 3%
@@ -316,7 +317,7 @@ Consulte [Cargar recursos](/help/assets/add-assets.md).
 
    * Pulsar dos veces **[!UICONTROL jobParam]** para abrir el campo de texto asociado. Consulte [Tipos MIME admitidos](/help/assets/file-format-support.md) para obtener una lista de los valores de parámetro de procesamiento permitidos que puede utilizar para un tipo MIME determinado.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
    * Repita los pasos del 3 al 4 para editar más tipos MIME.
    * En la barra de menús de la página CRXDE Lite, seleccione **[!UICONTROL Guardar todo]**.
 
@@ -475,7 +476,7 @@ La configuración de conexión de carga de Dynamic Media Classic (Scene7) sincro
 
 **Para actualizar las conexiones de carga máximas al servidor de Dynamic Media Classic (Scene7):**
 
-1. Vaya a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Navegue hasta `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el **[!UICONTROL Número de conexiones]** o **[!UICONTROL Tiempo de espera de trabajo activo]** o ambos, cambie el número como desee.
 
    La variable **[!UICONTROL Número de conexiones]** controla el número máximo de conexiones HTTP permitidas para que el Experience Manager cargue Dynamic Media. Normalmente, el valor predefinido de diez conexiones es suficiente.

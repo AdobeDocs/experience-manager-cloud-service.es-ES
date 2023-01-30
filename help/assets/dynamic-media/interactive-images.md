@@ -1,10 +1,11 @@
 ---
 title: Imágenes interactivas
 description: Aprenda a trabajar con imágenes interactivas en Dynamic Media.
+contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4176'
 ht-degree: 2%
@@ -64,7 +65,7 @@ Si utiliza un WCM de terceros (Web Content Manager), integre el nuevo vídeo int
 >* Desea agregar interactividad a la imagen activando las vistas rápidas.
 >* La implementación de Experience Manager hace lo siguiente *not* utilice un marco de integración de eCommerce para extraer datos de productos a Experience Manager desde cualquier solución de eCommerce. Estas soluciones incluyen IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop.
 >
->Si su implementación de Experience Manager utiliza eCommerce, puede omitir esta tarea y continuar con la siguiente tarea.
+Si su implementación de Experience Manager utiliza eCommerce, puede omitir esta tarea y continuar con la siguiente tarea.
 
 Comience por identificar las variables dinámicas que usa la implementación de vista rápida existente, de modo que pueda introducir datos de zona interactiva para crear la imagen interactiva.
 
@@ -186,7 +187,7 @@ Después de guardar el ajuste preestablecido de visualizador, se activa automát
 1. En el menú desplegable Tipo de medio enriquecido, seleccione **[!UICONTROL Imagen interactiva]**.
 1. Seleccione **[!UICONTROL Crear]**.
 1. En la página Editar ajuste preestablecido de visualizador , pulse el botón **[!UICONTROL Aspecto]** pestaña .
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Para cargar su propia imagen de zona interactiva que desee utilizar en imágenes, pulse el icono Selector de recursos . En la página Seleccionar contenido , vaya a la imagen de zona interactiva que desee utilizar y selecciónela. Seleccione el icono Marca de verificación en la esquina superior derecha.
    * Para seleccionar una imagen de zona interactiva predefinida, pulse el icono Galería de puntos interactivos . En la paleta Galería de puntos interactivos, pulse la imagen de zona interactiva que desee utilizar.
@@ -220,8 +221,7 @@ Cuando agregue zonas interactivas, puede definirlas como una visualización emer
 Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->Las herramientas de uso compartido de medios sociales en Imagen interactiva no son compatibles cuando se incrusta el visor en un fragmento de experiencia. En su lugar, utilice o cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencias.
+Las herramientas de uso compartido de medios sociales en Imagen interactiva no son compatibles cuando se incrusta el visor en un fragmento de experiencia. En su lugar, utilice o cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencias.
 
 Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la página, son compatibles durante la sesión de creación/edición actual.
 
@@ -230,8 +230,7 @@ Cuando termine de crear la imagen interactiva, puede utilizar Vista previa para 
 Consulte [(Opcional) Previsualizar imágenes interactivas](#optional-previewing-interactive-images).
 
 >[!NOTE]
->
->Cuando se añaden zonas interactivas a una imagen en una imagen interactiva o un titular de carrusel, la información del punto interactivo se almacena en la misma ubicación de metadatos. Esta ubicación es relativa a la ubicación de la imagen, independientemente de si es una imagen interactiva o un titular de carrusel. Esta funcionalidad significa que puede reutilizar fácilmente la misma imagen (junto con sus datos de puntos interactivos definidos) en cualquier visor.
+Cuando se añaden zonas interactivas a una imagen en una imagen interactiva o un titular de carrusel, la información del punto interactivo se almacena en la misma ubicación de metadatos. Esta ubicación es relativa a la ubicación de la imagen, independientemente de si es una imagen interactiva o un titular de carrusel. Esta funcionalidad significa que puede reutilizar fácilmente la misma imagen (junto con sus datos de puntos interactivos definidos) en cualquier visor.
 No obstante, tenga en cuenta que los carrusel Banners admiten mapas de imágenes en imágenes que también pueden contener zonas interactivas; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o un titular de carrusel que utilice la misma imagen. En su lugar, puede crear imágenes interactivas y titulares de carrusel utilizando copias independientes de la misma imagen.
 Consulte también [Banner de carrusel](/help/assets/dynamic-media/carousel-banners.md).
 
@@ -241,7 +240,7 @@ Si edita imágenes interactivas con zonas interactivas y recorta la imagen, se e
 **Para agregar zonas interactivas a un titular de imagen:**
 
 1. En la vista Recursos, desplácese hasta el banner de imagen que desee convertir en interactivo.
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Pase el ratón sobre la imagen y, a continuación, toque **[!UICONTROL Select]** (icono de marca de verificación). En la barra de herramientas, pulse **[!UICONTROL Editar]**.
 
@@ -258,7 +257,7 @@ Si edita imágenes interactivas con zonas interactivas y recorta la imagen, se e
    1. (Opcional) Para eliminar una zona interactiva, selecciónela en la imagen y pulse **[!UICONTROL Eliminar]** (icono de papelera) en la sección **[!UICONTROL Puntos interactivos]** encabezado.
 
 1. En el campo de texto Nombre , escriba el nombre de la zona interactiva. Este nombre también aparece en la lista desplegable Zona interactiva seleccionada .
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Select **[!UICONTROL Vista rápida]**.
 

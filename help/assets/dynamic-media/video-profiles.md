@@ -1,10 +1,11 @@
 ---
 title: Perfiles de vídeo de Dynamic Media
 description: Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil listos para usar están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. También puede agregar un recorte inteligente a los vídeos.
+contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3656'
 ht-degree: 7%
@@ -161,7 +162,7 @@ Seleccione el icono de información situado junto a cada opción para obtener m�
 1. En el encabezado Tamaño del vídeo, asegúrese de que **[!UICONTROL Mantener relación de aspecto]** está activada.
 1. Establezca la resolución del tamaño del fotograma de vídeo en píxeles. Utilice la variable **[!UICONTROL Automático]** para escalar automáticamente para que coincida con la proporción de aspecto del origen (relación ancho-alto). Por ejemplo, Automático x 480 o 640 x Automático.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * En el **[!UICONTROL Anchura]** , introduzca **[!UICONTROL auto]**. En el **[!UICONTROL Altura]** , introduzca un valor en píxeles.
 
@@ -169,7 +170,7 @@ Seleccione el icono de información situado junto a cada opción para obtener m�
 
 1. (Opcional) Seleccione el **[!UICONTROL Avanzadas]** y asegúrese de que **[!UICONTROL Usar valores predeterminados]** está activada (recomendado). También puede modificar la configuración avanzada de vídeo y audio.
 1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** para guardar el ajuste preestablecido.
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
    * Repita los pasos 4-10 para crear más ajustes preestablecidos de codificación. (El flujo de vídeo adaptable requiere más de un ajuste preestablecido de vídeo).
    * Continúe con el paso siguiente.
 
@@ -178,7 +179,7 @@ Seleccione el icono de información situado junto a cada opción para obtener m�
    * En el campo Nombre , escriba un nombre para la proporción de recorte que le ayudará a identificarla fácilmente.
    * En el **[!UICONTROL Proporción de recorte]** en la lista desplegable, seleccione la proporción que desee utilizar.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Siga agregando nuevas relaciones de recorte según sea necesario.
    * Continúe con el paso siguiente.
@@ -220,7 +221,7 @@ Para ayudarle a visualizar el tamaño del vídeo, seleccione el icono de informa
 Seleccione el icono de información situado junto a cada opción para obtener más descripciones o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
 
 1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** para guardar el ajuste preestablecido.
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Repita los pasos 4-9 para crear más ajustes preestablecidos de codificación.
    * Continúe con el paso siguiente.
@@ -231,7 +232,7 @@ Seleccione el icono de información situado junto a cada opción para obtener m�
    * En el campo Nombre, escriba un nombre para la proporción de recorte que le ayudará a identificarla fácilmente.
    * En el **[!UICONTROL Proporción de recorte]** en la lista desplegable, seleccione la proporción que desee utilizar.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Siga agregando nuevas relaciones de recorte según sea necesario.
    * Continúe con el paso siguiente.
@@ -261,7 +262,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
    <td><strong>Nombre</strong></td>
    <td><strong>Descripción</strong><br /> </td>
    <td><strong>Tipo</strong><br /> </td>
-   <td><strong>Value</strong></td>
+   <td><strong>Valor</strong></td>
   </tr>
   <tr>
    <td><code>h264Level</code></td>
@@ -299,7 +300,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
 1. Cerca de la esquina inferior derecha de la página, seleccione **[!UICONTROL Agregar]**.
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Repita los pasos 3 y 4 para agregar otro parámetro al perfil de codificación de vídeo.
    * Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Guardar todo]**.

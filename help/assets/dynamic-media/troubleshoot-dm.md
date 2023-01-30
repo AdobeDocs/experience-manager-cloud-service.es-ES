@@ -1,9 +1,10 @@
 ---
 title: Resolución de problemas de Dynamic Media
 description: Sugerencias de solución de problemas al usar Dynamic Media.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 1%
@@ -52,7 +53,7 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes di
 <table>
  <tbody>
   <tr>
-   <td><strong>Problema  </strong></td>
+   <td><strong>Problema</strong></td>
    <td><strong>Cómo depurar</strong></td>
    <td><strong>Solución</strong></td>
   </tr>
@@ -107,7 +108,7 @@ Si tiene problemas con el vídeo, consulte las siguientes directrices para la re
 <table>
  <tbody>
   <tr>
-   <td><strong>Problema  </strong></td>
+   <td><strong>Problema</strong></td>
    <td><strong>Cómo depurar</strong></td>
    <td><strong>Solución</strong></td>
   </tr>

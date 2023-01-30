@@ -1,13 +1,14 @@
 ---
 title: Administrar ajustes preestablecidos de imagen
 description: Obtenga información sobre los ajustes preestablecidos de imagen y cómo crearlos, modificarlos y administrarlos.
+contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3629'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -287,7 +288,7 @@ Cuando crea o edita ajustes preestablecidos de imagen, tiene las opciones descri
     <ul>
      <li>Select <strong>Ninguna</strong> si desea desactivar el enfoque.</li>
      <li>Select <strong>Enfoque </strong>para aplicar un filtro de enfoque básico a la imagen después de que se haya realizado todo el escalado. El enfoque puede ayudar a compensar el desenfoque que puede producirse al mostrar una imagen con un tamaño diferente. </li>
-     <li>Select<strong> Máscara de enfoque</strong> si desea ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora. Este efecto utiliza las mismas opciones que el filtro “Máscara de enfoque” de Photoshop.</li>
+     <li>Select<strong> Máscara de enfoque</strong> si desea ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora. Este efecto utiliza las mismas opciones que el filtro "Máscara de enfoque" de Photoshop.</li>
     </ul> <p>En <strong>Máscara de enfoque</strong>, tiene las siguientes opciones:</p>
     <ul>
      <li><strong>Importe</strong> - Controla la cantidad de contraste aplicada a los píxeles de borde. El valor de número real predeterminado es 1,0. Para imágenes de alta resolución, puede aumentarlo hasta 5,0. Piense en Cantidad como una medida de la intensidad del filtro.</li>

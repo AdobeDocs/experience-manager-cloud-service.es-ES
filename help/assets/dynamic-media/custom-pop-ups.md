@@ -1,10 +1,11 @@
 ---
 title: Creación de ventanas emergentes personalizadas con Quickview
-description: '"Aprenda cómo se utiliza la vista rápida predeterminada en las experiencias de comercio electrónico, mediante la cual se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en la ventana emergente".'
+description: Obtenga información sobre cómo se utiliza la vista rápida predeterminada en las experiencias de comercio electrónico, a través de la cual se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur contenido personalizado para mostrarlo en la ventana emergente.
+contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 2%

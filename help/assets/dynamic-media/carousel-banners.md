@@ -1,10 +1,11 @@
 ---
 title: Banner de carrusel
 description: Aprenda a trabajar con los titulares de carrusel en Dynamic Media.
+contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4535'
 ht-degree: 1%
@@ -82,7 +83,7 @@ Para ponerle en marcha rápidamente:
 
    Puede publicar un conjunto de carrusel como lo haría con cualquier recurso. En Assets, vaya al conjunto de carrusel, selecciónelo y seleccione **[!UICONTROL Publicación]**. Al publicar un conjunto de carrusel, se activa la dirección URL y la cadena Incrustar.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * [Agregue un banner de carrusel a la página de su sitio web](#adding-a-carousel-banner-to-your-website-page)Puede añadir la URL del banner de carrusel o incrustar el código que ha copiado en la página del sitio web.
 

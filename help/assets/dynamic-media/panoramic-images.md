@@ -1,10 +1,11 @@
 ---
 title: Imágenes panorámicas
 description: Aprenda a trabajar con imágenes panorámicas en Dynamic Media.
+contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 2%
@@ -17,7 +18,7 @@ En esta sección se describe cómo trabajar con el visor de imágenes panorámic
 
 Consulte también [Administrar ajustes preestablecidos de visor](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![imagen panorámica2](assets/panoramic-image2.png)
+![panoramic-image2](assets/panoramic-image2.png)
 
 ## Cargar recursos para utilizarlos con el visor de imágenes panorámicas {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 

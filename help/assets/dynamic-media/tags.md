@@ -1,10 +1,11 @@
 ---
 title: Integración de visualizadores de Dynamic Media con etiquetas de Analytics y Adobe Experience Platform
 description: Obtenga información sobre la extensión Visualizadores de Dynamic Media para etiquetas de Experience Platform y visores de Dynamic Media 5.13. Permite a los clientes de Adobe Analytics y Etiquetas de plataforma utilizar eventos y datos específicos para los visualizadores de Dynamic Media en la configuración de Etiquetas de Experience Platform.
+contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 3060b6b411c3ce2f0b70e08628bccfece3e1fd49
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '6679'
 ht-degree: 7%

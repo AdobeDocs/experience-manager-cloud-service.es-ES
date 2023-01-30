@@ -1,10 +1,11 @@
 ---
 title: Administrar ajustes preestablecidos de visor
 description: Aprenda a crear y administrar ajustes preestablecidos de visor en Dynamic Media.
+contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 1b9864c4532d15068b6edbd187a78a0ee0fdcfb4
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4194'
 ht-degree: 9%
@@ -63,13 +64,13 @@ Consulte [Biblioteca de imágenes estáticas interactivas](https://experiencelea
 
 Todos los ajustes preestablecidos de visor integrados que se incluyen con Dynamic Media son totalmente compatibles con los siguientes sistemas:
 
-* Computadoras de escritorio
+* Equipos de escritorio
 * Apple iPhone
 * Apple iPad
 * Smartphone Android™
 * Tableta Android™
 
-<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### Tipos de medios enriquecidos para ajustes preestablecidos de visor {#rich-media-types-for-viewer-presets}
 
@@ -415,7 +416,7 @@ Consulte [Consideraciones especiales para la creación de un ajuste preestableci
    Consulte [Tipos de medios enriquecidos para ajustes preestablecidos de visor](#rich-media-types-for-viewer-presets).
 
 1. En la página Editor de ajustes preestablecidos de visualizador , seleccione la opción **[!UICONTROL Aspecto]** pestaña .
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * En el **[!UICONTROL Tipo seleccionado]** menú desplegable, seleccione un componente cuyo diseño visual desee personalizar. Como alternativa, puede seleccionar cualquier elemento visual en el visor para seleccionarlo para su configuración.
 
@@ -577,7 +578,7 @@ Puede eliminar los ajustes preestablecidos de visor que haya creado y agregado a
 
 1. En la esquina superior izquierda del Experience Manager, seleccione el logotipo del Experience Manager y, a continuación, en el carril izquierdo, seleccione **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visor]**.
 1. En la página Ajustes preestablecidos de visor , marque un Título preestablecido y, a continuación, seleccione la opción **[!UICONTROL Papelera]** icono.
-1. Select **[!UICONTROL Eliminar]**.
+1. Seleccione **[!UICONTROL Eliminar]**.
 
 ## Aplicación de ajustes preestablecidos de visor a un recurso {#applying-a-viewer-preset-to-an-asset}
 
