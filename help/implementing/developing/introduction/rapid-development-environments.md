@@ -2,10 +2,10 @@
 title: Entornos de desarrollo rápido
 description: Aprenda a aprovechar los entornos de desarrollo rápido para iteraciones de desarrollo rápidas en un entorno de nube.
 hidefromtoc: true
-source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
+source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 6%
+source-wordcount: '2396'
+ht-degree: 7%
 
 ---
 
@@ -72,6 +72,11 @@ Para obtener más información sobre el uso de Cloud Manager para crear entornos
 
 Una vez añadido un RDE para el programa mediante Cloud Manager, puede interactuar con él configurando las herramientas de línea de comandos como se describe en los pasos siguientes:
 
+>[!IMPORTANT]
+>
+>Asegúrese de que tiene la última versión de [Nodo y NPM instalados](https://nodejs.org/es/download/) para que la CLI de Adobe I/O y los complementos relacionados funcionen correctamente.
+
+
 1. Instale las herramientas CLI de Adobe I/O según el procedimiento [here](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. Instale el complemento del administrador de nube de herramientas de CLI de Adobe I/O y configúrelas como se describe [here](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 1. Instale las herramientas CLI de Adobe I/O AEM complemento RDE ejecutando estos comandos:
@@ -120,6 +125,16 @@ Una vez añadido un RDE para el programa mediante Cloud Manager, puede interactu
    Como alternativa, puede confirmar que tiene esta función de desarrollador si puede iniciar sesión en la consola de desarrollador ejecutando este comando:
 
    `aio cloudmanager:environment:open-developer-console`
+
+>[!TIP]
+>
+>   Si ve la variable `Warning: cloudmanager:list-programs is not a aio command.` error, debe instalar el [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) ejecutando el siguiente comando:
+>
+>   
+```
+>   aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+>   ```
+
 
 ## Uso de RDE al desarrollar una nueva función {#using-rde-while-developing-a-new-feature}
 
