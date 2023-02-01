@@ -2,9 +2,9 @@
 title: Entornos de desarrollo rápido
 description: Aprenda a aprovechar los entornos de desarrollo rápido para iteraciones de desarrollo rápidas en un entorno de nube.
 hidefromtoc: true
-source-git-commit: 966644ae0027264f25a3aaf3b2f777fb3e97c556
+source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2476'
 ht-degree: 6%
 
 ---
@@ -202,6 +202,8 @@ La respuesta para una implementación correcta es similar a la siguiente:
 Opcionalmente, puede hacer referencia a un repositorio remoto:
 
 `aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+
+De forma predeterminada, los artefactos se implementan en los niveles de creación y publicación, pero el indicador &quot;-s&quot; se puede utilizar para dirigirse a un nivel específico.
 
 <u>Implementación de una configuración OSGI</u>
 
@@ -415,9 +417,10 @@ Aunque el RDE es en muchos aspectos similar a un entorno de desarrollo de nube, 
 
 Por estos motivos, se recomienda que, después de validar el código en un entorno RDE, implemente el código en un entorno de desarrollo de nube mediante la canalización que no sea de producción. Finalmente, pruebe el código antes de implementarlo con la canalización de producción.
 
-Tenga en cuenta también las siguientes consideraciones específicas de la solución:
+Tenga en cuenta también las siguientes consideraciones:
 
 * Actualmente, los RDE no admiten la visualización y depuración del código front-end implementado mediante la canalización front-end de Cloud Manager.
+* Actualmente, los RDE no admiten el canal de prelanzamiento.
 
 
 ## ¿Cuántos RDE necesito? {#how-many-rds-do-i-need}
