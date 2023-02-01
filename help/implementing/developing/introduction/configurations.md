@@ -2,7 +2,7 @@
 title: Configuraciones y el explorador de configuración
 description: Comprenda AEM configuraciones y cómo administran la configuración del espacio de trabajo en AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 8f94d7ee3cfe436b5d41f2428b901ee1a5002993
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 6%
@@ -145,7 +145,7 @@ Ahora veamos el contenido JCR correspondiente:
       - cq:conf = "/conf/wknd"
     + image.png [dam:Asset]
 
-/conf/wkns
+/conf/wknd
     + settings
       + dam
         + imageserver [cq:Page]
