@@ -2,9 +2,9 @@
 title: Copia de seguridad y restauración en AEM as a Cloud Service
 description: Copia de seguridad y restauración en AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 12e747ff73e9416775a3f26040ac7e15c21505ec
+source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '515'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ AEM admite as a Cloud Service:
 
 En todos los casos, la versión del código personalizado se tomará de la última implementación correcta antes del punto de restauración.
 
-El objetivo de tiempo de recuperación (RTO) puede variar, pero como guía general, la secuencia de recuperación tarda entre 60 y 90 minutos en promedio según varios factores, como el tamaño del repositorio.
+El objetivo de tiempo de recuperación (RTO) puede variar, pero como guía general, la secuencia de recuperación tarda entre 60 y 90 minutos en promedio según varios factores, como el tamaño del repositorio. Los entornos de vista previa y los editores de varias regiones pueden ampliar el objetivo de tiempo de restauración.
 
 Después de una restauración, la versión AEM se actualizará a la más reciente.
 
