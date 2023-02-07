@@ -2,9 +2,9 @@
 title: Editar programas
 description: Obtenga información sobre cómo editar los programas de producción y de zonas protegidas para ajustar sus opciones después de crearlas.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 2638843c5646d3190327ae1dbd5348a9c207d674
+source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '517'
 ht-degree: 87%
 
 ---
@@ -18,9 +18,11 @@ Los usuarios con los permisos necesarios pueden editar [programas de producción
 * Agregar un segundo derecho de solución no utilizado a un programa existente o como nuevo programa.
 * Eliminar programas de zona protegida.
 
->[!NOTE]
->
->Debe ser miembro del rol de **Propietario del negocio** para editar programas o eliminar programas de zona protegida.
+## Permisos {#permissions}
+
+Debe ser miembro del rol de **Propietario del negocio** para editar programas o eliminar programas de zona protegida.
+
+## Edición de un programa {#editing}
 
 Siga estos pasos para editar un programa.
 
