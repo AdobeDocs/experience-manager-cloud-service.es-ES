@@ -2,9 +2,9 @@
 title: Trabajar con fragmentos de contenido (Recursos - Fragmentos de contenido)
 description: Descubra cómo los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas, lo que resulta ideal para la creación de páginas y la entrega sin encabezado.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 4478cee8f9a20e0b70bfe2fa8767e3262188cb33
 workflow-type: tm+mt
-source-wordcount: '2075'
+source-wordcount: '2071'
 ht-degree: 93%
 
 ---
@@ -61,7 +61,7 @@ Esta y las siguientes páginas tratan sobre las tareas para crear, configurar, m
 El número de canales de comunicación aumenta de forma anual. Normalmente, los canales hacen referencia al mecanismo de entrega, ya sea como los siguientes:
 
 * Canal físico; por ejemplo, escritorio o móvil.
-* Forma de entrega en un canal físico; por ejemplo, la &quot;página de detalles del producto&quot;, la &quot;página de categoría del producto&quot; para escritorio o la &quot;web móvil&quot;, la &quot;aplicación móvil&quot; para móvil.
+* Forma de entrega en un canal físico; por ejemplo, la “página de detalles del producto”, la “página de categoría del producto” para escritorio o la “web móvil” o la “aplicación móvil” para móvil.
 
 Sin embargo, probablemente no desea utilizar exactamente el mismo contenido para todos los canales y necesita optimizar su contenido según el canal específico.
 
@@ -79,7 +79,7 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en u
 >[!NOTE]
 >
 >Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** son funciones distintas de AEM:
->* Los **Fragmentos de contenido** son contenidos de editorial que pueden utilizarse para acceder a datos estructurados, incluidos textos, números y fechas, entre otros. Son contenidos puros, con definición y estructura, pero sin diseño visual o adicional.
+>* **Fragmentos de contenido** son contenido editorial, con definición y estructura, pero sin diseño visual y/o diseño adicional. Se pueden utilizar para acceder a datos estructurados, como textos, números y fechas, entre otros.
 >* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.

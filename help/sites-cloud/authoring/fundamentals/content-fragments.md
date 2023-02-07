@@ -2,10 +2,10 @@
 title: Fragmentos de contenido
 description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
-source-wordcount: '1166'
-ht-degree: 100%
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 97%
 
 ---
 
@@ -20,11 +20,12 @@ Junto con el exportador JSON actualizado, los fragmentos de contenido estructura
 >[!NOTE]
 >
 >Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** son funciones distintas de AEM:
+>* **Fragmentos de contenido** son contenido editorial, con definición y estructura, pero sin diseño visual y/o diseño adicional. Se pueden utilizar para acceder a datos estructurados, como textos, números y fechas, entre otros.
+>* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
 >
->* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
->* Los **fragmentos de experiencias** son contenido plenamente diseñado y partes de una página web.
+>Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 >
->Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
+>Para obtener más información, consulte también [Explicación de los fragmentos de contenido y de experiencias en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments?lang=es).
 
 >[!CAUTION]
 >

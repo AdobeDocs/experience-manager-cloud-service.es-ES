@@ -2,10 +2,10 @@
 title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencia Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
-workflow-type: ht
-source-wordcount: '1971'
-ht-degree: 100%
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+workflow-type: tm+mt
+source-wordcount: '2064'
+ht-degree: 98%
 
 ---
 
@@ -38,6 +38,16 @@ Sin fragmentos de experiencias, el creador tendría que copiar y pegar ese fragm
 Los fragmentos de experiencias eliminan la necesidad de copiar y pegar.
 * Para admitir el caso práctico de CMS descentralizado.
 Los autores quieren utilizar AEM solo para la creación, pero no para la entrega al cliente. Un punto de contacto o sistema de terceros consumiría esa experiencia y luego la entregaría al usuario final.
+
+>[!NOTE]
+>
+>Los **[fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** y los **fragmentos de experiencias** son funciones distintas de AEM:
+>* **Fragmentos de contenido** son contenido editorial, con definición y estructura, pero sin diseño visual y/o diseño adicional. Se pueden utilizar para acceder a datos estructurados, como textos, números y fechas, entre otros.
+>* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
+>
+>Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
+>
+>Para obtener más información, consulte también [Explicación de los fragmentos de contenido y de experiencias en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments?lang=es).
 
 >[!NOTE]
 >
@@ -346,11 +356,11 @@ Para personalizar el fragmento, haga lo siguiente:
    >La **Ruta de ContextHub** seleccionada en la pestaña **Personalización** debe ser la siguiente:
    >
    >* la misma ruta que la configurada para la página en la que se renderizará el fragmento
-   >O bien:
+      >O bien:
    >* una ruta que contiene un subconjunto de los almacenes definidos en ContextHub configurados para la página
+
    >
    > 
-
 La **Ruta de segmentos** seleccionados en la pestaña **Personalización** debe ser la siguiente:
 
    * la misma ruta que la configurada para la página en la que se renderizará el fragmento
@@ -382,8 +392,8 @@ Los detalles se muestran en todas las vistas de la consola de **Fragmentos de ex
    Las propiedades están disponibles en varias pestañas:
 
    >[!CAUTION]
-   >Estas pestañas se muestran al abrir **Propiedades** desde la consola fragmentos de experiencias.
-   >Si se selecciona **Abrir propiedades** al editar un fragmento de experiencia, se muestran las [propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) correspondientes.
+   Estas pestañas se muestran al abrir **Propiedades** desde la consola fragmentos de experiencias.
+   Si se selecciona **Abrir propiedades** al editar un fragmento de experiencia, se muestran las [propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) correspondientes.
 
    ![Propiedades del fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -412,7 +422,7 @@ Los detalles se muestran en todas las vistas de la consola de **Fragmentos de ex
 Uso del selector de `.plain.` en la URL; puede acceder a la representación HTML sin formato desde el explorador.
 
 >[!NOTE]
->Aunque esta opción está disponible directamente desde el explorador, [el objetivo principal es permitir a otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) acceder al contenido del fragmento de experiencia directamente, únicamente mediante la URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Aunque esta opción está disponible directamente desde el explorador, [el objetivo principal es permitir a otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) acceder al contenido del fragmento de experiencia directamente, únicamente mediante la URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publicación de fragmentos de experiencias {#publishing-experience-fragments}
 
