@@ -2,9 +2,9 @@
 title: Gestión de repositorios de contenido grandes
 description: Esta sección describe la administración de repositorios de contenido de gran tamaño
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
+source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1749'
 ht-degree: 3%
 
 ---
@@ -32,10 +32,13 @@ Siga la sección siguiente para comprender las consideraciones importantes antes
 
 * Cada conjunto de migración copiará todo el almacén de datos, por lo que solo se debe utilizar un conjunto de migración único.
 
-* Necesitará acceso para instalar [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) en la instancia (o VM) que ejecuta la instancia de AEM de origen.
+* Necesitará acceso para instalar [AzCopy](https://docs.microsoft.com/es-es/azure/storage/common/storage-use-azcopy-v10) en la instancia (o VM) que ejecuta la instancia de AEM de origen.
 
 * La colección de residuos del almacén de datos se ha ejecutado en los últimos 7 días en el origen. Para obtener más información, consulte [Colección de residuos del almacén de datos](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
 
+### Consideraciones adicionales al usar AzCopy
+
+Actualmente, la precopia con AzCopy no es compatible con Windows durante la extracción de CTT.
 
 ### Consideraciones adicionales si la instancia de AEM de origen está configurada para usar un almacén de datos de almacenamiento de Amazon S3 o Azure Blob {#additional-considerations-amazons3-azure}
 
@@ -84,9 +87,9 @@ Puede utilizar la ficha Métricas del contenedor para determinar el tamaño de t
 
 ### 1. Instale AzCopy {#install-azcopy}
 
-[AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) es una herramienta de línea de comandos proporcionada por Microsoft que debe estar disponible en la instancia de origen para habilitar esta función.
+[AzCopy](https://docs.microsoft.com/es-es/azure/storage/common/storage-use-azcopy-v10) es una herramienta de línea de comandos proporcionada por Microsoft que debe estar disponible en la instancia de origen para habilitar esta función.
 
-En resumen, lo más probable es que desee descargar el binario Linux x86-64 del [Página documentos de AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) y envíelo a una ubicación como /usr/bin.
+En resumen, lo más probable es que desee descargar el binario Linux x86-64 del [Página documentos de AzCopy](https://docs.microsoft.com/es-es/azure/storage/common/storage-use-azcopy-v10) y envíelo a una ubicación como /usr/bin.
 
 >[!IMPORTANT]
 >Anote dónde colocó el binario, ya que necesitará la ruta completa para acceder a él en un paso posterior.
