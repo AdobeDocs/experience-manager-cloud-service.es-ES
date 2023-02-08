@@ -3,9 +3,9 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 24dda46f8a3ac5179ae3bc95fba38c5d1f0660ca
+source-git-commit: 17b0604cb192a375c3097255812c89caa8580d5b
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4173'
 ht-degree: 59%
 
 ---
@@ -470,8 +470,6 @@ Por ejemplo, la expresión
 ```
 
 compararía el contenido del campo con el valor `some text` y se ejecuta correctamente si el contenido es igual al valor. De lo contrario, la expresión fallará.
-
-El
 
 Los siguientes operadores pueden utilizarse para comparar campos con un determinado valor:
 
