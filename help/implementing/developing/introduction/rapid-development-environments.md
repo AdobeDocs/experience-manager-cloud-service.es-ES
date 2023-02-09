@@ -2,9 +2,9 @@
 title: Entornos de desarrollo rápido
 description: Aprenda a aprovechar los entornos de desarrollo rápido para iteraciones de desarrollo rápidas en un entorno de nube.
 hidefromtoc: true
-source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
+source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2634'
 ht-degree: 6%
 
 ---
@@ -393,7 +393,7 @@ También puede restablecer el RDE utilizando el botón de puntos suspensivos dir
 
 Para obtener más información sobre cómo utilizar Cloud Manager para administrar sus entornos, consulte [la documentación de Cloud Manager.](/help/implementing/cloud-manager/manage-environments.md)
 
-## Modos de ejecución {#runmodes}
+## Ejecutar modos {#runmodes}
 
 La configuración OSGI específica de RDE se puede aplicar utilizando sufijos en el nombre de la carpeta, como en los ejemplos siguientes:
 
@@ -406,6 +406,20 @@ Consulte la [documentación del modo de ejecución](/help/implementing/deploying
 >[!NOTE]
 >
 >La configuración OSGI de RDE es única, ya que hereda los valores de cualquier propiedad OSGI declarada por el paquete `dev` ejecutar modo.
+
+Los RDE son diferentes de otros entornos en que el contenido se puede instalar en una carpeta install.rde (o install.author.rde o install.publish.rde) en /apps. Esto le permite confirmar el contenido para obtenerlo y enviarlo al RDE mediante las herramientas de la línea de comandos.
+
+## Rellenar con contenido {#populating-content}
+
+Cuando se restablece un RDE, se elimina todo el contenido y, si se desea, se deben realizar acciones explícitas para añadir contenido. Como práctica recomendada, considere la posibilidad de ensamblar un conjunto de contenido para utilizarlo como contenido de prueba para validar o depurar funciones en RDE. Existen varias estrategias posibles para rellenar el RDE con ese contenido:
+
+1. Sincronizar el paquete de contenido explícitamente con el RDE mediante las herramientas de la línea de comandos
+
+1. Coloque y confirme el contenido de muestra en Git dentro de una carpeta install.rde en /apps y, a continuación, sincronice el paquete de contenido global con el RDE utilizando las herramientas de la línea de comandos.
+
+1. Uso del Administrador de paquetes
+
+Tenga en cuenta que está limitado a 1 GB al sincronizar paquetes de contenido.
 
 ## Registro {#logging}
 
