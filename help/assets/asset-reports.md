@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: ede33e43bdfd4b6aa4670fe74c2133a7a3b54b75
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 7%
+source-wordcount: '890'
+ht-degree: 6%
 
 ---
 
 # Informes de Asset {#asset-reports}
 
-Los informes de recursos le permiten evaluar la utilidad de su [!DNL Adobe Experience Manager Assets] implementación. con [!DNL Assets], puede generar varios informes para los recursos digitales. Los informes proporcionan información útil sobre el uso de su sistema, cómo interactúan los usuarios con los recursos y cuáles son <!-- downloaded and --> compartido.
+Los informes de recursos le permiten evaluar la utilidad de su [!DNL Adobe Experience Manager Assets] implementación. con [!DNL Assets], puede generar varios informes para los recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, cómo interactúan los usuarios con los recursos y cuáles son <!-- downloaded and --> compartido.
 
 Utilice la información de los informes para derivar métricas de éxito clave para medir la adopción de [!DNL Assets] en su empresa y por clientes.
 
@@ -29,10 +29,11 @@ Cuando se genera un informe, se le notifica mediante <!-- through an email (opti
 [!DNL Experience Manager Assets] genera los siguientes informes estándar:
 
 * Cargar
+* Descargar
 * Vencimiento
 * Modificación
 * Publicación
-* [!DNL Brand Portal] instancias de publicación
+* [!DNL Brand Portal] publicación
 * Uso del disco
 * Archivos
 * Vínculos compartidos
@@ -60,7 +61,7 @@ Cuando se genera un informe, se le notifica mediante <!-- through an email (opti
 
    ![Seleccionar tipo de informe](assets/choose_report.png)
 
-1. Configure los detalles del informe como título, descripción, miniatura y ruta de carpeta en el repositorio CRX donde se almacena el informe. De forma predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente.
+1. Configure los detalles del informe, como título, descripción, miniatura y ruta de carpeta. De forma predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente para ejecutar el informe en una carpeta específica.
 
    ![Página para agregar detalles del informe](assets/report_configuration.png)
 
@@ -105,6 +106,10 @@ Cuando se genera un informe, se le notifica mediante <!-- through an email (opti
 
    Haga clic en **[!UICONTROL Descargar]** en la barra de herramientas para descargar el informe en formato CSV.
 
+   >[!NOTE]
+   >
+   >Puede generar informes basados en los eventos generados durante los últimos 360 días. Experience Manager retiene los datos de ID de usuario durante 30 días.
+
 ## Agregar columnas personalizadas a informes {#add-custom-columns}
 
 Puede agregar columnas personalizadas a los siguientes informes para mostrar más datos según sus necesidades personalizadas:
@@ -123,7 +128,7 @@ Puede agregar columnas personalizadas a los siguientes informes para mostrar má
 * Vencimiento
 * Modificación
 * Publicación
-* [!DNL Brand Portal] instancias de publicación
+* [!DNL Brand Portal] publicación
 * Archivos
 
 Para agregar columnas personalizadas a estos informes, siga estos pasos:
@@ -131,9 +136,9 @@ Para agregar columnas personalizadas a estos informes, siga estos pasos:
 1. En el [!DNL Manager interface], haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
 1. En el [!UICONTROL Informes de recursos] página, haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
 
-1. En el **[!UICONTROL Crear informe]** , elija un informe para crear. Haga clic en **[!UICONTROL Siguiente]**. 
+1. En el **[!UICONTROL Crear informe]** , elija un informe para crear. Haga clic en **[!UICONTROL Siguiente]**.
 
-1. Configure los detalles del informe, como título, descripción, miniatura, ruta de carpeta e intervalo de fechas, según corresponda. Haga clic en **[!UICONTROL Siguiente]**. 
+1. Configure los detalles del informe, como título, descripción, miniatura, ruta de carpeta e intervalo de fechas, según corresponda. Haga clic en **[!UICONTROL Siguiente]**.
 
 1. Seleccione la información aplicable de la lista de **[!UICONTROL Columnas predeterminadas]**. Para mostrar una columna personalizada, especifique el nombre de la columna debajo de **[!UICONTROL Columnas personalizadas]**.
 

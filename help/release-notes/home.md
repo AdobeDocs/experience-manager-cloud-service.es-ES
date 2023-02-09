@@ -2,7 +2,7 @@
 title: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: e98ba2840795f136bf2c10c66863b52beede1342
+source-git-commit: fda4fdd3a28caa0a35014fbf4b0bbac8800e343c
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 | Producto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versión | 2022.10.0 |
+| Versión | 2023.1.0 |
 | Tipo | Actualizaciones continuas |
 | Fecha de disponibilidad | Actualización continua |
 
@@ -21,8 +21,8 @@ ht-degree: 100%
 
 Con el modelo de liberación continua en [!DNL Adobe Experience Manager] as a Cloud Service, la aplicación se actualiza automáticamente de forma continua. Existen dos tipos de actualizaciones, versiones de funciones y de mantenimiento:
 
-* Las versiones de características se realizan con una frecuencia mensual predecible y se centran en nuevas funcionalidades e innovaciones de productos.
-* Las versiones de mantenimiento se realizan con frecuencia y se centran en actualizaciones de seguridad, correcciones de errores y mejoras de rendimiento. Esto garantiza que [!DNL Adobe Experience Manager] as a Cloud Service siempre está actualizado con cualquier corrección crítica.
+* [Las versiones de características se realizan con una frecuencia mensual predecible y se centran en nuevas funcionalidades e innovaciones de productos.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Las versiones de mantenimiento se realizan con frecuencia y se centran en actualizaciones de seguridad, correcciones de errores y mejoras de rendimiento. ](/help/release-notes/maintenance/latest.md) Esto garantiza que [!DNL Adobe Experience Manager] as a Cloud Service siempre está actualizado con cualquier corrección crítica.
 
 Además de la velocidad de la innovación, [!DNL Adobe Experience Manager] as a Cloud Service también proporciona la flexibilidad para obtener una vista previa de las próximas funciones con un mes de anticipación antes de que las funciones se publiquen en producción. Esto le permite evaluar el impacto de una próxima versión en su organización probando las funciones en su propio entorno personalizado y entrenando/preparando a los usuarios internos con mucha anticipación.
 

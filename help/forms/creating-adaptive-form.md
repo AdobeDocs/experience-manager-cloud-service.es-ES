@@ -5,17 +5,22 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
-workflow-type: ht
-source-wordcount: '1359'
-ht-degree: 100%
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+workflow-type: tm+mt
+source-wordcount: '1414'
+ht-degree: 94%
 
 ---
 
-# Crear un formulario adaptable {#creating-an-adaptive-form}
+# Crear un formulario adaptable (Componentes de base) {#creating-an-adaptive-form}
 
 
 Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms ofrece un asistente fácil de usar para las empresas que crea rápidamente formularios adaptables. El asistente dispone de una navegación rápida por pestañas para seleccionar fácilmente plantillas, estilos, campos y opciones de envío preconfiguradas para crear un formulario adaptable.
+
+>[!NOTE]
+>
+> En este artículo se describe un método antiguo para crear un formulario adaptable. Para crear Forms adaptable basado en el enfoque más reciente, consulte [Crear un formulario adaptable (componentes principales)](creating-adaptive-form.md).
+
 
 <!-- 
 
@@ -39,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-   Adaptive Forms created with this option don’t use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
+   Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
 ## Requisitos previos
 
@@ -54,6 +59,8 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 * **Permisos**: Añada los usuarios a [!DNL forms-users] para darles permisos para crear un formulario adaptable. Para obtener una lista detallada de los formularios y grupos de usuarios específicos, consulte [Grupos y permisos](forms-groups-privileges-tasks.md).
 
+## Crear un formulario adaptable (Componentes de base) {#create-an-adaptive-form-foundation-components}
+
 1. Acceda a la instancia de autor de [!DNL Experience Manager Forms]. Puede ser una instancia de nube o una instancia de desarrollo local.
 
 1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager.
@@ -67,15 +74,19 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
       >[!NOTE]
       >
-      > También puede crear una plantilla de un [!UICONTROL Documento de registro] con un editor de formularios adaptables. Para obtener más información, consulte el [Documento de compatibilidad de registros en el Editor de formularios adaptables](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+      > También puede crear [!UICONTROL Documento de registro] plantilla con un editor de Forms adaptable. Para obtener más información, consulte el [Documento de compatibilidad de registros en el Editor de formularios adaptables](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * Al seleccionar una plantilla estática, las opciones de datos, estilo, envío, entrega y vista previa no están disponibles. Cuando se crea un nuevo Formulario adaptable, se recomienda utilizar una Plantilla editable.
 
-1. En la pestaña Estilo, seleccione una temática:
+1. En el **[!UICONTROL Estilo]** seleccione un tema:
+
    * Cuando la plantilla seleccionada especifica una temática, la temática se selecciona automáticamente en el asistente. También puede elegir una temática diferente de la pestaña Estilo.
    * Si la plantilla seleccionada no especifica ninguna temática, puede utilizar la pestaña Estilo para elegir una temática. El botón **[!UICONTROL Crear]** solo se activa después de seleccionar una temática.
-1. (Opcional) En la pestaña Datos, seleccione un modelo de datos:
+
+1. (Opcional) En la **[!UICONTROL Datos]** seleccione un modelo de datos:
+
    * **Modelo de datos de formulario**: A [El modelo de datos de formulario](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
+
    * **Esquema JSON**: [El esquema JSON](adaptive-form-json-schema-form-model.md) representa la estructura en la que el sistema back-end de su organización produce o consume datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles para su uso en la pestaña Objetos del modelo de datos del explorador de contenido al crear formularios adaptables y todos los campos también se añaden al formulario adaptable recién creado.
 
    De forma predeterminada, se seleccionan todos los campos del modelo de datos. Al crear el Formulario adaptable, todos los campos del modelo de datos seleccionado se convierten en los componentes correspondientes del Formulario adaptable. El asistente le proporciona casillas de verificación para seleccionar solo los campos que deben incluirse en el Formulario adaptable.
@@ -86,7 +97,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
    
    -->
 
-1. En la pestaña Envío, seleccione una acción de envío:
+1. En el **[!UICONTROL Envío]** seleccione una acción de envío:
 
    * Al seleccionar una plantilla, la acción de envío especificada en la plantilla se selecciona automáticamente. Puede seleccionar una acción de envío diferente en la pestaña Envío. La pestaña **[!UICONTROL Envío]** muestra todas las acciones de envío disponibles.
 
@@ -176,3 +187,7 @@ También puede modificar las propiedades del modelo del formulario desde el edit
 1. Pulse ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
 
 ![Compatibilidad con FDM-Esquema](/help/forms/assets/fdmsupport.png)
+
+>[!NOTE]
+>
+> También puede guardar un formulario adaptable como plantilla. Para obtener más información, consulte [Creación de una plantilla mediante un formulario adaptable](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).

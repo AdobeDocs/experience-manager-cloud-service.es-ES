@@ -2,10 +2,10 @@
 title: ¿Cómo se crea una plantilla de formulario adaptable?
 description: Cree plantillas de formularios adaptables para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
-workflow-type: ht
-source-wordcount: '1806'
-ht-degree: 100%
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+workflow-type: tm+mt
+source-wordcount: '1920'
+ht-degree: 94%
 
 ---
 
@@ -53,7 +53,7 @@ Contiene las siguientes opciones:
    * **Selector de modo:** Permite cambiar el modo. 
 Puede elegir el modo **[!UICONTROL Estructura]**, **[!UICONTROL Contenido inicial]**, **[!UICONTROL Control de diseño]** en el menú contextual. El modo Estructura permite agregar y personalizar el encabezado y el pie de página. El modo de Contenido inicial permite personalizar el contenido del formulario.
    * **Vista previa:** Permite obtener una vista previa del aspecto de la plantilla al publicarla. Puede utilizar el Selector de capa y la Vista previa para alternar los modos de edición y vista previa.
-* **Barra lateral:** Proporciona los exploradores de Contenido, Propiedades, Activos y Componentes.
+* **Barra lateral:** Proporciona los exploradores de Contenido, Propiedades, Recursos y Componentes.
 * **Barra de herramientas de componentes:** Al seleccionar un componente, aparecerá una barra de herramientas que le permite personalizarlo.
 * **Página**: Área donde se agrega contenido para crear la plantilla.
 
@@ -127,7 +127,7 @@ Cambie la capa de Estructura a Contenido inicial y empiece a agregar contenido a
 * Puede arrastrar y soltar el componente del panel desde el explorador de componentes de la barra lateral.
 * Puede agregar el panel secundario del `guideRootPanel` en la barra de herramientas de componentes.
 
-Para crear las pestañas Información general e Información profesional, agregue dos paneles en el panel secundario del `guideRootPanel`. Seleccione los paneles y pulse ![cmppr](assets/configure-icon.svg) para abrir las propiedades en la barra lateral. Cambie los nombres de los elementos como `general-info` y `professional-info`y títulos como Información general e Información profesional respectivamente. En la barra lateral, pulse Contenido para abrir el explorador de contenido. En la pestaña Objetos del formulario, seleccione `guideRootPanel`. En el editor, se selecciona guideRootPanel. Pulse ![cmppr](assets/configure-icon.svg) en la barra de herramientas de componentes para abrir sus propiedades. En el campo Diseño del panel, seleccione **[!UICONTROL Pestañas arriba]** y pulse **[!UICONTROL Listo]**. Se aplica la estructura de la plantilla con pestañas.
+Para crear las pestañas Información general e Información profesional, agregue dos paneles en el panel secundario del `guideRootPanel`. Seleccione los paneles y pulse ![cmppr](assets/configure-icon.svg) para abrir las propiedades en la barra lateral. Cambie los nombres de los elementos como `general-info` y `professional-info` y títulos como Información general e Información profesional respectivamente. En la barra lateral, pulse Contenido para abrir el explorador de contenido. En la pestaña Objetos del formulario, seleccione `guideRootPanel`. En el editor, se selecciona guideRootPanel. Pulse ![cmppr](assets/configure-icon.svg) en la barra de herramientas de componentes para abrir sus propiedades. En el campo Diseño del panel, seleccione **[!UICONTROL Pestañas arriba]** y pulse **[!UICONTROL Listo]**. Se aplica la estructura de la plantilla con pestañas.
 
 #### Agregar contenido en pestañas {#adding-content-in-tabs}
 
@@ -184,6 +184,23 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
+
+## Guardar un formulario adaptable como plantilla {#saving-adaptive-form-as-template}
+
+También puede guardar un formulario adaptable como plantilla para su uso futuro. Para guardar un formulario adaptable como plantilla:
+
+1. Seleccione un formulario adaptable para guardarlo como plantilla.
+1. Haga clic en **[!UICONTROL Guardar como plantilla]**. Aparecerá un cuadro de diálogo.
+1. Especifique **[!UICONTROL Título]** (campo obligatorio), **[!UICONTROL Ubicación]** (campo obligatorio) y **[!UICONTROL Descripción]** (campo opcional) para la plantilla.
+1. Haga clic en **[!UICONTROL Crear]**.
+
+   ![Guardar como formulario como plantilla](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>Para utilizar la misma directiva de contenedor que el formulario adaptable de origen, se recomienda guardar la plantilla en la misma carpeta que el formulario adaptable de origen. En caso de que la plantilla se guarde en cualquier otra carpeta, la plantilla creada utiliza una directiva de contenedor predeterminada.
 
 ## Recomendaciones {#recommendations}
 

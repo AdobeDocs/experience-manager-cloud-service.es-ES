@@ -6,21 +6,15 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3072'
 ht-degree: 100%
 
 ---
 
 
 # Uso de [!DNL Adobe Sign] en un formulario adaptable {#using-adobe-sign-in-an-adaptive-form}
-
-
->[!NOTE]
->
->La función para utilizar las funciones de Adobe Sign en un formulario adaptable está en el canal de versiones preliminares para agosto de 2021. La función estará disponible para el público en general en la versión de septiembre de 2021.
-
 
 [!DNL Adobe Sign] activa los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para áreas legales, de ventas, de nómina, de administración de recursos humanos y más.
 
@@ -314,7 +308,7 @@ Después de [editar las propiedades del formulario adaptable para Adobe Sign](wo
 
    Aplicar firmas digitales al formulario adaptable mediante:
 
-   * Firmas en la nube: firme con un [ID digital](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) alojado por un proveedor de servicios de confianza.
+   * Firmas en la nube: firme con un [ID digital](https://helpx.adobe.com/es/sign/kb/digital-certificate-providers.html) alojado por un proveedor de servicios de confianza.
    * Adobe Acrobat o Reader: descargue y abra el documento con Adobe Acrobat o Reader para firmarlo con una tarjeta inteligente, un token USB o un ID digital basado en archivos.
 
    Después de agregar el campo de firma de nube al formulario adaptable, realice los siguientes pasos para completar el proceso de configuración:
