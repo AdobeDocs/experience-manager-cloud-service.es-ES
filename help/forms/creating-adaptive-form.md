@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 94%
+source-wordcount: '1500'
+ht-degree: 88%
 
 ---
 
@@ -17,9 +17,12 @@ ht-degree: 94%
 
 Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms ofrece un asistente fácil de usar para las empresas que crea rápidamente formularios adaptables. El asistente dispone de una navegación rápida por pestañas para seleccionar fácilmente plantillas, estilos, campos y opciones de envío preconfiguradas para crear un formulario adaptable.
 
->[!NOTE]
->
-> En este artículo se describe un método antiguo para crear un formulario adaptable. Para crear Forms adaptable basado en el enfoque más reciente, consulte [Crear un formulario adaptable (componentes principales)](creating-adaptive-form.md).
+Antes de comenzar, conozca el tipo de componentes de Forms disponibles para usted:
+
+* [Componentes principales adaptables de Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) son componentes estandarizados de captura de datos. Estos componentes proporcionan capacidades de personalización, tiempo de desarrollo reducido y menores costes de mantenimiento para sus experiencias de inscripción digital. Un desarrollador puede personalizar fácilmente y aplicar estilo a estos componentes. Adobe recomienda aprovechar estos componentes modernos y ampliables para desarrollar Forms adaptable.
+
+* [Componentes Forms Foundation adaptables](creating-adaptive-form.md) son componentes de captura de datos clásicos (antiguos). Puede seguir utilizándolos para editar los componentes de base existentes basados en el formulario adaptable. Si está creando formularios nuevos, Adobe recomienda utilizar  [Componentes principales adaptables de Forms](creating-adaptive-form-core-components.md) para crear un Forms adaptable.
+
 
 
 <!-- 

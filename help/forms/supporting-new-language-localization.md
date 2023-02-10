@@ -1,18 +1,20 @@
 ---
-title: Compatibilidad con configuraciones regionales nuevas para la localización de formularios adaptables
-seo-title: Supporting new locales for adaptive forms localization
+title: Agregar compatibilidad con nuevas configuraciones regionales a un formulario adaptable
+seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms le permite agregar nuevas configuraciones regionales para localizar formularios adaptables. Español (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-taiwanés (zh-TW) y coreano (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: 848c6a4ea403f644408407aed0a7e06c3524d942
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 33%
+source-wordcount: '1180'
+ht-degree: 28%
 
 ---
 
-# Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables{#supporting-new-locales-for-adaptive-forms-localization}
+# Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables {#supporting-new-locales-for-adaptive-forms-localization}
 
-## Acerca de los diccionarios de configuración regional {#about-locale-dictionaries}
+AEM Forms proporciona compatibilidad predeterminada para configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi(hi_IN).
+
+## Explicación de los diccionarios de configuración regional {#about-locale-dictionaries}
 
 La localización de formularios adaptables se basa en dos tipos de diccionarios de configuración regional:
 
@@ -20,33 +22,33 @@ La localización de formularios adaptables se basa en dos tipos de diccionarios 
 
 * **Los diccionarios globales**: hay dos diccionarios globales, administrados como objetos JSON en la biblioteca de cliente de AEM. Estos diccionarios contienen mensajes de error predeterminados, nombres de mes, símbolos de moneda, patrones de fecha y hora, etc. Puede encontrar estos diccionarios en `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Estas ubicaciones contienen carpetas independientes para cada configuración regional. Debido a que los diccionarios globales no se actualizan con frecuencia, mantener archivos JavaScript separados para cada configuración regional permite a los navegadores almacenarlos en caché y reducir el uso del ancho de banda de red al acceder a diferentes formularios adaptables en el mismo servidor.
 
-Pasos para admitir la nueva localización para AEM Forms:
+## Agregar compatibilidad con nuevas configuraciones regionales {#add-support-for-new-locales}
+
+Siga estos pasos para añadir compatibilidad con una nueva configuración regional:
 
 1. [Agregar compatibilidad con la localización para configuraciones regionales no admitidas](#add-localization-support-for-non-supported-locales-add-localization-support-for-non-supported-locales)
 1. [Uso de configuraciones regionales añadidas en Forms adaptable](#use-added-locale-in-adaptive-forms-use-added-locale-in-af)
 
-## Agregar compatibilidad con la localización para configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
+### Agregar compatibilidad con la localización para configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
 
 AEM Forms admite actualmente la localización de contenido de Adaptive Forms en las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-taiwanés (zh-TW) y coreano (ko-KR).
 
 Para añadir compatibilidad con una nueva configuración regional en el tiempo de ejecución de un formulario adaptable:
 
 1. [Clonar el repositorio](#1-clone-the-repository-clone-the-repository)
-1. [Añada una configuración regional al servicio GuideLocalizationService.](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
-1. [Agregar carpeta específica de nombre de configuración regional](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-   * [Agregar una biblioteca de cliente XFA para una configuración regional.](#3-add-xfa-client-library-for-a-locale)
-   * [Agregue la biblioteca de cliente de formulario adaptable para una configuración regional.](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
-1. [Agregar la compatibilidad con la configuración regional del diccionario.](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
-1. [Confirmar los cambios en el repositorio e implementar la canalización](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
+1. [Añada una configuración regional al servicio GuideLocalizationService.](#2-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
+1. [Agregar carpeta específica de nombre de configuración regional](#3-add-locale-name-specific-folder-client-library-add-locale-name-specific-folder)
+1. [Agregar la compatibilidad con la configuración regional del diccionario.](#about-locale-dictionaries-about-locale-dictionaries)
+1. [Confirmar los cambios en el repositorio e implementar la canalización](#5-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-chnages-in-repo-deploy-pipeline)
 
-### 1. Clonar el repositorio {#clone-the-repository}
+#### 1. Clonar el repositorio {#clone-the-repository}
 
 1. Desde la línea de comandos, vaya a donde desee clonar el repositorio de Cloud Service de Forms.
 1. Ejecute el comando que [recuperado de Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) Es similar a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Utilice el nombre de usuario y la contraseña de Git para clonar el repositorio.
 1. Abra la carpeta del repositorio del Cloud Service de Forms clonada en su editor preferido.
 
-### 2. Añadir una configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service-br}
+#### 2. Añadir una configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Busque la variable `Guide Localization Service.cfg.json` y añada la configuración regional que desee agregar a la lista de configuraciones regionales admitidas.
 
@@ -55,19 +57,20 @@ Para añadir compatibilidad con una nueva configuración regional en el tiempo d
    >* Cree un archivo con el nombre como `Guide Localization Service.cfg.json` si todavía no está presente.
 
 
-### 3. Agregar una biblioteca de cliente de carpeta específica de nombre de configuración regional {#add-locale-name-specific-folder}
+#### 3. Agregar una biblioteca de cliente de carpeta específica de nombre de configuración regional {#add-locale-name-specific-folder}
 
 1. En la carpeta UI.content , cree `etc/clientlibs` carpeta.
 1. Cree una carpeta llamada como `locale-name` under `etc/clientlibs` para que sirva como contenedor para clientlibs xfa y af.
 
-#### 3.1 Agregar la biblioteca de cliente XFA para una configuración regional en la carpeta locale-name
+##### 3.1 Agregar la biblioteca de cliente XFA para una configuración regional en la carpeta locale-name
 
-1. Cree un nodo denominado como `[locale-name]_xfa` y escriba como `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, con categoría `xfaforms.I18N.<locale>`y agregue los siguientes archivos:
-   * **I18N.js** definiendo `xfalib.locale.Strings` para `<locale>`, tal como se define en `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
-   * **js.txt**, que contiene lo siguiente:
-      */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+Cree un nodo denominado como `[locale-name]_xfa` y escriba como `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, con categoría `xfaforms.I18N.<locale>`y agregue los siguientes archivos:
 
-#### 3.2. Agregar la biblioteca de cliente de formulario adaptable para una carpeta locale-name {#add-adaptive-form-client-library-for-a-locale-br}
+* **I18N.js** definiendo `xfalib.locale.Strings` para `<locale>`, tal como se define en `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+* **js.txt**, que contiene lo siguiente:
+   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+
+##### 3.2. Agregar la biblioteca de cliente de formulario adaptable para una carpeta locale-name {#add-adaptive-form-client-library-for-a-locale-br}
 
 1. Cree un nodo denominado como `[locale-name]_af` y escriba como `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, con categoría como `guides.I18N.<locale>` y dependencias como `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` y `guide.common`.
 1. Cree una carpeta denominada como `javascript` y agregue los siguientes archivos:
@@ -82,7 +85,7 @@ Para añadir compatibilidad con una nueva configuración regional en el tiempo d
      LogMessages.js
    ```
 
-### 4. Agregar compatibilidad con configuración regional para el diccionario {#add-locale-support-for-the-dictionary-br}
+#### 4. Agregar compatibilidad con configuración regional para el diccionario {#add-locale-support-for-the-dictionary-br}
 
 Realice este paso solo si la configuración regional `<locale>` que está agregando que no está entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`.
 
@@ -102,7 +105,7 @@ Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hie
 
 Antes de confirmar los cambios en el repositorio de AEM Git, debe acceder a su [Información del repositorio de Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 
-### 5. Confirme los cambios en el repositorio e implemente la canalización {#commit-chnages-in-repo-deploy-pipeline}
+#### 5. Confirme los cambios en el repositorio e implemente la canalización {#commit-chnages-in-repo-deploy-pipeline}
 
 Confirme los cambios en el repositorio GIT después de agregar una nueva compatibilidad con configuración regional. Implemente el código mediante la canalización de pila completa. Más información [configuración de una canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) para agregar compatibilidad con configuración regional nueva.
 
@@ -110,7 +113,7 @@ Una vez finalizada la canalización, la configuración regional recién añadida
 
 ### Usar configuración regional añadida en Forms adaptable {#use-added-locale-in-af}
 
-Pasos para utilizar y procesar un formulario adaptable con una configuración regional recién añadida:
+Realice los siguientes pasos para utilizar y procesar un formulario adaptable utilizando una configuración regional recién añadida:
 
 1. Inicie sesión en la instancia de autor de AEM.
 1. Vaya a **Forms** >  **Forms y documentos**.
@@ -123,9 +126,9 @@ Pasos para utilizar y procesar un formulario adaptable con una configuración re
 
 Existen dos métodos para identificar la configuración regional de un formulario adaptable. Cuando se procesa un formulario adaptable, este identifica la configuración regional solicitada de las siguientes formas:
 
-* Al consultar el selector `[local]` de la URL del formulario adaptable. El formato de la URL es el siguiente `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. El uso del selector `[local]` permite almacenar en caché un formulario adaptable.
+* Retorno de la variable `[local]` en la URL del formulario adaptable. El formato de la URL es el siguiente `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. El uso del selector `[local]` permite almacenar en caché un formulario adaptable.
 
-* observando los siguientes parámetros en el orden especificado:
+* Se han restaurado los siguientes parámetros en el orden de la lista:
 
    * El parámetro de solicitud `afAcceptLang`. Para anular la configuración regional del explorador de los usuarios, puede pasar el parámetro de solicitud 
 `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obliga a procesar el formulario en la configuración regional canadiense-francesa:
