@@ -2,10 +2,10 @@
 title: Introducción a Cloud Manager
 description: Obtenga información sobre cómo Cloud Manager admite su proyecto de AEM a través de sus programas, entornos y canalizaciones.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
-workflow-type: ht
-source-wordcount: '834'
-ht-degree: 100%
+source-git-commit: 50217b0ff63eb87123c3a1238822441a56c1995e
+workflow-type: tm+mt
+source-wordcount: '852'
+ht-degree: 98%
 
 ---
 
@@ -49,6 +49,8 @@ También puede navegar a la página Programas y productos de Cloud Manager desde
 | Eliminación de canalización | Permitir eliminación de canalización |  | x |  |  |
 | Cancelación de ejecución | Cancelar ejecución actual |  | x |  |  |
 | Generar token de acceso personal | Acceso a Git |  | x |  | x |
+| Crear RDE | Crear un entorno de desarrollo rápido | x |  |  | x |
+| Restablecer RDE | Restaurar un entorno de desarrollo rápido | x |  |  | x |
 
 >[!NOTE]
 >
