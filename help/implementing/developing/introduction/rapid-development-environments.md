@@ -1,9 +1,9 @@
 ---
 title: Entornos de desarrollo rápido
 description: Aprenda a aprovechar los entornos de desarrollo rápido para iteraciones de desarrollo rápidas en un entorno de nube.
-source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
+source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3069'
 ht-degree: 5%
 
 ---
@@ -447,6 +447,7 @@ Por estos motivos, se recomienda que, después de validar el código en un entor
 
 Tenga en cuenta también las siguientes consideraciones:
 
+* Los RDE no incluyen un nivel de vista previa
 * Actualmente, los RDE no admiten la visualización y depuración del código front-end implementado mediante la canalización front-end de Cloud Manager.
 * Actualmente, los RDE no admiten el canal de prelanzamiento.
 
