@@ -2,7 +2,7 @@
 title: ¿Cómo se crea una plantilla de formulario adaptable?
 description: Cree plantillas de formularios adaptables para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
+source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 87%
@@ -158,7 +158,7 @@ Un formulario funciona con su plantilla. Cuando se descarga un formulario adapta
 
 
 
-### Asociación de un esquema del modelo de datos de formulario a una plantilla {#associating-form-data-model-schema-in-template}
+## Asociación de un esquema del modelo de datos de formulario a una plantilla {#associating-form-data-model-schema-in-template}
 
 Los autores pueden asociar un [!UICONTROL Esquema del modelo de datos de formulario] a una plantilla de formulario adaptable en el editor de plantillas. Permite a los autores seleccionar un esquema del editor de plantillas. Cuando se asocia un esquema a una plantilla y el autor de un formulario crea un formulario basado en la plantilla, el esquema se preselecciona para el formulario. Ayuda a los autores de formularios a regular el uso del esquema y también ahorra tiempo para el autor de formularios. Para seleccionar un esquema del modelo de datos de formulario en el editor de plantillas:
 
