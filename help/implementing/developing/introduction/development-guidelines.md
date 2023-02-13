@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre formas importantes en las que difiere de AEM en las instalaciones y AEM en AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2591'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 >id="development_guidelines"
 >title="Directrices de desarrollo de AEM as a Cloud Service"
 >abstract="Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre formas importantes en las que difiere de AEM en las instalaciones y AEM en AMS."
->additional-url="https://video.tv.adobe.com/v/330555/" text="Demostración de la estructura del paquete"
+>additional-url="https://video.tv.adobe.com/v/330555/?captions=spa/" text="Demostración de la estructura del paquete"
 
 En el presente documento se presentan directrices para la elaboración de AEM as a Cloud Service y de maneras importantes en que difiere de las AEM en los locales y AEM de AMS.
 
@@ -162,7 +162,7 @@ Los clientes pueden acceder a CRXDE lite en el entorno de desarrollo del nivel d
 
 En su lugar, el Explorador de repositorios se puede iniciar desde Developer Console, proporcionando una vista de solo lectura en el repositorio para todos los entornos en los niveles de autor, publicación y vista previa. Obtenga más información sobre el explorador del repositorio [here](/help/implementing/developing/tools/repository-browser.md).
 
-En Developer Console hay disponible un conjunto de herramientas para depurar AEM entornos de desarrollador as a Cloud Service para entornos de desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones url del servicio Autor o Publicación de la siguiente manera:
+Hay disponible un conjunto de herramientas para depurar AEM entornos de desarrollador as a Cloud Service en Developer Console para entornos de RDE, desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones url del servicio Autor o Publicación de la siguiente manera:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 

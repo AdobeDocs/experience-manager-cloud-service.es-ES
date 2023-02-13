@@ -3,9 +3,9 @@ title: Implementación en AEM as a Cloud Service
 description: Implementación en AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
+source-git-commit: 0481267958fe8ac4b28b2742924d2bc2c337eebc
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3497'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## Introducción {#introduction}
 
-Los fundamentos del desarrollo de código son similares en AEM as a Cloud Service en comparación con las soluciones AEM On Premise y Managed Services. Los desarrolladores escriben el código y lo prueban localmente, que luego se inserta en entornos as a Cloud Service AEM remotos. Se requiere Cloud Manager, que era una herramienta de entrega de contenido opcional para Managed Services. Este es ahora el único mecanismo para implementar código en entornos as a Cloud Service AEM.
+Los fundamentos del desarrollo de código son similares en AEM as a Cloud Service en comparación con las soluciones AEM On Premise y Managed Services. Los desarrolladores escriben el código y lo prueban localmente, que luego se inserta en entornos as a Cloud Service AEM remotos. Se requiere Cloud Manager, que era una herramienta de entrega de contenido opcional para Managed Services. Este es ahora el único mecanismo para implementar código en AEM entornos as a Cloud Service de desarrollo, fase y producción. Para una validación y depuración rápidas de las funciones antes de implementar los entornos antes mencionados, el código se puede sincronizar de un entorno local a un [Entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 La actualización de la variable [AEM versión](/help/implementing/deploying/aem-version-updates.md) siempre es un evento de implementación independiente de la extracción [código personalizado](#customer-releases). Visto de otra manera, las versiones de código personalizado deben probarse con la versión AEM que está en producción, ya que eso es lo que se implementará en la parte superior. AEM actualizaciones de la versión que se producen después de eso, que serán frecuentes y se aplicarán automáticamente. Están pensados para ser compatibles con el código de cliente ya implementado.
 
@@ -170,7 +170,6 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Administrador de paquetes: migración de paquetes de contenido mutable"
->abstract="Explore el uso del administrador de paquetes para casos de uso en los que un paquete de contenido debe instalarse como &quot;único&quot; que incluye la importación de contenido específico de la producción a la puesta en escena para depurar un problema de producción, la transferencia de paquetes de contenido pequeño del entorno local a entornos de AEM Cloud y más."
 >abstract="Explore el uso del administrador de paquetes para casos de uso en los que un paquete de contenido debe instalarse como &quot;único&quot;, lo que incluye la importación de contenido específico de la producción en el entorno de ensayo para depurar un problema de producción, la transferencia de paquetes de contenido pequeño del entorno local a entornos de AEM Cloud y más."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Herramienta de transferencia de contenido"
 
@@ -279,6 +278,12 @@ Si se realizan cambios en los índices, es importante que la versión azul siga 
 ### Codificación conservadora para retrocesos {#conservative-coding-for-rollbacks}
 
 Si se informa o se detecta un error después de la implementación, es posible que se requiera una reversión a la versión azul. Sería aconsejable garantizar que el código azul sea compatible con cualquier estructura nueva creada por la versión verde, ya que las nuevas estructuras (cualquier contenido mutable) no se revertirán. Si el código antiguo no es compatible, será necesario aplicar correcciones en las versiones posteriores del cliente.
+
+## Entornos de desarrollo rápido (RDE) {#rde}
+
+[Entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) (o RDEs para abreviar) permiten a los desarrolladores implementar y revisar rápidamente los cambios, minimizando la cantidad de tiempo necesario para probar las funciones que ya están probadas para funcionar en un entorno de desarrollo local.
+
+A diferencia de los entornos de desarrollo normales, que implementan código mediante la canalización de Cloud Manager, los desarrolladores utilizan herramientas de línea de comandos para sincronizar código desde un entorno de desarrollo local con RDE. Una vez que los cambios se hayan probado correctamente en un RDE, deben implementarse en un entorno de desarrollo de nube normal a través de la canalización de Cloud Manager, que colocará el código a través de las puertas de calidad adecuadas.
 
 ## Modos de ejecución {#runmodes}
 
