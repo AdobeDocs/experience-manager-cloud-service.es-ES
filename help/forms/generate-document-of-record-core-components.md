@@ -2,10 +2,10 @@
 title: Generar documento de registro para formularios adaptables
 description: Explica cómo se puede generar una plantilla para un documento de registro (DoR) para formularios adaptables.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
 workflow-type: tm+mt
-source-wordcount: '3214'
-ht-degree: 79%
+source-wordcount: '3172'
+ht-degree: 78%
 
 ---
 
@@ -117,11 +117,16 @@ Después de usar la plantilla durante un tiempo, la organización decide cambiar
 
 ![Plantilla actualizada](assets/we-retail-new-invoice.png)
 
-El desarrollador carga y aplica a la plantilla actualizada al formulario adaptable. El formulario adaptable detecta y muestra automáticamente la lista de campos en los que el enlace ha cambiado.
+<!--
 
-![Error de enlace](assets/we-retail-binding-error.png)
+The developer uploads and applies to the updated template to the adaptive form. The adaptive form automatically detects and displays list of fields where binding has changed.
 
-El desarrollador de formularios enlaza los campos del formulario adaptable con la plantilla correspondiente de documento de registro.
+![Binding Error](assets/we-retail-binding-error.png)
+
+The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+
+-->
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Ahora, cuando se envía el formulario adaptable, se genera un documento actualizado de registro.

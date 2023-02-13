@@ -2,10 +2,10 @@
 title: ¿Cómo se crea una plantilla de formulario adaptable?
 description: Cree plantillas de formularios adaptables para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
 workflow-type: tm+mt
-source-wordcount: '1920'
-ht-degree: 94%
+source-wordcount: '2017'
+ht-degree: 87%
 
 ---
 
@@ -50,8 +50,7 @@ Contiene las siguientes opciones:
    * **Información de la página**: Permite especificar información, como la hora de publicación/cancelación de la publicación, las miniaturas, las bibliotecas del lado del cliente, la directiva de página y la biblioteca de diseños de páginas del lado del cliente.
 
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Selector de modo:** Permite cambiar el modo. 
-Puede elegir el modo **[!UICONTROL Estructura]**, **[!UICONTROL Contenido inicial]**, **[!UICONTROL Control de diseño]** en el menú contextual. El modo Estructura permite agregar y personalizar el encabezado y el pie de página. El modo de Contenido inicial permite personalizar el contenido del formulario.
+   * **Selector de modo:** Permite cambiar el modo.Puede elegir **[!UICONTROL Estructura]** modo, **[!UICONTROL Contenido inicial]**, **[!UICONTROL Control de diseño]** en el menú contextual. El modo Estructura permite agregar y personalizar el encabezado y el pie de página. El modo de Contenido inicial permite personalizar el contenido del formulario.
    * **Vista previa:** Permite obtener una vista previa del aspecto de la plantilla al publicarla. Puede utilizar el Selector de capa y la Vista previa para alternar los modos de edición y vista previa.
 * **Barra lateral:** Proporciona los exploradores de Contenido, Propiedades, Recursos y Componentes.
 * **Barra de herramientas de componentes:** Al seleccionar un componente, aparecerá una barra de herramientas que le permite personalizarlo.
@@ -151,12 +150,24 @@ Cuando cree un formulario adaptable, podrá ver la plantilla en la lista cuando 
 
 ## Importar o exportar una plantilla {#importing-or-exporting-a-template}
 
-Un formulario funciona con su plantilla. Cuando se descarga un formulario adaptable creado con una plantilla personalizada, la plantilla no se descarga. Al importar el formulario en una instancia diferente [!DNL AEM Forms], se importa sin su plantilla. Si se importa un formulario pero su plantilla no está disponible, el formulario no se procesará. Puede empaquetar la plantilla personalizada desde el nodo `/conf` en `https://<server>:<port>/crx/packmgr`y portarlo en la instancia [!DNL AEM Forms] en la que desea cargar el formulario. También puede [Crear una plantilla con AEM Archetype e implementarla en su instancia de Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=es#prerequisites).
+Un formulario funciona con su plantilla. Cuando se descarga un formulario adaptable creado con una plantilla personalizada, la plantilla no se descarga. Al importar el formulario en un [!DNL AEM Forms] por ejemplo, se importa sin su plantilla. Si se importa un formulario pero su plantilla no está disponible, el formulario no se procesará. Puede empaquetar la plantilla personalizada desde el nodo `/conf` en `https://<server>:<port>/crx/packmgr`y portarlo en la instancia [!DNL AEM Forms] en la que desea cargar el formulario. También puede [Crear una plantilla con AEM Archetype e implementarla en su instancia de Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=es#prerequisites).
 
 >[!NOTE]
 >
-> * Puede asociar un [!UICONTROL Esquema del modelo de datos de formulario] a una plantilla de formulario adaptable en un editor de plantillas. Consulte [Creación de un formulario adaptable](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) para obtener más información.
 > * También puede configurar la plantilla [!UICONTROL Documento de registro] directamente desde el editor de formularios adaptables o desde el editor de plantillas de formulario adaptable. Para obtener más información, consulte [Generación de documento de registro para formularios adaptables](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
+### Asociación de un esquema del modelo de datos de formulario a una plantilla {#associating-form-data-model-schema-in-template}
+
+Los autores pueden asociar un [!UICONTROL Esquema del modelo de datos de formulario] a una plantilla de formulario adaptable en el editor de plantillas. Permite a los autores seleccionar un esquema del editor de plantillas. Cuando se asocia un esquema a una plantilla y el autor de un formulario crea un formulario basado en la plantilla, el esquema se preselecciona para el formulario. Ayuda a los autores de formularios a regular el uso del esquema y también ahorra tiempo para el autor de formularios. Para seleccionar un esquema del modelo de datos de formulario en el editor de plantillas:
+
+1. Toque **[!UICONTROL Navegador de contenido]** situado en el lado izquierdo.
+1. Vaya al contenedor de formulario **[!UICONTROL Configuración]**.
+1. Select **[!UICONTROL Modelo de datos]**.
+1. Elija el modelo de datos de formulario mediante **[!UICONTROL Seleccionar modelo de datos de formulario]** y guarde la configuración.
+
+![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
 
 
 
