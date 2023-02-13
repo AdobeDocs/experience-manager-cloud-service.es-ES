@@ -2,10 +2,10 @@
 title: Personalización del tema del sitio
 description: Descubra cómo se crea el tema del sitio, cómo personalizarlo y cómo probarlo con contenido de AEM en directo.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9f5930fce8c2a7768cad696746a7c9fa3d8c2f9e
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 100%
+source-wordcount: '963'
+ht-degree: 97%
 
 ---
 
@@ -67,6 +67,10 @@ Una vez que esté cómodo con la estructura del proyecto de tema, inicie el prox
 1. Cuando se inicia el servidor proxy, se abre automáticamente un explorador a `http://localhost:7001/`. Pulse o haga clic en **INICIAR SESIÓN LOCALMENTE (SOLO TAREAS DE ADMINISTRACIÓN)** e inicie sesión con las credenciales del usuario proxy proporcionadas por el administrador de AEM.
 
    ![Iniciar sesión localmente](assets/sign-in-locally.png)
+
+   >[!TIP]
+   >
+   >Si no tiene estas credenciales, hable con el administrador haciendo referencia a la variable [Sección Configurar usuario proxy del artículo Crear sitio a partir de plantilla](/help/journey-sites/quick-site/create-site.md#proxy-user) en este recorrido.
 
 1. Una vez que haya iniciado sesión, cambie la dirección URL en el explorador para que apunte a la ruta del contenido de ejemplo que le proporcionó el administrador de AEM.
 
