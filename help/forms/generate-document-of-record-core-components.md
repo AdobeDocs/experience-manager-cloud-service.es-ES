@@ -2,10 +2,10 @@
 title: Generar documento de registro para formularios adaptables
 description: Explica cómo se puede generar una plantilla para un documento de registro (DoR) para formularios adaptables.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
+source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
 workflow-type: tm+mt
-source-wordcount: '3172'
-ht-degree: 78%
+source-wordcount: '3109'
+ht-degree: 79%
 
 ---
 
@@ -327,8 +327,10 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
       * **Plantilla**: Si desea seleccionar una plantilla personalizada, busque y seleccione un XDP en su [!DNL AEM Forms] servidor. Si desea utilizar una plantilla que no esté disponible en su [!DNL AEM Forms] servidor, primero debe cargar el XDP en su [!DNL AEM Forms] servidor.
       * **Color de énfasis**: El color en el que se representan las líneas del texto del encabezado y del separador en el PDF del documento de registro.
       * **Familia tipográfica**: la familia de fuentes de texto del Documento de registro en PDF.
+
       * **Incluir objetos de formulario que no estén enlazados al modelo de datos**: La configuración de la propiedad incluye campos no enlazados del formulario adaptable basado en esquema del documento de registro.
-      * **Excluir campos ocultos del documento de registro**: al configurar esta propiedad se identifican los campos ocultos para la exclusión del Documento de registro.
+      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+
       * **Ocultar descripción de paneles**: Al establecer la propiedad se excluye la descripción del panel/tabla del documento de registro. Aplicable para paneles y tablas.
    1. **Propiedades del campo de formulario**:
       * **Mostrar solo los valores seleccionados para los componentes Casilla de verificación y Botón de radio**: al configurar esta propiedad solo se muestran los valores seleccionados de la casilla de verificación y el botón de radio en [!UICONTROL Documento de registro].
@@ -342,7 +344,6 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
       * **Etiqueta de descargo de responsabilidad**: etiqueta de descargo de responsabilidad.
       * **Descargo de responsabilidad**: texto que especifica el ámbito de derechos y obligaciones del Documento de registro.
       * **Texto de descargo de responsabilidad**: texto del descargo de responsabilidad.
-
       ![Propiedades de página maestra](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
@@ -395,4 +396,4 @@ La configuración del componente de documento de registro está disponible en su
 **Configuración del nivel de formulario**
 
 * **Incluir campos no enlazados en el documento de registro:** al establecer la propiedad, se incluyen los campos no enlazados del formulario adaptable basado en el esquema en el documento de registro. De forma predeterminada, es True.
-* **Excluir campos de DoR si están ocultos:** Establezca la propiedad para excluir los campos ocultos del documento de registro al enviar el formulario. Al activar [Revalidate en el servidor](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir dichos campos del documento de registro.
+<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
