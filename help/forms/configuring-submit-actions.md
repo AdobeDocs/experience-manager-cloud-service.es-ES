@@ -2,10 +2,10 @@
 title: Configurar una acción de envío para un formulario adaptable
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
 workflow-type: tm+mt
-source-wordcount: '3065'
-ht-degree: 62%
+source-wordcount: '3131'
+ht-degree: 60%
 
 ---
 
@@ -185,6 +185,10 @@ Para conectar AEM Forms al almacenamiento de Microsoft Sharepoint:
    * Añadir los permisos de API `offline_access` y `Sites.Manage.All` para proporcionar permisos de lectura y escritura.
    * Utilice la URL de OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Reemplazar `<tenant-id>` con la variable `tenant-id` de su aplicación desde el portal de Microsoft Azure.
 
+   >[!NOTE]
+   >
+   > La variable **secreto de cliente** es obligatorio o opcional depende de la configuración de la aplicación Azure Active Directory. Si la aplicación está configurada para utilizar un secreto de cliente, es obligatorio proporcionar el secreto de cliente.
+
 1. Haga clic en **[!UICONTROL Connect]**. Si la conexión es correcta, la variable `Connection Successful` aparece.
 
 1. Ahora, seleccione **Sitio de SharePoint** > **Biblioteca de documentos** > **Carpeta SharePoint**, para guardar los datos.
@@ -239,6 +243,10 @@ Para conectar AEM Forms a su almacenamiento de Microsoft OneDrive:
    * En el portal de Microsoft Azure, añada el URI de redirección como `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Reemplazar `[author-instance]` con la URL de la instancia de autor.
    * Añadir los permisos de API `offline_access` y `Files.ReadWrite.All` para proporcionar permisos de lectura y escritura.
    * Utilice la URL de OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Reemplazar `<tenant-id>` con la variable `tenant-id` de su aplicación desde el portal de Microsoft Azure.
+
+   >[!NOTE]
+   >
+   > La variable **secreto de cliente** es obligatorio o opcional depende de la configuración de la aplicación Azure Active Directory. Si la aplicación está configurada para utilizar un secreto de cliente, es obligatorio proporcionar el secreto de cliente.
 
 1. Haga clic en **[!UICONTROL Connect]**. Si la conexión es correcta, la variable `Connection Successful` aparece.
 
