@@ -1,9 +1,9 @@
 ---
 title: Entornos de desarrollo rápido
 description: Aprenda a aprovechar los entornos de desarrollo rápido para iteraciones de desarrollo rápidas en un entorno de nube.
-source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
+source-git-commit: e5a9f497e753f328ff14487f4985541c1c77ae0e
 workflow-type: tm+mt
-source-wordcount: '3069'
+source-wordcount: '3259'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,11 @@ Para implementar cambios, los entornos actuales de Cloud Development requieren e
 Los RDE permiten a los desarrolladores implementar y revisar cambios rápidamente, lo que minimiza la cantidad de tiempo necesario para probar las funciones que se ha probado que funcionan en un entorno de desarrollo local.
 
 Una vez que los cambios se han probado en un RDE, se pueden implementar en un entorno de desarrollo de nube normal a través de la canalización de Cloud Manager.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
+
+
+Puede consultar los vídeos adicionales que se muestran [cómo configurarlo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [cómo utilizarla](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)y [ciclo de vida del desarrollo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) uso de RDE.
 
 ## Introducción {#introduction}
 
@@ -138,6 +143,7 @@ Una vez añadido un RDE para el programa mediante Cloud Manager, puede interactu
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
+Para obtener más información y ver una demostración, consulte la [configuración de un RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) videotutorial.
 
 ## Uso de RDE al desarrollar una nueva función {#using-rde-while-developing-a-new-feature}
 
@@ -256,13 +262,23 @@ donde la respuesta para una implementación correcta es similar a la siguiente:
 
 <u>Implementación de una configuración de Apache/Dispatcher</u>
 
-Toda la estructura de carpetas debe presentar la forma de un archivo zip para este tipo de configuración. Puede comprimirlo ejecutando este comando desde la raíz de una carpeta de configuración de Dispatcher:
+Toda la estructura de carpetas debe presentar la forma de un archivo zip para este tipo de configuración.
 
-`zip -y -r dispatcher.zip`
+En el `dispathcer` de un proyecto AEM, puede comprimir la configuración de Dispatcher ejecutando el siguiente comando maven:
+
+`mvn clean package`
+
+o utilizando el siguiente comando zip desde el `src` del `dispatcher` módulo:
+
+`zip -y -r dispatcher.zip .`
 
 a continuación, implemente la configuración mediante este comando:
 
-`aio aem:rde:install -t dispatcher-config dispatcher-wknd-2.1.0.zip`
+`aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-X.X.X-SNAPSHOT.zip`
+
+>[!TIP]
+>
+>El comando anterior supone que está implementando la variable [WKND](https://github.com/adobe/aem-guides-wknd) configuraciones de Dispatcher del proyecto. Asegúrese de reemplazar la variable `X.X.X` con el número de versión del proyecto WKND correspondiente o el número de versión específico del proyecto al implementar la configuración de Dispatcher del proyecto.
 
 Una implementación correcta generará una respuesta similar a la siguiente:
 
@@ -342,6 +358,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
+
+Para obtener más información y ver una demostración, consulte la [cómo utilizar los comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html) videotutorial.
 
 ## Restablecer {#reset-rde}
 
@@ -464,7 +482,7 @@ Un modelo intermedio es aquel en el que una organización compra varios RDE, por
 
 ## ¿En qué se diferencia un entorno de desarrollo rápido (RDE) Cloud Service de AEM Forms de otros entornos? {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Los desarrolladores de Forms pueden utilizar AEM Forms Cloud Service Rapid Development Environment para desarrollar rápidamente Forms adaptable, Flujos de trabajo y personalizaciones como personalizar componentes principales, integraciones con sistemas de terceros, etc. El entorno de desarrollo rápido (RDE) del Cloud Service de AEM Forms no admite API de comunicación ni funciones y funciones que requieran un documento de registro, como la generación de un documento de registro al enviar un formulario adaptable. Las siguientes funciones de AEM Forms no están disponibles en un entorno de desarrollo rápido (RDE):
+Los desarrolladores de Forms pueden utilizar AEM Forms Cloud Service Rapid Development Environment para desarrollar rápidamente Forms adaptable, Flujos de trabajo y personalizaciones como personalizar componentes principales, integraciones con sistemas de terceros, etc. El entorno de desarrollo rápido (RDE) del Cloud Service de AEM Forms no es compatible con las API de comunicación ni con las funciones que requieren el documento de registro, como la generación de un documento de registro al enviar un formulario adaptable. Las siguientes funciones de AEM Forms no están disponibles en un entorno de desarrollo rápido (RDE):
 
 * Configuración de un documento de registro para un formulario adaptable
 * Generación de un documento de registro al enviar un formulario adaptable o con un paso de flujo de trabajo
@@ -474,5 +492,9 @@ Los desarrolladores de Forms pueden utilizar AEM Forms Cloud Service Rapid Devel
 
 >[!NOTE]
 >
-> No hay cambios entre la interfaz de usuario del entorno de desarrollo rápido (RDE) y otros entornos de Cloud Service para Forms. Todas las opciones relacionadas con el documento de registro, como seleccionar una plantilla de documento de registro para un formulario adaptable, siguen apareciendo en la interfaz de usuario. Estos entornos no tienen API de comunicación ni capacidades de documento de registro para probar estas opciones. Por lo tanto, cuando elige cualquier opción que requiera API de comunicación o capacidades de documento de registro, no se realiza ninguna acción y se muestra o devuelve un mensaje de error.
+> No hay diferencia entre la interfaz de usuario de Rapid Development Environment (RDE) y otros entornos de Cloud Service para Forms. Todas las opciones relacionadas con el documento de registro, como seleccionar una plantilla de documento de registro para un formulario adaptable, siguen apareciendo en la interfaz de usuario. Estos entornos no tienen API de comunicación ni capacidades de documento de registro para probar estas opciones. Por lo tanto, cuando elige cualquier opción que requiera API de comunicación o capacidades de documento de registro, no se realiza ninguna acción y se muestra o devuelve un mensaje de error.
+
+## Tutorial de RDE
+
+Para obtener más información sobre RDE en AEM as a Cloud Service, consulte la [tutorial de vídeo que muestra cómo configurarlo, cómo utilizarlo y el ciclo de vida del desarrollo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
