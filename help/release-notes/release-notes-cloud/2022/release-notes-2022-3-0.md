@@ -2,7 +2,7 @@
 title: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 97%
@@ -36,7 +36,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de marzo de 20
 
 * Los tipos de datos del modelo de contenido ahora se pueden definir como traducibles mediante una sencilla casilla de verificación en el editor de modelos de contenido. Además, las reglas y configuraciones de traducción de AEM se actualizan automáticamente.
 
-## [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
@@ -56,7 +56,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de marzo de 20
 
 * Ahora puede [ordenar etiquetas](/help/assets/organize-assets.md#use-tags-to-organize-assets) en la ventana del selector de etiquetas en orden de subida o de bajada, según el nombre de la etiqueta, la fecha de creación o la fecha de modificación.
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
 
@@ -103,7 +103,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de marzo de 20
 
 ## Cloud Manager {#cloud-manager}
 
-Puede encontrar una lista completa de las versiones mensuales de Cloud Manager [aquí](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Puede encontrar una lista completa de las versiones mensuales de Cloud Manager [aquí.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Herramienta de transferencia de contenido {#ctt-release}
 
