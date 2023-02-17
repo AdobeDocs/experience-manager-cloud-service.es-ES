@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo administrar instancias de flujo de
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
+source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 95%
 
 ---
 
@@ -63,6 +63,12 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
+   >[!NOTE]
+   >
+   >
+   >Para finalizar o cancelar un flujo de trabajo, debe estar en estado de espera para la intervención del usuario, como en una etapa de participante. Es posible que no se obtengan los resultados esperados al intentar anular un flujo de trabajo que actualmente está ejecutando trabajos (subprocesos activos que están en ejecución).
+
+
 ## Visualización de flujos de trabajo archivados {#viewing-archived-workflows}
 
 1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
@@ -76,6 +82,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
    >
    >* uso de la acción **Finalizar**
    >* cuando se elimina una página sujeta a un flujo de trabajo, este se cierra y el flujo de trabajo finaliza
+
 
 
 1. Seleccione un elemento específico y luego **Abrir historial** para ver más detalles:
