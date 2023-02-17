@@ -2,9 +2,9 @@
 title: Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido
 description: Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b0d219f712b1dbbfa70d66ac14c0a66dc89ebbab
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1613'
 ht-degree: 19%
 
 ---
@@ -27,6 +27,7 @@ Hay disponible una nueva versión de la herramienta de transferencia de contenid
 * Los registros de ingesta se mantienen y siempre están disponibles para la resolución de problemas
 
 Para empezar a utilizar la nueva versión, deberá desinstalar las versiones anteriores de la herramienta de transferencia de contenido. Esto es necesario porque la nueva versión viene con un cambio arquitectónico importante. Con la versión 2.0.10, deberá crear nuevos conjuntos de migración y volver a ejecutar la extracción y la ingesta en los nuevos conjuntos de migración. Si la migración ya está en curso, puede seguir utilizando la versión anterior de CTT hasta que se complete.
+Las versiones anteriores a la 2.0.0 ya no serán compatibles y es aconsejable utilizar la versión más reciente.
 
 Las siguientes directrices y prácticas recomendadas se aplican a la nueva versión de la herramienta de transferencia de contenido:
 
