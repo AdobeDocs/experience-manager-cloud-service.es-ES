@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '4194'
+source-wordcount: '4369'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ Puede agregar, editar, eliminar, publicar, cancelar la publicación y previsuali
 >
 >De forma predeterminada, el sistema muestra 15 ajustes preestablecidos de visualizador al seleccionar Visualizadores en la vista de detalles de un recurso. Puede aumentar este límite. Consulte [Aumente el número de ajustes preestablecidos de visor que se muestran](#increasing-the-number-of-viewer-presets-that-display).
 
-### Compatibilidad del visor con páginas web diseñadas para adaptarse {#viewer-support-for-responsive-designed-web-pages}
+### Compatibilidad del visor con páginas web interactivas {#viewer-support-for-responsive-designed-web-pages}
 
 Las diferentes páginas Web tienen diferentes necesidades. Por ejemplo, a veces se desea una página web que proporcione un vínculo que abra el visor de HTML5 en una ventana independiente del explorador. En otros casos, es necesario incrustar el visor de HTML5 directamente en la página de alojamiento. En este último caso, la página web tiene un diseño estático. O bien, es &quot;interactivo&quot; y se muestra de forma diferente en diferentes dispositivos o para diferentes tamaños de ventana del navegador. Para satisfacer estas necesidades, todos los visores predefinidos y listos para usar del HTML5 que se incluyen con Dynamic Media admiten tanto páginas web estáticas como páginas web diseñadas con capacidad de respuesta.
 
@@ -440,6 +440,19 @@ Consulte [Consideraciones especiales para la creación de un ajuste preestableci
 
 1. (Opcional) Cerca de la parte superior de la página Editar ajuste preestablecido de visualizador , seleccione **[!UICONTROL Escritorio]**, **[!UICONTROL Tablet]** o **[!UICONTROL Teléfono]** para definir de forma exclusiva estilos visuales para distintos tipos de dispositivos y pantallas.
 1. En la página Editor de ajustes preestablecidos de visualizador , seleccione la opción **[!UICONTROL Comportamiento]** pestaña . Como alternativa, puede seleccionar cualquier elemento visual en el visor para seleccionarlo para su configuración.
+Por ejemplo, para la variable *Reproductor de videos* tipo, bajo **[!UICONTROL Modificadores]** > **[!UICONTROL Reproducción]**, puede seleccionar una de las tres opciones de flujo adaptable:
+
+   * **[!UICONTROL guión]** - Los vídeos se transmiten únicamente como guiones.
+   * **[!UICONTROL hls]** - Los vídeos se transmiten solo como hls.
+   * **[!UICONTROL auto]** - Práctica recomendada. La creación de flujos DASH y HLS está optimizada para el almacenamiento. Por lo tanto, Adobe recomienda seleccionar siempre **[!UICONTROL auto]** como tipo de reproducción. Los vídeos se muestran como guiones, hls o progresivos, como se muestra a continuación:
+      * Si el explorador admite DASH, se utiliza primero la transmisión de DASH.
+      * Si el navegador no admite DASH, se utilizará el flujo HLS, segundo.
+      * Si el navegador no admite DASH o HLS, se utiliza la reproducción progresiva, por último.
+
+   >[!NOTE]
+   >
+   >Para ver y usar la variable **[!UICONTROL guión]** , primero debe activarlo el Soporte técnico de Adobe en su cuenta. Consulte [Habilitar DASH en su cuenta](/help/assets/dynamic-media/video.md#enable-dash).
+
 1. En el menú desplegable **[!UICONTROL Tipo seleccionado]**, seleccione un componente cuyos comportamientos desee cambiar.
 
    Muchos componentes del editor visual tienen una descripción detallada asociada. Estas descripciones aparecen en cuadros azules al expandir un componente para mostrar sus parámetros asociados.
@@ -454,9 +467,13 @@ Consulte [Consideraciones especiales para la creación de un ajuste preestableci
    >Después de escribir un valor en el campo de texto, seleccione en cualquier parte de la interfaz de usuario para enviar el cambio y cerrar el teclado virtual. Si selecciona **[!UICONTROL Entrar]**, no se produce ninguna acción.
 
 1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
-1. Publique el nuevo ajuste preestablecido de visor. Es necesario publicar el ajuste preestablecido para poder utilizarlo en el sitio web.
+1. Publique el nuevo ajuste preestablecido de visor. Es necesario publicar el ajuste preestablecido para poder usar la URL resultante en el sitio web.
 
    Consulte [Ajustes preestablecidos del visualizador de publicaciones](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >Para vídeos antiguos que utilizan un perfil de flujo adaptable, la URL sigue reproduciéndose como de costumbre (con transmisión HLS) hasta que [reprocesar los recursos de vídeo](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Después del reprocesamiento, la misma dirección URL seguirá funcionando pero ahora con *both* Flujo continuo DASH y HLS habilitado.
 
 ### Consideraciones especiales para crear un ajuste preestablecido de visualizador interactivo {#special-considerations-for-creating-an-interactive-viewer-preset}
 
@@ -481,7 +498,7 @@ Cuando crea o edita un ajuste preestablecido de visualizador de vídeo interacti
  </tbody>
 </table>
 
-**Acerca del comportamiento de desplazamiento automático en el visualizador de vídeo interactivo:**
+**Acerca del comportamiento de desplazamiento automático en el visor de vídeo interactivo:**
 
 El comportamiento de desplazamiento automático de las miniaturas del visor de vídeo interactivo funciona independientemente del modo de visualización que haya elegido.
 

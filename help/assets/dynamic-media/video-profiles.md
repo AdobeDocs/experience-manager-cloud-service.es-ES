@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '3656'
+source-wordcount: '3705'
 ht-degree: 7%
 
 ---
 
 # Perfiles de vídeo de Dynamic Media{#video-profiles}
 
-Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil listos para usar están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. Al codificar los vídeos de origen principales mediante el perfil de codificación de vídeo adaptable, durante la reproducción el reproductor de vídeo ajusta automáticamente la calidad del flujo de vídeo en función de la velocidad de conexión a Internet de sus clientes. Esta acción se conoce como flujo adaptable.
+Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil listos para usar están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. Al codificar los vídeos de origen principales mediante el perfil de codificación de vídeo adaptable, durante la reproducción, el reproductor de vídeo ajusta automáticamente la calidad del flujo de vídeo en función de la velocidad de conexión a Internet de sus clientes. Esta acción se conoce como flujo adaptable.
 
 A continuación se indican otros factores que determinan la calidad de los vídeos:
 
@@ -45,7 +45,7 @@ Consulte también [Perfiles para el procesamiento de metadatos, imágenes y víd
 
 ## Ajustes preestablecidos de codificación de vídeo adaptable {#adaptive-video-encoding-presets}
 
-En la tabla siguiente se identifican los perfiles de codificación de prácticas recomendadas para la transmisión de vídeo adaptable a dispositivos móviles, tabletas y equipos de escritorio. Puede utilizar estos ajustes preestablecidos para cualquier vídeo de relación de aspecto.
+En la tabla siguiente se identifican las prácticas recomendadas al codificar perfiles para flujo de vídeo adaptable a dispositivos móviles, tabletas y equipos de escritorio. Puede utilizar estos ajustes preestablecidos para cualquier vídeo de relación de aspecto.
 
 <table>
  <tbody>
@@ -112,7 +112,7 @@ Adobe Sensei está limitado a 9000 fotogramas. Es decir, cinco minutos a 30 FPS.
 >
 >Para que funcione el recorte inteligente de vídeo, debe incluir uno o varios ajustes preestablecidos de codificación de vídeo en el perfil de vídeo.
 
-Para utilizar el recorte inteligente para el vídeo, se crea un perfil de codificación de vídeo adaptable o progresivo. Como parte de su perfil, use el **[!UICONTROL Proporción de recorte inteligente]** herramienta para seleccionar relaciones de aspecto predefinidas. Por ejemplo, después de definir los ajustes preestablecidos de codificación de vídeo, puede añadir una definición de &quot;Horizontal móvil&quot; con una relación de aspecto de 16x9 y una definición de &quot;Vertical móvil&quot; con una relación de aspecto de 9x16. Otros aspectos o relaciones de recorte desde los que puede elegir incluyen 1x1, 4x3 y 4x5.
+Para utilizar el recorte inteligente para el vídeo, se crea un perfil de codificación de vídeo adaptable o progresivo. Como parte de su perfil, use el **[!UICONTROL Proporción de recorte inteligente]** herramienta para seleccionar relaciones de aspecto predefinidas. Por ejemplo, después de definir los ajustes preestablecidos de codificación de vídeo, puede añadir una definición de &quot;Horizontal móvil&quot; con una relación de aspecto de 16x9 y una definición de &quot;Vertical móvil&quot; con una relación de aspecto de 9x16. Otros aspectos o relaciones de recorte desde los que puede elegir incluir 1x1, 4x3 y 4x5.
 
 ![Edición de un perfil de codificación de vídeo con recorte inteligente](assets/edit-smart-crop-video2.png)
 
@@ -243,7 +243,7 @@ Ahora puede aplicar el perfil a las carpetas que contienen vídeos. Consulte [Ap
 
 ## Usar parámetros de codificación de vídeo personalizados {#using-custom-added-video-encoding-parameters}
 
-Puede editar un perfil de codificación de vídeo existente para aprovechar los parámetros avanzados de codificación de vídeo que no se encuentran en la interfaz de usuario al crear o editar un perfil de vídeo en Experience Manager. Puede agregar de forma personalizada uno o más parámetros avanzados, como minBitrate y maxBitrate, a su perfil existente.
+Puede editar un perfil de codificación existente para vídeo para aprovechar los parámetros avanzados de codificación de vídeo que no se encuentran en la interfaz de usuario al crear o editar un perfil de vídeo en Experience Manager. Puede agregar de forma personalizada uno o más parámetros avanzados, como minBitrate y maxBitrate, a su perfil existente.
 
 **Para utilizar parámetros de codificación de vídeo personalizados:**
 
@@ -274,7 +274,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
    <td><code>keyframe</code></td>
    <td>El número de fotogramas de destino entre fotogramas clave. Calcule este valor para poder generar un fotograma clave cada 2-10 segundos. Por ejemplo, a 30 fotogramas por segundo, el intervalo de fotogramas clave es de 60-300.<br /> <br /> Los intervalos más bajos de los fotogramas clave mejoran la búsqueda de flujo y el comportamiento de conmutación de flujo para las codificaciones de vídeo adaptables, y también pueden mejorar la calidad de los vídeos que tienen mucho movimiento. Sin embargo, debido a que los fotogramas clave aumentan el tamaño de un archivo, un intervalo de fotogramas clave inferior generalmente da como resultado una menor calidad de vídeo general a una velocidad de bits determinada.</td>
    <td><code>String</code></td>
-   <td><p>Número positivo.</p> <p>El valor predeterminado es 300.</p> <p>El valor recomendado para HLS (HTTP Live Streaming) es 60-90.</p> </td>
+   <td><p>Número positivo.</p> <p>El valor predeterminado es 300.</p> <p>El valor recomendado para HLS o DASH (flujo adaptable) es 60-90. (Para ver o usar DASH, primero debe estar habilitado por el servicio de asistencia técnica de Adobe en su cuenta. Consulte <a href="/help/assets/dynamic-media/video.md#enable-dash">Habilitar DASH en su cuenta</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -292,7 +292,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
    <td><code>audioBitrateCustom</code></td>
    <td>Definir valor como <code>true</code> para forzar una velocidad de bits constante para el flujo de audio, si es compatible con el códec de audio.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>El valor predeterminado es <code>false</code>.</p> <p>El valor recomendado para HLS (HTTP Live Streaming) es <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>El valor predeterminado es <code>false</code>.</p> <p>El valor recomendado para HLS o DASH es <code>false</code>. (Para ver o usar DASH, primero debe estar habilitado por el servicio de asistencia técnica de Adobe en su cuenta. Consulte <a href="/help/assets/dynamic-media/video.md#enable-dash">Habilitar DASH en su cuenta</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
