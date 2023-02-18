@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d711057024e62aab00d76f40a729ee59590bbb59
+source-git-commit: 1fb28674df6ea45589d3b44237edfb51ef167756
 workflow-type: tm+mt
 source-wordcount: '10264'
 ht-degree: 4%
@@ -1347,7 +1347,7 @@ T**o add a custom video thumbnail**,
 
 -->
 
-## Modificación de la URL de Dynamic Media para los recursos de Dynamic Media
+## Cambiar la URL de Dynamic Media para los recursos de Dynamic Media
 
 Los vídeos procesados en Dynamic Media se pueden utilizar mediante visores integrados, así como accediendo directamente a las direcciones URL de manifiesto y reproduciéndolos a través de sus propios visores personalizados. La siguiente es la API para recuperar direcciones URL de manifiesto para un vídeo.
 
@@ -1409,8 +1409,7 @@ dependency>
 </dependency> 
 ```
 
-+++
-**Servlet de ejemplo**
++++**Servlet de ejemplo**
 
 ```java
 @Component
@@ -1487,8 +1486,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
-+++
-**Clase de respuesta para servlet**
++++**Clase de respuesta para servlet**
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1516,9 +1514,7 @@ public abstract class VideoResponse {
 
 +++
 
-
-+++
-**Archivo de constantes al que se hace referencia en el servlet**
++++**Archivo de constantes al que se hace referencia en el servlet**
 
 ```java
 public final class Constants { 
@@ -1535,8 +1531,7 @@ public final class Constants {
 
 +++
 
-+++
-**ServletContext**
++++**ServletContext**
 
 Monte el servlet anterior utilizando un `servletContext`. El siguiente es un ejemplo de `servletContext`.
 
