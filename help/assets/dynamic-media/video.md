@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 4b51ace98d547a6a31f30d6348508a71266dbfed
+source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
 workflow-type: tm+mt
-source-wordcount: '10300'
+source-wordcount: '10318'
 ht-degree: 4%
 
 ---
@@ -157,9 +157,9 @@ En el lado de diseño del reproductor, puede diseñar la funcionalidad del repro
 
 En el lado de reproducción del visor, detecta automáticamente la capacidad de vídeo del explorador. A continuación, sirve el vídeo utilizando HLS o DASH, también conocido como flujo de vídeo adaptable. O, si esos métodos de envío no están presentes, se utiliza HTML5 progresiva en su lugar.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Para ver o utilizar DASH, primero debe activarlo el Soporte técnico de Adobe en su cuenta. Consulte [Habilitar DASH en su cuenta](#enable-dash).)
+>Para usar DASH en los vídeos, primero debe activarlo el servicio de asistencia técnica de Adobe en su cuenta. Consulte [Habilitar DASH en su cuenta](#enable-dash).)
 
 Puede combinar en un solo reproductor la capacidad de diseñar los componentes de reproducción mediante HTML5 y CSS. Puede tener reproducción incrustada y utilizar flujo adaptable y progresivo según la capacidad del explorador. Toda esta funcionalidad significa que puede ampliar el alcance del contenido multimedia enriquecido a los usuarios de escritorio y móviles, y garantizar una experiencia de vídeo optimizada.
 
@@ -174,9 +174,9 @@ La reproducción de vídeo se produce mediante HLS o DASH, o bien mediante desca
 
 Sin embargo, en el Experience Manager 6.3 y en adelante, los vídeos ahora se transmiten a través de HTTPS (es decir, HLS o DASH) porque la URL del servicio de puerta de enlace DM también utiliza HTTPS. Este comportamiento predeterminado no afecta al cliente. Es decir, el flujo de vídeo siempre se producirá a través de HTTPS a menos que el explorador no lo admita. (véase la tabla siguiente).
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Para ver o utilizar DASH, primero debe activarlo el Soporte técnico de Adobe en su cuenta. Consulte [Habilitar DASH en su cuenta](#enable-dash).)
+>Para usar DASH en los vídeos, primero debe activarlo el servicio de asistencia técnica de Adobe en su cuenta. Consulte [Habilitar DASH en su cuenta](#enable-dash).)
 
 Por tanto,
 
@@ -256,7 +256,7 @@ En la tabla siguiente se describe el dispositivo, el explorador y el método de 
 
 >[!IMPORTANT]
 >
->*Para ver o usar DASH, primero debe ser habilitado por el servicio de asistencia técnica de Adobe en su cuenta. Consulte [Habilitar DASH en su cuenta](#enable-dash).)
+>*Para usar DASH en tus vídeos, primero debe ser habilitado por el servicio de asistencia técnica de Adobe en tu cuenta. Consulte [Habilitar DASH en su cuenta](#enable-dash).)
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -1396,9 +1396,13 @@ La API devuelve nulo si hay errores. Las excepciones se registran en los registr
 * `IOException` se registra cuando hay un problema de conexión a Dynamic Media.
 * `UnsupportedOperationException` se registra cuando una `manifestType` parámetro pasado es `ManifestType.DASH`, mientras que el vídeo no se ha procesado con formato DASH.
 
-El siguiente es un ejemplo de la API anterior que utiliza servlets escritos en *Tablero blanco de TPWite* especificación.
+El siguiente es un ejemplo de la API anterior que utiliza servlets escritos en *Tablero blanco de TPWite* especificación. Seleccione cada pestaña para la sintaxis del código.
 
-**Añadir dependencia en pom.xml**
+>[!BEGINTABS]
+
+>[!TAB Añadir dependencia en pom.xml]
+
++++**Añadir dependencia en pom.xml**
 
 ```java
 dependency> 
@@ -1409,7 +1413,7 @@ dependency>
 </dependency> 
 ```
 
->[!BEGINTABS]
++++
 
 >[!TAB Servlet de ejemplo]
 
@@ -1650,6 +1654,19 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 +++
 
 >[!ENDTABS]
+
++++**Añadir dependencia en pom.xml**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
 
 +++**Servlet de ejemplo**
 
