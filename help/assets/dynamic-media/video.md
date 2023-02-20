@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
+source-git-commit: f3d8f0a7a5c41ecca7bced1d5de9017ada422f7a
 workflow-type: tm+mt
-source-wordcount: '10318'
+source-wordcount: '10322'
 ht-degree: 4%
 
 ---
@@ -204,7 +204,7 @@ En la tabla siguiente se describe el dispositivo, el explorador y el método de 
   <tr>
    <td>Escritorio</td>
    <td>Internet Explorer 11+</td>
-   <td>En Windows® 8 y Windows® 10: forzar el uso de HTTPS siempre que se solicite HLS. Limitación conocida: HTTP en HLS no funciona en esta combinación de navegador/sistema operativo<br /> <br /> En Windows® 7 - Descarga progresiva. Utiliza lógica estándar para seleccionar protocolo HTTP o HTTPS.</td>
+   <td>En Windows® 8 y Windows® 10: forzar el uso de HTTPS siempre que se solicite DASH o HLS. Limitación conocida: HTTP en DASH o HLS no funciona en esta combinación de navegador/sistema operativo<br /> <br /> En Windows® 7 - Descarga progresiva. Utiliza lógica estándar para seleccionar protocolo HTTP o HTTPS.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
@@ -448,8 +448,7 @@ Cree un caso de asistencia como se describe a continuación. En su caso de asist
 1. El servicio de asistencia al cliente de Adobe le agrega a la lista de espera de clientes de DASH en función del orden en que se envían las solicitudes.
 1. Cuando el Adobe está listo para gestionar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo para la habilitación de DASH.
 1. El Servicio de atención al cliente le notifica cuando haya terminado.
-1. Cree su [ajuste preestablecido del visor de vídeo](#creating-a-new-viewer-preset) como de costumbre.
-
+1. Cree su [ajuste preestablecido del visor de vídeo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costumbre.
 
 ## Publicar vídeos en YouTube {#publishing-videos-to-youtube}
 
