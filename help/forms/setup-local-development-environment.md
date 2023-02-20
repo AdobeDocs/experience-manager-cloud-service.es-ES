@@ -2,10 +2,10 @@
 title: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 description: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 100%
+source-wordcount: '2974'
+ht-degree: 89%
 
 ---
 
@@ -112,7 +112,7 @@ Aunque QuickStart proporciona una experiencia de desarrollo local, no todas las 
 
 Para instalar y configurar el entorno local de Experience Manager, realice los siguientes pasos:
 
-* [Descargue y extraiga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) el SDK [!DNL Adobe Experience Manager] as a Cloud Service
+* [Descargue y extraiga](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) el SDK [!DNL Adobe Experience Manager] as a Cloud Service
 * [Configure una instancia Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es#set-up-local-aem-author-service)
 * [Configure una instancia de Publish](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es#set-up-local-aem-publish-service)
 
@@ -124,7 +124,7 @@ Realice los siguientes pasos en el orden indicado para agregar el archivo de For
 
 El archivo de características de Adobe Experience Manager Forms as a Cloud Service proporciona herramientas para crear, agregar estilos y optimizar formularios adaptables en el entorno de desarrollo local. Instale el paquete para crear un formulario adaptable y utilice otras características de [!DNL AEM Forms]. Para instalar el paquete, haga lo siguiente:
 
-1. Descargue y extraiga el archivo[!DNL AEM Forms] más reciente para su sistema operativo desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+1. Descargue y extraiga el archivo[!DNL AEM Forms] más reciente para su sistema operativo desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html).
 
 1. Navegue hasta el directorio crx-quickstart/install. Si la carpeta no existe, créela.
 
@@ -191,15 +191,14 @@ AEM Forms as a Cloud Services proporciona un entorno SDK basado en Docker que fa
    * (Apple macOS) Instale [Docker Desktop para Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Incluye Docker Engine, Docker CLI client, Docker Compose, Docker Content Trust, Kubernetes y Credential Helper.
 
    * (Para Linux®) Instale [Docker Engine](https://docs.docker.com/engine/install/#server) y [Docker Compose](https://docs.docker.com/compose/install/) en su máquina.
-
    >[!NOTE]
    >
    > * Para Apple macOS, incluya en la lista de permitidos las carpetas que contengan instancias de locales de AEM Author.
    >
    > * Docker Desktop para Windows admite dos backends, Hyper-V
-   > (heredado) y WSL2 (moderno). El uso compartido de archivos lo administra automáticamente
-   > Docker cuando se utiliza WSL2 (moderno). Tiene que
-   > configurar explícitamente el uso compartido de archivos mientras utiliza Hyper-V (heredado).
+      > (heredado) y WSL2 (moderno). El uso compartido de archivos lo administra automáticamente
+      > Docker cuando se utiliza WSL2 (moderno). Tiene que
+      > configurar explícitamente el uso compartido de archivos mientras utiliza Hyper-V (heredado).
 
 
 1. Cree una carpeta, por ejemplo aem-sdk, en paralelo a las instancias Author y Publish. Por ejemplo, C:\aem-sdk.
@@ -242,7 +241,7 @@ Utilice este proyecto para crear formularios adaptables, implementar actualizaci
 >[!NOTE]
 >
 > Configure la versión 30 o posterior de AEM Archetype para obtener y utilizar los modelos de datos de formulario Microsoft® Dynamics 365 y Salesforce con AEM Forms as a Cloud Service.
-> Configure la versión 32 o posterior de AEM Archetype para obtener y utilizar los temas Tranquil, Urbane y Ultramarine con AEM Forms as a Cloud Service.
+Configure la versión 32 o posterior de AEM Archetype para obtener y utilizar los temas Tranquil, Urbane y Ultramarine con AEM Forms as a Cloud Service.
 
 Para configurar el proyecto, haga lo siguiente:
 
@@ -253,19 +252,21 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **Cree un proyecto de [!DNL Experience Manager Forms] as a [Cloud Service]:** Cree un proyecto de [!DNL Experience Manager Forms] as a [Cloud Service] basado en [AEM Archetype 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) o posterior. El tipo de archivo ayuda a los desarrolladores a empezar a desarrollar fácilmente [!DNL AEM Forms] as a Cloud Service. También incluye algunas temáticas de muestra y plantillas para ayudarle a empezar rápidamente.
+1. **Cree un [!DNL Experience Manager Forms] como [Cloud Service] proyecto:** Cree un [!DNL Experience Manager Forms] como [Cloud Service] proyecto basado en la última [Tipo de archivo AEM](https://github.com/adobe/aem-project-archetype) o posterior. El tipo de archivo ayuda a los desarrolladores a empezar a desarrollar fácilmente [!DNL AEM Forms] as a Cloud Service. También incluye algunas temáticas de muestra y plantillas para ayudarle a empezar rápidamente.
 
    Abra el símbolo del sistema y ejecute el siguiente comando para crear un proyecto de [!DNL Experience Manager Forms] as a Cloud Service.
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y"
+   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
    ```
 
-   Cambie el `appTitle`, `appId`y `groupId` en el comando anterior para reflejar su entorno.
+   Cambie el `appTitle`, `appId`y `groupId` en el comando anterior para reflejar su entorno. Además, establezca el valor para includeFormsenmembership, includeFormsCommunications e includeFormsheadless en `y` o `n` según su licencia y sus requisitos. includeFormsheadless es obligatorio para crear Forms adaptable basado en componentes principales.
 
-   * Utilice la opción `includeFormsenrollment=y` para incluir configuraciones, temáticas, plantillas, componentes principales y dependencias específicos para formularios, que son necesarios para crear formularios adaptables. Si utiliza el portal de Forms establezca la opción `includeExamples=y`. Agregue al proyecto los componentes principales del portal de Forms.
+   * Utilice la opción `includeFormsenrollment=y` para incluir configuraciones, temáticas, plantillas, componentes principales y dependencias específicos para formularios, que son necesarios para crear formularios adaptables. Si utiliza el portal de Forms establezca la opción `includeExamples=y`. También agrega al proyecto los componentes principales de Forms Portal.
 
-   * Utilice la opción `includeFormscommunications=y`que incluye los componentes principales de Forms y las dependencias necesarias para incluir la funcionalidad de comunicaciones del cliente.
+   * Utilice la variable `includeFormscommunications=y` para incluir los componentes principales de Forms y las dependencias necesarias para incluir la funcionalidad de comunicaciones del cliente.
+
+   * Utilice la variable `includeFormsheadless` para añadir artefactos y bibliotecas necesarios para crear Forms adaptable sin encabezado.
 
 1. Implemente el proyecto en su entorno de desarrollo local. Puede utilizar el siguiente comando para implementarlo en su entorno de desarrollo local
 
@@ -329,6 +330,101 @@ Realice los siguientes pasos para configurar la memoria caché de Dispatcher par
 * Cuando usa el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y la opción Usar configuración regional del explorador está activada en el Administrador de configuración, se proporciona una versión localizada del formulario adaptable, si está disponible. El idioma del formulario adaptable localizado se basará en la configuración local del explorador (explorador local). Puede llevar a [almacenar en caché solo la primera instancia de un formulario adaptable]. Para evitar que el problema se produzca en su instancia, consulte [solo se almacena en caché la primera instancia de un formulario adaptable](troubleshooting-caching-performance.md) en la sección Solución de problemas.
 
 El entorno de desarrollo local está listo.
+
+## Habilitar los componentes principales adaptables de Forms para un proyecto basado en tipos de archivo AEM existente {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
+
+Si utiliza AEM programa basado en Arquetipo versión 40 o posterior para AEM Forms as a Cloud Service, los componentes principales se habilitan automáticamente para su entorno.
+
+Para habilitar los componentes principales de Forms adaptables para su entorno as a Cloud Service de AEM Forms en función de versiones anteriores del tipo de archivo, incruste los artefactos de los ejemplos de componentes principales de WCM y los artefactos de los componentes principales de Forms (incluidos ejemplos) en su proyecto:
+
+1. Abra la carpeta AEM proyecto Tipo de archivo en un editor de código de texto sin formato. Por ejemplo, Código VS.
+
+1. Abra el archivo .pom de nivel superior (pom principal) del proyecto de tipo de archivo AEM en el entorno local, añada las siguientes propiedades al archivo y guárdelo.
+
+   ```XML
+   <properties>
+       <core.forms.components.version>2.0.4</core.forms.components.version> <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
+       <core.wcm.components.version>2.21.2</core.wcm.components.version>
+   </properties>
+   ```
+
+   Para la última versión de `core.forms.components` y `core.wcm.components`, compruebe [documentación de componentes principales](https://github.com/adobe/aem-core-forms-components).
+
+1. En la sección dependencias del archivo ppm.xml de nivel superior (principal), agregue las siguientes dependencias:
+
+   ```XML
+       <!-- Forms Core Component Dependencies -->
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-core</artifactId>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-apps</artifactId>
+                   <version>${core.forms.components.version}</version>
+                   <type>zip</type>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-af-core</artifactId>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-af-apps</artifactId>
+                   <version>${core.forms.components.version}</version>
+                   <type>zip</type>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-examples-apps</artifactId>
+                   <type>zip</type>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-examples-content</artifactId>
+                   <type>zip</type>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+       <!-- End of AEM Forms Core Component Dependencies -->
+   ```
+
+1. Abra el archivo all/pom.xml y agregue las siguientes dependencias para agregar artefactos de componentes principales de Forms adaptable a su proyecto de tipo de archivo AEM:
+
+   ```XML
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-af-apps</artifactId>
+           <type>zip</type>
+       </dependency>
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-examples-apps</artifactId>
+           <type>zip</type>
+       </dependency>
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-examples-content</artifactId>
+           <type>zip</type>
+       </dependency>
+   ```
+
+   >[!NOTE]
+   Asegúrese de que los siguientes artefactos de los componentes principales de Forms adaptable no estén incluidos en el proyecto.
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-apps</artifactId>`
+   `</dependency>`
+   y
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-core</artifactId>`
+   `</dependency>`
+
+1. [Ejecutar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es). Una vez ejecutada correctamente la canalización, los componentes principales de Forms adaptables se habilitan para su entorno. Además, la plantilla de Forms adaptable (componentes principales) y el tema del lienzo se añaden al entorno as a Cloud Service de Forms.
+
 
 ## Actualice su entorno de desarrollo local {#upgrade-your-local-development-environment}
 

@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo crear un formulario adaptable medi
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 54%
+source-wordcount: '1406'
+ht-degree: 52%
 
 ---
 
@@ -29,6 +29,7 @@ Antes de comenzar, conozca el tipo de componentes de Forms disponibles para uste
 
 Para crear un formulario adaptable, es necesario lo siguiente:
 
+* **Habilitar los componentes principales adaptables de Forms para su entorno**: Si utiliza AEM programa basado en tipo de archivo versión 40 o posterior, los componentes principales se habilitan automáticamente para su entorno. Para habilitar los componentes principales adaptables de Forms para su entorno as a Cloud Service de AEM Forms en función de versiones anteriores del tipo de archivo, consulte [Habilitar los componentes principales adaptables de Forms para su entorno](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
 * **Una plantilla de formulario adaptable**: Una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece opciones para definir una temática y una acción de envío. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. Por ejemplo, enviar los datos recopilados a una fuente de datos. El servicio de nube proporciona una plantilla OOTB con el nombre en blanco:
 
    * La variable `blank` se incluye en todos los programas as a Cloud Service de AEM Forms nuevos.
