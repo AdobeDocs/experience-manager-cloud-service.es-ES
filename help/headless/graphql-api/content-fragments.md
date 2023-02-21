@@ -3,7 +3,7 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e156ed7348815e02c942cb8feace70c675956752
+source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
 workflow-type: tm+mt
 source-wordcount: '4203'
 ht-degree: 58%
@@ -558,7 +558,7 @@ Para ver más ejemplos, consulte lo siguiente:
 
 >[!NOTE]
 >
->Para obtener el mejor rendimiento, tenga en cuenta [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+>Para obtener el mejor rendimiento, tenga en cuenta [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Esta función permite ordenar los resultados de la consulta según un campo especificado.
 
@@ -625,7 +625,7 @@ query {
 
 >[!NOTE]
 >
->Para obtener el mejor rendimiento, tenga en cuenta [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+>Para obtener el mejor rendimiento, tenga en cuenta [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Esta función le permite realizar paginación en tipos de consulta que devuelven una lista. Se proporcionan dos métodos:
 

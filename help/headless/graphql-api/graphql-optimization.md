@@ -1,7 +1,7 @@
 ---
 title: Optimización de consultas de GraphQL
 description: Aprenda a optimizar las consultas de GraphQL al filtrar, empaquetar y ordenar los fragmentos de contenido en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
-source-git-commit: e156ed7348815e02c942cb8feace70c675956752
+source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Antes de aplicar estas recomendaciones de optimización, considere [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-paging-sorting-content-update.md) para obtener el mejor rendimiento.
+>Antes de aplicar estas recomendaciones de optimización, considere [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) para obtener el mejor rendimiento.
 
 En una instancia de AEM con un número elevado de fragmentos de contenido que comparten el mismo modelo, las consultas de listas de GraphQL pueden resultar costosas (en términos de recursos).
 
