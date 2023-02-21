@@ -1,12 +1,12 @@
 ---
-title: Introducción a AEM Headless
-description: Obtenga información acerca de Adobe Experience Manager (AEM) as a Headless CMS con una combinación de documentación detallada y recorridos sin encabezado. Descubra cómo se utilizan funciones como los modelos de contenido, los fragmentos de contenido y una API de GraphQL para potenciar las experiencias sin encabezado.
-landing-page-description: Obtenga información sobre cómo utilizar y administrar Experience Manager Headless as a Cloud Service.
+title: Introducción a Headless para AEM
+description: Obtenga información sobre Headless en Adobe Experience Manager (AEM) con una combinación de documentación detallada y recorridos sin encabezado. Descubra cómo se utilizan funciones como los modelos de contenido, los fragmentos de contenido y una API de GraphQL para potenciar las experiencias sin encabezado.
+landing-page-description: Aprenda a utilizar y administrar sin encabezado en Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
+source-git-commit: 58a7886e32664dddfd3ca9c888717452ed5d362a
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '675'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ La implementación sin encabezado renuncia a la administración de páginas y co
 
 ![Modelos de implementación de AEM](assets/aem-implementation-models.png)
 
-## Características de AEM Headless {#aem-headless-features}
+## Características {#aem-headless-features}
 
 AEM as a Cloud Service es una herramienta flexible para el modelo de implementación sin encabezado que ofrece tres potentes características:
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service es una herramienta flexible para el modelo de implementac
    * La API de REST de AEM Assets es compatible con las operaciones de CRUD de fragmento de contenido.
    * La entrega de contenido directa también es posible con la [Exportación JSON del componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es).
 
-## Primeros pasos con AEM Headless {#first-steps}
+## Sus primeros pasos {#first-steps}
 
 Hay varios recursos disponibles para empezar a utilizar las funciones sin encabezado de AEM. Cada guía está diseñada para diferentes casos de uso y audiencias.
 
