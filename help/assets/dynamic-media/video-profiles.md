@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 41e17fdae57244d83c8ee715326a0ee41488ba60
+source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 7%
@@ -274,7 +274,7 @@ Puede editar un perfil de codificación existente para vídeo para aprovechar lo
    <td><code>keyframe</code></td>
    <td>El número de fotogramas de destino entre fotogramas clave. Calcule este valor para poder generar un fotograma clave cada 2-10 segundos. Por ejemplo, a 30 fotogramas por segundo, el intervalo de fotogramas clave es de 60-300.<br /> <br /> Los intervalos más bajos de los fotogramas clave mejoran la búsqueda de flujo y el comportamiento de conmutación de flujo para las codificaciones de vídeo adaptables, y también pueden mejorar la calidad de los vídeos que tienen mucho movimiento. Sin embargo, debido a que los fotogramas clave aumentan el tamaño de un archivo, un intervalo de fotogramas clave inferior generalmente da como resultado una menor calidad de vídeo general a una velocidad de bits determinada.</td>
    <td><code>String</code></td>
-   <td><p>Número positivo.</p> <p>El valor predeterminado es 300.</p> <p>El valor recomendado para HLS o DASH (flujo adaptable) es 60-90. (Para usar DASH, para los vídeos, primero debe activarlo el Soporte técnico de Adobe en su cuenta. Consulte <a href="/help/assets/dynamic-media/video.md#enable-dash">Habilitar DASH en su cuenta</a>.)</p> </td>
+   <td><p>Número positivo.</p> <p>El valor predeterminado es 300.</p> <p>El valor recomendado para HLS o DASH (flujo adaptable) es 60-90. (Para usar DASH en los vídeos, primero debe activarlo el servicio de asistencia técnica de Adobe en su cuenta. Consulte <a href="/help/assets/dynamic-media/video.md#enable-dash">Habilitar DASH en su cuenta</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
