@@ -1,7 +1,7 @@
 ---
 title: Actualización de los fragmentos de contenido para paginación y ordenación
 description: Obtenga información sobre cómo actualizar los fragmentos de contenido para paginación y ordenación en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
-source-git-commit: 130f653a1b0db55ea6d49a87be1215001223bf78
+source-git-commit: d12e2c3c23b5c0eebe35038c6c461c7f05dedc55
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 6%
@@ -32,7 +32,7 @@ Para ejecutar el procedimiento, siga estos pasos:
 
    Las variables disponibles son:
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
