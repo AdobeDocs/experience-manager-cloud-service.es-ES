@@ -2,10 +2,10 @@
 title: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 description: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 55a53f23ee81877bd3a6ba3b9b0a1c3c98edb764
 workflow-type: tm+mt
-source-wordcount: '2974'
-ht-degree: 89%
+source-wordcount: '2960'
+ht-degree: 90%
 
 ---
 
@@ -257,7 +257,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    Abra el símbolo del sistema y ejecute el siguiente comando para crear un proyecto de [!DNL Experience Manager Forms] as a Cloud Service.
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
    ```
 
    Cambie el `appTitle`, `appId`y `groupId` en el comando anterior para reflejar su entorno. Además, establezca el valor para includeFormsenmembership, includeFormsCommunications e includeFormsheadless en `y` o `n` según su licencia y sus requisitos. includeFormsheadless es obligatorio para crear Forms adaptable basado en componentes principales.
@@ -265,8 +265,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    * Utilice la opción `includeFormsenrollment=y` para incluir configuraciones, temáticas, plantillas, componentes principales y dependencias específicos para formularios, que son necesarios para crear formularios adaptables. Si utiliza el portal de Forms establezca la opción `includeExamples=y`. También agrega al proyecto los componentes principales de Forms Portal.
 
    * Utilice la variable `includeFormscommunications=y` para incluir los componentes principales de Forms y las dependencias necesarias para incluir la funcionalidad de comunicaciones del cliente.
-
-   * Utilice la variable `includeFormsheadless` para añadir artefactos y bibliotecas necesarios para crear Forms adaptable sin encabezado.
 
 1. Implemente el proyecto en su entorno de desarrollo local. Puede utilizar el siguiente comando para implementarlo en su entorno de desarrollo local
 
