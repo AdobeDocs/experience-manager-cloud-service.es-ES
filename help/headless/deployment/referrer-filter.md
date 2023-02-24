@@ -4,9 +4,9 @@ description: El filtro de referente de Adobe Experience Manager habilita el acce
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 69%
 
 El filtro de referente de Adobe Experience Manager habilita el acceso desde hosts de terceros.
 
-Se necesita una configuración OSGi para el filtro de referente para habilitar el acceso al extremo GraphQL para aplicaciones sin encabezado a través del POST HTTP. Cuando se utilizan AEM consultas persistentes sin encabezado que acceden a AEM a través de la GET HTTP, no es necesario configurar un filtro de referente.
+Se necesita una configuración OSGi para el filtro de referente para habilitar el acceso al punto final de GraphQL para aplicaciones sin encabezado en HTTP POST. Cuando se utilizan consultas persistentes de AEM sin encabezado que acceden a AEM a través de HTTP GET, no es necesario configurar un filtro de referente.
 
 >[!WARNING]
-> AEM filtro de referente no es una fábrica de configuración OSGi, lo que significa que solo una configuración está activa en un servicio de AEM a la vez. Cuando sea posible, evite agregar configuraciones de filtro de referente personalizadas, ya que esto sobrescribirá AEM configuraciones nativas y puede dañar la funcionalidad del producto.
+> El filtro de referente de AEM no es una fábrica de configuración OSGi, lo que significa que solo una configuración está activa en un servicio de AEM a la vez. Cuando sea posible, evite agregar configuraciones de filtro de referente personalizadas, ya que esto sobrescribirá las configuraciones nativas de AEM y puede dañar la funcionalidad del producto.
 
 Para ello, añada una configuración OSGi adecuada para el filtro de referente que:
 
