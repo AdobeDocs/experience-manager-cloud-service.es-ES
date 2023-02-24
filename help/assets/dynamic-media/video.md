@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '10066'
+source-wordcount: '10103'
 ht-degree: 4%
 
 ---
@@ -245,7 +245,7 @@ En la tabla siguiente se describe el dispositivo, el explorador y el método de 
   <tr>
    <td>Móvil</td>
    <td>Chrome (iOS)</td>
-   <td>Flujo continuo adaptable HLS o DASH*</td>
+   <td>Flujo adaptable HLS</td>
   </tr>
  </tbody>
 </table>
@@ -414,7 +414,7 @@ Dynamic Media recomienda utilizar ajustes preestablecidos de codificación de v�
 
 ### Habilitar DASH en su cuenta {#enable-dash}
 
-DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para la transmisión de vídeo y se adopta ampliamente en los distintos visores de vídeo. Al habilitar DASH, se obtiene la opción de elegir entre HLS o DASH para flujo de vídeo adaptable. También puede optar por ambos con el cambio automático entre reproductores.
+DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para la transmisión de vídeo y se adopta ampliamente en los distintos visores de vídeo. Cuando DASH está habilitado en su cuenta, tiene la opción de elegir entre DASH o HLS para flujo de vídeo adaptable. O bien, puede optar por ambas con el cambio automático entre reproductores cuando **[!UICONTROL auto]** se selecciona como el tipo de reproducción en el ajuste preestablecido de visualizador.
 
 Algunas de las ventajas clave de habilitar DASH en su cuenta son:
 
@@ -425,13 +425,13 @@ Algunas de las ventajas clave de habilitar DASH en su cuenta son:
 * Ayuda a que el envío de vídeo sea más accesible para sus clientes.
 * Obtenga también la URL de flujo continuo mediante API.
 
+   >[!IMPORTANT]
+   >
+   >Actualmente, la activación de DASH en su cuenta solo está disponible en Norteamérica.
+
 Se inicia una solicitud para utilizar DASH; no se habilita automáticamente en su cuenta.
 
->[!IMPORTANT]
->
->Actualmente, la activación de DASH en su cuenta solo está disponible en Norteamérica.
-
-Cree un caso de asistencia como se describe a continuación. En su caso de asistencia, asegúrese de mencionar que desea habilitar DASH en su cuenta.
+Para habilitar DASH en su cuenta, cree un caso de asistencia al cliente como se describe a continuación. En su caso de asistencia, especifique que desea habilitar DASH en su cuenta de Dynamic Media y en el Experience Manager.
 
 **Para habilitar DASH en su cuenta:**
 
@@ -439,7 +439,8 @@ Cree un caso de asistencia como se describe a continuación. En su caso de asist
 1. Siga las instrucciones para crear un caso de asistencia y, a la vez, proporcione la siguiente información:
 
    * Nombre de contacto principal, correo electrónico, teléfono.
-   * Desea habilitar DASH en su cuenta de Dynamic Media.
+   * Nombre de la cuenta de Dynamic Media.
+   * Especifique que desea habilitar DASH en su cuenta de Dynamic Media y en el Experience Manager.
 
 1. El servicio de asistencia al cliente de Adobe le agrega a la lista de espera de clientes de DASH en función del orden en que se envían las solicitudes.
 1. Cuando el Adobe está listo para gestionar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo para la habilitación de DASH.

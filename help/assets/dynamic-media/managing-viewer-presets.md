@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '4369'
-ht-degree: 9%
+source-wordcount: '4382'
+ht-degree: 8%
 
 ---
 
@@ -442,8 +442,8 @@ Consulte [Consideraciones especiales para la creación de un ajuste preestableci
 1. En la página Editor de ajustes preestablecidos de visualizador , seleccione la opción **[!UICONTROL Comportamiento]** pestaña . Como alternativa, puede seleccionar cualquier elemento visual en el visor para seleccionarlo para su configuración.
 Por ejemplo, para la variable *Reproductor de videos* tipo, bajo **[!UICONTROL Modificadores]** > **[!UICONTROL Reproducción]**, puede seleccionar una de las tres opciones de flujo adaptable:
 
-   * **[!UICONTROL guión]** - Los vídeos se transmiten únicamente como guiones.
-   * **[!UICONTROL hls]** - Los vídeos se transmiten solo como hls.
+   * **[!UICONTROL guión]** - Los vídeos se transmiten solo como DASH. Sin embargo, en los dispositivos Safari/iOS, debe seleccionar **[!UICONTROL hls]** como tipo, en su lugar.
+   * **[!UICONTROL hls]** - Los vídeos se transmiten solo como HLS.
    * **[!UICONTROL auto]** - Práctica recomendada. La creación de flujos DASH y HLS está optimizada para el almacenamiento. Por lo tanto, Adobe recomienda seleccionar siempre **[!UICONTROL auto]** como tipo de reproducción. Los vídeos se muestran como guiones, hls o progresivos, como se muestra a continuación:
       * Si el explorador admite DASH, se utiliza primero la transmisión de DASH.
       * Si el navegador no admite DASH, se utilizará el flujo HLS, segundo.
