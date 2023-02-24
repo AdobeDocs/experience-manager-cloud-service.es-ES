@@ -6,13 +6,13 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2418'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Tablas en formato adaptable {#tables-in-adaptive-forms}
+# Tablas en formularios adaptables {#tables-in-adaptive-forms}
 
 El uso de tablas es una forma eficaz, simple y organizada de presentar datos complejos. Ayuda a los usuarios a identificar la información fácilmente y a proporcionar entradas en una disposición ordenada de filas y columnas. La mayoría de formularios de los servicios financieros y las organizaciones gubernamentales requieren tablas de datos grandes para poner números y realizar cálculos.
 
@@ -50,24 +50,24 @@ Para combinar dos o más celdas del cuerpo, seleccione las celdas que desee comb
 
 Puede agregar y eliminar una fila o columna, y mover una fila hacia arriba o hacia abajo en una tabla.
 
-#### Agregar, eliminar o mover una fila
+#### Adición, supresión o desplazamiento de una fila
 
-Para agregar, eliminar o mover la fila, haga clic en cualquier celda de la fila. abra el navegador de contenido ![Navegador de contenido](/help/forms/assets/Smock_Layers_18_N.svg) y seleccione la fila correspondiente, resaltará la fila seleccionada con la opción de barra de herramientas desde la que puede agregar, eliminar o mover la fila hacia arriba o hacia abajo.
-* La variable **[!UICONTROL Subir]** y **[!UICONTROL Bajar]** la operación mueve la fila seleccionada arriba y abajo.
+Para agregar, eliminar o mover la fila, haga clic en cualquier celda de la fila. abra el explorador de contenido ![Explorador de contenido](/help/forms/assets/Smock_Layers_18_N.svg) y seleccione la fila correspondiente. Se resaltará la fila seleccionada con la opción de barra de herramientas desde la que puede agregar, eliminar o mover la fila hacia arriba o hacia abajo.
+* La operación **[!UICONTROL Subir]** y **[!UICONTROL Bajar]** mueve la fila seleccionada arriba y abajo.
 
-* La variable **[!UICONTROL Agregar columna]** agrega una fila debajo de la fila seleccionada.
+* La operación **[!UICONTROL Agregar columna]** añade una fila debajo de la fila seleccionada.
 
-* La variable **[!UICONTROL Eliminar columna]** elimina la fila seleccionada.
+* La operación **[!UICONTROL Eliminar columna]** elimina la fila seleccionada.
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
-Haga doble clic en la fila para configurar las propiedades de una fila, como Nombre, Referencia de vínculo, Configuración de repetición, Clase CSS.
+Haga doble clic en la fila para configurar sus propiedades, como Nombre, Referencia de vínculo, Configuración de repetición y Clase CSS.
 ![add-delete-move-row-column](assets/row-properties-image.png)
 
 
-#### Agregar o eliminar una columna
+#### Adición o supresión de una columna
 
-Para agregar o eliminar una columna, haga clic en la celda de texto de la sección del encabezado y se abrirá una barra de herramientas con las opciones para agregar o eliminar una columna:
+Para agregar o eliminar una columna, haga clic en la celda de texto de la sección del encabezado y se abrirá una barra de herramientas con las opciones para ello:
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -120,7 +120,7 @@ Siga estos pasos para configurar el ancho de columna de una tabla:
 
 1. En la pestaña **[!UICONTROL Contenido]**, pulse el componente **[!UICONTROL Tabla]** y pulse el icono ![Configurar](assets/configure-icon.svg).
 
-1. Introduzca la lista de valores separados por comas en la variable **[!UICONTROL Anchura de columna]** para especificar el ancho proporcionado de cada columna de la tabla. Por ejemplo, para una tabla que incluya 3 columnas, especificando 2, 4, 6 como el valor en el campo **[!UICONTROL Anchura de columna]** configurará el ancho de las columnas como 2/12 para la primera columna, 4/12 para la segunda columna y 6/12 para la tercera columna. 2/12, ya que la anchura de la primera columna se refiere a una sexta parte de la anchura de la tabla. Del mismo modo, 4/12 establece el ancho de la segunda columna como un tercio del ancho de la tabla y 6/12 establece el ancho de la tercera columna como la mitad del ancho de la tabla.
+1. Escriba la lista de valores separados por comas en el campo **[!UICONTROL Anchura de columna]** para especificar el ancho proporcionado de cada columna de la tabla. Por ejemplo, para una tabla que incluya 3 columnas, especificando 2, 4, 6 como el valor en el campo **[!UICONTROL Anchura de columna]** configurará el ancho de las columnas como 2/12 para la primera columna, 4/12 para la segunda columna y 6/12 para la tercera columna. 2/12, ya que la anchura de la primera columna se refiere a una sexta parte de la anchura de la tabla. Del mismo modo, 4/12 establece el ancho de la segunda columna como un tercio del ancho de la tabla y 6/12 establece el ancho de la tercera columna como la mitad del ancho de la tabla.
 
 ## Configurar el estilo de la tabla {#configure}
 
@@ -135,7 +135,7 @@ Puede ver las propiedades de estilo en la barra lateral.
 
 >[!NOTE]
 >
->Puede cambiar el tema de color de las filas de encabezado y de trabajo cambiando los valores de [MENOS variables](https://lesscss.org//). Para obtener más información, consulte [Temáticas en AEM Forms](/help/forms/themes.md).
+>Puede cambiar la temática de color de las filas de encabezado y del cuerpo al cambiar los valores de las [variables LESS](https://lesscss.org//). Para obtener más información, consulte [Temáticas en AEM Forms](/help/forms/themes.md).
 
 ## Agregar o eliminar una fila de forma dinámica {#add-or-delete-a-row-dynamically}
 
@@ -145,7 +145,7 @@ Las tablas proporcionan compatibilidad para agregar o eliminar filas de forma di
 1. En la pestaña Repetir configuración, especifique los recuentos mínimo y máximo para limitar el número de filas de la tabla.
 1. Haga clic en **Listo**.
 
-En tiempo de ejecución o previsualización, verá **+** y ![Botón Eliminar](/help/forms/assets/Smock_Delete.svg) para añadir o eliminar una fila.
+Durante el tiempo de ejecución o la vista previa, verá los botones **+** y ![Eliminar](/help/forms/assets/Smock_Delete.svg) para añadir o eliminar una fila.
 
 ![add-delete-rows-dynamically](assets/add-delete-layout.png)
 
@@ -215,7 +215,7 @@ Columna expandida de una tabla en un dispositivo móvil
 
 Las tablas de formularios adaptables permiten rellenar la tabla durante la ejecución al utilizar datos de un archivo XML. El archivo XML de datos puede residir en el sistema de archivos local del equipo donde se ejecuta el servidor de AEM Forms o en el repositorio CRX.
 
-Veamos un ejemplo de la siguiente tabla de resumen de transacciones bancarias que queremos rellenar con datos de un archivo XML.
+Tomemos como ejemplo la siguiente tabla de resumen de transacciones bancarias que queremos rellenar con datos de un archivo XML.
 
 ![data-merge-table](assets/data-merge-table.png)
 
