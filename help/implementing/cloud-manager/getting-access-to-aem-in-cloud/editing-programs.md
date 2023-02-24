@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -58,11 +58,11 @@ Siga estos pasos para editar un programa.
 
 Cada vez que se edita un programa, incluida la adición o eliminación de una solución o complemento, esos cambios surtirán efecto después de la siguiente implementación.
 
-Si el programa de producción tiene habilitada la seguridad mejorada, se añade un **Seguridad mejorada** estará disponible en la **Editar programa** para confirmar que la función está activa para el programa.
+Si el programa de producción tiene habilitada la seguridad mejorada, aparece la pestaña adicional **Seguridad mejorada** en la ventana **Editar programa** para confirmar que la funcionalidad está activa para el programa.
 
 ![Seguridad mejorada activa para un programa](assets/edit-program-enhanced.png)
 
-Esta configuración no se puede modificar una vez creado el programa. Para obtener más información sobre la opción de seguridad mejorada, consulte la [Creación de programas de producción](creating-production-programs.md) documento.
+Esta configuración no se puede modificar una vez creado el programa. Para obtener más información acerca de la opción de seguridad mejorada, consulte el documento [Creación de programas de producción](creating-production-programs.md).
 
 ## Eliminar programas de zona protegida {#delete-sandbox-program}
 

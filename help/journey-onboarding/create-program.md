@@ -6,7 +6,7 @@ exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Dado que sirven para diferentes propósitos, los diferentes entornos tienen dife
 
 >[!TIP]
 >
->Si necesita crear un programa de producción, consulte la [Recursos adicionales](#additional-resources) para obtener un vínculo a la documentación que describe los programas en detalle.
+>Si necesita crear un programa de producción, consulte la sección [Recursos adicionales](#additional-resources) para obtener un vínculo a la documentación que describe los programas en detalle.
 
 ## Creación de un programa de zona protegida {#create-sandbox}
 

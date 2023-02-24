@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
 workflow-type: tm+mt
 source-wordcount: '3946'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 94%
          + [Notas de la versión 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Notas de la versión 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Notas de la versión 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Notas de la versión de Workfront para el conector mejorado de Experience Manager{#workfront}
+   + Notas de la versión de Workfront para el conector mejorado de Experience Manager {#workfront}
       + [Notas de la versión de Workfront para el conector mejorado de Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [¿Qué hay de nuevo? ](/help/release-notes/what-is-new.md)
    + [Cambios importantes en AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -166,11 +166,11 @@ ht-degree: 94%
       + [Perfiles de AEM as a Cloud Service Team y de producto](/help/onboarding/aem-cs-team-product-profiles.md)
       + [Grupos de usuarios de notificaciones](/help/journey-onboarding/user-groups.md)
 + Pruebas de AEMaaCS {#trials}
-   + Ensayos sin encabezado {#headless}
-      + [Personalizar contenido en una aplicación de ejemplo React](/help/trials/headless/customize-app.md)
-      + [Crear la estructura de contenido para la aplicación](/help/trials/headless/content-structure.md)
-      + [Crear contenido sin encabezado](/help/trials/headless/create-content.md)
-      + [Extraer contenido a través de la API de GraphQL](/help/trials/headless/extract-content.md)
+   + Pruebas sin encabezado {#headless}
+      + [Personalización de contenido en una aplicación de ejemplo en React](/help/trials/headless/customize-app.md)
+      + [Creación de la estructura de contenidos de la aplicación](/help/trials/headless/content-structure.md)
+      + [Creación de contenido sin encabezado](/help/trials/headless/create-content.md)
+      + [Extracción de contenido mediante la API de GraphQL](/help/trials/headless/extract-content.md)
 + Recorrido de migración de AEM as a Cloud Service {#migration-journey}
    + [Introducción al traslado de AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparación](/help/journey-migration/readiness.md)
@@ -554,7 +554,7 @@ ht-degree: 94%
             + [Uso de CAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms.md)
             + [Usar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
             + [Aplicar firma manuscrita](/help/forms/signing-forms-using-scribble.md)
-            + [Agregar una tabla a un formulario adaptable](/help/forms/adaptive-forms-tables.md)
+            + [Adición de una tabla a un formulario adaptable](/help/forms/adaptive-forms-tables.md)
             + [Agregar compatibilidad con notas al pie de página a un formulario adaptable](/help/forms/footnotes-richtextsupport.md)
          + Configuración del diseño y aplicación de estilo a un formulario adaptable {#configure-layout-of-an-adaptive-form}
             + [Definición del diseño de un formulario adaptable](/help/forms/layout-capabilities-adaptive-forms.md)
@@ -806,7 +806,7 @@ ht-degree: 94%
       + [Estructura del proyecto AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Paquete de estructura del repositorio de proyectos de AEM](/help/implementing/developing/introduction/repository-structure-package.md)
       + [SDK de AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-      + [AEM entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md)
+      + [Entornos de desarrollo rápido de AEM](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Directrices de desarrollo de AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
       + [Registro](/help/implementing/developing/introduction/logging.md)
       + [Configuraciones y el explorador de configuración](/help/implementing/developing/introduction/configurations.md)

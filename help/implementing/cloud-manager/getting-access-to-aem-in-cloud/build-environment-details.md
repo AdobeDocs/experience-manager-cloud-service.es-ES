@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -229,4 +229,4 @@ Esta misma técnica se puede utilizar para instalar paquetes específicos para i
 
 >[!TIP]
 >
->Para obtener más información sobre el entorno de compilación front-end, consulte el documento [Desarrollo de sitios con la canalización front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+>Para obtener más información acerca del entorno de versión front-end, consulte el documento [Desarrollo de sitios con la canalización front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)

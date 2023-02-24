@@ -5,7 +5,7 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: aeb8244b4da17a0675b86a69727807abf45ca84a
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -52,9 +52,9 @@ Para cambiar al tema oscuro, haga clic en su icono de perfil. Se mostrará una v
 
 ![imagen](/help/overview/assets/unifiedshell4.png)
 
-## Identificación del entorno as a Cloud Service AEM {#identify-aemaacs-environment}
+## Identificación del entorno de AEM as a Cloud Service {#identify-aemaacs-environment}
 
-AEM as a Cloud Service proporciona tres tipos de entornos: Producción, fase y desarrollo. Consulte [Tipos de entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) para obtener más información. Con esta integración con Unified Shell, el tipo de entorno en el que el usuario ha iniciado sesión en el servicio Autor se muestra en el encabezado superior mediante una etiqueta como se muestra a continuación.
+AEM as a Cloud Service proporciona tres tipos de entornos: producción, ensayo y desarrollo. Consulte [Tipos de entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=es) para obtener más información. Con esta integración con Unified Shell, el tipo de entorno en el que el usuario ha iniciado sesión en el servicio de creación se muestra en el encabezado superior con una etiqueta, como se muestra a continuación.
 
 ![imagen](/help/overview/assets/unifiedshell_header_label.png)
 
