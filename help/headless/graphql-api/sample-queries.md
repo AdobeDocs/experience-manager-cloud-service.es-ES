@@ -4,9 +4,9 @@ description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encab
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1540'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Para ayudarle con esto, consulte lo siguiente:
 
 * Una [estructura de fragmentos de contenido de muestra](#content-fragment-structure-graphql)
 
-* Y algunas [consultas de GraphQL de ejemplo](#graphql-sample-queries), en función de la estructura de fragmento de contenido de ejemplo (modelos de fragmento de contenido y fragmentos de contenido relacionados).
+* Y algunas [consultas de muestra de GraphQL](#graphql-sample-queries), en función de la estructura de fragmento de contenido de muestra (modelos de fragmentos de contenido y fragmentos de contenido relacionados).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -1121,7 +1121,7 @@ Estas consultas de muestra se basan en el proyecto WKND. Esto tiene:
 Esta consulta de muestra busca lo siguiente:
 
 * para todos los fragmentos de contenido del tipo `article`
-* con la variable `_path` y las propiedades del `authorFragment`.
+* con `_path` y propiedades de `authorFragment`.
 
 **Consulta de muestra**
 
@@ -1491,7 +1491,7 @@ Esta consulta busca lo siguiente:
 
 >[!NOTE]
 >
->Esto demostrará la alternativa para los fragmentos de contenido que no tienen un [Variación](/help/headless/graphql-api/content-fragments.md#variations) del nombre especificado.
+>Esto demostrará la alternativa para los fragmentos de contenido que no tienen una [variación](/help/headless/graphql-api/content-fragments.md#variations) del nombre especificado.
 
 **Consulta de muestra**
 
@@ -1543,7 +1543,7 @@ Esta consulta busca lo siguiente:
 
 Esta consulta busca lo siguiente:
 
-* para la página de resultados que contienen hasta cinco artículos, a partir del quinto artículo de la sección *complete* lista de resultados
+* para la página de resultados que contienen hasta cinco artículos, a partir del quinto artículo de la lista de resultados *completa*
 
 **Consulta de muestra**
 
@@ -1567,7 +1567,7 @@ Esta consulta busca lo siguiente:
 
 Esta consulta busca lo siguiente:
 
-* para la página de resultados que contienen hasta cinco aventuras, empezando por el elemento de cursor dado en la variable *complete* lista de resultados
+* para la página de resultados que contiene hasta cinco aventuras, empezando por el elemento de cursor dado en la lista de resultados *completa*:
 
 **Consulta de muestra**
 
@@ -1602,7 +1602,7 @@ Para las consultas de muestra, utilizaremos los siguientes modelos de contenido 
 
 * [Compañía](#model-company)
 -> [Persona](#model-person)
-    -> [Premio](#model-award)
+-> [Premio](#model-award)
 
 * [Ciudad](#model-city)
 
@@ -1686,7 +1686,7 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 | Basilea | Suiza | 172258 | city:emea |
 | Berlín | Alemania | 3669491 | city:capital<br>city:emea |
 | Bucarest | Rumanía | 1821000 | city:capital<br>city:emea |
-| San Francisco | EE. UU. | 883306 | city:beach<br>city:na |
-| San José | EE. UU. | 102635 | city:na |
+| San Francisco | EE. UU. | 883306 | city:beach<br>city:na |
+| San José | EE. UU. | 102635 | city:na |
 | Stuttgart | Alemania | 634830 | city:emea |
 | Zúrich | Suiza | 415367 | city:capital<br>city:emea |
