@@ -3,9 +3,9 @@ title: Creación de programas de producción
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de producción y alojar tráfico en directo.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -42,16 +42,16 @@ Siga estos pasos para crear un programa de producción.
 
    ![Creación del asistente del programa](assets/create-production-program.png)
 
-1. Si ha mejorado los derechos de seguridad, la variable **Seguridad mejorada** proporcionará la opción **Habilitar seguridad mejorada** para su programa de producción. Si es necesario, marque la opción para habilitar la seguridad mejorada y toque o haga clic en **Continuar**.
+1. Si tiene derechos de seguridad mejorada, la pestaña **Seguridad mejorada** le ofrecerá la opción **Habilitar seguridad mejorada** para su programa de producción. Si es necesario, marque la opción para habilitar la seguridad mejorada y toque o haga clic en **Continuar**.
 
    * La seguridad mejorada no se puede habilitar ni deshabilitar después de la creación del programa.
-   * [Más información](https://www.adobe.com/go/hipaa-ready) acerca de la implementación de la solución lista para HIPAA de Adobe.
+   * [Más información](https://www.adobe.com/go/hipaa-ready_es) acerca de la implementación de la solución compatible con HIPAA de Adobe.
 
    ![Opción Seguridad mejorada](assets/create-production-program-enhanced.png)
 
 1. En la pestaña **Soluciones y complementos**, seleccione las soluciones que desea incluir en el programa.
 
-   * Si seleccionó la variable **Habilitar seguridad mejorada** anteriormente, solo se le permitirá seleccionar tantas soluciones para las que haya autorizaciones de HIPAA disponibles.
+   * Si ha seleccionado anteriormente la opción **Activar seguridad mejorada**, solo podrá seleccionar tantas soluciones como derechos HIPAA estén disponibles.
 
    ![Seleccionar soluciones](assets/setup-prod-select.png)
 
