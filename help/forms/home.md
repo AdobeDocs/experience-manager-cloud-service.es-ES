@@ -3,10 +3,10 @@ title: Introducción a  [!DNL AEM Forms]  as a Cloud Service
 description: Descubra AEM Forms y cómo le ayuda a producir documentos y contenido de formularios preparados para la empresa. Obtenga información sobre Plataforma como servicio (PaaS) y cómo administrar formularios digitales de clase empresarial y procesos empresariales, así como conectar Forms a fuentes de datos actuales.
 landing-page-description: Obtenga información sobre cómo utilizar formularios en AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: f8e229820bb7aef3923e955c928033ef7d3d9460
+source-git-commit: 95e1981faf9532aa56cc8a2e18166d08f35ecf29
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 26%
+source-wordcount: '1251'
+ht-degree: 23%
 
 ---
 
@@ -44,9 +44,11 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-| Formularios adaptables | Servicio de conversión automatizada de formularios  | API de comunicaciones | Forms Analytics |
-|---|---|---|---|
-| Forms adaptable permite a las empresas crear y administrar formularios interactivos basados en datos para sus sitios web y otros canales digitales que respondan a formularios fáciles de usar para móviles. | El servicio de automated forms conversion permite a las empresas convertir formularios heredados basados en PDF en formularios digitales interactivos que se pueden administrar y distribuir fácilmente en línea. | Las API de comunicaciones son un conjunto de API de RESTful (interfaces de programación de aplicaciones) que permiten a las empresas automatizar la creación, administración y entrega de comunicaciones personalizadas basadas en datos. | El servicio proporciona soporte de OOTB para conectarse con Adobe Analytics. La conexión de formularios con Adobe Analytics ofrece varias ventajas para las empresas, entre las que se incluyen una mejor comprensión del comportamiento del usuario, una mejor orientación de los esfuerzos de marketing, una reducción del estado de error y una mejora del ROI. |
+
+| Formularios adaptables | Servicio de conversión automatizada de formularios  | API de comunicaciones | Integraciones | Forms Workflow |
+|---|---|---|---|---|
+| Forms adaptable permite a las empresas crear y administrar formularios interactivos basados en datos para sus sitios web y otros canales digitales que respondan a formularios fáciles de usar para móviles. | El servicio de automated forms conversion permite a las empresas convertir formularios heredados basados en PDF en formularios digitales interactivos que se pueden administrar y distribuir fácilmente en línea. | Las API de comunicaciones son un conjunto de API de RESTful (interfaces de programación de aplicaciones) que permiten a las empresas automatizar la creación, administración y entrega de comunicaciones personalizadas basadas en datos. | La plataforma se puede integrar con Adobe Sign y ArchiveSign, lo que facilita a los usuarios el envío y el seguimiento de solicitudes de firma digital directamente desde sus formularios adaptables. </br></br>Además, la plataforma se puede integrar con Adobe Analytics, lo que permite a las organizaciones obtener información valiosa sobre el comportamiento y las preferencias del usuario. </br></br> Por último, el Cloud Service de AEM Forms permite a los usuarios incrustar formularios adaptables directamente en páginas de AEM Sites, lo que crea una experiencia de usuario perfecta | Los flujos de trabajo centrados en Forms en Adobe Experience Manager (AEM) Forms están diseñados para automatizar los procesos empresariales que implican formularios. Estos flujos de trabajo automatizan el enrutamiento, la revisión y la aprobación de los formularios a medida que pasan por diferentes etapas de un proceso empresarial. Los flujos de trabajo centrados en Forms se pueden crear visualmente mediante el Diseñador de flujos de trabajo de AEM Forms y se pueden integrar con AEM Forms para déclencheur de flujos de trabajo cuando se envía un formulario. Los flujos de trabajo se pueden configurar para enrutar formularios a distintos usuarios o grupos según criterios específicos, y pueden incluir notificaciones y recordatorios automáticos para garantizar que los formularios se procesen a tiempo. En general, los flujos de trabajo centrados en los formularios en AEM Forms ayudan a las organizaciones a optimizar sus procesos empresariales, mejorar la eficacia y reducir los errores. |
+
 
 <!--
 | | |
