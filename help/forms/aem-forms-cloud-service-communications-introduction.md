@@ -3,9 +3,9 @@ title: Introducción a las comunicaciones de Forms as a Cloud Service
 description: Combine datos automáticamente con plantillas XDP y PDF o genere salidas en formato PCL, ZPL y PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ La funcionalidad ofrece varias API para generar y manipular documentos. Puede ge
 
 * Las API HTTP para facilitar la integración con sistemas externos. Se incluyen API independientes para operaciones bajo demanda (baja latencia) y por lotes (operaciones de alto rendimiento).
 
-* Un acceso seguro a los datos. Las API de comunicaciones solo se conectan a los datos de los repositorios de datos designados por el cliente y acceden a ellos, lo que hace que las comunicaciones sean muy seguras.
+* Un acceso seguro a los datos. Las API de comunicaciones solo se conectan y acceden a los datos de los repositorios de datos designados por el cliente, lo que hace que las comunicaciones sean muy seguras.
 
 ![Un ejemplo de extracto de tarjeta de crédito](assets/statement.png)
 Se puede crear un extracto de tarjeta de crédito mediante las API de comunicaciones. Este extracto de ejemplo utiliza la misma plantilla pero datos independientes para cada cliente según su uso de la tarjeta de crédito.
