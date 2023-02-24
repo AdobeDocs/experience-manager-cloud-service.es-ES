@@ -4,9 +4,9 @@ description: Obtenga información sobre las canalizaciones de CI/CD de Cloud Man
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1368'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -123,7 +123,7 @@ Las canalizaciones front-end ayudan a sus equipos a optimizar su proceso de dise
 >
 >Sin embargo, hay un límite máximo de 300 canalizaciones por programa (en todos los tipos).
 
-Las canalizaciones front-end pueden ser canalizaciones de calidad de código o canalizaciones de implementación.
+Las canalizaciones front-end pueden ser de calidad del código o implementación.
 
 ### Antes de configurar canalizaciones front-end {#before-start}
 
