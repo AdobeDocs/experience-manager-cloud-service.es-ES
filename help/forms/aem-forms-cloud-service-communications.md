@@ -3,20 +3,20 @@ title: AEM Forms as a Cloud Service - Comunicaciones
 description: Combine datos automáticamente con plantillas XDP y PDF o genere salidas en formato PCL, ZPL y PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '684'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # Usar el procesamiento sincrónico {#sync-processing-introduction}
 
-Forms as a Cloud Service: las API de comunicaciones le permiten crear, ensamblar y entregar comunicaciones personalizadas y orientadas a la marca, como correspondencia comercial, documentos, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, cartas de procesamiento de reclamaciones, facturas mensuales y kits de bienvenida. Puede utilizar las API de Comunicaciones para combinar una plantilla (XFA o PDF) con datos de clientes para generar documentos en los formatos PDF, PS, PCL, DPL, IPL y ZPL.
+Forms as a Cloud Service: las API de comunicaciones le permiten crear, montar y entregar comunicaciones personalizadas y orientadas a la marca, como correspondencia comercial, documentos, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, facturas mensuales y kits de bienvenida. Puede utilizar las API de Comunicaciones para combinar una plantilla (XFA o PDF) con datos de clientes para generar documentos en los formatos PDF, PS, PCL, DPL, IPL y ZPL.
 
 Imagine un escenario en el que tiene una o más plantillas y varios registros de datos XML en cada plantilla. Puede utilizar las API de Comunicaciones para generar un documento de impresión para cada registro. <!-- You can also combine the records into a single document. --> El resultado es un documento PDF no interactivo. Un documento PDF no interactivo no permite a los usuarios introducir datos en los campos.
 
-Forms as a Cloud Service: Comunicaciones proporciona API bajo demanda y por lotes (API asincrónicas) para la generación programada de documentos:
+Forms as a Cloud Service: Comunicaciones proporciona la API bajo demanda y por lotes (API asincrónicas) para la generación programada de documentos:
 
 * Las API sincrónicas son adecuadas para casos de uso de generación de documentos bajo demanda, con baja latencia y de registro único. Estas API son más adecuadas para casos de uso basados en las acciones del usuario. Por ejemplo, generar un documento después de que un usuario rellene un formulario.
 
@@ -24,7 +24,7 @@ Forms as a Cloud Service: Comunicaciones proporciona API bajo demanda y por lote
 
 ## Usar operaciones sincrónicas {#batch-operations}
 
-Una operación sincrónica es un proceso de generación de documentos de forma lineal. Estas API están clasificadas como API de un solo inquilino y API de varios inquilinos:
+Una operación sincrónica es un proceso de generación de documentos de forma lineal. Estas API están clasificadas como de un solo inquilino y de varios:
 
 ### API de un solo inquilino
 
@@ -37,7 +37,7 @@ Una operación sincrónica es un proceso de generación de documentos de forma l
 * Document utility APIs -->
 
 
-### Autenticar una API de un solo inquilino
+### Autenticación de una API de un solo inquilino
 
 Las operaciones de API de un solo inquilino admiten dos tipos de autenticación:
 
@@ -45,8 +45,8 @@ Las operaciones de API de un solo inquilino admiten dos tipos de autenticación:
 
 * **Autenticación basada en tokens:** la autenticación basada en tokens utiliza un token de acceso (token de autenticación del portador) para realizar solicitudes a Experience Manager as a Cloud Service. AEM Forms as a Cloud Service proporciona API para recuperar de forma segura el token de acceso. Para recuperar y utilizar el token para autenticar una solicitud:
 
-   1. [Recuperar credenciales as a Cloud Service del Experience Manager desde Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es).
-   1. [Instalar credenciales as a Cloud Service del Experience Manager en su entorno](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es). (Servidor de aplicaciones, servidor web u otros servidores no AEM) configurados para enviar solicitudes (realizar llamadas) al servicio en la nube.
+   1. [Recupere las credenciales de Experience Manager as a Cloud Service desde Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es).
+   1. [Instale las credenciales de Experience Manager as a Cloud Service en su entorno](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es). (Servidor de aplicaciones, servidor web u otros servidores no AEM) configurados para enviar solicitudes (realizar llamadas) al servicio en la nube.
    1. [Genere un token JWT e intercámbielo con las API de IMS de Adobe por un token de acceso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es).
    1. Ejecute la API de Experience Manager con el token de acceso como token de autenticación del portador.
    1. [Establezca los permisos adecuados para el usuario de la cuenta técnica en el entorno de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es#configuraci%C3%B3n-del-acceso-en-aem).
@@ -135,7 +135,7 @@ Una organización suele tener varias plantillas. Por ejemplo, una plantilla para
 
 ### Invocar una API
 
-La [documentación de referencia de la API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia de la API también proporciona un archivo de definición de la API en formato .yaml. Puede descargar el archivo .yaml y cargarlo en [Postman](https://www.postman.com/) para comprobar la funcionalidad de las API.
+La [documentación de referencia de la API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia de la API también proporciona un archivo de definición de API en formato .yaml. Puede descargar el archivo .yaml y cargarlo en [Postman](https://www.postman.com/) para comprobar la funcionalidad de las API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
