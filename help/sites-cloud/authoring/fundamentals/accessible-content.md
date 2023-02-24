@@ -3,9 +3,9 @@ title: Crear contenido accesible para Adobe Experience Manager as a Cloud Servic
 description: Utilice AEM as a Cloud Service para ayudar a que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: 48ac0566409f74d3ffa389e5016af0d14419dc3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '14056'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Las directrices se clasifican según tres niveles de conformidad: Nivel A (el m�
 
 * **Nivel A:** El sitio alcanza un nivel básico y mínimo de accesibilidad. Para alcanzar este nivel, se cumplen todos los criterios de éxito del nivel A.
 * **Nivel AA:** Se trata de un nivel ideal de accesibilidad al que se debe aspirar, en el que el sitio alcanza un nivel mejorado de accesibilidad, de modo que sea accesible a la mayoría de las personas en la mayoría de las situaciones y que usen la mayoría de las tecnologías. Para alcanzar este nivel, se cumplen todos los criterios de éxito de los niveles A y AA.
-* **Nivel AAA:** El sitio alcanza un alto nivel de accesibilidad. Para alcanzar este nivel, se deben cumplir todos los criterios de éxito de los niveles A, AA y AAA.
+* **Nivel AAA:** Su sitio alcanza un nivel muy alto de accesibilidad. Para alcanzar este nivel, se deben cumplir todos los criterios de éxito de los niveles A, AA y AAA.
 
 Al crear su sitio, debe determinar el nivel general en el que desea que se ajuste.
 
@@ -52,9 +52,9 @@ La siguiente sección presenta las [capas de las directrices WCAG 2.1](https://w
 
 ### Alternativas de texto (1.1)     {#text-alternatives}
 
-[Directrices 1.1 Alternativas de texto: Proporcione alternativas textuales para cualquier contenido no textual para que se pueda cambiar a otras formas que necesite la gente, como letras grandes, braille, voz, símbolos o lenguaje más sencillo.](https://www.w3.org/TR/WCAG/#text-alternatives)
+[Directrices 1.1 Alternativas de texto: Proporcione alternativas de texto para cualquier contenido no textual y así poder cambiarlo por otras formas que la gente puede necesitar, como letras grandes, braille, voz, símbolos o lenguaje más sencillo.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
-### Contenido no textual (1.1.1)     {#non-text-content}
+### Contenido no textual (1.1.1) {#non-text-content}
 
 * Criterios de éxito 1.1.1
 * Nivel A
@@ -62,11 +62,11 @@ La siguiente sección presenta las [capas de las directrices WCAG 2.1](https://w
 
 #### Objetivo: Contenido no textual (1.1.1) {#purpose-non-text-content}
 
-La información de una página web se puede proporcionar en muchos formatos no textuales diferentes, como imágenes, vídeos, animaciones, gráficos y gráficos. Las personas ciegas o con deficiencias visuales graves no pueden ver el contenido no textual, pero pueden acceder al contenido textual si lo lee en voz alta un lector de pantalla o si se presenta en forma táctil mediante un dispositivo de visualización Braille. Por lo tanto, al proporcionar alternativas textuales al contenido en formato gráfico, las personas que no puedan ver el contenido gráfico pueden acceder a una versión equivalente de la información que proporciona el contenido.
+La información en una página web se puede proporcionar en muchos formatos no textuales distintos, como fotografías, vídeos, animaciones, tablas y gráficos. Las personas ciegas o con problemas de visión graves no pueden ver el contenido no textual, pero pueden acceder al contenido textual si lo lee en voz alta un lector de pantalla o si se presenta en un formato táctil a través de un dispositivo de visualización Braille. Por ello, al proporcionar alternativas textuales para el contenido en formato gráfico, quienes no puedan ver el contenido gráfico podrán acceder a una versión equivalente de la información que proporcione el contenido.
 
 Un beneficio útil adicional es que las alternativas textuales permiten indexar contenido no textual mediante una tecnología de buscadores.
 
-#### Cómo cumplir: Contenido no textual (1.1.1)     {#how-to-meet-non-text-content}
+#### Cómo cumplir: Contenido no textual (1.1.1) {#how-to-meet-non-text-content}
 
 Para gráficos estáticos, el requisito principal es proporcionar una alternativa textual equivalente para el gráfico. Esto se puede hacer en el campo **Texto alternativo**. Por ejemplo, consulte la **[imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es)** del componente principal.
 
@@ -74,11 +74,11 @@ Para gráficos estáticos, el requisito principal es proporcionar una alternativ
 >
 >Algunos componentes principales listos para usar, como **[Carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=es)**, no proporcionan un campo **Texto alternativo** para agregar descripciones de texto alternativas a imágenes individuales, aunque existe el campo **Etiqueta** (pestaña **[Accesibilidad](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=es#accessibility-tab)**) para todo el componente.
 >
->Al implementar versiones de estos componentes para la instancia de AEM, el equipo de desarrollo debe configurarlos para que admitan la variable `alt` para que los autores puedan agregarlo al contenido (consulte Añadir ayuda para elementos y atributos de HTML adicionales).
+>Al implementar versiones de estos componentes para la instancia de AEM, el equipo de desarrollo deberá configurarlos para que admitan el `alt` atributo y así los autores puedan agregarlo al contenido (consulte Adición de soporte para elementos y atributos HTML adicionales).
 >
 >Algunos componentes principales listos para usar, como **[Carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=es)**, no proporcionan un campo **Texto alternativo** para agregar descripciones de texto alternativas a imágenes individuales, aunque existe el campo **Etiqueta** (pestaña **[Accesibilidad](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=es#accessibility-tab)**) para todo el componente.
 >
->Al implementar versiones de estos componentes para la instancia de AEM, el equipo de desarrollo debe configurarlos para que admitan la variable `alt` para que los autores puedan agregarlo al contenido (consulte [Agregar compatibilidad con elementos y atributos de HTML adicionales](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Cuando se implementan versiones de estos componentes para su instancia de AEM, su equipo de desarrollo debe configurarlos para dar soporte al `alt` atributo y que así los autores puedan agregarlo al contenido (consulte [Añadir soporte para elementos y atributos HTML adicionales](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 De forma predeterminada, AEM requiere que el campo **Texto alternativo** se rellene. Si la imagen es puramente decorativa y el texto alternativo sería innecesario, se puede marcar la opción **La imagen es decorativa**.
 
@@ -106,19 +106,19 @@ Imágenes de personas, objetos o lugares. Es importante pensar en el papel de la
 * Iconos:
 Pequeños pictogramas (gráficos) que transmiten información específica. Se deben utilizar de manera consistente en una página o sitio. Todos los ejemplos del icono en una página o sitio deben contener el mismo texto alternativo, corto y preciso, a menos que se duplique innecesariamente el texto adyacente.
 * Tablas y gráficos: Normalmente representan datos numéricos. Una opción para proporcionar una alternativa textual podría ser incluir un breve resumen de las tendencias principales que se muestran en la tabla o en el gráfico. Si es necesario, proporcione también una descripción más detallada en formato texto utilizando el campo **Descripción** en la pestaña de Propiedades de la imagen **avanzadas**. Además, puede proporcionar los datos de origen en formato tabulado en cualquier otra parte de la página o sitio.
-* Mapas, diagramas, diagramas de flujo: Para los gráficos que proporcionan datos espaciales (por ejemplo, para admitir la descripción de relaciones entre objetos o un proceso), asegúrese de que el mensaje clave se proporcione en formato de texto y de que esta información de texto se coloque cerca de cada punto de datos asociado. En el caso de los mapas, es probable que no sea práctico proporcionar un equivalente textual completo, pero si el mapa se proporciona como una forma de ayudar a la gente a encontrar su camino a un lugar en particular, el texto alternativo de la imagen del mapa puede indicar brevemente *Mapa de X* y, a continuación, proporcione las direcciones de esa ubicación en texto en cualquier parte de la página o a través de la **Descripción** en el campo **Avanzadas** de la pestaña **Imagen** componente.
+* Mapas, diagramas, diagramas de flujo: Para los gráficos que proporcionan datos espaciales (por ejemplo, para admitir la descripción de relaciones entre objetos o un proceso), asegúrese de que el mensaje clave se proporcione en formato de texto y de que esta información de texto se coloque cerca de cada punto de datos asociado. En el caso de los mapas, es probable que no sea práctico suministrar un equivalente textual completo. No obstante, si el mapa se proporciona como una forma de ayudar a las personas a encontrar su camino a una ubicación determinada, el texto alternativo de la imagen del mapa puede indicar brevemente *Mapa de X* y, a continuación, ofrecer indicaciones para llegar a esa ubicación en texto en cualquier parte de la página o a través del campo **Descripción** en la pestaña **Avanzado** del componente **Imagen**.
 * CAPTCHA: CAPTCHA se refiere a una *prueba de Turing pública completamente automática que distingue entre ordenadores y humanos*. Es una medida de seguridad que se utiliza en páginas web para distinguir a humanos de software maligno, pero que puede originar barreras de accesibilidad. Se trata de imágenes que requieren que los usuarios describan lo que ven para pasar una prueba de seguridad. Como obviamente no es posible proporcionar una alternativa textual para la imagen, en lugar de ello tendrá que considerar una solución alternativa que no sea gráfica.‪
 W3C proporciona varias sugerencias como: Cada uno de estos enfoques tiene sus propias ventajas e inconvenientes.‪
    * Rompecabezas de lógica
    * Salida de sonido en lugar de imágenes
    * Cuentas de uso limitado y filtros de spam
-* Imágenes de fondo: Estos se consiguen utilizando hojas de estilo en cascada (CSS) en lugar de en HTML. Esto significa que no es posible especificar un valor de texto alternativo. Por lo tanto, las imágenes de fondo no deben proporcionar información textual importante: si lo hacen, esta información también debe proporcionarse en el texto de la página. Sin embargo, es importante que se muestre un fondo alternativo cuando la imagen no se pueda mostrar.
+* Imágenes de fondo: se consiguen utilizando hojas de estilo en cascada (CSS) en lugar de HTML. Esto quiere decir que no se puede especificar un valor de texto alternativo. Por ello, las imágenes de fondo no deben proporcionar información textual importante: si lo hacen, dicha información se debe proporcionar en el texto de la página. Sin embargo, es fundamental que se muestre un fondo alternativo cuando la imagen no se pueda mostrar.
 
 >[!NOTE]
 >
 >Debe haber un nivel adecuado de contraste entre el fondo y el texto en primer plano; este es un tema que se analiza en detalle en [Contraste (Mínimo) (1.4.3)](#contrast-minimum).
 
-#### Más información: Contenido no textual (1.1.1)     {#more-information-non-text-content}
+#### Más información: Contenido no textual (1.1.1) {#more-information-non-text-content}
 
 * [Entender los criterios de éxito 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Cumplir los criterios de éxito 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
@@ -437,9 +437,9 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 1.3.2](https://ww
 
 #### Objetivo: Características sensoriales (1.3.3)     {#purpose-sensory-characteristics}
 
-Los diseñadores normalmente se centran en características de diseño visuales, como el color, la forma, el estilo del texto o una parte de la posición absoluta o relativa del contenido al presentar la información. Estas pueden ser técnicas de diseño muy poderosas para transmitir información (y pueden mejorar la accesibilidad general para los usuarios con visión con necesidades de accesibilidad cognitiva), pero las personas ciegas o con problemas visuales pueden ser incapaces de acceder a la información que requiera la identificación visual de atributos como posición, color o forma.
+Los diseñadores normalmente se centran en características de diseño visuales tales como el color, la forma, el estilo del texto o una parte de la ubicación absoluta o relativa del contenido a la hora de presentar la información. Estas pueden ser técnicas de diseño muy poderosas para transmitir información (y pueden mejorar la accesibilidad general para los usuarios con visión con necesidades de accesibilidad cognitiva), pero las personas ciegas o con problemas visuales pueden ser incapaces de acceder a la información que requiera la identificación visual de atributos como posición, color o forma.
 
-Del mismo modo, la información que requiere distinguir entre sonidos diferentes (por ejemplo, contenido cuya voz es masculina o femenina) presentará barreras de accesibilidad para las personas que sufran limitaciones auditivas, si no se refleja en ninguna alternativa textual para el contenido del audio.
+De la misma manera, la información que requiere distinguir entre sonidos distintos (como contenido cuya voz es masculina o femenina) presentará barreras de accesibilidad para las personas que sufran problemas de oído si el contenido del audio no se refleja en un texto alternativo.
 
 >[!NOTE]
 >
@@ -450,11 +450,11 @@ Del mismo modo, la información que requiere distinguir entre sonidos diferentes
 Asegúrese de que cualquier información relativa a las características visuales del contenido de una página se presente también en un formato alternativo.
 
 * Es importante no basarse en la posición visual para dar información. Por ejemplo, para dirigir a los usuarios hacia un menú a la derecha de la página para que accedan a más información, no se debe hacer referencia al *menú de la derecha*; en lugar de eso, es preferible nombrar el menú (por ejemplo mediante un encabezado) y hacer referencia a ese nombre en el texto.
-* No confíe en el estilo del texto (por ejemplo, el texto en negrita o en cursiva) como la única manera de transmitir información.
+* También es importante no basarse en el estilo del texto (por ejemplo, si se trata de texto en negrita o en cursiva) como la única manera de transmitir la información.
 
 >[!NOTE]
 >
->El uso de términos descriptivos será aceptable si se entiende que tienen significado en un contexto no visual. Por ejemplo, al usar *above* y *below* sería generalmente aceptable, ya que respectivamente implican contenido antes y después de un elemento particular de contenido; esto tendría sentido cuando el contenido se lee en voz alta.
+>El uso de términos descriptivos se puede considerar aceptable si estos se entienden por su significado en un contexto no visual. Por ejemplo, utilizar *arriba* y *abajo* suele resultar admisible, porque respectivamente implican contenido antes y después de un elemento particular del contexto; tendría sentido cuando el contenido se lee en voz alta.
 
 #### Más información: Características sensoriales (1.3.3)     {#more-information-sensory-characteristics}
 
@@ -491,7 +491,7 @@ En todos los casos donde el color se utilice para transmitir información, es im
 
 Por ejemplo, asegúrese de que la información que proporciona el color también esté explícita en el texto.
 
-Si el color se utiliza como señal para proporcionar información, debe proporcionar una señal visual adicional, como cambiar el estilo (por ejemplo, negrita, cursiva) o la fuente. De esta manera, se ayuda a las personas con poca visión o que tienen una deficiencia de percepción de color a identificar la información. Sin embargo, no se puede confiar en esta medida totalmente puesto que no ayudaría a aquellos que no puedan ver la página. Por lo tanto, (a veces) resulta útil proporcionar texto oculto o utilizar soluciones programáticas, como el [grupo de estándares web de Aplicaciones de Internet enriquecidas accesibles (ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/), para transmitir esta información a usuarios sin visión.
+Si se utiliza el color como medio para transmitir información, se debería proporcionar una señal visual adicional, como cambiar el estilo (por ejemplo, usar negrita o cursiva) o la fuente. De esta manera, se ayuda a las personas con poca visión o que tienen una deficiencia de percepción de color a identificar la información. Sin embargo, no se puede confiar en esta medida totalmente puesto que no ayudaría a aquellos que no puedan ver la página. Por lo tanto, (a veces) resulta útil proporcionar texto oculto o utilizar soluciones programáticas, como el [grupo de estándares web de Aplicaciones de Internet enriquecidas accesibles (ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/), para transmitir esta información a usuarios sin visión.
 
 #### Más información: Uso del color (1.4.1) {#more-information-use-of-color}
 
@@ -567,12 +567,12 @@ Asegúrese de que el texto contrasta lo suficiente con el fondo. Las relaciones 
 >
 >* [Calculadora Px a Em](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Conversión de tamaño de fuente: pixel-point-em-rem-percent](https://websemantics.uk/tools/)
->* [Píxel to EM Converter](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+>* [Conversor de píxeles a EM](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
 Para comprobar los niveles de contraste, utilice una herramienta de contraste de color como el programa [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) o el [verificador de contraste de color WebAIM](https://webaim.org/resources/contrastchecker/). Estas herramientas permiten comprobar las parejas de color e informar de cualquier problema de contraste.
 
-Alternativamente, si no le preocupa especificar el aspecto de la página, puede optar por no especificar los colores del fondo ni del texto en primer plano. No es necesario comprobar el contraste, ya que el navegador del usuario determinará los colores del texto y del fondo.
+Alternativamente, si no le preocupa especificar la apariencia de su página, puede optar por no especificar el color del fondo o del texto en primer plano. No es necesario comprobar el contraste, ya que el explorador del usuario determinará los colores del texto y del fondo.
 
 Si no se pueden cumplir los niveles de contraste recomendados tendrá que proporcionar un vínculo a una versión alternativa y equivalente de la página (que no presente problemas de contraste de color) o permitir al usuario ajustar el contraste del esquema de color de la página bajo su propio criterio.
 
@@ -614,7 +614,7 @@ Además de seguir las directrices de [Cómo cumplir los criterios de éxito 1.4.
 
 #### Objetivo: Imágenes de texto (1.4.5)          {#purpose-images-of-text}
 
-Las imágenes de texto suelen utilizarse cuando se prefiere un estilo de texto determinado; por ejemplo, un logotipo o si se ha generado texto de otra fuente (por ejemplo, una exploración de un documento en papel). Sin embargo, comparadas con el texto presentado en HTML y cuyo estilo utiliza CSS, las imágenes de texto carecen de la flexibilidad de cambiar su tamaño o apariencia que podría resultar necesaria para las personas con deficiencias visuales o dificultades de lectura.
+Las imágenes de texto normalmente se utilizan cuando se prefiere un estilo de texto en particular; por ejemplo, un logotipo, o si un texto se ha generado desde otra fuente (por ejemplo, un documento físico escaneado). Sin embargo, comparadas con el texto presentado en HTML y cuyo estilo utiliza CSS, las imágenes de texto carecen de la flexibilidad de cambiar su tamaño o apariencia que podría resultar necesaria para las personas con deficiencias visuales o dificultades de lectura.
 
 #### Cómo cumplir: Imágenes de texto (1.4.5)       {#how-to-meet-images-of-text}
 
@@ -860,7 +860,7 @@ En el momento de escribir este artículo, existen algunos problemas relacionados
 
 Por eso, mientras el atributo del título se puede utilizar para proporcionar contenido adicional a un vínculo, es importante tener en cuenta las limitaciones y no utilizarlo como alternativa para un texto de vínculo adecuado.
 
-Cuando el vínculo esté formado por una imagen, asegúrese de que el texto alternativo de la imagen describe el destino del vínculo. Por ejemplo, si la imagen de una estantería es un vínculo a las publicaciones de una persona, el texto alternativo debería ser **Publicaciones de John Smith** y no **Estantería**.
+Cuando el vínculo esté formado por una imagen, asegúrese de que el texto alternativo de la imagen describe el destino del vínculo. Por ejemplo, si la imagen de una estantería es el vínculo a las publicaciones de una persona, el texto alternativo debería ser algo como **Publicaciones de John Smith** y no **Estantería**.
 
 Alternativamente, si el anclaje del vínculo contiene texto que describe el objetivo del vínculo además de la imagen (y por ello el texto aparece junto a la imagen), utilice un atributo alternativo vacío para la imagen:
 
@@ -948,7 +948,7 @@ La intención de este criterio de éxito es ayudar a una persona a saber qué el
 
 Una persona debe saber cuál elemento de varios elementos tiene el enfoque del teclado. Si solo hay un control accionable por teclado en la pantalla, el criterio de éxito se cumpliría porque el diseño visual presenta solo un elemento procesable por teclado.
 
-Cuando el criterio de éxito indica &quot;modo de funcionamiento&quot;, se tiene en cuenta para las plataformas que pueden no mostrar siempre un indicador de enfoque. En la mayoría de los casos, solo hay un modo de funcionamiento, por lo que se aplican estos criterios de éxito.
+Si el criterio de éxito indica “modo de funcionamiento”, se tiene en cuenta para las plataformas que no siempre muestran un indicador de enfoque. En la mayoría de los casos, solo hay un modo de funcionamiento, por lo que se aplican estos criterios de éxito.
 
 #### Cómo cumplir: Enfoque visible (2.4.7) {#how-to-meet-focus-visible}
 
@@ -1017,7 +1017,7 @@ Las páginas que aplican este criterio de éxito permiten:
 
 #### Cómo cumplir: Idioma de las partes (3.1.2)   {#how-to-meet-language-of-parts}
 
-El atributo `lang` se puede utilizar para identificar los cambios en el idioma del contenido. Por ejemplo, una cita en alemán (ISO 639-1 código &quot;de&quot;) se puede mostrar de la siguiente manera:
+El atributo `lang` se puede utilizar para identificar los cambios en el idioma del contenido. Por ejemplo, una cita en alemán (ISO 639-1 código “de”) se puede mostrar de la manera siguiente:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -1066,7 +1066,7 @@ La intención de este criterio de éxito es garantizar que la funcionalidad sea 
 * nuevas ventanas lanzadas cuando un componente recibe el enfoque;
 * el enfoque se cambia a otro componente cuando ese componente recibe el enfoque;
 
-El enfoque se puede mover a un control mediante el teclado (por ejemplo, presionando la tabulación hasta un control) o el ratón (por ejemplo, haciendo clic en un campo de texto). Mover el ratón sobre un control no mueve el enfoque a menos que el script implemente este comportamiento. Tenga en cuenta que para algunos tipos de controles, hacer clic en un control también puede activar el control (por ejemplo, botón), que a su vez puede iniciar un cambio en el contexto.
+El enfoque se puede mover a un control mediante el teclado (por ejemplo, presionando la tabulación hasta un control) o el ratón (por ejemplo, haciendo clic en un campo de texto). Mover el ratón sobre un control no mueve el enfoque a menos que el script implemente este comportamiento. Tenga en cuenta que para algunos tipos de controles, hacer clic en un control también puede activar el control (por ejemplo, botón), lo que a su vez puede iniciar un cambio en el contexto.
 
 #### Cómo cumplir: Enfoque (3.2.1) {#how-to-meet-on-focus}
 
@@ -1215,7 +1215,8 @@ La colocación de las etiquetas también es importante ya que ayuda a localizar 
 
 * Casillas o botones de opciones: 
 Las etiquetas se colocan inmediatamente a la derecha del campo.
-* Todos los demás componentes del formulario (por ejemplo, cuadros de texto o cuadros combinados): Las etiquetas se colocan inmediatamente encima o bien a la izquierda del campo.
+* Otros componentes del formulario (por ejemplo, cuadros de texto o cuadros combinados): 
+Las etiquetas se colocan inmediatamente encima o bien a la izquierda del campo.
 
 En formularios simples con una funcionalidad muy limitada, etiquetar de manera correcta un botón de `Submit` puede actuar como una etiqueta para el campo adyacente (por ejemplo: `Search`). Resulta útil cuando puede ser difícil encontrar espacio para el texto de una etiqueta.
 
