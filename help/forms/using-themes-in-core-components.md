@@ -1,7 +1,7 @@
 ---
 title: Crear y usar temáticas
 description: Puede utilizar temas para estilizar y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
-source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
+source-git-commit: 1357b36dc3d14d2ceceb6761cb005b592472890a
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 19%
@@ -86,7 +86,7 @@ La variable `src/components` tiene archivos JavaScript y CSS específicos para t
 
 Para personalizar el tema, puede iniciar el servidor proxy local para ver las personalizaciones del tema en tiempo real en función del contenido AEM real.
 
-### 4. Cambie el nombre en package.json y package_lock.json del tema del lienzo {#changename-packagelock-packagelockjson}
+### 3. Cambie el nombre en package.json y package_lock.json de Canvas theme {#changename-packagelock-packagelockjson}
 
 Actualice el nombre y la versión del tema del lienzo en la `package.json` y `package_lock.json` archivos.
 
@@ -96,7 +96,7 @@ Actualice el nombre y la versión del tema del lienzo en la `package.json` y `pa
 
 ![Imagen del tema del lienzo](/help/forms/assets/changename_canvastheme.png)
 
-### 3. Cree el archivo .env en una carpeta de temas {#creating-env-file-theme-folder}
+### 4. Cree el archivo .env en una carpeta de temas {#creating-env-file-theme-folder}
 
 Cree un `.env` en la carpeta del tema y añada los siguientes parámetros:
 
@@ -112,7 +112,7 @@ AEM_PROXY_PORT=7000
 
 ![Estructura del tema del lienzo](/help/forms/assets/env-file-canvas-theme.png)
 
-### 4. Iniciar un servidor proxy local {#starting-a-local-proxy-server}
+### 5. Iniciar un servidor proxy local {#starting-a-local-proxy-server}
 
 1. Desde la línea de comandos, vaya a la raíz del tema en el equipo local.
 1. Ejecutar `npm install` y npm recupera dependencias e instala el proyecto.
@@ -139,7 +139,7 @@ AEM_PROXY_PORT=7000
 
 Vaya a un formulario adaptable para ver el tema Lienzo aplicado a un formulario adaptable.
 
-### 5. Personalizar el tema {#customize-theme}
+### 6. Personalizar el tema {#customize-theme}
 
 1. En el editor, abra el archivo `<your-theme-sources>/src/site/_variables.scss`.
 
@@ -173,7 +173,7 @@ El diseñador de temas obtiene una vista previa de los cambios en el servidor pr
 
 Antes de confirmar los cambios en el repositorio de AEM Git, debe acceder a su [Información del repositorio de Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
 
-### 6. Confirmar los cambios {#committing-the-changes}
+### 7. Confirmar los cambios {#committing-the-changes}
 
 Después de realizar cambios en el tema y probarlo con un servidor proxy local, confirme los cambios en el repositorio Git de su Cloud Service de AEM Forms. Hace que el tema personalizado esté disponible en el entorno de su Cloud Service de Forms para que lo utilicen los autores de Adaptive Forms.
 
@@ -216,7 +216,7 @@ Por ejemplo, utilice este comando
 Sus personalizaciones ahora se almacenan de forma segura en el repositorio de Git.
 
 
-### 7. Ejecute la canalización de front-end {#deploy-pipeline}
+### 8. Ejecute la canalización de front-end {#deploy-pipeline}
 
 1. Cree la canalización front-end para implementar el tema personalizado. Más información [configuración de una canalización de front-line para implementar un tema personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
 1. Ejecute la canalización de front-end creada para implementar la carpeta de temas personalizada en la sección **[!UICONTROL Estilo]** ficha de un asistente para la creación de formularios adaptables.
