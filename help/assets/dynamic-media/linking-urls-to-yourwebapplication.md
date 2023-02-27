@@ -4,9 +4,9 @@ description: Aprenda a vincular direcciones URL a la aplicación web en Dynamic 
 contentOwner: Rick Brough
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1276'
 ht-degree: 6%
 
 ---
@@ -152,7 +152,7 @@ Dynamic Media admite la entrega de recursos estáticos, que son otros recursos a
 
    Esta ruta es la dirección URL completa del vídeo para una representación de vídeo publicada.
 
-## Obtener una URL de vídeo para flujo adaptable (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obtener una URL de vídeo para flujo de velocidad de bits adaptable (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. En el Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. En el **[!UICONTROL Cloud Services]** , desplácese hacia abajo hasta la página **[!UICONTROL Cloud Services de Dynamic Media]** encabezado y, a continuación, seleccione **[!UICONTROL Mostrar configuraciones]**.
