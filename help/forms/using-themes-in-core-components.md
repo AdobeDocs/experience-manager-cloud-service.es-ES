@@ -1,10 +1,10 @@
 ---
 title: Crear y usar temáticas
 description: Puede utilizar temas para estilizar y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 22%
+source-wordcount: '1669'
+ht-degree: 19%
 
 ---
 
@@ -51,6 +51,7 @@ Para personalizar un tema,
 Para personalizar un tema de lienzo:
 1. [Clonar el tema del lienzo](#1-download-canvas-theme-download-canvas-theme)
 1. [Comprender la estructura del tema](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [Cambiar el nombre en package.json y package_lock.json](#changename-packagelock-packagelockjson)
 1. [Cree la variable ](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
 1. [Iniciar el servidor proxy local](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
 1. [Personalizar el tema](#customize-the-theme-customizing-theme)
@@ -67,7 +68,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 >[!NOTE]
 >
-> La ficha Estilo del Asistente para la creación de formularios muestra el mismo nombre de tema que package.json .
+> La ficha Estilo del Asistente para la creación de formularios muestra el mismo nombre de tema que en el archivo package.json.
 
 ### 2. Comprender la estructura del tema {#structure-of-canvas-theme}
 
@@ -85,12 +86,22 @@ La variable `src/components` tiene archivos JavaScript y CSS específicos para t
 
 Para personalizar el tema, puede iniciar el servidor proxy local para ver las personalizaciones del tema en tiempo real en función del contenido AEM real.
 
+### 4. Cambie el nombre en package.json y package_lock.json del tema del lienzo {#changename-packagelock-packagelockjson}
+
+Actualice el nombre y la versión del tema del lienzo en la `package.json` y `package_lock.json` archivos.
+
+>[!NOTE]
+>
+> Los nombres no deben tener `@aemforms` etiqueta. Debe ser texto simple como nombre proporcionado por el usuario.
+
+![Imagen del tema del lienzo](/help/forms/assets/changename_canvastheme.png)
+
 ### 3. Cree el archivo .env en una carpeta de temas {#creating-env-file-theme-folder}
 
 Cree un `.env` en la carpeta del tema y añada los siguientes parámetros:
 
 * **URL de AEM**
-AEM_URL=https://[author-instance] o http://localhost:[puerto]/
+AEM_URL=https://[author-instance]
 
 * **AEM nombre del sitio**
 AEM_ADAPTIVE_FORM=Form_name
@@ -109,7 +120,7 @@ AEM_PROXY_PORT=7000
 
    ![npm run live](/help/forms/assets/theme_proxy.png)
 
-1. Cuando se inicia el servidor proxy, se abre automáticamente un explorador a `http://localhost:[port]/`.
+
 1. Toque o haga clic **INICIAR SESIÓN LOCALMENTE (SOLO TAREAS DE ADMINISTRACIÓN)** e inicie sesión con las credenciales del usuario proxy proporcionadas por el administrador de AEM.
 
    ![Iniciar sesión localmente](/help/forms/assets/local_signin.png)
@@ -166,20 +177,35 @@ Antes de confirmar los cambios en el repositorio de AEM Git, debe acceder a su [
 
 Después de realizar cambios en el tema y probarlo con un servidor proxy local, confirme los cambios en el repositorio Git de su Cloud Service de AEM Forms. Hace que el tema personalizado esté disponible en el entorno de su Cloud Service de Forms para que lo utilicen los autores de Adaptive Forms.
 
-Antes de confirmar los cambios en el repositorio de Git de su Cloud Service de AEM Forms, necesita un clon del repositorio en el equipo local. Para clonar el repositorio:
+Antes de confirmar los cambios en el repositorio Git de su Cloud Service de AEM Forms, necesita un clon del repositorio en su equipo local. Para clonar el repositorio:
 
-1. Abra el símbolo del sistema y ejecute el siguiente comando después de reemplazar [my-org] y [my-program] con los valores proporcionados por el administrador de AEM. También puede encontrar detalles en su [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git):
+1. Cree un nuevo repositorio de temas haciendo clic en el **[!UICONTROL Repositorios]** .
+
+   ![crear nuevo repositorio de temas](/help/forms/assets/createrepo_canvastheme.png)
+
+1. Haga clic en **[!UICONTROL Agregar repositorio]** y especifique el **Nombre del repositorio** en el **Agregar repositorio** para abrir el Navegador. Haga clic en **[!UICONTROL Guardar]**.
+
+   ![Agregar repositorio de tema del lienzo](/help/forms/assets/addcanvasthemerepo.png)
+
+1. Haga clic en **[!UICONTROL Copiar URL del repositorio]** para copiar la URL del repositorio creado.
+
+   ![URL del tema del lienzo](/help/forms/assets/copyurl_canvastheme.png)
+
+1. Abra el símbolo del sistema y clone el repositorio de nube creado anteriormente.
 
    ```
-   git clone https://git.cloudmanager.adobe.com/[my-org]/[my-org]/
+   git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
    ```
-1. Mueva el proyecto de tema que estaba editando al repositorio clonado con un comando similar a `mv <theme-sources> <cloned-repo>`.
-1. Realice los cambios que desee en las carpetas de componentes del tema modificando su archivo CSS.
-1. En el directorio del repositorio clonado, confirme los archivos de tema a los que acaba de moverse con los siguientes comandos.
+
+1. Mueva los archivos del repositorio de temas que está editando al repositorio de la nube con un comando similar a
+   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
+Por ejemplo, utilice este comando 
+`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+1. En el directorio del repositorio de la nube, confirme los archivos de tema a los que se movió con los siguientes comandos.
 
    ```text
-   git add <theme-file-name>
-   git commit -m "Adding theme sources"
+   git add .
+   git commit -a -m "Adding theme files"
    git push
    ```
 
@@ -190,10 +216,10 @@ Antes de confirmar los cambios en el repositorio de Git de su Cloud Service de A
 Sus personalizaciones ahora se almacenan de forma segura en el repositorio de Git.
 
 
-### 7. Implementar la canalización de front-end {#deploy-pipeline}
+### 7. Ejecute la canalización de front-end {#deploy-pipeline}
 
-Implemente el tema personalizado mediante la canalización front-end. Más información [configuración de una canalización de front-line para implementar un tema personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
-
+1. Cree la canalización front-end para implementar el tema personalizado. Más información [configuración de una canalización de front-line para implementar un tema personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
+1. Ejecute la canalización de front-end creada para implementar la carpeta de temas personalizada en la sección **[!UICONTROL Estilo]** ficha de un asistente para la creación de formularios adaptables.
 
 >[!NOTE]
 >
@@ -205,15 +231,15 @@ Implemente el tema personalizado mediante la canalización front-end. Más infor
 1. Abra un formulario adaptable creado con componentes principales.
 1. Inicie el servidor proxy local mediante el símbolo del sistema y haga clic en **INICIAR SESIÓN LOCALMENTE (SOLO TAREAS DE ADMINISTRACIÓN)**.
 1. Una vez que haya iniciado sesión, se le redirigirá al explorador y verá el tema aplicado.
-1. Descargue el tema del lienzo y extraiga la carpeta zip descargada.
+1. Descargue el [Tema del lienzo](https://github.com/adobe/aem-forms-theme-canvas) y extraiga la carpeta zip descargada.
 1. Abra la carpeta zip extraída en su editor preferido.
 1. Cree un `.env` en la carpeta del tema y añada parámetros: **URL de AEM**, **AEM_ADAPTIVE_FORM** y **AEM_PROXY_PORT**.
 1. Abra el archivo CSS del cuadro de texto en la carpeta de temas del lienzo y cambie el color del borde por ejemplo `red` coloree y guarde los cambios.
 1. Vuelva a abrir el explorador y verá que los cambios se reflejan inmediatamente en un formulario adaptable.
 1. Mueva la carpeta de temas del lienzo a su repositorio clonado.
-1. Confirme los cambios e implemente la canalización de front-end.
+1. Confirme los cambios y ejecute la canalización de front-end.
 
-Una vez ejecutada la canalización, el tema está disponible en la pestaña Estilo .
+Una vez ejecutada la canalización, el tema está disponible en la pestaña Style .
 
 ## Prácticas recomendadas {#best-practices}
 
