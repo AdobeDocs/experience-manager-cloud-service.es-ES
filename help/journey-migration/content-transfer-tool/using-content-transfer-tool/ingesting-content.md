@@ -2,10 +2,10 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
+source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 9%
+source-wordcount: '1660'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 >id="aemcloud_ctt_ingestion"
 >title="Ingesta de contenido"
 >abstract="La ingesta hace referencia a la ingesta de contenido del conjunto de migración en la instancia de Cloud Service de destino. La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Ingesta superior"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="Ingesta superior"
 
 Siga los pasos a continuación para ingerir el conjunto de migración de la herramienta de transferencia de contenido:
 >[!NOTE]
@@ -135,11 +135,28 @@ Solo podrá iniciar una ingesta en el entorno de destino si pertenece al entorno
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
+### No se puede alcanzar el servicio de migración {#unable-to-reach-migration-service}
+
+Después de solicitar una ingesta, se puede presentar al usuario un mensaje como el siguiente: &quot;Actualmente no se puede acceder al servicio de migración en el entorno de destino. Inténtelo de nuevo más tarde o póngase en contacto con el servicio de asistencia al Adobe&quot;.
+
+![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+
+Esto indica que Cloud Acceleration Manager no pudo acceder al servicio de migración del entorno de destino para iniciar la ingesta. Esto puede ocurrir por varias razones.
+
+>[!NOTE]
+> 
+> El campo &quot;Token de migración&quot; se muestra porque en algunos casos la recuperación de ese token es lo que en realidad no está permitido. Al permitir que se proporcione manualmente, puede permitir al usuario iniciar la ingesta rápidamente, sin ninguna ayuda adicional. Si se proporciona el token y el mensaje sigue apareciendo, el problema no era recuperar el token.
+
+* AEM as a Cloud Service mantiene el estado del entorno y, ocasionalmente, puede que necesite reiniciar el servicio de migración por varios motivos normales. Si el servicio se está reiniciando, no se puede acceder a él, pero estará disponible próximamente.
+* Es posible que se esté ejecutando otro proceso en la instancia. Por ejemplo, si Release Orchestrator aplica una actualización, es posible que el sistema esté ocupado y el servicio de migración no esté disponible regularmente. Por eso, y la posibilidad de corromper la fase o la instancia de producción, se recomienda encarecidamente pausar las actualizaciones durante una ingesta.
+* Si una [Se ha aplicado la Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) mediante Cloud Manager, bloqueará el acceso de Cloud Acceleration Manager al servicio de migración. No se puede agregar una dirección IP para las ingestas porque es muy dinámica. Actualmente, la única solución es deshabilitar la lista de permitidos IP mientras se ejecuta la ingesta.
+* Puede haber otras razones que requieran investigación. Si la ingesta sigue fallando, póngase en contacto con el Servicio de atención al cliente de Adobe.
+
 ### Las actualizaciones automáticas a través de Release Orchestrator siguen habilitadas
 
 Release Orchestrator mantiene los entornos actualizados automáticamente mediante la aplicación de actualizaciones. Si la actualización se activa cuando se realiza una ingesta, puede causar resultados impredecibles, incluida la corrupción del entorno. Esta es una de las razones por las que se debe registrar un ticket de soporte antes de iniciar una ingesta (consulte &quot;Nota&quot; anterior), de modo que se pueda programar la desactivación temporal de Release Orchestrator.
 
-Si Release Orchestrator aún se está ejecutando cuando se está iniciando una ingesta, la interfaz de usuario presentará este mensaje de error. Puede optar por continuar de todas formas, aceptando el riesgo, marcando el campo y presionando el botón de nuevo.
+Si Release Orchestrator aún se está ejecutando cuando se está iniciando una ingesta, la interfaz de usuario presentará este mensaje. Puede optar por continuar de todas formas, aceptando el riesgo, marcando el campo y presionando el botón de nuevo.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
