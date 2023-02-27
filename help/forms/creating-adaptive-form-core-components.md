@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo crear un formulario adaptable medi
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
+source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 50%
@@ -34,7 +34,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 * **Una plantilla de formulario adaptable**: Una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece opciones para definir una temática y una acción de envío. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. Por ejemplo, enviar los datos recopilados a una fuente de datos. El servicio de nube proporciona una plantilla OOTB con el nombre en blanco:
 
    * La variable `blank` se incluye en todos los programas as a Cloud Service de AEM Forms nuevos.
-   * Puede instalar el paquete de referencia, a través del gestor de paquetes, para añadir la variable `blank` a su programa as a Cloud Service de AEM Forms.
+   * Puede instalar el paquete de referencia, a través del Administrador de paquetes, para añadir la variable `blank` a su programa as a Cloud Service de AEM Forms.
    * También puede [crear una nueva plantilla de Forms adaptable (componentes principales)](template-editor.md) desde cero.
 
 * **Una temática de formulario adaptable**: Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes.  La variable `Canvas` se incluye en todos los programas as a Cloud Service de AEM Forms nuevos.
@@ -96,7 +96,7 @@ Ahora, puede arrastrar y soltar el contenedor de componentes principales de Form
 
 ## Componentes principales adaptables de Forms disponibles
 
-Los componentes principales de Forms adaptables son componentes estandarizados de captura de datos. Estos componentes proporcionan capacidades de personalización, ayudan a reducir el tiempo de desarrollo y disminuyen los costes de mantenimiento de sus experiencias de inscripción digital. [Documentación de los componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) tiene una lista detallada de los componentes disponibles, así como información detallada sobre las capacidades de cada componente. También puede visitar [https://aemcomponents.dev/](https://aemcomponents.dev/) para ver los componentes principales disponibles en acción.
+Los componentes principales de Forms adaptables son componentes estandarizados de captura de datos. Estos componentes proporcionan capacidades de personalización, ayudan a reducir el tiempo de desarrollo y disminuyen los costos de mantenimiento de sus experiencias de inscripción digital. [Documentación de los componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) tiene una lista detallada de los componentes disponibles, así como información detallada sobre las capacidades de cada componente. También puede visitar [https://aemcomponents.dev/](https://aemcomponents.dev/) para ver los componentes principales disponibles en acción.
 
 ## Editar propiedades del modelo de formulario de un formulario adaptable {#edit-form-model}
 
