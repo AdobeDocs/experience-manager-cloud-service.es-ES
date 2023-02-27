@@ -1,15 +1,15 @@
 ---
 title: Crear y usar temáticas
 description: Puede utilizar temas para estilizar y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
-source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
+source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 19%
 
 ---
 
 
-# Introducción a los temas para el formulario adaptable mediante componentes principales {#introduction-to-themes-for-af-using-core-components}
+# Temas en Forms adaptable (componentes principales) {#themes-for-af-using-core-components}
 
 Puede crear y aplicar temas para diseñar un formulario adaptable utilizando componentes principales. Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes. La temática se administra de forma independiente sin hacer referencia a un formulario adaptable.
 
