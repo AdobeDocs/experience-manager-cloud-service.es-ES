@@ -1,9 +1,9 @@
 ---
 title: Cambios entre AEM 6.5 Forms y AEM Cloud Services
 description: ¿Es usuario de Experience Manager Forms y desea actualizar a Adobe Experience Manager Forms as a Cloud Service? Conozca los cambios más importantes antes de actualizar o migrar a Cloud Service.
-contentOwner: khsingh
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
-source-git-commit: d77b8d389be4b5c0ffa262ad6f1ff8b4d899e82b
+contentOwner: khsingh
+source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 25%
@@ -16,39 +16,39 @@ Adobe Experience Manager Forms as a Cloud Service ofrece algunos cambios importa
 
 | Función/Capacidad | [!DNL AEM Forms] as a Cloud Service | AEM 6.5 Forms |
 |---|---|---|
-| Arquitectura nativa de la nube | 0 | ☒ |
-| Adaptación automática basada en la carga | ☑ | ☒ |
-| Sin downtime en las actualizaciones | ☑ | ☒ |
+| Arquitectura nativa de la nube | ✅ | ⛌ |
+| Adaptación automática basada en la carga | ✅ | ⛌ |
+| Sin downtime en las actualizaciones | ✅ | ⛌ |
 | Frecuencia de despliegue de funciones | Agile* | Trimestral |
-| CDN (red de entrega de contenido) incluida | ☑ | ☒ |
-| Topologías optimizadas para lograr la máxima resiliencia y eficiencia | ☑ | ☒ |
-| Entorno de desarrollo nativo de la nube | ☑ | ☒ |
-| Autoservicio mediante Cloud Manager | ☑ | ☒ |
-| Actualizaciones automatizadas con integración continua y entrega continua (CI/CD) | ☑ | ☒ |
-| Integración con [!DNL Micosoft Power Automate] | ☑ | ☒ |
-| Integración con [!DNL DocuSign] | ☑ | ☒ |
-| Conectividad sencilla con Microsoft Dynamics y Salesforce | ☑ | ☒ |
-| Conectividad sencilla con el almacén de datos de Microsoft Azure | ☑ | ☒ |
-| Editor de reglas endurecidas | ☑ | ☒ |
-| Asistente de creación de formularios | ☑ | ☒ |
-| Compatibilidad personalizada con XCI para el documento de registro | ☑ | ☒ |
-| Forms adaptable <sup>1</sup> | ☑ | ☑ |
-| Integración de datos con varias fuentes de datos | ☑ | ☑ |
-| API de comunicaciones (servicios de documentos) <sup>2,3</sup> | ☑ | ☑ |
-| Servicio de automated forms conversion <sup>4</sup> | ☑ | ☑ |
-| Integración con [!DNL Adobe Sign] | ☑ | ☑ |
-| Integración con [!DNL AEM Sites] | ☑ | ☑ |
-| Integración con [!DNL Adobe Launch] | ☑ | ☑ |
-| Integración con [!DNL Adobe Analytics] | ☑ | ☑ |
-| Portal de Forms <sup>5</sup> | ☑ | ☑ |
-| Flujos de trabajo de AEM | ☑ | ☑ |
-| Documento de registro | ☑ | ☑ |
-| Captcha invisible | ☑ | ☑ |
-| Configuraciones del modelo de datos de formulario reutilizables | ☑ | ☑ |
-| Documento de registro basado en Acrobat | ☑ | ☑ |
-| Autenticación de identidad basada en ID de gobierno para Adobe Sign habilitado para Adaptable Forms | ☑ | ☑ |
-| HTML5 <sup>6</sup> | ☒ | ☑ |
-| Seguridad de los documentos | ☒ | ☑ |
+| CDN (red de entrega de contenido) incluida | ✅ | ⛌ |
+| Topologías optimizadas para lograr la máxima resiliencia y eficiencia | ✅ | ⛌ |
+| Entorno de desarrollo nativo de la nube | ✅ | ⛌ |
+| Autoservicio mediante Cloud Manager | ✅ | ⛌ |
+| Actualizaciones automatizadas con integración continua y entrega continua (CI/CD) | ✅ | ⛌ |
+| Integración con [!DNL Micosoft Power Automate] | ✅ | ⛌ |
+| Integración con [!DNL DocuSign] | ✅ | ⛌ |
+| Conectividad sencilla con Microsoft Dynamics y Salesforce | ✅ | ⛌ |
+| Conectividad sencilla con el almacén de datos de Microsoft Azure | ✅ | ⛌ |
+| Editor de reglas endurecidas | ✅ | ⛌ |
+| Asistente de creación de formularios | ✅ | ⛌ |
+| Compatibilidad personalizada con XCI para el documento de registro | ✅ | ⛌ |
+| Forms adaptable <sup>1</sup> | ✅ | ✅ |
+| Integración de datos con varias fuentes de datos | ✅ | ✅ |
+| API de comunicaciones (servicios de documentos) <sup>2,3</sup> | ✅ | ✅ |
+| Servicio de automated forms conversion <sup>4</sup> | ✅ | ✅ |
+| Integración con [!DNL Adobe Sign] | ✅ | ✅ |
+| Integración con [!DNL AEM Sites] | ✅ | ✅ |
+| Integración con [!DNL Adobe Launch] | ✅ | ✅ |
+| Integración con [!DNL Adobe Analytics] | ✅ | ✅ |
+| Portal de Forms <sup>5</sup> | ✅ | ✅ |
+| Flujos de trabajo de AEM | ✅ | ✅ |
+| Documento de registro | ✅ | ✅ |
+| Captcha invisible | ✅ | ✅ |
+| Configuraciones del modelo de datos de formulario reutilizables | ✅ | ✅ |
+| Documento de registro basado en Acrobat | ✅ | ✅ |
+| Autenticación de identidad basada en ID de gobierno para Adobe Sign habilitado para Adaptable Forms | ✅ | ✅ |
+| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| Seguridad de los documentos | ⛌ | ✅ |
 
 Antes de proceder al servicio, tenga en cuenta los siguientes casos excepcionales:
 

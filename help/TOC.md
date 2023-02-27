@@ -8,7 +8,7 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
+source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
 workflow-type: tm+mt
 source-wordcount: '3946'
 ht-degree: 95%
@@ -501,7 +501,7 @@ ht-degree: 95%
 + Forms {#forms}
    + Información general {#forms-overview}
       + [Introducción](/help/forms/home.md)
-      + [Funciones principales](/help/forms/key-features.md)
+      + [Últimas innovaciones](/help/forms/latest-innovations.md)
       + [Cambios importantes ](/help/forms/notable-changes.md)
       + [Arquitectura](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Preguntas frecuentes](/help/forms/faq.md)
