@@ -3,9 +3,9 @@ title: Cambios entre AEM 6.5 Forms y AEM Cloud Services
 description: ¿Es usuario de Experience Manager Forms y desea actualizar a Adobe Experience Manager Forms as a Cloud Service? Conozca los cambios más importantes antes de actualizar o migrar a Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
+source-git-commit: 2a464a0a11396a1948ba7211d5c0534769e6659c
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1177'
 ht-degree: 24%
 
 ---
@@ -99,7 +99,7 @@ La compatibilidad con el uso anónimo de Forms Portal no está disponible de for
 +++
 
 
-+++ 7. HTML5 Forms (Mobile Forms)
++++ 7. HTML5 Forms
 
 * El servicio no es compatible con HTML5 Forms (Mobile Forms). Si procesa los formularios basados en XDP como HTML5 Forms, puede seguir utilizando la función en AEM 6.5 Forms.
 
