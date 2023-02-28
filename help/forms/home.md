@@ -3,9 +3,9 @@ title: Introducción a  [!DNL AEM Forms]  as a Cloud Service
 description: Descubra AEM Forms y cómo le ayuda a producir documentos y contenido de formularios preparados para la empresa. Obtenga información sobre Plataforma como servicio (PaaS) y cómo administrar formularios digitales de clase empresarial y procesos empresariales, así como conectar Forms a fuentes de datos actuales.
 landing-page-description: Obtenga información sobre cómo utilizar formularios en AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: c51aa20a37e27252a8c1e6a72d4bc6ffacea46f7
+source-git-commit: 3b6bf70ffefeb067620d6071b339384c53820ab5
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '952'
 ht-degree: 41%
 
 ---
@@ -20,7 +20,8 @@ Puede utilizar el servicio para crear y desplegar formularios digitales interact
 
 La organización puede utilizar [!DNL AEM Forms] as a Cloud Service para crear formularios digitales, conectar formularios a fuentes de datos existentes, integrar formularios con [!DNL Adobe Sign] para agregarles firmas electrónicas y generar el documento de registro (DoR) para archivar los formularios enviados como archivos PDF. Asimismo, pueden usar el servicio para convertir los PDF forms existentes en formularios digitales.
 
-![Recopilación de datos: diseño de formulario interactivo](/help/forms/assets/data-collection.jpeg){width="40%"}
+![Recopilación de datos: diseño de formulario interactivo](/help/forms/assets/data-collection.jpeg "Experiencias adaptables de Forms para varios dispositivos"){width="70%" align="center"}
+
 Diseño de formulario adaptable
 
 En las grandes empresas, los formularios suelen crearse una vez y reutilizarse copiándolos a un sistema de gestión de contenidos. Mantener actualizada una gran base de datos de formularios y conseguir que estos resulten reconocibles puede constituir un auténtico reto. AEM proporciona un portal de formularios personalizable que garantiza que los clientes puedan localizar y acceder a los formularios que necesitan en los canales web y móviles.
@@ -34,7 +35,8 @@ Con AEM Forms, los usuarios empresariales pueden crear atractivas experiencias d
 Los documentos personalizados, como recibos, kits de bienvenida y extractos, pueden generarse fácilmente. Las organizaciones pueden dirigir el tráfico a portales web personalizados, lo que favorece la inscripción en servicios adicionales o su compra.
 
 
-![Comunicación personalizada: diseño interactivo](/help/forms/assets/personalized-communication.jpeg){width="40%"}
+![Comunicación personalizada: diseño interactivo](/help/forms/assets/personalized-communication.jpeg "Facturas de PDF personalizadas generadas bajo demanda"){width="70%" align="center"}
+
 Factura personalizada
 
 El servicio siempre está actualizado, siempre está disponible, y aprende constantemente. Las organizaciones pueden utilizar [!DNL AEM Forms] as a Cloud Service y obtenga todas estas funciones en la nube sin requerir ninguna infraestructura local. El servicio también permite prescindir de los ciclos de actualización complejos, ya que siempre está actualizado con las últimas funciones.
