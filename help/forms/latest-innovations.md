@@ -1,10 +1,10 @@
 ---
-title: Últimas innovaciones de Adobe Experience Manager (AEM) Forms as a Cloud Service
+title: Descubra las últimas innovaciones de Adobe Experience Manager Forms as a Cloud Service.
 description: '"Descubra las últimas capacidades de [!DNL AEM Forms] as a Cloud Service para crear, administrar y publicar formularios de clase empresarial y procesos empresariales".'
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 Algunas de las últimas innovaciones de AEM Forms as a Cloud Service son:
 
-|  |  |
+| Función | Detalles |
 |---|---|
 | Forms adaptable sin objetivos | Crear y administrar [Forms adaptable sin objetivos](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) en la plataforma de Adobe Experience Manager. Permita que los desarrolladores creen, publiquen y gestionen formularios interactivos a los que se puede acceder e interactuar mediante API, en lugar de a través de una interfaz gráfica de usuario tradicional. <br/> <br/> Estos formularios están diseñados para enviarse sin necesidad de una interfaz de formulario HTML tradicional. En otras palabras, le permiten enviar datos de formulario mediante programación a través de una API o código back-end sin requerir ningún elemento de formulario visible en el front-end. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)<br/> Los formularios sin encabezado son útiles en varios casos, como cuando se crean aplicaciones de una sola página, aplicaciones web progresivas o aplicaciones móviles, en los que una interfaz de formulario de HTML tradicional puede no ser necesaria o práctica. Al permitir a los desarrolladores enviar datos de formulario directamente a través de API o código back-end, los formularios sin encabezado ayudan a optimizar los flujos de trabajo y mejorar el rendimiento general de las aplicaciones web. |
 | Componentes principales  | La variable [Componentes principales adaptables de Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) son un conjunto de 24 componentes de código abierto compatibles con BEM que se basan en los componentes principales de WCM de Adobe Experience Manager. Están diseñadas específicamente para utilizarse en la creación de Forms adaptable, que son formularios que se adaptan al dispositivo, navegador y tamaño de pantalla del usuario. <br/> <br/> Estos componentes se pueden utilizar para crear experiencias de inscripción y captura de datos excepcionales proporcionando una amplia gama de opciones de campo de formulario, incluidos campos de texto, casillas de verificación, menús desplegables y mucho más. También incluyen funciones como validación, lógica condicional y diseño interactivo, que pueden utilizarse para crear formularios fáciles de usar y fáciles de usar. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>  Además, como estos componentes son de código abierto, los desarrolladores pueden personalizar y ampliar fácilmente los componentes para adaptarlos a las necesidades específicas de su organización. Además, estos componentes se basan en la metodología de BEM, que garantiza que sean escalables y mantenibles. |

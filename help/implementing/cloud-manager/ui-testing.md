@@ -2,9 +2,9 @@
 title: Pruebas de IU
 description: La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones personalizadas
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: b1eacc8432a73f015529975e6960afbe9dee7565
+source-git-commit: 3e31b065999d36717b81253d2773e41b76949954
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2141'
 ht-degree: 56%
 
 ---
@@ -221,7 +221,7 @@ Las siguientes variables de entorno se pasarán a la imagen de Docker en tiempo 
 Las muestras de prueba de Adobe proporcionan funciones de ayuda para acceder a los parámetros de configuración:
 
 * JavaScript: Consulte la [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) módulo
-* Java: Consulte la [Configuración](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+* Java: Consulte la [Configuración](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
 
 ### Esperando a que Selenium esté listo {#waiting-for-selenium}
 
@@ -255,21 +255,9 @@ Las muestras de prueba proporcionadas por el Adobe crean de forma predeterminada
 Puede utilizar las funciones de ayuda para crear capturas de pantalla a través de las pruebas.
 
 * JavaScript: [takeScreenshot, comando](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [Comandos](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+* Java: [Comandos](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Si se crea un archivo de resultados de prueba durante una ejecución de prueba de interfaz de usuario, el archivo de registro de prueba contiene una referencia a la ubicación del archivo de resultados de prueba al final.
-
-```
-[...]
-
-===============================================================
-The detailed test results can be downloaded from the URL below.
-Note: the link will expire after 60 days
-
-    https://results-host/test-results.zip
-
-===============================================================
-```
+Si se crea un archivo de resultados de prueba durante una ejecución de prueba de interfaz de usuario, puede descargarlo desde Cloud Manager mediante la función `Download Details` debajo de [**Pruebas de IU personalizadas** paso a paso.](/help/implementing/cloud-manager/deploy-code.md)
 
 ### Cargar archivos {#upload-files}
 
@@ -282,7 +270,7 @@ Las pruebas a veces deben cargar archivos en la aplicación que se está proband
    * Consulte la documentación y las bibliotecas del lenguaje de programación utilizado en la imagen Docker para saber cómo realizar una solicitud HTTP de este tipo.
    * Los ejemplos de prueba de Adobe proporcionan funciones de ayuda para cargar archivos:
       * JavaScript: Consulte la [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) comando.
-      * Java: Consulte la [FileHandler](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) Clase .
+      * Java: Consulte la [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) Clase .
 1. Si la carga se realiza correctamente, la solicitud devolverá una `200 OK` respuesta del tipo `text/plain`.
    * El contenido de la respuesta es un controlador de archivo opaco.
    * Puede utilizar este identificador en lugar de una ruta de archivo en un elemento `<input>` para probar la carga de archivos en la aplicación.
@@ -344,4 +332,4 @@ Para ejecutar las pruebas de IU desde el equipo local, cree un usuario con permi
 >
 >* Los archivos de registro se almacenan en la variable `target/reports` carpeta del repositorio.
 >
->Para obtener más información, consulte la [AEM repositorio de muestras de prueba.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/README.MD)
+>Para obtener más información, consulte la [AEM repositorio de muestras de prueba.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
