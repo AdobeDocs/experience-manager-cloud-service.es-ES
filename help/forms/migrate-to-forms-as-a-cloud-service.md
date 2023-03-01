@@ -1,20 +1,20 @@
 ---
 title: Migrar desde AEM 6.5 Forms y AEM 6.4 Forms a un entorno de  [!DNL AEM Forms]  as a Cloud Service
-description: Migrar desde un entorno local de  [!DNL AEM Forms]  a un entorno de  [!DNL AEM Forms]  as a Cloud Service
+description: Migración desde un [!DNL AEM Forms] (Entornos locales y AMS) a [!DNL AEM Forms] entorno as a Cloud Service
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
+source-git-commit: 4416c43b408f576a547590796141a6b551e25681
 workflow-type: tm+mt
-source-wordcount: '1816'
-ht-degree: 73%
+source-wordcount: '1335'
+ht-degree: 88%
 
 ---
 
-# Migrar a [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# Migración desde un [!DNL AEM Forms] (Entornos locales y AMS) a [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 Puede migrar su formulario adaptable, temáticas, plantillas y configuraciones de nube desde <!-- AEM 6.3 Forms--> AEM 6.4 Forms en OSGi y AEM 6.5 Forms en OSGi a [!DNL AEM] as a Cloud Service. Antes de migrar estos recursos, utilice la utilidad de migración para convertir el formato utilizado en las versiones anteriores al formato utilizado en [!DNL AEM] as a Cloud Service. Al ejecutar la utilidad de migración, se actualizan los siguientes recursos:
 
@@ -29,20 +29,22 @@ Puede migrar su formulario adaptable, temáticas, plantillas y configuraciones d
 
 * (Solo para AEM 6.3 Forms o un entorno de versión anterior actualizado a AEM 6.4 Forms o AEM 6.5 Forms) Los formularios adaptables basados en plantillas y temáticas predeterminadas disponibles en AEM 6.3 Forms o en versiones anteriores no son compatibles con [!DNL AEM Forms] as a Cloud Service.
 
-* El paso Verificar no está disponible. Quite el paso Verificar de los formularios adaptable existentes antes de trasladarlos a un entorno de Cloud Service.
+* Adobe Experience Manager Forms as a Cloud Service incorpora algunos cambios importantes en las funciones existentes en comparación con los entornos de Adobe Experience Manager 6.5 Forms (servicio local y administrado por el Adobe). Antes de continuar con la migración al servicio, [obtenga información acerca de estos cambios importantes](notable-changes.md) y el [diferencias de nivel de funcionalidad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report) para decidir la migración en función de las funciones que requiera su organización.
 
-* El paso de firma para Forms adaptable no está disponible. Elimine el paso Firma de un formulario adaptable existente. Configure el formulario adaptable para usar experiencia de firma en el explorador. Muestra el acuerdo de Adobe Acrobat Sign para su firma dentro del explorador al enviar un formulario adaptable. La experiencia de firma en el explorador ayuda a proporcionar una experiencia de firma más rápida y ahorra tiempo para el firmante.
 
-## Diferencia con AEM 6.5 Forms
 
-| Función | Diferencia con AEM 6.5 Forms |
+
+<!-- 
+## Difference with AEM 6.5 Forms 
+
+| Feature         | Difference with AEM 6.5 Forms    |
 |--------------|-----------|
-| HTML5 Forms (Forms móvil) | El servicio no es compatible con HTML5 Forms (Mobile Forms). Si procesa los formularios basados en XDP como HTML5 Forms, puede seguir utilizando la función en AEM 6.5 Forms. |
-| Formularios adaptables | <li><b>Forms adaptable basado en XSD:</b> El servicio no es compatible con HTML5 Forms (Mobile Forms). Si procesa los formularios basados en XDP como HTML5 Forms, puede seguir utilizando la función en AEM 6.5 Forms. </li> <li><b> Plantillas de formulario adaptable:</b> Utilice la canalización de compilaciones y el repositorio Git correspondiente de su programa para importar las plantillas de formularios adaptables existentes. </li><li><b>Editor de reglas:</b> AEM Forms as a Cloud Service proporciona un [Editor de reglas](rule-editor.md#visual-rule-editor). El editor de código no está disponible en Forms as a Cloud Service. La utilidad de migración le ayuda a migrar los formularios que tengan reglas personalizadas (creadas en el editor de código). La utilidad convierte estas reglas en funciones personalizadas compatibles con Forms as a Cloud Service. Puede utilizar las funciones reutilizables con el editor de reglas para seguir obteniendo resultados obtenidos con las secuencias de comandos de reglas. `onSubmitError` o `onSubmitSuccess` ahora están disponibles como acciones en el Editor de reglas. </li> <li><b>Proyectos y presentaciones:</b> El servicio no conserva los metadatos para borradores y envía Adaptive Forms. </li> <li><b> Servicio de precarga:</b> De forma predeterminada, el servicio de rellenado previo combina los datos con un formulario adaptable en el cliente en lugar de combinar los datos en el servidor en AEM 6.5 Forms. La función ayuda a mejorar el tiempo necesario para rellenar previamente un formulario adaptable. Siempre puede configurar para ejecutar la acción de combinación en el servidor de Adobe Experience Manager Forms. </li><li><b>Enviar acciones:</b> La variable **Enviar correo electrónico como PDF** la acción no está disponible. La variable **Correo electrónico** enviar acción proporciona opciones para enviar archivos adjuntos y adjuntar el documento de registro (DoR) con el correo electrónico. </li> |
-| Modelo de datos de formulario | <li>El modelo de datos de Forms solo admite extremos HTTP y HTTP para enviar datos. </li><li>Forms as a Cloud Service permite utilizar Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive y servicios que admiten operaciones generales de CRUD (Crear, Leer, Actualizar y Eliminar) como almacenes de datos. El servicio no es compatible con el conector JDBC, SSL mutuo para el conector Rest y autenticación basada en certificados x509 para fuentes de datos SOAP. </li> |
-| Servicio de conversión automatizada de formularios  | El servicio no proporciona un metamodelo para el servicio de Automated forms conversion. Puede [descargarlo de la documentación del servicio de Automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model). |
-| Configuraciones | <li>De forma predeterminada, el correo electrónico admite los protocolos HTTP y HTTPs. [Póngase en contacto con el equipo de soporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email) para habilitar puertos para enviar correos electrónicos y para habilitar el protocolo SMTP para su entorno. </li> <li>Si utiliza paquetes personalizados, vuelva a compilar el código con la última versión de adobe-aemfd-docmanager antes de utilizar estos paquetes con Forms as a Cloud Service.</li> |
-| API de manipulación de documentos (servicio Assembler) | El servicio no admite operaciones que dependan de otros servicios o aplicaciones: <li>No se admite la conversión de documentos en un formato que no sea de PDF a un formato de PDF. Por ejemplo, Microsoft Word para PDF, Microsoft Excel para PDF y HTML para PDF no son compatibles</li><li>No se admiten las conversiones basadas en Distiller de Adobe. Por ejemplo, PostScript(PS) a PDF</li><li>No se admiten las conversiones basadas en Forms Service. Por ejemplo, XDP para PDF forms.</li><li>El servicio no admite la conversión de un PDF firmado o un PDF transparente a otro formato de PDF.</li> |
+| HTML5 Forms (Mobile Forms)     | The service does not support HTML5 Forms (Mobile Forms). If you render your XDP-based forms as HTML5 Forms, you can continue using the feature on AEM 6.5 Forms. |
+| Adaptive Forms     | <li><b>XSD-Based Adaptive Forms:</b> The service does not support HTML5 Forms (Mobile Forms). If you render your XDP-based forms as HTML5 Forms, you can continue using the feature on AEM 6.5 Forms. </li> <li><b> Adaptive Form templates:</b> Use build pipeline and corresponding Git repository of your program to import existing Adaptive Form templates. </li><li><b>Rule editor:</b> AEM Forms as a Cloud Service provides a hardened [Rule editor](rule-editor.md#visual-rule-editor). The code editor is not available on Forms as a Cloud Service. The migration utility helps you migrate your forms that have custom rules (created in code editor). The utility converts such rules into custom functions supported on Forms as a Cloud Service. You can use the reusable functions with Rule editor to continue obtaining results obtained with rule scripts  The `onSubmitError` or `onSubmitSuccess` functions are now available as actions the Rule Editor. </li> <li><b>Drafts and submissions:</b> The service does not retain metadata for drafts and submitted Adaptive Forms. </li> <li><b> Prefill Service:</b> By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server. </li><li><b>Submit actions:</b> The **Email as PDF** action is not available. The **Email** submit action provide options to send attachments and attach Document of Record (DoR) with email. </li>|
+| Form Data Model | <li>Forms data model supports only HTTP and HTTPs endpoints to submit data. </li><li>Forms as a Cloud Service allows to use Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive, and services supporting general CRUD (Create, Read, Update, and Delete) operations as data stores. The service does not support JDBC connector, Mutual SSL for Rest connector, and x509 certificate-based authentication for SOAP data sources. </li>|
+| Automated Forms Conversion Service     | The service does not provide meta-model for Automated Forms Conversion Service. You can [download it from Automated Forms Conversion Service documentation](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).|
+|Configurations|<li>Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment. </li> <li>If you use custom bundles, recompile your code with latest version of adobe-aemfd-docmanager before using these bundles with Forms as a Cloud Service.</li> |
+| Document Manipulation APIs (Assembler Service)| The service does not support operations dependent on other services or applications: <li>Conversion of documents in a non-PDF format to a PDF format is not supported. For example, Microsoft Word to PDF, Microsoft Excel to PDF, and HTML to PDF are not supported</li><li>Adobe Distiller-based conversions are not supported. For example, PostScript(PS) to PDF</li><li>Forms Service-based conversions are not supported. For example, XDP to PDF Forms.</li><li>The service does not support converting a Signed PDF or Transparent PDF to another PDF format.</li>| -->
 
 ## Requisitos previos {#prerequisites}
 
@@ -56,7 +58,8 @@ Puede migrar su formulario adaptable, temáticas, plantillas y configuraciones d
 * Cuentas con privilegios de administrador en [!DNL AEM Forms] as a Cloud Service y su entorno local de [!DNL AEM Forms].
 * Descargue e instale el Analizador de prácticas recomendadas, la herramienta de transferencia de contenido y la utilidad de migración de [!DNL AEM Forms] del [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html)
 
-* Ejecute el [Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=es#cloud-migration) y corrija el problema del que se ha informado.
+* Ejecute el [Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=es#cloud-migration) y corrija el problema del que se ha informado. Para ver los posibles problemas relacionados con la migración de Adobe Experience Manager Forms a Adobe Experience Manager Forms as a Cloud Service, consulte [AEM Detección de patrones de para Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report).
+
 
 <!-- * Download the latest [compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases) for your [!DNL AEM Forms] version. -->
 
@@ -124,7 +127,7 @@ Realice los siguientes pasos para lograr que sus recursos de [!DNL AEM Forms] se
 
 * **Modelo de flujo de trabajo**: Puede encontrar modelos de flujo de trabajo de AEM en `/conf/global/settings/workflow/models/`. Por ejemplo, para un modelo de flujo de trabajo llamado “WKND Registration”, añada la ruta `/conf/global/settings/workflow/models/wknd-registration`
 
-Puede agregar las rutas de carpeta de nivel superior que se enumeran a continuación o las rutas de carpeta específicas, tal como se describe a continuación. Le permite migrar ciertos recursos y todos los recursos y formularios a la vez.
+Puede agregar las rutas de carpeta de nivel superior que se enumeran a continuación o las rutas de carpeta específicas, tal como se describe a continuación. Permite migrar un recurso determinado y todos los recursos y formularios a la vez.
 
 * /content/dam/formsanddocuments-fdm
 * /content/dam/formsanddocuments/themes
