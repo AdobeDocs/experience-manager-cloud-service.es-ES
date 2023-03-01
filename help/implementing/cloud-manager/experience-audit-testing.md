@@ -2,10 +2,10 @@
 title: Pruebas de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
+source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 97%
 
 ---
 
@@ -33,6 +33,10 @@ Los resultados de la auditoría son informativos y permiten al administrador de 
 
 La auditoría de experiencias está equipada con Google Lighthouse, una herramienta de código abierto de Google y está habilitada en todas las canalizaciones de producción de Cloud Manager.
 
+>[!TIP]
+>
+>Puede configurar qué páginas se incluyen en la auditoría de experiencias al [configure la canalización.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+
 ## Comprender los resultados de la auditoría de experiencias {#understanding-experience-audit-results}
 
 La auditoría de experiencias proporciona resultados de prueba agregados y detallados a nivel de página a través de la [página de ejecución de canalizaciones de producción.](/help/implementing/cloud-manager/deploy-code.md)
@@ -59,7 +63,6 @@ La métrica de cambios puede tener uno de los siguientes valores.
 * **N/D**: No había ninguna puntuación disponible para comparar.
 
 ![Resultados de la auditoría de experiencias](/help/implementing/cloud-manager/assets/exp-audit-1.png)
-
 
 ### Puntuaciones a nivel de página {#page-level-scores}
 
