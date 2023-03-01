@@ -5,8 +5,8 @@ description: El componente Tabla en AEM Forms le permite crear tablas en formula
 seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
-source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
-workflow-type: ht
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
+workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 100%
 
@@ -53,6 +53,7 @@ Puede agregar y eliminar una fila o columna, y mover una fila hacia arriba o hac
 #### Adición, supresión o desplazamiento de una fila
 
 Para agregar, eliminar o mover la fila, haga clic en cualquier celda de la fila. abra el explorador de contenido ![Explorador de contenido](/help/forms/assets/Smock_Layers_18_N.svg) y seleccione la fila correspondiente. Se resaltará la fila seleccionada con la opción de barra de herramientas desde la que puede agregar, eliminar o mover la fila hacia arriba o hacia abajo.
+
 * La operación **[!UICONTROL Subir]** y **[!UICONTROL Bajar]** mueve la fila seleccionada arriba y abajo.
 
 * La operación **[!UICONTROL Agregar columna]** añade una fila debajo de la fila seleccionada.
