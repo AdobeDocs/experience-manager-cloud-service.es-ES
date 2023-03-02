@@ -2,10 +2,10 @@
 title: Métodos abreviados del teclado para las consolas
 description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: ht
-source-wordcount: '373'
-ht-degree: 100%
+source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Los siguientes métodos abreviados están disponibles para las consolas Sitios, 
 |  | `Left Arrow` | Desplácese hacia arriba de la estructura de árbol / contraiga el nodo de árbol |
 |  | `Down Arrow` | Mover hacia abajo una lista de páginas en el mismo nivel |
 |  | `Up Arrow` | Mover hacia arriba una lista de páginas en el mismo nivel |
-| Consola: vista de columna | `Shift-Up/Down Arrow` | Mover hacia arriba una lista de páginas en el mismo nivel |
+| Consola: vista de columna | `Shift-Up/Down Arrow` | Subir/bajar y seleccionar una lista de páginas en el mismo nivel |
 |  | `Esc` | Mover hacia arriba una lista de páginas en el mismo nivel |
 | Consolas | `?` | Ayuda de métodos abreviados del teclado |
 |  | `/` | Invocar la [búsqueda](/help/sites-cloud/authoring/getting-started/search.md) |
