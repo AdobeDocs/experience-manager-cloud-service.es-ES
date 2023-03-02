@@ -5,10 +5,10 @@ landing-page-description: Aprenda a administrar fragmentos de contenido desde la
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: ht
-source-wordcount: '901'
-ht-degree: 100%
+source-git-commit: db81eac064d4616cb6b1beae85abc0c55a993fce
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Aquí se pueden ver tres áreas principales:
             * Mostrar información sobre referencias
             * Mostrar información sobre las versiones de idioma del fragmento
          * Puede [seleccionar uno o varios fragmentos de contenido para mostrar las acciones disponibles](#actions-selected-content-fragment)
-      * Puede seleccionar un encabezado de columna para ordenar la tabla según esa columna; volver a seleccionar para alternar entre ascendente y descendente
+      * Puede seleccionar un encabezado de columna para ordenar la tabla según esa columna; volver a seleccionar para alternar entre ascendente y descendente. Actualmente, la ordenación es compatible con **Título**, **Modificado**, y **Modificado por** columnas.
    * **[Crear](#creating-new-content-fragment)** un nuevo fragmento de contenido
    * [Filtrar](#filtering-fragments) los fragmentos de contenido de acuerdo con una selección de predicados y guardar el filtro para uso futuro
    * [Buscar](#searching-fragments) los fragmentos de contenido
