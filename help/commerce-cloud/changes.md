@@ -1,31 +1,31 @@
 ---
-title: Cambios importantes del complemento Commerce Integration Framework (CIF)
-description: Cambios importantes del marco de integración comercial (CIF) en comparación con las versiones anteriores del CIF.
+title: Cambios importantes en el complemento del marco de integración comercial (CIF)
+description: Cambios importantes del Commerce Integration Framework (CIF) en comparación con las versiones anteriores del CIF.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b81ac7529e7757fbd9f9fbc48e47e740ab9ecbf3
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 6%
+source-wordcount: '454'
+ht-degree: 1%
 
 ---
 
 # Cambios importantes en el complemento Commerce Integration Framework (CIF){#notable-changes}
 
-Adobe Experience Manager as a Cloud Service ofrece muchas nuevas funciones y posibilidades para gestionar sus Proyectos AEM. Para obtener más información sobre estas capacidades, siga el enlace para [cambios en Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service AEM ofrece muchas nuevas funciones y posibilidades para administrar sus proyectos de. Para obtener más información acerca de estas funcionalidades, siga el vínculo de [cambios en Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
-Este documento destaca las importantes diferencias entre el complemento Commerce Integration Framework (CIF) y las versiones anteriores del CIF, conocidas principalmente como CIF Classic (Quickstart) y CIF Open-source.
+Este documento destaca las importantes diferencias entre el complemento Commerce Integration Framework (CIF) y las versiones antiguas del CIF, conocidas como CIF clásico (Quickstart) y CIF de código abierto.
 
 ## Instalación y actualizaciones
 
-El complemento AEM CIF se instala mediante Cloud Manager. La instalación requiere un crédito CIF, excepto para los entornos limitados en los que CIF puede instalarse sin créditos. Los créditos se reciben automáticamente mediante el aprovisionamiento del complemento CIF en su contrato AEM.
+AEM El complemento CIF de la aplicación se instala a través de Cloud Manager. La instalación requiere un crédito CIF, excepto para los entornos limitados en los que CIF se puede instalar sin créditos. AEM Los créditos se reciben automáticamente a través del suministro del complemento CIF en su contrato de.
 
-El complemento se actualiza automáticamente como parte de las actualizaciones as a Cloud Service AEM normales.
+AEM El complemento se actualiza automáticamente como parte de la actualización regular y as a Cloud Service de la.
 
 **Versiones anteriores del CIF**
 
-* CIF Classic: No se necesita instalación, CIF era parte de Quickstart. Las actualizaciones del CIF formaban parte de actualizaciones AEM o service pack normales
-* CIF Código abierto para AEM locales: Instalación a través de GitHub. Las actualizaciones formaban parte del trabajo de actualización/mantenimiento manual.
-* CIF Open-source para AEM Adobe Managed Services: Instalación mediante Customer Success Manager. Las actualizaciones formaban parte del trabajo de actualización/mantenimiento manual.
+* CIF clásico: no se necesita instalación, CIF era parte de Quickstart. AEM Las actualizaciones del CIF formaban parte de las actualizaciones regulares de los paquetes de servicio o de los programas de servicio
+* AEM CIF de código abierto para la instalación local de la: instalación a través de GitHub. Las actualizaciones formaban parte del trabajo de actualización/mantenimiento manual.
+* AEM CIF de código abierto para Adobe Managed Services: instalación a través del equipo de cuenta de Adobe. Las actualizaciones formaban parte del trabajo de actualización/mantenimiento manual.
 
 ## Configuración de extremo
 
@@ -33,34 +33,34 @@ El extremo se configura y actualiza a través de la interfaz de usuario de Cloud
 
 **Versiones anteriores del CIF**
 
-* CIF Classic: A través de la configuración OSGi en AEM
-* CIF Open-source: A través del navegador de configuración del CIF
+* AEM CIF clásico: a través de la configuración OSGi en el
+* CIF Open-source: a través del explorador de configuración del CIF
 
 ## Implementación del proyecto CIF Venia
 
-Proyecto disponible en [Repositorio de Git de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) e implementación realizada mediante [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=es)
+Proyecto disponible en [Repositorio de Git de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) e implementación realizada mediante [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
 
 **Versiones anteriores del CIF**
 
-* CIF Classic: A través de AEM instalación del paquete
-* CIF Open-source: Via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es)
+* AEM CIF Classic: a través de la instalación del paquete de la
+* CIF de código abierto: a través de [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
 ## Datos del catálogo de productos
 
-Los datos del catálogo de productos se solicitan bajo demanda mediante llamadas en tiempo real a un extremo externo que admite las API de GraphQL necesarias. Estas API admiten el acceso a los datos activos o por etapas en cualquier fecha determinada. No se necesita replicación.
+Los datos del catálogo de productos se solicitan bajo demanda mediante llamadas en tiempo real a un extremo externo que admite las API de GraphQL requeridas. Estas API admiten el acceso a datos activos o clasificados en cualquier fecha determinada. No se necesita replicación.
 
 **Versiones anteriores del CIF**
 
-* CIF Classic: Los datos de productos activos y por etapas se importan y persisten en JCR en AEM Author mediante la importación completa o delta de productos. Los datos del producto activo se replican en AEM Publish.
+* CIF clásico: los datos de productos en vivo y clasificados se importan y persisten en JCR en AEM Author a través de la importación completa o delta de productos. Los datos del producto activos se replican en AEM Publish.
 
-## Experiencias del catálogo de productos con AEM renderización
+## AEM Experiencias del catálogo de productos con procesamiento de la
 
-AEM procesa las experiencias del catálogo de productos sobre la marcha mediante AEM plantillas de catálogo que se han asignado a productos y categorías. No se necesita replicación.
+AEM AEM La función de procesamiento de experiencias de catálogo de productos se procesa sobre la marcha utilizando plantillas de catálogo de productos que se han asignado a productos y categorías, y que se pueden usar para crear experiencias de catálogo de productos. No se necesita replicación.
 
 **Versiones anteriores del CIF**
 
-* CIF Classic: AEM Author crea una página AEM para cada categoría o producto con la herramienta de modelo del catálogo. Estas páginas se replican en AEM Publish.
+* AEM CIF clásico: AEM Author crea una página de para cada categoría/producto mediante la herramienta de modelo de catálogo. Estas páginas se replican en AEM Publish.
 
 >[!NOTE]
 >
->Para obtener documentación adicional sobre cómo utilizar CIF con AEM servicio administrado o AEM local, consulte [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>AEM AEM Para obtener documentación adicional sobre cómo utilizar CIF con el servicio administrado por el usuario o el servicio administrado por el usuario en el sitio web, consulte la sección sobre el uso de CIF en el sitio web de [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
