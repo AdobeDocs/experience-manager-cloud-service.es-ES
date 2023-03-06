@@ -2,7 +2,7 @@
 title: AEM Registro para la as a Cloud Service
 description: AEM Obtenga información sobre cómo utilizar Registro para el registro as a Cloud Service con el fin de configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 37c948b8906bcf6dd7ee3acdc6c6b7d211a33058
+source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 4%
