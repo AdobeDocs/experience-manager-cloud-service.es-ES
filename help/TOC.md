@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 59cc80d66880398bb7c7a065a7c9d4baee5141db
+source-git-commit: d6d7fefce814063476aae8cdafc9cc6b084361a3
 workflow-type: tm+mt
-source-wordcount: '3960'
+source-wordcount: '3967'
 ht-degree: 95%
 
 ---
@@ -201,16 +201,17 @@ ht-degree: 95%
          + [Introducción a la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Validación de transferencias de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+         + [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [Extracción de contenido del origen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Ingesta de contenido en Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Visualización de registros del conjunto de migraciones](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Eliminación de un conjunto de migraciones](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Ejecución de la herramienta de transferencia de contenido en una instancia de publicación](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Resolución de problemas de la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + Herramienta de asignación de usuarios {#user-mapping-tool}
-            + [Información general](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
-            + [Consideraciones importantes](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
-            + [Uso de la herramienta de asignación de usuarios](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+         + Herramienta de asignación de usuarios heredados (heredado){#legacy-user-mapping-tool}
+            + [Información general](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+            + [Consideraciones importantes](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
+            + [Uso de la herramienta de asignación de usuarios](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
          + Herramienta de transferencia de contenido heredado {#legacy}
             + [Información general](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
             + [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
