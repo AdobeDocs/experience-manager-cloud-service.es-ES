@@ -2,10 +2,10 @@
 title: Administración de actividades
 description: La consola Actividades permite crear, organizar y administrar las actividades de marketing de las marcas
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 100%
+source-wordcount: '2019'
+ht-degree: 99%
 
 ---
 
@@ -84,6 +84,10 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 
 >[!NOTE]
 >
+>Para poder hacer lo siguiente **Seleccionar una configuración de destino** debe estar en el **Autores de actividades de Target** grupo.
+
+>[!NOTE]
+>
 >Es necesario *crear* nuevas actividades de Adobe Target en el editor de contenido segmentado, no en la consola **Actividades**, ya que la sincronización con Adobe Target fallará.
 >
 >Sin embargo, puede editar las actividades existentes de Adobe Target en la consola.
@@ -112,7 +116,7 @@ Si utiliza la prueba A/B de Adobe Target:
    * **Fecha y hora especificadas:** una hora específica. Cuando seleccione esta opción, pulse o haga clic en el icono de calendario, seleccione una fecha y especifique la hora a la que desea iniciar la actividad.
 1. Para especificar cuándo finaliza la actividad, utilice el menú desplegable final para seleccionar uno de los siguientes valores:
    * **Cuando se desactiva:** la actividad finaliza cuando la página que tiene el contenido de destino se desactiva.
-   * **Fecha y hora especificadas**: una hora específica. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
+   * **Fecha y hora especificadas**: una hora determinada. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
 1. Para especificar una prioridad de la actividad, utilice el regulador para seleccionar cualquier valor: **Baja**, **Normal** o **Alta**.
 1. Si utiliza Adobe Target como motor de segmentación, seleccione qué desea medir con esta actividad. Consulte [Configuración de la actividad y definición de objetivos](/help/sites-cloud/authoring/personalization/targeted-content.md) para obtener más información acerca de las métricas de éxito disponibles. Debe seleccionar por lo menos un objetivo.
 1. Haga clic o pulse **Guardar**.
