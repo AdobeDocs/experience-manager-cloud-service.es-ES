@@ -2,9 +2,9 @@
 title: Gestión de repositorios de contenido grandes
 description: En esta sección se describe la administración de repositorios de contenido grandes
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 5043caa54c3ba4553245a948758ee7da40c1e227
+source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1846'
 ht-degree: 3%
 
 ---
@@ -37,9 +37,6 @@ En la sección siguiente se comprenden las consideraciones importantes antes de 
 * Necesitará acceso para instalar [AzCopy](https://docs.microsoft.com/es-es/azure/storage/common/storage-use-azcopy-v10) AEM en la instancia (o VM) que ejecuta la instancia de origen de la instancia de la.
 
 * La recolección de elementos no utilizados del almacén de datos se ha ejecutado en los últimos 7 días en el origen. Para obtener más información, consulte [Recopilación de residuos del almacén de datos](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
-
->[!NOTE]
->Actualmente, las representaciones de texto no funcionan correctamente en los equipos con Windows, y se trata de un problema conocido. Sin embargo, abordaremos este problema en la próxima versión y proporcionaremos una corrección para él.
 
 ### AEM Consideraciones adicionales si la instancia de la fuente de datos está configurada para usar un almacén de datos de almacenamiento de Amazon S3 o Azure Blob {#additional-considerations-amazons3-azure}
 
