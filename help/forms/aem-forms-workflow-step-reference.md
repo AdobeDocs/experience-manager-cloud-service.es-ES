@@ -3,10 +3,10 @@ title: ¿Cómo asignar un flujo de trabajo a otro usuario, enviar correos electr
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo basados en formularios adaptables. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varias fuentes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '7210'
-ht-degree: 98%
+source-wordcount: '7190'
+ht-degree: 94%
 
 ---
 
@@ -181,7 +181,7 @@ El paso para convertir a PDF/A tiene las siguientes propiedades:
 
 Utilice este paso para enviar un correo electrónico, por ejemplo un correo electrónico con un documento de registro, un vínculo de un formulario adaptable <!-- , link of an interactive communication--> o con un documento PDF adjunto. Este paso es compatible con el [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Los correos electrónicos HTML responden y se adaptan al cliente de correo electrónico y al tamaño de pantalla de los destinatarios. Puede utilizar una plantilla de correo electrónico HTML para definir el aspecto, el esquema de colores y el comportamiento del correo electrónico.
 
-El paso de correo electrónico utiliza el servicio de correo de Day CQ para enviar correos electrónicos. Antes de utilizar el paso de correo electrónico, asegúrese de que el servicio de correo electrónico está configurado. De forma predeterminada, el correo electrónico admite los protocolos HTTP y HTTPs. [Póngase en contacto con el equipo de soporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email) para habilitar puertos para enviar correos electrónicos y para habilitar el protocolo SMTP para su entorno. La restricción ayuda a mejorar la seguridad de la plataforma.
+El paso de correo electrónico utiliza el servicio de correo de Day CQ para enviar correos electrónicos. Antes de utilizar el paso de correo electrónico, asegúrese de que el servicio de correo electrónico está configurado. De forma predeterminada, el correo electrónico admite los protocolos HTTP y HTTPs. [Póngase en contacto con el equipo de soporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) para habilitar puertos para enviar correos electrónicos y para habilitar el protocolo SMTP para su entorno. La restricción ayuda a mejorar la seguridad de la plataforma.
 
 El paso de correo electrónico tiene las siguientes propiedades:
 
@@ -211,7 +211,7 @@ El paso de correo electrónico tiene las siguientes propiedades:
 
 * **[!UICONTROL Imagen]**: utilice la opción para incrustar una imagen en el correo electrónico. Después de seleccionar la opción, busque y elija la imagen. La opción de imagen solo está disponible para las etiquetas de imagen (&lt;img src=&quot;&#42;&quot;/>) en la plantilla de correo electrónico.
 
-**[!UICONTROL Dirección de correo electrónico del remitente/destinatario]**: seleccione la opción **[!UICONTROL Literal]** para especificar manualmente una dirección de correo electrónico o seleccionar la opción **[!UICONTROL Recuperar a partir de metadatos del flujo de trabajo]** para recuperar la dirección de correo electrónico de una propiedad de metadatos. También puede especificar una lista de matrices de propiedades de metadatos para la opción **[!UICONTROL Recuperar a partir de metadatos del flujo de trabajo]**. Seleccione la opción **[!UICONTROL Variable]** para recuperar la dirección de correo electrónico a partir valor almacenado en una variable de tipo de datos de cadena.
+**[!UICONTROL Dirección de correo electrónico del remitente/destinatario]**: seleccione la **[!UICONTROL Literal]** para especificar manualmente una dirección de correo electrónico o seleccionar la **[!UICONTROL Recuperar de metadatos de flujo de trabajo]** para recuperar la dirección de correo electrónico de una propiedad de metadatos. También puede especificar una lista de matrices de propiedades de metadatos para la opción **[!UICONTROL Recuperar a partir de metadatos del flujo de trabajo]**. Seleccione la opción **[!UICONTROL Variable]** para recuperar la dirección de correo electrónico a partir valor almacenado en una variable de tipo de datos de cadena.
 
 * **[!UICONTROL Archivo adjunto]**: el recurso disponible en la ubicación especificada se adjunta al correo electrónico. La ruta del recurso puede ser relativa a la carga útil o a la ruta de acceso absoluta. Una ruta de ejemplo es [Payload_Directory]/attachments/.
 
@@ -238,7 +238,7 @@ Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos 
 
 **[!UICONTROL Guardar documento de registro generado mediante las siguientes opciones]**: especifique la ubicación para mantener un archivo de documento de registro. Puede sobrescribir la carpeta de carga útil, colocar el documento de registro en una ubicación del directorio de carga útil o almacenar el documento de registro en una variable de tipo Doc.
 
-**[!UICONTROL Configuración regional]**: especifique el idioma del documento de registro. Seleccione **[!UICONTROL Literal]** para elegir la configuración regional de una lista desplegable o seleccione **[!UICONTROL Variable]** para recuperar la configuración regional a partir del valor almacenado en una variable de tipo de datos de cadena. Debe definir el código de configuración regional mientras almacena el valor de la configuración regional en una variable. Por ejemplo, especifique **en_US** para inglés y **fr_FR** para francés.
+**[!UICONTROL Configuración regional]**: especifique el idioma del documento de registro. Seleccione **[!UICONTROL Literal]** para elegir la configuración regional de una lista desplegable o seleccione **[!UICONTROL Variable]** para recuperar la configuración regional a partir del valor almacenado en una variable de tipo de datos de cadena. Defina el código de configuración regional mientras almacena el valor de la configuración regional en una variable. Por ejemplo, especifique **en_US** para inglés y **fr_FR** para francés.
 
 ## Paso para invocar DDX {#invokeddx}
 
@@ -248,12 +248,12 @@ El paso Invocar DDX tiene las siguientes propiedades:
 
 **[!UICONTROL Documentos de entrada]**: se utiliza para establecer las propiedades de un documento de entrada. Hay varias opciones disponibles en esta pestaña:
 * **[!UICONTROL Especificar DDX mediante]**: especifica el documento de entrada que puede ser relativo a la carga útil, tener una ruta de acceso absoluta, puede proporcionarse como carga útil o almacenarse en una variable de tipo Doc.
-* **[!UICONTROL Crear mapa de carga útil]**: agregue todos los documentos de la carpeta de carga útil al mapa del documento de entrada para la API de invocación en el ensamblador. El nombre de nodo de cada documento se utiliza como clave en el mapa.
-* **[!UICONTROL Mapa del documento de entrada]**: la opción se usa para agregar varias entradas mediante el botón **[!UICONTROL AGREGAR]**. Cada entrada representa la clave del documento en el mapa y el origen del documento.
+* **[!UICONTROL Crear mapa desde carga útil]**: agregue todos los documentos de la carpeta de carga útil al mapa del documento de entrada para la API de invocación en el ensamblador. El nombre de nodo de cada documento se utiliza como clave en el mapa.
+* **[!UICONTROL Mapa del documento de entrada]**: La opción se utiliza para añadir varias entradas utilizando **[!UICONTROL AÑADIR]** botón. Cada entrada representa la clave del documento en el mapa y el origen del documento.
 
 **[!UICONTROL Opciones de entorno]**: esta opción se utiliza para definir la configuración de procesamiento de la API de invocación. Hay varias opciones disponibles en esta pestaña:
 * **[!UICONTROL Validar solo]**: comprueba la validez del documento DDX de entrada.
-* **[!UICONTROL Finalizar al producirse un error]**: valor booleano que indica si el servicio de API de invocación falla, en caso de error o no. De forma predeterminada, su valor se establece en False.
+* **[!UICONTROL Finalizar al producirse un error]**: Valor booleano que indica si el servicio de API de invocación falla, si hay un error o no. De forma predeterminada, su valor se establece en False.
 * **[!UICONTROL Primer número Bates]**: especifica el número, que incrementa de forma automática. Este número de aumento automático se muestra en cada página consecutiva de forma automática.
 * **[!UICONTROL Estilo predeterminado]**: define el estilo predeterminado del archivo de salida.
 
@@ -263,7 +263,7 @@ El paso Invocar DDX tiene las siguientes propiedades:
 
 **[!UICONTROL Documentos de salida]**: especifica la ubicación para guardar el archivo de salida. Hay varias opciones disponibles en esta pestaña:
 * **[!UICONTROL Guardar salida en carga útil]**: guarda los documentos de salida en la carpeta de carga útil o sobrescribe la carga útil, en caso de que esta sea un archivo.
-* **[!UICONTROL Mapa del documento de salida]**: especifica la ubicación para guardar cada archivo de documento explícitamente, añadiendo una entrada por documento. Cada entrada representa el documento y la ubicación donde guardarlo. Si hay varios documentos de salida, se utiliza esta opción.
+* **[!UICONTROL Mapa del documento de salida]**: especifica la ubicación para guardar cada archivo de documento explícitamente, agregando una entrada por documento. Cada entrada representa el documento y la ubicación donde guardarlo. Si hay varios documentos de salida, se utiliza esta opción.
 
 ## Paso para invocar el servicio de modelo de datos de formulario {#invoke-form-data-model-service-step}
 
@@ -485,7 +485,7 @@ Encrypt, Sign, and certify a document. [!DNL AEM Forms] supports both password b
 Send a document directly to a printer. It supports the following printing access mechanisms:
 
 * **[!UICONTROL Direct accessible printer]**: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.
-* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
+* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX&reg; printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server's IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
     -->
 
 ## Paso Generar una salida impresa {#generatePrintedOutput}
@@ -500,22 +500,22 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 
 * **[!UICONTROL Seleccionar el archivo de plantilla mediante:]** especifica la ruta del archivo de la plantilla. Puede seleccionar la plantilla mediante la ruta relativa a la carga útil, guardada en una ruta absoluta o mediante una variable de tipo de datos Doc. Por ejemplo, [Payload_Directory]/Workflow/data.xml. Si la ruta no existe en el repositorio crx, un administrador puede crear la ruta antes de utilizarla. Además, también puede aceptar la carga útil como archivo de datos de entrada.
 
-* **[!UICONTROL Seleccionar documento de datos mediante]**: especifica la ruta de un archivo de datos de entrada. Puede seleccionar los datos de entrada mediante la ruta relativa a la carga útil, guardada en una ruta absoluta o mediante una variable de tipo de datos Doc. Por ejemplo, [Payload_Directory]/Workflow/data.xml. Si la ruta no existe en el repositorio crx, un administrador puede crear la ruta antes de utilizarla.
+* **[!UICONTROL Seleccionar documento de datos usando]**: especifique la ruta de un archivo de datos de entrada. Puede seleccionar los datos de entrada mediante la ruta relativa a la carga útil, guardada en una ruta absoluta o mediante una variable de tipo de datos Doc. Por ejemplo, [Payload_Directory]/Workflow/data.xml. Si la ruta no existe en el repositorio crx, un administrador puede crear la ruta antes de utilizarla.
 
 * **[!UICONTROL Formato de impresora]**: valor del formato de impresión que especifica el idioma de descripción de la página que se utilizará, cuando no se proporcione un archivo XDC, para generar el flujo de salida. Si proporciona un valor literal, seleccione uno de estos valores:
 
-   * **[!UICONTROL PCL de color]**: Utilice la opción para especificar un archivo XDC para PCL.
-   * **[!UICONTROL PostScript genérico]**: Utilice la opción para especificar un archivo XDC genérico para PostScript.
+   * **[!UICONTROL PCL de color]**: utilice la opción para especificar un archivo XDC para PCL.
+   * **[!UICONTROL PostScript genérico]**: utilice la opción para especificar un archivo XDC genérico para PostScript.
    * **[!UICONTROL ZPL 300 DPI]**: utilice ZPL 300 DPI. Se utiliza zpl300.xdc.
    * **[!UICONTROL ZPL 600 DPI]**: utilice ZPL 600 DPI. Se utiliza el archivo zpl600.xdc.
    * **[!UICONTROL IPL 300 DPI]**: utilice IPL 300 DPI. Se utiliza ipl300.xdc.
    * **[!UICONTROL IPL 400 DPI]**: utilice IPL 400 DPI. Se utiliza el archivo ipl400.xdc.
    * **[!UICONTROL TPCL 600 DPI]**: utilice TPCL 600 DPI. Se utiliza el archivo tpcl600.xdc.
-   * **[!UICONTROL Plain PostScript]**: Utilice la opción para especificar un archivo XDC de texto sin formato para PostScript.
+   * **[!UICONTROL PostScript sin formato]**: utilice la opción para especificar un archivo XDC de texto sin formato para PostScript.
    * **[!UICONTROL DPL300DPI]**: utilice DPL 300 DPI. Se utiliza el dpl300.xdc.
    * **[!UICONTROL DPL400DPI]**: utilice DPL 400 DPI. Se utiliza el dpl400.xdc.
    * **[!UICONTROL DPL600DPI]**: utilice DPL 600 DPI. Se utiliza el dpl600.xdc.
-   * **[!UICONTROL HP_PCL_5e]**: Utilice la opción para admitir varios dispositivos Canon.
+   * **[!UICONTROL HP_PCL_5e]**: utilice la opción para admitir varios dispositivos Canon.
 
 
 **[!UICONTROL Propiedades de salida]**
@@ -524,25 +524,25 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 
 **[!UICONTROL Propiedades avanzadas]**
 
-* **[!UICONTROL Seleccionar la ubicación raíz del contenido mediante]**: la raíz del contenido es un valor de cadena que especifica el URI, la referencia absoluta o la ubicación en el repositorio para recuperar los recursos relativos que utiliza el diseño de formulario. Por ejemplo, si el diseño de formulario hace referencia a una imagen de forma relativa, como ../myImage.gif, myImage.gif debe estar ubicado en repository://. El valor predeterminado es repository://, que apunta al nivel raíz del repositorio.
+* **[!UICONTROL Seleccionar la ubicación raíz del contenido mediante]**: la raíz del contenido es un valor de cadena que especifica el URI, la referencia absoluta o la ubicación en el repositorio para recuperar los recursos relativos que utiliza el diseño de formulario. Por ejemplo, si el diseño de formulario hace referencia a una imagen de forma relativa, como `../myImage.gif`, `myImage.gif` debe estar en `repository://`. El valor predeterminado es `repository://`, que apunta al nivel raíz del repositorio.
 
-   Cuando elige un recurso de la aplicación, la ruta del URI raíz del contenido debe tener la estructura correcta. Por ejemplo, si se selecciona un formulario de una aplicación denominada SampleApp y se coloca en SampleApp/1.0/forms/Test.xdp, el URI de raíz de contenido debe especificarse como repository://administrator@password/Applications/SampleApp/1.0/forms/ o repositorio:/Applications/SampleApp/1.0/forms/ (cuando la autoridad sea nula). Cuando se especifica el URI de raíz de contenido de esta forma, las rutas de todos los recursos a los que se hace referencia en el formulario se resuelven en relación con este URI.
+   Cuando elige un recurso de la aplicación, la ruta del URI raíz del contenido debe tener la estructura correcta. Por ejemplo, si se selecciona un formulario de una aplicación denominada SampleApp y se coloca en `SampleApp/1.0/forms/Test.xdp`, el URI de raíz de contenido debe especificarse como `repository://administrator@password/Applications/SampleApp/1.0/forms/`, o `repository:/Applications/SampleApp/1.0/forms/` (cuando la autoridad es nula). Cuando se especifica el URI de raíz de contenido de esta forma, las rutas de todos los recursos a los que se hace referencia en el formulario se resuelven en relación con este URI.
 
 * **[!UICONTROL Seleccionar el archivo XCI mediante]**: los archivos XCI se utilizan para describir fuentes y otras propiedades que se utilizan para elementos de diseño de formulario. Puede mantener un archivo XCI relativo a la carga útil, en una ruta absoluta o mediante una variable del tipo de datos Document.
 
 * **[!UICONTROL Configuración regional]**: especifica el idioma que se utiliza para generar el documento PDF. Si proporciona un valor literal, seleccione un idioma de la lista o seleccione uno de estos valores:
-   * **[!UICONTROL Para usar el servidor predeterminado]**[!DNL AEM Forms]: (Predeterminado) Use la configuración regional configurada en el servidor de La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](http://www.adobe.com/go/learn_aemforms_designer_65)).
+   * **[!UICONTROL Para usar el servidor predeterminado]**[!DNL AEM Forms]: (Predeterminado) Use la configuración regional configurada en el servidor de La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf)).
 
-   * **[!UICONTROL Para utilizar un valor personalizado]**: escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+   * **[!UICONTROL Para utilizar un valor personalizado]**: escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copias]**: valor entero que especifica el número de copias que se generarán para la salida. El valor predeterminado es 1.
 
-* **[!UICONTROL Impresión a doble cara]**: valor de Paginación que especifica si se utiliza la impresión a doble o a una sola cara. Las impresoras compatibles con PostScript y PCL utilizan este valor. Si proporciona un valor literal, seleccione uno de los siguientes valores:
+* **[!UICONTROL Impresión a doble cara]**: valor de Paginación que especifica si se utiliza la impresión a doble o a una sola cara. Las impresoras compatibles con PostScript y PCL utilizan este valor. Si proporciona un valor literal, seleccione uno de estos valores:
    * **[!UICONTROL Borde largo a doble cara]**: utiliza la impresión a doble cara y la impresión mediante paginación de borde largo.
    * **[!UICONTROL Borde corto a doble cara]**: utiliza la impresión a doble cara y la impresión mediante paginación de borde corto.
    * **[!UICONTROL Simple]**: utiliza la impresión a una sola cara.
 
-## Generar paso de salida de PDF no interactivo   {#generatePDFdocuments}
+## Paso Generar salida de PDF no interactiva   {#generatePDFdocuments}
 
 1. Arrastre el flujo de trabajo Generar salida PDF no interactiva a la pestaña Forms Workflow de la barra de tareas.
 1. Haga doble clic en el paso de flujo de trabajo agregado para editar el componente.
@@ -563,6 +563,6 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 * **Raíz de contenido**: especifica la ruta de la carpeta del repositorio en la que se almacenan los fragmentos o imágenes utilizados en la plantilla XDP de entrada.
 * **Configuración regional**: especifica la configuración regional predeterminada para el formulario PDF generado.
 * **Versión de Acrobat**: especifica la versión de Acrobat de destino del formulario PDF generado.
-* **PDF lineal**: Especifica si se debe optimizar el PDF generado para la visualización web.
+* **PDF linealizado**: Especifica si se debe optimizar el PDF generado para la visualización web.
 * **PDF etiquetado**: especifica si se debe hacer accesible el PDF generado.
 * **Documento XCI**: especifica la ruta del archivo XCI.

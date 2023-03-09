@@ -1,39 +1,39 @@
 ---
-title: Notas de la versión de las herramientas de migración en AEM versión as a Cloud Service 2021.10.0
-description: Notas de la versión de las herramientas de migración en AEM versión as a Cloud Service 2021.11.0
+title: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2021.10.0 de
+description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2021.11.0 de
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 8%
+source-wordcount: '411'
+ht-degree: 14%
 
 ---
 
-# Notas de la versión de las herramientas de migración en AEM versión as a Cloud Service 2021.10.0 {#release-notes}
+# AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2021.10.0 de {#release-notes}
 
-Esta página describe las notas de la versión de las herramientas de migración en AEM as a Cloud Service 2021.10.0.
+AEM Esta página describe las notas de la versión de las herramientas de migración de as a Cloud Service 2021.10.0.
 
 >[!NOTE]
->Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic en [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
+>Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es).
 
 ## Cloud Acceleration Manager {#cam-release}
 
-### Fecha de la versión {#release-date-cam}
+### Fecha de lanzamiento {#release-date-cam}
 
-La fecha de versión de Cloud Acceleration Manager es el 25 de octubre de 2021.
+La fecha de lanzamiento de Cloud Acceleration Manager es el 25 de octubre de 2021.
 
 ### Novedades {#what-is-new-cam}
 
-Cloud Acceleration Manager ahora permite a los usuarios ver informes históricos de BPA en un informe de línea de tendencia. Con este informe, los usuarios pueden ver el progreso que están haciendo en una representación gráfica fácil de usar. Consulte [Uso de Ver línea de tendencia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) para obtener más información.
+Cloud Acceleration Manager ahora permite a los usuarios ver informes de BPA históricos en un informe de líneas de tendencias. Con este informe, los usuarios pueden ver el progreso que están realizando en una representación gráfica fácil de consumir. Consulte [Uso de Ver línea de tendencia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) para obtener más información.
 
-### Fecha de la versión {#release-date-october-cam}
+### Fecha de lanzamiento {#release-date-october-cam}
 
-La fecha de versión de Cloud Acceleration Manager es el 4 de octubre de 2021.
+La fecha de lanzamiento de Cloud Acceleration Manager es el 4 de octubre de 2021.
 
 ### Novedades {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager ahora proporciona a los usuarios la capacidad de ver los informes de BPA en una vista previa imprimible, lo que permite imprimir o imprimir de forma sencilla a un PDF para facilitar el uso compartido. Consulte los pasos 6 y 7 de [Uso de la tarjeta de análisis de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager ahora permite a los usuarios ver los informes de BPA en una vista previa imprimible, lo que permite hacer una impresión simple o una impresión en el PDF para compartir fácilmente. Consulte los pasos 6 y 7 en [Tarjeta de análisis de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 
 ## Herramienta de transferencia de contenido {#ctt-release}
@@ -44,25 +44,25 @@ La fecha de versión de la herramienta de transferencia de contenido v1.6.0 es e
 
 ### Novedades {#what-is-new-ctt-oct}
 
-* Herramienta de asignación de usuarios mejorada con una experiencia de usuario simplificada, que incluye las siguientes funciones que se enumeran a continuación. Para obtener más información, consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+* Se ha mejorado la herramienta de asignación de usuarios con una experiencia de usuario simplificada que incluye las siguientes funciones. Para obtener más información, consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
    * Probar la conexión a la API de administración de usuarios antes de ejecutar la asignación de usuarios
-   * Omita correctamente los errores y continúe con la actividad de Asignación de usuarios
-   * La asignación de usuarios ya no falla si **Token de acceso** caduca a las 24 horas. La asignación de usuarios se puede volver a ejecutar desde donde se detuvo por última vez.
+   * Omitir correctamente los errores y continuar con la actividad de asignación de usuarios
+   * La asignación de usuarios ya no falla si **Token de acceso** caduca pasadas 24 horas. La asignación de usuarios se puede volver a ejecutar desde la última vez que se detuvo.
 
-* Para aumentar la solidez de la herramienta de transferencia de contenido, el contenido se puede ingerir a instancias de Autor o de Publicación a la vez. Consulte [Introducción a la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) para obtener más información.
+* Para aumentar la solidez de la herramienta de transferencia de contenido, este se puede ingerir en una instancia de autor o de publicación a la vez. Consulte [Introducción a la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es) para obtener más información.
 
-* Cuando se incluyen versiones, la ruta `/var/audit` se incluye automáticamente para migrar eventos de auditoría.
+* Cuando se incluyen versiones, la ruta `/var/audit` para migrar eventos de auditoría.
 
 ## Analizador de prácticas recomendadas {#best-practices-analyzer}
 
 ### Fecha de la versión {#release-date-bpa-latest}
 
-La fecha de versión de Best Practices Analyzer v2.1.20 es el 5 de octubre de 2021.
+La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.20 es el 5 de octubre de 2021.
 
 ### Novedades {#what-is-new-bpa-oct}
 
-* Capacidad para detectar y crear informes sobre la longitud del nombre del nodo.
+* Capacidad para detectar e informar sobre la longitud del nombre del nodo.
 
-* Capacidad para detectar el tamaño total del índice e informar al respecto.
+* Capacidad para detectar y crear informes sobre el tamaño total del índice.
 
-* Capacidad para detectar y crear informes sobre los recursos que no tienen su representación original.
+* Capacidad para detectar e informar sobre recursos que no tienen su representación original.
