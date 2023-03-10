@@ -21,7 +21,7 @@ La funcionalidad ofrece varias API para generar y manipular documentos. Puede ge
 
 * Las API HTTP para facilitar la integración con sistemas externos. Se incluyen API independientes para operaciones bajo demanda (baja latencia) y por lotes (operaciones de alto rendimiento).
 
-* Un acceso seguro a los datos. Las API de comunicaciones solo se conectan y acceden a los datos de los repositorios de datos designados por el cliente, lo que hace que las comunicaciones sean muy seguras.
+* Un acceso seguro a los datos. Las API de comunicaciones se conectan y acceden a los datos únicamente desde los repositorios de datos designados por el cliente, lo que hace que las comunicaciones sean muy seguras.
 
 ![Un ejemplo de extracto de tarjeta de crédito](assets/statement.png)
 Se puede crear un extracto de tarjeta de crédito mediante las API de comunicaciones. Este extracto de ejemplo utiliza la misma plantilla pero datos independientes para cada cliente según su uso de la tarjeta de crédito.
