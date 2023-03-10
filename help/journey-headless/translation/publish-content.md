@@ -1,25 +1,25 @@
 ---
-title: Publicar contenido sin encabezado traducido
+title: Publicar contenido traducido sin encabezado
 description: Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1391'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Publicar contenido sin encabezado traducido {#publish-content}
+# Publicar contenido traducido sin encabezado {#publish-content}
 
 Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de traducción sin AEM, [Traducir contenido,](configure-connector.md) ha aprendido a utilizar AEM proyectos de traducción para traducir su contenido sin encabezado. Ahora debería hacer lo siguiente:
+En el documento anterior del recorrido de traducción sin encabezado AEM, [Traducir contenido,](configure-connector.md) ha aprendido a utilizar proyectos de traducción de AEM para traducir su contenido sin encabezado. Ahora debería hacer lo siguiente:
 
 * Comprender qué es un proyecto de traducción.
 * Poder crear nuevos proyectos de traducción.
-* Utilice proyectos de traducción para traducir el contenido sin encabezado.
+* Utilice los proyectos de traducción para traducir el contenido sin encabezado.
 
 Ahora que la traducción inicial ha finalizado, este artículo le explica el siguiente paso para publicar ese contenido y qué hacer para actualizar sus traducciones como el contenido subyacente en los cambios de la raíz del idioma.
 
@@ -47,7 +47,7 @@ Una vez creado el contenido en la instancia de autor, debe transferirse a la ins
 
 ## Publicación del contenido traducido {#publishing}
 
-Una vez que esté satisfecho con el estado del contenido traducido, debe publicarse para que los servicios sin periféricos puedan consumirlo. Esta tarea no suele ser responsabilidad del especialista en traducción, pero se documenta aquí para ilustrar el flujo de trabajo completo.
+Una vez que esté satisfecho con el estado del contenido traducido, debe publicarse para que los servicios sin encabezados puedan consumirlo. Esta tarea no suele ser responsabilidad del especialista en traducción, pero se documenta aquí para ilustrar el flujo de trabajo completo.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Una vez que esté satisfecho con el estado del contenido traducido, debe publica
 >
 >Se proporcionan los siguientes pasos para que se comprenda.
 
-La forma más sencilla de publicar las traducciones es navegar a la carpeta de recursos del proyecto.
+La forma más sencilla de publicar las traducciones es ir hasta la carpeta Recursos.
 
 ```text
 /content/dam/<your-project>/
@@ -63,7 +63,7 @@ La forma más sencilla de publicar las traducciones es navegar a la carpeta de r
 
 Esta ruta tiene subcarpetas para cada idioma de traducción y puede elegir cuál publicar.
 
-1. Vaya a **Navegación** -> **Recursos** -> **Archivos** y abra la carpeta del proyecto.
+1. Vaya a **Navegación** -> **Recursos** -> **Archivos** y abra la carpeta del proyecto. 
 1. Aquí puede ver la carpeta raíz y todas las demás carpetas del idioma. Seleccione el o los idiomas localizados que desee publicar.
    ![Selección de la carpeta de idioma](assets/select-language-folder.png)
 1. Toque o haga clic en **Administrar publicación**.
@@ -74,7 +74,7 @@ Esta ruta tiene subcarpetas para cada idioma de traducción y puede elegir cuál
 1. AEM confirma la acción de publicación con un mensaje emergente en la parte inferior de la pantalla.
    ![Titular publicado de recursos](assets/resources-published-message.png)
 
-El contenido traducido sin encabezado ya está publicado. Ahora puede ser accedido y consumido por sus servicios sin periféricos.
+El contenido sin encabezado traducido se publica. Ahora sus servicios sin encabezado pueden acceder a ellos y consumirlos.
 
 >[!TIP]
 >
@@ -92,7 +92,7 @@ Sin embargo, como ya se mencionó, el proceso difiere un poco si elige crear el 
 
 ### Actualización de un proyecto de traducción creado automáticamente {#updating-automatic-project}
 
-1. Vaya a **Navegación** -> **Activos** -> **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como fragmentos de contenido.
+1. Vaya a **Navegación** -> **Activos** -> **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
 1. Seleccione la raíz de idioma del proyecto. En este caso, se ha seleccionado `/content/dam/wknd/en`.
 1. Toque o haga clic en el selector de carril y muestre el panel **Referencias**.
 1. Toque o haga clic en **Copias de idioma**.
@@ -100,7 +100,7 @@ Sin embargo, como ya se mencionó, el proceso difiere un poco si elige crear el 
 1. Expanda la sección **Actualizar copias de idioma** en la parte inferior del panel de referencias.
 1. En el menú desplegable **Proyecto**, seleccione **Agregar a un proyecto de traducción existente**.
 1. En el menú desplegable **Proyecto de traducción existente**, seleccione el proyecto creado para la traducción inicial.
-1. Toque o haga clic **Inicio**.
+1. Pulse o haga clic en **Iniciar**
 
 ![Agregar elementos a un proyecto de traducción existente](assets/add-to-existing-project.png)
 
@@ -150,14 +150,14 @@ A partir de este punto, [inicie y administre su trabajo de traducción igual que
 
 ## ¿Fin del recorrido? {#end-of-journey}
 
-¡Felicitaciones! ¡Ha completado el recorrido de traducción sin periféricos! Ahora debería hacer lo siguiente:
+¡Enhorabuena! Ha completado el recorrido de traducción sin encabezado. Ahora debería hacer lo siguiente:
 
-* Obtenga información general sobre qué es la entrega de contenido sin encabezado.
-* Tenga una comprensión básica AEM las funciones sin encabezado.
-* Comprenda AEM funciones de traducción y cómo se relacionan con contenido sin encabezado.
-* Tener la capacidad de empezar a traducir su propio contenido sin encabezado.
+* Obtener información general sobre qué es la entrega de contenido sin encabezado.
+* Tener un conocimiento básico de las funciones de AEM sin encabezado.
+* Conocer las funciones de traducción de AEM y cómo se relacionan con el contenido sin encabezado.
+* Tener la posibilidad de empezar a traducir su propio contenido sin encabezado.
 
-Ahora está listo para traducir su propio contenido sin encabezado en AEM. Aun así, AEM es una herramienta potente y hay muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la [sección de Recursos adicionales](#additional-resources) para obtener más información acerca de las funciones que ha visto en este recorrido.
+Ya está listo para traducir su propio contenido sin encabezado en AEM. Aun así, AEM es una herramienta potente y hay muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la [sección de Recursos adicionales](#additional-resources) para obtener más información acerca de las funciones que ha visto en este recorrido.
 
 ## Recursos adicionales {#additional-resources}
 
