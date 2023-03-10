@@ -3,7 +3,7 @@ title: Recorrido del complemento de demostraciones de referencia de AEM
 description: Comience aquí para obtener un recorrido guiado sobre cómo añadir fácilmente el complemento de demostraciones de referencia de AEM a un entorno de zona protegida con una configuración de AEM mínima y pueda probar las potentes funciones de AEM con ejemplos enriquecidos basados en las prácticas recomendadas.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '855'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ Comience aquí para obtener un recorrido guiado sobre cómo añadir fácilmente 
 
 AEM es un potente conjunto de herramientas para crear y administrar experiencias digitales. Los autores de contenido pueden crear fácilmente experiencias digitales mediante el editor de sitios y organizar el contenido mediante la consola de sitios, a la vez que pueden ver el contenido en su momento de publicación, tal y como lo enviará AEM a las audiencias en los distintos canales.
 
-Sin contenido ni configuraciones de muestra, puede resultar difícil probar las potentes funciones de AEM, tanto para los clientes nuevos como para los experimentados. El complemento Demostraciones de referencia de AEM permite crear de forma sencilla entornos de espacio aislado precargados con contenido de muestra y preconfigurados con las directrices de prácticas recomendadas más recientes de Adobe. Con el complemento, puede evaluar fácilmente las funciones de AEM Sites y AEM Screens en contexto y con casi ninguna configuración.
+Sin contenido ni configuraciones de muestra, puede resultar difícil probar las potentes funciones de AEM, tanto para los clientes nuevos como para los experimentados. El complemento Demostraciones de referencia de AEM permite crear de forma sencilla entornos de zona protegida precargados con contenido de muestra y preconfigurados con las directrices de prácticas recomendadas más recientes de Adobe. Con el complemento, puede evaluar fácilmente las funciones de AEM Sites y AEM Screens en contexto y con casi ninguna configuración.
 
 * **Si no tiene experiencia en AEM**, seguir este recorrido es la forma más sencilla de ponerse en marcha con contenido real en un entorno de AEM auténtico, que funciona por completo y que le permite probar la funcionalidad y conocer las características de AEM.
 * **Si tiene experiencia como usuario de AEM**, seguir este recorrido es la forma más sencilla de configurar un entorno de demostración independiente para ejecutar pruebas o crear un POC con nuevas funcionalidades.
