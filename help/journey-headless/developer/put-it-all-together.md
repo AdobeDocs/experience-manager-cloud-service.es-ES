@@ -1,117 +1,117 @@
 ---
-title: 'Cómo ponerlo todo juntos: su aplicación y su contenido en AEM sin cabeza'
-description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a tomar su proyecto de AEM, incluidos los fragmentos de contenido, las llamadas de GraphQL, las llamadas a la API de REST y la aplicación, y prepárelo para su lanzamiento.
+title: 'Cómo ponerlo todo junto: su aplicación y su contenido en AEM sin encabezado'
+description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, aprenda a lanzar su proyecto de AEM, incluidos los fragmentos de contenido, las llamadas de GraphQL, las llamadas de la API REST y la aplicación, para prepararlo para su puesta en marcha.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+workflow-type: ht
 source-wordcount: '1069'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
-# Cómo ponerlo todo juntos: su aplicación y su contenido en AEM sin cabeza {#put-it-all-together}
+# Cómo ponerlo todo junto: su aplicación y su contenido en AEM sin encabezado {#put-it-all-together}
 
-En esta parte del [recorrido para desarrolladores AEM sin encabezado](overview.md), se familiariza con cómo utilizar las herramientas de desarrollo de AEM y el SDK sin encabezado para agrupar la aplicación.
+En esta parte del [recorrido para desarrolladores de contenido de AEM sin encabezado](overview.md), se familiarizará con cómo utilizar las herramientas de desarrollo de AEM y el SDK sin encabezado para montar la aplicación.
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido sin AEM, [Cómo actualizar su contenido a través de las API de AEM Assets](update-your-content.md) ha aprendido a actualizar el contenido sin encabezado existente en AEM mediante API y ahora debería:
+En el documento anterior del recorrido de AEM sin encabezado, [Cómo actualizar su contenido a través de las API de AEM Asset](update-your-content.md) ha aprendido a actualizar el contenido sin encabezado existente en AEM mediante la API y ahora debería:
 
-* Comprender la API HTTP de AEM Assets.
+* Comprender la API HTTP de AEM Asset.
 
 ## Objetivo {#objective}
 
-El objetivo de este artículo es ayudarle a comprender cómo agrupar su aplicación sin encabezado de AEM mediante:
+El objetivo de este artículo es ayudarle a comprender cómo montar su aplicación sin encabezado de AEM mediante lo siguiente:
 
-* Información sobre el SDK sin AEM y la herramienta de desarrollo necesaria
-* Configuración de un tiempo de ejecución de desarrollo local para simular el contenido antes de lanzarse
-* Aspectos básicos de la replicación AEM contenido
+* Información sobre el SDK de AEM sin encabezado y las herramientas de desarrollo necesarias
+* Configuración de un tiempo de ejecución de desarrollo local para simular el contenido antes de su puesta en marcha
+* Conceptos básicos de la replicación de contenido de AEM
 
-## El SDK AEM {#the-aem-sdk}
+## El SDK de AEM {#the-aem-sdk}
 
-El SDK de AEM se utiliza para crear e implementar código personalizado. Es la principal herramienta que necesita para desarrollar y probar su aplicación sin encabezado antes de lanzarse. Contiene los siguientes artefactos:
+El SDK de AEM se utiliza para crear e implementar código personalizado. Es la principal herramienta que necesita para desarrollar y probar su aplicación sin encabezado antes de ponerla en marcha. Contiene los siguientes artefactos:
 
-* El Jar de inicio rápido: un archivo jar ejecutable que puede utilizarse para configurar una instancia de autor y de publicación
+* Jar de inicio rápido: un archivo Jar ejecutable que se puede utilizar para configurar una instancia de autor y de publicación
 * Herramientas de Dispatcher: el módulo de Dispatcher y sus dependencias para los sistemas basados en Windows y UNIX®
-* Jar de la API de Java™: la dependencia Java™ Jar/Maven que expone todas las API de Java™ permitidas que se pueden usar para desarrollar con AEM
-* Javadoc jar: los javadocs para el jar de la API de Java™
+* Jar de API de Java™: la dependencia Jar/Maven de Java™ que expone todas las API de Java™ permitidas que se pueden usar para desarrollarse con AEM
+* Javadoc jar: los javadocs para el Jar de la API de Java™
 
-## El SDK sin AEM {#the-aem-headless-sdk}
+## El SDK de AEM sin encabezado {#the-aem-headless-sdk}
 
-A diferencia del SDK de AEM, la AEM **SDK sin encabezado** es un conjunto de bibliotecas que los clientes pueden utilizar para interactuar rápida y fácilmente con las API sin encabezado AEM a través de HTTP.
+A diferencia del SDK de AEM, el **SDK sin encabezado** de AEM es un conjunto de bibliotecas que los clientes pueden utilizar para interactuar rápida y fácilmente con las API de AEM sin encabezado través de HTTP.
 
-Para obtener más información sobre el SDK AEM sin encabezado, consulte la [documentación aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
+Para obtener más información sobre el SDK de AEM sin encabezado, consulte la [documentación aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=es).
 
 ## Herramientas de desarrollo adicionales {#additional-development-tools}
 
-Además del SDK de AEM, necesita herramientas adicionales que faciliten el desarrollo y la prueba del código y el contenido localmente:
+Además del SDK de AEM, necesita herramientas adicionales que faciliten el desarrollo y las pruebas del código y el contenido de forma local:
 
 * Java™
 * Git
-* Maven Apache
+* Apache Maven
 * La biblioteca Node.js
 * El IDE de su elección
 
-Como AEM es una aplicación Java™, debe instalar Java™ y el SDK de Java™ para admitir el desarrollo de AEM as a Cloud Service.
+Como AEM es una aplicación Java™, debe instalar Java™ y el SDK de Java™ para que permitir el desarrollo de AEM as a Cloud Service.
 
-Git es lo que se utiliza para administrar el control de código fuente y para registrar los cambios en Cloud Manager y luego implementarlos en una instancia de producción.
+Git es lo que se utiliza para administrar el control de origen y para registrar los cambios en Cloud Manager y luego implementarlos en una instancia de producción.
 
-AEM utiliza Apache Maven para crear proyectos generados a partir del tipo de archivo del proyecto Maven de AEM. Todos los IDE principales proporcionan compatibilidad con la integración de Maven.
+AEM utiliza Apache Maven para crear proyectos generados a partir del arquetipo del proyecto Maven de AEM. Todos los IDE principales proporcionan compatibilidad con la integración de Maven.
 
-Node.js es un entorno de tiempo de ejecución de JavaScript que se utiliza para trabajar con los recursos del front-end de un proyecto de AEM `ui.frontend` subproyecto. Node.js se distribuye con npm, es el administrador de paquetes de Node.js de facto, que se utiliza para administrar las dependencias de JavaScript.
+Node.js es un entorno de tiempo de ejecución de JavaScript que se utiliza para trabajar con los recursos front-end de un subproyecto `ui.frontend` del proyecto de AEM. Node.js se distribuye con npm, es el administrador de paquetes de Node.js de facto, que se utiliza para administrar las dependencias de JavaScript.
 
-## Componentes de un sistema AEM de un vistazo {#components-of-an-aem-system-at-a-glance}
+## Generalidades de los componentes del sistema AEM {#components-of-an-aem-system-at-a-glance}
 
-A continuación, veamos las partes constitutivas de un entorno AEM.
+A continuación, veremos las partes que constituyen el entorno de AEM.
 
-Un entorno de AEM completo está formado por un Autor, una Publicación y un Dispatcher. Estos mismos componentes están disponibles en el tiempo de ejecución del desarrollo local para que le resulte más fácil previsualizar el código y el contenido antes de lanzarse.
+Un entorno de AEM completo está formado por un Autor, una Publicación y un Dispatcher. Estos mismos componentes están disponibles durante la ejecución del desarrollo local para que le resulte más fácil previsualizar el código y el contenido antes de ponerlo en marcha.
 
 * **El servicio de creación** es donde los usuarios internos crean, administran y previsualizan contenido.
 
 * **El servicio de publicación** se considera el entorno “activo” y suele ser con el que interactúan los usuarios finales. El contenido, después de editarse y aprobarse en el servicio de creación, se distribuye al de publicación. El patrón de implementación más común con las aplicaciones sin encabezado de AEM es tener la versión de producción de la aplicación conectada a un servicio de publicación de AEM.
 
-* **Dispatcher** es un servidor web estático ampliado con el módulo AEM de Dispatcher. Almacena en caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
+* **Dispatcher** es un servidor web estático ampliado con el módulo Dispatcher de AEM. Almacena en la caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
 
 ## Flujo de trabajo de desarrollo local {#the-local-development-workflow}
 
 El proyecto de desarrollo local se basa en Apache Maven y utiliza Git para el control de código fuente. Para actualizar el proyecto, los desarrolladores pueden utilizar su entorno de desarrollo integrado preferido, como Eclipse, Visual Studio Code o IntelliJ, entre otros.
 
-Para probar las actualizaciones de código o contenido que la aplicación no tiene encabezado, debe implementar las actualizaciones en el tiempo de ejecución de AEM local, que incluye instancias locales de los servicios de creación y publicación de AEM.
+Para probar las actualizaciones de código o contenido introducidas por la aplicación sin encabezado, debe implementar las actualizaciones en el tiempo de ejecución de AEM local, que incluye las instancias locales de los servicios de creación y publicación de AEM.
 
-Asegúrese de tomar nota de las distinciones entre cada componente en el tiempo de ejecución de AEM local, ya que es importante probar las actualizaciones donde más importen. Por ejemplo, pruebe las actualizaciones de contenido en la instancia de autor o pruebe el nuevo código en la instancia de publicación.
+Asegúrese de tomar nota de las distinciones entre cada componente en el tiempo de ejecución de AEM local, ya que es vital probar las actualizaciones allí donde sean más importantes. Por ejemplo, pruebe las actualizaciones de contenido en la instancia de autor o pruebe el nuevo código en la instancia de publicación.
 
-En un sistema de producción, un Dispatcher y un servidor http Apache siempre se sentarán frente a una instancia de publicación AEM. Proporcionan almacenamiento en caché y servicios de seguridad para el sistema AEM, por lo que es fundamental probar el código y las actualizaciones de contenido para Dispatcher también.
+En un sistema de producción, Dispatcher y el servidor de HTTP, Apache, siempre estarán frente a una instancia de publicación de AEM. Proporcionan almacenamiento en caché y servicios de seguridad para el sistema AEM, por lo que es fundamental probar el código y las actualizaciones de contenido para Dispatcher también.
 
 ## Vista previa del código y el contenido localmente con el entorno de desarrollo local {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-Para preparar el proyecto sin AEM para su lanzamiento, debe asegurarse de que todas las partes constitutivas del proyecto funcionen correctamente.
+Para preparar el proyecto AEM sin encabezado para su lanzamiento, debe asegurarse de que todas las partes constitutivas del proyecto funcionen correctamente.
 
-Para ello, hay que juntar todo: código, contenido y configuración, y pruébelo en un entorno de desarrollo local para estar preparado para la puesta en marcha.
+Para ello, hay que juntar todo: código, contenido y configuración, y probarlo en un entorno de desarrollo local para estar preparado para la puesta en marcha.
 
 El entorno de desarrollo local consta de tres esferas principales:
 
-1. AEM proyecto: este proyecto contiene todo el código, la configuración y el contenido personalizados en los que los desarrolladores de AEM van a trabajar
-1. Local AEM Runtime: versiones locales de los servicios de publicación y autor de AEM que se utilizan para implementar código del proyecto de AEM
-1. Tiempo de ejecución de Dispatcher local: versión local del servidor web Apache htttpd que incluye el módulo de Dispatcher.
+1. El proyecto de AEM: este proyecto contiene todo el código, la configuración y el contenido personalizados en los que los desarrolladores de AEM van a trabajar.
+1. El tiempo de ejecución local de AEM: versiones locales de los servicios de publicación y autor de AEM que se utilizan para implementar código del proyecto de AEM.
+1. Tiempo de ejecución de Dispatcher local: una versión local del HTTPD del servidor web Apache que incluye el módulo de Dispatcher.
 
-Una vez configurado el entorno de desarrollo local, puede simular el contenido que sirve en la aplicación React mediante la implementación local de un servidor Nodo estático.
+Una vez configurado el entorno de desarrollo local, puede simular el contenido que sirve en la aplicación React mediante la implementación local de un servidor de nodo estático.
 
 <!-- THIS TOPIC IS 404. IT DOES NOT APPEAR IN THE TOC OR ANYWHERE ELSE To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/headless-tutorial/graphql/multi-step/production-deployment.html). -->
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha completado esta parte del Recorrido para desarrolladores sin encabezado de AEM, debe:
+Ahora que ha completado esta parte del recorrido para desarrolladores de AEM sin encabezado, debería poder hacer lo siguiente:
 
-* Familiarícese con las herramientas de desarrollo de AEM
-* Comprender el flujo de trabajo de desarrollo local
+* Familiarizarse con las herramientas de desarrollo de AEM.
+* Comprender el flujo de trabajo de desarrollo local.
 
-Continúe con su recorrido AEM sin encabezado revisando el documento [Cómo vivir con tu aplicación sin encabezado](/help/journey-headless/developer/go-live.md) ¡donde realmente tomas tu proyecto sin AEM en vivo!
+Continúe con su recorrido de AEM sin encabezado revisando a continuación el documento [Cómo poner en marcha su aplicación Headless](/help/journey-headless/developer/go-live.md) donde realmente pone en marcha su proyecto de AEM sin encabezado.
 
 ## Recursos adicionales {#additional-resources}
 
-* [El SDK as a Cloud Service AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [Configuración De Un Entorno AEM Local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es)
-* [AEM SDK sin encabezado para exploradores del lado del cliente (JavaScript)](https://github.com/adobe/aem-headless-client-js)
-* [AEM SDK sin encabezado para server-side/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
-* [AEM SDK sin encabezado para Java™](https://github.com/adobe/aem-headless-client-java)
+* [SDK de AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [Configuración de un entorno de AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es)
+* [SDK de AEM sin encabezado para exploradores del lado del cliente (JavaScript)](https://github.com/adobe/aem-headless-client-js)
+* [SDK de AEM sin encabezado del lado del servidor/Nodo.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
+* [SDK de AEM sin encabezado para Java™](https://github.com/adobe/aem-headless-client-java)
 
