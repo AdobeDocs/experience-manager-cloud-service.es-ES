@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 39%
+ht-degree: 77%
 
 ---
 
@@ -14,24 +14,24 @@ ht-degree: 39%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Información general"
->abstract="La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe AEM que se puede utilizar para mover contenido existente de una instancia de origen (local o AMS) a la instancia de AEM Cloud Service de destino. Esta herramienta también transfiere las entidades principales (usuarios o grupos) automáticamente."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Directrices y prácticas recomendadas"
+>abstract="La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe que se puede utilizar para mover contenido existente de una instancia de AEM de origen (On-Premise o AMS) a la instancia de AEM Cloud Service de destinatario. Esta herramienta también transfiere las entidades principales (usuarios o grupos) automáticamente."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=es" text="Directrices y prácticas recomendadas"
 
 La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe que se puede utilizar para mover contenido existente de una instancia de AEM de origen (on-premise o AMS) a la instancia de destinatario de AEM de Cloud Service.
 
 Esta herramienta también transfiere las entidades principales (usuarios o grupos) automáticamente.
 
-Hay disponible una nueva versión de la herramienta de transferencia de contenido que integra el proceso de transferencia de contenido con Cloud Acceleration Manager. Se recomienda encarecidamente cambiar a esta nueva versión para aprovechar todas las ventajas que ofrece:
+Hay disponible una nueva versión de la herramienta de transferencia de contenido que integra el proceso de transferencia de contenido con Cloud Acceleration Manager. Se recomienda pasar a esta nueva versión para aprovechar todas las ventajas que ofrece:
 
-* Forma de autoservicio de extraer un conjunto de migración una vez e introducirlo en varios entornos en paralelo
-* Experiencia del usuario mejorada mediante mejores estados de carga, protecciones y administración de errores
-* Los registros de ingesta se mantienen y siempre están disponibles para la resolución de problemas
+* Forma de autoservicio de extraer un conjunto de migración una vez e introducirlo en varios entornos en paralelo.
+* Mejor experiencia del usuario gracias a la mejora de los estados de carga, las protecciones y el manejo de errores.
+* Los registros de ingesta se mantienen y siempre están disponibles para la resolución de problemas.
 
-Para empezar a utilizar la nueva versión, deberá desinstalar las versiones anteriores de la herramienta de transferencia de contenido porque se ha producido un cambio arquitectónico importante en la herramienta.
+Para empezar a utilizar la versión nueva, deberá desinstalar las versiones anteriores de la herramienta de transferencia de contenido, ya que se ha producido un cambio importante en la arquitectura de la herramienta.
 
 >[!NOTE]
 >
-> En situaciones en las que una migración ya está en curso, puede seguir utilizando la versión anterior de CTT hasta que se complete la migración. Para obtener documentación relacionada con la versión anterior de CTT, consulte la [documentación heredada](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+> En situaciones en las que ya hay una migración en curso, puede seguir utilizando la versión anterior de CTT hasta que se complete la migración. Para ver la documentación relacionada con la versión anterior de CTT, consulte la [documentación heredada](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## Fases en la herramienta de transferencia de contenido {#phases-content-transfer-tool}
 
@@ -44,13 +44,13 @@ Existen dos fases asociadas con la transferencia de contenido:
    >[!NOTE]
    >La asignación de usuarios ahora se ejecuta automáticamente como parte de la fase de extracción en el autor (pero se puede deshabilitar en el autor o habilitar en la publicación). Consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obtener más información.
 
-1. **Ingesta**: la ingesta hace referencia a la ingesta de contenido del conjunto *de migración* en la instancia de Cloud Service del destinatario.
+1. **Ingesta**: hace referencia a la ingesta de contenido del *conjunto de migración* en la instancia de Cloud Service del destinatario.
 
-   Consulte [Proceso de ingesta en transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para obtener más información.
+   Para obtener más detalles, consulte [Proceso de ingesta en la transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
-## Atributos de un conjunto de migraciones {#attributes-migration-set}
+## Atributos de un conjunto de migración {#attributes-migration-set}
 
-El conjunto de migraciones tiene los siguientes atributos:
+El conjunto de migración tiene los siguientes atributos:
 
 * Con la nueva versión, puede crear un máximo de cinco conjuntos de migración dentro de un proyecto creado en Cloud Acceleration Manager.
 * Cada conjunto de migración debe tener un nombre exclusivo.
@@ -60,9 +60,9 @@ La herramienta de transferencia de contenido tiene una función que permite agre
 >[!NOTE]
 >Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service.
 
-En la fase de extracción, para ***completar*** un conjunto de migración existente, se debe desactivar la opción de *sobrescritura*. Consulte la Extracción [](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) Superior para obtener más detalles.
+En la fase de extracción, para ***completar*** un conjunto de migración existente, se debe desactivar la opción de *sobrescritura*. Consulte la [Extracción Superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) para obtener más detalles.
 
-En la fase de ingesta, para aplicar el contenido delta sobre el contenido actual, se debe desactivar la opción de *borrado*. Consulte la Ingesta [](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) Superior para obtener más detalles.
+En la fase de ingesta, para aplicar el contenido delta sobre el contenido actual, se debe desactivar la opción de *borrado*. Consulte la [Ingesta Superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) para obtener más detalles.
 
 ## Caducidad del conjunto de migración {#migration-set-expiry}
 
@@ -85,4 +85,4 @@ La caducidad de un conjunto de migración se puede supervisar en la fila Conjunt
 
 ## Siguientes pasos {#whats-next}
 
-AEM Una vez que haya obtenido información sobre la herramienta de transferencia de contenido y su descripción general, que describe esta herramienta, puede utilizarla para mover contenido existente de una instancia de origen (local o AMS) a la instancia de AEM Cloud Service de destino, debe revisar [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).
+Una vez que haya obtenido información general sobre la herramienta de transferencia de contenido, en la que se indica que esta herramienta se puede utilizar para mover contenido existente de una instancia de AEM de origen (On-Premise o AMS) a la instancia de AEM Cloud Service del destinatario, debe revisar los [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).
