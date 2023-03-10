@@ -2,7 +2,7 @@
 title: 'Proceso de aprovisionamiento: información general'
 description: 'Proceso de aprovisionamiento: información general'
 source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
 ht-degree: 100%
 
