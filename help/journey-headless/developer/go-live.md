@@ -1,29 +1,29 @@
 ---
-title: Cómo vivir con tu aplicación sin encabezado
-description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a implementar una aplicación sin encabezado en vivo tomando su código local en Git y mudándolo a Cloud Manager Git para la canalización CI/CD.
+title: Cómo hacer un lanzamiento con su aplicación sin encabezado
+description: En esta parte del recorrido para desarrolladores de AEM sin encabezado, aprenda a implementar un lanzamiento de la aplicación sin encabezado tomando su código local en Git y mudándolo a Cloud Manager Git para la canalización de integración continua/entrega continua (CI/CD).
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1070'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Cómo vivir con tu aplicación sin encabezado {#go-live}
+# Cómo hacer un lanzamiento con su aplicación sin encabezado {#go-live}
 
-En esta parte del [recorrido para desarrolladores AEM sin encabezado](overview.md), aprenda a implementar una aplicación sin encabezado en directo tomando su código local en Git y moviéndolo a Cloud Manager Git para la canalización CI/CD.
+En esta parte del [recorrido para desarrolladores de AEM sin encabezado](overview.md), aprenda a implementar un lanzamiento de la aplicación sin encabezado tomando su código local en Git y mudándolo a Cloud Manager Git para la canalización CI/CD.
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido sin AEM, [Cómo ponerlo todo juntos: su aplicación y su contenido en AEM sin cabeza](put-it-all-together.md) aprendió a utilizar las herramientas de desarrollo de AEM para unir todas las facetas de su proyecto.
+En el documento anterior del recorrido de AEM sin encabezado, [Cómo juntar su aplicación y contenido en AEM sin encabezado](put-it-all-together.md), aprendió a utilizar las herramientas de desarrollo de AEM para unir todas las facetas de su proyecto.
 
-Este artículo se basa en estos fundamentos para que entienda cómo preparar su propio proyecto sin objetivos AEM para su lanzamiento.
+Este artículo se basa en estos fundamentos para que entienda cómo preparar su propio proyecto de AEM sin encabezado para su lanzamiento.
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender la canalización de publicación sin encabezado de AEM y las consideraciones de rendimiento que debe tener en cuenta antes de comenzar a trabajar con la aplicación.
+Este documento le ayuda a comprender la canalización de las publicaciones de AEM sin encabezado y las consideraciones de rendimiento que debe tener en cuenta antes de lanzar su aplicación.
 
-* Asegurar y escalar la aplicación antes de Launch
+* Asegurar y escalar su aplicación antes del lanzamiento
 * Monitorizar los problemas de rendimiento y depuración
 
 <!-- Alexandru: this is a bit redundant, to review again later
@@ -31,61 +31,61 @@ Este documento le ayuda a comprender la canalización de publicación sin encabe
 ## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
 
 -->
-Para preparar la aplicación sin AEM para el inicio, siga las prácticas recomendadas que se describen a continuación.
+Para preparar su aplicación AEM sin encabezado para el lanzamiento, siga las prácticas recomendadas que se describen a continuación.
 
-## Asegurar y escalar su aplicación sin encabezado antes de Launch {#secure-and-scale-before-launch}
+## Asegurar y escalar su aplicación sin encabezado antes del lanzamiento {#secure-and-scale-before-launch}
 
-1. Configurar [Autenticación basada en tokens](/help/headless/security/authentication.md) con sus solicitudes de GraphQL
-1. Configurar [Almacenamiento en caché](/help/implementing/dispatcher/caching.md).
+1. Configurar [Autenticación basada en token](/help/headless/security/authentication.md) con sus solicitudes de GraphQL
+1. Configurar el [almacenamiento en caché](/help/implementing/dispatcher/caching.md).
 
-## Estructura del modelo frente a salida de GraphQL {#structure-vs-output}
+## Estructura del modelo frente al output de GraphQL {#structure-vs-output}
 
 * Evite crear consultas que produzcan más de 15 kb de JSON (gzip comprimido). Los archivos JSON largos consumen muchos recursos para que la aplicación cliente los analice.
 * Evite más de cinco niveles anidados de jerarquías de fragmento. Los niveles adicionales hacen que a los autores de contenido les resulte difícil considerar el impacto de sus cambios.
-* Utilice consultas de varios objetos en lugar de modelar consultas con jerarquías de dependencia dentro de los modelos. Esto permite una mayor flexibilidad a largo plazo para reestructurar la salida de JSON sin tener que hacer muchos cambios de contenido.
+* Utilice consultas de varios objetos en lugar de modelar consultas con jerarquías de dependencia dentro de los modelos. Esto permite una mayor flexibilidad a largo plazo para reestructurar el output de JSON sin tener que hacer muchos cambios de contenido.
 
 ## Maximizar la proporción de visitas en caché de CDN {#maximize-cdn}
 
 * No utilice consultas directas de GraphQL, a menos que solicite contenido activo desde la superficie.
    * Utilice consultas persistentes siempre que sea posible.
-   * Proporcione CDN TTL por encima de 600 segundos para que la CDN los almacene en caché.
-   * AEM calcular el impacto de un cambio de modelo en consultas existentes.
-* Dividir archivos JSON/consultas de GraphQL entre la tasa de cambio de contenido baja y alta para reducir el tráfico de clientes a CDN y asignar un TTL más alto. Esto minimiza la CDN que vuelve a validar el JSON con el servidor de origen.
-* Para invalidar activamente el contenido de la CDN, utilice la Depuración leve. Esto permite que la CDN vuelva a descargar el contenido sin causar que falte una caché.
+   * Proporcione el tiempo de duración (TTL) de la red de distribución de contenido (CDN) por encima de 600 segundos para que la CDN los almacene en la caché.
+   * AEM calcula el impacto de un cambio de modelo en las consultas existentes.
+* Divida los archivos JSON o consultas GraphQL entre tasas de cambio de contenido bajas y altas para reducir el tráfico de clientes a la CDN y asignar un TTL más alto. Esto minimiza la CDN que vuelve a validar el JSON con el servidor de origen.
+* Para invalidar activamente el contenido de la CDN, utilice la depuración leve. Esto permite a la CDN volver a descargar el contenido sin provocar una pérdida de caché.
 
-## Mejorar el tiempo para descargar contenido sin objetivos {#improve-download-time}
+## Mejora del tiempo para descargar contenido sin encabezado {#improve-download-time}
 
 * Asegúrese de que los clientes HTTP utilicen HTTP/2.
 * Asegúrese de que los clientes HTTP acepten la solicitud de encabezados para gzip.
-* Minimice el número de dominios utilizados para alojar JSON y artefactos de referencia.
-* Aprovechar `Last-modified-since` para actualizar los recursos.
-* Uso `_reference` en el archivo JSON para iniciar la descarga de recursos sin tener que analizar los archivos JSON completos.
+* Minimice el número de dominios utilizados para alojar el formato JSON y los artefactos de referencia.
+* Utilice `Last-modified-since` para actualizar los recursos.
+* Use la salida `_reference` en el archivo JSON para iniciar la descarga de los recursos sin tener que analizar los archivos JSON completos.
 
-## Implementar en producción {#deploy-to-production}
+## Implementación de la producción {#deploy-to-production}
 
-Una vez que se haya probado todo y funcione correctamente, estará listo para insertar las actualizaciones de código en una [repositorio Git centralizado en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+Una vez que haya probado que todo funcione correctamente, estará listo para insertar las actualizaciones de código en un [repositorio Git centralizado en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=es).
 
-Una vez cargadas las actualizaciones en Cloud Manager, se pueden implementar en AEM as a Cloud Service mediante [Canalización de CD/CI de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+Una vez cargadas las actualizaciones en Cloud Manager, se pueden implementar en AEM as a Cloud Service mediante la [canalización CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es).
 
-Puede empezar a implementar su código aprovechando la canalización de CD/CI de Cloud Manager, que se cubre ampliamente [here](/help/implementing/deploying/overview.md).
+Puede comenzar a implementar su código aprovechando la canalización CI/CD de Cloud Manager, que se explica en detalle [aquí](/help/implementing/deploying/overview.md).
 
-## Supervisión del rendimiento {#performance-monitoring}
+## Monitorización del rendimiento {#performance-monitoring}
 
-Para que los usuarios tengan la mejor experiencia posible al utilizar la aplicación sin periféricos AEM, es importante que supervise las métricas clave de rendimiento, tal como se detalla a continuación:
+Para que los usuarios tengan la mejor experiencia posible al utilizar la aplicación AEM sin encabezado, es importante que monitorice las métricas clave de rendimiento, tal como se detalla a continuación:
 
-* Validar las versiones de producción y previsualización de la aplicación
-* Verificar páginas de estado AEM para el estado actual de disponibilidad del servicio
-* Acceso a los informes de rendimiento
+* Valide las versiones de producción y previsualización de la aplicación.
+* Verifique las páginas de estado de AEM para el estado actual de disponibilidad del servicio.
+* Acceda a los informes de rendimiento.
    * Rendimiento de entrega
-      * Rendimiento de CDN (FIENTE): compruebe el número de llamadas, la tasa de caché, los índices de errores y el tráfico de carga útil
+      * Rendimiento (rápido) de CDN: compruebe el número de llamadas, la tasa de caché, los índices de errores y el tráfico de carga útil
       * Servidores de origen: número de llamadas, tasas de error, cargas de CPU, tráfico de carga útil
    * Rendimiento del autor
-      * Comprobar el número de usuarios, solicitudes y cargar
-* Acceso a informes de rendimiento específicos de aplicaciones y espacio
-   * Una vez que el servidor esté activo, compruebe si las métricas generales son verdes/naranjas/rojas y, a continuación, identifique los problemas específicos de la aplicación
-   * Abra los mismos informes filtrados arriba a la aplicación o al espacio (por ejemplo, escritorio de Photoshop, paywall).
-   * Utilice las API de registro de Splunk para acceder al rendimiento del servicio y la aplicación
-   * Póngase en contacto con el servicio de atención al cliente en caso de que haya otros problemas.
+      * Comprobar el número de usuarios, solicitudes y cargas
+* Acceso a informes de rendimiento específicos de aplicaciones y de espacio
+   * Una vez que el servidor esté activo, compruebe si las métricas generales son verdes, naranjas o rojas y, a continuación, identifique los problemas específicos de la aplicación.
+   * Abra los mismos informes filtrados anteriormente en la aplicación o el espacio (por ejemplo, escritorio de Photoshop, muro de pago).
+   * Utilice las API de registro de Splunk para acceder al rendimiento del servicio y de la aplicación.
+   * Póngase en contacto con asistencia al cliente en caso de que surjan otros problemas.
 
 ## Solución de problemas {#troubleshooting}
 
@@ -93,43 +93,43 @@ Para que los usuarios tengan la mejor experiencia posible al utilizar la aplicac
 
 Siga estas prácticas recomendadas como enfoque general de la depuración:
 
-* Validar la funcionalidad y el rendimiento con la versión de vista previa de la aplicación
-* Validar la funcionalidad y el rendimiento con la versión de producción de la aplicación
-* Validar con la vista previa JSON del Editor de fragmentos de contenido
-* Inspect el JSON en la aplicación cliente para comprobar la presencia de problemas de entrega o de aplicaciones de cliente
-* Inspect el JSON mediante GraphQL para comprobar la presencia de problemas relacionados con contenido en caché o AEM
+* Valide la funcionalidad y el rendimiento con la versión previa de la aplicación.
+* Valide la funcionalidad y el rendimiento con la versión de producción de la aplicación.
+* Valide con la vista previa JSON del Editor de fragmentos de contenido.
+* Examine el JSON en la aplicación cliente para comprobar si existen problemas en la aplicación cliente o en la entrega.
+* Examine el JSON mediante GraphQL para comprobar si existen problemas relacionados con el contenido en caché o AEM.
 
 ### Registro de un error con asistencia {#logging-a-bug-with-support}
 
-Para registrar de forma eficaz un error con el servicio de asistencia en caso de que necesite más ayuda, siga los siguientes pasos:
+Para registrar de forma eficaz un error con el servicio de asistencia en caso de que necesite más ayuda, siga estos pasos:
 
 * Tome capturas de pantalla del problema, si es necesario.
-* Documentar una manera de reproducir el problema
-* Documentar el contenido con el que se reproduce el problema
-* Registre un problema a través del portal de soporte AEM con la prioridad adecuada
+* Documente una manera de reproducir el problema.
+* Documente el contenido con el que se reproduce el problema.
+* Registre un problema a través del portal de asistencia de AEM con la prioridad adecuada.
 
-## El Recorrido Termina, ¿O Sí? {#journey-ends}
+## El recorrido ha terminado, ¿o no? {#journey-ends}
 
-Felicitaciones! ¡Ha completado el Recorrido para desarrolladores AEM sin encabezado! Ahora debe comprender lo siguiente:
+Felicitaciones. Ha completado el recorrido para desarrolladores de AEM sin encabezado. Ahora debe comprender lo siguiente:
 
 * La diferencia entre la entrega de contenido sin encabezado y con encabezado.
-* AEM características sin periféricos.
-* Organizar y AEM proyecto sin encabezado.
+* Las características sin encabezado de AEM.
+* Cómo organizar un proyecto sin encabezado en AEM.
 * Cómo crear contenido sin encabezado en AEM.
 * Cómo recuperar y actualizar contenido sin encabezado en AEM.
-* Cómo poner en marcha un proyecto AEM sin encabezado.
+* Cómo poner en marcha un proyecto de AEM sin encabezado.
 * Qué hacer después del lanzamiento.
 
-Ya ha iniciado su primer proyecto AEM sin encabezado o ahora tiene todo el conocimiento que necesita para hacerlo. ¡bueno trabajo!
+Ya ha iniciado su primer proyecto de AEM sin encabezado o ahora tiene los conocimientos necesarios para hacerlo. Buen trabajo.
 
 ### Explorar aplicaciones de una sola página {#explore-spa}
 
-Sin embargo, las tiendas sin periféricos de AEM no tienen que parar aquí. Puede que recuerde en la [Parte de introducción del recorrido](getting-started.md#integration-levels) analizamos brevemente cómo AEM no solo admite entregas sin periféricos y modelos de pila completa tradicionales, sino que también puede admitir modelos híbridos que combinan las ventajas de ambos.
+Sin embargo, las tiendas sin encabezado de AEM no tienen que detenerse aquí. Tal vez recuerde que en la [parte de introducción del recorrido](getting-started.md#integration-levels) analizamos brevemente cómo AEM no solo admite entregas sin encabezado y modelos de pila completa tradicionales, sino que también puede admitir modelos híbridos que combinan las ventajas de ambos.
 
-Si este tipo de flexibilidad es algo que necesita para su proyecto, continúe con la parte opcional adicional del recorrido, [Cómo crear aplicaciones de una sola página (SPA) con AEM.](create-spa.md)
+Si este es el tipo de flexibilidad que necesita para su proyecto, continúe con la parte opcional adicional del recorrido, [Cómo crear aplicaciones de una sola página (SPA) con AEM.](create-spa.md)
 
 ## Recursos adicionales {#additional-resources}
 
-* [Información general sobre la implementación en AEM as a Cloud Service](/help/implementing/deploying/overview.md)
-* [Uso de Cloud Manager para implementar el código](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Integración del repositorio Git de Cloud Manager con un repositorio Git externo e Implementación de un proyecto en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
+* [Información general sobre la implementación de AEM as a Cloud Service](/help/implementing/deploying/overview.md)
+* [Uso de Cloud Manager para implementar el código](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es)
+* [Integración del repositorio Git de Cloud Manager con un repositorio Git externo e implementación de un proyecto en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=es)
