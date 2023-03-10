@@ -1,6 +1,6 @@
 ---
 title: Introducción al Generador de aplicaciones
-description: Conozca los conceptos básicos de App Builder, desde su valor empresarial hasta su arquitectura.
+description: Conozca los conceptos básicos del Generador de aplicaciones, desde su valor comercial hasta su arquitectura.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -10,9 +10,9 @@ kt: 9452, 9464, 9465, 9466
 thumbnail: 339158.jpg
 exl-id: c6fc96a0-ff95-4fb9-8674-71e60d23ef5c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
@@ -20,28 +20,28 @@ ht-degree: 11%
 
 >[!IMPORTANT]
 >
-> _El proyecto Adobe Firefly, como se menciona en los vídeos de esta serie, ahora se llama App Builder_
+> _Adobe Project Firefly, según se menciona en los vídeos de esta serie, se denomina ahora Generador de aplicaciones_
 
 ## Introducción
 
-Obtenga información sobre App Builder, sus funciones y el valor empresarial que App Builder proporciona.
+Obtenga información sobre el Generador de aplicaciones, sus funciones y el valor comercial que proporciona.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
 
-## Touchpoints
+## Puntos de contacto
 
-Descubra cómo interactúan los usuarios finales con el SPA de App Builder y dónde los desarrolladores pueden obtener información sobre el desarrollo de App Builder.
+Descubra cómo interactúan los usuarios finales con las SPA del Generador de aplicaciones y dónde los desarrolladores pueden obtener información sobre el desarrollo del Generador de aplicaciones.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
 
 ## Arquitectura
 
-Obtenga información sobre la arquitectura de la aplicación de App Builder y sus ventajas.
+Obtenga información sobre la arquitectura de la aplicación del Generador de aplicaciones y sus ventajas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339160/?quality=12&learn=on)
 
 ## Valor comercial y casos de uso
 
-Obtenga información sobre los principios de diseño y los casos de uso comunes de App Builder.
+Obtenga información sobre los principios de diseño y los casos de uso comunes del Generador de aplicaciones.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)
