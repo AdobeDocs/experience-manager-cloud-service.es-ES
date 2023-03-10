@@ -5,7 +5,7 @@ feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '292'
 ht-degree: 100%
 
@@ -26,8 +26,8 @@ La traducción de contenido implica los siguientes pasos:
 
 1. [Conectar AEM con su proveedor de servicios de traducción](integration-framework.md#connecting-to-a-translation-service-provider) y [crear configuraciones del marco de trabajo de integración de traducción](integration-framework.md).
 1. [Asociar las páginas del maestro de idioma](integration-framework.md#configuring-pages-for-translation) con el servicio de traducción y las configuraciones del marco de trabajo.
-1. [Identificación del tipo de contenido](rules.md) para traducir.
-1. [Preparación del contenido para su traducción](preparation.md) creando el maestro de idioma y las páginas raíz de las copias de idioma.
+1. [Identificar el tipo de contenido](rules.md) para traducir.
+1. [Preparar el contenido para su traducción](preparation.md) creando el maestro de idioma y las páginas raíz de las copias de idioma.
 1. [Crear proyectos de traducción](managing-projects.md) para recopilar el contenido que se va a traducir y para preparar el proceso de traducción.
 1. Utilice los proyectos de traducción para [administrar el proceso de traducción de contenido](managing-projects.md).
 
