@@ -3,7 +3,7 @@ title: AEM Recorrido de creación rápida de sitios
 description: Comience aquí para obtener un recorrido guiado a través de la herramienta de creación rápida de sitios AEM fácil de usar, para optimizar el desarrollo front-end de su sitio AEM y personalizar rápidamente su sitio sin conocimiento del servidor de AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1030'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Si desea saber cómo recomienda Adobe resolver los casos de sitios comerciales c
 
 Este recorrido describe los requisitos, pasos y enfoques para personalizar los temas de AEM Sites. Su audiencia principal es el desarrollador front-end, que no necesita saber de AEM. Sin embargo, para ilustrar todo el proceso, el recorrido incluye a los administradores, que se supone que tienen conocimientos básicos de AEM Sites y Cloud Manager. En la práctica, varias personas pueden desempeñar diversas funciones y este recorrido admite perspectivas tanto de administradores como de desarrolladores front-end.
 
-| Grupo de usuarios | Descripción | Función en el recorrido |
+| Grupo de usuarios | Descripción | Rol en el recorrido |
 |---|---|---|
 | Desarrollador front-end | Personaliza el tema del sitio | Coge el tema proporcionado por el administrador de AEM y lo personaliza para que se pueda implementar en el sitio de AEM. |
 | Autor de contenido | Crea y administra el contenido que se entrega como sitios | Los autores de contenido crean contenido en AEM que se procesa con el tema personalizado por el desarrollador front-end. |
