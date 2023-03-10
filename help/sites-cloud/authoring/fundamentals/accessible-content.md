@@ -2,9 +2,9 @@
 title: Crear contenido accesible para Adobe Experience Manager as a Cloud Service (conformidad con WCAG 2.1)
 description: Utilice AEM as a Cloud Service para ayudar a que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '13853'
+source-wordcount: '13870'
 ht-degree: 73%
 
 ---
@@ -101,7 +101,7 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 Pequeños pictogramas (gráficos) que transmiten información específica. Se deben utilizar de manera consistente en una página o sitio. Todos los ejemplos del icono en una página o sitio deben contener el mismo texto alternativo, corto y preciso, a menos que se duplique innecesariamente el texto adyacente.
 * Gráficos y diagramas: Normalmente representan datos numéricos. Por lo tanto, una opción para proporcionar una alternativa textual podría ser incluir un breve resumen de las principales tendencias que se muestran en el gráfico. Si es necesario, proporcione también una descripción más detallada en el texto utilizando la variable **Descripción** en el campo **Avanzadas** pestaña propiedades de la imagen. Además, puede proporcionar los datos de origen en forma de tabla en cualquier otra parte de la página o sitio.
 * Mapas, diagramas, diagramas de flujo: Para los gráficos que proporcionan datos espaciales (por ejemplo, para admitir la descripción de relaciones entre objetos o un proceso), asegúrese de que el mensaje clave se proporcione en formato de texto y de que esta información de texto se coloque cerca de cada punto de datos asociado. En el caso de los mapas, es probable que no sea práctico suministrar un equivalente textual completo. No obstante, si el mapa se proporciona como una forma de ayudar a las personas a encontrar su camino a una ubicación determinada, el texto alternativo de la imagen del mapa puede indicar brevemente *Mapa de X* y, a continuación, ofrecer indicaciones para llegar a esa ubicación en texto en cualquier parte de la página o a través del campo **Descripción** en la pestaña **Avanzado** del componente **Imagen**.
-* CAPTCHA: Un CAPTCHA es un *Prueba de Turing pública completamente automatizada para diferenciar ordenadores de humanos*. Se trata de una comprobación de seguridad que se utiliza en las páginas web para distinguir a los seres humanos del software malicioso, pero que puede causar barreras de accesibilidad. Son imágenes que requieren que los usuarios describan lo que ven para pasar una prueba de seguridad. No es posible proporcionar una alternativa textual para la imagen, por lo que debe considerar soluciones alternativas que no sean gráficas. W3C ofrece varias sugerencias. Cada uno de estos enfoques tiene sus propios méritos e inconvenientes.
+* CAPTCHA: Un CAPTCHA es un *Prueba de Turing pública completamente automatizada para diferenciar ordenadores de humanos*. Es una medida de seguridad que se utiliza en páginas web para distinguir a humanos de software maligno, pero que puede originar barreras de accesibilidad. Se trata de imágenes que requieren que los usuarios describan lo que ven para pasar una prueba de seguridad. No es posible proporcionar una alternativa textual para la imagen, por lo que debe considerar soluciones alternativas que no sean gráficas. W3C ofrece varias sugerencias. Cada uno de estos enfoques tiene sus propios méritos e inconvenientes.
 
    * Rompecabezas de lógica
    * Salida de sonido en lugar de imágenes
@@ -198,9 +198,9 @@ Si necesita utilizar subtítulos abiertos, incorpore el texto en la pista de ví
 * [Entender los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [Cumplir los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-<!--
-* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
-* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+c
+* [W3C: Medios multimedia sincronizados](https://www.w3.org/AudioVideo/)
+* [Subtítulos, transcripciones y descripciones de audio: por WebAIM](https://webaim.org/techniques/captions/)
 -->
 
 ### Descripción del audio o medios alternativos (pregrabados) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
@@ -539,13 +539,13 @@ Recuerde que las fuentes pueden diferir en la forma en que representan el tamañ
 Utilice el buen criterio y error en cuanto a la legibilidad y la facilidad de uso al seleccionar las fuentes adecuadas y el tamaño del contenido web.
 
 >[!NOTE]
-Las siguientes herramientas pueden ayudarle a convertir a otras unidades:
-* [Calculadora Px a Em](https://www.omnicalculator.com/conversion/px-to-em)
-* [Conversión de tamaño de fuente: pixel-point-em-rem-percent](https://www.websemantics.uk/tools/)
-* [Conversor de píxeles a EM](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+Realice una búsqueda web en las siguientes frases para encontrar herramientas que puedan ayudarle a convertir a otras unidades:
+* Calculadora Px a Em <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+* Conversión de tamaño de fuente: pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+* Conversor de píxeles a EM <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 
-Para comprobar los niveles de contraste, utilice una herramienta de contraste de color como el programa [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) o el [verificador de contraste de color WebAIM](https://webaim.org/resources/contrastchecker/). Estas herramientas permiten comprobar las parejas de color e informar de cualquier problema de contraste.
+Para comprobar las relaciones de contraste, utilice una herramienta de contraste de color, como la [Analizador de contraste de color del grupo Paciello](https://www.tpgi.com/resources/contrast-analyser.html) o el [Verificador de contraste de color WebAIM](https://webaim.org/resources/contrastchecker/). Estas herramientas permiten comprobar las parejas de color e informar de cualquier problema de contraste.
 
 Alternativamente, si no le preocupa especificar la apariencia de su página, puede optar por no especificar el color del fondo o del texto en primer plano. No es necesario comprobar el contraste, ya que el explorador del usuario determina los colores del texto y del fondo.
 
@@ -810,7 +810,7 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 2.4.3](https://ww
 
 #### Objetivo: Objetivo del vínculo (en contexto) (2.4.4)          {#purpose-link-purpose-in-context}
 
-Es muy importante indicar claramente la dirección del vínculo a través del texto del vínculo adecuado para todos los usuarios, independientemente de cualquier discapacidad. Esto ayuda a los usuarios a decidir si realmente desean seguir un vínculo. Para los usuarios con visión, el texto de vínculo significativo resulta útil cuando hay varios vínculos en una página (especialmente si la página contiene mucho texto), ya que el texto de vínculo significativo proporciona una indicación más clara de la funcionalidad de la página de destino. Los usuarios de algunas tecnologías de asistencia, que pueden generar una lista de todos los vínculos en una sola página, pueden comprender más fácilmente el texto del vínculo fuera de contexto si el texto del vínculo es único e informativo. Sin embargo, las personas con discapacidades cognitivas pueden confundirse si un vínculo no proporciona suficiente información para describir con precisión adónde los lleva.
+Es muy importante indicar claramente la dirección del vínculo a través del texto del vínculo adecuado para todos los usuarios, independientemente de cualquier discapacidad. Esto ayuda a los usuarios a decidir si realmente desean seguir un vínculo. Para los usuarios con visión, el texto de vínculo significativo resulta útil cuando hay varios vínculos en una página (especialmente si la página tiene mucho texto), ya que el texto de vínculo significativo proporciona una indicación más clara de la funcionalidad de la página de destino. Los usuarios de algunas tecnologías de asistencia, que pueden generar una lista de todos los vínculos en una sola página, pueden comprender más fácilmente el texto del vínculo fuera de contexto si el texto del vínculo es único e informativo. Sin embargo, las personas con discapacidades cognitivas pueden confundirse si un vínculo no proporciona suficiente información para describir con precisión adónde los lleva.
 
 #### Cómo cumplir: Objetivo del vínculo (en contexto) (2.4.4)       {#how-to-meet-link-purpose-in-context}
 

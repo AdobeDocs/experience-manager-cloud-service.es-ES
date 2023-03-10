@@ -2,10 +2,10 @@
 title: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 description: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
 source-wordcount: '1554'
-ht-degree: 19%
+ht-degree: 23%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 19%
 
 Hay disponible una nueva versión de la herramienta de transferencia de contenido que integra el proceso de transferencia de contenido con Cloud Acceleration Manager. Se recomienda encarecidamente cambiar a esta nueva versión para aprovechar todas las ventajas que ofrece:
 
-* Forma de autoservicio de extraer un conjunto de migración una vez e introducirlo en varios entornos en paralelo
-* Experiencia del usuario mejorada mediante mejores estados de carga, protecciones y administración de errores
-* Los registros de ingesta se mantienen y siempre están disponibles para la resolución de problemas
+* Forma de autoservicio de extraer un conjunto de migración una vez e introducirlo en varios entornos en paralelo.
+* Mejor experiencia del usuario gracias a la mejora de los estados de carga, las protecciones y el manejo de errores.
+* Los registros de ingesta se mantienen y siempre están disponibles para la resolución de problemas.
 
 Para empezar a utilizar la nueva versión, deberá desinstalar las versiones anteriores de la herramienta de transferencia de contenido. Esto es necesario porque la nueva versión viene con un cambio arquitectónico importante. Con la versión 2.x, deberá crear nuevos conjuntos de migración y volver a ejecutar la extracción y la ingesta en los nuevos conjuntos de migración.
 Las versiones anteriores a la 2.0.0 ya no serán compatibles y es aconsejable utilizar la versión más reciente.
@@ -71,9 +71,9 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * La clave de extracción es válida durante 14 días desde el momento en que se creó o renovó. Se puede renovar en cualquier momento. Si la clave de extracción ha caducado, no podrá realizar una extracción.
 
-* La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al ingerir contenido en un entorno de publicación. El contenido especificado en el conjunto de migración se ingestará en la instancia de destino elegida. El usuario tiene la capacidad de introducir un conjunto de migración en una instancia de autor, una instancia de publicación o ambas. Se recomienda que, al mover contenido a una instancia de producción, CTT se instale en la instancia de autor de origen para mover contenido a la instancia de autor de destino y, de forma similar, instale CTT en la instancia de publicación de origen para mover contenido a la instancia de publicación de destino. Consulte [Ejecución de la herramienta de transferencia de contenido en una instancia de publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.md?lang=en#running-ctt-on-publish) para obtener más información.
+* La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al ingerir contenido en un entorno de publicación. El contenido especificado en el conjunto de migración se ingestará en la instancia de destino elegida. El usuario tiene la capacidad de introducir un conjunto de migración en una instancia de autor, una instancia de publicación o ambas. Se recomienda que, al mover contenido a una instancia de producción, CTT se instale en la instancia de autor de origen para mover contenido a la instancia de autor de destino y, de forma similar, instale CTT en la instancia de publicación de origen para mover contenido a la instancia de publicación de destino. Consulte [Ejecución de la herramienta de transferencia de contenido en una instancia de publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) para obtener más información.
 
-* Los usuarios y grupos transferidos por la herramienta de transferencia de contenido son solo aquellos que el contenido requiere para satisfacer los permisos. El _Extracción_ El proceso copia el `/home` al conjunto de migración y realiza Asignación de usuarios agregando un campo creado a partir de la dirección de correo electrónico de cada usuario. Para obtener más información, consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).  El _Ingesta_ process copia todos los usuarios y grupos a los que se hace referencia en las ACL de contenido migradas.
+* Los usuarios y grupos transferidos por la herramienta de transferencia de contenido son solo aquellos que el contenido requiere para satisfacer los permisos. El _Extracción_ El proceso copia el `/home` al conjunto de migración y realiza Asignación de usuarios agregando un campo creado a partir de la dirección de correo electrónico de cada usuario. Para obtener más información, consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). El _Ingesta_ process copia todos los usuarios y grupos a los que se hace referencia en las ACL de contenido migradas.
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
