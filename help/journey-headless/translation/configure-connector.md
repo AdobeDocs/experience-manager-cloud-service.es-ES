@@ -3,9 +3,9 @@ title: Configuración del conector de traducción para contenido sin encabezado
 description: Aprenda a conectar AEM a un servicio de traducción.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1234'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -15,10 +15,10 @@ Aprenda a conectar AEM a un servicio de traducción.
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de traducción sin AEM, [Introducción a AEM traducción sin encabezado](learn-about.md) ha aprendido a organizar su contenido sin encabezado y cómo funcionan AEM herramientas de traducción, y ahora debería:
+En el documento anterior del recorrido de traducción sin encabezado de AEM, [Introducción a la traducción de contenido sin encabezado de AEM](learn-about.md) ha aprendido a organizar el contenido sin encabezado y cómo funcionan las herramientas de traducción de AEM. Ahora podrá hacer lo siguiente:
 
 * Comprender la importancia de la estructura de contenido para la traducción.
-* Comprenda cómo AEM almacena contenido sin encabezado.
+* Comprender cómo AEM almacena contenido sin encabezado.
 * Estar familiarizado con las herramientas de traducción de AEM.
 
 Este artículo se basa en estos aspectos básicos para que pueda realizar el primer paso de configuración y configurar un servicio de traducción que utilizará más adelante en el recorrido para traducir contenido.
@@ -66,7 +66,7 @@ Una vez instalado el paquete de conector para el servicio de traducción preferi
 
 * Qué proveedor de servicios de traducción utilizar
 * Si se va a realizar una traducción humana o automática
-* Si se deben traducir otros contenidos asociados con el fragmento de contenido, como etiquetas
+* Si se debe traducir otro contenido asociado al fragmento de contenido, como, por ejemplo, las etiquetas.
 
 Para crear una nueva configuración de traducción:
 
@@ -85,7 +85,7 @@ Para crear una nueva configuración de traducción:
 
 1. Toque o haga clic en **Crear** y la ventana **Editar configuración** se muestra donde puede configurar las propiedades de configuración.
 
-1. Recuerde que los fragmentos de contenido se almacenan como recursos en AEM. Toque o haga clic en el botón **Recursos** pestaña .
+1. Recuerde que los fragmentos de contenido se almacenan como recursos en AEM. Pulse o haga clic en la pestaña **Recursos.**
 
 ![Propiedades de configuración de traducción](assets/translation-configuration.png)
 
@@ -94,13 +94,13 @@ Para crear una nueva configuración de traducción:
    1. **Método de traducción**: seleccione **Traducción automática** o **Traducción humana** según el proveedor de traducción. A los efectos del presente recorrido asumimos la traducción automática.
    1. **Proveedores de traducción**: seleccione el conector que instaló para su servicio de traducción de la lista.
    1. **Categoría de contenido**: seleccione la categoría más adecuada para dirigir mejor la traducción (solo para traducción automática).
-   1. **Traducción de recursos de fragmento de contenido** : Marque esta opción para traducir recursos asociados a fragmentos de contenido.
-   1. **Traducir recursos** : Marque esta opción para traducir los recursos.
-   1. **Traducir metadatos** : Marque esta opción para traducir metadatos de recursos.
-   1. **Traducir etiquetas** : Marque esta opción para traducir etiquetas asociadas al recurso.
+   1. **Traducir recursos de fragmento de contenido**: marque esta opción para traducir los recursos asociados a los fragmentos de contenido.
+   1. **Traducir recursos**: marque esta opción para traducir los recursos.
+   1. **Traducir metadatos**: marque esta opción para traducir los metadatos de recursos.
+   1. **Traducir etiquetas**: marque esta opción para traducir las etiquetas asociadas con el recurso.
    1. **Ejecución automática de la traducción**: compruebe esta propiedad si desea que las traducciones se envíen automáticamente al servicio de traducción.
-   1. **Deshabilitar traducción de solo actualización** - Cuando se marca esta opción, actualizar el proyecto de traducción envía todos los campos traducibles para su traducción, no solo los que se han cambiado desde la última traducción. La actualización del proyecto de traducción se tratará más adelante en el recorrido.
-   1. **Habilitar campos del modelo de contenido para su traducción** - Marque esta opción para que la configuración de traducción reconozca automáticamente los campos de los modelos de contenido en función del **Translatable** indicador.
+   1. **Deshabilitar traducción de solo actualización**: cuando se marca esta opción, al actualizar el proyecto de traducción se enviarán todos los campos traducibles para su traducción, no solo los modificados desde la última traducción. La actualización del proyecto de traducción se tratará más adelante en el recorrido.
+   1. **Habilitar los campos del modelo de contenido para la traducción**: marque esta opción para que la configuración de traducción reconozca automáticamente los campos de los modelos de contenido en función del indicador **Traducible**.
 
 1. Haga clic o pulse en **Guardar y cerrar**.
 
@@ -116,7 +116,7 @@ Para ello, vaya a la raíz de idioma del contenido. Como ejemplo, sería lo sigu
 /content/dam/<your-project>/en
 ```
 
-1. Vaya a la navegación global y luego  a **Navegación** -> **Activos** -> **Archivos**.
+1. Vaya a la navegación global y luego a **Navegación** -> **Activos** -> **Archivos**.
 1. En la consola de activos, seleccione la raíz de idioma que desea configurar y toque o haga clic en **Propiedades**.
 1. Toque o haga clic en la pestaña **Cloud Services**.
 1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione el conector. Debe aparecer en el menú desplegable cuando haya instalado su paquete como [descritos anteriormente.](#connect-translation-provider)
@@ -127,16 +127,16 @@ Para ello, vaya a la raíz de idioma del contenido. Como ejemplo, sería lo sigu
 
 ## Siguientes pasos {#what-is-next}
 
-Ahora que ha completado esta parte del recorrido de traducción sin encabezado, debe:
+Ahora que ha completado esta parte del recorrido de traducción sin encabezado, debería lograr lo siguiente:
 
 * Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.
 
-Aproveche este conocimiento y continúe su recorrido de traducción sin AEM cabeza revisando el documento [Traducción de contenido,](translation-rules.md) donde aprenderá a utilizar la configuración hasta ahora para traducir realmente su contenido.
+Amplíe este conocimiento y continúe su recorrido de traducción sin encabezado de AEM revisando el documento [Traducir contenido,](translation-rules.md) donde aprenderá a utilizar la configuración realizada hasta el momento para traducir realmente su contenido.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Configuración de reglas de traducción](translation-rules.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
+Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Configuración de las reglas de traducción](translation-rules.md), a continuación, se ofrecen algunos recursos opcionales y adicionales que profundizan en los conceptos mencionados en este documento, pero que no son necesarios para continuar el recorrido sobre contenido sin encabezado.
 
 * [Configuración del marco de trabajo de integración de traducción](/help/sites-cloud/administering/translation/integration-framework.md): revise la lista de conectores de traducción seleccionados y aprenda a configurar el marco de trabajo de integración de traducción para integrar servicios de traducción de terceros.
 * [Conexión al traductor de Microsoft](/help/sites-cloud/administering/translation/connect-ms-translator.md): AEM proporciona una cuenta de prueba del traductor de Microsoft para realizar pruebas.
