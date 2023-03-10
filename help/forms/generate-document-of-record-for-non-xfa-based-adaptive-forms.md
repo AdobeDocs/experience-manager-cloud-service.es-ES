@@ -1,8 +1,8 @@
 ---
 title: Generar documento de registro para formularios adaptables
 description: Explica cómo se puede generar una plantilla para un documento de registro (DoR) para formularios adaptables.
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
-workflow-type: tm+mt
+source-git-commit: 3d713304512065819ed16bbc9604f2cf9d1cf43f
+workflow-type: ht
 source-wordcount: '4065'
 ht-degree: 100%
 
