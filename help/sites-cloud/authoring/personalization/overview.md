@@ -2,7 +2,7 @@
 title: Personalización y segmentación de contenido
 description: Descubra cómo puede crear contenido personalizado y con objetivo con AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
+source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
 workflow-type: ht
 source-wordcount: '1056'
 ht-degree: 100%
@@ -16,7 +16,7 @@ La personalización del contenido web que proporciona a los clientes significa a
 
 Con Adobe Experience Manager as a Cloud Service (AEM) puede crear una selección de contenido y especificar qué audiencias (grupos de usuarios finales) verán cada experiencia individual. Esto significa que está segmentando las experiencias personalizadas a audiencias específicas.
 
-Cuando el lector esté en línea, el motor de segmentación revisará la información disponible sobre el usuario final y la comparará con las definiciones de las experiencias. A continuación, el motor *&quot;decidirá&quot;* qué experiencia personalizada se debe mostrar.
+Cuando el lector esté en línea, el motor de segmentación revisará la información disponible sobre el usuario final y la comparará con las definiciones de las experiencias. A continuación, el motor *“decidirá”* qué experiencia personalizada se debe mostrar.
 
 AEM proporciona un marco de herramientas para:
 
