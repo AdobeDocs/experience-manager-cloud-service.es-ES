@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 51d7198ccf24ca0b46c4e4a34cb1d1ee8ed7e2c0
+source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
 workflow-type: ht
 source-wordcount: '2409'
 ht-degree: 100%
@@ -71,7 +71,7 @@ La barra lateral le permite
 
 ![Barra lateral](assets/sidebar-comps.png)
 
-**A.** Explorador de contenido **B.** Explorador de propiedades **C.** Explorador de activos **D.** Explorador de componentes
+**A.** Explorador de contenido **B.** Explorador de propiedades **C.** Explorador de recursos **D.** Explorador de componentes
 
 <!--Click to enlarge
 
@@ -282,7 +282,7 @@ La barra de herramientas de la parte superior de la página ofrece opciones que 
 
 * **Información de la página** ![theme-options](assets/Smock_Properties_18_N.svg): Permite ver las propiedades de página, publicar o cancelar la publicación de un formulario, iniciar un flujo de trabajo de un formulario y abrir el formulario en la IU clásica.
 
-* **Emulador** ![ruler](assets/Smock_Devices_18_N.svg): Permite emular el aspecto del formulario para diferentes tamaños de visualización, como tabletas y teléfonos.
+* **Emulador** ![regla](assets/Smock_Devices_18_N.svg): Permite emular el aspecto del formulario para diferentes tamaños de visualización, como tabletas y teléfonos.
 
 * **Editar**: Permite seleccionar otros modos, como: **[!UICONTROL Editar]**, **[!UICONTROL Estilo]**, **[!UICONTROL Desarrollador]** y **[!UICONTROL Diseño]**.
 
