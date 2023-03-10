@@ -2,9 +2,9 @@
 title: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 description: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1554'
 ht-degree: 19%
 
 ---
@@ -30,7 +30,7 @@ Hay disponible una nueva versión de la herramienta de transferencia de contenid
 * Experiencia del usuario mejorada mediante mejores estados de carga, protecciones y administración de errores
 * Los registros de ingesta se mantienen y siempre están disponibles para la resolución de problemas
 
-Para empezar a utilizar la nueva versión, deberá desinstalar las versiones anteriores de la herramienta de transferencia de contenido. Esto es necesario porque la nueva versión viene con un cambio arquitectónico importante. Con la versión 2.0.10, deberá crear nuevos conjuntos de migración y volver a ejecutar la extracción y la ingesta en los nuevos conjuntos de migración. Si una migración ya está en curso, puede seguir utilizando la versión anterior de CTT hasta que se complete la migración.
+Para empezar a utilizar la nueva versión, deberá desinstalar las versiones anteriores de la herramienta de transferencia de contenido. Esto es necesario porque la nueva versión viene con un cambio arquitectónico importante. Con la versión 2.x, deberá crear nuevos conjuntos de migración y volver a ejecutar la extracción y la ingesta en los nuevos conjuntos de migración.
 Las versiones anteriores a la 2.0.0 ya no serán compatibles y es aconsejable utilizar la versión más reciente.
 
 Las siguientes directrices y prácticas recomendadas se aplican a la nueva versión de la herramienta de transferencia de contenido:
@@ -87,11 +87,13 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * Al utilizar `Amazon S3` o `Azure` AEM al igual que el almacén de datos en el sistema de fuentes de datos, el almacén de datos debe configurarse para que los blobs almacenados no se puedan eliminar (recolección de basura). Esto garantiza la integridad de los datos de índice y si no se configura de esta manera, pueden producirse extracciones fallidas debido a la falta de integridad de estos datos de índice.
 
-* Si utiliza índices personalizados, debe asegurarse de configurar los índices personalizados con `tika` antes de ejecutar la herramienta de transferencia de contenido. Consulte [Preparación de la nueva definición de índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) para obtener más información.
+* Si utiliza índices personalizados, debe asegurarse de configurar los índices personalizados con `tika` antes de ejecutar la herramienta de transferencia de contenido. Consulte [Preparación de la nueva definición de índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=es#preparing-the-new-index-definition) para obtener más información.
 
 * Si tiene intención de realizar recargas, es esencial que la estructura de contenido del contenido existente no cambie desde el momento en que se realiza la extracción inicial hasta el momento en que se ejecuta la extracción superior. Las recargas no se pueden ejecutar en contenido cuya estructura se haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
 
 * Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza recargas con `wipe=false`, debe deshabilitar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
+
+* Un conjunto de migración caducará después de un período prolongado de inactividad, después del cual sus datos ya no estarán disponibles. Consulte las [Caducidad del conjunto de migración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) para obtener más información.
 
 ## Siguientes pasos {#whats-next}
 

@@ -2,9 +2,9 @@
 title: Extracción de contenido del origen
 description: Extracción de contenido del origen
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '663'
 ht-degree: 24%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 24%
 Siga los pasos a continuación para extraer el conjunto de migración de la herramienta de transferencia de contenido:
 
 >[!NOTE]
->Si se utiliza Amazon S3, el almacén de datos de Azure o el almacén de datos de archivos como tipo de almacén de datos, puede ejecutar el paso opcional previo a la copia para acelerar considerablemente la fase de extracción. El paso previo a la copia es más eficaz para la primera extracción e ingesta completas. Para ello, debe configurar una `azcopy.config` antes de ejecutar la extracción. Consulte [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para obtener más información.
+>Si se utiliza Amazon S3, el almacén de datos de Azure o el almacén de datos de archivos como tipo de almacén de datos, puede ejecutar el paso opcional previo a la copia para acelerar considerablemente la fase de extracción. El paso previo a la copia es más eficaz para la primera extracción e ingesta completas. Consulte [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para obtener más información.
 
 1. Seleccione un conjunto de migración de **Transferencia de contenido** y haga clic en **Extract** para iniciar la extracción.
 

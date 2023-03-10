@@ -2,10 +2,10 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 9%
+source-wordcount: '1388'
+ht-degree: 8%
 
 ---
 
@@ -60,7 +60,7 @@ A veces, es difícil comprender los problemas de conexión SSL/TLS. AEM Para sol
 >title="Ejecución de la herramienta de transferencia de contenido"
 >abstract="AEM Aprenda a utilizar la herramienta de transferencia de contenido para migrar el contenido a la as a Cloud Service de la (autor/publicación)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Ver demostración"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial: Uso de la herramienta de transferencia de contenido"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Tutorial: Uso de la herramienta de transferencia de contenido"
 
 La siguiente sección se aplica a la nueva versión de la herramienta de transferencia de contenido. Siga esta sección para aprender a utilizar la herramienta de transferencia de contenido para migrar contenido a la herramienta de transferencia de contenido as a Cloud Service de la red de distribución de contenido (CDN) de la red de distribución de contenido (CDN) para la migración de contenido a la red de distribución de contenido AEM:
 
@@ -69,8 +69,8 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction_setup"
 >title="Fase de configuración de extracción"
->abstract="Obtenga información sobre cómo crear un conjunto de migración y copiar la clave de extracción."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial: Uso de la herramienta de transferencia de contenido"
+>abstract="Obtenga información sobre cómo crear y administrar un conjunto de migración y cómo copiar la clave de extracción."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Tutorial: Uso de la herramienta de transferencia de contenido"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
@@ -84,9 +84,11 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
    >[!NOTE]
    >
-   >Se puede crear un máximo de cinco conjuntos de migración por proyecto en Cloud Acceleration Manager.
+   >Se puede crear un máximo de cinco conjuntos de migración, incluidos conjuntos caducados, por proyecto en Cloud Acceleration Manager.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
+
+   Se presenta el siguiente cuadro de diálogo. Tenga en cuenta que un conjunto de migración caducará después de un período prolongado de inactividad. Después de mostrar advertencias en la tarjeta de proyecto y en las filas de la tabla de trabajos de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. Revisar [Caducidad del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener más información.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 

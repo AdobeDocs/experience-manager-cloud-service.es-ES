@@ -2,10 +2,10 @@
 title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 47%
+source-wordcount: '708'
+ht-degree: 39%
 
 ---
 
@@ -63,6 +63,25 @@ La herramienta de transferencia de contenido tiene una función que permite agre
 En la fase de extracción, para ***completar*** un conjunto de migración existente, se debe desactivar la opción de *sobrescritura*. Consulte la Extracción [](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) Superior para obtener más detalles.
 
 En la fase de ingesta, para aplicar el contenido delta sobre el contenido actual, se debe desactivar la opción de *borrado*. Consulte la Ingesta [](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) Superior para obtener más detalles.
+
+## Caducidad del conjunto de migración {#migration-set-expiry}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_migrationset_expiry"
+>title="Caducidad de un conjunto de migración"
+>abstract="Obtenga información acerca de la caducidad de un conjunto de migración."
+
+Todos los conjuntos de migración caducarán finalmente después de un período prolongado de inactividad de aproximadamente 90 días. Una vez que los indicadores se muestren en la tarjeta de proyecto y en las filas de la tabla de trabajos de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. La hora de caducidad se puede ampliar fácilmente actuando en función del conjunto de migración de las siguientes formas:
+
+* edición de su descripción
+* obteniendo su clave de extracción
+* realización de una extracción en él
+* realizar una ingesta desde él
+
+La caducidad de un conjunto de migración se puede supervisar en la fila Conjunto de migración. Un indicador visual útil de que un conjunto de migración se está acercando a su fecha de caducidad también agregó la tarjeta del proyecto.
+
+![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
+
 
 ## Siguientes pasos {#whats-next}
 
