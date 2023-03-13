@@ -4,7 +4,7 @@ description: Información general sobre asignación de usuarios y migración de 
 source-git-commit: aeb8f633b45908a87f15f9feeb3723f90470be92
 workflow-type: tm+mt
 source-wordcount: '759'
-ht-degree: 3%
+ht-degree: 18%
 
 ---
 
@@ -13,16 +13,16 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="Asignación de usuarios"
->abstract="AEM AEM La herramienta de transferencia de contenido le ayuda a mover usuarios y grupos de su sistema de existente a un estado as a Cloud Service de la. Los usuarios existentes deben asignarse a sus ID de IMS para evitar que se dupliquen en la instancia de autor del Cloud Service."
+>abstract="La herramienta de transferencia de contenido le ayuda a mover usuarios y grupos de su sistema AEM existente a AEM as a Cloud Service. Los usuarios existentes deben asignarse a sus ID de IMS para evitar que se dupliquen en la instancia de autor del Cloud Service."
 
 >[!NOTE]
 >Para ver las versiones anteriores de la herramienta de asignación de usuarios, consulte la [documentación heredada](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
 
 ## Introducción {#introduction}
 
-Como parte del recorrido de transición a Adobe Experience Manager AEM () as a Cloud Service AEM AEM, debe mover usuarios y grupos de su sistema de existente a los que se vean as a Cloud Service en el proceso de migración a la. Esto se realiza mediante la herramienta de transferencia de contenido.
+Como parte del recorrido de transición a Adobe Experience Manager (AEM) as a Cloud Service, debe mover usuarios y grupos del sistema de AEM existente a AEM as a Cloud Service. Esto lo hace la herramienta de transferencia de contenido.
 
-Un cambio importante en AEM as a Cloud Service es el uso completamente integrado de los Adobe ID para acceder al nivel de creación. Esto requiere el uso de [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar usuarios y grupos de usuarios. La información de perfil de usuario está centralizada en el sistema Identity Management de Adobe (IMS), que proporciona un inicio de sesión único en todas las aplicaciones de la nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Debido a este cambio, los usuarios existentes deben asignarse a sus ID de IMS para evitar usuarios duplicados en la instancia de autor del Cloud Service. AEM Dado que los grupos de los grupos tradicionales son fundamentalmente diferentes de los grupos de IMS, los grupos no se asignan, pero los dos conjuntos de grupos deben reconciliarse una vez completada la migración.
+Un cambio importante en AEM as a Cloud Service es el uso completamente integrado de Adobe ID para acceder al nivel de creación. Esto requiere el uso de [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar los usuarios y grupos de usuarios. La información de perfil de usuario está centralizada en Adobe Identity Management System (IMS) que proporciona el inicio de sesión único en todas las aplicaciones de la nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=es#identity-management). Debido a este cambio, los usuarios existentes deben asignarse a sus ID de IMS para evitar usuarios duplicados en la instancia de autor del Cloud Service. AEM Dado que los grupos de los grupos tradicionales son fundamentalmente diferentes de los grupos de IMS, los grupos no se asignan, pero los dos conjuntos de grupos deben reconciliarse una vez completada la migración.
 
 ## Asignación de usuarios y detalles de migración {#user-mapping-detail}
 

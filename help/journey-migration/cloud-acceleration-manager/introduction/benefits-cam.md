@@ -37,6 +37,6 @@ Las ventajas clave de utilizar Cloud Acceleration Manager son las siguientes:
 
    Acceda a las prácticas recomendadas por el Adobe y a las herramientas de automatización para acelerar los esfuerzos de migración y acceder a las herramientas y minimizar el tiempo de migración.
 
-## Siguientes pasos {#whats-next}
+## Pasos siguientes {#whats-next}
 
 Una vez que haya aprendido qué es Cloud Acceleration Manager, ya está listo para usar y [Introducción a Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).

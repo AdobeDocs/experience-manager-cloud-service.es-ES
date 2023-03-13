@@ -170,7 +170,7 @@ Con el archivo de configuración anterior en su lugar, la fase de precopia de Az
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
 
-¡Enhorabuena! Esta entrada de registro significa que la configuración se consideró válida y que AzCopy está copiando actualmente todos los blobs del contenedor de origen al contenedor de migración.
+Felicitaciones. Esta entrada de registro significa que la configuración se consideró válida y que AzCopy está copiando actualmente todos los blobs del contenedor de origen al contenedor de migración.
 
 Las entradas de registro de AzCopy aparecerán en el registro de extracción y se añadirán como prefijo c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [Copia previa de AzCopy]
 
