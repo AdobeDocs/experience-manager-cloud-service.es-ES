@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Adobe Experience Manager as a Cloud Service Sites está listo para ayudar a los clientes con sus obligaciones de cumplimiento de la protección y la privacidad de datos. Esta página guía a los clientes a través de los procedimientos para tratar estas solicitudes en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o mediante programación.
 
-Para obtener más información, consulte [Centro de privacidad de Adobe](https://www.adobe.com/privacy.html).
+Para obtener más información, consulte [Centro de privacidad de Adobe](https://www.adobe.com/es/privacy.html).
 
 >[!NOTE]
 >

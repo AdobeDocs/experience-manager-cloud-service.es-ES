@@ -3,7 +3,7 @@ title: Información sobre los conceptos básicos del modelado de contenido
 description: Conozca los aspectos básicos del modelado de contenido para su de contenido sin encabezado de CMS utilizando fragmentos de contenido.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 100%
 
@@ -64,10 +64,10 @@ Un modelo de fragmento de contenido describe una entidad.
 
 Dentro de un modelo:
 
-1. Los **tipos de datos** permiten definir los atributos individuales.
-Por ejemplo, definen el campo que contiene el nombre de un profesor como **texto** y sus años de servicio como un **número**.
-1. Los tipos de datos de **referencia de contenido** y **referencia de fragmento** permiten crear relaciones con otro contenido dentro de AEM.
-1. El tipo de datos **referencia de fragmento** le permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
+1. Los **Tipos de datos** permiten definir los atributos individuales.
+Por ejemplo, defina el campo que contiene el nombre de un profesor como **Texto** y sus años de servicio como un **Número**.
+1. Los tipos de datos **Referencia de contenido** y **Referencia de fragmento** permiten crear relaciones con otro contenido dentro de AEM.
+1. El tipo de datos de **Referencia de fragmento** permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
 
 Por ejemplo:
 
@@ -96,12 +96,12 @@ AEM proporciona los siguientes tipos de datos para modelar el contenido:
 
 Dos tipos de datos proporcionan referencias al contenido fuera de un fragmento específico:
 
-* La **Referencia de contenido**
-proporciona una referencia simple a un contenido de cualquier tipo.
+* **Referencia de contenido**
+Proporciona una sencilla referencia a otro contenido de cualquier tipo.
 Por ejemplo, puede hacer referencia a una imagen en una ubicación específica.
 
-* La **Referencia a fragmentos**
-proporciona referencias a otros fragmentos de contenido.
+* **Referencia de fragmento**
+Proporciona referencias a otros fragmentos de contenido.
 Este tipo de referencia se utiliza para crear contenido anidado e introduce las relaciones necesarias para modelar el contenido.
 El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
    * Editar directamente el fragmento al que se hace referencia.

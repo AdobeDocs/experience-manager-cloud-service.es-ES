@@ -2,10 +2,10 @@
 title: Notas de la versión 2020.7.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.7.0."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 82%
 
 En la siguiente sección se describen las notas de la versión generales de Experience Manager as a Cloud Service 2020.7.0.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
 La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.7.0 es el 30 de julio de 2020.
 
@@ -33,7 +33,7 @@ Conectores de [!DNL Experience Manager] as a Cloud Service para [!DNL Adobe Targ
 
 ### Novedades de [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] es un servicio escalable y ampliable para procesar activos. Los administradores pueden configurar [!DNL Experience Manager] para invocar aplicaciones personalizadas creadas mediante el [!DNL Asset Compute Service]. Los desarrolladores pueden utilizar el servicio para crear aplicaciones personalizadas especializadas que se ocupen de casos de uso complejos. Este servicio web puede generar miniaturas para diferentes tipos de archivos, representaciones de imágenes de alta calidad a partir de formatos de archivo Adobe, codificar vídeos (futuros), extraer metadatos, extraer texto completo como precursor para la indexación y ejecutar un recurso a través de todos los recursos disponibles [!DNL Sensei] servicios. see [usar microservicios de recursos y perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] es un servicio escalable y ampliable para procesar activos. Los administradores pueden configurar [!DNL Experience Manager] para invocar aplicaciones personalizadas creadas con [!DNL Asset Compute Service]. Los desarrolladores pueden utilizar el servicio para crear aplicaciones personalizadas especializadas que se ocupen de casos de uso complejos. Este servicio web puede generar miniaturas para diferentes tipos de archivos, representaciones de imágenes de alta calidad a partir de formatos de archivo Adobe, codificar vídeos (futuros), extraer metadatos, extraer texto completo como precursor para la indexación y ejecutar un recurso a través de todos los recursos disponibles [!DNL Sensei] servicios. consulte [uso de microservicios de recursos y perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).
 
 * Se ha mejorado la configuración inicial de [!DNL Dynamic Media] en [!DNL Experience Manager] as a Cloud Service para que sea más robusta. Ahora proporciona el progreso de los procesos a los administradores.
 
@@ -45,9 +45,9 @@ Conectores de [!DNL Experience Manager] as a Cloud Service para [!DNL Adobe Targ
 
 ### Errores corregidos {#assets-bugs-fixed}
 
-* El asistente para mover recursos no se carga como se espera para los recursos incluidos en las colecciones. (CQ-4296756)
-* Los valores de `dam:size` y `dam:sha1` se excluyen de XMP reescritura. (CQ-4237355)
-* Al cancelar la publicación de recursos de forma masiva, [!DNL Brand Portal] genera un error que sugiere que el URI de la solicitud es demasiado largo. (CQ-4299474)
+* El asistente para mover recursos no se carga como se espera para los recursos incluidos en Colecciones. (CQ-4296756)
+* Los valores de `dam:size` y `dam:sha1` XMP se excluyen de la reescritura de la. (CQ-4237355)
+* Al cancelar la publicación de recursos de forma masiva, [!DNL Brand Portal] genera un error que sugiere que el URI de solicitud es demasiado largo. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -68,7 +68,7 @@ La versión 2.11.0 de los [componentes principales de AEM](https://experiencelea
 * Ya está disponible la compatibilidad con las páginas móviles aceleradas (AMP) de los componentes principales. Produce experiencias de cliente más rápidas al hacer la transición de página instantáneamente al entrar al sitio desde un resultado de búsqueda móvil de Google, lo que mejora la participación del usuario y la optimización de los motores de búsqueda.
 Consulte [Compatibilidad con AMP para los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) para obtener más detalles.
 
-* Compatibilidad con la versión 1.0.2 de [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html).
+* Compatibilidad con la versión 1.0.2 de [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es).
 
 * Correcciones de errores y mejoras en la calidad de los códigos.
 
@@ -82,7 +82,7 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.7.0 es 9 de jul
 
 * Se rediseñó la página entornos.
 
-* Cuando están en hibernación, los entornos en hibernación ahora muestran un estado discreto en Cloud Manager.
+* Cuando están en hibernación, los entornos en hibernación ahora muestran el estado discreto en Cloud Manager.
 
 * Se aumentó el número de variables de entorno por entorno a 200.
 
@@ -90,16 +90,16 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.7.0 es 9 de jul
 
    Consulte Variables de canalización para obtener más detalles.
 
-* Ahora se admiten repositorios Maven privados enlazados a autenticación.
+* Ahora se admiten repositorios de Maven privados enlazados con la autenticación.
 
 * El contenedor de generación de Cloud Manager ahora admite Java 8 y Java 11.
-Consulte Uso de la compatibilidad con Java 11 para obtener más información.
+Consulte Usar la compatibilidad con Java 11 para obtener más información.
 
 ### Correcciones de errores {#bug-fixes-cm}
 
 * Antes de que se crearan completamente los entornos, el vínculo de Cloud Manager a la consola de desarrollador no se activaba correctamente.
 
-* El vínculo a la consola de desarrollador directamente desde Cloud Manager no mostraba la opción de anular la hibernación o hibernar el entorno de un programa simulador para pruebas.
+* El vínculo a la consola de desarrollador directamente desde Cloud Manager no mostraba la opción de anular la hibernación o hibernar el entorno de un programa de zona protegida.
 
 * Las opciones **Cancelar** y **Guardar** de la página de edición de la canalización sin producción no siempre estaban visibles.
 

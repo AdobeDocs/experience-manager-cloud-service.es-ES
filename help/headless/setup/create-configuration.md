@@ -3,7 +3,7 @@ title: 'Creación de una configuración: configuración sin encabezado'
 description: Cree una configuración como primer paso para empezar a utilizar sin encabezado en AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 100%
 

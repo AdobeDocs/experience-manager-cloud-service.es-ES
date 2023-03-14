@@ -3,7 +3,7 @@ title: Recorrido de traducción de AEM sin encabezado
 description: Empiece aquí un recorrido guiado a través de la traducción de contenido sin encabezado utilizando las potentes herramientas de traducción de AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Si ya está familiarizado con AEM, el contenido sin encabezado y su traducción,
 
 Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
-Si desea conocer cómo recomienda Adobe resolver casos de negocio de contenido sin encabezado con AEM, [Los recorridos de contenido sin encabezado de AEM](/help/journey-documentation/documentation-journeys.md) son el punto de inicio.
+Si quiere saber lo recomienda Adobe para resolver los casos empresariales sin encabezado con AEM, [Los recorridos de AEM sin encabezado](/help/journey-documentation/documentation-journeys.md) es dónde debe empezar.
 
 ## Audiencia {#audience}
 

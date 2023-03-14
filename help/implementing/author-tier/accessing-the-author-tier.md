@@ -17,4 +17,4 @@ El formato de la dirección URL es el siguiente:
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-No se admiten los nombres de dominio personalizados para el nivel de AEM autor.
+AEM No se admiten nombres de dominio personalizados para el nivel de autor de la.

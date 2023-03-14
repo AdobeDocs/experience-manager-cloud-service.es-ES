@@ -115,6 +115,7 @@ Este método se puede utilizar para restaurar versiones de páginas especificada
    >Si:
    >* ha seleccionado una sola página, que nunca ha tenido páginas secundarias,
    >* o ninguna de las páginas de la carpeta tiene versiones,
+
    >
    >A continuación, la pantalla estará vacía, ya que no hay versiones aplicables.
 

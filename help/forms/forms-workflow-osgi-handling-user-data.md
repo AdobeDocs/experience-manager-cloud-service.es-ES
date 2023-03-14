@@ -68,7 +68,7 @@ Las ubicaciones de repositorio predeterminadas donde se encuentran la carga úti
  </tbody>
 </table>
 
-## Acceso y eliminación de datos de usuario {#access-and-delete-user-data}
+## Acceder y eliminar datos de usuario {#access-and-delete-user-data}
 
 Puede acceder a los datos de usuario de una instancia de flujo de trabajo del repositorio y eliminarlos. Para ello, debe conocer el ID de instancia de la instancia de flujo de trabajo asociada al usuario. Puede encontrar el ID de instancia de una instancia de flujo de trabajo utilizando el nombre de usuario del usuario que inició la instancia de flujo de trabajo o que es el usuario asignado actual de la instancia de flujo de trabajo.
 
@@ -77,7 +77,7 @@ Sin embargo, no puede identificar flujos de trabajo asociados a un iniciador (o 
 * **Flujos de trabajo activados a través de una carpeta inspeccionada**: una instancia de flujo de trabajo no se puede identificar por su iniciador si el flujo de trabajo se activa mediante una carpeta inspeccionada. En este caso, la información del usuario se codifica en los datos almacenados.
 * **Flujos de trabajo iniciados desde una instancia de publicación de AEM**: todas las instancias de flujo de trabajo se crean mediante un usuario de servicio cuando se envían formularios adaptables y comunicaciones o cartas interactivas desde una instancia de publicación de AEM. En estos casos, el nombre de usuario del usuario que ha iniciado sesión no se captura en los datos de la instancia de flujo de trabajo.
 
-### Acceso a los datos de usuario {#access}
+### Acceder a los datos de usuario {#access}
 
 Para identificar y acceder a los datos de usuario almacenados en una instancia de flujo de trabajo, realice los siguientes pasos:
 
@@ -123,7 +123,7 @@ Para identificar y acceder a los datos de usuario almacenados en una instancia d
    >
    >La aplicación AEM [!DNL Forms] también almacena datos en el modo Sin conexión. Es posible que los datos de una instancia de flujo de trabajo se almacenen localmente en dispositivos individuales y se envíen al servidor de [!DNL Forms] cuando la aplicación se sincroniza con él.
 
-### Eliminación de los datos de usuario {#delete-user-data}
+### Eliminar los datos de usuario {#delete-user-data}
 
 Es necesario ser administrador de AEM para eliminar los datos de usuario de las instancias de flujo de trabajo mediante los siguientes pasos:
 

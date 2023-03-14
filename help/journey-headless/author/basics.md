@@ -3,7 +3,7 @@ title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante Fragmentos de contenido.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1668'
 ht-degree: 100%
 

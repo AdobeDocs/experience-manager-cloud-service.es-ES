@@ -3,7 +3,7 @@ title: Terminología de AEM as a Cloud Service
 description: Antes de iniciar sesión en AEMaaCS, es útil conocer parte de la terminología del sistema y su estructura básica.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
 

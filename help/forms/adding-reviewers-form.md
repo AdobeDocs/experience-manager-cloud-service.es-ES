@@ -18,7 +18,7 @@ ht-degree: 100%
 
 # Asociar revisores de envío con un formulario {#associating-submission-reviewers-with-a-form}
 
-Cuando crea un formulario, puede especificar usuarios que revisen los envíos del formulario a través del portal de Forms y proporcionen comentarios. Su organización puede recopilar comentarios y volver a diseñar los formularios enviados.
+Cuando crea un formulario, puede especificar usuarios que revisen los envíos del formulario a través del portal de formularios y proporcionen comentarios. Su organización puede recopilar comentarios y volver a diseñar los formularios enviados.
 
 [!DNL AEM Forms] permite asociar un grupo de revisores con un formulario. Los usuarios agregados al grupo de revisión de un formulario ven los envíos de este formulario y proporcionan comentarios.
 

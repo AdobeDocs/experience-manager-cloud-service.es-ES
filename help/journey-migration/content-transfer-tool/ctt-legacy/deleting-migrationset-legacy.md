@@ -1,6 +1,6 @@
 ---
-title: Eliminación de un conjunto de migraciones en la herramienta de transferencia de contenido (heredada)
-description: Eliminación de un conjunto de migraciones en la herramienta de transferencia de contenido
+title: Eliminación de un conjunto de migración en la herramienta de transferencia de contenido (heredada)
+description: Eliminación de un conjunto de migración en la herramienta de transferencia de contenido
 hide: true
 hidefromtoc: true
 exl-id: a307b085-681a-46b5-9044-b7c14a1b0119
@@ -16,11 +16,11 @@ ht-degree: 33%
 Puede eliminar el conjunto de migraciones desde la página *Información general* .
 
 
-## Pasos para eliminar un conjunto de migraciones de la herramienta de transferencia de contenido {#deleting-migration-set}
+## Pasos para eliminar un conjunto de migración de la herramienta de transferencia de contenido {#deleting-migration-set}
 
 Complete los siguientes pasos:
 
-1. Vaya a la **Transferencia de contenido** y seleccione el conjunto de migración que desea eliminar y haga clic en **Eliminar** de la barra de acciones.
+1. Vaya a **Transferencia de contenido** asistente, seleccione el conjunto de migración que desee eliminar y haga clic en **Eliminar** de la barra de acciones.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 

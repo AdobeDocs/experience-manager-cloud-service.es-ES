@@ -64,7 +64,7 @@ Puede utilizar la expresión “access” para habilitar o deshabilitar un campo
 
 ### Expresión “calculate” {#calculate-expression}
 
-La expresión “calculate” se utiliza para calcular automáticamente el valor de un campo mediante una expresión. Normalmente, esta expresión utiliza la propiedad “value” de otros campos. Por ejemplo, `field2.value + field3.value`. Cada vez que el valor de `field2`o `field3`cambia, la expresión se vuelve a activar y el valor se vuelve a calcular.
+La expresión “calculate” se utiliza para calcular automáticamente el valor de un campo mediante una expresión. Normalmente, esta expresión utiliza la propiedad “value” de otros campos. Por ejemplo, `field2.value + field3.value`. Cada vez que el valor de `field2` o `field3`cambia, la expresión se vuelve a habilitar y el valor se vuelve a calcular.
 
 **Se aplica a**: campos
 
@@ -126,7 +126,7 @@ La expresión “summary” se utiliza generalmente para repetir elementos secun
 
 ### Expresión “validate” {#validate-expression}
 
-La expresión “validate” se utiliza para validar los campos mediante la expresión dada. Normalmente, estas expresiones utilizan expresiones regulares junto con el valor del campo para validar un campo. La expresión se vuelve a activar y el estado de validación del campo se vuelve a calcular ante cualquier cambio en el valor de un campo.
+La expresión “validate” se utiliza para validar los campos mediante la expresión dada. Normalmente, estas expresiones utilizan expresiones regulares junto con el valor del campo para validar un campo. La expresión se vuelve a habilitar y el estado de validación del campo se vuelve a calcular ante cualquier cambio en el valor de un campo.
 
 **Se aplica a**: campos
 
@@ -214,9 +214,9 @@ GuideBridge es una colección de API que se pueden usar para interactuar con for
 
 #### Uso de GuideBridge en varias expresiones {#guidebridge-usage-in-various-expressions}
 
-* Para restablecer los campos del formulario, puede activar la `guideBridge.reset()` API en la expresión “click” de un botón. Del mismo modo, existe una API de envío que puede llamarse expresión “click” `guideBridge.submit()`**.**
+* Para restablecer los campos del formulario, puede habilitar la `guideBridge.reset()` API en la expresión “click” de un botón. Del mismo modo, existe una API de envío que puede llamarse expresión “click” `guideBridge.submit()`**.**
 
-* Puede usar la `setFocus()` API establecer el enfoque en varios campos o paneles (para el panel, el enfoque se establecerá en el primer campo automáticamente). `setFocus()`proporciona una amplia gama de opciones para navegar, como la navegación entre paneles, la travesía anterior o siguiente, la configuración del enfoque en un campo concreto y mucho más. Por ejemplo, para desplazarse al siguiente panel, puede utilizar lo siguiente: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* Puede usar la `setFocus()` API establecer el enfoque en varios campos o paneles (para el panel, el enfoque se establecerá en el primer campo automáticamente). `setFocus()` proporciona una amplia gama de opciones para navegar, como la navegación entre paneles, la travesía anterior o siguiente, la configuración del enfoque en un campo concreto y mucho más. Por ejemplo, para desplazarse al siguiente panel, puede utilizar lo siguiente: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
 * Para validar un formulario adaptable o sus paneles específicos, utilice `guideBridge.validate(errorList, somExpression).`
 
@@ -224,7 +224,7 @@ GuideBridge es una colección de API que se pueden usar para interactuar con for
 
 También puede utilizar las API de GuideBridge fuera de las expresiones. Por ejemplo, puede utilizar la API de GuideBridge para establecer la comunicación entre el HTML que aloja el formulario adaptable y el modelo de formulario. Además, puede establecer el valor que proviene del elemento principal de Iframe que aloja el formulario.
 
-Para utilizar la API de GuideBridge para el ejemplo mencionado anteriormente, capture una instancia de GuideBridge. Para capturar la instancia, escuche `bridgeInitializeStart`evento de un objeto`window`:
+Para utilizar la API de GuideBridge para el ejemplo mencionado anteriormente, capture una instancia de GuideBridge. Para capturar la instancia, escuche `bridgeInitializeStart` evento de un objeto`window`:
 
 ```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
@@ -248,11 +248,11 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 >
 >En AEM, es recomendable escribir código en clientLib e incluirlo en su página (header.jsp o footer.jsp de la página)
 
-Para utilizar GuideBridge después de inicializar el formulario (el evento `bridgeInitializeComplete`es Dispatcher), obtenga la instancia de GuideBridge mediante `window.guideBridge`. Puede comprobar el estado de inicialización de GuideBridge mediante la API `guideBride.isConnected`.
+Para utilizar GuideBridge después de inicializar el formulario (el evento `bridgeInitializeComplete` es Dispatcher), obtenga la instancia de GuideBridge mediante `window.guideBridge`. Puede comprobar el estado de inicialización de GuideBridge mediante la API `guideBride.isConnected`.
 
 #### Eventos de GuideBridge {#guidebridge-events}
 
-GuideBridge también proporciona ciertos eventos para scripts externos en la página de alojamiento. Los scripts externos pueden escuchar estos eventos y realizar diversas operaciones. Por ejemplo, cada vez que cambia el nombre de usuario en un formulario, también cambia el nombre que se muestra en el encabezado de la página. Para obtener más información sobre estos eventos, consulte [Referencia de la API de la biblioteca JavaScript™ para formularios adaptables](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge también proporciona ciertos eventos para scripts externos en la página de alojamiento. Los scripts externos pueden escuchar estos eventos y realizar diversas operaciones. Por ejemplo, cada vez que cambia el nombre de usuario en un formulario, también cambia el nombre que se muestra en el encabezado de la página. Para obtener más información sobre estos eventos, consulte [Referencia de la API de la biblioteca JavaScript™ para formularios adaptables](https://helpx.adobe.com/es/aem-forms/6/javascript-api/GuideBridge.html).
 
 Utilice el siguiente código para registrar los controladores:
 
@@ -270,11 +270,11 @@ Como se ha mencionado anteriormente, los formularios adaptables permiten al auto
 
 Realice los siguientes pasos para crear un motivo personalizado para un tipo de campo específico y reutilizarlo para otros campos del mismo tipo:
 
-1. Navegue hasta CRXDE Lite de la instancia de creación.
+1. Navegue hasta CRXDE Lite de la instancia de autor.
 1. Cree una carpeta para mantener los motivos personalizados. En el directorio /apps, cree un nodo de tipo sling:folder. Por ejemplo, cree un nodo con el nombre `customPatterns`. Bajo este nodo, cree otro nodo de tipo `nt:unstructed` y asígnele un nombre `textboxpatterns`. Este nodo contiene los distintos motivos personalizados que desea agregar.
-1. Abra la pestaña Propiedades del nodo que ha creado. Por ejemplo, abra la pestaña Propiedades de `textboxpatterns`. Agregue la propiedad `guideComponentType`a este nodo y establezca su valor en *fd/af/components/formatter/guideTextBox*.
+1. Abra la pestaña Propiedades del nodo que ha creado. Por ejemplo, abra la pestaña Propiedades de `textboxpatterns`. Agregue la propiedad `guideComponentType` a este nodo y establezca su valor en *fd/af/components/formatter/guideTextBox*.
 
-1. El valor de esta propiedad varía según el campo para el que desee definir los motivos. Para el campo numérico, el valor de la propiedad `guideComponentType`es *fd/af/components/formatter/guideNumericBox*. El valor del campo Marcador de datos es *fd/af/components/formatter/guideDatepicker*.
+1. El valor de esta propiedad varía según el campo para el que desee definir los motivos. Para el campo numérico, el valor de la propiedad `guideComponentType` es *fd/af/components/formatter/guideNumericBox*. El valor del campo Marcador de datos es *fd/af/components/formatter/guideDatepicker*.
 ``
 1. Puede agregar un motivo personalizado al asignar una propiedad al `textboxpatterns` nodo. Agregue una propiedad con un nombre (por ejemplo `pattern1`) y establezca su valor en el motivo que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El motivo estará disponible para todos los cuadros de texto que utilice en formularios adaptables.
 

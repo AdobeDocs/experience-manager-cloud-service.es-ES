@@ -44,19 +44,19 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
   <tr>
     <td>Depuración de la versión</td>
     <td>Adobe</td>
-    <td>Para los entornos existentes (los creados antes del 1 de marzo de 2023), la depuración está deshabilitada y no se habilitará en el futuro a menos que el cliente especifique lo contrario. En ese momento, también puede configurarla con valores personalizados.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Los nuevos entornos (los creados a partir del 1 de marzo de 2023) tendrán la depuración habilitada de forma predeterminada con los valores siguientes, y los clientes podrán configurarlos con valores personalizados.
+    <td>Para los entornos existentes (los creados antes del 1 de marzo de 2023), la depuración está deshabilitada y no se habilitará en el futuro a menos que el cliente lo habilite explícitamente, momento en el cual también puede configurarla con valores personalizados.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Los nuevos entornos (los creados a partir del 1 de marzo de 2023) tendrán la depuración habilitada de forma predeterminada con los valores siguientes, y los clientes podrán configurarla con valores personalizados.
      <ol>
        <li>Se eliminan las versiones con más de 30 días</li>
        <li>Se conservan las cinco versiones más recientes de los últimos 30 días</li>
        <li>Independientemente de las reglas anteriores, se conserva la versión más reciente.</li>
-       <br>Se recomienda que los clientes que tienen requisitos reglamentarios para procesar páginas del sitio exactamente como aparecieron en una fecha específica, se integren con servicios externos especializados.
+       <br>Se recomienda que los clientes que tengan requisitos regulatorios para procesar páginas de sitio exactamente como aparecieron en una fecha específica, se integren con servicios externos especializados.
      </ol></td>
   </td>
   </tr>
   <tr>
     <td>Purga del registro de auditoría</td>
     <td>Adobe</td>
-    <td>Para los entornos existentes (los creados antes del 1 de marzo de 2023), la depuración está deshabilitada y no se habilitará en el futuro a menos que el cliente especifique lo contrario. En ese momento, también puede configurarla con valores personalizados.<br><br> <!-- See above for the two line breaks -->Los nuevos entornos (los creados a partir del 1 de marzo de 2023) tendrán la depuración habilitada de forma predeterminada en la variable <code>/content</code> del repositorio de acuerdo con el siguiente comportamiento:
+    <td>Para los entornos existentes (los creados antes del 1 de marzo de 2023), la depuración está deshabilitada y no se habilitará en el futuro a menos que el cliente lo habilite explícitamente, momento en el cual también puede configurarla con valores personalizados.<br><br> <!-- See above for the two line breaks -->Los nuevos entornos (los creados a partir del 1 de marzo de 2023) tendrán la depuración habilitada de forma predeterminada en <code>/content</code> del repositorio según el siguiente comportamiento:
      <ol>
        <li>Para la auditoría de replicación, se eliminan los registros de auditoría con más de tres días</li>
        <li>Para la auditoría de DAM (Assets), se eliminan los registros de auditoría con más de 30 días</li>
@@ -76,7 +76,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
     <td>Cliente</td>
     <td>
     <p>Debe hacerse en Git. Anule el nodo de configuración de la ventana de mantenimiento predeterminado en <code>/libs</code> creando propiedades en la carpeta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> o <code>granite_daily</code>.</p>
-    <p>Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración. Habilite la tarea de mantenimiento añadiendo otro nodo bajo el nodo anterior. Asigne un nombre <code>granite_TaskPurgeTask</code>, con atributo <code>sling:resourceType</code> configure como <code>granite/operations/components/maintenance/task</code> y atributo <code>granite.maintenance.name</code> configure como <code>TaskPurge</code>. Configure las propiedades de OSGI; consulte <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> para la lista de propiedades.</p>
+    <p>Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración. Habilite la tarea de mantenimiento añadiendo otro nodo bajo el nodo de arriba. Asígnele un nombre <code>granite_TaskPurgeTask</code>, con atributo <code>sling:resourceType</code> establezca en <code>granite/operations/components/maintenance/task</code> Atributo y <code>granite.maintenance.name</code> establezca en <code>TaskPurge</code>. Configure las propiedades de OSGI, consulte <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> para obtener la lista de propiedades.</p>
   </td>
   </tr>
     <tr>
@@ -124,7 +124,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
     <p><strong>windowSchedule=weekly</strong> (este valor no debe cambiarse)</p>
     <p><strong>windowStartTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento semanal.</p>
     <p><strong>windowEndTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben dejar de ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento semanal si aún no se han completado.</p>
-    <p><strong>windowScheduleWeekdays= Matriz de 2 valores entre 1 y 7 (por ejemplo, [5,5])</strong> El primer valor de la matriz es el día de inicio cuando se programa el trabajo y el segundo valor es el día de finalización cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
+    <p><strong>windowScheduleWeekdays= Matriz de dos valores entre 1 y 7 (por ejemplo, [5,5])</strong> El primer valor de la matriz es el día de inicio cuando se programa el trabajo y el segundo valor es el día de finalización cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
     </td>
   </tr>
   <tr>
@@ -135,7 +135,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
     <p><strong>windowSchedule=daily</strong> (este valor no debe cambiarse)</p>
     <p><strong>windowStartTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento mensual.</p>
     <p><strong>windowEndTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben dejar de ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento mensual si aún no se han completado.</p>
-    <p><strong>windowScheduleWeekdays=Array de 2 valores entre 1 y 7 (por ejemplo, [5,5])</strong> El primer valor de la matriz es el día de inicio cuando se programa el trabajo y el segundo valor es el día de finalización cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
+    <p><strong>windowScheduleWeekdays=Matriz de dos valores entre 1 y 7 (por ejemplo, [5,5])</strong> El primer valor de la matriz es el día de inicio cuando se programa el trabajo y el segundo valor es el día de finalización cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 para programar en la primera semana del mes o 1 para programar en la última semana del mes. La ausencia de un valor programaría los trabajos todos los días, según se rige por windowScheduleWeekdays cada mes.</p>
     </td> 
     </tr>

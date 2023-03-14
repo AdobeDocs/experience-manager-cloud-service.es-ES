@@ -2,7 +2,7 @@
 title: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 9a08514f11c86b783ae68940a0c3c58fcada3dc2
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 49%
@@ -15,7 +15,7 @@ En la siguiente sección se describen las notas de la versión generales de la v
 
 >[!NOTE]
 >
->Desde aquí puede navegar hasta las notas de versiones de versiones anteriores; por ejemplo, para los de 2020, 2021 y así sucesivamente.
+>Desde aquí puede navegar hasta las notas de versiones anteriores; por ejemplo, las de 2020, 2021, etc.
 
 >[!NOTE]
 >
@@ -23,23 +23,23 @@ En la siguiente sección se describen las notas de la versión generales de la v
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 es el 28 de junio de 2021.
-La siguiente versión (2021.7.0) será el 29 de julio de 2021.
+La fecha de lanzamiento de [!DNL Adobe Experience Manager] La versión 2021.6.0 as a Cloud Service es el 28 de junio de 2021.
+La de la siguiente versión (2021.7.0) será el 29 de julio de 2021.
 
 ## Vídeo de la versión {#release-video}
 
-Eche un vistazo a la [Información general sobre la versión de junio de 2021](https://video.tv.adobe.com/v/334296) vídeo para ver un resumen de las funciones añadidas.
+Eche un vistazo a la [Información general de la versión de junio de 2021](https://video.tv.adobe.com/v/334296) para ver un resumen de las funciones añadidas.
 
-## XML Documentation para AEM as a cloud Service {#xml-documentation}
+## XML Documentation AEM para as a cloud Service {#xml-documentation}
 
 ### Novedades {#what-is-new-xml-documentation}
 
-* XML Documentation para AEM as a Cloud Service es ahora GA.
-* Esto permitirá a los clientes existentes de AEM Cloud Service adquirir un complemento de XML Documentation para importar, crear, administrar y entregar contenido técnico en varios canales, incluidos sitios de AEM
+* XML Documentation AEM para el as a Cloud Service ahora es GA.
+* Esto permitirá a los clientes existentes de AEM Cloud Service adquirir el complemento de XML Documentation AEM para importar, crear, administrar y entregar contenido técnico en varios canales, incluidos los sitios de
 
 ## Cloud Manager {#cloud-manager}
 
-Esta sección describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.6.0 y 2021.5.0.
+AEM Esta sección describe las notas de la versión para Cloud Manager en las versiones 2021.6.0 y 2021.5.0 de as a Cloud Service.
 
 ### Fecha de lanzamiento {#release-date-june-cm}
 
@@ -88,34 +88,34 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 ### Nuevas funciones de [!DNL Assets] {#ga-features-assets}
 
-* La funcionalidad de automatización de contenido permite [!DNL Experience Manager Assets] aproveche el [!DNL Adobe Creative Cloud] API para automatizar la producción de recursos a escala. Mejora la velocidad del contenido al reducir drásticamente el tiempo necesario y las iteraciones necesarias para crear variaciones del mismo recurso. La funcionalidad no requiere ningún código y funciona desde DAM.
-* [!DNL Adobe Asset Link] v3.0 para [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]y [!DNL Adobe InDesign] y [!DNL Adobe Asset Link] v2.0 para [!DNL Adobe XD] está disponible. Proporciona:
+* La funcionalidad de automatización de contenido permite [!DNL Experience Manager Assets] aproveche las [!DNL Adobe Creative Cloud] API para automatizar la producción de recursos a escala. Mejora la velocidad del contenido al reducir drásticamente el tiempo necesario y las iteraciones necesarias para crear variaciones del mismo recurso. La funcionalidad no requiere ningún código y funciona desde DAM.
+* [!DNL Adobe Asset Link] v3.0 para [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], y [!DNL Adobe InDesign] y [!DNL Adobe Asset Link] v2.0 para [!DNL Adobe XD] se ha liberado. Proporciona lo siguiente:
 
    * Compatibilidad con [!DNL Assets Essentials].
-   * Capacidad para conectarse automáticamente a [!DNL Experience Manager] como [!DNL Cloud Service] o [!DNL Assets Essentials].
+   * Capacidad para conectarse automáticamente a [!DNL Experience Manager] as a [!DNL Cloud Service] o [!DNL Assets Essentials].
 
 <!-- TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
 ### Nuevas funciones disponibles en la [!DNL Assets] canal de prelanzamiento {#beta-features-assets}
 
-* La configuración de vista se mejora para permitir a los usuarios elegir una vista predeterminada y un parámetro de ordenación predeterminado.
+* La configuración de vista se mejora para permitir que los usuarios elijan una vista predeterminada y un parámetro de ordenación predeterminado.
 * La funcionalidad de descarga de Linkshare utiliza descargas asincrónicas que aumentan la velocidad de descarga.
 * Los usuarios pueden buscar y filtrar las carpetas en función de los predicados de propiedades.
-* [!DNL Experience Manager Assets] incrusta el visualizador de PDF equipado por [!DNL Adobe Document Cloud] para obtener una vista previa de los documentos admitidos. Esta función permite a los usuarios obtener una vista previa del PDF y de otros archivos de varias páginas sin ningún procesamiento complejo. Esto mejora la paridad de características con [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] incrusta el Visor de PDF con tecnología [!DNL Adobe Document Cloud] para obtener una vista previa de los documentos admitidos. Esta función permite a los usuarios previsualizar el PDF y otros archivos de varias páginas sin ningún procesamiento complejo. Esto mejora la paridad de las funciones con [!DNL Experience Manager] 6.5.
 
 ### Errores corregidos en [!DNL Assets] {#bugs-fixed-assets}
 
-* Cuando agregue un propietario a una subcarpeta, [!DNL Assets] también agrega el mismo usuario que un propietario de la carpeta principal. (CQ-4323737)
-* Al agregar recursos a Colecciones, si un usuario aplica un filtro en la búsqueda Colecciones, el usuario no puede ver las Colecciones en la vista Lista. (CQ-4323181)
+* Cuando agrega un propietario a una subcarpeta, [!DNL Assets] también agrega el mismo usuario como propietario de la carpeta principal. (CQ-4323737)
+* Al agregar recursos a Colecciones, si un usuario aplica un filtro en la búsqueda de Colecciones, no puede ver las Colecciones en la vista de lista. (CQ-4323181)
 * Al buscar archivos y carpetas, si el usuario aplica un filtro y selecciona [!UICONTROL Archivos y carpetas], solo se muestran los archivos, pero no la carpeta. (CQ-4319543)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nuevas funciones de [!DNL Sites] {#ga-features-sites}
 
-* Publicar en el nivel de vista previa ahora se muestra como estado de página en la interfaz de usuario del administrador de sitios
-* Publicar en el nivel de vista previa ahora muestra la URL de vista previa al final de la acción y mantiene la URL en las propiedades de la página para referencia posterior
+* Publicar en el nivel de vista previa ahora se muestra como estado de página en la IU del administrador de sitios
+* Publicar en el nivel de vista previa ahora muestra la URL de vista previa al final de la acción y mantiene la URL en las propiedades de página para referencia posterior
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -144,20 +144,20 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
-Esta sección describe las notas de la versión de AEM Screens as a Cloud Service.
+Esta sección describe las notas de la versión as a Cloud Service de AEM Screens.
 
 ### Fecha de lanzamiento {#release-date-june-screens}
 
-La fecha de versión de AEM Screens as a Cloud Service es el 24 de junio de 2021.
+La fecha de lanzamiento as a Cloud Service de AEM Screens es el 24 de junio de 2021.
 
 ### Novedades {#what-is-new-screens-june}
 
 >[!NOTE]
->Consulte [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guía de conocimientos básicos necesarios para instalar, configurar y ejecutar correctamente Screens as a Cloud Service y enlace a la documentación técnica de conceptos detallados.
+>Consulte [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guía de conocimientos básicos necesarios para instalar, configurar y ejecutar correctamente Screens as a Cloud Service y vincular a la documentación técnica de conceptos detallados.
 
-* La administración del registro masivo de dispositivos significa que el aprovisionamiento de grandes cantidades de dispositivos del reproductor es más rápido y eficiente.
+* La administración del registro masivo de dispositivos significa que el aprovisionamiento de grandes cantidades de reproductores es más rápido y eficiente.
 
-* Se han mejorado las opciones de búsqueda y filtro para cada una de las vistas de inventario de Dispositivo, Pantalla y Canal.
+* Se han mejorado las opciones de búsqueda y filtrado para cada una de las vistas de inventario de Dispositivo, Pantalla y Canal.
 
 * La instantánea de la salud del dispositivo ahorra tiempo al proporcionar un estado crítico como un vistazo.
 
@@ -167,45 +167,45 @@ La fecha de versión de AEM Screens as a Cloud Service es el 24 de junio de 2021
 
 ### Novedades {#what-is-new-cif}
 
-* Nuevos tipos de datos de referencia de productos y categorías del CIF para fragmentos de contenido (incl. compatibilidad con la interfaz de usuario del selector de productos/categorías)
-* Nuevo componente principal de fragmento de contenido de comercio
-* Búsqueda de comercio de texto completo compatible con AEM servidor
-* Los componentes principales de comercio admiten la recopilación de datos de Adobe Commerce Sensei Recs
-* Direcciones URL compatibles con SEO mejoradas para páginas de categoría
+* Nuevos tipos de datos de referencia de productos y categorías del CIF para fragmentos de contenido (incl. soporte de la interfaz de usuario del selector de productos/categorías)
+* Nuevo componente principal de fragmento de contenido de Commerce
+* AEM Búsqueda de comercio de texto completo admitida en el back-end de la
+* Los componentes principales de Commerce admiten la recopilación de datos de Adobe Commerce Sensei Recs
+* Se han mejorado las URL compatibles con SEO para las páginas de categorías
 * Compatibilidad con encabezados HTTP personalizados por sitio/configuración
 
 ## Herramienta de transferencia de contenido {#content-transfer-tool}
 
 ### Fecha de la versión {#release-date-ctt-latest}
 
-La fecha de versión de la herramienta de transferencia de contenido v1.5.4 es el 28 de junio de 2021.
+La fecha de lanzamiento de la herramienta de transferencia de contenido v1.5.4 es el 28 de junio de 2021.
 
 ### Novedades {#what-is-new-ctt-latest}
 
-* Compatibilidad con [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) paso añadido para usar con CTT. El paso de precopia se puede utilizar para acelerar significativamente las fases de extracción e ingesta de la actividad de transferencia de contenido cuando la instancia de AEM de origen está configurada para utilizar un almacén de datos de almacenamiento de blob de Amazon S3 o Azure.
+* Compatibilidad con un [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) Se ha añadido un paso para utilizarlo con CTT. AEM El paso previo a la copia se puede utilizar para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido cuando la instancia de origen se configura para utilizar un almacén de datos de Amazon S3 o Azure Blob Storage.
 
-* Se ha agregado protección a CTT para evitar que los usuarios detengan la ingesta y corrompa los datos una vez que hayan alcanzado el punto crítico durante la fase de ingesta.
+* Se ha añadido una protección a CTT para evitar que los usuarios detengan una ingesta y corrompan los datos una vez que hayan alcanzado el punto crítico durante la fase de ingesta.
 
-* Los registros de extracción son más descriptivos para ayudarle a solucionar el problema.
+* Los registros de extracción son más descriptivos para ayudar a solucionar problemas.
 
-* Se han añadido mensajes de estado de ingesta más descriptivos en la interfaz de usuario.
+* Se han añadido mensajes de estado de ingesta más descriptivos en la IU.
 
 ### Correcciones de errores {#bug-fixes-ctt-latest}
 
-* Al detener una ingesta en la instancia de autor, la interfaz de usuario sobrescribió una ingesta finalizada anteriormente en la instancia de publicación en `STOPPED` from `FINISHED`. Esto se ha corregido.
+* Al detener una ingesta en la instancia de autor, la interfaz de usuario sobrescribió una ingesta previamente finalizada en la instancia de publicación en `STOPPED` de `FINISHED`. Esto se ha corregido.
 
 ## Analizador de prácticas recomendadas {#best-practices-analyzer}
 
 ### Fecha de la versión {#release-date-bpa}
 
-La fecha de versión de Best Practices Analyzer v2.1.16 es el 30 de junio de 2021.
+La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.16 es el 30 de junio de 2021.
 
 ### Novedades {#what-is-new-bpa-latest}
 
-* Capacidad para detectar y crear informes sobre nodos secundarios que faltan en las carpetas de `/content/dam`.
+* Capacidad para detectar e informar sobre nodos secundarios que faltan en carpetas en `/content/dam`.
 
-* Capacidad para detectar e informar sobre la versión de Best Practices Analyzer utilizada.
+* Capacidad para detectar y crear informes sobre la versión de Analizador de prácticas recomendadas utilizada.
 
 ### Correcciones de errores {#bug-fixes-bpa-latest}
 
-* Se ha corregido un error de registro relacionado con la estructura de repositorio no admitida (URS).
+* Se ha corregido un error de registro relacionado con una estructura de repositorio no compatible (URS).

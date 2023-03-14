@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Grupos y permisos {#aem-forms-on-osgi-groups-and-privileges}
 
-Puede [crear grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=es#accessing) y asignar políticas y [usuarios](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) a los grupos. Estas políticas controlan los permisos de los usuarios que forman parte del grupo.
+Puede [crear grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=es#accessing) y asignar políticas y [usuarios](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=es#accessing) a los grupos. Estas políticas controlan los permisos de los usuarios que forman parte del grupo.
 
 Una vez configura [!DNL AEM Forms] as a Cloud Service, los grupos enumerados en la siguiente tabla, como [!DNL forms-users] y forms-power-user, están disponibles automáticamente para su asignación:
 

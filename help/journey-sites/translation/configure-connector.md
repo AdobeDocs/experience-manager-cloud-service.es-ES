@@ -117,7 +117,7 @@ Para ello, vaya a la raíz de idioma del contenido. Como ejemplo, sería lo sigu
 /content/<your-project>/en
 ```
 
-1. Vaya a la navegación global y luego  a **Navegación** -> **Activos** -> **Archivos**.
+1. Vaya a la navegación global y luego a **Navegación** -> **Activos** -> **Archivos**.
 1. En la consola de activos, seleccione la raíz de idioma que desea configurar y toque o haga clic en **Propiedades**.
 1. Toque o haga clic en la pestaña **Cloud Services**.
 1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione el conector. Debe aparecer en el menú desplegable cuando haya instalado su paquete como [descritos anteriormente.](#connect-translation-provider)

@@ -13,7 +13,7 @@ ht-degree: 94%
 
 Esta página describe las notas de la versión generales de [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
 La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.4.0 es el 9 de abril de 2020.
 
@@ -50,7 +50,7 @@ Obtenga información sobre las nuevas funciones, mejoras y correcciones de error
 >* [Acerca de Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Configurar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Configurar Experience Manager para que funcione con Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [Creación de un flujo de trabajo en el Experience Manager mediante los microservicios de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [Creación de un flujo de trabajo en Experience Manager mediante microservicios de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Novedades de Cloud Manager {#whats-new-cloud-manager}
@@ -60,15 +60,15 @@ Obtenga información sobre las nuevas funciones, mejoras y correcciones de error
 * Cambios que permiten al usuario editar programas desde la tarjeta de programa en la página de aterrizaje de Cloud Manager.
 * Se muestra el nuevo estado de **Canalización ejecutándose** en el entorno con el que está asociada.
 * Mejoras en la comprensión de la página de ejecución de la canalización. Esto incluye la visualización del nombre de la canalización (solo para la canalización que no es de producción) y el tipo, y un distintivo para indicar si el estado de la canalización está en curso/cancelada/con error.
-* Información sobre las herramientas para mejorar la experiencia del usuario y la comprensión de por qué se desactiva el botón Añadir Programa/Entorno.
+* Información sobre las herramientas para mejorar la experiencia del usuario y la comprensión de por qué se desactiva el botón Agregar Programa/Entorno.
 * Los entornos con error ahora se pueden eliminar a través de la interfaz de usuario y la API.
-* El proceso utilizado para generar contraseñas de git se ha vuelto más resistente a los problemas en la capa de servicio subyacente.
+* El proceso utilizado para generar contraseñas de Git se ha vuelto más resistente a los problemas en la capa de servicio subyacente.
 
 ### Correcciones de errores {#bug-fixes-cloud-manager}
 
 * Los vínculos al entorno de ensayo en la página de detalles de la ejecución de la canalización no navegaban de manera consistente a la ubicación correcta.
 * Los pasos individuales dentro del proceso de creación de entornos agotarían el tiempo de espera antes de lo necesario, lo que causaría fallas en el proceso.
-* La configuración Maven utilizada en el contenedor de compilación se actualizó para evitar interbloqueos al descargar metadatos de artefactos.
+* La configuración de Maven utilizada en el contenedor de generación se actualizó para evitar interbloqueos al descargar metadatos de artefactos.
 * En algunos casos, el paso Generar imagen no puede descargar correctamente los paquetes de clientes.
 * Algunas condiciones poco frecuentes evitarían que se eliminaran entornos.
 * Las notificaciones de Experience Cloud no se recibían de forma coherente.

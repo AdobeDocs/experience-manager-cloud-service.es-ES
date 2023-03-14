@@ -1,12 +1,12 @@
 ---
-title: Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL (Recursos - Fragmentos de contenido)
+title: 'Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL (Recursos: fragmentos de contenido)'
 description: Aprenda los conceptos básicos de realización de un CMS sin encabezado AEM utilizando fragmentos de contenido con GraphQL para la entrega de contenido sin encabezado.
 feature: Content Fragments, GraphQL API
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Esto se logra usando los fragmentos de contenido, junto con la API de GraphQL de
 
 ## CMS sin encabezado {#headless-cms}
 
-Un sistema de administración de contenido sin encabezado (CMS) es un sistema de administración de contenido exclusivo en el back-end, diseñado y creado explícitamente como repositorio de contenido que hace que el contenido sea accesible a través de una API, para su visualización en cualquier dispositivo.
+Un sistema de administración de contenido (CMS) sin encabezado es un sistema de administración de contenido de back-end diseñado y creado como un repositorio de contenido que hace que el contenido sea accesible a través de una API para su visualización en cualquier dispositivo.
 
 En cuanto a la creación de fragmentos de contenido en AEM, esto significa lo siguiente:
 

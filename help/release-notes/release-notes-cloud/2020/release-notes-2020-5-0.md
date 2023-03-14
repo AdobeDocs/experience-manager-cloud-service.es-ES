@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Esta página describe las notas de la versión generales de Experience Manager as a Cloud Service 2020.5.0.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
 La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.5.0 es el 7 de mayo de 2020.
 
@@ -34,8 +34,8 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 ### Novedades {#what-is-new}
 
-* Se han agregado seis reglas de calidad de código adicionales para ayudar a los clientes a identificar posibles problemas al planificar una migración a Cloud Service,
-* Se ha añadido una nueva métrica *Compatibilidad de Cloud Service* para resumir el número de problemas relacionados con la compatibilidad.
+* Se han agregado seis reglas de calidad del código adicionales para ayudar a los clientes a identificar posibles problemas al planificar una migración a Cloud Service.
+* Se ha agregado una nueva métrica *Compatibilidad de Cloud Service* para resumir el número de problemas relacionados con la compatibilidad.
 * Los entornos que no se hayan podido crear ahora se eliminarán automáticamente, aproximadamente 24 horas después del error de creación, a menos que ya se hayan eliminado.
 * Se ha mejorado el rendimiento de la página de Actividad y de la API de Lista de ejecuciones de canalización.
 * El registro de calidad del código ahora contiene todos los seguimientos de pila para excepciones.
@@ -43,7 +43,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 ### Correcciones de errores  {#bug-fixes}
 
 * Se mostraba una tarjeta engañosa en la página de información general mientras se ejecutaba la canalización de producción.
-* La regla de calidad del código *DontImplementeOrExtendProviderTypesPomCheck* puede producir a veces una excepción de puntero nulo.
+* La regla de calidad del código *DontImplementOrExtendProviderTypesPomCheck* puede producir a veces una excepción de puntero nulo.
 * Algunos vínculos de documentación de la página de información general no funcionaban correctamente.
 * El cuadro de diálogo Crear Entorno no se mostraba correctamente en Safari.
 * Algunas tarjetas de la página de información general no mostraban correctamente los nombres de entidades.

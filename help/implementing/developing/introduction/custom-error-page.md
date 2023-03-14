@@ -1,6 +1,6 @@
 ---
 title: Páginas de error personalizadas
-description: AEM incluye un controlador de error estándar para gestionar errores HTTP, que se puede personalizar.
+description: AEM viene con un controlador de error estándar para administrar errores HTTP, que se puede personalizar.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
 workflow-type: tm+mt
@@ -11,25 +11,25 @@ ht-degree: 2%
 
 # Personalización de páginas de error {#customizing-error-pages}
 
-AEM incluye un controlador de error estándar para gestionar errores HTTP; por ejemplo, mostrando:
+AEM viene con un controlador de error estándar para la administración de errores HTTP; por ejemplo, mostrando:
 
 ![Mensaje de error estándar](assets/error-message-standard.png)
 
-Para responder a errores, AEM proporciona un `404.jsp` script bajo `/libs/sling/servlet/errorhandler`.
+AEM Para responder a los errores, proporciona un valor de tipo `404.jsp` script en `/libs/sling/servlet/errorhandler`.
 
 >[!TIP]
 >
->Como AEM se basa en Apache Sling, hay más información disponible [en la documentación de gestión de errores de Apache.](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)
+>AEM Debido a que se basa en Apache Sling, hay disponible más información [en la documentación de gestión de errores de Apache.](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)
 
 >[!NOTE]
 >
->En una instancia de autor, [Filtro de depuración de CQ WCM](/help/implementing/deploying/configuring-osgi.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento completo de la pila en la respuesta.
+>En una instancia de autor, [Filtro de depuración de CQ WCM](/help/implementing/deploying/configuring-osgi.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
 >
->En una instancia de publicación, el filtro de depuración de CQ WCM es **always** deshabilitado (incluso si está configurado como habilitado).
+>En una instancia de publicación, el filtro de depuración de CQ WCM es **siempre** desactivado (incluso si está configurado como activado).
 
-## Cómo personalizar páginas mostradas por el controlador de errores {#how-to-customize-pages-shown-by-the-error-handler}
+## Personalizar páginas mostradas por el controlador de error {#how-to-customize-pages-shown-by-the-error-handler}
 
-Puede desarrollar sus propias secuencias de comandos para personalizar las páginas que muestra el controlador de errores cuando se encuentra un error. Para ello, aprovechará [AEM mecanismo de superposición estándar](/help/implementing/developing/introduction/overlays.md) para que las páginas personalizadas se creen en `/apps` y superponga las páginas predeterminadas que se encuentran en `/libs`.
+Puede desarrollar sus propias secuencias de comandos para personalizar las páginas que muestra el controlador de errores cuando se produce un error. Para ello, aprovechará lo siguiente [AEM mecanismo de superposición estándar de la](/help/implementing/developing/introduction/overlays.md) para que las páginas personalizadas se creen en `/apps` y superponer las páginas predeterminadas que se encuentran en `/libs`.
 
 1. En el repositorio, copie los scripts predeterminados:
 
@@ -38,45 +38,45 @@ Puede desarrollar sus propias secuencias de comandos para personalizar las pági
 
    La ruta de destino no existe de forma predeterminada, por lo que deberá crearla al hacerlo por primera vez.
 
-1. Vaya a `/apps/sling/servlet/errorhandler`. Aquí puede:
+1. Navegue hasta `/apps/sling/servlet/errorhandler`. Aquí puede hacer lo siguiente:
 
    * edite la secuencia de comandos existente adecuada para proporcionar la información necesaria. O bien
-   * cree y edite una nueva secuencia de comandos para el código requerido.
+   * cree y edite un nuevo script para el código requerido.
 
 1. Guarde los cambios y pruebe.
 
 >[!CAUTION]
 >
->La variable `404.jsp` el script se ha diseñado específicamente para adaptarse a AEM autenticación; en particular, permitir el inicio de sesión en el sistema en caso de estos errores.
+>El `404.jsp` AEM La secuencia de comandos se ha diseñado específicamente para permitir la autenticación de los usuarios; en particular, para permitir el inicio de sesión en el sistema en caso de errores.
 >
->Por lo tanto, el reemplazo de esta secuencia de comandos debe realizarse con bueno cuidado.
+>Por lo tanto, la sustitución de esta secuencia de comandos debe realizarse con bueno cuidado.
 
-### Personalización de la respuesta a errores HTTP 500 {#customizing-the-response-to-http-errors}
+### Personalización de la Respuesta a Errores HTTP 500 {#customizing-the-response-to-http-errors}
 
-El HTTP [500 Error interno del servidor](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) indica un error del lado del servidor, como que el servidor encuentra una condición inesperada que le impidió cumplir la solicitud.
+El HTTP [500 Error interno del servidor](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) indica un error del lado del servidor como que el servidor encontró una condición inesperada que le impidió cumplir la solicitud.
 
-Cuando el procesamiento de la solicitud resulta en una excepción, el marco Apache Sling (que AEM está activado):
+AEM Cuando el procesamiento de solicitudes resulta en una excepción, el marco de trabajo de Apache Sling (en el que se basa el procesamiento de la):
 
 * Registra la excepción
-* Y vuelve al cuerpo de la respuesta:
+* Y vuelve en el cuerpo de la respuesta:
    * El código de respuesta HTTP 500
-   * Seguimiento de pila de excepciones
+   * El seguimiento de pila de excepciones
 
-Por [personalización de las páginas que muestra el controlador de errores](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` se puede crear una secuencia de comandos. Sin embargo, solo se usa si `HttpServletResponse.sendError(500)` se ejecuta explícitamente; es decir, desde un captador de excepciones.
+Por [personalización de las páginas mostradas por el controlador de error](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` se puede crear el script. Sin embargo, solo se utiliza si `HttpServletResponse.sendError(500)` se ejecuta explícitamente; es decir, desde un receptor de excepciones.
 
-De lo contrario, el código de respuesta se establece en 500, pero la variable `500.jsp` no se ejecuta la secuencia de comandos.
+De lo contrario, el código de respuesta se establece en 500, pero la variable `500.jsp` no se ejecuta el script.
 
-Para gestionar 500 errores, el nombre de archivo de la secuencia de comandos del controlador de errores debe ser el mismo que la clase de excepción (o superclase). Para gestionar todas estas excepciones, puede crear una secuencia de comandos `/apps/sling/servlet/errorhandler/Throwable.jsp` o `/apps/sling/servlet/errorhandler/Exception.jsp`.
+Para controlar 500 errores, el nombre de archivo de la secuencia de comandos del controlador de errores debe ser el mismo que la clase de excepción (o superclase). Para gestionar todas estas excepciones, puede crear un script `/apps/sling/servlet/errorhandler/Throwable.jsp` o `/apps/sling/servlet/errorhandler/Exception.jsp`.
 
 >[!NOTE]
 >
->En AEM como Cloud Service, la CDN proporciona una página de error genérica cuando se recibe un error 5XX del servidor. Para permitir que pase la respuesta real del servidor, debe añadir el siguiente encabezado a la respuesta: `x-aem-error-pass: true`.
->Esto solo funciona para respuestas procedentes de AEM o de la capa de Apache/Dispatcher. Otros errores inesperados procedentes de capas de infraestructura intermedias seguirán mostrando la página de error genérico.
+>AEM En calidad de Cloud Service, la red de distribución de contenido (CDN) proporciona una página de error genérica cuando se recibe un error de 5XX desde el servidor. Para permitir que la respuesta real del backend pase, debe agregar el siguiente encabezado a la respuesta: `x-aem-error-pass: true`.
+>AEM Esto solo funciona para respuestas procedentes de la capa de o de Apache/Dispatcher. Otros errores inesperados procedentes de capas de infraestructura intermedias seguirán mostrando la página de error genérica.
 
 >[!CAUTION]
 >
->En una instancia de autor, [Filtro de depuración de CQ WCM](/help/implementing/deploying/configuring-osgi.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento completo de la pila en la respuesta.
+>En una instancia de autor, [Filtro de depuración de CQ WCM](/help/implementing/deploying/configuring-osgi.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
 >
->Para un controlador de error personalizado, se necesitan respuestas con el código 500, por lo que se requiere la variable [El filtro de depuración de CQ WCM debe deshabilitarse.](/help/implementing/deploying/configuring-osgi.md) Esto garantiza que se devuelva el código de respuesta 500, que a su vez déclencheur el gestor de errores de Sling correcto.
+>Para un controlador de error personalizado, se necesitan respuestas con código 500, por lo que la variable [El filtro de depuración de CQ WCM debe deshabilitarse.](/help/implementing/deploying/configuring-osgi.md) Esto garantiza que se devuelva el código de respuesta 500, lo que a su vez déclencheur el controlador de error de Sling correcto.
 >
->En una instancia de publicación, el filtro de depuración de CQ WCM es **always** deshabilitado (incluso si está configurado como habilitado).
+>En una instancia de publicación, el filtro de depuración de CQ WCM es **siempre** desactivado (incluso si está configurado como activado).

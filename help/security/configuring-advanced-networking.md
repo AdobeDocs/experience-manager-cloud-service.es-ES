@@ -3,7 +3,7 @@ title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 8ca2340bf6d39248ed3596828f27745dcaff2c75
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3053'
 ht-degree: 100%
 

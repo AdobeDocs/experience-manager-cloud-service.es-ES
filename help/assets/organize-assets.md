@@ -1,6 +1,6 @@
 ---
 title: Organizar sus recursos digitales
-description: Organice los recursos digitales, las imágenes, los archivos, las carpetas, etc. mediante el Experience Manager.
+description: Organice sus recursos digitales, imágenes, archivos, carpetas, etc. con Experience Manager.
 contentOwner: AG
 feature: Asset Management, Search
 role: User
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 # Organizar sus recursos digitales {#organize-digital-assets}
 
-Todos los recursos digitales, metadatos y contenido de los documentos de Microsoft® Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta por completo los permisos adecuados. Los metadatos se tratan en detalle en Metadatos de Digital Asset Management.
+Todos los recursos digitales, metadatos y contenido de los documentos de Microsoft® Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta completamente los permisos adecuados. Los metadatos se tratan en detalle en Metadatos en la administración de recursos digitales.
 
-[!DNL Experience Manager Assets] admite varias formas de organizar contenido. Puede organizarlos de forma jerárquica mediante carpetas o puede organizarlos de forma desordenada y ad-hoc, por ejemplo etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos DAM, donde se muestran subrecursos, representaciones y metadatos.
+[!DNL Experience Manager Assets] admite varias formas de organizar el contenido. Puede organizarlas de forma jerárquica utilizando carpetas o puede organizarlas de forma no ordenada y ad hoc, por ejemplo, etiquetas. Los usuarios pueden editar etiquetas en el editor de recursos DAM, donde se muestran subrecursos, representaciones y metadatos.
 
 <!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}
@@ -52,63 +52,63 @@ You can use folders or tags or both to organize assets. Adding tags to assets ma
 Date24/08/2021
 -->
 
-## Organizar recursos en carpetas {#organize-using-folders}
+## Organización de recursos en carpetas {#organize-using-folders}
 
-La forma más básica de organizar los recursos es guardarlos en carpetas. Es similar a organizar archivos en carpetas en su sistema de archivos local. Para obtener más información sobre cómo crear y administrar carpetas, consulte [Administrar recursos](manage-digital-assets.md). La forma en que se asignan nombres a archivos y carpetas, cómo se organizan las subcarpetas y cómo se gestionan los archivos dentro de estas carpetas puede tener un impacto significativo en la forma en que se procesan esos recursos. Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, junto con prácticas recomendadas en materia de metadatos, puede aprovechar al máximo su repositorio de recursos digitales.
+La forma más básica de organizar los recursos es guardarlos en carpetas. Es análogo a organizar archivos en carpetas en el sistema de archivos local. Para obtener más información sobre cómo crear y administrar carpetas, consulte [Administrar recursos](manage-digital-assets.md). El modo de asignar nombres a los archivos y carpetas, organizar las subcarpetas y administrar los archivos de estas carpetas puede tener un impacto significativo en el modo en que se procesan esos recursos. Si utiliza estrategias de nomenclatura de archivos y carpetas coherentes y adecuadas, junto con una buena práctica de metadatos, puede sacar el máximo partido a su repositorio de recursos digitales.
 
-* Normalmente, su repositorio de recursos digitales siempre está creciendo. Por lo tanto, es importante formalizar el uso de los metadatos, la estructura de carpetas y la nomenclatura de archivos al principio del ciclo de creación de contenido.
-* Utilice carpetas solo para imponer una estructura de almacenamiento coherente para sus recursos digitales. Esta coherencia le ayuda a procesar y administrar mejor sus recursos. Por ejemplo, los recursos colocados en los siguientes tipos de carpetas pueden ayudarle a separar los recursos:
+* Normalmente, el repositorio de recursos digitales siempre está creciendo. Por lo tanto, es importante formalizar el uso de metadatos, la estructura de carpetas y la nomenclatura de archivos al principio del ciclo de creación de contenido.
+* Utilice carpetas únicamente para imponer una estructura de almacenamiento coherente para los recursos digitales. Esta coherencia le ayuda a procesar y administrar mejor sus recursos. Por ejemplo, los recursos colocados en los siguientes tipos de carpetas pueden ayudarle a separar sus recursos:
 
-   * **Carpetas de desarrollo**: contiene recursos digitales en los que está trabajando.
-   * **Carpetas de cliente**: contiene recursos digitales basados en clientes o nombres de proyectos.
+   * **Carpetas de desarrollo**: contiene recursos digitales en los que está trabajando actualmente.
+   * **Carpetas de cliente**: contiene recursos digitales basados en nombres de clientes o proyectos.
    * **Carpetas principales**: contiene recursos digitales originales.
-   * **Carpetas de representación**: contiene representaciones y copias de los recursos digitales de origen originales.
+   * **Representación de carpetas**: contiene representaciones y copias de los recursos digitales de origen originales.
    * **Carpetas de tamaño de archivo**: contiene recursos digitales basados en tamaños de archivo pequeños, medianos o grandes.
-   * **Carpetas de ensayo**: contiene recursos digitales listos para publicarse en el sitio web.
+   * **Carpetas de ensayo**: contiene recursos digitales que están listos para publicarse en el sitio web.
    * **Carpetas de tipo MIME**: contiene recursos digitales específicos de tipos MIME, como imágenes, documentos y multimedia.
-   * **Archivar carpetas**: contiene activos digitales retirados.
-   * **Carpetas basadas en fechas**: contiene recursos digitales basados en una fecha de creación o una fecha de última modificación.
+   * **Archivar carpetas**: contiene recursos digitales retirados.
+   * **Carpetas basadas en fechas**: contiene recursos digitales basados en una fecha de creación o en una fecha de última modificación.
 
-* Cree un directorio de carpetas que no es probable que cambien para que cualquier personalización o automatización siga funcionando. Por ejemplo, los perfiles de procesamiento asignados siguen funcionando.
-* Si un recurso ya está publicado, utilice [!DNL Experience Manager] para mover el recurso a otra carpeta y volver a publicar desde su nueva ubicación. La ubicación del recurso publicado originalmente sigue estando disponible junto con el recurso recién republicado. Sin embargo, el recurso publicado originalmente es *perdido* a [!DNL Experience Manager] y no se pueden cancelar. Por lo tanto, se recomienda cancelar la publicación de un recurso y moverlo a una carpeta diferente.
+* Cree un directorio de carpetas que no tengan probabilidades de cambiar para que la personalización o automatización sigan funcionando. Por ejemplo, los perfiles de procesamiento asignados siguen funcionando.
+* Si un recurso ya se ha publicado, utilice [!DNL Experience Manager] para mover el recurso a otra carpeta y volver a publicar desde su nueva ubicación. La ubicación del recurso publicado original aún está disponible junto con el recurso publicado recientemente. Sin embargo, el recurso publicado original es *perdido* hasta [!DNL Experience Manager] y no se puede cancelar su publicación. Por lo tanto, como práctica recomendada, primero debe cancelar la publicación de un recurso y, a continuación, moverlo a una carpeta diferente.
 
 ## Organización de recursos mediante etiquetas {#use-tags-to-organize-assets}
 
-Añadir etiquetas a los recursos facilita su recuperación durante una búsqueda, crear colecciones utilizando los resultados de búsqueda, mejorar la clasificación de algunos recursos y aplicar algoritmos de IA de Adobe Sensei para la detección de recursos.
+Añadir etiquetas a los recursos facilita su recuperación durante la búsqueda, crear colecciones con los resultados de búsqueda, aumentar la clasificación de búsqueda de algunos recursos y aplicar algoritmos de IA de Adobe Sensei para la detección de recursos.
 
-[!DNL Adobe Experience Manager Assets] utiliza un algoritmo de autoaprendizaje para crear etiquetas altamente descriptivas que le permitan encontrar el recurso adecuado en tan solo unos clics. El etiquetado inteligente utiliza Adobe Sensei, inteligencia artificial y un marco de aprendizaje automático, que se puede entrenar para reconocer y aplicar etiquetas estándar y específicas del negocio a las imágenes. Las etiquetas inteligentes también pueden identificar contenido, palabras individuales o frases, y aplicar automáticamente etiquetas descriptivas a los recursos.
+[!DNL Adobe Experience Manager Assets] utiliza un algoritmo de autoaprendizaje para crear etiquetas altamente descriptivas que le permiten encontrar el recurso correcto en solo unos clics. El etiquetado inteligente utiliza Adobe Sensei, inteligencia artificial y un marco de trabajo de aprendizaje automático, que puede formarse para reconocer y aplicar etiquetas estándar y específicas de la empresa a las imágenes. Las etiquetas inteligentes también pueden identificar contenido, palabras o frases individuales y aplicar automáticamente etiquetas descriptivas a los recursos.
 
 A continuación se indican los pasos para agregar etiquetas a un recurso:
 
 1. Iniciar sesión en [!DNL Experience Manager Assets].
-1. Haga clic en **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]**, seleccione el recurso y haga clic en **[!UICONTROL Propiedades]** para abrir las propiedades del recurso.
-1. En el **[!UICONTROL Básico]** , haga clic en el icono de carpeta de **[!UICONTROL Etiquetas]** metadatos. Se abre una ventana emergente.
+1. Clic **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**, seleccione el recurso y haga clic en **[!UICONTROL Propiedades]** para abrir las propiedades del recurso.
+1. En el **[!UICONTROL Básico]** pestaña, haga clic en el icono de la carpeta en **[!UICONTROL Etiquetas]** metadatos. Se abre una ventana emergente.
 1. Busque o seleccione las etiquetas adecuadas de las etiquetas existentes en `cq-tags`. Puede asignar varias etiquetas al recurso.
 
-   Puede ordenar la estructura de las etiquetas de forma ascendente o descendente en función de la variable **[!UICONTROL Nombre]** (orden alfabético), **[!UICONTROL Creado]** fecha, o **[!UICONTROL Modificado]** fecha. En la siguiente ilustración, la estructura de etiquetas se ordena alfabéticamente en función de la variable **[!UICONTROL Nombre]**.
+   Puede ordenar la estructura de las etiquetas en orden de subida o de bajada, según el **[!UICONTROL Nombre]** (orden alfabético), **[!UICONTROL Creado]** fecha, o **[!UICONTROL Modificado]** fecha. En la siguiente ilustración, la estructura de etiquetas se ordena alfabéticamente en función de la variable **[!UICONTROL Nombre]**.
 
-   ![añadir etiquetas](assets/add-tags-to-asset.png)
+   ![add-tags](assets/add-tags-to-asset.png)
 
-1. Haga clic en **Guardar** para actualizar los cambios en los metadatos de los recursos.
+1. Clic **Guardar** para actualizar los cambios en los metadatos del recurso.
 
 Para obtener más información, consulte los siguientes artículos:
 
 * [Editar metadatos de recursos](meta-edit.md)
-* [Etiquetas inteligentes en recursos](smart-tags.md)
-* [Agregar etiquetas predicadas al panel de búsqueda](/help/assets/search-facets.md/#adding-a-tags-predicate)
+* [Etiquetas inteligentes en Assets](smart-tags.md)
+* [Añadir predicado de etiquetas al panel de búsqueda](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## Organizar como colecciones {#organize-as-collections}
 
-Con colecciones de recursos en [!DNL Experience Manager Assets], puede optimizar la capacidad de crear, editar y compartir recursos entre usuarios. Cree varios tipos de colecciones en función de la forma en que las utilice, incluidas las colecciones que contienen una lista de referencia estática de recursos, carpetas, colecciones y colecciones que extraen recursos en función de criterios de búsqueda. Puede crear colecciones con recursos de distintas ubicaciones y compartirlas con varios usuarios con distintos niveles de privilegios de acceso, visualización y edición.
+Con colecciones de recursos en [!DNL Experience Manager Assets], puede optimizar la capacidad de crear, editar y compartir recursos entre los usuarios. Cree varios tipos de colecciones en función de su uso, incluidas las que contienen una lista de referencia estática de recursos, carpetas y colecciones y las que extraen recursos en función de criterios de búsqueda. Puede crear colecciones con recursos de diferentes ubicaciones y compartirlas con varios usuarios con diferentes niveles de acceso, visualización y edición de privilegios.
 
 Para obtener más información, consulte [administrar colecciones](manage-collections.md)
 
 
-## Utilice perfiles para organizar los recursos {#organize-to-use-profiles}
+## Uso de perfiles para organizar los recursos {#organize-to-use-profiles}
 
-Un perfil de procesamiento contiene [!DNL Assets] comandos de procesamiento que se aplican a los recursos que se cargan en carpetas predefinidas. Los perfiles se utilizan para automatizar el procesamiento de los contenidos de una carpeta o de los recursos cargados recientemente. Puede utilizar perfiles para organizar mejor los recursos.
+Un perfil de procesamiento contiene [!DNL Assets] comandos de procesamiento que se aplican a los recursos que se cargan en carpetas predefinidas. Los perfiles se utilizan para automatizar el procesamiento del contenido de una carpeta o de los recursos recién cargados. Puede utilizar perfiles para organizar mejor los recursos.
 
-La estandarización del uso de metadatos, la asignación de nombres a archivos y la estructura de carpetas garantiza que, a medida que crezca el grupo de recursos digitales, podrá aplicar perfiles de procesamiento a las carpetas con buena precisión y coherencia.
+La estandarización del uso de metadatos, los nombres de archivo y la estructura de carpetas garantiza que, a medida que el grupo de recursos digitales crezca, pueda aplicar perfiles de procesamiento a las carpetas con la buena precisión y coherencia.
 
 >[!MORELIKETHIS]
 >

@@ -3,7 +3,7 @@ title: Traducir contenido sin encabezado
 description: Utilice el conector de traducción para traducir el contenido sin encabezado.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2177'
 ht-degree: 100%
 

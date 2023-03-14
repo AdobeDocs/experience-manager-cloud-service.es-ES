@@ -2,7 +2,7 @@
 title: Generar documento de registro para formularios adaptables
 description: Explica cómo se puede generar una plantilla para un documento de registro (DoR) para formularios adaptables.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
+source-git-commit: 3adbad13a9b60c3a89e681cdf97c9af3f195fe70
 workflow-type: tm+mt
 source-wordcount: '3109'
 ht-degree: 79%
@@ -13,7 +13,7 @@ ht-degree: 79%
 
 ## Información general {#overview}
 
-Cuando se rellena o se envía un formulario, se puede guardar un registro del formulario, en formato impreso o en formato de documento. Este registro se denomina Documento de registro (DoR). Se trata de una copia del formulario enviado que puede imprimirse. También puede remitir el documento de registro a la información que los clientes hayan rellenado en una fecha posterior o utilizar el documento de registro para archivar formularios y contenido en formato PDF.
+Cuando se rellena o se envía un formulario, se puede mantener un registro del formulario, impreso o en formato de documento. Este registro se denomina Documento de registro (DoR). Se trata de una copia del formulario enviado que puede imprimirse. También puede remitir el documento de registro a la información que los clientes hayan rellenado en una fecha posterior o utilizar el documento de registro para archivar formularios y contenido en formato PDF.
 
 ![Documento de registro](assets/document-of-record.png)
 
@@ -41,7 +41,7 @@ Cargue la plantilla XFA (archivo XDP) en la instancia de AEM Forms. Realice los 
 1. En la instancia de autor del Experience Manager, haga clic en **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos].**
 1. Seleccione un formulario o Crear un formulario adaptable y haga clic en **[!UICONTROL Propiedades]**.
 1. En la ventana Propiedades, pulse **[!UICONTROL Modelo de formulario]**.
-1. En el  **[!UICONTROL Modelo de formulario]** en la **[!UICONTROL Seleccionar de]** desplegable, seleccione **[!UICONTROL Modelo de datos de formulario]**, **[!UICONTROL Esquema]** o **[!UICONTROL Ninguna]**. También puede seleccionar un modelo de formulario al crear un formulario.
+1. En el  **[!UICONTROL Modelo de formulario]** , en la pestaña **[!UICONTROL Seleccionar de]** menú desplegable, seleccione **[!UICONTROL Modelo de datos de formulario]**, **[!UICONTROL Esquema]** o **[!UICONTROL Ninguno]**. También puede seleccionar un modelo de formulario al crear un formulario.
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Asociar plantilla de formulario como plantilla de documento de registro**. Al seleccionar esta opción, se muestran todas las plantillas XFA (archivos XDP) disponibles en el equipo. Seleccione el archivo apropiado. Además, asegúrese de que se utiliza el mismo esquema (esquema de datos) para el formulario adaptable y la plantilla XFA seleccionada (archivo XDP).
 1. Haga clic en **[!UICONTROL Listo.]**
 
@@ -52,17 +52,17 @@ El formulario adaptable ahora está configurado para utilizar un archivo XDP com
 Cargue el PDF de Adobe Acrobat (AcroForm) a su instancia de AEM Forms. Realice los siguientes pasos para configurar un formulario adaptable con el que utilizar un PDF de Adobe Acrobat (AcroForm) como plantilla para el documento de registro:
 
 1. En la instancia de autor del Experience Manager, haga clic en **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos].**
-1. Seleccione un formulario o **[!UICONTROL Crear un formulario adaptable]** y haga clic en **[!UICONTROL Propiedades]**.
+1. Seleccionar un formulario o **[!UICONTROL Creación de un formulario adaptable]** y haga clic en **[!UICONTROL Propiedades]**.
 1. En la ventana Propiedades, pulse **[!UICONTROL Modelo de formulario]**.
-1. En el  **[!UICONTROL Modelo de formulario]** en la **[!UICONTROL Seleccionar de]** desplegable, seleccione **[!UICONTROL Modelo de datos de formulario]**, **[!UICONTROL Esquema]** o **[!UICONTROL Ninguna]**. También puede seleccionar un modelo de formulario al crear un formulario.
-1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Asociar plantilla de formulario como plantilla de documento de registro**. Al seleccionar esta opción, se muestran todos los PDF de Acrobat (Acroform) disponibles en el equipo. Seleccione el formulario que desee utilizar.
+1. En el  **[!UICONTROL Modelo de formulario]** , en la pestaña **[!UICONTROL Seleccionar de]** menú desplegable, seleccione **[!UICONTROL Modelo de datos de formulario]**, **[!UICONTROL Esquema]** o **[!UICONTROL Ninguno]**. También puede seleccionar un modelo de formulario al crear un formulario.
+1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Asociar plantilla de formulario como plantilla de documento de registro**. Al seleccionar esta opción, se muestran todos los PDF de Acrobat (AcroForm) disponibles en el equipo. Seleccione el AcroForm que desee utilizar.
 1. Haga clic en **[!UICONTROL Listo.]**
 
 El formulario adaptable ahora está configurado para utilizar AcroForm como plantilla para el documento de registro. Los siguientes pasos son [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
 
 ## Generar automáticamente un documento de registro {#auto-generate-a-document-of-record}
 
-Cuando se configura un formulario adaptable para que genere automáticamente un documento de registro, cada vez que se cambia un formulario, su documento de registro se actualiza inmediatamente. Por ejemplo, si se quita un campo de un formulario adaptable existente, el campo correspondiente también se elimina y no es visible en el documento de registro. Hay muchas otras ventajas de generar automáticamente un documento de registro:
+Cuando se configura un formulario adaptable para que genere automáticamente un documento de registro, cada vez que se cambia un formulario, su documento de registro se actualiza inmediatamente. Por ejemplo, si se quita un campo de un formulario adaptable existente, el campo correspondiente también se elimina y no es visible en el documento de registro. Hay muchas otras ventajas de generar automáticamente el documento de registro:
 
 * Los desarrolladores de formularios no tienen que mantener enlaces de datos de forma manual. El documento de registro generado automáticamente se encarga de las actualizaciones relacionadas con los enlaces de datos.
 * Los desarrolladores de formularios no tienen que ocultar de forma manual los campos marcados como excluir del documento de registro. El documento de registro generado automáticamente está preconfigurado para excluir estos campos.
@@ -75,7 +75,7 @@ Siga estos pasos para configurar un formulario adaptable para generar automátic
 1. En la instancia de autor del Experience Manager, haga clic en **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos].**
 1. Seleccione un formulario o Crear un formulario adaptable y haga clic en **[!UICONTROL Propiedades]**.
 1. En la ventana Propiedades, pulse **[!UICONTROL Modelo de formulario]**.
-1. En el  **[!UICONTROL Modelo de formulario]** en la **[!UICONTROL Seleccionar de]** desplegable, seleccione **[!UICONTROL Modelo de datos de formulario]**, **[!UICONTROL Esquema]** o **[!UICONTROL Ninguna]**. También puede seleccionar un modelo de formulario al crear un formulario.
+1. En el  **[!UICONTROL Modelo de formulario]** , en la pestaña **[!UICONTROL Seleccionar de]** menú desplegable, seleccione **[!UICONTROL Modelo de datos de formulario]**, **[!UICONTROL Esquema]** o **[!UICONTROL Ninguno]**. También puede seleccionar un modelo de formulario al crear un formulario.
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Generar documento de registro**.
 1. Haga clic en **[!UICONTROL Listo.]**
 
@@ -98,7 +98,7 @@ Enlace los campos de formulario adaptable con campos de plantilla para mostrar l
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-Puede utilizar acciones de envío como &quot;Enviar correo electrónico&quot;, &quot;Invocar un flujo de trabajo de AEM&quot;, &quot;Invocar un flujo de automatización de energía&quot; y otras [Enviar acciones](configuring-submit-actions.md) para recibir un documento de registro.
+AEM Puede utilizar acciones de envío como &quot;Enviar correo electrónico&quot;, &quot;Invocar un flujo de trabajo de&quot;, &quot;Invocar un flujo de trabajo de Power Automate&quot; y otras [Acciones de envío](configuring-submit-actions.md) para recibir un documento de registro.
 ![Acciones de envío de imagen](/help/forms/assets/submit-actions-img.png)
 
 
@@ -113,7 +113,7 @@ Por ejemplo, una organización, *We.Retail*, tiene una plantilla de documento de
 
 ![Plantilla original](assets/we-retail-invoice.png)
 
-Después de usar la plantilla durante un tiempo, la organización decide cambiar el nombre del campo `invoice-number` a `bill-number` y captura la dirección de correo electrónico de los compradores. Un desarrollador actualiza el nombre del campo `invoice-number` y agrega un campo de correo electrónico a la plantilla. También crea una nueva versión de la plantilla llamada  *we-retail-Invoice-v2.pdf*.
+Después de usar la plantilla durante un tiempo, la organización decide cambiar el nombre del campo `invoice-number` a `bill-number` y captura la dirección de correo electrónico de los compradores. Un desarrollador actualiza el nombre del campo `invoice-number` y agrega un campo de correo electrónico a la plantilla. También crea una nueva versión de la plantilla llamada  *we-retail-invoice-v2.pdf*.
 
 ![Plantilla actualizada](assets/we-retail-new-invoice.png)
 
@@ -135,11 +135,11 @@ Ahora, cuando se envía el formulario adaptable, se genera un documento actualiz
 
 ## Consideraciones clave al trabajar con el documento de registro {#key-considerations-when-working-with-document-of-record}
 
-Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar en el Documento de registro para Adaptive Forms.
+Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar en el documento de registro para Forms adaptable.
 
 * Las plantillas de documento de registro no admiten texto enriquecido. Por lo tanto, cualquier texto enriquecido del formulario adaptable estático o de la información rellenada por el usuario final aparece como texto sin formato en el documento de registro.
 * Los fragmentos de documento de un formulario adaptable no aparecen en el documento de registro. Sin embargo, se admiten los fragmentos de formularios adaptables.
-* No se admite el enlace de contenido en el documento de registro generado para el formulario adaptable basado en esquema XML.
+* No se admite el enlace de contenido en el documento de registro generado para el formulario adaptable basado en el esquema XML.
 * La versión localizada del documento de registro se crea bajo demanda para una configuración regional cuando el usuario solicita la representación del documento de registro. La localización del documento de registro se produce junto con la localización del formulario adaptable. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
 <!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
@@ -266,15 +266,15 @@ Los componentes de las tablas de formularios adaptables, como el encabezado, el 
 
 ## Plantilla base de un documento de registro {#base-template-of-a-document-of-record}
 
-La plantilla base proporciona información de estilo y apariencia al documento de registro. Permite personalizar el aspecto predeterminado del documento de registro generado automáticamente. Por ejemplo, puede utilizar una plantilla base para agregar el logotipo de su empresa en el encabezado e información de copyright en el pie de página del Documento de registro.
+La plantilla base proporciona información de estilo y apariencia al documento de registro. Permite personalizar el aspecto predeterminado del documento de registro generado automáticamente. Por ejemplo, puede utilizar una plantilla base para agregar el logotipo de su empresa en el encabezado y la información de copyright en el pie de página del documento de registro.
 
-La página de formato de una plantilla base se utiliza como página de formato para la plantilla Documento de registro. La página maestra puede tener información como un encabezado de página, un pie de página y un número de página que puede aplicar al documento de registro. Puede aplicar dicha información al documento de registro utilizando la plantilla base para la generación automática del documento de registro. El uso de una plantilla base permite cambiar las propiedades predeterminadas de los campos.
+La página maestra de una plantilla base se utiliza como página maestra de la plantilla del documento de registro. La página maestra puede tener información como un encabezado de página, un pie de página y un número de página que puede aplicar al documento de registro. Puede aplicar dicha información al documento de registro mediante la plantilla base para la generación automática del documento de registro. El uso de una plantilla base permite cambiar las propiedades predeterminadas de los campos.
 
 Siga siempre las [convenciones de plantilla base](#base-template-conventions) al diseñarla.
 
 ## Convenciones de plantilla base {#base-template-conventions}
 
-Se utiliza una plantilla base para definir el encabezado, pie de página, estilo y aspecto de un documento de registro. El encabezado y pie de página pueden incluir información como el logotipo de la compañía y la información de copyright. La primera página de formato de la plantilla base se copia y se utiliza como página de formato del documento de registro, que contiene un encabezado, pie de página, número de página o cualquier otra información que deba aparecer en todas las páginas del documento de registro. Si utiliza una plantilla base que no se ajuste a las convenciones de plantilla base, la primera página de formato de la plantilla base seguirá utilizándose en la plantilla Documento de registro. Se recomienda encarecidamente que diseñe la plantilla base según sus convenciones y que la utilice para la generación automática del documento de registro.
+Se utiliza una plantilla base para definir el encabezado, el pie de página, el estilo y la apariencia de un documento de registro. El encabezado y pie de página pueden incluir información como el logotipo de la compañía y la información de copyright. La primera página maestra de la plantilla base se copia y se utiliza como página maestra del documento de registro, que contiene un encabezado, un pie de página, un número de página o cualquier otra información que deba aparecer en todas las páginas del documento. Si utiliza una plantilla base que no se ajusta a las convenciones de la plantilla base, la primera página maestra de la plantilla se seguirá utilizando en la plantilla del documento de registro. Se recomienda encarecidamente que diseñe la plantilla base según sus convenciones y que la utilice para la generación automática del documento de registro.
 
 **Convenciones de la página maestra**
 
@@ -307,7 +307,7 @@ Ahora puede utilizar el formulario guardado como plantilla base para un document
 
 **Modificación de la plantilla base**
 
-* No aplique ningún estilo sobre los campos de la plantilla base, por lo que es aconsejable quitar esos campos de la plantilla base para que todas las actualizaciones a la plantilla base se recojan automáticamente.
+* No aplique ningún estilo a los campos de la plantilla base, es aconsejable quitar esos campos de la plantilla para que todas las actualizaciones en esta se reflejen automáticamente.
 * Al modificar la plantilla base, no elimine, agregue ni modifique scripts.
 
 Siga estrictamente las convenciones e instrucciones mencionadas anteriormente para diseñar una plantilla base.
@@ -325,13 +325,13 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
    1. **Propiedades básicas**:
       * **Plantilla**: Si desea seleccionar una plantilla personalizada, busque y seleccione un XDP en su [!DNL AEM Forms] servidor. Si desea utilizar una plantilla que no esté disponible en su [!DNL AEM Forms] servidor, primero debe cargar el XDP en su [!DNL AEM Forms] servidor.
-      * **Color de énfasis**: El color en el que se representan las líneas del texto del encabezado y del separador en el PDF del documento de registro.
+      * **Realzar color**: Color en el que se representa el texto del encabezado y las líneas de separación en el PDF del documento de registro.
       * **Familia tipográfica**: la familia de fuentes de texto del Documento de registro en PDF.
 
-      * **Incluir objetos de formulario que no estén enlazados al modelo de datos**: La configuración de la propiedad incluye campos no enlazados del formulario adaptable basado en esquema del documento de registro.
+      * **Incluir objetos de formulario que no están enlazados al modelo de datos**: al establecer la propiedad se incluyen campos no enlazados del formulario adaptable basado en esquemas en el documento de registro.
       <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
-      * **Ocultar descripción de paneles**: Al establecer la propiedad se excluye la descripción del panel/tabla del documento de registro. Aplicable para paneles y tablas.
+      * **Ocultar descripción de paneles**: al establecer la propiedad, se excluye la descripción del panel o la tabla del documento de registro. Aplicable para paneles y tablas.
    1. **Propiedades del campo de formulario**:
       * **Mostrar solo los valores seleccionados para los componentes Casilla de verificación y Botón de radio**: al configurar esta propiedad solo se muestran los valores seleccionados de la casilla de verificación y el botón de radio en [!UICONTROL Documento de registro].
       * **Separador para varios valores**: puede elegir cualquier separador, como comas o saltos de línea, para mostrar varios valores.

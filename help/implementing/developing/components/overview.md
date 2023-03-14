@@ -3,7 +3,7 @@ title: Información general sobre componentes
 description: Los componentes son unidades modulares que implementan una funcionalidad específica para presentar el contenido en su sitio web
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 100%
 

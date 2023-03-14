@@ -28,7 +28,7 @@ En [!DNL AEM Forms], la lista de propiedades de metadatos asociadas a un recurso
 Los siguientes tipos de recursos son compatibles con [!DNL AEM Forms]:
 
 * Plantillas de formulario (formularios XFA)
-* PDF forms
+* Formularios PDF
 * Documento (PDF planos)
 * Formularios adaptables
 * Modelo de datos de formularios

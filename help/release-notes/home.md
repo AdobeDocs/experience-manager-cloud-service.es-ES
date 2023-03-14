@@ -2,7 +2,7 @@
 title: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 554912f0e08fdf699b16ab9bf0b12ee84e8a682b
+source-git-commit: 71a691a6fea3cd43545eaa01113823d54f7c70b1
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 95%
@@ -24,7 +24,7 @@ Con el modelo de liberación continua en [!DNL Adobe Experience Manager] as a Cl
 * [Las versiones de características se realizan con una frecuencia mensual predecible y se centran en nuevas funcionalidades e innovaciones de productos.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [Las versiones de mantenimiento se realizan con frecuencia y se centran en actualizaciones de seguridad, correcciones de errores y mejoras de rendimiento. ](/help/release-notes/maintenance/latest.md) Esto garantiza que [!DNL Adobe Experience Manager] as a Cloud Service siempre está actualizado con cualquier corrección crítica.
 
-Además de la velocidad de la innovación, [!DNL Adobe Experience Manager] as a Cloud Service también proporciona la flexibilidad para obtener una vista previa de las próximas funciones con un mes de anticipación antes de que las funciones se publiquen en producción. Esto le permite evaluar el impacto de una próxima versión en su organización probando las funciones en su propio entorno personalizado y entrenando/preparando a los usuarios internos con mucha anticipación. Si tiene un complemento AEM, como los formularios, puede asegurarse de que se actualice también seleccionando la solución en la [configuración del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+Además de la velocidad de la innovación, [!DNL Adobe Experience Manager] as a Cloud Service también proporciona la flexibilidad para obtener una vista previa de las próximas funciones con un mes de anticipación antes de que las funciones se publiquen en producción. Esto le permite evaluar el impacto de una próxima versión en su organización probando las funciones en su propio entorno personalizado y entrenando/preparando a los usuarios internos con mucha anticipación. AEM Si tiene un complemento de la lista de distribución, como formularios, puede asegurarse de que también se actualice seleccionando la solución en la [configuración del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 >[!NOTE]
 >

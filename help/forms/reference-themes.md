@@ -5,8 +5,8 @@ description: AEM Forms proporciona temas de formularios adaptables que puede obt
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: bca7d28ab6cd846df0c51a8bece17e11304129df
-workflow-type: ht
+source-git-commit: 50d4be07b9563fb5047e9b313ae604cd7633a0e2
+workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 100%
 

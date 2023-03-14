@@ -2,8 +2,8 @@
 title: Creación de contenido orientado mediante el modo de Orientación
 description: El modo de Orientación y el componente Target proporcionan herramientas para crear contenido para las experiencias
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
-workflow-type: ht
+source-git-commit: 41027653bffb064b3c313d6512b0314336f6c8dc
+workflow-type: tm+mt
 source-wordcount: '5414'
 ht-degree: 100%
 
@@ -495,7 +495,7 @@ Para definir la configuración si utiliza la orientación de AEM:
 1. Para especificar el momento en que la actividad finalizará, use el menú desplegable **Finalizar** para seleccionar uno de los valores siguientes:
 
    * **Al desactivar**: la actividad finaliza cuando la página que contiene el contenido orientado se desactiva.
-   * **Fecha y hora especificadas**: una hora específica. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
+   * **Fecha y hora especificadas**: una hora determinada. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
 
 1. Para especificar una prioridad de la actividad, utilice el regulador para seleccionar **Baja**, **Normal** o **Alta**.
 
@@ -511,7 +511,7 @@ Para configurar los objetivos y las configuraciones si utiliza Adobe Target:
 1. Para especificar el momento en que la actividad finalizará, use el menú desplegable **Finalizar** para seleccionar uno de los valores siguientes:
 
    * **Al desactivar**: la actividad finaliza cuando la página que contiene el contenido orientado se desactiva.
-   * **Fecha y hora especificadas**: una hora específica. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
+   * **Fecha y hora especificadas**: una hora determinada. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
 
 1. Para especificar una prioridad de la actividad, utilice el regulador para seleccionar cualquier valor: **Baja**, **Normal** o **Alta**.
 1. Si ha configurado Adobe Analytics con su cuenta de Adobe Target, verá el menú desplegable **Fuente de informes**. Seleccione **Adobe Target** o **Adobe Analytics** como fuente.

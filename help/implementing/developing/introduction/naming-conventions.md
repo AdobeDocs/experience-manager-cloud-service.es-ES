@@ -11,19 +11,19 @@ ht-degree: 17%
 
 # Convenciones de nomenclatura{#naming-conventions}
 
-Los nodos del repositorio están sujetos a las convenciones de nomenclatura del Repositorio de contenidos de Java. Sin embargo, AEM impone otras convenciones para el nombre de los nodos de página.
+Los nodos del repositorio están sujetos a las convenciones de nomenclatura del Repositorio de contenidos de Java. AEM Sin embargo, impone otras convenciones para el nombre de los nodos de la página.
 
-## Convenciones de nomenclatura de páginas {#naming-conventions-for-pages}
+## Convenciones de nomenclatura para páginas {#naming-conventions-for-pages}
 
 Estas convenciones de nomenclatura se implementan en varios niveles:
 
-* JcrUtil: la AEM aplicación de la [utilidades JCR](#jcr-utilities).
+* AEM JcrUtil: la implementación de la aplicación de la aplicación de la aplicación de la [Utilidades JCR](#jcr-utilities).
 * PageManager: el [Administrador de páginas](#page-manager) proporciona métodos para operaciones a nivel de página.
-* Dentro de la interfaz de usuario de AEM {#ui-behavior}
+* AEM Dentro de la IU de {#ui-behavior}
 
-### Utilidades de JCR {#jcr-utilities}
+### Utilidades JCR {#jcr-utilities}
 
-[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) es la implementación AEM de las utilidades JCR. De particular interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) AEM es la implementación de la implementación de la implementación de JCR. De especial interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
 
 * `isValidName`
    * Comprueba si el nombre no está vacío y contiene solo caracteres válidos.
@@ -34,12 +34,12 @@ Estas convenciones de nomenclatura se implementan en varios niveles:
 
 ### Administrador de páginas {#page-manager}
 
-[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) proporciona métodos para las operaciones de nivel de página, basados en [JCRUtil](#jcr-utilities).
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) proporciona métodos para operaciones a nivel de página, basados en [JCRUtil](#jcr-utilities).
 
-### Comportamiento de la interfaz de usuario de AEM {#ui-behavior}
+### AEM Comportamiento de interfaz de usuario {#ui-behavior}
 
-Al administrar contenido, la interfaz de usuario de AEM:
+AEM Al administrar el contenido, la interfaz de usuario de:
 
 * Valida el nombre según las restricciones impuestas por PageManager cuando:
-   * se proporciona un título de página para su conversión en el nombre del nodo
+   * se proporciona un título de página para la conversión en el nombre del nodo
    * se proporciona un nombre de nodo explícito

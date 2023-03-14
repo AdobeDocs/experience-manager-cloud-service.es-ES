@@ -2,7 +2,7 @@
 title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencia Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 98%
@@ -42,7 +42,7 @@ Los autores quieren utilizar AEM solo para la creación, pero no para la entre
 >[!NOTE]
 >
 >Los **[fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** y los **fragmentos de experiencias** son funciones distintas de AEM:
->* **Fragmentos de contenido** son contenido editorial, con definición y estructura, pero sin diseño visual y/o diseño adicional. Se pueden utilizar para acceder a datos estructurados, como textos, números y fechas, entre otros.
+>* **Fragmentos de contenido** son contenido editorial, con definición y estructura, pero sin diseño visual o adicional. Pueden utilizarse para acceder a datos estructurados, incluidos textos, números y fechas, entre otros.
 >* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.

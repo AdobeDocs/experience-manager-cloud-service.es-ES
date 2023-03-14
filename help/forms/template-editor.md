@@ -2,7 +2,7 @@
 title: ¿Cómo se crea una plantilla de formulario adaptable?
 description: Cree plantillas de formularios adaptables para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
+source-git-commit: c101ed97388b06dc71edfc9e13fac8a3e889c249
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 87%
@@ -48,9 +48,8 @@ Contiene las siguientes opciones:
 
    * **Alternar panel lateral**: Permite mostrar u ocultar la barra lateral.
    * **Información de la página**: Permite especificar información, como la hora de publicación/cancelación de la publicación, las miniaturas, las bibliotecas del lado del cliente, la directiva de página y la biblioteca de diseños de páginas del lado del cliente.
-
-   <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Selector de modo:** Permite cambiar el modo.Puede elegir **[!UICONTROL Estructura]** modo, **[!UICONTROL Contenido inicial]**, **[!UICONTROL Control de diseño]** en el menú contextual. El modo Estructura permite agregar y personalizar el encabezado y el pie de página. El modo de Contenido inicial permite personalizar el contenido del formulario.
+      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
+   * **Selector de modo:** Permite cambiar el modo. Puede elegir **[!UICONTROL Estructura]** modo, **[!UICONTROL Contenido inicial]**, **[!UICONTROL Control de diseño]** modo. El modo Estructura permite agregar y personalizar el encabezado y el pie de página. El modo de Contenido inicial permite personalizar el contenido del formulario.
    * **Vista previa:** Permite obtener una vista previa del aspecto de la plantilla al publicarla. Puede utilizar el Selector de capa y la Vista previa para alternar los modos de edición y vista previa.
 * **Barra lateral:** Proporciona los exploradores de Contenido, Propiedades, Recursos y Componentes.
 * **Barra de herramientas de componentes:** Al seleccionar un componente, aparecerá una barra de herramientas que le permite personalizarlo.
@@ -150,7 +149,7 @@ Cuando cree un formulario adaptable, podrá ver la plantilla en la lista cuando 
 
 ## Importar o exportar una plantilla {#importing-or-exporting-a-template}
 
-Un formulario funciona con su plantilla. Cuando se descarga un formulario adaptable creado con una plantilla personalizada, la plantilla no se descarga. Al importar el formulario en un [!DNL AEM Forms] por ejemplo, se importa sin su plantilla. Si se importa un formulario pero su plantilla no está disponible, el formulario no se procesará. Puede empaquetar la plantilla personalizada desde el nodo `/conf` en `https://<server>:<port>/crx/packmgr`y portarlo en la instancia [!DNL AEM Forms] en la que desea cargar el formulario. También puede [Crear una plantilla con AEM Archetype e implementarla en su instancia de Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=es#prerequisites).
+Un formulario funciona con su plantilla. Cuando se descarga un formulario adaptable creado con una plantilla personalizada, la plantilla no se descarga. Al importar el formulario en una ubicación diferente [!DNL AEM Forms] Por ejemplo, se importa sin su plantilla. Si se importa un formulario pero su plantilla no está disponible, el formulario no se procesará. Puede empaquetar la plantilla personalizada desde el nodo `/conf` en `https://<server>:<port>/crx/packmgr`y portarlo en la instancia [!DNL AEM Forms] en la que desea cargar el formulario. También puede [Crear una plantilla con AEM Archetype e implementarla en su instancia de Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=es#prerequisites).
 
 >[!NOTE]
 >
@@ -158,14 +157,14 @@ Un formulario funciona con su plantilla. Cuando se descarga un formulario adapta
 
 
 
-## Asociación de un esquema del modelo de datos de formulario a una plantilla {#associating-form-data-model-schema-in-template}
+## Asociar un esquema del modelo de datos de formulario a una plantilla {#associating-form-data-model-schema-in-template}
 
-Los autores pueden asociar un [!UICONTROL Esquema del modelo de datos de formulario] a una plantilla de formulario adaptable en el editor de plantillas. Permite a los autores seleccionar un esquema del editor de plantillas. Cuando se asocia un esquema a una plantilla y el autor de un formulario crea un formulario basado en la plantilla, el esquema se preselecciona para el formulario. Ayuda a los autores de formularios a regular el uso del esquema y también ahorra tiempo para el autor de formularios. Para seleccionar un esquema del modelo de datos de formulario en el editor de plantillas:
+Los autores pueden asociar una [!UICONTROL Esquema del modelo de datos de formulario] a una plantilla de formulario adaptable en el editor de plantillas. Permite a los autores seleccionar un esquema del editor de plantillas. Cuando asocia un esquema a una plantilla y un autor de formularios crea un formulario basado en la plantilla, el esquema se preselecciona para el formulario. Ayuda a los autores de formularios a regular el uso del esquema y a ahorrar tiempo también para los autores de formularios. Para seleccionar un esquema del modelo de datos de formulario en el editor de plantillas:
 
-1. Toque **[!UICONTROL Navegador de contenido]** situado en el lado izquierdo.
-1. Vaya al contenedor de formulario **[!UICONTROL Configuración]**.
-1. Select **[!UICONTROL Modelo de datos]**.
-1. Elija el modelo de datos de formulario mediante **[!UICONTROL Seleccionar modelo de datos de formulario]** y guarde la configuración.
+1. Tocar **[!UICONTROL Explorador de contenido]** situado en el lado izquierdo.
+1. Vaya al contenedor del formulario **[!UICONTROL Configuración]**.
+1. Seleccionar **[!UICONTROL Modelo de datos]**.
+1. Elija su modelo de datos de formulario mediante **[!UICONTROL Seleccionar modelo de datos de formulario]** y guarde la configuración.
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
 
@@ -198,11 +197,11 @@ Perform the following steps to show and hide templates:
 
 ## Guardar un formulario adaptable como plantilla {#saving-adaptive-form-as-template}
 
-También puede guardar un formulario adaptable como plantilla para su uso futuro. Para guardar un formulario adaptable como plantilla:
+También puede guardar un formulario adaptable como plantilla para uso futuro. Para guardar un formulario adaptable como plantilla:
 
 1. Seleccione un formulario adaptable para guardarlo como plantilla.
-1. Haga clic en **[!UICONTROL Guardar como plantilla]**. Aparecerá un cuadro de diálogo.
-1. Especifique **[!UICONTROL Título]** (campo obligatorio), **[!UICONTROL Ubicación]** (campo obligatorio) y **[!UICONTROL Descripción]** (campo opcional) para la plantilla.
+1. Clic **[!UICONTROL Guardar como plantilla]**. Aparecerá un cuadro de diálogo.
+1. Especificar **[!UICONTROL Título]** (campo obligatorio), **[!UICONTROL Ubicación]** (campo obligatorio) y **[!UICONTROL Descripción]** (campo opcional) para la plantilla.
 1. Haga clic en **[!UICONTROL Crear]**.
 
    ![Guardar como formulario como plantilla](/help/forms/assets/saveformastemplate.png)
@@ -211,7 +210,7 @@ También puede guardar un formulario adaptable como plantilla para su uso futuro
 
 >[!NOTE]
 >
->Para utilizar la misma directiva de contenedor que el formulario adaptable de origen, se recomienda guardar la plantilla en la misma carpeta que el formulario adaptable de origen. En caso de que la plantilla se guarde en cualquier otra carpeta, la plantilla creada utiliza una directiva de contenedor predeterminada.
+>Para utilizar la misma directiva de contenedor que el formulario adaptable de origen, se recomienda guardar la plantilla en la misma carpeta que el formulario adaptable de origen. En caso afirmativo, la plantilla se guardará en cualquier otra carpeta distinta a la plantilla creada y utilizará una directiva de contenedor predeterminada.
 
 ## Recomendaciones {#recommendations}
 

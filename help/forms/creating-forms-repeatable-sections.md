@@ -42,7 +42,7 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
       Seleccione **Editor visual** en la fila Objetos y funciones de formularios.
 
-      1. En el área de regla, en CUÁNDO, **se hace clic** en seleccionar estado.
+      1. En el área de regla, en CUANDO, **se hace clic** en seleccionar estado.
       1. En ENTONCES:
 
          * Para crear un botón de añadir panel, seleccione **Añadir instancia** y arrastre el panel utilizando el ![panel lateral de alternancia](assets/toggle-side-panel.png) o selecciónelo utilizando **Colocar objeto o seleccionar aquí.**
@@ -57,7 +57,7 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
       >[!NOTE]
       >
-      >Si un campo pertenece a un panel repetible, no puede acceder a él directamente utilizando su nombre en los scripts. Para acceder al campo, especifique la instancia repetible a la que pertenece el campo utilizando el API de `instances` en `InstanceManager`. La sintaxis para usar el API de `instances` en `InstanceManager` es la siguiente:
+      >Si un campo pertenece a un panel repetible, no puede acceder a él directamente utilizando su nombre en los scripts. Para acceder al campo, especifique la instancia repetible a la que pertenece el campo utilizando la API de `instances` en `InstanceManager`. La sintaxis para usar el API de `instances` en `InstanceManager` es la siguiente:
       >
       >
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
@@ -87,7 +87,7 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
       >`Panel1.instanceManager.instances[1].textbox.value`
       >
       >
-      >Para obtener más información, consulte: Clase: InstanceManager#instances en [Referencia del API de Java de AEM Forms](https://adobe.com/go/learn_aemforms_documentation_63).
+      >Para obtener más información, consulte: Clase: InstanceManager#instances en [Referencia del API de Java de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
       >[!NOTE]
       >

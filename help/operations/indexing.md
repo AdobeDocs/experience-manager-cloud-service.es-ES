@@ -49,7 +49,7 @@ Una definición de índice puede ser la siguiente:
 
 1. Un índice predeterminado. Un ejemplo es `/oak:index/cqPageLucene-2`.
 1. Una personalización de un índice predeterminado. El cliente define estas personalizaciones. Un ejemplo es `/oak:index/cqPageLucene-2-custom-1`.
-1. Un índice totalmente personalizado. Un ejemplo es `/oak:index/acme.product-1-custom-2`. Para evitar conflictos de nombres, es necesario que los índices totalmente personalizados tengan un prefijo, por ejemplo `acme.`
+1. Un índice totalmente personalizado. Un ejemplo es `/oak:index/acme.product-1-custom-2`. Para evitar conflictos de nombres, es necesario que los índices totalmente personalizados tengan un prefijo, por ejemplo, `acme.`
 
 Tenga en cuenta que tanto la personalización de un índice predeterminado como los índices totalmente personalizados deben contener `-custom-`. Solo los índices totalmente personalizados deben comenzar con un prefijo.
 
@@ -83,7 +83,7 @@ Las definiciones de índice están marcadas como personalizadas y con versiones:
 
 * La definición del índice en sí (por ejemplo `/oak:index/ntBaseLucene-custom-1`)
 
-Para implementar un índice personalizado, la definición del índice (`/oak:index/definitionname`) debe entregarse mediante `ui.apps` mediante Git y el proceso de implementación de Cloud Manager. En el filtro FileVault, por ejemplo, `ui.apps/src/main/content/META-INF/vault/filter.xml`, enumere cada índice personalizado y personalizado individualmente, por ejemplo, `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definición de índice personalizada se almacenará en el archivo `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, como se indica a continuación:
+Para implementar un índice personalizado, la definición del índice (`/oak:index/definitionname`) debe entregarse mediante `ui.apps` mediante Git y el proceso de implementación de Cloud Manager. En el filtro FileVault, por ejemplo, `ui.apps/src/main/content/META-INF/vault/filter.xml`, enumere cada índice personalizado individualmente, por ejemplo `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definición de índice personalizada se almacenará en el archivo `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, como se indica a continuación:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -150,7 +150,7 @@ Una vez añadida la nueva definición de índice, la nueva aplicación debe impl
 En caso de que observe el siguiente error en la validación de filevault <br>
 `[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
 A continuación, se puede seguir cualquiera de los siguientes pasos para solucionar el problema: <br>
-1. Descargue filevault a la versión 1.0.4 y añada lo siguiente al pom de nivel superior :
+1. Actualice filevault a la versión 1.0.4 y añada lo siguiente al pom de nivel superior:
 
 ```xml
 <allowIndexDefinitions>true</allowIndexDefinitions>
@@ -178,7 +178,7 @@ A continuación se muestra un ejemplo de dónde colocar la configuración anteri
 </plugin>
 ```
 
-1. Deshabilite la validación de tipo de nodo. Establezca la siguiente propiedad en la sección jackrabbit-nodetypes de la configuración del complemento filevault:
+1. Deshabilite la validación del tipo de nodo. Establezca la siguiente propiedad en la sección jackrabbit-nodetypes de la configuración del complemento filevault:
 
 ```xml
 <isDisabled>true</isDisabled>
@@ -272,11 +272,11 @@ Una vez que Adobe cambia un índice predeterminado como “damAssetLucene” o �
 
 ### Limitaciones actuales {#current-limitations}
 
-Actualmente, la administración de índices solo es compatible con índices del tipo `lucene`, con `compatVersion` configure como `2`. Internamente, se pueden configurar otros índices y utilizar para consultas, por ejemplo índices de Elasticsearch. Consultas que se escriben en relación con la variable `damAssetLucene` índice, en AEM as a Cloud Service, en realidad se puede ejecutar contra una versión Elasticsearch de este índice. Esta diferencia es invisible para el usuario final de la aplicación, aunque ciertas herramientas como la variable `explain` reportará un índice diferente. Para ver las diferencias entre los índices de Lucene y Elasticsearch, consulte [la documentación del Elasticsearch en Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Los clientes no pueden ni necesitan configurar los índices de Elasticsearch directamente.
+Actualmente, la administración de índices solo es compatible con índices del tipo `lucene`, con `compatVersion` establezca en `2`. Internamente, se pueden configurar otros índices y utilizarse para consultas, por ejemplo índices de Elasticsearch. Consultas que se escriben en relación con `damAssetLucene` AEM index podría, en el caso de que esté as a Cloud Service, ejecutarse con una versión de Elasticsearch de este índice. Esta diferencia es invisible para el usuario final de la aplicación, aunque algunas herramientas, como la `explain` reportará un índice diferente. Para ver las diferencias entre los índices de Lucene y Elasticsearch, consulte [la documentación del Elasticsearch en Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Los clientes no pueden y no necesitan configurar índices de Elasticsearch directamente.
 
 Solo se admiten analizadores integrados (es decir, aquellos que se envían con el producto). No se admiten analizadores personalizados.
 
-Para obtener el mejor rendimiento operativo, los índices no deben ser excesivamente grandes. El tamaño total de todos los índices puede utilizarse como guía: Si esto aumenta en más del 100 % después de agregar índices personalizados y de ajustar índices estándar en un entorno de desarrollo, se deben ajustar las definiciones de índice personalizadas. AEM as a Cloud Service puede impedir la implementación de índices que afectarían negativamente a la estabilidad y el rendimiento del sistema.
+Para obtener el mejor rendimiento operativo, los índices no deben ser excesivamente grandes. El tamaño total de todos los índices puede utilizarse como guía: Si esto aumenta en más del 100 % después de agregar índices personalizados y de ajustar índices estándar en un entorno de desarrollo, se deben ajustar definiciones de índices personalizadas. AEM Los as a Cloud Service pueden evitar la implementación de índices que afectarían negativamente a la estabilidad y el rendimiento del sistema.
 
 ### Adición de un índice {#adding-an-index}
 
@@ -341,4 +341,4 @@ Si ya no es necesario tener una personalización de un índice predeterminado, d
 
 Apache Jackrabbit Oak permite configuraciones de índice flexibles para gestionar de forma eficiente las consultas de búsqueda. Los índices son especialmente importantes para repositorios más grandes. Asegúrese de que todas las consultas estén respaldadas por un índice adecuado. Las consultas sin un índice adecuado pueden leer miles de nodos, que luego se registran como advertencia.
 
-Consulte [este documento](query-and-indexing-best-practices.md) para obtener información sobre cómo se pueden optimizar las consultas y los índices.
+Consulte lo siguiente [este documento](query-and-indexing-best-practices.md) para obtener información sobre cómo se pueden optimizar las consultas y los índices.

@@ -3,7 +3,7 @@ title: Publicar contenido traducido sin encabezado
 description: Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 100%
 
@@ -92,7 +92,7 @@ Sin embargo, como ya se mencionó, el proceso difiere un poco si elige crear el 
 
 ### Actualización de un proyecto de traducción creado automáticamente {#updating-automatic-project}
 
-1. Vaya a **Navegación** -> **Activos** -> **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
+1. Vaya a **Navegación** -> **Recursos** -> **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
 1. Seleccione la raíz de idioma del proyecto. En este caso, se ha seleccionado `/content/dam/wknd/en`.
 1. Toque o haga clic en el selector de carril y muestre el panel **Referencias**.
 1. Toque o haga clic en **Copias de idioma**.

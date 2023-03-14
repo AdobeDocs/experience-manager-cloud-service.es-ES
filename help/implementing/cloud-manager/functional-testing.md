@@ -2,7 +2,7 @@
 title: Pruebas funcionales
 description: Obtenga información sobre los tres tipos diferentes de pruebas funcionales integradas en el proceso de implementación de AEM as a Cloud Service para garantizar la calidad y fiabilidad de su código.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 73a73f2f6c56386f3058d89e66b036e8f5e5a17b
+source-git-commit: 1e75a9a8ba4eff030d079d4b7adf7fc8588b8cc1
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 72%
@@ -45,27 +45,27 @@ Las pruebas funcionales del producto se mantienen como un proyecto de código ab
 
 Aunque la prueba funcional del producto está definida por Adobe, puede escribir sus propias pruebas de calidad para su propia aplicación. Esto se ejecutará como prueba funcional personalizada como parte de la canalización de producción para garantizar la calidad de la aplicación.
 
-Las pruebas funcionales personalizadas se ejecutan tanto para implementaciones de código personalizado como para actualizaciones de push, lo que hace especialmente importante escribir buenas pruebas funcionales que impidan que los cambios en el código de AEM rompan el código de la aplicación. El paso de prueba funcional personalizada siempre está presente y no se puede omitir.
+AEM Las pruebas funcionales personalizadas se ejecutan tanto para implementaciones de código personalizado como para actualizaciones push, lo que hace especialmente importante escribir buenas pruebas funcionales que eviten que los cambios en el código de la aplicación se rompan. El paso de prueba funcional personalizada siempre está presente y no se puede omitir.
 
 ### Prueba de IU personalizada {#custom-ui-testing}
 
-La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia selección de idiomas y marcos como Java y Maven, Node y WebDriver.io, o cualquier otro marco y tecnología creados en Selenium.
+La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo como Java y Maven, Node y WebDriver.io, o cualquier otro marco de trabajo y tecnología creados en Selenium.
 
 Consulte el documento [Pruebas de IU personalizadas](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) para obtener más información.
 
 ## Introducción a las pruebas funcionales {#getting-started-functional-tests}
 
-Tras la creación de un nuevo repositorio de código en Cloud Manager, una `it.tests` se crea automáticamente con casos de prueba de ejemplo.
+Al crear un nuevo repositorio de código en Cloud Manager, una `it.tests` La carpeta de se crea automáticamente con casos de prueba de ejemplo.
 
 >[!NOTE]
 >
->Si el repositorio se creó antes de que Cloud Manager se creara automáticamente `it.tests` carpetas, también puede generar la última versión utilizando [AEM tipo de archivo del proyecto.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Si el repositorio se creó antes de que Cloud Manager lo creara automáticamente `it.tests` carpetas, también puede generar la última versión utilizando la variable [AEM Arquetipo de proyecto de.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
-Una vez que tenga el contenido de la variable `it.tests` carpeta, puede utilizarla como base para sus propias pruebas y, a continuación:
+Una vez que tenga el contenido de `it.tests` , puede utilizarlo como base para sus propias pruebas y, a continuación:
 
 1. [Desarrolle sus casos de prueba.](#writing-functional-tests)
 1. [Ejecute las pruebas localmente.](#local-test-execution)
-1. Confirme el código en el repositorio de Cloud Manager y ejecute una canalización de Cloud Manager.
+1. Confirme su código en el repositorio de Cloud Manager y ejecute una canalización de Cloud Manager.
 
 ## Escribir pruebas funcionales personalizadas {#writing-functional-tests}
 
@@ -130,15 +130,15 @@ Consulte el [`aem-testing-clients` Repositorio de GitHub](https://github.com/ado
 
 ### Ejecución de pruebas locales {#local-test-execution}
 
-Antes de activar pruebas funcionales en una canalización de Cloud Manager, se recomienda ejecutar las pruebas funcionales localmente mediante el [SDK as a Cloud Service AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) o una instancia as a Cloud Service AEM real.
+Antes de activar pruebas funcionales en una canalización de Cloud Manager, se recomienda ejecutar las pruebas funcionales localmente mediante [AEM SDK as a Cloud Service de](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) AEM o una instancia as a Cloud Service real de la.
 
 #### Requisitos previos {#prerequisites}
 
-Las pruebas en Cloud Manager se ejecutarán mediante un usuario administrador técnico.
+Las pruebas en Cloud Manager se ejecutarán con un usuario administrador técnico.
 
 Para ejecutar las pruebas funcionales desde el equipo local, cree un usuario con permisos de tipo administrador para lograr el mismo comportamiento.
 
-#### Ejecución en un IDE {#running-in-an-ide}
+#### Ejecutar en un IDE {#running-in-an-ide}
 
 Como las clases de prueba son pruebas JUnit, se pueden ejecutar desde IDE de Java convencionales como Eclipse, IntelliJ y NetBeans. Dado que tanto las pruebas funcionales de producto como las pruebas funcionales personalizadas se basan en la misma tecnología, ambas se pueden ejecutar localmente al copiar las pruebas de producto en las pruebas personalizadas.
 
@@ -158,7 +158,7 @@ Las propiedades del sistema son las siguientes:
 
 #### Ejecución de todas las pruebas con Maven {#using-maven}
 
-1. Abra un shell y vaya a `it.tests` en el repositorio.
+1. Abra un elemento shell y vaya al `it.tests` en el repositorio.
 
 1. Ejecute el siguiente comando proporcionando los parámetros necesarios para iniciar las pruebas con Maven.
 

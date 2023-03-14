@@ -1,6 +1,6 @@
 ---
 title: Desarrollo de AEM Commerce para AEM as a Cloud Service
-description: Obtenga información sobre cómo generar un proyecto de AEM habilitado para el comercio mediante el tipo de archivo del proyecto de AEM. Obtenga información sobre cómo crear e implementar el proyecto en un entorno de desarrollo local mediante el SDK as a Cloud Service de AEM.
+description: AEM AEM Obtenga información sobre cómo generar un proyecto de habilitado para el comercio mediante el arquetipo de proyecto de. AEM Obtenga información sobre cómo crear e implementar el proyecto en un entorno de desarrollo local mediante el SDK as a Cloud Service de la aplicación de código de tiempo de ejecución (SDK) de.
 topics: Commerce, Development
 feature: Commerce Integration Framework
 version: Cloud Service
@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 65%
@@ -27,11 +27,11 @@ El desarrollo de proyectos de AEM Commerce basados en Commerce Integration Frame
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-Se recomienda contar con un entorno de desarrollo local para trabajar con proyectos CIF. El complemento CIF proporcionado para AEM as a Cloud Service también está disponible para el desarrollo local. Se puede descargar desde el [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html).
+Se recomienda contar con un entorno de desarrollo local para trabajar con proyectos CIF. AEM El complemento CIF previsto para el as a Cloud Service también está disponible para el desarrollo local. Se puede descargar desde el [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html).
 
 El complemento CIF se proporciona como un archivo de funciones Sling. El archivo zip disponible en el portal de distribución de software incluye dos archivos de archivo de funciones Sling, uno para el Autor de AEM y otro para las instancias de AEM Publish.
 
-**¿Es novato en el uso de AEM as a Cloud Service?** Consulte [una guía más detallada para configurar un entorno de desarrollo local mediante el SDK as a Cloud Service de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).
+**¿Es novato en el uso de AEM as a Cloud Service?** Desproteger [AEM una guía más detallada para configurar un entorno de desarrollo local con el SDK as a Cloud Service de la](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).
 
 ### Software requerido
 
@@ -46,7 +46,7 @@ Lo siguiente debe instalarse de manera local:
 
 ### Acceso al complemento CIF.
 
-El complemento CIF se puede descargar como archivo zip desde el [portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). El archivo zip contiene el complemento CIF como **Archivo de funciones Sling**, no es un paquete AEM. Tenga en cuenta que el acceso a los listados de SDK está limitado a aquellos con una licencia de AEM as a Cloud Service.
+El complemento CIF se puede descargar como archivo zip desde el [portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html). El archivo zip contiene el complemento CIF como **Archivo de funciones Sling** AEM No, no es un paquete de. Tenga en cuenta que el acceso a los listados de SDK está limitado a aquellos con una licencia de AEM as a Cloud Service.
 
 >[!TIP]
 >
@@ -68,7 +68,7 @@ Para el desarrollo del complemento CIF local mediante el uso del SDK de AEM as a
 
    El archivo zip del complemento CIF contiene dos `.far` archivos del archivo de funciones Sling. Asegúrese de utilizar el correcto para Autor de AEM o AEM Publish, según cómo vaya a ejecutar el SDK de AEM as a Cloud Service local.
 
-1. Cree una variable de entorno del sistema operativo local con el nombre `COMMERCE_ENDPOINT` manteniendo el extremo Adobe Commerce GraphQL .
+1. Cree una variable de entorno del sistema operativo local con el nombre `COMMERCE_ENDPOINT` que contiene el punto final de Adobe Commerce GraphQL.
 
    Ejemplo con Mac OSX:
 
@@ -82,11 +82,11 @@ Para el desarrollo del complemento CIF local mediante el uso del SDK de AEM as a
    set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
-   AEM utiliza esta variable para conectarse al sistema de comercio. Además, el complemento CIF incluye un proxy inverso local para que el extremo Commerce GraphQL esté disponible localmente. Esto lo utilizan las herramientas de creación del CIF (consola de producto y selectores) y los componentes del cliente del CIF que realizan llamadas directas a GraphQL.
+   AEM Esta variable la utiliza el usuario para conectarse a su sistema de comercio de. Además, el complemento CIF incluye un proxy inverso local para que el extremo de Commerce GraphQL esté disponible localmente. Las herramientas de creación del CIF (consola de productos y selectores) y los componentes del lado del cliente del CIF que realizan llamadas directas a GraphQL lo utilizan.
 
-   Esta variable también debe configurarse para el entorno AEM as a Cloud Service. Para obtener más información sobre las variables, consulte [Configuración de OSGi para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   Esta variable también debe configurarse para el entorno AEM as a Cloud Service. Para obtener más información sobre las variables, consulte [AEM Configuración de OSGi para la as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (Opcional) Para habilitar las funciones de catálogo organizadas, debe crear un token de integración para la instancia de Adobe Commerce. Siga estos pasos en [Introducción](./getting-started.md#staging) para crear el token.
+1. (Opcional) Para habilitar las funciones de catálogo organizadas, debe crear un token de integración para la instancia de Adobe Commerce. Siga los pasos que se indican en [Primeros pasos](./getting-started.md#staging) para crear el token.
 
    Establecer un secreto OSGi con el nombre `COMMERCE_AUTH_HEADER` al siguiente valor:
 
@@ -94,13 +94,13 @@ Para el desarrollo del complemento CIF local mediante el uso del SDK de AEM as a
    Authorization: Bearer <Access Token>
    ```
 
-   Para obtener más información sobre los secretos, consulte [Configuración de OSGi para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   Para obtener más información sobre secretos, consulte [AEM Configuración de OSGi para la as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
 1. Inicie el SDK de AEM as a Cloud Service
 
 >[!NOTE]
 >
->Asegúrese de iniciar AEM SDK as a Cloud Service en la misma ventana de terminal en la que se configuró la variable de entorno en el paso 5. Si la inicia en una ventana de terminal independiente o hace doble clic en el archivo .jar, asegúrese de que la variable de entorno esté visible.
+>AEM Asegúrese de iniciar el SDK as a Cloud Service en la misma ventana de terminal en la que se configuró la variable de entorno en el paso 5. Si la inicia en una ventana de terminal independiente o hace doble clic en el archivo .jar, asegúrese de que la variable de entorno esté visible.
 
 Verifique la configuración mediante la consola OSGI: `http://localhost:4502/system/console/osgi-installer`. La lista debe incluir los paquetes relacionados con el complemento CIF, el paquete de contenido y las configuraciones OSGI tal como se definen en el archivo del modelo de funciones.
 
@@ -114,7 +114,7 @@ El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-arche
 
 >[!TIP]
 >
->Utilice siempre la versión más reciente de [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype/releases) para generar el proyecto.
+>Utilice siempre la versión más reciente de [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype/releases) para generar el proyecto.
 
 Consulte las [instrucciones de uso](https://github.com/adobe/aem-project-archetype#usage) del tipo de archivo del proyecto AEM para saber cómo generar un proyecto AEM. Para incluir CIF en el proyecto, utilice la opción `includeCommerce` .
 
@@ -131,7 +131,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
  -D includeCommerce=y
 ```
 
-Los componentes principales del CIF se pueden usar en cualquier proyecto incluyendo los proporcionados `all` o individualmente utilizando el paquete de contenido CIF y los paquetes OSGI relacionados. Para añadir los componentes principales de CIF manualmente a un proyecto, utilice las siguientes dependencias:
+Los componentes principales del CIF pueden utilizarse en cualquier proyecto incluyendo el `all` o individualmente mediante el paquete de contenido del CIF y los paquetes OSGI relacionados. Para añadir los componentes principales de CIF manualmente a un proyecto, utilice las siguientes dependencias:
 
 ```java
 <dependency>
@@ -165,7 +165,7 @@ Los componentes principales del CIF se pueden usar en cualquier proyecto incluye
 
 ### Tienda de referencia Venia en AEM
 
-Una segunda opción para el inicio de un proyecto CIF es clonar y utilizar la [Tienda de referencia de Venia de AEM](https://github.com/adobe/aem-cif-guides-venia). La Tienda de referencia de Venia de AEM es una aplicación de tienda de referencia que muestra el uso de los componentes principales del CIF de AEM. Está diseñado como un conjunto de ejemplos de prácticas recomendadas y un punto de partida potencial para desarrollar su propia funcionalidad.
+Una segunda opción para el inicio de un proyecto CIF es clonar y utilizar la [Tienda de referencia de Venia de AEM](https://github.com/adobe/aem-cif-guides-venia). La Tienda de referencia de Venia de AEM es una aplicación de tienda de referencia que muestra el uso de los componentes principales del CIF de AEM. Está diseñada como un conjunto de ejemplos de prácticas recomendadas y un punto de partida potencial para desarrollar su propia funcionalidad.
 
 Para comenzar con la Tienda de referencia de Venia, simplemente clone el repositorio Git y el inicio personalizando el proyecto según sus necesidades.
 
@@ -177,4 +177,4 @@ Para comenzar con la Tienda de referencia de Venia, simplemente clone el reposit
 
 - [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
 - [Tienda de referencia de Venia de AEM](https://github.com/adobe/aem-cif-guides-venia)
-- [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+- [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html)

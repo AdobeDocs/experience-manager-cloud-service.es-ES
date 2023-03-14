@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ El uso de nombres de dominio personalizados con AEMaaCS conlleva varias limitaci
 
 >[!NOTE]
 >
->Los dominios personalizados se admiten en Cloud Manager **only** si utiliza la CDN administrada de AEM. Si trae su propia CDN y [diríjala a la CDN administrada de AEM](/help/implementing/dispatcher/cdn.md) tendrá que usar esa CDN específica para administrar dominios, no Cloud Manager.
+>Los dominios personalizados se admiten en Cloud Manager **solo** si utiliza CDN administrada por AEM. Si trae su propia CDN y [la dirige a la CDN administrada por AEM](/help/implementing/dispatcher/cdn.md) tendrá que usar esa CDN específica para administrar dominios, no Cloud Manager.
 
 ## Flujo de trabajo {#workflow}
 
@@ -55,7 +55,7 @@ Para agregar un nombre de dominio personalizado es necesaria la interacción ent
 
 | Paso | Descripción | Responsabilidad | Más información |
 |--- |--- |--- |---|
-| 1 | Añadir certificado SSL a Cloud Manager | Cliente | [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | Agregar certificado SSL a Cloud Manager | Cliente | [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | Agregar registro TXT para verificar el dominio | Cliente | [Agregar un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 3 | Revisar estado de verificación del dominio | Cliente | [Comprobar el estado del nombre de dominio ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3a | Si la verificación del dominio falla con el estado `Domain Verification Failure` | Cliente | [Comprobar el estado del nombre de dominio ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |

@@ -2,7 +2,7 @@
 title: Trabajos asincrónicos
 description: Adobe Experience Manager optimiza el rendimiento completando de manera asincrónica algunas tareas que requieren muchos recursos.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 98%
@@ -101,7 +101,7 @@ Si el número de recursos o carpetas que se van a eliminar supera el número de 
 
    ![Umbral de eliminación de recursos](assets/async-delete-threshold.png)
 
-1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. por ejemplo, éxito, error.
+1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. por ejemplo, success, failed.
 1. Guarde los cambios.
 
 ### Configurar operaciones asincrónicas de movimiento de recursos {#configuring-asynchronous-move-operations}

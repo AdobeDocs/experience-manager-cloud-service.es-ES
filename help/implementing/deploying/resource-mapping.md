@@ -1,6 +1,6 @@
 ---
 title: Asignación de recursos
-description: Aprenda a definir redirecciones, direcciones URL de vanidad y hosts virtuales para AEM mediante la asignación de recursos.
+description: AEM Obtenga información sobre cómo definir redirecciones, URL mnemónicas y hosts virtuales para los que se debe usar la asignación de recursos.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
@@ -9,32 +9,32 @@ exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Asignación de recursos{#resource-mapping}
 
-La asignación de recursos se utiliza para definir redirecciones, direcciones URL de vanidad y hosts virtuales para AEM.
+AEM La asignación de recursos se utiliza para definir redirecciones, URL de vanidad y hosts virtuales para los usuarios de la red de distribución de recursos
 
-Por ejemplo, puede utilizar estas asignaciones para:
+Por ejemplo, puede utilizar estas asignaciones para lo siguiente:
 
-* Agregue a todas las solicitudes el prefijo `/content` de modo que la estructura interna se oculte a los visitantes del sitio web.
-* Defina una redirección para que todas las solicitudes a la variable `/content/en/gateway` se redireccionan a `https://gbiv.com/`.
+* Agregue a todas las solicitudes el prefijo `/content` para que la estructura interna se oculte a los visitantes del sitio web.
+* Defina una redirección para que todas las solicitudes a `/content/en/gateway` de su sitio web se redirigen a `https://gbiv.com/`.
 
-Una posible asignación HTTP fija como prefijo todas las solicitudes a `localhost:4503` con `/content`. Una asignación como esta podría utilizarse para ocultar la estructura interna de los visitantes al sitio web, ya que permite:
+Una posible asignación HTTP prefija todas las solicitudes a `localhost:4503` con `/content`. Una asignación como esta podría utilizarse para ocultar la estructura interna de los visitantes del sitio web, ya que permite lo siguiente:
 
 `localhost:4503/content/we-retail/en/products.html`
 
-para acceder a través de:
+a acceder mediante:
 
 `localhost:4503/we-retail/en/products.html`
 
-ya que la asignación agregará automáticamente el prefijo `/content` a `/we-retail/en/products.html`.
+ya que la asignación añadirá automáticamente el prefijo `/content` hasta `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
->Las URL mnemónicas no admiten patrones regex.
+>Las URL mnemónicas no admiten patrones de regex.
 
 >[!NOTE]
 >
@@ -42,29 +42,29 @@ ya que la asignación agregará automáticamente el prefijo `/content` a `/we-re
 
 ## Visualización de definiciones de asignación {#viewing-mapping-definitions}
 
-Las asignaciones forman dos listas que el JCR Resource Resolver evalúa (de arriba abajo) para encontrar una coincidencia.
+Las asignaciones de dos listas que evalúa el JCR Resource Resolver (de arriba a abajo) para encontrar una coincidencia.
 
-Estas listas se pueden ver (junto con la información de configuración) en la sección **JCR ResourceResolver** de la consola Felix; por ejemplo, `https://<*host*>:<*port*>/system/console/jcrresolver`:
+Estas listas se pueden ver (junto con la información de configuración) en la **ResourceResolver de JCR** de la consola Felix; por ejemplo, `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
-* Configuración Muestra la configuración actual (tal como se define en la [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map)).
+* Configuración Muestra la configuración actual (tal como se define para la variable [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map)).
 
-* Prueba de configuración Esta opción le permite introducir una dirección URL o una ruta de acceso a un recurso. Haga clic en **Resolver** o **Mapa** para confirmar cómo el sistema transformará la entrada.
+* Prueba de configuración Permite introducir una dirección URL o una ruta de recursos. Clic **Resolver** o **Mapa** para confirmar cómo transformará el sistema la entrada.
 
-* **Resolver entradas de mapa**
-La lista de entradas que utilizan los métodos ResourceResolver.resolve para asignar direcciones URL a los recursos.
+* **Entradas de mapa de resolución**
+La lista de entradas utilizadas por los métodos ResourceResolver.resolve para asignar direcciones URL a recursos.
 
-* **Asignación de entradas de mapa**
-Lista de entradas que utilizan los métodos ResourceResolver.map para asignar rutas de recursos a direcciones URL.
+* **Entradas de mapa de asignación**
+La lista de entradas utilizadas por los métodos ResourceResolver.map para asignar rutas de recursos a las direcciones URL.
 
-Las dos listas muestran varias entradas, incluidas las definidas como predeterminadas por las aplicaciones. A menudo tienen como objetivo simplificar las direcciones URL del usuario.
+Las dos listas muestran varias entradas, incluidas las definidas como predeterminadas por las aplicaciones. Normalmente, pretenden simplificar las direcciones URL del usuario.
 
-El par de listas a **Patrón**, una expresión regular que coincide con la solicitud, con un **Sustitución** que define la redirección que se va a imponer.
+El par de listas a **Patrón**, una expresión regular coincidente con la solicitud, con un **Sustitución** que define la redirección que se va a imponer.
 
 Por ejemplo, el:
 
 **Patrón** `^[^/]+/[^/]+/welcome$`
 
-déclencheur de:
+almacenará en déclencheur:
 
 **Reemplazo** `/libs/cq/core/content/welcome.html`.
 
@@ -80,11 +80,11 @@ Se crean nuevas definiciones de asignación dentro del repositorio.
 
 >[!NOTE]
 >
->Hay muchos recursos disponibles que ayudan a explicar cómo definir expresiones regulares; por ejemplo [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Hay muchos recursos disponibles para explicar cómo definir las expresiones regulares; por ejemplo [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
-### Creación de definiciones de asignación en AEM {#creating-mapping-definitions-in-aem}
+### AEM Creación de Definiciones de Asignación en el {#creating-mapping-definitions-in-aem}
 
-En una instalación estándar de AEM puede encontrar la carpeta :
+AEM En una instalación estándar de la carpeta de carpetas, puede encontrar la siguiente carpeta:
 
 `/etc/map/http`
 
@@ -92,19 +92,19 @@ Esta es la estructura que se utiliza al definir asignaciones para el protocolo H
 
 #### Configuración de una redirección interna a /content {#configuring-an-internal-redirect-to-content}
 
-Para crear la asignación que prefiere cualquier solicitud a https://localhost:4503/ con `/content`:
+Para crear la asignación que prefija cualquier solicitud a https://localhost:4503/ con `/content`:
 
-1. Con CRXDE, vaya a `/etc/map/http`.
+1. Uso de CRXDE para desplazarse a `/etc/map/http`.
 
 1. Cree un nuevo nodo:
 
    * **Tipo** `sling:Mapping`
-Este tipo de nodo está diseñado para estas asignaciones, aunque su uso no es obligatorio.
+Este tipo de nodo está diseñado para este tipo de asignaciones, aunque su uso no es obligatorio.
 
    * **Nombre** `localhost_any`
 
 1. Haga clic en **Guardar todo**.
-1. **Agregar** las siguientes propiedades para este nodo:
+1. **Añadir** Agregue las siguientes propiedades a este nodo:
 
    * **Nombre** `sling:match`
 
@@ -120,7 +120,7 @@ Este tipo de nodo está diseñado para estas asignaciones, aunque su uso no es o
 
 1. Haga clic en **Guardar todo**.
 
-Esto administrará una solicitud como:
+Esto gestionará una solicitud como:
 `localhost:4503/geometrixx/en/products.html`
 como si:
 `localhost:4503/content/geometrixx/en/products.html`
@@ -128,9 +128,9 @@ se ha solicitado.
 
 >[!NOTE]
 >
->Consulte [Recursos](https://sling.apache.org/site/mappings-for-resource-resolution.html) en la documentación de Sling para obtener más información sobre las propiedades de Sling disponibles y cómo se pueden configurar.
->Por ejemplo, [Interpolación de cadenas](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) es muy útil, ya que permite configurar una asignación que obtiene los valores por entorno a través de variables de entorno.
+>Consulte [Recursos](https://sling.apache.org/site/mappings-for-resource-resolution.html) en la Documentación de Sling para obtener más información sobre las propiedades de Sling disponibles y cómo se pueden configurar.
+>Por ejemplo, [Interpolación de cadenas](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) es muy útil, ya que permite configurar una asignación que obtiene valores por entorno a través de variables de entorno.
 
 >[!NOTE]
 >
->Puede usar `/etc/map.publish` para guardar las configuraciones del entorno de publicación. Estos deben replicarse y la nueva ubicación ( `/etc/map.publish`) configurado para la variable **Ubicación de asignación** del [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) del entorno de publicación.
+>Puede utilizar `/etc/map.publish` para guardar las configuraciones del entorno de publicación. A continuación, se deben replicar, y la nueva ubicación ( `/etc/map.publish`) configurado para **Ubicación de asignación** de la [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) del entorno de publicación

@@ -1,6 +1,6 @@
 ---
 title: Importe y exporte metadatos de recursos de manera masiva
-description: Este artículo describe cómo importar y exportar metadatos de forma masiva.
+description: Este artículo describe cómo importar y exportar metadatos por lotes.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -14,33 +14,33 @@ ht-degree: 11%
 
 # Importe y exporte metadatos de recursos de manera masiva {#import-and-export-asset-metadata-in-bulk}
 
-Adobe Experience Manager Assets permite importar metadatos de recursos de forma masiva mediante un archivo CSV. Puede realizar actualizaciones masivas de los recursos cargados recientemente o de los existentes mediante la importación de un archivo CSV. También puede introducir metadatos de recursos de forma masiva desde sistemas de terceros en formato CSV.
+Adobe Experience Manager Assets permite importar metadatos de recursos de forma masiva mediante un archivo CSV. Puede realizar actualizaciones masivas de los recursos cargados recientemente o de los recursos existentes importando un archivo CSV. También puede introducir metadatos de recursos de forma masiva desde sistemas de terceros en formato CSV.
 
 ## Importar metadatos {#import-metadata}
 
-La importación de metadatos es asíncrona y no impide el rendimiento del sistema. La actualización simultánea de los metadatos de varios recursos puede requerir muchos recursos, ya que la actividad de reescritura de metadatos utiliza microservicios de recursos. Adobe recomienda planificar las operaciones masivas durante el uso del servidor liviano para que el rendimiento de otros usuarios no se vea afectado.
+La importación de metadatos es asíncrona y no impide el rendimiento del sistema. La actualización simultánea de los metadatos de varios recursos puede consumir muchos recursos debido a la actividad de reescritura de metadatos mediante microservicios de recursos. Adobe recomienda planificar las operaciones masivas durante el uso del servidor lean para que el rendimiento de otros usuarios no se vea afectado.
 
 >[!NOTE]
 >
->Para importar metadatos en áreas de nombres personalizadas, registre primero las áreas de nombres.
+>Para importar metadatos en áreas de nombres personalizadas, primero registre las áreas de nombres.
 
-1. Vaya a [!DNL Assets] interfaz de usuario, seleccione **[!UICONTROL Crear]** en la barra de herramientas y seleccione **[!UICONTROL Metadatos]** del menú .
+1. Vaya a [!DNL Assets] interfaz de usuario, seleccione **[!UICONTROL Crear]** en la barra de herramientas, y seleccione **[!UICONTROL Metadatos]** en el menú.
 1. En el **[!UICONTROL Importación de metadatos]** página, haga clic en **[!UICONTROL Seleccionar archivo]**. Seleccione el archivo CSV con los metadatos.
 1. Proporcione los siguientes parámetros:
 
    | Parámetro | Descripción |
    | ---------------------- | ------- |
-   | Tamaño del lote | Número de recursos de un lote para los que se van a importar metadatos. El valor predeterminado es 50. El valor máximo es 100. |
-   | Separador de campos | El valor predeterminado es `,` (coma). Puede especificar cualquier otro carácter. |
+   | Tamaño del lote | Número de recursos de un lote cuyos metadatos se van a importar. El valor predeterminado es 50. El valor máximo es 100. |
+   | Separador de campos | El valor predeterminado es `,` (una coma). Puede especificar cualquier otro carácter. |
    | Delimitador de varios valores | Separador para valores de metadatos. El valor predeterminado es `|`. |
-   | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se configura como `true` y la configuración predeterminada está en vigor para el flujo de trabajo de escritura de metadatos DAM (que escribe metadatos en los datos de XMP binarios). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
+   | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se establece en `true` XMP y la configuración predeterminada están vigentes para el flujo de trabajo de escritura diferida de metadatos DAM (que escribe metadatos en los datos binarios). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
    | Nombre de columna de ruta de activos | Define el nombre de columna del archivo CSV con recursos. |
 
-1. Select **[!UICONTROL Importar]** en la barra de herramientas. Una vez importados los metadatos, se envía una notificación a la bandeja de entrada de notificaciones. Vaya a la página de propiedades del recurso y compruebe si los valores de metadatos se importan correctamente para los recursos.
+1. Seleccionar **[!UICONTROL Importar]** en la barra de herramientas. Una vez importados los metadatos, se envía una notificación a la bandeja de entrada de notificaciones. Vaya a la página de propiedades del recurso y compruebe si los valores de los metadatos se importan correctamente para los recursos.
 
-1. Para agregar fecha y marca de hora para importar los metadatos, utilice `YYYY-MM-DDThh:mm:ss.fff-00:00` para la fecha y la hora. La fecha y la hora están separadas por `T`, `hh` es horas en formato de 24 horas, `fff` es nanosegundos, y `-00:00` es desplazamiento de zona horaria. Por ejemplo, `2020-03-26T11:26:00.000-07:00` es 26 de marzo de 2020 a las 11:26:00.000 AM PST.
+1. Para añadir la fecha y la marca de hora para importar los metadatos, utilice `YYYY-MM-DDThh:mm:ss.fff-00:00` formato de fecha y hora. La fecha y la hora están separadas por `T`, `hh` es horas en formato de 24 horas, `fff` es nanosegundos, y `-00:00` es el desplazamiento de la zona horaria. Por ejemplo, `2020-03-26T11:26:00.000-07:00` es el 26 de marzo de 2020 a las 11:26:00.000 PST.
 
-   * El formato de fecha depende del encabezado de la columna y del formato que contenga. Por ejemplo, si la fecha es compatible con el formato `yyyy-MM-dd'T'HH:mm:ssXXX` a continuación, el encabezado de columna correspondiente debe ser `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * El formato de fecha depende del encabezado de la columna y del formato que contenga. Por ejemplo, si la fecha es una queja con formato `yyyy-MM-dd'T'HH:mm:ssXXX` a continuación, el encabezado de columna correspondiente debe ser `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
    * El formato de fecha predeterminado es `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
 
 <!-- Hidden via cqdoc-17869>
@@ -52,13 +52,13 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
 
 ## Exportar metadatos {#export-metadata}
 
-Puede exportar metadatos de varios recursos en formato CSV. Los metadatos se exportan de forma asíncrona y no afectan al rendimiento del sistema. Para exportar metadatos, el Experience Manager recorre las propiedades del nodo de recursos `jcr:content/metadata` y sus nodos secundarios y exporta las propiedades de metadatos en un archivo CSV.
+Puede exportar metadatos de varios recursos en formato CSV. Los metadatos se exportan de forma asíncrona y no afectan al rendimiento del sistema. Para exportar metadatos, el Experience Manager recorre las propiedades del nodo del recurso `jcr:content/metadata` y sus nodos secundarios, y exporta las propiedades de metadatos en un archivo CSV.
 
-Algunos casos de uso para exportar metadatos de forma masiva son:
+Algunos casos de uso para exportar metadatos por lotes son:
 
 * Importe los metadatos en un sistema de terceros al migrar recursos.
 * Comparta metadatos de recursos con un equipo de proyecto más amplio.
-* Probar o auditar los metadatos para comprobar el cumplimiento.
+* Probar o auditar el cumplimiento de los metadatos.
 * Externalice los metadatos para una localización independiente.
 
 1. Seleccione la carpeta de recursos que contiene los recursos para los que desea exportar metadatos. En la barra de herramientas, seleccione **[!UICONTROL Exportar metadatos]**.
@@ -68,14 +68,14 @@ Algunos casos de uso para exportar metadatos de forma masiva son:
 
 1. Seleccione las opciones que desee. Proporcione un nombre de archivo y, si es necesario, una fecha.
 
-1. En el **[!UICONTROL Propiedades que se van a exportar]** , especifique si desea exportar todas las propiedades o propiedades específicas. Si elige Propiedades selectivas para exportar, añada las propiedades que desee.
+1. En el **[!UICONTROL Propiedades para exportar]** , especifique si desea exportar todas las propiedades o propiedades específicas. Si elige Propiedades selectivas para exportar, añada las propiedades deseadas.
 
-1. En la barra de herramientas, toque o haga clic en **[!UICONTROL Exportar]**. Un mensaje confirma que se exportan los metadatos. Cierre el mensaje.
+1. En la barra de herramientas, pulse o haga clic en **[!UICONTROL Exportar]**. Un mensaje confirma que se exportan los metadatos. Cierre el mensaje.
 1. Abra la notificación de la bandeja de entrada para el trabajo de exportación. Seleccione el trabajo y haga clic en **[!UICONTROL Abrir]** en la barra de herramientas. Para descargar el archivo CSV con los metadatos, pulse o haga clic en **[!UICONTROL Descargar CSV]** desde la barra de herramientas. Haga clic en **[!UICONTROL Cerrar]**.
 
-   ![Cuadro de diálogo para descargar el archivo CSV que contiene metadatos exportados de forma masiva](assets/csv_download.png)
+   ![Cuadro de diálogo para descargar el archivo CSV que contiene metadatos exportados en bloque](assets/csv_download.png)
 
-   *Figura: Cuadro de diálogo para descargar el archivo CSV que contiene metadatos exportados de forma masiva.*
+   *Imagen: cuadro de diálogo para descargar el archivo CSV que contiene los metadatos exportados por lotes.*
 
 >[!MORELIKETHIS]
 >

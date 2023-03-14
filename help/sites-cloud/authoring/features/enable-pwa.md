@@ -132,7 +132,7 @@ El sitio está configurado y puede [instalarlo como una aplicación local.](#usi
 
 Ahora que ha [configurado el sitio para admitir el PWA,](#enabling-pwa-for-your-site) puede experimentarlo usted mismo.
 
-1. Acceda al sitio en un [navegador compatible.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
+1. Acceda al sitio en un [navegador compatible.](https://developer.mozilla.org/es-ES/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
 1. Verá un nuevo icono en la barra de direcciones del explorador que indica que el sitio se puede instalar como aplicación local.
    * Según el explorador, el icono puede variar y el explorador también puede mostrar una notificación (como un titular o un cuadro de diálogo) que indique que es posible realizar la instalación como aplicación local.
 1. Instale la aplicación.

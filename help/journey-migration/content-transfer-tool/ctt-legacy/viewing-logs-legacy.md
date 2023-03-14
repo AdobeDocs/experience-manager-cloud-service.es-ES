@@ -1,6 +1,6 @@
 ---
-title: Visualización de registros de un conjunto de migraciones en la herramienta de transferencia de contenido (heredada)
-description: Visualización de registros de un conjunto de migraciones en la herramienta de transferencia de contenido
+title: Visualización de registros del conjunto de migraciones en la herramienta de transferencia de contenido (heredada)
+description: Visualización de registros del conjunto de migraciones en la herramienta de transferencia de contenido
 hide: true
 hidefromtoc: true
 exl-id: 01c8afd3-c594-4a41-b905-8c3a2d74db6f
@@ -11,11 +11,11 @@ ht-degree: 64%
 
 ---
 
-# Visualización de registros de un conjunto de migraciones (heredado) {#view-logs-content-transfer-tool}
+# Visualización de registros del conjunto de migraciones (heredado) {#view-logs-content-transfer-tool}
 
-Una vez completado cada paso (extracción e ingesta), compruebe los registros y busque errores.  Cualquier error debe solucionarse inmediatamente, ya sea abordando los problemas notificados o poniéndose en contacto con el servicio de asistencia al Adobe.
+Una vez completado cada paso (extracción e ingesta), compruebe los registros y busque errores.  Cualquier error debe solucionarse inmediatamente, ya sea tratando los problemas notificados o poniéndose en contacto con el servicio de asistencia al Adobe.
 
-## Pasos para ver registros {#viewing-logs}
+## Pasos para Ver Registros {#viewing-logs}
 
 La visualización de registros de un conjunto de migraciones existente en la página *Información general* .
 Complete los siguientes pasos:

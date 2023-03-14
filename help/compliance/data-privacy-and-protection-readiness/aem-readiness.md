@@ -2,8 +2,8 @@
 title: 'Reglamentos de protección de datos y privacidad de datos: preparación para Adobe Experience Manager as a Cloud Service'
 description: Obtenga información sobre la compatibilidad de Adobe Experience Manager as a Cloud Service con las distintas normas de protección de datos y privacidad de datos; incluido el Reglamento general de protección de datos (RGPD) de la UE, la Ley de Privacidad del Consumidor de California y cómo cumplir al implementar un nuevo proyecto as a Cloud Service AEM.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 100%
 

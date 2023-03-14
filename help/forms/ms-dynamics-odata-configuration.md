@@ -7,8 +7,8 @@ level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 100%
+source-wordcount: '982'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (OData Service) is available with all run modes. For more information on configuring run modes for an [!DNL Experience Manager] instance, see [Run Modes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  El Cloud Service OData de MS Dynamics (servicio OData) está disponible con todos los modos de ejecución. Para obtener más información sobre la configuración de los modos de ejecución de un [!DNL Experience Manager] instancia, consulte [Modos de ejecución](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=es#runmodes).
 
 ## Requisitos previos {#prerequisites}
 
@@ -67,7 +67,7 @@ Haga lo siguiente para establecer la URL de respuesta para la aplicación de [!D
 >
 >Utilice este procedimiento solo mientras integra [!DNL Experience Manager Forms] con el servidor local de [!DNL Microsoft Dynamics].
 
-1. Configure la instancia local de [!DNL Microsoft Dynamics] para IFD, tal como se describe en [Configuración de IFD para  [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
+1. Configure la instancia local de [!DNL Microsoft Dynamics] para IFD, tal como se describe en [Configuración de IFD para  [!DNL Microsoft Dynamics]](https://technet.microsoft.com/es-es/library/dn609803.aspx).
 1. Ejecute los siguientes comandos utilizando Windows PowerShell para configurar las opciones de notificación en [!DNL Microsoft Dynamics] para IFD:
 
    ```shell
@@ -91,7 +91,7 @@ Haga lo siguiente para registrar un cliente de OAuth en el equipo de los Servici
 
    `Add-AdfsClient -ClientId “<Client-ID>” -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
-   donde:
+   Donde:
 
    * `Client-ID` es un ID de cliente que puede generar con cualquier generador GUID.
    * `redirect-uri` es la dirección URL del servicio en la nube de OData de [!DNL Microsoft Dynamics] en [!DNL Experience Manager Forms]. El servicio en la nube predeterminado instalado con [!DNL Experience Manager Forms] se implementa en la siguiente URL:

@@ -44,7 +44,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de diciembre d
 
 * Después de configurar una conexión entre las implementaciones remotas de DAM y Sites, los recursos en DAM remoto están disponibles en la implementación de Sites. Ahora puede realizar las operaciones de [actualización, eliminación, cambio de nombre y movimiento](/help/assets/use-assets-across-connected-assets-instances.md) en los activos o carpetas DAM remotos. Las actualizaciones, con algún retraso, están disponibles automáticamente en la implementación de Sites.
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
 
@@ -52,7 +52,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de diciembre d
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=es) le ayudan a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modos sincrónico y por lotes. Las API le permiten crear aplicaciones con las que puede:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=es) le ayudan a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modos sincrónico y por lotes. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
 
    * Generar documentos rellenando archivos de plantilla (PDF y XDP) con datos XML.
    * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
@@ -91,13 +91,13 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 
 * La duración de la canalización Calidad del código se reduce significativamente al realizar el análisis del código de una manera más eficiente sin necesidad de crear una imagen de AEM completa. Este cambio se implementará progresivamente durante las semanas siguientes a la publicación.
 
-* El ID de confirmación de Git ahora se mostrará en los detalles de ejecución de la canalización, lo que facilita el seguimiento del código creado.
+* El ID de compromiso de Git ahora se mostrará en los detalles de ejecución de la canalización, lo que facilita el seguimiento del código creado.
 
 * La creación de programas ya está disponible a través de una API expuesta públicamente.
 
 * La creación de entornos ya está disponible a través de una API expuesta públicamente.
 
-* El encabezado de respuesta `x-request-id` ahora está visible en el sitio de pruebas de API en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de servicio de atención al cliente para la resolución de problemas.
+* El encabezado de respuesta `x-request-id` ahora está visible en el sitio de pruebas de la API en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de servicio de atención al cliente para la resolución de problemas.
 
 * Como usuario, veo que la tarjeta de canalización con cero canalizaciones me proporciona la guía adecuada.
 
@@ -111,9 +111,9 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 
 * El archivo CSV del problema de calidad ahora contendrá la marca de tiempo para cada problema de calidad.
 
-### Corrección de errores {#bug-fixes-nov}
+### Correcciones de errores {#bug-fixes-nov}
 
-* Algunas configuraciones de compilación no ortodoxas tuvieron como resultado que se almacenaran archivos innecesarios en la caché de artefactos Maven de la canalización, lo que resultó en I/O de red superfluas al iniciar y detener el contenedor de compilación.
+* Algunas configuraciones de generación no ortodoxas tuvieron como resultado que se almacenaran archivos innecesarios en la caché de artefactos Maven de la canalización, lo que resultó en I/O de red superfluas al iniciar y detener el contenedor de generación.
 
 * La API PATCH de canalización falla si la fase de implementación no existe.
 

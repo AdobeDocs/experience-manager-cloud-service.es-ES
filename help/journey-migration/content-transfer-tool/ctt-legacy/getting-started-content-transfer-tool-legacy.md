@@ -16,25 +16,25 @@ ht-degree: 22%
 
 ## Disponibilidad {#availability}
 
-La herramienta de transferencia de contenido se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de Adobe Experience Manager (AEM) de origen. Asegúrese de descargar la última versión. Para obtener más información sobre la versión más reciente, consulte [Notas de la versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
+La herramienta de transferencia de contenido se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de origen de Adobe Experience Manager AEM (). Asegúrese de descargar la versión más reciente. Para obtener más información sobre la versión más reciente, consulte [Notas de versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
 >[!NOTE]
 >Descargue Content Transfer Tool desde el portal de [distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html).
 
 ## Conectividad del entorno de origen {#source-environment-connectivity}
 
-La instancia de AEM de origen puede estar ejecutándose detrás de un cortafuegos en el que solo puede llegar a ciertos hosts que se han añadido a una Lista de permitidos. Para ejecutar correctamente una extracción, es necesario tener acceso a los siguientes extremos desde la instancia que se está ejecutando AEM:
+AEM La instancia de origen puede estar ejecutándose detrás de un cortafuegos donde solo puede llegar a ciertos hosts que se han añadido a una Lista de permitidos. AEM Para ejecutar correctamente una extracción, será necesario poder acceder a los siguientes extremos desde la instancia que se está ejecutando:
 
-* El entorno as a Cloud Service AEM destino: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* El servicio de almacenamiento del blob de Azure: `*.blob.core.windows.net`
-* El extremo de E/S de asignación de usuario: `usermanagement.adobe.io`
+* AEM El entorno as a Cloud Service de destino: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* El servicio Azure Blob Storage: `*.blob.core.windows.net`
+* Extremo de E/S de asignación de usuarios: `usermanagement.adobe.io`
 
-Para probar la conectividad con el entorno as a Cloud Service de AEM de destino, ejecute el siguiente comando cURL desde el shell de la instancia de origen (reemplace `program_id`, `environment_id`y `migration_token`):
+AEM Para probar la conectividad con el entorno as a Cloud Service de destino, emita el siguiente comando cURL desde el shell de la instancia de origen (reemplazar `program_id`, `environment_id`, y `migration_token`):
 
 `curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
 
 >[!NOTE]
->Si una `HTTP/2 200` se recibe, una conexión con AEM as a Cloud Service se ha realizado correctamente.
+>Si un `HTTP/2 200` AEM se ha recibido, la conexión con el as a Cloud Service se ha realizado correctamente.
 
 ## Ejecución de la herramienta de transferencia de contenido {#running-tool}
 
@@ -52,7 +52,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 
 
-1. La consola siguiente aparece al crear el primer conjunto de migración. Haga clic en **Crear conjunto** de migración para crear un conjunto de migración nuevo.
+1. La consola siguiente aparece cuando crea el primer conjunto de migración. Haga clic en **Crear conjunto** de migración para crear un conjunto de migración nuevo.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
 
@@ -60,7 +60,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
    >Si tiene conjuntos de migración existentes, la consola mostrará la lista de conjuntos de migración existentes con su estado actual.
 
 
-1. Rellene los campos de **Crear conjunto de migración** como se describe a continuación.
+1. Rellene los campos en **Crear conjunto de migración** como se describe a continuación.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
 
@@ -77,50 +77,50 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
    1. **Token de acceso**: introduzca el token de acceso.
 
       >[!NOTE]
-      >Puede recuperar el token de acceso utilizando la variable **Abrir token de acceso** botón. Debe asegurarse de pertenecer al grupo &quot;Administradores&quot; en la instancia de Cloud Service de destino.
+      >Puede recuperar el token de acceso utilizando la variable **Abrir token de acceso** botón. Debe asegurarse de que pertenece al grupo &quot;Administradores&quot; en la instancia de Cloud Service de destino.
 
    1. **Parámetros**: seleccione los siguientes parámetros para crear el conjunto de migración:
 
-      1. **Incluir versión**: seleccione la opción que desee. Cuando se incluyen versiones, la ruta `/var/audit` se incluye automáticamente para migrar eventos de auditoría.
+      1. **Incluir versión**: seleccione la opción que desee. Cuando se incluyen versiones, la ruta `/var/audit` para migrar eventos de auditoría.
 
          ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
-         >Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza complementos con `wipe=false`, debe desactivar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
+         >Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza recargas con `wipe=false`, debe deshabilitar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
 
 
-      1. **Rutas que se incluyen**: utilice el explorador para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas mediante escritura o selección.
+      1. **Rutas que se incluyen**: utilice el explorador para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas escribiendo o seleccionando.
 
          >[!IMPORTANT]
          >Las siguientes rutas están restringidas al crear un conjunto de migración:
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc` (algunas `/etc` rutas permitidas para ser seleccionadas en CTT)
+         >* `/etc` (algunos `/etc` se permite seleccionar las rutas en CTT)
 
 
 1. Haga clic en **Guardar** después de rellenar todos los campos en la variable **Crear conjunto de migración** pantalla de detalles.
 
-1. Verá el conjunto de migraciones en la variable **Transferencia de contenido** como se muestra en la figura siguiente.
+1. Verá su conjunto de migración en la **Transferencia de contenido** asistente, como se muestra en la figura siguiente.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
-   Todos los conjuntos de migración existentes se muestran en la **Transferencia de contenido** con su estado actual y la información de estado. Puede ver algunos de estos iconos que se describen a continuación.
+   Todos los conjuntos de migración existentes se muestran en la **Transferencia de contenido** asistente con su estado actual y la información de estado. Puede ver algunos de estos iconos que se describen a continuación.
 
    * La *nube roja* indica que no se puede completar el proceso de extracción.
    * A *nube verde* indica que se puede completar el proceso de extracción.
    * El *icono amarillo* indica que no se creó el conjunto de migración existente y que el específico lo crea otro usuario en la misma instancia.
 
-1. Seleccione un conjunto de migración y haga clic en **Propiedades** para ver o editar las propiedades del conjunto de migración. Durante la edición de propiedades, no es posible cambiar la variable **Nombre del conjunto de migración** o **URL del servicio**.
+1. Seleccione un conjunto de migración y haga clic en **Propiedades** para ver o editar las propiedades del conjunto de migración. Al editar las propiedades, no es posible cambiar la variable **Nombre del conjunto de migración** o el **URL de servicio**.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
-### Determinación del tamaño del conjunto de migración y el espacio en disco {#migration-set-size}
+### Determinar el tamaño del conjunto de migración y el espacio en disco {#migration-set-size}
 
-Después de crear un conjunto de migración, es muy recomendable ejecutar una comprobación de tamaño en el conjunto de migración antes de iniciar un proceso de Extracción.
-Al ejecutar una comprobación de tamaño en el conjunto de migración, podrá:
-* Determine si hay suficiente espacio en disco en la variable `crx-quickstart` para completar la extracción correctamente.
-* Determine si el tamaño del conjunto de migración se encuentra dentro de los límites del producto admitidos y evite la ingesta fallida de contenido.
+Después de crear un conjunto de migración, es muy recomendable ejecutar una comprobación de tamaño en el conjunto antes de iniciar un proceso de extracción.
+Al realizar una comprobación de tamaño en el conjunto de migración, podrá:
+* Determine si hay suficiente espacio en disco en la `crx-quickstart` subdirectorio para completar la extracción correctamente.
+* Determine si el tamaño del conjunto de migración se encuentra dentro de los límites del producto admitido y evite las ingestas de contenido fallidas.
 
 Siga los pasos a continuación para ejecutar una comprobación de tamaño:
 
@@ -128,16 +128,16 @@ Siga los pasos a continuación para ejecutar una comprobación de tamaño:
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
 
-1. Esto abrirá las **Comprobar tamaño** diálogo.
+1. Esto abrirá el **Comprobar tamaño** diálogo.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
 
-1. Haga clic en **Comprobar tamaño** para iniciar el proceso. A continuación, volverá a la vista de la lista de conjuntos de migración y verá un mensaje que indique que **Comprobar tamaño** se está ejecutando.
+1. Haga clic en **Comprobar tamaño** para iniciar el proceso. A continuación, volverá a la vista de lista del conjunto de migración y debería ver un mensaje que indique que **Comprobar tamaño** se está ejecutando.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
 
 
-1. Una vez **Comprobar tamaño** se completa el proceso, el estado cambiará a **FINALIZADO**. Seleccione el mismo conjunto de migración y haga clic en **Comprobar tamaño** para ver los resultados.
+1. Una **Comprobar tamaño** el proceso se ha completado, el estado cambiará a **FINALIZADO**. Seleccione el mismo conjunto de migración y haga clic en **Comprobar tamaño** para ver los resultados.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
 
@@ -145,15 +145,15 @@ Siga los pasos a continuación para ejecutar una comprobación de tamaño:
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
 
-1. Si la variable **Comprobar tamaño** los resultados indican que no hay suficiente espacio en disco o que el conjunto de migración supera los límites del producto, **ADVERTENCIA** se muestra.
+1. Si la variable **Comprobar tamaño** los resultados indican que no hay suficiente espacio en disco o que el conjunto de migración supera los límites del producto, **ADVERTENCIA** se mostrará el estado.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
 
-A continuación se muestra un ejemplo de **Comprobar tamaño** genera advertencias.
+A continuación se muestra un ejemplo de **Comprobar tamaño** resultados con advertencias.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a crear un conjunto de migración, ya está listo para obtener información sobre los procesos de extracción e ingesta en la herramienta de transferencia de contenido. Antes de conocer estos procesos, debe revisar [Gestión de repositorios de contenido grandes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y así mover el contenido a AEM as a Cloud Service.
+Una vez que haya aprendido a crear un conjunto de migración, ya puede obtener información sobre los procesos de extracción e ingesta en la herramienta de transferencia de contenido. Antes de aprender estos procesos, debe revisar [Gestión de repositorios de contenido grandes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) AEM para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y mover el contenido a la ubicación as a Cloud Service de la.

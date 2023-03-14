@@ -67,7 +67,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
 [Obtener archivo](assets/example-mortgage-loan-application.zip)
 
-1. Abra la consola Modelos de flujo de trabajo. El URL predeterminado es `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
+1. Abra la consola Modelos de flujo de trabajo. La URL predeterminada es `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleccione **Crear** y, a continuación, **Crear modelo**. Aparecerá el cuadro de diálogo Agregar modelo del flujo de trabajo.
 1. Escriba el **Título** y el **Nombre** (opcional). Por ejemplo, una solicitud hipotecaria. Pulse **Listo**.
 1. Seleccione el modelo del flujo de trabajo recién creado y pulse **Editar**. Ahora puede agregar pasos al flujo de trabajo para crear lógica empresarial. La primera vez que cree un modelo del flujo de trabajo, contendrá:
@@ -189,7 +189,7 @@ La solicitud es el formulario adaptable asociado al flujo de trabajo. Cuando una
 
 ## Iniciar un flujo de trabajo centrado en Forms en OSGi {#launch}
 
-Puede iniciar o activar un flujo de trabajo centrado en Forms mediante:
+Puede iniciar o habilitar un flujo de trabajo centrado en Forms mediante:
 
 * [El envío de una solicitud desde la bandeja de entrada AEM](#inbox)
 * [El envío de una solicitud desde la [!DNL AEM Forms] Aplicación](#afa)

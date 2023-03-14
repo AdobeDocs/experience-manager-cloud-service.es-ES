@@ -44,6 +44,6 @@ En los paneles, puede acceder a la función desde la barra de herramientas del p
 
 ![Extracción de expresiones SOM mediante la barra de herramientas del panel](assets/som-expression.png)
 
-Extracción de expresiones SOM mediante la barra de herramientas del panel
+Extraer expresiones SOM mediante la barra de herramientas del panel
 
 Algunas API enumeradas en [GuideBridge](https://helpx.adobe.com/es/aem-forms/6/javascript-api/GuideBridge.html) utilizan la expresión SOM de un elemento. Por ejemplo, para establecer el enfoque en un campo concreto de un formulario adaptable, pase la expresión SOM correspondiente a la API `getFocus` en `guideBridge`.

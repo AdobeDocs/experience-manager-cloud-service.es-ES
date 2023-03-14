@@ -63,11 +63,11 @@ Eche un vistazo al vídeo [Información general sobre la versión de enero de 20
 
 * Los recursos sin procesar sin representación original se envían a Asset Compute para su procesamiento mientras migran recursos de AEM local a servicios en la nube.
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=es) le ayudan a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modos sincrónico y por lotes. Las API le permiten crear aplicaciones con las que puede:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=es) le ayudan a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modos sincrónico y por lotes. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
 
    * Generar documentos rellenando archivos de plantilla con datos XML.
    * Generar formularios en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
@@ -103,15 +103,15 @@ La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2022.01.0 es 
 
 ### Novedades {#what-is-new-cm}
 
-* Cloud Manager [evitará la reconstrucción del código base cuando detecte que se utiliza la misma confirmación git](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) en varias ejecuciones de canalización full-stack.
+* Cloud Manager [evitará la reconstrucción del código base cuando detecte que se utiliza el mismo compromiso de Git](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) en varias ejecuciones de canalización full-stack.
 * El acceso al registro de entorno de AEM ahora requiere el perfil de producto de **Administrador de implementación**. Los usuarios sin este perfil verán un botón deshabilitado en la interfaz de usuario.
 * La IU no permitirá la configuración de canalización front-end para un programa en el que Sites no esté habilitado como solución.
-* Al generar una contraseña de git, se muestra la fecha de caducidad.
+* Al generar una contraseña de Git, se muestra la fecha de caducidad.
 
 ### Correcciones de errores {#bug-fixes-cm}
 
 * Se han corregido las excepciones de puntero nulo encontradas en algunas implementaciones de canalización front-end.
-* Ahora se pueden añadir, actualizar y eliminar variables de entorno cuando un entorno ejecuta una versión obsoleta de AEM.
+* Ahora se pueden agregar, actualizar y eliminar variables de entorno cuando un entorno ejecuta una versión obsoleta de AEM.
 * El paso de crear imagen ya no se marcará como ERROR para las canalizaciones que usaron el paso programado en algunos casos excepcionales.
 * Para los programas con un solo repositorio, la pantalla de ejecución de la canalización ahora mostrará el nombre del repositorio.
 

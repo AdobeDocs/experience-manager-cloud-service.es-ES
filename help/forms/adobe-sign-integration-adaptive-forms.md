@@ -5,8 +5,8 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 72c53bf69c36c265d25d136c0d2887cac2fe98fc
-workflow-type: ht
+source-git-commit: 7b233d95e27325a7edb22948669f6c0d96e1f380
+workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 
 1. Copie la URL de la ventana actual del explorador en un bloc de notas. La URL es necesaria para configurar la aplicación [!DNL Adobe Sign] con [!DNL AEM Forms] en un paso posterior. Pulse **[!UICONTROL Siguiente]**.
 
-1. En la pestaña **[!UICONTROL Configuración]**, el campo **[!UICONTROL URL de OAuth]** contiene la URL predeterminada. El formato del URL es el siguiente:
+1. En la pestaña **[!UICONTROL Configuración]**, el campo **[!UICONTROL URL de OAuth]** contiene la URL predeterminada. El formato de la URL es el siguiente:
 
    `https://<shard>/public/oAuth/v2`
 

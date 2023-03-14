@@ -3,7 +3,7 @@ title: 'Cómo ponerlo todo junto: su aplicación y su contenido en AEM sin encab
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, aprenda a lanzar su proyecto de AEM, incluidos los fragmentos de contenido, las llamadas de GraphQL, las llamadas de la API REST y la aplicación, para prepararlo para su puesta en marcha.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 100%
 

@@ -509,7 +509,7 @@ Para los widgets, se muestra un signo de interrogación cuando un autor agrega u
 
 ## Tabla {#table}
 
-Puede cambiar el tema de color para el encabezado y las filas del cuerpo de una tabla mediante las siguientes variables.
+Puede cambiar la temática de color para el encabezado y las filas del cuerpo de una tabla mediante las siguientes variables.
 
 <table>
  <tbody>
@@ -1073,9 +1073,9 @@ Las variables de la siguiente tabla influyen en el diseño de la barra de herram
  </tbody>
 </table>
 
-## Variable específica del tema {#theme-specific-variable}
+## Variable específica de la temática {#theme-specific-variable}
 
-El tema **Inscripción simple** en /etc/clientlibs/fd/af/guidetheme/simpleEnrollment y la categoría `guide.theme.simpleEnrollment` también introduce algunas variables. Si desea crear un tema para mejorar la inscripción simple, puede utilizar las siguientes variables extra:
+La temática **Inscripción simple** en /etc/clientlibs/fd/af/guidetheme/simpleEnrollment y la categoría `guide.theme.simpleEnrollment` también introduce algunas variables. Si desea crear una temática para mejorar la inscripción simple, puede utilizar las siguientes variables extra:
 
 <table>
  <tbody>

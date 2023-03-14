@@ -2,7 +2,7 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo crearlos para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 2af14814a4e8af22cfdc1caa2ff656020c79ce77
+source-git-commit: 4631ab86ae1b4405e31d8bb8eae8edbbe2272c2c
 workflow-type: tm+mt
 source-wordcount: '1826'
 ht-degree: 88%
@@ -17,13 +17,13 @@ Obtenga información sobre los tipos de entornos que puede crear y cómo crearlo
 
 Un usuario con los permisos necesarios puede crear los siguientes tipos de entornos (dentro de los límites de lo que está disponible para el inquilino específico).
 
-* **Producción + fase** - Los entornos de producción y ensayo están disponibles en pareja y se utilizan para fines de producción y prueba, respectivamente.
+* **Producción + Fase** - Los entornos de producción y ensayo están disponibles en pareja y se utilizan para fines de producción y prueba, respectivamente.
 
 * **Desarrollo**: se puede crear un entorno de desarrollo para fines de desarrollo y prueba, y solo se puede asociar con canalizaciones que no sean de producción.
 
-* **Desarrollo rápido** - Un entorno de desarrollo rápido (RDE) permite que un desarrollador implemente y revise rápidamente los cambios, lo que minimiza la cantidad de tiempo necesario para probar las funciones que se ha probado que funcionan en un entorno de desarrollo local. Consulte [la documentación del entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obtener más información sobre cómo utilizar un RDE.
+* **Desarrollo rápido** : Un entorno de desarrollo rápido (RDE) permite al desarrollador implementar y revisar cambios rápidamente, minimizando la cantidad de tiempo necesario para probar funciones que han demostrado funcionar en un entorno de desarrollo local. Consulte lo siguiente [la documentación del entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obtener detalles acerca de cómo utilizar un RDE.
 
-Las capacidades de entornos individuales dependen de las soluciones habilitadas en la variable [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) del entorno.
+Las capacidades de los entornos individuales dependen de las soluciones habilitadas en la [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) del entorno.
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -56,9 +56,9 @@ Las capacidades de entornos individuales dependen de las soluciones habilitadas 
       * El número de entornos disponibles/utilizados se muestra entre paréntesis detrás del nombre del tipo de entorno.
    * Proporcionar un entorno **Nombre**.
    * Proporcionar un entorno **Descripción**.
-   * Seleccione un **Región principal** en la lista desplegable .
+   * Seleccione una **Región principal** de la lista desplegable.
       * Tenga en cuenta que esto no se puede cambiar después de la creación.
-   * Si agrega un **Producción + fase** , debe proporcionar un nombre y una descripción de entorno tanto para los entornos de producción como de ensayo.
+   * Si va a agregar un **Producción + Fase** entorno, debe proporcionar un nombre de entorno y una descripción para los entornos de producción y ensayo.
       ![Cuadro de diálogo Agregar entorno](assets/add-environment2.png)
 
 1. Haga clic en **Guardar** para agregar el entorno especificado.
@@ -111,13 +111,13 @@ Un usuario con los permisos necesarios debe completar los siguientes pasos antes
 
 1. Use la actualización del flujo de trabajo **Lista de IP permitidas** para eliminar la IP predeterminada y agregar direcciones IP según corresponda. Consulte [Administrar listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para obtener más información.
 
-Una vez desbloqueado el acceso al servicio de vista previa, ya no se mostrará el icono de candado delante del nombre del servicio de vista previa.
+Una vez desbloqueado el acceso al servicio de vista previa, ya no se mostrará el icono de bloqueo delante del nombre del servicio de vista previa.
 
 Una vez activado, puede publicar contenido en el servicio de vista previa mediante la IU Administrar publicación dentro de AEM. Consulte el documento [Vista previa del contenido](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obtener más información.
 
 >[!NOTE]
 >
->El entorno debe estar en AEM versión `2021.05.5368.20210529T101701Z` o posterior para utilizar el servicio de vista previa. Asegúrese de que una canalización de actualización se haya ejecutado correctamente en su entorno para hacerlo.
+>AEM Su entorno debe estar en la versión de la `2021.05.5368.20210529T101701Z` o más reciente para utilizar el servicio de vista previa. Asegúrese de que una canalización de actualización se haya ejecutado correctamente en su entorno para hacerlo.
 
 ## Actualizar entornos {#updating-dev-environment}
 

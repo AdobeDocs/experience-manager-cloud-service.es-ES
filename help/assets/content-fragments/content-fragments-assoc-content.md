@@ -1,23 +1,23 @@
 ---
-title: Contenido asociado (Recursos - Fragmentos de contenido)
-description: Comprender cómo AEM función de contenido asociada proporciona la conexión para que los recursos se puedan utilizar opcionalmente con el fragmento.
+title: Contenido asociado (recursos - fragmentos de contenido)
+description: AEM Comprender cómo la función de contenido asociada proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 55%
+ht-degree: 62%
 
 ---
 
 # Contenido asociado{#associated-content}
 
-AEM función Contenido asociado proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad para la entrega de contenido sin objetivos mediante [proporcionar una serie de recursos a los que acceder al utilizar el fragmento de contenido en una página,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) al mismo tiempo que ayuda a reducir el tiempo necesario para buscar el recurso adecuado.
+AEM La función de contenido asociado proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad para la entrega de contenido sin encabezado mediante [proporcionar una serie de recursos a los que acceder al utilizar el fragmento de contenido en una página,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) además de ayudar a reducir el tiempo necesario para buscar el recurso adecuado.
 
 ## Adición de contenido asociado {#adding-associated-content}
 
 >[!NOTE]
 >
->Existen varios métodos para añadir [recursos visuales (por ejemplo, imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
+>Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento y/o página.
 
 Para realizar la asociación, primero debe [agregar los recursos multimedia a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede hacer lo siguiente:
 

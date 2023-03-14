@@ -3,54 +3,54 @@ title: Cambios entre AEM 6.5 Forms y AEM Cloud Services
 description: ¿Es usuario de Experience Manager Forms y desea actualizar a Adobe Experience Manager Forms as a Cloud Service? Conozca los cambios más importantes antes de actualizar o migrar a Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 2a464a0a11396a1948ba7211d5c0534769e6659c
+source-git-commit: fa8629fefe3ad29f70213b15bb31623a2f7d5420
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 24%
 
 ---
 
-# Cambios importantes para los usuarios existentes de Adobe Experience Manager 6.5 Forms  {#notable-changes-for-existing-AEM-Forms-users}
+# Cambios importantes para los usuarios de Adobe Experience Manager 6.5 Forms existentes  {#notable-changes-for-existing-AEM-Forms-users}
 
-Adobe Experience Manager Forms as a Cloud Service ofrece algunos cambios importantes en las funciones existentes en comparación con Adobe Experience Manager Forms On-Premise y [!DNL Adobe-Managed Service] entornos. A continuación se enumeran las principales diferencias:
+Adobe Experience Manager Forms as a Cloud Service incluye algunos cambios importantes en las funciones existentes en comparación con Adobe Experience Manager Forms local y [!DNL Adobe-Managed Service] entornos. A continuación se enumeran las principales diferencias:
 
-| Función/Capacidad | [!DNL AEM Forms] as a Cloud Service | AEM 6.5 Forms |
+| Funcionalidad/Funcionalidad | [!DNL AEM Forms] as a Cloud Service | AEM.5 Forms |
 |---|---|---|
 | Arquitectura nativa de la nube | ✅ | ⛌ |
-| Adaptación automática basada en la carga | ✅ | ⛌ |
-| Sin downtime en las actualizaciones | ✅ | ⛌ |
-| Frecuencia de despliegue de funciones | Agile* | Trimestral |
-| CDN (red de entrega de contenido) incluida | ✅ | ⛌ |
+| Adaptación automática según la carga | ✅ | ⛌ |
+| Sin tiempo de inactividad para las actualizaciones | ✅ | ⛌ |
+| Frecuencia de despliegue de las funciones | Agile* | Trimestral |
+| CDN (red de distribución de contenido) incluida | ✅ | ⛌ |
 | Topologías optimizadas para lograr la máxima resiliencia y eficiencia | ✅ | ⛌ |
-| Entorno de desarrollo nativo de la nube | ✅ | ⛌ |
+| Entorno de desarrollo nativo en la nube | ✅ | ⛌ |
 | Autoservicio mediante Cloud Manager | ✅ | ⛌ |
 | Actualizaciones automatizadas con integración continua y entrega continua (CI/CD) | ✅ | ⛌ |
 | Integración con [!DNL Micosoft Power Automate] | ✅ | ⛌ |
 | Integración con [!DNL DocuSign] | ✅ | ⛌ |
-| Conectividad sencilla con Microsoft Dynamics y Salesforce | ✅ | ⛌ |
-| Conectividad sencilla con almacenes de datos de Microsoft Azure | ✅ | ⛌ |
-| Editor de reglas endurecidas | ✅ | ⛌ |
+| Fácil conectividad con Microsoft Dynamics y Salesforce | ✅ | ⛌ |
+| Fácil conectividad con los almacenes de datos de Microsoft Azure | ✅ | ⛌ |
+| Editor de reglas reforzadas | ✅ | ⛌ |
 | Asistente de creación de formularios | ✅ | ⛌ |
-| Compatibilidad personalizada con XCI para el documento de registro | ✅ | ⛌ |
+| Compatibilidad con XCI personalizado para el documento de registro | ✅ | ⛌ |
 | Forms adaptable <sup>1</sup> | ✅ | ✅ |
 | API de comunicaciones (servicios de documentos) <sup>2,3</sup> | ✅ | ✅ |
 | Servicio de automated forms conversion <sup>4</sup> | ✅ | ✅ |
 | Portal de Forms <sup>5</sup> | ✅ | ✅ |
 | Modelo de datos de Forms <sup>6</sup> | ✅ | ✅ |
-| HTML5 Forms <sup>7</sup> | ⛌ | ✅ |
+| HTML5 FORMS <sup>7</sup> | ⛌ | ✅ |
 | Seguridad de los documentos | ⛌ | ✅ |
 
-Antes de proceder al servicio, tenga en cuenta los siguientes casos excepcionales:
+Antes de continuar con el servicio, tenga en cuenta los siguientes casos excepcionales:
 
 +++ 1. Forms adaptable
 
-* **Forms adaptable basado en XSD:** El servicio no es compatible con HTML5 Forms (Mobile Forms). Si procesa los formularios basados en XDP como HTML5 Forms, puede seguir utilizando la función en AEM 6.5 Forms. Puede utilizar la plantilla XDP para diseñar una plantilla para Document for Record. El servicio no admite Forms adaptable basado en XFA
-* **Importación de plantillas de formulario adaptable:** Utilice la canalización de compilaciones y el repositorio Git correspondiente de su programa para importar las plantillas de formularios adaptables existentes.
-* **Editor de reglas:** AEM Forms as a Cloud Service proporciona un [Editor de reglas](rule-editor.md#visual-rule-editor). El editor de código no está disponible en Forms as a Cloud Service. La utilidad de migración le ayuda a migrar los formularios que tengan reglas personalizadas (creadas en el editor de código). La utilidad convierte estas reglas en funciones personalizadas compatibles con Forms as a Cloud Service. Puede utilizar las funciones reutilizables con el editor de reglas para seguir obteniendo resultados obtenidos con las secuencias de comandos de reglas. `onSubmitError` o `onSubmitSuccess` ahora están disponibles como acciones en el Editor de reglas.
-* **Proyectos y presentaciones:** El servicio no conserva los metadatos para borradores y envía Adaptive Forms.
-* **Servicio de precarga:** De forma predeterminada, el servicio de rellenado previo combina los datos con un formulario adaptable en el cliente en lugar de combinar los datos en el servidor en AEM 6.5 Forms. La función ayuda a mejorar el tiempo necesario para rellenar previamente un formulario adaptable. Siempre puede configurar para ejecutar la acción de combinación en el servidor de Adobe Experience Manager Forms.
-* **Enviar acciones:** La variable **Enviar correo electrónico como PDF** la acción no está disponible. La variable **Correo electrónico** enviar acción proporciona opciones para enviar archivos adjuntos y adjuntar el documento de registro (DoR) con el correo electrónico.
-* **Componentes**: El servicio no admite la experiencia de firma en formularios y no incluye los componentes Resumen y verificación para Forms adaptable.
+* **Forms adaptable basado en XSD:** El servicio no es compatible con HTML5 Forms (Mobile Forms). Si procesa los formularios basados en XDP como Forms AEM de HTML5, puede seguir utilizando la función en Forms de.5. Puede utilizar una plantilla XDP para diseñar una plantilla para el documento de registro. El servicio no admite Forms adaptable basado en XFA
+* **Importación de plantillas de formulario adaptable:** Utilice la canalización de compilación y el repositorio Git correspondiente de su programa para importar las plantillas de formulario adaptable existentes.
+* **Editor de reglas:** AEM Forms as a Cloud Service proporciona un [Editor de reglas](rule-editor.md#visual-rule-editor). El editor de código no está disponible en Forms as a Cloud Service. La utilidad de migración le ayuda a migrar los formularios que tienen reglas personalizadas (creadas en el editor de código). La utilidad convierte estas reglas en funciones personalizadas compatibles con Forms as a Cloud Service. Puede utilizar las funciones reutilizables con el Editor de reglas para seguir obteniendo resultados con los scripts de reglas. `onSubmitError` o `onSubmitSuccess` Las funciones de ahora están disponibles como acciones en el Editor de reglas.
+* **Borradores y envíos:** El servicio no conserva metadatos para borradores y Forms adaptable enviados.
+* **Servicio de relleno previo:** AEM De forma predeterminada, el servicio de rellenado previo combina los datos con un formulario adaptable en el cliente en lugar de combinar los datos en el servidor en Forms 6.5 de. La función ayuda a mejorar el tiempo necesario para rellenar previamente un formulario adaptable. Siempre puede configurarlo para ejecutar la acción de combinación en el servidor de Adobe Experience Manager Forms.
+* **Acciones de envío:** El **Correo electrónico como PDF** La acción no está disponible. El **Correo electrónico** Enviar acción proporciona opciones para enviar archivos adjuntos y adjuntar el documento de registro (DoR) por correo electrónico.
+* **Componentes**: El servicio no admite la experiencia de firma en formularios y no incluye los componentes Resumen y Verificar para Forms adaptable.
 
 
 
@@ -62,19 +62,19 @@ Antes de proceder al servicio, tenga en cuenta los siguientes casos excepcionale
 
 El servicio no admite operaciones que dependan de otros servicios o aplicaciones:
 
-* No se admite la conversión de documentos en un formato que no sea de PDF a un formato de PDF. Por ejemplo, Microsoft Word para PDF, Microsoft Excel para PDF y HTML para PDF no son compatibles. Si los documentos están en un formato que no sea de PDF. Convierta estos documentos a formato de PDF antes de utilizarlos con las API de manipulación de documentos de comunicaciones. Por ejemplo, si sus documentos están en formato Microsoft Office, HTML, PostScript (PS) o XDP, convierta estos documentos a formato PDF antes de utilizarlos con documentos PDF.
-* No se admiten las conversiones basadas en Distiller de Adobe. Por ejemplo, PostScript(PS) a PDF
-* No se admiten las conversiones basadas en Forms Service. Por ejemplo, XDP para PDF forms.
+* No se admite la conversión de documentos en un formato no PDF a un formato PDF. Por ejemplo, Microsoft Word a PDF, Microsoft Excel a PDF y HTML a PDF no son compatibles. Si los documentos están en un formato que no sea de PDF. Convierta estos documentos a formato de PDF antes de utilizarlos con las API de manipulación de documentos de comunicaciones. Por ejemplo, si los documentos están en formato Microsoft Office, HTML, PostScript (PS) o XDP, conviértalos a formato PDF antes de utilizarlos con documentos de PDF.
+* Adobe Las conversiones basadas en Distiller no son compatibles. Por ejemplo, PostScript (PS) a PDF
+* Las conversiones basadas en el servicio de Forms no son compatibles. Por ejemplo, XDP para PDF forms.
 * El servicio no admite la conversión de un PDF firmado o un PDF transparente a otro formato de PDF.
-* La aplicación de derechos de uso mediante el servicio de extensiones de Reader no está disponible.
-* El servicio no permite convertir documentos PDF firmados o transparentes al formato PDF/A.
+* La aplicación de derechos de uso mediante el servicio Extensiones de Reader no está disponible.
+* El servicio no permite convertir documentos de PDF firmados o transparentes al formato PDF/A.
 
 +++
 
 
 +++ 3. Servicios de documentos: API de generación de documentos (servicio de salida)
 
-En una sola llamada o lote de API, solo puede utilizar una plantilla con varios archivos XML de DATOS. No se admite el uso de varias plantillas con varios archivos de datos en una sola llamada de API.
+En una sola llamada o lote de API, solo se puede utilizar una plantilla con varios archivos XML de DATOS. No se admite el uso de varias plantillas con varios archivos de datos en una sola llamada de API.
 
 +++
 
@@ -86,24 +86,24 @@ El servicio no proporciona un metamodelo para el servicio de Automated forms con
 
 +++ 5. Portal de Forms
 
-La compatibilidad con el uso anónimo de Forms Portal no está disponible de forma predeterminada (OOTB). Puede personalizar el portal de Forms para habilitar la visualización de formularios para usuarios que no hayan iniciado sesión.
+La compatibilidad con el uso anónimo del portal de Forms no está disponible de forma predeterminada (OOTB). Puede personalizar el portal de Forms para habilitar la visualización de formularios para los usuarios que no hayan iniciado sesión.
 
 +++
 
 +++ 6. Modelo de datos de formulario
 
-* El modelo de datos de Forms solo admite extremos HTTP y HTTP para enviar datos. El servicio no admite SSL mutuo para el conector REST y la autenticación basada en certificados x509 para fuentes de datos SOAP.
+* El modelo de datos de Forms solo admite extremos HTTP y HTTP para enviar datos. El servicio no admite SSL mutuo para el conector REST y autenticación basada en certificados x509 para fuentes de datos SOAP.
 
-* Forms as a Cloud Service permite utilizar Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive y servicios compatibles con operaciones generales de CRUD (Crear, Leer, Actualizar y Eliminar) a medida que se admiten almacenes de datos, tanto la especificación de API abierta 2.0 como la especificación de API abierta. El servicio también proporciona compatibilidad con el conector JDBC.
+* Forms as a Cloud Service permite utilizar Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive y servicios compatibles con las operaciones generales CRUD (Crear, Leer, Actualizar y Eliminar) como almacenes de datos, ya que se admiten tanto la especificación de API abierta 2.0 como la especificación de API abierta. El servicio también es compatible con el conector JDBC.
 
 +++
 
 
 +++ 7. HTML5 Forms
 
-* El servicio no es compatible con HTML5 Forms (Mobile Forms). Si procesa los formularios basados en XDP como HTML5 Forms, puede seguir utilizando la función en AEM 6.5 Forms.
+* El servicio no es compatible con HTML5 Forms (Mobile Forms). Si procesa los formularios basados en XDP como Forms AEM de HTML5, puede seguir utilizando la función en Forms de.5.
 
-* Si tiene un caso de uso para capturar datos sin conexión y sincronizarlos la próxima vez que vuelva a estar en línea, puede seguir usando la variable [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) en AEM 6.5 Forms.
+* Si tiene un caso de uso para capturar datos sin conexión y sincronizarlos la próxima vez que vuelva a estar en línea, puede seguir utilizando el [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) AEM Funcionalidad en Forms de.5.
 
 +++
 
@@ -111,11 +111,11 @@ La compatibilidad con el uso anónimo de Forms Portal no está disponible de for
 
 
 
-+++ 8. Entorno para desarrolladores
++++ 8. Entorno de desarrollo
 
 * Un entorno nativo de la nube no posee consola web (administrador de configuración). Puede usar el SDK de [[!DNL AEM Forms]  as a Cloud Service para generar configuraciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) y canalización de CI/CD e [implementar la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) en su instancia de Cloud Service.
 * De forma predeterminada, el correo electrónico admite los protocolos HTTP y HTTPs. [Póngase en contacto con el equipo de soporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email) para habilitar puertos para enviar correos electrónicos y para habilitar el protocolo SMTP para su entorno.
-* El servicio no admite la conversión de un PDF firmado o un PDF transparente a otro formato de PDF. Antes de utilizar los paquetes de clientes con Forms as a Cloud Service, vuelva a compilar el código personalizado con la última versión de la convención de URL adobe-aemfd-docmanager* de la Forms adaptable localizada. Ahora se puede especificar una configuración regional en la URL. La nueva convención de URL permite almacenar en caché formularios localizados en Dispatcher o CDN. En el entorno de Cloud Service, utilice el formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar una versión localizada de un formulario adaptable en lugar de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe recomienda utilizar el almacenamiento en caché de CDN o Dispatcher. Ayuda a mejorar la velocidad de procesamiento de los formularios rellenados previamente
+* El servicio no admite la conversión de un PDF firmado o un PDF transparente a otro formato de PDF. Antes de usar los paquetes de clientes con Forms as a Cloud Service, vuelva a compilar el código personalizado con la última versión de la convención de URL adobe-aemfd-docmanager* de Forms adaptable localizado y que ahora admite la especificación de una configuración regional en la URL. La nueva convención de URL permite almacenar en caché formularios localizados en Dispatcher o CDN. En el entorno de Cloud Service, utilice el formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar una versión localizada de un formulario adaptable en lugar de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe recomienda utilizar el almacenamiento en caché de CDN o Dispatcher. Ayuda a mejorar la velocidad de procesamiento de los formularios rellenados previamente
 * Adobe Experience Manager Forms as a Cloud Service ofrece muchas nuevas funciones y posibilidades para sus Proyectos AEM. Con todo, se requieren algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. En un nivel superior, AEM requiere una separación de contenido y código en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Utilice la herramienta [Modernizador de repositorio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=es) para reestructurar los paquetes de proyectos existentes separando contenido y código en paquetes discretos para que sean compatibles con la estructura de proyectos definida para Adobe Experience Manager as a Cloud Service.
 
 

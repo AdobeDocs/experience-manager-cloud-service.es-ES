@@ -61,7 +61,6 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 ### Características beta de [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
 - **Conector de almacenamiento unificado:** Utilice el conector de almacenamiento unificado para externalizar los datos en proceso en repositorios que administre el cliente. Por ejemplo, puede almacenar datos de los flujos de trabajo de AEM en proceso (datos de variables del flujo de trabajo de AEM) que contengan datos personales confidenciales (SPD) en un repositorio que administra el cliente.
-
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](aem-forms-cloud-service-communications.md) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:

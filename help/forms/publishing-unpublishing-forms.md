@@ -36,9 +36,9 @@ ht-degree: 100%
 * Conjuntos de formularios
 * Recurso (imágenes, esquemas y hojas de estilo)
 
-Inicialmente, todos los recursos están disponibles solo en la instancia de autor. Un administrador o un autor de formularios pueden publicar todos los activos excepto los recursos.
+Inicialmente, todos los recursos están disponibles solo en la instancia de autor. Un administrador o un autor de formularios pueden publicar todos los recursos excepto los recursos.
 
-Al seleccionar un formulario y publicarlo, también se publican sus activos y recursos relacionados. Con todo, los recursos dependientes no se publican. En este contexto, los recursos y activos relacionados son recursos que un recursos publicado utiliza o a los que hace referencia. Los recursos dependientes son recursos que hacen referencia a un recurso publicado.
+Al seleccionar un formulario y publicarlo, también se publican sus recursos y recursos relacionados. Con todo, los recursos dependientes no se publican. En este contexto, los recursos y recursos relacionados son recursos que un recursos publicado utiliza o a los que hace referencia. Los recursos dependientes son recursos que hacen referencia a un recurso publicado.
 
 Sus formularios adaptables pueden utilizar algunas configuraciones, ajustes y personalizaciones que no se publican automáticamente. Se recomienda publicar o activar estos recursos antes de publicar un formulario adaptable.
 
@@ -80,7 +80,7 @@ Un recurso puede tener los siguientes estados:
       >No seleccione varios recursos. No se pueden publicar varios recursos a la vez.
 
 
-1. Cuando se inicia el proceso Publicar, aparece un cuadro de diálogo de confirmación con todos los recursos y activos relacionados. En el cuadro de diálogo que contiene los activos relacionados, pulse **[!UICONTROL Publicar]**. El recurso se publica y aparece el cuadro de diálogo Éxito al publicar recursos.
+1. Cuando se inicia el proceso Publicar, aparece un cuadro de diálogo de confirmación con todos los recursos y recursos relacionados. En el cuadro de diálogo que contiene los recursos relacionados, pulse **[!UICONTROL Publicar]**. El recurso se publica y aparece el cuadro de diálogo Éxito al publicar recursos.
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ Un recurso puede tener los siguientes estados:
 
    ![Un cuadro de diálogo de confirmación con todos los recursos y activos relacionados](assets/p4.png)
 
-   Un cuadro de diálogo de confirmación con todos los recursos y activos relacionados.
+   Un cuadro de diálogo de confirmación con todos los recursos y recursos relacionados.
 
    >[!NOTE]
    >

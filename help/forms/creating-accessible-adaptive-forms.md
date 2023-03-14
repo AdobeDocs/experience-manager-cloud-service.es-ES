@@ -45,9 +45,9 @@ La herramienta Inspector de nombres y descripciones accesibles (ANDI) ayuda a id
 
 ANDI trabaja con los principales exploradores de Internet. Consulte la documentación de [ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
 
-### Descargue e instale el tema Ultramarine-Accessible
+### Descargue e instale la temática Ultramarine-Accessible
 
-El tema Ultramarine-Accessible es un tema de referencia. Muestra cómo corregir el contraste de color y otros problemas relacionados con la accesibilidad en un formulario adaptable. Adobe recomienda crear un tema personalizado para el entorno de producción en función de los estilos aprobados por su organización. Para cargar el tema en la instancia de AEM, haga lo siguiente:
+El tema Ultramarine-Accessible es un tema de referencia. Muestra cómo corregir el contraste de color y otros problemas relacionados con la accesibilidad en un formulario adaptable. Adobe recomienda crear un tema personalizado para el entorno de producción en función de los estilos aprobados por su organización. Para cargar la temática en la instancia de AEM, haga lo siguiente:
 
 1. Descargue el paquete de temáticas.
 1. Vaya a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegación]** ![Navegación](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** en la instancia de AEM.
@@ -63,7 +63,7 @@ Aplique el tema Ultramarine-Accessible al formulario adaptable existente. Para a
 
 1. Abra el formulario adaptable para editarlo.
 1. Seleccione un componente y pulse el icono principal. En el menú contextual, pulse **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, pulse el icono configurar.
-1. Seleccione el tema Ultramarine-Accessible en el explorador de propiedades y pulse el icono **[!UICONTROL Guardar]**.
+1. Seleccione la temática Ultramarine-Accessible en el explorador de propiedades y pulse el icono **[!UICONTROL Guardar]**.
 1. Actualice la ventana del explorador. El tema se aplica al formulario adaptable.
 
 Después de aplicar un tema accesible, realice las siguientes correcciones adicionales. Las correcciones se agregan a las correcciones de accesibilidad que se tratan en el tema accesible:
@@ -170,7 +170,7 @@ Las siguientes teclas de método abreviado de teclado están disponibles para el
 |---|---|
 | <ul><li>Mostrar las opciones del componente Selector de fecha cuando el enfoque de la pestaña resalta el icono del calendario</li><li>Realice el evento de clic cuando el enfoque de la pestaña resalta una opción</li> | Espacio o Entrar |
 | Ocultar las opciones del componente Selector de fecha | Esc |
-| <ul><li>Mover el cursor hacia adelante por las opciones disponibles en el componente Selector de fecha.</li><li>Definir el enfoque de la pestaña en el icono del calendario cuando el campo de entrada de fecha está activo</li> | Tabulación |
+| <ul><li>Mover el cursor hacia adelante por las opciones disponibles en el componente Selector de fecha.</li><li>Definir el enfoque de la pestaña en el icono del calendario cuando el campo de entrada de fecha está activo</li> | Tab |
 | Mover el cursor hacia atrás a través de las opciones disponibles en el componente Selector de fecha | Mayús + Tab |
 | <ul><li>Mostrar las opciones del componente Selector de fecha cuando el enfoque de la pestaña resalta el campo de entrada de la fecha</li><li>Mover el cursor hacia abajo en el calendario disponible en el componente Selector de fecha</li> | Flecha hacia abajo |
 | Mover el cursor hacia arriba en el calendario disponible en el componente Selector de fecha | Flecha hacia arriba |

@@ -4,7 +4,7 @@ description: Obtenga información sobre las canalizaciones de CI/CD de Cloud Man
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 100%
 

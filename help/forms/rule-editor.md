@@ -405,7 +405,7 @@ Para escribir las reglas, realice los siguientes pasos:
 
    Aunque no puede cambiar ni modificar el objeto seleccionado, puede utilizar la lista desplegable de reglas, como se muestra a continuación, para seleccionar otro tipo de regla. Si desea crear una regla en otro objeto, pulse Cancelar para salir del editor de reglas y volver a iniciarla desde el objeto de formulario deseado.
 
-1. Pulse el menú desplegable **[!UICONTROL Seleccionar estado]** y haga clic en **[!UICONTROL is equal to]**. Aparece el campo **[!UICONTROL Escribir una cadena]**.
+1. Pulse el menú desplegable **[!UICONTROL Seleccionar estado]** y haga clic en **[!UICONTROL es igual a]**. Aparece el campo **[!UICONTROL Escribir una cadena]**.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -624,7 +624,7 @@ Para crear una biblioteca de cliente y agregarla al repositorio CRX, siga estos 
 
    >[!NOTE]
    >
-   >`customfunction`es una categoría de ejemplo. Puede elegir cualquier nombre para la categoría que cree en la carpeta `clientlib`.
+   >`customfunction` es una categoría de ejemplo. Puede elegir cualquier nombre para la categoría que cree en la carpeta `clientlib`.
 
 Después de agregar la biblioteca de cliente en el repositorio CRX, utilícela en el formulario adaptable. Permite utilizar la función personalizada como regla en el formulario. Para agregar la biblioteca del cliente en el formulario adaptable, siga estos pasos:
 
@@ -703,7 +703,7 @@ var c = {
 
 >[!NOTE]
 >
->Asegúrese de utilizar `jsdoc` para cada función personalizada. Aunque `jsdoc`se recomienda comentar, incluya uno vacío `jsdoc`para marcar la función como función personalizada. Permite la gestión predeterminada de la función personalizada.
+>Asegúrese de utilizar `jsdoc` para cada función personalizada. Aunque `jsdoc` se recomienda comentar, incluya uno vacío `jsdoc` para marcar la función como función personalizada. Permite la gestión predeterminada de la función personalizada.
 
 ## Administrar reglas {#manage-rules}
 

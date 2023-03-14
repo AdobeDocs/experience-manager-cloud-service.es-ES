@@ -97,7 +97,7 @@ Para crear una propiedad secundaria:
 1. En un modelo de datos de formulario, seleccione un objeto de modelo de datos y pulse **[!UICONTROL Crear propiedad secundaria]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear propiedad secundaria]**, especifique un nombre y un tipo de datos para la propiedad en los campos **[!UICONTROL Nombre]** y **[!UICONTROL Tipo]**, respectivamente. Si lo desea, puede especificar un título y una descripción para la propiedad.
 1. Habilite la opción Calculada si la propiedad es una propiedad calculada. El valor de una propiedad calculada se evalúa en función de una regla o una expresión. Para obtener más información, consulte [Editar propiedades](#properties).
-1. Si el objeto del modelo de datos está enlazado a una fuente de datos, la propiedad secundaria añadida se enlazará automáticamente a la propiedad del objeto del modelo de datos principal con el mismo nombre y tipo de datos.
+1. Si el objeto del modelo de datos está enlazado a una fuente de datos, la propiedad secundaria agregada se enlazará automáticamente a la propiedad del objeto del modelo de datos principal con el mismo nombre y tipo de datos.
 
    Para enlazar manualmente una propiedad secundaria con una propiedad de objeto del modelo de datos, pulse el icono de examinar situado junto al campo **[!UICONTROL Referencia de enlace]**. El cuadro de diálogo **[!UICONTROL Seleccionar objeto]** enumera todas las propiedades del objeto del modelo de datos principal. Seleccione una propiedad con la que enlazar el objeto y pulse el icono del tic. Solo puede seleccionar una propiedad del mismo tipo de datos que la propiedad secundaria.
 
@@ -195,9 +195,9 @@ Utilice el atributo de solicitud para recuperar las propiedades asociadas de la 
    >[!NOTE]
    >
    > * Si utiliza una plantilla estática, superponga head.jsp en:
-   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Si utiliza una plantilla editable, superponga aftemplatedpage.jsp en:
-   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Establezca [!DNL paramMap] para el atributo de solicitud. Por ejemplo, incluya el siguiente código en el archivo .jsp de la carpeta de aplicaciones:
@@ -405,7 +405,7 @@ El modelo de datos de formulario está configurado, pero antes de ponerlo en uso
 
 1. En la ventana [!UICONTROL Modelo de datos de formulario de prueba], seleccione el objeto o servicio del modelo de datos que desea probar en el panel Entrada.
 
-1. Especifique un valor de argumento en el código de prueba y pulse **[!UICONTROL Prueba]**. Una prueba que funciene correctamente devuelve el resultado en el panel Salida.
+1. Especifique un valor de argumento en el código de prueba y pulse **[!UICONTROL Prueba]**. Una prueba que funcione correctamente devuelve el resultado en el panel Salida.
 
    ![Resultados de la prueba](assets/test_results_form_data_model_new.png)
 
@@ -419,9 +419,9 @@ El indicador se puede establecer en cualquiera de los siguientes valores:
 
 * **COMPLETO**: FDM realiza la validación en función de todas las restricciones.
 * **DESACTIVADO**: sin validación.
-* **BÁSICO**: FDM realiza la validación en función de las restricciones &#39;requeridas&#39; y &#39;admisibles&#39;.
+* **BÁSICO**: FDM realiza la validación en función de las restricciones “requeridas” y “admisibles”.
 
-Si no se establece ningún valor para el `ValidationOptions`indicador, se aplica una validación de nivel **BÁSICO** en los datos de entrada.
+Si no se establece ningún valor para el `ValidationOptions` indicador, se aplica una validación de nivel **BÁSICO** en los datos de entrada.
 
 A continuación se muestra un ejemplo de cómo configurar el indicador de validación en **COMPLETO**:
 

@@ -284,7 +284,7 @@ Al aplicar estilo a un componente, los estilos se almacenan en caché y se enume
 
 ![Estilo de fuente almacenado en caché para un componente disponible para otro](assets/font-style-cached1.png)
 
-En este ejemplo, se cambia el estilo de la etiqueta de campo y, cuando se selecciona Descripción del panel interactivo para el estilo, se añade una entrada de lista en la biblioteca de recursos. La entrada de la biblioteca de recursos se puede utilizar para cambiar el estilo de Descripción del panel interactivo.
+En este ejemplo, se cambia el estilo de la etiqueta de campo y, cuando se selecciona Descripción del panel interrecurso para el estilo, se añade una entrada de lista en la biblioteca de recursos. La entrada de la biblioteca de recursos se puede utilizar para cambiar el estilo de Descripción del panel interactivo.
 
 Cuando se añade un estilo en la biblioteca de recursos, está disponible para otras temáticas y para el [modo de estilo](inline-style-adaptive-forms.md) de la interfaz de usuario del editor de formularios. Del mismo modo, cuando se utiliza el modo de estilo de la interfaz de usuario del editor de formularios <!-- or interactive communication editor --> para dar estilo a un componente, el estilo se almacena en caché y está disponible en las temáticas.
 
@@ -348,7 +348,7 @@ En la barra de herramientas Lienzo, verá:
    * Administrar estilos: proporciona opciones para administrar estilos de texto e imagen
    * Ayuda: ejecuta una repaso guiado con imágenes sobre el editor de temáticas.
 
-* **[!UICONTROL Emulador]** ![ruler](assets/ruler.png): emula el aspecto de la temática para diferentes tamaños de visualización. Un tamaño de visualización se trata como un punto de interrupción en el emulador. Puede seleccionar un punto de interrupción y especificar un estilo para él. Por ejemplo, Escritorio y Tablet son dos puntos de interrupción. Puede especificar distintos estilos para cada punto de interrupción.
+* **[!UICONTROL Emulador]** ![regla](assets/ruler.png): emula el aspecto de la temática para diferentes tamaños de visualización. Un tamaño de visualización se trata como un punto de interrupción en el emulador. Puede seleccionar un punto de interrupción y especificar un estilo para él. Por ejemplo, Escritorio y Tablet son dos puntos de interrupción. Puede especificar distintos estilos para cada punto de interrupción.
 
 Cuando seleccione un componente en el lienzo, verá la barra de herramientas de componentes encima. La barra de herramientas de componentes permite seleccionar componentes o cambiar a componentes genéricos. Por ejemplo, se selecciona un cuadro de texto numérico en un panel. Verá las siguientes opciones en la barra de herramientas de componentes:
 

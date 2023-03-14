@@ -47,7 +47,7 @@ El primer paso para implementar la integración de datos es identificar y config
 Revise la siguiente información para iniciar, entender e implementar la integración de datos.
 
 * [Configurar fuentes de datos](configure-data-sources.md)
-* [Crear modelo de datos de formulario](create-form-data-models.md)
+* [Crear un modelo de datos de formulario](create-form-data-models.md)
 * [Trabajar con el modelo de datos de formulario](work-with-form-data-model.md)
 * [Uso del modelo de datos de formulario](using-form-data-model.md)
 

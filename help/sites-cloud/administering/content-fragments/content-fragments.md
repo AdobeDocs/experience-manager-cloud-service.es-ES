@@ -4,7 +4,7 @@ description: Descubra cómo los fragmentos de contenido en Adobe Experience Mana
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
 workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 98%
@@ -82,7 +82,7 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en u
 >[!NOTE]
 >
 >Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** son funciones distintas de AEM:
->* **Fragmentos de contenido** son contenido editorial, con definición y estructura, pero sin diseño visual y/o diseño adicional. Se pueden utilizar para acceder a datos estructurados, como textos, números y fechas, entre otros.
+>* **Fragmentos de contenido** son contenido editorial, con definición y estructura, pero sin diseño visual o adicional. Pueden utilizarse para acceder a datos estructurados, incluidos textos, números y fechas, entre otros.
 >* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.

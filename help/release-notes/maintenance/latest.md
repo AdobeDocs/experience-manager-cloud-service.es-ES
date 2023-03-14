@@ -51,4 +51,4 @@ No actualice si utiliza CORS. En esta versión se identificó un problema que af
 | AEM OAK DE LA | 1,44-T20221206170501-6d59064 | [API de Oak 1.44.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.44.0/index.html) |
 | AEM API DE SLING | Versión 2.27.0 | [API de Apache Sling 2.27.0](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL DE LA | Versión 1.4.20-1.4.0 | [Especificación del lenguaje de plantilla de HTML](https://github.com/adobe/htl-spec) |
-| AEM Core Components | Versión 2.21.2 | [AEM Componentes principales de WCM](https://github.com/adobe/aem-core-wcm-components) |
+| Los componentes principales de AEM | Versión 2.21.2 | [AEM Componentes principales de WCM](https://github.com/adobe/aem-core-wcm-components) |

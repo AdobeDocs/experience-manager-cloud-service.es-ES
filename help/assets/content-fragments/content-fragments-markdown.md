@@ -1,10 +1,10 @@
 ---
-title: Markdown (Assets - Fragmentos de contenido)
-description: Comprender cómo el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle crear fácilmente contenido sin encabezado.
+title: Markdown (Recursos - Fragmentos de contenido)
+description: Comprenda cómo el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle crear fácilmente contenido sin encabezado.
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: c15ef1cc9b14466105e5565c8ccc15120346f0f2
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 92%
@@ -13,7 +13,7 @@ ht-degree: 92%
 
 # Markdown {#markdown}
 
-Cuando [creación](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza *markdown* sintaxis para permitirle escribir fácilmente contenido sin encabezado:
+Cuando usted es [creación](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza *markdown* sintaxis para permitirle escribir fácilmente contenido sin encabezado:
 
 ![Editor de Markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

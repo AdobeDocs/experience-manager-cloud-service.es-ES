@@ -1,5 +1,5 @@
 ---
-title: Resolución de problemas de la herramienta de transferencia de contenido (heredada)
+title: Solución de problemas de la herramienta de transferencia de contenido (heredada)
 description: Resolución de problemas de la herramienta de transferencia de contenido
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 94%
 
 ---
 
-# Resolución de problemas de la herramienta de transferencia de contenido (heredada) {#troubleshoot-content-transfer-tool}
+# Solución de problemas de la herramienta de transferencia de contenido (heredada) {#troubleshoot-content-transfer-tool}
 
 
 ## ID de blob faltantes {#missing-blobs}

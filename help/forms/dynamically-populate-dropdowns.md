@@ -17,7 +17,7 @@ ht-degree: 100%
 ---
 
 
-# Rellenado dinámico de listas desplegables {#dynamically-populating-drop-down-lists}
+# Rellenar de manera dinámica listas desplegables {#dynamically-populating-drop-down-lists}
 
 ## Requisitos previos {#prerequisites}
 

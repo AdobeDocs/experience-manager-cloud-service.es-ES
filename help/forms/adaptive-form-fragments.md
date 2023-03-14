@@ -104,7 +104,7 @@ Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la 
 
    El panel se guardará en la ubicación especificada o predeterminada del repositorio. En el formulario adaptable, el panel se reemplazará por una captura del fragmento. Como se muestra a continuación, el panel Información general y sus paneles secundarios, Información personal y Dirección, se guardarán como un fragmento.
 
-   Para editar el fragmento, haga clic en **[!UICONTROL Editar activo]** en la barra de herramientas del panel. El fragmento se abre en una nueva pestaña o ventana en modo de edición.
+   Para editar el fragmento, haga clic en **[!UICONTROL Editar recurso]** en la barra de herramientas del panel. El fragmento se abre en una nueva pestaña o ventana en modo de edición.
 
    ![Editar fragmentos](assets/edit-fragment.png)
 

@@ -32,7 +32,7 @@ Asegúrese de haber configurado las fuentes de datos que desea utilizar en el mo
 
 1. En la instancia de autor de [!DNL Experience Manager], vaya a **[!UICONTROL Formularios > Integraciones de datos]**.
 1. Pulse **[!UICONTROL Crear > Modelo de datos de formulario.]**
-1. En el cuadro de diálogo Crear modelo de datos de formulario:
+1. En el cuadro de diálogo Crear un modelo de datos de formulario:
 
    * Especifique un nombre para el modelo de datos del formulario.
    * (**Opcional**) Especifique el título, la descripción y las etiquetas del modelo de datos del formulario.

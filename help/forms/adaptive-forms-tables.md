@@ -6,7 +6,7 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 100%
 

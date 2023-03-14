@@ -5,7 +5,7 @@ exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 Esta página describe las notas de la versión generales de Experience Manager as a Cloud Service 2020.6.0.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
 La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.6.0 es el 4 de junio de 2020.
 
@@ -58,35 +58,35 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 ### Novedades {#what-is-new-cloud-manager}
 
-* Un usuario con la función *Propietario empresarial* en Cloud Manager ahora puede eliminar un programa de espacio aislado para pruebas de la página de aterrizaje (con el botón de acción rápida en tarjeta de programa) o desde el programa.
+* Un usuario con el rol de *Propietario del negocio* en Cloud Manager ahora puede eliminar un programa de zona protegida para pruebas de la página de aterrizaje (con el botón de acción rápida en tarjeta de programa) o desde el programa.
 
-   Consulte [Eliminación de un programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obtener más información.
+   Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
 
-* Un usuario de programa de espacio aislado en la función *Propietario empresarial* o *Administrador de implementación* en Cloud Manager ahora puede eliminar su conjunto de entornos de producción y ensayo en la interfaz de usuario de Cloud Manager. La opción Eliminar ya está disponible en la tarjeta de entorno de la página **Información general de Programas** y en la página **Entornos**. Al seleccionar la opción de eliminación en producción o fase también se eliminan las otras del conjunto.
+* Un usuario de programa de zona protegida en el rol de *Propietario del negocio* o *Administrador de implementación* en Cloud Manager ahora puede eliminar su conjunto de entornos de producción y ensayo en la interfaz de usuario de Cloud Manager. La opción Eliminar ya está disponible en la tarjeta de entorno de la página **Información general de Programas** y en la página **Entornos**. Al seleccionar la opción de eliminación en producción o fase también se eliminan las otras del conjunto.
 
-   Consulte [Eliminación de un programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obtener más información.
+   Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
 
 * Marcas de entrenador en la página de aterrizaje para informar e instruir al usuario sobre la navegación básica.
 
 * Marcas de entrenador en la página de **Información general de Programa** para informar e instruir al usuario sobre la navegación básica dentro de Cloud Manager para los primeros pasos.
 
-* Ahora hay disponible una página **LEARN** en Cloud Manager, a la que se puede acceder desde la barra de navegación superior. Esta página incluye recursos para ayudar a los usuarios a conocer los flujos de trabajo utilizados con más frecuencia según su función asignada en Cloud Manager.
+* Ahora hay disponible una página **LEARN** en Cloud Manager, a la que se puede acceder desde la barra de navegación superior. Esta página incluye recursos para ayudar a los usuarios a conocer los flujos de trabajo utilizados con más frecuencia según su rol asignado en Cloud Manager.
 
-* Los Programas de espacio aislado ahora se identifican mediante un distintivo de **Espacio aislado** que se mostrará en la tarjeta de programa de la página de aterrizaje junto al nombre del programa en la página **Información general del Programa**.
+* Los Programas de zona protegida ahora se identifican mediante un distintivo de **Zona protegida** que se mostrará en la tarjeta de programa de la página de aterrizaje junto al nombre del programa en la página **Información general del Programa**.
 
-* Un usuario con la función SysAdmin ahora tiene acceso con un solo clic a la ubicación de Admin Console desde la que se pueden administrar las funciones de los usuarios o los permisos de Cloud Manager. Ahora está disponible el botón **Administrar acceso** en la página de aterrizaje junto al botón **Añadir Programa**.
+* Un usuario con el rol de SysAdmin ahora tiene acceso con un solo clic a la ubicación de Admin Console desde la que se pueden administrar los roles de los usuarios o los permisos de Cloud Manager. Ahora está disponible el botón **Administrar acceso** en la página de aterrizaje junto al botón **Agregar Programa**.
 
-   Consulte [Tareas de SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) para obtener más información.
+   Consulte [Tareas de SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=es#sysadmin-tasks) para obtener más información.
 
-* Un usuario con la función SysAdmin ahora tiene acceso con un solo clic a la instancia de autor directamente desde Cloud Manager.
+* Un usuario con el rol de SysAdmin ahora tiene acceso con un solo clic a la instancia de autor directamente desde Cloud Manager.
 
-   Consulte [Administración del acceso a la instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) para obtener más información.
+   Consulte [Administración del acceso a la instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=es#manage-access-aem) para obtener más información.
 
-* El registro de compilación ahora incluye la lista de artefactos descubiertos, incluidos los paquetes de contenido omitido.
+* El registro de generación ahora incluye la lista de artefactos descubiertos, incluidos los paquetes de contenido omitido.
 
 * El paso Generar ahora valida que todos los paquetes de contenido generados incluyen todas las propiedades obligatorias: nombre, grupo y versión.
 
-* El paso Generar ahora valida que la compilación produjo al menos un paquete de contenido.
+* El paso Generar ahora valida que la generación produjo al menos un paquete de contenido.
 
 ### Correcciones de errores {#bug-fixes-cm}
 
@@ -98,9 +98,9 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 ### Problemas conocidos {#known-issues-cm}
 
-* Los Entornos dentro de un programa de espacio aislado hibernarán cuando no se detecte ninguna actividad durante un tiempo determinado. Este estado no se observa en Cloud Manager. Sin embargo, el estado se puede observar a través de Developer Console. Esto se solucionará en una próxima versión.
+* Los Entornos dentro de un programa de zona protegida hibernarán cuando no se detecte ninguna actividad durante un tiempo determinado. Este estado no se observa en Cloud Manager. Sin embargo, el estado se puede observar a través de Developer Console. Esto se solucionará en una próxima versión.
 
-* El vínculo a Developer Console directamente desde Cloud Manager no mostrará la opción de anular la hibernación o hibernar el entorno de un programa de espacio aislado para pruebas. Para solucionarlo, una vez en Developer Console, añada el patrón `#release-cm-p1234-e5678` al final de la dirección URL, donde *1234* es el ID de Programa y *5678* es el ID del entorno. Esto se solucionará en una próxima versión.
+* El vínculo a Developer Console directamente desde Cloud Manager no mostrará la opción de anular la hibernación o hibernar el entorno de un programa de zona protegida para pruebas. Para solucionarlo, una vez en Developer Console, agregue el patrón `#release-cm-p1234-e5678` al final de la dirección URL, donde *1234* es el ID de Programa y *5678* es el ID del entorno. Esto se solucionará en una próxima versión.
 
 ## Novedades de [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
@@ -189,4 +189,4 @@ Además de las nuevas funciones anteriores, la versión actual proporciona las s
 * Al descargar un recurso, si se selecciona la opción de correo electrónico e incluso si se proporciona un ID de correo electrónico válido, la opción de descarga no está disponible. (CQ-4296535)
 * Los filtros personalizados guardados como colecciones inteligentes no se aplican correctamente a los recursos. (CQ-4294942)
 * Varias mejoras en la búsqueda y la indexación y correcciones de errores para mejorar el rendimiento. (CQ-4286373)
-* No se puede acceder a la pestaña de propiedades de la carpeta en Assets y devuelve un error 500. (CQ-4295701)
+* No se puede acceder a la pestaña de propiedades de la carpeta en Assets y devuelve el error 500. (CQ-4295701)

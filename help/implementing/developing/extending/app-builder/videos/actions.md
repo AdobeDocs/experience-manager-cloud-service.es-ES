@@ -1,6 +1,6 @@
 ---
-title: Acciones de App Builder
-description: Obtenga información sobre las acciones de Adobe en tiempo de ejecución y para utilizarlas en aplicaciones de App Builder.
+title: Acciones del Generador de aplicaciones
+description: Obtenga información sobre las acciones de Adobe en tiempo de ejecución y cómo utilizarlas en las aplicaciones de App Builder.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -12,17 +12,17 @@ exl-id: f1a67f80-7366-4337-8bcd-062a3412acc9
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
-# Acciones de App Builder
+# Acciones del Generador de aplicaciones
 
 >[!IMPORTANT]
 >
-> _El proyecto Adobe Firefly, como se menciona en los vídeos de esta serie, ahora se llama App Builder_
+> _Adobe Project Firefly, según se menciona en los vídeos de esta serie, se denomina ahora Generador de aplicaciones_
 
-## Introducción a las acciones
+## Introducción a acciones
 
 Obtenga información sobre Adobe I/O Runtime, acciones y cómo crear acciones.
 
@@ -30,11 +30,11 @@ Obtenga información sobre Adobe I/O Runtime, acciones y cómo crear acciones.
 
 ## Activación, secuencia, déclencheur y reglas
 
-Descubra cómo se relacionan las acciones con activaciones, acciones web, déclencheur y reglas.
+Obtenga información sobre cómo se relacionan las acciones con activaciones, acciones web, déclencheur y reglas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
 
-## Acciones en aplicaciones de App Builder
+## Acciones en aplicaciones del Generador de aplicaciones
 
 Obtenga información sobre cómo crear acciones que se pueden utilizar como aplicaciones de App Builder.
 
@@ -42,6 +42,6 @@ Obtenga información sobre cómo crear acciones que se pueden utilizar como apli
 
 ## Crear una acción
 
-Obtenga información sobre cómo crear una acción de App Builder .
+Obtenga información sobre cómo crear una acción de App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339195/?quality=12&learn=on)

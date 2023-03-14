@@ -2,8 +2,8 @@
 title: Crear un portal de Forms en una página de Experience Manager Sites
 description: Obtenga información sobre cómo crear un portal de Forms y utilizar componentes principales listos para usar en una página de AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
-workflow-type: ht
+source-git-commit: a243664302c75fcb3125d68838353bd87cf24de3
+workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 100%
 

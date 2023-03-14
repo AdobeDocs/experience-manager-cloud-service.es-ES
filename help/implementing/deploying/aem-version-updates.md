@@ -3,7 +3,7 @@ title: Actualizaciones de la versión de AEM
 description: Actualizaciones de la versión de AEM
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: c3e1559923699d300d78a71195bd5658c3323331
+source-git-commit: f977c6d8fa3ebd4b082e48da8b248178f9a2f34b
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 30%
@@ -15,7 +15,7 @@ ht-degree: 30%
 
 ## Introducción {#introduction}
 
-AEM as a Cloud Service ahora utiliza la integración y la entrega continua (CI/CD) para garantizar que sus proyectos se encuentren en la versión de AEM más actual. Esto significa que las instancias de producción y ensayo se actualizan a la última versión de AEM sin interrupciones del servicio para los usuarios.
+AEM as a Cloud Service ahora utiliza la integración y la entrega continua (CI/CD) para garantizar que sus proyectos se encuentren en la versión de AEM más actual. AEM Esto significa que las instancias de producción y ensayo se actualizan a la última versión de la aplicación sin interrupciones del servicio para los usuarios de.
 
 >[!NOTE]
 >
@@ -33,16 +33,16 @@ Existen dos tipos de actualizaciones versión de AEM:
 
    * Publicadas mediante una programación mensual predecible.
 
-AEM actualizaciones pasan por un proceso de validación de productos intenso y totalmente automatizado, que incluye varios pasos, lo que garantiza que no se interrumpa el servicio de ningún sistema en producción. Los controles sanitarios se utilizan para controlar el estado de la aplicación. Si estas comprobaciones fallan durante una actualización as a Cloud Service AEM, la versión no se realizará y el Adobe investigará por qué la actualización provocó este comportamiento inesperado.
+AEM Las actualizaciones de los productos pasan por un proceso de validación de productos intenso y totalmente automatizado que incluye varios pasos, lo que garantiza que no se interrumpa el servicio de ningún sistema en producción. Las comprobaciones de estado se utilizan para supervisar el estado de la aplicación. AEM Si estas comprobaciones fallan durante una actualización as a Cloud Service del estado, la versión no continúa y el Adobe investigará por qué la actualización ha provocado este comportamiento inesperado.
 
-[Pruebas de producto y pruebas funcionales del cliente,](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) que impiden que las actualizaciones de productos y los impulsos de código de cliente rompan los sistemas de producción, también se validan durante una actualización de versión de AEM.
+[Pruebas de productos y pruebas funcionales de clientes,](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) AEM que evitan que las actualizaciones de productos y las inserciones de código de cliente rompan los sistemas de producción, también se validan durante una actualización de versión de la.
 
 >[!NOTE]
 >
->Si el código personalizado se insertó en el entorno de ensayo y no en la producción, la siguiente actualización de AEM eliminará esos cambios para reflejar la etiqueta git de la última versión correcta del cliente en la producción. Por lo tanto, el código personalizado que solo estaba disponible en el entorno de ensayo tendrá que volver a implementarse.
+>AEM Si el código personalizado se insertó en el ensayo y no en la producción, la siguiente actualización de la eliminará esos cambios para reflejar la etiqueta de Git de la última versión correcta del cliente en producción. Por lo tanto, el código personalizado que solo estaba disponible en el ensayo deberá implementarse de nuevo.
 
-## Almacenamiento de nodos compuestos {#composite-node-store}
+## Almacén de nodos compuestos {#composite-node-store}
 
-Las actualizaciones en la mayoría de los casos no tendrán tiempo de inactividad, incluido para la instancia de creación, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a la función de almacén de nodos compuestos en Oak.
+Las actualizaciones en la mayoría de los casos no implican ningún tiempo de inactividad, incluida la instancia de creación, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a la función de almacén de nodos compuestos en Oak.
 
-Esta función permite AEM varios repositorios simultáneamente. En una implementación móvil, la nueva versión verde AEM contiene su propia versión `/libs` (el repositorio inmutable basado en TarMK), distinto de la versión azul AEM anterior, aunque ambos hacen referencia a un repositorio mutable compartido basado en DocumentMK que contiene áreas como `/content` , `/conf` , `/etc` y otros. Porque tanto el azul como el verde tienen sus propias versiones de `/libs`, ambos pueden estar activos durante la actualización móvil, lo que hace que el tráfico pase hasta que el azul se sustituya por el verde.
+AEM Esta función permite a los usuarios hacer referencia a varios repositorios de forma simultánea. AEM En una implementación móvil, la nueva versión de la aplicación en color verde contiene la suya propia `/libs` AEM (el repositorio inmutable basado en TarMK), distinto de la versión anterior de la versión azul de la, aunque ambos hacen referencia a un repositorio mutable basado en DocumentMK compartido que contiene áreas como `/content` , `/conf` , `/etc` y otros. Porque tanto el azul como el verde tienen sus propias versiones de `/libs`, ambos pueden estar activos durante la actualización móvil, y activar el tráfico hasta que el azul se sustituya completamente por el verde.

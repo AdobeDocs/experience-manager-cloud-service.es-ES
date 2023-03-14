@@ -20,14 +20,14 @@ La integración de datos de [!DNL Experience Manager Forms] permite utilizar fue
 
 * [Integración de datos de [!DNL Experience Manager Forms]](data-integration.md)
 * [Configurar fuentes de datos](configure-data-sources.md)
-* [Crear modelo de datos de formulario](create-form-data-models.md)
+* [Crear un modelo de datos de formulario](create-form-data-models.md)
 * [Trabajar con el modelo de datos de formulario](work-with-form-data-model.md)
 
 Un modelo de datos de formulario es una extensión del esquema JSON que puede utilizar para lo siguiente:
 
 * [Crear formularios adaptables y fragmentos;](#create-af)
 
-<!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
+   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
 * [Usar una vista previa con datos de ejemplo;](#preview-ic)
 * [Usar el servicio del modelo de datos de formulario;](#prefill)
 * [Escribir en diferido datos de formulario adaptable en fuentes de datos;](#write-af)
@@ -39,7 +39,7 @@ Puede crear [formularios adaptables](creating-adaptive-form.md) y fragmentos de 
 
 1. En la pestaña modelo de formulario de la pantalla Agregar propiedades, seleccione **[!UICONTROL Modelo de datos de formulario]** en la lista desplegable **[!UICONTROL Seleccionar desde]**.
 
-   ![crear-af-1-1](assets/create-af-1-1.png)
+   ![create-af-1-1](assets/create-af-1-1.png)
 
 1. Pulse para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
 
@@ -128,7 +128,7 @@ También puede enviar los archivos adjuntos del formulario a una fuente de datos
 1. Pulse para seleccionar el componente añadido y pulse ![icono_configuración](assets/configure-icon.svg) para abrir el Explorador de propiedades del componente.
 1. En el campo Referencia de enlace, pulse ![foldersearch_18](assets/folder-search-icon.svg) y desplácese hasta seleccionar la propiedad binaria añadida en el modelo de datos de formulario. Configure otras propiedades según corresponda.
 
-   Pulse ![botón de verificación](assets/save_icon.svg) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
+   Pulse ![check-button](assets/save_icon.svg) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
 
 1. En la sección Envío de las propiedades del contenedor de formulario adaptable, active **[!UICONTROL Enviar archivos adjuntos del formulario]**. Esto envía el archivo adjunto del campo de propiedad binaria a la fuente de datos al enviar el formulario.
 

@@ -4,8 +4,8 @@ seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: Puede utilizar el componente Contenedor de AEM Forms para añadir o incrustar formularios adaptables en una página de AEM Sites para rellenar y enviar un formulario sin tener que abandonar la página.
 feature: Adaptive Forms
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 51d7198ccf24ca0b46c4e4a34cb1d1ee8ed7e2c0
-workflow-type: ht
+source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
+workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 100%
 
@@ -103,7 +103,7 @@ Para modificar cualquier configuración o propiedad del formulario adaptable inc
 Tenga en cuenta los siguientes puntos al incrustar formularios adaptables en páginas de AEM Sites:
 
 * El encabezado y el pie de página del formulario original no se incluyen en el formulario incrustado.
-* Los borradores de los usuarios y los envíos de formularios incrustados son compatibles y visibles en las pestañas Borradores y Formularios enviados del portal de Forms.
+* Los borradores de los usuarios y los envíos de formularios incrustados son compatibles y visibles en las pestañas Borradores y Formularios enviados del portal de formularios.
 * La acción de envío configurada en el formulario original se mantiene en el formulario incrustado.
 * La segmentación de experiencias y las pruebas A/B configuradas en el formulario original no funcionan en el formulario incrustado. Sin embargo, puede utilizar la segmentación de experiencias en la página de Sites para presentar diferentes formularios basados en perfiles de usuario.
 * Si Adobe Analytics está configurado para el formulario original, los datos de análisis del formulario incrustado se capturan en esta aplicación. Sin embargo, no está disponible en el informe de análisis de Forms.

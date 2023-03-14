@@ -15,36 +15,36 @@ ht-degree: 8%
 
 # Administrar publicación en Experience Manager Assets {#manage-publication-in-aem}
 
-Como [!DNL Adobe Experience Manager Assets] administrador, puede publicar recursos y carpetas que contengan recursos de la instancia de autor en [!DNL Experience Manager Assets], [!DNL Dynamic Media]y [!DNL Brand Portal]. Además, puede programar el flujo de trabajo de publicación de un recurso o carpeta para una fecha u hora posterior. Una vez publicados, los usuarios pueden acceder a los recursos y distribuirlos a otros usuarios. De forma predeterminada, puede publicar recursos y carpetas en [!DNL Experience Manager Assets]. Sin embargo, puede configurar [!DNL Experience Manager Assets] para habilitar la publicación en [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) y [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+Como un [!DNL Adobe Experience Manager Assets] administrador, puede publicar recursos y carpetas que contengan recursos de su instancia de autor en [!DNL Experience Manager Assets], [!DNL Dynamic Media], y [!DNL Brand Portal]. Además, puede programar el flujo de trabajo de publicación de un recurso o carpeta para una fecha u hora posterior. Una vez publicados, los usuarios pueden acceder a los recursos y distribuirlos a otros usuarios. De forma predeterminada, puede publicar recursos y carpetas en [!DNL Experience Manager Assets]. Sin embargo, puede configurar lo siguiente [!DNL Experience Manager Assets] para habilitar la publicación en [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) y [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
-Puede publicar o cancelar la publicación de recursos en el nivel de recurso o de carpeta mediante **[!UICONTROL Publicación rápida]** o **[!UICONTROL Administrar publicación]** en la [!DNL Experience Manager Assets] interfaz. Si realiza las modificaciones posteriores al recurso o la carpeta originales en [!DNL Experience Manager Assets], los cambios no se reflejarán en la instancia de publicación hasta que no vuelva a publicar desde [!DNL Experience Manager Assets]. Garantiza que los cambios en curso no estén disponibles en la instancia de publicación. En la instancia de publicación solo están disponibles los cambios aprobados publicados por un administrador.
+Puede publicar recursos o cancelar la publicación de estos en el nivel de recurso o carpeta mediante **[!UICONTROL Publicación rápida]** o **[!UICONTROL Administrar publicación]** opción disponible en el [!DNL Experience Manager Assets] interfaz. Si realiza las modificaciones posteriores al recurso o la carpeta originales en [!DNL Experience Manager Assets]Sin embargo, los cambios no se reflejarán en la instancia de publicación hasta que vuelva a publicar desde [!DNL Experience Manager Assets]. Garantiza que los cambios en curso no estén disponibles en la instancia de publicación. Solo los cambios aprobados publicados por un administrador están disponibles en la instancia de publicación.
 
 * [Publicación de recursos mediante Publicación rápida](#quick-publish)
 * [Publicar recursos mediante Administrar publicación](#manage-publication)
 * [Publicar recursos más tarde](#publish-assets-later)
-* [Publicar recursos en Dynamic Media](#publish-assets-to-dynamic-media)
+* [Publicación de recursos en Dynamic Media](#publish-assets-to-dynamic-media)
 * [Publicar recursos en Brand Portal](#publish-assets-to-brand-portal)
 * [Limitaciones y sugerencias](#limitations-and-tips)
 
 ## Publicación de recursos mediante Publicación rápida {#quick-publish}
 
-Publicación rápida permite publicar contenido inmediatamente en el destino seleccionado. En el [!DNL Experience Manager Assets] , vaya a la carpeta principal y seleccione todos los recursos o carpetas que desee publicar. Haga clic en **[!UICONTROL Publicación rápida]** en la barra de herramientas y seleccione destino en la lista desplegable donde desee publicar los recursos.
+La publicación rápida permite publicar inmediatamente contenido en el destino seleccionado. Desde el [!DNL Experience Manager Assets] , vaya a la carpeta principal y seleccione todos los recursos o carpetas que desee publicar. Clic **[!UICONTROL Publicación rápida]** en la barra de herramientas, seleccione un destino en la lista desplegable en el que desee publicar los recursos.
 
 ![Publicación rápida](assets/quick-publish-to-aem.png)
 
 ## Publicar recursos mediante Administrar publicación {#manage-publication}
 
-Administrar publicación le permite publicar o cancelar la publicación del contenido desde y hacia el destino seleccionado, [añadir contenido](#add-content) a la lista de publicaciones desde el repositorio de DAM, [incluir configuración de carpeta](#include-folder-settings) para publicar contenido de las carpetas seleccionadas y aplicar filtros, y [programar publicación](#publish-assets-later) a una fecha u hora posterior.
+Administrar publicación permite publicar o cancelar la publicación del contenido desde y hacia el destino seleccionado, [añadir contenido](#add-content) a la lista de publicaciones desde el repositorio de DAM, [incluir configuración de carpeta](#include-folder-settings) para publicar contenido de las carpetas seleccionadas y aplicar filtros, y [programar publicación](#publish-assets-later) hasta una fecha u hora posterior.
 
-En el [!DNL Experience Manager Assets] , vaya a la carpeta principal y seleccione todos los recursos o carpetas que desee publicar. Haga clic en **[!UICONTROL Administrar publicación]** en la barra de herramientas. Si no tiene [!DNL Dynamic Media] y [!DNL Brand Portal] configurado en su [!DNL Experience Manager Assets] Por ejemplo, solo puede publicar recursos y carpetas en [!DNL Experience Manager Assets].
+Desde el [!DNL Experience Manager Assets] , vaya a la carpeta principal y seleccione todos los recursos o carpetas que desee publicar. Clic **[!UICONTROL Administrar publicación]** de la barra de herramientas. Si no tiene [!DNL Dynamic Media] y [!DNL Brand Portal] configurado en su [!DNL Experience Manager Assets] Por ejemplo, solo puede publicar recursos y carpetas en [!DNL Experience Manager Assets].
 
 ![Administrar publicación](assets/manage-publication-aem.png)
 
 Las siguientes opciones están disponibles en la [!UICONTROL Administrar publicación] interfaz:
 
 * [!UICONTROL Acciones]
-   * `Publish`: Publicar recursos y carpetas en el destino seleccionado
-   * `Unpublish`: Cancelar la publicación de recursos y carpetas desde el destino
+   * `Publish`: publique recursos y carpetas en el destino seleccionado
+   * `Unpublish`: Cancele la publicación de recursos y carpetas desde el destino
 
 * [!UICONTROL Destino]
    * `Publish`: Publicar recursos y carpetas en [!DNL Experience Manager Assets] (`AEM`)
@@ -52,35 +52,35 @@ Las siguientes opciones están disponibles en la [!UICONTROL Administrar publica
    * `Brand Portal`: Publicar recursos y carpetas en [!DNL Brand Portal]
 
 * [!UICONTROL Programación]
-   * `Now`: Publicar recursos inmediatamente
-   * `Later`: Publicar recursos en función de la variable `Activation` fecha y hora
+   * `Now`: Publique los recursos inmediatamente
+   * `Later`: publique recursos en función de `Activation` fecha u hora
 
-Para continuar, haga clic en **[!UICONTROL Siguiente]**. Según la selección, la variable **[!UICONTROL Ámbito]** refleja diferentes opciones. Las opciones para **[!UICONTROL Añadir contenido]** y **[!UICONTROL Incluir configuración de carpeta]** solo están disponibles para la publicación de recursos y carpetas en [!DNL Experience Manager Assets] (`Destination: Publish`).
+Para continuar, haga clic en **[!UICONTROL Siguiente]**. En función de la selección, la variable **[!UICONTROL Ámbito]** refleja las distintas opciones. Las opciones para **[!UICONTROL Añadir contenido]** y **[!UICONTROL Incluir configuración de carpeta]** solo están disponibles para publicar los recursos y carpetas en [!DNL Experience Manager Assets] (`Destination: Publish`).
 
 ![Administrar ámbito de publicación](assets/manage-publication-aem-scope.png)
 
 ### Añadir contenido {#add-content}
 
-Publicar en [!DNL Experience Manager Assets] le permite añadir más contenido (recursos y carpetas) a la lista de publicaciones. Puede agregar más activos o carpetas a la lista en los repositorios de dam. Haga clic en **[!UICONTROL Añadir contenido]** para añadir más contenido.
+Publicación en [!DNL Experience Manager Assets] permite añadir más contenido (recursos y carpetas) a la lista de publicación. Puede agregar más recursos o carpetas a la lista en los repositorios DAM. Haga clic en **[!UICONTROL Añadir contenido]** para añadir más contenido.
 
-Puede agregar varios recursos desde una carpeta o agregar varias carpetas a la vez. Sin embargo, no se pueden agregar recursos de varias carpetas a la vez.
+Puede agregar varios recursos desde una carpeta o agregar varias carpetas a la vez. Pero no puede agregar recursos de varias carpetas a la vez.
 
 ![Añadir contenido](assets/manage-publication-add-content.png)
 
 ### Incluir configuración de carpeta {#include-folder-settings}
 
-De forma predeterminada, la publicación de una carpeta en [!DNL Experience Manager Assets] publica todos los recursos, subcarpetas y sus referencias.
+De forma predeterminada, publicar una carpeta en [!DNL Experience Manager Assets] publica todos los recursos, subcarpetas y sus referencias.
 
 Para filtrar el contenido de la carpeta que desea publicar, haga clic en **[!UICONTROL Incluir configuración de carpeta]**:
 
 * `Include folder contents`
 
-   * Habilitado: Se publican todos los recursos de la carpeta seleccionada, las subcarpetas (incluidos todos los recursos de las subcarpetas) y las referencias.
-   * Deshabilitado: Solo se publican la carpeta seleccionada (vacía) y las referencias. Los recursos de la carpeta seleccionada no se publican.
+   * Habilitado: se publican todos los recursos de la carpeta, las subcarpetas (incluidos todos los recursos de las subcarpetas) y las referencias seleccionadas.
+   * Deshabilitado: solo se publican la carpeta seleccionada (vacía) y las referencias. Los recursos de la carpeta seleccionada no se publican.
 
 * `Include folder contents` y `Include only immediate folder contents`
 
-   Si se seleccionan ambas opciones, se publican todos los recursos de la carpeta seleccionada, las subcarpetas (vacías) y las referencias. Los recursos de las subcarpetas no se publican.
+   Si se seleccionan ambas opciones, se publican todos los recursos de la carpeta, las subcarpetas (vacías) y las referencias seleccionadas. Los recursos de las subcarpetas no se publican.
 
 <!--
 * [!UICONTROL Include only immediate folder contents]: Only the subfolders content and references are published. 
@@ -90,88 +90,88 @@ Only the selected folder content and references are published.
 
 ![Incluir configuración de carpeta](assets/manage-publication-include-folder-settings.png)
 
-Después de aplicar los filtros, haga clic en **[!UICONTROL OK]** y, a continuación, haga clic en **[!UICONTROL Publicación]**. Al hacer clic en el botón de publicación, aparece un mensaje de confirmación `Resource(s) have been scheduled for publication` aparece. Y los recursos y carpetas seleccionados (o) se publican en el destino definido en función del planificador (`Now` o `Later`). Inicie sesión en la instancia de publicación para comprobar que los recursos y las carpetas se han publicado correctamente.
+Después de aplicar los filtros, haga clic en **[!UICONTROL OK]** y haga clic en **[!UICONTROL Publish]**. Al hacer clic en el botón Publicar, aparece un mensaje de confirmación `Resource(s) have been scheduled for publication` aparece. Y los recursos y (o) carpetas seleccionados se publican en el destino definido en función del planificador (`Now` o `Later`). Inicie sesión en la instancia de publicación para comprobar que los recursos y las carpetas se han publicado correctamente.
 
 ![Publicar en AEM](assets/manage-publication-publish-aem.png)
 
-En la ilustración anterior, puede ver diferentes valores para la variable **[!UICONTROL Publicar Target]** atributo. Recordemos el hecho de que ha elegido publicar para [!DNL Experience Manager Assets] (`Destination: Publish`). A continuación, ¿por qué muestra que solo se publican una carpeta y un recurso en `AEM`y los otros dos recursos se publican en ambas `AEM` y `Dynamic Media`?
+En la ilustración anterior, puede ver diferentes valores para la variable **[!UICONTROL Destino de publicación]** atributo. Recordemos el hecho de que ha elegido publicar en [!DNL Experience Manager Assets] (`Destination: Publish`). A continuación, ¿por qué se muestra que solo se publican una carpeta y un recurso? `AEM`y los otros dos recursos se publican en ambos `AEM` y `Dynamic Media`?
 
-Aquí, debe comprender la función de las propiedades de carpeta. Una carpeta **[!UICONTROL Modo de publicación de Dynamic Media]** tiene un papel importante en la publicación. Para ver las propiedades de una carpeta, seleccione una carpeta y haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. Para un recurso, consulte las propiedades de su carpeta principal.
+En este caso, debe comprender la función de las propiedades de carpeta. El de una carpeta **[!UICONTROL Modo de publicación de Dynamic Media]** La propiedad desempeña un papel importante en la publicación. Para ver las propiedades de una carpeta, seleccione una carpeta y haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. Para ver un recurso, consulte las propiedades de su carpeta principal.
 
-La tabla siguiente explica cómo se produce la publicación en función de los valores definidos **[!UICONTROL Destino]** y **[!UICONTROL Modo de publicación de Dynamic Media]**:
+En la tabla siguiente se explica cómo se produce la publicación en función del **[!UICONTROL Destino]** y **[!UICONTROL Modo de publicación de Dynamic Media]**:
 
 | [!UICONTROL Destino] | [!UICONTROL Modo de publicación de Dynamic Media] | [!UICONTROL Destino de publicación] | Contenido permitido |
 | --- | --- | --- | --- |
-| Publicación | Publicación selectiva | `AEM` | Recursos y/o carpetas |
-| Publicación | Inmediato | `AEM` y `Dynamic Media` | Recursos y/o carpetas |
-| Publicación | Tras la activación | `AEM` y `Dynamic Media` | Recursos y/o carpetas |
+| Publicación | Publicación selectiva | `AEM` | Recursos y(o) carpetas |
+| Publicación | Inmediato | `AEM` y `Dynamic Media` | Recursos y(o) carpetas |
+| Publicación | Tras la activación | `AEM` y `Dynamic Media` | Recursos y(o) carpetas |
 | Dynamic Media | Publicación selectiva | `Dynamic Media` | Assets |
 | Dynamic Media | Inmediato | `None` | No se pueden publicar los recursos |
 | Dynamic Media | Tras la activación | `None` | No se pueden publicar los recursos |
 
 >[!NOTE]
 >
->Solo los recursos se publican en [!DNL Dynamic Media].
+>Solo se publican los recursos en [!DNL Dynamic Media].
 >
 >Publicación de una carpeta en [!DNL Dynamic Media] no es compatible.
 >
->Si selecciona una carpeta (`Selective Publish`) y elija el [!DNL Dynamic Media] destino, la variable [!UICONTROL Publicar Target] reflejo de atributo `None`.
+>Si selecciona una carpeta (`Selective Publish`) y elija la [!DNL Dynamic Media] destino, el [!UICONTROL Destino de publicación] el atributo refleja `None`.
 
 
-Cambiemos ahora el **[!UICONTROL Destino]** en el caso de uso anterior a **[!UICONTROL Dynamic Media]** y compruebe los resultados. Al hacerlo, solo el activo de `Selective Publish` se publica en [!DNL Dynamic Media]. Los activos de `Immediate` y `Upon Activation` las carpetas no se publican y reflejan `None`.
+Ahora vamos a cambiar la **[!UICONTROL Destino]** en el caso de uso anterior para **[!UICONTROL Dynamic Media]** y compruebe los resultados. Al hacerlo, solo el activo de `Selective Publish` La carpeta se ha publicado en [!DNL Dynamic Media]. Los activos de `Immediate` y `Upon Activation` Las carpetas de no se publican y reflejan `None`.
 
 ![Publicar en Dynamic Media](assets/manage-publication-dynamic-media.png)
 
 >[!NOTE]
 >
->If [!DNL Dynamic Media] no está configurado en el [!DNL Experience Manager Assets] y **[!UICONTROL Destino]** es **[!UICONTROL Publicación]**, los recursos y las carpetas siempre se publican en `AEM`.
+>If [!DNL Dynamic Media] no está configurado en su [!DNL Experience Manager Assets] y la **[!UICONTROL Destino]** es **[!UICONTROL Publish]**, los recursos y carpetas siempre se publican en `AEM`.
 >
->Publicar en [!DNL Brand Portal] es independiente de las propiedades de la carpeta. Todos los recursos, carpetas y colecciones se pueden publicar en Brand Portal. Consulte [publicar recursos en Brand Portal](#publish-assets-to-brand-portal).
+>Publicación en [!DNL Brand Portal] es independiente de las propiedades de la carpeta. Todos los recursos, carpetas y colecciones se pueden publicar en Brand Portal. Consulte [publicación de recursos en Brand Portal](#publish-assets-to-brand-portal).
 
 >[!NOTE]
 >
->Si ha personalizado la variable [!DNL Manage Publication] , la personalización sigue funcionando con las funcionalidades existentes.
+>Si ha personalizado la variable [!DNL Manage Publication] , la personalización seguirá funcionando con las funcionalidades existentes.
 >
->Sin embargo, puede quitar la personalización existente para usar la nueva [!DNL Manager Publication] características.
+>Sin embargo, puede quitar la personalización existente para utilizar la nueva [!DNL Manager Publication] funciones.
 
 
 ## Publicar recursos más tarde {#publish-assets-later}
 
-Para programar el flujo de trabajo de publicación de los recursos para una fecha u hora posterior:
+Para programar el flujo de trabajo de publicación de recursos para una fecha u hora posterior:
 
-1. En el [!UICONTROL Experience Manager Assets] , vaya a la carpeta principal y seleccione todos los recursos o carpetas que desea programar para la publicación.
-1. Haga clic en **[!UICONTROL Administrar publicación]** en la barra de herramientas.
-1. Haga clic en **[!UICONTROL Publicación]** from **[!UICONTROL Acción]** y, a continuación, seleccione **[!UICONTROL Destino]** donde desea publicar el contenido.
+1. Desde el [!UICONTROL Experience Manager Assets] , vaya a la carpeta principal y seleccione todos los recursos o carpetas que desee programar para la publicación.
+1. Clic **[!UICONTROL Administrar publicación]** de la barra de herramientas.
+1. Clic **[!UICONTROL Publish]** de **[!UICONTROL Acción]** y, a continuación, seleccione **[!UICONTROL Destino]** donde desee publicar el contenido.
 1. Seleccione **[!UICONTROL Más tarde]** en **[!UICONTROL Programación]**.
-1. Seleccione un **[!UICONTROL Fecha de activación]** y especifique la fecha y la hora. Haga clic en **[!UICONTROL Siguiente]**. 
+1. Seleccione un **[!UICONTROL Fecha de activación]** y especifique la fecha y la hora. Haga clic en **[!UICONTROL Siguiente]**.
 
-   ![Flujo de trabajo Administrar publicación](assets/manage-publication-workflow.png)
+   ![Administrar flujo de trabajo de publicación](assets/manage-publication-workflow.png)
 
-1. En el **[!UICONTROL Ámbito]** , **[!UICONTROL Añadir contenido]** (si es necesario). Haga clic en **[!UICONTROL Siguiente]**. 
-1. En el **[!UICONTROL Flujos de trabajo]** , especifique un título de flujo de trabajo. Haga clic en **[!UICONTROL Publicar más tarde]**.
+1. En el **[!UICONTROL Ámbito]** pestaña, **[!UICONTROL Añadir contenido]** (si es necesario). Haga clic en **[!UICONTROL Siguiente]**.
+1. En el **[!UICONTROL Flujos de trabajo]** pestaña, especifique un título de flujo de trabajo. Haga clic en **[!UICONTROL Publicar más tarde]**.
 
    ![Título del flujo de trabajo](assets/manage-publication-workflow-title.png)
 
-   Inicie sesión en la instancia de destino para verificar los recursos publicados (en función de la fecha u hora programadas).
+   Inicie sesión en la instancia de destino para verificar los recursos publicados (según la fecha u hora programadas).
 
-## Publicar recursos en Dynamic Media {#publish-assets-to-dynamic-media}
+## Publicación de recursos en Dynamic Media {#publish-assets-to-dynamic-media}
 
-Solo los recursos se publican en [!DNL Dynamic Media]. Sin embargo, el comportamiento de publicación difiere según las propiedades de la carpeta. Una carpeta puede tener **[!UICONTROL Modo de publicación de Dynamic Media]** configurado para publicación selectiva que puede ser cualquiera de las siguientes:
+Solo se publican los recursos en [!DNL Dynamic Media]. Sin embargo, el comportamiento de publicación difiere según las propiedades de la carpeta. Una carpeta puede tener **[!UICONTROL Modo de publicación de Dynamic Media]** configurado para la publicación selectiva que puede ser cualquiera de las siguientes:
 
 * `Selective Publish`
 * `Immediate`
 * `Upon Activation`
 
-El proceso de publicación de **[!UICONTROL Inmediato]** y **[!UICONTROL Tras la activación]** es coherente, sin embargo, diferente para **[!UICONTROL Publicación selectiva]**. Consulte [configurar la publicación selectiva en el nivel de carpeta en Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html). Después de configurar la publicación selectiva en una carpeta, puede realizar cualquiera de las siguientes acciones:
+El proceso de publicación para **[!UICONTROL Inmediato]** y **[!UICONTROL Tras la activación]** sin embargo, el modo es coherente para **[!UICONTROL Publicación selectiva]**. Consulte [configuración de la publicación selectiva en el nivel de carpeta en Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html). Después de configurar la publicación selectiva en una carpeta, puede realizar cualquiera de las siguientes acciones:
 
 * [Publicar recursos de forma selectiva en Dynamic Media o Experience Manager mediante Administrar publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
-* [Cancelar la publicación de forma selectiva desde Dynamic Media o Experience Manager mediante Administrar publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
+* [Cancelar la publicación selectiva de recursos desde Dynamic Media o Experience Manager mediante Administrar publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
 * [Publicación de recursos en Dynamic Media o Experience Manager mediante Publicación rápida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
-* [Publicar o cancelar la publicación de recursos de forma selectiva mediante los resultados de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-unpublish-search-results)
+* [Publicar o cancelar la publicación selectiva de recursos mediante resultados de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-unpublish-search-results)
 
 ## Publicar recursos en Brand Portal {#publish-assets-to-brand-portal}
 
-Puede publicar recursos, carpetas y colecciones en el [!DNL Experience Manager Assets Brand Portal] instancia.
+Puede publicar recursos, carpetas y colecciones en [!DNL Experience Manager Assets Brand Portal] ejemplo.
 
 * [Publicar recursos en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-assets-to-bp)
 * [Publicar carpetas en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
@@ -181,5 +181,5 @@ Puede publicar recursos, carpetas y colecciones en el [!DNL Experience Manager A
 
 * La opción para [!UICONTROL Administrar publicación] solo está disponible para las cuentas de usuario que tienen permisos de replicación.
 * Las carpetas vacías no se publican.
-* Si publica un recurso que se está procesando, solo se publicará el contenido original. Faltan las representaciones. Espere a que se complete el procesamiento y, a continuación, publique o vuelva a publicar el recurso una vez finalizado el procesamiento.
-* Al cancelar la publicación de un recurso complejo, cancele la publicación del recurso únicamente. Evite cancelar la publicación de las referencias, ya que otras fuentes publicadas pueden remitirlas.
+* Si publica un recurso que se está procesando, solo se publica el contenido original. Faltan las representaciones. Espere a que se complete el procesamiento y, a continuación, publique o vuelva a publicar el recurso una vez finalizado el procesamiento.
+* Al cancelar la publicación de un recurso complejo, cancele la publicación solo del recurso. Evite cancelar la publicación de las referencias, ya que otras referencias pueden proceder de otros recursos publicados.
