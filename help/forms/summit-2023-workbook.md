@@ -5,9 +5,10 @@ description: Cree una Forms atractiva con componentes principales y sin encabeza
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
-source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
+hidefromtoc: true
+source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2465'
 ht-degree: 1%
 
 ---
@@ -242,8 +243,6 @@ Configure el repositorio local de la temática:
 
    ![](/help/forms/assets/screenshot2028116429.png)
 
-   ![](/help/forms/assets/screenshot20228116569.png)
-
 
 1. En la ventana Símbolo del sistema, ejecute el siguiente comando:
 
@@ -271,8 +270,7 @@ Configure el repositorio local de la temática:
 
    >[!NOTE]
    >
-   >Si aparece una pantalla en blanco en el explorador después de ejecutar el `npm run live` comando, cambiar `localhost` en la URL del explorador 127.0.0.1 y pulse **Entrar**.
-
+   >Si aparece una pantalla en blanco en el explorador después de ejecutar el `npm run live` comando durante más de 3-4 minutos, cambiar `localhost` en la URL del explorador 127.0.0.1 y pulse **Entrar**.
 
 
    ![](/help/forms/assets/screenshot2028115129.png)
@@ -381,7 +379,8 @@ Para procesar el formulario alojado en el entorno de publicación del servicio e
 
    >[!NOTE]
    >
-   >Si aparece una pantalla en blanco en el explorador después de ejecutar el `npm start` comando, cambiar `localhost` en la URL del explorador 127.0.0.1 y pulse **Entrar**.
+   > 
+   > Si aparece una pantalla en blanco en el explorador después de ejecutar el `npm start` comando durante más de 3-4 minutos, cambiar `localhost` en la URL del explorador 127.0.0.1 y pulse **Entrar**.
 
    ![](/help/forms/assets/screenshot2028118229.png)
 
@@ -529,7 +528,7 @@ Para procesar el formulario alojado en el entorno de publicación del servicio e
 
    >[!NOTE]
    >
-   >Si aparece una pantalla en blanco en el explorador después de ejecutar el `npm start` comando, cambiar `localhost` en la URL del explorador 127.0.0.1 y pulse **Entrar**.
+   >Si aparece una pantalla en blanco en el explorador después de ejecutar el `npm start` comando durante más de 3-4 minutos, cambiar `localhost` en la URL del explorador 127.0.0.1 y pulse **Entrar**.
 
    ![](/help/forms/assets/screenshot2028127229.png)
 

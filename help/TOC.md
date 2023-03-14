@@ -8,10 +8,10 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4c5c5eed984dcc9361ae2316ce466b4a73c0bf19
+source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
 workflow-type: tm+mt
-source-wordcount: '3969'
-ht-degree: 95%
+source-wordcount: '3971'
+ht-degree: 94%
 
 ---
 
@@ -539,6 +539,7 @@ ht-degree: 95%
             + [Creación de un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
             + [Creación de temáticas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
             + [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
+            + [Libro de Summit](/help/forms/summit-2023-workbook.md)
       + Crear Forms adaptable: componentes de base {#authoring-adaptive-forms-foundation-components}
          + Conversión de PDF forms a Forms adaptable {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)
