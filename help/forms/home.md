@@ -3,9 +3,9 @@ title: Introducción a  [!DNL AEM Forms]  as a Cloud Service
 description: Descubra AEM Forms y descubra cómo le ayuda a producir formularios y documentos preparados para la empresa. Obtenga información sobre Platform como servicio (PaaS) y cómo administrar formularios digitales de clase empresarial y procesos empresariales, así como conectar Forms a Adobe Sign y fuentes de datos actuales.
 landing-page-description: Obtenga información sobre cómo utilizar formularios en AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: fa8629fefe3ad29f70213b15bb31623a2f7d5420
+source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1092'
 ht-degree: 31%
 
 ---
@@ -25,9 +25,6 @@ Puede utilizar el servicio para crear y desplegar formularios digitales interact
 
 La organización puede utilizar [!DNL AEM Forms] as a Cloud Service para crear formularios digitales, conectar formularios a fuentes de datos existentes, integrar formularios con [!DNL Adobe Sign] para agregarles firmas electrónicas y generar el documento de registro (DoR) para archivar los formularios enviados como archivos PDF. Asimismo, pueden usar el servicio para convertir los PDF forms existentes en formularios digitales.
 
-![Diseño de formulario adaptable](/help/forms/assets/data-collection.jpeg "Experiencias de Forms adaptables para varios dispositivos"){width="70%" align="center"}
-
-
 En las grandes empresas, los formularios suelen crearse una vez y reutilizarse copiándolos a un sistema de gestión de contenidos. Mantener actualizada una gran base de datos de formularios y conseguir que estos resulten reconocibles puede suponer un reto considerable. AEM proporciona un portal de formularios personalizable que garantiza que los clientes puedan localizar y acceder a los formularios que necesitan en los canales web y móviles. Puede personalizar el aspecto, la marca y los logotipos del portal de Forms para satisfacer los requisitos específicos de su organización.
 
 ## Ofrezca comunicaciones personalizadas
@@ -36,16 +33,13 @@ Uno de los principales componentes de una experiencia de autoservicio digital ef
 
 Con AEM Forms, los usuarios empresariales pueden crear experiencias de usuario personalizadas y atractivas personalizando las plantillas de documento e incorporando información de los procesos back-end a las plantillas. Un conjunto de API intuitivas ayuda a las empresas a establecer reglas que deciden cuándo generar una comunicación en función de una consulta o a intervalos regulares por lotes.
 
-![Factura personalizada](/help/forms/assets/personalized-communication.jpeg "Facturas de PDF personalizadas generadas bajo demanda"){width="70%" align="center"}
 
 Los documentos personalizados, como los recibos, los kits de bienvenida y los extractos, se pueden generar fácilmente. Las organizaciones pueden dirigir el tráfico a portales web personalizados, lo que favorece la inscripción en servicios adicionales o su compra.
 
 
 ## Automatización de flujos de trabajo de back-office
 
-Utilice flujos de trabajo centrados en formularios para automatizar el procesamiento y el enrutamiento de los datos de formulario a varias partes interesadas, como los administradores o los departamentos, para su revisión, aprobación o procesamiento posterior.
-
-Estos flujos de trabajo ayudan a su organización a minimizar el riesgo y mantener el cumplimiento mediante la garantía de un procesamiento coherente y auditable de los datos del formulario, la automatización de tareas manuales, la provisión de control de acceso basado en funciones y el cumplimiento de los requisitos regulatorios.
+Utilice flujos de trabajo centrados en formularios para automatizar el procesamiento y el enrutamiento de los datos de formulario a varias partes interesadas, como los administradores o los departamentos, para su revisión, aprobación o procesamiento posterior. Estos flujos de trabajo ayudan a su organización a minimizar el riesgo y mantener el cumplimiento mediante la garantía de un procesamiento coherente y auditable de los datos del formulario, la automatización de tareas manuales, la provisión de control de acceso basado en funciones y el cumplimiento de los requisitos regulatorios.
 
 
 ## Optimizar el rendimiento de formularios
