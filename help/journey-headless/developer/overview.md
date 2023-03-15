@@ -18,8 +18,8 @@ Obtenga información sobre las funciones potentes y flexibles sin encabezado, su
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
->title="AEM Recursos para desarrolladores sin encabezado y documentación avanzada"
->abstract="AEM Todo lo que necesita para aprender acerca de CMS sin encabezado y crear y enviar mejores aplicaciones y experiencias más rápidas."
+>title="AEM Recursos para desarrolladores sin objetivos y documentación avanzada"
+>abstract="Todo lo que necesita para aprender sobre AEM CMS sin objetivos y construir y enviar mejores aplicaciones y experiencias más rápidas."
 >additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es" text="AEM Recursos para desarrolladores sin encabezado"
 
 ## Introducción {#introduction}

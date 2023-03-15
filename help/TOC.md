@@ -201,14 +201,14 @@ ht-degree: 94%
          + [Introducción a la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Validación de transferencias de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [Asignación de usuarios y migración principal](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [Extracción de contenido del origen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Ingesta de contenido en Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Visualización de registros del conjunto de migraciones](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Eliminación de un conjunto de migraciones](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Ejecución de la herramienta de transferencia de contenido en una instancia de publicación](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Resolución de problemas de la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + Herramienta de asignación de usuarios heredados (heredado){#legacy-user-mapping-tool}
+         + Herramienta de asignación de usuarios heredada (heredada){#legacy-user-mapping-tool}
             + [Información general](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Consideraciones importantes](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Uso de la herramienta de asignación de usuarios](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -519,9 +519,9 @@ ht-degree: 94%
       + [Importación, exportación y organización de formularios adaptables, formularios PDF y otros recursos](/help/forms/import-export-forms-templates.md)
    + Integrar {#integrate}
       + Servicios {#services}
-         + [Integración de AEM Forms as a Cloud Service con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-         + [Integrar AEM Forms as a Cloud Service con DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-         + [Integración de AEM Forms as a Cloud Service con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [Integrar AEM Forms as a Cloud Service con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+         + [Integrar AEM Forms as a Cloud Service con Sign](/help/forms/integrate-docusign-adaptive-forms.md)
+         + [Integrar AEM Forms as a Cloud Service con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integración de un formulario adaptable con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incrustar un Forms adaptable en una página de AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
       + Modelo de datos de formulario {#use-form-data-model}
@@ -537,11 +537,11 @@ ht-degree: 94%
       + Creación de Forms adaptable: componentes principales {#authoring-adaptive-forms-core-components}
          + Creación de un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
             + [Creación de un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
-            + [Creación de temáticas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
+            + [Creación de temas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
             + [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
-            + [Libro de Summit](/help/forms/summit-2023-workbook.md)
-      + Crear Forms adaptable: componentes de base {#authoring-adaptive-forms-foundation-components}
-         + Conversión de PDF forms a Forms adaptable {#afcs}
+            + [Libro de la Cumbre](/help/forms/summit-2023-workbook.md)
+      + Creación de Forms adaptable: componentes básicos {#authoring-adaptive-forms-foundation-components}
+         + Convertir sus PDF forms a Forms adaptable {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)
             + [Conversión de un formulario PDF existente en un formulario adaptable](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=es)
             + [Revisar y corregir formularios convertidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=es#welcome-to-review-and-correct-editor)
@@ -558,7 +558,7 @@ ht-degree: 94%
             + [Usar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
             + [Aplicar firma manuscrita](/help/forms/signing-forms-using-scribble.md)
             + [Adición de una tabla a un formulario adaptable](/help/forms/adaptive-forms-tables.md)
-            + [Agregar compatibilidad con notas al pie a un formulario adaptable](/help/forms/footnotes-richtextsupport.md)
+            + [Agregar compatibilidad con notas al pie de página a un formulario adaptable](/help/forms/footnotes-richtextsupport.md)
          + Configuración del diseño y aplicación de estilo a un formulario adaptable {#configure-layout-of-an-adaptive-form}
             + [Definición del diseño de un formulario adaptable](/help/forms/layout-capabilities-adaptive-forms.md)
             + [Uso del modo Diseño para cambiar el tamaño de los componentes](/help/forms/resize-using-layout-mode.md)
@@ -575,7 +575,7 @@ ht-degree: 94%
             + [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-form.md)
          + [Rellene previamente los campos del formulario adaptable](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Generar documento de registro](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-         + [Agregar la compatibilidad con nuevas configuraciones regionales a un formulario adaptable](/help/forms/supporting-new-language-localization.md)
+         + [Agregar compatibilidad con nuevas configuraciones regionales a un formulario adaptable](/help/forms/supporting-new-language-localization.md)
          + Adición o mejora de metadatos {#manage-metadata}
             + [Adición, eliminación o edición de metadatos de un formulario adaptable](/help/forms/manage-form-metadata.md)
             + [Reutilización de propiedades de metadatos de un formulario adaptable](/help/forms/reusing-adaptive-forms.md)
@@ -596,9 +596,9 @@ ht-degree: 94%
       + [Uso de fuentes personalizadas en documentos PDF](/help/forms/use-custom-fonts.md)
       + [Problemas conocidos, prácticas recomendadas y preguntas más frecuentes](/help/forms/communications-known-issues-limitations.md)
    + Referencia de API de desarrollador {#aem-forms-developer-api-reference}
-      + [Referencia de la API de comunicaciones del Cloud Service AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [Referencia de la API de JavaScript del Cloud Service AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [Referencia de la API de Java del Cloud Service AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [Referencia de la API de comunicaciones del Cloud Service de AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [Referencia de la API de JavaScript del Cloud Service de AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [Referencia de la API de Java del Cloud Service de AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + Solución de problemas {#troubleshooting-aem-forms-cloud-service}
       + [Instalación y configuración](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Almacenamiento en caché de Dispatcher y CDN](/help/forms/troubleshooting-caching-performance.md)
@@ -704,7 +704,7 @@ ht-degree: 94%
       + [IDE de GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
       + [Consultas persistentes de GraphQL](/help/headless/graphql-api/persisted-queries.md)
       + [Optimización de consultas de GraphQL](/help/headless/graphql-api/graphql-optimization.md)
-      + [Actualización de los fragmentos de contenido para el filtrado optimizado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+      + [Actualización de los fragmentos de contenido para un filtrado optimizado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Ejemplos de consultas de GraphQL](/help/headless/graphql-api/sample-queries.md)
    + [API de REST de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=es)
    + Seguridad {#security}

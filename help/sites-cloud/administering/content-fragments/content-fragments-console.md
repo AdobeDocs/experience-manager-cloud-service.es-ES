@@ -65,7 +65,7 @@ Aquí se pueden ver tres áreas principales:
             * Mostrar información sobre referencias
             * Mostrar información sobre las versiones de idioma del fragmento
          * Puede [seleccionar uno o varios fragmentos de contenido para mostrar las acciones disponibles](#actions-selected-content-fragment)
-      * Puede seleccionar un encabezado de columna para ordenar la tabla según esa columna; volver a seleccionar para alternar entre ascendente y descendente. Actualmente, la ordenación es compatible con **Título**, **Modificado**, y **Modificado por** columnas.
+      * Puede seleccionar un encabezado de columna para ordenar la tabla según esa columna; volver a seleccionar para alternar entre ascendente y descendente. Actualmente, la ordenación es compatible con el **Título**, **Modificado** y **Modificado por** columnas.
    * **[Crear](#creating-new-content-fragment)** un nuevo fragmento de contenido
    * [Filtrar](#filtering-fragments) los fragmentos de contenido de acuerdo con una selección de predicados y guardar el filtro para uso futuro
    * [Buscar](#searching-fragments) los fragmentos de contenido
