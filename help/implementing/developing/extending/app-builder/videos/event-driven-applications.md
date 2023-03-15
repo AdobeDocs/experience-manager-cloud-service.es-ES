@@ -9,22 +9,18 @@ level: Beginner
 kt: 9458,9479
 thumbnail: 339244.jpg
 exl-id: 6cd06ddc-2ce3-4e59-bd62-baee44763591
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 25%
+source-wordcount: '52'
+ht-degree: 0%
 
 ---
 
 # Aplicaciones de App Builder impulsadas por eventos
 
->[!IMPORTANT]
->
-> _Adobe Project Firefly, según se menciona en los vídeos de esta serie, se denomina ahora Generador de aplicaciones_
+## Introducción a las aplicaciones de App Builder impulsadas por eventos
 
-## Introducción a aplicaciones de App Builder impulsadas por eventos
-
-Obtenga información acerca de la arquitectura impulsada por eventos, los eventos de Adobe I/O y los eventos personalizados.
+Descubra qué sucede con la arquitectura impulsada por eventos, los eventos de Adobe I/O y los eventos personalizados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
 
@@ -32,4 +28,4 @@ Obtenga información acerca de la arquitectura impulsada por eventos, los evento
 
 >[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
-Obtenga información sobre cómo generar publicaciones que pueden consumir eventos en una aplicación de App Builder.
+Obtenga información sobre cómo crear publicaciones puede consumir eventos en una aplicación de App Builder.

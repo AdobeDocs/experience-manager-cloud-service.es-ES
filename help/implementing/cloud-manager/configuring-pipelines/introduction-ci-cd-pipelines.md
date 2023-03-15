@@ -3,10 +3,10 @@ title: Canalizaciones de CI/CD
 description: Obtenga información sobre las canalizaciones de CI/CD de Cloud Manager y cómo se pueden utilizar para implementar su código de forma eficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 100%
+source-wordcount: '1367'
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ Las canalizaciones de pila completa pueden ser canalizaciones de calidad del có
 
 ## Canalizaciones front-end {#front-end}
 
-El código front-end es cualquier código que sirve como archivos estáticos. Es independiente del código de la interfaz de usuario que sirve AEM y puede incluir temas del sitio, SPA definidos por el cliente, SPA de Firefly y otras soluciones.
+El código front-end es cualquier código que sirve como archivos estáticos. Es independiente del código de la interfaz de usuario que AEM y puede incluir temas del sitio, SPA definidos por el cliente, SPA y otras soluciones.
 
 Las canalizaciones front-end ayudan a sus equipos a optimizar su proceso de diseño y desarrollo al permitir la implementación acelerada del código front-end asincrónico del desarrollo back-end. Esta canalización dedicada implementa JavaScript y CSS en la capa de distribución de AEM como tema, lo que da como resultado una nueva versión del tema a la que se puede hacer referencia desde páginas que proporciona AEM.
 

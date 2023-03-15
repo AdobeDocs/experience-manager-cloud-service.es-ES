@@ -1,6 +1,6 @@
 ---
-title: Acciones del Generador de aplicaciones
-description: Obtenga información sobre las acciones de Adobe en tiempo de ejecución y cómo utilizarlas en las aplicaciones de App Builder.
+title: Acciones de App Builder
+description: Obtenga información sobre las acciones de Adobe en tiempo de ejecución y para utilizarlas en aplicaciones de App Builder.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -9,20 +9,16 @@ level: Beginner
 kt: 9456, 9475, 9476, 9477
 thumbnail: 327313.jpg
 exl-id: f1a67f80-7366-4337-8bcd-062a3412acc9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 18%
+source-wordcount: '78'
+ht-degree: 0%
 
 ---
 
-# Acciones del Generador de aplicaciones
+# Acciones de App Builder
 
->[!IMPORTANT]
->
-> _Adobe Project Firefly, según se menciona en los vídeos de esta serie, se denomina ahora Generador de aplicaciones_
-
-## Introducción a acciones
+## Introducción a las acciones
 
 Obtenga información sobre Adobe I/O Runtime, acciones y cómo crear acciones.
 
@@ -30,11 +26,11 @@ Obtenga información sobre Adobe I/O Runtime, acciones y cómo crear acciones.
 
 ## Activación, secuencia, déclencheur y reglas
 
-Obtenga información sobre cómo se relacionan las acciones con activaciones, acciones web, déclencheur y reglas.
+Descubra cómo se relacionan las acciones con activaciones, acciones web, déclencheur y reglas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
 
-## Acciones en aplicaciones del Generador de aplicaciones
+## Acciones en aplicaciones de App Builder
 
 Obtenga información sobre cómo crear acciones que se pueden utilizar como aplicaciones de App Builder.
 
@@ -42,6 +38,6 @@ Obtenga información sobre cómo crear acciones que se pueden utilizar como apli
 
 ## Crear una acción
 
-Obtenga información sobre cómo crear una acción de App Builder.
+Obtenga información sobre cómo crear una acción de App Builder .
 
 >[!VIDEO](https://video.tv.adobe.com/v/339195/?quality=12&learn=on)
