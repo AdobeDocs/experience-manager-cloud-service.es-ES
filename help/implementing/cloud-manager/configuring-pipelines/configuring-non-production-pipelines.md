@@ -3,10 +3,10 @@ title: Configurar canalizaciones que no sean de producción
 description: Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 100%
+source-wordcount: '1369'
+ht-degree: 90%
 
 ---
 
@@ -38,7 +38,10 @@ Una vez que haya configurado el programa y tenga al menos un entorno utilizando 
 
    ![Agregar canalización que no sea de producción](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. En la pestaña **Configuración** del cuadro de diálogo **Agregar canalización que no sea de producción**, seleccione el tipo de canalización que no sea de producción que desee añadir, ya sea **Canalización de calidad de código** o **Canalización de implementación**.
+1. En la pestaña **Configuración** del cuadro de diálogo **Agregar canalización que no sea de producción**, seleccione el tipo de canalización que no es de producción que desee agregar.
+
+   * **Canalización de calidad de código** : cree una canalización que cree su código, ejecute pruebas unitarias y evalúe la calidad del código, pero NO la implemente.
+   * **Canalización de implementación** : cree una canalización que cree su código, ejecute pruebas unitarias, evalúe la calidad del código y se implemente en un entorno.
 
    ![Cuadro de diálogo Agregar canalización que no sea de producción](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -48,6 +51,12 @@ Una vez que haya configurado el programa y tenga al menos un entorno utilizando 
 
       * **Manual**: utilice esta opción para iniciar manualmente la canalización.
       * **Cambios en Git**: esta opción inicia la canalización CI/CD cada vez que se añaden confirmaciones a la rama git configurada. Con esta opción, aún puede iniciar la canalización manualmente según sea necesario.
+
+1. Si elige crear un **Canalización de implementación** también tendrá que definir la variable **Comportamiento de errores de métricas importantes**.
+
+   * **Preguntar cada vez**: esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
+   * **Produjo un error inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+   * **Continuar inmediatamente**: si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
 1. Haga clic en **Continuar**.
 
@@ -106,6 +115,12 @@ Para finalizar la configuración de la canalización de no producción de códig
    * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
    * **Ignorar configuración de nivel web**: cuando se selecciona, la canalización no implementa la configuración del nivel web.
+
+   * **Canalización** : Si la canalización es una canalización de implementación, puede elegir ejecutar una fase de prueba. Marque las opciones que desee habilitar en esta fase. Si no se selecciona ninguna de las opciones, la fase de prueba no se muestra durante la ejecución de la canalización.
+
+      * **Prueba funcional del producto** - Ejecutar [pruebas funcionales del producto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) contra el entorno de desarrollo.
+      * **Pruebas funcionales personalizadas** - Ejecutar [pruebas funcionales personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) contra el entorno de desarrollo.
+      * **Pruebas de IU personalizadas** - Ejecutar [pruebas de IU personalizadas](/help/implementing/cloud-manager/ui-testing.md) para aplicaciones personalizadas.
 
    ![Canalización de pila completa](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
