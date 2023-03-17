@@ -2,10 +2,10 @@
 title: Edición de las propiedades de página
 description: Permite definir las propiedades de una página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 82%
+source-wordcount: '2387'
+ht-degree: 81%
 
 ---
 
@@ -168,17 +168,6 @@ Las propiedades se distribuyen entre varias pestañas.
    * **Seleccionar imagen**: seleccione un recurso existente para utilizarlo como miniatura
    * **Revertir**: esta opción está disponible después de hacer un cambio en la miniatura Si no desea mantener el cambio, puede revertirlo antes de guardar.
 
-### Redes sociales {#social-media}
-
-* **Compartir en redes sociales**
-
-   Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de compartición](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=es).
-
-   * **Permitir al usuario que comparta en Facebook**
-   * **Permitir al usuario que comparta en Pinterest**
-   * **Variación de XF preferida**
-      * Define la variación de fragmentos de la experiencia que se utiliza para generar metadatos para la página.
-
 ### Cloud Services {#cloud-services}
 
 * **Configuraciones de Cloud Service**: defina propiedades para servicios en la nube
@@ -208,7 +197,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 ### Modelo {#blueprint}
 
-Esta pestaña solo está visible para páginas que sirven como modelos. Los modelos sirven de base para Live Copies parte de la [Administración de varios sitios.](/help/sites-cloud/administering/msm/overview.md)
+Esta pestaña solo está visible para páginas que sirven como modelos. Los modelos sirven de base para Live Copies y forman parte de [Administración de varios sitios.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Live Copies actuales**: enumera las páginas que se basan en (es decir, que son Live Copies de) esta página de modelo
 
@@ -216,7 +205,7 @@ Esta pestaña solo está visible para páginas que sirven como modelos. Los mode
 
 ### Live Copy    {#live-copy}
 
-Esta ficha solo está visible para páginas configuradas como Live Copies.
+Esta ficha solo está visible para páginas configuradas como Live Copies. Al igual que con los modelos, las Live Copies forman parte de [Administración de varios sitios.](/help/sites-cloud/administering/msm/overview.md).
 
 * **Sincronizar**: sincronice la Live Copy con el modelo, conservando las modificaciones locales
 * **Restablecer**: restablezca la Live Copy al estado del modelo y elimine las modificaciones locales
