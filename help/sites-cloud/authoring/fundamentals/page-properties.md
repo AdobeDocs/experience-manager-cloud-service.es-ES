@@ -2,10 +2,10 @@
 title: Edición de las propiedades de página
 description: Permite definir las propiedades de una página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: d0a698a8f8685b1e5957a9d93d805ca3f825354a
+source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 100%
+source-wordcount: '2428'
+ht-degree: 82%
 
 ---
 
@@ -37,10 +37,12 @@ Las propiedades se distribuyen entre varias pestañas.
 
    Aplique una identidad de marca uniforme en todas las páginas adjuntando un slug de marca al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 
-   * **Sobrescribir**: marque para definir el slug de marca en esta página.
-      * El valor lo heredará cualquier página secundaria a menos que también tenga valores establecidos de **Sobrescribir**.
-   * **Sobrescribir valor**: el texto del slug de marca que se añadirá al título de la página.
-      * El valor se anexa al título de la página después de un carácter de barra vertical como “Ciclismo en Toscana | Siempre listo para WKND”
+   * **Marcas**
+
+      * **Sobrescribir**: marque para definir el slug de marca en esta página.
+         * El valor lo heredará cualquier página secundaria a menos que también tenga valores establecidos de **Sobrescribir**.
+      * **Sobrescribir valor**: el texto del slug de marca que se añadirá al título de la página.
+         * El valor se anexa al título de la página después de un carácter de barra vertical como “Ciclismo en Toscana | Siempre listo para WKND”
 
 * **ID de HTML**
 
@@ -105,14 +107,13 @@ Las propiedades se distribuyen entre varias pestañas.
       * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, se puede acceder a esta página también mediante `/content/wknd/us/en/magazine/private`
       * La creación de un alias establece la propiedad `sling:alias` en el nodo de página, lo que solo afecta al recurso, no a la ruta del repositorio.
       * Las páginas a las que se accede mediante alias en el editor no se pueden publicar. Las [Opciones de publicación](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) del editor solo están disponibles para las páginas a las que se accede a través de sus rutas reales.
-
-   <!--
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-  -->
+      * Para obtener más información, consulte [Nombres de páginas localizados en Recomendaciones para la administración de direcciones URL y SEO](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuración**
 
-   * **Configuración de nube**: la ruta a la configuración
+   * **Heredado de &lt;path>** - habilitar/deshabilitar la herencia; alterna la disponibilidad de **Configuración de nube** para la selección
+
+   * **Configuración de nube** - La ruta a la configuración seleccionada
 
 * **Configuración de plantilla**
 
@@ -132,14 +133,40 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * **Configuración de exportación**: especifica una configuración de exportación
 
-### Miniatura    {#thumbnail}
+* **SEO**
 
-Configuración de la miniatura de la página
+   * **Url Canónica** - se puede usar para sobrescribir la dirección URL canónica de la página; si se deja en blanco, la dirección URL de la página será su dirección URL canónica
 
-* **Generar previsualización**: genere una previsualización de la página para utilizarla como miniatura
-* **Cargar imagen**: cargue una imagen para utilizarla como miniatura
-* **Seleccionar imagen**: seleccione un recurso existente para utilizarlo como miniatura
-* **Revertir**: esta opción está disponible después de hacer un cambio en la miniatura Si no desea mantener el cambio, puede revertirlo antes de guardar.
+   * **Etiquetas de robots** - seleccione las etiquetas robots para controlar el comportamiento de los rastreadores de motores de búsqueda.
+
+      >[!NOTE]
+      >
+      >Algunas de las opciones entran en conflicto entre sí. En caso de conflicto, la opción más permisiva tiene prioridad.
+
+   * **Generar mapa del sitio** : cuando se selecciona, se genera un archivo sitemap.xml para esta página y sus descendientes
+
+### Imágenes {#images}
+
+* **Imagen destacada**
+
+   Seleccione y configure la imagen que desea mostrar. Se utiliza en los componentes que hacen referencia a la página; por ejemplo, teasers, listas de páginas, etc.
+
+   * **Imagen**
+
+      Puede **Seleccionar** un recurso o busque un archivo para cargarlo y **Editar** o **Borrar**.
+
+   * **Texto alternativo** - un texto utilizado para representar el significado o la función de la imagen; por ejemplo, para uso de los lectores de pantalla.
+
+   * **Heredar : valor tomado del recurso DAM** : cuando se selecciona, se rellena el texto alternativo con el valor de la variable `dc:description`metadatos en DAM
+
+* **Miniatura**
+
+   Configuración de la miniatura de la página
+
+   * **Generar previsualización**: genere una previsualización de la página para utilizarla como miniatura
+   * **Cargar imagen**: cargue una imagen para utilizarla como miniatura
+   * **Seleccionar imagen**: seleccione un recurso existente para utilizarlo como miniatura
+   * **Revertir**: esta opción está disponible después de hacer un cambio en la miniatura Si no desea mantener el cambio, puede revertirlo antes de guardar.
 
 ### Redes sociales {#social-media}
 
@@ -156,12 +183,11 @@ Configuración de la miniatura de la página
 
 * **Configuraciones de Cloud Service**: defina propiedades para servicios en la nube
 
-   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
-  -->
-
 ### Personalización {#personalization}
 
 * **Configuración de ContextHub**
+
+   * **Heredado de &lt;path>** - habilitar/deshabilitar la herencia; alterna la disponibilidad de **Ruta de ContextHub** y **Ruta de segmentos** para la selección
 
    * **Ruta de ContextHub**: defina la [Configuración de ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **Ruta de segmentos**: defina la [Ruta de segmentos](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -176,15 +202,9 @@ Configuración de la miniatura de la página
 
 * **Permisos**
 
-   * Agregar permisos
-   * Editar grupo de usuarios cerrado
-   * Ver los permisos efectivos
-
-   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-
-   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-
-   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * **Agregar permisos**
+   * **Editar grupo de usuarios cerrado**
+   * Ver los **permisos efectivos**
 
 ### Modelo {#blueprint}
 
@@ -195,6 +215,8 @@ Esta pestaña solo está visible para páginas que sirven como modelos. Los mode
 * **Configuraciones de despliegue**: controla las circunstancias dentro de las que se propagarán las modificaciones a la Live Copy
 
 ### Live Copy    {#live-copy}
+
+Esta ficha solo está visible para páginas configuradas como Live Copies.
 
 * **Sincronizar**: sincronice la Live Copy con el modelo, conservando las modificaciones locales
 * **Restablecer**: restablezca la Live Copy al estado del modelo y elimine las modificaciones locales
@@ -220,6 +242,33 @@ Esta pestaña solo está visible para páginas que sirven como modelos. Los mode
 Cuando un entorno de previsualización esté habilitado, verá lo siguiente:
 
 * URL de previsualización: la URL utilizada para acceder al contenido en el entorno de previsualización.
+
+### Aplicación web progresiva {#progressive-web-app}
+
+A través de una configuración sencilla, un autor de contenido ahora puede habilitar las funciones de aplicación web progresiva (PWA) para las experiencias creadas en AEM Sites.
+
+>[!NOTE]
+>
+>Para obtener más información, consulte [Activación de las funciones progresivas de la aplicación web](/help/sites-cloud/authoring/features/enable-pwa.md).
+
+* **Configurar la experiencia instalable**
+
+   * **Habilitar PWA** - habilitar/deshabilitar la función; permite a los usuarios instalar el sitio como PWA
+   * **URL de inicio** - la URL de inicio preferida
+   * **Modo de visualización** : cómo se debe ocultar o presentar el navegador al usuario desde el dispositivo local
+   * **Orientación de la pantalla** - cómo gestionará el PWA las orientaciones del dispositivo
+   * **Color del tema** : el color de la aplicación que afecta a cómo el sistema operativo del usuario local muestra la barra de herramientas de la IU nativa y los controles de navegación
+   * **Color de fondo** : el color de fondo de la aplicación, que se muestra a medida que se carga la aplicación.
+   * **Icono** : el icono que representa la aplicación en el dispositivo del usuario.
+
+* **Administración de caché (avanzada)**
+
+   * **Estrategia de almacenamiento en caché y frecuencia de actualización del contenido** - define el modelo de almacenamiento en caché para su PWA
+   * **Archivos para almacenar en caché para su uso sin conexión**
+      * **Almacenamiento en caché previo de archivos (vista previa técnica)** : los archivos alojados en AEM se guardarán en la caché del navegador local cuando el trabajador de servicios esté instalando y antes de que se utilicen
+      * **Bibliotecas del lado del cliente** - bibliotecas del lado del cliente para almacenar en caché para la experiencia sin conexión
+      * **Inclusiones de rutas** - las solicitudes de red para las rutas definidas se interceptan y el contenido almacenado en caché se devuelve de acuerdo con la estrategia de almacenamiento en caché configurada y la frecuencia de actualización del contenido
+      * **Exclusiones de ruta** : estos archivos nunca se almacenarán en caché, independientemente de la configuración en Almacenamiento en caché de archivos previo al almacenamiento en caché e inclusiones de rutas
 
 ## Edición de las propiedades de página   {#editing-page-properties-1}
 
