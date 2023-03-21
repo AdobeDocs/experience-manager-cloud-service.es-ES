@@ -2,10 +2,10 @@
 title: Compatibilidad con OAuth2 para el servicio de correo
 description: Compatibilidad con Oauth2 para el servicio de correo en Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: cf2582965249187fae943ce5ef37821388116905
+source-git-commit: fb6fd4a86f94ae282d95c73ecb702a372d7c1f86
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 100%
+source-wordcount: '691'
+ht-degree: 97%
 
 ---
 
@@ -37,6 +37,7 @@ Para obtener más información sobre el servicio de correo de AEM as a Cloud Ser
    * `offline_access`
    * `email`
    * `profile`
+   * `https://outlook.office365.com/SMTP.Send`
 1. Vaya a **Autenticación** - **Añadir una plataforma** - **Web** y en la sección **Redirección de URL**, añada las siguientes direcciones URL: una con barra diagonal y otra sin:
    * `http://localhost/`
    * `http://localhost`
@@ -69,7 +70,7 @@ Para ello, siga estos pasos:
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
    --data-urlencode 'client_id=<clientID>' \
-   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
+   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access https://outlook.office365.com/SMTP.Send' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=authorization_code' \
    --data-urlencode 'client_secret=<clientSecret>' \
@@ -89,7 +90,7 @@ Antes de configurar OAuth en el lado de AEM, asegúrese de validar accessToken y
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_IezHLAQAAAPeNSdgOAAAA' \
    --data-urlencode 'client_id=<client_id>' \
-   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
+   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access https://outlook.office365.com/SMTP.Send' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=refresh_token' \
    --data-urlencode 'client_secret=<client_secret>' \
@@ -101,6 +102,8 @@ Antes de configurar OAuth en el lado de AEM, asegúrese de validar accessToken y
 >[!NOTE]
 >
 > Puede obtener la colección de la API Postman desde [esta ubicación](https://docs.microsoft.com/es-es/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+>
+> Compruebe la documentación de MSFT OAuth [here](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) para obtener más información.
 
 ### Integración con AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
@@ -132,6 +135,7 @@ Antes de configurar OAuth en el lado de AEM, asegúrese de validar accessToken y
    * `offline_access`
    * `email`
    * `profile`
+   * `https://outlook.office365.com/SMTP.Send`
 1. Creación de un archivo de propiedad OSGi `called com.day.cq.mailer.DefaultMailService.cfg.json`
 en 
 `/apps/<my-project>/osgiconfig/config` con la siguiente sintaxis:
