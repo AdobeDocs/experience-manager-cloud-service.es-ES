@@ -1,17 +1,17 @@
 ---
 title: Trabajos asincrónicos
-description: Adobe Experience Manager optimiza el rendimiento completando de manera asincrónica algunas tareas que requieren muchos recursos.
+description: Adobe Experience Manager optimiza el rendimiento completando de forma asíncrona algunas tareas que requieren muchos recursos como operaciones en segundo plano.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 98%
+source-wordcount: '971'
+ht-degree: 70%
 
 ---
 
 # Operaciones asincrónicas {#asynchronous-operations}
 
-Para reducir el impacto negativo en el rendimiento, Adobe Experience Manager procesa de manera asincrónica determinadas operaciones de larga duración y que requieren gran cantidad de recursos. El procesamiento asincrónico implica poner en cola varios trabajos y ejecutarlos en serie, según la disponibilidad de los recursos del sistema.
+Para reducir el impacto negativo en el rendimiento, Adobe Experience Manager procesa de forma asíncrona determinadas operaciones de larga duración y que requieren muchos recursos como operaciones en segundo plano. El procesamiento asincrónico implica poner en cola varios trabajos y ejecutarlos en serie, según la disponibilidad de los recursos del sistema.
 
 Estas operaciones incluyen:
 
@@ -22,7 +22,7 @@ Estas operaciones incluyen:
 * Desplazar páginas
 * Desplegar Live Copies
 
-Se puede ver el estado de los trabajos asincrónicos desde el panel **[!UICONTROL Estado de trabajo asincrónico]** en **Navegación global** -> **Herramientas** -> **Operaciones** -> **Trabajos**.
+Puede ver el estado de los trabajos asincrónicos desde la **[!UICONTROL Operaciones en segundo plano]** tablero en **Navegación global** -> **Herramientas** -> **General** -> **Trabajos**.
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ Se puede ver el estado de los trabajos asincrónicos desde el panel **[!UICONTRO
 
 Siempre que AEM procese una operación de manera asincrónica, recibirá una notificación en la [bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) y por correo electrónico (si está activada).
 
-Para ver en detalle el estado de las operaciones asincrónicas, vaya a la página **[!UICONTROL Estado del trabajo asincrónico]**.
+Para ver en detalle el estado de las operaciones asincrónicas, vaya a la **[!UICONTROL Operaciones en segundo plano]** página.
 
-1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Operaciones]** > **[!UICONTROL Trabajos]**.
+1. En la interfaz del Experience Manager, seleccione **Navegación global** -> **Herramientas** -> **General** -> **Trabajos**.
 
-1. En la página **[!UICONTROL Estado del trabajo asincrónico]**, revise los detalles de las operaciones.
+1. En el **[!UICONTROL Operaciones en segundo plano]** , revise los detalles de las operaciones.
 
    ![Estado y detalles de las operaciones asincrónicas](assets/async-operation-status.png)
 
@@ -70,13 +70,22 @@ Para ver en detalle el estado de las operaciones asincrónicas, vaya a la págin
    >
    >No puede eliminar un trabajo si su estado es **Activo** o **En cola**.
 
-## Purgar trabajos completados {#purging-completed-jobs}
+## Configuración de opciones asincrónicas de procesamiento de trabajos {#configure}
 
-AEM ejecuta un trabajo de depuración todos los días a la 01:00 para eliminar los trabajos asincrónicos completados que tengan más de un día de antigüedad.
+Existen varias opciones en torno a los trabajos asincrónicos que se pueden configurar. Los siguientes ejemplos muestran cómo se puede hacer esto utilizando el administrador de configuración en un sistema de desarrollo local.
+
+>[!NOTE]
+>
+>[Configuraciones de OSGi](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) se consideran contenido mutable y cualquier configuración de este tipo debe implementarse como paquete de contenido para un entorno de producción.
+
+### Purgar trabajos completados {#purging-completed-jobs}
+
+AEM ejecuta un trabajo de depuración todos los días a las 01:00 para eliminar los trabajos asincrónicos completados que tengan más de un día de antigüedad.
 
 Puede modificar la programación del trabajo de depuración y la duración por la cual se conservan los detalles de los trabajos completados antes de que se eliminen. También puede configurar el número máximo de trabajos completados para los que se conservan los detalles en cualquier momento.
 
-1. En Navegación global, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
+1. Inicie sesión en la consola web AEM de inicio rápido del SDK de AEM en `https://<host>:<port>/system/console` como usuario administrador.
+1. Vaya a **OSGi** > **Configuración**
 1. Abra el trabajo **[!UICONTROL Trabajo programado de depuración de trabajos asincrónicos de Adobe Granite]**.
 1. Especifique:
    * El umbral de cantidad de días después de los cuales se eliminan los trabajos completados.
@@ -87,28 +96,26 @@ Puede modificar la programación del trabajo de depuración y la duración por l
 
 1. Guarde los cambios.
 
-## Configurar el procesamiento asincrónico {#configuring-asynchronous-processing}
-
-Puede configurar el número de umbral de recursos, páginas o referencias para que AEM procese una operación en particular de manera asincrónica, así como alternar las notificaciones por correo electrónico cuando se procesen los trabajos.
-
 ### Configurar operaciones asincrónicas de eliminación de recursos {#configuring-synchronous-delete-operations}
 
 Si el número de recursos o carpetas que se van a eliminar supera el número de umbral, la operación de eliminación se realiza de manera asincrónica.
 
-1. En Navegación global, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
+1. Inicie sesión en la consola web AEM de inicio rápido del SDK de AEM en `https://<host>:<port>/system/console` como usuario administrador.
+1. Vaya a **OSGi** > **Configuración**
 1. En la consola web, abra la  **[!UICONTROL Configuración de cola predeterminada del proceso asincrónico.]**
 1. En el cuadro **[!UICONTROL Umbral de número de recursos]**, especifique el número de umbral de recursos o carpetas para el procesamiento asincrónico de las operaciones de eliminación.
 
    ![Umbral de eliminación de recursos](assets/async-delete-threshold.png)
 
-1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. por ejemplo, success, failed.
+1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. por ejemplo, éxito, error.
 1. Guarde los cambios.
 
 ### Configurar operaciones asincrónicas de movimiento de recursos {#configuring-asynchronous-move-operations}
 
 Si el número de recursos, carpetas o referencias que se van a mover supera el número de umbral, la operación de movimiento se realiza de manera asincrónica.
 
-1. En Navegación global, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
+1. Inicie sesión en la consola web AEM de inicio rápido del SDK de AEM en `https://<host>:<port>/system/console` como usuario administrador.
+1. Vaya a **OSGi** > **Configuración**
 1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajos de operación de movimiento.]**
 1. En el cuadro **[!UICONTROL Número de umbral de recursos/referencias]**, especifique el número de umbral de recursos, carpetas o referencias para el procesamiento asincrónico de operaciones de movimiento.
 
@@ -121,7 +128,8 @@ Si el número de recursos, carpetas o referencias que se van a mover supera el n
 
 Si el número de referencias a las páginas que se van a mover supera el número de umbral, la operación de movimiento se realiza de manera asincrónica.
 
-1. En Navegación global, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
+1. Inicie sesión en la consola web AEM de inicio rápido del SDK de AEM en `https://<host>:<port>/system/console` como usuario administrador.
+1. Vaya a **OSGi** > **Configuración**
 1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajo de operación de movimiento de página.]**
 1. En el campo **[!UICONTROL Número de umbral de referencias]**, especifique el número de umbral de referencias para el procesamiento asincrónico de las operaciones de movimiento de página.
 
@@ -132,7 +140,8 @@ Si el número de referencias a las páginas que se van a mover supera el número
 
 ### Configurar operaciones de MSM asincrónicas {#configuring-asynchronous-msm-operations}
 
-1. En Navegación global, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
+1. Inicie sesión en la consola web AEM de inicio rápido del SDK de AEM en `https://<host>:<port>/system/console` como usuario administrador.
+1. Vaya a **OSGi** > **Configuración**
 1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajo de operación de movimiento de página.]**
 1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito, error.
 
