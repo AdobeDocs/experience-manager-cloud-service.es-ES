@@ -1,17 +1,17 @@
 ---
-title: Introducción al Editor universal
-description: Descubra cómo el Editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+title: Introducción al Editor visual universal
+description: Descubra cómo el Editor visual universal (también conocido como Editor universal) habilita la edición de lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin objetivos y llena de cabeza. Descubra cómo puede ayudar a los autores de contenido a ofrecer experiencias excepcionales, aumentar la velocidad de contenido y cómo ofrece una experiencia de desarrollador de última generación.
+source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
 
 
-# Introducción al Editor universal {#introduction}
+# Introducción al Editor visual universal {#introduction}
 
-Descubra cómo el Editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
+Descubra cómo el Editor visual universal (también conocido como Editor universal) habilita la edición de lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin objetivos y llena de cabeza. Descubra cómo puede ayudar a los autores de contenido a ofrecer experiencias excepcionales, aumentar la velocidad de contenido y cómo ofrece una experiencia de desarrollador de última generación.
 
 ## Fondo {#background}
 
@@ -42,17 +42,14 @@ Los requisitos de una implementación para aprovechar el Editor universal son mu
 Un autor de contenido debe tener la misma potente experiencia de edición que ofrecía anteriormente el editor de páginas de AEM. Sin embargo, el Editor universal permite a los autores de contenido editar **any** contenido visual y en contexto y admite:
 
 * **AEM estructuras de página** - Anidado `cq:Components` de `cq:Pages`, incluidos los fragmentos de experiencias
-* **AEM fragmentos de contenido** - Editar contenido desde fragmentos de contenido tal como aparecen en el contexto de la experiencia
-* **Documentos** : Word, Excel, Google Docs, Markdown o incluso un HTML sin formato persistieron, por ejemplo, en GitHub
-* **Contenido de terceros** - Un sistema de complementos permite hacer que cualquier fuente de contenido externo sea editable.
+* **AEM fragmentos de contenido** - Edite contenido desde fragmentos de contenido tal y como aparecen en el contexto de la experiencia.
+* **Documentos** - La prueba de conceptos ha demostrado que también los documentos de Word, Excel, Google Docs o Markdown pueden editarse de la misma manera (esto es WIP).
 
 ### Cualquier aspecto {#any-aspect}
 
 Para un autor de contenido, el contenido no es solo información contenida, sino también cómo se procesa y recibe. El contenido viene con metadatos adicionales y reglas de instrumentación que el editor universal puede comprender y editar, como por ejemplo:
 
-* **Aplicación de diseño y estilo** - Mediante un sistema de estilos, el profesional de marketing y el autor de contenido pueden aplicar distintos estilos a su contenido y crear diferentes diseños, como columnas, carruseles, pestañas, acordeones, etc.
-* **Realización de experimentos** - Al publicar una nueva versión de contenido que desafía el contenido existente, el profesional de marketing puede experimentar con mejoras de contenido y medir el impacto.
-* **Personalización de variaciones** : Al crear y administrar variaciones de contenido específicas para audiencias determinadas, los profesionales de marketing pueden personalizar el contenido que se envía.
+* **Aplicación de diseño y estilo** - Mediante un sistema de estilos, el profesional de marketing y el autor de contenido pueden aplicar distintos estilos a su contenido y crear diferentes diseños para el contenido, como columnas, carruseles, pestañas, acordeones, etc.
 
 ## Valor {#value}
 
@@ -64,9 +61,9 @@ Al desvincular la experiencia de edición de contenido de cualquier sistema de e
 * **Aumentar la velocidad del contenido** - Para simplificar el flujo de trabajo de administración de los profesionales, el Editor universal permite editar contenido en la vista previa para guiar a los profesionales mostrando solo las opciones que son relevantes para ese contexto y hace que el flujo de trabajo sea independiente de las fuentes de contenido.
 * **Experiencia para desarrolladores de vanguardia** - Para soportar un panorama de aplicaciones heterogéneo en el mundo real, el editor universal está completamente disociado y no depende de la tecnología, lo que permite a los desarrolladores utilizar su pila de tecnología preferida para implementar la experiencia.
 
-## Editor universal y el editor de fragmentos de contenido {#universal-editor-content-fragment-editor}
+## Editor visual universal y el editor de fragmentos de contenido {#universal-editor-content-fragment-editor}
 
-A primera vista, puede parecer que el editor universal y el editor de fragmentos de contenido proporcionan funciones de edición similares. Sin embargo, estos editores ofrecen capacidades muy diferentes y realizan diferentes trabajos del profesional de marketing.
+A primera vista, puede parecer que el Editor visual universal y el Editor de fragmentos de contenido proporcionan funciones de edición similares. Sin embargo, estos editores ofrecen capacidades muy diferentes y realizan diferentes trabajos del profesional de marketing.
 
 ### Editor de fragmentos de contenido {#content-fragment-editor}
 
@@ -74,7 +71,7 @@ Un profesional de marketing quiere crear contenido sin tener que preocuparse por
 
 * El trabajo subyacente que se debe realizar es escalar la estrategia de contenido.
 
-### Editor universal {#universal-editor}
+### Editor visual universal {#universal-editor}
 
 Un profesional de marketing quiere crear contenido que esté adaptado al diseño de un contexto determinado para ofrecer una experiencia excepcional.
 
@@ -82,9 +79,9 @@ Un profesional de marketing quiere crear contenido que esté adaptado al diseño
 
 ## Hoja de ruta {#road-map}
 
-Es importante señalar que el Editor universal es un trabajo en curso y las capacidades que se describen en este documento son una visión del editor final y no necesariamente de sus capacidades actuales.
+Es importante señalar que el Editor Universal es un trabajo en curso y algunas de las capacidades que se describen en este documento son una visión del editor final y no necesariamente representativas de sus capacidades actuales.
 
-Hable con su contacto de Adobe para obtener más información sobre las próximas funciones planificadas para el editor universal
+Hable con su contacto de Adobe para obtener más información sobre las próximas funciones planificadas para el editor universal.
 
 ## Recursos adicionales {#additional-resources}
 
