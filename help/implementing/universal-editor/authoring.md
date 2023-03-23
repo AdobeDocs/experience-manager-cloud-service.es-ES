@@ -1,10 +1,10 @@
 ---
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores de contenido crear contenido con el editor universal.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 2%
+source-wordcount: '1152'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ Para ello, proporciona a los autores de contenido una IU intuitiva que requiere 
 
 >[!NOTE]
 >
->El editor universal sigue en desarrollo y actualmente solo puede crear texto.
+>El Editor universal aún está en desarrollo y actualmente no puede editar todos los tipos de contenido.
 
 ## Preparación de la aplicación {#prepare-app}
 
@@ -106,11 +106,11 @@ El menú hamburguesa aún no está implementado.
 
 ![Menú Hambuger](assets/hamburger-menu.png)
 
-#### Barra de direcciones {#address-bar}
+#### Barra de ubicación {#Location-bar}
 
-La barra de direcciones muestra la ubicación de la página que está editando. Toque o haga clic para introducir la dirección de otra página que desea editar.
+La barra de ubicación muestra la dirección de la página que está editando. Toque o haga clic para introducir la dirección de otra página que desea editar.
 
-![Barra de direcciones](assets/address-bar.png)
+![Barra de ubicación](assets/address-bar.png)
 
 >[!TIP]
 >
@@ -119,12 +119,6 @@ La barra de direcciones muestra la ubicación de la página que está editando. 
 >[!NOTE]
 >
 >Todas las páginas que desee editar con el Editor universal deben [instrumentado para admitir el Editor universal.](getting-started.md)
-
-#### Indicador de colaboración {#collaboration}
-
-Si hay otros autores con la misma página cargada en el Editor universal, se mostrarán las imágenes de esos autores. Pase el ratón sobre una imagen para ver el nombre de usuario completo
-
-![Indicador de colaboración](assets/collaboration.png)
 
 #### Abrir vista previa de la aplicación {#open-app-preview}
 
@@ -141,6 +135,10 @@ Toque o haga clic en el icono de vista previa de la aplicación abierta para abr
 Toque o haga clic en el botón de publicación para publicar los cambios en el contenido en directo para que los lectores los consuman.
 
 ![Botón Publicar](assets/publish.png)
+
+>[!TIP]
+>
+>Consulte el documento [Publicación de contenido con el Editor visual universal](publishing.md) para obtener más información sobre la publicación con el editor universal.
 
 ### El carril {#rail}
 
@@ -195,6 +193,7 @@ Tenga en cuenta que, en el modo de vista previa, tocar o hacer clic en el conten
 Para obtener más información sobre el Editor universal, consulte estos documentos.
 
 * [Introducción al Editor universal](introduction.md) : Descubra cómo el Editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
+* [Publicación de contenido con el Editor universal](publishing.md) : Descubra cómo el Editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 * [Introducción al Editor universal en AEM](getting-started.md) : Obtenga información sobre cómo acceder al Editor universal y cómo instrumentar la primera aplicación de AEM para utilizarla.
 * [Arquitectura de editor universal](architecture.md) - Obtenga información sobre la arquitectura del Editor universal y cómo fluyen los datos entre sus servicios y capas.
 * [Atributos y tipos](attributes-types.md) : Obtenga información sobre los atributos y tipos de datos que requiere el Editor universal.
