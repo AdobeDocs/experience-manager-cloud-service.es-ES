@@ -1,12 +1,12 @@
 ---
 title: Introducción a  [!DNL AEM Forms]  as a Cloud Service
-description: Descubra AEM Forms y descubra cómo le ayuda a producir formularios y documentos preparados para el negocio. Obtenga información sobre Platform como servicio (PaaS) y cómo administrar formularios digitales de clase empresarial y procesos empresariales, así como conectar Forms a Adobe Sign y a los orígenes de datos actuales.
+description: Descubra AEM Forms y cómo le ayuda a producir documentos y formularios preparados para la empresa. Obtenga información acerca de Platform como servicio (PaaS) y cómo administrar formularios digitales de clase empresarial y procesos de negocios, así como conectar Forms a Adobe Sign y a las fuentes de datos actuales.
 landing-page-description: Obtenga información sobre cómo utilizar formularios en AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 31%
+ht-degree: 35%
 
 ---
 
