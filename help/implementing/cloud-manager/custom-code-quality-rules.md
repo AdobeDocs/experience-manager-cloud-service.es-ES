@@ -905,7 +905,7 @@ Pueden producirse problemas difíciles de solucionar cuando un nodo de definici�
 * **Clave**: IndexRulesNode
 * **Tipo**: Code Smell
 * **Gravedad**: Menor
-* **Desde**: versión 2021.2.0
+* **Desde**: Versión 2021.2.0
 
 Un nodo de definición de índice de búsqueda personalizada definido correctamente debe contener un nodo secundario denominado `indexRules` que, a su vez, debe tener al menos un secundario. Puede encontrar más información en la [documentación de Oak.](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 

@@ -32,7 +32,7 @@ ht-degree: 93%
 
 ## Creación de un modelo {#create-model}
 
-La consola del modelo de fragmento de contenido se abre en una nueva pestaña. Piense en la consola del modelo de fragmento de contenido como su biblioteca de modelos, donde crea nuevos modelos y administra los existentes.
+La consola del modelo de fragmento de contenido se abre en una nueva pestaña. Considere la consola del modelo de fragmento de contenido como su biblioteca de modelos, donde crea nuevos modelos y gestiona los modelos existentes.
 
 1. Haga clic en el botón **Crear** en la parte superior derecha de la pantalla para comenzar a generar un modelo de fragmento de contenido.
 

@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -42,7 +42,7 @@ Existen dos fases asociadas con la transferencia de contenido:
    Consulte el Proceso de [Extracción en Transferencia](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) de contenido para obtener más detalles.
 
    >[!NOTE]
-   >La asignación de usuarios ahora se ejecuta automáticamente como parte de la fase de extracción en el autor (pero se puede deshabilitar en el autor o habilitar en la publicación). Consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obtener más información.
+   >La asignación de usuarios ahora se ejecuta automáticamente como parte de la fase de extracción en el autor (pero puede desactivarse opcionalmente en el autor o activarse en la publicación). Consulte [Asignación de usuarios y migración principal](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obtener más información.
 
 1. **Ingesta**: hace referencia a la ingesta de contenido del *conjunto de migración* en la instancia de Cloud Service del destinatario.
 
@@ -71,14 +71,14 @@ En la fase de ingesta, para aplicar el contenido delta sobre el contenido actual
 >title="Caducidad de un conjunto de migración"
 >abstract="Obtenga información acerca de la caducidad de un conjunto de migración."
 
-Todos los conjuntos de migración caducarán finalmente después de un período prolongado de inactividad de aproximadamente 90 días. Una vez que los indicadores se muestren en la tarjeta de proyecto y en las filas de la tabla de trabajos de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. La hora de caducidad se puede ampliar fácilmente actuando en función del conjunto de migración de las siguientes formas:
+Todos los conjuntos de migraciones terminarán después de un prolongado período de inactividad de aproximadamente 90 días. Una vez que los indicadores se muestran en la tarjeta del proyecto y en las filas de la tabla de trabajo de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. El tiempo de caducidad puede ampliarse fácilmente si se actúa sobre la base de la migración establecida:
 
-* edición de su descripción
-* obteniendo su clave de extracción
-* realización de una extracción en él
+* editar su descripción
+* obtención de su clave de extracción
+* realización de una extracción para él
 * realizar una ingesta desde él
 
-La caducidad de un conjunto de migración se puede supervisar en la fila Conjunto de migración. Un indicador visual útil de que un conjunto de migración se está acercando a su fecha de caducidad también agregó la tarjeta del proyecto.
+La caducidad de un conjunto de migración se puede supervisar en la fila Conjunto de migración . Un indicador visual útil de que un conjunto de migración se acerca a su fecha de caducidad también agregó la tarjeta del proyecto.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 
