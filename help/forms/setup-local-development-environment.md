@@ -5,7 +5,7 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: a118273243ab506e3c4db318f409c125f1c555c0
 workflow-type: tm+mt
 source-wordcount: '2960'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -252,7 +252,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **Crear un [!DNL Experience Manager Forms] as a [Cloud Service] proyecto:** Crear un [!DNL Experience Manager Forms] as a [Cloud Service] proyecto basado en el más reciente [AEM Tipo de archivo de](https://github.com/adobe/aem-project-archetype) o más tarde. El tipo de archivo ayuda a los desarrolladores a empezar a desarrollar fácilmente [!DNL AEM Forms] as a Cloud Service. También incluye algunas temáticas de muestra y plantillas para ayudarle a empezar rápidamente.
+1. **Cree un proyecto de [!DNL Experience Manager Forms] as a [Cloud Service]:** cree un proyecto de [!DNL Experience Manager Forms] as a [Cloud Service] basado en la última versión del [Arquetipo de AEM](https://github.com/adobe/aem-project-archetype) o posterior. El tipo de archivo ayuda a los desarrolladores a empezar a desarrollar fácilmente [!DNL AEM Forms] as a Cloud Service. También incluye algunas temáticas de muestra y plantillas para ayudarle a empezar rápidamente.
 
    Abra el símbolo del sistema y ejecute el siguiente comando para crear un proyecto de [!DNL Experience Manager Forms] as a Cloud Service.
 
@@ -260,11 +260,11 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
    ```
 
-   Cambie el `appTitle`, `appId`y `groupId` en el comando anterior para reflejar su entorno. Además, establezca el valor de includeFormsenrollment, includeFormscommunications e includeFormsheadless en `y` o `n` según la licencia y los requisitos. Incluir sin encabezado es obligatorio para crear Forms adaptable basado en componentes principales.
+   Cambie el `appTitle`, `appId`y `groupId` en el comando anterior para reflejar su entorno. Además, establezca el valor de includeFormsenrollment, includeFormscommunications e includeFormsheadless en `y` o `n` según la licencia y los requisitos. includeFormsheadless es obligatorio para crear formularios adaptables basados en componentes principales.
 
-   * Utilice la opción `includeFormsenrollment=y` para incluir configuraciones, temáticas, plantillas, componentes principales y dependencias específicos para formularios, que son necesarios para crear formularios adaptables. Si utiliza el portal de Forms establezca la opción `includeExamples=y`. También agrega los componentes principales del portal de Forms al proyecto.
+   * Utilice la opción `includeFormsenrollment=y` para incluir configuraciones, temáticas, plantillas, componentes principales y dependencias específicos para formularios, que son necesarios para crear formularios adaptables. Si utiliza el portal de Forms establezca la opción `includeExamples=y`. Agregue al proyecto los componentes principales del portal de Forms.
 
-   * Utilice el `includeFormscommunications=y` Opción para incluir los componentes principales de Forms y las dependencias necesarias para incluir la funcionalidad de comunicaciones del cliente.
+   * Utilice la opción `includeFormscommunications=y` para incluir los componentes principales de Forms y las dependencias necesarias para incluir la funcionalidad de comunicaciones del cliente.
 
 1. Implemente el proyecto en su entorno de desarrollo local. Puede utilizar el siguiente comando para implementarlo en su entorno de desarrollo local
 
@@ -329,15 +329,15 @@ Realice los siguientes pasos para configurar la memoria caché de Dispatcher par
 
 El entorno de desarrollo local está listo.
 
-## Habilitar los componentes principales de Forms AEM adaptables para un proyecto basado en un arquetipo de archivo de existente {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
+## Habilitación de los componentes principales de formularios adaptables para un proyecto basado en el arquetipo de AEM existente {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
 
-AEM Si utiliza la versión 40 o posterior del tipo de archivo del programa basado en el tipo de archivo de para AEM Forms as a Cloud Service, los componentes principales se habilitan automáticamente para su entorno.
+Si utiliza el programa basado en el arquetipo de AEM versión 40 o posterior para formularios de AEM as a Cloud Service, los componentes principales se activan automáticamente para su entorno.
 
-Para habilitar los componentes principales de Forms adaptables para el entorno as a Cloud Service de AEM Forms en función de versiones anteriores de Archetype, incruste los artefactos de ejemplos de componentes principales de WCM y los artefactos de componentes principales de Forms (incluidos ejemplos) en el proyecto:
+Para habilitar los componentes principales de formularios adaptables para el entorno de AEM Forms as a Cloud Service en función de versiones anteriores del arquetipo, incruste los artefactos de ejemplos de componentes principales de WCM y los artefactos de componentes principales de Forms (incluidos ejemplos) en el proyecto:
 
-1. AEM Abra la carpeta del proyecto Tipo de archivo en un editor de código de texto sin formato. Por ejemplo, código VS.
+1. Abra la carpeta del proyecto de arquetipo de AEM en un editor de código de texto sin formato. Por ejemplo, VS Code.
 
-1. AEM Abra el archivo .pom de nivel superior (pom principal) del proyecto de tipo de archivo de la en el entorno local, agregue las siguientes propiedades al archivo y guárdelo.
+1. Abra el archivo .pom de nivel superior (pom principal) del proyecto de arquetipo de AEM en el entorno local, agregue las siguientes propiedades al archivo y guárdelo.
 
    ```XML
    <properties>
@@ -348,7 +348,7 @@ Para habilitar los componentes principales de Forms adaptables para el entorno a
 
    Para la última versión de `core.forms.components` y `core.wcm.components`, marque [documentación de componentes principales](https://github.com/adobe/aem-core-forms-components).
 
-1. En la sección de dependencias del archivo ppm.xml de nivel superior (principal), agregue las siguientes dependencias:
+1. En la sección de dependencias del archivo ppm.xml de nivel superior (principal), añada las siguientes dependencias:
 
    ```XML
        <!-- Forms Core Component Dependencies -->
@@ -389,7 +389,7 @@ Para habilitar los componentes principales de Forms adaptables para el entorno a
        <!-- End of AEM Forms Core Component Dependencies -->
    ```
 
-1. Abra el archivo all/pom.xml y agregue las siguientes dependencias para agregar artefactos de componentes principales de Forms AEM adaptables al proyecto de tipo de archivo de la:
+1. Abra el archivo all/pom.xml y agregue las siguientes dependencias para añadir artefactos de componentes principales de formularios adaptables al proyecto de arquetipo de AEM:
 
    ```XML
        <dependency>
@@ -410,7 +410,7 @@ Para habilitar los componentes principales de Forms adaptables para el entorno a
    ```
 
    >[!NOTE]
-   Asegúrese de que los siguientes artefactos de componentes principales de Forms adaptables no estén incluidos en el proyecto.
+   Asegúrese de que los siguientes artefactos de componentes principales de formularios adaptables no estén incluidos en el proyecto.
    `<dependency>`
    `<groupId>com.adobe.aem</groupId>`
    `<artifactId>core-forms-components-apps</artifactId>`
@@ -421,7 +421,7 @@ Para habilitar los componentes principales de Forms adaptables para el entorno a
    `<artifactId>core-forms-components-core</artifactId>`
    `</dependency>`
 
-1. [Ejecutar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es). Una vez ejecutada correctamente la canalización, los componentes principales de Forms adaptable se habilitan para su entorno. Además, la plantilla de Forms adaptable (componentes principales) y la temática de lienzo se añaden al entorno as a Cloud Service de Forms.
+1. [Ejecutar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es). Una vez ejecutada correctamente la canalización, los componentes principales de formularios adaptables se habilitan para su entorno. Además, la plantilla formularios adaptables (componentes principales) y la temática lienzo se añaden al entorno de Forms as a Cloud Service.
 
 
 ## Actualice su entorno de desarrollo local {#upgrade-your-local-development-environment}

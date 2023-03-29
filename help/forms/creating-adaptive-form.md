@@ -8,7 +8,7 @@ exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 source-git-commit: ae208e9ac35c3c464d9beeaa3bc2bddc0ecf52bb
 workflow-type: tm+mt
 source-wordcount: '1500'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ Los formularios adaptables le permiten crear formularios atractivos, interactivo
 
 Antes de empezar, obtenga información sobre el tipo de componentes de Forms disponibles para usted:
 
-* [Componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) son componentes estandarizados de captura de datos. Estos componentes proporcionan funcionalidades de personalización, un tiempo de desarrollo reducido y costes de mantenimiento más bajos para sus experiencias de inscripción digital. Un desarrollador puede personalizar y aplicar estilo fácilmente a estos componentes. Adobe recomienda aprovechar estos componentes modernos y ampliables para desarrollar Forms adaptable.
+* [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) son componentes estandarizados de captura de datos. Estos componentes proporcionan funcionalidades de personalización, un tiempo de desarrollo reducido y costes de mantenimiento más bajos para sus experiencias de inscripción digital. Un desarrollador puede personalizar y aplicar estilo fácilmente a estos componentes. Adobe recomienda aprovechar estos componentes modernos y ampliables para desarrollar formularios adaptables.
 
-* [Componentes de Forms Foundation adaptables](creating-adaptive-form.md) son componentes clásicos (antiguos) de captura de datos. Puede seguir utilizándolos para editar sus componentes de base existentes basados en el formulario adaptable. Si está creando formularios nuevos, Adobe recomienda utilizar  [Componentes principales de Forms adaptable](creating-adaptive-form-core-components.md) para crear un Forms adaptable.
+* [Componentes de base de formularios adaptables](creating-adaptive-form.md) son componentes clásicos de captura de datos (antiguos). Puede seguir utilizándolos para editar su Formulario adaptable basado en componentes de base existentes. Si está creando formularios nuevos, Adobe recomienda utilizar los [Componentes principales de Formularios adaptables](creating-adaptive-form-core-components.md) para crear Formularios adaptables.
 
 
 
@@ -77,16 +77,16 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
       >[!NOTE]
       >
-      > También puede crear lo siguiente [!UICONTROL Documento de registro] empleando un editor de Forms adaptable. Para obtener más información, consulte el [Documento de compatibilidad de registros en el Editor de formularios adaptables](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+      > También puede crear una plantilla de un [!UICONTROL Documento de registro] con un editor de formularios adaptables. Para obtener más información, consulte el [Documento de compatibilidad de registros en el Editor de formularios adaptables](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * Al seleccionar una plantilla estática, las opciones de datos, estilo, envío, entrega y vista previa no están disponibles. Cuando se crea un nuevo Formulario adaptable, se recomienda utilizar una Plantilla editable.
 
-1. En el **[!UICONTROL Estilo]** pestaña, seleccione una temática:
+1. En la pestaña **[!UICONTROL Estilo]**, seleccione una temática:
 
    * Cuando la plantilla seleccionada especifica una temática, la temática se selecciona automáticamente en el asistente. También puede elegir una temática diferente de la pestaña Estilo.
    * Si la plantilla seleccionada no especifica ninguna temática, puede utilizar la pestaña Estilo para elegir una temática. El botón **[!UICONTROL Crear]** solo se activa después de seleccionar una temática.
 
-1. (Opcional) En el **[!UICONTROL Datos]** pestaña, seleccione un modelo de datos:
+1. (Opcional) En la pestaña **[!UICONTROL Datos]**, seleccione un modelo de datos:
 
    * **Modelo de datos de formulario**: A [El modelo de datos de formulario](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
@@ -100,7 +100,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
    
    -->
 
-1. En el **[!UICONTROL Envío]** pestaña, seleccione una acción de envío:
+1. En la pestaña **[!UICONTROL Envío]**, seleccione una acción de envío:
 
    * Al seleccionar una plantilla, la acción de envío especificada en la plantilla se selecciona automáticamente. Puede seleccionar una acción de envío diferente en la pestaña Envío. La pestaña **[!UICONTROL Envío]** muestra todas las acciones de envío disponibles.
 

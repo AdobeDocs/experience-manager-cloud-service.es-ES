@@ -7,7 +7,7 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: fd0716a95d66908e215ed44bc773ed3c26e0382b
 workflow-type: tm+mt
 source-wordcount: '769'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Todos los usuarios asignados a un perfil de producto de AEM también tendrán ac
 
 >[!CAUTION]
 >
->AEM AEM No edite ni elimine los perfiles de producto llamados Administradores de o Usuarios de la aplicación de la aplicación de la aplicación de. AEM La edición de estos nombres de perfil puede interrumpir el inicio de sesión en la instancia de la nube de.
+>No edite ni elimine los perfiles de producto llamados Administradores de AEM o Usuarios de AEM. La edición de estos nombres de perfil puede interrumpir el inicio de sesión en la instancia de la nube de AEM.
 
 ## Requisitos previos {#prerequisites}
 

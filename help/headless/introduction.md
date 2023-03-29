@@ -1,12 +1,12 @@
 ---
-title: Introducción a Headless para AEM
-description: Obtenga información acerca de Headless en Adobe Experience Manager (AEM) con una combinación de documentación detallada y recorridos sin encabezado. Descubra cómo se utilizan funciones como modelos de fragmentos de contenido, fragmentos de contenido y una API de GraphQL para potenciar experiencias sin objetivos.
-landing-page-description: Obtenga información acerca de cómo utilizar y administrar Headless en Adobe Experience Manager as a Cloud Service.
+title: Introducción a sin encabezado para AEM
+description: Obtenga información acerca de Sin encabezado en Adobe Experience Manager (AEM) con una combinación de documentación detallada y recorridos sin encabezado. Descubra cómo se utilizan funciones como modelos de fragmentos de contenido, fragmentos de contenido y una API de GraphQL para potenciar experiencias sin objetivos.
+landing-page-description: Obtenga información sobre cómo usar y administrar Sin encabezado en Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 

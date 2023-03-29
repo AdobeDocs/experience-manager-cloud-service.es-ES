@@ -7,7 +7,7 @@ exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 source-git-commit: 0a87842923298be1a801a85519ac85fae5ef7933
 workflow-type: tm+mt
 source-wordcount: '1165'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
    >[!NOTE]
    >
    >
-   >Para finalizar o cancelar un flujo de trabajo, debe estar en estado de espera de la intervención del usuario, como en un paso de participante. Es posible que al intentar anular un flujo de trabajo que está ejecutando trabajos actualmente (subprocesos activos que se están ejecutando) no se produzcan los resultados esperados.
+   >Para finalizar o cancelar un flujo de trabajo, debe encontrarse a la espera de la intervención del usuario, como ocurre en el paso de participante. Es posible que al intentar anular un flujo de trabajo que está ejecutando trabajos en ese momento (subprocesos activos que están en ejecución) no se produzcan los resultados esperados.
 
 
 ## Visualización de flujos de trabajo archivados {#viewing-archived-workflows}

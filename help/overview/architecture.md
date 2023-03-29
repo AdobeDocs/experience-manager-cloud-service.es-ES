@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '1797'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Existen tres tipos de entornos disponibles con AEM as a Cloud Service:
 
    Consulte [Administración de entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=es#using-cloud-manager) para obtener más información.
 
-* **Entorno de desarrollo rápido**: permite iteraciones de desarrollo rápidas para depurar código nuevo o existente.
+* **Entorno de desarrollo rápido**: permite realizar iteraciones de desarrollo rápidas para depurar código nuevo o existente.
 
 ## Programas {#programs}
 

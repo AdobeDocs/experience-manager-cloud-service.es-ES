@@ -5,20 +5,20 @@ mini-toc-levels: 1
 source-git-commit: b47901d749712384506cf4eb03c099027933e95f
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 23%
+ht-degree: 99%
 
 ---
 
 
 # Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión de las funciones de la versión actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión de la funcionalidad actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
 >Desde aquí puede navegar hasta las notas de versiones anteriores; por ejemplo, las de 2021, 2022, etc.
 >
->Eche un vistazo a la [Hoja de ruta de las versiones del Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información sobre las próximas activaciones de funciones de [!DNL Experience Manager] as a Cloud Service.
+>Eche un vistazo a la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información acerca de las próximas activaciones de funcionalidades para [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ En la siguiente sección se describen las notas de la versión de las funciones 
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] la versión de la función actual (2023.1.0) es 9 de febrero de 2023. La próxima versión de la función (2023.2.0) está planificada para el 6 de abril de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.1.0) es el 9 de febrero de 2023. La próxima versión de la función (2023.2.0) está planificada para el 6 de abril de 2023.
 
 ## Vídeo de la versión {#release-video}
 
@@ -38,44 +38,44 @@ Eche un vistazo al vídeo Información general sobre la versión de enero de 202
 
 ### Nuevas funciones en el canal de prelanzamiento de [!DNL Sites] {#prerelease-features-sites}
 
-* La API de envío de contenido de AEM GraphQL ahora es compatible con GraphQL [Paginación](/help/headless/graphql-api/content-fragments.md#paging) y [Ordenar](/help/headless/graphql-api/content-fragments.md#sorting), para que la recuperación y el procesamiento de grandes conjuntos de contenido sean más eficientes. La paginación de GraphQL permite mejorar el tiempo de respuesta de la consulta devolviendo resultados en subconjuntos en lugar de todos a la vez. La ordenación de GraphQL permite colocar conjuntos de contenido en el orden deseado, lo que facilita que una aplicación cliente procese el contenido.  El tiempo de respuesta de consulta se mejora aún más con el filtrado híbrido en el motor de GraphQL AEM. El contenido ahora se lee desde JCR en conjuntos más pequeños que se corresponden con filtros de consulta.
+* La API de envío de contenido de GraphQL de AEM ahora es compatible con la [Paginación](/help/headless/graphql-api/content-fragments.md#paging) y [Ordenación](/help/headless/graphql-api/content-fragments.md#sorting) de GraphQL, para que la recuperación y el procesamiento de grandes conjuntos de contenido sean más eficientes. La paginación de GraphQL permite mejorar el tiempo de respuesta a las consultas devolviendo resultados en subconjuntos en lugar de todos a la vez. La ordenación de GraphQL permite colocar los conjuntos de contenido en el orden deseado, lo que facilita a una aplicación del cliente el procesamiento del contenido.  El tiempo de respuesta a la consulta mejora aún más con el filtrado híbrido en el motor de GraphQL de AEM. Ahora, el contenido se lee desde JCR en conjuntos más pequeños que se corresponden con los filtros de consulta.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-* Los informes de recursos ahora incluyen la capacidad de los administradores de [generar informes de descarga de recursos](/help/assets/asset-reports.md) de la implementación as a Cloud Service de Experience Manager Assets. Estos datos permiten a los administradores obtener perspectivas a partir de métricas de éxito clave para medir la adopción de activos en su empresa y por parte de los clientes.
+* Los informes de activos ahora permiten a los administradores [generar informes de descarga de activos](/help/assets/asset-reports.md) desde la implementación de Experience Manager Assets as a Cloud Service. Estos datos permiten a los administradores obtener perspectivas de métricas de éxito clave para medir la adopción de activos en su empresa y por parte de los clientes.
 
    ![Representación del PDF para otros formatos](/help/release-notes/assets/choose_report.png)
 
 * Experience Manager Assets ahora [admite el token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) además de la clave de acceso para la autenticación al conectarse a la fuente de datos de almacenamiento de Azure Blob para la ingesta de activos mediante la herramienta de importación masiva.
 
-* Se ha mejorado la administración de imágenes CMYK en el Asset compute, lo que permite generar Recorte inteligente y etiquetas inteligentes para imágenes CMYK.
+* Se ha mejorado la administración de las imágenes CMYK en Asset Compute, lo que le permite generar recortes inteligentes y etiquetas inteligentes para imágenes CMYK.
 
 ### Nuevas funciones en el canal de prelanzamiento de [!DNL Assets] {#prerelease-features-assets}
 
-* Experience Manager Assets ahora es compatible [ingesta a gran escala de recursos desde Google Cloud Platform](/help/assets/add-assets.md#asset-bulk-ingestor) uso de la herramienta Importación masiva .
+* Experience Manager Assets ahora admite [ingesta a gran escala de activos de Google Cloud Platform](/help/assets/add-assets.md#asset-bulk-ingestor) mediante la herramienta de importación masiva.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nuevas funciones disponibles en [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Pasos del flujo de trabajo para generar documentos de PDF no interactivos y resultados imprimibles](/help/forms/aem-forms-workflow-step-reference.md)**: Automatice la creación de documentos de PDF no interactivos y resultados imprimibles para sus procesos empresariales con AEM pasos del flujo de trabajo, optimizando el proceso de generación de documentos y ahorrando tiempo.
-* **[Utilice las notas a pie de página para proporcionar citas o información adicional en Forms adaptable](/help/forms/footnotes-richtextsupport.md)**: Utilice las notas al pie en un formulario adaptable para mostrar la información sobre cómo rellenar o utilizar un formulario. También puede utilizarla para proporcionar información entre paréntesis, permisos de copyright y otra información útil.
+* **[Pasos del flujo de trabajo para generar documentos PDF no interactivos y salida imprimible](/help/forms/aem-forms-workflow-step-reference.md)**: automatice la creación de documentos PDF no interactivos y la salida imprimible para sus procesos empresariales con pasos de flujo de trabajo de AEM, lo que optimiza el proceso de generación de documentos y ahorra tiempo.
+* **[Utilice las notas al pie para proporcionar citas o información adicional en formularios adaptables](/help/forms/footnotes-richtextsupport.md)**: utilice notas al pie en un formulario adaptable para mostrar la información sobre cómo completar o utilizar un formulario. También puede aprovecharlas para proporcionar información entre paréntesis, permisos de copyright y otra información útil.
 
 ### Nuevas funciones en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 
-* **[Utilice componentes principales de captura de datos para crear Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Uso del editor de Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) para crear formularios basados en componentes de captura de datos estandarizados (componentes principales). Estos componentes proporcionan capacidades de personalización, tiempo de desarrollo reducido y menores costes de mantenimiento para sus experiencias de inscripción digital.
-* **[Compatibilidad con la canalización de front-end para el diseño de Forms adaptable basado en componentes principales](/help/forms/using-themes-in-core-components.md)**: Utilice temas fácilmente personalizables basados en BEM para Forms adaptable basado en componentes principales al implementarlos con la canalización de implementación de front-end para mejorar el aspecto de sus formularios.
-* **[Generar documento de registro para Forms adaptable basado en componentes principales](/help/forms/generate-document-of-record-core-components.md)**: Cree un registro para el formulario adaptable basado en componentes principales en el envío para su archivo a largo plazo, impreso o en formato de documento.
+* **[Uso de los componentes principales de captura de datos para crear formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es)**: [use el editor de formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) para crear formularios basados en componentes de captura de datos estandarizados (componentes principales). Estos componentes proporcionan funcionalidades de personalización, un tiempo de desarrollo reducido y costes de mantenimiento más bajos para sus experiencias de inscripción digital.
+* **[Compatibilidad de canalización front-end para aplicar estilo a componentes principales basados en formularios adaptables](/help/forms/using-themes-in-core-components.md)**: utilice temáticas fácilmente personalizables de BEM para formularios adaptables basados en componentes principales implementándolas con la canalización de implementación de front-end y mejore la apariencia de sus formularios.
+* **[Generar documento de registro para el componente principal basado en formularios adaptables](/help/forms/generate-document-of-record-core-components.md)**: cree un registro para el formulario adaptable basado en componentes principales al enviarlo para su archivo a largo plazo, en formato impreso o en formato de documento.
 
 ![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **[Envío de Forms adaptable a Microsoft SharePoint y Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Optimice el envío de datos con la capacidad de enviar directamente datos de Formulario adaptable a Microsoft SharePoint y Microsoft OneDrive. Puede enviar datos basados en esquemas y sin esquema. Estas acciones de envío se suman a las acciones de envío ya disponibles.
-* **[Creación eficaz de formularios con la función Guardar un formulario adaptable como plantilla](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Optimice el proceso de creación de formularios guardando un formulario adaptable como plantilla y reutilizando las plantillas para su siguiente formulario adaptable.
-* **[Conectar AEM Forms a bases de datos compatibles con JDBC](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Conecte fácilmente su modelo de datos de AEM Forms a bases de datos compatibles con JDBC, lo que le permite leer y escribir datos sin problemas.
-* **[Integración con puntos de conexión REST mediante la API abierta 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Conecte los modelos de datos de formulario as a Cloud Service de AEM Forms a los extremos de REST compatibles con la especificación de API abierta versión 3.0, que le permite enviar y recibir datos con facilidad.
-* **[Compartir un formulario adaptable para su revisión](/help/forms/create-reviews-forms.md)**: Utilice el mecanismo de revisión de Forms adaptable para permitir que uno o más revisores revisen el formulario.
+* **[Enviar formularios adaptables a Microsoft SharePoint y Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: optimice el envío de datos con la capacidad de enviar directamente datos de formularios adaptables a Microsoft SharePoint y a Microsoft OneDrive. Puede enviar datos basados en esquemas y sin esquemas. Estas acciones de envío se añaden a las ya disponibles.
+* **[Creación eficiente de formularios con la funcionalidad Guardar un formulario adaptable como plantilla](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: optimice el proceso de creación de formularios guardando un formulario adaptable como plantilla y reutilizando las plantillas para el siguiente.
+* **[Conexión de AEM Forms a bases de datos compatibles con JDBC](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: conecte fácilmente el modelo de datos de AEM Forms a bases de datos compatibles con JDBC, lo que le permite leer y escribir datos sin problemas.
+* **[Integrar con puntos de conexión REST mediante la API abierta 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: conecte los modelos de datos de formulario de AEM Forms as a Cloud Service a puntos de conexión REST compatibles con la especificación de API abierta versión 3.0, lo que le permite enviar y recibir datos con facilidad.
+* **[Compartir un formulario adaptable para su revisión](/help/forms/create-reviews-forms.md)**: utilice el mecanismo de revisión de formularios adaptables para permitir que uno o más revisores revisen el formulario.
 
 
 ## Complemento CIF {#cloud-services-cif}
@@ -91,25 +91,25 @@ Eche un vistazo al vídeo Información general sobre la versión de enero de 202
 
 ### Novedades {#what-is-new-foundation}
 
-* [Entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) - Los RDE permiten a los desarrolladores solucionar problemas rápidamente e implementar nuevas funciones en AEM as a Cloud Service.
+* [Entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md): los RDE permiten a los desarrolladores solucionar rápidamente problemas e implementar nuevas funciones en AEM as a Cloud Service.
 
-   Los entornos de desarrollo rápido son un nuevo tipo de entorno de nube que sirve como una forma rápida, coherente y extensible de validar ese código que funciona localmente también funciona como se espera en la nube. Mediante las herramientas de la línea de comandos, &quot;sincronice&quot; rápidamente paquetes de contenido, paquetes, archivos de contenido, configuración OSGI o configuración de Dispatcher con el RDE. Vea esto en acción en el siguiente vídeo:
+   Los entornos de desarrollo rápido son un nuevo tipo de entorno de nube diseñado como una forma veloz, coherente y extensible de validar que el código que funciona localmente también funciona como se espera en la nube. Con las herramientas de la línea de comandos, “sincronice” rápidamente los paquetes de contenido, los paquetes, los archivos de contenido, la configuración OSGI o la configuración de Dispatcher con el RDE. Vea esto en acción en el siguiente vídeo:
 
    >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   Después de validar correctamente el código en RDE, se recomienda implementar en un entorno de desarrollo de nube para ejercer las puertas de calidad de Cloud Manager antes de implementar mediante canalización de producción en entornos de ensayo y producción.
+   Después de validar correctamente el código en el RDE, se recomienda implementarlo en un entorno de desarrollo en la nube para ejercitar las puertas de calidad de Cloud Manager, antes de implementarlo a través de la canalización de producción en entornos de fase y producción.
 
-   Cada programa incluye un RDE y, opcionalmente, se pueden obtener más licencias.
+   Cada programa incluye un RDE y, opcionalmente, se pueden obtener licencias de más.
 
    >[!NOTE]
    >
-   >Los RDE se pondrán en marcha gradualmente en las próximas semanas; puede enviar un correo electrónico a aemcs-rde-support@adobe.com para saltar al principio de la línea.
+   >Los RDE se implementarán gradualmente en las próximas semanas; puede enviar un correo electrónico a aemcs-rde-support@adobe.com para pasar al principio de la cola.
 
-* [Compatibilidad ampliada con tokens de acceso a API del lado del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) : Ahora puede generar varias credenciales, lo que resulta útil en escenarios en los que las API tienen características diferentes. Ahora también es posible revocar las credenciales de forma autoservicio.
+* [Compatibilidad ampliada para tokens de acceso a API del lado del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md): Ahora puede generar varias credenciales, lo que resulta útil en escenarios donde las API tienen características diferentes. Ahora también es posible revocar las credenciales de forma de autoservicio.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
-Puede encontrar las últimas notas de la versión de mantenimiento [here](/help/release-notes/maintenance/latest.md).
+Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help/release-notes/maintenance/latest.md).
 
 ## Cloud Manager {#cloud-manager}
 

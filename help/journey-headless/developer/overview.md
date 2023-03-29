@@ -6,7 +6,7 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: d4edec4448fd1b044875271cdcef3c7ada56cfe5
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Obtenga información sobre las funciones potentes y flexibles sin encabezado, su
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
->title="AEM Recursos para desarrolladores sin objetivos y documentación avanzada"
->abstract="Todo lo que necesita para aprender sobre AEM CMS sin objetivos y construir y enviar mejores aplicaciones y experiencias más rápidas."
->additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es" text="AEM Recursos para desarrolladores sin encabezado"
+>title="Recursos para desarrolladores sin encabezado y documentación avanzada de AEM"
+>abstract="Todo lo que necesita para aprender acerca de CMS sin encabezado de AEM y crear y enviar mejores aplicaciones y experiencias más rápidas."
+>additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es" text="Recursos para desarrolladores sin encabezado de AEM"
 
 ## Introducción {#introduction}
 

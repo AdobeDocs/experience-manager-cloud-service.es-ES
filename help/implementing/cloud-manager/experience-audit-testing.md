@@ -5,7 +5,7 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ La auditoría de experiencias está equipada con Google Lighthouse, una herramie
 
 >[!TIP]
 >
->Configure qué páginas se incluyen en la auditoría de experiencias cuando [configure la canalización.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>Puede configurar qué páginas se incluyen en la Auditoría de experiencias al [configurar la canalización.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 
 ## Comprender los resultados de la auditoría de experiencias {#understanding-experience-audit-results}
 

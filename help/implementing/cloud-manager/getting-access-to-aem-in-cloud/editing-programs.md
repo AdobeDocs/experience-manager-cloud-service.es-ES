@@ -20,7 +20,7 @@ Los usuarios con los permisos necesarios pueden editar [programas de producción
 
 ## Permisos {#permissions}
 
-Debe ser miembro del rol de **Propietario del negocio** para editar programas o eliminar programas de zona protegida.
+Debe ser miembro de la función **Propietario empresarial** para editar programas o eliminar programas de zona protegida.
 
 ## Edición de un programa {#editing}
 

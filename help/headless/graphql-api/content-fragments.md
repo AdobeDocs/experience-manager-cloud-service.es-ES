@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
 workflow-type: tm+mt
 source-wordcount: '4203'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -558,7 +558,7 @@ Para ver más ejemplos, consulte lo siguiente:
 
 >[!NOTE]
 >
->Para obtener el mejor rendimiento, considere [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Para obtener el mejor rendimiento, considere [Actualizar los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Esta función permite ordenar los resultados de la consulta según un campo especificado.
 
@@ -625,7 +625,7 @@ query {
 
 >[!NOTE]
 >
->Para obtener el mejor rendimiento, considere [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Para obtener el mejor rendimiento, considere [Actualizar los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Esta funcionalidad le permite paginar en tipos de consulta que devuelven una lista. Se proporcionan dos métodos:
 

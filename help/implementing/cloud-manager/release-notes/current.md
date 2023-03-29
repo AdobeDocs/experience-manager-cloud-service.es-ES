@@ -1,5 +1,5 @@
 ---
-title: Notas de la versión 2023.3.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service
+title: Notas de la versión para Cloud Manager 2023.3.0 en Adobe Experience Manager as a Cloud Service
 description: Estas son las notas de la versión 2023.3.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
@@ -11,7 +11,7 @@ ht-degree: 64%
 ---
 
 
-# Notas de la versión 2023.3.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión para Cloud Manager 2023.3.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
 Esta página documenta las notas de la versión para Cloud Manager 2023.3.0 en AEM as a Cloud Service.
 

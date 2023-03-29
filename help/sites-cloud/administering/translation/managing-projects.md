@@ -7,7 +7,7 @@ exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
 workflow-type: tm+mt
 source-wordcount: '4086'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -443,16 +443,16 @@ Para comparar las copias de idioma con el maestro de idioma:
 
    ![Comparar copias de idioma](../assets/language-copy-compare.png)
 
-1. Las dos páginas (lanzamiento y origen) se abrirán en paralelo.
-   * Para obtener información completa sobre el uso de esta característica, consulte la [diferencia de la página](/help/sites-cloud/authoring/features/page-diff.md).
+1. Las dos páginas (inicio y origen) se abrirán en paralelo.
+   * Para obtener información completa sobre el uso de esta función, consulte [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Mover una página de origen o cambiarle el nombre {#move-source}
 
-Si una página de origen ya traducida necesita ser [cambiado de nombre o movido](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), volver a traducir la página después del traslado creará una nueva copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior seguirá ahí.
+Si una página de origen ya traducida necesita ser [cambiada de nombre o movida](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), volver a traducir la página después del traslado creará una nueva copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior seguirá ahí.
 
 La práctica recomendada en este escenario es seguir este procedimiento:
 1. Cancele la publicación de las copias de idioma asociadas con la página de origen que desee mover.
-1. Elimínelos.
+1. Elimínelas.
 1. Cree nuevas copias de idioma a partir de la página de origen que acaba de mover.
 1. Publique las copias de idioma recién creadas.
 

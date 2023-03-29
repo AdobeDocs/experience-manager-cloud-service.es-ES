@@ -1,10 +1,10 @@
 ---
 title: Actualización de los fragmentos de contenido para el filtrado optimizado de GraphQL
-description: Obtenga información sobre cómo actualizar los fragmentos de contenido para el filtrado optimizado de GraphQL en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
+description: Obtenga información sobre cómo actualizar los fragmentos de contenido para el filtrado optimizado de GraphQL en Adobe Experience Manager as a Cloud Service para el envío de contenido sin encabezado.
 source-git-commit: 44f39df675ff7b3bd40d76e1ebb0e0f17f1e128b
 workflow-type: tm+mt
 source-wordcount: '738'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
@@ -20,17 +20,17 @@ Para optimizar el rendimiento de los filtros de GraphQL, debe ejecutar un proced
 
 ## Requisitos previos {#prerequisites}
 
-AEM Asegúrese de que tiene un mínimo de la versión 2023.1.0 de as a Cloud Service de la versión 2023.1.0.
+Asegúrese de que tiene mínimo la versión 2023.1.0 de AEM as a Cloud Service.
 
 ## Actualización de los fragmentos de contenido {#updating-content-fragments}
 
-Para ejecutar el procedimiento, siga los siguientes pasos:
+Para ejecutar el procedimiento, siga estos pasos:
 
-1. Habilite la actualización estableciendo las siguientes variables para su instancia mediante la interfaz de usuario de Cloud Manager:
+1. Habilite la actualización estableciendo las siguientes variables para su instancia mediante la IU de Cloud Manager:
 
    ![Configuración del entorno de Cloud Manager](assets/cfm-graphql-update-01.png "Configuración del entorno de Cloud Manager")
 
-   Las variables disponibles son:
+   Las variables disponibles son las siguientes:
 
    <table style="table-layout:auto">
     <tbody>
@@ -46,13 +46,13 @@ Para ejecutar el procedimiento, siga los siguientes pasos:
      </tr>
      <tr>
       <td>1</td>
-      <td>AEM `_RELEASE_CHANNEL` </td>
-      <td>`versión preliminar` </td>
+      <td>`AEM_RELEASE_CHANNEL` </td>
+      <td>`prerelease` </td>
       <td> </td>
       <td>Todos </td>
       <td> </td>
       <td>Variable </td>
-      <td>Necesario para habilitar la función. </td>
+      <td>Necesario para habilitar la funcionalidad. </td>
      </tr>
      <tr>
       <td>2</td>
@@ -62,7 +62,7 @@ Para ejecutar el procedimiento, siga los siguientes pasos:
       <td>Todos </td>
       <td> </td>
       <td>Variable </td>
-      <td>Habilita(!=0) o deshabilita (0) la activación del trabajo de migración de fragmentos de contenido. </td>
+      <td>Habilita (!=0) o deshabilita (0) la activación del trabajo de migración de fragmentos de contenido. </td>
      </tr>
      <tr>
       <td>3</td>
@@ -72,7 +72,7 @@ Para ejecutar el procedimiento, siga los siguientes pasos:
       <td>Todos </td>
       <td> </td>
       <td>Variable </td>
-      <td>Aplicar (!=0) Remigración de fragmentos de contenido.<br>Si este indicador se establece en 0, se realizará una migración incremental de los CF. Esto significa que, si el trabajo se finaliza por cualquier motivo, la siguiente ejecución del trabajo iniciará la migración desde el punto en el que se finalizó. Tenga en cuenta que se recomienda forzar la primera migración (valor=1). </td>
+      <td>Aplica (!=0) la remigración de fragmentos de contenido.<br>Si este indicador se establece en 0, se hará una migración incremental de los fragmentos de contenido. Esto significa que, si el trabajo finaliza por cualquier motivo, la siguiente ejecución iniciará la migración desde el punto en el que se paró. Tenga en cuenta que se recomienda aplicar la primera migración (valor=1). </td>
      </tr>
      <tr>
       <td>4</td>
@@ -82,7 +82,7 @@ Para ejecutar el procedimiento, siga los siguientes pasos:
       <td>Todos </td>
       <td> </td>
       <td>Variable </td>
-      <td>Tamaño del lote para guardar el número de fragmentos de contenido después de la migración.<br>Esto es relevante para cuántos CF se guardarán en el repositorio en un lote y se puede utilizar para optimizar el número de escrituras en el repositorio. </td>
+      <td>Tamaño del lote para guardar el número de fragmentos de contenido después de la migración.<br>Esto es relevante para ver cuántos fragmentos de contenido se guardarán en el repositorio en un lote y se puede usar para optimizar el número de escrituras en el repositorio. </td>
      </tr>
      <tr>
       <td>5</td>
@@ -92,17 +92,17 @@ Para ejecutar el procedimiento, siga los siguientes pasos:
       <td>Todos </td>
       <td> </td>
       <td>Variable </td>
-      <td>Número máximo de fragmentos de contenido para procesar a la vez.<br>Consulte también las notas de CF_MIGRATION_INTERVAL. </td>
+      <td>Número máximo de fragmentos de contenido para procesar a la vez.<br>Consulte también las notas de `CF_MIGRATION_INTERVAL`. </td>
      </tr>
      <tr>
       <td>6</td>
       <td>`CF_MIGRATION_INTERVAL` </td>
-      <td>"60" </td>
+      <td>`60` </td>
       <td>`600` </td>
       <td>Todos </td>
       <td> </td>
       <td>Variable </td>
-      <td>Intervalo (segundos) para procesar los fragmentos de contenido restantes hasta el siguiente límite<br>Este intervalo también se considera como un tiempo de espera antes de iniciar el trabajo, así como un retraso entre el procesamiento de cada número CF_MIGRATION_LIMIT posterior de CF.<br>(*)</td>
+      <td>Intervalo (segundos) para procesar los fragmentos de contenido restantes hasta el siguiente límite<br>Este intervalo también se considera como un tiempo de espera antes de iniciar el trabajo, así como un retraso entre el procesamiento de cada número de CF_MIGRATION_LIMIT de fragmentos de contenido subsiguientes.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -115,22 +115,22 @@ Para ejecutar el procedimiento, siga los siguientes pasos:
    >
    >Por ejemplo:
    >
-   >* Número total de fragmentos de contenido = 20 000
+   >* Número total de fragmentos de contenido = 20 000
    >* CF_MIGRATION_LIMIT = 1000
-   >* CF_MIGRATION_INTERNAL = 60 (Seg)
-   >* Tiempo aproximado necesario para completar la migración = 60 + (20 000/1000 * 60) = 1260 Seg = 21 Minutos
-      >  Los &quot;60&quot; segundos adicionales añadidos al inicio se deben al retraso inicial al iniciar el trabajo.
+   >* CF_MIGRATION_INTERNAL = 60 (s)
+   >* Tiempo aproximado necesario para completar la migración = 60 + (20 000/1000 * 60) = 1260 s = 21 min
+      >  Los “60” segundos adicionales añadidos al inicio se deben al retraso inicial al comenzar el trabajo.
 
    >
-   >También debe tener en cuenta que esto es solo el *minimum* tiempo necesario para completar el trabajo y no incluye el tiempo de E/S. El tiempo real empleado podría ser significativamente mayor que esta estimación.
+   >También debe tener en cuenta que esto es solo el tiempo *mínimo* necesario para completar el trabajo y no incluye el tiempo de E/S. El tiempo real empleado podría ser significativamente mayor que esta estimación.
 
 1. Monitorice el progreso y la finalización de la actualización.
 
-   Para ello, monitorice los registros de autor y publicación dorada desde:
+   Para ello, monitorice los registros de creación y publicación maestra desde aquí:
 
    * `com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob`
 
-      * Registros de autor; por ejemplo:
+      * Registros de creación; por ejemplo:
 
          ```shell
          23.01.2023 13:13:45.926 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob This instance<dd9ffdc1-0c28-4d04-9a96-5d4d223e457e> is the leader, will schedule the upgrade schedule job.
@@ -139,7 +139,7 @@ Para ejecutar el procedimiento, siga los siguientes pasos:
          
          23.01.2023 13:20:40.960 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 6m, slingJobId: 2023/1/23/13/13/50e1a575-4cd7-497b-adf0-62cb5768eedb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
-   * Registros de publicación dorados; por ejemplo:
+   * Registros de publicación maestra; por ejemplo:
 
       ```shell
       23.01.2023 12:35:05.150 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob This instance<ad1b399e-77be-408e-bc3f-57097498fddb> is the leader, will schedule the upgrade schedule job.
@@ -156,7 +156,7 @@ Para ejecutar el procedimiento, siga los siguientes pasos:
    >
    >Este paso es necesario para completar la actualización.
 
-   Una vez ejecutado el procedimiento de actualización, restablezca la variable de entorno de la nube `CF_MIGRATION_ENABLED` a &#39;0&#39;, para almacenar en déclencheur el reciclaje de todas las vainas.
+   Una vez ejecutado el procedimiento de actualización, restablezca la variable de entorno de la nube `CF_MIGRATION_ENABLED` a “0” para activar el reciclaje de todos los pods.
 
    <table style="table-layout:auto">
     <tbody>
@@ -178,38 +178,38 @@ Para ejecutar el procedimiento, siga los siguientes pasos:
       <td>Todos </td>
       <td> </td>
       <td>Variable </td>
-      <td>Deshabilita(0) (o habilita(!=0)) activando el trabajo de migración de fragmentos de contenido. </td>
+      <td>Deshabilita (0) [o habilita (!=0)] activando el trabajo de migración de fragmentos de contenido. </td>
      </tr>
     </tbody>
    </table>
 
    >[!NOTE]
    >
-   >Esto es particularmente importante para el nivel de publicación, ya que la actualización de contenido solo se realiza en Golden Publish y, cuando se recicla de los pods, todos los pods de publicación normales se basan en Golden Publish.
+   >Esto es particularmente importante para el nivel de publicación, ya que la actualización de contenido solo se realiza en la publicación maestra y, cuando se recicla de los pods, todos los pods de publicación normales se basan en ella.
 
 1. Compruebe que se ha completado el procedimiento de actualización.
 
-   Puede verificar la finalización correcta de la actualización mediante el explorador del repositorio en la consola del desarrollador de Cloud Manager para comprobar los datos del fragmento de contenido.
+   Puede verificar la finalización correcta de la actualización mediante el explorador del repositorio en Developer Console de Cloud Manager para comprobar los datos del fragmento de contenido.
 
-   * Antes de completar la primera migración, el `cfGlobalVersion` la propiedad no existirá.
-Por lo tanto, la presencia de esta propiedad, en el nodo JCR `/content/dam` con un valor de `1`, confirma la finalización de la migración.
+   * Antes de completar la primera migración, la propiedad `cfGlobalVersion` no existirá.
+Por lo tanto, la presencia de esta propiedad en el nodo JCR `/content/dam` con un valor de `1` confirma la finalización de la migración.
 
-   * También puede comprobar las siguientes propiedades en los fragmentos de contenido individuales:
+   * También puede verificar las siguientes propiedades en los fragmentos de contenido individuales:
 
       * `_strucVersion` debe tener el valor de `1`
-      * `indexedData` la estructura debe existir
+      * La estructura `indexedData` debe existir
 
       >[!NOTE]
       >
-      >El procedimiento actualizará los fragmentos de contenido en las instancias de autor y publicación.
+      >El procedimiento actualizará los fragmentos de contenido en las instancias de creación y publicación.
       >
-      >Por lo tanto, se recomienda realizar la verificación a través del explorador de repositorios para *al menos* un autor *y* una instancia de publicación.
+      >Por lo tanto, se recomienda realizar la comprobación a través del explorador de repositorios para *al menos* una instancia de creación *y* una de publicación.
 
 
 ## Restricciones {#limitations}
 
 Tenga en cuenta las siguientes limitaciones:
 
-* La optimización del rendimiento de los filtros de GraphQL solo será posible después de una actualización completa de todos los fragmentos de contenido (indicada por la presencia del `cfGlobalVersion` propiedad para el nodo JCR `/content/dam`)
+* Optimizar el rendimiento de los filtros de GraphQL solo será posible después de una actualización completa de todos los fragmentos de contenido (indicada por la presencia de la propiedad `cfGlobalVersion` para el nodo JCR `/content/dam`).
 
 * Si los fragmentos de contenido se importan desde un paquete de contenido (mediante `crx/de`) después de ejecutar el procedimiento de actualización, esos fragmentos de contenido no se tendrán en cuenta en los resultados de la consulta de GraphQL hasta que se vuelva a ejecutar el procedimiento de actualización.

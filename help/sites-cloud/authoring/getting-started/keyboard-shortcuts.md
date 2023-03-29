@@ -5,7 +5,7 @@ exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 96%
+ht-degree: 69%
 
 ---
 
@@ -13,14 +13,14 @@ ht-degree: 96%
 
 Los siguientes métodos abreviados están disponibles para las consolas Sitios, Activos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias. También existen métodos abreviados específicos para la [Consola Fragmentos de contenido](#keyboard-shortcuts-for-the-content-fragments-console).
 
-| Lugar de residencia | Método abreviado | Descripción |
+| Lugar de residencia | Acceso directo | Descripción |
 |---|---|---|
 | General | `Ctrl+Click` | Selección múltiple |
 | Consola: vista de columna y vista de contenido | `Right Arrow` | Desplácese hacia abajo en la estructura del sitio web / amplíe el nodo de árbol |
 |  | `Left Arrow` | Desplácese hacia arriba de la estructura de árbol / contraiga el nodo de árbol |
 |  | `Down Arrow` | Mover hacia abajo una lista de páginas en el mismo nivel |
 |  | `Up Arrow` | Mover hacia arriba una lista de páginas en el mismo nivel |
-| Consola: vista de columna | `Shift-Up/Down Arrow` | Subir/bajar y seleccionar una lista de páginas en el mismo nivel |
+| Consola: vista de columna | `Shift-Up/Down Arrow` | Mover hacia arriba/abajo, y seleccionar una lista de páginas en el mismo nivel |
 |  | `Esc` | Mover hacia arriba una lista de páginas en el mismo nivel |
 | Consolas | `?` | Ayuda de métodos abreviados del teclado |
 |  | `/` | Invocar la [búsqueda](/help/sites-cloud/authoring/getting-started/search.md) |
@@ -47,19 +47,19 @@ Las teclas modificadoras utilizadas para los atajos de teclado varían en funci�
 
 ## Navegadores y métodos abreviados del teclado {#browsers-and-keyboard-shortcuts}
 
-AEM evita los métodos abreviados del teclado que ya utilizan los navegadores más conocidos; sin embargo, los métodos abreviados de AEM no anulan el comportamiento predeterminado del explorador.
+AEM evita los métodos abreviados comunes que ya utilizan los navegadores más conocidos, pero AEM el comportamiento predeterminado del explorador no se anula.
 
 Además, los métodos abreviados del teclado son los mismos para todas las configuraciones regionales y diseños de teclado.
 
 >[!NOTE]
 >
->Los métodos abreviados de AEM no anulan el comportamiento predeterminado del explorador.
+>AEM métodos abreviados no anulan el comportamiento predeterminado del explorador.
 >
->En caso de conflictos entre AEM y los métodos abreviados del navegador, los métodos abreviados de AEM no funcionarán y darán paso a la funcionalidad del navegador.
+>En el caso de que se produzcan conflictos entre los métodos abreviados del AEM y del navegador, AEM métodos abreviados no funcionarán, lo que dará como resultado la funcionalidad del navegador.
 
 >[!CAUTION]
 >
->Los métodos abreviados del teclado de AEM podrían interferir en los lectores de pantalla, algunas funciones del navegador y otras herramientas de accesibilidad.
+>AEM métodos abreviados del teclado podrían interferir con los lectores de pantalla, algunas funciones del navegador y otras herramientas de accesibilidad.
 >
 >Adobe recomienda [desactivar los métodos abreviados del teclado de AEM](#deactivating-keyboard-shortcuts) al utilizar un lector de pantalla.
 
@@ -67,7 +67,7 @@ Además, los métodos abreviados del teclado son los mismos para todas las confi
 
 AEM proporciona métodos abreviados del teclado para algunas de las funciones que se utilizan con más frecuencia (editar, propiedades, copiar/pegar, mostrar diversos menús de raíl secundarios, etc.).
 
-Para los usuarios que no utilizan métodos abreviados del teclado o tienen determinados requisitos de accesibilidad, se pueden desactivar todos los métodos abreviados del teclado.
+Para los usuarios que no utilizan métodos abreviados del teclado o que tienen determinados requisitos de accesibilidad, se pueden desactivar todos los métodos abreviados del teclado.
 
 Puede desactivar los métodos abreviados del teclado en dos ubicaciones:
 

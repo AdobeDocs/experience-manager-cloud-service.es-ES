@@ -5,7 +5,7 @@ exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 source-git-commit: 33d587baba27ad54b1c9e34a36fadbd1dc56e3f5
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,8 +49,8 @@ También puede navegar a la página Programas y productos de Cloud Manager desde
 | Eliminación de canalización | Permitir eliminación de canalización |  | x |  |  |
 | Cancelación de ejecución | Cancelar ejecución actual |  | x |  |  |
 | Generar token de acceso personal | Acceso a Git |  | x |  | x |
-| Crear RDE | Crear un entorno de desarrollo rápido | x |  |  | x |
-| Restablecer RDE | Restablecer un entorno de desarrollo rápido | x |  |  | x |
+| Crear RDE | Crear un Entorno de desarrollo rápido | x |  |  | x |
+| Restablecer RDE | Restablecer un Entorno de desarrollo rápido | x |  |  | x |
 
 >[!NOTE]
 >

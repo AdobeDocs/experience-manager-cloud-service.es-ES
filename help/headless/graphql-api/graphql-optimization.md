@@ -4,7 +4,7 @@ description: Aprenda a optimizar las consultas de GraphQL al filtrar, paginar y 
 source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
 workflow-type: tm+mt
 source-wordcount: '1192'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -15,54 +15,55 @@ ht-degree: 0%
 >
 >Antes de aplicar estas recomendaciones de optimización, considere lo siguiente [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) para obtener el mejor rendimiento.
 
-AEM En una instancia de con un número elevado de fragmentos de contenido que comparten el mismo modelo, las consultas de lista de GraphQL pueden resultar costosas (en términos de recursos).
+En una instancia de AEM con un número elevado de fragmentos de contenido que comparten el mismo modelo, las consultas de lista de GraphQL pueden resultar costosas (en términos de recursos).
 
-Esto se debe a *todo* los fragmentos que comparten un modelo que se utiliza en la consulta de GraphQL deben cargarse en la memoria. Esto consume tiempo y memoria. El filtrado, que puede reducir el número de elementos en el conjunto de resultados (final), solo se puede aplicar **después** cargando todo el conjunto de resultados en la memoria.
+Esto se debe a que *todos* los fragmentos que comparten un modelo que se utiliza en la consulta de GraphQL deben cargarse en la memoria. Esto consume tiempo y memoria. El filtrado, que puede reducir el número de elementos en el conjunto de resultados (final), solo se puede aplicar **después** cargando todo el conjunto de resultados en la memoria.
 
 Esto puede dar la impresión de que incluso los conjuntos de resultados pequeños (pueden) dar lugar a un mal rendimiento. Sin embargo, en realidad la lentitud está causada por el tamaño del conjunto de resultados inicial, ya que debe manejarse internamente antes de aplicar el filtrado.
 
 Para reducir los problemas de rendimiento y memoria, este conjunto de resultados inicial debe mantenerse lo más pequeño posible.
 
-AEM dos métodos para optimizar las consultas de GraphQL:
+AEM proporciona dos métodos para optimizar las consultas de GraphQL:
 
 * [Filtrado híbrido](#hybrid-filtering)
-* [Paginación](#paging) (o paginación)
+* [Paginación](#paging)
 
-   * [Ordenando](#sorting) no está directamente relacionado con la optimización, pero sí con la paginación
+   * [Ordenación](#sorting) no está directamente relacionada con la optimización, pero sí con la paginación
 
-Cada enfoque tiene sus propios casos de uso y limitaciones. Este documento proporciona información sobre el filtrado y la paginación híbridos, con algunas [prácticas recomendadas](#best-practices) para optimizar las consultas de GraphQL.
+Cada método tiene sus propios casos de uso y limitaciones. Este documento proporciona información sobre el filtrado y la paginación híbridos, con algunas [prácticas recomendadas](#best-practices) para optimizar las consultas de GraphQL.
 
 ## Filtrado híbrido {#hybrid-filtering}
 
-AEM El filtrado híbrido combina el filtrado JCR con el filtrado de la.
+El filtrado híbrido combina el filtrado de JCR con el filtrado de AEM.
 
-AEM Aplica un filtro JCR (en forma de restricción de consulta) antes de cargar el conjunto de resultados en la memoria para el filtrado de la. Esto sirve para reducir el conjunto de resultados cargado en la memoria, ya que el filtro JCR elimina los resultados superfluos anteriores a este.
+Aplica un filtro de JCR (en forma de restricción de consulta) antes de cargar el conjunto de resultados en la memoria para el filtrado de AEM. Esto sirve para reducir el conjunto de resultados cargado en la memoria, ya que el filtro de JCR elimina los resultados superfluos anteriores a este.
 
 >[!NOTE]
 >
->AEM Por motivos técnicos (p. ej., flexibilidad, anidación de fragmentos), no se puede delegar todo el filtrado a JCR.
+>Por motivos técnicos (p. ej., flexibilidad, anidación de fragmentos), AEM no puede delegar todo el filtrado a JCR.
 
 Esta técnica mantiene la flexibilidad que proporcionan los filtros de GraphQL, al tiempo que delega la mayor parte posible del filtrado a JCR.
 
 ## Paginación {#paging}
 
-GraphQL AEM en la ofrece compatibilidad con dos tipos de paginación:
+GraphQL en AEM ofrece compatibilidad con dos tipos de paginación:
 
 * [paginación basada en límite/desplazamiento](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
 Se utiliza para consultas de lista; terminan con 
 `List`; por ejemplo, `articleList`.
-Para utilizarlo, debe proporcionar la posición del primer elemento que se va a devolver (la variable `offset`) y el número de elementos que se van a devolver (la variable `limit`o tamaño de página).
+Para utilizarlo, debe proporcionar la posición del primer elemento que se va a devolver (la variable `offset`) y el número de elementos que se van a devolver (la variable `limit`, o tamaño de página).
 
-* [paginación basada en cursor](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (representado por `first`y `after`) Proporciona un identificador único para cada elemento, también conocido como cursor.
+* [paginación basada en cursor](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (representada por `first`y `after`)
+Proporciona un ID único para cada elemento, también conocido como cursor.
 En la consulta, se especifica el cursor del último elemento de la página anterior, además del tamaño de página (el número máximo de elementos que se van a devolver).
 
-   AEM Como la paginación basada en cursor no se ajusta a las estructuras de datos de las consultas basadas en listas, se ha introducido el elemento de datos de forma predeterminada: `Paginated` tipo de consulta; por ejemplo, `articlePaginated`. Las estructuras de datos y los parámetros utilizados siguen el [Especificación de conexión del cursor GraphQL](https://relay.dev/graphql/connections.htm).
+   Como la paginación basada en cursor no se ajusta a las estructuras de datos de las consultas basadas en listas, AEM ha introducido el tipo de consulta `Paginated`; por ejemplo, `articlePaginated`. Las estructuras de datos y los parámetros utilizados siguen la [Especificación de conexión del cursor de GraphQL](https://relay.dev/graphql/connections.htm).
 
    >[!NOTE]
    >
-   >AEM Actualmente, admite la paginación de reenvío (con `after`/`first` parámetros).
+   >Actualmente, AEM admite la paginación de reenvío (utilizando los parámetros `after`/`first`).
    >
-   >Paginación hacia atrás (con `before`/`last` parámetros) no es compatible.
+   >La paginación hacia atrás (utilizando los parámetros `before`/`last`) no es compatible.
 
 ## Ordenación {#sorting}
 
@@ -82,17 +83,17 @@ El objetivo principal de todas las optimizaciones es reducir el conjunto de resu
 
 Actualmente, el filtrado en el nivel JCR solo funciona para fragmentos de nivel superior.
 
-AEM Si un filtro se dirige a los campos de un fragmento anidado, tiene que volver a cargar (en memoria) todos los fragmentos que comparten el modelo subyacente.
+Si un filtro se dirige a los campos de un fragmento anidado, AEM tiene que volver a cargar (en memoria) todos los fragmentos que comparten el modelo subyacente.
 
-Puede seguir optimizando estas consultas de GraphQL combinando expresiones de filtro en campos de fragmentos de nivel superior y aquellos en campos de fragmentos anidados con la variable [Operador AND](#logical-operations-in-filter-expressions).
+Puede seguir optimizando estas consultas de GraphQL combinando expresiones de filtro en campos de fragmentos de nivel superior y aquellos en campos de fragmentos anidados con la variable [AND operator](#logical-operations-in-filter-expressions).
 
 ### Uso de la estructura de contenido {#use-content-structure}
 
-AEM En general, se considera una buena práctica utilizar la estructura del repositorio para reducir el ámbito de contenido que se va a procesar.
+En general, en AEM se considera una buena práctica utilizar la estructura del repositorio para reducir el ámbito de contenido que se va a procesar.
 
 Este método también debe aplicarse a las consultas de GraphQL.
 
-Esto se puede hacer aplicando un filtro en la `_path` del fragmento de nivel superior:
+Esto se puede hacer aplicando un filtro en el campo `_path` del fragmento de nivel superior:
 
 ```graphql
 {
@@ -115,54 +116,54 @@ Esto se puede hacer aplicando un filtro en la `_path` del fragmento de nivel sup
 
 >[!NOTE]
 >
->El final `/` el `value` es necesario para lograr el mejor rendimiento.
+>El final `/` en `value` es obligatorio para lograr el mejor rendimiento.
 
 ### Usar paginación {#use-paging}
 
-También puede utilizar la paginación para reducir el conjunto de resultados inicial, especialmente si las solicitudes no utilizan ningún filtro ni ordenación.
+También puede utilizar la paginación para reducir el conjunto de resultados inicial, sobre todo si las solicitudes no utilizan ningún filtro ni ordenación.
 
-AEM Si filtra u ordena por fragmentos anidados, las consultas paginadas pueden seguir siendo lentas, ya que es posible que aún tenga que cargar cantidades mayores de fragmentos en la memoria. Por lo tanto, si combina filtrado y paginación, tenga en cuenta las reglas de filtrado (como se ha mencionado anteriormente).
+Si filtra u ordena por fragmentos anidados, las consultas paginadas pueden seguir siendo lentas, ya que es posible que AEM aún tenga que cargar cantidades mayores de fragmentos en la memoria. Por lo tanto, si combina filtrado y paginación, tenga en cuenta las reglas de filtrado (como se ha mencionado anteriormente).
 
 Para la paginación, la ordenación es igualmente importante, ya que los resultados paginados siempre se ordenan, ya sea de forma explícita o implícita.
 
-Si le interesa principalmente recuperar solo las primeras páginas, no hay ninguna diferencia significativa entre el uso de la variable `...List` o `...Paginated` consultas. Sin embargo, si a la aplicación le interesa leer más de una o dos páginas, debe tener en cuenta lo siguiente `...Paginated` consulta, ya que tiene un rendimiento notablemente mejor con las páginas posteriores.
+Si le interesa principalmente recuperar solo las primeras páginas, no hay ninguna diferencia significativa entre el uso de consultas `...List` o `...Paginated`. Sin embargo, si a la aplicación le interesa leer más de una o dos páginas, debe tener en cuenta la consulta `...Paginated`, ya que tiene un rendimiento notablemente mejor con las páginas posteriores.
 
 ### Operaciones lógicas en expresiones de filtro {#logical-operations-in-filter-expressions}
 
-Si está filtrando en fragmentos anidados, aún puede aprovechar el filtrado JCR proporcionando un filtro complementario en un campo de nivel superior que se combina con `AND` operador.
+Si está filtrando en fragmentos anidados, aún puede aprovechar el filtrado JCR proporcionando un filtro complementario en un campo de nivel superior que se combina con el operador `AND`.
 
-Un caso de uso típico sería restringir el ámbito de la consulta utilizando un filtro en `_path` del fragmento de nivel superior y, a continuación, filtre por campos adicionales que puedan estar en el nivel superior o en un fragmento anidado.
+Un caso de uso típico sería restringir el alcance de la consulta utilizando un filtro en el campo `_path` del fragmento de nivel superior y, a continuación, filtrar en campos adicionales que podrían estar en el nivel superior o en un fragmento anidado.
 
-En este caso, las diferentes expresiones de filtro se combinarían con `AND`. Por lo tanto, el filtro `_path` puede limitar de forma efectiva el conjunto de resultados inicial. El resto de filtros de los campos de nivel superior también pueden ayudar a reducir el conjunto de resultados inicial, siempre y cuando se combinen con `AND`.
+En este caso, las diferentes expresiones de filtro se combinarían con `AND`. Por lo tanto, el filtro de `_path` puede limitar de forma efectiva el conjunto de resultados inicial. El resto de filtros de los campos de nivel superior también pueden ayudar a reducir el conjunto de resultados inicial, siempre y cuando se combinen con `AND`.
 
-Filtrar expresiones combinadas con `OR` no se puede optimizar si hay fragmentos anidados implicados. `OR` las expresiones solo se pueden optimizar si *no* están implicados fragmentos anidados.
+Filtrar expresiones combinadas con `OR` no se puede optimizar si hay fragmentos anidados implicados. Las expresiones `OR` solo se pueden optimizar si *no* están implicados fragmentos anidados.
 
-### Evite filtrar los campos de texto multilínea {#avoid-filtering-multiline-textfields}
+### Evitar filtrar los campos de texto multilínea {#avoid-filtering-multiline-textfields}
 
-Los campos de un campo de texto multilínea (html, markdown, plaintext, json) no se pueden filtrar a través de una consulta JCR, ya que el contenido de estos campos debe calcularse sobre la marcha.
+Los campos de un campo de texto multilínea (html, markdown, plaintext, json) no se pueden filtrar a través de una consulta JCR, ya que su contenido debe calcularse sobre la marcha.
 
-Si todavía necesita filtrar por un campo de texto multilínea, considere la posibilidad de limitar el tamaño del conjunto de resultados inicial añadiendo expresiones de filtro adicionales y combinándolas con `AND`. Limitación del ámbito mediante el filtrado en `_path` El campo también es un buen enfoque.
+Si aun así necesita filtrar por un campo de texto multilínea, considere la posibilidad de limitar el tamaño del conjunto de resultados inicial añadiendo expresiones de filtro adicionales y combinándolas con `AND`. Limitar el ámbito mediante el filtrado en el campo `_path` también es un buen enfoque.
 
 ### Evitar el filtrado en campos virtuales {#avoid-filtering-virtual-fields}
 
-Campos virtuales (la mayoría de los campos que comienzan por `_`) se calculan mientras se ejecuta una consulta GraphQL y, por lo tanto, están fuera del ámbito del filtrado basado en JCR.
+Los campos virtuales (la mayoría de los campos que comienzan por `_`) se calculan mientras se ejecuta una consulta de GraphQL y, por lo tanto, están fuera del ámbito del filtrado basado en JCR.
 
-Una excepción importante es la `_path` , que se puede utilizar de forma eficaz para reducir el tamaño del conjunto de resultados inicial: si el contenido está estructurado en consecuencia (consulte [Uso de la estructura de contenido](#use-content-structure)).
+Una excepción importante es el campo `_path`, que se puede utilizar de forma eficaz para reducir el tamaño del conjunto de resultados inicial: si el contenido está estructurado en consecuencia (consulte [Uso de la estructura de contenido](#use-content-structure)).
 
-### Filtrado: Exclusiones {#filtering-exclusions}
+### Filtrado: exclusiones {#filtering-exclusions}
 
-Hay varias otras situaciones en las que una expresión de filtro no se puede evaluar en el nivel JCR (y por lo tanto debe evitarse para lograr el mejor rendimiento):
+Hay otras varias situaciones en las que una expresión de filtro no se puede evaluar en el nivel JCR (y, por lo tanto, debe evitarse para lograr el mejor rendimiento):
 
-* Filtrado de expresiones en una `Float` que utilizan la variable `_sensitiveness` opción de filtro y donde `_sensitiveness` se ha establecido en cualquier valor distinto de `0.0` .
+* Filtrado de expresiones en un valor `Float` que usa la opción de filtro `_sensitiveness`, y donde `_sensitiveness` se establece en cualquier elemento que no sea `0.0`.
 
-* Filtrado de expresiones en una `String` valor mediante el `_ignoreCase` opción de filtro.
+* Filtrado de expresiones en un valor `String` mediante la opción de filtro `_ignoreCase`.
 
-* Filtrado en `null` valores.
+* Filtrado en valores `null`.
 
 * Filtros en matrices con `_apply: ALL_OR_EMPTY`.
 
 * Filtros en matrices con `_apply: INSTANCES`, `_instances: 0`.
 
-* Filtrado de expresiones mediante `CONTAINS_NOT` operador.
+* Filtrado de expresiones mediante el operador `CONTAINS_NOT`.
 
-* Filtrado de expresiones en una `Calendar`, `Date` o `Time` que utilizan la variable `NOT_AT` operador.
+* Filtrado de expresiones en un `Calendar`, `Date` u `Time` que utilizan el operador `NOT_AT`.

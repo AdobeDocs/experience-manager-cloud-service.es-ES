@@ -1,6 +1,6 @@
 ---
 title: Migrar desde AEM 6.5 Forms y AEM 6.4 Forms a un entorno de  [!DNL AEM Forms]  as a Cloud Service
-description: Migración desde un [!DNL AEM Forms] (Entornos locales y AMS) a [!DNL AEM Forms] entorno as a Cloud Service
+description: Migración desde un  [!DNL AEM Forms] (entornos On-Premise y AMS) a un entorno de  [!DNL AEM Forms] as a Cloud Service
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
@@ -10,11 +10,11 @@ exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: d9c19d0b567a9a97973c4c4e25e64722da109dbb
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Migración desde un [!DNL AEM Forms] (Entornos locales y AMS) a [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# Migración desde un [!DNL AEM Forms] (entornos On-Premise y AMS) a [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 Puede migrar su formulario adaptable, temáticas, plantillas y configuraciones de nube desde <!-- AEM 6.3 Forms--> AEM 6.4 Forms en OSGi y AEM 6.5 Forms en OSGi a [!DNL AEM] as a Cloud Service. Antes de migrar estos recursos, utilice la utilidad de migración para convertir el formato utilizado en las versiones anteriores al formato utilizado en [!DNL AEM] as a Cloud Service. Al ejecutar la utilidad de migración, se actualizan los siguientes recursos:
 
@@ -29,7 +29,7 @@ Puede migrar su formulario adaptable, temáticas, plantillas y configuraciones d
 
 * (Solo para AEM 6.3 Forms o un entorno de versión anterior actualizado a AEM 6.4 Forms o AEM 6.5 Forms) Los formularios adaptables basados en plantillas y temáticas predeterminadas disponibles en AEM 6.3 Forms o en versiones anteriores no son compatibles con [!DNL AEM Forms] as a Cloud Service.
 
-* Adobe Experience Manager Forms as a Cloud Service incorpora algunos cambios importantes en las funciones existentes en comparación con los entornos de Adobe Experience Manager 6.5 Forms (servicio local y administrado por el Adobe). Antes de continuar con la migración al servicio, [obtenga información acerca de estos cambios importantes](notable-changes.md) y el [diferencias de nivel de funcionalidad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report) para decidir la migración en función de las funciones que requiera su organización.
+* Adobe Experience Manager Forms as a Cloud Service incluye algunos cambios importantes en las funciones existentes en comparación con los entornos de Adobe Experience Manager 6.5 Forms (On-Premise y Adobe Managed Services). Antes de continuar con la migración al servicio, [obtenga información acerca de estos cambios importantes](notable-changes.md) y las [diferencias de nivel de funcionalidad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=es#viewing-report) para decidir migrar según las funciones que requiera su organización.
 
 
 
@@ -58,7 +58,7 @@ Puede migrar su formulario adaptable, temáticas, plantillas y configuraciones d
 * Cuentas con privilegios de administrador en [!DNL AEM Forms] as a Cloud Service y su entorno local de [!DNL AEM Forms].
 * Descargue e instale el Analizador de prácticas recomendadas, la herramienta de transferencia de contenido y la utilidad de migración de [!DNL AEM Forms] del [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html)
 
-* Ejecute el [Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=es#cloud-migration) y corrija el problema del que se ha informado. Para ver los posibles problemas relacionados con la migración de Adobe Experience Manager Forms a Adobe Experience Manager Forms as a Cloud Service, consulte [AEM Detección de patrones de para Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report).
+* Ejecute el [Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=es#cloud-migration) y corrija el problema del que se ha informado. Para ver los posibles problemas relacionados con la migración de Adobe Experience Manager Forms a Adobe Experience Manager Forms as a Cloud Service, consulte [Detección de patrones de AEM para Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=es#viewing-report).
 
 
 <!-- * Download the latest [compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases) for your [!DNL AEM Forms] version. -->
@@ -127,7 +127,7 @@ Realice los siguientes pasos para lograr que sus recursos de [!DNL AEM Forms] se
 
 * **Modelo de flujo de trabajo**: Puede encontrar modelos de flujo de trabajo de AEM en `/conf/global/settings/workflow/models/`. Por ejemplo, para un modelo de flujo de trabajo llamado “WKND Registration”, añada la ruta `/conf/global/settings/workflow/models/wknd-registration`
 
-Puede agregar las rutas de carpeta de nivel superior que se enumeran a continuación o las rutas de carpeta específicas, tal como se describe a continuación. Permite migrar un recurso determinado y todos los recursos y formularios a la vez.
+Puede agregar las rutas de carpeta de nivel superior que se enumeran a continuación o las rutas de carpeta específicas, tal como se describe a continuación. Permite migrar un determinado recurso y todos los activos y formularios a la vez.
 
 * /content/dam/formsanddocuments-fdm
 * /content/dam/formsanddocuments/themes

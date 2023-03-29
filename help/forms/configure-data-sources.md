@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
 workflow-type: tm+mt
 source-wordcount: '2139'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 86%
 
 La integración de datos de [!DNL Experience Manager Forms] le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes tipos son compatibles de forma predeterminada:
 
-* Bases de datos relacionales: MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], y [!DNL Oracle RDBMS]
+* Bases de datos relacionales: MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2] y [!DNL Oracle RDBMS]
 * Servicios web RESTful
 * Servicios web basados en SOAP
 * Servicios OData (versión 4.0)
 * Microsoft® Dynamics
 * SalesForce
-* Almacenamiento de Microsoft® Azure Blob
+* Microsoft® Azure Blob Storage
 
 La integración de datos es compatible con los tipos de autenticación de forma predeterminada OAuth2.0, autenticación básica y clave del API, y permite implementar la autenticación personalizada para acceder a servicios web. Mientras que los servicios RESTful, SOAP y OData se configuran en [!DNL Experience Manager], <!--, JDBC for relational databases --> as a Cloud Service y el conector para el perfil de usuario de [!DNL Experience Manager] se configuran en la consola web de [!DNL Experience Manager].
 
@@ -36,21 +36,21 @@ La integración de datos es compatible con los tipos de autenticación de forma 
 
 ### Requisitos previos
 
-Antes de configurar bases de datos relacionales mediante [!DNL Experience Manager] Configuración de la consola web, es obligatorio:
-* [Habilitar redes avanzadas mediante la API de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), ya que los puertos están desactivados de forma predeterminada.
-* [Agregar dependencias de controladores JDBC en Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
+Antes de configurar bases de datos relacionales mediante la configuración de la consola web de [!DNL Experience Manager], es obligatorio lo siguiente:
+* [Habilitar redes avanzadas mediante la API de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=es), ya que los puertos están desactivados de forma predeterminada.
+* [Añadir dependencias de controladores JDBC en Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=es#mysql-driver-dependencies).
 
 
 ### Pasos para configurar una base de datos relacional
 
-Puede configurar bases de datos relacionales mediante [!DNL Experience Manager] Configuración de la consola web. Haga lo siguiente:
+Puede configurar bases de datos relacionales mediante la configuración de la consola web de [!DNL Experience Manager]. Haga lo siguiente:
 
-1. Ir a [!DNL Experience Manager] consola web en `https://server:host/system/console/configMgr`.
-1. Localizar **[!UICONTROL Grupos de conexiones JDBC de Day Commons]** configuración. Pulse para abrir la configuración en modo de edición.
+1. Vaya a la consola web de [!DNL Experience Manager] en `https://server:host/system/console/configMgr`.
+1. Localice la configuración de **[!UICONTROL Grupos de conexiones JDBC de Day Commons]**. Pulse para abrir la configuración en modo de edición.
 
    ![Grupo de conectores JDBC](/help/forms/assets/jdbc_connector.png)
 
-1. En el cuadro de diálogo de configuración, especifique los detalles de la base de datos que desea configurar, como:
+1. En el cuadro de diálogo de configuración, especifique los detalles de la base de datos que desea configurar, como por ejemplo, los siguientes:
 
    * Nombre de clase Java™ para el controlador JDBC
    * URI de conexión JDBC
@@ -70,7 +70,7 @@ Puede configurar bases de datos relacionales mediante [!DNL Experience Manager] 
 
    >[!NOTE]
    >
-   > Consulte [Conexiones SQL con el conjunto de fuentes de datos JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) para obtener información más detallada.
+   > Consulte [Conexiones SQL con el conjunto de fuentes de datos JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=es) para obtener información más detallada.
 
 1. Pulse **[!UICONTROL Guardar]** para guardar la configuración.
 
@@ -116,14 +116,14 @@ Para configurar la carpeta para las configuraciones de servicios en la nube:
    1. Pulse **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
 
 1. En el **[!UICONTROL Explorador de configuración]**, pulse **[!UICONTROL Crear]**.
-1. En el **[!UICONTROL Crear configuración]** , especifique un título para la carpeta y habilite **[!UICONTROL Configuraciones de nube]**.
+1. En el cuadro de diálogo **[!UICONTROL Crear configuración]**, especifique un título para la carpeta y habilite **[!UICONTROL Configuraciones de nube]**.
 1. Pulse **[!UICONTROL Crear]** para crear la carpeta habilitada para las configuraciones del servicio en la nube.
 
 ## Configurar servicios web de RESTful {#configure-restful-web-services}
 
-El servicio web RESTful se puede describir con las [especificaciones de Swagger](https://swagger.io/specification/v2/) en formato JSON o YAML en un archivo de definición [!DNL Swagger]. Para configurar el servicio web RESTful en [!DNL Experience Manager] as a Cloud Service, asegúrese de que dispone de [!DNL Swagger] file ([Versión de Swagger 2.0](https://swagger.io/specification/v2/)) o [!DNL Swagger] file ([Versión de Swagger 3.0](https://swagger.io/specification/v3/)) en su sistema de archivos o en la URL donde se aloja el archivo.
+El servicio web RESTful se puede describir con las [especificaciones de Swagger](https://swagger.io/specification/v2/) en formato JSON o YAML en un archivo de definición [!DNL Swagger]. Para configurar el servicio web RESTful en [!DNL Experience Manager] as a Cloud Service, asegúrese de que dispone del archivo [!DNL Swagger] ([versión 2.0 de Swagger](https://swagger.io/specification/v2/)) o [!DNL Swagger] ([versión 3.0 de Swagger](https://swagger.io/specification/v3/)) en su sistema de archivos o la URL donde se hospeda el archivo.
 
-### Configure los servicios RESTful para la versión 2.0 de la especificación de API abierta {#configure-restful-services-open-api-2.0}
+### Configuración de servicios RESTful para la especificación de API abierta versión 2.0 {#configure-restful-services-open-api-2.0}
 
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Pulse para seleccionar la carpeta en la que desea crear una configuración de nube.
 
@@ -133,7 +133,7 @@ El servicio web RESTful se puede describir con las [especificaciones de Swagger]
 1. Especifique los siguientes detalles para el servicio RESTful:
 
    * Seleccione la URL o archivo en la lista desplegable [!UICONTROL Fuente de Swagger] y, en consecuencia, especifique la [!DNL Swagger URL] al archivo de definición [!DNL  Swagger] o cargue el archivo [!DNL Swagger] de su sistema de archivos local.
-   * Basado en el[!DNL  Swagger] Entrada de origen., los siguientes campos están rellenados previamente con valores:
+   * En función de la entrada de fuente de [!DNL  Swagger], los siguientes campos aparecen ya cumplimentados con valores:
 
       * Esquema: Los protocolos de transferencia utilizados por el API de REST. El número de tipos de esquema que se muestran en la lista desplegable depende de los esquemas definidos en la fuente de [!DNL Swagger].
       * Host: El nombre de dominio o la dirección IP del host que sirve el API de REST. Es un campo obligatorio.
@@ -147,7 +147,7 @@ El servicio web RESTful se puede describir con las [especificaciones de Swagger]
 
 1. Pulse **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
 
-### Configurar servicios RESTful para la versión 3.0 de la especificación de API abierta {#configure-restful-services-open-api-3.0}
+### Configuración de servicios RESTful para la especificación de API abierta versión 3.0 {#configure-restful-services-open-api-3.0}
 
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Pulse para seleccionar la carpeta en la que desea crear una configuración de nube.
 
@@ -157,7 +157,7 @@ El servicio web RESTful se puede describir con las [especificaciones de Swagger]
 1. Especifique los siguientes detalles para el servicio RESTful:
 
    * Seleccione la URL o archivo en la lista desplegable [!UICONTROL Fuente de Swagger] y, en consecuencia, especifique la [!DNL Swagger 3.0 URL] al archivo de definición [!DNL  Swagger] o cargue el archivo [!DNL Swagger] de su sistema de archivos local.
-   * Basado en el[!DNL  Swagger] Entrada de origen, se muestra la información de conexión con el servidor de destino.
+   * En función de la entrada de origen de [!DNL  Swagger], se muestra la información de conexión con el servidor de destino.
    * Seleccione el tipo de autenticación (ninguna, OAuth2.0, autenticación básica, clave del API o autenticación personalizada) para acceder al servicio RESTful y facilitar los detalles correspondientes para la autenticación.
 
    Si selecciona **[!UICONTROL clave del API]** como tipo de autenticación, especifique el valor de la clave del API. La clave de la API se puede enviar como encabezado de solicitud o como parámetro de consulta. Seleccione una de estas opciones en la lista desplegable **[!UICONTROL Ubicación]** y especifique el nombre del encabezado o el parámetro de consulta en el campo **[!UICONTROL Nombre del parámetro]**.
@@ -166,14 +166,14 @@ El servicio web RESTful se puede describir con las [especificaciones de Swagger]
 
 1. Pulse **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
 
-Algunas de las operaciones no admitidas por los servicios RESTful Open API Specification versión 3.0 son:
-* Llamadas
-* uno de/cualquiera
+Algunas de las operaciones no admitidas por los servicios de la especificación de API abierta versión 3.0 son las siguientes:
+* Rellamadas
+* uno de/cualquiera de
 * Referencia remota
 * Vínculos
 * Diferentes cuerpos de solicitud para diferentes tipos de MIME para una sola operación
 
-Puede hacer referencia a [Especificación de OpenAPI 3.0](https://swagger.io/specification/v3/) para obtener información detallada.
+Puede consultar [Especificación de API abierta 3.0 ](https://swagger.io/specification/v3/) para obtener información detallada.
 
 ### Configuración del cliente HTTP del modelo de datos del formulario para optimizar el rendimiento {#fdm-http-client-configuration}
 
@@ -211,7 +211,7 @@ El siguiente archivo JSON muestra un ejemplo:
 
    * Especifique el número máximo de conexiones permitidas entre el modelo de datos de formulario y los servicios web RESTful en el campo **[!UICONTROL Límite de conexión en total]**. El valor predeterminado es 20 conexiones.
 
-   * Especifique el número máximo de conexiones permitidas para cada ruta en el campo **[!UICONTROL Límite de conexión por ruta]**. El valor predeterminado es dos conexiones.
+   * Especifique el número máximo de conexiones permitidas para cada ruta en el campo **[!UICONTROL Límite de conexión por ruta]**. El valor predeterminado son dos conexiones.
 
    * Especifique la duración, durante la cual se mantiene activa una conexión HTTP persistente, en el campo **[!UICONTROL Mantener activa]**. El valor predeterminado es 15 segundos.
 
@@ -300,4 +300,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## Pasos siguientes {#next-steps}
 
-Ha configurado las fuentes de datos. A continuación, puede crear un modelo de datos de formulario o, si ya ha creado uno sin una fuente de datos, puede asociarlo a las fuentes de datos configuradas. Consulte [Crear un modelo de datos de formulario](create-form-data-models.md) para obtener más información.
+Ha configurado las fuentes de datos. A continuación, puede crear un modelo de datos de formulario o, si ya ha creado uno sin una fuente de datos, puede asociarlo a las que acaba de configurar. Consulte [Crear un modelo de datos de formulario](create-form-data-models.md) para obtener más información.

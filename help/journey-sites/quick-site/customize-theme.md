@@ -5,7 +5,7 @@ exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 source-git-commit: 64509c13abacd6a6b54b58245acbf510feafdffa
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Una vez que esté cómodo con la estructura del proyecto de tema, inicie el prox
 
    >[!TIP]
    >
-   >Si no tiene estas credenciales, hable con el administrador haciendo referencia a [Sección Configurar usuario proxy del artículo Crear sitio a partir de una plantilla](/help/journey-sites/quick-site/create-site.md#proxy-user) en este recorrido.
+   >Si no dispone de estas credenciales, hable con el administrador haciendo referencia a la sección [Configurar usuario proxy del artículo Crear sitio a partir de una plantilla](/help/journey-sites/quick-site/create-site.md#proxy-user) en este recorrido.
 
 1. Una vez que haya iniciado sesión, cambie la dirección URL en el explorador para que apunte a la ruta del contenido de ejemplo que le proporcionó el administrador de AEM.
 
