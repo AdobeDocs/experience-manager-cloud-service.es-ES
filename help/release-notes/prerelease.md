@@ -2,10 +2,10 @@
 title: Canal de la versión preliminar de Adobe Experience Manager as a Cloud Service
 description: Aprenda a utilizar el canal de la versión preliminar para obtener una vista previa de las próximas funciones de AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: 9a76a1c2b5e3b7986654b0843842b015811679a2
+source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 100%
+source-wordcount: '1311'
+ht-degree: 86%
 
 ---
 
@@ -16,22 +16,22 @@ Aprenda a utilizar el canal de la versión preliminar para obtener una vista pre
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager as a Cloud Service ofrece nuevas funciones con una periodicidad mensual, según la [Hoja de ruta de versiones de Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es#aem-as-cloud-service)
+Adobe Experience Manager as a Cloud Service ofrece nuevas funciones en una cadencia regular, según la [El Experience Manager publica la hoja de ruta.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es#aem-as-cloud-service)
 
-Para familiarizarse con las funciones programadas para entrar en funcionamiento el mes siguiente, puede suscribirse al canal de la versión preliminar, al que puede acceder configurando sus entornos de desarrollo o de zona protegida. Puede previsualizar los cambios accesibles a través de la IU de AEM, así como crear código con cualquier API de versión preliminar nueva.
+Para familiarizarse con las funciones programadas para su lanzamiento en la siguiente versión de funciones, puede suscribirse al canal de prelanzamiento, al que se puede acceder configurando los entornos de desarrollo o cualquier entorno limitado. Puede previsualizar los cambios accesibles a través de la IU de AEM, así como crear código con cualquier API de versión preliminar nueva.
 
-La lista de funciones de la versión preliminar de un mes determinado se publica dentro de las [notas de la versión mensuales.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+La lista de características de la versión preliminar de una versión de función determinada se publica dentro de la [notas de la versión.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## Versiones de AEM as a Cloud Service {#releases}
 
 AEM as a Cloud Service tiene dos tipos de versiones.
 
-* Las **versiones mensuales** agregan funcionalidades y características a AEM as a Cloud Service
-* Las **actualizaciones críticas** añaden actualizaciones de seguridad, mejoras de rendimiento y correcciones de errores, y se aplican diariamente.
+* **Versiones de características** añadir funciones y características a AEM as a Cloud Service, tras la activación
+* **Versiones de mantenimiento** agregue actualizaciones de seguridad, mejoras de rendimiento y correcciones de errores, y se aplican de forma regular y frecuente.
 
 Este modelo garantiza lanzamientos continuos sin interrupción del servicio.
 
-El canal de la versión preliminar le permite previsualizar las funciones programadas para la próxima versión mensual a fin de evaluar la funcionalidad futura y planificar su posible implementación en sus proyectos. Le permite planificar con antelación la próxima versión mensual.
+El canal de prelanzamiento le permite previsualizar las funciones programadas para la próxima versión de la función con el fin de evaluar la funcionalidad futura y planificar su posible implementación para sus propios proyectos. Le permite planificar con anticipación la próxima versión de la función.
 
 Por ejemplo, si es mayo y está suscrito al canal de la versión preliminar, puede evaluar las funciones de la próxima versión de junio.
 
@@ -48,7 +48,7 @@ Para aprovechar al máximo el canal de la versión preliminar se requieren cuatr
 
 ## Marcado de calendarios {#mark-calendars}
 
-Las versiones mensuales están programadas con mucha antelación y las fechas de lanzamiento se publican en [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es#aem-as-cloud-service)
+Las versiones de funciones se programan con mucha antelación y las fechas de activación de las versiones de funciones se publican en [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es#aem-as-cloud-service)
 
 Tenga en cuenta las fechas de lanzamiento para planificar el tiempo necesario para revisar y probar las próximas funciones.
 
@@ -58,11 +58,11 @@ Una vez que tenga las fechas de lanzamiento marcadas en el calendario, asegúres
 
 Cada versión va acompañada de notas de la versión que documentan no solo las novedades, sino también las funciones disponibles para la evaluación de la versión preliminar. Infórmese con antelación y planifique cómo aprovechar las últimas funciones de AEMaaCS.
 
-También puede [ver los problemas conocidos](/help/release-notes/known-issues.md) que se publican junto con cada versión para conocer cualquier problema técnico que pueda presentar un desafío para su evaluación o posible adopción de cualquier función nueva.
+También puede [ver los problemas conocidos](/help/release-notes/maintenance/latest.md) que se publican junto con cada versión para conocer cualquier problema técnico que pueda presentar un desafío para su evaluación o posible adopción de cualquier función nueva.
 
 ## Habilitación del canal de la versión preliminar para acceder y probar nuevas funciones {#new-features}
 
-El canal de la versión preliminar se puede habilitar en cualquier entorno de desarrollo o zona protegida. La versión preliminar no se puede habilitar en entornos de ensayo o producción.
+El canal de la versión preliminar se puede habilitar en cualquier entorno de desarrollo o zona protegida. El prelanzamiento no se puede habilitar en entornos de ensayo o producción.
 
 Las funciones de la versión preliminar se pueden experimentar de diferentes maneras:
 

@@ -1,48 +1,45 @@
 ---
-title: Notas de la versión más recientes sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión más recientes sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: edb8949b532b80a55106e706a49e2ada68722a67
+title: Notas de la versión de mantenimiento actual de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de la versión de mantenimiento actual de [!DNL Adobe Experience Manager] as a Cloud Service.
+source-git-commit: 7e66c9f26211bd92119c74f311f3e9b3195a8d98
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 100%
+source-wordcount: '265'
+ht-degree: 36%
 
 ---
 
 
 # Notas de la versión de mantenimiento {#maintenance-release-notes}
 
-En la siguiente sección se describen las notas técnicas de la versión de mantenimiento más reciente de Experience Manager as a Cloud Service.
+En la siguiente sección se describen las notas de la versión técnica de la versión de mantenimiento actual de Experience Manager as a Cloud Service.
 
-## Versión 11289 {#release-11289}
+## Versión 11382 {#release-11382}
 
-A continuación, se resumen las mejoras continuas para la versión de mantenimiento 11289, que se publicó el 7 de marzo de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento anterior 10912.
+A continuación se resumen las mejoras continuas de la versión de mantenimiento 11382, que se publicó el 28 de marzo de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 11289 anterior.
 
 La activación de funcionalidades para esta versión de mantenimiento le proporcionará el conjunto completo de funcionalidades. Consulte las [notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md) para obtener información detallada.
 
-### Problemas conocidos {#known-issues}
-
-No actualice si utiliza CORS. En esta versión se identificó un problema que afectaba a la funcionalidad de entrega de contenido de GraphQL. Un cambio en la configuración predeterminada de Dispatcher de AEM con respecto a cómo se almacenan en caché las consultas persistentes de GraphQL puede interrumpir la entrega de contenido de GraphQL de dichas consultas. Este problema se solucionará en la próxima versión de mantenimiento.
-
 ### Problemas corregidos {#fixed-issues}
+
+- ASSETS-21023 - Se ha corregido la representación de Recorte inteligente, en la que los clientes podían observar una excepción de puntero nulo en la instancia de Editor de todos los entornos de AEM cuando intentaban acceder a estas representaciones a través de la API.
+- SKYOPS-49280 - Al instalar una actualización de configuración o paquete utilizando RDE en Publish, puede que el resultado no se pueda observar porque la caché de Publish Dispatcher no está invalidada
 
 #### Sites {#sites-issues}
 
-- SITES-11584 Se ha corregido un problema con Live Copies que no se podía crear para páginas con anotaciones
-- SITES-11683 Se han deshabilitado Live Copies de MSM con herencia parcialmente dañada
+- SITES-7796 - Capacidad para que el autor de contenido publique el fragmento de contenido maestro y sus variaciones respectivas al exportar a destino
 
 #### Assets {#assets-issues}
 
-- ASSETS-20879 Se ha corregido la regresión que impedía que la IU de los informes de recursos funcionara correctamente y daba como resultado resultados incorrectos en los informes generados.
-- ASSETS-21020 Se ha corregido un problema con la descarga de recursos dañada: el perfil de imagen no existe después de mover el recurso
-- ASSETS-21023 Se ha corregido un problema con las representaciones de imágenes en Dynamic Media que impedía el acceso a través de la API
+- ASSETS-20076: Añada compatibilidad con la marca de agua de vídeo que coincida con la compatibilidad actual con la marca de agua de imágenes
+- ASSETS-21428: Exclusiones añadidas para cambios en CSS
 
 #### Forms {#forms-issues}
 
-- Ninguno
+- CQ-4351502 - Actualización de la asignación de usuarios del servicio para permitir el acceso de lectura en Sites
 
 #### Plataforma {#platform-issues}
 
-- GRANITE-44467 Se ha corregido un problema que provocaba que fallara la importación. Al actualizar un nodo existente, Filevault no conservaba, en determinadas instancias, los tipos de mezcla y los nodos secundarios
+- SITES-11040 - Habilitación condicional del almacenamiento en caché de consultas persistentes de GraphQL en Dispatcher
 
 ### Tecnologías integradas {#embedded-tech}
 
