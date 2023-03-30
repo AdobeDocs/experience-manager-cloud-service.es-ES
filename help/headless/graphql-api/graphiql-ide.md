@@ -3,10 +3,10 @@ title: Uso del IDE de GraphiQL en AEM
 description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 68b16052bd050d881e82be4ef57b9623f6021a89
+source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 100%
+source-wordcount: '1058'
+ht-degree: 99%
 
 ---
 
@@ -88,8 +88,6 @@ En cualquier caso, la consulta que se muestra en el panel Editor es la que se ej
 
 ## Variables de consulta {#query-variables}
 
-<!-- more details needed here? -->
-
 El IDE de GraphiQL también le permite administrar sus [variables de consulta](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Por ejemplo:
@@ -99,6 +97,10 @@ Por ejemplo:
 ## Administración de la caché para las consultas persistentes {#managing-cache}
 
 Se recomiendan las [Consultas persistentes](/help/headless/graphql-api/persisted-queries.md), ya que se pueden almacenar en caché en las capas de Dispatcher y CDN, mejorando finalmente el rendimiento de la aplicación cliente solicitante. De forma predeterminada, AEM invalidará la caché de la red de distribución de contenido (CDN) en función de un tiempo de vida predeterminado (TTL).
+
+>[!NOTE]
+>
+>Para obtener más información, consulte [Almacenamiento en caché de las consultas persistentes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
