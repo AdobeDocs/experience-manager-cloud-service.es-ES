@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+source-git-commit: 936aa33ca334523aa84300f540bde9543eb7ffb4
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 100%
+source-wordcount: '2135'
+ht-degree: 98%
 
 ---
 
@@ -26,11 +26,7 @@ La integración de datos de [!DNL Experience Manager Forms] le permite configura
 * SalesForce
 * Microsoft® Azure Blob Storage
 
-La integración de datos es compatible con los tipos de autenticación de forma predeterminada OAuth2.0, autenticación básica y clave del API, y permite implementar la autenticación personalizada para acceder a servicios web. Mientras que los servicios RESTful, SOAP y OData se configuran en [!DNL Experience Manager], <!--, JDBC for relational databases --> as a Cloud Service y el conector para el perfil de usuario de [!DNL Experience Manager] se configuran en la consola web de [!DNL Experience Manager].
-
->[!NOTE]
->
->[!UICONTROL Experience Manager Forms] no es compatible con bases de datos relacionales.
+La integración de datos es compatible con los tipos de autenticación de forma predeterminada OAuth2.0, autenticación básica y clave de la API, y permite implementar la autenticación personalizada para acceder a servicios web. Mientras que los servicios RESTful, SOAP y OData están configurados en [!DNL Experience Manager] as a Cloud Service, JDBC para bases de datos relacionales y conector para [!DNL Experience Manager] el perfil de usuario está configurado en [!DNL Experience Manager] consola web.
 
 ## Configuración de la base de datos relacional {#configure-relational-database}
 
@@ -138,7 +134,6 @@ El servicio web RESTful se puede describir con las [especificaciones de Swagger]
       * Esquema: Los protocolos de transferencia utilizados por el API de REST. El número de tipos de esquema que se muestran en la lista desplegable depende de los esquemas definidos en la fuente de [!DNL Swagger].
       * Host: El nombre de dominio o la dirección IP del host que sirve el API de REST. Es un campo obligatorio.
       * Ruta base: El prefijo URL de todas las rutas de API. Es un campo opcional.\
-
          Si es necesario, edite los valores rellenados previamente para estos campos.
    * Seleccione el tipo de autenticación (ninguna, OAuth2.0, autenticación básica, clave del API o autenticación personalizada) para acceder al servicio RESTful y facilitar los detalles correspondientes para la autenticación.
 
@@ -282,7 +277,7 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
    Si selecciona **[!UICONTROL clave del API]** como tipo de autenticación, especifique el valor de la clave del API. La clave de la API se puede enviar como encabezado de solicitud o como parámetro de consulta. Seleccione una de estas opciones en la lista desplegable **[!UICONTROL Ubicación]** y especifique el nombre del encabezado o el parámetro de consulta en el campo **[!UICONTROL Nombre del parámetro]**.
 
    >[!NOTE]
-   >Debe seleccionar el tipo de autenticación OAuth 2.0 con el que conectarse a los servicios de [!DNL Microsoft® Dynamics] que utilizan el punto final OData como raíz de servicio.
+   Debe seleccionar el tipo de autenticación OAuth 2.0 con el que conectarse a los servicios de [!DNL Microsoft® Dynamics] que utilizan el punto final OData como raíz de servicio.
 
 1. Pulse **[!UICONTROL Crear]** para crear la configuración de nube para el servicio OData.
 
