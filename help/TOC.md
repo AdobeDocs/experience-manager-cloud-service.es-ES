@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
+source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '4013'
 ht-degree: 98%
 
 ---
@@ -517,7 +517,6 @@ ht-degree: 98%
       + [Migrar desde [!DNL AEM 6.5 Forms] o anterior a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos y permisos](/help/forms/forms-groups-privileges-tasks.md)
       + [Importación, exportación y organización de formularios adaptables, formularios PDF y otros recursos](/help/forms/import-export-forms-templates.md)
-      + [Temas de referencia, plantillas y modelos de datos](/help/forms/reference-themes-templates-data-models.md)
    + Integrar {#integrate}
       + Servicios {#services}
          + [Integración de AEM Forms as a Cloud Service con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -549,9 +548,9 @@ ht-degree: 98%
          + Creación de un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
             + [Introducción a la creación de un formulario adaptable](/help/forms/introduction-forms-authoring.md)
             + [Crear un formulario adaptable](/help/forms/creating-adaptive-form.md)
+            + [Temas de referencia, plantillas y modelos de datos](/help/forms/reference-themes-templates-data-models.md)
             + [Creación de una plantilla](/help/forms/template-editor.md)
             + [Creación de un tema](/help/forms/themes.md)
-            + [Activos de referencia](/help/forms/reference-assets.md)
             + [Diseño de un esquema JSON para un formulario adaptable](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Mejora del rendimiento de los formularios grandes con carga lenta](/help/forms/lazy-loading-adaptive-forms.md)
          + Adición de componentes a un formulario adaptable {#add-components-to-an-adaptive-form}
