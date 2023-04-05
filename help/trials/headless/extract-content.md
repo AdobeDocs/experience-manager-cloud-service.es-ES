@@ -4,10 +4,10 @@ description: Aprenda a utilizar los fragmentos de contenido y la API de GraphQL 
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 30fca14949e379fb427252f43d9f31d062e7e445
+source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,10 @@ ht-degree: 100%
 Inicie GraphQL Explorer en una pestaña nueva. Aquí puede generar y validar consultas sobre su contenido sin encabezado antes de utilizarlas para impulsar el contenido en su aplicación o sitio web.
 
 1. La versión de prueba de AEM sin encabezado incluye un punto final precargado con fragmentos de contenido desde el que se puede extraer contenido para pruebas. Asegúrese de que el punto final **Recursos de demostración de AEM** esté seleccionado en el menú desplegable **Punto final** en la esquina superior derecha del editor.
+
+1. Problema conocido: si la variable **Recursos de demostración de AEM** El punto final no está presente en el menú desplegable, vaya al Administrador de paquetes (`/crx/packmgr` en su entorno de AEM) y vuelva a instalar el `aem-demo-assets.ui.content-{VERSION}.zip` paquete:
+
+   ![Reinstalar paquete](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. Copie el siguiente fragmento de código para una consulta de lista del punto final **Recursos de demostración de AEM**. La consulta de lista devuelve una lista de todo el contenido que utiliza el modelo de fragmento de contenido específico. Las páginas de inventario y categoría suelen utilizar este formato de consulta.
 
