@@ -2,10 +2,10 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 12%
+source-wordcount: '1722'
+ht-degree: 11%
 
 ---
 
@@ -39,7 +39,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
    * Seleccione el conjunto de migración que contiene los datos extraídos como Fuente.
       * Los conjuntos de migración caducarán después de un prolongado período de inactividad, por lo que se espera que la ingesta se produzca relativamente pronto después de realizar la extracción. Consulte [Caducidad del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener más información.
-   * Seleccione el entorno de destino. Aquí es donde se incorporará el contenido del conjunto de migración. Seleccione el nivel. (Autor/Publicación).
+   * Seleccione el entorno de destino. Aquí es donde se incorporará el contenido del conjunto de migración. Seleccione el nivel. (Autor/Publicación). Los entornos de desarrollo rápido no son compatibles.
 
    >[!NOTE]
    >
@@ -55,9 +55,13 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
    > 
    >Si se utiliza la ingesta con precopia (para S3 o Azure Data Store), se recomienda ejecutar la ingesta de Autor solo primero. Esto acelera la ingesta de Publicar cuando se ejecute más adelante.
 
+   >[!NOTE]
+   >
+   >Las entradas no admiten un destino de Entorno de desarrollo rápido (RDE). No aparecerán como una opción de destino posible, aunque el usuario tenga acceso a él.
+
    >[!IMPORTANT]
    >
-   >Solo podrá iniciar una ingesta en el entorno de destino si pertenece al entorno local **Administradores de AEM** en el servicio de autor del Cloud Service de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más información.
+   >Solo podrá iniciar una ingesta en el entorno de destino si pertenece al grupo local **Administradores de AEM** en el servicio de autor del Cloud Service de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más información.
 
    >[!IMPORTANT]
    >
@@ -103,7 +107,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingesta superior"
 >abstract="Utilice la funcionalidad de recarga para mover contenidos modificados desde la anterior actividad de transferencia. Una vez finalizada la ingesta, compruebe los registros para ver si hay errores o advertencias. Cualquier error debe resolverse de inmediato, ya sea subsanando los problemas notificados o contactando con el Servicio de atención al cliente de Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=es" text="Visualización de registros"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Visualización de registros"
 
 La herramienta de transferencia de contenido tiene una función que permite *agregar* contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior.
 
@@ -132,7 +136,7 @@ Deberá recuperar el token de migración manualmente haciendo clic en el víncul
 
 ### No se puede iniciar la ingesta {#unable-to-start-ingestion}
 
-Solo podrá iniciar una ingesta en el entorno de destino si pertenece al entorno local **Administradores de AEM** en el servicio de autor del Cloud Service de destino. Si no pertenece al grupo de administradores de AEM, verá un error como se muestra a continuación cuando intente iniciar una ingesta. Puede solicitar al administrador que lo añada a la **Administradores de AEM** o pida el propio token, que puede pegar en el **Entrada del token de migración** campo .
+Solo podrá iniciar una ingesta en el entorno de destino si pertenece al grupo local **Administradores de AEM** en el servicio de autor del Cloud Service de destino. Si no pertenece al grupo de administradores de AEM, verá un error como se muestra a continuación cuando intente iniciar una ingesta. Puede solicitar al administrador que lo añada a la **Administradores de AEM** o pida el propio token, que puede pegar en el **Entrada del token de migración** campo .
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -175,4 +179,4 @@ Este conflicto debe resolverse manualmente. Alguien familiarizado con el conteni
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya completado la ingesta de contenido en Target, puede ver los registros de cada paso (extracción e ingesta) y buscar errores. Consulte [Visualización de registros de un conjunto de migraciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) para obtener más información.
+Una vez que haya completado la ingesta de contenido en Target, puede ver los registros de cada paso (extracción e ingesta) y buscar errores. Consulte [Visualización de registros de un conjunto de migraciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) para obtener más información.

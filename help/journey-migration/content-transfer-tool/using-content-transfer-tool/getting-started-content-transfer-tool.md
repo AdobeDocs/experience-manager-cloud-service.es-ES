@@ -2,7 +2,7 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 22%
@@ -43,7 +43,7 @@ La instancia de AEM de origen puede estar ejecutándose detrás de un cortafuego
 
 ### Habilitar el registro SSL {#enable-ssl-logging}
 
-A veces es difícil comprender los problemas de conexión SSL/TLS. Para solucionar problemas de conexión durante un proceso de extracción, puede habilitar el registro SSL a través de la consola del sistema del entorno de AEM de origen siguiendo estos pasos:
+A veces es difícil comprender los problemas de conexión SSL/TLS. Para solucionar los problemas de conexión durante un proceso de extracción, puede habilitar el registro SSL a través de la consola del sistema del entorno de AEM de origen siguiendo estos pasos:
 
 1. Vaya a la consola web de Adobe Experience Manager en la instancia de origen, yendo a **Herramientas - Operaciones - Consola Web** o directamente a la dirección URL en *https://serveraddress:serverport/system/console/configMgr*
 1. Buscar **Configuración del servicio de extracción de la herramienta de transferencia de contenido**
@@ -177,7 +177,7 @@ Siga los pasos a continuación para ejecutar una comprobación de tamaño:
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Haga clic en **Comprobar tamaño** para iniciar el proceso. A continuación, volverá a la vista de la lista de conjuntos de migración y verá un mensaje que indique que **Comprobar tamaño** se está ejecutando.
+1. Haga clic en **Comprobar tamaño** para iniciar el proceso. A continuación, volverá a la vista de lista de conjuntos de migración y verá un mensaje que indica que **Comprobar tamaño** se está ejecutando.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
