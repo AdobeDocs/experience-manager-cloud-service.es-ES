@@ -5,7 +5,7 @@ landing-page-description: Aprenda a administrar fragmentos de contenido desde la
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 13e75e8b0f08463f5fd941263497f5cf0a31129c
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
@@ -69,7 +69,7 @@ Aquí se pueden ver tres áreas principales:
    * **[Crear](#creating-new-content-fragment)** un nuevo fragmento de contenido
    * [Filtrar](#filtering-fragments) los fragmentos de contenido de acuerdo con una selección de predicados y guardar el filtro para uso futuro
    * [Buscar](#searching-fragments) los fragmentos de contenido
-   * [Personalice la vista de tabla para mostrar columnas de información seleccionadas](#selectuse-available-columns)
+   * [Personalice la vista de tabla para mostrar columnas de información seleccionadas](#select-available-columns)
    * Use **Abrir en Recursos** para abrir directamente la ubicación actual en la consola **Recursos**
 
       >[!NOTE]
