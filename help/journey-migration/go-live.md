@@ -2,7 +2,7 @@
 title: Go-Live
 description: Obtenga información sobre cómo realizar la migración una vez que el código y el contenido estén listos para la nube
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
+source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 2%
@@ -107,7 +107,7 @@ Tenga en cuenta que la ingesta completa falla si se encuentra alguna de las sigu
 Comparado con la sección anterior a la ingesta **no** falla debido a las siguientes preocupaciones sobre los activos. Sin embargo, es muy recomendable que realice los pasos adecuados en estos casos:
 
 * Falta cualquier recurso que tenga la representación original
-* Cualquier carpeta que falte `jcr:content` node
+* Cualquier carpeta que falte `jcr:content` nodo .
 
 Los dos elementos anteriores se identificarán y presentarán informes en la [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) informe.
 
