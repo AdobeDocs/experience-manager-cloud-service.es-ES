@@ -2,10 +2,10 @@
 title: Fragmentos de contenido
 description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
+source-git-commit: 7ce05d282d553c5552cd828d08aaf6b7b5fb4e05
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 64%
+source-wordcount: '1227'
+ht-degree: 63%
 
 ---
 
@@ -185,3 +185,10 @@ Los fragmentos deben publicarse para poder usarse en las páginas web publicadas
 
 * Los fragmentos se pueden publicar después de [crear el fragmento en la consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
 * Si se usa un *fragmento sin publicar* en una página que se está publicando, también se puede publicar en ese momento el fragmento.
+
+## Exportación de fragmentos de contenido {#exporting-content-fragments}
+
+Para exportar a Adobe Target, JSON se puede utilizar para enviar el fragmento. Consulte:
+
+* [Integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+* [Exportación de fragmentos de contenido a Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)

@@ -2,16 +2,16 @@
 title: Notas de la versión 2022.7.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.7.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 9a08514f11c86b783ae68940a0c3c58fcada3dc2
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 25%
+source-wordcount: '955'
+ht-degree: 22%
 
 ---
 
-# Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de la versión 202278.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión generales de la versión actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
+La siguiente sección describe las notas de la versión de la función para la versión 2022.7.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -23,13 +23,13 @@ En la siguiente sección se describen las notas de la versión generales de la v
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] La versión actual (2022.7.0) es el 8 de agosto de 2022.
+La fecha de lanzamiento de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] la versión actual (2022.7.0) es el 8 de agosto de 2022.
 
 La próxima versión (2022.8.0) está planificada para el 1 de septiembre de 2022.
 
 ## Vídeo de la versión {#release-video}
 
-Eche un vistazo al vídeo Información general sobre la versión de julio de 2022 para ver un resumen de las funciones añadidas en la versión 2022.7.0:
+Eche un vistazo al vídeo Información general de la versión de julio de 2022 para ver un resumen de las funciones agregadas en la versión 2022.7.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
 
@@ -37,18 +37,18 @@ Eche un vistazo al vídeo Información general sobre la versión de julio de 202
 
 ### Nuevas funciones de [!DNL Sites] {#sites-features}
 
-* El [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ahora admite [métodos abreviados del teclado](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+* La variable [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ahora admite [combinaciones de teclas](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
-* AEM como de un Cloud Service [entrega de imágenes optimizadas para la web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) permite mejorar significativamente la velocidad de la página al ofrecer formatos como WebP. Este nuevo servicio también ofrece opciones más flexibles de cambio de tamaño y transformación de imágenes. Todas las versiones de [Componente Imagen principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es) permiten aprovechar este servicio y enviar imágenes como WebP haciendo clic en una opción de la directiva del componente de imagen.
+* AEM como del Cloud Service [entrega de imágenes optimizada para la web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) permite mejorar significativamente la velocidad de la página al entregar formatos como WebP. Este nuevo servicio también ofrece opciones más flexibles de cambio de tamaño y transformación de imágenes. Todas las versiones de [Componente de imagen principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es) permite aprovechar este servicio y ofrecer imágenes como WebP haciendo clic en una opción de la política del componente de imagen.
 
-* AEM Ahora, las actividades de personalización de pueden aprovechar fragmentos de experiencias en lugar de nuestras ofertas heredadas. Esta función:
-   * AEM habilita una ruta de migración en la que el contenido de la promocionaría ofertas de fragmentos de experiencias en lugar de ofertas de bibliotecas heredadas para proporcionar contenido con un estilo adecuado que se ajuste a la personalización a escala en el futuro.
+* AEM actividades de personalización ahora pueden aprovechar los fragmentos de experiencia en lugar de nuestras ofertas heredadas. Esta función:
+   * permite una ruta de migración en la que AEM contenido promocionaría ofertas de fragmentos de experiencias en lugar de ofertas de bibliotecas heredadas para proporcionar contenido con un estilo adecuado que se alinee con la personalización a escala en el futuro.
    * evita que los autores de contenido sirvan accidentalmente contenido sin estilo en su sitio.
-   * permite convertir el modo de direccionamiento de cualquier componente a un fragmento de experiencia (de ambos tipos: JSON y HTML) que utilice plantillas editables.
+   * permite convertir el modo de objetivo de cualquier componente en un fragmento de experiencia (tanto de tipo JSON como de HTML) que utilice plantillas editables.
 
 >[!NOTE]
 >
->Las actividades de personalización existentes que ya utilizan ofertas heredadas pueden seguir haciéndolo, pero las nuevas actividades de personalización deben crearse como fragmentos de experiencia, ya que ese es el enfoque recomendado a partir de ahora.
+>Las actividades de personalización existentes que ya utilizan ofertas heredadas pueden seguir haciéndolo, pero deben crearse nuevas actividades de personalización como fragmentos de experiencia, ya que ese es el enfoque recomendado a partir de ahora.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -62,11 +62,11 @@ Ahora puede configurar Adobe Experience Manager Assets en [restringir el tipo de
 
 ### Nuevas funciones de [!DNL Forms] {#forms-features}
 
-* **[Compatibilidad de entrada de teclado con firmas Scribble](/help/forms/signing-forms-using-scribble.md)**: Los Forms adaptables se utilizan cada vez más en dispositivos táctiles y uno de los requisitos comunes es ser compatibles con firmas. La firma de documentos en dispositivos táctiles se ha convertido en una forma aceptada para firmar formularios. Adaptive Forms es compatible de forma nativa con firmas de Scribble y con Adobe Sign en estos casos de uso. Ahora, junto con otras opciones ya compatibles, también puede utilizar el teclado para crear firmas de Scribble en un formulario adaptable. También ayuda a mejorar el cumplimiento de la accesibilidad.
+* **[Compatibilidad de entrada de teclado con firmas Scribble](/help/forms/signing-forms-using-scribble.md)**: Los Forms adaptables se utilizan cada vez más en dispositivos táctiles y uno de los requisitos comunes es admitir firmas. La firma de documentos en dispositivos táctiles se ha convertido en una forma aceptada de firmar formularios. Adaptive Forms es compatible de forma nativa con Scribble Signatures y con Adobe Sign en estos casos de uso. Ahora, junto con otras opciones ya compatibles, también puede utilizar el teclado para crear anotaciones en un formulario adaptable. También ayuda a mejorar el cumplimiento de las normas de accesibilidad.
 
-![Compatibilidad de entrada de teclado con firmas Scribble en iPhone](/help/release-notes/assets/scribble-keyboard-mobile.png)
+![Compatibilidad de entrada de teclado con firmas Scribble en iphone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
-* **Uso del asistente de Forms adaptable en idioma local**: puede utilizar el asistente en el idioma que prefiera. Ahora es compatible con todos los idiomas admitidos por Adobe Experience Manager.
+* **Uso del asistente de Forms adaptable en idioma local**: Puede utilizar el asistente en el idioma que prefiera. Ahora es compatible con todos los idiomas compatibles con Adobe Experience Manager.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 
@@ -78,22 +78,22 @@ Ahora puede configurar Adobe Experience Manager Assets en [restringir el tipo de
 
 -->
 
-* **[AEM Invocar DDX: un paso de flujo de trabajo de](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) es un lenguaje de marcado declarativo cuyos elementos representan componentes básicos de documentos. Estos componentes básicos incluyen documentos PDF y XDP, y otros elementos como comentarios, marcadores y texto con estilo. Los documentos DDX son plantillas para los documentos y describen las características deseadas de los documentos de origen que deben aparecer en los resultantes. Se puede utilizar un solo DDX con una amplia gama de documentos de origen. AEM Puede utilizar el paso Invocar y el flujo de trabajo de la para realizar varias operaciones, como montar documentos separados, crear y modificar Acrobat y XFA Forms, y otras operaciones descritas en [Referencia DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentación.
+* **[Invocar DDX: Un paso AEM del flujo de trabajo](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) es un lenguaje declarativo de marcado cuyos elementos representan componentes básicos de documentos. Estos componentes básicos incluyen documentos PDF y XDP, y otros elementos como comentarios, marcadores y texto con estilo. Los documentos DDX son plantillas para los documentos y describen las características deseadas de los documentos de origen que deberían aparecer en los documentos resultantes. Se puede utilizar un solo DDX con una amplia gama de documentos de origen. Puede utilizar el paso Invocar y el flujo de trabajo AEM para realizar varias operaciones, como ensamblar documentos desensamblados, crear y modificar Acrobat y XFA Forms, y otras operaciones descritas en [Referencia de DDX](https://helpx.adobe.com/content/dam/help/es/experience-manager/forms-cloud-service/ddxRef.pdf) documentación.
 
-* **[Convertir en PDF AEM/A: paso de un flujo de trabajo de](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Ahora, puede utilizar el paso Convertir en PDF AEM/A y el flujo de trabajo de para convertir los documentos o archivos en cualquier formato al formato PDF/A.
+* **[Convertir en PDF/A: un paso AEM del flujo de trabajo](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Ahora, puede utilizar el paso Convertir en PDF/A y Flujo de trabajo AEM para convertir sus documentos o archivos en cualquier formato a formato de PDF/A.
 
 
 ## Complemento CIF {#cloud-services-cif}
 
 ### Novedades {#what-is-new-cif}
 
-* AEM Ahora, el enriquecimiento del catálogo de productos admite páginas de. Esto permite a los autores administrar la asociación página - producto.
+* El enriquecimiento del catálogo de productos ahora admite páginas AEM. Esto permite a los autores administrar la asociación de páginas y productos.
 
 * Varias mejoras en los componentes principales del CIF
 
 ### Corrección de errores {#bug-fixes-cif}
 
-* Añadir token de inicio de sesión a la recuperación de precios del lado del cliente
+* Agregar token de inicio de sesión a la recuperación de precios del lado del cliente
 
 * Componente de página incorrecto en la capa de datos
 
@@ -101,20 +101,20 @@ Ahora puede configurar Adobe Experience Manager Assets en [restringir el tipo de
 
 ### Novedades {#what-is-new-foundation}
 
-* El [Explorador del repositorio](/help/implementing/developing/tools/repository-browser.md) ahora tiene un campo de entrada de ruta, lo que permite saltar directamente a una carpeta específica en la jerarquía del repositorio
-* Sling Content Distribution (SCD) ahora admite una acción explícita de &quot;invalidación&quot; para invalidar contenido sin que se publique. Consulte la [AEM Almacenamiento en caché en as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) para obtener más información.
-* AEM mod_macro ya está disponible en as a Cloud Service. Consulte [esta tabla](/help/implementing/dispatcher/disp-overview.md) para obtener una lista de los módulos Apache compatibles.
+* La variable [Explorador del repositorio](/help/implementing/developing/tools/repository-browser.md) ahora tiene un campo de entrada de ruta, lo que permite saltar directamente a una carpeta específica en la jerarquía del repositorio
+* Sling Content Distribution (SCD) ahora admite una acción explícita de &quot;invalidación&quot; para invalidar contenido sin que se publique dicho contenido. Consulte la [Almacenamiento en caché en AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) para obtener más información.
+* mod_macro ahora está disponible en AEM as a Cloud Service. Consulte [esta tabla](/help/implementing/dispatcher/disp-overview.md) para obtener una lista de los módulos Apache compatibles.
 
-### AEM Mejoras en las herramientas de Dispatcher del SDK as a Cloud Service {#dispatcher-tools-enhancements}
+### AEM mejoras as a Cloud Service en las herramientas de Dispatcher de SDK {#dispatcher-tools-enhancements}
 
-* Apache puede iniciarse con `docker_run_hot_reload.sh` , que cargará y validará automáticamente cualquier cambio posterior en la configuración de apache y dispatcher, mejorando así la velocidad del desarrollador. Solo se admite en el modo flexible de las herramientas de Dispatcher. Consulte también [Depuración de la configuración de Apache y Dispatcher](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) para obtener más información sobre la recarga y validación automáticas.
-* La configuración local de Apache/Dispatcher rastreará más de cerca los cambios en los entornos de la nube, aumentando la paridad entre los dos entornos.
+* Apache puede iniciarse con `docker_run_hot_reload.sh` script, que cargará y validará automáticamente cualquier cambio posterior en la configuración de Apache y Dispatcher, mejorando así la velocidad del desarrollador. Solo se admite en el modo flexible de herramientas de Dispatcher. Consulte también [Depuración de la configuración de Apache y Dispatcher](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) para obtener más información sobre la recarga y validación automáticas.
+* La configuración de Apache/Dispatcher local realizará un seguimiento más detallado de los cambios en los entornos de la nube, lo que aumentará la paridad entre los dos entornos.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Experience Manager] {#prerelease-features-foundation}
 
 * AEM as a Cloud Service está ahora integrado con Unified Shell para mejorar la experiencia del usuario y unificarlo con todas las demás aplicaciones de Experience Cloud. Consulte [AEM as a Cloud Service en Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obtener más información.
 
-## Adobe de conectores de Learning Manager {#learn-manage}
+## Conectores de Adobe Learning Manager {#learn-manage}
 
 * El nuevo Administrador de aprendizaje de Adobe tiene conectores para Adobe Experience Manager Sites, Marketo Engage y Adobe Commerce. Para obtener más información, consulte: [Guía del usuario de Adobe Learning Manager](https://helpx.adobe.com/learning-manager/user-guide.html).
 
