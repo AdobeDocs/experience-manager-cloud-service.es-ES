@@ -5,10 +5,10 @@ landing-page-description: Aprenda a administrar fragmentos de contenido desde la
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,6 +56,7 @@ Aquí se pueden ver tres áreas principales:
 * El panel izquierdo
    * Aquí puede ocultar o mostrar el árbol de carpetas
    * Puede seleccionar una rama específica del árbol
+   * Se puede cambiar el tamaño para mostrar carpetas anidadas
 * Panel principal/derecho, desde aquí puede hacer lo siguiente:
    * Consultar la lista de todos los fragmentos de contenido en la rama seleccionada del árbol:
       * La ubicación se indica mediante las rutas de exploración; también se pueden usar para cambiar la ubicación.
@@ -64,8 +65,10 @@ Aquí se pueden ver tres áreas principales:
             * Abrir el fragmento correspondiente en el editor
             * Mostrar información sobre referencias
             * Mostrar información sobre las versiones de idioma del fragmento
-         * Puede [seleccionar uno o varios fragmentos de contenido para mostrar las acciones disponibles](#actions-selected-content-fragment)
-      * Puede seleccionar un encabezado de columna para ordenar la tabla según esa columna; volver a seleccionar para alternar entre ascendente y descendente. Actualmente, la ordenación se admite en las columnas **Título**, **Modificado**, y **Modificado por**.
+      * Al utilizar el ratón sobre los encabezados de columna, se mostrarán un selector de acciones desplegable y controles deslizantes de ancho. Esto le permite:
+         * Ordenar: seleccione la acción adecuada, ya sea ascendente o descendente. Así se ordenará toda la tabla según esa columna. La ordenación solo está disponible en las columnas adecuadas.
+         * Cambiar el tamaño de la columna mediante los controles deslizantes de acción o de anchura
+      * Puede [seleccionar uno o varios fragmentos de contenido para mostrar las acciones disponibles](#actions-selected-content-fragment)
    * **[Crear](#creating-new-content-fragment)** un nuevo fragmento de contenido
    * [Filtrar](#filtering-fragments) los fragmentos de contenido de acuerdo con una selección de predicados y guardar el filtro para uso futuro
    * [Buscar](#searching-fragments) los fragmentos de contenido
@@ -154,7 +157,7 @@ La selección **Crear** abre el diálogo compacto **Nuevo fragmento de contenido
 
 El panel Filtro ofrece lo siguiente:
 
-* una selección de predicados que se pueden seleccionar y combinar
+* una selección de predicados; se pueden seleccionar y combinar uno o más predicados para crear el filtro
 * la oportunidad de **Guardar** su configuración
 * la opción recuperar un filtro de búsqueda guardada para reutilizarlo
 
