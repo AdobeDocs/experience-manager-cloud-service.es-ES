@@ -2,10 +2,10 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1687'
+ht-degree: 12%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 0%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=es#top-up-ingestion-process" text="Ingesta superior"
 
 Siga los pasos a continuación para ingerir el conjunto de migración de la herramienta de transferencia de contenido:
->[!NOTE]
->Puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de ingesta. El paso de precopia es más eficaz para la primera extracción e ingesta completa. Consulte [Ingesta con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obtener más información.
 
 >[!NOTE]
 >¿Se acuerda de registrar un ticket de soporte para esta ingesta? Consulte [Consideraciones importantes antes de usar la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) para que esa y otras consideraciones ayuden a que la ingesta tenga éxito.
@@ -29,7 +27,6 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 1. Vaya a Cloud Acceleration Manager. Haga clic en la tarjeta del proyecto y haga clic en la tarjeta de transferencia de contenido. Vaya a **Trabajos de Ingesta** y haga clic en **Nueva Ingesta**
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
-
 
 1. Revise la lista de comprobación de ingesta y asegúrese de que se han completado todos los pasos. Estos son pasos necesarios para garantizar una ingesta correcta. Podrá continuar con el **Siguiente** solo si se ha completado la lista de comprobación.
 
