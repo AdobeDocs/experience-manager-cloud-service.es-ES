@@ -1,19 +1,15 @@
 ---
 title: Entornos de desarrollo rápido
 description: Aprenda a aprovechar los entornos de desarrollo rápido para iteraciones de desarrollo rápidas en un entorno de nube.
-source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
+source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3304'
 ht-degree: 5%
 
 ---
 
 
 # Entornos de desarrollo rápido {#rapid-development-environments}
-
->[!AVAILABILITY]
->
->Esta función está planificada para implementarse gradualmente en los clientes.
 
 Para implementar cambios, los entornos actuales de Cloud Development requieren el uso de un proceso que emplee reglas de calidad y seguridad de código extensas, llamadas canalización CI/CD. En situaciones en las que se necesitan cambios rápidos e iterativos, el Adobe ha introducido entornos de desarrollo rápido (RDEs).
 
