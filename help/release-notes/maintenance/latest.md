@@ -1,10 +1,10 @@
 ---
 title: Notas de la versión de mantenimiento actual de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión de mantenimiento actual de [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
+source-git-commit: fb9b735c44dddda9572d3a1f90d49452c6ddc094
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '436'
+ht-degree: 22%
 
 ---
 
@@ -18,6 +18,11 @@ En la siguiente sección se describen las notas de la versión técnica de la ve
 A continuación se resumen las mejoras continuas de la versión de mantenimiento 11382, que se publicó el 28 de marzo de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 11289 anterior.
 
 La activación de funcionalidades para esta versión de mantenimiento le proporcionará el conjunto completo de funcionalidades. Consulte las [notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md) para obtener información detallada.
+
+>[!IMPORTANT]
+>
+> Se puede observar una discrepancia en la interfaz de usuario de CloudManager que muestra &quot;2023.3.11382&quot;, mientras que la versión oficial es &quot;2023.02&quot;. Esto se debe a la demora en la activación de las funciones 2023.02.
+> Estamos trabajando en solucionarlo para próximas versiones.
 
 ### Problemas conocidos {#known-issues-11382}
 
