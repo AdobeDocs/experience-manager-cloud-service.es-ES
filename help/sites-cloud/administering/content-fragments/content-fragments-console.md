@@ -5,10 +5,10 @@ landing-page-description: Aprenda a administrar fragmentos de contenido desde la
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
+source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1028'
+ht-degree: 85%
 
 ---
 
@@ -162,6 +162,22 @@ El panel Filtro ofrece lo siguiente:
 * la opción recuperar un filtro de búsqueda guardada para reutilizarlo
 
 ![Consola Fragmentos de contenido: filtrado](assets/cfc-console-filter.png)
+
+### Filtro rápido {#fast-filtering}
+
+También puede seleccionar un predicado haciendo clic en un valor de columna específico de la lista. Puede seleccionar uno o más valores para combinar predicados.
+
+Por ejemplo, seleccione **Publicado** en el **Estado** columna:
+
+>[!NOTE]
+>
+>El filtrado rápido solo es compatible con el **Modelo**, **Estado**, **Modificado por** y **Publicado por** columnas.
+
+![Consola Fragmentos de contenido: filtrado](assets/cfc-console-fast-filter-01.png)
+
+Una vez seleccionado, esto se muestra como un predicado de filtro y la lista se filtra según corresponda:
+
+![Consola Fragmentos de contenido: filtrado](assets/cfc-console-fast-filter-02.png)
 
 ## Búsqueda de fragmentos {#searching-fragments}
 
