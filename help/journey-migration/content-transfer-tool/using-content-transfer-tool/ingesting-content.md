@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
+source-git-commit: b0723faa23d77ac6b747f189e0643db59ddb2802
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1702'
 ht-degree: 12%
 
 ---
@@ -39,30 +39,19 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
    * Seleccione el entorno de destino. Aquí es donde se incorporará el contenido del conjunto de migración. Seleccione el nivel. (Autor/Publicación). Los entornos de desarrollo rápido no son compatibles.
 
    >[!NOTE]
-   >
-   >Si el origen era Autor, se recomienda ingerirlo en el nivel Autor del destino. Del mismo modo, si la fuente es Publicada, target también debe ser Publicado.
-
-   >[!NOTE]
-   >
-   >Si el nivel de destino es `Author`, la instancia de autor se cerrará durante la ingesta y no estará disponible para los usuarios (por ejemplo, autores o cualquier persona que realice el mantenimiento, etc.). Esto es para proteger el sistema y evitar cualquier cambio que pueda perderse o causar un conflicto de ingesta. Asegúrese de que su equipo sea consciente de este hecho. Tenga en cuenta también que el entorno aparecerá en hibernación durante la ingesta del autor.
-
-   >[!NOTE]
-   >
-   >Puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de ingesta. Consulte [Ingesta con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obtener más información.
-   > 
-   >Si se utiliza la ingesta con precopia (para S3 o Azure Data Store), se recomienda ejecutar la ingesta de Autor solo primero. Esto acelera la ingesta de Publicar cuando se ejecute más adelante.
-
-   >[!NOTE]
-   >
-   >Las entradas no admiten un destino de Entorno de desarrollo rápido (RDE). No aparecerán como una opción de destino posible, aunque el usuario tenga acceso a él.
+   >Las siguientes notas se aplican a la ingesta de contenido:
+   * Si el origen era Autor, se recomienda ingerirlo en el nivel Autor del destino. Del mismo modo, si la fuente es Publicada, target también debe ser Publicado.
+   * Si el nivel de destino es `Author`, la instancia de autor se cerrará durante la ingesta y no estará disponible para los usuarios (por ejemplo, autores o cualquier persona que realice el mantenimiento, etc.). Esto es para proteger el sistema y evitar cualquier cambio que pueda perderse o causar un conflicto de ingesta. Asegúrese de que su equipo sea consciente de este hecho. Tenga en cuenta también que el entorno aparecerá en hibernación durante la ingesta del autor.
+   * Puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de ingesta. Consulte [Ingesta con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obtener más información.
+   * Si se utiliza la ingesta con precopia (para S3 o Azure Data Store), se recomienda ejecutar la ingesta de Autor solo primero. Esto acelera la ingesta de Publicar cuando se ejecute más adelante.
+   * Las entradas no admiten un destino de Entorno de desarrollo rápido (RDE). No aparecerán como una opción de destino posible, aunque el usuario tenga acceso a él.
 
    >[!IMPORTANT]
-   >
-   >Solo podrá iniciar una ingesta en el entorno de destino si pertenece al grupo local **Administradores de AEM** en el servicio de autor del Cloud Service de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más información.
+   > Los siguientes avisos importantes se aplican a la ingesta de contenido:
+   * Solo podrá iniciar una ingesta en el entorno de destino si pertenece al grupo local **Administradores de AEM** en el servicio de autor del Cloud Service de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más información.
+   * Si la configuración **Barrido** se habilita antes de la ingesta, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece toda la configuración, incluidos los permisos, en la instancia de Cloud Service de destino. Esto también se aplica a los usuarios administradores agregados a la variable **administradores** grupo. Debe volver a agregarlo al grupo de administradores para iniciar una ingesta.
 
-   >[!IMPORTANT]
-   >
-   >Si la configuración **Barrido** se habilita antes de la ingesta, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece toda la configuración, incluidos los permisos, en la instancia de Cloud Service de destino. Esto también se aplica a los usuarios administradores agregados a la variable **administradores** grupo. Debe volver a agregarlo al grupo de administradores para iniciar una ingesta.
+
 
 1. Haga clic en **Ingesta**
 
