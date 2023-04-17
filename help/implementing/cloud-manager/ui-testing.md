@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
 workflow-type: tm+mt
 source-wordcount: '2147'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ AEM ofrece un conjunto integrado de [Puertas de calidad de Cloud Manager](/help/
 
 Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Java y Maven, Node y WebDriver.io, o cualquier otro marco de trabajo y tecnología creados en Selenium). Además, se puede generar fácilmente un proyecto de pruebas de IU mediante el uso del [arquetipo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es).
 
-Las pruebas de interfaz de usuario se ejecutan como parte de una puerta de calidad específica para cada canalización de Cloud Manager con un [**Pruebas de IU personalizadas** step](/help/implementing/cloud-manager/deploy-code.md) en [canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) o opcionalmente [canalizaciones que no sean de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Cualquier prueba de la interfaz de usuario, incluidas la regresión y las nuevas funcionalidades, permite detectar y notificar errores.
+Las pruebas de la IU se ejecutan como parte de una puerta de calidad específica para cada canalización de Cloud Manager con una fase de [**Pruebas de IU personalizadas**](/help/implementing/cloud-manager/deploy-code.md) en [canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) u opcionalmente [canalizaciones que no sean de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Cualquier prueba de la interfaz de usuario, incluidas la regresión y las nuevas funcionalidades, permite detectar y notificar errores.
 
 A diferencia de las pruebas funcionales personalizadas, que son pruebas HTTP escritas en Java, las pruebas de interfaz de usuario pueden ser una imagen de Docker con pruebas escritas en cualquier lenguaje, siempre y cuando sigan las convenciones definidas en la sección [Generar pruebas de IU](#building-ui-tests).
 

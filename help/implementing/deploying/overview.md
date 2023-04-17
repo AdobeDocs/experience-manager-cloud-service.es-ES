@@ -5,8 +5,8 @@ feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3509'
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ Después de cambiar a una nueva versión de la aplicación:
    * Carpetas (agregar, modificar, quitar)
    * Plantillas editables (agregar, modificar, quitar)
    * Configuración según el contexto (cualquier elemento en `/conf`) (agregar, modificar, eliminar)
-   * Scripts (los paquetes pueden activar Instalar vínculos en varias etapas del proceso de instalación del paquete). Consulte la [Documentación de Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) acerca de los enlaces de instalación.  Tenga en cuenta que CS de AEM actualmente utiliza la versión 3.4.0 de Filevault, que limita instalar vínculos a usuarios administradores, usuarios del sistema y miembros del grupo de administradores.
+   * Scripts (los paquetes pueden activar Instalar vínculos en varias etapas del proceso de instalación del paquete). Consulte la [Documentación de Jackrabbit Filevault](https://jackrabbit.apache.org/filevault/installhooks.html) acerca de instalar vínculos. Tenga en cuenta que CS de AEM actualmente utiliza la versión 3.4.0 de Filevault, que limita instalar vínculos a usuarios administradores, usuarios del sistema y miembros del grupo de administradores.
 
 Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. La reestructuración para reflejar esta separación se llevó a cabo en AEM 6.5 y se puede encontrar información detallada sobre la reestructuración del proyecto recomendado en la [documentación de AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es)
 

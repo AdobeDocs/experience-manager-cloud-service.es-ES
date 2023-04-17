@@ -6,13 +6,13 @@ seo-description: AEM Forms allows you to add new locales for localizing adaptive
 source-git-commit: 00fcdb3530a441bde2f7f91515aaaec341615a3f
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables {#supporting-new-locales-for-adaptive-forms-localization}
 
-AEM Forms proporciona compatibilidad para las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi (hi_IN).
+AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi (hi_IN).
 
 ## Explicación de los diccionarios de configuración regional {#about-locale-dictionaries}
 
@@ -73,7 +73,7 @@ I18N.js
 
 ##### 3.2. Agregar la biblioteca de cliente de Formulario Adaptable para una configuración regional en la carpeta locale-name
 
-1. Cree un nodo denominado como `[locale-name]_af` y escriba como `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, con categoría como `guides.I18N.<locale>` y dependencias como `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` y `guide.common`.
+1. Cree un nodo con el nombre `[locale-name]_af` y tipo `cq:ClientLibraryFolder` en `etc/clientlibs/locale_name`, con categoría `guides.I18N.<locale>` y dependencias `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` y `guide.common`.
 1. Cree una carpeta con el nombre como `javascript` y agregue los siguientes archivos:
 
    * **i18n.js**, definiendo `guidelib.i18n` con los patrones de “calendarSymbols” `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols` y `typefaces` para `<locale>` según las especificaciones XFA descritas en [Especificación de la configuración regional](https://helpx.adobe.com/es/content/dam/Adobe/specs/xfa_spec_3_3.pdf).
@@ -96,7 +96,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 1. Agregue los valores de configuración regional predeterminados `<locale-name>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
 
 1. Agregue `<locale>` a los valores de la propiedad `languages` de `/etc/languages`.
-1. Añada las carpetas recién creadas en la `filter.xml` en etc/META-INF/[jerarquía de carpetas] como:
+1. Añada las carpetas recién creadas en `filter.xml`, en etc/META-INF/[jerarquía de carpetas] como:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>
@@ -125,9 +125,9 @@ Siga estos pasos para utilizar y procesar un formulario adaptable mediante una c
 
 Existen dos métodos para identificar la configuración regional de un formulario adaptable. Cuando se procesa un formulario adaptable, este identifica la configuración regional solicitada de las siguientes formas:
 
-* Recuperación de la variable `[local]` en la URL del formulario adaptable. El formato de la URL es el siguiente `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. El uso del selector `[local]` permite almacenar en caché un formulario adaptable.
+* Recuperando el selector `[local]` en la URL del formulario adaptable. El formato de la URL es el siguiente `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. El uso del selector `[local]` permite almacenar en caché un formulario adaptable.
 
-* Recuperación de los siguientes parámetros en el orden de la lista:
+* Recuperando los siguientes parámetros en el orden indicado:
 
    * El parámetro de solicitud `afAcceptLang`. Para anular la configuración regional del explorador de los usuarios, puede pasar el parámetro de solicitud 
 `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obliga a procesar el formulario en la configuración regional francés canadiense:
