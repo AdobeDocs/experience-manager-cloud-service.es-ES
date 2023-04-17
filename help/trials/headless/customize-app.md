@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ Es muy fácil actualizar imágenes y recursos en sus aplicaciones con el CMS de 
 
 ## Adición de una referencia a un nuevo fragmento de contenido en la aplicación {#create-moment}
 
-Ahora que ha actualizado la imagen del motociclista, vamos a ver cómo añadir contenido nuevo a una aplicación creando y haciendo referencia a un nuevo fragmento de contenido. Añada una llamada de producto administrada por un fragmento de contenido de “momento de ventas” al segundo panel de la aplicación.
+Ahora que ha actualizado la imagen del ciclista, vamos a ver cómo añadir contenido a una aplicación creando y haciendo referencia a un nuevo fragmento de contenido. Añada una llamada de producto administrada por un fragmento de contenido de “momento de ventas” al segundo panel de la aplicación.
 
 ![Ejemplo de un momento de ventas](assets/do-not-localize/example-shoppable-moment.png)
 
