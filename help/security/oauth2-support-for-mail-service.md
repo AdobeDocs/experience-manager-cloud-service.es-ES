@@ -3,9 +3,9 @@ title: Compatibilidad con OAuth2 para el servicio de correo
 description: Compatibilidad con Oauth2 para el servicio de correo en Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: fb6fd4a86f94ae282d95c73ecb702a372d7c1f86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '691'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ Antes de configurar OAuth en el lado de AEM, asegúrese de validar accessToken y
 >
 > Puede obtener la colección de la API Postman desde [esta ubicación](https://docs.microsoft.com/es-es/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 >
-> Compruebe la documentación de MSFT OAuth [here](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) para obtener más información.
+> Compruebe la documentación de MSFT OAuth [aquí](https://learn.microsoft.com/es-ES/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) para obtener más información.
 
 ### Integración con AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
