@@ -3,9 +3,9 @@ title: Información general sobre las pruebas de Cloud Manager
 description: Obtenga información general sobre los tres tipos de pruebas que Cloud Manager ejecuta automáticamente para garantizar la calidad del código personalizado.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 source-git-commit: 94f818b7622e0f878d15ba30e2f07a169bd114c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Existen tres categorías de pruebas compatibles con las canalizaciones de Cloud 
 
 1. [Pruebas funcionales](/help/implementing/cloud-manager/functional-testing.md)
 
-   * Las pruebas funcionales forman parte de la fase de prueba de las fases de un [canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y opcionalmente parte de la fase de prueba de una [canalización que no es de producción.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * Las pruebas funcionales forman parte del paso de la fase de prueba de una [canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y, opcionalmente, parte de la fase de prueba de una [canalización que no es de producción.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
 1. [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md)
 
