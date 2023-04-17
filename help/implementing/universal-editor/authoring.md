@@ -1,72 +1,72 @@
 ---
 title: Creación de contenido con el editor universal
-description: Aprenda lo fácil e intuitivo que es para los autores de contenido crear contenido con el editor universal.
+description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
 # Creación de contenido con el editor universal {#authoring}
 
-Aprenda lo fácil e intuitivo que es para los autores de contenido crear contenido con el editor universal.
+Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 
 ## Introducción {#introduction}
 
-El editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
+El editor universal permite editar cualquier aspecto de todo tipo de contenido en todas las implementaciones para ofrecer experiencias excepcionales, aumentar la velocidad y proporcionar una experiencia de última generación a los desarrolladores.
 
-Para ello, proporciona a los autores de contenido una IU intuitiva que requiere una formación mínima para poder simplemente entrar y comenzar a editar contenido.
+Para ello, se proporciona una IU intuitiva que requiere una formación mínima para comenzar a editar contenido.
 
 >[!TIP]
 >
->Para obtener una introducción más detallada al Editor universal, consulte el documento [Introducción al Editor universal.](introduction.md)
+>Para obtener una introducción más detallada al editor universal, consulte el documento [Introducción al editor universal.](introduction.md)
 
 >[!NOTE]
 >
->El Editor universal aún está en desarrollo y actualmente no puede editar todos los tipos de contenido.
+>El editor universal aún está en desarrollo; actualmente no se puede editar cualquier tipo de contenido.
 
 ## Preparación de la aplicación {#prepare-app}
 
-Para poder crear contenido para una aplicación con el Editor universal, un desarrollador debe instrumentar la aplicación para que admita el editor.
+Para poder crear contenido para una aplicación con el editor universal, el desarrollador debe instrumentarla para que admita el editor.
 
 >[!TIP]
 >
->Consulte el documento [Introducción al Editor universal en AEM](getting-started.md) para ver un ejemplo de cómo configurar una aplicación de AEM para que funcione con el Editor universal.
+>Consulte el documento [Introducción al editor universal en AEM](getting-started.md) para ver un ejemplo de cómo configurar una aplicación de AEM para que funcione con el editor universal.
 
-## Iniciar sesión {#sign-in}
+## Inicio de sesión {#sign-in}
 
-Una vez instrumentada la aplicación para que funcione con el editor universal, deberá iniciar sesión en el editor universal. Necesitará un Adobe ID para iniciar sesión y [tienen acceso al editor universal.](getting-started.md#request-access)
+Una vez instrumentada la aplicación para que funcione con el editor universal, deberá iniciar sesión. Para el editor universal, necesitará el Adobe ID para iniciar sesión y [tener acceso.](getting-started.md#request-access)
 
-Una vez que haya iniciado sesión, introduzca la dirección URL de la página que desea editar en la [barra de direcciones.](#address-bar) para comenzar [editar el contenido.](#edit-content)
+Una vez que haya iniciado sesión, introduzca la URL de la página que desea editar en la [barra de direcciones](#address-bar) para comenzar a [editar el contenido.](#edit-content)
 
-## Comprender la IU {#ui}
+## Comprensión de la IU {#ui}
 
 La IU se divide en cuatro áreas principales.
 
-* [El encabezado del Experience Cloud](#experience-cloud-header)
-* [Encabezado del Editor universal](#universal-editor-header)
+* [El encabezado de Experience Cloud](#experience-cloud-header)
+* [El encabezado del editor universal](#universal-editor-header)
 * [El carril](#rail)
 * [El editor](#editor)
 
-![IU del editor universal](assets/ui.png)
+![La IU del editor universal](assets/ui.png)
 
-### Encabezado del Experience Cloud {#experience-cloud-header}
+### El encabezado de Experience Cloud {#experience-cloud-header}
 
-El encabezado del Experience Cloud siempre está presente en la parte superior de la pantalla. Es un anclaje que le dice dónde se encuentra dentro de Experience Cloud y le ayuda a navegar a otras aplicaciones de Experience Cloud.
+El encabezado de Experience Cloud siempre está presente en la parte superior de la pantalla. Es un anclaje que le dice dónde se encuentra dentro de Experience Cloud y le ayuda a navegar a otras aplicaciones.
 
-![El encabezado del Experience Cloud](assets/experience-cloud-header.png)
+![El encabezado de Experience Cloud](assets/experience-cloud-header.png)
 
 #### Experience Manager {#experience-manager}
 
-Seleccione el vínculo Adobe Experience Cloud que hay a la izquierda del encabezado para ir a la raíz de la solución de Experience Manager y acceder a herramientas como [Cloud Manager,](/help/onboarding/cloud-manager-introduction.md) [Cloud Acceleration Manager,](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) y [Distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Seleccione el vínculo de Adobe Experience Cloud a la izquierda del encabezado para ir a la raíz de la solución de Experience Manager y acceder a herramientas como [Cloud Manager,](/help/onboarding/cloud-manager-introduction.md) [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) y [Distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es)
 
 ![Botón Navegación global](assets/global-navigation.png)
 
 #### Organización {#organization}
 
-Muestra la organización en la que ha iniciado sesión. Toque o haga clic para cambiar a otra organización si la Adobe ID está asociada a varias.
+Muestra la organización en la que ha iniciado sesión. Toque o haga clic para cambiar a otra organización si su Adobe ID está asociado a varias.
 
 ![Indicador de organización](assets/organization.png)
 
@@ -84,27 +84,27 @@ El icono de ayuda proporciona acceso rápido a los recursos de aprendizaje y asi
 
 #### Notificaciones {#notifications}
 
-Este icono se mostrará con el número de asignaciones incompletas [notificaciones.](/help/implementing/cloud-manager/notifications.md)
+Este icono se mostrará con la cantidad de [notificaciones incompletas asignadas actualmente.](/help/implementing/cloud-manager/notifications.md)
 
 ![Notificaciones](assets/notifications.png)
 
 #### Propiedades del usuario {#user-properties}
 
-Toque o haga clic en el icono que represente al usuario para acceder a la configuración del usuario. Si no tiene una imagen de usuario configurada, se asignará aleatoriamente un icono.
+Toque o haga clic en el icono que representa a su usuario para acceder a la configuración. Si no tiene una imagen de usuario configurada, se le asignará un icono de forma aleatoria.
 
 ![Propiedades del usuario](assets/user-properties.png)
 
-### Encabezado del Editor universal {#universal-editor-header}
+### El encabezado del editor universal {#universal-editor-header}
 
-El encabezado del Editor universal siempre está presente en la parte superior de la pantalla, justo debajo [el encabezado del Experience Cloud.](#experience-cloud-header) Le permite acceder rápidamente a otra página para editarla y publicar la página actual.
+El encabezado del editor universal siempre está presente en la parte superior de la pantalla, justo debajo [del encabezado de Experience Cloud.](#experience-cloud-header) Le permite un acceso rápido a otra página para editarla y publicar la actual.
 
-![Encabezado del Editor universal](assets/universal-editor-header.png)
+![Encabezado del editor universal](assets/universal-editor-header.png)
 
-#### El menú Hamburger {#hamburger-menu}
+#### Menú de hamburguesa {#hamburger-menu}
 
-El menú hamburguesa aún no está implementado.
+El menú de hamburguesa aún no está implementado.
 
-![Menú Hambuger](assets/hamburger-menu.png)
+![Menú de hamburguesa](assets/hamburger-menu.png)
 
 #### Barra de ubicación {#Location-bar}
 
@@ -118,13 +118,13 @@ La barra de ubicación muestra la dirección de la página que está editando. T
 
 >[!NOTE]
 >
->Todas las páginas que desee editar con el Editor universal deben [instrumentado para admitir el Editor universal.](getting-started.md)
+>Todas las páginas que desee editar deben [instrumentarse para admitir el editor universal.](getting-started.md)
 
-#### Abrir vista previa de la aplicación {#open-app-preview}
+#### Apertura de la vista previa de la aplicación {#open-app-preview}
 
-Toque o haga clic en el icono de vista previa de la aplicación abierta para abrir la página que esté editando en su propio explorador, sin tener que usar el editor para obtener una vista previa de los cambios.
+Toque o haga clic en el icono Abrir vista previa de la aplicación para abrir la página que esté editando en su propio explorador, sin tener que usar el editor para previsualizar los cambios.
 
-![Abrir vista previa de la aplicación](assets/open-app-preview.png)
+![Apertura de la vista previa de la aplicación](assets/open-app-preview.png)
 
 >[!TIP]
 >
@@ -138,17 +138,17 @@ Toque o haga clic en el botón de publicación para publicar los cambios en el c
 
 >[!TIP]
 >
->Consulte el documento [Publicación de contenido con el Editor visual universal](publishing.md) para obtener más información sobre la publicación con el editor universal.
+>Consulte el documento [Publicación de contenido con el editor visual universal](publishing.md) para obtener más información sobre la publicación con el editor universal.
 
 ### El carril {#rail}
 
-El carril siempre está presente en la parte izquierda del editor. Permite cambiar fácilmente el editor entre el modo de previsualización y el de edición.
+El carril siempre está presente en la parte izquierda del editor. Permite conmutar fácilmente el editor entre el modo de previsualización y el de edición.
 
 ![El carril](assets/rail.png)
 
 #### Modo de vista previa {#preview-mode}
 
-En el modo de vista previa, la página representada en el editor tal como se vería en el servicio publicado. Esto permite al autor del contenido navegar por el contenido haciendo clic en los vínculos, etc.
+En el modo de vista previa, la página se procesa en el editor tal como se vería en el servicio publicado. Esto permite al autor del contenido navegar por el contenido haciendo clic en los vínculos, etc.
 
 ![Modo de vista previa](assets/preview-mode.png)
 
@@ -158,15 +158,15 @@ En el modo de vista previa, la página representada en el editor tal como se ver
 
 #### Modo de edición {#edit-mode}
 
-En el modo de edición, la página se representa en el editor, pero el autor del contenido puede hacer clic para seleccionar el contenido que desea editar. Este es el modo predeterminado del editor cuando se carga una página.
+En el modo de edición, la página se procesa en el editor, pero el autor del contenido puede hacer clic para seleccionar el contenido que desea editar. Este es el modo predeterminado del editor cuando se carga una página.
 
-Modo de ![edición](assets/edit-mode.png)
+![Modo de edición](assets/edit-mode.png)
 
-### Editor {#editor}
+### El Editor {#editor}
 
-El editor ocupa la mayor parte de la ventana y es donde se encuentra la página especificada en [la barra de direcciones](#address-bar) se procesa.
+El editor ocupa la mayor parte de la ventana y es donde se procesa la página especificada en [la barra de direcciones](#address-bar).
 
-Dependiendo de si el editor se encuentra en [modo de edición](#edit-mode) o [modo de vista previa,](#edit-mode) el contenido puede editarse o navegarse, respectivamente.
+Dependiendo de si el editor se encuentra en [modo de edición](#edit-mode) o [modo de vista previa,](#edit-mode) el contenido puede editarse o se puede navegar por él, respectivamente.
 
 ![Editor](assets/editor.png)
 
@@ -176,25 +176,25 @@ La edición de contenido es sencilla e intuitiva. En [modo de edición,](#edit-m
 
 ![El contenido editable se resalta con un cuadro azul](assets/editable-content.png)
 
-Simplemente toque o haga clic en el contenido del cuadro azul para iniciar un editor in-situ para realizar los cambios. Pulse Intro o vuelva para guardar los cambios.
+Simplemente, toque o haga clic en el contenido dentro del cuadro azul para editar y realizar los cambios. Pulse Intro o Volver para guardar los cambios.
 
 ![Edición de contenido](assets/editing-content.png)
 
-Tenga en cuenta que, en el modo de edición, pulsar o hacer clic en el contenido intenta seleccionarlo para su edición. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa.](#preview-mode)
+Tenga en cuenta que, en el modo de edición, que si toca o hace clic en el contenido se selecciona para editar. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa.](#preview-mode)
 
 ## Vista previa del contenido {#previewing-content}
 
-Cuando haya terminado de editar contenido, a menudo querrá navegarlo para ver su aspecto en el contenido de otras páginas. En [modo de vista previa](#preview-mode) puede hacer clic en vínculos para navegar por el contenido como lo haría un lector. El contenido se representa en el editor tal como se publicaría.
+Cuando haya terminado de editar el contenido, a menudo querrá navegar por él para ver cómo queda dentro del contenido de otras páginas. En el [modo de vista previa](#preview-mode), puede hacer clic en los vínculos para navegar por el contenido como lo haría un lector. El contenido se muestra en el editor tal y como se publicaría.
 
-Tenga en cuenta que, en el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo haría para un lector del contenido. Si desea seleccionar el contenido que desea editar, cambie a [modo de edición.](#edit-mode)
+Tenga en cuenta que, en el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo haría con un lector. Si desea seleccionar contenido para editar, cambie a [modo de edición.](#edit-mode)
 
 ## Recursos adicionales {#additional-resources}
 
-Para obtener más información sobre el Editor universal, consulte estos documentos.
+Para obtener más información acerca del editor universal, consulte estos documentos.
 
-* [Introducción al Editor universal](introduction.md) : Descubra cómo el Editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
-* [Publicación de contenido con el Editor universal](publishing.md) : Descubra cómo el Editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
-* [Introducción al Editor universal en AEM](getting-started.md) : Obtenga información sobre cómo acceder al Editor universal y cómo instrumentar la primera aplicación de AEM para utilizarla.
-* [Arquitectura de editor universal](architecture.md) - Obtenga información sobre la arquitectura del Editor universal y cómo fluyen los datos entre sus servicios y capas.
-* [Atributos y tipos](attributes-types.md) : Obtenga información sobre los atributos y tipos de datos que requiere el Editor universal.
-* [Autenticación del editor universal](authentication.md) - Obtenga información sobre cómo se autentica el editor universal.
+* [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar aspectos de cualquier contenido en todo tipo de implementación para ofrecer experiencias excepcionales, aumentar la velocidad y proporcionar una experiencia de última generación a los desarrolladores.
+* [Publicación de contenido con el editor universal](publishing.md): descubra cómo se publica contenido con el editor visual universal y cómo sus aplicaciones pueden gestionar este contenido publicado.
+* [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder y cómo instrumentar la primera aplicación de AEM para utilizar el editor universal.
+* [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
+* [Atributos y tipos](attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
+* [Autenticación del editor universal](authentication.md): obtenga información sobre cómo se autentica el editor universal.
