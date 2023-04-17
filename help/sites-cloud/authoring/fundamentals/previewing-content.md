@@ -2,9 +2,9 @@
 title: Vista previa del contenido
 description: Aprenda a utilizar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: dc55bd43641c03dd022a891c8b85569d9be28ebe
+source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '277'
 ht-degree: 100%
 
 ---
@@ -16,11 +16,7 @@ AEM ofrece un servicio de vista previa de Sites que permite a los desarrolladore
 
 Facilita la previsualización de experiencias de página que, de otra manera, no serían visibles desde el entorno de creación, como transiciones de página y otro contenido solo de publicación.
 
-Para obtener más información acerca de los entornos de vista previa, consulte el documento [Administración de entornos.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
-
->[!NOTE]
->
->La publicación de un fragmento de experiencia para previsualización básicamente sigue el mismo procedimiento que para una página, aunque desde la consola o el editor de fragmentos de experiencias.
+Para obtener más información acerca de los entornos de vista previa, consulte el documento [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Publicación de contenido para su previsualización {#publishing-content-to-preview}
 
@@ -52,27 +48,10 @@ Cancelar la publicación de contenido desde el entorno de **Vista previa** es b�
 
 La única diferencia es que puede seleccionar el **Destino** a **Vista previa**.
 
-## Configuración de OSGi para el nivel de vista previa {#configuring-osgi-settings-for-the-preview-tier}
+## Información adicional {#further-information}
 
-Los valores de las propiedades OSGi del nivel de vista previa se heredan del nivel de publicación. Sin embargo, los valores del nivel de vista previa pueden ser distintos del de publicación, configurando el parámetro `service` al valor `preview`. El siguiente ejemplo de una propiedad OSGi determina la dirección URL de un punto de conexión de integración.
+Consulte también lo siguiente:
 
-```
-[
-{
-"name":"INTEGRATION_URL",
-"type":"string",
-"value":"http://s2.integrationvendor.com",
-"service": "preview"
-}
-]
-```
+* [Configuración de OSGi para el nivel de vista previa](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
-Para obtener más información, consulte [esta sección](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) de la documentación de configuración de OSGi.
-
-## Depuración de la vista previa mediante Developer Console {#debugging-preview-using-the-developer-console}
-
-Siga estos pasos para depurar el nivel de vista previa mediante Developer Console:
-
-* En [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), seleccione **-- Todas las previsualizaciones --** o un entorno de producción que incluya **prev** en el nombre
-* Genere la información relevante para la instancia de vista previa
-Consulte [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información sobre cómo obtener las direcciones URL de los entornos.
+* [Depuración de la vista previa mediante Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)

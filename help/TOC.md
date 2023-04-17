@@ -8,10 +8,10 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ca28ed2b9d566015bd62e54d27e69629650f9e82
+source-git-commit: 968cf51b3c13ecba7230a222edf695fdef69450d
 workflow-type: tm+mt
-source-wordcount: '4038'
-ht-degree: 98%
+source-wordcount: '4047'
+ht-degree: 99%
 
 ---
 
@@ -545,7 +545,7 @@ ht-degree: 98%
             + [Creación de un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
             + [Creación de temáticas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
             + [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
-            + [Libro de la Cumbre](/help/forms/summit-2023-workbook.md)
+            + [Libro de trabajo de la Cumbre](/help/forms/summit-2023-workbook.md)
       + Crear formularios adaptables: componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)
@@ -933,6 +933,8 @@ ht-degree: 98%
    + Nivel de Author {#author-tier}
       + [Acceso al nivel de Author](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Protección del nivel de Author](/help/implementing/author-tier/securing-the-author-tier.md)
+   + Nivel de vista previa {#preview-tier}
+      + [Configuración de OSGi para el nivel de vista previa](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Información general sobre la distribución de contenido {#content-delivery}
       + [Flujo de distribución de contenido](/help/implementing/dispatcher/overview.md)
       + [Dispatcher en la nube](/help/implementing/dispatcher/disp-overview.md)
@@ -967,10 +969,10 @@ ht-degree: 98%
       + [AEM as a Cloud Service y las directrices de accesibilidad web](/help/compliance/accessibility/web-accessibility.md)
       + [Guía rápida de WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Editor universal {#universal-editor}
-   + [Introducción al Editor universal](/help/implementing/universal-editor/introduction.md)
+   + [Introducción al editor universal](/help/implementing/universal-editor/introduction.md)
    + [Creación de contenido con el editor universal](/help/implementing/universal-editor/authoring.md)
-   + [Publicación de contenido con el Editor universal](/help/implementing/universal-editor/publishing.md)
-   + [Introducción al Editor universal en AEM](/help/implementing/universal-editor/getting-started.md)
-   + [Arquitectura de editor universal](/help/implementing/universal-editor/architecture.md)
+   + [Publicación de contenido con el editor universal](/help/implementing/universal-editor/publishing.md)
+   + [Introducción al editor universal en AEM](/help/implementing/universal-editor/getting-started.md)
+   + [Arquitectura del editor universal](/help/implementing/universal-editor/architecture.md)
    + [Atributos y tipos](/help/implementing/universal-editor/attributes-types.md)
    + [Autenticación del editor universal](/help/implementing/universal-editor/authentication.md)
