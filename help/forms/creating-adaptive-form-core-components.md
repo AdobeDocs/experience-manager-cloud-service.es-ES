@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo crear un formulario adaptable medi
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: ae208e9ac35c3c464d9beeaa3bc2bddc0ecf52bb
+source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 100%
+source-wordcount: '1496'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Antes de empezar, obtenga información sobre el tipo de componentes de Forms dis
 
 Para crear un formulario adaptable, es necesario lo siguiente:
 
-* **Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un nuevo programa, los componentes principales de formularios adaptables ya están habilitados para su entorno. Si tiene un entorno de formularios as a Cloud Service basado en el Arquetipo 39 o anterior, [Habilite los componentes principales de formularios adaptables para su entorno](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Al habilitar los componentes principales para su entorno, la plantilla y la temática de lienzo **Formularios adaptables (componente principal)** se añaden a su entorno.
+* **Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un nuevo programa, los componentes principales de formularios adaptables ya están habilitados para su entorno. Si tiene un entorno de formularios as a Cloud Service basado en el Arquetipo 39 o anterior, [Habilite los componentes principales de formularios adaptables para su entorno](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Al habilitar los componentes principales para su entorno, la plantilla y la temática de lienzo **Formularios adaptables (componente principal)** se añaden a su entorno. Si la versión del SDK de AEM anterior a 2023.02.0, [asegúrese de que tiene `prerelease` indicador habilitado en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) ya que los componentes principales de Forms adaptables formaban parte de la versión preliminar anterior a la versión 2023.02.0.
 
 * **Una plantilla de formulario adaptable**: Una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece opciones para definir una temática y una acción de envío. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. Por ejemplo, enviar los datos recopilados a una fuente de datos. El servicio en la nube proporciona una plantilla OOTB, denominada en blanco:
 
