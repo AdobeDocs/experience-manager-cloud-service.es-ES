@@ -2,10 +2,10 @@
 title: Introducción a los nombres de dominio personalizados
 description: La interfaz de usuario de Cloud Manager le permite agregar a usted mismo un dominio personalizado para identificar su sitio con un nombre único.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
+source-git-commit: 5649f083c55cd84296f38acbff3f395e77a7e422
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 100%
+source-wordcount: '672'
+ht-degree: 82%
 
 ---
 
@@ -37,13 +37,13 @@ Puede comprar un nombre de dominio a través de un registrador de nombres de dom
 
 El uso de nombres de dominio personalizados con AEMaaCS conlleva varias limitaciones.
 
-* Los nombres de dominio personalizados se admiten en Cloud Manager tanto para los servicios de publicación como de vista previa para los programas de Sites. Los dominios personalizados del lado del autor no son compatibles.
+* Cloud Manager admite nombres de dominio personalizados para los servicios de publicación y vista previa para los programas Sitios . No se admiten los dominios personalizados para servicios de autor.
 * Cada entorno de Cloud Manager puede alojar hasta un máximo de 500 dominios personalizados por entorno.
-* AEM as a Cloud Service no admite dominios comodín.
-* Antes de agregar un nombre de dominio personalizado, debe instalar en el programa un certificado SSL válido que contenga el nombre de dominio personalizado. Consulte Agregar un certificado SSL para obtener más información.
 * Los nombres de dominio no se pueden agregar a entornos mientras haya una canalización en ejecución asociada a esos entornos.
+* El mismo nombre de dominio no se puede usar en más de un entorno.
 * Solo se puede agregar un nombre de dominio a la vez.
-* No se puede usar el mismo nombre de dominio en más de un entorno.
+* AEM as a Cloud Service no admite dominios comodín como `*.example.com`.
+* Antes de agregar un nombre de dominio personalizado, debe instalar en el programa un certificado SSL válido que contenga el nombre de dominio personalizado (los certificados comodín son válidos). Consulte [Adición de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obtener más información.
 
 >[!NOTE]
 >
