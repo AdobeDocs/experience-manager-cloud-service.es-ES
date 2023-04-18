@@ -5,10 +5,10 @@ landing-page-description: Aprenda a administrar fragmentos de contenido desde la
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
+source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 85%
+source-wordcount: '1051'
+ht-degree: 80%
 
 ---
 
@@ -68,22 +68,33 @@ Aquí se pueden ver tres áreas principales:
       * Al utilizar el ratón sobre los encabezados de columna, se mostrarán un selector de acciones desplegable y controles deslizantes de ancho. Esto le permite:
          * Ordenar: seleccione la acción adecuada, ya sea ascendente o descendente. Así se ordenará toda la tabla según esa columna. La ordenación solo está disponible en las columnas adecuadas.
          * Cambiar el tamaño de la columna mediante los controles deslizantes de acción o de anchura
-      * Puede [seleccionar uno o varios fragmentos de contenido para mostrar las acciones disponibles](#actions-selected-content-fragment)
-   * **[Crear](#creating-new-content-fragment)** un nuevo fragmento de contenido
-   * [Filtrar](#filtering-fragments) los fragmentos de contenido de acuerdo con una selección de predicados y guardar el filtro para uso futuro
-   * [Buscar](#searching-fragments) los fragmentos de contenido
-   * [Personalice la vista de tabla para mostrar columnas de información seleccionadas](#select-available-columns)
-   * Use **Abrir en Recursos** para abrir directamente la ubicación actual en la consola **Recursos**
 
-      >[!NOTE]
-      >
-      >La consola **Recursos** se utiliza para acceder a recursos como imágenes, vídeos, etc.  Se puede acceder a esta consola:
-      >
-      >* usando el vínculo **Abrir en Recursos** (en la consola Fragmentos de contenido)
-      >* directamente desde el panel de navegación global
+## Acciones {#actions}
+
+Dentro de la consola hay una serie de acciones que puede utilizar, ya sea directamente o después de seleccionar un fragmento específico:
+
+* Varias acciones son directamente [disponible desde la consola](#available-actions)
+* Puede [seleccione uno o varios fragmentos de contenido para mostrar las acciones adecuadas](#actions-selected-content-fragment)
+
+### Acciones (sin seleccionar) {#actions-unselected}
+
+Algunas acciones están disponibles desde la consola, sin seleccionar un fragmento de contenido específico:
+
+* **[Crear](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** un nuevo fragmento de contenido
+* [Filtrar](#filtering-fragments) los fragmentos de contenido de acuerdo con una selección de predicados y guardar el filtro para uso futuro
+* [Buscar](#searching-fragments) los fragmentos de contenido
+* [Personalice la vista de tabla para mostrar columnas de información seleccionadas](#select-available-columns)
+* Use **Abrir en Recursos** para abrir directamente la ubicación actual en la consola **Recursos**
+
+   >[!NOTE]
+   >
+   >La consola **Recursos** se utiliza para acceder a recursos como imágenes, vídeos, etc.  Se puede acceder a esta consola:
+   >
+   >* usando el vínculo **Abrir en Recursos** (en la consola Fragmentos de contenido)
+   >* directamente desde el panel de navegación global
 
 
-## Acciones para un fragmento de contenido (seleccionado) {#actions-selected-content-fragment}
+### Acciones para un fragmento de contenido (seleccionado) {#actions-selected-content-fragment}
 
 Si se selecciona un fragmento específico, se abrirá una barra de herramientas centrada en las acciones disponibles para dicho fragmento. También puede seleccionar varios fragmentos: la selección de acciones se ajustará en consecuencia.
 
@@ -146,12 +157,6 @@ Al igual que con otras consolas, puede configurar las columnas que son visibles 
 Se mostrará una lista de columnas que puede ocultar o mostrar:
 
 ![Consola Fragmentos de contenido: configuración de columna](assets/cfc-console-column-selection.png)
-
-## Creación de un nuevo fragmento de contenido {#creating-new-content-fragment}
-
-La selección **Crear** abre el diálogo compacto **Nuevo fragmento de contenido**:
-
-![Consola Fragmentos de contenido: Creación de un nuevo fragmento](assets/cfc-console-create.png)
 
 ## Filtrado de fragmentos {#filtering-fragments}
 
