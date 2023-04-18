@@ -2,10 +2,10 @@
 title: Introducción a los programas de zona protegida
 description: Descubra cuáles son las diferencias entre los programas de zona protegida y los programas de producción.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -69,3 +69,9 @@ Los entornos de un programa de zona protegida hibernan automáticamente después
 Los programas de zona protegida se eliminan después de seis meses de estar en modo de hibernación continua, después de lo cual se pueden volver a crear.
 
 Consulte [Entornos de zona protegida en hibernación y dehibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obtener más información.
+
+### Sin asistencia técnica {#no-support}
+
+Dado que un programa de simulación de pruebas suele crearse para servir a los fines de formación, ejecución de demostraciones, habilitación o prueba de conceptos (POC), no hay asistencia técnica disponible para los problemas experimentados en un programa de simulación de pruebas.
+
+Si experimenta problemas al crear y administrar sus programas de simulación de pruebas, sigue estando dentro del ámbito de la asistencia técnica.
