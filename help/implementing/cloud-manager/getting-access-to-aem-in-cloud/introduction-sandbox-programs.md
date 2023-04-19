@@ -2,10 +2,10 @@
 title: Introducción a los programas de zona protegida
 description: Descubra cuáles son las diferencias entre los programas de zona protegida y los programas de producción.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
+source-git-commit: e43dd379169b4048347ecce6d10652e9f8835333
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '514'
+ht-degree: 81%
 
 ---
 
@@ -64,9 +64,13 @@ Consulte el documento [Actualizar el entorno](/help/implementing/cloud-manager/m
 
 ### Hibernación y eliminación {#hibernation}
 
-Los entornos de un programa de zona protegida hibernan automáticamente después de ocho horas de inactividad. Una vez hibernados, se puede cancelar manualmente la hibernación.
+Los entornos de un programa de zona protegida hibernan automáticamente tras ocho horas de inactividad. Una vez hibernados, se puede cancelar manualmente la hibernación.
 
-Los programas de zona protegida se eliminan después de seis meses de estar en modo de hibernación continua, después de lo cual se pueden volver a crear.
+Los entornos de espacio aislado se eliminan después de seis meses continuos de hibernación, tras los cuales se pueden volver a crear.
+
+>[!NOTE]
+>
+>Solo los entornos de simulación de pruebas se eliminan automáticamente después de seis meses de hibernación continua. Se conserva el programa de simulación de pruebas con su repositorio y código.
 
 Consulte [Entornos de zona protegida en hibernación y dehibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obtener más información.
 
