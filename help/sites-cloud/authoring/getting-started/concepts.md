@@ -2,10 +2,10 @@
 title: Conceptos de creación
 description: Conceptos sobre la creación de contenido en AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 100%
+source-wordcount: '385'
+ht-degree: 81%
 
 ---
 
@@ -33,9 +33,9 @@ El creador trabaja en lo que se conoce como **entorno de creación**. Esto propo
 
 >[!NOTE]
 >
->Su cuenta necesita tener los derechos de acceso correspondientes para crear, editar o publicar contenido.
+>Su cuenta necesita los derechos de acceso adecuados para crear, editar o publicar contenido.
 
-Según la configuración de su instancia y sus derechos personales de acceso, puede realizar muchas tareas en el contenido, como (entre otras):
+Según la configuración de su instancia y sus derechos de acceso personales, puede realizar muchas tareas en el contenido, incluidas (entre otras):
 
 * Generar contenido nuevo o editar contenido existente en una página.
 * Utilizar plantillas predefinidas para crear páginas de contenido nuevo.
@@ -51,6 +51,12 @@ Asimismo, hay tareas administrativas que le ayudan a administrar su contenido:
 >[!NOTE]
 >
 >AEM también se administra desde el entorno de creación.
+
+## Vista previa del contenido {#previewing-content}
+
+AEM también ofrece un servicio de vista previa de Sites que permite a los desarrolladores y autores de contenido obtener una vista previa de la experiencia final de un sitio web antes de que llegue al entorno de publicación y esté disponible públicamente.
+
+Consulte [Vista previa del contenido](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obtener más información.
 
 ## Entorno de publicación {#publish-environment}
 
