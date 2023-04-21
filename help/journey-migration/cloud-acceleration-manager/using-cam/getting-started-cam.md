@@ -5,7 +5,7 @@ exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 17%
+ht-degree: 23%
 
 ---
 
@@ -41,8 +41,8 @@ Siga los pasos a continuación para navegar hasta Cloud Acceleration Manager (CA
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_gettingstarted"
 >title="Introducción a Cloud Acceleration Manager"
->abstract="Cree el proyecto e inicie el recorrido para AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="Ventajas de utilizar Cloud Acceleration Manager"
+>abstract="Cree el proyecto y comience su recorrido hacia AEM as a Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=es" text="Ventajas del uso de Cloud Acceleration Manager"
 
 La página de aterrizaje de Cloud Acceleration Manager (CAM) le permite crear y editar varios proyectos.
 
@@ -97,4 +97,4 @@ Siga los pasos a continuación para eliminar el proyecto:
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya está listo para pasar a revisar el siguiente paso en la [Fase de preparación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
+Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya está listo para pasar a revisar el siguiente paso en la [Fase de preparación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=es).

@@ -69,7 +69,7 @@ En la fase de ingesta, para aplicar el contenido delta sobre el contenido actual
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
 >title="Caducidad de un conjunto de migración"
->abstract="Obtenga información acerca de la caducidad de un conjunto de migración."
+>abstract="Obtenga información sobre la caducidad de un conjunto de migración."
 
 Todos los conjuntos de migraciones terminarán después de un prolongado período de inactividad de aproximadamente 90 días. Una vez que los indicadores se muestran en la tarjeta del proyecto y en las filas de la tabla de trabajo de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. El tiempo de caducidad puede ampliarse fácilmente si se actúa sobre la base de la migración establecida:
 

@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 3%
+ht-degree: 24%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Copia de seguridad y restauración"
->abstract="AEM as a Cloud Service puede restaurar la aplicación completa (código y contenido) de un cliente a tiempos específicos y predeterminados en los últimos siete días, sustituyendo lo que estaba en producción. Esta función solo debe usarse cuando haya problemas graves con el código o el contenido. Se perderán los datos recientes entre el momento de la copia de seguridad restaurada y el presente. El ensayo también se restaurará a la versión antigua."
+>abstract="AEM as a Cloud Service puede restaurar la aplicación completa (código y contenido) de un cliente de horas específicas y predeterminadas de los últimos siete días, sustituyendo lo que estaba en producción. Esta función solo debe usarse cuando hay problemas graves con el código o el contenido. Se perderán los datos recientes entre el momento de la copia de seguridad restaurada y el presente. El ensayo también se restaurará a la versión antigua."
 
 En caso de que se dañen los datos o el contenido, AEM as a Cloud Service puede restaurar la aplicación completa (código y contenido) de un cliente a tiempos específicos y predeterminados en los últimos siete días, sustituyendo lo que estaba en producción.
 Si la implementación de un cliente, es decir, el código de aplicación implementado está dañado o está dañado, es preferible corregirlo y avanzar a una nueva versión en lugar de restaurarlo desde la copia de seguridad. La copia de seguridad se realiza de una manera que no afecta al rendimiento en tiempo de ejecución de una aplicación.
 
 >[!CAUTION]
 >
->Esta función solo debe usarse cuando haya problemas graves con el código o el contenido. Se perderán los datos recientes entre el momento de la copia de seguridad restaurada y el presente. El ensayo también se restaurará a la versión antigua.
+>Esta función solo debe usarse cuando hay problemas graves con el código o el contenido. Se perderán los datos recientes entre el momento de la copia de seguridad restaurada y el presente. El ensayo también se restaurará a la versión antigua.
 
 ## Usos {#how-to-use}
 

@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
-ht-degree: 41%
+ht-degree: 48%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 41%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
->title="Uso del Analizador de prácticas recomendadas"
->abstract="Revise la documentación para utilizar el Analizador de prácticas recomendadas (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Seminario web] Presentación de las herramientas para acelerar el Recorrido a Adobe Experience Manager as a Cloud Service"
+>title="Uso de Best Practices Analyzer"
+>abstract="Revise la documentación para utilizar Best Practices Analyzer (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe de Best Practices Analyzer se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Seminario web] Presentación de las herramientas para acelerar el recorrido a Adobe Experience Manager as a Cloud Service"
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
@@ -43,10 +43,10 @@ Siga la sección siguiente para comprender las consideraciones importantes para 
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_download"
->title="Descargar el Analizador de prácticas recomendadas"
->abstract="El Analizador de prácticas recomendadas se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM)."
+>title="Descargar Best Practices Analyzer"
+>abstract="Best Practices Analyzer se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM)."
 
-El Analizador de prácticas recomendadas se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de Adobe Experience Manager (AEM) de origen.
+Best Practices Analyzer se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de Adobe Experience Manager (AEM) de origen.
 
 >[!NOTE]
 >Descargue el Analizador de prácticas recomendadas de la sección [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) portal.
@@ -125,9 +125,9 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
 >title="Interpretación del informe de Best Practices Analyzer"
->abstract="Existen dos opciones para ver los resultados de los informes de BPA: IU y CSV. Cuando la herramienta Analizador de prácticas recomendadas se ejecuta en la instancia de AEM, el informe Interfaz de usuario se muestra como resultados en la ventana de la herramienta. El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Revisión del informe de Análisis de prácticas recomendadas"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Explicación de las categorías de informes de Best Practices Analyzer"
+>abstract="Existen dos opciones para ver los resultados de los informes de BPA: IU y CSV. Cuando la herramienta Best Practices Analyzer se ejecuta en la instancia de AEM, el informe IU se muestra en los resultados de la ventana de las herramientas. El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=es#analysis-report" text="Revisar el informe de Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=es" text="Explicación de las categorías del informe de Best Practices Analyzer"
 
 Cuando la herramienta Analizador de prácticas recomendadas se ejecuta en la instancia de AEM, el informe se muestra como resultados en la ventana de herramientas.
 

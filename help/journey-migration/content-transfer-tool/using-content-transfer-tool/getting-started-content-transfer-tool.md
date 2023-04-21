@@ -17,11 +17,11 @@ ht-degree: 22%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
 >title="Descargar"
->abstract="La herramienta de transferencia de contenido se puede descargar como archivo ZIP desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM). Asegúrese de descargar la versión más reciente."
+>abstract="La herramienta de transferencia de contenido se puede descargar como un archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM). Asegúrese de descargar la última versión."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es" text="Notas de la versión"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Portal de distribución de software"
 
-La herramienta de transferencia de contenido se puede descargar como archivo ZIP desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de Adobe Experience Manager (AEM) de origen. Asegúrese de descargar la versión más reciente. Para obtener más información sobre la versión más reciente, consulte [Notas de la versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
+La herramienta de transferencia de contenido se puede descargar como un archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de Adobe Experience Manager (AEM) de origen. Asegúrese de descargar la última versión. Para obtener más información sobre la versión más reciente, consulte [Notas de la versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
 Solo se admitirá la versión 2.0.0 y posteriores, y es aconsejable utilizar la versión más reciente.
 
@@ -58,17 +58,17 @@ A veces es difícil comprender los problemas de conexión SSL/TLS. Para solucion
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
 >title="Ejecución de la herramienta de transferencia de contenido"
->abstract="Aprenda a utilizar la herramienta de transferencia de contenido para migrar el contenido a AEM as a Cloud Service (creación/publicación)."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Ver demostración"
+>abstract="Obtenga información acerca de cómo utilizar la herramienta de transferencia de contenido para migrar el contenido a AEM as a Cloud Service (autor/publicación)."
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Consulte la demostración"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=es#migration" text="Tutorial: uso de la herramienta de transferencia de contenido"
 
 La siguiente sección se aplica a la nueva versión de la herramienta de transferencia de contenido. Siga esta sección para aprender a utilizar la herramienta de transferencia de contenido para migrar contenido a AEM as a Cloud Service:
 
-### Fase de configuración de extracción {#extraction-setup-phase}
+### Fase de configuración de la extracción {#extraction-setup-phase}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction_setup"
->title="Fase de configuración de extracción"
+>title="Fase de configuración de la extracción"
 >abstract="Obtenga información sobre cómo crear y administrar un conjunto de migración y cómo copiar la clave de extracción."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=es#migration" text="Tutorial: uso de la herramienta de transferencia de contenido"
 
@@ -104,8 +104,8 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
->title="Rellenado del conjunto de migración"
->abstract="Después de crear un conjunto de migración, debe rellenarse con el contenido de la instancia de origen que debe moverse al entorno de AEM as a Cloud Service. Para ello, la herramienta de transferencia de contenido debe instalarse en la instancia de origen."
+>title="Rellenar un conjunto de migración"
+>abstract="Después de crear un conjunto de migración, es necesario rellenarlo con el contenido de la instancia de origen que debe trasladarse al entorno de AEM as a Cloud Service. Para ello, la herramienta de transferencia de contenido debe estar instalada en la instancia de origen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=es" text="Extracción de contenido"
 
 Para rellenar el conjunto de migración creado en Cloud Acceleration Manager, debe instalar la última versión de la herramienta de transferencia de contenido en la instancia de Adobe Experience Manager (AEM) de origen. Siga esta sección para aprender a rellenar el conjunto de migración.

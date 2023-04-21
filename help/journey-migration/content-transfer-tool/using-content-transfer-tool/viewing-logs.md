@@ -15,11 +15,11 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_logs"
 >title="Visualización de registros"
->abstract="Una vez finalizada la extracción de la ingesta, compruebe los registros para ver si hay errores o advertencias. Cualquier error debe resolverse de inmediato, ya sea subsanando los problemas notificados o contactando con el servicio de atención al cliente de Adobe."
+>abstract="Una vez finalizada la extracción de la ingesta, compruebe los registros para detectar si hay errores/advertencias. Cualquier error debe solucionarse inmediatamente, ya sea abordando los problemas notificados o poniéndose en contacto con el servicio de soporte técnico de Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=es#troubleshooting" text="Solución de problemas"
->additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/es/enterprise/using/support-for-experience-cloud.ug.html" text="Contactar con el servicio de soporte técnico de Adobe"
+>additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html?lang=es" text="Contactar con el servicio de soporte técnico de Adobe"
 
-Una vez completado cada paso (extracción e ingesta), compruebe los registros y busque errores.  Cualquier error debe resolverse de inmediato, ya sea subsanando los problemas notificados o contactando con el servicio de atención al cliente de Adobe.
+Una vez completado cada paso (extracción e ingesta), compruebe los registros y busque errores.  Cualquier error debe solucionarse inmediatamente, ya sea abordando los problemas notificados o poniéndose en contacto con el servicio de soporte técnico de Adobe.
 
 ## Pasos para ver registros {#viewing-logs}
 

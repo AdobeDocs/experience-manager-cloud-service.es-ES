@@ -1,5 +1,5 @@
 ---
-title: Ventajas de utilizar Cloud Acceleration Manager
+title: Ventajas del uso de Cloud Acceleration Manager
 description: Esta página destaca las ventajas clave del uso de Cloud Acceleration Manager.
 exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
 source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
@@ -9,15 +9,15 @@ ht-degree: 34%
 
 ---
 
-# Ventajas de utilizar Cloud Acceleration Manager {#benefits-cam}
+# Ventajas del uso de Cloud Acceleration Manager {#benefits-cam}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_benefits"
->title="Ventajas de utilizar Cloud Acceleration Manager"
->abstract="Cloud Acceleration Manager (CAM) proporciona a sus equipos una experiencia guiada con prácticas recomendadas por Adobe y metodología para ayudar a sus equipos a planificar, implementar y poner en marcha con confianza."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=es" text="Introducción a Cloud Acceleration Manager"
+>title="Ventajas del uso de Cloud Acceleration Manager"
+>abstract="Cloud Acceleration Manager (CAM) proporciona a sus equipos una experiencia guiada con las prácticas y metodología recomendadas por Adobe para ayudar a sus equipos a planificar, implementar y ponerse en marcha con confianza."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=es" text="Introducción a Cloud Acceleration Manager"
 
-Con una amplia gama de requisitos y personalizaciones empresariales, el paso a la nube puede ser un proyecto involucrado. Cloud Acceleration Manager (CAM) proporciona a sus equipos una experiencia guiada con prácticas recomendadas por Adobe y metodología para ayudar a sus equipos a planificar, implementar y poner en marcha con confianza.
+Con una amplia gama de requisitos y personalizaciones empresariales, el paso a la nube puede ser un proyecto involucrado. Cloud Acceleration Manager (CAM) proporciona a sus equipos una experiencia guiada con las prácticas y metodología recomendadas por Adobe para ayudar a sus equipos a planificar, implementar y ponerse en marcha con confianza.
 
 Las ventajas clave del uso de Cloud Acceleration Manager son:
 

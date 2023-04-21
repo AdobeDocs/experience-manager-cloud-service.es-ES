@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 25%
+ht-degree: 39%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 25%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="Solución de problemas AEM"
->abstract="Revise las prácticas recomendadas para el desarrollo continuo y administre los registros junto con herramientas como Developer Console y CRXDE Lite para ayudar a solucionar problemas con AEM"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Acceder y administrar registros"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM herramientas de desarrollo as a Cloud Service"
+>title="Solución de problemas de AEM"
+>abstract="Revise las prácticas recomendadas para el desarrollo continuo y administre los registros junto con herramientas como Developer Console y CRXDE Lite para ayudar a solucionar problemas con AEM."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=es" text="Acceder y administrar registros"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
 
 Esta es la última parte del recorrido, por lo que aprenderá a supervisar los problemas y a mejorar el rendimiento una vez completada la migración. Debe garantizar la limpieza de los archivos temporales, revisar las prácticas recomendadas para el desarrollo continuo y administrar los registros.
 
@@ -58,8 +58,8 @@ Consulte [Acceso y administración de registros](/help/implementing/cloud-manage
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="Ayuda y asistencia"
->abstract="Póngase en contacto con nuestro equipo de asistencia AEM para obtener aclaraciones o para solucionar cualquier problema."
->additional-url="https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html" text="Compatibilidad con el Experience Cloud"
+>abstract="Póngase en contacto con nuestro equipo de soporte de AEM para obtener aclaraciones o solucionar problemas."
+>additional-url="https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html" text="Compatibilidad con Experience Cloud"
 
 Si tiene alguna duda sobre el acceso al Cloud Service, póngase en contacto con su representante del Adobe o [Compatibilidad con el Experience Cloud](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para obtener más información.
 

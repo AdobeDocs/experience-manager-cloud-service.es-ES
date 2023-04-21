@@ -16,7 +16,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Ingesta de contenido"
->abstract="La ingesta hace referencia a la introducción de contenido del conjunto de migración en la instancia de Cloud Service de destino. La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior."
+>abstract="Hace referencia a la ingesta de contenido del conjunto de migración en la instancia de Cloud Service del destinatario. La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=es#top-up-ingestion-process" text="Ingesta superior"
 
 Siga los pasos a continuación para ingerir el conjunto de migración de la herramienta de transferencia de contenido:
@@ -90,7 +90,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingesta superior"
->abstract="Utilice la funcionalidad de recarga para mover contenidos modificados desde la anterior actividad de transferencia. Una vez finalizada la ingesta, compruebe los registros para ver si hay errores o advertencias. Cualquier error debe resolverse de inmediato, ya sea subsanando los problemas notificados o contactando con el Servicio de atención al cliente de Adobe."
+>abstract="Utilice la función superior para mover el contenido modificado desde la actividad de transferencia de contenido anterior. Una vez finalizada la ingesta, compruebe si hay errores/advertencias en los registros. Los errores deben solucionarse inmediatamente, ya sea abordando los problemas notificados o poniéndose en contacto con el Servicio de atención al cliente de Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Visualización de registros"
 
 La herramienta de transferencia de contenido tiene una función que permite *agregar* contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior.

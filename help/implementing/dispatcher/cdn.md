@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: c419da88ccfe97cf8b80e68ddd402196c2ec58e3
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 12%
+ht-degree: 27%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="CDN en AEM as a Cloud Service"
->abstract="AEM como Cloud Service se envía con una CDN integrada. Su principal propósito es reducir la latencia al enviar contenido procesable desde los nodos CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM."
+>abstract="AEM as a Cloud Service se envía con una CDN integrada. Su objetivo principal es reducir la latencia mediante la entrega de contenido procesable desde los nodos de CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM."
 
-AEM como Cloud Service se envía con una CDN integrada. Su objetivo principal es reducir la latencia mediante la entrega de contenido procesable desde los nodos de CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM.
+AEM as a Cloud Service se envía con una CDN integrada. Su objetivo principal es reducir la latencia mediante la entrega de contenido procesable desde los nodos de CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM.
 
-La CDN administrada AEM satisfará la mayoría de los requisitos de rendimiento y seguridad del cliente. Para el nivel de publicación, los clientes pueden opcionalmente apuntar a él desde su propia CDN, que deberán administrar. Esto se permitirá caso por caso, en función de cumplir ciertos requisitos previos, incluido, entre otros, el cliente que tenga una integración heredada con su proveedor de CDN que sea difícil de abandonar.
+La CDN administrada AEM satisfará la mayoría de los requisitos de rendimiento y seguridad del cliente. Para el nivel de publicación, los clientes pueden apuntar opcionalmente a él desde su propia CDN, que deberán administrar. Esto se permitirá caso por caso, en función del cumplimiento de ciertos requisitos previos que incluyen, entre otros, que el cliente tenga una integración heredada con su proveedor de CDN que sea difícil de abandonar.
 
 Además, consulte los siguientes vídeos [Cloud 5 AEM CDN Parte 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) y [Cloud 5 AEM CDN Parte 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) para obtener información adicional sobre CDN en AEM as a Cloud Service.
 
@@ -44,12 +44,12 @@ Consulte [Administrar listas de IP permitidas](/help/implementing/cloud-manager/
 >
 >Solo las solicitudes de las IP permitidas serán atendidas por AEM CDN gestionado. Si señala su propia CDN a la CDN administrada de AEM, asegúrese de que las IP de su CDN estén incluidas en la lista de permitidos.
 
-## La CDN del cliente apunta a AEM CDN administrada {#point-to-point-CDN}
+## La CDN del cliente apunta a una CDN administrada de AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="La CDN del cliente apunta a AEM CDN administrada"
->abstract="AEM como Cloud Service ofrece una opción para que los clientes utilicen su CDN existente. Para el nivel de publicación, los clientes pueden opcionalmente apuntar a él desde su propia CDN, que deberán administrar. Esto se permitirá caso por caso, en función de cumplir ciertos requisitos previos, incluido, entre otros, el cliente que tenga una integración heredada con su proveedor de CDN que sea difícil de abandonar."
+>title="La CDN del cliente apunta a una CDN administrada de AEM"
+>abstract="AEM as a Cloud Service ofrece una opción para que los clientes utilicen su CDN existente. Para el nivel de publicación, los clientes pueden apuntar opcionalmente a él desde su propia CDN, que deberán administrar. Esto se permitirá caso por caso, en función del cumplimiento de ciertos requisitos previos que incluyen, entre otros, que el cliente tenga una integración heredada con su proveedor de CDN que sea difícil de abandonar."
 
 Si un cliente debe utilizar su CDN existente, puede administrarla y señalarla a la CDN administrada de AEM, siempre que se cumplan las condiciones siguientes:
 

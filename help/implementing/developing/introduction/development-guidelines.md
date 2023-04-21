@@ -1,11 +1,11 @@
 ---
 title: Directrices de desarrollo de AEM as a Cloud Service
-description: Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre formas importantes en las que difiere de AEM en las instalaciones y AEM en AMS.
+description: Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="Directrices de desarrollo de AEM as a Cloud Service"
->abstract="Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre formas importantes en las que difiere de AEM en las instalaciones y AEM en AMS."
+>abstract="Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS."
 >additional-url="https://video.tv.adobe.com/v/330555/?captions=spa/" text="Demostración de la estructura del paquete"
 
 En el presente documento se presentan directrices para la elaboración de AEM as a Cloud Service y de maneras importantes en que difiere de las AEM en los locales y AEM de AMS.
@@ -156,7 +156,7 @@ Para el desarrollo local, los desarrolladores tienen acceso completo al CRXDE Li
 
 Tenga en cuenta que en el desarrollo local (con el SDK), `/apps` y `/libs` se puede escribir en directamente, que es diferente de los entornos de Cloud donde esas carpetas de nivel superior son inmutables.
 
-### AEM herramientas de desarrollo as a Cloud Service {#aem-as-a-cloud-service-development-tools}
+### Herramientas de desarrollo de AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 Los clientes pueden acceder a CRXDE lite en el entorno de desarrollo del nivel de creación, pero no en la fase o en la producción. El repositorio inmutable (`/libs`, `/apps`) no se puede escribir en durante la ejecución, por lo que al intentar hacerlo se producirán errores.
 

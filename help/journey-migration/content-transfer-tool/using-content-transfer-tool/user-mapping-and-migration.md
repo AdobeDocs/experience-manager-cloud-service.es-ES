@@ -13,7 +13,7 @@ ht-degree: 22%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="Asignación de usuarios"
->abstract="La herramienta de transferencia de contenido le ayuda a mover usuarios y grupos de su sistema AEM existente a AEM as a Cloud Service. Los usuarios existentes deben asignarse a sus ID de IMS para evitar que se dupliquen en la instancia de autor del Cloud Service."
+>abstract="La herramienta de transferencia de contenido le ayuda a mover usuarios y grupos de su sistema AEM existente a AEM as a Cloud Service. Los usuarios existentes deben asignarse a sus ID de IMS para evitar que se dupliquen en la instancia de creación de Cloud Service."
 
 >[!NOTE]
 >Para las versiones anteriores de la herramienta de asignación de usuarios, consulte la [documentación heredada](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
@@ -31,7 +31,7 @@ La herramienta de transferencia de contenido y Cloud Acceleration Manager migrar
 * Si el sistema de origen es una instancia de autor, la opción predeterminada para realizar la asignación es _en_, ya que este es el proceso recomendado.
 * Si el sistema de origen es una instancia de publicación, de forma predeterminada la opción para realizar la asignación es _off_, ya que los usuarios no se migran normalmente ni se utilizan en instancias de publicación.
 
-## Consideraciones importantes al asignar y migrar usuarios {#important-considerations}
+## Consideraciones importantes a la hora de asignar y migrar usuarios {#important-considerations}
 
 
 ### Casos excepcionales {#exceptional-cases}

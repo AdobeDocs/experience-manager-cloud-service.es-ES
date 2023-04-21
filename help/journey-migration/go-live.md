@@ -5,7 +5,7 @@ exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 2%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_prep"
->title="Preparación de Go-Live"
->abstract="Para garantizar un lanzamiento sin problemas y exitoso en AEM as a Cloud Service, debe planificar los periodos de congelación de código y contenido, las iteraciones de prueba, las recargas de contenido, las pruebas de rendimiento, las pruebas de seguridad y mucho más."
+>title="Preparación para el lanzamiento"
+>abstract="Para garantizar un lanzamiento con éxito y sin problemas en AEM as a Cloud Service, debe planificar los periodos de congelación de código y contenido, las iteraciones de prueba, las recargas de contenido, las pruebas de rendimiento, las pruebas de seguridad y mucho más."
 
 En esta parte del recorrido, aprenderá a planificar y realizar la migración una vez que el código y el contenido estén listos para moverse a AEM as a Cloud Service. Además, aprenderá cuáles son las prácticas recomendadas y las limitaciones conocidas al realizar la migración.
 
