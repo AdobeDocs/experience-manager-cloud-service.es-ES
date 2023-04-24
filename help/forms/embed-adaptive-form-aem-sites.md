@@ -1,13 +1,13 @@
 ---
 title: Incrustar un formulario adaptable en una página de AEM Sites
 seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
-description: Puede utilizar el componente Contenedor de AEM Forms para añadir o incrustar formularios adaptables en una página de AEM Sites para rellenar y enviar un formulario sin tener que abandonar la página.
+description: Puede utilizar el componente Forms adaptable - Incrustar para añadir o incrustar Forms adaptable a una página de AEM Sites para rellenar y enviar un formulario sin salir de las páginas de AEM Sites.
 feature: Adaptive Forms
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
+source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 100%
+source-wordcount: '1154'
+ht-degree: 66%
 
 ---
 
@@ -15,13 +15,16 @@ ht-degree: 100%
 
 ## Información general {#overview}
 
-AEM Forms permite a los desarrolladores de formularios incrustar sin problemas formularios adaptables en una página de AEM Sites o en una página web hospedada fuera de AEM. El formulario adaptable incrustado es completamente funcional, y los usuarios pueden rellenarlo y enviarlo sin abandonar la página. Esto permite al usuario a mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
+AEM Forms permite a los desarrolladores de formularios integrar sin problemas Adaptive Forms en una página de AEM Sites o en una página web alojada fuera de AEM. El formulario adaptable incrustado es completamente funcional, y los usuarios pueden rellenarlo y enviarlo sin abandonar la página. Esto permite al usuario a mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
+
+
 
 <!-- For information about embedding an Adaptive Form in an external web page, see [Embed Adaptive Form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md). -->
 
 Puede agregar un formulario adaptable en la página de AEM Sites mediante los siguientes elementos:
 
-* **El componente Contenedor de AEM Forms**. AEM Forms proporciona un componente que puede agregar a las páginas de Sites. El componente Contenedor de AEM Forms permite incrustar un formulario adaptable.
+* **Forms adaptable: componente incrustado**
+Forms adaptable: el componente Insertar permite a los autores de AEM Sites incluir un formulario adaptable existente en una página de AEM Sites, lo que mejora la reutilización de los formularios adaptables. El Forms adaptable existente se puede usar de forma independiente o incrustada en la página del sitio. Esta integración proporciona una forma cómoda para que los clientes puedan reutilizar el Forms adaptable que ya han creado.
 
 * **El Explorador de recursos**. Todos los formularios están disponibles en la sección Recursos. Puede arrastrar y colocar el formulario como un recurso en su página.
 
@@ -29,7 +32,7 @@ Puede agregar un formulario adaptable en la página de AEM Sites mediante los s
 
 Para incrustar un formulario adaptable en una página de AEM Sites que usa una plantilla editable, asegúrese de que el componente de AEM Forms está configurado como un componente permitido en la plantilla asociada.
 
-En el caso de que el **componente Contenedor de AEM Forms** no sea visible en el **Panel del explorador de componentes** de páginas de AEM Sites, realice los pasos siguientes tal como se muestra en el vídeo.
+En el caso **Forms adaptable: componente incrustado** no está visible en la variable **Panel del explorador de componentes** de AEM página sitios , realice los pasos siguientes tal como se ilustra en el vídeo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410544)
 
@@ -37,19 +40,19 @@ En caso de que la página de Sites esté usando una plantilla estática, deberá
 
 ## Incrustación de un formulario adaptable {#af-component}
 
-Para incrustar un formulario adaptable mediante el componente Contenedor de AEM Forms:
+Para incrustar un formulario adaptable utilizando la variable **[!UICONTROL Forms adaptable: incrustar]** componente:
 
 1. Abra la página de AEM Sites en la que desee incrustar un formulario adaptable en el modo Edición.
-1. En el panel Explorador de componentes, arrastre y coloque el componente Contenedor de AEM Forms en la página. También puede buscar un formulario adaptable en el Explorador de recursos y arrastrarlo y colocarlo en la página de Sites. Esto incrustará el formulario en un contenedor de AEM Forms. Puede crear y agregar un nuevo formulario adaptable o incrustar un formulario adaptable existente.
+1. En el panel Navegador de componentes , arrastre y suelte el [!UICONTROL Forms adaptable: incrustar] en la página. También puede buscar un formulario adaptable en el Explorador de recursos y arrastrarlo y colocarlo en la página de Sites. Puede agregar un nuevo formulario adaptable o incrustar un formulario adaptable existente.
 
    >[!NOTE]
    >
-   >No se admiten varios componentes de contenedor de AEM Forms en una misma página.
+   >Varios Forms adaptables: no se admiten los componentes incrustados en una página.
 
-1. Para crear e incrustar un nuevo formulario, pulse el icono **Crear formulario** en la barra de herramientas de componentes. Se abrirá una ventana para crear el nuevo formulario.
+1. Para crear e incrustar un nuevo formulario, pulse el icono **Crear formulario** en la barra de herramientas de componentes. Se abre una ventana para crear el formulario.
 
-1. Pulse el componente Contenedor de AEM Forms incrustado en la página de Sites y, a continuación, pulse ![settings_icon](assets/settings_icon.png) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar contenedor de AEM Forms]**.
-1. En el cuadro de diálogo Editar contenedor de AEM Forms, especifique lo siguiente.
+1. Pulse el componente Forms adaptable integrado - Incrustar en la página Sitios y, a continuación, pulse ![settings_icon](assets/settings_icon.png) en la barra de acciones. La variable **[!UICONTROL Editar Forms adaptable: Incrustar]** se abre.
+1. En el cuadro de diálogo Editar Forms adaptable - Incrustar , especifique lo siguiente.
 
    **Tipo de recurso:** seleccione el tipo de recurso que desea incrustar.
    * **Ruta del recurso**: examine y seleccione el formulario adaptable que desea incrustar. Se rellena automáticamente si ha colocado el formulario desde el Explorador de recursos.
@@ -58,24 +61,24 @@ Para incrustar un formulario adaptable mediante el componente Contenedor de AEM�
 
       * **Mensaje de agradecimiento**: escriba un mensaje con el editor de texto enriquecido para mostrarlo después del envío del formulario. Esta opción solo está disponible cuando elige mostrar un mensaje de agradecimiento.
       * **Página de agradecimiento**: examine y seleccione la página que desea mostrar después del envío del formulario. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
-         * **Redirigir a la página de agradecimiento**: active la opción para reemplazar la página que contiene el formulario adaptable incrustado por una página de agradecimiento. De lo contrario, la página de agradecimiento reemplaza al formulario adaptable en el contenedor de AEM Forms sin actualizar la página de Sites subyacente. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
+         * **Redirigir a la página de agradecimiento**: active la opción para reemplazar la página que contiene el formulario adaptable incrustado por una página de agradecimiento. De lo contrario, la página de agradecimiento sustituye al formulario adaptable en la [!UICONTROL Forms adaptable: incrustar] sin actualizar sitios subyacentes en la página. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
    * **Usar el idioma de la página**: utilice la configuración local de la página de AEM Sites en lugar de la configuración regional del formulario adaptable.
    * **Definir el enfoque del formulario**: seleccione esta opción para establecer el enfoque en el primer campo del formulario adaptable.
    * **Tema**: seleccione un tema que defina el estilo de los componentes del formulario adaptable. El estilo incluye propiedades de apariencia, como el estilo de fuente, el color de fondo, las dimensiones y la alineación.
-   * **El formulario abarca la anchura completa del marco**: si se selecciona, iframe no se utiliza para procesar el formulario.
+   * **El formulario abarca toda la anchura del marco**: Si se selecciona, el iframe no se utiliza para procesar el formulario.
    * **Altura**: especifique la altura del contenedor. Déjelo en blanco para cambiar automáticamente el tamaño del contenedor.
    * **Biblioteca de cliente CSS**: especifique la ruta a una biblioteca de cliente CSS.
 
 1. Guarde la configuración. El formulario adaptable está ahora incrustado en la página.
 
-AEM Sites también permite crear un formulario adaptable sobre la marcha utilizando el componente contenedor de formularios AEM. Siga los pasos para crear un formulario adaptable mediante **Componente contenedor de AEM Forms** en la página AEM Sites:
+AEM sitio también le permite crear un formulario adaptable sobre la marcha utilizando el componente Forms adaptable - Incrustar . Siga los pasos para crear un formulario adaptable utilizando la variable **Forms adaptable: componente incrustado** en AEM página sitios:
 1. Abra la página de AEM Sites en la que desee incrustar un formulario adaptable en el modo Edición.
-1. En el panel Explorador de componentes, arrastre y coloque el componente Contenedor de AEM Forms en la página.
-1. Haga clic en el icono **Más** y se le redirigirá al asistente de creación de formularios.
+1. En el panel del navegador de componentes, arrastre y suelte el componente Forms adaptable - Incrustar en la página.
+1. Haga clic en el **Más** y se le redirige al asistente de creación de formularios.
 
-   ![Componente AEM contenedor de formulario](/help/forms/assets/aemformcontainer.png)
+   ![Forms adaptable: componente incrustado](/help/forms/assets/aemformcontainer.png)
 
-1. Cuando se crea un formulario adaptable, se le redirige a la página AEM Sites y el formulario creado se procesa en la página AEM Sites.
+1. Ahora puede incrustar un formulario adaptable en AEM páginas del sitio mediante el [!UICONTROL Componente de contenedor de AEM Forms].
 
 ## Publicación de un formulario adaptable incrustado {#publishing-embedded-adaptive-form}
 
@@ -87,7 +90,7 @@ Consideremos los siguientes escenarios a la hora de publicar un formulario adapt
 
 ## Modificación de un formulario adaptable incrustado  {#modifying-embedded-adaptive-form}
 
-La página de AEM Sites mantiene una referencia al formulario adaptable en el contenedor de AEM Forms. Por lo tanto, todas las configuraciones y propiedades configuradas en el formulario adaptable original, como el tema, los estilos y la acción de envío, se mantienen en el formulario adaptable incrustado.
+AEM página sitios mantiene una referencia al formulario adaptable en la página Adaptable Forms - Incrustar. Por lo tanto, todas las configuraciones y propiedades configuradas en el formulario adaptable original, como el tema, los estilos y la acción de envío, se mantienen en el formulario adaptable incrustado.
 
 Para modificar cualquier configuración o propiedad del formulario adaptable incrustado, realice una de las siguientes acciones.
 
@@ -103,7 +106,6 @@ Para modificar cualquier configuración o propiedad del formulario adaptable inc
 Tenga en cuenta los siguientes puntos al incrustar formularios adaptables en páginas de AEM Sites:
 
 * El encabezado y el pie de página del formulario original no se incluyen en el formulario incrustado.
-* Los borradores de los usuarios y los envíos de formularios incrustados son compatibles y visibles en las pestañas Borradores y Formularios enviados del portal de formularios.
+* Los borradores de usuario y los envíos de formularios incrustados son compatibles y visibles en las fichas Borradores y Forms enviado del Portal de Forms.
 * La acción de envío configurada en el formulario original se mantiene en el formulario incrustado.
-* La segmentación de experiencias y las pruebas A/B configuradas en el formulario original no funcionan en el formulario incrustado. Sin embargo, puede utilizar la segmentación de experiencias en la página de Sites para presentar diferentes formularios basados en perfiles de usuario.
 * Si Adobe Analytics está configurado para el formulario original, los datos de análisis del formulario incrustado se capturan en esta aplicación. Sin embargo, no está disponible en el informe de análisis de Forms.
