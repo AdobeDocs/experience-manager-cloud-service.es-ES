@@ -4,10 +4,10 @@ description: Aprenda a utilizar los fragmentos de contenido y la API de GraphQL 
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 96%
+source-wordcount: '1092'
+ht-degree: 71%
 
 ---
 
@@ -34,10 +34,6 @@ ht-degree: 96%
 Inicie GraphQL Explorer en una pestaña nueva. Aquí puede generar y validar consultas sobre su contenido sin encabezado antes de utilizarlas para impulsar el contenido en su aplicación o sitio web.
 
 1. La versión de prueba de AEM sin encabezado incluye un punto final precargado con fragmentos de contenido desde el que se puede extraer contenido para pruebas. Asegúrese de que el punto final **Recursos de demostración de AEM** esté seleccionado en el menú desplegable **Punto final** en la esquina superior derecha del editor.
-
-1. Problema conocido: si la variable **Recursos de demostración de AEM** El punto final no está presente en el menú desplegable, vaya al Administrador de paquetes (`/crx/packmgr` en su entorno de AEM) y vuelva a instalar el `aem-demo-assets.ui.content-{VERSION}.zip` paquete:
-
-   ![Reinstalar paquete](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. Copie el siguiente fragmento de código para una consulta de lista del punto final **Recursos de demostración de AEM**. La consulta de lista devuelve una lista de todo el contenido que utiliza el modelo de fragmento de contenido específico. Las páginas de inventario y categoría suelen utilizar este formato de consulta.
 
@@ -71,6 +67,10 @@ Inicie GraphQL Explorer en una pestaña nueva. Aquí puede generar y validar con
    ![Consulta de lista](assets/do-not-localize/list-query-1-3-4-5.png)
 
 Acaba de validar una consulta de lista para obtener una lista completa de todos los fragmentos de contenido. Este proceso garantiza que la respuesta sea lo que espera la aplicación, con resultados que ilustran cómo las aplicaciones y sitios web recuperarán el contenido creado en AEM.
+
+>[!NOTE]
+>
+>Si no puede seleccionar la variable **Recursos de demostración de AEM** punto final de la lista desplegable, póngase en contacto con el servicio de atención al cliente de Adobe o póngase en contacto con el [AEM canal de Slack de pruebas.](https://adobe-dx-support.slack.com/)
 
 ## Consulta de un fragmento específico de contenido de muestra {#bypath-query}
 
@@ -132,3 +132,64 @@ Ahora que ha ejecutado los dos tipos principales de consultas, está listo para 
    ![Ejecución de una consulta personalizada](assets/do-not-localize/custom-query-3-4-5-6.png)
 
 Así es como el contenido se puede entregar en experiencias digitales omnicanal.
+
+## Consultas persistentes {#persisted-queries}
+
+Las consultas persistentes son el mecanismo preferido para exponer la API de GraphQL a las aplicaciones cliente. Una vez que se ha mantenido una consulta, esta se puede solicitar mediante una solicitud de GET y almacenar en caché para una recuperación rápida.
+
+Puede crear una consulta persistente que incluya los datos que desee consumir de la aplicación cliente.
+
+1. Utilizará los datos que ha creado como fragmento de contenido anteriormente, por lo que asegúrese de que la variable **Su proyecto** El punto final está seleccionado en la variable **Punto final** menú desplegable en la esquina superior derecha del editor.
+
+1. Copie el siguiente fragmento de código.
+
+   ```text
+      {
+      adventureList {
+       items {
+         title
+         description {
+           plaintext
+         }
+         title
+         price
+         image {
+           ... on ImageRef {
+             _publishUrl
+             mimeType
+           }
+         }
+       }
+     }
+   }
+   ```
+
+1. Reemplace el contenido existente en el editor de consultas pegando el código copiado.
+
+   >[!NOTE]
+   >
+   >Si no ha utilizado las mismas descripciones de campo que se describen en los módulos anteriores, deberá actualizar los nombres de campo en esta consulta.
+   >
+   >Utilice la función de autocompletado de GraphQL (Ctrl+Espacio u Opción+Espacio) como se describió anteriormente para ayudar a identificar las propiedades disponibles.
+
+1. Una vez pegado, haga clic en el botón **Reproducir** en la parte superior izquierda del editor de consultas para ejecutar la consulta.
+
+1. Los resultados se muestran en el panel derecho, junto al editor de consultas. Si la consulta es incorrecta, aparece “error” en el panel derecho.
+
+   ![Crear propia consulta](assets/do-not-localize/own-query.png)
+
+1. Cuando esté satisfecho con la consulta, haga clic en el botón **Guardar como** en la parte superior del editor de consultas para mantener la consulta.
+
+1. En el **Nombre de la consulta** , asígnele el nombre a la consulta `adventure-list`.
+
+1. Toque o haga clic **Guardar como**.
+
+   ![Consulta persistente](assets/do-not-localize/persist-query.png)
+
+1. La consulta se mantiene tal y como se confirma con un mensaje de banner en la parte inferior de la pantalla. La consulta ahora aparece en el panel izquierdo de consultas persistentes de la ventana .
+
+1. Para que la consulta persistente esté disponible públicamente, deberá publicarse, de forma muy parecida a como deben publicarse los fragmentos de contenido. Haga clic en el **Publicación** en la parte superior derecha del editor de consultas para publicar la consulta.
+
+1. La publicación se confirma mediante una notificación de banner.
+
+Ahora tiene una nueva consulta persistente que contendrá únicamente las propiedades y los formatos específicos definidos.
