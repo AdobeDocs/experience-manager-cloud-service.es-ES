@@ -1,47 +1,57 @@
 ---
-title: Recuperación de contenido JSON con JavaScript
-description: Explore la recuperación de contenido JSON desde su entorno de prueba con una aplicación CodePen y el cliente sin encabezado AEM para JavaScript.
+title: Representar el contenido en una aplicación sencilla
+description: Explore la recuperación de contenido JSON desde su entorno de prueba con una aplicación de ejemplo CodePen y el cliente AEM sin encabezado para JavaScript.
 hidefromtoc: true
 index: false
-source-git-commit: 3aff5ef2fb9ecdd815f0bc1a813d3a3982b4e0ed
+exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
+source-git-commit: 3bfecf4d577c8cb81b1c1cf02b1f9299277fbc8b
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---
 
 
-# Recuperación de contenido JSON con JavaScript {#fetch-json}
+# Representar el contenido en una aplicación sencilla {#render-content-simple-app}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
->title="Recuperación de contenido JSON con JavaScript"
->abstract="Explore la recuperación de contenido JSON desde su entorno de prueba con una aplicación CodePen y el cliente sin encabezado AEM para JavaScript."
+>title="Representar el contenido en una aplicación sencilla"
+>abstract="Explore la recuperación de contenido JSON desde su entorno de prueba con una aplicación de ejemplo CodePen y el cliente AEM sin encabezado para JavaScript."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Inicie la aplicación CodePen de ejemplo"
->abstract="Hemos creado una aplicación CodePen mínima para presentar la recuperación de datos JSON de su entorno de prueba mediante consultas persistentes de GraphQL.<br><br>Inicie el ejemplo de CodePen haciendo clic a continuación y siga esta guía para obtener más información."
+>abstract="Esta guía explica cómo consultar los datos JSON de su entorno de prueba en una aplicación web básica de JavaScript. Utilizaremos los fragmentos de contenido que modeló y creó en los módulos de aprendizaje anteriores, por lo que trabaje primero en estas guías antes de lanzarse a esta.<br><br>Para demostrar cómo se puede consultar el contenido desde una aplicación web de JavaScript, hemos configurado un CodePen que puede utilizar tal cual, o ramificarlo en su propia cuenta para personalizarlo aún más."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
 >title="En este módulo, ha aprendido a utilizar el cliente sin encabezado de AEM para JavaScript para recuperar datos JSON de su entorno de prueba mediante consultas persistentes de GraphQL.<br><br>Ahora comprende cómo puede utilizar este cliente para consumir datos desde su propia aplicación web."
 >abstract=""
 
-## Introducción {#intro}
+## Aplicación CodePen {#codepen-app}
 
-Comienza en la aplicación CodePen, que sirve como ejemplo mínimo de recuperación de datos JSON mediante el uso de [AEM cliente sin encabezado para JavaScript](https://github.com/adobe/aem-headless-client-js). La aplicación de ejemplo está diseñada para procesar cualquier contenido JSON que se devuelva, independientemente de la estructura del modelo de fragmento de contenido subyacente. La aplicación CodePen intenta ser exhaustiva con cualquier error que se encuentre, por lo que puede ver el siguiente mensaje de error impreso en el panel inferior de la aplicación:
+CodePen es un editor de código en línea y un área de reproducción para el desarrollo web front-end. Le permite escribir código HTML, CSS y JavaScript en su navegador, y ver los resultados de su trabajo casi al instante. También puede guardar su trabajo y compartirlo con otros. Hemos creado una aplicación CodePen que puede usar para recuperar datos JSON de su entorno de prueba con el [AEM cliente sin encabezado para JavaScript](https://github.com/adobe/aem-headless-client-js). Puede usar esta aplicación tal cual, o ramificarla en su cuenta de CodePen para personalizarla aún más.
+
+Al hacer clic en el botón &quot;Iniciar&quot; de arriba, se le dirigirá a la aplicación CodePen, que sirve como ejemplo mínimo de recuperación de datos JSON con JavaScript. La aplicación de ejemplo está diseñada para procesar cualquier contenido JSON que se devuelva, independientemente de la estructura del modelo de fragmento de contenido subyacente. De forma predeterminada, la aplicación recuperará datos de un `aem-demo-assets` Consulta persistente que se incluye en el entorno de prueba. Debería ver una respuesta JSON similar a la siguiente:
 
 ```
 {
-  "status": "Failed to fetch persisted query: your-project/USE-YOUR-QUERY-HERE from publishHost: https://publish-p00000-e12345.adobeaemcloud.com",
-  "message": "[AEMHeadless:REQUEST_ERROR] General Request error: Failed to fetch."
-}
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/aem-demo-assets/en/adventures/bali-surf-camp/bali-surf-camp",
+          "title": "Bali Surf Camp",
+          "price": "$5000 USD",
+          ...
 ```
 
-Se espera este error, ya que la aplicación aún no está configurada para utilizar la consulta persistente que guardó y publicó en un módulo anterior. La aplicación se configurará para recuperar datos de la consulta específica en los pasos siguientes.
+Si ve un error en su lugar, consulte la consola del navegador para obtener más información o póngase en contacto con nosotros [en Slack](https://adobe-dx-support.slack.com).
 
-## Recorrido por CodePen {#code-walkthrough}
+A continuación, configurará la aplicación para recuperar datos de la consulta persistente que creó en un módulo anterior.
+
+## Recorrido por el código de JavaScript {#code-walkthrough}
 
 El panel JS (Javascript) de CodePen contiene los cerebros de la aplicación de ejemplo. A partir de la línea 2, importamos el cliente sin encabezado AEM para JavaScript desde la CDN Skypack. Skypack se utiliza para facilitar el desarrollo sin un paso de compilación, pero también puede utilizar el cliente sin encabezado AEM con NPM o Yarn en sus propios proyectos. Consulte las instrucciones de uso en la [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) para obtener más información.
 
@@ -67,28 +77,28 @@ Finalmente, la función `fetchJsonFromGraphQL()` se utiliza para realizar la sol
 
 ## Recuperación de datos de la consulta persistente {#use-persisted-query}
 
-En la línea 25 indicamos de qué consulta de GraphQL persistió la aplicación y desde qué la aplicación debería recuperar datos. El nombre de la consulta persistente es una combinación del nombre del proyecto (por ejemplo, `your-project`), seguido de una barra diagonal y, a continuación, el nombre de la consulta.
+En la línea 25 indicamos de qué consulta de GraphQL persistió la aplicación y desde qué la aplicación debería recuperar datos. El nombre de consulta persistente es una combinación del nombre del extremo (por ejemplo, `your-project` o `aem-demo-assets`), seguido de una barra diagonal y, a continuación, el nombre de la consulta. Si ha seguido exactamente las instrucciones del módulo anteriores, la consulta persistente que ha creado estará en la variable `your-project` punto final.
 
-Actualice el `persistedQueryName` para utilizar la consulta persistente que creó en el módulo anterior. Si hubiera seguido la sugerencia de asignación de nombres exactamente habría creado una consulta persistente denominada `adventures` en el `your-project` y establecería la variable `persistedQueryName` a `your-project/adventures`:
+1. Actualice el `persistedQueryName` para utilizar la consulta persistente que creó en el módulo anterior. Si hubiera seguido la sugerencia de asignación de nombres, habría creado una consulta persistente denominada `adventure-list` en el `your-project` y establecería la variable `persistedQueryName` a `your-project/adventure-list`:
 
-```
+```javascript
 //
 // TODO: Use your persisted query here
 //
-persistedQueryName = 'your-project/adventures';
+persistedQueryName = 'your-project/adventure-list';
 ```
 
-Una vez realizado este cambio, la aplicación debe actualizarse automáticamente e imprimir la respuesta JSON sin procesar de la consulta persistente en la variable `#output` div. Si ve un mensaje de error, consulte la consola para obtener más información.
+1. Una vez realizado este cambio, la aplicación debe actualizarse automáticamente e imprimir la respuesta JSON sin procesar de la consulta persistente en la variable `#output` div. Si ve un mensaje de error, consulte la consola para obtener más información. Póngase en contacto con nosotros [en Slack](https://adobe-dx-support.slack.com) si sigue teniendo problemas con este paso.
 
-¿Contiene este JSON las propiedades exactas que necesita su aplicación? Si no es así, vuelva al entorno de AEM Author, a las herramientas o al Editor de consultas de GraphQL (o vaya a la `/aem/graphiql.html` ) y realice cambios en la consulta persistente. No olvide guardar y publicar la consulta una vez que haya terminado.
+1. ¿Contiene este JSON las propiedades exactas que necesita su aplicación? Si no es así, vuelva a la sección [Extraer contenido mediante la API de GraphQL](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) guía de aprendizaje para realizar cambios. No olvide guardar y publicar la consulta una vez que haya terminado.
 
 ## Cambiar la renderización JSON {#change-rendering}
 
 Actualmente, el JSON se está procesando tal cual en un `pre` , que no es muy creativa. Podemos cambiar nuestro CodePen para usar el `resultToDom()` para ilustrar cómo se puede iterar la respuesta JSON para crear un resultado más interesante.
 
-Para realizar este cambio, comente la línea 37 y elimine el comentario de la línea 40:
+1. Para realizar este cambio, comente la línea 37 y elimine el comentario de la línea 40:
 
-```
+```javascript
 // Output the results to a pre tag
 //resultToPreTag(queryResult);
 
@@ -96,7 +106,7 @@ Para realizar este cambio, comente la línea 37 y elimine el comentario de la l�
 resultToDom(queryResult);
 ```
 
-Esta función también procesará todas las imágenes incluidas en la respuesta JSON como una `img` etiqueta. Si los fragmentos de contenido &quot;Aventura&quot; que ha creado no incluyen imágenes, puede intentar cambiar para usar la variable `aem-demo-assets/adventures-all` consulta persistente mediante la modificación de la línea 25:
+1. Esta función también procesará todas las imágenes incluidas en la respuesta JSON como una `img` etiqueta. Si los fragmentos de contenido &quot;Aventura&quot; que ha creado no incluyen imágenes, puede intentar cambiar para usar la variable `aem-demo-assets/adventures-all` consulta persistente mediante la modificación de la línea 25:
 
 ```
 persistedQueryName = 'aem-demo-assets/adventures-all';
@@ -105,3 +115,5 @@ persistedQueryName = 'aem-demo-assets/adventures-all';
 Esta consulta generará una respuesta JSON que incluye imágenes y la variable `resultToDom()` los procesará en línea.
 
 ![Resultado de la consulta adventures-all y de la función de renderización resultToDom](assets/do-not-localize/adventures-all-query-result.png)
+
+Ahora que ha hecho el trabajo para crear los modelos y las consultas, su equipo de contenido puede asumir el control con facilidad. Se mostrará el flujo de creación de contenido en el siguiente módulo.
