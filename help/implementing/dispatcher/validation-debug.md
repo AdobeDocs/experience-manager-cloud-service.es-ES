@@ -3,10 +3,10 @@ title: Validación y depuración mediante las herramientas de Dispatcher
 description: Validación y depuración mediante las herramientas de Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 614834961c23348cd97e367074db0a767d31bba9
+source-git-commit: a56b0ed1efff7b8d04e65921ee9dd25ae7030dbd
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 2%
+source-wordcount: '2865'
+ht-degree: 1%
 
 ---
 
@@ -86,6 +86,27 @@ Puede tener uno o más de estos archivos. Contienen `<VirtualHost>` entradas que
 >
 >En el modo flexible debe utilizar rutas relativas en lugar de rutas absolutas.
 
+Asegúrese de que al menos un host virtual esté siempre disponible que coincida con ServerAlias `\*.local`, `localhost` y `127.0.0.1` que son necesarios para la invalidación de Dispatcher. Los alias del servidor `*.adobeaemcloud.net` y `*.adobeaemcloud.com` también son necesarios en al menos una configuración vhost y son necesarios para procesos de Adobe internos.
+
+Si desea coincidir con el host exacto porque tiene varios archivos vhost, puede seguir el ejemplo siguiente:
+
+```
+<VirtualHost *:80>
+	ServerName	"example.com"
+	# Put names of which domains are used for your published site/content here
+	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+	# Use a document root that matches the one in conf.dispatcher.d/default.farm
+	DocumentRoot "${DOCROOT}"
+	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+	AllowEncodedSlashes NoDecode
+	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+	<IfModule mod_headers.c>
+		Header add X-Vhost "publish-example-com"
+	</IfModule>
+  ...
+</VirtualHost>
+```
+
 * `conf.d/rewrites/rewrite.rules`
 
 Este archivo se incluye desde el interior de su `.vhost` archivos. Tiene un conjunto de reglas de reescritura para `mod_rewrite`.
@@ -135,7 +156,7 @@ Se recomienda que los archivos anteriores hagan referencia a los archivos inmuta
 Contiene un host virtual de ejemplo. Para su propio host virtual, cree una copia de este archivo, personalícelo y vaya a `conf.d/enabled_vhosts` y cree un vínculo simbólico a su copia personalizada.
 No copie el archivo default.vhost directamente en `conf.d/enabled_vhosts`.
 
-Asegúrese de que siempre haya un host virtual disponible que coincida con ServerAlias `\*.local` y también localhost, necesario para procesos de Adobe internos.
+Asegúrese de que siempre haya un host virtual disponible que coincida con ServerAlias `\*.local`, `localhost` y `127.0.0.1` que son necesarios para la invalidación de Dispatcher. Los alias del servidor `*.adobeaemcloud.net` y `*.adobeaemcloud.com` son necesarios para los procesos de Adobe internos.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -229,7 +250,7 @@ La secuencia de comandos tiene las tres fases siguientes:
 
 1. Ejecuta el validador. Si la configuración no es válida, la secuencia de comandos falla.
 2. Ejecuta el `httpd -t` para comprobar si la sintaxis es correcta, de modo que apache httpd pueda iniciarse. Si la configuración se realiza correctamente, debe estar lista para la implementación.
-3. Comprueba que el subconjunto de los archivos de configuración del SDK de Dispatcher, que están pensados para ser inmutables como se describe en la sección [Sección Estructura del archivo](##flexible-mode-file-structure), no se ha modificado.
+3. Comprueba que el subconjunto de los archivos de configuración del SDK de Dispatcher, que están pensados para ser inmutables como se describe en la sección [Sección Estructura del archivo](##flexible-mode-file-structure), no se ha modificado y coincide con la versión actual del SDK.
 
 Durante una implementación de Cloud Manager, la variable `httpd -t` la comprobación de sintaxis también se ejecutará y todos los errores se incluirán en Cloud Manager `Build Images step failure` log.
 
@@ -370,11 +391,12 @@ Evite este error copiando y pegando la ruta de acceso desde el Explorador de Win
 
 ### Fase 2 {#second-phase}
 
-Esta fase comprueba la sintaxis de Apache iniciando Docker en una imagen. El acoplador debe instalarse localmente, pero tenga en cuenta que no es necesario que AEM se ejecute.
+Esta fase comprueba la sintaxis de apache iniciando Apache HTTPD en un contenedor de docker. El acoplador debe instalarse localmente, pero tenga en cuenta que no es necesario que AEM se ejecute.
 
 >[!NOTE]
 >
 >Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este es un requisito previo para ejecutar y depurar Dispatcher en un equipo local.
+>Para Windows y macOS recomendamos utilizar Docker Desktop.
 
 Esta fase también se puede ejecutar de forma independiente `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -402,6 +424,8 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 ```
 
 Esta fase también se puede ejecutar de forma independiente `bin/docker_immutability_check.sh src/dispatcher`.
+
+Los archivos inmutables locales se pueden actualizar ejecutando el `bin/update_maven.sh src/dispatcher` en la carpeta de Dispatcher, donde `src/dispatcher` es el directorio de configuración de Dispatcher. Esto también actualizará cualquier archivo pom.xml en el directorio principal para que las comprobaciones de inmutabilidad de maven también se actualicen.
 
 ## Depuración de la configuración de Apache y Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
