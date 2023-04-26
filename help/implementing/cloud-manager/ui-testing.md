@@ -2,10 +2,10 @@
 title: Pruebas de IU
 description: La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones personalizadas
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
+source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 98%
+source-wordcount: '2238'
+ht-degree: 93%
 
 ---
 
@@ -275,15 +275,32 @@ Las pruebas a veces deben cargar archivos en la aplicación que se está proband
    * El contenido de la respuesta es un controlador de archivo opaco.
    * Puede utilizar este identificador en lugar de una ruta de archivo en un elemento `<input>` para probar la carga de archivos en la aplicación.
 
-## Ejecución de pruebas de IU locales {#run-ui-tests-locally}
-
-Antes de activar pruebas de IU en una canalización de Cloud Manager, se recomienda ejecutarlas localmente en el [SDK de AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) o en una instancia de AEM as a Cloud Service real.
-
 ### Requisitos previos {#prerequisites}
 
-Las pruebas en Cloud Manager se ejecutarán con un usuario administrador técnico.
+1. Las pruebas en Cloud Manager se ejecutarán con un usuario administrador técnico.
 
-Para ejecutar las pruebas de IU desde el equipo local, cree un usuario con permisos de tipo administrador para lograr el mismo comportamiento.
+>[!NOTE]
+>
+>Para ejecutar las pruebas funcionales desde el equipo local, cree un usuario con permisos de tipo administrador para lograr el mismo comportamiento.
+
+1. La infraestructura contenedorizada que se contempla para las pruebas funcionales está limitada por los siguientes límites:
+
+| Tipo | Valor | Descripción |
+|----------------------|-------|--------------------------------------------------------------------|
+| CPU | 2.0 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
+| Memoria | 1Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes |
+| Tiempo de espera | 30m | Duración tras la cual se terminará la prueba. |
+| Duración recomendada | 15m | Se recomienda escribir las pruebas para que no tarden más de este tiempo. |
+
+>[!NOTE]
+>
+> Si necesita más recursos, cree un caso del Servicio de atención al cliente y describa su caso de uso; nuestro equipo revisará su solicitud y le proporcionará la asistencia adecuada.
+
+
+## Ejecución de pruebas de IU locales {#run-ui-tests-locally}
+
+Antes de activar las pruebas de IU en una canalización de Cloud Manager, se recomienda ejecutar las pruebas de IU localmente en la [SDK as a Cloud Service AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+o frente a una instancia as a Cloud Service AEM real.
 
 ### Muestra de prueba de JavaScript {#javascript-sample}
 
