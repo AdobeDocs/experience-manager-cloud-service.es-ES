@@ -4,9 +4,9 @@ description: Aprenda a utilizar AEM modelos de fragmento de contenido para crear
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 49301c21e3b97b4bdf29fdccc53339149ac5a63b
+source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1062'
 ht-degree: 37%
 
 ---
@@ -68,11 +68,9 @@ El editor del modelo de fragmento de contenido es donde se configuran los tipos 
 
 1. Una vez definidas las propiedades del campo, puede volver a la función **Tipos de datos** en el panel derecho y añada campos adicionales arrastrando y soltando.
 
-1. Toque o haga clic **Guardar** para guardar el modelo.
-
 De este modo, puede agregar tantos campos como sea necesario al modelo para admitir el tipo de estructura de datos que necesite. Los tipos de campos de datos varían, pero el proceso de agregarlos al modelo sigue siendo el mismo.
 
-Continúe en la siguiente sección para añadir los campos necesarios para completar la **Aventura** modelo.
+Continúe en la siguiente sección para añadir los campos necesarios para completar y guardar el **Aventura** model
 
 ![Pasos uno, dos y tres para añadir campos al modelo](assets/do-not-localize/define-model-fields.png)
 
@@ -104,4 +102,3 @@ Siga los mismos pasos que se describen arriba para agregar estos campos adiciona
 1. Una vez añadidos todos los campos necesarios para el modelo de fragmento de contenido, haga clic en **Guardar** en la parte superior derecha de la ventana.
 
 1. El modelo se guarda y se vuelve a la consola del modelo de fragmento de contenido.
-
