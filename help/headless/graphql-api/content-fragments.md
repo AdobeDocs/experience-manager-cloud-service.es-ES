@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1d7cbec55c5f3fcfbc217bf53d006a56bdf37f4e
+source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4769'
+ht-degree: 86%
 
 ---
 
@@ -241,15 +241,17 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 
 | Modelo de fragmento de contenido: tipo de datos | Tipo de GraphQL | Descripción |
 |--- |--- |--- |
-| Texto de línea única | Cadena, [Cadena] | Se utiliza para cadenas simples como nombres de autor, nombres de ubicación, etc. |
-| Texto multilínea | Cadena, [Cadena] | Se utiliza para generar texto como el cuerpo de un artículo |
-| Número | Flotante, [Flotante] | Se utiliza para mostrar números de coma flotante y números regulares |
-| Booleano | Booleano | Se utiliza para mostrar casillas de verificación → instrucciones simples verdaderas/falsas |
-| Fecha y hora | Calendario | Se utiliza para mostrar la fecha y la hora en formato ISO 8601. Según el tipo seleccionado, hay tres variantes disponibles para usar en AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
-| Lista desglosada | Cadena | Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
-| Etiquetas | [Cadena] | Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
-| Referencia de contenido | Cadena, [Cadena] | Se utiliza para mostrar la ruta hacia otro recurso en AEM |
-| Referencia al fragmento | *Un tipo de modelo* | Se utiliza para hacer referencia a otro fragmento de contenido de un tipo de modelo determinado, definido cuando se creó el modelo |
+| Texto de línea única | `String`, `[String]` | Se utiliza para cadenas simples como nombres de autor, nombres de ubicación, etc. |
+| Texto multilínea | `String`, `[String]` | Se utiliza para generar texto como el cuerpo de un artículo |
+| Número | `Float`, `[Float]` | Se utiliza para mostrar números de coma flotante y números regulares |
+| Booleano | `Boolean` | Se utiliza para mostrar casillas de verificación → instrucciones simples verdaderas/falsas |
+| Fecha y hora | `Calendar` | Se utiliza para mostrar la fecha y la hora en formato ISO 8601. Según el tipo seleccionado, hay tres variantes disponibles para usar en AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
+| Lista desglosada | `String` | Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
+| Etiquetas | `[String]` | Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
+| Referencia de contenido | `String`, `[String]` | Se utiliza para mostrar la ruta hacia otro recurso en AEM |
+| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo al que se hace referencia directamente <br><br>Multifield, con un tipo al que se hace referencia: `[Model]` - Matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multifield, con varios tipos de referencia: `[AllFragmentModels]` - Matriz de todos los tipos de modelo, referenciada desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
+
+{style="table-layout:auto"}
 
 ### Campos de ayuda {#helper-fields}
 
