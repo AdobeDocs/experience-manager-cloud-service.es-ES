@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 7c67b72a5dd10dd6c9db8be1812f66dc20e0f85a
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 6%
+source-wordcount: '918'
+ht-degree: 8%
 
 ---
 
@@ -185,3 +185,17 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >
    >The [!UICONTROL Download] report displays details of only those assets which are downloaded after selecting individually or are downloaded using Quick Action. However, it does not include the details of the assets that are inside a downloaded folder.
 -->
+
+**Consulte también**
+
+* [Traducir recursos](translate-assets.md)
+* [API HTTP de Recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [Buscar recursos](search-assets.md)
+* [Recursos conectados](use-assets-across-connected-assets-instances.md)
+* [Esquemas de metadatos](metadata-schemas.md)
+* [Descarga de recursos](download-assets-from-aem.md)
+* [Administración de metadatos](manage-metadata.md)
+* [Facetas de búsqueda](search-facets.md)
+* [Administrar colecciones](manage-collections.md)
+* [Importación masiva de metadatos](metadata-import-export.md)

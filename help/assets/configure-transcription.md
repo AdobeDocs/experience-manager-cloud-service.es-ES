@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 4edf66127696ce91466811e2ffdcfbbd73f7cc2c
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 100%
+source-wordcount: '1696'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ La transcripción es el proceso de pasar el audio de un archivo de audio o víde
 
 Las transcripciones son versiones textuales de contenido hablado; un ejemplo es una película que ve en cualquier plataforma OTT y que a menudo incluye subtítulos para facilitar la accesibilidad o el consumo el contenido en otros idiomas. O cualquier archivo de audio o vídeo que se utilice con fines de marketing, aprendizaje o entretenimiento. Estas experiencias comienzan con una transcripción a la que luego se le aplica formato o se traduce según corresponda. La transcripción de audio o vídeo es un proceso que lleva tiempo y es fácil que dé lugar a errores cuando se realiza manualmente. También es un desafío escalar el proceso manual, dada la necesidad cada vez mayor de contenido de audio-vídeo. [!DNL Experience Manager Assets] utiliza la transcripción basada en IA de Azure, que permite un procesamiento a gran escala de los recursos de audio y vídeo y genera las transcripciones de texto (archivos .vtt) junto con los detalles de la marca de tiempo. Junto con Assets, la función de transcripción también es compatible con Dynamic Media.
 
-La función de transcripción está disponible sin ningún coste en [!DNL Experience Manager Assets]. Sin embargo, los administradores necesitan las credenciales de Azure del usuario para configurar el servicio de transcripción en [!DNL Experience Manager Assets]. También puede [obtener las credenciales de prueba](https://azure.microsoft.com/en-us/pricing/details/media-services/) directamente desde Microsoft® para probar la función de transcripción de audio o vídeo en Assets.
+La función de transcripción está disponible sin ningún coste en [!DNL Experience Manager Assets]. Sin embargo, los administradores requieren las credenciales de Azure del usuario para configurar el servicio de transcripción en [!DNL Experience Manager Assets]. También puede [obtener las credenciales de prueba](https://azure.microsoft.com/en-us/pricing/details/media-services/) directamente desde Microsoft® para probar la función de transcripción de audio o vídeo en Assets.
 
 ## Requisitos previos de transcripción {#prerequisites}
 
@@ -101,7 +101,7 @@ Una vez configurado el perfil de procesamiento para la transcripción de archivo
 >
 >Un perfil de procesamiento aplicado a una carpeta funciona para todo el árbol, sin embargo, se puede sobrescribir con otro perfil aplicado a una subcarpeta.
 >
->Cuando los recursos se cargan en una carpeta, Experience Manager se comunica con las propiedades de la carpeta contenedora para identificar el perfil de procesamiento. Si no se aplica ninguno, se comprueba la existencia de un perfil de procesamiento en una carpeta principal de la jerarquía.
+>Cuando los recursos se cargan en una carpeta, el Experience Manager se comunica con las propiedades de la carpeta contenedora para identificar el perfil de procesamiento. Si no se aplica ninguno, se comprueba la existencia de un perfil de procesamiento en una carpeta principal de la jerarquía.
 
 
 ## Generación de transcripciones de recursos de audio o vídeo {#generate-transcription}
@@ -166,3 +166,18 @@ Se admiten los siguientes formatos de archivo de audio y vídeo para la transcri
 ## Sugerencias de resolución de problemas {#troubleshooting}
 
 Inicie sesión en su cuenta de [!DNL Azure Media Services] con las mismas credenciales (utilizadas para la configuración) para verificar el estado de la solicitud. Contacte con el soporte de [!DNL Azure] si la solicitud no se ha procesado correctamente.
+
+**Consulte también**
+
+* [Traducir recursos](translate-assets.md)
+* [API HTTP de Recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [Buscar recursos](search-assets.md)
+* [Recursos conectados](use-assets-across-connected-assets-instances.md)
+* [Informes de Asset](asset-reports.md)
+* [Esquemas de metadatos](metadata-schemas.md)
+* [Descarga de recursos](download-assets-from-aem.md)
+* [Administración de metadatos](manage-metadata.md)
+* [Facetas de búsqueda](search-facets.md)
+* [Administrar colecciones](manage-collections.md)
+* [Importación masiva de metadatos](metadata-import-export.md)

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: efc0f317cf4540db49b6caf7bb9f6fd31b311583
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 96%
+source-wordcount: '487'
+ht-degree: 94%
 
 ---
 
@@ -43,3 +43,18 @@ Las nuevas y significativas funcionalidades son las siguientes:
 
 * [Microservicios de recursos](/help/assets/asset-microservices-overview.md)
 * [Métodos de carga de recursos](/help/assets/add-assets.md)
+
+**Consulte también**
+
+* [Traducir recursos](translate-assets.md)
+* [API HTTP de Recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [Buscar recursos](search-assets.md)
+* [Recursos conectados](use-assets-across-connected-assets-instances.md)
+* [Informes de Asset](asset-reports.md)
+* [Esquemas de metadatos](metadata-schemas.md)
+* [Descarga de recursos](download-assets-from-aem.md)
+* [Administración de metadatos](manage-metadata.md)
+* [Facetas de búsqueda](search-facets.md)
+* [Administrar colecciones](manage-collections.md)
+* [Importación masiva de metadatos](metadata-import-export.md)

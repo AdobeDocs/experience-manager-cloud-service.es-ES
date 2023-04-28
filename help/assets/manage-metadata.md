@@ -1,41 +1,41 @@
 ---
 title: Administración de metadatos de recursos digitales
-description: Obtenga información acerca de los tipos de metadatos y cómo [!DNL Adobe Experience Manager Assets] ayuda a administrar los metadatos de los recursos para facilitar su categorización y organización. [!DNL Experience Manager] permite organizar y procesar recursos automáticamente en función de sus metadatos.
+description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Adobe Experience Manager Assets] ayuda a administrar metadatos para los recursos para facilitar la categorización y organización de los recursos. [!DNL Experience Manager] permite organizar y procesar automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
+source-git-commit: 91af800c8b2f83e689e057f304a8e144ae4cc5ed
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 7%
+source-wordcount: '1981'
+ht-degree: 8%
 
 ---
 
-# Administración de metadatos de recursos digitales {#managing-metadata-for-digital-assets}
+# Administrar metadatos de los recursos digitales {#managing-metadata-for-digital-assets}
 
-[!DNL Adobe Experience Manager Assets] mantiene los metadatos de cada recurso. Permite una categorización y organización más sencillas de los recursos y ayuda a las personas que buscan un recurso específico. Con la capacidad de extraer metadatos de archivos cargados en [!DNL Experience Manager Assets], la administración de metadatos se integra con el flujo de trabajo creativo. Con la capacidad de mantener y administrar metadatos con sus recursos, puede organizar y procesar recursos automáticamente en función de sus metadatos.
+[!DNL Adobe Experience Manager Assets] conserva los metadatos de cada recurso. Permite una categorización y organización más sencillas de los recursos, y ayuda a las personas que buscan un recurso específico. Con la capacidad de extraer metadatos de archivos cargados en [!DNL Experience Manager Assets], la administración de metadatos se integra con el flujo de trabajo creativo. Con la capacidad de mantener y administrar metadatos con los recursos, puede organizar y procesar automáticamente los recursos en función de sus metadatos.
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
 -->
 
-## Por qué necesitamos los metadatos {#why-metadata}
+## ¿Por qué necesitamos metadatos? {#why-metadata}
 
-Los metadatos son datos sobre datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo, una imagen. Los metadatos son esenciales para una administración eficiente de los recursos.
+Metadatos significa datos sobre los datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo una imagen. Los metadatos son esenciales para una administración eficiente de los recursos.
 
-Los metadatos son la recopilación de todos los datos disponibles para un recurso, pero que no están necesariamente contenidos en esa imagen. Algunos ejemplos de metadatos son los siguientes:
+Los metadatos son la recopilación de todos los datos disponibles para un recurso, pero no necesariamente están contenidos en esa imagen. Algunos ejemplos de metadatos son:
 
 * Nombre del recurso.
-* Fecha y hora de la última modificación.
+* Hora y fecha de la última modificación.
 * Tamaño del recurso tal como se almacenó en el repositorio.
-* Nombre de la carpeta en la que se encuentra.
+* Nombre de la carpeta en la que está contenido.
 * Recursos relacionados o etiquetas aplicadas.
 
-Las anteriores son las propiedades de metadatos básicas que [!DNL Experience Manager] puede administrar para recursos, lo que permite a los usuarios ver todos los recursos. Por ejemplo, ordenar recursos por fecha de última modificación resulta útil cuando se intenta descubrir recursos agregados o modificados recientemente.
+Lo anterior son las propiedades de metadatos básicas que [!DNL Experience Manager] puede administrar para los recursos, lo que permite a los usuarios ver todos los recursos. Por ejemplo, la ordenación de recursos por fecha de la última modificación resulta útil cuando se intenta descubrir recursos agregados o modificados recientemente.
 
-Puede añadir más datos de alto nivel a los recursos digitales, por ejemplo:
+Puede agregar más datos de alto nivel a los recursos digitales, por ejemplo:
 
 * Tipo de recurso (¿es una imagen, un vídeo, un clip de audio o un documento?).
 * Propietario del recurso.
@@ -43,7 +43,7 @@ Puede añadir más datos de alto nivel a los recursos digitales, por ejemplo:
 * Descripción del recurso.
 * Etiquetas asignadas a un recurso.
 
-Más metadatos le ayudan a categorizar los recursos y son útiles a medida que aumenta la cantidad de información digital. Es posible administrar algunos cientos de archivos basados únicamente en los nombres de archivo. Sin embargo, este enfoque no es escalable. Se queda corto cuando aumenta el número de personas involucradas y el número de recursos administrados.
+Más metadatos le ayudan a categorizar los recursos y resulta útil a medida que aumenta la cantidad de información digital. Es posible administrar algunos cientos de archivos basados en solo los nombres de archivo. Sin embargo, este enfoque no es escalable. Se queda corto cuando aumenta el número de personas involucradas y el número de activos gestionados.
 
 Con la adición de metadatos, el valor de un recurso digital aumenta, ya que pasa a ser:
 
@@ -55,18 +55,18 @@ Por estas razones, [!DNL Assets] le proporciona los medios adecuados para crear,
 
 ## Tipos de metadatos {#types-of-metadata}
 
-Los dos tipos básicos de metadatos son los metadatos técnicos y los metadatos descriptivos.
+Los dos tipos básicos de metadatos son metadatos técnicos y metadatos descriptivos.
 
-Los metadatos técnicos son útiles para aplicaciones de software que tratan con recursos digitales y no deben mantenerse manualmente. [!DNL Experience Manager Assets] y otro software determinan automáticamente los metadatos técnicos, y los metadatos pueden cambiar cuando se modifica el recurso. Los metadatos técnicos disponibles de un recurso dependen en gran medida del tipo de archivo del recurso. Algunos ejemplos de metadatos técnicos son los siguientes:
+Los metadatos técnicos son útiles para las aplicaciones de software que se ocupan de recursos digitales y no deben mantenerse manualmente. [!DNL Experience Manager Assets] y otro software determinan automáticamente los metadatos técnicos, y los metadatos pueden cambiar cuando se modifica el recurso. Los metadatos técnicos disponibles de un recurso dependen en gran medida del tipo de archivo del recurso. Algunos ejemplos de metadatos técnicos son:
 
 * Tamaño de un archivo.
-* Dimension (alto y ancho) de una imagen.
+* Dimension (altura y anchura) de una imagen.
 * Velocidad de bits de un archivo de audio o vídeo.
 * Resolución (nivel de detalle) de una imagen.
 
-Los metadatos descriptivos son metadatos relacionados con el dominio de aplicación, por ejemplo, el negocio del que proviene un recurso. Los metadatos descriptivos no se pueden determinar automáticamente. Se crea de forma manual o semiautomática. Por ejemplo, una cámara con GPS puede rastrear automáticamente la latitud y longitud y añadir geotag a la imagen.
+Los metadatos descriptivos son metadatos relacionados con el dominio de la aplicación, por ejemplo, el negocio del que proviene un recurso. Los metadatos descriptivos no se pueden determinar automáticamente. Se crea de forma manual o semiautomática. Por ejemplo, una cámara con GPS puede rastrear automáticamente la latitud y la longitud y añadir la etiqueta geográfica de la imagen.
 
-El coste de crear manualmente información descriptiva de metadatos es elevado. Por lo tanto, se establecen estándares para facilitar el intercambio de metadatos entre sistemas de software y organizaciones. [!DNL Experience Manager Assets] admite todos los estándares relevantes para la administración de metadatos.
+El coste de crear manualmente información de metadatos descriptivos es alto. Por lo tanto, se establecen estándares para facilitar el intercambio de metadatos entre sistemas y organizaciones de software. [!DNL Experience Manager Assets] admite todas las normas pertinentes para la gestión de metadatos.
 
 ## Metadatos y última modificación {#last-modification}
 
@@ -77,75 +77,75 @@ La última fecha de modificación de un recurso refleja la última vez que se mo
 
 La fecha de la última modificación y el usuario no cambian:
 
-* Cuando se mueve o se cambia el nombre de un recurso
-* Cuando un recurso está desprotegido, protegido en la versión o
-* Cuando se publica o se cancela la publicación de un recurso
-* Al actualizar los metadatos
-* Actualizaciones de referencia o de colección
+* Cuando se mueve o cambia el nombre de un recurso
+* Cuando se cierra la compra de un recurso, se comprueba su versión o versión
+* Cuando se publica o cancela la publicación de un recurso
+* En actualizaciones de metadatos
+* Actualizaciones de referencia o recopilación
 
-## Estándares de codificación {#encoding-standards}
+## Normas de codificación {#encoding-standards}
 
-Existen varias formas de incrustar metadatos en los archivos. Se admite una selección de estándares de codificación:
+Existen varias formas de incrustar metadatos en archivos. Se admite una selección de estándares de codificación:
 
-* XMP: utilizado por [!DNL Assets] para almacenar los metadatos extraídos dentro del repositorio.
+* XMP: usado por [!DNL Assets] para almacenar los metadatos extraídos dentro del repositorio.
 * ID3: para archivos de audio y vídeo.
-* EXIF: para archivos de imagen.
-* Otro/Heredado: de [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
+* Exif: para archivos de imagen.
+* Otros/Heredados: from [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] XMP () es un estándar abierto que utiliza [!DNL Experience Manager Assets] para toda la gestión de metadatos. El estándar ofrece codificación de metadatos universal que puede incrustarse en todos los formatos de archivo. Adobe XMP y otras empresas admiten el estándar, ya que proporciona un modelo de contenido enriquecido. XMP Usuarios de la norma de y de [!DNL Experience Manager Assets] tener una plataforma potente sobre la que construir. Para obtener más información, consulte [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) es un estándar abierto que utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar ofrece una codificación de metadatos universal que se puede incrustar en todos los formatos de archivo. Adobe y otras empresas admiten XMP estándar, ya que proporciona un modelo de contenido enriquecido. Usuarios de XMP estándar y de [!DNL Experience Manager Assets] tienen una poderosa plataforma sobre la que construir. Para obtener más información, consulte [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
-Los datos almacenados en estas etiquetas ID3 se muestran cuando reproduce un archivo de audio digital en el equipo o en un reproductor MP3 portátil.
+Los datos almacenados en estas etiquetas ID3 se muestran al reproducir un archivo de audio digital en el equipo o en un reproductor MP3 portátil.
 
-Las etiquetas ID3 están diseñadas para el formato de archivo MP3. Información adicional sobre los formatos:
+Las etiquetas ID3 están diseñadas para el formato de archivo MP3. Información adicional sobre formatos:
 
 * Las etiquetas ID3 funcionan en archivos MP3 y mp3PRO.
 * WAV no tiene etiquetas.
 * WMA tiene etiquetas propietarias que no permiten la implementación de código abierto.
-* Ogg Vorbis utiliza comentarios Xiph incrustados en el contenedor Ogg.
-* AAC utiliza un formato de etiquetado propio.
+* Ogg Vorbis utiliza Comentarios Xiph incrustados en el contenedor Ogg.
+* AAC utiliza un formato de etiquetado propietario.
 
-### EXIF {#exif}
+### Exif {#exif}
 
-El formato de archivo de imagen intercambiable (Exif) es el formato de metadatos más utilizado en la fotografía digital. Proporciona una forma de incrustar un vocabulario fijo de propiedades de metadatos en muchos formatos de archivo, como JPEG, TIFF, RIFF y WAV. EXIF almacena los metadatos como pares de un nombre y un valor de metadatos. Estos pares de nombre-valor de metadatos también se denominan etiquetas, no se deben confundir con el etiquetado de [!DNL Experience Manager]. Las cámaras digitales modernas crean metadatos EXIF y el software gráfico moderno lo admite. El formato EXIF es el denominador común más bajo para la administración de metadatos, especialmente para imágenes.
+El formato de archivo de imagen intercambiable (Exif) es el formato de metadatos más utilizado en la fotografía digital. Proporciona una forma de integrar un vocabulario fijo de propiedades de metadatos en muchos formatos de archivo, como JPEG, TIFF, RIFF y WAV. Exif almacena metadatos como pares de un nombre de metadatos y un valor de metadatos. Estos pares nombre-valor de metadatos también se denominan etiquetas, no se deben confundir con el etiquetado de [!DNL Experience Manager]. Las cámaras digitales modernas crean metadatos Exif y el software de gráficos moderno lo admite. El formato Exif es el denominador común más bajo para la administración de metadatos, especialmente para imágenes.
 
-Una limitación importante de EXIF es que algunos formatos de archivo de imagen populares, como BMP, GIF o PNG, no lo admiten.
+Una limitación importante de Exif es que algunos formatos de archivo de imagen populares como BMP, GIF o PNG no los admiten.
 
-Los campos de metadatos definidos por EXIF suelen ser de naturaleza técnica y su uso para la gestión descriptiva de metadatos es limitado. Por esta razón, [!DNL Experience Manager Assets] ofrece la asignación de propiedades EXIF a [esquemas de metadatos comunes](metadata-schemas.md) XMP y en el entorno de trabajo
+Los campos de metadatos definidos por Exif suelen ser de naturaleza técnica y su uso es limitado para la administración de metadatos descriptivos. Por este motivo, [!DNL Experience Manager Assets] ofrece la asignación de propiedades Exif en [esquemas de metadatos comunes](metadata-schemas.md) y en XMP.
 
 #### Otros metadatos {#other-metadata}
 
-Otros metadatos que se pueden incrustar desde archivos son [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
+Otros metadatos que se pueden incrustar desde archivos incluyen [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
 
-## Administración de metadatos de recursos digitales {#manage-assets-metadata}
+## Administrar metadatos de los recursos digitales {#manage-assets-metadata}
 
-Enterprise Manager Assets permite editar los metadatos de varios recursos simultáneamente para poder propagar rápidamente cambios de metadatos comunes a los recursos de forma masiva. Utilice el [!UICONTROL Propiedades] para cambiar las propiedades de los metadatos a un valor común o añadir o modificar etiquetas. Para personalizar la página Propiedades de los metadatos, lo que incluye agregar, modificar y eliminar propiedades de los metadatos, utilice el Editor de esquemas.
+Recursos de Enterprise Manager le permite editar simultáneamente los metadatos de varios recursos para que pueda propagar rápidamente los cambios comunes de metadatos a los recursos de forma masiva. Utilice la variable [!UICONTROL Propiedades] para cambiar las propiedades de los metadatos a un valor común o añadir o modificar etiquetas. Para personalizar la página Propiedades de los metadatos, como agregar, modificar o eliminar propiedades de metadatos, utilice el editor de esquemas.
 
 >[!NOTE]
 >
->Los métodos de edición masiva funcionan para los recursos disponibles en una carpeta o una colección. Para los recursos disponibles en todas las carpetas o que coinciden con un criterio común, es posible [actualización masiva de los metadatos después de buscar](/help/assets/search-assets.md#metadata-updates).
+>Los métodos de edición por lotes funcionan con los recursos disponibles en una carpeta o en una colección. Para los recursos disponibles en todas las carpetas o que coinciden con criterios comunes, es posible [actualizar de forma masiva los metadatos después de buscar](/help/assets/search-assets.md#metadata-updates).
 
-1. Desplácese hasta la ubicación de los recursos que desee editar.
+1. Navegue a la ubicación de los recursos que desee editar.
 1. Seleccione los recursos para los que desea editar propiedades comunes.
-1. En la barra de herramientas, pulse o haga clic en **[!UICONTROL Propiedades]** para abrir [!UICONTROL Propiedades] para los recursos seleccionados.
+1. En la barra de herramientas, toque o haga clic en **[!UICONTROL Propiedades]** para abrir el [!UICONTROL Propiedades] para los recursos seleccionados.
 
    >[!NOTE]
    >
-   >Al seleccionar varios recursos, se selecciona el formulario principal común más bajo para los recursos. En otras palabras, la variable [!UICONTROL Propiedades] La página solo muestra los campos de metadatos que son comunes en el [!UICONTROL Propiedades] páginas de todos los recursos individuales.
+   >Cuando se seleccionan varios recursos, se selecciona el formulario principal común más bajo para los recursos. En otras palabras, la variable [!UICONTROL Propiedades] La página solo muestra los campos de metadatos comunes en la [!UICONTROL Propiedades] páginas de todos los recursos individuales.
 
-1. Modifique las propiedades de los metadatos de los recursos seleccionados en las distintas pestañas.
-1. Para ver el editor de metadatos de un recurso específico, cancele la selección de los recursos restantes de la lista. Los campos del editor de metadatos se rellenan con los metadatos del recurso en particular.
+1. Modifique las propiedades de metadatos de los recursos seleccionados en las distintas pestañas.
+1. Para ver el editor de metadatos de un recurso específico, cancele la selección de los recursos restantes de la lista. Los campos del editor de metadatos se rellenan con los metadatos del recurso en cuestión.
 
    >[!NOTE]
    >
-   >* En el [!UICONTROL Propiedades] puede eliminar recursos de la lista de recursos cancelando la selección. La lista de recursos tiene todos los recursos seleccionados de forma predeterminada. Los metadatos de los recursos que elimina de la lista no se actualizan.
-   >* En la parte superior de la lista de recursos, active la casilla de verificación situada junto a **[!UICONTROL Título]** para alternar entre seleccionar los recursos y borrar la lista.
+   >* En el [!UICONTROL Propiedades] , puede eliminar recursos de la lista de recursos cancelando la selección. La lista de recursos tiene todos los recursos seleccionados de forma predeterminada. Los metadatos de los recursos que elimine de la lista no se actualizarán.
+   >* En la parte superior de la lista de activos, active la casilla de verificación situada cerca de **[!UICONTROL Título]** para alternar entre seleccionar los recursos y borrar la lista.
 
 
-1. Para seleccionar un esquema de metadatos diferente para los recursos, pulse o haga clic en **[!UICONTROL Configuración]** en la barra de herramientas, y seleccione el esquema deseado. Guarde los cambios.
+1. Para seleccionar un esquema de metadatos diferente para los recursos, toque o haga clic en **[!UICONTROL Configuración]** en la barra de herramientas y seleccione el esquema deseado. Guarde los cambios.
 1. Para anexar los nuevos metadatos con los metadatos existentes en los campos que contienen varios valores, seleccione el **[!UICONTROL modo Anexar]**. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Pulse o haga clic en **[!UICONTROL Enviar]**.
 
    >[!CAUTION]
@@ -154,7 +154,7 @@ Enterprise Manager Assets permite editar los metadatos de varios recursos simult
 
 ## Metadatos personalizados con perfil de procesamiento {#metadata-compute-service}
 
-Assets as a [!DNL Cloud Service] Puede generar metadatos personalizados para un recurso mediante servicios nativos de la nube. Configure un perfil de procesamiento para generar metadatos personalizados. Consulte [cómo utilizar el perfil de procesamiento](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Recursos como [!DNL Cloud Service] puede generar metadatos personalizados para un recurso mediante servicios nativos de la nube. Configure un perfil de procesamiento para generar metadatos personalizados. Consulte [cómo utilizar el perfil de procesamiento](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Representación de metadatos en el perfil de procesamiento](assets/processing-profile-metadata.png)
 
@@ -175,9 +175,9 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 ## Esquemas de metadatos {#metadata-schemata}
 
-Los esquemas de metadatos son conjuntos predefinidos de definiciones de propiedades de metadatos que se pueden utilizar en diversas aplicaciones. Las propiedades siempre están asociadas a un recurso, lo que significa que las propiedades están &quot;alrededor&quot; del recurso.
+Los esquemas de metadatos son conjuntos predefinidos de definiciones de propiedades de metadatos que se pueden utilizar en varias aplicaciones. Las propiedades siempre están asociadas a un recurso, lo que significa que las propiedades son &quot;about&quot; el recurso.
 
-También puede diseñar sus propios esquemas de metadatos si no existe ninguno que se ajuste a sus necesidades. No duplique la información existente. Dentro de una organización, la separación de esquemas facilita el uso compartido de metadatos. [!DNL Experience Manager] proporciona una lista predeterminada de los esquemas de metadatos más populares. La lista le ayuda a poner en marcha su estrategia de metadatos y a elegir rápidamente las propiedades de metadatos que necesite.
+También puede diseñar sus propios esquemas de metadatos si no existe ninguno que se ajuste a sus necesidades. No duplique la información existente. Dentro de una organización, la separación de esquemas facilita el uso compartido de metadatos. [!DNL Experience Manager] proporciona una lista predeterminada de los esquemas de metadatos más populares. La lista le ayuda a poner en marcha su estrategia de metadatos y a elegir rápidamente las propiedades de metadatos que necesita.
 
 A continuación se enumeran los esquemas de metadatos admitidos.
 
@@ -186,65 +186,79 @@ A continuación se enumeran los esquemas de metadatos admitidos.
 * DC - [!DNL Dublin Core] es un conjunto de metadatos importante y ampliamente utilizado.
 * DICOM - Imágenes digitales y comunicaciones en medicina.
 * `Iptc4xmpCore` y `iptc4xmpExt` - International Press Communications Standard contiene muchos metadatos específicos de cada tema.
-* RDF, Resource Description Framework, para metadatos web semánticos genéricos.
+* RDF - Marco de descripción de recursos - para metadatos web semánticos genéricos.
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpBJ` - Oferta de trabajo básica.
+* `xmpBJ` - Entradas de trabajo básicas.
 
 ### Metadatos específicos de la aplicación {#application-specific-metadata}
 
-Los metadatos específicos de la aplicación incluyen metadatos técnicos y descriptivos. Si utiliza estos metadatos, es posible que otras aplicaciones no puedan utilizarlos. Por ejemplo, es posible que una aplicación de renderización de imágenes diferente no pueda acceder a [!DNL Adobe Photoshop] metadatos. Puede crear un paso del flujo de trabajo que cambie una propiedad específica de la aplicación a una propiedad estándar.
+Los metadatos específicos de la aplicación incluyen metadatos técnicos y descriptivos. Si utiliza estos metadatos, es posible que otras aplicaciones no puedan utilizarlos. Por ejemplo, es posible que una aplicación de renderización de imágenes diferente no pueda acceder a [!DNL Adobe Photoshop] metadatos. Puede crear un paso de flujo de trabajo que cambie una propiedad específica de la aplicación a una propiedad estándar.
 
 * ACDSee: metadatos administrados por el [!DNL ACDSee] programa. Consulte [www.acdsee.com/](https://www.acdsee.com/).
 * Álbum - [!DNL Adobe Photoshop Album].
-* CQ: utilizado por [!DNL Experience Manager Assets].
-* DAM: Utilizado por [!DNL Experience Manager Assets].
-* DEX - [Explorador de descripciones de Optima SC](https://www.optimasc.com/products/dex/index.html) es una colección de herramientas para la administración de metadatos y archivos en los sistemas operativos Windows.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* CQ: Utilizado por [!DNL Experience Manager Assets].
+* DAM - Utilizado por [!DNL Experience Manager Assets].
+* DEX - [Explorador de descripciones de Optima SC](https://www.optimasc.com/products/dex/index.html) es una colección de herramientas para la administración de archivos y metadatos para sistemas operativos Windows.
+* CRS - [Adobe Photoshop Camera sin procesar](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
-* MicrosoftPhoto and MP - Microsoft Photo.
-* PDF y PDF/X
-* Photoshop y psAux - [!DNL Adobe Photoshop].
+* MicrosoftPhoto y MP - Microsoft Photo.
+* PDF y PDF/X.
+* Photoshop y psAux: [!DNL Adobe Photoshop].
 
-### metadatos de Digital Rights Management {#digital-rights-management-metadata}
+### Metadatos de Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
 * MÁS - [Sistema universal de licencias de imágenes](https://www.useplus.com).
-* PRISMA - [Requisitos de publicación para metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
-* PRL - PRISM Rights Language.
+* PRISM - [Requisitos de publicación para los metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
+* PRL - lenguaje de derechos PRISM.
 * PUR - Derechos de uso de PRISM.
-* `xmpPlus` XMP - Integración de PLUS con la.
+* `xmpPlus` - Integración de PLUS con XMP.
 
-### Metadatos específicos de fotografía {#photography-specific-metadata}
+### Metadatos específicos de la fotografía {#photography-specific-metadata}
 
-* Exif - Información técnica de la cámara, incluyendo la posición GPS.
+* Exif - Información técnica de la cámara, incluida la posición GPS.
 * CRS - [!DNL Camera Raw] esquema.
 * `iptc4xmpCore` y `iptc4xmpExt`.
-* TIFF: metadatos de imagen (no solo para imágenes de TIFF).
+* TIFF : metadatos de imagen (no solo para imágenes TIFF).
 
 ### Metadatos específicos de impresión {#print-specific-metadata}
 
-* PDF y PDF/X: aplicaciones de Adobe PDF y de terceros.
-* PRISMA - [Requisitos de publicación para metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
+* PDF y PDF/X : aplicaciones de Adobe PDF y de terceros.
+* PRISM - [Requisitos de publicación para los metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` XMP - metadatos de la página para texto de página.
+* `xmpPG` - XMP metadatos para texto paginado.
 
-### Metadatos específicos de medios múltiples {#multimedia-specific-metadata}
+### Metadatos específicos de multimedia {#multimedia-specific-metadata}
 
 * `xmpDM` - [!DNL Dynamic Media].
-* `xmpMM` - Gestión de contenidos.
+* `xmpMM` - Administración de medios.
 
 ## Flujos de trabajo impulsados por metadatos {#metadata-driven-workflows}
 
-La creación de flujos de trabajo impulsados por metadatos le ayuda a automatizar algunos procesos, lo que mejora la eficacia. En un flujo de trabajo controlado por metadatos, el sistema de administración de flujos de trabajo lee el flujo de trabajo y, como resultado, realiza algunas acciones predefinidas. Por ejemplo, algunas de las formas de utilizar flujos de trabajo impulsados por metadatos:
+La creación de flujos de trabajo impulsados por metadatos ayuda a automatizar algunos procesos, lo que mejora la eficacia. En un flujo de trabajo impulsado por metadatos, el sistema de administración del flujo de trabajo lee el flujo de trabajo y, como resultado, realiza alguna acción predefinida. Por ejemplo, algunas de las formas en que puede utilizar flujos de trabajo basados en metadatos:
 
-* El flujo de trabajo puede comprobar si una imagen tiene título o no. Si no es así, el sistema le notifica que añada un título.
-* El flujo de trabajo puede comprobar si un aviso de copyright en un recurso permite la distribución o no. Por lo tanto, el sistema envía el recurso a un servidor u otro.
-* Un flujo de trabajo puede comprobar la existencia de recursos sin metadatos predefinidos y obligatorios o recursos con *inválido* metadatos.
+* El flujo de trabajo puede comprobar si una imagen tiene un título o no. Si no es así, el sistema notifica que debe añadir un título.
+* El flujo de trabajo puede comprobar si un aviso de copyright de un recurso permite la distribución o no. Por lo tanto, el sistema envía el recurso a un servidor o a otro.
+* Un flujo de trabajo puede comprobar los recursos sin metadatos predefinidos obligatorios o sin recursos con *no válido* metadatos.
+
+**Consulte también**
+
+* [Traducir recursos](translate-assets.md)
+* [API HTTP de Recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [Buscar recursos](search-assets.md)
+* [Recursos conectados](use-assets-across-connected-assets-instances.md)
+* [Informes de Asset](asset-reports.md)
+* [Esquemas de metadatos](metadata-schemas.md)
+* [Descarga de recursos](download-assets-from-aem.md)
+* [Facetas de búsqueda](search-facets.md)
+* [Administrar colecciones](manage-collections.md)
+* [Importación masiva de metadatos](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
 >* [Metadatos XMP](xmp-metadata.md)
->* [Cómo editar o añadir metadatos](meta-edit.md)
+>* [Edición o adición de metadatos](meta-edit.md)
 

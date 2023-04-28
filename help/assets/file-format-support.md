@@ -1,44 +1,44 @@
 ---
-title: Formatos de archivo y tipos MIME admitidos
-description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+title: Formatos de archivo compatibles y tipos MIME
+description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] como [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 8cacd31d6db387b3525b17649a93047acad81ee3
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 8%
+source-wordcount: '1025'
+ht-degree: 10%
 
 ---
 
 # [!DNL Assets] formatos de archivo compatibles {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] admite funciones básicas de administración de contenido (almacenamiento, administración de metadatos en línea, versiones, carga y descarga, etc.) para cualquier archivo binario, independientemente de su formato. [!DNL Adobe Experience Manager Assets] admite una amplia gama de formatos de archivo y cada función del producto tiene compatibilidad variada con diferentes formatos.
+[!DNL Adobe Experience Manager] como [!DNL Cloud Service] admite capacidades básicas de administración de contenido (almacenamiento, administración de metadatos en línea, versiones, carga y descarga, etc.) para cualquier archivo binario, independientemente de su formato. [!DNL Adobe Experience Manager Assets] admite una amplia gama de formatos de archivo y cada función de producto tiene compatibilidad variada con distintos formatos.
 
-Además, [!DNL Experience Manager Assets] proporciona compatibilidad ampliada para generar vistas previas y representaciones, así como para extraer metadatos y texto para la indexación de texto completo. Esta compatibilidad ampliada se proporciona utilizando [microservicios de recursos](asset-microservices-configure-and-use.md).
+Además, [!DNL Experience Manager Assets] proporciona compatibilidad ampliada para generar vistas previas y representaciones, y para extraer metadatos y texto para la indexación de texto completo. Esta compatibilidad ampliada se proporciona mediante [microservicios de recursos](asset-microservices-configure-and-use.md).
 
-Los aspectos destacados de la conversión de recursos mediante microservicios de recursos son:
+Los aspectos destacados de la conversión de recursos mediante los microservicios de recursos son:
 
-* Clave [formatos de archivo de Adobe](#adobe-formats) producidas por aplicaciones y servicios de Adobe, incluidos [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], y [!DNL Adobe Acrobat] o PDF.
+* Clave [Formatos de archivo de Adobe](#adobe-formats) producidos por aplicaciones y servicios de Adobe, incluidos [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension]y [!DNL Adobe Acrobat] o PDF.
 * Clave [formatos de archivo de imagen](#image-formats).
-* [Formatos de archivo Camera Raw](#camera-raw-formats) para una amplia gama de cámaras, incluyendo Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
-* Común [formatos de documento](#document-formats), incluidos los formatos de Microsoft Office y Open Document.
+* [Formatos de archivo Camera Raw](#camera-raw-formats) para una amplia gama de cámaras, incluidas Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
+* Frecuentes [formatos de documento](#document-formats), incluidos los formatos Microsoft Office y Open Document.
 * Amplia gama de formatos de [vídeo](#video-formats) y [audio.](#audio-formats)
 
-La siguiente leyenda describe el nivel de compatibilidad con cada formato.
+La leyenda siguiente describe el nivel de compatibilidad con cada formato.
 
 | Niveles de soporte | Descripción |
 | ------------- | --------------------------- |
 | ✓ | Compatibilidad |
-| * | Véanse las observaciones que figuran debajo del cuadro |
+| * | Véanse las observaciones que figuran a continuación del cuadro |
 | - | No aplicable |
 
 ## formatos de Adobe {#adobe-formats}
 
-| Formato de archivo | Generación de miniaturas | Extracción de texto completo | Extracción de metadatos | Anchura/Altura |
+| Formato del archivo | Generación de miniaturas | Extracción de texto completo | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| IA | ✓ | - | ✓ | ✓ |
+| AI | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
 | DN | ✓ | - | ✓ | ✓ |
 | IDEAS | - | - | ✓ | - |
@@ -50,11 +50,11 @@ La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Para [!DNL Adobe InDesign] archivos (INDD), el tamaño de la representación viene determinado por la previsualización incrustada en el archivo INDD. Configure las preferencias en [!DNL InDesign] (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de vista previa con documentos, tamaño de vista previa]**) para incrustar una representación más grande.
+\* Para [!DNL Adobe InDesign] archivos (INDD), el tamaño de la representación viene determinado por la previsualización incrustada en el archivo INDD. Configure las preferencias en [!DNL InDesign] (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de vista previa con documentos, Tamaño de vista previa]**) para incrustar una representación más grande.
 
 ## Formatos de imagen {#image-formats}
 
-| Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura | Recortar |
+| Formato del archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura | Recortar |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | ✓ | - | ✓ | ✓ |
 | EPS | ✓ | ✓ | - | - |
@@ -72,9 +72,9 @@ La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 
 Se admiten los siguientes formatos 3D.
 
-Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Consulte también [Trabajar con recursos 3D en Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
-| Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Vista previa de miniaturas | Previsualización 3D | Entrega de Dynamic Media |
+| Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Vista previa de miniatura | Vista previa 3D | Entrega de Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
@@ -85,13 +85,13 @@ Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-med
 
 ## [!DNL Camera RAW] formatos {#camera-raw-formats}
 
-| Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura |
+| Formato del archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3FR | ✓ | ✓ | ✓ |
 | ARW | ✓ | ✓ | ✓ |
 | CR2 | ✓ | ✓ | ✓ |
 | CR3 | ✓ | ✓ | ✓ |
-| TRIPULACIÓN | ✓ | ✓ | ✓ |
+| CRW | ✓ | ✓ | ✓ |
 | DCR | ✓ | ✓ | ✓ |
 | DNG | ✓ | ✓ | ✓ |
 | ERF | ✓ | ✓ | ✓ |
@@ -108,7 +108,7 @@ Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-med
 | ORF | ✓ | ✓ | ✓ |
 | PEF | ✓ | ✓ | ✓ |
 | RAF | ✓ | ✓ | ✓ |
-| CRUDO | ✓ | ✓ | ✓ |
+| RAW | ✓ | ✓ | ✓ |
 | RW2 | ✓ | ✓ | ✓ |
 | RWL | ✓ | ✓ | ✓ |
 | SRF | ✓ | ✓ | ✓ |
@@ -119,17 +119,17 @@ Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-med
 
 Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes.
 
-| Formato de archivo | Generación de miniaturas | Extracción de texto completo | Anchura/Altura | Administración de metadatos | [Recursos conectados](use-assets-across-connected-assets-instances.md) | Vista previa completa del documento |
+| Formato del archivo | Generación de miniaturas | Extracción de texto completo | Anchura/Altura | Gestión de metadatos | [Recursos conectados](use-assets-across-connected-assets-instances.md) | Vista previa completa del documento |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |--------|
 | DOC | - | - | - | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - | - |
+| ePub | - | ✓ | - | - | - | - |
 | HTML | - | ✓ | - | ✓ | ✓ | - |
 | ODF | ✓ | ✓ | ✓ | - | - | - |
 | ODM | ✓ | ✓ | ✓ | - | - | - |
 | ODP | ✓ | ✓ | ✓ | - | - | - |
 | ODS | ✓ | ✓ | ✓ | - | - | - |
-| PUNTO | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | OFG | ✓ | ✓ | ✓ | - | - | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PPT | - | - | - | ✓ | ✓ | ✓ |
@@ -143,7 +143,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 ## Formatos de vídeo {#video-formats}
 
-| Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura |
+| Formato del archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3G2 | - | ✓ | - |
 | 3GP | - | ✓ | - |
@@ -171,7 +171,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 ## Formatos de audio {#audio-formats}
 
-[!DNL Assets] as a [!DNL Cloud Service] XMP proporciona compatibilidad de extracción de metadatos de la para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
+[!DNL Assets] como [!DNL Cloud Service] proporciona compatibilidad con la extracción de metadatos XMP para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
 
 ## Formatos de entrada compatibles para la transcripción de audio y vídeo {#audio-video-transcription-formats}
 
@@ -179,7 +179,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 * MXF (.mxf)
 * MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
 * Vídeo de Windows Media (WMV)/ASF (.wmv, .asf)
-* AVI (sin comprimir 8/10 bits) (.avi)
+* AVI (sin comprimir 8 bits/10 bits) (.avi)
 * MP4 (.mp4, .m4a, .m4v)
 * Grabación de vídeo digital de Microsoft (DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
@@ -188,77 +188,91 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 ## Sugerencias y limitaciones {#limitations-and-tips}
 
-* Actualmente, el límite de tamaño de archivo para la extracción de metadatos es de aproximadamente 15 GB. Al cargar recursos muy grandes, a veces la operación de extracción de metadatos falla.
+* Actualmente, el límite de tamaño de archivo para la extracción de metadatos es de aproximadamente 15 GB. Al cargar recursos muy grandes, a veces se produce un error en la operación de extracción de metadatos.
 
-## Dynamic Media: Formatos de vídeo de entrada compatibles para la transcodificación {#video-dynamic-media-transcoding}
+## Dynamic Media: formatos de vídeo de entrada compatibles para la transcodificación {#video-dynamic-media-transcoding}
 
 | Extensión de archivo de vídeo | Contenedor | Códecs de vídeo recomendados | Códecs de vídeo no compatibles |
 | --- | --- | --- | --- |
-| AVI | Entrelazado A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| FLV, F4V | Flash de Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectorial) |
+| AVI | Intercalación A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| FLV, F4V | Flash de Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectoriales) |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
-| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 y HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
+| MOV, QT | QuickTime de Apple | H264/AVC, Apple ProRes422 &amp; HQ, XDCAM de Sony, DVCAM de Sony, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermedio, animación de Apple |
 | MP4 | MPEG-4 | H264/AVC (todos los perfiles) | − |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
-| MXF ‡ | MXF | XDCAM de Sony, MPEG-2, MPEG-4, Panasonic DVCPro | − |
+| MXF ‡ | MXF | XDCAM de Sony, MPEG-2, MPEG-4, DVCP de Panasonic | − |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | − |
 | WebM | WebM | Google VP8 | − |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Pantalla de Microsoft (MSS2), Microsoft Photo Story (WVP2) |
 
-‡ Este formato de vídeo aún no es compatible con vídeos interactivos de Dynamic Media ni con anotaciones de Experience Manager Assets.
+✓ Este formato de vídeo aún no es compatible para su uso con vídeos interactivos en Dynamic Media o con anotaciones en Experience Manager Assets.
 
-## Dynamic Media: Formatos de documento compatibles {#document-support-dynamic-media}
+## Dynamic Media: formatos de documento compatibles {#document-support-dynamic-media}
 
-| Formato | Cargar (formato de entrada) | Crear ajuste preestablecido de imagen (formato de salida) | Previsualizar representación dinámica | Ofrecer representación dinámica | Descargar representación dinámica |
+| Formato | Cargar (formato de entrada) | Crear ajuste preestablecido de imagen (formato de salida) | Vista previa de la representación dinámica | Entregar representación dinámica | Descargar representación dinámica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| IA | ✓ | - | - | - | - |
+| AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
 | PDF (consulte la nota más abajo) | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
 >
->Para PDF seguros, solo se admite la carga de.
+>Para PDF seguros, solo se admite Cargar .
 
-## Dynamic Media: Formatos de imagen rasterizada compatibles {#image-support-dynamic-media}
+## Dynamic Media: formatos de imagen de trama compatibles {#image-support-dynamic-media}
 
-| Formato | Cargar (formato de entrada) | Crear ajuste preestablecido de imagen (formato de salida) | Previsualizar representación dinámica | Ofrecer representación dinámica | Descargar representación dinámica | Establecer tipos compatibles con este formato |
+| Formato | Cargar (formato de entrada) | Crear ajuste preestablecido de imagen (formato de salida) | Vista previa de la representación dinámica | Entregar representación dinámica | Descargar representación dinámica | Establecer tipos compatibles con este formato |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP | ✓ | - | - | - | - | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | - | - | - | - | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md)y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 | EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md)y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
-| PSD ‡ | ✓ | - | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md)y [Giro](/help/assets/dynamic-media/spin-sets.md) |
+| PSD } | ✓ | - | - | - | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md)y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 
-‡ La imagen combinada se extrae del archivo del PSD. Es una imagen que genera el [!DNL Adobe Photoshop] y se incluye en el archivo del PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
+✓ La imagen combinada se extrae del archivo PSD. Es una imagen generada por [!DNL Adobe Photoshop] y se incluye en el archivo PSD. Dependiendo de la configuración, la imagen combinada puede ser o no la imagen real.
 
-## Dynamic Media: formatos de imagen rasterizada no compatibles {#unsupported-raster-image-formats-dm}
+## Dynamic Media: formatos de imagen de trama no compatibles {#unsupported-raster-image-formats-dm}
 
-Los siguientes subtipos de formatos de archivo de imagen rasterizada son *no* admitido en [!DNL Dynamic Media]:
+Los siguientes subtipos de formatos de archivo de imagen de trama que son *not* compatible con [!DNL Dynamic Media]:
 
-* Archivos PNG con un tamaño de fragmento IDAT bueno a 100 MB.
+* Los archivos PNG que tienen un tamaño de fragmento IDAT tienen un tamaño bueno de más de 100 MB.
 * Archivos PSB.
-* Los archivos de PSD con un espacio de color distinto de CMYK, RGB, escala de grises o mapa de bits no son compatibles. No se admiten los espacios de color DuoTone, Lab e Indexed.
-* Archivos PSD con una profundidad de bits buena a 16.
-* Archivos de TIFF que tienen datos de punto flotante.
-* Archivos de TIFF con espacio de color Lab.
+* Los archivos PSD con un espacio de color distinto de CMYK, RGB, escala de grises o mapa de bits no son compatibles. Los espacios de color DuoTone, Lab e Indexed no son compatibles.
+* archivos PSD con una profundidad buena superior a 16.
+* archivos TIFF que tienen datos de coma flotante.
+* Archivos TIFF que tienen espacio de color Lab.
 
-## Dynamic Media: Formatos de archivo 3D compatibles {#support-3d-formats-dynamic-media}
+## Dynamic Media: formatos de archivo 3D compatibles {#support-3d-formats-dynamic-media}
 
-Consulte también [Formatos 3D admitidos](/help/assets/file-format-support.md#support-3d-formats)
+Consulte también [Formatos 3D compatibles](/help/assets/file-format-support.md#support-3d-formats)
 
-| Extensión de archivo 3D | Formato de archivo | Tipo MIME | Notas |
+| Extensión de archivo 3D | Formato del archivo | Tipo MIME | Notas |
 |---|---|---|---|
-| GLB | Transmisión binaria GL | model/gltf-binary | Incluye los materiales y las texturas como un solo recurso. |
+| GLB | Transmisión binaria de GL | model/gltf-binary | Incluye los materiales y texturas como un único recurso. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |
-| STL | Estereolitografía | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene Description Archivo zip | model/vnd.usdz+zip | *Compatibilidad únicamente con la ingesta; no hay visualización ni interacción disponibles.* USDZ es un formato 3D propiedad que Safari o iOS pueden ver de forma nativa. |
+| STL | Esteroolitografía | application/vnd.ms-pki.stl |  |
+| USDZ | Archivo zip de descripción de escena universal | model/vnd.usdz+zip | *Compatibilidad únicamente con la ingesta; no hay visualización ni interacción disponibles.* USDZ es un formato 3D propietario que Safari o iOS pueden ver de forma nativa. |
+
+**Consulte también**
+
+* [Traducir recursos](translate-assets.md)
+* [API HTTP de Recursos](mac-api-assets.md)
+* [Buscar recursos](search-assets.md)
+* [Recursos conectados](use-assets-across-connected-assets-instances.md)
+* [Informes de Asset](asset-reports.md)
+* [Esquemas de metadatos](metadata-schemas.md)
+* [Descarga de recursos](download-assets-from-aem.md)
+* [Administración de metadatos](manage-metadata.md)
+* [Facetas de búsqueda](search-facets.md)
+* [Administrar colecciones](manage-collections.md)
+* [Importación masiva de metadatos](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
 >* [Procesamiento de recursos mediante microservicios de recursos](asset-microservices-overview.md)
->* [Formatos de archivo compatibles con el etiquetado inteligente de recursos basados en texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Formatos de archivo compatibles para el etiquetado inteligente de recursos basados en texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 

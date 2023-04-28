@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 91b8fe48d72da9ef764732e5188bb8340b7a660a
+source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
 workflow-type: tm+mt
-source-wordcount: '4068'
+source-wordcount: '4066'
 ht-degree: 98%
 
 ---
@@ -420,7 +420,7 @@ ht-degree: 98%
       + [Carpeta de esquema de metadatos](/help/assets/folder-metadata-schema.md)
       + [Trabajo con perfiles de imagen y vídeo](/help/assets/dynamic-media/about-image-video-profiles.md)
       + [Configuración de la transcripción para recursos de audio y vídeo](/help/assets/configure-transcription.md)
-      + [Traducción y recursos multilingües](/help/assets/translate-assets.md)
+      + [Traducir recursos](/help/assets/translate-assets.md)
       + [Facetas de búsqueda](/help/assets/search-facets.md)
       + [API de HTTP de Assets](/help/assets/mac-api-assets.md)
       + [Compatibilidad con fragmentos de contenido en la API HTTP de Assets](/help/assets/content-fragments/assets-api-content-fragments.md)

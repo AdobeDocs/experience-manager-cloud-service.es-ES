@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '850'
+ht-degree: 98%
 
 ---
 
@@ -75,6 +75,21 @@ Adobe Experience Manager se puede configurar para que active automáticamente lo
 
 <!-- TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
 -->
+
+**Consulte también**
+
+* [Traducir recursos](translate-assets.md)
+* [API HTTP de Recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [Buscar recursos](search-assets.md)
+* [Recursos conectados](use-assets-across-connected-assets-instances.md)
+* [Informes de Asset](asset-reports.md)
+* [Esquemas de metadatos](metadata-schemas.md)
+* [Descarga de recursos](download-assets-from-aem.md)
+* [Administración de metadatos](manage-metadata.md)
+* [Facetas de búsqueda](search-facets.md)
+* [Administrar colecciones](manage-collections.md)
+* [Importación masiva de metadatos](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
