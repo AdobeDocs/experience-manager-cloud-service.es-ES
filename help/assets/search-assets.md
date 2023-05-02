@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
+source-git-commit: 33baeea93c1fa2b74946699e53d2f428e77aee77
 workflow-type: tm+mt
-source-wordcount: '4931'
+source-wordcount: '4934'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 [!DNL Adobe Experience Manager Assets] proporciona métodos de búsqueda de recursos sólidos que le ayudan a alcanzar una mayor velocidad de contenido. Sus equipos pueden reducir el tiempo de salida al mercado con una experiencia de búsqueda de recursos inteligente y sin problemas mediante la funcionalidad predeterminada y los métodos personalizados. La capacidad de búsqueda de recursos es fundamental para el uso de un sistema de administración de recursos digitales, ya sea para su uso posterior por parte de los creativos, para la sólida administración de recursos por parte de los usuarios comerciales y los especialistas en marketing, o para la administración por parte de los administradores de DAM. Búsquedas simples, avanzadas y personalizadas que puede realizar mediante [!DNL Assets] la interfaz de usuario u otras aplicaciones y superficies ayudan a cumplir estos casos de uso.
 
-[!DNL Experience Manager Assets] admite los siguientes casos de uso para buscar recursos y en este artículo se describen el uso, los conceptos, las configuraciones, las limitaciones y la resolución de problemas de estos casos de uso.
+La búsqueda de recursos en AEM admite los siguientes casos de uso y en este artículo se describen el uso, los conceptos, las configuraciones, las limitaciones y la solución de problemas de estos casos de uso.
 
 | Buscar recursos | Configuración y administración de la funcionalidad de búsqueda | Trabajar con resultados de búsqueda de recursos |
 |---|---|---|
@@ -38,9 +38,9 @@ Utilice la variable **[!UICONTROL Filtros]** para buscar recursos, carpetas, eti
 
 [!DNL Experience Manager] la capacidad de búsqueda admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [colecciones de búsqueda](/help/assets/manage-collections.md).
 
-## Comprender la interfaz de búsqueda {#searchui}
+## Comprender la interfaz de búsqueda de recursos {#searchui}
 
-Familiarícese con la interfaz de búsqueda y las acciones disponibles.
+Familiarícese con la interfaz de búsqueda de recursos y las acciones disponibles.
 
 ![Comprender la interfaz de resultados de búsqueda de Experience Manager Assets](assets/aem_search_results.png)
 
