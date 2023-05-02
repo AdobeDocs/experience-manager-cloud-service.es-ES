@@ -2,10 +2,10 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: cab182a7998be6a569cf16e4000184f7235082da
+source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 12%
+source-wordcount: '1722'
+ht-degree: 11%
 
 ---
 
@@ -146,6 +146,10 @@ Esto indica que Cloud Acceleration Manager no pudo acceder al servicio de migrac
 Release Orchestrator mantiene los entornos actualizados automáticamente mediante la aplicación de actualizaciones. Si la actualización se activa cuando se realiza una ingesta, puede causar resultados impredecibles, incluida la corrupción del entorno. Esta es una de las razones por las que se debe registrar un ticket de soporte antes de iniciar una ingesta (consulte &quot;Nota&quot; anterior), de modo que se pueda programar la desactivación temporal de Release Orchestrator.
 
 Si Release Orchestrator aún se está ejecutando cuando se está iniciando una ingesta, la interfaz de usuario presentará este mensaje. Puede optar por continuar de todas formas, aceptando el riesgo, marcando el campo y presionando el botón de nuevo.
+
+>[!NOTE]
+>
+> Ahora se está desplegando Release Orchestrator en entornos de desarrollo, por lo que también se deben poner en pausa las actualizaciones de dichos entornos.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
