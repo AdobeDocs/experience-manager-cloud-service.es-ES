@@ -2,10 +2,10 @@
 title: Entornos de zona protegida en hibernación y dehibernación
 description: Descubra cómo los entornos de un programa de zona protegida entran automáticamente en modo de hibernación y cómo puede anularlo.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
+source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -114,5 +114,9 @@ Los entornos en hibernación aún permiten implementaciones y actualizaciones ma
 
 * Los entornos de un programa de zona protegida hibernan automáticamente tras ocho horas de inactividad.
    * La inactividad se define como que ni el servicio de autor ni la vista previa o los servicios de publicación reciban solicitudes.
-   * Una vez hibernados, se puede cancelar manualmente la hibernación.
+   * Una vez hibernados, se pueden [se ha eliminado de la hibernación manualmente.](#de-hibernation-introduction)
 * Los programas de zona protegida se eliminarán después estar de seis meses en modo de hibernación continua, después de lo cual se podrán volver a crear.
+
+>[!NOTE]
+>
+>Solo los entornos de simulación de pruebas se eliminan automáticamente después de seis meses de hibernación continua. Se conserva el programa de simulación de pruebas con su repositorio y código.
