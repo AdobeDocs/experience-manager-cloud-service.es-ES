@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
->title="Inicie la aplicación CodePen de ejemplo"
+>title="Lanzamiento de la aplicación CodePen de muestra"
 >abstract="Esta guía explica cómo consultar los datos JSON de su entorno de prueba en una aplicación web básica de JavaScript. Utilizaremos los fragmentos de contenido que modeló y creó en los módulos de aprendizaje anteriores, por lo que trabaje primero en estas guías antes de lanzarse a esta.<br><br>Para demostrar cómo se puede consultar el contenido desde una aplicación web de JavaScript, hemos configurado un CodePen que puede utilizar tal cual, o ramificarlo en su propia cuenta para personalizarlo aún más."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
->title="En este módulo, ha aprendido a utilizar el cliente sin encabezado de AEM para JavaScript para recuperar datos JSON de su entorno de prueba mediante consultas persistentes de GraphQL.<br><br>Ahora comprende cómo puede utilizar este cliente para consumir datos desde su propia aplicación web."
+>title="En este módulo, ha aprendido a utilizar el cliente sin encabezado de AEM para JavaScript con el propósito de recuperar datos JSON de su entorno de prueba mediante consultas persistentes de GraphQL.<br><br>Ahora comprende cómo puede aprovechar este cliente para consumir datos desde su propia aplicación web."
 >abstract=""
 
 ## CodePen {#codepen}
