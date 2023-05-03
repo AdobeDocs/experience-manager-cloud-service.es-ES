@@ -3,10 +3,10 @@ title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muest
 description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 100%
+source-wordcount: '1596'
+ht-degree: 97%
 
 ---
 
@@ -1291,16 +1291,40 @@ Esta consulta busca lo siguiente:
 
 ### Consulta de muestra para un fragmento de contenido anidado: tipo de modelo múltiple {#sample-wknd-nested-fragment-multiple-model}
 
+#### Tipo de modelo al que se hace referencia única
+
 Esta consulta busca lo siguiente:
 
 * para varios fragmentos de contenido de tipo `bookmark`
-   * con referencias de fragmento a otros fragmentos de tipos de modelo específicos `article` y `adventure`
+   * con referencias de fragmento a otro fragmento del tipo de modelo específico `article`
 
 >[!NOTE]
 >
->El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados.
+>El campo `fragments` tiene el tipo de datos `fragment-reference`, con el modelo `Article` seleccionados. Entregas de consultas `fragments` como una matriz de `[Article]`
 
-<!-- need replacement query -->
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Varios tipos de modelos a los que se hace referencia
+
+Esta consulta busca lo siguiente:
+
+* para varios fragmentos de contenido de tipo `bookmark`
+   * con referencias de fragmento a otros fragmentos de tipos de modelo específicos `Article` y `Adventure`
+
+>[!NOTE]
+>
+>El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados. Envío de consultas `fragments` como una matriz de `[AllFragmentModels]` que se hace referencia con el tipo de unión.
 
 ```graphql
 {
