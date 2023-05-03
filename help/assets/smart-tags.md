@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 9abafe051672de65f042332314445b239f95852b
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2423'
 ht-degree: 5%
 
 ---
@@ -236,7 +236,7 @@ El etiquetado inteligente mejorado se basa en modelos de aprendizaje de imágene
 
 * Incapacidad para reconocer sutiles diferencias en imágenes. Por ejemplo, camisas ajustadas a la perfección frente a camisas ajustadas a la norma.
 * Incapacidad para identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisas.
-* El etiquetado es compatible con los idiomas que [!DNL Experience Manager] admite . Para obtener una lista de idiomas, consulte [Notas de la versión del servicio de contenido inteligente](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* El etiquetado es compatible con los idiomas que [!DNL Experience Manager] admite .
 * Las etiquetas que no se gestionan están relacionadas con:
 
    * Aspectos no visuales, abstractos. Por ejemplo, el año o la temporada de lanzamiento de un producto, el estado de ánimo o la emoción que evoca una imagen y una connotación subjetiva de un vídeo.
