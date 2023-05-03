@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 13a1915e9aca812024e8eb27c131500cdc8e01b2
+source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
 workflow-type: tm+mt
 source-wordcount: '5887'
 ht-degree: 2%
@@ -158,7 +158,7 @@ En el lado de reproducción del visor, detecta automáticamente la capacidad de 
 
 >[!NOTE]
 >
->Para usar DASH en los vídeos, primero debe activarlo el servicio de asistencia técnica de Adobe en su cuenta. Consulte [Habilitar DASH en su cuenta](#enable-dash).)
+>Para usar DASH en los vídeos, primero debe activarlo el servicio de asistencia técnica de Adobe en su cuenta. Consulte [Habilitar DASH en su cuenta](#enable-dash).
 
 Puede combinar en un solo reproductor la capacidad de diseñar los componentes de reproducción mediante HTML5 y CSS. Puede tener reproducción incrustada y utilizar flujo adaptable y progresivo según la capacidad del explorador. Toda esta funcionalidad significa que puede ampliar el alcance del contenido multimedia enriquecido a los usuarios de escritorio y móviles, y garantizar una experiencia de vídeo optimizada.
 
