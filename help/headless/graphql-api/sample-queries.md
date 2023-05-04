@@ -3,7 +3,7 @@ title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muest
 description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
+source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 97%
@@ -1296,11 +1296,11 @@ Esta consulta busca lo siguiente:
 Esta consulta busca lo siguiente:
 
 * para varios fragmentos de contenido de tipo `bookmark`
-   * con referencias de fragmento a otro fragmento del tipo de modelo específico `article`
+   * con referencias de fragmento a otros fragmentos del tipo de modelo específico `Article`
 
 >[!NOTE]
 >
->El campo `fragments` tiene el tipo de datos `fragment-reference`, con el modelo `Article` seleccionados. Entregas de consultas `fragments` como una matriz de `[Article]`
+>El campo `fragments` tiene el tipo de datos `fragment-reference`, con el modelo `Article` seleccionados. Entregas de consultas `fragments` como una matriz de `[Article]`.
 
 ```graphql
 {
@@ -1315,7 +1315,7 @@ Esta consulta busca lo siguiente:
 }
 ```
 
-#### Varios tipos de modelos a los que se hace referencia
+#### Varios tipos de modelo a los que se hace referencia
 
 Esta consulta busca lo siguiente:
 
@@ -1324,7 +1324,7 @@ Esta consulta busca lo siguiente:
 
 >[!NOTE]
 >
->El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados. Envío de consultas `fragments` como una matriz de `[AllFragmentModels]` que se hace referencia con el tipo de unión.
+>El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados. Entregas de consultas `fragments` como una matriz de `[AllFragmentModels]`, al que se hace referencia con el tipo de unión.
 
 ```graphql
 {
