@@ -2,10 +2,10 @@
 title: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 description: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
+source-git-commit: 2a2becb12b7724720821f895b0631d8d82e4cd79
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3042'
+ht-degree: 97%
 
 ---
 
@@ -257,8 +257,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    Abra el símbolo del sistema y ejecute el siguiente comando para crear un proyecto de [!DNL Experience Manager Forms] as a Cloud Service.
 
    ```shell
-   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
-   
    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="41" -D appTitle=mysite -D appId=mysite -D groupId=com.mysite -D includeFormsenrollment="y" -D aemVersion="cloud"
    ```
 
@@ -333,13 +331,13 @@ El entorno de desarrollo local está listo.
 
 ## Habilitación de los componentes principales de formularios adaptables para un proyecto basado en el arquetipo de AEM existente {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
 
-Si utiliza el programa basado en el arquetipo de AEM versión 40 o posterior para formularios de AEM as a Cloud Service, los componentes principales se activan automáticamente para su entorno. Al habilitar los componentes principales para su entorno, la plantilla y la temática de lienzo **Formularios adaptables (componente principal)** se añaden a su entorno. Si la versión del SDK de AEM anterior a 2023.02.0, [asegúrese de que tiene `prerelease` indicador habilitado en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) ya que los componentes principales de Forms adaptables formaban parte de la versión preliminar anterior a la versión 2023.02.0.
+Si utiliza el programa basado en el arquetipo de AEM versión 40 o posterior para AEM Forms as a Cloud Service, los componentes principales se activan automáticamente para su entorno. Al habilitar los componentes principales para su entorno, la plantilla y la temática de lienzo **Formularios adaptables (componente principal)** se añaden a su entorno. Si la versión del SDK de AEM es anterior a 2023.02.0, [asegúrese de que tiene `prerelease` el indicador habilitado en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features), ya que los componentes principales de los formularios adaptables formaban parte de la versión preliminar anterior a la versión 2023.02.0.
 
 Para habilitar los componentes principales de formularios adaptables para el entorno de AEM Forms as a Cloud Service en función de versiones anteriores del arquetipo, incruste los artefactos de ejemplos de componentes principales de WCM y los artefactos de componentes principales de Forms (incluidos ejemplos) en el proyecto:
 
 1. Abra la carpeta del proyecto de arquetipo de AEM en un editor de código de texto sin formato. Por ejemplo, VS Code.
 
-1. Abra el archivo .pom de nivel superior (pom principal) del proyecto de arquetipo de AEM en el entorno local, agregue las siguientes propiedades al archivo y guárdelo.
+1. Abrir nivel superior `.pom` archivo (pom principal) del proyecto de tipo de archivo AEM en el entorno local, agregue las siguientes propiedades al archivo y guárdelo.
 
    ```XML
    <properties>
@@ -350,64 +348,166 @@ Para habilitar los componentes principales de formularios adaptables para el ent
 
    Para la última versión de `core.forms.components` y `core.wcm.components`, marque [documentación de componentes principales](https://github.com/adobe/aem-core-forms-components).
 
-1. En la sección de dependencias del archivo ppm.xml de nivel superior (principal), añada las siguientes dependencias:
+1. En la sección dependencias del nivel superior (principal) `pom.xml` , agregue las siguientes dependencias:
 
    ```XML
-       <!-- Forms Core Component Dependencies -->
-               <dependency>
-                   <groupId>com.adobe.aem</groupId>
-                   <artifactId>core-forms-components-core</artifactId>
-                   <version>${core.forms.components.version}</version>
-               </dependency>
-               <dependency>
-                   <groupId>com.adobe.aem</groupId>
-                   <artifactId>core-forms-components-apps</artifactId>
-                   <version>${core.forms.components.version}</version>
-                   <type>zip</type>
-               </dependency>
-               <dependency>
-                   <groupId>com.adobe.aem</groupId>
-                   <artifactId>core-forms-components-af-core</artifactId>
-                   <version>${core.forms.components.version}</version>
-               </dependency>
-               <dependency>
-                   <groupId>com.adobe.aem</groupId>
-                   <artifactId>core-forms-components-af-apps</artifactId>
-                   <version>${core.forms.components.version}</version>
-                   <type>zip</type>
-               </dependency>
-               <dependency>
-                   <groupId>com.adobe.aem</groupId>
-                   <artifactId>core-forms-components-examples-apps</artifactId>
-                   <type>zip</type>
-                   <version>${core.forms.components.version}</version>
-               </dependency>
-               <dependency>
-                   <groupId>com.adobe.aem</groupId>
-                   <artifactId>core-forms-components-examples-content</artifactId>
-                   <type>zip</type>
-                   <version>${core.forms.components.version}</version>
-               </dependency>
-       <!-- End of AEM Forms Core Component Dependencies -->
+       <!-- WCM Core Component Examples Dependencies -->
+           <dependency>
+               <groupId>com.adobe.cq</groupId>
+               <artifactId>core.wcm.components.examples.ui.apps</artifactId>
+               <type>zip</type>
+               <version>${core.wcm.components.version}</version>
+           </dependency>
+           <dependency>
+               <groupId>com.adobe.cq</groupId>
+               <artifactId>core.wcm.components.examples.ui.content</artifactId>
+               <type>zip</type>
+               <version>${core.wcm.components.version}</version>
+           </dependency>
+           <dependency>
+               <groupId>com.adobe.cq</groupId>
+               <artifactId>core.wcm.components.examples.ui.config</artifactId>
+               <version>${core.wcm.components.version}</version>
+               <type>zip</type>
+           </dependency>    
+           <!-- End of WCM Core Component Examples Dependencies -->
+            <!-- Forms Core Component Dependencies -->
+           <dependency>
+               <groupId>com.adobe.aem</groupId>
+               <artifactId>core-forms-components-core</artifactId>
+               <version>${core.forms.components.version}</version>
+           </dependency>
+           <dependency>
+               <groupId>com.adobe.aem</groupId>
+               <artifactId>core-forms-components-apps</artifactId>
+               <version>${core.forms.components.version}</version>
+               <type>zip</type>
+           </dependency>
+           <dependency>
+               <groupId>com.adobe.aem</groupId>
+               <artifactId>core-forms-components-af-core</artifactId>
+               <version>${core.forms.components.version}</version>
+           </dependency>
+           <dependency>
+               <groupId>com.adobe.aem</groupId>
+               <artifactId>core-forms-components-af-apps</artifactId>
+               <version>${core.forms.components.version}</version>
+               <type>zip</type>
+           </dependency>
+           <dependency>
+               <groupId>com.adobe.aem</groupId>
+               <artifactId>core-forms-components-examples-apps</artifactId>
+               <type>zip</type>
+               <version>${core.forms.components.version}</version>
+           </dependency>
+           <dependency>
+               <groupId>com.adobe.aem</groupId>
+               <artifactId>core-forms-components-examples-content</artifactId>
+               <type>zip</type>
+               <version>${core.forms.components.version}</version>
+           </dependency>
+     <!-- End of AEM Forms Core Component Dependencies -->
    ```
 
-1. Abra el archivo all/pom.xml y agregue las siguientes dependencias para añadir artefactos de componentes principales de formularios adaptables al proyecto de arquetipo de AEM:
+1. Abra el `all/pom.xml` y agregue las siguientes dependencias en la variable `embedded` para agregar artefactos de los componentes principales de Forms adaptables al proyecto de tipo de archivo AEM:
 
    ```XML
-       <dependency>
+       <!-- WCM Core Component Examples Dependencies -->
+   
+           <!-- inside plugin config of filevault-package-maven-plugin -->  
+           <!-- embed wcm core components examples artifacts -->
+   
+           <embedded>
+           <groupId>com.adobe.cq</groupId>
+           <artifactId>core.wcm.components.examples.ui.apps</artifactId>
+           <type>zip</type>
+           <target>/apps/${appId}-vendor-packages/content/install</target>
+           </embedded>
+           <embedded>
+           <groupId>com.adobe.cq</groupId>
+           <artifactId>core.wcm.components.examples.ui.content</artifactId>
+           <type>zip</type>
+           <target>/apps/${appId}-vendor-packages/content/install</target>
+            </embedded>
+           <embedded>
+           <groupId>com.adobe.cq</groupId>
+           <artifactId>core.wcm.components.examples.ui.config</artifactId>
+           <type>zip</type>
+           <target>/apps/${appId}-vendor-packages/content/install</target>
+           </embedded>
+           <!-- embed forms core components artifacts -->
+           <embedded>
            <groupId>com.adobe.aem</groupId>
            <artifactId>core-forms-components-af-apps</artifactId>
            <type>zip</type>
-       </dependency>
-       <dependency>
+           <target>/apps/${appId}-vendor-packages/application/install</target>
+            </embedded>
+           <embedded>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-af-core</artifactId>
+           <target>/apps/${appId}-vendor-packages/application/install</target>
+            </embedded>
+           <embedded>
            <groupId>com.adobe.aem</groupId>
            <artifactId>core-forms-components-examples-apps</artifactId>
            <type>zip</type>
-       </dependency>
-       <dependency>
+           <target>/apps/${appId}-vendor-packages/content/install</target>
+           </embedded>
+           <embedded>
            <groupId>com.adobe.aem</groupId>
            <artifactId>core-forms-components-examples-content</artifactId>
            <type>zip</type>
+           <target>/apps/${appId}-vendor-packages/content/install</target>
+           </embedded>
+   ```
+
+   >[!NOTE]
+   Sustituya ${appId} por el appId de su tipo de archivo.
+
+1. En la sección dependencias de la sección `all/pom.xml` , agregue las siguientes dependencias:
+
+   ```XML
+       <!-- Other existing dependencies -->
+       <!-- wcm core components examples dependencies -->
+        <dependency>
+        <groupId>com.adobe.cq</groupId>
+        <artifactId>core.wcm.components.examples.ui.apps</artifactId>
+        <type>zip</type>
+       </dependency>
+       <dependency>
+        <groupId>com.adobe.cq</groupId>
+        <artifactId>core.wcm.components.examples.ui.config</artifactId>
+        <type>zip</type>
+        </dependency>
+       <dependency>
+        <groupId>com.adobe.cq</groupId>
+        <artifactId>core.wcm.components.examples.ui.content</artifactId>
+        <type>zip</type>
+       </dependency>
+        <!-- forms core components dependencies -->
+       <dependency>
+        <groupId>com.adobe.aem</groupId>
+        <artifactId>core-forms-components-af-apps</artifactId>
+        <type>zip</type>
+       </dependency>
+       <dependency>
+        <groupId>com.adobe.aem</groupId>
+        <artifactId>core-forms-components-examples-apps</artifactId>
+        <type>zip</type>
+       </dependency>
+        <dependency>
+        <groupId>com.adobe.aem</groupId>
+        <artifactId>core-forms-components-examples-content</artifactId>
+        <type>zip</type>
+       </dependency>
+   ```
+
+1. Incluir `af-core bundle` dependencia en la variable `ui.apps/pom.xml`
+
+   ```XML
+        <dependency>
+       <groupId>com.adobe.aem</groupId>
+       <artifactId>core-forms-components-af-core</artifactId>
        </dependency>
    ```
 
