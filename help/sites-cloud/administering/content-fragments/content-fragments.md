@@ -4,10 +4,10 @@ description: Descubra cómo los fragmentos de contenido en Adobe Experience Mana
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
+source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +57,7 @@ Para ayudarle con esto, puede obtener una previsualización del [Árbol de estru
 >* [Creación de páginas con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* [Personalizar y ampliar fragmentos de contenido](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [Fragmentos de contenido Configurar componentes para procesamiento](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
->* [Compatibilidad con fragmentos de contenido en la API HTTP de Recursos AEM](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API de GraphQL de AEM para su uso con fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)
 
 
@@ -108,10 +108,6 @@ Junto con las capacidades de exportación de JSON de los componentes principales
 >[!NOTE]
 >
 >Consulte [Sin encabezado y AEM](/help/headless/introduction.md) para ver una introducción al desarrollo sin encabezado para AEM Sites as a Cloud Service.
-
->[!NOTE]
->
->AEM también admite la traducción del contenido del fragmento.
 
 >[!NOTE]
 >
