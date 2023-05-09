@@ -1,32 +1,41 @@
 ---
 title: Notas de la versión de mantenimiento actual de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión de mantenimiento actual de [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 4aa4954f214545dcd768fdf955f1fc2f776da939
+exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
+source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 34%
+source-wordcount: '208'
+ht-degree: 47%
 
 ---
-
 
 # Notas de la versión de mantenimiento {#maintenance-release-notes}
 
 En la siguiente sección se describen las notas de la versión técnica de la versión de mantenimiento actual de Experience Manager as a Cloud Service.
 
-## Versión 11835 {#release-11835}
+## Versión 11873 {#release-11873}
 
-A continuación se resumen las mejoras continuas de la versión de mantenimiento 11835, que se publicó el 19 de abril de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 11382 anterior.
+A continuación se resumen las mejoras continuas de la versión de mantenimiento 11873, que se publicó el 3 de mayo de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 11835 anterior.
 
 La activación de funcionalidades para esta versión de mantenimiento le proporcionará el conjunto completo de funcionalidades. Consulte las [notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md) para obtener información detallada.
 
-### Problemas corregidos {#fixed-issues-11835}
+### Mejoras {#enhancements}
 
-- SITES-12573 - Las consultas de GraphQL que utilizan variables dentro de un filtro fallarán si no se especifica una variable. No actualice a esta versión si utiliza GraphQL con AEM as a Cloud Service.
-- SKYOPS-51970 - Regresión identificada de la versión FACT utilizada en el paso buildImage, que conduce a una asignación de usuario no coincidente.
-- GRANITE-44542 : Se han notificado problemas para clientes que no especificaron un tipo de nodo de paquete (al proporcionar un .content.xml con jcr:primaryType) para carpetas incluidas en el filtro de paquetes. Esto hacía que estas carpetas se trataran como nt:folder, lo que causaba problemas en varios casos.
-- SKYOPS-56928 - La regresión HTTP de Apache puede provocar errores 404. Si experimenta estos problemas, por motivos de seguridad, se recomienda volver a la versión anterior y evitar que la canalización se ejecute durante ese período de tiempo.
+- SITES-1200 - Mejoras en la API de búsqueda con filtrado basado en etiquetas
+- GRANITE-42939 - Añada anotaciones y advertencias de desaprobación al código del servidor oauth
 
-### Tecnologías integradas {#embedded-tech-11835}
+### Problemas conocidos {#known-issues-11873}
+
+Ninguna.
+
+### Problemas corregidos {#fixed-issues-11873}
+
+- SKYSI-19884/SKYOPS-53745: Se ha corregido un problema con PublishPageRenderingErrorsHigh
+- GRANITE-4388 - Se ha corregido la degradación del rendimiento después de un gran número de escrituras de activos DAM en Mongo
+- SITES-11922: Se ha corregido un problema con la cancelación de la publicación de la vista previa que no eliminaba el estado de sincronización
+- ASSETS-21648: Se ha corregido un problema de permisos con la funcionalidad de Asset Relate
+
+### Tecnologías integradas {#embedded-tech-11873}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
