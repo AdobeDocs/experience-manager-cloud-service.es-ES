@@ -1,21 +1,21 @@
 ---
-title: Crear un formulario adaptable
+title: Cómo crear Forms adaptable
 description: Obtenga información sobre cómo crear un formulario adaptable mediante  [!DNL Experience Manager Forms]. Los formularios adaptables son formularios HTML5 interactivos que agilizan la recopilación y el procesamiento de la información. Descubra más información sobre cómo crear un formulario adaptable basado en un modelo de datos de formulario y un esquema XML o JSON.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 99%
+source-wordcount: '1498'
+ht-degree: 98%
 
 ---
 
 # Crear un formulario adaptable (Componentes de base) {#creating-an-adaptive-form}
 
 
-Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms ofrece un asistente fácil de usar para las empresas que crea rápidamente formularios adaptables. El asistente dispone de una navegación rápida por pestañas para seleccionar fácilmente plantillas, estilos, campos y opciones de envío preconfiguradas para crear un formulario adaptable.
+Forms adaptable le permite crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms ofrece un asistente fácil de usar para las empresas que crea rápidamente formularios adaptables. El asistente dispone de una navegación rápida por pestañas para seleccionar fácilmente plantillas, estilos, campos y opciones de envío preconfiguradas para crear un formulario adaptable.
 
 Antes de empezar, obtenga información sobre el tipo de componentes de Forms disponibles para usted:
 

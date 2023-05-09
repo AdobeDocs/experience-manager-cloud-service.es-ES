@@ -5,7 +5,7 @@ description: Revisar es un mecanismo que permite al revisor realizar distintas t
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 5%
@@ -29,8 +29,8 @@ Al usar la variable [Asignar paso](https://experienceleague.adobe.com/docs/exper
 1. Toque ![settings_icon](assets/settings_icon.png) en la barra de acciones. La variable **[!UICONTROL Asignar tarea]** se abre.
 1. Apertura [!UICONTROL Formulario y documento] y abrir [!UICONTROL Rellenado previamente] y especifique:
 
-* Seleccionar archivo de datos de entrada mediante
-* Seleccionar archivos adjuntos de entrada usando
+   * Seleccionar archivo de datos de entrada mediante
+   * Seleccionar archivos adjuntos de entrada usando
 
    ![Revisar paso](/help/forms/assets/assigntask-review1.gif)
 
