@@ -2,9 +2,9 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1406'
 ht-degree: 22%
 
 ---
@@ -91,6 +91,10 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
    Se presentará el cuadro de diálogo siguiente. Observe que un conjunto de migración caducará después de un prolongado período de inactividad. Después de que se muestren advertencias en la tarjeta del proyecto y en las filas de la tabla de trabajos de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. Consulte [Caducidad del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener más información.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+
+   >[!NOTE]
+   >
+   >El nombre debe seguir las mismas convenciones de un nodo AEM, por lo que no puede contener ninguno de estos caracteres: . / : [ ] | *
 
 1. Ahora debería ver la lista de migración en la vista de lista. Haga clic en el símbolo de tres puntos (**...**) para abrir el menú desplegable y hacer clic en **Copiar clave de extracción**. Necesitará esta clave durante la fase de Extracción. Copie esta clave de Extracción.
 

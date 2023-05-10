@@ -2,10 +2,10 @@
 title: Extracción de contenido del origen
 description: Extracción de contenido del origen
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 29%
+source-wordcount: '701'
+ht-degree: 27%
 
 ---
 
@@ -49,13 +49,13 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   También puede supervisar el progreso de la fase de Extracción desde Cloud Acceleration Manager visitando la página de Transferencia de contenido.
+   También puede supervisar el progreso de la fase de Extracción desde Cloud Acceleration Manager visitando la página de Transferencia de Contenido y verlo en más detalle haciendo clic en **...** y luego **Ver detalles**.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. Una vez completada la extracción, revise las demás columnas como **Fuente** y **Rutas** para obtener más información sobre el conjunto de migración que ha rellenado haciendo clic en **...** y luego **Ver detalles**.
+1. Una vez completada la extracción, revise las demás columnas como **Fuente** y **Rutas** para obtener más información sobre el conjunto de migración que ha rellenado haciendo clic en **...** y luego **Ver detalles** para ver los detalles, incluida la duración de cada paso de la extracción. Vea este cuadro de diálogo durante la extracción para ver cómo progresan los pasos.
 
-   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
 ## Extracción superior {#top-up-extraction-process}

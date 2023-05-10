@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
+source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1753'
 ht-degree: 12%
 
 ---
@@ -59,7 +59,9 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Una vez finalizada la ingesta, haga clic en el botón (i) en la esquina superior derecha de la pantalla para obtener más información sobre el trabajo de ingesta.
+1. Haga clic en **i)** para obtener más información sobre el trabajo de ingesta. Puede ver la duración de cada paso de la ingesta cuando se está ejecutando o completando haciendo clic en **...** y luego **Ver duraciones**. La información de la extracción también se muestra para darse cuenta de lo que se está ingeriendo.
+
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 
