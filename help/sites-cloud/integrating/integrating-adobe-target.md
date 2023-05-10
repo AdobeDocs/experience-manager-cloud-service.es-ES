@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Como parte de Adobe Marketing Cloud, Adobe Target le permite aumentar la relevan
 
 Adobe Launch es necesario para administrar las propiedades del lado del cliente tanto para Analytics como para Target en páginas AEM (bibliotecas/etiquetas JS). Dicho esto, la integración con Launch es necesaria para la &quot;segmentación de experiencias&quot;.
 
-Para exportar fragmentos de experiencias o fragmentos de contenido a Target, solo necesita la variable [Configuración de Adobe Target e IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+Para exportar fragmentos de experiencias o fragmentos de contenido a Target, solo necesita la [Configuración de Adobe Target e IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >
