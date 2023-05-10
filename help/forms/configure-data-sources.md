@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 936aa33ca334523aa84300f540bde9543eb7ffb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2135'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ La integración de datos de [!DNL Experience Manager Forms] le permite configura
 * SalesForce
 * Microsoft® Azure Blob Storage
 
-La integración de datos es compatible con los tipos de autenticación de forma predeterminada OAuth2.0, autenticación básica y clave de la API, y permite implementar la autenticación personalizada para acceder a servicios web. Mientras que los servicios RESTful, SOAP y OData están configurados en [!DNL Experience Manager] as a Cloud Service, JDBC para bases de datos relacionales y conector para [!DNL Experience Manager] el perfil de usuario está configurado en [!DNL Experience Manager] consola web.
+La integración de datos es compatible con los tipos de autenticación de forma predeterminada OAuth2.0, autenticación básica y clave de la API, y permite implementar la autenticación personalizada para acceder a servicios web. Mientras que los servicios RESTful, basados en SOAP y OData están configurados en [!DNL Experience Manager] as a Cloud Service, JDBC para bases de datos relacionales y conector para el perfil de usuario de [!DNL Experience Manager] están configurados en la consola web de [!DNL Experience Manager].
 
 ## Configuración de la base de datos relacional {#configure-relational-database}
 
