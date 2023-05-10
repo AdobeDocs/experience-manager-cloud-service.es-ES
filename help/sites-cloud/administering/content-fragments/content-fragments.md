@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2058'
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en u
 >
 >Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** son funciones distintas de AEM:
 >* Los **fragmentos de contenido** son contenidos editoriales, con definición y estructura, pero sin diseño y/o maquetación visuales adicionales. Pueden utilizarse para acceder a datos estructurados, incluidos textos, números y fechas, entre otros.
->* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
+>* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web.
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 >
