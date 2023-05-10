@@ -4,9 +4,9 @@ description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Exp
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1541'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Las consultas persistentes son consultas de GraphQL que se crean y almacenan en 
 >
 >Se recomiendan las consultas persistentes. Consulte [Prácticas recomendadas para consultas de GraphQL (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) para obtener más información y la configuración de Dispatcher relacionada.
 
-El [IDE de GraphiQL](/help/headless/graphql-api/graphiql-ide.md) está disponible en AEM para que desarrolle, pruebe y mantenga sus consultas de GraphQL antes de la [transferencia a su entorno de producción](#transfer-persisted-query-production). Para los casos que necesitan personalización (por ejemplo, cuando [personalización de la caché](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) puede utilizar la API; consulte el ejemplo cURL proporcionado en [Conservación de una consulta de GraphQL](#how-to-persist-query).
+El [IDE de GraphiQL](/help/headless/graphql-api/graphiql-ide.md) está disponible en AEM para que desarrolle, pruebe y mantenga sus consultas de GraphQL antes de la [transferencia a su entorno de producción](#transfer-persisted-query-production). Para los casos que necesitan personalización (por ejemplo, cuando se [personaliza la caché](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) puede utilizar la API; consulte el ejemplo de cURL que se proporciona en [Persistencia de una consulta de GraphQL](#how-to-persist-query).
 
 ## Consultas y puntos de conexión persistentes {#persisted-queries-and-endpoints}
 
@@ -59,7 +59,7 @@ Existen varios métodos para hacer que persistan las consultas, entre los que se
 * cURL: consulte el siguiente ejemplo
 * Otras herramientas, incluido [Postman](https://www.postman.com/)
 
-El IDE de GraphiQL es el método **preferido** para consultas persistentes. Para mantener una consulta determinada utilizando la variable **cURL** herramienta de línea de comandos:
+El IDE de GraphiQL es el método **preferido** para consultas persistentes. Para mantener una consulta determinada utilizando la herramienta línea de comandos **cURL**:
 
 1. Prepare la consulta colocándola en la nueva URL de punto de conexión `/graphql/persist.json/<config>/<persisted-label>`.
 
@@ -261,11 +261,11 @@ Tenga en cuenta que `%3B` es la codificación UTF-8 para `;` y `%3D` es la codif
 
 ## Almacenamiento en caché de las consultas persistentes {#caching-persisted-queries}
 
-Se recomiendan las consultas persistentes, ya que se pueden almacenar en caché en la variable [Dispatcher](/help/headless/deployment/dispatcher.md) y capas de la red de distribución de contenido (CDN), lo que mejora en última instancia el rendimiento de la aplicación cliente solicitante.
+Se recomiendan las Consultas persistentes, ya que se pueden almacenar en caché en las capas de [Dispatcher](/help/headless/deployment/dispatcher.md) y la Red de distribución de contenido (CDN), mejorando finalmente el rendimiento de la aplicación cliente solicitante.
 
 De forma predeterminada, AEM invalidará la caché en función de una definición de tiempo de vida (TTL). Estos TTL se pueden definir mediante los siguientes parámetros. Se puede acceder a estos parámetros de varias formas, con variaciones en los nombres según el mecanismo utilizado:
 
-| Tipo de caché | [Encabezado HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configuración de OSGi  | Cloud Manager |
+| Tipo de caché | [Encabezado de HTTP](https://developer.mozilla.org/es-ES/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configuración de OSGi  | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | Explorador | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
 | La red de distribución de contenido (CDN) | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
@@ -286,10 +286,10 @@ En las instancias de autor, los valores predeterminados son:
 Estos:
 
 * no se puede sobrescribir:
-   * con una configuración OSGi
+   * con una configuración de OSGi
 * se puede sobrescribir:
    * mediante una solicitud que define la configuración del encabezado HTTP mediante cURL; debe incluir los ajustes adecuados para `cache-control` y/o `surrogate-control`; para ver ejemplos, consulte [Administración de la caché en el nivel de consulta persistente](#cache-persisted-query-level)
-   * si especifica valores en la variable **Encabezados** del [GraphiQL IDE](#http-cache-headers-graphiql-ide)
+   * si especifica valores en el cuadro de diálogo **Encabezados** del [GraphiQL IDE](#http-cache-headers-graphiql-ide)
 
 ### Publicación de instancias {#publish-instances}
 
@@ -304,21 +304,21 @@ Se pueden sobrescribir:
 
 * [desde el IDE de GraphQL](#http-cache-headers-graphiql-ide)
 
-* [en el nivel de consulta persistente](#cache-persisted-query-level); esto implica publicar la consulta en AEM usando cURL en la interfaz de línea de comandos y publicar la consulta persistente.
+* [en el Nivel de Consulta persistente](#cache-persisted-query-level); esto implica publicar la consulta en AEM usando cURL en la interfaz de línea de comandos y publicar la Consulta persistente.
 
 * [con variables de Cloud Manager](#cache-cloud-manager-variables)
 
-* [con una configuración OSGi](#cache-osgi-configration)
+* [con una configuración de OSGi](#cache-osgi-configration)
 
 ### Administración de encabezados de caché HTTP en el IDE de GraphiQL {#http-cache-headers-graphiql-ide}
 
 El IDE de GraphiQL: consulte [Guardado de consultas persistentes](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
-### Administración de la caché en el nivel de consulta persistente {#cache-persisted-query-level}
+### Administración de la caché en el Nivel de consulta persistente {#cache-persisted-query-level}
 
 Esto implica publicar la consulta en AEM usando cURL en la interfaz de línea de comandos.
 
-Para ver un ejemplo del método de PUT (crear):
+Para ver un ejemplo del método PUT (crear):
 
 ```bash
 curl -u admin:admin -X PUT \
@@ -327,7 +327,7 @@ curl -u admin:admin -X PUT \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-Para ver un ejemplo del método de POST (actualización):
+Para ver un ejemplo del método POST (actualización):
 
 ```bash
 curl -u admin:admin -X POST \
@@ -336,7 +336,7 @@ curl -u admin:admin -X POST \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-El `cache-control` se puede configurar en el momento de la creación (PUT) o más tarde (por ejemplo, mediante una petición POST). El control de caché es opcional al crear la consulta persistente, ya que AEM puede proporcionar el valor predeterminado. Consulte [Conservación de una consulta de GraphQL](#how-to-persist-query), por ejemplo, si persiste una consulta utilizando cURL.
+El `cache-control` se puede configurar en el momento de la creación (PUT) o más tarde (por ejemplo, mediante una petición POST). El control de caché es opcional al crear la consulta persistente, ya que AEM puede proporcionar el valor predeterminado. Consulte [Cómo hacer persistir una consulta de GraphQL](#how-to-persist-query), para ver un ejemplo de persistencia de una consulta utilizando cURL.
 
 ### Administración de la caché con variables de Cloud Manager {#cache-cloud-manager-variables}
 
@@ -351,22 +351,22 @@ El `cache-control` se puede configurar en el momento de la creación (PUT) o má
 
 ### Administración de la caché con una configuración OSGi {#cache-osgi-configration}
 
-Para administrar la caché globalmente, puede [configuración de la configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para el **Configuración del servicio de consulta persistente**.
+Para administrar la caché globalmente, puede [configurar la configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para la **Configuración del servicio de consulta persistente**.
 
 >[!NOTE]
 >
->La configuración OSGi solo es adecuada para instancias de publicación. La configuración existe en instancias de autor, pero se ignora.
+>La configuración de OSGi solo es adecuada para instancias de publicación. La configuración existe en instancias de autor, pero se ignora.
 
-La configuración OSGi predeterminada para instancias de publicación:
+La configuración de OSGi predeterminada para instancias de publicación:
 
 * lee las variables de Cloud Manager si están disponibles:
 
-   | Propiedad de configuración OSGi | lee esto | Variable de Cloud Manager |
+   | Propiedad de configuración de OSGi | lee esto | Variable de Cloud Manager |
    |--- |--- |--- |
-   | `cacheControlMaxAge` | reads | `graphqlCacheControl` |
-   | `surrogateControlMaxAge` | reads | `graphqlSurrogateControl` |
-   | `surrogateControlStaleWhileRevalidate` | reads | `graphqlStaleWhileRevalidate` |
-   | `surrogateControlStaleIfError` | reads | `graphqlStaleIfError` |
+   | `cacheControlMaxAge` | lee | `graphqlCacheControl` |
+   | `surrogateControlMaxAge` | lee | `graphqlSurrogateControl` |
+   | `surrogateControlStaleWhileRevalidate` | lee | `graphqlStaleWhileRevalidate` |
+   | `surrogateControlStaleIfError` | lee | `graphqlStaleIfError` |
 
    {style="table-layout:auto"}
 
