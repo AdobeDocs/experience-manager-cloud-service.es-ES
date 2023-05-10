@@ -4,9 +4,9 @@ description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1058'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
