@@ -4,8 +4,8 @@ description: Visualización de registros de un conjunto de migraciones en la her
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '246'
+ht-degree: 39%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 >title="Visualización de registros"
 >abstract="Una vez finalizada la extracción de la ingesta, compruebe los registros para detectar si hay errores/advertencias. Cualquier error debe solucionarse inmediatamente, ya sea abordando los problemas notificados o poniéndose en contacto con el servicio de soporte técnico de Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=es#troubleshooting" text="Solución de problemas"
->additional-url="https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html" text="Contactar con el servicio de soporte técnico de Adobe"
+>additional-url="https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html?lang=es" text="Contactar con el servicio de soporte técnico de Adobe"
 
 Una vez completado cada paso (extracción e ingesta), compruebe los registros y busque errores.  Cualquier error debe solucionarse inmediatamente, ya sea abordando los problemas notificados o poniéndose en contacto con el servicio de soporte técnico de Adobe.
 

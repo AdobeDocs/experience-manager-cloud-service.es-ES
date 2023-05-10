@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
 source-wordcount: '1062'
-ht-degree: 37%
+ht-degree: 43%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Cree la estructura de contenido para la aplicación"
->abstract="A medida que sigue esta serie de guías interactivas, aprenderá a crear una estructura (conocida como el modelo de fragmento de contenido) que sirva como estructura base para el contenido sin encabezado."
+>abstract="A medida que siga esta serie de guías interactivas aprenderá a crear la estructura (conocida como el modelo de fragmento de contenido) que sirve como estructura base para su contenido sin encabezado."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
