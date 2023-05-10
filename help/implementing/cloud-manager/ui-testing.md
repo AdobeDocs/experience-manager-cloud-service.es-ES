@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
 workflow-type: tm+mt
 source-wordcount: '2238'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -257,7 +257,7 @@ Puede utilizar las funciones de ayuda para crear capturas de pantalla a través 
 * JavaScript: [comando takeScreenshot](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [comandos](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Si se crea un archivo de resultados de prueba durante una ejecución de prueba de interfaz de usuario, puede descargarlo desde Cloud Manager mediante la función `Download Details` debajo de [**Pruebas de IU personalizadas** step](/help/implementing/cloud-manager/deploy-code.md).
+Si se crea un archivo de resultados durante la ejecución de una prueba de IU, puede descargarlo desde Cloud Manager mediante el botón `Download Details`, debajo del paso [**Pruebas de IU personalizadas**.](/help/implementing/cloud-manager/deploy-code.md)
 
 ### Cargar archivos {#upload-files}
 

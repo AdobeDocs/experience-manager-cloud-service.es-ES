@@ -65,7 +65,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 
 
-## Crear un formulario adaptable (componentes básicos) {#create-an-adaptive-form-foundation-components}
+## Creación de un formulario adaptable (componentes básicos) {#create-an-adaptive-form-foundation-components}
 
 1. Acceda a la instancia de autor de [!DNL Experience Manager Forms]. Puede ser una instancia de nube o una instancia de desarrollo local.
 

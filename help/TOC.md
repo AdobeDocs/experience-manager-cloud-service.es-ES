@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
 workflow-type: tm+mt
 source-wordcount: '4066'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 98%
          + [Notas de la versión 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [Notas de la versión 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + Notas de la versión de mantenimiento de AEMaaCS {#maintenance}
-      + [Notas de la versión de mantenimiento actual](/help/release-notes/maintenance/latest.md)
+      + [Notas de la versión actuales sobre el mantenimiento](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
          + [Notas de la versión de mantenimiento de 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [Notas de la versión de mantenimiento de 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
@@ -147,7 +147,7 @@ ht-degree: 98%
    + [Compatibilidad con IMS para AEM as a Cloud Service](/help/security/ims-support.md)
    + [Compatibilidad con cookies del mismo sitio para AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
-   + [Consideraciones de seguridad as a Cloud Service AEM](/help/security/security-considerations.md)
+   + [Consideraciones de seguridad de AEM as a Cloud Service Security](/help/security/security-considerations.md)
 + Incorporación {#onboarding}
    + [Empiece aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=es)
    + Recorrido de incorporación {#journey}
@@ -179,7 +179,7 @@ ht-degree: 98%
       + [Creación de la estructura de contenidos de la aplicación](/help/trials/headless/content-structure.md)
       + [Creación de contenido sin encabezado](/help/trials/headless/create-content.md)
       + [Extracción de contenido mediante la API de GraphQL](/help/trials/headless/extract-content.md)
-      + [Recuperación de contenido JSON con JavaScript](/help/trials/headless/code-playground.md)
+      + [Recuperar contenido JSON con JavaScript](/help/trials/headless/code-playground.md)
 + Recorrido de migración de AEM as a Cloud Service {#migration-journey}
    + [Introducción al traslado de AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparación](/help/journey-migration/readiness.md)
@@ -556,7 +556,7 @@ ht-degree: 98%
          + Creación de un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
             + [Introducción a la creación de un formulario adaptable](/help/forms/introduction-forms-authoring.md)
             + [Crear un formulario adaptable](/help/forms/creating-adaptive-form.md)
-            + [Temas de referencia, plantillas y modelos de datos](/help/forms/reference-themes-templates-data-models.md)
+            + [Temáticas de referencia, plantillas y modelos de datos](/help/forms/reference-themes-templates-data-models.md)
             + [Creación de una plantilla](/help/forms/template-editor.md)
             + [Creación de un tema](/help/forms/themes.md)
             + [Diseño de un esquema JSON para un formulario adaptable](/help/forms/adaptive-form-json-schema-form-model.md)
@@ -891,7 +891,7 @@ ht-degree: 98%
       + [Complemento Maven del paquete de contenido](/help/implementing/developing/tools/maven-plugin.md)
       + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
       + [Uso del CRXDE Lite](/help/implementing/developing/tools/crxde.md)
-      + [el administrador de paquetes](/help/implementing/developing/tools/package-manager.md)
+      + [El administrador de paquetes](/help/implementing/developing/tools/package-manager.md)
       + [El externalizador de vínculos](/help/implementing/developing/tools/externalizer.md)
       + [El explorador de repositorios](/help/implementing/developing/tools/repository-browser.md)
    + Personalización {#personalization}
@@ -964,7 +964,7 @@ ht-degree: 98%
    + [Eliminación del índice de Lucene genérico](/help/operations/removal-generic-lucene-index.md)
    + [Prácticas recomendadas de consulta e indexación](/help/operations/query-and-indexing-best-practices.md)
 + Compatibilidad {#compliance}
-   + [cumplimiento en AEM as a Cloud Service](/help/compliance/home.md)
+   + [Cumplimiento en AEM as a Cloud Service](/help/compliance/home.md)
    + Privacidad de datos y preparación para la protección {#data-privacy}
       + [Preparación de AEM para la protección de datos y las normas de privacidad de datos](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
       + [Preparación de AEM Foundation para la protección de datos y normas de privacidad de datos](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)

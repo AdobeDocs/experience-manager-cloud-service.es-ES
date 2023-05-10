@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -65,9 +65,10 @@ Aquí se pueden ver tres áreas principales:
             * Abrir el fragmento correspondiente en el editor
             * Mostrar información sobre referencias
             * Mostrar información sobre las versiones de idioma del fragmento
-      * Al utilizar el ratón sobre los encabezados de columna, se mostrarán un selector de acciones desplegable y controles deslizantes de ancho. Esto le permite:
-         * Ordenar: seleccione la acción adecuada, ya sea ascendente o descendente. Así se ordenará toda la tabla según esa columna. La ordenación solo está disponible en las columnas adecuadas.
-         * Cambiar el tamaño de la columna mediante los controles deslizantes de acción o de anchura
+      * Al utilizar el ratón sobre los encabezados de columna, se mostrará un selector de acciones desplegable y controles deslizantes de anchura. Esto le permite lograr lo siguiente:
+         * Ordenar: seleccione la acción adecuada, ya sea ascendente o descendente.
+Así se ordenará toda la tabla según esa columna. La ordenación solo está disponible en las columnas adecuadas.
+         * Cambiar el tamaño de la columna: mediante los controles deslizantes de acción o de anchura
 
 ## Acciones {#actions}
 
@@ -162,25 +163,25 @@ Se mostrará una lista de columnas que puede ocultar o mostrar:
 
 El panel Filtro ofrece lo siguiente:
 
-* una selección de predicados; se pueden seleccionar y combinar uno o más predicados para crear el filtro
+* una selección de predicados; se pueden seleccionar uno o más predicados y combinarlos para crear el filtro
 * la oportunidad de **Guardar** su configuración
 * la opción recuperar un filtro de búsqueda guardada para reutilizarlo
 
 ![Consola Fragmentos de contenido: filtrado](assets/cfc-console-filter.png)
 
-### Filtro rápido {#fast-filtering}
+### Filtrado rápido {#fast-filtering}
 
 También puede seleccionar un predicado haciendo clic en un valor de columna específico de la lista. Puede seleccionar uno o más valores para combinar predicados.
 
-Por ejemplo, seleccione **Publicado** en el **Estado** columna:
+Por ejemplo, seleccione **Publicado** en la columna **Estado**:
 
 >[!NOTE]
 >
->El filtrado rápido solo es compatible con el **Modelo**, **Estado**, **Modificado por** y **Publicado por** columnas.
+>El filtrado rápido solo es compatible con las columnas **Modelo**, **Estado**, **Modificado por** y **Publicado por**.
 
 ![Consola Fragmentos de contenido: filtrado](assets/cfc-console-fast-filter-01.png)
 
-Una vez seleccionado, esto se muestra como un predicado de filtro y la lista se filtra según corresponda:
+Cuando se seleccione, aparecerá como un predicado de filtro y la lista se filtrará según corresponda:
 
 ![Consola Fragmentos de contenido: filtrado](assets/cfc-console-fast-filter-02.png)
 

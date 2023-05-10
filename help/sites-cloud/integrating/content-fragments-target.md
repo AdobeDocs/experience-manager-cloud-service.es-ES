@@ -5,7 +5,7 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
 source-wordcount: '2229'
-ht-degree: 65%
+ht-degree: 99%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 65%
 
 >[!CAUTION]
 >
->* Los fragmentos de contenido AEM se exportan al espacio de trabajo predeterminado de Adobe Target.
+>* Los fragmentos de contenido de AEM se exportan al espacio de trabajo predeterminado de Adobe Target.
 >* AEM debe integrarse con Adobe Target según las instrucciones de [Integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 
-Puede exportar [Fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md), creado en Adobe Experience Manager as a Cloud Service (AEM), en Adobe Target (Target). Luego pueden utilizarse como ofertas en actividades de Target para probar y personalizar experiencias a escala.
+Puede exportar [Fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md), creados en Adobe Experience Manager as a Cloud Service (AEM), a Adobe Target (Target). Luego pueden utilizarse como ofertas en actividades de Target para probar y personalizar experiencias a escala.
 
 Hay una opción disponible para exportar un fragmento de contenido a Adobe Target:
 
@@ -25,7 +25,7 @@ Hay una opción disponible para exportar un fragmento de contenido a Adobe Targe
 
 <!-- * GraphQL query ??? -->
 
-Para preparar la instancia para exportar AEM fragmentos de contenido a Adobe Target, debe:
+Para preparar la instancia para exportar fragmentos de contenido de AEM a Adobe Target, debe hacer lo siguiente:
 
 * [Integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Agregar la configuración de nube](#add-the-cloud-configuration)
@@ -34,7 +34,7 @@ Para preparar la instancia para exportar AEM fragmentos de contenido a Adobe Tar
 Después, puede:
 
 * [Exportar un fragmento de contenido a Adobe Target](#exporting-a-content-fragment-to-adobe-target)
-* [Uso de los fragmentos de contenido en Adobe Target](#using-your-content-fragments-in-adobe-target)
+* [Usar los fragmentos de contenido en Adobe Target](#using-your-content-fragments-in-adobe-target)
 * Y también [Eliminar un fragmento de contenido ya exportado a Adobe Target](#deleting-a-content-fragment-already-exported-to-adobe-target)
 
 Los fragmentos de contenido se pueden exportar al espacio de trabajo predeterminado en Adobe Target o a espacios de trabajo definidos por el usuario para Adobe Target.
@@ -68,19 +68,19 @@ Antes de exportar un fragmento, debe agregar la **Configuración de nube** para 
 
 * especificar las opciones de formato que se utilizarán para la exportación
 * seleccionar un espacio de trabajo de Target como destino
-* seleccione un dominio externalizador para reescribir referencias en el fragmento de contenido (opcional)
+* seleccionar un dominio externalizador para reescribir referencias en el fragmento de contenido (opcional)
 
 Las opciones requeridas se pueden seleccionar en **Propiedades de página** de la carpeta o fragmento necesarios; la especificación se hereda según sea necesario.
 
-1. Vaya a la **Recursos** consola.
+1. Vaya a la consola **Recursos**.
 
 1. Abra **Propiedades de página** para la carpeta o fragmento correspondiente.
 
    >[!NOTE]
    >
-   >Si agrega la configuración de nube a la carpeta principal del fragmento de contenido, todos los elementos secundarios heredan la configuración.
+   >Si agrega la configuración de nube a la carpeta principal del fragmento de contenido, la configuración la heredan todas las tareas secundarias.
    >
-   >Si agrega la configuración de nube al propio fragmento de contenido, esta se hereda de todas las variaciones.
+   >Si añade la configuración de la nube al propio fragmento de contenido, la heredarán todas las variaciones.
 
 1. Seleccione la pestaña **Cloud Services**.
 
@@ -92,7 +92,7 @@ Las opciones requeridas se pueden seleccionar en **Propiedades de página** de l
    >
    >El formato JSON de una oferta de fragmento de contenido se puede personalizar. Para ello, defina un componente de fragmento de contenido del cliente y, a continuación, anote cómo exportar sus propiedades en el componente Modelo Sling.
    >
-   >Consulte el componente principal: [Componentes principales: fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+   >Consulte el componente principal: [Componentes principales: fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es)
 
 1. En **Adobe Target** seleccione:
 
@@ -107,7 +107,7 @@ Las opciones requeridas se pueden seleccionar en **Propiedades de página** de l
    >
    > Se configura un externalizador de AEM cuando desea que el contenido exportado apunte a un dominio *publicar* específico. Para obtener más información, consulte [Configuración del externalizador de vínculos AEM](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer).
    >
-   > Tenga en cuenta también que los dominios externalizadores solo son relevantes para el contenido del fragmento de contenido que se envía a Target y no para los metadatos como Ver contenido de la oferta.
+   > Tenga en cuenta también que los dominios externalizadores solo son relevantes para el contenido del fragmento de contenido que se envía a Target, no para los metadatos como Ver contenido de la oferta.
 
    Por ejemplo, para una carpeta:
 
@@ -123,7 +123,7 @@ Las opciones requeridas se pueden seleccionar en **Propiedades de página** de l
 
 >[!IMPORTANT]
 >
->Añadir una nueva configuración de heredado es un caso especial que solo se admite para la exportación de fragmentos de contenido.
+>Añadir una nueva configuración heredada es un caso especial que solo se admite para la exportación de fragmentos de contenido.
 
 Después [adición de la configuración de nube](#add-the-cloud-configuration) para utilizar Experience Platform Launch, para integrar inicialmente AEM con Adobe Target, también debe integrarlo manualmente con Adobe Target mediante una configuración heredada.
 
@@ -140,7 +140,7 @@ Utilice el siguiente procedimiento para crear una configuración de nube de Targ
 1. Vaya a **Cloud Services heredados** a través de la variable **Logotipo de AEM** > **Herramientas** > **Cloud Services** > **Cloud Services heredados**.
 Por ejemplo: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   Se abre la página de información general de **Adobe Experience Cloud**
+   Se abre la página de información general de **Adobe Experience Cloud**.
 
 1. En la sección **Adobe Target**, haga clic en **Configurar ahora**.
 1. En el cuadro de diálogo **Crear configuración**:
@@ -315,14 +315,14 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >Para los activos de medios, como las imágenes, solo se exporta una referencia a Target. El recurso en sí permanece almacenado en AEM Assets y se entrega desde la instancia de publicación de AEM.
 >
->Debido a esto, el fragmento de contenido, con todos los recursos relacionados, debe publicarse antes de exportarse a Target.
+>Debido a esto, el fragmento de contenido, con todos los activos relacionados, debe publicarse antes de exportarse a Target.
 
-Para exportar un fragmento de contenido de AEM a Target (después de especificar la configuración de la nube):
+Para exportar un fragmento de contenido de AEM a Target (después de especificar la configuración de nube):
 
-1. Vaya al fragmento de contenido en la sección **Recursos** consola.
-1. Seleccione el fragmento de contenido que desea exportar a target.
+1. Vaya al fragmento de contenido en la consola **Recursos**.
+1. Seleccione el fragmento de contenido que desea exportar a Target.
 
-1. Toque o haga clic **Exportación a ofertas de Adobe Target**.
+1. Toque o haga clic en **Exportar a ofertas de Adobe Target**.
 
    ![Exportar a Adobe Target](assets/cfm-export-target-01.png)
 
@@ -342,15 +342,15 @@ Para exportar un fragmento de contenido de AEM a Target (después de especificar
    >
    >Las acciones reales mostradas dependerán del estado del fragmento y de los recursos relacionados.
    >
-   >Si ya se ha publicado todo y no se ha modificado nada desde entonces, este paso se transferirá.
+   >Si ya se ha publicado todo y no se ha modificado nada desde entonces, se omitirá este paso.
 
    >[!NOTE]
    >
-   >Selección **Publicación** publicará el fragmento de contenido inmediatamente y lo enviará a Target.
+   >Si selecciona **Publicar**, el fragmento de contenido se publicará de inmediato y se enviará a Target.
 
 1. Toque o haga clic en **Aceptar** en el cuadro de diálogo de confirmación.
 
-   El fragmento de contenido debería estar en Target.
+   El fragmento de contenido debería estar ahora en Target.
 
    >[!NOTE]
    >
@@ -358,7 +358,7 @@ Para exportar un fragmento de contenido de AEM a Target (después de especificar
 
    >[!NOTE]
    >
-   >Al ver un fragmento de contenido en Adobe Target, la variable *última modificación* la fecha en la que se ve es la fecha en la que se modificó por última vez el fragmento en AEM, no la fecha en la que se exportó por última vez a Adobe Target.
+   >Al ver un fragmento de contenido en Adobe Target, la fecha de *última modificación* que se ve es la fecha en la que se modificó por última vez el fragmento en AEM, no la fecha en la que se exportó por última vez a Adobe Target.
 
 >[!NOTE]
 >
@@ -366,34 +366,34 @@ Para exportar un fragmento de contenido de AEM a Target (después de especificar
 
 ## Uso de los fragmentos de contenido en Adobe Target {#using-your-content-fragments-in-adobe-target}
 
-Después de realizar las tareas anteriores, el fragmento de contenido se muestra en la página Ofertas de Target. Consulte la [documentación específica de Target](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) para aprender lo que se puede lograr allí.
+Después de realizar las tareas anteriores, el fragmento de contenido se muestra en la página Ofertas de Target. Consulte la [documentación específica de Target](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=es) para aprender lo que se puede lograr allí.
 
 >[!NOTE]
 >
->Al ver un fragmento de contenido en Adobe Target, la variable *última modificación* la fecha en la que se ve es la fecha en la que se modificó por última vez el fragmento en AEM, no la fecha en la que se exportó por última vez a Adobe Target.
+>Al ver un fragmento de contenido en Adobe Target, la fecha de *última modificación* que se ve es la fecha en la que se modificó por última vez el fragmento en AEM, no en la que se exportó por última vez a Adobe Target.
 
 ## Eliminación de un fragmento de contenido ya exportado a Adobe Target {#deleting-a-content-fragment-already-exported-to-adobe-target}
 
-Al igual que con la exportación, la eliminación de un fragmento de contenido de Adobe Target también se puede seleccionar desde la barra de herramientas superior del **Recursos** una vez seleccionado el fragmento:
+Al igual que con la exportación, la eliminación de un fragmento de contenido de Adobe Target también se puede efectuar desde la barra de herramientas superior de la consola **Recursos** una vez seleccionado:
 
 ![Eliminar en Adobe Target](assets/cfm-export-target-02.png)
 
-La eliminación de un fragmento de contenido que ya se ha exportado a Target puede causar problemas si el fragmento ya se está utilizando en una oferta de Target. Si se elimina el fragmento, la oferta quedaría inutilizable, ya que AEM está entregando el contenido del fragmento.
+La eliminación de un fragmento de contenido que ya se ha exportado a Target puede causar problemas si ya se está utilizando en una oferta de Target. Si se elimina el fragmento, la oferta quedaría inutilizable, ya que AEM está entregando el contenido del fragmento.
 
 <!-- if the information about deleting-if-used correct, or is it not allowed at all? -->
 
 Para evitar estas situaciones, haga lo siguiente:
 
-* Si el fragmento de contenido no se está utilizando en una actividad, AEM permite al usuario eliminar el fragmento sin un mensaje de advertencia.
-* Si una actividad de Target está utilizando actualmente el fragmento de contenido, un mensaje de error advierte al usuario AEM de las posibles consecuencias que tendrá en la actividad la eliminación del fragmento.
+* Si el fragmento de contenido no se está utilizando en una actividad, AEM permite al usuario eliminarlo sin ningún mensaje de advertencia.
+* Si una actividad de Target está utilizando actualmente el fragmento de contenido, un mensaje de error advierte al usuario de AEM de las posibles consecuencias que tendrá la eliminación del fragmento en la actividad.
 
-   El mensaje de error de AEM no prohíbe al usuario eliminar (forzosamente) el fragmento de contenido. Si se elimina el fragmento de contenido:
+   El mensaje de error de AEM no impide que el usuario elimine (a la fuerza) el fragmento de contenido. Si se elimina el fragmento de contenido:
 
-   * La oferta de Target con AEM fragmento de contenido puede mostrar un comportamiento no deseado
+   * La oferta de Target con el fragmento de contenido de AEM puede mostrar un comportamiento no deseado
 
-      * Es probable que la oferta se siga procesando, ya que el fragmento de contenido se insertó en Target
-      * Puede que cualquier referencia del fragmento de contenido no funcione correctamente si también se eliminaron recursos a los que se hace referencia en AEM.
-   * Por supuesto, cualquier modificación adicional en el fragmento de contenido es imposible, ya que el fragmento de contenido ya no existe en AEM.
+      * Es probable que la oferta se siga procesando, ya que el del fragmento de contenido se insertó en Target
+      * Puede que cualquier referencia en el fragmento de contenido no funcione correctamente si también se eliminaron activos a los que se hace referencia en AEM.
+   * Por supuesto, cualquier modificación adicional en el fragmento de contenido es imposible, ya que ya no existe en AEM.
 
 
 ## Otros recursos {#further-resources}
@@ -404,10 +404,10 @@ Para obtener más información, consulte:
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [Componentes principales: fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [Componentes principales: fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es)
 
 * [Desarrollo de Adobe Target](https://developers.adobetarget.com/)
 
-* [Adobe Target: Uso de AEM fragmentos de contenido en actividades de Target para ayudar en la optimización o personalización](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
+* [Adobe Target: uso de fragmentos de contenido de AEM en actividades de Target para ayudar en la optimización o personalización](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=es)
 
-* [Adobe Target: Descripción general de los fragmentos de experiencia AEM y los fragmentos de contenido](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
+* [Adobe Target: información general sobre los fragmentos de experiencias y los fragmentos de contenido de AEM](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=es)

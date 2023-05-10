@@ -5,7 +5,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 63d3d417f861cb35a231a1b92e3ee62ccbd2d964
 workflow-type: tm+mt
 source-wordcount: '643'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Para prepararse para una versión:
 
 ## Información clave de la versión {#key-articles}
 
-* [Notas de la versión de funciones](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Notas de la versión de la funcionalidad](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [Notas de la versión de mantenimiento](/help/release-notes/maintenance/latest.md)
 * [Novedades](what-is-new.md)
 * [Cambios importantes](aem-cloud-changes.md)

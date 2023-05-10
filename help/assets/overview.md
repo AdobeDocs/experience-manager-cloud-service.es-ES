@@ -8,7 +8,7 @@ exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Las empresas necesitan soporte para una amplia variedad de formatos de archivo y
 
 Para empezar, comprenda los [beneficios de una oferta nativa de la nube](#solution-benefits). Eche un vistazo a los [cambios notables en Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) que también afectan a Experience Manager Assets como continuación a los [cambios notables en Recursos](/help/assets/assets-cloud-changes.md).
 
-Siga leyendo para conocer [detalles sobre las nuevas funcionalidades de Recursos](#whats-new-assets) y [sus problemas conocidos](/help/release-notes/maintenance/latest.md). Consulte una lista de [funcionalidad obsoleta o eliminada](/help/release-notes/deprecated-removed-features.md) para saber qué se elimina en esta versión. Por último, comprenda los términos de Experience Manager con la ayuda de este [glosario](/help/overview/terminology.md).
+Siga leyendo para conocer [detalles sobre las nuevas funcionalidades de Recursos](#whats-new-assets) y [sus problemas conocidos](/help/release-notes/maintenance/latest.md). Consulte una lista de [funcionalidades obsoletas o eliminadas](/help/release-notes/deprecated-removed-features.md) para saber qué se quita en esta versión. Por último, comprenda los términos de Experience Manager con la ayuda de este [glosario](/help/overview/terminology.md).
 
 ## Beneficios de la solución {#solution-benefits}
 
