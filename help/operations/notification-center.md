@@ -3,9 +3,9 @@ title: Centro de notificaciones
 description: Aproveche el Centro de notificaciones para tomar medidas adecuadas sobre problemas y conocer otra información importante
 hidefromtoc: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: b72d22e8788c04ab4faa3616a4a0ce5e6d8ce991
+source-git-commit: 283493187142e1aeaaf272818bb9b7921841ed67
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '810'
 ht-degree: 35%
 
 ---
@@ -37,7 +37,9 @@ Desde el Centro de notificaciones, puede seleccionar un programa y un entorno es
 Siga los pasos a continuación para configurar la recepción de notificaciones:
 
 1. Cree los siguientes perfiles de producto, tal como se describe [en este artículo](/help/journey-onboarding/notification-profiles.md), también asignando los ID de Adobe correspondientes de su organización a esos perfiles. Esto permite a un administrador determinar qué usuarios cumplen los requisitos para recibir estas notificaciones.
-1. Cada usuario asignado asignado en el paso anterior puede configurar cómo desea recibir sus notificaciones. En el [página de preferencias del Experience Cloud](https://experience.adobe.com/preferences/notification-section), asegúrese de que la suscripción del Experience Manager esté habilitada y la variable **Incidentes operativos** y **Recomendaciones dinámicas** las casillas de verificación están seleccionadas. Además, se recomienda que la sección Correos electrónicos esté configurada como **Notificaciones instantáneas** por lo tanto, las notificaciones se reciben inmediatamente cuando se produce un incidente.
+1. Cada usuario asignado asignado en el paso anterior puede configurar cómo desea recibir sus notificaciones. En el [página de preferencias del Experience Cloud](https://experience.adobe.com/preferences/notification-section), asegúrese de que la suscripción del Experience Manager esté habilitada y la variable **Incidentes operativos** y **Recomendaciones dinámicas** las casillas de verificación están seleccionadas para las columnas de correo electrónico y en la aplicación (consulte la imagen siguiente). Además, se recomienda que la sección Correos electrónicos esté configurada como **Notificaciones instantáneas** por lo tanto, las notificaciones se reciben inmediatamente cuando se produce un incidente.
+
+![Configurar suscripciones](/help/operations/assets/configure-subscriptions.png)
 
 >[!NOTE]
 >Las notificaciones funcionan a nivel de organización, por lo que los suscriptores recibirán notificaciones para todos los programas y entornos dentro de esos programas.
