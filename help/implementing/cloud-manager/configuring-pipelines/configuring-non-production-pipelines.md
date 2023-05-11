@@ -3,10 +3,10 @@ title: Configurar canalizaciones que no sean de producción
 description: Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 0dd1cfba81eb8dfab3e002333868ec79ebc5e96c
+source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1369'
+ht-degree: 100%
 
 ---
 
@@ -94,12 +94,6 @@ Para finalizar la configuración de la canalización de no producción de códig
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
 ### Código de pila completa {#full-stack-code}
-
->[!NOTE]
->
->* Esta función aún no está disponible de forma general. Se prevé que se pondrá en marcha en junio de 2023.
->* Si desea probar la función y proporcionar comentarios para mejorarla, póngase en contacto con el representante del Adobe.
-
 
 Una canalización de código de pila completa implementa simultáneamente compilaciones de código de back-end y front-end que contienen una o más aplicaciones de servidor AEM junto con la configuración HTTPD/Dispatcher. Consulte el documento [Canalizaciones CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) para obtener más información sobre este tipo de canalización.
 
