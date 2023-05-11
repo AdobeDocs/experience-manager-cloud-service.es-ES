@@ -241,8 +241,8 @@ Puede ver y editar las propiedades de un fragmento utilizando la pestaña [Metad
 ## Publicación y referencia de un fragmento {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-Si el fragmento se basa en un modelo, debe asegurarse de que [el modelo se ha publicado](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
-Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
+>Si el fragmento se basa en un modelo, debe asegurarse de que [el modelo se ha publicado](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
 
 Los fragmentos de contenido deben publicarse para su uso en el entorno de publicación.
 
@@ -260,17 +260,17 @@ Los fragmentos de contenido deben publicarse para su uso en el entorno de public
 Además, cuando [publique una página que utiliza el fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); el fragmento se enumerará en las referencias de página.
 
 >[!CAUTION]
-Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
+>Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
 
 ## Cancelación de la publicación de un fragmento {#unpublishing-a-fragment}
 
 Para cancelar la publicación de fragmentos de contenido, seleccione uno o varios fragmentos y, a continuación, **Cancelar la publicación**.
 
 >[!NOTE]
-La acción **Cancelar la publicación** estará visible cuando los fragmentos publicados estén disponibles.
+>La acción **Cancelar la publicación** estará visible cuando los fragmentos publicados estén disponibles.
 
 >[!CAUTION]
-Si ya se hace referencia al fragmento desde otro fragmento o desde una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar.
+>Si ya se hace referencia al fragmento desde otro fragmento o desde una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar.
 
 ## Eliminación de un fragmento {#deleting-a-fragment}
 
@@ -280,13 +280,13 @@ Para eliminar un fragmento:
 2. Seleccione el fragmento.
 
    >[!NOTE]
-   La acción **Eliminar** no se encuentra disponible como Acción rápida.
+   >La acción **Eliminar** no se encuentra disponible como Acción rápida.
 
 3. En la barra de herramientas, seleccione **Eliminar**.
 4. Confirme la acción **Eliminar**.
 
    >[!CAUTION]
-   Si ya se hace referencia al fragmento a partir de otro fragmento o página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se eliminará de cualquier página de contenido.
+   >Si ya se hace referencia al fragmento a partir de otro fragmento o página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se eliminará de cualquier página de contenido.
 
 ## Búsqueda de referencias principales de su fragmento {#parent-references-fragment}
 
@@ -299,7 +299,7 @@ Se puede acceder a los detalles de las copias de idioma desde la columna **Idiom
 ## Cronología de los fragmentos de contenido {#timeline-for-content-fragments}
 
 >[!NOTE]
-Esta funcionalidad solo está disponible en la consola **Recursos**
+>Esta funcionalidad solo está disponible en la consola **Recursos**
 
 Además de las opciones estándar, [Cronología](/help/assets/manage-digital-assets.md#timeline) proporciona información y acciones específicas para fragmentos de contenido:
 
@@ -319,14 +319,13 @@ Además de las opciones estándar, [Cronología](/help/assets/manage-digital-ass
    * **Eliminar**
 
 >[!NOTE]
-Los comentarios son lo siguiente:
-* De funcionalidad estándar para todos los recursos
-* Realizados en la cronología
-* Relacionados con el recurso de fragmento
->
-Las anotaciones (para fragmentos de contenido) son lo siguiente:
-* Introducidas en el editor de fragmentos
-* Específicas para un segmento seleccionado de texto dentro del fragmento
+>Los comentarios son lo siguiente:
+>* De funcionalidad estándar para todos los recursos
+>* Realizados en la cronología
+>* Relacionados con el recurso de fragmento
+>Las anotaciones (para fragmentos de contenido) son lo siguiente:
+>* Introducidas en el editor de fragmentos
+>* Específicas para un segmento seleccionado de texto dentro del fragmento
 >
 
 
@@ -337,7 +336,7 @@ Por ejemplo:
 ## Comparación de versiones de fragmento {#comparing-fragment-versions}
 
 >[!NOTE]
-Esta funcionalidad solo está disponible en la consola **Recursos**
+>Esta funcionalidad solo está disponible en la consola **Recursos**
 
 La acción **Comparar con actual** está disponible en la [Cronología](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) después de seleccionar una versión específica.
 
@@ -360,14 +359,14 @@ Se mostrarán una al lado de la otra, donde:
 * **Listo** le devolverá a la consola
 
 >[!NOTE]
-No se puede editar el contenido del fragmento al comparar fragmentos.
+>No se puede editar el contenido del fragmento al comparar fragmentos.
 
 ![comparación](assets/cfm-managing-06.png)
 
 ## Reversión a una versión  {#reverting-to-a-version}
 
 >[!NOTE]
-Esta funcionalidad solo está disponible en la consola **Recursos**
+>Esta funcionalidad solo está disponible en la consola **Recursos**
 
 Puede volver a una versión específica del fragmento:
 
