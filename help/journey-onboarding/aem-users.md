@@ -4,10 +4,10 @@ description: Una vez que el administrador del sistema haya configurado los recur
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 96%
 
 ---
 
@@ -80,6 +80,8 @@ Si le interesa cómo crean y administran los desarrolladores y los administrador
 >Ahora que se ha incorporado, puede [aprender a agregar fácilmente el complemento de demostraciones de referencia de AEM](/help/journey-sites/demos-add-on/overview.md) a un entorno de zona protegida con una configuración mínima de AEM, y puede probar las potentes características de AEM con ricos ejemplos basados en las mejores prácticas.
 
 ## Recursos adicionales {#additional-resources}
+
+Los siguientes son recursos adicionales y opcionales si desea ir más allá del contenido del recorrido de incorporación.
 
 [Guía rápida para la creación de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md): Empiece aquí para ver una descripción general rápida de los fundamentos de la creación en AEM.
 [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md): Si desea crear contenido sin encabezado, siga esta introducción guiada.

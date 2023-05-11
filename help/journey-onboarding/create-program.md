@@ -3,10 +3,10 @@ title: Crear un programa
 description: Aprenda a utilizar Cloud Manager para crear su primer programa.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 100%
+source-wordcount: '638'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Ahora que se ha creado el primer programa, puede crear entornos para él. Debe c
 
 ## Recursos adicionales {#additional-resources}
 
-Siga los recursos adicionales para obtener más información:
+Los siguientes son recursos adicionales y opcionales si desea ir más allá del contenido del recorrido de incorporación.
 
 * [Programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): obtenga información sobre la jerarquía de Cloud Manager y cómo encajan los distintos tipos de programas en su estructura y cómo difieren.
 * [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md): aprenda a utilizar Cloud Manager para crear su propio programa de zona protegida para formación, demostración, POC u otros fines que no sean de producción.

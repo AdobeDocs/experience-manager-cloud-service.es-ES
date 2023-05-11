@@ -4,10 +4,10 @@ description: Una vez configurados los recursos de nube, deberá otorgar a su equ
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: fd0716a95d66908e215ed44bc773ed3c26e0382b
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 100%
+source-wordcount: '788'
+ht-degree: 97%
 
 ---
 
@@ -100,6 +100,8 @@ Sin embargo, si desea comprender mejor cómo utilizan el sistema los autores y d
 * [Tareas del usuario de AEM](aem-users.md): aquí aprenderá a acceder al entorno de AEM donde puede empezar a crear contenido.
 
 ## Recursos adicionales {#additional-resources}
+
+Los siguientes son recursos adicionales y opcionales si desea ir más allá del contenido del recorrido de incorporación.
 
 * [Administración de productos y acceso de usuarios en Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console): aprenda a utilizar Admin Console para administrar el acceso de uso.
 * [Guía de configuración del acceso a AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=es): consulte esta explicación abreviada para obtener más información sobre la configuración de los usuarios de IMS de Adobe, los grupos de usuarios y los perfiles de producto en el Admin Console.

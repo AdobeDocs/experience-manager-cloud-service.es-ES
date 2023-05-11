@@ -3,10 +3,10 @@ title: Crear entornos
 description: Aprenda a utilizar Cloud Manager para crear sus primeros entornos.
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 100%
+source-wordcount: '773'
+ht-degree: 86%
 
 ---
 
@@ -30,12 +30,13 @@ Los entornos se sientan debajo de los programas dentro de la jerarquía de Cloud
 
 Si recuerdan el ejemplo de WKND Travel and Adventure Enterprises teórico, que es un arrendatario que se centra en medios relacionados con viajes, podrían tener dos programas: un programa Sites para su división WKND Magazine y un programa de activos para la división WKND Media. Es probable que cada programa tenga un par de entornos, como un entorno de producción que sirve al tráfico real del sitio y un entorno de desarrollo para probar el nuevo código de aplicación.
 
-Existen tres tipos diferentes de entornos:
+Existen cuatro tipos diferentes de entornos:
 
 * **Producción y ensayo**: los entornos de producción y ensayo están disponibles en pareja y se utilizan para fines de producción y prueba, respectivamente.
 * **Desarrollo**: se puede crear un entorno de desarrollo para fines de desarrollo y prueba, y solo se puede asociar con canalizaciones que no sean de producción.
+* **Desarrollo rápido**: Un entorno de desarrollo rápido (RDE) permite al desarrollador implementar y revisar cambios rápidamente, minimizando la cantidad de tiempo necesario para probar funciones que han demostrado funcionar en un entorno de desarrollo local.
 
-Para los fines de este recorrido de integración, debe crear un entorno de desarrollo.
+Para los fines de este recorrido de integración, para empezar con un mínimo, creará un entorno de desarrollo que puede utilizar para explorar AEM capacidades de as a Cloud Service.
 
 ## Crear entornos {#creating-environments}
 
@@ -81,7 +82,9 @@ Por lo tanto, debe continuar con su recorrido de incorporación revisando el doc
 
 ## Recursos adicionales {#additional-resources}
 
-Siga los recursos adicionales para obtener más información:
+Los siguientes son recursos adicionales y opcionales si desea ir más allá del contenido del recorrido de incorporación.
 
 * [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md): obtenga información sobre los tipos de entornos que puede crear y cómo crearlos para su proyecto de Cloud Manager
 * [Uso de entornos de Adobe Cloud Manager:](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=es) los entornos de Cloud Manager están compuestos por los servicios de publicación, creación y Dispatcher de AEM. Aprenda cómo los distintos entornos admiten funciones y se pueden utilizar con diferentes canalizaciones de CD/CI.
+* [AEM consejos y trucos de campeón: tipos de entorno de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) : Vea este vídeo para obtener una descripción general de los tipos de entorno de Cloud Manager de un AEM campeón.
+* [Entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) - Consulte esta documentación para obtener detalles sobre cómo utilizar un RDE

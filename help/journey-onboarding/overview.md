@@ -2,10 +2,10 @@
 title: Introducción al Recorrido de incorporación a AEM as a Cloud Service
 description: Comience aquí para obtener una descripción general del recorrido guiado a través del proceso de incorporación para AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 100%
+source-wordcount: '1228'
+ht-degree: 95%
 
 ---
 
@@ -95,3 +95,9 @@ Ya está listo para iniciar su recorrido de incorporación de AEM as a Cloud Ser
 Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
 Si quiere saber cómo recomienda Adobe que su equipo se incorpore a su nueva aplicación de AEM as a Cloud Service, aquí es donde debe empezar.
+
+## Recursos adicionales {#additional-resources}
+
+Los siguientes son recursos adicionales y opcionales si desea ir más allá del contenido del recorrido de incorporación.
+
+* [Consejos y trucos AEM campeones: Guía de Cloud Manager para la incorporación](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Vea este vídeo para conocer los consejos de incorporación de Cloud Manager y el truco de un AEM campeón.

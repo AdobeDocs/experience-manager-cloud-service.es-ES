@@ -4,10 +4,10 @@ description: Una vez que el administrador del sistema haya configurado los recur
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 100%
+source-wordcount: '1419'
+ht-degree: 98%
 
 ---
 
@@ -143,6 +143,8 @@ Si le interesa cómo acceden y usan AEM as a Cloud Service los autores de conten
 >Ahora que se ha incorporado, puede [aprender a agregar fácilmente el complemento de demostraciones de referencia de AEM](/help/journey-sites/demos-add-on/overview.md) a un entorno de zona protegida con una configuración mínima de AEM, y puede probar las potentes características de AEM con ricos ejemplos basados en las mejores prácticas.
 
 ## Recursos adicionales {#additional-resources}
+
+Los siguientes son recursos adicionales y opcionales si desea ir más allá del contenido del recorrido de incorporación.
 
 * [Acceder a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md): Obtenga información sobre cómo acceder y administrar su repositorio de Git mediante la administración de cuentas de Git de autoservicio desde Cloud Manager.
 * [Uso de Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md): Aprenda a utilizar los repositorios de Git de Cloud Manager y a integrar su propio repositorio de Git administrado por los clientes con Cloud Manager.
