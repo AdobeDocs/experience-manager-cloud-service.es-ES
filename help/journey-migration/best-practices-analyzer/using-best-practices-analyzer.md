@@ -2,7 +2,7 @@
 title: Uso del analizador de prácticas recomendadas
 description: Uso del analizador de prácticas recomendadas
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
+source-git-commit: df1fdbe0f3590708e1da44864b6e08075a521b51
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 48%
@@ -28,7 +28,7 @@ Siga la sección siguiente para comprender las consideraciones importantes para 
 * BPA se admite en instancias AEM con la versión 6.1 o posterior.
 
    >[!NOTE]
-   > Consulte [Instalación en AEM 6.1](#installing-on-aem61) para requisitos especiales para instalar BPA en AEM 6.1.
+   >Consulte [Instalación en AEM 6.1](#installing-on-aem61) para requisitos especiales para instalar BPA en AEM 6.1.
 
 * BPA puede ejecutarse en cualquier entorno, pero se prefiere que se ejecute en un *Prueba* entorno.
 
@@ -100,14 +100,14 @@ Para filtrar los resultados relacionados con [ACS Commons](https://adobe-consult
    ![imagen](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-   > El icono del carril izquierdo aparecerá únicamente si el BPA detecta el uso de ACS Commons.
+   >El icono del carril izquierdo aparecerá únicamente si el BPA detecta el uso de ACS Commons.
 
 1. Desmarque la casilla para filtrar todos los hallazgos relacionados con ACS Commons. Debería ver un **Recuento de búsqueda filtrado** en el informe como se muestra en la imagen siguiente. El filtro también se aplica al informe cuando se exporta en formato CSV (valores separados por comas).
 
    ![imagen](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   > Los hallazgos de ACS Commons no deben ser ignorados. Consulte [documentación](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar la compatibilidad con AEM as a Cloud Service.
+   >Los hallazgos de ACS Commons no deben ser ignorados. Consulte [documentación](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar la compatibilidad con AEM as a Cloud Service.
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
