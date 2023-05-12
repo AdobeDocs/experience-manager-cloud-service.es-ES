@@ -3,10 +3,10 @@ title: Crear un programa
 description: Aprenda a utilizar Cloud Manager para crear su primer programa.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 97%
+source-wordcount: '686'
+ht-degree: 87%
 
 ---
 
@@ -51,11 +51,15 @@ Siga estos pasos para crear un programa de zona protegida.
 
 1. En la página de aterrizaje de Cloud Manager, haga clic en **Agregar programa** en la esquina superior derecha de la pantalla.
 
-   ![Página de aterrizaje de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![Página de aterrizaje de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. En el asistente Crear programa, seleccione **Configuración de una zona protegida**, proporcione un nombre de programa y haga clic en **Crear**.
+1. En el asistente crear programa, seleccione **Configuración de un simulador para pruebas** y proporcione un nombre de programa y toque o haga clic en **Continuar**.
 
    ![Creación de tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+
+1. En el **Configuración del simulador para pruebas** , puede elegir las soluciones que desea habilitar en el programa de simulación de pruebas. La variable **Sitios** y **Recursos** las soluciones siempre se incluyen en los programas de entornos limitados y se seleccionan automáticamente. Esto es suficiente para nuestro ejemplo de incorporación. Haga clic en **Crear**.
+
+   ![Selección de soluciones](assets/set-up-sandbox-onboarding.png)
 
 Verá una nueva tarjeta de programa de zona protegida en la página de aterrizaje con un indicador de estado a medida que avance el proceso de configuración.
 
