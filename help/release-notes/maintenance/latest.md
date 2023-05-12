@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
+source-git-commit: 3823b9369c612058998e265346b3f727001aef4b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 65%
+source-wordcount: '238'
+ht-degree: 56%
 
 ---
 
@@ -26,7 +26,10 @@ La activación de funcionalidades para esta versión de mantenimiento le proporc
 
 ### Problemas conocidos {#known-issues-11873}
 
-Ninguna.
+- SITES-13253 - RecursionTooDeepException en componentes principales v2.22.6
+- SITES-13256: teaser WCM principal configurado con la representación de páginas de saltos de URL especiales
+- GRANITE-45462 - Configuración de varias regiones del cliente de mensajería
+- GRANITE-45562: Problemas con la combinación de imágenes que devuelven 200 en lugar de 404
 
 ### Problemas corregidos {#fixed-issues-11873}
 
