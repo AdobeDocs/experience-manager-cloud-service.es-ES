@@ -4,9 +4,9 @@ description: Utilice una aplicación React de muestra para aprender a personaliz
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1036'
 ht-degree: 97%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Lanzamiento del editor de fragmentos de contenido"
->abstract="La versión de prueba de AEM sin encabezado viene con una aplicación React de muestra integrada, para que pueda ver lo fácil que es para cualquiera administrar contenidos de forma independiente sin dedicar tiempo al desarrollo.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
+>abstract="Ahora analicemos cómo funciona la creación de contenido sin objetivos. La versión de prueba de AEM sin encabezado viene con una aplicación React de muestra integrada, para que pueda ver lo fácil que es para cualquiera administrar contenidos de forma independiente sin dedicar tiempo al desarrollo.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"

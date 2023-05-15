@@ -4,10 +4,10 @@ description: Aprenda a utilizar AEM modelos de fragmento de contenido para crear
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 43%
+source-wordcount: '1019'
+ht-degree: 42%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 43%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Lanzamiento de la consola del modelo"
->abstract="Vamos a explorar cómo crear un esquema reutilizable, llamado modelo de fragmento de contenido, para su contenido en Adobe Experience Manager as a Cloud Service. Vea el vídeo para comprender por qué este es un paso importante. <br><br>En este módulo de aprendizaje utilizaremos un sitio de viajes como ejemplo y veremos cómo crear un modelo que represente un viaje. Nos referiremos a este modelo en módulos posteriores, por lo que asegúrese de seguir el esquema de nomenclatura indicado.<br><br>Inicie este módulo en una nueva pestaña haciendo clic en el botón de abajo y siga esta guía."
+>abstract="Vamos a explorar cómo crear un esquema reutilizable, llamado modelo de fragmento de contenido, para su contenido en Adobe Experience Manager as a Cloud Service. Vea el vídeo para comprender por qué este es un paso importante. <br><br>En este módulo de aprendizaje utilizaremos un sitio de viajes como ejemplo y veremos cómo crear un modelo que represente un viaje.<br><br>Inicie este módulo en una nueva pestaña haciendo clic en el botón de abajo y siga esta guía."
 >additional-url="https://video.tv.adobe.com/v/3413261/?captions=spa" text="Vídeo de introducción a la estructura de contenido"
 
 >[!CONTEXTUALHELP]
@@ -34,13 +34,13 @@ ht-degree: 43%
 
 La consola de modelos de fragmentos de contenido se abre en una nueva pestaña. Considere la consola del modelo de fragmento de contenido como su biblioteca de modelos, donde crea nuevos y administra los existentes.
 
-Para nuestro ejemplo, crearemos un modelo que represente la estructura de datos de un viaje que aparece en un sitio web de viajes. Nos referiremos a un viaje en este modelo como un **Aventura.**
+Para nuestro ejemplo, crearemos un modelo que represente la estructura de datos de un viaje que aparece en un sitio web de viajes. Nos referiremos a un viaje usando este modelo como un **Aventura**.
 
 1. Haga clic en el botón **Crear** en la parte superior derecha de la pantalla para comenzar a generar un modelo de fragmento de contenido.
 
 1. Se inicia el asistente Crear modelo , que le guiará a través de la creación del modelo. Proporcione la información obligatoria.
 
-   * **Título del modelo**: esta es una breve descripción del modelo y normalmente indica el propósito del modelo. Llamaremos a nuestro nuevo modelo `Adventure`.
+   * **Título de modelo** - Esta es una breve etiqueta del modelo y normalmente indica el propósito del modelo. Llamaremos a nuestro nuevo modelo `Adventure`.
    * **Habilitar modelo**: esta opción está marcada de forma predeterminada y debe estar activada para poder crear fragmentos de contenido basados en este modelo.
 
 1. Una vez rellenados los campos obligatorios, haga clic en **Crear** en la parte superior izquierda para crear el modelo.
@@ -51,13 +51,13 @@ Para nuestro ejemplo, crearemos un modelo que represente la estructura de datos 
 
 ## Uso del Editor de modelos {#configure-model}
 
-Ahora tenemos un modelo llamado **Aventura** para representar viajes en un sitio web de viajes, pero no tiene detalles como duración, destino, actividades, etc. Para poder utilizar el modelo, debe definir la estructura de sus datos.
+Ahora tenemos un modelo llamado **Aventura**, pero no tiene detalles como duración, destino, actividades, etc. Para poder utilizar el modelo, debe definir la estructura de sus datos.
 
 El editor del modelo de fragmento de contenido es donde se configuran los tipos de datos y las propiedades que definen el contenido del modelo.
 
 >[!TIP]
 >
->Añadiremos algunos campos importantes para la variable **Aventura**. En módulos posteriores usaremos y agregaremos al modelo, por lo que siga el esquema de nomenclatura tal y como se proporciona.
+>Es importante seguir los esquemas de nomenclatura en las siguientes instrucciones, ya que nos referiremos a estos nombres específicos en módulos posteriores.
 
 1. Arrastre un **Texto de una sola línea** del campo **Tipos de datos** a la derecha del editor y suéltelo en el modelo de fragmento de contenido.
 
@@ -76,11 +76,11 @@ Continúe en la siguiente sección para añadir los campos necesarios para compl
 
 ## Adición de campos al modelo {#additional-fields}
 
-Ya tienes un campo para el título de la aventura. Ahora debe añadir campos para capturar la descripción, el precio y una imagen representativa del viaje.
+Ya tienes un campo para el título de la aventura. Ahora necesita añadir campos para capturar la descripción, el precio y una imagen representativa de la aventura.
 
 >[!TIP]
 >
->La variable **Aventura** se basa en el sitio de muestra de WKND para AEM. Puede [visite el sitio aquí](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para obtener más información sobre él si lo desea, pero no es necesario que estos módulos de aprendizaje lo conozcan.
+>La variable **Aventura** se basa en el sitio de muestra de WKND para AEM. Puede [visite el sitio aquí](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver el contenido que usa la variable **Aventura** modelo.
 
 Siga los mismos pasos que se describen arriba para agregar estos campos adicionales. La única diferencia son las propiedades que debe establecer.
 
