@@ -3,10 +3,10 @@ title: Dispatcher en la nube
 description: Dispatcher en la nube
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: c61cd92acd416b1c463f5359f66be8199acf08c3
+source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 98%
+source-wordcount: '983'
+ht-degree: 72%
 
 ---
 
@@ -15,27 +15,27 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispoverview"
 >title="Dispatcher en la nube"
->abstract="En esta página se describe cómo descargar y extraer las herramientas de Dispatcher, los módulos Apache compatibles, y se proporciona una información general de alto nivel de los modos heredados y flexibles."
+>abstract="Esta página describe cómo descargar y extraer las herramientas de Dispatcher, los módulos Apache compatibles, y proporciona una visión general de alto nivel de los modos heredados y flexibles."
 
 ## Introducción {#apache-and-dispatcher-configuration-and-testing}
 
-En esta página se describen las herramientas de Dispatcher y cómo descargarlas y extraerlas, los módulos Apache compatibles, y se proporciona una información general de alto nivel de los modos heredados y flexibles. Además, hay más referencias sobre validación y depuración, y migración de la configuración de Dispatcher desde AMS a AEM as a Cloud Service. Consulte también [este vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html?lang=es) para información adicional acerca de la implementación de archivos de Dispatcher en un entorno de servicio en la nube.
+En esta página se describen las herramientas de Dispatcher y cómo descargarlas y extraerlas, los módulos Apache admitidos, y se proporciona una descripción general de alto nivel de los modos heredados y flexibles. Además, hay más referencias sobre validación y depuración, y migración de la configuración de Dispatcher de AMS a AEM as a Cloud Service. <!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
 
 ## Herramientas de Dispatcher {#dispatcher-sdk}
 
 Las herramientas de Dispatcher forman parte del SDK de AEM as a Cloud Service y proporcionan lo siguiente:
 
 * Una estructura de archivos estándar que contiene los archivos de configuración que se van a incluir en un proyecto Maven para Dispatcher.
-* Herramientas para que los clientes validen que la configuración de Dispatcher incluye solo directivas de AEM as a Cloud Service compatibles. Además, la herramienta también valida que la sintaxis sea correcta para que Apache pueda iniciarse correctamente.
+* Herramientas para que los clientes validen que la configuración de Dispatcher incluye solo AEM directivas compatibles con as a Cloud Service. Además, la herramienta también valida que la sintaxis es correcta para que Apache pueda iniciarse correctamente.
 * Una imagen de Docker que muestra Dispatcher localmente.
 
 ## Descarga y extracción de las herramientas {#extracting-the-sdk}
 
 Las herramientas de Dispatcher, que forman parte del [SDK de AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), se pueden descargar desde un archivo .zip en el portal de [distribución de software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Cualquier configuración disponible en esa nueva versión de las herramientas de Dispatcher se puede usar para implementar en entornos de nube que ejecuten esa versión de AEM en la nube o posterior.
 
-Descomprima el SDK, que agrupa las herramientas de Dispatcher para macOS, Linux y Windows.
+Descomprima el SDK, que agrupa las herramientas de Dispatcher para macOS, Linux® y Windows.
 
-**Para macOS/Linux**, haga que el artefacto de la herramienta Dispatcher sea ejecutable y ejecútelo. Extrae automáticamente los archivos de las herramientas de Dispatcher debajo del directorio en el que los almacenó (donde `version` es la versión de las herramientas de Dispatcher).
+**Para macOS/Linux**, haga que el artefacto de la herramienta Dispatcher sea ejecutable y ejecútelo. Extrae automáticamente los archivos de las herramientas de Dispatcher debajo del directorio en el que lo almacenó (donde `version` es la versión de las herramientas de Dispatcher).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -48,17 +48,17 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## Validación y depuración con las herramientas de Dispatcher {#validation-debug}
 
-Las herramientas de Dispatcher se utilizan para validar y depurar la configuración de su proyecto de Dispatcher. Obtenga más información sobre cómo utilizar estas herramientas en las páginas a las que se hace referencia a continuación, en función de si la configuración de Dispatcher de su proyecto está estructurada en modo flexible o en modo heredado.
+Las herramientas de Dispatcher se utilizan para validar y depurar la configuración de Dispatcher de su proyecto. Obtenga más información sobre cómo utilizar estas herramientas en las páginas a las que se hace referencia a continuación, en función de si la configuración de Dispatcher de su proyecto está estructurada en modo flexible o en modo heredado:
 
-* **Modo flexible**: el modo recomendado y el valor predeterminado de [AEM arquetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) y superior, que también utiliza Cloud Manager para los nuevos entornos creados después de la versión 2021.7.0 de Cloud Manager. Los clientes pueden activar este modo añadiendo la carpeta y el archivo `opt-in/USE_SOURCES_DIRECTLY`. Al utilizar este modo más flexible, no hay limitaciones en la estructura de archivos de la carpeta de reescrituras que en el modo heredado requieren un único archivo `rewrite.rules`. Además, no hay limitación en el número de reglas que se pueden agregar. Para obtener más información sobre la estructura de carpetas y la validación local, consulte [Validación y depuración con las herramientas de Dispatcher](/help/implementing/dispatcher/validation-debug.md).
+* **Modo flexible**: el modo recomendado y el valor predeterminado de [AEM arquetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) y superior, que también utiliza Cloud Manager para los nuevos entornos creados después de la versión 2021.7.0 de Cloud Manager. Los clientes pueden activar este modo añadiendo la carpeta y el archivo `opt-in/USE_SOURCES_DIRECTLY`. Al utilizar este modo más flexible, no hay limitaciones en la estructura de archivos de la carpeta de reescrituras que en el modo heredado requieren un único archivo `rewrite.rules`. Además, no hay limitación en el número de reglas que se pueden agregar. Para obtener más información sobre la estructura de carpetas y la validación local, consulte [Validación y depuración mediante las herramientas de Dispatcher](/help/implementing/dispatcher/validation-debug.md).
 
-* **Modo heredado**: para obtener más información sobre la estructura de carpetas y la validación local para el modo heredado de configuración de Dispatcher, consulte [Validación y depuración con las herramientas de Dispatcher (heredadas)](/help/implementing/dispatcher/validation-debug-legacy.md).
+* **Modo heredado** : para obtener más información sobre la estructura de carpetas y la validación local para el modo heredado de configuración de Dispatcher, consulte [Validación y depuración mediante las herramientas de Dispatcher (heredadas)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 Para obtener más información sobre cómo migrar del modelo de configuración heredado al más flexible, proporcionado con el arquetipo 28 en adelante de AEM, consulte [esta documentación](/help/implementing/dispatcher/validation-debug.md#migrating).
 
 ## Disposición de contenido {#content-disposition}
 
-Para el nivel de publicación, el valor predeterminado para los blobs de servicio es como archivo adjunto. Esto se puede sobrescribir con el [encabezado de disposición de contenido](https://developer.mozilla.org/es-ES/docs/Web/HTTP/Headers/Content-Disposition) estándar en Dispatcher.
+Para el nivel de publicación, el valor predeterminado para los blobs de servicio es como archivo adjunto. Anule esta configuración con el estándar [encabezado de disposición de contenido](https://developer.mozilla.org/es-ES/docs/Web/HTTP/Headers/Content-Disposition) en Dispatcher.
 
 A continuación, se muestra un ejemplo de cómo debería ser la configuración:
 
@@ -119,7 +119,7 @@ Allowlisted directives:
 
 ## Estructura de carpetas {#folder-structure}
 
-La estructura de carpetas Apache y Dispatcher del proyecto variará ligeramente según el modo en que utilice el proyecto, tal como se describe en la sección anterior sobre [Validación y depuración mediante las herramientas de Dispatcher](#validation-debug).
+La estructura de carpetas de Apache y Dispatcher del proyecto difiere ligeramente según el modo que utilice el proyecto, tal como se describe en la sección [Validación y depuración mediante las herramientas de Dispatcher](#validation-debug) sección anterior.
 
 ## Migración de la configuración de Dispatcher desde AMS {#ams-aem}
 
