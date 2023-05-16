@@ -1,25 +1,27 @@
 ---
 title: Actualizaciones de la versión de AEM
-description: Actualizaciones de la versión de AEM
+description: Descubra cómo AEM as a Cloud Service utiliza la integración y la entrega continuas (CI/CD) para mantener sus proyectos en la última versión.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: f977c6d8fa3ebd4b082e48da8b248178f9a2f34b
+source-git-commit: 58ad2e4dec1c55426846f16918b3de13846ac03d
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 30%
+source-wordcount: '483'
+ht-degree: 23%
 
 ---
 
 
 # Actualizaciones de la versión de AEM {#aem-version-updates}
 
-## Introducción {#introduction}
+Descubra cómo AEM as a Cloud Service utiliza la integración y la entrega continuas (CI/CD) para mantener sus proyectos en la última versión.
 
-AEM as a Cloud Service ahora utiliza la integración y la entrega continua (CI/CD) para garantizar que sus proyectos se encuentren en la versión de AEM más actual. AEM Esto significa que las instancias de producción y ensayo se actualizan a la última versión de la aplicación sin interrupciones del servicio para los usuarios de.
+## CI/CD {#ci-cd}
 
->[!NOTE]
->
->Si la actualización al entorno de producción falla, Cloud Manager restablecerá automáticamente el entorno de ensayo. Esto se realiza automáticamente para garantizar que, después de completarse una actualización, tanto los entornos de ensayo como de producción estén en la misma versión de AEM.
+AEM as a Cloud Service utiliza la integración continua y la entrega continua (CI/CD) para garantizar que sus proyectos se encuentren en la versión de AEM más actual. Esto significa que las instancias de producción y de ensayo se actualizan a la última versión de AEM sin interrupciones del servicio para los usuarios.
+
+Las actualizaciones de versión se aplican automáticamente solo a las instancias de producción y ensayo. [AEM actualizaciones deben aplicarse manualmente a todas las demás instancias.](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)
+
+## Tipo de actualizaciones {#update-types}
 
 Existen dos tipos de actualizaciones versión de AEM:
 
@@ -31,18 +33,24 @@ Existen dos tipos de actualizaciones versión de AEM:
 
 * **Nuevas actualizaciones de funciones**
 
-   * Publicadas mediante una programación mensual predecible.
+   * Se liberan en un [programación mensual predecible.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es)
 
-AEM Las actualizaciones de los productos pasan por un proceso de validación de productos intenso y totalmente automatizado que incluye varios pasos, lo que garantiza que no se interrumpa el servicio de ningún sistema en producción. Las comprobaciones de estado se utilizan para supervisar el estado de la aplicación. AEM Si estas comprobaciones fallan durante una actualización as a Cloud Service del estado, la versión no continúa y el Adobe investigará por qué la actualización ha provocado este comportamiento inesperado.
+## Error de actualización {#update-failure}
 
-[Pruebas de productos y pruebas funcionales de clientes,](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) AEM que evitan que las actualizaciones de productos y las inserciones de código de cliente rompan los sistemas de producción, también se validan durante una actualización de versión de la.
+AEM actualizaciones pasan por un proceso de validación de productos intenso y totalmente automatizado, que incluye varios pasos, lo que garantiza que no se interrumpa el servicio de ningún sistema en producción. Los controles sanitarios se utilizan para controlar el estado de la aplicación. Si estas comprobaciones fallan durante una actualización as a Cloud Service AEM, la versión no se realizará y el Adobe investigará por qué la actualización provocó este comportamiento inesperado.
+
+[Pruebas de producto y pruebas funcionales del cliente,](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) que impiden que las actualizaciones de productos y los impulsos de código de cliente rompan los sistemas de producción, también se validan durante una actualización de versión de AEM.
+
+Si la actualización al entorno de producción falla, Cloud Manager restablecerá automáticamente el entorno de ensayo. Esto se realiza automáticamente para garantizar que, después de completarse una actualización, tanto los entornos de ensayo como de producción estén en la misma versión de AEM.
 
 >[!NOTE]
 >
->AEM Si el código personalizado se insertó en el ensayo y no en la producción, la siguiente actualización de la eliminará esos cambios para reflejar la etiqueta de Git de la última versión correcta del cliente en producción. Por lo tanto, el código personalizado que solo estaba disponible en el ensayo deberá implementarse de nuevo.
+>Si el código personalizado se insertó en el entorno de ensayo y no en la producción, la siguiente actualización de AEM eliminará esos cambios para reflejar la etiqueta git de la última versión correcta del cliente en la producción. Por lo tanto, el código personalizado que solo estaba disponible en el entorno de ensayo tendrá que volver a implementarse.
 
-## Almacén de nodos compuestos {#composite-node-store}
+## Almacenamiento de nodos compuestos {#composite-node-store}
 
-Las actualizaciones en la mayoría de los casos no implican ningún tiempo de inactividad, incluida la instancia de creación, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a la función de almacén de nodos compuestos en Oak.
+Las actualizaciones en la mayoría de los casos no tendrán tiempo de inactividad, incluido para la instancia de creación, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a [la función de almacén de nodos compuestos en Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-AEM Esta función permite a los usuarios hacer referencia a varios repositorios de forma simultánea. AEM En una implementación móvil, la nueva versión de la aplicación en color verde contiene la suya propia `/libs` AEM (el repositorio inmutable basado en TarMK), distinto de la versión anterior de la versión azul de la, aunque ambos hacen referencia a un repositorio mutable basado en DocumentMK compartido que contiene áreas como `/content` , `/conf` , `/etc` y otros. Porque tanto el azul como el verde tienen sus propias versiones de `/libs`, ambos pueden estar activos durante la actualización móvil, y activar el tráfico hasta que el azul se sustituya completamente por el verde.
+Esta función permite AEM varios repositorios simultáneamente. En un desplazamiento [implementación en azul-verde,](/help/operations/indexing.md#what-is-blue-green-deployment) la nueva versión verde AEM contiene su propia versión `/libs` (el repositorio inmutable basado en TarMK), distinto de la versión azul AEM anterior, aunque ambos hacen referencia a un repositorio mutable compartido basado en DocumentMK que contiene áreas como `/content` , `/conf` , `/etc` y otros.
+
+Porque tanto el azul como el verde tienen sus propias versiones de `/libs`, ambos pueden estar activos durante la actualización móvil, lo que hace que el tráfico pase hasta que el azul se sustituya por el verde.
