@@ -3,7 +3,7 @@ title: Actualizaciones de la versión de AEM
 description: Descubra cómo AEM as a Cloud Service utiliza la integración y la entrega continuas (CI/CD) para mantener sus proyectos en la última versión.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 59bc2b5af22ef23775195f098517cec40d98d66b
+source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 23%
@@ -51,6 +51,6 @@ Si la actualización al entorno de producción falla, Cloud Manager restablecer�
 
 Las actualizaciones en la mayoría de los casos no tendrán tiempo de inactividad, incluido para la instancia de creación, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a [la función de almacén de nodos compuestos en Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Esta función permite AEM varios repositorios simultáneamente. En un desplazamiento [implementación en azul-verde,](/help/implementing/deploying/overview.md#index-management-using-blue-green-deployments) la nueva versión verde AEM contiene su propia versión `/libs` (el repositorio inmutable basado en TarMK), distinto de la versión azul AEM anterior, aunque ambos hacen referencia a un repositorio mutable compartido basado en DocumentMK que contiene áreas como `/content` , `/conf` , `/etc` y otros.
+Esta función permite AEM varios repositorios simultáneamente. En un desplazamiento [implementación en azul-verde,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) la nueva versión verde AEM contiene su propia versión `/libs` (el repositorio inmutable basado en TarMK), distinto de la versión azul AEM anterior, aunque ambos hacen referencia a un repositorio mutable compartido basado en DocumentMK que contiene áreas como `/content` , `/conf` , `/etc` y otros.
 
 Porque tanto el azul como el verde tienen sus propias versiones de `/libs`, ambos pueden estar activos durante la actualización móvil, lo que hace que el tráfico pase hasta que el azul se sustituya por el verde.
