@@ -5,9 +5,10 @@ description: Puede utilizar el formulario adaptable (componentes principales) en
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
+source-git-commit: 0d21b4ba2e7ce7592e3f2c57e4d320adc0af1008
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2207'
 ht-degree: 21%
 
 ---
@@ -22,22 +23,16 @@ Puede elegir uno de los siguientes métodos para crear o incrustar un formulario
 
 * **Crear un formulario adaptable arrastrando y soltando los componentes del formulario al componente contenedor de Forms adaptable**: Utilice la variable [Contenedor de Forms adaptable](#af-container-component) para crear un espacio en la página web que alojaría el formulario adaptable. Puede arrastrar y soltar el componente Formulario adaptable en este espacio para crear un formulario. Por ejemplo, consulte el siguiente vídeo para aprender a crear un formulario adaptable mediante [!UICONTROL Contenedor de Forms adaptable] componente:
 
->[!VIDEO](/help/forms/assets/formcreationbyadaptiveformcontainer.mp4)
-
 La variable [Contenedor de formulario adaptable](#af-container-component) permite crear experiencias de inscripción digital utilizando los componentes de Forms adaptables directamente en el editor de AEM Sites. Esta integración proporciona una experiencia perfecta a los autores de AEM Sites que desean crear y administrar formularios dentro de sus páginas de AEM Sites.
 
-* **Incrustar un formulario adaptable existente**: La variable [Forms adaptable: incrustar](#embed-existing-af) permite incorporar fácilmente un formulario adaptable preexistente en una página de AEM Sites. Por ejemplo, incruste un formulario adaptable utilizando la variable [!UICONTROL Forms adaptable: incrustar] en la página del sitio, como se muestra en el siguiente vídeo:
-
->[!VIDEO](/help/forms/assets/embednewform_embed.mp4)
+* **Incrustar un formulario adaptable existente**: La variable [Forms adaptable: Incrustar (V2)](#embed-existing-af) permite incorporar fácilmente un formulario adaptable preexistente en una página de AEM Sites. Por ejemplo, incruste un formulario adaptable utilizando la variable [!UICONTROL Forms adaptable: incrustar] en la página del sitio, como se muestra en el siguiente vídeo:
 
 Esta función mejora la adaptabilidad y la reutilización de Forms adaptable. Esta integración proporciona una forma cómoda para que los clientes puedan reutilizar el Forms adaptable que ya han creado.
 
 * **Utilice el Asistente para Forms adaptable para crear un formulario**:
 
-   Utilice la variable [Forms adaptable: incrustar](#embed-new-af) para crear un formulario adaptable desde el editor de AEM Sites mediante el asistente de creación de formularios. El formulario se guarda como una entidad externa. Puede volver a utilizar este formulario en otras páginas de Sitios y también en formularios independientes.
+   Utilice la variable [Forms adaptable: Incrustar (v2)](#embed-new-af) para crear un formulario adaptable desde el editor de AEM Sites mediante el asistente de creación de formularios. El formulario se guarda como una entidad externa. Puede volver a utilizar este formulario en otras páginas de Sitios y también en formularios independientes.
 Por ejemplo, consulte el siguiente vídeo para aprender a crear e incrustar un formulario adaptable recién creado mediante el [!UICONTROL Forms adaptable: incrustar] en la página del sitio.
-
->[!VIDEO](/help/forms/assets/createnewform_embed.mp4)
 
 ### Consideración {#considerations}
 
@@ -52,11 +47,12 @@ La variable [!UICONTROL Contenedor de formulario adaptable] permite crear experi
 +++ Habilitar **[!UICONTROL Contenedor de Forms adaptable]** en la política de la plantilla asociada.
 
 Para habilitar [!UICONTROL Contenedor de Forms adaptable] en la política de la plantilla, realice los siguientes pasos:
-1. Vaya a la [!UICONTROL Información de la página] > [!UICONTROL Editar plantilla]
-1. Haga clic en el [!UICONTROL Política] y seleccione **Ejemplos de componentes principales: formulario adaptable** casilla de verificación.
-1. Haga clic en [!UICONTROL Listo].
 
->[!VIDEO](/help/forms/assets/adaptiveformcontainer.mp4)
+1. Vaya a la [!UICONTROL Información de la página] > [!UICONTROL Editar plantilla]
+1. Haga clic en el [!UICONTROL Política] y seleccione **[!UICONTROL Contenedor de Forms adaptable]**  dentro de **[Nombre del proyecto de tipo de archivo AEM] - Formulario adaptable**.
+1. Haga clic en **[!UICONTROL Listo]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 
@@ -104,7 +100,7 @@ Para crear un formulario adaptable utilizando [!UICONTROL Contenedor de Forms ad
 1. Cree un formulario adaptable utilizando los componentes de Forms adaptable .
 1. Guarde la configuración.
 
->[!VIDEO](/help/forms/assets/af-container.mp4)
+>[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 Su formulario está listo. Cuando publica la página de AEM Sites, publica automáticamente un formulario adaptable y sus recursos de referencia asociados.
 
@@ -148,9 +144,9 @@ En el [!UICONTROL Editar contenedor de Forms adaptable] , puede especificar lo s
 * **Mostrar mensaje**
    * **Contenido del mensaje**: Escriba un mensaje con el editor de texto enriquecido para mostrarlo en el envío del formulario. Esta opción solo está disponible cuando elige mostrar un mensaje de agradecimiento.
 
-## Incrustar un formulario adaptable existente  {#aem-container-component}
+## Incrustar un formulario adaptable  {#aem-container-component}
 
-Uso **[!UICONTROL Forms adaptable: incrustar]** , puede incrustar un nuevo formulario adaptable o incrustar un formulario adaptable existente en la página del sitio. La variable [!UICONTROL Forms adaptable: incrustar] le permite:
+Uso **[!UICONTROL Forms adaptable: incrustar (V2)]** , puede incrustar un nuevo formulario adaptable o incrustar un formulario adaptable existente en la página del sitio. La variable [!UICONTROL Forms adaptable: incrustar] le permite:
 
 * [Incrustar un formulario adaptable existente](#embed-new-af)
 
@@ -160,12 +156,14 @@ Uso **[!UICONTROL Forms adaptable: incrustar]** , puede incrustar un nuevo formu
 
 +++ Active la variable **Forms adaptable: incrustar** en la política de la plantilla asociada.
 
-Para habilitar [!UICONTROL Forms adaptable: incrustar] en la política de la plantilla, realice los siguientes pasos:
-1. Vaya a la [!UICONTROL Información de la página] > [!UICONTROL Editar plantilla]
-1. Haga clic en el [!UICONTROL Política] y seleccione **Contenido principal** casilla de verificación.
-1. Haga clic en [!UICONTROL Listo].
+Para habilitar [!UICONTROL Forms adaptable: Incrustar (v2)] en la política de la plantilla, realice los siguientes pasos:
 
->[!VIDEO](/help/forms/assets/enableadaptiveform-embedtemplate.mp4)
+1. Vaya a la [!UICONTROL Información de la página] > [!UICONTROL Editar plantilla]
+
+1. Haga clic en el [!UICONTROL Política] y seleccione **[!UICONTROL Formulario adaptable: incrustado (v2)]** dentro de **[!UICONTROL [Nombre del proyecto de tipo de archivo AEM] - Forms]** grupo .
+1. Haga clic en **[!UICONTROL Listo]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 +++
 
@@ -212,7 +210,7 @@ Para utilizar componentes de Forms adaptable en una página de AEM Sites, incluy
 ### Incrustar nuevo formulario adaptable {#embed-new-af}
 
 1. Abra la página de AEM Sites en modo de edición.
-1. En el panel Navegador de componentes , arrastre y suelte el [!UICONTROL Forms adaptable: incrustar] en la página.
+1. En el panel Navegador de componentes , arrastre y suelte el [!UICONTROL Forms adaptable: Incrustar (v2)] en la página.
 1. Haga clic en el **Más** y se le redirige al asistente de creación de formularios.
 
    ![Forms adaptable: componente incrustado](/help/forms/assets/aemformcontainer.png)
@@ -220,6 +218,8 @@ Para utilizar componentes de Forms adaptable en una página de AEM Sites, incluy
 1. Cree un nuevo formulario adaptable desde el [!UICONTROL Creación de formularios] asistente.
 1. La variable [!UICONTROL Ruta de recursos] ya incluye la ruta de un formulario adaptable creado
 1. Guarde la configuración. El formulario adaptable está ahora incrustado en la página.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
 ### Incrustar formulario adaptable existente {#embed-existing-af}
 
@@ -229,9 +229,12 @@ Para utilizar componentes de Forms adaptable en una página de AEM Sites, incluy
 1. Busque y seleccione el formulario adaptable para incrustarlo en el [!UICONTROL Ruta de recursos].
 1. Guarde la configuración. El formulario adaptable está ahora incrustado en la página.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+
 #### Configurar el formulario adaptable _ Incrustar propiedades
 
-Puede personalizar la configuración avanzada del [!UICONTROL Formulario adaptable: incrustado] componente. En el [!UICONTROL Editar Forms adaptable: Incrustar] , puede especificar lo siguiente.
+Puede personalizar la configuración avanzada del [!UICONTROL Formulario adaptable - Incrustar(v2)] componente. En el [!UICONTROL Editar Forms adaptable: Incrustar (v2)] , puede especificar lo siguiente.
+
 * **Ruta del recurso**: examine y seleccione el formulario adaptable que desea incrustar. Se rellena automáticamente si ha colocado el formulario desde el Explorador de recursos.
 * **Después del envío**: seleccione la acción que debe activarse después del envío del formulario. Puede elegir mostrar un mensaje o una página de agradecimiento.
    * **Mostrar mensaje de agradecimiento**: Escriba un mensaje con el editor de texto enriquecido para mostrarlo en el envío del formulario. Esta opción solo está disponible cuando elige mostrar un mensaje de agradecimiento.
@@ -272,4 +275,3 @@ Para modificar cualquier configuración o propiedad del formulario adaptable inc
 ![Soporte de diseño AF](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM página sitios mantiene una referencia al formulario adaptable. Cuando se traduce una página de AEM Sites, se traduce automáticamente un formulario adaptable y sus recursos de referencia asociados mediante la variable [proyectos de traducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) en otros idiomas.
-
