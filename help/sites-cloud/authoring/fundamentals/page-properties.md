@@ -2,9 +2,9 @@
 title: Edición de las propiedades de página
 description: Definir las propiedades necesarias para una página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
-workflow-type: ht
-source-wordcount: '2387'
+source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
+workflow-type: tm+mt
+source-wordcount: '2363'
 ht-degree: 100%
 
 ---
@@ -345,11 +345,3 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
       * Los nuevos valores se aplicarán a todas las páginas seleccionadas al activar **Listo**.
       * Cuando el campo admite varios valores (por ejemplo, etiquetas), puede agregar un nuevo valor o eliminar un valor común.
    * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se señalizarán con un valor especial; por ejemplo, el texto `<Mixed Entries>`.
-
->[!NOTE]
->
->El componente de página se puede configurar para especificar los campos disponibles para la edición por lotes. Consulte Configuración de la página para editar las propiedades de página por lotes.
-
-<!--
->The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
--->
