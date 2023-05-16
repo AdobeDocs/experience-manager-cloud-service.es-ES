@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 3%
+source-wordcount: '931'
+ht-degree: 4%
 
 ---
 
 # Organizar sus recursos digitales {#organize-digital-assets}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
+| AEM as a Cloud Service | Este artículo |
 
 Todos los recursos digitales, metadatos y contenido de los documentos de Microsoft® Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta por completo los permisos adecuados. Los metadatos se tratan en detalle en Metadatos de Digital Asset Management.
 
