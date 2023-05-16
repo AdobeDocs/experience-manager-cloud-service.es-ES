@@ -2,10 +2,10 @@
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 100%
+source-wordcount: '2054'
+ht-degree: 97%
 
 ---
 
@@ -142,11 +142,15 @@ Verá una lista de instancias existentes:
 
 En cada instancia de contexto de producto, habrá algunas que abarquen los servicios de creación o publicación en los entornos Producción, Ensayo o Desarrollo. Cada instancia se asocia a los perfiles de producto o a las funciones de Cloud Manager. Estos perfiles de producto se utilizan para asignar acceso a usuarios y grupos con los privilegios requeridos.
 
-El perfil **Administrator_xxx** se utiliza para otorgar privilegios de administrador en la instancia de AEM asociada, mientras que el perfil **User_xxx** se utiliza para añadir usuarios habituales.
+La variable **AEM Administradores_xxx** se utilizará para conceder privilegios de administrador en la instancia de AEM asociada mientras que la variable **AEM Users_xxx** se utiliza para agregar usuarios habituales.
 
 Los usuarios y grupos agregados bajo este perfil de producto pueden iniciar sesión en esa instancia en particular, como se muestra en el ejemplo siguiente:
 
 ![Perfil del producto](/help/security/assets/ims8.png)
+
+>[!WARNING]
+>
+>La variable **Administradores de AEM** no se debe cambiar el nombre del perfil del producto. Cambio del nombre del **Administradores de AEM** el perfil de producto eliminará los derechos de administrador de todos los usuarios asignados a ese perfil.
 
 ### Inicio de sesión en Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
