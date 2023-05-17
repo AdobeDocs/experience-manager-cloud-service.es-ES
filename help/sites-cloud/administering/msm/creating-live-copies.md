@@ -4,10 +4,10 @@ description: Aprenda a crear y sincronizar Live Copies para reutilizar el conten
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
 workflow-type: tm+mt
-source-wordcount: '4274'
-ht-degree: 100%
+source-wordcount: '4322'
+ht-degree: 98%
 
 ---
 
@@ -136,6 +136,10 @@ Para crear una Live Copy:
 
 1. (Opcional) Para especificar una o más configuraciones de despliegue que se utilizarán para Live Copy, utilice la lista desplegable **Configuración de lanzamiento** para seleccionarlas. Las configuraciones seleccionadas se mostrarán debajo del selector desplegable.
 1. Haga clic o pulse **Crear**. Se mostrará un mensaje de confirmación, desde el que podrá seleccionar una de las opciones siguientes: **Apertura** o **Listo**.
+
+   >[!NOTE]
+   >
+   >Puede aparecer un cuadro de diálogo de error con el mensaje &quot;Fallo al enviar el formulario&quot;. Esto ocurre debido a un tiempo de espera de red. Sin embargo, el proceso para crear la Live Copy se está ejecutando en segundo plano. Espere unos minutos y compruebe que las páginas de la Live Copy se hayan creado correctamente.
 
 ### Creación de una Live Copy de un sitio a partir de una configuración de modelo {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
