@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
+source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
 workflow-type: tm+mt
-source-wordcount: '5887'
+source-wordcount: '5868'
 ht-degree: 2%
 
 ---
@@ -424,10 +424,6 @@ Algunas de las ventajas clave de habilitar DASH en su cuenta son:
 * Ayuda a que el envío de vídeo sea más accesible para sus clientes.
 * Obtenga también la URL de flujo continuo mediante API.
 
-   >[!IMPORTANT]
-   >
-   >Actualmente, habilitar DASH en su cuenta solo está disponible en Asia-Pacífico y Norteamérica; próximamente en Europa, Oriente Medio y África.
-
 Se inicia una solicitud para utilizar DASH; no se habilita automáticamente en su cuenta.
 
 Para habilitar DASH en su cuenta, cree un caso de asistencia al cliente como se describe a continuación. En su caso de asistencia, especifique que desea habilitar DASH en su cuenta de Dynamic Media y en el Experience Manager.
@@ -435,7 +431,7 @@ Para habilitar DASH en su cuenta, cree un caso de asistencia al cliente como se 
 **Para habilitar DASH en su cuenta:**
 
 1. [Utilice el Admin Console para iniciar la creación de un nuevo caso de asistencia](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
-1. Siga las instrucciones para crear un caso de asistencia y, a la vez, proporcione la siguiente información:
+1. Para crear un caso de asistencia, siga las instrucciones y asegúrese de proporcionar la siguiente información:
 
    * Nombre de contacto principal, correo electrónico, teléfono.
    * Nombre de la cuenta de Dynamic Media.
