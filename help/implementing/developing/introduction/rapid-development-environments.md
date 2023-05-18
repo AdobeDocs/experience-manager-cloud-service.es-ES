@@ -2,7 +2,7 @@
 title: Entornos de desarrollo rápido
 description: Aprenda a aprovechar los entornos de desarrollo rápido para iteraciones de desarrollo rápidas en un entorno de nube.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
+source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
 workflow-type: tm+mt
 source-wordcount: '3325'
 ht-degree: 5%
@@ -118,13 +118,7 @@ Una vez añadido un RDE para el programa mediante Cloud Manager, puede interactu
    3. Workspace: <no workspace selected>
    ```
 
-1. Verifique que el inicio de sesión se haya completado correctamente ejecutando
-
-   `aio cloudmanager:list-programs`
-
-   Esto debería incluir todos los programas de la organización configurada.
-
-   Tenga en cuenta que lo anterior requiere que sea miembro de Cloud Manager **Desarrollador: Cloud Service** Perfil de producto. Consulte [esta página](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obtener más información.
+   Tenga en cuenta que este paso requiere que sea miembro de Cloud Manager **Desarrollador: Cloud Service** Perfil de producto. Consulte [esta página](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obtener más información.
 
    Como alternativa, puede confirmar que tiene esta función de desarrollador si puede iniciar sesión en la consola de desarrollador ejecutando este comando:
 
@@ -138,6 +132,13 @@ Una vez añadido un RDE para el programa mediante Cloud Manager, puede interactu
    ```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
+
+1. Verifique que el inicio de sesión se haya completado correctamente ejecutando
+
+   `aio cloudmanager:list-programs`
+
+   Esto debería incluir todos los programas de la organización configurada.
+
 
 Para obtener más información y ver una demostración, consulte la [configuración de un RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) videotutorial.
 
