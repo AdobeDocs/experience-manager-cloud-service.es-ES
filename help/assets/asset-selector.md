@@ -3,9 +3,9 @@ title: Selector de recursos para [!DNL Adobe Experience Manager] como [!DNL Clou
 description: Utilice el selector de recursos para buscar, buscar y recuperar los metadatos y las representaciones de los recursos dentro de la aplicación.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 22d2a2235c8696fce76369d3ffe369bcbaa3f6f2
+source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2378'
 ht-degree: 3%
 
 ---
@@ -30,6 +30,8 @@ El Selector de recursos proporciona muchos beneficios, como:
 * Posibilidad de cambiar repositorios dentro de una organización IMS para la selección de recursos.
 
 * Posibilidad de ordenar los recursos por nombre, dimensiones y tamaño, y verlos en la vista Lista, Cuadrícula, Galería o Cascada.
+
+El ámbito de este artículo es demostrar cómo utilizar el Selector de recursos con un [!DNL Adobe] en Unified Shell o cuando ya tiene un imsToken generado para la autenticación. Estos flujos de trabajo se denominan flujo no SUSI en este artículo.
 
 Realice las siguientes tareas para integrar y utilizar el Selector de recursos con su [!DNL Experience Manager Assets as a Cloud Service] repositorio:
 
@@ -361,8 +363,8 @@ Puede utilizar las propiedades del Selector de recursos para personalizar la for
 |---|---|---|---|---|
 | *carril* | booleano | No | false | Si está marcado `true`, el Selector de recursos se representará en una vista de carril izquierdo. Si está marcado `false`, el Selector de recursos se procesará en la vista modal. |
 | *imsOrg* | cadena | Sí |  | ID del sistema Identity Management de Adobe (IMS) asignado durante el aprovisionamiento [!DNL Adobe Experience Manager] como [!DNL Cloud Service] para su organización. La variable `imsOrg` es necesaria para autenticar si la organización a la que está accediendo está en Adobe IMS o no. |
-| *imsToken* | cadena | No |  | Token de portador de IMS utilizado para la autenticación. `imsToken` no es obligatorio si está utilizando el flujo SUSI. Sin embargo, es obligatorio si está utilizando el flujo que no es de SUSI. |
-| *apiKey* | cadena | No |  | Clave de API utilizada para acceder al servicio de AEM Discovery. `apiKey` no es obligatorio si está utilizando el flujo SUSI. Sin embargo, es obligatorio en el flujo que no es de SUSI. |
+| *imsToken* | cadena | No |  | Token de portador de IMS utilizado para la autenticación. `imsToken` es necesario si utiliza el flujo que no sea SUSI. |
+| *apiKey* | cadena | No |  | Clave de API utilizada para acceder al servicio de AEM Discovery. `apiKey` es necesario si utiliza el flujo que no sea SUSI. |
 | *rootPath* | cadena | No | /content/dam/ | Ruta de carpeta desde la que el Selector de recursos muestra sus recursos. `rootPath` también se puede utilizar en forma de encapsulación. Por ejemplo, dada la siguiente ruta, `/content/dam/marketing/subfolder/`, el Selector de recursos no le permite recorrer ninguna carpeta principal, pero solo muestra las carpetas secundarias. |
 | *path* | cadena | No |  | Ruta que se utiliza para desplazarse a un directorio específico de recursos cuando se representa el Selector de recursos. |
 | *filterSchema* | matriz | No |  | Modelo que se utiliza para configurar propiedades de filtro. Esto resulta útil cuando desea limitar ciertas opciones de filtro en el Selector de recursos. |
