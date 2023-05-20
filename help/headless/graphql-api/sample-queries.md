@@ -1291,7 +1291,7 @@ Esta consulta busca lo siguiente:
 
 ### Consulta de muestra para un fragmento de contenido anidado: tipo de modelo múltiple {#sample-wknd-nested-fragment-multiple-model}
 
-#### Tipo de modelo al que se hace referencia única
+#### Tipo de modelo referenciado único
 
 Esta consulta busca lo siguiente:
 
@@ -1300,7 +1300,7 @@ Esta consulta busca lo siguiente:
 
 >[!NOTE]
 >
->El campo `fragments` tiene el tipo de datos `fragment-reference`, con el modelo `Article` seleccionados. Entregas de consultas `fragments` como una matriz de `[Article]`.
+>El campo `fragments` tiene el tipo de datos `fragment-reference`, con el modelo `Article` seleccionados. La consulta ofrece `fragments` como una matriz de `[Article]`.
 
 ```graphql
 {
@@ -1315,7 +1315,7 @@ Esta consulta busca lo siguiente:
 }
 ```
 
-#### Varios tipos de modelo a los que se hace referencia
+#### Varios tipos de modelos referenciados
 
 Esta consulta busca lo siguiente:
 
@@ -1324,7 +1324,7 @@ Esta consulta busca lo siguiente:
 
 >[!NOTE]
 >
->El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados. Entregas de consultas `fragments` como una matriz de `[AllFragmentModels]`, al que se hace referencia con el tipo de unión.
+>El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados. La consulta ofrece `fragments` como una matriz de `[AllFragmentModels]`, a la que se hace referencia con el tipo de unión.
 
 ```graphql
 {

@@ -35,17 +35,17 @@ Consulte [Dispatcher en la nube](https://experienceleague.adobe.com/docs/experie
 
 ## Dispatcher Converter de AEM {#aem-dispatcher-converter}
 
-AEM Dispatcher Converter proporciona la capacidad de refactorizar las configuraciones existentes in situ o Adobe Managed Services Dispatcher para AEM configuración as a Cloud Service compatible con Dispatcher.
+AEM AEM Dispatcher Converter proporciona la capacidad de refactorizar las configuraciones locales existentes o las configuraciones de Dispatcher de Adobe Managed Services a una configuración de Dispatcher compatible as a Cloud Service.
 
 ## Uso de Dispatcher Converter de AEM {#using-dispatcher-converter}
 
-* A través de la CLI de Adobe I/O : Se recomienda utilizar el AEM Dispatcher Converter mediante `aio-cli-plugin-aem-cloud-service-migration` (AEM complemento de refactorización de código as a Cloud Service para la CLI de Adobe I/O).
+* A través de la CLI de Adobe I/O AEM: se recomienda utilizar el convertidor de Dispatcher de a través de `aio-cli-plugin-aem-cloud-service-migration` AEM (complemento de refactorización de código as a Cloud Service para la CLI de Adobe I/O).
 
    Consulte **[Recurso de Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** para aprender a instalar y utilizar el complemento.
 
-* Como utilidad independiente: La herramienta AEM Dispatcher Converter también se puede ejecutar como una utilidad independiente.
+* AEM Como utilidad independiente : La herramienta Dispatcher Converter de Dispatcher de también se puede ejecutar como utilidad independiente.
 
-   Consulte **[Recurso de Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** para obtener más información sobre el uso y la resolución de problemas de esta herramienta.
+   Consulte **[Recurso de Git: Dispatcher Converter de AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** para obtener más información sobre el uso y la resolución de problemas de esta herramienta.
 
 >[!IMPORTANT]
->AEM Dispatcher Converter se desarrolla mediante NodeJS. Se recomienda tener instalado NodeJS 10.0+.
+>AEM Dispatcher Converter se desarrolla con NodeJS. Se recomienda tener instalado NodeJS 10.0+.

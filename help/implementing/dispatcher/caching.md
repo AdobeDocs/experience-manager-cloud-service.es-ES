@@ -78,7 +78,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
    >Los demás métodos, incluido el [AEM dispatcher-ttl proyecto de ACS Commons en el que se](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anulará correctamente los valores.
 
    >[!NOTE]
-   >Tenga en cuenta que Dispatcher podría seguir almacenando en caché el contenido según su propio código [reglas de almacenamiento en caché](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Para que el contenido sea verdaderamente privado, debe asegurarse de que Dispatcher no lo almacene en caché.
+   >Tenga en cuenta que Dispatcher podría seguir almacenando en caché el contenido según su propio código [reglas de almacenamiento en caché](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=es). Para que el contenido sea verdaderamente privado, debe asegurarse de que Dispatcher no lo almacene en caché.
 
 ### Bibliotecas del lado cliente (js,css) {#client-side-libraries}
 

@@ -1,5 +1,5 @@
 ---
-title: Crear una aplicación de App Builder
+title: Creación de una aplicación de App Builder
 description: Obtenga información sobre cómo crear y arrancar una nueva aplicación de App Builder.
 version: Cloud Service
 feature: App Builder
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Crear una aplicación de App Builder
+# Creación de una aplicación de App Builder
 
 ## Configurar el primer proyecto
 
@@ -24,20 +24,20 @@ Conozca los aspectos básicos de la creación de su primer proyecto de App Build
 
 >[!VIDEO](https://video.tv.adobe.com/v/339168/?quality=12&learn=on)
 
-## Configure el entorno de desarrollo local
+## Configurar el entorno de desarrollo local
 
-Aprenda a configurar el entorno local para el desarrollo de App Builder.
+Aprenda a configurar su entorno local para el desarrollo de App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
 
-## Inicializar el primer proyecto
+## Inicialice su primer proyecto
 
 Obtenga información sobre cómo inicializar un proyecto de App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
 
-## Cree, ejecute y pruebe la aplicación
+## Genere, ejecute y pruebe su aplicación
 
-Obtenga información sobre cómo crear, ejecutar y probar la aplicación de App Builder.
+Obtenga información sobre cómo generar, ejecutar y probar su aplicación de App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)

@@ -3,7 +3,7 @@ title: Canal de la versión preliminar de Adobe Experience Manager as a Cloud Se
 description: Aprenda a utilizar el canal de la versión preliminar para obtener una vista previa de las próximas funciones de AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 100%
 

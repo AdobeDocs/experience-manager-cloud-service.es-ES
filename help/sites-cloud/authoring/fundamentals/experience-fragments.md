@@ -24,8 +24,8 @@ Un fragmento de experiencia:
 * Se puede usar en varias páginas.
 * Se basa en una plantilla (solo editable) para definir la estructura y los componentes.
 * Esta plantilla se utiliza para crear la *página raíz* del Fragmento de experiencia.
-* Se compone de uno o más componentes, con diseño, en un sistema de párrafos.
-* Puede contener otros fragmentos de experiencia.
+* Está formado por uno o más componentes, con diseño, en un sistema de párrafos.
+* Puede contener otros fragmentos de experiencias.
 * Se puede combinar con otros componentes (incluidos otros fragmentos de experiencias) para formar una página completa (experiencia).
 * Se pueden crear una o más variaciones basadas en la página raíz.
 * Estas pueden compartir contenido o componentes.
@@ -43,7 +43,7 @@ Los autores quieren utilizar AEM solo para la creación, pero no para la entre
 >
 >Los **[fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** y los **fragmentos de experiencias** son funciones distintas de AEM:
 >* Los **fragmentos de contenido** son contenidos editoriales, con definición y estructura, pero sin diseño y/o maquetación visuales adicionales. Pueden utilizarse para acceder a datos estructurados, incluidos textos, números y fechas, entre otros.
->* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
+>* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web.
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 >
@@ -55,19 +55,19 @@ Los autores quieren utilizar AEM solo para la creación, pero no para la entre
 >
 >* `experience-fragments-editors`
 >
->Póngase en contacto con el administrador del sistema si tiene algún problema.
+>Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
 ## ¿Cuándo se deben utilizar los fragmentos de experiencias?   {#when-should-you-use-experience-fragments}
 
 Los fragmentos de experiencias deben usarse:
 
-* Siempre que desee reutilizar experiencias.
-   * Experiencias que se reutilizarán con el mismo contenido o contenido similar.
-* Cuando se utiliza AEM como plataforma de entrega de contenido para terceros.
-   * Cualquier solución que desee utilizar AEM como plataforma de entrega de contenido.
+* Siempre que quiera reutilizar experiencias.
+   * Experiencias que se reutilizarán con contenido igual o similar.
+* AEM Cuando se utiliza la plataforma de envío de contenido para terceros, se utiliza la plataforma de entrega de contenido de.
+   * AEM Cualquier solución que desee utilizar como plataforma de entrega de contenido de, por ejemplo,:
    * Incrustación de contenido en puntos de contacto de terceros.
 * Si tiene una experiencia con diferentes variaciones o representaciones.
-   * Variaciones de canal o específicas del contexto.
+   * Variaciones específicas del canal o del contexto.
    * Experiencias que tiene sentido agrupar; por ejemplo, una campaña con distintas experiencias en diferentes canales.
 * Al utilizar el comercio omnicanal.
    * Convertir los puntos de contacto en transaccionales.
@@ -184,7 +184,7 @@ Para crear un fragmento de experiencia:
 
 1. Introduzca las **propiedades** del **fragmento de experiencia**.
 
-   Es obligatorio escribir un **título**. Si la variable **Nombre** se deja en blanco, se derivará de la variable **Título**.
+   Es obligatorio escribir un **título**. Si la variable **Nombre** si se deja en blanco, se derivará del **Título**.
 
    ![Propiedades del fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -207,7 +207,7 @@ El editor de fragmentos de experiencias ofrece funcionalidades similares a las d
 
 >[!NOTE]
 >
->Consulte [Edición del contenido de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md) para obtener más información sobre cómo utilizar el editor de páginas.
+>Consulte [Edición del contenido de página](/help/sites-cloud/authoring/fundamentals/editing-content.md) para obtener más información sobre cómo utilizar el editor de páginas.
 
 El siguiente procedimiento de ejemplo ilustra cómo crear un teaser para un producto:
 
@@ -227,17 +227,17 @@ Por ejemplo: `http://<host>:<port>/editor.html/content/experience-fragments/wknd
 
 Puede crear varias variaciones para este fragmento de experiencia en función de sus necesidades:
 
-1. Abra el fragmento para [editar](#editing-your-experience-fragment).
+1. Abra el fragmento para [edición](#editing-your-experience-fragment).
 1. Abra la pestaña **Variaciones**.
 
    ![Creación de una variación de fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Crear** permite crear:
+1. **Crear** le permite crear:
 
    * **Variación**
    * **Variación como Live Copy**.
 
-1. Defina las propiedades requeridas:
+1. Defina las propiedades necesarias:
 
    * **Plantilla**
    * **Título**
@@ -281,7 +281,7 @@ Puede seleccionar uno o varios componentes para crear un bloque de creación y a
 
 Para crear un nuevo bloque de creación:
 
-1. En el editor de fragmentos de experiencias, seleccione los componentes que desee reutilizar:
+1. En el editor de Fragmento de experiencia, seleccione los componentes que desea reutilizar:
 
    ![Seleccionar componente para bloque de creación](/help/sites-cloud/authoring/assets/xf-09.png)
 
@@ -432,7 +432,7 @@ También puede [publicar en previsualización](/help/sites-cloud/authoring/funda
 
 ## Exportación de fragmentos de experiencias   {#exporting-experience-fragments}
 
-De forma predeterminada, los fragmentos de experiencias se envían en formato HTML. Esto se puede utilizar tanto en canales de AEM como de terceros.
+De forma predeterminada, los fragmentos de experiencias se envían en formato HTML. AEM Esto se puede utilizar tanto en canales de terceros como en canales de terceros por igual.
 
 Para la exportación a Adobe Target, también se puede utilizar JSON. Consulte:
 

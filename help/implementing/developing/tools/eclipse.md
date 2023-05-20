@@ -48,10 +48,10 @@ Cuando haya completado la [requisitos](#requirements) más arriba, puede instala
 
 1. En Eclipse, abra el **Ayuda** menú.
 1. Clic **Instalar nuevo software**.
-1. Haga clic en **Agregar...**.
+1. Clic **Agregar...**.
 1. En el **Nombre** , introduzca `AEM Developer Tools`.
 1. En el **Ubicación** , copie la URL de instalación.
-1. Haga clic en **Agregar**.
+1. Clic **Añadir**.
 1. Marque ambos **AEM** y **Sling** complementos.
 1. Haga clic en **Siguiente**.
 1. En el **Detalles de instalación** , haga clic en **Siguiente** otra vez.

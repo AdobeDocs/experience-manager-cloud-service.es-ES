@@ -1,5 +1,5 @@
 ---
-title: el administrador de paquetes
+title: El administrador de paquetes
 description: Conozca los conceptos básicos de AEM; administración de paquetes con el Administrador de paquetes.
 feature: Administering
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 4%
 
 ---
 
-# el administrador de paquetes {#working-with-packages}
+# El administrador de paquetes {#working-with-packages}
 
 Los paquetes permiten importar y exportar el contenido del repositorio. Puede utilizar paquetes para instalar contenido nuevo, transferir contenido entre instancias y realizar copias de seguridad del contenido del repositorio.
 
@@ -45,7 +45,7 @@ AEM Los paquetes de contenido creados para aplicaciones as a Cloud Service de la
 
 Para obtener más información sobre cómo administrar paquetes para AEMaaCS, consulte el documento [AEM Implementación en el as a Cloud Service de](/help/implementing/deploying/overview.md) en la guía de usuario sobre implementación.
 
-## el administrador de paquetes {#package-manager}
+## El administrador de paquetes {#package-manager}
 
 AEM El Administrador de paquetes administra los paquetes en la instalación de la. Después de que tenga [ha asignado los permisos necesarios](#permissions-needed-for-using-the-package-manager) puede utilizar el Administrador de paquetes para realizar diversas acciones, como configurar, crear, descargar e instalar paquetes.
 
@@ -565,4 +565,4 @@ AEM Los paquetes de se pueden utilizar para crear y compartir contenido en entor
 
 [Distribución de software](https://downloads.experiencecloud.adobe.com) AEM AEM proporciona paquetes de datos para su uso en el SDK local de la aplicación de desarrollo de la aplicación (SDK). AEM Los paquetes proporcionados en la distribución de software no deben instalarse en entornos de nube AEMaaCS a menos que el soporte de Adobe los apruebe expresamente.
 
-Para obtener más información, consulte la [Documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+Para obtener más información, consulte la [Documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es).

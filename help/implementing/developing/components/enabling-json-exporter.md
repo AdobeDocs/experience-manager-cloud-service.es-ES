@@ -68,7 +68,7 @@ La interfaz del modelo Sling correspondiente (`MyComponent`) se anotaría usando
 
 La interfaz del modelo debe anotarse correctamente para definir qué métodos se deben serializar. De forma predeterminada, todos los métodos que respetan la convención de nombres habitual de los captadores se serializan y derivan sus nombres de propiedades JSON de forma natural de los nombres de los captadores. Esto se puede evitar o sobrescribir mediante `@JsonIgnore` o `@JsonProperty` para cambiar el nombre de la propiedad JSON.
 
-## Ejemplo {#example}
+## Ejemplos {#example}
 
 [Los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) admite la exportación de JSON y se puede utilizar como referencia.
 

@@ -48,7 +48,7 @@ Consulte la compatibilidad con la plataforma y [requisitos previos para el conec
 
 A continuación se describen las funcionalidades disponibles a través de varios tipos de integraciones entre [!DNL Assets] y [!DNL Workfront].
 
-| Función | Descripción | [!DNL Workfront] y [!DNL Assets Essentials] *Sin conector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Requiere conector* | WORKFRONT y [!DNL Experience Manager as a Cloud Service] *Sin conector (OOTB)* |
+| Funcionalidad | Descripción | [!DNL Workfront] y [!DNL Assets Essentials] *Sin conector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Requiere conector* | WORKFRONT y [!DNL Experience Manager as a Cloud Service] *Sin conector (OOTB)* |
 |----|----|----|-----|-----|
 | Métodos de implementación | Apropiado para lo cual [!DNL Assets] oferta. | Assets Essentials | Adobe Managed Services, On-Premise | Servicio de nube de  |
 | **General** |

@@ -5,7 +5,7 @@ exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 5%
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ Siga los pasos a continuación para crear un nuevo canal de secuencia en Pantall
 
 ## Administración de un canal {#managing-channels}
 
-Puede editar, ver las propiedades y el panel, y copiar, acceder a la vista previa y eliminar un canal.
+Puede editar, ver las propiedades y el panel, copiar, previsualizar y eliminar un canal.
 
 Navegue hasta el canal del proyecto y seleccione el canal, como se muestra en la figura siguiente. Ahora puede seleccionar las opciones, como editar el canal, ver propiedades, previsualizar contenido, administrar la publicación o eliminar el canal de la barra de acciones.
 
@@ -62,7 +62,7 @@ Navegue hasta el canal del proyecto y seleccione el canal, como se muestra en la
 
 ### Adición de contenido a un canal {#add-content}
 
-Para añadir o editar contenido en un canal, siga los pasos que se indican a continuación:
+Para añadir o editar contenido en un canal, siga los pasos a continuación:
 
 1. Seleccione el canal que desee editar, como se muestra en la figura siguiente. Haga clic en **Editar** desde la esquina superior izquierda de la barra de acciones para abrir el editor.
 
@@ -84,7 +84,7 @@ Las siguientes plantillas están disponibles mientras se utiliza la variable **C
 
 | Plantillas disponibles | Descripción |
 |--- |--- |
-| Carpeta de canales | Permite crear una carpeta para almacenar la colección de canales. |
+| Carpeta de canales | Permite crear una carpeta para almacenar una colección de canales. |
 | Canal de secuencia | Permite crear un canal que reproduce los componentes secuencialmente (uno a uno en una presentación de diapositivas). |
 | Canal de pantalla dividida de barra en L izquierda o derecha | Permite a los autores de contenido ver diferentes tipos de recursos en zonas de tamaño adecuado. |
 

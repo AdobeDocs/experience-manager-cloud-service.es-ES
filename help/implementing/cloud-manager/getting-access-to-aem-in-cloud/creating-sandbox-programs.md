@@ -25,29 +25,29 @@ Siga estos pasos para crear un programa de zona protegida.
 
    ![Página de aterrizaje de Cloud Manager](assets/cloud-manager-my-programs.png)
 
-1. En el asistente crear programa, seleccione **Configuración de un simulador para pruebas** y proporcione un nombre de programa.
+1. En el asistente Crear programa, seleccione **Configuración de una zona protegida** y proporcione un nombre de programa.
 
    ![Creación de tipo de programa](assets/create-sandbox.png)
 
-1. De forma opcional, puede agregar una imagen al programa arrastrando y soltando un archivo de imagen al **Agregar una imagen de programa** haga clic o establezca como destino una imagen para seleccionarla en un explorador de archivos. Haga clic o pulse **Continuar**.
+1. Si lo desea, puede agregar una imagen al programa arrastrando y soltando un archivo de imagen en **Agregar una imagen de programa** destino o clic en él para seleccionar una imagen de un explorador de archivos. Haga clic o pulse **Continuar**.
 
    * La imagen solo sirve como mosaico en la ventana de información general del programa y ayuda a identificar el programa.
 
-1. En el **Configuración del simulador para pruebas** , elija las soluciones que desea habilitar en el programa de simulación de pruebas comprobando las opciones de **Soluciones y complementos** tabla.
+1. En el **Configurar la zona protegida** , elija qué soluciones desea habilitar en el programa de zona protegida marcando las opciones en la **Soluciones y complementos** tabla.
 
-   * Utilice las comillas angulares situadas junto a los nombres de las soluciones para mostrar complementos adicionales y opcionales para las soluciones.
+   * Utilice las comillas angulares que aparecen junto a los nombres de las soluciones para mostrar complementos opcionales adicionales para las soluciones.
 
-   * La variable **Sitios** y **Recursos** las soluciones de siempre se incluyen en los programas de entornos limitados y no se pueden anular las selecciones.
+   * El **Sites** y **Assets** las soluciones de siempre se incluyen en los programas de zonas protegidas y no se pueden anular.
 
-   ![Seleccionar soluciones y complementos para un simulador de pruebas](assets/sandbox-solutions-add-ons.png)
+   ![Seleccionar soluciones y complementos para una zona protegida](assets/sandbox-solutions-add-ons.png)
 
-1. Una vez seleccionadas las soluciones y los complementos para el programa de simulación de pruebas, pulse en **Crear**.
+1. Una vez seleccionadas las soluciones y los complementos de su programa de zona protegida, pulse o haga clic en **Crear**.
 
 Verá una nueva tarjeta de programa de zona protegida en la página de aterrizaje con un indicador de estado a medida que avance el proceso de configuración.
 
 ![Creación de una zona protegida desde la página Información general](assets/sandbox-setup.png)
 
-## Acceso a Simulador para pruebas {#access}
+## Acceso a zona protegida {#access}
 
 Puede ver los detalles de la configuración de la zona protegida, así como acceder al entorno (una vez disponible) en la página de información general del programa.
 

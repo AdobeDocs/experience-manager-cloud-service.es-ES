@@ -7,7 +7,7 @@ exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
 source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 >
 >Los atajos no distinguen entre mayúsculas y minúsculas.
 
-| Lugar de residencia | Método abreviado | Descripción |
+| Lugar de residencia | Acceso directo | Descripción |
 |---|---|---|
 | No se ha seleccionado ningún fragmento de contenido | `n` | Abrir el cuadro de diálogo Crear |
 | Seleccionar uno o varios fragmentos de contenido | `m` | Abrir el cuadro de diálogo Mover |

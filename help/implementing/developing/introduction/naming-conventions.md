@@ -1,17 +1,17 @@
 ---
 title: Convenciones de nomenclatura
-description: Los nodos del repositorio están sujetos a las convenciones de nomenclatura del Repositorio de contenidos de Java
+description: Los nodos del repositorio están sujetos a las convenciones de nomenclatura del repositorio de contenido de Java
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 17%
+ht-degree: 1%
 
 ---
 
 # Convenciones de nomenclatura{#naming-conventions}
 
-Los nodos del repositorio están sujetos a las convenciones de nomenclatura del Repositorio de contenidos de Java. AEM Sin embargo, impone otras convenciones para el nombre de los nodos de la página.
+Los nodos del repositorio están sujetos a las convenciones de nomenclatura del repositorio de contenido Java. AEM Sin embargo, impone otras convenciones para el nombre de los nodos de la página.
 
 ## Convenciones de nomenclatura para páginas {#naming-conventions-for-pages}
 

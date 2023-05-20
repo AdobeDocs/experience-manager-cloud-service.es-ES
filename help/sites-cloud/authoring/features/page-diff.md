@@ -1,11 +1,11 @@
 ---
 title: Diferencias de página
-description: La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
+description: La función de diferencia de página permite realizar una comparación en paralelo de dos páginas con sus diferencias resaltadas.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '622'
-ht-degree: 100%
+ht-degree: 39%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 ## Introducción {#introduction}
 
-La creación de contenido es un proceso iterativo. La creación con eficiencia de contenido requiere poder ver qué ha cambiado de una iteración a otra. Visualizar una versión de la página y luego otra es un proceso poco eficaz y propenso a errores. Un autor desea poder comparar fácilmente la página actual en paralelo con otra versión.
+La creación de contenido es un proceso iterativo. Crear con eficacia requiere poder ver qué ha cambiado de una iteración a otra. Ver una versión de la página y luego la otra es ineficiente y propensa a errores. Un autor quiere poder comparar fácilmente la página actual en paralelo con otra versión.
 
-La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
+La función de diferencia de página permite realizar una comparación en paralelo de dos páginas con sus diferencias resaltadas.
 
 >[!NOTE]
 >
@@ -32,36 +32,36 @@ La comparación de diferencias en paralelo permite comparar lo siguiente:
 * [Lanzamientos](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page): lanzamiento con su origen.
 * [Copias de idioma](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies): una página antes y después de la traducción.
 
-Consulte los temas correspondientes sobre cómo iniciar la comparación de diferencias en esos contextos.
+Consulte los temas respectivos sobre cómo iniciar la comparación de diferencias dentro de esos contextos.
 
 ### Presentación de diferencias   {#presentation-of-differences}
 
-Independientemente del contenido que se va a comparar, la presentación de las diferencias sigue siendo la misma.
+Independientemente del contenido que se compare, la presentación de la comparación de diferencias sigue siendo la misma.
 
-* El contenido seleccionado al iniciar la comparación de diferencias se muestra a la izquierda (punto de entrada de las diferencias).
-* El contenido con el que se va a comparar se muestra a la derecha (elemento con el que se compara el contenido seleccionado).
+* El contenido seleccionado al iniciar la comparación de diferencias se muestra a la izquierda (el punto de entrada de diferencia).
+* El contenido comparativo se muestra a la derecha (con qué se compara el contenido seleccionado).
 
-Por ejemplo, si se comparan versiones, la versión actual se muestra a la izquierda y la versión anterior se muestra a la derecha.
+Por ejemplo, si se comparan versiones, la versión actual se muestra a la izquierda y la anterior a la derecha.
 
-El origen de ambas páginas se muestra claramente en la barra de encabezado de la parte superior de la ventana del navegador.
+El origen de ambas páginas se muestra claramente en la barra de encabezado de la parte superior de la ventana del explorador.
 
 ![Versiones en paralelo](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
 
-La comparación de diferencias detecta los cambios en el nivel de componente y de HTML. Los elementos modificados se resaltan con colores diferentes.
+La comparación de diferencias detecta los cambios en los niveles de componente y HTML. Los elementos que se han cambiado se resaltan con colores diferentes.
 
-**Cambios en los componentes** 
+**Cambios de componentes**
 
 * Verde claro: componente añadido
 * Rosa: componente eliminado
 
-**Cambios en HTML** 
+**Cambios del HTML**
 
 * Verde oscuro: HTML añadido
 * Rojo: HTML eliminado
 
 >[!NOTE]
 >
->Al comparar copias de idioma, el resaltado está desactivado, ya que en una traducción cambia todo y el resaltado no proporcionará ninguna ventaja.
+>Al comparar copias de idioma, se desactiva el resaltado, ya que en una traducción todo cambia y el resaltado no sería de ninguna utilidad.
 
 ### Pantalla completa y salida   {#fullscreen-and-exiting}
 
@@ -81,16 +81,16 @@ También puede cerrar la vista de pantalla completa haciendo clic en el icono pa
 
 ![Salir del modo de pantalla completa](/help/sites-cloud/authoring/assets/versions-exit-full-screen.png)
 
-Puede salir de la comparación de diferencias en paralelo en cualquier momento haciendo clic en el botón Cerrar del encabezado.
+Puede salir de la comparación de diferencias en cualquier momento haciendo clic en el botón Close del encabezado.
 
 ## Restricciones   {#limitations}
 
-Hay algunas situaciones en las que la comparación de diferencias de la página quizás no detecte una diferencia de la forma esperada.
+Hay algunas situaciones en las que la diferencia de página puede no detectarse según lo esperado.
 
-* Al realizar la comparación de diferencias de versiones y lanzamientos, no se tienen en cuenta componentes dinámicos como rutas de exploración, menús, listas de productos o logotipos (componentes que se basan en la estructura del sitio para procesar su contenido).
+* Al diferenciar versiones y lanzamientos, la comparación de diferencias no tiene en cuenta componentes dinámicos como rutas de exploración, menús, listas de productos o logotipos (componentes que dependen de la estructura del sitio para procesar su contenido).
 * Para las versiones, la comparación de diferencias no vuelve a crear la política de control de acceso ni las relaciones de Live Copy.
-* Si se mueve una página, ya no se puede realizar una diferencia con ninguna versión hecha antes del movimiento.
-   * Si tiene problemas con una diferencia, compruebe la [línea de tiempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para ver si la página se ha movido.
+* Si se mueve una página, ya no se puede realizar una diferencia con las versiones realizadas antes del movimiento.
+   * Si tiene problemas con una comparación de diferencias, consulte la [Cronología](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para que la página vea si la página se ha movido.
 
 >[!NOTE]
 >
@@ -98,4 +98,4 @@ Hay algunas situaciones en las que la comparación de diferencias de la página 
 
 >[!NOTE]
 >
->Para obtener más información sobre cómo funciona el mecanismo de diferencia de página, así como las limitaciones que pueden afectar a dicho mecanismo, consulte la [documentación para desarrolladores](/help/implementing/developing/introduction/page-diff.md) de esta función.
+>Para obtener más información sobre el funcionamiento del mecanismo de diferencia de página, así como las limitaciones que pueden afectar a dicho mecanismo, consulte la [documentación para desarrolladores](/help/implementing/developing/introduction/page-diff.md) de esta función.

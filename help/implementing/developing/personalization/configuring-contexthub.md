@@ -5,7 +5,7 @@ exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1683'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -56,7 +56,7 @@ Añada un modo de interfaz de usuario para agrupar módulos de ContextHub relaci
    * Icono de modo: el selector para [Icono de Coral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) para utilizar, por ejemplo `coral-Icon--user`
    * Habilitado: seleccione esta opción para mostrar el modo de IU en la barra de herramientas de ContextHub
 
-1. Haga clic o pulse Guardar.
+1. Toque o haga clic en Guardar.
 
 ### Adición de un módulo de IU {#adding-a-ui-module}
 
@@ -91,7 +91,7 @@ Las propiedades del módulo de interfaz de usuario incluyen una configuración d
    * Habilitado: seleccione esta opción para mostrar el módulo de IU en la barra de herramientas de ContextHub
 
 1. (Opcional) Para anular la configuración de almacén predeterminada, introduzca un objeto JSON para configurar el módulo de interfaz de usuario.
-1. Haga clic o pulse Guardar.
+1. Toque o haga clic en Guardar.
 
 ## Creación de una tienda de ContextHub {#creating-a-contexthub-store}
 
@@ -130,7 +130,7 @@ AEM proporciona los siguientes candidatos de tienda de muestra en los que puede 
    * **Habilitado:** Seleccione para activar la tienda
 
 1. (Opcional) Para anular la configuración de almacén predeterminada, introduzca un objeto JSON en el cuadro Configuración detallada (JSON).
-1. Haga clic o pulse Guardar.
+1. Toque o haga clic en Guardar.
 
 ## Ejemplo: Uso de un servicio JSONP  {#example-using-a-jsonp-service}
 

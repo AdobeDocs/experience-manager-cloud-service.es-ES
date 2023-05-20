@@ -7,7 +7,7 @@ exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -19,17 +19,17 @@ Adobe Experience Manager proporciona una serie de configuraciones de sincronizac
 1. Si no lo hacen, determine si necesita crear las suyas.
 1. Especifique las opciones de configuración de despliegue que se utilizarán en los elementos de Live Copies.
 
-## Opciones de configuración de lanzamiento personalizadas e instaladas {#installed-and-custom-rollout-configurations}
+## Configuraciones de despliegue instaladas y personalizadas {#installed-and-custom-rollout-configurations}
 
-Esta sección proporciona información sobre las opciones de configuración de lanzamiento instaladas y las acciones de sincronización que utilizan, así como información para crear opciones de configuración personalizadas si es necesario.
+En esta sección se proporciona información sobre las configuraciones de despliegue instaladas, las acciones de sincronización que utilizan y cómo crear configuraciones personalizadas si es necesario.
 
 >[!CAUTION]
 >
 >Actualizar o cambiar una configuración de despliegue predeterminada **no** está recomendado. Si hay algún requisito para una acción en directo personalizada, debe añadirse en una configuración de despliegue personalizada.
 
-### Activadores de lanzamiento {#rollout-triggers}
+### Desplegar Déclencheur {#rollout-triggers}
 
-Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace que se produzca el lanzamiento. En las opciones de configuración de lanzamiento se puede utilizar uno de los siguientes activadores:
+Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace que se produzca el lanzamiento. Las configuraciones de despliegue pueden utilizar uno de los siguientes déclencheur:
 
 * **En el despliegue**: el comando **Despliegue** se utiliza en la página del modelo, o el comando **Sincronizar** se usa en la página de Live Copy.
 * **En la modificación**: la página de origen se modifica.
@@ -55,7 +55,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | Desactivar si se desactiva el modelo | Desactiva la Live Copy cuando se desactiva el origen | En la desactivación | `targetDeactivate` |
 | Insertar al modificar | Inserta el contenido en Live Copy cuando se modifica el origen<br>Utilice esta configuración de despliegue con moderación, ya que utiliza el activador En la modificación. | En la modificación | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
 | Insertar al modificar (superficial) | Inserta el contenido en Live Copy cuando se modifica la página del modelo, sin actualizar las referencias (por ejemplo, para copias superficiales)<br>Utilice esta configuración de despliegue con moderación, ya que utiliza el activador “En la modificación”. | En la modificación | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
-| Lanzamiento de promoción | Configuración del lanzamiento estándar para promocionar páginas de inicio con dicho fin. | En el despliegue | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
+| Promocionar lanzamiento | Configuración de lanzamiento estándar para promocionar páginas con dicho fin. | En el despliegue | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### Acciones de sincronización {#synchronization-actions}
 
@@ -63,7 +63,7 @@ En la siguiente tabla, se enumeran las opciones de sincronización listas para u
 
 <!--If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).-->
 
-| Nombre de la acción | Descripción | Propiedades |
+| Nombre de acción | Descripción | Propiedades |
 |---|---|---|
 | `contentCopy` | Cuando los nodos de origen no existen en la Live Copy, esta acción los copia en esta. [Configure el servicio de **acción de copia de contenido de CQ MSM**](#excluding-properties-and-node-types-from-synchronization) para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. |  |
 | `contentDelete` | Esta acción elimina los nodos de la Live Copy que no existen en el origen. [Configure el servicio de **acción de eliminación de contenido de CQ MSM**](#excluding-properties-and-node-types-from-synchronization) para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. |  |
@@ -100,7 +100,7 @@ Puede configurar varios servicios de OSGi que admitan las acciones de sincroniza
 
 Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
-En la tabla siguiente se enumeran las acciones de sincronización para las que se pueden especificar los nodos que se excluirán. La tabla proporciona los nombres de los servicios que se configuran mediante la consola web y el PID para configurar el uso de un nodo del repositorio.
+En la tabla siguiente se enumeran las acciones de sincronización para las que se pueden especificar los nodos que se excluirán. La tabla proporciona los nombres de los servicios que se van a configurar mediante la consola web y el PID para configurar mediante un nodo del repositorio.
 
 | Acción de sincronización | Nombre del servicio en la consola web | PID de servicio |
 |---|---|---|
@@ -121,9 +121,9 @@ En la tabla siguiente se describen las propiedades que se pueden configurar:
 
 #### Acción de actualización de contenido de CQ MSM: exclusiones {#cq-msm-content-update-action-exclusions}
 
-Algunas propiedades y tipos de nodo se excluyen de forma predeterminada. Estos se definen en la configuración de OSGi de la **acción de actualización de contenido de CQ MSM**, en **Propiedades de página excluidas**.
+De forma predeterminada, se excluyen varias propiedades y tipos de nodos, que se definen en la configuración OSGi de **Acción de actualización de contenido de CQ MSM**, en **Propiedades de página excluidas**.
 
-De forma predeterminada, las propiedades que coinciden con las siguientes expresiones regulares se excluyen (es decir, no se actualizan) del lanzamiento:
+De forma predeterminada, las propiedades que coinciden con las siguientes expresiones regulares se excluyen (es decir, no se actualizan) en el despliegue:
 
 ![Regímenes de exclusión de Live Copy](../assets/live-copy-exclude.png)
 
@@ -139,7 +139,7 @@ Puede configurar varios servicios de OSGi que admitan las acciones de sincroniza
 
 Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
-En la siguiente tabla se enumeran las acciones de sincronización para las que se puede especificar la actualización de referencia. La tabla proporciona los nombres de los servicios que se configuran mediante la consola web y el PID para configurar el uso de un nodo del repositorio.
+En la siguiente tabla se enumeran las acciones de sincronización para las que se puede especificar la actualización de referencia. La tabla proporciona los nombres de los servicios que se van a configurar mediante la consola web y el PID para configurar mediante un nodo del repositorio.
 
 | Propiedad de la consola web | Propiedad OSGi | Descripción |
 |---|---|---|
@@ -157,7 +157,7 @@ En la siguiente lista de ubicaciones en la que se pueden especificar las opcione
 * **Propiedades de la página principal de Live Copy:** cuando ni la página de Live Copy ni la página de origen del modelo usan una configuración de despliegue, se utiliza la configuración de despliegue que se aplica a la página principal de la página de Live Copy.
 * **[Sistema predeterminado](live-copy-sync-config.md#setting-the-system-default-rollout-configuration):** cuando no se puede determinar la configuración de despliegue de la página principal de Live Copy, se utiliza la configuración de despliegue predeterminada del sistema.
 
-Por ejemplo, un modelo utiliza el sitio [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) como contenido de origen. Se crea un sitio a partir del modelo. Cada elemento de la lista siguiente describe un escenario diferente respecto al uso de las opciones de configuración de lanzamiento:
+Por ejemplo, un modelo utiliza el sitio [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) como contenido de origen. Se crea un sitio a partir del modelo. Cada elemento de la siguiente lista describe un escenario diferente con respecto al uso de configuraciones de despliegue:
 
 * Ninguna de las páginas del modelo ni de Live Copy están configuradas para utilizar una configuración de despliegue. MSM utiliza la configuración de despliegue predeterminada del sistema para todas las páginas de Live Copy.
 * La página raíz del sitio WKND se configura con varias opciones de configuración de despliegue. MSM utiliza estas opciones de configuración de despliegue para todas las páginas de Live Copy.
@@ -179,19 +179,19 @@ También puede configurar las opciones de configuración de despliegue para una 
 
 1. Si es necesario, ajuste la marca de **Herencia de Live Copy**. Si se selecciona, la configuración de Live Copy es eficaz en todas las páginas secundarias.
 
-1. Desactive la propiedad **Heredar configuración de lanzamiento del elemento principal** y, a continuación, seleccione una o varias opciones de configuración de lanzamiento de la lista.
+1. Borre la **Heredar configuración de despliegue del elemento principal** y, a continuación, seleccione una o varias configuraciones de despliegue de la lista.
 
-   Las opciones de configuración de lanzamiento seleccionadas se muestran debajo de la lista desplegable.
+   Las configuraciones de despliegue seleccionadas aparecen debajo de la lista desplegable.
 
    ![Anulación de la herencia de configuración de Live Copy](../assets/live-copy-inherit-override.png)
 
 1. Haga clic o pulse en **Guardar y cerrar**.
 
-### Opciones de la configuración de lanzamiento para una página de modelo {#setting-the-rollout-configuration-for-a-blueprint-page}
+### Configuración de despliegue para una página de modelo {#setting-the-rollout-configuration-for-a-blueprint-page}
 
-Configure una página de modelo con las opciones de configuración de lanzamiento que se usarán cuando se lance la página de modelo.
+Configure una página de modelo con las opciones de configuración de despliegue que se utilizarán cuando se implemente la página de modelo.
 
-Tenga en cuenta que las páginas secundarias de la página de modelo heredan la configuración. Al establecer la configuración de lanzamiento para su uso, podría anular la configuración que la página hereda de su elemento principal.
+Tenga en cuenta que las páginas secundarias de la página de modelo heredan la configuración. Al configurar la configuración de despliegue para su uso, podría estar anulando la configuración que la página hereda de su elemento principal.
 
 1. Utilice la consola **Sitios** para seleccionar la página de modelo.
 1. En la barra de herramientas, seleccione **Propiedades**.

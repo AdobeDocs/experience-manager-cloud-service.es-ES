@@ -127,7 +127,7 @@ Siga los pasos a continuación para ver los informes de la opción de línea de 
    >![imagen](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
-### Revisión del informe de análisis de prácticas recomendadas {#analysis-report}
+### Revisar el informe de Best Practices Analyzer {#analysis-report}
 
 Explore las siguientes tarjetas disponibles en la página Informe de análisis de prácticas recomendadas:
 

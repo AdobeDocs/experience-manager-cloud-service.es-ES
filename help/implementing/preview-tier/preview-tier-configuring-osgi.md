@@ -1,19 +1,19 @@
 ---
 title: Configuración de OSGi para el nivel de vista previa
-description: Obtenga información sobre cómo configurar el servicio de vista previa de AEM para previsualizar el contenido antes de publicarlo.
-source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
+description: AEM Obtenga información sobre cómo configurar el servicio de vista previa de la para obtener una vista previa del contenido antes de publicarlo.
+exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 64%
 
 ---
 
-
 # Configuración de OSGi para el nivel de vista previa {#configure-osgi-preview-tier}
 
-AEM ofrece un servicio de vista previa de Sites que permite a los desarrolladores y autores de contenido obtener una vista previa de la experiencia final de un sitio web antes de que llegue al entorno de publicación y esté disponible públicamente.
+AEM ofrece un servicio de vista previa de Sites que permite a los desarrolladores y autores de contenido previsualizar la experiencia final de un sitio web antes de que llegue al entorno de publicación y esté disponible públicamente.
 
-Facilita la previsualización de una serie de experiencias que de otra manera no serían visibles desde el entorno de creación. Por ejemplo, transiciones de página, fragmentos de experiencia y otro contenido solo de publicación.
+Facilita la previsualización de una serie de experiencias que, de lo contrario, no serían visibles desde el entorno de creación. Por ejemplo, transiciones de página, fragmentos de experiencia y otro contenido solo de publicación.
 
 Los valores de las propiedades OSGi del nivel de vista previa se heredan del nivel de publicación. Sin embargo, los valores del nivel de vista previa pueden ser distintos del de publicación, configurando el parámetro `service` al valor `preview`.
 

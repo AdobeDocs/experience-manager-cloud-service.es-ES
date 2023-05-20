@@ -1,24 +1,24 @@
 ---
 title: Lanzamientos
-description: Los lanzamientos le permiten desarrollar con eficacia contenido para una versión futura. También permiten preparar los cambios para una publicación en el futuro, a la vez que mantienen las páginas actuales.
+description: Los lanzamientos le permiten desarrollar contenido de forma eficaz para una versión futura. Permiten realizar cambios listos para su publicación futura, sin perder las páginas actuales
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 100%
+ht-degree: 47%
 
 ---
 
 # Lanzamientos {#launches}
 
-Los lanzamientos le permiten desarrollar con eficacia contenido para una versión futura. 
+Los lanzamientos le permiten desarrollar contenido de forma eficaz para una versión futura.
 
-Un lanzamiento se crea para permitir que se realicen cambios preparados para una publicación futura (a la vez que se mantienen las páginas actuales). Después de editar y actualizar las páginas de lanzamiento, estas se vuelven a promocionar al origen y luego se activan las páginas de origen (nivel superior). La promoción duplica el contenido del lanzamiento en las páginas de origen y se puede realizar de forma manual o automática (según los campos establecidos a la hora de crear y editar el lanzamiento).
+Un lanzamiento se crea para permitir que se realicen cambios preparados para una publicación futura (a la vez que se mantienen las páginas actuales). Después de editar y actualizar las páginas de lanzamiento, estas se vuelven a promocionar al origen y luego se activan las páginas de origen (nivel superior). La promoción duplica el contenido de lanzamiento de nuevo en las páginas de origen y se puede realizar manualmente o automáticamente (según los campos establecidos al crear y editar el lanzamiento).
 
-Por ejemplo, las páginas de productos de temporada de un almacén en línea se actualizan cada trimestre para que los productos mostrados coincidan con la temporada correspondiente. Para preparar la próxima actualización trimestral, se puede crear un lanzamiento de las páginas web correspondientes. Durante el trimestre, se acumulan los cambios siguientes en la copia de lanzamiento:
+Por ejemplo, las páginas de productos de temporada de su tienda en línea se actualizan trimestralmente para que los productos destacados se correspondan con la temporada actual. Para prepararse para la siguiente actualización trimestral, puede crear un lanzamiento de las páginas web correspondientes. Durante el trimestre, los siguientes cambios se acumulan en la copia de lanzamiento:
 
 * Cambios en las páginas de origen que se producen como resultado de tareas de mantenimiento normales. Estos cambios se duplican automáticamente en las páginas de lanzamiento.
-* Ediciones que se realizan en las páginas de lanzamiento directamente en preparación para el trimestre siguiente.
+* Ediciones que se realizan directamente en las páginas de lanzamiento como preparación para el próximo trimestre.
 
 También puede hacer lo siguiente:
 
@@ -27,10 +27,10 @@ También puede hacer lo siguiente:
 
 Cuando llegue el trimestre siguiente, las páginas de lanzamiento se promocionan de forma que se puedan publicar las páginas de origen (que contienen el contenido actualizado). Puede promocionar todas las páginas o solamente aquellas que se han modificado. 
 
-También se puede realizar lo siguiente:
+Los lanzamientos también pueden ser:
 
-* Crear lanzamientos para varias ramas de raíz. Si bien puede crear el lanzamiento para todo el sitio (y realizar los cambios allí), este método es poco práctico, ya que es necesario copiar todo el sitio. Cuando se trata de cientos o incluso miles de páginas, los requisitos del sistema y el rendimiento de este se ven afectados tanto por la acción de copia como por las comparaciones posteriores necesarias para las tareas de promoción.
-* Crear lanzamientos anidados (un lanzamiento dentro de otro lanzamiento). Esto permite crear un lanzamiento a partir de un lanzamiento existente, de modo que los autores puedan aprovechar los cambios ya realizados, en lugar de tener que realizar los mismos cambios varias veces para cada lanzamiento.
+* Creado para varias ramas raíz. Aunque puede crear el lanzamiento para todo el sitio (y realizar los cambios allí), esto puede resultar poco práctico, ya que es necesario copiar todo el sitio. Cuando hay cientos o incluso miles de páginas implicadas, los requisitos del sistema y el rendimiento se ven afectados por la acción de copiar y, posteriormente, por las comparaciones necesarias para las tareas de promoción.
+* Anidado (un lanzamiento dentro de un lanzamiento) para permitirle crear un lanzamiento a partir de uno existente, de modo que los autores puedan aprovechar los cambios ya realizados, en lugar de tener que realizar los mismos cambios varias veces para cada lanzamiento.
 
 En esta sección se describe cómo crear, editar y promocionar (y, si fuera necesario [eliminar](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) páginas de lanzamiento desde la consola Sitios o la [consola Lanzamientos](#the-launches-console):
 
@@ -40,31 +40,31 @@ En esta sección se describe cómo crear, editar y promocionar (y, si fuera nece
 * [Uso de la deformación de tiempo para previsualizar el contenido en función de los lanzamientos](/help/sites-cloud/authoring/launches/preview.md)
 * [Promoción de lanzamientos](/help/sites-cloud/authoring/launches/promoting.md)
 
-## Lanzamientos: orden de eventos {#launches-the-order-of-events}
+## Lanzamientos: el orden de los eventos {#launches-the-order-of-events}
 
-Los lanzamientos permiten desarrollar contenido con eficacia para una versión futura de una o más páginas web activadas.
+Los lanzamientos permiten desarrollar contenido de forma eficaz para una versión futura de una o más páginas web activadas.
 
-Los lanzamientos permiten realizar lo siguiente:
+Los lanzamientos le permiten lo siguiente:
 
 * Cree una copia de las páginas de origen:
    * La copia es su lanzamiento.
    * Las páginas de origen de nivel superior se denominan **Producción**.
-      * Las páginas de origen puedan obtenerse de varias ramas (separadas).
+      * Las páginas de origen se pueden tomar de varias ramas (independientes).
 
    ![Orden de operación de los lanzamientos](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * Edite la configuración de lanzamiento:
-   * Adición o eliminación de páginas o ramas en el lanzamiento.
+   * Añada o elimine páginas o ramas en el lanzamiento.
    * Editar propiedades de lanzamiento; como **Título**, **Fecha de lanzamiento** e indicador **Listo para la producción**.
-* Es posible promocionar y publicar el contenido de forma manual o automática:
+* Puede promocionar y publicar el contenido de forma manual o automática:
    * Manualmente:
-      * Promocione de nuevo el contenido del lanzamiento en el **Destino** (páginas de origen) cuando esté listo para su publicación.
-      * Publique el contenido de las páginas de origen (tras volver a promocionarlo).
-      * Promocione todas las páginas o solamente las páginas modificadas.
+      * Promocione el contenido de lanzamiento de nuevo en **Target** (páginas de origen) cuando esté listo para publicarse.
+      * Publique el contenido desde las páginas de origen (después de volver a promocionarlo).
+      * Promocione todas las páginas o solo las páginas modificadas.
    * Automáticamente. Esto implica lo siguiente:
       * El campo **Fecha**(**Live**) **de lanzamiento**: esto se puede establecer al crear o editar un lanzamiento. 
-      * El indicador **Producción lista**: esto solo se puede establecer al editar un lanzamiento.
-      * Si se establece el indicador **Producción lista**, el lanzamiento se promocionará automáticamente a las páginas de producción según el valor del campo **Fecha**(**Live**) **de lanzamiento**. Después de la promoción, las páginas de producción se publican automáticamente.\
+      * El **Producción lista** indicador: esto solo se puede establecer al editar un lanzamiento.
+      * Si la variable **Producción lista** Si se establece el indicador, el lanzamiento se promocionará automáticamente a las páginas de producción del especificado **Launch**(**Activo**) **fecha**. Después de la promoción, las páginas de producción se publican automáticamente.\
          Si no se ha establecido ninguna fecha, el indicador no tiene ningún efecto.
 * Actualice las páginas de origen y de lanzamiento en paralelo:
    * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy). 
@@ -72,9 +72,9 @@ Los lanzamientos permiten realizar lo siguiente:
 
    ![Acciones en paralelo](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
-* [Crear un lanzamiento anidado](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch): lanzamiento dentro de un lanzamiento.
+* [Crear un lanzamiento anidado](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - un lanzamiento dentro de un lanzamiento:
    * El origen es un lanzamiento existente.
-   * Puede [promocionar un lanzamiento anidado](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) a cualquier destino; esto puede ser un lanzamiento principal o bien las páginas de origen de nivel superior (producción).
+   * Puede [promocionar un lanzamiento anidado](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) a cualquier destino; puede ser un lanzamiento principal o las páginas de origen de nivel superior (producción).
 
    ![Un lanzamiento anidado](/help/sites-cloud/authoring/assets/launches-nested.png)
 
@@ -88,10 +88,10 @@ Los lanzamientos permiten realizar lo siguiente:
 >
 >Si experimenta algún problema, póngase en contacto con el administrador del sistema. 
 
-## Lanzamientos en las referencias (consola Sitios) {#launches-in-references-sites-console}
+## Lanzamientos en referencias (consola Sitios) {#launches-in-references-sites-console}
 
-1. En la consola **Sitios**, vaya al origen de los lanzamientos.
-1. Abra el carril **Referencias** y seleccione la página de origen.
+1. En el **Sites** , vaya al origen de los lanzamientos.
+1. Abra el **Referencias** y seleccione la página de origen.
 1. Selecccione **Lanzamientos** y se enumerarán los lanzamientos existentes, así como el acceso a la **consola Lanzamientos**:
 
    ![Referencias de lanzamientos en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references.png)
@@ -100,9 +100,9 @@ Los lanzamientos permiten realizar lo siguiente:
 
    ![Acciones que se deben realizar en lanzamientos desde la consola Sitios](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
-## Consola Lanzamientos {#the-launches-console}
+## La consola Lanzamientos {#the-launches-console}
 
-En la consola Lanzamientos se proporciona información general sobre los lanzamientos. La consola se puede utilizar para tomar medidas sobre los lanzamiento indicados. Se puede acceder a la consola desde: 
+La consola Lanzamientos proporciona una descripción general de los lanzamientos y le permite realizar acciones con los enumerados. Se puede acceder a la consola desde: 
 
 * La consola **Herramientas**: **Herramientas**, **Sitios** **Lanzamientos**.
 

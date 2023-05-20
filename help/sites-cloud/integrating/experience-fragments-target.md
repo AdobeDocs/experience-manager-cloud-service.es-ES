@@ -143,7 +143,7 @@ Utilice el siguiente procedimiento para crear una configuración de nube de Targ
 1. Vaya a **Cloud Services heredados** a través de la variable **Logotipo de AEM** > **Herramientas** > **Cloud Services** > **Cloud Services heredados**.
 Por ejemplo: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   Se abre la página de información general de **Adobe Experience Cloud**
+   Se abre la página de información general de **Adobe Experience Cloud**.
 
 1. En la sección **Adobe Target**, haga clic en **Configurar ahora**.
 1. En el cuadro de diálogo **Crear configuración**:

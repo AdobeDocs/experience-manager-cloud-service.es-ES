@@ -74,12 +74,12 @@ Así se ordenará toda la tabla según esa columna. La ordenación solo está di
 
 Dentro de la consola hay una serie de acciones que puede utilizar, ya sea directamente o después de seleccionar un fragmento específico:
 
-* Varias acciones son directamente [disponible desde la consola](#available-actions)
+* Varias acciones son directas [disponible desde la consola](#available-actions)
 * Puede [seleccione uno o varios fragmentos de contenido para mostrar las acciones adecuadas](#actions-selected-content-fragment)
 
-### Acciones (sin seleccionar) {#actions-unselected}
+### Acciones (no seleccionadas) {#actions-unselected}
 
-Algunas acciones están disponibles desde la consola, sin seleccionar un fragmento de contenido específico:
+Ciertas acciones están disponibles desde la consola, sin seleccionar un fragmento de contenido específico:
 
 * **[Crear](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** un nuevo fragmento de contenido
 * [Filtrar](#filtering-fragments) los fragmentos de contenido de acuerdo con una selección de predicados y guardar el filtro para uso futuro

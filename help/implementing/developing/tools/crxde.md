@@ -5,7 +5,7 @@ exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '1694'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
@@ -168,7 +168,7 @@ El **Preferencias** se puede utilizar para establecer el idioma de la interfaz d
 
 Para crear una carpeta con el CRXDE Lite:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el panel Navegación, haga clic con el botón derecho en la carpeta en la que desea crear la nueva carpeta y seleccione **Crear...**, entonces **Crear carpeta...**.
 
 1. Introduzca la carpeta **Nombre** y haga clic en **OK**.
@@ -179,7 +179,7 @@ Para crear una carpeta con el CRXDE Lite:
 
 Para crear un nodo con un CRXDE Lite:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el [**Panel Explorador**,](#explorer-pane) haga clic con el botón derecho en el nodo en el que desee crear el nuevo nodo y seleccione **Crear**, entonces **Crear nodo**.
 1. Introduzca el **Nombre** y seleccione la **Tipo**.
 1. Haga clic en **Aceptar**.
@@ -195,17 +195,17 @@ El repositorio también lleva a cabo la validación con respecto a si el tipo de
 
 Para crear una propiedad con el CRXDE Lite:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el [**Panel Explorador**,](#explorer-pane) seleccione el nodo en el que desea agregar la nueva propiedad.
 1. En el [**Pestaña Propiedades**](#properties-tab) en el panel inferior, introduzca la variable **Nombre**, el **Tipo**, y el **Valor**.
-1. Haga clic en **Agregar**.
+1. Clic **Añadir**.
 1. Haga clic en [**Botón Guardar todo**](#save-all-button) para guardar los cambios en el servidor.
 
 ## Creación de un archivo {#creating-a-file}
 
 Para crear un nuevo archivo con el CRXDE Lite:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el [**Panel Explorador**,](#explorer-pane) haga clic con el botón derecho en el componente donde desee crear el archivo y seleccione **Crear**, entonces **Crear archivo**.
 1. Introduzca el archivo **Nombre** incluida su extensión.
 1. Haga clic en **Aceptar**.
@@ -219,7 +219,7 @@ Con CRXDE Lite puede importar o exportar definiciones de tipo de nodo en [Notaci
 
 Para exportar una definición de tipo de nodo en el CRXDE Lite:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. Seleccione el nodo requerido.
 1. Seleccionar **Herramientas** entonces **Exportar tipo de nodo**.
 1. La definición se muestra en notación CDN en una nueva pestaña del explorador.
@@ -227,7 +227,7 @@ Para exportar una definición de tipo de nodo en el CRXDE Lite:
 
 Para importar una definición de tipo de nodo:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. Seleccionar **Herramientas** entonces **Importar tipo de nodo**.
 1. Se abre una nueva pestaña en [**Panel de edición**](#edit-pane) etiquetado **Importar tipo de nodo**.
 1. Introduzca la notación CDN para la definición en el cuadro de texto de **Importar tipo de nodo** pestaña.
@@ -238,7 +238,7 @@ Para importar una definición de tipo de nodo:
 
 Con CRXDE Lite puede mostrar el archivo `error.log` que se encuentra en el sistema de archivos en `<aem-install-dir>/crx-quickstart/logs` y filtrarlo con el nivel de registro adecuado. Proceda como se indica a continuación:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En, en el menú desplegable de la derecha de [**Pestaña Consola**](#console-tab) en la parte inferior de la ventana, seleccione **Registros de servidor**.
 1. Haga clic en **Detener** para mostrar los mensajes.
 

@@ -1,13 +1,13 @@
 ---
 title: Atributos y tipos
 description: Obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
-workflow-type: ht
+exl-id: 02795a31-244a-42b4-8297-2649125d7777
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 100%
 
 ---
-
 
 # Atributos y tipos {#attributes-types}
 
@@ -59,9 +59,9 @@ Dependiendo del caso de uso, `itemprop` o `itemid` pueden no ser obligatorios. P
 
 Para obtener más información acerca del editor universal, consulte estos documentos.
 
-* [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar aspectos de cualquier contenido en todo tipo de implementación para ofrecer experiencias excepcionales, aumentar la velocidad y proporcionar una experiencia de última generación a los desarrolladores.
-* [Creación de contenido con el editor universal](authoring.md): descubra lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
-* [Publicación de contenido con el editor universal](publishing.md): descubra cómo se publica contenido con el editor visual universal y cómo sus aplicaciones pueden gestionar este contenido publicado.
-* [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder y cómo instrumentar la primera aplicación de AEM para utilizar el editor universal.
+* [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
+* [Creación de contenido con el editor universal](authoring.md): aprenda lo fácil e intuitivo que es para los autores de contenido crear contenido con el editor universal.
+* [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el publicado.
+* [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 * [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 * [Autenticación del editor universal](authentication.md): obtenga información sobre cómo se autentica el editor universal.

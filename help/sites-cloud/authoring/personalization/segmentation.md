@@ -5,17 +5,17 @@ exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 100%
+ht-degree: 74%
 
 ---
 
 # Información acerca de la segmentación {#understanding-segmentation}
 
-La segmentación es una consideración clave al crear una campaña. En la mayoría de los casos, será necesario tener segmentos ya definidos antes de comenzar una campaña.
+La segmentación es una consideración clave al crear una campaña. En la mayoría de los casos, deberá tener los segmentos ya definidos antes de iniciar la campaña.
 
-Los visitantes del sitio tienen diferentes intereses y objetivos cuando acceden al sitio. Comprender estos objetivos y cumplir las expectativas son importantes factores de éxito para el marketing en línea.
+Los visitantes del sitio tienen diferentes intereses y objetivos cuando llegan a un sitio. Comprender estos objetivos y cumplir las expectativas es un factor de éxito importante para el marketing en línea.
 
-La segmentación ayuda a lograr esto, analizando y caracterizando los siguientes aspectos de un visitante:
+La segmentación ayuda a conseguirlo al analizar y caracterizar el comportamiento de un visitante:
 
 * La actividad en el sitio web
 * Perfil
@@ -31,8 +31,8 @@ Los segmentos se definen en Configurar segmentación. Se utilizan para dirigir e
 
 Al analizar la segmentación, se emplea la siguiente terminología:
 
-* **Visitante**: Un visitante es una persona que visita un sitio web. La visita de esa persona se suele iniciar desde una página de referencia y después se mueve a una o varias vistas de página en su propio sitio web. Se puede crear un perfil de comportamiento a partir de la información de la visita de esa persona.
-* **Usuario**: Un usuario es un visitante que se registra con el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan identificación adicional como, por ejemplo, una dirección de correo electrónico y el género, entre otros datos. La información adicional también se puede recopilar, incluyendo la actividad de la comunidad y los modelos de compra, entre otros datos. En función de la información proporcionada en el perfil, se puede crear un perfil demográfico.
+* **Visitante**: Un visitante es una persona que visita un sitio web. La visita de esa persona suele comenzar desde una página de referencia y luego pasa a una o más vistas de página del sitio web. Se puede crear un perfil de comportamiento a partir de los detalles de la visita de esa persona.
+* **Usuario**: Un usuario es un visitante que se registra con el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan una identificación adicional, como una dirección de correo electrónico y el sexo, entre otros. También se puede recopilar información adicional, como actividad de la comunidad y patrones de compra, entre otros. A partir de la información proporcionada en el perfil, se puede crear un perfil demográfico.
 * **Pista**: Una pista es una característica o propiedad de un visitante que se puede usar para determinar la pertenencia en un segmento específico.
 * **Segmento**: Un segmento es un conjunto de visitantes que comparten determinadas características. Los segmentos deben ser distintivos, con un mínimo de superposición con otros segmentos.
 * **Características de comportamiento**: Las características de comportamiento son las que se relacionan con el comportamiento de un visitante en el sitio web. Entre estas características se incluyen:
@@ -43,7 +43,7 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 * **Características demográficas** - Son características de población seleccionadas, incluidas:
    * Edad
    * Ingresos
-   * Tamaño familiar
+   * Tamaño de familia
    * Estado civil
    * Sexo
    * Lugar de residencia

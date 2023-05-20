@@ -15,9 +15,9 @@ En esta parte del [recorrido para desarrolladores de contenido de AEM sin encabe
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de AEM sin encabezado, [Cómo actualizar su contenido a través de las API de AEM Asset](update-your-content.md) ha aprendido a actualizar el contenido sin encabezado existente en AEM mediante la API y ahora debería:
+En el documento anterior del recorrido de AEM sin encabezado, [Cómo actualizar su contenido a través de las API de AEM Assets](update-your-content.md) ha aprendido a actualizar el contenido sin encabezado existente en AEM mediante la API y ahora debería:
 
-* Comprender la API HTTP de AEM Asset.
+* Comprender la API HTTP de AEM Assets.
 
 ## Objetivo {#objective}
 

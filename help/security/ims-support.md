@@ -142,7 +142,7 @@ Verá una lista de instancias existentes:
 
 En cada instancia de contexto de producto, habrá algunas que abarquen los servicios de creación o publicación en los entornos Producción, Ensayo o Desarrollo. Cada instancia se asocia a los perfiles de producto o a las funciones de Cloud Manager. Estos perfiles de producto se utilizan para asignar acceso a usuarios y grupos con los privilegios requeridos.
 
-La variable **AEM Administradores_xxx** se utilizará para conceder privilegios de administrador en la instancia de AEM asociada mientras que la variable **AEM Users_xxx** se utiliza para agregar usuarios habituales.
+El **AEM Administradores de_xxx** AEM se utilizará para otorgar privilegios de administrador en la instancia de administración asociada mientras que la variable **AEM Usuarios_xxx** Este perfil se utiliza para añadir usuarios habituales.
 
 Los usuarios y grupos agregados bajo este perfil de producto pueden iniciar sesión en esa instancia en particular, como se muestra en el ejemplo siguiente:
 
@@ -150,7 +150,7 @@ Los usuarios y grupos agregados bajo este perfil de producto pueden iniciar sesi
 
 >[!WARNING]
 >
->La variable **Administradores de AEM** no se debe cambiar el nombre del perfil del producto. Cambio del nombre del **Administradores de AEM** el perfil de producto eliminará los derechos de administrador de todos los usuarios asignados a ese perfil.
+>El **AEM Administradores de** el nombre del perfil del producto no debe cambiarse. Cambiar el nombre del **AEM Administradores de** el perfil de producto eliminará los derechos de administrador de todos los usuarios asignados a dicho perfil.
 
 ### Inicio de sesión en Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 

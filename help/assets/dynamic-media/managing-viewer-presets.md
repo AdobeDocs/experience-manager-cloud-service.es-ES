@@ -143,7 +143,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Zoom</strong></td>
+   <td><strong>Acercar o alejar</strong></td>
    <td>Permite a los usuarios ampliar el área seleccionándola. Los usuarios pueden seleccionar controles para acercar, alejar y restablecer el tamaño predeterminado de la imagen.</td>
   </tr>
  </tbody>
@@ -291,12 +291,12 @@ Consulte &quot;Notas de la versión de los visualizadores&quot; en la tabla de c
   </tr>
   <tr>
    <td>Zoom_oscuro<br /> </td>
-   <td>Zoom<br /> </td>
+   <td>Acercar o alejar<br /> </td>
    <td><code>html5_basiczoomviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>Zoom_light<br /> </td>
-   <td>Zoom</td>
+   <td>Acercar o alejar</td>
    <td><code>html5_basiczoomviewer_light.css</code></td>
   </tr>
   <tr>
@@ -321,7 +321,7 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
   <tr>
    <td><strong>Gesto</strong></td>
    <td><strong>Zoom flotante </strong></td>
-   <td><strong>Zoom</strong></td>
+   <td><strong>Acercar o alejar</strong></td>
    <td><strong>Giro</strong></td>
   </tr>
   <tr>
@@ -331,7 +331,7 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
    <td><p>Panes</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Tocar</strong></p> </td>
+   <td><p><strong>Toque</strong></p> </td>
    <td><p>Muestra una ventana flotante</p> </td>
    <td><p>Muestra u oculta la interfaz de usuario</p> </td>
    <td><p>Muestra u oculta la interfaz de usuario</p> </td>
@@ -355,7 +355,7 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
    <td><p>Reduce (solo iOS y Android™ 3x)</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Deslizar</strong></p> </td>
+   <td><p><strong>Barrido</strong></p> </td>
    <td><p>Barra de muestras de desplazamiento</p> </td>
    <td><p>Desplaza imágenes</p> </td>
    <td><p>Giros</p> </td>

@@ -63,7 +63,7 @@ Si bien puede ir directamente a una parte específica del recorrido, muchos conc
 | 3 | [Ruta hacia la primera experiencia al usar AEM sin encabezado](path-to-first-experience.md) | Configurar su entorno de desarrollo y aprender a integrar una aplicación sencilla con AEM sin encabezado |
 | 4 | [Cómo modelar el contenido](model-your-content.md) | Aprenda a modelar la estructura de contenido. |
 | 5 | [Cómo acceder al contenido a través de las API de entrega de AEM](access-your-content.md) | Aprenda a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido. |
-| 6 | [Actualización del contenido mediante las API de AEM Asset](update-your-content.md) | Descubra cómo utilizar la API de REST para acceder y actualizar el contenido de los fragmentos de contenido. |
+| 6 | [Actualización del contenido mediante las API de AEM Assets](update-your-content.md) | Descubra cómo utilizar la API de REST para acceder y actualizar el contenido de los fragmentos de contenido. |
 | 7 | [Cómo ponerlo todo junto: su aplicación y su contenido en AEM sin encabezado](put-it-all-together.md) | Aprenda a gestionar su proyecto AEM y prepararlo para su lanzamiento con el SDK de AEM sin encabezado. |
 | 8 | [Publicación de la aplicación sin encabezado](go-live.md) | Descubra cómo implementar la aplicación en directo, conseguir el código local en Git y trasladarlo a Cloud Manager Git para la canalización CI/CD. |
 | 9 | [Opcional: cómo crear aplicaciones de una sola página (SPA) con AEM](create-spa.md) | Explore cómo combinar entregas completas y sin encabezado, y aprenda a crear SPA editables con el marco de trabajo del editor de SPA de AEM. |

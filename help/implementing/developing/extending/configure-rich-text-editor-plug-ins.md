@@ -669,7 +669,7 @@ Al añadir vínculos en [!DNL Experience Manager], puede definir los estilos CSS
 
       * **Nombre** `cssExternal`
       * **Tipo** `String`
-      * **Valor** el nombre de la clase CSS (sin &#39;.&#39;); por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **Valor** el nombre de la clase CSS (sin &#39;.&#39; anterior); por ejemplo, `cssClass` en lugar de `.cssClass`)
    * Matriz de válidos **[!UICONTROL protocolos]** incluyendo `https://`, `https://`, `file://`, `mailto:`, y otros,
 
       * **Nombre** `protocols`

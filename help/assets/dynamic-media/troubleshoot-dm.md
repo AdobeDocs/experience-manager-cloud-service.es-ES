@@ -42,7 +42,7 @@ Los errores y problemas de sincronización se registran en `error.log` (director
 
 Al reemplazar un recurso de Dynamic Media existente (mismo nombre y ubicación), puede mantener ambos recursos o reemplazar o crear una versión:
 
-* Al mantener ambos, se crea un recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso recién cargado.
+* Al mantener ambos, se crea un recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso que acaba de cargar.
 
 * Dynamic Media no admite la creación de versiones. La nueva versión reemplaza el recurso existente en la entrega.
 

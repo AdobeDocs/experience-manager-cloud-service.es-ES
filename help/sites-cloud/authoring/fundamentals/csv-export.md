@@ -1,11 +1,11 @@
 ---
 title: Exportar a CSV
-description: Permite exportar información sobre las páginas a un archivo CSV en el sistema local
+description: Exportar información sobre sus páginas a un archivo CSV en su sistema local
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -37,7 +37,7 @@ El asistente para **crear exportaciones de CSV** permite seleccionar lo siguient
       * Visitantes únicos
       * Tiempo empleado en la página
 * Profundidad
-   * Ruta de acceso principal
+   * Ruta principal
    * Solo elementos secundarios directos
    * Niveles adicionales de elementos secundarios
    * Niveles
@@ -56,6 +56,6 @@ Para crear una exportación de CSV:
 
    ![Opciones de exportación de CSV](/help/sites-cloud/authoring/assets/csv-options.png)
 
-1. Seleccione las propiedades oportunas para la exportación.
+1. Seleccione las propiedades necesarias para exportar.
 1. Seleccione **Crear**.
    ![Exportación de CSV resultante en Excel](/help/sites-cloud/authoring/assets/csv-example.png)

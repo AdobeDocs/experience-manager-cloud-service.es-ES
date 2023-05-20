@@ -5,7 +5,7 @@ exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -29,7 +29,7 @@ Con el icono **Solo contenido** (parte superior izquierda) podrá abrir el panel
 
 ### Detalles de los componentes {#component-details}
 
-Para ver los detalles de un componente específico, toque o haga clic en el recurso necesario. Encontrará lo siguiente en tres fichas:
+Para ver los detalles de un componente específico, toque o haga clic en el recurso requerido. Hay tres pestañas que proporcionan:
 
 * **Propiedades**
 
@@ -39,9 +39,9 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
 
    * Consulte las propiedades generales del componente.
       * Ver cómo se ha definido el icono o la abreviatura para el componente. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
-      * Si hace clic en el origen del icono, se le dirigirá a dicho componente.
-   * Ver el **tipo de recurso** y el **supertipo de recurso** (si está definido) para el componente.
-      * Si hace clic en el supertipo de recurso, se le dirigirá a dicho componente.
+      * Al hacer clic en el origen del icono, se le dirigirá a ese componente.
+   * Ver el **Tipo de medio** y **Supertipo de recurso** (si se define) para el componente.
+      * Al hacer clic en el supertipo de recurso, accederá a ese componente.
 
    >[!NOTE]
    >

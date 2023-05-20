@@ -5,7 +5,7 @@ exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 8%
+ht-degree: 14%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 8%
 En esta sección se describe cómo ejecutar la canalización e implementar el código para el programa en Cloud Manager.
 
 >[!NOTE]
->Consulte [Configuración de la canalización de CD-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) y [Implemente su código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es) para obtener información sobre cómo ejecutar la canalización para su programa en Cloud Manager.
+>Consulte [Configuración de la canalización de CD-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=es) y [Implemente su código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es) para obtener información sobre cómo ejecutar la canalización para su programa en Cloud Manager.
 
 ## Objetivo {#objective}
 
@@ -35,7 +35,7 @@ En la siguiente sección se describe cómo configurar la canalización de CI/CD 
 1. Seleccione las opciones en la **Configurar canalización** asistente. Haga clic en **Guardar**.
 
    >[!NOTE]
-   >Para obtener más información sobre las opciones del asistente Configurar canalización, consulte [Configuración de la canalización desde Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) para obtener más información.
+   >Para obtener más información sobre las opciones del asistente Configurar canalización, consulte [Configuración de la canalización desde Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=es) para obtener más información.
 
    ![imagen](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 

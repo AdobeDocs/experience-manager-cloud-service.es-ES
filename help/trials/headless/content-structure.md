@@ -1,6 +1,6 @@
 ---
 title: Creación de la estructura de contenidos de la aplicación
-description: Aprenda a utilizar AEM modelos de fragmento de contenido para crear su estructura de contenido, que sirve como base para su contenido sin encabezado.
+description: AEM Aprenda a utilizar modelos de fragmentos de contenido de la aplicación para crear la estructura de contenido, que sirve como base para el contenido sin encabezado.
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
@@ -34,13 +34,13 @@ ht-degree: 42%
 
 La consola de modelos de fragmentos de contenido se abre en una nueva pestaña. Considere la consola del modelo de fragmento de contenido como su biblioteca de modelos, donde crea nuevos y administra los existentes.
 
-Para nuestro ejemplo, crearemos un modelo que represente la estructura de datos de un viaje que aparece en un sitio web de viajes. Nos referiremos a un viaje usando este modelo como un **Aventura**.
+Para nuestro ejemplo, crearemos un modelo que represente la estructura de datos de un viaje que aparece en un sitio web de viajes. Nos referiremos a un viaje utilizando este modelo como un **Aventura**.
 
 1. Haga clic en el botón **Crear** en la parte superior derecha de la pantalla para comenzar a generar un modelo de fragmento de contenido.
 
-1. Se inicia el asistente Crear modelo , que le guiará a través de la creación del modelo. Proporcione la información obligatoria.
+1. Se inicia el asistente Crear modelo, que le guiará a través de la creación del modelo. Proporcione la información obligatoria.
 
-   * **Título de modelo** - Esta es una breve etiqueta del modelo y normalmente indica el propósito del modelo. Llamaremos a nuestro nuevo modelo `Adventure`.
+   * **Título de modelo** - Esta es una etiqueta breve del modelo y generalmente indica el propósito del modelo. Llamaremos a nuestro nuevo modelo `Adventure`.
    * **Habilitar modelo**: esta opción está marcada de forma predeterminada y debe estar activada para poder crear fragmentos de contenido basados en este modelo.
 
 1. Una vez rellenados los campos obligatorios, haga clic en **Crear** en la parte superior izquierda para crear el modelo.
@@ -59,44 +59,44 @@ El editor del modelo de fragmento de contenido es donde se configuran los tipos 
 >
 >Es importante seguir los esquemas de nomenclatura en las siguientes instrucciones, ya que nos referiremos a estos nombres específicos en módulos posteriores.
 
-1. Arrastre un **Texto de una sola línea** del campo **Tipos de datos** a la derecha del editor y suéltelo en el modelo de fragmento de contenido.
+1. Arrastre una **Texto de línea única** del campo **Tipos de datos** en la parte derecha del editor y suéltelo en el modelo de fragmento de contenido.
 
-1. Una vez colocado el tipo de datos, la columna **Tipos de datos** se ha cambiado automáticamente a la pestaña **Propiedades**, donde puede definir los detalles del tipo de datos que acaba de situar. Para este primer campo, queremos almacenar el título del viaje o aventura. Introduzca las siguientes propiedades.
+1. Una vez colocado el tipo de datos, la columna **Tipos de datos** se ha cambiado automáticamente a la pestaña **Propiedades**, donde puede definir los detalles del tipo de datos que acaba de situar. Para este primer campo, queremos almacenar el título del viaje o la aventura. Introduzca las siguientes propiedades.
 
-   * **Procesar como:** **Campo de texto** - Cuando se crea una aventura, este campo almacena el título de la aventura.
+   * **Procesar como:** **Campo de texto** - Cuando cree una aventura, este campo almacenará el título de la aventura.
    * **Etiqueta de campo:** `Title` - Esta es la etiqueta que se muestra para este campo al crear una nueva aventura.
 
-1. Una vez definidas las propiedades del campo, puede volver a la función **Tipos de datos** en el panel derecho y añada campos adicionales arrastrando y soltando.
+1. Una vez definidas las propiedades del campo, puede volver al **Tipos de datos** en el panel derecho y añada campos adicionales arrastrando y soltando.
 
-De este modo, puede agregar tantos campos como sea necesario al modelo para admitir el tipo de estructura de datos que necesite. Los tipos de campos de datos varían, pero el proceso de agregarlos al modelo sigue siendo el mismo.
+De este modo, puede agregar tantos campos como sea necesario al modelo para admitir cualquier tipo de estructura de datos que pueda necesitar. Los tipos de campos de datos varían, pero el proceso de agregarlos al modelo sigue siendo el mismo.
 
-Continúe en la siguiente sección para añadir los campos necesarios para completar y guardar el **Aventura** model
+Continúe con la siguiente sección para agregar los campos necesarios para completar y guardar los cambios **Aventura** model
 
 ![Pasos uno, dos y tres para añadir campos al modelo](assets/do-not-localize/define-model-fields.png)
 
 ## Adición de campos al modelo {#additional-fields}
 
-Ya tienes un campo para el título de la aventura. Ahora necesita añadir campos para capturar la descripción, el precio y una imagen representativa de la aventura.
+Ya tiene un campo para el título de la aventura. Ahora necesita añadir campos para capturar la descripción, el precio y una imagen representativa de la aventura.
 
 >[!TIP]
 >
->La variable **Aventura** se basa en el sitio de muestra de WKND para AEM. Puede [visite el sitio aquí](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver el contenido que usa la variable **Aventura** modelo.
+>El **Aventura** AEM El modelo de se basa en el sitio de muestra de WKND para la. Puede [visite el sitio aquí](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver el contenido que utiliza **Aventura** modelo.
 
-Siga los mismos pasos que se describen arriba para agregar estos campos adicionales. La única diferencia son las propiedades que debe establecer.
+Siga los mismos pasos que arriba para agregar estos campos adicionales. La única diferencia son las propiedades que debe establecer.
 
-1. Añada un campo para almacenar la descripción de la aventura arrastrando y soltando una **Texto de varias líneas** e introduzca las siguientes propiedades:
+1. Añada un campo para almacenar la descripción de la aventura arrastrando y soltando un **Texto de varias líneas** e introduzca las siguientes propiedades:
 
-   * **Procesar como:** **Área de texto** - Cuando crea una aventura, este campo almacena una breve descripción del viaje.
+   * **Procesar como:** **Área de texto** - Cuando cree una aventura, este campo almacenará una breve descripción del viaje.
    * **Etiqueta de campo:** `Description` - Esta es la etiqueta que se muestra para este campo al crear una nueva aventura.
 
-1. Añada un campo para almacenar el precio de la aventura arrastrando y soltando una **Texto de una sola línea** e introduzca las siguientes propiedades:
+1. Añada un campo para almacenar el precio de la aventura arrastrando y soltando una **Texto de línea única** e introduzca las siguientes propiedades:
 
-   * **Procesar como:** **Campo de texto** - Cuando crea una aventura, este campo almacenará el precio del viaje.
+   * **Procesar como:** **Campo de texto** - Cuando creas una aventura, este campo almacenará el precio del viaje.
    * **Etiqueta de campo:** `Price` - Esta es la etiqueta que se muestra para este campo al crear una nueva aventura.
 
-1. Agregue un campo para almacenar una imagen que represente el viaje. Las imágenes de AEM se almacenan como otro tipo de contenido denominado **Recursos**. Para crear un campo para ellos, debe arrastrar y soltar un **Referencia de contenido** campo que hace referencia al recurso de la imagen.
+1. Añada un campo para almacenar una imagen que represente el viaje. AEM Las imágenes de los recursos se almacenan como otro tipo de contenido llamado **Assets**. Para crear un campo para ellos, debe arrastrar y soltar un **Referencia de contenido** que hará referencia al recurso de la imagen.
 
-   * **Procesar como:** **Referencia de contenido** - Cuando cree una aventura, este campo señalará al recurso de imagen que representa este viaje.
+   * **Procesar como:** **Referencia de contenido** : Cuando cree una aventura, este campo apuntará al recurso de imagen que representa este viaje.
    * **Etiqueta de campo:** `Image` - Esta es la etiqueta que se muestra para este campo al crear una nueva aventura.
 
 1. Una vez añadidos todos los campos necesarios para el modelo de fragmento de contenido, haga clic en **Guardar** en la parte superior derecha de la ventana.

@@ -26,11 +26,11 @@ Siga estos pasos para crear un programa de producción.
 
    ![Página de aterrizaje de Cloud Manager](assets/log-in.png)
 
-1. Select **Configurar para producción** en el asistente Crear programa para crear un programa de producción y proporcionar un nombre de programa.
+1. Seleccionar **Configurado para producción** en el asistente Crear programa para crear un programa de producción y proporcionar un nombre de programa.
 
    ![Creación del asistente del programa](assets/create-production-program.png)
 
-1. De forma opcional, puede agregar una imagen al programa arrastrando y soltando un archivo de imagen al **Agregar una imagen de programa** haga clic o establezca como destino una imagen para seleccionarla en un explorador de archivos. Haga clic o pulse **Continuar**.
+1. Si lo desea, puede agregar una imagen al programa arrastrando y soltando un archivo de imagen en **Agregar una imagen de programa** destino o clic en él para seleccionar una imagen de un explorador de archivos. Haga clic o pulse **Continuar**.
 
 1. Si tiene derechos de seguridad mejorada, la pestaña **Seguridad mejorada** le ofrecerá la opción **Habilitar seguridad mejorada** para su programa de producción. Si es necesario, marque la opción para habilitar la seguridad mejorada y toque o haga clic en **Continuar**.
 
@@ -41,7 +41,7 @@ Siga estos pasos para crear un programa de producción.
 
 1. En la pestaña **Soluciones y complementos**, seleccione las soluciones que desea incluir en el programa.
 
-   * Si no está seguro de si necesita uno o más programas para las distintas soluciones que tiene disponibles, seleccione el que más le interese. Puede activar soluciones adicionales mediante [editar el programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) más tarde. Consulte la [Introducción al documento de programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obtener más recomendaciones de configuración del programa.
+   * Si no está seguro de que necesita uno o más programas para las distintas soluciones disponibles, seleccione la que le interese. Para activar soluciones adicionales, haga lo siguiente [edición del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) más tarde. Consulte la [Documento de introducción a los programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obtener más recomendaciones sobre la configuración del programa.
    * Si ha seleccionado anteriormente la opción **Activar seguridad mejorada**, solo podrá seleccionar tantas soluciones como derechos HIPAA estén disponibles.
 
    ![Seleccionar soluciones](assets/setup-prod-select.png)

@@ -7,13 +7,13 @@ exl-id: 01c8afd3-c594-4a41-b905-8c3a2d74db6f
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '181'
-ht-degree: 64%
+ht-degree: 74%
 
 ---
 
 # Visualización de registros del conjunto de migraciones (heredado) {#view-logs-content-transfer-tool}
 
-Una vez completado cada paso (extracción e ingesta), compruebe los registros y busque errores.  Cualquier error debe solucionarse inmediatamente, ya sea tratando los problemas notificados o poniéndose en contacto con el servicio de asistencia al Adobe.
+Una vez completado cada paso (extracción e ingesta), compruebe los registros y busque errores.  Cualquier error debe solucionarse inmediatamente, ya sea abordando los problemas notificados o poniéndose en contacto con el servicio de soporte técnico de Adobe.
 
 ## Pasos para Ver Registros {#viewing-logs}
 

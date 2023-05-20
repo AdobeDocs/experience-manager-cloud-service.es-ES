@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Publicación de aplicaciones de App Builder
 
-Obtenga información sobre cómo enviar la aplicación de App Builder para revisión y aprobación, y cómo ejecutar una aplicación recién publicada.
+Obtenga información sobre cómo enviar la aplicación del Generador de aplicaciones para su revisión y aprobación, y cómo ejecutar una aplicación recién publicada.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)

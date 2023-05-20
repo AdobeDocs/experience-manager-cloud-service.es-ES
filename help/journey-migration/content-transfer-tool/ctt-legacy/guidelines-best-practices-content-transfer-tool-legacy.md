@@ -7,7 +7,7 @@ exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
 source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
 source-wordcount: '1476'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 Siga esta sección para conocer las directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido:
 
-* Ejecutar [Limpieza de revisión](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) y [comprobaciones de coherencia del almacén de datos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=en) en el **origen** para identificar posibles problemas y reducir el tamaño del repositorio.
+* Ejecutar [Limpieza de revisión](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) y [comprobaciones de coherencia del almacén de datos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=es) en el **origen** para identificar posibles problemas y reducir el tamaño del repositorio.
 
 * AEM Si la configuración de la red de distribución de contenido (CDN) del Autor de la nube de está configurada para tener una lista de permitidos de direcciones IP, asegúrese de que las direcciones IP de entorno de origen también se añadan a la lista de permitidos. AEM Al hacerlo, se asegura de que el entorno de origen y el entorno de nube de puedan comunicarse entre sí.
 

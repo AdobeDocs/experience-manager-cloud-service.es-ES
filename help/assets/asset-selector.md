@@ -1,6 +1,6 @@
 ---
-title: Selector de recursos para [!DNL Adobe Experience Manager] como [!DNL Cloud Service]
-description: Utilice el selector de recursos para buscar, buscar y recuperar los metadatos y las representaciones de los recursos dentro de la aplicación.
+title: Selector de recursos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+description: Utilice el selector de recursos para buscar, buscar y recuperar metadatos y representaciones de recursos dentro de la aplicación.
 contentOwner: Adobe
 role: Admin,User
 source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
@@ -11,42 +11,42 @@ ht-degree: 3%
 ---
 
 
-# Selector de recursos de micronegocios {#Overview}
+# Selector de recursos de Micro-FrontEnd {#Overview}
 
-El Selector de recursos de Micro-Frontend proporciona una interfaz de usuario que se integra fácilmente con el [!DNL Experience Manager Assets as a Cloud Service] repositorio para que pueda examinar o buscar recursos digitales disponibles en el repositorio y utilizarlos en su experiencia de creación de aplicaciones.
+El Selector de recursos de Micro-Frontend proporciona una interfaz de usuario que se integra fácilmente con el [!DNL Experience Manager Assets as a Cloud Service] repositorio para poder examinar o buscar recursos digitales disponibles en el repositorio y utilizarlos en la experiencia de creación de la aplicación.
 
-La interfaz de usuario de Micro-Frontend está disponible en la experiencia de su aplicación mediante el paquete Selector de recursos . Las actualizaciones del paquete se importan automáticamente y el Selector de recursos más reciente implementado se carga automáticamente dentro de la aplicación.
+La interfaz de usuario de Micro-Frontend está disponible en la experiencia de su aplicación mediante el paquete Selector de recursos. Las actualizaciones del paquete se importan automáticamente y el último Selector de recursos implementado se carga automáticamente en la aplicación.
 
 ![Información general](assets/overview.png)
 
-El Selector de recursos proporciona muchos beneficios, como:
+El Selector de recursos ofrece muchas ventajas, como las siguientes:
 
-* Facilidad de integración con cualquiera de las aplicaciones de Adobe o que no sean de Adobe que utilicen la biblioteca JavaScript de vainilla.
-* Fácil de mantener, ya que las actualizaciones del paquete Selector de recursos se implementan automáticamente en el Selector de recursos disponible para su aplicación. No se requieren actualizaciones en la aplicación para cargar las modificaciones más recientes.
-* Facilidad de personalización, ya que hay propiedades disponibles que controlan la visualización del Selector de recursos dentro de la aplicación.
+* Facilidad de integración con cualquiera de las aplicaciones de Adobe o que no sean de Adobe mediante la biblioteca JavaScript de vainilla.
+* Son fáciles de mantener, ya que las actualizaciones del paquete del Selector de recursos se implementan automáticamente en el Selector de recursos disponible para su aplicación. No se requieren actualizaciones dentro de la aplicación para cargar las modificaciones más recientes.
+* Facilidad de personalización, ya que hay propiedades disponibles que controlan la visualización del Selector de recursos en la aplicación.
 
-* Filtros personalizados, predeterminados y de búsqueda de texto completo para desplazarse rápidamente a los recursos y utilizarlos en la experiencia de creación.
+* Filtros personalizados, de búsqueda de texto completo y listos para usar para navegar rápidamente a los recursos y utilizarlos en la experiencia de creación.
 
-* Posibilidad de cambiar repositorios dentro de una organización IMS para la selección de recursos.
+* Capacidad para cambiar repositorios dentro de una organización IMS para la selección de recursos.
 
-* Posibilidad de ordenar los recursos por nombre, dimensiones y tamaño, y verlos en la vista Lista, Cuadrícula, Galería o Cascada.
+* Capacidad para ordenar recursos por nombre, dimensiones y tamaño y verlos en las vistas Lista, Cuadrícula, Galería o Cascada.
 
-El ámbito de este artículo es demostrar cómo utilizar el Selector de recursos con un [!DNL Adobe] en Unified Shell o cuando ya tiene un imsToken generado para la autenticación. Estos flujos de trabajo se denominan flujo no SUSI en este artículo.
+El ámbito de este artículo es demostrar cómo utilizar el Selector de recursos con una [!DNL Adobe] aplicación bajo Unified Shell o cuando ya tiene un imsToken generado para la autenticación. Estos flujos de trabajo se denominan flujo no SUSI en este artículo.
 
 Realice las siguientes tareas para integrar y utilizar el Selector de recursos con su [!DNL Experience Manager Assets as a Cloud Service] repositorio:
 
-* [Integrar el Selector de recursos con Vanilla JS](#integration-with-vanilla-js)
-* [Definir las propiedades de visualización del Selector de recursos](#asset-selector-properties)
+* [Integración del Selector de recursos mediante Vanilla JS](#integration-with-vanilla-js)
+* [Definir propiedades de visualización del Selector de recursos](#asset-selector-properties)
 * [Uso del selector de recursos](#using-asset-selector)
 
-## Integrar el Selector de recursos con Vanilla JS {#integration-with-vanilla-js}
+## Integración del Selector de recursos mediante Vanilla JS {#integration-with-vanilla-js}
 
-Puede integrar cualquier [!DNL Adobe] o aplicación que no sea de Adobe con [!DNL Experience Manager Assets] como [!DNL Cloud Service] repositorio y seleccione recursos desde la aplicación.
+Puede integrar cualquier [!DNL Adobe] o aplicación sin Adobe con [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repositorio y seleccione recursos desde la aplicación.
 
-La integración se realiza mediante la importación del paquete Selector de recursos y la conexión a los recursos as a Cloud Service mediante la biblioteca JavaScript de vainilla. Debe editar un `index.html` o cualquier archivo apropiado dentro de su aplicación para:
-* Definir los detalles de autenticación
+La integración se realiza importando el paquete Selector de recursos y conectándose a los recursos as a Cloud Service mediante la biblioteca JavaScript de Vainilla. Debe editar una `index.html` o cualquier archivo apropiado dentro de su aplicación a:
+* Definición de los detalles de autenticación
 * Acceso al repositorio as a Cloud Service de Assets
-* Configuración de las propiedades de visualización del Selector de recursos
+* Configurar las propiedades de visualización del Selector de recursos
 
 <!--
 Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
@@ -61,8 +61,8 @@ Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository 
 
 Puede realizar la autenticación sin definir algunas de las propiedades de IMS, si:
 
-* Está integrando un [!DNL Adobe] aplicación en [Shell unificado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-* Ya tiene un token IMS generado para la autenticación.
+* Está integrando un [!DNL Adobe] aplicación en [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* Ya ha generado un token de IMS para la autenticación.
 
 ## Requisitos previos {#prerequisites}
 
@@ -72,7 +72,7 @@ If your application requires user based authentication, out-of-the-box Asset Sel
 You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can use SUSI (Sign Up Sign In) flow and IMS properties. Also, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
 -->
 
-Defina los requisitos previos en la variable `index.html` o un archivo similar dentro de la implementación de la aplicación para definir los detalles de autenticación y acceder a la [!DNL Experience Manager Assets] como [!DNL Cloud Service] repositorio. Los requisitos previos incluyen:
+Defina los requisitos previos en la `index.html` o un archivo similar dentro de la implementación de la aplicación para definir los detalles de autenticación para acceder al [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repositorio. Los requisitos previos incluyen:
 * imsOrg
 * imsToken
 * apikey
@@ -103,7 +103,7 @@ For more information on these properties, refer to [Example for the SUSI flow](#
 
 Los selectores de recursos están disponibles a través de la CDN de ESM (por ejemplo, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) y [UMD](https://github.com/umdjs/umd) versión.
 
-En exploradores que utilizan **Versión UMD** (recomendado):
+En navegadores que utilizan **Versión de UMD** (recomendado):
 
 ```
 <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
@@ -121,7 +121,7 @@ En navegadores con `import maps` compatibilidad con **Versión de CDN de ESM**:
 </script>
 ```
 
-En Deno/Webpack, Federación de módulos usando **Versión de CDN de ESM**:
+En la federación de módulos Deno/Webpack mediante **Versión de CDN de ESM**:
 
 ```
 import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
@@ -129,9 +129,9 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ### Tipo de recurso seleccionado {#selected-asset-type}
 
-El tipo de recurso seleccionado es una matriz de objetos que contiene la información del recurso al usar la variable `handleSelection`, `handleAssetSelection`y `onDrop` funciones.
+El tipo de recurso seleccionado es una matriz de objetos que contiene la información del recurso al utilizar el `handleSelection`, `handleAssetSelection`, y `onDrop` funciones.
 
-**Sintaxis del esquema**
+**Sintaxis de esquema**
 
 ```
 interface SelectedAsset {
@@ -161,35 +161,35 @@ interface SelectedAsset {
 }
 ```
 
-En la tabla siguiente se describen algunas de las propiedades importantes del objeto Recurso seleccionado.
+En la tabla siguiente se describen algunas de las propiedades importantes del objeto Selected Asset.
 
 | Propiedad | Tipo | Explicación |
 |---|---|---|
 | *repo:repositoryId* | cadena | Identificador único del repositorio en el que se almacena el recurso. |
 | *repo:id* | cadena | Identificador único del recurso. |
-| *repo:assetClass* | cadena | Clasificación del recurso (por ejemplo, imagen o vídeo, documento). |
-| *repo:name* | cadena | El nombre del recurso, incluida la extensión de archivo. |
-| *repo:size* | número | El tamaño del recurso en bytes. |
-| *repo:path* | cadena | Ubicación del recurso dentro del repositorio. |
-| *repo:antepasados* | `Array<string>` | Matriz de elementos antecesores para el recurso en el repositorio. |
-| *repo:state* | cadena | Estado actual del recurso en el repositorio (por ejemplo, activo, eliminado, etc.). |
+| *repo:assetClass* | cadena | La clasificación del recurso (por ejemplo, imagen o vídeo, documento). |
+| *repo:nombre* | cadena | Nombre del recurso, incluida la extensión de archivo. |
+| *repo:tamaño* | número | El tamaño del recurso en bytes. |
+| *repo:ruta* | cadena | La ubicación del recurso dentro del repositorio. |
+| *repo:antecesores* | `Array<string>` | Matriz de elementos antecesores del recurso en el repositorio. |
+| *repo:estado* | cadena | Estado actual del recurso en el repositorio (por ejemplo, activo, eliminado, etc.). |
 | *repo:createdBy* | cadena | El usuario o sistema que creó el recurso. |
-| *repo:createDate* | cadena | La fecha y hora en que se creó el recurso. |
-| *repo:modifiedBy* | cadena | El usuario o sistema que modificó el recurso por última vez. |
-| *repo:modifyDate* | cadena | Fecha y hora en que se modificó el recurso por última vez. |
+| *repo:createDate* | cadena | La fecha y la hora en que se creó el recurso. |
+| *repo:modificadoPor* | cadena | Usuario o sistema que modificó el recurso por última vez. |
+| *repo:modificarFecha* | cadena | La fecha y la hora en que se modificó el recurso por última vez. |
 | *dc:format* | cadena | El formato del recurso, como el tipo de archivo (por ejemplo, JPEG, PNG, etc.). |
 | *tiff:imageWidth* | número | La anchura de un recurso. |
 | *tiff:imageLength* | número | Altura de un recurso. |
 | *computedMetadata* | `Record<string, any>` | Un objeto que representa un bloque para todos los metadatos del recurso de todo tipo (repositorio, aplicación o metadatos incrustados). |
-| *_vínculos* | `Record<string, any>` | Vínculos de hipermedios para el recurso asociado. Incluye vínculos para recursos como metadatos y representaciones. |
+| *_links* | `Record<string, any>` | Vínculos de hipermedia para el recurso asociado. Incluye vínculos para recursos como metadatos y representaciones. |
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>` | Matriz de objetos que contiene información sobre las representaciones del recurso. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].href* | cadena | El URI de la representación. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].href* | cadena | URI de la representación. |
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].type* | cadena | Tipo MIME de la representación. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[]&quot;repo:size* | número | El tamaño de la representación en bytes. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | número | Ancho de la representación. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | número | La altura de la representación. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].&#39;repo:tamaño&#39;* | número | El tamaño de la representación en bytes. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | número | La anchura de la representación. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | número | Altura de la representación. |
 
-Para obtener una lista completa de propiedades y un ejemplo detallado, visite [Ejemplo de código del selector de recursos](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+Para obtener una lista completa de las propiedades y un ejemplo detallado, visite [Ejemplo de código del selector de recursos](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 <!--
 ### ImsAuthProps {#ims-auth-props}
@@ -224,7 +224,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 En este ejemplo se muestra cómo utilizar el Selector de recursos con un flujo que no sea SUSI al ejecutar un [!DNL Adobe] aplicación en Unified Shell o cuando ya tiene `imsToken` generado para la autenticación.
 
-Incluya el paquete Selector de recursos en su código utilizando la variable `script` como se muestra en _líneas 6 a 15_ del ejemplo siguiente. Una vez cargado el script, la variable `PureJSSelectors` la variable global está disponible para su uso. Definir el Selector de recursos [propiedades](#asset-selector-properties) tal como se muestra en _líneas 16 a 23_. La variable `imsOrg` y `imsToken` ambas son necesarias para la autenticación en un flujo que no sea SUSI. La variable `handleSelection` se utiliza para gestionar los recursos seleccionados. Para procesar el Selector de recursos, llame a la función `renderAssetSelector` como se menciona en _línea 17_. El Selector de recursos se muestra en la sección `<div>` elemento contenedor, como se muestra en _líneas 21 y 22_.
+Incluya el paquete Selector de recursos en su código mediante el `script` , como se muestra en _líneas 6 a 15_ del ejemplo siguiente. Una vez cargado el script, la variable `PureJSSelectors` la variable global está disponible para su uso. Definición del selector de recursos [propiedades](#asset-selector-properties) como se muestra en _líneas 16 a 23_. El `imsOrg` y `imsToken` ambas propiedades son necesarias para la autenticación en un flujo que no es SUSI. El `handleSelection` se utiliza para gestionar los recursos seleccionados. Para procesar el Selector de recursos, llame al método `renderAssetSelector` función como se menciona en _línea 17_. El Selector de recursos se muestra en la `<div>` elemento contenedor, como se muestra en _líneas 21 y 22_.
 
 Al seguir estos pasos, puede utilizar el Selector de recursos con un flujo que no sea SUSI en su [!DNL Adobe] aplicación.
 
@@ -355,45 +355,45 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 ```
 -->
 
-## Uso de las propiedades del Selector de recursos {#asset-selector-properties}
+## Usar propiedades del Selector de recursos {#asset-selector-properties}
 
-Puede utilizar las propiedades del Selector de recursos para personalizar la forma en que se representa el Selector de recursos. En la tabla siguiente se enumeran las propiedades que puede utilizar para personalizar y utilizar el Selector de recursos.
+Puede utilizar las propiedades del Selector de recursos para personalizar la forma en que se procesa el Selector de recursos. En la tabla siguiente se enumeran las propiedades que puede utilizar para personalizar y utilizar el Selector de recursos.
 
 | Propiedad | Tipo | Requerido | Predeterminado | Descripción |
 |---|---|---|---|---|
-| *carril* | booleano | No | false | Si está marcado `true`, el Selector de recursos se representará en una vista de carril izquierdo. Si está marcado `false`, el Selector de recursos se procesará en la vista modal. |
-| *imsOrg* | cadena | Sí |  | ID del sistema Identity Management de Adobe (IMS) asignado durante el aprovisionamiento [!DNL Adobe Experience Manager] como [!DNL Cloud Service] para su organización. La variable `imsOrg` es necesaria para autenticar si la organización a la que está accediendo está en Adobe IMS o no. |
-| *imsToken* | cadena | No |  | Token de portador de IMS utilizado para la autenticación. `imsToken` es necesario si utiliza el flujo que no sea SUSI. |
-| *apiKey* | cadena | No |  | Clave de API utilizada para acceder al servicio de AEM Discovery. `apiKey` es necesario si utiliza el flujo que no sea SUSI. |
-| *rootPath* | cadena | No | /content/dam/ | Ruta de carpeta desde la que el Selector de recursos muestra sus recursos. `rootPath` también se puede utilizar en forma de encapsulación. Por ejemplo, dada la siguiente ruta, `/content/dam/marketing/subfolder/`, el Selector de recursos no le permite recorrer ninguna carpeta principal, pero solo muestra las carpetas secundarias. |
-| *path* | cadena | No |  | Ruta que se utiliza para desplazarse a un directorio específico de recursos cuando se representa el Selector de recursos. |
-| *filterSchema* | matriz | No |  | Modelo que se utiliza para configurar propiedades de filtro. Esto resulta útil cuando desea limitar ciertas opciones de filtro en el Selector de recursos. |
+| *carril* | booleano | No | false | Si está marcado `true`, el Selector de recursos se representará en una vista del carril izquierdo. Si está marcado `false`, el Selector de recursos se representará en la vista modal. |
+| *imsOrg* | cadena | Sí |  | ID del sistema Identity Management de Adobe (IMS) asignado durante el aprovisionamiento [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] para su organización. El `imsOrg` La clave es necesaria para autenticar si la organización a la que accede se encuentra en Adobe IMS o no. |
+| *imsToken* | cadena | No |  | Token de portador de IMS utilizado para la autenticación. `imsToken` es necesario si utiliza el flujo que no es SUSI. |
+| *apiKey* | cadena | No |  | AEM Clave de API utilizada para acceder al servicio de detección de. `apiKey` es necesario si utiliza el flujo que no es SUSI. |
+| *rootPath* | cadena | No | /content/dam/ | Ruta de la carpeta desde la que el Selector de recursos muestra los recursos. `rootPath` también se puede utilizar en forma de encapsulación. Por ejemplo, dada la siguiente ruta, `/content/dam/marketing/subfolder/`Sin embargo, el Selector de recursos no le permite atravesar ninguna carpeta principal, sino que solo muestra las carpetas secundarias. |
+| *path* | cadena | No |  | Ruta que se utiliza para navegar a un directorio específico de recursos cuando se procesa el Selector de recursos. |
+| *filterSchema* | matriz | No |  | Modelo que se utiliza para configurar las propiedades del filtro. Esto resulta útil cuando desea limitar ciertas opciones de filtro en el Selector de recursos. |
 | *filterFormProps* | Objeto | No |  | Especifique las propiedades de filtro que debe utilizar para restringir la búsqueda. Por ejemplo, JPG de tipo MIME, PNG, GIF. |
-| *selectedAssets* | Matriz `<Object>` | No |  | Especifique los recursos seleccionados cuando se procese el Selector de recursos. Se requiere una matriz de objetos que contenga una propiedad id de los recursos. Por ejemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Un recurso debe estar disponible en el directorio actual. Si necesita usar un directorio diferente, proporcione un valor para la variable `path` también. |
-| *acvConfig* | Objeto | No |  | La propiedad Vista de colección de recursos que contiene un objeto que contiene una configuración personalizada para anular los valores predeterminados. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |  | Si las traducciones de OOTB son insuficientes para las necesidades de su aplicación, puede exponer una interfaz a través de la cual puede pasar sus propios valores localizados personalizados a través del `i18nSymbols` prop. Al pasar un valor a través de esta interfaz, se anulan las traducciones predeterminadas proporcionadas y, en su lugar, se usan las suyas.  Para realizar la anulación, debe pasar una [Descriptor de mensajes](https://formatjs.io/docs/react-intl/api/#message-descriptor) a la clave de `i18nSymbols` que desea anular. |
-| *intl* | Objeto | No |  | El Selector de recursos proporciona traducciones predeterminadas de OOTB. Para seleccionar el idioma de traducción, proporcione una cadena de configuración regional válida a través de la variable `intl.locale` prop. Por ejemplo: `intl={{ locale: "es-es" }}` </br></br> Las cadenas de configuración regional compatibles siguen a la función [ISO 639 - Códigos](https://www.iso.org/iso-639-language-codes.html) para la representación de los nombres de las normas lingüísticas. </br></br> Lista de configuraciones regionales admitidas: Inglés - &#39;en-us&#39; (predeterminado) Español - &#39;es-es&#39; Alemán - &#39;de-de&#39; Francés - &#39;fr-fr&#39; Italiano - &#39;it-it&#39; Japonés - &#39;ja-jp&#39; Coreano - &#39;ko-kr&#39; Portugués - &#39;pt-br&#39; Chino (Tradicional) - &#39;zh-cn&#39; Chino (Taiwán) - &#39;zh-tw&#39; |
+| *selectedAssets* | Matriz `<Object>` | No |  | Especificar los recursos seleccionados cuando se represente el selector de recursos. Se requiere una matriz de objetos que contenga una propiedad id de los recursos. Por ejemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Un recurso debe estar disponible en el directorio actual. Si necesita utilizar un directorio diferente, proporcione un valor para `path` propiedad también. |
+| *acvConfig* | Objeto | No |  | Propiedad de vista de colección de recursos que contiene un objeto con una configuración personalizada para anular los valores predeterminados. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |  | Si las traducciones OOTB no son suficientes para las necesidades de la aplicación, puede exponer una interfaz a través de la cual puede pasar sus propios valores localizados personalizados a través de la variable `i18nSymbols` prop. Al pasar un valor a través de esta interfaz, se anulan las traducciones predeterminadas proporcionadas y, en su lugar, se utilizan las suyas.  Para realizar la anulación, debe pasar un válido [Descriptor del mensaje](https://formatjs.io/docs/react-intl/api/#message-descriptor) objeto a la clave de `i18nSymbols` que desee anular. |
+| *intl* | Objeto | No |  | El Selector de recursos proporciona traducciones OOTB predeterminadas. Puede seleccionar el idioma de traducción proporcionando una cadena de configuración regional válida a través del `intl.locale` prop. Por ejemplo: `intl={{ locale: "es-es" }}` </br></br> Las cadenas de configuración regional admitidas siguen el [ISO 639 - Códigos](https://www.iso.org/iso-639-language-codes.html) para la representación de los estándares de nombres de idiomas. </br></br> Lista de configuraciones regionales admitidas: Inglés - &#39;en-us&#39; (predeterminado) Español - &#39;es-es&#39; Alemán - &#39;de-de&#39; Francés - &#39;fr-fr&#39; Italiano - &#39;it-it&#39; Japonés - &#39;ja-jp&#39; Coreano - &#39;ko-kr&#39; Portugués - &#39;pt-br&#39; Chino (tradicional) - &#39;zh-cn&#39; Chino (Taiwán) - &#39;zh-tw&#39; |
 | *repositoryId* | cadena | No | &#39;&#39; | Repositorio desde el que el Selector de recursos carga el contenido. |
-| *additionalAemSolutions* | `Array<string>` | No | [ ] | Permite agregar una lista de repositorios de AEM adicionales. Si no se proporciona información en esta propiedad, solo se tienen en cuenta la biblioteca multimedia o los repositorios de AEM Assets. |
-| *hideTreeNavigation* | booleano | No |  | Especifica si se mostrará u ocultará la barra lateral de navegación del árbol de recursos. Solo se utiliza en la vista modal y, por lo tanto, no hay ningún efecto de esta propiedad en la vista de raíl. |
+| *additionalAemSolutions* | `Array<string>` | No | [ ] | AEM Le permite agregar una lista de repositorios de recursos de la adicionales. Si no se proporciona información en esta propiedad, solo se tienen en cuenta los repositorios de la biblioteca de medios o de AEM Assets. |
+| *hideTreeNav* | booleano | No |  | Especifica si se muestra u oculta la barra lateral de navegación del árbol de recursos. Solo se utiliza en la vista modal y, por lo tanto, no hay ningún efecto de esta propiedad en la vista carril. |
 | *onDrop* | Función | No |  | La propiedad permite la funcionalidad de colocación de un recurso. |
-| *dropOptions* | `{allowList?: Object}` | No |  | Configura las opciones de colocación utilizando &quot;lista de permitidos&quot;. |
+| *dropOptions* | `{allowList?: Object}` | No |  | Configura las opciones de colocación mediante &quot;lista de permitidos&quot;. |
 | *colorScheme* | cadena | No |  | Configurar tema (`light` o `dark`) para el Selector de recursos. |
-| *handleSelection* | Función | No |  | Se invoca con la matriz de elementos de Asset cuando se seleccionan los recursos y la variable `Select` en el modal se hace clic en . Esta función solo se invoca en la vista modal. Para la vista de raíl, utilice la variable `handleAssetSelection` o `onDrop` funciones. Ejemplo: <pre>handleSelection=(assets: Activo[])=> {...}</pre> Consulte [Tipo de recurso seleccionado](#selected-asset-type) para obtener más información. |
-| *handleAssetSelection* | Función | No |  | Se invoca con una matriz de elementos a medida que los recursos se seleccionan o no se seleccionan. Esto resulta útil cuando desea escuchar recursos a medida que el usuario los selecciona. Ejemplo: <pre>handleSelection=(assets: Activo[])=> {...}</pre> Consulte [Tipo de recurso seleccionado](#selected-asset-type) para obtener más información. |
-| *onClose* | Función | No |  | Invocado cuando `Close` en la vista modal. Esto solo se llama en `modal` visualización y omitido en `rail` vista. |
-| *onFilterSubmit* | Función | No |  | Se invoca con elementos de filtro mientras el usuario cambia diferentes criterios de filtro. |
+| *handleSelection* | Función | No |  | Se invoca con la matriz de elementos de recurso cuando se seleccionan los recursos y la variable `Select` en el modal se hace clic en. Esta función solo se invoca en la vista modal. Para la vista de carril, utilice el `handleAssetSelection` o `onDrop` funciones. Ejemplo: <pre>handleSelection=(recursos: recurso)[])=> {...}</pre> Consulte [Tipo de recurso seleccionado](#selected-asset-type) para obtener más información. |
+| *handleAssetSelection* | Función | No |  | Se invoca con una matriz de elementos cuando los recursos se seleccionan o no. Esto resulta útil cuando desea escuchar los recursos a medida que el usuario los selecciona. Ejemplo: <pre>handleSelection=(recursos: recurso)[])=> {...}</pre> Consulte [Tipo de recurso seleccionado](#selected-asset-type) para obtener más información. |
+| *onClose* | Función | No |  | Se invoca cuando `Close` en la vista modal. Esto solo se llama en `modal` vista e ignorada en `rail` vista. |
+| *onFilterSubmit* | Función | No |  | Se invoca con elementos de filtro cuando el usuario cambia criterios de filtro diferentes. |
 | *selectionType* | cadena | No | soltero | Configuración para `single` o `multiple` selección de recursos a la vez. |
 
 ## Ejemplos de uso de las propiedades del Selector de recursos {#usage-examples}
 
 Puede definir el Selector de recursos [propiedades](#asset-selector-properties) en el `index.html` para personalizar la visualización del Selector de recursos en la aplicación.
 
-### Ejemplo 1: Selector de recursos en la vista de raíl
+### Ejemplo 1: Selector de recursos en la vista de carril
 
-![raíl-view-example](assets/rail-view-example-vanilla.png)
+![carril-view-example](assets/rail-view-example-vanilla.png)
 
-Si el valor de AssetSelector `rail` está configurado como `false` O no se menciona en las propiedades, el Selector de recursos se muestra en la vista Modal de forma predeterminada.
+Si el valor de AssetSelector `rail` se establece en `false` o no se menciona en las propiedades, el Selector de recursos se muestra en la vista modal de forma predeterminada.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -403,16 +403,16 @@ Use the `path` property to define the folder name that displays automatically wh
    ![selected-assets-example](assets/selected-assets-example-vanilla.png)
 -->
 
-### Ejemplo 2: Entrega de metadatos
+### Ejemplo 2: ventana emergente de metadatos
 
-Utilice varias propiedades para definir los metadatos de un recurso que desea ver mediante un icono de información. La ventana de información proporciona la recopilación de información sobre el recurso o la carpeta, incluido el título, las dimensiones, la fecha de modificación, la ubicación y la descripción de un recurso. En el ejemplo siguiente, se utilizan varias propiedades para mostrar los metadatos de un recurso, por ejemplo, `repo:path` especifica la ubicación de un recurso. <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
+Utilice varias propiedades para definir los metadatos de un recurso que desee ver mediante un icono de información. La ventana emergente de información proporciona la colección de información sobre el recurso o la carpeta, incluido el título, las dimensiones, la fecha de modificación, la ubicación y la descripción de un recurso. En el ejemplo siguiente, se utilizan varias propiedades para mostrar los metadatos de un recurso, por ejemplo: `repo:path` especifica la ubicación de un recurso. <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
 
-![metadata-pover-example](assets/metadata-popover.png)
+![metadata-popover-example](assets/metadata-popover.png)
 
 
-### Ejemplo 3: Propiedad de filtro personalizado en la vista de raíl
+### Ejemplo 3: Propiedad de filtro personalizado en la vista de carril
 
-Además de la búsqueda por facetas, el Selector de recursos permite personalizar varios atributos para restringir la búsqueda desde [!DNL Adobe Experience Manager] como [!DNL Cloud Service] aplicación. Debe agregar el siguiente código para agregar filtros de búsqueda personalizados en la aplicación. En el ejemplo siguiente, la variable `Type Filter` busque que filtre el tipo de recurso entre Imágenes, Documentos o Vídeos, o el tipo de filtro que agregó para la búsqueda.
+Además de la búsqueda con facetas, el Selector de recursos le permite personalizar varios atributos para restringir la búsqueda desde [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aplicación. Debe agregar el siguiente código para agregar filtros de búsqueda personalizados en la aplicación. En el ejemplo siguiente, la variable `Type Filter` búsqueda que filtra el tipo de recurso entre imágenes, documentos o vídeos o el tipo de filtro que ha agregado para la búsqueda.
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -485,32 +485,32 @@ For the detailed example of Object Schema, click
 
 ## Gestión de la selección de recursos mediante el esquema de objetos {#handling-selection}
 
-La variable `handleSelection` se utiliza para gestionar una o varias selecciones de recursos en el Selector de recursos. El ejemplo siguiente indica la sintaxis de uso de `handleSelection`.
+El `handleSelection` se utiliza para gestionar una o varias selecciones de recursos en el Selector de recursos. El ejemplo siguiente indica la sintaxis de uso de `handleSelection`.
 
-![selección de controladores](assets/handling-selection.png)
+![selección por tirador](assets/handling-selection.png)
 
-## Uso del Selector de recursos {#using-asset-selector}
+## Uso del selector de recursos {#using-asset-selector}
 
-Una vez configurado el Selector de recursos y autenticado, utilice el Selector de recursos con su [!DNL Adobe Experience Manager] como [!DNL Cloud Service] , puede seleccionar recursos o realizar otras operaciones para buscar recursos en el repositorio.
+Una vez configurado el Selector de recursos y autenticado para usar el Selector de recursos con su [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aplicación, puede seleccionar recursos o realizar otras operaciones para buscar los recursos dentro del repositorio.
 
 ![using-asset-selector](assets/using-asset-selector.png)
 
 * **A**: [Ocultar/Mostrar panel](#hide-show-panel)
-* **B**: [Conmutador de repositorio](#repository-switcher)
-* **C**: [Recursos](#repository)
+* **B**: [Conmutador de repositorios](#repository-switcher)
+* **C**: [Assets](#repository)
 * **D**: [Filtros](#filters)
 * **E**: [Barra de búsqueda](#search-bar)
-* **F**: [Ordenar](#sorting)
+* **F**: [Ordenando](#sorting)
 * **G**: [Orden ascendente o descendente](#sorting)
 * **H**: [Ver](#types-of-view)
 
 ### Ocultar/Mostrar panel {#hide-show-panel}
 
-Para ocultar carpetas en la navegación izquierda, haga clic en **[!UICONTROL Ocultar carpetas]** icono. Para deshacer los cambios, haga clic en el botón **[!UICONTROL Ocultar carpetas]** de nuevo.
+Para ocultar carpetas en el panel de navegación izquierdo, haga clic en **[!UICONTROL Ocultar carpetas]** icono. Para deshacer los cambios, haga clic en **[!UICONTROL Ocultar carpetas]** icono de nuevo.
 
-### Conmutador de repositorio {#repository-switcher}
+### Conmutador de repositorios {#repository-switcher}
 
-El Selector de recursos también le permite cambiar de repositorio para seleccionar recursos. Puede seleccionar el repositorio que desee en la lista desplegable disponible en el panel izquierdo. Las opciones de repositorio disponibles en la lista desplegable se basan en la variable `repositoryId` propiedad definida en la variable `index.html` archivo. Se basa en los entornos de la organización de IMS seleccionada a la que accede el usuario que ha iniciado sesión. Los consumidores pueden pasar una `repositoryID` y en ese caso, el Selector de recursos deja de procesar el conmutador de repositorios y procesa solo los recursos del repositorio dado.
+El Selector de recursos también le permite cambiar de repositorio para realizar la selección de recursos. Puede seleccionar el repositorio que desee en la lista desplegable disponible en el panel izquierdo. Las opciones del repositorio disponibles en la lista desplegable se basan en el `repositoryId` propiedad definida en la variable `index.html` archivo. Se basa en los entornos de la organización de IMS seleccionada a la que accede el usuario que ha iniciado sesión. Los consumidores pueden aprobar una `repositoryID` y, en ese caso, el Selector de recursos deja de procesar el conmutador de repositorios y solo procesa los recursos del repositorio dado.
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -519,19 +519,19 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 Es una colección de carpetas de recursos que puede utilizar para realizar operaciones.
 
-### Filtros integrados {#filters}
+### Filtros listos para usar. {#filters}
 
-El Selector de recursos también proporciona opciones de filtro predeterminadas para restringir los resultados de búsqueda. Los filtros disponibles son los siguientes:
+El Selector de recursos también proporciona opciones de filtro listas para usar para restringir los resultados de búsqueda. Los filtros disponibles son los siguientes:
 
 * `File type`: incluye carpeta, archivo, imágenes, documentos o vídeo
 * `MIME type`: incluye JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
-* `Image Size`: incluye anchura mínima/máxima, altura mínima/máxima de la imagen
+* `Image Size`: incluye la anchura mínima/máxima, la altura mínima/máxima de la imagen
 
-![raíl-view-example](assets/filters-asset-selector.png)
+![carril-view-example](assets/filters-asset-selector.png)
 
 ### Búsqueda personalizada
 
-Además de la búsqueda de texto completo, el Selector de recursos permite buscar recursos dentro de los archivos mediante la búsqueda personalizada. Puede utilizar filtros de búsqueda personalizados en los modos Vista modal y Vista en carril .
+Además de la búsqueda de texto completo, el Selector de recursos le permite buscar recursos dentro de los archivos mediante búsquedas personalizadas. Puede utilizar filtros de búsqueda personalizados en los modos Vista modal y Vista de carril.
 
 ![custom-search](assets/custom-search.png)
 
@@ -539,7 +539,7 @@ También puede crear un filtro de búsqueda predeterminado para guardar los camp
 
 ### Barra de búsqueda {#search-bar}
 
-El Selector de recursos le permite realizar búsquedas de texto completo de los recursos dentro del repositorio seleccionado. Por ejemplo, si escribe la palabra clave `wave` en la barra de búsqueda, todos los recursos con la variable `wave` palabra clave mencionada en cualquiera de las propiedades de metadatos se muestran.
+El Selector de recursos le permite realizar una búsqueda de texto completo de los recursos del repositorio seleccionado. Por ejemplo, si escribe la palabra clave `wave` en la barra de búsqueda, todos los recursos con el `wave` palabra clave mencionada en cualquiera de las propiedades de metadatos.
 
 ### Ordenación {#sorting}
 
@@ -549,10 +549,10 @@ Puede ordenar los recursos en el Selector de recursos por nombre, dimensiones o 
 
 El Selector de recursos le permite ver el recurso en cuatro vistas diferentes:
 
-* **![vista de lista](assets/do-not-localize/list-view.png) [!UICONTROL Vista de lista]**: La vista de lista muestra archivos y carpetas desplazables en una sola columna.
-* **![vista de cuadrícula](assets/do-not-localize/grid-view.png) [!UICONTROL Vista de cuadrícula]**: La vista de cuadrícula muestra archivos y carpetas desplazables en una cuadrícula de filas y columnas.
-* **![vista de galería](assets/do-not-localize/gallery-view.png) [!UICONTROL Vista Galería]**: La vista de galería muestra archivos o carpetas en una lista horizontal bloqueada al centro.
-* **![vista de cascada](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista de cascada]**: La vista de cascada muestra archivos o carpetas en forma de puente.
+* **![vista de lista](assets/do-not-localize/list-view.png) [!UICONTROL Vista de lista]**: la vista de lista muestra los archivos y carpetas desplazables en una sola columna.
+* **![vista de cuadrícula](assets/do-not-localize/grid-view.png) [!UICONTROL Vista de cuadrícula]**: la vista de cuadrícula muestra archivos y carpetas desplazables en una cuadrícula de filas y columnas.
+* **![vista de galería](assets/do-not-localize/gallery-view.png) [!UICONTROL Vista de galería]**: la vista de galería muestra los archivos o carpetas en una lista horizontal bloqueada en el centro.
+* **![vista de cascada](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista de cascada]**: la vista de cascada muestra los archivos o carpetas en forma de puente.
 
 <!--
 ### Modes to view Asset Selector

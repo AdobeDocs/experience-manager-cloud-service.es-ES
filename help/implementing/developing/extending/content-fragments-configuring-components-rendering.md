@@ -98,7 +98,7 @@ Para algunas funciones, el componente deberá adherirse a las convenciones prede
 <table>
  <thead>
   <tr>
-   <td>Nombre de propiedad</td>
+   <td>Nombre de la propiedad</td>
    <td>Descripción</td>
   </tr>
  </thead>
@@ -132,7 +132,7 @@ Para algunas funciones, el componente deberá adherirse a las convenciones prede
  </tbody>
 </table>
 
-## Ejemplo {#example}
+## Ejemplos {#example}
 
 AEM Por ejemplo, consulte lo siguiente (en una instancia de aplicación predeterminada de la interfaz de usuario de la interfaz de usuario de la aplicación de configuración de la aplicación de configuración de la aplicación de configuración de la aplicación):
 

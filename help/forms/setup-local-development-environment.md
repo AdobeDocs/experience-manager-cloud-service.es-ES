@@ -337,7 +337,7 @@ Para habilitar los componentes principales de formularios adaptables para el ent
 
 1. Abra la carpeta del proyecto de arquetipo de AEM en un editor de código de texto sin formato. Por ejemplo, VS Code.
 
-1. Abrir nivel superior `.pom` archivo (pom principal) del proyecto de tipo de archivo AEM en el entorno local, agregue las siguientes propiedades al archivo y guárdelo.
+1. Abrir nivel superior `.pom` AEM archivo (pom principal) del proyecto de tipo de archivo de la en el entorno local, agregue las siguientes propiedades al archivo y guárdelo.
 
    ```XML
    <properties>
@@ -348,7 +348,7 @@ Para habilitar los componentes principales de formularios adaptables para el ent
 
    Para la última versión de `core.forms.components` y `core.wcm.components`, marque [documentación de componentes principales](https://github.com/adobe/aem-core-forms-components).
 
-1. En la sección dependencias del nivel superior (principal) `pom.xml` , agregue las siguientes dependencias:
+1. En la sección de dependencias del nivel superior (principal) `pom.xml` , agregue las siguientes dependencias:
 
    ```XML
        <!-- WCM Core Component Examples Dependencies -->
@@ -409,7 +409,7 @@ Para habilitar los componentes principales de formularios adaptables para el ent
      <!-- End of AEM Forms Core Component Dependencies -->
    ```
 
-1. Abra el `all/pom.xml` y agregue las siguientes dependencias en la variable `embedded` para agregar artefactos de los componentes principales de Forms adaptables al proyecto de tipo de archivo AEM:
+1. Abra el `all/pom.xml` y agregue las siguientes dependencias en el archivo `embedded` para agregar artefactos de componentes principales de Forms AEM adaptables al proyecto de tipo de archivo de la:
 
    ```XML
        <!-- WCM Core Component Examples Dependencies -->
@@ -462,9 +462,9 @@ Para habilitar los componentes principales de formularios adaptables para el ent
    ```
 
    >[!NOTE]
-   Sustituya ${appId} por el appId de su tipo de archivo.
+   Reemplace ${appId} por el appId de su tipo de archivo.
 
-1. En la sección dependencias de la sección `all/pom.xml` , agregue las siguientes dependencias:
+1. En la sección de dependencias del `all/pom.xml` , agregue las siguientes dependencias:
 
    ```XML
        <!-- Other existing dependencies -->
@@ -502,7 +502,7 @@ Para habilitar los componentes principales de formularios adaptables para el ent
        </dependency>
    ```
 
-1. Incluir `af-core bundle` dependencia en la variable `ui.apps/pom.xml`
+1. Incluir `af-core bundle` dependencia en el `ui.apps/pom.xml`
 
    ```XML
         <dependency>
@@ -523,7 +523,7 @@ Para habilitar los componentes principales de formularios adaptables para el ent
    `<artifactId>core-forms-components-core</artifactId>`
    `</dependency>`
 
-1. [Ejecutar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es). Una vez ejecutada correctamente la canalización, los componentes principales de formularios adaptables se habilitan para su entorno. Además, la plantilla de Forms adaptable (componentes principales) y el tema del lienzo se añaden a su entorno as a Cloud Service de Forms.
+1. [Ejecutar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es). Una vez ejecutada correctamente la canalización, los componentes principales de formularios adaptables se habilitan para su entorno. Además, la plantilla de Forms adaptable (componentes principales) y la temática de lienzo se añaden al entorno as a Cloud Service de Forms.
 
 
 ## Actualice su entorno de desarrollo local {#upgrade-your-local-development-environment}

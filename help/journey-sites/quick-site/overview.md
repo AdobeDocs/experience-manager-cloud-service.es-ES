@@ -48,7 +48,7 @@ Este recorrido describe los requisitos, pasos y enfoques para personalizar los t
 
 ## El Recorrido de creación rápida de sitios de AEM {#the-journey}
 
-Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionan conocimientos básicos sobre la creación y personalización de sitios de AEM mediante la herramienta Creación rápida de sitios y le permiten acceder a documentación técnica detallada.
+Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionan conocimientos básicos sobre la creación y personalización de AEM Sites mediante la herramienta Creación rápida de sitios y le permiten acceder a documentación técnica detallada.
 
 |#|Artículo|Descripción|Función responsable|
 |---|---|---|--|

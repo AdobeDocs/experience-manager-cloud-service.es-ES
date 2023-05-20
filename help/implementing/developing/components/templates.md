@@ -5,13 +5,13 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
 source-wordcount: '3300'
-ht-degree: 10%
+ht-degree: 6%
 
 ---
 
 # Plantillas de página {#page-templates}
 
-Al crear una página, debe seleccionar una plantilla. La plantilla de página se utiliza como base para la nueva página. Una plantilla define la estructura de la página resultante, todo el contenido inicial y los componentes que se pueden utilizar (propiedades de diseño). Esto tiene varias ventajas:
+Al crear una página, debe seleccionar una plantilla. La plantilla de página se utiliza como base para la nueva página. La plantilla define la estructura de la página resultante, cualquier contenido inicial y los componentes que se pueden utilizar (propiedades de diseño). Esto tiene varias ventajas:
 
 * Las plantillas de página permiten a los autores especializados [crear y editar plantillas](/help/sites-cloud/authoring/features/templates.md).
    * Estos autores especializados se denominan **autores de plantillas**
@@ -40,7 +40,7 @@ Este documento:
 
 La creación de plantillas de página se realiza principalmente con [consola de plantillas y editor de plantillas](/help/sites-cloud/authoring/features/templates.md) por un autor de plantillas. En esta sección se ofrece una descripción general de este proceso y se incluye una descripción de lo que sucede a nivel técnico.
 
-Al crear una nueva plantilla editable, realiza estas acciones:
+Al crear una nueva plantilla editable:
 
 1. Crear un [carpeta para las plantillas](#template-folders). Esto no es obligatorio, pero es una práctica recomendada.
 1. Seleccione una [tipo de plantilla](#template-type). Esto se copia para crear el [definición de plantilla](#template-definitions).
@@ -54,8 +54,8 @@ Al crear una nueva plantilla editable, realiza estas acciones:
    **Estructura**
 
    * La estructura permite definir componentes y contenido para la plantilla.
-   * Los componentes definidos en la estructura de la plantilla no se pueden mover a una página resultante ni eliminarse de ninguna página resultante.
-   * Si desea que los autores de la página puedan añadir y quitar componentes, añada un sistema de párrafos a la plantilla.
+   * Los componentes definidos en la estructura de la plantilla no se pueden mover a una página resultante ni eliminar de ninguna página resultante.
+   * Si desea que los autores de páginas puedan añadir y quitar componentes, agregue un sistema de párrafos a la plantilla.
    * Los componentes pueden volver a desbloquearse y bloquearse para que pueda definir el contenido inicial.
 
    Para obtener más información sobre cómo define la estructura un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -67,7 +67,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
    * Las políticas de contenido definen las propiedades de diseño de un componente.
 
       * Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas.
-   * Esto se aplica a la plantilla (y a las páginas creadas con la plantilla).
+   * Se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
    Para obtener más información sobre cómo define las directivas un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
@@ -102,7 +102,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
 1. Úselo para crear páginas de contenido.
 
-   * Al utilizar una plantilla para crear una página nueva, no existe ninguna diferencia visible ni ninguna indicación entre las plantillas estáticas y las editables.
+   * Cuando se utiliza una plantilla para crear una nueva página, no hay ninguna diferencia visible ni indicación entre las plantillas estáticas y editables.
    * Para el autor de la página, el proceso es transparente.
 
    Para obtener más información sobre cómo un autor de páginas utiliza plantillas para crear una página, consulte [Crear y organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -246,7 +246,7 @@ La siguiente tabla detalla los permisos necesarios para editar plantillas.
   </tr>
   <tr>
    <td>Usuario web anónimo</td>
-   <td>read</td>
+   <td>leer</td>
    <td>El usuario web anónimo debe leer las plantillas mientras procesa una página</td>
   </tr>
   <tr>
@@ -262,7 +262,7 @@ La siguiente tabla detalla los permisos necesarios para editar plantillas.
   </tr>
   <tr>
    <td>Usuario web anónimo</td>
-   <td>read</td>
+   <td>leer</td>
    <td>El usuario web anónimo debe leer las directivas mientras procesa una página</td>
   </tr>
   <tr>
@@ -273,7 +273,7 @@ La siguiente tabla detalla los permisos necesarios para editar plantillas.
   <tr>
    <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td>
    <td>Autor de plantillas</td>
-   <td>read</td>
+   <td>leer</td>
    <td>El autor de la plantilla crea una nueva plantilla basada en uno de los tipos de plantilla predefinidos.</td>
   </tr>
   <tr>
@@ -418,7 +418,7 @@ Los elementos principales son:
    * ` [policies](#policies)`
    * `thumbnail.png`
 
-### jcr:content {#jcr-content}
+### jcr:contenido {#jcr-content}
 
 Este nodo contiene propiedades para la plantilla:
 
@@ -458,7 +458,7 @@ Cuándo [edición de una plantilla puede definir el diseño](/help/sites-cloud/a
 
 ### Políticas de contenido {#content-policies}
 
-Las políticas de contenido definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Esto se aplica a la plantilla (y a las páginas creadas con la plantilla). Las políticas de contenido se pueden crear y seleccionar en el editor de plantillas.
+Las políticas de contenido definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla). Las políticas de contenido se pueden crear y seleccionar en el editor de plantillas.
 
 * La propiedad `cq:policy`, en el `root` nodo
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`

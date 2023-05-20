@@ -1,6 +1,6 @@
 ---
-title: Información general sobre Best Practices Analyzer
-description: Información general sobre Best Practices Analyzer
+title: Introducción al Analizador de prácticas recomendadas
+description: Introducción al Analizador de prácticas recomendadas
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -32,9 +32,9 @@ El informe del Analizador de prácticas recomendadas incluye las siguientes cate
 * Problemas de implementación y configuración.
 * Funciones de AEM 6.x que se han sustituido por funciones nuevas o que actualmente no son compatibles con AEM as a Cloud Service.
 
-Se proporciona información adicional sobre las categorías y posibles implicaciones y soluciones asociadas con esas categorías mediante vínculos desde el informe del Analizador de prácticas recomendadas.
+Se proporciona información adicional sobre las categorías y posibles implicaciones y soluciones asociadas con dichas categorías mediante vínculos desde el Informe del analizador de prácticas recomendadas.
 
 >[!NOTE]
->El informe de Best Practices Analyzer acelera el proceso de estimación del tiempo y el costo necesarios para realizar la transición a AEM as a Cloud Service al proporcionar información que de otra manera tendría que recopilarse y evaluarse manualmente.
+>AEM El informe del Analizador de prácticas recomendadas acelera el proceso de estimación del tiempo y el coste necesarios para realizar la transición a la as a Cloud Service, al proporcionar información que, de lo contrario, tendría que recopilarse y evaluarse manualmente.
 
-También puede descargar el informe de Best Practices Analyzer desde la instancia de AEM. Consulte [Visualización del informe de Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obtener más información.
+AEM También puede descargar el informe del Analizador de prácticas recomendadas desde la instancia de la instancia de la. Consulte [Visualización del informe del Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obtener más información.

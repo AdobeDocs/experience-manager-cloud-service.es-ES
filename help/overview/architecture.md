@@ -4,8 +4,8 @@ description: Introducción a la arquitectura de Adobe Experience Manager as a Cl
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1807'
+ht-degree: 96%
 
 ---
 
@@ -56,7 +56,7 @@ Así pues:
 
 * Permite que AEM as a Cloud Service ajuste los patrones de tráfico a medida que cambian.
 
-La escala de las instancias de cada inquilino del servicio se aplica a los dos ejes:
+La adaptabilidad de las instancias de cada inquilino del servicio se aplica a los dos ejes:
 
 * Horizontal: el número de nodos de un servicio determinado aumenta o disminuye automáticamente, lo que permite configuraciones predeterminadas individuales.
 

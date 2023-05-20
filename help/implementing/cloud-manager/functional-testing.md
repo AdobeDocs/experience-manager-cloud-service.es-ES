@@ -21,11 +21,11 @@ Obtenga información sobre los tres tipos diferentes de pruebas funcionales inte
 
 ## Ámbito
 
-El propósito de los pasos de prueba funcional en la canalización de Cloud Manager es garantizar que la funcionalidad esencial de su aplicación funcione correctamente.
+El propósito de los pasos de prueba funcional en la canalización de Cloud Manager es garantizar que la funcionalidad esencial de la aplicación funcione según lo esperado.
 
-Esta fase de prueba es el último nivel de pruebas automatizadas antes de implementar el código en la producción.
+Esta fase de prueba es el último nivel de prueba automatizada antes de implementar el código en producción.
 
-Las pruebas funcionales no deben reemplazar, sino complementar y ampliar otras estrategias de prueba, como las pruebas de unidad, las pruebas de integración o las pruebas funcionales realizadas fuera de la ejecución de la canalización en Cloud Manager.
+Las pruebas funcionales no deben reemplazar, sino complementar y ampliar otras estrategias de prueba, como las pruebas de unidades, las pruebas de integración o las pruebas funcionales realizadas fuera de la ejecución de la canalización en Cloud Manager.
 
 ## Información general {#overview}
 
@@ -56,12 +56,12 @@ Aunque la prueba funcional del producto está definida por Adobe, puede escribir
 
 Las pruebas funcionales personalizadas se ejecutan tanto para implementaciones de código personalizado como para actualizaciones push, lo que hace especialmente importante escribir buenas pruebas funcionales que eviten que los cambios en el código de AEM rompan el código de la aplicación. El paso de prueba funcional personalizada siempre está presente y no se puede omitir.
 
-Consulte [Pruebas funcionales de Java](/help/implementing/cloud-manager/java-functional-testing.md) para obtener más información.
+Consulte la [Pruebas funcionales de Java](/help/implementing/cloud-manager/java-functional-testing.md) para obtener más información.
 
 
 ### Prueba de IU personalizada {#custom-ui-testing}
 
 La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo como Java y Maven, Node y WebDriver.io, o cualquier otro marco de trabajo y tecnología creados en Selenium.
 
-Consulte [Pruebas de IU personalizadas](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) para obtener más información.
+Consulte la [Pruebas de IU personalizadas](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) para obtener más información.
 

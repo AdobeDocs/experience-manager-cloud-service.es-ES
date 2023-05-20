@@ -1,11 +1,11 @@
 ---
 title: Resolución de problemas de AEM durante la creación
-description: Algunos problemas que pueden producirse al utilizar AEM
+description: AEM Algunos problemas que pueden producirse al utilizar el servicio de asistencia de
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 100%
+ht-degree: 68%
 
 ---
 
@@ -18,10 +18,10 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 * **Problema**:
    * Ha realizado cambios en una página y publicado la página en el sitio de publicación, pero la versión *antigua* de la página todavía se muestra en el sitio de publicación.
 * **Motivo**:
-   * Puede haber varios motivos. Normalmente es la caché (su navegador local o Dispatcher), aunque a veces puede haber un problema con la cola de replicación.
+   * Esto puede tener varias causas, la mayoría de las veces la caché (el explorador local o Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
 * **Soluciones**:
-   * Hay varias posibilidades:
-   * Confirme que la página se haya replicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
+   * Aquí hay varias posibilidades:
+   * Confirme que la página se ha duplicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
    * Borre la caché del navegador local y vuelva a acceder a la página.
    * Añada `?` al final de la URL de la página. Por ejemplo:
       * `http://<host>:<port>/sites.html/content?`

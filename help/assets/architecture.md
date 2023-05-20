@@ -12,11 +12,11 @@ ht-degree: 23%
 
 ---
 
-# Arquitectura de los activos como [!DNL Cloud Service] solución {#assets-architecture}
+# Arquitectura de Assets como [!DNL Cloud Service] solución {#assets-architecture}
 
-[!DNL Experience Manager Assets] como [!DNL Cloud Service] se basa en [!DNL Adobe Experience Manager] y se compara bien con la última oferta [!DNL Experience Manager] 6.5. [!DNL Cloud Service] tiene una arquitectura y una funcionalidad ajustadas que se han convertido en un servicio nativo de la nube. Los cambios en la arquitectura subyacente no permiten que todas las funcionalidades de Experience Manager 6.5 formen parte del [!DNL Cloud Service].
+[!DNL Experience Manager Assets] as a [!DNL Cloud Service] se basa en [!DNL Adobe Experience Manager] y se compara bien con la oferta más reciente [!DNL Experience Manager] 6.5. El [!DNL Cloud Service] tiene una arquitectura y una funcionalidad ajustadas que ofrecen ser un servicio nativo de la nube. Los cambios en la arquitectura subyacente no permiten que todas las funcionalidades de Experience Manager 6.5 formen parte de [!DNL Cloud Service].
 
-Para ver la descripción general de la arquitectura de los microservicios de recursos, consulte esta [información general sobre los microservicios de recursos](asset-microservices-overview.md#asset-microservices-architecture).
+Para ver la descripción general de la arquitectura de los microservicios de recursos, consulte esto [información general sobre microservicios de recursos](asset-microservices-overview.md#asset-microservices-architecture).
 
 **Consulte también**
 
@@ -36,6 +36,6 @@ Para ver la descripción general de la arquitectura de los microservicios de rec
 >[!MORELIKETHIS]
 >
 >* [Información general y novedades](/help/assets/overview.md)
->* [Formatos de archivo compatibles y tipos MIME](file-format-support.md)
+>* [Formatos de archivo y tipos MIME admitidos](file-format-support.md)
 >* [Información general sobre los microservicios de recursos](asset-microservices-overview.md)
 

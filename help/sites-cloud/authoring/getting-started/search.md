@@ -1,11 +1,11 @@
 ---
 title: Búsqueda
-description: Encuentre contenido más rápidamente con una búsqueda detallada
+description: Encuentre su contenido más rápido con una búsqueda completa
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -57,7 +57,7 @@ Para buscar y filtrar sus recursos:
    El panel lateral permite seleccionar:
 
    * Búsquedas guardadas
-   * Directorio de búsqueda
+   * Buscar directorio
    * Etiquetas
    * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de LiveCopy.
 
@@ -65,7 +65,7 @@ Para buscar y filtrar sus recursos:
    >
    >Los criterios de búsqueda pueden variar:
    >
-   >* Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de comunidades y recursos son comprensivamente especializados.
+   >* Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de Recursos y Comunidades son comprensiblemente especializados.
    >* Su instancia, al igual que los formularios de búsqueda, se puede personalizar (según la ubicación en AEM).
 
 
@@ -81,7 +81,7 @@ Para buscar y filtrar sus recursos:
 
 >[!NOTE]
 >
->Los criterios de búsqueda se mantienen al seleccionar un elemento en los resultados de la búsqueda.
+>Los criterios de búsqueda se mantienen al seleccionar un elemento en los resultados de búsqueda.
 >
 >Cuando se selecciona un elemento en la página de resultados de la búsqueda, al volver a la página de búsqueda después de usar el botón Atrás del explorador, los criterios de búsqueda se mantienen. 
 
@@ -89,7 +89,7 @@ Para buscar y filtrar sus recursos:
 
 Además de buscar aplicando una amplia gama de criterios, también puede guardar una configuración de búsqueda determinada para recuperarla y utilizarla en otro momento:
 
-1. Defina sus criterios de búsqueda y seleccione **Guardar**.
+1. Defina los criterios de búsqueda y seleccione **Guardar**.
 
    ![Guardar una búsqueda](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
@@ -101,7 +101,7 @@ Además de buscar aplicando una amplia gama de criterios, también puede guardar
 
    ![Búsquedas guardadas](/help/sites-cloud/authoring/assets/saved-searches.png)
 
-1. Una vez guardada, podrá:
+1. Una vez guardado, puede:
 
    * Use **x** (con el nombre de la búsqueda guardada) para iniciar una nueva consulta (la búsqueda guardada en sí no se eliminará).
    * Use la opción **Editar búsqueda guardada**, cambie las condiciones de búsqueda y luego utilice **Guardar** nuevamente.

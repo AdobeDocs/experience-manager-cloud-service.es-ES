@@ -163,13 +163,13 @@ Las páginas de productos específicos se seleccionan según el SKU o la categor
 
 | Formato de URL | por sku | por categoría |
 | ----------------------------------------------------- | ------ | ---------------- |
-| `{{page}}.html/{{url_key}}.html` | nº | nº |
-| `{{page}}.html/{{category}}/{{url_key}}.html` | nº | solo coincidencia exacta |
-| `{{page}}.html/{{url_path}}.html` | nº | yes |
-| `{{page}}.html/{{sku}}.html` | yes | nº |
-| `{{page}}.html/{{sku}}/{{url_key}}.html` | yes | nº |
-| `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | yes | solo coincidencia exacta |
-| `{{page}}.html/{{sku}}/{{url_path}}.html` | yes | yes |
+| `{{page}}.html/{{url_key}}.html` | no | no |
+| `{{page}}.html/{{category}}/{{url_key}}.html` | no | solo coincidencia exacta |
+| `{{page}}.html/{{url_path}}.html` | no | sí |
+| `{{page}}.html/{{sku}}.html` | sí | no |
+| `{{page}}.html/{{sku}}/{{url_key}}.html` | sí | no |
+| `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | sí | solo coincidencia exacta |
+| `{{page}}.html/{{sku}}/{{url_path}}.html` | sí | sí |
 
 {style="table-layout:auto"}
 

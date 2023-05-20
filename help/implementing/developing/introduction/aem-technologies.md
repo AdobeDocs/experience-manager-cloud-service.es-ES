@@ -30,7 +30,7 @@ El repositorio de contenido subyacente y las capas de lógica empresarial se bas
 
 * JCR
 * Sling
-* los paquetes
+* OSGi
 
 ## Repositorio de contenido Java {#java-content-repository}
 
@@ -251,7 +251,7 @@ Es posible que los scripts más complejos (agregar scripts) necesiten acceder a 
 
 Para ello, puede utilizar el `sling:include("/<path>/<resource>")` comando. Esto incluirá de forma efectiva la definición del recurso al que se hace referencia.
 
-## los paquetes {#osgi}
+## OSGi {#osgi}
 
 OSGi (Open Services Gateway Initiative) define una arquitectura para el desarrollo e implementación de aplicaciones y bibliotecas modulares (también se conoce como Dynamic Module System for Java). Los contenedores OSGi le permiten dividir la aplicación en módulos individuales (son archivos jar con información meta adicional y llamados paquetes en la terminología OSGi) y administrar las dependencias cruzadas entre ellos con:
 

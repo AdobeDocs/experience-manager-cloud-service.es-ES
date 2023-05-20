@@ -35,7 +35,7 @@ El creador trabaja en lo que se conoce como **entorno de creación**. Esto propo
 >
 >Su cuenta necesita los derechos de acceso adecuados para crear, editar o publicar contenido.
 
-Según la configuración de su instancia y sus derechos de acceso personales, puede realizar muchas tareas en el contenido, incluidas (entre otras):
+Según la configuración de su instancia y de sus derechos de acceso personales, puede realizar muchas tareas en su contenido, entre otras:
 
 * Generar contenido nuevo o editar contenido existente en una página.
 * Utilizar plantillas predefinidas para crear páginas de contenido nuevo.
@@ -54,7 +54,7 @@ Asimismo, hay tareas administrativas que le ayudan a administrar su contenido:
 
 ## Vista previa del contenido {#previewing-content}
 
-AEM también ofrece un servicio de vista previa de Sites que permite a los desarrolladores y autores de contenido obtener una vista previa de la experiencia final de un sitio web antes de que llegue al entorno de publicación y esté disponible públicamente.
+AEM También ofrece un servicio de vista previa de Sites que permite a los desarrolladores y autores de contenido previsualizar la experiencia final de un sitio web antes de que llegue al entorno de publicación y esté disponible públicamente.
 
 Consulte [Vista previa del contenido](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obtener más información.
 

@@ -591,7 +591,7 @@ Para cambiar la configuración de las etiquetas de Experience Platform (incluida
 
 Las etiquetas de Experience Platform pueden tener varios entornos de desarrollo, un entorno de ensayo y un entorno de producción. De forma predeterminada, la Configuración en la nube de etiquetas de Experience Platform de Experience Manager señala el nodo de creación de etiquetas de Experience Manager al entorno de ensayo de las etiquetas de Platform. El nodo Publicación de Experience Manager apunta al entorno de producción de Etiquetas de Experience Platform. Esta disposición significa que, con la configuración predeterminada del Experience Manager, es necesario publicar la biblioteca de etiquetas de Experience Platform en el entorno de ensayo. Al hacerlo, puede utilizarlo en el autor del Experience Manager. A continuación, puede publicarlo en el entorno de producción para que se pueda utilizar en la publicación de Experience Manager.
 
-Consulte [Entornos](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) para obtener más información sobre los entornos de Etiquetas de Experience Platform.
+Consulte [Entornos](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=es) para obtener más información sobre los entornos de Etiquetas de Experience Platform.
 
 La publicación de una biblioteca implica los dos pasos siguientes:
 

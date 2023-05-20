@@ -7,13 +7,13 @@ exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 13%
+ht-degree: 6%
 
 ---
 
 # Trabajo con Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos de origen primarios, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ayuda a ofrecer recursos de marketing y comercialización visuales enriquecidos bajo demanda, escalados automáticamente para el consumo en sitios web, móviles y sociales. Con un conjunto de recursos de origen primarios, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 Dynamic Media ofrece experiencias de visualización interactivas, como zoom, giro de 360° y vídeo. Dynamic Media incorpora de forma exclusiva los flujos de trabajo de la solución de administración de activos digitales (Assets) de Adobe Experience Manager para simplificar y optimizar el proceso de administración de campañas digitales.
 
@@ -36,7 +36,7 @@ Las funciones solo de Dynamic Media incluyen lo siguiente:
 
 * [Conjuntos de giros](spin-sets.md)
 * [Vídeo](video.md)
-* [Envío de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
+* [Entrega de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
 * [Administración de recursos](managing-assets.md)
 * [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
 

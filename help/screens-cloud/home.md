@@ -6,25 +6,25 @@ exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-Esta página le ayuda a conocer mejor AEM Screens y cómo funciona esta solución de publicidad dinámica. Obtenga recursos de autoayuda y conozca las novedades.
+Esta página le ayuda a conocer mejor AEM Screens y cómo funciona esta solución de firma digital. Obtenga recursos de autoayuda y conozca las novedades.
 
 >[!NOTE]
->Para AEM Screens con AEM 6.5, consulte [Guía del usuario de AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
+>Para AEM Screens AEM con 6.5, consulte [Guía del usuario de AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es).
 
 
-## Contenido clave y artículos as a Cloud Service de AEM Screens {#key-articles}
+## Artículos as a Cloud Service sobre AEM Screens y contenido clave {#key-articles}
 
 * [Introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
 * [Incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
-* [Configurar los servicios y el proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=es)
-* [Crear un proyecto en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
-* [Instalar el reproductor Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
+* [Configurar el proveedor de servicios y contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=es)
+* [Creación de un proyecto en Pantallas as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
+* [Instalación del reproductor de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
 ## Guías de Experience Manager as a Cloud Service {#aem-guides}
 

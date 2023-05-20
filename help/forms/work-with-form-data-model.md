@@ -195,9 +195,9 @@ Utilice el atributo de solicitud para recuperar las propiedades asociadas de la 
    >[!NOTE]
    >
    > * Si utiliza una plantilla estática, superponga head.jsp en:
-   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Si utiliza una plantilla editable, superponga aftemplatedpage.jsp en:
-   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Establezca [!DNL paramMap] para el atributo de solicitud. Por ejemplo, incluya el siguiente código en el archivo .jsp de la carpeta de aplicaciones:

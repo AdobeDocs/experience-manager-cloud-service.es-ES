@@ -33,15 +33,15 @@ ht-degree: 65%
 
 Los fragmentos de contenido representan su contenido sin encabezado y se basan en estructuras predefinidas, denominadas modelos de fragmento de contenido. Ya ha creado un modelo en un módulo anterior.
 
-En este módulo creará un nuevo fragmento de contenido basado en ese modelo mediante la consola Fragmento de contenido . Considere la consola fragmento de contenido como una biblioteca de contenido sin encabezado. Utilícela para crear nuevos fragmentos de contenido y administrar los existentes.
+En este módulo creará un nuevo fragmento de contenido basado en ese modelo mediante la consola Fragmento de contenido. Considere la consola fragmento de contenido como una biblioteca de contenido sin encabezado. Utilícela para crear nuevos fragmentos de contenido y administrar los existentes.
 
 1. Toque o haga clic en el botón **Crear** en la parte superior derecha de la consola.
 
 1. Se abre el cuadro de diálogo **Nuevo fragmento de contenido**, en el que puede empezar a crearlo. **Ubicación** se rellena automáticamente con el lugar donde se guardará el nuevo contenido.
 
-1. En el **Modelo de fragmento de contenido** , seleccione la **Aventura** Modelo de fragmento de contenido que creó anteriormente.
+1. En el **Modelo de fragmento de contenido** , seleccione la opción **Aventura** Modelo de fragmento de contenido que creó anteriormente.
 
-1. Agregar `Tuscany` como descriptivo **Título** para el fragmento de contenido. Esto es para identificar el fragmento en la consola.
+1. Añadir `Tuscany` como elemento descriptivo **Título** para el fragmento de contenido. Esto sirve para identificar el fragmento en la consola.
 
 1. Toque o haga clic en **Crear y abrir**.
 
@@ -49,7 +49,7 @@ En este módulo creará un nuevo fragmento de contenido basado en ese modelo med
 
 >[!TIP]
 >
->Según la configuración del explorador, la nueva ficha del explorador puede ser suprimida por un bloqueador de ventanas emergentes. Si el nuevo fragmento no se abre después de hacer clic en **Crear y abrir**, compruebe la configuración del explorador.
+>Según la configuración del explorador, la nueva pestaña podría suprimirse mediante un bloqueador de ventanas emergentes. Si el nuevo fragmento no se abre después de hacer clic en **Crear y abrir**, compruebe la configuración de su explorador.
 
 ## Añadir contenido al fragmento de contenido {#add-content}
 
@@ -59,31 +59,31 @@ Una vez guardado y abierto el nuevo fragmento de contenido, el editor de fragmen
 
 1. Proporcione un **Título** para el fragmento introduciendo `Tuscan Adventure`.
 
-1. Proporcione un **Descripción** para el fragmento pegando en el siguiente texto.
+1. Proporcione un **Descripción** para el fragmento, pegue el siguiente texto.
 
    ```text
    Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
-1. Proporcione un **Precio** para el fragmento introduciendo en `$700`.
+1. Proporcione un **Precio** para el fragmento introduciendo `$700`.
 
-1. Proporcione un **Imagen** que sea representativo del viaje tocando o haciendo clic en **Agregar recurso** en el **Imagen** campo .
+1. Proporcione un **Imagen** que es representativo del viaje tocando o haciendo clic en **Añadir recurso** en el **Imagen** field.
 
-1. En la ventana emergente del recurso, toque o haga clic en **Examinar recursos** para seleccionar un recurso existente en la biblioteca de recursos.
+1. En la ventana emergente del recurso, toque o haga clic en **Examinar recursos** para seleccionar entre un recurso existente en la biblioteca de recursos.
 
    ![Añadir recurso](assets/do-not-localize/add-asset.png)
 
-1. La variable **Seleccionar recurso** se abre. Con el navegador de árbol en el panel izquierdo, vaya a **Todos los recursos** > **aem-demo-assets** > **en** > **aventuras** > **ciclismo-toscana**.
+1. El **Seleccionar recurso** se abre. Con el navegador de árbol del panel izquierdo, navegue hasta **Todos los recursos** > **aem-demo-assets** > **en** > **aventuras** > **ciclismo-toscana**.
 
-1. El contenido del **ciclismo-toscana** se muestran a la derecha. Seleccionar la imagen `ADOBESTOCK_141786166.JPEG`.
+1. El contenido del **ciclismo-toscana** Las carpetas se muestran a la derecha. Seleccionar la imagen `ADOBESTOCK_141786166.JPEG`.
 
-1. Toque o haga clic **Select**.
+1. Haga clic o pulse **Seleccionar**.
 
    ![Seleccionar recurso](assets/do-not-localize/select-asset.png)
 
 1. La imagen seleccionada se muestra en el fragmento de contenido. El editor guarda automáticamente los cambios.
 
-1. Una vez que haya terminado de añadir contenido, toque o haga clic en el botón **Publicar** en la parte superior derecha del editor. Esto hace que el fragmento de contenido esté disponible para su consumo en aplicaciones externas. A continuación, seleccione **Ahora** en la lista desplegable . También puede programarlo para publicarlo más adelante.
+1. Una vez que haya terminado de añadir contenido, toque o haga clic en el botón **Publicar** en la parte superior derecha del editor. Esto hace que el fragmento de contenido esté disponible para su consumo en aplicaciones externas. A continuación seleccione **Ahora** de la lista desplegable. También puede programarlo para publicarlo más adelante.
 
    ![Publicar contenido](assets/do-not-localize/publish.png)
 

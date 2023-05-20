@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Introducción a las aplicaciones de App Builder impulsadas por eventos
 
-Descubra qué sucede con la arquitectura impulsada por eventos, los eventos de Adobe I/O y los eventos personalizados.
+Obtenga información acerca de la arquitectura impulsada por eventos, los eventos de Adobe I/O y los eventos personalizados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
 
@@ -28,4 +28,4 @@ Descubra qué sucede con la arquitectura impulsada por eventos, los eventos de A
 
 >[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
-Obtenga información sobre cómo crear publicaciones puede consumir eventos en una aplicación de App Builder.
+Obtenga información sobre cómo generar publicaciones que pueden consumir eventos en una aplicación de App Builder.

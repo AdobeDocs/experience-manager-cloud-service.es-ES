@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # Administrar ajustes preestablecidos de imagen{#managing-image-presets}
 
-Los ajustes preestablecidos de imagen permiten que Adobe Experience Manager Assets entregue dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y diseño para mostrar las imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
+Los ajustes preestablecidos de imagen permiten que Adobe Experience Manager Assets entregue dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y formato para mostrar imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
 
 Los administradores pueden crear ajustes preestablecidos para exportar recursos. Los usuarios pueden elegir un ajuste preestablecido al exportar imágenes, que también redistribuye las imágenes según las especificaciones del administrador.
 
@@ -99,8 +99,8 @@ Argumentos para rasterizar el PDF o el flujo de trabajo de IA
 | Argumento del proceso | Configuración predeterminada | Descripción |
 |---|---|---|
 | Tipos MIME | application/pdf<br>application/postscript<br>application/illustrator | Lista de tipos MIME de documento que se consideran documentos de PDF o Illustrator. |
-| Ancho máximo | 2048 | Anchura máxima de la representación de vista previa generada, en píxeles. |
-| Alto máximo | 2048 | Altura máxima de la representación de vista previa generada, en píxeles. |
+| Anchura máxima | 2048 | Anchura máxima de la representación de vista previa generada, en píxeles. |
+| Altura máxima | 2048 | Altura máxima de la representación de vista previa generada, en píxeles. |
 | Resolución | 72 | Resolución para rasterizar la primera página, en ppp (píxeles por pulgada). |
 
 Con los argumentos de proceso predeterminados, la primera página de un documento de PDF/IA se rasteriza a 72 ppp y el tamaño de la imagen de vista previa generada es de 2048 x 2048 píxeles. Para una implementación típica, puede aumentar la resolución a un mínimo de 150 ppp o más. Por ejemplo, un documento de tamaño carta de EE. UU. a 300 ppp requiere una anchura y altura máximas de 2550 x 3300 píxeles, respectivamente.

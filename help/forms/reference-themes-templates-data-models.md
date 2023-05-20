@@ -3,8 +3,9 @@ title: Temáticas, plantillas y modelos de datos de formulario de referencia
 seo-title: Reference Themes, Templates, and Form Data models
 description: AEM Forms proporciona temáticas de formularios adaptables, plantillas y modelos de datos de formulario que puede obtener en Distribución de software
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
-source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
-workflow-type: ht
+exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 100%
 
@@ -119,9 +120,3 @@ Puede obtener los siguientes modelos de datos de formulario instalando el [Paque
 * Salesforce
 
 Para obtener información sobre el uso de estos modelos, consulte [Configuración de los servicios en la nube de Microsoft Dynamics 365 y Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=es#configure-dynamics-cloud-service)
-
-
-
-
-
-

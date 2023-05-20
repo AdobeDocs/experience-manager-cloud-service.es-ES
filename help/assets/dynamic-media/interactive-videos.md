@@ -388,7 +388,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
         </tr>
         <tr>
         <td>Para quitar una miniatura del segmento de escala de tiempo seleccionado</td>
-        <td><p>Realice una de las acciones siguientes:</p>
+        <td><p>Realice una de las siguientes acciones:</p>
           <ul>
           <li>En el panel del selector de recursos, seleccione una imagen con una marca de verificación para anular su selección. El recurso de imagen se elimina del segmento de cronología.<br /> </li>
           <li>En el segmento de cronología seleccionado, seleccione una imagen y, en la barra de herramientas, seleccione <strong>Eliminar producto</strong>.</li>
@@ -402,7 +402,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
    Al seleccionar una imagen en el panel selector de recursos, se agrega al segmento de cronología seleccionado.
 
 1. Seleccione una sola imagen en miniatura en uno de los segmentos de la cronología y, a continuación, seleccione la opción **[!UICONTROL Acciones]** pestaña.
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
    <table> 
     <tbody> 
       <tr> 

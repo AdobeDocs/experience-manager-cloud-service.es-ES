@@ -139,7 +139,7 @@ Para crear una Live Copy:
 
    >[!NOTE]
    >
-   >Puede aparecer un cuadro de diálogo de error con el mensaje &quot;Fallo al enviar el formulario&quot;. Esto ocurre debido a un tiempo de espera de red. Sin embargo, el proceso para crear la Live Copy se está ejecutando en segundo plano. Espere unos minutos y compruebe que las páginas de la Live Copy se hayan creado correctamente.
+   >Puede aparecer un cuadro de diálogo de error con el mensaje &quot;Error al enviar el formulario&quot;. Esto sucede debido a un tiempo de espera de red. Sin embargo, el proceso para crear la Live Copy se está ejecutando en segundo plano. Espere unos minutos y compruebe que las páginas de la Live Copy se han creado correctamente.
 
 ### Creación de una Live Copy de un sitio a partir de una configuración de modelo {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 

@@ -14,7 +14,7 @@ ht-degree: 98%
 
 # Crear un formulario adaptable (Componentes principales) {#creating-an-adaptive-form-core-components}
 
-Forms adaptable le permite crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms ofrece un asistente fácil de usuario empresarial que crea rápidamente formularios adaptables. El asistente dispone de una navegación rápida por pestañas para seleccionar fácilmente plantillas, estilos, campos y opciones de envío preconfiguradas para crear un formulario adaptable.
+Adaptive Forms le permite crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms ofrece un asistente fácil de usuario empresarial que crea rápidamente formularios adaptables. El asistente dispone de una navegación rápida por pestañas para seleccionar fácilmente plantillas, estilos, campos y opciones de envío preconfiguradas para crear un formulario adaptable.
 
 Antes de empezar, obtenga información sobre el tipo de componentes de Forms disponibles para usted:
 

@@ -1,13 +1,13 @@
 ---
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
-workflow-type: ht
+exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
 
 ---
-
 
 # Creación de contenido con el editor universal {#authoring}
 
@@ -194,7 +194,7 @@ Para obtener más información acerca del editor universal, consulte estos docum
 
 * [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar aspectos de cualquier contenido en todo tipo de implementación para ofrecer experiencias excepcionales, aumentar la velocidad y proporcionar una experiencia de última generación a los desarrolladores.
 * [Publicación de contenido con el editor universal](publishing.md): descubra cómo se publica contenido con el editor visual universal y cómo sus aplicaciones pueden gestionar este contenido publicado.
-* [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder y cómo instrumentar la primera aplicación de AEM para utilizar el editor universal.
+* [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 * [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 * [Atributos y tipos](attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
 * [Autenticación del editor universal](authentication.md): obtenga información sobre cómo se autentica el editor universal.

@@ -5,7 +5,7 @@ exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hac
 
 ## Editar métodos abreviados de teclado {#editing-keyboard-shortcuts}
 
-| Lugar de residencia | Método abreviado | Descripción |
+| Lugar de residencia | Acceso directo | Descripción |
 |---|---|---|
 | Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Vista previa** y el [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).* |
 | Modo de **edición** | `Ctrl-z` | [Deshacer el último cambio](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |

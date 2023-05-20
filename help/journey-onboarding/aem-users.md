@@ -81,7 +81,7 @@ Si le interesa cómo crean y administran los desarrolladores y los administrador
 
 ## Recursos adicionales {#additional-resources}
 
-Los siguientes son recursos adicionales y opcionales si desea ir más allá del contenido del recorrido de incorporación.
+Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
 [Guía rápida para la creación de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md): Empiece aquí para ver una descripción general rápida de los fundamentos de la creación en AEM.
 [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md): Si desea crear contenido sin encabezado, siga esta introducción guiada.

@@ -154,7 +154,7 @@ Antes de la eliminación del índice Lucene genérico, la variable `pathfield` E
 >[!NOTE]
 >
 >El Editor del modelo de fragmentos de contenido utiliza campos de ruta especializados con el tipo de recurso Sling `dam/cfm/models/editor/components/contentreference`.
-> * En la actualidad, estos realizan consultas sin especificar tipos de nodo, lo que da como resultado que se registre una ADVERTENCIA debido al uso del índice Lucene genérico.
+> * En la actualidad, estos realizan consultas sin especificar tipos de nodo, lo que da como resultado que se registre un ADVERTENCIA debido al uso del índice Lucene genérico.
 > * Las instancias de estos componentes pronto utilizarán de forma predeterminada `cq:Page` y `dam:Asset` tipos de nodo sin más acción del cliente.
 > * El `nodeTypes` se puede agregar la propiedad para anular estos tipos de nodos predeterminados.
 

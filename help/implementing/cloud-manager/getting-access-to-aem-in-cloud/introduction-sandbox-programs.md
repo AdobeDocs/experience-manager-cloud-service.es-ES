@@ -64,12 +64,12 @@ Consulte el documento [Actualizar el entorno](/help/implementing/cloud-manager/m
 
 ### Hibernación y eliminación {#hibernation}
 
-Los entornos de un programa de zona protegida hibernan automáticamente tras ocho horas de inactividad. Los entornos de espacio aislado se eliminan después de seis meses continuos de hibernación.
+Los entornos de un programa de zona protegida hibernan automáticamente tras ocho horas de inactividad. Los entornos de zona protegida se eliminan después de seis meses continuos de hibernación.
 
-Consulte [Entornos de espacio aislado en hibernación y dehibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obtener más información sobre cómo anular la hibernación de entornos y eliminar automáticamente entornos limitados.
+Consulte la [Entornos de zona protegida en hibernación y dehibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obtener más información sobre cómo anular la hibernación de entornos y eliminar automáticamente la zona protegida.
 
-### Sin asistencia técnica {#no-support}
+### No hay soporte técnico {#no-support}
 
-Dado que un programa de simulación de pruebas suele crearse para servir a los fines de formación, ejecución de demostraciones, habilitación o prueba de conceptos (POC), no hay asistencia técnica disponible para los problemas experimentados en un programa de simulación de pruebas.
+Dado que un programa de zona protegida se suele crear para servir a los fines de formación, ejecución de demostraciones, habilitación o prueba de conceptos, la asistencia técnica no está disponible para los problemas experimentados en un programa de zona protegida.
 
-Si experimenta problemas al crear y administrar sus programas de simulación de pruebas, sigue estando dentro del ámbito de la asistencia técnica.
+Si tiene problemas para crear y administrar sus programas de zona protegida, aún entra en el ámbito del soporte técnico.

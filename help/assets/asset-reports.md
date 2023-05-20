@@ -19,17 +19,17 @@ ht-degree: 9%
 | AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
-Los informes de recursos le permiten evaluar la utilidad de su [!DNL Adobe Experience Manager Assets] implementación. con [!DNL Assets], puede generar varios informes para los recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, cómo interactúan los usuarios con los recursos y cuáles son <!-- downloaded and --> compartido.
+Los informes de recursos le permiten evaluar la utilidad de su [!DNL Adobe Experience Manager Assets] implementación. Con [!DNL Assets], puede generar varios informes para sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, cómo interactúan los usuarios con los recursos y cuáles son <!-- downloaded and --> compartido.
 
-Utilice la información de los informes para derivar métricas de éxito clave para medir la adopción de [!DNL Assets] en su empresa y por clientes.
+Utilice la información de los informes para derivar métricas de éxito clave para medir la adopción de [!DNL Assets] dentro de su empresa y por parte de los clientes.
 
-La variable [!DNL Assets] uso del marco de informes [!DNL Sling] trabajos para procesar de forma asíncrona solicitudes de informes de forma ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficacia y la velocidad con que se generan los informes.
+El [!DNL Assets] el marco de informes utiliza [!DNL Sling] trabajos para procesar solicitudes de informes de forma asincrónica de forma ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficacia y la velocidad con que se generan los informes.
 
-La interfaz de administración de informes es intuitiva e incluye opciones y controles detallados para acceder a informes archivados y ver estados de ejecución de informes (éxito, error y cola).
+La interfaz de administración de informes es intuitiva e incluye opciones y controles específicos para acceder a informes archivados y ver los estados de ejecución de informes (correcto, fallido y en cola).
 
-Cuando se genera un informe, se le notifica mediante <!-- through an email (optional) and --> una notificación de la bandeja de entrada. Puede ver, descargar o eliminar un informe desde la página de lista de informes, donde se muestran todos los informes generados anteriormente.
+Cuando se genera un informe, se le notifica mediante <!-- through an email (optional) and --> una notificación de la bandeja de entrada. Puede ver, descargar o eliminar un informe desde la página de lista de informes, en la que se muestran todos los informes generados anteriormente.
 
-## Generar informes {#generate-reports}
+## Generación de informes {#generate-reports}
 
 [!DNL Experience Manager Assets] genera los siguientes informes estándar:
 
@@ -57,67 +57,67 @@ Cuando se genera un informe, se le notifica mediante <!-- through an email (opti
 
 [!DNL Adobe Experience Manager] los administradores pueden generar y personalizar fácilmente estos informes para su implementación. Un administrador puede seguir estos pasos para generar un informe:
 
-1. En [!DNL Experience Manager] interfaz, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
+1. Entrada [!DNL Experience Manager] interfaz, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Informes]**.
 
-   ![Página Herramientas para navegar por el informe Recursos](assets/navigation.png)
+   ![Página Herramientas para navegar por el informe de recursos](assets/navigation.png)
 
 1. En el [!UICONTROL Informes de recursos] página, haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
-1. En el **[!UICONTROL Crear informe]** , elija el informe que desea crear y haga clic en **[!UICONTROL Siguiente]**.
+1. Desde el **[!UICONTROL Crear informe]** , seleccione el informe que desee crear y haga clic en **[!UICONTROL Siguiente]**.
 
    ![Seleccionar tipo de informe](assets/choose_report.png)
 
-1. Configure los detalles del informe, como título, descripción, miniatura y ruta de carpeta. De forma predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente para ejecutar el informe en una carpeta específica.
+1. Configure detalles del informe, como título, descripción, miniatura y ruta de la carpeta. De forma predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente para ejecutar el informe en una carpeta específica.
 
-   ![Página para agregar detalles del informe](assets/report_configuration.png)
+   ![Página para añadir detalles del informe](assets/report_configuration.png)
 
-   Elija el intervalo de fechas del informe. Puede elegir generar el informe ahora o en una fecha y hora futuras.
+   Elija el intervalo de fechas para el informe. Puede optar por generar el informe ahora o en una fecha y hora futuras.
 
    >[!NOTE]
    >
-   >Si decide programar el informe más adelante, asegúrese de especificar la fecha y la hora en los campos Fecha y Hora. Si no especifica ningún valor, el motor de informes lo considera un informe que se generará al instante.
+   >Si decide programar el informe más adelante, asegúrese de especificar la fecha y la hora en los campos Fecha y Hora. Si no se especifica ningún valor, el motor de informes lo trata como un informe que se va a generar instantáneamente.
 
-   Los campos de configuración pueden variar según el tipo de informe que cree. Por ejemplo, la variable **[!UICONTROL Uso del disco]** proporciona opciones para incluir representaciones de recursos al calcular el espacio en disco utilizado por los recursos. Puede elegir incluir o excluir recursos en subcarpetas para el cálculo del uso del disco.
+   Los campos de configuración pueden variar según el tipo de informe que cree. Por ejemplo, la variable **[!UICONTROL Uso de disco]** El informe proporciona opciones para incluir representaciones de recursos al calcular el espacio en disco utilizado por los recursos. Puede elegir incluir o excluir recursos en subcarpetas para el cálculo del uso del disco.
 
    >[!NOTE]
    >
    >El informe **[!UICONTROL Uso del disco]** no incluye campos de intervalo de fechas porque solo indica el uso actual del espacio en disco.
 
-   ![Página Detalles del informe Uso del disco](assets/disk_usage_configuration.png)
+   ![Página de detalles del informe Uso del disco](assets/disk_usage_configuration.png)
 
-   Al crear la variable **[!UICONTROL Archivos]** , puede incluir o excluir subcarpetas. Sin embargo, no puede incluir representaciones de recursos para este informe.
+   Al crear el **[!UICONTROL Archivos]** , puede incluir/excluir subcarpetas. Sin embargo, no puede incluir representaciones de recursos para este informe.
 
    ![Página de detalles del informe Archivos](assets/files_report.png)
 
    El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Las columnas no se pueden personalizar.
 
-   La variable **[!UICONTROL Compartir vínculos]** no incluye opciones para subcarpetas y representaciones porque solo publica las direcciones URL compartidas que aparecen en `/var/dam/share`.
+   El **[!UICONTROL Vínculos compartidos]** no incluye opciones para subcarpetas y representaciones porque solo publica las direcciones URL compartidas que aparecen en `/var/dam/share`.
 
-   ![Página de detalles del informe Compartir vínculos](assets/link_share.png)
+   ![Página de detalles del informe de vínculos compartidos](assets/link_share.png)
 
-1. Haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
+1. Clic **[!UICONTROL Siguiente]** en la barra de herramientas.
 
-1. En el **[!UICONTROL Configurar columnas]** , algunas columnas están seleccionadas para aparecer en el informe de forma predeterminada. Puede seleccionar más columnas. Cancelar la selección de una columna para excluirla en el informe.
+1. En el **[!UICONTROL Configurar columnas]** de forma predeterminada, algunas columnas están seleccionadas para aparecer en el informe. Puede seleccionar más columnas. Cancelar la selección de una columna para excluirla en el informe.
 
-   ![Seleccionar o cancelar la selección de columnas de informes](assets/configure_columns.png)
+   ![Seleccionar o cancelar la selección de columnas del informe](assets/configure_columns.png)
 
-   Para mostrar un nombre de columna personalizado o una ruta de propiedad, configure las propiedades del binario de recursos en la sección `jcr:content` en CRX. También puede agregarlo mediante el selector de rutas de propiedad.
+   Para mostrar un nombre de columna personalizado o una ruta de propiedad, configure las propiedades del binario de recursos en `jcr:content` en CRX. Como alternativa, agréguela mediante el selector de rutas de propiedades.
 
-   ![Seleccionar o cancelar la selección de columnas de informes](assets/custom_columns.png)
+   ![Seleccionar o cancelar la selección de columnas del informe](assets/custom_columns.png)
 
-1. Haga clic en **[!UICONTROL Crear]** en la barra de herramientas. Un mensaje notifica que se ha iniciado la generación del informe.
-1. En el [!UICONTROL Informes de recursos] , el estado de generación de informes se basa en el estado actual del trabajo del informe, por ejemplo [!UICONTROL Correcto], [!UICONTROL Error], [!UICONTROL En cola]o [!UICONTROL Programado]. El mismo estado aparece en la bandeja de entrada de notificaciones. Para ver la página del informe, haga clic en el vínculo del informe. También puede seleccionar el informe y hacer clic en **[!UICONTROL Ver]** en la barra de herramientas.
+1. Clic **[!UICONTROL Crear]** en la barra de herramientas. Un mensaje notifica que se ha iniciado la generación del informe.
+1. En el [!UICONTROL Informes de recursos] página, el estado de generación del informe se basa en el estado actual del trabajo de informe, por ejemplo [!UICONTROL Correcto], [!UICONTROL Error], [!UICONTROL En cola], o [!UICONTROL Programado]. El mismo estado aparece en la bandeja de entrada de notificaciones. Para ver la página del informe, haga clic en el vínculo del informe. También puede seleccionar el informe y hacer clic en **[!UICONTROL Ver]** en la barra de herramientas.
 
    ![Un informe generado](assets/report_page.png)
 
-   Haga clic en **[!UICONTROL Descargar]** en la barra de herramientas para descargar el informe en formato CSV.
+   Clic **[!UICONTROL Descargar]** en la barra de herramientas para descargar el informe en formato CSV.
 
    >[!NOTE]
    >
-   >Puede generar informes basados en los eventos generados durante los últimos 360 días. Experience Manager retiene los datos de ID de usuario durante 30 días.
+   >Puede generar informes basados en los eventos generados durante los últimos 360 días. El Experience Manager conserva los datos del ID de usuario durante 30 días.
 
-## Agregar columnas personalizadas a informes {#add-custom-columns}
+## Añadir columnas personalizadas a informes {#add-custom-columns}
 
-Puede agregar columnas personalizadas a los siguientes informes para mostrar más datos según sus necesidades personalizadas:
+Puede agregar columnas personalizadas a los siguientes informes para mostrar más datos para sus requisitos personalizados:
 
 <!-- Remove download report.
 * Upload
@@ -136,26 +136,26 @@ Puede agregar columnas personalizadas a los siguientes informes para mostrar má
 * [!DNL Brand Portal] publicación
 * Archivos
 
-Para agregar columnas personalizadas a estos informes, siga estos pasos:
+Para añadir columnas personalizadas a estos informes, siga estos pasos:
 
-1. En el [!DNL Manager interface], haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
+1. En el [!DNL Manager interface], haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Informes]**.
 1. En el [!UICONTROL Informes de recursos] página, haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
 
-1. En el **[!UICONTROL Crear informe]** , elija un informe para crear. Haga clic en **[!UICONTROL Siguiente]**.
+1. Desde el **[!UICONTROL Crear informe]** , elija un informe para crear. Haga clic en **[!UICONTROL Siguiente]**.
 
-1. Configure los detalles del informe, como título, descripción, miniatura, ruta de carpeta e intervalo de fechas, según corresponda. Haga clic en **[!UICONTROL Siguiente]**.
+1. Configure los detalles del informe, como título, descripción, miniatura, ruta de la carpeta e intervalo de fechas, según corresponda. Haga clic en **[!UICONTROL Siguiente]**.
 
-1. Seleccione la información aplicable de la lista de **[!UICONTROL Columnas predeterminadas]**. Para mostrar una columna personalizada, especifique el nombre de la columna debajo de **[!UICONTROL Columnas personalizadas]**.
+1. Seleccione la información aplicable de la lista de **[!UICONTROL Columnas predeterminadas]**. Para mostrar una columna personalizada, especifique el nombre de la columna en **[!UICONTROL Columnas personalizadas]**.
 
-   ![Especificar el nombre de la columna personalizada del informe](assets/custom_columns-1.png)
+   ![Especifique el nombre de la columna personalizada del informe](assets/custom_columns-1.png)
 
-1. Añada la ruta de la propiedad en la sección `jcr:content` en CRXDE usando el selector de rutas de propiedad. También puede escribir la ruta en el campo de ruta de la propiedad.
+1. Añada la ruta de la propiedad en `jcr:content` en CRXDE utilizando el selector de ruta de propiedad. También puede escribir la ruta en el campo de ruta de la propiedad.
 
-   ![Asignación de la ruta de la propiedad desde las rutas en jcr:content](assets/property_picker.png)
+   ![Asignar la ruta de la propiedad desde las rutas en jcr:content](assets/property_picker.png)
 
-   Para agregar más columnas personalizadas, haga clic en **[!UICONTROL Agregar]** y repita los pasos anteriores.
+   Para agregar más columnas personalizadas, haga clic en **[!UICONTROL Añadir]** y repita los pasos anteriores.
 
-1. Haga clic en **[!UICONTROL Crear]** en la barra de herramientas. Un mensaje notifica que se ha iniciado la generación del informe.
+1. Clic **[!UICONTROL Crear]** en la barra de herramientas. Un mensaje notifica que se ha iniciado la generación del informe.
 
 <!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
@@ -169,9 +169,9 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## Información sobre resolución de problemas {#tips-troubleshoot}
+## Información de resolución de problemas {#tips-troubleshoot}
 
-* Si la variable [!UICONTROL Informe de uso del disco] no genera y si está utilizando [!DNL Dynamic Media], asegúrese de que todos los recursos se procesan correctamente. Para resolverlo, vuelva a procesar los recursos y vuelva a generar el informe.
+* Si la variable [!UICONTROL Informe de uso del disco] no genera y si está utilizando [!DNL Dynamic Media], asegúrese de que todos los recursos se procesan correctamente. Para resolverlos, vuelva a procesar los recursos y genere el informe de nuevo.
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 

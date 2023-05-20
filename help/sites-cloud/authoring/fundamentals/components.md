@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -17,15 +17,15 @@ AEM incorpora una serie de componentes integrados que proporcionan una amplia fu
 
 >[!NOTE]
 >
->En esta sección solo se describen los componentes disponibles para su uso en una instalación estándar de AEM.
+>AEM En esta sección solo se describen los componentes que están disponibles de forma predeterminada en una instalación estándar de la instalación de la aplicación de la versión de la aplicación de la versión de la aplicación de.
 >
->En función de su instancia, puede disponer de componentes personalizados desarrollados explícitamente para sus necesidades. Pueden tener incluso el mismo nombre que algunos de los componentes mencionados aquí.
+>Según la instancia, puede tener componentes personalizados desarrollados explícitamente para sus necesidades. Pueden incluso tener el mismo nombre que algunos de los componentes mencionados aquí.
 
 ## Uso general   {#general-usage}
 
-Los componentes están disponibles en la ficha **Componentes** del panel lateral del editor de páginas al [editar una página](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Los componentes están disponibles en la **Componentes** del panel lateral del editor de páginas cuando [edición de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
-Es posible seleccionar un componente y arrastrarlo a la ubicación requerida en su página. A continuación, se puede editar mediante:
+Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la página. A continuación, puede editarlo mediante:
 
 * [Configurar propiedades](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * [Editar contenido](/help/sites-cloud/authoring/fundamentals/editing-content.md)

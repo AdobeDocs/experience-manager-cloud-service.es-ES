@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -61,9 +61,9 @@ Además de ver las anotaciones, el modo de anotación permite crear, editar, mov
 
    ![Adición de una anotación](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-   Aquí podrá utilizar el campo o icono apropiados para:
+   Aquí puede utilizar el campo o icono apropiado para lo siguiente:
 
-   * Especificar el texto de la anotación.
+   * Introduzca el texto de la anotación.
    * Crear un boceto (líneas y formas) para resaltar un área del componente.
 
       ![Botón Boceto de anotación](/help/sites-cloud/authoring/assets/annotation-sketch.png)

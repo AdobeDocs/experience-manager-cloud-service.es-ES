@@ -329,7 +329,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 El [intervalo de guardado automático](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) (medido en segundos) se puede definir mediante el administrador de configuración (ConfMgr):
 
 * Nodo: `<conf-root>/settings/dam/cfm/jcr:content`
-* Nombre de propiedad: `autoSaveInterval`
+* Nombre de la propiedad: `autoSaveInterval`
 * Tipo: `Long`
 
 * Predeterminado: `600` (10 minutos); se define en `/libs/settings/dam/cfm/jcr:content`
@@ -337,7 +337,7 @@ El [intervalo de guardado automático](/help/sites-cloud/administering/content-f
 Si desea establecer un intervalo de guardado automático de 5 minutos, debe definir la propiedad en el nodo; por ejemplo:
 
 * Nodo: `/conf/global/settings/dam/cfm/jcr:content`
-* Nombre de propiedad: `autoSaveInterval`
+* Nombre de la propiedad: `autoSaveInterval`
 
 * Tipo: `Long`
 

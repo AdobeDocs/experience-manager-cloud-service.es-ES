@@ -1,13 +1,13 @@
 ---
 title: Crear y usar temáticas
 description: Puede utilizar temáticas para aplicar estilo y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
-source-git-commit: ca61b72fd442cf50319861d5d8e6d23343056358
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 100%
 
 ---
-
 
 # Temáticas en formularios adaptables (componentes principales) {#themes-for-af-using-core-components}
 

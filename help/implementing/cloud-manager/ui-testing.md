@@ -23,9 +23,9 @@ La prueba de IU personalizada es una característica opcional que le permite cre
 
 AEM ofrece un conjunto integrado de [Puertas de calidad de Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantizar actualizaciones sin problemas en las aplicaciones personalizadas. En concreto, las puertas de pruebas de TI ya admiten la creación y automatización de pruebas personalizadas mediante las API de AEM.
 
-Las pruebas de IU se empaquetan en una imagen Docker para permitir una amplia variedad de idiomas y marcos (como Cypress.IO, Selenium, Java y Maven, y Javascript). Además, se puede generar fácilmente un proyecto de pruebas de IU mediante el uso del [arquetipo del proyecto de AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
+Las pruebas de interfaz de usuario se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress.IO, Selenium, Java y Maven, y Javascript). Además, se puede generar fácilmente un proyecto de pruebas de IU mediante el uso del [arquetipo del proyecto de AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 
-Adobe fomenta el uso de Cypress.IO, ya que ofrece recarga en tiempo real y espera automática, lo que ayuda a ahorrar tiempo y mejora la productividad durante las pruebas. Cypress.IO también proporciona una sintaxis simple e intuitiva, facilitando el aprendizaje y el uso, incluso para aquellos que son nuevos en probar.
+El Adobe fomenta el uso de Cypress.IO, ya que ofrece recarga en tiempo real y espera automática, lo que ayuda a ahorrar tiempo y mejora la productividad durante las pruebas. Cypress.IO también proporciona una sintaxis sencilla e intuitiva, lo que facilita el aprendizaje y el uso, incluso para aquellos que son nuevos en las pruebas.
 
 Las pruebas de la IU se ejecutan como parte de una puerta de calidad específica para cada canalización de Cloud Manager con una fase de [**Pruebas de IU personalizadas**](/help/implementing/cloud-manager/deploy-code.md) en [canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) u opcionalmente [canalizaciones que no sean de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Cualquier prueba de la interfaz de usuario, incluidas la regresión y las nuevas funcionalidades, permite detectar y notificar errores.
 
@@ -207,7 +207,7 @@ En esta sección se describen las convenciones que debe seguir la imagen de Dock
 
 Las siguientes variables de entorno se pasarán a la imagen de Docker en tiempo de ejecución, según el marco de trabajo.
 
-| Variable | Ejemplos | Descripción | Marco de pruebas |
+| Variable | Ejemplos | Descripción | Marco de prueba |
 |---|---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | La URL del servidor de Selenium | Solo selenio |
 | `SELENIUM_BROWSER` | `chrome` | La implementación del explorador que utiliza el servidor de Selenium | Solo selenio |
@@ -218,7 +218,7 @@ Las siguientes variables de entorno se pasarán a la imagen de Docker en tiempo 
 | `AEM_PUBLISH_USERNAME` | `admin` | El nombre de usuario para iniciar sesión en la instancia de publicación de AEM | Todos |
 | `AEM_PUBLISH_PASSWORD` | `admin` | La contraseña para iniciar sesión en la instancia de publicación de AEM | Todos |
 | `REPORTS_PATH` | `/usr/src/app/reports` | La ruta en la que se debe guardar el informe XML de los resultados de la prueba | Todos |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | La URL donde se debe cargar el archivo a para que sea accesible para el marco de pruebas | Todos |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | Dirección URL donde debe cargarse el archivo para que sea accesible para el marco de prueba | Todos |
 
 Las muestras de prueba de Adobe proporcionan funciones de ayuda para acceder a los parámetros de configuración:
 
@@ -289,24 +289,24 @@ Las pruebas a veces deben cargar archivos en la aplicación que se está proband
 >
 >Para ejecutar las pruebas funcionales desde el equipo local, cree un usuario con permisos de tipo administrador para lograr el mismo comportamiento.
 
-1. La infraestructura contenedorizada que se contempla para las pruebas funcionales está limitada por los siguientes límites:
+1. La infraestructura en contenedores con ámbitos para las pruebas funcionales está limitada por los límites siguientes:
 
 | Tipo | Valor | Descripción |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 2.0 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
 | Memoria | 1Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes |
-| Tiempo de espera | 30m | Duración tras la cual se terminará la prueba. |
+| Tiempo de espera | 30m | La duración tras la cual finalizará la prueba. |
 | Duración recomendada | 15m | Se recomienda escribir las pruebas para que no tarden más de este tiempo. |
 
 >[!NOTE]
 >
-> Si necesita más recursos, cree un caso del Servicio de atención al cliente y describa su caso de uso; nuestro equipo revisará su solicitud y le proporcionará la asistencia adecuada.
+> Si necesita más recursos, cree un caso de servicio de atención al cliente y describa su caso de uso; nuestro equipo revisará su solicitud y proporcionará la asistencia adecuada.
 
 
 ## Ejecución de pruebas de IU locales {#run-ui-tests-locally}
 
-Antes de activar las pruebas de IU en una canalización de Cloud Manager, se recomienda ejecutar las pruebas de IU localmente en la [SDK as a Cloud Service AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-o frente a una instancia as a Cloud Service AEM real.
+Antes de activar pruebas de interfaz de usuario en una canalización de Cloud Manager, se recomienda ejecutar las pruebas de interfaz de usuario localmente en la canalización [AEM SDK as a Cloud Service de](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+AEM o contra una instancia as a Cloud Service real de la.
 
 ### Muestra de prueba de JavaScript {#javascript-sample}
 

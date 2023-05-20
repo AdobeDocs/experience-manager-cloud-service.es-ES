@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2020.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2020.10.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.10.0."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '1197'
-ht-degree: 29%
+ht-degree: 30%
 
 ---
 
@@ -118,7 +118,7 @@ Consulte [Entorno de visualización](/help/implementing/cloud-manager/manage-env
 
 ## Herramienta de transferencia de contenido {#content-transfer-tool}
 
-Obtenga más información sobre novedades y actualizaciones de [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Versión v1.1.12.
+Obtenga más información sobre novedades y actualizaciones de [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang?es) Versión v1.1.12.
 
 ### Novedades {#what-is-new-ctt}
 

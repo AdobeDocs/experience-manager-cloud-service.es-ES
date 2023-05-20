@@ -5,7 +5,7 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
@@ -47,7 +47,7 @@ Los datos dinámicos, como el precio o el inventario no se almacenan en la cach�
 
 ## AEM AEM 9. ¿Cómo funciona la invalidación de caché para Dispatcher de la con los recursos de comercio y de comercio de Dispatcher?
 
-Se recomienda configurar la invalidación de caché basada en TTL para las páginas almacenadas en caché de Dispatcher. Para obtener información dinámica como precio o acciones, se recomienda procesar los datos del lado del cliente. Para obtener más información sobre la invalidación de caché basada en TTL, consulte [Optimizar la caché de Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) y [AEM Optimización del rendimiento](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
+Se recomienda configurar la invalidación de caché basada en TTL para las páginas almacenadas en caché de Dispatcher. Para obtener información dinámica como precio o acciones, se recomienda procesar los datos del lado del cliente. Para obtener más información sobre la invalidación de caché basada en TTL, consulte [Optimizar la caché de Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=es) y [AEM Optimización del rendimiento](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
 ## 10. ¿Existe alguna recomendación sobre la búsqueda unificada en los contenidos de AEM con Comercio?
 

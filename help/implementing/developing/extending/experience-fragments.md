@@ -5,7 +5,7 @@ exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
 workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 ## Conceptos básicos {#the-basics}
 
-Un [fragmento de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) es un grupo de uno o varios componentes que incluye contenido y diseño que se puede consultar dentro de las páginas.
+Un [Fragmento de experiencia](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) es un grupo de uno o más componentes, incluido el contenido y el diseño, al que se puede hacer referencia en las páginas.
 
 Un fragmento de experiencia principal o variante utiliza:
 
@@ -111,7 +111,7 @@ La única configuración adicional es garantizar que los componentes estén perm
 The only additional configuration is to ensure that the components are [allowed on the template, this is achieved with the Content Policy](/help/sites-developing/page-templates-editable.md#content-policies).
 -->
 
-## El proveedor de la reescritura de los vínculos de los fragmentos de experiencia: HTML {#the-experience-fragment-link-rewriter-provider-html}
+## El proveedor de reescritura de vínculos de fragmentos de experiencia: HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 AEM En tiene la posibilidad de crear Fragmentos de experiencias. Un fragmento de experiencia:
 

@@ -95,7 +95,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Descripción</li>
     </ul> 
    </td>
@@ -106,7 +106,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Marcador de posición</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Descripción</li>
     </ul> 
    </td>
@@ -128,7 +128,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Descripción</li>
     </ul> 
    </td>
@@ -139,7 +139,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Marcador de posición</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Profundidad de la propiedad</li>
      <li>Descripción</li>
     </ul> </td>
@@ -151,7 +151,7 @@ Los siguientes predicados están disponibles, según la configuración:
     <ul>
      <li>Etiqueta de campo</li>
      <li>Marcador de posición</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Texto de intervalo (desde)*</li>
      <li>Texto de intervalo (hasta)*</li>
      <li>Descripción</li>
@@ -163,7 +163,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -173,7 +173,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Ruta de opción</li>
      <li>Descripción</li>
     </ul> </td>
@@ -184,7 +184,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li> 
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Ruta de tipo MIME</li>
      <li>Descripción</li>
     </ul> 
@@ -196,7 +196,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Marcador de posición</li>
-     <li>Nombre de propiedad</li>
+     <li>Nombre de la propiedad</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -214,7 +214,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>Un filtro de propiedad y valor, no visible para el usuario.</td>
    <td>
     <ul>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Valor de propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
@@ -246,7 +246,7 @@ Los siguientes predicados están disponibles, según la configuración:
     <ul>
      <li>Etiqueta de campo</li>
      <li>Marcador de posición</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Compatibilidad con el delimitador</li>
      <li>Delimitadores de entrada</li>
      <li>Ignorar mayúsculas y minúsculas</li>
@@ -260,7 +260,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Una sola selección</li>
      <li>Agregar opciones</li>
      <li>Manual</li>
@@ -268,12 +268,12 @@ Los siguientes predicados están disponibles, según la configuración:
     </ul> </td>
   </tr>
   <tr>
-   <td>Propiedad Options</td>
+   <td>Opciones Propiedad</td>
    <td>Busque una o más propiedades de la opción.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Ruta del nodo de opciones</li>
      <li>Profundidad de la propiedad</li>
      <li>Una sola selección</li>
@@ -329,7 +329,7 @@ Los siguientes predicados están disponibles, según la configuración:
     <ul>
      <li>Etiqueta de campo</li>
      <li>Marcador de posición</li>
-     <li>Nombre de propiedad</li>
+     <li>Nombre de la propiedad</li>
      <li>Búsqueda parcial</li>
      <li>Ignorar mayúsculas y minúsculas</li>
      <li>Descripción</li>
@@ -342,7 +342,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -352,7 +352,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -362,7 +362,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Ruta de opción</li>
      <li>Descripción</li>
     </ul> </td>
@@ -373,7 +373,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Fecha relativa</li>
      <li>Descripción</li>
     </ul> </td>
@@ -384,7 +384,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Ruta del nodo de opciones</li>
      <li>Descripción</li>
     </ul> </td>
@@ -406,7 +406,7 @@ Los siguientes predicados están disponibles, según la configuración:
     <ul>
      <li>Lavel de campo</li>
      <li>Marcador de posición</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Mostrar la opción de hacer coincidir todas las etiquetas</li>
      <li>Ruta de etiquetas raíz</li>
      <li>Descripción</li>
@@ -418,7 +418,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Marcador de posición</li>
-     <li>Nombre de propiedad*</li>
+     <li>Nombre de la propiedad*</li>
      <li>Descripción</li>
     </ul> 
    </td>

@@ -1,6 +1,6 @@
 ---
 title: La herramienta Copia de contenido
-description: La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción as a Cloud Service AEM a entornos más bajos con fines de prueba.
+description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción as a Cloud Service de la a entornos más bajos para realizar pruebas.
 source-git-commit: 4a5470ae8fe5a8e7f615009bf5f6b180aee4669b
 workflow-type: tm+mt
 source-wordcount: '1212'
@@ -11,13 +11,13 @@ ht-degree: 64%
 
 # La herramienta Copia de contenido {#content-copy}
 
-La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción as a Cloud Service AEM a entornos más bajos con fines de prueba.
+AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción as a Cloud Service de la a entornos más bajos para realizar pruebas.
 
 ## Introducción {#introduction}
 
-Los datos actuales y reales son valiosos para las pruebas, la validación y la aceptación de usuarios. La herramienta de copia de contenido le permite copiar contenido de un entorno de AEM de producción a un entorno de ensayo, desarrollo o [Entorno de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) entorno para dichas pruebas.
+Los datos actuales y reales son valiosos para las pruebas, la validación y la aceptación de usuarios. AEM La herramienta de copia de contenido le permite copiar contenido de un entorno de producción a un entorno de ensayo, desarrollo o distribución de contenido (). [Entorno de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) entorno para dichas pruebas.
 
-El contenido que se va a copiar se define mediante un conjunto de contenido. Un conjunto de contenido consta de una lista de rutas JCR que contienen el contenido mutable que se copiará de un entorno de servicio de creación de origen a un entorno de servicio de creación de destino dentro del mismo programa de Cloud Manager. Se permiten las siguientes rutas en un conjunto de contenido.
+El contenido que se va a copiar se define mediante un conjunto de contenido. Un conjunto de contenido consiste en una lista de rutas JCR que contienen el contenido mutable que se va a copiar de un entorno de servicio de creación de origen a un entorno de servicio de creación de destino dentro del mismo programa de Cloud Manager. Se permiten las siguientes rutas en un conjunto de contenido.
 
 ```text
 /content
@@ -36,14 +36,14 @@ Al copiar contenido, el entorno de origen es la fuente de información.
 
 Para utilizar la herramienta de copia de contenido, se necesitan determinados permisos tanto en los entornos de origen como de destino.
 
-| Función de copia de contenido | AEM grupo de administradores | Función Administrador de implementación |
+| Función de copia de contenido | AEM Grupo de administradores de | Función Administrador de implementación |
 |---|---|---|
 | Crear y modificar [conjuntos de contenido](#create-content-set) | Requerido | No necesario |
 | Iniciar o cancelar el [proceso de copia de contenido](#copy-content) | Requerido | Requerido |
 
 ## Creación de un conjunto de contenido {#create-content-set}
 
-Para poder copiar contenido, debe definirse un conjunto de contenido. Una vez definidos, los conjuntos de contenido se pueden reutilizar para copiar contenido. Siga estos pasos para crear un conjunto de contenido.
+Antes de poder copiar cualquier contenido, se debe definir un conjunto de contenido. Una vez definidos, los conjuntos de contenido se pueden reutilizar para copiar contenido. Siga estos pasos para crear un conjunto de contenido.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -64,7 +64,7 @@ Para poder copiar contenido, debe definirse un conjunto de contenido. Una vez de
    1. Introduzca la ruta en el campo **Añadir ruta de inclusión**.
    1. Pulse o haga clic en el botón **Añadir ruta** para agregar la ruta al conjunto de contenido.
    1. Pulse o haga clic de nuevo en el botón **Añadir ruta** cuando sea necesario.
-      * Se permiten hasta cincuenta trayectos.
+      * Se permiten hasta cincuenta rutas.
 
    ![Añadir rutas al conjunto de contenido](assets/add-content-set-paths.png)
 
@@ -96,7 +96,7 @@ Siga los mismos pasos que para la creación de un paso de contenido. En lugar de
 
 ![Editar conjunto de contenido](assets/edit-content-set.png)
 
-Tenga en cuenta que, al editar su conjunto de contenido, es posible que tenga que expandir las rutas configuradas para mostrar las subrutas excluidas.
+Tenga en cuenta que al editar el conjunto de contenido, es posible que tenga que expandir las rutas configuradas para mostrar las subrutas excluidas.
 
 ## Copia de contenido {#copy-content}
 
@@ -118,7 +118,7 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
    >
    >* El usuario no tiene los permisos adecuados.
    >* El entorno tiene una canalización en ejecución o una operación de copia de contenido en curso.
-   >* El entorno está hibernando o iniciando.
+   >* El entorno está hibernando o iniciándose.
 
 
 1. En el diálogo **Copiar contenido**, especifique el origen y el destino de la acción de copia de contenido.
@@ -128,7 +128,7 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
    * El contenido solo se puede copiar de un entorno superior a un entorno inferior o entre entornos de desarrollo/RDE donde la jerarquía de entornos es la siguiente (de mayor a menor):
       * Producción
       * Ensayo
-      * Desarrollo/RDE
+      * Desarrollo / RDE
 
 1. Si es necesario, también puede elegir **Incluir listas de control de acceso** en el proceso de copia.
 
@@ -163,15 +163,15 @@ Una vez que empiece a copiar contenido, el proceso puede tener uno de los siguie
 
 Si necesita cancelar una operación de copia de contenido después de iniciarla, tiene la opción de cancelarla.
 
-Para ello, en la **Copiar actividad de contenido** seleccione **Cancelar** acción del menú elipsis del proceso de copia iniciado anteriormente.
+Para ello, en la **Copiar actividad de contenido** , seleccione la **Cancelar** acción del menú de los tres puntos del proceso de copia iniciado anteriormente.
 
 ![Cancelar copia de contenido](assets/content-copy-cancel.png)
 
 >[!NOTE]
 >
->Al cancelar una operación de copia de contenido, puede resultar en una copia parcial del contenido en el entorno de destino. Esto puede dejar el entorno de destino en un estado no utilizable.
+>Al cancelar una operación de copia de contenido, puede resultar en una copia parcial del contenido en el entorno de destino. Esto puede dejar el entorno de destino en un estado inutilizable.
 >
->Si su entorno se encuentra en un estado de este tipo debido a una cancelación, póngase en contacto con el Servicio de atención al cliente de Adobe para obtener ayuda.
+>Si su entorno está en ese estado debido a la cancelación, póngase en contacto con el Servicio de atención al cliente de Adobe para obtener ayuda.
 
 ## Restricciones {#limitations}
 
@@ -184,5 +184,5 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * Se pueden especificar hasta cincuenta rutas por cada conjunto de contenido. No hay limitación en las rutas excluidas.
 * La herramienta de copia de contenido no debe utilizarse como una herramienta de clonación o reflejo, ya que no puede rastrear el contenido movido o eliminado del origen.
 * La herramienta de copia de contenido no tiene capacidad de creación de versiones y no puede detectar automáticamente contenido modificado o recién creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
-   * Si desea actualizar el entorno de destino con cambios de contenido solo desde la última operación de copia de contenido, debe crear un conjunto de contenido y especificar las rutas en la instancia de origen en la que se realizaron cambios desde la última operación de copia de contenido.
+   * Si desea actualizar el entorno de destino con cambios de contenido solo desde la última operación de copia de contenido, debe crear un conjunto de contenido y especificar las rutas en la instancia de origen donde se realizaron los cambios desde la última operación de copia de contenido.
 * La información de la versión no se incluye en una copia de contenido.

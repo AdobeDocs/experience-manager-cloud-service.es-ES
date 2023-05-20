@@ -85,7 +85,7 @@ Para que las bibliotecas de cliente en `/apps` para que sea accesible, se utiliz
    * Múltiple: seleccionado
 1. Para que las bibliotecas de cliente sean accesibles mediante proxy en `/etc.clientlibs`, seleccione la `cq:ClientLibraryFolder` , agregue la siguiente propiedad y haga clic en **Guardar todo**:
    * Nombre: `allowProxy`
-   * Tipo: Boolean (booleano)
+   * Tipo: booleano
    * Valor: `true`
 1. Si necesita administrar recursos estáticos, cree una subcarpeta denominada `resources` debajo de la carpeta de la biblioteca del cliente.
    * Si almacena recursos estáticos en cualquier lugar que no sea la carpeta `resources`Sin embargo, no se puede hacer referencia a ellas en una instancia de publicación.

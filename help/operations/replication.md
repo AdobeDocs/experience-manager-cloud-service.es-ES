@@ -21,11 +21,11 @@ Adobe Experience Manager as a Cloud Service utiliza la capacidad [Distribución 
 
 >[!NOTE]
 >
->Si está interesado en la publicación masiva de contenido, utilice el [Flujo de trabajo del árbol de contenido de publicación](#publish-content-tree-workflow).
->Este paso del flujo de trabajo se ha creado específicamente para el Cloud Service y puede gestionar de forma eficaz las cargas útiles de gran tamaño.
->No se recomienda crear su propio código personalizado de publicación masiva.
->Si necesita personalizar por cualquier razón, puede almacenar en déclencheur este paso de flujo de trabajo o flujo de trabajo mediante las API de flujo de trabajo existentes.
->Aunque siempre es recomendable publicar solo contenido que deba publicarse y tener cuidado de no intentar publicar un gran número de contenido si no es necesario, no hay límites en cuanto a la cantidad de contenido que puede enviar a través del flujo de trabajo del árbol de contenido de publicación.
+>Si le interesa publicar contenido por lotes, utilice el [Flujo de trabajo Publicar árbol de contenido](#publish-content-tree-workflow).
+>Este paso del flujo de trabajo está diseñado específicamente para Cloud Service y puede gestionar de forma eficaz grandes cargas útiles.
+>No se recomienda crear su propio código personalizado de publicación en lotes.
+>Si necesita personalizar por algún motivo, puede almacenar en déclencheur este paso de flujo de trabajo/flujo de trabajo mediante las API de flujo de trabajo existentes.
+>Aunque siempre es una buena práctica publicar únicamente contenido que debe publicarse y ser prudente al no intentar publicar una gran cantidad de contenido si no es necesario, no hay límites en cuanto a la cantidad de contenido que puede enviar a través del flujo de trabajo Publicar árbol de contenido.
 
 ### Cancelación/publicación rápida: cancelación/publicación planeada {#publish-unpublish}
 
@@ -70,7 +70,7 @@ También puede conseguirlo creando un modelo de flujo de trabajo que utilice el 
    ![Etapa del proceso](/help/operations/assets/processstep.png)
 
 1. Haga clic en el paso Proceso del flujo y seleccione **Configurar** pulsando el icono de la llave inglesa
-1. Haga clic en la pestaña **Proceso** y seleccione `Publish Content Tree` en la lista desplegabley, a continuación, marque la **Avance del controlador** casilla de verificación
+1. Haga clic en la pestaña **Proceso** y seleccione `Publish Content Tree` en la lista desplegable, luego marque la **Avance del controlador** casilla de verificación
 
    ![Activación mediante árbol](/help/operations/assets/newstep.png)
 
@@ -92,7 +92,7 @@ También puede conseguirlo creando un modelo de flujo de trabajo que utilice el 
 * `enableVersion` (valor booleano, predeterminado: `true`). Este parámetro determina si se crea una nueva versión tras la replicación.
 * `agentId` (valor de cadena, de forma predeterminada significa que solo se utilizan agentes para la publicación). Se recomienda ser explícito sobre agentId; por ejemplo, si se establece el valor: publicar. Configuración del agente en `preview` se publicará en el servicio de previsualización
 * `filters` (valor de cadena, predeterminado significa que todas las rutas están activadas). Los valores disponibles son los siguientes:
-   * `onlyActivated` - Activar solo las páginas que (ya) están activadas. Actúa como una forma de reactivación.
+   * `onlyActivated` - activar solo las páginas que (ya) se han activado. Actúa como una forma de reactivación.
    * `onlyModified` activar solo las rutas que ya están activadas y que tienen una fecha de modificación posterior a la fecha de activación.
    * Lo anterior puede ser ORed con una barra vertical &quot;|&quot;. Por ejemplo, `onlyActivated|onlyModified`.
 
@@ -182,7 +182,7 @@ El conjunto `ReplicationStatus` de un recurso solo se modifica si la acción de 
 
 ### Métodos de invalidación de contenido {#invalidating-content}
 
-Puede invalidar el contenido directamente utilizando la Invalidación de contenido de Sling (SCD) del autor (el método preferido) o utilizando la API de replicación para invocar el agente de replicación de vaciado del despachante de publicación. Consulte la [Almacenamiento en caché](/help/implementing/dispatcher/caching.md) para obtener más información.
+Puede invalidar contenido directamente utilizando Invalidación de contenido de Sling (SCD) del autor (el método preferido) o utilizando la API de replicación para invocar el agente de replicación de vaciado del despachante de publicación. Consulte la [Almacenamiento en caché](/help/implementing/dispatcher/caching.md) para obtener más información.
 
 **Límites de capacidad de la API de replicación**
 

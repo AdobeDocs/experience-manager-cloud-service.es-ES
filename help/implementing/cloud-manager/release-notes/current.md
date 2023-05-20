@@ -21,15 +21,15 @@ Esta página documenta las notas de la versión 2023.5.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de Cloud Manager 2023.5.0 en AEM as a Cloud Service es el 11 de mayo de 2023. La próxima versión está planificada para el 8 de junio de 2023.
+AEM La fecha de lanzamiento de la versión 2023.5.0 de Cloud Manager en la versión as a Cloud Service de es el 11 de mayo de 2023. La próxima versión está planificada para el 8 de junio de 2023.
 
 ## Novedades {#what-is-new}
 
-* La compatibilidad con las pruebas de productos, funcionales y de interfaz de usuario se ha ampliado a [pruebas de canalización que no sean de producción.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-* Además de habilitar las pruebas de subida, [La compatibilidad con las pruebas de IU se ha ampliado a las pruebas de Cypress.](/help/implementing/cloud-manager/ui-testing.md)
-* [Copia de contenido de autoservicio](/help/implementing/developing/tools/content-copy.md) ya está disponible de un entorno superior a uno inferior mediante la interfaz de usuario de Cloud Manager.
-* El paso de validación de la ejecución de la canalización se ha mejorado para validar el estado de las colas de replicación al principio del proceso de ejecución. Esto garantiza que los pasos de implementación no se vean afectados por colas bloqueadas que los usuarios administradores de AEM deben solucionar directamente en el entorno de creación.
+* La compatibilidad con las pruebas de productos, funciones e IU se ha ampliado a [prueba de canalización que no sea de producción.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+* Además de habilitar las pruebas en orden ascendente, [La compatibilidad con las pruebas de IU se ha ampliado a las pruebas de Cypress.](/help/implementing/cloud-manager/ui-testing.md)
+* [Copia de contenido de autoservicio](/help/implementing/developing/tools/content-copy.md) ahora está disponible desde un entorno superior a uno inferior a través de la IU de Cloud Manager.
+* El paso de validación de ejecución de canalización se ha mejorado para validar el estado de las colas de replicación al principio del proceso de ejecución. AEM Esto garantiza que los pasos de implementación no se vean afectados por colas bloqueadas que los usuarios administradores deben abordar directamente desde el entorno de creación de informes.
 
 ## Correcciones de errores {#bug-fixes}
 
-* La creación del entorno ya no falla cuando se utilizan caracteres multibyte en el nombre del entorno.
+* La creación del entorno ya no falla cuando se utilizan caracteres de bytes múltiples en el nombre del entorno.

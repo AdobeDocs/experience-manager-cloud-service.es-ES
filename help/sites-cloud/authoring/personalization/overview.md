@@ -5,7 +5,7 @@ exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
 workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -117,8 +117,8 @@ AEM proporciona el motor de segmentación integrado de [ContextHub](/help/implem
 
 El motor de segmentación de [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) provoca que la información recopilada de las visitas a la página sean rastreadas en Adobe Target.
 
-* Al utilizar este motor de targeting, usa los segmentos que importe de Adobe Target para definir audiencias para las experiencias.
-* Las actividades que usan el motor de targeting de Adobe Target [se sincronizan con Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* Al utilizar este motor de segmentación, se usan los segmentos importados de Adobe Target para definir las audiencias de las experiencias.
+* Las actividades que utilizan el motor de Adobe Target son [sincronizado con Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 Puede utilizar este motor cuando se haya [integrado con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 

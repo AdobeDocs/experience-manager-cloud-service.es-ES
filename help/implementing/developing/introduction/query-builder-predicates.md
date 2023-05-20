@@ -375,7 +375,7 @@ No admite la extracción de facetas.
 * **`lang`** : para buscar solo en un determinado título de etiqueta localizado (por ejemplo, `de`)
 * **`all`** : valor booleano para buscar texto completo de la etiqueta completa, es decir, todos los títulos, descripción, etc. (tiene prioridad sobre `lang`)
 
-### type {#type}
+### tipo {#type}
 
 Este predicado restringe los resultados a un tipo de nodo JCR específico, tanto tipos de nodo principal como tipos de mezcla. También se encuentran subtipos de ese tipo de nodo. Tenga en cuenta que los índices de búsqueda del repositorio deben cubrir los tipos de nodo para una ejecución eficaz.
 

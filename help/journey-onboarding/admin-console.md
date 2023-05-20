@@ -105,7 +105,7 @@ Está listo para continuar con su recorrido de incorporación aprendiendo a [asi
 
 ## Recursos adicionales {#additional-resources}
 
-Los siguientes son recursos adicionales y opcionales si desea ir más allá del contenido del recorrido de incorporación.
+Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
 * [Información general de Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html): Una visión general de Admin Console
 * [Crear o actualizar su Adobe ID](https://helpx.adobe.com/es/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID): Obtenga información sobre cómo crear un Adobe ID, cambiarla y administrar varios Adobe ID.

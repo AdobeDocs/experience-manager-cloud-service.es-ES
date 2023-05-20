@@ -1,11 +1,11 @@
 ---
 title: Crear una página para dispositivos móviles
-description: Al crear un elemento para móvil, puede cambiar entre varios emuladores para ver qué es lo que verá el usuario final
+description: Al crear para móviles, puede cambiar entre varios emuladores para ver lo que ve el usuario final
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 100%
+ht-degree: 65%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 100%
 
 Las páginas de Adobe Experience Manager se basan en un diseño adaptable. [El diseño adapta el contenido para que se ajuste automáticamente al dispositivo de destino, lo que elimina la necesidad de crear contenido específico para diferentes dispositivos.](/help/sites-cloud/authoring/features/responsive-layout.md)
 
-Cuando se crea una página móvil, esta se muestra de un modo que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que verá el usuario final al acceder a la página.
+Al crear una página móvil, esta se muestra de forma que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que ve el usuario final al acceder a la página.
 
-Los dispositivos se agrupan en las categorías característica, inteligente y táctil, según las capacidades de los dispositivos para procesar una página. Cuando el usuario final accede a una página para móvil, AEM detecta el dispositivo y envía la representación correspondiente al grupo de dispositivos.
+Los dispositivos se agrupan en las categorías característica, inteligente y táctil, según las capacidades de los dispositivos para procesar una página. AEM Cuando el usuario final accede a una página móvil, detecta el dispositivo y envía la representación que corresponde a su grupo de dispositivos.
 
 >[!NOTE]
 >
->Para crear un sitio para móvil según un sitio estándar existente, cree una Live Copy del sitio estándar. Consulte [Creación de Live Copies.](/help/sites-cloud/administering/msm/creating-live-copies.md)
+>Para crear un sitio móvil basado en un sitio estándar existente, cree una Live Copy del sitio estándar. Consulte [Creación de Live Copies.](/help/sites-cloud/administering/msm/creating-live-copies.md)
 >
 >Los desarrolladores de AEM pueden crear nuevos grupos de dispositivos. Consulte Crear filtros de grupo de dispositivos.
 

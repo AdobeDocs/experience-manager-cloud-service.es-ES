@@ -175,7 +175,7 @@ En función de los puntos de datos recopilados (ver arriba), puede crear un plan
 
 La siguiente tabla ilustra un plan de migración típico:
 
-| Iteración de migración | Fecha de inicio | Fecha de finalización estimada | Dependencias | Duración estimada (en días) | Detalles adicionales / Elementos de acción |
+| Iteración de migración | Fecha inicial | Fecha de finalización estimada | Dependencias | Duración estimada (en días) | Detalles adicionales / Elementos de acción |
 |---|---|---|---|---|---|
 | PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |  |  |  |  |  |
 | PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |  |  |  |  |  |

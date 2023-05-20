@@ -5,7 +5,7 @@ exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 19%
+ht-degree: 1%
 
 ---
 
@@ -21,8 +21,8 @@ Este documento le ayuda a comprender cómo asignar un canal a una pantalla, una 
 
 Antes de realizar los pasos siguientes para asignar un canal a una pantalla, debe haber terminado el aprendizaje:
 
-* Crear y administrar visualizaciones
-* Crear y administrar canales
+* Creación y administración de pantallas
+* Creación y administración de canales
 
 ## Pasos para asignar un canal a una pantalla {#assign-channel-to-display}
 
@@ -42,7 +42,7 @@ Siga los pasos a continuación para asignar un canal a una visualización:
    1. Elija la prioridad.
 
       >[!NOTE]
-      >La prioridad se utiliza para solicitar las asignaciones en caso de que varias de ellas coincidan con los criterios de reproducción. Aquel elemento que tenga el valor más alto siempre tendrá prioridad sobre otros valores más bajos. Por ejemplo, si hay dos canales A y B, y A tiene una prioridad de 1 y B tiene una prioridad de 2, se muestra el canal B ya que tiene mayor prioridad que A.
+      >La prioridad se usa para ordenar las asignaciones en caso de que varias coincidan con los criterios de reproducción. El que tenga el valor más alto siempre tendrá prioridad sobre los valores más bajos. Por ejemplo, si hay dos canales, A y B. A tiene una prioridad de 1 y B tiene una prioridad de 2. A continuación, se muestra el canal B, ya que tiene una prioridad mayor que A.
    1. Seleccione la fecha de inicio y la fecha de finalización desde **Activation**.
 
 1. Haga clic en **+ Agregar periodicidad** para añadir una programación de periodicidad para el canal.

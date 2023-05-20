@@ -33,7 +33,7 @@ Si desea saber cómo recomienda Adobe resolver los casos de sitios comerciales c
 
 ## Audiencia {#audience}
 
-Este recorrido está diseñado para el autor de contenido de Commerce de AEM. Este recorrido describe los requisitos, pasos y enfoques para la introducción y la gestión de las páginas del catálogo, las plantillas y las experiencias de producto completas.
+Este recorrido está diseñado para el autor de contenido de AEM Commerce. Este recorrido describe los requisitos, pasos y enfoques para la introducción y la gestión de las páginas del catálogo, las plantillas y las experiencias de producto completas.
 
 Por supuesto, la información de este recorrido puede ser útil para otras personas, pero parte de la información puede ser superflua para otras en diferentes roles. Manténgase atento a recorridos futuros que cubran funciones adicionales.
 

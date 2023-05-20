@@ -144,7 +144,7 @@ Si le interesa cómo acceden y usan AEM as a Cloud Service los autores de conten
 
 ## Recursos adicionales {#additional-resources}
 
-Los siguientes son recursos adicionales y opcionales si desea ir más allá del contenido del recorrido de incorporación.
+Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
 * [Acceder a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md): Obtenga información sobre cómo acceder y administrar su repositorio de Git mediante la administración de cuentas de Git de autoservicio desde Cloud Manager.
 * [Uso de Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md): Aprenda a utilizar los repositorios de Git de Cloud Manager y a integrar su propio repositorio de Git administrado por los clientes con Cloud Manager.

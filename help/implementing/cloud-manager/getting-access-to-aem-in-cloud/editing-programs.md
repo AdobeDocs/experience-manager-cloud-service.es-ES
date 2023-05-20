@@ -53,7 +53,7 @@ Siga estos pasos para editar un programa.
    ![Editar la configuración de go-live](assets/edit-program-go-live.png)
 
    * Esta fecha es solo para uso informativo y activa el widget Go Live en la página de descripción general del programa para proporcionar vínculos internos del producto a la documentación de prácticas recomendadas de AEM as a Cloud Service de forma oportuna para que se ajuste a su recorrido y que culmine en una experiencia Go Live correcta y sin problemas.
-   * Esta pestaña no está disponible para programas de simulación de pruebas.
+   * Esta pestaña no está disponible para programas de zonas protegidas.
 
 1. Haga clic en **Actualizar** para guardar los cambios en el programa.
 

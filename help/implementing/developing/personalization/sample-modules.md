@@ -54,7 +54,7 @@ Configure el módulo de la interfaz de usuario contexthub.base mediante un objet
    * radio
 * **popTemplate:** Una plantilla Handlebars que especifica el contenido que se procesará en la ventana emergente cuando se haga clic en el módulo UI. Si incluye este elemento, no incluya la variable `list` elemento.
 
-### Ejemplo {#example}
+### Ejemplos {#example}
 
 El siguiente ejemplo configura una c`ontexthub.base` Módulo de interfaz de usuario para mostrar información de un [contexthub.emulators](sample-stores.md#granite-emulators-sample-store-candidate) tienda. El `template` Este elemento muestra cómo obtener datos del almacén utilizando la clave que el `storeMapping` el artículo establece.
 

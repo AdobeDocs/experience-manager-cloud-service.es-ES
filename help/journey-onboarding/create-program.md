@@ -53,11 +53,11 @@ Siga estos pasos para crear un programa de zona protegida.
 
    ![Página de aterrizaje de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. En el asistente crear programa, seleccione **Configuración de un simulador para pruebas** y proporcione un nombre de programa y toque o haga clic en **Continuar**.
+1. En el asistente Crear programa, seleccione **Configuración de una zona protegida** y proporcione un nombre de programa y toque o haga clic en **Continuar**.
 
    ![Creación de tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. En el **Configuración del simulador para pruebas** , puede elegir las soluciones que desea habilitar en el programa de simulación de pruebas. La variable **Sitios** y **Recursos** las soluciones siempre se incluyen en los programas de entornos limitados y se seleccionan automáticamente. Esto es suficiente para nuestro ejemplo de incorporación. Haga clic en **Crear**.
+1. En el **Configurar la zona protegida** , puede elegir qué soluciones desea habilitar en el programa de zona protegida. El **Sites** y **Assets** las soluciones de siempre se incluyen en los programas de zonas protegidas y se seleccionan automáticamente. Esto es suficiente para nuestro ejemplo de incorporación. Haga clic en **Crear**.
 
    ![Selección de soluciones](assets/set-up-sandbox-onboarding.png)
 
@@ -73,7 +73,7 @@ Ahora que se ha creado el primer programa, puede crear entornos para él. Debe c
 
 ## Recursos adicionales {#additional-resources}
 
-Los siguientes son recursos adicionales y opcionales si desea ir más allá del contenido del recorrido de incorporación.
+Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
 * [Programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): obtenga información sobre la jerarquía de Cloud Manager y cómo encajan los distintos tipos de programas en su estructura y cómo difieren.
 * [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md): aprenda a utilizar Cloud Manager para crear su propio programa de zona protegida para formación, demostración, POC u otros fines que no sean de producción.

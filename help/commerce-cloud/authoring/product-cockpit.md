@@ -59,7 +59,7 @@ Al hacer clic en un producto, se cargarán las variaciones de productos si está
 
 Se proporciona una búsqueda de texto completo sobre el catálogo de productos completo en la pestaña del filtro izquierdo para encontrar productos rápidamente.
 
-![búsqueda](../assets/search-cockpit.png)
+![buscar](../assets/search-cockpit.png)
 
 ## Exploración del catálogo de productos escalonado {#staged-product-catalogs}
 

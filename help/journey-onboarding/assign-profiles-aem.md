@@ -101,7 +101,7 @@ Sin embargo, si desea comprender mejor cómo utilizan el sistema los autores y d
 
 ## Recursos adicionales {#additional-resources}
 
-Los siguientes son recursos adicionales y opcionales si desea ir más allá del contenido del recorrido de incorporación.
+Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
 * [Administración de productos y acceso de usuarios en Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console): aprenda a utilizar Admin Console para administrar el acceso de uso.
 * [Guía de configuración del acceso a AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=es): consulte esta explicación abreviada para obtener más información sobre la configuración de los usuarios de IMS de Adobe, los grupos de usuarios y los perfiles de producto en el Admin Console.

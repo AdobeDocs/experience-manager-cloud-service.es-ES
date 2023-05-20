@@ -386,7 +386,7 @@ ht-degree: 99%
    + [Información general sobre los microservicios de recursos](/help/assets/asset-microservices-overview.md)
    + [Accesibilidad en [!DNL Assets]](/help/assets/accessibility.md)
    + Administre recursos digitales {#manage}
-      + [Selector de recursos de micronegocios](/help/assets/asset-selector.md)
+      + [Selector de recursos de Micro-FrontEnd](/help/assets/asset-selector.md)
       + [Compartir recursos](/help/assets/share-assets.md)
       + [Supervisar actividades y tareas de DAM](/help/assets/assets-activity-history.md)
       + [Introducción a los microservicios de recursos](/help/assets/asset-microservices-configure-and-use.md)
@@ -792,8 +792,8 @@ ht-degree: 99%
          + [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Pruebas funcionales {#functional-testing}
-            + [Información general sobre las pruebas funcionales](/help/implementing/cloud-manager/functional-testing.md)
-            + [Prueba funcional de Java](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [Información general sobre pruebas funcionales](/help/implementing/cloud-manager/functional-testing.md)
+            + [Pruebas funcionales de Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Pruebas de IU](/help/implementing/cloud-manager/ui-testing.md)
          + [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Acceder y administrar registros](/help/implementing/cloud-manager/manage-logs.md)
@@ -940,7 +940,7 @@ ht-degree: 99%
    + Nivel de Author {#author-tier}
       + [Acceso al nivel de Author](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Protección del nivel de Author](/help/implementing/author-tier/securing-the-author-tier.md)
-   + Nivel de vista previa {#preview-tier}
+   + Previsualizar nivel {#preview-tier}
       + [Configuración de OSGi para el nivel de vista previa](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Información general sobre la distribución de contenido {#content-delivery}
       + [Flujo de distribución de contenido](/help/implementing/dispatcher/overview.md)

@@ -5,7 +5,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 8%
+ht-degree: 3%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 Una vez publicado el canal, es el momento de crear la visualización en el proveedor de servicios de Screens.
 
-Una pantalla es una agrupación virtual de pantallas que normalmente se colocan una al lado de la otra. La pantalla suele ser permanente con relación a una instalación. Este será el objeto con que los autores de contenido trabajarán y tomarán siempre como referencia como pantalla lógica en lugar de las equivalentes físicas.
+Una pantalla es una agrupación virtual de pantallas que normalmente se colocan una al lado de la otra. La pantalla suele ser permanente con respecto a una instalación. Estos serán los objetos con los que los autores de contenido trabajarán y a los que siempre se hará referencia como visualización lógica en lugar de sus partes de contador físicas.
 
 ## Objetivo {#objective}
 

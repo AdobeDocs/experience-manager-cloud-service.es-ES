@@ -1,11 +1,11 @@
 ---
 title: Su bandeja de entrada
-description: Administración de las tareas con la bandeja de entrada
+description: Administrar las tareas con la bandeja de entrada
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -21,20 +21,20 @@ Puede recibir notificaciones desde varias áreas de AEM, incluidos flujos de tra
       * Estos pueden ser producto del paso **Participante** del flujo de trabajo.
    * Elementos con errores, que permiten a los administradores volver a intentar realizar un paso que ha fallado.
 
-Estas notificaciones se reciben en su propia bandeja de entrada, donde podrá consultarlas y llevar a cabo las acciones correspondientes.
+Recibirá estas notificaciones en su propia bandeja de entrada, donde podrá verlas y realizar acciones.
 
 >[!NOTE]
 >
->Para obtener más información sobre los tipos de elemento, consulte también:
+>Para obtener más información sobre los tipos de elementos, consulte también:
 >
 >* [Proyectos](/help/sites-cloud/authoring/projects/overview.md)
->* [Proyectos: trabajando con tareas](/help/sites-cloud/authoring/projects/tasks.md) 
+>* [Proyectos: trabajo con tareas](/help/sites-cloud/authoring/projects/tasks.md)
 >* [Flujos de trabajo](/help/sites-cloud/authoring/workflows/overview.md)
 
 
 ## Bandeja de entrada en el encabezado {#inbox-in-the-header}
 
-Desde cualquiera de las consolas, en el encabezado se mostrará el número actual de elementos de su bandeja de entrada. También se puede abrir el indicador para acceder rápidamente a las páginas que requieran acciones o acceder a la bandeja de entrada:
+Desde cualquiera de las consolas, el número actual de elementos de la bandeja de entrada se muestra en el encabezado. El indicador también se puede abrir para proporcionar acceso rápido a las páginas que requieren acciones o acceso a la bandeja de entrada:
 
 ![Introducción a la bandeja de entrada en el encabezado](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -82,11 +82,11 @@ Puede hacer lo siguiente:
 
 ### Bandeja de entrada: configuración de vista {#inbox-view-settings}
 
-Puede definir la configuración para ambas vistas (lista y calendario):
+Para ambas vistas (Lista y Calendario) puede definir la configuración:
 
 * **Vista de calendario**
 
-   Para **Vista de calendario** puede configurar:
+   Para **Vista de calendario** puede configurar lo siguiente:
 
    * **Agrupar por**
    * **Programa** o **Ninguno**
@@ -96,7 +96,7 @@ Puede definir la configuración para ambas vistas (lista y calendario):
 
 * **Vista de lista**
 
-   En **Vista de lista** puede configurar el mecanismo de ordenación:
+   Para **Vista de lista** puede configurar el mecanismo de ordenación:
 
    * **Ordenar en**
    * **Orden**
@@ -113,7 +113,7 @@ Puede definir la configuración para ambas vistas (lista y calendario):
 >
 >Aunque es posible seleccionar más de un elemento, las acciones solo se pueden realizar en un elemento a la vez.
 
-1. Para realizar una acción en un elemento, seleccione la miniatura correspondiente al elemento en cuestión. En la barra de herramientas se mostrarán iconos para las acciones aplicables a dicho elemento:
+1. Para realizar una acción sobre un elemento, seleccione la miniatura del elemento correspondiente. Los iconos de las acciones aplicables a ese elemento se mostrarán en la barra de herramientas:
 
    ![Seleccionar elemento de bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -134,7 +134,7 @@ Puede definir la configuración para ambas vistas (lista y calendario):
    >
    >Para obtener más información, consulte lo siguiente:
    >
-   >* Elementos del flujo de trabajo - [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
+   >* Elementos de flujo de trabajo - [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
 
 
 2. Dependiendo del elemento seleccionado, se inicia una acción; por ejemplo:
@@ -156,9 +156,9 @@ Puede definir la configuración para ambas vistas (lista y calendario):
 
 ## Creación de una tarea {#creating-a-task}
 
-Desde la bandeja de entrada, puede crear tareas:
+Desde la bandeja de entrada puede crear tareas:
 
-1. Seleccione **Crear** y, a continuación, **Tarea**.
+1. Seleccionar **Crear**, entonces **Tarea**.
 1. Complete los campos necesarios en las pestañas **Básico** y **Avanzado** (el único campo obligatorio es **Título**, el resto son opcionales):
 
    * **Básico**:
@@ -169,7 +169,7 @@ Desde la bandeja de entrada, puede crear tareas:
       * **Contenido**: similar a Carga útil, es una referencia de la tarea a una ubicación del repositorio
       * **Descripción**
       * **Prioridad de tareas**
-      * **Fecha de inicio**
+      * **Fecha inicial**
       * **Fecha de vencimiento**
 
    ![Añadir tarea en la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-create-task.png)
@@ -184,9 +184,9 @@ Desde la bandeja de entrada, puede crear tareas:
 
 ## Creación de un proyecto    {#creating-a-project}
 
-Para determinadas tareas, puede crear un [proyecto](/help/sites-cloud/authoring/projects/overview.md) basado en dicha tarea:
+Para determinadas tareas, puede crear un [Proyecto](/help/sites-cloud/authoring/projects/overview.md) en función de esa tarea:
 
-1. Seleccione la tarea adecuada haciendo clic/tocando la miniatura correspondiente.
+1. Seleccione la tarea adecuada tocando o haciendo clic en la miniatura.
 
    >[!NOTE]
    >
@@ -195,24 +195,24 @@ Para determinadas tareas, puede crear un [proyecto](/help/sites-cloud/authoring/
    >Los elementos de trabajo (de un flujo de trabajo) no se pueden utilizar para crear un proyecto.
 
 1. Seleccione **Crear proyecto** en la barra de herramientas para abrir el asistente.
-1. Seleccione la plantilla adecuada y, a continuación, **Siguiente**.
-1. Especifique las propiedades requeridas:
+1. Seleccione la plantilla adecuada y luego **Siguiente**.
+1. Especifique las propiedades necesarias:
 
    * **Básico**
 
       * **Título**
       * **Descripción**
-      * **Fecha de inicio**
+      * **Fecha inicial**
       * **Fecha de vencimiento**
-      * **Usuario** y función
+      * **Usuario** Función y
    * **Avanzado**
 
       * **Nombre**
    >[!NOTE]
    >
-   >Consulte [Creación de un proyecto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) para obtener toda la información.
+   >Consulte [Creación de un proyecto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) para obtener información completa.
 
-1. Seleccione **Crear** para confirmar la acción.
+1. Seleccionar **Crear** para confirmar la acción.
 
 ## Filtrado de elementos en la bandeja de entrada AEM    {#filtering-items-in-the-aem-inbox}
 

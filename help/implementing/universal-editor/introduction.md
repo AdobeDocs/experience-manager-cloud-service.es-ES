@@ -1,13 +1,13 @@
 ---
 title: Introducción al editor visual universal
 description: Descubra cómo el editor visual universal (también conocido como editor universal) habilita la edición de lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin encabezado y con encabezado. Descubra cómo puede ayudar a los autores de contenido a ofrecer contenidos excepcionales y mayor velocidad, y una experiencia de última generación a los desarrolladores.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
-workflow-type: ht
+exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 100%
 
 ---
-
 
 # Introducción al editor visual universal {#introduction}
 

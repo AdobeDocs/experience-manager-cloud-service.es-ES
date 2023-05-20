@@ -20,12 +20,12 @@ ht-degree: 0%
 
 ## SDK
 
-Obtenga información sobre el SDK de Adobe I/O y cómo se utiliza para desarrollar aplicaciones de App Builder.
+Obtenga información acerca del SDK de Adobe I/O y cómo se utiliza para desarrollar aplicaciones de App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339166/?quality=12&learn=on)
 
 ## CLI
 
-Obtenga información sobre la CLI de Adobe I/O y cómo utilizarla para el desarrollo de App Builder.
+Obtenga información acerca de la CLI de Adobe I/O y cómo utilizarla para el desarrollo del Generador de aplicaciones.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339167/?quality=12&learn=on)

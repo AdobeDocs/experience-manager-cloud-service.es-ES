@@ -46,7 +46,7 @@ En determinadas situaciones, las acciones de creación deben restringirse para d
 
 Los complementos del Editor de imágenes se pueden habilitar selectivamente por tipo MIME estableciendo un `supportedMimeTypes` en el nodo de configuración del complemento individual.
 
-### Ejemplo {#example}
+### Ejemplos {#example}
 
 Por ejemplo, supongamos que la capacidad de recorte solo debe permitirse para imágenes de GIF, JPEG, PNG, WEBP y TIFF.
 

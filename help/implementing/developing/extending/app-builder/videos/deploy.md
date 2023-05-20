@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Implementación de aplicaciones de App Builder
 
-Descubra qué significa la implementación para App Builder y cómo implementar su aplicación de App Builder mediante la CLI de Adobe I/O.
+Descubra qué significa la implementación para el Generador de aplicaciones y cómo implementar su aplicación de Generador de aplicaciones mediante la CLI de Adobe I/O.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)
