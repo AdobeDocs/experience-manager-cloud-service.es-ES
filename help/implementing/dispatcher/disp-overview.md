@@ -6,7 +6,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 72%
+ht-degree: 74%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 72%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispoverview"
 >title="Dispatcher en la nube"
->abstract="Esta página describe cómo descargar y extraer las herramientas de Dispatcher, los módulos Apache compatibles y proporciona una amplia descripción general de los modos heredados y flexibles."
+>abstract="En esta página se describe cómo descargar y extraer las herramientas de Dispatcher, los módulos Apache compatibles, y se proporciona una información general de alto nivel de los modos heredados y flexibles."
 
 ## Introducción {#apache-and-dispatcher-configuration-and-testing}
 

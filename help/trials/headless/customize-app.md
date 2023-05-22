@@ -22,7 +22,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Lanzamiento del editor de fragmentos de contenido"
->abstract="Ahora vamos a explorar cómo funciona la creación de contenido sin encabezado. La versión de prueba de AEM sin encabezado viene con una aplicación React de muestra integrada, para que pueda ver lo fácil que es para cualquiera administrar contenidos de forma independiente sin dedicar tiempo al desarrollo.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
+>abstract="Ahora analicemos cómo funciona la creación de contenido sin encabezado. La versión de prueba de AEM sin encabezado viene con una aplicación React de muestra integrada, para que pueda ver lo fácil que es para cualquiera administrar contenidos de forma independiente sin dedicar tiempo al desarrollo.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
