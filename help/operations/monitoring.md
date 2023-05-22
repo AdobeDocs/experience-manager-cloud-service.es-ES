@@ -2,9 +2,9 @@
 title: Monitorización de infraestructura y servicios en AEM as a Cloud Service
 description: Monitorización de infraestructura y servicios en AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: 34fed4e64b49ab32e7025c9654d930e3fa362a52
+source-git-commit: f55439552e253b8b71b40525454130c6f163e6d4
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '607'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ Con la Monitorización personalizada, los clientes tienen la opción de proporci
 
 >[!NOTE]
 >
-> Esta funcionalidad solo se ofrece a los clientes con soporte avanzado en la nube. Si tiene alguna pregunta, plantee un caso de asistencia a través de Admin Console.
+> Esta funcionalidad solo se ofrece a los clientes con [Soporte avanzado en la nube.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Si tiene alguna pregunta, plantee un caso de asistencia a través de Admin Console.
 
 ## Monitorización del módulo interno {#module-monitoring}
 
