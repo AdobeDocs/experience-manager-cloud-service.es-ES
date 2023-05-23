@@ -1,19 +1,19 @@
 ---
-title: Etiquetado automático de recursos con [!DNL Adobe Sensei] servicio inteligente
-description: Etiquete recursos con un servicio artificialmente inteligente que aplique etiquetas comerciales contextuales y descriptivas.
+title: AEM ¿Cómo se agregan etiquetas inteligentes a los recursos en la?
+description: AEM Añada etiquetas inteligentes a los recursos en con un servicio inteligente artificialmente que aplique etiquetas comerciales contextuales y descriptivas.
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2462'
 ht-degree: 6%
 
 ---
 
 
-# Añadir etiquetas inteligentes a los recursos y mejorar la experiencia de búsqueda {#smart-tag-assets-for-faster-search}
+# AEM Adición de etiquetas inteligentes a los recursos en la {#smart-tags-assets-aem}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -24,13 +24,13 @@ Las organizaciones que trabajan con recursos digitales utilizan cada vez más vo
 
 En comparación con los vocabularios de lenguajes naturales, el etiquetado basado en la taxonomía empresarial ayuda a alinear los recursos con el negocio de una empresa y garantiza que los recursos más relevantes aparezcan en las búsquedas. Por ejemplo, un fabricante de automóviles puede etiquetar imágenes de automóviles con nombres de modelos para que solo se muestren imágenes relevantes cuando se busquen para diseñar una campaña de promoción.
 
-En segundo plano, la funcionalidad utiliza el marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. [!DNL Experience Manager Assets] aplica automáticamente las etiquetas inteligentes a los recursos cargados de forma predeterminada.
+En segundo plano, la funcionalidad utiliza el marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. AEM De forma predeterminada, la aplicación de etiquetas inteligentes a los recursos cargados se aplica de forma predeterminada.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## Tipos de recursos admitidos {#smart-tags-supported-file-formats}
+## AEM Tipos de recursos compatibles con las etiquetas inteligentes en la {#smart-tags-supported-file-formats}
 
 Puede etiquetar los siguientes tipos de recursos:
 
@@ -59,7 +59,7 @@ Puede etiquetar los siguientes tipos de recursos:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-[!DNL Experience Manager] agrega automáticamente las etiquetas inteligentes a los recursos basados en texto y a los vídeos de forma predeterminada. Para agregar automáticamente etiquetas inteligentes a las imágenes, complete las siguientes tareas.
+AEM De forma predeterminada, las Etiquetas inteligentes se añaden automáticamente a los recursos basados en texto y a los vídeos. Para agregar automáticamente etiquetas inteligentes a las imágenes, complete las siguientes tareas.
 
 * [Comprender los modelos de etiquetas y las directrices](#understand-tag-models-guidelines).
 * [Entrenar el modelo](#train-model).
@@ -189,9 +189,9 @@ Para comprobar si el servicio Etiquetas inteligentes ha recibido formación sobr
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Etiquetado de recursos con etiquetas inteligentes {#tag-assets}
+## AEM Etiquetado de recursos con etiquetas inteligentes en la aplicación de etiquetas {#tag-assets}
 
-Etiquetado automático de todos los tipos de recursos compatibles con [!DNL Experience Manager Assets] cuando se carga. El etiquetado está habilitado y funciona de forma predeterminada. [!DNL Experience Manager] aplica las etiquetas adecuadas en tiempo casi real. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Etiquetado automático de todos los tipos de recursos compatibles con [!DNL Experience Manager Assets] cuando se carga. El etiquetado está habilitado y funciona de forma predeterminada. AEM aplica las etiquetas inteligentes adecuadas en tiempo casi real. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * Para imágenes y vídeos, las etiquetas inteligentes se basan en algún aspecto visual.
 
