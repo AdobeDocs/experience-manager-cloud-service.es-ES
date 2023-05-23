@@ -2,10 +2,10 @@
 title: Asignación de usuarios y migración de principales
 description: Información general sobre asignación de usuarios y migración de principales
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 22%
+source-wordcount: '788'
+ht-degree: 21%
 
 ---
 
@@ -53,3 +53,7 @@ Se registran los siguientes casos específicos:
 * Si la configuración **Borrar contenido existente en la instancia de Cloud antes de la ingesta** se ha configurado, los usuarios ya transferidos en la instancia de Cloud Service se eliminarán junto con todo el repositorio existente y se creará un nuevo repositorio para introducir contenido en. Esto también restablece todos los ajustes, incluidos los permisos, en la instancia del Cloud Service de destino y es verdadero para un usuario administrador añadido a **administradores** grupo. El usuario administrador debe volver a agregarse al **administradores** para recuperar el token de acceso para CTT.
 * Cuando se realizan recargas de contenido, si el contenido no se transfiere porque no ha cambiado desde la transferencia anterior, los usuarios y grupos asociados con ese contenido tampoco se transfieren, aunque los usuarios y grupos hayan cambiado mientras tanto. Esto se debe a que los usuarios y grupos se migran junto con el contenido con el que están asociados.
 * Si la instancia de AEM Cloud Service AEM AEM de destino tiene un usuario con un nombre de usuario diferente pero con la misma dirección de correo electrónico que uno de los usuarios de la instancia de origen, y la asignación de usuarios está activada, se escribe un mensaje de error en los registros y no se transfiere el usuario de origen, ya que solo se permite un usuario con una dirección de correo electrónico determinada en el sistema de destino.
+
+## Resumen final e informe {#final-report}
+
+Una vez que la extracción y la ingesta se han completado correctamente, se genera un informe con los detalles de migración principales. Consulte [Validación de la migración de entidades principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-principal-migration) para obtener más información.

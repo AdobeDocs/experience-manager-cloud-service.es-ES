@@ -2,9 +2,9 @@
 title: Validación de transferencias de contenido
 description: Utilice la herramienta de transferencia de contenido para validar las transferencias de contenido
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
+source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '1070'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ La parte superior del registro de ingesta contendrá una entrada, similar a `aem
 Una vez completada la ingesta y iniciada la validación, se anotará la siguiente entrada de registro en el registro de ingesta:
 
 ```
-Gathering artifacts for migration validation...  
+Gathering artifacts for migration validation...
 ```
 
 Los detalles de la validación siguen esta entrada. A continuación, puede ver un ejemplo de una migración de gran tamaño:
@@ -131,6 +131,24 @@ Además de incluirse en el registro de ingesta, también se puede acceder al inf
 
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+
+## Validación de la migración de entidades principales {#how-to-validate-principal-migration}
+
+Consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para leer los detalles de las migraciones principales y por qué es necesario.
+
+Una vez que la extracción y la ingesta se hayan completado correctamente, estará disponible un resumen y un informe de la migración principal. Esta información se puede utilizar para validar qué usuarios y grupos se migraron correctamente y, quizás, para determinar por qué no se migraron algunos.
+
+Para ver esta información, vaya a Cloud Acceleration Manager. Haga clic en la tarjeta de proyecto y en la tarjeta Transferencia de contenido. Vaya a **Trabajos de ingesta** y busque la ingesta que desea comprobar. Haga clic en los tres puntos (**...**) para esa ingesta, luego haga clic en **Ver resumen principal** en la lista desplegable.
+
+![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
+
+Verá un cuadro de diálogo con la información de resumen. Utilice los iconos de ayuda para leer una descripción más completa. Haga clic en **Descargar informe** para descargar el informe completo separado por comas (CSV).
+
+![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
+
+>[!NOTE]
+>
+>Si la asignación de usuarios está deshabilitada, se mostrará otra variante de este cuadro de diálogo. Indicará que la asignación de usuarios estaba deshabilitada y no mostrará los 3 campos que proporcionan valores de asignación de usuarios.
 
 ## Solución de problemas {#troubleshooting}
 
