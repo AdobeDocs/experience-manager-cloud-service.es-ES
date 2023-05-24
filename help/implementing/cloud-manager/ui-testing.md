@@ -2,10 +2,10 @@
 title: Pruebas de IU
 description: La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones personalizadas
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
+source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 89%
+source-wordcount: '2411'
+ht-degree: 75%
 
 ---
 
@@ -23,9 +23,9 @@ La prueba de IU personalizada es una característica opcional que le permite cre
 
 AEM ofrece un conjunto integrado de [Puertas de calidad de Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantizar actualizaciones sin problemas en las aplicaciones personalizadas. En concreto, las puertas de pruebas de TI ya admiten la creación y automatización de pruebas personalizadas mediante las API de AEM.
 
-Las pruebas de interfaz de usuario se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress.IO, Selenium, Java y Maven, y Javascript). Además, se puede generar fácilmente un proyecto de pruebas de IU mediante el uso del [arquetipo del proyecto de AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
+Las pruebas de interfaz de usuario se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). Además, se puede generar fácilmente un proyecto de pruebas de IU mediante el uso del [arquetipo del proyecto de AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 
-El Adobe fomenta el uso de Cypress.IO, ya que ofrece recarga en tiempo real y espera automática, lo que ayuda a ahorrar tiempo y mejora la productividad durante las pruebas. Cypress.IO también proporciona una sintaxis sencilla e intuitiva, lo que facilita el aprendizaje y el uso, incluso para aquellos que son nuevos en las pruebas.
+El Adobe fomenta el uso de Cypress, ya que ofrece recarga en tiempo real y espera automática, lo que ayuda a ahorrar tiempo y mejora la productividad durante las pruebas. Cypress también proporciona una sintaxis sencilla e intuitiva, lo que facilita el aprendizaje y el uso, incluso para aquellos que son nuevos en las pruebas.
 
 Las pruebas de la IU se ejecutan como parte de una puerta de calidad específica para cada canalización de Cloud Manager con una fase de [**Pruebas de IU personalizadas**](/help/implementing/cloud-manager/deploy-code.md) en [canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) u opcionalmente [canalizaciones que no sean de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Cualquier prueba de la interfaz de usuario, incluidas la regresión y las nuevas funcionalidades, permite detectar y notificar errores.
 
@@ -33,9 +33,9 @@ A diferencia de las pruebas funcionales personalizadas, que son pruebas HTTP esc
 
 >[!TIP]
 >
->Adobe recomienda seguir la estructura y los lenguajes (JavaScript y WDIO) proporcionados en el [arquetipo del proyecto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
->
->Adobe también proporciona un ejemplo de módulo de prueba de IU basado en Java y WebDriver. Consulte el [Repositorio de muestras de prueba de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) para obtener más información.
+>El Adobe recomienda utilizar Cypress para las pruebas de interfaz de usuario, siguiendo el código proporcionado en la [AEM Repositorio de ejemplos de prueba](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+> 
+>El Adobe también proporciona ejemplos del módulo de prueba de la interfaz de usuario basados en JavaScript con WebdriverIO (consulte los [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) y Java con WebDriver (consulte la [AEM Repositorio de ejemplos de prueba](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
 
 ## Introducción a las pruebas de IU {#get-started-ui-tests}
 
@@ -43,11 +43,13 @@ En esta sección se describen los pasos necesarios para configurar las pruebas d
 
 1. Decida el lenguaje de programación que desea utilizar.
 
+   * Para Cypress, utilice el código de muestra del [AEM Repositorio de ejemplos de prueba](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+
    * Para JavaScript y WDIO, utilice el código de muestra que se genera automáticamente en la carpeta `ui.tests` de su repositorio de Cloud Manager.
 
       >[!NOTE]
       >
-      >Si el repositorio se creó antes de que Cloud Manager creara automáticamente carpetas `it.tests`, también puede generar la última versión utilizando el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
+      >Si el repositorio se creó antes de que Cloud Manager creara automáticamente carpetas `ui.tests`, también puede generar la última versión utilizando el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
 
    * Para Java y WebDriver, utilice el código de muestra del [Repositorio de ejemplos de pruebas de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
@@ -55,7 +57,7 @@ En esta sección se describen los pasos necesarios para configurar las pruebas d
 
 1. Asegúrese de que las pruebas de IU estén activadas según la sección [Inclusión del cliente](#customer-opt-in) de este documento.
 
-1. Desarrolle sus casos de prueba y [ejecute las pruebas localmente](#run-ui-tests-locally).
+1. Desarrolle sus casos de prueba y [ejecutar las pruebas localmente](#run-ui-tests-locally).
 
 1. Confirme su código en el repositorio de Cloud Manager y ejecute una canalización de Cloud Manager.
 
@@ -158,7 +160,7 @@ La generación debe producir ningún o un archivo. Si no genera ningún archivo,
 
 ### Inclusión del cliente {#customer-opt-in}
 
-Para que Cloud Manager pueda generar y ejecutar sus pruebas de IU, debe incluirse en esta funcionalidad al agregar un archivo al repositorio.
+Para que Cloud Manager cree y ejecute sus pruebas de interfaz de usuario, debe incluirse en esta función al agregar un archivo al repositorio.
 
 * El nombre del archivo debe ser `testing.properties`.
 * El contenido del archivo debe ser `ui-tests.version=1`.
@@ -197,7 +199,7 @@ Si está utilizando las muestras proporcionadas por Adobe:
    fi
    ```
 
-* Las muestras de prueba de Java proporcionadas ya tienen establecido el indicador de inclusión.
+* Las muestras de prueba de Cypress y Java Selenium proporcionadas por Adobe ya tienen el indicador de inclusión establecido.
 
 ## Escribir pruebas de interfaz de usuario {#writing-ui-tests}
 
@@ -222,23 +224,9 @@ Las siguientes variables de entorno se pasarán a la imagen de Docker en tiempo 
 
 Las muestras de prueba de Adobe proporcionan funciones de ayuda para acceder a los parámetros de configuración:
 
+* Cypress: utilizar la función estándar `Cypress.env('VARIABLE_NAME')`
 * JavaScript: consulte el módulo [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js)
 * Java: consulte la clase [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java)
-
-### Esperando a que Selenium esté listo {#waiting-for-selenium}
-
->[!NOTE]
->
->Esta sección solo se aplica cuando Selenium es la infraestructura de prueba elegida.
-
-Antes de que comiencen las pruebas, es responsabilidad de la imagen Docker asegurarse de que el servidor Selenium funcione. Esperar por el servicio de Selenium es un proceso de dos pasos.
-
-1. Lea la URL del servicio de Selenium desde la `SELENIUM_BASE_URL` variable de entorno.
-1. Encuesta a intervalos regulares al [extremo de estado](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) expuesto por la API de Selenium.
-
-Una vez que el extremo de estado de Selenium dé una respuesta positiva, las pruebas podrán comenzar.
-
-Las muestras de prueba de la IU de Adobe lo gestionan con el script `wait-for-grid.sh`, que se ejecuta al abrir Docker e inicia la ejecución de prueba real solo cuando la cuadrícula está lista.
 
 ### Generar informes de prueba {#generate-test-reports}
 
@@ -252,9 +240,47 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 >
 >Utilice aserciones en lugar de registrar un error en STDERR o devolver un código de salida distinto de cero; de lo contrario, la canalización de implementación puede continuar normalmente.
 
+### Requisitos previos {#prerequisites}
+
+* Las pruebas en Cloud Manager se ejecutarán con un usuario administrador técnico.
+
+>[!NOTE]
+>
+>Para ejecutar las pruebas funcionales desde el equipo local, cree un usuario con permisos de tipo administrador para lograr el mismo comportamiento.
+
+* La infraestructura en contenedores con ámbitos para las pruebas funcionales está limitada por los límites siguientes:
+
+| Tipo | Valor | Descripción |
+|----------------------|-------|-----------------------------------------------------------------------|
+| CPU | 2.0 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
+| Memoria | 1Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes |
+| Tiempo de espera | 30m | La duración tras la cual finalizará la prueba. |
+| Duración recomendada | 15m | El Adobe recomienda escribir las pruebas para que no tarden más de este tiempo. |
+
+>[!NOTE]
+>
+> Si necesita más recursos, cree un caso de servicio de atención al cliente y describa su caso de uso; el Adobe revisará su solicitud y proporcionará la asistencia adecuada.
+
+## Detalles específicos de Selenium
+
+>[!NOTE]
+>
+>Esta sección solo se aplica cuando Selenium es la infraestructura de prueba elegida.
+
+### Esperando a que Selenium esté listo {#waiting-for-selenium}
+
+Antes de que comiencen las pruebas, es responsabilidad de la imagen Docker asegurarse de que el servidor Selenium funcione. Esperar por el servicio de Selenium es un proceso de dos pasos.
+
+1. Lea la URL del servicio de Selenium desde la `SELENIUM_BASE_URL` variable de entorno.
+1. Encuesta a intervalos regulares al [extremo de estado](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) expuesto por la API de Selenium.
+
+Una vez que el extremo de estado de Selenium dé una respuesta positiva, las pruebas podrán comenzar.
+
+Las muestras de prueba de la IU de Adobe lo gestionan con el script `wait-for-grid.sh`, que se ejecuta al abrir Docker e inicia la ejecución de prueba real solo cuando la cuadrícula está lista.
+
 ### Captura de pantallas y vídeos {#capture-screenshots}
 
-La imagen del Docker puede generar resultados de prueba adicionales (por ejemplo, capturas de pantalla o vídeos) y guardarlos en la ruta especificada por la variable de entorno `REPORTS_PATH`. Cualquier archivo que se encuentre debajo de `REPORTS_PATH` se incluirá en el archivo de resultados de la prueba.
+La imagen Docker puede generar resultados de prueba adicionales (por ejemplo, capturas de pantalla o vídeos) y guardarlos en la ruta especificada por la variable de entorno `REPORTS_PATH`. Cualquier archivo que se encuentre debajo de `REPORTS_PATH` se incluirá en el archivo de resultados de la prueba.
 
 Las muestras de prueba proporcionadas por Adobe de forma predeterminada crean capturas de pantalla para cualquier prueba fallida.
 
@@ -281,34 +307,47 @@ Las pruebas a veces deben cargar archivos en la aplicación que se está proband
    * El contenido de la respuesta es un controlador de archivo opaco.
    * Puede utilizar este identificador en lugar de una ruta de archivo en un elemento `<input>` para probar la carga de archivos en la aplicación.
 
-### Requisitos previos {#prerequisites}
-
-1. Las pruebas en Cloud Manager se ejecutarán con un usuario administrador técnico.
-
->[!NOTE]
->
->Para ejecutar las pruebas funcionales desde el equipo local, cree un usuario con permisos de tipo administrador para lograr el mismo comportamiento.
-
-1. La infraestructura en contenedores con ámbitos para las pruebas funcionales está limitada por los límites siguientes:
-
-| Tipo | Valor | Descripción |
-|----------------------|-------|--------------------------------------------------------------------|
-| CPU | 2.0 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
-| Memoria | 1Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes |
-| Tiempo de espera | 30m | La duración tras la cual finalizará la prueba. |
-| Duración recomendada | 15m | Se recomienda escribir las pruebas para que no tarden más de este tiempo. |
-
->[!NOTE]
->
-> Si necesita más recursos, cree un caso de servicio de atención al cliente y describa su caso de uso; nuestro equipo revisará su solicitud y proporcionará la asistencia adecuada.
-
-
 ## Ejecución de pruebas de IU locales {#run-ui-tests-locally}
 
-Antes de activar pruebas de interfaz de usuario en una canalización de Cloud Manager, se recomienda ejecutar las pruebas de interfaz de usuario localmente en la canalización [AEM SDK as a Cloud Service de](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-AEM o contra una instancia as a Cloud Service real de la.
+Antes de activar pruebas de interfaz de usuario en una canalización de Cloud Manager, se recomienda ejecutar las pruebas de interfaz de usuario localmente en la canalización [AEM SDK as a Cloud Service de](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) AEM o contra una instancia as a Cloud Service real de la.
 
-### Muestra de prueba de JavaScript {#javascript-sample}
+### Ejemplo Cypress Test {#cypress-sample}
+
+1. Abra un elemento shell y vaya a la carpeta `ui.tests/test-module` de su repositorio
+
+1. Instalar Cypress y otros requisitos previos
+
+   ```shell
+   npm install
+   ```
+
+1. Establecer las variables de entorno necesarias para la ejecución de pruebas
+
+   ```shell
+   export AEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com
+   export AEM_AUTHOR_USERNAME=<user>
+   export AEM_AUTHOR_PASSWORD=<password>
+   export AEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com
+   export AEM_PUBLISH_USERNAME=<user>
+   export AEM_PUBLISH_PASSWORD=<password>
+   export REPORTS_PATH=target/
+   ```
+
+1. Ejecute las pruebas con uno de los siguientes comandos
+
+   ```shell
+   npm test              # Using default Cypress browser
+   npm run test-chrome   # Using Google Chrome browser
+   npm run test-firefox  # Using Firefox browser
+   ```
+
+>[!NOTE]
+>
+>Los archivos de registro se almacenarán en la carpeta `target/` de su repositorio.
+>
+>Para obtener más información, consulte [AEM Repositorio de ejemplos de prueba](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+
+### Ejemplo JavaScript WebdriverIO Test {#javascript-sample}
 
 1. Abra un elemento shell y vaya a la carpeta `ui.tests` de su repositorio
 
@@ -321,22 +360,22 @@ AEM o contra una instancia as a Cloud Service real de la.
     -DAEM_AUTHOR_PASSWORD=<password> \
     -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
     -DAEM_PUBLISH_USERNAME=<user> \
-    -DAEM_PUBLISH_PASSWORD=<password> \
+    -DAEM_PUBLISH_PASSWORD=<password>
    ```
 
 >[!NOTE]
 >
->* Esto inicia una instancia de Selenium independiente y ejecuta las pruebas correspondientes.
+>* Esto inicia una instancia de selenio independiente y ejecuta las pruebas correspondientes.
 >* Los archivos de registro se almacenan en la carpeta `target/reports` de su repositorio
->* Debe asegurarse de que tiene la última versión de Chrome, ya que la prueba descarga la última versión de ChromeDriver automáticamente para realizar pruebas.
+>* Debe asegurarse de que el equipo esté ejecutando la última versión de Chrome, ya que la prueba descarga automáticamente la última versión de ChromeDriver para realizar pruebas.
 >
->Para obtener más información, consulte el [repositorio de Arquetipo del proyecto de AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>Para obtener más información, consulte [AEM Repositorio de tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
-### Muestra de prueba de Java {#java-sample}
+### Ejemplo Java Selenium WebDriver Test {#java-sample}
 
 1. Abra un elemento shell y vaya a la carpeta `ui.tests/test-module` de su repositorio
 
-1. Ejecute el siguiente comando para iniciar las pruebas con Maven
+1. Ejecute los siguientes comandos para iniciar las pruebas con Maven
 
    ```shell
    # Start selenium docker image (for x64 CPUs)
@@ -346,11 +385,11 @@ AEM o contra una instancia as a Cloud Service real de la.
    docker run -d -p 4444:4444 seleniarm/standalone-chromium
    
    # Run the tests using the previously started Selenium instance
-   mvn verify -Pui-tests-local-execution -DSELENIUM_BASE_URL=http://<server>:<port>
+   mvn verify -Pui-tests-local-execution -DSELENIUM_BASE_URL=http://<server>:4444
    ```
 
 >[!NOTE]
 >
->* Los archivos de registro se almacenarán en la carpeta `target/reports` de su repositorio.
+>Los archivos de registro se almacenarán en la carpeta `target/reports` de su repositorio.
 >
->Para obtener más información, consulte el [repositorio de muestras de pruebas de AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>Para obtener más información, consulte [AEM Repositorio de ejemplos de prueba](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
