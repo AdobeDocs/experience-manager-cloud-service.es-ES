@@ -2,10 +2,10 @@
 title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
+source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 78%
+source-wordcount: '648'
+ht-degree: 58%
 
 ---
 
@@ -14,24 +14,19 @@ ht-degree: 78%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Información general"
->abstract="La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe que se puede utilizar para mover contenido existente de una instancia de AEM de origen (On-Premise o AMS) a la instancia de AEM Cloud Service de destinatario. Esta herramienta también transfiere las entidades principales (usuarios o grupos) automáticamente."
+>abstract="La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe AEM que se puede utilizar para iniciar la migración del contenido existente de una instancia de origen (On-Premise o AMS) a la instancia de AEM Cloud Service de destino. Esta herramienta también transfiere las entidades principales (usuarios o grupos) automáticamente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=es" text="Directrices y prácticas recomendadas"
 
-La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe que se puede utilizar para mover contenido existente de una instancia de AEM de origen (on-premise o AMS) a la instancia de destinatario de AEM de Cloud Service.
+La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe AEM que se puede utilizar para iniciar la migración del contenido existente de una instancia de origen de la aplicación (On-Premise o AMS) a una instancia de AEM Cloud Service de destino.
 
 Esta herramienta también transfiere las entidades principales (usuarios o grupos) automáticamente.  Consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obtener más información.
 
-Hay disponible una nueva versión de la herramienta de transferencia de contenido que integra el proceso de transferencia de contenido con Cloud Acceleration Manager. Se recomienda pasar a esta nueva versión para aprovechar todas las ventajas que ofrece:
+La herramienta de transferencia de contenido integra el proceso de transferencia de contenido con Cloud Acceleration Manager. Esto otorga al usuario todos los beneficios que proporciona:
 
 * Forma de autoservicio de extraer un conjunto de migración una vez e introducirlo en varios entornos en paralelo.
-* Mejor experiencia del usuario gracias a la mejora de los estados de carga, las protecciones y el manejo de errores.
+* Se ha mejorado la experiencia del usuario mediante mejores estados de carga, protecciones y administración de errores
 * Los registros de ingesta se mantienen y siempre están disponibles para la resolución de problemas.
-
-Para empezar a utilizar la versión nueva, deberá desinstalar las versiones anteriores de la herramienta de transferencia de contenido, ya que se ha producido un cambio importante en la arquitectura de la herramienta.
-
->[!NOTE]
->
-> En situaciones en las que ya hay una migración en curso, puede seguir utilizando la versión anterior de CTT hasta que se complete la migración. Para ver la documentación relacionada con la versión anterior de CTT, consulte la [documentación heredada](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+* Los informes de validación y migración de principales están disponibles para la validación
 
 ## Fases en la herramienta de transferencia de contenido {#phases-content-transfer-tool}
 
