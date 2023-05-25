@@ -4,9 +4,9 @@ description: Descubra cómo Imágenes inteligentes con Adobe Sensei AI aplica la
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: 3
+mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 5cc750b3ea9a911355220f8b95f769000be9f41a
+source-git-commit: 2b1030a32733154491aa178f390038ef7d552151
 workflow-type: tm+mt
 source-wordcount: '3630'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Imágenes inteligentes {#smart-imaging}
 
-## ¿Qué es &quot;Imágenes inteligentes&quot;? {#what-is-smart-imaging}
++++**¿Qué es &quot;Imágenes inteligentes&quot;?** {#what-is-smart-imaging}
 
 La tecnología de imágenes inteligentes aplica las capacidades de IA de Adobe Sensei y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes. Funciona para mejorar el rendimiento de la entrega de imágenes al optimizar automáticamente el formato, el tamaño y la calidad de la imagen en función de las capacidades del explorador del cliente.
 
@@ -60,7 +60,9 @@ Consulte también [Optimización de imágenes con formatos de imagen de próxima
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-## ¿Cuáles son las ventajas clave de las últimas imágenes inteligentes? {#what-are-the-key-benefits-of-smart-imaging}
++++
+
++++## ¿Cuáles son las ventajas clave de las últimas imágenes inteligentes? {#what-are-the-key-benefits-of-smart-imaging}
 
 Imágenes inteligentes proporciona un mejor rendimiento de entrega de imágenes al optimizar automáticamente el tamaño del archivo de imagen en función del explorador del cliente en uso, la visualización del dispositivo y las condiciones de red. Dado que las imágenes constituyen la mayor parte del tiempo de carga de una página, cualquier mejora de rendimiento puede tener un profundo impacto en los KPI empresariales, como tasas de conversión más altas, tiempo invertido en un sitio y tasas de devolución del sitio más bajas.
 
@@ -72,7 +74,9 @@ Las ventajas clave más recientes de las imágenes inteligentes son las siguient
 * Proporción de píxeles del dispositivo (`dpr`)
 * Ancho de banda de red (`network`)
 
-### Acerca de la conversión de formato de navegador (bfc) {#bfc}
++++
+
+**Acerca de la conversión de formato de navegador (bfc)** {#bfc}
 
 Activar la conversión de formato del explorador añadiendo `bfc=on` a la URL de la imagen convierte automáticamente JPEG y PNG en AVIF con pérdida, WebP con pérdida, JPEGXR con pérdida y JPEG con pérdida 2000 para diferentes exploradores. Para los navegadores que no admiten estos formatos, Smart Imaging sigue sirviendo al JPEG o PNG. Junto con el formato, Smart Imaging vuelve a calcular la calidad del nuevo formato.
 
@@ -80,7 +84,7 @@ Las imágenes inteligentes también se pueden desactivar añadiendo `bfc=off` a 
 
 Consulte también [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) en la API de servicio y procesamiento de imágenes de Dynamic Media.
 
-### Acerca de la optimización de la proporción de píxeles del dispositivo (dpr) {#dpr}
+**Acerca de la proporción de píxeles del dispositivo (dpr)** optimización {#dpr}
 
 La proporción de píxeles del dispositivo (DPR), también conocida como proporción de píxeles CSS, es la relación entre los píxeles físicos de un dispositivo y los píxeles lógicos. Especialmente con la llegada de las pantallas de retina, la resolución de píxeles de los dispositivos móviles modernos está creciendo a un ritmo rápido.
 
@@ -106,7 +110,7 @@ Actualmente, la densidad de píxeles de la visualización proviene de los valore
 
 Consulte también [Al trabajar con imágenes](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Al trabajar con Recorte inteligente](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### Acerca de la optimización del ancho de banda {#network}
+**Acerca de la optimización del ancho de banda** {#network}
 
 Al activar Ancho de banda de red, se ajusta automáticamente la calidad de imagen que se proporciona en función del ancho de banda real de la red. Para un ancho de banda de red deficiente, la optimización de la RGPD (proporción de píxeles del dispositivo) se desactiva automáticamente, incluso si ya está activada.
 
@@ -118,7 +122,7 @@ Si lo desea, su empresa puede excluirse de la optimización del ancho de banda d
 
 Los valores de RGPD y ancho de banda de red se basan en los valores detectados del lado del cliente de la CDN agrupada. Estos valores a veces son inexactos. Por ejemplo, iPhone5 con DPR=2 y iPhone12 con `dpr=3`, ambas se muestran `dpr=2`. Sin embargo, para dispositivos de alta resolución, enviar `dpr=2` es mejor que enviar `dpr=1`. Sin embargo, la mejor manera de superar esta inexactitud es utilizar la DPR del lado del cliente para ofrecerle valores 100% precisos. Y funciona para cualquier dispositivo, ya sea Apple o cualquier otro dispositivo que se haya iniciado. Consulte [Uso de imágenes inteligentes con proporción de píxeles de dispositivo del lado del cliente](/help/assets/dynamic-media/client-side-dpr.md).
 
-### Ventajas clave adicionales de las imágenes inteligentes
+**Ventajas clave adicionales de las imágenes inteligentes**
 
 * Se ha mejorado la clasificación SEO de Google para las páginas web que utilizan las últimas imágenes inteligentes.
 * Ofrece contenido optimizado inmediatamente (durante la ejecución).
@@ -127,7 +131,9 @@ Los valores de RGPD y ancho de banda de red se basan en los valores detectados d
 * Anteriormente, tanto las imágenes originales como las derivadas se almacenaban en caché y se trataba de un proceso de 2 pasos para invalidar la caché. En las últimas imágenes inteligentes, solo se almacenan en caché los derivados, lo que permite un proceso de invalidación de la caché de un solo paso.
 * Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de la última versión de imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Tiempo permitido origen&quot;, &quot;X-Robot&quot; como se sugiere en [Añadir un valor de encabezado personalizado a las respuestas de imagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## ¿Hay algún coste de licencia asociado a las imágenes inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
++++
+
++++**¿Hay algún coste de licencia asociado a las imágenes inteligentes?** {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
 No. Las imágenes inteligentes se incluyen con la licencia existente. Esta regla es verdadera para Dynamic Media Classic o para Experience Manager: Dynamic Media (local, AMS y Experience Manager as a Cloud Service).
 
@@ -135,7 +141,9 @@ No. Las imágenes inteligentes se incluyen con la licencia existente. Esta regla
 >
 >Las imágenes inteligentes no están disponibles para los clientes híbridos de Dynamic Media.
 
-## ¿Cómo funciona la imagen inteligente? {#how-does-smart-imaging-work}
++++
+
++++**¿Cómo funciona la imagen inteligente?** {#how-does-smart-imaging-work}
 
 Cuando un consumidor solicita una imagen, Smart Imaging comprueba las características del usuario y la convierte al formato de imagen adecuado en función del explorador en uso. Estas conversiones de formato se realizan de una manera que no degrada la fidelidad visual. Las imágenes inteligentes convierten automáticamente las imágenes a diferentes formatos, según la capacidad del explorador, de la siguiente manera.
 
@@ -147,6 +155,8 @@ Cuando un consumidor solicita una imagen, Smart Imaging comprueba las caracterí
 * En los exploradores que no admiten estos formatos, se proporciona el formato de imagen solicitado originalmente.
 
 Si el tamaño de la imagen original es menor que el que produce Smart Imaging, se sirve la imagen original.
+
++++
 
 ## ¿Qué formatos de imagen se admiten? {#what-image-formats-are-supported}
 
