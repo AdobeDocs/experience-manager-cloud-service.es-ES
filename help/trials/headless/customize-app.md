@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1036'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Empiece en el editor de fragmentos de contenido con la aplicación de muestra qu
 
 ![Vista previa de la aplicación](assets/do-not-localize/preview-app-1.png)
 
-## Editar un encabezado en la aplicación {#edit-app}
+## Edición de un encabezado en la aplicación {#edit-app}
 
 El editor de fragmentos de contenido muestra el diseño básico de la aplicación como un fragmento de contenido de página. Los **Paneles** representan diferentes páginas de la aplicación, cada una de las cuales es su propio fragmento de contenido. Al modificar estos fragmentos, puede cambiar el contenido de la aplicación.
 
@@ -63,7 +63,7 @@ El editor de fragmentos de contenido muestra el diseño básico de la aplicació
 
 Así de fácil es actualizar contenido dentro de una aplicación React cuando se integra en el CMS de AEM sin encabezado.
 
-## Intercambiar una imagen en la aplicación {#change-image}
+## Intercambio de una imagen en la aplicación {#change-image}
 
 Ahora que ha modificado un titular en la aplicación, intente cambiar una imagen.
 
@@ -91,7 +91,7 @@ Ahora que ha modificado un titular en la aplicación, intente cambiar una imagen
 
 Es muy fácil actualizar imágenes y recursos en sus aplicaciones con el CMS de AEM sin encabezado.
 
-## Añadir una referencia a un nuevo fragmento de contenido en la aplicación {#create-moment}
+## Adición de una referencia a un nuevo fragmento de contenido en la aplicación {#create-moment}
 
 Ahora que ha actualizado la imagen del ciclista, vamos a ver cómo añadir contenido a una aplicación creando y haciendo referencia a un nuevo fragmento de contenido. Añada una llamada de producto administrada por un fragmento de contenido de “momento de ventas” al segundo panel de la aplicación.
 
