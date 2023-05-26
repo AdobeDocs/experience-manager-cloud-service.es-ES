@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b4aa3495538eebc2e87383e1490bc60403025fb0
+source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4011'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ ht-degree: 99%
       + [Valores preestablecidos de conjunto por lotes](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Invalidación de la caché de CDN mediante Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-      + [Imágenes inteligentes Preguntas más frecuentes](/help/assets/dynamic-media/imaging-faq.md)
+      + [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md)
       + [Imágenes inteligentes con proporción de píxeles de dispositivo del lado del cliente](/help/assets/dynamic-media/client-side-dpr.md)
       + [Entrega de recursos de Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Activación de la protección de enlaces interactivos en Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
@@ -535,7 +535,7 @@ ht-degree: 99%
             + [Creación de un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
             + [Creación de temáticas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
             + [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
-            + [Creación de un Forms adaptable: componentes principales en una página de AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Creación de Formularios adaptables: componentes principales en una página de AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Libro de trabajo de la Cumbre](/help/forms/summit-2023-workbook.md)
       + Crear formularios adaptables: componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
@@ -779,8 +779,8 @@ ht-degree: 99%
          + [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Pruebas funcionales {#functional-testing}
-            + [Información general sobre pruebas funcionales](/help/implementing/cloud-manager/functional-testing.md)
-            + [Pruebas funcionales de Java](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [Información general sobre las pruebas funcionales](/help/implementing/cloud-manager/functional-testing.md)
+            + [Prueba funcional de Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Pruebas de IU](/help/implementing/cloud-manager/ui-testing.md)
          + [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Acceder y administrar registros](/help/implementing/cloud-manager/manage-logs.md)
@@ -927,7 +927,7 @@ ht-degree: 99%
    + Nivel de Author {#author-tier}
       + [Acceso al nivel de Author](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Protección del nivel de Author](/help/implementing/author-tier/securing-the-author-tier.md)
-   + Previsualizar nivel {#preview-tier}
+   + Nivel de vista previa {#preview-tier}
       + [Configuración de OSGi para el nivel de vista previa](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Información general sobre la distribución de contenido {#content-delivery}
       + [Flujo de distribución de contenido](/help/implementing/dispatcher/overview.md)
