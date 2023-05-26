@@ -1,21 +1,21 @@
 ---
-title: Preguntas frecuentes sobre imágenes inteligentes
+title: Imágenes inteligentes
 description: Descubra cómo Imágenes inteligentes con Adobe Sensei AI aplica las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas y optimizadas para su experiencia, lo que resulta en un mejor rendimiento y participación.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
 mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: b5c887d6a6ad1db5094609a8bc1b738c9ba5e8d6
+source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
 workflow-type: tm+mt
-source-wordcount: '3541'
+source-wordcount: '3531'
 ht-degree: 1%
 
 ---
 
 # Preguntas frecuentes sobre imágenes inteligentes {#smart-imaging}
 
-+++**¿Qué es &quot;Imágenes inteligentes&quot;?**
+## Acerca de las imágenes inteligentes
 
 La tecnología de imágenes inteligentes aplica las capacidades de IA de Adobe Sensei y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes. Funciona para mejorar el rendimiento de la entrega de imágenes al optimizar automáticamente el formato, el tamaño y la calidad de la imagen en función de las capacidades del explorador del cliente.
 
@@ -60,9 +60,7 @@ Consulte también [Optimización de imágenes con formatos de imagen de próxima
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-+++
-
-+++**¿Cuáles son las ventajas clave de las últimas imágenes inteligentes?**
+**Ventajas de las imágenes inteligentes**
 
 Imágenes inteligentes proporciona un mejor rendimiento de entrega de imágenes al optimizar automáticamente el tamaño del archivo de imagen en función del explorador del cliente en uso, la visualización del dispositivo y las condiciones de red. Dado que las imágenes constituyen la mayor parte del tiempo de carga de una página, cualquier mejora de rendimiento puede tener un profundo impacto en los KPI empresariales, como tasas de conversión más altas, tiempo invertido en un sitio y tasas de devolución del sitio más bajas.
 
@@ -70,11 +68,11 @@ Las ventajas clave más recientes de las imágenes inteligentes son las siguient
 
 * Ahora admite el formato AVIF de próxima generación.
 * Ahora, PNG a WebP y AVIF admiten la conversión con pérdidas. Como PNG es un formato sin pérdidas, las entregas anteriores de WebP y AVIF no sufrieron pérdidas.
-* Conversión de formato del explorador (`bfc`)
-* Proporción de píxeles del dispositivo (`dpr`)
-* Ancho de banda de red (`network`)
+* [Conversión de formato del explorador](#bfc)
+* [Proporción de píxeles del dispositivo](#dpr)
+* [Ancho de banda de red](#bandwidth)
 
-**Acerca de la conversión de formato de navegador (bfc)**
+### Acerca de la conversión de formato de navegador {#bfc}
 
 Activar la conversión de formato del explorador añadiendo `bfc=on` a la URL de la imagen convierte automáticamente JPEG y PNG en AVIF con pérdida, WebP con pérdida, JPEGXR con pérdida y JPEG con pérdida 2000 para diferentes exploradores. Para los navegadores que no admiten estos formatos, Smart Imaging sigue sirviendo al JPEG o PNG. Junto con el formato, Smart Imaging vuelve a calcular la calidad del nuevo formato.
 
@@ -82,7 +80,7 @@ Las imágenes inteligentes también se pueden desactivar añadiendo `bfc=off` a 
 
 Consulte también [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) en la API de servicio y procesamiento de imágenes de Dynamic Media.
 
-**Acerca de la proporción de píxeles del dispositivo (dpr)** optimización
+### Acerca de la optimización de la proporción de píxeles del dispositivo** {#dpr}
 
 La proporción de píxeles del dispositivo (DPR), también conocida como proporción de píxeles CSS, es la relación entre los píxeles físicos de un dispositivo y los píxeles lógicos. Especialmente con la llegada de las pantallas de retina, la resolución de píxeles de los dispositivos móviles modernos está creciendo a un ritmo rápido.
 
@@ -108,7 +106,7 @@ Actualmente, la densidad de píxeles de la visualización proviene de los valore
 
 Consulte también [Al trabajar con imágenes](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Al trabajar con Recorte inteligente](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-**Acerca de la optimización del ancho de banda**
+### Acerca de la optimización del ancho de banda {#bandwidth}
 
 Al activar Ancho de banda de red, se ajusta automáticamente la calidad de imagen que se proporciona en función del ancho de banda real de la red. Para un ancho de banda de red deficiente, la optimización de la RGPD (proporción de píxeles del dispositivo) se desactiva automáticamente, incluso si ya está activada.
 
@@ -128,8 +126,6 @@ Los valores de RGPD y ancho de banda de red se basan en los valores detectados d
 * TTL (Tiempo de vida) independiente. Anteriormente, era obligatorio un TTL mínimo de 12 horas para que las imágenes inteligentes funcionaran.
 * Anteriormente, tanto las imágenes originales como las derivadas se almacenaban en caché y se trataba de un proceso de 2 pasos para invalidar la caché. En las últimas imágenes inteligentes, solo se almacenan en caché los derivados, lo que permite un proceso de invalidación de la caché de un solo paso.
 * Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de la última versión de imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Tiempo permitido origen&quot;, &quot;X-Robot&quot; como se sugiere en [Añadir un valor de encabezado personalizado a las respuestas de imagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
-
-+++
 
 +++**¿Existen costes de licencia asociados a las imágenes inteligentes?**
 
@@ -153,6 +149,26 @@ Cuando un consumidor solicita una imagen, Smart Imaging comprueba las caracterí
 * En los exploradores que no admiten estos formatos, se proporciona el formato de imagen solicitado originalmente.
 
 Si el tamaño de la imagen original es menor que el que produce Smart Imaging, se sirve la imagen original.
+
++++
+
++++**¿Se puede desactivar la imagen inteligente para cualquier solicitud?**
+
+Sí. Puede desactivar Imágenes inteligentes si agrega cualquiera de los siguientes modificadores:
+
+* `bfc=off` para desactivar la conversión de formato del explorador. Consulte también [Conversión de formato del explorador](#bfc).
+* `dpr=off` para desactivar la proporción de píxeles del dispositivo. Consulte también [Proporción de píxeles del dispositivo](#dpr).
+* `network=off` para desactivar el ancho de banda de la red. Consulte también [Ancho de banda de red](#network).
+
++++
+
++++**¿Es posible &quot;ajustar&quot; imágenes inteligentes?**
+
+Sí. Imágenes inteligentes tiene tres opciones que puede activar o desactivar.
+
+* [Conversión de formato del explorador](#bfc)
+* [Proporción de píxeles del dispositivo](#dpr)
+* [Ancho de banda de red](#network)
 
 +++
 
@@ -338,26 +354,6 @@ Este encabezado indica lo siguiente:
 +++**¿Puedo desactivar la optimización AVIF en imágenes inteligentes?**
 
 Sí. Si desea volver a ofrecer WebP de forma predeterminada, cree un caso de soporte para el mismo. Como de costumbre, puede desactivar Imágenes inteligentes añadiendo el parámetro `bfc=off` a la URL de la imagen. Sin embargo, no puede seleccionar WebP o AVIF en el modificador URL para Imágenes inteligentes. Esta capacidad se mantiene en el nivel de cuenta de la compañía.
-
-+++
-
-+++**¿Se puede desactivar la imagen inteligente para cualquier solicitud?**
-
-Sí. Puede desactivar Imágenes inteligentes si agrega cualquiera de los siguientes modificadores:
-
-* `bfc=off` para desactivar la conversión de formato del explorador. Consulte también [Conversión de formato del explorador](#bfc).
-* `dpr=off` para desactivar la proporción de píxeles del dispositivo. Consulte también [Proporción de píxeles del dispositivo](#dpr).
-* `network=off` para desactivar el ancho de banda de la red. Consulte también [Ancho de banda de red](#network).
-
-+++
-
-+++**¿Es posible &quot;ajustar&quot; imágenes inteligentes?**
-
-Sí. Imágenes inteligentes tiene tres opciones que puede activar o desactivar.
-
-* [Conversión de formato del explorador](#bfc)
-* [Proporción de píxeles del dispositivo](#dpr)
-* [Ancho de banda de red](#network)
 
 +++
 
