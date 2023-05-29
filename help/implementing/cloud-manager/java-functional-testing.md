@@ -1,17 +1,17 @@
 ---
 title: Pruebas funcionales de Java
-description: AEM Obtenga información sobre cómo escribir pruebas funcionales de Java para la creación de pruebas as a Cloud Service
+description: Obtenga información sobre cómo escribir pruebas funcionales de Java para AEM as a Cloud Service
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
 source-git-commit: cda1f51c89a98cfb75d63f8bd9b54e76ee745aa7
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
-# Pruebas funcionales de Java
+# Prueba funcional de Java
 
-AEM Obtenga información sobre cómo escribir pruebas funcionales de Java para la creación de pruebas as a Cloud Service
+Obtenga información sobre cómo escribir pruebas funcionales de Java para AEM as a Cloud Service
 
 ## Introducción a las pruebas funcionales {#getting-started-functional-tests}
 
@@ -97,19 +97,19 @@ Consulte el [`aem-testing-clients` Repositorio de GitHub](https://github.com/ado
 >
 >Para ejecutar las pruebas funcionales desde el equipo local, cree un usuario con permisos de tipo administrador para lograr el mismo comportamiento.
 
-1. La infraestructura en contenedores con ámbitos para las pruebas funcionales está limitada por los límites siguientes:
+1. La infraestructura contenerizada que se contempla para las pruebas funcionales está limitada por los siguientes límites:
 
 
 | Tipo | Valor | Descripción |
 |----------------------|-------|--------------------------------------------------------------------|
-| CPU | 0.5 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
-| Memoria | 0.5Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes |
-| Tiempo de espera | 30m | La duración tras la cual finalizará la prueba. |
+| CPU | 0,5 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
+| Memoria | 0,5Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes |
+| Tiempo de espera | 30m | Duración tras la cual se terminará la prueba. |
 | Duración recomendada | 15m | Se recomienda escribir las pruebas para que no tarden más de este tiempo. |
 
 >[!NOTE]
 >
-> Si necesita más recursos, cree un caso de servicio de atención al cliente y describa su caso de uso; nuestro equipo revisará su solicitud y proporcionará la asistencia adecuada.
+> Si necesita más recursos, cree un caso del Servicio de atención al cliente y describa su caso de uso; nuestro equipo revisará su solicitud y le proporcionará la asistencia adecuada.
 
 
 ### Ejecución de pruebas locales {#local-test-execution}
@@ -126,13 +126,13 @@ Las propiedades del sistema son las siguientes:
 
 | Propiedad | Descripción | Ejemplos |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | la cantidad de instancias que coinciden con cloud service debe establecerse en `2` | `2` |
-| `sling.it.instance.url.1` | debe configurarse en la dirección URL del autor | `http://localhost:4502` |
-| `sling.it.instance.runmode.1` | runmode de la primera instancia debe configurarse como `author` | `author` |
-| `sling.it.instance.adminUser.1` | debe configurarse como usuario administrador de autor. | `admin` |
+| `sling.it.instances` | cantidad de instancias, para que coincidan con el servicio en la nube debe establecerse en `2` | `2` |
+| `sling.it.instance.url.1` | debe establecerse en la URL de autor | `http://localhost:4502` |
+| `sling.it.instance.runmode.1` | el modo de ejecución de la primera instancia debe establecerse en `author` | `author` |
+| `sling.it.instance.adminUser.1` | debe establecerse en el usuario administrador del autor. | `admin` |
 | `sling.it.instance.adminPassword.1` | debe establecerse en la contraseña de administrador de autor. |  |
 | `sling.it.instance.url.2` | debe establecerse en la URL de publicación | `http://localhost:4503` |
-| `sling.it.instance.runmode.2` | runmode de la segunda instancia debe configurarse como `publish` | `publish` |
+| `sling.it.instance.runmode.2` | modo de ejecución de la segunda instancia, debe configurarse como `publish` | `publish` |
 | `sling.it.instance.adminUser.2` | debe establecerse en el usuario administrador de publicación. | `admin` |
 | `sling.it.instance.adminPassword.2` | debe establecerse en la contraseña de administrador de publicación. |  |
 

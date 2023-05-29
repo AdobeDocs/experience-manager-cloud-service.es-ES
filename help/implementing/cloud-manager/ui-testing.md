@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
 workflow-type: tm+mt
 source-wordcount: '2411'
-ht-degree: 75%
+ht-degree: 77%
 
 ---
 
@@ -248,13 +248,13 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 >
 >Para ejecutar las pruebas funcionales desde el equipo local, cree un usuario con permisos de tipo administrador para lograr el mismo comportamiento.
 
-* La infraestructura en contenedores con ámbitos para las pruebas funcionales está limitada por los límites siguientes:
+* La infraestructura contenerizada que se contempla para las pruebas funcionales está limitada por los siguientes límites:
 
 | Tipo | Valor | Descripción |
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
 | Memoria | 1Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes |
-| Tiempo de espera | 30m | La duración tras la cual finalizará la prueba. |
+| Tiempo de espera | 30m | Duración tras la cual se terminará la prueba. |
 | Duración recomendada | 15m | El Adobe recomienda escribir las pruebas para que no tarden más de este tiempo. |
 
 >[!NOTE]
@@ -309,7 +309,9 @@ Las pruebas a veces deben cargar archivos en la aplicación que se está proband
 
 ## Ejecución de pruebas de IU locales {#run-ui-tests-locally}
 
-Antes de activar pruebas de interfaz de usuario en una canalización de Cloud Manager, se recomienda ejecutar las pruebas de interfaz de usuario localmente en la canalización [AEM SDK as a Cloud Service de](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) AEM o contra una instancia as a Cloud Service real de la.
+Antes de activar pruebas de IU en una canalización de Cloud Manager, se recomienda ejecutar las pruebas de IU localmente en
+el [SDK de AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 
+o en una instancia de AEM as a Cloud Service real.
 
 ### Ejemplo Cypress Test {#cypress-sample}
 

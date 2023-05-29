@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
 source-wordcount: '1596'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -1291,16 +1291,16 @@ Esta consulta busca lo siguiente:
 
 ### Consulta de muestra para un fragmento de contenido anidado: tipo de modelo múltiple {#sample-wknd-nested-fragment-multiple-model}
 
-#### Tipo de modelo referenciado único
+#### Tipo de modelo al que se hace referencia única
 
 Esta consulta busca lo siguiente:
 
 * para varios fragmentos de contenido de tipo `bookmark`
-   * con referencias de fragmento a otros fragmentos del tipo de modelo específico `Article`
+   * con Referencias de fragmento a otros fragmentos de tipos de modelo específicos `Article` 
 
 >[!NOTE]
 >
->El campo `fragments` tiene el tipo de datos `fragment-reference`, con el modelo `Article` seleccionados. La consulta ofrece `fragments` como una matriz de `[Article]`.
+>El campo `fragments` tiene el Tipo de datos `fragment-reference`, con el modelo `Article` seleccionado. Entregas de consultas `fragments` como una matriz de `[Article]`.
 
 ```graphql
 {
@@ -1315,7 +1315,7 @@ Esta consulta busca lo siguiente:
 }
 ```
 
-#### Varios tipos de modelos referenciados
+#### Varios tipos de modelo a los que se hace referencia
 
 Esta consulta busca lo siguiente:
 
@@ -1324,7 +1324,7 @@ Esta consulta busca lo siguiente:
 
 >[!NOTE]
 >
->El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados. La consulta ofrece `fragments` como una matriz de `[AllFragmentModels]`, a la que se hace referencia con el tipo de unión.
+>El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados. Entregas de consultas `fragments` como una matriz de `[AllFragmentModels]`, a la que se hace referencia con el tipo de unión.
 
 ```graphql
 {
