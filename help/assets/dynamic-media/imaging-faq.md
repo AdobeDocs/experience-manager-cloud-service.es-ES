@@ -4,11 +4,11 @@ description: Descubra cómo Imágenes inteligentes con Adobe Sensei AI aplica la
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: null
+mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
+source-git-commit: c7555ef31d7657b4a90764224f4c8c58a6228157
 workflow-type: tm+mt
-source-wordcount: '3531'
+source-wordcount: '3539'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ Las imágenes inteligentes también se pueden desactivar añadiendo `bfc=off` a 
 
 Consulte también [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) en la API de servicio y procesamiento de imágenes de Dynamic Media.
 
-### Acerca de la optimización de la proporción de píxeles del dispositivo** {#dpr}
+### Acerca de la optimización de proporción de píxeles de dispositivo {#dpr}
 
 La proporción de píxeles del dispositivo (DPR), también conocida como proporción de píxeles CSS, es la relación entre los píxeles físicos de un dispositivo y los píxeles lógicos. Especialmente con la llegada de las pantallas de retina, la resolución de píxeles de los dispositivos móviles modernos está creciendo a un ritmo rápido.
 
@@ -127,17 +127,7 @@ Los valores de RGPD y ancho de banda de red se basan en los valores detectados d
 * Anteriormente, tanto las imágenes originales como las derivadas se almacenaban en caché y se trataba de un proceso de 2 pasos para invalidar la caché. En las últimas imágenes inteligentes, solo se almacenan en caché los derivados, lo que permite un proceso de invalidación de la caché de un solo paso.
 * Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de la última versión de imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Tiempo permitido origen&quot;, &quot;X-Robot&quot; como se sugiere en [Añadir un valor de encabezado personalizado a las respuestas de imagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-+++**¿Existen costes de licencia asociados a las imágenes inteligentes?**
-
-No. Las imágenes inteligentes se incluyen con la licencia existente. Esta regla es verdadera para Dynamic Media Classic o para Experience Manager: Dynamic Media (local, AMS y Experience Manager as a Cloud Service).
-
->[!IMPORTANT]
->
->Las imágenes inteligentes no están disponibles para los clientes híbridos de Dynamic Media.
-
-+++
-
-+++**¿Cómo funciona la imagen inteligente?**
+## ¿Cómo funciona la imagen inteligente**
 
 Cuando un consumidor solicita una imagen, Smart Imaging comprueba las características del usuario y la convierte al formato de imagen adecuado en función del explorador en uso. Estas conversiones de formato se realizan de una manera que no degrada la fidelidad visual. Las imágenes inteligentes convierten automáticamente las imágenes a diferentes formatos, según la capacidad del explorador, de la siguiente manera.
 
@@ -149,6 +139,30 @@ Cuando un consumidor solicita una imagen, Smart Imaging comprueba las caracterí
 * En los exploradores que no admiten estos formatos, se proporciona el formato de imagen solicitado originalmente.
 
 Si el tamaño de la imagen original es menor que el que produce Smart Imaging, se sirve la imagen original.
+
+## Formatos de imagen compatibles con Smart Imaging
+
+Se admiten los siguientes formatos de imagen para imágenes inteligentes:
+
+* JPEG
+* PNG
+
+Para un formato de archivo de imagen JPEG, Smart Imaging vuelve a calcular la calidad del nuevo formato.
+
+Para formatos de archivo de imagen compatibles con transparencias como PNG, puede configurar Imágenes inteligentes para proporcionar AVIF y WebP con pérdidas. Para la conversión de formato con pérdida, Imágenes inteligentes utiliza la calidad mencionada en la dirección URL de la imagen o, de lo contrario, la calidad configurada en la cuenta de empresa de Dynamic Media.
+
+## Comandos de servicio de imágenes que Smart Imaging ignora y admite
+
+Los únicos comandos del servicio de imágenes que Smart Imaging ignora son `fmt` y `qlt`. Se admiten todos los comandos restantes.
+
+
++++**¿Existen costes de licencia asociados a las imágenes inteligentes?**
+
+No. Las imágenes inteligentes se incluyen con la licencia existente. Esta regla es verdadera para Dynamic Media Classic o para Experience Manager: Dynamic Media (local, AMS y Experience Manager as a Cloud Service).
+
+>[!IMPORTANT]
+>
+>Las imágenes inteligentes no están disponibles para los clientes híbridos de Dynamic Media.
 
 +++
 
@@ -169,19 +183,6 @@ Sí. Imágenes inteligentes tiene tres opciones que puede activar o desactivar.
 * [Conversión de formato del explorador](#bfc)
 * [Proporción de píxeles del dispositivo](#dpr)
 * [Ancho de banda de red](#network)
-
-+++
-
-+++**¿Qué formatos de imagen se admiten?**
-
-Se admiten los siguientes formatos de imagen para imágenes inteligentes:
-
-* JPEG
-* PNG
-
-Para un formato de archivo de imagen JPEG, Smart Imaging vuelve a calcular la calidad del nuevo formato.
-
-Para formatos de archivo de imagen compatibles con transparencias como PNG, puede configurar Imágenes inteligentes para proporcionar AVIF y WebP con pérdidas. Para la conversión de formato con pérdida, Imágenes inteligentes utiliza la calidad mencionada en la dirección URL de la imagen o, de lo contrario, la calidad configurada en la cuenta de empresa de Dynamic Media.
 
 +++
 
@@ -390,12 +391,6 @@ No. Actualmente no existe ese aprovisionamiento.
 +++**¿Smart Imaging ajusta la configuración de salida de calidad porcentual?**
 
 Sí. Imágenes inteligentes ajusta automáticamente el porcentaje de calidad. Este porcentaje de calidad se determina mediante un algoritmo de aprendizaje automático desarrollado por Adobe. Este porcentaje no es específico del intervalo.
-
-+++
-
-+++**¿Qué comandos de servicio de imágenes se admiten o se omiten?**
-
-Los únicos comandos que se omiten son `fmt` y `qlt`. Se admiten todos los comandos restantes.
 
 +++
 
