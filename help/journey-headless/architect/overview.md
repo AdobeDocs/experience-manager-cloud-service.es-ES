@@ -2,7 +2,7 @@
 title: Recorrido para arquitectos de contenido sin encabezado de AEM
 description: Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles del contenido de AEM sin encabezado, sus funcionalidades y cómo diseñar el contenido en su primer proyecto sin encabezado.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 # Recorrido para arquitectos de contenido sin encabezado de AEM {#aem-headless-content-architect-journey}
 
 Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles del contenido de AEM sin encabezado, sus funcionalidades y cómo aprovecharlas en su primer proyecto sin encabezado.
+
+{{headless-trials-promotion}}
 
 ## Introducción {#introduction}
 

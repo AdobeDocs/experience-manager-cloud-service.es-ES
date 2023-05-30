@@ -2,7 +2,7 @@
 title: 'Creación para AEM como un CMS sin encabezado: una introducción'
 description: Una introducción al uso de las características de Adobe Experience Manager as a Cloud Service como un CMS sin encabezado para crear contenido para su proyecto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 # Creación para AEM como un CMS sin encabezado: una introducción {#author-headless-introduction}
 
 En esta parte del [recorrido del autor de contenido sin encabezado de AEM](overview.md), puede aprender los conceptos (básicos) y la terminología necesaria para comprender la creación de contenido cuando utilice Adobe Experience Manager (AEM) as a Cloud Service como un CMS sin encabezado. Esto implica la estructuración y la creación de contenidos para la entrega de contenidos sin encabezado.
+
+{{headless-trials-promotion}}
 
 ## Objetivo {#objective}
 
