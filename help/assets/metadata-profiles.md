@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
 workflow-type: tm+mt
 source-wordcount: '1408'
 ht-degree: 20%
@@ -106,7 +106,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de me
 
 **Para aplicar un perfil de metadatos globalmente, realice una de las siguientes acciones**
 
-* Vaya a `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` y aplique el perfil adecuado y haga clic en **[!UICONTROL Guardar]**.
+* Vaya a `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` y aplique el perfil adecuado y haga clic en **[!UICONTROL Guardar]**.
 
 * Vaya al CRXDE Lite en el siguiente nodo: `/content/dam/jcr:content`. Añadir la propiedad `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Haga clic en **Guardar todo**.
 
@@ -133,11 +133,11 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **Herramientas
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
