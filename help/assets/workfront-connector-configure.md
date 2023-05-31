@@ -4,14 +4,19 @@ description: Configuración de [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 109f07c7273cc9a4890e41bf29a1509f738d130b
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
 
 # Configuración de [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM as a Cloud Service | Este artículo |
 
 Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] configura el conector mejorado después de instalarlo. Para obtener instrucciones de instalación, consulte [Instale el conector](/help/assets/workfront-integrations.md).
 
@@ -124,14 +129,14 @@ Este paso del flujo de trabajo permite que un usuario asigne una propiedad a una
    * AEM Una propiedad de. Esta referencia debe ser relativa a la carga útil del flujo de trabajo.
    * Un valor con nombre. Estos deben ir entre corchetes.
    * Una concatenación de los tres elementos anteriores. Especifíquelo mediante `{+}`.
-   * Una modificación de los 3 elementos anteriores al rodear el valor con `{replace(<value>,”old-char”,”new-char”)}`.
+   * Una modificación de los 3 elementos anteriores al rodear el valor con `{replace(<value>,"old-char","new-char")}`.
 
 * Algunos ejemplos son:
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Configuración para asignar la propiedad](/help/assets/assets/wf-map-property-config.png)
 
