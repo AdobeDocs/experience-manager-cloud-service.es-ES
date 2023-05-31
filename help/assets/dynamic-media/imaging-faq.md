@@ -6,16 +6,16 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: c48885dc11b0162f0288962a53e1d95574a3d406
+source-git-commit: 6f9ddcf31a1869bb8bebb566d05c371e996fe354
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3535'
 ht-degree: 1%
 
 ---
 
-# Preguntas frecuentes sobre imágenes inteligentes {#smart-imaging}
+# Imágenes inteligentes {#smart-imaging}
 
-## Acerca de las imágenes inteligentes
+## Acerca de las imágenes inteligentes{#about-smart-imaging}
 
 La tecnología de imágenes inteligentes aplica las capacidades de IA de Adobe Sensei y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes. Funciona para mejorar el rendimiento de la entrega de imágenes al optimizar automáticamente el formato, el tamaño y la calidad de la imagen en función de las capacidades del explorador del cliente.
 
@@ -127,7 +127,7 @@ Los valores de RGPD y ancho de banda de red se basan en los valores detectados d
 * Anteriormente, tanto las imágenes originales como las derivadas se almacenaban en caché y se trataba de un proceso de 2 pasos para invalidar la caché. En las últimas imágenes inteligentes, solo se almacenan en caché los derivados, lo que permite un proceso de invalidación de la caché de un solo paso.
 * Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de la última versión de imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Tiempo permitido origen&quot;, &quot;X-Robot&quot; como se sugiere en [Añadir un valor de encabezado personalizado a las respuestas de imagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Funcionamiento de las imágenes inteligentes
+## Funcionamiento de las imágenes inteligentes{#how-smart-imaging-works}
 
 Cuando un consumidor solicita una imagen, Smart Imaging comprueba las características del usuario y la convierte al formato de imagen adecuado en función del explorador en uso. Estas conversiones de formato se realizan de una manera que no degrada la fidelidad visual. Las imágenes inteligentes convierten automáticamente las imágenes a diferentes formatos, según la capacidad del explorador, de la siguiente manera.
 
@@ -140,7 +140,7 @@ Cuando un consumidor solicita una imagen, Smart Imaging comprueba las caracterí
 
 Si el tamaño de la imagen original es menor que el que produce Smart Imaging, se sirve la imagen original.
 
-## Compatibilidad con formatos de imagen en imágenes inteligentes
+## Compatibilidad con formatos de imagen en imágenes inteligentes{#image-format-support}
 
 Se admiten los siguientes formatos de imagen para imágenes inteligentes:
 
@@ -151,11 +151,11 @@ Para un formato de archivo de imagen JPEG, Smart Imaging vuelve a calcular la ca
 
 Para formatos de archivo de imagen compatibles con transparencias como PNG, puede configurar Imágenes inteligentes para proporcionar AVIF y WebP con pérdidas. Para la conversión de formato con pérdida, Imágenes inteligentes utiliza la calidad mencionada en la dirección URL de la imagen o, de lo contrario, la calidad configurada en la cuenta de empresa de Dynamic Media.
 
-## Compatibilidad con comandos de Image Serving en Imágenes inteligentes
+## Compatibilidad con comandos de Image Serving en Imágenes inteligentes{#imaging-serving-command-support}
 
 Los comandos del servicio de imágenes `fmt` y `qlt` no son compatibles; se admiten todos los comandos restantes.
 
-## Preguntas más frecuentes sobre imágenes inteligentes
+## Preguntas más frecuentes sobre imágenes inteligentes{#smart-imaging-faq}
 
 +++**¿Existen costes de licencia asociados a las imágenes inteligentes?**
 
