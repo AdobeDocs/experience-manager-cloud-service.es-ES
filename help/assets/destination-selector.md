@@ -2,9 +2,8 @@
 title: AEM Selector de destino para la as a Cloud Service
 description: AEM Utilice el Selector de destino de la para mostrar y seleccionar recursos que puede utilizar como copia del recurso original.
 contentOwner: Adobe
-feature: destination selector
 role: Admin,User
-source-git-commit: fc156b95ebbdb0546f9fb334b0cb6f599f5f2692
+source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 3%
