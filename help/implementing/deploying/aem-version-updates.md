@@ -3,7 +3,7 @@ title: Actualizaciones de la versión de AEM
 description: AEM Descubra cómo utiliza la integración y el envío continuos (CI/CD) para mantener sus proyectos en la versión más reciente de los que utiliza as a Cloud Service.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
+source-git-commit: dd1560aa4d260320f565ad993a8b3650c3ee5288
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 23%
@@ -49,8 +49,8 @@ Si la actualización al entorno de producción falla, Cloud Manager restablecer�
 
 ## Almacén de nodos compuestos {#composite-node-store}
 
-Las actualizaciones en la mayoría de los casos no implican ningún tiempo de inactividad, incluida la instancia de creación, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a [la función de almacén de nodos compuestos en Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+En la mayoría de los casos, las actualizaciones no implican ningún tiempo de inactividad, incluida la instancia de creación, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a [la función de almacén de nodos compuestos en Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-AEM Esta función permite a los usuarios hacer referencia a varios repositorios de forma simultánea. En un entorno móvil [implementación azul-verde,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) AEM la nueva versión de la red verde de la red contiene su propia versión `/libs` AEM (el repositorio inmutable basado en TarMK), distinto de la versión anterior de la versión azul de la, aunque ambos hacen referencia a un repositorio mutable basado en DocumentMK compartido que contiene áreas como `/content` , `/conf` , `/etc` y otros.
+AEM Esta función permite a los usuarios hacer referencia a varios repositorios de forma simultánea. En un [implementación móvil,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) AEM la nueva versión de la contiene su propio `/libs` AEM (el repositorio inmutable basado en TarMK), distinto de la versión más antigua, aunque ambos hacen referencia a un repositorio mutable basado en DocumentMK compartido que contiene áreas como `/content` , `/conf` , `/etc` y otros.
 
-Porque tanto el azul como el verde tienen sus propias versiones de `/libs`, ambos pueden estar activos durante la actualización móvil, y activar el tráfico hasta que el azul se sustituya completamente por el verde.
+Porque tanto la versión antigua como la nueva tienen sus propias versiones de `/libs`Sin embargo, ambos pueden estar activos durante la actualización móvil y pueden asumir el tráfico hasta que el antiguo se sustituya completamente por el nuevo.

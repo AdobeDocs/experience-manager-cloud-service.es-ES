@@ -2,10 +2,10 @@
 title: Búsqueda de contenido e indexación
 description: Búsqueda de contenido e indexación
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6fd5f8e7a9699f60457e232bb3cfa011f34880e9
+source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
 workflow-type: tm+mt
-source-wordcount: '2498'
-ht-degree: 87%
+source-wordcount: '2491'
+ht-degree: 78%
 
 ---
 
@@ -24,7 +24,7 @@ A continuación se muestra una lista de los principales cambios en comparación 
 1. Los clientes podrán configurar alertas según sus necesidades.
 1. Los SRE supervisan el estado del sistema las 24 horas del día y los siete días de la semana, y adoptarán las medidas necesarias lo antes posible.
 1. La configuración del índice se cambia mediante implementaciones. Los cambios en la definición del índice se configuran como otros cambios en el contenido.
-1. A un nivel alto sobre AEM as a Cloud Service, con la introducción del [Modelo de implementación azul-verde](#index-management-using-blue-green-deployments), existirán dos conjuntos de índices: un conjunto para la versión antigua (azul) y otro para la nueva (verde).
+1. AEM A un alto nivel sobre el as a Cloud Service de la, con la introducción de la [modelo de implementación móvil](#index-management-using-rolling-deployments) existirán dos conjuntos de índices: un conjunto para la versión antigua y otro conjunto para la nueva.
 1. Los clientes pueden ver si el trabajo de indexación se ha completado en la página de creación de Cloud Manager y recibirán una notificación cuando la nueva versión esté lista para admitir tráfico.
 
 Restricciones:
@@ -143,7 +143,7 @@ En `ui.apps.structure/pom.xml`, la sección `filters` para este complemento debe
 <filter><root>/oak:index</root></filter>
 ```
 
-Una vez añadida la nueva definición de índice, la nueva aplicación debe implementarse mediante Cloud Manager. Tras la implementación se inician dos trabajos, responsables de añadir (y combinar si es necesario) las definiciones de índice a MongoDB y Azure Segment Store para la creación y publicación, respectivamente. Los repositorios subyacentes se están reindexando con las nuevas definiciones de índice, antes de que tenga lugar el cambio azul-verde.
+Una vez añadida la nueva definición de índice, la nueva aplicación debe implementarse mediante Cloud Manager. Tras la implementación, se inician dos trabajos responsables de agregar (y combinar si es necesario) las definiciones de índice a MongoDB y Azure Segment Store para la creación y publicación, respectivamente. Los repositorios subyacentes se reindexan con las nuevas definiciones de índice, antes de que tenga lugar el cambio.
 
 ### NOTA
 
@@ -207,19 +207,19 @@ A continuación se muestra un ejemplo de dónde colocar la configuración anteri
 >
 >Para obtener más información sobre la estructura de paquetes necesaria para AEM as a Cloud Service, consulte el documento [Estructura del proyecto de AEM.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
-## Administración de índices mediante implementaciones azul-verde {#index-management-using-blue-green-deployments}
+## Administración de índices mediante implementaciones móviles {#index-management-using-rolling-deployments}
 
 ### Qué es la administración de índices {#what-is-index-management}
 
 La administración de índices consiste en añadir, quitar y cambiar índices. Cambiar la *definición* de un índice es rápido, pero la aplicación del cambio (a menudo llamado “creación de un índice” o, para los índices existentes, “reindexación”) requiere tiempo. No es instantáneo: el repositorio debe analizarse para indexar los datos.
 
-### Qué es la implementación azul-verde {#what-is-blue-green-deployment}
+### Qué son las implementaciones móviles {#what-are-rolling-deployments}
 
-La implementación azul-verde puede reducir el tiempo de inactividad. También permite llevar a cabo actualizaciones sin tiempo de inactividad y proporciona reversiones rápidas. La versión antigua de la aplicación (azul) se ejecuta al mismo tiempo que la nueva (verde).
+Una implementación móvil puede reducir el tiempo de inactividad. También permite llevar a cabo actualizaciones sin tiempo de inactividad y proporciona reversiones rápidas. La versión antigua de la aplicación se ejecuta al mismo tiempo que la nueva.
 
 ### Áreas de solo lectura y de lectura-escritura {#read-only-and-read-write-areas}
 
-Algunas áreas del repositorio (partes de solo lectura) pueden ser diferentes en la versión antigua (azul) y en la nueva (verde) de la aplicación. Las áreas de solo lectura del repositorio suelen ser “`/app`” y “`/libs`”. En el siguiente ejemplo, se utiliza la cursiva para marcar las áreas de solo lectura, y la negrita para las de lectura-escritura.
+Ciertas áreas del repositorio (partes de solo lectura) pueden ser diferentes en la versión antigua y en la nueva de la aplicación. Las áreas de solo lectura del repositorio suelen ser `/app` y `/libs`. En el siguiente ejemplo, se utiliza la cursiva para marcar las áreas de solo lectura, y la negrita para las de lectura-escritura.
 
 * **/**
 * */apps (solo lectura)*
@@ -233,13 +233,13 @@ Algunas áreas del repositorio (partes de solo lectura) pueden ser diferentes en
 
 Las áreas de lectura-escritura del repositorio se comparten entre todas las versiones de la aplicación, mientras que, para cada versión de esta, hay un conjunto específico de `/apps` y `/libs`.
 
-### Administración de índices sin implementación azul-verde {#index-management-without-blue-green-deployment}
+### Administración de índices sin implementaciones móviles {#index-management-without-rolling-deployments}
 
 Durante el desarrollo o al utilizar instalaciones locales, los índices se pueden añadir, eliminar o cambiar en tiempo de ejecución. Los índices se utilizan en cuanto están disponibles. Si se supone que un índice no se va a utilizar todavía en la versión antigua de la aplicación, se suele construir durante un tiempo de inactividad programado. Lo mismo ocurre cuando se elimina un índice o se cambia uno existente. Al eliminar un índice, deja de estar disponible en ese mismo momento.
 
-### Administración de índices con implementación azul-verde {#index-management-with-blue-green-deployment}
+### Administración De Índices Con Implementaciones Móviles {#index-management-with-rolling-deployments}
 
-Con las implementaciones azul-verde, no hay tiempo de inactividad. En una actualización, durante algún tiempo, tanto la versión antigua (por ejemplo, la 1) de la aplicación, como la nueva (2), se ejecutan a la vez en el mismo repositorio. Si la versión 1 requiere que haya un determinado índice disponible, este no debe eliminarse en la 2: debe suprimirse más adelante (por ejemplo, en la 3), momento en el que se garantiza que la versión 1 de la aplicación ya no se está ejecutando. Además, las aplicaciones deben escribirse de tal manera que la versión 1 funcione bien, incluso si la 2 se está ejecutando y hay índices de ella disponibles.
+Con las implementaciones móviles, no hay tiempo de inactividad. Durante algún tiempo durante una actualización, tanto la versión antigua (por ejemplo, la 1) de la aplicación, como la nueva (2), se ejecutan a la vez en el mismo repositorio. Si la versión 1 requiere que haya un determinado índice disponible, este no debe eliminarse en la 2. El índice debe eliminarse más adelante, por ejemplo, en la versión 3, momento en el que se garantiza que la versión 1 de la aplicación ya no se está ejecutando. Además, las aplicaciones deben escribirse de tal manera que la versión 1 funcione bien, incluso si la 2 se está ejecutando y hay índices de ella disponibles.
 
 Una vez completada la actualización a la nueva versión, el sistema puede retirar los índices antiguos. Es posible que los índices antiguos se mantengan durante algún tiempo para acelerar las reversiones (si fueran necesarias).
 
