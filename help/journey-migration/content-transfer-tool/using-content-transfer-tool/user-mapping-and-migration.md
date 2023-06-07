@@ -2,10 +2,10 @@
 title: Asignación de usuarios y migración de principales
 description: Información general sobre asignación de usuarios y migración de principales
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: caa04391077d594a828a42a1a5a6a03daa107168
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 9%
+source-wordcount: '832'
+ht-degree: 8%
 
 ---
 
@@ -25,9 +25,13 @@ Como parte del recorrido de transición a Adobe Experience Manager AEM () as a C
 
 Un cambio importante en AEM as a Cloud Service es el uso completamente integrado de Adobe ID para acceder al nivel de creación. Este proceso requiere el uso del [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar usuarios y grupos de usuarios. La información de perfil de usuario está centralizada en el sistema Identity Management de Adobe (IMS), que proporciona un inicio de sesión único en todas las aplicaciones de la nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Debido a este cambio, los usuarios existentes deben asignarse a sus ID de IMS para evitar usuarios duplicados en la instancia de autor del Cloud Service. AEM Dado que los grupos de los grupos tradicionales son fundamentalmente diferentes de los grupos de IMS, los grupos no se asignan, pero los dos conjuntos de grupos deben reconciliarse una vez completada la migración.
 
-## Asignación de usuarios y detalles de migración {#user-mapping-detail}
+## Detalles de migración de usuarios {#user-migration-detail}
 
-La herramienta de transferencia de contenido y Cloud Acceleration Manager migran cualquier usuario asociado con el contenido que se migra. Esta asignación se realiza automáticamente y se puede controlar mediante un conmutador antes de iniciar la extracción. El usuario puede anular la configuración predeterminada de la opción al iniciar la extracción.
+La herramienta de transferencia de contenido y Cloud Acceleration Manager migrarán al sistema en la nube todos los usuarios asociados con el contenido que se está migrando.
+
+## Detalles de asignación de usuarios {#user-mapping-detail}
+
+AEM Los usuarios de Adobe IMS se pueden asignar a los usuarios de Adobe IMS correspondientes con la misma dirección de correo electrónico.  Esta asignación se puede realizar automáticamente en CTT y se puede controlar mediante un conmutador antes de iniciar la extracción. El usuario puede anular la configuración predeterminada de la opción al iniciar la extracción.
 
 * Si el sistema de origen es una instancia de autor, la opción predeterminada para realizar la asignación es _el_, porque es el proceso recomendado.
 * Si el sistema de origen es una instancia de publicación, la opción predeterminada para realizar la asignación es _desactivado_, porque los usuarios no se migran ni utilizan normalmente en instancias de publicación.
