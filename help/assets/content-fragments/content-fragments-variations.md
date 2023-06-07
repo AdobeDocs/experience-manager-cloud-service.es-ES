@@ -2,10 +2,10 @@
 title: 'Variaciones: Crear contenido de fragmentos (Recursos: fragmentos de contenido)'
 description: AEM Comprenda de qué forma las variaciones pueden hacer que el contenido sin encabezado sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de ese contenido según el propósito.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
-source-wordcount: '2288'
-ht-degree: 96%
+source-wordcount: '2455'
+ht-degree: 90%
 
 ---
 
@@ -43,19 +43,32 @@ Cuando abra el fragmento de contenido para editarlo, la pestaña **Variaciones**
 Por ejemplo:
 
 ![editor de pantalla completa](assets/cfm-variations-02.png)
+
 Puede hacer lo siguiente:
 
-* realice ediciones directamente en la pestaña **Variaciones** 
+* Edite el contenido directamente en la pestaña **Variaciones** pestaña; cada tipo de datos proporciona diferentes opciones de edición, por ejemplo:
 
-   * cada tipo de datos ofrece diferentes opciones de edición
+   * para los campos **Texto de varias líneas** también puede abrir los campos [editor de pantalla completa](#full-screen-editor) a:
 
-* para los campos **Texto de varias líneas** también puede abrir los campos [editor de pantalla completa](#full-screen-editor) a:
+      * seleccione el [Formato](#formats)
+      * consulte más opciones de edición (para formato de [Texto enriquecido](#rich-text))
+      * acceder a una amplia gama de [acciones](#actions)
+   * Para los campos **Referencia a fragmento** la opción [Editar fragmento de contenido](#fragment-references-edit-content-fragment) puede estar disponible, dependiendo de la definición del modelo.
 
-   * seleccione el [Formato](#formats)
-   * consulte más opciones de edición (para formato de [Texto enriquecido](#rich-text))
-   * acceder a una amplia gama de [acciones](#actions)
 
-* Para los campos **Referencia a fragmento** la opción **[Editar fragmento de contenido](#fragment-references-edit-content-fragment)** puede estar disponible, dependiendo de la definición del modelo.
+* Asignar **Etiquetas** a la variación actual; las etiquetas se pueden añadir, actualizar y eliminar
+
+   * Las [Etiquetas](/help/sites-cloud/authoring/features/tags.md) son especialmente potentes a la hora de organizar los fragmentos, ya que se pueden utilizar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para encontrar contenido (mediante etiquetas) y aplicar operaciones por lotes.
+
+      * Si busca una etiqueta, se devolverá el fragmento con la variación etiquetada resaltada.
+      * Las etiquetas de variación también se pueden utilizar para agrupar variaciones para un perfil específico de la red de distribución de contenido (CDN) (para el almacenamiento en caché de CDN), en lugar de utilizar el nombre de variación.
+
+      Por ejemplo, puede etiquetar fragmentos relevantes como &quot;lanzamiento de Navidad&quot; para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
+   >[!NOTE]
+   >
+   >**Etiquetas** también se puede añadir (a la **Principal** variación) como parte de la [Metadatos](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Crear y administrar variaciones](#managing-variations) del contenido **Principal.**
 
 ### Editor de pantalla completa {#full-screen-editor}
 
@@ -383,6 +396,9 @@ Para crear una nueva variación, haga lo siguiente:
    >[!NOTE]
    Al crear una variación nueva, siempre es **Principal** que se copia, no la variación que está abierta actualmente.
 
+   >[!NOTE]
+   Al crear una nueva variación, todas las variables **Etiquetas** asignado actualmente a **Principal** se copian en la nueva variación.
+
 ### Edición de una variación {#editing-a-variation}
 
 Puede realizar cambios en el contenido de la variación después de lo siguiente:
@@ -452,4 +468,4 @@ No está disponible como opción la transferencia de cambios *de una variación 
 
    ![sincronización con principal](assets/cfm-variations-11c.png)
 
-1. Seleccione **Sincronizar**, la variación se actualiza y se muestra.
+1. Seleccionar **Sincronizar**, la variación se actualizará y se mostrará.

@@ -3,10 +3,10 @@ title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muest
 description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
+source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 100%
+source-wordcount: '1760'
+ht-degree: 92%
 
 ---
 
@@ -356,6 +356,58 @@ Si crea una nueva variación, denominada “Centro de Berlín” (`berlin_centre
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Consulta de muestra: nombres de todas las ciudades Etiquetado como City Breaks {#sample-names-all-cities-tagged-city-breaks}
+
+Si:
+
+* cree una variedad de etiquetas, con el nombre `Tourism` : `Business`, `City Break`, `Holiday`
+* y asignarlas a la variación Principal de varios `City` instances
+
+A continuación, puede utilizar una consulta para devolver detalles de la `name` y `tags`de todas las entradas etiquetadas como City Breaks en la `city`esquema.
+
+**Consulta de muestra**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**Resultados de muestra**
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
           ]
         }
       ]
@@ -1533,6 +1585,62 @@ Esta consulta busca lo siguiente:
 }
 ```
 
+### Consulta de muestra para varios fragmentos de contenido y sus variaciones de un modelo determinado {#sample-wknd-multiple-fragment-variations-given-model}
+
+Esta consulta busca lo siguiente:
+
+* para fragmentos de contenido de tipo `article` y todas las variaciones
+
+**Consulta de muestra**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### Consulta de muestra para variaciones de fragmentos de contenido de un modelo determinado que tienen una etiqueta específica adjunta{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+Esta consulta busca lo siguiente:
+
+* para fragmentos de contenido de tipo `article` con una o más variaciones que tienen la etiqueta `WKND : Activity / Hiking`
+
+**Consulta de muestra**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
 ### Consulta de muestra para varios fragmentos de contenido de una configuración regional determinada {#sample-wknd-multiple-fragments-given-locale}
 
 Esta consulta busca lo siguiente:
@@ -1610,6 +1718,84 @@ Esta consulta busca lo siguiente:
         }
     }
 }
+```
+
+### Consulta de muestra con filtrado por ID de _tags y excluyendo variaciones {#sample-filtering-tag-not-variations}
+
+Esta consulta busca lo siguiente:
+
+* para fragmentos de contenido de tipo `vehicle` tener la etiqueta `big-block`
+* exclusión de variaciones
+
+**Consulta de muestra**
+
+```graphql
+query {
+  vehicleList(
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    items {
+      _variation
+      _path
+      type
+      name
+      model
+      fuel
+      _tags
+    }
+  }
+} 
+```
+
+### Consulta de muestra con filtrado por ID de _tags e incluidas variaciones {#sample-filtering-tag-with-variations}
+
+Esta consulta busca lo siguiente:
+
+* para fragmentos de contenido de tipo `vehicle` tener la etiqueta `big-block`
+* incluyendo variaciones
+
+**Consulta de muestra**
+
+```graphql
+{
+  enginePaginated(after: "SjkKNmVkODFmMGQtNTQyYy00NmQ4LTljMzktMjhlNzQwZTY1YWI2Cmo5", first: 9 ,includeVariations:true, sort: "name",
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    edges{
+    node {
+        _variation
+        _path
+        name
+        type
+        size
+        _tags
+        _metadata {
+          stringArrayMetadata {
+            name
+            value
+          }
+        }
+    }
+      cursor
+    }
+  }
+} 
 ```
 
 ## La estructura del fragmento de contenido de muestra (utilizada con GraphQL) {#content-fragment-structure-graphql}

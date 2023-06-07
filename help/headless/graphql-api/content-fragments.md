@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
+source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
 workflow-type: tm+mt
-source-wordcount: '4769'
-ht-degree: 98%
+source-wordcount: '4934'
+ht-degree: 96%
 
 ---
 
@@ -134,12 +134,16 @@ Aunque GraphQL también admite peticiones GET, estas pueden alcanzar límites (p
 
 Puede probar y depurar consultas de GraphQL usando el [IDE de GraphiQL](/help/headless/graphql-api/graphiql-ide.md).
 
-## Casos de uso para entornos de creación y publicación {#use-cases-author-publish-environments}
+## Casos de uso para creación, previsualización y publicación {#use-cases-author-preview-publish}
 
 Los casos de uso pueden depender del tipo de entorno de AEM as a Cloud Service:
 
 * Entorno de publicación; se usa para:
    * Datos de consulta para la aplicación JS (caso de uso estándar)
+
+* Entorno de vista previa; se usa para:
+   * Previsualizar consultas antes de implementar en el entorno de publicación
+      * Datos de consulta para la aplicación JS (caso de uso estándar)
 
 * Entorno de creación; se usa para:
    * Datos de consulta para “fines de administración de contenido”:
@@ -249,7 +253,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Lista desglosada | `String` | Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
 | Etiquetas | `[String]` | Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido | `String`, `[String]` | Se utiliza para mostrar la ruta hacia otro recurso en AEM |
-| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado directamente <br><br>Multicampo, con un tipo referenciado: `[Model]` - Matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multicampo, con varios tipos referenciados: `[AllFragmentModels]` : matriz de todos los tipos de modelo, a la que se hace referencia desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
+| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo al que se hace referencia directamente <br><br>Multicampo, con un tipo al que se hace referencia: `[Model]` matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multicampo, con varios tipos de referencia: `[AllFragmentModels]`: matriz de todos los tipos de modelo, referenciada desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
 
 {style="table-layout:auto"}
 
@@ -700,7 +704,7 @@ query {
 
 >[!NOTE]
 >
->* De forma predeterminada, la paginación utiliza el UUID del nodo del repositorio que representa el fragmento para ordenar, a fin de garantizar que el orden de los resultados siempre sea el mismo. Cuando se utiliza `sort`, el UUID se utiliza implícitamente para garantizar una clasificación única; incluso para dos elementos con claves de clasificación idénticas.
+>* De forma predeterminada, la paginación utiliza el UUID del nodo del repositorio que representa el fragmento para ordenar a fin de garantizar que el orden de los resultados sea siempre el mismo. Cuando se utiliza `sort`, el UUID se utiliza implícitamente para garantizar una clasificación única; incluso para dos elementos con claves de clasificación idénticas.
 >
 >* Debido a limitaciones técnicas internas, el rendimiento se degradará si se aplica clasificación y filtrado en los campos anidados. Por lo tanto, se recomienda utilizar campos de filtro/clasificación almacenados en el nivel raíz. Esta es también la forma recomendada si desea consultar grandes conjuntos de resultados paginados.
 
@@ -932,6 +936,13 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
 
 
+
+* El filtro `includeVariations` está incluido en el `List` y `Paginated` tipos de consulta.  Para recuperar las variaciones de fragmentos de contenido en los resultados de la consulta, haga clic en `includeVariations` el filtro debe establecerse en `true`.
+
+   * Consulte [Consulta de muestra para varios fragmentos de contenido y sus variaciones de un modelo determinado](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   >[!CAUTION]
+   >El filtro `includeVariations` y el campo generado por el sistema `_variation` no se pueden usar juntos en la misma definición de consulta.
+
 * Si desea utilizar un OR lógico:
    * use ` _logOp: OR`
    * Consulte [Consulta de muestra: todas las personas que tienen el apellido “Jobs” o “Smith”](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
@@ -961,6 +972,10 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
          >
          >Si la variación dada no existe para un Fragmento de contenido, la variación principal se devolverá como una predeterminada (alternativa).
 
+         >[!CAUTION]
+         >
+         >El campo generado por el sistema `_variation` no se puede usar junto con el filtro `includeVariations`.
+
          * Consulte [Consulta de muestra: todas las ciudades con una variación con nombre](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
    * Para [envío de imágenes](#image-delivery):
 
@@ -973,6 +988,17 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
          * [Consulta de muestra para el envío de imágenes con parámetros completos](#image-delivery-full-parameters)
 
          * [Consulta de muestra para el envío de imágenes con un solo parámetro especificado](#image-delivery-single-specified-parameter)
+   * `_tags` : para revelar los ID de los fragmentos de contenido o las variaciones que contienen etiquetas; se trata de una matriz de `cq:tags` identificadores.
+
+      * Consulte [Consulta de muestra: nombres de todas las ciudades etiquetadas como escapadas](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * Consulte [Consulta de muestra para variaciones de fragmentos de contenido de un modelo determinado que tienen una etiqueta específica adjunta](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * Consulte [Consulta de muestra con filtrado por ID de _tags y excluyendo variaciones](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * Consulte [Consulta de muestra con filtrado por ID de _tags e incluidas variaciones](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+      >[!NOTE]
+      >
+      >Las etiquetas también se pueden consultar enumerando los metadatos de un fragmento de contenido.
+
    * Y operaciones:
 
       * `_operator`: aplicar operadores específicos; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -982,6 +1008,7 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
          * Consulte [Consulta de muestra: filtre en una matriz con un elemento que deba producirse al menos una vez](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`: para ignorar el caso al consultar
          * Consulte [Consulta de muestra: todas las ciudades con SAN en el nombre, sin importar las mayúsculas](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+
 
 
 

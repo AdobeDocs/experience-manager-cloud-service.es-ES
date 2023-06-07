@@ -2,7 +2,7 @@
 title: 'Vista previa: representación JSON (Recursos: fragmentos de contenido)'
 description: Obtenga información sobre cómo previsualizar fácilmente una representación de JSON de sus Fragmentos de contenido al implementar su solución de AEM sin encabezado.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 94%
@@ -20,3 +20,7 @@ Uso del icono **Previsualizar**:
 Puede ver la representación JSON del fragmento actual. Por ejemplo:
 
 ![Editor de fragmentos de contenido: vista previa de un fragmento](assets/cfm-preview-02.png)
+
+<!--
+**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+-->
