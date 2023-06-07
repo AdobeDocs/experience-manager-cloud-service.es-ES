@@ -4,7 +4,7 @@ description: Aproveche el Centro de Acciones para tomar medidas sobre incidentes
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: ca7cad567a5f83cd1edc14def6d961b8ba3b7f1f
+source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 32%
@@ -40,7 +40,7 @@ Para configurar la recepción de notificaciones por correo electrónico del Cent
 
 ## Flujo de usuario detallado {#detailed-user-flow}
 
-Al hacer clic en el correo electrónico, accederá al Centro de alertas, donde una ventana emergente le mostrará el contexto de la notificación en la que ha hecho clic y, en algunos casos, vínculos a información adicional que describe cómo tomar medidas correctivas.
+Al hacer clic en el correo electrónico, se le lleva al Centro de acciones, con una ventana emergente que muestra el contexto de la notificación en la que ha hecho clic y, en algunos casos, vínculos a información adicional que describe cómo realizar acciones correctivas.
 
 ![Detalles del problema](/help/operations/assets/incident-details.png)
 
@@ -64,7 +64,7 @@ Al igual que todos los tickets de soporte, aparecerá en la [pestaña Casos de s
 
 AEM El as a Cloud Service tiene varios tipos de notificaciones, pero solo aparece un subconjunto en el Centro de acciones, como se muestra en la tabla siguiente.
 
-| Tipo de notificación | Descripción | Cómo configurar   | Aparece en el Centro de alertas |
+| Tipo de notificación | Descripción | Cómo configurar   | Aparece en el Centro de acciones |
 |---|---|---|---|
 | Incidencias operativas | Incidentes críticos que requieren una acción inmediata | Usuario asignado al perfil de producto &quot;Notificación de incidentes - Cloud Service&quot; | X |
 | Recomendaciones proactivas | Optimizaciones que deben planificarse | Usuario asignado al perfil de producto &quot;Notificación proactiva: Cloud Service&quot; | X |
