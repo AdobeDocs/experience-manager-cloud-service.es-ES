@@ -2,12 +2,13 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo crearlos para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4631ab86ae1b4405e31d8bb8eae8edbbe2272c2c
+source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 100%
+source-wordcount: '2302'
+ht-degree: 78%
 
 ---
+
 
 # Administración de entornos {#managing-environments}
 
@@ -56,14 +57,67 @@ Las funcionalidades de los entornos individuales dependen de las soluciones habi
       * El número de entornos disponibles/utilizados se muestra entre paréntesis detrás del nombre de tipo de entorno.
    * Proporcione un **Nombre** del entorno.
    * Proporcione una **Descripción** del entorno.
+   * Si va a agregar un **Producción + Fase** entorno, debe proporcionar un nombre de entorno y una descripción para los entornos de producción y ensayo.
    * Seleccione una **Región principal** de la lista desplegable.
       * Tenga en cuenta que esto no se puede cambiar después de la creación.
-   * Si va a agregar un entorno de **Producción + Fase**, debe proporcionar un nombre de entorno y una descripción para los entornos de producción y ensayo.
-      ![Cuadro de diálogo Agregar entorno](assets/add-environment2.png)
+      * En función de los derechos disponibles, puede configurar lo siguiente [varias regiones.](#multiple-regions)
+
+   ![Cuadro de diálogo Agregar entorno](assets/add-environment2.png)
 
 1. Haga clic en **Guardar** para agregar el entorno especificado.
 
 La pantalla **Información general** ahora muestra el nuevo entorno en la tarjeta **Entornos**. Ahora puede configurar canalizaciones para su nuevo entorno.
+
+## Varias regiones de publicación {#multiple-regions}
+
+Un usuario con **Propietario del negocio** La función puede configurar entornos de producción y ensayo para incluir hasta tres regiones de publicación adicionales además de la región principal. Las regiones de publicación adicionales pueden mejorar la disponibilidad. Consulte la [Documentación adicional de regiones de publicación](/help/operations/additional-publish-regions.md) para obtener más información.
+
+>[!TIP]
+>
+>Puede usar el complemento [API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) para consultar una lista actual de regiones disponibles.
+
+### Adición de varias regiones de publicación en un entorno nuevo {#add-regions}
+
+Al añadir un entorno nuevo, puede elegir configurar regiones adicionales además de la región principal.
+
+1. Seleccione el **Región principal**.
+   * Tenga en cuenta que esto no se puede cambiar después de la creación del entorno.
+1. Seleccione la opción **Agregar regiones de publicación adicionales** y un nuevo **Regiones de publicación adicionales** aparece una lista desplegable.
+1. En el **Regiones de publicación adicionales** , seleccione una región adicional.
+1. La región seleccionada se añade debajo de la lista desplegable para indicar su selección.
+   * Pulse o haga clic en la X situada junto a la región seleccionada para anular su selección.
+1. Seleccione otra región de la lista **Regiones de publicación adicionales** desplegable para añadir otra región.
+1. Haga clic o pulse **Guardar** cuando esté listo para crear su entorno.
+
+![Selección de varias regiones](assets/select-multiple-regions.png)
+
+Las regiones seleccionadas se aplicarán a los entornos de producción y ensayo.
+
+Si no especifica ninguna región adicional, [puede hacerlo más adelante después de crear los entornos.](#edit-regions)
+
+Si desea aprovisionar [redes avanzadas](/help/security/configuring-advanced-networking.md) para el programa, se recomienda hacerlo antes de agregar regiones de publicación adicionales a los entornos mediante la API de Cloud Manager. De lo contrario, el tráfico de las regiones de publicación adicionales pasará a través del proxy de la región principal.
+
+### Edición de varias regiones de publicación {#edit-regions}
+
+Si no ha especificado ninguna región adicional inicialmente, puede hacerlo después de crear los entornos si tiene los derechos necesarios.
+
+También puede quitar regiones de publicación adicionales. Sin embargo, solo puede agregar o eliminar regiones en una transacción. Si necesita agregar una región y quitar una región, primero agregue, guarde el cambio y, a continuación, elimine (o viceversa).
+
+1. En la consola Información general del programa de su programa, haga clic en el botón de puntos suspensivos del entorno de producción y seleccione **Editar** en el menú.
+
+   ![Editar entorno](assets/select-edit-environment.png)
+
+1. En el **Editar entorno de producción** , realice los cambios necesarios en las regiones de publicación adicionales.
+   * Utilice el **Regiones de publicación adicionales** para seleccionar regiones adicionales.
+   * Haga clic en la X situada junto a las regiones de publicación adicionales seleccionadas para anular su selección.
+
+   ![Editar entorno](assets/edit-environment.png)
+
+1. Haga clic o pulse **Guardar** para guardar los cambios.
+
+Los cambios realizados en el entorno de producción se aplicarán tanto a los entornos de producción como de ensayo. Los cambios en varias regiones de publicación solo se pueden editar en el entorno de producción.
+
+Si desea aprovisionar [redes avanzadas](/help/security/configuring-advanced-networking.md) para el programa, se recomienda hacerlo antes de agregar regiones de publicación adicionales a los entornos. De lo contrario, el tráfico de las regiones de publicación adicionales pasará a través del proxy de la región principal.
 
 ## Detalles del entorno {#viewing-environment}
 

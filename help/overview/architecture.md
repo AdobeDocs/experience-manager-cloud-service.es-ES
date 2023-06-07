@@ -2,10 +2,10 @@
 title: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service
 description: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
+source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 96%
+source-wordcount: '1827'
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ Así pues:
 
 * Permite que AEM as a Cloud Service ajuste los patrones de tráfico a medida que cambian.
 
-La adaptabilidad de las instancias de cada inquilino del servicio se aplica a los dos ejes:
+La escala de las instancias de cada inquilino del servicio se aplica a los dos ejes:
 
 * Horizontal: el número de nodos de un servicio determinado aumenta o disminuye automáticamente, lo que permite configuraciones predeterminadas individuales.
 
@@ -124,7 +124,15 @@ Hay varios componentes principales de esta nueva arquitectura:
       * La integración y el procesamiento de recursos utilizan un servicio de procesamiento de Assets específico.
    * El nivel de previsualización consta de un nodo de vista previa único. Se utiliza para garantizar la calidad del contenido antes de publicarlo en el nivel de publicación.
 
-   * El nivel de publicación consta de dos o más nodos dentro de un único conjunto de servidores de publicación: pueden operar de forma independiente entre sí. Cada nodo consta de un editor de AEM y un servidor web equipado con el módulo de AEM Dispatcher. Se adapta automáticamente según las necesidades de tráfico del sitio.
+   * El nivel de publicación consta de dos o más nodos dentro de un único conjunto de servidores de publicación.
+
+      * Los nodos pueden operar de forma independiente entre sí.
+
+      * Cada nodo consta de un editor de AEM y un servidor web equipado con el módulo de AEM Dispatcher.
+
+      * Se adapta automáticamente según las necesidades de tráfico del sitio.
+
+      * Sin embargo, de forma predeterminada hay un único conjunto de servidores de publicación en la región principal [regiones de publicación adicionales](/help/operations/additional-publish-regions.md) puede tener licencia.
 
       * Los usuarios finales, o los visitantes del sitio, visitan el sitio web a través del servicio de AEM Publish.
 
