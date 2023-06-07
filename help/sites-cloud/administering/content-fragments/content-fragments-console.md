@@ -5,10 +5,10 @@ landing-page-description: Aprenda a administrar fragmentos de contenido desde la
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
+source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 100%
+source-wordcount: '1106'
+ht-degree: 95%
 
 ---
 
@@ -102,11 +102,11 @@ Si se selecciona un fragmento específico, se abrirá una barra de herramientas 
 ![Consola Fragmentos de contenido: barra de herramientas para un fragmento seleccionado](assets/cfc-fragment-toolbar.png)
 
 * **Abrir**
-* **Publicación** (y **Cancelar la publicación**)
+* **[Publicación](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)** (y **[Cancelar la publicación](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**)
 * **Copiar**
 * **Mover**
 * **Cambiar nombre**
-* **Eliminar**
+* **[Eliminar](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
 
 >[!NOTE]
 >
@@ -125,6 +125,11 @@ El panel principal/derecho (vista de tabla) de la consola proporciona una amplia
 Al pasar el ratón por encima del nombre de la carpeta, se muestra la ruta JCR.
 * **Estado**
    * Solo información
+* **Vista previa**
+   * Solo información:
+      * **Sincronizado**: el fragmento de contenido está sincronizado en el **Autor** y **Previsualizar** servicios.
+      * **Fuera de sincronización**: el fragmento de contenido no está sincronizado en la **Autor** y ****Previsualizar** servicios. Tienes que hacerlo **Publish** hasta **Previsualizar** para garantizar que las dos instancias vuelvan a estar sincronizadas.
+      * en blanco: El fragmento de contenido no existe en **Previsualizar** servicio.
 * **Modificado**
    * Solo información
 * **Modificado por**

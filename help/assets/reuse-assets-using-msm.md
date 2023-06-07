@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '3271'
-ht-degree: 11%
+source-wordcount: '3404'
+ht-degree: 12%
 
 ---
 
@@ -25,6 +25,16 @@ Funcionalidad de Administrador de varios sitios (MSM) en [!DNL Adobe Experience 
 * Cree recursos una vez y luego haga copias de estos para reutilizarlos en otras áreas del sitio.
 * Mantenga varias copias en sincronización y actualice la copia principal original una vez para insertar los cambios en las copias secundarias.
 * Realice cambios locales suspendiendo temporal o permanentemente la vinculación entre los recursos principales y secundarios.
+
+>[!NOTE]
+>
+>El MSM para [!DNL Assets] funcionalidad incluye fragmentos de contenido, que se almacenan como [!DNL Assets] (aunque se considera una función de Sites).
+
+>[!CAUTION]
+>
+>MSM para fragmentos de contenido solo está disponible cuando se utilizan fragmentos de contenido a través de **[!UICONTROL Assets]** consola.
+>
+>La funcionalidad de MSM es *no* disponible al usar el **[!UICONTROL Fragmentos de contenido]** consola.
 
 ## Comprender las ventajas y los conceptos de MSM {#concepts}
 
@@ -43,7 +53,7 @@ MSM mantiene una relación activa entre el recurso de origen y sus Live Copies p
 
 **Live Copy:** La copia de los recursos o carpetas de origen que está en sincronización con su origen. Live Copies puede ser una fuente de Live Copies adicionales. Consulte cómo crear LC.
 
-**Herencia:** Un vínculo o referencia entre un recurso o una carpeta de Live Copy y su origen que el sistema utiliza para recordar dónde enviar las actualizaciones. La herencia existe a nivel granular para los campos de metadatos. La herencia se puede eliminar para campos de metadatos selectivos al tiempo que se conserva la relación activa entre el origen y su Live Copy.
+**Herencia:** Un vínculo o referencia entre un recurso o una carpeta de Live Copy y su origen que el sistema utiliza para recordar dónde enviar las actualizaciones. La herencia existe a nivel granular para los campos de metadatos, también para las variaciones y los campos de fragmentos de contenido. La herencia se puede eliminar para los elementos seleccionados al tiempo que se conserva la relación activa entre el origen y su Live Copy.
 
 **Despliegue:** Una acción que inserta las modificaciones realizadas en el origen descendente en sus Live Copies. Es posible actualizar una o más Live Copies de una sola vez mediante la acción de despliegue. Consulte Despliegue.
 
@@ -66,7 +76,7 @@ Para crear una Live Copy a partir de uno o varios recursos o carpetas de origen,
 * Método 1: seleccionar los recursos de origen y hacer clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]** en la barra de herramientas de la parte superior.
 * Método 2: en [!DNL Experience Manager] interfaz de usuario, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]** desde la esquina superior derecha de la interfaz.
 
-Puede crear Live Copies de un recurso o una carpeta a la vez. Puede crear Live Copies que se deriven de un recurso o una carpeta que sea una Live Copy en sí. Los fragmentos de contenido (CF) no son compatibles con el caso de uso. Al intentar crear sus Live Copies, los CF se copian tal cual sin ninguna relación. Los CF copiados son una instantánea en el tiempo y no se actualiza cuando se actualizan los CF originales.
+Puede crear Live Copies de un recurso o una carpeta a la vez. Puede crear Live Copies que se deriven de un recurso o una carpeta que sea una Live Copy en sí.
 
 Para crear Live Copies mediante el primer método, siga estos pasos:
 
@@ -233,6 +243,38 @@ Para ver los estados y la información relacionados con una acción de sincroniz
 >
 >Si la relación está suspendida, la acción de sincronización no está disponible en la barra de herramientas. Mientras que la acción de sincronización está disponible en el carril Referencias, las modificaciones no se propagan ni siquiera tras un despliegue correcto.
 
+## Cancelar y volver a habilitar la herencia para elementos individuales {#canceling-reenabling-inheritance-individual-items}
+
+Puede cancelar la herencia de Live Copy para un:
+
+* campo de metadatos
+* Variación de fragmento de contenido
+* Campo de datos del fragmento de contenido
+
+Esto significa que el elemento ya no está sincronizado con el componente de origen. Si es necesario, puede habilitar la herencia en un momento posterior.
+
+### Cancelar herencia {#cancel-inheritance}
+
+Para cancelar la herencia:
+
+1. Seleccione el **Cancelar herencia** junto al elemento requerido:
+
+   ![La acción Sincronizar extrae los cambios realizados en el origen](assets/cancel-inheritance-icon.png)
+
+1. En el cuadro de diálogo Cancelar herencia, confirme la acción con Sí.
+
+### Volver a habilitar la herencia {#reenable-inheritance}
+
+Para volver a habilitar la herencia:
+
+1. Para habilitar la herencia para un elemento, seleccione la **Volver a habilitar la herencia** junto al elemento requerido:
+
+   ![La acción Sincronizar extrae los cambios realizados en el origen](assets/re-enable-inheritance-icon.png)
+
+   >[!NOTE]
+   >
+   >Al volver a habilitar la herencia, el elemento no se sincroniza automáticamente con el origen. Puede solicitar manualmente una sincronización si es necesario.
+
 ## Suspender y reanudar la relación {#suspend-resume}
 
 Puede suspender temporalmente la relación para evitar que una Live Copy reciba modificaciones realizadas en el recurso o la carpeta de origen. La relación también se puede reanudar para que Live Copy empiece a recibir las modificaciones del origen.
@@ -319,11 +361,13 @@ En más escenarios, MSM para [!DNL Assets] coincide con el comportamiento de MSM
 * MSM no admite la configuración de bloqueos de MSM en propiedades de página para [!DNL Assets].
 * Para MSM para [!DNL Assets], use solo el **[!UICONTROL Configuración de despliegue estándar]**. Las demás configuraciones de despliegue no están disponibles para MSM para [!DNL Assets].
 
+>[!NOTE]
+>
+>Recuerde que MSM para fragmentos de contenido (al que se accede a través del **[!UICONTROL Assets]** ) utiliza la funcionalidad Recursos, ya que se almacenan como Recursos (aunque se consideran una función de Sites).
+
 ## Limitaciones y problemas conocidos de MSM para [!DNL Assets] {#limitations}
 
 A continuación se indican algunas limitaciones de MSM para [!DNL Assets].
-
-* Los fragmentos de contenido no son compatibles. Al intentar crear Live Copies, los fragmentos de contenido se copian tal cual sin ninguna relación. Los fragmentos de contenido copiados son una instantánea en el tiempo y no se actualizan al actualizar los fragmentos de contenido originales.
 
 * MSM no funciona con la reescritura de metadatos habilitada. Tras la reescritura, la herencia se interrumpe.
 
@@ -341,3 +385,4 @@ A continuación se indican algunas limitaciones de MSM para [!DNL Assets].
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)

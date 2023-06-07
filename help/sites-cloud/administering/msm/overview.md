@@ -4,10 +4,10 @@ description: Obtenga una introducción para reutilizar contenido con las potente
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 100%
+source-wordcount: '2710'
+ht-degree: 99%
 
 ---
 
@@ -29,6 +29,10 @@ Esta página proporciona información general sobre cómo reutilizar contenido c
 * [Configuración de la sincronización de Live Copy](live-copy-sync-config.md)
 * [Conflictos de despliegue de MSM](rollout-conflicts.md)
 * [Prácticas recomendadas de MSM](best-practices.md)
+
+>[!NOTE]
+>
+>MSM también se puede utilizar para Recursos, incluidos Fragmentos de contenido. Para obtener más información, consulte [Reutilización de fragmentos de contenido mediante MSM para recursos](/help/assets/reuse-assets-using-msm.md) (solo disponible a través de la consola Recursos ).
 
 ## Posibles escenarios {#possible-scenarios}
 

@@ -3,10 +3,10 @@ title: Uso del IDE de GraphiQL en AEM
 description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,6 @@ Hay una implementación del IDE de [GraphiQL](https://graphql.org/learn/serving-
 >[!NOTE]
 >Debe tener [configurados los puntos de conexión](/help/headless/graphql-api/graphql-endpoint.md) en el [explorador de configuración](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) antes de utilizar el IDE de GraphiQL.
 
-
 La herramienta **GraphiQL** permite probar y depurar las consultas de GraphQL permitiéndole lo siguiente:
 * seleccionar el **punto de conexión** adecuado para la configuración de sitios que desee utilizar en sus consultas
 * introducir directamente nuevas consultas
@@ -31,7 +30,7 @@ La herramienta **GraphiQL** permite probar y depurar las consultas de GraphQL pe
 * ejecutar las consultas para ver inmediatamente los resultados
 * administrar **variables de consulta**
 * guardar y administrar **consultas persistentes**
-* publicar o cancelar la publicación de **consultas persistentes** (por ejemplo, a/de `dev-publish`)
+* publicar o cancelar la publicación, **Consultas persistentes**, ya sea a su **Publish** o **Previsualizar** servicio; por ejemplo, a/de `dev-publish`
 * consultar el **historial** de las consultas anteriores
 * usar el **Explorador de documentación** para acceder a la documentación; le ayuda a conocer y comprender qué métodos están disponibles.
 
@@ -131,13 +130,27 @@ Las cachés pueden seguir ofreciendo una respuesta en caché en caso de error o 
 
 1. Seleccione **Guardar** para mantener los cambios.
 
-## Publicación de consultas persistentes {#publishing-persisted-queries}
+## Publicación y previsualización de consultas persistentes {#publishing-previewing-persisted-queries}
 
-Una vez seleccionada la consulta persistente en la lista (panel izquierdo), puede utilizar las acciones **Publicación** y **Cancelar la publicación**. Esto las activará en el entorno de publicación (por ejemplo, `dev-publish`) para facilitar el acceso a las aplicaciones a la hora de realizar pruebas.
+Una vez seleccionada la consulta persistente en la lista (panel izquierdo), puede utilizar el **Publish** acción.
+
+Esto activará la consulta en el entorno que seleccione. Puede elegir una de las siguientes opciones **Publish** entorno (por ejemplo, `dev-publish`), o su **Previsualizar** entorno para facilitar el acceso a las aplicaciones a la hora de realizar pruebas.
+
+![Consulta persistente publicada en GraphiQL](assets/cfm-graphiql-publish.png "GraphiQL: publicar consulta persistente")
 
 >[!NOTE]
 >
 >La definición de la caché de la consulta persistente `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} tiene un valor predeterminado de dos horas (7200 segundos).
+
+## Cancelar publicación de consultas persistentes {#unpublishing-persisted-queries}
+
+Al igual que al publicar, una vez seleccionada la consulta persistente en la lista (panel izquierdo), puede utilizar el **Cancelar publicación** acción.
+
+Esto desactivará la consulta del entorno que seleccione; o bien su **Publish** entorno, o su **Previsualizar** entorno.
+
+>[!NOTE]
+>
+>También debe asegurarse de haber realizado los cambios necesarios en la aplicación cliente para evitar posibles problemas.
 
 ## Copia de una URL para acceder directamente a la consulta {#copy-url}
 

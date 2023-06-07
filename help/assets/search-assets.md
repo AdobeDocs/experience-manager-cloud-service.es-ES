@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '4954'
+source-wordcount: '5094'
 ht-degree: 7%
 
 ---
@@ -411,6 +411,10 @@ Puede hacer lo siguiente con los recursos en los que ha buscado [!DNL Experience
 * Descargar uno o varios recursos.
 * Utilice Acciones de escritorio para abrir estos recursos en la aplicación de escritorio.
 * Crear colecciones inteligentes.
+* Crear una versión
+* Iniciar un flujo de trabajo
+* Relacionar o dejar de relacionar recursos
+* Aplique filtros mediante el panel Filtros que se muestra automáticamente después de realizar la búsqueda para reducir los resultados.
 
 ### Ordenar resultados de búsqueda {#sort}
 
@@ -450,6 +454,18 @@ Una colección es un conjunto ordenado de recursos que puede incluir recursos de
 * Una lista dinámica (colección inteligente) que rellena los recursos de la colección en función de criterios de búsqueda.
 
 Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En el panel **[!UICONTROL Filtros]**, seleccione **[!UICONTROL Archivos]** y haga clic en **[!UICONTROL Guardar colección inteligente]**. Consulte [Gestión de colecciones](/help/assets/manage-collections.md).
+
+### Crear una versión {#create-version}
+
+Cree una versión para los recursos que se muestran en los resultados de búsqueda. Seleccione el recurso y haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Versión]**. Añada una etiqueta opcional o un comentario y haga clic en **[!UICONTROL Crear]**. También puede seleccionar varios recursos y crear versiones para ellos simultáneamente.
+
+### Creación de un flujo de trabajo {#create-workflow}
+
+De forma similar a la capacidad Crear versión, también puede crear un flujo de trabajo para los recursos que se muestran en los resultados de búsqueda. Seleccione los recursos y haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Flujo de trabajo]**. Seleccione el modelo del flujo de trabajo, especifique un título para el flujo de trabajo y haga clic en **[!UICONTROL Inicio]**.
+
+### Relacionar y desrelacionar recursos {#relate-unrelate-assets}
+
+Relacionar y desrelacionar recursos que se muestran en los resultados de búsqueda. Seleccione los recursos y haga clic en **[!UICONTROL Relacionar]** o **[!UICONTROL Desrelacionar]**.
 
 ## Resultados y problemas de búsqueda inesperados {#unexpected-results}
 

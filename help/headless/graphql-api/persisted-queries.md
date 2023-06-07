@@ -3,10 +3,10 @@ title: Consultas persistentes de GraphQL
 description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Experience Manager as a Cloud Service para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método HTTP GET y la respuesta se puede almacenar en caché en las capas de Dispatcher y la red de distribución de contenido (CDN), lo que a la larga mejora el rendimiento de las aplicaciones cliente.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
+source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 90%
 
 ---
 
@@ -355,7 +355,11 @@ Para administrar la caché globalmente, puede [configurar la configuración de O
 
 >[!NOTE]
 >
->La configuración de OSGi solo es adecuada para instancias de publicación. La configuración existe en instancias de autor, pero se ignora.
+>Para el control de caché, la configuración de OSGi solo es adecuada para instancias de publicación. La configuración existe en instancias de autor, pero se ignora.
+
+>[!NOTE]
+>
+>El **Configuración del servicio de consultas persistentes** también se utiliza para [configuración del código de respuesta de consulta](#configuring-query-response-code).
 
 La configuración de OSGi predeterminada para instancias de publicación:
 
@@ -371,6 +375,26 @@ La configuración de OSGi predeterminada para instancias de publicación:
    {style="table-layout:auto"}
 
 * y si no está disponible, la configuración de OSGi utiliza la variable [valores predeterminados para instancias de publicación](#publish-instances).
+
+## Configuración del código de respuesta a la consulta {#configuring-query-response-code}
+
+De forma predeterminada, la variable `PersistedQueryServlet` envía un `200` respuesta cuando ejecuta una consulta, independientemente del resultado real.
+
+Puede [configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para el **Configuración del servicio de consultas persistentes** para controlar qué código de estado devuelve el `/execute.json/persisted-query` extremo, cuando hay un error en la consulta persistente.
+
+>[!NOTE]
+>
+>El **Configuración del servicio de consultas persistentes** también se utiliza para [administrar caché](#cache-osgi-configration).
+
+El campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) se puede definir según sea necesario:
+
+* `false` (valor predeterminado): No importa si la consulta persistente es correcta o no. El `/execute.json/persisted-query` devolverá el código de estado `200` y el `Content-Type` el encabezado devuelto será `application/json`.
+
+* `true`: el punto final devolverá `400` o `500` según corresponda, cuando haya algún tipo de error al ejecutar la consulta persistente. También el devuelto `Content-Type` será `application/graphql-response+json`.
+
+   >[!NOTE]
+   >
+   >Para obtener más información, consulte https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Codificación de la URL de consulta para su uso en una aplicación {#encoding-query-url}
 

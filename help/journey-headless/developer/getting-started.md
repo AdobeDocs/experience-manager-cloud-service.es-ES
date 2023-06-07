@@ -2,10 +2,10 @@
 title: Introducción al contenido sin encabezado de AEM as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
 workflow-type: tm+mt
-source-wordcount: '3058'
-ht-degree: 100%
+source-wordcount: '3090'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,10 @@ El contenido comienza con el ejemplo del autor. Aquí es donde los autores crean
 ### Instancia de publicación {#publish}
 
 Una vez creado el contenido en el ejemplo de autor, debe publicarse para que esté disponible para otros servicios que lo consuman. Una instancia de publicación contiene todo el contenido que se ha publicado.
+
+### Servicio de previsualización {#preview}
+
+Antes de publicar en la instancia de publicación, también puede publicar el fragmento de contenido en **Servicio de previsualización** para pruebas y revisiones. Esto se hace desde el **Fragmentos de contenido** consola.
 
 ### Replicación {#replication}
 

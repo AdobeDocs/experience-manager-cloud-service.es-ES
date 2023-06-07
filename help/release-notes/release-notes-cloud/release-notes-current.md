@@ -3,10 +3,10 @@ title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a C
 description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5f0b29c2c3130f4559ca355a0b5722d82248c195
+source-git-commit: 3a17f02b6544669e07adabfd4f50905eb6afd51e
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 97%
+source-wordcount: '1055'
+ht-degree: 41%
 
 ---
 
@@ -26,59 +26,74 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.2.0) es el 12 de abril de 2023. La próxima versión de la funcionalidad (2023.4.0) está planificada para el 7 de junio de 2023.
+La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versión de la función actual (2023.4.0) es el 7 de junio de 2023. La próxima versión de la funcionalidad (2023.6.0) está planificada para el 29 de junio de 2023.
 
 ## Vídeo de la versión {#release-video}
 
-Eche un vistazo al vídeo de información general sobre la versión de febrero de 2023 para ver un resumen de las funciones añadidas en la versión 2023.2.0:
+Eche un vistazo al vídeo Información general sobre la versión de abril de 2023 para ver un resumen de las funciones añadidas en la versión 2023.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3416885/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3418681/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nuevas funciones de [!DNL Experience Manager Sites] prelanzamiento {#prerelease-sites}
+### Nuevas funciones de [!DNL Experience Manager Sites] {#sites-features}
 
 * Exportar fragmentos de contenido de AEM as a Cloud Service a Adobe target como ofertas JSON.
 * Ahora, la compatibilidad con la paginación y la ordenación de GraphQL, junto con las mejoras en el almacenamiento en caché interno, ayudan a mejorar el rendimiento de las aplicaciones cliente disociadas al recuperar grandes conjuntos de contenido de AEM mediante consultas y filtros complejos de GraphQL.
+
+### Nuevas funciones de [!DNL Experience Manager Sites] prearrendar {#prerelease-sites}
+
+* Los fragmentos de contenido y sus referencias ahora se pueden publicar en [AEM Servicio de previsualización de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) uso del [Consola de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), permitiendo a los usuarios previsualizar la experiencia final en una aplicación de vista previa disociada antes de lanzarse.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
+* Se ha añadido compatibilidad con imágenes WebP para extraer automáticamente metadatos, generar miniaturas y representaciones personalizadas. La capacidad Etiquetas inteligentes ahora también se admite para estos archivos. Las funciones de Dynamic Media no son compatibles con WebP como formato de entrada.
+
+* [Mejoras en la experiencia de búsqueda](/help/assets/search-assets.md#aftersearch) : Ahora puede realizar rápidamente las siguientes operaciones en los recursos que se muestran en los resultados de búsqueda:
+
+   * Creación de un flujo de trabajo
+   * Crear una nueva versión
+   * Relacionar o desrelacionar recursos
+
+      No es necesario desplazarse a la ubicación del recurso y ver sus propiedades para realizar estas operaciones.
+
+* Mejoras en la facilidad de uso de la faceta Búsqueda de color: el campo de entrada para valores de color ahora se puede editar y los resultados de búsqueda solo se actualizan al salir del selector de color.
+
 * Nuevo protocolo (DASH - Dynamic Adaptive Streaming over HTTP) compatible con el flujo adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado):
    * La transmisión adaptable (DASH/HLS) garantiza una mejor experiencia de visualización de vídeos por parte del usuario final
    * DASH es el protocolo estándar internacional para la transmisión de vídeo adaptable y es ampliamente adoptado en el sector
-   * Disponible en NA, que se habilitará mediante ticket de soporte, próximamente en APAC, EMEA
+   * Disponible en todas las regiones, para habilitar mediante ticket de asistencia
 
-* Se ha añadido compatibilidad con imágenes WebP para extraer automáticamente metadatos, generar miniaturas y representaciones personalizadas. Ahora, la capacidad Etiquetas inteligentes también es compatible con estos archivos.
+* Dynamic Media _Instantánea_ : Experimente con imágenes de prueba o URL de Dynamic Media para ver la salida de diferentes modificadores de imagen y optimizaciones de imágenes inteligentes para el tamaño de archivo (con entrega WebP y AVIF), el ancho de banda de la red y la proporción de píxeles del dispositivo. Consulte [Instantánea Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nuevas funciones disponibles en [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Uso de los componentes principales de captura de datos para crear formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es)**: [use el editor de formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) para crear formularios basados en componentes de captura de datos estandarizados (componentes principales). Estos componentes proporcionan funcionalidades de personalización, un tiempo de desarrollo reducido y costes de mantenimiento más bajos para sus experiencias de inscripción digital.
-
-* **[Compatibilidad de canalización front-end para aplicar estilo a componentes principales basados en formularios adaptables](/help/forms/using-themes-in-core-components.md)**: utilice temáticas estandarizadas basadas en BEM para formularios adaptables basados en componentes principales implementándolas con la canalización de implementación de front-end para mejorar la apariencia de sus formularios y adáptelas las directrices de diseño aprobadas para la marca de su organización.
-
-* **[Generar documento de registro para Formularios adaptables basados en componentes principales](/help/forms/generate-document-of-record-core-components.md)**: Cree un documento de registro que contenga datos enviados para formularios adaptables creados con componentes principales para archivarlos o hacer referencia a usuarios finales, impresos o en formato de documento.
-
-![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
-
-* **[Creación eficaz de formularios con la función Guardar un formulario adaptable como plantilla](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Acelere y estandarice el desarrollo de formularios guardando los formularios existentes aprobados por marca como plantillas de formulario para reutilizarlos rápidamente.
-
-* **[Conectar AEM Forms a bases de datos compatibles con JDBC](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: conéctese a bases de datos empresariales directamente desde AEM Cloud Service mediante el protocolo JDBC, sin necesidad de exponerlas a través de la API de REST.
-
-* **[Integración con puntos de conexión REST mediante la API abierta 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: integración perfecta en sistemas de registro compatibles con la API abierta 3.0 para almacenar y recuperar datos mediante modelos de datos de formularios.
-
-* **[Compartir un formulario adaptable para su revisión](/help/forms/create-reviews-forms.md)**: utilice el mecanismo de revisión de formularios adaptables para permitir que uno o más revisores revisen el formulario.
-
-
-### Funciones de la versión preliminar [!DNL Forms] {#prerelease-features-forms}
-
 * **[Envío de formularios adaptables a Microsoft SharePoint y Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: mejore la agilidad de los usuarios empresariales para iniciar nuevos formularios rápidamente y almacenar los datos enviados en las herramientas habituales que utilizan, como el sitio de Microsoft SharePoint o la carpeta de OneDrive.
 
 ![Envío de formularios adaptables a Microsoft SharePoint y Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
+
+### Funciones de la versión preliminar [!DNL Forms] {#prerelease-features-forms}
+
+* Integración y conformidad mejoradas de Adobe Acrobat Sign: AEM Forms ahora se integra con Adobe Acrobat Sign para Administración Pública, proporcionando un nivel avanzado de conformidad y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas de Administración Pública (departamentos y agencias gubernamentales).
+
+La integración con Adobe Acrobat Sign para Administración Pública permite a nuestros socios y clientes gubernamentales utilizar firmas electrónicas en Forms adaptable para algunas de las líneas de negocio más críticas y sensibles. Esta capa adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con el cumplimiento moderado de FedRAMP, lo que proporciona a nuestros clientes gubernamentales tranquilidad.
+
+* Forms adaptable dentro del editor de AEM Sites: ahora puede utilizar el editor de AEM Sites para crear y agregar rápidamente varios formularios a las páginas de Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización de los procesos empresariales. Puede hacer lo siguiente:
+
+   * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente Contenedor de Forms adaptable en el editor de AEM Sites.
+   * Utilice el asistente de Forms adaptable del editor de AEM Sites para crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios en varias páginas.
+   * Agregue varios formularios a una página de Sites, lo que optimizará la experiencia del usuario y proporcionará la buena flexibilidad.
+
+   >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+
+* Mejorar la gestión de errores con los controladores de error personalizados en el editor de reglas: Ahora puede invocar una función personalizada (mediante la Biblioteca de clientes) en respuesta a un error devuelto por un servicio externo y proporcionar una respuesta personalizada a los usuarios finales o realizar acciones específicas por los errores devueltos por un servicio. Por ejemplo, puede invocar un flujo de trabajo personalizado en el backend para códigos de error específicos o informar al cliente de que el servicio está inactivo.
+
+Esto ayuda a mejorar su capacidad general de gestión de errores mediante la introducción de respuestas de error basadas en estándares, que son compatibles con los controladores de error OOTB, con buena flexibilidad y control.
 
 ## Formularios adaptables sin encabezado, programa para primeros usuarios {#forms-early-adopter}
 
@@ -89,7 +104,13 @@ Utilice los formularios adaptables sin encabezado para que los desarrolladores p
 * reutilizar los componentes de IU propios con aplicaciones de formularios
 * aprovechar la potencia de Adobe Experience Manager Forms
 
-Puede enviar un correo electrónico a aem-forms-headless@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios.
+Puede enviar un correo electrónico a `aem-forms-headless@adobe.com` desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez.
+
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### Novedades {#what-is-new-foundation}
+
+* Regiones de publicación adicionales: Los clientes de Sites pueden obtener licencias de hasta tres regiones de publicación, además de la región principal. El tráfico se dirige a granjas de publicación adicionales, lo que resulta en una menor latencia para determinadas solicitudes, así como una mayor resistencia contra las interrupciones regionales. Póngase en contacto con el Administrador de cuentas de Adobe para obtener información sobre las licencias [Regiones de publicación adicionales](/help/operations/additional-publish-regions.md) para sus programas.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 

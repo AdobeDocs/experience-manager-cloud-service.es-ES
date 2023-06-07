@@ -4,10 +4,10 @@ description: Aprenda a utilizar la consola Fragmentos de contenido para administ
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: b351582a405f5c419f3aa386faddccd6ecef3a43
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 100%
+source-wordcount: '2071'
+ht-degree: 87%
 
 ---
 
@@ -37,7 +37,7 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 
 >[!NOTE]
 >
->Los fragmentos de contenido se almacenan como **Recursos**. Se administran principalmente desde la consola **Fragmentos de contenido**, pero también se puede administrar desde la consola **Recursos**.
+>Los fragmentos de contenido se almacenan como **Recursos**. Se administran principalmente desde la consola **Fragmentos de contenido**, pero también se puede administrar desde la consola [Recursos](/help/assets/content-fragments/content-fragments-managing.md).
 
 ## La consola Fragmentos de contenido {#content-fragments-console}
 
@@ -166,8 +166,8 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
 * Los tres puntos (**...**) proporcionan acceso a acciones adicionales:
    * **Actualizar referencias de página**
       * Esto actualiza cualquier referencia de página.
-   * **[Publicación rápida](#publishing-and-referencing-a-fragment)**
-   * **[Administrar publicación](#publishing-and-referencing-a-fragment)**
+   * **[Publicación rápida](/help/assets/manage-publication.md#quick-publish)**
+   * **[Administrar publicación](/help/assets/manage-publication.md#manage-publication)**
 
 <!--
 This updates any page references and ensures that the Dispatcher is flushed as required. -->
@@ -238,39 +238,65 @@ También puede [asociar contenido](/help/sites-cloud/administering/content-fragm
 
 Puede ver y editar las propiedades de un fragmento utilizando la pestaña [Metadatos](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md).
 
-## Publicación y referencia de un fragmento {#publishing-and-referencing-a-fragment}
+## Publicación y previsualización de un fragmento {#publishing-and-previewing-a-fragment}
+
+Puede publicar los fragmentos de contenido en:
+
+* el **[Servicio de publicación](/help/overview/architecture.md#runtime-architecture)** - para acceso público completo
+
+* el **[Servicio de previsualización](/help/overview/architecture.md#runtime-architecture)** : para previsualizar el contenido antes de la disponibilidad completa.
+
+   >[!CAUTION]
+   Publicación de fragmentos de contenido en **Servicio de previsualización** solo está disponible desde el [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); usando el **Publish** acción.
+
+   >[!NOTE]
+   Para obtener más información sobre los entornos de vista previa, consulte:
+   * [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+   * [Configuración de OSGi para el nivel de vista previa](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+   * [Depuración de la vista previa mediante Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+
+
+Para publicar los fragmentos de contenido con **Publish** en la barra de herramientas de la [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
->Si el fragmento se basa en un modelo, debe asegurarse de que [el modelo se ha publicado](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
->Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
+Si el fragmento se basa en un modelo, debe asegurarse de que [el modelo se ha publicado](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
 
-Los fragmentos de contenido deben publicarse para su uso en el entorno de publicación.
+1. Seleccione uno o varios fragmentos de la lista.
 
-* En la opción **Publicar** en la barra de herramientas de la [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
-   * **Ahora**: después de la confirmación, el fragmento se publica inmediatamente
-   * **Programación**: puede seleccionar la fecha y la hora de publicación del fragmento
+1. En la barra de herramientas, seleccione **Publish** y, a continuación, una de las siguientes opciones para abrir el cuadro de diálogo correspondiente:
 
-   Si es necesario, se le pedirá que especifique la **Fecha de activación** y que referencias publicar. Por ejemplo:
+   * **Ahora** - seleccione la opción **Servicio de publicación**, o el **Servicio de previsualización**; después de la confirmación, el fragmento se publicará inmediatamente
+   * **Programación** : además del servicio requerido, también puede seleccionar la fecha y la hora de publicación del fragmento
+
+   Si es necesario, se le pedirá que especifique las referencias para publicar. De forma predeterminada, las referencias también se publican en el servicio de previsualización para garantizar que no haya ninguna interrupción en el contenido.
+Por ejemplo, para una solicitud de publicación programada:
    ![Cuadro de diálogo Publicar](assets/cfm-publish-01.png)
 
-* En el [Editor de fragmentos de contenido](#toolbar-actions-in-the-content-fragment-editor)
-   * [**Publicación rápida**](/help/assets/manage-publication.md#quick-publish)
-   * [**Administrar publicación**](/help/assets/manage-publication.md#manage-publication)
+1. Confirme la acción de publicación.
 
-Además, cuando [publique una página que utiliza el fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); el fragmento se enumerará en las referencias de página.
+También puede publicar en el **Servicio de publicación** desde el [Editor de fragmentos de contenido](#toolbar-actions-in-the-content-fragment-editor) uso de:
+* **Publicación rápida**
+* **Administrar publicación**
+
+>[!NOTE]
+Después de usted [publicar una página que use el fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); el fragmento se enumerará en las referencias de página.
 
 >[!CAUTION]
->Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
+Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
 
 ## Cancelación de la publicación de un fragmento {#unpublishing-a-fragment}
 
-Para cancelar la publicación de fragmentos de contenido, seleccione uno o varios fragmentos y, a continuación, **Cancelar la publicación**.
+Para cancelar la publicación de fragmentos de contenido, seleccione uno o varios fragmentos y, a continuación, **Cancelar publicación** en la barra de herramientas de [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). Puede seleccionar **Ahora** o **Programado**.
+
+Cuando se abra el cuadro de diálogo correspondiente, puede seleccionar el servicio adecuado:
+![Cancelar publicación](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
->La acción **Cancelar la publicación** estará visible cuando los fragmentos publicados estén disponibles.
+El **Cancelar publicación** La acción solo estará visible cuando los fragmentos publicados estén disponibles.
 
 >[!CAUTION]
->Si ya se hace referencia al fragmento desde otro fragmento o desde una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar.
+Si ya se hace referencia al fragmento desde otro fragmento o desde una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar.
 
 ## Eliminación de un fragmento {#deleting-a-fragment}
 
@@ -280,13 +306,13 @@ Para eliminar un fragmento:
 2. Seleccione el fragmento.
 
    >[!NOTE]
-   >La acción **Eliminar** no se encuentra disponible como Acción rápida.
+   La acción **Eliminar** no se encuentra disponible como Acción rápida.
 
 3. En la barra de herramientas, seleccione **Eliminar**.
 4. Confirme la acción **Eliminar**.
 
    >[!CAUTION]
-   >Si ya se hace referencia al fragmento a partir de otro fragmento o página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se eliminará de cualquier página de contenido.
+   Si ya se hace referencia al fragmento a partir de otro fragmento o página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se eliminará de cualquier página de contenido.
 
 ## Búsqueda de referencias principales de su fragmento {#parent-references-fragment}
 
@@ -299,7 +325,7 @@ Se puede acceder a los detalles de las copias de idioma desde la columna **Idiom
 ## Cronología de los fragmentos de contenido {#timeline-for-content-fragments}
 
 >[!NOTE]
->Esta funcionalidad solo está disponible en la consola **Recursos**
+Esta funcionalidad solo está disponible en la consola **Recursos**
 
 Además de las opciones estándar, [Cronología](/help/assets/manage-digital-assets.md#timeline) proporciona información y acciones específicas para fragmentos de contenido:
 
@@ -319,13 +345,14 @@ Además de las opciones estándar, [Cronología](/help/assets/manage-digital-ass
    * **Eliminar**
 
 >[!NOTE]
->Los comentarios son lo siguiente:
->* De funcionalidad estándar para todos los recursos
->* Realizados en la cronología
->* Relacionados con el recurso de fragmento
->Las anotaciones (para fragmentos de contenido) son lo siguiente:
->* Introducidas en el editor de fragmentos
->* Específicas para un segmento seleccionado de texto dentro del fragmento
+Los comentarios son lo siguiente:
+* De funcionalidad estándar para todos los recursos
+* Realizados en la cronología
+* Relacionados con el recurso de fragmento
+>
+Las anotaciones (para fragmentos de contenido) son lo siguiente:
+* Introducidas en el editor de fragmentos
+* Específicas para un segmento seleccionado de texto dentro del fragmento
 >
 
 
@@ -336,7 +363,7 @@ Por ejemplo:
 ## Comparación de versiones de fragmento {#comparing-fragment-versions}
 
 >[!NOTE]
->Esta funcionalidad solo está disponible en la consola **Recursos**
+Esta funcionalidad solo está disponible en la consola **Recursos**
 
 La acción **Comparar con actual** está disponible en la [Cronología](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) después de seleccionar una versión específica.
 
@@ -359,14 +386,14 @@ Se mostrarán una al lado de la otra, donde:
 * **Listo** le devolverá a la consola
 
 >[!NOTE]
->No se puede editar el contenido del fragmento al comparar fragmentos.
+No se puede editar el contenido del fragmento al comparar fragmentos.
 
 ![comparación](assets/cfm-managing-06.png)
 
 ## Reversión a una versión  {#reverting-to-a-version}
 
 >[!NOTE]
->Esta funcionalidad solo está disponible en la consola **Recursos**
+Esta funcionalidad solo está disponible en la consola **Recursos**
 
 Puede volver a una versión específica del fragmento:
 
