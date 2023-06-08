@@ -1,13 +1,13 @@
 ---
 title: La herramienta Copia de contenido
 description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción as a Cloud Service de la a entornos más bajos para realizar pruebas.
-source-git-commit: 4a5470ae8fe5a8e7f615009bf5f6b180aee4669b
+exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
+source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 64%
+source-wordcount: '1227'
+ht-degree: 60%
 
 ---
-
 
 # La herramienta Copia de contenido {#content-copy}
 
@@ -55,7 +55,7 @@ Antes de poder copiar cualquier contenido, se debe definir un conjunto de conten
 
    ![Conjuntos de contenido](assets/content-sets.png)
 
-1. En el **Detalles** del asistente, proporcione un nombre y una descripción para el conjunto de contenido y toque o haga clic en **Continuar**.
+1. En la pestaña **Detalles** del asistente, proporcione un nombre y una descripción para el conjunto de contenido y pulse o haga clic en **Continuar**.
 
    ![Detalles del conjunto de contenido](assets/add-content-set-details.png)
 
@@ -102,11 +102,14 @@ Tenga en cuenta que al editar el conjunto de contenido, es posible que tenga que
 
 Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido. Siga estos pasos para copiar contenido.
 
+>[!NOTE]
+> La copia de contenido no debe iniciarse en un entorno mientras [transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) se está ejecutando en ese entorno.
+
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Vaya a la página **Conjuntos de contenidos** en la pantalla **Entornos**.
+1. Vaya a la página **Conjuntos de contenido** en la pantalla **Entornos**.
 
 1. Seleccione un conjunto de contenido de la consola y seleccione **Copiar contenido** en el menú de puntos suspensivos.
 
@@ -159,7 +162,7 @@ Una vez que empiece a copiar contenido, el proceso puede tener uno de los siguie
 | Completado | La operación de copia de contenido se ha completado correctamente |
 | Cancelado | El usuario cancela una operación de copia de contenido después de iniciarla |
 
-### Cancelación de un proceso de copia {#cancelling}
+### Cancelación de un proceso de copia {#canceling}
 
 Si necesita cancelar una operación de copia de contenido después de iniciarla, tiene la opción de cancelarla.
 
@@ -182,7 +185,7 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * No es posible copiar contenido entre programas.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * Se pueden especificar hasta cincuenta rutas por cada conjunto de contenido. No hay limitación en las rutas excluidas.
-* La herramienta de copia de contenido no debe utilizarse como una herramienta de clonación o reflejo, ya que no puede rastrear el contenido movido o eliminado del origen.
-* La herramienta de copia de contenido no tiene capacidad de creación de versiones y no puede detectar automáticamente contenido modificado o recién creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
+* La herramienta de copia de contenido no debe utilizarse como herramienta de clonación o creación de reflejo porque no puede realizar el seguimiento del contenido movido o eliminado en el origen.
+* La herramienta de copia de contenido no tiene capacidad de control de versiones y no puede detectar automáticamente el contenido modificado o recién creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
    * Si desea actualizar el entorno de destino con cambios de contenido solo desde la última operación de copia de contenido, debe crear un conjunto de contenido y especificar las rutas en la instancia de origen donde se realizaron los cambios desde la última operación de copia de contenido.
 * La información de la versión no se incluye en una copia de contenido.
