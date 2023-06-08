@@ -4,15 +4,18 @@ description: Descubra cómo crear o agregar fácilmente un formulario adaptable 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3196'
 ht-degree: 2%
 
 ---
 
 
 # Crear o agregar un formulario adaptable a la página de AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+|Precaución|[!BADGE documentación previa al lanzamiento]{type=Caution tooltip="Estado amarillo"}
+<span class="preview"> Esta es la documentación previa al lanzamiento y está sujeta a cambios.</span>
 
 Con AEM Forms, puede incorporar fácilmente formularios adaptables a sus páginas web. Esto permite a los visitantes rellenar y enviar formularios cómodamente sin salir de la página en la que se encuentran. Al hacerlo, pueden interactuar fácilmente con otros elementos del sitio web e interactuar activamente con el formulario.
 
@@ -122,7 +125,7 @@ Para habilitar la funcionalidad completa del componente Contenedor de Forms adap
 
 +++
 
-+++ Habilitar **[!UICONTROL Contenedor de Forms adaptable]
++++ Habilitar contenedor de Forms adaptable
 
 Para habilitar el [!UICONTROL Contenedor de formularios adaptables] en la política de la plantilla, siga los siguientes pasos:
 
@@ -246,7 +249,7 @@ Puede utilizar el servicio de prerrellenado del modelo de datos de formulario pa
 
 ### Usar el servicio de relleno previo de borrador del portal Forms {#forms-portal-prefill-service}
 
-Puede utilizar el servicio de rellenado previo de borrador del portal de Forms para rellenar previamente los campos de un formulario mediante un borrador del formulario adaptable guardado. Antes de usar el servicio de relleno previo de borrador del portal de Forms, asegúrese de lo siguiente [Los componentes del portal de Forms adaptable están habilitados y configurados ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) para su entorno.
+Puede utilizar el servicio de rellenado previo de borrador del portal de Forms para rellenar previamente los campos de un formulario mediante un borrador del formulario adaptable guardado. Antes de usar el servicio de relleno previo de borrador del portal de Forms, asegúrese de que [Los componentes del portal de Forms adaptable están habilitados y configurados](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) para su entorno.
 
 1. Abra el editor de páginas de AEM Sites o el fragmento de experiencia que contiene el formulario adaptable.
 1. Abra las propiedades de la página y configure Cloud Configuration.
