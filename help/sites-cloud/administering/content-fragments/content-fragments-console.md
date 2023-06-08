@@ -5,7 +5,7 @@ landing-page-description: Aprenda a administrar fragmentos de contenido desde la
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
+source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 95%
@@ -128,7 +128,7 @@ Al pasar el ratón por encima del nombre de la carpeta, se muestra la ruta JCR.
 * **Vista previa**
    * Solo información:
       * **Sincronizado**: el fragmento de contenido está sincronizado en el **Autor** y **Previsualizar** servicios.
-      * **Fuera de sincronización**: el fragmento de contenido no está sincronizado en la **Autor** y ****Previsualizar** servicios. Tienes que hacerlo **Publish** hasta **Previsualizar** para garantizar que las dos instancias vuelvan a estar sincronizadas.
+      * **Fuera de sincronización**: el fragmento de contenido no está sincronizado en la **Autor** y **Previsualizar** servicios. Tienes que hacerlo **Publish** hasta **Previsualizar** para garantizar que las dos instancias vuelvan a estar sincronizadas.
       * en blanco: El fragmento de contenido no existe en **Previsualizar** servicio.
 * **Modificado**
    * Solo información
