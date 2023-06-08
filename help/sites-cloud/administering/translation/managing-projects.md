@@ -4,7 +4,7 @@ description: Aprenda a crear y administrar proyectos de traducción automática 
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
+source-git-commit: d3194e646b326009dc204838ac74fc880952f286
 workflow-type: tm+mt
 source-wordcount: '4086'
 ht-degree: 99%
@@ -311,7 +311,7 @@ En la tabla siguiente se describe cada estado que puede tener un trabajo o eleme
 
 | Estado | Descripción |
 |---|---|
-| **Borrador** | El trabajo de traducción no se ha iniciado. Los trabajos de traducción están en el estado **Borrador**** cuando se crean. |
+| **Borrador** | El trabajo de traducción no se ha iniciado. Los trabajos de traducción están en **Borrador** estado cuando se crean. |
 | **Enviado** | Los archivos del trabajo de traducción tienen este estado cuando se han enviado correctamente al servicio de traducción. Este estado se puede producir después de que el comando **Ámbito de la solicitud** o **Inicio** se emita. |
 | **Previsión solicitada** | Para el flujo de trabajo de traducción humana, los archivos del trabajo se han enviado al proveedor de traducción para que los examine. Este estado aparece después de que el comando **Ámbito de la solicitud** se emita. |
 | **Previsión finalizada** | El proveedor ha creado un ámbito para el trabajo de traducción. |
