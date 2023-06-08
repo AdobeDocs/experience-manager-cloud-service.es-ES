@@ -2,7 +2,7 @@
 title: Crear y usar temáticas
 description: Puede utilizar temáticas para aplicar estilo y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 100%
@@ -49,6 +49,7 @@ Para personalizar una temática,
 * Debe tener [conocimientos básicos de Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git) y repositorios Git de Cloud Service.
 
 Para personalizar una temática Lienzo, haga lo siguiente:
+
 1. [Clone la temática Lienzo](#1-download-canvas-theme-download-canvas-theme)
 1. [Comprenda la estructura de la temática](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [Cambie el nombre en package.json y package_lock.json](#changename-packagelock-packagelockjson)
