@@ -3,7 +3,7 @@ title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a C
 description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 41%
@@ -57,7 +57,7 @@ Eche un vistazo al vídeo Información general sobre la versión de abril de 202
    * Crear una nueva versión
    * Relacionar o desrelacionar recursos
 
-      No es necesario desplazarse a la ubicación del recurso y ver sus propiedades para realizar estas operaciones.
+     No es necesario desplazarse a la ubicación del recurso y ver sus propiedades para realizar estas operaciones.
 
 * Mejoras en la facilidad de uso de la faceta Búsqueda de color: el campo de entrada para valores de color ahora se puede editar y los resultados de búsqueda solo se actualizan al salir del selector de color.
 
@@ -78,21 +78,21 @@ Eche un vistazo al vídeo Información general sobre la versión de abril de 202
 
 * [Integración y conformidad con Adobe Acrobat Sign mejoradas](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign para gobiernos, proporcionando un nivel avanzado de conformidad y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con gobiernos (departamentos y agencias gubernamentales).
 
-   La integración con Adobe Acrobat Sign para Administración Pública permite a nuestros socios y clientes gubernamentales utilizar firmas electrónicas en Forms adaptable para algunas de las líneas de negocio más críticas y sensibles. Esta capa adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con el cumplimiento moderado de FedRAMP, lo que proporciona a nuestros clientes gubernamentales tranquilidad.
+  La integración con Adobe Acrobat Sign para Administración Pública permite a nuestros socios y clientes gubernamentales utilizar firmas electrónicas en Forms adaptable para algunas de las líneas de negocio más críticas y sensibles. Esta capa adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con el cumplimiento moderado de FedRAMP, lo que proporciona a nuestros clientes gubernamentales tranquilidad.
 
-* [Forms adaptable dentro del editor de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): ahora puede utilizar el editor de AEM Sites para crear y agregar rápidamente varios formularios a las páginas de Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización de los procesos empresariales. Puede hacer lo siguiente:
+* [Forms AEM adaptable en el editor de páginas de la](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)AEM : ahora puede utilizar el Editor de páginas de para crear y agregar rápidamente varios formularios a las páginas de Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización de los procesos empresariales. Puede hacer lo siguiente:
 
    * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente Contenedor de Forms adaptable en el editor de AEM Sites o en los fragmentos de experiencias.
    * Utilice el asistente de Forms adaptable del editor de AEM Sites para crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios en varias páginas.
    * Agregue varios formularios a una página de Sites, lo que optimizará la experiencia del usuario y proporcionará la buena flexibilidad.
 
-      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * Mejorar la gestión de errores con los controladores de error personalizados en el editor de reglas: Ahora puede invocar una función personalizada (mediante la Biblioteca de clientes) en respuesta a un error devuelto por un servicio externo y proporcionar una respuesta personalizada a los usuarios finales o realizar acciones específicas por los errores devueltos por un servicio. Por ejemplo, puede invocar un flujo de trabajo personalizado en el backend para códigos de error específicos o informar al cliente de que el servicio está inactivo.
 
-   Esto ayuda a mejorar su capacidad general de gestión de errores mediante la introducción de respuestas de error basadas en estándares, que son compatibles con los controladores de error OOTB, con buena flexibilidad y control.
+  Esto ayuda a mejorar su capacidad general de gestión de errores mediante la introducción de respuestas de error basadas en estándares, que son compatibles con los controladores de error OOTB, con buena flexibilidad y control.
 
-## Formularios adaptables sin encabezado, programa para primeros usuarios {#forms-early-adopter}
+### Formularios adaptables sin encabezado, programa para primeros usuarios {#forms-early-adopter}
 
 Utilice los formularios adaptables sin encabezado para que los desarrolladores puedan crear, publicar y gestionar formularios interactivos a los que se pueda acceder y con los que se pueda interactuar a través de API, en lugar de a través de una interfaz gráfica de usuario tradicional. Los formularios adaptables sin encabezado le ayudan a:
 
