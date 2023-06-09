@@ -4,33 +4,33 @@ description: Añadir sus recursos digitales a [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 2b597707a26726eec26541c04914ac36e8909fc5
 workflow-type: tm+mt
-source-wordcount: '3094'
+source-wordcount: '3157'
 ht-degree: 2%
 
 ---
 
 # Agregar recursos digitales a [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager Assets] acepta muchos tipos de recursos digitales de muchas fuentes. Almacena los binarios y las representaciones creadas, puede realizar el procesamiento de recursos mediante una variedad de flujos de trabajo y [!DNL Adobe Sensei] servicios de, permite la distribución a través de muchos canales en muchas superficies.
+[!DNL Adobe Experience Manager Assets] acepta muchos tipos de recursos digitales de muchas fuentes. Almacena los binarios y las representaciones creadas, puede realizar el procesamiento de recursos mediante varios flujos de trabajo y [!DNL Adobe Sensei] servicios de, permite la distribución a través de muchos canales en muchas superficies.
 
 [!DNL Adobe Experience Manager] enriquece el contenido binario de los archivos digitales cargados con metadatos enriquecidos, etiquetas inteligentes, representaciones y otros servicios de administración de recursos digitales (DAM). Puede cargar varios tipos de archivos, como imágenes, documentos y archivos de imagen sin procesar, desde la carpeta local o desde una unidad de red a [!DNL Experience Manager Assets].
 
-Además de la carga del explorador más utilizada, existen otros métodos para agregar recursos a la [!DNL Experience Manager] existen repositorios, incluidos clientes de escritorio, como Adobe Asset Link o [!DNL Experience Manager] aplicación de escritorio, secuencias de comandos de carga e ingesta que los clientes crearían e integraciones de ingesta automatizada añadidas como [!DNL Experience Manager] extensiones.
+Además de la carga del explorador más utilizada, existen otros métodos para agregar recursos a la [!DNL Experience Manager] el repositorio existe. Estos otros métodos incluyen clientes de escritorio, como Adobe Asset Link o [!DNL Experience Manager] aplicación de escritorio, secuencias de comandos de carga e ingesta que los clientes crearían e integraciones de ingesta automatizada añadidas como [!DNL Experience Manager] extensiones.
 
 Mientras que puede cargar y administrar cualquier archivo binario en [!DNL Experience Manager], los formatos de archivo más utilizados son compatibles con servicios adicionales, como la extracción de metadatos o la generación de previsualización/representación. Consulte [formatos de archivo compatibles](file-format-support.md) para obtener más información.
 
-También puede solicitar que se realice un procesamiento adicional de los recursos cargados. Se puede configurar una serie de perfiles de procesamiento de recursos en la carpeta, en la que se cargan los recursos, para agregar metadatos, representaciones o servicios de procesamiento de imágenes específicos. Consulte [procesar recursos al cargar](#process-when-uploaded).
+También puede solicitar que se realice un procesamiento adicional de los recursos cargados. Se pueden configurar varios perfiles de procesamiento de recursos en la carpeta, en la que se cargan los recursos, para agregar metadatos, representaciones o servicios de procesamiento de imágenes específicos. Consulte [procesar recursos al cargar](#process-when-uploaded).
 
 [!DNL Assets] proporcione los siguientes métodos de carga. El Adobe recomienda que entienda su caso de uso y la aplicabilidad de una opción de carga antes de utilizarla.
 
 | Método de carga | Cuándo se usa? | Persona principal |
 |---------------------|----------------|-----------------|
-| [Interfaz de usuario de la consola Assets](#upload-assets) | Carga ocasional, facilidad para presionar y arrastrar, carga del buscador. No utilice para cargar un gran número de recursos. | Todos los usuarios |
+| [Interfaz de usuario de la consola Assets](#upload-assets) | Carga ocasional, facilidad para presionar y arrastrar, carga del buscador. No utilice para cargar muchos recursos. | Todos los usuarios |
 | [Cargar API](#upload-using-apis) | Para las decisiones dinámicas durante la carga. | Desarrollador |
 | Aplicación de escritorio de [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Ingesta de recursos de bajo volumen, pero no para la migración. | Administrador, Especialista en marketing |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Resulta útil cuando los creativos y los especialistas en marketing trabajan en recursos desde el [!DNL Creative Cloud] aplicaciones de escritorio. | Creativo, Especialista en marketing |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) | Resulta útil cuando los creativos y los especialistas en marketing trabajan en recursos desde el [!DNL Creative Cloud] aplicaciones de escritorio. | Creativo, Especialista en marketing |
 | [Ingestor masivo de recursos](#asset-bulk-ingestor) | Recomendado para migraciones a gran escala e ingestas masivas ocasionales. Solo para almacenes de datos compatibles. | Administrador, Desarrollador |
 
 ## Carga de activos {#upload-assets}
@@ -59,6 +59,13 @@ También puede solicitar que se realice un procesamiento adicional de los recurs
 -->
 
 Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritorio y arrastrarlos en la interfaz de usuario (explorador web) a la carpeta de destino. También puede iniciar la carga desde la interfaz de usuario de.
+
+>[!IMPORTANT]
+>
+>Los recursos que cargue en Experience Manager buena y que tengan un nombre de archivo de más de 100 caracteres tienen un nombre abreviado cuando se utilizan en Dynamic Media.
+>
+>Los 100 primeros caracteres del nombre de archivo se utilizan tal cual; los caracteres restantes se sustituyen por una cadena alfanumérica. Este método de cambio de nombre garantiza un nombre único cuando el recurso se utiliza en Dynamic Media. También está diseñado para dar cabida a la longitud máxima de nombre de archivo de recursos permitida en Dynamic Media.
+
 
 1. En el [!DNL Assets] en la interfaz de usuario de, vaya a la ubicación en la que desea agregar recursos digitales.
 1. Para cargar los recursos, realice una de las siguientes acciones:
@@ -99,15 +106,15 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 -->
 
-### Gestión de cargas cuando el recurso ya existe {#handling-upload-existing-file}
+### Gestión de cargas para recursos existentes {#handling-upload-existing-file}
 
-Puede cargar un recurso con la misma ruta (el mismo nombre y la misma ubicación) que el de un recurso existente. Sin embargo, se muestra un cuadro de diálogo de advertencia con las siguientes opciones:
+Puede cargar un recurso con la misma ruta (el mismo nombre y la misma ubicación) que un recurso existente. Sin embargo, se muestra un cuadro de diálogo de advertencia con las siguientes opciones:
 
-* Reemplazar recurso existente: si reemplaza un recurso existente, se eliminan los metadatos del recurso y cualquier modificación anterior (por ejemplo, anotaciones, recorte, etc.) que haya realizado en el recurso existente.
+* Reemplazar recurso existente: si reemplaza un recurso existente, se eliminarán los metadatos del recurso y cualquier modificación anterior (por ejemplo, anotaciones y recortes) que haya realizado en el recurso existente.
 
-   >[!NOTE]
-   >
-   >La opción para reemplazar recursos no está disponible si el recurso está bloqueado o desprotegido.
+  >[!NOTE]
+  >
+  >La opción para reemplazar recursos no está disponible si el recurso está bloqueado o desprotegido.
 
 * Crear otra versión: Se crea una nueva versión del recurso existente en el repositorio. Puede ver las dos versiones en la [!UICONTROL Cronología] y puede volver a la versión anterior si es necesario.
 * Mantener ambos: si decide conservar ambos recursos, se cambiará el nombre del nuevo recurso.
@@ -125,15 +132,15 @@ Para adaptarse a convenciones de nomenclatura de archivos específicas para su o
 
 ## Carga masiva de recursos {#bulk-upload}
 
-El ingestor masivo de recursos puede gestionar un gran número de recursos de forma eficaz. Sin embargo, una ingesta a gran escala no es solo un volcado de archivos amplio o una migración casual. Para que una ingesta a gran escala sea un proyecto significativo que sirva a su propósito comercial y que sea eficiente, planifique la migración y depure la organización de recursos. Todas las ingestas son diferentes, por lo que, en lugar de generalizar, tiene en cuenta la composición del repositorio con matices y las necesidades comerciales. A continuación se ofrecen algunas sugerencias generales para planificar y ejecutar una ingesta masiva:
+El ingestor masivo de recursos puede gestionar muchos recursos de forma eficaz. Sin embargo, una ingesta a gran escala no es solo un volcado de archivos amplio o una migración casual. Para que una ingesta a gran escala sea un proyecto significativo que sirva a su propósito comercial y que sea eficiente, planifique la migración y depure la organización de recursos. Todas las ingestas son diferentes, por lo que, en lugar de generalizar, tiene en cuenta la composición del repositorio con matices y las necesidades comerciales. A continuación se ofrecen algunas sugerencias generales para planificar y ejecutar una ingesta masiva:
 
-* Depurar recursos: elimine los recursos que no sean necesarios en DAM. Considere la posibilidad de eliminar los recursos no utilizados, obsoletos o duplicados. Esto reduce los datos transferidos y los activos ingeridos, lo que produce ingestas más rápidas.
+* Depurar recursos: elimine los recursos que no sean necesarios en DAM. Considere la posibilidad de eliminar los recursos no utilizados, obsoletos o duplicados. Este mantenimiento reduce los datos transferidos y los activos ingeridos, lo que conduce a ingestas más rápidas.
 * Organizar recursos: considere la posibilidad de organizar el contenido en algún orden lógico, por ejemplo, por tamaño de archivo, formato de archivo, caso de uso o prioridad. En general, los archivos grandes y complejos requieren más procesamiento. También puede considerar la posibilidad de ingerir archivos grandes por separado mediante la opción de filtrado de tamaño de archivo (descrita a continuación).
-* Escalonar las ingestas: considere la posibilidad de dividir la ingesta en varios proyectos de ingesta masiva. Esto le permite ver el contenido antes y actualizar la ingesta según sea necesario. Por ejemplo, puede ingerir recursos que requieran mucho procesamiento durante las horas de menor actividad o de forma gradual en varios fragmentos. Sin embargo, puede ingerir recursos más pequeños y sencillos que no requieran mucho procesamiento de una sola vez.
+* Escalonar las ingestas: considere la posibilidad de dividir la ingesta en varios proyectos de ingesta masiva. q le permite ver el contenido antes y actualizar la ingesta según sea necesario. Por ejemplo, puede ingerir recursos que requieran mucho procesamiento durante las horas de menor actividad o de forma gradual en varios fragmentos. Sin embargo, puede ingerir recursos más pequeños y sencillos que no requieran mucho procesamiento de una sola vez.
 
 Para cargar un número mayor de archivos, utilice uno de los siguientes métodos. Consulte también la [casos de uso y métodos](#upload-methods-comparison)
 
-* [API de carga de recursos](developer-reference-material-apis.md#asset-upload): utilice un script de carga personalizado o una herramienta que aproveche las API para agregar una administración adicional de los recursos (por ejemplo, traducir metadatos o cambiar el nombre de los archivos), si es necesario.
+* [API de carga de recursos](developer-reference-material-apis.md#asset-upload): utilice un script de carga personalizado o una herramienta que utilice API para agregar administración adicional de recursos (por ejemplo, traducir metadatos o cambiar el nombre de archivos), si es necesario.
 * [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): útil para profesionales creativos y especialistas en marketing que cargan recursos desde su sistema de archivos local. Utilícela para cargar carpetas anidadas disponibles localmente.
 * [Herramienta de ingesta masiva](#asset-bulk-ingestor): Se utiliza para la ingesta de grandes cantidades de recursos, ya sea ocasionalmente o inicialmente al implementar [!DNL Experience Manager].
 
@@ -188,19 +195,19 @@ Para configurar la herramienta Importación masiva, siga estos pasos:
 
 1. Seleccione el **[!UICONTROL Modo de importación]**. Seleccionar **Omitir**, **Reemplazar**, o **Crear versión**. El modo de omisión es el predeterminado y, en este modo, el ingestor omite la importación de un recurso si ya existe. Ver el significado de [reemplazar y crear opciones de versión](#handling-upload-existing-file).
 
-1. Especifique una ruta para definir una ubicación en DAM en la que se importarán los recursos mediante **[!UICONTROL Carpeta de destino de recursos]** field. Por ejemplo, `/content/dam/imported_assets`.
+1. Para definir una ubicación en DAM en la que se importarán los recursos mediante **[!UICONTROL Carpeta de destino de recursos]** , especifique una ruta. Por ejemplo, `/content/dam/imported_assets`.
 
-1. (Opcional) Especifique el archivo de metadatos que desea importar, proporcionado en formato CSV, en la variable **[!UICONTROL Archivo de metadatos]** field. Especifique el archivo CSV en la ubicación del blob de origen y consulte la ruta al configurar la herramienta Importación masiva. El formato de archivo CSV al que se hace referencia en este campo es el mismo que el del archivo CSV cuando se selecciona [Importación y exportación de metadatos de recursos de forma masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Si selecciona la opción **Eliminar archivo de origen tras importar** opción, filtre los archivos CSV mediante la variable **Excluir** o **Incluir tipo MIME** o **Filtrar por ruta/archivo** campos. Puede utilizar una expresión regular para filtrar los archivos CSV en estos campos.
+1. (Opcional) Especifique el archivo de metadatos que desea importar, proporcionado en formato CSV, en la variable **[!UICONTROL Archivo de metadatos]** field. Especifique el archivo CSV en la ubicación del blob de origen y consulte la ruta al configurar la herramienta Importación masiva. El formato de archivo CSV al que se hace referencia en este campo es el mismo que el formato de archivo CSV cuando se selecciona [Importación y exportación de metadatos de recursos de forma masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Si selecciona la opción **Eliminar archivo de origen tras importar** opción, filtre los archivos CSV mediante la variable **Excluir** o **Incluir tipo MIME** o **Filtrar por ruta/archivo** campos. Puede utilizar una expresión regular para filtrar los archivos CSV en estos campos.
 
 1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración.
 
 ### Administrar la configuración de la herramienta Importación masiva {#manage-bulk-import-configuration}
 
-Después de crear la configuración de la herramienta Importación masiva, puede realizar tareas para evaluar la configuración antes de la ingesta masiva de recursos en la instancia de Experience Manager. Seleccione la configuración disponible en **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Importación masiva]** para ver las opciones disponibles para administrar la configuración de la herramienta Importación masiva.
+Después de crear la configuración de la herramienta Importación masiva, puede realizar tareas para evaluar la configuración antes de la ingesta masiva de recursos en la instancia de Experience Manager. Para ver las opciones disponibles para gestionar la configuración de la herramienta de importación masiva, seleccione la configuración disponible en **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Importación masiva]**.
 
 ### Editar la configuración {#edit-configuration}
 
-Seleccione la configuración y haga clic en **[!UICONTROL Editar]** para modificar los detalles de configuración. No se puede editar el título de la configuración y el origen de datos de importación mientras se realiza la operación de edición.
+Para editar los detalles de configuración, seleccione la configuración y haga clic en **[!UICONTROL Editar]**. No se puede editar el título de la configuración y el origen de datos de importación mientras se realiza la operación de edición.
 
 ### Eliminar la configuración {#delete-configuration}
 
@@ -208,7 +215,7 @@ Seleccione la configuración y haga clic en **[!UICONTROL Eliminar]** para elimi
 
 ### Validar la conexión con el origen de datos {#validate-connection}
 
-Seleccione la configuración y haga clic en **[!UICONTROL check]** para validar la conexión con el origen de datos. Si la conexión se realiza correctamente, el Experience Manager muestra el siguiente mensaje:
+Para validar la conexión con el origen de datos, seleccione la configuración y haga clic en **[!UICONTROL check]**. Si la conexión se realiza correctamente, el Experience Manager muestra el siguiente mensaje:
 
 ![Mensaje de éxito de importación masiva](assets/bulk-import-success-message.png)
 
@@ -240,22 +247,22 @@ Para los nombres de archivo de los recursos, el nombre y la ruta JCR se sanean m
 * Los caracteres Unicode no cambian
 * Reemplace los caracteres especiales por su código de escape de URL, por ejemplo, `new%asset.png` se ha actualizado a `new%25asset.png`:
 
-   ```
-                   URL escape code   
-   
-   "               %22
-   %               %25
-   '               %27
-   *               %2A
-   /               %2F
-   :               %3A
-   [               %5B
-   \n              %0A
-   \r              %0D
-   \t              %09
-   ]               %5D
-   |               %7C
-   ```
+  ```
+                  URL escape code   
+  
+  "               %22
+  %               %25
+  '               %27
+  *               %2A
+  /               %2F
+  :               %3A
+  [               %5B
+  \n              %0A
+  \r              %0D
+  \t              %09
+  ]               %5D
+  |               %7C
+  ```
 
 **Gestión del nombre de la carpeta en la importación masiva**
 
@@ -265,28 +272,28 @@ Para los nombres de archivo de la carpeta, el nombre y la ruta JCR se sanean med
 * Los caracteres Unicode no cambian
 * Sustituya los caracteres especiales por un guión (&#39;-&#39;), por ejemplo, `new folder` se ha actualizado a `new-folder`:
 
-   ```
-   "                           
-   #                         
-   %                           
-   &                          
-   *                           
-   +                          
-   .                           
-   :                           
-   ;                          
-   ?                          
-   [                           
-   ]                           
-   ^                         
-   {                         
-   }                         
-   |                           
-   /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
-   \         Not allowed in Azure, allowed in AWS.
-   \t
-   space     It is the space character.
-   ```
+  ```
+  "                           
+  #                         
+  %                           
+  &                          
+  *                           
+  +                          
+  .                           
+  :                           
+  ;                          
+  ?                          
+  [                           
+  ]                           
+  ^                         
+  {                         
+  }                         
+  |                           
+  /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
+  \         Not allowed in Azure, allowed in AWS.
+  \t
+  space     It is the space character.
+  ```
 
 <!-- 
 [!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
@@ -317,15 +324,15 @@ Para programar una importación masiva única o recurrente, ejecute los siguient
 
 #### Ver la carpeta de destino Recursos {#view-assets-target-folder}
 
-Seleccione la configuración y haga clic en **[!UICONTROL Ver recursos]** para ver la ubicación de destino de los recursos donde se importan después de ejecutar el trabajo de importación masiva.
+Para ver la ubicación de destino de los recursos donde se importan después de ejecutar el trabajo de importación masiva, seleccione la configuración y, a continuación, haga clic en **[!UICONTROL Ver recursos]**.
 
 #### Ejecute la herramienta Importación masiva {#run-bulk-import-tool}
 
 Después [configuración de la herramienta Importación masiva](#configure-bulk-ingestor-tool) y opcionalmente [administración de la configuración de la herramienta Importación masiva](#manage-bulk-import-configuration), puede ejecutar el trabajo de configuración para iniciar la ingesta masiva de recursos.
 
-Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Importación masiva]**, seleccione la [Configuración de importación masiva](#configure-bulk-ingestor-tool) y haga clic en **[!UICONTROL Ejecutar]** para iniciar el proceso de importación masiva. Clic **[!UICONTROL Ejecutar]** de nuevo para confirmar.
+Para iniciar el proceso de importación masiva, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Importación masiva]**, seleccione la [Configuración de importación masiva](#configure-bulk-ingestor-tool)y haga clic en **[!UICONTROL Ejecutar]**. Clic **[!UICONTROL Ejecutar]** de nuevo para confirmar.
 
-El Experience Manager actualiza el estado del trabajo a **Procesando** y a **Correcto** al finalizar correctamente el trabajo. Clic **Ver recursos** para ver los recursos importados en Experience Manager.
+El Experience Manager actualiza el estado del trabajo a **Procesando** y a **Correcto** al finalizar correctamente el trabajo. Para ver los recursos importados en Experience Manager, haga clic en **Ver recursos**.
 
 Cuando el trabajo está en curso, también puede seleccionar la configuración y hacer clic en **Detener** para detener el proceso de ingesta masiva. Clic **Ejecutar** para reanudar el proceso. También puede hacer clic en **Ejecución en seco** para conocer los detalles de los recursos que aún están pendientes de importación.
 
@@ -345,7 +352,7 @@ El Experience Manager muestra el historial de trabajos. En la página Historial 
 Además de la interfaz de usuario del explorador web, [!DNL Experience Manager] admite otros clientes en el escritorio. También proporcionan una experiencia de carga sin necesidad de ir al explorador web.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) proporciona acceso a recursos desde [!DNL Experience Manager] en aplicaciones de escritorio de Adobe Photoshop, Adobe Illustrator y Adobe InDesign. Puede cargar el documento abierto actualmente en [!DNL Experience Manager] directamente desde la interfaz de usuario de Adobe Asset Link desde estas aplicaciones de escritorio.
-* [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifica el trabajo con recursos en el escritorio, independientemente del tipo de archivo o de la aplicación nativa que los administra. Resulta especialmente útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga desde el explorador solo admite la carga de listas de archivos planas.
+* [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifica el trabajo con recursos en el escritorio, independientemente del tipo de archivo o de la aplicación nativa que los administra. Resulta útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga desde el explorador solo admite la carga de listas de archivos sin formato.
 
 ## Procesar recursos al cargarlos {#process-when-uploaded}
 
@@ -394,11 +401,11 @@ Los detalles técnicos de las API de carga y del protocolo, y los vínculos al S
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
@@ -412,4 +419,3 @@ Los detalles técnicos de las API de carga y del protocolo, y los vínculos al S
 >* [Acerca de [!DNL Adobe Asset Link]](https://www.adobe.com/es/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentación.](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
 >* [Referencia técnica para la carga de recursos](developer-reference-material-apis.md#asset-upload)
-
