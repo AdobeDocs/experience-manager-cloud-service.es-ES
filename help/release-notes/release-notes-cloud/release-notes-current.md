@@ -3,10 +3,10 @@ title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a C
 description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
+source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 41%
+source-wordcount: '1095'
+ht-degree: 31%
 
 ---
 
@@ -16,7 +16,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 >[!NOTE]
 >
->Desde aquí puede navegar hasta las notas de versiones anteriores; por ejemplo, las de 2021, 2022, etc.
+>Desde aquí puede navegar hasta las notas de versiones anteriores, como 2021 o 2022.
 >
 >Eche un vistazo a la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información acerca de las próximas activaciones de funcionalidades para [!DNL Experience Manager] as a Cloud Service.
 
@@ -54,43 +54,47 @@ Eche un vistazo al vídeo Información general sobre la versión de abril de 202
 * [Mejoras en la experiencia de búsqueda](/help/assets/search-assets.md#aftersearch) : Ahora puede realizar rápidamente las siguientes operaciones en los recursos que se muestran en los resultados de búsqueda:
 
    * Creación de un flujo de trabajo
-   * Crear una nueva versión
+   * Crear una versión
    * Relacionar o desrelacionar recursos
 
      No es necesario desplazarse a la ubicación del recurso y ver sus propiedades para realizar estas operaciones.
 
 * Mejoras en la facilidad de uso de la faceta Búsqueda de color: el campo de entrada para valores de color ahora se puede editar y los resultados de búsqueda solo se actualizan al salir del selector de color.
 
-* Nuevo protocolo (DASH - Dynamic Adaptive Streaming over HTTP) compatible con el flujo adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado):
+* Se ha lanzado la nueva compatibilidad de protocolo (DASH - Dynamic Adaptive Streaming over HTTP) para el streaming adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado):
    * La transmisión adaptable (DASH/HLS) garantiza una mejor experiencia de visualización de vídeos por parte del usuario final
    * DASH es el protocolo estándar internacional para la transmisión de vídeo adaptable y es ampliamente adoptado en el sector
    * Disponible en todas las regiones, para habilitar mediante ticket de asistencia
 
-* Dynamic Media _Instantánea_ : Experimente con imágenes de prueba o URL de Dynamic Media para ver la salida de diferentes modificadores de imagen y optimizaciones de imágenes inteligentes para el tamaño de archivo (con entrega WebP y AVIF), el ancho de banda de la red y la proporción de píxeles del dispositivo. Consulte [Instantánea Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* Dynamic Media _Instantánea_ : Experimente con imágenes de prueba o URL de Dynamic Media para ver la salida de diferentes modificadores de imagen y evaluar las optimizaciones de imágenes inteligentes para el tamaño de archivo (con entrega WebP y AVIF), el ancho de banda de la red y la proporción de píxeles del dispositivo. Consulte [Instantánea Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+
+### Función en [!DNL Assets] versión preliminar {#prerelease-feature-assets}
+
+* Dynamic Media: la interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen ahora se actualiza para reflejar las directrices actuales para definir un recorte inteligente. Consulte [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nuevas funciones disponibles en [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Envío de formularios adaptables a Microsoft SharePoint y Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: mejore la agilidad de los usuarios empresariales para iniciar nuevos formularios rápidamente y almacenar los datos enviados en las herramientas habituales que utilizan, como el sitio de Microsoft SharePoint o la carpeta de OneDrive.
+* **[Enviar Forms adaptable a Microsoft® SharePoint y Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: mejore la agilidad del usuario empresarial para que pueda iniciar nuevos formularios rápidamente y almacenar los datos enviados en las herramientas diarias que utilizan, como el sitio de Microsoft® SharePoint o la carpeta de OneDrive.
 
 ### Funciones de la versión preliminar [!DNL Forms] {#prerelease-features-forms}
 
 * [Forms AEM adaptable en el editor de páginas de la](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)AEM : ahora puede utilizar el Editor de páginas de para crear y agregar rápidamente varios formularios a las páginas de Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización de los procesos empresariales. Puede hacer lo siguiente:
 
    * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente Contenedor de Forms adaptable en el editor de AEM Sites o en los fragmentos de experiencias.
-   * Utilice el asistente de Forms adaptable del editor de AEM Sites para crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios en varias páginas.
+   * Utilice el asistente de Forms adaptable dentro del editor de AEM Sites para poder crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios en varias páginas.
    * Agregue varios formularios a una página de Sites, lo que optimizará la experiencia del usuario y proporcionará la buena flexibilidad.
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Integración y conformidad con Adobe Acrobat Sign mejoradas](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign para gobiernos, proporcionando un nivel avanzado de conformidad y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con gobiernos (departamentos y agencias gubernamentales).
+* [Integración y conformidad con Adobe Acrobat Sign mejoradas](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign para Administración Pública. Esta integración proporciona un nivel avanzado de cumplimiento y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con el gobierno (departamentos y agencias gubernamentales).
 
-  La integración con Adobe Acrobat Sign para Administración Pública permite a nuestros socios y clientes gubernamentales utilizar firmas electrónicas en Forms adaptable para algunas de las líneas de negocio más críticas y sensibles. Esta capa adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con el cumplimiento moderado de FedRAMP, lo que proporciona a nuestros clientes gubernamentales tranquilidad.
+  La integración con Adobe Acrobat Sign para Administración Pública permite a los socios de Adobe y a los clientes gubernamentales utilizar firmas electrónicas en Forms adaptable para algunas de las líneas de negocio más importantes y sensibles. Este nivel adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con la normativa FedRAMP Moderate, lo que proporciona tranquilidad a los clientes gubernamentales de Adobe.
 
-* Mejorar la gestión de errores con los controladores de error personalizados en el editor de reglas: Ahora puede invocar una función personalizada (mediante la Biblioteca de clientes) en respuesta a un error devuelto por un servicio externo y proporcionar una respuesta personalizada a los usuarios finales o realizar acciones específicas por los errores devueltos por un servicio. Por ejemplo, puede invocar un flujo de trabajo personalizado en el backend para códigos de error específicos o informar al cliente de que el servicio está inactivo.
+* Tratamiento de errores mejorado con controladores de error personalizados en el editor de reglas. Ahora puede invocar una función personalizada (mediante la Biblioteca de clientes) en respuesta a un error devuelto por un servicio externo y proporcionar una respuesta personalizada a los usuarios finales. O bien, puede realizar acciones específicas en busca de errores devueltos por un servicio. Por ejemplo, puede invocar un flujo de trabajo personalizado en el backend para códigos de error específicos o informar al cliente de que el servicio está inactivo.
 
-  Esto ayuda a mejorar su capacidad general de gestión de errores mediante la introducción de respuestas de error basadas en estándares, que son compatibles con los controladores de error OOTB, con buena flexibilidad y control.
+  Esta funcionalidad ayuda a mejorar su capacidad general de gestión de errores mediante la introducción de respuestas de error basadas en estándares compatibles con los controladores de error OOTB, con buena flexibilidad y control.
 
 ### Formularios adaptables sin encabezado, programa para primeros usuarios {#forms-early-adopter}
 
@@ -99,7 +103,7 @@ Utilice los formularios adaptables sin encabezado para que los desarrolladores p
 * crear formularios multicanal de alta calidad en el lenguaje de programación que desee
 * integrar formularios de forma nativa en sus aplicaciones móviles y de escritorio, sitios web y aplicaciones de chat
 * reutilizar los componentes de IU propios con aplicaciones de formularios
-* aprovechar la potencia de Adobe Experience Manager Forms
+* utilice la potencia de Adobe Experience Manager Forms
 
 Puede enviar un correo electrónico a `aem-forms-headless@adobe.com` desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez.
 
@@ -107,7 +111,7 @@ Puede enviar un correo electrónico a `aem-forms-headless@adobe.com` desde su ID
 
 ### Novedades {#what-is-new-foundation}
 
-* Regiones de publicación adicionales: Los clientes de Sites pueden obtener licencias de hasta tres regiones de publicación, además de la región principal. El tráfico se dirige a granjas de publicación adicionales, lo que resulta en una menor latencia para determinadas solicitudes, así como una mayor resistencia contra las interrupciones regionales. Póngase en contacto con el Administrador de cuentas de Adobe para obtener información sobre las licencias [Regiones de publicación adicionales](/help/operations/additional-publish-regions.md) para sus programas.
+* Regiones de publicación adicionales: Los clientes de Sites pueden obtener licencias de hasta tres regiones de publicación, además de la región principal. El tráfico se dirige a granjas de publicación adicionales, lo que resulta en una menor latencia para determinadas solicitudes y una mayor resistencia frente a las interrupciones regionales. Póngase en contacto con el Administrador de cuentas de Adobe para obtener información sobre las licencias [Regiones de publicación adicionales](/help/operations/additional-publish-regions.md) para sus programas.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
