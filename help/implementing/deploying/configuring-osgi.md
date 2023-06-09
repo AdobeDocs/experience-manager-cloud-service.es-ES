@@ -3,9 +3,9 @@ title: Configurar OSGi para Adobe Experience Manager as a Cloud Service
 description: Configuración de OSGi con valores secretos y valores específicos del entorno
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3323'
 ht-degree: 2%
 
 ---
@@ -136,7 +136,7 @@ Existen tres variedades de valores de configuración OSGi que se pueden utilizar
 
 El caso común de OSGi utiliza valores de configuración OSGi en línea. Las configuraciones específicas del entorno solo se utilizan en casos de uso específicos en los que un valor difiere entre entornos de desarrollo.
 
-![](assets/choose-configuration-value-type_res1.png)
+![Árbol de decisiones sobre cómo utilizar el tipo de valor de configuración adecuado](assets/choose-configuration-value-type_res1.png)
 
 Las configuraciones específicas del entorno amplían las configuraciones de OSGi tradicionales definidas estáticamente que contienen valores en línea, lo que permite administrar los valores de configuración de OSGi de forma externa mediante la API de Cloud Manager. Es importante comprender cuándo se debe utilizar el enfoque común y tradicional de definir valores en línea y almacenarlos en Git, en lugar de abstraer los valores en configuraciones específicas del entorno.
 
@@ -265,8 +265,7 @@ Los valores de las variables no deben superar los 2048 caracteres.
 >1. Los clientes no deben hacer referencia a variables con el prefijo `INTERNAL_` o `ADOBE_` ya sea.
 >
 >1. Variables de entorno con el prefijo `AEM_` están definidos por el producto como API pública que deben utilizar y configurar los clientes.
-   >   Mientras que los clientes pueden utilizar y establecer variables de entorno que empiecen por el prefijo `AEM_` no deben definir sus propias variables con este prefijo.
-
+>   Mientras que los clientes pueden utilizar y establecer variables de entorno que empiecen por el prefijo `AEM_` no deben definir sus propias variables con este prefijo.
 
 ### Valores predeterminados {#default-values}
 
@@ -317,7 +316,7 @@ Si una propiedad OSGi requiere valores diferentes para autor y para publicación
 * Separar `config.author` y `config.publish` Las carpetas OSGi deben usarse, tal como se describe en la sección [Sección Resolución de modo de ejecución](#runmode-resolution).
 * Existen dos opciones para crear los nombres de variables independientes que se deben utilizar:
    * la primera opción, que se recomienda: en todas las carpetas OSGi (como `config.author` y `config.publish`) declarado para definir valores diferentes, utilice el mismo nombre de variable. Por ejemplo
-      `$[env:ENV_VAR_NAME;default=<value>]`, donde el valor predeterminado corresponde al valor predeterminado para ese nivel (autor o publicación). Al configurar la variable de entorno mediante [API de Cloud Manager](#cloud-manager-api-format-for-setting-properties) o a través de un cliente, diferencie entre los niveles utilizando el parámetro &quot;service&quot; como se describe en esta sección [Documentación de referencia del API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). El parámetro &quot;service&quot; enlazará el valor de la variable al nivel OSGi adecuado. Puede ser &quot;author&quot;, &quot;publish&quot; o &quot;preview&quot;.
+     `$[env:ENV_VAR_NAME;default=<value>]`, donde el valor predeterminado corresponde al valor predeterminado para ese nivel (autor o publicación). Al configurar la variable de entorno mediante [API de Cloud Manager](#cloud-manager-api-format-for-setting-properties) o a través de un cliente, diferencie entre los niveles utilizando el parámetro &quot;service&quot; como se describe en esta sección [Documentación de referencia del API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). El parámetro &quot;service&quot; enlazará el valor de la variable al nivel OSGi adecuado. Puede ser &quot;author&quot;, &quot;publish&quot; o &quot;preview&quot;.
    * la segunda opción, que es declarar distintas variables utilizando un prefijo como `author_<samevariablename>` y `publish_<samevariablename>`
 
 ### Ejemplos de configuración {#configuration-examples}

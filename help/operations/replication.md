@@ -2,9 +2,9 @@
 title: Replicación
 description: Distribución y resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1341'
 ht-degree: 45%
 
 ---
@@ -53,7 +53,7 @@ Puede encontrar información más detallada sobre Administrar publicación en la
 
 Puede activar una replicación de árbol seleccionando **Herramientas - Flujo de trabajo - Modelos** y copiando el modelo de flujo de trabajo integrado **Árbol de contenido de publicación**, como se muestra a continuación:
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![Tarjeta de flujo de trabajo Publicar árbol de contenido](/help/operations/assets/publishcontenttreeworkflow.png)
 
 No modifique ni invoque el modelo original. En su lugar, asegúrese de copiar primero el modelo y luego modificar o invocar esa copia.
 

@@ -2,10 +2,10 @@
 title: Acceso a repositorios
 description: Obtenga información sobre cómo acceder y administrar su repositorio de Git mediante la administración de cuentas de Git de autoservicio desde Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager facilita la recuperación de la información del repositorio media
    * El nombre de usuario de Git.
    * La contraseña de Git, cuyo valor se muestra cuando se hace clic en el botón **Generar contraseña**.
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
+   ![Vista de información de repositorios](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
 Con estas credenciales, el usuario puede clonar una copia local del repositorio y realizar cambios en ese repositorio local, y cuando esté listo, puede volver a enviar cualquier cambio de código al repositorio de código remoto en Cloud Manager.
 
