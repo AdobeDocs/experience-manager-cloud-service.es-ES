@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2602'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ Del mismo modo, con todo lo que se produce de forma asíncrona, como actuar sobr
 
 Se recomienda encarecidamente que todas las conexiones HTTP salientes establezcan tiempos de espera de conexión y lectura razonables; los valores sugeridos son 1 segundo para el tiempo de espera de conexión y 5 segundos para el tiempo de espera de lectura. Los números exactos deben determinarse en función del rendimiento del sistema backend que gestiona estas solicitudes.
 
-AEM AEM Para el código que no aplica estos tiempos de espera, las instancias de que se ejecutan en el as a Cloud Service aplicarán un tiempo de espera global. Estos valores de tiempo de espera son de 10 segundos para llamadas de conexión y de 60 segundos para llamadas de lectura para conexiones.
+AEM AEM Para el código que no aplica estos tiempos de espera, las instancias de que se ejecutan en el as a Cloud Service aplicarán un tiempo de espera global. Estos valores de tiempo de espera son de 10 segundos para las llamadas de conexión y de 60 segundos para las llamadas de lectura para las conexiones.
 
 El Adobe recomienda el uso del proporcionado [Biblioteca Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) para realizar conexiones HTTP.
 
@@ -71,9 +71,11 @@ Además de proporcionar tiempos de espera, se debe implementar un manejo adecuad
 
 AEM El as a Cloud Service solo admite la IU táctil para el código de cliente de terceros. La IU clásica no está disponible para la personalización.
 
-## Evitar binarios nativos {#avoid-native-binaries}
+## No hay binarios nativos ni bibliotecas nativas {#avoid-native-binaries}
 
-El código no podrá descargar binarios durante la ejecución ni modificarlos. Por ejemplo, no se podrá desempaquetar `jar` o `tar` archivos.
+Los binarios y bibliotecas nativos no deben implementarse ni instalarse en entornos en la nube.
+
+Además, el código no debe intentar descargar binarios nativos o extensiones java nativas (por ejemplo, JNI) durante la ejecución.
 
 ## AEM Sin binarios de flujo continuo a través de la as a Cloud Service {#no-streaming-binaries}
 
@@ -128,7 +130,11 @@ No deje el registro en el nivel de registro DEBUG más tiempo del necesario, ya 
 
 AEM Se pueden establecer niveles de registro discretos para los diferentes entornos de mediante la segmentación de configuración OSGi basada en el modo de ejecución si es deseable iniciar sesión siempre en `DEBUG` durante el desarrollo. Por ejemplo:
 
-| Entorno | Ubicación de configuración de OSGi por modo de ejecución | `org.apache.sling.commons.log.level` valor de propiedad | | - | - | - | | Desarrollo | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEPURAR | | Fase | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ADVERTIR | | Producción | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
+| Entorno | Ubicación de configuración de OSGi por modo de ejecución | `org.apache.sling.commons.log.level` valor de propiedad |
+| - | - | - |
+| Desarrollo | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEPURAR |
+| Escenario | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | AVISAR |
+| Producción | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
 
 Una línea del archivo de depuración suele comenzar con DEBUG y, a continuación, proporciona el nivel de registro, la acción del instalador y el mensaje de registro. Por ejemplo:
 
