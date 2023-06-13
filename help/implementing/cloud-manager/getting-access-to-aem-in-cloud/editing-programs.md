@@ -3,9 +3,9 @@ title: Editar programas
 description: Obtenga información sobre cómo editar los programas de producción y de zonas protegidas para ajustar sus opciones después de crearlas.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '525'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
