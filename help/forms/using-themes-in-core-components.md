@@ -3,7 +3,7 @@ title: Crear y usar temáticas
 description: Puede utilizar temáticas para aplicar estilo y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1666'
 ht-degree: 100%
 
@@ -131,7 +131,6 @@ AEM_PROXY_PORT=7000
    > * Cree un usuario local para iniciar sesión localmente. Proporcione la función de colaborador para el diseñador de temáticas.
    > * Si especifica la dirección URL de AEM como `http://localhost:[port]/` en el archivo `.env` de la temática Lienzo, se le redirigirá directamente al explorador.
 
-
 1. Una vez que haya iniciado sesión, cambie la dirección URL en el explorador para que apunte a la ruta del contenido de ejemplo que le proporcionó el administrador de AEM.
 
    * Por ejemplo, si la ruta proporcionada era `/content/formname.html?wcmmode=disabled`, cambie la dirección URL a `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
@@ -200,8 +199,7 @@ Antes de confirmar los cambios en el repositorio de Git de AEM Forms Cloud Servi
 
 1. Mueva los archivos del repositorio de temática que está editando al repositorio en la nube con un comando similar a
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
-Por ejemplo, utilice este comando 
-`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+Por ejemplo, utilice este comando `cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
 1. En el directorio del repositorio en la nube, confirme los archivos de temática que se ha movido con los siguientes comandos.
 
    ```text
@@ -246,15 +244,15 @@ Una vez ejecutada la canalización, la temática estará disponible en la pesta�
 
 * **Evitar recursos de otra temática**
 
-   Al editar una temática, puede examinar y agregar recursos (como imágenes) de otras temáticas. Por ejemplo, quiere editar el fondo de una página. Al seleccionar **[!UICONTROL Página]** ![edit-button](assets/edit-button.png) > **[!UICONTROL Fondo]** > **[!UICONTROL Agregar]** > **[!UICONTROL Imagen]**, verá un cuadro de diálogo que le permite examinar y agregar imágenes en otras temáticas.
+  Al editar una temática, puede examinar y agregar recursos (como imágenes) de otras temáticas. Por ejemplo, quiere editar el fondo de una página. Al seleccionar **[!UICONTROL Página]** ![edit-button](assets/edit-button.png) > **[!UICONTROL Fondo]** > **[!UICONTROL Agregar]** > **[!UICONTROL Imagen]**, verá un cuadro de diálogo que le permite examinar y agregar imágenes en otras temáticas.
 
-   Puede tener problemas con la temática actual si se agrega un recurso desde otra y esta se mueve o se elimina. Se recomienda evitar explorar y agregar recursos de otras temáticas.
+  Puede tener problemas con la temática actual si se agrega un recurso desde otra y esta se mueve o se elimina. Se recomienda evitar explorar y agregar recursos de otras temáticas.
 
 * **Cambio de la anchura de diseño del panel contenedor**
 
-   No se recomienda cambiar la anchura del diseño del panel contenedor. Cuando se especifica la anchura de un panel contenedor, este se vuelve estático y no se adapta a distintas pantallas.
+  No se recomienda cambiar la anchura del diseño del panel contenedor. Cuando se especifica la anchura de un panel contenedor, este se vuelve estático y no se adapta a distintas pantallas.
 
 * **Uso del editor de formularios o de temáticas para trabajar con encabezado y pie de página**
 
-   Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
+  Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
 Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.
