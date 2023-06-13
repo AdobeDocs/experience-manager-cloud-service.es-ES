@@ -3,9 +3,9 @@ title: Introducción al editor universal en AEM
 description: Obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: de33ea3efed87170b081ea467f12a997e0d41a83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
