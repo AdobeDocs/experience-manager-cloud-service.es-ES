@@ -3,9 +3,9 @@ title: Acceder a Admin Console
 description: Una vez que haya comprendido la preparación necesaria para la incorporación y los conceptos básicos de la estructura de AEMaaCS, ya puede iniciar sesión en Admin Console por primera vez.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1111'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
