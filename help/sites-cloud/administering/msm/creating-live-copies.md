@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4322'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Para crear una configuración de modelo:
 1. Seleccione la página de origen que se utilizará como modelo; a continuación, **Siguiente** para continuar.
 1. Definir:
 
-   * **Título**: título obligatorio para el modelo
+   * **Título**: título obligatorio para el modelo.
    * **Descripción**: una descripción opcional para proporcionar más detalles.
 
 1. **Crear** creará la configuración del modelo en función de su especificación.
@@ -139,7 +139,7 @@ Para crear una Live Copy:
 
    >[!NOTE]
    >
-   >Puede aparecer un cuadro de diálogo de error con el mensaje &quot;Error al enviar el formulario&quot;. Esto sucede debido a un tiempo de espera de red. Sin embargo, el proceso para crear la Live Copy se está ejecutando en segundo plano. Espere unos minutos y compruebe que las páginas de la Live Copy se han creado correctamente.
+   >Puede aparecer un cuadro de diálogo de error con el mensaje &quot;Error al enviar el formulario&quot;. Esto sucede debido a un tiempo de espera de la red. Sin embargo, el proceso para crear la Live Copy se está ejecutando en segundo plano. Espere unos minutos y compruebe que las páginas de la Live Copy se han creado correctamente.
 
 ### Creación de una Live Copy de un sitio a partir de una configuración de modelo {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -153,12 +153,12 @@ Si omite algunas ramas de idioma de Live Copy, puede agregarlas más adelante. C
 
 Cuando cree el sitio, proporcione valores para las siguientes propiedades:
 
-* **Idiomas iniciales**: las ramas de idioma del origen del modelo que se incluirán en Live Copy
-* **Capítulos iniciales**: las páginas secundarias de las ramas de idioma del modelo que se incluirán en Live Copy
-* **Ruta de destino**: la ubicación de la página raíz del sitio de Live Copy
-* **Título**: título de la página raíz del sitio de Live Copy
+* **Idiomas iniciales**: las ramas de idioma del origen del modelo que se incluirán en Live Copy.
+* **Capítulos iniciales**: las páginas secundarias de las ramas de idioma del modelo que se incluirán en Live Copy.
+* **Ruta de destino**: la ubicación de la página raíz del sitio de Live Copy.
+* **Título**: título de la página raíz del sitio de Live Copy.
 * **Nombre**(opcional): el nombre del nodo JCR que almacena la página raíz de Live Copy (el valor predeterminado se basa en el título).
-* **Propietario del sitio**(opcional): información sobre la parte responsable de Live Copy
+* **Propietario del sitio**(opcional): información sobre la parte responsable de Live Copy.
 * **Live Copy**: seleccione esta opción para establecer una relación activa con el sitio de origen. Si no selecciona esta opción, se crea una copia del modelo, pero no se sincroniza posteriormente con el origen.
 * **Configuración de despliegue**: (Opcional) Seleccione una o varias opciones de configuración de despliegue para sincronizar Live Copy. De forma predeterminada, las configuraciones de despliegue se heredan del modelo. Consulte [Especificación de las configuraciones de despliegue que se van a utilizar](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) para obtener más información.
 
