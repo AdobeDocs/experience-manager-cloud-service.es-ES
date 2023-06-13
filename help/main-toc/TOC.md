@@ -380,7 +380,7 @@ ht-degree: 98%
    + [Información general sobre los microservicios de recursos](/help/assets/asset-microservices-overview.md)
    + [Accesibilidad en [!DNL Assets]](/help/assets/accessibility.md)
    + Administre recursos digitales {#manage}
-      + [Selector de recursos de Micro-FrontEnd](/help/assets/asset-selector.md)
+      + [Selector de recursos de Micro-Frontend](/help/assets/asset-selector.md)
       + [Selector de destino de Micro-Frontend](/help/assets/destination-selector.md)
       + [Compartir recursos](/help/assets/share-assets.md)
       + [Supervisar actividades y tareas de DAM](/help/assets/assets-activity-history.md)

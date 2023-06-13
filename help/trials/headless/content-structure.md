@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
 source-wordcount: '1019'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 90%
 
 La consola de modelos de fragmentos de contenido se abre en una nueva pestaña. Considere la consola del modelo de fragmento de contenido como su biblioteca de modelos, donde crea nuevos y administra los existentes.
 
-Para nuestro ejemplo, crearemos un modelo que represente la estructura de datos de un viaje que aparece en un sitio web de viajes. Nos referiremos a un viaje utilizando este modelo como un **Aventura**.
+Para nuestro ejemplo, crearemos un modelo que represente la estructura de datos de un viaje que aparece en un sitio web de viajes. Nos referiremos a un viaje en este modelo como una **Aventura**.
 
 1. Haga clic en el botón **Crear** en la parte superior derecha de la pantalla para comenzar a generar un modelo de fragmento de contenido.
 
 1. Se inicia el asistente Crear modelo, que le guiará a través de la creación del modelo. Proporcione la información obligatoria.
 
-   * **Título de modelo** - Esta es una etiqueta breve del modelo y generalmente indica el propósito del modelo. Llamaremos a nuestro nuevo modelo `Adventure`.
+   * **Título del modelo**: esta es una breve descripción del modelo y normalmente indica el propósito del modelo. Llamaremos a nuestro nuevo modelo `Adventure`.
    * **Habilitar modelo**: esta opción está marcada de forma predeterminada y debe estar activada para poder crear fragmentos de contenido basados en este modelo.
 
 1. Una vez rellenados los campos obligatorios, haga clic en **Crear** en la parte superior izquierda para crear el modelo.
@@ -70,17 +70,17 @@ El editor del modelo de fragmento de contenido es donde se configuran los tipos 
 
 De este modo, puede agregar tantos campos como sea necesario al modelo para admitir el tipo de estructura de datos que necesite. Los tipos de campos de datos varían, pero el proceso de agregarlos al modelo sigue siendo el mismo.
 
-Continúe en la siguiente sección para añadir los campos necesarios para completar y guardar el  modelo **Aventura**
+Continúe en la siguiente sección para añadir los campos necesarios para completar y guardar el modelo **Aventura**
 
 ![Pasos uno, dos y tres para añadir campos al modelo](assets/do-not-localize/define-model-fields.png)
 
 ## Adición de campos al modelo {#additional-fields}
 
-Ya tiene un campo para el título de la aventura. Ahora necesita añadir campos para capturar la descripción, el precio y una imagen representativa de la aventura.
+Ya tiene un campo para el título de la aventura. Ahora debe añadir campos para capturar la descripción, el precio y una imagen representativa de la aventura.
 
 >[!TIP]
 >
->El modelo **Aventura** se basa en el sitio de muestra de WKND para AEM. Puede [visite el sitio aquí](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver el contenido que utiliza **Aventura** modelo.
+>El modelo **Aventura** se basa en el sitio de muestra de WKND para AEM. Puede [visitar el sitio aquí](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver el contenido que utiliza el modelo **Aventura**.
 
 Siga los mismos pasos que se describen arriba para agregar estos campos adicionales. La única diferencia son las propiedades que debe establecer.
 
