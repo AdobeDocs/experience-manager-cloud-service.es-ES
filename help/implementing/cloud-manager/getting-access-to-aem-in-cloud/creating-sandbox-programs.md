@@ -3,9 +3,9 @@ title: Creación de programas de zona protegida
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de zona protegida para formación, demostración, POC u otros fines que no sean de producción.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '464'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -29,15 +29,15 @@ Siga estos pasos para crear un programa de zona protegida.
 
    ![Creación de tipo de programa](assets/create-sandbox.png)
 
-1. Si lo desea, puede agregar una imagen al programa arrastrando y soltando un archivo de imagen en **Agregar una imagen de programa** destino o clic en él para seleccionar una imagen de un explorador de archivos. Haga clic o pulse **Continuar**.
+1. Si lo desea, puede agregar una imagen al programa arrastrando y soltando un archivo de imagen en el destino **Agregar una imagen de programa** o haciendo clic en él para seleccionar una imagen de un explorador de archivos. Haga clic o pulse **Continuar**.
 
    * La imagen solo sirve como mosaico en la ventana de información general del programa y ayuda a identificar el programa.
 
-1. En el **Configurar la zona protegida** , elija qué soluciones desea habilitar en el programa de zona protegida marcando las opciones en la **Soluciones y complementos** tabla.
+1. En el cuadro de diálogo **Configurar la zona protegida**, elija qué soluciones desea habilitar en el programa de zona protegida marcando las opciones en la tabla **Soluciones y complementos**.
 
    * Utilice las comillas angulares que aparecen junto a los nombres de las soluciones para mostrar complementos opcionales adicionales para las soluciones.
 
-   * El **Sites** y **Assets** las soluciones de siempre se incluyen en los programas de zonas protegidas y no se pueden anular.
+   * Las soluciones de **Sites** y **Assets** siempre se incluyen en los programas de zonas protegidas y no se pueden anular.
 
    ![Seleccionar soluciones y complementos para una zona protegida](assets/sandbox-solutions-add-ons.png)
 
