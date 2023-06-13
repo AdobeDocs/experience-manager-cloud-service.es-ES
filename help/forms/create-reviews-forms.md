@@ -1,17 +1,17 @@
 ---
 title: Creación y administración de revisiones en formularios
 seo-title: Creating and managing reviews in forms
-description: Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre un formulario.
+description: Una Revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre un formulario.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
 source-git-commit: 3efd7d81424369ce6430802373129ab91b7356ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
-# Crear y administrar revisiones en formularios{#creating-and-managing-reviews-to-forms}
+# Creación y administración de revisiones en formularios{#creating-and-managing-reviews-to-forms}
 
 ## Revisión {#review}
 
@@ -20,15 +20,15 @@ Una revisión es un mecanismo que permite a uno o más revisores realizar coment
 ## Configurar una revisión {#setting-up-a-review}
 
 1. Vaya al explorador de formularios y seleccione un formulario para revisarlo.
-1. Si el formulario no tiene ninguna revisión en curso, se debe **Iniciar revisión** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) aparece en la barra de acciones. Haga clic en **Iniciar revisión** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icono.
+1. Si el Formulario no tiene ninguna revisión en curso, aparecerá el icono **Iniciar revisión** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) en la barra de acciones. Haga clic en el icono **Iniciar revisión** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)
 1. Especifique la siguiente información:
 
-   * **Título**: obligatorio. Puede contener caracteres alfanuméricos, guiones y guiones bajos.
-   * **Descripción**: Opcional, descripción del propósito/contenido para la revisión.
-   * **Plazo**: opcional, la fecha en la que finaliza la revisión. Si se sobrepasa la fecha límite, la tarea aparece como “Vencida”.
-   * **Nombre del revisor**: Es obligatorio especificar al menos uno. Utilice el cuadro combinado para agregar revisores, escribiendo una lista de nombres con todos los nombres coincidentes; seleccione un nombre y haga clic en **Añadir**. En la siguiente sección de la **Revisores** La pestaña muestra el nombre de todos los revisores.
+   * **Título**: obligatorio. Puede contener caracteres alfanuméricos, guiones o guiones bajos.
+   * **Descripción**: opcional, descripción del objetivo/contenido de la revisión.
+   * **Fecha límite**: opcional, fecha en la que finaliza la revisión. Si se sobrepasa la fecha límite, la tarea aparece como “Vencida”.
+   * **Nombre del revisor**: es obligatorio especificar al menos uno. Utilice el cuadro combinado para agregar revisores, escribiendo una lista de nombres con todos los nombres coincidentes; seleccione un nombre y haga clic en **Añadir**. En la siguiente sección de la pestaña **Revisores** muestra el nombre de todos los revisores.
 
-1. Haga clic en **Inicio** para iniciar una revisión.
+1. Haga clic en **Inicio** para comenzar una revisión.
 
    >[!NOTE]
    >
@@ -59,13 +59,13 @@ Esta sección describe lo que sucede cuando se crea o configura una revisión.
 
 1. Vaya a la pestaña Formularios y seleccione un formulario.
 
-1. Si un formulario tiene una revisión en curso y usted es el iniciador de la revisión, **Administrar revisión** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) aparece en la barra de acciones. Solo el iniciador de la revisión puede administrar (actualizar/finalizar) la revisión.
+1. Si un formulario tiene una revisión en curso y usted es el iniciador de la revisión, aparece el icono **Administrar revisión** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) en la barra de acciones. Solo el iniciador de revisión puede administrar (actualizar/finalizar) la revisión.
 
-   Haga clic en **Administrar revisión** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)icono.
+   Haga clic en el icono **Administrar revisión** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)
 
    El icono Administrar revisión está deshabilitado para los usuarios distintos del iniciador.
 
-1. Ahora aparece una pantalla que muestra información:
+1. Aparece una pantalla que muestra la información:
 
    * **Nombre de la revisión**: no se puede editar.
 
@@ -75,14 +75,14 @@ Esta sección describe lo que sucede cuando se crea o configura una revisión.
 
    * **Revisores**: disponible para edición. Puede agregar o quitar revisores. Si una tarea ha vencido, solo podrá agregar revisores una vez que amplíe la fecha límite hasta pasada la fecha actual.
 
-1. Para finalizar la revisión, haga clic en **Fin**.
+1. Para finalizar la revisión, haga clic en **Finalizar**.
 
 ### Acciones asociadas a la modificación de una revisión {#actions-that-occur-when-a-review-is-modified}
 
-Esta sección describe lo que sucede en **Actualizar revisión/Finalizar**:
+Esta sección describe lo que sucede cuando se **actualiza o finaliza una revisión**:
 
 1. Si se modifica la descripción de la revisión, se actualiza la tarea correspondiente de los revisores y el iniciador.
-1. Si se modifica la fecha límite de la revisión, la tarea correspondiente de los revisores se actualiza con la nueva fecha.
+1. Si se modifica la fecha límite de la revisión, se actualiza la tarea correspondiente de los revisores a la nueva fecha.
 
 1. Si se quita un revisor:
 
