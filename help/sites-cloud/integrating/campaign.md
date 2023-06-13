@@ -1,24 +1,30 @@
 ---
-title: Integración con Adobe Campaign
+title: AEM Integración de los as a Cloud Service con Adobe Campaign
 description: AEM Obtenga información acerca de la compatibilidad de los as a Cloud Service de la con las integraciones con Adobe Campaign.
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: b107d66803fea2422a681763314bcfaed4a729db
+source-git-commit: 6d391ea86a950a3777311543492b5b89813ae377
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 9%
+source-wordcount: '176'
+ht-degree: 1%
 
 ---
 
 
-# Integración con Adobe Campaign {#integrating-campaign}
+# AEM Integración de los as a Cloud Service con Adobe Campaign {#integrating-campaign}
 
 AEM Obtenga información acerca de la compatibilidad de los as a Cloud Service de la con las integraciones con Adobe Campaign.
 
+>[!NOTE]
+>
+>En este documento se describe la integración de Adobe Campaign AEM con la solución nativa de la nube de as a Cloud Service AEM.
+>
+>Para obtener más información sobre la integración de Adobe Campaign AEM AEM con 6.5, la solución local o la solución alojada en AMS, haga lo siguiente: [consulte este documento.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)
+
 ## Integración con Adobe Campaign Classic {#acc}
 
-Existen varias versiones de Adobe Campaign Classic (ACC). La compatibilidad con la integración con AEMaaCS depende de la versión de ACC que haya implementado.
+Existen varias versiones de Adobe Campaign Classic (ACC). AEM La compatibilidad con la integración con el as a Cloud Service de la depende de la versión de ACC que haya implementado.
 
 | Versión ACC | Integración con AEMaaCS |
 |---|---|
@@ -30,4 +36,4 @@ Existen varias versiones de Adobe Campaign Classic (ACC). La compatibilidad con 
 
 ## Integración con Adobe Campaign Standard {#acs}
 
-AEM El as a Cloud Service no admite la integración con Adobe Campaign Standard (ACS).
+AEM El as a Cloud Service no admite la integración con [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS).
