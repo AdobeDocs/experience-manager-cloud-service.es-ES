@@ -4,9 +4,9 @@ description: Aprenda a utilizar Cloud Manager para crear su primer programa.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -53,11 +53,11 @@ Siga estos pasos para crear un programa de zona protegida.
 
    ![Página de aterrizaje de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. En el asistente Crear programa, seleccione **Configuración de una zona protegida** y proporcione un nombre de programa y toque o haga clic en **Continuar**.
+1. En el asistente Crear programa, seleccione **Configuración de una zona protegida**, proporcione un nombre de programa y haga clic en **Continuar**.
 
    ![Creación de tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. En el **Configurar la zona protegida** , puede elegir qué soluciones desea habilitar en el programa de zona protegida. El **Sites** y **Assets** las soluciones de siempre se incluyen en los programas de zonas protegidas y se seleccionan automáticamente. Esto es suficiente para nuestro ejemplo de incorporación. Haga clic en **Crear**.
+1. En el cuadro de diálogo **Configurar la zona protegida**, puede elegir qué soluciones desea habilitar en el programa de zona protegida. Las soluciones de **Sites** y **Assets** siempre se incluyen en los programas de zonas protegidas y se seleccionan automáticamente. Esto es suficiente para nuestro ejemplo de incorporación. Haga clic en **Crear**.
 
    ![Selección de soluciones](assets/set-up-sandbox-onboarding.png)
 
