@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1419'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
