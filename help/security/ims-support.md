@@ -3,9 +3,9 @@ title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2054'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ Verá una lista de instancias existentes:
 
 En cada instancia de contexto de producto, habrá algunas que abarquen los servicios de creación o publicación en los entornos Producción, Ensayo o Desarrollo. Cada instancia se asocia a los perfiles de producto o a las funciones de Cloud Manager. Estos perfiles de producto se utilizan para asignar acceso a usuarios y grupos con los privilegios requeridos.
 
-El **AEM Administradores de_xxx** AEM se utilizará para otorgar privilegios de administrador en la instancia de administración asociada mientras que la variable **AEM Usuarios_xxx** Este perfil se utiliza para añadir usuarios habituales.
+El perfil **AEM Administrators_xxx** se utilizará para otorgar privilegios de Administrador en la instancia de AEM asociada, mientras que el perfil **AEM Users_xxx** se utilizará para agregar usuarios habituales.
 
 Los usuarios y grupos agregados bajo este perfil de producto pueden iniciar sesión en esa instancia en particular, como se muestra en el ejemplo siguiente:
 
@@ -150,7 +150,7 @@ Los usuarios y grupos agregados bajo este perfil de producto pueden iniciar sesi
 
 >[!WARNING]
 >
->El **AEM Administradores de** el nombre del perfil del producto no debe cambiarse. Cambiar el nombre del **AEM Administradores de** el perfil de producto eliminará los derechos de administrador de todos los usuarios asignados a dicho perfil.
+>El nombre del perfil del producto **Administradores de AEM** no debe cambiarse. Cambiar el nombre del perfil del producto **Administradores de AEM** quitará los derechos de administrador de todos los usuarios asignados a dicho perfil.
 
 ### Inicio de sesión en Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
