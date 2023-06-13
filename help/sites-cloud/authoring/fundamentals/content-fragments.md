@@ -3,7 +3,7 @@ title: Fragmentos de contenido
 description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1227'
 ht-degree: 100%
 
@@ -73,7 +73,6 @@ Los fragmentos de contenido permiten lo siguiente:
    >* [Diseño adaptable](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [Edición del contenido de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
-
 ### Selección del elemento o la variación {#selecting-the-element-or-variation}
 
 Abra el cuadro de diálogo **Configuración** para ajustar el fragmento que se utilizará en la página actual. El cuadro de diálogo puede depender del componente utilizado.
@@ -92,9 +91,9 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 * **Elemento**
    * Una selección estará disponible dependiendo del modelo utilizado.
 
-   >[!NOTE]
-   >
-   >Los elementos disponibles dependen de la plantilla utilizada.
+  >[!NOTE]
+  >
+  >Los elementos disponibles dependen de la plantilla utilizada.
 
 * **Variación**
    * **Principal** siempre aparecerá como la opción predeterminada.
@@ -146,7 +145,6 @@ Para el contenido intermedio puede hacer lo siguiente:
 >
 >  Por este motivo, es posible que parezca que la posición relativa ha cambiado, ya que los párrafos intermedios no tienen relación contextual con los párrafos (del fragmento) junto a los que se sitúan.
 >* Sin embargo, en caso de que exista conflicto entre las dos estructuras de párrafo, el contenido intermedio no se muestra (aunque siga presente internamente).
-
 
 ### Uso de contenido asociado       {#using-associated-content}
 
