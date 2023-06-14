@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
+source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
 workflow-type: tm+mt
-source-wordcount: '4064'
+source-wordcount: '4079'
 ht-degree: 98%
 
 ---
@@ -73,6 +73,7 @@ ht-degree: 98%
    + Notas de la versión de mantenimiento de AEMaaCS {#maintenance}
       + [Notas de la versión actuales sobre el mantenimiento](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [Notas de la versión de mantenimiento de 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [Notas de la versión de mantenimiento de 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [Notas de la versión de mantenimiento de 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Notas de la versión de Cloud Manager {#cloud-manager}
@@ -546,6 +547,7 @@ ht-degree: 98%
             + [Creación de temáticas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
             + [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
             + [Creación de Formularios adaptables: componentes principales en una página de AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Utilizar la traducción automática o la traducción humana para traducir un formulario adaptable](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurar la página de redireccionamiento o el mensaje de agradecimiento](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + Crear formularios adaptables: componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}

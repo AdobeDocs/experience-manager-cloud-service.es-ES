@@ -3,10 +3,10 @@ title: Implementación en AEM as a Cloud Service
 description: Implementación en AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
+source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
 workflow-type: tm+mt
-source-wordcount: '3541'
-ht-degree: 89%
+source-wordcount: '3542'
+ht-degree: 88%
 
 ---
 
@@ -115,7 +115,7 @@ Es posible limitar la instalación de contenido mutable a la creación o publica
 >[!NOTE]
 >Los paquetes de contenido se implementan en todos los tipos de entorno (des., fase, prod.). No es posible limitar la implementación a un entorno específico. Esta limitación se aplica para garantizar la opción de una ejecución de prueba de ejecución automatizada. El contenido específico de un entorno requiere una instalación manual mediante el [Administrador de paquetes.](/help/implementing/developing/tools/package-manager.md)
 
-Además, no hay ningún mecanismo para revertir los cambios del paquete de contenido mutable después de haberlos aplicado. Si los clientes detectan un problema, pueden optar por solucionarlo en su próxima versión de código o, como último recurso, restaurar todo el sistema a un punto en el tiempo antes de la implementación.
+Además, no hay mecanismo para revertir los cambios del paquete de contenido mutable después de aplicarlos. Si los clientes detectan un problema, pueden optar por solucionarlo en su próxima versión de código o, como último recurso, restaurar todo el sistema a un punto en el tiempo antes de la implementación.
 
 Cualquier paquete de terceros incluido debe validarse como compatible con AEM as a Cloud Service; de lo contrario, su inclusión dará como resultado un error de implementación.
 
@@ -130,9 +130,9 @@ En los siguientes casos, es preferible utilizar el método de codificación manu
 * Crear/eliminar usuarios
 * Agregar ACL
 
-   >[!NOTE]
-   >
-   >La definición de ACL requiere que las estructuras de nodos ya estén presentes. Por lo tanto, puede que sea necesario crear instrucciones de ruta anteriores.
+  >[!NOTE]
+  >
+  >La definición de ACL requiere que las estructuras de nodos ya estén presentes. Por lo tanto, puede que sea necesario crear instrucciones de ruta anteriores.
 
 * Agregar ruta (por ejemplo, para estructuras de carpetas raíz)
 * Agregar CND (definiciones de tipos de nodos)
