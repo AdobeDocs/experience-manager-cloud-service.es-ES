@@ -2,10 +2,10 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo crearlos para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 78%
+source-wordcount: '2336'
+ht-degree: 77%
 
 ---
 
@@ -47,7 +47,7 @@ Las funcionalidades de los entornos individuales dependen de las soluciones habi
 
    * La opción **Agregar entorno** también está disponible en la pestaña **Entornos**.
 
-      ![Pestaña Entornos](assets/environments-tab.png)
+     ![Pestaña Entornos](assets/environments-tab.png)
 
    * La opción **Agregar entorno** se puede desactivar debido a la falta de permisos o dependiendo de los recursos con licencia.
 
@@ -129,7 +129,7 @@ Puede usar la tarjeta **Entornos** en la página de información general para ac
 
    * También puede hacer clic en el botón **Mostrar todo** en la tarjeta **Entornos** para saltar directamente a la pestaña **Entornos**.
 
-      ![Mostrar todas las opciones](assets/environment-showall.png)
+     ![Mostrar todas las opciones](assets/environment-showall.png)
 
 1. Los **Entornos** se abrirán y enumerarán todos los entornos del programa.
 
@@ -231,12 +231,15 @@ La opción Eliminar también está disponible en la pestaña **Entornos** de la 
 >* Los entornos de producción y ensayo creados en un programa de producción no se pueden eliminar.
 >* Se pueden eliminar los entornos de producción y ensayo de un programa de zona protegida.
 
-
 ## Administrar el acceso {#managing-access}
 
 Seleccione **Administrar el acceso** del menú de los tres puntos del entorno en la tarjeta **Entornos**. Puede navegar hasta la instancia de autor directamente y administrar el acceso para su entorno.
 
 ![Opción Administrar el acceso](assets/environ-access.png)
+
+>[!TIP]
+>
+>Ver el documento [AEM Perfiles de equipo y producto as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) AEM para obtener información sobre cómo los perfiles de equipo y producto as a Cloud Service pueden conceder y limitar el acceso a las soluciones de Adobe con licencia.
 
 ## Acceder a la consola de desarrollador {#accessing-developer-console}
 
