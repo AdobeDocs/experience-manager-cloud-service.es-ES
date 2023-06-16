@@ -4,9 +4,9 @@ description: Conozca los conceptos básicos de AEM; administración de paquetes 
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3788'
 ht-degree: 4%
 
 ---
@@ -44,6 +44,37 @@ AEM Los paquetes de contenido creados para aplicaciones as a Cloud Service de la
 >No vuelva a intentar realizar la instalación si aparece un error de este tipo. La instalación continúa correctamente en el fondo. Si reinicia la instalación, podrían producirse conflictos debido a varios procesos de importación simultáneos.
 
 Para obtener más información sobre cómo administrar paquetes para AEMaaCS, consulte el documento [AEM Implementación en el as a Cloud Service de](/help/implementing/deploying/overview.md) en la guía de usuario sobre implementación.
+
+## Tamaño del paquete {#package-size}
+
+Adobe recomienda no crear paquetes grandes. Esto sirve para evitar problemas de tiempo de espera al cargar y descargar paquetes.
+
+Como regla general, un paquete debe transmitirse en su totalidad en un plazo de 60 segundos. Esto proporciona la siguiente fórmula como guía.
+
+```text
+MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
+```
+
+Dado que el tráfico de red es variable y siempre es menor que el valor teórico máximo anunciado, intente utilizar una herramienta de prueba de velocidad de conexión a Internet en línea.
+
+Las velocidades de Internet son casi siempre diferentes para las cargas y descargas. Suponiendo que necesite cargar y descargar paquetes, debe utilizar el valor más bajo (normalmente la velocidad de carga) en el cálculo.
+
+### Ejemplos {#example}
+
+Utilizando una herramienta de prueba de velocidad de Internet, veo que mi velocidad de carga actual es de unos 100 Mbps.
+
+```text
+100 Mbps = 12.5 MB/s
+12.5 MB/s * 60 s = 750 MB
+```
+
+Por lo tanto, cualquier paquete que cree debe ser menor que 750 MB.
+
+>[!NOTE]
+>
+>Las velocidades de la red están sujetas a las condiciones locales actuales. Incluso con una prueba de velocidad reciente, el rendimiento real puede variar.
+>
+>Por lo tanto, la fórmula proporcionada es solo una guía y el tamaño máximo real del envase recomendado puede variar.
 
 ## El administrador de paquetes {#package-manager}
 
@@ -176,7 +207,7 @@ Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree
 
 ![Pestaña Dependencias](assets/dependencies.png)
 
-| Campo | Descripción | Ejemplo/Detalles |
+| Campo | Descripción | Ejemplos/Detalles |
 |---|---|---|
 | Probado con | El nombre y la versión del producto a los que se dirige este paquete o con los que es compatible. | `AEMaaCS` |
 | Problemas solucionados | Un campo de texto que permite enumerar los detalles de los errores corregidos con este paquete, un error por línea | - |
@@ -187,7 +218,7 @@ Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree
 
 ![Pestaña Configuración avanzada](assets/advanced-settings.png)
 
-| Campo | Descripción | Ejemplo/Detalles |
+| Campo | Descripción | Ejemplos/Detalles |
 |---|---|---|
 | Nombre | El nombre del proveedor del paquete | `WKND Media Group` |
 | URL | URL del proveedor | `https://wknd.site` |
@@ -237,6 +268,10 @@ Se pueden realizar muchas acciones en un paquete.
 
 No es obligatorio crear inmediatamente el paquete después de crearlo. Un paquete sin compilar no contiene contenido y consiste únicamente en los datos de filtro y otros metadatos del paquete.
 
+>[!TIP]
+>
+>Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes.](#package-size)
+
 ### Creación de un paquete {#building-a-package}
 
 A menudo, los paquetes se crean al mismo tiempo que usted [creación del paquete](#creating-a-new-package), pero puede volver más tarde para compilar o volver a compilar el paquete. Esto puede resultar útil si el contenido del repositorio ha cambiado o los filtros del paquete han cambiado.
@@ -248,6 +283,10 @@ A menudo, los paquetes se crean al mismo tiempo que usted [creación del paquete
 1. Clic **Generar**. Un cuadro de diálogo le pedirá que confirme que desea crear el paquete, ya que el contenido existente se sobrescribirá.
 
 1. Haga clic en **Aceptar**. AEM crea el paquete, enumerando todo el contenido añadido al paquete tal y como lo hace en la lista de actividad. AEM Cuando se completa, muestra una confirmación de que el paquete se ha creado y (al cerrar el cuadro de diálogo) actualiza la información de la lista de paquetes.
+
+>[!TIP]
+>
+>Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes.](#package-size)
 
 ### Edición de un paquete {#edit-package}
 
@@ -313,6 +352,10 @@ Una vez creado un paquete, puede ver su contenido.
 
 1. AEM Descarga el paquete en su equipo.
 
+>[!TIP]
+>
+>Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes.](#package-size)
+
 ### Carga de paquetes desde el sistema de archivos {#uploading-packages-from-your-file-system}
 
 1. [Acceda al Administrador de paquetes.](#accessing)
@@ -331,6 +374,10 @@ Una vez creado un paquete, puede ver su contenido.
 1. Clic **OK** y el paquete seleccionado se carga y la lista de paquetes se actualiza en consecuencia.
 
 AEM El contenido del paquete ahora existe en la, pero para que el contenido esté disponible para su uso, asegúrese de lo siguiente [instalar el paquete](#installing-packages).
+
+>[!TIP]
+>
+>Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes.](#package-size)
 
 ### Validación de paquetes {#validating-packages}
 
