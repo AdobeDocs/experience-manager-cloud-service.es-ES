@@ -4,10 +4,10 @@ description: Utilice una aplicación React de muestra para aprender a personaliz
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1038'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Empiece en el editor de fragmentos de contenido con la aplicación de muestra qu
 
 1. Haga clic o pulse en el botón **Vista previa** en la parte superior derecha de la pantalla del editor.
 
-1. La aplicación de muestra se abre en una nueva pestaña. La aplicación es para la marca ficticia de estilo de vida al aire libre WKND. Haga clic alrededor para navegar por el contenido de muestra.
+1. La aplicación de muestra se abre en una nueva pestaña. La aplicación es para la marca ficticia de estilo de vida al aire libre WKND. Desplácese hacia abajo por la página para desplazarse por el contenido de ejemplo.
 
 1. Vuelva a la pestaña del explorador del editor de fragmentos de contenido para continuar.
 
