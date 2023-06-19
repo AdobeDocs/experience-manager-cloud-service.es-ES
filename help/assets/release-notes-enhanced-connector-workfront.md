@@ -2,9 +2,9 @@
 title: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 3a00faaf285be693243e3fb55159149520293610
+source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1167'
 ht-degree: 1%
 
 ---
@@ -15,18 +15,22 @@ En la siguiente sección se describen las notas de la versión generales de [!DN
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la última versión, 1.9.10, de [!DNL Workfront for Experience Manager enhanced connector] es el 18 de mayo de 2023.
+La fecha de la última versión, 1.9.11 de [!DNL Workfront for Experience Manager enhanced connector] es el 19 de junio de 2023.
 
 ## Puntos destacados de la versión {#release-highlights}
 
 La versión más reciente de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes actualizaciones:
 
-* Workfront devuelve una respuesta HTTP 409 para suscripciones de evento duplicadas en función de una llamada REST del Experience Manager a Workfront, lo que provoca una excepción de puntero nulo.
+* Cuando tiene configurada la red avanzada, hay problemas al enviar contenido desde Adobe Workfront AEM a la red as a Cloud Service de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de.
+
+>[!NOTE]
+>
+>AEM La versión 6.4 de ha llegado al final de la asistencia ampliada. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [aquí](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
 >
->El Adobe recomienda [actualice a la última versión 1.9.10](../assets/update-workfront-enhanced-connector.md) de la [!DNL Workfront for Experience Manager enhanced connector].
+>El Adobe recomienda [actualice a la última versión 1.9.11](../assets/update-workfront-enhanced-connector.md) de la [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conocidos {#known-issues}
 
@@ -35,6 +39,10 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 * Cuando utiliza la experiencia clásica de Workfront, la variable **[!UICONTROL Enviar a]** opción disponible en el **[!UICONTROL Más]** La lista desplegable no permite seleccionar el destino de destino en Experience Manager. El **[!UICONTROL Enviar a]** La opción funciona correctamente utilizando **[!UICONTROL Acciones de documento]** lista desplegable. El **[!UICONTROL Enviar a]** funciona correctamente para **[!UICONTROL Más]** , así como la lista desplegable **[!UICONTROL Acciones de documento]** lista desplegable disponible en la nueva experiencia de Workfront.
 
 ## Versiones anteriores {#previous-releases}
+
+### Versión de mayo de 2023 {#may-2023-release}
+
+* Workfront devuelve una respuesta HTTP 409 para suscripciones de evento duplicadas en función de una llamada REST del Experience Manager a Workfront, lo que provoca una excepción de puntero nulo.
 
 ### Versión de abril de 2023 {#april-2023-release}
 
@@ -95,7 +103,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 * Activación de la **[!UICONTROL Publicar recursos en Brand Portal]** en la página de configuración del conector mejorado de Workfront se crea un evento incorrecto. El evento no se elimina incluso después de deshabilitar la opción.
 
-   Para resolver el problema:
+  Para resolver el problema:
 
    1. Actualice a la versión 1.9.5 del conector mejorado.
 
@@ -123,9 +131,9 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
       1. Elimine la suscripción de evento incorrecta. Realizar una llamada de API de eliminación a `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
          `200` ya que el código de respuesta significa la eliminación correcta de las suscripciones de evento incorrectas.
-   >[!NOTE]
-   >
-   >Si ya ha eliminado las suscripciones a eventos incorrectas antes de ejecutar los pasos mencionados en este procedimiento, puede omitir el último paso de este procedimiento.
+  >[!NOTE]
+  >
+  >Si ya ha eliminado las suscripciones a eventos incorrectas antes de ejecutar los pasos mencionados en este procedimiento, puede omitir el último paso de este procedimiento.
 
 ### Versión de octubre de 2022 {#october-2022-release}
 
@@ -189,4 +197,3 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 >[!MORELIKETHIS]
 >
 >* [Integrar [!DNL Workfront for Experience Manager enhanced connector] con Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
-
