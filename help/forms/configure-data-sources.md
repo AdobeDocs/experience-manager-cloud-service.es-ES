@@ -278,8 +278,7 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
    Si selecciona **[!UICONTROL clave de la API]** como tipo de autenticación, especifique el valor de la clave de la API. La clave de la API se puede enviar como encabezado de solicitud o como parámetro de consulta. Seleccione una de estas opciones en la lista desplegable **[!UICONTROL Ubicación]** y especifique el nombre del encabezado o el parámetro de consulta en el campo **[!UICONTROL Nombre del parámetro]**.
 
    >[!NOTE]
-   >
-   Debe seleccionar el tipo de autenticación OAuth 2.0 con el que conectarse a los servicios de [!DNL Microsoft® Dynamics] que utilizan el punto final OData como raíz de servicio.
+   >Debe seleccionar el tipo de autenticación OAuth 2.0 con el que conectarse a los servicios de [!DNL Microsoft® Dynamics] que utilizan el punto final OData como raíz de servicio.
 
 1. Pulse **[!UICONTROL Crear]** para crear la configuración de nube para el servicio OData.
 
