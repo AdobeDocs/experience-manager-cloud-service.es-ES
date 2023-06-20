@@ -2,10 +2,10 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 22%
+source-wordcount: '1439'
+ht-degree: 21%
 
 ---
 
@@ -52,6 +52,8 @@ A veces, es difícil comprender los problemas de conexión SSL/TLS. AEM Para sol
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
+>[!NOTE]
+>Este indicador solo sirve para depurar problemas SSL. Asegúrese de que el indicador esté deshabilitado antes de ejecutar la extracción, ya que puede requerir una gran cantidad de espacio en disco. Esto podría llenar la capacidad de la unidad y provocar el fallo del proceso de extracción.
 
 ## Ejecución de la herramienta de transferencia de contenido {#running-tool}
 
