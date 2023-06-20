@@ -2,9 +2,9 @@
 title: Publicación de un canal en Screens as a Cloud Service
 description: En esta página se describe cómo publicar un canal en Screens as a Cloud Service.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '300'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 Puede publicar contenido desde AEM Screens. La función Administrar publicación permite enviar actualizaciones de contenido del autor a la publicación del reproductor. Puede publicar o cancelar la publicación del contenido de todo el proyecto de AEM Screens o solo de uno de los canales, la ubicación, el reproductor o una aplicación.
 
 >[!IMPORTANT]
->Una vez creado el canal o los canales en el proyecto, es obligatorio publicar los canales para mostrar los canales en la vista de lista de inventario en el proveedor de servicios de AEM Screens.
+>Después de crear el canal o los canales en el proyecto, es obligatorio publicar los canales para mostrar el canal o los canales en la vista de lista de inventario en el proveedor de servicios de AEM Screens.
 
 ## Objetivo {#objective}
 
@@ -40,7 +40,7 @@ Siga los pasos a continuación para publicar el canal:
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >Clic **+ Incluir elementos secundarios** en la barra de acciones, desmarque todas las opciones para publicar todos los módulos del proyecto y haga clic en Añadir para publicar. De forma predeterminada, se marcarán todas las casillas y tendrá que desmarcar manualmente las casillas para publicar todos los módulos del proyecto.
+   >Clic **Incluir elementos secundarios** en la barra de acciones, desmarque todas las opciones para publicar todos los módulos del proyecto y haga clic en Añadir para publicar. De forma predeterminada, todas las casillas están marcadas y debe desmarcar manualmente las casillas para publicar todos los módulos del proyecto.
 
 1. Después de seleccionar el canal en la **Administrar publicación** asistente, haga clic en **Publish** para publicar el canal.
 

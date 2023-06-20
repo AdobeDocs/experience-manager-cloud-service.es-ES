@@ -2,10 +2,10 @@
 title: Configuración sin encabezado
 description: Con esta guía de inicio rápido, conozca los aspectos básicos de las potentes capacidades sin encabezado de AEM as a Cloud Service, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,6 @@ A continuación se muestra una ruta sencilla para crear, administrar y ofrecer e
 >* [Recorrido para arquitectos de contenido sin encabezado](/help/journey-headless/architect/overview.md)
 >* [Recorrido para autores de contenido sin encabezado](/help/journey-headless/author/overview.md)
 >* [Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md).
-
 
 ## Audiencia {#audience}
 

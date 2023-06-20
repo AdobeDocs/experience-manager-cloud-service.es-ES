@@ -2,9 +2,9 @@
 title: Creación y administración de pantallas en pantallas as a Cloud Service
 description: En esta página se describe cómo crear y administrar pantallas en Pantallas as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '663'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 Una vez publicado el canal, es el momento de crear la visualización en el proveedor de servicios de Screens.
 
-Una pantalla es una agrupación virtual de pantallas que normalmente se colocan una al lado de la otra. La pantalla suele ser permanente con respecto a una instalación. Estos serán los objetos con los que los autores de contenido trabajarán y a los que siempre se hará referencia como visualización lógica en lugar de sus partes de contador físicas.
+Una pantalla es una agrupación virtual de pantallas que normalmente se colocan una al lado de la otra. La pantalla suele ser permanente con respecto a una instalación. Este contenido de objeto es con lo que los autores trabajan y siempre se refieren como visualización lógica en lugar de sus partes de contador físicas.
 
 ## Objetivo {#objective}
 
@@ -128,7 +128,7 @@ Se puede acceder a todas las operaciones de carpeta a través de la barra de acc
 
 1. En la vista de inventario, seleccione la carpeta secundaria que desee eliminar y asegúrese de que esté vacía.
 
-1. Haga clic en **Eliminar** acción en la barra de acciones de selección. La acción se deshabilitará si la carpeta no está vacía.
+1. Clic **Eliminar** acción en la barra de acciones de selección. La acción se desactiva si la carpeta no está vacía.
 
 
 ## Siguientes pasos {#whats-next}

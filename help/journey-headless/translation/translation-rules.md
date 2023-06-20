@@ -2,10 +2,10 @@
 title: Configuración de reglas de traducción para contenido sin encabezado
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,6 @@ Ahora que el conector está configurado, este artículo le explica el siguiente 
 >* El indicador **Traducible** crea automáticamente reglas de traducción y no requiere intervención.
 >* El indicador **Traducible** solo se utiliza si la configuración del marco de trabajo de integración de traducción está establecida en **[Habilitar los campos del modelo de contenido para la traducción.](/help/sites-cloud/administering/translation/integration-framework.md)**
 >* Al habilitar esta opción en la configuración de TIF, se reemplazará cualquier regla de traducción creada manualmente.|
-
 
 ## Objetivo {#objective}
 
@@ -77,7 +76,7 @@ En la Interfaz de usuario **Configuración de traducción**, hay un número de o
 1. AEM guarda la configuración.
 1. Debe seleccionar el contexto que acaba de crear y, luego, pulsar o hacer clic en **Editar**. Esto abre el **Editor de reglas de traducción** para configurar las propiedades.
    ![Editor de reglas de traducción](assets/translation-rules-editor.png)
-1. De forma predeterminada, todas las configuraciones se heredan de la ruta principal, en este caso, `/content/dam`. Desmarque la opción **Heredar de`/content/dam`** para añadir campos adicionales a la configuración.
+1. De forma predeterminada, todas las configuraciones se heredan de la ruta principal, en este caso, `/content/dam`. Desmarque la opción **Heredar de`/content/dam`** para que pueda añadir campos adicionales a la configuración.
 1. Una vez desmarcado, en la sección **General** de la lista, añada los nombres de propiedad de los modelos de fragmento de contenido que haya [identificado anteriormente como campos para traducción.](getting-started.md#content-models)
    1. Introduzca el nombre de la propiedad en el campo **Nueva propiedad**.
    1. Las opciones **Traducir** y **Heredar** se marcan automáticamente.

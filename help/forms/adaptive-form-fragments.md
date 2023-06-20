@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2003'
-ht-degree: 100%
+source-wordcount: '2000'
+ht-degree: 97%
 
 ---
 
@@ -75,9 +75,9 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
 1. En el cuadro de diálogo Creación de fragmentos, especifique la siguiente información:
 
    * **Nombre**: Nombre del fragmento. El valor predeterminado es el nombre de elemento del panel. Es un campo obligatorio.
-      >[!NOTE]
-      >
-      >Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, el fragmento no se creará.
+     >[!NOTE]
+     >
+     >Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, el fragmento no se creará.
 
    * **Título**: Título del fragmento. El valor predeterminado es el título del panel.
 
@@ -85,7 +85,7 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
 
    * **Etiquetas**: Etiquetas de metadatos para el fragmento.
 
-   * **Ruta de destino**: Ruta del repositorio en la que se guardará el fragmento. Si no especifica una ruta, se creará un nodo con el mismo nombre que el del fragmento junto al nodo que contiene el formulario adaptable. El fragmento se guardará en este nodo.
+   * **Ruta de destino**: Ruta del repositorio donde se guarda el fragmento. Si no especifica una ruta, se creará un nodo con el mismo nombre que el del fragmento junto al nodo que contiene el formulario adaptable. El fragmento se guardará en este nodo.
 
    * **Modelo de formulario**: En función del modelo de formulario para el formulario adaptable, este campo muestra **Esquema XML**, **Plantilla de formulario** o **Ninguno**. Es un campo no editable.
 
@@ -240,7 +240,7 @@ Para localizar un formulario adaptable que contenga fragmentos de formulario ada
 * Cuando vuelva a publicar un fragmento de formulario adaptable actualizado, los cambios se reflejarán en las instancias publicadas del formulario adaptable en el que se utilice el fragmento.
 * El formulario adaptable que contenga el componente Verificar no admitirá usuarios anónimos. Además, no se recomienda utilizar el componente Verificar en un fragmento de formulario adaptable.
 * (**Solo Mac**) Para asegurarse de que la funcionalidad de los fragmentos del formulario funciona perfectamente en todas las situaciones, agregue la siguiente entrada al archivo /private/etc/hosts:
-   `127.0.0.1 <Host machine>` **Equipo host**: El equipo Mac de Apple en el que [!DNL AEM Forms] está implementado.
+  `127.0.0.1 <Host machine>` **Equipo host**: El equipo Mac de Apple en el que [!DNL AEM Forms] está implementado.
 
 ## Fragmentos de referencia {#reference-fragments}
 

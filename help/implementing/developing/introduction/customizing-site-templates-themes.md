@@ -4,9 +4,9 @@ description: AEM Aprenda cómo se pueden utilizar las plantillas de sitio de la 
 feature: Administering
 role: Admin
 exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '290'
 ht-degree: 25%
 
 ---
@@ -17,7 +17,7 @@ AEM Aprenda cómo se pueden utilizar las plantillas de sitio de la para predefin
 
 ## Información general {#overview}
 
-AEM AEM Con el fin de permitir a los administradores de la crear rápidamente sitios adaptados a las necesidades empresariales, admite la creación de nuevos sitios mediante plantillas de sitio y temas de sitio.
+AEM AEM Para permitir a los administradores de la crear rápidamente sitios adaptados a las necesidades de la empresa, admite la creación de nuevos sitios mediante plantillas de sitio y temas de sitio.
 
 * Un **AEM plantilla del sitio de** generalmente contiene contenido y estructura base del sitio, así como información de estilo del sitio, conocida como tema del sitio para iniciar un nuevo sitio rápidamente. Las plantillas son potentes porque se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
 * Un **AEM tema del sitio** AEM AEM es un paquete que contiene CSS, JavaScript y recursos estáticos que definen el estilo del sitio y cumplen la estructura de un tema del sitio de la.

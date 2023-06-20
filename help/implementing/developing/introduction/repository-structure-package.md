@@ -2,9 +2,9 @@
 title: Paquete de estructura del repositorio de proyectos de AEM
 description: Los proyectos de Adobe Experience Manager as a Cloud Service Maven requieren una definición de subpaquete de estructura de repositorio cuyo único propósito sea definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 9%
 
 ---
@@ -69,12 +69,12 @@ Asegúrese de agregar este nuevo subproyecto de Maven a los proyectos principale
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                     <cloudManagerTarget>none</cloudManagerTarget>
                 </properties>
                 <configuration>
                     <properties>
-                        <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                        <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
                     <filters>
@@ -171,7 +171,7 @@ En este caso:
 
 ## Errores y depuración
 
-Si los paquetes de estructura del repositorio no están configurados correctamente, en la compilación de Maven se notificará un error:
+Si los paquetes de estructura del repositorio no están correctamente configurados, se informa de un error en la compilación de Maven:
 
 ```
 1 error(s) detected during dependency analysis.

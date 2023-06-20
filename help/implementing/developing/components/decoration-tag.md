@@ -2,9 +2,9 @@
 title: Etiqueta decorativa
 description: Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Para los desarrolladores, AEM tiene una lógica clara y sencilla para controlar las etiquetas de decoración que envuelven los componentes incluidos.
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '787'
 ht-degree: 10%
 
 ---
@@ -39,7 +39,7 @@ Se pueden aplicar las siguientes propiedades y nodos a los componentes para cont
 * **`cq:htmlTag`nodo :** Este nodo se puede añadir bajo un componente y puede tener las siguientes propiedades:
    * **`cq:tagName {String}`:** Se puede utilizar para especificar una etiqueta de HTML personalizada que se utilizará para ajustar los componentes en lugar del elemento DIV predeterminado.
    * **`class {String}`:** Se puede utilizar para especificar los nombres de clase css que se agregarán al contenedor.
-   * Se agregarán otros nombres de propiedades como atributos de HTML con el mismo valor de cadena proporcionado.
+   * Otros nombres de propiedades se agregan como atributos de HTML con el mismo valor de cadena proporcionado.
 
 ## Controles de script {#script-controls}
 
@@ -89,7 +89,7 @@ Todos los ejemplos siguientes suponen la siguiente estructura de contenido y com
 
 #### Caso de uso 1: Incluir un componente para la reutilización de código {#use-case-include-a-component-for-code-reuse}
 
-El caso de uso más típico es cuando un componente incluye otro componente por motivos de reutilización del código. En ese caso, no se desea que el componente incluido pueda editarse con su propia barra de herramientas y cuadro de diálogo, por lo que no se necesita ningún contenedor, y el componente `cq:htmlTag` se ignorarán. Este puede considerarse el comportamiento predeterminado.
+El caso de uso más típico es cuando un componente incluye otro componente por motivos de reutilización del código. En ese caso, no se desea que el componente incluido pueda editarse con su propia barra de herramientas y cuadro de diálogo, por lo que no se necesita ningún contenedor, y el componente `cq:htmlTag` se ignora. Este puede considerarse el comportamiento predeterminado.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 

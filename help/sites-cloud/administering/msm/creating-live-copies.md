@@ -4,10 +4,10 @@ description: Aprenda a crear y sincronizar Live Copies para reutilizar el conten
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
-workflow-type: ht
-source-wordcount: '4322'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '4308'
+ht-degree: 94%
 
 ---
 
@@ -77,7 +77,7 @@ Puede editar o eliminar una configuración de modelo existente:
 
    ![Configuraciones del modelo](../assets/blueprint-configurations.png)
 
-1. Seleccione la configuración del modelo necesaria: las acciones adecuadas estarán disponibles en la barra de herramientas:
+1. Seleccione la configuración del modelo necesaria: las acciones adecuadas están disponibles en la barra de herramientas:
 
    * **Propiedades**; puede utilizarlo para ver y luego editar las propiedades de la configuración.
    * **Eliminar**
@@ -101,7 +101,7 @@ Puede crear una Live Copy de cualquier página:
 
 La única diferencia es que la disponibilidad del comando **Despliegue** en las páginas de origen/modelo depende de si una configuración de modelo hace referencia al origen:
 
-* Si crea Live Copy a partir de una página de origen que **es** en una configuración de modelo, el comando Despliegue estará disponible en las páginas de origen/modelo.
+* Si crea la Live Copy desde una página de origen que **es** al que se hace referencia en una configuración de modelo, el comando Despliegue está disponible en las páginas de origen/modelo.
 * Si crea una Live Copy a partir de una página de origen que **no es** en una configuración de modelo, el comando Despliegue no estará disponible en las páginas de origen/modelo.
 
 Para crear una Live Copy:
@@ -134,8 +134,8 @@ Para crear una Live Copy:
    * Seleccionado: crear una Live Copy solo de la página seleccionada (Live Copy superficial)
    * No seleccionado: crear una Live Copy que incluya todos los descendientes de la página seleccionada (Live Copy profundo)
 
-1. (Opcional) Para especificar una o más configuraciones de despliegue que se utilizarán para Live Copy, utilice la lista desplegable **Configuración de lanzamiento** para seleccionarlas. Las configuraciones seleccionadas se mostrarán debajo del selector desplegable.
-1. Haga clic o pulse **Crear**. Se mostrará un mensaje de confirmación, desde el que podrá seleccionar una de las opciones siguientes: **Apertura** o **Listo**.
+1. (Opcional) Para especificar una o más configuraciones de despliegue que se utilizarán para Live Copy, utilice la lista desplegable **Configuración de lanzamiento** para seleccionarlas. Las configuraciones seleccionadas se muestran debajo del selector desplegable.
+1. Haga clic o pulse **Crear**. Se muestra un mensaje de confirmación, desde el que puede seleccionar una de las siguientes opciones **Abrir** o **Listo**.
 
    >[!NOTE]
    >
@@ -260,13 +260,13 @@ Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en
 
    * **Ámbito de despliegue**:
 
-      Especifique si el ámbito es solo para la página seleccionada o si debe incluir las subpáginas.
+     Especifique si el ámbito es solo para la página seleccionada o si debe incluir las subpáginas.
 
    * **Programa**:
 
-      Especifique si el trabajo de despliegue debe ejecutarse de inmediato (**Ahora**) o en una fecha u hora posterior (**Más tarde**).
+     Especifique si el trabajo de despliegue debe ejecutarse de inmediato (**Ahora**) o en una fecha u hora posterior (**Más tarde**).
 
-      ![Definición del alcance y la programación del despliegue](../assets/rollout-scope-schedule.png)
+     ![Definición del alcance y la programación del despliegue](../assets/rollout-scope-schedule.png)
 
 1. Después de confirmar estos detalles, seleccione **Despliegue** para llevar a cabo la acción.
 
@@ -309,7 +309,7 @@ Sincronice una Live Copy para extraer cambios del origen a la Live Copy.
 
    ![Botón Sincronizar](../assets/synchronize.png)
 
-   Se solicitará confirmación, use **Sincronizar** para continuar.
+   Se solicita confirmación, use **Sincronización** para continuar.
 
 #### Sincronización de una Live Copy desde la Información general de Live Copy {#synchronize-a-live-copy-from-the-live-copy-overview}
 
@@ -335,7 +335,7 @@ Para cambiar el contenido de Live Copy, puede hacer lo siguiente:
 >
 >Si crea manualmente una nueva página en Live Copy, esta será local para Live Copy, lo que significa que no tiene una página de origen correspondiente a la que esté adjunta.
 >
->La práctica recomendada para crear una página local que forme parte de la relación es crear la página local en el origen y llevar a cabo un despliegue profundo. Esto creará la página localmente como Live Copies.
+>La práctica recomendada para crear una página local que forme parte de la relación es crear la página local en el origen y realizar un despliegue profundo. Esto creará la página localmente como Live Copies.
 
 >[!NOTE]
 >
@@ -403,7 +403,7 @@ Al volver a habilitar la herencia, la página no se sincroniza automáticamente 
 
 * En el diálogo **Reanudar**/**Revertir**; por ejemplo:
 
-   ![Reanudación y sincronización](../assets/resume-and-synch.png)
+  ![Reanudación y sincronización](../assets/resume-and-synch.png)
 
 * En una etapa posterior, seleccionando manualmente la acción de sincronización.
 
@@ -417,13 +417,13 @@ Una vez [suspendida](#suspending-inheritance-from-page-properties), la acción *
 
 ![Botón Reanudar](../assets/resume.png)
 
-Cuando se selecciona, se muestra el cuadro de diálogo. Puede seleccionar una sincronización, si es necesario, y confirmar la acción.
+Al seleccionarlo, se muestra el cuadro de diálogo. Puede seleccionar una sincronización, si es necesario, y confirmar la acción.
 
 #### Reanudación de una página Live Copy desde la Información general de Live Copy {#resume-a-live-copy-page-from-the-live-copy-overview}
 
 La [acción Reanudar también está disponible en la Información general de Live Copy](live-copy-overview.md#using-the-live-copy-overview), cuando se selecciona una página Live Copy.
 
-1. Abra la [Información general de Live Copy](live-copy-overview.md#using-the-live-copy-overview) y seleccione una página Live Copy que se haya suspendido. La página se mostrará como **HERENCIA CANCELADA**.
+1. Abra el [Información general de Live Copy](live-copy-overview.md#using-the-live-copy-overview) y seleccione una página de Live Copy suspendida. La página se muestra como **HERENCIA CANCELADA**.
 1. En la barra de herramientas, seleccione **Reanudar**.
 1. Indique si desea sincronizar la página después de revertir la herencia y, a continuación, confirme la acción **Reanudar** en el diálogo **Reanudar Live Copy**.
 
@@ -498,7 +498,7 @@ Para habilitar la herencia para un componente, pulse o haga clic en el botón **
 Si una Live Copy contiene componentes que forman parte de un sistema de párrafos, la herencia de ese sistema de párrafos cumple las siguientes reglas:
 
 * Se puede modificar el orden de los componentes de un sistema de párrafos heredado, incluso con la herencia establecida.
-* En el despliegue, el orden de los componentes se restaurará a partir del modelo. Si se añadieran nuevos componentes a la Live Copy antes del despliegue, estos se reordenarían junto con los componentes sobre los cuales se agregaron.
+* En el despliegue, el orden de los componentes se restaura a partir del modelo. Si se agregaron nuevos componentes a la Live Copy antes del despliegue, estos se reordenan junto con los componentes sobre los cuales se agregaron.
 * Si se cancela la herencia del sistema de párrafos, el orden de los componentes no se restaurará durante el despliegue y permanecerá tal cual en la Live Copy.
 
 >[!NOTE]
@@ -544,7 +544,7 @@ Para habilitar la herencia para una propiedad, toque o haga clic en el icono **R
 
 ### Restablecer una página de Live Copy {#resetting-a-live-copy-page}
 
-Puede restablecer una página de Live Copy para:
+Puede restablecer una página de Live Copy para hacer lo siguiente:
 
 * Quite todas las cancelaciones de herencia y
 * Devuelva la página al mismo estado que la página de origen.
@@ -590,7 +590,7 @@ Para realizar un seguimiento de los cambios realizados, puede ver la página de 
 
    ![Comparación de Live Copies](../assets/compare-live-copy.png)
 
-1. Las páginas Live Copy y modelo se abrirán en paralelo.
+1. Las páginas Live Copy y modelo se abren en paralelo.
 
    Para obtener información completa sobre el uso de esta característica de comparación, consulte la [diferencia de la página](/help/sites-cloud/authoring/features/page-diff.md).
 
@@ -608,27 +608,28 @@ Hay implicaciones sobre dónde dentro del árbol que utiliza **Desasociar**:
 
 * **Desasociar en una página raíz de una Live Copy**
 
-   Cuando esta operación se realiza en la página raíz de una Live Copy, se elimina la relación activa entre todas las páginas del modelo y su Live Copy.
+  Cuando esta operación se realiza en la página raíz de una Live Copy, se elimina la relación activa entre todas las páginas del modelo y su Live Copy.
 
-   Más cambios en las páginas del modelo **no** afectarán a Live Copy.
+  Más cambios en las páginas del modelo **no** afectarán a Live Copy.
 
 * **Desasociar en una subpágina de una Live Copy**
 
-   Cuando esta operación se realiza en una subpágina (o rama) dentro de una Live Copy:
+  Cuando esta operación se realiza en una subpágina (o rama) dentro de una Live Copy:
 
    * La relación activa se elimina para esa subpágina (o rama) y
    * Las páginas (sub) de la rama de Live Copy se tratan como si se hubieran creado manualmente.
 
-   Sin embargo, las páginas secundarias siguen estando sujetas a la relación activa de la rama principal, por lo que un nuevo despliegue de las páginas de modelo:
+  Sin embargo, las páginas secundarias siguen estando sujetas a la relación activa de la rama principal, por lo que un nuevo despliegue de las páginas de modelo:
 
    1. Cambie el nombre de las páginas separadas:
 
       * Esto se debe a que MSM los considera como páginas creadas manualmente que causan un conflicto, ya que tienen el mismo nombre que las páginas de Live Copy que intenta crear.
+
    1. Cree una nueva página de Live Copy con el nombre original, que contenga los cambios del despliegue.
 
-   >[!NOTE]
-   >
-   >Consulte [Conflictos de despliegue de MSM](rollout-conflicts.md) para obtener detalles sobre estas situaciones.
+  >[!NOTE]
+  >
+  >Consulte [Conflictos de despliegue de MSM](rollout-conflicts.md) para obtener detalles sobre estas situaciones.
 
 ### Desasociar una página de Live Copy de las propiedades de página {#detach-a-live-copy-page-from-the-page-properties}
 
@@ -640,7 +641,7 @@ Para separar una Live Copy:
 
    ![Botón Separar](../assets/detach-button.png)
 
-1. Se mostrará un cuadro de diálogo de confirmación, seleccione **Desasociar** para completar la acción.
+1. Se muestra un cuadro de diálogo de confirmación, seleccione **Desasociar** para completar la acción.
 
 ### Desasociar una página de Live Copy de la información general de Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 

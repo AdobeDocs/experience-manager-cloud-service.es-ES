@@ -4,10 +4,10 @@ description: Descubra cómo se pueden utilizar las plantillas de sitio AEM para 
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ Las plantillas son potentes porque se pueden reutilizar y personalizar. Y como p
 >
 >Las plantillas de sitio de AEM no deben confundirse con las [plantillas de página.](/help/sites-cloud/authoring/features/templates.md) Las plantillas de sitio definen la estructura general de un sitio. Una plantilla de página define la estructura y el contenido inicial de una página individual.
 >
->Las plantillas de sitio de AEM no deben confundirse con los [temas de sitio de AEM.](site-themes.md) Los temas de sitio de AEM solo contienen la información de estilo de un sitio AEM. Las plantillas de sitio de AEM definen la estructura del sitio y el contenido inicial, así como contienen un tema del sitio AEM para permitir la [creación rápida del sitio.](create-site.md)
+>Las plantillas de sitio de AEM no deben confundirse con los [temas de sitio de AEM.](site-themes.md) Los temas de sitio de AEM solo contienen la información de estilo de un sitio AEM. AEM AEM Las plantillas de sitio de definen la estructura del sitio y el contenido inicial, y contienen un tema de sitio de la página de la página de la página de la red que se va a permitir [creación rápida de sitios.](create-site.md)
 
 ## Adición de una plantilla de sitio a AEM {#adding}
 

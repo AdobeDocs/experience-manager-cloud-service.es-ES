@@ -2,10 +2,10 @@
 title: Requisitos previos para la herramienta de transferencia de contenido
 description: Requisitos previos para la herramienta de transferencia de contenido
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 15%
+source-wordcount: '543'
+ht-degree: 16%
 
 ---
 
@@ -28,7 +28,7 @@ Revise todas las consideraciones enumeradas a continuación:
 | Tamaño del almacén de segmentos | Repositorio existente que tiene menos de 55 millones de nodos JCR y hasta 250 GB (tamaño compactado en línea) en *Autor* y 50 GB en *Publish* son compatibles actualmente. Cree un vale de soporte con el Servicio de atención al cliente de Adobe para discutir las opciones de tamaño de almacén de segmentos por encima de estos límites. |
 | Tamaño total del repositorio de contenido <br>*(almacén de segmentos + almacén de datos)* | La herramienta de transferencia de contenido está diseñada para transferir contenido de hasta 20 TB para el tipo de almacén de datos de archivo. Actualmente no se admite nada superior a 20 TB. Cree un ticket de asistencia con el Servicio de atención al cliente de Adobe para discutir las opciones de contenido superior a 20 TB. <br>Para acelerar de forma significativa el proceso de transferencia de contenido para repositorios grandes, una [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=es#setting-up-pre-copy-step) Este paso se puede utilizar. Esto se aplica a los tipos de almacén de datos de File Data Store, Amazon S3 y Azure Data Store. Para Amazon S3 y Azure Data Store, se admiten tamaños de repositorio buenos a 20 TB. |
 | Tamaño total del índice de Lucene | Tamaño máximo total del índice Lucene de 25 GB, excluyendo `/oak:index/lucene` y `/oak:index/damAssetLucene` es compatible actualmente. Cree un vale de soporte con el Servicio de atención al cliente de Adobe para discutir las opciones de tamaño de índice por encima de este límite. |
-| Longitud del nombre del nodo | La longitud del nombre de un nodo debe ser de 150 bytes o menos cuando la ruta principal del nodo sea >= (igual o mayor que) 350 bytes. AEM Estos nombres de nodo deben abreviarse como &lt;= 150 bytes para que sea compatible con el almacén de nodos de documentos en as a Cloud Service de la. Las ingestas fallarán si estos nombres de nodo largos no están fijos. |
+| Longitud del nombre del nodo | La longitud del nombre de un nodo debe ser de 150 bytes o menos cuando la ruta principal del nodo sea >= (igual o mayor que) 350 bytes. AEM Estos nombres de nodo deben acortarse a &lt;= 150 bytes para que sea compatible con el almacén de nodos de documentos en as a Cloud Service de la. Las ingestas fallarán si estos nombres de nodo largos no están fijos. |
 | Contenido en rutas inmutables | La herramienta de transferencia de contenido no se puede usar para migrar contenido en rutas inmutables. Para transferir contenido desde `/etc` solo ciertos `/etc` se permite seleccionar las rutas, pero solo para admitir [as a Cloud Service de AEM Forms a AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html#paths-of-various-aem-forms-specific-assets). Para todos los demás casos de uso, consulte [Reestructuración común de repositorios](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/all-repository-restructuring-in-aem-6-5.html) para obtener más información sobre la reestructuración de repositorios. |
 | Valor de propiedad del nodo en MongoDB | Los valores de propiedad del nodo almacenados en MongoDB no pueden superar los 16 MB. Esto lo aplica MongoDB. Las ingestas fallarán si hay valores de propiedad superiores a este límite. Antes de ejecutar una extracción, ejecute esto [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) script. Revise todos los valores de propiedades de gran tamaño y valide si son necesarios. Los que superen los 16 MB deberán convertirse a valores binarios. |
 

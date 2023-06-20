@@ -2,9 +2,9 @@
 title: Validación de transferencias de contenido
 description: Utilice la herramienta de transferencia de contenido para validar las transferencias de contenido
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1062'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Los usuarios pueden determinar de forma fiable si todo el contenido extraído po
 >
 >Esta función estará disponible a partir de la versión de la herramienta de transferencia de contenido (CTT) 1.8.x. El entorno de destino de AEM Cloud Service debe ejecutar al menos la versión 6158 o buena. También requiere que se configure el entorno de origen para ejecutarse [copia previa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La función de validación busca el archivo azcopy.config en el origen. Si no encuentra este archivo, no se ejecutará la validación. Para obtener más información sobre cómo configurar un archivo azcopy.config, consulte [esta página](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-La validación de una transferencia de contenido es una función opcional. Al habilitar esta función, se aumentará el tiempo necesario para realizar una extracción y una ingesta. AEM Para utilizar la función, habilítela en la consola del sistema del entorno de origen de la interfaz de usuario de la interfaz de usuario de origen, siguiendo estos pasos:
+La validación de una transferencia de contenido es una función opcional. Al habilitar esta función, se aumentará el tiempo necesario para realizar una extracción y una ingesta. AEM Para utilizar la función, habilítela en la consola del sistema del entorno de origen de la siguiendo estos pasos:
 
 1. Vaya a la consola web de Adobe Experience Manager en la instancia de origen, en **Herramientas - Operaciones - Consola web** o directamente a la dirección URL en *https://serveraddress:serverport/system/console/configMgr*
 1. Buscar por **Configuración del servicio de extracción de herramienta de transferencia de contenido**
@@ -36,7 +36,7 @@ Para obtener más información sobre cómo instalar la herramienta de transferen
 
 AEM Con la validación de migración habilitada en el entorno de origen de la, inicie una extracción.
 
-If **Sobrescribir contenedor de almacenamiento provisional durante la extracción** está activada, todos los nodos implicados en la extracción se registrarán en el resumen de la ruta de extracción. Cuando se utiliza esta configuración, es importante habilitar la variable **Borrar contenido existente en la instancia de Cloud antes de la ingesta** configuración durante la ingesta; de lo contrario, puede parecer que faltan nodos en el compendio de ingesta. Estos son los nodos que ya están presentes en el destino desde ingestas anteriores.
+If **Sobrescribir contenedor de almacenamiento provisional durante la extracción** está activada, todos los nodos implicados en la extracción se registran en el resumen de la ruta de extracción. Cuando se utiliza esta configuración, es importante habilitar la variable **Borrar contenido existente en la instancia de Cloud antes de la ingesta** configuración durante la ingesta; de lo contrario, puede parecer que faltan nodos en el compendio de ingesta. Estos son los nodos que ya están presentes en el destino desde ingestas anteriores.
 
 Para ver una ilustración gráfica de esto, consulte los ejemplos siguientes:
 
@@ -44,37 +44,37 @@ Para ver una ilustración gráfica de esto, consulte los ejemplos siguientes:
 
 * **Extracción (sobrescribir)**
 
-   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **Ingesta (borrado)**
 
-   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+  ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **Notas**
 
-   Esta combinación de &quot;Sobrescribir&quot; y &quot;Borrar&quot; dará como resultado resultados de validación coherentes, incluso para ingestas repetidas.
+  Esta combinación de &quot;Sobrescribir&quot; y &quot;Borrar&quot; dará como resultado resultados de validación coherentes, incluso para ingestas repetidas.
 
 ### Ejemplo 2 {#example-2}
 
 * **Extracción**
 
-   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **Ingesta**
 
-   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+  ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **Notas**
 
-   Esta combinación de &quot;Sobrescribir&quot; y &quot;Borrar&quot; dará como resultado resultados de validación coherentes para la ingesta inicial.
+  Esta combinación de &quot;Sobrescribir&quot; y &quot;Borrar&quot; dará como resultado resultados de validación coherentes para la ingesta inicial.
 
-   Si se repite la ingesta, el resumen de la ingesta estará vacío y la validación parecerá haber fallado. El resumen de ingesta estará vacío porque todos los nodos de esta extracción ya estarán presentes en el destino.
+  Si la ingesta se repite, el resumen de la ingesta está vacío y la validación parece haber fallado. El resumen de ingesta está vacío porque todos los nodos de esta extracción ya estarán presentes en el destino.
 
 Una vez finalizada la extracción, comience la ingesta.
 
 La parte superior del registro de ingesta contendrá una entrada, similar a `aem-ethos/tools:1.2.438`. Asegúrese de que este número de versión sea **1,2,438** o buena AEM, de lo contrario, la validación no es compatible con la versión de los as a Cloud Service de validación que está utilizando.
 
-Una vez completada la ingesta y iniciada la validación, se anotará la siguiente entrada de registro en el registro de ingesta:
+Una vez finalizada la ingesta y iniciada la validación, se anota la siguiente entrada de registro en el &quot;log&quot; de ingesta:
 
 ```
 Gathering artifacts for migration validation...
@@ -148,7 +148,7 @@ Verá un cuadro de diálogo con la información de resumen. Utilice los iconos d
 
 >[!NOTE]
 >
->Si la asignación de usuarios está deshabilitada, se mostrará otra variante de este cuadro de diálogo. Indicará que la asignación de usuarios estaba deshabilitada y no mostrará los 3 campos que proporcionan valores de asignación de usuarios.
+>Si la asignación de usuarios está deshabilitada, se muestra otra variante de este cuadro de diálogo. Indicará que la asignación de usuarios estaba deshabilitada y no mostrará los 3 campos que proporcionan valores de asignación de usuarios.
 
 ## Solución de problemas {#troubleshooting}
 

@@ -2,10 +2,10 @@
 title: Recorrido del autor de contenido de AEM Commerce
 description: Comience aquí para obtener un recorrido guiado a través de la creación de AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 100%
+source-wordcount: '457'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Si desea saber cómo recomienda Adobe resolver los casos de sitios comerciales c
 
 Este recorrido está diseñado para el autor de contenido de AEM Commerce. Este recorrido describe los requisitos, pasos y enfoques para la introducción y la gestión de las páginas del catálogo, las plantillas y las experiencias de producto completas.
 
-Por supuesto, la información de este recorrido puede ser útil para otras personas, pero parte de la información puede ser superflua para otras en diferentes roles. Manténgase atento a recorridos futuros que cubran funciones adicionales.
+Por supuesto, la información de este recorrido puede ser útil para otras personas, pero parte de la información es superflua para ciertas funciones. Manténgase atento a recorridos futuros que cubran funciones adicionales.
 
 ## El recorrido {#the-journey}
 

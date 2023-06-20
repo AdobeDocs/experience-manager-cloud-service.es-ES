@@ -2,10 +2,10 @@
 title: Notificaciones
 description: Obtenga información sobre cómo recibir información sobre las implementaciones de canalización mediante el sistema de notificación de Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 6f390df560e9eeb76a8c4f1904e500aa5ed2bd65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 100%
+source-wordcount: '558'
+ht-degree: 96%
 
 ---
 
@@ -60,7 +60,7 @@ De forma predeterminada, recibirá todas las notificaciones de todos los product
 
 ### Prioridad {#priority}
 
-Las alertas de prioridad se marcarán con la etiqueta **ALTA** y se pueden configurar para que se reciban exclusivamente como alertas. En la sección **Prioridad**, puede definir qué categorías se clasifican como notificaciones prioritarias.
+Las alertas de prioridad están marcadas con un **ALTA** la etiqueta y se pueden configurar para que se reciban exclusivamente como alertas. En la sección **Prioridad**, puede definir qué categorías se clasifican como notificaciones prioritarias.
 
 ![Prioridad de notificaciones](assets/notifications-priority.png)
 

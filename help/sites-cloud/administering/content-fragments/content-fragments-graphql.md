@@ -4,10 +4,10 @@ description: Aprenda los conceptos básicos de realización de un CMS sin encabe
 feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 100%
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -25,14 +25,12 @@ Esto se logra usando los fragmentos de contenido, junto con la API de GraphQL de
 >
 >* [Sin encabezado y AEM](/help/headless/introduction.md) para obtener una introducción al desarrollo sin encabezado para AEM Sites as a Cloud Service.
 
-
 >[!NOTE]
 >
 >GraphQL se utiliza actualmente en dos escenarios (independientes) en Adobe Experience Manager (AEM) as a Cloud Service:
 >
 >* [AEM Commerce consume datos de una plataforma de Commerce a través de GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* [Los fragmentos de contenido de AEM trabajan junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en aplicaciones](/help/headless/graphql-api/content-fragments.md).
-
 
 ## CMS sin encabezado {#headless-cms}
 
@@ -42,7 +40,7 @@ En cuanto a la creación de fragmentos de contenido en AEM, esto significa lo si
 
 * Puede utilizar fragmentos de contenido para crear contenido que no vaya a publicarse directamente (1:1) en páginas con formato.
 
-* El contenido de los fragmentos de contenido se estructurará de forma predeterminada según los modelos de fragmento de contenido. Esto simplifica el acceso para las aplicaciones, que procesarán aún más el contenido.
+* El contenido de los fragmentos de contenido se estructura de forma predeterminada según los modelos de fragmentos de contenido. Esto simplifica el acceso para las aplicaciones, que procesarán aún más el contenido.
 
 ## GraphQL: Información general {#graphql-overview}
 
@@ -50,7 +48,7 @@ GraphQL es lo siguiente:
 
 * “*...un idioma de consulta para API y un tiempo de ejecución para cumplir esas consultas con los datos existentes*”.
 
-   Consulte [GraphQL.org](https://graphql.org)
+  Consulte [GraphQL.org](https://graphql.org)
 
 La [API de AEM GraphQL](#aem-graphql-api) le permite realizar consultas (complejas) en sus [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md); con cada consulta según un tipo de modelo específico. Las aplicaciones pueden utilizar el contenido devuelto.
 

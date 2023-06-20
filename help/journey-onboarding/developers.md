@@ -4,10 +4,10 @@ description: Una vez que el administrador del sistema haya configurado los recur
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
-workflow-type: ht
-source-wordcount: '1419'
-ht-degree: 100%
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+workflow-type: tm+mt
+source-wordcount: '1417'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Según sus necesidades organizativas, los mismos usuarios pueden tener ambos rol
 Antes de comenzar las tareas descritas en este documento como desarrollador o administrador de implementación, asegúrese de que el administrador del sistema haya completado todos los pasos de este recorrido de incorporación. Esto significa lo siguiente:
 
 * El administrador del sistema ha asignado desarrolladores y administradores de implementación a sus respectivos perfiles de producto.
-* Los desarrolladores deben asignarse adicionalmente a los perfiles de producto de **usuarios de AEM** o de **administradores de AEM** para utilizar AEM también.
+* Los desarrolladores deben asignarse además a **AEM Usuarios de** o **AEM Administradores de** AEM los perfiles de producto también se utilizan en el uso de la.
 * Se han configurado los recursos de Cloud.
 
 ## Acceder a Git {#accessing-git}

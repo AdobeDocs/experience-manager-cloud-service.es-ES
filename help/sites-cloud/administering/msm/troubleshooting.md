@@ -4,10 +4,10 @@ description: Descubra cómo solucionar los problemas más comunes relacionados c
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 7c0be1a7bdc9ccb788ba41eb6ee83b89df94f500
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 88%
 
 ---
 
@@ -27,12 +27,12 @@ MSM registra varios servlets que se pueden solicitar con selectores en las direc
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Utilícelo en una página de modelo para recuperar la lista de todas las Live Copies vinculadas a ella, con información del estado de Live Copy adicional.
    * por ejemplo:
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Utilícelo en páginas de Live Copy para recuperar información avanzada sobre su conexión con sus páginas de modelo. Si la página no es una Live Copy, no se devuelve nada.
    * por ejemplo:
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Estos servlets generan mensajes de registro de depuración a través del registrador `com.day.cq.wcm.msm` que también puede ser útil.
 
@@ -55,7 +55,7 @@ Los servlets anteriores devolvían información calculada basada en los nodos y 
 
 La información presente en estas propiedades debe reflejarse en la interfaz de usuario, sin embargo, al solucionar problemas, puede resultar útil observar el comportamiento de MSM directamente en el repositorio a medida que se producen acciones de MSM.
 
-Conocer esas propiedades también puede ser útil para consultar el repositorio y averiguar conjuntos de páginas que están en estados particulares. Por ejemplo:
+Conocer esas propiedades también puede ser útil para poder consultar el repositorio y averiguar conjuntos de páginas que están en estados particulares. Por ejemplo:
 
 * `select * from cq:LiveSync` devuelve todas las páginas raíz de Live Copy.
 
@@ -82,9 +82,9 @@ Como alternativa, puede hacer lo siguiente:
 
 Si se despliega una página de modelo, actualizará su página de Live Copy o creará una nueva página de Live Copy si aún no existe (por ejemplo, cuando se implemente por primera vez o cuando se elimine manualmente la página de Live Copy).
 
-Sin embargo, en este último caso, si una página sin una propiedad `cq:LiveRelationship` existe con el mismo nombre, se cambiará el nombre de esta página en consecuencia antes de crear la página Live Copy.
+Sin embargo, en este último caso, si una página sin `cq:LiveRelationship` La propiedad existe con el mismo nombre y el nombre de esta página se cambia en consecuencia antes de crear la página Live Copy.
 
-De forma predeterminada, el despliegue espera una página de Live Copy vinculada, a la que se implementarán las actualizaciones de los modelos o ninguna página cuando se cree una página de Live Copy.
+De forma predeterminada, el despliegue espera una página de Live Copy vinculada, a la que se implementan las actualizaciones de los modelos o ninguna página cuando se crea una página de Live Copy.
 
 Si se encuentra una página &quot;independiente&quot;, MSM elige cambiar el nombre de esta página y crear una página de Live Copy separada y vinculada.
 

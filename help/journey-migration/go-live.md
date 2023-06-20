@@ -2,9 +2,9 @@
 title: Go-Live
 description: Aprenda a realizar la migración una vez que el código y el contenido estén listos para la nube
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1720'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ Como se mencionó anteriormente, tendrá que programar un período de congelaci�
 * ¿Cuánto tiempo tengo que congelar las actividades de creación de contenido?
 * ¿Durante cuánto tiempo debo pedir a mi equipo de envío que deje de añadir nuevas funciones?
 
-Para responder a la primera pregunta, debe tener en cuenta el tiempo que se ha tardado en realizar ejecuciones de prueba en entornos que no son de producción. Para responder a la segunda pregunta, necesita una estrecha colaboración entre el equipo que está agregando nuevas funciones y el equipo que está refactorizando el código. El objetivo debe ser asegurarse de que todo el código que se añade a la implementación existente también se añada, pruebe e implemente en la rama de los servicios en la nube. En términos generales, esto significa que la cantidad de código congelado será menor.
+Para responder a la primera pregunta, debe tener en cuenta el tiempo que se ha tardado en realizar ejecuciones de prueba en entornos que no son de producción. Para responder a la segunda pregunta, necesita una estrecha colaboración entre el equipo que está agregando nuevas funciones y el equipo que está refactorizando el código. El objetivo es garantizar que todo el código que se añade a la implementación existente también se añada, pruebe e implemente en la rama de los servicios en la nube. Generalmente, significa que la cantidad de código congelado es menor.
 
 Además, debe planificar la congelación de contenido cuando se programe la recarga de contenido final.
 
@@ -81,12 +81,12 @@ Asegúrese de que, al lanzarse, ejecute la migración de contenido en producció
 
 Al realizar la migración de producción, debe evitar ejecutar la herramienta de transferencia de contenido desde un clon porque:
 
-* Si un cliente requiere que se migren las versiones de contenido durante las migraciones superiores, la ejecución de la herramienta de transferencia de contenido desde un clon no migra las versiones. Incluso si el clon se vuelve a crear desde el autor activo con frecuencia, cada vez que se crea un clon, se restablecerán los puntos de comprobación que utilizará la herramienta de transferencia de contenido para calcular los deltas.
+* Si un cliente requiere que se migren las versiones de contenido durante las migraciones superiores, la ejecución de la herramienta de transferencia de contenido desde un clon no migra las versiones. Incluso si el clon se vuelve a crear desde el autor activo con frecuencia, cada vez que se crea un clon, se restablecen los puntos de comprobación utilizados por la herramienta de transferencia de contenido para calcular los deltas.
 * Dado que un clon no se puede actualizar como un todo, el paquete de consulta ACL debe utilizarse para empaquetar e instalar el contenido que se agrega o edita de la producción al clon. El problema con este enfoque es que cualquier contenido eliminado en la instancia de origen nunca llegará al clon a menos que se elimine manualmente tanto del origen como del clon. AEM Esto introduce la posibilidad de que el contenido eliminado en la producción no se elimine en el clon y la as a Cloud Service.
 
 **AEM Optimización de la carga en el origen de la al realizar la migración de contenido**
 
-AEM Recuerde, la carga en el origen de la se verá buena durante la fase de extracción. Debe tener en cuenta lo siguiente:
+AEM Recuerde, la carga en el origen de la se buena durante la fase de extracción. Debe tener en cuenta lo siguiente:
 
 * La herramienta de transferencia de contenido es un proceso Java externo que utiliza un montón de JVM de 4 GB
 * AEM La versión que no es AzCopy descarga binarios, los almacena en un espacio temporal en el autor del origen, consumiendo E/S del disco y, a continuación, los carga en el contenedor de Azure, que consume ancho de banda de red
@@ -109,7 +109,7 @@ En comparación con la sección anterior a la ingesta **no tiene** se produce un
 * Falta cualquier recurso que tenga la representación original
 * Cualquier carpeta que tenga un `jcr:content` nodo.
 
-Ambos de los elementos anteriores se identificarán y notificarán en la [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) informe.
+Ambos elementos se identifican y se comunican en la variable [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) informe.
 
 ## Lista de comprobación de lanzamiento {#Go-Live-Checklist}
 

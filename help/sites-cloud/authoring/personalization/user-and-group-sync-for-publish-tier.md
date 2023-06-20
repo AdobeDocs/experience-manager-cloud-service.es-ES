@@ -2,10 +2,10 @@
 title: Registro, inicio de sesión y perfil de usuario
 description: Obtenga información sobre el registro, el inicio de sesión, los datos de usuario y la sincronización de grupos para AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1170'
+ht-degree: 95%
 
 ---
 
@@ -104,7 +104,7 @@ El acceso en tiempo real a servicios de terceros para recuperar atributos de per
 
 ## Permisos (grupos de usuarios cerrados) {#permissions-closed-user-groups}
 
-Las políticas de acceso del nivel de publicación, también denominadas Grupos de usuarios cerrados (CUG), se definen en el autor de AEM como [se describe aquí](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=es#applying-your-closed-user-group-to-content-pages). Para restringir ciertas secciones o páginas de un sitio web de algunos usuarios, aplique los CUG según sea necesario utilizando el autor de AEM, como se describe aquí, y duplíquelas en el nivel de publicación.
+Las políticas de acceso del nivel de publicación, también denominadas Grupos de usuarios cerrados (CUG), se definen en el autor de AEM como [se describe aquí](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=es#applying-your-closed-user-group-to-content-pages). AEM Para restringir ciertas secciones o páginas de un sitio web de algunos usuarios, aplique los CUG según sea necesario utilizando el autor de la, como se describe aquí, y duplíquelas en el nivel de publicación.
 
 * Si los usuarios inician sesión al autenticarse con un proveedor de identidad (IdP) mediante SAML, el controlador de autenticación identificará las pertenencias de grupo del usuario (que deben coincidir con los CUG en el nivel de publicación) y persistirá la asociación entre el usuario y el grupo a través de un registro de repositorio.
 * Si el inicio de sesión se realiza sin integración de IdP, el código personalizado puede aplicar las mismas relaciones de estructura de repositorios.

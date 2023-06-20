@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 96%
+ht-degree: 88%
 
 ---
 
@@ -91,13 +91,13 @@ Eche un vistazo al vídeo [Información general sobre la versión de marzo de 20
 
 ### Novedades {#what-is-new-foundation}
 
-* Para una solución de problemas más eficiente y eficaz de las funciones personalizadas en los entornos en la nube, hemos lanzado una nueva herramienta para desarrolladores: el [Explorador de repositorios](/help/implementing/developing/tools/repository-browser.md). Es un explorador HTML ligero de solo lectura que puede iniciar desde Developer Console. Obtenga visibilidad del repositorio de contenido en los niveles de editor, autor y vista previa, y en todos los entornos, incluida la producción, la fase y el desarrollo. Examine la estructura de contenido, vea las propiedades y previsualice y descargue los binarios.
+* Para una solución de problemas más eficiente y eficaz de las funciones personalizadas en los entornos en la nube, hemos lanzado una nueva herramienta para desarrolladores: [el Explorador de repositorios](/help/implementing/developing/tools/repository-browser.md). Es un explorador HTML ligero, de solo lectura que puede iniciar desde Developer Console. Obtenga visibilidad del repositorio de contenido en los niveles de editor, autor y vista previa, y en todos los entornos, incluida la producción, la fase y el desarrollo. Examine la estructura de contenido, vea las propiedades y previsualice y descargue los binarios.
 
-   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
 * Las credenciales utilizadas para autenticar llamadas de API de servidor a servidor (por ejemplo, para solicitudes de API de GraphQL) ahora se pueden actualizar antes de la caducidad de forma automática desde Developer Console. Consulte la [documentación](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) para obtener más información.
 
-* Las tareas de mantenimiento de purga de versiones y depuración de registros de auditoría que no se habían habilitado antes, se habilitarán para nuevos entornos. Consulte los valores asociados en el artículo [Tarea de mantenimiento](/help/operations/maintenance.md).
+* Las tareas de mantenimiento de purga de versiones y depuración de registros de auditoría, que no se habían habilitado anteriormente, ahora están habilitadas para nuevos entornos. Consulte los valores asociados en el artículo [Tarea de mantenimiento](/help/operations/maintenance.md).
 
 * Las herramientas del SDK de Dispatcher de AEM as a Cloud Service ahora admiten equipos Mac con el chip M1
 
@@ -113,7 +113,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido versión
 
 ### Novedades {#what-is-new-ctt}
 
-* Comprobar protecciones de tamaño: la función de comprobación de tamaño de la herramienta de transferencia de contenido ayuda a reducir las transferencias de contenido fallidas.  Con la función de comprobación de tamaño, los usuarios pueden 1) determinar si tienen suficiente espacio en disco en el subdirectorio `crx-quickstart` antes de la extracción, y 2) estimar el tamaño del conjunto de migración y verificar si es compatible. Si se infringen una o ambas comprobaciones, los usuarios verán advertencias en la IU de CTT. Con esta protección, puede evitar errores en la transferencia de contenido y discutir de forma proactiva las opciones de migración con el Servicio de atención al cliente de Adobe. Consulte [Determinación del tamaño del conjunto de migración y el espacio en disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es#migration-set-size) para obtener más información.
+* Comprobar protecciones de tamaño: la función de comprobación de tamaño de la herramienta de transferencia de contenido ayuda a reducir las transferencias de contenido fallidas.  Con la función Comprobar tamaño, los usuarios pueden 1) determinar si tienen suficiente espacio en disco en `crx-quickstart` antes de la extracción, y 2) estime el tamaño del conjunto de migración y verifique si es compatible. Si se infringen una o ambas comprobaciones, los usuarios verán advertencias en la IU de CTT. Con esta protección, puede evitar errores en la transferencia de contenido y discutir de forma proactiva las opciones de migración con el Servicio de atención al cliente de Adobe. Consulte [Determinación del tamaño del conjunto de migración y el espacio en disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es#migration-set-size) para obtener más información.
 
 ## Analizador de prácticas recomendadas {#bpa-release}
 

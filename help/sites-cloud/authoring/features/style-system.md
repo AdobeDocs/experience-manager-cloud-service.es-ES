@@ -2,10 +2,10 @@
 title: Sistema de estilos
 description: El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 64%
+source-wordcount: '1320'
+ht-degree: 60%
 
 ---
 
@@ -24,7 +24,7 @@ Del mismo modo, los autores de contenido no solo necesitan la capacidad de estru
 El sistema de estilos proporciona una solución unificada a los requisitos del autor de plantillas y del autor de contenido:
 
 * Los autores de plantillas pueden definir clases de estilo en la política de contenido de los componentes.
-* Los autores de contenido pueden seleccionar estas clases de una lista desplegable cuando editan el componente en una página para aplicar los estilos correspondientes.
+* Los autores de contenido pueden seleccionar estas clases de una lista desplegable al editar el componente en una página para que puedan aplicar los estilos correspondientes.
 
 A continuación, la clase de estilo se inserta en el elemento envolvente de decoración del componente para que el desarrollador de componentes no tenga que preocuparse por administrar los estilos más allá de proporcionar sus reglas CSS.
 
@@ -104,7 +104,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
 >[!CAUTION]
 >
->Las clases CSS (así como cualquier código Javascript necesario) configuradas como propiedades de estilo de la política de un componente deben implementarse como [bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md) para que funcionen.
+>Las clases CSS, y cualquier código Javascript necesario, configuradas como propiedades de estilo de la política de un componente deben implementarse como [Bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md) para trabajar.
 
 ## Configuración {#setup}
 
@@ -120,9 +120,9 @@ Para que un componente funcione con el sistema de estilos de AEM y se muestre la
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la [fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
+Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
-AEM AEM Con el componente configurado, los estilos configurados por los autores de la página se insertarán automáticamente mediante el elemento de decoración que se ajusta automáticamente a cada componente editable. Se puede crear una nueva página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página. El componente en sí no necesita hacer nada más para que esto suceda.
+AEM AEM Con el componente configurado, los estilos configurados por los autores de la página se insertan automáticamente mediante el elemento de decoración que se ajusta automáticamente a todos los componentes editables, de forma que se puede crear una nueva página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página. El componente en sí no necesita hacer nada más para que esto suceda.
 
 ### Activar la pestaña Estilos en el cuadro de diálogo Editar {#enable-styles-tab-edit}
 
@@ -134,11 +134,11 @@ La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
+Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
->La pestaña Estilos del cuadro de diálogo Editar no está activada de forma predeterminada.
+La pestaña Estilos del cuadro de diálogo Editar no está activada de forma predeterminada.
 
 ### Estilos con nombres de elemento       {#styles-with-element-names}
 
@@ -150,15 +150,13 @@ Esta propiedad se establece en el nodo `cq:Component`. Por ejemplo:
 
 >[!CAUTION]
 >
->Evite definir nombres de elementos para los estilos que se pueden combinar. Cuando se definen varios nombres de elemento, el orden de prioridad es:
+Evite definir nombres de elementos para los estilos que se pueden combinar. Cuando se definen varios nombres de elemento, el orden de prioridad es:
 >
->1. HTL tiene prioridad sobre todo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`.
->1. A continuación, entre diversos estilos activos, se toma el primer estilo de la lista de estilos configurados en la política del componente.
->1. Por último, el valor `cq:htmlTag`/`cq:tagName` del componente se considera como un valor alternativo.
-
+1. HTL tiene prioridad sobre todo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`.
+1. A continuación, entre diversos estilos activos, se toma el primer estilo de la lista de estilos configurados en la política del componente.
+1. Por último, el valor `cq:htmlTag`/`cq:tagName` del componente se considera como un valor alternativo.
 >
 
-
-Esta capacidad para definir nombres de estilo resulta útil para los componentes muy genéricos, como el contenedor de diseño o el componente Fragmento de contenido, a fin de complementar su significado.
+Esta capacidad para definir nombres de estilo resulta útil para los componentes genéricos, como el contenedor de diseño o el componente Fragmento de contenido, a fin de darles un significado adicional.
 
 Por ejemplo, permite que un contenedor de diseños reciba valores semánticos como `<main>`, `<aside>`, `<nav>`, etc.

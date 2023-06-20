@@ -2,10 +2,10 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 4%
+source-wordcount: '2591'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ AEM Este documento presenta directrices para el desarrollo de la as a Cloud Serv
 
 AEM El código que se ejecuta en el as a Cloud Service de la debe tener en cuenta que siempre se está ejecutando en un clúster. Esto significa que siempre hay más de una instancia en ejecución. El código debe ser flexible, especialmente porque una instancia puede detenerse en cualquier momento.
 
-AEM Durante la actualización de la as a Cloud Service, habrá instancias con el código antiguo y el nuevo ejecutándose en paralelo. Por lo tanto, el código antiguo no debe romperse con el contenido creado por el nuevo código y el nuevo debe poder hacer frente al contenido antiguo.
+AEM Durante la actualización de la as a Cloud Service, hay instancias con el código antiguo y el nuevo ejecutándose en paralelo. Por lo tanto, el código antiguo no debe romperse con el contenido creado por el nuevo código y el nuevo debe poder hacer frente al contenido antiguo.
 
 Si es necesario identificar el principal en el clúster, se puede utilizar la API de detección de Apache Sling para detectarlo.
 
@@ -33,13 +33,13 @@ El estado no debe conservarse en la memoria, sino que debe persistir en el repos
 
 ## Estado en el sistema de archivos {#state-on-the-filesystem}
 
-AEM El sistema de archivos de la instancia no debe utilizarse en as a Cloud Service de la. El disco es efímero y se eliminará cuando las instancias se reciclen. Es posible el uso limitado del sistema de archivos para el almacenamiento temporal relacionado con el procesamiento de solicitudes únicas, pero no se debe abusar de él para archivos enormes. Esto se debe a que puede tener un impacto negativo en la cuota de uso de recursos y encontrarse con limitaciones de disco.
+AEM El sistema de archivos de la instancia no debe utilizarse en as a Cloud Service de la. El disco es efímero y se elimina cuando las instancias se reciclan. Es posible el uso limitado del sistema de archivos para el almacenamiento temporal relacionado con el procesamiento de solicitudes únicas, pero no se debe abusar de él para archivos enormes. Esto se debe a que puede tener un impacto negativo en la cuota de uso de recursos y encontrarse con limitaciones de disco.
 
 Por ejemplo, cuando no se admite el uso del sistema de archivos, el nivel de publicación debe garantizar que los datos que deban persistir se envíen a un servicio externo para un almacenamiento a largo plazo.
 
 ## Observación {#observation}
 
-De forma similar, con todo lo que sucede asincrónicamente, como actuar sobre eventos de observación, no se puede garantizar que se ejecute localmente y, por lo tanto, debe utilizarse con cuidado. Esto es así tanto para eventos JCR como para eventos de recursos de Sling. En el momento en que se produce un cambio, la instancia puede eliminarse y reemplazarse por una instancia diferente. Otras instancias de la topología que estén activas en ese momento podrán reaccionar a ese evento. En este caso, sin embargo, esto no será un evento local y podría incluso no haber un líder activo en caso de una elección de líder en curso cuando se emita el evento.
+De forma similar, con todo lo que sucede asincrónicamente, como actuar sobre eventos de observación, no se puede garantizar que se ejecute localmente y, por lo tanto, debe utilizarse con cuidado. Esto es así tanto para eventos JCR como para eventos de recursos de Sling. En el momento en que se produce un cambio, la instancia puede eliminarse y reemplazarse por una instancia diferente. Otras instancias de la topología que están activas en ese momento pueden reaccionar a ese evento. En este caso, sin embargo, esto no será un evento local y podría incluso no haber un líder activo en caso de una elección de líder en curso cuando se emita el evento.
 
 ## Tareas de fondo y trabajos de larga duración {#background-tasks-and-long-running-jobs}
 
@@ -47,7 +47,7 @@ El código ejecutado como tarea en segundo plano debe suponer que la instancia e
 
 Para minimizar los problemas, si es posible deben evitarse los trabajos de larga duración y, como mínimo, deben poder reanudarse. Para ejecutar estos trabajos, utilice Trabajos de Sling, que tienen una garantía de al menos una vez y, por lo tanto, si se interrumpen, se vuelven a ejecutar lo antes posible. Pero probablemente no deberían empezar desde el principio de nuevo. Para programar estos trabajos, es mejor utilizar la variable [Trabajos de Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) planificador, ya que esto garantiza de nuevo la ejecución de al menos una vez.
 
-El Planificador de Sling Commons no debe utilizarse para programar, ya que la ejecución no se puede garantizar. Es más probable que se programe.
+El Planificador de Sling Commons no debe utilizarse para programar, ya que la ejecución no se puede garantizar. Es más probable que esté programado.
 
 Del mismo modo, con todo lo que se produce de forma asíncrona, como actuar sobre eventos de observación (ya sean eventos JCR o eventos de recursos Sling), no se puede garantizar su ejecución y, por lo tanto, debe utilizarse con cuidado. AEM Esto ya es así para implementaciones de en el presente.
 
@@ -105,7 +105,7 @@ Para cambiar los niveles de registro para los entornos en la nube, se debe modif
 
 >[!NOTE]
 >
->AEM Para realizar los cambios de configuración que se enumeran a continuación, debe crearlos en un entorno de desarrollo local y luego insertarlos en una instancia as a Cloud Service de. Para obtener más información sobre cómo hacerlo, consulte [AEM Implementación en el as a Cloud Service de](/help/implementing/deploying/overview.md).
+>AEM Para realizar los cambios de configuración que se enumeran a continuación, créelos en un entorno de desarrollo local y, a continuación, insértelos en una instancia as a Cloud Service. Para obtener más información sobre cómo hacerlo, consulte [AEM Implementación en el as a Cloud Service de](/help/implementing/deploying/overview.md).
 
 **Activación del nivel de registro de depuración**
 

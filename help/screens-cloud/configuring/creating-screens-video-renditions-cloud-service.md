@@ -2,9 +2,9 @@
 title: Creación de representaciones de vídeo en Screens as a Cloud Service
 description: En esta página se describe cómo crear representaciones de vídeo en Pantallas as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ Siga los pasos a continuación para crear representaciones de vídeo en Pantalla
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Asegúrese de utilizar el nombre de codificación que comienza con &quot;screens-&quot;, solo se considerará que estas representaciones de vídeo reproducen la experiencia de vídeo en Screens as a Cloud Service. Introduzca la velocidad de bits que funciona para sus vídeos (2500 kbps para vídeo de 720 px y 5000 kbps para 1080 px).
+   >Asegúrese de utilizar el nombre de codificación que comienza con &quot;screens-&quot;, solo se considera que estas representaciones de vídeo reproducen la experiencia de vídeo en Screens as a Cloud Service. Introduzca la velocidad de bits que funciona para sus vídeos (2500 kbps para vídeo de 720 px y 5000 kbps para 1080 px).
 
    >[!NOTE]
-   >Se pueden agregar varias representaciones de vídeo con diferentes anchura, altura y velocidad de bits para trabajar con los vídeos. Recuerde que todos los dispositivos Screens descargarán todas las representaciones de pantallas, aunque el dispositivo solo reproduzca representaciones de vídeo.
+   >Se pueden agregar varias representaciones de vídeo con diferentes anchura, altura y velocidad de bits para trabajar con los vídeos. Los dispositivos de Screens descargan todas las pantallas y representaciones, aunque el dispositivo solo reproduzca vídeo.
 
 1. Haga clic en **Guardar**.
 
@@ -66,4 +66,3 @@ Siga los pasos a continuación para crear representaciones de vídeo en Pantalla
    >[!NOTE]
    >* Puede crear varios perfiles de procesamiento y aplicarlos a las carpetas correspondientes, de modo que los vídeos de esas carpetas obtengan las representaciones de vídeo específicas.
    >* Al cargar vídeos en la carpeta en la que se aplica el perfil de procesamiento, se procesan y se crean representaciones configuradas de los vídeos, que los dispositivos de Screens utilizan también para reproducir los vídeos.
-

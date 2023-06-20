@@ -2,9 +2,9 @@
 title: Promoción de lanzamientos
 description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicar.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '816'
 ht-degree: 53%
 
 ---
@@ -40,12 +40,11 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 >* [Lanzamientos: el orden de los eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) para obtener más información sobre la promoción y publicación automáticas.
 >
 
-
 Puede promocionar lanzamientos desde el **Sites** o la **Lanzamientos** consola:
 
 1. Abra:
    * La consola **Sites** al navegar por las páginas de origen:
-      1. Abra el [carril de referencias](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) y seleccione la página de origen necesaria con el [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no importa). Todas las referencias se mostrarán.
+      1. Abra el [carril de referencias](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) y seleccione la página de origen necesaria con el [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no importa). Se muestran todas las referencias.
       1. Seleccione **Lanzamientos** (por ejemplo, Lanzamientos (1)) para mostrar una lista de los lanzamientos específicos.
       1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
       1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
@@ -65,13 +64,13 @@ Puede promocionar lanzamientos desde el **Sites** o la **Lanzamientos** consola:
       * **Promocionar página actual**
       * **Promocionar la página actual y sus páginas secundarias**
 
-      Por ejemplo, al seleccionar para promocionar solo las páginas modificadas:
+     Por ejemplo, al seleccionar para promocionar solo las páginas modificadas:
 
-      ![Promoción del lanzamiento](/help/sites-cloud/authoring/assets/launches-promote.png)
+     ![Promoción del lanzamiento](/help/sites-cloud/authoring/assets/launches-promote.png)
 
-      >[!NOTE]
-      >
-      >Esto cubre un solo lanzamiento, si tiene lanzamientos anidados consulte [Promoción de un lanzamiento anidado](#promoting-a-nested-launch).
+     >[!NOTE]
+     >
+     >Esto cubre un solo lanzamiento, si tiene lanzamientos anidados consulte [Promoción de un lanzamiento anidado](#promoting-a-nested-launch).
 1. Seleccionar **Siguiente** para continuar.
 1. Puede revisar las páginas que se promocionarán, que dependerán del intervalo de páginas que haya elegido:
 
@@ -119,7 +118,7 @@ Después de crear un lanzamiento anidado, puede promoverlo de nuevo a cualquiera
    >
    >Las páginas enumeradas dependerán de lo siguiente **Ámbito** definido y posiblemente las páginas que se han editado.
 
-1. Sus cambios se promocionarán y reflejarán en la **Lanzamientos** consola:
+1. Los cambios se promocionan y se reflejan en **Lanzamientos** consola:
 
    ![En la consola Lanzamientos](/help/sites-cloud/authoring/assets/launches-console.png)
 

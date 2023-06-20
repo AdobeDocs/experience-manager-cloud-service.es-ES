@@ -3,10 +3,10 @@ title: Administración de instancias de flujo de trabajo
 description: Obtenga información sobre cómo administrar instancias de flujo de trabajo
 feature: Administering
 role: Admin
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 77%
+source-wordcount: '1279'
+ht-degree: 75%
 
 ---
 
@@ -33,7 +33,6 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
    ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 1. Para **Detalles del estado** de instancias de flujo de trabajo, haga clic en **Detalles**, para mostrar el **número de instancias de flujos de trabajo en ejecución**, **instancias de flujo de trabajo completadas**, **instancias de flujo de trabajo anuladas**, **instancias de flujo de trabajo fallidas**, etc. por ejemplo, a continuación se muestran las imágenes determinadas que muestran **Detalles del estado** con **Estado: Sano** y **Estado: no saludable**.
    ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-
    ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -93,7 +92,6 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
    >* uso de la acción **Finalizar**
    >* cuando se elimina una página sujeta a un flujo de trabajo, este finaliza y se fuerza el flujo de trabajo.
 
-
 1. Seleccione un elemento específico y luego **Abrir historial** para ver más detalles:
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
@@ -103,8 +101,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 Cuando falla un flujo de trabajo, AEM proporciona la consola **Errores** para que pueda investigar y tomar las medidas adecuadas una vez que se haya manejado la causa original:
 
 * **Detalles del error**
-Abre una ventana para mostrar el 
-**Mensaje de error**, **Step y **Pila de errores**.
+Abre una ventana para mostrar el **Mensaje de error**, **Step y **Pila de errores**.
 
 * **Abrir historial**
 Muestra detalles del historial del flujo de trabajo.
@@ -192,7 +189,7 @@ Los datos procesados por flujos de trabajo se almacenan en el almacenamiento pro
 
 En el nivel del modelo de flujo de trabajo, se proporciona un indicador para indicar que el modelo (y sus instancias de tiempo de ejecución) tiene almacenamiento externo de metadatos. Las variables de flujo de trabajo no se mantendrán en JCR para las instancias de flujo de trabajo de los modelos marcados para almacenamiento externo.
 
-La propiedad *userMetadataPersistenceEnabled* se almacenará en la variable *jcr:nodo de contenido* del modelo de flujo de trabajo. Este indicador se mantendrá en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
+La propiedad *userMetadataPersistenceEnabled* se almacena en *jcr:nodo de contenido* del modelo de flujo de trabajo. Este indicador se mantiene en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
 
 La siguiente ilustración muestra que deben establecer el indicador en un flujo de trabajo.
 

@@ -2,10 +2,10 @@
 title: Pruebas funcionales de Java
 description: Obtenga información sobre cómo escribir pruebas funcionales de Java para AEM as a Cloud Service
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: cda1f51c89a98cfb75d63f8bd9b54e76ee745aa7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 100%
+source-wordcount: '848'
+ht-degree: 94%
 
 ---
 
@@ -91,7 +91,7 @@ Consulte el [`aem-testing-clients` Repositorio de GitHub](https://github.com/ado
 
 ### Requisitos previos {#prerequisites}
 
-1. Las pruebas en Cloud Manager se ejecutarán con un usuario administrador técnico.
+1. Las pruebas en Cloud Manager se ejecutan con un usuario administrador técnico.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Consulte el [`aem-testing-clients` Repositorio de GitHub](https://github.com/ado
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0,5 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
 | Memoria | 0,5Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes |
-| Tiempo de espera | 30m | Duración tras la cual se terminará la prueba. |
+| Tiempo de espera | 30m | Duración tras la cual finaliza la prueba. |
 | Duración recomendada | 15m | Se recomienda escribir las pruebas para que no tarden más de este tiempo. |
 
 >[!NOTE]
@@ -120,7 +120,7 @@ Antes de activar pruebas funcionales en una canalización de Cloud Manager, se r
 
 Como las clases de prueba son pruebas JUnit, se pueden ejecutar desde IDE de Java convencionales como Eclipse, IntelliJ y NetBeans. Dado que tanto las pruebas funcionales de producto como las pruebas funcionales personalizadas se basan en la misma tecnología, ambas se pueden ejecutar localmente al copiar las pruebas de producto en las pruebas personalizadas.
 
-Sin embargo, al ejecutar estas pruebas, será necesario establecer una serie de propiedades del sistema que espera el `aem-testing-clients` (y la biblioteca de clientes de prueba de Sling subyacente).
+Sin embargo, al ejecutar estas pruebas, es necesario establecer una serie de propiedades del sistema que espera el `aem-testing-clients` (y la biblioteca de clientes de prueba de Sling subyacente).
 
 Las propiedades del sistema son las siguientes:
 
@@ -130,11 +130,11 @@ Las propiedades del sistema son las siguientes:
 | `sling.it.instance.url.1` | debe establecerse en la URL de autor | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | el modo de ejecución de la primera instancia debe establecerse en `author` | `author` |
 | `sling.it.instance.adminUser.1` | debe establecerse en el usuario administrador del autor. | `admin` |
-| `sling.it.instance.adminPassword.1` | debe establecerse en la contraseña de administrador de autor. |  |
+| `sling.it.instance.adminPassword.1` | debe establecerse en la contraseña de administrador de autor. |                         |
 | `sling.it.instance.url.2` | debe establecerse en la URL de publicación | `http://localhost:4503` |
 | `sling.it.instance.runmode.2` | modo de ejecución de la segunda instancia, debe configurarse como `publish` | `publish` |
 | `sling.it.instance.adminUser.2` | debe establecerse en el usuario administrador de publicación. | `admin` |
-| `sling.it.instance.adminPassword.2` | debe establecerse en la contraseña de administrador de publicación. |  |
+| `sling.it.instance.adminPassword.2` | debe establecerse en la contraseña de administrador de publicación. |                         |
 
 
 

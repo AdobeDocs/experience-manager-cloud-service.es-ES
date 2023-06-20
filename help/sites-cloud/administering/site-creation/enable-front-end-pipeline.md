@@ -1,19 +1,19 @@
 ---
 title: Activación de la canalización front-end
-description: Descubra cómo puede habilitar la canalización front-end para sitios existentes a fin de aprovechar temas de sitios para personalizar más rápidamente el sitio.
+description: Descubra cómo puede habilitar la canalización front-end para que los sitios existentes utilicen temas del sitio para personalizar más rápidamente el sitio.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 87%
 
 ---
 
 # Activación de la canalización front-end {#enable-front-end-pipeline}
 
-Descubra cómo puede habilitar la canalización front-end para sitios existentes a fin de aprovechar temas de sitios para personalizar más rápidamente el sitio.
+Descubra cómo puede habilitar la canalización front-end para que los sitios existentes utilicen temas del sitio para personalizar más rápidamente el sitio.
 
 ## Información general {#overview}
 
@@ -21,7 +21,7 @@ La canalización front-end es un mecanismo que puede implementar rápidamente so
 
 En lugar de implementar el código full stack, solo el código front-end se gestiona mediante esta canalización, lo que hace que el proceso sea más rápido y permite a los desarrolladores de front-end personalizar su sitio de forma fácil y rápida sin tener conocimiento de AEM.
 
-Los sitios basados en plantillas de sitio pueden aprovechar la canalización front-end de forma predeterminada. Este documento describe cómo puede adaptar los sitios existentes para aprovechar la canalización front-end.
+Los sitios basados en plantillas de sitio pueden utilizar la canalización front-end de forma predeterminada. Este documento describe cómo puede adaptar los sitios existentes para aprovechar la canalización front-end.
 
 >[!TIP]
 >

@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.11.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.11.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 100%
+source-wordcount: '1054'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de diciembre d
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-* El recorte inteligente y la muestra de la imagen de Dynamic Media ahora cuenta con la tecnología de los últimos servicios de Sensei, que generan recortes y muestras mejorados. Además, se ha lanzado una mejora para generar diferentes contenidos de recorte, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservarán en el reprocesamiento si no hay cambios en la anchura y la altura del perfil de imagen.
+* El recorte inteligente y la muestra de la imagen de Dynamic Media ahora cuenta con la tecnología de los últimos servicios de Sensei, que generan recortes y muestras mejorados. Además, se ha lanzado una mejora para generar diferentes contenidos de recorte, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservan al reprocesar si no hay cambios en la anchura y la altura del perfil de imagen.
 
 ### Nuevas funciones del canal de prelanzamiento de [!DNL Assets] {#assets-prerelease-features}
 
@@ -84,10 +84,10 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 
 ### Novedades {#what-is-new-cm-nov}
 
-* Los usuarios ahora pueden aprovechar las nuevas canalizaciones front-end para implementar exclusivamente el código front-end de forma acelerada. Consulte [Canalizaciones principales de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para obtener más información.
+* Los usuarios ahora pueden utilizar nuevas canalizaciones front-end para implementar exclusivamente el código front-end de forma acelerada. Consulte [Canalizaciones principales de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para obtener más información.
 
-   >[!IMPORTANT]
-   >Debe estar en la versión `2021.10.5933.20211012T154732Z` o superior de AEM para aprovechar las nuevas canalizaciones front-end.
+  >[!IMPORTANT]
+  >AEM Debe estar en la versión de la `2021.10.5933.20211012T154732Z` o superior para utilizar nuevas canalizaciones front-end.
 
 * La duración de la canalización Calidad del código se reduce significativamente al realizar el análisis del código de una manera más eficiente sin necesidad de crear una imagen de AEM completa. Este cambio se implementará progresivamente durante las semanas siguientes a la publicación.
 

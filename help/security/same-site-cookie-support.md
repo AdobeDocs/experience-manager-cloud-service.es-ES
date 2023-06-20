@@ -2,10 +2,10 @@
 title: Compatibilidad con cookies de SameSite para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con cookies de SameSite para Adobe Experience Manager as a Cloud Service
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '283'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ Desde la versión 80, Chrome y posterior Safari, introdujeron un nuevo modelo pa
 
 El valor predeterminado de esta configuración (`SameSite=Lax`) puede causar que la autenticación entre instancias o servicios de AEM no funcione. Esto se debe a que es posible que los dominios o las estructuras URL de estos servicios no entren dentro de las restricciones de esta directiva de cookies.
 
-Para evitarlo, debe establecer el atributo de cookie de SameSite en `None` para el token de inicio de sesión.
+Para evitarlo, debe establecer el atributo de cookie SameSite en `None` para el token de inicio de sesión.
 
 >[!CAUTION]
 >
@@ -36,4 +36,4 @@ Puede agregar la configuración siguiendo los pasos siguientes:
 1. Genere las configuraciones de formato JSON para esta configuración en particular siguiendo los pasos descritos en [Generación de configuraciones de OSGi mediante Quickstart de SDK de AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)
 1. Aplique la configuración siguiendo los pasos de la sección [Formato de API de Cloud Manager para la configuración de propiedades](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) de la documentación de OSGi.
 
-Una vez que se actualiza esta configuración y se cierra la sesión de los usuarios y se inicia sesión de nuevo, las cookies `login-token` tendrán el conjunto de atributos `None` y se incluirán en solicitudes entre sitios.
+Después de actualizar esta configuración y de cerrar la sesión de los usuarios y volver a iniciarla, `login-token` Las cookies tienen el `None` conjunto de atributos y se incluye en solicitudes entre sitios.

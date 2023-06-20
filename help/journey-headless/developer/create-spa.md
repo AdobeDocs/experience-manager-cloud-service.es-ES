@@ -2,10 +2,10 @@
 title: 'Opcional: creación de aplicaciones de una sola página (SPA) con AEM'
 description: En esta continuación opcional del Recorrido para desarrolladores de AEM sin encabezado, aprenderá cómo AEM combina la entrega sin encabezado con las funciones tradicionales de CMS de pila completa y cómo puede crear SPA editables con el marco de trabajo del editor SPA de AEM.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 100%
+source-wordcount: '1274'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ Antes de empezar a trabajar con las SPA en AEM hay una serie de requisitos.
 
 * Experiencia en desarrollo creando SPA con marcos de trabajo React o Angular.
 * Conocimientos básicos de AEM para crear fragmentos de contenido y utilizar el editor.
-* Asegúrese de revisar el documento [Con encabezado y sin encabezado en AEM](/help/implementing/developing/headful-headless.md) para comprender los distintos niveles de integración de SPA posibles.
+* Asegúrese de revisar el documento [AEM Encabezado y sin encabezado en el](/help/implementing/developing/headful-headless.md) SPA para que pueda comprender los distintos niveles posibles de integración de la.
 
 ### Herramientas {#tools}
 
@@ -72,7 +72,7 @@ Para obtener una descripción completa de las SPA y por qué las utilizaría, co
 
 ## Cómo AEM gestiona las SPA
 
-El desarrollo de aplicaciones de una sola página en AEM supone que el desarrollador front-end sigue las prácticas recomendadas estándar al crear una SPA. Si como desarrollador front-end sigue estas prácticas recomendadas generales, así como algunos principios específicos de AEM, su SPA funcionará con AEM y su funcionalidad de creación de contenido.
+El desarrollo de aplicaciones de una sola página en AEM supone que el desarrollador front-end sigue las prácticas recomendadas estándar al crear una SPA. AEM SPA AEM Si, como desarrollador front-end, sigue estas prácticas recomendadas generales, así como algunos principios específicos de la, su se pone en funcionamiento con las funciones de creación de contenido de y de las que dispone.
 
 * **Portabilidad**: al igual que con cualquier componente, los componentes de SPA deben estar creados para ser lo más portátiles posible. La SPA debe crearse con componentes transferibles y reutilizables.
 * **AEM impulsa la estructura del sitio**: el desarrollador front-end crea componentes y posee su estructura interna, pero depende de AEM para definir la estructura de contenido del sitio.
@@ -93,7 +93,7 @@ Para obtener una descripción completa del editor de SPA de AEM, consulte el apa
 
 ## Adaptación de las SPA existentes {#existing-spas}
 
-Si tiene una SPA existente, AEM permite integrarlo en AEM para que sea visible para los autores de contenido en el editor de AEM. Esto puede resultar muy útil para ver el contenido que crean a través de los fragmentos de contenido en el contexto de la aplicación final en la que se consumirá.
+Si tiene una SPA existente, AEM permite integrarlo en AEM para que sea visible para los autores de contenido en el editor de AEM. Esto puede resultar muy útil para ver el contenido que están creando mediante fragmentos de contenido en el contexto de la aplicación final en la que se consume.
 
 Además, con tan solo unos pequeños cambios, puede habilitar una determinada capacidad de edición en la SPA externa dentro del editor de AEM.
 

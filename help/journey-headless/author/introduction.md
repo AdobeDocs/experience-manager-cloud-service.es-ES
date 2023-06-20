@@ -2,10 +2,10 @@
 title: 'Creación para AEM como un CMS sin encabezado: una introducción'
 description: Una introducción al uso de las características de Adobe Experience Manager as a Cloud Service como un CMS sin encabezado para crear contenido para su proyecto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
-workflow-type: ht
-source-wordcount: '665'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Esto quiere decir que el contenido puede llegar a una amplia gama de dispositivo
 (Y como ventaja doble, estos fragmentos también se pueden utilizar al construir páginas web AEM, si así lo desea).
 
 * CMS “tradicional”
-   * El contenido se crea para las páginas web, utilizando una serie de componentes que definen cómo se mostrará el contenido en su sitio web. Incluso en este caso, AEM es sumamente flexible, ya que su equipo de proyectos puede desarrollar componentes personalizados.
+   * El contenido se crea para páginas web mediante una serie de componentes que definen cómo se procesa el contenido en el sitio web. Incluso en este caso, AEM es sumamente flexible, ya que su equipo de proyectos puede desarrollar componentes personalizados.
 
 ## Modelado de contenido {#content-modeling}
 

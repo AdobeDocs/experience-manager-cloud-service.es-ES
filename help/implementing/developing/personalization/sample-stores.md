@@ -2,9 +2,9 @@
 title: Candidatos de tienda de ContextHub de muestra
 description: ContextHub proporciona varios candidatos de tienda de muestra que puede utilizar en sus soluciones
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '464'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ El almacén utiliza un árbol de datos similar al siguiente ejemplo:
 
 >[!NOTE]
 >
->Una política de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. AEM AEM Por lo tanto, se fuerza el uso de https para las llamadas a la API de geolocalización si también se está ejecutando en https, por lo que también se fuerza el uso de https. De lo contrario, http se utiliza para cumplir con la política del mismo origen.
+>Una política de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. AEM AEM Por lo tanto, se fuerza el uso de https para las llamadas a la API de geolocalización si también se está ejecutando en https, por lo que también se fuerza el uso de https. De lo contrario, http se utiliza para cumplir la directiva del mismo origen.
 >
 >Consulte [esta publicación de blog de Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obtener más información sobre el cambio en Chrome.
 

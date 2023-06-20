@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6679'
+source-wordcount: '6666'
 ht-degree: 7%
 
 ---
@@ -292,7 +292,7 @@ En la tabla siguiente se enumeran los eventos de visualizador de Dynamic Media y
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -460,7 +460,7 @@ Consulte también [Guía de implementación de Analytics](https://experienceleag
 
    Consulte [Información general sobre props y eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
 
-   A los efectos de esta documentación, solo se utilizará una variable de Tráfico personalizado (props), ya que estará disponible en un informe de Analytics en los minutos siguientes a la acción que se produzca en una página web.
+   A los efectos de esta documentación, solo se utiliza una variable de tráfico personalizado (props) porque está disponible en un informe de Analytics pocos minutos después de que se produzca una acción en una página web.
 
    Para habilitar una nueva variable Tráfico personalizado, en Adobe Analytics, en la barra de herramientas, vaya a **[!UICONTROL Administrador]** > **[!UICONTROL Grupos de informes]**.
 
@@ -487,7 +487,7 @@ Consulte también [Guía de implementación de Analytics](https://experienceleag
 
 ## Configuración de etiquetas de Experience Platform para la integración {#configuring-adobe-launch-for-the-integration}
 
-Después de configurar las etiquetas de Experience Platform, se configurará lo siguiente para la integración:
+Después de configurar las etiquetas de Experience Platform, se configura lo siguiente para la integración:
 
 * La creación de una nueva propiedad para mantener todas las configuraciones juntas.
 * Instalación y configuración de extensiones. El código del lado del cliente de todas las extensiones instaladas en la propiedad se compila junto en una biblioteca. La página web utiliza esta biblioteca más adelante.
@@ -748,7 +748,7 @@ La configuración del Experience Manager consta de los dos pasos principales sig
    * **[!UICONTROL Título]** : introduzca un título descriptivo para la cuenta.
    * **[!UICONTROL Servidor de autorización]** - Vuelva a la página de detalles de integración que abrió anteriormente. Seleccione el **[!UICONTROL JWT]** pestaña. Copie el nombre del servidor, sin la ruta, como se indica a continuación.
 
-(el nombre del servidor de ejemplo es solo para fines explicativos)   Vuelva a la página **[!UICONTROL Cuenta]** y, a continuación, pegue el nombre en el campo correspondiente.
+   Vuelva a la página **[!UICONTROL Cuenta]** y, a continuación, pegue el nombre en el campo correspondiente.
 Por ejemplo, `https://ims-na1.adobelogin.com/`
 (el nombre del servidor de ejemplo es solo para fines explicativos)
 

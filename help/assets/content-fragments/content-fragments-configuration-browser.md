@@ -2,16 +2,16 @@
 title: 'Fragmentos de contenido: explorador de configuración (Recursos: fragmentos de contenido)'
 description: Obtenga información sobre cómo habilitar la funcionalidad de fragmento de contenido en el Explorador de configuración.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 84%
+source-wordcount: '360'
+ht-degree: 78%
 
 ---
 
 # Fragmentos de contenido: explorador de configuración{#content-fragments-configuration-browser}
 
-AEM Obtenga información sobre cómo habilitar determinadas funcionalidades de fragmentos de contenido en el explorador de configuración para aprovechar las potentes funciones de envío sin encabezado de la aplicación.
+AEM Obtenga información sobre cómo habilitar determinadas funcionalidades de fragmentos de contenido en el explorador de configuración para utilizar funcionalidades de entrega sin encabezado de.
 
 ## Habilitación de la funcionalidad de fragmento de contenido para la instancia {#enable-content-fragment-functionality-instance}
 
@@ -26,7 +26,6 @@ Antes de usar fragmentos de contenido, debe usar el **Explorador de configuraci�
 >
 >* la opción **Crear** no estará disponible para crear nuevos modelos.
 >* no podrá [seleccionar la configuración de Sites para crear el punto de conexión relacionado](/help/headless/graphql-api/graphql-endpoint.md).
-
 
 Para habilitar la funcionalidad de fragmento de contenido, debe hacer lo siguiente:
 
@@ -55,21 +54,19 @@ Para [usar ciertas funcionalidades de fragmentos de contenido](#creating-a-conte
 >* Las consultas persistentes se guardarán (aún) de forma relevante para la configuración principal (raíz).
 
 
-
 1. Vaya a **Herramientas**, **General**, luego abra el **Explorador de configuración**.
 
 1. Use **Crear** para abrir el cuadro de diálogo, donde:
 
    1. Especifique un **Título**.
-   1. El **Nombre** se convertirá en el nombre de nodo en el repositorio.
-      * Se generará automáticamente en función del título y se ajustará según las [convenciones de nomenclatura de AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   1. El **Nombre** se convierte en el nombre de nodo del repositorio.
+      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de.](/help/implementing/developing/introduction/naming-conventions.md)
       * Puede ajustarlo si es necesario.
    1. Para habilitar su uso, seleccione
       * **Modelos de fragmentos de contenido**
       * **Consultas persistentes de GraphQL**
 
       ![Definir configuración](assets/cfm-conf-01.png)
-
 
 1. Seleccione **Crear** para guardar la definición.
 

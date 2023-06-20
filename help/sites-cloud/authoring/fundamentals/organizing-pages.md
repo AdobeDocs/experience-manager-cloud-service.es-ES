@@ -2,10 +2,10 @@
 title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2561'
-ht-degree: 76%
+source-wordcount: '2556'
+ht-degree: 74%
 
 ---
 
@@ -112,7 +112,7 @@ Para obtener toda la información sobre los caracteres permitidos, consulte las 
 
 Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre** de página de esta cadena y lo [validará según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR.
 
-Se acepta un campo de **Título** con caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
+A **Título** se acepta el campo que contiene caracteres no válidos, pero el nombre derivado tiene los caracteres no válidos sustituidos. Por ejemplo:
 
 | Título | Nombre derivado |
 |---|---|
@@ -196,6 +196,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
    * **Título**:
 
       * Se muestra al usuario y es obligatorio.
+
    * **Nombre**:
 
       * Se usa para generar la URI. Si no se especifica, el nombre se deriva del título.
@@ -323,6 +324,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
       * Seleccione el destino haciendo clic en la miniatura de destino.
       * Haga clic en **Siguiente** para continuar.
+
    * Uso **Atrás** para volver a la especificación del nombre de página.
 
    >[!NOTE]
@@ -335,7 +337,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
    >
    >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
 
-1. Si la página está vinculada, si se hace referencia a ella o si se ha publicado, los detalles aparecen en el paso **Ajustar/Volver a publicar**.
+1. Si la página está vinculada, si se hace referencia a ella o si se ha publicado, los detalles aparecen en la **Ajustar/volver a publicar** paso.
 
    Puede indicar qué debería ajustarse o volverse a publicar, según proceda.
 
@@ -376,7 +378,7 @@ Sin embargo, si el número de páginas afectadas supera un límite definido, la 
       * **Ahora** comienza la ejecución del trabajo asincrónico de inmediato.
       * **Más tarde** permite al usuario definir cuándo se iniciará el trabajo asincrónico.
 
-         ![Movimiento asincrónico de página](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+        ![Movimiento asincrónico de página](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
 El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado de los trabajos asincrónicos** ](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)en **Navegación global** -> **Herramientas** -> **Operaciones** -> **Trabajos**
 
@@ -440,4 +442,3 @@ Puede crear carpetas para organizar archivos y páginas.
 >* Las carpetas solo se pueden crear directamente en **Sitios** o en otras carpetas. No se pueden crear en una página.
 >* Las acciones estándar mover, copiar, pegar, eliminar, publicar, cancelar publicación y las propiedades de ver/editar se pueden ejecutar en una carpeta.
 >* Las carpetas no están disponibles para la selección en una Live Copy.
-

@@ -1,10 +1,10 @@
 ---
 title: Plantillas de página
-description: Las plantillas de página se utilizan para crear una página que se utilizará como base para la nueva página
+description: Las plantillas de página se utilizan para crear una página que se utiliza como base para la nueva página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3293'
 ht-degree: 6%
 
 ---
@@ -67,6 +67,7 @@ Al crear una nueva plantilla editable:
    * Las políticas de contenido definen las propiedades de diseño de un componente.
 
       * Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas.
+
    * Se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
    Para obtener más información sobre cómo define las directivas un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -432,11 +433,11 @@ Este nodo contiene propiedades para la plantilla:
 Define la estructura de la página resultante:
 
 * Se combina con el contenido inicial ( `/initial`) al crear una página nueva.
-* Los cambios realizados en la estructura se reflejarán en cualquier página creada con la plantilla.
-* El `root` ( `structure/jcr:content/root`) define la lista de componentes que estarán disponibles en la página resultante.
+* Los cambios realizados en la estructura se reflejan en cualquier página creada con la plantilla.
+* El `root` ( `structure/jcr:content/root`) define la lista de componentes disponibles en la página resultante.
    * Los componentes definidos en la estructura de la plantilla no se pueden mover ni eliminar de ninguna página resultante.
-   * Una vez desbloqueado un componente, `editable` La propiedad se establece en `true`.
-   * Una vez desbloqueado un componente que ya contiene contenido, este se moverá al `initial` Rama.
+   * Después de desbloquear un componente, `editable` La propiedad se establece en `true`.
+   * Después de desbloquear un componente que ya contiene contenido, este se mueve a `initial` Rama.
 
 * El `cq:responsive` El nodo contiene definiciones para el diseño interactivo.
 
@@ -447,7 +448,7 @@ Define el contenido inicial que tendrá una nueva página al crearla:
 * Contiene un `jcr:content` que se copia en cualquier página nueva.
 * Se combina con la estructura ( `/structure`) al crear una página nueva.
 * Las páginas existentes no se actualizarán si el contenido inicial cambia después de la creación.
-* El `root` El nodo contiene una lista de componentes para definir qué estará disponible en la página resultante.
+* El `root` El nodo contiene una lista de componentes para definir qué está disponible en la página resultante.
 * Si el contenido se añade a un componente en modo de estructura y dicho componente se desbloquea posteriormente (o viceversa), este contenido se utiliza como contenido inicial.
 
 ### Diseño {#layout}
@@ -461,13 +462,13 @@ Cuándo [edición de una plantilla puede definir el diseño](/help/sites-cloud/a
 Las políticas de contenido definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla). Las políticas de contenido se pueden crear y seleccionar en el editor de plantillas.
 
 * La propiedad `cq:policy`, en el `root` nodo
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Proporciona una referencia relativa a la directiva de contenido para el sistema de párrafos de la página.
 
 * La propiedad `cq:policy`, en los nodos explícitos de componente en `root`, proporcione vínculos a las directivas para los componentes individuales.
 
 * Las definiciones de directivas reales se almacenan en:
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ Las políticas de página permiten definir la variable [política de contenido](
    * Estableciendo la propiedad status en `jcr:content` nodo.
 
       * Por ejemplo, en:
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Defina la propiedad:
 
@@ -500,9 +501,9 @@ Las políticas de página permiten definir la variable [política de contenido](
 
    * [Defina las rutas de plantilla permitidas en la variable **Propiedades de página**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) de la página adecuada o de la página raíz de una subrama.
    * Establezca la propiedad:
-      `cq:allowedTemplates`
-En el 
-`jcr:content` de la rama requerida.
+     `cq:allowedTemplates`
+En el `jcr:content` de la rama requerida.
+
    Por ejemplo, con un valor de:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -532,13 +533,13 @@ Al procesar una página:
 
 * **Plantillas**:
 
-   * El `cq:template` propiedad de su `jcr:content` se hará referencia al nodo para acceder a la plantilla que corresponde a esa página.
+   * El `cq:template` propiedad de su `jcr:content` se hace referencia al nodo para acceder a la plantilla que corresponde a esa página.
 
 * **Componentes**:
 
    * El componente de página combinará las variables `structure/jcr:content` árbol de la plantilla con el `jcr:content` árbol de la página.
       * El componente de página solo permitirá al autor editar los nodos de la estructura de la plantilla que se han marcado como editables (así como los secundarios).
-      * Al procesar un componente en una página, la ruta relativa de ese componente se tomará del `jcr:content` nodo; la misma ruta bajo el `policies/jcr:content` A continuación, se buscará en el nodo de la plantilla.
+      * Al procesar un componente en una página, la ruta relativa de ese componente se toma del `jcr:content` nodo; la misma ruta bajo el `policies/jcr:content` A continuación, se buscará en el nodo de la plantilla.
          * El `cq:policy` La propiedad de este nodo apunta a la directiva de contenido real (es decir, contiene la configuración de diseño para ese componente).
             * Esto le permite tener varias plantillas que reutilizan las mismas configuraciones de directiva de contenido.
 

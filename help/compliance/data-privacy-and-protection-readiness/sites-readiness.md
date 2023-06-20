@@ -2,10 +2,10 @@
 title: 'Reglamentos de protección de datos y privacidad de datos: preparación de Adobe Experience Manager as a Cloud Service Sites'
 description: Obtenga información acerca del soporte de Adobe Experience Manager as a Cloud Service Sites respecto a los distintos reglamentos de protección de datos y privacidad de datos; se incluye el Reglamento general de protección de datos (RGPD) de la UE y la Ley de Privacidad del Consumidor de California y cómo cumplirlos al implementar un nuevo proyecto de AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 100%
+source-wordcount: '1028'
+ht-degree: 93%
 
 ---
 
@@ -60,11 +60,12 @@ Para la exclusión:
 
    * Para no participar en la agregación y el análisis de los datos acerca de su visita a este sitio, es necesario instalar una cookie en su explorador. Esta cookie identifica que se ha excluido.
 
-      Si elimina la cookie de exclusión, o si cambia de equipo o de explorador web, tendrá que volver a excluirse.
+     Si elimina la cookie de exclusión, o si cambia de equipo o de explorador web, tendrá que volver a excluirse.
 
-      Exclusión - Excluirme del análisis y la agregación de sesiones del visitante (instale la cookie de exclusión `amcglobal.sc.omtrdc.net`): haga clic aquí.
+     Exclusión - Excluirme del análisis y la agregación de sesiones del visitante (instale la cookie de exclusión `amcglobal.sc.omtrdc.net`): haga clic aquí.
 
-      Inclusión - Inclúyanme en el análisis y agregación de sesiones del visitante (no instale la cookie de exclusión `amcglobal.sc.omtrdc.net`): haga clic aquí.
+     Inclusión - Inclúyanme en el análisis y agregación de sesiones del visitante (no instale la cookie de exclusión `amcglobal.sc.omtrdc.net`): haga clic aquí.
+
    Siga los pasos anteriores para acceder a los vínculos reales.
 
    >[!NOTE]
@@ -108,22 +109,22 @@ Estas directrices implementan la inclusión como predeterminada. Por lo tanto, u
 
 * Si el visitante de un sitio acepta los términos y condiciones del sitio, se debe eliminar la cookie de exclusión de ContextHub:
 
-   ```
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   ```
+  ```
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  ```
 
 * Si el visitante de un sitio no acepta los términos y condiciones del sitio, se debe configurar la cookie de exclusión de ContextHub:
 
-   ```
-   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
-   ```
+  ```
+  ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
+  ```
 
 * Para comprobar si ContextHub se está ejecutando en modo de exclusión, la siguiente llamada debe realizarse en la consola del explorador:
 
-   ```
-   var isOptedOut = ContextHub.isOptedOut(true) === true;
-   // if isOptedOut is true, ContextHub is running in opt-out mode
-   ```
+  ```
+  var isOptedOut = ContextHub.isOptedOut(true) === true;
+  // if isOptedOut is true, ContextHub is running in opt-out mode
+  ```
 
 ### Previsualización de la persistencia de ContextHub {#previewing-persistence-of-contexthub}
 
@@ -138,6 +139,7 @@ Para obtener una vista previa de la persistencia utilizada en ContextHub, un usu
          * Almacenamiento local > (sitio web) > ContextHubPersistence
          * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
          * Cookies > (sitio web) > SessionPersistence
+
    * Firefox:
 
       * Abra Herramientas para desarrolladores > Almacenamiento:
@@ -145,6 +147,7 @@ Para obtener una vista previa de la persistencia utilizada en ContextHub, un usu
          * Almacenamiento local > (sitio web) > ContextHubPersistence
          * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
          * Cookies > (sitio web) > SessionPersistence
+
    * Safari:
 
       * Abra Preferencias > Avanzado > Mostrar el menú Desarrollo en la barra de menús
@@ -153,6 +156,7 @@ Para obtener una vista previa de la persistencia utilizada en ContextHub, un usu
          * Consola > Almacenamiento > Almacenamiento local > (sitio web) > ContextHubPersistence
          * Consola > Almacenamiento > Almacenamiento de sesión > (sitio web) > ContextHubPersistence
          * Consola > Almacenamiento > Cookies > (sitio web) > ContextHubPersistence
+
    * Internet Explorer:
 
       * Abra Herramientas para desarrolladores > Consola
@@ -160,9 +164,6 @@ Para obtener una vista previa de la persistencia utilizada en ContextHub, un usu
          * `localStorage.getItem('ContextHubPersistence')`
          * `sessionStorage.getItem('ContextHubPersistence')`
          * `document.cookie`
-
-
-
 
 * Utilice la API de ContextHub en la consola del explorador:
 
@@ -173,8 +174,7 @@ Para obtener una vista previa de la persistencia utilizada en ContextHub, un usu
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      El almacén de ContextHub define qué capa de persistencia se utilizará, por lo que para ver el estado actual de la persistencia se deben comprobar todas las capas.
-
+     El almacén de ContextHub define qué capa de persistencia se utiliza, por lo que para ver el estado actual de la persistencia se deben comprobar todas las capas.
 
 Por ejemplo, para ver los datos almacenados en localStorage:
 
@@ -187,12 +187,12 @@ Para obtener una vista previa de la persistencia utilizada en ContextHub, un usu
       * Almacenamiento local > (sitio web) > ContextHubPersistence
       * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
       * Cookies > (sitio web) > SessionPersistence
+
    * Firefox: abra Herramientas para desarrolladores > Almacenamiento:
 
       * Almacenamiento local > (sitio web) > ContextHubPersistence
       * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
       * Cookies > (sitio web) > SessionPersistence
-
 
 * Utilice la API de ContextHub en la consola del explorador:
 
@@ -203,8 +203,7 @@ Para obtener una vista previa de la persistencia utilizada en ContextHub, un usu
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      El almacén de ContextHub define qué capa de persistencia se utilizará, por lo que para ver el estado actual de la persistencia se deben comprobar todas las capas.
-
+     El almacén de ContextHub define qué capa de persistencia se utiliza, por lo que para ver el estado actual de la persistencia se deben comprobar todas las capas.
 
 Por ejemplo, para ver los datos almacenados en localStorage:
 
@@ -219,27 +218,27 @@ Para borrar la persistencia de ContextHub:
 
 * Para borrar la persistencia de las tiendas cargadas actualmente:
 
-   ```
-   // in order to be able to fully access persistence layer, Opt-Out must be turned off
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   
-   // following call asks all currently loaded stores to clear their data
-   ContextHub.cleanAllStores();
-   
-   // following call asks all currently loaded stores to set back default values (provided in their configs)
-   ContextHub.resetAllStores();
-   ```
+  ```
+  // to be able to fully access persistence layer, Opt-Out must be turned off
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  
+  // following call asks all currently loaded stores to clear their data
+  ContextHub.cleanAllStores();
+  
+  // following call asks all currently loaded stores to set back default values (provided in their configs)
+  ContextHub.resetAllStores();
+  ```
 
 * Para borrar una capa de persistencia específica; por ejemplo, sessionStorage:
 
-   ```
-   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
-   storage.setItem('/store', null);
-   storage.setItem('/_', null);
-   
-   // to confirm that nothing is stored:
-   console.log(storage.getTree());
-   ```
+  ```
+  var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
+  storage.setItem('/store', null);
+  storage.setItem('/_', null);
+  
+  // to confirm that nothing is stored:
+  console.log(storage.getTree());
+  ```
 
 * Para borrar todas las capas de persistencia de ContextHub, se debe llamar al código apropiado para todas las capas:
 

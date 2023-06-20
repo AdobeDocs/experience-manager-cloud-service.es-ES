@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: El explorador del repositorio proporciona una vista de solo lectura del repositorio para todos los entornos en los niveles de creación, publicación y vista previa.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 43429562ea4292f38d3459e03185270ec950a58a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '885'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ Se puede acceder a ella desde Developer Console y se puede utilizar para examina
 
 ### Requisitos previos de acceso {#access-prerequisites}
 
-Estas condiciones deben cumplirse para acceder a Developer Console o al Explorador de repositorios
+Se deben cumplir las siguientes condiciones para acceder a Developer Console o al explorador del repositorio
 
 Para acceder a Developer Console:
 
@@ -76,7 +76,7 @@ Además, al hacer clic en una carpeta, la dirección URL se modifica dinámicame
 
 Para la publicación, de forma predeterminada, el Explorador de repositorios solo mostrará contenido público, por lo que algunas carpetas como `/conf` o `/home` no será visible.
 
-Para que esas ubicaciones sean visibles, debe seguir el siguiente procedimiento.
+Para que esas ubicaciones sean visibles, haga lo siguiente.
 
 1. Haga clic en los tres puntos junto al entorno que desee y seleccione **Administrar acceso**
 

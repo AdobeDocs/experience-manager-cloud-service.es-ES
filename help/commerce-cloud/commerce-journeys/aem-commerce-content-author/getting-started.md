@@ -2,9 +2,9 @@
 title: Introducción a la creación de CIF
 description: Introducción a la creación de CIF
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '804'
 ht-degree: 2%
 
 ---
@@ -89,7 +89,7 @@ AEM Las pestañas restantes muestran todo el contenido de la asociado con el pro
 AEM El uso de Omnisearch es una manera fácil de encontrar contenido de la mediante la búsqueda de texto completo. AEM El CIF amplía Omnisearch con la búsqueda de texto completo de catálogos de productos con su contenido asociado de la.
 ![elemento del menú de comercio](assets/omnisearch.png)
 
-Omnisearch ejecutará una búsqueda de texto completo en el backend del comercio para encontrar todos los productos relacionados. El resultado se enumera en **Ver todos los productos**. AEM Omnisearch también buscará el contenido que esté asociado con el producto buscado. AEM Los resultados se enumerarán en las respectivas categorías de la. En este ejemplo, un fragmento de contenido está relacionado con el producto.
+Omnisearch ejecutará una búsqueda de texto completo en el backend del comercio para encontrar todos los productos relacionados. El resultado se enumera en **Ver todos los productos**. AEM Omnisearch también buscará el contenido que esté asociado con el producto buscado. AEM Los resultados se enumeran en las respectivas categorías de. En este ejemplo, un fragmento de contenido está relacionado con el producto.
 
 ## Siguientes pasos {#what-is-next}
 

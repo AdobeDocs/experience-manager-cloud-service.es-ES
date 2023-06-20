@@ -3,10 +3,10 @@ title: Configurar canalizaciones que no sean de producción
 description: Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 100%
+source-wordcount: '1362'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno utilizando 
 1. Si elige crear una **Canalización de implementación** también tendrá que definir el **Comportamiento de errores de métricas importantes**.
 
    * **Preguntar cada vez**: esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
-   * **Produjo un error inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+   * **Fallo inmediatamente** : si se selecciona, la canalización se cancela siempre que se produce un error importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
    * **Continuar inmediatamente**: si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
 1. Haga clic en **Continuar**.
@@ -99,7 +99,7 @@ Una canalización de código de pila completa implementa simultáneamente compil
 
 >[!NOTE]
 >
->Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección se desactivará.
+>Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección está desactivada.
 
 Para finalizar la configuración de la canalización de no producción de código de pila completa, siga estos pasos.
 
@@ -134,7 +134,7 @@ Una canalización de configuración de nivel web implementa las configuraciones 
 
 >[!NOTE]
 >
->Si ya existe una canalización de código de capa web para el entorno seleccionado, se desactivará esta selección.
+>Si ya existe una canalización de código de capa web para el entorno seleccionado, esta selección está desactivada.
 
 Para finalizar la configuración de la canalización de no producción de código de capa web, siga estos pasos.
 
@@ -166,7 +166,7 @@ La canalización se guarda y ahora puede [administrar las canalizaciones](managi
 
 Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
 
-Consulte el documento [Desarrollar Sites con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
+Ver el documento [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
 
 ## Omitir paquetes de Dispatcher {#skip-dispatcher-packages}
 

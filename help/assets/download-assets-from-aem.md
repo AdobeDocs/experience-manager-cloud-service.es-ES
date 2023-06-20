@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1239'
-ht-degree: 4%
+source-wordcount: '1238'
+ht-degree: 5%
 
 ---
 
@@ -79,7 +79,7 @@ Para descargar recursos, siga estos pasos:
 
    | Opción Descargar | Descripción |
    |---|---|
-   | **[!UICONTROL Crear una carpeta independiente para cada recurso]** | Seleccione esta opción para crear una carpeta para cada recurso que contenga todas las representaciones descargadas para el recurso. Si no se selecciona, cada recurso (y sus representaciones si se seleccionan para su descarga) se incluirán en la carpeta principal del archivo generado. |
+   | **[!UICONTROL Crear una carpeta independiente para cada recurso]** | Seleccione esta opción para crear una carpeta para cada recurso que contenga todas las representaciones descargadas para el recurso. Si no se selecciona, cada recurso (y sus representaciones si se seleccionan para su descarga) se encuentra en la carpeta principal del archivo generado. |
    | **[!UICONTROL Correo electrónico]** | Seleccione esta opción para enviar una notificación por correo electrónico (que contenga un vínculo a la descarga) a otro usuario. El usuario destinatario debe ser miembro de `dam-users` grupo. Las plantillas de correo electrónico estándar están disponibles en las siguientes ubicaciones:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Las plantillas que personaliza durante la implementación están disponibles en las siguientes ubicaciones: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Puede almacenar plantillas personalizadas específicas del inquilino en las siguientes ubicaciones:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Recursos]** | Seleccione esta opción para descargar el recurso en su forma original.<br>La opción subrecursos está disponible si el recurso original tiene subrecursos. |
    | **[!UICONTROL Representaciones]** | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso seleccionado. |
@@ -139,11 +139,11 @@ Si no necesita la funcionalidad de descarga, deshabilite el servlet para evitar 
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Administración de metadatos](manage-metadata.md)
 * [Facetas de búsqueda](search-facets.md)
@@ -155,4 +155,3 @@ Si no necesita la funcionalidad de descarga, deshabilite el servlet para evitar 
 >* [Descarga de recursos protegidos por DRM](drm.md)
 >* [Descargar recursos con la aplicación de escritorio de Experience Manager en Windows o Mac para escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [Descargue los recursos mediante el vínculo de recursos de Adobe desde las aplicaciones de Adobe Creative Cloud compatibles](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)
-

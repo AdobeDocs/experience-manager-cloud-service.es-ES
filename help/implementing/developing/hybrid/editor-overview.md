@@ -2,10 +2,10 @@
 title: Información general del editor de SPA
 description: Este artículo ofrece una información general completa del Editor de SPA y cómo funciona, e incluye flujos de trabajo detallados de interacción del Editor de SPA dentro de AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 100%
+source-wordcount: '1630'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ El componente de página de una SPA no proporciona los elementos HTML de sus com
 
 ### Administración de modelos de página {#page-model-management}
 
-La resolución y la gestión del modelo de página se delegan a la biblioteca `PageModel`. Las SPA deben utilizar la biblioteca del modelo de página para que el Editor de SPA pueda inicializarlas y crearlas. La biblioteca Modelo de página se proporciona indirectamente al componente de Página de AEM a través del npm `aem-react-editable-components`. El Modelo de página es un intérprete entre el AEM y las SPA y, por lo tanto, siempre debe estar presente. Cuando se redacta la página, se debe añadir la biblioteca adicional `cq.authoring.pagemodel.messaging` para habilitar la comunicación con el editor de páginas.
+La resolución y la gestión del modelo de página se delegan a la biblioteca `PageModel`. SPA SPA La biblioteca debe utilizar la biblioteca de modelo de página para que el editor de páginas pueda inicializarla y crearla. La biblioteca de modelo de página () La biblioteca Modelo de página se proporciona indirectamente al componente de Página de AEM a través del npm `aem-react-editable-components`. El Modelo de página es un intérprete entre el AEM y las SPA y, por lo tanto, siempre debe estar presente. Cuando se cree la página, una biblioteca adicional `cq.authoring.pagemodel.messaging` debe añadirse para habilitar la comunicación con el editor de páginas.
 
 Si el componente de página de las SPA hereda del componente principal de página, hay dos opciones para hacer que la categoría de la biblioteca de cliente `cq.authoring.pagemodel.messaging` esté disponible:
 
@@ -90,7 +90,6 @@ Teniendo en cuenta los elementos clave del Editor de SPA, el flujo de trabajo de
 >* La SPA siempre está a cargo de su visualización.
 >* El editor de SPA está aislado de la propia SPA.
 >* En producción (publicación), el editor de SPA nunca se carga.
-
 
 ### Flujo de trabajo de edición de páginas cliente-servidor {#client-server-page-editing-workflow}
 
@@ -161,7 +160,7 @@ Las versiones anteriores de estos marcos de trabajo pueden funcionar con el Edit
 
 ### Marcos de trabajo adicionales {#additional-frameworks}
 
-Se pueden implementar marcos de SPA adicionales para trabajar con el Editor de SDK de SPA de AEM. Consulte el documento [Modelo de SPA](blueprint.md) para los requisitos que debe cumplir un marco de trabajo para crear una capa específica de la plataforma compuesta por módulos, componentes y servicios que funcionen con el Editor de SPA de AEM.
+Se pueden implementar marcos de SPA adicionales para trabajar con el Editor de SDK de SPA de AEM. Consulte la [SPA Modelo de](blueprint.md) AEM SPA documento para los requisitos que debe cumplir un marco de trabajo para crear una capa específica del marco de trabajo compuesta de módulos, componentes y servicios para trabajar con el Editor de la.
 
 ### Uso de varios selectores {#multiple-selectors}
 

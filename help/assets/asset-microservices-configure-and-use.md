@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2932'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -143,7 +143,7 @@ Las aplicaciones personalizadas no tienen encabezado [Generador de aplicaciones 
 
 ### Ejemplo de perfil personalizado {#custom-profile-example}
 
-Para ilustrar el uso de un perfil personalizado, consideremos un caso de uso para aplicar texto personalizado a las imágenes de la campaña. Puede crear un perfil de procesamiento que aproveche la API de Photoshop para editar las imágenes.
+Para ilustrar el uso de un perfil personalizado, consideremos un caso de uso para aplicar texto personalizado a las imágenes de la campaña. Puede crear un perfil de procesamiento que utilice la API de Photoshop para editar las imágenes.
 
 La integración del servicio de asset compute permite al Experience Manager pasar estos parámetros a la aplicación personalizada mediante [!UICONTROL Parámetros de servicio] field. A continuación, la aplicación personalizada llama a la API de Photoshop y pasa estos valores a la API. Por ejemplo, puede pasar el nombre de la fuente, el color, el peso y el tamaño del texto para añadir el texto personalizado a las imágenes de campaña.
 
@@ -161,7 +161,7 @@ Aplique perfiles de procesamiento a las carpetas mediante uno de los métodos si
 
 * Los administradores pueden seleccionar una definición de perfil de procesamiento en **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de procesamiento]** y utilice **[!UICONTROL Aplicar perfil a las carpetas]** acción. Se abre un explorador de contenido que le permite navegar a carpetas específicas, seleccionarlas y confirmar la aplicación del perfil.
 * Los usuarios pueden seleccionar una carpeta en la interfaz de usuario de Assets; utilice **[!UICONTROL Propiedades]** acción para abrir la pantalla de propiedades de la carpeta, haga clic en **[!UICONTROL Procesamiento de recursos]** y en la pestaña [!UICONTROL Perfil de procesamiento] , seleccione el perfil de procesamiento adecuado para esa carpeta. Para guardar los cambios, haga clic en **[!UICONTROL Guardar y cerrar]**.
-   ![Aplicar perfil de procesamiento a una carpeta desde la pestaña Propiedades del recurso](assets/folder-properties-processing-profile.png)
+  ![Aplicar perfil de procesamiento a una carpeta desde la pestaña Propiedades del recurso](assets/folder-properties-processing-profile.png)
 
 * Los usuarios pueden seleccionar carpetas o recursos específicos en la interfaz de usuario de Assets para aplicar un perfil de procesamiento y, a continuación, seleccionar ![icono de reprocesamiento de recursos](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Volver a procesar recursos]** de las opciones disponibles en la parte superior.
 
@@ -269,11 +269,11 @@ Siga los pasos descritos en [aplicar un modelo de flujo de trabajo a una carpeta
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
@@ -287,7 +287,6 @@ Siga los pasos descritos en [aplicar un modelo de flujo de trabajo a una carpeta
 >* [Comprender la extensibilidad y cuándo utilizarla](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 >* [Creación de aplicaciones personalizadas](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
 >* [Tipos MIME admitidos para varios casos de uso](/help/assets/file-format-support.md).
-
 
 <!-- TBD: 
 * How/where can admins check what's already configured and provisioned.

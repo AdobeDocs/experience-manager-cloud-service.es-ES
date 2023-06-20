@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2594'
 ht-degree: 23%
 
 ---
@@ -28,7 +28,7 @@ El [Proyecto Venia del CIF](https://github.com/adobe/aem-cif-guides-venia) es un
 
 ## Qué va a generar
 
-La marca Venia ha empezado recientemente a fabricar algunos productos con materiales sostenibles y la empresa desea mostrar un **Respetuoso con el medio ambiente** como parte del teaser de productos. Se creará un nuevo atributo personalizado en Adobe Commerce para indicar si un producto utiliza el **Respetuoso con el medio ambiente** material. A continuación, este atributo personalizado se agregará como parte de la consulta de GraphQL y se mostrará en el teaser de productos para productos especificados.
+La marca Venia ha empezado recientemente a fabricar algunos productos con materiales sostenibles y la empresa desea mostrar un **Respetuoso con el medio ambiente** como parte del teaser de productos. Se crea un nuevo atributo personalizado en Adobe Commerce para indicar si un producto utiliza el **Respetuoso con el medio ambiente** material. A continuación, este atributo personalizado se agregará como parte de la consulta de GraphQL y se mostrará en el teaser de productos para productos especificados.
 
 ![Implementación final de distintivo ecológico](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -69,7 +69,7 @@ Vamos a clonar el [Proyecto Venia](https://github.com/adobe/aem-cif-guides-venia
 
 ## Creación del teaser de productos {#author-product-teaser}
 
-El componente teaser de productos se ampliará a lo largo de este tutorial. Como primer paso, añada una nueva instancia del teaser de productos a la página de inicio para comprender la funcionalidad de línea de base.
+El componente teaser de productos se amplía a través de este tutorial. Como primer paso, añada una nueva instancia del teaser de productos a la página de inicio para comprender la funcionalidad de línea de base.
 
 1. Vaya hasta la **Página de inicio** del sitio: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
@@ -436,7 +436,7 @@ En nuestro caso, queremos renderizar un titular sobre el teaser para indicar que
 
 En este punto, la lógica de cuándo mostrar la variable **Respetuoso con el medio ambiente** El distintivo funciona, pero el texto sin formato podría utilizar algunos estilos. A continuación, añada un icono y estilos a `ui.frontend` para completar la implementación.
 
-1. Descargue la [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) archivo. Se utilizará como el **Respetuoso con el medio ambiente** insignia.
+1. Descargue la [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) archivo. Se usa como. **Respetuoso con el medio ambiente** insignia.
 1. Vuelva al IDE y vaya al `ui.frontend` carpeta.
 1. Añada el `eco_friendly.svg` archivo a la `ui.frontend/src/main/resources/images` carpeta:
 

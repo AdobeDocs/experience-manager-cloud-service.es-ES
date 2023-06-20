@@ -2,10 +2,10 @@
 title: Administrar listas de IP permitidas
 description: Obtenga información sobre cómo ver, editar, eliminar y comprobar el estado de las listas de IP permitidas en Cloud Manager.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
+source-wordcount: '818'
+ht-degree: 92%
 
 ---
 
@@ -69,8 +69,8 @@ Siga estos pasos para comprobar el estado de las listas de IP permitidas.
 * **Error al eliminar**: Error de una o varias aplicaciones durante una operación de eliminación.
 
    * Cada una de las aplicaciones se enumera junto con el estado **Completada** o **Error**.
-   * El estado será **Error al eliminar** si falla una de las aplicaciones.
-   * El estado permanecerá como **Error al eliminar** hasta que se borren todos los errores.
+   * El estado cambia a **Error de eliminación** si falla una de las aplicaciones.
+   * El estado se mantiene como **Error de eliminación** hasta que se borren todos los errores.
       * Debe seleccionar **Eliminar** en el menú de los tres puntos situado en el extremo derecho de la fila de la tabla para borrar cualquier error.
    * No puede actualizar una lista de IP permitidas mientras el estado sea **Error**.
 
@@ -90,7 +90,7 @@ Al eliminar una lista de IP permitidas, esta se dará de baja automáticamente d
 
 ## Configuraciones de CDN preexistentes {#pre-existing-cdn}
 
-Si tiene una configuración de CDN preexistente para sus listas de IP permitidas, aparecerá un mensaje informativo en la página **Lista de IP permitidas**, que le animará a agregar estas configuraciones a través de la interfaz de usuario para que sean visibles y configurables en Cloud Manager.
+Si tiene una configuración de CDN preexistente para sus listas de permitidos IP, aparece un mensaje informativo en la **LISTA DE PERMITIDOS IP** , lo que le anima a añadir estas configuraciones a través de la interfaz de usuario para que sean visibles y configurables en Cloud Manager.
 
 El mensaje desaparece una vez que se migran todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje puede tardar entre 1 y 2 días hábiles en desaparecer.
 

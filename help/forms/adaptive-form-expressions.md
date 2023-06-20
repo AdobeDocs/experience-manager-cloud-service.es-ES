@@ -2,7 +2,7 @@
 title: Expresiones de formularios adaptables
 seo-title: Adaptive Form Expressions
 description: Utilice expresiones de formularios adaptables para agregar validación automática, cálculo y activar o desactivar la visibilidad de una sección.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2696'
 ht-degree: 100%
@@ -237,7 +237,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      gb.connect(function (){
 
-        //this function will be called after Adaptive Form is initialized
+        //this function is called after Adaptive Form is initialized
 
      })
 

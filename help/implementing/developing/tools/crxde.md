@@ -2,9 +2,9 @@
 title: Uso del CRXDE Lite
 description: El CRXDE Lite AEM forma parte del inicio rápido de la y está disponible para acceder y modificar el repositorio en los entornos de desarrollo local dentro del explorador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1689'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ El widget Ruta del nodo muestra la ruta al nodo seleccionado actualmente.
 
 También puede usarlo para saltar a un nodo al introducir la ruta a mano o pegarla desde otro lugar y pulsar Intro.
 
-También es compatible con la búsqueda de nodos con un nombre de nodo específico. Introduzca el nombre del nodo que desea buscar y espere (o seleccione el icono de búsqueda en el lado derecho). Si se carga un nodo o nodos determinados en el panel del explorador, se mostrará la lista y podrá seleccionar la ruta y pulsar Entrar para desplazarse hasta ella. Tenga en cuenta que solo funciona para los nodos cargados actualmente en la aplicación cliente CRXDE en el explorador. Si desea buscar en todo el repositorio, utilice **Herramientas** ->: **Consulta**.
+También es compatible con la búsqueda de nodos con un nombre de nodo específico. Introduzca el nombre del nodo que desea buscar y espere (o seleccione el icono de búsqueda en el lado derecho). Si se carga un nodo o nodos determinados en el panel del explorador, se muestra la lista y puede seleccionar la ruta y pulsar Entrar para desplazarse hasta ella. Tenga en cuenta que solo funciona para los nodos cargados actualmente en la aplicación cliente CRXDE en el explorador. Si desea buscar en todo el repositorio, utilice **Herramientas** ->: **Consulta**.
 
 ### Panel del explorador {#explorer-pane}
 
@@ -60,7 +60,7 @@ El filtro de navegación de árbol (el icono de prismáticos) permite filtrar lo
 
 ### Panel de edición {#edit-pane}
 
-El **Panel de edición** permite ver el contenido del archivo seleccionado actualmente en el repositorio. Cada archivo abierto se representará como su propia pestaña en el panel.
+El **Panel de edición** permite ver el contenido del archivo seleccionado actualmente en el repositorio. Cada archivo abierto se representa como su propia pestaña en el panel.
 
 El **Inicio** La pestaña permite buscar contenido o documentación y acceder a documentación para desarrolladores y a asistencia de Adobe.
 
@@ -88,6 +88,7 @@ Los permisos se dividen en las siguientes categorías.
 * **Políticas de control de acceso efectivas** : las directivas actuales aplicadas a la selección actual, que pueden configurarse localmente o heredarse de nodos principales
 
 >[!NOTE]
+>
 Para poder ver la información de control de acceso, el usuario que ha iniciado sesión en el CRXDE Lite debe tener derechos para leer las entradas ACL.
 
 ### Pestaña Replicación {#replication-tab}
@@ -108,7 +109,7 @@ El **Botón Actualizar** actualiza la selección actual. Los cambios de otros us
 
 ### Botón Guardar todo {#save-all-button}
 
-El **Botón Guardar todo** guarda todos los cambios realizados. Hasta que elija guardar, los cambios son temporales y se perderán al salir de la consola.
+El **Botón Guardar todo** guarda todos los cambios realizados. Hasta que elija guardar, los cambios son temporales y se pierden al salir de la consola.
 
 * **Revertir** - Descarta todos los cambios realizados en el nodo seleccionado desde la última acción de guardado y vuelve a cargar el estado actual del repositorio para el nodo seleccionado
 * **Revertir todo** - Descarta todos los cambios realizados en todo el repositorio desde la última acción de guardado y vuelve a cargar el estado actual del repositorio
@@ -154,7 +155,7 @@ El **Botón Herramientas** es un menú desplegable con las siguientes herramient
 * **Privilegios** : para ver y agregar privilegios
 * **Probar control de acceso** : para probar el permiso para una ruta o principal determinados
 * **Exportar tipo de nodo** - para exportar tipos de nodo en el sistema como notación CDN
-* **Importar tipo de nodo** : para importar tipos de nodos mediante notación CDN.
+* **Importar tipo de nodo** : para importar tipos de nodos utilizando la notación CDN.
 
 ### Widget de inicio {#login-widget}
 
@@ -188,7 +189,9 @@ Para crear un nodo con un CRXDE Lite:
 Ahora puede adaptar el nodo a sus necesidades modificando propiedades o creando nuevos nodos.
 
 >[!NOTE]
+>
 La mayoría de las operaciones de edición, incluidas **Crear nodo**, guarda todos los cambios en la memoria y solo los almacena en el repositorio al guardarlos (mediante el [**Botón Guardar todo**](#save-all-button)). Sin embargo, algunas operaciones, como mover, persisten automáticamente.
+>
 El repositorio también lleva a cabo la validación con respecto a si el tipo de nodo del nodo principal permite el nodo recién creado al guardar los cambios. Si recibe un mensaje de error al guardar un nodo, compruebe si la estructura de contenido es válida (por ejemplo, no puede crear un nodo `nt:unstructured` nodo como elemento secundario de `nt:folder` node).
 
 ## Creación de una propiedad {#creating-a-property}

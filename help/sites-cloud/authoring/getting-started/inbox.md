@@ -2,10 +2,10 @@
 title: Su bandeja de entrada
 description: Administrar las tareas con la bandeja de entrada
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 78%
+source-wordcount: '909'
+ht-degree: 76%
 
 ---
 
@@ -30,7 +30,6 @@ Recibirá estas notificaciones en su propia bandeja de entrada, donde podrá ver
 >* [Proyectos](/help/sites-cloud/authoring/projects/overview.md)
 >* [Proyectos: trabajo con tareas](/help/sites-cloud/authoring/projects/tasks.md)
 >* [Flujos de trabajo](/help/sites-cloud/authoring/workflows/overview.md)
-
 
 ## Bandeja de entrada en el encabezado {#inbox-in-the-header}
 
@@ -86,26 +85,26 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
 
 * **Vista de calendario**
 
-   Para **Vista de calendario** puede configurar lo siguiente:
+  Para **Vista de calendario** puede configurar lo siguiente:
 
    * **Agrupar por**
    * **Programa** o **Ninguno**
    * **Tamaño de la tarjeta**
 
-   ![Ajustes de vista de calendario de la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+  ![Ajustes de vista de calendario de la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Vista de lista**
 
-   Para **Vista de lista** puede configurar el mecanismo de ordenación:
+  Para **Vista de lista** puede configurar el mecanismo de ordenación:
 
    * **Ordenar en**
    * **Orden**
 
-   ![Ajustes de vista de lista de la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+  ![Ajustes de vista de lista de la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   También puede delegar el calendario a otros usos, así como solicitar la delegación de otros usuarios y administrar las delegaciones.
+  También puede delegar el calendario a otros usos, así como solicitar la delegación de otros usuarios y administrar las delegaciones.
 
-   ![Configuración de delegación de vista de lista de bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![Configuración de delegación de vista de lista de bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## Acción en un elemento {#taking-action-on-an-item}
 
@@ -126,6 +125,7 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
       * Mostrar las propiedades del elemento.
       * Abrir un tablero o un asistente apropiado para llevar a cabo acciones adicionales.
       * Abrir documentación relacionada.
+
    * **Retroceder** a una etapa anterior
    * Consultar la carga útil de un flujo de trabajo
    * Crear un proyecto a partir de un elemento
@@ -135,7 +135,6 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
    >Para obtener más información, consulte lo siguiente:
    >
    >* Elementos de flujo de trabajo - [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
-
 
 2. Dependiendo del elemento seleccionado, se inicia una acción; por ejemplo:
 
@@ -152,7 +151,6 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
    * Confirmar la acción adecuada; por ejemplo, Reasignar.
    * Cancelar la acción
    * Seleccione la flecha hacia atrás para volver a la bandeja de entrada; por ejemplo, si se ha abierto un asistente de acciones o una página de documentación, puede volver a la bandeja de entrada.
-
 
 ## Creación de una tarea {#creating-a-task}
 
@@ -176,7 +174,7 @@ Desde la bandeja de entrada puede crear tareas:
 
    * **Avanzado**
 
-      * **Nombre:**: este se usa para crear la dirección URL; si está en blanco, se basa en el **Título**.
+      * **Nombre**: se utiliza para formar la dirección URL; si está en blanco, se basa en **Título**.
 
    ![Opciones avanzadas de añadir tarea en la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -205,9 +203,11 @@ Para determinadas tareas, puede crear un [Proyecto](/help/sites-cloud/authoring/
       * **Fecha inicial**
       * **Fecha de vencimiento**
       * **Usuario** Función y
+
    * **Avanzado**
 
       * **Nombre**
+
    >[!NOTE]
    >
    >Consulte [Creación de un proyecto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) para obtener información completa.

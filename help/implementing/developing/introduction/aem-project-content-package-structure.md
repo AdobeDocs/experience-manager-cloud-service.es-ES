@@ -2,9 +2,9 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para su implementación en el Cloud Service de Adobe Experience Manager.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2927'
 ht-degree: 12%
 
 ---
@@ -74,7 +74,7 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
 
 >[!NOTE]
 >
->Se debe implementar el mismo código en todos los entornos. Esto es necesario para garantizar que las validaciones de nivel de confianza en el entorno de ensayo también estén en producción. Para obtener más información, consulte la sección sobre [Modos de ejecución](/help/implementing/deploying/overview.md#runmodes).
+>Se debe implementar el mismo código en todos los entornos. Este código es necesario para garantizar que las validaciones de nivel de confianza en el entorno de ensayo también estén en producción. Para obtener más información, consulte la sección sobre [Modos de ejecución](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Paquetes de contenido
@@ -93,11 +93,11 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
 
 + El `all` es un paquete de contenedor que SOLAMENTE incluye artefactos implementables, el archivo Jar del paquete OSGI, `ui.apps`, `ui.config` y `ui.content` paquetes como incrustaciones. El `all` el paquete no debe tener **cualquier contenido o código** por sí solo, sino que delega toda la implementación en el repositorio a sus subpaquetes o archivos Jar del paquete OSGi.
 
-   Los paquetes ahora se incluyen usando Maven [Configuración incrustada del complemento Maven del paquete FileVault](#embeddeds), en lugar de `<subPackages>` configuración.
+  Los paquetes ahora se incluyen usando Maven [Configuración incrustada del complemento Maven del paquete FileVault](#embeddeds), en lugar de `<subPackages>` configuración.
 
-   Para implementaciones de Experience Manager complejas, puede ser deseable crear varias `ui.apps`, `ui.config` y `ui.content` AEM proyectos/paquetes que representan sitios o inquilinos específicos en el área de trabajo de la. Si esto sucede, asegúrese de que se respeta la división entre contenido mutable e inmutable, y de que los paquetes de contenido requeridos y los archivos Jar del paquete OSGi están incrustados como subpaquetes en el `all` paquete de contenido de contenedor.
+  Para implementaciones de Experience Manager complejas, puede ser deseable crear varias `ui.apps`, `ui.config` y `ui.content` AEM proyectos/paquetes que representan sitios o inquilinos específicos en el área de trabajo de la. Si esto sucede, asegúrese de que se respeta la división entre contenido mutable e inmutable, y de que los paquetes de contenido requeridos y los archivos Jar del paquete OSGi están incrustados como subpaquetes en el `all` paquete de contenido de contenedor.
 
-   Por ejemplo, una estructura de paquete de contenido de implementación compleja podría tener este aspecto:
+  Por ejemplo, una estructura de paquete de contenido de implementación compleja podría tener este aspecto:
 
    + `all` paquete de contenido incrusta los siguientes paquetes para crear un único artefacto de implementación
       + `common.ui.apps` implementa el código requerido por **ambos** Sitio A y sitio B
@@ -231,12 +231,12 @@ Desglosar esta estructura de carpetas:
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
 
-   >[!WARNING]
-   >
-   >De forma predeterminada, las carpetas incrustadas de subpaquetes reciben el nombre del sufijo de `-packages`. Esto garantiza que el código de implementación y los paquetes de contenido **no se implementen** en las carpetas de destino de ningún subpaquete `/apps/<app-name>/...` que tenga como resultado un comportamiento de instalación destructivo y cíclico.
+  >[!WARNING]
+  >
+  >De forma predeterminada, las carpetas incrustadas de subpaquetes reciben el nombre del sufijo de `-packages`. Esto garantiza que el código de implementación y los paquetes de contenido **no se implementen** en las carpetas de destino de ningún subpaquete `/apps/<app-name>/...` que tenga como resultado un comportamiento de instalación destructivo y cíclico.
 
 + La carpeta de tercer nivel debe ser
-   `application`, `content` o `container`
+  `application`, `content` o `container`
    + El `application` La carpeta contiene paquetes de código
    + El `content` la carpeta contiene paquetes de contenido
    + El `container` la carpeta contiene cualquier [paquetes de aplicaciones adicionales](#extra-application-packages) AEM que puede incluir la aplicación de la.
@@ -549,7 +549,7 @@ Si hay varios `/apps/*-packages` se utilizan en los destinos incrustados, entonc
 
 >[!WARNING]
 >
->Añadir más repositorios Maven puede ampliar los tiempos de compilación de Maven, ya que se comprobarán las dependencias de otros repositorios Maven.
+>Añadir más repositorios Maven puede ampliar los tiempos de compilación de Maven, ya que se comprueban las dependencias de otros repositorios Maven.
 
 En el del proyecto del reactor `pom.xml`, agregue cualquier directiva de repositorio Maven pública de terceros que sea necesaria. El completo `<repository>` La configuración de debe estar disponible en el proveedor de repositorios de terceros.
 

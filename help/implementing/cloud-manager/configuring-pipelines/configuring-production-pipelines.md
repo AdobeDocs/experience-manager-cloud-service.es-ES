@@ -3,10 +3,10 @@ title: Configurar canalizaciones de producción
 description: Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 100%
+source-wordcount: '1513'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
    **Comportamiento de errores de métricas importantes**: durante la configuración o edición de la canalización, el **Administrador de implementación** tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad. Las opciones disponibles son:
 
    * **Preguntar cada vez**: esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
-   * **Produjo un error inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+   * **Fallo inmediatamente** : si se selecciona, la canalización se cancela siempre que se produce un error importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
    * **Continuar inmediatamente**: si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
    ![Configuración de canalización de producción](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -73,6 +73,7 @@ Para finalizar la configuración de la canalización de producción de código f
 1. En el **Código fuente**, debe definir las siguientes opciones.
 
    * **Repositorio**: esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
+
    >[!TIP]
    > 
    >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
@@ -94,13 +95,14 @@ Una canalización de código de pila completa implementa simultáneamente compil
 
 >[!NOTE]
 >
->Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección se desactivará.
+>Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección está desactivada.
 
 Para finalizar la configuración de la canalización de producción de código de pila completa, siga estos pasos.
 
 1. En el **Código fuente**, debe definir las siguientes opciones.
 
    * **Repositorio**: esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
+
    >[!TIP]
    > 
    >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
@@ -124,18 +126,18 @@ Para finalizar la configuración de la canalización de producción de código d
 
    ![Definición de una ruta para la auditoría de experiencias](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. Haga clic en **Agregar página** y la ruta se completará automáticamente con la dirección de su entorno y se agregará a la tabla de rutas.
+1. Clic **Agregar página** y la ruta se completa automáticamente con la dirección de su entorno y se agrega a la tabla de rutas.
 
    ![Guardar ruta de acceso a la tabla](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
 1. Siga agregando rutas según sea necesario repitiendo los dos pasos anteriores.
 
    * Puede agregar un máximo de 25 rutas.
-   * Si no define ninguna ruta, la página principal del sitio se incluirá en la auditoría de experiencias de forma predeterminada.
+   * Si no define ninguna ruta, la página principal del sitio se incluye en la auditoría de experiencias de forma predeterminada.
 
 1. Haga clic en **Guardar** para guardar la canalización.
 
-Las rutas configuradas para la auditoría de experiencias se enviarán al servicio y se evaluarán según las pruebas de rendimiento, accesibilidad, SEO (Optimización del motor de búsqueda), prácticas recomendadas y PWA (Aplicación web progresiva) cuando se ejecute la canalización. Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
+Las rutas configuradas para la auditoría de experiencias se envían al servicio y se evalúan según las pruebas de rendimiento, accesibilidad, SEO (Optimización del motor de búsqueda), prácticas recomendadas y PWA (Aplicación web progresiva) cuando se ejecuta la canalización. Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
@@ -148,6 +150,7 @@ Para finalizar la configuración de la canalización de producción de código d
 1. En el **Código fuente**, debe definir las siguientes opciones.
 
    * **Repositorio**: esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
+
    >[!TIP]
    > 
    >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
@@ -174,7 +177,7 @@ La canalización se guarda y ahora puede [administrar las canalizaciones](managi
 
 Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
 
-Consulte el documento [Desarrollar Sites con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
+Consulte el documento [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
 
 ## Omitir paquetes de Dispatcher {#skip-dispatcher-packages}
 

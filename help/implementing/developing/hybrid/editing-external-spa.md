@@ -2,9 +2,9 @@
 title: Edición de un SPA externo dentro de AEM
 description: SPA AEM En este documento se describen los pasos recomendados para cargar una instancia independiente a una instancia de, agregar secciones de contenido editables y habilitar la creación de contenido.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2456'
+source-wordcount: '2447'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Los requisitos previos son simples.
 
 * AEM Asegúrese de que una instancia de se está ejecutando localmente.
 * AEM SPA Creación de un proyecto de base mediante [AEM El arquetipo del proyecto de la.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)
-   * AEM SPA Esto formará la base del proyecto de la, que se actualizará para incluir el recurso externo de la.
+   * Forms AEM SPA es la base del proyecto de, que se actualiza para incluir la dirección de correo electrónico externa
    * Para los ejemplos de este documento, se utiliza el punto de partida de [SPA el proyecto de WKND.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)
 * SPA Tenga a mano el React externo de trabajo que desea integrar.
 
@@ -81,7 +81,7 @@ En este ejemplo, la variable `ModelManager` se ha inicializado y un espacio de `
 
 ### AEM Componentes de hoja autorizables {#authorable-leaf-components}
 
-1. AEM Cree/identifique un componente de para el que se creará un componente de React con autoridad. En este ejemplo, se utiliza el componente de texto del proyecto WKND.
+1. AEM Cree/identifique un componente de para el que se cree un componente React con autoridad. En este ejemplo, se utiliza el componente de texto del proyecto WKND.
 
    ![Componente de texto de WKND](assets/external-spa-text-component.png)
 
@@ -237,7 +237,7 @@ El `TestPage` tiene el siguiente aspecto después de agregar el componente virtu
 >
 >Asegúrese de que `AEMText` el componente tiene su `resourceType` establezca en la configuración para habilitar esta función.
 
-AEM Ahora puede implementar los cambios para que siga los pasos de la sección que se describen a continuación: [AEM Verifique la edición del contenido de texto en la.](#verify-text-edit) Se mostrará un marcador de posición para el actualmente no existente `text_20` nodo.
+AEM Ahora puede implementar los cambios para que siga los pasos de la sección que se describen a continuación: [AEM Verifique la edición del contenido de texto en la.](#verify-text-edit) Se muestra un marcador de posición para el actualmente no existente `text_20` nodo.
 
 ![El nodo text_20 en aem](assets/external-spa-text20-aem.png)
 
@@ -282,13 +282,13 @@ Una vez que el autor agrega un componente secundario al contenedor, el nuevo nod
 
 ![Contenedor con contenido en JCR](assets/container-with-content-jcr.png)
 
-Ahora se pueden agregar más componentes y contenido al contenedor según lo requiera el autor, y los cambios se mantendrán.
+Ahora se pueden agregar más componentes y contenido al contenedor cuando el autor lo requiera y los cambios se mantengan.
 
 #### Requisitos y limitaciones {#container-limitations}
 
 Existen varios requisitos para agregar contenedores virtuales, así como algunas limitaciones.
 
-* La directiva para determinar qué componentes se pueden agregar se heredará del contenedor principal.
+* La directiva para determinar qué componentes se pueden agregar se hereda del contenedor principal.
 * AEM El elemento principal inmediato del contenedor que se va a crear ya debe existir en el espacio de trabajo de la.
    * Si el contenedor `root/responsivegrid` AEM ya existe en el contenedor de, se puede crear un nuevo contenedor proporcionando la ruta `root/responsivegrid/newContainer`.
    * Sin embargo `root/responsivegrid/newContainer/secondNewContainer` no es posible.
@@ -326,7 +326,7 @@ SPA Por ejemplo, supongamos que tenemos un en el que la aplicación se procesa d
 
 SPA Si la aplicación de React externa tiene varias páginas, [puede utilizar el enrutamiento para determinar la página o el componente que se va a procesar.](/help/implementing/developing/hybrid/routing.md) El caso de uso básico es hacer coincidir la dirección URL activa con la ruta proporcionada para una ruta. AEM Para habilitar la edición en estas aplicaciones habilitadas para enrutamiento, la ruta con la que se debe hacer coincidir debe transformarse para dar cabida a información específica de la aplicación de enrutamiento de tipo de datos.
 
-En el siguiente ejemplo tenemos una aplicación React simple con dos páginas. La página que se va a procesar se determina comparando la ruta proporcionada al enrutador con la dirección URL activa. Por ejemplo, si estamos en `mydomain.com/test`, `TestPage` se procesarán.
+En el siguiente ejemplo tenemos una aplicación React simple con dos páginas. La página que se va a procesar se determina comparando la ruta proporcionada al enrutador con la dirección URL activa. Por ejemplo, si estamos en `mydomain.com/test`, `TestPage` se procesa.
 
 ![SPA Enrutamiento en un entorno externo](assets/external-spa-routing.png)
 
@@ -351,9 +351,8 @@ AEM SPA Para habilitar la edición dentro de los parámetros para este ejemplo, 
       * La ruta necesaria para el enrutamiento
       * AEM SPA Dirección URL de origen de la instancia de la en la que se edita la
       * AEM La raíz del proyecto en el tiempo de ejecución, tal como se determina en el primer paso, es la siguiente:
+
    * Estos valores se pueden configurar como variables de entorno para una mayor flexibilidad.
-
-
 
 1. AEM Compruebe la edición de la página en la.
 

@@ -2,7 +2,7 @@
 title: Configuración de IMS que usar al integrar con Adobe Analytics
 description: Obtenga más información acerca de la configuración de IMS que usar al integrar con Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 100%
@@ -74,9 +74,9 @@ Abra Adobe Developer Console para crear un proyecto con Adobe Analytics que usar
 1. Se mostrarán todos los proyectos que tenga. Seleccione **Crear nuevo proyecto**. La ubicación y el uso dependerán de lo siguiente:
 
    * Si todavía no tiene ningún proyecto, **Crear nuevo proyecto** estará en el centro, abajo.
-      ![Creación de un nuevo proyecto: primer proyecto](assets/integration-analytics-ims-02.png)
+     ![Creación de un nuevo proyecto: primer proyecto](assets/integration-analytics-ims-02.png)
    * Si ya tiene proyectos, estos se enumerarán y **Crear nuevo proyecto** estará en la parte superior derecha.
-      ![Creación de un nuevo proyecto: varios proyectos](assets/integration-analytics-ims-03.png)
+     ![Creación de un nuevo proyecto: varios proyectos](assets/integration-analytics-ims-03.png)
 
 
 1. Seleccione **Añadir a proyecto** seguido de **API**:
@@ -176,7 +176,6 @@ Para confirmar que la configuración funciona según lo esperado:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
 
-
 1. Seleccione la configuración.
 1. Seleccione **Comprobar estado** en la barra de herramientas, seguido de **Comprobar**.
 
@@ -198,7 +197,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
    You can also select the required template (if more than one is available).
 

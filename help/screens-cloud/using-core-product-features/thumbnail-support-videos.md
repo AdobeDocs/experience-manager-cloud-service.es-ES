@@ -3,9 +3,9 @@ title: Compatibilidad con miniaturas para vídeos en pantallas as a Cloud Servic
 description: En esta página se describe cómo añadir compatibilidad con miniaturas para vídeos en Pantallas as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -62,13 +62,13 @@ Siga los pasos a continuación para utilizar las miniaturas en los vídeos:
 
 1. Haga clic en **Previsualizar**.
 
-1. Si se establece un vídeo en el componente, se reproducirá el vídeo. Si no es así, y la miniatura está configurada, la miniatura se reproducirá. De lo contrario, el componente se considera no configurado y se omitirá.
+1. Si se establece un vídeo en el componente, se reproduce el vídeo. Si no es así, y la miniatura está configurada, la miniatura se reproduce. De lo contrario, el componente se considera no configurado y se omite.
 
 ## Casos de uso admitidos al usar la miniatura en vídeos {#understand-use-case}
 
 La miniatura en vídeos admite los siguientes casos de uso:
 
-* Se omitirá un componente de vídeo sin configurar nada.
+* Se omite un componente de vídeo sin nada configurado.
 
 * Un componente de vídeo solo con el conjunto de miniaturas reproducirá la miniatura.
 

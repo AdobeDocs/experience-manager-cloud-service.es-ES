@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo administrar y resolver conflictos 
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ Cuando existen páginas en conflicto (en las ramas de modelo y Live Copy), MSM l
 Para garantizar que el despliegue no esté bloqueado, las definiciones posibles pueden incluir las siguientes:
 
 * Qué página (modelo o Live Copy) tendrá prioridad durante el despliegue
-* Qué páginas se cambiarán de nombre (y cómo)
+* Qué páginas se cambian de nombre y cómo
 * Cómo afectará esto a cualquier contenido publicado
 
 El comportamiento predeterminado de AEM es que el contenido publicado no se verá afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, dicho contenido se publicará después de la gestión y el despliegue del conflicto.
@@ -35,11 +35,11 @@ En las secciones siguientes utilizamos el ejemplo de la página nueva `b`, cread
 
 * modelo: `/b`
 
-   Una página maestra con una página secundaria, `bp-level-1`
+  Una página maestra con una página secundaria, `bp-level-1`
 
 * Live Copy: `/b`
 
-   Una página creada manualmente en la rama de Live Copy con una página secundaria, `lc-level-1`
+  Una página creada manualmente en la rama de Live Copy con una página secundaria, `lc-level-1`
 
    * Se activa durante la publicación como `/b`, junto con la página secundaria
 
@@ -83,13 +83,13 @@ Este controlador de conflictos da prioridad al modelo. Por ejemplo, la página d
 
 * Live Copy: `/b`
 
-   Se mueve dentro de la Live Copy a `/b_msm_moved`. Esto actúa como una copia de seguridad y garantiza que no se pierda contenido.
+  Se mueve dentro de la Live Copy a `/b_msm_moved`. Esto actúa como una copia de seguridad y garantiza que no se pierda contenido.
 
    * `lc-level-1` no se mueve.
 
 * Modelo: `/b`
 
-   Se despliega en la página Live Copy `/b`.
+  Se despliega en la página Live Copy `/b`.
 
    * `bp-level-1` se despliega en la Live Copy.
 
@@ -127,11 +127,11 @@ En este caso, Live Copy tiene prioridad. La página de modelo `/b` no se copia y
 
 * Modelo: `/b`
 
-   No se copia en absoluto y se ignora.
+  No se copia en absoluto y se ignora.
 
 * Live Copy: `/b`
 
-   Permanece igual.
+  Permanece igual.
 
 #### Después del despliegue {#after-rollout-no-conflict}
 

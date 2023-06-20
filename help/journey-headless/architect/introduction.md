@@ -2,10 +2,10 @@
 title: 'Modelado de contenido para AEM como CMS sin encabezado: introducción'
 description: Introducción al uso de las funciones de Adobe Experience Manager as a Cloud Service como CMS sin encabezado para modelar contenido para su proyecto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Este documento le ayuda a comprender la entrega de contenido sin encabezado, có
 
 ## Entrega de contenido de pila completa {#full-stack}
 
-Desde que han surgido los sistemas de administración de contenido (CMS) a gran escala, fáciles de usar, las organizaciones los han aprovechado como una ubicación central que permite administrar mensajes, marcas y comunicaciones. El uso de CMS como punto central para administrar experiencias ha mejorado la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
+Desde el surgimiento de los sistemas de administración de contenido (CMS) fáciles de usar y a gran escala, las organizaciones los han utilizado como una ubicación central para administrar la mensajería, la marca y las comunicaciones. El uso de CMS como punto central para administrar experiencias ha mejorado la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
 
 ![El CMS de pila completa clásico](/help/journey-headless/developer/assets/full-stack.png)
 

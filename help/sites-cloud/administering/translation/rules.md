@@ -4,10 +4,10 @@ description: Descubra cómo las reglas de traducción identifican el contenido q
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 100%
+source-wordcount: '1294'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ Las reglas de traducción identifican el contenido que se debe traducir para pá
 
 >[!TIP]
 >
->Si acaba de empezar a traducir contenido, consulte nuestro [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia con la traducción o con AEM.
+>Si es nuevo traduciendo contenido, consulte nuestra [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
 
 ## Fragmentos de contenido y reglas de traducción {#content-fragments}
 
@@ -125,11 +125,11 @@ El archivo `translation_rules.xml` consta de un elemento `nodelist` con varios e
 
 ```xml
 <nodelist>
-     <node path="/content”>
+     <node path="/content">
            <property name="text" />
      </node>
-     <node path=“/content/mysite/en”>
-          <property name=“text” translate=“false" />
+     <node path="/content/mysite/en">
+          <property name="text" translate="false" />
      </node>
 <nodelist>
 ```
@@ -142,7 +142,7 @@ Por ejemplo, las siguientes reglas hacen que todo el contenido en `text` propied
 
 ```xml
 <nodelist>
-    <node path="/content”>
+    <node path="/content">
      <filter>
    <node containsProperty="draft" propertyValue="true" />
      </filter>
@@ -163,7 +163,7 @@ Para acceder a ella:
 
 En la IU de las reglas de traducción puede:
 
-1. **Agregar contexto**, lo que le permite agregar una ruta.
+1. **Agregar contexto**, que le permite añadir una ruta.
 
    ![Agregar contexto de traducción](../assets/add-translation-context.png)
 
@@ -186,7 +186,7 @@ Hay cuatro atributos que puede cambiar mediante la IU:
 
 **`isDeep`** es aplicable en los filtros de nodo y es true de forma predeterminada. Comprueba si el nodo (o sus antecesores) contiene esa propiedad con el valor de propiedad especificado en el filtro. Si es false, solo lo comprueba en el nodo actual.
 
-Por ejemplo, los nodos secundarios se agregan a un trabajo de traducción incluso cuando el nodo principal tiene la propiedad `draftOnly` establecida en true para marcar el contenido de borrador. Aquí `isDeep` entra en juego y comprueba si los nodos principales tienen la propiedad `draftOnly` como true y excluye esos nodos secundarios.
+Por ejemplo, los nodos secundarios se añaden a un trabajo de traducción incluso cuando el nodo principal tiene la propiedad `draftOnly` establézcalo en true para marcar el contenido de borrador. Aquí `isDeep` entra en juego y comprueba si los nodos principales tienen la propiedad `draftOnly` como true y excluye esos nodos secundarios.
 
 En el editor, puede marcar o desmarcar **isDeep** en la pestaña **Filtros**.
 

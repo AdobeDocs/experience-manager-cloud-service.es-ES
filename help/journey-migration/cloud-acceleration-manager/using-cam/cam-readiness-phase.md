@@ -2,9 +2,9 @@
 title: Fase de preparación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1055'
 ht-degree: 5%
 
 ---
@@ -83,7 +83,6 @@ Complete los siguientes pasos:
    >* La opción **Guardar como PDF** se recomienda y admite para la funcionalidad anterior.
    >* Si se utiliza el botón de impresión del explorador, solo se imprimirá una página.
 
-
    ![imagen](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Uso de Ver línea de tendencia {#trendline-view-cam}
@@ -121,7 +120,6 @@ Siga los pasos a continuación para ver los informes de la opción de línea de 
    >Verá dos gráficos que muestran la tendencia del:
    >1. **Tendencia de conclusiones del informe**
    >1. **Componentes personalizados y tendencia de la plantilla**
-
    >
    >Puede añadir o cambiar la vista gráfica mediante la lista desplegable, como se muestra en la figura siguiente:
    >![imagen](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
@@ -138,7 +136,6 @@ Explore las siguientes tarjetas disponibles en la página Informe de análisis d
 >* haga clic en cada tarjeta para abrir su pestaña asociada
 >* marcar todas las fichas de informe (incluido el filtrado) para compartirlas o recuperarlas posteriormente
 >* utilice el icono de detalles para ver los detalles de cada búsqueda de informe
-
 
 #### Propiedades del informe {#report-properties}
 
@@ -183,7 +180,7 @@ Puede revisar la siguiente información en esta pestaña:
 * Evaluación
 * Consideraciones de migración de contenido
 
-   ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Uso de la tarjeta de planificación y configuración {#planning-setup}
 

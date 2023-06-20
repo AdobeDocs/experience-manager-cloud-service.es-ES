@@ -2,10 +2,10 @@
 title: Repositorios de Cloud Manager
 description: Obtenga información sobre cómo crear, ver y eliminar repositorios de Git en Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '580'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Siga estos pasos para ver y administrar repositorios en Cloud Manager.
 
    ![Cuadro de diálogo Agregar repositorio](/help/implementing/cloud-manager/assets/repos/repo-1.png)
 
-Cuando se cierre el asistente, el nuevo repositorio se mostrará en la tabla.
+Cuando se cierra el asistente, el nuevo repositorio se muestra en la tabla.
 
 Puede seleccionar el repositorio en la tabla, hacer clic en el botón de puntos suspensivos y seleccionar **Copiar URL del repositorio**, **Ver y actualizar** o **Eliminar**.
 
@@ -51,7 +51,7 @@ Hay un único repositorio principal o una rama para una canalización determinad
 Al eliminar un repositorio:
 
 * Se impide que el nombre del repositorio eliminado se pueda utilizar para nuevos repositorios que se puedan crear en el futuro.
-   * El mensaje de error `Repository name should be unique within organization.` aparecerá en estos casos.
+   * El mensaje de error `Repository name should be unique within organization.` se muestra en estos casos.
 * Se hace que el repositorio eliminado no esté disponible en Cloud Manager y no esté disponible para vincularlo a una canalización.
 
 Siga estos pasos para eliminar un repositorio en Cloud Manager.

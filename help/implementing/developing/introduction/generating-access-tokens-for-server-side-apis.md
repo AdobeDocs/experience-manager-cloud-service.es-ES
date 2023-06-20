@@ -2,9 +2,9 @@
 title: Generación de los tókenes de acceso para las API del servidor
 description: AEM Obtenga información sobre cómo facilitar la comunicación entre un servidor de terceros y el as a Cloud Service de la mediante la generación de un token JWT seguro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: dd869397feca593f93ee8ed5030828e01cc45c4d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2123'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ El flujo de servidor a servidor incluye los siguientes pasos:
 
 AEM Los usuarios con acceso a la consola de desarrollador as a Cloud Service de la verán la pestaña integraciones en Developer Console para un entorno determinado. AEM Un usuario con la función de administrador de entorno as a Cloud Service de puede crear, ver o administrar credenciales.
 
-Haciendo clic en **Crear nueva cuenta técnica** botón, se creará un nuevo conjunto de credenciales que incluye el id de cliente, el secreto de cliente, la clave privada, el certificado y la configuración para los niveles de autor y publicación del entorno, independientemente de la selección del pod.
+Haciendo clic en **Crear nueva cuenta técnica** botón, se crea un nuevo conjunto de credenciales que incluye el id de cliente, el secreto de cliente, la clave privada, el certificado y la configuración para los niveles de autor y publicación del entorno, independientemente de la selección del pod.
 
 ![Creación de una nueva cuenta técnica](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -217,9 +217,9 @@ Para lograrlo, puede hacer lo siguiente:
 
 * Utilice el **Añadir certificado** botón debajo de **Integraciones** - **Cuentas técnicas** en Developer Console, como se muestra a continuación
 
-   ![Actualización de credenciales](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
+  ![Actualización de credenciales](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* Después de pulsar el botón, se generará un conjunto de credenciales que incluye un nuevo certificado. AEM Instale las nuevas credenciales en su servidor fuera de la red y asegúrese de que la conectividad es la esperada, sin eliminar las credenciales antiguas 
+* Después de pulsar el botón, se genera un conjunto de credenciales que incluye un nuevo certificado. AEM Instale las nuevas credenciales en su servidor fuera de la red y asegúrese de que la conectividad es la esperada, sin eliminar las credenciales antiguas 
 * Asegúrese de que se utilicen las nuevas credenciales en lugar de las antiguas al generar el token de acceso
 * AEM Opcionalmente, puede revocar (y luego eliminar) el certificado anterior para que ya no se pueda utilizar para autenticarse con el as a Cloud Service de la.
 
@@ -229,7 +229,7 @@ Si la clave privada está en peligro, debe crear credenciales con un nuevo certi
 
 Para ello, siga estos pasos:
 
-1. En primer lugar, añada la nueva clave. Esto generará credenciales con una nueva clave privada y un nuevo certificado. La nueva clave privada se marcará en la interfaz de usuario como **corriente** y, por lo tanto, se utilizará para todas las nuevas credenciales de esta cuenta técnica a partir de ahora. Tenga en cuenta que las credenciales asociadas con las claves privadas anteriores seguirán siendo válidas hasta que se revoquen. Para conseguirlo, presione los tres puntos (**...**) en su cuenta técnica actual y pulse **Añadir nueva clave privada**:
+1. En primer lugar, añada la nueva clave. Esta clave genera credenciales con una nueva clave privada y un nuevo certificado. La nueva clave privada se marca en la interfaz de usuario como **corriente** y, por lo tanto, se utilizará para todas las nuevas credenciales de esta cuenta técnica a partir de ahora. Tenga en cuenta que las credenciales asociadas con las claves privadas anteriores seguirán siendo válidas hasta que se revoquen. Para conseguirlo, presione los tres puntos (**...**) en su cuenta técnica actual y pulse **Añadir nueva clave privada**:
 
    ![Añadir nueva clave privada](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
@@ -237,7 +237,7 @@ Para ello, siga estos pasos:
 
    ![Confirmar la adición de una nueva clave privada](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   Se abrirá una nueva pestaña de exploración con las nuevas credenciales y la interfaz de usuario se actualizará para mostrar ambas claves privadas, con la nueva marcada como **corriente**:
+   Se abre una nueva pestaña de exploración con las nuevas credenciales y la interfaz de usuario se actualiza para mostrar ambas claves privadas con la nueva marcada como **corriente**:
 
    ![Claves privadas en la interfaz de usuario](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 

@@ -2,10 +2,10 @@
 title: New Relic One
 description: Obtenga información sobre el servicio de supervisión del rendimiento de la aplicación (APM) de New Relic One para AEM as a Cloud Service y cómo puede acceder a él.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 6a633881be57b79ee167c3a16d514b903bc460ad
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 100%
+source-wordcount: '1595'
+ht-degree: 92%
 
 ---
 
@@ -147,7 +147,7 @@ Si no recibe un correo electrónico de New Relic, haga lo siguiente:
 Las siguientes limitaciones se aplican a la adición de usuarios a New Relic One:
 
 * Se puede agregar un máximo de 30 usuarios. Si se ha alcanzado el número máximo de usuarios, elimine usuarios para poder agregar nuevos.
-* Los usuarios agregados a New Relic serán de tipo **Restringido** consulte [la documentación de New Relic para obtener más información.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
+* Los usuarios agregados a New Relic son del tipo **Restringido**, consulte [Consulte la documentación de New Relic para obtener más información.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service solo ofrece la solución de APM New Relic One y no proporciona soporte para alertas, registros o integraciones de la API.
 
 Para obtener más ayuda o instrucciones adicionales sobre las ofertas de New Relic One para su programa de AEM as a Cloud Service, abra un ticket de asistencia a través del [Portal de asistencia de AEM](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
@@ -172,7 +172,7 @@ Importante:
 
 ### ¿Quién puede acceder a los datos del servicio en la nube de New Relic One? {#access-new-relic-cloud}
 
-Se concederá acceso de lectura completo hasta para 30 miembros de su equipo. El acceso de lectura incluirá todas las métricas de APM recopiladas por el agente de New Relic One.
+Se concede acceso de lectura completo hasta para 30 miembros de su equipo. El acceso de lectura incluirá todas las métricas de APM recopiladas por el agente de New Relic One.
 
 ### ¿Se admite la configuración de SSO personalizada? {#custom-sso}
 
@@ -184,7 +184,7 @@ New Relic One es la nueva plataforma de observabilidad de New Relic y permite al
 
 New Relic One ofrece a los usuarios la capacidad de buscar en todas las cuentas donde tengan acceso y visualizar los datos de todos los servicios y hosts de un solo vistazo.
 
-Mientras que el soporte de Adobe supervisará la aplicación de AEM as a Cloud Service mediante New Relic One y otras herramientas internas como parte de su servicio, sus equipos pueden seguir aprovechando New Relic para servicios e infraestructura alojados localmente. Podrán visualizar los datos tanto de la cuenta de Adobe New Relic One como de las cuentas de New Relic administradas por el cliente.
+Mientras que la compatibilidad con el Adobe AEM supervisará la aplicación as a Cloud Service de la mediante New Relic One y otras herramientas internas como parte del servicio, sus equipos pueden seguir utilizando New Relic para servicios e infraestructura alojados localmente. Pueden visualizar los datos tanto de la cuenta de Adobe de New Relic One como de las cuentas de New Relic administradas por el cliente.
 
 >[!NOTE]
 >

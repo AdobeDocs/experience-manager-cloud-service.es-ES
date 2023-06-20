@@ -2,10 +2,10 @@
 title: Configuraciones y el explorador de configuración
 description: AEM AEM Comprenda las configuraciones de la y cómo administran la configuración del espacio de trabajo en las instancias de trabajo de.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 3be936be09f205a73dd053ac28df936d58e50919
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 6%
+source-wordcount: '1492'
+ht-degree: 4%
 
 ---
 
@@ -62,7 +62,7 @@ AEM El Explorador de configuración permite a un administrador crear, administra
 
 >[!NOTE]
 >
->Solo es posible crear configuraciones utilizando el Explorador de configuración si el usuario tiene `admin` derechos. `admin` también se requieren derechos de para asignar derechos de acceso a la configuración o modificar de otro modo una configuración.
+>Solo es posible crear configuraciones utilizando el Explorador de configuración si el usuario tiene `admin` derechos. `admin` también se requieren derechos de acceso para asignar derechos de acceso a la configuración o modificar una configuración de otro modo.
 
 #### Creación de una configuración {#creating-a-configuration}
 
@@ -75,8 +75,8 @@ AEM Es muy sencillo crear una nueva configuración en el explorador de configura
    ![Crear configuración](assets/configuration-create.png)
 
    * El **Título** debe ser descriptivo.
-   * El **Nombre** se convertirá en el nombre de nodo en el repositorio.
-      * Se generará automáticamente en función del título y se ajustará según las [convenciones de nomenclatura de AEM.](naming-conventions.md)
+   * El **Nombre** se convierte en el nombre de nodo del repositorio.
+      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de.](naming-conventions.md)
       * Se puede modificar si es necesario.
 1. Compruebe el tipo de configuraciones que desea permitir.
    * [Segmentos de Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -91,7 +91,7 @@ AEM Es muy sencillo crear una nueva configuración en el explorador de configura
 
 #### Edición de configuraciones y sus derechos de acceso {#access-rights}
 
-Si considera las configuraciones como espacios de trabajo, se pueden definir derechos de acceso en esas configuraciones para exigir quién puede acceder a esos espacios de trabajo y quién no.
+Si considera las configuraciones como espacios de trabajo, se pueden establecer derechos de acceso en esas configuraciones para exigir quién puede acceder a esos espacios de trabajo y quién no.
 
 1. AEM Inicie sesión en el as a Cloud Service y, en el menú principal, seleccione **Herramientas** -> **General** -> **Explorador de configuración**.
 1. Seleccione la configuración que desee modificar y, a continuación, toque o haga clic en **Propiedades** en la barra de herramientas.

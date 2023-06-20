@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4378'
+source-wordcount: '4377'
 ht-degree: 11%
 
 ---
@@ -30,7 +30,6 @@ Al organizar una colección de recursos, por ejemplo, todos los `Nature` imágen
 >
 >* Uso compartido de una carpeta de recursos del tipo `sling:OrderedFolder`, no es compatible al compartir con el Experience Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Ordenado] al crear una carpeta.
 >* El Experience Manager no permite el uso de `subassets` palabra como nombre de una carpeta. Es una palabra clave reservada para nodos que contienen subrecursos para recursos compuestos
-
 
 1. Vaya al lugar de la carpeta de recursos digitales en el que desea crear una carpeta nueva. En el menú, haga clic en **[!UICONTROL Crear]**. Seleccionar **[!UICONTROL Nueva carpeta]**.
 1. En el **[!UICONTROL Título]** , proporcione un nombre de carpeta. De forma predeterminada, DAM utiliza el título que ha proporcionado como nombre de la carpeta. Una vez creada la carpeta, puede anular el valor predeterminado y especificar otro nombre de carpeta.
@@ -184,11 +183,11 @@ Se conservan las demás propiedades e información de metadatos. No se crea una 
    * Especifique el nombre del recurso una vez que se haya movido. A continuación, toque o haga clic **[!UICONTROL Siguiente]** para continuar.
 
    * Pulse o haga clic en **[!UICONTROL Cancelar]** para detener el proceso.
+
    >[!NOTE]
    >
    >* Puede especificar el mismo nombre para el recurso si no hay ningún recurso con ese nombre en la nueva ubicación. Sin embargo, debe utilizar un nombre diferente si mueve el recurso a una ubicación en la que exista un recurso con el mismo nombre. Si utiliza el mismo nombre, el sistema genera automáticamente una variación del nombre. Por ejemplo, si el recurso tiene el nombre Square, el sistema genera el nombre Square1 para su copia.
    >* Al cambiar el nombre, no se permiten espacios en blanco en el nombre del archivo.
-
 
 1. En el **[!UICONTROL Seleccionar destino]** diálogo, realice una de las siguientes acciones:
 
@@ -486,7 +485,7 @@ Solo puede ver una anotación a la vez.
 
 >[!NOTE]
 >
->Si selecciona varias anotaciones, la anotación más reciente se podrá ver en la interfaz de usuario.
+>Si selecciona varias anotaciones, se podrá ver la anotación más reciente en la interfaz de usuario.
 >
 >La selección múltiple solo es compatible para imprimir el recurso anotado como PDF.
 
@@ -671,11 +670,11 @@ Para obtener más información, vea cómo [examinar recursos DAM con la aplicaci
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)

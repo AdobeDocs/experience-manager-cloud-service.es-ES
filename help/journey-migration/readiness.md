@@ -2,9 +2,9 @@
 title: Fase de preparación
 description: AEM Obtenga información acerca de los pasos que debe seguir para asegurarse de que la instalación de la está lista para moverse a la nube
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2074'
 ht-degree: 8%
 
 ---
@@ -21,11 +21,11 @@ AEM En esta fase del Recorrido AEM de migración as a Cloud Service de la, se fa
 
 ## La historia hasta ahora {#story-so-far}
 
-El documento anterior, [AEM Introducción a la migración a la as a Cloud Service](/help/journey-migration/getting-started.md), describe una lista de las fases a las que debe someterse para migrar a la as a Cloud Service, así como las ventajas de hacerlo, y describe las fases a las que debe someterse para migrar a la AEM.
+El documento anterior, [AEM Introducción a la migración a la as a Cloud Service](/help/journey-migration/getting-started.md), describe una lista de las fases a las que debe someterse para poder migrar a la as a Cloud Service, así como las ventajas de hacerlo, y describe las fases a las que debe someterse para poder migrar a la AEM de la forma que desee.
 
 ## Objetivo {#objective}
 
-AEM Este documento le ayuda a comprender qué factores debe tener en cuenta para asegurarse de que la instalación de la está lista para moverse a la nube:
+AEM Este documento le ayuda a comprender qué factores debe tener en cuenta para poder asegurarse de que la instalación de la está lista para moverse a la nube:
 
 * Obtenga información acerca de cambios importantes y funciones obsoletas
 * AEM Obtenga información sobre cómo planificar la migración a la as a Cloud Service de la
@@ -90,7 +90,7 @@ AEM La lista de los elementos de la siguiente tabla es el subconjunto de los cam
   <tr>
     <td>Cambiar a operaciones asincrónicas</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">Configuración de operaciones asincrónicas</a></td>
-    <td>Para mejorar el rendimiento general de los entornos, ciertas operaciones se ejecutan en modo asincrónico. Los trabajos asincrónicos se pondrán en cola y se ejecutarán cuando haya recursos del sistema disponibles.</td>
+    <td>Para mejorar el rendimiento general de los entornos, ciertas operaciones se ejecutan en modo asincrónico. Los trabajos asincrónicos se ponen en cola y se ejecutan cuando hay recursos del sistema disponibles.</td>
   </tr>
   <tr>
     <td>Estrategias de autenticación e integración basadas en tokens</td>
@@ -150,7 +150,7 @@ AEM La lista de los elementos de la siguiente tabla es el subconjunto de los cam
   <tr>
     <td>Cambios en la autenticación</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=es">Compatibilidad con IMS para AEM as a Cloud Service</td>
-    <td>Si anteriormente utilizaba la integración con SAML 2.0 tanto en la creación como en la publicación antes de pasar a Cloud Service AEM, el cambio principal es que solo se integra con Adobe IMS el Autor as a Cloud Service de la. AEM Sin embargo, el nivel de publicación as a Cloud Service de la todavía puede aprovechar SAML u otras integraciones de autenticación. AEM as a Cloud Service ofrece compatibilidad con la autenticación IMS solo para usuarios creadores, administradores y desarrolladores. La autenticación IMS no ofrece compatibilidad con usuarios finales externos de sitios de clientes como visitantes del sitio.</td>
+    <td>Si anteriormente utilizaba la integración con SAML 2.0 tanto en la creación como en la publicación antes de pasar a Cloud Service AEM, el cambio principal es que solo se integra con Adobe IMS el Autor as a Cloud Service de la. AEM Sin embargo, el nivel de publicación as a Cloud Service de la todavía puede utilizar SAML u otras integraciones de autenticación. AEM as a Cloud Service ofrece compatibilidad con la autenticación IMS solo para usuarios creadores, administradores y desarrolladores. La autenticación IMS no ofrece compatibilidad con usuarios finales externos de sitios de clientes como visitantes del sitio.</td>
   </tr>
 </tbody>
 </table>
@@ -163,7 +163,7 @@ Le recomendamos que consulte la [Funciones obsoletas](https://experienceleague.a
 
 ## AEM Planifique para una revisión de su instalación de la {#review-planning}
 
-AEM Una vez que se haya acostumbrado a los cambios introducidos con el as a Cloud Service, es hora de empezar a planificar una revisión de su instalación existente, con el fin de medir el nivel de cambios necesarios para trasladarla a la nube.
+AEM Una vez que se haya acostumbrado a los cambios introducidos con el as a Cloud Service, es hora de empezar a planificar una revisión de la instalación existente. Al hacerlo, puede medir el nivel de cambios necesarios para moverlo a la nube.
 
 La siguiente figura muestra los pasos clave involucrados durante la fase de revisión:
 
@@ -173,7 +173,7 @@ A continuación, analizaremos en detalle qué significa cada uno de estos pasos.
 
 ### Evaluación de la preparación de Cloud Service {#assess-cloud-readiness}
 
-AEM El primer paso es evaluar la preparación para pasar de la versión de su existente a la de Cloud Service AEM as a Cloud Service y determinar las áreas que requerirán refactorización para que sean compatibles con la.
+AEM El primer paso es evaluar la preparación para pasar de la versión de su existente a la de Cloud Service AEM y determinar las áreas que requieren refactorización para que sean compatibles con las versiones as a Cloud Service de la.
 
 AEM Deberá llevar a cabo una evaluación completa del código fuente actual de la en relación con los cambios notables y las funciones en desuso para determinar el nivel de esfuerzo esperado en el recorrido de transición.
 
@@ -198,7 +198,7 @@ Un informe típico debe contener estas entradas:
 
 **Socialización del informe**
 
-Una vez completados los informes del Analizador de prácticas recomendadas, compártalos con los equipos relevantes para confirmar las conclusiones y planificar los pasos siguientes. Según sus preferencias, también puede distribuir una versión impresa del informe utilizando [Vista preliminar](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
+Una vez completados los informes del Analizador de prácticas recomendadas, compártalos con los equipos relevantes para que pueda confirmar las conclusiones y planificar los pasos siguientes. Según sus preferencias, también puede distribuir una versión impresa del informe utilizando [Vista preliminar](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
 
 ### Revisión de la planificación de recursos {#review-resource-planning}
 

@@ -5,10 +5,10 @@ landing-page-description: Aprenda a administrar fragmentos de contenido desde la
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 95%
+source-wordcount: '1103'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,6 @@ La consola Fragmentos de contenido está dedicada a administrar, buscar y crear 
 >
 >* esta consola **Fragmentos de contenido**
 >* la consola **Recursos**: consulte [Administración de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
-
 
 >[!NOTE]
 >
@@ -60,12 +59,12 @@ Aquí se pueden ver tres áreas principales:
 * Panel principal/derecho, desde aquí puede hacer lo siguiente:
    * Consultar la lista de todos los fragmentos de contenido en la rama seleccionada del árbol:
       * La ubicación se indica mediante las rutas de exploración; también se pueden usar para cambiar la ubicación.
-      * Se mostrarán los fragmentos de contenido de la carpeta seleccionada y todas las carpetas secundarias.:
+      * Se muestran los fragmentos de contenido de la carpeta seleccionada y todas las carpetas secundarias:
          * [Varios campos de información](#selectuse-available-columns) acerca de un fragmento de contenido para proporcionar vínculos; según el campo, pueden realizar lo siguiente:
             * Abrir el fragmento correspondiente en el editor
             * Mostrar información sobre referencias
             * Mostrar información sobre las versiones de idioma del fragmento
-      * Al utilizar el ratón sobre los encabezados de columna, se mostrará un selector de acciones desplegable y controles deslizantes de anchura. Esto le permite lograr lo siguiente:
+      * Al pasar el ratón por encima de los encabezados de columna, se muestra un selector de acciones desplegable y controles deslizantes de anchura. Esto le permite hacer lo siguiente:
          * Ordenar: seleccione la acción adecuada, ya sea ascendente o descendente.
 Así se ordenará toda la tabla según esa columna. La ordenación solo está disponible en las columnas adecuadas.
          * Cambiar el tamaño de la columna: mediante los controles deslizantes de acción o de anchura
@@ -87,17 +86,16 @@ Algunas acciones están disponibles desde la consola, sin seleccionar un fragmen
 * [Personalice la vista de tabla para mostrar columnas de información seleccionadas](#select-available-columns)
 * Use **Abrir en Recursos** para abrir directamente la ubicación actual en la consola **Recursos**
 
-   >[!NOTE]
-   >
-   >La consola **Recursos** se utiliza para acceder a recursos como imágenes, vídeos, etc.  Se puede acceder a esta consola:
-   >
-   >* usando el vínculo **Abrir en Recursos** (en la consola Fragmentos de contenido)
-   >* directamente desde el panel de navegación global
-
+  >[!NOTE]
+  >
+  >La consola **Recursos** se utiliza para acceder a recursos como imágenes, vídeos, etc.  Se puede acceder a esta consola:
+  >
+  >* usando el vínculo **Abrir en Recursos** (en la consola Fragmentos de contenido)
+  >* directamente desde el panel de navegación global
 
 ### Acciones para un fragmento de contenido (seleccionado) {#actions-selected-content-fragment}
 
-Si se selecciona un fragmento específico, se abrirá una barra de herramientas centrada en las acciones disponibles para dicho fragmento. También puede seleccionar varios fragmentos: la selección de acciones se ajustará en consecuencia.
+Si se selecciona un fragmento específico, se abrirá una barra de herramientas centrada en las acciones disponibles para dicho fragmento. También puede seleccionar varios fragmentos: la selección de acciones se ajusta en consecuencia.
 
 ![Consola Fragmentos de contenido: barra de herramientas para un fragmento seleccionado](assets/cfc-fragment-toolbar.png)
 
@@ -142,17 +140,17 @@ Al pasar el ratón por encima del nombre de la carpeta, se muestra la ruta JCR.
 
    * Proporciona un vínculo que abre un cuadro de diálogo con todas las referencias principales de ese fragmento; incluida la referencia a Fragmentos de contenido, Fragmentos de experiencias y páginas. Para abrir una referencia específica, haga clic en **Título** en el cuadro de diálogo.
 
-      ![Consola Fragmentos de contenido: cuadro de diálogo Referencias](assets/cfc-console-references-dialog.png)
+     ![Consola Fragmentos de contenido: cuadro de diálogo Referencias](assets/cfc-console-references-dialog.png)
 
 * **Idioma**
 
    * Indica la configuración regional del fragmento de contenido, junto con el número total de configuraciones regionales o copias de idioma asociadas al fragmento de contenido.
 
-      ![Consola Fragmentos de contenido: Indicador de idioma](assets/cfc-console-language-indicator.png)
+     ![Consola Fragmentos de contenido: Indicador de idioma](assets/cfc-console-language-indicator.png)
 
       * Pulse o haga clic en el recuento para abrir un cuadro de diálogo que muestre todas las copias de idioma. Para abrir una copia de idioma específica, haga clic en **Título** en el cuadro de diálogo.
 
-         ![Consola Fragmentos de contenido: cuadro de diálogo Idioma](assets/cfc-console-languages-dialog.png)
+        ![Consola Fragmentos de contenido: cuadro de diálogo Idioma](assets/cfc-console-languages-dialog.png)
 
 ## Seleccionar las columnas disponibles {#select-available-columns}
 
@@ -186,7 +184,7 @@ Por ejemplo, seleccione **Publicado** en la columna **Estado**:
 
 ![Consola Fragmentos de contenido: filtrado](assets/cfc-console-fast-filter-01.png)
 
-Cuando se seleccione, aparecerá como un predicado de filtro y la lista se filtrará según corresponda:
+Después de la selección, se muestra como un predicado de filtro y la lista se filtra en consecuencia:
 
 ![Consola Fragmentos de contenido: filtrado](assets/cfc-console-fast-filter-02.png)
 

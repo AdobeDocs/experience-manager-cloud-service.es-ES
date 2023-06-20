@@ -2,10 +2,10 @@
 title: Comprender la instalación del complemento de demostración de referencia
 description: Obtenga información sobre Cloud Manager y cómo se utiliza para instalar el complemento.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 98%
 
 ---
 
@@ -70,7 +70,7 @@ Los programas pueden ser programas de producción o de zonas protegidas.
 * **Un programa de producción** se crea para permitir finalmente el tráfico en directo cuando el programa esté listo para ejecutarse.
 * **Un programa de zona protegida** se crea para aprendizaje, administración de demostraciones, habilitación, POC, etc. y no está pensado para el tráfico en directo.
 
-Para instalar el complemento Demos de referencia de AEM, deberá crear un nuevo programa de zona protegida.
+AEM Para instalar el complemento Demostraciones de referencia de la, cree un programa de zona protegida.
 
 >[!NOTE]
 >

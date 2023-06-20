@@ -2,9 +2,9 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1396'
 ht-degree: 22%
 
 ---
@@ -88,7 +88,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   Se presenta el siguiente cuadro de diálogo. Tenga en cuenta que un conjunto de migración caducará después de un período prolongado de inactividad. Después de mostrar advertencias en la tarjeta de proyecto y en las filas de la tabla de trabajos de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. Revisar [Caducidad del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener más información.
+   Se muestra el siguiente cuadro de diálogo. Tenga en cuenta que un conjunto de migración caducará después de un período prolongado de inactividad. Después de mostrar advertencias en la tarjeta de proyecto y en las filas de la tabla de trabajos de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. Revisar [Caducidad del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener más información.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -120,7 +120,7 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Pegue la clave de extracción que se copió de CAM anteriormente en el campo de entrada de la clave de extracción de **Crear conjunto de migración** formulario. Una vez hecho esto, los campos Nombre del conjunto de migración y Nombre del proyecto de Cloud Acceleration Manager (CAM) se rellenarán automáticamente. Deben coincidir con el nombre del conjunto de migración de CAM y el nombre del proyecto de CAM que ha creado. Ahora puede añadir rutas de contenido. Una vez que haya añadido las rutas de contenido, podrá guardar el conjunto de migración. Puede ejecutar la extracción con cualquiera de las versiones incluidas o excluidas.
+1. Pegue la clave de extracción que se copió de CAM anteriormente en el campo de entrada de la clave de extracción de **Crear conjunto de migración** formulario. Después de hacer esto, los campos Nombre del conjunto de migración y Nombre del proyecto de Cloud Acceleration Manager (CAM) se rellenan automáticamente. Deben coincidir con el nombre del conjunto de migración de CAM y el nombre del proyecto de CAM que ha creado. Ahora puede añadir rutas de contenido. Después de agregar las rutas de contenido, guarde el conjunto de migración. Puede ejecutar la extracción con cualquiera de las versiones incluidas o excluidas.
 
    >[!NOTE]
    >
@@ -147,7 +147,6 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
       >* `/home`
       >* `/etc` (algunos `/etc` se permite seleccionar las rutas en CTT)
 
-
 1. Haga clic en **Guardar** después de rellenar todos los campos en la variable **Crear conjunto de migración** pantalla de detalles.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
@@ -167,7 +166,8 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
 ### Determinación del tamaño del conjunto de migración {#migration-set-size}
 
 Después de crear un conjunto de migración, es muy recomendable ejecutar una comprobación de tamaño en el conjunto antes de iniciar un proceso de extracción.
-Al realizar una comprobación de tamaño en el conjunto de migración, podrá:
+Al realizar una comprobación de tamaño en el conjunto de migración, puede:
+
 * Determine si hay suficiente espacio en disco en la `crx-quickstart` subdirectorio para completar la extracción correctamente.
 * Determine si el tamaño del conjunto de migración se encuentra dentro de los límites del producto admitido y evite las ingestas de contenido fallidas.
 
@@ -185,11 +185,11 @@ Siga los pasos a continuación para ejecutar una comprobación de tamaño:
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Una **Comprobar tamaño** el proceso se ha completado, el estado cambiará a **FINALIZADO**. Seleccione el mismo conjunto de migración y haga clic en **Comprobar tamaño** para ver los resultados. A continuación se muestra un ejemplo de **Comprobar tamaño** resultados sin advertencias.
+1. Después **Comprobar tamaño** el proceso se ha completado, el estado cambia a **FINALIZADO**. Seleccione el mismo conjunto de migración y haga clic en **Comprobar tamaño** para ver los resultados. A continuación se muestra un ejemplo de **Comprobar tamaño** resultados sin advertencias.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Si la variable **Comprobar tamaño** los resultados indican que no hay suficiente espacio en disco o que el conjunto de migración supera los límites del producto, **ADVERTENCIA** se mostrará el estado.
+1. Si la variable **Comprobar tamaño** los resultados indican que no hay suficiente espacio en disco o que el conjunto de migración supera los límites del producto, o ambos, un **ADVERTENCIA** se muestra el estado.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

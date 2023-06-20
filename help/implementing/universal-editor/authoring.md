@@ -2,10 +2,10 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 84%
 
 ---
 
@@ -15,7 +15,7 @@ Aprenda lo fácil e intuitivo que es para los autores crear contenido con el edi
 
 ## Introducción {#introduction}
 
-El editor universal permite editar cualquier aspecto de todo tipo de contenido en todas las implementaciones para ofrecer experiencias excepcionales, aumentar la velocidad y proporcionar una experiencia de última generación a los desarrolladores.
+El editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para que pueda ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de desarrollador avanzada.
 
 Para ello, se proporciona una IU intuitiva que requiere una formación mínima para comenzar a editar contenido.
 
@@ -29,7 +29,7 @@ Para ello, se proporciona una IU intuitiva que requiere una formación mínima p
 
 ## Preparación de la aplicación {#prepare-app}
 
-Para poder crear contenido para una aplicación con el editor universal, el desarrollador debe instrumentarla para que admita el editor.
+Para crear contenido para una aplicación con el editor universal, la aplicación debe estar instrumentada por un desarrollador para admitir el editor.
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Para poder crear contenido para una aplicación con el editor universal, el desa
 
 Una vez instrumentada la aplicación para que funcione con el editor universal, deberá iniciar sesión. Para el editor universal, necesitará el Adobe ID para iniciar sesión y [tener acceso.](getting-started.md#request-access)
 
-Una vez que haya iniciado sesión, introduzca la URL de la página que desea editar en la [barra de direcciones](#address-bar) para comenzar a [editar el contenido.](#edit-content)
+Cuando haya iniciado sesión, introduzca la dirección URL de la página que desea editar en la [barra de direcciones.](#address-bar) para que pueda empezar [editar el contenido.](#edit-content)
 
 ## Comprensión de la IU {#ui}
 
@@ -84,13 +84,13 @@ El icono de ayuda proporciona acceso rápido a los recursos de aprendizaje y asi
 
 #### Notificaciones {#notifications}
 
-Este icono se mostrará con la cantidad de [notificaciones incompletas asignadas actualmente.](/help/implementing/cloud-manager/notifications.md)
+Este icono tiene la insignia con el número de asignaciones incompletas actualmente [notificaciones.](/help/implementing/cloud-manager/notifications.md)
 
 ![Notificaciones](assets/notifications.png)
 
 #### Propiedades del usuario {#user-properties}
 
-Toque o haga clic en el icono que representa a su usuario para acceder a la configuración. Si no tiene una imagen de usuario configurada, se le asignará un icono de forma aleatoria.
+Toque o haga clic en el icono que representa a su usuario para acceder a la configuración. Si no tiene configurada una imagen de usuario, se asigna un icono de forma aleatoria.
 
 ![Propiedades del usuario](assets/user-properties.png)
 
@@ -132,7 +132,7 @@ Toque o haga clic en el icono Abrir vista previa de la aplicación para abrir la
 
 #### Publicación {#publish}
 
-Toque o haga clic en el botón de publicación para publicar los cambios en el contenido en directo para que los lectores los consuman.
+Toque o haga clic en el botón Publicar para poder publicar los cambios en el contenido en directo para que los consuman sus lectores.
 
 ![Botón Publicar](assets/publish.png)
 
@@ -172,7 +172,7 @@ Dependiendo de si el editor se encuentra en [modo de edición](#edit-mode) o [mo
 
 ## Edición de contenido {#editing-content}
 
-La edición de contenido es sencilla e intuitiva. En [modo de edición,](#edit-mode) al pasar el ratón sobre el contenido en el editor, el contenido editable se resaltará con un cuadro azul.
+La edición de contenido es sencilla e intuitiva. Entrada [modo de edición,](#edit-mode) al pasar el ratón sobre el contenido en el editor, el contenido editable se resalta con un cuadro azul.
 
 ![El contenido editable se resalta con un cuadro azul](assets/editable-content.png)
 
@@ -192,8 +192,8 @@ Tenga en cuenta que, en el modo de vista previa, tocar o hacer clic en el conten
 
 Para obtener más información acerca del editor universal, consulte estos documentos.
 
-* [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar aspectos de cualquier contenido en todo tipo de implementación para ofrecer experiencias excepcionales, aumentar la velocidad y proporcionar una experiencia de última generación a los desarrolladores.
-* [Publicación de contenido con el editor universal](publishing.md): descubra cómo se publica contenido con el editor visual universal y cómo sus aplicaciones pueden gestionar este contenido publicado.
+* [Introducción al editor universal](introduction.md) - Descubra cómo el editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para que pueda ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de desarrollador avanzada.
+* [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el publicado.
 * [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 * [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 * [Atributos y tipos](attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.

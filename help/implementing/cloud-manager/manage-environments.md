@@ -2,10 +2,10 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo crearlos para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 77%
+source-wordcount: '2325'
+ht-degree: 72%
 
 ---
 
@@ -153,7 +153,7 @@ Cloud Manager proporciona un servicio de vista previa (entregado como servicio d
 
 Con el servicio puede obtener una vista previa de la experiencia final de un sitio web antes de que llegue al entorno de publicación real y de que esté disponible públicamente.
 
-Una vez creado, el servicio de vista previa tendrá aplicada una lista de IP predeterminadas permitidas, etiquetada como `Preview Default [<envId>]`, que bloqueará todo el tráfico en el servicio de vista previa. Debe anular la aplicación de la lista de IP predeterminadas permitidas del servicio de vista previa para habilitar el acceso.
+Una vez creado, el servicio de vista previa tendrá aplicada una lista de IP predeterminadas permitidas, etiquetada como `Preview Default [<envId>]`, que bloqueará todo el tráfico en el servicio de vista previa. Debe anular la aplicación de la lista de permitidos IP predeterminada del servicio de vista previa para habilitar el acceso.
 
 ![Servicio de vista previa y lista de permitidos](assets/preview-ip-allow.png)
 
@@ -216,7 +216,7 @@ El comportamiento de la opción **Actualizar** varía según la configuración y
 
 ## Eliminar entornos de desarrollo {#deleting-environment}
 
-Los usuarios con los permisos necesarios podrán eliminar un entorno de desarrollo.
+Un usuario con el permiso necesario puede eliminar un entorno de desarrollo.
 
 En la pantalla **Información general** del programa, en la tarjeta **Entornos**, haga clic en el botón de los tres puntos del entorno de desarrollo que desee eliminar.
 
@@ -290,9 +290,9 @@ Para administrar las listas de IP permitidas, navegue hasta la pestaña **Entorn
 
 ### Aplicar una lista de IP permitidas {#apply-ip-allow-list}
 
-La aplicación de una lista de IP permitidas asocia todos los rangos de IP incluidos en la definición de la lista de permitidos con un servicio de autor o publicación en un entorno. Para que un usuario con el rol de **Propietario del negocio** o **Administrador de implementación** pueda aplicar una lista de IP permitidas, deberá iniciar sesión.
+La aplicación de una lista de IP permitidas asocia todos los rangos de IP incluidos en la definición de la lista de permitidos con un servicio de autor o publicación en un entorno. Un usuario en la **Propietario del negocio** o **Administrador de implementación** La función debe haber iniciado sesión para poder aplicar una lista de permitidos IP.
 
-La lista de IP permitidas debe existir en Cloud Manager para aplicarla a un entorno. Para obtener más información sobre las listas de IP permitidas en Cloud Manager, consulte el documento [Introducción a las listas de IP permitidas en Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+La lista de permitidos IP debe existir en Cloud Manager para aplicarla a un entorno. Para obtener más información sobre las listas de IP permitidas en Cloud Manager, consulte el documento [Introducción a las listas de IP permitidas en Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
 Siga estos pasos para aplicar una lista de IP permitidas.
 
@@ -302,7 +302,7 @@ Siga estos pasos para aplicar una lista de IP permitidas.
 
 ### Anular la aplicación de una lista de IP permitidas {#unapply-ip-allow-list}
 
-Al anular la aplicación de una lista de IP permitidas, se desasocian todos los rangos de IP incluidos en la definición de la lista de permitidos de un servicio de autor o editor de un entorno. Un usuario con el rol de **Propietario del negocio** o **Administrador de implementación** debe haber iniciado sesión para poder anular la aplicación de una lista de IP permitidas.
+Al anular la aplicación de una lista de IP permitidas, se desasocian todos los rangos de IP incluidos en la definición de la lista de permitidos de un servicio de autor o editor de un entorno. Un usuario en la **Propietario del negocio** o **Administrador de implementación** La función debe haber iniciado sesión para poder anular la aplicación de una lista de permitidos IP.
 
 Siga estos pasos para anular la aplicación de una lista de IP permitidas.
 

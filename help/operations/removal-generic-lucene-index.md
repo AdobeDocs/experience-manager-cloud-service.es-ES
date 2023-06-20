@@ -2,9 +2,9 @@
 title: Eliminación del índice Lucene genérico
 description: Obtenga información acerca de la eliminación planificada de índices Lucene genéricos y cómo puede verse afectado.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -38,30 +38,30 @@ Por ejemplo, las consultas de búsqueda de referencia, como en el ejemplo siguie
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Para admitir volúmenes de datos de clientes más grandes, Adobe AEM ya no creará el índice Lucene genérico en entornos as a Cloud Service nuevos. Además, la Adobe empezará a eliminar el índice de los repositorios existentes. [Ver la cronología](#timeline) al final de este documento para obtener más información.
+Para admitir volúmenes de datos de clientes más grandes, Adobe AEM ya no crea el índice Lucene genérico en entornos as a Cloud Service nuevos y de nueva creación de informes de. Además, el Adobe elimina el índice de los repositorios existentes. [Ver la cronología](#timeline) al final de este documento para obtener más información.
 
 El Adobe ya ha ajustado los costes de índice a través de la `costPerEntry` y `costPerExecution` para garantizar que otros índices como `/oak:index/pathreference` se utilizan con preferencia siempre que sea posible.
 
-Las aplicaciones de cliente que utilizan consultas que aún dependen de este índice deben actualizarse inmediatamente para aprovechar otros índices existentes, que se pueden personalizar si es necesario. Como alternativa, se pueden añadir nuevos índices personalizados a la aplicación del cliente. AEM Puede encontrar las instrucciones completas para la administración de índices en as a Cloud Service en la [documentación de indexación.](/help/operations/indexing.md)
+Las aplicaciones de cliente que utilizan consultas que aún dependen de este índice deben actualizarse inmediatamente para utilizar otros índices existentes, que pueden personalizarse si es necesario. Como alternativa, se pueden añadir nuevos índices personalizados a la aplicación del cliente. AEM Puede encontrar las instrucciones completas para la administración de índices en as a Cloud Service en la [documentación de indexación.](/help/operations/indexing.md)
 
 ## ¿Se Ve Afectado? {#are-you-affected}
 
-El índice Lucene genérico se utiliza actualmente como alternativa si ningún otro índice de texto completo puede servir a una consulta. Cuando se utiliza este índice obsoleto, se registra un mensaje como este en el nivel WARN:
+El índice Lucene genérico se utiliza actualmente como alternativa si ningún otro índice de texto completo puede servir a una consulta. Cuando se utiliza este índice obsoleto, se registra un mensaje similar al siguiente en el nivel WARN:
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
 ```
 
-En algunas circunstancias, Oak podría intentar utilizar otro índice de texto completo (como `/oak:index/pathreference`) para admitir la consulta de texto completo, pero si la cadena de consulta no coincide con la expresión regular de la definición de índice, se registrará un mensaje en el nivel WARN y es probable que la consulta no devuelva resultados.
+En algunas circunstancias, Oak podría intentar utilizar otro índice de texto completo (como `/oak:index/pathreference`) para admitir la consulta de texto completo, pero si la cadena de consulta no coincide con la expresión regular de la definición de índice, se registra un mensaje en el nivel WARN y es probable que la consulta no devuelva resultados.
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
 ```
 
-Una vez eliminado el índice Lucene genérico, se registrará un mensaje como se muestra a continuación en el nivel WARN si una consulta de texto completo no puede localizar ninguna definición de índice adecuada:
+Una vez eliminado el índice Lucene genérico, se registra un mensaje como se muestra a continuación en el nivel WARN si una consulta de texto completo no puede localizar ninguna definición de índice adecuada:
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -117,7 +117,7 @@ De este modo, la consulta vuelve al índice de texto completo genérico, donde t
 >
 >**Acción del cliente requerida**
 >
->Marcando el `jcr:content/metadata/@cq:tags` propiedad tal como se analiza en una versión personalizada de `damAssetLucene` index hará que este índice administre esta consulta y no se registrará ningún ADVERTENCIA.
+>Marcando el `jcr:content/metadata/@cq:tags` propiedad tal como se analiza en una versión personalizada de `damAssetLucene` index hace que este índice controle esta consulta y no se registra ningún WARN.
 
 ### Ejemplo de autor {#author-instance}
 
@@ -157,7 +157,6 @@ Antes de la eliminación del índice Lucene genérico, la variable `pathfield` E
 > * En la actualidad, estos realizan consultas sin especificar tipos de nodo, lo que da como resultado que se registre un ADVERTENCIA debido al uso del índice Lucene genérico.
 > * Las instancias de estos componentes pronto utilizarán de forma predeterminada `cq:Page` y `dam:Asset` tipos de nodo sin más acción del cliente.
 > * El `nodeTypes` se puede agregar la propiedad para anular estos tipos de nodos predeterminados.
-
 
 ## Cronología para la eliminación genérica de Lucene {#timeline}
 

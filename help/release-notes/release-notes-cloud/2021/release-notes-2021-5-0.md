@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.5.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.5.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 50%
+source-wordcount: '1352'
+ht-degree: 48%
 
 ---
 
@@ -47,19 +47,19 @@ La de la siguiente versión (2021.6.0) será el 28 de junio de 2021.
 
 * Puede descargar los recursos compartidos mediante la funcionalidad Compartir vínculos. Esta descarga ahora utiliza un servicio asincrónico que ofrece descargas más rápidas e ininterrumpidas, incluso para descargas muy grandes. Consulte [descargar recursos](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![Descargar bandeja de entrada](/help/assets/assets/download-inbox.png)
+  ![Descargar bandeja de entrada](/help/assets/assets/download-inbox.png)
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento {#what-is-new-assets-prerelease}
 
 * Los esquemas de metadatos se pueden aplicar directamente a las propiedades de la carpeta.
 
-   ![Añadir esquema de metadatos de las propiedades de carpeta](/help/assets/assets/metadata-schema-folder-properties.png)
+  ![Añadir esquema de metadatos de las propiedades de carpeta](/help/assets/assets/metadata-schema-folder-properties.png)
 
 * La herramienta Ingestor masivo de datos permite añadir metadatos durante una ingesta masiva.
 
 * Las mejoras en la experiencia del usuario muestran el número de recursos presentes en una carpeta. Para más de 1000 recursos en una carpeta, [!DNL Assets] muestra más de 1000.
 
-   ![El número de recursos de una carpeta se muestra en la interfaz](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![El número de recursos de una carpeta se muestra en la interfaz](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### Errores corregidos en [!DNL Assets] {#assets-bugs-fixed}
 
@@ -110,7 +110,7 @@ La próxima versión está planificada para el 03 de junio de 2021.
 
 * El extremo del repositorio en la API Public ahora incluye la URL de Git.
 
-* El registro de implementación que descargue un usuario de Cloud Manager será más profundo y ahora incluirá detalles sobre errores y escenarios de éxito.
+* Los registros de implementación descargados por un usuario de Cloud Manager son más profundos e incluyen detalles sobre errores y escenarios de éxito.
 
 * Se han resuelto errores intermitentes encontrados al insertar el código en el Git de Adobe.
 
@@ -148,7 +148,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.4.6 e
 
 * Se agregó una nueva instrucción de registro al registro de errores de inicio rápido si el usuario no tiene permiso de ejecución en el ejecutable Java.
 
-* Cuando un usuario elimina un conjunto de migración de la IU de CTT, donde se realizó una extracción, la variable `tmp` La carpeta asociada con ese conjunto de migración se eliminará para ahorrar espacio.
+* Cuando un usuario elimina un conjunto de migración de la interfaz de usuario de CTT, donde se realizó una extracción, la variable `tmp` La carpeta asociada con ese conjunto de migración se elimina para ahorrar espacio.
 
 ### Correcciones de errores {#bug-fixes-ctt-latest}
 

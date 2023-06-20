@@ -4,10 +4,10 @@ description: Aproveche el Centro de Acciones para tomar medidas sobre incidentes
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 32%
+source-wordcount: '703'
+ht-degree: 27%
 
 ---
 
@@ -46,7 +46,7 @@ Al hacer clic en el correo electrónico, se le lleva al Centro de acciones, con 
 
 Haciendo clic en **Más información** El vínculo lleva al usuario a este artículo, donde se puede hacer referencia al tipo de notificación en la [tabla de tipos de notificación admitidos](#supported-notification-types) a continuación, que proporciona orientación sobre qué acción tomar.
 
-En el Centro de acciones, puede ver una lista de otras notificaciones recientes. Se recomienda que, en la lista Acciones, reconozca una notificación para indicar al Adobe que su organización está al tanto de la tarea y que luego la resuelva cuando se hayan adoptado medidas correctivas.
+En el Centro de acciones, puede ver una lista de otras notificaciones recientes. Se recomienda que, mediante la lista Acciones, acepte una notificación para indicar al Adobe que su organización conoce la tarea y que, posteriormente, la resuelva cuando se hayan tomado medidas correctivas.
 
 ![Lista de notificaciones](/help/operations/assets/notification-list.png)
 
@@ -64,11 +64,11 @@ Al igual que todos los tickets de soporte, aparecerá en la [pestaña Casos de s
 
 AEM El as a Cloud Service tiene varios tipos de notificaciones, pero solo aparece un subconjunto en el Centro de acciones, como se muestra en la tabla siguiente.
 
-| Tipo de notificación | Descripción | Cómo configurar   | Aparece en el Centro de acciones |
+| Tipo de notificación | Descripción | Cómo configurar  | Aparece en el Centro de acciones |
 |---|---|---|---|
 | Incidencias operativas | Incidentes críticos que requieren una acción inmediata | Usuario asignado al perfil de producto &quot;Notificación de incidentes - Cloud Service&quot; | X |
 | Recomendaciones proactivas | Optimizaciones que deben planificarse | Usuario asignado al perfil de producto &quot;Notificación proactiva: Cloud Service&quot; | X |
-| Estados de canalización de Cloud Manager | Información sobre el estado de sus canalizaciones | Usuario con las funciones de Propietario empresarial, Administrador de programas o Administrador de implementación, casilla de verificación &quot;Otros&quot; seleccionada en las [Preferencias de Experience Cloud](https://experience.adobe.com/preferences), como [descrito aquí](/help/implementing/cloud-manager/notifications.md). |  |
+| Estados de canalización de Cloud Manager | Información sobre el estado de sus canalizaciones | Usuario con las funciones de Propietario empresarial, Administrador de programas o Administrador de implementación, casilla de verificación &quot;Otros&quot; seleccionada en las [Preferencias de Experience Cloud](https://experience.adobe.com/preferences), como [descrito aquí](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## Tipos de notificación compatibles {#supported-notification-types}
 

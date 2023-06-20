@@ -2,9 +2,9 @@
 title: Limitaciones del editor
 description: El editor de la IU táctil utiliza las superposiciones para interactuar con el contenido limitado en un iframe. Esta interacción crea algunas limitaciones en el uso del editor y también para los desarrolladores.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 10%
 
 ---
@@ -51,7 +51,7 @@ Es posible que las imágenes de fondo fijas no se muestren como fijas al desplaz
 
 El 100 % de altura no es compatible con el elemento de cuerpo de una página.
 
-* Es posible implementar una solución alternativa para un cuerpo de pantalla completa &quot;estirando&quot; el elemento de cuerpo de la siguiente manera:
+* Una solución alternativa es implementar un cuerpo de pantalla completa &quot;estirando&quot; el elemento de cuerpo de la siguiente manera:
 
 ```xml
 body {

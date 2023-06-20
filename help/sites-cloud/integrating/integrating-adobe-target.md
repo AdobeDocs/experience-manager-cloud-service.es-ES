@@ -4,10 +4,10 @@ description: Integración con Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
-workflow-type: ht
-source-wordcount: '1047'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1046'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,6 @@ Como se ha dicho anteriormente, el primer caso es el más común para AEM as a C
 > 1. Vuelva a introducir el ID de inquilino.
 > 2. Volver a conectar con Target.
 > 3. Guarde la configuración.
-
 
 ### Edición de la configuración de Target {#edit-target-configuration}
 
@@ -157,4 +156,4 @@ Para aprender a generar y publicar, consulte esta [página](https://experiencele
 
 >[!NOTE]
 >
->Las configuraciones heredadas siguen siendo compatibles con los clientes existentes (sin la opción de editar o crear nuevas). Las configuraciones heredadas formarán parte de paquetes de contenido cargados por clientes que utilicen VSTS.
+>Las configuraciones heredadas siguen siendo compatibles con los clientes existentes (sin la opción de editar o crear nuevas). Las configuraciones heredadas forman parte de paquetes de contenido cargados por clientes que utilizan VSTS.

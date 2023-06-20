@@ -2,10 +2,10 @@
 title: Pruebas de IU
 description: La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones personalizadas
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2411'
-ht-degree: 99%
+source-wordcount: '2401'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ La prueba de IU personalizada es una característica opcional que le permite cre
 
 AEM ofrece un conjunto integrado de [Puertas de calidad de Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantizar actualizaciones sin problemas en las aplicaciones personalizadas. En concreto, las puertas de pruebas de TI ya admiten la creación y automatización de pruebas personalizadas mediante las API de AEM.
 
-Las pruebas de IU se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). Además, se puede generar fácilmente un proyecto de pruebas de IU mediante el uso del [arquetipo del proyecto de AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
+Las pruebas de interfaz de usuario se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). Además, se puede generar fácilmente un proyecto de pruebas de IU mediante el uso del [arquetipo del proyecto de AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 
 El Adobe fomenta el uso de Cypress, ya que ofrece recarga en tiempo real y espera automática, lo que ayuda a ahorrar tiempo y mejora la productividad durante las pruebas. Cypress también proporciona una sintaxis sencilla e intuitiva, lo que facilita el aprendizaje y el uso, incluso para aquellos que son nuevos en las pruebas.
 
@@ -167,7 +167,7 @@ Para que Cloud Manager pueda generar y ejecutar sus pruebas de IU, debe incluirs
 * El archivo debe estar en el módulo secundario de Maven para pruebas de IU junto al archivo `pom.xml` del módulo secundario de pruebas de IU.
 * El archivo debe estar en la raíz del archivo de generación `tar.gz`.
 
-La generación de pruebas de interfaz de usuario y las ejecuciones se omitirán si este archivo no está presente.
+La generación de pruebas de interfaz de usuario y las ejecuciones se omiten si este archivo no está presente.
 
 Para incluir un archivo `testing.properties` en el artefacto de generación, agregue un enunciado `include` en el `assembly-ui-test-docker-context.xml` archivo.
 
@@ -207,7 +207,7 @@ En esta sección se describen las convenciones que debe seguir la imagen de Dock
 
 ### Variables de entorno {#environment-variables}
 
-Las siguientes variables de entorno se pasarán a la imagen de Docker en tiempo de ejecución, en función del marco de trabajo.
+Las siguientes variables de entorno se pasan a la imagen de Docker en tiempo de ejecución, según el marco de trabajo.
 
 | Variable | Ejemplos | Descripción | Marco trabajo de prueba |
 |---|---|---|---|
@@ -220,7 +220,7 @@ Las siguientes variables de entorno se pasarán a la imagen de Docker en tiempo 
 | `AEM_PUBLISH_USERNAME` | `admin` | El nombre de usuario para iniciar sesión en la instancia de publicación de AEM | Todos |
 | `AEM_PUBLISH_PASSWORD` | `admin` | La contraseña para iniciar sesión en la instancia de publicación de AEM | Todos |
 | `REPORTS_PATH` | `/usr/src/app/reports` | La ruta en la que se debe guardar el informe XML de los resultados de la prueba | Todos |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | La URL donde debe cargarse el archivo para que sea accesible para el marco de trabajo de prueba | Todos |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | Dirección URL donde se debe cargar el archivo para que sea accesible para el marco de prueba | Todos |
 
 Las muestras de prueba de Adobe proporcionan funciones de ayuda para acceder a los parámetros de configuración:
 
@@ -242,7 +242,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 
 ### Requisitos previos {#prerequisites}
 
-* Las pruebas en Cloud Manager se ejecutarán con un usuario administrador técnico.
+* Las pruebas en Cloud Manager se ejecutan con un usuario administrador técnico.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | Cantidad de tiempo de CPU reservado por ejecución de prueba. |
 | Memoria | 1Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes. |
-| Tiempo de espera | 30m | Duración tras la cual se terminará la prueba. |
+| Tiempo de espera | 30m | Duración tras la cual finaliza la prueba. |
 | Duración recomendada | 15m | Adobe recomienda escribir las pruebas para que no tarden más de este tiempo. |
 
 >[!NOTE]
@@ -343,7 +343,7 @@ Antes de activar pruebas de IU en una canalización de Cloud Manager, se recomie
 
 >[!NOTE]
 >
->Los archivos de registro se almacenarán en la carpeta `target/` de su repositorio.
+>Los archivos de registro se almacenan en la carpeta `target/` de su repositorio.
 >
 >Para obtener más información, consulte el [repositorio de muestras de pruebas de AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
@@ -390,6 +390,6 @@ Antes de activar pruebas de IU en una canalización de Cloud Manager, se recomie
 
 >[!NOTE]
 >
->Los archivos de registro se almacenarán en la carpeta `target/reports` de su repositorio.
+>Los archivos de registro se almacenan en la carpeta `target/reports` de su repositorio.
 >
 >Para obtener más información, consulte el [repositorio de muestras de pruebas de AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

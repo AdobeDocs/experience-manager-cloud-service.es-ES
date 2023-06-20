@@ -2,9 +2,9 @@
 title: Referencia de predicados del generador de consultas
 description: Referencia de predicado para la API de Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 14aafcb6c4acc798b0f0e0c51ecb0726f8d567aa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2280'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ El nombre &quot;root&quot; nunca se utiliza en una consulta, está implícito.
 * **`p.hits`** : (solo para el servlet JSON) seleccione la forma en que se escriben las visitas como JSON, con estas estándar (ampliables mediante el servicio ResultHitWriter):
    * **`simple`** - elementos mínimos como `path`, `title`, `lastmodified`, `excerpt` (si está configurado)
    * **`full`** - procesamiento JSON de sling del nodo, con `jcr:path` indicando la ruta de la visita: de forma predeterminada solo enumera las propiedades directas del nodo, incluya un árbol más profundo con `p.nodedepth=N`, con 0 que significa todo el subárbol infinito; agregue `p.acls=true` para incluir los permisos JCR de la sesión actual en el elemento de resultado dado (asignaciones: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
-   * **`selective`** - solo las propiedades especificadas en `p.properties`, que es un espacio separado (use `+` en direcciones URL) de rutas relativas; si la ruta relativa tiene una profundidad `>1` se representarán como objetos secundarios; el especial `jcr:path` incluye la ruta de la visita
+   * **`selective`** - solo las propiedades especificadas en `p.properties`, que es un espacio separado (use `+` en direcciones URL) de rutas relativas; si la ruta relativa tiene una profundidad `>1` se representan como objetos secundarios; el especial `jcr:path` incluye la ruta de la visita
 
 ### grupo  {#group}
 
@@ -108,7 +108,7 @@ Este predicado restringe el resultado a fragmentos de contenido.
 
 Este predicado compara dos propiedades de fecha JCR entre sí. Puede comprobar si son iguales, desiguales, buenos o buenos que o iguales.
 
-Este es un predicado solo de filtrado y no puede aprovechar un índice de búsqueda.
+Este es un predicado solo de filtrado y no puede utilizar un índice de búsqueda.
 
 #### Propiedades {#properties-2}
 
@@ -143,7 +143,7 @@ No admite el filtrado.
 
 Este predicado excluye nodos del resultado donde su ruta coincida con una expresión regular.
 
-Este es un predicado solo de filtrado y no puede aprovechar un índice de búsqueda.
+Este es un predicado solo de filtrado y no puede utilizar un índice de búsqueda.
 
 No admite la extracción de facetas.
 
@@ -168,7 +168,7 @@ No admite la extracción de facetas.
 
 Este predicado restringe el resultado a los elementos en los que la sesión actual tiene el especificado [Privilegios JCR.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
-Este es un predicado solo de filtrado y no puede aprovechar un índice de búsqueda. No admite la extracción de facetas.
+Este es un predicado solo de filtrado y no puede utilizar un índice de búsqueda. No admite la extracción de facetas.
 
 #### Propiedades {#properties-7}
 
@@ -178,7 +178,7 @@ Este es un predicado solo de filtrado y no puede aprovechar un índice de búsqu
 
 AEM Este predicado encuentra páginas en un idioma específico para el usuario. Esto tiene en cuenta tanto la propiedad de idioma de la página como la ruta de página que a menudo incluye el idioma o la configuración regional en una estructura de sitio de nivel superior.
 
-Este es un predicado solo de filtrado y no puede aprovechar un índice de búsqueda.
+Este es un predicado solo de filtrado y no puede utilizar un índice de búsqueda.
 
 Admite la extracción de facetas y proporciona bloques para cada código de idioma único.
 
@@ -190,7 +190,7 @@ Admite la extracción de facetas y proporciona bloques para cada código de idio
 
 Este predicado comprueba si un nodo es un recurso principal DAM y no un subrecurso. Básicamente, se trata de todos los nodos que no están dentro de un nodo de subrecursos. Tenga en cuenta que esto no comprueba la existencia de `dam:Asset` tipo de nodo. Para utilizar este predicado, simplemente configure `mainasset=true` o `mainasset=false`. No hay más propiedades.
 
-Este es un predicado solo de filtrado y no puede aprovechar un índice de búsqueda.
+Este es un predicado solo de filtrado y no puede utilizar un índice de búsqueda.
 
 Admite la extracción de facetas y proporciona dos contenedores para recursos principales y secundarios.
 
@@ -202,7 +202,7 @@ Admite la extracción de facetas y proporciona dos contenedores para recursos pr
 
 Este predicado encuentra elementos que son miembros de un grupo específico [colección de recursos de sling](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
-Este es un predicado solo de filtrado y no puede aprovechar un índice de búsqueda.
+Este es un predicado solo de filtrado y no puede utilizar un índice de búsqueda.
 
 No admite la extracción de facetas.
 
@@ -244,8 +244,7 @@ No admite la extracción de facetas.
 * **`path`** : define el patrón de ruta.
    * Según la variable `exact` , el subárbol completo coincidirá (como anexar) `//*` en xpath, pero tenga en cuenta que esto no incluye la ruta base) o solo coincide una ruta exacta, que puede incluir caracteres comodín (`*`).
       * El valor predeterminado es `true`
-&lt;!— * Si la variable 
-`self`se ha establecido, se buscará en todo el subárbol, incluido el nodo base.—>
+&lt;!— * Si la variable `self`se establece, se busca en todo el subárbol, incluido el nodo base.—>
 * **`exact`** - si `exact` es `true`, la ruta exacta debe coincidir, pero puede contener caracteres comodín simples (`*`), que coinciden con los nombres, pero no con `/`; si es `false` (predeterminado) se incluyen todos los descendientes (opcional)
 * **`flat`** : busca solo los elementos secundarios directos (como anexar `/*` en xpath) (solo se utiliza si `exact` no es true, opcional)
 * **`self`** : busca en el subárbol pero incluye el nodo base dado como ruta (sin comodines).
@@ -267,7 +266,7 @@ Admite la extracción de facetas y proporciona bloques para cada valor de propie
    * `equals` para coincidencia exacta (predeterminado)
    * `unequals` para comparación de desigualdad
    * `like` para usar el `jcr:like` función xpath (opcional)
-   * `not` para que no haya coincidencia (por ejemplo, `not(@prop)` en xpath, el parámetro value se ignorará)
+   * `not` para que no haya coincidencia (por ejemplo, `not(@prop)` en xpath, el parámetro value se omite)
    * `exists` para comprobación de existencia
       * `true` la propiedad debe existir
       * `false` es igual que `not` y es el valor predeterminado

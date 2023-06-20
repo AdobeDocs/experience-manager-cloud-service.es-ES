@@ -2,9 +2,9 @@
 title: Notas de la versión 2021.9.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.9.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1570'
 ht-degree: 38%
 
 ---
@@ -42,8 +42,8 @@ Eche un vistazo a la [Información general de la versión de septiembre de 2021]
 
 * Ahora puede ordenar los recursos mostrados en los resultados de búsqueda en las vistas Columna y Tarjeta. El orden funciona en las columnas Nombre, Creada, Modificada o Ninguna.
 
-   ![Ordenar los resultados de búsqueda en [!DNL Assets] en las vistas Columna y Tarjeta](/help/assets/assets/sort-searched-assets.png)
-   *Imagen: ordenación de los resultados de búsqueda en [!DNL Assets] en las vistas Columna y Tarjeta.*
+  ![Ordenar los resultados de búsqueda en [!DNL Assets] en las vistas Columna y Tarjeta](/help/assets/assets/sort-searched-assets.png)
+  *Imagen: ordenación de los resultados de búsqueda en [!DNL Assets] en las vistas Columna y Tarjeta.*
 
 * Para invocar el procesamiento mediante programación utilizando los microservicios de recursos, se introduce una nueva API. Los desarrolladores ahora pueden aplicar un perfil de procesamiento de nivel de carpeta existente a uno o varios recursos específicos de una carpeta. El perfil de procesamiento se aplica en función de las actualizaciones de propiedades de metadatos personalizadas. Consulte `AssetProcessor` en el [[!DNL Experience Manager] Referencia de API](https://www.adobe.io/experience-manager/reference-materials/). Como antes, es posible [uso de microservicios de recursos desde la interfaz de usuario](/help/assets/asset-microservices-configure-and-use.md).
 
@@ -91,11 +91,11 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 * AEM La nueva pestaña &quot;Contenido de comercio asociado&quot; del editor de Sites aumenta la eficacia del autor al obtener acceso rápidamente al contenido de producto relevante para el contexto actual
 
-   ![Contenido de comercio asociado](/help/assets/CIF/associated-commerce-content.png)
+  ![Contenido de comercio asociado](/help/assets/CIF/associated-commerce-content.png)
 
 * Se ha mejorado la interfaz de usuario del selector de productos para mejorar la experiencia del usuario, aumentar la eficacia y admitir catálogos de productos complejos
 
-   ![Nuevo selector de productos](/help/assets/CIF/product-picker.png)
+  ![Nuevo selector de productos](/help/assets/CIF/product-picker.png)
 
 * Respetar la propiedad &quot;include_in_menu&quot; en el componente de navegación
 
@@ -145,7 +145,7 @@ Lea el [documentación](/help/security/configuring-advanced-networking.md) para 
 
 **Optimizaciones de índice**
 
-Para mejorar el rendimiento de las consultas de búsqueda y la indexación, el índice de texto completo lucene-2 ya no se utiliza de forma predeterminada en [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] de esta versión. AEM AEM Con el fin de eliminar este índice de texto completo en entornos de de acuerdo con los clientes, Adobe Engineering trabaja de forma individual y proactiva con los clientes para eliminar de forma suave y sostenible el índice de texto completo de Lucene. Visite la [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentación](/help/operations/indexing.md#index-optimizations) para obtener más información y póngase en contacto con nuestro servicio de asistencia directamente si tiene alguna pregunta.
+Para mejorar el rendimiento de las consultas de búsqueda y la indexación, el índice de texto completo lucene-2 ya no se utiliza de forma predeterminada en [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] de esta versión. AEM AEM Para eliminar este índice de texto completo en entornos de de acuerdo con los clientes, Adobe Engineering trabaja de forma individual y proactiva con los clientes para eliminar de forma suave y sostenible el índice de texto completo de Lucene. Visite la [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentación](/help/operations/indexing.md#index-optimizations) para obtener más información y póngase en contacto con nuestro servicio de asistencia directamente si tiene alguna pregunta.
 
 ## Cloud Manager {#cloud-manager}
 

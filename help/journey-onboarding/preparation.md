@@ -2,10 +2,10 @@
 title: Preparación de la incorporación
 description: Antes de iniciar el proceso de incorporación, hay que realizar una serie de pasos preparatorios que el administrador del sistema debe conocer antes de iniciar sesión en el sistema.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Tras leer este documento, comprenderá lo siguiente:
 * Cómo afecta ese contrato al proceso de incorporación.
 * Cómo prepararse para su llamada de incorporación.
 
-No se preocupe si no está familiarizado con todos los términos utilizados en esta página. Se explicarán en la próxima parte del recorrido.
+No se preocupe si no está familiarizado con todos los términos utilizados en esta página. Los términos se explican en la siguiente parte del recorrido.
 
 ## Vídeo {#video}
 
@@ -48,7 +48,7 @@ Una vez firmado el contrato, Adobe aprovisionará sus entornos, se enviará un c
 
 ## Aprovisionar el sistema {#provisioning}
 
-Una vez firmado el contrato, todos los entornos de la nube de AEM cubiertos por el contrato se aprovisionarán automáticamente mediante Adobe. Estos entornos también se vincularán a sus programas en Cloud Manager (más información sobre este tema más adelante en el recorrido). Estos entornos de nube de AEM se incluyen en cada suscripción de AEM as a Cloud Service y suelen estar compuestos por al menos un entorno de producción, un entorno de ensayo y, opcionalmente, uno o más entornos de desarrollo o prueba.
+AEM Una vez firmado el contrato, el Adobe aprovisiona automáticamente todos los entornos en la nube de la cubiertos por el contrato. Estos entornos también se vincularán a sus programas en Cloud Manager (más información sobre este tema más adelante en el recorrido). Estos entornos de nube de AEM se incluyen en cada suscripción de AEM as a Cloud Service y suelen estar compuestos por al menos un entorno de producción, un entorno de ensayo y, opcionalmente, uno o más entornos de desarrollo o prueba.
 
 ## Llamada de incorporación {#onboarding-call}
 
@@ -60,7 +60,7 @@ Los asistentes de su organización deben ser los siguientes:
 * Profesionales técnicos
 * Su socio de implementación
 
-Adobe estará representado por los siguientes profesionales:
+El Adobe está representado por:
 
 * Especialista en incorporación
 * Su administrador técnico de cuentas (según corresponda)

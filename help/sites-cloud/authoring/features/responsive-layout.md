@@ -2,10 +2,10 @@
 title: Diseño adaptable
 description: AEM le permite crear un diseño adaptable para sus páginas.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 68%
+source-wordcount: '1764'
+ht-degree: 67%
 
 ---
 
@@ -28,11 +28,11 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
 
 * Componente [**Contenedor de diseño**](#adding-a-layout-container-and-its-content-edit-mode)
 
-   Este componente está disponible en el [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) y proporciona un sistema de párrafos de red que le permite añadir y colocar componentes en una cuadrícula interactiva. También se puede establecer como sistema de párrafos predeterminado en la página.
+  Este componente está disponible en el [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) y proporciona un sistema de párrafos de red que le permite añadir y colocar componentes en una cuadrícula interactiva. También se puede establecer como sistema de párrafos predeterminado en la página.
 
 * [**Modo de diseño**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
-   Después de colocar el contenedor de diseño en la página, puede usar el modo de **diseño** para colocar el contenido en la red interactiva.
+  Después de colocar el contenedor de diseño en la página, puede usar el modo de **diseño** para colocar el contenido en la red interactiva.
 
 * [**Emulador**](#selecting-a-device-to-emulate) Esta opción le permite crear y editar sitios web interactivos que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
 
@@ -123,7 +123,6 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
    * La línea para el pliegue no se mostrará si la altura del dispositivo que se está emulando es mayor que el tamaño de pantalla.
    * El pliegue se muestra para la comodidad del autor y no aparece en la página publicada.
 
-
 ## Adición de un contenedor de diseño y su contenido (modo de edición) {#adding-a-layout-container-and-its-content-edit-mode}
 
 Un **contenedor de diseño** es un sistema de párrafos que:
@@ -189,53 +188,53 @@ En el modo Diseño, se pueden realizar varias acciones en una cuadrícula:
 
 * Cambie el tamaño de los componentes de contenido mediante los puntos azules. El cambio de tamaño siempre se ajustará a la cuadrícula. Al cambiar el tamaño de la cuadrícula de fondo se mostrará para ayudar a la alineación:
 
-   ![Cambiar el tamaño de los componentes](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+  ![Cambiar el tamaño de los componentes](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
-   >[!NOTE]
-   >
-   >Se mantendrán las proporciones y relaciones al cambiar el tamaño de componentes como **Imágenes**.
+  >[!NOTE]
+  >
+  >Las proporciones y relaciones se mantienen cuando componentes como **Imágenes** se han cambiado de tamaño.
 
 * Haga clic o toque un componente de contenido. La barra de herramientas le permite efectuar las siguientes acciones:
    * **Principal**: le permite seleccionar todos los componentes del contenedor de diseños para efectuar acciones en conjunto.
    * **Flotar a una línea nueva**: se mueve el componente a una línea nueva, según el espacio disponible en la cuadrícula.
    * **Ocultar componente**: el componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseños).
 
-   ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
+  ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
 * En el modo **Diseño** puede pulsar o hacer clic en **Arrastrar componentes aquí** para seleccionar el componente completo. Se mostrará la barra de herramientas de este modo.
 
-   La barra de herramientas tendrá diferentes opciones en función del estado del componente de diseño y de los componentes que le pertenecen. Por ejemplo:
+  La barra de herramientas tendrá diferentes opciones en función del estado del componente de diseño y de los componentes que le pertenecen. Por ejemplo:
 
    * **Principal**: seleccione el componente principal.
 
-      ![Botón Principal](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+     ![Botón Principal](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
    * **Mostrar componentes ocultos**: permite mostrar todos los componentes o cada componente por separado. El número indica cuántos componentes ocultos existen en ese momento. El contador muestra cuántos componentes hay ocultos.
 
-      ![Botón Mostrar componentes ocultos](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
+     ![Botón Mostrar componentes ocultos](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
    * **Revertir diseño del punto de interrupción**: permite recuperar el diseño predeterminado. Es decir, no se aplicará ningún diseño personalizado.
 
-      ![Botón Revertir diseño de punto de interrupción](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+     ![Botón Revertir diseño de punto de interrupción](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
    * **Flotar hasta una nueva línea**: suba el componente una posición si el espacio lo permite.
 
-      ![Botón Flotar a una línea nueva](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+     ![Botón Flotar a una línea nueva](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
    * **Ocultar componente**: oculte el componente actual.
 
-      ![Ocultar botón de componente](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-   >[!NOTE]
-   >
-   >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
+     ![Ocultar botón de componente](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
 
-   * **Mostrar los componentes** 
-Seleccione los componentes principales para mostrar la barra de herramientas de acciones con la 
-Opción **Mostrar componentes ocultos**. En este ejemplo, hay dos componentes ocultos.
+  >[!NOTE]
+  >
+  >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
 
-      ![Mostrar componentes](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-   Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.
+   * **Mostrar los componentes:** permite seleccionar los componentes principales para mostrar la barra de herramientas de acciones con la opción **Mostrar componentes ocultos**. En este ejemplo, hay dos componentes ocultos.
 
-   ![Botón Restaurar todo](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+     ![Mostrar componentes](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 
-   La selección de la opción **Restaurar todo** permitirá que se muestren todos los componentes ocultos.
+  Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.
+
+  ![Botón Restaurar todo](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+
+  La selección de la opción **Restaurar todo** permitirá que se muestren todos los componentes ocultos.

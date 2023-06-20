@@ -2,10 +2,10 @@
 title: Editar programas
 description: Obtenga información sobre cómo editar los programas de producción y de zonas protegidas para ajustar sus opciones después de crearlas.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: ht
-source-wordcount: '525'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ Siga estos pasos para editar un programa.
 
 Cada vez que se edita un programa, incluida la adición o eliminación de una solución o complemento, esos cambios surtirán efecto después de la siguiente implementación.
 
-Si el programa de producción tiene habilitada la seguridad mejorada, aparece la pestaña adicional **Seguridad mejorada** en la ventana **Editar programa** para confirmar que la funcionalidad está activa para el programa.
+Si el programa de producción tenía habilitada la seguridad mejorada, se requiere un **Seguridad mejorada** está disponible en la **Editar programa** para confirmar que la función está activa para el programa.
 
 ![Seguridad mejorada activa para un programa](assets/edit-program-enhanced.png)
 

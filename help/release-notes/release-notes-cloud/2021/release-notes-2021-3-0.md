@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.3.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 41%
+source-wordcount: '1295'
+ht-degree: 37%
 
 ---
 
@@ -90,7 +90,7 @@ La próxima versión está planificada para el 08 de abril de 2021.
 
 ### Novedades {#what-is-new-march}
 
-* Los clientes con entornos con configuraciones de nombre de dominio personalizado preexistentes para [listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) y [nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verán un mensaje sobre las configuraciones existentes anteriormente y podrán servirse automáticamente a través de la interfaz de usuario.
+* Clientes con entornos con configuraciones de nombre de dominio personalizado preexistentes para [LISTAS DE PERMITIDOS IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) y [Nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) vea un mensaje sobre las configuraciones existentes anteriormente y puede autoabastecerse mediante la interfaz de usuario de.
 
 * Los usuarios con los permisos necesarios ahora pueden editar un programa, lo que les permite hacer lo siguiente en forma de autoservicio:
 
@@ -128,7 +128,7 @@ La próxima versión está planificada para el 08 de abril de 2021.
 
 * En ocasiones, el usuario podía ver el estado “activo” verde junto a una lista de IP permitidas incluso cuando esa configuración no se implementaba.
 
-* Todas las canalizaciones de producción existentes se habilitarán automáticamente con el paso Auditoría de experiencias.
+* Todas las canalizaciones de producción existentes se habilitan automáticamente con el paso Auditoría de experiencias.
 
 ## Herramienta de transferencia de contenido {#content-transfer-tool}
 

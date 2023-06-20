@@ -2,10 +2,10 @@
 title: 'Cómo ponerlo todo junto: su aplicación y su contenido en AEM sin encabezado'
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, aprenda a lanzar su proyecto de AEM, incluidos los fragmentos de contenido, las llamadas de GraphQL, las llamadas de la API REST y la aplicación, para prepararlo para su puesta en marcha.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 100%
+source-wordcount: '1065'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ El objetivo de este artículo es ayudarle a comprender cómo montar su aplicaci�
 
 ## El SDK de AEM {#the-aem-sdk}
 
-El SDK de AEM se utiliza para crear e implementar código personalizado. Es la principal herramienta que necesita para desarrollar y probar su aplicación sin encabezado antes de ponerla en marcha. Contiene los siguientes artefactos:
+El SDK de AEM se utiliza para crear e implementar código personalizado. Es la herramienta principal que necesita para poder desarrollar y probar su aplicación sin encabezado antes de lanzarla. Contiene los siguientes artefactos:
 
 * Jar de inicio rápido: un archivo Jar ejecutable que se puede utilizar para configurar una instancia de autor y de publicación
 * Herramientas de Dispatcher: el módulo de Dispatcher y sus dependencias para los sistemas basados en Windows y UNIX®
@@ -64,7 +64,7 @@ Node.js es un entorno de tiempo de ejecución de JavaScript que se utiliza para 
 
 A continuación, veremos las partes que constituyen el entorno de AEM.
 
-Un entorno de AEM completo está formado por un Autor, una Publicación y un Dispatcher. Estos mismos componentes están disponibles durante la ejecución del desarrollo local para que le resulte más fácil previsualizar el código y el contenido antes de ponerlo en marcha.
+Un entorno de AEM completo está formado por un Autor, una Publicación y un Dispatcher. Estos mismos componentes están disponibles en el tiempo de ejecución de desarrollo local para que pueda facilitar la previsualización del código y el contenido antes de lanzarse.
 
 * **El servicio de creación** es donde los usuarios internos crean, administran y previsualizan contenido.
 
@@ -84,7 +84,7 @@ En un sistema de producción, Dispatcher y el servidor de HTTP, Apache, siempre 
 
 ## Vista previa del código y el contenido localmente con el entorno de desarrollo local {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-Para preparar el proyecto AEM sin encabezado para su lanzamiento, debe asegurarse de que todas las partes constitutivas del proyecto funcionen correctamente.
+AEM Para preparar el proyecto sin encabezado de la para su lanzamiento, debe asegurarse de que todas las partes constitutivas del proyecto funcionen correctamente.
 
 Para ello, hay que juntar todo: código, contenido y configuración, y probarlo en un entorno de desarrollo local para estar preparado para la puesta en marcha.
 

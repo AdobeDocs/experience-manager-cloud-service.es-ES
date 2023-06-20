@@ -2,10 +2,10 @@
 title: Obtenga más información acerca del desarrollo de CMS sin encabezado
 description: En esta parte del recorrido para desarrolladores de contenido sin encabezado de AEM, aprenda acerca de la tecnología sin encabezado y por qué la utilizaría.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 7ded4f891f5ab5c1562044772ea3304fc07b173e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Este documento le ayuda a comprender la entrega de contenido sin encabezado y po
 
 ## Entrega de contenido de pila completa {#full-stack}
 
-Desde que han surgido los sistemas de administración de contenido (CMS) a gran escala, fáciles de usar, las organizaciones los han aprovechado como una ubicación central que permite administrar mensajes, marcas y comunicaciones. El uso de CMS como punto central para administrar experiencias ha mejorado la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
+Desde el surgimiento de los sistemas de administración de contenido (CMS) fáciles de usar y a gran escala, las organizaciones los han utilizado como una ubicación central para administrar la mensajería, la marca y las comunicaciones. El uso de CMS como punto central para administrar experiencias ha mejorado la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
 
 ![El CMS de pila completa clásico](assets/full-stack.png)
 
@@ -84,7 +84,7 @@ Sigue siendo necesario contar con API de REST sólidas. Sin embargo, las solicit
 
 La entrega de contenido sin encabezado suele utilizar las API de GraphQL. GraphQL permite una transferencia sin estado similar, pero permite consultas más específicas, reduce el número total de consultas necesarias y mejora el rendimiento. Es habitual ver que las soluciones utilizan una mezcla de REST y GraphQL, eligiendo esencialmente la mejor herramienta para el trabajo en cuestión.
 
-Independientemente de cuál sea su API elegida, al definir un sistema sin encabezado basado en API comunes, puede aprovechar el explorador más reciente y otras tecnologías web, como aplicaciones web progresivas (PWA). Las API crean una interfaz estándar que es fácilmente ampliable y adaptable.
+Independientemente de la API que elija, al definir un sistema sin encabezado basado en API comunes, puede utilizar la última tecnología de explorador y otras tecnologías web, como aplicaciones web progresivas (PWA). Las API crean una interfaz estándar que es fácilmente ampliable y adaptable.
 
 Normalmente, el contenido se representa en el lado del cliente. Normalmente, esto significa que alguien llama a su contenido en un dispositivo móvil, su CMS envía el contenido y, a continuación, el dispositivo móvil (el cliente) es responsable de procesar el contenido que ha servido. Si el dispositivo es antiguo o lento, la experiencia digital también es lenta.
 
@@ -110,7 +110,7 @@ A medida que continúe con este recorrido para desarrolladores, aprenderá cómo
 
 Como líder del sector en la administración de experiencias digitales, Adobe se da cuenta de que la solución ideal a los desafíos del mundo real que enfrentan los creadores de experiencias rara vez es una opción binaria. Por este motivo, AEM no solo admite ambos modelos, sino que también permite de forma exclusiva la combinación híbrida continua de los dos, fusionando las ventajas del contenido sin encabezado y de pila completa, para ayudarle a servir mejor a los consumidores de su contenido, independientemente del lugar en que se encuentren.
 
-Este recorrido se centra en el modelo de entrega de contenido sin encabezado únicamente. Sin embargo, una vez que tenga este conocimiento fundacional, puede explorar más a fondo cómo aprovechar el poder de ambos modelos.
+Este recorrido se centra en el modelo de entrega de contenido sin encabezado únicamente. Sin embargo, una vez que tenga este conocimiento básico, puede explorar aún más cómo utilizar el poder de ambos modelos.
 
 ## Siguientes pasos {#what-is-next}
 

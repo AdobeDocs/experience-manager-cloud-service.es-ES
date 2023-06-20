@@ -2,10 +2,10 @@
 title: Habilitación de AEM Screens para el sitio de demostración
 description: Conozca los pasos para habilitar la experiencia completa de AEM Screens as a Cloud Service en su sitio de demostración.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2699'
-ht-degree: 98%
+source-wordcount: '2696'
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ La última imagen de los canales de entrada también está dirigida (es decir, m
 
 ## Implementación de un proyecto de Screens de demostración {#deploy-project}
 
-Para utilizar el contenido de demostración en la zona protegida creada en el paso [Creación de un programa](create-program.md), debe crearse un sitio basado en una plantilla.
+Para utilizar el contenido de demostración en la zona protegida creada en [Crear programa](create-program.md) Paso, se debe crear un sitio basado en una plantilla.
 
 Si aún no ha creado un sitio de demostración de We.Cafe, solo tiene que seguir los mismos pasos que en la sección [Creación de un sitio de muestra](create-site.md). Al seleccionar la plantilla, simplemente elija **Plantilla del sitio web de We.Cafe**.
 
@@ -207,7 +207,7 @@ Ahora que ha creado su fuente de datos como hoja de cálculo de Hojas de cálcul
    }
    ```
 
-AEM Screens puede utilizar este mismo servicio para acceder a los datos meteorológicos simulados. Esto se configurará en el siguiente paso.
+AEM Screens puede utilizar este mismo servicio para acceder a los datos meteorológicos simulados que se configuran en el siguiente paso.
 
 ### Configurar ContextHub {#configure-contexthub}
 

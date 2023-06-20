@@ -2,10 +2,10 @@
 title: Reglas de calidad del código personalizadas
 description: Esta página describe las reglas de calidad del código personalizadas ejecutadas por Cloud Manager como parte de las pruebas de calidad del código. Se basan en las prácticas recomendadas de ingeniería de Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '3508'
-ht-degree: 100%
+source-wordcount: '3504'
+ht-degree: 98%
 
 ---
 
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Gravedad**: Crítico
 * **Desde**: Versión 2018.6.0
 
-Al ejecutar solicitudes HTTP desde una aplicación de Experience Manager, es esencial asegurarse de que se han configurado los tiempos de espera adecuados para evitar un consumo de hilos innecesario. Lamentablemente, el comportamiento predeterminado de ambos clientes HTTP predeterminados de Java™ (`java.net.HttpUrlConnection`) y el cliente de componentes HTTP de Apache que se utiliza con frecuencia es nunca emplear el tiempo de espera, por lo que se debe establecer explícitamente. Además, como práctica recomendada, estos tiempos de espera no deben superar los 60 segundos.
+Al ejecutar solicitudes HTTP desde una aplicación Experience Manager, es fundamental asegurarse de que se han configurado los tiempos de espera adecuados para evitar un consumo innecesario de subprocesos. Lamentablemente, el comportamiento predeterminado de ambos clientes HTTP predeterminados de Java™ (`java.net.HttpUrlConnection`) y el cliente de componentes HTTP de Apache que se utiliza con frecuencia es nunca emplear el tiempo de espera, por lo que se debe establecer explícitamente. Además, como práctica recomendada, estos tiempos de espera no deben superar los 60 segundos.
 
 #### Código no conforme {#non-compliant-code-2}
 
@@ -811,7 +811,7 @@ Los clientes que utilizan la replicación inversa deben ponerse en contacto con 
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Las bibliotecas de cliente de Experience Manager pueden contener recursos estáticos como imágenes y fuentes. Como se describe en el documento [Uso de preprocesadores,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) al utilizar bibliotecas cliente proxy, estos recursos estáticos deben estar contenidos en una carpeta secundaria denominada `resources` para que se pueda consultar en las instancias de publicación.
+Las bibliotecas de cliente de Experience Manager pueden contener recursos estáticos como imágenes y fuentes. Como se describe en el documento [Uso de preprocesadores,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) cuando se utilizan bibliotecas cliente proxy, estos recursos estáticos deben estar contenidos en una carpeta secundaria denominada `resources` para que se haga referencia de forma efectiva en las instancias de publicación.
 
 #### Código no conforme {#non-compliant-proxy-enabled}
 

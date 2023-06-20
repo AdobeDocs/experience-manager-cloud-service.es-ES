@@ -2,9 +2,9 @@
 title: Implementación de un evaluador de predicados personalizado para el Generador de consultas
 description: AEM El Generador de consultas de ofrece una forma fácil y personalizable de consultar el repositorio de contenido en la que se encuentra
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,6 @@ Un predicado personalizado también podría realizar otras acciones que no son d
 >
 >* [Abra el proyecto aem-search-custom-predicate-evaluator en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 >* Descargue el proyecto como [un archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
-
 
 >[!NOTE]
 >
@@ -106,7 +105,7 @@ En primer lugar, debe actualizar las dependencias Maven del proyecto. El `Predic
 
 >[!NOTE]
 >
->El ámbito de la `cq-search` la dependencia se establece en `provided` porque `cq-search` será proporcionada por el `OSGi` contenedor.
+>El ámbito de la `cq-search` la dependencia se establece en `provided` porque `cq-search` es proporcionada por el `OSGi` contenedor.
 
 El siguiente fragmento muestra las diferencias en la variable `pom.xml` archivo, en [formato de diferencia unificado](https://en.wikipedia.org/wiki/Diff#Unified_format)
 

@@ -2,9 +2,9 @@
 title: Ampliación [!DNL Adobe Experience Manager] as a Cloud Service con el Generador de aplicaciones de Adobe Developer.
 description: Ampliación [!DNL Adobe Experience Manager] as a Cloud Service con el Generador de aplicaciones de Adobe Developer.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ App Builder proporciona un marco de trabajo de extensibilidad unificado de terce
 
 App Builder permite a los clientes ampliar fácilmente Adobe Experience Manager en varios casos de uso:
 
-* Extensibilidad de middleware: conecte sistemas externos con aplicaciones de Adobe creando conectores personalizados o aproveche un conjunto de integraciones prediseñadas.
+* Extensibilidad de middleware: conecte sistemas externos con aplicaciones de Adobe creando conectores personalizados o utilice un conjunto de integraciones prediseñadas.
 * Extensibilidad de los servicios principales: amplíe las funciones de las aplicaciones principales ampliando el comportamiento predeterminado con funciones personalizadas y lógica empresarial.
 * Extensibilidad de la experiencia del usuario: amplíe la experiencia principal para satisfacer los requisitos comerciales o cree propiedades digitales, tiendas y aplicaciones de back-office específicas para el cliente.
 
@@ -27,18 +27,18 @@ App Builder está disponible para clientes y socios empresariales a través de n
 
 >[!NOTE]
 >
-> AEM Para los clientes de 6.5 que desean aprovechar el Generador de aplicaciones, vaya a [Ampliación de Adobe Experience Manager 6.5 con el Generador de aplicaciones de Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+> AEM Para los clientes de 6.5 que deseen utilizar el Generador de aplicaciones, consulte [Ampliación de Adobe Experience Manager 6.5 con el Generador de aplicaciones de Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## Arquitectura {#architecture}
 
 En lugar de una solución predeterminada, Adobe Developer App Builder proporciona una plataforma de desarrollo común, coherente y estandarizada para ampliar las soluciones de Adobe AEM Cloud, como las siguientes:
 
 * Consola de Adobe Developer: para el desarrollo personalizado de microservicios y extensiones, permite a los desarrolladores crear y administrar proyectos al mismo tiempo que acceden a todas las herramientas y API que necesitan para crear complementos e integraciones.
-* Herramientas para desarrolladores: herramientas de código abierto, SDK y bibliotecas para permitir a los desarrolladores crear fácilmente integraciones y extensiones personalizadas. Utilice React Spectrum (kit de herramientas de IU de Adobe) para tener una IU común para todas las aplicaciones de Adobe.
+* Herramientas para desarrolladores: herramientas de código abierto, SDK y bibliotecas para permitir a los desarrolladores crear fácilmente integraciones y extensiones personalizadas. Utilice React Spectrum (Kit de herramientas de IU de Adobe) para tener una IU común para todas las aplicaciones de Adobe.
 * Servicios: I/O Runtime para alojar infraestructura en nuestra plataforma sin servidor y eventos de I/O para integraciones basadas en eventos. También proporcionamos soporte listo para usar para almacenar datos y archivos.
 * Adobe Experience Cloud: los desarrolladores pueden enviar extensiones e integraciones para que se publiquen dentro de su organización de Experience Cloud. Los administradores del sistema pueden revisar, administrar y aprobar estas extensiones. Una vez publicadas, las extensiones y herramientas personalizadas del Generador de aplicaciones se pueden encontrar junto con otras aplicaciones de Adobe Experience Cloud.
 
-El diagrama siguiente ilustra cómo una aplicación estándar creada en App Builder aprovecha estas funcionalidades:
+El diagrama siguiente ilustra cómo una aplicación estándar creada en el Generador de aplicaciones utiliza estas funcionalidades:
 
 ![Arquitectura](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 

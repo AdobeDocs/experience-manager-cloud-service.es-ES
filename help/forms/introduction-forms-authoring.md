@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2409'
-ht-degree: 100%
+source-wordcount: '2408'
+ht-degree: 97%
 
 ---
 
@@ -24,20 +24,20 @@ ht-degree: 100%
 Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. [!DNL AEM Forms] proporciona una interfaz de usuario intuitiva y componentes predeterminados para crear y trabajar con formularios adaptables. Puede elegir crear un formulario adaptable en base a un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente un modelo del formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y activos de infraestructura existentes. Puede elegir entre las siguientes opciones para crear un formulario adaptable:
 
 * **Usar un modelo de datos de formulario**
-   La [integración de datos](data-integration.md) permite integrar entidades y servicios de distintos orígenes de datos en un modelo de datos de formulario que se puede utilizar para crear formularios adaptables. Seleccione un modelo de datos de formulario si el formulario adaptativo que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
+  La [integración de datos](data-integration.md) permite integrar entidades y servicios de distintos orígenes de datos en un modelo de datos de formulario que se puede utilizar para crear formularios adaptables. Seleccione un modelo de datos de formulario si el formulario adaptativo que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
 * **Usar una plantilla de formulario XDP**
 Es un modelo de formulario ideal si tiene inversiones en formularios XFA o XDP. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Cualquier regla XFA existente se conservará en el formulario adaptable asociado. El formulario adaptable resultante admitirá construcciones XFA, como validaciones, eventos, propiedades y patrones.
 
 * **Usar una definición de esquema XML (XSD) o un esquema JSON**
-Los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema estarán disponibles para su uso en la pestaña Objetos del modelo de datos del explorador de contenido al crear formularios adaptables.
+Los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles para su uso en la pestaña Objetos del modelo de datos del Explorador de contenido al crear Forms adaptable.
 
 * **Usar ninguno o no usar un modelo de formulario**
 Los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
 
-   >[!NOTE]
-   >
-   > Puede modificar las propiedades del modelo de formulario desde el editor de formularios adaptables o el editor de plantillas de formulario adaptable. Para obtener más información, consulte [Editar las propiedades del modelo de formulario de un formulario adaptable](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  >[!NOTE]
+  >
+  > Puede modificar las propiedades del modelo de formulario desde el editor de formularios adaptables o el editor de plantillas de formulario adaptable. Para obtener más información, consulte [Editar las propiedades del modelo de formulario de un formulario adaptable](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Para crear un formulario adaptable, consulte [Creación de un formulario adaptable](creating-adaptive-form.md).
 
@@ -91,17 +91,17 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
 
 * **Explorador de propiedades**
 
-   Permite editar las propiedades de un componente. Las propiedades cambian según el componente. Para ver las propiedades del contenedor de formulario adaptable, haga lo siguiente:
+  Permite editar las propiedades de un componente. Las propiedades cambian según el componente. Para ver las propiedades del contenedor de formulario adaptable, haga lo siguiente:
 
-   Seleccione un componente y, a continuación, pulse ![nivel de campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, pulse ![propiedades](assets/Smock_Wrench_18_N.svg).
+  Seleccione un componente y, a continuación, pulse ![nivel de campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, pulse ![propiedades](assets/Smock_Wrench_18_N.svg).
 
 * **Explorador de activos**
 
-   Segmenta contenido de distintos tipos, como imágenes, documentos, páginas, películas, etc.
+  Segmenta contenido de distintos tipos, como imágenes, documentos, páginas, películas, etc.
 
 * **Explorador de componentes**
 
-   Incluye componentes que puede utilizar para crear un formulario adaptable. Puede arrastrar componentes desde y hasta el formulario adaptable para agregar elementos de formulario y configurar los elementos agregados según los requisitos. En la siguiente tabla se describen los componentes enumerados en el explorador de componentes.
+  Incluye componentes que puede utilizar para crear un formulario adaptable. Puede arrastrar componentes desde y hasta el formulario adaptable para agregar elementos de formulario y configurar los elementos agregados según los requisitos. En la siguiente tabla se describen los componentes enumerados en el explorador de componentes.
 
 <table>
  <tbody>
@@ -151,7 +151,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Correo electrónico</td>
-   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Archivo adjunto</td>
@@ -191,7 +191,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Panel</td>
-   <td><p>Agrega un panel o subpanel.</p> <p>También puede agregar un componente de panel desde la barra de herramientas del panel principal mediante el botón <span class="uicontrol">Agregar panel secundario</code>. Del mismo modo, puede agregar una barra de herramientas específica de un panel mediante el botón <span class="uicontrol">Agregar barra de herramientas del panel</code>. Puede configurar la posición de la barra de herramientas del panel mediante el cuadro de diálogo Editar panel.</code></code></p> </td>
+   <td><p>Agrega un panel o subpanel.</p> <p>También puede agregar un componente de panel desde la barra de herramientas del panel principal mediante la variable <span class="uicontrol">Agregar panel secundario</code> botón. Del mismo modo, puede agregar una barra de herramientas específica de un panel mediante la variable <span class="uicontrol">Agregar barra de herramientas del panel</code> botón. Puede configurar la posición de la barra de herramientas del panel mediante el cuadro de diálogo Editar panel.</p> </td>
   </tr>
   <tr>
    <td>Cuadro de contraseña</td>

@@ -2,9 +2,9 @@
 title: Externalización de direcciones URL
 description: El externalizador es un servicio OSGi que le permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,7 @@ Para definir una asignación de dominio para el servicio externalizador:
 
       * Se recomienda utilizar https para aplicar vínculos https.
       * Se utiliza si el código de cliente no anula el esquema al solicitar la externalización de una dirección URL.
+
    * **`server`** es el nombre de host (un nombre de dominio o una dirección ip).
    * **`port`** (opcional) es el número de puerto.
    * **`contextpath`** AEM (opcional) solo se establece si se instala la aplicación web como una aplicación web en una ruta de contexto diferente.
@@ -102,11 +103,11 @@ Esta sección muestra algunos ejemplos de cómo se puede utilizar el servicio Ex
 
 * **Para externalizar una ruta con el dominio &quot;publicar&quot;:**
 
-   ```java
-   String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
+  ```
 
-   Suponiendo la asignación de dominio:
+  Suponiendo la asignación de dominio:
 
    * `publish https://www.website.com`
 
@@ -116,11 +117,11 @@ Esta sección muestra algunos ejemplos de cómo se puede utilizar el servicio Ex
 
 * **Para externalizar una ruta con el dominio &quot;author&quot;:**
 
-   ```java
-   String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
+  ```
 
-   Suponiendo la asignación de dominio:
+  Suponiendo la asignación de dominio:
 
    * `author https://author.website.com`
 
@@ -130,11 +131,11 @@ Esta sección muestra algunos ejemplos de cómo se puede utilizar el servicio Ex
 
 * **Para externalizar una ruta con el dominio &quot;local&quot;:**
 
-   ```java
-   String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
+  ```
 
-   Suponiendo la asignación de dominio:
+  Suponiendo la asignación de dominio:
 
    * `local https://publish-3.internal`
 

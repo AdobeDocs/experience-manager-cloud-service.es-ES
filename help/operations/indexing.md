@@ -2,10 +2,10 @@
 title: Búsqueda de contenido e indexación
 description: Búsqueda de contenido e indexación
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2491'
-ht-degree: 78%
+source-wordcount: '2481'
+ht-degree: 73%
 
 ---
 
@@ -20,8 +20,8 @@ A continuación se muestra una lista de los principales cambios en comparación 
 1. Los usuarios ya no tendrán acceso al Administrador de índices de una sola instancia de AEM para depurar, configurar o mantener la indexación. Solo se utiliza para implementaciones y desarrollos locales.
 1. Los usuarios no cambiarán los índices en una única instancia de AEM ni tendrán que preocuparse por las comprobaciones de coherencia o la reindexación.
 1. En general, los cambios de índice se inician antes de ir a producción para no eludir las puertas de enlace de calidad en las canalizaciones CI/CD de Cloud Manager y no tener impacto en los KPI empresariales en producción.
-1. Todas las métricas relacionadas, incluido el rendimiento de búsqueda en producción, estarán disponibles para los clientes en tiempo de ejecución para proporcionar una vista integral de los temas de Búsqueda e Indexación.
-1. Los clientes podrán configurar alertas según sus necesidades.
+1. Todas las métricas relacionadas, incluido el rendimiento de búsqueda en producción, están disponibles para los clientes en tiempo de ejecución para proporcionar una vista integral de los temas de Búsqueda e Indexación.
+1. Los clientes pueden configurar alertas según sus necesidades.
 1. Los SRE supervisan el estado del sistema las 24 horas del día y los siete días de la semana, y adoptarán las medidas necesarias lo antes posible.
 1. La configuración del índice se cambia mediante implementaciones. Los cambios en la definición del índice se configuran como otros cambios en el contenido.
 1. AEM A un alto nivel sobre el as a Cloud Service de la, con la introducción de la [modelo de implementación móvil](#index-management-using-rolling-deployments) existirán dos conjuntos de índices: un conjunto para la versión antigua y otro conjunto para la nueva.
@@ -257,7 +257,7 @@ La tabla siguiente muestra cinco definiciones de índice: `cqPageLucene` se util
 | /oak:index/acme.product-custom-2 | No | No | Sí |
 | /oak:index/cqPageLucene | Sí | Sí | Sí |
 
-El número de versión se incrementa cada vez que se cambia el índice. Para evitar que los nombres de índice personalizados entren en conflicto con los nombres de índice del propio producto, los índices personalizados, así como los cambios en los índices externos, deben terminar con `-custom-<number>`.
+El número de versión se incrementa cada vez que se cambia el índice. Para evitar que los nombres de índice personalizados entren en conflicto con los nombres de índice del propio producto, los índices personalizados, así como los cambios en los índices predeterminados, deben terminar con `-custom-<number>`.
 
 ### Cambios en los índices predeterminados {#changes-to-out-of-the-box-indexes}
 

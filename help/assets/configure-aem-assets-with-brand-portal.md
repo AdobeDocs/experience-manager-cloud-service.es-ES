@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 42927eec458553121f70b74a54f0f26eb616a13e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 12%
+source-wordcount: '2529'
+ht-degree: 13%
 
 ---
 
@@ -61,7 +61,7 @@ Puede activar Brand Portal al crear los entornos de producción para su Experien
 >
 >Brand Portal debe activarse en la misma organización de IMS que de Experience Manager Assets como [!DNL Cloud Service] ejemplo.
 >
->Si tiene una configuración de nube de Brand Portal existente ([configurado manualmente con la consola de Adobe Developer](#manual-configuration)) para una organización de IMS (org1-existing) y su Experience Manager Assets as a [!DNL Cloud Service] está configurada para otra organización de IMS (org2-new), la activación de Brand Portal desde Cloud Manager restablece la organización de IMS de Brand Portal a `org2-new`. Aunque la configuración de nube configurada manualmente en `org1-existing` será visible en la instancia de autor de Experience Manager Assets, pero ya no estará en uso después de activar Brand Portal desde Cloud Manager.
+>Si tiene una configuración de nube de Brand Portal existente ([configurado manualmente con la consola de Adobe Developer](#manual-configuration)) para una organización de IMS (org1-existing) y su Experience Manager Assets as a [!DNL Cloud Service] está configurada para otra organización de IMS (org2-new), la activación de Brand Portal desde Cloud Manager restablece la organización de IMS de Brand Portal a `org2-new`. Aunque la configuración de nube configurada manualmente en `org1-existing` es visible en la instancia de autor de Experience Manager Assets, pero ya no estará en uso después de activar Brand Portal desde Cloud Manager.
 >
 >Si la configuración de nube de Brand Portal existente y Experience Manager Assets as a [!DNL Cloud Service] Las instancias de utilizan la misma organización de IMS (org1), solo debe activar Brand Portal desde Cloud Manager.
 >
@@ -116,6 +116,7 @@ Realice los siguientes pasos para validar la conexión entre su Experience Manag
    * **processing-queue**: para la distribución de recursos a Brand Portal.
 
    * **error-queue**: para los recursos en los que la distribución ha fallado.
+
    >[!NOTE]
    >
    >Se recomienda revisar los errores y borrar la **cola de errores** periódicamente.
@@ -339,7 +340,7 @@ Ahora puede utilizar el ID de cliente (clave de API), el secreto de cliente y la
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information is used to create IMS account configuration.
 
 -->
 
@@ -533,11 +534,11 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)

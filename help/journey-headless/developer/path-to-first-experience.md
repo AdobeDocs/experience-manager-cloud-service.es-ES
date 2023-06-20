@@ -2,10 +2,10 @@
 title: Ruta hacia la primera experiencia para usar AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de AEM sin encabezado, comprenderá los pasos para aplicar su primera experiencia sin encabezado en AEM, incluidas las consideraciones de planificación, y también aprenderá las prácticas recomendadas para que su ruta sea lo más fluida posible.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2014'
-ht-degree: 100%
+source-wordcount: '2013'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Independientemente de AEM, también debe asegurarse de tener configurado un ento
 
 ### Definición de los modelos de contenido y las API {#defining-models}
 
-Debe impulsar una experiencia coherente y administrar campañas personalizadas en todos los canales, de modo que pueda ver cada canal individual y superficie como su propia estructura de contenido distinta a la que enviar. Sin embargo, tener cada canal con su propio modelo de contenido será difícil de mantener.
+Debe impulsar una experiencia coherente y administrar campañas personalizadas en todos los canales, de modo que pueda ver cada canal individual y superficie como su propia estructura de contenido distinta a la que enviar. Sin embargo, tener cada canal con su propio modelo de contenido es difícil de mantener.
 
 En su lugar, debe tener en cuenta cómo se relaciona el contenido en diferentes superficies basándose en los principios de la organización, como jerarquías de productos y marcas, categorías de bienes o superficies o pasos en el recorrido del cliente. Por ejemplo, si tiene un conjunto de superficies que admiten una marca específica de automóviles que fabrica, puede que desee comenzar con un modelo de contenido para obtener información general que sea verdadera para todo el automóvil, y que luego tenga elementos más específicos, como el contenido necesario, desde cuando el automóvil comience a funcionar hasta que haya problemas con el servicio. Este modelo impondrá la herencia del contenido general de la marca del automóvil, al tiempo que permitirá cambios basados en el contexto específico necesario. También le ayudará a gestionar las actualizaciones de este contenido en el futuro, ya que puede aplicar un control basándose en las funciones como la de experto en marketing general o gestor de productos para toda la marca, frente a un autor responsable de la experiencia de “arrancar el automóvil”.
 
@@ -86,7 +86,7 @@ También puede consultar los [recursos adicionales](#additional-resources) para 
 
 ## Implementación de su primera aplicación de AEM sin encabezado
 
-Se trata de información general de lo que necesita para implementar su primera aplicación de AEM sin encabezado para entregar su contenido. La forma de llevar a cabo estos pasos se describirá en detalle en partes posteriores del Recorrido para desarrolladores de contenido sin encabezado.
+Se trata de información general de lo que necesita para implementar su primera aplicación de AEM sin encabezado para entregar su contenido. La forma de llevar a cabo estos pasos se describirá en detalle en partes posteriores del Recorrido para desarrolladores sin encabezado.
 
 1. Crear los modelos de fragmentos de contenido
 1. Crear fragmentos de contenido

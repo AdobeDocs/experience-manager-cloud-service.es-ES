@@ -2,10 +2,10 @@
 title: Introducción a la administración de certificados SSL
 description: Descubra cómo Cloud Manager le proporciona herramientas de autoservicio para instalar certificados SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 79%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 100%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=es" text="Ver, actualizar y reemplazar un certificado SSL"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=es" text="Comprobar el estado de un certificado SSL"
 
-Cloud Manager le proporciona herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio para los usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros como Let’s Encrypt.
+Cloud Manager le proporciona herramientas de autoservicio para instalar y administrar certificados SSL de modo que pueda proteger su sitio para los usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros como Let&#39;s Encrypt.
 
 ## Introducción a los certificados {#certificates}
 
 Las empresas utilizan certificados SSL para proteger sus sitios web y permitir a sus clientes confiar en ellos. Para utilizar el protocolo SSL, un servidor web requiere el uso de un certificado SSL.
 
-Cuando una entidad solicita un certificado de una entidad emisora de certificados, esta completa un proceso de verificación. Esto puede abarcar desde verificar el control de nombres de dominio hasta recopilar documentos de registro de empresas y acuerdos de suscriptores. Una vez verificada la información de una entidad, la entidad emisora de certificados firmará su clave pública con la clave privada de la entidad emisora de certificados. Dado que todas las autoridades de certificados principales tienen certificados raíz en los exploradores web, el certificado de la entidad se vinculará a través de una *cadena de confianza* y el explorador web lo reconocerá como un certificado de confianza.
+Cuando una entidad solicita un certificado de una entidad emisora de certificados, esta completa un proceso de verificación. Esto puede abarcar desde verificar el control de nombres de dominio hasta recopilar documentos de registro de empresas y acuerdos de suscriptores. Una vez verificada la información de una entidad, la entidad emisora de certificados firmará su clave pública con la clave privada de la entidad emisora de certificados. Dado que todas las autoridades de certificados principales tienen certificados raíz en los exploradores web, el certificado de la entidad se vincula a través de una *cadena de confianza* y el explorador web lo reconocerá como un certificado de confianza.
 
 >[!IMPORTANT]
 >
@@ -47,7 +47,7 @@ Cloud Manager es compatible con las siguientes opciones de uso de certificados S
 AEM as a Cloud Service solo admite `https` sitios web seguros.
 
 * Los clientes con varios dominios personalizados no querrán cargar un certificado cada vez que agreguen un dominio.
-* Estos clientes se beneficiarán de obtener un certificado con varios dominios.
+* Estos clientes se benefician de obtener un certificado con varios dominios.
 
 ## Requisitos  {#requirements}
 

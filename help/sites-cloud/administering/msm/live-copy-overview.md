@@ -1,13 +1,13 @@
 ---
 title: Información general de Live Copy
-description: Obtenga información acerca de los conceptos básicos de la consola de información general de Live Copy para comprender enseguida el estado de las Live Copies y sincronizar el contenido.
+description: Obtenga información acerca de los conceptos básicos de la consola de información general de Live Copy para comprender rápidamente el estado de las Live Copies para sincronizar contenido.
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ La **Información general de Live Copy** se puede abrir desde el panel lateral *
 La **Información general de Live Copy** se puede abrir al ver las propiedades de una página de modelo:
 
 1. Abra las **Propiedades** de la página de modelo adecuada.
-1. Abra la pestaña **Modelo**, la **Información general de Live Copy** se mostrará en la barra de herramientas superior:
+1. Abra el **Modelo** pestaña: la **Información general de Live Copy** se muestra en la barra de herramientas superior:
 
    ![Pestaña Propiedades del modelo](../assets/live-copy-blueprint-tab.png)
 
@@ -72,7 +72,7 @@ Por ejemplo, una configuración de despliegue se define como `targetActivate`. P
 La **Información general de Live Copy** también se puede utilizar para llevar a cabo acciones en Live Copy:
 
 1. Abra la **Información general de Live Copy**.
-1. Seleccione el modelo necesario o la página de Live Copy y la barra de herramientas se actualizará para mostrar las acciones disponibles. Las [acciones](overview.md#terms-used) disponibles dependen de si escoge una página de [modelo](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page).
+1. Seleccione el modelo necesario o la página de Live Copy y la barra de herramientas se actualiza para mostrar las acciones disponibles. Las [acciones](overview.md#terms-used) disponibles dependen de si escoge una página de [modelo](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page).
 
 ### Acciones para una página de modelo {#actions-for-a-blueprint-page}
 

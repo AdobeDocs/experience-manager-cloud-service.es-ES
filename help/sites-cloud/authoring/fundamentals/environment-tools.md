@@ -2,10 +2,10 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2157'
-ht-degree: 62%
+source-wordcount: '2154'
+ht-degree: 61%
 
 ---
 
@@ -46,7 +46,7 @@ Más [los recursos relacionados con la ayuda están disponibles en las consolas]
 
 ## Navegador de componentes   {#components-browser}
 
-Los componentes son la base del contenido de AEM. Puede colocar varios componentes en una página y configurar sus opciones para crear la página de contenido con AEM.
+Los componentes son la base del contenido de AEM. AEM Puede colocar varios componentes en una página y configurar sus opciones para crear la página de contenido con los que se va a crear la página de contenido.
 
 El navegador de componentes muestra todos los componentes que se pueden utilizar en la página actual. Se pueden arrastrar a la ubicación adecuada y, a continuación, editar para añadir contenido.
 
@@ -60,21 +60,21 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
 * **Dispositivo móvil (por ejemplo, iPad)**
 
-   El navegador de componentes cubre completamente la página que se está editando.
+  El navegador de componentes cubre completamente la página que se está editando.
 
-   Para añadir un componente a su página, mantenga pulsado el componente necesario y muévalo hacia la derecha (el navegador de componentes se cerrará para volver a mostrar la página), donde podrá colocar el componente.
+  Para añadir un componente a su página, mantenga pulsado el componente necesario y muévalo hacia la derecha (el navegador de componentes se cerrará para volver a mostrar la página), donde podrá colocar el componente.
 
-   ![Navegador de componentes en dispositivos móviles](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
+  ![Navegador de componentes en dispositivos móviles](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **Dispositivo de escritorio**
 
-   El navegador de componentes se abre en la parte izquierda de la ventana.
+  El navegador de componentes se abre en la parte izquierda de la ventana.
 
-   Para añadir un componente a su página, haga clic en el componente requerido y arrástrelo a la ubicación requerida.
+  Para añadir un componente a su página, haga clic en el componente requerido y arrástrelo a la ubicación requerida.
 
-   ![Navegador de componentes en dispositivos de escritorio](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+  ![Navegador de componentes en dispositivos de escritorio](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-   Los componentes se representan mediante
+  Los componentes se representan mediante
 
    * Nombre del componente
    * Grupo de componentes (en gris)
@@ -82,16 +82,16 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
       * Los iconos de los componentes estándar son monocromos.
       * Las abreviaturas siempre están formadas por los dos primeros caracteres del nombre del componente.
 
-   Desde la barra de herramientas superior del explorador de **componentes**, puede realizar las siguientes acciones:
+  Desde la barra de herramientas superior del explorador de **componentes**, puede realizar las siguientes acciones:
 
    * Filtrar componentes por su nombre.
    * Restringir la visualización a un grupo específico mediante la selección desplegable.
 
-   Para obtener una descripción más detallada del componente, puede hacer clic o pulsar el icono de información situado junto al componente en el navegador de **componentes** (si está disponible). Por ejemplo, para el **fragmento de contenido**:
+  Para obtener una descripción más detallada del componente, puede hacer clic o pulsar el icono de información situado junto al componente en el navegador de **componentes** (si está disponible). Por ejemplo, para el **fragmento de contenido**:
 
-   ![Información del explorador de componentes](/help/sites-cloud/authoring/assets/component-browser-information.png)
+  ![Información del explorador de componentes](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
-   Para obtener más información sobre los componentes disponibles, consulte la [Consola de componentes](/help/sites-cloud/authoring/features/components-console.md).
+  Para obtener más información sobre los componentes disponibles, consulte la [Consola de componentes](/help/sites-cloud/authoring/features/components-console.md).
 
 >[!NOTE]
 >
@@ -136,19 +136,19 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
 * **Dispositivo móvil**
 
-   El explorador de recursos cubre completamente la página que se está editando.
+  El explorador de recursos cubre completamente la página que se está editando.
 
-   Para añadir un recurso a su página, toque y mantenga presionado el recurso necesario y, a continuación, muévalo hacia la derecha: el explorador de recursos se cerrará para mostrar de nuevo la página, donde puede añadir el recurso al componente requerido.
+  Para añadir un recurso a su página, toque y mantenga presionado el recurso necesario y, a continuación, muévalo hacia la derecha: el explorador de recursos se cerrará para mostrar de nuevo la página, donde puede añadir el recurso al componente requerido.
 
-   ![Explorador de recursos en dispositivos móviles](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
+  ![Explorador de recursos en dispositivos móviles](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **Dispositivo de escritorio**
 
-   El explorador de recursos se abre en la parte izquierda de la ventana.
+  El explorador de recursos se abre en la parte izquierda de la ventana.
 
-   Para añadir un recurso a su página, haga clic en el recurso necesario y arrástrelo a la ubicación o el componente necesarios.
+  Para añadir un recurso a su página, haga clic en el recurso necesario y arrástrelo a la ubicación o el componente necesarios.
 
-   ![Explorador de recursos en dispositivos de escritorio](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
+  ![Explorador de recursos en dispositivos de escritorio](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ Cuando abra el panel lateral, se deslizará para abrirse (de izquierda a derecha
 
 Una página puede estar compuesta fácilmente por muchos componentes del mismo tipo, por lo que el árbol de contenido (componentes) muestra un texto descriptivo (en gris) después del nombre del tipo de componente (en negro). El texto descriptivo proviene de propiedades comunes del componente, como título o texto.
 
-Los tipos de componente se mostrarán en el idioma del usuario, mientras que el texto de descripción del componente procede del idioma de la página.
+Los tipos de componente se muestran en el idioma del usuario, mientras que el texto de descripción del componente proviene del idioma de la página.
 
 Si hace clic en las comillas angulares que aparecen junto a un componente, se contraerá o expandirá ese nivel.
 
@@ -182,13 +182,13 @@ Al hacer clic en el componente, se resaltará el componente en el editor de pág
 
 * Por ejemplo, una página básica:
 
-   ![Árbol de contenido resaltado](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
+  ![Árbol de contenido resaltado](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
-   Los componentes de una página básica tienen las opciones habituales.
+  Los componentes de una página básica tienen las opciones habituales.
 
-   Si el componente en el que hace clic en el árbol se puede editar, aparecerá un icono de llave inglesa a la derecha del nombre. Al hacer clic en este icono, se iniciará directamente el cuadro de diálogo de edición del componente.
+  Si el componente en el que hace clic en el árbol se puede editar, aparecerá un icono de llave inglesa a la derecha del nombre. Al hacer clic en este icono, se iniciará directamente el cuadro de diálogo de edición del componente.
 
-   ![Botón Editar árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+  ![Botón Editar árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
 * Una página que forma parte de una [Live Copy](/help/sites-cloud/administering/msm/overview.md), donde los componentes se heredan de otra página.
 
@@ -285,7 +285,6 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* Existe un [método abreviado de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).
 >
 
-
 ## Selección de la ruta {#path-selection}
 
 A menudo, durante la creación es necesario seleccionar otro recurso, como al definir un vínculo a otra página o recurso o al seleccionar una imagen. Para seleccionar fácilmente una ruta, [campos de ruta](#path-fields) oferta de autocompletar y la [explorador de rutas](#path-browser) permite una selección más sólida.
@@ -316,7 +315,7 @@ El navegador de rutas está organizado como la [vista de columna](/help/sites-cl
 * En cualquier momento puede utilizar el campo de búsqueda en la parte superior del cuadro de diálogo. Haga clic en **X** en el campo de búsqueda para borrar la búsqueda.
 * Para limitar la búsqueda, puede mostrar las opciones de filtro y filtrar los resultados en función de una ruta determinada.
 
-   ![Opción Filtros](/help/sites-cloud/authoring/assets/filters-option.png)
+  ![Opción Filtros](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## Métodos abreviados de teclado {#keyboard-shortcuts}
 

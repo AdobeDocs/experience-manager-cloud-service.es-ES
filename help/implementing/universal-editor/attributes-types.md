@@ -2,10 +2,10 @@
 title: Atributos y tipos
 description: Obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 100%
+source-wordcount: '659'
+ht-degree: 84%
 
 ---
 
@@ -29,8 +29,8 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 | `itemprop` | Para el atributo del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
 | `itemtype` | Tipo del elemento editable (por ejemplo, texto, imagen, referencia, etc.) |
 | `data-editor-itemfilter` | Define qué referencias se pueden utilizar |
-| `data-editor-itemlabel` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor. <br>Si `itemmodel` está configurado, la etiqueta se recupera mediante el modelo. |
-| `data-editor-itemmodel` | Define un modelo que se usará para la edición basada en formularios en el carril de propiedades |
+| `data-editor-itemlabel` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor <br>En caso de `itemmodel` se define, la etiqueta se recupera a través del modelo |
+| `data-editor-itemmodel` | Define un modelo que se utiliza para la edición basada en formularios en el carril de propiedades |
 | `data-editor-behavior` | Define el comportamiento de una instrumentación, por ejemplo, el texto independiente o la imagen también pueden imitar un componente para que se pueda mover o eliminar |
 
 ## Tipos de elementos {#item-types}
@@ -38,10 +38,10 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 | `itemtype` | Descripción | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
 |---|---|---|---|---|---|---|---|
 | `text` | El texto se puede editar dentro de las etiquetas HTML, pero solo en formato de texto simple, no tiene un formato de texto enriquecido disponible. Se suele utilizar en los componentes del título, por ejemplo. | Opcional | Requerido | N/D | Opcional | N/D | Opcional |
-| `richtext` | El texto se puede editar con capacidades de texto enriquecido completas. El RTE se muestra en el panel derecho | Opcional | Requerido | N/D | Opcional | N/D | Opcional |
+| `richtext` | El texto se puede editar con capacidades de texto enriquecido completas. RTE se muestra en el panel derecho | Opcional | Requerido | N/D | Opcional | N/D | Opcional |
 | `media` | El elemento editable es un recurso, por ejemplo, una imagen o un vídeo | Opcional | Requerido | Opcional<br>lista de criterios de filtro de imagen o vídeo que se pasan al selector de recursos | Opcional | N/D | Opcional |
 | `container` | El comportamiento editable se comporta como un contenedor para componentes, también conocido como Sistema de párrafos. | Depende <br>consultar más abajo | Depende <br>consultar más abajo | Opcional<br>una lista de componentes permitidos | Opcional | N/D | N/D |
-| `component` | El componente editable es un componente. No agrega funcionalidad adicional, será necesario para indicar partes móviles o eliminables del DOM y para abrir el carril de propiedades y sus campos | Requerido | N/D | N/D | Opcional | Opcional | N/D |
+| `component` | El componente editable es un componente. No agrega funciones adicionales, es necesario para indicar partes móviles/eliminables del DOM y para abrir el carril de propiedades y sus campos | Requerido | N/D | N/D | Opcional | Opcional | N/D |
 | `reference` | Lo editable es una referencia, por ejemplo, un fragmento de contenido, de experiencia o producto. | Depende <br>consultar más abajo | Depende <br>consultar más abajo | Opcional<br>lista de criterios de filtro de fragmento de contenido, producto o fragmento de experiencia que se pasan al selector de referencia | Opcional | Opcional | N/D |
 
 Dependiendo del caso de uso, `itemprop` o `itemid` pueden no ser obligatorios. Por ejemplo:
@@ -59,8 +59,8 @@ Dependiendo del caso de uso, `itemprop` o `itemid` pueden no ser obligatorios. P
 
 Para obtener más información acerca del editor universal, consulte estos documentos.
 
-* [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
-* [Creación de contenido con el editor universal](authoring.md): aprenda lo fácil e intuitivo que es para los autores de contenido crear contenido con el editor universal.
+* [Introducción al editor universal](introduction.md) - Descubra cómo el editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para que pueda ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de desarrollador avanzada.
+* [Creación de contenido con el editor universal](authoring.md): aprenda lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
 * [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el publicado.
 * [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 * [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.

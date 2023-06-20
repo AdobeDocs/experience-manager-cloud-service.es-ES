@@ -1,24 +1,24 @@
 ---
 title: Recorridos de documentación de AEM
-description: Los Recorridos de documentación proporcionan una estructura narrativa dentro de la documentación de AEM al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
+description: Los Recorrido AEM de documentación proporcionan una estructura narrativa dentro de la documentación de la documentación de al unir funciones complejas y dispares para que pueda solucionar un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1352'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
 # Recorridos de documentación de AEM {#aem-documentation-journeys}
 
-Los Recorridos de documentación proporcionan una estructura narrativa dentro de la documentación de AEM al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
+Los Recorrido AEM de documentación proporcionan una estructura narrativa dentro de la documentación de la documentación de al unir funciones complejas y dispares para que pueda solucionar un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
 
 ## ¿Qué es un Recorrido de documentación? {#what-is}
 
 Un Recorrido de documentación une muchos temas y características diferentes y complejos. Proporciona una narrativa que ayuda al lector (que puede ser nuevo en AEM) a entender y resolver un problema empresarial de principio a fin, mientras asume un conocimiento previo mínimo de AEM.
 
-Los Recorridos de documentación se contrastan con documentos técnicos existentes de AEM que se centran principalmente en una única función y documentación de tareas, suponiendo que estén familiarizados con AEM. Al centrarse en los conceptos y diferir los detalles en profundidad a la documentación técnica existente, los Recorridos de documentación proporcionan a los lectores nuevos en AEM un punto de partida para comprender cómo se puede aprovechar la plataforma mediante las prácticas recomendadas para satisfacer las necesidades y los flujos de trabajo empresariales comunes. Por este motivo, los Recorridos de documentación sirven como complemento y no como sustituto de la [documentación técnica existente de AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es)
+Los Recorridos de documentación se contrastan con documentos técnicos existentes de AEM que se centran principalmente en una única función y documentación de tareas, suponiendo que estén familiarizados con AEM. Al centrarse en los conceptos y diferir los detalles en profundidad a la documentación técnica existente, los Recorrido AEM de documentación proporcionan a los lectores nuevos un lugar para empezar a comprender cómo se puede utilizar la plataforma mediante las prácticas recomendadas para satisfacer las necesidades y los flujos de trabajo empresariales comunes. Por este motivo, los Recorridos de documentación sirven como complemento y no como sustituto de la [documentación técnica existente de AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es)
 
 ### Aprender Por Narrativa {#narrative}
 
@@ -82,7 +82,7 @@ Los Recorridos de documentación están pensados como un complemento de la docum
 
 ## ¿Qué recorridos hay? {#journeys}
 
-Ya hay disponibles varios recorridos de documentación. Dado que cada recorrido está diseñado como una narrativa, empiece con la introducción y siga leyendo hasta el final para entender el tema en el contexto de AEM.
+Ya hay disponibles varios recorridos de documentación. Dado que cada recorrido AEM está diseñado como una narrativa, empiece con la introducción y siga leyendo hasta el final para que pueda comprender el tema en el contexto de la.
 
 | Recorrido | Descripción |
 |---|---|

@@ -2,10 +2,10 @@
 title: Introducción a la traducción sin encabezado AEM
 description: Conozca cómo organizar su contenido sin encabezado y cómo funcionan las herramientas de traducción de AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 100%
+source-wordcount: '1407'
+ht-degree: 95%
 
 ---
 
@@ -64,7 +64,7 @@ El contenido de AEM, ya sea páginas web tradicionales o sin encabezado, está i
 
 ## Cómo AEM almacena el contenido sin encabezado {#headless-content-in-aem}
 
-Para el especialista en traducción, no es importante comprender en profundidad cómo AEM administra el contenido sin encabezado. Sin embargo, familiarizarse con los conceptos básicos y la terminología resultará útil, ya que más adelante utilizará las herramientas de traducción de AEM. Lo más importante es que debe comprender su propio contenido y cómo está estructurado para traducirlo de forma eficaz.
+Para el especialista en traducción, no es importante comprender en profundidad cómo AEM administra el contenido sin encabezado. AEM Sin embargo, familiarizarse con los conceptos básicos y la terminología es útil, ya que más adelante utiliza herramientas de traducción de la. Lo más importante es que debe comprender su propio contenido y cómo está estructurado para que pueda traducirlo de forma eficaz.
 
 ### Modelos de contenido {#content-models}
 
@@ -153,7 +153,7 @@ La estructura final puede tener un aspecto similar al siguiente.
         |- ...
 ```
 
-Debe tomar nota de la ruta específica del contenido, ya que será necesaria más adelante para configurar la traducción.
+Debe tomar nota de la ruta específica del contenido, ya que es necesaria más adelante para configurar la traducción.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Desarrollo de un componente personalizado para Screens as a Cloud Service
 description: El siguiente tutorial muestra los pasos para crear un componente personalizado para AEM Screens. AEM Screens AEM reutiliza muchos patrones de diseño y tecnologías existentes de otros productos de la. El tutorial destaca las diferencias y las consideraciones especiales al desarrollar para AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2106'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ El código fuente de un proyecto de Screens se suele administrar como un proyect
 
    Representación del código ui.apps en CRXDE Lite
 
-   El **helloworld** actualmente solo es un marcador de posición. A lo largo del tutorial, se añadirá una funcionalidad que permitirá al autor actualizar el mensaje mostrado por el componente.
+   El **helloworld** actualmente solo es un marcador de posición. A lo largo del tutorial, se añade una funcionalidad que permite al autor actualizar el mensaje mostrado por el componente.
 
 1. El **screens-weretail-run.ui.content** instala el código debajo de:
 
@@ -242,7 +242,7 @@ AEM Screens tiene algunas restricciones interesantes que no son necesariamente v
                                    jcr:primaryType="nt:unstructured"
                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
                                    defaultValue=""
-                                   fieldDescription="Amount of time the image will be shown in the sequence, in milliseconds"
+                                   fieldDescription="Amount of time the image is shown in the sequence, in milliseconds"
                                    fieldLabel="Duration (ms)"
                                    min="0"
                                    name="./duration"/>
@@ -265,7 +265,7 @@ AEM Screens tiene algunas restricciones interesantes que no son necesariamente v
 
 AEM Las bibliotecas del lado del cliente proporcionan un mecanismo para organizar y administrar los archivos CSS y JavaScript necesarios para una implementación de la.
 
-Los componentes de AEM Screens se representan de forma diferente en el modo de edición frente al modo de previsualización/producción. Se crearán dos bibliotecas de cliente, una para el modo de edición y otra para la vista previa/producción.
+Los componentes de AEM Screens se representan de forma diferente en el modo de edición frente al modo de previsualización/producción. Se crean dos bibliotecas de cliente: una para el modo de edición y otra para la vista previa/producción.
 
 1. Cree una carpeta para las bibliotecas del lado del cliente para el componente Hello World.
 
@@ -411,6 +411,7 @@ El componente Hello World está diseñado para utilizarse en un canal de secuenc
 1. Paso de plantilla: elegir **Canal de secuencia**
 
    1. Paso Propiedades
+
    * Pestaña básica > Título = **Canal inactivo**
    * Pestaña Canal > marcar **Canal en línea**
 

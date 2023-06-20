@@ -2,10 +2,10 @@
 title: Cómo hacer un lanzamiento con su aplicación sin encabezado
 description: En esta parte del recorrido para desarrolladores de AEM sin encabezado, aprenda a implementar un lanzamiento de la aplicación sin encabezado tomando su código local en Git y mudándolo a Cloud Manager Git para la canalización de integración continua/entrega continua (CI/CD).
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 100%
+source-wordcount: '1067'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ Para preparar su aplicación AEM sin encabezado para el lanzamiento, siga las pr
    * Utilice consultas persistentes siempre que sea posible.
    * Proporcione el tiempo de duración (TTL) de la red de distribución de contenido (CDN) por encima de 600 segundos para que la CDN los almacene en la caché.
    * AEM calcula el impacto de un cambio de modelo en las consultas existentes.
-* Divida los archivos JSON o consultas GraphQL entre tasas de cambio de contenido bajas y altas para reducir el tráfico de clientes a la CDN y asignar un TTL más alto. Esto minimiza la CDN que vuelve a validar el JSON con el servidor de origen.
+* Divida los archivos JSON y las consultas de GraphQL entre una tasa de cambio de contenido baja y alta para que pueda reducir el tráfico del cliente a CDN y asignar un TTL más alto. Esto minimiza la CDN que vuelve a validar el JSON con el servidor de origen.
 * Para invalidar activamente el contenido de la CDN, utilice la depuración leve. Esto permite a la CDN volver a descargar el contenido sin provocar una pérdida de caché.
 
 ## Mejora del tiempo para descargar contenido sin encabezado {#improve-download-time}
@@ -101,7 +101,7 @@ Siga estas prácticas recomendadas como enfoque general de la depuración:
 
 ### Registro de un error con asistencia {#logging-a-bug-with-support}
 
-Para registrar de forma eficaz un error con el servicio de asistencia en caso de que necesite más ayuda, siga estos pasos:
+Para registrar un error de forma eficaz con la asistencia técnica en caso de que necesite asistencia adicional, haga lo siguiente:
 
 * Tome capturas de pantalla del problema, si es necesario.
 * Documente una manera de reproducir el problema.

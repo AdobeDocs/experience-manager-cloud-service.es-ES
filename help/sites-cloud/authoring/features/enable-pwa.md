@@ -2,10 +2,10 @@
 title: Activación de las funciones progresivas de la aplicación web
 description: AEM Sites permite al autor del contenido habilitar funcionalidades de aplicación web progresiva en cualquier sitio a través de una configuración sencilla, en lugar de programarlas.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ A través de una configuración sencilla, un autor de contenido ahora puede habi
 >* Comprensión de las estrategias de almacenamiento en caché
 >* Asistencia de su equipo de desarrollo
 >
->Antes de utilizar esta función, se recomienda hablar con su equipo de desarrollo para definir la mejor manera de aprovecharla para su proyecto.
+>Antes de utilizar esta función, se recomienda hablar con su equipo de desarrollo para definir la mejor manera de utilizarla para su proyecto.
 
 ## Introducción {#introduction}
 
@@ -50,7 +50,7 @@ Estos son pasos técnicos que el autor deberá coordinar con el equipo de desarr
 
 ### Usar componentes principales {#adjust-components}
 
-La versión 2.15.0 y posteriores de los componentes principales admiten completamente las funciones de PWA de AEM Sites. Dado que AEMaaCS siempre incluye la versión más reciente de los componentes principales, puede aprovechar las funciones de PWA listas para usarse. El proyecto AEMaaCS cumple automáticamente este requisito.
+La versión 2.15.0 y posteriores de los componentes principales admiten completamente las funciones de PWA de AEM Sites. Dado que AEMaaCS siempre incluye la versión más reciente de los componentes principales, puede utilizar las funciones de PWA listas para usarse. El proyecto AEMaaCS cumple automáticamente este requisito.
 
 >[!NOTE]
 >
@@ -122,7 +122,6 @@ Cuando se cumplen [los requisitos previos](#prerequisites), es muy fácil para u
       * `/etc/clientlibs/<sitename>`
 
       ![Defina rutas sin conexión del PWA](../assets/pwa-offline.png)
-
 
 1. Haga clic o pulse en **Guardar y cerrar**.
 

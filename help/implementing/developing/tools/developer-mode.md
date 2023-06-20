@@ -4,9 +4,9 @@ seo-title: Developer Mode
 description: El modo de desarrollador abre un panel lateral con varias pestañas que proporcionan al desarrollador información sobre la página actual
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,6 @@ Esto ayuda a un desarrollador a lo siguiente:
 >* No está disponible en dispositivos móviles ni en ventanas pequeñas en equipos de escritorio (debido a restricciones de espacio).
 >  * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
 >* Solo está disponible para los usuarios que son miembros de `administrators` grupo.
-
 
 ## Abriendo modo de desarrollador {#opening-developer-mode}
 
@@ -73,7 +72,7 @@ Cada entrada de componente puede tener las siguientes opciones:
    * Todos los scripts de componente utilizados para procesar el componente.
    * La ruta de contenido del repositorio para este componente específico.
 
-      ![Ver detalles](assets/developer-mode-view-details.png)
+     ![Ver detalles](assets/developer-mode-view-details.png)
 
 * **Editar script:** Un vínculo que abre el script del componente en CRXDE Lite.
 
@@ -93,4 +92,4 @@ Espero que el **Errores** La pestaña siempre estará vacía (como se muestra ar
 * Una advertencia si el componente escribe una entrada en el registro de errores, junto con detalles del error y vínculos directos al código adecuado dentro de CRXDE Lite.
 * Advertencia si el componente abre una sesión de administración.
 
-Por ejemplo, si se llama a un método indefinido, el error resultante se mostrará en la variable **Errores** y la entrada de componente en el árbol del **Componentes** La pestaña también se marca con un indicador cuando se produce un error.
+Por ejemplo, si se llama a un método indefinido, el error resultante se muestra en la variable **Errores** y la entrada de componente en el árbol del **Componentes** La pestaña también se marca con un indicador cuando se produce un error.

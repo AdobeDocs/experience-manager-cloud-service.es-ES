@@ -2,10 +2,10 @@
 title: Tablero de licencias
 description: Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: d5e0ca924dee50d7dd4f9057010b1a39780b4352
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 97%
 
 ---
 
@@ -79,7 +79,7 @@ Las solicitudes de contenido tendrán variaciones con las herramientas de inform
 | Grupos de informes | Las páginas que forman parte de la misma instancia de AEM y del mismo dominio pueden enviar datos a diferentes grupos de informes de Analytics. |
 | Herramientas de seguridad y monitorización de terceros | Las herramientas de monitorización y análisis de seguridad pueden generar solicitudes de contenido para AEM que no se rastrean en informes de Analytics. |
 | Solicitudes de recuperación previa | El uso de un servicio de recuperación previa para cargar previamente las páginas a fin de aumentar la velocidad puede provocar aumentos significativos en el tráfico de las solicitudes de contenido. |
-| DDOS | Mientras que Adobe hace todo lo posible por detectar y filtrar automáticamente el tráfico de los ataques de DDOS, no hay garantías de que se detecten todos los ataques de DDOS posibles |
+| DDOS | Mientras que Adobe hace todo lo posible para detectar y filtrar automáticamente el tráfico de los ataques de DDOS, no hay garantías de que se detecten todos los ataques de DDOS posibles |
 | Bloqueadores de tráfico | El uso de un bloqueador de tráfico en un explorador puede excluir el seguimiento de algunas solicitudes. |
 | Firewalls | Los firewalls pueden bloquear el seguimiento de Analytics. Es más frecuente con los firewalls corporativos. |
 

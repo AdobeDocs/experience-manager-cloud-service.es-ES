@@ -1,9 +1,9 @@
 ---
 title: Regiones de publicación adicionales
 description: AEM Descubra cómo el as a Cloud Service admite regiones de publicación adicionales para aumentar la disponibilidad y reducir la latencia.
-source-git-commit: 9fccc1672aad243b648115e657396be1ce4ed614
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '545'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Las regiones de publicación adicionales se aplican a entornos de ensayo y produ
 
 ## Consideraciones avanzadas de red {#advanced-networking-considerations}
 
-Cuando se habilita una región de publicación adicional en un programa con una red avanzada ya configurada, el tráfico en la región de publicación adicional que coincide con las reglas de red avanzadas se enrutará de forma predeterminada a través de la región principal. Para aprovechar la mayor disponibilidad, se recomienda habilitar redes avanzadas en las regiones adicionales.
+Cuando se habilita una región de publicación adicional en un programa con una red avanzada ya configurada, el tráfico en la región de publicación adicional que coincide con las reglas de red avanzadas se enrutará de forma predeterminada a través de la región principal. Para aprovechar la mayor disponibilidad, se recomienda habilitar una red avanzada en las regiones adicionales.
 
 Consulte la [Configuración avanzada de redes para regiones de publicación adicionales](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) en la documentación de Redes avanzadas para obtener más información, incluido cómo agregar configuraciones de red avanzadas a regiones adicionales sin incurrir en pérdida de conectividad.
 

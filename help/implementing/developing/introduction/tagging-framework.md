@@ -1,10 +1,10 @@
 ---
 title: Marco de trabajo de etiquetado de AEM
-description: AEM Etiquete contenido y aproveche la infraestructura de etiquetado de la para categorizarlo y organizarlo.
+description: AEM Etiquete el contenido y utilice la infraestructura de etiquetado de la para categorizarlo y organizarlo.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ El etiquetado permite clasificar y organizar el contenido. Las etiquetas se pued
 * Consulte [Uso de etiquetas](/help/sites-cloud/authoring/features/tags.md) para obtener información sobre cómo etiquetar contenido como autor de contenido.
 * Consulte Administración de etiquetas para conocer la perspectiva de un administrador sobre la creación y administración de etiquetas, así como sobre las etiquetas de contenido que se han aplicado.
 
-AEM Este artículo se centra en el marco de trabajo subyacente que admite el etiquetado en los grupos de trabajo y en cómo aprovecharlo como desarrollador.
+AEM Este artículo se centra en el marco de trabajo subyacente que admite el etiquetado en los entornos de y en cómo utilizarlo como desarrollador.
 
 ## Introducción {#introduction}
 
-AEM Para etiquetar contenido y aprovechar la infraestructura de etiquetado de la:
+AEM Para etiquetar contenido y utilizar la infraestructura de etiquetado de:
 
 * La etiqueta debe existir como nodo de tipo [`cq:Tag`](#cq-tag-node-type) en el [nodo raíz de taxonomía.](#taxonomy-root-node)
 * El nodo de contenido etiquetado es `NodeType` debe incluir el [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin.
@@ -128,7 +128,6 @@ El `cq:OwnerTaggable` mixin, que hereda de `cq:Taggable`, tiene la intención de
 >* Páginas (`cq:Page`) donde la variable `jcr:content`el nodo es del tipo `cq:PageContent`, que incluye el `cq:Taggable` mixin.
 >* Recursos (`cq:Asset`) donde la variable `jcr:content/metadata` El nodo siempre tiene el `cq:Taggable` mixin.
 
-
 ### Notación de tipo de nodo (CND) {#node-type-notation-cnd}
 
 Las definiciones del tipo de nodo existen en el repositorio como archivos CDN. La notación CDN se define como parte de la variable [Documentación de JCR.](https://jackrabbit.apache.org/node-type-notation.html).
@@ -156,7 +155,7 @@ El `cq:tags` La propiedad es un `String` matriz utilizada para almacenar uno o m
 
 >[!NOTE]
 >
->AEM Para aprovechar la funcionalidad de etiquetado de etiquetas, las aplicaciones desarrolladas personalizadas no deben definir propiedades de etiquetas distintas de `cq:tags`.
+>AEM Para utilizar la funcionalidad de etiquetado de etiquetas, las aplicaciones desarrolladas personalizadas no deben definir propiedades de etiquetas distintas de `cq:tags`.
 
 ## Mover y combinar etiquetas {#moving-and-merging-tags}
 
@@ -171,25 +170,22 @@ Cuando la etiqueta A se mueva o combine en la etiqueta B en `/content/cq:tags`:
    * Por lo tanto, la etiqueta A está oculta y solo se mantiene en el repositorio para resolver los ID de etiqueta en los nodos de contenido que apuntan a la etiqueta A.
    * El recolector de elementos no utilizados de etiquetas elimina las etiquetas como la etiqueta A una vez que los nodos de contenido no las señalan.
    * Un valor especial para `cq:movedTo` la propiedad es `nirvana`, que se aplica cuando se elimina la etiqueta, pero no se puede eliminar del repositorio porque hay subetiquetas con un `cq:movedTo` eso debe mantenerse.
-
-      >[!NOTE]
-      >
-      >El `cq:movedTo` La propiedad solo se añade a la etiqueta movida o combinada si se cumple cualquiera de estas condiciones:
-      >
-      > 1. La etiqueta se utiliza en el contenido (lo que significa que tiene una referencia). O
-      > 1. La etiqueta tiene elementos secundarios que ya se han movido.
-
+     >[!NOTE]
+     >
+     >El `cq:movedTo` La propiedad solo se añade a la etiqueta movida o combinada si se cumple cualquiera de estas condiciones:
+     >
+     > 1. La etiqueta se utiliza en el contenido (lo que significa que tiene una referencia). O
+     > 1. La etiqueta tiene elementos secundarios que ya se han movido.
+     >
 * La etiqueta B se crea (en caso de movimiento) y recibe un `cq:backlinks` propiedad.
    * `cq:backlinks` mantiene las referencias en la otra dirección, es decir, conserva una lista de todas las etiquetas que se han movido o combinado con la etiqueta B.
    * Esto es necesario principalmente para mantener `cq:movedTo` propiedades actualizadas cuando la etiqueta B se mueve, combina o elimina, o cuando la etiqueta B está activada, en cuyo caso todas sus etiquetas de backlinks deben activarse también.
-
-      >[!NOTE]
-      >
-      >El `cq:backlinks` La propiedad solo se añade a la etiqueta movida o combinada si se cumple cualquiera de estas condiciones:
-      >
-      > 1. La etiqueta se utiliza en el contenido (lo que significa que tiene una referencia). O
-      > 1. La etiqueta tiene elementos secundarios que ya se han movido.
-
+     >[!NOTE]
+     >
+     >El `cq:backlinks` La propiedad solo se añade a la etiqueta movida o combinada si se cumple cualquiera de estas condiciones:
+     >
+     > 1. La etiqueta se utiliza en el contenido (lo que significa que tiene una referencia). O
+     > 1. La etiqueta tiene elementos secundarios que ya se han movido.
 
 Leer un `cq:tags` La propiedad de un nodo de contenido implica la siguiente resolución:
 

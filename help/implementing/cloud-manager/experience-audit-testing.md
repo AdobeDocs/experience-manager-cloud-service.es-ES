@@ -2,10 +2,10 @@
 title: Pruebas de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 100%
+source-wordcount: '551'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ La auditoría de experiencia es una característica disponible en las canalizaci
 
 La auditoría de experiencias en Cloud Manager garantiza que la experiencia del usuario final en el sitio sea de los más altos estándares.
 
-Los resultados de la auditoría son informativos y permiten al administrador de implementación ver las puntuaciones y el cambio entre las puntuaciones actuales y anteriores. Esta perspectiva es importante para determinar si hay una regresión que se introducirá con la implementación actual.
+Los resultados de la auditoría son informativos y permiten al administrador de implementación ver las puntuaciones y el cambio entre las puntuaciones actuales y anteriores. Esta perspectiva es valiosa para determinar si hay una regresión que se introdujo con la implementación actual.
 
 La auditoría de experiencias está equipada con Google Lighthouse, una herramienta de código abierto de Google y está habilitada en todas las canalizaciones de producción de Cloud Manager.
 

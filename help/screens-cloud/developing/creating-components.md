@@ -2,9 +2,9 @@
 title: Creación de componentes
 description: AEM Los componentes de se utilizan para mantener, dar formato y representar el contenido disponible en las páginas web. Siga esta página para obtener más información sobre la creación de canales y el procesamiento de componentes.
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ AEM Los componentes de se utilizan para mantener, dar formato y representar el c
 
 El canal es el objeto central del contenido enviado a un conjunto de pantallas. Por lo tanto, un autor de contenido suele abrir un canal en el editor para agregar o modificar contenido. Dado que el canal es un ***cq:Page*** seguirá el mismo patrón de experiencia de usuario tradicional para añadir y cambiar componentes en el canal.
 
-Sin embargo, dado que los componentes de un canal suelen procesarse a pantalla completa, la experiencia de creación se verá afectada al intentar editar componentes únicos o componer nuevos pedidos. Por lo tanto, el canal dependerá de los selectores para procesar diferentes vistas de los componentes. El entorno de creación utilizará el selector de edición para activar el procesamiento de canal personalizado.
+Sin embargo, dado que los componentes de un canal suelen procesarse a pantalla completa, la experiencia de creación se verá afectada al intentar editar componentes únicos o componer nuevos pedidos. Por lo tanto, el canal dependerá de los selectores para procesar diferentes vistas de los componentes. El entorno de creación utiliza el selector de edición para activar el procesamiento del canal personalizado.
 
 Por ejemplo, `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`. 
 
@@ -32,7 +32,7 @@ Para permitir una creación adecuada, los componentes deben proporcionar las dos
 | *my-component/my-component.html* | renderización de producción |
 | *my-component/edit.html* | edición del procesamiento en una vista más pequeña |
 
-Los componentes integrados aprovechan las siguientes categorías de bibliotecas de cliente:
+Los componentes integrados utilizan las siguientes categorías de biblioteca de cliente:
 
 | **Componente** | **Biblioteca de cliente** |
 |---|---|

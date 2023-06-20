@@ -4,10 +4,10 @@ description: Obtenga información acerca de las consideraciones de seguridad imp
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '229'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## Almacén de confianza de AEM {#aem-trust-store}
 
-Para admitir operaciones criptográficas asimétricas, AEM guarda certificados dentro del repositorio de contenido, en un almacén de confianza global. Sus contenidos son públicos y, de forma predeterminada, son accesibles de forma anónima por cualquiera en las instancias de editor.
+AEM Para admitir operaciones criptográficas asimétricas, almacena certificados dentro del repositorio de contenido, en un almacén de confianza global. Sus contenidos son públicos y, de forma predeterminada, son accesibles de forma anónima por cualquiera en las instancias de editor.
 
 ### Características del almacén de confianza {#truststore-characteristics}
 
@@ -24,7 +24,7 @@ Para admitir operaciones criptográficas asimétricas, AEM guarda certificados d
 * Los clientes pueden usarlo en su propio código a través de la [API de almacén de claves](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * El almacén de confianza se puede administrar a través de la IU en **Herramientas** - **Seguridad** - **Almacén de confianza** o accediendo a *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, como se muestra a continuación:
 
-   ![Administración del almacén de confianza](/help/security/assets/global-trust-store-modified.png)
+  ![Administración del almacén de confianza](/help/security/assets/global-trust-store-modified.png)
 
 * El acceso al almacén de confianza se puede restringir aún más mediante el control de acceso al repositorio, según el caso de uso.
 

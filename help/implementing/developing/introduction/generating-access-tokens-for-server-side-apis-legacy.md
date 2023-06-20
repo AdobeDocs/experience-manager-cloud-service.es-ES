@@ -3,9 +3,9 @@ title: Generación de tokens de acceso para las API del lado del servidor (hered
 description: AEM Obtenga información sobre cómo facilitar la comunicación entre un servidor de terceros y el as a Cloud Service de la mediante la generación de un token JWT seguro
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,7 @@ AEM AEM Los desarrolladores deben probar el uso de una instancia de desarrollo d
 Consulte la [Documentación de directrices para desarrolladores](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) AEM para obtener información acerca de los permisos necesarios para utilizar la consola de desarrollador de as a Cloud Service.
 
 >[!NOTE]
+>
 El token de acceso de desarrollo local es válido durante un máximo de 24 horas tras las cuales debe regenerarse mediante el mismo método.
 
 AEM AEM Los desarrolladores pueden utilizar este token para realizar llamadas desde su aplicación de prueba no-a un entorno as a Cloud Service de la. AEM Normalmente, el desarrollador utiliza este token con la aplicación que no es de la aplicación en su propio portátil, es decir, con la aplicación que no es de la misma aplicación. AEM Además, el entorno de as a Cloud no suele ser de producción.
@@ -147,9 +148,10 @@ AEM De forma predeterminada, las credenciales en las fechas as a Cloud Service c
 
 ![Actualización de credenciales](assets/credential-refresh.png)
 
-Después de pulsar el botón, se generará un nuevo conjunto de credenciales. Puede actualizar el almacenamiento secreto con las nuevas credenciales y validar que funcionan como deberían.
+Después de pulsar el botón, se genera un nuevo conjunto de credenciales. Puede actualizar el almacenamiento secreto con las nuevas credenciales y validar que funcionan como deberían.
 
 >[!NOTE]
+>
 Después de hacer clic en **Actualizar credenciales del servicio** , las credenciales antiguas permanecen registradas hasta que caducan, pero solo el conjunto más reciente está disponible para verse desde Developer Console en un momento dado.
 
 ## Revocación de credenciales de servicio {#service-credentials-revocation}

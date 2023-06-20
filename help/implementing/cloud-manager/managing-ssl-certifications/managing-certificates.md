@@ -2,10 +2,10 @@
 title: Administración de certificados SSL
 description: Obtenga información sobre cómo utilizar Cloud Manager para comprobar el estado de los certificados SSL y cómo editarlos, reemplazarlos, actualizarlos y eliminarlos.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '634'
+ht-degree: 81%
 
 ---
 
@@ -37,7 +37,7 @@ Cuando un certificado caduca, cualquier dominio que esté en uso con el certific
 
 >[!NOTE]
 >
->Un usuario debe ser miembro del rol de **Propietario del negocio** o **Administrador de implementación** para actualizar un certificado SSL en Cloud Manager.
+>Un usuario debe ser miembro de **Propietario del negocio** o **Administrador de implementación** función para actualizar un certificado SSL en Cloud Manager.
 
 ## Reemplazar un certificado SSL {#replace-ssl-certificate}
 
@@ -59,11 +59,11 @@ Siga estos pasos para eliminar un certificado SSL.
 
 >[!NOTE]
 >
->Un usuario debe ser miembro del rol de **Propietario del negocio** o **Administrador de implementación** para eliminar un certificado SSL en Cloud Manager.
+>Un usuario debe ser miembro de **Propietario del negocio** o **Administrador de implementación** función para eliminar un certificado SSL en Cloud Manager.
 
 ## Configuraciones de CDN preexistentes {#pre-existing-cdn}
 
-Si tiene una configuración de CDN preexistente para su certificado SSL, habrá un mensaje informativo en la página **Certificados SSL** que le anima a agregar estas configuraciones a través de la interfaz de usuario para que sean visibles y configurables en Cloud Manager.
+Si tiene una configuración de CDN preexistente para su certificado SSL, hay un mensaje informativo en el **Certificados SSL** , lo que le anima a añadir estas configuraciones a través de la interfaz de usuario para que sean visibles y configurables en Cloud Manager.
 
 El mensaje desaparece una vez que se migran todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje puede tardar entre 1 y 2 días hábiles en desaparecer.
 

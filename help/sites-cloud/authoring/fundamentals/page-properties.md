@@ -2,10 +2,10 @@
 title: Edición de las propiedades de página
 description: Definir las propiedades necesarias para una página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
-workflow-type: ht
-source-wordcount: '2363'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '2357'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Marca**
 
-   Aplique una identidad de marca uniforme en todas las páginas adjuntando un slug de marca al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+  Aplique una identidad de marca uniforme en todas las páginas adjuntando un slug de marca al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 
    * **Anotaciones de marca**
 
@@ -57,42 +57,40 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Tiempo de activación/desactivación**
 
-   >[!NOTE]
-   >
-   > Consulte [Horas de activación y desactivación: configuración de activador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener detalles sobre cómo configurar la replicación automática relacionada.
+  >[!NOTE]
+  >
+  > Consulte [Horas de activación y desactivación: configuración de activador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener detalles sobre cómo configurar la replicación automática relacionada.
 
-   >[!NOTE]
-   >Si el **Tiempo de activación** o el **Tiempo de desactivación** se sitúan en el pasado y se configura la replicación automática, la acción relevante se activará de inmediato.
+  >[!NOTE]
+  >Si el **Tiempo de activación** o el **Tiempo de desactivación** se sitúan en el pasado y se configura la replicación automática, la acción relevante se activará de inmediato.
 
    * **Tiempo de activación**: la fecha y hora a las que se hará visible (procesada) la página publicada en el entorno de publicación. La página debe publicarse, ya sea de forma manual o mediante replicación automática preconfigurada.
 
       * Si ya se ha [publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), esta página se mantendrá inactiva (oculta) hasta que se procese a la hora especificada.
       * Si no se publica y se configura para la replicación automática, la página se publicará automáticamente y, a continuación, se procesará a la hora especificada.
       * Si no se publica y no está configurada para la replicación automática, la página no se publicará automáticamente, por lo que se verá un error 404 cuando se intente acceder a ella.
+
    * **Tiempo de desactivación**: similar a **Tiempo de activación** y usado a menudo en combinación, define el momento en el que la página publicada se ocultará en el entorno de publicación.
 
    * Deje estos campos (**Tiempo de activación** y **Tiempo de desactivación**) vacíos para las páginas que desea publicar de inmediato y disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
-
 
 * **URL mnemónica**
 
    * Permite introducir una URL mnemónica para esta página, lo que le permite tener una URL más corta o expresiva.
    * Por ejemplo, si la URL de vanidad se establece como `welcome` en la página identificada por la ruta `/v1.0/startpage` del sitio web `http://example.com`, entonces `http://example.com/welcome` es la URL de vanidad de `http://example.com/content/v1.0/startpage`.
 
-   >[!CAUTION]
-   >
-   >URL de vanidad:
-   >
-   >* Debe ser única, por lo que debe asegurarse de que ninguna otra página utilice ese valor.
-   >* No admiten patrones regex.
-   >* No debe configurarse en una página existente.
-
+  >[!CAUTION]
+  >
+  >URL de vanidad:
+  >
+  >* Debe ser única, por lo que debe asegurarse de que ninguna otra página utilice ese valor.
+  >* No admiten patrones regex.
+  >* No debe configurarse en una página existente.
 
    * **Añadir**: pulse o haga clic para mostrar un campo con el que definir una URL de vanidad para la página.
       * Pulse o haga clic de nuevo para añadir varias.
       * Pulse o haga clic en el botón **Eliminar** para eliminar la URL de vanidad.
    * **Redirigir URL de vanidad**: indica si desea que la página use la URL de vanidad.
-
 
 ### Avanzado  {#advanced}
 
@@ -123,9 +121,9 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * **Habilitar**: habilite el uso de la autenticación para acceder a la página
 
-      >[!NOTE]
-      >
-      >Los grupos de usuarios cerrados para la página se definen en la pestaña **[Permisos](#permissions)**.
+     >[!NOTE]
+     >
+     >Los grupos de usuarios cerrados para la página se definen en la pestaña **[Permisos](#permissions)**.
 
    * **Página de inicio de sesión**: la página que se usará para iniciar sesión
 
@@ -139,9 +137,9 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * **Etiquetas de robots**: seleccione las etiquetas de robots para controlar el comportamiento de los rastreadores de los motores de búsqueda.
 
-      >[!NOTE]
-      >
-      >Algunas de las opciones entran en conflicto entre sí. En caso de conflicto, la opción más permisiva tiene prioridad.
+     >[!NOTE]
+     >
+     >Algunas de las opciones entran en conflicto entre sí. En caso de conflicto, la opción más permisiva tiene prioridad.
 
    * **Generar mapa del sitio**: cuando se selecciona, se genera un archivo sitemap.xml para esta página y sus descendientes.
 
@@ -149,11 +147,11 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Imagen destacada**
 
-   Seleccione y configure la imagen que desea mostrar. Se utiliza en los componentes que hacen referencia a la página; por ejemplo, teasers, listas de páginas, etc.
+  Seleccione y configure la imagen que desea mostrar. Se utiliza en los componentes que hacen referencia a la página; por ejemplo, teasers, listas de páginas, etc.
 
    * **Imagen**
 
-      Puede **seleccionar** un recurso o buscar un archivo para cargarlo y después **editarlo** o **borrarlo**.
+     Puede **seleccionar** un recurso o buscar un archivo para cargarlo y después **editarlo** o **borrarlo**.
 
    * **Texto alternativo**: un texto utilizado para representar el significado o la función de la imagen; por ejemplo, para el uso de los lectores de pantalla.
 
@@ -161,7 +159,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Miniatura**
 
-   Configuración de la miniatura de la página
+  Configuración de la miniatura de la página
 
    * **Generar previsualización**: genere una previsualización de la página para utilizarla como miniatura
    * **Cargar imagen**: cargue una imagen para utilizarla como miniatura
@@ -184,8 +182,9 @@ Las propiedades se distribuyen entre varias pestañas.
 * **Configuración de ámbito**
 
    * **Marca**: defina una [marca para especificar un ámbito de segmentación](/help/sites-cloud/authoring/personalization/targeted-content.md).
-   >[!NOTE]
-   >Esta opción requiere una cuenta de usuario en el grupo `Target Administrators`.
+
+  >[!NOTE]
+  >Esta opción requiere una cuenta de usuario en el grupo `Target Administrators`.
 
 ### Permisos    {#permissions}
 
@@ -201,7 +200,7 @@ Esta pestaña solo está visible para páginas que sirven como modelos. Los mode
 
 * **Live Copies actuales**: enumera las páginas que se basan en (es decir, que son Live Copies de) esta página de modelo
 
-* **Configuraciones de despliegue**: controla las circunstancias dentro de las que se propagarán las modificaciones a la Live Copy
+* **Configuraciones de despliegue** : controla las circunstancias dentro de las que se propagan las modificaciones a Live Copy
 
 ### Live Copy    {#live-copy}
 
@@ -224,7 +223,7 @@ Esta pestaña solo está visible para páginas configuradas como Live Copies. Al
 
    * **Herencia de Live Copy**: si está marcada, la configuración de Live Copy es eficaz en todas las tareas secundarias.
    * **Heredar configuraciones de despliegue de la página principal**: si está marcada, la configuración de despliegue se hereda de la página principal de la página
-   * **Elija la configuración de despliegue**: define las circunstancias en las que se propagarán las modificaciones desde el modelo y solo está disponible cuando **Hereda configuraciones de despliegue de la página principal** no está seleccionado
+   * **Elegir configuración de despliegue** : Define las circunstancias en las que se propagan las modificaciones desde el modelo y solo está disponible cuando **Heredar configuraciones de despliegue del elemento principal** no está seleccionado
 
 ### Vista previa {#preview}
 
@@ -277,7 +276,7 @@ Tocando o haciendo clic en **Propiedades** para definir las propiedades de la p�
 1. Seleccione la opción **Propiedades** de la página requerida mediante:
    * [Acciones rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * Las propiedades de página se mostrarán mediante las pestañas adecuadas.
+   * Las propiedades de página se muestran mediante las pestañas adecuadas.
 1. Visualice o edite las propiedades según sea oportuno. 
 1. A continuación, utilice **Guardar** para guardar las actualizaciones, seguido de **Cerrar** para volver a la consola.
 
@@ -313,7 +312,7 @@ Puede seleccionar varias páginas para editarlas por lotes mediante varios méto
 * Al examinar la consola **Sites**
 * Después de usar **Buscar** para localizar un conjunto de páginas
 
-Después de seleccionar las páginas y hacer clic o pulsar en la opción **Propiedades**, se muestran las propiedades por lotes:
+Después de seleccionar las páginas y hacer clic o pulsar en **Opción Propiedades**, se muestran las propiedades por lotes:
 
 ![Propiedades de la página de edición masivas](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -342,6 +341,6 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 * **Editar**
 
    * Puede actualizar los valores en los campos disponibles.
-      * Los nuevos valores se aplicarán a todas las páginas seleccionadas al activar **Listo**.
+      * Los nuevos valores se aplican a todas las páginas seleccionadas al seleccionar **Listo**.
       * Cuando el campo admite varios valores (por ejemplo, etiquetas), puede agregar un nuevo valor o eliminar un valor común.
-   * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se señalizarán con un valor especial; por ejemplo, el texto `<Mixed Entries>`.
+   * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se indican con un valor especial, como el texto `<Mixed Entries>`.

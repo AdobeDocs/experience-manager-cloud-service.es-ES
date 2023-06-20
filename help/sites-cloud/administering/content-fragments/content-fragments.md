@@ -4,9 +4,9 @@ description: Descubra cómo los fragmentos de contenido en Adobe Experience Mana
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2127'
+source-wordcount: '2121'
 ht-degree: 96%
 
 ---
@@ -61,7 +61,6 @@ Para ayudarle con esto, puede obtener una previsualización del [Árbol de estru
 >* [API de GraphQL de AEM para su uso con fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)
 >* [Reutilización de fragmentos de contenido mediante MSM para recursos](/help/assets/reuse-assets-using-msm.md) (solo disponible a través del **Assets** console)
 
-
 El número de canales de comunicación aumenta de forma anual. Normalmente, los canales hacen referencia al mecanismo de entrega, ya sea como los siguientes:
 
 * Canal físico; por ejemplo, escritorio o móvil.
@@ -69,7 +68,7 @@ El número de canales de comunicación aumenta de forma anual. Normalmente, los 
 
 Sin embargo, probablemente no desea utilizar exactamente el mismo contenido para todos los canales y necesita optimizar su contenido según el canal específico.
 
-Los fragmentos de contenido le permiten lo siguiente:
+Los fragmentos de contenido le permiten:
 
 * Pensar en cómo llegar a las audiencias de destino de forma eficaz en todos los canales.
 * Crear y administrar contenido editorial neutro para el canal.
@@ -162,9 +161,9 @@ Los recursos se pueden utilizar con un fragmento de contenido de varias formas, 
    * Definen la posición del recurso.
    * Consulte [Inserción de recursos en el fragmento](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) en el editor de fragmentos para obtener más información.
 
-   >[!NOTE]
-   >
-   >Los recursos visuales insertados en el propio fragmento de contenido se adjuntan al párrafo anterior. Cuando se añade el fragmento a una página, estos recursos se mueven en relación con ese párrafo al agregarse contenido intermedio.
+  >[!NOTE]
+  >
+  >Los recursos visuales insertados en el propio fragmento de contenido se adjuntan al párrafo anterior. Cuando se añade el fragmento a una página, estos recursos se mueven en relación con ese párrafo al agregarse contenido intermedio.
 
 * **Contenido asociado**
 
@@ -207,13 +206,13 @@ Los activos de fragmento de contenido están formados por las siguientes partes 
    * Solo se puede añadir a elementos de texto multilínea (cualquier tipo de fragmento).
    * Se adjuntan al texto anterior (párrafo).
 
-      >[!CAUTION]
-      >
-      >Los recursos se pueden eliminar (de forma involuntaria) de un fragmento cambiando al texto sin formato.
+     >[!CAUTION]
+     >
+     >Los recursos se pueden eliminar (de forma involuntaria) de un fragmento cambiando al texto sin formato.
 
-      >[!NOTE]
-      >
-      >Los recursos también se pueden añadir como [contenido adicional (intermedio)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) al utilizar un fragmento en una página, usando contenido asociado o recursos del explorador Recursos.
+     >[!NOTE]
+     >
+     >Los recursos también se pueden añadir como [contenido adicional (intermedio)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) al utilizar un fragmento en una página, usando contenido asociado o recursos del explorador Recursos.
 
 * **Contenido asociado**
 
@@ -236,9 +235,9 @@ Los activos de fragmento de contenido están formados por las siguientes partes 
          * Al visualizar o editar las **Propiedades** del fragmento desde la consola
          * Editando los **Metadatos** en el editor de fragmentos
 
-   >[!CAUTION]
-   >
-   >Los perfiles de procesamiento de metadatos no se aplican a los fragmentos de contenido.
+  >[!CAUTION]
+  >
+  >Los perfiles de procesamiento de metadatos no se aplican a los fragmentos de contenido.
 
 * **Principal**
 
@@ -246,9 +245,9 @@ Los activos de fragmento de contenido están formados por las siguientes partes 
 
       * Cada fragmento de contenido tiene una instancia de Principal.
       * El Principal no se puede eliminar.
+
    * Se puede acceder al Principal en el editor de fragmentos, en **[Variaciones](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)**.
    * El Principal no es una variación como tal, sino la base de todas las variaciones.
-
 
 * **Variaciones**
 
@@ -301,7 +300,7 @@ Para utilizar los fragmentos de contenido para la creación de páginas, tambié
 
 ## Uso de ejemplo {#example-usage}
 
-Un fragmento, con sus elementos y variaciones, se puede utilizar para crear contenido coherente para varios canales. Al diseñar el fragmento, debe tener en cuenta qué se utilizará y dónde.
+Un fragmento, con sus elementos y variaciones, se puede utilizar para crear contenido coherente para varios canales. Al diseñar el fragmento, tenga en cuenta qué se utilizó y dónde.
 
 ### Ejemplo de WKND {#wknd-sample}
 
@@ -310,7 +309,7 @@ Los ejemplos del [Sitio WKND](/help/implementing/developing/introduction/develop
 El proyecto WKND incluye lo siguiente:
 
 * Modelos de fragmentos de contenido disponibles en:
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Fragmentos de contenido (y otro contenido) disponibles en:
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`

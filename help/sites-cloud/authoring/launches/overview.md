@@ -2,10 +2,10 @@
 title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar contenido de forma eficaz para una versión futura. Permiten realizar cambios listos para su publicación futura, sin perder las páginas actuales
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 47%
+source-wordcount: '906'
+ht-degree: 46%
 
 ---
 
@@ -51,7 +51,7 @@ Los lanzamientos le permiten lo siguiente:
    * Las páginas de origen de nivel superior se denominan **Producción**.
       * Las páginas de origen se pueden tomar de varias ramas (independientes).
 
-   ![Orden de operación de los lanzamientos](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![Orden de operación de los lanzamientos](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * Edite la configuración de lanzamiento:
    * Añada o elimine páginas o ramas en el lanzamiento.
@@ -65,22 +65,22 @@ Los lanzamientos le permiten lo siguiente:
       * El campo **Fecha**(**Live**) **de lanzamiento**: esto se puede establecer al crear o editar un lanzamiento. 
       * El **Producción lista** indicador: esto solo se puede establecer al editar un lanzamiento.
       * Si la variable **Producción lista** Si se establece el indicador, el lanzamiento se promocionará automáticamente a las páginas de producción del especificado **Launch**(**Activo**) **fecha**. Después de la promoción, las páginas de producción se publican automáticamente.\
-         Si no se ha establecido ninguna fecha, el indicador no tiene ningún efecto.
+        Si no se ha establecido ninguna fecha, el indicador no tiene ningún efecto.
 * Actualice las páginas de origen y de lanzamiento en paralelo:
    * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy). 
    * Los cambios en la copia de lanzamiento se pueden realizar sin interrumpir las actualizaciones automáticas o las páginas de origen. 
 
-   ![Acciones en paralelo](/help/sites-cloud/authoring/assets/launches-parallel.png)
+  ![Acciones en paralelo](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [Crear un lanzamiento anidado](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - un lanzamiento dentro de un lanzamiento:
    * El origen es un lanzamiento existente.
    * Puede [promocionar un lanzamiento anidado](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) a cualquier destino; puede ser un lanzamiento principal o las páginas de origen de nivel superior (producción).
 
-   ![Un lanzamiento anidado](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![Un lanzamiento anidado](/help/sites-cloud/authoring/assets/launches-nested.png)
 
-   >[!CAUTION]
-   >
-   >Al eliminar un lanzamiento, se quitarán el lanzamiento en sí y todos los lanzamientos anidados descendentes.
+  >[!CAUTION]
+  >
+  >Al eliminar un lanzamiento, se quitarán el lanzamiento en sí y todos los lanzamientos anidados descendentes.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Los lanzamientos le permiten lo siguiente:
 
    ![Referencias de lanzamientos en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Pulse o haga clic en el lanzamiento adecuado. Se mostrará una lista de acciones posibles:
+1. Pulse o haga clic en el lanzamiento adecuado. Se muestra la lista de acciones posibles:
 
    ![Acciones que se deben realizar en lanzamientos desde la consola Sitios](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
@@ -108,11 +108,11 @@ La consola Lanzamientos proporciona una descripción general de los lanzamientos
 
 * La **consola Lanzamientos** se encuentra en la parte inferior de la sección **Lanzamientos** del carril **Referencias** al navegar por el contenido de origen en la consola Sitios.
 
-   ![Consola Lanzamientos en Referencias de lanzamientos en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![Consola Lanzamientos en Referencias de lanzamientos en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * El botón **Lanzamientos** se encuentra en la parte superior derecha al navegar por el contenido de lanzamiento en la consola Sitios:
 
-   ![Opción Lanzamientos en la consola Sitios](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![Opción Lanzamientos en la consola Sitios](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * O directamente; por ejemplo, con:
-   `https://<host>:<port>/libs/launches/content/launches.html`
+  `https://<host>:<port>/libs/launches/content/launches.html`

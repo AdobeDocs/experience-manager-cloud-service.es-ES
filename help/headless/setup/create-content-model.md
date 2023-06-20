@@ -2,10 +2,10 @@
 title: 'Creación de modelos de fragmentos de contenido: configuración sin encabezado'
 description: Defina la estructura del contenido que creará y servirá con las capacidades sin encabezado de AEM mediante modelos de fragmentos de contenido.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 100%
+source-wordcount: '489'
+ht-degree: 95%
 
 ---
 
@@ -46,9 +46,9 @@ Un arquitecto de la información realizaría estas tareas solo de forma esporád
 
 1. El modo del modelo recién creado depende de si ha seleccionado **Activar modelo** al crearlo:
    * seleccionado: el nuevo modelo ya estará **Habilitado**
-   * no seleccionado: el nuevo modelo se creará en modo **Borrador**
+   * no seleccionado: el nuevo modelo se crea en **Borrador** modo
 
-1. Si aún no lo está, el modelo debe estar **Habilitado** para utilizarlo.
+1. Si aún no lo está, el modelo debe estar **Habilitado** para usarlo.
    1. Seleccione el modelo que acaba de crear y, a continuación, toque o haga clic en **Habilitar**.
 
       ![Activación del modelo](../assets/models-enable.png)

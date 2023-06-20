@@ -2,9 +2,9 @@
 title: Complemento Maven del paquete de contenido de Adobe
 description: AEM Utilice el complemento Maven del paquete de contenido para implementar aplicaciones de
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1847'
 ht-degree: 6%
 
 ---
@@ -28,7 +28,6 @@ Este documento detalla cómo utilizar Maven para administrar estas tareas. Sin e
 >Paquete **creación** ahora es propiedad de [Complemento Maven del paquete Apache Jackrabbit FileVault.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
 >* El `content-package-maven-plugin` ya no es compatible con el empaquetado de la versión 1.0.2.
 >* Este artículo describe la **implementación** AEM Uno de los paquetes construidos que se van a lo realiza el complemento Maven del paquete de contenido de Adobe.
-
 
 ## AEM Paquetes y la estructura del proyecto de {#aem-project-structure}
 
@@ -95,7 +94,7 @@ Los parámetros de la siguiente tabla son comunes a todos los objetivos, excepto
 | `serverId` | `String` | No | Identificador de servidor desde el que se recuperan el nombre de usuario y la contraseña para la autenticación | Todas las metas excepto `package` |
 | `targetURL` | `String` | Sí | `http://localhost:4502/crx/packmgr/service.jsp` | AEM La dirección URL de la API del servicio HTTP del administrador de paquetes de | Todas las metas excepto `package` |
 | `timeout` | `int` | No | `5` | Tiempo de espera de conexión para comunicarse con el servicio administrador de paquetes, en segundos | Todas las metas excepto `package` |
-| `useProxy` | `boolean` | No | `true` | Un valor de `true` hace que Maven utilice la primera configuración proxy activa que se encuentre para enviar solicitudes de proxy al Administrador de paquetes. | Todas las metas excepto `package` |
+| `useProxy` | `boolean` | No | `true` | Un valor de `true` hace que Maven utilice la primera configuración proxy activa que se encuentre para las solicitudes de proxy al Administrador de paquetes. | Todas las metas excepto `package` |
 | `userId` | `String` | Sí | `admin` | AEM El nombre de usuario con el que autenticarse en el servicio de autenticación de | Todas las metas excepto `package` |
 | `verbose` | `boolean` | No | `false` | Activa o desactiva el registro detallado | Todas las metas excepto `package` |
 
@@ -182,7 +181,7 @@ Además de los siguientes parámetros, consulte la descripción del `name` en el
 | `prefix` | `java.lang.String` | No | Ninguno |  |
 | `project` | `org.apache.maven.project.MavenProject` | Sí | Ninguno | El proyecto Maven |
 | `properties` | `java.util.Map` | No | Ninguno | Estos parámetros definen propiedades adicionales que puede establecer en la variable `properties.xml` archivo. Estas propiedades no pueden sobrescribir las siguientes propiedades predefinidas: `group` (use `group` parámetro que se va a establecer), `name` (use `name` parámetro que se va a establecer), `version` (use `version` parámetro que se va a establecer), `description` (configurado a partir de la descripción del proyecto), `groupId` (`groupId` del descriptor de proyecto Maven), `artifactId` (`artifactId` del descriptor de proyecto Maven), `dependencies` (use `dependencies` parámetro que se va a establecer), `createdBy` (el valor de la variable `user.name` propiedad del sistema), `created` (la hora actual del sistema), `requiresRoot` (use `requiresRoot` parámetro que se va a establecer), `packagePath` (generado automáticamente a partir del nombre del grupo y del paquete) |
-| `requiresRoot` | `boolean` | Sí | false | Define si el paquete requiere raíz. Esto se convertirá en el `requiresRoot` propiedad del `properties.xml` archivo. |
+| `requiresRoot` | `boolean` | Sí | false | Define si el paquete requiere raíz. Se convierte en `requiresRoot` propiedad del `properties.xml` archivo. |
 | `subPackages` | `java.util.List` | No | Ninguno |  |
 | `version` | `java.lang.String` | Sí | La versión definida en el proyecto de Maven | La versión del paquete de contenido |
 | `workDirectory` | `java.io.File` | Sí | El directorio definido en el proyecto Maven (fase de compilación) | El directorio que contiene el contenido que se va a incluir en el paquete |

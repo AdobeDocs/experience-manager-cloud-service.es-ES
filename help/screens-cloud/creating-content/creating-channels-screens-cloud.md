@@ -2,9 +2,9 @@
 title: Creación y administración de canales en Screens as a Cloud Service
 description: En esta página se describe cómo crear y administrar canales en Pantallas as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ Este mosaico muestra la siguiente información:
 
 ### Utilizar los detalles de asignación predeterminados al asignar a una pantalla {#default-display}
 
-Los canales con detalles de asignación predeterminados se pueden asignar a las pantallas del mismo modo que los canales normales, con la opción añadida de aprovechar los detalles de asignación predeterminados en lugar de definir manualmente los personalizados cada vez.
+Los canales con detalles de asignación predeterminados se pueden asignar a y muestran de la misma manera que los canales normales, con la opción añadida de utilizar los detalles de asignación predeterminados en lugar de definir manualmente los personalizados cada vez.
 
 1. Vaya a la página de detalles de visualización a la que desee asignar el canal y haga clic en **Asignar canal**.
 también puede seleccionar la visualización que desee en la vista de inventario y hacer clic en **Asignar canal**.
@@ -141,7 +141,7 @@ también puede seleccionar la visualización que desee en la vista de inventario
 
    ![imagen](/help/screens-cloud/assets/display/Assignments8.png)
 
-**Nota:** Una asignación de canal que aproveche los detalles de asignación predeterminados no se podrá editar en el contexto de la visualización.
+**Nota:** Una asignación de canal que utilice los detalles de asignación predeterminados no se podrá editar en el contexto de la visualización.
 
 * Si necesita cambiarla a una asignación personalizada, primero tendrá que eliminarla y luego volver a agregarla usando la variable **Establecer detalles de asignación personalizados** opción.
 * Si necesita cambiar las propiedades de los detalles de asignación predeterminados, debe hacerlo directamente desde la página de detalles del canal.
@@ -154,7 +154,7 @@ también puede seleccionar la visualización que desee en la vista de inventario
 
    ![imagen](/help/screens-cloud/assets/display/Assignments9.png)
 
-1. Se mostrará un cuadro de diálogo de confirmación y los detalles coincidirán con una de las siguientes condiciones:
+1. Se muestra un cuadro de diálogo de confirmación y los detalles coinciden con una de las siguientes condiciones:
    **a.** El canal no se utiliza en ninguna visualización.
 
    ![imagen](/help/screens-cloud/assets/display/Assignments10.png)

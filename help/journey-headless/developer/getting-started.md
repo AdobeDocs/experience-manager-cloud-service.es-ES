@@ -2,10 +2,10 @@
 title: Introducción al contenido sin encabezado de AEM as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3090'
-ht-degree: 98%
+source-wordcount: '3087'
+ht-degree: 94%
 
 ---
 
@@ -91,9 +91,9 @@ Aprenderá a utilizar estas API en una parte posterior del recorrido sin encabez
 
 AEM admite todos los modelos sin encabezado y los modelos tradicionales de pila completa o sin encabezado de un CMS. Sin embargo, AEM ofrece no solo estas dos opciones exclusivas, sino también la capacidad de soportar modelos híbridos que combinan las ventajas de ambos, ofreciendo una flexibilidad única para su proyecto sin encabezado.
 
-Con el fin de garantizar su comprensión de los conceptos sin encabezado, este Recorrido para desarrolladores sin periféricos de AEM se centra en el modelo sin periféricos para ponerlo en marcha lo antes posible sin necesidad de utilizar codificación en AEM.
+AEM Para garantizar su comprensión de los conceptos sin encabezado, este Recorrido AEM para desarrolladores sin encabezado se centra en el modelo sin encabezado puro para ayudarle a ponerse en marcha lo antes posible sin codificación en la.
 
-Sin embargo, hay que tener en cuenta las posibilidades híbridas adicionales que se abren una vez que entienda las características sin encabezado de AEM. Para su información, estos casos se detallan a continuación. Al final del recorrido, se le presentarán estos conceptos con más detalle en caso de que se requiera dicha flexibilidad para su proyecto.
+Sin embargo, hay que tener en cuenta las posibilidades híbridas adicionales que se abren una vez que entienda las características sin encabezado de AEM. Para su información, estos casos se detallan a continuación. Al final del recorrido, se le presentarán estos conceptos con más detalle en caso de que su proyecto requiera dicha flexibilidad.
 
 ### Ya tiene un consumo externo de contenido sin encabezado, como una aplicación de página única (SPA). {#already-have-a-spa}
 
@@ -145,7 +145,7 @@ Para que cualquier proyecto tenga éxito, es importante definir claramente no so
 
 Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa acerca de los criterios de aceptación y le permite establecer una definición de listo.
 
-La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” La respuesta debe ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con AEM. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
+La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” AEM La respuesta debería ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con las que no ha podido crear una aplicación de experiencia. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
 
 ### Funciones y responsabilidades {#roles-responsibilities}
 
@@ -179,9 +179,9 @@ Cree un plan sobre la traducción de contenido que necesita.
 * ¿Necesita idiomas diferentes o también idiomas que se adapten a las especificidades regionales?
 * ¿Necesita contenido con medios enriquecidos, como imágenes o vídeos, para que sea diferente en diferentes configuraciones regionales?
 
-Sea claro sobre el flujo de trabajo de actualización de contenido. ¿Cuál es el proceso de aprobación que debe admitir el sistema? ¿Se pueden aprovechar los flujos de trabajo de AEM para automatizar este proceso?
+Sea claro sobre el flujo de trabajo de actualización de contenido. ¿Cuál es el proceso de aprobación que debe admitir el sistema? AEM ¿Se podrían utilizar flujos de trabajo de para automatizar este proceso?
 
-Tenga en cuenta que la [jerarquía de contenido](#content-hierarchy) se puede aprovechar para facilitar la traducción.
+Tenga en cuenta que [jerarquía de contenido](#content-hierarchy) se puede utilizar para facilitar la traducción.
 
 Consulte la sección [recursos adicionales](#additional-resources) para obtener documentación adicional sobre los flujos de trabajo de AEM y las herramientas de traducción, entre ellos, los vínculos al recorrido de traducción sin encabezado de AEM.
 

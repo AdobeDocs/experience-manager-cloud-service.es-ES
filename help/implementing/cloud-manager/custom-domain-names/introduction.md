@@ -2,10 +2,10 @@
 title: Introducción a los nombres de dominio personalizados
 description: La interfaz de usuario de Cloud Manager le permite agregar a usted mismo un dominio personalizado para identificar su sitio con un nombre único.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 66%
+source-wordcount: '768'
+ht-degree: 94%
 
 ---
 
@@ -33,16 +33,16 @@ Puede comprar un nombre de dominio a través de un registrador de nombres de dom
 >
 >Cloud Manager no es un registrador de nombres de dominio y no proporciona servicios DNS.
 
-## Nombres de dominio personalizados y CDN propios {#byo-cdn}
+## Nombres de dominio personalizados y CDN de BYO {#byo-cdn}
 
-AEM as a Cloud Service AEM ofrece un servicio integrado de red de entrega de contenido (CDN), pero también le permite llevar su propia CDN (BYO) para utilizarla con el servicio de red de distribución de contenido (CDN) de Adobe (CDN), que puede usar con el servicio de red de distribución de contenido (CDN) de. AEM Los dominios personalizados se pueden instalar en la CDN administrada por el usuario o en una CDN administrada por el usuario.
+AEM as a Cloud Service ofrece un servicio integrado de red de distribución de contenido (CDN), pero también le permite traer su propia CDN (BYO) para usar con AEM. Los dominios personalizados pueden instalarse en la CDN administrada por AEM o en una CDN que administre usted.
 
-* AEM Los nombres de dominio personalizados (y certificados) instalados en la CDN administrada por el administrador de la CDN se administran mediante Cloud Manager.
+* Los nombres de dominio personalizados (y certificados) instalados en la CDN administrada por AEM se administran mediante Cloud Manager.
 * Los nombres de dominio personalizados (y certificados) instalados en su propia CDN se administran en esa CDN específica.
 
-Los dominios administrados en su propia CDN no necesitan instalarse mediante Cloud Manager. AEM Se pondrán a disposición de los usuarios a través de X-Forwarded-Host y coincidirán con los vhosts definidos en Dispatcher. [Consulte la documentación de CDN para obtener más información.](/help/implementing/dispatcher/cdn.md)
+Los dominios administrados en su propia CDN no necesitan instalarse mediante Cloud Manager. AEM Están disponibles para su uso a través de X-Forwarded-Host y coinciden con los vhosts definidos en Dispatcher. Consulte la [Documentación de CDN](/help/implementing/dispatcher/cdn.md).
 
-AEM En un entorno, puede tener ambos dominios instalados en la CDN administrada por el usuario e instalada en su propia CDN.
+En un entorno puede tener ambos dominios instalados en la CDN administrada por AEM e instalados en su propia CDN.
 
 ## Flujo de trabajo {#workflow}
 
@@ -70,8 +70,8 @@ El uso de nombres de dominio personalizados con AEMaaCS conlleva varias limitaci
 
 * Los nombres de dominio personalizados se admiten en Cloud Manager tanto para los servicios de publicación como de vista previa para los programas de Sites. No se admiten los dominios personalizados para servicios de autor.
 * Cada entorno de Cloud Manager puede alojar hasta un máximo de 500 dominios personalizados por entorno.
-* Los nombres de dominio no se pueden agregar a entornos mientras haya una canalización en ejecución asociada a esos entornos.
-* El mismo nombre de dominio no se puede usar en más de un entorno.
+* Los nombres de dominio no se pueden agregar a entornos mientras haya una canalización actual en ejecución asociada a esos entornos.
+* No se puede usar el mismo nombre de dominio en más de un entorno.
 * Solo se puede agregar un nombre de dominio a la vez.
-* AEM El as a Cloud Service no admite dominios comodín como `*.example.com`.
-* Antes de agregar un nombre de dominio personalizado, debe instalar en el programa un certificado SSL válido que contenga el nombre de dominio personalizado (los certificados comodín son válidos). Consulte la [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obtener más información.
+* AEM as a Cloud Service no admite dominios comodín como `*.example.com`.
+* Antes de agregar un nombre de dominio personalizado, debe instalar en el programa un certificado SSL válido que contenga el nombre de dominio personalizado (con certificados comodín válidos). Consulte [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obtener más información.

@@ -2,10 +2,10 @@
 title: Crear un portal de Forms en una página de Experience Manager Sites
 description: Obtenga información sobre cómo crear un portal de Forms y utilizar componentes principales listos para usar en una página de AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
-workflow-type: ht
-source-wordcount: '1764'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1762'
+ht-degree: 98%
 
 ---
 
@@ -97,7 +97,7 @@ Para configurar el conector de almacenamiento unificado para flujos de trabajo d
 
 ## Habilitar componentes del portal de Forms {#enable-forms-portal-components}
 
-Para utilizar cualquier componente principal (incluidos los componentes de portal predeterminados) en un sitio de Adobe Experience Manager (AEM), debe crear un componente proxy y habilitarlo para su sitio. Para crear un componente proxy y habilitar los componentes del portal, consulte [Utilizar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=es#create-proxy-components).
+Para utilizar cualquier componente principal (incluidos los componentes de portal predeterminados) en un sitio de Adobe Experience Manager AEM (), debe crear un componente proxy y habilitarlo para su sitio. Para crear un componente proxy y habilitar los componentes del portal, consulte [Utilizar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=es#create-proxy-components).
 
 Una vez habilitado un componente del portal, puede utilizarlo en la instancia Autor de la página del sitio.
 

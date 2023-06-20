@@ -2,10 +2,10 @@
 title: 'Creación de una carpeta de recursos: configuración sin encabezado'
 description: Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 93%
 
 ---
 
@@ -29,15 +29,14 @@ Un administrador solo tendría que crear carpetas ocasionalmente para organizar 
 1. Haga clic o pulse en **Crear -> Carpeta**.
 1. Proporcione un **Título** y **Nombre** para su carpeta.
    * El **Título** debe ser descriptivo.
-   * El **Nombre** se convertirá en el nombre de nodo en el repositorio.
-      * Se generará automáticamente en función del título y se ajustará según las [convenciones de nomenclatura de AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   * El **Nombre** se convierte en el nombre de nodo del repositorio.
+      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de.](/help/implementing/developing/introduction/naming-conventions.md)
       * Se puede modificar si es necesario.
 
    ![Crear carpeta](../assets/assets-folder-create.png)
 1. Seleccione la carpeta que acaba de crear pasando el puntero sobre ella y pulsando la marca de verificación. A continuación, seleccione **Propiedades** en la barra de herramientas (o utilice el `p` [método abreviado de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
 1. En la ventana **Propiedades**, seleccione la pestaña **Servicios de nube**.
 1. Para la **Configuración de nube**, seleccione la [configuración que creó anteriormente.](create-configuration.md)
-
    ![Configurar la carpeta de recursos](../assets/assets-folder-configure.png)
 1. Haga clic o pulse en **Guardar y cerrar**.
 1. Toque o haga clic en **Aceptar** en la ventana de confirmación.

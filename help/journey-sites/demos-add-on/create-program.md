@@ -2,10 +2,10 @@
 title: Creación de un programa
 description: Obtenga información sobre cómo configurar un nuevo programa y una canalización para implementar el complemento.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 100%
+source-wordcount: '713'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Después de iniciar sesión en Cloud Manager, puede crear un nuevo programa de z
 
 >[!NOTE]
 >
->El usuario debe ser miembro de la función **Propietario empresarial** en Cloud Manager en su organización para crear programas.
+>El usuario debe ser miembro de **Propietario del negocio** función en Cloud Manager en su organización para crear programas.
 
 1. Inicie sesión en Adobe Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 

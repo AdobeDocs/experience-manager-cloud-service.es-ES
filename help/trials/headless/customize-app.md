@@ -4,10 +4,10 @@ description: Utilice una aplicación React de muestra para aprender a personaliz
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
+source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 99%
+source-wordcount: '1036'
+ht-degree: 97%
 
 ---
 
@@ -105,7 +105,7 @@ Ahora que ha actualizado la imagen del ciclista, vamos a ver cómo añadir conte
 
 1. Seleccione la capa **Ciclista de montaña: ventas**.
 
-1. Para crear una nueva llamada en este panel, debe crear un nuevo fragmento de contenido en el momento de ventas. Haga clic o pulse en el botón **+ Crear nuevo fragmento**.
+1. Para crear una nueva llamada en este panel, debe crear un nuevo fragmento de contenido de momento de compra. Haga clic o pulse en el botón **+ Crear nuevo fragmento**.
 
    ![Adición de un momento de ventas](assets/do-not-localize/add-reference-1-5.png)
 

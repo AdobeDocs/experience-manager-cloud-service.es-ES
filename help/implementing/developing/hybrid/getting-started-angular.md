@@ -2,10 +2,10 @@
 title: Introducción a SPA en AEM usando Angular
 description: SPA SPA En este artículo se presenta una aplicación de ejemplo de la aplicación, se explica cómo se crea y se le permite ponerse en marcha con su propia aplicación de forma rápida mediante el marco de trabajo de Angular de trabajo de.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 12%
+source-wordcount: '991'
+ht-degree: 9%
 
 ---
 
@@ -31,7 +31,7 @@ SPA AEM Para obtener más información sobre cómo funcionan los en la, consulte
 
 >[!NOTE]
 >
->SPA AEM Para poder crear contenido dentro de un elemento de contenido, el contenido debe almacenarse en el elemento de contenido y ser expuesto por el modelo de contenido de, lo que se debe almacenar en el elemento de contenido de un elemento de contenido.
+>SPA AEM Para poder crear contenido dentro de un elemento de contenido, el contenido debe almacenarse en el elemento de contenido y ser expuesto por el modelo de contenido de, lo que hace que el contenido se almacene en el elemento de contenido.
 >
 >SPA AEM Un desarrollado fuera de la aplicación de la ley no será legible si no respeta el contrato del modelo de contenido.
 
@@ -39,7 +39,7 @@ SPA SPA Este documento recorrerá la estructura de un documento simplificado e i
 
 ## Dependencias, configuración y generación {#dependencies-configuration-and-building}
 
-Además de la dependencia de Angular SPA SPA esperada, el ejemplo puede aprovechar las bibliotecas adicionales para que la creación de los recursos de la biblioteca sea más eficiente. En este caso, se puede hacer un uso más eficiente de la biblioteca de la biblioteca de la biblioteca de la.
+Además de la dependencia de Angular SPA SPA esperada, el ejemplo puede utilizar bibliotecas adicionales para que la creación de los recursos de ejemplo sea más eficiente. En este ejemplo, se puede usar una biblioteca de bibliotecas adicionales para hacer que la creación de los recursos sea más eficiente
 
 ### Dependencias {#dependencies}
 
@@ -53,7 +53,7 @@ El `package.json` SPA define los requisitos del paquete de trabajo global de la.
 }
 ```
 
-El `aem-clientlib-generator` se aprovecha para hacer que la creación de bibliotecas de cliente sea automática como parte del proceso de compilación.
+El `aem-clientlib-generator` se utiliza para hacer que la creación de bibliotecas de cliente sea automática como parte del proceso de compilación.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -90,7 +90,7 @@ module.exports = {
 
 ### Compilando {#building}
 
-La creación real de la aplicación aprovecha [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
+La creación de la aplicación utiliza [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -98,7 +98,7 @@ AEM Una vez creado, el paquete se puede cargar en una instancia de.
 
 ### Tipo de archivo del proyecto AEM. {#aem-project-archetype}
 
-Cualquier proyecto AEM debería aprovechar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
+AEM Cualquier proyecto debe utilizar la variable [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)SPA , que es compatible con proyectos de que utilizan React o Angular SPA y utiliza el SDK de.
 
 ## Estructura de aplicación {#application-structure}
 

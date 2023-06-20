@@ -4,10 +4,10 @@ description: Obtenga información acerca de las potentes opciones de sincronizac
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 90%
+source-wordcount: '2335'
+ht-degree: 89%
 
 ---
 
@@ -69,7 +69,7 @@ En la siguiente tabla, se enumeran las opciones de sincronización listas para u
 | `contentDelete` | Esta acción elimina los nodos de la Live Copy que no existen en el origen. [Configure el servicio de **acción de eliminación de contenido de CQ MSM**](#excluding-properties-and-node-types-from-synchronization) para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. |  |
 | `contentUpdate` | Esta acción actualiza el contenido de la Live Copy con los cambios del origen. [Configure el servicio de **acción de actualización de contenido de CQ MSM**](#excluding-properties-and-node-types-from-synchronization) para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. |  |
 | `editProperties` | Esta acción edita las propiedades de la Live Copy. La propiedad `editMap` determina qué propiedades se editan y su valor. El valor de la propiedad `editMap` debe utilizar el siguiente formato:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` y `new_value` son expresiones regulares y `n` es un entero incrementado.<br>Por ejemplo, considere el siguiente valor para `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Este valor edita las propiedades de los nodos de Live Copy de la siguiente manera:<br>Las propiedades `sling:resourceType` que se establecen como `contentpage` o `homepage` están configuradas en `mobilecontentpage`.<br>Las propiedades `cq:template` definidas en `contentpage` se establecen como `mobilecontentpage`. | `editMap: (String)` identifica la propiedad, el valor actual y el nuevo valor. Consulte la descripción para obtener más información. |
-| `notify` | Esta acción envía un evento de página que indica que la página se ha lanzado. Para recibir notificaciones, primero debe suscribirse a eventos de lanzamiento. |  |
+| `notify` | Esta acción envía un evento de página que indica que la página se ha lanzado. Para recibir notificaciones, primero debe suscribirse a eventos de despliegue. |  |
 | `orderChildren` | Esta acción ordena los nodos secundarios según el orden del modelo. |  |
 | `referencesUpdate` | Esta acción de sincronización actualiza las referencias en la Live Copy.<br>Busca rutas de acceso en las páginas de Live Copy que apuntan a un recurso dentro del modelo. Cuando se encuentran, se actualiza la ruta de acceso para que apunte al recurso relacionado dentro de la Live Copy. Las referencias que tienen los destinos fuera del modelo no cambian. <br>[Configure el servicio de **acción de actualización de referencias de CQ MSM**](#excluding-properties-and-node-types-from-synchronization) para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. |  |
 | `targetVersion` | Esta acción crea una versión de la Live Copy.<br>Esta acción debe ser la única acción de sincronización incluida en una configuración de lanzamiento. |  |

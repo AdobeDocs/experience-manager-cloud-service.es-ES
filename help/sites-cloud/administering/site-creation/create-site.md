@@ -4,10 +4,10 @@ description: Aprenda a utilizar AEM para crear un sitio mediante plantillas de s
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 100%
+source-wordcount: '786'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ El uso de una plantilla para crear un sitio es sencillo.
 
    ![Seleccionar una plantilla](../assets/select-site-template.png)
 
-1. Proporcione un título para el sitio. Se puede indicar un nombre de sitio, pero se generará a partir del título si se omite.
+1. Proporcione un título para el sitio. Se puede proporcionar o generar un nombre de sitio a partir del título si se omite.
 
    * El título del sitio aparece en la barra de título de los exploradores.
    * El nombre del sitio forma parte de la dirección URL.

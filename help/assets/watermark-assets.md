@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 14%
@@ -42,7 +42,7 @@ Para configurar [!DNL Experience Manager] a los recursos de marca de agua:
    >Si ha configurado el perfil de marca de agua del sistema con `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` archivo de configuración (configuración OSGi), puede seguir utilizándolo, sin embargo, Adobe recomienda utilizar el nuevo método.
 
 
-1. [Creación de un perfil de procesamiento](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) para aprovechar los microservicios de recursos para aplicar la marca de agua.
+1. [Creación de un perfil de procesamiento](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) para utilizar microservicios de recursos para aplicar la marca de agua.
 
    ![Perfil de procesamiento de recursos para crear una marca de agua](assets/watermark-processing-profile.png)
 
@@ -75,4 +75,3 @@ Para configurar [!DNL Experience Manager] a los recursos de marca de agua:
 >
 >* [Información general sobre microservicios de recursos](/help/assets/asset-microservices-overview.md).
 >* [Uso de microservicios de recursos con perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).
-

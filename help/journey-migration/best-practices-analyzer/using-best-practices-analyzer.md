@@ -2,10 +2,10 @@
 title: Uso del analizador de prácticas recomendadas
 description: Uso del analizador de prácticas recomendadas
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: df1fdbe0f3590708e1da44864b6e08075a521b51
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 48%
+source-wordcount: '2479'
+ht-degree: 46%
 
 ---
 
@@ -27,13 +27,13 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * AEM BPA es compatible con instancias de con la versión 6.1 y posteriores.
 
-   >[!NOTE]
-   >Consulte lo siguiente [AEM Instalación en.1](#installing-on-aem61) AEM para los requisitos especiales para la instalación de BPA en la versión 6.1 del.
+  >[!NOTE]
+  >Consulte lo siguiente [AEM Instalación en.1](#installing-on-aem61) AEM para los requisitos especiales para la instalación de BPA en la versión 6.1 del.
 
 * BPA puede ejecutarse en cualquier entorno, pero se prefiere que sea en un *Fase* entorno.
 
-   >[!NOTE]
-   >Para evitar un impacto en las instancias críticas para el negocio, se recomienda ejecutar BPA en un *Autor* entorno lo más cercano posible al entorno de *Producción* en las áreas de personalizaciones, configuraciones, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno de *Author* de producción.
+  >[!NOTE]
+  >Para evitar un impacto en las instancias críticas para el negocio, se recomienda ejecutar BPA en un *Autor* entorno lo más cercano posible al entorno de *Producción* en las áreas de personalizaciones, configuraciones, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno de *Author* de producción.
 
 * La generación del contenido de los informes de BPA puede llevar una cantidad de tiempo considerable, de varios minutos a pocas horas. La cantidad de tiempo necesaria depende en gran medida del tamaño y la naturaleza del contenido del repositorio de AEM, la versión de AEM y otros factores.
 
@@ -157,9 +157,9 @@ Siga la tabla siguiente para comprender los niveles de importancia:
 
 ## Interpretación del informe CSV del analizador de prácticas recomendadas {#cra-csv-report}
 
-Al hacer clic en **CSV** AEM desde la instancia de la, el formato CSV del informe Analizador de prácticas recomendadas se crea desde la caché de contenido y se devuelve al explorador. Según la configuración del explorador, este informe se descargará automáticamente como archivo con un nombre predeterminado de `results.csv`.
+Al hacer clic en **CSV** AEM desde la instancia de la, el formato CSV del informe Analizador de prácticas recomendadas se crea desde la caché de contenido y se devuelve al explorador. Según la configuración del explorador, este informe se descarga automáticamente como archivo con un nombre predeterminado de `results.csv`.
 
-Si la caché ha caducado, el informe se regenerará antes de crear y descargar el archivo CSV.
+Si la caché ha caducado, el informe se regenera antes de crear y descargar el archivo CSV.
 
 El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia. Su formato es adecuado para visualizarlo y editarlo en una aplicación como Microsoft Excel. Su finalidad es proporcionar toda la información de búsqueda en un formato repetible que pueda resultar útil al comparar los informes con el paso del tiempo para medir el progreso.
 
@@ -207,11 +207,11 @@ Esta interfaz utiliza los siguientes encabezados HTTP:
 
 Los siguientes parámetros de consulta HTTP están disponibles para determinar cuándo es posible que los encabezados HTTP no se utilicen fácilmente:
 
-* `max-age` (número, opcional): especifica la duración de la actualización de la caché en segundos. Este número debe ser 0 o más. La duración de la actualización predeterminada es de 86400 segundos. Sin este parámetro o el encabezado correspondiente, se utilizará una nueva caché para servir solicitudes durante 24 horas, momento en el que se debe volver a generar la caché. Uso de `max-age=0` forzará la eliminación de la caché e iniciará una regeneración del informe utilizando la duración de actualización anterior distinta de cero para la caché recién generada.
+* `max-age` (número, opcional): especifica la duración de la actualización de la caché en segundos. Este número debe ser 0 o más. La duración de la actualización predeterminada es de 86400 segundos. Sin este parámetro o el encabezado correspondiente, se utiliza una nueva caché para servir solicitudes durante 24 horas, momento en el que se debe volver a generar la caché. Uso de `max-age=0` forzará la eliminación de la caché e iniciará una regeneración del informe utilizando la duración de actualización anterior distinta de cero para la caché recién generada.
 * `respond-async` (booleano, opcional): especifica que la respuesta se debe proporcionar de forma asíncrona. Uso de `respond-async=true` si la caché está obsoleta, el servidor devolverá una respuesta de `202 Accepted` sin esperar a que se actualice la caché y se genere el informe. Si la caché es nueva, este parámetro no tiene ningún efecto. El valor predeterminado es `false`. Sin este parámetro o el encabezado correspondiente, el servidor responderá sincrónicamente, lo que puede requerir una cantidad de tiempo considerable y un ajuste del tiempo de respuesta máximo para el cliente HTTP.
 * `may-refresh-cache` (booleano, opcional): Especifica que el servidor puede actualizar la caché en respuesta a una solicitud si la caché actual está vacía, obsoleta o pronto estará obsoleta. If `may-refresh-cache=true`, o si no se especifica, el servidor puede iniciar una tarea en segundo plano que invocará Pattern Detector y actualizará la caché. If `may-refresh-cache=false` a continuación, el servidor no iniciará ninguna tarea de actualización que, de lo contrario, se habría realizado si la caché está vacía o anticuada, en cuyo caso el informe estará vacío. Este parámetro no afectará a ninguna tarea de actualización que ya esté en proceso.
-* `return-minimal` (booleano, opcional): especifica que la respuesta del servidor solo debe incluir el estado que contiene la indicación de progreso y el estado de caché en formato JSON. If `return-minimal=true`, el cuerpo de la respuesta se limitará al objeto de estado. If `return-minimal=false`, o si no se especifica, se proporcionará una respuesta completa.
-* `log-findings` (booleano, opcional): Especifica que el servidor debe registrar el contenido de la caché cuando se crea o actualiza por primera vez. Cada hallazgo de la caché se registrará como una cadena JSON. Este registro solo se producirá si `log-findings=true` y la solicitud genera una nueva caché.
+* `return-minimal` (booleano, opcional): especifica que la respuesta del servidor solo debe incluir el estado que contiene la indicación de progreso y el estado de caché en formato JSON. If `return-minimal=true`, el cuerpo de la respuesta se limita al objeto de estado. If `return-minimal=false`, o si no se especifica, se proporciona una respuesta completa.
+* `log-findings` (booleano, opcional): Especifica que el servidor debe registrar el contenido de la caché cuando se crea o actualiza por primera vez. Cada hallazgo de la caché de se registra como una cadena JSON. Este registro solo se producirá si `log-findings=true` y la solicitud genera una nueva caché.
 
 Cuando están presentes tanto un encabezado HTTP como el parámetro de consulta correspondiente, el parámetro de consulta tendrá prioridad.
 
@@ -235,7 +235,7 @@ Los siguientes valores de respuesta son posibles:
 
 ### Ajuste de la duración de caché {#cache-adjustment}
 
-La duración predeterminada de la caché de BPA es de 24 horas. AEM Con la opción para actualizar un informe y volver a generar la caché, tanto en la instancia de como en la interfaz HTTP, es probable que este valor predeterminado sea adecuado para la mayoría de los usos del BPA. Si el tiempo de generación de informes es particularmente largo para la instancia de AEM, puede que desee ajustar la duración de la caché para minimizar la regeneración del informe.
+La duración predeterminada de la caché de BPA es de 24 horas. AEM Con la opción para actualizar un informe y volver a generar la caché, tanto en la instancia de como en la interfaz HTTP, es probable que este valor predeterminado sea adecuado para la mayoría de los usos del BPA. AEM Si el tiempo de generación de informes es particularmente largo para la instancia de la, es posible que desee ajustar la duración de la caché para minimizar la regeneración del informe.
 
 El valor de duración de la caché se almacena como la `maxCacheAge` propiedad en el siguiente nodo de repositorio:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`

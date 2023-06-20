@@ -2,9 +2,9 @@
 title: Información general sobre fragmentos de experiencias
 description: Ampliar fragmentos de experiencias de Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1648'
 ht-degree: 1%
 
 ---
@@ -85,8 +85,7 @@ Para crear una plantilla de fragmento de experiencia que detecte el **Crear frag
 
    1. Y el nombre de la plantilla debe comenzar por:
       `experience-fragments`
-Esto permite a los usuarios crear fragmentos de experiencias en /content/experience-fragments como 
-`cq:allowedTemplates` de esta carpeta incluye todas las plantillas que tienen nombres que comienzan por `experience-fragment`. Los clientes pueden actualizar esta propiedad para incluir sus propios esquemas de nomenclatura o ubicaciones de plantillas.
+Esto permite a los usuarios crear fragmentos de experiencias en /content/experience-fragments como `cq:allowedTemplates` de esta carpeta incluye todas las plantillas que tienen nombres que comienzan por `experience-fragment`. Los clientes pueden actualizar esta propiedad para incluir sus propios esquemas de nomenclatura o ubicaciones de plantillas.
 
 1. [Plantillas permitidas](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) se puede configurar en la consola Fragmentos de experiencias.
 
@@ -201,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Para utilizar la interfaz, primero debe crear un paquete que contenga un nuevo componente de servicio que implemente la interfaz del proveedor de reescritura de vínculos.
 
-Este servicio se utilizará para conectar con la reescritura de Exportación de fragmentos de experiencias a Target para tener acceso a los distintos vínculos.
+Este servicio se utiliza para conectarse a la reescritura de Exportación de fragmentos de experiencias a Target para que pueda tener acceso a los distintos vínculos.
 
 Por ejemplo, `ComponentService`:
 
@@ -266,7 +265,7 @@ En el ejemplo anterior, nos gustaría reescribir:
 * `href` solo atributos
 
 * para un fragmento de experiencia específico:
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Cualquier otro fragmento de experiencia que pase por el sistema Exportar a destino se ignorará y no se verá afectado por los cambios implementados en este servicio.
 
@@ -279,8 +278,7 @@ Para la variación del fragmento de experiencia afectada por el proceso de reesc
 Como entrada, el método recibe los parámetros:
 
 * `link`
-El 
-`String` representación del vínculo que se está procesando actualmente. Suele ser una dirección URL relativa que señala al recurso en la instancia de autor.
+El `String` representación del vínculo que se está procesando actualmente. Suele ser una dirección URL relativa que señala al recurso en la instancia de autor.
 
 * `tag`
 Nombre del elemento HTML que se está procesando actualmente.

@@ -2,10 +2,10 @@
 title: Notas de la versión 2020.11.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.11.0."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 20%
+source-wordcount: '1264'
+ht-degree: 18%
 
 ---
 
@@ -32,15 +32,15 @@ La de la siguiente versión (2020.12.0) será el 17 de diciembre de 2020
 
 ### Novedades de la versión [!DNL Assets] y [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Ingesta masiva de recursos**: Proporcione a los clientes un servicio de ingesta escalable y nativo de la nube que aproveche [!DNL Experience Manager] Arquitectura as a Cloud Service, incluidos los microservicios de recursos. Los casos de uso clave incluyen la ingesta a escala con monitorización, creación de informes y programación, a la vez que permiten la transferencia inicial de recursos a los almacenes de datos en la nube mediante herramientas comunes de carga en la nube. Consulte [herramienta ingestor masivo de recursos](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Ingesta masiva de recursos**: proporcione a los clientes un servicio de ingesta escalable y nativo de la nube que utilice [!DNL Experience Manager] Arquitectura as a Cloud Service, incluidos los microservicios de recursos. Los casos de uso clave incluyen la ingesta a escala con monitorización, creación de informes y programación, a la vez que permiten la transferencia inicial de recursos a los almacenes de datos en la nube mediante herramientas comunes de carga en la nube. Consulte [herramienta ingestor masivo de recursos](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-   Esta herramienta es para usuarios administradores del sistema, consultores o socios de implementación. Esta función permite la ingesta a gran escala y se utiliza idealmente durante la ingesta inicial o la ingesta ocasional a gran escala. Para trabajos de ingesta más pequeños, utilice el [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) o [carga mediante la interfaz de usuario de Assets](/help/assets/add-assets.md#upload-assets).
+  Esta herramienta es para usuarios administradores del sistema, consultores o socios de implementación. Esta función permite la ingesta a gran escala y se utiliza idealmente durante la ingesta inicial o la ingesta ocasional a gran escala. Para trabajos de ingesta más pequeños, utilice el [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) o [carga mediante la interfaz de usuario de Assets](/help/assets/add-assets.md#upload-assets).
 
-   ![Configuración del importador en bloque](/help/assets/assets/bulk-import-config-low-res.png)
+  ![Configuración del importador en bloque](/help/assets/assets/bulk-import-config-low-res.png)
 
 * Los usuarios ahora pueden ordenar los recursos digitales en las vistas de tarjetas y columnas.
 
-   ![ordenar recursos](/help/assets/assets/asset-sort-options.png)
+  ![ordenar recursos](/help/assets/assets/asset-sort-options.png)
 
 * Se han realizado las siguientes mejoras para la accesibilidad en [!DNL Experience Manager Assets] en esta versión. Para obtener más información, consulte [funciones de accesibilidad en [!DNL Assets]](/help/assets/accessibility.md).
 
@@ -54,7 +54,7 @@ La de la siguiente versión (2020.12.0) será el 17 de diciembre de 2020
 
 * **Ajustes preestablecidos de conjunto de lotes en Dynamic Media**: Ahora puede automatizar la creación y organización de varios recursos en un conjunto de imágenes o conjuntos de giros en el momento de cargar archivos de recursos en una carpeta, ya sea de forma individual o mediante ingesta masiva.
 
-   Consulte [Acerca de los ajustes preestablecidos del lote](/help/assets/dynamic-media/batch-set-presets-dm.md).
+  Consulte [Acerca de los ajustes preestablecidos del lote](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 * Las siguientes mejoras de accesibilidad ya están disponibles en [!DNL Dynamic Media]:
 
@@ -67,7 +67,7 @@ La de la siguiente versión (2020.12.0) será el 17 de diciembre de 2020
    * Los usuarios del teclado y del lector de pantalla pueden utilizar la funcionalidad de recorte.
    * Los usuarios del teclado pueden administrar mejor los puntos interactivos.
 
-   Consulte [Accesibilidad en [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+  Consulte [Accesibilidad en [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -99,7 +99,7 @@ Consulte [Administrar entornos](/help/implementing/cloud-manager/manage-environm
 * La carga de dependencias realizada antes de la ejecución de la generación requería la descarga de un complemento de Maven.
 * El vínculo del pie de página de Cloud Manager para seleccionar un lenguaje ahora le llevará hasta la ubicación correcta.
 * A veces, durante la digitalización del código, el proceso SonarQube no se iniciaba. Ahora, esto se detectará automáticamente y se intentará reiniciar.
-* Todas las canalizaciones de producción existentes se habilitarán automáticamente con el paso Auditoría de experiencias.
+* Todas las canalizaciones de producción existentes se habilitan automáticamente con el paso Auditoría de experiencias.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 

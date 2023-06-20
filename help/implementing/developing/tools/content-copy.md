@@ -2,10 +2,10 @@
 title: La herramienta Copia de contenido
 description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción as a Cloud Service de la a entornos más bajos para realizar pruebas.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 60%
+source-wordcount: '1223'
+ht-degree: 55%
 
 ---
 
@@ -29,12 +29,12 @@ El contenido que se va a copiar se define mediante un conjunto de contenido. Un 
 
 Al copiar contenido, el entorno de origen es la fuente de información.
 
-* Si el contenido se ha modificado en el entorno de destino, se sobrescribirá con el contenido en el origen, si las rutas son las mismas.
-* Si las rutas son diferentes, el contenido del origen se combinará con el contenido del destino.
+* Si el contenido se ha modificado en el entorno de destino, el contenido del origen lo sobrescribe, si las rutas son iguales.
+* Si las rutas son diferentes, el contenido del origen se combina con el contenido del destino.
 
 ## Permisos {#permissions}
 
-Para utilizar la herramienta de copia de contenido, se necesitan determinados permisos tanto en los entornos de origen como de destino.
+Para utilizar la herramienta de copia de contenido, se requieren ciertos permisos tanto en el entorno de origen como en el de destino.
 
 | Función de copia de contenido | AEM Grupo de administradores de | Función Administrador de implementación |
 |---|---|---|
@@ -122,7 +122,6 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
    >* El usuario no tiene los permisos adecuados.
    >* El entorno tiene una canalización en ejecución o una operación de copia de contenido en curso.
    >* El entorno está hibernando o iniciándose.
-
 
 1. En el diálogo **Copiar contenido**, especifique el origen y el destino de la acción de copia de contenido.
 

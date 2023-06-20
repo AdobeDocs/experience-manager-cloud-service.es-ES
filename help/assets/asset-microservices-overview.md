@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Información general sobre la ingesta y el procesamiento de recursos con microservicios de recursos {#asset-microservices-overview}
 
-Adobe Experience Manager as a [!DNL Cloud Service] proporciona un método nativo en la nube para aprovechar las aplicaciones y las funcionalidades de Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingesta y el procesamiento de recursos, con tecnología de microservicios de recursos. Los microservicios de recursos proporcionan un procesamiento escalable y resiliente de los recursos mediante servicios en la nube. Adobe administra los servicios de nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Las ventajas clave de los microservicios de recursos nativos de la nube son los siguientes:
+Adobe Experience Manager as a [!DNL Cloud Service] proporciona un método nativo de la nube para utilizar aplicaciones y funcionalidades Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingesta y el procesamiento de recursos, con tecnología de microservicios de recursos. Los microservicios de recursos proporcionan un procesamiento escalable y resiliente de los recursos mediante servicios en la nube. Adobe administra los servicios de nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Las ventajas clave de los microservicios de recursos nativos de la nube son los siguientes:
 
 * Una arquitectura escalable que permite un procesamiento optimizado para operaciones que requieren muchos recursos.
 * Una indexación y extracciones de texto eficaces que no afectan al rendimiento de los entornos de Experience Manager.
@@ -98,4 +98,3 @@ Adobe Experience Manager se puede configurar para que active automáticamente lo
 >* [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
 >* Aplicación de escritorio de [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es)
 >* [Documentación de Apache Oak sobre el acceso binario directo](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
-

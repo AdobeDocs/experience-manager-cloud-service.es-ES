@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6346'
-ht-degree: 100%
+source-wordcount: '6321'
+ht-degree: 99%
 
 ---
 
@@ -60,11 +60,11 @@ Aunque puede lograr la mayoría de los casos de uso utilizando cualquier constru
 
 * Una regla general típica al crear una regla es pensarla en el contexto del objeto en el que quiere escribirla. Tenga en cuenta que desea ocultar o mostrar el campo B en función del valor que un usuario especifique en el campo A. En este caso, quiere evaluar una condición en el campo A y, en función del valor que se devuelva, se debe activar una acción en el campo B.
 
-   Por lo tanto, si está escribiendo una regla en el campo B (el objeto sobre el que se evalúa una condición), utilice la construcción condición-acción o el tipo de regla When. Del mismo modo, utilice la construcción acción-condición o el tipo de regla Show o Hide en el campo A.
+  Por lo tanto, si está escribiendo una regla en el campo B (el objeto sobre el que se evalúa una condición), utilice la construcción condición-acción o el tipo de regla When. Del mismo modo, utilice la construcción acción-condición o el tipo de regla Show o Hide en el campo A.
 
 * A veces, debe realizar varias acciones en función de una condición. En estos casos, se recomienda utilizar la construcción condición-acción. En esta construcción, puede evaluar una condición una vez y especificar varias instrucciones de acción.
 
-   Por ejemplo, para ocultar los campos B, C y D en función de la condición que comprueba el valor que un usuario especifica en el campo A, escriba una regla con la estructura condición-acción o el tipo de regla When en el campo A y especifique acciones para controlar la visibilidad de los campos B, C y D. De lo contrario, necesitará tres reglas independientes en los campos B, C y D, donde cada regla comprueba la condición y muestra u oculta el campo respectivo. En este ejemplo, es más eficaz escribir el tipo de regla When en un objeto, en lugar de Show o Hide en tres objetos.
+  Por ejemplo, para ocultar los campos B, C y D en función de la condición que comprueba el valor que un usuario especifica en el campo A, escriba una regla con la estructura condición-acción o el tipo de regla When en el campo A y especifique acciones para controlar la visibilidad de los campos B, C y D. De lo contrario, necesitará tres reglas independientes en los campos B, C y D, donde cada regla comprueba la condición y muestra u oculta el campo respectivo. En este ejemplo, es más eficaz escribir el tipo de regla When en un objeto, en lugar de Show o Hide en tres objetos.
 
 * Para activar una acción basada en varias condiciones, se recomienda utilizar la construcción acción-condición. Por ejemplo, para mostrar y ocultar el campo A mediante la evaluación de condiciones en los campos B, C y D, utilice los tipos de reglas Show o Hide en el campo A.
 * Utilice la construcción condición-acción o acción-condición si la regla contiene una acción para una condición.
@@ -542,42 +542,38 @@ Para obtener más información, consulte [jsdoc.app](https://jsdoc.app/).
 
 Etiquetas `jsdoc` compatibles:
 
-* Sintaxis
-**privada**: 
-una función privada no se incluye como función personalizada.`@private`
+* **Privado**
+Sintaxis: `@private`
 Una función privada no se incluye como función personalizada.
 
-* Sintaxis 
-**de nombre**:
-También `@name funcName <Function Name>`
-También `,` puede usar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
-   `funcName` es el nombre de la función (no se permiten espacios).
-   `<Function Name>` es el nombre para mostrar de la función.
+* **Nombre**
+Sintaxis: `@name funcName <Function Name>`
+Alternativamente `,` puede utilizar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
+  `funcName` es el nombre de la función (no se permiten espacios).
+  `<Function Name>` es el nombre para mostrar de la función.
 
-* Sintaxis
-**de abonados**: 
-adjunta un área de nombres a la función.`@memberof namespace`
+* **Miembro**
+Sintaxis: `@memberof namespace`
 Adjunta un área de nombres a la función.
 
-* Sintaxis
-**de parámetro**: También puede usar: `@param {type} name <Parameter Description>`
-También puede usar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`. 
+* **Parámetro**
+Sintaxis: `@param {type} name <Parameter Description>`
+Como alternativa, puede utilizar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
 Muestra los parámetros utilizados por la función. Una función puede tener varias etiquetas de parámetro, una etiqueta para cada parámetro en el orden de ocurrencia.
-   `{type}` representa el tipo de parámetro. Los tipos de parámetros permitidos son:
+  `{type}` representa el tipo de parámetro. Los tipos de parámetros permitidos son:
 
    1. cadena
    1. número
    1. booleano
    1. ámbito
 
-   El ámbito hace referencia a los campos de un formulario adaptable. Cuando un formulario utiliza la carga diferida, puede utilizar `scope` para acceder a sus campos. Puede acceder a los campos cuando se cargan o si están marcados como globales.
+  El ámbito hace referencia a los campos de un formulario adaptable. Cuando un formulario utiliza la carga diferida, puede utilizar `scope` para acceder a sus campos. Puede acceder a los campos cuando se cargan o si están marcados como globales.
 
-   Todos los tipos de parámetros se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  Todos los tipos de parámetros se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* Sintaxis
-**de tipo de valor devuelto**: 
-También puede usar `@return {type}`
-También puede usar `@returns {type}`. 
+* **Tipo de devolución**
+Sintaxis: `@return {type}`
+Como alternativa, puede utilizar `@returns {type}`.
 Agrega información sobre la función, como su objetivo. 
 {type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 
@@ -585,33 +581,33 @@ Agrega información sobre la función, como su objetivo.
    1. número
    1. booleano
 
-   Todos los demás tipos de valor devuelto se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos de valor devuelto no distinguen entre mayúsculas y minúsculas.
+  Todos los demás tipos de valor devuelto se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos de valor devuelto no distinguen entre mayúsculas y minúsculas.
 
    * Sintaxis
-**This** 
-`@this currentComponent`
-   Utilice @this para hacer referencia al componente de formulario adaptable en el que se escribe la regla.
+**This** `@this currentComponent`
 
-   El siguiente ejemplo se basa en el valor de campo. En el ejemplo siguiente, la regla oculta un campo del formulario. La porción `this` de `this.value` hace referencia al componente de formulario adaptable subyacente, en el que se escribe la regla.
+  Utilice @this para hacer referencia al componente de formulario adaptable en el que se escribe la regla.
 
-   ```
-      /**
-      * @function myTestFunction
-      * @this currentComponent
-      * @param {scope} scope in which code inside function will be executed.
-      */
-      myTestFunction = function (scope) {
-         if(this.value == "O"){
-               scope.age.visible = true;
-         } else {
-            scope.age.visible = false;
-         }
-      }
-   ```
+  El siguiente ejemplo se basa en el valor de campo. En el ejemplo siguiente, la regla oculta un campo del formulario. La porción `this` de `this.value` hace referencia al componente de formulario adaptable subyacente, en el que se escribe la regla.
 
-   >[!NOTE]
-   >
-   >Los comentarios antes de la función personalizada se utilizan como resumen. El resumen puede extenderse a varias líneas hasta que se encuentre una etiqueta. Limite el tamaño a un único para ver una descripción concisa en el generador de reglas.
+  ```
+     /**
+     * @function myTestFunction
+     * @this currentComponent
+     * @param {scope} scope in which code inside function is run.
+     */
+     myTestFunction = function (scope) {
+        if(this.value == "O"){
+              scope.age.visible = true;
+        } else {
+           scope.age.visible = false;
+        }
+     }
+  ```
+
+  >[!NOTE]
+  >
+  >Los comentarios antes de la función personalizada se utilizan como resumen. El resumen puede extenderse a varias líneas hasta que se encuentre una etiqueta. Limite el tamaño a un único para ver una descripción concisa en el generador de reglas.
 
 **Agregar una función personalizada**
 

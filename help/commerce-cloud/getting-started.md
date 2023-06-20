@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 29%
+source-wordcount: '1092'
+ht-degree: 28%
 
 ---
 
@@ -28,7 +28,7 @@ La incorporación de AEM Commerce as a Cloud Service es un proceso de dos pasos:
 
 El primer paso de incorporación se realiza por Adobe. Para obtener más información sobre precios y aprovisionamiento, debe ponerse en contacto con su representante de ventas.
 
-Una vez que haya sido aprovisionado con el complemento CIF, se aplicará a cualquier programa existente de Cloud Manager. En caso de que no tenga un programa de Cloud Manager, deberá crear uno nuevo. Para obtener más información, consulte [Configuración del programa](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
+Una vez que se le haya aprovisionado con el complemento CIF, se aplica a cualquier programa existente de Cloud Manager. En caso de que no tenga un programa de Cloud Manager, deberá crear uno nuevo. Para obtener más información, consulte [Configuración del programa](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
 El segundo paso es el autoservicio para cada entorno de AEM as a Cloud Service. Hay algunas configuraciones adicionales que deberá realizar después del aprovisionamiento inicial del complemento CIF.
 
@@ -51,7 +51,7 @@ Hay dos opciones para configurar el punto de conexión:
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
-Esto se puede hacer mediante un cuadro de diálogo en la página Detalles del entorno. Al ver esta página para un programa habilitado para Commerce, se mostrará un botón si el punto de conexión no está configurado actualmente:
+Esto se puede hacer mediante un cuadro de diálogo en la página Detalles del entorno. Al ver esta página para un programa habilitado para Commerce, se muestra un botón si el punto de conexión no está configurado actualmente:
 
 ![Información del entorno de CM](/help/commerce-cloud/assets/commerce-cmui.png)
 
@@ -59,7 +59,7 @@ Al hacer clic en este botón, se abre un cuadro de diálogo:
 
 ![Punto final de CM Commerce](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Una vez definido el punto de conexión y, opcionalmente, un encabezado de autorización para la compatibilidad con catálogos clasificados, el punto de conexión se mostrará en la página de detalles. Al hacer clic en el icono Editar se abrirá el mismo cuadro de diálogo en el que el punto de conexión se puede modificar si es necesario.
+Una vez definido el punto de conexión y, opcionalmente, un encabezado de autorización para la compatibilidad con catálogos clasificados, el punto de conexión se muestra en la página de detalles. Al hacer clic en el icono Editar se abrirá el mismo cuadro de diálogo en el que el punto de conexión se puede modificar si es necesario.
 
 ![Información del entorno de CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
@@ -118,19 +118,19 @@ Esta configuración se puede ajustar para el proyecto a través de la configurac
 Se pueden configurar las siguientes propiedades:
 
 - Cliente de GraphQL: seleccione el cliente de GraphQL configurado para la comunicación back-end comercial. Esto debería permanecer en modo predeterminado.
-- Vista de tienda: el identificador de la vista de tienda. Si está vacía, se utilizará la vista de tienda predeterminada.
+- Vista de tienda: el identificador de la vista de tienda. Si está vacía, se utiliza la vista de tienda predeterminada.
 - Ruta del proxy de GraphQL: la ruta URL del proxy de GraphQL AEM que se utiliza para las solicitudes de proxy al extremo de GraphQL backend de comercio.
-   >[!NOTE]
-   >
-   > En la mayoría de las configuraciones, el valor predeterminado `/api/graphql` no se debe cambiar. Solo la configuración avanzada que no utiliza el proxy de GraphQL proporcionado debe cambiar esta configuración.
+  >[!NOTE]
+  >
+  > En la mayoría de las configuraciones, el valor predeterminado `/api/graphql` no se debe cambiar. Solo la configuración avanzada que no utiliza el proxy de GraphQL proporcionado debe cambiar esta configuración.
 - Habilitar compatibilidad con UID de catálogo: habilite la compatibilidad con UID en lugar de con ID en las llamadas comerciales de GraphQL back-end.
-   >[!NOTE]
-   >
-   > La compatibilidad con UID se ha introducido en Adobe Commerce 2.4.2. Habilite esta opción solo si el backend de Commerce admite un esquema GraphQL de la versión 2.4.2 o posterior.
+  >[!NOTE]
+  >
+  > La compatibilidad con UID se ha introducido en Adobe Commerce 2.4.2. Habilite esta opción solo si el backend de Commerce admite un esquema GraphQL de la versión 2.4.2 o posterior.
 - Identificador de categoría raíz del catálogo: el identificador (UID o ID) de la raíz del catálogo de la tienda
-   >[!CAUTION]
-   >
-   > A partir de la versión 2.0.0 de los componentes principales del CIF, la compatibilidad con `id` se ha eliminado y reemplazado por `uid`. Si su proyecto utiliza la versión 2.0.0 de los componentes principales del CIF, debe habilitar la compatibilidad con el UID de catálogo y utilizar un UID de categoría válido como &quot;Identificador de categoría raíz del catálogo&quot;.
+  >[!CAUTION]
+  >
+  > A partir de la versión 2.0.0 de los componentes principales del CIF, la compatibilidad con `id` se ha eliminado y reemplazado por `uid`. Si su proyecto utiliza la versión 2.0.0 de los componentes principales del CIF, debe habilitar la compatibilidad con el UID de catálogo y utilizar un UID de categoría válido como &quot;Identificador de categoría raíz del catálogo&quot;.
 
 La configuración que se muestra arriba es como referencia. Los proyectos deben proporcionar sus propias configuraciones.
 

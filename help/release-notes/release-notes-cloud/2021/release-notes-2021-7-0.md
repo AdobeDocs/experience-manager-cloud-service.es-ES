@@ -2,9 +2,9 @@
 title: Notas de la versión 2021.7.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.7.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1315'
 ht-degree: 50%
 
 ---
@@ -34,7 +34,7 @@ Eche un vistazo a la [Información general de la versión de julio de 2021](http
 
 ### Novedades {#what-is-new-foundation}
 
-* Configuración de Dispatcher más flexible: los proyectos se pueden organizar más fácilmente. Por ejemplo, ahora puede incluir varios archivos de reglas de reescritura que reflejen la estructura del sitio. [Más información](/help/implementing/dispatcher/disp-overview.md#validation-debug) este modo flexible, incluyendo cómo estructurar la configuración de dispatcher para aprovecharla.
+* Configuración de Dispatcher más flexible: los proyectos se pueden organizar más fácilmente. Por ejemplo, ahora puede incluir varios archivos de reglas de reescritura que reflejen la estructura del sitio. [Más información](/help/implementing/dispatcher/disp-overview.md#validation-debug) este modo flexible incluye información sobre cómo estructurar la configuración de dispatcher para que pueda aprovecharla.
 * La IU de replicación de árbol en la pestaña Distribuir del agente de replicación debe considerarse obsoleta y se planea eliminarla después del 30 de septiembre. [Más información](/help/operations/replication.md#tree-activation) estrategias de replicación alternativas.
 * Paquete `org.apache.sling.datasource-1.0.4.jar` para la compatibilidad con fuentes de datos Sling se ha eliminado, ya que su funcionalidad está obsoleta y los clientes no la utilizan.
 
@@ -42,23 +42,23 @@ Eche un vistazo a la [Información general de la versión de julio de 2021](http
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-* La funcionalidad de automatización de contenido permite [!DNL Experience Manager Assets] aproveche las [!DNL Adobe Creative Cloud] API para automatizar la producción de recursos a escala. Mejora la velocidad del contenido al reducir drásticamente el tiempo necesario y las iteraciones necesarias para crear variaciones del mismo recurso. La funcionalidad no requiere programación alguna y funciona desde DAM. Consulte [generación de variaciones de recursos mediante la integración de Creative Cloud](/help/assets/cc-api-integration.md).
+* La funcionalidad de automatización de contenido permite [!DNL Experience Manager Assets] use el [!DNL Adobe Creative Cloud] API para automatizar la producción de recursos a escala. Mejora la velocidad del contenido al reducir drásticamente el tiempo necesario y las iteraciones necesarias para crear variaciones del mismo recurso. La funcionalidad no requiere programación alguna y funciona desde DAM. Consulte [generación de variaciones de recursos mediante la integración de Creative Cloud](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] incluye el [!DNL Document Cloud] Visor de PDF para previsualizar documentos de PDF de forma nativa. Esta función permite a los usuarios previsualizar archivos de PDF de varias páginas sin ningún tipo de conversión o procesamiento de archivos. Esta función mejora la paridad con [!DNL Experience Manager] 6.5. Los controles disponibles en el visor incluyen zoom, navegación a páginas, controles de desacoplamiento y visualización en pantalla completa. Los casos de usuario también previsualizan y saltan a páginas y marcadores. Los comentarios en el propio archivo son compatibles y los comentarios y anotaciones sobre el contenido del archivo del PDF se añadirán en una versión futura.
+* [!DNL Experience Manager Assets] incluye el [!DNL Document Cloud] Visor de PDF para previsualizar documentos de PDF de forma nativa. Esta función permite a los usuarios previsualizar archivos de PDF de varias páginas sin ningún tipo de conversión o procesamiento de archivos. Esta función mejora la paridad con [!DNL Experience Manager] 6.5. Los controles disponibles en el visor incluyen zoom, navegación a páginas, controles de desacoplamiento y visualización en pantalla completa. Los casos de usuario también previsualizan y saltan a páginas y marcadores. Se admiten comentarios en el propio archivo. Los comentarios y anotaciones sobre el contenido del archivo del PDF se añadirán en una versión futura.
 
-   ![Previsualización de archivos de PDF en [!DNL Experience Manager] uso del Visor de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
+  ![Previsualización de archivos de PDF en [!DNL Experience Manager] uso del Visor de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
 * La funcionalidad de descarga de Linkshare utiliza descargas asincrónicas que aumentan la velocidad de descarga. Consulte [Descargar recursos compartidos mediante el uso compartido de vínculos](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![Descargar bandeja de entrada](/help/assets/assets/download-inbox.png)
+  ![Descargar bandeja de entrada](/help/assets/assets/download-inbox.png)
 
 * La configuración de vista se mejora para permitir que los usuarios elijan una vista predeterminada y un parámetro de ordenación predeterminado.
 
-   ![Establecer vista predeterminada en [!UICONTROL Configuración de vista]](/help/assets/assets/view-settings-for-defaults.png)
+  ![Establecer vista predeterminada en [!UICONTROL Configuración de vista]](/help/assets/assets/view-settings-for-defaults.png)
 
 * Los usuarios pueden buscar y filtrar las carpetas en función de los predicados de propiedades.
 
-   ![Filtrado de carpetas de búsqueda mediante predicados de búsqueda](/help/assets/assets/search-folders-via-predicates.png)
+  ![Filtrado de carpetas de búsqueda mediante predicados de búsqueda](/help/assets/assets/search-folders-via-predicates.png)
 
 ### Nuevas funciones disponibles en la [!DNL Assets] canal de prelanzamiento {#assets-prerelease-features}
 

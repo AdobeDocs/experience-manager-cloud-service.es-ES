@@ -4,9 +4,9 @@ description: Validación y depuración mediante herramientas de Dispatcher (here
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2337'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Los siguientes archivos son personalizables y se transferirán a la instancia de
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Puede tener uno o más de estos archivos. Contienen `<VirtualHost>` Entradas que coinciden con los nombres de host y permiten a Apache gestionar cada tráfico de dominio con reglas diferentes. Los archivos se crean en `available_vhosts` y se activa con un vínculo simbólico en la `enabled_vhosts` directorio. Desde el `.vhost` se incluirán otros archivos, como reescrituras y variables.
+Puede tener uno o más de estos archivos. Contienen `<VirtualHost>` Entradas que coinciden con los nombres de host y permiten a Apache gestionar cada tráfico de dominio con reglas diferentes. Los archivos se crean en `available_vhosts` y se activa con un vínculo simbólico en la `enabled_vhosts` directorio. Desde el `.vhost` se incluyen otros archivos, como reescrituras y variables.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -101,7 +101,7 @@ Este archivo se incluye desde dentro de `dispatcher_vhost.conf` archivo. Puede c
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Puede tener uno o más de estos archivos y contienen granjas que coinciden con los nombres de host y permiten que el módulo de Dispatcher administre cada granja con reglas diferentes. Los archivos se crean en `available_farms` y se activa con un vínculo simbólico en la `enabled_farms` directorio. Desde el `.farm` se incluirán archivos, otros archivos como filtros, reglas de caché y otros.
+Puede tener uno o más de estos archivos y contienen granjas que coinciden con los nombres de host y permiten que el módulo de Dispatcher administre cada granja con reglas diferentes. Los archivos se crean en `available_farms` y se activa con un vínculo simbólico en la `enabled_farms` directorio. Desde el `.farm` se incluyen archivos, otros archivos como filtros, reglas de caché y otros.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -125,7 +125,7 @@ Los archivos anteriores hacen referencia a los archivos de configuración inmuta
 
 Estos archivos forman parte del marco base y aplican estándares y prácticas recomendadas. Los archivos se consideran inmutables porque modificarlos o eliminarlos localmente no tendrá ningún impacto en la implementación, ya que no se transferirán a la instancia de Cloud.
 
-Se recomienda que los archivos anteriores hagan referencia a los archivos inmutables que se enumeran a continuación, seguidos de cualquier instrucción o anulación adicional. Cuando la configuración de Dispatcher se implementa en un entorno de nube, se utilizará la versión más reciente de los archivos inmutables, independientemente de la versión que se haya utilizado en el desarrollo local.
+Se recomienda que los archivos anteriores hagan referencia a los archivos inmutables que se enumeran a continuación, seguidos de cualquier instrucción o anulación adicional. Cuando la configuración de Dispatcher se implementa en un entorno de nube, se utiliza la versión más reciente de los archivos inmutables, independientemente de la versión que se haya utilizado en el desarrollo local.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -221,7 +221,7 @@ La secuencia de comandos hace lo siguiente:
 2. Ejecuta el `httpd -t` comando para comprobar si la sintaxis es correcta de modo que apache httpd pueda iniciarse. Si se realiza correctamente, la configuración debe estar lista para la implementación.
 3. Comprueba que el subconjunto de los archivos de configuración del SDK de Dispatcher, que están pensados para ser inmutables como se describe en la [Sección Estructura de archivos](##legacy-mode-file-structure), no se ha modificado. AEM Se trata de una nueva comprobación, introducida con la versión v2021.1.4738 del SDK de la versión que también incluye la versión 2.0.36 de las herramientas de Dispatcher. Antes de esta actualización, es posible que los clientes hayan supuesto incorrectamente que cualquier modificación local del SDK de esos archivos inmutables también se aplicaría al entorno de Cloud.
 
-Durante una implementación de Cloud Manager, la variable `httpd -t` también se ejecutará la comprobación de sintaxis y se incluirán los errores en Cloud Manager `Build Images step failure` registro.
+Durante una implementación de Cloud Manager, la variable `httpd -t` también se ejecuta la comprobación de sintaxis y todos los errores se incluyen en Cloud Manager `Build Images step failure` registro.
 
 ### Fase 1 {#first-phase}
 
@@ -348,14 +348,14 @@ Para evitar este error, copie y pegue la ruta de acceso desde el Explorador de W
 
 ### Fase 2 {#second-phase}
 
-Esta fase comprueba la sintaxis de apache iniciando Docker en una imagen. AEM Docker debe instalarse localmente, pero tenga en cuenta que no es necesario para que se ejecute el programa de instalación de la aplicación de la prueba de la que se dispone en el servidor de correo electrónico
+Esta fase comprueba la sintaxis de apache iniciando Docker en una imagen. AEM Docker debe estar instalado localmente, pero tenga en cuenta que no es necesario para que se ejecute el programa de instalación de la aplicación de la red de distribución de datos de.
 
 >[!NOTE]
 >Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este es un requisito previo para ejecutar y depurar Dispatcher en un equipo local.
 
 Esta fase también se puede ejecutar de forma independiente mediante `validator full -d out src/dispatcher`, que genera un directorio de salida, necesario para el siguiente comando `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
-Durante una implementación de Cloud Manager, la variable `httpd -t` La comprobación de sintaxis también se ejecutará y cualquier error se incluirá en el registro de errores del paso de imágenes de compilación de Cloud Manager.
+Durante una implementación de Cloud Manager, la variable `httpd -t` La comprobación de sintaxis se ejecuta y cualquier error se incluye en el registro de errores del paso Imágenes de compilación de Cloud Manager.
 
 ### Fase 3 {#third-phase}
 

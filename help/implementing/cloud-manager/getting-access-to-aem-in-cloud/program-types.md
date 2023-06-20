@@ -2,9 +2,9 @@
 title: Programas y tipos de programas
 description: Obtenga información sobre la jerarquía de Cloud Manager y cómo encajan los distintos tipos de programas en su estructura y cómo difieren.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 100%
 
 ---
@@ -59,5 +59,5 @@ Un usuario puede crear un **programa** de producción o un **programa** de zona 
    * Consulte el documento [Introducción a los programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obtener más información.
 * Un **programa de zona protegida** normalmente se crea para servir los propósitos de formación, ejecución de demostraciones, habilitación, POC o documentación.
    * Una zona protegida no está diseñada para transportar tráfico en directo y tiene restricciones que un programa de producción no.
-   * Incluirá Sites y Assets y se entregará rellenado automáticamente con una rama de Git que incluya código de muestra, un entorno de desarrollo y una canalización que no sea de producción.
+   * Incluye Sites y Assets y se entrega rellenado automáticamente con una rama de Git que incluye código de muestra, un entorno de desarrollo y una canalización que no es de producción.
    * Consulte el documento [Introducción a los programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) para obtener más información.

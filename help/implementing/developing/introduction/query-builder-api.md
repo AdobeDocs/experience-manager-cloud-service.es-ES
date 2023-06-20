@@ -2,9 +2,9 @@
 title: API del Generador de consultas
 description: La funcionalidad del Generador de consultas de uso compartido de recursos se expone a través de una API de Java y una API de REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Refinamiento de los elementos devueltos {#refining-what-is-returned}
 
-De forma predeterminada, QueryBuilder JSON Servlet devolverá un conjunto predeterminado de propiedades para cada nodo en el resultado de búsqueda (por ejemplo, ruta, nombre, título, etc.). Para obtener control sobre las propiedades que se devuelven, puede realizar una de las siguientes acciones:
+De forma predeterminada, el servlet JSON de QueryBuilder devolverá un conjunto predeterminado de propiedades para cada nodo en el resultado de búsqueda (por ejemplo, ruta, nombre y título). Para obtener control sobre las propiedades que se devuelven, puede realizar una de las siguientes acciones:
 
 Especifique
 
@@ -287,7 +287,7 @@ Especifique
 p.hits=full
 ```
 
-en cuyo caso, todas las propiedades se incluirán para cada nodo:
+En cuyo caso, todas las propiedades se incluyen para cada nodo:
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
@@ -320,7 +320,7 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-Otra cosa que puede hacer es incluir nodos secundarios en la respuesta del Generador de consultas. Para ello, debe especificar lo siguiente
+Otra cosa que puede hacer es incluir nodos secundarios en la respuesta del Generador de consultas. Para ello, debe especificar
 
 ```xml
 p.nodedepth=n

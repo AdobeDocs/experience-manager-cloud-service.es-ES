@@ -2,10 +2,10 @@
 title: Crear y usar temáticas
 description: Puede utilizar temáticas para aplicar estilo y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
-workflow-type: ht
-source-wordcount: '1666'
-ht-degree: 100%
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+workflow-type: tm+mt
+source-wordcount: '1664'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ Cuando [crea un formulario adaptable](/help/forms/creating-adaptive-form.md) med
 
 >[!NOTE]
 >
->Una temática de formulario adaptable no debe confundirse con las [Plantillas de formulario adaptable.](/help/forms/template-editor.md) Las temáticas de formulario adaptable solo contienen la información de estilo de un formulario adaptable. Las plantillas de formulario adaptable definen la estructura del formulario y el contenido inicial y tienen una temática para permitir la creación de nuevos [formularios adaptables.](/help/forms/creating-adaptive-form.md)
+>Una temática de formulario adaptable no debe confundirse con las [Plantillas de formulario adaptable.](/help/forms/template-editor.md) Las temáticas de formulario adaptable solo contienen la información de estilo de un formulario adaptable. Las plantillas de formulario adaptable definen la estructura del formulario y el contenido inicial, y contienen una temática para permitir la creación de nuevas plantillas [Formulario adaptable.](/help/forms/creating-adaptive-form.md)
 
 ## Uso de la temática Lienzo en formularios adaptables mediante componentes principales {#using-theme-in-adaptive-form}
 

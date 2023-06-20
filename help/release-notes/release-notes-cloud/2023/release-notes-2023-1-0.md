@@ -2,10 +2,10 @@
 title: Notas de la versión 2023.1.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.1.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ Eche un vistazo al vídeo Información general sobre la versión de enero de 202
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-* Los informes de activos ahora permiten a los administradores [generar informes de descarga de activos](/help/assets/asset-reports.md) desde la implementación de Experience Manager Assets as a Cloud Service. Estos datos permiten a los administradores obtener perspectivas de métricas de éxito clave para medir la adopción de activos en su empresa y por parte de los clientes.
+* Los informes de activos ahora permiten a los administradores [generar informes de descarga de activos](/help/assets/asset-reports.md) desde la implementación de Experience Manager Assets as a Cloud Service. Estos datos permiten a los administradores obtener perspectivas de métricas de éxito clave para medir la adopción de Recursos en su empresa y por parte de los clientes.
 
-   ![Representación del PDF para otros formatos](/help/release-notes/assets/choose_report.png)
+  ![Representación del PDF para otros formatos](/help/release-notes/assets/choose_report.png)
 
 * Experience Manager Assets ahora [admite el token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) además de la clave de acceso para la autenticación al conectarse a la fuente de datos de almacenamiento de Azure Blob para la ingesta de activos mediante la herramienta de importación masiva.
 
@@ -82,17 +82,17 @@ Eche un vistazo al vídeo Información general sobre la versión de enero de 202
 
 * [Entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md): los RDE permiten a los desarrolladores solucionar rápidamente problemas e implementar nuevas funciones en AEM as a Cloud Service.
 
-   Los entornos de desarrollo rápido son un nuevo tipo de entorno de nube diseñado como una forma veloz, coherente y extensible de validar que el código que funciona localmente también funciona como se espera en la nube. Con las herramientas de la línea de comandos, “sincronice” rápidamente los paquetes de contenido, los paquetes, los archivos de contenido, la configuración OSGI o la configuración de Dispatcher con el RDE. Vea esto en acción en el siguiente vídeo:
+  Los entornos de desarrollo rápido son un nuevo tipo de entorno de nube diseñado como una forma veloz, coherente y extensible de validar que el código que funciona localmente también funciona como se espera en la nube. Con las herramientas de la línea de comandos, “sincronice” rápidamente los paquetes de contenido, los paquetes, los archivos de contenido, la configuración OSGI o la configuración de Dispatcher con el RDE. Vea esto en acción en el siguiente vídeo:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   Después de validar correctamente el código en el RDE, se recomienda implementarlo en un entorno de desarrollo en la nube para ejercitar las puertas de calidad de Cloud Manager, antes de implementarlo a través de la canalización de producción en entornos de fase y producción.
+  Después de validar correctamente el código en el RDE, se recomienda implementarlo en un entorno de desarrollo en la nube para ejercitar las puertas de calidad de Cloud Manager, antes de implementarlo a través de la canalización de producción en entornos de fase y producción.
 
-   Cada programa incluye un RDE y, opcionalmente, se pueden obtener licencias de más.
+  Cada programa incluye un RDE y, opcionalmente, se pueden obtener licencias de más.
 
-   >[!NOTE]
-   >
-   >Los RDE se implementarán gradualmente en las próximas semanas; puede enviar un correo electrónico a aemcs-rde-support@adobe.com para pasar al principio de la cola.
+  >[!NOTE]
+  >
+  >Los RDE se implementarán gradualmente en las próximas semanas; puede enviar un correo electrónico a aemcs-rde-support@adobe.com para pasar al principio de la cola.
 
 * [Compatibilidad ampliada para tokens de acceso a API del lado del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md): Ahora puede generar varias credenciales, lo que resulta útil en escenarios donde las API tienen características diferentes. Ahora también es posible revocar las credenciales de forma de autoservicio.
 

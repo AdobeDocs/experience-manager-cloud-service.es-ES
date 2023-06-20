@@ -4,9 +4,9 @@ description: Configuración de [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,9 @@ Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] as a [
 >
 >* Consulte [Examen de certificación de socio para el conector mejorado de Workfront para Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obtener más información sobre el examen, consulte [Guía del examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 ## Configuración de suscripciones a eventos {#event-subscriptions}
 
-AEM Las suscripciones a eventos se utilizan para notificar a los usuarios de eventos que tienen lugar en el [!DNL Adobe Workfront]. Hay tres [!DNL Workfront for Experience Manager enhanced connector] Las funciones que necesitan suscripciones de evento para funcionar son las siguientes:
+AEM Las suscripciones a eventos se utilizan para notificar a los usuarios de eventos que tienen lugar en el [!DNL Adobe Workfront]. Hay tres [!DNL Workfront for Experience Manager enhanced connector] funciones que necesitan suscripciones de evento para funcionar, estas son:
 
 * Creación automática de carpetas vinculadas a proyectos.
 * Sincronización de cambios en los valores del formulario personalizado de documentos de Workfront AEM para crear metadatos de recursos de la aplicación
@@ -45,7 +44,7 @@ Para utilizar estas funciones, habilite las suscripciones a eventos.
 * Seleccione el [!UICONTROL Integración personalizada de Workfront] ha creado en la sección 6.
 * Clic [!UICONTROL Habilitar suscripciones a eventos de Workfront].
 
-   ![Suscripción de evento](/help/assets/assets/event-subs.png)
+  ![Suscripción de evento](/help/assets/assets/event-subs.png)
 
 ## Configuración de carpetas vinculadas {#linked-folders}
 
@@ -60,11 +59,11 @@ Para suscribirse a los eventos, siga estos pasos:
 1. Vaya a la pestaña Carpetas vinculadas del proyecto en los servicios en la nube.
 1. Ruta principal de la carpeta vinculada: seleccione una carpeta en DAM en la que desee crear las carpetas vinculadas. Si se deja vacío, el valor predeterminado será /content/dam. Asegúrese de que el esquema de metadatos de Workfront Tools y el esquema de metadatos de la carpeta de carpetas vinculadas de Workfront se hayan aplicado a la carpeta seleccionada.
 1. Estructura de carpetas vinculadas: introduzca valores separados por comas. Cada valor debe ser `DE:<some-project-custom-form-field>`, Portfolio, Programa, Año, Nombre o algún &quot;Valor de cadena literal&quot; (este último con comillas). Actualmente está establecido en Portfolio, Programa, Año, DE: Tipo de proyecto, Nombre.
-1. La casilla de verificación Generar título de carpeta vinculado en Workfront mediante los nombres de estructura de carpetas debe activarse si el título de la carpeta en Workfront debe incluir todas las carpetas de la estructura. De lo contrario, será el título de la última carpeta.
+1. La casilla de verificación Generar título de carpeta vinculado en Workfront mediante los nombres de estructura de carpetas debe activarse si el título de la carpeta en Workfront debe incluir todas las carpetas de la estructura. De lo contrario, es el título de la última carpeta.
 1. Subcarpetas multicampo permite especificar una lista de carpetas que deben crearse como una carpeta secundaria de la carpeta vinculada.
-1. Estado del proyecto: seleccione el estado en el que debe configurarse el proyecto para crear la carpeta vinculada.
-1. Crear una carpeta vinculada en proyectos con portafolio: lista de Portfolio a los que debe pertenecer el proyecto para crear la carpeta vinculada. Deje esta lista vacía para crear la carpeta vinculada para todo el portafolio de proyectos.
-1. Crear una carpeta vinculada en proyectos con un campo de formulario personalizado: Campo de formulario personalizado y su valor correspondiente que el proyecto debe tener para crear la carpeta vinculada. Esta configuración se ignorará si se deja vacía. Seleccionar `CUSTOM FORMS: Create DAM Linked Folder` para campo y entrada `Yes` para el valor.
+1. Estado del proyecto: seleccione el estado para el que se debe configurar el proyecto para crear la carpeta vinculada.
+1. Crear una carpeta vinculada en proyectos con portafolio: lista de Portfolio a los que debe pertenecer el proyecto para poder crear la carpeta vinculada. Deje esta lista vacía para crear la carpeta vinculada para todo el portafolio de proyectos.
+1. Crear una carpeta vinculada en proyectos con un campo de formulario personalizado: Campo de formulario personalizado y su valor correspondiente que debe tener el proyecto para poder crear la carpeta vinculada. Esta configuración se ignora si se deja vacía. Seleccionar `CUSTOM FORMS: Create DAM Linked Folder` para campo y entrada `Yes` para el valor.
 1. Haga clic en Habilitar la creación automática de carpetas vinculadas. Si vuelve a la pestaña Suscripciones de eventos, verá que ahora hay un evento de creación.
 
 ![configuración de carpeta vinculada](/help/assets/assets/wf-linked-folder-config.png)
@@ -104,7 +103,7 @@ Para configurar las asignaciones, siga estos pasos:
    * Campos de formulario personalizados de tarea
    * Campos Información general del proyecto (ID, Nombre, Descripción o Número de referencia)
 
-1. En caso de que la variable [!DNL Workfront] campo seleccionado en [!UICONTROL Campo de formulario personalizado de Workfront] es un campo de escritura anticipada de usuario de Workfront, será necesario especificar qué campo de usuario de Workfront desea asignar. Para ello, marque Obtener valor del campo de objeto al que se hace referencia en Workfront y luego especifique el nombre del [!UICONTROL Campo de formulario personalizado de usuario de Workfront] desde el que se recupera el valor que se va a asignar.
+1. En caso de que la variable [!DNL Workfront] campo seleccionado en [!UICONTROL Campo de formulario personalizado de Workfront] es un campo de escritura anticipada de usuario de Workfront, es necesario especificar qué campo de usuario de Workfront desea asignar. Para ello, marque Obtener valor del campo de objeto al que se hace referencia en Workfront y luego especifique el nombre del [!UICONTROL Campo de formulario personalizado de usuario de Workfront] desde el que se recupera el valor que se va a asignar.
 
    ![configuración de asignación de metadatos](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -170,7 +169,7 @@ AEM AEM Para mantener el historial de versiones de los recursos en la, configure
 
 1. En Experience Manager, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de herramientas de Workfront]** y abra el **[!UICONTROL Avanzadas]** pestaña.
 
-1. Seleccionar opción **[!UICONTROL Almacenar recursos con el mismo nombre que las versiones del recurso existente]**. Cuando se selecciona, esta opción permite almacenar recursos cargados con el mismo nombre y en la misma ubicación que la versión del recurso existente. Si no se selecciona, se creará un nuevo recurso con un nombre diferente (por ejemplo, `asset-name.pdf` y `asset-name-1.pdf`).
+1. Seleccionar opción **[!UICONTROL Almacenar recursos con el mismo nombre que las versiones del recurso existente]**. Cuando se selecciona, esta opción permite almacenar recursos cargados con el mismo nombre y en la misma ubicación que la versión del recurso existente. Si no se selecciona, se crea un nuevo recurso con un nombre diferente (por ejemplo, `asset-name.pdf` y `asset-name-1.pdf`).
 
 1. Seleccionar opción **[!UICONTROL Actualizar los metadatos del recurso al crear una nueva versión]**. Cuando se selecciona, esta opción actualiza los metadatos del recurso cada vez que se crea una nueva versión del recurso. Si no se selecciona, el recurso conservará los metadatos que tenía antes de crear la nueva versión.
 
@@ -182,7 +181,7 @@ AEM AEM Para mantener el historial de versiones de los recursos en la, configure
 
 ## Adjuntar formularios personalizados {#attach-custom-forms}
 
-Este paso del flujo de trabajo permite a los usuarios adjuntar un formulario personalizado a una [!DNL Workfront] artefacto. Este paso del flujo de trabajo se puede agregar a cualquier modelo de flujo de trabajo. El [!DNL Workfront] artefacto que este paso afecta se buscará utilizando una ruta relativa desde la carga útil.
+Este paso del flujo de trabajo permite a los usuarios adjuntar un formulario personalizado a una [!DNL Workfront] artefacto. Este paso del flujo de trabajo se puede agregar a cualquier modelo de flujo de trabajo. El [!DNL Workfront] artefacto que este paso afecta se busca usando una ruta relativa desde la carga útil.
 
 En el editor de flujo de trabajo de Experience Manager, edite las propiedades del [!UICONTROL Workfront: adjuntar formulario personalizado] paso de flujo de trabajo.
 
@@ -192,7 +191,7 @@ En el editor de flujo de trabajo de Experience Manager, edite las propiedades de
 
 1. En Experience Manager, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de herramientas de Workfront]** y abra el **[!UICONTROL Avanzadas]** pestaña.
 
-1. Seleccionar **[!UICONTROL Publicar recursos automáticamente cuando se envíen desde Workfront]**. Esta opción habilita la publicación automática de recursos cuando se envían de Workfront AEM a los recursos de la aplicación de la. Esta función se puede habilitar de forma condicional especificando un campo de formulario personalizado de Workfront y el valor en el que debe establecerse. AEM Siempre que se envíe un documento a la publicación, si cumple la condición, el recurso se publicará automáticamente.
+1. Seleccionar **[!UICONTROL Publicar recursos automáticamente cuando se envíen desde Workfront]**. Esta opción habilita la publicación automática de recursos cuando se envían de Workfront AEM a los recursos de la aplicación de la. Esta función se puede habilitar de forma condicional especificando un campo de formulario personalizado de Workfront y el valor en el que debe establecerse. AEM Siempre que se envía un documento a la, si cumple la condición, el recurso se publica automáticamente.
 
 1. Seleccionar **[!UICONTROL Publicar todos los recursos del proyecto en Brand Portal al finalizar el proyecto]**. Esta opción permite la publicación automática de recursos en [!DNL Brand Portal] cuando se cambie el estado del proyecto de Workfront al que pertenecen a `Complete`.
 

@@ -2,10 +2,10 @@
 title: Configurar la canalización
 description: Cree una canalización front-end para administrar la personalización del tema del sitio.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 100%
+source-wordcount: '975'
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ Ahora que ha accedido a Cloud Manager, puede crear una canalización para la imp
    * Asegúrese de que esté seleccionado el entorno correcto en **Entornos de implementación aptos**.
    * Seleccione el **Repositorio** correcto.
    * Defina a qué **Rama de Git** debe estar asociada la canalización.
-   * Defina la **Ubicación del código** si el desarrollo front-end se encuentra bajo una ruta particular en el repositorio seleccionado. El valor predeterminado es la raíz del repositorio, pero a menudo el desarrollo de front-end y back-end estarán bajo diferentes rutas.
+   * Defina la **Ubicación del código** si el desarrollo front-end se encuentra bajo una ruta particular en el repositorio seleccionado. El valor predeterminado es la raíz del repositorio, pero a menudo el desarrollo de front-end y back-end están bajo diferentes rutas.
 
    ![Información del código fuente para agregar una canalización](assets/add-pipeline-source-code.png)
 

@@ -4,10 +4,10 @@ description: Obtenga información sobre las prácticas recomendadas recopiladas 
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->Si acaba de empezar a traducir contenido, consulte nuestro [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia con la traducción o con AEM.
+>Si es nuevo traduciendo contenido, consulte nuestra [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
 
 ## General {#general}
 
@@ -24,7 +24,7 @@ La creación o ampliación de una presencia web global puede ser un proceso comp
 * **Plan de expansión global** antes de implementar su primer sitio. Adaptar un sitio existente para una cobertura global cuando el sitio se implementó con poco tiempo de antelación, generalmente es más difícil que planificar la expansión global al principio:
    * Evalúe el estado actual de la madurez de la localización de su organización. Determine si tiene las suficientes **herramientas**, **procesos** y **recursos** para apoyar la expansión global.
    * Tenga en cuenta las **regulaciones globales** y las **preferencias de idioma regional**. Diseñe estructuras y procesos de contenido flexibles que puedan adaptarse a un entorno comercial global cambiante.
-* Determine un modelo de **gobernanza** que sea compatible con su negocio global y utilice mecanismos de AEM como MSM y permisos de usuario para aplicar el modelo elegido. Por ejemplo, determine si el contenido se creará de forma centralizada y si se &quot;insertará&quot; o &quot;extraerá&quot; a regiones/países. Determine qué contenido se puede desbloquear y modificar en las regiones geográficas. Determine quién es el responsable de iniciar y administrar las traducciones.
+* Determine un modelo de **gobernanza** que sea compatible con su negocio global y utilice mecanismos de AEM como MSM y permisos de usuario para aplicar el modelo elegido. Por ejemplo, determine si el contenido se crea de forma centralizada y si se &quot;inserta&quot; o &quot;extrae&quot; a regiones/países. Determine qué contenido se puede desbloquear y modificar en las regiones geográficas. Determine quién es el responsable de iniciar y administrar las traducciones.
 * Si los recursos lo permiten, es mejor administrar la actividad de traducción desde un equipo central que pueda desarrollar conocimiento en las herramientas, los procesos y las relaciones con los proveedores necesarios.
 * **Planee**, **cree un prototipo** y **pruebe** su estructura y procesos globales para garantizar que respaldan el negocio y que cuenta con el apoyo necesario de las partes interesadas en las regiones geográficas.
 

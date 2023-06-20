@@ -9,10 +9,10 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2197'
 ht-degree: 15%
 
 ---
@@ -49,11 +49,11 @@ Esto configura las direcciones URL de las páginas de productos y admite las sig
 
 En el caso de [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` se reemplazará por `/content/venia/us/en/products/product-page`
-* `{{sku}}` se reemplazarán por el sku del producto, por ejemplo, `VP09`
-* `{{url_key}}` se reemplazarán por el del producto `url_key` , por ejemplo, `lenora-crochet-shorts`
-* `{{url_path}}` se reemplazarán por el del producto `url_path`, por ejemplo, `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` se reemplazarán por la variante seleccionada actualmente, por ejemplo, `VP09-KH-S`
+* `{{page}}` se ha reemplazado por `/content/venia/us/en/products/product-page`
+* `{{sku}}` se sustituye por el sku del producto, por ejemplo, `VP09`
+* `{{url_key}}` se sustituye por el del producto `url_key` , por ejemplo, `lenora-crochet-shorts`
+* `{{url_path}}` se sustituye por el del producto `url_path`, por ejemplo, `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` se reemplaza por la variante seleccionada actualmente, por ejemplo, `VP09-KH-S`
 
 Dado que la variable `url_path` se han quedado obsoletos, los formatos de URL de producto predefinidos utilizan un `url_rewrites` y elija el que tenga la mayor cantidad de segmentos de ruta como alternativa si la variable `url_path` no está disponible.
 
@@ -68,9 +68,9 @@ Esto configura las direcciones URL de las páginas de categorías o listas de pr
 
 En el caso de [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` se reemplazará por `/content/venia/us/en/products/category-page`
-* `{{url_key}}` se reemplazarán por el de la categoría `url_key` propiedad
-* `{{url_path}}` se reemplazarán por el de la categoría `url_path`
+* `{{page}}` se ha reemplazado por `/content/venia/us/en/products/category-page`
+* `{{url_key}}` se sustituye por el de la categoría `url_key` propiedad
+* `{{url_path}}` se sustituye por el de la categoría `url_path`
 
 Con los datos del ejemplo anterior, la dirección URL de una página de categoría con formato URL predeterminado tendrá el siguiente aspecto `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
@@ -205,7 +205,7 @@ Las implementaciones de formato de URL personalizadas deben implementar un par d
 
 ### Combinación con asignaciones de Sling {#sling-mapping}
 
-Además del `UrlProvider`, también es posible configurar las [asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para reescribir y procesar direcciones URL. El tipo de archivo del proyecto AEM también proporciona [una configuración de ejemplo](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para configurar algunas asignaciones de Sling para el puerto 4503 (publicación) y 80 (Dispatcher).
+Además de las `UrlProvider`, también es posible configurar [Asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para reescribir y procesar direcciones URL. El tipo de archivo del proyecto AEM también proporciona [una configuración de ejemplo](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para configurar algunas asignaciones de Sling para el puerto 4503 (publicación) y 80 (Dispatcher).
 
 ### Combinación con AEM Dispatcher {#dispatcher}
 

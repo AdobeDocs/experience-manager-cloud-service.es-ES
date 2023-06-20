@@ -2,10 +2,10 @@
 title: Búsqueda
 description: Encuentre su contenido más rápido con una búsqueda completa
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 88%
+source-wordcount: '492'
+ht-degree: 81%
 
 ---
 
@@ -33,11 +33,11 @@ Con el carril de búsqueda puede:
 
 Para buscar y filtrar sus recursos: 
 
-1. Abra **Buscar** (con la lupa de la barra de herramientas) y escriba el término de búsqueda. Se muestran sugerencias que puede seleccionar:
+1. Abra **Buscar** (con la lupa de la barra de herramientas) y escriba el término de búsqueda. Se realizan sugerencias que se pueden seleccionar:
 
    ![Término de búsqueda](/help/sites-cloud/authoring/assets/search-term.png)
 
-   De forma predeterminada, los resultados de la búsqueda estarán limitados a su ubicación actual (es decir, la consola y el tipo de recurso relacionado): 
+   De forma predeterminada, los resultados de la búsqueda están limitados a su ubicación actual (es decir, la consola y el tipo de recurso relacionado):
 
    ![Ubicación de la búsqueda](/help/sites-cloud/authoring/assets/search-term-location.png)
 
@@ -67,7 +67,6 @@ Para buscar y filtrar sus recursos:
    >
    >* Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de Recursos y Comunidades son comprensiblemente especializados.
    >* Su instancia, al igual que los formularios de búsqueda, se puede personalizar (según la ubicación en AEM).
-
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).

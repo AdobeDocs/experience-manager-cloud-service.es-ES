@@ -2,10 +2,10 @@
 title: Notas de la versión 2020.9.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.9.0."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 22%
+source-wordcount: '723'
+ht-degree: 20%
 
 ---
 
@@ -74,7 +74,7 @@ La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2020.9.0 es el
 
 * La auditoría de contenido se ha vuelto a etiquetar como auditoría de experiencias.
 * El proceso de generación se ha separado en tres comandos de Maven independientes.
-* Si el repositorio de Git no se clona, se volverá a crear hasta tres veces.
+* Si el repositorio Git no se clona, se vuelve a crear hasta tres veces.
 
 ### Correcciones de errores {#bug-fixes-cm}
 
@@ -118,8 +118,8 @@ Siga esta sección para conocer las novedades y las actualizaciones de las herra
 
 * El complemento AIO-CLI admite el Modernizador de repositorio y permite a los usuarios ejecutar la herramienta mediante el complemento.
 
-   Consulte [Recurso de Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obtener más información.
+  Consulte [Recurso de Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obtener más información.
 
 * AEM La utilidad Modernizador del repositorio se puede utilizar para reestructurar los paquetes de proyectos existentes en paquetes compatibles con la estructura de proyectos definida para el as a Cloud Service de la.
 
-   Consulte [Recurso de Git: Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obtener más información.
+  Consulte [Recurso de Git: Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obtener más información.

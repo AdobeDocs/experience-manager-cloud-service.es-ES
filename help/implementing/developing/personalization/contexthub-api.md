@@ -2,9 +2,9 @@
 title: Referencia de la API de JavaScript de ContextHub
 description: La API de JavaScript de ContextHub está disponible para los scripts cuando se agrega el componente ContextHub a la página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4620'
 ht-degree: 3%
 
 ---
@@ -697,7 +697,7 @@ Enlaza una función a un evento. Se llama a la función cada vez que se produce 
 
 Si la variable `triggerForPastEvents` el argumento es `true`, esta función devuelve un `boolean` valor que indica si el evento se produjo en el pasado:
 
-* `true`: el evento se produjo en el pasado y se llamará al controlador.
+* `true`: el evento se produjo en el pasado y se llama al controlador.
 * `false`: el evento no se ha producido en el pasado.
 
 If `triggerForPastEvents` es `false`, esta función no devuelve ningún valor.
@@ -737,7 +737,7 @@ Enlaza una función a un evento. La función se llama solo una vez, para la prim
 
 Si la variable `triggerForPastEvents` el argumento es `true`, esta función devuelve un `boolean` valor que indica si el evento se produjo en el pasado:
 
-* `true`: el evento se produjo en el pasado y se llamará al controlador.
+* `true`: el evento se produjo en el pasado y se llama al controlador.
 * `false`: el evento no se ha producido en el pasado.
 
 If `triggerForPastEvents` es `false`, esta función no devuelve ningún valor.

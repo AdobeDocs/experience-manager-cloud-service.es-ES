@@ -4,9 +4,9 @@ description: Conozca los conceptos básicos de AEM; administración de paquetes 
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3782'
 ht-degree: 4%
 
 ---
@@ -280,7 +280,7 @@ A menudo, los paquetes se crean al mismo tiempo que usted [creación del paquete
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Generar**. Un cuadro de diálogo le pedirá que confirme que desea crear el paquete, ya que el contenido existente se sobrescribirá.
+1. Clic **Generar**. Un cuadro de diálogo le pedirá que confirme que desea crear el paquete, ya que se sobrescribirá el contenido existente.
 
 1. Haga clic en **Aceptar**. AEM crea el paquete, enumerando todo el contenido añadido al paquete tal y como lo hace en la lista de actividad. AEM Cuando se completa, muestra una confirmación de que el paquete se ha creado y (al cerrar el cuadro de diálogo) actualiza la información de la lista de paquetes.
 
@@ -445,7 +445,7 @@ Para resolver este problema, el responsable del archivo de superposición en `/a
 
 **Qué se ha comprobado**
 
-Esta validación comprueba qué permisos se están agregando, cómo se administrarán (combinar/reemplazar) y si los permisos actuales se verán afectados.
+Esta validación comprueba qué permisos se agregan, cómo se administran (combinar/reemplazar) y si los permisos actuales se ven afectados.
 
 **Cómo se informa de él**
 
@@ -453,7 +453,7 @@ Los permisos se describen en el registro de actividad del administrador de paque
 
 **Estados de error**
 
-No se pueden proporcionar errores explícitos. La validación simplemente indica si se agregarán o afectarán los nuevos permisos ACL al instalar el paquete.
+No se pueden proporcionar errores explícitos. La validación simplemente indica si se agregan o afectan nuevos permisos ACL al instalar el paquete.
 
 **Resolución de errores**
 
@@ -528,7 +528,7 @@ Al cargar un paquete, solo se añade el contenido del paquete al repositorio, pe
 >
 >La instalación de un paquete puede sobrescribir o eliminar contenido existente. Cargue un paquete únicamente si está seguro de que no elimina ni sobrescribe el contenido que necesita.
 
-Antes de la instalación del paquete, el Administrador de paquetes crea automáticamente un paquete de instantáneas que contiene el contenido que se sobrescribirá. Esta instantánea se volverá a instalar si desinstala el paquete.
+Antes de la instalación del paquete, el Administrador de paquetes crea automáticamente un paquete de instantáneas que contiene el contenido que se sobrescribe. Esta instantánea se vuelve a instalar si desinstala el paquete.
 
 1. [Acceda al Administrador de paquetes.](#accessing)
 

@@ -2,10 +2,10 @@
 title: Entorno de compilación
 description: Obtenga información sobre el entorno de compilación de Cloud Manager y cómo crea y prueba su código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '994'
+ht-degree: 95%
 
 ---
 
@@ -94,7 +94,7 @@ Esta tabla se refiere a los números de versión del producto. Los números de c
 
 >[!NOTE]
 >
->A partir de abril de 2022, el JDK de Oracle será el JDK predeterminado para el desarrollo y funcionamiento de aplicaciones de AEM. El proceso de creación de Cloud Manager cambiará automáticamente al uso de JDK de Oracle, incluso si se selecciona explícitamente una opción alternativa en Maven Toolchain. Consulte las notas de la versión de abril una vez publicadas para obtener más información.
+>A partir de abril de 2022, el JDK de Oracle AEM se convertirá en el JDK predeterminado para el desarrollo y el funcionamiento de aplicaciones de. El proceso de generación de Cloud Manager cambia automáticamente al uso de JDK de Oracle, incluso si se selecciona explícitamente una opción alternativa en la cadena de herramientas de Maven. Consulte las notas de la versión de abril de 2022.
 
 #### Versión JDK de ejecución de Maven alternativa {#alternate-maven-jdk-version}
 

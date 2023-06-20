@@ -2,9 +2,9 @@
 title: Uso de la fusión de recursos de Sling en Adobe Experience Manager as a Cloud Service
 description: La fusión de recursos de Sling proporciona servicios para acceder y combinar recursos
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1158'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ AEM Los objetivos para utilizar la fusión de recursos de Sling en son los sigui
 * asegúrese de que no se realizan cambios de personalización en `/libs`.
 * reducir la estructura que se duplica desde `/libs`.
 
-   Al utilizar la fusión de recursos de Sling, no se recomienda copiar toda la estructura de `/libs` ya que esto conllevaría que se almacenara demasiada información en la personalización (normalmente `/apps`). La duplicación de información aumenta innecesariamente las posibilidades de que se produzcan problemas cuando el sistema se actualiza de alguna manera.
+  Al utilizar la fusión de recursos de Sling, no se recomienda copiar toda la estructura de `/libs` ya que esto conllevaría que se almacenara demasiada información en la personalización (normalmente `/apps`). La duplicación de información aumenta innecesariamente las posibilidades de que se produzcan problemas cuando el sistema se actualiza de alguna manera.
 
 >[!CAUTION]
 >
@@ -56,23 +56,23 @@ La combinación de recursos proporciona las siguientes propiedades:
 
 * `sling:hideProperties` ( `String` o `String[]`)
 
-   Especifica la propiedad o lista de propiedades que se van a ocultar.
+  Especifica la propiedad o lista de propiedades que se van a ocultar.
 
-   El comodín `*` oculta todo.
+  El comodín `*` oculta todo.
 
 * `sling:hideResource` ( `Boolean`)
 
-   Indica si los recursos deben estar completamente ocultos, incluidos sus elementos secundarios.
+  Indica si los recursos deben estar completamente ocultos, incluidos sus elementos secundarios.
 
 * `sling:hideChildren` ( `String` o `String[]`)
 
-   Contiene el nodo secundario o la lista de nodos secundarios que se van a ocultar. Se mantendrán las propiedades del nodo.
+  Contiene el nodo secundario o la lista de nodos secundarios que se van a ocultar. Las propiedades del nodo se mantienen.
 
-   El comodín `*` oculta todo.
+  El comodín `*` oculta todo.
 
 * `sling:orderBefore` ( `String`)
 
-   Contiene el nombre del nodo del mismo nivel en el que el nodo actual debe colocarse delante de.
+  Contiene el nombre del nodo del mismo nivel en el que el nodo actual debe colocarse delante de.
 
 Estas propiedades afectan a la forma en que los recursos/propiedades correspondientes/originales (de `/libs`) las utiliza la superposición/anulación (a menudo en `/apps`).
 
@@ -84,23 +84,23 @@ Para crear una superposición o sobrescritura, debe volver a crear el nodo origi
 
    * La definición de la entrada de navegación para la consola Sitios, como se muestra en el carril, se define en:
 
-      `/libs/cq/core/content/nav/sites/jcr:title`
+     `/libs/cq/core/content/nav/sites/jcr:title`
 
    * Para superponer esto, cree el siguiente nodo:
 
-      `/apps/cq/core/content/nav/sites`
+     `/apps/cq/core/content/nav/sites`
 
-      Luego actualice la propiedad `jcr:title` según sea necesario.
+     Luego actualice la propiedad `jcr:title` según sea necesario.
 
 * Omitir
 
    * La definición del cuadro de diálogo táctil para la consola Textos se define en:
 
-      `/libs/foundation/components/text/cq:dialog`
+     `/libs/foundation/components/text/cq:dialog`
 
    * Para anular esto, cree el siguiente nodo, por ejemplo:
 
-      `/apps/the-project/components/text/cq:dialog`
+     `/apps/the-project/components/text/cq:dialog`
 
 Para crear cualquiera de estos elementos, sólo es necesario volver a crear la estructura del esqueleto. Para simplificar la recreación de la estructura, todos los nodos intermedios pueden ser del tipo `nt:unstructured` (no tienen que reflejar el tipo de nodo original; por ejemplo, en `/libs`).
 
@@ -125,14 +125,14 @@ Estas funciones, junto con las funciones estándar, permiten:
 
 * **Añadir una propiedad**
 
-   La propiedad no existe en `/libs` definición, pero es obligatorio en la `/apps` superposición/anulación.
+  La propiedad no existe en `/libs` definición, pero es obligatorio en la `/apps` superposición/anulación.
 
    1. Cree el nodo correspondiente en `/apps`
    1. Crear la nueva propiedad en este nodo &quot;
 
 * **Redefinir una propiedad (no propiedades creadas automáticamente)**
 
-   La propiedad se define en `/libs`, pero se requiere un nuevo valor en la variable `/apps` superposición/anulación.
+  La propiedad se define en `/libs`, pero se requiere un nuevo valor en la variable `/apps` superposición/anulación.
 
    1. Cree el nodo correspondiente en `/apps`
    1. Cree la propiedad correspondiente en este nodo (en / `apps`)
@@ -140,14 +140,15 @@ Estas funciones, junto con las funciones estándar, permiten:
       * La propiedad tendrá una prioridad basada en la configuración de Sling Resource Resolver.
       * Se admite el cambio del tipo de propiedad.
 
-         Si utiliza un tipo de propiedad diferente del utilizado en `/libs`, se utilizará el tipo de propiedad definido.
-   >[!NOTE]
-   >
-   >Se admite el cambio del tipo de propiedad.
+        Si utiliza un tipo de propiedad diferente del utilizado en `/libs`, se utilizará el tipo de propiedad definido.
+
+  >[!NOTE]
+  >
+  >Se admite el cambio del tipo de propiedad.
 
 * **Redefinir una propiedad creada automáticamente**
 
-   De forma predeterminada, las propiedades creadas automáticamente (como `jcr:primaryType`) no están sujetos a una superposición/anulación para garantizar que el tipo de nodo actualmente en `/libs` se respeta. Para imponer una superposición/anulación, debe volver a crear el nodo en `/apps`, oculte explícitamente la propiedad y redefina:
+  De forma predeterminada, las propiedades creadas automáticamente (como `jcr:primaryType`) no están sujetos a una superposición/anulación para garantizar que el tipo de nodo actualmente en `/libs` se respeta. Para imponer una superposición/anulación, debe volver a crear el nodo en `/apps`, oculte explícitamente la propiedad y redefina:
 
    1. Cree el nodo correspondiente en `/apps` con el deseado `jcr:primaryType`
    1. Creación de la propiedad `sling:hideProperties` en ese nodo, con el valor establecido en el de la propiedad creada automáticamente; por ejemplo, `jcr:primaryType`
@@ -156,7 +157,7 @@ Estas funciones, junto con las funciones estándar, permiten:
 
 * **Redefinición de un nodo y sus tareas secundarias**
 
-   El nodo y sus tareas secundarias se definen en `/libs`, pero se requiere una nueva configuración en la `/apps` superposición/anulación.
+  El nodo y sus tareas secundarias se definen en `/libs`, pero se requiere una nueva configuración en la `/apps` superposición/anulación.
 
    1. Combine las acciones de:
 
@@ -165,7 +166,7 @@ Estas funciones, junto con las funciones estándar, permiten:
 
 * **Ocultar una propiedad**
 
-   La propiedad se define en `/libs`, pero no es obligatorio en `/apps` superposición/anulación.
+  La propiedad se define en `/libs`, pero no es obligatorio en `/apps` superposición/anulación.
 
    1. Cree el nodo correspondiente en `/apps`
    1. Creación de una propiedad `sling:hideProperties` de tipo `String` o `String[]`. Utilice esta opción para especificar las propiedades que se ocultarán o ignorarán. También se pueden utilizar caracteres comodín. Por ejemplo:
@@ -177,7 +178,7 @@ Estas funciones, junto con las funciones estándar, permiten:
 
 * **Ocultar un nodo y sus tareas secundarias**
 
-   El nodo y sus tareas secundarias se definen en `/libs`, pero no es obligatorio en `/apps` superposición/anulación.
+  El nodo y sus tareas secundarias se definen en `/libs`, pero no es obligatorio en `/apps` superposición/anulación.
 
    1. Cree el nodo correspondiente en /apps
    1. Creación de una propiedad `sling:hideResource`
@@ -187,7 +188,7 @@ Estas funciones, junto con las funciones estándar, permiten:
 
 * **Ocultar tareas secundarias de un nodo (conservando las propiedades del nodo)**
 
-   El nodo, sus propiedades y sus tareas secundarias se definen en `/libs`. El nodo y sus propiedades son necesarios en la variable `/apps` superposición/anulación, pero algunos o todos los nodos secundarios no son necesarios en la `/apps` superposición/anulación.
+  El nodo, sus propiedades y sus tareas secundarias se definen en `/libs`. El nodo y sus propiedades son necesarios en la variable `/apps` superposición/anulación, pero algunos o todos los nodos secundarios no son necesarios en la `/apps` superposición/anulación.
 
    1. Cree el nodo correspondiente en `/apps`
    1. Creación de la propiedad `sling:hideChildren`:
@@ -197,10 +198,9 @@ Estas funciones, junto con las funciones estándar, permiten:
 
       El comodín &amp;ast; se puede usar para ocultar o ignorar todos los nodos secundarios.
 
-
 * **Reordenar nodos**
 
-   El nodo y sus hermanos se definen en `/libs`. Se requiere una nueva posición para que el nodo se vuelva a crear en `/apps` superposición/anulación, donde la nueva posición se define en referencia al nodo del mismo nivel adecuado en `/libs`.
+  El nodo y sus hermanos se definen en `/libs`. Se requiere una nueva posición para que el nodo se vuelva a crear en `/apps` superposición/anulación, donde la nueva posición se define en referencia al nodo del mismo nivel adecuado en `/libs`.
 
    * Utilice el `sling:orderBefore` propiedad:
 

@@ -2,9 +2,9 @@
 title: Introducción al Recorrido AEM de migración para la migración a los as a Cloud Service
 description: Inicie el recorrido de migración familiarizándose con los conceptos básicos para pasar a AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '585'
 ht-degree: 24%
 
 ---
@@ -18,7 +18,7 @@ AEM En esta parte del Recorrido AEM de trabajo de migración as a Cloud Service 
 AEM AEM as a Cloud Service Este documento le ayuda a comprender por qué debe utilizar una versión nativa de la nube de la, así como las diferentes fases de migración a la misma Después de leer, debería:
 
 * AEM Comprender los beneficios de trasladarse a un lugar as a Cloud Service de la
-* Familiarícese con los pasos generales que debe seguir para realizar la transición a la nube
+* Familiarícese con los pasos generales que debe seguir para poder realizar la transición a la nube
 
 ## Beneficios del paso de AEM as a Cloud Service {#benefits-of-moving-to-aem-as-a-cloud-service}
 
@@ -30,9 +30,9 @@ Con AEM as a Cloud Service, los equipos pueden centrarse en la innovación en lu
 
 El recorrido de migración a Cloud Service implica las siguientes fases:
 
-* AEM Comience determinando si la implementación está lista para moverse a la configuración as a Cloud Service de la aplicación de la que se va a realizar el proceso de instalación de la aplicación de la aplicación de la implementación de forma que se [Fase de preparación](/help/journey-migration/readiness.md). AEM En esta fase, también debe familiarizarse con los cambios que ha introducido el as a Cloud Service de la
-* A continuación, prepare su código y la nube de contenido con [Fase de implementación](/help/journey-migration/implementation.md). En esta fase, se explorará el Adobe de herramientas que proporciona para facilitar el paso a la nube
-* Una vez que todo esté listo, puede realizar la migración con [Fase de lanzamiento](/help/journey-migration/go-live.md)
+* AEM Comience determinando si la implementación está lista para moverse a la configuración as a Cloud Service de la aplicación de la que se va a realizar el proceso de instalación de la aplicación de la aplicación de la implementación de forma que se [Fase de preparación](/help/journey-migration/readiness.md). AEM En esta fase, también debe familiarizarse con los cambios que ha introducido el as a Cloud Service de la.
+* A continuación, prepare su código y la nube de contenido con [Fase de implementación](/help/journey-migration/implementation.md). En esta fase, se exploran las herramientas que proporciona el Adobe para facilitar el paso a la nube.
+* Cuando todo esté listo, podrá realizar la migración con el [Fase de lanzamiento](/help/journey-migration/go-live.md).
 * Por último, asegúrese de supervisar los problemas y mejorar el rendimiento después de completar la migración en el [Fase de Publicar Go-live](/help/journey-migration/post-go-live.md).
 
 En la figura siguiente se muestra una representación de alto nivel del recorrido AEM de transición recomendado para la transición a la fase as a Cloud Service de la.

@@ -2,10 +2,10 @@
 title: Acceder y administrar registros
 description: Obtenga información sobre cómo acceder y administrar registros para ayudarle en el proceso de desarrollo en AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 100%
+source-wordcount: '270'
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ También puede rastrear registros a través de la interfaz de la línea de coman
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Para obtener el Id. de entorno (1884 en este ejemplo) y las opciones de servicio o nombre de registro disponibles, puede utilizar los siguientes comandos.
+Para obtener el ID de entorno (1884 en este ejemplo) y las opciones de servicio o nombre de registro disponibles, puede utilizar los siguientes comandos.
 
 ```shell
 $ aio cloudmanager:list-environments

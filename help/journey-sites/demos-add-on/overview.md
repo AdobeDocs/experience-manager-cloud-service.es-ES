@@ -2,10 +2,10 @@
 title: Recorrido del complemento de demostraciones de referencia de AEM
 description: Comience aquí para obtener un recorrido guiado sobre cómo añadir fácilmente el complemento de demostraciones de referencia de AEM a un entorno de zona protegida con una configuración de AEM mínima y pueda probar las potentes funciones de AEM con ejemplos enriquecidos basados en las prácticas recomendadas.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 100%
+source-wordcount: '852'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +15,7 @@ Comience aquí para obtener un recorrido guiado sobre cómo añadir fácilmente 
 
 ## Introducción {#introduction}
 
-AEM es un potente conjunto de herramientas para crear y administrar experiencias digitales. Los autores de contenido pueden crear fácilmente experiencias digitales mediante el editor de sitios y organizar el contenido mediante la consola de sitios, a la vez que pueden ver el contenido en su momento de publicación, tal y como lo enviará AEM a las audiencias en los distintos canales.
+AEM es un potente conjunto de herramientas para crear y administrar experiencias digitales. AEM Los autores de contenido pueden crear fácilmente experiencias digitales mediante el editor de sitios y organizar el contenido mediante la consola de sitios, a la vez que pueden ver el contenido en su momento de publicación, tal y como lo envían los usuarios a sus audiencias en los distintos canales.
 
 Sin contenido ni configuraciones de muestra, puede resultar difícil probar las potentes funciones de AEM, tanto para los clientes nuevos como para los experimentados. El complemento Demostraciones de referencia de AEM permite crear de forma sencilla entornos de zona protegida precargados con contenido de muestra y preconfigurados con las directrices de prácticas recomendadas más recientes de Adobe. Con el complemento, puede evaluar fácilmente las funciones de AEM Sites y AEM Screens en contexto y con casi ninguna configuración.
 
@@ -34,7 +34,7 @@ Si desea saber cómo recomienda Adobe resolver los casos de sitios comerciales c
 
 ## Audiencia {#audience}
 
-Este recorrido establece los requisitos, pasos y métodos para crear un nuevo programa y configurar una zona protegida de AEM con el complemento Demostraciones de referencia de AEM, incluido el contenido de demostración de Sites o Screens. Su audiencia principal es el **administrador del sistema**, a quien se asigna la función **Propietario de la empresa** en Cloud Manager. Normalmente, es la misma persona que estaría a cargo de la administración del entorno. Sin embargo, una vez que el complemento Demostraciones de referencia está instalado, ese administrador puede otorgar a otros usuarios acceso al entorno de AEM para probar las funciones que ha habilitado el complemento.
+Este recorrido establece los requisitos, pasos y métodos para crear un nuevo programa y configurar una zona protegida de AEM con el complemento Demostraciones de referencia de AEM, incluido el contenido de demostración de Sites o Screens. Su audiencia principal es el **administrador del sistema**, a quien se asigna la función **Propietario de la empresa** en Cloud Manager. Normalmente, es la misma persona que estaría a cargo de la administración del entorno. AEM Sin embargo, una vez instalado el complemento Demostraciones de referencia, ese administrador puede otorgar a otros usuarios acceso al entorno de para probar las funciones que ha habilitado el complemento.
 
 ## El Recorrido del complemento Demostraciones de referencia de AEM {#the-journey}
 

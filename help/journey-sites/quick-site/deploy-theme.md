@@ -2,10 +2,10 @@
 title: Implementar el tema personalizado
 description: Aprenda cómo implementar el tema del sitio mediante la canalización.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -117,4 +117,4 @@ A continuación se muestran algunos recursos adicionales que profundizan en algu
 * [Recorrido de incorporación](/help/journey-onboarding/overview.md): esta guía sirve como punto de partida para garantizar que sus equipos estén configurados y tengan acceso a AEM as a Cloud Service.
 * [Documentación de Cloud Manager de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es): explore la documentación de Cloud Manager para obtener toda la información detallada sobre sus funciones.
 * [Documentación de administración del sitio](/help/sites-cloud/administering/site-creation/create-site.md): consulte la documentación técnica sobre la creación de sitios para obtener más información sobre las funciones de la herramienta de Creación rápida de sitios.
-* [Desarrollo de sitios con canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md): este documento describe algunas consideraciones que hay que tener en cuenta para aprovechar todo el potencial del proceso de desarrollo front-end mediante la canalización front-end.
+* [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) : Este documento describe algunas consideraciones que hay que tener en cuenta para poder aprovechar todo el potencial del proceso de desarrollo front-end mediante la canalización front-end.

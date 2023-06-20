@@ -4,10 +4,10 @@ description: El Experience Manager agrega automáticamente etiquetas inteligente
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1213'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ El etiquetado de vídeos está activado de forma predeterminada en [!DNL Adobe E
 
 ## Etiquetado inteligente de vídeos al cargar {#smart-tag-assets-on-ingestion}
 
-Cuando usted [cargar recursos de vídeo](add-assets.md#upload-assets) hasta [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], los vídeos se procesan. Una vez completado el procesamiento, consulte la [!UICONTROL Básico] pestaña de recurso [!UICONTROL Propiedades] página. Las etiquetas inteligentes se añaden automáticamente al vídeo en [!UICONTROL Etiquetas inteligentes]. Los microservicios de recursos aprovechan [!DNL Adobe Sensei] para crear estas etiquetas inteligentes.
+Cuando usted [cargar recursos de vídeo](add-assets.md#upload-assets) hasta [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], los vídeos se procesan. Una vez completado el procesamiento, consulte la [!UICONTROL Básico] pestaña de recurso [!UICONTROL Propiedades] página. Las etiquetas inteligentes se añaden automáticamente al vídeo en [!UICONTROL Etiquetas inteligentes]. Los microservicios de recursos utilizan [!DNL Adobe Sensei] para crear estas etiquetas inteligentes.
 
 ![Las etiquetas inteligentes se añaden a los vídeos y se ven en la pestaña Básico de Propiedades del recurso](assets/smart-tags-added-to-videos.png)
 
@@ -137,11 +137,11 @@ Para añadir la configuración OSGI de puntuación de confianza al proyecto impl
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
@@ -153,4 +153,3 @@ Para añadir la configuración OSGI de puntuación de confianza al proyecto impl
 >
 >* [Administrar etiquetas inteligentes y búsquedas de recursos](smart-tags.md#manage-smart-tags-and-searches)
 >* [Capacite el servicio de etiquetas inteligentes y etiquete sus imágenes](smart-tags.md)
-

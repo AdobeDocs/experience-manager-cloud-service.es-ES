@@ -2,10 +2,10 @@
 title: Implementar el código
 description: Obtenga información sobre cómo implementar su código mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 63e38485e2f15c6947c7fba1848d47eda4cc900e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 100%
+source-wordcount: '1215'
+ht-degree: 94%
 
 ---
 
@@ -82,14 +82,14 @@ La fase de **prueba** incluye los siguientes pasos.
 * **Auditoría de experiencias**: Este paso en la canalización siempre se ejecuta y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencias después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones.
    * Las páginas configuradas se envían al servicio y se evalúan.
    * Los resultados son informativos y muestran las puntuaciones y el cambio entre la puntuación actual y la anterior.
-   * Esta perspectiva es importante para determinar si hay una regresión que se introducirá con la implementación actual.
+   * Esta perspectiva es valiosa para determinar si hay una regresión que se introduce con la implementación actual.
    * Consulte el documento [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
 
 ![Fase de prueba](assets/stage-testing.png)
 
 ## Fase de implementación de producción {#deployment-production}
 
-El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto de los visitantes de un sitio AEM.
+AEM El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto de los visitantes de un sitio de la red de producción de un sitio de.
 
 Las implementaciones de producción suelen seguir los mismos pasos que se describieron anteriormente, pero de forma gradual.
 
@@ -149,7 +149,7 @@ Restricciones:
 
 ### Identificación de una ejecución que se ha vuelto a ejecutar
 
-Para identificar si una ejecución se ha vuelto a ejecutar, se puede examinar el campo del activador. Su valor será *RE_EXECUTE*.
+Para identificar si una ejecución se ha vuelto a ejecutar, se puede examinar el campo del activador. Su valor es *RE_EXECUTE*.
 
 ### Activar una ejecución nueva 
 
@@ -193,4 +193,4 @@ Para activar una ejecución nueva, se debe realizar una petición PUT al víncul
 
 La sintaxis del valor _href_ del vínculo HAL anterior no debe utilizarse como punto de referencia. El valor real siempre debe leerse desde el vínculo HAL y no generarse.
 
-Enviar una petición *PUT* a este extremo dará como resultado una respuesta *201* si es correcta y el cuerpo de la respuesta será la representación de la nueva ejecución. Esto es similar a iniciar una ejecución normal a través de la API.
+El envío de un *PUT* la solicitud a este extremo da como resultado un *201* Respuesta si es correcta, y el cuerpo de la respuesta es la representación de la nueva ejecución. Esto es similar a iniciar una ejecución normal a través de la API.

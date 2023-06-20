@@ -9,11 +9,11 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
-exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 50%
+source-wordcount: '385'
+ht-degree: 47%
 
 ---
 
@@ -43,7 +43,7 @@ Siga los pasos a continuación para conectar un sitio de AEM y los componentes p
    * Seleccione la configuración base que ha creado.
    * Cree una nueva configuración siguiendo los pasos descritos en el punto 2 anterior.
 
-   Esta nueva configuración se creará como una configuración secundaria de la base. Ahora puede ir a Herramientas -> General -> Explorador de configuración y crear los ajustes de configuración.
+   Esta nueva configuración se crea como una configuración secundaria de la base. Ahora puede ir a Herramientas -> General -> Explorador de configuración y crear los ajustes de configuración.
 
    >[!TIP]
    >

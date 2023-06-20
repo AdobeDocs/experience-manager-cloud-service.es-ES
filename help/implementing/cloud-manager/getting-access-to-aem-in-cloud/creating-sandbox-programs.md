@@ -2,10 +2,10 @@
 title: Creación de programas de zona protegida
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de zona protegida para formación, demostración, POC u otros fines que no sean de producción.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: ht
-source-wordcount: '464'
-ht-degree: 100%
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 95%
 
 ---
 
@@ -55,7 +55,7 @@ Puede ver los detalles de la configuración de la zona protegida, así como acce
 
    ![Acceso a la información general del programa](assets/program-overview-sandbox.png)
 
-1. Una vez completado el paso de creación del proyecto, puede acceder al vínculo **Acceder a la info del repositorio** para poder usar su repositorio de Git.
+1. Una vez completado el paso de creación del proyecto, puede acceder a las **Acceder a info del repositorio** para poder usar su repositorio de Git.
 
    ![Configuración del programa](assets/create-program4.png)
 

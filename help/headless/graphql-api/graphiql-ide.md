@@ -3,10 +3,10 @@ title: Uso del IDE de GraphiQL en AEM
 description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 87%
+source-wordcount: '1144'
+ht-degree: 83%
 
 ---
 
@@ -74,13 +74,13 @@ Use **Guardar como** para que persista la nueva consulta.
 
 Seleccione la consulta que desee actualizar en la lista del panel **Consultas persistentes** (extremo izquierdo).
 
-La consulta se mostrará en el panel del editor. Realice los cambios que necesite y, a continuación, utilice **Guardar** para confirmar las actualizaciones en la consulta persistente.
+La consulta se muestra en el panel del editor. Realice los cambios que necesite y, a continuación, utilice **Guardar** para confirmar las actualizaciones en la consulta persistente.
 
 ## Ejecución de consultas {#running-queries}
 
-Puede ejecutar una nueva consulta inmediatamente, o bien puede cargar y ejecutar una consulta persistente. Para cargar una consulta persistente, selecciónela en la lista; se mostrará en el panel Editor.
+Puede ejecutar una nueva consulta inmediatamente, o bien puede cargar y ejecutar una consulta persistente. Para cargar una consulta persistente, selecciónela en la lista; la consulta se muestra en el panel Editor.
 
-En cualquier caso, la consulta que se muestra en el panel Editor es la que se ejecutará cuando:
+En cualquier caso, la consulta que se muestra en el panel Editor es la que se ejecuta cuando:
 
 * toque o haga clic en el icono **Ejecutar consulta**
 * use la combinación de teclas `Control-Enter`

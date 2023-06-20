@@ -7,10 +7,10 @@ topic-tags: develop
 hide: true
 hidefromtoc: true
 exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
+source-wordcount: '3359'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ En esta lección, puede familiarizarse con el entorno de AEM Forms as a Cloud Se
 
 1. Abra el explorador e introduzca la dirección URL del entorno de creación de Cloud Service.
 
-1. Inicie sesión en el entorno de creación de Cloud Service. Las credenciales de inicio de sesión para el entorno de creación se compartirán con usted durante el laboratorio.
+1. Inicie sesión en el entorno de creación de Cloud Service. Las credenciales de inicio de sesión del entorno de creación se comparten con usted durante el laboratorio.
 
 1. Una vez que haya iniciado sesión, vaya a la IU de AEM Forms. Haga clic en **Formularios**.
 
@@ -268,7 +268,6 @@ Configure el repositorio local del tema:
    > * Si recibe un mensaje pidiendo que actualice npm a través del comando `npm notice Run npm nstall -g npm@9.6.0`, ignore el mensaje.
    > * No ejecute otros comandos npm a menos que se indique en el libro de trabajo.
 
-
 1. Ejecute el siguiente comando para obtener una vista previa del formulario.
 
    ```Shell
@@ -367,7 +366,7 @@ Para procesar el formulario alojado en el entorno de publicación de su servicio
 
    * **AEM_FORM_PATH**: especifique la ruta del formulario adaptable creado en la lección anterior. Por ejemplo, `/content/forms/af/registration/`. 
 
-      ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
+     ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
 1. Abra la ventana Comandos, compruebe que se encuentra en el directorio react-starter-kit-aem-headless-forms y ejecute el siguiente comando:
 
@@ -517,7 +516,7 @@ Para procesar el formulario alojado en el entorno de publicación de su servicio
 
    * **AEM_FORM_PATH**: especifique la ruta del formulario adaptable creado en la lección anterior. Por ejemplo, /content/forms/af/registration/
 
-      ![](/help/forms/assets/screenshot2028126929.png)
+     ![](/help/forms/assets/screenshot2028126929.png)
 
 1. Abra la ventana de comandos, asegúrese de que está en el directorio **react-starter-kit-aem-headless-forms** y ejecute el siguiente comando:
 

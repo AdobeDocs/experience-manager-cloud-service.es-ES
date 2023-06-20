@@ -3,10 +3,10 @@ title: Canalizaciones de CI/CD
 description: Obtenga información sobre las canalizaciones de CI/CD de Cloud Manager y cómo se pueden utilizar para implementar su código de forma eficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 100%
+source-wordcount: '1358'
+ht-degree: 87%
 
 ---
 
@@ -97,10 +97,10 @@ Las canalizaciones de pila completa pueden implementar configuraciones de nivel 
 
 Se aplican las siguientes restricciones.
 
-* Un usuario debe registrarse con el rol de **Administrador de implementación** para configurar o ejecutar canalizaciones.
+* Un usuario debe haber iniciado sesión con **Administrador de implementación** función para configurar o ejecutar canalizaciones.
 * En cualquier momento, solo puede haber una canalización de pila completa por entorno.
 
-Además, tenga en cuenta cómo se comportará la canalización de pila completa si elige introducir una [canalización de configuración del nivel web.](#web-tier-config-pipelines)
+Además, tenga en cuenta cómo se comporta la canalización de pila completa si elige introducir una [canalización de configuración de nivel web.](#web-tier-config-pipelines)
 
 * La canalización de pila completa para un entorno ignorará la configuración de Dispatcher si existe la canalización de configuración de nivel web correspondiente.
 * Si la canalización de configuración del nivel web correspondiente para el entorno no existe, el usuario puede configurar la canalización de pila completa incluir o ignorar la configuración de Dispatcher.
@@ -115,7 +115,7 @@ Las canalizaciones front-end ayudan a sus equipos a optimizar su proceso de dise
 
 >[!IMPORTANT]
 >
->Debe tener habilitada la versión de AEM `2021.10.5933.20211012T154732Z ` o superior con AEM Sites para aprovechar las canalizaciones front-end.
+>AEM Debe estar en la versión de la `2021.10.5933.20211012T154732Z ` o superior con AEM Sites habilitado para utilizar canalizaciones front-end.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Para aprender a configurar canalizaciones front-end, consulte los siguientes doc
 
 Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
 
-Consulte el documento [Desarrollar Sites con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
+Consulte el documento [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
 
 ### Configurar canalizaciones de pila completa {#configure-full-stack}
 
@@ -160,18 +160,18 @@ Las canalizaciones de configuración de nivel web permiten la implementación ex
 
 Se aplican las siguientes restricciones.
 
-* Debe estar en la versión de AEM `2021.12.6151.20211217T120950Z` o más reciente para aprovechar las canalizaciones de configuración de nivel web.
-* Debe [adherirse al modo flexible de las herramientas de Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para aprovechar las canalizaciones de configuración de nivel web.
-* Un usuario debe registrarse con el rol de **Administrador de implementación** para configurar o ejecutar canalizaciones.
+* AEM Debe estar en la versión de la `2021.12.6151.20211217T120950Z` o más reciente para utilizar canalizaciones de configuración de nivel web.
+* Usted debe [opte por el modo flexible de las herramientas de dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para utilizar canalizaciones de configuración de nivel web.
+* Un usuario debe haber iniciado sesión con **Administrador de implementación** función para configurar o ejecutar canalizaciones.
 * En cualquier momento, solo puede haber una canalización de configuración de nivel web por entorno.
 * El usuario no puede configurar una canalización de configuración de nivel web cuando se ejecuta su canalización de pila completa correspondiente.
 * La estructura del nivel web debe adherirse a la estructura de modo flexible, tal como se define en el documento [Dispatcher en la nube.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
-Además, tenga en cuenta cómo se comportará la [canalización de pila completa](#full-stack-pipeline) al introducir una canalización de niveles web.
+Además, tenga en cuenta cómo se usa la función [canalización de pila completa](#full-stack-pipeline) se comporta al introducir una canalización de nivel web.
 
 * Si no se ha configurado una canalización de configuración de nivel web para un entorno, el usuario puede realizar una selección al configurar su canalización de pila completa correspondiente para incluir o ignorar la configuración de Dispatcher durante la ejecución y la implementación.
 * Una vez que se ha configurado una canalización de configuración de nivel web para un entorno, su canalización de pila completa correspondiente (si existe) ignorará la configuración de Dispatcher durante la ejecución y la implementación.
-* Una vez que se elimine una canalización de configuración de nivel web, su canalización de pila completa correspondiente se restablecerá para implementar las configuraciones de Dispatcher durante su ejecución.
+* Después de eliminar una canalización de configuración de nivel web, su canalización de pila completa correspondiente se restablece para implementar las configuraciones de Dispatcher durante su ejecución.
 
 Las canalizaciones de configuración de nivel web pueden ser del tipo calidad del código o implementación.
 

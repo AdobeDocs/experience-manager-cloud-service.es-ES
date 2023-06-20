@@ -2,10 +2,10 @@
 title: Pruebas funcionales
 description: Obtenga información sobre los tres tipos diferentes de pruebas funcionales integradas en el proceso de implementación de AEM as a Cloud Service para garantizar la calidad y fiabilidad de su código.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '551'
+ht-degree: 88%
 
 ---
 
@@ -53,7 +53,7 @@ Las pruebas funcionales del producto se mantienen como un proyecto de código ab
 
 ### Prueba funcional personalizada {#custom-functional-testing}
 
-Aunque la prueba funcional del producto está definida por Adobe, puede escribir sus propias pruebas de calidad para su propia aplicación. Esto se ejecutará como prueba funcional personalizada como parte de la [canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) o una [canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para garantizar la calidad de la aplicación.
+Aunque la prueba funcional del producto está definida por Adobe, puede escribir sus propias pruebas de calidad para su propia aplicación. Esto se ejecuta como prueba funcional personalizada como parte de [canal de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) o opcionalmente [canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para garantizar la calidad de la aplicación.
 
 Las pruebas funcionales personalizadas se ejecutan tanto para implementaciones de código personalizado como para actualizaciones push, lo que hace especialmente importante escribir buenas pruebas funcionales que eviten que los cambios en el código de AEM rompan el código de la aplicación. El paso de prueba funcional personalizada siempre está presente y no se puede omitir.
 

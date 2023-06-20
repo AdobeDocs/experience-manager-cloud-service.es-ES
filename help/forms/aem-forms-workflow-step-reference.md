@@ -3,10 +3,10 @@ title: ¿Cómo asignar un flujo de trabajo a otro usuario, enviar correos electr
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo basados en formularios adaptables. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varias fuentes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '7190'
-ht-degree: 100%
+source-wordcount: '7189'
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
 
 * **[!UICONTROL Utilizar formulario adaptable]**: especifique el método para localizar el formulario adaptable de entrada. Esta opción está disponible si selecciona Formulario adaptable o Formulario adaptable de solo lectura en la lista desplegable Tipo. Puede utilizar el formulario adaptable enviado al flujo de trabajo, disponible en una ruta de acceso absoluta o disponible en una ruta de acceso de una variable. Puede utilizar una variable de tipo cadena para especificar la ruta.\
-   Puede asociar varios formularios adaptables a un flujo de trabajo. Como resultado, se puede especificar un formulario adaptable en tiempo de ejecución mediante los métodos de entrada disponibles.
+  Puede asociar varios formularios adaptables a un flujo de trabajo. Como resultado, se puede especificar un formulario adaptable en tiempo de ejecución mediante los métodos de entrada disponibles.
 
 <!-- 
 
@@ -80,7 +80,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
    * **[!UICONTROL Seleccionar el archivo de datos de entrada mediante]**: ruta del archivo de datos de entrada (.json, .xml, .doc o modelo de datos de formulario). Puede recuperar el archivo de datos de entrada mediante una ruta relativa a la carga útil o recuperar el archivo almacenado en una variable de tipo Doc, XML o JSON. Por ejemplo, el archivo contiene los datos enviados para el formulario a través de una aplicación de bandeja de entrada AEM. Una ruta de ejemplo es [Payload_Directory]/workflow/data.
    * **[!UICONTROL Seleccionar datos adjuntos de entrada mediante]**: los archivos adjuntos disponibles en la ubicación se adjuntan al formulario asociado a la tarea. La ruta puede ser relativa a la carga útil o recuperar el archivo adjunto almacenado en una variable de tipo Doc. Una ruta de ejemplo es [Payload_Directory]/attachments/. Puede especificar archivos adjuntos colocados en relación con la carga útil o utilizar una variable de tipo Doc (Lista de matriz > Documento) para especificar un archivo adjunto de entrada para el formulario adaptable.
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -92,7 +92,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
    * **[!UICONTROL Asignación de atributos de solicitud]**: utilice la sección Asignación de atributos de solicitud para definir [el nombre y el valor del atributo de solicitud](work-with-form-data-model.md#bindargument). Recupere los detalles de la fuente de datos en función del nombre del atributo y el valor especificados en la solicitud. Puede definir un valor de atributo de solicitud utilizando un valor literal o una variable de tipo de datos de cadena.
 
-   <!--  
+  <!--  
      
      The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
      
@@ -104,7 +104,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
    * **[!UICONTROL Guardar archivos adjuntos mediante]**: guarde los datos adjuntos del formulario proporcionados en una tarea. Puede guardar los archivos adjuntos utilizando una ruta relativa a la carga útil o almacenarla en una variable de lista de matriz de documento.
    * **[!UICONTROL Guardar documento de registro mediante]**: ruta para guardar un archivo de documento de registro. Por ejemplo, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puede guardar el documento de registro mediante una ruta relativa a la carga útil o almacenarlo en una variable de tipo Doc. Si selecciona **[!UICONTROL Relativo a la carga útil]**, el documento de registro no se genera si el campo de ruta se deja vacío. Esta opción solo está disponible si selecciona Formulario adaptable en la lista desplegable Tipo.
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
@@ -122,7 +122,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **[!UICONTROL Argumentos]**: el campo está disponible cuando se selecciona un script que no sea RandomParticipantChoose en el campo Selector de participantes. El campo permite proporcionar una lista de un argumento separado por comas para la secuencia de comandos seleccionada en el campo Selector de participantes. 
 
 * **[!UICONTROL Usuario o grupo]**: la tarea se asigna al usuario o grupo seleccionado. La opción está disponible cuando la variable **[!UICONTROL Para una opción de usuario o grupo específica]** está seleccionada en el campo **[!UICONTROL Asignar opciones]**. El campo enumera todos los usuarios y grupos del grupo [!DNL workflow-users].\
-   La lista **[!UICONTROL Usuario o grupo]** en el menú desplegable enumera los usuarios y grupos a los que el usuario que ha iniciado sesión tiene acceso. La visualización del nombre de usuario depende de si tiene permisos de acceso en el nodo **[!UICONTROL usuarios]** en el repositorio CRX para ese usuario en particular.
+  La lista **[!UICONTROL Usuario o grupo]** en el menú desplegable enumera los usuarios y grupos a los que el usuario que ha iniciado sesión tiene acceso. La visualización del nombre de usuario depende de si tiene permisos de acceso en el nodo **[!UICONTROL usuarios]** en el repositorio CRX para ese usuario en particular.
 
 * **[!UICONTROL Enviar correo electrónico de notificación]**: seleccione esta opción para enviar notificaciones por correo electrónico al usuario asignado. Estas notificaciones se envían cuando se asigna una tarea a un usuario o a un grupo. Puede usar la variable **[!UICONTROL Dirección de correo electrónico del destinatario]** para especificar el mecanismo para recuperar la dirección de correo electrónico.
 
@@ -135,7 +135,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
    * Cuando la variable **[!UICONTROL Permitir que el usuario asignado comparta a través del uso compartido de la bandeja de entrada]** está seleccionada y los usuarios comparten sus elementos de la bandeja de entrada o permiten que otros usuarios accedan a sus elementos de la bandeja de entrada, solo las tareas con la opción previamente mencionada se comparten con otros usuarios.
    * Cuando la opción de configuración **[!UICONTROL Permitir que el usuario asignado delegue mediante la configuración ‘Fuera de la oficina’]** está seleccionada. El usuario asignado puede activar la opción para delegar la tarea a otros usuarios junto con otras opciones fuera de la oficina. Las nuevas tareas asignadas al usuario fuera de la oficina se delegan (asignan) automáticamente a los usuarios mencionados en la configuración fuera de la oficina.
 
-   Permite que otros usuarios elijan tareas asignadas mientras está fuera de la oficina y no puede trabajar en tareas asignadas.
+  Permite que otros usuarios elijan tareas asignadas mientras está fuera de la oficina y no puede trabajar en tareas asignadas.
 
 * **[!UICONTROL Acciones]** > **[!UICONTROL Acciones predeterminadas]**: las acciones Enviar, Guardar y Restablecer están disponibles por defecto. De forma predeterminada, todas estas acciones están habilitadas.
 * **[!UICONTROL Variable de ruta]**: nombre de la variable de ruta. La variable de ruta captura las acciones personalizadas que selecciona un usuario en la bandeja de entrada AEM.
@@ -354,7 +354,7 @@ El paso para invocar el servicio de modelo de datos de formulario tiene los camp
 
    * **[!UICONTROL Relativo a la carga útil]**: utilice la opción para recuperar el archivo adjunto guardado en una ruta relativa a la carga útil. Seleccione la opción y especifique el nombre de la carpeta que incluye el archivo adjunto o especifique el nombre del archivo adjunto en el cuadro de texto.
 
-      Por ejemplo, si la carpeta Relativo a la carga útil en el repositorio CRX incluye un archivo adjunto en la ubicación `attachment\attachment-folder`, especifique `attachment\attachment-folder` en el cuadro de texto después de seleccionar la variable **[!UICONTROL Relativo a la carga útil]**.
+     Por ejemplo, si la carpeta Relativo a la carga útil en el repositorio CRX incluye un archivo adjunto en la ubicación `attachment\attachment-folder`, especifique `attachment\attachment-folder` en el cuadro de texto después de seleccionar la variable **[!UICONTROL Relativo a la carga útil]**.
 
    * **[!UICONTROL Notación de puntos JSON]**: utilice la opción cuando el valor que desea utilizar esté en un archivo JSON. Por ejemplo, insurance.customerDetails.emailAddress. La opción de notación de puntos JSON solo está disponible si se selecciona la opción Asignar campos de entrada desde la entrada JSON.
    * **[!UICONTROL Asignar campos de entrada desde la entrada JSON]**: especifique la ruta de un archivo JSON para obtener el valor de entrada de algunos argumentos de servicio del archivo JSON. La ruta del archivo JSON puede ser relativa a la carga útil, una ruta de acceso absoluta o puede seleccionar un documento JSON de entrada utilizando una variable de tipo JSON o un modelo de datos de formulario.
@@ -526,7 +526,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 
 * **[!UICONTROL Seleccionar la ubicación raíz del contenido mediante]**: la raíz del contenido es un valor de cadena que especifica el URI, la referencia absoluta o la ubicación en el repositorio para recuperar los recursos relativos que utiliza el diseño de formulario. Por ejemplo, si el diseño de formulario hace referencia a una imagen de forma relativa, como `../myImage.gif`, `myImage.gif` debe estar en `repository://`. El valor predeterminado es `repository://`, que apunta al nivel raíz del repositorio.
 
-   Cuando elige un recurso de la aplicación, la ruta del URI raíz del contenido debe tener la estructura correcta. Por ejemplo, si se selecciona un formulario de una aplicación denominada SampleApp y se coloca en `SampleApp/1.0/forms/Test.xdp`, el URI de raíz de contenido debe especificarse como `repository://administrator@password/Applications/SampleApp/1.0/forms/` o `repository:/Applications/SampleApp/1.0/forms/` (cuando la autoridad sea nula). Cuando se especifica el URI de raíz de contenido de esta forma, las rutas de todos los recursos a los que se hace referencia en el formulario se resuelven en relación con este URI.
+  Cuando elige un recurso de la aplicación, la ruta del URI raíz del contenido debe tener la estructura correcta. Por ejemplo, si se selecciona un formulario de una aplicación denominada SampleApp y se coloca en `SampleApp/1.0/forms/Test.xdp`, el URI de raíz de contenido debe especificarse como `repository://administrator@password/Applications/SampleApp/1.0/forms/` o `repository:/Applications/SampleApp/1.0/forms/` (cuando la autoridad sea nula). Cuando se especifica el URI de raíz de contenido de esta manera, las rutas de todos los recursos a los que se hace referencia en el formulario se resuelven en relación con este URI.
 
 * **[!UICONTROL Seleccionar el archivo XCI mediante]**: los archivos XCI se utilizan para describir fuentes y otras propiedades que se utilizan para elementos de diseño de formulario. Puede mantener un archivo XCI relativo a la carga útil, en una ruta absoluta o mediante una variable del tipo de datos Document.
 

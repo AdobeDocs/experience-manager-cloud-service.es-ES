@@ -2,9 +2,9 @@
 title: Diagnóstico de ContextHub
 description: ContextHub proporciona una página de diagnóstico en la que puede ver una descripción general del marco de trabajo de ContextHub
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ La página Diagnósticos de ContextHub proporciona información sobre los almace
 
 >[!NOTE]
 >
->Para que se devuelva la información de diagnóstico, debe habilitarse el modo de depuración; de lo contrario, la página de diagnósticos estará en blanco. Consulte lo siguiente [este documento](configuring-contexthub.md#debugging-contexthub) para obtener más información sobre cómo habilitar el modo de depuración.
+>Para que se devuelva la información de diagnóstico, debe habilitarse el modo de depuración; de lo contrario, la página de diagnósticos está en blanco. Consulte lo siguiente [este documento](configuring-contexthub.md#debugging-contexthub) para obtener más información sobre cómo habilitar el modo de depuración.
 
 ## Tiendas {#stores}
 

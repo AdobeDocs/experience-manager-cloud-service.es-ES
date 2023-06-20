@@ -2,10 +2,10 @@
 title: 'Introducción al desarrollo de AEM Sites: Tutorial de WKND'
 description: ¿Es nuevo en el desarrollo de AEM? ¿Necesita un repaso sobre las prácticas recomendadas? Este es el lugar para empezar. El objetivo de este tutorial en varias partes es enseñar a un desarrollador nuevo con AEM cómo implementar un sitio web en AEM utilizando los estándares y tecnologías más recientes.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 100%
+source-wordcount: '241'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ El objetivo de este tutorial en varias partes es enseñar a un desarrollador nue
 
 ## Conceptos principales {#core-concepts}
 
-La implementación del tutorial aprovecha muchas funciones potentes de AEM. El sitio se implementará utilizando:
+AEM La implementación del tutorial utiliza muchas funciones potentes de la aplicación de. El sitio se implementa mediante lo siguiente:
 
 * [Arquetipo del proyecto Maven de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)

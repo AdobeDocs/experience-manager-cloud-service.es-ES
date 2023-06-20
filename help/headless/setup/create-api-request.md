@@ -2,10 +2,10 @@
 title: 'Creación de una solicitud de API: configuración sin encabezado'
 description: Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido y la API de REST de Assets de AEM para administrar fragmentos de contenido.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Se pueden encontrar más detalles acerca de la activación de los [puntos de con
 
 ## Consulta de contenido mediante GraphQL con GraphiQL
 
-Los arquitectos de la información deberán diseñar consultas para sus puntos de conexión de canal para poder entregar contenido. Por lo general, estas consultas solo tendrán que considerarse una vez por punto de conexión y modelo. Para los fines de esta guía de introducción solo tendremos que crear una.
+Los arquitectos de la información deben diseñar consultas para sus puntos finales de canal para ofrecer contenido. Por lo general, estas consultas solo tendrán que considerarse una vez por punto de conexión y modelo. Para los fines de esta guía de introducción solo tendremos que crear una.
 
 GraphiQL es un IDE, incluido en su entorno AEM; es accesible/visible después de [configurar los extremos](#enable-graphql-endpoint).
 

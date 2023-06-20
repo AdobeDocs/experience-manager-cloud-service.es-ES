@@ -2,9 +2,9 @@
 title: SPA Procesamiento del lado del servidor y de
 description: SPA El uso del procesamiento del lado del servidor (SSR) en la puede acelerar la carga inicial de la página y, a continuación, pasar más procesamiento al cliente.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: a9eb03d4db478a4db8e6d2436bd06dcde70a3eeb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Los campos siguientes están disponibles para la configuración:
 
 >[!NOTE]
 >
->Esta configuración aprovecha las [Procesador de contenido remoto,](#remote-content-renderer) que tiene opciones de extensión y personalización adicionales disponibles.
+>Esta configuración utiliza el [Procesador de contenido remoto,](#remote-content-renderer) que tiene opciones de extensión y personalización adicionales disponibles.
 
 ## AEM Flujo de comunicación impulsado por el {#aem-driven-communication-flow}
 
@@ -130,15 +130,15 @@ AEM Ambos modelos son válidos y compatibles con el servicio de asistencia de la
 
 ## Planificación de la SSR {#planning-for-ssr}
 
-Por lo general, solo parte de una aplicación debe procesarse en el servidor. El ejemplo común es el contenido que se muestra encima del pliegue en la carga inicial de la página y que se procesa en el servidor. Esto ahorra tiempo al enviar al cliente contenido ya procesado. SPA A medida que el usuario interactúa con el usuario, el cliente procesa el contenido adicional.
+Por lo general, solo parte de una aplicación debe procesarse en el servidor. El ejemplo más común es el contenido que se muestra encima del pliegue en la carga inicial de la página y que se procesa en el servidor. Esto ahorra tiempo al enviar al cliente contenido ya procesado. SPA A medida que el usuario interactúa con el usuario, el cliente procesa el contenido adicional.
 
-SPA A medida que considere la posibilidad de implementar el procesamiento en el servidor para su, deberá revisar qué partes de la aplicación serán necesarias.
+SPA A medida que considere la posibilidad de implementar el procesamiento en el servidor para su, deberá revisar qué partes de la aplicación son necesarias.
 
 ## SPA Desarrollo de una mediante SSR {#developing-an-spa-using-ssr}
 
-SPA El cliente (en el explorador) o el servidor pueden procesar los componentes de la. Cuando se representan en el servidor, las propiedades del explorador como el tamaño y la ubicación de la ventana no están presentes. SPA Por lo tanto, los componentes de la deben ser isomórficos, sin dar por hecho dónde se procesarán.
+SPA El cliente (en el explorador) o el servidor pueden procesar los componentes de la. Cuando se representan en el servidor, las propiedades del explorador como el tamaño y la ubicación de la ventana no están presentes. SPA Por lo tanto, los componentes de la deben ser isomórficos, sin dar por hecho dónde se representan.
 
-AEM Para aprovechar la SSR, deberá implementar su código tanto en el servidor como en el Adobe I/O Runtime, que es responsable del procesamiento del lado del servidor. La mayoría del código será el mismo, aunque las tareas específicas del servidor diferirán.
+AEM Para utilizar SSR, debe implementar el código en y en Adobe I/O Runtime, que es responsable de la representación del lado del servidor. La mayoría del código es el mismo, aunque las tareas específicas del servidor difieren.
 
 ## SPA AEM SSR para la en el {#ssr-for-spas-in-aem}
 
@@ -160,7 +160,7 @@ Este servicio lo utiliza internamente el [RemoteContentRendererRequestHandlerSer
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-El `RemoteContentRendererRequestHandlerServlet` se puede utilizar para establecer mediante programación la configuración de la solicitud. `DefaultRemoteContentRendererRequestHandlerImpl`, la implementación del controlador de solicitudes predeterminada proporcionada, le permite crear varias configuraciones de OSGi para asignar una ubicación en la estructura de contenido a un extremo remoto.
+El `RemoteContentRendererRequestHandlerServlet` se puede utilizar para establecer mediante programación la configuración de la solicitud. `DefaultRemoteContentRendererRequestHandlerImpl`, la implementación del controlador de solicitudes predeterminada proporcionada, permite crear varias configuraciones de OSGi para poder asignar una ubicación de la estructura de contenido a un extremo remoto.
 
 Para agregar un controlador de solicitud personalizado, implemente la variable `RemoteContentRendererRequestHandler` interfaz. Asegúrese de configurar el `Constants.SERVICE_RANKING` propiedad de componente a un entero superior a 100, que es la clasificación del `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -194,4 +194,4 @@ Normalmente, la plantilla HTL de un componente de página es el destinatario pri
 
 ### Requisitos  {#requirements}
 
-Los servlets aprovechan el exportador de modelos Sling para serializar los datos del componente. De forma predeterminada, tanto la variable `com.adobe.cq.export.json.ContainerExporter` y `com.adobe.cq.export.json.ComponentExporter` se admiten como adaptadores del modelo Sling. Si es necesario, puede agregar clases a las que se debe adaptar la solicitud utilizando `RemoteContentRendererServlet` y la implementación de `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. Las clases adicionales deben ampliar el `ComponentExporter`.
+Los servlets utilizan el Exportador del modelo Sling para serializar los datos del componente. De forma predeterminada, tanto la variable `com.adobe.cq.export.json.ContainerExporter` y `com.adobe.cq.export.json.ComponentExporter` se admiten como adaptadores del modelo Sling. Si es necesario, puede agregar clases a las que se debe adaptar la solicitud utilizando `RemoteContentRendererServlet` y la implementación de `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. Las clases adicionales deben ampliar el `ComponentExporter`.

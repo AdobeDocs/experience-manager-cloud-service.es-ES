@@ -3,10 +3,10 @@ title: Consultas persistentes de GraphQL
 description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Experience Manager as a Cloud Service para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método HTTP GET y la respuesta se puede almacenar en caché en las capas de Dispatcher y la red de distribución de contenido (CDN), lo que a la larga mejora el rendimiento de las aplicaciones cliente.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 90%
+source-wordcount: '1681'
+ht-degree: 88%
 
 ---
 
@@ -38,10 +38,10 @@ Por ejemplo, para crear una consulta persistente específica para la configuraci
 
 Por ejemplo, si hay una consulta en particular llamada `my-query`, que utiliza un modelo `my-model` desde la configuración de Sites `my-conf`:
 
-* Puede crear una consulta utilizando el punto de conexión `my-conf` específico, y luego la consulta se guardará de la siguiente manera:
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* Puede crear la misma consulta utilizando el punto de conexión `global`, pero la consulta se guardará de la siguiente manera:
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+* Puede crear una consulta utilizando el `my-conf` Un punto de conexión específico y, a continuación, la consulta se guarda de la siguiente manera:
+  `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+* Puede crear la misma consulta utilizando `global` punto final, pero la consulta se guardará de la siguiente manera:
+  `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
@@ -365,14 +365,14 @@ La configuración de OSGi predeterminada para instancias de publicación:
 
 * lee las variables de Cloud Manager si están disponibles:
 
-   | Propiedad de configuración de OSGi | lee esto | Variable de Cloud Manager |
-   |--- |--- |--- |
-   | `cacheControlMaxAge` | lee | `graphqlCacheControl` |
-   | `surrogateControlMaxAge` | lee | `graphqlSurrogateControl` |
-   | `surrogateControlStaleWhileRevalidate` | lee | `graphqlStaleWhileRevalidate` |
-   | `surrogateControlStaleIfError` | lee | `graphqlStaleIfError` |
+  | Propiedad de configuración de OSGi | lee esto | Variable de Cloud Manager |
+  |--- |--- |--- |
+  | `cacheControlMaxAge` | lee | `graphqlCacheControl` |
+  | `surrogateControlMaxAge` | lee | `graphqlSurrogateControl` |
+  | `surrogateControlStaleWhileRevalidate` | lee | `graphqlStaleWhileRevalidate` |
+  | `surrogateControlStaleIfError` | lee | `graphqlStaleIfError` |
 
-   {style="table-layout:auto"}
+  {style="table-layout:auto"}
 
 * y si no está disponible, la configuración de OSGi utiliza la variable [valores predeterminados para instancias de publicación](#publish-instances).
 
@@ -388,13 +388,13 @@ Puede [configuración de OSGi](/help/implementing/deploying/configuring-osgi.md)
 
 El campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) se puede definir según sea necesario:
 
-* `false` (valor predeterminado): No importa si la consulta persistente es correcta o no. El `/execute.json/persisted-query` devolverá el código de estado `200` y el `Content-Type` el encabezado devuelto será `application/json`.
+* `false` (valor predeterminado): No importa si la consulta persistente es correcta o no. El `/execute.json/persisted-query` devuelve el código de estado `200` y el `Content-Type` el encabezado devuelto es `application/json`.
 
-* `true`: el punto final devolverá `400` o `500` según corresponda, cuando haya algún tipo de error al ejecutar la consulta persistente. También el devuelto `Content-Type` será `application/graphql-response+json`.
+* `true`: el punto final devolverá `400` o `500` según corresponda, cuando haya algún tipo de error al ejecutar la consulta persistente. Además, la variable devuelta `Content-Type` es `application/graphql-response+json`.
 
-   >[!NOTE]
-   >
-   >Para obtener más información, consulte https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >[!NOTE]
+  >
+  >Para obtener más información, consulte https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Codificación de la URL de consulta para su uso en una aplicación {#encoding-query-url}
 
@@ -440,7 +440,7 @@ Para crear un paquete, haga lo siguiente:
 1. Cree un nuevo paquete tocando **Crear paquete**. Se abre un cuadro de diálogo para definir el paquete.
 1. En el cuadro de diálogo Definición de paquete, en **General** introduzca un **Nombre** como “wknd-persistent-queries”.
 1. Escriba un número de versión como “1.0”.
-1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para la configuración `wknd` la ruta completa será `/conf/wknd/settings/graphql/persistentQueries`.
+1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para `wknd` , la ruta completa es `/conf/wknd/settings/graphql/persistentQueries`.
 1. Toque **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
 1. Toque el botón **Generar** en la definición del paquete recién creada.
 

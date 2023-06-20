@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4934'
-ht-degree: 96%
+source-wordcount: '4925'
+ht-degree: 91%
 
 ---
 
@@ -30,22 +30,21 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 >* [AEM Commerce consume datos de una plataforma de Commerce a través de GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* Los fragmentos de contenido de AEM trabajan junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en aplicaciones.
 
-
 ## La API de GraphQL {#graphql-api}
 
 GraphQL es:
 
 * “*...un idioma de consulta para API y un tiempo de ejecución para cumplir esas consultas con los datos existentes. GraphQL proporciona una descripción completa y comprensible de los datos de su API, ofrece a los clientes la posibilidad de preguntar exactamente lo que necesitan y nada más, facilita la evolución de las API con el paso del tiempo y habilita potentes herramientas para desarrolladores”.*
 
-   Consulte [GraphQL.org](https://graphql.org)
+  Consulte [GraphQL.org](https://graphql.org)
 
 * “*...una especificación abierta para una capa de API flexible. Coloque GraphQL sobre los back-ends existentes para crear productos más rápido que nunca...*”.
 
-   Consulte [Exploración de GraphQL](https://www.graphql.com).
+  Consulte [Exploración de GraphQL](https://www.graphql.com).
 
 * *“...una especificación y lenguaje de consulta de datos desarrollado internamente por Facebook en 2012, antes de pasar a ser de código abierto público en 2015. Proporciona una alternativa a las arquitecturas basadas en REST con el propósito de aumentar la productividad del desarrollador y minimizar las cantidades de datos transferidos. Cientos de organizaciones de todos los tamaños utilizan GraphQL en producción...”*
 
-   Consulte [Fundamentos de GraphQL](https://foundation.graphql.org/).
+  Consulte [Fundamentos de GraphQL](https://foundation.graphql.org/).
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
@@ -125,7 +124,6 @@ Aunque GraphQL también admite peticiones GET, estas pueden alcanzar límites (p
 >* Crea una [variable de entorno de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) llamada `ENABLE_GRAPHQL_ENDPOINT`.
 >* con el valor `true`.
 
-
 >[!NOTE]
 >
 >La capacidad de realizar consultas directas puede quedar obsoleta en algún momento futuro.
@@ -201,7 +199,7 @@ Por ejemplo, si:
 
 1. Instala un paquete que contenga `Content-Fragment-Model-1` y `Content-Fragment-Model-2`:
 
-   1. Se generarán tipos de GraphQL para `Model-1` y `Model-2`.
+   1. Tipos de GraphQL para `Model-1` y `Model-2` se generan.
 
 1. A continuación, modifique `Content-Fragment-Model-2`:
 
@@ -233,7 +231,7 @@ Dentro del esquema hay campos individuales, de dos categorías básicas:
 
 * Campos que genera usted.
 
-   Una selección de [Tipos de datos](#Data-types) se utiliza para crear campos en función de cómo configure el modelo de fragmentos de contenido. Los nombres de campo se toman del campo **Nombre de propiedad** de la pestaña **Tipo de datos**.
+  Una selección de [Tipos de datos](#Data-types) se utiliza para crear campos en función de cómo configure el modelo de fragmentos de contenido. Los nombres de campo se toman del campo **Nombre de propiedad** de la pestaña **Tipo de datos**.
 
    * También hay que tener en cuenta el ajuste **Procesar como**, ya que los usuarios pueden configurar determinados tipos de datos. Por ejemplo, se puede configurar un campo de texto de una sola línea para que contenga varios textos de una sola línea eligiendo `multifield` en la lista desplegable.
 
@@ -259,7 +257,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 
 ### Campos de ayuda {#helper-fields}
 
-Además de los tipos de datos de los campos generados por el usuario, GraphQL para AEM también genera una serie de campos de *ayuda* para ayudar a identificar un fragmento de contenido o para proporcionar información adicional acerca de un fragmento de contenido.
+Además de los tipos de datos de los campos generados por el usuario, GraphQL AEM para la también genera una serie de *ayudante* campos para ayudar a identificar un fragmento de contenido o para proporcionar información adicional acerca de un fragmento de contenido.
 
 Estos [campos de ayuda](#helper-fields) se marcan con un `_` que los precede para distinguir entre lo que ha definido el usuario y lo que se ha generado automáticamente.
 
@@ -371,7 +369,7 @@ Consulte [Consulta de muestra: todas las ciudades con una variación con nombre]
 
 >[!NOTE]
 >
->Si la variación dada no existe para un Fragmento de contenido, los datos originales (también conocidos como la variación principal) se devolverán como una predeterminada (alternativa).
+>Si la variación dada no existe para un Fragmento de contenido, los datos originales (también conocidos como la variación principal) se devuelven como una predeterminada (alternativa).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -571,7 +569,7 @@ Esta función permite ordenar los resultados de la consulta según un campo espe
 Los criterios de clasificación son los siguientes:
 
 * una lista de valores separados por comas que representa la ruta del campo
-   * el primer campo de la lista define el criterio de clasificación principal, el segundo se utiliza si dos valores del criterio de clasificación principal son iguales, el tercero si los dos primeros criterios son iguales, etc.
+   * el primer campo de la lista definirá el criterio de ordenación principal, el segundo campo se utiliza si dos valores del criterio de ordenación principal son iguales, el tercero si los dos primeros criterios son iguales, etc.
    * notación con puntos, es decir campo1.subcampo.subcampo, etc.
 * una dirección de orden opcional
    * ASC (de subida) o DESC (de bajada); ASC se aplica como predeterminado
@@ -666,10 +664,9 @@ query {
 
 >[!NOTE]
 >
->* La paginación requiere un orden de clasificación estable para funcionar correctamente en varias consultas que soliciten diferentes páginas del mismo conjunto de resultados. De forma predeterminada, utiliza la ruta del repositorio de cada elemento del conjunto de resultados para asegurar que el orden sea siempre el mismo. Si se utiliza un criterio diferente y si esa clasificación no se puede realizar en el nivel de consulta JCR, habrá un impacto negativo en el rendimiento, ya que todo el conjunto de resultados debe cargarse en la memoria antes de que se puedan determinar las páginas.
+>* La paginación requiere un orden de clasificación estable para funcionar correctamente en varias consultas que soliciten diferentes páginas del mismo conjunto de resultados. De forma predeterminada, utiliza la ruta del repositorio de cada elemento del conjunto de resultados para asegurar que el orden sea siempre el mismo. Si se utiliza un criterio de ordenación diferente y no se puede realizar esa ordenación en el nivel de consulta JCR, el rendimiento se ve afectado, ya que todo el conjunto de resultados debe cargarse en la memoria antes de poder determinar las páginas.
 >
 >* Cuanto mayor sea el desplazamiento, más tiempo tardará en omitir los elementos del conjunto de resultados completo de la consulta JCR. Una solución alternativa para grandes conjuntos de resultados es utilizar la consulta paginada con el método `first` y `after`.
-
 
 ### Consulta paginada: primero y después {#paginated-first-after}
 
@@ -708,7 +705,6 @@ query {
 >
 >* Debido a limitaciones técnicas internas, el rendimiento se degradará si se aplica clasificación y filtrado en los campos anidados. Por lo tanto, se recomienda utilizar campos de filtro/clasificación almacenados en el nivel raíz. Esta es también la forma recomendada si desea consultar grandes conjuntos de resultados paginados.
 
-
 ## Envío de imágenes optimizadas para la web en consultas de GraphQL {#web-optimized-image-delivery-in-graphql-queries}
 
 El envío de imágenes optimizadas para la web permite utilizar una consulta Graphql para lo siguiente:
@@ -717,9 +713,9 @@ El envío de imágenes optimizadas para la web permite utilizar una consulta Gra
 
 * Pase parámetros con la consulta para que se genere y devuelva automáticamente una representación específica de la imagen
 
-   >[!NOTE]
-   >
-   >La representación especificada no se almacena en AEM Assets. La representación se genera y se conserva en la caché durante un breve período.
+  >[!NOTE]
+  >
+  >La representación especificada no se almacena en AEM Assets. La representación se genera y se conserva en la caché durante un breve período.
 
 * Devolución de la URL como parte del envío JSON
 
@@ -744,7 +740,7 @@ La solución de GraphQL significa que puede hacer lo siguiente:
 La estructura y la sintaxis son las siguientes:
 
 * `format`: una enumeración con todos los formatos admitidos por su extensión: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL o WEBPLY
-* `seoName`: una cadena que se utilizará como nombre de archivo en lugar del nombre de nodo
+* `seoName`: una cadena que se utiliza como nombre de archivo en lugar del nombre del nodo
 * `crop`: una subestructura de fotograma, si se omite la anchura o la altura, estas se utilizan como el mismo valor
    * `xOrigin`: el origen x del fotograma, es obligatorio
    * `yOrigin`: el origen y del fotograma, es obligatorio
@@ -756,7 +752,7 @@ La estructura y la sintaxis son las siguientes:
 * `rotation`: una enumeración de todas las rotaciones admitidas: R90, R180, R270
 * `flip`: una enumeración de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: un entero entre 1 y 100 que indica el porcentaje de calidad de la imagen
-* `width`: un entero que define la anchura de la imagen de salida, pero que el Generador de imágenes ignorará
+* `width`: un entero que define la anchura de la imagen de salida, pero que el Generador de imágenes ignora
 * `preferWebp`: un booleano que indica si se prefiere webp (el valor predeterminado es falso)
 
 La transformación de URL está disponible para todos los tipos de consulta: por ruta, lista o paginada.
@@ -888,17 +884,17 @@ Por ejemplo, para ejecutar directamente los ejemplos anteriores (guardados como 
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
-      La respuesta será la siguiente:
+     La respuesta será la siguiente:
 
-      ![Envío de imágenes mediante parámetros](assets/cfm-graphiql-sample-image-delivery.png "Envío de imágenes mediante parámetros")
+     ![Envío de imágenes mediante parámetros](assets/cfm-graphiql-sample-image-delivery.png "Envío de imágenes mediante parámetros")
 
 * [Múltiples parámetros](#dynamic-image-delivery-multiple-specified-parameters); consulta persistente con el nombre `dynamic`
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
-      >[!CAUTION]
-      >
-      >El `;`final es obligatorio para terminar de forma limpia la lista de parámetros.
+     >[!CAUTION]
+     >
+     >El `;`final es obligatorio para terminar de forma limpia la lista de parámetros.
 
 ### Limitaciones del envío de imágenes {#image-delivery-limitations}
 
@@ -922,26 +918,26 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
    * añada `List` al nombre del modelo; por ejemplo, `cityList`
    * Consulte [Consulta de muestra: toda la información acerca de todas las ciudades](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-   Podrá hacer lo siguiente:
+  Podrá hacer lo siguiente:
 
    * [Clasificación de los resultados](#sorting)
 
       * `ASC`: ascendente
       * `DESC`: descendente
+
    * Devuelva una página de resultados utilizando lo siguiente:
 
       * [Una consulta de lista con desplazamiento y límite](#list-offset-limit)
       * [Una consulta paginada con primero y después](#paginated-first-after)
+
    * Consulte [Consulta de muestra: toda la información acerca de todas las ciudades](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
-
-
-
 
 * El filtro `includeVariations` está incluido en el `List` y `Paginated` tipos de consulta.  Para recuperar las variaciones de fragmentos de contenido en los resultados de la consulta, haga clic en `includeVariations` el filtro debe establecerse en `true`.
 
    * Consulte [Consulta de muestra para varios fragmentos de contenido y sus variaciones de un modelo determinado](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
-   >[!CAUTION]
-   >El filtro `includeVariations` y el campo generado por el sistema `_variation` no se pueden usar juntos en la misma definición de consulta.
+
+  >[!CAUTION]
+  >El filtro `includeVariations` y el campo generado por el sistema `_variation` no se pueden usar juntos en la misma definición de consulta.
 
 * Si desea utilizar un OR lógico:
    * use ` _logOp: OR`
@@ -958,25 +954,31 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
       * `_locale`: para revelar el idioma; basado en el Administrador de idiomas
          * Consulte [Consulta de muestra para varios fragmentos de contenido de una configuración regional determinada](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
+
       * `_metadata`: para mostrar los metadatos del fragmento
          * Consulte [Consulta de muestra para metadatos: enumera los metadatos de los premios titulados GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+
       * `_model`: permitir la consulta de un modelo de fragmento de contenido (ruta y título)
          * Consulte [Consulta de muestra para un modelo de fragmento de contenido de un modelo](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
+
       * `_path`: la ruta al fragmento de contenido dentro del repositorio
          * Consulte [Consulta de muestra: un solo fragmento de ciudad específico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+
       * `_reference`: para revelar referencias, incluyendo referencias en línea en el Editor de texto enriquecido
          * Consulte [Consulta de muestra para varios fragmentos de contenido con referencias recuperadas previamente](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
+
       * `_variation`: para mostrar variaciones específicas dentro del fragmento de contenido
 
-         >[!NOTE]
-         >
-         >Si la variación dada no existe para un Fragmento de contenido, la variación principal se devolverá como una predeterminada (alternativa).
+        >[!NOTE]
+        >
+        >Si la variación dada no existe para un Fragmento de contenido, la variación principal se devuelve como una predeterminada (alternativa).
 
-         >[!CAUTION]
-         >
-         >El campo generado por el sistema `_variation` no se puede usar junto con el filtro `includeVariations`.
+        >[!CAUTION]
+        >
+        >El campo generado por el sistema `_variation` no se puede usar junto con el filtro `includeVariations`.
 
          * Consulte [Consulta de muestra: todas las ciudades con una variación con nombre](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+
    * Para [envío de imágenes](#image-delivery):
 
       * `_dynamicUrl`: en la referencia `ImageRef`
@@ -988,6 +990,7 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
          * [Consulta de muestra para el envío de imágenes con parámetros completos](#image-delivery-full-parameters)
 
          * [Consulta de muestra para el envío de imágenes con un solo parámetro especificado](#image-delivery-single-specified-parameter)
+
    * `_tags` : para revelar los ID de los fragmentos de contenido o las variaciones que contienen etiquetas; se trata de una matriz de `cq:tags` identificadores.
 
       * Consulte [Consulta de muestra: nombres de todas las ciudades etiquetadas como escapadas](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
@@ -995,29 +998,21 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
       * Consulte [Consulta de muestra con filtrado por ID de _tags y excluyendo variaciones](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
       * Consulte [Consulta de muestra con filtrado por ID de _tags e incluidas variaciones](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
 
-      >[!NOTE]
-      >
-      >Las etiquetas también se pueden consultar enumerando los metadatos de un fragmento de contenido.
+     >[!NOTE]
+     >
+     >Las etiquetas también se pueden consultar enumerando los metadatos de un fragmento de contenido.
 
    * Y operaciones:
 
       * `_operator`: aplicar operadores específicos; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Consulte [Consulta de muestra: todas las personas que no tienen el apellido “Jobs”](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
          * Consulte [Consulta de muestra: todas las aventuras en las que la `_path` comienza con un prefijo específico](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
+
       * `_apply`: para aplicar condiciones específicas; por ejemplo, `AT_LEAST_ONCE`
          * Consulte [Consulta de muestra: filtre en una matriz con un elemento que deba producirse al menos una vez](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
+
       * `_ignoreCase`: para ignorar el caso al consultar
          * Consulte [Consulta de muestra: todas las ciudades con SAN en el nombre, sin importar las mayúsculas](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
 
 * Se admiten los tipos de unión de GraphQL:
 
@@ -1050,4 +1045,4 @@ En adelante, AEM tiene previsto invertir en la API de GraphQL de AEM”.*
 
 ## Tutorial: Introducción a AEM Headless y GraphQL {#tutorial}
 
-¿Busca un tutorial práctico? Consulte el tutorial completo [Introducción a AEM Headless y GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es), que ilustra cómo crear y exponer contenido mediante las API de GraphQL de AEM y consumido por una aplicación externa, en un escenario de CMS sin encabezado.
+¿Busca un tutorial práctico? Desproteger [AEM Introducción a las soluciones sin encabezado y de GraphQL de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) AEM Tutorial completo que ilustra cómo crear y exponer contenido mediante las API de GraphQL de la interfaz de usuario de, y consumido por una aplicación externa, en un escenario de CMS sin encabezado.

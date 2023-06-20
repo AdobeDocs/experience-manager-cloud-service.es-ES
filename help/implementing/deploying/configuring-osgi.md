@@ -3,9 +3,9 @@ title: Configurar OSGi para Adobe Experience Manager as a Cloud Service
 description: Configuración de OSGi con valores secretos y valores específicos del entorno
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3318'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ AEM Por ejemplo, si está utilizando los modos de ejecución author y dev, los n
 
 Si se aplican varias configuraciones para el mismo PID, se aplica la configuración con el número más alto de modos de ejecución coincidentes.
 
-La granularidad de esta regla es de nivel PID. Esto significa que no se pueden definir algunas propiedades para el mismo PID en `/apps/example/config.author/` y más específicos en `/apps/example/config.author.dev/` para el mismo PID. La configuración con el mayor número de modos de ejecución coincidentes será efectiva para todo el PID.
+La granularidad de esta regla es de nivel PID. Esto significa que no se pueden definir algunas propiedades para el mismo PID en `/apps/example/config.author/` y más específicos en `/apps/example/config.author.dev/` para el mismo PID. La configuración con el mayor número de modos de ejecución coincidentes es efectiva para todo el PID.
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ AEM AEM La consola web del Jar de inicio rápido de SDK de la se puede utilizar 
 
 >[!NOTE]
 >
->AEM La interfaz de usuario de configuración de la consola web de sí escribe `.cfg.json` archivos en el repositorio. AEM Por lo tanto, tenga en cuenta esto para evitar un posible comportamiento inesperado durante el desarrollo local, cuando las configuraciones OSGi definidas por el proyecto de la aplicación de manera predeterminada pueden diferir de las configuraciones generadas.
+>AEM La interfaz de usuario de configuración de la consola web de sí escribe `.cfg.json` archivos en el repositorio. AEM Por lo tanto, tenga en cuenta este flujo de trabajo para evitar posibles comportamientos inesperados durante el desarrollo local, cuando las configuraciones de OSGi definidas por el proyecto pueden diferir de las configuraciones generadas.
 
 1. AEM AEM Inicie sesión en la consola web de inicio rápido de Jar de la aplicación de inicio de sesión de la aplicación de en `https://<host>:<port>/system/console` como usuario administrador
 1. Vaya a **OSGi** > **Configuración**
@@ -480,7 +480,7 @@ Consulte [esta página](https://developer.adobe.com/experience-cloud/cloud-manag
 
 ### Configuración de valores mediante API {#setting-values-via-api}
 
-Al llamar a la API, se implementan las nuevas variables y los nuevos valores en un entorno de nube, de forma similar a una canalización de implementación de código de cliente típica. Los servicios de autor y publicación se reiniciarán y harán referencia a los nuevos valores, por lo general, en unos minutos.
+Al llamar a la API, se implementan las nuevas variables y los nuevos valores en un entorno de nube, de forma similar a una canalización de implementación de código de cliente típica. Los servicios de autor y publicación se reinician y hacen referencia a los nuevos valores, lo que generalmente tarda unos minutos.
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -558,7 +558,7 @@ Se pueden declarar hasta 200 variables por entorno.
 
 Dado que los valores de configuración secretos y específicos del entorno viven fuera de Git y, por lo tanto, no forman parte de los mecanismos de implementación formales de Adobe Experience Manager as a Cloud Service, el cliente debe administrar, gobernar e integrar en el proceso de implementación de Adobe Experience Manager as a Cloud Service.
 
-Como se ha mencionado anteriormente, llamar a la API implementa las nuevas variables y valores en entornos en la nube, de forma similar a una canalización de implementación de código de cliente típica. Los servicios de autor y publicación se reiniciarán y harán referencia a los nuevos valores, por lo general, en unos minutos. Tenga en cuenta que las puertas de calidad y las pruebas que ejecuta Cloud Manager durante una implementación de código normal no se realizan durante este proceso.
+Como se ha mencionado anteriormente, llamar a la API implementa las nuevas variables y valores en entornos en la nube, de forma similar a una canalización de implementación de código de cliente típica. Los servicios de autor y publicación se reinician y hacen referencia a los nuevos valores, lo que generalmente tarda unos minutos. Tenga en cuenta que las puertas de calidad y las pruebas que ejecuta Cloud Manager durante una implementación de código normal no se realizan durante este proceso.
 
 Normalmente, los clientes llamarían a la API para establecer variables de entorno antes de implementar el código que se basa en ellas en Cloud Manager. En algunas situaciones, es posible que se desee modificar una variable existente después de haber implementado el código.
 

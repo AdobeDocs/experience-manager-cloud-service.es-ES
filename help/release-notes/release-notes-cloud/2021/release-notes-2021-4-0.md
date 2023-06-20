@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.4.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.4.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: a2c844d6f72c22ed085690ff98572a52e97de40d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 48%
+source-wordcount: '1533'
+ht-degree: 42%
 
 ---
 
@@ -41,7 +41,7 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 * Modelos de contenido, tipo de datos Etiquetas mejorado: Ahora es posible configurar el tipo de datos Etiquetas para permitir la creación de etiquetas únicas o múltiples.
 
-* Modelos de contenido, nuevo tipo de datos Marcador de pestaña: El nuevo tipo de datos Marcador de pestaña permite agrupar tipos de datos en secciones que se procesarán con pestañas en el editor de fragmentos de contenido.
+* Modelos de contenido, nuevo tipo de datos Marcador de pestaña: El nuevo tipo de datos Marcador de pestaña permite agrupar tipos de datos en secciones que se representan con pestañas en el editor de fragmentos de contenido.
 
 ### Correcciones de errores en [!DNL Sites] {#bug-fixes-sites}
 
@@ -67,7 +67,7 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 * Al editar un esquema de metadatos, se añade un tipo de datos que proporciona un área de texto de forma libre en el editor de metadatos. Los usuarios pueden utilizar esta área de texto para introducir texto de forma libre como metadatos de un recurso. Consulte [editor de esquemas de metadatos](/help/assets/metadata-schemas.md).
 
-* Los metadatos de muchos recursos se pueden importar de forma masiva mediante un archivo CSV y se pueden exportar a un CSV también. El formato de fecha predeterminado es ahora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Los usuarios pueden aprovechar un formato diferente actualizando el encabezado de la columna. Por ejemplo, añada `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como encabezado de columna en el archivo CSV en lugar de la palabra `Date`.
+* Los metadatos de muchos recursos se pueden importar de forma masiva mediante un archivo CSV y se pueden exportar a un CSV también. El formato de fecha predeterminado es ahora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Los usuarios pueden utilizar un formato diferente actualizando el encabezado de la columna. Por ejemplo, añada `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como encabezado de columna en el archivo CSV en lugar de la palabra `Date`.
 
 * Al examinar los recursos en la vista Columna, un indicador visual muestra el estado aprobado o rechazado de cada uno.
 
@@ -95,25 +95,25 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 * **Utilizar el método de autenticación de Id. de gobierno en los formularios adaptables habilitados para Adobe Sign**
 
-   Con la tecnología de algoritmos avanzados de aprendizaje automático, el proceso de Id. de gobierno de Adobe Sign ofrece a las empresas de todo el mundo la capacidad de garantizar una autenticación de alta calidad de la identidad de sus destinatarios. Ahora puede utilizar el método de autenticación de identidad de Id. de gobierno en los formularios adaptativos habilitados para Adobe Sign.
+  Con la tecnología de algoritmos avanzados de aprendizaje automático, el proceso de identificación oficial de Adobe Sign ofrece a las empresas de todo el mundo la capacidad de garantizar una autenticación de alta calidad de la identidad de sus destinatarios. Ahora puede utilizar el método de autenticación de identidad de Id. de gobierno en los formularios adaptativos habilitados para Adobe Sign.
 
-   La Id. de gobierno es un método de autenticación de identidad premium que indica al destinatario cómo [cargar la imagen de un documento de identidad emitido por el gobierno (licencia de conducir, identificación nacional, pasaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) y luego evalúa ese documento para asegurarse de que es auténtico.
+  El Id. de gobierno es un método de autenticación de identidad premium que indica al destinatario que [cargar la imagen de un documento de identidad emitido por el gobierno (licencia de conducir, identificación nacional, pasaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)y, a continuación, evalúa ese documento para asegurarse de que es auténtico.
 
 * **Compatibilidad para utilizar la experiencia de firma en formularios para envíos asincrónicos de formularios adaptables**
 
-   Ahora puede utilizar la experiencia de firma en formularios para los envíos asincrónicos de formularios adaptables. También puede incrustar un formulario adaptable en una página [!DNL Experience Manager Sites] y utilizar la experiencia de firma en formularios para los envíos de formularios adaptables.
+  Ahora puede utilizar la experiencia de firma en formularios para los envíos asincrónicos de formularios adaptables. También puede incrustar un formulario adaptable en una página [!DNL Experience Manager Sites] y utilizar la experiencia de firma en formularios para los envíos de formularios adaptables.
 
 * **Compatibilidad para utilizar una variable para especificar un archivo adjunto mientras se rellena previamente un formulario adaptable para un paso Asignar tarea**
 
-   Al rellenar previamente un formulario adaptable para un paso Asignar tarea, ahora puede utilizar una variable del tipo de documento para seleccionar un archivo adjunto de entrada para el formulario adaptable.
+  Al rellenar previamente un formulario adaptable para un paso Asignar tarea, ahora puede utilizar una variable del tipo de documento para seleccionar un archivo adjunto de entrada para el formulario adaptable.
 
 * **Compatibilidad con el uso de la opción literal para establecer el valor de una variable de tipo JSON**
 
-   Puede utilizar la opción literal para establecer el valor de una variable del tipo JSON en el paso establecer variable de un flujo de trabajo de AEM. La opción literal le permite especificar un JSON en forma de cadena.
+  Puede utilizar la opción literal para establecer el valor de una variable del tipo JSON en el paso establecer variable de un flujo de trabajo de AEM. La opción literal le permite especificar un JSON en forma de cadena.
 
 * **Utilizar el entorno de desarrollo local para crear el documento de registro (DoR)**
 
-   Puede utilizar un XDP como plantilla del documento de registro en instancias de Cloud Service y el SDK (entorno de desarrollo local) de AEM Forms as a Cloud Service. Anteriormente, la compatibilidad se limitaba únicamente a instancias de Cloud Service.
+  Puede utilizar un XDP como plantilla del documento de registro en instancias de Cloud Service y el SDK (entorno de desarrollo local) de AEM Forms as a Cloud Service. Anteriormente, la compatibilidad se limitaba únicamente a instancias de Cloud Service.
 
 ### Correcciones de errores en [!DNL Forms] {#bug-fixes-forms}
 
@@ -165,7 +165,7 @@ La próxima versión está planificada para el 6 de mayo de 2021.
 
 * Los proyectos de la consola de desarrollador de Adobe I/O creados por Cloud Manager ya no se pueden editar ni eliminar de manera involuntaria.
 
-* Cuando un usuario agrega un entorno nuevo, se les informará de que una vez que se haya creado un entorno, no se podrá mover a otra región.
+* Cuando un usuario añade un entorno nuevo, se le informa de que después de crearlo no se puede mover a otra región.
 
 * Ahora, las variables de entorno se pueden vincular a un servicio específico, ya sea de autor o de publicación. Requiere la versión de AEM 2021.03.5104.20210328T185548Z o superior.
 

@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2308'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Conocimiento de CSS y del marco de trabajo LESS.
 
 ## Qué se puede personalizar {#what-can-be-customized}
 
-El artículo enumera las clases de css disponibles públicamente de los formularios adaptables. Puede aprovechar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como los cuadros de diálogo y las barras de estado que muestran advertencias, excede el ámbito de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Less) solo cuando no pueda aplicar estilo a los componentes con el [editor de temas](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/themes.html).
+El artículo enumera las clases de css disponibles públicamente de los formularios adaptables. Puede utilizar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como los cuadros de diálogo y las barras de estado que muestran advertencias, excede el ámbito de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Less) solo cuando no pueda aplicar estilo a los componentes con el [editor de temas](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalizar estilos en formularios adaptables {#customizing-styles-in-adaptive-forms}
 

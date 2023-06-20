@@ -4,10 +4,10 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: Los metadatos facilitan la categorización y organización de los recursos y ayudan a los usuarios que buscan un recurso específico.
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 100%
+source-wordcount: '1658'
+ht-degree: 96%
 
 ---
 
@@ -178,9 +178,9 @@ Los recursos tienen valores de propiedad existentes, que se pueden ver en modo d
 
    * Haga clic en el icono **[!UICONTROL Propiedades]** ![Propiedades](assets/Smock_Info_18_N.svg) en Acciones rápidas.
 
-      >[!NOTE]
-      >
-      >Las Acciones rápidas son los elementos de acción que se muestran sobre una miniatura al pasar el ratón por encima.
+     >[!NOTE]
+     >
+     >Las Acciones rápidas son los elementos de acción que se muestran sobre una miniatura al pasar el ratón por encima.
 
    * Seleccione el formulario y haga clic en el icono **[!UICONTROL Propiedades]** ![Propiedades](assets/Smock_Info_18_N.svg) que aparece en la barra de herramientas.
    * Vaya a la página de detalles del formulario haciendo clic en la miniatura del formulario cuando no esté en el modo de selección. A continuación, haga clic en el icono del ojo ![Propiedades](assets/Smock_Info_18_N.svg) en la parte superior derecha y, luego, haga clic en Propiedades en la lista debajo.
@@ -234,7 +234,6 @@ Para los formularios adaptables, se ofrece una funcionalidad adicional, que perm
 >* Una vez que se carga o genera una nueva imagen, la miniatura se reemplaza por esta imagen y no se puede restablecer a la imagen anterior.
 >
 
-
 ## Añadir metadatos personalizados {#add-custom-metadata}
 
 Aparte de los metadatos predeterminados, [!DNL AEM Forms] es compatible con nuevos metadatos personalizados.
@@ -284,12 +283,12 @@ Se ofrece una herramienta (Editor de esquemas de metadatos) para definir el esqu
 
 1. Haga clic en un componente que acabe de arrastrar. En la pestaña Configuración que se abre en el panel derecho, rellene los campos siguientes:
 
-   1. Especifique una etiqueta de campo que se utilizará como nombre para mostrar encima del campo colocado en el esquema (por ejemplo: Departamento)
-   1. En el campo Asignar a propiedad, puede ver un valor rellenado previamente **&#39;./jcr:content/metadata/default&#39;**. Cambie “**default**” a un nombre de propiedad deseado, que se utiliza para almacenar la propiedad en el repositorio crx (por ejemplo: &#39;./jcr:content/metadata/department&#39;)
+   1. Especifique una Etiqueta de campo para utilizarla como nombre para mostrar encima del campo colocado en el esquema (por ejemplo: Departamento)
+   1. En el campo Asignar a propiedad, puede ver un valor rellenado previamente **&#39;./jcr:content/metadata/default&#39;**. Cambie el &#39;**predeterminado**&#39; a un nombre de propiedad deseado, que se utiliza para almacenar la propiedad en el repositorio crx (por ejemplo: &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >No cambie el prefijo ‘./jcr:content/metadata/’, ya que define la ruta en la que se almacena la propiedad.
+      >No cambie el prefijo &#39;./jcr:content/metadata/&#39;, ya que define la ruta donde se almacena la propiedad.
       >
       >Además, el nombre de la propiedad debe ser único para evitar escribir valores para dos o más propiedades en la misma ubicación del repositorio. Por lo tanto, se recomienda cambiar el valor “default”.
 

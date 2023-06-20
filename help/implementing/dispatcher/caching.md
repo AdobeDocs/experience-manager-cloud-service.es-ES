@@ -3,9 +3,9 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: Almacenamiento en caché en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2819'
 ht-degree: 2%
 
 ---
@@ -33,56 +33,56 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
 * se puede sobrescribir para todo el contenido de HTML/texto definiendo la variable `EXPIRATION_TIME` variable en `global.vars` AEM uso de las herramientas de Dispatcher del SDK as a Cloud Service de.
 * puede anularse en un nivel más preciso, incluido el control independiente de la CDN y la caché del explorador, con el siguiente Apache `mod_headers` directivas:
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header set Cache-Control "max-age=200"
-        Header set Surrogate-Control "max-age=3600"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header set Cache-Control "max-age=200"
+       Header set Surrogate-Control "max-age=3600"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   >[!NOTE]
-   >El encabezado Surrogate-Control se aplica a la CDN administrada por Adobe. Si se usa un [CDN administrado por el cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), es posible que se requiera un encabezado diferente según el proveedor de CDN.
+  >[!NOTE]
+  >El encabezado Surrogate-Control se aplica a la CDN administrada por Adobe. Si se usa un [CDN administrado por el cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), es posible que se requiera un encabezado diferente según el proveedor de CDN.
 
-   Tenga cuidado al configurar los encabezados de control de caché global o los que coinciden con una regex amplia, de modo que no se apliquen al contenido que necesita mantener privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se aplican de manera precisa. AEM Dicho esto, el encabezado de caché se eliminará de manera as a Cloud Service si detecta que Dispatcher lo ha aplicado a lo que detecta que Dispatcher no puede almacenar en caché, tal como se describe en la documentación de Dispatcher. AEM Para obligar a los usuarios a aplicar siempre los encabezados de almacenamiento en caché, se puede añadir la variable **siempre** como se indica a continuación:
+  Tenga cuidado al configurar los encabezados de control de caché global o los que coinciden con una regex amplia, de modo que no se apliquen al contenido que necesita mantener privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se aplican de manera precisa. AEM Dicho esto, el encabezado de caché se eliminará de manera as a Cloud Service si detecta que Dispatcher lo ha aplicado a lo que detecta que Dispatcher no puede almacenar en caché, tal como se describe en la documentación de Dispatcher. AEM Para obligar a los usuarios a aplicar siempre los encabezados de almacenamiento en caché, se puede añadir la variable **siempre** como se indica a continuación:
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header unset Cache-Control
-        Header unset Expires
-        Header always set Cache-Control "max-age=200"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header unset Cache-Control
+       Header unset Expires
+       Header always set Cache-Control "max-age=200"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   Debe asegurarse de que un archivo en `src/conf.dispatcher.d/cache` tiene la siguiente regla (que está en la configuración predeterminada):
+  Debe asegurarse de que un archivo en `src/conf.dispatcher.d/cache` tiene la siguiente regla (que está en la configuración predeterminada):
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+  ```
+  /0000
+  { /glob "*" /type "allow" }
+  ```
 
 * Para evitar que el contenido específico se almacene en caché **en la CDN**, establezca el encabezado Cache-Control en *privado*. Por ejemplo, lo siguiente impediría el contenido html en un directorio llamado **secure** de la caché en la CDN:
 
-   ```
-      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
-      Header unset Cache-Control
-      Header unset Expires
-      Header always set Cache-Control "private"
-     </LocationMatch>
-   ```
+  ```
+     <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+     Header unset Cache-Control
+     Header unset Expires
+     Header always set Cache-Control "private"
+    </LocationMatch>
+  ```
 
 * Aunque el contenido del HTML establecido en privado no se almacenará en caché en la CDN, se puede almacenar en caché en el despachante si [Almacenamiento en caché con permisos confidenciales](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es) , asegurándose de que solo los usuarios autorizados puedan recibir el contenido.
 
-   >[!NOTE]
-   >Los demás métodos, incluido el [AEM dispatcher-ttl proyecto de ACS Commons en el que se](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anulará correctamente los valores.
+  >[!NOTE]
+  >Los demás métodos, incluido el [AEM dispatcher-ttl proyecto de ACS Commons en el que se](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anulará correctamente los valores.
 
-   >[!NOTE]
-   >Tenga en cuenta que Dispatcher podría seguir almacenando en caché el contenido según su propio código [reglas de almacenamiento en caché](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=es). Para que el contenido sea verdaderamente privado, debe asegurarse de que Dispatcher no lo almacene en caché.
+  >[!NOTE]
+  >Tenga en cuenta que Dispatcher podría seguir almacenando en caché el contenido según su propio código [reglas de almacenamiento en caché](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=es). Para que el contenido sea verdaderamente privado, debe asegurarse de que Dispatcher no lo almacene en caché.
 
 ### Bibliotecas del lado cliente (js,css) {#client-side-libraries}
 
-* AEM Al utilizar el marco de trabajo de biblioteca del lado del cliente de, el código JavaScript y CSS se genera de tal manera que los exploradores pueden almacenarlo en caché indefinidamente, ya que cualquier cambio se manifiesta como nuevos archivos con una ruta única.  Es decir, el HTML que haga referencia a las bibliotecas del cliente se creará según sea necesario para que los clientes puedan experimentar el nuevo contenido a medida que se publique. El control de caché se establece en &quot;inmutable&quot; o 30 días para exploradores más antiguos que no respetan el valor &quot;inmutable&quot;.
+* AEM Al utilizar el marco de trabajo de biblioteca del lado del cliente de, el código JavaScript y CSS se genera de tal manera que los exploradores pueden almacenarlo en caché indefinidamente, ya que cualquier cambio se manifiesta como nuevos archivos con una ruta única.  En otras palabras, los HTML que hacen referencia a las bibliotecas de cliente se generan según sea necesario para que los clientes puedan experimentar el nuevo contenido a medida que se publica. El control de caché se establece en &quot;inmutable&quot; o 30 días para exploradores más antiguos que no respetan el valor &quot;inmutable&quot;.
 * consulte la sección [Bibliotecas del lado del cliente y coherencia de versiones](#content-consistency) para obtener más información.
 
 ### Las imágenes y cualquier contenido lo suficientemente grande como para almacenarse en el almacenamiento de blobs {#images}
@@ -102,7 +102,7 @@ Al modificar los encabezados de almacenamiento en caché en la capa de Dispatche
 
 #### Nuevo comportamiento de almacenamiento en caché predeterminado {#new-caching-behavior}
 
-AEM La capa de datos establecerá encabezados de caché en función de si el encabezado de caché ya se ha establecido y el valor del tipo de solicitud. Tenga en cuenta que si no se ha establecido ningún encabezado de control de caché, el contenido público se almacena en caché y el tráfico autenticado se establece en privado. Si se ha establecido un encabezado de control de caché, los encabezados de caché no se tocarán.
+AEM La capa de datos establecerá encabezados de caché en función de si el encabezado de caché ya se ha establecido y el valor del tipo de solicitud. Tenga en cuenta que si no se ha establecido ningún encabezado de control de caché, el contenido público se almacena en caché y el tráfico autenticado se establece en privado. Si se ha establecido un encabezado de control de caché, los encabezados de caché no se tocan.
 
 | ¿Existe el encabezado de control de caché? | Tipo de solicitud | AEM establece encabezados de caché en |
 |------------------------------|---------------|------------------------------------------------|
@@ -142,64 +142,64 @@ En este momento, las imágenes en el almacenamiento del blob marcadas como priva
 
    * Almacenar en caché recursos de biblioteca de cliente mutables durante 12 horas y actualizar en segundo plano después de 12 horas.
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * Almacene en caché los recursos de la biblioteca de cliente inmutables a largo plazo (30 días) con actualización en segundo plano para evitar errores.
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * Almacene en caché las páginas del HTML durante 5 minutos con una actualización en segundo plano en el navegador durante 1 hora y en CDN durante 12 horas. Los encabezados Cache-Control siempre se añadirán, por lo que es importante asegurarse de que las páginas HTML coincidentes en /content/* están pensadas para ser públicas. Si no es así, considere la posibilidad de utilizar una regex más específica.
 
-      ```
-      <LocationMatch "^/content/.*\.html$">
-         Header unset Cache-Control
-         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.html$">
+        Header unset Cache-Control
+        Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * Almacene en caché las respuestas json del exportador de servicios de contenido/modelos Sling durante 5 minutos con una actualización en segundo plano 1 h en el explorador y 12 h en CDN.
 
-      ```
-      <LocationMatch "^/content/.*\.model\.json$">
-         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.model\.json$">
+        Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * Almacene en caché las URL inmutables del componente de imagen principal a largo plazo (30 días) con una actualización en segundo plano para evitar errores.
 
-      ```
-      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * Almacene en caché recursos mutables de DAM, como imágenes y vídeo, durante 24 horas y actualizaciones en segundo plano después de 12 horas para evitar errores
 
-      ```
-      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
 ### comportamiento de solicitud del HEAD {#request-behavior}
 
-Cuando se recibe una solicitud de HEAD en la CDN de Adobe para un recurso que **no** AEM en caché, la solicitud se transforma y recibe en Dispatcher o en la instancia de como una solicitud de GET. Si la respuesta se puede almacenar en caché, las solicitudes de HEAD posteriores se atenderán desde la CDN. Si la respuesta no se puede almacenar en caché, las solicitudes de HEAD AEM posteriores se pasarán a la instancia de Dispatcher o a la instancia de durante un período de tiempo que depende de la variable `Cache-Control` TTL.
+Cuando se recibe una solicitud de HEAD en la CDN de Adobe para un recurso que **no** AEM en caché, la solicitud se transforma y recibe en Dispatcher o en la instancia de como una solicitud de GET. Si la respuesta se puede almacenar en caché, las solicitudes de HEAD posteriores se proporcionan desde la CDN. Si la respuesta no se puede almacenar en caché, las solicitudes de HEAD AEM posteriores se pasan a Dispatcher, a la instancia de o a ambas durante un período de tiempo que depende de la variable `Cache-Control` TTL.
 
 ### Parámetros de campaña de marketing {#marketing-parameters}
 
@@ -454,11 +454,11 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## Bibliotecas del lado del cliente y coherencia de versiones {#content-consistency}
 
-Las páginas están compuestas por HTML, JavaScript, CSS e imágenes. Se recomienda a los clientes que aprovechen las [Marco de bibliotecas del lado del cliente (clientlibs)](/help/implementing/developing/introduction/clientlibs.md) para importar recursos Javascript y CSS en páginas de HTML, teniendo en cuenta las dependencias entre bibliotecas JS.
+Las páginas están compuestas por HTML, JavaScript, CSS e imágenes. Se recomienda a los clientes que utilicen [Marco de bibliotecas del lado del cliente (clientlibs)](/help/implementing/developing/introduction/clientlibs.md) para importar recursos Javascript y CSS en páginas de HTML, teniendo en cuenta las dependencias entre bibliotecas JS.
 
-El marco clientlibs proporciona administración automática de versiones, lo que significa que los desarrolladores pueden proteger los cambios en las bibliotecas JS en el control de código fuente y la última versión estará disponible cuando un cliente inserte su versión. Sin esto, los desarrolladores tendrían que cambiar manualmente HTML con referencias a la nueva versión de la biblioteca, lo que resulta especialmente oneroso si muchas plantillas de HTML comparten la misma biblioteca.
+El marco clientlibs proporciona administración automática de versiones, lo que significa que los desarrolladores pueden proteger los cambios en las bibliotecas JS en el control de código fuente y la última versión está disponible cuando un cliente inserta su versión. Sin esto, los desarrolladores tendrían que cambiar manualmente HTML con referencias a la nueva versión de la biblioteca, lo que resulta especialmente oneroso si muchas plantillas de HTML comparten la misma biblioteca.
 
-Cuando se publican las nuevas versiones de las bibliotecas de en producción, las páginas del HTML de referencia se actualizan con nuevos vínculos a esas versiones de la biblioteca actualizadas. Una vez que la caché del explorador ha caducado para una página de HTML AEM determinada, no hay problema con que las bibliotecas antiguas se carguen desde la caché del explorador, ya que ahora se garantiza que la página actualizada (desde la que se actualizó la biblioteca) hace referencia a las nuevas versiones de las bibliotecas. En otras palabras, una página de HTML actualizada incluirá todas las versiones de la biblioteca más recientes.
+Cuando se publican las nuevas versiones de las bibliotecas de en producción, las páginas del HTML de referencia se actualizan con nuevos vínculos a esas versiones de la biblioteca actualizadas. Una vez que la caché del explorador caduca para una página de HTML AEM determinada, no hay problema con que las bibliotecas antiguas se carguen desde la caché del explorador, ya que ahora se garantiza que la página actualizada (desde la que se actualizó la biblioteca) hace referencia a las nuevas versiones de las bibliotecas. En otras palabras, una página de HTML actualizada incluirá todas las versiones de la biblioteca más recientes.
 
 El mecanismo para esto es un hash serializado, que se anexa al vínculo de biblioteca del cliente, lo que garantiza una URL única con versiones para que el explorador almacene en caché el CSS/JS. El hash serializado solo se actualiza cuando cambia el contenido de la biblioteca de cliente. Esto significa que si se producen actualizaciones no relacionadas (es decir, no se producen cambios en el css/js subyacente de la biblioteca del cliente) incluso con una nueva implementación, la referencia sigue siendo la misma, lo que garantiza menos interrupciones en la caché del explorador.
 
@@ -485,4 +485,4 @@ Para habilitar las versiones clientlib estrictas en el Quickstart de SDK local, 
    * Marque la casilla de verificación para habilitar las versiones estrictas.
    * En el campo denominado Long term client side cache key, introduzca el valor de /.*;hash
 1. Guarde los cambios. AEM No es necesario guardar esta configuración en el control de código fuente, ya que la configuración as a Cloud Service de la habilita automáticamente en los entornos de desarrollo, fase y producción.
-1. Cada vez que se cambia el contenido de la biblioteca del cliente, se genera una nueva clave hash y se actualiza la referencia del HTML.
+1. Cada vez que se cambia el contenido de la biblioteca de cliente, se genera una nueva clave hash y se actualiza la referencia del HTML.

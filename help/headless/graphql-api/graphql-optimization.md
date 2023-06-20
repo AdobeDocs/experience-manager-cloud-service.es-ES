@@ -2,10 +2,10 @@
 title: Optimización de consultas de GraphQL
 description: Aprenda a optimizar las consultas de GraphQL al filtrar, paginar y ordenar los fragmentos de contenido en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 100%
+source-wordcount: '1193'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Aplica un filtro de JCR (en forma de restricción de consulta) antes de cargar e
 
 >[!NOTE]
 >
->Por motivos técnicos (p. ej., flexibilidad, anidación de fragmentos), AEM no puede delegar todo el filtrado a JCR.
+>AEM Por motivos técnicos (por ejemplo, flexibilidad, anidación de fragmentos), no se puede delegar todo el filtrado a JCR.
 
 Esta técnica mantiene la flexibilidad que proporcionan los filtros de GraphQL, al tiempo que delega la mayor parte posible del filtrado a JCR.
 
@@ -49,21 +49,20 @@ Esta técnica mantiene la flexibilidad que proporcionan los filtros de GraphQL, 
 GraphQL en AEM ofrece compatibilidad con dos tipos de paginación:
 
 * [paginación basada en límite/desplazamiento](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-Se utiliza para consultas de lista; terminan con 
-`List`; por ejemplo, `articleList`.
+Se utiliza para consultas de lista; terminan con `List`; por ejemplo, `articleList`.
 Para utilizarlo, debe proporcionar la posición del primer elemento que se va a devolver (la variable `offset`) y el número de elementos que se van a devolver (la variable `limit`, o tamaño de página).
 
 * [paginación basada en cursor](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (representada por `first`y `after`)
 Proporciona un ID único para cada elemento, también conocido como cursor.
 En la consulta, se especifica el cursor del último elemento de la página anterior, además del tamaño de página (el número máximo de elementos que se van a devolver).
 
-   Como la paginación basada en cursor no se ajusta a las estructuras de datos de las consultas basadas en listas, AEM ha introducido el tipo de consulta `Paginated`; por ejemplo, `articlePaginated`. Las estructuras de datos y los parámetros utilizados siguen la [Especificación de conexión del cursor de GraphQL](https://relay.dev/graphql/connections.htm).
+  Como la paginación basada en cursor no se ajusta a las estructuras de datos de las consultas basadas en listas, AEM ha introducido el tipo de consulta `Paginated`; por ejemplo, `articlePaginated`. Las estructuras de datos y los parámetros utilizados siguen la [Especificación de conexión del cursor de GraphQL](https://relay.dev/graphql/connections.htm).
 
-   >[!NOTE]
-   >
-   >Actualmente, AEM admite la paginación de reenvío (utilizando los parámetros `after`/`first`).
-   >
-   >La paginación hacia atrás (utilizando los parámetros `before`/`last`) no es compatible.
+  >[!NOTE]
+  >
+  >Actualmente, AEM admite la paginación de reenvío (utilizando los parámetros `after`/`first`).
+  >
+  >La paginación hacia atrás (utilizando los parámetros `before`/`last`) no es compatible.
 
 ## Ordenación {#sorting}
 
@@ -130,7 +129,7 @@ Si le interesa principalmente recuperar solo las primeras páginas, no hay ningu
 
 ### Operaciones lógicas en expresiones de filtro {#logical-operations-in-filter-expressions}
 
-Si está filtrando en fragmentos anidados, aún puede aprovechar el filtrado JCR proporcionando un filtro complementario en un campo de nivel superior que se combina con el operador `AND`.
+Si está filtrando por fragmentos anidados, aún puede aplicar el filtrado JCR proporcionando un filtro complementario en un campo de nivel superior que se combina con `AND` operador.
 
 Un caso de uso típico sería restringir el alcance de la consulta utilizando un filtro en el campo `_path` del fragmento de nivel superior y, a continuación, filtrar en campos adicionales que podrían estar en el nivel superior o en un fragmento anidado.
 

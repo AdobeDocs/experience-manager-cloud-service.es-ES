@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 16%
@@ -140,9 +140,9 @@ Para diseñar un flujo de trabajo eficiente entre los equipos creativos y de mar
 
 ### Por qué se almacenan los recursos en DAM {#why-assets-are-stored-in-dam}
 
-El almacenamiento de recursos en DAM los hace fácilmente accesibles y localizables. Garantiza que numerosos usuarios de la organización o el ecosistema puedan aprovechar los recursos, lo que incluye socios, clientes, etc.
+El almacenamiento de recursos en DAM los hace fácilmente accesibles y localizables. Garantiza que numerosos usuarios de toda la organización o el ecosistema puedan utilizar los recursos, lo que incluye socios, clientes, etc.
 
-La mayoría de las organizaciones eligen almacenar únicamente los recursos relevantes para los procesos de marketing descendente/LOB (publicación en canales como el canal web a través de Experience Manager Sites u otros canales ofrecidos por Adobe Experience Cloud: Marketing Cloud, Advertising Cloud y medidos por Analytics Cloud, que proporciona a usuarios/socios, etc.). Además, las organizaciones almacenan recursos que pueden estar sujetos a un proceso de revisión/aprobación en DAM. De este modo, DAM almacena principalmente activos que tienen altas probabilidades de ser aprovechados, y evita almacenar activos inactivos.
+La mayoría de las organizaciones eligen almacenar únicamente los recursos relevantes para los procesos de marketing descendente/LOB (publicación en canales como el canal web a través de Experience Manager Sites u otros canales ofrecidos por Adobe Experience Cloud: Marketing Cloud, Advertising Cloud y medidos por Analytics Cloud, que proporciona a usuarios/socios, etc.). Además, las organizaciones almacenan recursos que pueden estar sujetos a un proceso de revisión/aprobación en DAM. De este modo, DAM almacena principalmente recursos que tienen altas probabilidades de utilizarse y evita almacenar recursos inactivos.
 
 El almacenamiento de recursos también está sujeto a consideraciones técnicas y de utilización de recursos. DAM proporciona servicios adicionales relacionados con los recursos almacenados, como la extracción de metadatos, el control de versiones, la generación de previsualizaciones/transcodificación, la administración de referencias y la adición de información de control de acceso. Estos servicios consumen tiempo y recursos de infraestructura adicionales.
 
@@ -222,7 +222,7 @@ Es posible que deba cargar simultáneamente un número mayor de archivos en DAM 
 
 Tenga en cuenta que esta descripción hace referencia a la carga de archivos operacionalmente (por ejemplo, cada semana o con cada sesión de fotos ), como parte normal del flujo de trabajo del usuario de escritorio. Las migraciones de recursos grandes no están cubiertas aquí.
 
-Puede aprovechar las siguientes capacidades de carga:
+Puede utilizar las siguientes capacidades de carga:
 
 * Para cargar carpetas grandes/jerárquicas de forma masiva, utilice la aplicación de escritorio de Experience Manager que proporciona [carga de carpeta](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets) funcionalidad. También puede cargar estructuras de carpetas jerárquicas. Los recursos se cargan en segundo plano y, por lo tanto, no están vinculados a una sesión del explorador web
 * Para cargar algunos archivos desde una sola carpeta, arrástrelos directamente a la interfaz web o utilice la opción Crear de la interfaz web de Experience Manager Assets.
@@ -237,11 +237,11 @@ Evite utilizar la aplicación de escritorio de Experience Manager para administr
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)

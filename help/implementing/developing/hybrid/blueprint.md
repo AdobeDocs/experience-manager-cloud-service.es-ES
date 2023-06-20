@@ -1,10 +1,10 @@
 ---
 title: Modelo SPA
-description: SPA SPA AEM En este documento se describe el contrato general independiente del marco que cualquier marco de trabajo de la debe cumplir para implementar componentes de la estructura editables dentro de los componentes de la.
+description: SPA SPA AEM En este documento se describe el contrato general independiente del marco de trabajo que cualquier marco de trabajo de debe cumplir para que pueda implementar componentes de la estructura editables dentro de los componentes de la.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2056'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ AEM SPA SPA SPA Para permitir que el autor use el Editor de de trabajo para edit
 
 ## Introducción {#introduction}
 
-SPA AEM SPA AEM En este documento se describe el contrato general que cualquier marco de trabajo debe cumplir (es decir, el tipo de capa de soporte de la) para implementar componentes de la editables dentro de la plataforma de trabajo.
+SPA AEM SPA AEM En este documento se describe el contrato general que cualquier marco de trabajo debe cumplir (es decir, el tipo de capa de soporte de la) para que pueda implementar componentes editables de la dentro de los elementos de trabajo.
 
 AEM AEM Para permitir que el autor utilice el Editor de páginas de la página de la aplicación para editar los datos expuestos por un marco de trabajo de aplicación de una sola página, un proyecto debe poder interpretar la estructura del modelo que representa la semántica de los datos almacenados para una aplicación dentro del repositorio de la aplicación de la aplicación. Para lograr este objetivo, se proporcionan dos bibliotecas no basadas en marcos: la `PageModelManager` y el `ComponentMapping`.
 
@@ -67,7 +67,7 @@ SPA Los componentes de la página deben estar sincronizados con el modelo de pá
 
 ### Metadatos de campos {#meta-fields}
 
-El modelo de página aprovecha el exportador de modelos JSON, que a su vez se basa en la variable [Modelo Sling](https://sling.apache.org/documentation/bundles/models.html) API. Los modelos de sling exportables exponen la siguiente lista de campos para permitir que las bibliotecas subyacentes interpreten el modelo de datos:
+El modelo de página utiliza el exportador de modelos JSON, que a su vez se basa en la variable [Modelo Sling](https://sling.apache.org/documentation/bundles/models.html) API. Los modelos de sling exportables exponen la siguiente lista de campos para permitir que las bibliotecas subyacentes interpreten el modelo de datos:
 
 * `:type`AEM : tipo del recurso de la (predeterminado = tipo de recurso)
 * `:children`: elementos secundarios jerárquicos del recurso actual. Los elementos secundarios no forman parte del contenido interno del recurso actual (se pueden encontrar en elementos que representan una página)
@@ -175,7 +175,6 @@ Por ejemplo:
 >* `"aem-Grid-newComponent"`: normaliza el componente para la creación de diseños
 >
 
-
 #### Asignación de componentes {#component-mapping}
 
 El subyacente [`Component Mapping`](#componentmapping) biblioteca y sus `MapTo` se puede encapsular y ampliar para proporcionar las funcionalidades relativas a la configuración de edición proporcionada junto con la clase de componente actual.
@@ -204,7 +203,7 @@ En la implementación anterior, el componente de proyecto se amplía con la func
 
 ```javascript
 /**
- * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
+ * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data is decorating the associated component
  *
  * @typedef {{}} EditConfig
  * @property {String} [dragDropName]       If defined, adds a specific class name enabling the drag and drop functionality

@@ -10,11 +10,11 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 29%
+source-wordcount: '2544'
+ht-degree: 27%
 
 ---
 
@@ -28,7 +28,7 @@ El [Proyecto Venia del CIF](https://github.com/adobe/aem-cif-guides-venia) es un
 
 ## Qué va a generar
 
-En este tutorial se implementará un nuevo estilo para el componente teaser de productos que se asemeje a una tarjeta. Las lecciones aprendidas en el tutorial se pueden aplicar a otros componentes principales del CIF.
+En este tutorial, se implementa un nuevo estilo para el componente teaser de productos que se parece a una tarjeta. Las lecciones aprendidas en el tutorial se pueden aplicar a otros componentes principales del CIF.
 
 ![Qué va a generar](../assets/style-cif-component/what-you-will-build.png)
 
@@ -192,7 +192,7 @@ A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo s
 
    >[!NOTE]
    >
-   > Solo las bibliotecas base están &quot;codificadas&quot; como parte de los scripts de página. `venia.site` no se incluye en estos archivos y, en su lugar, se incluye como parte de la plantilla de página para una buena flexibilidad. Esto se inspeccionará más adelante.
+   > Solo las bibliotecas base están &quot;codificadas&quot; como parte de los scripts de página. `venia.site` no se incluye en estos archivos y, en su lugar, se incluye como parte de la plantilla de página para una buena flexibilidad. Este proceso se inspecciona más adelante.
 
 1. AEM Desde el terminal, cree e implemente todo el proyecto en una instancia local de:
 
@@ -277,14 +277,14 @@ Existen varias opciones para incluir una biblioteca del lado del cliente. A cont
 
    ![Política de página: página de aterrizaje](../assets/style-cif-component/page-policy-properties.png)
 
-   A la derecha puede ver una lista de **categorías** de bibliotecas de clientes que se incluirán en todas las páginas que utilicen esta plantilla.
+   A la derecha puede ver una lista de bibliotecas de clientes **categorías** que se incluyen en todas las páginas que utilizan esta plantilla.
 
    * `venia.dependencies` : proporciona cualquier biblioteca de proveedor que `venia.site` depende de.
    * `venia.site` - Esta es la categoría de `clientlib-site` que el `ui.frontend` genera el módulo.
 
    Tenga en cuenta que otras plantillas utilizan la misma directiva, la **página de contenido**, la **página de aterrizaje**, etc. Al reutilizar la misma directiva, podemos garantizar que se incluyan las mismas bibliotecas de cliente en todas las páginas.
 
-   La ventaja de utilizar las plantillas y las directivas de página para administrar la inclusión de bibliotecas de cliente es que puede cambiar la directiva por plantilla. Por ejemplo: quizás esté administrando dos marcas diferentes dentro de la misma instancia de AEM. Cada marca tendrá su propio estilo o *tema* único, pero las bibliotecas base y el código serán los mismos. Otro ejemplo: si tiene una biblioteca de cliente más grande que solo desea que aparezca en determinadas páginas, puede crear una directiva de página única solo para esa plantilla.
+   La ventaja de utilizar las plantillas y las directivas de página para administrar la inclusión de bibliotecas de cliente es que puede cambiar la directiva por plantilla. Por ejemplo: quizás esté administrando dos marcas diferentes dentro de la misma instancia de AEM. Cada marca tiene su propio estilo único o *tema* pero las bibliotecas base y el código son iguales. Otro ejemplo: si tiene una biblioteca de cliente más grande que solo desea que aparezca en determinadas páginas, puede crear una directiva de página única solo para esa plantilla.
 
 ## Desarrollo de Webpack local {#local-webpack-development}
 
@@ -317,7 +317,7 @@ AEM El webpack-dev-server proporciona imágenes y algunos de los elementos CSS/J
    </body>
    ```
 
-   Se eliminan porque representan la versión compilada de CSS y JavaScript generados por `ui.frontend` módulo. AEM Deje las demás bibliotecas de cliente tal como se procesarán como proxy desde la instancia de la instancia de la instancia de en ejecución.
+   Se eliminan porque representan la versión compilada de CSS y JavaScript generados por `ui.frontend` módulo. AEM Deje las demás bibliotecas de cliente tal como se van a proxy desde la instancia de la instancia de la instancia de en ejecución.
 
 1. Abra una nueva ventana de terminal y navegue hasta la `ui.frontend` carpeta. Ejecute el comando `npm start`:
 
@@ -336,11 +336,11 @@ AEM El webpack-dev-server proporciona imágenes y algunos de los elementos CSS/J
 
    ![Servidor de desarrollo de Webpack en el puerto 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
-   Deje el webpack-dev-server en ejecución. Se utilizará en el próximo ejercicio.
+   Deje el webpack-dev-server en ejecución. Se utiliza en el siguiente ejercicio.
 
 ## Implementar el estilo de tarjeta para el teaser de productos {#update-css-product-teaser}
 
-A continuación, modifique los archivos Sass en `ui.frontend` para implementar un estilo de tarjeta para el teaser de productos. El webpack-dev-server se utilizará para ver rápidamente los cambios.
+A continuación, modifique los archivos Sass en `ui.frontend` para implementar un estilo de tarjeta para el teaser de productos. El webpack-dev-server se utiliza para ver rápidamente los cambios.
 
 Vuelva al IDE y al proyecto generado.
 
@@ -455,7 +455,7 @@ Una vez que el código del proyecto se haya implementado en AEM, debería poder 
 
    ![Estilo del teaser de productos actualizado](../assets/style-cif-component/product-teaser-new-style.png)
 
-1. Experimente añadiendo teaser de productos adicionales. Utilice el modo Diseño para cambiar la anchura y el desplazamiento de los componentes a fin de mostrar varios teasers en una fila.
+1. Experimente añadiendo teaser de productos adicionales. Utilice el modo Diseño para cambiar la anchura y el desplazamiento de los componentes y mostrar varios teasers en una fila.
 
    ![Varios teasers de producto](../assets/style-cif-component/multiple-teasers-final.png)
 

@@ -2,10 +2,10 @@
 title: 'Novedades y diferencias: Adobe Experience Manager as a Cloud Service'
 description: 'Novedades y diferencias: Adobe Experience Manager (AEM) as a Cloud Service.'
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 100%
+source-wordcount: '1899'
+ht-degree: 97%
 
 ---
 
@@ -192,7 +192,7 @@ Debido a la clara separación de código y contenido, los desarrolladores pueden
 
 ### Desarrollo local {#aem-as-a-cloud-service-developing-local-development}
 
-A fin de apoyar las iteraciones y el desarrollo rápidos, también es posible desarrollar aplicaciones de AEM fuera del contexto de AEM as a Cloud Service. Con este fin, se ponen a disposición de los desarrolladores los siguientes artefactos:
+AEM AEM Para apoyar las iteraciones y el desarrollo rápidos, también es posible desarrollar aplicaciones de la fuera del contexto as a Cloud Service. Con este fin, se ponen a disposición de los desarrolladores los siguientes artefactos:
 
 * Quickstart de AEM as a Cloud Service: un instalador independiente basado en `.jar` de la última base de código de AEM, con la misma superficie funcional y API.
 
@@ -242,7 +242,7 @@ Esto combina las ventajas de:
 >
 >Para obtener más información, la [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md) es un buen punto de partida.
 
-Los principios básicos de la interfaz de usuario (IU) de creación, tanto para Sites como para Assets, resultarán muy familiares para cualquiera que haya utilizado AEM en el pasado.
+AEM Los principios básicos de la interfaz de usuario (IU) de creación, tanto para Sites como para Assets, resultarán muy familiares para cualquiera que haya utilizado la interfaz de usuario (IU) en el pasado.
 
 La principal diferencia es que la IU solo es táctil; la IU clásica ya no está disponible. Por lo demás, los conceptos básicos permanecen inalterados, con solo pequeños cambios aparentes.
 

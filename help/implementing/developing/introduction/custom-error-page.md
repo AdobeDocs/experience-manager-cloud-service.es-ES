@@ -2,9 +2,9 @@
 title: Páginas de error personalizadas
 description: AEM viene con un controlador de error estándar para administrar errores HTTP, que se puede personalizar.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '572'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ AEM Para responder a los errores, proporciona un valor de tipo `404.jsp` script 
 
 ## Personalizar páginas mostradas por el controlador de error {#how-to-customize-pages-shown-by-the-error-handler}
 
-Puede desarrollar sus propias secuencias de comandos para personalizar las páginas que muestra el controlador de errores cuando se produce un error. Para ello, aprovechará lo siguiente [AEM mecanismo de superposición estándar de la](/help/implementing/developing/introduction/overlays.md) para que las páginas personalizadas se creen en `/apps` y superponer las páginas predeterminadas que se encuentran en `/libs`.
+Puede desarrollar sus propias secuencias de comandos para personalizar las páginas que muestra el controlador de errores cuando se produce un error. Para ello, utilice [AEM mecanismo de superposición estándar de la](/help/implementing/developing/introduction/overlays.md) para que las páginas personalizadas se creen en `/apps` y superponer las páginas predeterminadas que se encuentran en `/libs`.
 
 1. En el repositorio, copie los scripts predeterminados:
 

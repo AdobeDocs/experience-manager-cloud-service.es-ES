@@ -1,10 +1,10 @@
 ---
 title: Notas de la versión 2023.2.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.2.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 937921e0310a659f52803de3d6895db8fcac4d2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -86,7 +86,7 @@ Utilice los formularios adaptables sin encabezado para que los desarrolladores p
 * crear formularios multicanal de alta calidad en el lenguaje de programación que desee
 * integrar formularios de forma nativa en sus aplicaciones móviles y de escritorio, sitios web y aplicaciones de chat
 * reutilizar los componentes de IU propios con aplicaciones de formularios
-* aprovechar la potencia de Adobe Experience Manager Forms
+* utilice la potencia de Adobe Experience Manager Forms
 
 Puede enviar un correo electrónico a aem-forms-headless@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios.
 

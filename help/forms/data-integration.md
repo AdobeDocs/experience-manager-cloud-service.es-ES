@@ -3,10 +3,10 @@ title: Conexión de una base de datos a  [!DNL AEM Forms]  as a Cloud Servic
 seo-title: AEM Forms Data Integration
 description: Puede recuperar y guardar datos en servicios web RESTful, servicios web basados en SOAP y servicios OData desde  [!DNL AEM Forms] as a Cloud Service. El servicio proporciona una herramienta dedicada para recuperar, probar, validar y enviar datos a varios tipos de fuentes de datos.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '557'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ Una vez haya creado un modelo de datos de formulario, podrá utilizarlo en vario
 
 ## Introducción a la integración de datos {#get-started-with-data-integration}
 
-El primer paso para implementar la integración de datos es identificar y configurar las fuentes de datos que almacenan la información que desea aprovechar en los casos de uso de las comunicaciones interactivas y los formularios adaptable. A continuación, se crea un modelo de datos de formulario que utiliza los objetos, las propiedades y los servicios de modelo de datos de una o varias fuentes de datos. Puede crear formularios adaptables y comunicaciones interactivas basadas en un modelo de datos de formulario en el que los campos de los formularios adaptables o los marcadores de posición de las comunicaciones interactivas están enlazados a las propiedades de sus respectivas fuentes de datos.
+El primer paso para implementar la integración de datos es identificar y configurar las fuentes de datos que almacenan la información que desea utilizar en los casos de uso de las comunicaciones interactivas y los Forms adaptables. A continuación, se crea un modelo de datos de formulario que utiliza los objetos, las propiedades y los servicios de modelo de datos de una o varias fuentes de datos. Puede crear formularios adaptables y comunicaciones interactivas basadas en un modelo de datos de formulario en el que los campos de los formularios adaptables o los marcadores de posición de las comunicaciones interactivas están enlazados a las propiedades de sus respectivas fuentes de datos.
 
 [!DNL AEM Forms] también permite crear un modelo de datos de formulario independiente de las fuentes de datos y asociar o enlazar objetos y propiedades de modelo de datos en el modelo de datos de formulario con la fuente de datos más adelante. Esto elimina la dependencia de las fuentes de datos mientras trabaja en un modelo de datos de formulario.
 

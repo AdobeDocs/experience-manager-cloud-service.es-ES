@@ -2,9 +2,9 @@
 title: Creación rápida de sitios y personalización del front-end
 description: Descubra cómo la herramienta Creación rápida de sitios utiliza plantillas de sitio, temas y la canalización front-end para permitir una implementación rápida de nuevos sitios y desvincular el desarrollo front-end.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '328'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ Para obtener una descripción general completa del funcionamiento de la herramie
 
 ## Recursos adicionales {#additional-resources}
 
-AEM Debido a que la herramienta de creación rápida de sitios aprovecha muchas funciones de la, estos recursos adicionales pueden resultar útiles.
+AEM Debido a que la herramienta de creación rápida de sitios utiliza muchas funciones de, estos recursos adicionales pueden resultar útiles.
 
 * [Plantillas de sitio](/help/sites-cloud/administering/site-creation/site-templates.md) AEM : Aprenda cómo se pueden utilizar las plantillas de sitio de la para predefinir la estructura del sitio y el contenido inicial para permitirle crear rápidamente nuevos sitios.
 * [Temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) AEM - Aprenda cómo se pueden utilizar los temas del sitio para personalizar el estilo y el diseño del sitio.

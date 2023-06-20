@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1732'
 ht-degree: 12%
 
 ---
@@ -28,7 +28,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. Revise la lista de comprobación de ingesta y asegúrese de que se han completado todos los pasos. Estos son los pasos necesarios para garantizar una ingesta correcta. Podrá continuar con el procedimiento de **Siguiente** solo si se ha completado la lista de comprobación.
+1. Revise la lista de comprobación de ingesta y asegúrese de que se han completado todos los pasos. Estos son los pasos necesarios para garantizar una ingesta correcta. Continúe con la **Siguiente** solo si se ha completado la lista de comprobación.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -36,20 +36,20 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
    * Seleccione el conjunto de migración que contiene los datos extraídos como origen.
       * Los conjuntos de migración caducarán después de un período de inactividad prolongado, por lo que se espera que la ingesta se produzca relativamente pronto después de realizar la extracción. Revisar [Caducidad del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener más información.
-   * Seleccione el entorno de destino. Aquí es donde se ingiere el contenido del conjunto de migración. Seleccione el nivel. (Autor/Publicación). Los entornos de desarrollo rápido no son compatibles.
+   * Seleccione el entorno de destino. En este entorno es donde se ingiere el contenido del conjunto de migración. Seleccione el nivel. (Autor/Publicación). Los entornos de desarrollo rápido no son compatibles.
 
    >[!NOTE]
    >Las siguientes notas se aplican a la ingesta de contenido:
    > Si el origen era Author, se recomienda ingerirlo en el nivel Author en el destino. Del mismo modo, si el origen era Publish, el destino también debería ser Publish.
-   > Si el nivel de destino es `Author`, la instancia de autor se cerrará durante toda la ingesta y no estará disponible para los usuarios (por ejemplo, los autores o cualquier persona que realice mantenimiento, etc.). Esto sirve para proteger el sistema y evitar cualquier cambio que pueda perderse o provocar un conflicto de ingesta. Asegúrese de que su equipo esté al tanto de este hecho. Tenga en cuenta también que el entorno aparecerá en hibernación durante la ingesta del autor.
+   > Si el nivel de destino es `Author`Sin embargo, la instancia de autor se apaga durante la duración de la ingesta y no está disponible para los usuarios (por ejemplo, los autores o cualquier persona que realice mantenimiento). El motivo es proteger el sistema y evitar cualquier cambio que pueda perderse o causar un conflicto de ingesta. Asegúrese de que su equipo esté al tanto de este hecho. Tenga en cuenta también que el entorno parece hibernado durante la ingesta del autor.
    > Puede ejecutar el paso opcional previo a la copia para acelerar de forma significativa la fase de ingesta. Consulte [Ingesta con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obtener más información.
-   > Si se utiliza la ingesta con copia previa (para S3 o Azure Data Store), se recomienda ejecutar primero la ingesta de autor solo. Esto acelera la ingesta de Publish cuando se ejecute más adelante.
-   > Las ingestas no admiten un destino de entorno de desarrollo rápido (RDE). No aparecerán como una posible opción de destino, aunque el usuario tenga acceso a ellas.
+   > Si se utiliza la ingesta con copia previa (para S3 o Azure Data Store), se recomienda ejecutar primero la ingesta de autor solo. Al hacerlo, se acelera la ingesta de Publish cuando se ejecuta más adelante.
+   > Las ingestas no admiten un destino de entorno de desarrollo rápido (RDE) y no aparecen como una posible opción de destino, aunque el usuario tenga acceso a él.
 
    >[!IMPORTANT]
    > Los siguientes avisos importantes se aplican a la ingesta de contenido:
-   > Solo podrá iniciar una ingesta en el entorno de destino si pertenece al entorno local de **AEM administradores de** en el servicio de creación del Cloud Service de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más información.
-   > Si la configuración **Barrido** está habilitado antes de la ingesta, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece todos los ajustes, incluidos los permisos en la instancia del Cloud Service de destino. Esto también se aplica a un usuario administrador añadido a **administradores** grupo. Se le tendrá que volver a añadir al grupo de administradores para iniciar una ingesta.
+   > Solo puede iniciar una ingesta en el entorno de destino si pertenece al entorno local de **AEM administradores de** en el servicio de creación del Cloud Service de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más información.
+   > Si la configuración **Barrido** está habilitado antes de la ingesta, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece todos los ajustes, incluidos los permisos en la instancia del Cloud Service de destino. Esto también se aplica a un usuario administrador añadido a **administradores** grupo. Debe volver a agregarse al grupo de administradores para iniciar una ingesta.
 
 1. Haga clic en **Ingesta**
 
@@ -118,11 +118,11 @@ Deberá recuperar el token de migración manualmente haciendo clic en el víncul
 
 >[!NOTE]
 >
->El token estará disponible para los usuarios que pertenezcan al **AEM administradores de** en el servicio de creación del Cloud Service de destino.
+>El token está disponible para los usuarios que pertenecen al **AEM administradores de** en el servicio de creación del Cloud Service de destino.
 
 ### No se puede iniciar la ingesta {#unable-to-start-ingestion}
 
-Solo podrá iniciar una ingesta en el entorno de destino si pertenece al entorno local de **AEM administradores de** en el servicio de creación del Cloud Service de destino. AEM Si no pertenece al grupo de administradores de la, verá un error como se muestra a continuación cuando intente iniciar una ingesta. Puede pedir al administrador que le añada al local **AEM administradores de** o pida el token en sí, que puede pegar en la variable **Entrada de token de migración** field.
+Solo puede iniciar una ingesta en el entorno de destino si pertenece al entorno local de **AEM administradores de** en el servicio de creación del Cloud Service de destino. AEM Si no pertenece al grupo de administradores de la, verá un error como se muestra a continuación cuando intente iniciar una ingesta. Puede pedir al administrador que le añada al local **AEM administradores de** o pida el token en sí, que puede pegar en la variable **Entrada de token de migración** field.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -138,7 +138,7 @@ Esto indica que Cloud Acceleration Manager no pudo llegar al servicio de migraci
 > 
 > El campo &quot;Token de migración&quot; se muestra porque, en algunos casos, la recuperación de ese token es lo que realmente no está permitido. Al permitir que se proporcione manualmente, puede permitir al usuario iniciar la ingesta rápidamente, sin ninguna ayuda adicional. Si se proporciona el token, y sigue apareciendo el mensaje, la recuperación del token no fue el problema.
 
-* AEM El estado del entorno se mantiene en as a Cloud Service y, ocasionalmente, es posible que deba reiniciar el servicio de migración por varios motivos normales. Si ese servicio se está reiniciando, no se puede acceder a él, pero estará disponible próximamente.
+* AEM El estado del entorno se mantiene en as a Cloud Service y, ocasionalmente, es posible que deba reiniciar el servicio de migración por varios motivos normales. Si ese servicio se está reiniciando, no se puede acceder a él, pero suele estar disponible pronto.
 * Es posible que se esté ejecutando otro proceso en la instancia. Por ejemplo, si Release Orchestrator aplica una actualización, el sistema puede estar ocupado y el servicio de migración no está disponible con regularidad. Esta es la razón por la que se recomienda pausar las actualizaciones durante una ingesta, así como la posibilidad de corromper la instancia de fase o producción.
 * Si un [Se ha aplicado la Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) a través de Cloud Manager, bloqueará Cloud Acceleration Manager para que no llegue al servicio de migración. No se puede añadir una dirección IP para ingestas porque es muy dinámica. Actualmente, la única solución es deshabilitar la lista de permitidos IP mientras se ejecuta la ingesta.
 * Puede haber otras razones que requieren investigación. Si la ingesta sigue fallando, póngase en contacto con el Servicio de atención al cliente de Adobe.

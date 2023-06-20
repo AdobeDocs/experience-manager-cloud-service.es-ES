@@ -2,10 +2,10 @@
 title: Agregar un nombre de dominio personalizado
 description: Obtenga información sobre cómo agregar un nombre de dominio personalizado mediante Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 98%
+source-wordcount: '574'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ Puede agregar un nombre de dominio personalizado desde dos ubicaciones en Cloud 
 
 >[!NOTE]
 >
->Un usuario debe tener la función **Propietario empresarial** o **Administrador de implementación** para agregar un nombre de dominio personalizado en Cloud Manager
+>Un usuario debe tener **Propietario del negocio** o **Administrador de implementación** función para agregar un nombre de dominio personalizado en Cloud Manager
 
 ## Adición de un nombre de dominio personalizado desde la página Configuración de dominio {#adding-cdn-settings}
 
@@ -42,7 +42,7 @@ Siga estos pasos para agregar un nombre de dominio personalizado desde la págin
    >
    >No incluya `http://`, `https://` ni espacios al introducir el dominio.
 
-1. Seleccione el **Entorno** cuyo servicio se asociará con el nombre de dominio.
+1. Seleccione el **Entorno** cuyo servicio está asociado con el nombre de dominio.
 
 1. Seleccione el servicio **Publicación** o **Vista previa**.
 

@@ -2,10 +2,10 @@
 title: Agregar un certificado SSL
 description: Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: d0d4b22cdca02d81ca755e4045ffccb110739303
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 100%
+source-wordcount: '574'
+ht-degree: 86%
 
 ---
 
@@ -25,21 +25,21 @@ Los siguientes comandos `openssl` se pueden utilizar para convertir certificados
 
 * Convertir PFX a PEM
 
-   ```shell
-   openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-   ```
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
 
 * Convertir P7B a PEM
 
-   ```shell
-   openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-   ```
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
 
 * Convertir DER a PEM
 
-   ```shell
-   openssl x509 -inform der -in certificate.cer -out certificate.pem
-   ```
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## Agregar un certificado {#adding-a-cert}
 
@@ -49,7 +49,7 @@ Siga estos pasos para agregar un certificado mediante Cloud Manager.
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Haga clic en **Certificados SSL** en el panel de navegación izquierdo. Se mostrará en la pantalla principal una tabla con detalles de cualquier certificado SSL existente.
+1. Haga clic en **Certificados SSL** en el panel de navegación izquierdo. En la pantalla principal se muestra una tabla con detalles de cualquier certificado SSL existente.
 
    ![Agregar un certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
@@ -61,10 +61,9 @@ Siga estos pasos para agregar un certificado mediante Cloud Manager.
 
    ![Cuadro de diálogo Agregar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * Se mostrarán todos los errores detectados.
+   * Se muestran todos los errores detectados.
       * Debe corregir todos los errores antes de guardar el certificado.
       * Consulte la sección [Errores de certificado](#certificate-errors) para obtener más información sobre cómo solucionar errores comunes.
-
 
 1. Haga clic en **Guardar** para guardar el certificado.
 
@@ -74,7 +73,7 @@ Una vez guardado, verá el certificado como una fila nueva en la tabla.
 
 >[!NOTE]
 >
->Un usuario debe ser miembro del rol de **Propietario del negocio** o **Administrador de implementación** para instalar un certificado SSL en Cloud Manager.
+>Un usuario debe ser miembro de **Propietario del negocio** o **Administrador de implementación** función para instalar un certificado SSL en Cloud Manager.
 
 ## Errores de certificado {#certificate-errors}
 
@@ -154,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->El resultado de estos dos comandos debe ser exactamente el mismo. Si no puede localizar una clave privada que coincida con su certificado `main/server`, deberá volver a escribir el certificado y generar un CSR nuevo o solicitar un certificado actualizado a su proveedor SSL.
+>El resultado de estos dos comandos debe ser exactamente el mismo. Si no encuentra una clave privada que coincida con su `main/server` certificado, es necesario volver a escribir el certificado generando un nuevo CSR o solicitando un certificado actualizado a su proveedor SSL.
 
 ### Fechas de validez del certificado {#certificate-validity-dates}
 

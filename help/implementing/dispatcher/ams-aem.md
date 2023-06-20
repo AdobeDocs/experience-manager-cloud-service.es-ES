@@ -3,9 +3,9 @@ title: Migración de la configuración de Dispatcher de AMS a AEM as a Cloud Ser
 description: Migración de la configuración de Dispatcher de AMS a AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1445'
 ht-degree: 16%
 
 ---
@@ -18,7 +18,7 @@ AEM La configuración de Apache y Dispatcher en as a Cloud Service es bastante s
 
 * AEM En as a Cloud Service, algunas directivas de Apache no se pueden utilizar (por ejemplo, `Listen` o `LogLevel`)
 * AEM En as a Cloud Service, solo se pueden colocar algunas partes de la configuración de Dispatcher en los archivos de inclusión y su nombre es importante. Por ejemplo, las reglas de filtro que desee reutilizar en distintos hosts deben colocarse en un archivo llamado `filters/filters.any`. Consulte la página de referencia para obtener más información.
-* AEM En as a Cloud Service, hay una validación adicional para no permitir reglas de filtro escritas mediante `/glob` para evitar problemas de seguridad. Desde `deny *` se utilizará en lugar de `allow *` (que no se puede utilizar), los clientes se beneficiarán de ejecutar Dispatcher localmente y de realizar pruebas y errores, mirando los registros para saber exactamente qué rutas bloquean los filtros de Dispatcher para que se puedan agregar.
+* AEM En as a Cloud Service, hay una validación adicional para no permitir reglas de filtro escritas mediante `/glob` para evitar problemas de seguridad. Porque `deny *` se utiliza en lugar de `allow *` (que no se puede utilizar), los clientes se benefician de ejecutar Dispatcher localmente y de realizar pruebas y errores, mirando los registros para saber exactamente qué rutas están bloqueando los filtros de Dispatcher para que se puedan agregar.
 
 ## AEM Directrices para migrar la configuración de Dispatcher de AMS a la configuración as a Cloud Service de
 

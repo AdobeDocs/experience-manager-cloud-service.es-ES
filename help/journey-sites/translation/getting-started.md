@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 100%
+source-wordcount: '1406'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Antes de comenzar a traducir el contenido de AEM, existen varios requisitos.
 
 ## Cómo almacena el contenido AEM {#content-in-aem}
 
-Para el especialista en traducción, no es importante comprender en profundidad cómo administra el contenido AEM. Sin embargo, familiarizarse con los conceptos básicos y la terminología resultará útil, ya que más adelante utilizará las herramientas de traducción de AEM. Lo más importante es que debe comprender su propio contenido y cómo está estructurado para traducirlo de forma eficaz.
+Para el especialista en traducción, no es importante comprender en profundidad cómo administra el contenido AEM. AEM Sin embargo, familiarizarse con los conceptos básicos y la terminología es útil, ya que más adelante utilizará herramientas de traducción de la aplicación de la traducción de la manera más rápida y sencilla. Lo más importante es que debe comprender su propio contenido y cómo está estructurado para traducirlo de forma eficaz.
 
 ### Consola Sitios {#sites-console}
 
@@ -175,7 +175,7 @@ La estructura final puede tener un aspecto similar al siguiente.
     |- ...
 ```
 
-Debe tomar nota de la ruta específica del contenido, ya que será necesaria más adelante para configurar la traducción.
+Debe tomar nota de la ruta específica del contenido, ya que es necesaria más adelante para configurar la traducción.
 
 >[!NOTE]
 >

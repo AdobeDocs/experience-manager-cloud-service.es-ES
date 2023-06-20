@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.10.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.10.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 97%
+source-wordcount: '842'
+ht-degree: 91%
 
 ---
 
@@ -50,14 +50,14 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 * Experience Manager Assets ahora le permite cargar documentos en otros tipos de formato compatibles y [previsualizarlos con el visualizador de Document Cloud incluido](/help/assets/manage-pdf-documents.md). Los tipos de formato admitidos son TXT, RTF, DOC, DOCX, PPT, PPTX, XLS y XLSX.
 
-   ![Representación del PDF para otros formatos](/help/release-notes/assets/multi-page-other-formats.png)
+  ![Representación del PDF para otros formatos](/help/release-notes/assets/multi-page-other-formats.png)
 
 
 ### Nuevas funciones en el canal de prelanzamiento de [!DNL Assets] {#prerelease-features-assets}
 
 * Experience Manager Assets ahora utiliza un marco de inteligencia artificial mejorado para las etiquetas inteligentes de imagen. Esta inteligencia de contenido mejora la relevancia y precisión de las etiquetas inteligentes disponibles para todos los activos de imagen durante la ingesta. Además, la información de orientación se rellena en `cq:tags`, lo que permite obtener mejores resultados de búsqueda mediante el filtro Orientación.
 
-   Si está interesado en participar en el Beta, [rellene este formulario](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) para el 14 de noviembre.
+  Si está interesado en participar en el Beta, [rellene este formulario](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) para el 14 de noviembre.
 
 * Experience Manager Assets ahora [admite el token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) además de la clave de acceso para la autenticación al conectarse a la fuente de datos de almacenamiento de Azure Blob para la ingesta de activos mediante la herramienta de importación masiva.
 
@@ -87,7 +87,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 * AEM as a Cloud Service (Servicio de creación) está ahora integrado con Unified Shell para mejorar la experiencia del usuario y unificarlo con todas las demás aplicaciones de Experience Cloud. Consulte AEM as a [Cloud Service en Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obtener más información.
 
-* Como se mencionó anteriormente en las notas de la versión, el uso de la pantalla de administración del agente de replicación o la API de replicación para distribuir paquetes de contenido de más de 10 MB (nodos con propiedades, sin incluir binarios) está obsoleto y se aplicará en los próximos días. Consulte [Administrar publicación](/help/operations/replication.md#manage-publication) o el [flujo de trabajo Publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow) para los enfoques sugeridos para replicar estos paquetes grandes de contenido.
+* Como se mencionó anteriormente en las notas de la versión, el uso de la pantalla de administración del agente de replicación o la API de replicación para distribuir paquetes de contenido de más de 10 MB (nodos con propiedades, sin incluir binarios) ya no se utiliza y se aplica. Consulte [Administrar publicación](/help/operations/replication.md#manage-publication) o el [Flujo de trabajo Publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow) para conocer los enfoques sugeridos para replicar estos paquetes de contenido grande.
 
 * La configuración de Dispatcher ahora hace referencia a un archivo que enumera parámetros comunes de consulta de campañas de marketing. Los clientes pueden optar por descomentar los parámetros relevantes para ellos, lo que resulta en un mejor almacenamiento en caché. Consulte [Parámetros de campaña de marketing](/help/implementing/dispatcher/caching.md#marketing-parameters) para obtener más información.
 

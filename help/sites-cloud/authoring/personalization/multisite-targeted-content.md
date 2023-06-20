@@ -2,9 +2,9 @@
 title: Uso del contenido de destino de varios sitios
 description: AEM Si necesita administrar contenido de destino, como actividades, experiencias y ofertas, entre sus sitios, puede aprovechar la compatibilidad integrada con varios sitios para el contenido de destino, lo que le permitirá aprovechar las ventajas que ofrece la compatibilidad con múltiples sitios para la administración de contenido de destino.
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2891'
 ht-degree: 31%
 
 ---
@@ -49,7 +49,6 @@ Un sitio o Live Copy vincula un área que contiene las actividades que deben est
 >* Cuando se utilizan despliegues o Live Copies, se requiere una licencia de MSM.
 >* Cuando se utiliza la sincronización con Adobe Target, se requiere una licencia de Adobe Target.
 >
-
 
 ## Casos de uso {#use-cases}
 
@@ -235,7 +234,6 @@ Una actividad que hereda de otro sitio se marca en verde junto al nombre de la a
 >* Solo puede suspender o desasociar Live Copies en una actividad.
 >* No es necesario suspender ni desasociar Live Copies para ampliar una actividad heredada. Siempre puede crear **nuevo** experiencias y ofertas locales para esa actividad. Si desea modificar una actividad existente, debe suspender la herencia.
 >
-
 
 ### Suspender herencia {#suspending-inheritance}
 

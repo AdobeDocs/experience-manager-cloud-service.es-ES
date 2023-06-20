@@ -2,9 +2,9 @@
 title: Desarrollo de Sites con la canalización front-end
 description: Con la canalización front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar velocidad sustancial. Este documento describe algunas consideraciones particulares del proceso de compilación del front-end que deben darse.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: a6b228023d7bd2a40e4db3a1d2c3900a5c24031c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1154'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Desarrollo de Sites con la canalización front-end {#developing-site-with-front-end-pipeline}
 
-[Con la canalización front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar velocidad sustancial. Este documento describe cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar todo el potencial de este proceso.
+[Con la canalización front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar velocidad sustancial. En este documento se describe cómo funciona este proceso, así como algunas consideraciones que hay que tener en cuenta para aprovechar todo el potencial de este proceso.
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Similar a la [entorno de compilación de pila completa,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) la canalización front-end tiene su propio entorno. Los desarrolladores tienen cierta flexibilidad en esta canalización siempre y cuando se observe el siguiente contrato de versión del front-end.
 
-La canalización front-end requiere que el proyecto front-end Node.js utilice el `build` directiva de script para generar la compilación que implementará la canalización front-end. Es decir, Cloud Manager utiliza el comando `npm run build` para generar el proyecto implementable en `dist` carpeta.
+La canalización front-end requiere que el proyecto front-end Node.js utilice el `build` directiva de script para generar la compilación que implementa la canalización front-end. Es decir, Cloud Manager utiliza el comando `npm run build` para generar el proyecto implementable en `dist` carpeta.
 
 El contenido del `dist` AEM Esta carpeta es lo que se implementa finalmente para que se ejecute en as a Cloud Service desde la canalización de Cloud Manager.
 
@@ -68,7 +68,7 @@ En general, se recomiendan los siguientes pasos cuando es necesario realizar cam
    1. Como de costumbre, para desarrollar localmente:
       1. El `npx aem-site-theme-builder proxy` AEM El comando ejecutado en el módulo front-end inicia un servidor proxy que solicita el contenido de un entorno de, al tiempo que reemplaza los archivos CSS y JS del módulo front-end por los del entorno local `dist` carpeta.
       1. Configuración de la `AEM_URL` en la variable oculta `.env` AEM permite controlar desde qué entorno consume el contenido el servidor proxy local.
-      1. Cambiar el valor de esto `AEM_URL` por lo tanto, permite cambiar entre los entornos de producción y desarrollo para ajustar CSS y JS y que se ajuste a ambos entornos.
+      1. Cambiar el valor de esto `AEM_URL` por lo tanto, permite cambiar entre los entornos de producción y desarrollo para ajustar CSS y JS de modo que se adapte a ambos entornos.
       1. Debe trabajar con el entorno de desarrollo que procesa el nuevo resultado y con el entorno de producción que procesa el resultado antiguo.
    1. El trabajo front-end se completa cuando el módulo front-end actualizado funciona para ambos entornos y se implementa en ambos.
 1. El equipo back-end puede actualizar el entorno de producción implementando el código que procesa el nuevo HTML o la salida JSON a través de la canalización full-stack.

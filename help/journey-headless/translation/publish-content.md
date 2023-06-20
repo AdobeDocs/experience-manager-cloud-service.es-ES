@@ -2,10 +2,10 @@
 title: Publicar contenido traducido sin encabezado
 description: Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1392'
+ht-degree: 98%
 
 ---
 
@@ -78,7 +78,7 @@ El contenido sin encabezado traducido se publica. Ahora sus servicios sin encabe
 
 >[!TIP]
 >
->Cuando realice la publicación, puede seleccionar varios elementos (es decir, carpetas de varios idiomas) para publicar varias traducciones al mismo tiempo.
+>Al publicar, puede seleccionar varios elementos (es decir, carpetas de varios idiomas) para poder publicar varias traducciones al mismo tiempo.
 
 Existen opciones adicionales al publicar el contenido que están fuera del ámbito de este recorrido, como programar una hora de publicación. Consulte la sección [Recursos adicionales](#additional-resources) al final del documento para obtener más información.
 

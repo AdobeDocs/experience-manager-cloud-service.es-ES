@@ -1,13 +1,13 @@
 ---
-title: API HTTP de Recursos
+title: API HTTP de recursos
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API HTTP en [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1562'
 ht-degree: 3%
 
 ---
@@ -280,10 +280,10 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
@@ -294,4 +294,3 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 >[!MORELIKETHIS]
 >
 >* [Documentos de referencia del desarrollador para [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
-

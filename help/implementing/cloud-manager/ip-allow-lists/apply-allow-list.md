@@ -2,10 +2,10 @@
 title: Aplicar y cancelar la aplicación de listas de IP permitidas
 description: Aprenda a aplicar y a anular la aplicación de listas de IP permitidas a entornos.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 100%
+source-wordcount: '269'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Un usuario con el rol de **Propietario del negocio** o **Administrador de implem
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 1. Vaya a la página de detalles específicos del entorno en la pantalla **Entornos** y navegue hasta la tabla **Lista de IP permitidas**.
 1. Utilice los campos de entrada de la parte superior de la tabla para seleccionar la lista de IP permitidas y el servicio de autor o publicación al que desea aplicarla.
-   * La lista de IP permitidas debe existir en Cloud Manager para poder aplicarla.
+   * La Lista de permitidos IP debe existir en Cloud Manager para aplicarla.
 1. Haga clic en **Aplicar** y confirme el envío.
 
 ## Cancelar la aplicación de listas de permitidos {#un-applying}

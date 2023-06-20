@@ -2,9 +2,9 @@
 title: Creación de plantillas de página
 description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no es una tarea exclusiva para desarrolladores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4595'
 ht-degree: 61%
 
 ---
@@ -91,7 +91,7 @@ Al crear una nueva plantilla editable:
 >
 >No introduzca nunca en una plantilla información que deba internacionalizarse. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Para elementos de plantilla como encabezados y pies de página que se deben localizar, aproveche las características de [localización de los componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es)
+>Para elementos de plantilla como encabezados y pies de página que deben localizarse, utilice la variable [funciones de localización de los componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es)
 
 ### Creación de una carpeta de plantillas: administrador {#creating-a-template-folder-admin}
 
@@ -202,7 +202,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-   El orden de las rutas es irrelevante, se analizarán todas las rutas y se recuperarán las plantillas.
+   El orden de las rutas es irrelevante. Se analizan todas las rutas y se recuperan las plantillas.
 
    >[!NOTE]
    >
@@ -513,18 +513,18 @@ Aunque todo el contenido creado en el modo de **Estructura** sea visible en el *
 
 * Los componentes desbloqueados que están disponibles para la edición están marcados. Cuando se seleccionan, tienen un borde azul:
 
-   ![Modo de contenido inicial](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
+  ![Modo de contenido inicial](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
 
 * Los componentes desbloqueados tienen una barra de herramientas que le permite editar y configurar el contenido:
 
-   ![Componente desbloqueado](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
+  ![Componente desbloqueado](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
 * Si un componente de contenedor se ha desbloqueado (en el modo de **Estructura**), puede añadir componentes nuevos al contenedor (en el modo de **Contenido inicial**). Los componentes añadidos en el modo de **Contenido inicial** se pueden mover o eliminar de las páginas resultantes.
 
-   Puede añadir un componente mediante el área **Arrastrar componentes aquí** o la opción **Insertar nuevo componente** de la barra de herramientas del contenedor adecuado.
+  Puede añadir un componente mediante el área **Arrastrar componentes aquí** o la opción **Insertar nuevo componente** de la barra de herramientas del contenedor adecuado.
 
-   ![Añadir componente](/help/sites-cloud/authoring/assets/templates-add-component.png)
-   ![Añadir componente](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
+  ![Añadir componente](/help/sites-cloud/authoring/assets/templates-add-component.png)
+  ![Añadir componente](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
 
 * Si el contenido inicial de la plantilla se actualiza después de que se creen las páginas a partir de esta, esas páginas no se verán afectadas por los cambios del contenido inicial en la plantilla.
 
@@ -566,24 +566,24 @@ Puede aplicar una política de contenido a la plantilla o a las páginas resulta
 
 * Puede seleccionar una política existente para la página en el menú desplegable **Seleccionar política**.
 
-   ![Selector de políticas](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+  ![Selector de políticas](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   Para añadir una política nueva, seleccione el botón de adición situado junto a la lista desplegable **Seleccionar política.** Se debe proporcionar un título nuevo en el campo **Título de la política**.
+  Para añadir una política nueva, seleccione el botón de adición situado junto a la lista desplegable **Seleccionar política.** Se debe proporcionar un título nuevo en el campo **Título de la política**.
 
-   ![Botón Añadir política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+  ![Botón Añadir política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   La política existente seleccionada en la lista desplegable **Seleccionar política** se puede copiar como una política nueva mediante el botón de copia situado al lado de la lista desplegable. Se debe proporcionar un título nuevo en el campo **Título de la política**. De forma predeterminada, la política copiada tendrá el título **Copia de X**, en que X es el título de la política copiada.
+  La política existente seleccionada en la lista desplegable **Seleccionar política** se puede copiar como una política nueva mediante el botón de copia situado al lado de la lista desplegable. Se debe proporcionar un título nuevo en el campo **Título de la política**. De forma predeterminada, la política copiada tendrá el título **Copia de X**, en que X es el título de la política copiada.
 
-   ![Botón Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+  ![Botón Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 * Defina un título para la política en el campo **Título de la política**. Es necesario que una política tenga un título para que se pueda seleccionar fácilmente en la lista desplegable **Seleccionar política**.
 
-   ![Título de la política](/help/sites-cloud/authoring/assets/templates-policy-title.png)
+  ![Título de la política](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * En el campo **Descripción de la política**, se ofrece de manera opcional una descripción de la política.
 * En la sección **Otras plantillas que también usan la política seleccionada**, puede ver con facilidad las otras plantillas que usan la política seleccionada en la lista desplegable **Seleccionar política**.
 
-   ![Uso de políticas](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+  ![Uso de políticas](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### Propiedades de página {#page-properties}
 
@@ -593,17 +593,17 @@ Con las propiedades de página, puede definir las bibliotecas del cliente necesa
 
 * Especifique las bibliotecas del lado del cliente que desea aplicar a las páginas creadas con esta plantilla. Al introducir el nombre de una biblioteca en el campo de texto del **Bibliotecas del cliente** sección.
 
-   ![Bibliotecas del lado cliente](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+  ![Bibliotecas del lado cliente](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * Si son necesarias diversas bibliotecas, haga clic en el botón Añadir para añadir un campo de texto adicional para el nombre de la biblioteca.
 
-   ![Botón Añadir](/help/sites-cloud/authoring/assets/templates-add-button.png)
+  ![Botón Añadir](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-   Añada tantos campos de texto como sea necesario para las bibliotecas del cliente.
+  Añada tantos campos de texto como sea necesario para las bibliotecas del cliente.
 
 * Defina la posición relativa de las bibliotecas según sea necesario arrastrando los campos con el control de arrastre.
 
-   ![Arrastrar controlador](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
+  ![Arrastrar controlador](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
 
 >[!NOTE]
 >
@@ -633,13 +633,16 @@ Al crear plantillas, debe tener en cuenta lo siguiente:
 
       * Se aplican inmediatamente a las páginas resultantes.
       * La publicación de la plantilla modificada sigue siendo necesaria para que los visitantes vean los cambios.
+
    * Cambios en las políticas de contenido y configuraciones de diseño:
 
       * Se aplican inmediatamente a las páginas resultantes.
       * Es necesaria la publicación de los cambios para que los visitantes puedan ver los cambios.
+
    * Cambios en el contenido inicial:
 
       * Esto solo se aplica a las páginas creadas después de los cambios en la plantilla.
+
    * Los cambios en el diseño dependen de si el componente modificado forma parte de:
 
       * Solo de estructura: aplicado inmediatamente

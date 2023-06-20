@@ -2,9 +2,9 @@
 title: Creación de experiencias comerciales
 description: Experiencias de comercio de trabajo
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '701'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Las páginas del catálogo de productos del CIF son páginas virtuales que se pr
 
     >[!NOTA]
     >
-    > Si se seleccionan tanto la categoría como el producto, se tomará el producto.
+    > Si se seleccionan tanto la categoría como el producto, se toma el producto.
 
 Esto crea un vínculo de marcador de posición que se sustituye por un vínculo real cuando se representa la página.
 

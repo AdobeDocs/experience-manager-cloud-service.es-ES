@@ -2,10 +2,10 @@
 title: Obtenga información acerca de la creación de modelos de fragmento de contenido en AEM
 description: Obtenga información sobre los conceptos y la mecánica del contenido de modelado para su CMS sin periféricos usando modelos de fragmentos de contenido.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ A continuación, se pueden crear los modelos de fragmento de contenido y definir
 
 Después de seleccionarlo, navegue a la ubicación del modelo y seleccione **Crear**. Aquí puede introducir varios detalles fundamentales.
 
-La opción **Habilitar modelo** está activada de forma predeterminada. Esto significa que el modelo estará disponible para su uso (en la creación de fragmentos de contenido) en cuanto lo haya guardado. Puede desactivarlo si lo desea; más adelante tendrá la oportunidad de habilitar (o deshabilitar) un modelo existente.
+La opción **Habilitar modelo** está activada de forma predeterminada. Esto significa que el modelo está disponible para su uso (en la creación de fragmentos de contenido) en cuanto lo haya guardado. Puede desactivarlo si lo desea; más adelante tendrá la oportunidad de habilitar (o deshabilitar) un modelo existente.
 
 ![Crear Modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -96,7 +96,7 @@ Los modelos de fragmento de contenido deben publicarse cuando se publican fragme
 
 >[!NOTE]
 >
->Si un autor intenta publicar un fragmento de contenido para un modelo que aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
+>Si un autor intenta publicar un fragmento de contenido para el que el modelo aún no se ha publicado, una lista de selección lo indica y el modelo se publica con el fragmento.
 
 En cuanto se publica el modelo, aparece *bloqueado* en modo de SOLO LECTURA en el autor. Esto tiene como objetivo evitar cambios que pudieran provocar errores en los esquemas y consultas de GraphQL existentes, especialmente en el entorno de publicación. En la consola se indica como **Bloqueado**.
 

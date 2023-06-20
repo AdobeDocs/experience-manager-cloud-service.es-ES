@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3829'
 ht-degree: 16%
@@ -31,7 +31,7 @@ La funcionalidad Recursos conectados admite los casos de uso anteriores mediante
 
 ## Información general sobre los recursos conectados {#overview-of-connected-assets}
 
-Al editar páginas en [!UICONTROL Editor de página] como destino de destino, los creadores pueden buscar, examinar e incrustar recursos sin problemas desde un entorno diferente [!DNL Assets] implementación que actúa como origen de recursos. Los administradores crean una integración única de una implementación de [!DNL Experience Manager] con [!DNL Sites] con otra implementación de [!DNL Experience Manager] con [!DNL Assets] capacidad. También puede utilizar imágenes de Dynamic Media en las páginas web del sitio a través de Recursos conectados y aprovechar las funcionalidades de Dynamic Media, como los ajustes preestablecidos de recorte inteligente y de imagen.
+Al editar páginas en [!UICONTROL Editor de página] como destino de destino, los creadores pueden buscar, examinar e incrustar recursos sin problemas desde un entorno diferente [!DNL Assets] implementación que actúa como origen de recursos. Los administradores crean una integración única de una implementación de [!DNL Experience Manager] con [!DNL Sites] con otra implementación de [!DNL Experience Manager] con [!DNL Assets] capacidad. También puede utilizar imágenes de Dynamic Media en las páginas web del sitio a través de Recursos conectados y utilizar las funcionalidades de Dynamic Media, como los ajustes preestablecidos de recorte inteligente y de imagen.
 
 Para el [!DNL Sites] Para los creadores, los recursos remotos están disponibles como recursos locales de solo lectura. La funcionalidad admite la búsqueda y el acceso ininterrumpidos a recursos remotos en el Editor del sitio. Para cualquier otro caso de uso que requiera que el cuerpo de recursos completo esté disponible en Sites, considere migrar los recursos de forma masiva en lugar de aprovechar los recursos conectados.
 
@@ -42,11 +42,11 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 * Los usuarios forman parte de los grupos correspondientes en cada implementación.
 * Para [!DNL Adobe Experience Manager] tipos de implementación, se cumple uno de los criterios admitidos. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] funciona con [!DNL Experience Manager] 6.5. Para obtener más información sobre cómo funciona esta funcionalidad en [!DNL Experience Manager] 6.5, véase [Recursos conectados en [!DNL Experience Manager] 6,5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6,5 [!DNL Sites] en AMS | [!DNL Experience Manager] 6,5 [!DNL Sites] on-premise |
-   |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Compatible | Compatible | Compatible  |
-   | **[!DNL Experience Manager]6,5 [!DNL Assets] en AMS** | Compatible | Compatible | Compatible  |
-   | **[!DNL Experience Manager]6,5 [!DNL Assets] on-premise** | No compatible | No compatible | No compatible |
+  | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6,5 [!DNL Sites] en AMS | [!DNL Experience Manager] 6,5 [!DNL Sites] on-premise |
+  |---|---|---|---|
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Compatible | Compatible | Compatible  |
+  | **[!DNL Experience Manager]6,5 [!DNL Assets] en AMS** | Compatible | Compatible | Compatible  |
+  | **[!DNL Experience Manager]6,5 [!DNL Assets] on-premise** | No compatible | No compatible | No compatible |
 
 ### Formatos de archivo compatibles {#mimetypes}
 
@@ -144,7 +144,7 @@ Puede comprobar la conectividad entre los [!DNL Sites] implementaciones y [!DNL 
 ## Uso de recursos de Dynamic Media {#dynamic-media-assets}
 
 
-Con Recursos conectados, puede utilizar recursos de imagen procesados por [!DNL Dynamic Media] desde la implementación remota de DAM en páginas de Sites y aproveche las funcionalidades de Dynamic Media, como los ajustes preestablecidos de recorte inteligente y de imagen.
+Con Recursos conectados, puede utilizar recursos de imagen procesados por [!DNL Dynamic Media] desde la implementación remota de DAM en páginas de Sites y utilice las funcionalidades de Dynamic Media, como los ajustes preestablecidos de recorte inteligente y de imagen.
 
 Para usar [!DNL Dynamic Media] con recursos conectados:
 
@@ -356,11 +356,11 @@ Para solucionar errores comunes, siga estos pasos:
 
 * Si no puede acceder a la implementación remota de DAM desde el [!DNL Sites] implementación, asegúrese de que las cookies entre sitios estén permitidas y [compatibilidad con cookies del mismo sitio](/help/security/same-site-cookie-support.md) está configurado. Si las cookies entre sitios están bloqueadas, las implementaciones de [!DNL Experience Manager] no se puede autenticar. Por ejemplo, [!DNL Google Chrome] en el modo incógnito puede bloquear cookies de terceros. Para permitir cookies en [!DNL Chrome] explorador, haga clic en el icono &quot;ojo&quot; en la barra de direcciones y vaya a **El sitio no funciona** > **Bloqueado**, seleccione la URL del sitio remoto DAM y permita la cookie del token de inicio de sesión. Como alternativa, consulte [cómo habilitar cookies de terceros](https://support.google.com/chrome/answer/95647).
 
-   ![Error de cookie en el explorador Chrome en modo de incógnito](assets/chrome-cookies-incognito-dialog.png)
+  ![Error de cookie en el explorador Chrome en modo de incógnito](assets/chrome-cookies-incognito-dialog.png)
 
 * Si no se recuperan las referencias remotas y el resultado es un mensaje de error, compruebe si [!DNL Sites] la implementación está disponible y compruebe si hay problemas de conectividad de red. Vuelva a intentarlo más tarde para comprobarlo. [!DNL Assets] la implementación intenta establecer conexión dos veces con [!DNL Sites] y, a continuación, informa de un error.
 
-   ![error al recuperar las referencias remotas del recurso](assets/reference-report-failure.png)
+  ![error al recuperar las referencias remotas del recurso](assets/reference-report-failure.png)
 
 **Consulte también**
 

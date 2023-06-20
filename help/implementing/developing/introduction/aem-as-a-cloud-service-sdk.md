@@ -2,9 +2,9 @@
 title: SDK de AEM as a Cloud Service
 description: AEM Descripción general del Kit de desarrollo de software as a Cloud Service de la
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1176'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ Cloud Manager ejecuta los mismos pasos al implementar en entornos de nube. La re
 
 Lo es *recomendado* para actualizarlo al menos después de una versión de mantenimiento mensual.
 
-Lo es *opcional* para actualizarlo después de cualquier versión de mantenimiento diaria. AEM Se informará a los clientes cuando su instancia de producción se haya actualizado correctamente a una nueva versión de la. En las versiones de mantenimiento diarias, no se espera que el nuevo SDK haya cambiado significativamente, si es que lo ha hecho. AEM Aun así, se recomienda actualizar ocasionalmente el entorno de desarrollador de la aplicación local con el SDK más reciente y, a continuación, volver a compilar y probar la aplicación personalizada. La versión de mantenimiento mensual generalmente incluye cambios más impactantes y, por lo tanto, los desarrolladores deben actualizar, reconstruir y probar inmediatamente.
+Lo es *opcional* para actualizarlo después de cualquier versión de mantenimiento diaria. AEM Se informa a los clientes de cuando su instancia de producción se ha actualizado correctamente a una nueva versión de. En las versiones de mantenimiento diarias, no se espera que el nuevo SDK haya cambiado significativamente, si es que lo ha hecho. AEM Aun así, se recomienda actualizar ocasionalmente el entorno de desarrollador de la aplicación local con el SDK más reciente y, a continuación, volver a compilar y probar la aplicación personalizada. La versión de mantenimiento mensual generalmente incluye cambios más impactantes y, por lo tanto, los desarrolladores deben actualizar, reconstruir y probar inmediatamente.
 
 A continuación se muestra el procedimiento recomendado para actualizar un entorno local:
 
@@ -69,7 +69,7 @@ A continuación se muestra el procedimiento recomendado para actualizar un entor
 1. El contenido de la prueba de desarrollo local debe almacenarse por separado para que no se implemente como parte de la generación de canalización de Cloud Manager. Esto se debe a que solo necesita utilizarse para el desarrollo local
 1. Detener el inicio rápido en ejecución
 1. Mover el `crx-quickstart` Carpeta de a una carpeta diferente para un mantenimiento seguro
-1. AEM Tenga en cuenta la nueva versión de la aplicación, que se indica en Cloud Manager (se utilizará para identificar la nueva versión de QuickStart Jar que se descargará más adelante)
+1. AEM Tenga en cuenta la nueva versión de la aplicación, que se indica en Cloud Manager (se utiliza para identificar la nueva versión de QuickStart Jar que se descargará más adelante)
 1. AEM Descargue el JAR de QuickStart cuya versión coincida con la versión de la interfaz de usuario de producción desde el Portal de distribución de software
 1. Cree una carpeta completamente nueva y coloque el nuevo Jar de inicio rápido en ella
 1. Inicie el nuevo QuickStart con los modos de ejecución deseados (ya sea cambiando el nombre del archivo o pasando los modos de ejecución a través de `-r`).
@@ -91,5 +91,5 @@ Para poder reutilizar paquetes de contenido que contengan los valores cifrados, 
 
 * Cuando inicie quickstart.jar local por primera vez, asegúrese de añadir el siguiente parámetro: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Se recomienda, pero es opcional, agregarlo siempre.
 * La primera vez que inició una instancia, cree un paquete que contenga un filtro para la raíz &quot;`/etc/key`&quot;. Esto mantendrá el secreto para reutilizarlo en todos los entornos para los que desee reutilizarlo
-* Exporte cualquier contenido mutable que contenga secretos o busque los valores cifrados mediante `/crx/de` para añadirlo al paquete que se reutilizará en todas las instalaciones
-* Siempre que cree una nueva instancia (para reemplazarla por una nueva versión o como varios entornos de desarrollo deben compartir las credenciales para realizar pruebas), instale el paquete producido en los pasos 2 y 3 para poder reutilizar el contenido sin necesidad de volver a configurarlo manualmente. Esto se debe a que ahora la clave criptográfica está sincronizada.
+* Exporte cualquier contenido mutable que contenga secretos o busque los valores cifrados mediante `/crx/de` para añadirlo al paquete que se reutiliza en todas las instalaciones
+* Siempre que cree una nueva instancia (para reemplazarla por una nueva versión o como varios entornos de desarrollo deben compartir las credenciales para la prueba), instale el paquete producido en los pasos 2 y 3 para poder reutilizar el contenido sin necesidad de volver a configurarlo manualmente. Esto se debe a que ahora la clave criptográfica está sincronizada.

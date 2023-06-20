@@ -4,10 +4,10 @@ description: Conozca las prácticas recomendadas recopiladas por los equipos de 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 100%
+source-wordcount: '1429'
+ht-degree: 95%
 
 ---
 
@@ -29,8 +29,8 @@ Tenga en cuenta que se puede crear una Live Copy mediante una de las acciones si
 
 Los beneficios adicionales de utilizar una configuración de modelo son que:
 
-* Permiten que el autor use la opción de **Despliegue** en un modelo para insertar explícitamente modificaciones a Live Copies que heredan de este modelo.
-* Permiten que el autor utilice **Crear sitio** para seleccionar idiomas fácilmente y configurar la estructura de la Live Copy.
+* Permiten que el autor use **Despliegue** opción de un modelo para insertar explícitamente modificaciones en Live Copies que heredan de este modelo.
+* Permitir que el autor utilice **Crear sitio** para seleccionar idiomas fácilmente y configurar la estructura de la Live Copy.
 * Definen una configuración de despliegue predeterminada para Live Copies que tengan una relación con el modelo.
 
 En caso de que no se haga referencia a una configuración de modelo, los despliegues solo se pueden iniciar desde las propias Live Copies, lo que básicamente extrae contenido de la fuente.
@@ -48,7 +48,7 @@ En general, la regla de despliegue en MSM con respecto a la sincronización de c
 * Los componentes se despliegan sincronizando cualquier recurso contenido en el modelo.
 * Los contenedores solo sincronizan el recurso actual.
 
-Esto significa que los componentes se tratan como un acumulado y, en un despliegue, el componente en sí y todos sus elementos secundarios se sustituyen por los de los modelos. Esto significa que si se agrega un recurso a un componente de este tipo localmente, se reemplazará por el contenido del modelo al desplegarse.
+Esto significa que los componentes se tratan como un acumulado y, en un despliegue, el componente en sí y todos sus elementos secundarios se sustituyen por los de los modelos. Esto significa que si se agrega un recurso a un componente de este tipo localmente, se pierde en el contenido del modelo al desplegarse.
 
 Para admitir el anidado de componentes de modo que los componentes añadidos localmente se mantengan en un despliegue, el componente debe declararse como contenedor.
 

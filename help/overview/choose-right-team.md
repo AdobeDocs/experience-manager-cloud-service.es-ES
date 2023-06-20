@@ -2,10 +2,10 @@
 title: Personas adecuadas, funciones correctas
 description: Personas adecuadas, funciones correctas
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -78,4 +78,4 @@ Ahora que sabe qué funciones son necesarias, consulte el gráfico siguiente par
 
 >[!TIP]
 >
-> Obtenga más información sobre Adobe Experience Cloud y aproveche los recursos en [Experience League](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager) y obtenga la certificación mediante el [Aprendizaje digital de Adobe](https://learning.adobe.com/certification.html).
+> Obtenga más información acerca de Adobe Experience Cloud y utilice los recursos en [Experience League](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager) y obtenga la certificación mediante [Adobe Aprendizaje digital](https://learning.adobe.com/certification.html).

@@ -2,10 +2,10 @@
 title: Encabezado y sin encabezado en AEM
 description: Los proyectos de AEM se pueden implementar en un modelo con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 100%
+source-wordcount: '1007'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Las aplicaciones de una sola página (SPA) suelen ser el destino del contenido q
 
 ## Ejemplo de la tienda web {#web-shop-example}
 
-Digamos que tiene una tienda web existente para su empresa como SPA. Aquí encontrará todos los detalles e imágenes de productos. A continuación, introduzca AEM para impulsar sus esfuerzos de marketing, como sitios promocionales, blogs y contenido de campaña. ¿Cómo se integran los dos? AEM permite una amplia gama de opciones:
+Digamos que tiene una tienda web existente para su empresa como SPA. Aquí encontrará todos los detalles e imágenes de productos. AEM A continuación, le presentamos a los usuarios de para que impulsen sus esfuerzos de marketing, como sitios promocionales, blogs y contenido de campañas. ¿Cómo se integran los dos? AEM permite una amplia gama de opciones:
 
 * **Permita que los sistemas funcionen de forma independiente.**
 * **Proporcione contenido limitado de AEM a través de GraphQL a la tienda web.** Los autores pueden crear el contenido en AEM, pero solo se puede ver a través de las SPA de la tienda web.

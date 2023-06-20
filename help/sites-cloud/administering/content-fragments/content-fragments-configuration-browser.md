@@ -1,13 +1,13 @@
 ---
 title: 'Fragmentos de contenido: explorador de configuración'
-description: Aprenda a habilitar la funcionalidad Fragmento de contenido y GraphQL en el explorador de configuración para aprovechar las funciones de envío sin encabezado de AEM.
+description: Obtenga información sobre cómo habilitar la funcionalidad Fragmento de contenido y GraphQL AEM en el Explorador de configuración para utilizar las funciones de envío sin encabezado de la aplicación de la configuración de la aplicación para utilizar las funciones de envío sin encabezado de la aplicación.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,6 @@ Antes de usar fragmentos de contenido, debe usar el **Explorador de configuraci�
 >
 >* la opción **Crear** no estará disponible para crear nuevos modelos.
 >* no podrá [seleccionar la configuración de Sites para crear el punto de conexión relacionado](/help/headless/graphql-api/graphql-endpoint.md).
-
 
 Para habilitar la funcionalidad de fragmento de contenido, debe hacer lo siguiente:
 
@@ -57,21 +56,19 @@ Para [usar ciertas funcionalidades de fragmentos de contenido](#creating-a-conte
 >* Las consultas persistentes se guardarán (aún) de forma relevante para la configuración principal (raíz).
 
 
-
 1. Vaya a **Herramientas**, **General**, luego abra el **Explorador de configuración**.
 
 1. Use **Crear** para abrir el cuadro de diálogo, donde:
 
    1. Especifique un **Título**.
-   1. El **Nombre** se convertirá en el nombre de nodo en el repositorio.
-      * Se generará automáticamente en función del título y se ajustará según las [convenciones de nomenclatura de AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   1. El **Nombre** se convierte en el nombre de nodo del repositorio.
+      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de.](/help/implementing/developing/introduction/naming-conventions.md)
       * Puede ajustarlo si es necesario.
    1. Para habilitar su uso, seleccione
       * **Modelos de fragmentos de contenido**
       * **Consultas persistentes de GraphQL**
 
       ![Definir configuración](assets/cfm-conf-01.png)
-
 
 1. Seleccione **Crear** para guardar la definición.
 

@@ -2,9 +2,9 @@
 title: Edición de lanzamientos
 description: Después de crear un lanzamiento para su página (o conjunto de páginas), puede editar el contenido en la copia de lanzamiento de las páginas.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '553'
 ht-degree: 52%
 
 ---
@@ -27,7 +27,6 @@ Al editar la página, verá una indicación en la barra de herramientas superior
 >No se le permite mover una página dentro de un lanzamiento. Si se intenta esta acción, se generará un mensaje de advertencia:
 >
 >* Advertencia: Esta página es el origen de un lanzamiento. No se permite mover la página.
-
 
 ### Editar páginas de lanzamiento sujetas a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -68,7 +67,7 @@ Puede añadir en cualquier momento las páginas en el rango de páginas de orige
       * Seleccione **Editar**.
    * [Referencias (consola Sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
       * Seleccione **Editar lanzamiento**. 
-      * Se mostrarán las páginas de origen.
+      * Se muestran las páginas de origen.
 1. Realice los cambios necesarios y confirme haciendo clic en **Guardar**.
 
 >[!NOTE]
@@ -84,7 +83,7 @@ Las propiedades del lanzamiento se pueden editar en cualquier momento:
       * Seleccionar **Propiedades**.
    * [Referencias (consola Sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
       * Seleccione **Editar propiedades**. 
-      * Se mostrarán los detalles.
+      * Se muestran los detalles.
 1. Realice los cambios necesarios y confirme haciendo clic en **Guardar**.
    * Consulte [Lanzamientos: el orden de los eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) para obtener información sobre el propósito y la interacción de los campos **Fecha de lanzamiento** y **Listo para producción**.
 

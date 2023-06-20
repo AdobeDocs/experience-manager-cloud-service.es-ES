@@ -2,16 +2,16 @@
 title: Compatibilidad con OAuth2 para el servicio de correo
 description: Compatibilidad con Oauth2 para el servicio de correo en Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 57667c1dda50b2a6a4ac2fccc428f5ccb252563c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 95%
+source-wordcount: '717'
+ht-degree: 84%
 
 ---
 
 # Compatibilidad con OAuth2 para el servicio de correo {#oauth2-support-for-the-mail-service}
 
-AEM as a Cloud Service ofrece compatibilidad con OAuth2 para su servicio de correo integrado, con el fin de permitir que las organizaciones se adhieran a los requisitos de correo electrónico seguros.
+AEM as a Cloud Service ofrece compatibilidad con OAuth2 para su servicio de correo integrado, que permite a las organizaciones adherirse a los requisitos de correo electrónico seguros.
 
 Puede configurar OAuth para varios proveedores de correo electrónico. A continuación se proporcionan instrucciones paso a paso para configurar el servicio de correo de AEM para autenticarse mediante OAuth2 con Outlook de Microsoft Office 365. Otros proveedores se pueden configurar de manera similar.
 
@@ -46,15 +46,15 @@ Para obtener más información sobre el servicio de correo de AEM as a Cloud Ser
 
 Para recapitular, necesitará la siguiente información para configurar OAuth2 para el servicio de correo en el lado AEM:
 
-* La URL de autenticación, que se construirá con el ID del inquilino. Tendrá esta forma: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* La URL del token, que se construirá con el ID del inquilino. Tendrá esta forma: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* La URL de actualización, que se construirá con el ID del inquilino. Tendrá esta forma: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* La URL de autenticación, que se construye con el ID del inquilino. Tendrá esta forma: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* La URL del token, que se construye con el ID del inquilino. Tendrá esta forma: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* La URL de actualización, que se construye con el ID del inquilino. Tendrá esta forma: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * El ID de cliente
 * El secreto del cliente
 
 ### Generación del token de actualización {#generating-the-refresh-token}
 
-A continuación, debe generar el token de actualización, que formará parte de la configuración OSGi en un paso posterior.
+A continuación, debe generar el token de actualización, que forma parte de la configuración OSGi en un paso posterior.
 
 Para ello, siga estos pasos:
 

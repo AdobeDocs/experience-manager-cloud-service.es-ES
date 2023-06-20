@@ -2,10 +2,10 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de la versión de Experience Manager para 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 98%
+source-wordcount: '1939'
+ht-degree: 92%
 
 ---
 
@@ -48,9 +48,9 @@ La versión 2.9.0 de los [componentes principales](https://experienceleague.adob
 
 ## Novedades de Foundations en AEM as a Cloud Service {#foundations}
 
-Los tiempos de creación de Proyectos AEM mejorarán si se eliminan todas las referencias del archivo pom.xml del proyecto de AEM al repositorio remoto`https://downloads.experiencecloud.adobe.com/content/maven/public`.
+AEM AEM los tiempos de creación de proyectos mejorarán si se eliminan todas las referencias del archivo pom.xml del proyecto de la aplicación al repositorio remoto. `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-AEM as a Cloud Service Jar de API de SDK, que anteriormente estaba alojado en esa ubicación, ahora se encuentra en Maven Central, que es el repositorio de artefactos predeterminado de Maven.
+AEM El Jar de API de SDK as a Cloud Service, que anteriormente estaba alojado en esa ubicación, ahora se encuentra en Maven Central, que es el repositorio de artefactos predeterminado de Maven.
 
 ## Novedades de Cloud Manager {#cloud-manager}
 
@@ -60,11 +60,11 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 * Un usuario con el rol de *Propietario del negocio* en Cloud Manager ahora puede eliminar un programa de zona protegida para pruebas de la página de aterrizaje (con el botón de acción rápida en tarjeta de programa) o desde el programa.
 
-   Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
+  Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
 
 * Un usuario de programa de zona protegida en el rol de *Propietario del negocio* o *Administrador de implementación* en Cloud Manager ahora puede eliminar su conjunto de entornos de producción y ensayo en la interfaz de usuario de Cloud Manager. La opción Eliminar ya está disponible en la tarjeta de entorno de la página **Información general de Programas** y en la página **Entornos**. Al seleccionar la opción de eliminación en producción o fase también se eliminan las otras del conjunto.
 
-   Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
+  Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
 
 * Marcas de entrenador en la página de aterrizaje para informar e instruir al usuario sobre la navegación básica.
 
@@ -72,15 +72,15 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 * Ahora hay disponible una página **LEARN** en Cloud Manager, a la que se puede acceder desde la barra de navegación superior. Esta página incluye recursos para ayudar a los usuarios a conocer los flujos de trabajo utilizados con más frecuencia según su rol asignado en Cloud Manager.
 
-* Los Programas de zona protegida ahora se identifican mediante un distintivo de **Zona protegida** que se mostrará en la tarjeta de programa de la página de aterrizaje junto al nombre del programa en la página **Información general del Programa**.
+* Los Programas de zona protegida ahora se identifican mediante una **Sandbox** que se muestra en la tarjeta de programa de la página de aterrizaje junto al nombre del programa en la **Resumen del programa** página.
 
 * Un usuario con el rol de SysAdmin ahora tiene acceso con un solo clic a la ubicación de Admin Console desde la que se pueden administrar los roles de los usuarios o los permisos de Cloud Manager. Ahora está disponible el botón **Administrar acceso** en la página de aterrizaje junto al botón **Agregar Programa**.
 
-   Consulte [Tareas de SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=es#sysadmin-tasks) para obtener más información.
+  Consulte [Tareas de SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=es#sysadmin-tasks) para obtener más información.
 
 * Un usuario con el rol de SysAdmin ahora tiene acceso con un solo clic a la instancia de autor directamente desde Cloud Manager.
 
-   Consulte [Administración del acceso a la instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=es#manage-access-aem) para obtener más información.
+  Consulte [Administración del acceso a la instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=es#manage-access-aem) para obtener más información.
 
 * El registro de generación ahora incluye la lista de artefactos descubiertos, incluidos los paquetes de contenido omitido.
 
@@ -98,7 +98,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 ### Problemas conocidos {#known-issues-cm}
 
-* Los Entornos dentro de un programa de zona protegida hibernarán cuando no se detecte ninguna actividad durante un tiempo determinado. Este estado no se observa en Cloud Manager. Sin embargo, el estado se puede observar a través de Developer Console. Esto se solucionará en una próxima versión.
+* Los entornos de un programa de zona protegida hibernan cuando no se detecta ninguna actividad durante un tiempo determinado. Este estado no se observa en Cloud Manager. Sin embargo, el estado se puede observar a través de Developer Console. Esto se solucionará en una próxima versión.
 
 * El vínculo a Developer Console directamente desde Cloud Manager no mostrará la opción de anular la hibernación o hibernar el entorno de un programa de zona protegida para pruebas. Para solucionarlo, una vez en Developer Console, agregue el patrón `#release-cm-p1234-e5678` al final de la dirección URL, donde *1234* es el ID de Programa y *5678* es el ID del entorno. Esto se solucionará en una próxima versión.
 
@@ -176,7 +176,7 @@ La versión incorpora las siguientes mejoras adicionales:
 * Capacidad para volver a procesar recursos con perfiles de procesamiento de recursos, lo que permite que los usuarios tengan un control total del proceso (ejecute el procesamiento completo de recursos, aplique perfiles de procesamiento específicos y decida si se debe ejecutar el flujo de trabajo posterior al procesamiento).
 * Las consultas de búsqueda devuelven los resultados más rápido ahora que la instancia de clúster subyacente se ha reiniciado entre bastidores (la ejecución de búsqueda inicial podría durar más en un caso anterior).
 * Ordene por &quot;Nombre&quot; cuando visualice recursos en la vista de listas en la interfaz de recursos y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
-* Ordene en &quot;Crear&quot; (Fecha) cuando visualice recursos en la vista de listas en la interfaz de recursos y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
+* Ordene en &quot;Creado&quot; (Fecha) cuando visualice recursos en la vista de listas en la interfaz de recursos y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
 * Compatibilidad para convertir archivos EPS en imágenes mediante microservicios de recursos.
 
 ### Correcciones de errores {#assets-bug-fixes}
