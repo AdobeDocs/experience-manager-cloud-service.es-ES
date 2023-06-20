@@ -2,10 +2,10 @@
 title: Uso de versiones de página
 description: Crear, comparar y restaurar versiones de una página
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 69%
+source-wordcount: '1502'
+ht-degree: 62%
 
 ---
 
@@ -46,7 +46,7 @@ Puede crear una versión de su recurso desde:
 
 1. Confirme la nueva versión con **Crear**.
 
-   La información en la línea de tiempo se actualizará para indicar la nueva versión.
+   La información de la cronología se actualiza para indicar la nueva versión.
 
 ### Crear una nueva versión: creación con un recurso seleccionado {#creating-a-new-version-create-with-a-selected-resource}
 
@@ -56,7 +56,7 @@ Puede crear una versión de su recurso desde:
 1. Se abre el mismo cuadro de diálogo. Si procede, puede introducir un valor **Etiqueta** y **Comentario.**
 1. Confirme la nueva versión con **Crear**.
 
-La línea de tiempo se abrirá con información actualizada para indicar la nueva versión. 
+La cronología se abre con la información actualizada para indicar la nueva versión.
 
 ## Restablecimiento de versiones {#reinstating-versions}
 
@@ -78,7 +78,7 @@ Una vez creada una versión de la página, existen varios métodos para restable
 
 >[!NOTE]
 >
->Al restablecer una página, la versión creada formará parte de una rama nueva.
+>Al restablecer una página, la versión creada forma parte de una rama nueva.
 >
 >Como ejemplo:
 >
@@ -99,7 +99,7 @@ Hasta **Revertir** la página seleccionada a una versión anterior:
 
    ![Volver a esta versión](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Seleccionar **Volver a esta versión**. La versión seleccionada se restaurará y la información de la cronología se actualizará.
+1. Seleccionar **Volver a esta versión**. La versión seleccionada se restaura y la información de la cronología se actualiza.
 
 ### Restaurar versión {#restore-version}
 
@@ -112,10 +112,11 @@ Este método se puede utilizar para restaurar versiones de páginas especificada
    >[!NOTE]
    >
    >Si:
+   >
    >* ha seleccionado una sola página, que nunca ha tenido páginas secundarias,
    >* o ninguna de las páginas de la carpeta tiene versiones,
    >
-   >A continuación, la pantalla estará vacía, ya que no hay versiones aplicables.
+   >La pantalla está vacía porque no hay versiones aplicables.
 
 1. Se muestran las versiones disponibles:
 
@@ -141,7 +142,7 @@ Este método puede utilizarse para restaurar una versión de un árbol en una fe
 
 1. Vaya a, y [seleccione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), la carpeta requerida.
 
-1. Seleccione **Restaurar**, luego **Restaurar árbol** desde la parte superior de la [barra de herramientas acciones](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). Se mostrará la última versión del árbol:
+1. Seleccione **Restaurar**, luego **Restaurar árbol** desde la parte superior de la [barra de herramientas acciones](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). Se muestra la última versión del árbol:
 
    ![Restaurar árbol](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
@@ -225,7 +226,7 @@ Deformación de tiempo es un [modo](/help/sites-cloud/authoring/fundamentals/env
 Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en un punto temporal seleccionado. Sin embargo, debido a las complejidades de la creación continua de contenido en AEM, esto no siempre es posible. Estas limitaciones deben tenerse en cuenta al utilizar Deformación de tiempo.
 
 * **Deformación de tiempo funciona dependiendo de las páginas publicadas**: Deformación de tiempo solo funciona a la perfección si ya ha publicado la página. En caso contrario, Deformación de tiempo mostrará la página actual en el entorno de creación.
-* **Deformación de tiempo emplea las versiones de página**: si se desplaza a una página que se ha eliminado del repositorio, se procesa correctamente si aún hay versiones antiguas de la página en el repositorio.
+* **Deformación de tiempo emplea versiones de página** : Si se desplaza a una página que se ha eliminado del repositorio, se procesa correctamente si aún hay versiones antiguas de la página disponibles en el repositorio.
 * **Las versiones eliminadas afectan a la función Deformación de tiempo**: si las versiones se eliminan del repositorio, Deformación de tiempo no puede mostrar resultados correctos.
 * **Deformación de tiempo es de solo lectura**: no se puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, deberá hacerlo manualmente mediante la [restauración](#revert-to-a-version).
 * **Deformación de tiempo se basa únicamente en el contenido de la página**: si los elementos para procesar el sitio web (código, CSS, recursos e imágenes, etc.) cambian, la vista será diferente de la original, ya que no hay versiones de dichos elementos en el repositorio.

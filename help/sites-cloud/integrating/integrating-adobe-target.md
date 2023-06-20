@@ -4,10 +4,10 @@ description: Integración con Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 98%
+source-wordcount: '1042'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ En ambos casos, tenga en cuenta que:
 
 * De forma predeterminada, el código de cliente (si se agrega primero) también se copia automáticamente en el campo ID de inquilino.
 * Tiene la opción de cambiar el conjunto de ID de inquilino predeterminado.
-* En consecuencia, las llamadas de servidor a Target se basarán en el ID de inquilino y las llamadas del lado del cliente a Target se basarán en el código del cliente.
+* Por lo tanto, las llamadas de servidor a Target se basan en el ID de inquilino y las llamadas del lado del cliente a Target se basan en el código del cliente.
 
 Como se ha dicho anteriormente, el primer caso es el más común para AEM as a Cloud Service. En cualquier caso, asegúrese de que **ambos** contienen la información correcta según sus necesidades.
 
@@ -112,7 +112,7 @@ Una propiedad es un contenedor que se rellena con extensiones, reglas y elemento
 3. Seleccione el botón **Configurar**. Observe la ventana de configuración con las credenciales de la cuenta de Target importadas y la versión de at.js para esta extensión.
 4. Seleccione **Guardar** para añadir la extensión de Target a la propiedad de Launch. Debería poder ver la extensión de Target en la lista **Extensiones instaladas**.
    ![Guardar extensión](assets/configure_extension1.png "Guardar extensión")
-5. Repita los pasos anteriores para buscar la extensión **ContextHub de Adobe** e instálela (esto es necesario para la integración con parámetros contexthub, en función de los cuales se realizará el direccionamiento).
+5. Repita los pasos anteriores para buscar el **Adobe de ContextHub** amplíelo e instálelo (esto es necesario para la integración con parámetros contexthub, en función de los cuales se realiza el direccionamiento).
 
 ### Creación de un elemento de datos {#data-element}
 
@@ -130,7 +130,7 @@ En **Regla** definimos y ordenamos una secuencia de acciones, que se ejecutan en
 
 1. Agregue un conjunto de acciones como se muestra en la captura de pantalla.
    ![Acciones](assets/rules1.png "Acciones")
-2. En Agregar parámetros a todos los mboxes, agregue el elemento de datos configurado anteriormente (consulte el elemento de datos anterior) al parámetro que se enviará en la llamada de mbox.
+2. En Añadir parámetros a todos los mboxes, añada el elemento de datos configurado anteriormente (consulte el elemento de datos anterior) al parámetro que se envía en la llamada de mbox.
    ![Mbox](assets/map_data1.png "Acciones")
 
 ### Generar y publicar {#build-publish}

@@ -2,10 +2,10 @@
 title: Guía rápida de introducción para la creación de páginas
 description: Guía rápida y de alto nivel para empezar a crear contenido de página.
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 67%
+source-wordcount: '1572'
+ht-degree: 62%
 
 ---
 
@@ -90,11 +90,11 @@ La forma de seleccionar una página depende de la vista que utilice en la consol
 
 1. Vista de columna:
 
-   * Haga clic o toque en la miniatura del recurso en cuestión: la vista en miniatura mostrará una marca de verificación para indicar que se ha seleccionado.
+   * Pulse o haga clic en la miniatura del recurso en cuestión: la miniatura muestra una marca de verificación para mostrar que se ha seleccionado.
 
 1. Vista en lista:
 
-   * Haga clic o toque en la miniatura del recurso en cuestión: la vista en miniatura mostrará una marca de verificación para indicar que se ha seleccionado.
+   * Pulse o haga clic en la miniatura del recurso en cuestión: la miniatura muestra una marca de verificación para mostrar que se ha seleccionado.
 
 1. Vista de tarjeta:
 
@@ -103,7 +103,7 @@ La forma de seleccionar una página depende de la vista que utilice en la consol
       * En un dispositivo móvil: pulsar y mantener pulsada la tarjeta.
       * En un dispositivo de escritorio: usar la [acción rápida](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) representada por el icono de visto:
 
-   * En la tarjeta se superpondrá una marca de verificación que indica que se ha seleccionado la página.
+   * La tarjeta se superpone con una marca de verificación para mostrar que se ha seleccionado la página.
 
    ![Tarjeta de ejemplo](/help/sites-cloud/authoring/assets/card.png)
 
@@ -259,7 +259,7 @@ Todas estas acciones se pueden activar mediante:
 
    * [Eliminar](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
-      * Se le solicitará que confirme la acción.
+      * Se le pedirá que confirme la acción.
 
    >[!NOTE]
    >
@@ -319,8 +319,8 @@ Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan vers
 
    * **Volver a esta versión**
 
-      * Se restablecerá la versión.
+      * Se restaura la versión.
 
    * **Mostrar diferencias**
 
-      * La página se abrirá resaltando las diferencias (entre las dos versiones).
+      * La página se abre con las diferencias (entre las dos versiones) resaltadas.

@@ -2,16 +2,16 @@
 title: Edición de las propiedades de página
 description: Definir las propiedades necesarias para una página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 95%
+source-wordcount: '2340'
+ht-degree: 82%
 
 ---
 
 # Edición de las propiedades de página   {#editing-page-properties}
 
-Puede definir las propiedades para una página. Estas pueden variar según la naturaleza de la página. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy, mientras que otras no lo están, y la información de la Live Copy estará disponible según corresponda.
+Puede definir las propiedades para una página. Estas pueden variar según la naturaleza de la página. Por ejemplo, algunas páginas podrían estar conectadas a una Live Copy, mientras que otras no lo están y la información de la Live Copy está disponible según corresponda.
 
 ## Propiedades de página {#page-properties}
 
@@ -26,7 +26,7 @@ Las propiedades se distribuyen entre varias pestañas.
    * **Etiquetas**: aquí puede agregar o quitar etiquetas de la página al actualizar la lista en el cuadro de diálogo de selección.
       * Después de seleccionar una etiqueta, aparece debajo del cuadro de selección. Puede quitar una etiqueta de esta lista utilizando la x.
       * Se puede especificar una etiqueta completamente nueva si se escribe el nombre en un cuadro de selección vacío.
-         * La nueva etiqueta se creará cuando pulse Intro.
+         * La etiqueta nueva se crea al pulsar Intro.
          * La nueva etiqueta se mostrará con una pequeña estrella a la derecha que indicará que es una etiqueta nueva.
       * Con la funcionalidad desplegable puede seleccionar etiquetas existentes.
       * Aparece una x cuando pasa el ratón sobre una entrada de etiqueta en el cuadro de selección, que se puede utilizar para quitar esa etiqueta para esa página.
@@ -40,7 +40,7 @@ Las propiedades se distribuyen entre varias pestañas.
    * **Anotaciones de marca**
 
       * **Sobrescribir**: marque para definir el slug de marca en esta página.
-         * El valor lo heredará cualquier página secundaria a menos que también tenga valores establecidos de **Sobrescribir**.
+         * El valor lo hereda cualquier página secundaria a menos que también tenga su **Anular** valores establecidos.
       * **Sobrescribir valor**: el texto del slug de marca que se añadirá al título de la página.
          * El valor se anexa al título de la página después de un carácter de barra vertical como “Ciclismo en Toscana | Siempre listo para WKND”
 
@@ -50,8 +50,8 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Títulos y descripción de Más**
 
-   * **Título de página**: un título que se usará en la página. Normalmente se utiliza en los componentes de título. Si está vacío, se utilizará el **Título** de la página.
-   * **Título de navegación**: puede especificar un título diferente para utilizarlo en la navegación (por ejemplo, si requiere algo más conciso). Si la opción se deja vacía, se usará el **Título**.
+   * **Título de página**: un título que se usará en la página. Normalmente se utiliza en los componentes de título. Si está vacío, la variable **Título** se utiliza.
+   * **Título de navegación** : puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea algo más conciso). Si está vacío, la variable **Título** se utiliza.
    * **Subtítulo**: un subtítulo que se usará en la página.
    * **Descripción**: la descripción de la página, su propósito o cualquier otro detalle que quiera añadir.
 
@@ -62,15 +62,15 @@ Las propiedades se distribuyen entre varias pestañas.
   > Consulte [Horas de activación y desactivación: configuración de activador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener detalles sobre cómo configurar la replicación automática relacionada.
 
   >[!NOTE]
-  >Si el **Tiempo de activación** o el **Tiempo de desactivación** se sitúan en el pasado y se configura la replicación automática, la acción relevante se activará de inmediato.
+  >Si la variable **Tiempo de activación** o **Tiempo de inactividad** se encuentra en el pasado, y se configura la replicación automática, la acción relevante se activa inmediatamente.
 
-   * **Tiempo de activación**: la fecha y hora a las que se hará visible (procesada) la página publicada en el entorno de publicación. La página debe publicarse, ya sea de forma manual o mediante replicación automática preconfigurada.
+   * **Tiempo de activación** : La fecha y la hora a las que se hace visible (procesada) la página publicada en el entorno de publicación. La página debe publicarse, ya sea de forma manual o mediante replicación automática preconfigurada.
 
-      * Si ya se ha [publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), esta página se mantendrá inactiva (oculta) hasta que se procese a la hora especificada.
-      * Si no se publica y se configura para la replicación automática, la página se publicará automáticamente y, a continuación, se procesará a la hora especificada.
-      * Si no se publica y no está configurada para la replicación automática, la página no se publicará automáticamente, por lo que se verá un error 404 cuando se intente acceder a ella.
+      * Si ya [publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) esta página se mantiene inactiva (oculta) hasta que se procesa a la hora especificada.
+      * Si no se publica y se configura para la replicación automática, la página se publica automáticamente y, a continuación, se procesa a la hora especificada.
+      * Si no se publica y no se configura para la replicación automática, la página no se publica automáticamente, por lo que se ve un error 404 al intentar acceder a la página.
 
-   * **Tiempo de desactivación**: similar a **Tiempo de activación** y usado a menudo en combinación, define el momento en el que la página publicada se ocultará en el entorno de publicación.
+   * **Tiempo de inactividad** - Similar y usado a menudo en combinación con **Tiempo de activación**, define el momento en el que la página publicada se oculta en el entorno de publicación.
 
    * Deje estos campos (**Tiempo de activación** y **Tiempo de desactivación**) vacíos para las páginas que desea publicar de inmediato y disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
 
@@ -115,7 +115,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Configuración de plantilla**
 
-   * **Plantillas permitidas**: [define la lista de plantillas disponibles](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dentro de esta rama secundaria
+   * **Plantillas permitidas** - [Define la lista de plantillas disponibles](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dentro de esta subrama
 
 * **Requisito de autenticación**
 
@@ -133,7 +133,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **SEO**
 
-   * **URL canónica**: se puede usar para sobrescribir la dirección URL canónica de la página; si se deja en blanco, la dirección URL de la página será su dirección URL canónica.
+   * **URL canónica** : se puede utilizar para sobrescribir la URL canónica de la página; si se deja en blanco, la URL de la página es su URL canónica
 
    * **Etiquetas de robots**: seleccione las etiquetas de robots para controlar el comportamiento de los rastreadores de los motores de búsqueda.
 
@@ -141,7 +141,7 @@ Las propiedades se distribuyen entre varias pestañas.
      >
      >Algunas de las opciones entran en conflicto entre sí. En caso de conflicto, la opción más permisiva tiene prioridad.
 
-   * **Generar mapa del sitio**: cuando se selecciona, se genera un archivo sitemap.xml para esta página y sus descendientes.
+   * **Generar mapa del sitio** : cuando se selecciona, se genera un archivo sitemap.xml para esta página y sus descendientes
 
 ### Imágenes {#images}
 
@@ -253,7 +253,7 @@ A través de una configuración sencilla, el autor de contenido ahora puede habi
 
    * **Estrategia de almacenamiento en caché y frecuencia de actualización del contenido**: esta opción define el modelo de almacenamiento en caché para la PWA.
    * **Archivos para almacenar en caché para su uso sin conexión**
-      * **Almacenamiento en caché previo de archivos (previsualización técnica)**: estos archivos alojados en AEM se guardarán en la caché del explorador local cuando el trabajador de servicio se instale y antes de que se utilice.
+      * **Almacenamiento en caché previo de archivos (previsualización técnica)** AEM : los archivos alojados en los que se ha realizado la se guardan en la caché del explorador local cuando el trabajador de servicio se instala y antes de que se utilice
       * **Bibliotecas del lado del cliente**: bibliotecas del lado del cliente para almacenar en caché para la experiencia sin conexión.
       * **Inclusiones de rutas**: las solicitudes de red para las rutas definidas se interceptan y el contenido almacenado en caché se devuelve de acuerdo con la estrategia de almacenamiento en caché y frecuencia de actualización del contenido configurado.
       * **Exclusiones de rutas**: estos archivos nunca se almacenarán en caché, independientemente de la configuración del almacenamiento en caché previo de archivos e inclusiones de rutas.
@@ -320,7 +320,7 @@ Solo se pueden editar por lotes las siguientes páginas:
 
 * Las que compartan el mismo tipo de recurso.
 * Las que no formen parte de una Live Copy.
-   * Si alguna de las páginas está en una Live Copy, se mostrará un mensaje cuando se abran las propiedades. 
+   * Si alguna de las páginas está en una Live Copy, se muestra un mensaje cuando se abren las propiedades.
 
 Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 

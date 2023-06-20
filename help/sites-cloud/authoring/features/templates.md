@@ -2,16 +2,16 @@
 title: Creación de plantillas de página
 description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no es una tarea exclusiva para desarrolladores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '4595'
-ht-degree: 61%
+source-wordcount: '4579'
+ht-degree: 57%
 
 ---
 
 # Creación de plantillas de página   {#creating-page-templates}
 
-Al crear una página, debe seleccionar una plantilla, que se utilizará como base para crear la nueva página. La plantilla define la estructura de la página resultante, cualquier contenido inicial y los componentes que se pueden utilizar.
+Al crear una página, debe seleccionar una plantilla, que se utiliza como base para crear la nueva página. La plantilla define la estructura de la página resultante, cualquier contenido inicial y los componentes que se pueden utilizar.
 
 Con el **Editor de plantillas**, la creación y el mantenimiento de plantillas ya no es una tarea exclusiva para desarrolladores. También puede participar un tipo de usuario avanzado, que se denomina **autor de la plantilla**. Los desarrolladores siguen necesitando configurar el entorno, crear bibliotecas de clientes y crear los componentes que se van a utilizar, pero una vez que estos conceptos básicos están establecidos, el **autor de la plantilla** tiene la flexibilidad de crear y configurar plantillas sin un proyecto de desarrollo.
 
@@ -120,7 +120,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
    * **Nombre de la plantilla**
    * **Descripción**
 
-1. Seleccione **Crear**. Se mostrará una confirmación; seleccione **Abrir** para comenzar a editar la plantilla o **Listo** para volver a la consola de plantillas.
+1. Seleccione **Crear**. Se muestra una confirmación, seleccione **Abrir** para empezar a editar la plantilla o **Listo** para volver a la consola de plantillas.
 
    >[!NOTE]
    >
@@ -163,7 +163,7 @@ Para definir la miniatura de la plantilla:
 1. Seleccione si desea cargar una miniatura o hacer que se genere a partir del contenido de la plantilla.
    * Si desea cargar una miniatura, toque o haga clic en **Cargar imagen**
    * Si desea generar una miniatura, toque o haga clic en **Generar previsualización**
-1. Para ambos métodos se mostrará una previsualización de la miniatura.
+1. Para ambos métodos se muestra una previsualización de la miniatura.
    * Si no es satisfactorio, toque o haga clic en **Borrar** para cargar otra imagen o volver a generar la miniatura.
 1. Cuando esté satisfecho con la miniatura, toque o haga clic en **Guardar y cerrar**.
 
@@ -180,7 +180,7 @@ Una plantilla se puede habilitar o deshabilitar para que esté disponible o no d
 
 >[!CAUTION]
 >
->Una vez habilitada una plantilla, se mostrará una advertencia cuando el autor de la misma comience a actualizarla. Se informa al usuario de que se puede hacer referencia a la plantilla, por lo que cualquier cambio puede afectar a las páginas que hacen referencia a la plantilla.
+>Después de habilitar una plantilla, se muestra una advertencia cuando el autor de la misma empieza a actualizarla más. Se informa al usuario de que se puede hacer referencia a la plantilla, por lo que cualquier cambio puede afectar a las páginas que hacen referencia a la plantilla.
 
 1. En la **Consola de plantillas**, seleccione la plantilla.
 1. Seleccione **Activar** o **Desactivar** en la barra de herramientas y, de nuevo, en el cuadro de diálogo de confirmación.
@@ -244,7 +244,7 @@ Mientras que la opción **Política de la página** del menú **Información de 
 
 >[!CAUTION]
 >
->Si un autor empieza a editar una plantilla que ya se ha activado, se muestra una advertencia. Se informa al usuario de que se puede hacer referencia a la plantilla, por lo que cualquier cambio puede afectar a las páginas que hacen referencia a la plantilla.
+>Si un autor comienza a editar una plantilla que ya se ha habilitado, se muestra una advertencia. Se informa al usuario de que se puede hacer referencia a la plantilla, por lo que cualquier cambio puede afectar a las páginas que hacen referencia a la plantilla.
 
 ### Atributos de plantilla {#template-attributes}
 
@@ -262,7 +262,7 @@ Cuando los componentes están bloqueados, puede agregar contenido, que los autor
 
 #### Contenido inicial {#template-initial-content}
 
-Cuando un componente se ha desbloqueado, puede definir el [contenido inicial](#editing-a-template-initial-content-author) que se copiará a las páginas resultantes, creadas a partir de la plantilla. Estos componentes desbloqueados se pueden editar en las páginas resultantes.
+Cuando se ha desbloqueado un componente, puede definir lo siguiente [contenido inicial](#editing-a-template-initial-content-author) que se copia en las páginas resultantes, creadas a partir de la plantilla. Estos componentes desbloqueados se pueden editar en las páginas resultantes.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ Una vez añadido, cada componente se marca con:
 >
 >Al añadir un componente **Título** predefinido a la plantilla, contendrá la **estructura** de texto predeterminado.
 >
->Si lo cambia, y añade su propio texto, este texto actualizado se utilizará cuando se cree una página a partir de la plantilla.
+>Si lo cambia, y añade su propio texto, este texto actualizado se utiliza cuando se crea una página a partir de la plantilla.
 >
 >Si deja el texto predeterminado (estructura), el título tendrá de manera predeterminada el nombre de la página siguiente.
 
@@ -368,7 +368,7 @@ Para añadir una política nueva, seleccione el botón de adición situado junto
 
 ![Botón Añadir política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-La política existente seleccionada en la lista desplegable **Seleccionar política** se puede copiar como una política nueva mediante el botón de copia situado al lado de la lista desplegable. Se debe proporcionar un título nuevo en el campo **Título de la política**. De forma predeterminada, la política copiada tendrá el título **Copia de X**, en que X es el título de la política copiada.
+La política existente seleccionada en la lista desplegable **Seleccionar política** se puede copiar como una política nueva mediante el botón de copia situado al lado de la lista desplegable. Se debe proporcionar un título nuevo en el campo **Título de la política**. De forma predeterminada, el título de la política copiada es **Copia de X**, donde X es el título de la directiva copiada.
 
 ![Botón Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -427,7 +427,7 @@ La configuración de directiva y propiedades de un contenedor de diseño es simi
 
 >[!NOTE]
 >
->La configuración de una directiva es obligatoria para los componentes del contenedor, ya que le permite definir los componentes que estarán disponibles en el contenedor.
+>La configuración de una directiva es obligatoria para los componentes del contenedor, ya que le permite definir los componentes disponibles en el contenedor.
 
 La ventana de configuración se divide en dos, al igual que en el uso general de la ventana.
 
@@ -478,14 +478,14 @@ Los componentes se desbloquean o bloquean para definir si el contenido está dis
 Cuando se ha desbloqueado un componente:
 
 * Se muestra un indicador de candado abierto en el borde.
-* La barra de herramientas de componentes se ajustará en consecuencia.
+* La barra de herramientas de componentes se ajusta en consecuencia.
 * El contenido introducido ya no se mostrará en **Estructura** modo.
    * El contenido que ya haya introducido se considera contenido inicial y solo es visible en el modo de **Contenido inicial**.
 * Los componentes raíz del componente desbloqueado no se pueden mover, cortar ni eliminar.
 
 ![Botón Bloquear componente](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Esto incluye el desbloqueo de componentes de contenedor para que se puedan añadir más componentes, ya sea en el modo **Contenido inicial** o en las páginas resultantes. Si ya ha agregado componentes o contenido al contenedor antes de desbloquearlo, estos ya no se mostrarán en el modo **Estructura**, pero se mostrarán en el modo **Contenido inicial**. En el **modo de Estructura**, solo el propio componente de contenedor se mostrará con su lista de **Componentes permitidos**.
+Esto incluye el desbloqueo de componentes de contenedor para que se puedan añadir más componentes, ya sea en el modo **Contenido inicial** o en las páginas resultantes. Si ya ha añadido componentes o contenido al contenedor antes de desbloquearlo, estos ya no se mostrarán en **Estructura** modo, pero se muestran en **Contenido inicial** modo. Entrada **Modo de estructura**, solo se muestra el propio componente contenedor con su lista de **Componentes permitidos**.
 
 ![Componentes permitidos](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
@@ -540,7 +540,7 @@ Puede definir el diseño de la plantilla para una amplia gama de dispositivos. E
 
 >[!NOTE]
 >
->Los cambios en el diseño se reflejarán en el modo de **Contenido inicial**, pero no se observará ningún cambio en el modo de **Estructura**.
+>Los cambios en el diseño se reflejan en **Contenido inicial** modo, pero no se observa ningún cambio en **Estructura** modo.
 
 ![Editar diseño de plantilla](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
@@ -572,7 +572,7 @@ Puede aplicar una política de contenido a la plantilla o a las páginas resulta
 
   ![Botón Añadir política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  La política existente seleccionada en la lista desplegable **Seleccionar política** se puede copiar como una política nueva mediante el botón de copia situado al lado de la lista desplegable. Se debe proporcionar un título nuevo en el campo **Título de la política**. De forma predeterminada, la política copiada tendrá el título **Copia de X**, en que X es el título de la política copiada.
+  La política existente seleccionada en la lista desplegable **Seleccionar política** se puede copiar como una política nueva mediante el botón de copia situado al lado de la lista desplegable. Se debe proporcionar un título nuevo en el campo **Título de la política**. De forma predeterminada, el título de la política copiada es **Copia de X**, donde X es el título de la directiva copiada.
 
   ![Botón Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -653,7 +653,7 @@ Al crear plantillas, debe tener en cuenta lo siguiente:
    * Bloquear o desbloquear componentes en plantillas habilitadas.
    * Esto puede tener efectos secundarios, ya que las páginas existentes ya pueden estar usándolo. Típicamente:
 
-      * Desbloquear componentes (que estaban bloqueados) no aparecerá en las páginas existentes.
+      * Faltan los componentes de desbloqueo (que estaban bloqueados) en las páginas existentes.
       * Bloquear componentes (que se podían editar) ocultará ese contenido para que no se muestre en las páginas.
 
    >[!NOTE]

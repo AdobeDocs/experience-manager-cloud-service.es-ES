@@ -2,10 +2,10 @@
 title: Configuración de la segmentación con ContextHub
 description: Obtenga información sobre cómo configurar la segmentación mediante ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 100%
+source-wordcount: '1694'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ Las siguientes comparaciones de segmentos están disponibles y listas para usars
 >
 >Por lo tanto, cuando [cree segmentos](#creating-a-new-segment), debe seleccionar un **tipo de datos** siempre que se conozcan los tipos de valores comparados. Por ejemplo:
 >
->Al comparar la propiedad `profile/age`, ya sabe que el tipo comparado será un **número**, por lo que incluso si `profile/age` no está configurado, una comparación `profile/age` de menos de 30 devolverá **false**, como cabría esperar.
+>Al comparar la propiedad `profile/age`, ya sabe que el tipo comparado es un **número**, así que aunque `profile/age` no está configurado, una comparación `profile/age` se devuelve menos de 30 **false**, como cabría esperar.
 
 ### Referencias {#references}
 
@@ -96,7 +96,7 @@ Para definir el nuevo segmento:
 
    ![Nuevo segmento](../assets/contexthub-new-segment.png)
 
-   Cada segmento tiene un parámetro de ampliación que se utiliza como factor de ponderación. Un número mayor indica que el segmento se seleccionará con preferencia sobre un segmento con un número menor en las instancias en las que varios segmentos son válidos.
+   Cada segmento tiene un parámetro de ampliación que se utiliza como factor de ponderación. Un número mayor indica que el segmento se selecciona con preferencia sobre un segmento con un número menor en las instancias en las que varios segmentos son válidos.
 
    * Valor mínimo: `0`
    * Valor máximo: `1000000`
@@ -199,8 +199,8 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 1. Proporcione un **Título** y **Nombre** para su carpeta.
    * El **Título** debe ser descriptivo.
-   * El **Nombre** se convertirá en el nombre de nodo en el repositorio.
-      * Se generará automáticamente en función del título y se ajustará según las [convenciones de nomenclatura de AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   * El **Nombre** se convierte en el nombre de nodo del repositorio.
+      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de.](/help/implementing/developing/introduction/naming-conventions.md)
       * Se puede modificar si es necesario.
 
    ![Crear carpeta](../assets/contexthub-create-folder.png)
@@ -212,7 +212,7 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 1. La carpeta aparece en la lista de segmentos.
    * La forma en que ordene las columnas afectará a dónde aparece la nueva carpeta en la lista.
    * Puede tocar o hacer clic en los encabezados de columna para ajustar la ordenación.
-      ![La nueva carpeta](../assets/contexthub-folder.png)
+     ![La nueva carpeta](../assets/contexthub-folder.png)
 
 ### Modificar carpetas existentes {#modify-folders}
 

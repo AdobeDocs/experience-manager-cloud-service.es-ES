@@ -2,10 +2,10 @@
 title: Fragmentos de contenido
 description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1222'
+ht-degree: 92%
 
 ---
 
@@ -62,7 +62,7 @@ Los fragmentos de contenido permiten lo siguiente:
    >
    >Otra posibilidad es arrastrar un fragmento de contenido específico directamente a la página. Esto creará automáticamente el componente asociado (fragmento de contenido).
 
-4. En un primer momento se muestra el contenido del elemento **Principal** y **Maestro** (variación). Puede [seleccionar otros elementos y variaciones](#selecting-the-element-or-variation) si lo desea.
+4. Inicialmente, el contenido del **Principal** Elemento y **Principal** (variación) se muestran. Puede [seleccionar otros elementos y variaciones](#selecting-the-element-or-variation) si lo desea.
 
    ![Fragmentos de contenido en el explorador de recursos](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -89,15 +89,15 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
    * **Elemento de texto único**
    * **Varios elementos**
 * **Elemento**
-   * Una selección estará disponible dependiendo del modelo utilizado.
+   * Una selección está disponible según el modelo utilizado.
 
   >[!NOTE]
   >
   >Los elementos disponibles dependen de la plantilla utilizada.
 
 * **Variación**
-   * **Principal** siempre aparecerá como la opción predeterminada.
-   * Habrá una selección disponible si se crearon variaciones para el fragmento.
+   * El valor predeterminado **Principal** siempre está disponible.
+   * Una selección está disponible si se crearon variaciones para el fragmento.
 
 * **ID**
 
@@ -160,7 +160,7 @@ Si tiene [contenido asociado](/help/sites-cloud/administering/content-fragments/
 
 Una vez que haya añadido un fragmento con contenido asociado a la página, se abrirá una nueva pestaña (**Contenido asociado**) en el panel lateral.
 
-Desde aquí podrá arrastrar los recursos a la ubicación requerida (en un componente existente o a la posición que le interese donde se creará el componente correspondiente):
+Desde aquí puede arrastrar los recursos a la ubicación requerida (en un componente existente o a la posición requerida donde se crea el componente correspondiente):
 
 ![Inserción de una imagen](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

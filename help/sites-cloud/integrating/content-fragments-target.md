@@ -2,10 +2,10 @@
 title: Exportación de fragmentos de contenido a Adobe Target
 description: Exportación de fragmentos de contenido a Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2229'
-ht-degree: 100%
+source-wordcount: '2227'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,6 @@ ht-degree: 100%
 >
 >* Los fragmentos de contenido de AEM se exportan al espacio de trabajo predeterminado de Adobe Target.
 >* AEM debe integrarse con Adobe Target según las instrucciones de [Integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
-
 
 Puede exportar [Fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md), creados en Adobe Experience Manager as a Cloud Service (AEM), a Adobe Target (Target). Luego pueden utilizarse como ofertas en actividades de Target para probar y personalizar experiencias a escala.
 
@@ -70,7 +69,7 @@ Antes de exportar un fragmento, debe agregar la **Configuración de nube** para 
 * seleccionar un espacio de trabajo de Target como destino
 * seleccionar un dominio externalizador para reescribir referencias en el fragmento de contenido (opcional)
 
-Las opciones requeridas se pueden seleccionar en **Propiedades de página** de la carpeta o fragmento necesarios; la especificación se hereda según sea necesario.
+Las opciones requeridas se pueden seleccionar en **Propiedades de página** de la carpeta, fragmento o ambos necesarios; la especificación se hereda según sea necesario.
 
 1. Vaya a la consola **Recursos**.
 
@@ -182,7 +181,7 @@ Ahora puede seleccionar la nueva configuración para editarla.
 
    * **Configuración de A4T Analytics Cloud**: Seleccione la configuración de Analytics Cloud que se utiliza para las métricas y los objetivos de las actividades de Target. Lo necesita si utiliza Adobe Analytics como fuente de informes al segmentar contenido.
 
-      <!-- Is this needed?
+     <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
@@ -192,36 +191,36 @@ Ahora puede seleccionar la nueva configuración para editarla.
 
    * **Biblioteca de cliente:** de forma predeterminada, AT.js (mbox.js está obsoleto).
 
-      >[!NOTE]
-      >
-      >El archivo de la biblioteca de Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=es), es una nueva biblioteca de implementación para Adobe Target que está diseñada tanto para implementaciones web típicas como para aplicaciones de una sola página.
-      >
-      >mbox.js se ha desaprobado y se eliminará en una etapa posterior.
-      >
-      >Adobe recomienda usar AT.js en lugar de mbox.js como biblioteca de cliente.
-      >
-      >AT.js ofrece varias mejoras con respecto a la biblioteca mbox.js:
-      >
-      >* Se han mejorado los tiempos de carga de las páginas en implementaciones web
-      >* Seguridad mejorada
-      >* Mejores opciones de implementación para aplicaciones de una sola página
-      >* AT.js contiene los componentes que se incluían en target.js, de modo que ya no se llama a target.js
-      >
-      >Puede seleccionar AT.js o mbox.js en el menú desplegable **Biblioteca de cliente**.
+     >[!NOTE]
+     >
+     >El archivo de la biblioteca de Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=es), es una nueva biblioteca de implementación para Adobe Target que está diseñada tanto para implementaciones web típicas como para aplicaciones de una sola página.
+     >
+     >mbox.js se ha desaprobado y se eliminará en una etapa posterior.
+     >
+     >Adobe recomienda usar AT.js en lugar de mbox.js como biblioteca de cliente.
+     >
+     >AT.js ofrece varias mejoras con respecto a la biblioteca mbox.js:
+     >
+     >* Se han mejorado los tiempos de carga de las páginas en implementaciones web
+     >* Seguridad mejorada
+     >* Mejores opciones de implementación para aplicaciones de una sola página
+     >* AT.js contiene los componentes que se incluían en target.js, de modo que ya no se llama a target.js
+     >
+     >Puede seleccionar AT.js o mbox.js en el menú desplegable **Biblioteca de cliente**.
 
    * **Usar el sistema de administración de etiquetas para ofrecer la biblioteca de cliente** - Seleccione esta opción para utilizar la biblioteca de cliente desde Adobe Launch u otro sistema de administración de etiquetas (o DTM, que está en desuso).
 
    * **AT.js personalizado**: Examine para cargar su AT.js personalizado. Deje en blanco para utilizar la biblioteca predeterminada.
 
-      >[!NOTE]
-      >
-      >De forma predeterminada, al entrar en el asistente de configuración de Adobe Target, el direccionamiento preciso está habilitado.
-      >
-      >El direccionamiento preciso significa que la configuración del servicio en la nube espera a que el contexto se cargue antes de cargar el contenido. Como resultado, en términos de rendimiento, un direccionamiento preciso puede provocar un retraso de unos milisegundos antes de cargar el contenido.
-      >
-      >El direccionamiento preciso siempre está habilitado en la instancia de autor. Sin embargo, en la instancia de publicación puede optar por desactivar el direccionamiento preciso globalmente, desactivando la marca de verificación junto al direccionamiento preciso en la configuración del servicio en la nube (**http://localhost:4502/etc/cloudservices.html**). También puede activar y desactivar el direccionamiento preciso para componentes individuales independientemente de la configuración del servicio en la nube.
-      >
-      >Si ***ya*** ha creado componentes de destino y cambia esta configuración, los cambios no afectan a esos componentes. Debe realizar cualquier cambio en esos componentes directamente.
+     >[!NOTE]
+     >
+     >De forma predeterminada, al entrar en el asistente de configuración de Adobe Target, el direccionamiento preciso está habilitado.
+     >
+     >El direccionamiento preciso significa que la configuración del servicio en la nube espera a que el contexto se cargue antes de cargar el contenido. Como resultado, en términos de rendimiento, un direccionamiento preciso puede provocar un retraso de unos milisegundos antes de cargar el contenido.
+     >
+     >El direccionamiento preciso siempre está habilitado en la instancia de autor. Sin embargo, en la instancia de publicación puede optar por desactivar el direccionamiento preciso globalmente, desactivando la marca de verificación junto al direccionamiento preciso en la configuración del servicio en la nube (**http://localhost:4502/etc/cloudservices.html**). También puede activar y desactivar el direccionamiento preciso para componentes individuales independientemente de la configuración del servicio en la nube.
+     >
+     >Si ***ya*** ha creado componentes de destino y cambia esta configuración, los cambios no afectan a esos componentes. Debe realizar cualquier cambio en esos componentes directamente.
 
 1. Haga clic en **Conectarse a Adobe Target** para inicializar la conexión con Target. Si la conexión se realiza correctamente, aparecerá el mensaje **Conexión correcta**. Haga clic en **OK** en el mensaje y, a continuación, **OK** en el cuadro de diálogo.
 
@@ -339,9 +338,9 @@ Para exportar un fragmento de contenido de AEM a Target (después de especificar
 
    >[!NOTE]
    >
-   >Las acciones reales mostradas dependerán del estado del fragmento y de los recursos relacionados.
+   >Las acciones reales que se muestran dependen del estado del fragmento y de los recursos relacionados.
    >
-   >Si ya se ha publicado todo y no se ha modificado nada desde entonces, se omitirá este paso.
+   >Si todo ya se ha publicado y no se ha modificado nada desde entonces, este paso se pasa por alto.
 
    >[!NOTE]
    >
@@ -386,14 +385,14 @@ Para evitar estas situaciones, haga lo siguiente:
 * Si el fragmento de contenido no se está utilizando en una actividad, AEM permite al usuario eliminarlo sin ningún mensaje de advertencia.
 * Si una actividad de Target está utilizando actualmente el fragmento de contenido, un mensaje de error advierte al usuario de AEM de las posibles consecuencias que tendrá la eliminación del fragmento en la actividad.
 
-   El mensaje de error de AEM no impide que el usuario elimine (a la fuerza) el fragmento de contenido. Si se elimina el fragmento de contenido:
+  El mensaje de error de AEM no impide que el usuario elimine (a la fuerza) el fragmento de contenido. Si se elimina el fragmento de contenido:
 
    * La oferta de Target con el fragmento de contenido de AEM puede mostrar un comportamiento no deseado
 
       * Es probable que la oferta se siga procesando, ya que el del fragmento de contenido se insertó en Target
       * Puede que cualquier referencia en el fragmento de contenido no funcione correctamente si también se eliminaron activos a los que se hace referencia en AEM.
-   * Por supuesto, cualquier modificación adicional en el fragmento de contenido es imposible, ya que ya no existe en AEM.
 
+   * Por supuesto, cualquier modificación adicional en el fragmento de contenido es imposible, ya que ya no existe en AEM.
 
 ## Otros recursos {#further-resources}
 

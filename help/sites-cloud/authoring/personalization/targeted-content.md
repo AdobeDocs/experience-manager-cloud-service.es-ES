@@ -2,9 +2,9 @@
 title: Creación de contenido orientado mediante el modo de Orientación
 description: El modo Segmentación y el componente Target proporcionan herramientas para crear contenido para experiencias
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 41027653bffb064b3c313d6512b0314336f6c8dc
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '5414'
+source-wordcount: '5412'
 ht-degree: 60%
 
 ---
@@ -151,7 +151,7 @@ Después de [iniciar el proceso de orientación](#the-targeting-process-create-t
 
 >[!CAUTION]
 >
->Tenga cuidado al deshabilitar el direccionamiento para un componente que ya está segmentado en la instancia de autor. La actividad correspondiente también se eliminará automáticamente de la instancia de publicación.
+>Tenga cuidado al deshabilitar el direccionamiento para un componente que ya está segmentado en la instancia de autor. La actividad correspondiente también se elimina automáticamente de la instancia de publicación.
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ Realice el siguiente procedimiento después de [inicio del proceso de direcciona
 
    ![Botón Target](../assets/targeted-target-button.png)
 
-   El contenido del componente es la oferta para la experiencia predeterminada. Al orientar un componente, el nodo predeterminado se replicará para cada experiencia. Esto es necesario para editar el nodo de contenido adecuado durante la creación específica de la experiencia. Para estas experiencias no predeterminadas, [agregue una oferta personalizada](#adding-a-custom-offer) o [agregue una oferta de la biblioteca](#adding-an-offer-from-an-offer-library).
+   El contenido del componente es la oferta para la experiencia predeterminada. Cuando un componente es un destino, su nodo predeterminado se replica para cada experiencia. Esto es necesario para editar el nodo de contenido adecuado durante la creación específica de la experiencia. Para estas experiencias no predeterminadas, [agregue una oferta personalizada](#adding-a-custom-offer) o [agregue una oferta de la biblioteca](#adding-an-offer-from-an-offer-library).
 
 #### Creación de una oferta mediante la adición de un componente Target {#creating-an-offer-by-adding-a-target-component}
 

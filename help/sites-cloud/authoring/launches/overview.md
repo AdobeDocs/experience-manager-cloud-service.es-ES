@@ -2,10 +2,10 @@
 title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar contenido de forma eficaz para una versión futura. Permiten realizar cambios listos para su publicación futura, sin perder las páginas actuales
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 46%
+source-wordcount: '903'
+ht-degree: 44%
 
 ---
 
@@ -64,7 +64,7 @@ Los lanzamientos le permiten lo siguiente:
    * Automáticamente. Esto implica lo siguiente:
       * El campo **Fecha**(**Live**) **de lanzamiento**: esto se puede establecer al crear o editar un lanzamiento. 
       * El **Producción lista** indicador: esto solo se puede establecer al editar un lanzamiento.
-      * Si la variable **Producción lista** Si se establece el indicador, el lanzamiento se promocionará automáticamente a las páginas de producción del especificado **Launch**(**Activo**) **fecha**. Después de la promoción, las páginas de producción se publican automáticamente.\
+      * Si la variable **Producción lista** Si se establece el indicador, el lanzamiento se promociona automáticamente a las páginas de producción del especificado **Launch**(**Activo**) **fecha**. Después de la promoción, las páginas de producción se publican automáticamente.\
         Si no se ha establecido ninguna fecha, el indicador no tiene ningún efecto.
 * Actualice las páginas de origen y de lanzamiento en paralelo:
    * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy). 
@@ -92,7 +92,7 @@ Los lanzamientos le permiten lo siguiente:
 
 1. En el **Sites** , vaya al origen de los lanzamientos.
 1. Abra el **Referencias** y seleccione la página de origen.
-1. Selecccione **Lanzamientos** y se enumerarán los lanzamientos existentes, así como el acceso a la **consola Lanzamientos**:
+1. Seleccionar **Lanzamientos**, se enumeran los lanzamientos existentes, junto con el acceso a la variable **Inicia la consola**:
 
    ![Referencias de lanzamientos en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references.png)
 

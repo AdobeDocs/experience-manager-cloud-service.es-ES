@@ -2,10 +2,10 @@
 title: Gestión básica
 description: AEM Familiarícese con la navegación por el y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 71%
+source-wordcount: '2986'
+ht-degree: 70%
 
 ---
 
@@ -15,7 +15,7 @@ Este documento se ha diseñado para ofrecer una descripción general de la gesti
 
 >[!NOTE]
 >
->* Algunas funcionalidades no están disponibles en todas las consolas y es posible que otras funcionalidades adicionales estén disponibles en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se tratará con más detalle en otras páginas.
+>* Algunas funcionalidades no están disponibles en todas las consolas y es posible que otras funcionalidades adicionales estén disponibles en algunas consolas. En otras páginas se trata información específica acerca de las consolas individuales y sus funciones relacionadas.
 >* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) y [al editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 ## Una interfaz con capacidad táctil {#a-touch-enabled-ui}
@@ -110,7 +110,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
   ![Botón Notificaciones](/help/sites-cloud/authoring/assets/notifications.png)
 
-  Este icono se mostrará con la cantidad de notificaciones incompletas asignadas actualmente.
+  Este icono se señala con el número de notificaciones incompletas asignadas actualmente.
 
 * [Propiedades del usuario](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
@@ -299,15 +299,15 @@ Si se selecciona un recurso en la columna situada más a la izquierda, se muestr
 
 * Puede desplazarse hacia arriba y hacia abajo en el árbol tocando o haciendo clic en el nombre del recurso o en las comillas angulares a la derecha del nombre del recurso.
 
-   * El nombre del recurso y las comillas angulares se resaltarán cuando se pulse o haga clic en él.
+   * El nombre del recurso y las comillas angulares se resaltan al pulsar o hacer clic en él.
    * Los elementos secundarios del recurso en el que se hizo clic o pulsó se muestran en la columna a la derecha del recurso en el que se hizo clic o pulsó.
    * Si pulsa o hace clic en un nombre de recurso que no tiene tareas secundarias, sus detalles se muestran en la última columna.
 
 * Al tocar o hacer clic en la miniatura, se selecciona el recurso.
 
-   * Cuando se selecciona una miniatura, sobre ella se superpone una casilla de verificación y el nombre del recurso se muestra resaltado.
-   * Los detalles del recurso seleccionado se mostrarán en la última columna.
-   * La barra de herramientas de acciones estará disponible.
+   * Cuando se selecciona, se superpone una marca de verificación en la miniatura y el nombre del recurso también se resalta.
+   * Los detalles del recurso seleccionado se muestran en la última columna.
+   * La barra de herramientas de acciones está disponible.
 
   Cuando se selecciona una página en la vista de columna, la página seleccionada se muestra en la última columna junto con los siguientes detalles:
 

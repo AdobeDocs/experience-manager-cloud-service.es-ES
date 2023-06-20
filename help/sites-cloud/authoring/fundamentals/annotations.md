@@ -2,10 +2,10 @@
 title: Adición de anotaciones de página
 description: Utilice el modo de anotación para dejar anotaciones y bocetos en páginas de la misma manera que utiliza notas adhesivas para ayudarle en el proceso de revisión de contenido.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 64d801b108229866394e993811a67f983be5df6c
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 97%
+source-wordcount: '698'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Además de ver las anotaciones, el modo de anotación permite crear, editar, mov
 
 1. Haga clic o toque el icono Añadir anotación (símbolo &quot;+&quot; a la izquierda de la barra de herramientas) para empezar a añadir anotaciones.
 
-1. Haga clic o toque el componente necesario (los componentes que se pueden anotar se resaltarán con un borde azul) para añadir la anotación y abrir el cuadro de diálogo:
+1. Toque o haga clic en el componente necesario (los componentes que se pueden anotar se resaltan con un borde azul) para agregar la anotación y abrir el cuadro de diálogo:
 
    ![Adición de una anotación](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -66,13 +66,13 @@ Además de ver las anotaciones, el modo de anotación permite crear, editar, mov
    * Introduzca el texto de la anotación.
    * Crear un boceto (líneas y formas) para resaltar un área del componente.
 
-      ![Botón Boceto de anotación](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![Botón Boceto de anotación](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      El cursor cambia a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. Las líneas del boceto reflejan el color de la anotación y pueden ser una flecha, un círculo u ovaladas.
+     El cursor cambia a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. Las líneas del boceto reflejan el color de la anotación y pueden ser una flecha, un círculo u ovaladas.
 
    * Elegir o cambiar el color:
 
-      ![Botón de muestra de color de anotación](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+     ![Botón de muestra de color de anotación](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
 1. Para cerrar el cuadro de diálogo de anotaciones, toque o haga clic fuera del mismo. Se mostrará una vista truncada de la anotación, junto con los bocetos, si los hay:
 

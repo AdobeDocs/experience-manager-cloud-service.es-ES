@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Publicar y cancelar la publicación de páginas con AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 84%
+source-wordcount: '1804'
+ht-degree: 77%
 
 ---
 
@@ -46,10 +46,9 @@ Según su ubicación, puede publicar lo siguiente:
 >
 >Si no tiene los privilegios necesarios para publicar una página específica:
 >
->* Se activará un flujo de trabajo para notificar a la persona adecuada su solicitud de publicación.
+>* Se activa un flujo de trabajo para notificar a la persona adecuada su solicitud de publicación.
 >* Este flujo de trabajo puede haber sido personalizado por el equipo de desarrollo.
->* Se mostrará brevemente un mensaje para notificarle que el flujo de trabajo se ha activado.
-
+>* Se muestra brevemente un mensaje para notificarle que el flujo de trabajo se ha activado.
 
 >[!NOTE]
 >
@@ -65,14 +64,14 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 1. En función de si la página tiene referencias que es necesario publicar:
 
-   * La página se publicará directamente si no hay ninguna referencia por publicar.
-   * Si la página tiene referencias que es necesario publicar, estas se enumerarán en el asistente **Publicar**, donde puede:
+   * La página se publica directamente si no hay referencias por publicar.
+   * Si la página tiene referencias que es necesario publicar, estas se enumeran en la **Publish** asistente, donde puede:
       * Especificar qué recurso/etiqueta/etc. desea publicar junto con la página y, a continuación, utilizar **Publicar** para completar el proceso.
       * Utilizar **Cancelar** para anular la acción.
 
    ![Publicación de referencias con la página](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. Si selecciona **Publicar**, se replicará la página en el entorno de publicación. En el editor de páginas se mostrará un mensaje que confirma la acción de publicación.
+1. Si selecciona **Publicar**, se replicará la página en el entorno de publicación. En el editor de páginas, se muestra un banner de información que confirma la acción de publicación.
 
    ![Mensaje de información de estado de publicación](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -129,17 +128,18 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    * **Acción**
 
-      Elija si publica o cancela la publicación de las páginas seleccionadas.
+     Elija si publica o cancela la publicación de las páginas seleccionadas.
 
    * **Programación**
 
-      Elija realizar esa acción ahora o en una fecha posterior.
+     Elija realizar esa acción ahora o en una fecha posterior.
 
-      La publicación inicia posteriormente un flujo de trabajo para publicar la página o páginas seleccionadas a la hora especificada. Por el contrario, cancelar la publicación más adelante inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento específico.
+     La publicación inicia posteriormente un flujo de trabajo para publicar la página o páginas seleccionadas a la hora especificada. Por el contrario, cancelar la publicación más adelante inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento específico.
 
-      >[!NOTE]
-      >
-      >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para finalizar el flujo de trabajo correspondiente.
+     >[!NOTE]
+     >
+     >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para finalizar el flujo de trabajo correspondiente.
+
    ![Administrar opciones de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Haga clic en **Siguiente** para continuar.
@@ -168,11 +168,11 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    ![Administrar opciones de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   El cuadro de diálogo **Referencias publicadas** muestra las referencias para el contenido seleccionado. De forma predeterminada, todas se seleccionan y se publican o dejan de publicar, pero puede anular la marca de selección de las que no desee, de modo que no se incluyan en la acción.
+   El cuadro de diálogo **Referencias publicadas** muestra las referencias para el contenido seleccionado. De forma predeterminada, todas están seleccionadas y se publican o dejan de publicar, pero puede desactivar la casilla para anular la selección de modo que no se incluyan en la acción.
 
    Haga clic en **Listo** para guardar los cambios o en **Cancelar** para cancelar la selección y volver al asistente.
 
-   En el asistente, la columna **Referencias** se actualizará para reflejar su selección de referencias a publicar o dejar de publicar.
+   En el asistente, la variable **Referencias** se actualiza para reflejar su selección de referencias a publicar o dejar de publicar.
 
    ![Administrar páginas de selección de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -203,7 +203,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    >[!NOTE]
    >
-   >El paso **Flujos de trabajo** se muestra o no en función de los derechos del usuario. Para obtener más información, consulte la nota anterior en esta página respecto a los privilegios de publicación, así como Administración del acceso a los flujos de trabajo y [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md).
+   >El **Flujos de trabajo** Este paso se muestra en función de los derechos que pueda tener o no el usuario. Para obtener más información, consulte la nota anterior en esta página respecto a los privilegios de publicación, así como Administración del acceso a los flujos de trabajo y [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md).
 
    Los recursos se agrupan por los flujos de trabajo activados y cada una de las opciones dadas para:
 
@@ -287,14 +287,14 @@ Puede determinar el estado de la publicación de una página:
 
 * En la [información general de recursos de la consola Sitios](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 
-   ![Estado de publicación en la vista de tarjeta](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
+  ![Estado de publicación en la vista de tarjeta](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
-   El estado de publicación se indica en las vistas de [tarjeta](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [columna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) y [lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) de la consola Sitios.
+  El estado de publicación se indica en las vistas de [tarjeta](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [columna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) y [lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) de la consola Sitios.
 
 * En la [cronología](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
-   ![Estado de publicación en la vista de cronología](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
+  ![Estado de publicación en la vista de cronología](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
 * En el [menú Información de página](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) cuando se edita una página.
 
-   ![Estado de publicación en el menú Información de página](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)
+  ![Estado de publicación en el menú Información de página](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)

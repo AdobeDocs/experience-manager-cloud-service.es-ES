@@ -2,10 +2,10 @@
 title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencia Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2064'
-ht-degree: 88%
+source-wordcount: '2052'
+ht-degree: 81%
 
 ---
 
@@ -62,7 +62,7 @@ Los autores quieren utilizar AEM solo para la creación, pero no para la entre
 Los fragmentos de experiencias deben usarse:
 
 * Siempre que quiera reutilizar experiencias.
-   * Experiencias que se reutilizarán con contenido igual o similar.
+   * Experiencias que se reutilizan con contenido igual o similar.
 * AEM Cuando se utiliza la plataforma de envío de contenido para terceros, se utiliza la plataforma de entrega de contenido de.
    * AEM Cualquier solución que desee utilizar como plataforma de entrega de contenido de, por ejemplo,:
    * Incrustación de contenido en puntos de contacto de terceros.
@@ -83,15 +83,15 @@ La creación de carpetas permite:
 
 * crear una estructura significativa para los fragmentos de experiencias; por ejemplo, según la clasificación.
 
-   >[!NOTE]
-   >
-   >No es necesario alinear la estructura de los fragmentos de experiencias con la estructura de página del sitio.
+  >[!NOTE]
+  >
+  >No es necesario alinear la estructura de los fragmentos de experiencias con la estructura de página del sitio.
 
 * [asignar las plantillas permitidas en el nivel de carpeta](#configure-allowed-templates-folder)
 
-   >[!NOTE]
-   >
-   >Puede utilizar el [editor de plantillas](/help/sites-cloud/authoring/features/templates.md) para crear su propia plantilla.
+  >[!NOTE]
+  >
+  >Puede utilizar el [editor de plantillas](/help/sites-cloud/authoring/features/templates.md) para crear su propia plantilla.
 
 El proyecto WKND estructura algunos fragmentos de experiencias según `Contributors`. La estructura utilizada también ilustra cómo se pueden utilizar otras funciones, como la Administración de varios sitios (incluidas las copias de idiomas).
 
@@ -184,7 +184,7 @@ Para crear un fragmento de experiencia:
 
 1. Introduzca las **propiedades** del **fragmento de experiencia**.
 
-   Es obligatorio escribir un **título**. Si la variable **Nombre** si se deja en blanco, se derivará del **Título**.
+   Es obligatorio escribir un **título**. Si la variable **Nombre** se deja en blanco, se deriva del **Título**.
 
    ![Propiedades del fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -196,7 +196,7 @@ Para crear un fragmento de experiencia:
 
 1. Haga clic en **Crear**.
 
-   Se mostrará un mensaje. Seleccionar:
+   Se muestra un mensaje. Seleccionar:
 
    * **Listo** para volver a la consola
    * **Abrir** para abrir el editor de fragmentos
@@ -241,7 +241,7 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
 
    * **Plantilla**
    * **Título**
-   * **Nombre**: si se deja en blanco, se deriva del título
+   * **Nombre** - si se deja en blanco, se deriva del Título
    * **Descripción**
    * **Etiquetas de variación**
 
@@ -250,7 +250,7 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
    ![Propiedades de la variación](/help/sites-cloud/authoring/assets/xf-07.png)
 
 
-1. Confirme con **Listo** para mostrar la nueva variación en el panel.
+1. Confirmar con **Listo**, la nueva variación se muestra en el panel.
 
 ## Uso de los fragmentos de experiencias {#using-your-experience-fragment}
 
@@ -293,7 +293,7 @@ Para crear un nuevo bloque de creación:
 
    ![Bloque de creación de nombres](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. El **bloque de creación** aparece en la pestaña izquierda (**Local**) y se puede seleccionar para realizar más acciones:
+1. El **Bloque de creación** se muestra en la pestaña izquierda (**Local**) y se puede seleccionar para realizar más acciones:
 
    ![Bloque de creación en el carril](/help/sites-cloud/authoring/assets/xf-12.png)
 
@@ -341,7 +341,7 @@ Para personalizar el fragmento, haga lo siguiente:
 
    >[!NOTE]
    >
-   >Las propiedades de personalización definidas en una carpeta las heredarán todas las carpetas secundarias a través del subárbol y los Fragmentos de experiencias (y las variaciones) dentro de ese subárbol. Se pueden anular rompiendo la herencia.
+   >Las propiedades de personalización definidas en una carpeta las heredan todas las carpetas secundarias a través del subárbol y los Fragmentos de experiencias (y las variaciones) dentro de ese subárbol. Se pueden anular rompiendo la herencia.
 
 1. Abra la pestaña **Personalización** para definir y guardar la configuración. Por ejemplo, en una carpeta:
 
@@ -349,28 +349,26 @@ Para personalizar el fragmento, haga lo siguiente:
 
    >[!CAUTION]
    >
-   >Cuando un fragmento está incrustado en una página Sites, y **Personalización** se ha configurado, entonces solo se utilizará la versión de personalización de la página en el momento de renderizar la página.
+   >Cuando un fragmento está incrustado en una página de Sites, y **Personalización** se ha configurado y, a continuación, solo se utiliza la versión de personalización de la página en el momento de procesar la página.
    >
    >Para que la segmentación realizada en los componentes de un fragmento funcione en la renderización de la página, se deben cumplir las siguientes condiciones:
    >
    >La **Ruta de ContextHub** seleccionada en la pestaña **Personalización** debe ser la siguiente:
    >
-   >* la misma ruta que la configurada para la página en la que se renderizará el fragmento
-      >O bien:
+   >* la misma ruta que la configurada para la página en la que se procesa el fragmento
+   >O bien:
    >* una ruta que contiene un subconjunto de los almacenes definidos en ContextHub configurados para la página
-
    >
    > 
 La **Ruta de segmentos** seleccionados en la pestaña **Personalización** debe ser la siguiente:
 
-   * la misma ruta que la configurada para la página en la que se renderizará el fragmento
-O
+   >
+   * la misma ruta que la configurada para la página en la que se procesa el fragmento O
    * una ruta que contenga un subconjunto de los segmentos configurados para la página
-
 
 ### Definir la segmentación para el Fragmento de experiencia {#defining-targeting-experience-fragment}
 
-Una vez configuradas las propiedades de personalización, el modo Segmentación estará disponible cuando se abra el fragmento para editarlo.
+Una vez configuradas las propiedades de personalización, el modo Segmentación estará disponible cuando el fragmento se abra para editarlo.
 
 ![Editor de Fragmento de experiencia: modo de segmentación](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
@@ -392,7 +390,9 @@ Los detalles se muestran en todas las vistas de la consola de **Fragmentos de ex
    Las propiedades están disponibles en varias pestañas:
 
    >[!CAUTION]
+   >
    Estas pestañas se muestran al abrir **Propiedades** desde la consola fragmentos de experiencias.
+   >
    Si se selecciona **Abrir propiedades** al editar un fragmento de experiencia, se muestran las [propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) correspondientes.
 
    ![Propiedades del fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-17.png)
@@ -422,6 +422,7 @@ Los detalles se muestran en todas las vistas de la consola de **Fragmentos de ex
 Uso del selector de `.plain.` en la URL; puede acceder a la representación HTML sin formato desde el explorador.
 
 >[!NOTE]
+>
 Aunque esta opción está disponible directamente desde el explorador, [el objetivo principal es permitir a otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) acceder al contenido del fragmento de experiencia directamente, únicamente mediante la URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publicación de fragmentos de experiencias {#publishing-experience-fragments}

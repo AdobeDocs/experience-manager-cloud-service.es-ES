@@ -2,10 +2,10 @@
 title: Diferencias de página
 description: La función de diferencia de página permite realizar una comparación en paralelo de dos páginas con sus diferencias resaltadas.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 32%
+source-wordcount: '616'
+ht-degree: 26%
 
 ---
 
@@ -75,7 +75,7 @@ El lado seleccionado llenará toda la ventana, pero la barra permanecerá en la 
 
 >[!NOTE]
 >
->Si el ancho del explorador no puede incluir ambos nombres de página en la vista de pantalla completa, solo se muestra el nombre de la página que aparece y el otro está disponible tras acceder al menú en los puntos suspensivos.
+>Si el ancho del explorador no puede incluir ambos nombres de página en la vista de pantalla completa, solo se muestra el nombre de la página que se está mostrando y el otro está disponible tras puntos suspensivos.
 
 También puede cerrar la vista de pantalla completa haciendo clic en el icono para salir del modo de pantalla completa.
 

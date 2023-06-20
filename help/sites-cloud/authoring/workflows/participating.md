@@ -2,9 +2,9 @@
 title: Participación en flujos de trabajo
 description: Los flujos de trabajo suelen incluir pasos que requieren que una persona realice una actividad en una página o recurso.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1542'
 ht-degree: 40%
 
 ---
@@ -24,13 +24,13 @@ Los flujos de trabajo suelen incluir pasos que requieren que una persona realice
 
 Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**), aparecen varias alertas o notificaciones:
 
-* Su [notificación](/help/sites-cloud/authoring/getting-started/inbox.md) indicador (barra de herramientas) se incrementará:
+* Su [notificación](/help/sites-cloud/authoring/getting-started/inbox.md) indicador (barra de herramientas) se incrementa:
 
-   ![Barra de herramientas de notificaciones](/help/sites-cloud/authoring/assets/workflows-notifications.png)
+  ![Barra de herramientas de notificaciones](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* El elemento figurará en la [Bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) de notificaciones:
+* El artículo aparece en la notificación [Bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md):
 
-   ![Notificaciones en la bandeja de entrada](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+  ![Notificaciones en la bandeja de entrada](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Cuando utilice el editor de páginas, la barra de estado mostrará lo siguiente:
    * Nombre de los flujos de trabajo que se están aplicando a la página; por ejemplo, Solicitud de activación.
@@ -39,18 +39,18 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
       * utilice las flechas izquierda/derecha para navegar por la información de estado de los distintos flujos de trabajo.
       * pulse o haga clic en el número real para abrir una lista desplegable de todos los flujos de trabajo aplicables y, a continuación, seleccione el flujo de trabajo que desee mostrar en la barra de estado.
 
-   ![Página con varios flujos de trabajo](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![Página con varios flujos de trabajo](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
-   >[!NOTE]
-   >
-   >La barra de estado solo es visible para los usuarios con privilegios de flujo de trabajo; por ejemplo, los miembros del grupo `workflow-users`.
-   >
-   >
-   >Las acciones se muestran cuando el usuario actual está directamente involucrado en el paso actual del flujo de trabajo.
+  >[!NOTE]
+  >
+  >La barra de estado solo es visible para los usuarios con privilegios de flujo de trabajo; por ejemplo, los miembros del grupo `workflow-users`.
+  >
+  >
+  >Las acciones se muestran cuando el usuario actual está directamente involucrado en el paso actual del flujo de trabajo.
 
-* Cuándo **Cronología** está abierto para el recurso, se mostrará el paso del flujo de trabajo. Al pulsar o hacer clic en el titular de la alerta, también se mostrarán las acciones disponibles:
+* Cuándo **Cronología** está abierto para el recurso, se muestra el paso del flujo de trabajo. Al pulsar o hacer clic en el titular de la alerta, también se mostrarán las acciones disponibles:
 
-   ![Flujo de trabajo en la cronología](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+  ![Flujo de trabajo en la cronología](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### Finalización de una etapa de participante {#completing-a-participant-step}
 
@@ -219,19 +219,19 @@ Los detalles del flujo de trabajo se muestran en pestañas y las acciones corres
 
 * Ficha **ELEMENTO DE TRABAJO:**
 
-   Ficha ![ELEMENTO DE TRABAJO](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+  Ficha ![ELEMENTO DE TRABAJO](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
 * Pestaña **INFORMACIÓN DEL FLUJO DE TRABAJO**:
 
-   ![Pestaña FLUJO DE TRABAJO](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+  ![Pestaña FLUJO DE TRABAJO](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   Si se han configurado etapas de flujo de trabajo para el modelo, puede ver el progreso según los siguientes elementos: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+  Si se han configurado etapas de flujo de trabajo para el modelo, puede ver el progreso según los siguientes elementos: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-   ![Etapas de flujo de trabajo](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+  ![Etapas de flujo de trabajo](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
 * Pestaña **COMENTARIOS**:
 
-   ![Pestaña COMENTARIOS](/help/sites-cloud/authoring/assets/workflows-comments.png)
+  ![Pestaña COMENTARIOS](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 Puede abrir los detalles del elemento de trabajo desde las ubicaciones siguientes:
 

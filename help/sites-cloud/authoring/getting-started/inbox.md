@@ -2,10 +2,10 @@
 title: Su bandeja de entrada
 description: Administrar las tareas con la bandeja de entrada
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 76%
+source-wordcount: '905'
+ht-degree: 73%
 
 ---
 
@@ -112,7 +112,7 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
 >
 >Aunque es posible seleccionar más de un elemento, las acciones solo se pueden realizar en un elemento a la vez.
 
-1. Para realizar una acción sobre un elemento, seleccione la miniatura del elemento correspondiente. Los iconos de las acciones aplicables a ese elemento se mostrarán en la barra de herramientas:
+1. Para realizar una acción sobre un elemento, seleccione la miniatura del elemento correspondiente. Los iconos de las acciones aplicables a ese elemento se muestran en la barra de herramientas:
 
    ![Seleccionar elemento de bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -136,11 +136,11 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
    >
    >* Elementos de flujo de trabajo - [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. Dependiendo del elemento seleccionado, se inicia una acción; por ejemplo:
+2. Según el elemento seleccionado, se inicia una acción, por ejemplo:
 
-   * Se abre un cuadro de diálogo apropiado para la acción.
-   * Se inicia un asistente de acciones.
-   * Se abre una página de documentación.
+   * Se abre un cuadro de diálogo apropiado para la acción
+   * Se inicia un asistente de acciones
+   * Se abre una página de documentación
 
    Por ejemplo, la opción **Delegar** abre el siguiente cuadro de diálogo:
 

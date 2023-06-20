@@ -2,10 +2,10 @@
 title: Registro, inicio de sesión y perfil de usuario
 description: Obtenga información sobre el registro, el inicio de sesión, los datos de usuario y la sincronización de grupos para AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 95%
+source-wordcount: '1168'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Las aplicaciones web a menudo proporcionan funciones de administración de cuent
 
 >[!IMPORTANT]
 >
->Para que la funcionalidad descrita en este artículo funcione, debe habilitarse la función Sincronización de datos del usuario, que en este momento requiere una solicitud al servicio de atención al cliente indicando el programa y los entornos adecuados. Si no está habilitada, la información del usuario se mantendrá durante un breve período (de 1 a 24 horas) antes de desaparecer.
+>Para que la funcionalidad descrita en este artículo funcione, debe habilitarse la función Sincronización de datos del usuario, que en este momento requiere una solicitud al servicio de atención al cliente indicando el programa y los entornos adecuados. Si no está habilitada, la información del usuario se mantiene durante un breve periodo (de 1 a 24 horas) antes de desaparecer.
 
 ## Registro {#registration}
 

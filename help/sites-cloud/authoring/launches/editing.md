@@ -2,9 +2,9 @@
 title: Edición de lanzamientos
 description: Después de crear un lanzamiento para su página (o conjunto de páginas), puede editar el contenido en la copia de lanzamiento de las páginas.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '552'
 ht-degree: 52%
 
 ---
@@ -54,7 +54,7 @@ Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias*
 
    ![Comparación entre el lanzamiento y el origen](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. Las dos páginas (inicio y origen) se abrirán en paralelo.
+1. Las dos páginas (inicio y origen) se abren en paralelo.
 
    Para obtener información completa sobre el uso de esta función, consulte [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md).
 

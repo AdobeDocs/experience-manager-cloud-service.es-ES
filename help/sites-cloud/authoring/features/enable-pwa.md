@@ -2,10 +2,10 @@
 title: Activación de las funciones progresivas de la aplicación web
 description: AEM Sites permite al autor del contenido habilitar funcionalidades de aplicación web progresiva en cualquier sitio a través de una configuración sencilla, en lugar de programarlas.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 97%
+source-wordcount: '2000'
+ht-degree: 94%
 
 ---
 
@@ -135,7 +135,7 @@ Ahora que ha [configurado el sitio para admitir el PWA,](#enabling-pwa-for-your-
 1. Verá un nuevo icono en la barra de direcciones del explorador que indica que el sitio se puede instalar como aplicación local.
    * Según el explorador, el icono puede variar y el explorador también puede mostrar una notificación (como un titular o un cuadro de diálogo) que indique que es posible realizar la instalación como aplicación local.
 1. Instale la aplicación.
-1. La aplicación se instalará en la pantalla de inicio del dispositivo.
+1. La aplicación se instala en la pantalla de inicio del dispositivo.
 1. Abra la aplicación, revísela por encima y verá que las páginas están disponibles sin conexión.
 
 ## Opciones detalladas {#detailed-options}
@@ -186,7 +186,7 @@ Esta configuración hace que partes de este sitio estén disponibles sin conexi�
       * Con esta configuración, la aplicación buscará primero el contenido más reciente a través de la red y, si no está disponible, volverá a la caché local.
    * **Raramente**: este es el caso de los sitios que son casi estáticos, como las páginas de referencia.
       * Con esta configuración, la aplicación buscará primero el contenido en la caché y, si no está disponible, volverá a la red para recuperarlo.
-* **Almacenamiento en caché previo de archivos**: estos archivos alojados en AEM se guardarán en la caché del explorador local cuando el trabajador de servicio se instale y antes de que se utilice. Esto garantiza que la aplicación web funcione por completo cuando está sin conexión.
+* **Almacenamiento en caché previo de archivos** AEM : estos archivos alojados en los que se realiza la instalación se guardan en la caché del explorador local cuando el trabajador de servicio se instala y antes de que se utilice. Esto garantiza que la aplicación web funcione por completo cuando está sin conexión.
 * **Inclusiones de rutas**: las solicitudes de red para las rutas definidas se interceptan y el contenido almacenado en caché se devuelve de acuerdo con la **Estrategia de almacenamiento en caché y frecuencia de actualización del contenido** configuradas.
 * **Exclusiones de caché**: estos archivos nunca se almacenarán en caché, independientemente de la configuración de **Almacenamiento en caché previo de archivos** e **Inclusiones de rutas**.
 

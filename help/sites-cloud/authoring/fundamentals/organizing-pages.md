@@ -2,10 +2,10 @@
 title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 74%
+source-wordcount: '2542'
+ht-degree: 68%
 
 ---
 
@@ -121,7 +121,7 @@ A **Título** se acepta el campo que contiene caracteres no válidos, pero el no
 
 #### Nombre {#name}
 
-Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. AEM Cuando se detecta la existencia de caracteres no válidos, el campo se resalta con un mensaje explicativo.
+Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. AEM Cuando detecta caracteres no válidos, el campo se resalta con un mensaje explicativo.
 
 ![Ejemplo de introducción de un nombre de página no válido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -133,7 +133,7 @@ Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nom
 
 ### Plantillas {#templates}
 
-AEM En, una plantilla especifica un tipo de página especializado. Se utilizará una plantilla como base para cualquier página nueva que se cree.
+AEM En, una plantilla especifica un tipo de página especializado. Se utiliza una plantilla como base para cualquier página nueva que se cree.
 
 La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 
@@ -217,7 +217,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
    >[!NOTE]
    >
-   >Si crea una página con un nombre que ya existe en la ubicación, el sistema generará automáticamente una variación del nombre añadiéndole un número. Por ejemplo, si `beach` ya existe, la página nueva pasará a llamarse `beach1`.
+   >Si crea una página con un nombre que ya existe en la ubicación, el sistema generará automáticamente una variación del nombre añadiéndole un número. Por ejemplo, si `beach` ya existe, se crea una nueva página `beach1`.
 
 1. Al volver a la consola, podrá ver la nueva página:
 
@@ -242,7 +242,7 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 
    Botón ![Editar](/help/sites-cloud/authoring/assets/edit.png)
 
-1. Se abrirá la página, y podrá [editarla](/help/sites-cloud/authoring/fundamentals/editing-content.md) si es necesario.
+1. La página se abre y puede hacer lo siguiente [editar la página](/help/sites-cloud/authoring/fundamentals/editing-content.md) según sea necesario.
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ Puede copiar una página y todas sus páginas secundarias en una nueva ubicació
 
 >[!NOTE]
 >
->Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` se convierte en `beach1`.
+>Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` pasa a `beach1`.
 
 >[!NOTE]
 >
@@ -316,7 +316,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    >[!NOTE]
    >
-   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` se convierte en `beach1`.
+   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` pasa a `beach1`.
 
 1. Desde el **Seleccionar destino** fase del asistente puede realizar una de las acciones siguientes:
 
@@ -329,13 +329,13 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    >[!NOTE]
    >
-   >De forma predeterminada, el elemento principal de la página que está moviendo o cambiando de nombre se selecciona como destino.
+   >De forma predeterminada, el elemento principal de la página que está moviendo o cambiando de nombre está seleccionado como destino.
 
    ![Seleccionar destino de movimiento de página](/help/sites-cloud/authoring/assets/move-page-destination.png)
 
    >[!NOTE]
    >
-   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
+   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a `winter1`.
 
 1. Si la página está vinculada, si se hace referencia a ella o si se ha publicado, los detalles aparecen en la **Ajustar/volver a publicar** paso.
 
@@ -351,11 +351,11 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
 >[!NOTE]
 >
->Si la página ya se ha publicado, al mover la página se cancelará la publicación automáticamente. De forma predeterminada, se vuelve a publicar una vez finalizado su desplazamiento, pero esto puede cambiar si se desmarca el campo **Volver a publicar** en el paso **Ajustar/volver a publicar**.
+>Si la página ya se ha publicado, al mover la página se cancela su publicación automáticamente. De forma predeterminada, se vuelve a publicar cuando se completa el movimiento, pero esto puede cambiar desmarcando la opción **Volver a publicar** en el campo **Ajustar/volver a publicar** paso.
 
 >[!NOTE]
 >
->Si no se hace referencia a la página, se omitirá el paso **Ajustar/volver a publicar**.
+>Si no se hace referencia a la página, la variable **Ajustar/volver a publicar** Este paso se ha omitido.
 
 >[!NOTE]
 >
@@ -369,7 +369,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
 Normalmente, una acción de mover o cambiar el nombre de una página se realiza de inmediato. Esto se considera un procesamiento sincrónico y las acciones posteriores en la IU se bloquean hasta que se complete la acción.
 
-Sin embargo, si el número de páginas afectadas supera un límite definido, la acción se procesará asincrónicamente, lo que permitirá al usuario continuar la creación en la IU sin impedimentos por la acción de mover o cambiar el nombre de la página.
+Sin embargo, si el número de páginas afectadas supera un límite definido, la acción se procesa asincrónicamente, lo que permite al usuario continuar la creación en la IU sin impedimentos por la acción de mover o cambiar el nombre de la página.
 
 * Al hacer clic en **Mover** en el último paso anterior, AEM comprueba el límite configurado.
 * Si el número de páginas afectadas es inferior al límite, realiza una operación sincrónica.
@@ -401,13 +401,13 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
 
    ![Cuadro de diálogo Eliminar](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **¿Quiere archivar las páginas antes de la eliminación?** - Si se selecciona, las versiones de las páginas seleccionadas para su eliminación se crearán al eliminarlas.
+   * **¿Quiere archivar las páginas antes de la eliminación?** - Si se selecciona, las versiones de las páginas seleccionadas para su eliminación se crean al eliminarlas.
       * [Las versiones se pueden restaurar más adelante.](/help/sites-cloud/authoring/features/page-versions.md)
       * Las páginas eliminadas sin versiones anteriores no se pueden restaurar.
    * **Cancelar** para anular la acción
    * **Eliminar** para confirmar la acción:
 
-      * Si la página no tiene referencias, se eliminará la página.
+      * Si la página no tiene referencias, se elimina la página.
       * Si la página dispone de referencias, un cuadro de mensaje le informa de que **Se hace referencia a una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
 
 >[!NOTE]

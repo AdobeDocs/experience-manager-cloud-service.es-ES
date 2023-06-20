@@ -2,10 +2,10 @@
 title: Promoción de lanzamientos
 description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicar.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 53%
+source-wordcount: '814'
+ht-degree: 50%
 
 ---
 
@@ -50,7 +50,7 @@ Puede promocionar lanzamientos desde el **Sites** o la **Lanzamientos** consola:
       1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
    * La consola **Sites** al navegar por las páginas de lanzamiento:
       1. Seleccione la página de lanzamiento necesaria mediante el [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md).
-      1. La acción **Promocionar** estará disponible en la barra de herramientas.
+      1. El **Promocionar** La acción está disponible en la barra de herramientas.
    * La consola **Lanzamientos**:
       1. Seleccione el lanzamiento (toque o haga clic en la miniatura).
       1. Seleccionar **Promocionar**.
@@ -99,7 +99,7 @@ Después de crear un lanzamiento anidado, puede promoverlo de nuevo a cualquiera
 1. Introduzca la información necesaria:
    * **Destino**
       * **Destino promocional**: puede promocionar a cualquiera de los orígenes.
-      * **Eliminar el lanzamiento después de la promoción**: después de la promoción, se eliminará el lanzamiento seleccionado y los lanzamientos anidados en él.
+      * **Eliminar lanzamiento después de la promoción** : Después de la promoción, se eliminan el lanzamiento seleccionado y los lanzamientos anidados en él.
    * **Ámbito**: aquí puede seleccionar si debe promocionar el lanzamiento completo o solo las páginas que se han editado. En este último caso, puede seleccionar incluir/excluir páginas secundarias. La configuración predeterminada es promocionar solo los cambios de página para la página actual:
       * **Promocionar lanzamiento completo**
       * **Promocionar las páginas modificadas**

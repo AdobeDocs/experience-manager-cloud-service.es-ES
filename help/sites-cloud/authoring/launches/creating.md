@@ -2,10 +2,10 @@
 title: Creación de lanzamientos
 description: Puede crear un lanzamiento para habilitar la actualización de una nueva versión de las páginas web existentes para una activación futura.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 60%
+source-wordcount: '1042'
+ht-degree: 59%
 
 ---
 
@@ -28,7 +28,6 @@ De forma opcional, puede especificar la **fecha de lanzamiento** (y hora) para e
 >Estas páginas no se pueden editar. Verá el siguiente mensaje:
 >
 >* **Esta página no forma parte del lanzamiento. Vaya a la página de producción**
-
 
 ## Creación de un lanzamiento {#creating-a-launch}
 
@@ -80,7 +79,7 @@ Puede crear un lanzamiento desde la consola Sitios o Lanzamientos:
 1. En el paso **Propiedades** del asistente, puede especificar lo siguiente:
 
    * **Título del lanzamiento**: Nombre del lanzamiento. El nombre debe tener significado para los autores.
-   * **con contenido existente**: el contenido original se utilizará para crear el lanzamiento.
+   * **con contenido existente**: el contenido original se utiliza para crear el lanzamiento.
    * **utilice una plantilla nueva para sustituir la página**: consulte [Creación de un lanzamiento con una plantilla nueva](#create-launch-with-new-template) para obtener más información.
    * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Para conseguirlo, esta opción convierte el lanzamiento en una [Live Copy](/help/sites-cloud/administering/msm/overview.md). Está opción está seleccionada de forma predeterminada.-->
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
@@ -113,7 +112,7 @@ Al seleccionar esto, ocurrirá lo siguiente:
 
 >[!CAUTION]
 >
->Como se utiliza una plantilla diferente, la nueva página estará vacía. Debido a la diferente estructura de la página, no se copia ningún contenido.
+>Dado que se utiliza una plantilla diferente, la nueva página está vacía. Debido a la diferente estructura de la página, no se copia ningún contenido.
 >
 >Este mecanismo se puede utilizar para cambiar la plantilla de un [página existente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) - aunque debe considerarse la pérdida de contenido.
 

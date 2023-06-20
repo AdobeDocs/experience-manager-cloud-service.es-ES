@@ -2,10 +2,10 @@
 title: Aplicación de flujos de trabajo a páginas
 description: Durante la creación, puede invocar flujos de trabajo para realizar acciones en las páginas; también es posible aplicar más de un flujo de trabajo..
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 57%
+source-wordcount: '661'
+ht-degree: 55%
 
 ---
 
@@ -31,7 +31,6 @@ Los flujos de trabajo se pueden iniciar desde:
 >
 >* Cómo aplicar flujos de trabajo a recursos DAM.
 >* [Uso de flujos de trabajo de proyecto](/help/sites-cloud/authoring/projects/workflows.md).
-
 
 <!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
@@ -104,6 +103,7 @@ Puede especificar detalles:
    * **Título del paquete**
 
       * Puede especificar un título para el paquete como ayuda para la identificación.
+
    >[!NOTE]
    >
    >La opción **Mantener paquete de flujo de trabajo** está disponible cuando el flujo de trabajo se ha configurado para la compatibilidad con varios recursos y se han seleccionado varios recursos.
@@ -122,14 +122,14 @@ Puede especificar detalles:
 
    * Un recurso existente para ver acciones adicionales:
 
-      * **Incluir elementos secundarios** para especificar que en el flujo de trabajo se incluirán los elementos secundarios de ese recurso.
+      * **Incluir elementos secundarios** para especificar que los elementos secundarios de ese recurso se incluyan en el flujo de trabajo.
 Se abrirá un cuadro de diálogo para que pueda ajustar la selección según lo siguiente:
 
          * Incluir solo los elementos secundarios inmediatos.
          * Incluir solo las páginas modificadas.
          * Incluir solo las páginas ya publicadas.
 
-         Los elementos secundarios especificados se agregan a la lista de recursos a los que se aplicará el flujo de trabajo.
+        Los elementos secundarios especificados se agregan a la lista de recursos a los que se aplicará el flujo de trabajo.
 
       * **Eliminar la selección** para eliminar ese recurso del flujo de trabajo.
 
