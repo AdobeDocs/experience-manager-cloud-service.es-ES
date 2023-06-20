@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: beb6ac3dbb036559510e6a2e2700b28c433ef98d
+source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 38%
+source-wordcount: '372'
+ht-degree: 37%
 
 ---
 
@@ -27,6 +27,7 @@ Ninguna.
 
 - ASSETS-25729: el menú del conmutador de vistas está desactivado
 - ASSETS-25728: la opción Volver a procesar recursos no está disponible en la vista de búsqueda
+- ASSETS-22603: algunas columnas del informe de recursos de tipo descarga muestran valores &quot;nulos&quot; en la interfaz de usuario. El CSV descargable no se ve afectado.
 
 ### Problemas corregidos {#fixed-issues-12255}
 
