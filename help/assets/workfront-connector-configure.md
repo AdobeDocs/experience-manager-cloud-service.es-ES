@@ -4,9 +4,9 @@ description: Configuración de [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
+source-git-commit: ff36f2dada09d8f46835dc0fbac8d0fe6707fa19
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,10 @@ Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] as a [
 
 >[!IMPORTANT]
 >
->* A partir de junio de 2022, Adobe lanzó una nueva integración nativa para conectar Workfront con Adobe Experience Manager Assets as a Cloud Service. Esta integración se ha convertido en el método requerido para conectar estas dos soluciones. Cualquier nueva implementación futura del conector mejorado (1.9.8 y posterior) para conectar Workfront con AEM Assets as a Cloud Service está bloqueada. Para obtener más información sobre cómo configurar esta integración, consulte [Configuración de la integración as a Cloud Service de Experience Manager Assets](workfront-connector-configure.md).
+> A partir de junio de 2022, Adobe lanzó una nueva integración nativa para conectar Workfront con Adobe Experience Manager Assets as a Cloud Service. Esta integración se ha convertido en el método requerido para conectar estas dos soluciones. Cualquier nueva implementación futura del conector mejorado (1.9.8 y posterior) para conectar Workfront con AEM Assets as a Cloud Service está bloqueada.
+
+>[!IMPORTANT]
+>
 >* El Adobe requiere la implementación y la configuración de [!DNL Adobe Workfront for Experience Manager enhanced connector] solo a través de socios certificados o [!DNL Adobe Professional Services]. Si se implementa y configura sin un socio certificado o [!DNL Adobe Professional Services], no es compatible con el Adobe.
 >
 >* El Adobe puede publicar actualizaciones en [!DNL Adobe Workfront] y [!DNL Adobe Experience Manager] que hacen que este conector sea redundante; si esto sucede, es posible que los clientes deban realizar la transición desde el uso de este conector.
