@@ -2,9 +2,9 @@
 title: Publicación de un canal en Screens as a Cloud Service
 description: En esta página se describe cómo publicar un canal en Screens as a Cloud Service.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '308'
 ht-degree: 1%
 
 ---
@@ -31,20 +31,20 @@ Siga los pasos a continuación para publicar el canal:
 
 1. Desplácese y seleccione el canal del proyecto, por ejemplo, **FirstDigitalExperience** —> **Canales** —> **BucleCanalUno**.
 
-   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
+   ![Seleccionar el canal](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. Haga clic en **Administrar publicación** de la barra de acciones.
 
 1. Seleccione el **Acción** as **Publish** y **Programación** as **Ahora** desde el **Asistente Administrar publicación** y haga clic en **Siguiente**.
 
-   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+   ![Seleccionar acción de publicación](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
    >Clic **Incluir elementos secundarios** en la barra de acciones, desmarque todas las opciones para publicar todos los módulos del proyecto y haga clic en Añadir para publicar. De forma predeterminada, todas las casillas están marcadas y debe desmarcar manualmente las casillas para publicar todos los módulos del proyecto.
 
 1. Después de seleccionar el canal en la **Administrar publicación** asistente, haga clic en **Publish** para publicar el canal.
 
-   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
+   ![Publicación del canal](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Siguientes pasos {#whats-next}

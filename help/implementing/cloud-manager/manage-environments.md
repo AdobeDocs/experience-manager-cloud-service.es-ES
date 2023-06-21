@@ -2,9 +2,9 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo crearlos para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2276'
 ht-degree: 37%
 
 ---
@@ -245,7 +245,7 @@ Seleccione **Administrar el acceso** del menú de los tres puntos del entorno en
 
 Seleccione **Consola de desarrollador** del menú de los tres puntos del entorno en la tarjeta **Entornos**. Se abre una nueva pestaña en el explorador con la página de inicio de sesión a la **Developer Console**.
 
-![](assets/environ-devconsole.png)
+![Inicie sesión en Developer Console](assets/environ-devconsole.png)
 
 Solo un usuario con **Desarrollador** La función tiene acceso a **Developer Console**. Sin embargo, para los programas de zonas protegidas, cualquier usuario con acceso a la zona protegida tiene acceso a **Developer Console**.
 

@@ -2,10 +2,10 @@
 title: ¿Cómo se agregan variables en los pasos del flujo de trabajo de AEM?
 description: Aprenda cómo crear una variable, establecer un valor para ella y usarlo en [!DNL AEM Forms] los pasos del flujo de trabajo.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 100%
+source-wordcount: '2061'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Utilice el tipo de datos ArrayList para crear colecciones de variables. Puede cr
 
 Para crear una variable, haga lo siguiente:
 
-1. En una instancia de AEM, navegue hasta Herramientas ![](assets/hammer-icon.svg) > Flujo de trabajo > Modelos.
+1. AEM En una instancia de, vaya a Herramientas ![Icono de martillo](assets/hammer-icon.svg) > Flujo de trabajo > Modelos.
 1. Pulse **[!UICONTROL Crear]** y especifique el título y un nombre opcional para el modelo de flujo de trabajo. Seleccione el modelo y pulse **[!UICONTROL Editar]**.
 1. Pulse el icono de variables disponible en la barra de tareas del modelo de flujo de trabajo y pulse **[!UICONTROL Agregar variable]**.
 
