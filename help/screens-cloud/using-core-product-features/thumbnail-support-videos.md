@@ -3,9 +3,9 @@ title: Compatibilidad con miniaturas para vídeos en pantallas as a Cloud Servic
 description: En esta página se describe cómo añadir compatibilidad con miniaturas para vídeos en Pantallas as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: f5af37bf39ecd5a964a8c94a731111c561c2934e
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '557'
 ht-degree: 1%
 
 ---
@@ -14,14 +14,14 @@ ht-degree: 1%
 
 ## Introducción {#introduction}
 
-Un autor de contenido puede definir una miniatura para los vídeos, de modo que la imagen pueda utilizarse como marcador de posición y probar correctamente la reproducción y la segmentación del contenido, mientras el equipo correspondiente finaliza el vídeo real. También se puede utilizar la imagen en caso de que falle la reproducción del vídeo.
+Un autor de contenido puede definir una miniatura para los vídeos, de modo que la imagen se utilice como marcador de posición y pruebe correctamente la reproducción y la segmentación del contenido, mientras el equipo correspondiente finaliza el vídeo real. También se puede utilizar la imagen en caso de que falle la reproducción del vídeo.
 
 Añadir la compatibilidad con una imagen en miniatura en el componente de vídeo permite al cliente añadir correctamente un componente válido en el canal, con contenido real, y realizar cualquier configuración de segmentación antes de que se envíe el vídeo.
 
 >[!NOTE]
->La imagen en miniatura, si se configura en el componente de vídeo, se reproduce en caso de que falle la reproducción del vídeo en el reproductor. Esto le permite enviar el mensaje deseado a la audiencia (reproduciendo contenido) en lugar de omitirlo por completo.
+>La imagen en miniatura, si se establece en el componente de vídeo, se reproduce si hay un error de reproducción de vídeo en el reproductor. Este flujo de trabajo permite enviar el mensaje deseado a la audiencia (reproduciendo contenido) en lugar de omitirlo por completo.
 
-La compatibilidad con miniaturas le permite:
+La compatibilidad con miniaturas permite hacer lo siguiente:
 
 * Prepare una experiencia de canal cuando los vídeos aún no estén listos o cuando no desee probar necesariamente una descarga de recursos grande en los reproductores
 
@@ -31,36 +31,39 @@ La compatibilidad con miniaturas le permite:
 
 >[!IMPORTANT]
 >**Requisitos previos**
->Antes de aprender a utilizar miniaturas para vídeos, asegúrese de aprender a crear representaciones de vídeo para canales en un proyecto as a Cloud Service de Screens. Consulte [aquí](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) para obtener más información.
+>Antes de aprender a utilizar miniaturas para vídeos, asegúrese de aprender a crear representaciones de vídeo para canales en proyectos as a Cloud Service de Screens. Consulte [Creación de representaciones de vídeo en Screens as a Cloud Service](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
 
 Siga los pasos a continuación para utilizar las miniaturas en los vídeos:
 
-1. Vaya a un canal de Screens existente o cree un canal nuevo.
+1. Vaya a un canal de Screens existente o cree un canal.
 
    >[!NOTE]
-   >Para obtener información sobre cómo crear un canal y añadir contenido a un canal, consulte [Creación y administración de un canal en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
+   >Para obtener información sobre cómo crear un canal y añadir contenido a un canal, consulte [Creación y administración de un canal en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
 
-1. Seleccione el canal y haga clic en **Editar** en la barra de acciones para abrir el editor.
+1. Seleccione el canal. En la barra de acciones, haga clic en **Editar** para abrir el editor.
 
-   ![Abra el editor](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+
+   ![Botón Editar de la barra de acciones.](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. Añada o edite un componente de vídeo existente, como se muestra en la figura siguiente.
 
-   ![Editar el componente](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Imagen resaltada de un recurso de vídeo.](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Seleccione el vídeo y haga clic en el icono *llave* para abrir las propiedades del vídeo.
+1. Añada o edite un componente de vídeo existente, como se muestra en la figura siguiente.
 
-   ![Haga clic en la llave inglesa](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+1. Seleccione el vídeo y haga clic en Configurar (*llave*) icono para abrir las propiedades de vídeo.
 
-1. El **Vídeo** se abre el cuadro de diálogo, donde verá el **Miniatura** zona de colocación.
+   ![Imagen del recurso de vídeo seleccionado con una flecha que señala al icono Configurar, representada como una llave inglesa. en la barra de herramientas.](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-   ![Ver la miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+1. El **Vídeo** se abrirá un cuadro de diálogo en el que podrá ver la **Miniatura** zona de colocación.
+
+   ![Cuadro de diálogo de vídeo que muestra la imagen del recurso de vídeo y el cuadro desplegable Miniatura.](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
 1. Arrastre y suelte una imagen desde el selector de recursos hasta el **Miniatura** zona de colocación y haga clic en **Listo**.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+   ![Selector de imagen de recurso que se muestra detrás del cuadro de diálogo Vídeo con el recurso de imagen en el cuadro desplegable Miniatura.](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
 
-1. Haga clic en **Previsualizar**.
+1. Haga clic en **Vista previa**.
 
 1. Si se establece un vídeo en el componente, se reproduce el vídeo. Si no es así, y la miniatura está configurada, la miniatura se reproduce. De lo contrario, el componente se considera no configurado y se omite.
 
@@ -68,10 +71,10 @@ Siga los pasos a continuación para utilizar las miniaturas en los vídeos:
 
 La miniatura en vídeos admite los siguientes casos de uso:
 
-* Se omite un componente de vídeo sin nada configurado.
+* Se omite un componente de vídeo sin ninguna configuración.
 
-* Un componente de vídeo solo con el conjunto de miniaturas reproducirá la miniatura.
+* Un componente de vídeo solo con el conjunto de miniaturas reproduce la miniatura.
 
-* Un componente de vídeo con el vídeo (si el vídeo tiene la representación correcta) y el conjunto de miniaturas reproducirán el vídeo.
+* Un componente de vídeo con el vídeo (si el vídeo tiene la representación correcta) y el conjunto de miniaturas reproduce el vídeo.
 
-* Un componente de vídeo con el conjunto de vídeos reproducirá la miniatura, en caso de error de reproducción, o simplemente pasará al siguiente elemento en caso de que la miniatura no esté configurada.
+* Un componente de vídeo con el conjunto de vídeos reproduce la miniatura, si hay un error de reproducción, o pasa al siguiente elemento en caso de que la miniatura no esté configurada.

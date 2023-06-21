@@ -3,10 +3,10 @@ title: Configuración de Dispatcher con AEM Headless
 description: Dispatcher es una capa de almacenamiento en caché y seguridad situada frente a los entornos de publicación de Adobe Experience Manager. Se utilizan varias configuraciones para abrir puntos de conexión de GraphQL en aplicaciones sin encabezado.
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 93%
+source-wordcount: '230'
+ht-degree: 55%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->Para obtener documentación detallada acerca de Dispatcher, consulte la [Guía de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
+>Para obtener documentación detallada sobre Dispatcher, consulte la [Guía de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es).
 
-Como parte de un proyecto de AEM, se incluye un módulo de Dispatcher que contiene configuraciones para Dispatcher. Los proyectos recién generados a partir del [Tipo de archivo del proyecto de AEM](https://github.com/adobe/aem-project-archetype) incluyen automáticamente [filtros](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es?#defining-a-filter) que habilitan los puntos de conexión de GraphQL.
+AEM Como parte de un proyecto de, se incluye un módulo de Dispatcher que contiene configuraciones para Dispatcher. Proyectos recién generados a partir de [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) incluir automáticamente [filtros](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es?#defining-a-filter) que habilitan los extremos de GraphQL.
 
-## Puntos de conexión de GraphQL
+## Puntos finales de GraphQL
 
 Como parte de los filtros predeterminados, los [puntos de conexión de GraphQL](/help/headless/graphql-api/graphql-endpoint.md) se abren con la siguiente regla:
 
@@ -28,7 +28,7 @@ Como parte de los filtros predeterminados, los [puntos de conexión de GraphQL](
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-La comodín `*` abre varios puntos de conexión en la instancia de AEM. La consulta mediante un extremo de GraphQL se realiza mediante `POST` y la respuesta **no** se almacenarán en caché.
+La comodín `*` abre varios puntos de conexión en la instancia de AEM. La consulta mediante un extremo de GraphQL se realiza mediante `POST` y la respuesta es **no** en caché.
 
 ## Consultas persistentes de GraphQL
 
@@ -38,4 +38,4 @@ La solicitud de consultas persistentes se realiza con un punto de conexión dife
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Las consultas persistentes se pueden solicitar utilizando `GET`, por lo que se almacena en caché así la respuesta en el nivel de Dispatcher y de la red de distribución de contenido (CDN). Se pueden encontrar más detalles acerca del almacenamiento en caché e invalidación de caché [aquí](/help/implementing/dispatcher/caching.md).
+Las consultas persistentes se pueden solicitar utilizando `GET`, almacenando en caché la respuesta en los niveles de Dispatcher y CDN. Se pueden encontrar más detalles acerca del almacenamiento en caché e invalidación de caché [aquí](/help/implementing/dispatcher/caching.md).
