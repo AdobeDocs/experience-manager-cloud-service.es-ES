@@ -2,7 +2,7 @@
 title: Compatibilidad con OAuth2 para el servicio de correo
 description: Compatibilidad con Oauth2 para el servicio de correo en Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 162974b2d6f0efb247f98236d7a2cd996a2e27c9
+source-git-commit: 45332f540551e0c8e513946308af88824a58f121
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 84%
@@ -58,7 +58,7 @@ A continuación, debe generar el token de actualización, que forma parte de la 
 
 Para ello, siga estos pasos:
 
-1. Abra la siguiente URL en el explorador después de reemplazar `clientID` y `tenantID` con los valores específicos de su cuenta: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access&state=12345`
+1. Abra la siguiente URL en el explorador después de reemplazar `clientID` y `tenantID` con los valores específicos de su cuenta: `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
 1. Conceda el permiso cuando se le pida
 1. La dirección URL se redireccionará a una nueva ubicación, construida con este formato: `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
 1. Copie el valor de `<code>` en el ejemplo anterior
