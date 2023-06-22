@@ -1,10 +1,10 @@
 ---
 title: Conversión de AMS a una configuración de Dispatcher de Adobe Experience Manager as a Cloud Service
 description: Conversión de AMS a una configuración de Dispatcher de Adobe Experience Manager as a Cloud Service
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 95%
+source-wordcount: '1275'
+ht-degree: 44%
 
 ---
 
@@ -13,20 +13,20 @@ ht-degree: 95%
 
 ## Introducción {#introduction}
 
-Esta sección proporciona las instrucciones paso a paso sobre cómo convertir una configuración de AMS.
+Esta sección proporciona instrucciones paso a paso sobre cómo convertir una configuración de AMS.
 
 >[!NOTE]
->Se supone que hay un archivo con una estructura similar a la descrita en [Administrar las configuraciones de Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+>Se supone que hay un archivo con una estructura similar a la descrita en [Administrar las configuraciones de Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/dispatcher-configurations.html)
 
 ## Pasos para la configuración de Dispatcher para convertir un AMS a AEM as a Cloud Service
 
 1. **Extraer el archivo y eliminar un prefijo eventual**
 
-   Extraiga el archivo en una carpeta y asegúrese de que las subcarpetas inmediatas comiencen con conf, conf.d, conf.dispatcher.d y conf.module.d. Si no lo hacen, muévalas arriba en la jerarquía.
+   Extraiga el archivo en una carpeta y asegúrese de que las subcarpetas inmediatas comiencen con conf, conf.d, conf.dispatcher.d y conf.module.d. Si no lo hacen, muévalos arriba en la jerarquía.
 
 1. **Elimine las subcarpetas y archivos que no utilice**
 
-   Elimine las subcarpetas conf y conf.module.d, así como los archivos que contengan conf.d/*.conf.
+   Elimine las subcarpetas conf y conf.module.d, y los archivos que contengan conf.d/*.conf.
 
 1. **Elimine todos los hosts virtuales que no sean de publicación**
 
@@ -41,7 +41,7 @@ Esta sección proporciona las instrucciones paso a paso sobre cómo convertir un
    `<VirtualHost *:443>`
    `...`
    `</VirtualHost>`
-elimínelos o haga comentarios. Las frases de estas secciones no se procesan, pero si se conservan, se pueden editar sin efecto, lo que es confuso.
+elimínelos o haga comentarios. Las frases de estas secciones no se procesan, pero si las mantiene, puede que termine editándolas sin efecto, lo que es confuso.
 
 1. **Verificar reescrituras**
 
@@ -51,7 +51,7 @@ elimínelos o haga comentarios. Las frases de estas secciones no se procesan, pe
 
    * Si conf.d/rewrites contiene un solo archivo, debe cambiar el nombre a rewrite.rules y no olvidar adaptar también las frases con Include que hacen referencia a ese archivo en los archivos host virtuales.
 
-   * Sin embargo, si la carpeta contiene varios archivos específicos de host virtual, el contenido debe copiarse en la frase Include, que hace referencia a ellos en los archivos de host virtual.
+   * Sin embargo, si la carpeta contiene varios archivos específicos de host virtual, su contenido debe copiarse en la frase Include, que hace referencia a ellos en los archivos de host virtual.
 
 1. **Comprobar variables**
 
@@ -61,7 +61,7 @@ elimínelos o haga comentarios. Las frases de estas secciones no se procesan, pe
 
    1. Si conf.d/variables contiene un solo archivo, debe cambiar el nombre a custom.vars y no olvidar adaptar también las frases con Include que hacen referencia a ese archivo en los archivos host virtuales.
 
-   1. Sin embargo, si la carpeta contiene varios archivos específicos de host virtual, el contenido debe copiarse en la frase Include, que hace referencia a ellos en los archivos de host virtual.
+   1. Sin embargo, si la carpeta contiene varios archivos específicos de host virtual, su contenido debe copiarse en la frase Include, que hace referencia a ellos en los archivos de host virtual.
 
 1. **Elimine las listas blancas**
 
@@ -76,10 +76,10 @@ Elimine las secciones que hagan referencia a variables denominadas DISP_ID, PUBL
 
 1. **Comprueba el estado ejecutando el validador**
 
-   Ejecuta el validador de Dispatcher en el directorio, con el subcomando httpd:
+   Ejecute el validador de Dispatcher en el directorio, con el subcomando httpd:
 
    `$ validator httpd`
-Si se observan errores en cuanto a la falta de archivos include, comprueba si se ha cambiado correctamente el nombre de esos archivos.
+Si se observan errores en cuanto a la falta de archivos &quot;include&quot;, comprueba si se ha cambiado correctamente el nombre de esos archivos.
 
    Si hay directivas de Apache que no están en la lista blanca, elimínalas.
 
@@ -89,21 +89,21 @@ Si se observan errores en cuanto a la falta de archivos include, comprueba si se
 
 1. **Cambiar el nombre de los archivos**
 
-   Se debe cambiar el nombre de todas las granjas en conf.dispatcher.d/enabled_farms para que coincidan con el patrón *.farm, por ejemplo, un archivo de granja llamado customerX_farm.any debe cambiarse por el nombre customerX.farm.
+   Se debe cambiar el nombre de todas las granjas en conf.dispatcher.d/enabled_farms para que coincidan con el patrón *.farm. Por ejemplo, cambie el nombre `customerX_farm.any` hasta `customerX.farm`.
 
 1. **Compruebe la caché**
 
    Introduce el directorio conf.dispatcher.d/cache.
 
-   Elimine cualquier archivo con el prefijo ams_.
+   Elimine cualquier archivo con el prefijo `ams_`.
 
-   Si conf.dispatcher.d/cache está ahora vacío, copie el archivo conf.dispatcher.d/cache/rules.any de la configuración estándar de Dispatcher a esta carpeta. La configuración de Dispatcher estándar se encuentra en la carpeta src de este SDK. No olvides adaptar las frases $include que hacen referencia a los archivos de regla ams_*_cache.any en los archivos de granja.
+   Si conf.dispatcher.d/cache está ahora vacío, copie el archivo `conf.dispatcher.d/cache/rules.any` de la configuración estándar de Dispatcher a esta carpeta. La configuración estándar de Dispatcher se encuentra en la carpeta src de este SDK. No olvide adaptar las frases $include que hacen referencia a `ams_*_cache.any` archivos de reglas también en los archivos de granja.
 
-   Si en lugar de conf.dispatcher.d/cache contiene ahora un solo archivo con el sufijo _cache.any, debería ser renombrado a rules.any y no se olvide de adaptar las frases $include que se refieren a ese archivo en los archivos de la granja también.
+   Si en lugar de conf.dispatcher.d/cache contiene ahora un solo archivo con el sufijo `_cache.any`, debe cambiarse el nombre a `rules.any`. Recuerde adaptar también las frases $include que hacen referencia a ese archivo en los archivos de la granja.
 
-   Sin embargo, si la carpeta contiene varios archivos de granja específicos con ese patrón, su contenido debe copiarse en la frase $include que se refiere a ellos en los archivos de granja.
+   Sin embargo, si la carpeta contiene varios archivos específicos de la granja con ese patrón, su contenido debe copiarse en la frase $include que se refiere a ellos en los archivos de la granja.
 
-   Elimine cualquier archivo que tenga el sufijo _invalidate_permission.any.
+   Elimine cualquier archivo que tenga el sufijo `_invalidate_allowed.any`.
 
    Copie el archivo conf.dispatcher.d/cache/default_invalidate_any de la configuración predeterminada de Dispatcher a esa ubicación.
 
@@ -115,15 +115,15 @@ Si se observan errores en cuanto a la falta de archivos include, comprueba si se
 
    Introduce el directorio conf.dispatcher.d/clientheaders.
 
-   Elimine cualquier archivo con el prefijo ams_.
+   Elimine cualquier archivo con el prefijo `ams_`.
 
-   Si conf.dispatcher.d/clientheaders contiene ahora un solo archivo con el sufijo_clientheaders.any, debería ser renombrado a clientheaders.any y no se olvide de adaptar las frases $include que se refieren a ese archivo en los archivos de la granja.
+   Si conf.dispatcher.d/clientheaders contiene un solo archivo con el sufijo `_clientheaders.any`, cambie el nombre a `clientheaders.any`. Recuerde adaptar también las frases $include que hacen referencia a ese archivo en los archivos de la granja.
 
-   Sin embargo, si la carpeta contiene varios archivos de granja específicos con ese patrón, su contenido debe copiarse en la frase $include que se refiere a ellos en los archivos de granja.
+   Sin embargo, si la carpeta contiene varios archivos específicos de la granja con ese patrón, su contenido debe copiarse en la frase $include que se refiere a ellos en los archivos de la granja.
 
-   Copie el archivo conf.dispatcher/clientheaders/default_clientheaders.any de la configuración predeterminada de Dispatcher a esa ubicación.
+   Copie el archivo `conf.dispatcher/clientheaders/default_clientheaders.any` de la configuración predeterminada de Dispatcher a esa ubicación.
 
-   En cada archivo de granja, reemplace cualquier clientheader que incluya instrucciones que tengan el siguiente aspecto:
+   En cada archivo de granja, reemplace cualquier `clientheader` Instrucciones &quot;include&quot; que aparecen de la siguiente manera:
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
@@ -137,20 +137,20 @@ Si se observan errores en cuanto a la falta de archivos include, comprueba si se
 
    * Introduce el directorio conf.dispatcher.d/filters.
 
-   * Elimine cualquier archivo con el prefijo ams_.
+   * Elimine cualquier archivo con el prefijo `ams_`.
 
-   * Si conf.dispatcher.d/filters contiene ahora un solo archivo debe renombrarse a filters.any y no se olvide de adaptar las frases $include que se refieren a ese archivo en los archivos de la granja.
+   * Si conf.dispatcher.d/filters contiene ahora un solo archivo, renómbrelo a `filters.any`. Recuerde adaptar también las frases $include que hacen referencia a ese archivo en los archivos de la granja.
 
-   * Sin embargo, si la carpeta contiene varios archivos de granja específicos con ese patrón, su contenido debe copiarse en la frase $include que se refiere a ellos en los archivos de granja.
+   * Sin embargo, si la carpeta contiene varios archivos específicos de la granja con ese patrón, su contenido debe copiarse en la frase $include que se refiere a ellos en los archivos de la granja.
 
-   * Copie el archivo conf.dispatcher/filters/default_filters.any de la configuración predeterminada de Dispatcher a esa ubicación.
+   * Copie el archivo `conf.dispatcher/filters/default_filters.any` de la configuración predeterminada de Dispatcher a esa ubicación.
 
-   * En cada archivo de granja, reemplace cualquier filtro que incluya instrucciones que tengan el siguiente aspecto:
+   * En cada archivo de granja, reemplace cualquier filtro que incluya instrucciones que aparezcan como las siguientes:
 
    * $include `"/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"`
 con la frase:
 
-      `$include "../filters/default_filters.any"`
+     `$include "../filters/default_filters.any"`
 
 1. **Compruebe las representaciones**
 
@@ -158,11 +158,11 @@ con la frase:
 
    * Elimina todos los archivos de esa carpeta.
 
-   * Copia el archivo conf.dispatcher.d/renders/default_renders.any desde la configuración predeterminada de Dispatcher a esa ubicación.
+   * Copie el archivo `conf.dispatcher.d/renders/default_renders.any` de la configuración predeterminada de Dispatcher a esa ubicación.
 
    * En cada archivo de granja, elimina cualquier contenido de la sección de representaciones y reemplázalo por:
 
-      `$include "../renders/default_renders.any"`
+     `$include "../renders/default_renders.any"`
 
 1. **Comprueba los hosts virtuales**
 
@@ -170,27 +170,27 @@ con la frase:
 
    * Elimine cualquier archivo con el prefijo `ams_`.
 
-   * Si conf.dispatcher.d/virtualhosts contiene ahora un solo archivo debe renombrarse a virtualhosts.any y no olvidar adaptar las frases $include que se refieren a ese archivo en los archivos de la granja.
+   * Si conf.dispatcher.d/virtualhosts contiene ahora un solo archivo, renómbrelo a `virtualhosts.any`. Recuerde adaptar también las frases $include que hacen referencia a ese archivo en los archivos de la granja.
 
-   * Sin embargo, si la carpeta contiene varios archivos de granja específicos con ese patrón, su contenido debe copiarse en la frase $include que se refiere a ellos en los archivos de granja.
+   * Sin embargo, si la carpeta contiene varios archivos específicos de la granja con ese patrón, su contenido debe copiarse en la frase $include que se refiere a ellos en los archivos de la granja.
 
-   * Copie el archivo conf.dispatcher/virtualhosts/default_virtualhosts.any de la configuración predeterminada de Dispatcher a esa ubicación.
+   * Copie el archivo `conf.dispatcher/virtualhosts/default_virtualhosts.any` de la configuración predeterminada de Dispatcher a esa ubicación.
 
-   * En cada archivo de granja, reemplace cualquier filtro que incluya instrucciones que tengan el siguiente aspecto:
+   * En cada archivo de granja, reemplace cualquier filtro que incluya instrucciones que aparezcan como las siguientes:
 
-      `$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"`
+     `$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"`
 con la frase:
 
-      `$include "../virtualhosts/default_virtualhosts.any"`
+     `$include "../virtualhosts/default_virtualhosts.any"`
 
 
 1. **Comprueba el estado ejecutando el validador**
 
-   * Ejecuta el validador de Dispatcher en el directorio, con el subcomando Dispatcher:
+   * Ejecute el validador de Dispatcher en el directorio, con el subcomando Dispatcher:
 
-      `$ validator dispatcher`
+     `$ validator dispatcher`
 
-   * Si se observan errores en cuanto a la falta de archivos include, comprueba si se ha cambiado correctamente el nombre de esos archivos.
+   * Si se observan errores en cuanto a la falta de archivos &quot;include&quot;, comprueba si se ha cambiado correctamente el nombre de esos archivos.
 
    * Si hay errores relacionados con la variable no definida `PUBLISH_DOCROOT`, renómbrala a `DOCROOT`.
 
@@ -204,18 +204,18 @@ con la frase:
 
 Con la secuencia de comandos `docker_run.sh` en el SDK de Dispatcher, se puede probar que la configuración no contiene ningún otro error que solo se mostraría en la implementación:
 
-1. Generación de la información de implementación con el validador
+1. Generación de la información de implementación con el validador.
 
    `validator full -d out`
-Esto valida la configuración completa y genera la información de implementación en su totalidad.
+Valida la configuración completa y genera la información de implementación en su totalidad.
 
-1. Inicio del Dispatcher en una imagen de docker con la información de la implementación
+1. Inicie Dispatcher en una imagen de docker con esa información de implementación.
 
-   Con el servidor de publicación de AEM en ejecución en el equipo MacOS, al escuchar el puerto 4503, se puede ejecutar el inicio de Dispatcher delante de ese servidor de la siguiente manera:
+   AEM Con el servidor de publicación de la en ejecución en el equipo macOS, al escuchar el puerto 4503, se puede ejecutar el inicio de Dispatcher delante de ese servidor de la siguiente manera:
 
    `$ docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-   Esto inicia el contenedor y expone a Apache en el puerto local 8080.
+   Inicia el contenedor y expone Apache en el puerto local 8080.
 
 ## Uso de la nueva configuración de Dispatcher {#using-dispatcher-config}
 

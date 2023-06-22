@@ -4,10 +4,10 @@ description: Aprenda a reutilizar el contenido en su proyecto y a administrar si
 feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 100%
+source-wordcount: '410'
+ht-degree: 49%
 
 ---
 
@@ -24,7 +24,7 @@ Estas dos funciones se pueden combinar para adaptarse a los sitios web que son [
 
 >[!TIP]
 >
->Si es nuevo traduciendo contenido, consulte nuestro [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las potentes herramientas de traducción de AEM. Es ideal para aquellos que no tengan experiencia ni en traducción ni en AEM.
+>Si acaba de empezar a traducir contenido, consulte [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md). Es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes; ideal si no tiene experiencia en traducción o en la traducción de contenido de AEM AEM; es una herramienta que le ayuda a mejorar su experiencia de traducción o de traducción. Es muy útil si no tiene experiencia en traducción o traducción de contenido en el área de trabajo.
 
 ## Sitios multinacionales y multilingües {#multinational-and-multilingual-sites}
 
@@ -32,27 +32,27 @@ Puede crear contenido de forma eficaz para sitios multinacionales y multilingüe
 
 Normalmente, se crea un sitio principal en un idioma y para un país específico y, a continuación, se utiliza ese contenido como base para los demás sitios, traduciendo lo que sea necesario.
 
-1. [Traducir](translation/overview.md) el sitio principal a diferentes idiomas.
+1. [Traducir](translation/overview.md) el sitio principal en diferentes idiomas.
 1. Use [Administrador de varios sitios](msm/overview.md) para lo siguiente:
-   1. Reutilice el contenido del sitio principal y sus traducciones para crear sitios enfocados a otros países y culturas.
+   1. Reutilice el contenido del sitio principal y sus traducciones para crear sitios destinados a otros países y culturas.
    1. Cuando sea necesario, desasocie elementos de Live Copies para añadir detalles de localización.
 
 >[!TIP]
 >
 >Limite el uso del Administrador de varios sitios al contenido en un idioma.
 >
->Por ejemplo, use el sitio principal en inglés para crear la versión en inglés de las páginas para EE. UU., Canadá, Reino Unido, etc. y utilice el francés para crear la versión en francés de las páginas para Francia, Suiza, Canadá, etc.
+>Por ejemplo, utilice el inglés principal para crear la versión en inglés de las páginas para las páginas de EE. UU., Canadá y Reino Unido. A continuación, utilice el francés principal para crear la versión en francés de las páginas para Francia, Suiza, Canadá, etc.
 
 El diagrama siguiente ilustra cómo se cruzan los conceptos principales (pero no muestra todos los niveles/elementos implicados):
 
 ![Información general sobre la localización](assets/localization-overview.png)
 
-En este escenario, y en otros comparables, MSM no gestiona las diferentes versiones lingüísticas como tal.
+En este escenario, y en otros comparables, MSM no administra las diferentes versiones de idioma como tal.
 
-* [MSM](msm/overview.md) administra la implementación del contenido traducido de un modelo (es decir, un maestro global) a Live Copies (es decir, los sitios locales), dentro de los límites de un idioma.
-* Las funciones de integración de [traducciones](translation/overview.md) de AEM, junto con los servicios de administración de traducciones de terceros, gestionan los diferentes idiomas y traducen el contenido a estos.
+* [MSM](msm/overview.md) administra la implementación del contenido traducido de un modelo (es decir, una versión global principal) a Live Copies (es decir, los sitios locales), dentro de los límites de un idioma.
+* El [traducción](translation/overview.md) AEM las funciones de integración de los servicios de traducción, con los servicios de administración de traducciones de terceros, gestionan los idiomas y traducen el contenido a estos.
 
-Para casos de uso más avanzados, también se pueden usar MSM entre idiomas principales.
+Para casos de uso más avanzados, también se pueden usar MSM en los idiomas principales.
 
 >[!TIP]
 >
@@ -60,4 +60,3 @@ Para casos de uso más avanzados, también se pueden usar MSM entre idiomas prin
 >
 >* [Prácticas recomendadas para MSM](msm/best-practices.md)
 >* [Prácticas recomendadas para la traducción](translation/best-practices.md)
-
