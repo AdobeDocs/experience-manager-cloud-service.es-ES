@@ -98,7 +98,6 @@ AEM Consulte recursos informativos sobre cómo configurar e implementar en entor
 >1. [Póngase en contacto con el Equipo de soporte Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
 >2. Explorar [Comunidades y foros de Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
-
 <br>
 
 ## Traslado a Adobe Experience Manager as a Cloud Service {#move-to-cloud}
@@ -191,7 +190,6 @@ En la fase de Publicar Go-live, se debe garantizar la limpieza de los archivos t
 >2. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=en)
 >3. [Administración de registros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=en)
 
-
 <br>
 
 ### Herramientas y recursos
@@ -204,4 +202,3 @@ En la fase de Publicar Go-live, se debe garantizar la limpieza de los archivos t
 > Para obtener ayuda adicional, es posible que desee:
 >1. [Póngase en contacto con el Equipo de soporte Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
 >2. Explorar [Comunidades y foros de Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
-
