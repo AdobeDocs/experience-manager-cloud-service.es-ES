@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
+source-git-commit: 46f0f8ba51b328bef1061d574b0d378a510fcf38
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 37%
+source-wordcount: '382'
+ht-degree: 31%
 
 ---
 
@@ -17,17 +17,11 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 A continuación se resumen las mejoras continuas para la 12255 de la versión de mantenimiento, que se publicó el 13 de junio de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 12142 anterior.
 
-La activación de funcionalidades para esta versión de mantenimiento le proporcionará el conjunto completo de funcionalidades. Consulte las [notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md) para obtener información detallada.
+La activación de funciones para esta versión de mantenimiento le proporcionará el conjunto completo de funciones con la activación de funciones 2023.6.0. Consulte la [Roadmap de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
 
 ### Mejoras {#enhancements-12255}
 
 Ninguna.
-
-### Problemas conocidos {#known-issues-12255}
-
-- ASSETS-25729: el menú del conmutador de vistas está desactivado
-- ASSETS-25728: la opción Volver a procesar recursos no está disponible en la vista de búsqueda
-- ASSETS-22603: algunas columnas del informe de recursos de tipo descarga muestran valores &quot;nulos&quot; en la interfaz de usuario. El CSV descargable no se ve afectado.
 
 ### Problemas corregidos {#fixed-issues-12255}
 
@@ -49,6 +43,12 @@ Ninguna.
 - ASSETS-23981: función de ordenación para títulos que no funcionan en vínculos de colección
 - ASSETS-24723: los recursos publicados se han vuelto a procesar sin la intervención del usuario
 - GRANITE-45385: Migre la activación del árbol para utilizar el trabajo de sling en lugar del flujo de trabajo
+
+### Problemas conocidos {#known-issues-12255}
+
+- ASSETS-25729: el menú del conmutador de vistas está desactivado
+- ASSETS-25728: la opción Volver a procesar recursos no está disponible en la vista de búsqueda
+- ASSETS-22603: algunas columnas del informe de recursos de tipo descarga muestran valores &quot;nulos&quot; en la interfaz de usuario. El CSV descargable no se ve afectado.
 
 ### Tecnologías integradas {#embedded-tech-12255}
 
