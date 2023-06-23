@@ -3,10 +3,10 @@ title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a C
 description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ca4046a94301cebae9e7a46e055977419fedd14e
+source-git-commit: 060956eee5136924263e4df5bd756670384e8365
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 32%
+source-wordcount: '1172'
+ht-degree: 28%
 
 ---
 
@@ -38,12 +38,14 @@ Eche un vistazo al vídeo Información general sobre la versión de abril de 202
 
 ### Nuevas funciones de [!DNL Experience Manager Sites] {#sites-features}
 
-* Exportar fragmentos de contenido de AEM as a Cloud Service a Adobe target como ofertas JSON.
+* AEM Exporte fragmentos de contenido de los as a Cloud Service a Adobe Target en formato JSON y cree las ofertas JSON correspondientes en Target.
 * Ahora, la compatibilidad con la paginación y la ordenación de GraphQL, junto con las mejoras en el almacenamiento en caché interno, ayudan a mejorar el rendimiento de las aplicaciones cliente disociadas al recuperar grandes conjuntos de contenido de AEM mediante consultas y filtros complejos de GraphQL.
 
 ### Nuevas funciones en el canal de prelanzamiento de [!DNL Experience Manager Sites] {#prerelease-sites}
 
 * Los fragmentos de contenido y sus referencias ahora se pueden publicar en [AEM Servicio de previsualización de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) uso del [Consola de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), permitiendo a los usuarios previsualizar la experiencia final en una aplicación de vista previa disociada antes de lanzarse.
+* AEM Ahora, las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante GraphQL de la aplicación de la forma más rápida y sencilla. [Variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) se puede definir en las consultas de GraphQL AEM para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de los usuarios de la aplicación de la forma que se va a.
+* Etiquetas en [Variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) AEM ahora se puede enviar a JSON mediante la API de entrega de contenido de GraphQL de la.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
