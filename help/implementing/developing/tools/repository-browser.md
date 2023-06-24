@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: El explorador del repositorio proporciona una vista de solo lectura del repositorio para todos los entornos en los niveles de creación, publicación y vista previa.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Para acceder al Explorador de repositorios:
 * Los usuarios deben tener el **Cloud Manager: Desarrollador** Función en el Admin Console para ver instancias de autor y publicación.
 * AEM Además, para el autor, los usuarios con el Perfil de producto de usuarios de la aplicación pueden ver el explorador del repositorio con un acceso de lectura mínimo; los permisos del usuario se respetan al examinar el repositorio. AEM Los usuarios con el Perfil de producto de los administradores de la pueden ver el explorador del repositorio con acceso de lectura completo.
 
-Para obtener más información sobre la configuración de permisos de usuario, consulte la [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Para obtener más información sobre la configuración de permisos de usuario, consulte la [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### Inicio del Explorador de repositorios {#launching-the-repository-browser}
 
@@ -56,7 +56,7 @@ El explorador del repositorio se puede iniciar siguiendo los pasos a continuaci�
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. Inicie el explorador del repositorio haciendo clic en el icono **Abrir el Explorador del repositorio** vínculo más abajo. Esto inicia el explorador correspondiente a una instancia representativa (pod) para el nivel elegido. Esto inicia el explorador correspondiente a una instancia representativa (pod) para el nivel elegido. Tenga en cuenta que no puede controlar el pod específico para ese nivel que se inicia.
+1. Inicie el explorador del repositorio haciendo clic en **Abrir el Explorador del repositorio** vínculo más abajo. Se inicia el explorador correspondiente a una instancia representativa (pod) del nivel elegido. No puede controlar el pod específico para ese nivel que se inicia.
 
 ## Características {#features}
 
@@ -66,15 +66,15 @@ Puede utilizar el panel de navegación de la izquierda para navegar por la jerar
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-También puede navegar directamente a una ruta introduciéndola en el **Ruta** , como se muestra a continuación. Esto también expandirá su ubicación en la vista de jerarquía de contenido de la izquierda.
+También puede navegar directamente a una ruta introduciéndola en el **Ruta** , como se muestra a continuación. Esta ruta también expande su ubicación en la vista de jerarquía de contenido de la izquierda.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-Cada vez que hace clic en una carpeta de la izquierda, el campo Ruta se rellena automáticamente con su ubicación. Esto resulta útil para copiar y pegar el valor para utilizarlo posteriormente.
+Al hacer clic en una carpeta de la izquierda, el campo Ruta se rellena automáticamente con su ubicación. Esta funcionalidad es útil para copiar y pegar el valor para utilizarlo posteriormente.
 
-Además, al hacer clic en una carpeta, la dirección URL se modifica dinámicamente para incluir la ruta a esa carpeta. Esto permite direcciones URL marcables.
+Además, al hacer clic en una carpeta, la dirección URL se modifica dinámicamente para incluir la ruta a esa carpeta. Esta funcionalidad permite direcciones URL marcables.
 
-Para la publicación, de forma predeterminada, el Explorador de repositorios solo mostrará contenido público, por lo que algunas carpetas como `/conf` o `/home` no será visible.
+Para la publicación, de forma predeterminada, el Explorador de repositorios solo muestra contenido público, por lo que algunas carpetas como `/conf` o `/home` no son visibles.
 
 Para que esas ubicaciones sean visibles, haga lo siguiente.
 
@@ -86,7 +86,7 @@ Para que esas ubicaciones sean visibles, haga lo siguiente.
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Cree un nuevo perfil de producto para administradores de publicación. En el ejemplo siguiente, se llama **AEM DEV - Publicación de administradores de**
+1. Cree un perfil de producto para administradores de publicación. En el ejemplo siguiente, se llama **AEM DEV - Publicación de administradores de**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
@@ -95,7 +95,7 @@ Para que esas ubicaciones sean visibles, haga lo siguiente.
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
 1. Espere unos minutos y, a continuación, abra **AEM autor de la** consolar
-1. Agregue el grupo correspondiente al nuevo perfil de producto como miembro del grupo de administradores. Para ello, haga clic en **Herramientas - Seguridad - Grupos de autor**, luego haciendo clic en **administradores** grupo. A continuación, añada el grupo como se muestra a continuación
+1. Añada el grupo correspondiente al nuevo perfil de producto como miembro del grupo del administrador haciendo clic en **Herramientas - Seguridad - Grupos de autor**, luego haciendo clic en **administradores** grupo. A continuación, añada el grupo como se muestra a continuación
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
@@ -103,7 +103,7 @@ Para que esas ubicaciones sean visibles, haga lo siguiente.
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Como práctica de seguridad recomendada, elimine el nuevo **AEM DEV - Publicación de administradores de** grupo del grupo de administradores en **autor** por lo tanto, el nuevo grupo está aislado para publicarse
+1. Como práctica de seguridad recomendada, elimine el nuevo **AEM DEV - Publicación de administradores de** grupo del grupo del administrador en **autor** por lo tanto, el nuevo grupo está aislado para publicarse
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
@@ -117,11 +117,11 @@ Al hacer clic en un nodo, se muestran sus propiedades JCR en el panel derecho de
 
 ### Ver contenido {#view-content}
 
-Puede utilizar el explorador del repositorio para ver el contenido haciendo clic en un recurso del panel de navegación. Se abrirá una vista previa en el lado derecho del explorador, en una pestaña llamada así por el recurso correspondiente.
+Puede utilizar el explorador del repositorio para ver el contenido. Haga clic en un recurso en el panel de navegación para abrir una vista previa en el lado derecho del explorador, en una pestaña denominada en honor al recurso correspondiente.
 
 ![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
-Actualmente, la vista previa está disponible para los tipos de imagen de la lista siguiente:
+La vista previa está disponible para los siguientes tipos de imagen:
 
 * apng
 * avif

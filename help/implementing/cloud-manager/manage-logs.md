@@ -2,10 +2,10 @@
 title: Acceder y administrar registros
 description: Obtenga información sobre cómo acceder y administrar registros para ayudarle en el proceso de desarrollo en AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 91%
+source-wordcount: '266'
+ht-degree: 69%
 
 ---
 
@@ -18,7 +18,7 @@ Puede acceder a una lista de archivos de registro disponibles para el entorno se
 
 ## Descargar registros {#download-logs}
 
-Siga estos pasos para descargar registros.
+Para descargar registros, haga lo siguiente.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -48,7 +48,7 @@ Para descargar los archivos de registro para un entorno específico, el comando 
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-También puede rastrear registros a través de la interfaz de la línea de comandos.
+Además, puede rastrear registros a través de la interfaz de línea de comandos.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### Recursos adicionales {#resources}
 
-Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de Adobe I/O:
+Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de Adobe Developer:
 
-* [ Documentación de la API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [CLI de Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [ Documentación de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [CLI de Adobe Developer](https://github.com/adobe/aio-cli-plugin-cloudmanager)

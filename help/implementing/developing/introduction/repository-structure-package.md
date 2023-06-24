@@ -1,19 +1,19 @@
 ---
 title: Paquete de estructura del repositorio de proyectos de AEM
-description: Los proyectos de Adobe Experience Manager as a Cloud Service Maven requieren una definición de subpaquete de estructura de repositorio cuyo único propósito sea definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto.
+description: Los proyectos de Maven en Adobe Experience Manager as a Cloud Service requieren una definición de subpaquete de estructura de repositorio cuyo único propósito sea definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 9%
+source-wordcount: '535'
+ht-degree: 2%
 
 ---
 
 # Paquete de estructura del repositorio de proyectos de AEM
 
-Los proyectos de Maven para Adobe Experience Manager as a Cloud Service requieren una definición de subpaquete de estructura de repositorio cuyo único propósito es definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto. Esto garantiza que las dependencias de recursos JCR ordenen automáticamente la instalación de paquetes en Experience Manager as a Cloud Service. Las dependencias que faltan pueden dar lugar a escenarios en los que las subestructuras se instalarían antes que sus estructuras principales y, por lo tanto, se eliminarían inesperadamente, lo que rompería la implementación.
+Los proyectos de Maven para Adobe Experience Manager as a Cloud Service requieren una definición de subpaquete de estructura de repositorio cuyo único propósito es definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto. Este método garantiza que las dependencias de recursos JCR ordenen automáticamente la instalación de paquetes en Experience Manager as a Cloud Service. Las dependencias que faltan pueden dar lugar a escenarios en los que las subestructuras se instalarían antes que sus estructuras principales y, por lo tanto, se eliminarían inesperadamente, lo que rompería la implementación.
 
-Si el paquete de código se implementa en una ubicación **no cubierta** por el paquete de código, cualquier recurso antecesor (recursos JCR más cercanos a la raíz JCR) debe enumerarse en el paquete de estructura del repositorio para establecer estas dependencias.
+Si el paquete de código se implementa en una ubicación **no cubierto** por el paquete de código, cualquier recurso antecesor (recursos JCR más cercanos a la raíz JCR) debe enumerarse en el paquete de estructura del repositorio. Este proceso es necesario para establecer estas dependencias.
 
 ![Paquete de estructura de repositorio](./assets/repository-structure-packages.png)
 
@@ -25,11 +25,11 @@ Las rutas más típicas que se incluyen en el paquete de estructura del reposito
 + `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`, y `/apps/sling/...` que proporcionan superposiciones comunes para `/libs`.
 + `/apps/settings` que es la ruta raíz de la configuración compartida según el contexto
 
-Tenga en cuenta que este subpaquete **no tiene** cualquier contenido y está compuesto únicamente por un `pom.xml` definición de las raíces del filtro.
+Este subpaquete **no tiene** cualquier contenido y está compuesto únicamente por un `pom.xml` definición de las raíces del filtro.
 
 ## Creación del paquete de estructura del repositorio
 
-Para crear un paquete de estructura de repositorio para su proyecto de Maven, cree un nuevo subproyecto de Maven vacío, con lo siguiente `pom.xml`, actualizando los metadatos del proyecto para adaptarlos al proyecto Maven principal.
+Para crear un paquete de estructura de repositorio para el proyecto de Maven, cree un subproyecto de Maven vacío con lo siguiente `pom.xml`, actualizando los metadatos del proyecto para adaptarlos al proyecto Maven principal.
 
 Actualice el `<filters>` para incluir todas las raíces de ruta del repositorio JCR en las que se implementan los paquetes de código.
 
@@ -116,7 +116,7 @@ Asegúrese de agregar este nuevo subproyecto de Maven a los proyectos principale
 
 ## Referencia al paquete de estructura del repositorio
 
-Para utilizar el paquete de estructura del repositorio, haga referencia a él a través del paquete de todos los códigos (los subpaquetes que se implementan en `/apps`) Proyectos Maven a través del paquete de contenido FileVault Complementos Maven `<repositoryStructurePackage>` configuración.
+Para utilizar el paquete de estructura del repositorio, haga referencia a él mediante el paquete de todo el código (los subpaquetes que implementan en `/apps`) Proyectos Maven a través del paquete de contenido FileVault Complementos Maven `<repositoryStructurePackage>` configuración.
 
 En el `ui.apps/pom.xml`y cualquier otro paquete de código `pom.xml`Como, agregue una referencia a la configuración del paquete de estructura del repositorio (#repository-structure-package) del proyecto al complemento Maven del paquete FileVault.
 
@@ -162,7 +162,7 @@ Por ejemplo:
 + Paquete de código A implementado en `/apps/a`
 + El paquete de código B se implementa en `/apps/a/b`
 
-Si no se establece una dependencia de nivel de paquete a partir del paquete de código B en el paquete de código A, el paquete de código B puede implementarse primero en `/apps/a`, seguido del paquete de código B, que se implementa en `/apps/a`, lo que provoca la eliminación del instalado anteriormente `/apps/a/b`.
+Si no se establece una dependencia de nivel de paquete a partir del paquete de código B en el paquete de código A, el paquete de código B puede implementarse primero en `/apps/a`. Luego iría seguido del paquete de código B, que se implementa en `/apps/a`. El resultado es la eliminación del instalado anteriormente `/apps/a/b`.
 
 En este caso:
 
@@ -178,7 +178,7 @@ Si los paquetes de estructura del repositorio no están correctamente configurad
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-Esto indica que el paquete de código de ruptura no tiene un `<repositoryStructurePackage>` que enumera `/apps/some/path` en su lista de filtros.
+Este error indica que el paquete de código de ruptura no tiene un `<repositoryStructurePackage>` que enumera `/apps/some/path` en su lista de filtros.
 
 ## Recursos adicionales
 
