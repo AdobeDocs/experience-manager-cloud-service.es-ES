@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 10%
+source-wordcount: '631'
+ht-degree: 6%
 
 ---
 
@@ -19,15 +19,27 @@ ht-degree: 10%
 | AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
-Experience Manager admite la carga, el envío y la previsualización interactiva de recursos 3D como parte del proceso de creación.
+Experience Manager Assets admite la ingesta, administración, previsualización y entrega de recursos 3D.
 
-El visor 3D interactivo está disponible en la página de detalles de recursos de Experience Manager. El visualizador incluye, entre otras cosas, una colección de controles de cámara interactivos que le permiten orbitar, ampliar o reducir y recorrer el recurso 3D.
+Puede obtener una vista previa de los recursos 3D con las representaciones de miniaturas generadas automáticamente o el visor 3D interactivo. El visor 3D interactivo está disponible en la página de detalles de recursos de Experience Manager. El visor incluye, entre otras cosas, una colección de controles de cámara interactivos que le permiten girar, aplicar zoom y desplazarse por la escena 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formatos admitidos para la previsualización 3D en Experience Manager{#supported-3d-previewing-assets}
+## Formatos compatibles para la vista previa de miniaturas en el Experience Manager{#supported-thumbnail-previewing-assets}
 
-La vista previa 3D interactiva en Experience Manager admite los siguientes formatos de archivo:
+Experience Manager genera miniaturas para los siguientes formatos de archivo de forma predeterminada:
+
+| Extensión de archivo 3D | Formato de archivo | Tipo MIME | Notas |
+|---|---|---|---|
+| GLB | Transmisión binaria GL | model/gltf-binary |  |
+| FBX | Autodesk FBX | application/octet-stream |  |
+| OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |
+| 3DS | Modelo de estudio 3D | application/x-3ds |  |
+| USDz | Descripción de escena universal | model/vnd.usdz+zip |  |
+
+## Formatos admitidos para la previsualización 3D interactiva en Experience Manager{#supported-3d-previewing-assets}
+
+Experience Manager admite la previsualización 3D interactiva para los siguientes formatos de archivo de forma nativa:
 
 | Extensión de archivo 3D | Formato de archivo | Tipo MIME | Notas |
 |---|---|---|---|
@@ -35,8 +47,7 @@ La vista previa 3D interactiva en Experience Manager admite los siguientes forma
 | GLTF | Formato de transmisión GL | model/gltf+json | Consulte la **Nota** más abajo. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Estereolitografía | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | Compatibilidad solo con la ingesta; vista previa no disponible. |
-| USDZ | Universal Scene Description Archivo zip | model/vnd.usdz+zip | Compatibilidad solo con la ingesta; vista previa no disponible. |
+
 
 >[!NOTE]
 >
@@ -80,7 +91,7 @@ Consulte [Formatos compatibles con la vista previa 3D](#supported-3d-previewing-
    | **Panorámica de la cámara** | Mueva la vista de forma panorámica a la izquierda, a la derecha, arriba o abajo. | Haga clic con el botón derecho + arrastre. | Presione con dos dedos + arrastre. |
    | **Zoom de la cámara** | Desplazarse dentro y fuera de las áreas de la escena 3D. | Rueda de desplazamiento. | Pellizco de dos dedos. |
    | **Vuelva a centrar su cámara** | Vuelva a centrar la cámara en un punto de un objeto de la escena 3D. | Haga doble clic en. | Pulse dos veces. |
-   | **Restablecer** | Cerca de la esquina inferior derecha de la página, seleccione el icono Restablecer para restaurar el punto de destino de vista en el centro del recurso 3D. El restablecimiento también acerca o aleja la cámara para mostrar el recurso en su totalidad y a un tamaño de visualización razonable. |  |  |
-   | **Modo de pantalla completa** | Para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, seleccione el icono Pantalla completa. |  |  |
+   | **Restablecer** | Cerca de la esquina inferior derecha de la página, seleccione el icono Restablecer para restaurar el punto de destino de vista en el centro del recurso 3D. El restablecimiento también acerca o aleja la cámara para mostrar el recurso en su totalidad y a un tamaño de visualización razonable. |   |   |
+   | **Modo de pantalla completa** | Para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, seleccione el icono Pantalla completa. |   |   |
 
 1. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Cerrar]**.

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 10%
+source-wordcount: '1030'
+ht-degree: 11%
 
 ---
 
@@ -23,7 +23,7 @@ Los aspectos destacados de la conversión de recursos mediante microservicios de
 * Clave [formatos de archivo de Adobe](#adobe-formats) producidas por aplicaciones y servicios de Adobe, incluidos [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], y [!DNL Adobe Acrobat] o PDF.
 * Clave [formatos de archivo de imagen](#image-formats).
 * [Formatos de archivo Camera Raw](#camera-raw-formats) para una amplia gama de cámaras, incluyendo Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
-* Común [formatos de documento](#document-formats), incluidos los formatos de Microsoft Office y Open Document.
+* Común [formatos de documento](#document-formats), incluidos los formatos Microsoft® Office y Open Document.
 * Amplia gama de formatos de [vídeo](#video-formats) y [audio.](#audio-formats)
 
 La siguiente leyenda describe el nivel de compatibilidad con cada formato.
@@ -41,6 +41,7 @@ La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 | IA | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
 | DN | ✓ | - | ✓ | ✓ |
+| SBSAR | ✓ | - | ✓ | ✓ |
 | IDEAS | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
@@ -50,7 +51,7 @@ La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Para [!DNL Adobe InDesign] archivos (INDD), el tamaño de la representación viene determinado por la previsualización incrustada en el archivo INDD. Configure las preferencias en [!DNL InDesign] (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de vista previa con documentos, tamaño de vista previa]**) para incrustar una representación más grande.
+\* Para [!DNL Adobe InDesign] archivos (INDD), el tamaño de las representaciones viene determinado por la previsualización incrustada en el archivo INDD. Configure las preferencias en [!DNL InDesign] (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de vista previa con documentos, tamaño de vista previa]**) para poder incrustar representaciones más grandes.
 
 ## Formatos de imagen {#image-formats}
 
@@ -63,7 +64,7 @@ La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | RGB | ✓ | ✓ | ✓ | ✓ |
 | RGBA | ✓ | ✓ | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
+| SGI™ | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 | WebP | ✓ | ✓ | ✓ | ✓ |
@@ -77,13 +78,16 @@ Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-med
 | Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Vista previa de miniaturas | Previsualización 3D | Entrega de Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
-## [!DNL Camera RAW] formatos {#camera-raw-formats}
+## [!DNL Camera Raw] formatos {#camera-raw-formats}
 
 | Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -181,20 +185,20 @@ Los formatos de documento admitidos para las funciones de administración de rec
 * Vídeo de Windows Media (WMV)/ASF (.wmv, .asf)
 * AVI (sin comprimir 8/10 bits) (.avi)
 * MP4 (.mp4, .m4a, .m4v)
-* Grabación de vídeo digital de Microsoft (DVR-MS) (.dvr-ms)
+* Microsoft® Digital Video Recording (DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
 ## Sugerencias y limitaciones {#limitations-and-tips}
 
-* Actualmente, el límite de tamaño de archivo para la extracción de metadatos es de aproximadamente 15 GB. Al cargar recursos muy grandes, a veces la operación de extracción de metadatos falla.
+* Actualmente, el límite de tamaño de archivo para la extracción de metadatos es de aproximadamente 15 GB. Al cargar recursos grandes, a veces la operación de extracción de metadatos falla.
 
 ## Dynamic Media: Formatos de vídeo de entrada compatibles para la transcodificación {#video-dynamic-media-transcoding}
 
 | Extensión de archivo de vídeo | Contenedor | Códecs de vídeo recomendados | Códecs de vídeo no compatibles |
 | --- | --- | --- | --- |
-| AVI | Entrelazado A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | Entrelazado A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | FLV, F4V | Flash de Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectorial) |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
@@ -202,9 +206,9 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | MP4 | MPEG-4 | H264/AVC (todos los perfiles) | − |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
 | MXF ‡ | MXF | XDCAM de Sony, MPEG-2, MPEG-4, Panasonic DVCPro | − |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
+| OGV, OGG | OGG | Theora, VP3, Dirac | − |
 | WebM | WebM | Google VP8 | − |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Pantalla de Microsoft (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Pantalla Microsoft® (MSS2), Microsoft® Photo Story (WVP2) |
 
 ‡ Este formato de vídeo aún no es compatible con vídeos interactivos de Dynamic Media ni con anotaciones de Experience Manager Assets.
 
@@ -253,17 +257,17 @@ Consulte también [Formatos 3D admitidos](/help/assets/file-format-support.md#su
 | Extensión de archivo 3D | Formato de archivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmisión binaria GL | model/gltf-binary | Incluye los materiales y las texturas como un solo recurso. |
-| OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |
-| STL | Estereolitografía | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene Description Archivo zip | model/vnd.usdz+zip | *Compatibilidad únicamente con la ingesta; no hay visualización ni interacción disponibles.* USDZ es un formato 3D propiedad que Safari o iOS pueden ver de forma nativa. |
+| OBJ | Archivo de objeto 3D WaveFront | application/x-tgif | |
+| STL | Estereolitografía | application/vnd.ms-pki.stl | |
+| USDZ | Universal Scene Description Archivo zip | model/vnd.usdz+zip | *Compatibilidad con la ingesta y generación de miniaturas; aún no se admiten vistas previas 3D.* USDZ es un formato 3D que Safari o iOS pueden ver de forma nativa. |
 
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
+* [API HTTP de recursos](mac-api-assets.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
@@ -275,4 +279,3 @@ Consulte también [Formatos 3D admitidos](/help/assets/file-format-support.md#su
 >
 >* [Procesamiento de recursos mediante microservicios de recursos](asset-microservices-overview.md)
 >* [Formatos de archivo compatibles con el etiquetado inteligente de recursos basados en texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
-
