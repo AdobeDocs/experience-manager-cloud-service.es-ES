@@ -2,10 +2,10 @@
 title: Obtenga información acerca de la creación de modelos de fragmento de contenido en AEM
 description: Obtenga información sobre los conceptos y la mecánica del contenido de modelado para su CMS sin periféricos usando modelos de fragmentos de contenido.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 92%
+source-wordcount: '686'
+ht-degree: 89%
 
 ---
 
@@ -59,7 +59,7 @@ Cuando abra un nuevo modelo por primera vez, verá un gran espacio en blanco a l
 
 Entonces, ¿qué se debe hacer?
 
-Puede arrastrar instancias de los **Tipos de datos** en el espacio de la izquierda: ya estará definiendo su modelo.
+Puede arrastrar instancias del **Tipos de datos** en el espacio izquierdo: ya está definiendo el modelo.
 
  ![Definición de campos](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 

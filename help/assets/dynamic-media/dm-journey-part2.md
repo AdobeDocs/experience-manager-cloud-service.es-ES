@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2875'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Sin embargo, con Dynamic Media, si tiene diferentes ajustes preestablecidos de i
 ![Método del archivo principal](/help/assets/dynamic-media/assets/dm-onefile.png)
 _Mejor: un archivo con varias representaciones creadas sobre la marcha utilizando ajustes preestablecidos de imagen, como `Search_Grid` y `Thumbnail`._
 
-| **¿Por qué utilizar ajustes preestablecidos de imagen?** |  |
+| **¿Por qué utilizar ajustes preestablecidos de imagen?** | |
 |---|---|
 | Estándares | Los ajustes preestablecidos de imagen aplican un tratamiento de procesamiento de imagen estándar a cualquier imagen con la que se solicite. |
 | Administración de cambios | Si debe cambiar el procesamiento de imágenes, simplemente edite el parámetro del ajuste preestablecido de imagen existente. La definición actualizada se propaga automáticamente a todas las solicitudes. |
@@ -199,7 +199,7 @@ Cuando mueve el puntero del mouse sobre el zapato, se acerca a esa imagen y pued
 
 Al considerar la posibilidad de vivir como consumidor, o al trabajar en su función diaria, y al visitar diferentes sitios web, ve cosas como esta. Piense en cómo se está haciendo y cómo puede utilizar el poder de Dynamic Media en su propio trabajo y en el sitio web de su compañía.
 
-Acabas de leer un poco sobre los conjuntos de imágenes y los visores. Veamos un par de otros visores y pruébelos en recursos individuales. Para restablecer el visor, haga clic en el **[!UICONTROL Actualizar]** en la esquina inferior izquierda.
+Acaba de leer acerca de los conjuntos de imágenes y visores. Veamos un par de otros visores y pruébelos en recursos individuales. Para restablecer el visor, haga clic en el **[!UICONTROL Actualizar]** en la esquina inferior izquierda.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 

@@ -2,10 +2,10 @@
 title: Recorrido del complemento de demostraciones de referencia de AEM
 description: Comience aquí para obtener un recorrido guiado sobre cómo añadir fácilmente el complemento de demostraciones de referencia de AEM a un entorno de zona protegida con una configuración de AEM mínima y pueda probar las potentes funciones de AEM con ejemplos enriquecidos basados en las prácticas recomendadas.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 91%
+source-wordcount: '853'
+ht-degree: 83%
 
 ---
 
@@ -19,10 +19,10 @@ AEM es un potente conjunto de herramientas para crear y administrar experiencias
 
 Sin contenido ni configuraciones de muestra, puede resultar difícil probar las potentes funciones de AEM, tanto para los clientes nuevos como para los experimentados. El complemento Demostraciones de referencia de AEM permite crear de forma sencilla entornos de zona protegida precargados con contenido de muestra y preconfigurados con las directrices de prácticas recomendadas más recientes de Adobe. Con el complemento, puede evaluar fácilmente las funciones de AEM Sites y AEM Screens en contexto y con casi ninguna configuración.
 
-* **Si no tiene experiencia en AEM**, seguir este recorrido es la forma más sencilla de ponerse en marcha con contenido real en un entorno de AEM auténtico, que funciona por completo y que le permite probar la funcionalidad y conocer las características de AEM.
+* **AEM Si es nuevo en el sector de la** Sin embargo, seguir este recorrido AEM AEM es la forma más sencilla de ponerse en marcha con contenido real en un entorno de trabajo real y completamente funcional, para permitirle probar la funcionalidad y conocer las capacidades de los usuarios de la red de distribución de contenido ().
 * **Si tiene experiencia como usuario de AEM**, seguir este recorrido es la forma más sencilla de configurar un entorno de demostración independiente para ejecutar pruebas o crear un POC con nuevas funcionalidades.
 
-Independientemente de sus necesidades particulares, si necesita un entorno de AEM con contenido de muestra realista, que funcione completamente, puede configurar una zona protegida con el complemento Demostraciones de referencia de AEM. ¡Siga leyendo!
+AEM AEM Independientemente de sus necesidades particulares, si necesita un entorno de trabajo lleno de contenido de muestra realista, que funcione completamente, puede configurar una zona protegida con el complemento Demostraciones de referencia de la. ¡Siga leyendo!
 
 ## Recorridos de documentación de AEM {#documentation-journeys}
 

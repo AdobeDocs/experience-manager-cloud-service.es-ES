@@ -2,9 +2,9 @@
 title: La herramienta Copia de contenido
 description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción as a Cloud Service de la a entornos más bajos para realizar pruebas.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1221'
 ht-degree: 55%
 
 ---
@@ -64,7 +64,7 @@ Antes de poder copiar cualquier contenido, se debe definir un conjunto de conten
    1. Introduzca la ruta en el campo **Añadir ruta de inclusión**.
    1. Pulse o haga clic en el botón **Añadir ruta** para agregar la ruta al conjunto de contenido.
    1. Pulse o haga clic de nuevo en el botón **Añadir ruta** cuando sea necesario.
-      * Se permiten hasta cincuenta rutas.
+      * Se permiten hasta 50 rutas.
 
    ![Añadir rutas al conjunto de contenido](assets/add-content-set-paths.png)
 
@@ -183,7 +183,7 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * El contenido solo se puede copiar desde y hacia los servicios de creación.
 * No es posible copiar contenido entre programas.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
-* Se pueden especificar hasta cincuenta rutas por cada conjunto de contenido. No hay limitación en las rutas excluidas.
+* Se pueden especificar hasta 50 rutas por conjunto de contenido. No hay limitación en las rutas excluidas.
 * La herramienta de copia de contenido no debe utilizarse como herramienta de clonación o creación de reflejo porque no puede realizar el seguimiento del contenido movido o eliminado en el origen.
 * La herramienta de copia de contenido no tiene capacidad de control de versiones y no puede detectar automáticamente el contenido modificado o recién creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
    * Si desea actualizar el entorno de destino con cambios de contenido solo desde la última operación de copia de contenido, debe crear un conjunto de contenido y especificar las rutas en la instancia de origen donde se realizaron los cambios desde la última operación de copia de contenido.

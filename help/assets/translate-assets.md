@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: '2646'
 ht-degree: 24%
 
 ---
@@ -147,7 +147,6 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
    >* Si utiliza la traducción automática, los binarios de recursos no se traducen.
    >* Si el recurso que agrega al trabajo de traducción incluye subrecursos, selecciónelos y elimínelos para que la traducción continúe sin problemas.
 
-
 1. Para iniciar la traducción de los recursos, pulse o haga clic en la flecha de la **[!UICONTROL Trabajo de traducción]** mosaico y selección **[!UICONTROL Inicio]** de la lista. Un mensaje notifica el comienzo del trabajo de traducción.
 1. Para ver el estado del trabajo de traducción, pulse o haga clic en los puntos suspensivos en la parte inferior del **[!UICONTROL Trabajo de traducción]** mosaico. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. Una vez finalizada la traducción, el estado cambia a Listo para revisión. Vaya a la interfaz de usuario de Assets y abra la página Propiedades de cada uno de los recursos traducidos para ver los metadatos traducidos.
@@ -284,11 +283,11 @@ Si desea aplicar un conector personalizado para los servicios de traducción que
 
 **Consulte también**
 
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)

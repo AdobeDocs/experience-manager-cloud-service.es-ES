@@ -2,10 +2,10 @@
 title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante Fragmentos de contenido.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 93%
+source-wordcount: '1709'
+ht-degree: 91%
 
 ---
 
@@ -141,7 +141,7 @@ Se abre un cuadro de diálogo en el que puede introducir los detalles y confirma
 
 #### Uso de rutas y etiquetas para limitar los modelos de fragmento de contenido disponibles en la carpeta {#tags-paths-for-models-in-folder}
 
-Esta sección es un poco más avanzada. En realidad no la necesita si acaba de empezar y está recién probando, pero es *muy* útil cuando tiene muchos fragmentos. Así que es bueno conocerla, aunque todavía no la utilice.
+Esta sección es un poco más avanzada. Realmente no lo necesitas si estás empezando y probando cosas, pero lo es *muy* útil cuando tiene muchos fragmentos. Por lo tanto, es bueno saber acerca de, incluso si aún no lo utiliza.
 
 El arquitecto de contenido habrá creado todos los modelos de fragmento de contenido necesarios para el proyecto actual y tal vez también otros proyectos. Para simplificarle las cosas a usted y a otros autores, puede limitar la lista de modelos disponibles para una carpeta específica.
 

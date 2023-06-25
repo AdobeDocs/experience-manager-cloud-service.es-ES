@@ -2,10 +2,10 @@
 title: Edición del contenido de una página
 description: Una vez creada la página, puede editar el contenido para realizar las actualizaciones que requiera
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3004'
-ht-degree: 61%
+source-wordcount: '3002'
+ht-degree: 59%
 
 ---
 
@@ -443,7 +443,7 @@ El **Ver como aparece publicado** La opción está disponible en [Información d
 
 ## Bloquear una página   {#locking-a-page}
 
-AEM le permite bloquear páginas para que nadie más pueda modificar su contenido. Esta función es útil cuando realice muchas ediciones en una página concreta o cuando tenga que congelar una página durante un rato.
+AEM le permite bloquear páginas para que nadie más pueda editar su contenido. Este bloqueo es útil cuando realice varias ediciones en una página concreta o cuando necesite congelar una página durante un rato.
 
 Las páginas se pueden bloquear desde las ubicaciones siguientes:
 

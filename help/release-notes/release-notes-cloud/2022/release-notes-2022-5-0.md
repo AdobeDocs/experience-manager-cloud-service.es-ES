@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 87%
+source-wordcount: '791'
+ht-degree: 75%
 
 ---
 
@@ -45,11 +45,11 @@ Eche un vistazo al vídeo Información general sobre la versión de mayo de 2022
 
 * [Imágenes inteligentes de Dynamic Media](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) ahora es compatible con el formato de archivo AVIF: mejore aún más Google Core Web Vital (Pintado de contenido más grande), con AVIF proporcionando una reducción de tamaño adicional del 20 % con respecto a WebP. En total, AVIF proporciona una reducción de tamaño promedio de hasta el 41 % con respecto al JPEG (en algunas imágenes incluso de hasta el 76 %).
 
-* [!UICONTROL Experience Manager Assets Brand Portal] ahora ejecuta trabajos automáticos cada doce horas para eliminar todos los recursos de Brand Portal que se publican en AEM. Como resultado, no es necesario eliminar manualmente los recursos de la carpeta Contribution para mantener el tamaño de la carpeta por debajo del límite de umbral. Consulte [Novedades de Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es).
+* [!UICONTROL Experience Manager Assets Brand Portal] ahora ejecuta trabajos automáticos cada 12 horas para eliminar todos los recursos de Brand Portal AEM que se publican en el sitio de trabajo de la aplicación de la. Como resultado, no es necesario eliminar manualmente los recursos de la carpeta Contribution para mantener el tamaño de la carpeta por debajo del límite de umbral. Consulte [Novedades de Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es).
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Assets] {#prerelease-features-assets}
 
-Experience Manager Assets utiliza las funcionalidades de Adobe Sensei AI para ahora [distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente al ingerirlos](/help/assets/color-tag-images.md). Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen. Puede configurar el número de colores, dentro de un rango de uno a cuarenta, que están etiquetados en una imagen para que pueda buscar imágenes basadas en esos colores más adelante.
+Experience Manager Assets utiliza las funcionalidades de Adobe Sensei AI para ahora [distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente al ingerirlos](/help/assets/color-tag-images.md). Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen. Puede configurar el número de colores, dentro de un rango de uno a 40, que están etiquetados en una imagen para que pueda buscar imágenes basadas en esos colores más adelante.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -58,7 +58,7 @@ Experience Manager Assets utiliza las funcionalidades de Adobe Sensei AI para ah
 
 * **Integración de formularios adaptables con Microsoft® Power Automate**: ahora puede configurar un formulario adaptable para ejecutar un flujo de nube Microsoft® Power Automate en el envío. El formulario adaptable configurado envía los datos capturados, los archivos adjuntos y el documento de registro al flujo de Power Automate Cloud para su procesamiento. Le ayuda a crear una experiencia de captura de datos personalizada mientras aprovecha el poder de Microsoft® Power Automate para crear lógicas empresariales en torno a los datos capturados y automatizar los flujos de trabajo de los clientes.
 
-* **Asistente para crear un formulario adaptable**: puede utilizar el asistente para usuarios empresariales con el fin de crear formularios adaptables de forma rápida. El asistente proporciona una navegación rápida por las pestañas para seleccionar fácilmente la plantilla preconfigurada, el estilo, los campos y las opciones de envío para crear un formulario adaptable.
+* **Asistente para crear un formulario adaptable**: puede utilizar el asistente fácil de usar para empresas con el fin de crear Forms adaptable rápidamente. El asistente proporciona una navegación rápida por las pestañas para seleccionar fácilmente la plantilla preconfigurada, el estilo, los campos y las opciones de envío para crear un formulario adaptable.
 
   ![Asistente para crear un formulario adaptable](/help/release-notes/assets/wizard.png)
 

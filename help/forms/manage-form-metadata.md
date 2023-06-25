@@ -4,7 +4,7 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: Los metadatos facilitan la categorización y organización de los recursos y ayudan a los usuarios que buscan un recurso específico.
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1658'
 ht-degree: 96%
@@ -17,7 +17,7 @@ Los metadatos facilitan la categorización y organización de los recursos y ayu
 
 [!DNL AEM Forms], de forma predeterminada, ofrece un conjunto definido de metadatos para cada tipo de recurso. Más allá de los metadatos predeterminados, puede agregar metadatos personalizados a cada tipo de recurso. [!DNL AEM Forms] también le ofrece los medios adecuados para crear, administrar e intercambiar todos estos metadatos de forma eficaz en sus formularios.
 
-<!-- If you're a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you're using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
+<!-- If you are a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you are using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
 ## Metadatos en [!DNL AEM Forms] {#metadata-in-aem-forms}
 

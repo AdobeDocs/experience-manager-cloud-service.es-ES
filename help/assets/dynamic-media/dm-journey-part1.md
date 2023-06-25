@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 803c4dc44189d58ddbd2669b00dd8107b2a926ae
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3708'
+source-wordcount: '3709'
 ht-degree: 1%
 
 ---
@@ -157,9 +157,9 @@ Veamos más de cerca los problemas que Dynamic Media está resolviendo con el ar
 | Cree y almacene cada recurso. | Utilice un solo archivo de imagen, creando automáticamente las representaciones necesarias solo en el momento de la entrega. |
 | Costes de almacenamiento elevados. | Elimina la necesidad de crear y almacenar varias copias de un recurso. |
 | Dificultad para mantener la cadena de custodia. | Garantiza la entrega de experiencias coherentes y optimizadas para el dispositivo. |
-| No hay historial de versiones. |  |
-| Experiencias de marca incoherentes entre dispositivos. |  |
-| Coste innecesario de la creación de recursos duplicados. |  |
+| No hay historial de versiones. | |
+| Experiencias de marca incoherentes entre dispositivos. | |
+| Coste innecesario de la creación de recursos duplicados. | |
 
 Cuando piensa en un archivo, está creando un recurso para cada tipo de experiencia. Es posible que tenga una imagen inicial y luego tenga que crear 20, 30 o 40 variaciones de esa imagen, que finalmente tiene que almacenar y pagar por ese almacenamiento.
 
@@ -178,11 +178,11 @@ Otro caso de uso que Dynamic Media resuelve es el vídeo. El vídeo es complejo.
 | Difícil de administrar y ofrecer vídeo optimizado para varios dispositivos. | Utilice un solo vídeo que cambie automáticamente el tamaño de todos los dispositivos. |
 | Los vídeos se bloquean o se reproducen en baja calidad debido al ancho de banda disponible del usuario final. | Ofrezca vídeo a través de un reproductor HTML que detecta automáticamente el ancho de banda disponible y adapta la calidad para garantizar una alta fidelidad y una reproducción fluida. |
 | Crear manualmente todas las versiones de un vídeo no es factible y lleva mucho tiempo, solo para garantizar una buena visualización y reproducción en todos los dispositivos. | Elimine horas de tedioso trabajo de transcodificación con un flujo de trabajo simplificado. |
-|  | Libere tiempo para un trabajo de mayor valor. |
+| | Libere tiempo para un trabajo de mayor valor. |
 
 Los clientes acuden a Dynamic Media con el siguiente problema que esperan solucionar:
 
-&quot;_Tenemos el video, y gastamos mucho dinero en crearlo. Pero hemos evitado colocarlo en páginas, o entregarlo, porque de nuestras pruebas, realmente no podemos garantizar la calidad del video, o si realmente se va a reproducir. Y, en última instancia, eso afecta a nuestras marcas y, potencialmente, a nuestro papel, incluso en la conversión._&quot;
+&quot;_Tenemos el video, y gastamos una gran cantidad de dinero creándolo. Pero hemos evitado colocarlo en páginas, o entregarlo, porque de nuestras pruebas, realmente no podemos garantizar la calidad del video, o si realmente se va a reproducir. Y, en última instancia, eso afecta a nuestras marcas y, potencialmente, a nuestro papel, incluso en la conversión._&quot;
 
 La solución de Dynamic Media es tomar ese archivo de vídeo principal y permitir que Dynamic Media haga todos los tamaños a través de su proceso de transcodificación. A continuación, vincúlelo con el reproductor de vídeo inteligente de Dynamic Media. Este flujo de trabajo garantiza que, tanto si utiliza ese vídeo en la página de aterrizaje principal, como en una categoría o página de detalles del producto, será coherente en todo y se entregará con una alta calidad.
 

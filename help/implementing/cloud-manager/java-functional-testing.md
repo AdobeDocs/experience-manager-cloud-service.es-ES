@@ -2,10 +2,10 @@
 title: Pruebas funcionales de Java
 description: Obtenga información sobre cómo escribir pruebas funcionales de Java para AEM as a Cloud Service
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 94%
+source-wordcount: '847'
+ht-degree: 93%
 
 ---
 
@@ -105,7 +105,7 @@ Consulte el [`aem-testing-clients` Repositorio de GitHub](https://github.com/ado
 | CPU | 0,5 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
 | Memoria | 0,5Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes |
 | Tiempo de espera | 30m | Duración tras la cual finaliza la prueba. |
-| Duración recomendada | 15m | Se recomienda escribir las pruebas para que no tarden más de este tiempo. |
+| Duración recomendada | 15m | Adobe recomienda escribir las pruebas para que no tarden más de este tiempo. |
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Las propiedades del sistema son las siguientes:
 
 | Propiedad | Descripción | Ejemplos |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | cantidad de instancias, para que coincidan con el servicio en la nube debe establecerse en `2` | `2` |
+| `sling.it.instances` | número de instancias, para que coincidan con cloud service debe establecerse en `2` | `2` |
 | `sling.it.instance.url.1` | debe establecerse en la URL de autor | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | el modo de ejecución de la primera instancia debe establecerse en `author` | `author` |
 | `sling.it.instance.adminUser.1` | debe establecerse en el usuario administrador del autor. | `admin` |

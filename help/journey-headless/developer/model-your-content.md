@@ -2,10 +2,10 @@
 title: Cómo modelar el contenido
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, aprenderá a modelar el contenido para la entrega de contenido sin encabezado de AEM utilizando el Modelado de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Este artículo se basa en estos fundamentos para que entienda cómo preparar su 
 
 *Es un mundo grande y peligroso*.
 
-Puede que sí o puede que no, pero lo cierto es que el mundo es muy ***complicado*** y el modelado de datos se utiliza para definir una representación simplificada de una subsección muy pequeña, utilizando la información específica necesaria para un fin determinado.
+Quizás, pero quizás no. Es sin duda un ***complicado*** mundo exterior y el modelado de datos se utiliza para definir una representación simplificada de una subsección muy (muy) pequeña, utilizando la información específica que se necesita para un determinado propósito.
 
 >[!NOTE]
 >

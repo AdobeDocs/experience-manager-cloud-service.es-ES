@@ -2,10 +2,10 @@
 title: Etiquetas de color para imágenes
 description: Experience Manager Assets permite distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente. A continuación, puede utilizar estas etiquetas para buscar y filtrar imágenes.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 9%
+source-wordcount: '1220'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Experience Manager Assets utiliza las capacidades de IA de Adobe Sensei para distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente al ingerirlos. Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen.
 
-Puede configurar el número de colores, dentro de un rango de uno a cuarenta, que están etiquetados en una imagen para que pueda buscar imágenes basadas en esos colores más adelante. Experience Manager Assets aplica las etiquetas en función de la cobertura de color de una imagen. También puede configurar el formato de visualización de una etiqueta de color.
+Puede configurar el número de colores, dentro de un rango de uno a 40, que están etiquetados en una imagen para que pueda buscar imágenes basadas en esos colores más adelante. Experience Manager Assets aplica las etiquetas en función de la cobertura de color de una imagen. También puede configurar el formato de visualización de una etiqueta de color.
 
 La siguiente figura ilustra la secuencia de tareas que se realizan para configurar y administrar el etiquetado de colores para imágenes en Experience Manager Assets:
 
@@ -42,11 +42,11 @@ Para administrar las propiedades de etiquetado de color de las imágenes:
 
 1. Especifique un formato de visualización para la etiqueta de color en la **[!UICONTROL Formato de visualización]** field. Las opciones posibles incluyen el nombre del color, el RGB o el formato HEX.
 
-1. Especifique el número de colores que desea etiquetar para las imágenes en la **[!UICONTROL Límite]** field. Estos colores se muestran al ver las propiedades de una imagen.  Puede definir un número entre uno y cuarenta en este campo. El valor predeterminado de este campo es diez colores.
+1. Especifique el número de colores que desea etiquetar para las imágenes en la **[!UICONTROL Límite]** field. Estos colores se muestran al ver las propiedades de una imagen.  Puede definir un número entre uno y 40 en este campo. El valor predeterminado de este campo es diez colores.
 
-1. Especifique el porcentaje mínimo de cobertura de color para incluir una etiqueta de color en los resultados de búsqueda en la **[!UICONTROL Porcentaje de umbral de cobertura/dominio]** field. Por ejemplo, si la cobertura del color rojo en una imagen es del diez por ciento y define el nueve por ciento en este campo, la imagen se incluye al buscar imágenes con color rojo. Sin embargo, si la cobertura del color rojo en una imagen es del diez por ciento y define el once por ciento en este campo, la imagen no se incluye al buscar imágenes con color rojo.
+1. Especifique el porcentaje mínimo de cobertura de color para incluir una etiqueta de color en los resultados de búsqueda en la **[!UICONTROL Porcentaje de umbral de cobertura/dominio]** field. Por ejemplo, si la cobertura del color rojo en una imagen es del diez por ciento y define el nueve por ciento en este campo, la imagen se incluye al buscar imágenes con color rojo. Sin embargo, si la cobertura del color rojo en una imagen es del diez por ciento y define el 11 por ciento en este campo, la imagen no se incluye al buscar imágenes con color rojo.
 
-   Puede especificar cualquier número entre cinco y cien en este campo. El valor predeterminado es once.
+   Puede especificar cualquier número entre cinco y cien en este campo. El valor predeterminado es 11.
 
    >[!NOTE]
    >
@@ -155,7 +155,7 @@ Para configurar el filtro de búsqueda:
 
 1. Especifique un valor apropiado en la variable **[!UICONTROL Etiqueta de campo]** en el campo **[!UICONTROL Configuración]**  pestaña.
 
-1. Clic **[!UICONTROL Listo]** para guardar la configuración.
+1. Haga clic en **[!UICONTROL Listo]** para guardar los cambios.
 
    >[!VIDEO](https://video.tv.adobe.com/v/340110)
 
@@ -185,11 +185,11 @@ Para buscar imágenes basadas en colores:
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)

@@ -4,10 +4,10 @@ description: Comprenda cómo la funcionalidad de contenido asociada para los fra
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 95%
+source-wordcount: '239'
+ht-degree: 92%
 
 ---
 
@@ -30,7 +30,7 @@ Para realizar la asociación, primero debe [agregar los recursos multimedia a un
 1. Dependiendo de si alguna colección ya se ha asociado o no, seleccione:
 
    * **Asociar contenido** - la primera colección asociada
-   * **Asociar colección**: las colecciones asociadas ya están configuradas
+   * **Asociar colección** - las colecciones asociadas ya están configuradas
 
 1. Seleccione la colección requerida.
 

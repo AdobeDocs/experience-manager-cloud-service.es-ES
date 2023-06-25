@@ -2,9 +2,9 @@
 title: Notas de la versión 2021.8.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.8.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1028'
 ht-degree: 50%
 
 ---
@@ -36,24 +36,24 @@ Eche un vistazo a la [Información general de la versión de agosto de 2021](htt
 
 * Al compartir recursos digitales como vínculo, los usuarios pueden copiar la URL en el portapapeles de inmediato. La mejora permite compartir recursos de una manera más rápida y práctica. Esta funcionalidad permite un uso compartido de recursos más rápido y conveniente.
 
-   ![Opción Copiar URL al compartir un recurso como vínculo](/help/assets/assets/link-share-copy-URL-option.png)
-   *Imagen: al compartir un recurso como vínculo, ahora puede copiar la URL para compartirlo por separado.*
+  ![Opción Copiar URL al compartir un recurso como vínculo](/help/assets/assets/link-share-copy-URL-option.png)
+  *Imagen: al compartir un recurso como vínculo, ahora puede copiar la URL para compartirlo por separado.*
 
 * Al cargar archivos TXT, los microservicios de recursos generan automáticamente una miniatura. La miniatura en PNG es una representación del archivo TXT que ayuda a los usuarios a identificar el contenido o los archivos en cierta medida, sin necesidad de abrir los archivos. Esta funcionalidad no requiere ninguna configuración y funciona de forma predeterminada.
 
-   ![Una representación de un archivo TXT se genera automáticamente mediante [!DNL Assets] en formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
-   *Imagen: se genera automáticamente una representación de un archivo TXT para ayudarle a identificar el archivo sin abrirlo.*
+  ![Una representación de un archivo TXT se genera automáticamente mediante [!DNL Assets] en formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  *Imagen: se genera automáticamente una representación de un archivo TXT para ayudarle a identificar el archivo sin abrirlo.*
 
 ### Nueva función en la [!DNL Assets] canal de prelanzamiento {#assets-prerelease-features}
 
 * Ahora puede ordenar los recursos mostrados en los resultados de búsqueda en las vistas Columna y Tarjeta. El orden funciona en las columnas Nombre, Creada, Modificada o Ninguna.
 
-   ![Ordenar los resultados de búsqueda en [!DNL Assets] en las vistas Columna y Tarjeta](/help/assets/assets/sort-searched-assets.png)
-   *Imagen: ordenación de los resultados de búsqueda en [!DNL Assets] en las vistas Columna y Tarjeta.*
+  ![Ordenar los resultados de búsqueda en [!DNL Assets] en las vistas Columna y Tarjeta](/help/assets/assets/sort-searched-assets.png)
+  *Imagen: ordenación de los resultados de búsqueda en [!DNL Assets] en las vistas Columna y Tarjeta.*
 
 ### Errores corregidos en [!DNL Assets] {#assets-bugs-fixed}
 
-* Cuando un miembro del grupo colaborador navega al [!DNL Assets] Consola, un extra `POST` Se ha generado una solicitud para intentar crear una colección. Esta solicitud no es necesaria, falla debido a problemas de permisos y crea muchos errores en los registros. (CQ-4328856)
+* Cuando un miembro del grupo colaborador navega al [!DNL Assets] Consola, un extra `POST` Se ha generado una solicitud para crear una colección. Esta solicitud no es necesaria; falla debido a problemas de permisos y crea muchos errores en los registros. (CQ-4328856)
 * Cuando los usuarios vean un recurso y seleccionen [!UICONTROL Cronología] en el menú emergente del panel izquierdo, se muestra un error. En los registros, se registran muchas advertencias debido a una consulta incorrecta. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -80,7 +80,7 @@ Eche un vistazo a la [Información general de la versión de agosto de 2021](htt
 
 * Nueva interfaz de usuario del selector de categorías para mejorar la experiencia del usuario, aumentar la eficacia y ofrecer una mejor compatibilidad con catálogos de productos complejos
 
-   ![Selector de nueva categoría](/help/assets/CIF/category-picker.png)
+  ![Selector de nueva categoría](/help/assets/CIF/category-picker.png)
 
 * Mejor compatibilidad con A11Y para los componentes principales del CIF
 

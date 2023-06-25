@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3496'
 ht-degree: 16%
 
 ---
@@ -208,7 +208,7 @@ Adobe Asset Link ofrece una buena compatibilidad con este caso de uso:
 * Además, como el recurso se encuentra en la cuenta de Creative Cloud, también está disponible en otros dispositivos que el usuario pueda tener (por ejemplo, se puede abrir o editar en una aplicación móvil de Creative Cloud) y se puede compartir con otros usuarios de Creative Cloud para colaborar.
 * Cuando el usuario creativo haya terminado con los cambios, puede ejecutar una operación de protección en ese archivo en su aplicación Creative Cloud, con un comentario opcional. Las versiones del recurso correspondiente en el Experience Manager se actualizan con el nuevo binario. Los usuarios Experience Manager como los especialistas en marketing o los usuarios de LOB tienen acceso a los cambios de recursos importantes o a los hitos a través de la IU de cronología de recursos Experience Manager.
 
-La aplicación de escritorio de Experience Manager proporciona un recurso compartido de red para los recursos abiertos en la aplicación nativa. De forma predeterminada, todos los cambios realizados localmente se cargan automáticamente en Experience Manager después de un breve tiempo. Con una configuración de este tipo, los ahorros frecuentes durante la fase de trabajo en curso se cargarían en Experience Manager y se versionarían, lo que crearía una gran cantidad de tráfico de red y posibles desafíos de escalabilidad, sin mencionar versiones innecesarias en Experience Manager.
+La aplicación de escritorio de Experience Manager proporciona un recurso compartido de red para los recursos abiertos en la aplicación nativa. De forma predeterminada, todos los cambios realizados localmente se cargan automáticamente en Experience Manager después de un breve tiempo. Con una configuración de este tipo, los ahorros frecuentes durante la fase de trabajo en curso se cargarían en Experience Manager y se versionarían, lo que crearía una gran cantidad de tráfico de red y posibles desafíos de escalabilidad, sin mencionar las versiones innecesarias en Experience Manager.
 
 El método recomendado aquí es utilizar una opción en la aplicación de escritorio de Experience Manager para desactivar las actualizaciones automatizadas y cargar cambios en los recursos en Experience Manager manualmente, aprovechando la acción de cargar cambios en la IU de estado de los recursos de la aplicación.
 

@@ -2,7 +2,7 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para su implementación en el Cloud Service de Adobe Experience Manager.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 12%
@@ -223,7 +223,7 @@ AEM AEM Para segmentar a los autores de la, a los usuarios que publican el paque
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
-Desglosar esta estructura de carpetas:
+Desglose de esta estructura de carpetas:
 
 + La carpeta de primer nivel **debe ser** `/apps`.
 + La carpeta de segundo nivel representa la aplicación con `-packages` se ha corregido la publicación en el nombre de la carpeta. A menudo, solo hay una carpeta de segundo nivel en la que están incrustados todos los subpaquetes, pero se puede crear cualquier número de carpetas de segundo nivel para representar mejor la estructura lógica de la aplicación:

@@ -1,18 +1,18 @@
 ---
 title: Preguntas frecuentes sobre Cloud Manager
-description: Encuentre respuestas a las preguntas más frecuentes sobre Cloud Manager en AEM as a Cloud Service.
+description: AEM Encuentre respuestas a las preguntas más frecuentes acerca de Cloud Manager en as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 100%
+source-wordcount: '991'
+ht-degree: 91%
 
 ---
 
 
 # Preguntas frecuentes sobre Cloud Manager {#cloud-manager-faqs}
 
-Este documento proporciona respuestas a las preguntas más frecuentes sobre Cloud Manager en AEM as a Cloud Service.
+AEM Este documento proporciona respuestas a las preguntas más frecuentes acerca de Cloud Manager en as a Cloud Service.
 
 ## ¿Es posible utilizar Java 11 con generaciones de Cloud Manager? {#java-11-cloud-manager}
 
@@ -24,7 +24,7 @@ Por ejemplo, consulte el [código de ejemplo del proyecto wknd](https://github.c
 
 ## Mi generación falla con un error sobre maven-scr-plugin después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#build-fails-maven-scr-plugin}
 
-Es posible que la generación de AEM Cloud Manager falle al intentar cambiar la generación de Java 8 a 11. Si encuentra el siguiente error, debe eliminar `maven-scr-plugin` y convertir todas las anotaciones OSGi a anotaciones OSGi R6.
+AEM Es posible que la compilación de Cloud Manager falle al intentar cambiar la compilación de Java 8 a 11. Si encuentra el siguiente error, debe eliminar `maven-scr-plugin` y convertir todas las anotaciones OSGi a anotaciones OSGi R6.
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]

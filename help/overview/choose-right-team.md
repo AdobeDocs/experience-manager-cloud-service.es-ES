@@ -2,10 +2,10 @@
 title: Personas adecuadas, funciones correctas
 description: Personas adecuadas, funciones correctas
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 97%
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ Es probable que en su organización varios departamentos sean propietarios de di
 
 La gobernanza digital comienza con averiguar quién está a cargo de qué y quién está haciendo cada trabajo centrado en el digital. Es posible que tenga que realizar alguna contratación estratégica para sumar las habilidades necesarias. Un desafío aún mayor es impulsar un cambio cultural: construir un amplio apoyo a la nueva tecnología y ayudar a la gente a acostumbrarse a nuevas formas de hacer las cosas. Una parte clave de ese esfuerzo es la creación de una comunidad digital, que permita a las personas aprender unos de otros y apoyarse entre sí.
 
-Por ahora, nos centraremos en poner a las personas adecuadas en los trabajos correctos para impulsar la implementación de Adobe Experience Manager. Para cada producto principal (Experience Manager Sites y Experience Manager Assets), hemos proporcionado una lista de funciones que se deben desempeñar, junto con las habilidades, los niveles de experiencia y los atributos que hacen que las personas sean eficaces en las distintas funciones.
+Por ahora, nos centraremos en poner a las personas adecuadas en los trabajos correctos para impulsar la implementación de Adobe Experience Manager. Para cada producto principal (Experience Manager Sites y Experience Manager Assets), hemos proporcionado una lista de funciones que debe desempeñar, junto con las habilidades, los niveles de experiencia y los atributos que hacen que las personas sean eficaces en las distintas funciones.
 
 Su asignación de esta semana es revisar ambas listas con su equipo de implementación y asegurarse de que tiene personas con cualificaciones relevantes en cada función.
 

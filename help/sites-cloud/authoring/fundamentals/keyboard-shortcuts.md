@@ -2,10 +2,10 @@
 title: Atajos de teclado para editar páginas
 description: Hay varios métodos abreviados del teclado disponibles mediante AEM, incluidos algunos para la edición de páginas
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 99%
+source-wordcount: '237'
+ht-degree: 91%
 
 ---
 
@@ -25,8 +25,8 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hac
 | Modo de **edición** | `Ctrl-z` | [Deshacer el último cambio](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rehacer el último cambio](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleccionar varios párrafos |
-|  | `Ctrl-c` | Copiar párrafos seleccionados |
-|  | `Ctrl-x` | Cortar párrafos seleccionados (los párrafos cortados no desaparecen en la interfaz de usuario hasta que se pegue el copiado) |
+|  | `Ctrl-c` | Copiar los párrafos seleccionados |
+|  | `Ctrl-x` | Cortar párrafos seleccionados (los párrafos cortados no desaparecen en la interfaz de usuario hasta que se pegan) |
 |  | `Ctrl-v` | Pegar párrafos previamente cortados o copiados |
 |  | `Ctrl-Backspace` | Eliminar párrafos seleccionados |
 | **Modo de edición:** editor de texto enriquecido | `Ctrl-b` | Negrita |

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2933'
 ht-degree: 4%
 
 ---
@@ -262,7 +262,7 @@ Siga los pasos descritos en [aplicar un modelo de flujo de trabajo a una carpeta
 
 ## Prácticas recomendadas y limitaciones {#best-practices-limitations-tips}
 
-* Tenga en cuenta las necesidades de todos los tipos de representaciones al diseñar flujos de trabajo. Si no prevé la necesidad de una representación en el futuro, elimine su paso de creación del flujo de trabajo. Las representaciones no se pueden eliminar por lotes posteriormente. Las representaciones no deseadas pueden ocupar mucho espacio de almacenamiento después de un uso prolongado de [!DNL Experience Manager]. Para los recursos individuales, puede eliminar las representaciones manualmente desde la interfaz de usuario. Para varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y cargarlos de nuevo.
+* Tenga en cuenta las necesidades de todos los tipos de representaciones al diseñar flujos de trabajo. Si no prevé la necesidad de una representación en el futuro, elimine su paso de creación del flujo de trabajo. Las representaciones no se pueden eliminar por lotes posteriormente. Las representaciones no deseadas pueden ocupar una gran cantidad de espacio de almacenamiento después de un uso prolongado de [!DNL Experience Manager]. Para los recursos individuales, puede eliminar las representaciones manualmente desde la interfaz de usuario. Para varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y cargarlos de nuevo.
 * Actualmente, la compatibilidad se limita a generar representaciones. No se admite la generación de nuevos recursos.
 * Actualmente, el límite de tamaño de archivo para la extracción de metadatos es de aproximadamente 15 GB. Al cargar recursos muy grandes, a veces la operación de extracción de metadatos falla.
 

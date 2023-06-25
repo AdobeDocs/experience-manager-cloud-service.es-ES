@@ -7,9 +7,9 @@ topic-tags: develop
 hide: true
 hidefromtoc: true
 exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3359'
+source-wordcount: '3358'
 ht-degree: 99%
 
 ---
@@ -238,7 +238,7 @@ Configure el repositorio local del tema:
 
    ![](/help/forms/assets/screenshot2028116229.png)
 
-1. Para procesar el formulario alojado en el entorno de publicación de su servicio en la nube, cambie el nombre del archivo `env_template`.  Para cambiar el nombre, haga clic con el botón derecho en el archivo **env_template** y seleccione la opción **Cambiar nombre**.
+1. Para procesar el formulario alojado en el entorno de publicación de su servicio en la nube, cambie el nombre del archivo `env_template`.  Para cambiar el nombre del archivo, haga clic con el botón derecho en **env_template** y seleccione la opción **Cambiar nombre** opción.
 
    ![](/help/forms/assets/screenshot2028116429.png)
 

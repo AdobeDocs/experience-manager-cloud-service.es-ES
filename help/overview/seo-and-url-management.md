@@ -2,10 +2,10 @@
 title: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
 description: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '3709'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -285,7 +285,7 @@ Sin embargo, también hay una forma más sencilla de gestionarlo:
 
 Hasta ahora, ha implementado asignaciones junto con la lógica de sus componentes para utilizar estas asignaciones al enviar URL a nuestras páginas.
 
-La parte final es el manejo de estas URL abreviadas cuando llegan a Dispatcher, que es donde `mod_rewrite` comienza a funcionar. La mayor ventaja de usar `mod_rewrite` es que las URL se asignan de nuevo a su formulario largo *antes* de enviarse al módulo de Dispatcher. Esto significa que Dispatcher solicitará la URL larga del servidor de publicación y la almacenará en la memoria caché correspondiente. Por lo tanto, cualquier vaciado de Dispatcher que venga del servidor de publicación, puede invalidar este contenido con éxito.
+La parte final es el manejo de estas URL abreviadas cuando llegan a Dispatcher, que es donde `mod_rewrite` comienza a funcionar. La mayor ventaja de usar `mod_rewrite` es que las direcciones URL se asignan de nuevo a su formulario largo *antes* se envían al módulo de Dispatcher. Esto significa que Dispatcher solicitará la URL larga del servidor de publicación y la almacenará en la memoria caché correspondiente. Por lo tanto, cualquier vaciado de Dispatcher que venga del servidor de publicación, puede invalidar este contenido con éxito.
 
 Para implementar estas reglas, puede agregar elementos `RewriteRule` debajo del host virtual en la configuración de Apache HTTP Server. Si desea expandir las URL abreviadas del ejemplo anterior, puede implementar una regla con este aspecto:
 
@@ -348,7 +348,7 @@ Disallow: /
 
 De lo contrario, en un entorno activo, puede optar por no permitir determinadas rutas que no desee indexar.
 
-La advertencia de colocar el archivo `robots.txt` en la raíz del sitio es que las solicitudes de vaciado del Dispatcher pueden borrar este archivo, y es probable que las asignaciones de URL coloquen la raíz del sitio en un lugar diferente al `DOCROOT`, como se define en la configuración del servidor de HTTP Apache. Por este motivo, es común colocar este archivo en la instancia de autor en la raíz del sitio y replicarlo en la instancia de publicación.
+La advertencia de colocar el `robots.txt` en la raíz del sitio es que las solicitudes de vaciado del Dispatcher pueden borrar este archivo, y es probable que las asignaciones de URL coloquen la raíz del sitio en un lugar diferente al `DOCROOT` tal como se define en la configuración del servidor HTTP Apache. Por este motivo, es común colocar este archivo en la instancia de autor en la raíz del sitio y replicarlo en la instancia de publicación.
 
 ### Crear un mapa del sitio XML en AEM {#building-an-xml-sitemap-on-aem}
 

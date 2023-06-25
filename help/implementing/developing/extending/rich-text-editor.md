@@ -3,9 +3,9 @@ title: Configure el Editor de texto enriquecido para crear contenido en [!DNL Ad
 description: Configuración del editor de texto enriquecido para crear contenido en [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1875'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ En la tabla siguiente se enumeran los complementos actuales, mostrando:
 | image | `image` | Compatibilidad con imágenes básica (arrastre desde contenido o Buscador de contenido). Según el explorador, la compatibilidad tiene comportamientos diferentes para los autores |
 | teclas | - | Para definir este valor, consulte [tamaño de ficha](configure-rich-text-editor-plug-ins.md#tabsize). |
 | justificar | `justifyleft`, `justifycenter`, `justifyright` | Alineación de párrafo. |
-| vínculos | `modifylink`, `unlink`, `anchor` | [Hipervínculos y anclajes](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| links | `modifylink`, `unlink`, `anchor` | [Hipervínculos y anclajes](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | listas | `ordered`, `unordered`, `indent`, `outdent` | Este complemento controla ambos [sangría y listas](configure-rich-text-editor-plug-ins.md#indentmargin); incluyendo listas anidadas. |
 | herramientas diversas | `specialchars`, `sourceedit` | Varias herramientas permiten a los autores introducir [caracteres especiales](configure-rich-text-editor-plug-ins.md#spchar) o editar el origen del HTML. Además, puede agregar un [intervalo de caracteres especiales](configure-rich-text-editor-plug-ins.md#definerangechar) si desea definir su propia lista. |
 | Paraformato | `paraformat` | Los formatos de párrafo predeterminados son Párrafo, Encabezado 1, Encabezado 2 y Encabezado 3 (`<p>`, `<h1>`, `<h2>`, y `<h3>`). Puede [agregar más formatos de párrafo](configure-rich-text-editor-plug-ins.md#paraformats) o ampliar la lista. |
@@ -282,4 +282,3 @@ A continuación se muestra un fragmento de ejemplo para asignar el comando `Bold
 >* [Configuración de complementos RTE](configure-rich-text-editor-plug-ins.md)
 >* [Uso del Editor de texto enriquecido para la creación](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [Configuración de RTE para sitios accesibles](rte-accessible-content.md)
-

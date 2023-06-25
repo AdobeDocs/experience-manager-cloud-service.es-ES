@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2463'
 ht-degree: 6%
 
 ---
@@ -51,8 +51,8 @@ Puede etiquetar los siguientes tipos de recursos:
 | image/x-portable-graymap | SRT |  |
 | image/x-portable-pixmap | TXT |  |
 | image/x-rgb | VTT |  |
-| image/x-xbitmap |  |  |
-| image/x-xpixmap |  |  |
+| image/x-xbitmap | |  |
+| image/x-xpixmap | |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -82,7 +82,7 @@ Asegúrese de que las imágenes del conjunto de formación se ajusten a las sigu
 
 ![Imágenes ilustrativas para ilustrar las directrices de formación](assets/do-not-localize/coherence.png)
 
-**Cobertura**: debe haber suficiente variedad en las imágenes de la formación. La idea es ofrecer algunos ejemplos, pero razonablemente diversos, para que [!DNL Experience Manager] aprende a enfocarse en las cosas correctas. Si aplica la misma etiqueta a imágenes visualmente distintas, incluya al menos cinco ejemplos de cada tipo. Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de formación similares a la imagen resaltada a continuación para que el servicio identifique las imágenes similares con mayor precisión durante el etiquetado.
+**Cobertura**: debe haber suficiente variedad en las imágenes de la formación. La idea es ofrecer algunos ejemplos, pero razonablemente diversos, para que [!DNL Experience Manager] aprende a enfocarse en las cosas correctas. Si aplica la misma etiqueta en imágenes visualmente distintas, incluya al menos cinco ejemplos de cada tipo. Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de formación similares a la imagen resaltada a continuación para que el servicio identifique las imágenes similares con mayor precisión durante el etiquetado.
 
 ![Imágenes ilustrativas para ilustrar las directrices de formación](assets/do-not-localize/coverage_1.png)
 
@@ -261,11 +261,11 @@ Para buscar archivos con etiquetas inteligentes (normales o mejoradas), utilice 
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
@@ -277,4 +277,3 @@ Para buscar archivos con etiquetas inteligentes (normales o mejoradas), utilice 
 >
 >* [Descubra cómo las etiquetas inteligentes ayudan a administrar los archivos digitales](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [Uso de etiquetas inteligentes para vídeos](smart-tags-video-assets.md)
-

@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 100%
+source-wordcount: '2024'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ ANDI trabaja con los principales exploradores de Internet. Consulte la documenta
 
 ### Descargue e instale la temática Ultramarine-Accessible
 
-El tema Ultramarine-Accessible es un tema de referencia. Muestra cómo corregir el contraste de color y otros problemas relacionados con la accesibilidad en un formulario adaptable. Adobe recomienda crear un tema personalizado para el entorno de producción en función de los estilos aprobados por su organización. Para cargar la temática en la instancia de AEM, haga lo siguiente:
+El tema Ultramarine-Accessible es un tema de referencia. Muestra cómo corregir el contraste de color y otros problemas relacionados con la accesibilidad en un formulario adaptable. Adobe recomienda crear una temática personalizada para el entorno de producción en función de los estilos aprobados por su organización. Para cargar la temática en la instancia de AEM, haga lo siguiente:
 
 1. Descargue el paquete de temáticas.
 1. Vaya a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegación]** ![Navegación](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** en la instancia de AEM.
@@ -125,7 +125,6 @@ Para utilizar la opción Accesibilidad, haga lo siguiente:
 >
 >* El botón de opción y la casilla de verificación solo pueden tener dos opciones para la accesibilidad, a saber, Texto personalizado y Título.
 >* Para los formularios adaptables basados en XFA, la opción de accesibilidad se hereda de las opciones de accesibilidad establecidas en el XDP. La información del objeto de XDP se asigna a la descripción breve y el pie de ilustración se asigna al título. Las otras opciones funcionan tal cual.
-
 
 ### 3. Proporcione equivalentes de texto para las imágenes {#provide-text-equivalents-for-images}
 

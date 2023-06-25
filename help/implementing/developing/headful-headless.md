@@ -2,10 +2,10 @@
 title: Encabezado y sin encabezado en AEM
 description: Los proyectos de AEM se pueden implementar en un modelo con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 98%
+source-wordcount: '1008'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ La siguiente sección explora estos niveles de integración con más detalle.
 
 >[!NOTE]
 >
->Por supuesto, también puede volver a implementar la SPA de la tienda web como una SPA que funcione completamente en AEM [con el marco de trabajo de un Editor de SPA en AEM.](/help/implementing/developing/hybrid/introduction.md) Si ya tiene AEM y desea crear una nueva tienda web u otras SPA, este es el método recomendado, pero queda fuera del alcance de este documento.
+>SPA AEM SPA Por supuesto, también podría volver a implementar la tienda web como un sitio web que funciona por completo como un sitio web que funciona a la vez que se convierte en un sitio web que funciona a la vez en un [AEM SPA Uso del marco de trabajo del Editor de.](/help/implementing/developing/hybrid/introduction.md) Si ya tiene AEM y desea crear una nueva tienda web u otras SPA, este es el método recomendado, pero queda fuera del alcance de este documento.
 
 ## Niveles de integración de las SPA {#integration-levels}
 

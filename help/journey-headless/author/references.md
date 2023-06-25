@@ -2,10 +2,10 @@
 title: Obtenga información sobre el uso de referencias en fragmentos de contenido
 description: Obtenga información sobre el uso de referencias en fragmentos de contenido para los contenidos, otros fragmentos y archivos (medios). Introduzca la necesidad y la mecánica de los fragmentos anidados para la creación de CMS sin encabezado.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ Y esto es solo para empezar. Según la complejidad, un premio podría ser espec�
 
 La representación de estas interrelaciones se puede lograr con Referencias a fragmentos, tal como las entienden el usuario (el autor) y las aplicaciones sin encabezado.
 
-Como autor, no es responsable de definir estas relaciones (lo hace el arquitecto de contenido al crear el modelo de fragmento de contenido), pero necesita saber cómo reconocer y editar las referencias.
+Como autor, no es responsable de definir estas relaciones (lo que realiza el arquitecto de contenido al crear el modelo de fragmento de contenido), pero necesita saber reconocer y editar las referencias.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
@@ -117,6 +117,7 @@ Ahora que ha aprendido acerca de referencias y estructuras en los fragmentos de 
       * [Aplicación de la configuración a la carpeta Recursos](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Creación de un fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Variaciones: creación de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
    * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
@@ -124,7 +125,6 @@ Ahora que ha aprendido acerca de referencias y estructuras en los fragmentos de 
       * [Modelos de fragmento de contenido: tipos de datos](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
       * [Modelos de fragmento de contenido: propiedades](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
-
 
 * Guías de introducción
    * [Creación de la carpeta Recursos: configuración sin encabezado](/help/headless/setup/create-assets-folder.md)

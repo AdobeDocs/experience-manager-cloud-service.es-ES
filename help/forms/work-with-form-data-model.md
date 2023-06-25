@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4121'
-ht-degree: 100%
+source-wordcount: '4120'
+ht-degree: 99%
 
 ---
 
@@ -199,7 +199,6 @@ Utilice el atributo de solicitud para recuperar las propiedades asociadas de la 
    > * Si utiliza una plantilla editable, superponga aftemplatedpage.jsp en:
    >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
-
 1. Establezca [!DNL paramMap] para el atributo de solicitud. Por ejemplo, incluya el siguiente código en el archivo .jsp de la carpeta de aplicaciones:
 
    ```javascript
@@ -292,7 +291,8 @@ Para editar propiedades:
    * **[!UICONTROL Propiedad]**: especifique el tipo, subtipo y formato de la propiedad. También puede especificar si la propiedad seleccionada es la clave principal del objeto del modelo de datos.
    * **[!UICONTROL Servicio]**: especifique el objeto del modelo de entrada, el tipo de salida y los argumentos del servicio. Para un servicio Get-Service, puede especificar si se espera que devuelva una matriz.
 
-      ![edit-properties-service](assets/edit-properties-service.png)
+     ![edit-properties-service](assets/edit-properties-service.png)
+
    Cuadro de diálogo Editar propiedades para Get-Service
 
 1. Pulse **[!UICONTROL Listo]** para guardar las propiedades y, a continuación, **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario.
@@ -419,7 +419,7 @@ El indicador se puede establecer en cualquiera de los siguientes valores:
 
 * **COMPLETO**: FDM realiza la validación en función de todas las restricciones.
 * **DESACTIVADO**: sin validación.
-* **BÁSICO**: FDM realiza la validación en función de las restricciones “requeridas” y “admisibles”.
+* **BÁSICO**: FDM realiza la validación en función de las restricciones &quot;requeridas&quot; y &quot;admisibles&quot;.
 
 Si no se establece ningún valor para el `ValidationOptions` indicador, se aplica una validación de nivel **BÁSICO** en los datos de entrada.
 
