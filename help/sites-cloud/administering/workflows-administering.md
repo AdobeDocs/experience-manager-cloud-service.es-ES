@@ -3,10 +3,10 @@ title: Administración de instancias de flujo de trabajo
 description: Obtenga información sobre cómo administrar instancias de flujo de trabajo
 feature: Administering
 role: Admin
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 75%
+source-wordcount: '1284'
+ht-degree: 74%
 
 ---
 
@@ -28,12 +28,21 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
 1. Seleccionar **Instancias** para mostrar la lista de instancias de flujo de trabajo en ejecución que están actualmente en curso.
 1. En el carril superior, en la esquina derecha, las instancias de flujo de trabajo muestran **Ejecución de flujos de trabajo**, **Estado**, y **Detalles**.
-1. **Ejecución de flujos de trabajo** muestra el número de flujos de trabajo en ejecución y su estado. por ejemplo, en las imágenes dadas, se muestra el número de **Ejecución de flujos de trabajo** y el **Estado** AEM de la instancia de.
-   ![saludable](/help/sites-cloud/administering/assets/status-healthy.png)
-   ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
-1. Para **Detalles del estado** de instancias de flujo de trabajo, haga clic en **Detalles**, para mostrar el **número de instancias de flujos de trabajo en ejecución**, **instancias de flujo de trabajo completadas**, **instancias de flujo de trabajo anuladas**, **instancias de flujo de trabajo fallidas**, etc. por ejemplo, a continuación se muestran las imágenes determinadas que muestran **Detalles del estado** con **Estado: Sano** y **Estado: no saludable**.
-   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-   ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+1. **Ejecución de flujos de trabajo** muestra el número de flujos de trabajo en ejecución y su estado. por ejemplo, en las imágenes dadas, se muestra el número de **Ejecución de flujos de trabajo** y el **Estado** AEM de la instancia:
+
+   * **Estado: Correcto**
+     ![saludable](/help/sites-cloud/administering/assets/status-healthy.png)
+
+   * **Estado: Incorrecto**
+     ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
+
+1. Para **Detalles del estado** de instancias de flujo de trabajo, haga clic en **Detalles**, para mostrar el **número de instancias de flujos de trabajo en ejecución**, **instancias de flujo de trabajo completadas**, **instancias de flujo de trabajo anuladas**, **instancias de flujo de trabajo fallidas**, etc. por ejemplo, a continuación se muestran las imágenes determinadas que muestran **Detalles del estado** con:
+
+   * **Detalles del estado: Correcto**
+     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
+
+   * **Detalles del estado: no saludable**
+     ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
@@ -191,7 +200,7 @@ En el nivel del modelo de flujo de trabajo, se proporciona un indicador para ind
 
 La propiedad *userMetadataPersistenceEnabled* se almacena en *jcr:nodo de contenido* del modelo de flujo de trabajo. Este indicador se mantiene en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
 
-La siguiente ilustración muestra que deben establecer el indicador en un flujo de trabajo.
+La siguiente ilustración muestra cómo establecer el indicador en un flujo de trabajo.
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
