@@ -2,9 +2,9 @@
 title: Complemento Maven del paquete de contenido de Adobe
 description: AEM Utilice el complemento Maven del paquete de contenido para implementar aplicaciones de
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 6%
 
 ---
@@ -212,7 +212,7 @@ El `mode` define cómo se ve afectado el contenido del repositorio cuando se imp
 
 * **Combinar:** Se añade contenido en el paquete que no está ya en el repositorio. El contenido que está en el paquete y en el repositorio no cambia. No se elimina contenido del repositorio.
 * **Reemplazar:** El contenido del paquete que no está en el repositorio se agrega al repositorio. El contenido del repositorio se reemplaza con el contenido coincidente del paquete. El contenido se elimina del repositorio cuando no existe en el paquete.
-* **Actualización:** El contenido del paquete que no está en el repositorio se agrega al repositorio. El contenido del repositorio se reemplaza con el contenido coincidente del paquete. El contenido existente se elimina del repositorio.
+* **Actualización:** El contenido del paquete que no está en el repositorio se agrega al repositorio. El contenido del repositorio se reemplaza con el contenido coincidente del paquete.
 
 Cuando el filtro no contiene `mode` , el valor predeterminado de `replace` se utiliza.
 
