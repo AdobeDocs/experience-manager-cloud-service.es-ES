@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
+source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 95%
@@ -70,17 +70,14 @@ Para utilizar CAPTCHA en formularios adaptables:
 
    >[!NOTE]
    >
-   >Asegúrese de que el contenedor de configuración seleccionado al crear el formulario adaptable contenga el servicio en la nube reCAPTCHA. También puede editar las propiedades del formulario adaptable para cambiar el contenedor de configuración asociado al formulario.
+   > Asegúrese de que el contenedor de configuración seleccionado al crear el formulario adaptable contenga el servicio en la nube reCAPTCHA. También puede editar las propiedades del formulario adaptable para cambiar el contenedor de configuración asociado al formulario.
 
 1. Desde el navegador de componentes, arrastre y suelte el componente **[!UICONTROL Captcha]** en el formulario adaptable.
 
    >[!NOTE]
    >
-   >No se puede usar más de un componente Captcha en un formulario adaptable. Además, no se recomienda utilizar CAPTCHA en un panel marcado para la carga lenta o en un fragmento.
-
-   >[!NOTE]
-   >
-   >Captcha tiene un plazo y caduca en aproximadamente un minuto. Por lo tanto, se recomienda colocar el componente Captcha justo antes del botón Enviar en el formulario adaptable.
+   > * No se puede usar más de un componente Captcha en un formulario adaptable. Además, no se recomienda utilizar CAPTCHA en un panel marcado para la carga lenta o en un fragmento.
+   > * Captcha tiene un plazo y caduca en aproximadamente un minuto. Por lo tanto, se recomienda colocar el componente Captcha justo antes del botón Enviar en el formulario adaptable.
 
 1. Seleccione el componente Captcha que ha agregado y pulse ![cmppr](assets/configure-icon.svg) para editar sus propiedades.
 1. Especifique un título para el widget CAPTCHA. El valor predeterminado es **[!UICONTROL Captcha]**. Seleccione **[!UICONTROL Ocultar título]** si no desea que aparezca el título.
@@ -91,7 +88,7 @@ Para utilizar CAPTCHA en formularios adaptables:
 
    >[!NOTE]
    >
-   >* No seleccione **[!UICONTROL Predeterminado]** en el menú desplegable del servicio Captcha, ya que el servicio CAPTCHA Experience Manager predeterminado está obsoleto.
+   > No seleccione **[!UICONTROL Predeterminado]** en el menú desplegable del servicio Captcha, ya que el servicio CAPTCHA Experience Manager predeterminado está obsoleto.
 
 1. Guarde las propiedades.
 
@@ -109,7 +106,7 @@ Pulse **[!UICONTROL Valor de moneda]** en el formulario y cree las siguientes re
 
 >[!NOTE]
 >
->* Si selecciona la configuración de reCAPTCHA v2 con el tamaño como [!UICONTROL Invisible] entonces la opción mostrar/ocultar no es aplicable.
+> Si selecciona la configuración de reCAPTCHA v2 con el tamaño como [!UICONTROL Invisible] entonces la opción mostrar/ocultar no es aplicable.
 
 ### Validar CAPTCHA {#validate-captcha}
 
