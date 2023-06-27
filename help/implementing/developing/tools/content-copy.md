@@ -2,10 +2,10 @@
 title: La herramienta Copia de contenido
 description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción en entornos as a Cloud Service a entornos más bajos para realizar pruebas.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 41%
+source-wordcount: '1203'
+ht-degree: 40%
 
 ---
 
@@ -15,7 +15,7 @@ AEM La herramienta de copia de contenido permite a los usuarios copiar contenido
 
 ## Introducción {#introduction}
 
-Los datos actuales y reales son valiosos para las pruebas, la validación y la aceptación de usuarios. AEM La herramienta de copia de contenido le permite copiar contenido de un entorno de producción a un entorno de ensayo, desarrollo o distribución de contenido (). [Entorno de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) entorno para dichas pruebas.
+Los datos actuales y reales son valiosos para las pruebas, la validación y la aceptación de usuarios. AEM La herramienta de copia de contenido le permite copiar contenido de un entorno as a Cloud Service de producción a un entorno de ensayo, desarrollo o implementación. [Entorno de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) entorno para dichas pruebas.
 
 El contenido que se va a copiar se define mediante un conjunto de contenido. Un conjunto de contenido consiste en una lista de rutas JCR que contienen el contenido mutable que se va a copiar de un entorno de servicio de creación de origen a un entorno de servicio de creación de destino dentro del mismo programa de Cloud Manager. Se permiten las siguientes rutas en un conjunto de contenido.
 
