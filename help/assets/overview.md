@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f075c6032edb23f9cf52ad53ae2a628915e76ec2
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 68%
 
 ---
 
@@ -36,6 +36,22 @@ Los siguientes son los beneficios clave de Assets as a [!DNL Cloud Service]. Par
 * **Siempre en línea**: sin tiempo de inactividad (0dt) gracias a la instancia implementada en un clúster con copias de seguridad y redundancia. Las actualizaciones también son 0dt.
 * **Monitorización constante**: la monitorización del sistema es automatizada y las comprobaciones y los activadores integrados ayudan a mantener el rendimiento, la disponibilidad y la resistencia general.
 * **Implementaciones sin complicaciones**: las operaciones de Experience Manager en la nube están completamente automatizadas y no requieren intervención manual. Para implementaciones automatizadas, el componente Cloud Manager (CM) automatiza la versión de imágenes de Docker implementables que contienen su código personalizado.
+
+## Experiencias basadas en personas disponibles
+
+Adobe ofrece una solución sólida de administración de activos digitales (DAM) para que usted pueda sacar el máximo partido sus recursos digitales. Adobe Experience Manager Assets tiene dos experiencias independientes que utilizan el mismo repositorio de Cloud Services:
+
+* **Vista de administrador**: la interfaz de usuario as a Cloud Service de Assets existente. Utilice la vista de administración para todas las funcionalidades avanzadas de administración de recursos, incluidas integraciones, flujos de trabajo, automatización de contenido, publicación y mucho más.
+
+* **Vista de recursos**: la experiencia de administración de recursos ligera de Adobe para almacenar, administrar, descubrir y utilizar recursos digitales. Interfaz de usuario optimizada que contiene funciones esenciales de administración de recursos. Diseñado para los usuarios de DAM ligeros con un enfoque en la carga, administración de metadatos, búsqueda, descarga y uso compartido.
+
+Los usuarios con acceso a la vista Administración también pueden acceder a la vista Recursos. La vista de recursos proporciona una interfaz de usuario simplificada que facilita la administración, la detección y la distribución de sus recursos digitales. Un amplio conjunto de usuarios de diferentes funciones, incluidos los equipos creativos, de marketing y de línea de negocios, pueden colaborar en los activos y acceder a los activos correctos y aprobados cuando y donde los necesiten. Muchos usuarios ocasionales de DAM prefieren la vista Recursos porque solo contiene un subconjunto de funciones. La experiencia está dirigida a creativos, consumidores de recursos de solo lectura y usuarios de DAM de menor peso.
+
+Los bibliotecarios, desarrolladores y superusuarios de DAM pueden seguir utilizando la vista Administrador o cambiar entre las interfaces de usuario, según sea necesario. Puede seleccionar la experiencia que mejor se adapte a su función.
+
+![add-tags](assets/newui-overview.svg)
+
+Para obtener información sobre cómo acceder a la vista Recursos y algunas de las implicaciones que ofrece sobre la vista Administración, consulte Vista Recursos.
 
 ## Nuevas funcionalidades de Recursos {#whats-new-assets}
 
