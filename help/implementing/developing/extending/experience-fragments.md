@@ -2,9 +2,9 @@
 title: Información general sobre fragmentos de experiencias
 description: Ampliar fragmentos de experiencias de Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1641'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Un [Fragmento de experiencia](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) es un grupo de uno o más componentes, incluido el contenido y el diseño, al que se puede hacer referencia en las páginas.
 
-Un fragmento de experiencia principal o variante utiliza:
+Un fragmento de experiencia principal, una variante o ambos utilizan:
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
-Como no hay `/libs/cq/experience-fragments/components/xfpage/xfpage.html` vuelve a ser
+Porque no hay `/libs/cq/experience-fragments/components/xfpage/xfpage.html`, vuelve a
 
 * `sling:resourceSuperType` : `wcm/foundation/components/page`
 
@@ -27,9 +27,9 @@ Como no hay `/libs/cq/experience-fragments/components/xfpage/xfpage.html` vuelve
 
 Uso del `.plain.` en la dirección URL, puede acceder a la representación del HTML sin formato.
 
-Está disponible desde el explorador, pero su propósito principal es permitir que otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) accedan al contenido del fragmento de experiencia directamente, únicamente mediante la dirección URL.
+Esta representación está disponible en el explorador. Sin embargo, su propósito principal es permitir que otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) accedan al contenido del fragmento de experiencia directamente, únicamente mediante la dirección URL.
 
-La representación de HTML sin formato agrega las rutas de protocolo, host y contexto a las rutas siguientes:
+La representación de HTML sin formato agrega el protocolo, el host y la ruta de contexto a las rutas que son:
 
 * del tipo: `src`, `href`, o `action`
 
@@ -41,11 +41,11 @@ Por ejemplo:
 
 >[!NOTE]
 >
->Los vínculos siempre hacen referencia a la instancia de publicación. Están pensados para que los consuman terceros, por lo que siempre se llamará al vínculo desde la instancia de publicación, no desde el autor.
+>Los vínculos siempre hacen referencia a la instancia de publicación. Están pensados para que los consuman terceros, por lo que siempre se llama al vínculo desde la instancia de publicación, no desde la instancia de autor.
 
 ![Representación de HTML sin formato](assets/xf-14.png)
 
-El selector de representación sin formato utiliza un transformador en lugar de scripts adicionales; la variable [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) se utiliza como transformador. Esto se configura en
+El selector de representación sin formato utiliza un transformador en lugar de scripts adicionales. El [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) se utiliza como transformador. Este transformador se configura en lo siguiente:
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -55,12 +55,12 @@ La representación del HTML se genera mediante las canalizaciones de reescritura
 
 * `allowedCssClasses`
    * Expresión de RegEx que coincide con las clases CSS que deben dejarse en la representación final.
-   * Esto resulta útil si el cliente desea eliminar algunas clases CSS específicas
+   * Esta opción es útil si el cliente desea eliminar algunas clases CSS específicas
 * `allowedTags`
    * Una lista de etiquetas de HTML que se permitirán en la representación final.
    * De forma predeterminada, se permiten las siguientes etiquetas (no se necesita configuración): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link y script
 
-Se recomienda configurar la reescritura mediante una superposición. Consulte [AEM Superposiciones en el as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
+El Adobe recomienda configurar la reescritura mediante una superposición. Consulte [AEM Superposiciones en el as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Plantillas para fragmentos de experiencias {#templates-for-experience-fragments}
 
@@ -73,7 +73,7 @@ Se recomienda configurar la reescritura mediante una superposición. Consulte [A
 
 Al desarrollar una nueva plantilla para fragmentos de experiencias, puede seguir las prácticas estándar para una plantilla editable.
 
-<!-- When developing a new template for Experience Fragments you can follow follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
+<!-- When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
 Para crear una plantilla de fragmento de experiencia que detecte el **Crear fragmento de experiencia** asistente, debe seguir uno de estos conjuntos de reglas:
@@ -85,7 +85,7 @@ Para crear una plantilla de fragmento de experiencia que detecte el **Crear frag
 
    1. Y el nombre de la plantilla debe comenzar por:
       `experience-fragments`
-Esto permite a los usuarios crear fragmentos de experiencias en /content/experience-fragments como `cq:allowedTemplates` de esta carpeta incluye todas las plantillas que tienen nombres que comienzan por `experience-fragment`. Los clientes pueden actualizar esta propiedad para incluir sus propios esquemas de nomenclatura o ubicaciones de plantillas.
+Este patrón permite a los usuarios crear fragmentos de experiencias en /content/experience-fragments como `cq:allowedTemplates` de esta carpeta incluye todas las plantillas que tienen nombres que comienzan por `experience-fragment`. Los clientes pueden actualizar esta propiedad para incluir sus propios esquemas de nomenclatura o ubicaciones de plantillas.
 
 1. [Plantillas permitidas](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) se puede configurar en la consola Fragmentos de experiencias.
 
@@ -102,7 +102,7 @@ Esto permite a los usuarios crear fragmentos de experiencias en /content/experie
 
 El desarrollo de componentes para su uso con/en fragmentos de experiencias sigue las prácticas estándar.
 
-La única configuración adicional es garantizar que los componentes estén permitidos en la plantilla, esto se logra con la política de contenido.
+La única configuración adicional es garantizar que los componentes estén permitidos en la plantilla. Esta asignación se logra con la Política de contenido.
 
 <!--
 [Developing components](/help/sites-developing/components.md) for use with/in Experience Fragments follow standard practices.
@@ -112,7 +112,7 @@ The only additional configuration is to ensure that the components are [allowed 
 
 ## El proveedor de reescritura de vínculos de fragmentos de experiencia: HTML {#the-experience-fragment-link-rewriter-provider-html}
 
-AEM En tiene la posibilidad de crear Fragmentos de experiencias. Un fragmento de experiencia:
+AEM En el caso de los fragmentos de experiencias, tiene la posibilidad de crear fragmentos de experiencias. Un fragmento de experiencia:
 
 * consta de un grupo de componentes junto con un diseño,
 * AEM puede existir de forma independiente de una página de.
@@ -136,15 +136,15 @@ AEM Esta función se puede habilitar en una instancia de autor de. Requiere una 
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-El externalizador de vínculos se utiliza para determinar las direcciones URL correctas necesarias al crear la versión de HTML de la oferta de Target, que se envía posteriormente a Adobe Target. Esto es necesario, ya que Adobe Target requiere que se pueda acceder públicamente a todos los vínculos dentro de la oferta de HTML de Target; esto significa que cualquier recurso al que hagan referencia los vínculos y el propio fragmento de experiencia deben publicarse antes de poder utilizarse.
+El externalizador de vínculos se utiliza para determinar las direcciones URL correctas necesarias al crear la versión de HTML de la oferta de Target, que luego se envía a Adobe Target. Este proceso es necesario, ya que Adobe Target requiere que se pueda acceder públicamente a todos los vínculos dentro de la oferta de HTML de Target. Significa que cualquier recurso al que hagan referencia los vínculos, y el propio fragmento de experiencia, deben publicarse antes de poder utilizarse.
 
 De forma predeterminada, al crear una oferta de HTML AEM de Target, se envía una solicitud a un selector de Sling personalizado en, que se encuentra en el menú de configuración de la. Este selector se llama `.nocloudconfigs.html`. Como su nombre indica, crea una representación HTML sin formato de un fragmento de experiencia, pero no incluye configuraciones de nube (lo que sería información superflua).
 
-Después de generar la página HTML, la canalización Sling Rewriter realiza modificaciones en la salida:
+Después de generar la página de HTML, la canalización de reescritura de Sling se modifica a la salida:
 
-1. El `html`, `head`, y `body` Los elementos de se sustituyen por `div` elementos. El `meta`, `noscript` y `title` elementos se eliminan (son elementos secundarios del original) `head` y no se tienen en cuenta cuando se sustituyen por el elemento `div` element).
+1. El `html`, `head`, y `body` Los elementos de se sustituyen por `div` elementos. El `meta`, `noscript`, y `title` elementos se eliminan (son elementos secundarios del original) `head` y no se tienen en cuenta cuando se sustituyen por el elemento `div` element).
 
-   Esto se hace para garantizar que la oferta de HTML Target se pueda incluir en las actividades de Target.
+   Este proceso se realiza para garantizar que la oferta de HTML Target se pueda incluir en las actividades de Target.
 
 2. AEM modifica cualquier vínculo interno presente en el HTML para que señale a un recurso publicado.
 
@@ -152,31 +152,31 @@ Después de generar la página HTML, la canalización Sling Rewriter realiza mod
 
    1. `src` atributos
    2. `href` atributos
-   3. `*-src` atributos (como data-src, custom-src, etc.)
-   4. `*-href` atributos (como `data-href`, `custom-href`, `img-href`, etc)
+   3. `*-src` atributos (como `data-src`, y `custom-src`)
+   4. `*-href` atributos (como `data-href`, `custom-href`, y `img-href`)
 
    >[!NOTE]
    >
-   >En la mayoría de los casos, los vínculos internos del HTML son vínculos relativos, pero puede haber casos en los que los componentes personalizados proporcionen direcciones URL completas en el HTML. AEM De forma predeterminada, no tiene en cuenta estas direcciones URL completas y no realiza ninguna modificación.
+   >Los vínculos internos del HTML son vínculos relativos, pero puede haber casos en los que los componentes personalizados proporcionen direcciones URL completas en el HTML. AEM De forma predeterminada, no tiene en cuenta estas direcciones URL completas y no realiza ninguna modificación.
 
    AEM Los vínculos de estos atributos se ejecutan a través del Externalizador de vínculos de `publishLink()` para volver a crear la dirección URL como si estuviera en una instancia publicada y, como tal, disponible públicamente.
 
-Al utilizar una implementación predeterminada, el proceso descrito anteriormente debe ser suficiente para generar la oferta de Target a partir del fragmento de experiencia y luego exportarla a Adobe Target. Sin embargo, hay algunos casos de uso que no se tienen en cuenta en este proceso, como los siguientes:
+Al utilizar una implementación predeterminada, el proceso descrito anteriormente debe ser suficiente para generar la oferta de Target a partir del fragmento de experiencia y luego exportarla a Adobe Target. Sin embargo, hay algunos casos de uso que no se tienen en cuenta en este proceso. Algunos de estos casos que no se tienen en cuenta son los siguientes:
 
 * Asignación de Sling solo disponible en la instancia de publicación
 * Redirecciones de Dispatcher
 
-AEM Para estos casos de uso, proporciona la interfaz del proveedor de reescritura de vínculos de manera predeterminada.
+AEM Para estos casos de uso, proporciona la interfaz del proveedor de reescritura de vínculos de manera de.
 
 ### Interfaz de proveedor de reescritura de vínculos {#link-rewriter-provider-interface}
 
-Para casos más complicados, no cubiertos por la [predeterminado](#default-link-rewriting)AEM , ofrece la interfaz del proveedor de reescritura de vínculos. Este es un `ConsumerType` que puede implementar en sus paquetes como servicio. AEM Evita las modificaciones que realiza en los vínculos internos de una oferta de HTML que se representan desde un fragmento de experiencia. Esta interfaz le permite personalizar el proceso de reescritura de vínculos de HTML internos para adaptarlos a sus necesidades comerciales.
+Para casos más complicados, no cubiertos por la [predeterminado](#default-link-rewriting)AEM , ofrece la interfaz del proveedor de reescritura de vínculos. Esta interfaz es una `ConsumerType` que puede implementar en sus paquetes como servicio. AEM Evita las modificaciones que realiza en los vínculos internos de una oferta de HTML que se representan desde un fragmento de experiencia. Esta interfaz le permite personalizar el proceso de reescritura de vínculos de HTML internos para adaptarlos a sus necesidades comerciales.
 
 Algunos ejemplos de casos de uso para implementar esta interfaz como servicio son:
 
 * Las asignaciones de Sling están habilitadas en las instancias de publicación, pero no en la instancia de autor
-* Se utiliza un Dispatcher o una tecnología similar para redirigir las URL internamente
-* No hay `sling:alias mechanisms` para los recursos
+* Se utiliza una tecnología de Dispatcher o similar para redirigir las URL internamente
+* El `sling:alias mechanisms` ya existen para los recursos
 
 >[!NOTE]
 >
@@ -243,7 +243,7 @@ Para que el servicio funcione, ahora hay tres métodos que deben implementarse d
 
 #### shouldRewrite {#shouldrewrite}
 
-Debe indicar al sistema si debe reescribir los vínculos cuando se realiza una llamada para Exportar a Target en una variación determinada del fragmento de experiencia. Para ello, implemente el método:
+Indique al sistema si debe reescribir los vínculos cuando se realice una llamada para Exportar a Target en una variación determinada del fragmento de experiencia. Puede implementar el siguiente método:
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
@@ -256,9 +256,9 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 }
 ```
 
-Este método recibe, como parámetro, la variación del fragmento de experiencia que el sistema Exportar a destino está reescribiendo en este momento.
+Este método recibe, como parámetro, la variación del fragmento de experiencia que el sistema Exportar a destino está reescribiendo.
 
-En el ejemplo anterior, nos gustaría reescribir:
+En el ejemplo anterior, desea volver a escribir:
 
 * vínculos presentes en `src`
 
@@ -271,22 +271,22 @@ Cualquier otro fragmento de experiencia que pase por el sistema Exportar a desti
 
 #### rewriteLink {#rewritelink}
 
-Para la variación del fragmento de experiencia afectada por el proceso de reescritura, se permite al servicio gestionar la reescritura de vínculos. Cada vez que se encuentra un vínculo en el HTML interno, se invoca el siguiente método:
+Para la variación del fragmento de experiencia afectada por el proceso de reescritura, permite al servicio gestionar la reescritura de vínculos. Cada vez que se encuentra un vínculo en el HTML interno, se invoca el siguiente método:
 
 `rewriteLink(String link, String tag, String attribute)`
 
 Como entrada, el método recibe los parámetros:
 
 * `link`
-El `String` representación del vínculo que se está procesando actualmente. Suele ser una dirección URL relativa que señala al recurso en la instancia de autor.
+El `String` representación del vínculo que se está procesando. Esta representación suele ser una dirección URL relativa que señala al recurso de la instancia de autor.
 
 * `tag`
-Nombre del elemento HTML que se está procesando actualmente.
+Nombre del elemento HTML que se está procesando.
 
 * `attribute`
 El nombre exacto del atributo.
 
-Si, por ejemplo, el sistema Exportar a Target está procesando actualmente este elemento, puede definir lo siguiente `CSSInclude` como:
+Por ejemplo, si el sistema Exportar a destino está procesando este elemento, puede definir lo siguiente `CSSInclude` como:
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
@@ -298,9 +298,9 @@ La llamada a la `rewriteLink()` El método se realiza utilizando estos parámetr
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
 ```
 
-Al crear el servicio, puede tomar decisiones basadas en la entrada dada y, a continuación, reescribir el vínculo en consecuencia.
+Al crear el servicio, las decisiones se basan en la entrada dada y, a continuación, reescriba el vínculo en consecuencia.
 
-Para nuestro ejemplo, queremos eliminar la variable `/etc.clientlibs` forme parte de la dirección URL y añada el dominio externo correspondiente. Para simplificar las cosas, consideraremos que tenemos acceso a un Resource Resolver para su servicio, como en `rewriteLinkExample2`:
+En el ejemplo, desea eliminar la variable `/etc.clientlibs` forme parte de la dirección URL y añada el dominio externo correspondiente. Para simplificar las cosas, considere que tiene acceso a un Resource Resolver para su servicio, como en `rewriteLinkExample2`:
 
 >[!NOTE]
 >
@@ -337,7 +337,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->Si el método anterior devuelve `null`, el sistema Exportar a Target dejará el vínculo tal cual, un vínculo relativo a un recurso.
+>Si el método anterior devuelve `null`, el sistema Exportar a Target deja el vínculo tal cual, un vínculo relativo a un recurso.
 
 #### Prioridades: getPriority {#priorities-getpriority}
 

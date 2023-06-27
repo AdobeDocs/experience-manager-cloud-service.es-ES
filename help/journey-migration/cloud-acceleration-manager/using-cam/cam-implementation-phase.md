@@ -2,10 +2,10 @@
 title: Fase de implementación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de implementación en Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: cba5dccd3b66220bbcd6d3b4dd5298702902b0e5
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 5%
+source-wordcount: '665'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ La fase de implementación incluye:
 * [Transferencia de contenido](#content-transfer)
 
 
-Haga clic en la tarjeta del proyecto para abrir la página de aterrizaje del proyecto y navegar hasta el **Implementación** , como se muestra en la figura siguiente.
+Haga clic en la tarjeta del proyecto para poder abrir la página de aterrizaje del proyecto y navegar hasta el **Implementación** , como se muestra en la siguiente figura.
 
 ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
@@ -29,11 +29,11 @@ Haga clic en la tarjeta del proyecto para abrir la página de aterrizaje del pro
 
 ## Uso de la tarjeta de desarrollo local {#local-development}
 
-AEM La tarjeta de desarrollo local proporciona todo el contenido relevante que le ayudará a configurar su entorno de desarrollo local de al iniciar la fase de implementación del recorrido de migración.
+AEM La tarjeta de desarrollo local proporciona todo el contenido relevante que puede ayudarle a configurar su entorno de desarrollo de local al iniciar la fase de implementación del recorrido de migración.
 
-Siga esta sección para explorar la tarjeta de actividad de desarrollo local:
+Siga esta sección para poder explorar la tarjeta de actividad Desarrollo local:
 
-1. Haga clic en **Ver** del menú contextual **Desarrollo local** Tarjeta de.
+1. Clic **Ver** desde el **Desarrollo local** Tarjeta de.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
@@ -44,11 +44,11 @@ Siga esta sección para explorar la tarjeta de actividad de desarrollo local:
 
 ## Uso de la tarjeta de refactorización de código {#code-refactoring}
 
-AEM La tarjeta de actividad de refactorización de código proporciona toda la información relevante y resalta las áreas de refactorización de código que debe revisar y resolver al pasar a as a Cloud Service.
+AEM La tarjeta de actividad de refactorización de código proporciona toda la información relevante y resalta las áreas de refactorización de código que se deben revisar y resolver al pasar a la fase de refactorización de código as a Cloud Service.
 
-Siga esta sección para explorar la tarjeta de actividades de Refactorización de código:
+Siga esta sección para poder explorar la tarjeta de actividad de Refactorización de código:
 
-1. Haga clic en **Revisar** del menú contextual **Refactorización de código** tarjeta de actividad.
+1. Clic **Revisar** desde el **Refactorización de código** tarjeta de actividad.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
@@ -74,11 +74,11 @@ El **Pruebas** proporciona información sobre las pruebas funcionales, de audito
 
 ## AEM Uso de la tarjeta Implementación as a Cloud Service {#aem-as-a-cloud-service-deployment}
 
-AEM La tarjeta Implementación as a Cloud Service AEM proporciona todo el contenido relevante que le ayudará a implementar su código para que se vea as a Cloud Service en el proceso de implementación de su código de la manera más rápida y eficaz.
+AEM La tarjeta Implementación as a Cloud Service AEM proporciona todo el contenido relevante que le ayuda a implementar su código para que se as a Cloud Service.
 
-AEM Siga esta sección para explorar la tarjeta de actividad de la tarjeta de implementación as a Cloud Service de:
+AEM Siga esta sección para poder explorar la tarjeta de actividad de la tarjeta de implementación as a Cloud Service:
 
-1. Haga clic en **Ver** del menú contextual **AEM Implementación as a Cloud Service** tarjeta de actividad.
+1. Clic **Ver** desde el **AEM Implementación as a Cloud Service** tarjeta de actividad.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
@@ -91,25 +91,25 @@ AEM Siga esta sección para explorar la tarjeta de actividad de la tarjeta de im
 
 AEM AEM La tarjeta Transferencia de contenido le permite iniciar y administrar la transferencia de contenido desde su instancia de actual a la as a Cloud Service de la.
 
-Siga esta sección para explorar la tarjeta de actividad de transferencia de contenido:
+Siga esta sección para poder explorar la tarjeta de actividad de transferencia de contenido:
 
-1. Haga clic en **Revisar** del menú contextual **Transferencia de contenido** tarjeta de actividad.
+1. Clic **Revisar** desde el **Transferencia de contenido** tarjeta de actividad.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. Para iniciar una transferencia de contenido, deberá crear un conjunto de migración. Haga clic en **Crear conjunto de migración**. AEM Un conjunto de migración permite transferir contenido a los as a Cloud Service de la.
+1. Para iniciar una transferencia de contenido, debe crear un conjunto de migración. Clic **Crear conjunto de migración**. AEM Un conjunto de migración permite transferir contenido a los as a Cloud Service de la.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
-   >Tenga en cuenta que un conjunto de migración caducará tras un periodo prolongado de inactividad. Consulte las [Caducidad del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener más información.
+   >Un conjunto de migración caduca después de un período prolongado de inactividad. Consulte [Caducidad del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener más información.
 
    >[!NOTE]
-   >Consulte la [requisitos previos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) y el [prácticas recomendadas y directrices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang?es) antes de utilizar la herramienta de transferencia de contenido.
+   >Consulte [requisitos previos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) y el [prácticas recomendadas y directrices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) antes de utilizar la herramienta de transferencia de contenido.
 
-1. Deberá descargar e instalar la herramienta de transferencia de contenido para rellenar el conjunto de migración y completar la fase de extracción de la transferencia de contenido. Revisar [Introducción a la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es) para aprender a utilizar la herramienta de transferencia de contenido.
+1. Descargue e instale la herramienta de transferencia de contenido para rellenar el conjunto de migración y completar la fase de extracción de la transferencia de contenido. Revisar [Introducción a la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es) para aprender a utilizar la herramienta de transferencia de contenido.
 
-1. AEM Para introducir contenido del conjunto de migración en un entorno en el que esté as a Cloud Service, deberá iniciar una ingesta. Vaya a **Trabajos de ingesta** y haga clic en **Nueva ingesta**. Revisar [Ingesta de contenido en Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) para aprender a completar la fase de Ingesta de la transferencia de contenido.
+1. AEM Para ingerir contenido del conjunto de migración en un entorno en el que esté as a Cloud Service, debe iniciar una ingesta. Vaya a **Trabajos de ingesta** y haga clic en **Nueva ingesta**. Revisar [Ingesta de contenido en Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) para que pueda aprender a completar la fase de Ingesta de la transferencia de contenido.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
@@ -128,4 +128,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a utilizar la fase de implementación, ya puede pasar a revisar el siguiente paso en la [Fase de lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html).
+Después de haber aprendido a iniciar sesión en Cloud Acceleration Manager y a utilizar la fase de implementación, está listo para pasar a revisar el siguiente paso en la [Fase de lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).

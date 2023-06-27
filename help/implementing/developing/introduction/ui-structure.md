@@ -2,9 +2,9 @@
 title: Estructura de la IU de AEM
 description: AEM La interfaz de usuario de tiene varios principios subyacentes y consta de varios elementos clave
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '893'
 ht-degree: 4%
 
 ---
@@ -19,13 +19,13 @@ AEM La interfaz de usuario de tiene varios principios subyacentes y consta de va
 
 AEM La interfaz de usuario se adapta tanto a los dispositivos móviles como de escritorio, aunque en lugar de crear dos estilos, utiliza un estilo que funciona para todas las pantallas y dispositivos.
 
-AEM Todos los módulos utilizan el mismo diseño básico, en el que, en la práctica, esto puede considerarse como lo siguiente:
+Todos los módulos utilizan el mismo diseño básico:
 
 ![consola AEM Sites](assets/ui-sites-console.png)
 
-El diseño se adhiere a un estilo de diseño interactivo y se adaptará al tamaño del dispositivo o la ventana que utilice.
+El diseño se adhiere a un estilo de diseño interactivo y se adapta al tamaño del dispositivo, la ventana o ambos que esté utilizando.
 
-Por ejemplo, cuando la resolución es inferior a 1024 px (como en un dispositivo móvil), la pantalla se ajusta en consecuencia:
+Por ejemplo, cuando la resolución es inferior a 1024 píxeles (como en un dispositivo móvil), la pantalla se ajusta en consecuencia:
 
 ![Vista móvil de la consola Sitios](assets/ui-sites-mobile.png)
 
@@ -35,11 +35,11 @@ Por ejemplo, cuando la resolución es inferior a 1024 px (como en un dispositivo
 
 La barra de encabezado muestra elementos globales como:
 
-* AEM El logotipo y el producto/solución específico que está utilizando; para ello, también se crea un vínculo a la navegación global. Para obtener más información, haga lo siguiente:
+* El logotipo y el producto/solución específico que está utilizando actualmente. AEM Por ejemplo, este elemento también forma un vínculo a la navegación global
 * Búsqueda
 * Icono para acceder a los recursos de ayuda
 * Icono para acceder a otras soluciones
-* Un indicador de (y acceso a) cualquier alerta o elemento de la Bandeja de entrada que le esté esperando
+* Un indicador de y acceso a cualquier alerta o elemento de la Bandeja de entrada que le esté esperando
 * El icono de usuario, junto con un vínculo a la administración de perfiles
 
 ### Barra de herramientas {#toolbar}
@@ -50,7 +50,7 @@ En cualquier ubicación, la barra de herramientas muestra las acciones disponibl
 
 ![Barra de herramientas AEM Sites](assets/ui-sites-toolbar.png)
 
-También depende de si hay un recurso seleccionado actualmente:
+También depende de si se selecciona un recurso:
 
 ![Barra de herramientas AEM Sites seleccionada](assets/ui-sites-toolbar-selected.png)
 
@@ -74,7 +74,7 @@ Al crear páginas, las áreas estructurales son las siguientes.
 
 ### Marco de contenido {#content-frame}
 
-El contenido de la página se representa en el marco de contenido. El marco de contenido es completamente independiente del editor para garantizar que no haya conflictos debidos a CSS o javascript.
+El contenido de la página se representa en el marco de contenido. El marco de contenido es independiente del editor para garantizar que no haya conflictos debidos a CSS o JavaScript.
 
 El marco de contenido se encuentra en la sección derecha de la ventana, debajo de la barra de herramientas.
 
@@ -95,15 +95,15 @@ El marco del editor es un contenedor (abstracto) para todos los elementos de cre
 
 ### Panel lateral {#side-panel}
 
-Contiene tres pestañas predeterminadas. El **Assets** y **Componentes** las pestañas permiten seleccionar estos elementos, arrastrarlos desde el panel y colocarlos en la página. El **Árbol de contenido** permite inspeccionar la jerarquía del contenido de la página.
+Contiene tres pestañas predeterminadas. El **Assets** y **Componentes** Las pestañas permiten seleccionar estos elementos, arrastrarlos desde el panel y colocarlos en la página. El **Árbol de contenido** permite inspeccionar la jerarquía del contenido de la página.
 
-El panel lateral está oculto de forma predeterminada. Cuando se selecciona, se muestra en el lado izquierdo o se desliza para cubrir toda la ventana cuando el tamaño de la ventana es inferior a una anchura de 1024 píxeles; como, por ejemplo, en un dispositivo móvil.
+El panel lateral está oculto de forma predeterminada. Cuando se selecciona, se muestra en el lado izquierdo o, cuando el ancho de la ventana es inferior a 1024 píxeles, se desliza para cubrir toda la ventana, como en un dispositivo móvil, por ejemplo.
 
 ![Panel lateral](assets/ui-side-panel.png)
 
 ### Panel lateral: Recursos {#side-panel-assets}
 
-En la pestaña Recursos puede seleccionar entre el rango de recursos. También puede filtrar por un término específico o seleccionar un grupo.
+En la pestaña Recursos, puede seleccionar entre el rango de recursos. Además, puede filtrar por un término específico o seleccionar un grupo.
 
 ![Pestaña Recursos](assets/ui-side-panel-assets.png)
 
@@ -115,19 +115,19 @@ En la pestaña Recursos hay una lista desplegable que puede utilizar para selecc
 
 ### Panel lateral: Componentes {#side-panel-components}
 
-En la pestaña Componentes, puede seleccionar entre el rango de componentes. También puede filtrar por un término específico o seleccionar un grupo.
+En la pestaña Componentes, puede seleccionar entre el rango de componentes. Además, puede filtrar por un término específico o seleccionar un grupo.
 
 ![Pestaña Componentes](assets/ui-side-panel-components.png)
 
 ### Panel lateral: árbol de contenido {#side-panel-content-tree}
 
-En la pestaña Árbol de contenido puede ver la jerarquía del contenido de la página. Al hacer clic en una entrada en la pestaña, se salta a y se selecciona el elemento de la página dentro del editor.
+En la pestaña Árbol de contenido, puede ver la jerarquía del contenido en la página. Al hacer clic en una entrada en la pestaña, se salta a y se selecciona el elemento de la página dentro del editor.
 
 ![Árbol de contenido](assets/ui-side-panel-content-tree.png)
 
 ### Superposiciones {#overlays}
 
-Se superponen al marco de contenido y los utiliza el [capas](#layer) para comprender la mecánica de cómo puede interactuar (de forma completamente transparente) con los componentes y su contenido.
+Superpone el marco de contenido y lo utiliza el [capas](#layer) para comprender la mecánica de cómo puede interactuar de forma transparente con los componentes y su contenido.
 
 Las superposiciones se encuentran en el marco del editor (con todos los demás elementos de creación de páginas), aunque en realidad se superponen a los componentes adecuados en el marco de contenido.
 
@@ -146,7 +146,7 @@ AEM La función incluye varias capas ya implementadas para la creación de pági
 
 >[!NOTE]
 >
->Las capas son un concepto potente que afecta a la vista del usuario y a la interacción con el contenido de la página. Al desarrollar sus propias capas, debe asegurarse de que la capa se limpia cuando se sale de ella.
+>Las capas son un concepto potente que afecta a la vista del usuario y a la interacción con el contenido de la página. Cuando desarrolle sus propias capas, asegúrese de que la capa se limpia al salir.
 
 ### Conmutador de capas {#layer-switcher}
 
@@ -158,7 +158,7 @@ El selector de capas está disponible como una lista desplegable en la barra de 
 
 ### Barra de herramientas del componente {#component-toolbar}
 
-Cada instancia de un componente mostrará su barra de herramientas cuando se haga clic (una vez o con un doble clic lento). La barra de herramientas contiene las acciones específicas (por ejemplo, copiar, pegar, abrir editor) disponibles para la instancia de componente en la página.
+Cada instancia de un componente muestra su barra de herramientas cuando se hace clic (una vez o con un doble clic lento). La barra de herramientas contiene las acciones específicas (por ejemplo, copiar, pegar, abrir editor) disponibles para la instancia de componente en la página.
 
 Según el espacio disponible, las barras de herramientas de los componentes se colocan en la esquina superior o inferior derecha del componente correspondiente.
 
@@ -168,4 +168,4 @@ Según el espacio disponible, las barras de herramientas de los componentes se c
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Para obtener más información técnica, consulte la [Conjunto de documentación JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas.
+Para obtener más información técnica, consulte la [Conjunto de documentación JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas.

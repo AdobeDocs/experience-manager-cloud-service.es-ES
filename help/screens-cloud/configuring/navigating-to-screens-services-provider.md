@@ -2,9 +2,9 @@
 title: Navegación al proveedor de servicios de Screens
 description: En esta página se describe cómo navegar al proveedor de servicios de Screens.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '263'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ Esta sección describe cómo configurar el proveedor de servicios de Screens.
 
 ## Objetivo {#objective}
 
-En la siguiente sección se explica cómo configurar el proveedor de servicios de Screens.
+En la siguiente sección se muestra cómo configurar el proveedor de servicios de Screens.
 
 ## Pasos para configurar el proveedor de servicios de Screens {#screens-services-provider}
 
@@ -41,7 +41,7 @@ Siga los pasos a continuación para configurar el proveedor de servicios de Scre
 
    ![imagen](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Haga clic en **Guardar** para conectarse al proveedor de contenido de Screens
+4. Clic **Guardar** para conectarse al proveedor de contenido de Screens
 
 5. Seleccionar **Canales** en la barra de navegación izquierda y haga clic en **abrir en el proveedor de contenido**.
 
@@ -53,4 +53,4 @@ Siga los pasos a continuación para configurar el proveedor de servicios de Scre
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a configurar el proveedor de servicios de Screens, puede navegar a, [Uso del proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) para obtener más información.
+Después de aprender a configurar el proveedor de servicios de Screens, vaya a [Uso del proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) para obtener más información.

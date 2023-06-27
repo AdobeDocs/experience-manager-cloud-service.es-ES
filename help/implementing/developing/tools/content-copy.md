@@ -1,17 +1,17 @@
 ---
 title: La herramienta Copia de contenido
-description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción as a Cloud Service de la a entornos más bajos para realizar pruebas.
+description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción en entornos as a Cloud Service a entornos más bajos para realizar pruebas.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 55%
+source-wordcount: '1199'
+ht-degree: 41%
 
 ---
 
 # La herramienta Copia de contenido {#content-copy}
 
-AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción as a Cloud Service de la a entornos más bajos para realizar pruebas.
+AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción en entornos as a Cloud Service a entornos más bajos para realizar pruebas.
 
 ## Introducción {#introduction}
 
@@ -43,15 +43,15 @@ Para utilizar la herramienta de copia de contenido, se requieren ciertos permiso
 
 ## Creación de un conjunto de contenido {#create-content-set}
 
-Antes de poder copiar cualquier contenido, se debe definir un conjunto de contenido. Una vez definidos, los conjuntos de contenido se pueden reutilizar para copiar contenido. Siga estos pasos para crear un conjunto de contenido.
+Para poder copiar cualquier contenido, se debe definir un conjunto de contenido. Una vez definido, los conjuntos de contenido se pueden reutilizar para copiar contenido. Siga estos pasos para poder crear un conjunto de contenido.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
 1. Vaya a la página **Conjuntos de contenido** en la pantalla **Entornos**.
 
-1. Pulse o haga clic en el botón **Añadir conjunto de contenido** en la parte superior derecha de la pantalla.
+1. En la parte superior derecha de la pantalla, haga clic en **Añadir conjunto de contenido**.
 
    ![Conjuntos de contenido](assets/content-sets.png)
 
@@ -62,16 +62,16 @@ Antes de poder copiar cualquier contenido, se debe definir un conjunto de conten
 1. En la pestaña **Rutas de contenido** del asistente, especifique las rutas del contenido mutable que se incluirán en el conjunto de contenido.
 
    1. Introduzca la ruta en el campo **Añadir ruta de inclusión**.
-   1. Pulse o haga clic en el botón **Añadir ruta** para agregar la ruta al conjunto de contenido.
-   1. Pulse o haga clic de nuevo en el botón **Añadir ruta** cuando sea necesario.
+   1. Clic **Añadir ruta** para añadir la ruta al conjunto de contenido.
+   1. Clic **Añadir ruta** vuelva a intentarlo según sea necesario.
       * Se permiten hasta 50 rutas.
 
    ![Añadir rutas al conjunto de contenido](assets/add-content-set-paths.png)
 
-1. Si es necesario precisar o restringir el conjunto de contenido, se pueden excluir las subrutas.
+1. Si debe restringir o restringir el conjunto de contenido, se pueden excluir las subrutas.
 
-   1. En la lista de rutas incluidas, pulse o haga clic en el botón **Añadir subrutas de exclusión** junto a la ruta que debe restringir.
-   1. Introduzca la subruta que se excluirá debajo de la ruta seleccionada.
+   1. En la lista de rutas incluidas, haga clic en **Adición de subrutas de exclusión** situado junto a la ruta que desee restringir.
+   1. Introduzca el subtrazado que desea excluir debajo del trazado seleccionado.
    1. Pulse o haga clic en **Excluir ruta**.
    1. Pulse o haga clic en **Añadir subrutas de exclusión** para agregar rutas adicionales para excluir según sea necesario.
       * Las rutas excluidas deben ser relativas a la ruta incluida.
@@ -79,10 +79,10 @@ Antes de poder copiar cualquier contenido, se debe definir un conjunto de conten
 
    ![Exclusión de rutas](assets/add-content-set-paths-excluded.png)
 
-1. Si es necesario, puede modificar las rutas especificadas.
+1. Si es necesario, puede editar las rutas especificadas.
 
-   1. Pulse o haga clic en la X situada junto a las subrutas excluidas para eliminarlas.
-   1. Pulse o haga clic en el botón de puntos suspensivos situado junto a las rutas para mostrar las opciones **Editar** y **Eliminar**.
+   1. Haga clic en la X situada junto a las subrutas excluidas para poder eliminarlas.
+   1. Haga clic en el botón de los tres puntos situado junto a las rutas para mostrar **Editar** y **Eliminar** opciones.
 
    ![Edición de la lista de rutas](assets/add-content-set-excluded-paths.png)
 
@@ -92,18 +92,18 @@ A partir de ahora, se puede utilizar el conjunto de contenido para copiar conten
 
 ## Edición de un conjunto de contenido {#edit-content-set}
 
-Siga los mismos pasos que para la creación de un paso de contenido. En lugar de pulsar o hacer clic en **Añadir conjunto de contenido**, seleccione un conjunto existente de la consola y seleccione **Editar** en el menú de puntos suspensivos.
+Siga los mismos pasos que para la creación de un paso de contenido. En lugar de hacer clic en **Añadir conjunto de contenido**, seleccione un conjunto existente de la consola y seleccione **Editar** en el menú de los tres puntos.
 
 ![Editar conjunto de contenido](assets/edit-content-set.png)
 
-Tenga en cuenta que al editar el conjunto de contenido, es posible que tenga que expandir las rutas configuradas para mostrar las subrutas excluidas.
+Al editar el conjunto de contenido, puede ampliar las rutas configuradas para mostrar las subrutas excluidas.
 
 ## Copia de contenido {#copy-content}
 
-Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido. Siga estos pasos para copiar contenido.
+Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido. Siga estos pasos para poder copiar contenido.
 
 >[!NOTE]
-> La copia de contenido no debe iniciarse en un entorno mientras [transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) se está ejecutando en ese entorno.
+> No utilice la copia de contenido en un entorno mientras [transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) se está ejecutando en ese entorno.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -163,7 +163,7 @@ Una vez que empiece a copiar contenido, el proceso puede tener uno de los siguie
 
 ### Cancelación de un proceso de copia {#canceling}
 
-Si necesita cancelar una operación de copia de contenido después de iniciarla, tiene la opción de cancelarla.
+Si debe cancelar una operación de copia de contenido después de iniciarla, puede cancelarla opcionalmente.
 
 Para ello, en la **Copiar actividad de contenido** , seleccione la **Cancelar** acción del menú de los tres puntos del proceso de copia iniciado anteriormente.
 
@@ -171,9 +171,9 @@ Para ello, en la **Copiar actividad de contenido** , seleccione la **Cancelar** 
 
 >[!NOTE]
 >
->Al cancelar una operación de copia de contenido, puede resultar en una copia parcial del contenido en el entorno de destino. Esto puede dejar el entorno de destino en un estado inutilizable.
+>Al cancelar una operación de copia de contenido, puede resultar en una copia parcial del contenido en el entorno de destino. Esta situación puede dejar el entorno de destino en un estado inutilizable.
 >
->Si su entorno está en ese estado debido a la cancelación, póngase en contacto con el Servicio de atención al cliente de Adobe para obtener ayuda.
+>Si su entorno se encuentra en ese estado debido a la cancelación, póngase en contacto con el Servicio de atención al cliente de Adobe para obtener ayuda.
 
 ## Restricciones {#limitations}
 
@@ -186,5 +186,5 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * Se pueden especificar hasta 50 rutas por conjunto de contenido. No hay limitación en las rutas excluidas.
 * La herramienta de copia de contenido no debe utilizarse como herramienta de clonación o creación de reflejo porque no puede realizar el seguimiento del contenido movido o eliminado en el origen.
 * La herramienta de copia de contenido no tiene capacidad de control de versiones y no puede detectar automáticamente el contenido modificado o recién creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
-   * Si desea actualizar el entorno de destino con cambios de contenido solo desde la última operación de copia de contenido, debe crear un conjunto de contenido y especificar las rutas en la instancia de origen donde se realizaron los cambios desde la última operación de copia de contenido.
+   * Si desea actualizar el entorno de destino solo con cambios de contenido, desde la última operación de copia de contenido, debe crear un conjunto de contenido. A continuación, especifique las rutas en la instancia de origen en las que se han realizado cambios desde la última operación de copia de contenido.
 * La información de la versión no se incluye en una copia de contenido.
