@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service en Unified Shell
 description: AEM as a Cloud Service en Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 24ae6187813de801813236f0bbcb2ea51e8fe5e1
+source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 100%
+source-wordcount: '395'
+ht-degree: 81%
 
 ---
 
@@ -32,19 +32,19 @@ De forma predeterminada, AEM as a Cloud Service tiene habilitado el shell unific
 >[!NOTE]
 >Unified Shell solo se puede deshabilitar con una cuenta con privilegios administrativos.
 
-1. Vaya a **Herramientas → Cloud Services**.
+1. Clic **Herramientas > Cloud Services**.
 
-   Un usuario administrador verá la tarjeta de configuración de Unified Shell como se muestra a continuación:
+   Un usuario administrador ve la tarjeta de configuración de Unified Shell como se muestra a continuación:
 
    ![imagen](/help/overview/assets/unifiedshell2.png)
 
-1. Haga clic en **Configuración de Unified Shell**. A continuación, anule la selección de la casilla de verificación que aparece a continuación para deshabilitar Unified Shell:
+1. Clic **Configuración de Unified Shell**. A continuación, anule la selección de la casilla de verificación que aparece a continuación para deshabilitar Unified Shell:
 
    ![imagen](/help/overview/assets/unifiedshell3.png)
 
 ## Cambio a tema oscuro {#changing-to-dark-theme}
 
-Para cambiar al tema oscuro, haga clic en su icono de perfil. Se mostrará una ventana emergente como se muestra a continuación. Puede utilizar el conmutador para cambiar a un tema oscuro para el Unified Shell.
+Para cambiar al tema oscuro, haga clic en el icono de perfil. Esta acción muestra una ventana emergente como se muestra a continuación. Puede utilizar el conmutador para cambiar a un tema oscuro para el Unified Shell.
 
 >[!INFO]
 >
@@ -60,7 +60,7 @@ AEM as a Cloud Service proporciona tres tipos de entornos: producción, ensayo y
 
 ## Acceso a la bandeja de entrada AEM {#accessing-the-aem-inbox}
 
-Se puede acceder a la Bandeja de entrada AEM haciendo clic en el icono de campana del shell unificado.
+AEM Para acceder a la Bandeja de entrada de la, haga clic en el icono de campana del shell unificado.
 
 >[!INFO]
 >
@@ -68,6 +68,6 @@ Se puede acceder a la Bandeja de entrada AEM haciendo clic en el icono de campan
 
 ![imagen](/help/overview/assets/unifiedshell5.png)
 
-Haga clic en el botón Bandeja de entrada en la ventana emergente para ir a la Bandeja de entrada AEM:
+AEM Haga clic en el botón Bandeja de entrada en la ventana emergente para poder ir a la Bandeja de entrada de la:
 
 ![imagen](/help/overview/assets/unifiedshell6.png)
