@@ -2,10 +2,10 @@
 title: Creación de un sitio a partir de una plantilla
 description: Obtenga información sobre cómo crear rápidamente un nuevo sitio de AEM con una plantilla de sitio.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '1485'
-ht-degree: 99%
+source-wordcount: '1513'
+ht-degree: 97%
 
 ---
 
@@ -184,3 +184,4 @@ Aunque se recomienda pasar a la siguiente parte del Recorrido de creación rápi
 * [Creación y organización de páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md). Esta guía detalla cómo administrar las páginas de su sitio AEM si desea personalizarlo aún más después de crearlo a partir de la plantilla.
 * [Cómo trabajar con el paquete](/help/implementing/developing/tools/package-manager.md): los paquetes permiten importar y exportar el contenido del repositorio. Este documento explica cómo trabajar con paquetes en AEM 6.5, que también se aplica a AEMaaCS.
 * [Documentación de administración del sitio](/help/sites-cloud/administering/site-creation/create-site.md). Consulte los documentos técnicos sobre la creación de sitios para obtener más información sobre las funciones de la herramienta de creación rápida de sitios.
+* [Crear o agregar formularios a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) : Conozca las técnicas paso a paso y las prácticas recomendadas para integrar formularios en su sitio web y optimizar sus experiencias digitales para lograr el máximo impacto.

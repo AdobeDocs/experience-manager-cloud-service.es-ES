@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '4079'
+source-wordcount: '4081'
 ht-degree: 98%
 
 ---
@@ -530,7 +530,6 @@ ht-degree: 98%
          + [Integración de AEM Forms as a Cloud Service con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integración de un formulario adaptable con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incrustar un formulario adaptable en una página de AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [Crear o agregar un formulario adaptable a la página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Modelo de datos de formulario {#use-form-data-model}
          + [Conexión de las fuentes de datos a Cloud Service](/help/forms/data-integration.md)
          + [Configuración de fuentes de datos](/help/forms/configure-data-sources.md)
@@ -541,6 +540,7 @@ ht-degree: 98%
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
          + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
    + Formularios adaptables {#adaptive-forms-authoring}
+      + [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Creación de formularios adaptables: componentes principales {#authoring-adaptive-forms-core-components}
          + Creación de un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
             + [Creación de un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)

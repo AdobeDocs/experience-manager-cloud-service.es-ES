@@ -1,33 +1,32 @@
 ---
-title: Crear o agregar un formulario adaptable a la página de AEM Sites
-description: Descubra cómo crear o agregar fácilmente un formulario adaptable a su página de AEM Sites. Conozca las técnicas paso a paso y las prácticas recomendadas para integrar formularios dinámicos y personalizables en su sitio web, optimizando las experiencias digitales para lograr el máximo impacto.
-feature: Adaptive Forms
-hide: true
-hidefromtoc: true
-source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
+title: Cómo añadir un formulario adaptable a la página de AEM Sites
+description: Descubra cómo crear o agregar fácilmente un formulario adaptable a su página de AEM Sites. Conozca las técnicas paso a paso y las prácticas recomendadas para integrar formularios en su sitio web y optimizar sus experiencias digitales para lograr el máximo impacto.
+feature: Adaptive Forms, Page Editor, Authoring
+Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '3073'
+source-wordcount: '3244'
 ht-degree: 2%
 
 ---
 
 
-# Crear o agregar un formulario adaptable a la página de AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# Creación de un formulario adaptable en una página de AEM Sites AEM o en un fragmento de experiencia de {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
-[!BADGE documentación previa al lanzamiento]{type=Caution tooltip="Estado amarillo"}
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=en) |
+| AEM as a Cloud Service | Este artículo |
 
-<span class="preview"> Esta es la documentación previa al lanzamiento y está sujeta a cambios.</span>
-
-Con AEM Forms, puede incorporar fácilmente formularios adaptables a sus páginas web. Esto permite a los visitantes rellenar y enviar formularios cómodamente sin salir de la página en la que se encuentran. Al hacerlo, pueden interactuar fácilmente con otros elementos del sitio web e interactuar activamente con el formulario.
+Con AEM Forms, puede agregar sin problemas un formulario adaptable a su página de AEM Sites. Esto permite a los visitantes rellenar y enviar formularios cómodamente sin salir de la página en la que se encuentran. Al hacerlo, pueden interactuar fácilmente con otros elementos del sitio web e interactuar activamente con el formulario.
 
 AEM Puede utilizar el Editor de páginas de para crear y agregar rápidamente varios formularios a las páginas de AEM Sites. AEM El uso del Editor de páginas de datos permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de una página de Sites mediante la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización de procesos empresariales. También le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios.
 
 AEM Forms proporciona el contenedor del formulario adaptable y los componentes incrustados de Forms adaptable. Puede utilizar el contenedor de formulario adaptable para crear un nuevo formulario en un fragmento de experiencia o una página de AEM Sites, mientras que el componente Forms adaptable incrustado le permite agregar un formulario adaptable existente o crear un nuevo formulario con el editor de Forms adaptable.
 
+![Ejemplo de un formulario adaptable en una página de AEM Sites](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-![](/help/forms/assets/adaptive-form-in-sites-page.png)
-
-## AEM Ventajas de utilizar el componente Contenedor de formulario adaptable en el editor de páginas o en el fragmento de experiencias de
+## ¿Por qué crear un formulario adaptable en una página de AEM Sites AEM o en un fragmento de experiencia de?
 
 AEM El uso del contenedor de formulario adaptable en el editor de páginas de le permite crear experiencias de captura de datos sin problemas dentro de una página de Sites mediante la potencia de los componentes de Forms adaptable, que incluyen comportamiento dinámico, validaciones, integración de datos, generación de documentos de registro y automatización de procesos empresariales. También le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios, lo que mejora la experiencia general de creación y administración de formularios. Vamos a explorar algunas de estas características:
 
@@ -39,39 +38,43 @@ AEM El uso del contenedor de formulario adaptable en el editor de páginas de le
 * **Etiquetado:** Las páginas de AEM Sites le permiten [asignar etiquetas a una página, a un recurso o a otro contenido](/help/implementing/developing/introduction/tagging-framework.md). Las etiquetas son palabras clave o etiquetas de metadatos que proporcionan una forma de categorizar y organizar el contenido en función de criterios específicos. AEM Puede asignar una o más etiquetas a páginas, recursos o a cualquier otro elemento de contenido dentro de para mejorar la búsqueda y la clasificación de los recursos.
 * **Bloquear y desbloquear contenido:** AEM Sites permite a los usuarios lo siguiente [control de acceso y modificaciones de páginas](/help/sites-cloud/authoring/fundamentals/editing-content.md) dentro del entorno de AEM Sites. Cuando una página está bloqueada, significa que está protegida contra cambios o ediciones no autorizados por parte de otros usuarios. Solo el usuario que ha bloqueado el contenido o un administrador designado pueden desbloquearlo para permitir modificaciones.
 
+Además, Forms AEM adaptable en el editor de páginas de utiliza [Componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Estos componentes principales proporcionan métodos estándar y más sencillos para aplicar estilos y personalizar los componentes, idénticos a los siguientes [Componentes de AEM Sites WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
 
-## AEM Varias opciones para agregar un formulario adaptable en el editor de páginas de la página de
+
+## ¿Cómo se crea o se agrega un formulario adaptable en una página de AEM Sites AEM o en un fragmento de experiencia de la? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
 
 Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
-* **Agregar un formulario adaptable personalizado a una página de AEM Sites:** Cree un formulario nuevo desde cero y adáptelo específicamente a sus necesidades y preferencias de diseño.
+* **[Crear y agregar un formulario adaptable personalizado a una página de AEM Sites](#create-an-adaptive-form-in-sites-editor-or-experience-fragment):** Puede utilizar el componente Contenedor de formulario adaptable para crear un formulario completamente nuevo desde cero y adaptarlo específicamente a sus necesidades y preferencias de diseño.
 
-* **Agregar un formulario adaptable personalizado a un fragmento de experiencia:** AEM Amplíe el alcance de los formularios añadiéndolos a los fragmentos de experiencias de la, lo que permite una reutilización perfecta en varias páginas o sitios.
+* **[Crear y agregar un formulario adaptable personalizado a un fragmento de experiencia](#create-an-adaptive-form-in-sites-editor):** AEM Puede ampliar el alcance de los formularios añadiéndolos a los fragmentos de experiencias de la aplicación, lo que permite una reutilización perfecta en varias páginas o sitios.
 
-* **Agregar varios formularios a una página de AEM Sites o a un fragmento de experiencia:**  Agregue varios formularios a una página para proporcionar varias opciones a los usuarios en función de sus preferencias y requisitos. Pueden ser una combinación de formularios nuevos desde cero y formularios existentes.
+* **[Conversión de un formulario adaptable en un fragmento de experiencia](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Convertir un formulario adaptable agregado a una página de AEM Sites en un fragmento de experiencia para reutilizar el formulario en varias páginas de AEM Sites.
 
-* **Convertir un formulario adaptable en fragmento de experiencia:** Convertir un formulario adaptable agregado a una página de AEM Sites en un fragmento de experiencia para reutilizar el formulario en varias páginas de AEM Sites.
+* **Agregar varios formularios a una página de AEM Sites o a un fragmento de experiencia:**  Puede crear o agregar varios Forms adaptables a una página de AEM Sites para proporcionar varias opciones a los usuarios en función de sus preferencias y requisitos. Pueden ser una combinación de formularios nuevos desde cero y formularios existentes.
 
-* **Cree y agregue formularios basados en plantillas aprobadas a una página de AEM Sites:** Aproveche las plantillas aprobadas previamente para crear rápidamente formularios que se ajusten a las directrices de promoción de la marca y a los estándares de diseño de su organización. La opción solo está disponible para Forms adaptable creado con el editor de Forms adaptable o el componente incrustado de Forms adaptable.
+* **Cree y agregue formularios basados en plantillas aprobadas a una página de AEM Sites:** Puede aprovechar las plantillas aprobadas previamente para crear rápidamente Forms adaptable que se ajuste a las directrices de promoción de la marca y a los estándares de diseño de su organización. La opción solo está disponible para Forms adaptable creado con el editor de Forms adaptable o el componente incrustado de Forms adaptable.
 
-* **Agregar formularios existentes a una página de AEM Sites:** Integre fácilmente formularios que ya haya creado en sus sitios web, lo que permite a los visitantes interactuar con ellos directamente. La opción solo está disponible para Forms adaptable creado con el editor de Forms adaptable o el componente incrustado de Forms adaptable.
+* **Agregar formularios existentes a una página de AEM Sites:** Puede integrar fácilmente formularios que ya haya creado en sus sitios web, lo que permite a los visitantes interactuar con ellos directamente. La opción solo está disponible para Forms adaptable creado con el editor de Forms adaptable o el componente incrustado de Forms adaptable.
 
-## Consideraciones {#consideration}
+## Consideraciones para crear un formulario adaptable en una página de AEM Sites AEM o un fragmento de experiencia de la {#consideration}
 
 * Cuando se utiliza el contenedor de formulario adaptable para crear o agregar un formulario, este se traduce y localiza a través del flujo de traducción de AEM Sites. Para cada idioma, se genera una copia independiente (copia de idioma) de la página de Sites y de los formularios correspondientes y, cuando un autor de contenido modifica una regla en un formulario de la página principal, se deben realizar los mismos cambios en todas las copias de idioma del formulario. El contenedor de formulario adaptable también le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios.
 
 * Cuando se crea o se agrega un formulario con el componente incrustado del formulario adaptable, los formularios se traducen y localizan mediante el flujo de traducción de AEM Forms. En este caso, se mantiene un único formulario y se hace referencia a él en todas las copias de idioma de las páginas de Sites. El componente incrustado en el formulario adaptable no proporciona acceso a varias funciones de páginas de AEM Sites, como control de versiones, direccionamiento, traducción y administrador de varios sitios.
 
 
-## Antes de comenzar {#before-you-start}
+## Requisitos para crear o agregar un formulario adaptable en una página de AEM Sites AEM o en un fragmento de experiencia de la aplicación de {#before-you-start-creating-an-adaptive-form}
 
-+++  Habilitar los componentes principales de Forms adaptables para su entorno
+Antes de empezar a crear o a crear un formulario adaptable, habilite los componentes principales de Forms adaptable y agregue las bibliotecas de cliente de Forms adaptables a su página de AEM Sites:
+
++++  Habilitar los componentes principales de Forms adaptables para su entorno de AEM Cloud Service
 
 Asegúrese de que la variable [Los componentes principales de Forms adaptables están habilitados para su entorno as a Cloud Service de AEM Forms](enable-adaptive-forms-core-components.md).
 
 +++
 
-+++  Añadir bibliotecas de cliente de Forms adaptables a los componentes de página de AEM Sites y página de Fragmento de experiencia.
++++  Añadir bibliotecas de cliente de Forms adaptables a su página de AEM Sites o fragmento de experiencia
 
 Para habilitar la funcionalidad completa del componente Contenedor de Forms adaptable, agregue las bibliotecas de cliente Customheaderlibs y Customfooterlibs a la página de AEM Sites mediante la canalización de implementación. Para añadir las bibliotecas:
 
@@ -121,7 +124,7 @@ Para habilitar la funcionalidad completa del componente Contenedor de Forms adap
 
 +++
 
-+++ Habilitar contenedor de Forms adaptable
++++ Habilitar el contenedor de Forms adaptable para la página de AEM Sites o el fragmento de experiencia
 
 Para habilitar el [!UICONTROL Contenedor de formularios adaptables] en la política de la plantilla, siga los siguientes pasos:
 
@@ -170,7 +173,7 @@ Para crear un formulario adaptable en un fragmento de experiencia:
 
 A continuación, usted [establecer la acción de envío](#configure-submit-action-for-form) y propiedades avanzadas.
 
-### Conversión de un formulario adaptable en una página de AEM Sites en un fragmento de experiencia {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
+### Conversión de un formulario en una página de AEM Sites en un fragmento de experiencia {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 Puede convertir un formulario adaptable existente en un editor de páginas de Sites a un fragmento de experiencia para reutilizar el formulario en varias páginas o sitios.
 
@@ -179,7 +182,7 @@ Para convertir un formulario adaptable en una página de AEM Sites en un fragmen
 1. Abra la página de AEM Sites que contiene el formulario adaptable (en el componente Contenedor de Forms adaptable) en el modo Edición.
 1. Abra el árbol de contenido y seleccione **[!UICONTROL Contenedor de Forms adaptable]** que aloja su formulario adaptable. Una página de AEM Sites puede alojar varios Forms adaptables. Por lo tanto, seleccione cuidadosamente el contenedor de Forms adaptable correcto.
 1. En la barra de menús, seleccione ![Icono Convertir para experimentar la variación del fragmento](/help/forms/assets/Smock_FilingCabinet_18_N.svg) Icono Convertir en variación de Fragmento de experiencia.
-   ![](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+   ![Haga clic en el logotipo del archivador para convertir un formulario adaptable de la página de AEM Sites en un fragmento de experiencia](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Aparece un cuadro de diálogo para convertir el contenedor del formulario adaptable a un nuevo fragmento de experiencia o agregar a un fragmento de experiencia existente
 1. En el cuadro de diálogo Convertir en variación de Fragmento de experiencia, defina los valores de las siguientes opciones:
@@ -190,24 +193,22 @@ Para convertir un formulario adaptable en una página de AEM Sites en un fragmen
    * **Título del fragmento:** Especifique el título del fragmento de experiencia. El título identifica de forma exclusiva un fragmento de experiencia
 
 
-## Configurar la acción de envío para el formulario {#configure-submit-action-for-form}
+## Configurar la acción de envío para un formulario en una página de AEM Sites o un fragmento de experiencia {#configure-submit-action-for-form}
 
 Una acción de envío permite elegir el destino de los datos capturados mediante un formulario adaptable. Se activa cuando un usuario hace clic en el botón Enviar en un formulario adaptable. Los formularios adaptables incluyen algunas acciones de envío listas para usar. También puede ampliar una acción de envío predeterminada para crear su propia acción de envío personalizada. Para configurar una acción de envío para el formulario:
 
 1. AEM Abra el Editor de páginas de o el Fragmento de experiencia que contiene el formulario adaptable.
 1. Abra el árbol de contenido y seleccione **[!UICONTROL Contenedor de Forms adaptable]** que aloja su formulario adaptable. Una página de AEM Sites puede alojar varios Forms adaptables. Por lo tanto, seleccione cuidadosamente el contenedor de Forms adaptable correcto.
 1. Haga clic en las propiedades del contenedor del formulario adaptable ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) icono. Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar las acciones de envío.
-   ![](/help/forms/assets/adaptive-forms-container.png)
+   ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar los modelos de datos para el componente Contenedor de formulario adaptable](/help/forms/assets/adaptive-forms-container.png)
 1. Seleccione y configure una acción de envío según sus necesidades. Para obtener información detallada sobre las acciones de envío, consulte [Acción de envío del formulario adaptable](/help/forms/configuring-submit-actions.md)
 
 
-## Configurar un esquema o un modelo de datos de formulario para un formulario {#configure-schema-or-data-model-for-form}
+## Configurar un esquema o un modelo de datos de formulario para un formulario en una página de AEM Sites o un fragmento de experiencia {#configure-schema-or-data-model-for-form}
 
-Puede utilizar el modelo de datos de formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido.
+Puede utilizar el modelo de datos de formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido. Antes de conectar un formulario a un esquema o a un modelo de datos de formulario:
 
-Antes de conectar un formulario a un esquema o a un modelo de datos de formulario
-
-* [Crear un esquema JSON y cargarlo en su entorno](/help/forms/adaptive-form-json-schema-form-model.md)
+* [Crear un esquema JSON y cargarlo en su entorno](/help/forms/adaptive-form-json-schema-form-model.md)  o,
 * [Crear un modelo de datos de formulario](/help/forms/create-form-data-models.md)
 
 Para configurar un esquema JSON o un modelo de datos de formulario para su formulario:
@@ -215,7 +216,7 @@ Para configurar un esquema JSON o un modelo de datos de formulario para su formu
 1. AEM Abra el Editor de páginas de o el Fragmento de experiencia que contiene el formulario adaptable.
 1. Abra el árbol de contenido y seleccione **[!UICONTROL Contenedor de Forms adaptable]** que aloja su formulario adaptable. Una página de AEM Sites puede alojar varios Forms adaptables. Por lo tanto, seleccione cuidadosamente el contenedor de Forms adaptable correcto.
 1. Haga clic en las propiedades del contenedor del formulario adaptable ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) icono. Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar modelos de datos.
-   ![](/help/forms/assets/form-data-model-adaptive-forms-container.png)
+   ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar los modelos de datos para el componente Contenedor de formulario adaptable](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. Seleccione y configure un esquema JSON o un modelo de datos de formulario según sus necesidades. Para obtener información detallada sobre las acciones de envío, consulte [Acción de envío del formulario adaptable](/help/forms/configuring-submit-actions.md).
 
    * Al seleccionar la variable **[!UICONTROL Modelo de formulario]** , utilice la opción **[!UICONTROL Seleccionar modelo de datos de formulario]** para seleccionar un modelo de datos de formulario preconfigurado.
@@ -223,42 +224,26 @@ Para configurar un esquema JSON o un modelo de datos de formulario para su formu
 
 1. Haga clic en **[!UICONTROL Listo]**.
 
-## Configurar un servicio de rellenado previo para un formulario {#configure-prefill-service-for-form}
+## Configurar un servicio de rellenado previo para un formulario en una página de AEM Sites o un fragmento de experiencia {#configure-prefill-service-for-form}
 
 Puede utilizar el servicio de rellenado previo para rellenar automáticamente los campos de un formulario adaptable mediante los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos ya han sido rellenados. Puede hacer lo siguiente:
 
 * [Crear un servicio de rellenado previo personalizado](/help/forms/prepopulate-adaptive-form-fields.md)
 * [Usar servicio de prerrellenado del modelo de datos de formulario](#fdm-prefill-service)
-* Usar el servicio de relleno previo de borrador del portal Forms
 
-### Usar servicio de prerrellenado del modelo de datos de formulario {#fdm-prefill-service}
+### Utilice el servicio de prerrellenado del modelo de datos de formulario para rellenar previamente los campos de un formulario en la página de AEM Sites o en el fragmento de experiencia {#fdm-prefill-service}
 
-Puede utilizar el servicio de prerrellenado del modelo de datos de formulario para rellenar previamente los campos de un formulario mediante un modelo de datos de formulario configurado. El servicio de prerrellenado del modelo de datos de formulario utiliza el [Obtener servicio del modelo de datos de formulario configurado](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) para recuperar datos. Para utilizar el servicio de prerrellenado del modelo de datos de formulario de un formulario adaptable, haga lo siguiente:
+Puede utilizar el servicio de prerrellenado del modelo de datos de formulario para rellenar previamente los campos de un formulario adaptable en una página de AEM Sites o un fragmento de experiencia mediante un modelo de datos de formulario o un servicio de prerrellenado personalizado. El servicio de prerrellenado del modelo de datos de formulario utiliza el [Obtener servicio del modelo de datos de formulario configurado](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) para recuperar datos. Para utilizar el servicio de prerrellenado del modelo de datos de formulario de un formulario adaptable, haga lo siguiente:
 
 1. AEM Abra el Editor de páginas de o el Fragmento de experiencia que contiene el formulario adaptable.
 1. Abra el árbol de contenido y seleccione **[!UICONTROL Contenedor de Forms adaptable]** que aloja su formulario adaptable. Una página de AEM Sites puede alojar varios Forms adaptables. Por lo tanto, seleccione cuidadosamente el contenedor de Forms adaptable correcto.
 1. Haga clic en las propiedades del contenedor del formulario adaptable ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) icono. Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar modelos de datos.
-   ![](/help/forms/assets/adaptive-forms-container.png)
-1. Seleccionar modelo de datos de formulario. Abra el **[!UICONTROL Básico]** pestaña. En el servicio de relleno previo, seleccione **[!UICONTROL Servicio de relleno previo de borrador del portal Forms]**.
-   ![](/help/forms/assets/prefill-service-fdm-aem-sites-page-editor.png)
-
-1. Haga clic en **[!UICONTROL Listo]**.
-
-### Usar el servicio de relleno previo de borrador del portal Forms {#forms-portal-prefill-service}
-
-Puede utilizar el servicio de rellenado previo de borrador del portal de Forms para rellenar previamente los campos de un formulario mediante un borrador del formulario adaptable guardado. Antes de usar el servicio de relleno previo de borrador del portal de Forms, asegúrese de que [Los componentes del portal de Forms adaptable están habilitados y configurados](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) para su entorno.
-
-1. AEM Abra el Editor de páginas de o el Fragmento de experiencia que contiene el formulario adaptable.
-1. Abra las propiedades de la página y configure Cloud Configuration.
-1. Abra el árbol de contenido y seleccione **[!UICONTROL Contenedor de Forms adaptable]** que aloja su formulario adaptable. Una página de AEM Sites puede alojar varios Forms adaptables. Por lo tanto, seleccione cuidadosamente el contenedor de Forms adaptable correcto.
-1. Haga clic en las propiedades del contenedor del formulario adaptable ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) icono. Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar modelos de datos.
-1. Abra el **[!UICONTROL Básico]** pestaña. En el servicio de relleno previo, seleccione **[!UICONTROL Servicio de relleno previo de borrador del portal Forms]**.
-   ![](/help/forms/assets/prefill-service-aem-sites-page-editor.png)
-
-1. Haga clic en **[!UICONTROL Listo]**.
+   ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar los modelos de datos para el componente Contenedor de formulario adaptable](/help/forms/assets/adaptive-forms-container.png)
+1. Seleccionar modelo de datos de formulario. Abra el **[!UICONTROL Básico]** pestaña. En el servicio de relleno previo, seleccione **[!UICONTROL Servicio de prerrellenado del modelo de datos de formulario]**.
+1. Haga clic en **[!UICONTROL Listo]**. El formulario adaptable ahora está configurado para utilizar el prerrellenado del modelo de datos de formulario. Ahora puede usar la variable [editor de reglas](rule-editor.md) para crear reglas para rellenar previamente los campos del formulario.
 
 
-## Redirigir al usuario a un nuevo usuario al enviar el formulario o mostrar un mensaje de agradecimiento
+## Redirigir al usuario a una página o mostrar un mensaje de agradecimiento al enviar el formulario
 
 Al enviar un formulario, puede redirigir al usuario a otra página web o a un mensaje. Para redirigir al usuario o configurar el mensaje de agradecimiento:
 
@@ -272,9 +257,9 @@ Al enviar un formulario, puede redirigir al usuario a otra página web o a un me
    * Para configurar un mensaje personalizado o de agradecimiento, por ejemplo, al enviar, seleccione la opción Mostrar mensaje y proporcione un mensaje en el cuadro Contenido del mensaje. Es un cuadro de texto enriquecido, puede utilizar la opción de pantalla completa para ver todos los elementos de texto enriquecido disponibles.
 
 
-## Siguiente
+## Ver siguiente
 
-* [Aplicar estilo a los componentes principales basados en Forms adaptable](using-themes-in-core-components.md)
-* [Utilice el editor de reglas para agregar un comportamiento dinámico a un Forms adaptable](rule-editor.md)
-* [Cambiar el diseño de un formulario adaptable](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Crear estilos o temáticas para los formularios](using-themes-in-core-components.md)
+* [Agregar un comportamiento dinámico a los formularios mediante el editor de reglas](rule-editor.md)
+* [Definir la presentación de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
 
