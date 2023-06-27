@@ -4,7 +4,7 @@ description: Aprenda a utilizar modelos de fragmentos de contenido de AEM para c
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 34%
@@ -43,7 +43,7 @@ Por ejemplo, se crea un modelo que representa la estructura de datos de un viaje
    * **Título de modelo** - Una breve etiqueta del modelo y por lo general indica el propósito del modelo. Puede llamar al nuevo modelo `Adventure`.
    * **Habilitar modelo**: esta opción está marcada de forma predeterminada y debe estar activada para poder crear fragmentos de contenido basados en este modelo.
 
-1. Una vez rellenados los campos obligatorios, haga clic en **Crear** en la parte superior izquierda para crear el modelo.
+1. Una vez rellenados los campos obligatorios, haga clic en **Crear** en la parte superior derecha para crear el modelo.
 
 1. El **Correcto** El cuadro de diálogo confirma que el modelo se ha creado. Clic **Abrir** en el cuadro de diálogo para que pueda abrir el nuevo Modelo de fragmento de contenido en el editor en una nueva pestaña. A continuación, continúe con el siguiente paso para agregar campos de datos al modelo.
 
