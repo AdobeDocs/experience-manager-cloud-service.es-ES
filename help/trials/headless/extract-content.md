@@ -4,10 +4,10 @@ description: Aprenda a utilizar los fragmentos de contenido y la API de GraphQL 
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 100%
+source-wordcount: '1116'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="Buen trabajo. Ha aprendido acerca de los dos tipos básicos de consultas y cómo consultar su propio contenido. Ya sabe cómo usar la API de GraphQL de AEM para crear consultas eficientes que entreguen contenido en el formato que la aplicación espera."
+>title="Buen trabajo. Ha aprendido los dos tipos básicos de consultas y cómo consultar su propio contenido. Ya sabe cómo usar la API de GraphQL de AEM para crear consultas eficientes que entreguen contenido en el formato que la aplicación espera."
 >abstract=""
 
 ## Consulta de una lista de contenido de muestra {#list-query}
@@ -66,11 +66,11 @@ Inicie GraphQL Explorer en una pestaña nueva. Aquí puede generar y validar con
 
    ![Consulta de lista](assets/do-not-localize/list-query-1-3-4-5.png)
 
-Acaba de validar una consulta de lista para obtener una lista completa de todos los fragmentos de contenido. Este proceso garantiza que la respuesta sea lo que espera la aplicación, con resultados que ilustran cómo las aplicaciones y sitios web recuperarán el contenido creado en AEM.
+Acaba de validar una consulta de lista para una lista completa de todos los fragmentos de contenido. Este proceso garantiza que la respuesta sea lo que espera la aplicación, con resultados que ilustran cómo las aplicaciones y sitios web recuperarán el contenido creado en AEM.
 
 >[!NOTE]
 >
->Si no puede seleccionar el punto de conexión **Recursos de demostración de AEM** de la lista desplegable, póngase en contacto con el servicio de atención al cliente de Adobe o con el [Canal de Slack de pruebas de AEM.](https://adobe-dx-support.slack.com/)
+>Si no puede seleccionar la variable **AEM Recursos de demostración** punto final de la lista desplegable, póngase en contacto con el Servicio de atención al cliente de Adobe o contacte con el [AEM Canal de Slack de Trials.](https://adobe-dx-support.slack.com/)
 
 ## Consulta de un fragmento específico de contenido de muestra {#bypath-query}
 

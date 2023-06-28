@@ -4,10 +4,10 @@ description: Utilice el modelo de fragmento de contenido que ha creado anteriorm
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 95%
+source-wordcount: '657'
+ht-degree: 83%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Crear contenido nuevo"
->abstract="A partir del modelo que creó en el módulo anterior, aprenderá a generar contenido que podrá utilizar para la confección de páginas o como base de su contenido sin encabezado."
+>abstract="Con el modelo que creó en el módulo anterior, aprenderá a crear contenido que se pueda utilizar para la creación de páginas o como base del contenido sin encabezado."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
@@ -33,7 +33,7 @@ ht-degree: 95%
 
 Los fragmentos de contenido representan su contenido sin encabezado y se basan en estructuras predefinidas, denominadas modelos de fragmento de contenido. Ya ha creado un modelo en un módulo anterior.
 
-En este módulo creará un nuevo Fragmento de contenido basado en ese modelo mediante la consola Fragmento de contenido. Considere la consola fragmento de contenido como una biblioteca de contenido sin encabezado. Utilícela para crear nuevos fragmentos de contenido y administrar los existentes.
+En este módulo, creará un nuevo fragmento de contenido basado en ese modelo mediante la consola Fragmento de contenido. Considere la consola fragmento de contenido como una biblioteca de contenido sin encabezado. Utilícela para crear nuevos fragmentos de contenido y administrar los existentes.
 
 1. Toque o haga clic en el botón **Crear** en la parte superior derecha de la consola.
 
@@ -49,11 +49,11 @@ En este módulo creará un nuevo Fragmento de contenido basado en ese modelo med
 
 >[!TIP]
 >
->Según la configuración del explorador, la nueva pestaña del explorador puede ser suprimida por un bloqueador de ventanas emergentes. Si el nuevo fragmento no se abre después de hacer clic en **Crear y abrir**, compruebe la configuración del explorador.
+>Según la configuración del explorador, la nueva pestaña del explorador puede ser suprimida por un bloqueador de ventanas emergentes. Si el nuevo fragmento no se abre después de hacer clic en **Crear y abrir**, compruebe la configuración de su explorador.
 
 ## Adición de contenido a su Fragmento de contenido {#add-content}
 
-Una vez guardado y abierto el nuevo fragmento de contenido, el editor de fragmentos de contenido se abre en una nueva pestaña. Aquí puede añadir el contenido del nuevo fragmento.
+Después de guardar y abrir el nuevo fragmento de contenido, el editor de fragmentos de contenido se abre en una nueva pestaña. Aquí puede añadir el contenido del nuevo fragmento.
 
 1. El editor de fragmentos de contenido muestra los campos definidos en el modelo seleccionado. Aquí puede añadir contenido a cada campo para completar el fragmento de contenido. El progreso se guarda automáticamente.
 
