@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '358'
+ht-degree: 90%
 
 ---
 
@@ -31,8 +31,9 @@ Antes de empezar a usar [!DNL AEM Forms] as a Cloud Service, revise los sigu
 
 * AEM Forms as a Cloud Service no genera miniaturas para los archivos de esquema XDP y JSON. El servicio muestra los iconos predeterminados en lugar de las miniaturas.
 
-   ![Problema conocido de la miniatura de Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
+  ![Problema conocido de la miniatura de Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
 
+* Cuando se utiliza un esquema con elementos repetibles para crear un formulario adaptable basado en componentes principales, la opción de arrastrar y soltar elementos repetibles del árbol del modelo de datos en el Editor de Forms adaptable no funciona.
 
 ## Restricciones {#limitations}
 
