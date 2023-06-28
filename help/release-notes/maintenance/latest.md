@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39696141a50bf8204d37341a85a4f4a8acae69db
+source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 32%
+source-wordcount: '297'
+ht-degree: 41%
 
 ---
 
@@ -13,44 +13,36 @@ ht-degree: 32%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 12255 {#release-12255}
+## Versión 12441 {#release-12441}
 
-A continuación se resumen las mejoras continuas para la 12255 de la versión de mantenimiento, que se publicó el 13 de junio de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 12142 anterior.
+A continuación se resumen las mejoras continuas para la 12441 de la versión de mantenimiento, que se publicó el 27 de junio de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 12255 anterior.
 
-La activación de funciones 2023.6.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Roadmap de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
+La activación de funciones 2023.7.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Roadmap de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
 
-### Mejoras {#enhancements-12255}
+### Mejoras {#enhancements-12441}
+
+- SITES-8769: Mejorar las llamadas de StyleImpl en ResponsiveGrid
+
+### Problemas corregidos {#fixed-issues-12441}
+
+- Varias actualizaciones relacionadas con la accesibilidad
+- SITES-12688: Editor de páginas: Operador lógico O no funciona correctamente en la búsqueda del Buscador de recursos
+- SITES-4951: Editor de páginas: La búsqueda de etiquetas en el editor de páginas no encuentra subetiquetas
+- SITES-12465: Fragmentos de experiencias: Las teclas de dirección no funcionan en el cuadro de diálogo del componente Fragmento de experiencias
+- SITES-12893: Fragmentos de experiencias: Aplicar validación de referencia circular para fragmentos de experiencias
+- SITES-12715: Fragmentos de experiencias: Las configuraciones de Cloud Service aplicadas a la carpeta de fragmentos de experiencias no persisten
+- SITES-13097: Fragmentos de experiencias: No se pueden añadir fragmentos de experiencias a un proyecto de traducción
+- SITES-13165: GraphQL: Restaurar el comportamiento predeterminado para filtrar los valores nulos
+- SITES-12577: Verificador de vínculos: el transformador no reescribe los vínculos intermitentemente
+- SITES-13559: MSM: Excepción &quot;No se puede modificar&quot; lanzada al desplegar el componente
+- SITES-11757: MSM: Heredar la configuración de despliegue de la página principal no se revierte para las páginas secundarias
+- SITES-14073: Administración de sitios: El informe CSV falla con 500 al seleccionar ninguna propiedad para exportar
+
+### Problemas conocidos {#known-issues-12441}
 
 Ninguna.
 
-### Problemas corregidos {#fixed-issues-12255}
-
-- Varias actualizaciones relacionadas con la accesibilidad
-- ASSETS-15116: la opción &quot;Ir a la ubicación&quot; está disponible en la vista de búsqueda de recursos
-- ASSETS-17453: (Dynamic Media) No se puede seleccionar una miniatura personalizada para los vídeos
-- ASSETS-19279: archivo de descarga de recursos para archivos grandes
-- ASSETS-19544: última modificación realizada por el usuario para actualizaciones de recursos
-- ASSETS-20146 (IU táctil) Los informes de errores de descarga de recursos se muestran siempre en la parte superior de la página de la lista de informes
-- ASSETS-21056: optimice el rendimiento de referencia de los recursos para minimizar las escrituras
-- ASSETS-21909: no se puede ver el vídeo de recorte inteligente cuando vtt no se puede descargar
-- ASSETS-22261: Linkshare descarga carpetas de estructura incoherentes con las descargas de la IU de Assets
-- ASSETS-22550: el panel Filtro de búsqueda ahora está abierto de forma predeterminada
-- ASSETS-22920: la cancelación de la publicación de la carpeta desde Brand Portal no marca los recursos de como no publicados
-- ASSETS-22922: los ajustes preestablecidos de visor desactivados se muestran en el componente Dynamic Media
-- ASSETS-23461: publicación rápida de Brand Portal desde la vista de búsqueda de recursos
-- ASSETS-23466: la administración de vínculos no accesibles de InDesign Server no puede resolver los vínculos AAL que contienen espacios
-- ASSETS-23469: los filtros de recursos predeterminados entran en conflicto con los filtros personalizados
-- ASSETS-23981: función de ordenación para títulos que no funcionan en vínculos de colección
-- ASSETS-24723: los recursos publicados se han vuelto a procesar sin la intervención del usuario
-- GRANITE-45385: Migre la activación del árbol para utilizar el trabajo de sling en lugar del flujo de trabajo
-
-### Problemas conocidos {#known-issues-12255}
-
-- ASSETS-25729: el menú del conmutador de vistas está desactivado
-- ASSETS-25728: la opción Volver a procesar recursos no está disponible en la vista de búsqueda
-- ASSETS-22603: algunas columnas del informe de recursos de tipo descarga muestran valores &quot;nulos&quot; en la interfaz de usuario. El CSV descargable no se ve afectado.
-
-### Tecnologías integradas {#embedded-tech-12255}
+### Tecnologías integradas {#embedded-tech-12441}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
