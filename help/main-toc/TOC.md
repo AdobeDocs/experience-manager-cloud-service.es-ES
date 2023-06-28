@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 69c6ca6104e5360e2db4c3ba9f34b3cddb2269ab
+source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
 workflow-type: tm+mt
-source-wordcount: '4085'
+source-wordcount: '4094'
 ht-degree: 98%
 
 ---
@@ -576,6 +576,7 @@ ht-degree: 98%
             + [Aplicación de estilos CSS en línea a componentes de formulario adaptable individuales](/help/forms/inline-style-adaptive-forms.md)
          + Adición de reglas y uso de expresiones en un formulario adaptable {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Adición de reglas a un formulario adaptable](/help/forms/rule-editor.md)
+            + [Agregar un controlador de error personalizado mediante el servicio Invocar del Editor de reglas](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + Uso [!DNL Adobe Sign] {#use-adobe-sign}
             + [Uso de Adobe Sign para firmar electrónicamente un formulario adaptable](/help/forms/working-with-adobe-sign.md)
          + Configuración de envío de acciones y envío de metadatos {#configure-submit-actions-and-metadata-submission}
