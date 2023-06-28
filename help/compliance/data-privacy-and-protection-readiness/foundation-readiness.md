@@ -1,11 +1,11 @@
 ---
 title: 'Reglamentos de protección de datos y privacidad de datos: preparación de Adobe Experience Manager as a Cloud Service Foundation'
-description: Obtenga información acerca del soporte de Adobe Experience Manager as a Cloud Service Foundation respecto a los distintos reglamentos de protección de datos y privacidad de datos; se incluye el Reglamento general de protección de datos (RGPD) de la UE y la Ley de Privacidad del Consumidor de California y cómo cumplirlos al implementar un nuevo proyecto de AEM as a Cloud Service.
+description: Obtenga información sobre la compatibilidad de Adobe Experience Manager as a Cloud Service Foundation con las distintas normas de protección de datos y privacidad de datos. AEM Este artículo incluye el Reglamento General de Protección de Datos (RGPD) de la UE, la Ley de Privacidad del Consumidor de California y cómo cumplirlos al implementar un nuevo proyecto as a Cloud Service de la.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 97%
+source-wordcount: '503'
+ht-degree: 55%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Para obtener más información acerca de la respuesta de Adobe a los problemas de privacidad y lo que esto supone para usted como cliente de Adobe, consulte el [Centro de privacidad de Adobe](https://www.adobe.com/es/privacy.html).
+>Para obtener más información sobre la respuesta de Adobe a los problemas de privacidad y lo que significa para usted como cliente de Adobe, consulte [Centro de privacidad de Adobe](https://www.adobe.com/es/privacy.html).
 
 ## Soporte para la protección y privacidad de datos de AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
-En el nivel de AEM Foundation, los datos personales almacenados se mantienen en el perfil del usuario. Por lo tanto, la información de este artículo aborda principalmente de cómo acceder y eliminar perfiles de usuario, para tratar las solicitudes de acceso y eliminación respectivamente.
+En el nivel de AEM Foundation, los datos personales almacenados se mantienen en el perfil del usuario. Por lo tanto, la información de este artículo aborda principalmente de cómo acceder y eliminar perfiles de usuario, de modo que puede tratar las solicitudes de acceso y eliminación, respectivamente.
 
 ## Acceso a un perfil de usuario {#accessing-a-user-profile}
 
@@ -79,15 +79,15 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Desactivación de un usuario {#disable-user}
 
 1. Abra la consola Administración de usuarios y busque el usuario en cuestión, tal como se ha descrito anteriormente.
-2. Pase el ratón sobre el usuario y haga clic en el icono de selección. El perfil cambiará a gris para indicar que está seleccionado.
+2. Pase el ratón sobre el usuario y haga clic en el icono de selección. El perfil se vuelve gris para indicar que está seleccionado.
 
-3. Pulse el botón **Desactivar** en el menú superior para desactivar el usuario:
+3. En el menú superior, haga clic en **Deshabilitar** para deshabilitar (desactivar) al usuario:
 
    ![desactivar cuenta](assets/dpp-foundation-03.png)
 
 4. Finalmente, confirme la acción.
 
-   La interfaz de usuario indicará que la cuenta de usuario se ha desactivado atenuando y añadiendo un candado a la tarjeta del perfil:
+   La interfaz de usuario indica que la cuenta de usuario se ha desactivado atenuando y añadiendo un candado a la tarjeta de perfil:
 
    ![cuenta deshabilitada](assets/dpp-foundation-04.png)
 
@@ -95,11 +95,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->Para AEM as a Cloud Service no hay ningún procedimiento manual disponible en la IU para la eliminación de un perfil de usuario, ya que CRXDE no es accesible.
+>AEM Por as a Cloud Service, no hay ningún procedimiento manual disponible en la interfaz de usuario para la eliminación de un perfil de usuario, ya que CRXDE no es accesible.
 
 ### API HTTP {#http-api-1}
 
-Los siguientes procedimientos utilizan la herramienta de línea de comandos `curl` para ilustrar cómo deshabilitar al usuario con la **[!UICONTROL captura]** `userId` y eliminación de sus perfiles disponibles en la ubicación predeterminada.
+Los siguientes procedimientos utilizan el `curl` herramienta de línea de comandos para ilustrar cómo deshabilitar al usuario con la **[!UICONTROL escrutinio]** `userId` y elimine los perfiles del usuario disponibles en la ubicación predeterminada.
 
 **Descubrimiento del inicio del usuario:**
 

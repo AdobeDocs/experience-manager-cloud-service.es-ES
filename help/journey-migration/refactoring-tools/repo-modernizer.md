@@ -2,9 +2,9 @@
 title: Modernizador de repositorio
 description: Modernizador de repositorio
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '303'
 ht-degree: 18%
 
 ---
@@ -32,7 +32,7 @@ El Modernizador de repositorio crea una estructura de proyecto de AEM Cloud Serv
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* A través de Adobe Developer CLI : Se recomienda utilizar el Modernizador de repositorio mediante `aio-cli-plugin-aem-cloud-service-migration` AEM (complemento de refactorización de código as a Cloud Service para la CLI de Adobe Developer).
+* A través de CLI de Adobe I/O : Se recomienda utilizar el Modernizador de repositorio mediante `aio-cli-plugin-aem-cloud-service-migration` AEM (complemento de refactorización de código as a Cloud Service para la CLI de Adobe I/O).
 
   Consulte **[Recurso de Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** para que pueda aprender a instalar y utilizar el complemento.
 

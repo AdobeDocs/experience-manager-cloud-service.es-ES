@@ -2,10 +2,10 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para su implementación en el Cloud Service de Adobe Experience Manager.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '2927'
-ht-degree: 12%
+source-wordcount: '2918'
+ht-degree: 4%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 12%
 >
 >Familiarícese con las [AEM Uso del tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), y el [Complemento Maven de contenido de FileVault](/help/implementing/developing/tools/maven-plugin.md) ya que este artículo se basa en estos conocimientos y conceptos.
 
-Este artículo describe los cambios necesarios para que los proyectos de Adobe Experience Manager AEM Maven sean compatibles en términos as a Cloud Service, asegurándose de que respetan la división del contenido mutable e inmutable. Las dependencias se establecen para crear implementaciones determinísticas y no conflictivas, y que se empaquetan en una estructura implementable.
+Este artículo describe los cambios necesarios para que los proyectos de Adobe Experience Manager AEM Maven sean compatibles en términos as a Cloud Service, asegurándose de que respetan la división del contenido mutable e inmutable. Además, las dependencias se establecen para crear implementaciones determinísticas y no conflictivas, y se empaquetan en una estructura implementable.
 
-AEM AEM Las implementaciones de aplicaciones de la aplicación deben estar compuestas por un solo paquete de la. A su vez, este paquete debe contener subpaquetes que incluyan todo lo necesario para que la aplicación funcione, incluido el código, la configuración y cualquier contenido de línea de base de apoyo.
+AEM AEM Las implementaciones de aplicaciones de la aplicación deben estar compuestas por un solo paquete de la aplicación A su vez, este paquete debe contener subpaquetes que incluyan todo lo necesario para que la aplicación funcione, incluido el código, la configuración y cualquier contenido de línea de base de soporte.
 
 AEM La requiere una separación de **content** y **código**, lo que significa un paquete de contenido único **no puede** implementar en **ambos** `/apps` y áreas de tiempo de ejecución (por ejemplo, `/content`, `/conf`, `/home`, o cualquier cosa que no `/apps`) del repositorio. En su lugar, la aplicación debe separar el código y el contenido en paquetes discretos para su implementación en AEM.
 
@@ -29,9 +29,9 @@ La estructura del paquete descrita en este documento es compatible **tanto** con
 
 ## Áreas mutables e inmutables del repositorio {#mutable-vs-immutable}
 
-`/apps` y `/libs`**se consideran áreas inmutables de AEM, ya que no se pueden cambiar (crear, actualizar, eliminar) después de iniciarse AEM (es decir, durante la ejecución).** Cualquier intento de cambiar un área inmutable durante la ejecución fallará.
+El `/apps` y `/libs` AEM se consideran las áreas de la **inmutable** AEM porque no se pueden cambiar (crear, actualizar, eliminar) después de iniciarse el inicio de la (es decir, durante la ejecución). Cualquier intento de cambiar un área inmutable durante la ejecución falla.
 
-Todo lo demás en el repositorio, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. son todos **mutable** , lo que significa que se pueden cambiar durante la ejecución.
+Todo lo demás en el repositorio, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc., son todos **mutable** , lo que significa que se pueden cambiar durante la ejecución.
 
 >[!WARNING]
 >
@@ -39,13 +39,13 @@ Todo lo demás en el repositorio, `/content`, `/conf`, `/var`, `/etc`, `/oak:ind
 
 ### Índices Oak {#oak-indexes}
 
-Índices Oak (`/oak:index`AEM ) se gestionan específicamente mediante el proceso de implementación as a Cloud Service de la. Esto se debe a que Cloud Manager debe esperar hasta que se implemente cualquier nuevo índice y volver a indexarlo por completo antes de cambiar a la nueva imagen de código.
+Índices Oak (`/oak:index`AEM ) se gestionan mediante el proceso de implementación as a Cloud Service de la. El motivo es que Cloud Manager debe esperar hasta que se implemente cualquier nuevo índice y se vuelva a indexar completamente antes de cambiar a la nueva imagen de código.
 
 Por este motivo, aunque los índices Oak son mutables en tiempo de ejecución, deben implementarse como código para que se puedan instalar antes de instalar cualquier paquete mutable. Por lo tanto `/oak:index` Las configuraciones de forman parte del paquete de código y no del paquete de contenido [como se describe a continuación](#recommended-package-structure).
 
 >[!TIP]
 >
->AEM Para obtener más información acerca de la indexación en as a Cloud Service, consulte el documento [Búsqueda de contenido e indexación](/help/operations/indexing.md).
+>AEM Para obtener más información sobre la indexación en el as a Cloud Service, consulte [Búsqueda de contenido e indexación](/help/operations/indexing.md).
 
 ## Estructura del paquete recomendado {#recommended-package-structure}
 
@@ -60,7 +60,7 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
 + El archivo Jar del paquete OSGi se genera y se incrusta directamente en todo el proyecto.
 
 + El `ui.apps` contiene todo el código que se va a implementar y solo se implementa en `/apps`. Elementos comunes del `ui.apps` Los paquetes incluyen, entre otros, lo siguiente:
-   + [Definiciones de componentes y HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es) scripts
+   + [Definiciones de componentes y HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) scripts
       + `/apps/my-app/components`
    + JavaScript y CSS (mediante [Bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
@@ -74,7 +74,7 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
 
 >[!NOTE]
 >
->Se debe implementar el mismo código en todos los entornos. Este código es necesario para garantizar que las validaciones de nivel de confianza en el entorno de ensayo también estén en producción. Para obtener más información, consulte la sección sobre [Modos de ejecución](/help/implementing/deploying/overview.md#runmodes).
+>Se debe implementar el mismo código en todos los entornos. Este código garantiza un nivel de confianza que las validaciones en el entorno de ensayo también están en producción. Para obtener más información, consulte la sección sobre [Modos de ejecución](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Paquetes de contenido
@@ -82,20 +82,20 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
 + El `ui.content` contiene todo el contenido y la configuración. El paquete de contenido contiene todas las definiciones de nodos que no están en la `ui.apps` o `ui.config` paquetes, o en otras palabras, cualquier cosa que no esté en `/apps` o `/oak:index`. Elementos comunes del `ui.content` Los paquetes incluyen, entre otros, lo siguiente:
    + Configuraciones según el contexto
       + `/conf`
-   + Estructuras de contenido complejas y requeridas (por ejemplo, Generación de contenido que se basa y extiende más allá de las estructuras de contenido de línea de base definidas en el inicio del repositorio).
+   + Estructuras de contenido complejas y requeridas (es decir, la creación de contenido que se basa y extiende más allá de las estructuras de contenido de línea de base definidas en el inicio del repositorio).
       + `/content`, `/content/dam`, etc.
    + taxonomías de etiquetado reguladas
       + `/content/cq:tags`
-   + Nodos etc. heredados (lo ideal es migrarlos a ubicaciones que no sean o que no sean )
+   + Nodos etc. heredados (lo ideal sería migrar estos nodos a ubicaciones que no sean o que no sean )
       + `/etc`
 
 ### Paquetes de contenedor
 
-+ El `all` es un paquete de contenedor que SOLAMENTE incluye artefactos implementables, el archivo Jar del paquete OSGI, `ui.apps`, `ui.config` y `ui.content` paquetes como incrustaciones. El `all` el paquete no debe tener **cualquier contenido o código** por sí solo, sino que delega toda la implementación en el repositorio a sus subpaquetes o archivos Jar del paquete OSGi.
++ El `all` es un paquete de contenedor que SOLAMENTE incluye artefactos implementables, el archivo Jar del paquete OSGI, `ui.apps`, `ui.config`, y `ui.content` paquetes como incrustaciones. El `all` el paquete no debe tener **cualquier contenido o código** por sí solo, sino que delega toda la implementación en el repositorio a sus subpaquetes o archivos Jar del paquete OSGi.
 
-  Los paquetes ahora se incluyen usando Maven [Configuración incrustada del complemento Maven del paquete FileVault](#embeddeds), en lugar de `<subPackages>` configuración.
+  Los paquetes ahora se incluyen usando Maven [Configuración integrada del complemento Maven del paquete FileVault](#embeddeds), en lugar de `<subPackages>` configuración.
 
-  Para implementaciones de Experience Manager complejas, puede ser deseable crear varias `ui.apps`, `ui.config` y `ui.content` AEM proyectos/paquetes que representan sitios o inquilinos específicos en el área de trabajo de la. Si esto sucede, asegúrese de que se respeta la división entre contenido mutable e inmutable, y de que los paquetes de contenido requeridos y los archivos Jar del paquete OSGi están incrustados como subpaquetes en el `all` paquete de contenido de contenedor.
+  Para implementaciones de Experience Manager complejas, puede ser deseable crear varias `ui.apps`, `ui.config`, y `ui.content` AEM proyectos/paquetes que representan sitios o inquilinos específicos en el área de trabajo de la. Si se realiza este enfoque, asegúrese de que se respeta la división entre contenido mutable e inmutable, y de que los paquetes de contenido requeridos y los archivos Jar del paquete OSGi están incrustados como subpaquetes en el `all` paquete de contenido de contenedor.
 
   Por ejemplo, una estructura de paquete de contenido de implementación compleja podría tener este aspecto:
 
@@ -116,7 +116,7 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
       + `/apps/my-app/osgiconfig`
    + AEM Carpeta de configuración de OSGi común que contiene configuraciones de OSGi predeterminadas que se aplican a todos los destinos de implementación as a Cloud Service de Target
       + `/apps/my-app/osgiconfig/config`
-   + AEM Ejecute carpetas de configuración de OSGi específicas del modo que contengan las configuraciones de OSGi predeterminadas que se aplican a todos los destinos de implementación as a Cloud Service de OSGi de destino.
+   + AEM Ejecute carpetas de configuración de OSGi específicas del modo que contengan las configuraciones de OSGi predeterminadas que se aplican a todos los destinos de implementación as a Cloud Service de OSGi de destino
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Scripts de configuración OSGi de inicio de repo
       + [Inicio de repo](#repo-init) AEM es la forma recomendada de implementar contenido (mutable) que lógicamente forma parte de la aplicación de la. Las configuraciones de OSGi de inicio de repo deben colocarse en la ubicación adecuada `config.<runmode>` como se ha descrito anteriormente, y se utilizará para definir lo siguiente:
@@ -128,9 +128,9 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
 
 ### Paquetes de aplicaciones adicionales{#extra-application-packages}
 
-AEM AEM Si la implementación utiliza otros proyectos de, que a su vez están compuestos por su propio código y paquetes de contenido, los paquetes de contenedor deben incrustarse en el código del proyecto `all` paquete.
+AEM AEM Si la implementación utiliza otros proyectos de, que a su vez están compuestos por su propio código y paquetes de contenido, los paquetes de contenedores deben incrustarse en los paquetes de contenido del proyecto `all` paquete.
 
-AEM AEM Por ejemplo, un proyecto de que incluya aplicaciones de 2 proveedores puede tener un aspecto similar al siguiente:
+AEM AEM Por ejemplo, un proyecto de que incluya dos aplicaciones de proveedor puede tener un aspecto similar al siguiente:
 
 + `all` paquete de contenido incrusta los siguientes paquetes para crear un único artefacto de implementación
    + `core` AEM Jar de paquete OSGi requerido por la aplicación de
@@ -157,7 +157,7 @@ Para obtener más información, consulte [Apache Jackrabbit FileVault: documenta
 
 ## Marcado de paquetes para su implementación mediante Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-De forma predeterminada, Adobe Cloud Manager obtiene todos los paquetes producidos por la compilación de Maven; sin embargo, dado que el paquete de contenedor (`all`) es el único artefacto de implementación que contiene todos los paquetes de contenido y código, debemos asegurarnos de que **solo** se implementa el paquete de contenedor (`all`). Para garantizar esto, otros paquetes que genera la compilación de Maven deben marcarse con la configuración del complemento Maven del paquete de contenido de FileVault `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
+De forma predeterminada, Adobe Cloud Manager obtiene todos los paquetes producidos por la compilación de Maven. Sin embargo, debido a que el contenedor (`all`) es el único artefacto de implementación que contiene todos los paquetes de contenido y código. Debe asegurarse de que **solamente** el contenedor (`all`) se haya implementado el paquete. Para garantizar esto, otros paquetes que genera la compilación de Maven deben marcarse con la configuración del complemento Maven del paquete de contenido de FileVault `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
 
 >[!TIP]
 >
@@ -165,9 +165,9 @@ De forma predeterminada, Adobe Cloud Manager obtiene todos los paquetes producid
 
 ## Inicio de repo{#repo-init}
 
-Repo Init proporciona instrucciones o scripts que definen estructuras JCR, que van desde estructuras de nodos comunes como árboles de carpetas, hasta usuarios, usuarios de servicio, grupos y definición de ACL.
+Repo Init proporciona instrucciones, o scripts, que definen estructuras JCR, que van desde estructuras de nodos comunes como árboles de carpetas, hasta usuarios, usuarios de servicio, grupos y definición de ACL.
 
-Las ventajas clave de Repo Init son que tienen permisos implícitos para realizar todas las acciones definidas por sus scripts y se invocan al principio del ciclo de vida de la implementación, lo que garantiza que todas las estructuras JCR necesarias existan antes de que se ejecute el código.
+Las ventajas clave de Repo Init son que tienen permisos implícitos para realizar todas las acciones definidas por sus scripts. Además, estos scripts se invocan al principio del ciclo vital de la implementación, lo que garantiza que todas las estructuras JCR necesarias existan antes de que se ejecute el código.
 
 Mientras que los scripts de inicio de repo se activan en la variable `ui.config` proyecto como secuencias de comandos, se pueden y se deben utilizar para definir las siguientes estructuras mutables:
 
@@ -177,15 +177,15 @@ Mientras que los scripts de inicio de repo se activan en la variable `ui.config`
 + Grupos
 + ACL
 
-Los scripts de inicio de repo se almacenan como `scripts` entradas de `RepositoryInitializer` Las configuraciones de fábrica de OSGi, y por lo tanto, se pueden dirigir implícitamente al modo de ejecución, lo que permite diferencias entre los scripts de inicio de repositorios de AEM Author y AEM Publish Services, o incluso entre entornos (Desarrollo, Ensayo y Producción).
+Los scripts de inicio de repo se almacenan como `scripts` entradas de `RepositoryInitializer` Configuraciones de fábrica de OSGi. Como tal, se pueden dirigir implícitamente al modo de ejecución, lo que permite diferencias entre los scripts de inicio de repositorios de AEM Author y AEM Publish Services, o incluso entre entornos (Desarrollo, Ensayo y Producción).
 
 Las configuraciones OSGi de inicio de repo se escriben mejor en la variable [`.config` Formato de configuración OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) ya que admiten varias líneas, lo que supone una excepción a las prácticas recomendadas de uso de [`.cfg.json` para definir las configuraciones de OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 
-Tenga en cuenta que al definir Usuarios y Grupos, solo los grupos se consideran parte de la aplicación y deben definirse aquí como parte integral de su función. AEM AEM AEM Los usuarios y grupos de organización deben definirse en tiempo de ejecución en; por ejemplo, si un flujo de trabajo personalizado asigna trabajo a un grupo con nombre, ese grupo debe definirse en mediante Repo Init en la aplicación de la; sin embargo, si la agrupación es meramente organizativa, como &quot;Equipo de Wendy&quot; y &quot;Equipo de Sean&quot;, estas son las mejores definidas y administradas en tiempo de ejecución en.
+Al definir Usuarios y Grupos, solo los grupos se consideran parte de la aplicación y parte integral de su función. AEM Aún puede definir Usuarios y grupos de organización durante la ejecución de la aplicación de en el tiempo de ejecución de la. AEM Por ejemplo, si un flujo de trabajo personalizado asigna trabajo a un grupo con nombre, defina ese grupo mediante Repo Init en la aplicación de la. AEM Sin embargo, si la Agrupación es meramente organizativa, como &quot;Equipo de Wendy&quot; y &quot;Equipo de Sean&quot;, estos grupos se definen y administran mejor durante la ejecución en el tiempo de ejecución de la.
 
 >[!TIP]
 >
->Scripts de inicio de repo *debe* se definirá en la línea `scripts` y el campo `references` La configuración de no funcionará.
+>Scripts de inicio de repo *debe* se definirá en la línea `scripts` o el campo `references` La configuración de no funciona.
 
 El vocabulario completo para los scripts de inicio de repo está disponible en la [Documentación de inicio del repositorio de Apache Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language).
 
@@ -197,11 +197,11 @@ El vocabulario completo para los scripts de inicio de repo está disponible en l
 
 Los paquetes de código requieren configurar la configuración del complemento FileVault Maven para hacer referencia a un `<repositoryStructurePackage>` que exige la corrección de las dependencias estructurales (para garantizar que un paquete de código no se instale sobre otro). Puede [cree su propio paquete de estructura de repositorio para el proyecto](repository-structure-package.md).
 
-Esto **solo es necesario** para los paquetes de código, es decir, cualquier paquete marcado con `<packageType>application</packageType>`.
+**Solo obligatorio** para paquetes de código, es decir, cualquier paquete marcado con `<packageType>application</packageType>`.
 
 Para obtener información sobre cómo crear un paquete de estructura de repositorio para la aplicación, consulte [Desarrollo de un paquete de estructura de repositorio](repository-structure-package.md).
 
-Observe que los paquetes de contenido (`<packageType>content</packageType>`) **no** requiere este paquete de estructura de repositorio.
+Paquetes de contenido (`<packageType>content</packageType>`) **no** requiere este paquete de estructura de repositorio.
 
 >[!TIP]
 >
@@ -209,7 +209,7 @@ Observe que los paquetes de contenido (`<packageType>content</packageType>`) **n
 
 ## Incrustación de subpaquetes en el paquete de contenedor{#embeddeds}
 
-AEM AEM Los paquetes de contenido o código se colocan en una carpeta especial &quot;side-car&quot; y se pueden segmentar para su instalación en los programas de autor, publicación o ambos, mediante el complemento de Maven de FileVault `<embeddeds>` configuración. Tenga en cuenta que la variable `<subPackages>` no se debe utilizar la configuración de.
+AEM AEM Los paquetes de contenido o código se colocan en una carpeta especial &quot;side-car&quot; y se pueden segmentar para su instalación en los programas de autor, publicación o ambos, mediante el complemento de Maven de FileVault `<embeddeds>` configuración. No use el `<subPackages>` configuración.
 
 Los casos de uso comunes incluyen:
 
@@ -219,21 +219,21 @@ Los casos de uso comunes incluyen:
 
 ![Incrustación de paquetes](assets/embeddeds.png)
 
-AEM AEM Para segmentar a los autores de la, a los usuarios que publican el paquete, o a ambos, el paquete está incrustado en la `all` paquete de contenedor en una ubicación de carpeta especial, con el siguiente formato:
+AEM AEM Para segmentar a los autores de la, las publicaciones o ambas, el paquete está incrustado en `all` paquete de contenedor en una ubicación de carpeta especial, con el siguiente formato:
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
 Desglose de esta estructura de carpetas:
 
 + La carpeta de primer nivel **debe ser** `/apps`.
-+ La carpeta de segundo nivel representa la aplicación con `-packages` se ha corregido la publicación en el nombre de la carpeta. A menudo, solo hay una carpeta de segundo nivel en la que están incrustados todos los subpaquetes, pero se puede crear cualquier número de carpetas de segundo nivel para representar mejor la estructura lógica de la aplicación:
++ La carpeta de segundo nivel representa la aplicación con `-packages` se ha corregido la publicación en el nombre de la carpeta. A menudo, solo hay una carpeta de segundo nivel en la que están incrustados todos los subpaquetes, aunque se puede crear cualquier número de carpetas de segundo nivel para representar mejor la estructura lógica de la aplicación:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
 
   >[!WARNING]
   >
-  >De forma predeterminada, las carpetas incrustadas de subpaquetes reciben el nombre del sufijo de `-packages`. Esto garantiza que el código de implementación y los paquetes de contenido **no se implementen** en las carpetas de destino de ningún subpaquete `/apps/<app-name>/...` que tenga como resultado un comportamiento de instalación destructivo y cíclico.
+  >De forma predeterminada, las carpetas incrustadas de subpaquetes reciben el nombre del sufijo de `-packages`. Esta denominación garantiza que el código de implementación y los paquetes de contenido sean **no** implementación de las carpetas de destino de cualquier subpaquete `/apps/<app-name>/...`  que da como resultado un comportamiento de instalación destructivo y cíclico.
 
 + La carpeta de tercer nivel debe ser
   `application`, `content` o `container`
@@ -242,9 +242,9 @@ Desglose de esta estructura de carpetas:
    + El `container` la carpeta contiene cualquier [paquetes de aplicaciones adicionales](#extra-application-packages) AEM que puede incluir la aplicación de la.
 Este nombre de carpeta corresponde a la variable [tipos de paquetes](#package-types) de los paquetes que contiene.
 + La carpeta de cuarto nivel contiene los subpaquetes y debe ser uno de los siguientes:
-   + `install` para realizar la instalación en **AEM Author y AEM Publish**
-   + `install.author` para instalar **solo** en AEM Author
-   + `install.publish` hasta **solamente** AEM instalar en la publicación de la Tenga en cuenta que solo `install.author` y `install.publish` son destinos admitidos. Otros modos de ejecución **no son** compatibles.
+   + `install` para instalar en **ambos** AEM AEM Publicación de autor y de datos
+   + `install.author` para instalar **solamente** AEM en el autor del
+   + `install.publish` para instalar **solamente** AEM Solo en publicación de `install.author` y `install.publish` son destinos admitidos. Otros modos de ejecución **no son** compatibles.
 
 AEM Por ejemplo, una implementación que contenga paquetes específicos de autor y publicación de la aplicación puede tener el siguiente aspecto:
 
@@ -260,7 +260,7 @@ AEM Por ejemplo, una implementación que contenga paquetes específicos de autor
 
 ### Definición del filtro del paquete del contenedor {#container-package-filter-definition}
 
-Debido a la incrustación del código y los subpaquetes de contenido en el paquete de contenedor, las rutas de destino incrustadas deben agregarse al proyecto de contenedor `filter.xml` para asegurarse de que los paquetes incrustados se incluyen en el paquete de contenedor cuando se crean.
+Debido a la incrustación de los subpaquetes de código y contenido en el paquete contenedor, las rutas de destino incrustadas deben agregarse al proyecto contenedor `filter.xml`. Al hacerlo, se garantiza que los paquetes incrustados se incluyan en el paquete contenedor cuando se creen.
 
 Simplemente añada el `<filter root="/apps/<my-app>-packages"/>` entradas para cualquier carpeta de segundo nivel que contenga subpaquetes para implementar.
 
@@ -270,11 +270,11 @@ Simplemente añada el `<filter root="/apps/<my-app>-packages"/>` entradas para c
 
 ## Incrustación de paquetes de terceros {#embedding-3rd-party-packages}
 
-Todos los paquetes deben estar disponibles a través de la [Repositorio de artefactos Maven públicos de Adobe](https://repo1.maven.org/maven2/com/adobe/) o un repositorio de artefactos de terceros de Maven accesible, público y referenciable.
+Todos los paquetes deben estar disponibles a través de la [Repositorio de artefactos Maven públicos de Adobe](https://repo1.maven.org/maven2/com/adobe/) o un repositorio de artefactos Maven público y referenciable de terceros.
 
-Si los paquetes de terceros están en el repositorio **público de artefactos Maven de Adobe**, no se necesita ninguna configuración adicional para que Adobe Cloud Manager resuelva los artefactos.
+Si los paquetes de terceros están en **Repositorio de artefactos Maven públicos de Adobe** Sin embargo, no se necesita ninguna configuración adicional para que Adobe Cloud Manager resuelva los artefactos.
 
-Si los paquetes de terceros están en un **repositorio público de artefactos de terceros de Maven**, este repositorio debe estar registrado en el `pom.xml` del proyecto e incrustado según el método [descrito anteriormente](#embeddeds).
+Si los paquetes de terceros están en un **repositorio de artefactos Maven de terceros públicos**, este repositorio debe estar registrado en el `pom.xml` e incrustado siguiendo el método [descrito anteriormente](#embeddeds).
 
 Los conectores/aplicaciones de terceros deben incrustarse con su `all` como contenedor en el contenedor de su proyecto (`all`) paquete.
 
@@ -290,7 +290,7 @@ Para garantizar la correcta instalación de los paquetes, se recomienda establec
 
 La regla general son los paquetes que contienen contenido mutable (`ui.content`) debe depender del código inmutable (`ui.apps`) que admite la renderización y el uso del contenido mutable.
 
-Una excepción notable a esta regla general es si el paquete de código inmutable (`ui.apps` o cualquier otro), __solamente__ contiene paquetes OSGi. AEM Si es así, ningún paquete de debe declarar una dependencia en él. Esto se debe a paquetes de código inmutables __solamente__ AEM Los paquetes OSGi que los contienen no están registrados con los paquetes de [Administrador de paquetes,](/help/implementing/developing/tools/package-manager.md) AEM y, por lo tanto, cualquier paquete de que dependa de él tendrá una dependencia no satisfecha y no se podrá instalar.
+Una excepción notable a esta regla general es si el paquete de código inmutable (`ui.apps` o cualquier otro), __solamente__ contiene paquetes OSGi. AEM Si es así, ningún paquete de debe declarar una dependencia en él. El motivo es que los paquetes de código inmutable que __solamente__ AEM contiene paquetes OSGi, no están registrados con los paquetes OSGi [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md). AEM Por lo tanto, cualquier paquete de que dependa de él tiene una dependencia no satisfecha y no se puede instalar.
 
 >[!TIP]
 >
@@ -327,7 +327,7 @@ Los siguientes son Maven `pom.xml` fragmentos de configuración que se pueden a�
 
 ### Tipos de paquetes {#xml-package-types}
 
-Los paquetes de código y contenido, que se implementan como subpaquetes, deben declarar un tipo de paquete de **aplicación** o **contenido**, según lo que contengan.
+Los paquetes de código y contenido, que se implementan como subpaquetes, deben declarar un tipo de paquete de **aplicación** o **content**, dependiendo de lo que contengan.
 
 #### Tipos de paquetes de contenedores {#container-package-types}
 
@@ -411,9 +411,9 @@ En todos los proyectos que generan un paquete, **excepto** en el proyecto de con
 
 ### Inicio de repo{#snippet-repo-init}
 
-Los scripts de inicio de repo que contienen los scripts de inicio de repo se definen en `RepositoryInitializer` Configuración de fábrica de OSGi a través de `scripts` propiedad. Tenga en cuenta que, como estos scripts se definen en configuraciones de OSGi, se pueden definir fácilmente mediante el modo de ejecución `../config.<runmode>` semántica de carpetas.
+Los scripts de inicio de repo que contienen los scripts de inicio de repo se definen en `RepositoryInitializer` Configuración de fábrica de OSGi a través de `scripts` propiedad. Como estos scripts se definen en configuraciones de OSGi, se pueden definir fácilmente mediante el modo de ejecución `../config.<runmode>` semántica de carpetas.
 
-Tenga en cuenta que, como los scripts suelen ser declaraciones multilínea, es más fácil definirlos en la variable `.config` que el basado en JSON `.cfg.json` formato.
+Dado que los scripts suelen ser declaraciones multilínea, es más fácil definirlos en la variable `.config` que el basado en JSON `.cfg.json` formato.
 
 `/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
 
@@ -459,7 +459,7 @@ En el `ui.apps/pom.xml` y cualquier otro `pom.xml` que declara un paquete de có
 
 ### Incrustación de subpaquetes en el paquete de contenedor {#xml-embeddeds}
 
-En el `all/pom.xml`, agregue lo siguiente `<embeddeds>` directivas al `filevault-package-maven-plugin` declaración del complemento. Recuerde, **no** use el `<subPackages>` , ya que esto incluirá los subpaquetes en `/etc/packages` en lugar de `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
+En el `all/pom.xml`, agregue lo siguiente `<embeddeds>` directivas al `filevault-package-maven-plugin` declaración del complemento. Recuerde, **no** use el `<subPackages>` configuración. El motivo es que incluye los subpaquetes en `/etc/packages` en lugar de `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
 
 ```xml
 ...
@@ -537,7 +537,7 @@ En el `all/pom.xml`, agregue lo siguiente `<embeddeds>` directivas al `filevault
 
 ### Definición del filtro del paquete del contenedor {#xml-container-package-filters}
 
-En el `all` del proyecto `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`), **incluya** todas `-packages` las carpetas que contengan subpaquetes para implementar:
+En el `all` del proyecto `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`), **include** cualquiera `-packages` carpetas que contienen subpaquetes para implementar:
 
 ```xml
 <filter root="/apps/my-app-packages"/>
@@ -551,7 +551,7 @@ Si hay varios `/apps/*-packages` se utilizan en los destinos incrustados, entonc
 >
 >Añadir más repositorios Maven puede ampliar los tiempos de compilación de Maven, ya que se comprueban las dependencias de otros repositorios Maven.
 
-En el del proyecto del reactor `pom.xml`, agregue cualquier directiva de repositorio Maven pública de terceros que sea necesaria. El completo `<repository>` La configuración de debe estar disponible en el proveedor de repositorios de terceros.
+En el del proyecto del reactor `pom.xml`, agregue cualquier directiva pública de repositorio de Maven necesaria. El completo `<repository>` La configuración de debe estar disponible en el proveedor de repositorios de terceros.
 
 ```xml
 <repositories>
@@ -600,7 +600,7 @@ En el `ui.content/pom.xml`, agregue lo siguiente `<dependencies>` directivas al 
 
 ### Limpiar la carpeta de destino del proyecto de contenedor {#xml-clean-container-package}
 
-En el `all/pom.xml` añada el `maven-clean-plugin` que limpiará el directorio de destino antes de que se genere un Maven.
+En el `all/pom.xml`, añada el `maven-clean-plugin` que limpia el directorio de destino antes de una compilación de Maven.
 
 ```xml
 <plugins>
