@@ -7,9 +7,9 @@ keywords: Agregue un controlador de error personalizado, agregue un controlador 
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1981'
 ht-degree: 8%
 
 ---
@@ -119,9 +119,7 @@ Donde:
 
 Algunas de las opciones para mostrar las respuestas de error son las siguientes:
 
-+++
-
-+++  Basado en el campo Nombre del formulario adaptable
++++  Basado en la propiedad fieldName del formulario adaptable
 
 
 * **`Header:`** `content-type:application/problem+json`
@@ -148,7 +146,7 @@ Algunas de las opciones para mostrar las respuestas de error son las siguientes:
 +++
 
 
-+++ Basado en el formulario adaptable dataRef
++++ Basado en la propiedad dataRef del formulario adaptable
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
@@ -171,8 +169,8 @@ Algunas de las opciones para mostrar las respuestas de error son las siguientes:
 
 Puede ver el valor de dataRef en la **[!UICONTROL Propiedades]** de un componente del formulario.
 
-
 +++
+
 
 ## Añadir un controlador de error mediante el Editor de reglas {#add-error-handler-using-rule-editor}
 
