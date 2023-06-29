@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 6822011a46a1c12c0057e828d976c735ec878eea
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1631'
 ht-degree: 4%
 
 ---
@@ -27,6 +27,34 @@ ht-degree: 4%
 * Compartir usando [[!DNL Adobe Asset Link]](https://www.adobe.com/es/creativecloud/business/enterprise/adobe-asset-link.html).
 * Compartir usando [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
+## Requisitos previos {#prerequisites}
+
+Necesita privilegios de administrador para [configure las opciones para compartir recursos como vínculo](#config-link-share-settings).
+
+## Configuración del uso compartido de vínculos {#config-link-share-settings}
+
+[!DNL Experience Manager Assets] permite establecer la configuración predeterminada del recurso compartido de vínculos.
+
+1. Haga clic en [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configuración de recursos]** > **[!UICONTROL Vínculos compartidos]**.
+1. Configuración inicial:
+
+   * **Incluir originales:**
+
+      * Seleccionar `Select Include Originals` para seleccionar `Include Originals` opción predeterminada en el cuadro de diálogo compartir vínculo.
+      * Especifique el comportamiento seleccionando la opción adecuada para realizar la `Include Originals` opción editable, de solo lectura u oculta.
+   * **Incluir representaciones:**
+      * Seleccionar `Select Include Renditions` para seleccionar la opción `Include Renditions` opción predeterminada en el cuadro de diálogo compartir vínculo.
+      * Seleccione el comportamiento seleccionando la opción adecuada para realizar la `Include Renditions` opción editable, de solo lectura u oculta.
+
+1. Especifique el periodo de validez predeterminado para el vínculo en la `Validity Period` en el campo `Expiration date` sección.
+
+1. **[!UICONTROL Vínculos compartidos]** en la barra de acciones:
+   * Todos los usuarios con `jcr:modifyAccessControl` Los permisos de pueden ver las [!UICONTROL Vínculos compartidos] opción. De forma predeterminada, está visible para todos los administradores. El [!UICONTROL Vínculos compartidos] es visible para todos de forma predeterminada. Puede configurar para que muestre esta opción solo para los grupos definidos o también puede denegar esta opción a grupos específicos. Seleccionar `Allow only for groups` si desea permitir que grupos específicos vean la variable `Share Link` opción. Seleccionar `Deny from groups` para denegar la `Share Link` opción de grupos específicos. Una vez seleccionadas cualquiera de estas opciones, especifique los nombres de grupo mediante `Select Groups` para añadir los nombres de grupo que debe permitir o denegar.
+
+Para ver las opciones relacionadas con la configuración de correo electrónico, visite [Documentación del servicio de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+
+![Configurar servicio de correo electrónico](config-email-service.png)
+
 ## Compartir recursos como un vínculo {#sharelink}
 
 Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos, especialistas en marketing y otros [!DNL Experience Manager] usuarios. La funcionalidad permite a los usuarios anónimos acceder y descargar los recursos compartidos con ellos. Al descargar recursos desde un vínculo compartido, [!DNL Experience Manager Assets] utiliza un servicio asincrónico que ofrece una descarga más rápida e ininterrumpida. Los recursos que se van a descargar se colocan en segundo plano en archivos ZIP de un tamaño de archivo manejable. Para las descargas grandes, la descarga está agrupada en varios archivos de 100 GB por tamaño de archivo.
@@ -40,14 +68,14 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 >* Necesita el permiso Editar ACL en la carpeta o el recurso que desea compartir como vínculo.
 >* [Habilitar correos electrónicos salientes](/help/implementing/developing/introduction/development-guidelines.md#sending-email) antes de compartir un vínculo con los usuarios.
 
-
 Existen dos formas de compartir los recursos mediante la funcionalidad de uso compartido de vínculos:
 
-1. Generar un vínculo compartido, [copie y comparta el vínculo del recurso](#copy-and-share-assets-link) con otros usuarios. El tiempo de caducidad predeterminado del vínculo es de un día. No se puede cambiar la hora de caducidad al compartir el vínculo copiado con otros usuarios.
+1. Generar un vínculo compartido, [copie y comparta el vínculo del recurso](#copy-and-share-assets-link) con otros usuarios.
+1. Generar un vínculo compartido y [compartir el vínculo del recurso por correo electrónico](#share-assets-link-through-email). Puede modificar los valores predeterminados, como la fecha y la hora de caducidad, y permitir la descarga de los recursos originales y sus representaciones. Puede enviar correos electrónicos a varios usuarios añadiendo sus direcciones de correo electrónico.
 
-1. Generar un vínculo compartido y [compartir el vínculo del recurso por correo electrónico](#share-assets-link-through-email). En este caso, puede modificar los valores predeterminados, como la fecha y la hora de caducidad, y permitir la descarga de los recursos originales y sus representaciones. Puede enviar correos electrónicos a varios usuarios añadiendo sus direcciones de correo electrónico.
+![Cuadro de diálogo Compartir vínculos](assets/share-link.png)
 
-![Cuadro de diálogo Compartir vínculos](assets/link-sharing-dialog.png)
+En ambos casos, puede modificar los valores predeterminados, como la fecha y la hora de caducidad, y permitir la descarga de los recursos originales y sus representaciones.
 
 ### Copiar y compartir el vínculo del recurso{#copy-and-share-asset-link}
 
@@ -56,6 +84,9 @@ Para compartir recursos como una URL pública:
 1. Iniciar sesión en [!DNL Experience Manager Assets] y vaya a **[!UICONTROL Archivos]**.
 1. Seleccione los recursos o la carpeta que contienen los recursos. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]**.
 1. El **[!UICONTROL Vínculos compartidos]** aparece un cuadro de diálogo que contiene un vínculo de recurso generado automáticamente en **[!UICONTROL Compartir vínculo]** field.
+1. Establezca la fecha de caducidad del vínculo compartido según sea necesario.
+1. En **[!UICONTROL Configuración de vínculos]**, marque o desmarque `Include Originals` o `Include Renditions` para incluir o excluir cualquiera de los dos. Es obligatorio elegir al menos una opción.
+1. Los nombres de los recursos seleccionados aparecen en la columna derecha de la [!DNL Share Link] Cuadro de diálogo.
 1. Copie el vínculo del recurso y compártalo con los usuarios.
 
 ### Compartir vínculo de recurso mediante notificación por correo electrónico {#share-assets-link-through-email}
@@ -65,7 +96,7 @@ Para compartir recursos por correo electrónico:
 1. Seleccione los recursos o la carpeta que contienen los recursos. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]**.
 1. El **[!UICONTROL Vínculos compartidos]** aparece un cuadro de diálogo que contiene un vínculo de recurso generado automáticamente en **[!UICONTROL Compartir vínculo]** field.
 
-   * En el cuadro Dirección de correo electrónico, escriba el ID de correo electrónico del usuario con el que desea compartir el vínculo. Puede compartir el vínculo con varios usuarios. Si el usuario es miembro de su organización, seleccione su ID de correo electrónico de entre las sugerencias que aparecen en la lista desplegable. Si el usuario es externo, escriba el ID de correo electrónico completo y pulse **[!UICONTROL Entrar]**; el ID de correo electrónico se añade a la lista de usuarios.
+   * En el cuadro Dirección de correo electrónico, escriba la dirección de correo electrónico del usuario con el que desea compartir el vínculo. Puede compartir el vínculo con varios usuarios. Si el usuario es miembro de su organización, seleccione su dirección de correo electrónico de entre las sugerencias que aparecen en la lista desplegable. En el campo de texto Dirección de correo electrónico, escriba la dirección de correo electrónico del usuario con el que desea compartir el vínculo y haga clic en [!UICONTROL Entrar]. Puede compartir el vínculo con varios usuarios.
 
    * En el **[!UICONTROL Asunto]** , escriba un asunto para especificar el propósito de los recursos compartidos.
    * En el **[!UICONTROL Mensaje]** , escriba un mensaje si es necesario.
@@ -88,11 +119,11 @@ Cualquier usuario que tenga acceso al vínculo de recursos compartidos puede des
 
 * Al seleccionar los recursos o la carpeta, aparece un **[!UICONTROL Descarga de cola]** opción aparece en la pantalla. Haga clic en **[!UICONTROL Descarga de cola]** para iniciar el proceso de descarga.
 
-   ![Descarga de cola](assets/queue-download.png)
+  ![Descarga de cola](assets/queue-download.png)
 
-* Mientras prepara el archivo de descarga, haga clic en el icono **[!UICONTROL Descargar bandeja de entrada]** para ver el estado de la descarga. Para descargas grandes, haga clic en **[!UICONTROL Actualizar]** para actualizar el estado.
+* Mientras se prepara el archivo de descarga, haga clic en **[!UICONTROL Descargar bandeja de entrada]** para ver el estado de la descarga. Para descargas grandes, haga clic en **[!UICONTROL Actualizar]** para actualizar el estado.
 
-   ![Descargar bandeja de entrada](assets/link-sharing-download-inbox.png)
+  ![Descargar bandeja de entrada](assets/link-sharing-download-inbox.png)
 
 * Una vez completado el procesamiento, haga clic en **[!UICONTROL Descargar]** para descargar el archivo zip.
 
@@ -202,22 +233,14 @@ Para generar la dirección URL de los recursos que desea compartir con los usuar
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
 
-
 <!--
-## Configure Day CQ mail service {#configmailservice}
-
-Before you can share assets as links, configure the email service.
-
-1. Click or tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
     * SMTP user: email server user name
     * SMTP password: email server password
-
-1. Click/tap **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -265,11 +288,11 @@ Consulte [cómo configurar [!DNL Assets] para utilizarlo con [!DNL Adobe Asset L
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
