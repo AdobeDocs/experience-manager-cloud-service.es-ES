@@ -2,10 +2,10 @@
 title: Su bandeja de entrada
 description: Administrar las tareas con la bandeja de entrada
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 70%
+source-wordcount: '905'
+ht-degree: 71%
 
 ---
 
@@ -102,7 +102,7 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
 
   ![Ajustes de vista de lista de la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  También puede delegar el calendario a otros usos y solicitar la delegación de otros usuarios y administrar las delegaciones.
+  También puede delegar el calendario a otros usuarios, solicitar la delegación de otros usuarios y administrar las delegaciones.
 
   ![Configuración de delegación de vista de lista de bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 

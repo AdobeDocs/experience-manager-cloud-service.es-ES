@@ -2,9 +2,9 @@
 title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante Fragmentos de contenido.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1715'
 ht-degree: 85%
 
 ---
@@ -213,7 +213,7 @@ Cuando se abra el editor por primera vez, verá lo siguiente:
 
 Ejemplos:
 
-* Un fragmento que solo requiere múltiples informaciones, algunas con un tipo específico. Para el contenido sin encabezado, las referencias son clave, y se aprenden más adelante en el recorrido.
+* Un fragmento que solo requiere múltiples informaciones, algunas con un tipo específico. Para el contenido sin encabezado, las referencias son clave (aprenderá sobre ellas más adelante en su recorrido).
 
   ![Editor de fragmentos de contenido: mi fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -235,7 +235,7 @@ Confirme las actualizaciones con: **Guardar** o **Guardar y cerrar**.
 
 #### De lo que (probablemente) no tiene que preocuparse {#what-you-probably-do-not-need-to-worry-about}
 
-OK, esto puede parecer una sección un poco extraña, pero después de abrir el Editor de fragmentos de contenido y comenzar a explorar, puede ver varias opciones que (probablemente) no se aplican a su recorrido sin encabezado como Autor de contenido. Así que esto es tan solo un rápido avance de lo que debe ignorar en un contexto sin encabezado.
+OK, esto podría parecer una sección un poco extraña, pero tan pronto como abra el Editor de fragmentos de contenido y empiece a explorar, podrá ver varias opciones que (probablemente) no se aplican a su recorrido sin encabezado como Autor de contenido. Así que esto es tan solo un rápido avance de lo que debe ignorar en un contexto sin encabezado.
 
 * **Modelos de fragmentos de contenido**
 

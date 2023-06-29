@@ -1,10 +1,10 @@
 ---
 title: 'Reglamentos de protección de datos y privacidad de datos: preparación para Adobe Experience Manager as a Cloud Service'
-description: Obtenga información acerca de la compatibilidad de Adobe Experience Manager as a Cloud Service con las distintas normas de protección de datos y privacidad de datos. AEM Estas regulaciones incluyen el Reglamento General de Protección de Datos (RGPD) de la UE, la Ley de Privacidad del Consumidor de California y cómo cumplirlas al implementar un nuevo proyecto as a Cloud Service de la.
+description: Obtenga información acerca de la compatibilidad de Adobe Experience Manager as a Cloud Service AEM con las distintas normas de protección de datos y privacidad de datos, y cómo cumplirlas al implementar un nuevo proyecto as a Cloud Service de. Estas regulaciones incluyen el Reglamento General de Protección de Datos (RGPD) de la UE y la Ley de Privacidad del Consumidor de California.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '734'
 ht-degree: 46%
 
 ---
@@ -19,9 +19,12 @@ ht-degree: 46%
 
 >[!NOTE]
 >
->Para obtener más información sobre la respuesta de Adobe a los problemas de privacidad y lo que esta privacidad significa para usted como cliente de Adobe, consulte [Centro de privacidad de Adobe](https://www.adobe.com/es/privacy.html).
+>Para obtener más información sobre las respuestas de Adobe a problemas de privacidad y lo que estas respuestas significan para usted como cliente de Adobe, consulte [Centro de privacidad de Adobe](https://www.adobe.com/es/privacy.html).
 
-El Adobe AEM de proporciona documentación y procedimientos (con API cuando están disponibles) para el administrador de privacidad del cliente o el administrador de la privacidad del cliente. Esta documentación ayuda a los administradores a gestionar las solicitudes de protección de datos y privacidad de datos, y ayuda a los clientes de Adobe a cumplir con estas regulaciones. Los procedimientos documentados permiten a los clientes ejecutar las solicitudes reglamentarias manualmente o llamar a las API, cuando estén disponibles, desde un portal o servicio externo.
+Para ayudar a los clientes de Adobe a cumplir con estas regulaciones, el Adobe AEM de proporciona documentación y procedimientos (con API cuando están disponibles) para los administradores de privacidad del cliente y los administradores de la administración de la privacidad del cliente, a saber:
+
+* La documentación ayuda a los administradores a gestionar las solicitudes de protección de datos y de privacidad de datos.
+* Los procedimientos documentados permiten a los clientes ejecutar las solicitudes reglamentarias manualmente o realizar llamadas de API, cuando estén disponibles, desde un portal o servicio externo.
 
 >[!CAUTION]
 >
@@ -57,7 +60,7 @@ Para Adobe Experience Manager as a Cloud Service:
 
 * Las instancias, y las aplicaciones que se ejecutan en ellas, son propiedad del cliente y las gestiona.
 
-   * Esta propiedad significa que el cliente gestiona las funciones regulatorias, incluidas las entidades del negocio y el proveedor de servicios, el controlador de datos y el procesador de datos, entre otras.
+   * La propiedad significa que el cliente gestiona de forma eficaz las funciones regulatorias, incluidas las entidades del negocio y el proveedor de servicios, el controlador de datos y el procesador de datos, entre otras.
 
    * Adobe Experience Platform Privacy Service AEM no forma parte del flujo de trabajo para la creación de informes, como se ilustra en el diagrama siguiente.
 
@@ -69,9 +72,9 @@ Para Adobe Experience Manager as a Cloud Service:
 
 * AEM no incluye ninguna herramienta predeterminada para admitir el flujo de trabajo de solicitudes de privacidad.
 
-   * Adobe AEM proporciona documentación y procedimientos para el administrador de privacidad del cliente, o para el administrador de la privacidad del cliente, o para ambos, lo que les permite ejecutar manualmente las solicitudes relacionadas con las normas de privacidad.
+   * Adobe AEM proporciona documentación y procedimientos para el administrador de privacidad, administrador de privacidad o ambos del cliente, lo que les permite ejecutar manualmente las solicitudes relacionadas con las normas de privacidad.
 
-El Adobe de proporciona procedimientos para administrar solicitudes de privacidad relacionadas con Acceso, Eliminación y Exclusión de Adobe Experience Manager as a Cloud Service. A veces, hay API disponibles a las que se puede llamar desde un portal o scripts desarrollados por el cliente para ayudar con la automatización.
+El Adobe de proporciona procedimientos para administrar solicitudes de privacidad relacionadas con Acceso, Eliminación y Exclusión de Adobe Experience Manager as a Cloud Service. En algunos casos, hay API disponibles a las que se puede llamar desde un portal desarrollado por el cliente o secuencias de comandos para ayudar con la automatización.
 
 El diagrama siguiente ilustra el aspecto que podría tener un flujo de trabajo de solicitud de privacidad (ilustrado con Adobe Experience Manager 6.5):
 
@@ -91,7 +94,7 @@ Consulte la [Preparación de AEM Sites para la protección de datos y las normas
 
 ## Integración de Adobe Experience Manager as a Cloud Service con Adobe Target y Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Estas integraciones en Adobe Experience Manager as a Cloud Service se realizan con servicios preparados para la protección de datos y la privacidad (por ejemplo, RGPD). No se almacenan datos personales de Adobe Target o Adobe Analytics en AEM en relación con las integraciones.
+Las integraciones de Adobe Experience Manager as a Cloud Service con Adobe Target y Adobe Analytics se implementan con servicios preparados para la protección de datos y la privacidad (por ejemplo, RGPD). No se almacenan datos personales de Adobe Target o Adobe Analytics en AEM en relación con las integraciones.
 Para obtener más información, consulte:
 
 * [Adobe Target: Información general de privacidad](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)

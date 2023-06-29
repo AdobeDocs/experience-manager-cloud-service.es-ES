@@ -2,9 +2,9 @@
 title: Conceptos de creación
 description: Conceptos sobre la creación de contenido en AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 42%
 
 ---
@@ -20,7 +20,7 @@ Estos entornos interactúan para permitirle ofrecer contenido en su sitio web pa
 
 El entorno de creación ofrece mecanismos para crear, actualizar y revisar el contenido antes de publicarlo:
 
-* Un creador se encarga de crear y revisar el contenido. El contenido puede ser de muchos tipos diferentes, como páginas, recursos y publicaciones.
+* Un creador se encarga de crear y revisar el contenido. El contenido puede ser de muchos tipos diferentes, incluidas páginas, recursos y publicaciones.
 * Este, en algún momento, se publica en su sitio web.
 
 ![Diagrama del creador, el editor y los distribuidores](/help/sites-cloud/authoring/assets/author-publish.png)

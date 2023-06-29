@@ -4,9 +4,9 @@ description: Comprenda cómo las variaciones le permiten crear contenido para el
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 84%
 
 ---
@@ -197,8 +197,12 @@ A continuación, podrá crear un nuevo fragmento mediante lo siguiente:
 1. Especificación de propiedades; por ejemplo, **Título**.
 1. Selección **Crear**.
 1. Finalmente:
-   1. **Listo** devuelve (al fragmento original) y hacen referencia al nuevo fragmento.
-   1. **Abrir** hace referencia al nuevo fragmento y abre el nuevo fragmento para editarlo en una nueva pestaña del explorador.
+   1. **Listo**:
+      * devuelve (al fragmento original)
+      * hace referencia al nuevo fragmento
+   1. **Abrir**:
+      * hace referencia al nuevo fragmento
+      * abre el nuevo fragmento para editarlo en una nueva pestaña del explorador
 
 ### Visualización de estadísticas clave {#viewing-key-statistics}
 

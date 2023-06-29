@@ -2,9 +2,9 @@
 title: 'Variaciones: Crear contenido de fragmentos (Recursos: fragmentos de contenido)'
 description: AEM Comprenda de qué forma las variaciones pueden hacer que el contenido sin encabezado sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de ese contenido según el propósito.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2438'
 ht-degree: 83%
 
 ---
@@ -195,8 +195,12 @@ A continuación, podrá crear un nuevo fragmento mediante lo siguiente:
 1. Especificación de propiedades; por ejemplo, **Título**.
 1. Selección **Crear**.
 1. Finalmente:
-   1. **Listo** devuelve (al fragmento original) y hacen referencia al nuevo fragmento.
-   1. **Abrir** hace referencia al nuevo fragmento y abre el nuevo fragmento para editarlo en una nueva pestaña del explorador.
+   1. **Listo**:
+      * devuelve (al fragmento original)
+      * hace referencia al nuevo fragmento
+   1. **Abrir**:
+      * hace referencia al nuevo fragmento
+      * abre el nuevo fragmento para editarlo en una nueva pestaña del explorador
 
 ### Visualización de estadísticas clave {#viewing-key-statistics}
 

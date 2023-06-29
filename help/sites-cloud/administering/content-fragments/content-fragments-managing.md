@@ -4,9 +4,9 @@ description: Aprenda a utilizar la consola Fragmentos de contenido para administ
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2052'
 ht-degree: 76%
 
 ---
@@ -251,7 +251,7 @@ Puede publicar los fragmentos de contenido en:
 
   >[!NOTE]
   >
-  Para obtener más información sobre los entornos de vista previa, consulte lo siguiente:
+  Para obtener más información sobre los entornos de vista previa, consulte:
   >
   * [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [Configuración de OSGi para el nivel de vista previa](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)

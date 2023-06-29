@@ -4,7 +4,7 @@ description: Integración con Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 67%
@@ -50,7 +50,7 @@ Al configurar los campos ID de inquilino de Adobe Target y Código de cliente de
 En ambos casos:
 
 * De forma predeterminada, el código de cliente (si se agrega primero) también se copia automáticamente en el campo ID de inquilino.
-* Si lo desea, puede cambiar el conjunto de ID de inquilino predeterminado.
+* Si es necesario, puede cambiar el conjunto de ID de inquilino predeterminado.
 * Las llamadas back-end a Target se basan en el ID de inquilino y las llamadas del lado del cliente a Target se basan en el código de cliente.
 
 Como se ha dicho anteriormente, el primer caso es el más común para AEM as a Cloud Service. En cualquier caso, asegúrese de que **ambos** contienen la información correcta según sus necesidades.
@@ -156,4 +156,4 @@ Para obtener información sobre cómo generar y publicar, consulte [página](htt
 
 >[!NOTE]
 >
->Las configuraciones heredadas siguen siendo compatibles con los clientes existentes (sin la opción de editarlas o crearlas). Las configuraciones heredadas forman parte de paquetes de contenido cargados por clientes que utilizan VSTS.
+>Las configuraciones heredadas siguen siendo compatibles con los clientes existentes (sin la opción de editar o crear). Las configuraciones heredadas forman parte de paquetes de contenido cargados por clientes que utilizan VSTS.

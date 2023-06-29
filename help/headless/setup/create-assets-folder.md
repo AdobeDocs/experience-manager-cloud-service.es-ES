@@ -2,9 +2,9 @@
 title: 'Creación de una carpeta de recursos: configuración sin encabezado'
 description: Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '383'
 ht-degree: 86%
 
 ---
@@ -19,7 +19,7 @@ Utilice modelos de fragmentos de contenido de AEM para definir la estructura de 
 
 Sin embargo, primero debe crear una carpeta de recursos en la que almacenarlos.
 
-Las carpetas de recursos se utilizan para lo siguiente [organizar recursos de contenido tradicionales](/help/assets/manage-digital-assets.md) le gustan las imágenes y el vídeo y los fragmentos de contenido.
+Las carpetas de recursos se utilizan para lo siguiente [organizar recursos de contenido tradicionales](/help/assets/manage-digital-assets.md) como imágenes y vídeos, junto con fragmentos de contenido.
 
 ## Cómo crear una carpeta de recursos {#how-to-create-an-assets-folder}
 
