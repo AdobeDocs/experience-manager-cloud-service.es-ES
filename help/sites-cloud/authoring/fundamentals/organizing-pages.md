@@ -2,10 +2,10 @@
 title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 68%
+source-wordcount: '2539'
+ht-degree: 66%
 
 ---
 
@@ -173,7 +173,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
 1. Abra la consola Sitios (por ejemplo, `https://<host>:<port>/sites.html/content`).
 1. Desplácese hasta la ubicación en la que desee crear la nueva página.
-1. Abra el selector desplegable seleccionando **Crear** en la barra de herramientas y, a continuación, seleccione **Página** en la lista:
+1. Abra el selector desplegable con **Crear** en la barra de herramientas, seleccione **Página** de la lista:
 
    ![Creación de una página](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -384,7 +384,7 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
 
 >[!NOTE]
 >
->Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte el documento [Trabajos asincrónicos](/help/operations/asynchronous-jobs.md) en la guía del usuario Operaciones.
+>Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte [Trabajos asincrónicos](/help/operations/asynchronous-jobs.md) en la guía del usuario Operaciones.
 
 ### Eliminar una página {#deleting-a-page}
 
@@ -402,7 +402,7 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
    ![Cuadro de diálogo Eliminar](/help/sites-cloud/authoring/assets/delete-page.png)
 
    * **¿Quiere archivar las páginas antes de la eliminación?** - Si se selecciona, las versiones de las páginas seleccionadas para su eliminación se crean al eliminarlas.
-      * [Las versiones se pueden restaurar más adelante.](/help/sites-cloud/authoring/features/page-versions.md)
+      * [Las versiones se pueden restaurar más adelante](/help/sites-cloud/authoring/features/page-versions.md).
       * Las páginas eliminadas sin versiones anteriores no se pueden restaurar.
    * **Cancelar** para anular la acción
    * **Eliminar** para confirmar la acción:

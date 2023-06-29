@@ -4,10 +4,10 @@ description: Comprenda cómo las variaciones le permiten crear contenido para el
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2469'
-ht-degree: 86%
+source-wordcount: '2463'
+ht-degree: 84%
 
 ---
 
@@ -90,7 +90,7 @@ El editor de texto de pantalla completa proporciona lo siguiente:
 
 ### Acciones {#actions}
 
-También están disponibles las siguientes acciones (para todas los [formatos](#formats)) cuando el editor de pantalla completa (es decir, texto multilínea) está abierto:
+Las siguientes acciones también están disponibles (para todas las [formatos](#formats)) cuando el editor de pantalla completa (es decir, texto multilínea) está abierto:
 
 * Seleccione el [formato](#formats) ([Texto enriquecido](#rich-text), [Texto sin formato,](#plain-text) [Markdown](#markdown))
 
@@ -197,8 +197,8 @@ A continuación, podrá crear un nuevo fragmento mediante lo siguiente:
 1. Especificación de propiedades; por ejemplo, **Título**.
 1. Selección **Crear**.
 1. Finalmente:
-   1. **Listo** volverá (al fragmento original) y hará referencia al nuevo fragmento.
-   1. **Abierto** hará referencia y abrirá el nuevo fragmento para editarlo en una nueva pestaña del explorador.
+   1. **Listo** devuelve (al fragmento original) y hacen referencia al nuevo fragmento.
+   1. **Abrir** hace referencia al nuevo fragmento y abre el nuevo fragmento para editarlo en una nueva pestaña del explorador.
 
 ### Visualización de estadísticas clave {#viewing-key-statistics}
 
@@ -438,7 +438,7 @@ Para cambiar el nombre de una variación existente:
 
 1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
 1. Seleccione la variación requerida.
-1. Seleccione **Cambiar nombre** del menú desplegable **Acciones**.
+1. Seleccionar **Cambiar nombre** desde el **Acciones** menú desplegable.
 
 1. Introduzca el nuevo **Título** o **Descripción** en el cuadro de diálogo resultante.
 
@@ -454,7 +454,7 @@ Para eliminar una variación existente, haga esto:
 
 1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
 1. Seleccione la variación requerida.
-1. Seleccione **Eliminar** del menú desplegable **Acciones**.
+1. Seleccionar **Eliminar** desde el **Acciones** menú desplegable.
 
 1. Confirme la acción **Eliminar** en el cuadro de diálogo.
 
@@ -482,7 +482,7 @@ No está disponible como opción la transferencia de cambios *de una variación 
 
 1. Seleccione una variación específica y, a continuación, la acción de sincronización adecuada desde:
 
-   * el selector desplegable **Acciones**, **Sincronizar elemento actual con principal**
+   * el **Acciones** selector desplegable - **Sincronizar elemento actual con principal**
 
      ![sincronización con principal](assets/cfm-variations-11a.png)
 

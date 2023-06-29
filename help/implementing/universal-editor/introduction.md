@@ -2,10 +2,10 @@
 title: Introducción al editor visual universal
 description: Descubra cómo el editor visual universal (también conocido como editor universal) habilita la edición de lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin encabezado y con encabezado. Descubra cómo puede ayudar a los autores de contenido a ofrecer contenidos excepcionales y mayor velocidad, y una experiencia de última generación a los desarrolladores.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -81,7 +81,7 @@ Un profesional del marketing quiere crear contenido que esté adaptado al diseñ
 
 Es importante señalar que el editor universal está en progreso y algunas de las capacidades que se describen en este documento son una visión del editor final, no necesariamente representativas de sus capacidades actuales.
 
-Hable con su contacto de Adobe para obtener más información sobre las próximas funciones planificadas para el editor universal.
+Hable con su contacto de Adobe para obtener detalles sobre las próximas funciones planificadas para el editor universal.
 
 ## Recursos adicionales {#additional-resources}
 

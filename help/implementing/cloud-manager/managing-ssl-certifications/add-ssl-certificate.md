@@ -2,10 +2,10 @@
 title: Agregar un certificado SSL
 description: Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 86%
+source-wordcount: '571'
+ht-degree: 82%
 
 ---
 
@@ -63,7 +63,7 @@ Siga estos pasos para agregar un certificado mediante Cloud Manager.
 
    * Se muestran todos los errores detectados.
       * Debe corregir todos los errores antes de guardar el certificado.
-      * Consulte la sección [Errores de certificado](#certificate-errors) para obtener más información sobre cómo solucionar errores comunes.
+      * Consulte [Errores de certificado](#certificate-errors) para obtener más información sobre cómo solucionar errores comunes.
 
 1. Haga clic en **Guardar** para guardar el certificado.
 
@@ -81,7 +81,7 @@ Pueden surgir ciertos errores si un certificado no está instalado correctamente
 
 ### Directiva de certificados {#certificate-policy}
 
-Si ve el siguiente error, compruebe la directiva de su certificado.
+Si ve el siguiente error, compruebe la directiva del certificado.
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.

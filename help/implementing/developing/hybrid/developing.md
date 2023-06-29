@@ -2,9 +2,9 @@
 title: Desarrollo de SPA para AEM
 description: SPA AEM Este artículo presenta preguntas importantes que se deben tener en cuenta al contratar a un desarrollador front-end para desarrollar una aplicación para el desarrollo de la. AEM SPA SPA AEM También se ofrece una visión general de la arquitectura de los en relación con los aspectos que se deben tener en cuenta a la hora de implementar una implementación de una implementación de un entorno de desarrollo en la que se.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2035'
 ht-degree: 11%
 
 ---
@@ -89,7 +89,7 @@ Sin embargo, puede haber casos en los que esta funcionalidad no sea completament
 
 >[!NOTE]
 >
->AEM Aunque todos los modelos son compatibles con los modelos de, solo mediante la implementación de la tercera (y siguiendo las recomendaciones de). [SPA Principios de desarrollo de](#spa-development-principles-for-aem)SPA AEM ) son los autores de contenido capaces de interactuar con el contenido de la aplicación, y editarlo, en la que se puede ver el contenido de la página de la aplicación de la aplicación de la.
+>AEM Aunque todos los modelos son compatibles con los modelos de, solo mediante la implementación de la tercera (y siguiendo las recomendaciones de). [SPA Principios de desarrollo de](#spa-development-principles-for-aem)SPA AEM ) son los autores de contenido capaces de interactuar con el contenido de la aplicación, así como de editarlo, en el contenido de la aplicación de contenido de la aplicación de la aplicación de la aplicación de la.
 
 ## SPA AEM Migración de recursos existentes a la {#migrating-existing-spas-to-aem}
 

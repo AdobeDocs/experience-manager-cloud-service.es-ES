@@ -2,7 +2,7 @@
 title: Modelo SPA
 description: SPA SPA AEM En este documento se describe el contrato general independiente del marco de trabajo que cualquier marco de trabajo de debe cumplir para que pueda implementar componentes de la estructura editables dentro de los componentes de la.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2056'
 ht-degree: 2%
@@ -49,7 +49,7 @@ Cada elemento presente en el modelo contiene un `:type` AEM campo que expone un 
 
 #### Asignación de modelos dinámicos a componentes {#dynamic-model-to-component-mapping}
 
-SPA AEM Para obtener más información sobre cómo se produce la asignación de modelos dinámicos a componentes en el SDK de la aplicación de JavaScript para la creación de componentes, consulte el artículo SDK para la creación de componentes de Javascript para la creación de informes en el SDK de la aplicación de Javascript. [SPA Asignación de modelos dinámicos a componentes para la creación de](model-to-component-mapping.md).
+SPA AEM Para obtener más información acerca de cómo se produce la asignación de modelos dinámicos a componentes en el SDK de JavaScript para la, consulte el artículo [SPA Asignación de modelos dinámicos a componentes para la creación de](model-to-component-mapping.md).
 
 ### Capa específica del marco de trabajo {#framework-specific-layer}
 
@@ -106,7 +106,7 @@ Las siguientes entidades deben aplicarse de conformidad con las directrices espe
 
 Los componentes de proyecto deben delegar el acceso a los fragmentos de un modelo a un proveedor de modelos. El proveedor de modelos se encarga de escuchar los cambios realizados en el fragmento especificado del modelo y devolver el modelo actualizado al componente de delegación.
 
-Para ello, el proveedor de modelos debe registrarse en [`PageModelManager`](#pagemodelmanager). A continuación, cuando se produce un cambio, recibe y transfiere los datos actualizados al componente de delegación. De forma predeterminada, la propiedad disponible para el componente delegado que llevará el fragmento de modelo se denomina `cqModel`. La implementación es libre de proporcionar esta propiedad al componente, pero debe tener en cuenta aspectos como la integración con la arquitectura del marco de trabajo, la capacidad de detección y la facilidad de uso.
+Para ello, el proveedor de modelos debe registrarse en [`PageModelManager`](#pagemodelmanager). A continuación, cuando se produce un cambio, recibe y pasa los datos actualizados al componente que delega. De forma predeterminada, la propiedad disponible para el componente delegado que llevará el fragmento de modelo se denomina `cqModel`. La implementación es libre de proporcionar esta propiedad al componente, pero debe tener en cuenta aspectos como la integración con la arquitectura del marco de trabajo, la capacidad de detección y la facilidad de uso.
 
 ### El decorador del HTML de componentes {#the-component-html-decorator}
 

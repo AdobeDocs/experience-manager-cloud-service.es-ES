@@ -2,10 +2,10 @@
 title: Preparación de la incorporación
 description: Antes de iniciar el proceso de incorporación, hay que realizar una serie de pasos preparatorios que el administrador del sistema debe conocer antes de iniciar sesión en el sistema.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 95%
+source-wordcount: '763'
+ht-degree: 91%
 
 ---
 
@@ -88,4 +88,4 @@ Ahora debería tener una comprensión básica de lo siguiente:
 * Cómo afecta ese contrato al proceso de incorporación.
 * Cómo prepararse para su llamada de incorporación.
 
-Ahora que está familiarizado con estos pasos de preparación, está casi listo para iniciar sesión en el sistema usted mismo. Pero primero necesitará una breve visión general de cómo está estructurado AEM as a Cloud Service desde el punto de vista de un administrador del sistema y conocer la terminología importante. Continúe con la siguiente parte del recorrido, [Terminología de AEM as a Cloud Service.](terminology.md)
+Ahora que está familiarizado con estos pasos de preparación, está casi listo para iniciar sesión en el sistema usted mismo. Pero primero necesitará una breve visión general de cómo está estructurado AEM as a Cloud Service desde el punto de vista de un administrador del sistema y conocer la terminología importante. Continuar a la siguiente parte del recorrido, [AEM Terminología as a Cloud Service](terminology.md).

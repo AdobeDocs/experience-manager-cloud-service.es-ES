@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo conectar AEM a Microsoft Translato
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 100%
+source-wordcount: '512'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ Cree una configuración para el servicio en la nube de [Microsoft Translator](ht
 
 >[!TIP]
 >
->Si es nuevo traduciendo contenido, consulte nuestro [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las potentes herramientas de traducción de AEM. Es ideal para aquellos que no tengan experiencia ni en traducción ni en AEM.
+>Si acaba de empezar a traducir contenido, consulte [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ El siguiente procedimiento crea una configuración de Microsoft Translator.
 1. Pulse o haga clic en el botón **Crear**.
 1. Defina la configuración.
    1. Seleccione **Microsoft Translator** en la lista desplegable.
-   1. Escriba un título para la configuración. El título identifica la configuración en la consola Cloud Services, así como en las listas desplegables de propiedades de página.
+   1. Escriba un título para la configuración. El título identifica la configuración en la consola Cloud Services y en las listas desplegables de propiedades de página.
    1. De forma opcional, escriba un nombre para usar para el nodo del repositorio que almacena la configuración.
 
    ![Creación de configuración de traducción](../assets/create-translation-config.png)

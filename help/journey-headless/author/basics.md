@@ -2,10 +2,10 @@
 title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante Fragmentos de contenido.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 91%
+source-wordcount: '1712'
+ht-degree: 85%
 
 ---
 
@@ -121,7 +121,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Creación de fragmentos de contenido {#authoring-content-fragments}
 
-Esta ha sido una introducción muy rápida a la interfaz de usuario (IU) de AEM, esperamos que haya tenido la oportunidad de probarla. Ahora llegamos a lo que realmente le interesa: los fragmentos de contenido sin encabezado.
+AEM Por lo tanto, esa fue una introducción muy rápida a la interfaz de usuario (IU) de la, pero esperamos que haya tenido la oportunidad de probarla. Ahora llegamos a lo que realmente le interesa: los fragmentos de contenido sin encabezado.
 
 Tendremos que revisar las cosas de principio a fin, pero es posible que su instancia ya tenga carpetas o fragmentos creados, y que estos se encuentren en diferentes ubicaciones. Los principios son los mismos.
 
@@ -141,7 +141,7 @@ Se abre un cuadro de diálogo en el que puede introducir los detalles y confirma
 
 #### Uso de rutas y etiquetas para limitar los modelos de fragmento de contenido disponibles en la carpeta {#tags-paths-for-models-in-folder}
 
-Esta sección es un poco más avanzada. Realmente no lo necesitas si estás empezando y probando cosas, pero lo es *muy* útil cuando tiene muchos fragmentos. Por lo tanto, es bueno saber acerca de, incluso si aún no lo utiliza.
+Esta sección es un poco más avanzada. Realmente no lo necesitas si estás empezando y probando cosas, pero lo es *muy* útil cuando tiene muchos fragmentos. Por lo tanto, es bueno saber acerca de - incluso si todavía no lo utiliza.
 
 El arquitecto de contenido habrá creado todos los modelos de fragmento de contenido necesarios para el proyecto actual y tal vez también otros proyectos. Para simplificarle las cosas a usted y a otros autores, puede limitar la lista de modelos disponibles para una carpeta específica.
 
@@ -213,7 +213,7 @@ Cuando se abra el editor por primera vez, verá lo siguiente:
 
 Ejemplos:
 
-* Un fragmento que solo requiere múltiples informaciones, algunas con un tipo específico. Para el contenido sin encabezado, las referencias son clave; más adelante, en el recorrido, aprenderá sobre ellas.
+* Un fragmento que solo requiere múltiples informaciones, algunas con un tipo específico. Para el contenido sin encabezado, las referencias son clave, y se aprenden más adelante en el recorrido.
 
   ![Editor de fragmentos de contenido: mi fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -233,9 +233,9 @@ Confirme las actualizaciones con: **Guardar** o **Guardar y cerrar**.
 >
 >Para obtener más información, puede leer Variaciones: creación de fragmentos de contenido.
 
-#### Lo que probablemente no deba preocuparle {#what-you-probably-do-not-need-to-worry-about}
+#### De lo que (probablemente) no tiene que preocuparse {#what-you-probably-do-not-need-to-worry-about}
 
-De acuerdo. Esta sección puede parecer un poco extraña, pero cuando abra el Editor de fragmentos de contenido y empiece a explorar, aparecerán varias opciones que no se aplican a su recorrido sin encabezado (probablemente) como Autor de contenido. Así que esto es tan solo un rápido avance de lo que debe ignorar en un contexto sin encabezado.
+OK, esto puede parecer una sección un poco extraña, pero después de abrir el Editor de fragmentos de contenido y comenzar a explorar, puede ver varias opciones que (probablemente) no se aplican a su recorrido sin encabezado como Autor de contenido. Así que esto es tan solo un rápido avance de lo que debe ignorar en un contexto sin encabezado.
 
 * **Modelos de fragmentos de contenido**
 
@@ -258,7 +258,7 @@ Los modelos de fragmento de contenido son vitales para los fragmentos de conteni
 
 * **Actualizar referencias de página**
 
-  Esta acción está disponible en el menú desplegable de los puntos suspensivos (**...**). No tiene interés para los autores sin encabezado, ya que está relacionado con la creación de páginas.
+  Esta acción está disponible en el **...** Lista desplegable (elipses). No tiene interés para los autores sin encabezado, ya que está relacionado con la creación de páginas.
 
 ### Publicación {#publishing}
 

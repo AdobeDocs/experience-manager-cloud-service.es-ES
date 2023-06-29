@@ -2,10 +2,10 @@
 title: Pruebas de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 96%
+source-wordcount: '549'
+ht-degree: 91%
 
 ---
 
@@ -35,11 +35,11 @@ La auditoría de experiencias está equipada con Google Lighthouse, una herramie
 
 >[!TIP]
 >
->Puede configurar qué páginas se incluyen en la Auditoría de experiencias al [configurar la canalización.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>Puede configurar qué páginas se incluyen en la Auditoría de experiencias al [configurar la canalización](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## Comprender los resultados de la auditoría de experiencias {#understanding-experience-audit-results}
 
-La auditoría de experiencias proporciona resultados de prueba agregados y detallados a nivel de página a través de la [página de ejecución de canalizaciones de producción.](/help/implementing/cloud-manager/deploy-code.md)
+La auditoría de experiencias proporciona resultados de prueba agregados y detallados a nivel de página a través de la [página de ejecución de canalizaciones de producción](/help/implementing/cloud-manager/deploy-code.md).
 
 * Las métricas agregadas miden las puntuaciones medias en las páginas que fueron auditadas para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO (optimización del motor de búsqueda).
 * Las puntuaciones a nivel de página individuales también están disponibles mediante “explorar en profundidad”.
@@ -68,6 +68,6 @@ La métrica de cambios puede tener uno de los siguientes valores.
 
 Al profundizar en cualquiera de las pruebas, se dispone de una puntuación a nivel de página más detallada. Se puede ver la puntuación de las páginas individuales para la prueba específica junto con el cambio con respecto a la anterior.
 
-Al hacer clic en los detalles de cualquier página individual se proporciona información sobre los elementos de la página que se evaluaron, así como instrucciones para solucionar problemas si se detectan oportunidades de mejora.
+Al hacer clic en los detalles de cualquier página individual se proporciona información sobre los elementos de la página que se evaluaron y se proporcionan instrucciones para solucionar problemas si se detectan oportunidades de mejora.
 
 ![Puntuaciones a nivel de página](/help/implementing/cloud-manager/assets/exp-audit-2.png)

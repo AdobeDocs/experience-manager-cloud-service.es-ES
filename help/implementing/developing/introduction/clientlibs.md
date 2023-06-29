@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service Uso de bibliotecas del lado del cliente en el uso de
 description: AEM proporciona Carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente (clientlibs) en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2556'
 ht-degree: 2%
 
 ---
@@ -21,17 +21,17 @@ AEM Entre las ventajas de usar clientlibs en la práctica se incluyen las siguie
 * Exponga los clientlibs a través de una ruta accesible a través de [dispatcher](/help/implementing/dispatcher/disp-overview.md)
 * Permite la reescritura de rutas para archivos o imágenes referenciados
 
-AEM Clientlibs es la solución integrada para ofrecer CSS y Javascript desde la interfaz de usuario de la aplicación de.
+AEM Clientlibs es la solución integrada para ofrecer CSS y JavaScript desde el punto de vista de los usuarios de la aplicación de la interfaz de usuario de.
 
 >[!TIP]
 >
->AEM Los desarrolladores de front-end que crean CSS y Javascript para proyectos de también deben familiarizarse con el [AEM Tipo de archivo del proyecto de y su proceso de compilación automatizada del front-end.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>AEM Los desarrolladores de front-end que crean CSS y JavaScript para proyectos de también deben familiarizarse con el [AEM Tipo de archivo del proyecto de y su proceso de compilación automatizada del front-end.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
 ## Qué son las bibliotecas del lado del cliente {#what-are-clientlibs}
 
-Los sitios requieren JavaScript y CSS, así como recursos estáticos como iconos y fuentes web para procesarlos en el lado del cliente. AEM Una clientlib es un mecanismo de referencia para la segmentación de datos (por categoría si es necesario) y el servicio de estos recursos.
+Los sitios requieren JavaScript y CSS y recursos estáticos como iconos y fuentes web para procesarlos en el lado del cliente. AEM Una clientlib es un mecanismo de referencia para la segmentación de datos (por categoría si es necesario) y el servicio de estos recursos.
 
-AEM el CSS y el Javascript del sitio en un solo archivo, en una ubicación central, para garantizar que solo se incluya una copia de cualquier recurso en la salida del HTML. Esto maximiza la eficacia de la entrega y permite que estos recursos se mantengan centralmente en el repositorio a través de proxy, manteniendo el acceso seguro.
+AEM el CSS y el JavaScript del sitio en un solo archivo, en una ubicación central, para garantizar que solo se incluya una copia de cualquier recurso en la salida del HTML. Esto maximiza la eficacia de la entrega y permite que estos recursos se mantengan centralmente en el repositorio a través de proxy, manteniendo el acceso seguro.
 
 ## AEM Desarrollo front-end para la creación de informes as a Cloud Service de {#fed-for-aemaacs}
 
@@ -189,7 +189,7 @@ Las propiedades de carpeta adicionales incluyen permitir el control de dependenc
 
 ### Vinculación a dependencias {#linking-to-dependencies}
 
-Cuando el código de la carpeta de la biblioteca de cliente haga referencia a otras bibliotecas, identifique las demás bibliotecas como dependencias. El `ui:includeClientLib` que hace referencia a la carpeta de la biblioteca de cliente hace que el código del HTML incluya un vínculo al archivo de biblioteca generado, así como a las dependencias.
+Cuando el código de la carpeta de la biblioteca de cliente haga referencia a otras bibliotecas, identifique las demás bibliotecas como dependencias. El `ui:includeClientLib` que hace referencia a la carpeta de la biblioteca de cliente hace que el código del HTML incluya un vínculo al archivo de biblioteca generado y a las dependencias.
 
 Las dependencias deben ser otras `cq:ClientLibraryFolder`. Para identificar dependencias, agregue una propiedad a su `cq:ClientLibraryFolder` nodo con los atributos siguientes:
 

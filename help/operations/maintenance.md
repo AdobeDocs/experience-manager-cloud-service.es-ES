@@ -2,7 +2,7 @@
 title: Tareas de mantenimiento en AEM as a Cloud Service
 description: Tareas de mantenimiento en AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 60%
@@ -44,7 +44,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
   <tr>
     <td>Depuración de la versión</td>
     <td>Adobe</td>
-    <td>Para los entornos existentes (los creados antes del 1 de junio de 2023), la depuración está deshabilitada y no se habilitará en el futuro a menos que el cliente lo habilite explícitamente, momento en el cual también puede configurarla con valores personalizados.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Los nuevos entornos (los creados a partir del 1 de junio de 2023) tendrán la depuración habilitada de forma predeterminada con los valores siguientes, y los clientes podrán configurarla con valores personalizados.
+    <td>Para los entornos existentes (los creados antes del 1 de junio de 2023), la depuración está deshabilitada y no se habilitará en el futuro a menos que el cliente lo habilite explícitamente, momento en el cual también puede configurarla con valores personalizados.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Los nuevos entornos (los creados a partir del 1 de junio de 2023) tendrán la depuración habilitada de forma predeterminada con los valores siguientes, y los clientes podrán configurarla con valores personalizados.
      <ol>
        <li>Se eliminan las versiones con más de 30 días</li>
        <li>Se conservan las cinco versiones más recientes de los últimos 30 días</li>

@@ -3,10 +3,10 @@ title: Introducción y descripción general
 description: Introducción y descripción general de Content and Commerce. Experience Manager Commerce Integration Framework (CIF) es el patrón recomendado de Adobe para integrar y ampliar los servicios de comercio de Adobe Commerce y otras soluciones de comercio de terceros con Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 92%
+source-wordcount: '891'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Con Content y Commerce de Adobe Experience Manager, las marcas pueden escalar e 
 
 Con expectativas crecientes de los clientes en cuanto a experiencias de comercio en línea, las marcas se ven presionadas para ofrecer experiencias diferenciadas y más contenido con mayor rapidez. Sin embargo, la implementación de una plataforma de administración de contenido a menudo requiere fuertes inversiones en tiempo y presupuesto para desarrollar elementos fundamentales, tales como componentes personalizados y herramientas de creación, y acumula costes en mantenimiento y actualizaciones. Experience Manager Sites ofrece Content and Commerce como módulo complementario de Experience Manager as a Cloud Service, que proporciona componentes comerciales básicos, herramientas de creación y un escaparate de referencia predeterminados para acelerar el lanzamiento, permitir una colaboración fluida entre los equipos e impulsar la conversión.
 
-Las marcas pueden integrar Experience Manager con Adobe Commerce, parte de Adobe Experience Cloud, así como con cualquier motor de comercio que elijan. Con Experience Manager Content and Commerce, las marcas pueden hacer lo siguiente:
+Las marcas pueden integrar Experience Manager con Adobe Commerce, como parte de Adobe Experience Cloud, y cualquier motor comercial de su elección. Con Experience Manager Content and Commerce, las marcas pueden hacer lo siguiente:
 
 * Escalar e innovar más rápidamente
 * Personalizar experiencias para impulsar la conversión
@@ -79,6 +79,6 @@ CIF admite clientes con patrones de integración estandarizados basados en prác
 
 ## Recorrido {#journey}
 
-Si está siguiendo el Recorrido de Commerce, vaya al siguiente paso:
+Si está siguiendo un Recorrido comercial, vaya al paso siguiente:
 
 * El [Recorrido de autor de contenido de AEM](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

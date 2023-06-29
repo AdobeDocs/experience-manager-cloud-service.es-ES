@@ -2,16 +2,16 @@
 title: Editar programas
 description: Obtenga información sobre cómo editar los programas de producción y de zonas protegidas para ajustar sus opciones después de crearlas.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 94%
+source-wordcount: '520'
+ht-degree: 88%
 
 ---
 
 # Editar programas {#editing-programs}
 
-Los usuarios con los permisos necesarios pueden editar [programas de producción,](creating-production-programs.md) así como [programas de zonas protegidas creados en su organización.](creating-sandbox-programs.md) Al editar un programa puede hacer lo siguiente:
+Los usuarios con los permisos necesarios pueden editar [programas de producción creados en su organización](creating-production-programs.md) y [programas de zona protegida creados en su organización.](creating-sandbox-programs.md) Al editar un programa puede hacer lo siguiente:
 
 * Agregar la solución Sites a un programa existente con Assets y viceversa.
 * Eliminar Sites o Assets de un programa existente que incluya ambos.
@@ -63,7 +63,7 @@ Si el programa de producción tenía habilitada la seguridad mejorada, se requie
 
 ![Seguridad mejorada activa para un programa](assets/edit-program-enhanced.png)
 
-Esta configuración no se puede modificar una vez creado el programa. Para obtener más información acerca de la opción de seguridad mejorada, consulte el documento [Creación de programas de producción](creating-production-programs.md).
+Esta configuración no se puede modificar una vez creado el programa. Para obtener más información sobre la opción de seguridad mejorada, consulte [Creación de programas de producción](creating-production-programs.md) documento.
 
 ## Eliminar programas de zona protegida {#delete-sandbox-program}
 

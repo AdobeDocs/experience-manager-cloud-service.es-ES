@@ -2,10 +2,10 @@
 title: Obtenga más información acerca del desarrollo de CMS sin encabezado
 description: En esta parte del recorrido para desarrolladores de contenido sin encabezado de AEM, aprenda acerca de la tecnología sin encabezado y por qué la utilizaría.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 95%
+source-wordcount: '1621'
+ht-degree: 93%
 
 ---
 
@@ -96,7 +96,7 @@ El contenido sin encabezado abre un mundo de flexibilidad para ofrecer sus exper
 
 Tener muchos canales diferentes puede significar que cada uno tiene sus propios sistemas de presentación. Aunque todas consumen el mismo contenido a través de las mismas API, la experiencia puede ser diferente debido a las diferentes presentaciones. Se debe prestar atención y atención a garantizar la coherencia de la experiencia del cliente.
 
-Al implementar sistemas de diseño cuidadosos, compartir bibliotecas de patrones y aprovechar componentes de diseño reutilizables, así como marcos abiertos y establecidos del lado del cliente, se pueden asegurar experiencias coherentes, pero esto debe planificarse.
+Al implementar sistemas de diseño cuidadosos, compartir bibliotecas de patrones y aprovechar componentes de diseño reutilizables y marcos del lado del cliente establecidos y abiertos, se pueden garantizar experiencias coherentes, pero esto debe planificarse.
 
 ## El futuro es el contenido sin encabezado y es ahora {#future}
 

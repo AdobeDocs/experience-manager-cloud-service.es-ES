@@ -2,10 +2,10 @@
 title: Entornos de zona protegida en hibernación y dehibernación
 description: Descubra cómo los entornos de un programa de zona protegida entran automáticamente en modo de hibernación y cómo puede anularlo.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 95%
+source-wordcount: '685'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Siga estos pasos para hibernar manualmente los entornos de programa de zona prot
 
 1. En la tarjeta **Entornos**, haga clic en el botón de los tres puntos y seleccione **Developer Console**.
 
-   * Consulte el documento [Acceder a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obtener más información sobre Developer Console.
+   * Consulte [Acceso a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obtener más información sobre Developer Console.
 
    ![Opción del menú de Developer Console](assets/developer-console-menu-option.png)
 
@@ -69,7 +69,7 @@ Puede hibernar manualmente el programa de zona protegida desde Developer Console
 
 1. En la tarjeta **Entornos**, haga clic en el botón de los tres puntos y seleccione **Developer Console**.
 
-   * Consulte el documento [Acceder a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obtener más información sobre Developer Console.
+   * Consulte [Acceso a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obtener más información sobre Developer Console.
 
 1. Haga clic en **Deshibernar**.
 
@@ -114,7 +114,7 @@ Los entornos en hibernación aún permiten implementaciones y actualizaciones ma
 
 * Los entornos de un programa de zona protegida hibernan automáticamente tras ocho horas de inactividad.
    * La inactividad se define como que ni el servicio de autor ni la vista previa o los servicios de publicación reciban solicitudes.
-   * Una vez hibernados, pueden [se anula la hibernación manualmente.](#de-hibernation-introduction)
+   * Una vez hibernados, se puede cancelar [manualmente la hibernación.](#de-hibernation-introduction)
 * Los programas de zona protegida se eliminarán después estar de seis meses en modo de hibernación continua, después de lo cual se podrán volver a crear.
 
 >[!NOTE]

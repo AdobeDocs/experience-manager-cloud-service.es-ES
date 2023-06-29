@@ -2,9 +2,9 @@
 title: Go-Live
 description: Aprenda a realizar la migración una vez que el código y el contenido estén listos para la nube
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1710'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ En las fases anteriores del recorrido:
 
 ## Objetivo {#objective}
 
-AEM Este documento le ayudará a comprender cómo llevar a cabo la migración a la as a Cloud Service una vez que esté familiarizado con los pasos anteriores de la recorrido de trabajo. AEM Aprenderá a realizar la migración inicial de la producción, así como las prácticas recomendadas que debe seguir al migrar a la producción as a Cloud Service.
+AEM Este documento le ayuda a comprender cómo realizar la migración a as a Cloud Service una vez que esté familiarizado con los pasos anteriores del recorrido de trabajo. AEM Aprenderá a realizar la migración inicial de la producción y las prácticas recomendadas que debe seguir al migrar a la producción as a Cloud Service de.
 
 ## Migración de producción inicial {#initial-migration}
 
@@ -95,7 +95,7 @@ AEM Recuerde, la carga en el origen de la se buena durante la fase de extracció
 
 ## Limitaciones conocidas {#known-limitations}
 
-Tenga en cuenta que toda la ingesta falla si se encuentra alguna de las siguientes limitaciones como parte del conjunto de migración extraída:
+Tenga en cuenta que toda la ingesta falla si se encuentra cualquiera de las siguientes limitaciones como parte del conjunto de migración extraída:
 
 * Un nodo JCR que tiene un nombre de más de 150 caracteres
 * Un nodo JCR de más de 16 MB
@@ -113,14 +113,14 @@ Ambos elementos se identifican y se comunican en la variable [Analizador de prá
 
 ## Lista de comprobación de lanzamiento {#Go-Live-Checklist}
 
-Revise esta lista de actividades para asegurarse de que la migración se realiza correctamente y sin problemas.
+Revise esta lista de actividades para asegurarse de que la migración se realiza correctamente.
 
 * Ejecute una canalización de producción integral con pruebas funcionales y de interfaz de usuario para garantizar un **siempre actual** AEM Experiencia del producto de la. Consulte los siguientes recursos.
    * [Actualizaciones de la versión de AEM](/help/implementing/deploying/aem-version-updates.md)
    * [Prueba funcional personalizada](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Pruebas de IU](/help/implementing/cloud-manager/ui-testing.md)
 * Migre el contenido a producción y asegúrese de que haya un subconjunto relevante disponible en el ensayo para realizar pruebas.
-   * AEM Tenga en cuenta que las prácticas recomendadas de DevOps para los entornos de producción implican que el código asciende desde el desarrollo al entorno de producción, mientras que el contenido baja desde los entornos de producción.
+   * AEM Las prácticas recomendadas de DevOps para los entornos de producción implican que el código asciende desde el desarrollo al entorno de producción, mientras que el contenido baja desde los entornos de producción.
 * Programe un período de congelación de contenido y código.
    * Consulte también la sección [Cronología de congelación de código y contenido para la migración](#code-content-freeze)
 * Realice la recarga final del contenido.

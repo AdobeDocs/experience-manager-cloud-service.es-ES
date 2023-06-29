@@ -2,10 +2,10 @@
 title: 'Creación de una carpeta de recursos: configuración sin encabezado'
 description: Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 93%
+source-wordcount: '381'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ Utilice modelos de fragmentos de contenido de AEM para definir la estructura de 
 
 Sin embargo, primero debe crear una carpeta de recursos en la que almacenarlos.
 
-Las carpetas de recursos se utilizan para [organizar recursos de contenido tradicionales](/help/assets/manage-digital-assets.md) como imágenes y vídeo, así como fragmentos de contenido.
+Las carpetas de recursos se utilizan para lo siguiente [organizar recursos de contenido tradicionales](/help/assets/manage-digital-assets.md) le gustan las imágenes y el vídeo y los fragmentos de contenido.
 
 ## Cómo crear una carpeta de recursos {#how-to-create-an-assets-folder}
 
@@ -30,11 +30,11 @@ Un administrador solo tendría que crear carpetas ocasionalmente para organizar 
 1. Proporcione un **Título** y **Nombre** para su carpeta.
    * El **Título** debe ser descriptivo.
    * El **Nombre** se convierte en el nombre de nodo del repositorio.
-      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de](/help/implementing/developing/introduction/naming-conventions.md).
       * Se puede modificar si es necesario.
 
    ![Crear carpeta](../assets/assets-folder-create.png)
-1. Seleccione la carpeta que acaba de crear pasando el puntero sobre ella y pulsando la marca de verificación. A continuación, seleccione **Propiedades** en la barra de herramientas (o utilice el `p` [método abreviado de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
+1. Seleccione la carpeta que acaba de crear pasando el puntero sobre ella y pulsando la marca de verificación. A continuación seleccione **Propiedades** en la barra de herramientas (o utilice la variable `p` [atajo de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
 1. En la ventana **Propiedades**, seleccione la pestaña **Servicios de nube**.
 1. Para la **Configuración de nube**, seleccione la [configuración que creó anteriormente.](create-configuration.md)
    ![Configurar la carpeta de recursos](../assets/assets-folder-configure.png)

@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.6.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.6.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 48%
+source-wordcount: '1437'
+ht-degree: 45%
 
 ---
 
@@ -48,7 +48,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 ### Novedades {#what-is-new-junecm}
 
-* El servicio Vista previa se implementará progresivamente en todos los programas. Se notifica a los clientes en el producto cuando su programa está habilitado para el servicio Vista previa. Consulte [Acceder al servicio Vista Previa](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obtener más información.
+* El servicio Vista previa se implementará progresivamente en todos los programas. Se notifica a los clientes en el producto cuando su programa está habilitado para el servicio Vista previa. Consulte [Acceso al servicio Vista previa](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obtener más información.
 
 * Las dependencias de Maven descargadas durante el paso de generación ahora se almacenan en la memoria caché entre ejecuciones de canalización. Esta característica se habilitará para los clientes en las próximas semanas.
 
@@ -60,7 +60,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 * La regla de calidad `ImmutableMutableMixCheck` se ha actualizado para clasificar nodos `/oak:index` como inmutables.
 
-* Las reglas de calidad `CQBP-84` y `CQBP-84--dependencies` se han consolidado en una única regla. Como parte de esta consolidación, el análisis de dependencias identifica con mayor precisión los problemas en dependencias de terceros que se implementan en el tiempo de ejecución de AEM.
+* Las reglas de calidad `CQBP-84` y `CQBP-84--dependencies` se han consolidado en una única regla. AEM Como parte de esta consolidación, el análisis de dependencias identifica con mayor precisión los problemas en dependencias de terceros que se implementan en el tiempo de ejecución de la.
 
 * Para evitar confusiones, se han consolidado las filas de segmento Publicar AEM y Publicar Dispatcher en la página Detalles del entorno.
 

@@ -2,10 +2,10 @@
 title: Configuración del conector de traducción para contenido sin encabezado
 description: Aprenda a conectar AEM a un servicio de traducción.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 95%
+source-wordcount: '1231'
+ht-degree: 94%
 
 ---
 
@@ -78,7 +78,7 @@ Para crear una nueva configuración de traducción:
 
 1. Proporcione la siguiente información en los campos y, a continuación, toque o haga clic en **Crear**.
    1. Seleccione **Tipo de configuración** en la lista desplegable. Seleccione **Integración de traducción** de la lista.
-   1. Escriba un **Título** para su configuración. El **Título** identifica la configuración en la consola **Cloud Services**, así como en las listas desplegables de propiedad de página.
+   1. Escriba un **Título** para su configuración. El **Título** identifica la configuración en **Cloud Services** y en las listas desplegables de propiedades de página.
    1. Opcionalmente, escriba un **Nombre** para usar para el nodo del repositorio que almacena la configuración.
 
    ![Crear configuración de traducción](assets/create-translation-configuration.png)

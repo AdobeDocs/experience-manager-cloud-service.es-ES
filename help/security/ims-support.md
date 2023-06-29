@@ -2,10 +2,10 @@
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad del sistema de administración de imágenes con Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 40%
+source-wordcount: '1993'
+ht-degree: 39%
 
 ---
 
@@ -106,7 +106,7 @@ Puede encontrar más información sobre las nuevas funciones de grupo [en esta u
 
 **Documentación de sincronización de usuarios**
 
-Consulte la [documentación de la UST](https://adobe-apiplatform.github.io/user-sync.py/es/) para obtener más detalles.
+Consulte [Documentación de UST](https://adobe-apiplatform.github.io/user-sync.py/es/) para obtener más información.
 
 La herramienta de sincronización de usuarios debe registrarse como cliente de Adobe Developer UMAPI mediante el procedimiento [aquí](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 

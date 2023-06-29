@@ -2,10 +2,10 @@
 title: Creación de plantillas de página
 description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no es una tarea exclusiva para desarrolladores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4579'
-ht-degree: 57%
+source-wordcount: '4577'
+ht-degree: 56%
 
 ---
 
@@ -28,7 +28,7 @@ El **Editor de plantillas** permite a los autores de plantillas:
 
 Este documento explica cómo **autor de plantillas** Puede utilizar la consola y el editor de plantillas para crear y administrar plantillas editables.
 
-Para obtener información detallada acerca de cómo funcionan las plantillas editables en un nivel técnico, consulte el documento para desarrolladores [Plantillas de páginas](/help/implementing/developing/components/templates.md) para obtener más información.
+Para obtener información detallada sobre cómo funcionan las plantillas editables en un nivel técnico, consulte el documento para desarrolladores [Plantillas de página](/help/implementing/developing/components/templates.md) para obtener más información.
 
 >[!NOTE]
 >
@@ -266,7 +266,7 @@ Cuando se ha desbloqueado un componente, puede definir lo siguiente [contenido i
 
 >[!NOTE]
 >
->En el modo de **Contenido inicial**, así como en las páginas resultantes, cualquier componente desbloqueado que tenga una raíz accesible (es decir, componentes dentro de un contenedor de diseño) se puede eliminar.
+>Entrada **Contenido inicial** y en las páginas resultantes, cualquier componente desbloqueado que tenga un elemento principal accesible (es decir, componentes dentro de un contenedor de diseño) se puede eliminar.
 
 #### Diseño {#template-layout}
 
@@ -393,7 +393,7 @@ En el **Propiedades** encabezado puede definir la configuración del componente.
 
 En el **Principal** pestaña, se definen los ajustes más importantes del componente.
 
-Por ejemplo, para un componente de imagen se pueden definir los anchos permitidos junto con la activación de la carga diferida.
+Por ejemplo, para un componente de imagen se pueden definir los anchos permitidos y habilitar la carga diferida.
 
 Si una configuración permite varias configuraciones, toque o haga clic en **Añadir** para añadir otra configuración.
 

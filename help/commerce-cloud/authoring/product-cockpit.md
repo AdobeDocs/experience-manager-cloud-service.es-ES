@@ -2,10 +2,10 @@
 title: Product Cockpit
 description: Uso de Product Cockpit
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 3%
+source-wordcount: '432'
+ht-degree: 1%
 
 ---
 
@@ -23,13 +23,13 @@ Los datos de productos clasificados incluyen cualquier mutación futura, como nu
 
 ## Configuración {#configuration}
 
-AEM Los catálogos de productos deben configurarse en la interfaz de usuario de. Consulte [configuración de tiendas y catálogos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?#catalog) para obtener más información.
+AEM Los catálogos de productos deben configurarse en la opción de configuración de la. Consulte [configuración de tiendas y catálogos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) para obtener más información.
 
-La activación de las funciones de catálogo organizadas requiere autenticación. Consulte [Primeros pasos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=es) para obtener más información.
+La activación de las funciones de catálogo organizadas requiere autenticación. Consulte [Primeros pasos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) para obtener más información.
 
 >[!NOTE]
 >
->Las funciones de catálogo organizadas solo están disponibles con Adobe Commerce y conectores de terceros que admiten la autenticación basada en tokens.
+>Las funciones de catálogo organizadas solo están disponibles con Adobe Commerce y conectores de terceros que admitan la autenticación basada en tokens.
 
 ## Apertura de la cabina de productos {#opening-product-cockpit}
 
@@ -43,11 +43,11 @@ La cabina de productos está organizada de forma jerárquica siguiendo la estruc
 
 ![Catálogos configurados](../assets/catalog-overview.png)
 
-Al hacer clic en una categoría, se cargarán los elementos secundarios de la categoría en la que se hizo clic.
+Al hacer clic en una categoría, se cargan los elementos secundarios de la categoría en la que se hizo clic.
 
 ![Categoría secundaria](../assets/catalog-category-children.png)
 
-Al hacer clic en un producto, se cargarán las variaciones de productos si están disponibles.
+Al hacer clic en un producto, se cargan variaciones de productos si están disponibles.
 
 ![Variaciones de productos](../assets/catalog-product-variation.png)
 
@@ -63,13 +63,13 @@ Se proporciona una búsqueda de texto completo sobre el catálogo de productos c
 
 ## Exploración del catálogo de productos escalonado {#staged-product-catalogs}
 
-De forma predeterminada, la cabina de productos muestra los datos del catálogo de productos en directo. El uso del &quot;CATÁLOGO CLASIFICADO&quot; en la pestaña del filtro izquierdo cargará el catálogo de productos para cualquier fecha seleccionada.
+De forma predeterminada, la cabina de productos muestra los datos del catálogo de productos en directo. El uso del &quot;CATÁLOGO CLASIFICADO&quot; en la pestaña del filtro izquierdo carga el catálogo de productos para cualquier fecha seleccionada.
 
 ![catálogo preconfigurado](../assets/staged-cockpit.png)
 
 ## Propiedades del catálogo de productos {#catalog-properties}
 
-Al hacer clic en el icono de propiedades de un producto o categoría, se abrirá la vista de propiedades del objeto seleccionado. Abrir propiedades de una variante de producto es igual a abrir las propiedades de producto principales.
+Al hacer clic en el icono de propiedades de un producto o categoría, se abre la vista de propiedades del objeto seleccionado. Las propiedades abiertas de una variante de producto son iguales para abrir las propiedades de producto principales.
 
 ### Fichas de comercio {#tabs}
 

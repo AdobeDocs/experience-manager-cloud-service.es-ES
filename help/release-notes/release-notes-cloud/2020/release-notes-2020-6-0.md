@@ -2,10 +2,10 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de la versión de Experience Manager para 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 92%
+source-wordcount: '1931'
+ht-degree: 90%
 
 ---
 
@@ -62,7 +62,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
   Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
 
-* Un usuario de programa de zona protegida en el rol de *Propietario del negocio* o *Administrador de implementación* en Cloud Manager ahora puede eliminar su conjunto de entornos de producción y ensayo en la interfaz de usuario de Cloud Manager. La opción Eliminar ya está disponible en la tarjeta de entorno de la página **Información general de Programas** y en la página **Entornos**. Al seleccionar la opción de eliminación en producción o fase también se eliminan las otras del conjunto.
+* Un usuario de programa de zona protegida en el rol de *Propietario del negocio* o *Administrador de implementación* en Cloud Manager ahora puede eliminar su conjunto de entornos de producción y ensayo en la interfaz de usuario de Cloud Manager. La opción Eliminar ya está disponible en la tarjeta Entorno de la **Información general de programas** y la **Entornos** página. Al seleccionar la opción de eliminación en producción o fase también se eliminan las otras del conjunto.
 
   Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
 
@@ -72,7 +72,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 * Ahora hay disponible una página **LEARN** en Cloud Manager, a la que se puede acceder desde la barra de navegación superior. Esta página incluye recursos para ayudar a los usuarios a conocer los flujos de trabajo utilizados con más frecuencia según su rol asignado en Cloud Manager.
 
-* Los Programas de zona protegida ahora se identifican mediante una **Sandbox** que se muestra en la tarjeta de programa de la página de aterrizaje junto al nombre del programa en la **Resumen del programa** página.
+* Los Programas de zona protegida ahora se identifican mediante una **Sandbox** que se muestra en la tarjeta de programa de la página de aterrizaje y junto al nombre del programa en la **Resumen del programa** página.
 
 * Un usuario con el rol de SysAdmin ahora tiene acceso con un solo clic a la ubicación de Admin Console desde la que se pueden administrar los roles de los usuarios o los permisos de Cloud Manager. Ahora está disponible el botón **Administrar acceso** en la página de aterrizaje junto al botón **Agregar Programa**.
 

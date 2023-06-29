@@ -4,10 +4,10 @@ description: Descubra cómo los modelos de fragmentos de contenido sirven de bas
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2921'
-ht-degree: 91%
+source-wordcount: '2919'
+ht-degree: 90%
 
 ---
 
@@ -77,7 +77,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
         >
         >Al actualizar de forma manual la propiedad **Nombre de propiedad** para un tipo de datos, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos “_” como carácter especial.
         >
-        >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
+        >AEM Si los modelos creados en versiones anteriores de contienen caracteres no permitidos, elimine o actualice dichos caracteres.
 
      Por ejemplo:
 
@@ -145,7 +145,7 @@ Muchas propiedades se explican por sí mismas; para otras, a continuación se pr
 
   >[!CAUTION]
   >
-  >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
+  >AEM Si los modelos creados en versiones anteriores de contienen caracteres no permitidos, elimine o actualice dichos caracteres.
 
 * **Representar como**
 Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor ve una sola instancia del campo o si se le permite crear varias instancias.

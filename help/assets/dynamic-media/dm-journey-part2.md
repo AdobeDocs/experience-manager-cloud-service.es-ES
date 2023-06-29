@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2875'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -141,7 +141,7 @@ Si vuelve a ver la imagen del reloj que aparece a continuación, verá que hay u
 ![Ajustes preestablecidos de imagen estáticos y dinámicos](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _Ajustes preestablecidos de imagen estáticos y dinámicos. La imagen del reloj se procesó con el `PDP-page` ajuste preestablecido de imagen._
 
-Pero, ¿qué sucede si tiene que cambiar una imagen de su sitio web? Por ejemplo, supongamos que ha realizado algunas pruebas y ha encontrado que la imagen de 120 x 120 (la variable `Cart` ajuste preestablecido de imagen) no se recibe tan bien como pensaba. Para aumentar el tamaño de la imagen, aumente la anchura a 175 píxeles y la altura a 175 píxeles. Tradicionalmente, tendría que entrar en Adobe Photoshop y volver a crear todas esas imágenes del carro de compras. Sin embargo, con Dynamic Media, solo tiene que editar el ajuste preestablecido de imagen actualizando los valores de Anchura y Altura a 175 y guardar el ajuste preestablecido, como se ve en el ejemplo siguiente.
+Pero, ¿qué sucede si tiene que cambiar una imagen de su sitio web? Por ejemplo, supongamos que ha realizado algunas pruebas y ha encontrado que la imagen de 120 x 120 (la variable `Cart` ajuste preestablecido de imagen) no se recibe como pensaba. Para aumentar el tamaño de la imagen, aumente la anchura a 175 píxeles y la altura a 175 píxeles. Tradicionalmente, tendría que entrar en Adobe Photoshop y volver a crear todas esas imágenes del carro de compras. Sin embargo, con Dynamic Media, solo tiene que editar el ajuste preestablecido de imagen actualizando los valores de Anchura y Altura a 175 y guardar el ajuste preestablecido, como se ve en el ejemplo siguiente.
 
 ![Edición de un ajuste preestablecido de imagen](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _Edición de la anchura y la altura de `Cart` ajuste preestablecido de imagen._

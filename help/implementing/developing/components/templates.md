@@ -2,7 +2,7 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan para crear una página que se utiliza como base para la nueva página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3294'
 ht-degree: 6%
@@ -197,7 +197,7 @@ Para crear una carpeta nueva, puede hacer lo siguiente:
 
 ### Uso del explorador de configuración {#using-the-configuration-browser}
 
-1. Ir a **Navegación global** -> **Herramientas** > [**Explorador de configuración**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+1. Ir a **Navegación global** -> **Herramientas** > [**Explorador de configuración**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    Las carpetas existentes se muestran a la izquierda, incluida la `global` carpeta.
 
@@ -304,7 +304,7 @@ Al crear una plantilla nueva, debe especificar un tipo de plantilla:
 
 * AEM proporciona una pequeña selección de tipos de plantillas listas para usar, como Página de HTML5 y Página de formulario adaptable.
 
-   * Se proporcionan ejemplos adicionales como parte de la variable [Tutorial de WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+   * Se proporcionan ejemplos adicionales como parte de la variable [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * Los desarrolladores suelen definir los tipos de plantillas.
 
@@ -538,9 +538,9 @@ Al procesar una página:
 * **Componentes**:
 
    * El componente de página combinará las variables `structure/jcr:content` árbol de la plantilla con el `jcr:content` árbol de la página.
-      * El componente de página solo permitirá al autor editar los nodos de la estructura de la plantilla que se han marcado como editables (así como los secundarios).
+      * El componente de página solo permitirá al autor editar los nodos de la estructura de la plantilla que se han marcado como editables (y los secundarios).
       * Al procesar un componente en una página, la ruta relativa de ese componente se toma del `jcr:content` nodo; la misma ruta bajo el `policies/jcr:content` A continuación, se buscará en el nodo de la plantilla.
-         * El `cq:policy` La propiedad de este nodo apunta a la directiva de contenido real (es decir, contiene la configuración de diseño para ese componente).
+         * El `cq:policy` La propiedad de este nodo señala a la directiva de contenido real (es decir, contiene la configuración de diseño para ese componente).
             * Esto le permite tener varias plantillas que reutilizan las mismas configuraciones de directiva de contenido.
 
 ### Disponibilidad de la plantilla {#template-availability}

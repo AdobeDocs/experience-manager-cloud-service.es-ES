@@ -2,16 +2,16 @@
 title: ContextHub
 description: ContextHub es un marco para almacenar, manipular y presentar datos de contexto
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '289'
 ht-degree: 1%
 
 ---
 
 # ContextHub {#contexthub}
 
-ContextHub es un marco de trabajo para almacenar, manipular y presentar datos de contexto. Su característica principal es ofrecer la capacidad de [vea datos de contexto mientras simula y cambia entre varias personalidades.](/help/sites-cloud/authoring/personalization/contexthub.md)
+ContextHub es un marco de trabajo para almacenar, manipular y presentar datos de contexto. Su característica principal es ofrecer la capacidad de [visualización de datos de contexto mientras se simulan y se cambia entre varias personalidades](/help/sites-cloud/authoring/personalization/contexthub.md).
 
 ContextHub, que le permite:
 

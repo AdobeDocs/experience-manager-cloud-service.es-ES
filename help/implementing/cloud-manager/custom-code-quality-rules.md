@@ -2,10 +2,10 @@
 title: Reglas de calidad del código personalizadas
 description: Esta página describe las reglas de calidad del código personalizadas ejecutadas por Cloud Manager como parte de las pruebas de calidad del código. Se basan en las prácticas recomendadas de ingeniería de Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3504'
-ht-degree: 98%
+source-wordcount: '3502'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ Esta página describe las reglas de calidad del código personalizadas ejecutada
 
 >[!NOTE]
 >
->Las reglas completas de SonarQube no están disponibles para su descarga debido a la información de Adobe registrada. Puede descargar la lista completa de reglas [mediante este vínculo.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continúe leyendo este documento para obtener descripciones y ejemplos de las reglas.
+>Las reglas completas de SonarQube no están disponibles para su descarga debido a la información de Adobe registrada. Puede descargar la lista completa de reglas [mediante este vínculo](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Continúe leyendo este documento para obtener descripciones y ejemplos de las reglas.
 
 >[!NOTE]
 >
@@ -504,7 +504,7 @@ public void doThis(Resource resource) {
 
 El planificador de Sling no debe utilizarse para tareas que requieren una ejecución garantizada. Los trabajos programados de Sling garantizan la ejecución y son más adecuados para los entornos agrupados y no agrupados.
 
-Consulte [Documentación sobre eventos de Apache Sling y gestión de trabajos](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información acerca de cómo se administran los trabajos de Sling en entornos agrupados.
+Consulte [Eventos de Apache Sling y administración de trabajos](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información sobre cómo se gestionan los trabajos de Sling en entornos agrupados.
 
 ### Las API en desuso de Experience Manager no deben usarse {#sonarqube-aem-deprecated}
 
@@ -560,7 +560,7 @@ public class DontDoThis implements Page {
 
 Múltiples índices de Oak de Experience Manager listos para usar incluyen una configuración de Tika y las personalizaciones de estos índices deben incluirla. Esta regla comprueba las personalizaciones de los índices `damAssetLucene`, `lucene`y `graphqlConfig` y genera un problema si el nodo `tika`  falta o si el nodo `tika` no tiene un nodo llamado `config.xml`.
 
-Consulte la [documentación de indexación](/help/operations/indexing.md#preparing-the-new-index-definition) para obtener más información sobre la personalización de definiciones de índice.
+Consulte [documentación de indexación](/help/operations/indexing.md#preparing-the-new-index-definition) para obtener más información sobre la personalización de definiciones de índice.
 
 #### Código no conforme {#non-compliant-code-indextikanode}
 
@@ -773,10 +773,10 @@ La configuración OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 Los componentes de Experience Manager que tengan un cuadro de diálogo de IU clásica siempre deben tener un cuadro de diálogo correspondiente de IU táctil. Ambas ofrecen una experiencia de creación óptima y son compatibles con el modelo de implementación de Cloud Service, con el que la IU clásica no es compatible. Esta regla verifica los siguientes escenarios:
 
 * Un componente con un cuadro de diálogo de IU clásica (es decir, un nodo `dialog` secundario) debe tener un cuadro de diálogo correspondiente de la interfaz de usuario táctil (es decir, un nodo `cq:dialog` secundario).
-* Un componente con un cuadro de diálogo de diseño de IU clásica (es decir, un nodo `design_dialog`) debe tener un cuadro de diálogo de diseño de la interfaz de usuario táctil correspondiente (es decir, un nodo `cq:design_dialog` secundario).
+* Un componente con un cuadro de diálogo de diseño de IU clásica (es decir, un componente `design_dialog` ) debe tener un cuadro de diálogo de diseño de la IU táctil correspondiente (es decir, un `cq:design_dialog` nodo secundario).
 * Un componente con un cuadro de diálogo de IU clásica y un cuadro de diálogo de diseño de IU clásica debe tener un cuadro de diálogo de IU táctil correspondiente y un cuadro de diálogo de diseño de IU táctil correspondiente.
 
-La documentación de Herramientas de modernización de Experience Manager proporciona documentación y herramientas para convertir componentes de la IU clásica a la IU táctil. Consulte la [documentación de Herramientas de modernización de Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) para obtener más información.
+La documentación de Herramientas de modernización de Experience Manager proporciona documentación y herramientas para convertir componentes de la IU clásica a la IU táctil. Consulte [la documentación de Herramientas de modernización de Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) para obtener más información.
 
 ### Los paquetes no deben mezclar contenido mutable e inmutable {#oakpal-packages-immutable}
 
@@ -791,7 +791,7 @@ Para que sean compatibles con el modelo de implementación de Cloud Service, los
 >
 >La regla [Los paquetes de clientes no deben crear ni modificar nodos en /libs](#oakpal-customer-package) siempre se aplica.
 
-Consulte [Documentación de la estructura del proyecto de Experience Manager](/help/implementing/developing/introduction/aem-project-content-package-structure.md) para obtener más información.
+Consulte [Estructura del proyecto del Experience Manager](/help/implementing/developing/introduction/aem-project-content-package-structure.md) para obtener más información.
 
 ### No utilizar agentes de replicación inversa {#oakpal-reverse-replication}
 
@@ -800,7 +800,7 @@ Consulte [Documentación de la estructura del proyecto de Experience Manager](/h
 * **Gravedad**: Menor
 * **Desde**: Versión 2020.5.0
 
-El soporte para la replicación inversa no está disponible en las implementaciones de Cloud Service, tal como se describe como parte de las [notas de la versión de Experience Manager as a Cloud Service.](/help/release-notes/aem-cloud-changes.md#replication-agents)
+El soporte para la replicación inversa no está disponible en las implementaciones de Cloud Service, tal como se describe como parte de las [notas de la versión de Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md#replication-agents).
 
 Los clientes que utilizan la replicación inversa deben ponerse en contacto con Adobe para obtener soluciones alternativas.
 
@@ -853,7 +853,7 @@ La herramienta de migración en el [Repositorio de GitHub de Experience Manager 
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Si bien el uso de plantillas estáticas siempre ha sido muy común en proyectos de Experience Manager, Adobe recomienda el uso de plantillas editables, ya que proporcionan la mayor flexibilidad y admiten funciones adicionales que no están presentes en las estáticas. Encontrará más información en el documento [Plantillas de páginas.](/help/implementing/developing/components/templates.md)
+Si bien el uso de plantillas estáticas siempre ha sido muy común en proyectos de Experience Manager, Adobe recomienda el uso de plantillas editables, ya que proporcionan la mayor flexibilidad y admiten funciones adicionales que no están presentes en las estáticas. Encontrará más información en el documento [Plantillas de páginas](/help/implementing/developing/components/templates.md).
 
 La migración de plantillas estáticas a editables se puede automatizar en gran medida mediante las [Herramientas de modernización de Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
 
@@ -864,7 +864,7 @@ La migración de plantillas estáticas a editables se puede automatizar en gran 
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Los componentes de base heredados (es decir, los componentes de `/libs/foundation`) se han quedado obsoletos para varias versiones de Experience Manager en favor de los componentes principales. Se desaconseja el uso de los componentes de base como base para los componentes personalizados (ya sea por superposición o por herencia) y se debe convertir a los componentes principales correspondientes.
+Los componentes básicos heredados (es decir, los componentes de ). `/libs/foundation`) han quedado obsoletas para varias versiones de Experience Manager en favor de los componentes principales. Se desaconseja el uso de los componentes de base como base para los componentes personalizados (ya sea por superposición o por herencia) y se debe convertir a los componentes principales correspondientes.
 
 Esta conversión se puede facilitar mediante las [Herramientas de modernización de Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
 
@@ -884,7 +884,7 @@ Experience Manager as a Cloud Service aplica una estricta directiva de nomenclat
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Experience Manager as a Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) sean nodos secundarios directos de `/oak:index`. Los índices de otras ubicaciones deben moverse para que sean compatibles con Experience Manager as a Cloud Service. Encontrará más información sobre los índices de búsqueda en el documento [Búsqueda de contenido e indexación.](/help/operations/indexing.md)
+El Experience Manager as a Cloud Service requiere definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) ser nodos secundarios directos de `/oak:index`. Los índices de otras ubicaciones deben moverse para que sean compatibles con Experience Manager as a Cloud Service. Encontrará más información sobre los índices de búsqueda en el documento [Búsqueda de contenido e indexación](/help/operations/indexing.md).
 
 ### Los nodos de definición de índice de búsqueda personalizada deben tener una compatVersion de 2 {#oakpal-custom-search-compatVersion}
 
@@ -893,7 +893,7 @@ Experience Manager as a Cloud Service requiere que las definiciones de índice d
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Experience Manager as a Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (como nodos de tipo `oak:QueryIndexDefinition`) tengan la propiedad `compatVersion` establecida en `2`. Experience Manager as a Cloud Service no admite ningún otro valor. Encontrará más información sobre los índices de búsqueda en [Búsqueda de contenido e indexación.](/help/operations/indexing.md)
+Experience Manager as a Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (como nodos de tipo `oak:QueryIndexDefinition`) tengan la propiedad `compatVersion` establecida en `2`. Experience Manager as a Cloud Service no admite ningún otro valor. Encontrará más información sobre los índices de búsqueda en [Búsqueda de contenido e indexación](/help/operations/indexing.md).
 
 ### Los nodos descendientes de los nodos de definición de índice de búsqueda personalizada deben ser del tipo nt:unstructured {#oakpal-descendent-nodes}
 
@@ -920,7 +920,7 @@ Un nodo de definición de índice de búsqueda personalizada definido correctame
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Experience Manager as a Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) tengan un nombre que siga un patrón específico descrito en el documento [Búsqueda e indexación de contenido.](/help/operations/indexing.md)
+Experience Manager as a Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) tengan un nombre que siga un patrón específico descrito en el documento [Búsqueda e indexación de contenido](/help/operations/indexing.md).
 
 ### Los nodos de definición de índice de búsqueda personalizada deben utilizar el tipo de índice Lucene  {#oakpal-index-type-lucene}
 
@@ -929,7 +929,7 @@ Experience Manager as a Cloud Service requiere que las definiciones de índice d
 * **Gravedad**: Bloqueador
 * **Desde**: Versión 2021.2.0 (tipo y gravedad modificados en 2021.8.0)
 
-Experience Manager as a Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) tengan una propiedad `type` con el valor establecido en `lucene`. La indexación con tipos de índice heredados debe actualizarse antes de la migración a Experience Manager as a Cloud Service. Consulte la [Documentación de búsqueda de contenido e indexación](/help/operations/indexing.md#how-to-use) para obtener más información.
+El Experience Manager as a Cloud Service requiere definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) tiene un `type` con el valor establecido en `lucene`. La indexación con tipos de índice heredados debe actualizarse antes de la migración a Experience Manager as a Cloud Service. Consulte la [Documentación de búsqueda de contenido e indexación](/help/operations/indexing.md#how-to-use) para obtener más información.
 
 ### Los nodos de definición de índice de búsqueda personalizada no deben contener una propiedad denominada Semilla {#oakpal-property-name-seed}
 

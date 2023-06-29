@@ -4,9 +4,9 @@ description: AEM Obtenga información acerca de la compatibilidad de los as a Cl
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: 6d391ea86a950a3777311543492b5b89813ae377
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '175'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ AEM Obtenga información acerca de la compatibilidad de los as a Cloud Service d
 >
 >En este documento se describe la integración de Adobe Campaign AEM con la solución nativa de la nube de as a Cloud Service AEM.
 >
->Para obtener más información sobre la integración de Adobe Campaign AEM AEM con 6.5, la solución local o la solución alojada en AMS, haga lo siguiente: [consulte este documento.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)
+>Para obtener más información sobre la integración de Adobe Campaign AEM AEM con 6.5, la solución local o la solución alojada en AMS, haga lo siguiente: [ver este documento](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
 
 ## Integración con Adobe Campaign Classic {#acc}
 

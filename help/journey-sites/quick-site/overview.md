@@ -2,10 +2,10 @@
 title: AEM Recorrido de creación rápida de sitios
 description: Comience aquí para obtener un recorrido guiado a través de la herramienta de creación rápida de sitios AEM fácil de usar, para optimizar el desarrollo front-end de su sitio AEM y personalizar rápidamente su sitio sin conocimiento del servidor de AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 91%
+source-wordcount: '1034'
+ht-degree: 87%
 
 ---
 
@@ -65,7 +65,7 @@ Explorará muchos temas en este recorrido. Los siguientes artículos le proporci
 
 Ya puede empezar su Recorrido de creación rápida de sitios de Adobe.
 
-* Si es administrador de AEM o Cloud Manager, o si cumple las funciones de desarrollador y administrador front-end, o si simplemente desea comprender el proceso de extremo a extremo en AEM, comience al principio del recorrido con [Comprensión de Cloud Manager](cloud-manager.md), como se indica a continuación.
+* AEM AEM Si es administrador de Experience Cloud Manager o de un administrador, o si cumple las funciones de desarrollador y administrador front-end, o si simplemente desea comprender el proceso de extremo a extremo en las funciones de administrador de Cloud Manager, comience por el principio del recorrido con el método de la administración de la configuración de la aplicación de usuario, que incluye las siguientes funciones: [Comprender Cloud Manager](cloud-manager.md) como se indica a continuación.
 * Si solo es responsable del desarrollo front-end e interactuará con los administradores de AEM y Cloud Manager, puede saltar a [Recuperación de información de acceso al repositorio de Git](retrieve-access.md) para obtener acceso al repositorio de Git de AEM y comenzar a personalizar.
 * Si ya comprende que AEM Sites y Cloud Manager trabajan juntos y quiere comenzar directamente con la configuración, puede [ir directamente a la creación de un sitio nuevo a partir de una plantilla.](create-site.md)
 

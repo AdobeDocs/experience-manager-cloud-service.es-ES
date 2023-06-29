@@ -2,10 +2,10 @@
 title: Ruta hacia la primera experiencia para usar AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de AEM sin encabezado, comprenderá los pasos para aplicar su primera experiencia sin encabezado en AEM, incluidas las consideraciones de planificación, y también aprenderá las prácticas recomendadas para que su ruta sea lo más fluida posible.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2013'
-ht-degree: 98%
+source-wordcount: '2012'
+ht-degree: 96%
 
 ---
 
@@ -76,7 +76,7 @@ Los autores de contenido crean contenido en función de los modelos de contenido
 
 Antes de empezar con el contenido sin encabezado de AEM, debe asegurarse de que todas las funciones necesarias estén habilitadas. Esta sección describe lo que se requiere. Los pasos reales para realizar estos pasos se detallan más adelante en la sección [Recorrido para desarrolladores de AEM sin encabezado.](#overview.md)
 
-También puede consultar los [recursos adicionales](#additional-resources) para obtener más información sobre temas individuales.
+Si lo desea, también puede ver [recursos adicionales](#additional-resources) para obtener más información sobre los temas concretos.
 
 ### Configuración {#configuration}
 
@@ -106,7 +106,7 @@ Un proyecto sin encabezado no solo es exitoso debido a la tecnología implementa
 * Agrupe contenido similar en una carpeta.
    * Esto facilita que un autor de contenido copie y pegue el contenido existente para crear contenido nuevo. Por lo tanto, hacer esto en la misma carpeta lo hace más eficiente.
    * AEM permite establecer los modelos permitidos por carpeta, de modo que el botón **Crear nuevo** solo muestra los modelos compatibles con esa ubicación.
-* La creación del editor de fragmentos de contenido en línea de nuevos fragmentos de contenido se puede simplificar si la carpeta raíz está configurada en el modelo. Entonces el profesional no tiene que elegir una ubicación, solo necesita proporcionar un nombre para comenzar a editar la nueva referencia.
+* La creación del editor de fragmentos de contenido en línea de nuevos fragmentos de contenido se puede simplificar si la carpeta raíz está configurada en el modelo. A continuación, el profesional no tiene que elegir una ubicación, sino que solo necesita proporcionar un nombre y puede empezar a editar la nueva referencia.
 
 ### Creación de contenido {#authoring}
 

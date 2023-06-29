@@ -2,10 +2,10 @@
 title: AEM Migración al complemento Marco de integración de comercio de (CIF)
 description: AEM Migración del complemento Commerce Integration Framework (CIF) de la versión antigua a la versión de la plataforma de integración de comercio de la versión de
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 45%
+source-wordcount: '490'
+ht-degree: 40%
 
 ---
 
@@ -15,7 +15,7 @@ Esta guía ayuda a identificar las áreas que debe actualizar para la migración
 
 ## Complemento CIF
 
-Para Experience Manager as a Cloud Service, el complemento CIF es la única solución de integración comercial compatible para Adobe Commerce y soluciones de comercio de terceros. El complemento CIF se implementa automáticamente para los clientes de Experience Manager as a Cloud Service; no se necesita una implementación manual. Consulte [Introducción a AEM Commerce as a Cloud Service](getting-started.md).
+Para los Experience Manager as a Cloud Service, el complemento CIF es la única solución de integración comercial compatible para Adobe Commerce y las soluciones de comercio de terceros. El complemento CIF se implementa automáticamente para los clientes de Experience Manager as a Cloud Service; no se necesita una implementación manual. Consulte [Introducción a AEM Commerce as a Cloud Service](getting-started.md).
 
 Para apoyar proyectos que implementen el Adobe del CIF, proporcione [AEM Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components).
 

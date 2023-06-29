@@ -2,7 +2,7 @@
 title: Preguntas frecuentes sobre Cloud Manager
 description: AEM Encuentre respuestas a las preguntas más frecuentes acerca de Cloud Manager en as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 65%
@@ -58,11 +58,11 @@ Este valor permite que la implementación posterior se siga instalando cuando la
 
 También puede establecer la versión a `-SNAPSHOT` para generaciones o implementaciones de fase y producción. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
 
-Para obtener más información sobre la administración de versiones, consulte [estos documentos.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+Para obtener más información sobre la administración de versiones, consulte [estos documentos](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## ¿Cómo funcionan las versiones de paquetes para las implementaciones de fase y producción? {#snapshot-version}
 
-En las implementaciones de fase y producción, se genera una versión automática como [documentada aquí.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+En las implementaciones de fase y producción, se genera una versión automática como [documentada aquí](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión de Maven adecuada como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
 

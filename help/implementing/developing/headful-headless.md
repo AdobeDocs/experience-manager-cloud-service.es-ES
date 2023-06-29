@@ -1,17 +1,17 @@
 ---
 title: Encabezado y sin encabezado en AEM
-description: Los proyectos de AEM se pueden implementar en un modelo con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
+description: AEM Los proyectos de se pueden implementar en un modelo con encabezado y sin encabezado, pero la opción no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 96%
+source-wordcount: '1010'
+ht-degree: 89%
 
 ---
 
 # Encabezado y sin encabezado en AEM {#headful-headless}
 
-Los proyectos de Adobe Experience Manager se pueden implementar tanto en modelos con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto. Este documento proporciona información general sobre los diferentes modelos y describe los niveles de integración de las SPA.
+Los proyectos de Adobe Experience Manager se pueden implementar en modelos con encabezado y sin encabezado, pero la opción no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto. Este documento proporciona información general sobre los diferentes modelos y describe los niveles de integración de las SPA.
 
 ## Información general {#overview}
 
@@ -43,7 +43,7 @@ La siguiente sección explora estos niveles de integración con más detalle.
 
 >[!NOTE]
 >
->SPA AEM SPA Por supuesto, también podría volver a implementar la tienda web como un sitio web que funciona por completo como un sitio web que funciona a la vez que se convierte en un sitio web que funciona a la vez en un [AEM SPA Uso del marco de trabajo del Editor de.](/help/implementing/developing/hybrid/introduction.md) Si ya tiene AEM y desea crear una nueva tienda web u otras SPA, este es el método recomendado, pero queda fuera del alcance de este documento.
+>SPA AEM SPA Por supuesto, también podría volver a implementar la tienda web como un sitio web que funciona por completo como un sitio web que funciona a la vez que se convierte en un sitio web que funciona a la vez en un [AEM SPA Uso del marco de trabajo del Editor de](/help/implementing/developing/hybrid/introduction.md). Si ya tiene AEM y desea crear una nueva tienda web u otras SPA, este es el método recomendado, pero queda fuera del alcance de este documento.
 
 ## Niveles de integración de las SPA {#integration-levels}
 
@@ -54,18 +54,18 @@ La integración de una SPA se encuentra en un rango de cuatro niveles en AEM.
    * El contenido se crea, gestiona y entrega de forma independiente en dos sistemas separados.
 * **Nivel 1: integración de fragmentos de contenido**
    * Los [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md) se utilizan en AEM para crear y administrar contenido limitado para las SPA.
-   * Las SPA recuperan este contenido a través de la [API de GraphQL](/help/headless/graphql-api/content-fragments.md) de AEM.
+   * SPA AEM El recupera este contenido a través de la opción de [API de GraphQL](/help/headless/graphql-api/content-fragments.md).
    * Algunos contenidos se administran en AEM, y otros, en un sistema externo.
    * El contenido solo se puede ver en las SPA.
 * **Nivel 2: incrustar las SPA en AEM**
    * Los [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md) se utilizan en AEM para crear y administrar el contenido de las SPA.
-   * La SPA recupera este contenido a través de la [API de GraphQL](/help/headless/graphql-api/content-fragments.md) de AEM.
+   * SPA AEM El recupera este contenido a través de la opción de [API de GraphQL](/help/headless/graphql-api/content-fragments.md).
    * Algunos contenidos se administran en AEM, y otros, en un sistema externo.
    * El contenido se puede ver en contexto dentro de AEM.
    * El contenido limitado se puede editar dentro de AEM.
 * **Nivel 3: incrustar y habilitar completamente la SPA en AEM**
    * Los [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md) se utilizan en AEM para crear y administrar el contenido de la SPA.
-   * La SPA recupera este contenido a través de la [API de GraphQL](/help/headless/graphql-api/content-fragments.md) de AEM.
+   * SPA AEM El recupera este contenido a través de la opción de [API de GraphQL](/help/headless/graphql-api/content-fragments.md).
    * El contenido se puede ver en contexto dentro de AEM.
    * La mayoría del contenido se puede editar dentro de AEM.
 
@@ -80,6 +80,6 @@ Existen diferentes herramientas disponibles en AEM según el nivel de integraci�
 * **Nivel 1:** los fragmentos de contenido y el [marco de trabajo de AEM sin encabezado](/help/headless/introduction.md) se pueden utilizar para enviar contenido AEM a la SPA.
 * **Nivel 2:** Además del nivel uno:
    * [El componente RemotePage](/help/implementing/developing/hybrid/remote-page.md) se puede utilizar para integrar la SPA externa en AEM donde el contenido de AEM se puede ver en contexto.
-   * Algunos puntos de la SPA también se pueden habilitar para [permitir la edición limitada en AEM.](/help/implementing/developing/hybrid/editing-external-spa.md)
+   * Algunos puntos de la SPA también se pueden habilitar para [permitir la edición limitada en AEM](/help/implementing/developing/hybrid/editing-external-spa.md).
 * **Nivel 3:** Además del nivel dos:
    * Se pueden habilitar zonas enteras de la SPA para permitir una edición completa en AEM.

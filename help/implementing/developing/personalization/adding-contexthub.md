@@ -1,17 +1,17 @@
 ---
 title: Adición de ContextHub a las páginas y acceso a las tiendas
-description: Añada ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub
+description: Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
 
 # Adición de ContextHub a las páginas y acceso a las tiendas {#adding-contexthub-to-pages-and-accessing-stores}
 
-Añada ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub.
+Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub.
 
 La API de JavaScript de ContextHub proporciona acceso a los datos de contexto que administra ContextHub. Esta página describe brevemente las principales funciones de la API para acceder y manipular los datos de contexto. Siga los vínculos a la documentación de referencia de la API para ver información detallada y ejemplos de código.
 
@@ -44,7 +44,7 @@ Las tiendas de Context Hub utilizan uno de los siguientes modos de persistencia:
 * **Sesión:** Utiliza sessionStorage de HTML5 para mantener los datos. El almacenamiento de sesión se mantiene durante la sesión del explorador y está disponible para todas las ventanas del explorador.
 * **Cookie:** Utiliza la compatibilidad nativa del explorador con las cookies para el almacenamiento de datos. Los datos de cookies se envían y reciben del servidor en solicitudes HTTP.
 * **Window.name:** Utiliza la propiedad window.name para mantener los datos.
-* **Memoria:** Utiliza un objeto Javascript para mantener los datos.
+* **Memoria:** Utiliza un objeto JavaScript para mantener los datos.
 
 De forma predeterminada, ContextHub utiliza el modo de persistencia local. Si el explorador no admite ni permite el almacenamiento local de HTML5, se utiliza la persistencia de la sesión. Si el explorador no admite ni permite sessionStorage de HTML5, se utiliza la persistencia Window.name.
 
@@ -83,7 +83,7 @@ La estructura de árbol define los elementos de datos del almacén como pares cl
 
 ### Manipulación de objetos {#manipulating-objects}
 
-ContextHub proporciona el [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) para manipular objetos Javascript. Utilice las funciones de esta clase para manipular los objetos Javascript antes de agregarlos a un almacén o después de obtenerlos de un almacén.
+ContextHub proporciona el [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) para manipular objetos JavaScript. Utilice las funciones de esta clase para manipular los objetos JavaScript antes de agregarlos a un almacén o después de obtenerlos de un almacén.
 
 Además, la variable [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) proporciona funciones para serializar objetos en cadenas y deserializar cadenas en objetos. Utilice esta clase para administrar datos JSON con el fin de admitir exploradores que no incluyan de forma nativa la variable `JSON.parse` y `JSON.stringify` funciones.
 
@@ -113,7 +113,7 @@ Tenga en cuenta que los candidatos de tienda personalizados pueden definir funci
 
 ### Eventos de ContextHub {#contexthub-eventing}
 
-ContextHub incluye un marco de trabajo de eventos que le permite reaccionar automáticamente ante los eventos de almacenamiento. Cada objeto de almacén contiene un [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) que está disponible como el de la tienda [`eventing`](contexthub-api.md#eventing) propiedad. Utilice el [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) o [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) para enlazar una función de JavaScript a un evento de almacén.
+ContextHub incluye un marco de trabajo de eventos que le permite reaccionar automáticamente ante los eventos de almacenamiento. Cada objeto de almacén contiene un [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) que está disponible como el de la tienda [`eventing`](contexthub-api.md#eventing) propiedad. Utilice el [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) o [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) para enlazar una función de JavaScript a un evento de tienda.
 
 ## Uso de ContextHub para manipular las cookies {#using-context-hub-to-manipulate-cookies}
 
@@ -127,7 +127,7 @@ El motor de segmentos de ContextHub permite determinar qué segmentos registrado
 
 Los segmentos de ContextHub se instalan debajo de `/conf/<site>/settings/wcm/segments` nodo.
 
-Los siguientes segmentos se instalan con [Sitio del tutorial de WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Los siguientes segmentos se instalan con [Sitio del tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * verano
 * invierno

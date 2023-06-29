@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service y las directrices de accesibilidad web
 description: Una introducción a Adobe Experience Manager as a Cloud Service y las directrices de accesibilidad web
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ Crear sitios web y contenidos accesibles con AEM as a Cloud Service afecta a:
 
 * Autores que utilizan estas funciones para crear sitios web accesibles.
 
-   Crear contenido accesible es un proceso. AEM ofrece las funciones, pero los autores de contenido deben asegurarse de que siguen las técnicas necesarias para crear contenidos accesibles.
+  Crear contenido accesible es un proceso. AEM ofrece las funciones, pero los autores de contenido deben asegurarse de que siguen las técnicas necesarias para crear contenidos accesibles.
 
 * Los desarrolladores de plantillas también deben tener en cuenta estos problemas al implementar el diseño del sitio web.
 
@@ -64,4 +64,4 @@ Con Adobe Experience Manager, los autores de contenido o los propietarios de sit
 
 ## Accesibilidad en Adobe {#accessibility-at-adobe}
 
-Para obtener más información, visite el [Centro de recursos de accesibilidad de Adobe](https://www.adobe.com/accessibility/).
+Para obtener más información, consulte [Centro de recursos de accesibilidad de Adobe](https://www.adobe.com/accessibility/).

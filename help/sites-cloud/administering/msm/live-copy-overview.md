@@ -4,7 +4,7 @@ description: Obtenga información acerca de los conceptos básicos de la consola
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 92%
@@ -32,7 +32,7 @@ Puede abrir la Información general de Live Copy desde estas ubicaciones:
 
 La **Información general de Live Copy** se puede abrir desde el panel lateral **Referencias** de la consola **Sites**:
 
-1. En la consola **Sites**, [vaya a la página de modelo y selecciónela.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. En la consola **Sites**, [vaya a la página de modelo y selecciónela](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra el carril **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** y seleccione **Live Copies**.
 
    ![Live Copy desde el carril Referencias](../assets/live-copy-references.png)

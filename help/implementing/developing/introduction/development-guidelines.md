@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2586'
 ht-degree: 5%
 
 ---
@@ -65,7 +65,7 @@ Las alternativas que funcionan, pero que pueden requerir que usted proporcione l
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (no se recomienda porque está obsoleto y se ha sustituido por la versión 4.x)
 * [Aceptar Http](https://square.github.io/okhttp/) AEM (No proporcionado por el)
 
-Además de proporcionar tiempos de espera, se debe implementar un manejo adecuado de estos, así como códigos de estado HTTP inesperados.
+Además de proporcionar tiempos de espera, se debe implementar un manejo adecuado de estos tiempos de espera y códigos de estado HTTP inesperados.
 
 ## Sin personalizaciones de IU clásica {#no-classic-ui-customizations}
 
@@ -152,7 +152,7 @@ Los niveles de registro son los siguientes:
 
 ### Volcados de procesos {#thread-dumps}
 
-Los volcados de hilos en entornos de Cloud se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. AEM Mientras tanto, póngase en contacto con el servicio de soporte técnico de la comunidad si son necesarios volcados de procesos para depurar un problema, especificando la ventana de tiempo exacta.
+Los volcados de hilos en entornos de Cloud se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. AEM Mientras tanto, póngase en contacto con el servicio de asistencia técnica de la si son necesarios volcados de hilos para depurar un problema, especificando la ventana de tiempo exacta.
 
 ## CRX/DE Lite y Developer Console {#crxde-lite-and-developer-console}
 
@@ -286,4 +286,4 @@ Consulte la [Documentación de Apache Oak](https://jackrabbit.apache.org/oak/doc
 
 ## [!DNL Assets] directrices de desarrollo y casos de uso {#use-cases-assets}
 
-Para obtener más información sobre los casos de uso de desarrollo, las recomendaciones y los materiales de referencia de los recursos as a Cloud Service, consulte [Referencias de desarrollador para Assets.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+Para obtener más información sobre los casos de uso de desarrollo, las recomendaciones y los materiales de referencia de los recursos as a Cloud Service, consulte [Referencias de desarrollador para Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

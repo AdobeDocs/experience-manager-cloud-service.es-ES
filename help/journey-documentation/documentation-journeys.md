@@ -3,10 +3,10 @@ title: Recorridos de documentación de AEM
 description: Los Recorrido AEM de documentación proporcionan una estructura narrativa dentro de la documentación de la documentación de al unir funciones complejas y dispares para que pueda solucionar un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 90%
+source-wordcount: '1349'
+ht-degree: 88%
 
 ---
 
@@ -40,7 +40,7 @@ Si desea saber cómo recomienda Adobe resolver los casos empresariales con AEM, 
 
 ## ¿Cómo se estructura un Recorrido de documentación? {#structure}
 
-Un Recorrido de documentación sirve como una introducción basada en las prácticas recomendadas sobre cómo resuelve AEM los problemas empresariales comunes. Por esta razón, cada recorrido está diseñado con lectores nuevos de AEM en mente, exponiendo el problema de la empresa, describiendo cualquier teoría necesaria y luego dando una visión paso a paso de cómo AEM resuelve el problema. Debido a la naturaleza exhaustiva de un recorrido, puede ser útil para lectores nuevos de AEM así como para usuarios experimentados.
+Un Recorrido de documentación sirve como una introducción basada en las prácticas recomendadas sobre cómo resuelve AEM los problemas empresariales comunes. Por esta razón, cada recorrido está diseñado con lectores nuevos de AEM en mente, exponiendo el problema de la empresa, describiendo cualquier teoría necesaria y luego dando una visión paso a paso de cómo AEM resuelve el problema. Debido a la naturaleza exhaustiva de un recorrido AEM, puede ser útil para lectores nuevos y usuarios experimentados en la práctica de los usuarios de la aplicación y de los usuarios de la aplicación de la aplicación de la manera más avanzada posible.
 
 Un recorrido de documentación típico consta de las siguientes partes.
 
@@ -82,7 +82,7 @@ Los Recorridos de documentación están pensados como un complemento de la docum
 
 ## ¿Qué recorridos hay? {#journeys}
 
-Ya hay disponibles varios recorridos de documentación. Dado que cada recorrido AEM está diseñado como una narrativa, empiece con la introducción y siga leyendo hasta el final para que pueda comprender el tema en el contexto de la.
+Ya hay disponibles varios recorridos de documentación. Dado que cada recorrido AEM está diseñado como una narrativa, empiece con la introducción y siga leyendo hasta el final para poder comprender el tema en el contexto de la creación de informes de temas en el contexto de la creación de informes de temas de la comunidad de usuarios de la comunidad de temas de la comunidad de temas de la comunidad de temas de la comunidad de temas de la comunidad de temas de la comunidad de temas de la comunidad de temas de la comunidad de temas de la comunidad de temas de la comunidad de temas de la comunidad de la comunidad de temas de la comunidad de temas de la comunidad de temas de la comunidad de temas de la comunidad de temas de la comunidad de temas
 
 | Recorrido | Descripción |
 |---|---|

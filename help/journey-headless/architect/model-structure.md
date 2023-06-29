@@ -2,10 +2,10 @@
 title: Obtenga información acerca de la creación de modelos de fragmento de contenido en AEM
 description: Obtenga información sobre los conceptos y la mecánica del contenido de modelado para su CMS sin periféricos usando modelos de fragmentos de contenido.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 89%
+source-wordcount: '687'
+ht-degree: 84%
 
 ---
 
@@ -63,7 +63,7 @@ Puede arrastrar instancias del **Tipos de datos** en el espacio izquierdo: ya es
 
  ![Definición de campos](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Una vez que haya agregado un tipo de datos, se le pedirá que defina las **Propiedades** para ese campo. Estas dependerán del tipo que se utilice. Por ejemplo:
+Después de agregar un tipo de datos, es necesario definir el **Propiedades** para ese campo. Estas dependerán del tipo que se utilice. Por ejemplo:
 
 ![Propiedades de datos](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ Se pueden agregar tantos campos como se necesite. Por ejemplo:
 
 ### Sus autores de contenido {#your-content-authors}
 
-Sus autores de contenido no verán los tipos de datos ni las propiedades reales que utilizó para crear los modelos. Esto significa que es posible que tenga que proporcionar ayuda e información sobre cómo completar campos específicos. Para obtener información básica, puede utilizar la etiqueta de campo y el valor predeterminado, pero puede que sea necesario tener en cuenta casos más complejos como la documentación específica del proyecto.
+Los autores de contenido no ven los tipos de datos y las propiedades reales que ha utilizado para crear los modelos. Esto significa que es posible que tenga que proporcionar ayuda e información sobre cómo completar campos específicos. Para obtener información básica, puede utilizar la etiqueta de campo y el valor predeterminado, pero puede que sea necesario tener en cuenta casos más complejos como la documentación específica del proyecto.
 
 >[!NOTE]
 >

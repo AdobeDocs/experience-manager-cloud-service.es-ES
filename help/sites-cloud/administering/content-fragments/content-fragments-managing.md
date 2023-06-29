@@ -4,10 +4,10 @@ description: Aprenda a utilizar la consola Fragmentos de contenido para administ
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 81%
+source-wordcount: '2054'
+ht-degree: 76%
 
 ---
 
@@ -71,7 +71,7 @@ Crear un fragmento de contenido:
 1. Se abre el cuadro de diálogo **Nuevo fragmento de contenido** desde donde puede especificar lo siguiente:
 
    * **Ubicación** - completado automáticamente con la ubicación actual, pero puede seleccionar una ubicación diferente si es necesario
-   * **Modelo de fragmento de contenido**: seleccione el modelo que desea utilizar como base del fragmento en la lista desplegable.
+   * **Modelo de fragmento de contenido** : seleccione el modelo que desea utilizar como base del fragmento en la lista desplegable
    * **Título**
    * **Nombre** - completado automáticamente en función de **Título**, pero puede editarlo si es necesario
    * **Descripción**
@@ -101,7 +101,7 @@ Abra el fragmento para su edición:
 
 >[!CAUTION]
 >
->Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
+>Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene problemas, póngase en contacto con el administrador del sistema.
 
 1. Utilice la consola **Fragmentos de contenido** para desplazarse a la ubicación del fragmento de contenido.
 1. Abra el fragmento para editarlo, seleccionando el fragmento y **Abrir** en la barra de herramientas.
@@ -186,7 +186,7 @@ El editor tiene varias opciones:
 
   >[!CAUTION]
   >
-  >Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
+  >Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene problemas, póngase en contacto con el administrador del sistema.
 
   >[!NOTE]
   >
@@ -196,7 +196,7 @@ El editor tiene varias opciones:
   >
   >Además de guardar los cambios, las acciones actualizan también las referencias y garantizan que Dispatcher se vacíe según sea necesario. Estos cambios pueden tardar un tiempo en procesarse. Debido a esto, puede haber un impacto en el rendimiento de un sistema grande/complejo/con gran carga.
   >
-  >Tenga esto en cuenta al utilizar **Guardar y cerrar** y, a continuación, reintroduciendo rápidamente el editor de fragmentos para realizar y guardar más cambios.
+  >Tenga en cuenta este tiempo de proceso al utilizar **Guardar y cerrar** y, a continuación, reintroduzca rápidamente el editor de fragmentos para realizar y guardar más cambios.
 
 * **Cerrar**
 
@@ -251,7 +251,7 @@ Puede publicar los fragmentos de contenido en:
 
   >[!NOTE]
   >
-  Para obtener más información sobre los entornos de vista previa, consulte:
+  Para obtener más información sobre los entornos de vista previa, consulte lo siguiente:
   >
   * [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [Configuración de OSGi para el nivel de vista previa](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)

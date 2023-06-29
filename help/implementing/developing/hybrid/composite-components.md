@@ -2,7 +2,7 @@
 title: Componentes compuestos en SPA
 description: AEM SPA Aprenda a crear sus propios componentes compuestos, componentes formados por otros componentes, que funcionan con el Editor de aplicaciones de una sola página () de la aplicación de una sola página (SPA) de la.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -19,7 +19,7 @@ AEM SPA Este artículo muestra cómo puede agregar un componente compuesto a la 
 
 ## Caso práctico {#use-case}
 
-Este artículo utiliza el componente de tarjeta típico como ejemplo de uso. Las tarjetas son un elemento de la interfaz de usuario común para muchas experiencias digitales y suelen estar formadas por una imagen y un texto o rótulo asociado. Un autor quiere poder arrastrar y soltar toda la tarjeta, pero puede editar individualmente la imagen de la tarjeta, así como personalizar el texto asociado.
+Este artículo utiliza el componente de tarjeta típico como ejemplo de uso. Las tarjetas son un elemento de la interfaz de usuario común para muchas experiencias digitales y suelen estar formadas por una imagen y un texto o rótulo asociado. Un autor desea poder arrastrar y soltar toda la tarjeta, pero puede editar individualmente la imagen de la tarjeta y personalizar el texto asociado.
 
 ## Requisitos previos {#prerequisites}
 
@@ -118,7 +118,7 @@ function Home() {
 }
 ```
 
-Esto mostrará un marcador de posición vacío para un texto y una imagen en el editor. Al introducir valores para estos elementos mediante el editor, se almacenan en la ruta de página especificada, es decir `/content/wknd-spa/home`  en el nivel raíz con los nombres especificados en `itemPath`.
+Esto mostrará un marcador de posición vacío para un texto y una imagen en el editor. Al introducir valores para estos elementos mediante el editor, se almacenan en la ruta de página especificada, que es, `/content/wknd-spa/home`  en el nivel raíz con los nombres especificados en `itemPath`.
 
 ![Componente de tarjeta compuesta en el editor](assets/composite-card.png)
 
@@ -156,7 +156,7 @@ SPA A continuación, puede agregarlo a la y recuperar su contenido.
     itemPath='root/responsivegrid' />
    ```
 
-1. Añada el creado `wknd-spa/components/imagecard` a los componentes permitidos para el componente contenedor [en la plantilla de página.](/help/sites-cloud/authoring/features/templates.md)
+1. Añada el creado `wknd-spa/components/imagecard` a los componentes permitidos para el componente contenedor [en la plantilla de página](/help/sites-cloud/authoring/features/templates.md).
 
 Ahora, la `imagecard` AEM El componente se puede añadir directamente al contenedor en el editor de.
 

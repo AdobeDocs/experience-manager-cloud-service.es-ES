@@ -2,10 +2,10 @@
 title: Comprender Cloud Manager y el flujo de trabajo de creación rápida de sitios
 description: Obtenga información sobre Cloud Manager y cómo vincula el nuevo proceso de creación rápida de sitios.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 100%
+source-wordcount: '1128'
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ Para el desarrollador front-end, no es necesario utilizar AEM.
 
 >[!TIP]
 >
->Si no está familiarizado con las funciones y la administración de funciones de Cloud Manager, consulte el documento Permisos basados en roles en la sección [Recursos adicionales](#additional-resources).
+>Si no está familiarizado con las funciones y la administración de funciones de Cloud Manager, consulte el documento Permisos basados en roles en la [Recursos adicionales](#additional-resources) sección.
 
 ## Cloud Manager {#cloud-manager}
 

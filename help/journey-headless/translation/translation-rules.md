@@ -2,7 +2,7 @@
 title: Configuración de reglas de traducción para contenido sin encabezado
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 98%
@@ -27,7 +27,7 @@ Ahora que el conector está configurado, este artículo le explica el siguiente 
 >Este paso del recorrido de la documentación solo es necesario si no utiliza el indicador **Traducible** en los fragmentos de contenido.
 >
 >* El indicador **Traducible** crea automáticamente reglas de traducción y no requiere intervención.
->* El indicador **Traducible** solo se utiliza si la configuración del marco de trabajo de integración de traducción está establecida en **[Habilitar los campos del modelo de contenido para la traducción.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* El indicador **Traducible** solo se utiliza si la configuración del marco de trabajo de integración de traducción está establecida en **[Habilitar los campos del modelo de contenido para la traducción](/help/sites-cloud/administering/translation/integration-framework.md)**.
 >* Al habilitar esta opción en la configuración de TIF, se reemplazará cualquier regla de traducción creada manualmente.|
 
 ## Objetivo {#objective}

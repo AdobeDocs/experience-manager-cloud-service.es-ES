@@ -4,10 +4,10 @@ description: Aprenda a configurar el marco de trabajo de integración de traducc
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 803a7788cde37fb0026f7cc3582efb33c10e1358
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1518'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Para obtener una descripción general de las funciones de traducción de conteni
 
 >[!TIP]
 >
->Si es nuevo traduciendo contenido, consulte nuestro [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las potentes herramientas de traducción de AEM. Es ideal para aquellos que no tengan experiencia ni en traducción ni en AEM.
+>Si acaba de empezar a traducir contenido, consulte [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
 
 ## Conexión a un proveedor de servicios de traducción {#connecting-to-a-translation-service-provider}
 
@@ -73,7 +73,7 @@ Una sola configuración del marco de trabajo controla cómo se traducen el conte
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. A menudo se basa en un sitio en particular, pero puede ser global.
 1. Proporcione la siguiente información en los campos y, a continuación, pulse o haga clic en **Crear**:
    1. Seleccione **Tipo de configuración** en la lista desplegable.
-   1. Escriba un **Título** para su configuración. El **Título** identifica la configuración en la consola **Cloud Services**, así como en las listas desplegables de propiedad de página.
+   1. Escriba un **Título** para su configuración. El **Título** identifica la configuración en **Cloud Services** y en las listas desplegables de propiedades de página.
    1. De forma opcional, escriba un **Nombre** para usarlo en el nodo del repositorio que almacena la configuración.
 1. En la ventana **Editar configuración**, configure las propiedades de las pestañas **Sitios** y **Recursos** y, a continuación, pulse o haga clic en **Guardar y cerrar**.
 

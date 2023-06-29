@@ -2,9 +2,9 @@
 title: Replicación
 description: Distribución y resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1339'
 ht-degree: 45%
 
 ---
@@ -182,7 +182,7 @@ El conjunto `ReplicationStatus` de un recurso solo se modifica si la acción de 
 
 ### Métodos de invalidación de contenido {#invalidating-content}
 
-Puede invalidar contenido directamente utilizando Invalidación de contenido de Sling (SCD) del autor (el método preferido) o utilizando la API de replicación para invocar el agente de replicación de vaciado de Dispatcher de publicación. Consulte la [Almacenamiento en caché](/help/implementing/dispatcher/caching.md) para obtener más información.
+Puede invalidar contenido directamente utilizando Invalidación de contenido de Sling (SCD) del autor (el método preferido) o utilizando la API de replicación para invocar el agente de replicación de vaciado de Dispatcher de publicación. Consulte [Almacenamiento en caché](/help/implementing/dispatcher/caching.md) para obtener más información.
 
 **Límites de capacidad de la API de replicación**
 

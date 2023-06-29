@@ -2,9 +2,9 @@
 title: Crear contenido accesible para Adobe Experience Manager as a Cloud Service (conformidad con WCAG 2.1)
 description: Utilice AEM as a Cloud Service para ayudar a que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '13864'
+source-wordcount: '13862'
 ht-degree: 99%
 
 ---
@@ -436,7 +436,7 @@ De la misma manera, la información que requiere distinguir entre sonidos distin
 
 >[!NOTE]
 >
-Para los requisitos relativos a las alternativas de color, consulte [Uso del color](#use-of-color).
+Para conocer los requisitos relacionados con las alternativas de color, consulte [Uso del color](#use-of-color).
 
 #### Cómo cumplir: Características sensoriales (1.3.3)     {#how-to-meet-sensory-characteristics}
 

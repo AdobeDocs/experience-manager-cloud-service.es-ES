@@ -2,10 +2,10 @@
 title: Registro, inicio de sesión y perfil de usuario
 description: Obtenga información sobre el registro, el inicio de sesión, los datos de usuario y la sincronización de grupos para AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 90%
+source-wordcount: '1167'
+ht-degree: 88%
 
 ---
 
@@ -100,7 +100,7 @@ La información de perfil del usuario se puede escribir y leer de dos maneras:
 
 Los datos del usuario final se pueden enviar a proveedores de terceros como CRM, recuperar mediante API al iniciar sesión en AEM y conservarlos (o actualizarlos) en el nodo de perfil del usuario de AEM. AEM los puede utilizar según sea necesario.
 
-El acceso en tiempo real a servicios de terceros para recuperar atributos de perfil es posible, pero es importante asegurarse de que esto no afecte sustancialmente al procesamiento de solicitudes en AEM.
+AEM El acceso en tiempo real a servicios de terceros para recuperar atributos de perfil es posible, pero es importante asegurarse de que esto no afecte sustancialmente al procesamiento de solicitudes en los.
 
 ## Permisos (grupos de usuarios cerrados) {#permissions-closed-user-groups}
 

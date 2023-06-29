@@ -2,10 +2,10 @@
 title: Introducción al contenido sin encabezado de AEM as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3087'
-ht-degree: 94%
+source-wordcount: '3084'
+ht-degree: 93%
 
 ---
 
@@ -85,7 +85,7 @@ Para modificar el contenido sin problemas, AEM ofrece dos API sólidas.
 * La API de GraphQL permite crear solicitudes para acceder a fragmentos de contenido y enviarlos.
 * La API de REST de Assets permite crear y modificar fragmentos de contenido (y otros recursos).
 
-Aprenderá a utilizar estas API en una parte posterior del recorrido sin encabezado de AEM. O consulte la sección de [recursos adicionales](#additional-resources) para obtener más documentación.
+Aprenderá a utilizar estas API en una parte posterior del recorrido sin encabezado de AEM. O consulte [recursos adicionales](#additional-resources) para obtener documentación adicional.
 
 ## Niveles de integración sin encabezado {#integration-levels}
 
@@ -145,7 +145,7 @@ Para que cualquier proyecto tenga éxito, es importante definir claramente no so
 
 Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa acerca de los criterios de aceptación y le permite establecer una definición de listo.
 
-La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” AEM La respuesta debería ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con las que no ha podido crear una aplicación de experiencia. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
+La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” AEM La respuesta debería ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con las que no tiene que hacer nada. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
 
 ### Funciones y responsabilidades {#roles-responsibilities}
 
@@ -190,7 +190,7 @@ Consulte la sección [recursos adicionales](#additional-resources) para obtener 
 La jerarquía de carpetas puede resolver dos problemas importantes con respecto a la administración de contenido:
 
 * [Traducción](#translation): AEM administra la traducción del contenido manteniendo copias del contenido en carpetas específicas de la configuración regional.
-* Organización: las carpetas se utilizan para definir una jerarquía de contenido necesaria con el fin de satisfacer las necesidades de traducción y administrar lógicamente los fragmentos de contenido.
+* Organización: las carpetas se utilizan para definir una jerarquía de contenido necesaria para satisfacer las necesidades de traducción y administrar lógicamente los fragmentos de contenido.
 
 AEM permite una estructura de contenido flexible, y una jerarquía puede ser arbitrariamente grande. Sin embargo, es importante darse cuenta de que cualquier cambio en la estructura de carpetas puede tener consecuencias no deseadas para las consultas existentes [basadas en la ruta de contenido.](#developer) Por lo tanto, una jerarquía bien definida y claramente establecida por adelantado, puede ser útil para sus autores de contenido.
 

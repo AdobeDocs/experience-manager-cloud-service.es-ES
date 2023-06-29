@@ -2,9 +2,9 @@
 title: Creación y administración de canales en Screens as a Cloud Service
 description: En esta página se describe cómo crear y administrar canales en Pantallas as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Este documento le ayuda a comprender la creación y administración de canales p
 
 >[!NOTE]
 >**Requisitos previos**
->Antes de comenzar esta sección de la Guía, consulte lo siguiente [Creación y administración de proyectos en Pantallas as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+>Antes de comenzar esta sección de la Guía, revise lo siguiente [Creación y administración de proyectos en Pantallas as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 Siga los pasos a continuación para crear un nuevo canal de secuencia en Pantallas as a Cloud Service:
 
@@ -42,7 +42,7 @@ Siga los pasos a continuación para crear un nuevo canal de secuencia en Pantall
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > El **Crear** El asistente proporciona diferentes tipos de plantillas al crear un canal. Consulte la sección [Plantillas disponibles](#available-templates) en el Asistente de creación para obtener más información.
+   > El **Crear** El asistente proporciona diferentes tipos de plantillas al crear un canal. Consulte [Plantillas disponibles](#available-templates) en el Asistente de creación para obtener más información.
 
 1. Introduzca el nombre del canal de secuencia, como, **BucleCanalUno** y haga clic en **Crear**.
 
@@ -100,7 +100,7 @@ Esta capacidad le permite definir una programación de activación predeterminad
    ![imagen](/help/screens-cloud/assets/display/Assignment1.png)
 
 1. Clic **Establecer detalles predeterminados**.
-1. Configure los detalles de asignación predeterminados, incluidas las fechas de prioridad, inicio y finalización, así como los patrones de periodicidad del canal, y haga clic en **Asignar**.
+1. Configure los detalles de asignación predeterminados, incluidas las fechas de inicio y finalización y los patrones de periodicidad del canal, y haga clic en **Asignar**.
 
    ![imagen](/help/screens-cloud/assets/display/Assignments2.png)
 
@@ -111,7 +111,7 @@ Esta capacidad le permite definir una programación de activación predeterminad
 Este mosaico muestra la siguiente información:
 * Prioridad predeterminada del canal en la visualización.
 * Las fechas de inicio y finalización de la activación indican cuándo está programado que se reproduzca el canal.
-* Vista sintética de la recurrencia (por hora/diario/semanal/mensual/anual, así como el nombre dado a esa recurrencia).
+* Vista sintética de la recurrencia (por hora/diario/semanal/mensual/anual y nombre dado a esa recurrencia).
 
 ### Utilizar los detalles de asignación predeterminados al asignar a una pantalla {#default-display}
 
@@ -143,8 +143,8 @@ también puede seleccionar la visualización que desee en la vista de inventario
 
 **Nota:** Una asignación de canal que utilice los detalles de asignación predeterminados no se podrá editar en el contexto de la visualización.
 
-* Si necesita cambiarla a una asignación personalizada, primero tendrá que eliminarla y luego volver a agregarla usando la variable **Establecer detalles de asignación personalizados** opción.
-* Si necesita cambiar las propiedades de los detalles de asignación predeterminados, debe hacerlo directamente desde la página de detalles del canal.
+* Si debe cambiarla a una asignación personalizada, primero elimínela y, a continuación, agréguela de nuevo mediante el **Establecer detalles de asignación personalizados** opción.
+* Si debe cambiar las propiedades de los detalles de asignación predeterminados, hágalo directamente desde la página de detalles del canal.
 
 ### Quitar los detalles de asignación predeterminados de un canal {#remove-display}
 

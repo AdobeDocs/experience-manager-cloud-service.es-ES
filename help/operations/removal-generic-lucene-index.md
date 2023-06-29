@@ -2,7 +2,7 @@
 title: Eliminación del índice Lucene genérico
 description: Obtenga información acerca de la eliminación planificada de índices Lucene genéricos y cómo puede verse afectado.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
@@ -27,7 +27,7 @@ El índice Lucene genérico (`/oak:index/lucene-*`AEM ) existe desde la versión
 AEM En la versión 6.5, el índice Lucene genérico se marcó como obsoleto, lo que indica que se eliminará en versiones futuras. Desde entonces, se ha registrado una ADVERTENCIA cuando el índice se ha utilizado como se muestra en el siguiente fragmento de registro:
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Please change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Change the query or the index definitions.
 ```
 
 AEM En las últimas versiones de la aplicación, el índice Lucene genérico se ha utilizado para admitir un número muy pequeño de funciones. Se están reprocesando para utilizar otros índices o se están modificando para eliminar la dependencia de este índice.
@@ -42,14 +42,14 @@ Para admitir volúmenes de datos de clientes más grandes, Adobe AEM ya no crea 
 
 El Adobe ya ha ajustado los costes de índice a través de la `costPerEntry` y `costPerExecution` para garantizar que otros índices como `/oak:index/pathreference` se utilizan con preferencia siempre que sea posible.
 
-Las aplicaciones de cliente que utilizan consultas que aún dependen de este índice deben actualizarse inmediatamente para utilizar otros índices existentes, que pueden personalizarse si es necesario. Como alternativa, se pueden añadir nuevos índices personalizados a la aplicación del cliente. AEM Puede encontrar las instrucciones completas para la administración de índices en as a Cloud Service en la [documentación de indexación.](/help/operations/indexing.md)
+Las aplicaciones de cliente que utilizan consultas que aún dependen de este índice deben actualizarse inmediatamente para utilizar otros índices existentes, que pueden personalizarse si es necesario. Como alternativa, se pueden añadir nuevos índices personalizados a la aplicación del cliente. AEM Puede encontrar las instrucciones completas para la administración de índices en as a Cloud Service en la [documentación de indexación](/help/operations/indexing.md).
 
 ## ¿Se Ve Afectado? {#are-you-affected}
 
 El índice Lucene genérico se utiliza actualmente como alternativa si ningún otro índice de texto completo puede servir a una consulta. Cuando se utiliza este índice obsoleto, se registra un mensaje similar al siguiente en el nivel WARN:
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Change the query or the index definitions.
 ```
 
 En algunas circunstancias, Oak podría intentar utilizar otro índice de texto completo (como `/oak:index/pathreference`) para admitir la consulta de texto completo, pero si la cadena de consulta no coincide con la expresión regular de la definición de índice, se registra un mensaje en el nivel WARN y es probable que la consulta no devuelva resultados.
@@ -136,7 +136,7 @@ Los tipos de nodo con los que se puede buscar se pueden especificar utilizando e
 En este momento, si no `nodeTypes` está presente, la consulta de búsqueda subyacente utilizará el `nt:base` tipo de nodo y, por lo tanto, es probable que utilice el índice Lucene genérico, registrando normalmente mensajes WARN similares a los siguientes.
 
 ```text
-20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Please change the query or the index definitions.
+20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Change the query or the index definitions.
 ```
 
 Antes de la eliminación del índice Lucene genérico, la variable `pathfield` El componente se actualizará para que el cuadro de búsqueda esté oculto para los componentes que utilizan el selector predeterminado, que no proporciona un `nodeTypes` propiedad.

@@ -4,10 +4,10 @@ description: Una vez que el administrador del sistema haya configurado los recur
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
-workflow-type: ht
-source-wordcount: '581'
-ht-degree: 100%
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ Ahora que ha leído este documento, debería saber cómo:
 * Acceder a Cloud Manager.
 * Iniciar sesión en una instancia de AEM as a Cloud Service.
 
-¡Enhorabuena! Ya está listo para crear y publicar contenido de AEM. Consulte la sección [Recursos adicionales](#additional-resources) para obtener más información sobre cómo crear contenido en AEM y cómo administrarlo.
+¡Enhorabuena! Ya está listo para crear y publicar contenido de AEM. Consulte [Recursos adicionales](#additional-resources) AEM para obtener más información sobre cómo crear contenido en la lista de distribución de contenido en la lista de distribución de contenido y cómo administrarlo.
 
 Si le interesa cómo crean y administran los desarrolladores y los administradores de implementación aplicaciones personalizadas para AEM as a Cloud Service, continúe con la segunda parte opcional del recorrido de incorporación, [Tareas del desarrollador de AEM.](developers.md)
 

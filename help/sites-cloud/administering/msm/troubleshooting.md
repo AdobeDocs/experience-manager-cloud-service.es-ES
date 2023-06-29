@@ -4,10 +4,10 @@ description: Descubra cómo solucionar los problemas más comunes relacionados c
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 87%
+source-wordcount: '761'
+ht-degree: 80%
 
 ---
 
@@ -80,7 +80,7 @@ Como alternativa, puede hacer lo siguiente:
 
 ### ¿Por qué veo páginas de Live Copy con el sufijo &quot;_msm_moved&quot;? {#moved-pages}
 
-Si se despliega una página de modelo, actualizará su página de Live Copy o creará una nueva página de Live Copy si aún no existe (por ejemplo, cuando se implemente por primera vez o cuando se elimine manualmente la página de Live Copy).
+Si se despliega una página de modelo, actualiza su página de Live Copy o crea una página de Live Copy si aún no existe (por ejemplo, cuando se implanta por primera vez o cuando se elimina manualmente la página de Live Copy).
 
 Sin embargo, en este último caso, si una página sin `cq:LiveRelationship` La propiedad existe con el mismo nombre y el nombre de esta página se cambia en consecuencia antes de crear la página Live Copy.
 

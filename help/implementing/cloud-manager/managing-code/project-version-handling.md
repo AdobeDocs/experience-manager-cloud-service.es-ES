@@ -2,10 +2,10 @@
 title: Administrar versiones del proyecto de Maven
 description: Para implementaciones de ensayo y producción de AEM as a Cloud Service, Cloud Manager genera una versión única e incremental.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 91%
+source-wordcount: '264'
+ht-degree: 85%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 Para implementaciones de ensayo y producción de AEM as a Cloud Service, Cloud Manager genera una versión única e incremental
 
-Esta versión se ve en la [página de detalles de ejecución de la canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details), así como la página de actividad. Cuando se ejecuta una generación, el proyecto de Maven se actualiza para utilizar esta versión y se crea una etiqueta en el repositorio de Git con esa versión como su nombre.
+Esta versión se ve en [página detalles de ejecución de canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) y la página de actividad. Cuando se ejecuta una generación, el proyecto de Maven se actualiza para utilizar esta versión y se crea una etiqueta en el repositorio de Git con esa versión como su nombre.
 
 Si la versión original del proyecto cumple ciertos criterios, la versión actualizada del proyecto de Maven combinará la versión original y la generada por Cloud Manager. Sin embargo, la etiqueta siempre utiliza la versión generada. Para que se produzca esta combinación, la versión original del proyecto debe estar formada con exactamente tres segmentos de versión, por ejemplo, `1.0.0` o `1.2.3`, pero no `1.0` o `1`, y la versión original no debe terminar en `-SNAPSHOT`.
 

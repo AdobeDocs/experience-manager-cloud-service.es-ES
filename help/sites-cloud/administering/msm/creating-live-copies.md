@@ -4,10 +4,10 @@ description: Aprenda a crear y sincronizar Live Copies para reutilizar el conten
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
 workflow-type: tm+mt
 source-wordcount: '4308'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ Cuando se utiliza la configuración del modelo, puede asociarla con una configur
 
 Las configuraciones del modelo se consideran datos inmutables y, como tales, no se pueden editar durante la ejecución. Por este motivo, cualquier cambio en la configuración debe implementarse mediante Git utilizando la canalización CI/CD.
 
-Encontrará más información en el artículo [Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+Encontrará más información en el artículo [Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 Los siguientes pasos están disponibles para un administrador en una instancia de desarrollo local solo para fines de prueba y desarrollo. Estas opciones no están disponibles en ninguna instancia de nube AEMaaCS.
 
@@ -164,7 +164,7 @@ Cuando cree el sitio, proporcione valores para las siguientes propiedades:
 
 Para crear una Live Copy de un sitio a partir de una configuración de modelo:
 
-1. En la consola **Sitios**, seleccione **Crear**, luego **Sitio** en el selector desplegable.
+1. En el **Sites** consola, seleccione **Crear**, entonces **Sitio** en el selector desplegable.
 1. Seleccione la configuración de modelo que se utilizará como origen de Live Copy y continúe con **Siguiente**:
 
    ![Crear sitio a partir de modelo](../assets/create-site-from-blueprint.png)
@@ -245,7 +245,7 @@ Despliegue una página de modelo para insertar los cambios de contenido en Live 
 
    ![Definir el tiempo de despliegue](../assets/rollout-now-later.png)
 
-Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en la página [***Estado de trabajos asincrónicos**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en [***Estado de trabajos asincrónicos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Despliegue un modelo desde el carril de referencia {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -270,7 +270,7 @@ Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en
 
 1. Después de confirmar estos detalles, seleccione **Despliegue** para llevar a cabo la acción.
 
-Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en la página [**Estado de trabajos asincrónicos**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en [**Estado de trabajos asincrónicos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Despliegue de un modelo desde la información general de Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ La acción [**Despliegue** también está disponible en la Información general 
 
    ![Definición de programación de despliegue](../assets/rollout-now-later.png)
 
-Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en la página [**Estado de trabajos asincrónicos**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en [**Estado de trabajos asincrónicos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### Creación de una Live Copy {#synchronizing-a-live-copy}
 
@@ -575,7 +575,7 @@ La acción [**Restablecer** también está disponible en la Información general
 
 Para realizar un seguimiento de los cambios realizados, puede ver la página de modelo en **Referencias** y compárela con su página Live Copy:
 
-1. En la consola **Sitios**, [vaya a un modelo o a una página de Live Copy y selecciónela.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. En la consola **Sitios**, [vaya a un modelo o a una página de Live Copy y selecciónela](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** y, en función del contexto, seleccione:
 
    * **Modelo**

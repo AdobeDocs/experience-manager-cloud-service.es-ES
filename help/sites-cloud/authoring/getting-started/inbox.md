@@ -2,10 +2,10 @@
 title: Su bandeja de entrada
 description: Administrar las tareas con la bandeja de entrada
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 73%
+source-wordcount: '906'
+ht-degree: 70%
 
 ---
 
@@ -25,7 +25,7 @@ Recibirá estas notificaciones en su propia bandeja de entrada, donde podrá ver
 
 >[!NOTE]
 >
->Para obtener más información sobre los tipos de elementos, consulte también:
+>Para obtener más información acerca de los tipos de elementos, consulte lo siguiente:
 >
 >* [Proyectos](/help/sites-cloud/authoring/projects/overview.md)
 >* [Proyectos: trabajo con tareas](/help/sites-cloud/authoring/projects/tasks.md)
@@ -102,7 +102,7 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
 
   ![Ajustes de vista de lista de la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  También puede delegar el calendario a otros usos, así como solicitar la delegación de otros usuarios y administrar las delegaciones.
+  También puede delegar el calendario a otros usos y solicitar la delegación de otros usuarios y administrar las delegaciones.
 
   ![Configuración de delegación de vista de lista de bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -132,7 +132,7 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
 
    >[!NOTE]
    >
-   >Para obtener más información, consulte lo siguiente:
+   >Para obtener más información, consulte:
    >
    >* Elementos de flujo de trabajo - [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
 

@@ -2,10 +2,10 @@
 title: Variables de entorno de Cloud Manager
 description: Las variables de entorno estándar se pueden configurar y administrar mediante Cloud Manager y se proporcionan al entorno de tiempo de ejecución para su uso en la configuración OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 93%
+source-wordcount: '1018'
+ht-degree: 92%
 
 ---
 
@@ -88,7 +88,7 @@ Una vez creadas las variables de entorno, puede actualizarlas con el botón **Ag
 
    ![Editar variable](assets/edit-variable.png)
 
-1. Una vez que haya realizado todos los cambios de configuración necesarios, seleccione **Guardar**.
+1. Después de haber realizado todos los cambios de configuración necesarios, seleccione **Guardar**.
 
 [Al igual que cuando se agregan variables,](#add-variables) se muestra un indicador con el estado **Actualizando** en la parte superior de la tabla y junto a las variables recién actualizadas para indicar que el entorno se está actualizando con la configuración. Una vez finalizadas, las variables de entorno actualizadas se pueden ver en la tabla.
 
@@ -128,8 +128,8 @@ Sin embargo, las variables de entorno no se pueden usar en las directivas `IfDef
 
 ### Configuraciones de OSGi {#osgi}
 
-Tanto las variables de entorno normales como los secretos se pueden utilizar en las [configuraciones OSGi.](/help/implementing/deploying/configuring-osgi.md)
+Tanto las variables de entorno normales como los secretos se pueden utilizar en las [configuraciones OSGi](/help/implementing/deploying/configuring-osgi.md).
 
 ### Variables de canalización {#pipeline}
 
-Además de las variables de entorno, también hay variables de canalización que se exponen durante la fase de compilación. [Obtenga más información acerca de las variables de canalización aquí.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+Además de las variables de entorno, también hay variables de canalización que se exponen durante la fase de compilación. [Obtenga más información acerca de las variables de canalización aquí](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

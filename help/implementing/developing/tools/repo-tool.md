@@ -2,9 +2,9 @@
 title: AEM Repo Tool
 description: AEM AEM La Herramienta de Repo es una solución sencilla para transferir contenido JCR entre el sistema de archivos local y el servidor de la a través de una línea de comandos comparable a la de FTP.
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '261'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ La herramienta no admite varias rutas de filtro ni de FileVault `filter.xml`.
 
 >[!CAUTION]
 >
->AEM Tenga en cuenta que la herramienta de repo de siempre sobrescribirá todo el archivo o directorio especificado.
+>AEM La herramienta de repositorio de datos siempre sobrescribe todo el archivo o directorio especificado.
 
 ## Descarga y documentación {#download-and-documentation}
 

@@ -2,9 +2,9 @@
 title: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 description: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1544'
 ht-degree: 19%
 
 ---
@@ -77,13 +77,13 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
-* Después de completar la *Extracción* fase del proceso de transferencia de contenido y antes de iniciar la *Fase de ingesta* AEM para introducir contenido en el archivo as a Cloud Service de la *Fase* o *Producción* En algunos casos, deberá registrar un ticket de asistencia técnica para notificar al Adobe de su intención de ejecutar *Ingesta* para que el Adobe pueda garantizar que no se produzcan interrupciones durante la *Ingesta* proceso. Deberá registrar el ticket de asistencia 1 semana antes de lo previsto *Ingesta* fecha. Una vez que haya enviado la solicitud de asistencia, el equipo de asistencia le proporcionará instrucciones sobre los pasos siguientes. Puede registrar un ticket de asistencia técnica con los siguientes detalles:
+* Después de completar la *Extracción* fase del proceso de transferencia de contenido y antes de iniciar la *Fase de ingesta* AEM para introducir contenido en el archivo as a Cloud Service de la *Fase* o *Producción* En algunos casos, deberá registrar un ticket de asistencia técnica para notificar al Adobe de su intención de ejecutar *Ingesta* para que el Adobe pueda garantizar que no se produzcan interrupciones durante la *Ingesta* proceso. Deberá registrar el ticket de asistencia 1 semana antes de lo previsto *Ingesta* fecha. Una vez enviado el vale de soporte, el equipo de asistencia le proporcionará instrucciones sobre los pasos siguientes. Puede registrar un ticket de asistencia técnica con los siguientes detalles:
 
    * Fecha exacta y hora estimada (con su zona horaria) en que planea iniciar la *Ingesta* fase.
    * Tipo de entorno (fase o producción) en el que planea introducir los datos.
    * ID de programa.
 
-* El *Fase de ingesta* para el autor reduce la implementación de todo el autor. AEM Esto significa que el autor no está disponible durante todo el proceso de ingesta de datos. Asegúrese también de que no se ejecuten canalizaciones de Cloud Manager mientras ejecuta *Ingesta* fase.
+* El *Fase de ingesta* para el autor reduce la implementación de todo el autor. AEM Esto significa que el autor no está disponible durante todo el proceso de ingesta de datos. Asegúrese también de que no se ejecuten canalizaciones de Cloud Manager mientras ejecuta el *Ingesta* fase.
 
 * Al utilizar `Amazon S3` o `Azure` AEM al igual que el almacén de datos en el sistema de fuentes de datos, el almacén de datos debe configurarse para que los blobs almacenados no se puedan eliminar (recolección de basura). Esto garantiza la integridad de los datos de índice y si no se configura de esta manera, pueden producirse extracciones fallidas debido a la falta de integridad de estos datos de índice.
 
@@ -93,7 +93,7 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza recargas con `wipe=false`, debe deshabilitar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
 
-* Un conjunto de migración caducará después de un período prolongado de inactividad, después del cual sus datos ya no estarán disponibles. Consulte las [Caducidad del conjunto de migración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) para obtener más información.
+* Un conjunto de migración caducará después de un período prolongado de inactividad, después del cual sus datos ya no estarán disponibles. Revisar [Caducidad del conjunto de migración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) para obtener más información.
 
 ## Siguientes pasos {#whats-next}
 

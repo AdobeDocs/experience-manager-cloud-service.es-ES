@@ -2,10 +2,10 @@
 title: Comprobación del estado de registro DNS
 description: Obtenga información sobre cómo determinar si la configuración de DNS se resuelve correctamente mediante Cloud Manager.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager realiza una búsqueda DNS del nombre de dominio y muestra uno de l
 
 * **La resolución de DNS es incorrecta**: esto indica que la configuración de los registros DNS no se ha resuelto o es errónea.
 
-   * Consulte el documento [Configuración de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) para obtener más información.
+   * Consulte [Configuración de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) para obtener más información.
    * Cuando esté listo, debe seleccionar el icono **Resolver de nuevo** junto al estado.
 
 * **Resolución DNS en curso**: la resolución está en curso.

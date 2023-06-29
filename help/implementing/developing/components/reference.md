@@ -2,9 +2,9 @@
 title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores para los detalles de los componentes y su estructura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3649'
+source-wordcount: '3650'
 ht-degree: 2%
 
 ---
@@ -122,7 +122,7 @@ El icono o la abreviatura del componente se define mediante las propiedades JCR 
 1. `abbreviation` : propiedad de cadena para personalizar la abreviatura del nombre del componente en el explorador de componentes
    * La abreviatura debe estar limitada a dos caracteres.
    * Si se proporciona una cadena vacía, se creará la abreviatura a partir de los dos primeros caracteres del `jcr:title` propiedad.
-      * Por ejemplo, &quot;Im&quot; para &quot;Imagen&quot;
+      * Por ejemplo, &quot;Im&quot; para &quot;Image&quot;
       * El título localizado se utiliza para crear la abreviatura.
    * La abreviatura solo se traduce si el componente tiene un `abbreviation_commentI18n` , que luego se utiliza como sugerencia de traducción.
 1. `cq:icon.png` o `cq:icon.svg` : icono para este componente, que se muestra en el navegador de componentes
@@ -166,7 +166,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
 | Nombre | Tipo | Descripción |
 |---|---|---|
 | `.` | `cq:Component` | Representa el componente actual. Un componente es de tipo nodo `cq:Component`. |
-| `componentGroup` | `String` | Representa el grupo en el cual se puede seleccionar el componente en la [Navegador de componentes.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Un valor que comienza por `.` se utiliza para componentes que no están disponibles para su selección en la interfaz de usuario, como los componentes base de los que heredan otros componentes. |
+| `componentGroup` | `String` | Representa el grupo en el cual se puede seleccionar el componente en la [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Un valor que comienza por `.` se utiliza para componentes que no están disponibles para su selección en la interfaz de usuario, como los componentes base de los que heredan otros componentes. |
 | `cq:isContainer` | `Boolean` | Esto indica si el componente es un componente contenedor y, por lo tanto, puede contener otros componentes, como un sistema de párrafos. |
 | `cq:dialog` | `nt:unstructured` | Esta es la definición del cuadro de diálogo de edición para el componente. |
 | `cq:design_dialog` | `nt:unstructured` | Esta es la definición del cuadro de diálogo de diseño para el componente. |
@@ -383,7 +383,7 @@ La siguiente configuración permite la edición in situ del componente y define 
 
 ### Gestión de eventos de campo - cq:listeners {#cq-listeners}
 
-El método de control de eventos en los campos de diálogo se realiza con los oyentes en un [biblioteca de cliente.](/help/implementing/developing/introduction/clientlibs.md)
+El método de control de eventos en los campos de diálogo se realiza con los oyentes en un [biblioteca de cliente](/help/implementing/developing/introduction/clientlibs.md).
 
 Para introducir lógica en el campo, debe:
 
@@ -416,7 +416,7 @@ El `cq:listeners` node (tipo de nodo) `cq:EditListenersConfig`) define lo que su
 >* `aftermove`
 >* `aftercopy`
 
-El controlador de eventos se puede implementar con una implementación personalizada. Por ejemplo (donde `project.customerAction` es un método estático):
+El controlador de eventos se puede implementar con una implementación personalizada. Por ejemplo, (donde `project.customerAction` es un método estático):
 
 `afteredit = "project.customerAction"`
 
@@ -469,7 +469,7 @@ Todo lo que tienes que hacer es colocar un `README.md` en la estructura del comp
 
 ![README.md en la estructura de componentes](assets/components-documentation.png)
 
-Esta marca se muestra en la variable [Consola de componente.](/help/sites-cloud/authoring/features/components-console.md)
+Esta marca se muestra en la variable [Consola de componente](/help/sites-cloud/authoring/features/components-console.md).
 
 ![README.md visible en la consola Componentes](assets/components-documentation-console.png)
 

@@ -4,10 +4,10 @@ description: Descubra cómo puede habilitar la canalización front-end para que 
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 87%
+source-wordcount: '562'
+ht-degree: 82%
 
 ---
 
@@ -25,7 +25,7 @@ Los sitios basados en plantillas de sitio pueden utilizar la canalización front
 
 >[!TIP]
 >
->Si no está familiarizado con la canalización front-end y con cómo implementar sitios rápidamente mediante ella y las plantillas de sitio, revise el [recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) para una introducción.
+>Si no está familiarizado con la canalización front-end y con cómo implementar sitios rápidamente mediante ella y las plantillas de sitio, consulte [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) para ver una introducción.
 
 Si no ha creado el sitio existente basado en plantillas y temas de sitio, AEM puede configurar el sitio para cargar los temas que se implementan con la canalización front-end por encima de las bibliotecas de cliente existentes.
 

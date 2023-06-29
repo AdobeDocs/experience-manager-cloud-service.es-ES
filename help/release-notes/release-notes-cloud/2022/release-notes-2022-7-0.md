@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.7.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.7.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 24%
+source-wordcount: '949'
+ht-degree: 23%
 
 ---
 
@@ -102,7 +102,7 @@ Ahora puede configurar Adobe Experience Manager Assets en [restringir el tipo de
 ### Novedades {#what-is-new-foundation}
 
 * El [Explorador del repositorio](/help/implementing/developing/tools/repository-browser.md) ahora tiene un campo de entrada de ruta, lo que permite saltar directamente a una carpeta específica en la jerarquía del repositorio
-* Sling Content Distribution (SCD) ahora admite una acción explícita de &quot;invalidación&quot; para invalidar contenido sin que se publique. Consulte la [AEM Almacenamiento en caché en as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) para obtener más información.
+* Sling Content Distribution (SCD) ahora admite una acción explícita de &quot;invalidación&quot; para invalidar contenido sin que se publique. Consulte [AEM Almacenamiento en caché en as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) para obtener más información.
 * AEM mod_macro ya está disponible en as a Cloud Service. Consulte [esta tabla](/help/implementing/dispatcher/disp-overview.md) para obtener una lista de los módulos Apache compatibles.
 
 ### AEM Mejoras en las herramientas de Dispatcher del SDK as a Cloud Service {#dispatcher-tools-enhancements}
@@ -120,7 +120,7 @@ Ahora puede configurar Adobe Experience Manager Assets en [restringir el tipo de
 
 ## Cloud Manager {#cloud-manager}
 
-Puede encontrar una lista completa de las versiones mensuales de Cloud Manager [aquí.](/help/implementing/cloud-manager/release-notes/current.md)
+Puede encontrar una lista completa de las versiones mensuales de Cloud Manager [aquí](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Herramientas de migración {#migration-tools}
 

@@ -2,10 +2,10 @@
 title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3579'
-ht-degree: 82%
+source-wordcount: '3571'
+ht-degree: 77%
 
 ---
 
@@ -36,7 +36,7 @@ Un programa puede proporcionar una única variación avanzada de red. Al decidir
 
 >[!NOTE]
 >
->Los clientes que ya dispongan de tecnología de salida dedicada heredada y que necesiten configurar una de estas opciones no deben hacerlo o la conectividad del sitio puede verse afectada. Póngase en contacto con el servicio de asistencia de Adobe para obtener ayuda.
+>Los clientes que ya dispongan de tecnología de salida dedicada heredada y que necesiten configurar una de estas opciones no deben hacerlo o la conectividad del sitio puede verse afectada. Póngase en contacto con Soporte técnico de Adobe para obtener ayuda.
 
 ## Salida de puerto flexible {#flexible-port-egress}
 
@@ -44,11 +44,11 @@ Esta función de red avanzada le permite configurar AEM as a Cloud Service para 
 
 ### Consideraciones {#flexible-port-egress-considerations}
 
-La salida de puerto flexible es la opción recomendada si no necesita VPN ni una dirección IP de salida dedicada, ya que el tráfico que no depende de una salida dedicada puede obtener un mayor rendimiento.
+La salida de puerto flexible es la opción recomendada si no necesita VPN ni una dirección IP de salida dedicada, ya que el tráfico que no depende de una salida dedicada puede lograr un mayor rendimiento.
 
 ### Configuración {#configuring-flexible-port-egress-provision}
 
-Una vez por programa, el punto final de POST `/program/<programId>/networkInfrastructures` se invoca, pasando simplemente el valor de `flexiblePortEgress` para el parámetro `kind` y la región. El punto final responde con la variable `network_id`, así como otra información, incluido el estado. [Se puede hacer referencia en los documentos de API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) al conjunto completo de parámetros y la sintaxis exacta, así como a información importante como los parámetros que no se pueden cambiar posteriormente.
+Una vez por programa, el punto final de POST `/program/<programId>/networkInfrastructures` se invoca, pasando simplemente el valor de `flexiblePortEgress` para el parámetro `kind` y la región. El punto final responde con la variable `network_id`y otra información, incluido el estado. El conjunto completo de parámetros y la sintaxis exacta, así como información importante como los parámetros que no se pueden cambiar posteriormente, [se puede consultar en los documentos de la API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 Una vez realizada la llamada, la infraestructura de red tarda aproximadamente 15 minutos en aprovisionarse. Una llamada al [punto de conexión de GET de infraestructura de red](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) de Cloud Manager mostraría el estado “listo”.
 
@@ -354,7 +354,7 @@ La mayoría de los dispositivos VPN con tecnología IPSec son compatibles. Consu
 
 ### Creación {#vpn-creation}
 
-Una vez por programa, el punto final POST `/program/<programId>/networkInfrastructures` se invoca, pasando una carga útil de información de configuración que incluye: el valor de “vpn” para el parámetro `kind`, región, espacio de dirección (lista de CIDR; tenga en cuenta que esto no se puede modificar más adelante), resolución de DNS (para resolver nombres en la red del cliente) e información de conexión VPN, como configuración de puerta de enlace, clave VPN compartida y política de seguridad IP. El punto final responde con `network_id`, así como otra información, incluido el estado. Se debe hacer referencia al conjunto completo de parámetros y a la sintaxis exacta en la [Documentación de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+Una vez por programa, el punto final POST `/program/<programId>/networkInfrastructures` se invoca, pasando una carga útil de información de configuración que incluye: el valor de “vpn” para el parámetro `kind`, región, espacio de dirección (lista de CIDR; tenga en cuenta que esto no se puede modificar más adelante), resolución de DNS (para resolver nombres en la red del cliente) e información de conexión VPN, como configuración de puerta de enlace, clave VPN compartida y política de seguridad IP. El punto final responde con la variable `network_id`y otra información, incluido el estado. Se debe hacer referencia al conjunto completo de parámetros y a la sintaxis exacta en la [Documentación de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 Una vez realizada la llamada, la infraestructura de red tarda normalmente entre 45 y 60 minutos en aprovisionarse. Se puede llamar al método GET de la API para devolver el estado actual, que finalmente cambiará de `creating` a `ready`. Consulte la documentación de la API para todos los estados.
 
@@ -425,7 +425,7 @@ La siguiente tabla describe el enrutamiento de tráfico.
   </tr>
   <tr>
     <td></td>
-    <td>Si la IP no cae en el intervalo <i>espacio de direcciones de puerta de enlace VPN</i> y a través de la configuración proxy HTTP (configurada de forma predeterminada para el tráfico HTTP/S mediante la biblioteca de cliente HTTP estándar de Java)</td>
+    <td>Si la IP no cae en la <i>espacio de direcciones de puerta de enlace VPN</i> y a través de la configuración proxy HTTP (configurada de forma predeterminada para el tráfico HTTP que utiliza la biblioteca de cliente HTTP estándar de Java)</td>
     <td>Cualquiera</td>
     <td>A través de la IP de salida dedicada</td>
     <td></td>
@@ -454,7 +454,7 @@ La siguiente tabla describe el enrutamiento de tráfico.
   </tr>
   <tr>
     <td></td>
-    <td>Si la IP no cae en el intervalo <i>espacio de direcciones de puerta de enlace VPN</i> y el cliente se conecta a la variable env <code>AEM_PROXY_HOST</code> usando un <code>portOrig</code> declarado en el parámetro de API <code>portForwards</code></td>
+    <td>Si la IP no cae en la <i>espacio de direcciones de puerta de enlace VPN</i> rango y el cliente se conecta a <code>AEM_PROXY_HOST</code> variable env con un <code>portOrig</code> declarado en el <code>portForwards</code> Parámetro de API</td>
     <td>Cualquiera</td>
     <td>A través de la IP de salida dedicada</td>
     <td></td>

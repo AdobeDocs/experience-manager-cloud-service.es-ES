@@ -2,9 +2,9 @@
 title: Validación de transferencias de contenido
 description: Utilice la herramienta de transferencia de contenido para validar las transferencias de contenido
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1055'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ AEM Con la validación de migración habilitada en el entorno de origen de la, i
 
 If **Sobrescribir contenedor de almacenamiento provisional durante la extracción** está activada, todos los nodos implicados en la extracción se registran en el resumen de la ruta de extracción. Cuando se utiliza esta configuración, es importante habilitar la variable **Borrar contenido existente en la instancia de Cloud antes de la ingesta** configuración durante la ingesta; de lo contrario, puede parecer que faltan nodos en el compendio de ingesta. Estos son los nodos que ya están presentes en el destino desde ingestas anteriores.
 
-Para ver una ilustración gráfica de esto, consulte los ejemplos siguientes:
+Para ver una ilustración gráfica de esto, consulte los siguientes ejemplos:
 
 ### Ejemplo 1 {#example-1}
 
@@ -115,7 +115,7 @@ EXTRACTION: Number of nodes extracted: 4635
 INGESTION: Number of nodes ingested: 0
 ----------------------------------------------------------
 Validation failed. However, the following nodes may already be present in the target environment.
-Please refer to our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
+See our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
 There are 4635 entries present in the extraction digest that are missing from the ingestion digest.
 /content/dam/bruce
 /content/dam/bruce-assets
@@ -156,7 +156,7 @@ Verá un cuadro de diálogo con la información de resumen. Utilice los iconos d
 
 El primer paso es determinar si la ingesta falló realmente o si el contenido extraído ya está presente en el entorno de destino. Esto puede ocurrir si se repite una ingesta con el **Borrar contenido existente en la instancia de Cloud antes de la ingesta** opción desactivada.
 
-Para verificarla, elija una ruta en el informe de validación y compruebe si está presente en el entorno de destino. Si es un entorno de publicación, puede limitarse a comprobar páginas y recursos directamente. Si necesita ayuda con este paso, abra una incidencia con el Servicio de atención al cliente.
+Para verificarla, elija una ruta en el informe de validación y compruebe si está presente en el entorno de destino. Si es un entorno de publicación, puede limitarse a comprobar páginas y recursos directamente. Abra un ticket con el Servicio de atención al cliente si necesita ayuda con este paso.
 
 ### El recuento de nodos es menor de lo que esperaba. ¿Por qué? {#node-count-lower-than-expected}
 

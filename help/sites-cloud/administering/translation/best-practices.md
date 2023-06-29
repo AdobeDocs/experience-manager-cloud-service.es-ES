@@ -4,10 +4,10 @@ description: Obtenga información sobre las prácticas recomendadas recopiladas 
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 92%
+source-wordcount: '872'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 >[!TIP]
 >
->Si es nuevo traduciendo contenido, consulte nuestra [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
+>Si acaba de empezar a traducir contenido, consulte [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
 
 ## General {#general}
 
@@ -32,7 +32,7 @@ La creación o ampliación de una presencia web global puede ser un proceso comp
 
 * Al diseñar la estructura del sitio, comience por examinar el contenido y determinar dónde y en qué idioma se crea el contenido. Esta ubicación debe ser el nivel superior del sitio.
 * Una práctica recomendada es la **estructura basada en un idioma** con no más de tres niveles entre el nivel superior de creación y los sitios del país.
-* Utilice una convención de nomenclatura de sitios por idioma/país que siga los **[estándares W3C.](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**
+* Utilice una convención de nomenclatura de sitios por idioma/país que siga los **[estándares W3C](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
 * Determine cómo se distribuye el contenido por regiones y países. Considere qué países comparten idiomas. Se recomienda crear formatos de idiomas, una capa de páginas no activadas, donde el contenido traducido puede revisarse y modificarse, luego ser transferido o llevado a un sitio de un país que comparta ese idioma.
 * Existen dos métodos para crear formatos de idiomas: usando copias de idioma y usando MSM/Live Copies.
    * El enfoque de copia de idioma es el que utiliza el marco de trabajo de integración de traducción predeterminado de AEM y, por lo tanto, es la forma más sencilla de empezar. El marco de trabajo proporciona una interfaz de usuario que facilita inicialmente la propagación y traducción de los cambios de contenido del formato de idioma principal (por ejemplo, inglés) a los otros formatos de idioma. Sin embargo, a medida que el proyecto crece, la automatización del flujo de trabajo se hace cada vez más necesaria para administrar la traducción del mayor número de páginas o idiomas.

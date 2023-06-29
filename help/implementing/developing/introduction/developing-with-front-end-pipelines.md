@@ -2,9 +2,9 @@
 title: Desarrollo de Sites con la canalización front-end
 description: Con la canalización front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar velocidad sustancial. Este documento describe algunas consideraciones particulares del proceso de compilación del front-end que deben darse.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1155'
 ht-degree: 1%
 
 ---

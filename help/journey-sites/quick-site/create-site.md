@@ -2,10 +2,10 @@
 title: Creación de un sitio a partir de una plantilla
 description: Obtenga información sobre cómo crear rápidamente un nuevo sitio de AEM con una plantilla de sitio.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 97%
+source-wordcount: '1506'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ Esta parte del recorrido se aplica al administrador de AEM.
 
 ## Plantillas de sitios {#site-templates}
 
-Las plantillas del sitio son una forma de combinar el contenido básico del sitio en un paquete cómodo y reutilizable. Las plantillas del sitio suelen contener contenido y estructura base del sitio, así como información de estilo, para comenzar con uno nuevo rápidamente. La estructura real es la siguiente:
+Las plantillas del sitio son una forma de combinar el contenido básico del sitio en un paquete cómodo y reutilizable. Las plantillas de sitio generalmente contienen contenido y estructura base del sitio e información de estilo para comenzar con uno nuevo rápidamente. La estructura real es la siguiente:
 
 * `files`: carpeta con el kit de IU, el archivo XD y, posiblemente, otros archivos.
 * `previews`: carpeta con capturas de pantalla de la plantilla del sitio.
@@ -57,11 +57,11 @@ Una vez descargado, puede cargarlo en su entorno de AEM como lo haría con cualq
 
 >[!TIP]
 >
->La plantilla del sitio estándar de AEM se puede personalizar para satisfacer las necesidades del proyecto y puede obviar la necesidad de una mayor personalización. Sin embargo, este tema está fuera del ámbito de este recorrido. Consulte la documentación de GitHub de la plantilla del sitio estándar para obtener más información.
+>La plantilla del sitio estándar de AEM se puede personalizar para satisfacer las necesidades del proyecto y puede obviar la necesidad de una mayor personalización. Sin embargo, este tema está fuera del ámbito de este recorrido. Consulte la documentación de GitHub de la plantilla de sitio estándar para obtener más información.
 
 >[!TIP]
 >
->También puede optar por crear la plantilla a partir del origen, como parte del flujo de trabajo del proyecto. Sin embargo, este tema está fuera del ámbito de este recorrido. Consulte la documentación de GitHub de la plantilla del sitio estándar para obtener más información.
+>También puede optar por crear la plantilla a partir del origen, como parte del flujo de trabajo del proyecto. Sin embargo, este tema está fuera del ámbito de este recorrido. Consulte la documentación de GitHub de la plantilla de sitio estándar para obtener más información.
 
 ## Instalación de una plantilla del sitio {#installing-template}
 
@@ -109,7 +109,7 @@ Los autores de contenido ahora pueden empezar a crear.
 Las plantillas del sitio son muy potentes y flexibles, y se puede crear cualquier número para un proyecto, lo que permite producir variaciones de sitio con facilidad. Según el nivel de personalización que ya tenga la plantilla del sitio que utilice, es posible que ni siquiera necesite una personalización adicional del front-end.
 
 * Si su sitio no lo requiere, ¡enhorabuena! Su recorrido termina aquí.
-* Si todavía necesita personalizar el front-end o simplemente desea entender el proceso completo en caso de que la requiera en el futuro, continúe leyendo.
+* Si todavía necesita personalizar el front-end o simplemente desea comprender el proceso completo en caso de que la requiera en el futuro, continúe leyendo.
 
 ## Página de ejemplo {#example-page}
 

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1361'
-ht-degree: 98%
+source-wordcount: '1358'
+ht-degree: 96%
 
 ---
 
@@ -83,7 +83,7 @@ El contenido traducido ya está publicado. Ahora se puede acceder y consumir.
 >
 >Puede seleccionar varios elementos (es decir, carpetas de varios idiomas) al publicar para publicar varias traducciones al mismo tiempo.
 
-Existen opciones adicionales al publicar el contenido que están fuera del ámbito de este recorrido, como programar una hora de publicación. Consulte la sección [Recursos adicionales](#additional-resources) al final del documento para obtener más información.
+Existen opciones adicionales al publicar el contenido que están fuera del ámbito de este recorrido, como programar una hora de publicación. Consulte la [Recursos adicionales](#additional-resources) al final del documento para obtener más información.
 
 ## Actualización del contenido traducido {#updating-translations}
 
@@ -117,7 +117,7 @@ Verá que se ha agregado una nueva tarjeta de trabajo al proyecto. En este ejemp
 
 ![Se ha añadido un trabajo de traducción adicional](assets/additional-translation-job.png)
 
-Puede observar que las estadísticas que aparecen en la tarjeta nueva son diferentes. Esto se debe a que AEM reconoce qué ha cambiado desde la última traducción y solo incluye el contenido que debe traducirse. Esto incluye una nueva traducción del contenido actualizado, así como la primera traducción del contenido nuevo.
+Puede observar que las estadísticas que aparecen en la tarjeta nueva son diferentes. Esto se debe a que AEM reconoce qué ha cambiado desde la última traducción y solo incluye el contenido que debe traducirse. Esto incluye una nueva traducción del contenido actualizado y la primera traducción del nuevo contenido.
 
 A partir de este punto, [inicie y administre su trabajo de traducción al igual que lo hizo con el original.](translate-content.md#using-translation-project)
 

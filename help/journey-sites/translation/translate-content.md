@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2598'
-ht-degree: 100%
+source-wordcount: '2590'
+ht-degree: 97%
 
 ---
 
@@ -174,7 +174,7 @@ Las traducciones automáticas se devuelven automáticamente con un estado de **A
 >
 >Si no desactivó la opción del proyecto **Eliminar lanzamiento después de la promoción** como [se describe en la sección anterior,](#using-translation-project) los elementos traducidos aparecerán con el estado de **Eliminado**. Esto es normal, ya que AEM descarta automáticamente los registros de traducción una vez que llegan los elementos traducidos. Los elementos traducidos se han importado como copias de idiomas, solo se han eliminado los registros de traducción porque ya no son necesarios.
 >
->No se preocupe si no le ha quedado claro. Estos son detalles exhaustivos de cómo funciona AEM y no afectan a su comprensión del recorrido. Si desea profundizar en cómo AEM procesa las traducciones, consulte la sección de [recursos adicionales](#additional-resources) al final de este artículo.
+>No se preocupe si no le ha quedado claro. Estos son detalles exhaustivos de cómo funciona AEM y no afectan a su comprensión del recorrido. AEM Si desea profundizar en cómo procesa las traducciones en la forma en que lo hace el usuario, consulte la sección sobre procesos de traducción. [recursos adicionales](#additional-resources) de este artículo.
 
 ### Uso de un proyecto de traducción creado manualmente {#using-manual-project}
 
@@ -234,7 +234,7 @@ Las traducciones automáticas se devuelven automáticamente con un estado de **A
 >
 >Si no desactivó la opción del proyecto **Eliminar lanzamiento después de la promoción** como [se describe en la sección anterior,](#using-translation-project) los elementos traducidos aparecerán con el estado de **Eliminado**. Esto es normal, ya que AEM descarta automáticamente los registros de traducción una vez que llegan los elementos traducidos. Los elementos traducidos se han importado como copias de idiomas, solo se han eliminado los registros de traducción porque ya no son necesarios.
 >
->No se preocupe si no le ha quedado claro. Estos son detalles exhaustivos de cómo funciona AEM y no afectan a su comprensión del recorrido. Si desea profundizar en cómo procesa AEM traducciones, consulte la sección [recursos adicionales](#additional-resources) al final de este artículo.
+>No se preocupe si no le ha quedado claro. Estos son detalles exhaustivos de cómo funciona AEM y no afectan a su comprensión del recorrido. AEM Si desea profundizar en cómo procesa las traducciones en la forma en que lo hace el usuario, consulte la sección sobre procesos de traducción. [recursos adicionales](#additional-resources) de este artículo.
 
 ## Revisión del contenido traducido {#reviewing}
 
@@ -248,7 +248,7 @@ Toque o haga clic en ese icono para abrir el contenido traducido en su consola p
 
 ![Una página traducida](assets/translated-page.png)
 
-Puede modificar aún más el contenido traducido necesario, siempre que tenga el permiso adecuado, pero la edición de contenido está fuera del ámbito de este recorrido. Consulte la sección [Recursos adicionales](#additional-resources) al final de este documento para obtener más información sobre este tema.
+Puede modificar aún más el contenido traducido necesario, siempre que tenga el permiso adecuado, pero la edición de contenido está fuera del ámbito de este recorrido. Consulte la [Recursos adicionales](#additional-resources) al final de este documento para obtener más información sobre este tema.
 
 El propósito del proyecto es reunir todos los recursos relacionados con una traducción en un solo lugar para facilitar el acceso y una visión general clara. Sin embargo, como puede ver viendo el detalle de un elemento traducido, las traducciones mismas regresan a la carpeta de Sitios del idioma de traducción. En este ejemplo, la carpeta es
 
@@ -268,7 +268,7 @@ Es importante comprender que este contenido no se publica y, por lo tanto, no es
 
 Si el servicio de traducción proporciona traducción humana, el proceso de revisión ofrece más opciones. Por ejemplo, las traducciones vuelven al proyecto con el estado **Borrador** y deben revisarse y aprobarse o rechazarse manualmente.
 
-La traducción humana está fuera del alcance de este recorrido de localización. Consulte la sección [Recursos adicionales](#additional-resources) al final de este documento para obtener más información sobre este tema. Sin embargo, más allá de las opciones de aprobación adicionales, el flujo de trabajo para las traducciones humanas es el mismo que las traducciones automáticas, tal como se describe en este recorrido.
+La traducción humana está fuera del alcance de este recorrido de localización. Consulte la [Recursos adicionales](#additional-resources) al final de este documento para obtener más información sobre este tema. Sin embargo, más allá de las opciones de aprobación adicionales, el flujo de trabajo para las traducciones humanas es el mismo que las traducciones automáticas, tal como se describe en este recorrido.
 
 ## Siguientes pasos {#what-is-next}
 

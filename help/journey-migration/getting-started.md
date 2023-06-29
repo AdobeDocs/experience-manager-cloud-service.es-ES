@@ -2,9 +2,9 @@
 title: Introducción al Recorrido AEM de migración para la migración a los as a Cloud Service
 description: Inicie el recorrido de migración familiarizándose con los conceptos básicos para pasar a AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 24%
 
 ---
@@ -15,7 +15,7 @@ AEM En esta parte del Recorrido AEM de trabajo de migración as a Cloud Service 
 
 ## Objetivo {#objective}
 
-AEM AEM as a Cloud Service Este documento le ayuda a comprender por qué debe utilizar una versión nativa de la nube de la, así como las diferentes fases de migración a la misma Después de leer, debería:
+AEM AEM Este documento le ayuda a comprender por qué debe utilizar una versión nativa de la nube de la y las diferentes fases de la migración a la as a Cloud Service. Después de leer, debería:
 
 * AEM Comprender los beneficios de trasladarse a un lugar as a Cloud Service de la
 * Familiarícese con los pasos generales que debe seguir para poder realizar la transición a la nube

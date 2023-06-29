@@ -4,10 +4,10 @@ description: Aprenda a crear y administrar proyectos de traducción automática 
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4085'
-ht-degree: 97%
+source-wordcount: '4078'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Los proyectos de traducción le permiten administrar la traducción del contenid
 
 >[!TIP]
 >
->Si es nuevo traduciendo contenido, consulte nuestra [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
+>Si acaba de empezar a traducir contenido, consulte [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
 
 Cuando se añaden recursos a un proyecto de traducción, se crea un trabajo de traducción para ellos. Los trabajos proporcionan comandos e información de estado que se utilizan para administrar los flujos de trabajo de traducción humana y traducción automática que se ejecutan en los recursos.
 
@@ -196,7 +196,7 @@ Las actualizaciones de la memoria de traducción se pueden interceptar y enviar 
 
 Se puede seleccionar una propiedad en la vista de lista de la consola Sites que muestre si una página se ha traducido, está en proceso de traducción o aún no se ha traducido.
 
-1. En la consola del sitio, cambie a la [vista de lista.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. En la consola del sitio, cambie a la [vista de lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Pulse o haga clic en **Configuración de vista** en la lista desplegable de vista.
 1. En el cuadro de diálogo, marque la propiedad **Traducido** y pulse o haga clic en **Actualizar**.
 
@@ -210,7 +210,7 @@ Se puede acceder a muchas tareas de traducción y a muchas opciones avanzadas en
 
 ### Explicación de la consola Proyectos
 
-Los proyectos de traducción, en AEM, utilizan la [consola Proyectos AEM estándar.](/help/sites-cloud/authoring/projects/overview.md) Si no está familiarizado con Proyectos AEM, revise esa documentación.
+Los proyectos de traducción, en AEM, utilizan la [consola Proyectos AEM estándar](/help/sites-cloud/authoring/projects/overview.md). AEM Si no está familiarizado con proyectos de, revise esa documentación.
 
 Como cualquier otro proyecto, un proyecto de traducción está compuesto por mosaicos que presentan una visión general de las tareas del proyecto.
 
@@ -277,7 +277,7 @@ Puede agregar páginas, activos o etiquetas al trabajo de su proyecto de traducc
 
 ### Adición de etiquetas a un trabajo de traducción {#adding-tags-to-a-translation-job}
 
-Puede añadir etiquetas a un proyecto de traducción similar a [cómo agregar activos y páginas a un proyecto.](#adding-pages-assets-to-a-translation-job) Solo seleccione **Etiquetas** en el menú **Agregar**, a continuación, siga los mismos pasos.
+Puede añadir etiquetas a un proyecto de traducción similar a [cómo agregar activos y páginas a un proyecto](#adding-pages-assets-to-a-translation-job). Solo seleccione **Etiquetas** en el menú **Agregar**, a continuación, siga los mismos pasos.
 
 ### Ver detalles del proyecto de traducción {#seeing-translation-project-details}
 
@@ -303,7 +303,7 @@ Cuando se crea un proyecto utilizando el carril de referencias de una página, e
 
 ### Monitorización del estado de un trabajo de traducción {#monitoring-the-status-of-a-translation-job}
 
-El mosaico de trabajo de traducción de un proyecto de traducción proporciona el estado de un trabajo de traducción, así como el número de páginas y activos del trabajo.
+El mosaico de trabajo de traducción de un proyecto de traducción proporciona el estado de un trabajo de traducción y la cantidad de páginas y activos en el trabajo.
 
 ![Trabajo de traducción](../assets/translation-job.png)
 
@@ -437,7 +437,7 @@ Cuando el contenido se traduce para una copia de idioma existente, revise las tr
 Para comparar las copias de idioma con el maestro de idioma:
 
 1. En la consola Sites, vaya a la copia de idioma que desee comparar.
-1. Abra el [Carril referencias.](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)
+1. Abra el [Carril referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
 1. En el encabezado **Copias**, seleccione **Copias de idioma.**
 1. Seleccione la copia de idioma específica y, a continuación, puede hacer clic en **Comparar con maestro** o **Comparar con anterior** si procede.
 

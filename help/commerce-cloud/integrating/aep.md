@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Obtenga más información acerca de [Recopilación de datos de Experience Platfo
 
 Los siguientes pasos muestran cómo enviar el `addToCart` AEM datos de evento de páginas de producto procesadas por el usuario en el Experience Platform mediante el conector de Experience Platform del CIF. Con la extensión del explorador Adobe Experience Platform Debugger, puede probar y revisar los datos enviados.
 
-![Revise los datos del evento addToCart en Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
+![Revisar los datos del evento addToCart en el Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
 
 ## Requisitos previos {#prerequisites}
 
@@ -382,7 +382,7 @@ Para almacenar los datos de evento, debe crear un Conjunto de datos que se ajust
 
 - En la nueva página, __buscar y seleccionar__ Seleccione el esquema que ha creado en el paso anterior y haga clic en __Siguiente__ botón.
 
-   ![Crear conjuntos de datos y seleccionar esquema AEP](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+  ![Crear conjuntos de datos y seleccionar esquema AEP](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
 1. Asigne un nombre al conjunto de datos mediante __Configurar conjunto de datos > Nombre__ y haga clic en el __Finalizar__ botón.
 

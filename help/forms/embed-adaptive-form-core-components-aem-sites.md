@@ -6,7 +6,7 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1d5641dd07cc68dade247fe30bb57663872e5560
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 100%
@@ -112,7 +112,7 @@ En el cuadro de diálogo [!UICONTROL Editar contenedor de AEM Forms], especifiq
    * **Servicio de rellenado automático**: puede utilizar el servicio de cumplimentación previa para rellenar automáticamente los campos de un formulario adaptable utilizando los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos ya han sido rellenados. Para obtener información sobre el servicio de rellenado automático, consulte [Rellenar previamente los campos del formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=es#configuring-prefill-service-using-configuration-manager)
    * **Categoría de la biblioteca del cliente**: especifique las [Funciones de JavaScript](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=es#custom-functions) que se utilizan en expresiones y son compatibles con Adaptive Forms.
 * **Modelo de datos**: un modelo de datos de formulario permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija un **[!UICONTROL modelo de datos de formulario]** si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
-   * **Modelo de datos de formulario**: un modelo de datos de formulario permite que un formulario adaptable se comunique con distintas fuentes de datos. Para obtener información sobre la configuración de una fuente de datos, consulte [Configurar fuentes de datos.](/help/forms/configure-data-sources.md)
+   * **Modelo de datos de formulario**: un modelo de datos de formulario permite que un formulario adaptable se comunique con distintas fuentes de datos. Para obtener información sobre la configuración de una fuente de datos, consulte [Configurar fuentes de datos](/help/forms/configure-data-sources.md).
    * **Esquema**: el esquema representa la estructura en la que el sistema back-end de su organización produce o consume datos. Puede [asociar el esquema a un formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=es) y utilizar sus elementos para agregar contenido dinámico a un formulario adaptable.
 
      >[!NOTE]

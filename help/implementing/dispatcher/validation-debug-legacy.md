@@ -4,9 +4,9 @@ description: Validación y depuración mediante herramientas de Dispatcher (here
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2338'
+source-wordcount: '2329'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Este artículo supone que la configuración de Dispatcher del proyecto no incluy
 * un solo archivo de reescritura que debe utilizarse en lugar de archivos específicos del sitio.
 * la suma del contenido de los archivos personalizables debe ser inferior a 1 MB.
 
-AEM A partir de la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager generan estructuras de proyecto de Maven con arquetipo de archivo 28 y posterior, que incluye el archivo mencionado.
+AEM A partir de la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager generan estructuras de proyecto maven con arquetipo de archivo 28 y posterior, que incluye el archivo mencionado anteriormente.
 
 Lo es **muy recomendable** Asegúrese de migrar del modo heredado al flexible, tal como se describe en la sección migración [Migración del modo heredado al modo flexible](#migrating-flexible). El uso del modo flexible también hace que el SDK y el tiempo de ejecución validen e implementen la configuración de una manera mejorada.
 
@@ -77,7 +77,7 @@ A continuación se muestra una explicación de los archivos notables que se pued
 
 **Archivos personalizables**
 
-Los siguientes archivos son personalizables y se transferirán a la instancia de Cloud en la implementación:
+Los siguientes archivos se pueden personalizar y se transfieren a la instancia de Cloud en la implementación:
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
@@ -101,7 +101,7 @@ Este archivo se incluye desde dentro de `dispatcher_vhost.conf` archivo. Puede c
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Puede tener uno o más de estos archivos y contienen granjas que coinciden con los nombres de host y permiten que el módulo de Dispatcher administre cada granja con reglas diferentes. Los archivos se crean en `available_farms` y se activa con un vínculo simbólico en la `enabled_farms` directorio. Desde el `.farm` se incluyen archivos, otros archivos como filtros, reglas de caché y otros.
+Puede tener uno o más de estos archivos y contienen granjas que coinciden con los nombres de host y permiten que el módulo de Dispatcher administre cada granja con reglas diferentes. Los archivos se crean en `available_farms` y se activa con un vínculo simbólico en la `enabled_farms` directorio. Desde el `.farm` se incluyen archivos y otros archivos, como filtros, reglas de caché y otros.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -117,13 +117,13 @@ Este archivo se incluye desde su `.farm` archivos. Tiene un conjunto de reglas q
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-Este archivo se incluye desde su `.farm` archivos. Tiene una lista de nombres de host o rutas URI que deben coincidir con la coincidencia glob. Determina qué servidor back-end utilizar para servir una solicitud.
+Este archivo se incluye desde su `.farm` archivos. Tiene una lista de nombres de host o rutas URI que deben coincidir con la coincidencia glob. Esta coincidencia determina qué back-end utilizar para servir una solicitud.
 
-Los archivos anteriores hacen referencia a los archivos de configuración inmutables que se enumeran a continuación. Los cambios en los archivos inmutables no los procesarán los Dispatcher en entornos en la nube.
+Los archivos anteriores hacen referencia a los archivos de configuración inmutables que se enumeran a continuación. Los cambios en los archivos inmutables no los procesan los Dispatcher en los entornos de la nube.
 
 **Archivos de configuración inmutables**
 
-Estos archivos forman parte del marco base y aplican estándares y prácticas recomendadas. Los archivos se consideran inmutables porque modificarlos o eliminarlos localmente no tendrá ningún impacto en la implementación, ya que no se transferirán a la instancia de Cloud.
+Estos archivos forman parte del marco base y aplican estándares y prácticas recomendadas. Los archivos se consideran inmutables porque modificarlos o eliminarlos localmente no tiene ningún impacto en la implementación, ya que no se transfieren a la instancia de Cloud.
 
 Se recomienda que los archivos anteriores hagan referencia a los archivos inmutables que se enumeran a continuación, seguidos de cualquier instrucción o anulación adicional. Cuando la configuración de Dispatcher se implementa en un entorno de nube, se utiliza la versión más reciente de los archivos inmutables, independientemente de la versión que se haya utilizado en el desarrollo local.
 
@@ -137,7 +137,7 @@ Forma parte del marco base, que se utiliza para ilustrar cómo se incluyen los h
 
 * `conf.d/rewrites/default_rewrite.rules`
 
-Reglas de reescritura predeterminadas adecuadas para un proyecto estándar. Si necesita personalizar, modifique `rewrite.rules`. En la personalización, aún puede incluir primero las reglas predeterminadas si se adaptan a sus necesidades.
+Reglas predeterminadas para la reescritura adecuadas para un proyecto estándar. Si necesita personalizar, edite `rewrite.rules`. En la personalización, aún puede incluir primero las reglas predeterminadas si se adaptan a sus necesidades.
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
@@ -178,7 +178,7 @@ Consulte [Módulos Apache compatibles](/help/implementing/dispatcher/disp-overvi
 ## Validación local {#local-validation-legacy-mode}
 
 >[!NOTE]
->Las secciones siguientes incluyen comandos que utilizan las versiones Mac o Linux del SDK, pero el SDK de Windows también se puede utilizar de forma similar.
+>Las secciones siguientes incluyen comandos que utilizan las versiones Mac o Linux® del SDK, pero el SDK de Windows también se puede utilizar de forma similar.
 
 Utilice el `validate.sh` como se muestra a continuación:
 
@@ -218,8 +218,8 @@ Phase 3 finished
 La secuencia de comandos hace lo siguiente:
 
 1. Ejecuta el validador. Si la configuración no es válida, el script falla.
-2. Ejecuta el `httpd -t` comando para comprobar si la sintaxis es correcta de modo que apache httpd pueda iniciarse. Si se realiza correctamente, la configuración debe estar lista para la implementación.
-3. Comprueba que el subconjunto de los archivos de configuración del SDK de Dispatcher, que están pensados para ser inmutables como se describe en la [Sección Estructura de archivos](##legacy-mode-file-structure), no se ha modificado. AEM Se trata de una nueva comprobación, introducida con la versión v2021.1.4738 del SDK de la versión que también incluye la versión 2.0.36 de las herramientas de Dispatcher. Antes de esta actualización, es posible que los clientes hayan supuesto incorrectamente que cualquier modificación local del SDK de esos archivos inmutables también se aplicaría al entorno de Cloud.
+2. Ejecuta el `httpd -t` para probar si la sintaxis es correcta de modo que Apache httpd pueda iniciarse. Si se realiza correctamente, la configuración debe estar lista para la implementación.
+3. Comprueba que el subconjunto de los archivos de configuración del SDK de Dispatcher, que están pensados para ser inmutables como se describe en la [Sección Estructura de archivos](##legacy-mode-file-structure), no se ha editado. AEM Esta comprobación es nueva y se introdujo con la versión v2021.1.4738 del SDK de la que también incluye la versión 2.0.36 de las herramientas de Dispatcher. Antes de esta actualización, es posible que los clientes hayan supuesto incorrectamente que cualquier modificación local del SDK de esos archivos inmutables también se aplicaría al entorno de Cloud.
 
 Durante una implementación de Cloud Manager, la variable `httpd -t` también se ejecuta la comprobación de sintaxis y todos los errores se incluyen en Cloud Manager `Build Images step failure` registro.
 
@@ -230,19 +230,19 @@ Si una directiva no está incluida en la lista de permitidos, la herramienta reg
 * No existe ninguna regla de filtro que utilice permita a través de `/glob` (consulte [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) para obtener más información.
 * No se expone ninguna función de administrador. Por ejemplo, el acceso a rutas como `/crx/de or /system/console`.
 
-Tenga en cuenta que la herramienta de validación informa solo del uso prohibido de directivas de Apache que no se han incluido en la lista de permitidos. No informa de problemas sintácticos o semánticos con la configuración de Apache, ya que esta información solo está disponible para los módulos Apache en un entorno en ejecución.
+La herramienta de validación informa únicamente del uso prohibido de directivas de Apache que no se han incluido en la lista de permitidos. No informa de problemas sintácticos o semánticos con la configuración de Apache, ya que esta información solo está disponible para los módulos Apache en un entorno en ejecución.
 
 A continuación se presentan las técnicas de solución de problemas para depurar errores de validación comunes que genera la herramienta:
 
-**no se ha podido encontrar un `conf.dispatcher.d` subcarpeta en el archivo**
+**No se ha podido encontrar un `conf.dispatcher.d` subcarpeta en el archivo**
 
 El archivo debe contener las carpetas `conf.d` y `conf.dispatcher.d`. Tenga en cuenta que **no debe** usar el prefijo `etc/httpd` en el archivo.
 
-**no se pudo encontrar ninguna granja en`conf.dispatcher.d/enabled_farms`**
+**No se encontró ninguna granja en`conf.dispatcher.d/enabled_farms`**
 
-Las granjas habilitadas deben estar ubicadas en la subcarpeta mencionada.
+Las granjas habilitadas deben estar en la subcarpeta mencionada.
 
-**el nombre del archivo incluido (...) debe ser: ...**
+**El nombre del archivo incluido (...) debe ser: ...**
 
 Hay dos secciones en la configuración de su granja de servidores que **debe** incluir un archivo específico: `/renders` y `/allowedClients` en el `/cache` sección. Estas secciones deben tener el siguiente aspecto:
 
@@ -252,7 +252,7 @@ Hay dos secciones en la configuración de su granja de servidores que **debe** i
 }
 ```
 
-y:
+And:
 
 ```
 /allowedClients {
@@ -260,9 +260,9 @@ y:
 }
 ```
 
-**archivo incluido en una ubicación desconocida: ...**
+**Archivo incluido en una ubicación desconocida: ...**
 
-Hay cuatro secciones en la configuración de la granja en las que se le permite incluir su propio archivo: `/clientheaders`, `filters`, `/rules` in `/cache` y `/virtualhosts`. Los archivos incluidos deben llamarse de la siguiente manera:
+Hay cuatro secciones en la configuración de la granja en las que se le permite incluir su propio archivo: `/clientheaders`, `filters`, `/rules` in `/cache` y `/virtualhosts`. Los archivos incluidos deben tener el siguiente nombre:
 
 | Sección | Incluir nombre de archivo |
 |------------------|--------------------------------------|
@@ -273,7 +273,7 @@ Hay cuatro secciones en la configuración de la granja en las que se le permite 
 
 También puede incluir la variable **predeterminado** versión de esos archivos, cuyos nombres van precedidos de la palabra `default_`, por ejemplo, `../filters/default_filters.any`.
 
-**incluir instrucción en (...), fuera de cualquier ubicación conocida: ...**
+**Incluir instrucción en (...), fuera de cualquier ubicación conocida: ...**
 
 Aparte de las seis secciones mencionadas en los párrafos anteriores, no se le permite utilizar la variable `$include` por ejemplo, lo siguiente generaría este error:
 
@@ -283,12 +283,12 @@ Aparte de las seis secciones mencionadas en los párrafos anteriores, no se le p
 }
 ```
 
-**los clientes/procesamientos permitidos no se incluyen desde: ...**
+**Los clientes/procesamientos permitidos no se incluyen desde: ...**
 
 Este error se genera cuando no se especifica una inclusión para `/renders` y `/allowedClients` en el `/cache` sección. Consulte la
 **el nombre del archivo incluido (...) debe ser: ...** para obtener más información.
 
-**el filtro no debe utilizar el patrón glob para permitir solicitudes**
+**El filtro no debe utilizar el patrón glob para permitir solicitudes**
 
 No es seguro permitir solicitudes con un `/glob` regla de estilo, que se compara con la línea de solicitud completa, por ejemplo,
 
@@ -300,10 +300,10 @@ No es seguro permitir solicitudes con un `/glob` regla de estilo, que se compara
 
 Esta instrucción está diseñada para permitir solicitudes de `css` archivos, pero también permite las solicitudes de **cualquiera** resource seguido de la cadena de consulta `?a=.css`. Por lo tanto, está prohibido utilizar estos filtros (véase también CVE-2016-0957).
 
-**el archivo incluido (...) no coincide con ningún archivo conocido**
+**El archivo incluido (...) no coincide con ningún archivo conocido**
 
 Existen dos tipos de archivos en la configuración de host virtual de Apache que se pueden especificar como incluye: reescrituras y variables.
-Los archivos incluidos deben llamarse de la siguiente manera:
+Los archivos incluidos deben tener el siguiente nombre:
 
 | Tipo | Incluir nombre de archivo |
 |-----------|---------------------------------|
@@ -312,18 +312,18 @@ Los archivos incluidos deben llamarse de la siguiente manera:
 
 >[!TIP]
 >
->Para poder incluir más archivos de una manera mucho menos limitada, es posible que desee cambiar al modo de configuración flexible de Dispatcher. Consulte el documento [Validación y depuración mediante las herramientas de Dispatcher](/help/implementing/dispatcher/validation-debug.md) para obtener más información sobre el modo flexible.
+Para poder incluir más archivos de una manera mucho menos limitada, es posible que desee cambiar al modo de configuración flexible de Dispatcher. Consulte [Validación y depuración mediante las herramientas de Dispatcher](/help/implementing/dispatcher/validation-debug.md) para obtener más información sobre el modo flexible.
 
 También puede incluir la variable **predeterminado** versión de las reglas de reescritura, cuyo nombre es `conf.d/rewrites/default_rewrite.rules`.
 Tenga en cuenta que no hay una versión predeterminada de los archivos de variables.
 
 **Se ha detectado un diseño de configuración obsoleto, habilitando el modo de compatibilidad**
 
-Este mensaje indica que la configuración tiene el diseño de versión 1 obsoleto, que contiene una configuración Apache completa y archivos con `ams_` prefijos. Aunque esto sigue siendo compatible con la compatibilidad con versiones anteriores, debe cambiar al nuevo diseño.
+Este mensaje indica que la configuración tiene el diseño de versión 1 obsoleto, que contiene una configuración Apache completa y archivos con `ams_` prefijos. Aunque esta configuración sigue siendo compatible con la compatibilidad con versiones anteriores, debe cambiar al nuevo diseño.
 
-Tenga en cuenta que la primera fase también se puede **ejecutar por separado**, en lugar de desde el envoltorio `validate.sh` script.
+La primera fase también puede ser **ejecutar por separado**, en lugar de desde el envoltorio `validate.sh` script.
 
-Cuando se ejecuta con su artefacto Maven o su `dispatcher/src` subdirectorio, notificará errores de validación:
+Cuando se ejecuta con su artefacto Maven o su `dispatcher/src` subdirectorio, informa de errores de validación:
 
 ```
 $ validator full dispatcher/src
@@ -348,18 +348,18 @@ Para evitar este error, copie y pegue la ruta de acceso desde el Explorador de W
 
 ### Fase 2 {#second-phase}
 
-Esta fase comprueba la sintaxis de apache iniciando Docker en una imagen. AEM Docker debe estar instalado localmente, pero tenga en cuenta que no es necesario para que se ejecute el programa de instalación de la aplicación de la red de distribución de datos de.
+Esta fase comprueba la sintaxis de Apache iniciando Docker en una imagen. AEM Docker debe estar instalado localmente, pero tenga en cuenta que no es necesario para que se ejecute el programa de instalación de la aplicación de la red de distribución de datos de.
 
 >[!NOTE]
->Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este es un requisito previo para ejecutar y depurar Dispatcher en un equipo local.
+Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito previo es necesario para ejecutar y depurar Dispatcher en un equipo local.
 
-Esta fase también se puede ejecutar de forma independiente mediante `validator full -d out src/dispatcher`, que genera un directorio de salida, necesario para el siguiente comando `bin/docker_run.sh out host.docker.internal:4503 8080`.
+Esta fase también se puede ejecutar de forma independiente mediante `validator full -d out src/dispatcher`, que genera un directorio &quot;out&quot; necesario para el siguiente comando `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
 Durante una implementación de Cloud Manager, la variable `httpd -t` La comprobación de sintaxis se ejecuta y cualquier error se incluye en el registro de errores del paso Imágenes de compilación de Cloud Manager.
 
 ### Fase 3 {#third-phase}
 
-Si se produce un error en esta fase, implica que Adobe ha cambiado uno o más archivos inmutables y debe reemplazar los archivos inmutables correspondientes con la nueva versión entregada en `src` del SDK. La muestra de registro siguiente ilustra este problema:
+Si hay un error en esta fase, implica que el Adobe ha cambiado uno o más archivos inmutables. En tal caso, debe reemplazar los archivos inmutables correspondientes con la nueva versión entregada en `src` del SDK. El siguiente ejemplo de registro ilustra este problema:
 
 ```
 Phase 3: Immutability check
@@ -378,13 +378,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
   
 ```
 
-Esta fase también se puede ejecutar de forma independiente mediante `validator full -d out src/dispatcher`, que genera un directorio de salida, necesario para el siguiente comando `bin/docker_immutability_check.sh out`.
+Esta fase también se puede ejecutar de forma independiente mediante `validator full -d out src/dispatcher`, que genera un directorio &quot;out&quot;, necesario para el siguiente comando `bin/docker_immutability_check.sh out`.
 
 ## Depuración de la configuración de Apache y Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-Tenga en cuenta que puede ejecutar Apache Dispatcher localmente mediante `./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+Puede ejecutar Apache Dispatcher localmente mediante `./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
-AEM Como se ha indicado anteriormente, Docker debe instalarse localmente y no es necesario para que se ejecute el programa de instalación de la plataforma de datos de la plataforma de datos de la plataforma de datos de la plataforma de datos de. Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este es un requisito previo para ejecutar y depurar Dispatcher en un equipo local.
+AEM Como se ha indicado anteriormente, Docker debe instalarse localmente y no es necesario para que se ejecute el programa de instalación de la plataforma de datos de la plataforma de datos de la plataforma de datos de la plataforma de datos de. Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito previo es necesario para ejecutar y depurar Dispatcher en un equipo local.
 
 La siguiente estrategia se puede utilizar para aumentar la salida del registro para el módulo de Dispatcher y ver los resultados de la `RewriteRule` evaluación en entornos locales y en la nube.
 
@@ -418,7 +418,7 @@ Los registros para entornos de nube se exponen a través del servicio de registr
 
 ## Diferentes configuraciones de Dispatcher por entorno {#different-dispatcher-configurations-per-environment}
 
-AEM Actualmente, la misma configuración de Dispatcher se aplica a todos los entornos as a Cloud Service de la. El tiempo de ejecución tendrá una variable de entorno `ENVIRONMENT_TYPE` que contiene el modo de ejecución actual (dev, stage o prod) así como una definición. La definición puede ser `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` o `ENVIRONMENT_PROD`. En la configuración de Apache, la variable se puede utilizar directamente en una expresión. Alternativamente, el define se puede utilizar para generar lógica:
+AEM Actualmente, la misma configuración de Dispatcher se aplica a todos los entornos de la zona as a Cloud Service de la. El tiempo de ejecución tiene una variable de entorno `ENVIRONMENT_TYPE` que contiene el modo de ejecución actual (dev, stag o prod) y un define. La definición puede ser `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE`, o `ENVIRONMENT_PROD`. En la configuración de Apache, la variable se puede utilizar directamente en una expresión. Alternativamente, el define se puede utilizar para generar lógica:
 
 ```
 # Simple usage of the environment variable
@@ -454,7 +454,7 @@ Para obtener una lista completa de las opciones y variables disponibles, ejecute
 
 ## Visualización de la configuración de Dispatcher que utiliza su contenedor Docker {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-Con las configuraciones específicas del entorno, puede resultar difícil determinar el aspecto real de la configuración de Dispatcher. Después de haber iniciado el contenedor de docker con `docker_run.sh` puede descargarse de la siguiente manera:
+Con las configuraciones específicas del entorno, puede resultar difícil determinar el aspecto real de la configuración de Dispatcher. Después de haber iniciado el contenedor de docker con `docker_run.sh`, se puede volcar de la siguiente manera:
 
 * Determine el ID del contenedor de Docker en uso:
 
@@ -477,4 +477,4 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migración del modo heredado al modo flexible {#migrating-flexible}
 
-AEM Con la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager generan estructuras de proyecto de Maven con tipo de archivo 28 o superior, que incluye el archivo **opt-in/USE_SOURCES_DIRECTLY**. Esto elimina las limitaciones anteriores del modo heredado en cuanto al número y el tamaño de los archivos, lo que también provoca que el SDK y el tiempo de ejecución validen e implementen la configuración de forma mejorada. Si la configuración de Dispatcher no tiene este archivo, se recomienda migrar. Utilice los métodos descritos en la sección [modo flexible](/help/implementing/dispatcher/validation-debug.md#migrating) página.
+AEM Con la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager generan estructuras de proyecto de Maven con tipo de archivo 28 o superior, que incluye el archivo **opt-in/USE_SOURCES_DIRECTLY**. Se eliminan las limitaciones anteriores del modo heredado en torno al número y el tamaño de los archivos, lo que también provoca que el SDK y el tiempo de ejecución validen e implementen la configuración de forma mejorada. Si la configuración de Dispatcher no tiene este archivo, se recomienda migrar. Utilice los métodos descritos en la sección [modo flexible](/help/implementing/dispatcher/validation-debug.md#migrating) página.

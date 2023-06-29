@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3708'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Este método de entrega único garantiza que las experiencias de calidad coheren
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media ofrece la misma imagen principal a diferentes medios en diferentes tamaños y formatos.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media ofrece la misma imagen principal a diferentes medios en diferentes tamaños y formatos](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _Adobe Dynamic Media garantiza que las experiencias coherentes y de calidad se entreguen a cualquier pantalla, independientemente del tamaño o el ancho de banda._
 
 A medida que siga leyendo, aprenderá más sobre por qué este concepto de &quot;un archivo de recursos principal, posibilidades ilimitadas&quot; es importante.
@@ -182,7 +182,7 @@ Otro caso de uso que Dynamic Media resuelve es el vídeo. El vídeo es complejo.
 
 Los clientes acuden a Dynamic Media con el siguiente problema que esperan solucionar:
 
-&quot;_Tenemos el video, y gastamos una gran cantidad de dinero creándolo. Pero hemos evitado colocarlo en páginas, o entregarlo, porque de nuestras pruebas, realmente no podemos garantizar la calidad del video, o si realmente se va a reproducir. Y, en última instancia, eso afecta a nuestras marcas y, potencialmente, a nuestro papel, incluso en la conversión._&quot;
+&quot;_Tenemos el video, y gastamos una gran cantidad de dinero creándolo. Pero evitamos colocarlo en páginas o entregarlo, porque de nuestras pruebas, no podemos garantizar la calidad del video, o si realmente se va a reproducir. Y, en última instancia, eso afecta a nuestras marcas y, potencialmente, a nuestro papel, incluso en la conversión._&quot;
 
 La solución de Dynamic Media es tomar ese archivo de vídeo principal y permitir que Dynamic Media haga todos los tamaños a través de su proceso de transcodificación. A continuación, vincúlelo con el reproductor de vídeo inteligente de Dynamic Media. Este flujo de trabajo garantiza que, tanto si utiliza ese vídeo en la página de aterrizaje principal, como en una categoría o página de detalles del producto, será coherente en todo y se entregará con una alta calidad.
 

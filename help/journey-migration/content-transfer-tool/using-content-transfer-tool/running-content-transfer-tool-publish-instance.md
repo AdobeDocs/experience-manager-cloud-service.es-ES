@@ -2,9 +2,9 @@
 title: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
 description: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '251'
 ht-degree: 11%
 
 ---
@@ -29,6 +29,6 @@ Siga el método recomendado como se describe a continuación:
 * Durante la ingesta para publicar, el nivel de publicación no se reducirá (a diferencia del autor).
 
   >[!IMPORTANT]
-  >Como precaución, evite cualquier operación de escritura iniciada por el usuario, como:
+  >Como medida de precaución, evite cualquier operación de escritura iniciada por el usuario, como:
   > * AEM La distribución de contenido desde autor as a Cloud Service a Publish en ese entorno
   > * Sincronización de usuarios entre instancias de publicación

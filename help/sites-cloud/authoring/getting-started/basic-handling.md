@@ -2,10 +2,10 @@
 title: Gestión básica
 description: AEM Familiarícese con la navegación por el y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2986'
-ht-degree: 70%
+source-wordcount: '2978'
+ht-degree: 69%
 
 ---
 
@@ -71,7 +71,7 @@ En Navegación, las consolas disponibles son:
 | Sitios | La consola Sitios le permite [crear, ver y administrar sitios web](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) que se ejecuten en su instancia de AEM. Mediante esta consola puede crear, editar, copiar, mover y eliminar páginas, iniciar flujos de trabajo y publicar páginas. |
 | Fragmentos de experiencias | Un [fragmento de experiencia](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) es una experiencia independiente que puede reutilizarse en diversos canales y tener variaciones, de manera que se evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias. |
 | Assets | La consola Recursos le permite importar y administrar [recursos digitales, como imágenes, vídeos, documentos y archivos de audio](/help/assets/overview.md). Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. También puede crear y administrar [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) desde la consola Recursos. |
-| Personalización | [Esta consola ofrece un marco de herramientas para crear contenido dirigido y presentar experiencias personalizadas.](/help/sites-cloud/authoring/personalization/overview.md) |
+| Personalización | [Esta consola ofrece un marco de herramientas para crear contenido dirigido y presentar experiencias personalizadas](/help/sites-cloud/authoring/personalization/overview.md). |
 | Fragmentos de contenido | [Los fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md) permiten diseñar, crear, depurar y publicar contenido independiente de cualquier página. Permiten preparar contenido estructurado listo para su uso en varias ubicaciones/en varios canales, y es ideal tanto para la creación de páginas como para la entrega sin encabezado. |
 
 ## Panel de herramientas {#tools-panel}
@@ -216,7 +216,7 @@ La acción disponible en la barra de herramientas cambia para reflejar las accio
 
 El modo de [seleccionar un recurso](#viewing-and-selecting-resources) depende de la vista.
 
-Debido a las restricciones de espacio en algunas ventanas, es posible que la barra de herramientas supere rápidamente la longitud disponible. Cuando esto ocurre, aparecen opciones adicionales. Al tocar o hacer clic en el símbolo de elipsis (los tres puntos o **...**), se abre un selector desplegable con el resto de las acciones. Por ejemplo, después de seleccionar una página en la consola **Sitios**: 
+Debido a las restricciones de espacio en algunas ventanas, es posible que la barra de herramientas supere rápidamente la longitud disponible. Cuando esto ocurre, aparecen opciones adicionales. Tocando o haciendo clic en los puntos suspensivos (los tres puntos o **...**) abre un selector desplegable que contiene todas las acciones restantes. Por ejemplo, después de seleccionar una página en la consola **Sitios**: 
 
 ![Opciones adicionales](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -402,7 +402,7 @@ Si se selecciona contenido solamente, después solo aparece el icono de raíl. C
 
 El árbol de contenido se puede utilizar para navegar rápidamente por la jerarquía del sitio dentro del panel lateral y ver mucha información sobre las páginas de la carpeta actual.
 
-Con el panel lateral del árbol de contenido junto con una vista de lista o una vista de tarjetas, los usuarios pueden ver fácilmente la estructura jerárquica del proyecto y navegar fácilmente por la estructura de contenido con el panel lateral del árbol de contenido, así como ver información detallada de la página en la vista de lista.
+Con el panel lateral del árbol de contenido junto con una vista de lista o una vista de tarjetas, los usuarios pueden ver fácilmente la estructura jerárquica del proyecto y navegar fácilmente por la estructura de contenido con el panel lateral del árbol de contenido y ver información detallada de la página en la vista de lista.
 
 ![Árbol de contenido](/help/sites-cloud/authoring/assets/content-tree.png)
 
@@ -410,7 +410,7 @@ Con el panel lateral del árbol de contenido junto con una vista de lista o una 
 >
 >Una vez seleccionada una entrada en la vista de jerarquía, se pueden utilizar las teclas de flecha para desplazarse rápidamente por la jerarquía.
 >
->Consulte la [métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) para obtener más información.
+>Consulte [métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) para obtener más información.
 
 ### Escala de cronología {#timeline}
 
@@ -460,15 +460,15 @@ Estas opciones están disponibles mediante las comillas angulares que hay junto 
 
 ### Sitio {#site}
 
-**Sitio** muestra detalles de sitios [creados mediante una plantilla de sitio.](/help/sites-cloud/administering/site-creation/create-site.md)
+**Sitio** muestra detalles de sitios [creados mediante una plantilla de sitio](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Carril del sitio](../assets/site-rail.png)
 
-Consulte el documento [Uso del carril del sitio para administrar el tema del sitio](/help/sites-cloud/administering/site-creation/site-rail.md) para obtener más información sobre cómo puede utilizar el carril para administrar el [tema del sitio.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Consulte el documento [Uso del carril del sitio para administrar el tema del sitio](/help/sites-cloud/administering/site-creation/site-rail.md) para obtener más información sobre cómo puede utilizar el carril para administrar el [tema del sitio](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 >[!TIP]
 >
->Puede encontrar una descripción completa del proceso de creación de un nuevo sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios.](/help/journey-sites/quick-site/overview.md)
+>Puede encontrar una descripción completa del proceso de creación de un nuevo sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md).
 
 ### Filtro {#filter}
 

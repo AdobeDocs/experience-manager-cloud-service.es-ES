@@ -2,10 +2,10 @@
 title: Activación de las funciones progresivas de la aplicación web
 description: AEM Sites permite al autor del contenido habilitar funcionalidades de aplicación web progresiva en cualquier sitio a través de una configuración sencilla, en lugar de programarlas.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 93%
+source-wordcount: '1997'
+ht-degree: 92%
 
 ---
 
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Ajuste de Dispatcher {#adjust-dispatcher}
 
-La función de PWA genera y utiliza archivos `/content/<sitename>/manifest.webmanifest`. De forma predeterminada, [Dispatcher](/help/implementing/dispatcher/overview.md) no expone esos archivos. Para exponerlos, el desarrollador debe añadir la siguiente configuración al proyecto del sitio.
+La función de PWA genera y utiliza archivos `/content/<sitename>/manifest.webmanifest`. De forma predeterminada, [el despachante](/help/implementing/dispatcher/overview.md) no expone dichos archivos. Para exponerlos, el desarrollador debe añadir la siguiente configuración al proyecto del sitio.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -160,20 +160,20 @@ Esta configuración permite que el sitio se comporte como una aplicación nativa
    * **IU mínima**: el explorador está oculto, como una aplicación nativa, pero se exponen los controles básicos de navegación.
    * **Pantalla completa**: el navegador está completamente oculto, como una aplicación nativa, pero se procesa en modo de pantalla completa.
       * Con esta opción, la navegación de la aplicación debe ser posible por completo a través del contenido mediante vínculos y componentes en las páginas del sitio, sin utilizar los controles de navegación del explorador.
-* **Orientación de la pantalla**: como aplicación local, la PWA debe saber cómo gestionar las [orientaciones del dispositivo.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
+* **Orientación de la pantalla**: como aplicación local, la PWA debe saber cómo gestionar las [orientaciones del dispositivo](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
    * **Cualquiera**: la aplicación se ajusta a la orientación del dispositivo del usuario. Este es el valor predeterminado.
    * **Vertical**: esto fuerza a la aplicación a abrirse en formato vertical independientemente de la orientación del dispositivo del usuario.
    * **Horizontal**: esto fuerza a la aplicación a abrirse en formato horizontal independientemente de la orientación del dispositivo del usuario.
 * **Color del tema**: define el [color de la aplicación](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) que afecta a la forma en que el sistema operativo del usuario local muestra la barra de herramientas de la IU nativa y los controles de navegación. Según el explorador, puede afectar a otros elementos de presentación de la aplicación.
    * Utilice la ventana emergente con el círculo cromático para seleccionar un color.
    * El color también puede definirse con un valor hexadecimal o RGB.
-* **Color de fondo**: define el [color de fondo de la aplicación,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) que se muestra a medida que se carga la aplicación.
+* **Color de fondo** - Esto define el [color de fondo de la aplicación](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), que se muestra a medida que se carga la aplicación.
    * Utilice la ventana emergente con el círculo cromático para seleccionar un color.
    * El color también puede definirse con un valor hexadecimal o RGB.
    * Determinados exploradores [crean una pantalla de inicio automáticamente](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) a partir del nombre de la aplicación, el color de fondo y el icono.
 * **Icono**: define [el icono](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) que representa la aplicación en el dispositivo del usuario.
    * El icono debe ser un archivo PNG de tamaño 512 x 512 píxeles.
-   * El icono debe [almacenarse en DAM.](/help/assets/overview.md)
+   * El icono debe [almacenarse en DAM](/help/assets/overview.md).
 
 ### Administración de caché (avanzada) {#offline-configuration}
 

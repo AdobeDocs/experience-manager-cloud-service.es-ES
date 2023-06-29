@@ -2,10 +2,10 @@
 title: Configuración del equipo de desarrollo empresarial
 description: Aprenda a configurar y escalar su equipo de desarrollo empresarial y vea cómo AEM as a Cloud Service puede ayudarle con su proceso de desarrollo.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 85%
+source-wordcount: '1437'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ Aprenda a configurar y escalar su equipo de desarrollo empresarial y vea cómo A
 
 ## Introducción {#introduction}
 
-Para dar compatibilidad a los clientes con configuraciones de desarrollo empresarial, AEM as a Cloud Service se integra completamente con Cloud Manager y sus [canalizaciones de CI/CD creadas específicamente.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Estas canalizaciones y servicios se basan en las prácticas recomendadas, lo que garantiza unas [pruebas y una calidad del código mejores.](/help/implementing/cloud-manager/code-quality-testing.md)
+Para dar compatibilidad a los clientes con configuraciones de desarrollo empresarial, AEM as a Cloud Service se integra completamente con Cloud Manager y sus [canalizaciones de CI/CD creadas específicamente](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Estas canalizaciones y servicios se basan en las prácticas recomendadas, lo que garantiza unas [pruebas y una calidad del código mejores](/help/implementing/cloud-manager/code-quality-testing.md).
 
 ## Soporte de Cloud Manager en la configuración del equipo de desarrollo empresarial {#cloud-manager}
 
@@ -70,7 +70,7 @@ La configuración del repositorio de Git de Cloud Manager tiene dos ramas.
 * Una rama de versión estable que contiene el código de producción de todos los equipos.
 * Una rama de desarrollo que contiene el código de desarrollo de todos los equipos.
 
-Cada inserción en el repositorio de Git de un equipo en los déclencheur de rama estable o de desarrollo a [Acción de GitHub.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+Cada inserción en el repositorio de Git de un equipo en los déclencheur de rama estable o de desarrollo a [Acción de GitHub](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
 
 Todos los proyectos siguen la misma configuración para la rama estable. Una inserción en la rama estable de un proyecto se inserta automáticamente a la rama estable en el repositorio de Git de Cloud Manager. La canalización de producción en Cloud Manager está configurada para activarse mediante una inserción en la rama estable. Por lo tanto, la canalización de producción se ejecuta mediante cada inserción de cualquier equipo en una rama estable y la implementación de producción se actualiza si aprueban todas las puertas de calidad.
 
@@ -82,7 +82,7 @@ La ejecución de la canalización de producción incluye la comprobación del c�
 
 Para el desarrollo local, se utiliza [SDK para AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing). SDK permite configurar el autor, la publicación y el Dispatcher local. Esto permite el desarrollo sin conexión y tiempos de respuesta rápidos. A veces solo se utiliza el entorno de creación para el desarrollo, pero la configuración rápida de los entornos de Dispatcher y de publicación permite probar todo localmente antes de insertarlo en el repositorio de Git.
 
-Los miembros de cada equipo suelen comprobar el código de Git compartido, así como el código de su propio proyecto. No hay necesidad de comprobar otros proyectos ya que son independientes.
+Los miembros de cada equipo suelen comprobar el código de Git compartido para su propio código de proyecto. No hay necesidad de comprobar otros proyectos ya que son independientes.
 
 ![Comprobación local y SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
@@ -90,7 +90,7 @@ Esta configuración del mundo real puede utilizarse como modelo y luego personal
 
 >[!TIP]
 >
->Consulte el documento [Usar repositorios de Git de varias fuentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=es#managing-code) para obtener más información sobre esta configuración.
+>Consulte [Uso de repositorios de Git de varias fuentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=es#managing-code) para obtener más información sobre esta configuración.
 
 ### Consideraciones para la configuración de varios equipos {#considerations}
 

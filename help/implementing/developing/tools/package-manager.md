@@ -4,9 +4,9 @@ description: Conozca los conceptos básicos de AEM; administración de paquetes 
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3780'
+source-wordcount: '3775'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ AEM Los paquetes de contenido creados para aplicaciones as a Cloud Service de la
 
 >[!NOTE]
 >
->Los paquetes solo pueden contener contenido. Cualquier funcionalidad (por ejemplo, contenido almacenado en `/apps`) debe ser [implementado mediante su canalización de CI/CD en Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
+>Los paquetes solo pueden contener contenido. Cualquier funcionalidad (por ejemplo, contenido almacenado en `/apps`) debe ser [implementado mediante su canalización de CI/CD en Cloud Manager](/help/implementing/cloud-manager/deploy-code.md).
 
 >[!IMPORTANT]
 >
@@ -43,7 +43,7 @@ AEM Los paquetes de contenido creados para aplicaciones as a Cloud Service de la
 >
 >No vuelva a intentar realizar la instalación si aparece un error de este tipo. La instalación continúa correctamente en el fondo. Si reinicia la instalación, podrían producirse conflictos debido a varios procesos de importación simultáneos.
 
-Para obtener más información sobre cómo administrar paquetes para AEMaaCS, consulte el documento [AEM Implementación en el as a Cloud Service de](/help/implementing/deploying/overview.md) en la guía de usuario sobre implementación.
+Para obtener más información sobre cómo administrar paquetes para AEMaaCS, consulte [AEM Implementación en el as a Cloud Service de](/help/implementing/deploying/overview.md) en la guía de usuario sobre implementación.
 
 ## Tamaño del paquete {#package-size}
 
@@ -57,7 +57,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 Dado que el tráfico de red es variable y siempre es menor que el valor teórico máximo anunciado, intente utilizar una herramienta de prueba de velocidad de conexión a Internet en línea.
 
-Las velocidades de Internet son casi siempre diferentes para las cargas y descargas. Suponiendo que necesite cargar y descargar paquetes, debe utilizar el valor más bajo (normalmente la velocidad de carga) en el cálculo.
+Las velocidades de Internet son casi siempre diferentes para las cargas y descargas. Suponiendo que debe cargar y descargar paquetes, debe utilizar el valor más bajo (normalmente velocidad de carga) en el cálculo.
 
 ### Ejemplos {#example}
 
@@ -194,7 +194,7 @@ Al crear filtros, puede definir una ruta o utilizar una expresión regular para 
 
 | Tipo de regla | Descripción |
 |---|---|
-| include | Si se incluye un directorio, se incluirá ese directorio y todos los archivos y carpetas que contiene (es decir, todo el subárbol), pero **no** incluir otros archivos o carpetas de la ruta raíz especificada. |
+| include | Si se incluye un directorio, se incluirá ese directorio y todos los archivos y carpetas de ese directorio (es decir, todo el subárbol), pero **no** incluir otros archivos o carpetas de la ruta raíz especificada. |
 | excluir | Excluir un directorio excluirá ese directorio y todos los archivos y carpetas de ese directorio (es decir, todo el subárbol). |
 
 Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree el paquete.](#creating-a-new-package) Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a crearse para actualizar su contenido en función de las nuevas definiciones de filtro.

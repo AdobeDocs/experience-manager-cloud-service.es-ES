@@ -2,10 +2,10 @@
 title: Proyectos
 description: Los proyectos le permiten agrupar recursos en una entidad cuyo entorno común compartido facilita la administración de sus proyectos
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 51%
+source-wordcount: '1255'
+ht-degree: 48%
 
 ---
 
@@ -95,7 +95,7 @@ El mosaico Vínculos permite asociar vínculos externos con el proyecto.
 
 ![Vínculos](/help/sites-cloud/authoring/assets/project-links.png)
 
-Puede asignar al vínculo un nombre fácil de reconocer, así como cambiar la miniatura.
+Puede asignar al vínculo un nombre fácil de reconocer y cambiar la miniatura.
 
 ![Adición de un vínculo](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -105,7 +105,7 @@ El mosaico Información del proyecto proporciona información general sobre el p
 
 ![Información del proyecto](/help/sites-cloud/authoring/assets/project-info.png)
 
-Desde este mosaico, así como el mosaico Equipo, se pueden asignar o eliminar miembros, así como cambiar la función de estos.
+Desde este mosaico (o si se ha cambiado su función) y el mosaico Equipo se pueden asignar o eliminar miembros.
 
 ![Adición de integrantes del equipo al proyecto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -137,11 +137,11 @@ Puede asignar el proyecto para que siga ciertos flujos de trabajo. Si se está e
 
 Puede asignar el proyecto para que siga ciertos flujos de trabajo. Según el proyecto que elija, tendrá diferentes flujos de trabajo disponibles.
 
-Estas se describen en [Uso de flujos de trabajo de proyecto.](/help/sites-cloud/authoring/projects/workflows.md)
+Estas se describen en [Uso de flujos de trabajo de proyecto](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### Lanzamientos {#launches}
 
-El mosaico Lanzamientos muestra todos los lanzamientos que se han solicitado con una [Solicitar flujo de trabajo de Launch.](/help/sites-cloud/authoring/projects/workflows.md)
+El mosaico Lanzamientos muestra todos los lanzamientos que se han solicitado con una [Solicitar flujo de trabajo de Launch](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![Lanzamientos](/help/sites-cloud/authoring/assets/project-launches.png)
 

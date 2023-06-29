@@ -3,9 +3,9 @@ title: Migración de la configuración de Dispatcher de AMS a AEM as a Cloud Ser
 description: Migración de la configuración de Dispatcher de AMS a AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1451'
 ht-degree: 18%
 
 ---
@@ -31,11 +31,11 @@ En la siguiente sección se proporcionan instrucciones paso a paso sobre cómo c
 ### Extraer el archivo y eliminar un prefijo eventual
 
 Extraiga el archivo en una carpeta y asegúrese de que las subcarpetas inmediatas comiencen por `conf`, `conf.d`,
-`conf.dispatcher.d` y `conf.modules.d`. Si no lo hacen, muévalos arriba en la jerarquía.
+`conf.dispatcher.d` y `conf.modules.d`. Si no lo hacen, muévalos hacia arriba en la jerarquía.
 
 ### Elimine las subcarpetas y archivos que no utilice
 
-Eliminación de subcarpetas `conf` y `conf.modules.d`, así como la coincidencia de archivos `conf.d/*.conf`.
+Eliminación de subcarpetas `conf` y `conf.modules.d`y archivos que coinciden `conf.d/*.conf`.
 
 ### Elimine todos los hosts virtuales que no sean de publicación
 
@@ -61,7 +61,7 @@ Introducir directorio `conf.d/rewrites`.
 
 Elimine cualquier archivo denominado `base_rewrite.rules` y `xforwarded_forcessl_rewrite.rules` y recuerde quitar `Include` instrucciones en los archivos host virtuales que hacen referencia a ellas.
 
-If `conf.d/rewrites` ahora contiene un solo archivo; debe cambiar el nombre a `rewrite.rules` y no se olvide de adaptar el `Include` también instrucciones que hacen referencia a ese archivo en los archivos host virtuales.
+If `conf.d/rewrites` ahora contiene un solo archivo; debe cambiar el nombre a `rewrite.rules` y no olvide adaptar el `Include` también instrucciones que hacen referencia a ese archivo en los archivos host virtuales.
 
 Sin embargo, si la carpeta contiene varios archivos específicos de host virtual, su contenido debe copiarse en el `Include` referencia a ellos en los archivos host virtuales.
 
@@ -71,7 +71,7 @@ Introducir directorio `conf.d/variables`.
 
 Elimine cualquier archivo denominado `ams_default.vars` y recuerde quitar `Include` instrucciones en los archivos host virtuales que hacen referencia a ellas.
 
-If `conf.d/variables` ahora contiene un solo archivo; debe cambiar el nombre a `custom.vars` y no se olvide de adaptar el `Include` también instrucciones que hacen referencia a ese archivo en los archivos host virtuales.
+If `conf.d/variables` ahora contiene un solo archivo; debe cambiar el nombre a `custom.vars` y no olvide adaptar el `Include` también instrucciones que hacen referencia a ese archivo en los archivos host virtuales.
 
 Sin embargo, si la carpeta contiene varios archivos específicos de host virtual, su contenido debe copiarse en el `Include` referencia a ellos en los archivos host virtuales.
 
@@ -117,7 +117,7 @@ If `conf.dispatcher.d/cache` ahora está vacío, copie el archivo `conf.dispatch
 de la configuración estándar de Dispatcher a esta carpeta. La configuración estándar de Dispatcher se encuentra en la carpeta `src` de este SDK. No se olvide de adaptar el
 `$include` declaraciones relativas a la `ams_*_cache.any` archivos de reglas también en los archivos de granja.
 
-Si en su lugar `conf.dispatcher.d/cache` ahora contiene un solo archivo con el sufijo `_cache.any`, debe cambiarse el nombre a `rules.any` y no se olvide de adaptar el `$include` también instrucciones que hacen referencia a ese archivo en los archivos de la granja.
+Si en su lugar `conf.dispatcher.d/cache` ahora contiene un solo archivo con el sufijo `_cache.any`, debe cambiarse el nombre a `rules.any` y no olvide adaptar el `$include` también instrucciones que hacen referencia a ese archivo en los archivos de la granja.
 
 Sin embargo, si la carpeta contiene varios archivos específicos de la granja con ese patrón, su contenido debe copiarse en la carpeta `$include` al hacer referencia a ellos en los archivos de la granja.
 
@@ -137,7 +137,7 @@ Introducir directorio `conf.dispatcher.d/clientheaders`.
 
 Elimine cualquier archivo con el prefijo `ams_`.
 
-If `conf.dispatcher.d/clientheaders` ahora contiene un solo archivo con el sufijo `_clientheaders.any`, debe cambiarse el nombre a `clientheaders.any` y no se olvide de adaptar el `$include` también instrucciones que hacen referencia a ese archivo en los archivos de la granja.
+If `conf.dispatcher.d/clientheaders` ahora contiene un solo archivo con el sufijo `_clientheaders.any`, debe cambiarse el nombre a `clientheaders.any` y no olvide adaptar el `$include` también instrucciones que hacen referencia a ese archivo en los archivos de la granja.
 
 Sin embargo, si la carpeta contiene varios archivos específicos de la granja con ese patrón, su contenido debe copiarse en la carpeta `$include` al hacer referencia a ellos en los archivos de la granja.
 
@@ -163,7 +163,7 @@ Introducir directorio `conf.dispatcher.d/filters`.
 Elimine cualquier archivo con el prefijo `ams_`.
 
 If `conf.dispatcher.d/filters` ahora contiene un solo archivo al que se debe cambiar el nombre
-`filters.any` y no se olvide de adaptar el `$include` también instrucciones que hacen referencia a ese archivo en los archivos de la granja.
+`filters.any` y no olvide adaptar el `$include` también instrucciones que hacen referencia a ese archivo en los archivos de la granja.
 
 Sin embargo, si la carpeta contiene varios archivos específicos de la granja con ese patrón, su contenido debe copiarse en la carpeta `$include` al hacer referencia a ellos en los archivos de la granja.
 
@@ -202,7 +202,7 @@ Cambie el nombre del directorio `conf.dispatcher.d/vhosts` hasta `conf.dispatche
 Elimine cualquier archivo con el prefijo `ams_`.
 
 If `conf.dispatcher.d/virtualhosts` ahora contiene un solo archivo al que se debe cambiar el nombre
-`virtualhosts.any` y no se olvide de adaptar el `$include` también instrucciones que hacen referencia a ese archivo en los archivos de la granja.
+`virtualhosts.any` y no olvide adaptar el `$include` también instrucciones que hacen referencia a ese archivo en los archivos de la granja.
 
 Sin embargo, si la carpeta contiene varios archivos específicos de la granja con ese patrón, su contenido debe copiarse en la carpeta `$include` al hacer referencia a ellos en los archivos de la granja.
 

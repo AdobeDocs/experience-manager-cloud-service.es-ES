@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: a641903bf47634cd969f23840c5e6e6fa5a3693b
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 0%
@@ -75,13 +75,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Cerca de la esquina superior izquierda de la página, en la lista desplegable, seleccione **[!UICONTROL Cronología]**.
 1. Cerca de la esquina inferior izquierda de la página, a la derecha del [!UICONTROL Comentario] , seleccione el icono en forma de quilate ( **^** ).
 
-   ![Captura de pantalla de Recursos en Experience Manager que muestra una carpeta seleccionada de recursos, la lista desplegable Cronología resaltada, el botón Iniciar flujo de trabajo resaltado y el icono en forma de gráfico a la derecha del campo Comentario también resaltado.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Captura de pantalla de Recursos en Experience Manager que muestra una carpeta seleccionada de recursos, la lista desplegable Cronología resaltada, el botón Iniciar flujo de trabajo resaltado y el icono en forma de gráfico a la derecha del campo Comentario también resaltado](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Seleccionar **[!UICONTROL Iniciar flujo de trabajo]**.
 1. Desde el **[!UICONTROL Iniciar flujo de trabajo]** lista desplegable, elija **[!UICONTROL Scene7: Volver a procesar recursos]**.
 1. (Opcional) En el **Introducir título de flujo de trabajo** , introduzca un nombre para el flujo de trabajo. Puede utilizar el nombre para hacer referencia a la instancia de flujo de trabajo, si es necesario.
 
-   ![Captura de pantalla de la interfaz de usuario Cronología con &quot;Scene7: Reprocesar recursos&quot; seleccionado en la lista desplegable Iniciar flujo de trabajo y el botón Inicio resaltado.](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![Captura de pantalla de la interfaz de usuario Cronología con &quot;Scene7: Reprocesar recursos&quot; seleccionado en la lista desplegable Iniciar flujo de trabajo y el botón Inicio resaltado](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. Seleccionar **[!UICONTROL Inicio]**, luego seleccione **[!UICONTROL Confirmar]**.
 
@@ -96,13 +96,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Entrada [!DNL Experience Manager], seleccione **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global, seleccione **[!UICONTROL Herramientas]** Icono de (martillo) > **[!UICONTROL Flujo de trabajo > Modelos]**.
 1. En la página Modelos de flujo de trabajo, en Vista de tarjeta o Vista de lista, seleccione **[!UICONTROL Scene7: Volver a procesar recursos]**.
 
-   ![Captura de pantalla de la página Modelos de flujo de trabajo con el flujo de trabajo &quot;Scene7: Reprocesar recursos&quot; seleccionado en la vista de tarjeta del Experience Manager.](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![Captura de pantalla de la página Modelos de flujo de trabajo con el flujo de trabajo &quot;Scene7: Reprocesar recursos&quot; seleccionado en la vista de tarjeta del Experience Manager.](/help/assets/dynamic-media/assets/reprocess-assets7.png).
 
 1. En la barra de herramientas, seleccione **[!UICONTROL Editar]**. Se abre una nueva pestaña del explorador en la página del modelo de flujo de trabajo Scene7: Reprocesar recursos.
 1. En la página de flujo de trabajo Scene7: Reprocesar recursos, cerca de la esquina superior derecha, seleccione **[!UICONTROL Editar]** para desbloquear el flujo de trabajo.
 1. En el flujo de trabajo, seleccione el componente Carga por lotes de Scene7 para abrir la barra de herramientas y, a continuación, seleccione **[!UICONTROL Configurar]** en la barra de herramientas.
 
-   ![Captura de pantalla del componente &quot;Carga por lotes de Scene7&quot; en la página &quot;Scene7: Reprocesar recursos&quot; con el puntero del ratón sobre el icono &quot;Configurar&quot;.](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![Captura de pantalla del componente &quot;Carga por lotes de Scene7&quot; en la página &quot;Scene7: Reprocesamiento de recursos&quot; con el puntero del ratón sobre el icono &quot;Configurar&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
 
 1. En el **[!UICONTROL Carga de lotes en Scene7: propiedades de la etapa]** , establezca lo siguiente:
    * En el **[!UICONTROL Título]** y **[!UICONTROL Descripción]** campos de texto, introduzca un nuevo título y una descripción para el trabajo, si lo desea.
@@ -112,13 +112,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * En el **[!UICONTROL Campo de lote]**, introduzca el número máximo de recursos (50-1000) que se procesarán en un trabajo de carga por lotes del servidor de Dynamic Media.
    * Seleccionar **[!UICONTROL Avanzar en tiempo de espera]** si desea avanzar cuando se alcance el tiempo de espera. Anule la selección si desea continuar en la bandeja de entrada cuando se alcance el tiempo de espera.
 
-   ![Captura de pantalla de la página &quot;Carga por lotes en Scene7 - Propiedades de la etapa&quot;.](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![Captura de pantalla de la página &quot;Carga por lotes en Scene7 - Propiedades de la etapa&quot;](/help/assets/dynamic-media/assets/reprocess-assets3.png).
 
 1. En la esquina superior derecha de la **[!UICONTROL Carga de lotes en Scene7 - Propiedades de la etapa]** , seleccione **[!UICONTROL Listo]**.
 
 1. En la esquina superior derecha de la página Scene7: modelo de flujo de trabajo Reprocesar recursos, seleccione **[!UICONTROL Sincronización]**. Cuando vea **[!UICONTROL Sincronizado]** Sin embargo, el modelo de tiempo de ejecución del flujo de trabajo se ha sincronizado correctamente y está listo para volver a procesar los recursos en una carpeta.
 
-   ![Captura de pantalla de Recursos en Experience Manager que muestra una carpeta seleccionada de recursos, la lista desplegable Cronología resaltada, el botón Iniciar flujo de trabajo resaltado y el icono en forma de gráfico a la derecha del campo Comentario también resaltado.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Captura de pantalla de Recursos en Experience Manager que muestra una carpeta seleccionada de recursos, la lista desplegable Cronología resaltada, el botón Iniciar flujo de trabajo resaltado y el icono en forma de gráfico a la derecha del campo Comentario también resaltado](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Cierre la pestaña del explorador que muestra el modelo de flujo de trabajo Scene7: Reprocesar recursos.
 

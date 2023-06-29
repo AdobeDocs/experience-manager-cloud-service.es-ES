@@ -4,10 +4,10 @@ description: Integración con Adobe Analytics
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 93%
+source-wordcount: '558'
+ht-degree: 88%
 
 ---
 
@@ -47,7 +47,7 @@ Los campos presentes en la ventana de configuración son los siguientes:
 
 ### Adobe Analytics con autenticación IMS {#configuration-parameters-ims}
 
-Se requiere una configuración de IMS para integrar correctamente Adobe Analytics AEM con el as a Cloud Service de la. Esta configuración debe crearse, así que consulte esta [página](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) para aprender a crear la configuración de IMS de Analytics.
+Se requiere una configuración de IMS para integrar correctamente Adobe Analytics AEM con el as a Cloud Service de la. Esta configuración debe crearse para poder consultar [página](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) para aprender a crear la configuración de IMS de Analytics.
 
 ### Adición de una configuración a un sitio {#add-configuration}
 

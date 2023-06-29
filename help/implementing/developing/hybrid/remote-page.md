@@ -2,7 +2,7 @@
 title: El componente RemotePage
 description: SPA AEM El componente RemotePage es un componente de página personalizado para editar el grupo de informes de React de forma remota dentro de los grupos de informes de la.
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
-source-git-commit: d213dd0788e66015237d241caf0f3b5737ce725c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 2%
@@ -32,13 +32,13 @@ Consulte el artículo [SPA AEM Edición de una externa dentro de un grupo de inf
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
-      ![ejemplo de propiedad entrypoints](assets/asset-manifest-entrypoints.png)
+     ![ejemplo de propiedad entrypoints](assets/asset-manifest-entrypoints.png)
 * La aplicación debe poder inicializarse en un `<div id="root"></div>` debajo del `body` Elemento. Si se espera un marcado diferente para que la aplicación cree una instancia, esto debe ajustarse en consecuencia en los scripts HTL del componente proxy que tenga un `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
 ## Restricciones {#limitations}
 
-* El componente RemotePage espera que la implementación proporcione un manifiesto de recurso como el siguiente [encontrado aquí.](https://github.com/shellscape/webpack-manifest-plugin) Sin embargo, el componente RemotePage solo se ha probado para que funcione con el marco de React (y Next.js a través del componente remote-page-next) y, por lo tanto, no admite la carga remota de aplicaciones desde otros marcos, como Angular.
-* El CSS interno definido en el archivo HTML AEM raíz de la aplicación, así como el CSS en línea en el nodo DOM raíz, no estarán disponibles cuando se realice el procesamiento remoto en el.
+* El componente RemotePage espera que la implementación proporcione un manifiesto de recurso como el siguiente [encontrado aquí.](https://github.com/shellscape/webpack-manifest-plugin) Sin embargo, el componente RemotePage solo se ha probado para que funcione con el marco de React (y Next.js mediante el componente remote-page-next) y, por lo tanto, no admite la carga remota de aplicaciones desde otros marcos, como el Angular.
+* El CSS interno definido en el archivo HTML AEM raíz de la aplicación y el CSS en línea en el nodo DOM raíz no estarán disponibles al realizar el procesamiento remoto en el.
 
 ## Detalles técnicos {#technical-details}
 

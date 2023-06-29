@@ -2,7 +2,7 @@
 title: Creación del etiquetado en aplicaciones de AEM
 description: AEM Trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de personalizada
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 1%
@@ -22,7 +22,7 @@ que interactúa con el
 Para obtener información relacionada con el etiquetado:
 
 * Consulte [Uso de etiquetas](/help/sites-cloud/authoring/features/tags.md) para obtener información sobre cómo etiquetar contenido como autor de contenido.
-* Consulte Administración de etiquetas para conocer la perspectiva de un administrador sobre la creación y administración de etiquetas, así como sobre las etiquetas de contenido que se han aplicado.
+* Consulte Administración de etiquetas para conocer la perspectiva de un administrador sobre la creación y administración de etiquetas y sobre las etiquetas de contenido que se han aplicado.
 
 ## Información general sobre la API de etiquetado {#overview-of-the-tagging-api}
 
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## El recolector de basura de etiquetas {#the-tag-garbage-collector}
 
-El recolector de etiquetas es un servicio en segundo plano que limpia las etiquetas ocultas y no utilizadas. Las etiquetas ocultas y no utilizadas son las siguientes `/content/cq:tags` que tienen un `cq:movedTo` y no se utilizan en un nodo de contenido. Tienen un recuento de cero. Mediante este proceso de eliminación diferida, el nodo de contenido (es decir, el `cq:tags` ) no tiene que actualizarse como parte de la operación de movimiento o combinación. Las referencias en la variable `cq:tags` Las propiedades de se actualizan automáticamente cuando `cq:tags` La propiedad de se actualiza, por ejemplo, a través del cuadro de diálogo Propiedades de página.
+El recolector de etiquetas es un servicio en segundo plano que limpia las etiquetas ocultas y no utilizadas. Las etiquetas ocultas y no utilizadas son las siguientes `/content/cq:tags` que tienen un `cq:movedTo` y no se utilizan en un nodo de contenido. Tienen un recuento de cero. Al utilizar este proceso de eliminación diferida, el nodo de contenido (es decir, el `cq:tags` ) no tiene que actualizarse como parte de la operación de movimiento o combinación. Las referencias en la variable `cq:tags` Las propiedades de se actualizan automáticamente cuando `cq:tags` La propiedad de se actualiza, por ejemplo, a través del cuadro de diálogo Propiedades de página.
 
 El recolector de elementos no utilizados se ejecuta de forma predeterminada una vez al día. Esto se puede configurar en:
 

@@ -2,10 +2,10 @@
 title: Publicar el lanzamiento
 description: Obtenga información sobre cómo supervisar problemas y mejorar el rendimiento
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 39%
+source-wordcount: '482'
+ht-degree: 28%
 
 ---
 
@@ -36,7 +36,7 @@ AEM En este documento se describen las herramientas disponibles para solucionar 
 
 AEM La depuración de entornos de desarrollador as a Cloud Service está disponible en Developer Console para entornos de desarrollo, fase y producción.
 
-Consulte [ Implementación para AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) para obtener más información sobre las herramientas de desarrollo.
+Consulte [AEM Implementación de para el as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) para obtener más información sobre las herramientas de desarrollo.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -45,7 +45,7 @@ Los clientes pueden acceder a la lista CRXDE Lite en el entorno de desarrollo, p
 >[!IMPORTANT]
 >Escribir en repositorios inmutables como `/libs` y `/apps` en tiempo de ejecución genera errores. Además, no tiene acceso a las herramientas para desarrolladores para entornos de ensayo y producción.
 
-Consulte [Desarrollo de CRXDE Lite](/help/implementing/developing/tools/crxde.md) para obtener información sobre cómo desarrollar la aplicación AEM con CRXDE Lite.
+Consulte [Desarrollo con CRXDE Lite](/help/implementing/developing/tools/crxde.md) AEM para aprender a desarrollar la aplicación de la con CRXDE Lite.
 
 ## Administración de registros {#managing-logs}
 

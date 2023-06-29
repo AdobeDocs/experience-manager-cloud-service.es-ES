@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Publicar y cancelar la publicación de páginas con AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 77%
+source-wordcount: '1802'
+ht-degree: 73%
 
 ---
 
@@ -116,7 +116,7 @@ Para publicar una página con Publicación rápida:
 
 #### Administrar publicación     {#manage-publication}
 
-**Administrar publicación** ofrece más opciones que **Publicación rápida**, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de poder publicar en un momento posterior.
+**Administrar publicación** ofrece más opciones que **Publicación rápida**, permitiendo la inclusión de páginas secundarias, la personalización de las referencias y el inicio de cualquier flujo de trabajo aplicable, así como la opción de publicar en un momento posterior.
 
 Para publicar o cancelar la publicación de una página con Administrar publicación:
 
@@ -203,7 +203,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    >[!NOTE]
    >
-   >El **Flujos de trabajo** Este paso se muestra en función de los derechos que pueda tener o no el usuario. Para obtener más información, consulte la nota anterior en esta página respecto a los privilegios de publicación, así como Administración del acceso a los flujos de trabajo y [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md).
+   >El **Flujos de trabajo** Este paso se muestra en función de los derechos que pueda tener o no el usuario. Consulte la nota anterior en esta página con respecto a los privilegios de publicación y Administración del acceso a los flujos de trabajo y [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md) para obtener más información.
 
    Los recursos se agrupan por los flujos de trabajo activados y cada una de las opciones dadas para:
 

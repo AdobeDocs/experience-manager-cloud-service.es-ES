@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.1.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.1.0."
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 24%
+source-wordcount: '854'
+ht-degree: 25%
 
 ---
 
@@ -74,15 +74,15 @@ La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.1.0 es e
 
 ### Novedades de [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Se ha lanzado la nueva versión del complemento AIO-CLI. AEM La versión más reciente de este complemento incluye correcciones de errores para el Conversor de Dispatcher de y el Modernizador de repositorios, y también admite una nueva utilidad: Convertidor de índices. Consulte la [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para obtener más información sobre este complemento.
+* Se ha lanzado la nueva versión del complemento AIO-CLI. AEM La versión más reciente de este complemento incluye correcciones de errores para el Conversor de Dispatcher de y el Modernizador de repositorios, y también admite una nueva utilidad: Convertidor de índices. Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para obtener más información sobre este complemento.
 
-* AEM Index Converter es una utilidad que se puede utilizar para transformar las definiciones de índice OAK personalizadas de un cliente para que sean compatibles con las definiciones de índice OAK as a Cloud Service. Consulte la [Conversor de índices](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) para obtener más información.
+* AEM Index Converter es una utilidad que se puede utilizar para transformar las definiciones de índice OAK personalizadas de un cliente para que sean compatibles con las definiciones de índice OAK as a Cloud Service. Consulte [Conversor de índices](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) para obtener más información.
 
 * Nueva función añadida a [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) que crea un paquete independiente `ui.config` para contener todas las configuraciones de OSGi.
 
 ### Correcciones de errores {#crt-bug-fixes}
 
-* AEM Se han realizado varias correcciones de errores en las herramientas Conversor de Dispatcher y Modernizador de repositorios de la aplicación de manera. Consulte la [AEM Conversor de Dispatcher de](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* AEM Se han realizado varias correcciones de errores en las herramientas Conversor de Dispatcher y Modernizador de repositorios de la aplicación de manera. Consulte [AEM Conversor de Dispatcher de](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ## AEM Base as a Cloud Service {#aem-as-a-cloud-service-foundation}
 

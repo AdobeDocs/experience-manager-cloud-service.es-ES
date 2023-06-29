@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1409'
 ht-degree: 20%
 
 ---
@@ -34,13 +34,13 @@ Edite las siguientes propiedades para **[!UICONTROL Descripción]** componente:
    * **[!UICONTROL Etiqueta de campo]** : nombre para mostrar de la propiedad de metadatos. Solo es para la referencia del usuario.
    * **[!UICONTROL Asignar a la propiedad]** : el valor de esta propiedad proporciona la ruta/nombre relativo al nodo del recurso donde se guarda en el repositorio. El valor siempre debe comenzar con `./` porque indica que la ruta se encuentra en el nodo del recurso.
 
-      El valor que especifique para **[!UICONTROL Asignar a la propiedad]** se almacena como una propiedad en el nodo de metadatos del recurso. Por ejemplo, si especifica `/jcr:content/metadata/dc:desc` como el nombre de **[!UICONTROL Asignar a la propiedad]**, [!DNL Adobe Experience Manager Assets] almacena el valor `dc:desc` en el nodo de metadatos del recurso.
+     El valor que especifique para **[!UICONTROL Asignar a la propiedad]** se almacena como una propiedad en el nodo de metadatos del recurso. Por ejemplo, si especifica `/jcr:content/metadata/dc:desc` como el nombre de **[!UICONTROL Asignar a la propiedad]**, [!DNL Adobe Experience Manager Assets] almacena el valor `dc:desc` en el nodo de metadatos del recurso.
 
    * **[!UICONTROL Valor predeterminado]** : utilice esta propiedad para agregar un valor predeterminado para el componente de metadatos. Por ejemplo, si especifica &quot;Mi descripción&quot;, este valor se asigna a la propiedad `dc:desc` en el nodo de metadatos del recurso.
 
-      >[!NOTE]
-      >
-      >Añadir un valor predeterminado a una nueva propiedad de metadatos (que no existe en `/jcr:content/metadata` ) no muestra la propiedad y su valor en la página Propiedades del recurso de forma predeterminada. Para ver la nueva propiedad en [!UICONTROL Propiedades] , modifique el formulario de esquema correspondiente.
+     >[!NOTE]
+     >
+     >Añadir un valor predeterminado a una nueva propiedad de metadatos (que no existe en `/jcr:content/metadata` ) no muestra la propiedad y su valor en la página Propiedades del recurso de forma predeterminada. Para ver la nueva propiedad en [!UICONTROL Propiedades] , modifique el formulario de esquema correspondiente.
 
 1. (Opcional) Agregue más componentes a Editar formulario desde la pestaña **[!UICONTROL Generar formulario]** y configure sus propiedades en la pestaña **[!UICONTROL Configuración]**. Las siguientes propiedades están disponibles en la pestaña **[!UICONTROL Generar formulario]**:
 

@@ -2,10 +2,10 @@
 title: Diseño adaptable
 description: AEM le permite crear un diseño adaptable para sus páginas.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 57%
+source-wordcount: '1748'
+ht-degree: 55%
 
 ---
 
@@ -18,7 +18,7 @@ Proporciona un sistema de párrafos que le permite colocar componentes en una cu
 El contenedor de diseño:
 
 * Proporciona un ajuste horizontal a la cuadrícula, junto con la capacidad de colocar componentes en la cuadrícula en paralelo y definir cuándo deben contraerse o redistribuirse.
-* Usa puntos de interrupción predefinidos (por ejemplo, para un teléfono, una tableta, etc.) para permitirle definir el comportamiento requerido del contenido para los dispositivos o la orientación relacionados.
+* Utiliza puntos de interrupción predefinidos (por ejemplo, para un teléfono, una tableta, etc.) para permitirle definir el comportamiento requerido del contenido para los dispositivos o la orientación relacionados.
    * Por ejemplo, puede personalizar el tamaño del componente o si el componente se puede ver en dispositivos específicos.
 * Se puede anidar para permitir el control de columnas.
 
@@ -68,7 +68,7 @@ AEM le permite definir diseños según la anchura del dispositivo:
    * El alcance de un punto de interrupción se extiende hacia la izquierda hasta el siguiente punto de interrupción.
    * No puede seleccionar específicamente un punto de interrupción; al seleccionar el dispositivo y la orientación se selecciona automáticamente el punto de interrupción adecuado.
 
-El dispositivo **Escritorio** no tiene una anchura específica y está relacionado con el punto de interrupción predeterminado (p. ej., todo lo que está por encima del último punto de interrupción configurado).
+El dispositivo **Escritorio**, que no tiene una anchura específica, se relaciona con el punto de interrupción predeterminado (es decir, todo lo que está por encima del último punto de interrupción configurado).
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ El modo **Diseño** puede iniciarse de dos formas.
 * Mediante el uso del [menú de modo de la barra de herramientas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) y seleccionando el modo **Diseño**.
    * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
    * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
-* Cuándo [edición de un componente individual.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+* Cuándo [edición de un componente individual](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
    * Mediante el uso de **Diseño** en el menú de acción rápida del componente, puede cambiar a **Diseño** modo.
    * **Diseño** el modo persiste mientras se edita el componente y vuelve a **Editar** modo una vez que el enfoque cambia a otro componente.
 

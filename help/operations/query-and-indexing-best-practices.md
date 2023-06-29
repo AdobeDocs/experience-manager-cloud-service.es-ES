@@ -3,9 +3,9 @@ title: Prácticas recomendadas de consulta e indexación
 description: Aprenda a optimizar los índices y las consultas en función de las directrices de prácticas recomendadas de Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1556'
 ht-degree: 1%
 
 ---
@@ -111,7 +111,7 @@ Consulte la sección [Consultas con resultados grandes](#queries-with-large-resu
 
 Para admitir la creación de consultas JCR y definiciones de índice eficientes, la variable [Hoja de características clave de consulta JCR](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) está disponible para su descarga y uso como referencia durante el desarrollo.
 
-Contiene consultas de ejemplo para QueryBuilder, XPath y SQL-2, que cubren varios escenarios que se comportan de forma diferente en términos de rendimiento de la consulta. También proporciona recomendaciones sobre cómo crear o personalizar índices de Oak. El contenido de esta Hoja de características clave se aplica tanto a los as a Cloud Service AEM como a los AEM, así como a los 6,5 de los que se encuentran en el punto de vista de la.
+Contiene consultas de ejemplo para QueryBuilder, XPath y SQL-2, que cubren varios escenarios que se comportan de forma diferente en términos de rendimiento de la consulta. También proporciona recomendaciones sobre cómo crear o personalizar índices de Oak. AEM El contenido de esta hoja de referencia se aplica a las versiones as a Cloud Service AEM y 6.5 de la.
 
 ## Consultas con conjuntos de resultados grandes {#queries-with-large-result-sets}
 

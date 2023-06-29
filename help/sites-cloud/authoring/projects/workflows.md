@@ -2,7 +2,7 @@
 title: Uso de flujos de trabajo de proyecto
 description: Hay una variedad de flujos de trabajo de proyecto disponibles de forma predeterminada.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 46%
@@ -21,18 +21,18 @@ Los flujos de trabajo de proyecto disponibles de forma predeterminada incluyen l
 
 Según la plantilla de proyecto que seleccione, tendrá disponibles ciertos flujos de trabajo:
 
-|  | **Proyecto simple** | **Proyecto de traducción** |
+|   | **Proyecto simple** | **Proyecto de traducción** |
 |---|:-:|:-:|
 | Flujo de trabajo de aprobación del proyecto | x |  |
 | Solicitar lanzamiento | x |  |
 | Solicitar página de aterrizaje | x |  |
-| Solicitar correo electrónico | x |  |
+| Solicitar correo electrónico | x | |
 | Creación de copia de idioma de DAM&amp;ast; |  | x |
-| Creación y traducción de copia de idioma de DAM&amp;ast; |  | x |
+| Creación y traducción de copia de idioma de DAM&amp;ast; |   | x |
 
 >[!NOTE]
 >
->&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para los recursos.](/help/sites-cloud/administering/translation/managing-projects.md)
+>&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para los recursos](/help/sites-cloud/administering/translation/managing-projects.md).
 
 Los pasos para iniciar y completar flujos de trabajo son los mismos independientemente del flujo de trabajo que elija. Solo cambian los pasos.
 

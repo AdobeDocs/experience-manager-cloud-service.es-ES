@@ -3,7 +3,7 @@ title: Validación y depuración mediante las herramientas de Dispatcher
 description: Validación y depuración mediante las herramientas de Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 ## Introducción {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Para obtener más información sobre Dispatcher en la nube y cómo descargarlo, consulte la [Dispatcher en la nube](/help/implementing/dispatcher/disp-overview.md) página. Si la configuración de Dispatcher está en modo heredado, consulte la [documentación del modo heredado](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Para obtener más información sobre Dispatcher en la nube y cómo descargarlo, consulte la [Dispatcher en la nube](/help/implementing/dispatcher/disp-overview.md) página. Si la configuración de Dispatcher está en modo heredado, consulte [documentación del modo heredado](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 Las siguientes secciones describen la estructura de archivos en modo flexible, la validación local, la depuración y la migración del modo heredado al modo flexible.
 
@@ -248,7 +248,7 @@ Phase 3 finished
 
 La secuencia de comandos tiene las tres fases siguientes:
 
-1. Ejecuta el validador. Si la configuración no es válida, el script falla.
+1. Ejecuta el validador. Si la configuración no es válida, se produce un error en el script.
 2. Ejecuta el `httpd -t` para probar si la sintaxis es correcta de modo que Apache httpd pueda iniciarse. Si se realiza correctamente, la configuración debe estar lista para la implementación.
 3. Comprueba que el subconjunto de los archivos de configuración del SDK de Dispatcher, que están pensados para ser inmutables como se describe en la [Sección Estructura de archivos](##flexible-mode-file-structure), no se ha modificado y coincide con la versión actual del SDK.
 

@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2308'
-ht-degree: 99%
+source-wordcount: '2310'
+ht-degree: 96%
 
 ---
 
@@ -702,7 +702,7 @@ Además, hay clases para aplicar estilo a los navegadores de pestañas (tanto iz
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
-   <td><p>Exploradores de pestañas (izquierda y superior) que no tienen navegadores anidados/secundarios/subnavegadores</p> </td>
+   <td><p>Navegadores de pestañas (izquierda y superior) que no tienen navegadores anidados/secundarios/subnavegadores</p> </td>
   </tr>
  </tbody>
 </table>
@@ -941,7 +941,7 @@ Un panel incluye una barra de herramientas opcional y su contenido.
  </tbody>
 </table>
 
-El nodo del panel se divide en navegadores y contenido. No `` `` hay ningún componente de estilo independiente para el contenido. Las variables descritas se aplican tanto en el navegador como en el contenido.
+El nodo del panel se divide en navegadores y contenido. No `` `` hay ningún componente de estilo independiente para el contenido. Las variables descritas se aplican al navegador y al contenido.
 
 El panel superior (RootPanel) no tiene esta clase.
 

@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4924'
-ht-degree: 91%
+source-wordcount: '4918'
+ht-degree: 90%
 
 ---
 
@@ -50,7 +50,7 @@ GraphQL es:
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-Para obtener más información acerca de la API de GraphQL, consulte las siguientes secciones (entre muchos otros recursos):
+Para obtener información sobre la API de GraphQL, consulte las siguientes secciones (entre muchos otros recursos):
 
 * En [graphql.org](https://graphql.org):
 
@@ -377,7 +377,7 @@ Consulte [Consulta de muestra: todas las ciudades con una variación con nombre]
 
 ## Variables de GraphQL {#graphql-variables}
 
-GraphQL permite colocar variables en la consulta. Para obtener más información, consulte la [Documentación de GraphQL para variables](https://graphql.org/learn/queries/#variables).
+GraphQL permite colocar variables en la consulta. Para obtener más información, consulte [Documentación de GraphQL para variables](https://graphql.org/learn/queries/#variables).
 
 Por ejemplo, para obtener todos los fragmentos de contenido del tipo `Author` en una variación específica (si está disponible), puede especificar el argumento `variation` en GraphiQL.
 
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 Esta consulta devolverá la lista completa de autores. Los autores sin la variación `another` volverán a los datos originales (`_variation` informará de `master` en este caso).
 
-Si desea restringir la lista a autores que proporcionen la variación especificada (y omitir los que vuelvan a los datos originales), deberá aplicar un [filtro](#filtering):
+Si desea restringir la lista a autores que proporcionen la variación especificada (y omitir autores que recurran a los datos originales), aplique una [filter](#filtering):
 
 ```graphql
 query($variation: String!) {
@@ -431,7 +431,7 @@ query($variation: String!) {
 
 En GraphQL existe la posibilidad de cambiar la consulta en función de variables, denominadas Directivas de GraphQL.
 
-Por ejemplo, puede incluir el campo `adventurePrice` en una consulta para todos los `AdventureModels`, en función de una variable `includePrice`.
+Por ejemplo, se puede incluir la variable `adventurePrice` en una consulta para todos los `AdventureModels`, en función de una variable `includePrice`.
 
 ![Directivas de GraphQL](assets/cfm-graphqlapi-04.png "Directivas de GraphQL")
 
@@ -570,7 +570,7 @@ Los criterios de clasificación son los siguientes:
 
 * una lista de valores separados por comas que representa la ruta del campo
    * el primer campo de la lista definirá el criterio de ordenación principal, el segundo campo se utiliza si dos valores del criterio de ordenación principal son iguales, el tercero si los dos primeros criterios son iguales, etc.
-   * notación con puntos, es decir campo1.subcampo.subcampo, etc.
+   * notación de puntos, es decir, field1.subfield.subfield, etc...
 * una dirección de orden opcional
    * ASC (de subida) o DESC (de bajada); ASC se aplica como predeterminado
    * se puede especificar la dirección por campo; esto significa que puede ordenar un campo en orden de subida y otro en orden de bajada (nombre, apellido DESC)

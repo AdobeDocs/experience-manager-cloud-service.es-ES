@@ -4,7 +4,7 @@ description: Descubra cómo se pueden utilizar los temas del sitio de AEM para p
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 94%
@@ -23,7 +23,7 @@ Los sitios creados con plantillas de sitio de AEM permiten descargar, personaliz
 
 >[!NOTE]
 >
->Los temas del sitio de AEM no deben confundirse con las [plantillas de sitio de AEM.](site-templates.md) Los temas del sitio de AEM solo contienen la información de estilo de un sitio de AEM. AEM AEM Las plantillas de sitio de definen la estructura del sitio y el contenido inicial, y contienen un tema de sitio de la página de la página de la página de la red que se va a permitir [creación rápida de sitios.](create-site.md)
+>Los temas del sitio de AEM no deben confundirse con las [plantillas de sitio de AEM](site-templates.md). Los temas del sitio de AEM solo contienen la información de estilo de un sitio de AEM. AEM AEM Las plantillas de sitio de definen la estructura del sitio y el contenido inicial, y contienen un tema de sitio de la página de la página de la página de la red que se va a permitir [creación rápida de sitios](create-site.md).
 
 ## Uso de temas del sitio {#using-themes}
 
@@ -34,7 +34,7 @@ Los temas del sitio se utilizan de dos formas:
 
 >[!TIP]
 >
->Puede encontrar una descripción completa del proceso de crear un sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios.](/help/journey-sites/quick-site/overview.md)
+>Puede encontrar una descripción completa del proceso de crear un sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md).
 
 ## Estructura del tema del sitio {#structure}
 
@@ -53,4 +53,4 @@ Adobe proporciona un tema de referencia de prácticas recomendadas que puede usa
 
 Adobe proporciona un Generador de temas del sitio de AEM como un conjunto de scripts para la creación de nuevos temas del sitio.
 
-[El Generador de temas del sitio de AEM está disponible junto con la documentación de uso en GitHub.](https://github.com/adobe/aem-site-theme-builder) Para personalizar el tema, se necesita una experiencia de desarrollo front-end.
+[El Generador de temas del sitio de AEM está disponible junto con la documentación de uso en GitHub](https://github.com/adobe/aem-site-theme-builder). Para personalizar el tema, se necesita una experiencia de desarrollo front-end.

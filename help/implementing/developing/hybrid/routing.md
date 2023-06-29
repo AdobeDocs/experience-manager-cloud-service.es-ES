@@ -2,9 +2,9 @@
 title: SPA Enrutamiento de modelo de
 description: AEM Para las aplicaciones de una sola página en la, la aplicación es responsable del enrutamiento. Este documento describe el mecanismo de ruta, el contrato y las opciones disponibles.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ La aplicación es propietaria del enrutamiento y luego la implementan los desarr
 
 ## Arquitectura {#architecture}
 
-Para obtener una descripción detallada, consulte la [PageModelManager](blueprint.md#pagemodelmanager) SPA del documento de modelo de la.
+Para ver una descripción detallada, consulte [PageModelManager](blueprint.md#pagemodelmanager) SPA del documento de modelo de la.
 
 ## ModelRouter {#modelrouter}
 

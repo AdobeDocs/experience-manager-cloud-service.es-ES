@@ -2,9 +2,9 @@
 title: Sistema de estilos
 description: El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1320'
 ht-degree: 59%
 
 ---
@@ -46,7 +46,7 @@ Por lo general, el uso del sistema de estilos se realiza de la siguiente manera.
 
 1. El autor de páginas de AEM puede seleccionar los estilos diseñados en el editor de página a través del menú Estilo de la barra de herramientas del componente.
 
-AEM Tenga en cuenta que solo los tres últimos pasos se llevan a cabo en la práctica en el ámbito de la. AEM Esto significa que todo el desarrollo del CSS y el Javascript necesarios se puede realizar sin necesidad de tener que realizar ninguna tarea de la aplicación de la aplicación de la manera más sencilla y sencilla
+AEM Tenga en cuenta que solo los tres últimos pasos se llevan a cabo en la práctica en el ámbito de la. AEM Esto significa que todo el desarrollo del CSS y el JavaScript necesarios se puede realizar sin tener que realizar ninguna acción de la manera de hacer un seguimiento de la configuración de la aplicación.
 
 AEM En realidad, la implementación de los estilos solo requiere la implementación de la selección y la selección en los componentes de las plantillas deseadas.
 
@@ -104,7 +104,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
 >[!CAUTION]
 >
->Las clases CSS, y cualquier código Javascript necesario, configuradas como propiedades de estilo de la política de un componente deben implementarse como [Bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md) para trabajar.
+>Las clases CSS (y cualquier código JavaScript necesario) configuradas como propiedades de estilo de la política de un componente deben implementarse como [Bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md) para trabajar.
 
 ## Configuración {#setup}
 

@@ -2,9 +2,9 @@
 title: Adición del complemento Screens a un nuevo programa en Cloud Manager
 description: En esta página se describe la adición de un complemento de Pantallas a un nuevo programa en Cloud Manager para Pantallas as a Cloud Service.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '309'
 ht-degree: 5%
 
 ---

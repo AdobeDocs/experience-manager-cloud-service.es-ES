@@ -2,10 +2,10 @@
 title: Introducción al editor universal en AEM
 description: Obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 95%
+source-wordcount: '805'
+ht-degree: 89%
 
 ---
 
@@ -32,7 +32,7 @@ Este documento le guiará a través de estos pasos.
 
 ## Solicite acceso al editor universal {#request-access}
 
-Primero debe solicitar acceso al editor universal. Vaya a [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), inicie sesión y valide si tiene acceso al Editor universal.
+Primero debe solicitar acceso al editor universal. Consulte [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), inicie sesión y valide si tiene acceso al editor universal.
 
 En caso de que no tenga acceso, puede solicitarlo a través de un formulario vinculado en la misma página.
 
@@ -66,7 +66,7 @@ Si no va a implementar una aplicación React o requiere procesamiento del lado d
 
 Para poder editar contenido en su aplicación con el editor universal en AEM, es necesario realizar la configuración de cookies y CORS.
 
-Deberá establecer las siguientes [configuraciones de OSGi en la instancia de creación de AEM.](/help/implementing/deploying/configuring-osgi.md)
+Deberá establecer las siguientes [configuraciones de OSGi en la instancia de creación de AEM](/help/implementing/deploying/configuring-osgi.md).
 
 * `SameSite Cookies = None` en `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 * Elimine el encabezado X-FRAME-OPTIONS: SAMEORIGIN en`org.apache.sling.engine.impl.SlingMainServlet`
@@ -161,11 +161,11 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## Todo listo para usar el editor Universal {#youre-ready}
+## Está listo para usar el editor universal {#youre-ready}
 
 La aplicación ya está instrumentada para utilizar el editor universal.
 
-Consulte el documento [Creación de contenido con el editor universal](authoring.md) para aprender lo fácil e intuitivo que es para los autores de contenido crear contenido con el editor universal.
+Consulte [Creación de contenido con el editor universal](authoring.md) para conocer lo fácil e intuitivo que es para los autores de contenido crear contenido con el Editor universal.
 
 ## Recursos adicionales {#additional-resources}
 

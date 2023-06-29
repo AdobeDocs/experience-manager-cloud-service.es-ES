@@ -2,10 +2,10 @@
 title: Uso de tareas
 description: Las tareas representan elementos de trabajo por realizar en el contenido y se utilizan en los proyectos para determinar el nivel de integridad de las tareas actuales
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 20%
+source-wordcount: '576'
+ht-degree: 21%
 
 ---
 
@@ -23,7 +23,7 @@ Puede realizar un seguimiento del progreso del proyecto si observa las tareas ac
 
 * **Lista de tareas:** Al hacer clic en el mosaico Tarea, se muestra una lista de tareas. Esta lista contiene información detallada sobre todas las tareas relacionadas con el proyecto.
 
-Tanto las tareas de flujo de trabajo de la lista como las tareas que cree directamente en la **Tareas** mosaico.
+Tanto las tareas de flujo de trabajo de lista como las tareas que cree directamente en la **Tareas** mosaico.
 
 ### Mosaico de tareas {#task-tile}
 

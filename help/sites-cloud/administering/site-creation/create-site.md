@@ -4,10 +4,10 @@ description: Aprenda a utilizar AEM para crear un sitio mediante plantillas de s
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 96%
+source-wordcount: '775'
+ht-degree: 85%
 
 ---
 
@@ -23,11 +23,11 @@ La herramienta de creación rápida de sitios de AEM permite a los usuarios que 
 
 Una vez creada, la herramienta de creación rápida de sitios también permite la personalización rápida del tema y el estilo del sitio AEM (JavaScript, CSS y recursos estáticos). Esto permite que el desarrollador del front-end, que no necesita ningún conocimiento de AEM, trabaje de forma independiente y paralela a los creadores de contenido. El administrador de AEM simplemente descarga el tema del sitio y lo proporciona al desarrollador de front-end que lo personaliza con sus herramientas favoritas y luego confirma los cambios en el repositorio de código de AEM, que luego se implementa.
 
-Este documento se centra en la creación de sitios mediante la herramienta de creación rápida de sitios. Si desea obtener una descripción general del flujo de trabajo de creación y personalización del sitio, consulte el [Recorrido de creación rápida de sitios de AEM](/help/journey-sites/quick-site/overview.md)
+Este documento se centra en la creación de sitios mediante la herramienta de creación rápida de sitios. Si desea obtener una descripción general del flujo de trabajo de creación y personalización del sitio, consulte [AEM Recorrido de creación rápida de sitios de](/help/journey-sites/quick-site/overview.md)
 
 ## Planificación de la estructura del sitio {#structure}
 
-Tómese tiempo para tener en cuenta el propósito de su sitio y el contenido planificado con mucha antelación. Esto impulsará la forma en que se diseña la estructura del sitio. Una buena estructura del sitio permite una fácil navegación y la detección de contenido para los visitantes del sitio, así como también admite varias funciones de AEM, como [administración y traducción de varios sitios.](/help/sites-cloud/administering/msm-and-translation.md)
+Tómese tiempo para tener en cuenta el propósito de su sitio y el contenido planificado con mucha antelación. Esto impulsará la forma en que se diseña la estructura del sitio. AEM Una buena estructura del sitio permite una fácil navegación y la detección de contenido para los visitantes del sitio, y admite varias funciones de la aplicación, como las siguientes [administración y traducción de varios sitios](/help/sites-cloud/administering/msm-and-translation.md).
 
 >[!TIP]
 >
@@ -37,11 +37,11 @@ Tómese tiempo para tener en cuenta el propósito de su sitio y el contenido pla
 
 Debido a que la estructura del sitio es tan importante para el éxito de un sitio, resulta conveniente tener estructuras predefinidas disponibles para implementar rápidamente un nuevo sitio en función de un conjunto de estándares existentes. Las plantillas de sitio son una forma de combinar el contenido básico del sitio en un paquete conveniente y reutilizable.
 
-Las plantillas del sitio suelen contener contenido y estructura base del sitio, así como información de estilo, para comenzar con uno nuevo rápidamente. Las plantillas son potentes porque se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
+Las plantillas de sitio generalmente contienen contenido y estructura base del sitio e información de estilo para comenzar con uno nuevo rápidamente. Las plantillas son potentes porque se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
 
 >[!TIP]
 >
->Para obtener más información sobre las plantillas del sitio, consulte el artículo [Plantillas de sitio](site-templates.md).
+>Para obtener más información sobre las plantillas de sitio, consulte [Plantillas de sitio](site-templates.md).
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ El uso de una plantilla para crear un sitio es sencillo.
 
    * El título del sitio aparece en la barra de título de los exploradores.
    * El nombre del sitio forma parte de la dirección URL.
-   * El nombre del sitio debe cumplir con las [convenciones de asignación de nombres de páginas de AEM.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
+   * El nombre del sitio debe cumplir con las [convenciones de asignación de nombres de páginas de AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
 
 1. Toque o haga clic en **Crear** y el sitio se crea a partir de la plantilla de sitio.
 
@@ -95,8 +95,8 @@ El uso de una plantilla para crear un sitio es sencillo.
 
 Si su sitio requiere personalización más allá de las plantillas disponibles, tiene una serie de opciones.
 
-* Si es necesario ajustar la estructura del sitio o el contenido inicial, [la plantilla del sitio se puede personalizar para satisfacer sus necesidades.](site-templates.md)
-* Si es necesario ajustar el estilo del sitio, [el tema del sitio se puede descargar y personalizar.](/help/journey-sites/quick-site/overview.md)
-* Si es necesario ajustar la funcionalidad del sitio, [el sitio se puede personalizar completamente.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+* Si es necesario ajustar la estructura del sitio o el contenido inicial, [la plantilla del sitio se puede personalizar para satisfacer sus necesidades](site-templates.md).
+* Si es necesario ajustar el estilo del sitio, [el tema del sitio se puede descargar y personalizar](/help/journey-sites/quick-site/overview.md).
+* Si es necesario ajustar la funcionalidad del sitio, [el sitio se puede personalizar completamente](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Cualquier personalización debe realizarse con el apoyo de un equipo de desarrollo.

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 94%
+source-wordcount: '1400'
+ht-degree: 88%
 
 ---
 
@@ -47,7 +47,7 @@ Antes de comenzar a traducir el contenido de AEM, existen varios requisitos.
 
 >[!TIP]
 >
->Si no está familiarizado con el uso de un CMS a gran escala como AEM, considere la posibilidad de revisar la documentación de [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md) antes de continuar. La documentación de Gestión básica no forma parte del recorrido, por lo que debe volver a esta página cuando haya terminado.
+>Si no está familiarizado con el uso de un CMS a gran escala como AEM, considere la posibilidad de revisar la documentación de [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md) antes de continuar. La documentación de Gestión básica no forma parte del recorrido. Como tal, vuelva a esta página cuando haya terminado.
 
 ### Herramientas {#tools}
 
@@ -61,7 +61,7 @@ Para el especialista en traducción, no es importante comprender en profundidad 
 
 ### Consola Sitios {#sites-console}
 
-La consola Sites proporciona una descripción general de la estructura del contenido, lo que facilita la navegación y la administración al crear páginas nuevas, mover y copiar páginas o publicar contenido.
+La consola Sites proporciona información general sobre la estructura del contenido, lo que facilita la navegación y la administración al crear páginas nuevas, mover y copiar páginas y publicar contenido.
 
 Para acceder a la consola Sites:
 

@@ -2,10 +2,10 @@
 title: Configuración del proyecto
 description: Descubra cómo se crean los proyectos AEM con Maven y los estándares que debe observar al crear su propio proyecto.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1404'
-ht-degree: 85%
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ Descubra cómo se crean los proyectos AEM con Maven y los estándares que debe o
 AEM Para generar e implementar proyectos correctamente con Cloud Manager, es necesario que se cumplan las siguientes directrices:
 
 * Los proyectos deben crearse con [Apache Maven.](https://maven.apache.org)
-* Debe haber un archivo `pom.xml` en la raíz del repositorio de Git. Este archivo `pom.xml` puede hacer referencia a tantos módulos secundarios (que a su vez pueden tener otros módulos secundarios, etc.) según sea necesario.
+* Debe haber un archivo `pom.xml` en la raíz del repositorio de Git. Esta `pom.xml` Este archivo puede hacer referencia a tantos módulos secundarios (que a su vez pueden tener otros módulos secundarios, etc.) como sea necesario.
 * Puede agregar referencias a repositorios de artefactos de Maven adicionales en sus archivos `pom.xml`.
    * El acceso a [repositorios de artefactos protegidos por contraseña](#password-protected-maven-repositories) se admite cuando se configura. Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por la red.
 * Los paquetes de contenido que se pueden implementar se descubren al analizar los archivos `.zip` del paquete de contenido, que se encuentran en un directorio denominado `target`.
@@ -32,7 +32,7 @@ AEM Para generar e implementar proyectos correctamente con Cloud Manager, es nec
 
 En algunos casos limitados, es posible que tenga que variar ligeramente el proceso de generación al ejecutarse dentro de Cloud Manager, en lugar de hacerlo en las estaciones de trabajo de los desarrolladores. Para estos casos, los [Perfiles de Maven](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) se pueden utilizar para definir cómo la generación debe ser diferente en diferentes entornos, incluido Cloud Manager.
 
-La activación de un perfil de Maven dentro del entorno de generación de Cloud Manager debe realizarse al buscar la `CM_BUILD` [variable de entorno.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) Del mismo modo, un perfil que se pretenda usar solo fuera del entorno de generación de Cloud Manager debe realizarse al buscar la ausencia de esta variable.
+La activación de un perfil de Maven dentro del entorno de generación de Cloud Manager debe realizarse al buscar la `CM_BUILD` [variable de entorno](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Del mismo modo, un perfil que se pretenda usar solo fuera del entorno de generación de Cloud Manager debe realizarse al buscar la ausencia de esta variable.
 
 Por ejemplo, debe hacerlo si desea enviar un mensaje simple solo cuando la generación se ejecuta dentro de Cloud Manager.
 
@@ -110,7 +110,7 @@ Y también debe hacerlo si desea enviar un mensaje simple solo cuando la generac
 
 >[!NOTE]
 >
->Los artefactos de un repositorio de Maven protegido por contraseña deben utilizarse con mucho cuidado, ya que el código implementado a través de este mecanismo actualmente no se ejecuta en todas las [reglas de calidad del código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementado en las puertas de calidad de Cloud Manager. Por lo tanto, solo debe utilizarse en casos excepcionales y para código no vinculado a AEM. También se recomienda implementar las fuentes Java, así como todo el código fuente del proyecto junto con el binario.
+>Los artefactos de un repositorio de Maven protegido por contraseña deben utilizarse con mucho cuidado, ya que el código implementado a través de este mecanismo actualmente no se ejecuta en todas las [reglas de calidad del código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementado en las puertas de calidad de Cloud Manager. Por lo tanto, solo debe utilizarse en casos excepcionales y para código no vinculado a AEM. También se recomienda implementar las fuentes Java y todo el código fuente del proyecto junto con el binario.
 
 Para utilizar un repositorio Maven protegido por contraseña en Cloud Manager haga lo siguiente:
 

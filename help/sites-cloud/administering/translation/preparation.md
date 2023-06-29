@@ -4,10 +4,10 @@ description: Aprenda a preparar el contenido para la traducción.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '765'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ Por lo general, los sitios web multilingües ofrecen contenido en varios idiomas
 
 >[!TIP]
 >
->Si acaba de empezar a traducir contenido, consulte nuestro [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia con la traducción o con AEM.
+>Si acaba de empezar a traducir contenido, consulte [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
 
 El [Sitio del tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) incluye varias ramas de idioma y utiliza la siguiente estructura:
 
@@ -92,7 +92,7 @@ AEM proporciona un carril **Referencias** que muestra una lista de las raíces d
 
 ![Raíces del idioma](../assets/language-roots.png)
 
-Utilice el siguiente procedimiento para ver las copias de idioma de una página mediante el uso del [selector de carril.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+Utilice el siguiente procedimiento para ver las copias de idioma de una página mediante el uso del [selector de carril](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 1. En la consola Sitios, seleccione una página del sitio y, a continuación, toque o haga clic en **Referencias**.
 

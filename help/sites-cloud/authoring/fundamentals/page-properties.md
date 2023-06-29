@@ -2,10 +2,10 @@
 title: Edición de las propiedades de página
 description: Definir las propiedades necesarias para una página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 82%
+source-wordcount: '2341'
+ht-degree: 81%
 
 ---
 
@@ -196,15 +196,15 @@ Las propiedades se distribuyen entre varias pestañas.
 
 ### Modelo {#blueprint}
 
-Esta pestaña solo está visible para páginas que sirven como modelos. Los modelos sirven de base para Live Copies y forman parte de la [Administración de varios sitios](/help/sites-cloud/administering/msm/overview.md)
+Esta pestaña solo está visible para páginas que sirven como modelos. Los modelos sirven de base para Live Copies y forman parte de [Administración de varios sitios](/help/sites-cloud/administering/msm/overview.md).
 
-* **Live Copies actuales**: enumera las páginas que se basan en (es decir, que son Live Copies de) esta página de modelo
+* **Live Copies actuales** - Enumera las páginas que se basan en (es decir, que son Live Copies de) esta página de modelo
 
 * **Configuraciones de despliegue** : controla las circunstancias dentro de las que se propagan las modificaciones a Live Copy
 
 ### Live Copy    {#live-copy}
 
-Esta pestaña solo está visible para páginas configuradas como Live Copies. Al igual que con los modelos, las Live Copies forman parte de la [Administración de varios sitios.](/help/sites-cloud/administering/msm/overview.md).
+Esta pestaña solo está visible para páginas configuradas como Live Copies. Al igual que con los modelos, las Live Copies forman parte de la [Administración de varios sitios](/help/sites-cloud/administering/msm/overview.md).
 
 * **Sincronizar**: sincronice la Live Copy con el modelo, conservando las modificaciones locales
 * **Restablecer**: restablezca la Live Copy al estado del modelo y elimine las modificaciones locales

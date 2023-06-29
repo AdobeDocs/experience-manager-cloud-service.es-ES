@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3496'
-ht-degree: 16%
+source-wordcount: '3491'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 Adobe Experience Manager Assets es una solución de administración de activos digitales (DAM) que se puede integrar con Adobe Creative Cloud para ayudar a los usuarios de DAM a trabajar junto con equipos creativos, lo que optimiza la colaboración en el proceso de creación de contenido.
 
-Adobe Creative Cloud proporciona a los equipos creativos un ecosistema de soluciones y servicios para ayudarles a crear recursos digitales. Incluye aplicaciones de escritorio y móviles, servicios en la nube como almacenamiento con sincronización de escritorio o experiencia web, así como mercados como Adobe Stock.
+Adobe Creative Cloud proporciona a los equipos creativos un ecosistema de soluciones y servicios para ayudarles a crear recursos digitales. Incluye aplicaciones de escritorio y móviles, servicios en la nube como almacenamiento con sincronización de escritorio o experiencia web, y mercados como Adobe Stock.
 
 Continúe leyendo para saber qué integraciones elegir entre el escritorio y el DAM de nivel empresarial en función de su caso de uso y cuáles son las prácticas recomendadas asociadas para los flujos de trabajo de conexión.
 
@@ -34,7 +34,7 @@ Continúe leyendo para saber qué integraciones elegir entre el escritorio y el 
 
 | Requisitos  | Caso de uso | Superficies afectadas |
 |---|---|---|
-| Simplifique la experiencia para creativos en equipos de escritorio | Optimice el acceso a los recursos desde DAM ([!DNL Assets]) para profesionales creativos, o más ampliamente, usuarios de escritorio que trabajan en aplicaciones nativas de creación de recursos. Necesitan una forma fácil y directa de descubrir, utilizar (abrir), editar y guardar cambios en Experience Manager, así como cargar nuevos archivos. | Windows o Mac para escritorio; aplicaciones de Creative Cloud |
+| Simplifique la experiencia para creativos en equipos de escritorio | Optimice el acceso a los recursos desde DAM ([!DNL Assets]) para profesionales creativos, o más ampliamente, usuarios de escritorio que trabajan en aplicaciones nativas de creación de recursos. Necesitan una forma fácil y directa de descubrir, utilizar (abrir), editar y guardar cambios en Experience Manager y cargar nuevos archivos. | Windows o Mac para escritorio; aplicaciones de Creative Cloud |
 | Proporcionar recursos de alta calidad y listos para usar de [!DNL Adobe Stock] | Los especialistas en marketing ayudan a acelerar el proceso de creación de contenido al ayudar con la obtención y el descubrimiento de recursos. Los profesionales creativos utilizan los recursos aprobados desde sus herramientas creativas. | [!DNL Assets]; [!DNL Adobe Stock] marketplace; campos de metadatos |
 | Distribuir y compartir recursos por organizaciones | Los departamentos internos/sucursales locales y los socios externos, distribuidores y agencias utilizan los activos aprobados compartidos por la organización matriz. La organización desea compartir de forma segura y sin problemas los recursos creados para una reutilización más amplia. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
 | Generar automáticamente variaciones predefinidas de recursos cargados | Procese recursos automáticamente aprovechando la tecnología de transformación y gestión de medios única de Adobe para acciones predefinidas. Cree una lógica personalizada para definir sus propias acciones mediante API y microservicios de recursos. | [!DNL Assets]Interfaz de usuario |
@@ -43,7 +43,7 @@ Continúe leyendo para saber qué integraciones elegir entre el escritorio y el 
 
 | Propuesta de valor para las personas involucradas | oferta de Adobe | Superficies afectadas |
 |---|---|---|
-| Los usuarios creativos descubren recursos de [!DNL Experience Manager], ábralos y úselos, edite y cargue cambios en [!DNL Experience Manager], así como cargar nuevos archivos en [!DNL Experience Manager], sin salir de su [!DNL Creative Cloud] aplicación. | [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator y InDesign. |
+| Los usuarios creativos descubren recursos de [!DNL Experience Manager], ábralos y úselos, edite y cargue cambios en [!DNL Experience Manager]y cargar nuevos archivos en [!DNL Experience Manager], sin salir de su [!DNL Creative Cloud] aplicación. | [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator y InDesign. |
 | Los usuarios empresariales simplifican la apertura y el uso de los recursos, la edición y la carga de cambios en [!DNL Experience Manager]y cargar nuevos archivos en [!DNL Experience Manager] desde el entorno de escritorio. Utilizan una integración genérica para abrir cualquier tipo de recurso en la aplicación de Adobe nativa, incluidos los que no son de escritorio. | Aplicación de escritorio de [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Aplicación de escritorio de Experience Manager en Win y Mac para escritorio |
 | Los especialistas en marketing y los usuarios empresariales pueden ver, previsualizar, obtener licencias y guardar y administrar los recursos de Adobe Stock desde Experience Manager. Los recursos con licencia y guardados proporcionan metadatos de Adobe Stock seleccionados para mejorar el control. | [Experience Manager e integración de Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interfaz web |
 | Mejore la colaboración entre los diseñadores de productos digitales y los especialistas en marketing. Permita que los diseñadores utilicen los recursos digitales en los modelos de diseño y de malla metálica en lienzo Adobe XD. | [[!DNL Adobe Asset Link] para [!DNL Adobe XD]](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |

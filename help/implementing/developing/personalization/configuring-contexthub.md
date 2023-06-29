@@ -2,16 +2,16 @@
 title: Configuración de ContextHub
 description: Obtenga información sobre cómo configurar ContextHub.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1680'
 ht-degree: 1%
 
 ---
 
 # Configuración de ContextHub {#configuring-contexthub}
 
-ContextHub es un marco de trabajo para almacenar, manipular y presentar datos de contexto. Para obtener más información sobre ContextHub, consulte la [Información general para desarrolladores de ContextHub](contexthub.md).
+ContextHub es un marco de trabajo para almacenar, manipular y presentar datos de contexto. Para obtener más información sobre ContextHub, consulte [Información general para desarrolladores de ContextHub](contexthub.md).
 
 Puede configurar la barra de herramientas de ContextHub para controlar si aparece en el modo de vista previa, crear tiendas de ContextHub y añadir módulos de interfaz de usuario.
 
@@ -159,21 +159,21 @@ Para guardar datos del servicio MD5 del sitio jsontest.com, utilice el procedimi
 * **Habilitado:** Seleccionar
 * **Configuración detallada (JSON):**
 
-   ```javascript
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```javascript
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### Adición de un módulo de IU para los datos md5 {#adding-a-ui-module-for-the-md-data}
 
@@ -187,15 +187,15 @@ Utilice el procedimiento de [Adición de un módulo de IU](#adding-a-ui-module) 
 * **Tipo de módulo:** contexthub.base
 * **Configuración detallada (JSON):**
 
-   ```javascript
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Conversion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```javascript
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Conversion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## Depuración de ContextHub {#debugging-contexthub}
 
@@ -230,7 +230,7 @@ Para configurar el servicio, puede usar el complemento [Consola web](/help/imple
 
 El modo silencioso suprime toda la información de depuración. A diferencia de la opción de depuración normal, que se puede establecer de forma independiente para cada configuración de ContextHub, el modo silencioso es una configuración global que tiene prioridad sobre cualquier configuración de depuración en el nivel de configuración de ContextHub.
 
-Esto resulta útil en la instancia de publicación, donde no desea ninguna información de depuración. Como es una configuración global, se habilita mediante OSGi.
+Esto resulta útil en la instancia de publicación, donde no desea depurar ninguna información. Como es una configuración global, se habilita mediante OSGi.
 
 1. Abra el **Configuración de la consola web Adobe Experience Manager** en `http://<host>:<port>/system/console/configMgr`
 1. Buscar por **Adobe Granite ContextHub**

@@ -1,9 +1,9 @@
 ---
 title: Regiones de publicación adicionales
 description: AEM Descubra cómo el as a Cloud Service admite regiones de publicación adicionales para aumentar la disponibilidad y reducir la latencia.
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '542'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Las organizaciones pueden autorizar hasta tres regiones de publicación adiciona
 
 >[!NOTE]
 >
->Actualmente, esta función solo está disponible para AEM Sites. Tampoco se puede aplicar a programas de zona protegida. AEM Además, tenga en cuenta que la función de regiones de publicación adicional requiere que el programa se actualice a la versión de lanzamiento de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la versión 12142 o superior.
+>Actualmente, esta función solo está disponible para AEM Sites. Tampoco se puede aplicar a programas de zona protegida. AEM Además, tenga en cuenta que la función de regiones de publicación adicional requiere que el programa se actualice a la versión de lanzamiento de la versión de la versión de la versión de la versión de la versión 12142 o superior de la versión de la versión de la versión de la versión de la aplicación.
 
 ## Casos de uso {#use-cases}
 
@@ -44,7 +44,7 @@ Consulte la [Configuración avanzada de redes para regiones de publicación adic
 
 ## Restricciones {#limitations}
 
-Tenga en cuenta estas limitaciones cuando considere la posibilidad de utilizar regiones de publicación adicionales.
+Tenga en cuenta las siguientes limitaciones cuando considere la posibilidad de utilizar regiones de publicación adicionales.
 
 * Solo se pueden añadir regiones de publicación adicionales a AEM Sites. AEM Las regiones de publicación adicionales no se extienden a otras soluciones de o funcionalidades relacionadas implementadas en el mismo programa (por ejemplo, AEM Forms o Adobe Learning Manager).
 * Solo se pueden agregar regiones adicionales si los derechos asociados están disponibles y no se utilizan en el inquilino.

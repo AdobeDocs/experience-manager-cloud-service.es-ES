@@ -2,10 +2,10 @@
 title: Repositorios de Cloud Manager
 description: Obtenga información sobre cómo crear, ver y eliminar repositorios de Git en Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 96%
+source-wordcount: '575'
+ht-degree: 88%
 
 ---
 
@@ -38,7 +38,7 @@ Puede seleccionar el repositorio en la tabla, hacer clic en el botón de puntos 
 
 ![Opciones del repositorio](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-Los repositorios creados en Cloud Manager también estarán disponibles para su selección al añadir o editar canalizaciones. Consulte el documento [Canalizaciones CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener más información.
+Los repositorios creados en Cloud Manager también estarán disponibles para su selección al añadir o editar canalizaciones. Consulte [Canalizaciones de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener más información.
 
 Hay un único repositorio principal o una rama para una canalización determinada. Con [compatibilidad con el submódulo git](#git-submodule-support), se pueden incluir muchas ramas secundarias en el momento de la compilación.
 
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 Esta técnica es una alternativa potencial a la solución descrita en el documento [Uso de repositorios de Git de varias fuentes](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) para organizaciones que se sientan cómodas con el uso de submódulos Git y no desean administrar un proceso de combinación externo.
 
-Por ejemplo, supongamos que hay tres repositorios, cada uno de los cuales contiene una sola rama denominada `main`. En el repositorio principal, es decir, el configurado en las canalizaciones, la rama `main` tiene un archivo `pom.xml` que declara los proyectos contenidos en los otros dos repositorios.
+Por ejemplo, supongamos que hay tres repositorios, cada uno de los cuales contiene una sola rama denominada `main`. En el repositorio principal, es decir, el configurado en las canalizaciones, la variable `main` La rama tiene un `pom.xml` que declara los proyectos contenidos en los otros dos repositorios.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

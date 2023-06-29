@@ -2,9 +2,9 @@
 title: AEM Registro para la as a Cloud Service
 description: AEM Obtenga información sobre cómo utilizar Registro para el registro as a Cloud Service para configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2375'
 ht-degree: 4%
 
 ---
@@ -52,7 +52,7 @@ Desarrollo</td>
 DEPURAR</td>
 <td>
 Describe lo que sucede en la aplicación.<br>
-Cuando el registro de DEBUG está activo, se registran las instrucciones que proporcionan una imagen clara de qué actividades se producen, así como cualquier parámetro clave que afecte al procesamiento.</td>
+Cuando el registro de DEBUG está activo, se registran las instrucciones que proporcionan una imagen clara de qué actividades se producen y cualquier parámetro clave que afecte al procesamiento.</td>
 <td>
 <ul>
 <li> Desarrollo local</li>

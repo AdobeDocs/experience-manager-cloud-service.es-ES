@@ -2,9 +2,9 @@
 title: Administración de proyectos
 description: Proyectos le permite organizar su proyecto al agrupar los recursos en una entidad a la que se puede acceder y se puede administrar en la consola Proyectos
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '893'
 ht-degree: 49%
 
 ---
@@ -57,7 +57,7 @@ Para asociar recursos al proyecto:
 
    >[!NOTE]
    >
-   >Los mosaicos de proyecto que se pueden asociar a un proyecto se describen detalladamente en [Mosaicos de proyecto.](/help/sites-cloud/authoring/projects/overview.md#project-tiles)
+   >Los mosaicos de proyecto que se pueden asociar a un proyecto se describen detalladamente en [Mosaicos de proyecto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 1. Toque o haga clic en **Crear**. El recurso está vinculado al proyecto y, a partir de ahora, podrá acceder a él desde el proyecto.
 
@@ -127,13 +127,14 @@ Si el icono tiene una x junto a él, muestra los proyectos inactivos.
 
 ## Inactividad o activación de proyectos {#making-projects-inactive-or-active}
 
-Es posible que desee que un proyecto quede inactivo si lo ha completado, pero aun así desea mantener la información en el proyecto.
+Es posible que desee dejar inactivo un proyecto si lo ha completado, pero aun así desea mantener la información del proyecto.
 
 Para que un proyecto quede inactivo (o activo):
 
 1. En el **Proyectos** , abra el proyecto y, a continuación, busque la **Información del proyecto** mosaico.
 
    >[!NOTE]
+   >
    Es posible que tenga que agregar este mosaico si aún no está en el proyecto. Consulte [Adición de mosaicos](#adding-items-to-a-tile).
 
 1. Pulse o haga clic en **Editar**.

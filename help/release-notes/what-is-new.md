@@ -2,7 +2,7 @@
 title: ¿Qué hay de nuevo?
 description: Novedades de Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: f854aaf8-e84d-4904-832f-f72433590920
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
@@ -20,7 +20,7 @@ Para obtener una descripción general del Adobe Experience Manager as a Cloud Se
 * La [arquitectura](/help/overview/architecture.md) de Adobe Experience Manager as a Cloud Service
 * Una [descripción general de AEM as a Cloud Service: novedades y diferencias](/help/overview/what-is-new-and-different.md)
 
-<!-- Please link to introduction or what's new of Sites. -->
+<!-- Link to introduction or what's new of Sites. -->
 
 Para obtener una descripción general de Assets, consulte [Introducción a Assets as a Cloud Service](/help/assets/overview.md)
 

@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 100%
+source-wordcount: '2192'
+ht-degree: 99%
 
 ---
 
@@ -170,7 +170,7 @@ Algunas de las operaciones no admitidas por los servicios de la especificación 
 * Vínculos
 * Diferentes cuerpos de solicitud para diferentes tipos de MIME para una sola operación
 
-Puede consultar [Especificación de API abierta 3.0 ](https://swagger.io/specification/v3/) para obtener información detallada.
+Consulte [Especificación de OpenAPI 3.0](https://swagger.io/specification/v3/) para obtener información detallada.
 
 ### Configuración del cliente HTTP del modelo de datos del formulario para optimizar el rendimiento {#fdm-http-client-configuration}
 
@@ -278,7 +278,8 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
    Si selecciona **[!UICONTROL clave de la API]** como tipo de autenticación, especifique el valor de la clave de la API. La clave de la API se puede enviar como encabezado de solicitud o como parámetro de consulta. Seleccione una de estas opciones en la lista desplegable **[!UICONTROL Ubicación]** y especifique el nombre del encabezado o el parámetro de consulta en el campo **[!UICONTROL Nombre del parámetro]**.
 
    >[!NOTE]
-   >Debe seleccionar el tipo de autenticación OAuth 2.0 con el que conectarse a los servicios de [!DNL Microsoft® Dynamics] que utilizan el punto final OData como raíz de servicio.
+   >
+   Debe seleccionar el tipo de autenticación OAuth 2.0 con el que conectarse a los servicios de [!DNL Microsoft® Dynamics] que utilizan el punto final OData como raíz de servicio.
 
 1. Pulse **[!UICONTROL Crear]** para crear la configuración de nube para el servicio OData.
 

@@ -2,10 +2,10 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 84%
+source-wordcount: '1142'
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ Para crear contenido para una aplicación con el editor universal, la aplicació
 
 >[!TIP]
 >
->Consulte el documento [Introducción al editor universal en AEM](getting-started.md) para ver un ejemplo de cómo configurar una aplicación de AEM para que funcione con el editor universal.
+>Consulte [AEM Introducción al editor universal en el entorno de trabajo de la aplicación de](getting-started.md) AEM para ver un ejemplo de cómo configurar una aplicación de la para que funcione con el editor universal.
 
 ## Inicio de sesión {#sign-in}
 
@@ -84,7 +84,7 @@ El icono de ayuda proporciona acceso rápido a los recursos de aprendizaje y asi
 
 #### Notificaciones {#notifications}
 
-Este icono tiene la insignia con el número de asignaciones incompletas actualmente [notificaciones.](/help/implementing/cloud-manager/notifications.md)
+Este icono tiene la insignia con el número de asignaciones incompletas actualmente [notificaciones](/help/implementing/cloud-manager/notifications.md).
 
 ![Notificaciones](assets/notifications.png)
 
@@ -96,7 +96,7 @@ Toque o haga clic en el icono que representa a su usuario para acceder a la conf
 
 ### El encabezado del editor universal {#universal-editor-header}
 
-El encabezado del editor universal siempre está presente en la parte superior de la pantalla, justo debajo [del encabezado de Experience Cloud.](#experience-cloud-header) Le permite un acceso rápido a otra página para editarla y publicar la actual.
+El encabezado del editor universal siempre está presente en la parte superior de la pantalla, justo debajo [del encabezado de Experience Cloud.](#experience-cloud-header) Esto le permite desplazarse rápidamente a otra página para editarla y publicarla.
 
 ![Encabezado del editor universal](assets/universal-editor-header.png)
 

@@ -2,10 +2,10 @@
 title: Tablero de licencias
 description: Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 97%
+source-wordcount: '873'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ Cada sección resume lo que está disponible y cómo se utiliza actualmente, si 
 
 >[!TIP]
 >
->Consulte [Información general de Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para aprender a administrar las autorizaciones de Adobe en toda la organización desde Admin Console.
+>Consulte [Introducción al Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para aprender a administrar sus derechos de Adobe en toda la organización desde Admin Console.
 
 ## Preguntas frecuentes  {#faq}
 

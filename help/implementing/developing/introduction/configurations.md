@@ -2,9 +2,9 @@
 title: Configuraciones y el explorador de configuración
 description: AEM AEM Comprenda las configuraciones de la y cómo administran la configuración del espacio de trabajo en las instancias de trabajo de.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1485'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ AEM Independientemente de su perspectiva, las configuraciones sirven para dos pr
 
 ## Configuraciones como administrador {#configurations-administrator}
 
-AEM Tanto el administrador de la aplicación como los autores pueden considerar las configuraciones como espacios de trabajo. Estos espacios de trabajo se pueden utilizar para recopilar grupos de configuraciones, así como su contenido asociado, con fines organizativos mediante la implementación de derechos de acceso para esas funciones.
+AEM El administrador y los autores de la pueden considerar las configuraciones como espacios de trabajo. Estos espacios de trabajo se pueden utilizar para recopilar grupos de configuraciones y su contenido asociado con fines organizativos mediante la implementación de derechos de acceso para esas funciones.
 
 AEM Se pueden crear configuraciones para muchas funciones diferentes dentro de los entornos de trabajo de la aplicación de la.
 
@@ -135,7 +135,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 El punto de partida de toda la búsqueda de configuración es un recurso de contenido, normalmente en alguna parte bajo `/content`. Podría ser una página, un componente dentro de una página, un recurso o una carpeta DAM. Este es el contenido real para el que buscamos la configuración correcta que se aplica en este contexto.
 
-Ahora, con el `Conf` objeto en mano, podemos recuperar el elemento de configuración específico que nos interesa. En este caso es `dam/imageserver`, que es una colección de configuraciones relacionadas con la variable `imageserver`. El `getItem` la llamada devuelve un `ValueMap`. Luego leemos un `bgkcolor` y proporcione un valor predeterminado de &quot;FFFFFF&quot; en caso de que la propiedad (o todo el elemento de configuración) no esté presente.
+Ahora, con el `Conf` objeto en mano, podemos recuperar el elemento de configuración específico que nos interesa. En este caso es `dam/imageserver`, que es una colección de configuraciones relacionadas con el `imageserver`. El `getItem` la llamada devuelve un `ValueMap`. Luego leemos un `bgkcolor` y proporcione un valor predeterminado de &quot;FFFFFF&quot; en caso de que la propiedad (o todo el elemento de configuración) no esté presente.
 
 Ahora vamos a echar un vistazo al contenido JCR correspondiente:
 
@@ -155,7 +155,7 @@ Ahora vamos a echar un vistazo al contenido JCR correspondiente:
 
 En este ejemplo, suponemos una carpeta DAM específica de WKND aquí y una configuración correspondiente. Empezando por esa carpeta `/content/dam/wknd`, veremos que hay una propiedad de cadena llamada `cq:conf` que hace referencia a la configuración que debe aplicarse al subárbol. La propiedad generalmente se establece en la variable `jcr:content` de una página o carpeta de recursos. Estos `conf` Los vínculos son explícitos, por lo que es fácil seguirlos con solo mirar el contenido en CRXDE.
 
-Saltando dentro `/conf`, seguimos la referencia y vemos que hay un `/conf/wknd` nodo. Esta es una configuración. Tenga en cuenta que su búsqueda es completamente transparente para el código de la aplicación. El código de ejemplo nunca tiene una referencia dedicada a él, está oculto detrás del `Conf` objeto. La configuración que se aplica se controla completamente a través del contenido JCR.
+Saltando dentro `/conf`, seguimos la referencia y vemos que hay un `/conf/wknd` nodo. Esta es una configuración. Su búsqueda es completamente transparente para el código de la aplicación. El código de ejemplo nunca tiene una referencia dedicada a él, está oculto detrás del `Conf` objeto. La configuración que se aplica se controla completamente a través del contenido JCR.
 
 Vemos que la configuración contiene un nombre fijo `settings` que contiene los elementos reales, incluido el `dam/imageserver` necesitamos en nuestro caso. Este elemento puede considerarse como un &quot;documento de configuración&quot; y suele representarse mediante una `cq:Page` incluido un `jcr:content` que contenga el contenido real.
 

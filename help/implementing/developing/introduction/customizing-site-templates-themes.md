@@ -4,10 +4,10 @@ description: AEM Aprenda cómo se pueden utilizar las plantillas de sitio de la 
 feature: Administering
 role: Admin
 exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 25%
+source-wordcount: '285'
+ht-degree: 22%
 
 ---
 
@@ -19,7 +19,7 @@ AEM Aprenda cómo se pueden utilizar las plantillas de sitio de la para predefin
 
 AEM AEM Para permitir a los administradores de la crear rápidamente sitios adaptados a las necesidades de la empresa, admite la creación de nuevos sitios mediante plantillas de sitio y temas de sitio.
 
-* Un **AEM plantilla del sitio de** generalmente contiene contenido y estructura base del sitio, así como información de estilo del sitio, conocida como tema del sitio para iniciar un nuevo sitio rápidamente. Las plantillas son potentes porque se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
+* Un **AEM plantilla del sitio de** generalmente contiene contenido y estructura base del sitio e información de estilo del sitio, conocida como tema del sitio para iniciar un nuevo sitio rápidamente. Las plantillas son potentes porque se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
 * Un **AEM tema del sitio** AEM AEM es un paquete que contiene CSS, JavaScript y recursos estáticos que definen el estilo del sitio y cumplen la estructura de un tema del sitio de la.
 
 ## Recursos adicionales {#additional-resources}
@@ -31,4 +31,4 @@ Porque [creación del sitio](/help/sites-cloud/administering/site-creation/creat
 
 >[!TIP]
 >
->Puede encontrar una descripción completa del proceso de crear un sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios.](/help/journey-sites/quick-site/overview.md)
+>Puede encontrar una descripción completa del proceso de crear un sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md).

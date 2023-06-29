@@ -2,9 +2,9 @@
 title: Instalación y configuración de reproductores en pantallas as a Cloud Service
 description: En esta página se describe cómo instalar y configurar reproductores en Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---
@@ -88,4 +88,4 @@ A continuación se enumeran algunas limitaciones de la monitorización básica d
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha instalado y configurado el reproductor en el modo de nube, continúe con el recorrido as a Cloud Service de Screens. Revisar el documento [Registro de reproductores en pantallas as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) del proveedor de servicios de Screens.
+Ahora que ha instalado y configurado el reproductor en el modo de nube, continúe con el recorrido as a Cloud Service de Screens. Consulte [Registro de reproductores en pantallas as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) del proveedor de servicios de Screens.

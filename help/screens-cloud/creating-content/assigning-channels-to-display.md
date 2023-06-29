@@ -2,10 +2,10 @@
 title: Asignación de canales a una pantalla en Pantallas as a Cloud Service
 description: En esta página se describe cómo asignar un canal a una visualización en Pantallas as a Cloud Service.
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 1%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ Siga los pasos a continuación para asignar un canal a una visualización:
 
 1. Vaya al proveedor de servicios de Screens y seleccione **Visualizaciones** en el panel de navegación izquierdo.
 
-1. Haga clic en **Asignar canal** a la pantalla.
+1. Clic **Asignar canal** a la pantalla.
 
    ![imagen](/help/screens-cloud/assets/display/assignchannel-1.png)
 
@@ -42,26 +42,27 @@ Siga los pasos a continuación para asignar un canal a una visualización:
    1. Elija la prioridad.
 
       >[!NOTE]
-      >La prioridad se usa para ordenar las asignaciones en caso de que varias coincidan con los criterios de reproducción. El que tenga el valor más alto siempre tendrá prioridad sobre los valores más bajos. Por ejemplo, si hay dos canales, A y B. A tiene una prioridad de 1 y B tiene una prioridad de 2. A continuación, se muestra el canal B, ya que tiene una prioridad mayor que A.
+      >La prioridad se usa para ordenar las asignaciones en caso de que varias coincidan con los criterios de reproducción. El que tiene el valor más alto siempre tiene prioridad sobre los valores más bajos. Por ejemplo, si hay dos canales, A y B. A tiene una prioridad de 1 y B tiene una prioridad de 2. A continuación, se muestra el canal B, ya que tiene una prioridad mayor que A.
+
    1. Seleccione la fecha de inicio y la fecha de finalización desde **Activation**.
 
-1. Haga clic en **+ Agregar periodicidad** para añadir una programación de periodicidad para el canal.
+1. Clic **+ Agregar periodicidad** para añadir una programación de periodicidad para el canal.
 
    ![imagen](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
    >[!NOTE]
-   >Puede agregar varias programaciones recurrentes al canal. Las programaciones de periodicidad presentan DayParting, que le permite establecer una programación global con varios canales que se ejecutan a horas específicas del día y reutilizar esa configuración para todas las pantallas a la vez.
+   >Puede agregar varias programaciones recurrentes al canal. Las programaciones de periodicidad introducen DayParting, que permite establecer una programación global con varios canales ejecutándose a horas específicas del día y reutilizar esa configuración para todas las pantallas a la vez.
 
    Puede establecer las siguientes opciones:
 
    * **Nombre**: Título de la programación de periodicidad.
    * **Repetir**: Seleccione si la programación se ejecuta diariamente, semanalmente, mensualmente o anualmente.
    * **Inicio**: la hora de inicio de la programación.
-   * **Fin**: la hora de finalización de la programación. Puede configurarlo por tiempo o duración.
-   * **Hora**: la programación finalizará a una hora especificada.
+   * **Fin**: la hora de finalización de la programación. Puede establecerlo por tiempo o duración.
+   * **Hora**: la programación finaliza a una hora especificada.
    * **Duración**: la programación se ejecuta durante un período de tiempo determinado en horas o minutos.
 
-1. Haga clic en **Crear** y ahora verá que se ha asignado un canal a esa pantalla, como se muestra en la figura siguiente.
+1. Haga clic en **Crear**. Puede ver que hay un canal asignado para esa visualización, como se muestra en la figura siguiente.
 
    ![imagen](/help/screens-cloud/assets/display/assignchannel-3.png)
 

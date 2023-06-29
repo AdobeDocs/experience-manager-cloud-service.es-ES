@@ -4,9 +4,9 @@ description: Aproveche el Centro de Acciones para tomar medidas sobre incidentes
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '701'
 ht-degree: 27%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 27%
 >[!NOTE]
 >Esta función no se ha publicado.
 
-AEM El Cloud Service de as envía notificaciones por correo electrónico al Centro de acciones cuando se producen incidentes críticos que requieren una acción inmediata, así como recomendaciones proactivas para las optimizaciones. Algunos ejemplos son una cola bloqueada o un conjunto de credenciales que caduca; el conjunto completo de tipos de notificación del Centro de acciones se puede ver en la [tabla siguiente](#supported-notification-types), que se ampliará con el tiempo.
+AEM El Cloud Service de as envía notificaciones por correo electrónico al Centro de acciones cuando se producen incidentes críticos que requieren una acción inmediata y recomendaciones proactivas para las optimizaciones. Algunos ejemplos son una cola bloqueada o un conjunto de credenciales que caduca; el conjunto completo de tipos de notificación del Centro de acciones se puede ver en la [tabla siguiente](#supported-notification-types), que se ampliará con el tiempo.
 
 AEM Cuando se recibe una notificación por correo electrónico del Centro de acciones, se puede hacer clic en ella para abrir el Centro de acciones de un as a Cloud Service, con una ventana emergente que muestra un contexto adicional que explica la acción que debe realizar un cliente.
 
-Además de mostrar información sobre la notificación por correo electrónico en la que se acaba de hacer clic, el Centro de acciones sirve como centro en el que puede ver y administrar el conjunto de notificaciones actuales y anteriores. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+Además de mostrar información sobre la notificación por correo electrónico en la que se acaba de hacer clic, el Centro de acciones sirve como centro en el que puede ver y administrar el conjunto de notificaciones actuales y anteriores. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
 Existen dos categorías superiores de notificaciones que aparecen en el Centro de acciones:
 

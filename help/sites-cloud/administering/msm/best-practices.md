@@ -4,10 +4,10 @@ description: Conozca las prácticas recomendadas recopiladas por los equipos de 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 95%
+source-wordcount: '1425'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ Al crear un nuevo sitio con Live Copy, resulta ventajoso crear configuraciones d
 
 >[!NOTE]
 >
-> Tenga en cuenta que los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esto al configurar Live Copy.
+>Los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esta regla al configurar Live Copy.
 
 ## Sincronización de componentes y contenedores {#components-and-container-synchronization}
 
@@ -84,10 +84,10 @@ Al crear maestros de idiomas, tenga en cuenta lo siguiente:
 * Mientras que MSM en sí **no proporciona traducción de contenido**, se puede integrar con conectores de traducción de terceros que sí lo hagan. Tenga en cuenta lo siguiente:
    * MSM le permite cancelar la herencia en el nivel de página o componente. Esto evita sobrescribir el contenido traducido (de una Live Copy, con contenido aún no traducido de un modelo) en el próximo despliegue.
       * Algunos conectores de traducción de terceros automatizan esta administración de las herencias de MSM.
-      * Consulte a su proveedor de servicios de traducción para obtener más información.
+      * Consulte con su proveedor de servicios de traducción para obtener más información.
       * Un enfoque alternativo para crear y traducir maestros de idiomas es usar copias de idiomas junto con el marco de trabajo de integración de traducción listo para usar de AEM.
 
-Para obtener más información, consulte [Traducción de contenido para sitios multilingües](/help/sites-cloud/administering/translation/overview.md) y [Prácticas recomendadas de traducción.](/help/sites-cloud/administering/translation/best-practices.md)
+Para obtener más información, consulte [Traducción de contenido para sitios multilingües](/help/sites-cloud/administering/translation/overview.md) y [Prácticas recomendadas de traducción](/help/sites-cloud/administering/translation/best-practices.md).
 
 ## Cambios y despliegues de la estructura {#structure-changes-and-rollouts}
 

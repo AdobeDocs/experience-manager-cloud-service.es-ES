@@ -2,10 +2,10 @@
 title: Uso del analizador de prácticas recomendadas
 description: Uso del analizador de prácticas recomendadas
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2479'
-ht-degree: 46%
+source-wordcount: '2474'
+ht-degree: 45%
 
 ---
 
@@ -28,7 +28,7 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 * AEM BPA es compatible con instancias de con la versión 6.1 y posteriores.
 
   >[!NOTE]
-  >Consulte lo siguiente [AEM Instalación en.1](#installing-on-aem61) AEM para los requisitos especiales para la instalación de BPA en la versión 6.1 del.
+  >Consulte [AEM Instalación en.1](#installing-on-aem61) AEM para los requisitos especiales para la instalación de BPA en la versión 6.1 del.
 
 * BPA puede ejecutarse en cualquier entorno, pero se prefiere que sea en un *Fase* entorno.
 
@@ -192,7 +192,7 @@ La interfaz HTTP puede utilizarse en diversos métodos.
 
 Una forma sencilla es abrir una pestaña en el mismo explorador en el que ya ha iniciado sesión en AEM como administrador. Puede escribir la dirección URL en la pestaña del explorador y mostrar o descargar los resultados.
 
-También puede utilizar una herramienta de línea de comandos como `curl` o `wget` como así también cualquier aplicación cliente HTTP. Cuando no utilice una pestaña de explorador con una sesión autenticada, debe proporcionar el nombre de usuario y la contraseña de administración como parte del comentario.
+También puede utilizar una herramienta de línea de comandos como `curl` o `wget` y cualquier aplicación cliente HTTP. Cuando no utilice una pestaña de explorador con una sesión autenticada, debe proporcionar el nombre de usuario y la contraseña de administración como parte del comentario.
 
 A continuación se muestra un ejemplo de cómo se puede realizar esto:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.

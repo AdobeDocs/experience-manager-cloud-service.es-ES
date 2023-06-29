@@ -2,9 +2,9 @@
 title: Cambios importantes en el complemento del marco de integración comercial (CIF)
 description: Cambios importantes del Commerce Integration Framework (CIF) en comparación con las versiones anteriores del CIF.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 6c9a44940ea9e52bd27a233c7aa24e320a24076c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -63,4 +63,4 @@ AEM AEM La función de procesamiento de experiencias de catálogo de productos s
 
 >[!NOTE]
 >
->AEM AEM Para obtener documentación adicional sobre cómo utilizar CIF con el servicio administrado por el usuario o el servicio administrado por el usuario en el sitio web, consulte la sección sobre el uso de CIF en el sitio web de [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>AEM AEM Para obtener documentación adicional sobre cómo utilizar CIF con el servicio administrado por el usuario o el servicio administrado por el usuario en el sitio web, consulte el artículo sobre el uso de CIF con el servicio administrado por el usuario o el servicio administrado en el sitio web de [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

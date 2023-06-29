@@ -6,10 +6,10 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -200,6 +200,7 @@ A continuación se muestra un ejemplo sin `afData/afBoundData` envolvente:
 >[!NOTE]
 >
 > **No** se recomienda el uso de campos no enlazados en paneles enlazados (paneles con bindRef no vacíos que se hayan creado al arrastrar componentes de la barra de tareas o la pestaña Fuentes de datos) recomendado, ya que podría causar la pérdida de datos de los campos independientes. Se recomienda tener nombres de campo únicos en todo el formulario, especialmente en los campos no enlazados.
+>
 
 ### Formulario adaptable sin modelo de formulario {#adaptive-form-with-no-form-model}
 
@@ -246,7 +247,6 @@ Para establecer los valores de una configuración, consulte [Generar configuraci
 >
 > - De forma predeterminada, se permite el relleno previo mediante archivos crx para todos los tipos de formularios adaptables (XSD, XDP, JSON, FDM y sin modelo de formulario). El relleno previo solo se permite con archivos JSON y XML.
 > - El protocolo crx se encarga de la seguridad de los datos rellenos previamente y, por lo tanto, está permitido de forma predeterminada. El relleno previo a través de otros protocolos mediante regex genéricas puede causar vulnerabilidad. En la configuración, especifique una configuración de URL segura para proteger los datos.
-
 
 ## El curioso caso de los paneles repetibles {#the-curious-case-of-repeatable-panels}
 

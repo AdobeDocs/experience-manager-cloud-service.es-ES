@@ -3,10 +3,10 @@ title: Canalizaciones de CI/CD
 description: Obtenga información sobre las canalizaciones de CI/CD de Cloud Manager y cómo se pueden utilizar para implementar su código de forma eficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 87%
+source-wordcount: '1339'
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ Una canalización de producción es una canalización diseñada específicamente
 
 >[!TIP]
 >
->Consulte el documento [Configurar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para obtener más información.
+>Consulte [Configuración de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para obtener más información.
 
 ## Canalización que no es de producción {#non-prod-pipeline}
 
@@ -52,7 +52,7 @@ Una canalización que no es de producción sirve principalmente para ejecutar an
 
 >[!TIP]
 >
->Consulte el documento [Configurar una canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para obtener más información.
+>Consulte [Configuración de una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para obtener más información.
 
 ## Fuentes de código {#code-sources}
 
@@ -85,13 +85,13 @@ El siguiente diagrama ilustra las configuraciones de canalización de Cloud Mana
 
 Las canalizaciones de pila completa implementan configuraciones de código back-end, código front-end y nivel web para el tiempo de ejecución de AEM al mismo tiempo.
 
-* Código back-end: contenido inmutable como código Java, configuraciones OSGi, informes, así como contenido mutable
+* Código back-end: contenido inmutable como código Java, configuraciones OSGi, informes y contenido mutable
 * Código front-end: recursos de la interfaz de usuario de la aplicación como JavaScript, CSS, fuentes
 * Configuración de nivel web: configuraciones de HTTPD/Dispatcher
 
 La canalización de pila completa representa una canalización “uber”, que hace todo a la vez, ofrece a los usuarios las opciones de implementar exclusivamente sus configuraciones de código front-end o Dispatcher a través de la canalización front-end y las canalizaciones de configuración de nivel web respectivamente.
 
-Código front-end del paquete de canalizaciones de pila completa (JavaScript/CSS) como [bibliotecas del cliente de AEM.](/help/implementing/developing/introduction/clientlibs.md)
+Código front-end del paquete de canalizaciones de pila completa (JavaScript/CSS) como [bibliotecas del cliente de AEM](/help/implementing/developing/introduction/clientlibs.md).
 
 Las canalizaciones de pila completa pueden implementar configuraciones de nivel web si la [canalización de configuración de capa web](#web-tier-config-pipelines) no está configurada.
 
@@ -127,11 +127,11 @@ Las canalizaciones front-end pueden ser de calidad del código o implementación
 
 ### Antes de configurar canalizaciones front-end {#before-start}
 
-Antes de configurar las canalizaciones front-end, revise el [Recorrido de creación de sitios rápidos de AEM](/help/journey-sites/quick-site/overview.md) para obtener una guía completa a través de la herramienta de creación de sitios rápidos de AEM fácil de usar. Este recorrido le ayudará a optimizar su desarrollo front-end y le permitirá personalizar rápidamente su sitio sin conocimientos del back-end de AEM.
+Antes de configurar canalizaciones front-end, revise las [AEM Recorrido de creación rápida de sitios de](/help/journey-sites/quick-site/overview.md) AEM para obtener una guía completa a través de la herramienta de creación rápida de sitios de fácil uso de usar, o de la herramienta de creación rápida de sitios. Este recorrido le ayudará a optimizar su desarrollo front-end y le permitirá personalizar rápidamente su sitio sin conocimientos del back-end de AEM.
 
 ### Configurar una canalización front-end {#configure-front-end}
 
-Para aprender a configurar canalizaciones front-end, consulte los siguientes documentos.
+Para obtener información sobre cómo configurar canalizaciones front-end, consulte lo siguiente:
 
 * [Agregar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Agregar una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
@@ -140,11 +140,11 @@ Para aprender a configurar canalizaciones front-end, consulte los siguientes doc
 
 Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
 
-Consulte el documento [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
+Consulte [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
 
 ### Configurar canalizaciones de pila completa {#configure-full-stack}
 
-Para aprender a configurar canalizaciones de pila completa, consulte los siguientes documentos.
+Para aprender a configurar canalizaciones de pila completa, consulte los siguientes documentos:
 
 * [Agregar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Agregar una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
@@ -165,7 +165,7 @@ Se aplican las siguientes restricciones.
 * Un usuario debe haber iniciado sesión con **Administrador de implementación** función para configurar o ejecutar canalizaciones.
 * En cualquier momento, solo puede haber una canalización de configuración de nivel web por entorno.
 * El usuario no puede configurar una canalización de configuración de nivel web cuando se ejecuta su canalización de pila completa correspondiente.
-* La estructura del nivel web debe adherirse a la estructura de modo flexible, tal como se define en el documento [Dispatcher en la nube.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* La estructura del nivel web debe adherirse a la estructura de modo flexible, tal como se define en el documento [Dispatcher en la nube](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 Además, tenga en cuenta cómo se usa la función [canalización de pila completa](#full-stack-pipeline) se comporta al introducir una canalización de nivel web.
 
@@ -177,7 +177,7 @@ Las canalizaciones de configuración de nivel web pueden ser del tipo calidad de
 
 ### Configuración de canalizaciones de configuración de nivel web {#configure-web-tier-config-pipelines}
 
-Para aprender a configurar las canalizaciones de configuración de nivel web, consulte los siguientes documentos.
+Para obtener información sobre cómo configurar canalizaciones de configuración de nivel web, consulte los siguientes documentos:
 
 * [Agregar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Agregar una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)

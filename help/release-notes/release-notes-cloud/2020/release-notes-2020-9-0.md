@@ -2,9 +2,9 @@
 title: Notas de la versión 2020.9.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.9.0."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '720'
 ht-degree: 20%
 
 ---
@@ -21,7 +21,7 @@ La fecha de lanzamiento de [!DNL Adobe Experience Manager] La versión 2020.9.0 
 
 ### Novedades de [!DNL Sites] {#what-is-new-sites}
 
-* El SDK del Editor de JavaScript para la Aplicación de una sola página (SPA) [ahora es de código abierto.](/help/implementing/developing/hybrid/reference-materials.md)
+* El SDK del Editor de JavaScript para la Aplicación de una sola página (SPA) [ahora es de código abierto](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 

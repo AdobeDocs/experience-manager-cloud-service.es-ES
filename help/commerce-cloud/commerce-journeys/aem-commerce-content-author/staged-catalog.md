@@ -2,9 +2,9 @@
 title: Gestionar experiencias de catálogo de productos clasificados
 description: Obtenga información sobre cómo administrar las experiencias de catálogo de productos clasificados.
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '493'
 ht-degree: 10%
 
 ---

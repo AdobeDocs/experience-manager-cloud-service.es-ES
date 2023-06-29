@@ -4,10 +4,10 @@ description: Explore la recuperación de contenido JSON desde su entorno de prue
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 57%
+source-wordcount: '981'
+ht-degree: 55%
 
 ---
 
@@ -120,4 +120,4 @@ Esta consulta genera una respuesta JSON que incluye imágenes y la variable `res
 
 ![Resultado de la consulta adventures-all y de la función de procesamiento resultToDom](assets/do-not-localize/adventures-all-query-result.png)
 
-Ahora que ha hecho el trabajo para generar los modelos y las consultas, su equipo de contenido puede asumir el control con facilidad. En el módulo siguiente, se muestra el flujo de creación de contenido.
+Ahora que ha hecho el trabajo para crear los modelos y las consultas, su equipo de contenido puede asumir el control con facilidad. En el módulo siguiente, se muestra el flujo de creación de contenido.
