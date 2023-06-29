@@ -3,14 +3,14 @@ title: Introducción a [!DNL Assets View]
 description: Acceso, experiencia de inicio de sesión, casos de uso compatibles y problemas conocidos de [!DNL Assets View].
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 5af7f9160b0028d0eff5358c3c1a43729b86883b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 94%
+source-wordcount: '345'
+ht-degree: 86%
 
 ---
 
-# Introducción a [!DNL Adobe Experience Manager Assets View] {#assets-view-get-started}
+# Introducción a la vista de recursos {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -25,11 +25,9 @@ Para usar [!DNL Assets View], inicie sesión en [https://experience.adobe.com/#/
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## Obtención de acceso a [!DNL Assets View] {#get-access}
+## Acceder a la vista Recursos {#access-assets-view}
 
-Adobe aprovisiona la solución y añade la persona designada de su organización como administrador. Los administradores pueden proporcionar acceso a varios usuarios de la organización utilizando [[!DNL Admin Console]](https://helpx.adobe.com/es/enterprise/using/admin-console.html). Para solicitudes relacionadas con el acceso, póngase en contacto con el administrador de su organización.
-
-Al iniciar sesión, después de proporcionar las credenciales, [!DNL Assets View] le solicita que seleccione una cuenta. En este caso, seleccione `Company or School Account` para continuar.
+Consulte [Cómo acceder a la vista de recursos](/help/assets/assets-view-introduction.md#how-to-access-assets-view) para obtener las instrucciones detalladas sobre cómo acceder a la vista de recursos.
 
 ## Configuración de [!DNL Assets View] {#configuration}
 

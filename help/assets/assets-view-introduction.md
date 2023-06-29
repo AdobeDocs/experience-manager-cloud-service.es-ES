@@ -2,9 +2,9 @@
 title: ¿En qué le beneficia la vista de Assets?
 description: Obtenga más información acerca de las ventajas clave de la vista Recursos
 mini-toc-levels: 3
-source-git-commit: 4e31a57a6bcbc6783398c205075bb8e1b1a5dc74
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1118'
 ht-degree: 11%
 
 ---
@@ -87,7 +87,7 @@ Las próximas versiones para Assets as a Cloud Service también incluirían [Int
 
 ### Cargas de carpetas para configurar la estructura jerárquica de su organización {#folder-uploads}
 
-Configure rápidamente una estructura de carpetas para su organización mediante la vista Recursos cargando carpetas que existan en el sistema de archivos local. No es necesario crear carpetas en la carpeta raíz y luego cargar los recursos en esas carpetas manualmente para mantener la estructura jerárquica lógica. Todas las carpetas y recursos de la carpeta raíz se cargan automáticamente en Experience Manager Assets.
+Configure rápidamente una estructura de carpetas para su organización mediante la vista Recursos cargando carpetas que existan en el sistema de archivos local. No es necesario crear carpetas bajo la carpeta raíz y luego cargar los recursos en esas carpetas manualmente para mantener la estructura jerárquica lógica. Todas las carpetas y recursos de la carpeta raíz se cargan automáticamente en Experience Manager Assets.
 
 ![Cargar carpetas](assets/folder-uploads.gif)
 
@@ -120,6 +120,11 @@ Además de estas funciones, la vista Recursos también permite realizar las sigu
 * Cargue una nueva versión de un recurso, con un nombre diferente, desde el sistema de archivos local al repositorio de recursos. El recurso cargado está disponible como una nueva versión con el mismo nombre que la del recurso original.
 
 * Cambie el nombre de los recursos y las carpetas disponibles en el repositorio.
+
+Utilice estos vínculos para empezar rápidamente a usar la vista Recursos:
+
+* [Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md)
+* [Introducción a la vista de recursos](/help/assets/get-started-assets-view.md)
 
 ## Conclusión {#conclusion}
 
