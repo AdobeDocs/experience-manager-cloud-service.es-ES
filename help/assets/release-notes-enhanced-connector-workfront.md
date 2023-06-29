@@ -2,9 +2,9 @@
 title: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
+source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1158'
 ht-degree: 1%
 
 ---
@@ -30,13 +30,13 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 >[!IMPORTANT]
 >
->El Adobe recomienda [actualice a la última versión 1.9.11](../assets/update-workfront-enhanced-connector.md) de la [!DNL Workfront for Experience Manager enhanced connector].
+>El Adobe le recomienda [actualice a la última versión 1.9.11](/help/assets/workfront-connector-install.md) de la [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conocidos {#known-issues}
 
 * AEM Al configurar las carpetas vinculadas a proyectos con la versión 6.4 de, Experience Manager no guarda los valores de **[!UICONTROL subcarpetas]** y **[!UICONTROL Crear carpeta vinculada en proyectos con portafolio]** campos. El valor de **[!UICONTROL subcarpetas]** actualizaciones de campo a **[!UICONTROL indefinido]** y el valor de **[!UICONTROL Crear carpeta vinculada en proyectos con portafolio]** actualizaciones de campo a **[!UICONTROL Portfolio predeterminado]** automáticamente después de guardar la configuración.
 
-* Cuando utiliza la experiencia clásica de Workfront, la variable **[!UICONTROL Enviar a]** opción disponible en el **[!UICONTROL Más]** La lista desplegable no permite seleccionar el destino de destino en Experience Manager. El **[!UICONTROL Enviar a]** La opción funciona correctamente utilizando **[!UICONTROL Acciones de documento]** lista desplegable. El **[!UICONTROL Enviar a]** funciona correctamente para **[!UICONTROL Más]** , así como la lista desplegable **[!UICONTROL Acciones de documento]** lista desplegable disponible en la nueva experiencia de Workfront.
+* Cuando utiliza la experiencia clásica de Workfront, la variable **[!UICONTROL Enviar a]** opción disponible en el **[!UICONTROL Más]** La lista desplegable no permite seleccionar el destino de destino en Experience Manager. El **[!UICONTROL Enviar a]** La opción funciona correctamente utilizando **[!UICONTROL Acciones de documento]** lista desplegable. El **[!UICONTROL Enviar a]** funciona correctamente para **[!UICONTROL Más]** y la lista desplegable. **[!UICONTROL Acciones de documento]** lista desplegable disponible en la nueva experiencia de Workfront.
 
 ## Versiones anteriores {#previous-releases}
 
@@ -139,7 +139,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 [!DNL Workfront for Experience Manager enhanced connector] La versión 1.9.4, lanzada el 7 de octubre, incluye las siguientes actualizaciones:
 
-* No se puede ver la pestaña Suscripciones de eventos en la página de configuración del conector mejorado debido a un gran número de eventos.
+* No se puede ver la pestaña Suscripciones de eventos en la página de configuración del conector mejorado debido a la gran cantidad de eventos.
 
 * Workfront no puede recuperar la lista de carpetas existentes en un proyecto, lo que provoca la creación de carpetas duplicadas.
 
@@ -147,7 +147,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 [!DNL Workfront for Experience Manager enhanced connector] La versión 1.9.3 de, lanzada el 16 de septiembre de, incluye las siguientes actualizaciones:
 
-* No se puede cargar un archivo con un tamaño superior a 8 GB.
+* No se puede cargar un archivo que tenga más de 8 GB.
 * Problemas durante la publicación automática de recursos enviados desde Workfront AEM a los recursos de la publicación de la aplicación de forma.
 * El campo Ruta raíz no está disponible para el campo Etiquetas al editar un formulario de esquema de metadatos predeterminado.
 * Problemas al añadir nuevas versiones en Workfront AEM mediante flujos de trabajo de.
@@ -178,7 +178,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 [!DNL Workfront for Experience Manager enhanced connector] ahora incluye las siguientes actualizaciones:
 
-* Cuando carga a través de una carpeta vinculada o utiliza el `Send To` acción disponible en Workfront para cargar recursos en el Experience Manager as a Cloud Service, los recursos se dañan y no se pueden abrir en Adobe Photoshop.
+* Cuando carga a través de una carpeta vinculada o utiliza el `Send To` acción disponible en Workfront para cargar recursos en Experience Manager as a Cloud Service, los recursos se dañan y no se pueden abrir en Adobe Photoshop.
 
 ### Lanzamiento de marzo de 2022 {#march-2022-release}
 
