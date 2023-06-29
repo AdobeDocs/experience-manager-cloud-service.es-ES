@@ -8,10 +8,10 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
 workflow-type: tm+mt
-source-wordcount: '4139'
-ht-degree: 98%
+source-wordcount: '4144'
+ht-degree: 97%
 
 ---
 
@@ -567,6 +567,7 @@ ht-degree: 98%
             + [Creación de Formularios adaptables: componentes principales en una página de AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Utilizar la traducción automática o la traducción humana para traducir un formulario adaptable](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurar la página de redireccionamiento o el mensaje de agradecimiento](/help/forms/configure-redirect-page-or-thank-you-message.md)
+            + [Crear formularios con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
       + Crear formularios adaptables: componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)
