@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: afb57c70a87a2b039b16946b22f4adb7e70e2227
+source-git-commit: e60a734d7e0887a23978efac8d896ac3745dbb5d
 workflow-type: tm+mt
-source-wordcount: '4147'
+source-wordcount: '4150'
 ht-degree: 97%
 
 ---
@@ -81,6 +81,7 @@ ht-degree: 97%
    + Notas de la versión de Cloud Manager {#cloud-manager}
       + [Notas de la versión actual](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [Notas de la versión 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [Notas de la versión 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [Notas de la versión 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
          + [Notas de la versión 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
