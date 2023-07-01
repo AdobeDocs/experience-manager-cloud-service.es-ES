@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4176'
 ht-degree: 2%
@@ -38,7 +38,7 @@ El tutorial ayuda a ilustrar los pasos de integración de imágenes interactivas
 
 Pasos de las imágenes interactivas:
 
-1. **(Opcional) Identificar variables de puntos interactivos**. Si utiliza Adobe Experience Manager Assets y Dynamic Media de forma independiente, identifique las variables dinámicas utilizadas en la implementación de Quickview existente. Al hacerlo, se garantiza la entrada de datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables de punto interactivo](#optional-identifying-hotspot-variables).
+1. **(Opcional) Identificar variables de puntos interactivos**. Si utiliza Adobe Experience Manager Assets y Dynamic Media de forma independiente, identifique las variables dinámicas utilizadas en la implementación de Quickview existente. Al hacerlo, se asegura de que pueda introducir datos de punto interactivo al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables de punto interactivo](#optional-identifying-hotspot-variables).
 Sin embargo, si utiliza Experience Manager Sites, o comercio electrónico de Experience Manager, o ambos, este paso no es necesario.
 
 1. **(Opcional) Cree un ajuste preestablecido de visualizador de imágenes interactivo**. Personalice la imagen gráfica que se utiliza para representar las zonas interactivas. No es necesario crear su propio ajuste preestablecido de visualizador de imágenes interactivas si desea utilizar el ajuste preestablecido de visualizador de imágenes interactivas predeterminado denominado `Shoppable_Banner` en su lugar.
@@ -221,6 +221,7 @@ Al añadir zonas interactivas, puede definirlas como una ventana emergente de vi
 Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
+>
 Las herramientas para compartir en medios sociales de la imagen interactiva no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, utilice o cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
 
 Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la página, son compatibles durante la sesión de creación y edición actual.
@@ -230,11 +231,15 @@ Cuando termine de crear la imagen interactiva, puede usar Vista previa para ver 
 Consulte [(Opcional) Previsualizar imágenes interactivas](#optional-previewing-interactive-images).
 
 >[!NOTE]
+>
 Cuando se añaden puntos interactivos a una imagen en una imagen interactiva o un titular de carrusel, la información del punto interactivo se almacena en la misma ubicación de metadatos. Esta ubicación es relativa a la ubicación de la imagen, independientemente de si es una imagen interactiva o un titular de carrusel. Esta funcionalidad significa que puede reutilizar fácilmente la misma imagen, junto con sus datos de punto interactivo definidos, en cualquier visor.
+>
 Sin embargo, tenga en cuenta que los titulares de carrusel admiten mapas de imagen en imágenes que también pueden contener puntos interactivos; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o un titular de carrusel que utilice la misma imagen. Puede crear imágenes interactivas y titulares de carrusel con copias independientes de la misma imagen.
+>
 Consulte también [Banners de carrusel](/help/assets/dynamic-media/carousel-banners.md).
 
 >[!NOTE]
+>
 Si está editando imágenes interactivas con zonas interactivas y recorta la imagen, se eliminan las zonas interactivas.
 
 **Para añadir zonas interactivas a un titular de imagen:**
@@ -267,6 +272,7 @@ Si está editando imágenes interactivas con zonas interactivas y recorta la ima
          * Consulte [Identificación de variables de punto interactivo](#optional-identifying-hotspot-variables); debe definir estas variables.
          * A continuación, introduzca manualmente el valor SKU. En el campo de texto Valor de SKU, escriba la SKU del producto. El valor SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida. Garantiza que el sistema sepa que asocia el punto interactivo pulsado con la vista rápida de una SKU en particular.
          * (Opcional) Si hay otras variables dentro de la vista rápida que se utilizan para identificar un producto con más detalle, pulse **[!UICONTROL Añadir variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, `category=Mens` es una variable añadida.
+
    * Seleccionar **[!UICONTROL Hipervínculo]**.
 
       * Si es cliente de Experience Manager Sites, pulse el icono Selector de sitio (carpeta). Vaya a una dirección URL. El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
@@ -283,10 +289,9 @@ Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/e
 
       * Especifique la anchura y altura del fragmento de experiencia tal como desea que aparezca en el titular.
 
-         >[!NOTE]
-         Las herramientas para compartir en medios sociales de la imagen interactiva no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, utilice o cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
-
-
+        >[!NOTE]
+        >
+        Las herramientas para compartir en medios sociales de la imagen interactiva no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, utilice o cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
 
 1. Seleccionar **[!UICONTROL Guardar]** para guardar su trabajo y volver a la página de exploración.
 1. Publique la imagen interactiva. La publicación ofrece el banner a través de la nube y también genera código incrustado que le permite integrarse con un sitio web de terceros.
@@ -298,6 +303,7 @@ Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/e
    Consulte [Integración de una imagen interactiva con el sitio web](#integrating-an-interactive-image-with-your-website).
 
    >[!NOTE]
+   >
    Si está editando imágenes interactivas con zonas interactivas y recorta la imagen, se eliminarán las zonas interactivas.
 
 ### (Opcional) Previsualizar imágenes interactivas {#optional-previewing-interactive-images}
@@ -345,6 +351,7 @@ Uso del [sitio web de demostración como ejemplo](https://experienceleague.adobe
 La integración es tan sencilla como eliminar el `IMG` y reemplazándolo por el código incrustado copiado de Experience Manager Assets. Se puede ver que el resultado [muestra la imagen interactiva de ventas en la página con tres zonas interactivas de círculo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
+>
 A partir de este punto, los puntos interactivos de la imagen interactiva de ventas del sitio web de demostración solo tienen fines de visualización. Todavía no se han integrado con las vistas rápidas existentes.
 
 Para aplicar un &quot;recorte&quot; a una imagen interactiva de ventas para un entorno interactivo, incluya el atributo de configuración Imagen interactiva `ZoomView.iscommand` a la ruta. En este caso, la variable `ZoomView` el componente se llama y `iscommand` es el comando de servicio de imágenes &quot;recortar&quot; que se aplica.
@@ -358,6 +365,7 @@ Ya está listo para integrar la imagen interactiva con una vista rápida existen
 ## Integración de una imagen interactiva con una vista rápida existente {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
+>
 Esta tarea solo se aplica si es un cliente independiente de Experience Manager Assets.
 
 El último paso de este proceso es integrar la imagen interactiva con una implementación de vista rápida existente en el sitio web. No hay ninguna solución para la integración que funcione para todos los casos. Cada implementación de Quickview es única y se necesita un enfoque específico. Por lo tanto, la participación de la asistencia de una persona de TI front-end es útil.
@@ -399,7 +407,7 @@ El código incrustado devuelto por Experience Manager Assets tiene un controlado
                     var sku=inData.sku; //SKU for product ID
                     //To pass other parameter from the hotspot, you will need to add custom parameter during the hotspot setup as parameterName=value
                     loadQuickView(sku); //Replace this call with your Quickview plugin
-                    //Please refer to your Quickviewer plugin for the Quickview call
+                    //See your Quickviewer plugin for the Quickview call
                  },
              });
         */

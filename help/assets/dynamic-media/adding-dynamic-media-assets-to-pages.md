@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: ec3939e34028d1dbadbd2b855796ca63e049b814
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '3218'
-ht-degree: 4%
+source-wordcount: '3217'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Para añadir la funcionalidad Dynamic Media a los recursos que utiliza en sus sitios web, puede añadir la variable **Dynamic Media**, **Medios interactivos**, **Medios panorámicas**, o **Vídeo 360 multimedia** directamente en la página. Se accede al modo Diseño y se activan los componentes de Dynamic Media. A continuación, agregue estos componentes a la página y agregue recursos al componente. Los componentes de Dynamic Media son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones de configuración disponibles cambian en consecuencia.
 
-Los recursos de Dynamic Media se agregan directamente a la página si utiliza [!DNL Adobe Experience Manager] como WCM. Si utiliza un tercero para su WCM, puede hacer lo siguiente [vincular](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incrustar](/help/assets/dynamic-media/embed-code.md) sus recursos. Para ver un sitio web interactivo de terceros, consulte [distribución de imágenes optimizadas en un sitio interactivo](/help/assets/dynamic-media/responsive-site.md).
+Los recursos de Dynamic Media se agregan directamente a la página si utiliza [!DNL Adobe Experience Manager] como WCM. Si utiliza un tercero para su WCM, [vincule](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incruste](/help/assets/dynamic-media/embed-code.md) los recursos. Para ver un sitio web interactivo de terceros, consulte [distribución de imágenes optimizadas en un sitio interactivo](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
@@ -85,13 +85,13 @@ Puede localizar los componentes de Dynamic Media de una de las dos maneras sigui
 
 * En una página web de Sites, abra **[!UICONTROL Propiedades]** y seleccione la pestaña **[!UICONTROL Avanzadas]**. Seleccione el idioma que desee para la localización.
 
-   ![chlimage_1-172](assets/chlimage_1-538.png)
+  ![chlimage_1-172](assets/chlimage_1-538.png)
 
 * En el selector de sitio, seleccione la página o el grupo de páginas que desee. Seleccionar **[!UICONTROL Propiedades]** y seleccione la **[!UICONTROL Avanzadas]** pestaña. Seleccione el idioma que desee para la localización.
 
-   >[!NOTE]
-   >
-   >No todos los idiomas que están disponibles en la **[!UICONTROL Idioma]** tiene tokens asignados actualmente.
+  >[!NOTE]
+  >
+  >No todos los idiomas que están disponibles en la **[!UICONTROL Idioma]** tiene tokens asignados actualmente.
 
 ## Componentes de Dynamic Media disponibles {#dynamic-media-components}
 
@@ -145,44 +145,44 @@ Puede editar la siguiente configuración de Dynamic Media seleccionando la **[!U
 
 * **[!UICONTROL Ajuste preestablecido de visor]** - Seleccione un ajuste preestablecido de visualizador existente en la lista desplegable. Si el ajuste preestablecido de visualizador que busca no está visible, debe hacerlo visible. Consulte Administración de ajustes preestablecidos de visor. No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
-   Esta opción es la única disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos. Los ajustes preestablecidos de visualizador mostrados también son ajustes preestablecidos de visualizador relevantes de solo inteligente.
+  Esta opción es la única disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos. Los ajustes preestablecidos de visualizador mostrados también son ajustes preestablecidos de visualizador relevantes de solo inteligente.
 
 * **[!UICONTROL Modificadores de visor]** - Los modificadores de visualizador toman la forma de par nombre=valor con un delimitador &amp; y le permiten cambiar visualizadores como se describe en la Guía de referencia de visualizadores. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1` que establece una imagen diferente para la miniatura de vídeo y asocia un archivo de subtítulo o rótulo cerrado con el vídeo.
 
 * **[!UICONTROL Ajuste preestablecido de imagen]** - Seleccione un ajuste preestablecido de imagen existente en la lista desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte Administración de ajustes preestablecidos de imagen. No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
-   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+  Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 * **[!UICONTROL Modificadores de imagen]** - Puede aplicar efectos de imagen suministrando más comandos de imagen. Estos comandos se describen en Ajustes preestablecidos de imagen y en la Referencia del comando del servicio de imágenes.
 
-   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+  Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 * **[!UICONTROL Puntos de interrupción]** : Si utiliza este recurso en un sitio adaptable, debe añadir los puntos de interrupción de imagen. Los puntos de interrupción de imagen deben separarse con comas (,). Esta opción funciona cuando no hay altura o anchura definida en un ajuste preestablecido de imagen.
 
-   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+  Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-   Puede editar la siguiente Configuración avanzada seleccionando **[!UICONTROL Editar]** en el componente.
+  Puede editar la siguiente Configuración avanzada seleccionando **[!UICONTROL Editar]** en el componente.
 
 * **[!UICONTROL Optimización para dispositivos de mayor resolución]** : seleccione (opción predeterminada) la casilla de verificación para permitir la optimización de la RGPD (proporción de píxeles del dispositivo).
 
-   El **[!UICONTROL Optimización para dispositivos de mayor resolución]** solo se muestra cuando se cumple lo siguiente:
+  El **[!UICONTROL Optimización para dispositivos de mayor resolución]** solo se muestra cuando se cumple lo siguiente:
    * En Tipo de ajuste preestablecido, **[!UICONTROL Ajuste preestablecido de imagen]** está seleccionado, y **[!UICONTROL RESS_IP]** se selecciona del **[!UICONTROL Ajuste preestablecido de imagen]** lista desplegable.
 
-   ![ajuste de proporción de píxeles del dispositivo para el ajuste preestablecido de imagen](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+  ![ajuste de proporción de píxeles del dispositivo para el ajuste preestablecido de imagen](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-   Consulte también [Acerca de la optimización de proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  Consulte también [Acerca de la optimización de proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Cualquiera [!DNL Experience Manager] Los valores de DPR de Dynamic Media Smart Imaging se omiten.
+  Cualquiera [!DNL Experience Manager] Los valores de DPR de Dynamic Media Smart Imaging se omiten.
 
 * **[!UICONTROL Título]** - Cambiar el título de la imagen.
 
 * **[!UICONTROL Texto alternativo]** : Añada un título a la imagen para los usuarios que tengan los gráficos desactivados.
 
-   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+  Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 * **[!UICONTROL URL, Abrir en]** : puede configurar un recurso para abrir un vínculo. Configure la dirección URL y, en Abrir en, indique si desea que se abra en la misma ventana o en una nueva.
 
-   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+  Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 * **[!UICONTROL Ancho]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
 
@@ -204,12 +204,12 @@ Puede editar la siguiente configuración de Dynamic Media seleccionando **[!UICO
 
 * **[!UICONTROL Modificadores de visor]** - Los modificadores del visor toman la forma de `name=value` emparejar con un `&` delimitador. Permiten cambiar los visores tal como se describe en la Guía de referencia de visores de Adobe. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1`
 
-   Con los modificadores de visor puede, por ejemplo, hacer lo siguiente:
+  Con los modificadores de visor puede, por ejemplo, hacer lo siguiente:
 
    * Asocie un archivo de rótulo a un vídeo: [caption](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Asocie un archivo de navegación a un vídeo: [navegación](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
-      Puede editar la siguiente Configuración avanzada seleccionando **[!UICONTROL Editar]** en el componente.
+     Puede editar la siguiente Configuración avanzada seleccionando **[!UICONTROL Editar]** en el componente.
 
 * **[!UICONTROL Título]** - Cambiar el título del vídeo.
 
@@ -235,33 +235,33 @@ Puede editar la siguiente configuración de Dynamic Media seleccionando **[!UICO
 
 * **[!UICONTROL Modificadores de imagen]** - Puede aplicar efectos de imagen suministrando más comandos de imagen. Estos comandos se describen en Ajustes preestablecidos de imagen y en la Referencia del comando del servicio de imágenes.
 
-   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+  Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-   Puede editar la siguiente Configuración avanzada seleccionando **[!UICONTROL Editar]** en el componente.
+  Puede editar la siguiente Configuración avanzada seleccionando **[!UICONTROL Editar]** en el componente.
 
 * **[!UICONTROL Habilitar coincidencia de relación de aspecto]** : Para permitir que Dynamic Media elija una representación de recorte inteligente con una proporción de aspecto que mejor se ajuste a la proporción de aspecto de la imagen original, seleccione esta opción.
 
 * **[!UICONTROL Optimización para dispositivos de mayor resolución]** : seleccione (opción predeterminada) la casilla de verificación para permitir la optimización de la RGPD (proporción de píxeles del dispositivo).
 
-   El **[!UICONTROL Optimización para dispositivos de mayor resolución]** solo se muestra cuando se cumple lo siguiente:
+  El **[!UICONTROL Optimización para dispositivos de mayor resolución]** solo se muestra cuando se cumple lo siguiente:
 
    * En Tipo de ajuste preestablecido, **[!UICONTROL Recorte inteligente]** La opción está seleccionada.
 
-   ![configuración de proporción de píxeles del dispositivo para recorte inteligente](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+  ![configuración de proporción de píxeles del dispositivo para recorte inteligente](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-   Consulte también [Acerca de la optimización de proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  Consulte también [Acerca de la optimización de proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Cualquiera [!DNL Experience Manager] Los valores de DPR de Dynamic Media Smart Imaging se omiten.
+  Cualquiera [!DNL Experience Manager] Los valores de DPR de Dynamic Media Smart Imaging se omiten.
 
 * **[!UICONTROL Título]** : cambie el título de la imagen Recorte inteligente.
 
 * **[!UICONTROL Texto alternativo]** : Añada un título a la imagen de recorte inteligente para los usuarios que tengan los gráficos desactivados.
 
-   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+  Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 * **[!UICONTROL URL, Abrir en]** : puede configurar un recurso para abrir un vínculo. Configure la dirección URL y, en Abrir en, indique si desea que se abra en la misma ventana o en una nueva.
 
-   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+  Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 * **[!UICONTROL Ancho]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
 
@@ -296,7 +296,7 @@ Puede editar las siguientes opciones **[!UICONTROL General]** configuración sel
 
 * **[!UICONTROL Altura]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
 
-   Puede editar las siguientes opciones **[!UICONTROL Añadir al carro]** configuración seleccionando **[!UICONTROL Editar]** en el componente.
+  Puede editar las siguientes opciones **[!UICONTROL Añadir al carro]** configuración seleccionando **[!UICONTROL Editar]** en el componente.
 
 * **[!UICONTROL Mostrar recurso del producto]** : De forma predeterminada, este valor está seleccionado. El recurso de producto muestra una imagen del producto tal como se define en el módulo de Commerce. Desactive la marca de verificación para no mostrar el recurso del producto.
 
@@ -362,4 +362,3 @@ Consulte [Entrega HTTP2 de contenido](/help/assets/dynamic-media/http2faq.md) pa
 >* [Uso de la miniatura de vídeo personalizada con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
 >* [Comprensión de la administración de color con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
 >* [Uso del enfoque de imagen con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)
-

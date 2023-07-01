@@ -2,10 +2,10 @@
 title: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 description: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2818'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -191,15 +191,15 @@ AEM Forms as a Cloud Services proporciona un entorno SDK basado en Docker que fa
    * (Apple macOS) Instale [Docker Desktop para Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Incluye Docker Engine, Docker CLI client, Docker Compose, Docker Content Trust, Kubernetes y Credential Helper.
 
    * (Para Linux®) Instale [Docker Engine](https://docs.docker.com/engine/install/#server) y [Docker Compose](https://docs.docker.com/compose/install/) en su máquina.
+
    >[!NOTE]
    >
    > * Para Apple macOS, incluya en la lista de permitidos las carpetas que contengan instancias de locales de AEM Author.
    >
    > * Docker Desktop para Windows admite dos backends, Hyper-V
-      > (heredado) y WSL2 (moderno). El uso compartido de archivos lo administra automáticamente
-      > Docker cuando se utiliza WSL2 (moderno). Tiene que
-      > configurar explícitamente el uso compartido de archivos mientras utiliza Hyper-V (heredado).
-
+   > (heredado) y WSL2 (moderno). El uso compartido de archivos lo administra automáticamente
+   > Docker cuando se utiliza WSL2 (moderno). Tiene que
+   > configurar explícitamente el uso compartido de archivos mientras utiliza Hyper-V (heredado).
 
 1. Cree una carpeta, por ejemplo aem-sdk, en paralelo a las instancias Author y Publish. Por ejemplo, C:\aem-sdk.
 
@@ -234,7 +234,7 @@ Utilice este proyecto para crear formularios adaptables, implementar actualizaci
 ---------|----------|---------
 | Canvas 3.0 | Basic | Microsoft® Dynamics 365 |
 | Tranquilo | Blank | Salesforce |
-| Urbane |  |  |
+| Urbane |   |  |
 | Ultramarine |  |  |
 | Beryl |  |  |
 
@@ -331,7 +331,7 @@ El entorno de desarrollo local está listo.
 
 ## Habilitar los componentes principales de Forms adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms
 
-Al habilitar los componentes principales de Forms adaptable en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer componentes principales basados en Forms adaptable y Forms sin encabezado mediante las instancias de Cloud Service de AEM Forms en varios canales. Se necesita un entorno habilitado para los componentes principales de Forms adaptable para utilizar Forms adaptable sin encabezado.
+Al habilitar los componentes principales de Formularios adaptables en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer componentes principales basados en Formularios adaptables y Formularios sin encabezado mediante las instancias de Cloud Service de AEM Forms en varios canales. Se necesita un entorno habilitado para los componentes principales de Forms adaptable para utilizar Forms adaptable sin encabezado.
 
 Para obtener instrucciones, consulte [Habilitar los componentes principales de Forms adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
 

@@ -2,9 +2,9 @@
 title: Creación de lanzamientos
 description: Puede crear un lanzamiento para habilitar la actualización de una nueva versión de las páginas web existentes para una activación futura.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1043'
 ht-degree: 59%
 
 ---
@@ -62,7 +62,7 @@ Puede crear un lanzamiento desde la consola Sitios o Lanzamientos:
 
    >[!NOTE]
    >
-   >Para agregar páginas o ramas a un lanzamiento, deben estar dentro de un sitio, es decir, debajo de una raíz de nivel superior común.
+   >Para agregar páginas o ramas a un lanzamiento, deben estar dentro de un sitio; es decir, debajo de una raíz de nivel superior común.
    >
    >Si un sitio contiene raíces de idioma por debajo del nivel superior, las páginas y ramas de un lanzamiento deben estar por debajo de una raíz de idioma común.
 

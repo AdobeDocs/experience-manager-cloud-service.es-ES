@@ -2,10 +2,10 @@
 title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencia Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 81%
+source-wordcount: '2046'
+ht-degree: 77%
 
 ---
 
@@ -37,7 +37,7 @@ Puede utilizar los fragmentos de experiencias:
 Sin fragmentos de experiencias, el creador tendría que copiar y pegar ese fragmento. Crear y mantener estas experiencias de copia y pegado es un proceso laborioso y es posible que el usuario cometa errores.
 Los fragmentos de experiencias eliminan la necesidad de copiar y pegar.
 * Para admitir el caso práctico de CMS descentralizado.
-Los autores quieren utilizar AEM solo para la creación, pero no para la entrega al cliente. Un punto de contacto o sistema de terceros consumiría esa experiencia y luego la entregaría al usuario final.
+Los autores quieren utilizar AEM solo para la creación, pero no para la entrega al cliente. Un sistema o punto de contacto de terceros consumiría esa experiencia y la entregaría al usuario final.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Los autores quieren utilizar AEM solo para la creación, pero no para la entre
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 >
->Para obtener más información, consulte también [Explicación de los fragmentos de contenido y de experiencias en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=es#content-fragments).
+>Para obtener más información, consulte [AEM Explicación de los fragmentos de contenido y de experiencias en la creación de](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=es#content-fragments).
 
 >[!NOTE]
 >
@@ -423,7 +423,7 @@ Uso del selector de `.plain.` en la URL; puede acceder a la representación HTML
 
 >[!NOTE]
 >
-Aunque esta opción está disponible directamente desde el explorador, [el objetivo principal es permitir a otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) acceder al contenido del fragmento de experiencia directamente, únicamente mediante la URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Aunque está disponible directamente desde el explorador, [el objetivo principal es permitir que otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) accedan al contenido del fragmento de experiencia directamente, únicamente mediante la dirección URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publicación de fragmentos de experiencias {#publishing-experience-fragments}
 

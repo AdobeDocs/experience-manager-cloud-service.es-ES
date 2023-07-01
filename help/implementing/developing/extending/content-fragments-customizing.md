@@ -2,9 +2,9 @@
 title: Personalizar y ampliar fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1811'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ La administración de fragmentos de contenido (CFM) forma parte de AEM Assets co
 
 * Los fragmentos de contenido son recursos.
 * Utilizan la funcionalidad existente de Assets.
-* Están totalmente integrados con los recursos (Admin Console, etc.).
+* Están totalmente integrados con Assets (Admin Consoles, etc.).
 
 Los fragmentos de contenido se consideran una función de Sites como:
 
@@ -343,6 +343,6 @@ Si desea establecer un intervalo de guardado automático de 5 minutos, debe defi
 
 ## Componentes para la creación de páginas {#components-for-page-authoring}
 
-Para obtener más información, consulte lo siguiente
+Para obtener más información, consulte
 
 * [Componentes principales: componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) (recomendado)

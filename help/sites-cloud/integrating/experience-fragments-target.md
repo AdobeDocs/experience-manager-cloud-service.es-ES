@@ -2,10 +2,10 @@
 title: Exportación de fragmentos de experiencias a Adobe Target
 description: Exportación de fragmentos de experiencias a Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 98%
+source-wordcount: '2245'
+ht-degree: 97%
 
 ---
 
@@ -356,7 +356,7 @@ Para exportar un fragmento de experiencia de AEM a Target (después de especific
 
 ## Uso de los fragmentos de experiencias en Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Después de realizar las tareas anteriores, el fragmento de experiencia se muestra en la página Ofertas de Target. Consulte la [documentación específica de Target](https://experiencecloud.adobe.com/resources/help/es_ES/target/target/aem-experience-fragments.html) para aprender lo que se puede lograr allí.
+Después de realizar las tareas anteriores, el fragmento de experiencia se muestra en la página Ofertas de Target. Consulte [documentación específica de Target](https://experiencecloud.adobe.com/resources/help/es_ES/target/target/aem-experience-fragments.html) para aprender lo que se puede lograr allí.
 
 >[!NOTE]
 >

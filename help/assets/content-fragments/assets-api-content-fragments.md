@@ -3,9 +3,9 @@ title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager as
 description: AEM Obtenga información acerca de la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de la función de envío sin encabezado de la aplicación de la interfaz de usuario de.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1785'
 ht-degree: 18%
 
 ---
@@ -74,7 +74,6 @@ Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, s
 >
 >* `/api/assets` **no** necesita el uso del selector `.model`.
 >* `/content/path/to/page` **sí** necesita el uso del selector `.model`.
-
 
 El método HTTP determina la operación que se va a ejecutar:
 
@@ -148,12 +147,11 @@ AEM Si la API de REST de Assets se utiliza en un entorno sin requisitos de auten
 
 >[!NOTE]
 >
->Para obtener más información, consulte lo siguiente:
+>Para obtener más información, consulte:
 >
 >* [Explicación de CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=es)
 >* [Vídeo: Desarrollo para CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=es)
 >
-
 
 En entornos con requisitos de autenticación específicos, se recomienda OAuth.
 
@@ -177,7 +175,7 @@ La respuesta contendrá información de paginación como parte de `properties` d
 
 >[!NOTE]
 >
->La paginación se aplica normalmente a entidades contenedoras (es decir, carpetas o recursos con representaciones), en lo que se refiere a los elementos secundarios de la entidad solicitada.
+>La paginación se aplica normalmente a entidades contenedoras (es decir, carpetas o activos con representaciones), en lo que se refiere a las tareas secundarias de la entidad solicitada.
 
 #### Ejemplo: Paginación {#example-paging}
 
@@ -275,68 +273,71 @@ Los siguientes códigos de estado se pueden ver en las circunstancias relevantes
 
 * **200** (OK)
 
-   Devuelto cuando:
+  Devuelto cuando:
 
    * solicitud de un fragmento de contenido mediante `GET`
    * actualización correcta de un fragmento de contenido mediante `PUT`
 
 * **201** (Creado)
 
-   Devuelto cuando:
+  Devuelto cuando:
 
    * creación correcta de un fragmento de contenido mediante `POST`
 
 * **404** (No encontrado)
 
-   Devuelto cuando:
+  Devuelto cuando:
 
    * el fragmento de contenido solicitado no existe
 
 * **500** (Error interno del servidor)
 
-   >[!NOTE]
-   >
-   >Se devuelve este error:
-   >
-   >* cuando se ha producido un error que no se puede identificar con un código específico
-   >* cuando la carga útil proporcionada no era válida
+  >[!NOTE]
+  >
+  >Se devuelve este error:
+  >
+  >* cuando se ha producido un error que no se puede identificar con un código específico
+  >* cuando la carga útil proporcionada no era válida
 
-
-   A continuación se enumeran los escenarios comunes en los que se devuelve este estado de error, junto con el mensaje de error (monoespacio) generado:
+  A continuación se enumeran los escenarios comunes en los que se devuelve este estado de error, junto con el mensaje de error (monoespacio) generado:
 
    * La carpeta principal no existe (al crear un fragmento de contenido mediante `POST`)
    * No se ha proporcionado ningún modelo de fragmento de contenido (falta cq:model), no se puede leer (debido a una ruta no válida o a un problema de permisos) o no hay ningún modelo de fragmento válido:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
+
    * No se ha podido crear el fragmento de contenido (potencialmente un problema de permisos):
 
       * `Could not create content fragment`
+
    * No se han podido actualizar el título o la descripción:
 
       * `Could not set value on content fragment`
+
    * No se pudieron establecer los metadatos:
 
       * `Could not set metadata on content fragment`
+
    * El elemento de contenido no se ha podido encontrar o actualizar
 
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-   Los mensajes de error detallados suelen devolverse de la siguiente manera:
+  Los mensajes de error detallados suelen devolverse de la siguiente manera:
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## Referencia de la API {#api-reference}
 
@@ -344,13 +345,13 @@ Consulte aquí las referencias detalladas de la API:
 
 * [API de Adobe Experience Manager Assets: fragmentos de contenido](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
-* [API HTTP de Recursos](/help/assets/mac-api-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
 
    * [Funciones disponibles](/help/assets/mac-api-assets.md#available-features)
 
 ## Recursos adicionales {#additional-resources}
 
-Para obtener más información, consulte lo siguiente:
+Para obtener más información, consulte:
 
 * [Documentación de la API HTTP de Assets](/help/assets/mac-api-assets.md)
 * [AEM Sesión de Gem de: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

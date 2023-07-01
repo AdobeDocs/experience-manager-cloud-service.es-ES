@@ -2,10 +2,10 @@
 title: Administración de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, la base del contenido sin encabezado.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 76%
+source-wordcount: '1755'
+ht-degree: 71%
 
 ---
 
@@ -129,7 +129,7 @@ Abra el fragmento para su edición:
 
 >[!CAUTION]
 >
->Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
+>Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene problemas, póngase en contacto con el administrador del sistema.
 
 1. Utilice el **Assets** para desplazarse a la ubicación del fragmento de contenido.
 1. Abra el fragmento para editarlo, haciendo lo siguiente:
@@ -217,7 +217,7 @@ El editor tiene varias opciones:
 
   >[!CAUTION]
   >
-  >Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
+  >Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene problemas, póngase en contacto con el administrador del sistema.
 
   >[!NOTE]
   >
@@ -225,9 +225,9 @@ El editor tiene varias opciones:
 
   >[!CAUTION]
   >
-  >Además de guardar los cambios, las acciones actualizan también las referencias y garantizan que Dispatcher se vacíe según sea necesario. Estos cambios pueden tardar un tiempo en procesarse. Debido a esto, puede haber un impacto en el rendimiento de un sistema grande/complejo/con gran carga.
+  >Además de guardar los cambios, las acciones actualizan también las referencias y garantizan que Dispatcher se vacíe según sea necesario. Estos cambios pueden tardar un tiempo en procesarse. Debido a este tiempo, puede haber un impacto en el rendimiento de un sistema grande/complejo/con gran carga.
   >
-  >Tenga esto en cuenta al utilizar **Guardar y cerrar** y, a continuación, reintroduciendo rápidamente el editor de fragmentos para realizar y guardar más cambios.
+  >Tenga en cuenta este proceso al utilizar **Guardar y cerrar** y, a continuación, reintroduciendo rápidamente el editor de fragmentos para realizar y guardar más cambios.
 
 * **Cerrar**
 

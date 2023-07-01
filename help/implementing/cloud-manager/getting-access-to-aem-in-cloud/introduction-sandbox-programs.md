@@ -2,10 +2,10 @@
 title: Introducción a los programas de zona protegida
 description: Descubra cuáles son las diferencias entre los programas de zona protegida y los programas de producción.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 100%
+source-wordcount: '475'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ Descubra cuáles son las diferencias entre los programas de zona protegida y los
 
 Un programa de zona protegida se suele crear para servir a los fines de formación, ejecución de demostraciones, habilitación o prueba de conceptos (POC) y, por lo tanto, no están pensados para transportar tráfico en directo.
 
-Un programa de zona protegida es uno de los dos tipos de programas disponibles en AEM Cloud Service, el otro es un [programa de producción.](introduction-production-programs.md) Consulte el documento [Explicación de programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) para obtener más información sobre los tipos de programas.
+Un programa de zona protegida es uno de los dos tipos de programas disponibles en AEM Cloud Service, el otro es un [programa de producción.](introduction-production-programs.md) Consulte [Explicación de programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) para obtener más información sobre los tipos de programas.
 
 ## Creación automática {#auto-creation}
 
@@ -49,7 +49,7 @@ Los dominios personalizados y las listas de IP permitidas no están disponibles 
 
 ### Sin redes avanzadas {#advanced-networking}
 
-[Funciones de red avanzadas](/help/security/configuring-advanced-networking.md) (por ejemplo, aprovisionamiento de autoservicio de VPN, puertos no estándar, direcciones IP de salida dedicada, etc.) no están disponibles en programas de zona protegida.
+[Funciones de red avanzadas](/help/security/configuring-advanced-networking.md) (por ejemplo, el aprovisionamiento de autoservicio de VPN, puertos no estándar, direcciones IP de salida dedicadas, etc.) no está disponible en programas de zonas protegidas.
 
 ### Actualizaciones de los manuales de AEM {#updates}
 
@@ -58,15 +58,15 @@ Las actualizaciones de AEM no se insertan automáticamente en los programas de z
 * Una actualización manual solo se puede ejecutar cuando el entorno de destino tiene una canalización configurada correctamente.
 * Una actualización manual de un entorno de ensayo o producción actualizará automáticamente el otro. El conjunto de entornos Producción+Fase debe estar en la misma versión de AEM.
 
-Consulte el documento [Actualizaciones de la versión de AEM](/help/implementing/deploying/aem-version-updates.md) para obtener más información.
+Consulte [AEM Actualizaciones de versión de](/help/implementing/deploying/aem-version-updates.md) para obtener más información.
 
-Consulte el documento [Actualizar el entorno](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) para aprender a actualizar un entorno.
+Consulte [Actualizando entorno](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) para aprender a actualizar un entorno.
 
 ### Hibernación y eliminación {#hibernation}
 
 Los entornos de un programa de zona protegida hibernan automáticamente tras ocho horas de inactividad. Los entornos de zona protegida se eliminan después de seis meses continuos de hibernación.
 
-Consulte [Entornos de zona protegida en hibernación y dehibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obtener más información sobre cómo anular la hibernación de entornos y eliminar automáticamente zonas protegidas.
+Consulte [Entornos de zona protegida en hibernación y dehibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obtener más información sobre cómo anular la hibernación de entornos y eliminar automáticamente la zona protegida.
 
 ### Sin asistencia técnica {#no-support}
 

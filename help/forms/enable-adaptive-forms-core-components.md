@@ -6,17 +6,17 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 7%
+source-wordcount: '1016'
+ht-degree: 11%
 
 ---
 
 
 # Habilitar los componentes principales de Forms adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
-Al habilitar los componentes principales de Forms adaptable en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer componentes principales basados en Forms adaptable y Forms sin encabezado mediante las instancias de Cloud Service de AEM Forms en varios canales. Se necesita un entorno habilitado para los componentes principales de Forms adaptable para utilizar Forms adaptable sin encabezado.
+Al habilitar los componentes principales de Formularios adaptables en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer componentes principales basados en Formularios adaptables y Formularios sin encabezado mediante las instancias de Cloud Service de AEM Forms en varios canales. Se necesita un entorno habilitado para los componentes principales de Forms adaptable para utilizar Forms adaptable sin encabezado.
 
 ## Consideraciones
 
@@ -24,7 +24,7 @@ Al habilitar los componentes principales de Forms adaptable en AEM Forms as a Cl
 
 * Si tiene un programa as a Cloud Service de Forms anterior en el que los componentes principales estén [sin activar](#enable-components), puede [Añadir dependencias de componentes principales de Forms adaptable](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) AEM a su repositorio as a Cloud Service de la e implemente el repositorio en los entornos de su Cloud Service para habilitar Forms adaptable sin encabezado.
 
-* Si el entorno de Cloud Service existente proporciona la opción de [crear Forms adaptable basado en componentes principales](creating-adaptive-form-core-components.md), los componentes principales de Forms adaptable y Forms adaptable sin encabezado ya están habilitados para su entorno y puede ofrecer Forms adaptable basado en componentes principales como formularios sin encabezado para canales como móvil, web, aplicaciones nativas y servicios que requieren una representación sin encabezado de Forms adaptable.
+* Si el entorno de Cloud Service existente proporciona la opción de [crear Forms adaptable basado en componentes principales](creating-adaptive-form-core-components.md), los componentes principales de Forms adaptable y Forms adaptable sin encabezado ya están habilitados para su entorno y puede servir Forms adaptable basado en componentes principales como formularios sin encabezado para canales como móvil, web, aplicaciones nativas y servicios que requieren una representación sin encabezado de Forms adaptable.
 
 
 ## Habilitar los componentes principales de Forms adaptables y Forms adaptable sin encabezado {#enable-headless-forms}
@@ -193,8 +193,7 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los component
    >
    >  Para encontrar su `${appId}`, en el `[AEM Repository Folder]/all/pom.xml` , busque el archivo `-packages/application/install` término. El texto antes de `-packages/application/install` el término es su `${appId}`. Por ejemplo, el siguiente código, `myheadlessform` es `${appId}`.
    >
-   >   
-   ```
+   >   ```
    >             <embedded>
    >                     <groupId>com.myheadlessform</groupId>
    >                     <artifactId>myheadlessform.ui.apps<artifactId>

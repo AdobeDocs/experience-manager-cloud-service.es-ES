@@ -2,7 +2,7 @@
 title: Referencia de la API de JavaScript de ContextHub
 description: La API de JavaScript de ContextHub está disponible para los scripts cuando se agrega el componente ContextHub a la página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 3%
@@ -89,7 +89,7 @@ var geoloc = allStores.geolocation
 
 #### getStore(nombre) {#getstore-name}
 
-Recupera un almacén como un objeto Javascript.
+Recupera un almacén como un objeto JavaScript.
 
 ##### Parámetros {#parameters-}
 
@@ -369,7 +369,7 @@ A `boolean` valor:
 
 Un almacén que contiene datos JSON. Los datos se recuperan de un servicio JSONP externo o, opcionalmente, de un servicio que devuelve datos JSON. Especifique los detalles del servicio mediante la variable [`init`](#init-name-config) cuando se crea una instancia de esta clase.
 
-El almacén utiliza persistencia en memoria (variable Javascript). Los datos de almacenamiento solo están disponibles durante la duración de la página.
+El almacén utiliza persistencia en memoria (variable JavaScript). Los datos de almacenamiento solo están disponibles durante la duración de la página.
 
 ContextHub.Store.JSONPStore extiende [ContextHub.Store.Core](#contexthub-store-core) y hereda las funciones de esa clase.
 
@@ -441,7 +441,7 @@ inicializa el `ContextHub.Store.JSONPStore` objeto.
 * **`config`:** (Objeto) Un objeto que contiene la propiedad de servicio. El objeto JSONPStore utiliza las propiedades del `service` para construir la URL del servicio JSONP:
    * `eventDeferring`: 32.
    * `eventing`: el objeto ContextHub.Utils.Eventing de este almacén. El valor predeterminado es `ContextHub.eventing` objeto.
-   * `persistence`: el objeto ContextHub.Utils.Persistence para este almacén. De forma predeterminada, se utiliza la persistencia de la memoria (objeto Javascript).
+   * `persistence`: el objeto ContextHub.Utils.Persistence para este almacén. De forma predeterminada, se utiliza la persistencia de la memoria (objeto JavaScript).
    * `service`: (Objeto)
       * `host`: (Cadena) El nombre del servidor o la dirección IP.
       * `jsonp`: (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Si es true, la variable `{callback: "ContextHub.Callbacks.*Object.name*}`se agrega el objeto a `service.params`.
@@ -489,7 +489,7 @@ Resuelve el parámetro dado.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` extiende [ContextHub.Store.Core](#contexthub-store-core) por lo tanto, hereda todas las funciones de esa clase. Los datos de este almacén se conservan utilizando la persistencia en memoria (objeto Javascript).
+`ContextHub.Store.SessionStore` extiende [ContextHub.Store.Core](#contexthub-store-core) por lo tanto, hereda todas las funciones de esa clase. Los datos de este almacén se conservan utilizando la persistencia en memoria (objeto JavaScript).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -795,7 +795,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Serializa valores y objetos Javascript en valores de cadena en formato JSON.
+Serializa valores y objetos JavaScript en valores de cadena en formato JSON.
 
 ##### Parámetros {#parameters-stringify}
 
@@ -869,7 +869,7 @@ El valor que corresponde a la clave. Cuando la clave tiene claves secundarias, e
 
 ##### Ejemplos {#example-getitem-2}
 
-Considere el siguiente objeto Javascript:
+Considere el siguiente objeto JavaScript:
 
 ```javascript
 myObject {

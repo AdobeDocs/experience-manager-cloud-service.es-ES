@@ -2,10 +2,10 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2153'
-ht-degree: 60%
+ht-degree: 58%
 
 ---
 
@@ -85,7 +85,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
   Desde la barra de herramientas superior del explorador de **componentes**, puede realizar las siguientes acciones:
 
    * Filtrar componentes por su nombre.
-   * Restringir la visualización a un grupo específico mediante la selección desplegable.
+   * Limite la visualización a un grupo específico mediante la selección desplegable.
 
   Para obtener una descripción más detallada del componente, puede hacer clic o pulsar el icono de información situado junto al componente en el navegador de **componentes** (si está disponible). Por ejemplo, para el **fragmento de contenido**:
 
@@ -152,7 +152,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
 >[!NOTE]
 >
->Se detectará un dispositivo móvil cuando la anchura sea menor a 1024 píxeles; es decir, también cuando la ventana de escritorio sea pequeña.
+>Se detectará un dispositivo móvil cuando la anchura sea inferior a 1024 píxeles; es decir, también en una ventana de escritorio pequeña.
 
 Si necesita realizar rápidamente un cambio en un recurso, puede iniciar el [editor de recursos](/help/assets/manage-digital-assets.md) directamente desde el explorador de recursos haciendo clic en el icono de edición que se muestra al lado del nombre del recurso.
 

@@ -2,7 +2,7 @@
 title: Uso de los adaptadores de Sling
 description: Sling ofrece un patrón de adaptador para traducir convenientemente los objetos que implementan la interfaz adaptable
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 [Sling](https://sling.apache.org) ofrece un [Patrón de adaptador](https://sling.apache.org/documentation/the-sling-engine/adapters.html) para traducir convenientemente los objetos que implementan el [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) interfaz. Esta interfaz proporciona un [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) método que traduce el objeto al tipo de clase que se pasa como argumento.
 
-Por ejemplo, para traducir un objeto Resource al objeto Node correspondiente, puede hacer lo siguiente:
+Por ejemplo, para traducir un objeto Resource al objeto Node correspondiente, simplemente puede hacer lo siguiente:
 
 ```java
 Node node = resource.adaptTo(Node.class);

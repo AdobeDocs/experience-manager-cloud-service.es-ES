@@ -2,10 +2,10 @@
 title: 'Trabajar con fragmentos de contenido (Recursos: fragmentos de contenido)'
 description: Descubra cómo los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas, lo que resulta ideal para la creación de páginas y la entrega sin encabezado.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2132'
-ht-degree: 91%
+source-wordcount: '2134'
+ht-degree: 89%
 
 ---
 
@@ -84,7 +84,7 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en u
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 >
->Para obtener más información, consulte también [Explicación de los fragmentos de contenido y de experiencias en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments?lang=es).
+>Para obtener más información, consulte también [AEM Explicación de los fragmentos de contenido y de experiencias en la creación de](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments?lang=es).
 
 ## Fragmentos de contenido y servicios de contenido {#content-fragments-and-content-services}
 
@@ -142,7 +142,7 @@ Los fragmentos de contenido son una estructura de contenido que:
 * Puede [contener imágenes o estar conectada a ellas](#fragments-with-visual-assets).
 * Puede usar [contenido intermedio](#in-between-content-when-page-authoring-with-content-fragments) cuando está referenciada en una página.
 
-* Es independiente del mecanismo de entrega (es decir, página, canal).
+* Son independientes del mecanismo de envío (es decir, página, canal).
 
 ### Fragmentos con recursos visuales {#fragments-with-visual-assets}
 
@@ -289,7 +289,7 @@ Para utilizar los fragmentos de contenido para la creación de páginas, tambié
 
    * Instrumental para entregar el fragmento en formato HTML o JSON.
    * Requerido para [hacer referencia al fragmento en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Responsable del diseño y entrega de un fragmento; es decir, de los canales.
+   * Responsable del diseño y la entrega de un fragmento; es decir, de los canales.
    * Los fragmentos necesitan uno o más componentes dedicados para definir el diseño y proporcionar algunos o todos los elementos/variaciones y el contenido asociado.
    * Al arrastrar un fragmento a una página en la creación, se asociará automáticamente el componente requerido.
 

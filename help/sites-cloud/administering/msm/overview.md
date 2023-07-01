@@ -4,9 +4,9 @@ description: Obtenga una introducción para reutilizar contenido con las potente
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2706'
 ht-degree: 95%
 
 ---

@@ -4,7 +4,7 @@ description: Obtenga información acerca de las potentes opciones de sincronizac
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 89%
@@ -196,7 +196,7 @@ Tenga en cuenta que las páginas secundarias de la página de modelo heredan la 
 1. Utilice la consola **Sitios** para seleccionar la página de modelo.
 1. En la barra de herramientas, seleccione **Propiedades**.
 1. Abra la pestaña **Modelo**.
-1. Seleccione una o más **opciones de configuración de lanzamiento** con el selector desplegable.
+1. Seleccione una o varias **Configuraciones de despliegue** uso del selector desplegable.
 1. Para almacenar las actualizaciones, seleccione **Guardar**.
 
 ### Opciones de la configuración de lanzamiento predeterminada del sistema {#setting-the-system-default-rollout-configuration}

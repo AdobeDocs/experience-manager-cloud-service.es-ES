@@ -2,10 +2,10 @@
 title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar contenido de forma eficaz para una versión futura. Permiten realizar cambios listos para su publicación futura, sin perder las páginas actuales
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 44%
+ht-degree: 40%
 
 ---
 
@@ -67,7 +67,7 @@ Los lanzamientos le permiten lo siguiente:
       * Si la variable **Producción lista** Si se establece el indicador, el lanzamiento se promociona automáticamente a las páginas de producción del especificado **Launch**(**Activo**) **fecha**. Después de la promoción, las páginas de producción se publican automáticamente.\
         Si no se ha establecido ninguna fecha, el indicador no tiene ningún efecto.
 * Actualice las páginas de origen y de lanzamiento en paralelo:
-   * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy). 
+   * Los cambios en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy).
    * Los cambios en la copia de lanzamiento se pueden realizar sin interrumpir las actualizaciones automáticas o las páginas de origen. 
 
   ![Acciones en paralelo](/help/sites-cloud/authoring/assets/launches-parallel.png)
@@ -86,7 +86,7 @@ Los lanzamientos le permiten lo siguiente:
 >
 >La creación y edición de lanzamientos requieren derechos de acceso a `/content/launches`, como con el grupo predeterminado `content-authors`.
 >
->Si experimenta algún problema, póngase en contacto con el administrador del sistema. 
+>Póngase en contacto con el administrador del sistema si tiene algún problema.
 
 ## Lanzamientos en referencias (consola Sitios) {#launches-in-references-sites-console}
 

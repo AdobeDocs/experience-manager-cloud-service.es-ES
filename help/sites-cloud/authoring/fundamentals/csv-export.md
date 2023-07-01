@@ -2,10 +2,10 @@
 title: Exportar a CSV
 description: Exportar información sobre sus páginas a un archivo CSV en su sistema local
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 90%
+source-wordcount: '198'
+ht-degree: 85%
 
 ---
 
@@ -48,9 +48,9 @@ Para crear una exportación de CSV:
 
 1. Abra la consola **Sitios** y vaya hasta la ubicación deseada.
    * La opción **Crear informe de CSV** está disponible al explorar la consola **Sitios** (en la vista de lista).
-   * Es una opción del menú desplegable **Crear**:
+   * Es una opción del **Crear** menú desplegable:
 
-      ![Opción Crear CSV](/help/sites-cloud/authoring/assets/csv-create.png)
+     ![Opción Crear CSV](/help/sites-cloud/authoring/assets/csv-create.png)
 
 1. Para abrir el asistente, en la barra de herramientas seleccione **Crear** y, a continuación, **Informe de CSV**:
 

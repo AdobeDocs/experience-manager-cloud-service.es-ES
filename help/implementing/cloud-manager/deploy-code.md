@@ -2,10 +2,10 @@
 title: Implementar el código
 description: Obtenga información sobre cómo implementar su código mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 94%
+source-wordcount: '1189'
+ht-degree: 89%
 
 ---
 
@@ -57,9 +57,9 @@ La fase **Implementación de fase** fase consiste en estos pasos.
 
 * **Validación**: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente. por ejemplo, probar que la rama configurada existe y que los entornos están disponibles.
 * **Prueba de generación y unidad**: Este paso ejecuta un proceso de generación en contenedores.
-   * Consulte el documento [Generar detalles del entorno](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener más información sobre el entorno de generación.
+   * Consulte [Generar detalles del entorno](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener más información sobre el entorno de compilación.
 * **Escanear código**: Este paso evalúa la calidad del código de la aplicación.
-   * Consulte el documento [Probar la calidad del código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
+   * Consulte [Prueba de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
 * **Crear imágenes**: Este proceso es responsable de transformar el contenido y los paquetes de Dispatcher producidos por el paso de generación en imágenes Docker y configuraciones de Kubernetes.
 * **Implementar en fase**: La imagen se implementa en el entorno de ensayo como preparación para la [Fase de prueba.](#stage-testing)
 
@@ -70,20 +70,20 @@ La fase **Implementación de fase** fase consiste en estos pasos.
 La fase de **prueba** incluye los siguientes pasos.
 
 * **Prueba funcional del producto**: la canalización de Cloud Manager ejecuta pruebas que se ejecutan en el entorno de ensayo.
-   * Consulte el documento [Prueba funcional del producto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) para obtener más información.
+   * Consulte [Prueba funcional del producto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) para obtener más información.
 
 * **Pruebas funcionales personalizadas**: Este paso en la canalización siempre se ejecuta y no se puede omitir. Si la generación no produce JAR de prueba, la prueba se aprueba de forma predeterminada.
-   * Consulte el documento [Pruebas funcionales personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obtener más información.
+   * Consulte [Pruebas funcionales personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obtener más información.
 
 * **Pruebas de IU personalizadas**: Este paso es una característica opcional que ejecuta automáticamente las pruebas de IU creadas para aplicaciones personalizadas.
    * Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Java y Maven, Node y WebDriver.io, o cualquier otro marco de trabajo y tecnología creados en Selenium).
-   * Consulte el documento [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obtener más información.
+   * Consulte [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obtener más información.
 
 * **Auditoría de experiencias**: Este paso en la canalización siempre se ejecuta y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencias después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones.
    * Las páginas configuradas se envían al servicio y se evalúan.
    * Los resultados son informativos y muestran las puntuaciones y el cambio entre la puntuación actual y la anterior.
    * Esta perspectiva es valiosa para determinar si hay una regresión que se introduce con la implementación actual.
-   * Consulte el documento [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
+   * Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
 
 ![Fase de prueba](assets/stage-testing.png)
 
@@ -120,7 +120,7 @@ Los siguientes pasos agotarán el tiempo de espera si se deja a la espera de los
 
 ## Proceso de implementación {#deployment-process}
 
-Todas las implementaciones de Cloud Service siguen un proceso gradual para garantizar que no haya tiempo de espera. Consulte el documento [Funcionamiento de las implementaciones móviles](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para obtener más información.
+Todas las implementaciones de Cloud Service siguen un proceso gradual para garantizar que no haya tiempo de espera. Consulte [Funcionamiento de las implementaciones móviles](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para obtener más información.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Para identificar si una ejecución se ha vuelto a ejecutar, se puede examinar el
 
 Para activar una ejecución nueva, se debe realizar una petición PUT al vínculo HAL &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> en el estado del paso de implementación de producción. Si este vínculo está presente, la ejecución se puede reiniciar desde ese paso. Si está ausente, la ejecución no se puede reiniciar desde ese paso. En la versión inicial, este vínculo solo estará presente en el paso de implementación de producción, pero las versiones futuras pueden admitir el inicio de la canalización desde otros pasos. Ejemplo:
 
-```Javascript
+```JavaScript
  {
   "_links": {
     "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {

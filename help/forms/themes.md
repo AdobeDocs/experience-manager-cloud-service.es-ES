@@ -2,10 +2,10 @@
 title: Crear y utilizar temas para diseñar un formulario adaptable
 description: Puede utilizar temáticas para estilizar y proporcionar una identidad visual a un formulario adaptable. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '5499'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ Temáticas creadas en una instancia de Cloud Service:
 
 * Antes de cargar una temática creada en [!DNL Experience Manager Forms] 6.5 o versiones anteriores de una instancia de Cloud Service, asegúrese de que la ubicación de la biblioteca de cliente está configurada en `etc/clientlibs/fd/themes`. Si la biblioteca de cliente no existe en la carpeta `etc`, actualice manualmente la ubicación a `etc/clientlibs/fd/themes`. Puede realizar el cambio en [!DNL Experience Manager Forms] 6.5 o versiones anteriores. Después de establecer la ubicación de la biblioteca del cliente, un administrador puede cargar las temáticas en la instancia de Cloud Service o utilizar la herramienta de transferencia de contenido para migrar las temáticas de la versión 6.5 o anteriores a la instancia de Cloud Service.
 
-   Además, cambie el nombre de la categoría. Si no se cambia el nombre, podría producirse un error `theme with same category name exists`. Cambiar el nombre de la categoría no afecta al formulario adaptable que utiliza la temática.
+  Además, cambie el nombre de la categoría. Si no se cambia el nombre, podría producirse un error `theme with same category name exists`. Cambiar el nombre de la categoría no afecta al formulario adaptable que utiliza la temática.
 
 ### Descargar una temática {#downloading-a-theme}
 
@@ -205,25 +205,26 @@ El editor de temáticas se divide en dos paneles:
 
    * **Selector:** muestra el componente seleccionado para el estilo y sus propiedades que puede aplicar. El selector representa todos los componentes de un tipo. Si selecciona un componente de cuadro de texto en una temática para el estilo, todos los cuadros de texto del formulario <!-- or interactive communication --> heredan dicho estilo. Los selectores permiten seleccionar un componente genérico o un componente específico para el estilo. Por ejemplo, un componente de campo es un componente genérico y un cuadro de texto es un componente específico.
 
-      **Estilo del componente genérico:**
+     **Estilo del componente genérico:**
 un campo puede ser un campo de cuadro numérico, como la edad, o un campo de cuadro de texto, como la dirección. 
 Al aplicar estilo a un campo, se aplica a todos los campos, como edad, nombre y dirección.
 
-      **Estilo de un componente específico**: un componente específico afecta a los objetos de la categoría específica. Cuando aplique estilo al componente de cuadro numérico en la temática, solo el objeto de cuadro numérico heredará el estilo.
+     **Estilo de un componente específico**: un componente específico afecta a los objetos de la categoría específica. Cuando aplique estilo al componente de cuadro numérico en la temática, solo el objeto de cuadro numérico heredará el estilo.
 
-      Por ejemplo, un campo de cuadro de texto como una dirección que es más larga y un campo de cuadro numérico como la edad es más corto. Puede seleccionar un campo de cuadro numérico, reducir su longitud y aplicarlo al formulario. La anchura de todos los campos numéricos de cuadro se reduce en el formulario.
+     Por ejemplo, un campo de cuadro de texto como una dirección que es más larga y un campo de cuadro numérico como la edad es más corto. Puede seleccionar un campo de cuadro numérico, reducir su longitud y aplicarlo al formulario. La anchura de todos los campos numéricos de cuadro se reduce en el formulario.
 
-      Al personalizar todos los componentes de campo con un color de fondo específico, todos los campos, como edad, nombre y dirección, heredan el color de fondo. Al seleccionar un cuadro numérico, como la edad, y reducir su anchura, se reduce la anchura de todos los cuadros numéricos, como la edad o el número de personas de una familia. La anchura de los cuadros de texto no cambia.
+     Al personalizar todos los componentes de campo con un color de fondo específico, todos los campos, como edad, nombre y dirección, heredan el color de fondo. Al seleccionar un cuadro numérico, como la edad, y reducir su anchura, se reduce la anchura de todos los cuadros numéricos, como la edad o el número de personas de una familia. La anchura de los cuadros de texto no cambia.
 
    * **Estado:** permite personalizar estilos de un objeto en un estado específico. Por ejemplo, se puede especificar la apariencia de un objeto cuando está en estado predeterminado, de enfoque, desactivado, de desplazamiento o de error.
-   * **Categorías de las propiedades:** las propiedades de estilo se dividen en varias categorías. Por ejemplo, Dimensión y posición, Texto, Fondo, Borde y Efectos. En cada categoría, se proporciona información sobre el estilo. Por ejemplo, en Fondo, puede proporcionar Color de fondo e Imagen y degradado.
+   * **Categorías de las propiedades:** las propiedades de estilo se dividen en varias categorías. Por ejemplo, Dimension y posición, Texto, Fondo, Borde y Efectos. En cada categoría, se proporciona información sobre el estilo. Por ejemplo, en Fondo, puede proporcionar Color de fondo e Imagen y degradado.
 
    * **Avanzado:** permite agregar CSS personalizado a un objeto, que anula las propiedades que los controles visuales definen si hay una superposición.
 
    * **Ver CSS**: permite ver el CSS del componente seleccionado.
-   Además, en la barra lateral, en la parte inferior hay una flecha. Al hacer clic en la flecha, aparecen dos opciones más: **Simular éxito** y **Simular error.** Estas opciones, junto con las opciones descritas anteriormente, se examinan en detalle [a continuación](themes.md#using-rail).
 
-[ ![Editor de temáticas](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Lienzo
+  Además, en la barra lateral, en la parte inferior hay una flecha. Al hacer clic en la flecha, aparecen dos opciones más: **Simular éxito** y **Simular error.** Estas opciones, junto con las opciones descritas anteriormente, se examinan en detalle [a continuación](themes.md#using-rail).
+
+[![Editor de temáticas](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Lienzo
 
 ### Estilo de componentes {#styling-components}
 
@@ -622,7 +623,7 @@ Puede ver el CSS generado mediante las siguientes opciones:
 
 * **Evitar recursos de otra temática**
 
-   Al editar una temática, puede examinar y agregar recursos (como imágenes) de otras temáticas. Por ejemplo, quiere editar el fondo de una página. Al seleccionar **[!UICONTROL Página]** ![edit-button](assets/edit-button.png) > **[!UICONTROL Fondo]** > **[!UICONTROL Agregar]** > **[!UICONTROL Imagen]**, verá un cuadro de diálogo que le permite examinar y agregar imágenes en otras temáticas.
+  Al editar una temática, puede examinar y agregar recursos (como imágenes) de otras temáticas. Por ejemplo, quiere editar el fondo de una página. Al seleccionar **[!UICONTROL Página]** ![edit-button](assets/edit-button.png) > **[!UICONTROL Fondo]** > **[!UICONTROL Agregar]** > **[!UICONTROL Imagen]**, verá un cuadro de diálogo que le permite examinar y agregar imágenes en otras temáticas.
 
 * Puede tener problemas con la temática actual si se agrega un recurso desde otra y esta se mueve o se elimina. Se recomienda evitar explorar y agregar recursos de otras temáticas.
 
@@ -656,9 +657,9 @@ Puede ver el CSS generado mediante las siguientes opciones:
 
 * **Cambio de la anchura de diseño del panel contenedor**
 
-   No se recomienda cambiar la anchura del diseño del panel contenedor. Cuando se especifica la anchura de un panel contenedor, este se vuelve estático y no se adapta a distintas pantallas.
+  No se recomienda cambiar la anchura del diseño del panel contenedor. Cuando se especifica la anchura de un panel contenedor, este se vuelve estático y no se adapta a distintas pantallas.
 
 * **Utilización del editor de formularios o del editor de temáticas para trabajar con encabezado y pie de página**
 
-   Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
+  Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
 Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.

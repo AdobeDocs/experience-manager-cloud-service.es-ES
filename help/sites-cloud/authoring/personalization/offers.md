@@ -2,10 +2,10 @@
 title: Creación y administración de ofertas (consola Ofertas)
 description: Utilice la consola Ofertas para crear ofertas que se pueden usar en las experiencias de actividad
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 48%
+source-wordcount: '1391'
+ht-degree: 47%
 
 ---
 
@@ -33,7 +33,7 @@ Se han implementado una opción **Convertir en variación de Fragmento de experi
 
 >[!NOTE]
 >
->Este es el flujo de trabajo recomendado para convertir ofertas heredadas en Fragmentos de experiencia.
+>Este es el flujo de trabajo recomendado para convertir ofertas heredadas en fragmentos de experiencia.
 
 >[!NOTE]
 >

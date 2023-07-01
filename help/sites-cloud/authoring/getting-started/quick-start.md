@@ -2,10 +2,10 @@
 title: Guía rápida de introducción para la creación de páginas
 description: Guía rápida y de alto nivel para empezar a crear contenido de página.
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 62%
+source-wordcount: '1569'
+ht-degree: 60%
 
 ---
 
@@ -57,7 +57,7 @@ Antes de comenzar la guía de inicio rápido, aquí hay una pequeña colección 
 
 Existen varios aspectos para encontrar una página; puede navegar o buscar:
 
-1. Abra la consola **Sitios** (con la opción **Sitios** de [Navegación global](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation): esto se activa (menú desplegable) al seleccionar el vínculo de Adobe Experience Manager (parte superior izquierda).
+1. Abra el **Sites** consola (con la variable **Sites** en la opción [Navegación global](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - esto se activa (menú desplegable) al seleccionar el vínculo de Adobe Experience Manager (parte superior izquierda).
 
 1. Desplácese por el árbol y toque o haga clic en la página adecuada. La manera en la que se presentan los recursos de la página depende de la vista que utilice: [Tarjeta, Lista o Columnas](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
@@ -270,7 +270,7 @@ Todas estas acciones se pueden activar mediante:
 [Bloquear una página](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) impide que otros autores trabajen en ella al mismo tiempo que usted. El icono/botón Bloquear (y Desbloquear) se encuentra en:
 
 * La barra de herramientas cuando su [página se haya seleccionado](#selecting-your-page-for-further-action).
-* Menú desplegable [Información de la página](#editing-the-page-properties) cuando edita la página.
+* El [Menú desplegable Información de la página](#editing-the-page-properties) al editar una página.
 * Barra de herramientas de la página cuando edita la página (cuando está bloqueada).
 
 Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
