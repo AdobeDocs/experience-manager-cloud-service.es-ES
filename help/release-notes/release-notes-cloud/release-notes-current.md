@@ -3,9 +3,9 @@ title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a C
 description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5a37f237d04d19f3c4113c2ea3e37ab447bf3b0c
+source-git-commit: da5634dfa812268b81b2db783da772b6ecc1d7ce
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1365'
 ht-degree: 16%
 
 ---
@@ -115,8 +115,8 @@ La vista de recursos ahora le permite [adición de texto de varios valores y com
 
 * [Forms AEM adaptable dentro del editor de páginas y el fragmento de experiencia de la](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)AEM : ahora puede utilizar el Editor de páginas de y el Fragmento de experiencia para crear y agregar rápidamente varios formularios a las páginas de AEM Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante la potencia de los componentes de Forms adaptables, que incluyen comportamiento dinámico, validaciones, integración de datos, generación de documentos de registro y automatización de procesos empresariales.
 
-      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&amp;learn=on)
-  
+  >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+
 * [Uso de Adobe Acrobat Sign Solutions para Administración Pública (Queja de HIPPA) con AEM Forms](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign Solutions para Administración Pública. Esta integración proporciona un nivel avanzado de cumplimiento y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con el gobierno (departamentos y agencias gubernamentales).
 
   La integración con Adobe Acrobat Sign Solutions para Administración Pública permite a los socios de Adobe y a los clientes gubernamentales utilizar firmas electrónicas en Forms adaptable para algunas de las líneas de negocio más importantes y sensibles. Este nivel adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con la normativa FedRAMP Moderate, lo que proporciona tranquilidad a los clientes gubernamentales de Adobe.
