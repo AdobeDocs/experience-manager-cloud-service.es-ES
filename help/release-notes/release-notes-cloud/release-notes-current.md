@@ -3,9 +3,9 @@ title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a C
 description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
+source-git-commit: 5a37f237d04d19f3c4113c2ea3e37ab447bf3b0c
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1372'
 ht-degree: 16%
 
 ---
@@ -113,15 +113,11 @@ La vista de recursos ahora le permite [adición de texto de varios valores y com
 
 ### Nuevas funciones disponibles en [!DNL Forms] {#new-features-available-in-channel}
 
-* [Forms AEM adaptable en el editor de páginas de la](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)AEM : ahora puede utilizar el Editor de páginas de para crear y agregar rápidamente varios formularios a las páginas de Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización de los procesos empresariales. Puede hacer lo siguiente:
+* [Forms AEM adaptable dentro del editor de páginas y el fragmento de experiencia de la](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)AEM : ahora puede utilizar el Editor de páginas de y el Fragmento de experiencia para crear y agregar rápidamente varios formularios a las páginas de AEM Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante la potencia de los componentes de Forms adaptables, que incluyen comportamiento dinámico, validaciones, integración de datos, generación de documentos de registro y automatización de procesos empresariales.
 
-   * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente Contenedor de Forms adaptable en el editor de AEM Sites o en los fragmentos de experiencias.
-   * Utilice el asistente de Forms adaptable dentro del editor de AEM Sites para poder crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios en varias páginas.
-   * Agregue varios formularios a una página de Sites, lo que optimizará la experiencia del usuario y proporcionará la buena flexibilidad.
-
-     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
-
-* [Adobe Acrobat Sign Solutions para Administración Pública](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign Solutions para Administración Pública. Esta integración proporciona un nivel avanzado de cumplimiento y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con el gobierno (departamentos y agencias gubernamentales).
+      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&amp;learn=on)
+  
+* [Uso de Adobe Acrobat Sign Solutions para Administración Pública (Queja de HIPPA) con AEM Forms](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign Solutions para Administración Pública. Esta integración proporciona un nivel avanzado de cumplimiento y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con el gobierno (departamentos y agencias gubernamentales).
 
   La integración con Adobe Acrobat Sign Solutions para Administración Pública permite a los socios de Adobe y a los clientes gubernamentales utilizar firmas electrónicas en Forms adaptable para algunas de las líneas de negocio más importantes y sensibles. Este nivel adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con la normativa FedRAMP Moderate, lo que proporciona tranquilidad a los clientes gubernamentales de Adobe.
 
@@ -129,15 +125,15 @@ La vista de recursos ahora le permite [adición de texto de varios valores y com
 
   Esta funcionalidad ayuda a mejorar su capacidad general de gestión de errores mediante la introducción de respuestas de error basadas en estándares compatibles con los controladores de error OOTB, con buena flexibilidad y control.
 
-* [Métodos de autenticación mejorados para el modelo de datos de formulario](/help/forms/configure-data-sources.md): Disfrute de una mayor seguridad con la introducción de la autenticación basada en credenciales de cliente para conectar AEM Forms con fuentes de datos compatibles. Esta mejora elimina la necesidad de suplantación o inicio de sesión del usuario, lo que refuerza la protección de los datos.
+* [Métodos de autenticación mejorados para el modelo de datos de formulario](/help/forms/configure-data-sources.md): Disfrute de una mayor seguridad con la introducción de la autenticación basada en credenciales de cliente para conectar AEM Forms (modelos de datos de formulario) con fuentes de datos compatibles. Esta mejora elimina la necesidad de suplantación o inicio de sesión del usuario, lo que refuerza la protección de los datos.
 
-* [Forms adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md): Ahora puede hacer que [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), y [Fichas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componentes en un formulario adaptable basado en componentes principales para crear secciones repetibles.
+* [Crear Forms adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md): Ahora puede hacer que [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), y [Fichas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componentes en un formulario adaptable basado en componentes principales para crear secciones repetibles.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   Estas secciones repetibles le permiten proporcionar un número ilimitado de entradas sin un recuento de campos fijo. Resulta útil cuando se desconocen de antemano las instancias de datos requeridas. Los usuarios de Forms pueden agregar o quitar secciones fácilmente, lo que permite que los formularios se adapten a diferentes escenarios de entrada de datos y simplifica la recopilación de varias ocurrencias de los mismos datos.
 
-* **[Enviar Forms adaptable a Microsoft® SharePoint y Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: mejore la agilidad del usuario empresarial para que pueda iniciar nuevos formularios rápidamente y almacenar los datos enviados en las herramientas diarias que utilizan, como el sitio de Microsoft® SharePoint o la carpeta de OneDrive.
+* **[Enviar Forms adaptable a Microsoft® SharePoint y Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: ahora puede enviar datos de Forms adaptables a herramientas diarias como Microsoft® SharePoint Site o Microsoft® OneDrive.
 
 ### Formularios adaptables sin encabezado, programa para primeros usuarios {#forms-early-adopter}
 
