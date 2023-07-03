@@ -4,10 +4,10 @@ description: Administración de documentos de PDF en [!DNL Adobe Experience Mana
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 3%
+source-wordcount: '853'
+ht-degree: 4%
 
 ---
 
@@ -22,6 +22,7 @@ El visualizador de PDF de Document Cloud beneficia a AEM Assets de las siguiente
 
 > Sugerencia
 > Si no puede obtener una vista previa de varias páginas de un documento de PDF cargado anteriormente, seleccione el PDF y haga clic en **![Reprocesar](/help/assets/assets/Reprocess.svg) Volver a procesar recursos**.
+>
 
 ## Compatibilidad con los componentes del visor del Document Cloud PDF {#pdf-doc-cloud}
 
@@ -55,6 +56,7 @@ También puede solicitar [anotaciones](#pdf-annotations) al documento de PDF en 
 
 > NOTA
 > El tamaño máximo de un recurso que puede previsualizar es de hasta 100 MB.
+>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -110,6 +112,10 @@ A continuación, se muestran las anotaciones que se pueden aplicar en un documen
         </tr>
     </table>
 
+>[!NOTE]
+>
+>Las anotaciones que agregue al documento del PDF están disponibles en el modo de vista previa. Sin embargo, las anotaciones no se muestran al descargar o imprimir el documento de PDF.
+
 ## Compatibilidad con la vista previa de varias páginas para documentos en otros formatos {#multi-format}
 
 Además de los documentos del PDF, también puede obtener una vista previa de varias páginas para documentos en otros tipos de formato. Los tipos de formato de documento admitidos son TXT, RTF, DOC, DOCX, PPT, PPTX, XLS y XLSX. Experience Manager Assets convierte automáticamente estos formatos de documento en un formato de PDF y los pone a disposición de la vista previa.
@@ -127,15 +133,14 @@ Para la vista previa de varias páginas de otros formatos de documento admitidos
 > * El tamaño máximo de los archivos XLS o XLSX que se van a previsualizar es de 20 MB.
 >
 
-
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
