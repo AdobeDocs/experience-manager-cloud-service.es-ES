@@ -3,32 +3,32 @@ title: Cómo añadir un formulario adaptable a la página de AEM Sites
 description: Descubra cómo crear o agregar fácilmente un formulario adaptable a su página de AEM Sites. Conozca las técnicas paso a paso y las prácticas recomendadas para integrar formularios en su sitio web y optimizar sus experiencias digitales para lograr el máximo impacto.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bbb01d049083d0aef09bc2365235a7930fb53070
 workflow-type: tm+mt
-source-wordcount: '3245'
+source-wordcount: '3264'
 ht-degree: 2%
 
 ---
 
 
-# Creación de un formulario adaptable en una página de AEM Sites AEM o en un fragmento de experiencia de {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# Crear un formulario adaptable en una página de AEM Sites o un fragmento de experiencia {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | Este artículo |
 
-Con AEM Forms, puede agregar sin problemas un formulario adaptable a su página de AEM Sites. Esto permite a los visitantes rellenar y enviar formularios cómodamente sin salir de la página en la que se encuentran. Al hacerlo, pueden interactuar fácilmente con otros elementos del sitio web e interactuar activamente con el formulario.
+Con AEM Forms, puede agregar fácilmente un formulario a su página de AEM Sites. Esto permite a los visitantes rellenar y enviar formularios cómodamente sin salir de la página en la que se encuentran. Al hacerlo, pueden interactuar fácilmente con otros elementos del sitio web e interactuar activamente con el formulario.
 
-AEM Puede utilizar el Editor de páginas de para crear y agregar rápidamente varios formularios a las páginas de AEM Sites. AEM El uso del Editor de páginas de datos permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de una página de Sites mediante la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización de procesos empresariales. También le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios.
+AEM Puede utilizar el Editor de páginas de para crear y agregar rápidamente varios formularios a las páginas de AEM Sites. AEM El uso del editor de páginas de permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de una página de Sites mediante la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización de los procesos empresariales. También le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios.
 
-AEM Forms proporciona el contenedor del formulario adaptable y los componentes incrustados de Forms adaptable. Puede utilizar el contenedor de formulario adaptable para crear un nuevo formulario en un fragmento de experiencia o una página de AEM Sites, mientras que el componente Forms adaptable incrustado le permite agregar un formulario adaptable existente o crear un nuevo formulario con el editor de Forms adaptable.
+El Cloud Service de AEM Forms proporciona el contenedor de formulario adaptable y los componentes incrustados de Forms adaptable. Puede utilizar el contenedor de formulario adaptable para crear un nuevo formulario en una página de AEM Sites o un fragmento de experiencia, mientras que el componente Forms adaptable incrustado le permite agregar un formulario adaptable existente o crear un nuevo formulario con el editor de Forms adaptable.
 
 ![Ejemplo de un formulario adaptable en una página de AEM Sites](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-## ¿Por qué crear un formulario adaptable en una página de AEM Sites AEM o en un fragmento de experiencia de?
+## ¿Por qué utilizar los componentes principales de Forms adaptable para crear un formulario adaptable en una página de AEM Sites o un fragmento de experiencia?
 
-AEM El uso del contenedor de formulario adaptable en el editor de páginas de le permite crear experiencias de captura de datos sin problemas dentro de una página de Sites mediante la potencia de los componentes de Forms adaptable, que incluyen comportamiento dinámico, validaciones, integración de datos, generación de documentos de registro y automatización de procesos empresariales. También le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios, lo que mejora la experiencia general de creación y administración de formularios. Vamos a explorar algunas de estas características:
+Si ha creado formularios adaptables basados en Forms Foundation o en HTML simples para sus sitios en el pasado, Adobe recomienda utilizar los componentes principales de Forms adaptables para crear un formulario adaptable en una página de AEM Sites o un fragmento de experiencia. Permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios, lo que mejora la experiencia general de creación y administración de formularios para Forms adaptable. Vamos a explorar algunas de estas características:
 
 * **Versiones:** Oferta de páginas de AEM Sites [sólidas capacidades de versiones](/help/sites-cloud/authoring/features/page-versions.md), lo que le permite realizar un seguimiento y administrar diferentes versiones de los formularios. Esto permite realizar cambios y mejoras en los formularios al tiempo que se mantiene la capacidad de revertir a versiones anteriores si es necesario. El control de versiones garantiza un enfoque controlado y organizado del desarrollo y la evolución de los formularios.
 * **Segmentación (integración con Adobe Target):** Con las funcionalidades de segmentación de páginas de AEM Sites, también puede [personalizar la experiencia del formulario para diferentes audiencias](/help/sites-cloud/integrating/integration-adobe-target-ims.md). Al aprovechar los segmentos de usuario y los criterios de segmentación, puede adaptar el contenido, el diseño o el comportamiento del formulario a grupos específicos de usuarios. Esto le permite proporcionar una experiencia de formulario personalizada y relevante, lo que aumenta las tasas de participación y conversión.
@@ -38,7 +38,7 @@ AEM El uso del contenedor de formulario adaptable en el editor de páginas de le
 * **Etiquetado:** Las páginas de AEM Sites le permiten [asignar etiquetas a una página, a un recurso o a otro contenido](/help/implementing/developing/introduction/tagging-framework.md). Las etiquetas son palabras clave o etiquetas de metadatos que proporcionan una forma de categorizar y organizar el contenido en función de criterios específicos. AEM Puede asignar una o más etiquetas a páginas, recursos o a cualquier otro elemento de contenido dentro de para mejorar la búsqueda y la clasificación de los recursos.
 * **Bloquear y desbloquear contenido:** AEM Sites permite a los usuarios lo siguiente [control de acceso y modificaciones de páginas](/help/sites-cloud/authoring/fundamentals/editing-content.md) dentro del entorno de AEM Sites. Cuando una página está bloqueada, significa que está protegida contra cambios o ediciones no autorizados por parte de otros usuarios. Solo el usuario que ha bloqueado el contenido o un administrador designado pueden desbloquearlo para permitir modificaciones.
 
-Además, Forms AEM adaptable en el editor de páginas de utiliza [Componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Estos componentes principales proporcionan métodos estándar y más sencillos para aplicar estilos y personalizar los componentes, idénticos a los siguientes [Componentes de AEM Sites WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
+Además, Forms AEM adaptable en el editor de páginas de utiliza [Componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#features). Estos componentes principales proporcionan métodos estándar y más sencillos para aplicar estilos y personalizar los componentes, idénticos a los siguientes [Componentes de AEM Sites WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
 
 
 ## ¿Cómo se crea o se agrega un formulario adaptable en una página de AEM Sites AEM o en un fragmento de experiencia de la? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -262,4 +262,9 @@ Al enviar un formulario, puede redirigir al usuario a otra página web o a un me
 * [Crear estilos o temáticas para los formularios](using-themes-in-core-components.md)
 * [Agregar un comportamiento dinámico a los formularios mediante el editor de reglas](rule-editor.md)
 * [Definir la presentación de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+
+## Artículo relacionado {#related-article}
+
+* [Crear un formulario adaptable independiente basado en componentes principales](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=es)
 
