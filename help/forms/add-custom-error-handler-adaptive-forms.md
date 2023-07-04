@@ -7,9 +7,9 @@ keywords: Agregue un controlador de error personalizado, agregue un controlador 
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
+source-git-commit: 11ab8d41b911afc73fe5339d43ca3a0fc80a5f8d
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1926'
 ht-degree: 8%
 
 ---
@@ -59,7 +59,7 @@ El siguiente código ilustra la estructura de respuesta a errores existente:
     ]
     originCode : <target error Code>
     originMessage : <unstructured error message returned by service>
-}
+    }
 ```
 
 
@@ -125,20 +125,20 @@ Algunas de las opciones para mostrar las respuestas de error son las siguientes:
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
 
-      &quot;javascript
-      {
-      &quot;type&quot;: &quot;VALIDATION_ERROR&quot;,
-      &quot;validationErrors&quot;: [
-      {
-      &quot;fieldName&quot;: &quot;guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]&quot;,
-      &quot;dataRef&quot;: &quot;&quot;,
-      &quot;detalles&quot;: [
-      &quot;ID proporcionado no válido. El valor proporcionado no es correcto&quot;.
-      ]
-      }
-      ]}
-      &quot;
-  
+  ```javascript
+          {
+              "type": "VALIDATION_ERROR",
+              "validationErrors": [
+              {
+              "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+              "dataRef": "",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+          ]
+          }
+          ]}
+  ```
+
   Para ver la expresión SOM de cualquier campo en un formulario adaptable, pulse el campo y seleccione **[!UICONTROL Ver expresión SOM]**.
 
   ![Expresión Som de un campo de formulario adaptable para mostrar la respuesta de error en el controlador de error personalizado](/help/forms/assets/custom-error-handler-somexpression.png)
@@ -152,17 +152,17 @@ Algunas de las opciones para mostrar las respuestas de error son las siguientes:
 * **`Response:`**
 
   ```javascript
-  {
-      "type": "VALIDATION_ERROR",
-      "validationErrors": [
       {
-          "fieldName": "",
-          "dataRef": "/Pet/id",
-          "details": [
-          "Invalid ID supplied. Provided value is not correct!"
-          ]
-          }
-  ]}
+          "type": "VALIDATION_ERROR",
+          "validationErrors": [
+          {
+              "fieldName": "",
+              "dataRef": "/Pet/id",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+              ]
+              }
+      ]}
   ```
 
   ![Referencia de datos de un campo de formulario adaptable para mostrar la respuesta de error en el controlador de error personalizado](/help/forms/assets/custom-errorhandler-dataref.png)
@@ -235,21 +235,21 @@ Para crear una función de error personalizada, realice los siguientes pasos:
 1. Añada un archivo JavaScript, por ejemplo `function.js`. El archivo contiene el código del controlador de error personalizado.
 Añadamos el siguiente código al archivo JavaScript para mostrar la respuesta y los encabezados, recibidos del extremo del servicio REST, en la consola del explorador.
 
-       &quot;javascript
+   ```javascript
        /**
-       * Controlador de error personalizado
-       * @name función del controlador de error personalizado customErrorHandler
+       * Custom Error handler
+       * @name customErrorHandler Custom Error Handler Function
        * @errorHandler
        */
-       función customErrorHandler(response, headers)
+       function customErrorHandler(response, headers)
        {
-       console.log(&quot;Inicio del procesamiento del controlador de error personalizado...&quot;);
-       console.log(&quot;response:&quot;+JSON.stringify(response));
-       console.log(&quot;headers:&quot;+JSON.stringify(headers));
-       console.log(&quot;Custom Error Handler processing end...&quot;);
+           console.log("Custom Error Handler processing start...");
+           console.log("response:"+JSON.stringify(response));
+           console.log("headers:"+JSON.stringify(headers));
+           console.log("Custom Error Handler processing end...");
        }
-       &quot;
-   
+   ```
+
    <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
 1. Guarde el `function.js` archivo.
