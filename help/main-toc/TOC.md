@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 823d9875f1cd293df834cc6e2fc16fc8f7e0d37b
+source-git-commit: 0efdb9353ef908cf5a655c989ae7be1107c8f3de
 workflow-type: tm+mt
-source-wordcount: '4160'
+source-wordcount: '4164'
 ht-degree: 97%
 
 ---
@@ -559,6 +559,7 @@ ht-degree: 97%
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
          + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
    + Formularios adaptables {#adaptive-forms-authoring}
+      + [Crear un formulario adaptable](/help/forms/create-an-adaptive-form.md)
       + [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Creación de formularios adaptables: componentes principales {#authoring-adaptive-forms-core-components}
          + Creación de un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
