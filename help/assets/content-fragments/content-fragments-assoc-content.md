@@ -2,10 +2,10 @@
 title: Contenido asociado (recursos - fragmentos de contenido)
 description: AEM Comprender cómo la función de contenido asociada proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 53%
+source-wordcount: '231'
+ht-degree: 52%
 
 ---
 
@@ -38,7 +38,7 @@ Para realizar la asociación, primero debe [agregar los recursos multimedia a un
 
 1. Confirmar (con **Seleccionar**). La colección se enumera como asociada.
 
-   ![cfm-6420-05](assets/cfm-assoc-content-03.png)
+   ![Asociación confirmada](assets/cfm-assoc-content-03.png)
 
 ## Edición de contenido asociado {#editing-associated-content}
 
