@@ -1,17 +1,17 @@
 ---
 title: AEM Migración de un Forms de 6.5 a [!DNL AEM Forms] ¿Entorno as a Cloud Service?
 description: Migración desde un  [!DNL AEM Forms] (entornos On-Premise y AMS) a un entorno de  [!DNL AEM Forms] as a Cloud Service.
-keywords: AEM Formularios 6.5 al servicio en la nube, formularios 6.5 al servicio en la nube, migrar formularios 6.5 al servicio en la nube, migrar formularios 6.5 al servicio en la nube, actualizar formularios 6.5 al servicio en la nube, mover formularios 6.5 al servicio en la nube, actualizar formularios 6.5 al servicio en la nube, actualizar formularios 6.5 al servicio en la nube, actualizar formularios 6.5 al servicio en la nube, actualizar formularios 6.5 al servicio en la nube, actualizar formularios 6.5 al servicio en la nube, actualizar formularios 6.5 al servicio en la nube, actualizar a CSS
+keywords: 6.5 formularios a cloud service, 6.5 formularios a cs, migrar formularios 6.5 a CS, migrar formularios 6.5 a cloud service, actualizar formularios 6.5 a CS, mover formularios 6.5 a CS, actualizar formularios 6.5 a CS, actualizar formularios 6.5 a CS, AEM Forms 6.5 a Cloud Service AEM, migración de formularios a cloud service, migración de formularios en la nube a la versión 6.5, migración de formularios en la nube a la versión 6.5 a la versión 6.5, migración de formularios en la nube a la versión 6.5 a la versión 6.5, migración de la versión 6.5 a AEM
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: f6b8ef52ad551be70e665a14ce00c197d1470e84
+source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 74%
+source-wordcount: '1590'
+ht-degree: 71%
 
 ---
 
@@ -120,7 +120,7 @@ Realice los siguientes pasos para lograr que sus recursos de [!DNL AEM Forms] se
 
    Cloud Service no es compatible con scripts del editor de reglas. La herramienta **[!UICONTROL Migración de scripts del editor de código]** convierte todos los scripts de regla en su entorno en funciones reutilizables y aplica las funciones reutilizables al editor visual en la ubicación apropiada. Estas funciones reutilizables se guardan en forma de bibliotecas de cliente y le ayudan a mantener intacta la funcionalidad existente. La herramienta aplica automáticamente las funciones reutilizables generadas a los formularios adaptables correspondientes.
 
-   Utilice el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es#contentmanagement) para exportar las funciones reutilizables (bibliotecas de cliente) a un paquete.
+   AEM Para la migración de formularios a Cloud Service, utilice el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es#contentmanagement) para exportar las funciones reutilizables (bibliotecas de cliente) a un paquete.
 
 1. [Implemente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=es#deploying-content-packages-via-cloud-manager-and-package-manager) el paquete de funciones reutilizables (bibliotecas de cliente), [código personalizado, componentes y configuraciones](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=es#cloud-manager), bibliotecas específicas locales personalizadas para su entorno de [!DNL AEM] as a Cloud Service.
 
@@ -152,7 +152,7 @@ Puede agregar las rutas de carpeta de nivel superior que se enumeran a continuac
 * `/content/forms/af`
 * `/etc/clientlibs/fd/theme`
 
-Para migrar modelos de flujo de trabajo de AEM, especifique las siguientes rutas:
+AEM Cuando migre modelos de flujo de trabajo de la versión de AEM Forms 6.5 a Cloud Service, especifique las siguientes rutas:
 
 * `/conf/global/settings/workflow/models/`
 * `/conf/global/settings/workflow/launcher`
