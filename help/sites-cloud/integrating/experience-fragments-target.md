@@ -2,7 +2,7 @@
 title: Exportación de fragmentos de experiencias a Adobe Target
 description: Exportación de fragmentos de experiencias a Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
 workflow-type: tm+mt
 source-wordcount: '2245'
 ht-degree: 97%
@@ -242,7 +242,7 @@ Puede crear varios marcos de trabajo para una sola configuración de Target. Los
 
    Se abre la página marco de trabajo. La barra de tareas proporciona componentes que representan información de [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) que puede asignar.
 
-   <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
+   <!-- ![Framework](assets/chlimage_1-162.png) -->
 
 1. Arrastre el componente Client Context que representa los datos que desea utilizar para la asignación al destino de colocación. También puede arrastrar el componente **Almacenamiento de ContextHub** al marco de trabajo.
 
@@ -252,11 +252,11 @@ Puede crear varios marcos de trabajo para una sola configuración de Target. Los
 
    Por ejemplo, para usar **Datos de perfil** acerca de los visitantes del sitio para controlar la campaña de Target, arrastre el componente **Datos de perfil** a la página. Aparecen las variables de datos de perfil disponibles para su asignación a parámetros de Target.
 
-   <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
+   <!-- ![Profile Data](assets/chlimage_1-163.png) -->
 
 1. Seleccione las variables que desea que sean visibles para el sistema de Adobe Target seleccionando la casilla de verificación **Compartir** en las columnas correspondientes.
 
-   <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
+   <!-- ![Share](assets/chlimage_1-164.png) -->
 
    >[!NOTE]
    >
@@ -293,7 +293,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-  ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
 1. Select the framework you want under **Configuration Reference**.
 

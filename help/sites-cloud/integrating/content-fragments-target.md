@@ -2,7 +2,7 @@
 title: Exportación de fragmentos de contenido a Adobe Target
 description: Exportación de fragmentos de contenido a Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 96%
@@ -236,11 +236,11 @@ Puede crear varios marcos de trabajo para una sola configuración de Target. Los
 
 1. En el cuadro de diálogo Crear marco de trabajo, especifique un **Título**, seleccione **Adobe Target Framework** y haga clic en **Crear**.
 
-   <!-- ![config-target-framework-dialog](assets/config-target-framework-dialog.png) -->
+   <!-- ![Configure Target Framework Dialog](assets/config-target-framework-dialog.png) -->
 
    Se abre la página marco de trabajo. La barra de tareas proporciona componentes que representan información de [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) que puede asignar.
 
-   <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
+   <!-- ![Configuring ContextHub](assets/chlimage_1-162.png) -->
 
 1. Arrastre el componente Client Context que representa los datos que desea utilizar para la asignación al destino de colocación. También puede arrastrar el componente **Almacenamiento de ContextHub** al marco de trabajo.
 
@@ -250,11 +250,11 @@ Puede crear varios marcos de trabajo para una sola configuración de Target. Los
 
    Por ejemplo, para usar **Datos de perfil** acerca de los visitantes del sitio para controlar la campaña de Target, arrastre el componente **Datos de perfil** a la página. Aparecen las variables de datos de perfil disponibles para su asignación a parámetros de Target.
 
-   <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
+   <!-- ![Profile Data](assets/chlimage_1-163.png) -->
 
 1. Seleccione las variables que desea que sean visibles para el sistema de Adobe Target seleccionando la casilla de verificación **Compartir** en las columnas correspondientes.
 
-   <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
+   <!-- ![Share](assets/chlimage_1-164.png) -->
 
    >[!NOTE]
    >
@@ -291,7 +291,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-  ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![Cloud Service Configurations](assets/chlimage_1-165.png)
 
 1. Select the framework you want under **Configuration Reference**.
 
