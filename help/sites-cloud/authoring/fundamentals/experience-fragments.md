@@ -55,7 +55,7 @@ Los autores quieren utilizar AEM solo para la creación, pero no para la entre
 >
 >* `experience-fragments-editors`
 >
->Si tiene algún problema, póngase en contacto con el administrador del sistema.
+>Póngase en contacto con el administrador del sistema si tiene algún problema.
 
 ## ¿Cuándo se deben utilizar los fragmentos de experiencias?   {#when-should-you-use-experience-fragments}
 
