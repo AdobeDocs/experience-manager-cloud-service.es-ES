@@ -2,10 +2,10 @@
 title: Cómo descargar e instalar Forms Designer para crear plantillas de documento de registro
 description: Puede utilizar Forms Designer para crear plantillas de formulario XDP y PDF que sirvan de plantilla para un documento de registro. Designer está disponible con la licencia de  [!DNL AEM Forms] .
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e71dd8a4eb92acbed53fb9384bc40efc3e743761
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 100%
+source-wordcount: '262'
+ht-degree: 96%
 
 ---
 
@@ -26,6 +26,7 @@ Para instalar y configurar Designer se necesita el software y el hardware mínim
 * Aceleración de hardware de vídeo (opcional);
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC;
 * Privilegios administrativos para instalar Designer.
+* Tiempo de ejecución de 32 bits de Microsoft Visual C++ 2019 (VC 14.28 o bueno)
 
 ## Instalar Designer {#install-designer}
 
