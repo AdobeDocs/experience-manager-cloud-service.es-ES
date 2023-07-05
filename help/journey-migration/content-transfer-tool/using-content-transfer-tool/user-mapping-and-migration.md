@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="Asignación de usuarios"
->abstract="La herramienta de transferencia de contenido le ayuda a mover usuarios y grupos de su sistema de Adobe Experience Manager AEM AEM () existente a los as a Cloud Service de la. Los usuarios existentes deben asignarse a sus ID de IMS para evitar que se dupliquen en la instancia de creación de Cloud Service."
+>abstract="La herramienta de transferencia de contenido le ayuda a mover usuarios y grupos de su sistema de Adobe Experience Manager (AEM) existente a AEM as a Cloud Service. Los usuarios existentes deben asignarse a sus ID de IMS para evitar que se dupliquen en la instancia de creación de Cloud Service."
 
 >[!NOTE]
 >Para ver las versiones anteriores de la herramienta de asignación de usuarios, consulte la [documentación heredada](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).

@@ -1,10 +1,10 @@
 ---
 title: ¿Cómo se administran las etiquetas en la vista Recursos?
-description: Obtenga información sobre cómo administrar etiquetas en la vista Recursos. Las etiquetas le ayudan a categorizar los recursos que se pueden examinar y buscar de forma más eficaz.
+description: Obtenga información sobre cómo administrar etiquetas en la vista Recursos. Las etiquetas le ayudan a categorizar los archivos que se pueden examinar y buscar de forma más eficaz.
 source-git-commit: bdbe47a8f06d2ec1cd75103905677fcd3955632d
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="assets_taxonomy_management"
 >title="Administrar etiquetas"
->abstract="Las etiquetas le ayudan a categorizar los recursos que se pueden examinar y buscar de forma más eficaz. Los administradores tienen la capacidad de utilizar la estructura jerárquica de etiquetado, que facilita la aplicación de metadatos relevantes, la categorización de recursos, la compatibilidad con la búsqueda, la reutilización de etiquetas, la mejora de la capacidad de detección, etc."
+>abstract="Las etiquetas le ayudan a categorizar los archivos que se pueden examinar y buscar de forma más eficaz. Los administradores tienen la capacidad de utilizar la estructura jerárquica de etiquetado, que facilita la aplicación de metadatos relevantes, la categorización de archivos, la compatibilidad con la búsqueda, la reutilización de etiquetas, la mejora de la capacidad de detección, etc."
 
-Las etiquetas le ayudan a categorizar los recursos que se pueden examinar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo.
+Las etiquetas le ayudan a categorizar los archivos que se pueden examinar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo.
 
-Las listas planas de vocabularios controlados pueden volverse inmanejables con el tiempo. Los administradores tienen la capacidad de utilizar la estructura jerárquica de etiquetado, que facilita la aplicación de metadatos relevantes, la categorización de recursos, la compatibilidad con la búsqueda, la reutilización de etiquetas, la mejora de la capacidad de detección, etc.
+Las listas planas de vocabularios controlados pueden volverse inmanejables con el tiempo. Los administradores tienen la capacidad de utilizar la estructura jerárquica de etiquetado, que facilita la aplicación de metadatos relevantes, la categorización de archivos, la compatibilidad con la búsqueda, la reutilización de etiquetas, la mejora de la capacidad de detección, etc.
 
 Puede crear un área de nombres en el nivel raíz y crear una estructura jerárquica de subetiquetas dentro del área de nombres. Por ejemplo, puede crear un `Activities` en el nivel de raíz y tienen `Cycling`, `Hiking`, y `Running` etiquetas dentro del área de nombres. Puede tener más subetiquetas `Clothing` y `Shoes` dentro `Running`.
 

@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 34%
+ht-degree: 41%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 34%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Cree la estructura de contenido para la aplicación"
->abstract="A medida que sigue esta serie de guías interactivas, aprenderá a crear una estructura (conocida como el modelo de fragmento de contenido) que sirva como estructura base para el contenido sin encabezado."
+>abstract="A medida que siga esta serie de guías interactivas aprenderá a crear una estructura (conocida como el modelo de fragmento de contenido) que sirve como estructura base para su contenido sin encabezado."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Lanzamiento de la consola del modelo"
->abstract="Vamos a explorar cómo crear un esquema reutilizable, llamado modelo de fragmento de contenido, para su contenido en Adobe Experience Manager as a Cloud Service. Vea el vídeo para comprender por qué este paso es importante. <br><br>En este módulo de aprendizaje, se utiliza un sitio de viajes como ejemplo y se recorre la creación de un modelo que representa un viaje.<br><br>Inicie este módulo en una nueva pestaña haciendo clic en el botón de abajo y siga esta guía."
+>abstract="Vamos a explorar cómo crear un esquema reutilizable, llamado modelo de fragmento de contenido, para su contenido en Adobe Experience Manager as a Cloud Service. Vea el vídeo para entender por qué es importante este paso. <br><br>En este módulo de aprendizaje, utilizaremos un sitio de viajes como ejemplo y veremos cómo crear un modelo que represente un viaje.<br><br>Inicie este módulo en una nueva pestaña haciendo clic en el botón de abajo y siga esta guía."
 >additional-url="https://video.tv.adobe.com/v/3413261/?captions=spa" text="Vídeo de introducción a la estructura de contenido"
 
 >[!CONTEXTUALHELP]

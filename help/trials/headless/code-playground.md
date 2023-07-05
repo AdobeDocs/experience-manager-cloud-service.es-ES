@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 55%
+ht-degree: 58%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Iniciar la aplicación CodePen de muestra"
->abstract="Esta guía explica cómo consultar los datos JSON de su entorno de prueba en una aplicación web básica de JavaScript. Utilice los fragmentos de contenido que modeló y creó en los módulos de aprendizaje anteriores. Si es necesario, revise primero esas guías antes de saltar a esta."
+>abstract="Esta guía explica cómo consultar los datos JSON de su entorno de prueba en una aplicación web básica de JavaScript. Utilice los fragmentos de contenido que modeló y creó en los módulos de aprendizaje anteriores. Si es necesario, trabaje primero en esas guías antes de saltar a esta."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
