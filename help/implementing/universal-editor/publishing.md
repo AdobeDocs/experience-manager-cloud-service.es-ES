@@ -2,12 +2,13 @@
 title: Publicación de contenido con el Editor visual universal
 description: Descubra cómo el Editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 78%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
+
 
 # Publicación de contenido con el Editor visual universal {#publishing}
 
@@ -31,6 +32,6 @@ Otra opción es implementar la aplicación en dos entornos diferentes configurad
 
 ## Resumen {#summary}
 
-El objetivo del editor universal es no imponer ningún patrón en particular, de manera que la implementación pueda lograr sus objetivos de una manera totalmente disociada, manteniendo todo simple y directo para la implementación.
+El objetivo del Editor universal es no imponer ninguna pauta particular, de manera que la implementación pueda lograr sus objetivos de una manera totalmente disociada, manteniendo todo sencillo y sin complicaciones para la implementación.
 
 Del mismo modo, el Editor universal no requiere requisitos sobre cómo un proyecto en particular debe determinar desde qué nivel enviar el contenido. En su lugar, habilita una serie de posibilidades y permite al proyecto determinar qué solución es la mejor para sus propios requisitos.
