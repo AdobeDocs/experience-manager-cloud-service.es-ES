@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
+source-git-commit: 1251f36ece4449d8be6a40f34421351161bf3b23
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 20%
+source-wordcount: '640'
+ht-degree: 18%
 
 ---
 
@@ -21,7 +21,6 @@ La activación de funciones 2023.7.0 proporcionará el conjunto completo de func
 
 ### Mejoras {#enhancements-12549}
 
-- SITES-8769: Mejorar las llamadas de StyleImpl en ResponsiveGrid
 - FORMS-5054: Se ha agregado compatibilidad con todas las [estatuas](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) compatible con Adobe Sign.
 
 ### Problemas corregidos {#fixed-issues-12549}
@@ -55,7 +54,7 @@ La activación de funciones 2023.7.0 proporcionará el conjunto completo de func
 
 ### Problemas conocidos {#known-issues-12549}
 
-Ninguna.
+- SKYOPS-61385: con la última actualización de Dispatcher, ciertas expresiones regulares no válidas que anteriormente ignoraban `libpcre1` ya no son aceptadas por el actualizado `libpcre2` durante la implementación. La comprobación de configuración de Dispatcher se actualizará pronto para identificar también estos elementos incluso antes.
 
 ### Tecnologías integradas {#embedded-tech-12549}
 
