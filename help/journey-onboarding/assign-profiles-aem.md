@@ -16,7 +16,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
 >title="Asignar perfiles de producto de AEM"
->abstract="No tiene derecho a utilizar Experience Manager Assets. Póngase en contacto con el administrador."
+>abstract="No tiene derecho a utilizar Experience Manager Assets. Póngase en contacto con su administrador o administradora."
 
 En esta parte del [recorrido de incorporación,](overview.md) aprenderá a otorgar acceso a su equipo a AEM mediante perfiles de producto de AEM.
 

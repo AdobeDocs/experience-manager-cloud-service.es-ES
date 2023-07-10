@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -174,8 +174,8 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Administrador de paquetes: migración de paquetes de contenido mutable"
->abstract="Explore el uso del Administrador de paquetes para casos de uso en los que un paquete de contenido debe instalarse como &quot;único&quot;. AEM La instalación incluye la importación de contenido específico desde producción hasta ensayo para depurar un problema de producción, la transferencia de un paquete de contenido pequeño desde el entorno local a entornos de nube de la, etc."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="Herramienta de transferencia de contenido"
+>abstract="Explore el uso de Administrador de paquetes para casos de uso en los que un paquete de contenido debe instalarse de forma &quot;única&quot;. La instalación incluye importar contenido específico desde la producción hasta el montaje para depurar un problema de producción, transferir un paquete de contenido pequeño del entorno local a entornos de AEM Cloud, etc."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es" text="Herramienta de transferencia de contenido"
 
 Hay casos de uso en los que un paquete de contenido debe instalarse con definición. Por ejemplo, importar contenido específico de producción en ensayo para depurar un problema de producción. Para estos escenarios, [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) AEM se puede utilizar en entornos en as a Cloud Service de la.
 

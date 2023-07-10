@@ -5,7 +5,7 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
 >title="Planificación de la transición"
->abstract="Antes de comenzar el recorrido de transición a Cloud Service AEM, familiarícese con el as a Cloud Service de la. Revise los cambios importantes realizados en él y las funciones reemplazadas u obsoletas."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Analizador de prácticas recomendadas"
+>abstract="Antes de comenzar el recorrido de la transición a Cloud Service, familiarícese con AEM as a Cloud Service. Revise los cambios importantes realizados en él y las funcionalidades reemplazadas u obsoletas."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=es" text="Analizador de prácticas recomendadas"
 
 AEM En esta fase del Recorrido AEM as a Cloud Service de migración as a Cloud Service de la, se familiarizará con la. Puede revisar los cambios más importantes introducidos y comprender lo que se necesita para planificar una migración correcta a la nube.
 
