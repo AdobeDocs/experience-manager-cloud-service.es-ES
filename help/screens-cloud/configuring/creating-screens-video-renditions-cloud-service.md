@@ -2,10 +2,10 @@
 title: Creación de representaciones de vídeo en Screens as a Cloud Service
 description: En esta página se describe cómo crear representaciones de vídeo en Pantallas as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 2%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
 
@@ -37,15 +37,15 @@ Siga los pasos a continuación para crear representaciones de vídeo en Pantalla
 
 1. Introduzca el **Nombre**, como **ScreensProcessingProfile**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![Cuadro de diálogo Perfil de procesamiento que muestra el campo Nombre resaltado.](/help/screens-cloud/assets/configure/screens-video-3.png)
 
 1. Vaya a **Vídeo** para poder agregar una codificación de vídeo y, a continuación, haga clic en **Añadir nuevo**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![Cuadro de diálogo Perfil de procesamiento que muestra el botón Añadir nuevo resaltado.](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
 1. Introduzca el **Nombre de codificación** como , **screens-fullhd** y el **Velocidad de bits** as **2500**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![Cuadro de diálogo Perfil de procesamiento que muestra el botón Guardar resaltado.](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >Utilice el nombre de codificación que comienza con &quot;screens-&quot;. Solo se considera que estas representaciones de vídeo reproducen la experiencia de vídeo en Pantallas as a Cloud Service. Introduzca la velocidad de bits de funcionamiento de los vídeos (2500 kbps para vídeo de 720 px y 5000 kbps para vídeo de 1080 px).

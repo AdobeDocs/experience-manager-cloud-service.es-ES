@@ -2,10 +2,10 @@
 title: Personas adecuadas, funciones correctas
 description: Personas adecuadas, funciones correctas
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 80%
+source-wordcount: '847'
+ht-degree: 78%
 
 ---
 
@@ -74,7 +74,7 @@ Ahora que sabe qué funciones son necesarias, consulte el gráfico siguiente par
 
 <br>
 
-![](/help/overview/assets/team_involvement2.png)
+![Gráfico de barras horizontales que muestra las funciones ficticias y su nivel de participación en el equipo de AEM Assets.](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >

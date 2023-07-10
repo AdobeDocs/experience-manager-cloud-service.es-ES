@@ -2,7 +2,7 @@
 title: Configuración de IMS que usar al integrar con Adobe Target
 description: Obtenga información acerca de la configuración de IMS que usar al integrar con Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 91%
@@ -113,7 +113,7 @@ Abra Adobe Developer Console para crear un proyecto con Adobe Target que utiliza
 <!--
 1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
-   ![](assets/integrate-target-ims-07.png)
+   ![integrate-target-ims-07](assets/integrate-target-ims-07.png)
 -->
 
 <!-- could not verify - only saw Adobe Target Classic -->

@@ -3,10 +3,10 @@ title: Edición de imágenes
 description: Edite imágenes mediante opciones que se sirven de [!DNL Adobe Photoshop Express] y guarde imágenes actualizadas como versiones.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 97%
+source-wordcount: '549'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ Muchas opciones predeterminadas permiten recortar la imagen hasta que tenga las 
 
 ## Cambiar tamaño de imagen {#resize-image}
 
-Cambiar el tamaño de una imagen a un tamaño específico es un caso de uso popular. [!DNL Assets view] le permite cambiar rápidamente el tamaño de la imagen para adaptarla a los tamaños de foto comunes, ya que proporciona nuevas resoluciones calculadas previamente para tamaños de foto específicos. Puede ver los tamaños de foto comunes en centímetros o pulgadas para conocer las dimensiones. De forma predeterminada, el método de cambio de tamaño conserva la relación de aspecto. Para anular manualmente la relación de aspecto, haga clic en ![](assets/do-not-localize/lock-closed-icon.png).
+Cambiar el tamaño de una imagen a un tamaño específico es un caso de uso popular. [!DNL Assets view] le permite cambiar rápidamente el tamaño de la imagen para adaptarla a los tamaños de foto comunes, ya que proporciona nuevas resoluciones calculadas previamente para tamaños de foto específicos. Puede ver los tamaños de foto comunes en centímetros o pulgadas para conocer las dimensiones. De forma predeterminada, el método de cambio de tamaño conserva la relación de aspecto. Para anular manualmente la relación de aspecto, haga clic en ![Opciones para cambiar el tamaño de una imagen.](assets/do-not-localize/lock-closed-icon.png).
 
 Introduzca las dimensiones y haga clic en **[!UICONTROL Cambiar tamaño de imagen]** para cambiar el tamaño de la imagen. Antes de guardar los cambios como una versión, puede deshacerlos todos haciendo clic en [!UICONTROL Deshacer] o puede cambiar el paso específico del proceso de edición haciendo clic en [!UICONTROL Revertir].
 

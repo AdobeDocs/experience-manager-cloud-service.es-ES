@@ -2,10 +2,10 @@
 title: Creación de un proyecto en Screens as a Cloud Service
 description: Obtenga información sobre cómo crear un proyecto en Pantallas as a Cloud Service.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 2%
 
 ---
 
@@ -28,18 +28,18 @@ Siga los pasos a continuación para crear un proyecto en Pantallas as a Cloud Se
 
 1. Cerca de la esquina superior derecha de la barra de acciones, haga clic en **Crear proyecto de Screens**.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
+   ![create-screens-project1](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
 1. Introduzca el **Título** del proyecto en **Crear proyecto de Screens** Cuadro de diálogo. Por ejemplo, *FirstDigitalExperience*.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
+   ![create-screens-project2](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
    >El **Nombre** El campo se rellena automáticamente en **Crear proyecto de Screens** cuadro de diálogo basado en el título que elija.
 
 1. Haga clic en **Guardar**. Verá su proyecto de Screens, con el título *FirstDigitalExperience* en el proveedor de contenido de Screens. También verá el proyecto en el proveedor de contenido de Screens, con dos carpetas tituladas: **Ubicaciones** y **Canales**.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
+   ![create-screens-project3](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
    Ahora que ha configurado un proyecto de AEM Screens, puede empezar a agregar canales y ubicaciones al proyecto.
 
@@ -51,7 +51,7 @@ Los proyectos existentes en Pantallas as a Cloud Service se pueden eliminar.
 1. Seleccione el proyecto que desea eliminar.
 1. En la barra de acciones, haga clic en **Eliminar**.
 
-   ![](/help/screens-cloud/assets/create-content/create-project5.png)
+   ![create-project5](/help/screens-cloud/assets/create-content/create-project5.png)
 
 1. Clic **Eliminar** para confirmar la eliminación del proyecto.
 
