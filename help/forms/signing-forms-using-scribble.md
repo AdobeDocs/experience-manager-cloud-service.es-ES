@@ -10,10 +10,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
+source-git-commit: 50f5b34fa9453fd6d8e85290f69194622afeb42c
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 97%
+source-wordcount: '643'
+ht-degree: 95%
 
 ---
 
@@ -59,7 +59,7 @@ Puede pulsar el botón **Configurar** ![icono de configuración](assets/configur
    >
    >El componente Paso de firma ocupa el ancho completo disponible en el formulario. Se recomienda no colocar ningún otro componente en la sección que contiene el componente Paso de firma.
 
-1. En el Explorador de contenido, pulse **Contenedor de formulario** y pulse el icono **Configurar** ![](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables. Vaya a **Contenedor de formulario adaptable** > **Firma electrónica** y deseleccione la opción **Habilitar Adobe Sign**. Pulse el icono Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios.
+1. En el Explorador de contenido, pulse **Contenedor del formulario** y pulse el botón **Configurar** ![icono de configuración](assets/configure.png) icono. Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables. Vaya a **Contenedor de formulario adaptable** > **Firma electrónica** y deseleccione la opción **Habilitar Adobe Sign**. Pulse el icono Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios.
 
    >[!NOTE]
    >
