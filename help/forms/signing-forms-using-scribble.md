@@ -10,10 +10,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 100%
+source-wordcount: '641'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Puede usar los componentes **Firma manuscrita** y **Paso de firma** para dibujar
 
 Una vez que pulse el icono Listo ![aem_forms_save](assets/aem_forms_save.png) en la ventana Firma manuscrita, no podrá editar la firma. Si desea editar la firma, ignore la firma actual y vuelva a firmar el formulario con las opciones Pincel/Teclado mencionadas anteriormente.
 
-Puede pulsar el icono **Configurar** ![](assets/configure.png) para establecer la relación de aspecto del lienzo de firma manuscrita.
+Puede pulsar el botón **Configurar** ![icono de configuración](assets/configure.png) para establecer la proporción de aspecto del lienzo de firma manuscrita.
 * Cuando la relación de aspecto del lienzo de firma manuscrita es menor que 1, la información de geolocalización se agrega en la parte inferior del lienzo de firma manuscrita.
 
 
@@ -46,6 +46,7 @@ Puede pulsar el icono **Configurar** ![](assets/configure.png) para establecer l
 >[!NOTE]
 >
 >Las firmas se guardan siempre en formato PNG.
+>
 
 ## Configuración de un formulario adaptable para utilizar una firma manuscrita {#configure-an-adaptive-form-to-use-scribble-signature}
 

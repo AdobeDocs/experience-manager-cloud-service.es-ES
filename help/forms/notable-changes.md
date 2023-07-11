@@ -3,10 +3,10 @@ title: Diferencias entre AEM 6.5 Forms y AEM Cloud Services
 description: ¿Es usuario de Experience Manager Forms y desea actualizar a Adobe Experience Manager Forms as a Cloud Service? Compare AEM 6.5 Forms y AEM Cloud Services y aprenda los cambios más importantes antes de actualizar o migrar a Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 97%
+source-wordcount: '1417'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service incluye algunos cambios import
 
 * Los desarrolladores mantienen el código para el Cloud Service y el entorno de desarrollo local en un [repositorio de Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html?lang=es) común. Un repositorio de Git, basado en el Arquetipo del proyecto de AEM, se genera automáticamente al crear un programa en AEM as a Cloud Service.
 
-  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![AEM creación automática de un repositorio de git en el programa de as a cloud service de](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * El flujo de desarrollo para Forms as a Cloud Service se alinea con el Arquetipo del proyecto de AEM para AEM Cloud Service. Con todo, se requieren algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. En un nivel superior, AEM requiere una separación de contenido y código en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Utilice la herramienta [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=es)Modernizador de repositorio para reestructurar los paquetes de proyectos existentes separando contenido y código en paquetes discretos para que sean compatibles con la estructura de proyectos definida para Adobe Experience Manager as a Cloud Service.
 
