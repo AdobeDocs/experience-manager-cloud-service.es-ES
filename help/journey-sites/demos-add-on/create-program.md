@@ -2,12 +2,13 @@
 title: Creación de un programa
 description: Obtenga información sobre cómo configurar un nuevo programa y una canalización para implementar el complemento.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 7c33a618f474914ca80dff525552017c55a32517
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 97%
+source-wordcount: '709'
+ht-degree: 68%
 
 ---
+
 
 # Creación de un programa {#creating-a-program}
 
@@ -47,48 +48,36 @@ Después de iniciar sesión en Cloud Manager, puede crear un nuevo programa de z
 
 1. Toque o haga clic en **Agregar programa** en la parte superior derecha de la ventana.
 
-1. En el cuadro de diálogo **Vamos a crear su programa**, asegúrese de que **Adobe Experience Manager** se selecciona en **Productos** y, a continuación, toque o haga clic en **Continuar**.
+1. En el **Vamos a crear su programa** diálogo:
+
+   1. Proporcione un **Nombre del programa** para describir su programa.
+   1. Toque o haga clic en **Configuración de una zona protegida** para su **Objetivo del programa**
+   1. Haga clic o pulse **Continuar**.
 
    ![Cuadro de diálogo Crear programa](assets/create-program.png)
 
-1. En el siguiente cuadro de diálogo:
+1. En el **Configurar la zona protegida** diálogo en el **Soluciones y complementos** , expanda la **Sites** para introducir en la lista, toque o haga clic en ella y, a continuación, marque **Demostraciones de referencia**.
 
-   * Proporcione un **Nombre del programa** para describir su programa.
-   * Toque o haga clic en **Configuración de una zona protegida** para su **Objetivo del programa**
+   * Si también desea crear demostraciones para AEM Screens, consulte la opción **Screens** también en la lista. Haga clic o pulse **Actualización de estado**.
 
-   Haga clic o pulse **Crear**.
+   ![Seleccionar el complemento para la demostración de referencia en la configuración del programa](assets/select-reference-demo-add-on.png)
 
-   ![Nombre del programa](assets/program-name.png)
 
-1. Se le dirigirá a la pantalla de información general del programa, donde podrá observar el proceso de creación del programa. Cloud Manager proporciona estimaciones del tiempo restante. Puede salir de esta pantalla a medida que se crea el programa y volver más tarde si es necesario.
+1. Haga clic o pulse **Crear** y Cloud Manager comienza a configurar el programa de zona protegida. Se le dirigirá a la pantalla de información general del programa y una breve notificación indica que el proceso se ha iniciado. Se ha añadido una tarjeta a la página de información general del nuevo programa. El proceso de configuración tardará unos minutos en completarse.
 
-   ![Creación de programas](assets/program-creation.png)
+1. Una vez completada la configuración, la tarjeta del entorno en la página de información general muestra su estado como **Listo**. Pulse o haga clic en la tarjeta para abrir el entorno.
 
-1. Una vez finalizada, Cloud Manager presenta una descripción general que incluye los entornos y canalizaciones creados automáticamente.
+   ![Creación completa del programa](assets/ready.png)
 
-   ![Creación completa del programa](assets/creation-complete.png)
+1. AEM Su entorno está listo y el complemento ahora está habilitado como opción, pero el contenido de la demostración debe implementarse para que el contenido esté disponible para que esté disponible. Para ello, toque o haga clic en el botón de los tres puntos situado junto a la canalización Implementar en desarrollador en **Canalizaciones** Tarjeta de y seleccione **Ejecutar**.
 
-1. Edite los detalles del programa haciendo clic en el nombre del programa en la parte superior izquierda de la página y, en la lista desplegable, seleccione **Editar programa**.
-
-   ![Editar programa](assets/edit-program.png)
-
-1. En el cuadro de diálogo **Editar programa**, cambie a la pestaña **Soluciones y complementos**.
-
-   ![Cuadro de diálogo Editar programa](assets/edit-program-dialog.png)
-
-1. En la pestaña **Soluciones y complementos** expanda la entrada **Sitios** en la lista y, a continuación, marque **Demostraciones de referencia**. Si también desea crear demostraciones para AEM Screens, consulte la opción **Screens** también en la lista. Haga clic o pulse **Actualización de estado**.
-
-   ![Comprobar la opción de demostraciones de referencia](assets/edit-program-add-on.png)
-
-1. El complemento ahora está habilitado como opción, pero su contenido debe implementarse en AEM para que esté disponible. Vuelva a la página de información general del programa, toque o haga clic en **Inicio** para iniciar la canalización e implementar el contenido del complemento en AEM.
-
-   ![Inicial](assets/deploy.png)
+   ![Inicial](assets/run.png)
 
 1. La canalización comienza y se le redirige a una página que detalla el progreso de la implementación. Puede salir de esta pantalla a medida que se crea el programa y volver más tarde si es necesario.
 
    ![Implementación](assets/deployment.png)
 
-Una vez finalizada la canalización, el complemento y su contenido de demostración están disponibles para su uso en el entorno de creación de AEM.
+La canalización puede tardar varios minutos en completarse. AEM Una vez finalizado, el complemento y su contenido de demostración están disponibles para su uso en el entorno de creación de.
 
 ## Siguientes pasos {#what-is-next}
 
