@@ -1,14 +1,14 @@
 ---
-title: ¿Cómo usar  [!DNL Adobe Sign]  en un formulario adaptable?
+title: ¿Cómo usar [!DNL Adobe Sign] en un formulario adaptable?
 description: Puede habilitar flujos de trabajo de firma electrónica ([!DNL Adobe Sign]) para un formulario adaptable con el fin de automatizar los flujos de trabajo de firma, simplificar los procesos de firma única y múltiple y firmar electrónicamente los formularios desde dispositivos móviles.
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
 source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3097'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Antes de usar [!DNL Adobe Sign] en un formulario adaptable:
 
 Para configurar [!DNL Adobe Sign] para un formulario adaptable:
 
-1. [Habilitar  [!DNL Adobe Sign]  para un formulario adaptable](#enableadobsignforanadaptiveform)
+1. [Habilitar [!DNL Adobe Sign] para un formulario adaptable](#enableadobsignforanadaptiveform)
 1. [Agregar campos de  [!DNL Adobe Sign]  a un formulario adaptable](#addadobesignfieldstoanadaptiveform)
-1. [Seleccionar  [!DNL Adobe Sign]  Cloud Service para un formulario adaptable](#select-adobe-sign-cloud-service-and-signing-order)
+1. [Seleccionar [!DNL Adobe Sign] Cloud Service para un formulario adaptable](#select-adobe-sign-cloud-service-and-signing-order)
 
-1. [Agregar destinatario de  [!DNL Adobe Sign]  a un formulario adaptable](#addsignerstoanadaptiveform)
+1. [Agregar destinatario de [!DNL Adobe Sign] a un formulario adaptable](#addsignerstoanadaptiveform)
 1. [Seleccionar acción de envío para un formulario adaptable](#selectsubmitactionforanadaptiveform)
 
 ![Detalles del destinatario](assets/signer_details_new.png)
@@ -59,8 +59,8 @@ Para configurar [!DNL Adobe Sign] para un formulario adaptable:
 
 Puede habilitar [!DNL Adobe Sign] para un formulario adaptable existente o crear un formulario adaptable con [!DNL Adobe Sign] habilitado. Elija una de las acciones siguientes:
 
-* [Crear un formulario adaptable con  [!DNL Adobe Sign]  habilitado](#create-an-adaptive-form-for-adobe-sign)
-* [Habilitar  [!DNL Adobe Sign]  para un formulario adaptable existente](#editafsign).
+* [Crear un formulario adaptable con [!DNL Adobe Sign] habilitado](#create-an-adaptive-form-for-adobe-sign)
+* [Habilitar [!DNL Adobe Sign] para un formulario adaptable existente](#editafsign).
 
 #### Crear un formulario adaptable para Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
 
@@ -73,6 +73,7 @@ Para crear un formulario adaptable habilitado para firmar:
    1. Especifique el **[!UICONTROL Nombre]** y el **[!UICONTROL Título]** para el formulario adaptable.
 
    1. Seleccione el [contenedor de configuración](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creado al [integrarse [!DNL Adobe Sign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+
    El contenedor de configuración contiene [!DNL Adobe Sign] Cloud Service configurado para su entorno. Estos servicios están disponibles para su selección en el editor de formularios adaptables.
 
 1. En la pestaña **[!UICONTROL Modelo de formulario]**, seleccione una de las siguientes opciones:
@@ -114,7 +115,6 @@ Para agregar campos a un formulario adaptable y personalizar varias opciones rel
    >
    >  * El uso del bloque de [!DNL Adobe Sign] no es obligatorio para utilizar [!DNL Adobe Sign] en un formulario adaptable. Si no usa el bloque de [!DNL Adobe Sign] y agrega campos para los destinatarios, el campo de firma predeterminado se muestra al final de los documentos de firma.
    >  * Use el bloque de [!DNL Adobe Sign] solo para los formularios adaptables que generan automáticamente el documento de registro. Si utiliza un XDP personalizado para generar un documento de registro o un formulario basado en un formulario adaptable, el bloque de [!DNL Adobe Sign] no es compatible.
-
 
 
 1. Seleccione el componente **[!UICONTROL Adobe Sign Block]** y pulse el icono **[!UICONTROL Editar]** ![Edit](assets/Smock_Edit_18_N.svg). Muestra las opciones para agregar campos y formatear la apariencia de un campo.
@@ -190,15 +190,16 @@ Puede tener uno o varios destinatarios para un acuerdo de Adobe Sign. Al agregar
 
    * **[!UICONTROL Dirección de correo electrónico del destinatario]:** especifique la dirección de correo electrónico del destinatario. El destinatario recibe el acuerdo de Adobe Sign en la dirección de correo electrónico especificada. Puede elegir utilizar una dirección de correo electrónico proporcionada en un campo de formulario, en el perfil de Experience Manager del usuario que ha iniciado sesión o escribir manualmente una dirección de correo electrónico. Es un paso obligatorio.
 
-      >[!NOTE]
-      >
-      >Asegúrese de que la dirección de correo electrónico del primer destinatario o del único destinatario (si hay solo uno) no sea idéntica al de la cuenta de [!DNL Adobe Sign] utilizada para configurar AEM Cloud Service.
+     >[!NOTE]
+     >
+     >Asegúrese de que la dirección de correo electrónico del primer destinatario o del único destinatario (si hay solo uno) no sea idéntica al de la cuenta de [!DNL Adobe Sign] utilizada para configurar AEM Cloud Service.
 
-   * **[!UICONTROL Método de autenticación de destinatario]:** especifique el método para autenticar un destinatario antes de abrir el acuerdo de Adobe Sign. Puede elegir entre teléfono, base de conocimiento, autenticación social basada en identidad y [Documento oficial](https://helpx.adobe.com/es/sign/using/adobesign-authentication-government-id.html) para [!DNL Adobe Acrobat Sign]. Para [!DNL Adobe Acrobat Sign for Government] puede elegir entre autenticación telefónica y basada en conocimientos.
+   * **[!UICONTROL Método de autenticación de destinatario]:** especifique el método para autenticar un destinatario antes de abrir el acuerdo de Adobe Sign. Puede elegir entre teléfono, base de conocimientos, autenticación social basada en identidad e [ID oficial ](https://helpx.adobe.com/es/sign/using/adobesign-authentication-government-id.html) para [!DNL Adobe Acrobat Sign]. Para [!DNL Adobe Acrobat Sign for Government], puede elegir entre autenticación telefónica y basada en conocimientos.
+
    >[!NOTE]
    >
    >    * De forma predeterminada, la autenticación basada en la identidad social proporciona una opción para autenticarse con Facebook, Google y LinkedIn. Puede ponerse en contacto con la ayuda técnica de [!DNL Adobe Sign] para habilitar otros proveedores de autenticación social.
-
+   >
 
    * Campos de **[!DNL Adobe Sign]para rellenar o firmar:** seleccione campos de [!DNL Adobe Sign] para el destinatario. Un formulario adaptable puede tener varios campos de [!DNL Adobe Sign]. Puede elegir habilitar campos específicos para un destinatario. El campo muestra todos los bloques de [!DNL Adobe Sign] Block disponibles. Al seleccionar un bloque, se seleccionan todos los campos del bloque. Puede utilizar el icono X para anular la selección de un campo.
 
@@ -310,16 +311,16 @@ Después de [editar las propiedades del formulario adaptable para Adobe Sign](wo
    * Firmas en la nube: firme con un [ID digital](https://helpx.adobe.com/es/sign/kb/digital-certificate-providers.html) alojado por un proveedor de servicios de confianza.
    * Adobe Acrobat o Reader: descargue y abra el documento con Adobe Acrobat o Reader para firmarlo con una tarjeta inteligente, un token USB o un ID digital basado en archivos.
 
-      >[!NOTE]
-      >
-      > La firma digital también se aplica a [!DNL Adobe Acrobat Sign for Government] pero no puede aplicarlo con firmas de Cloud.
+     >[!NOTE]
+     >
+     > La firma digital también se aplica a [!DNL Adobe Acrobat Sign for Government], pero no puede aplicarla usando firmas de Cloud.
+
    Después de agregar el campo de firma de nube al formulario adaptable, realice los siguientes pasos para completar el proceso de configuración:
 
    * [Habilitar Adobe Sign para un formulario adaptable](#enableadobsignforanadaptiveform)
    * [Seleccionar Adobe Sign Cloud Service para un formulario adaptable](#selectadobesigncloudserviceforanadaptiveform)
    * [Agregar destinatarios a un formulario adaptable](#addsignerstoanadaptiveform)
    * [Seleccionar acción de envío para un formulario adaptable](#selectsubmitactionforanadaptiveform)
-
 
 ### Configurar la página de agradecimiento o el componente de paso de resumen {#configure-the-thank-you-page-or-summary-step-component}
 
@@ -353,5 +354,5 @@ Cuando el servicio de [!DNL Adobe Sign] está configurado para un formulario ada
 
 ## Artículos relacionados {#related-articles}
 
-* [Integrar  [!DNL Adobe Sign]  con  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
-* [Prácticas recomendadas para usar  [!DNL Adobe Sign]  con formularios adaptables](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+* [Integrar [!DNL Adobe Sign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+* [Prácticas recomendadas para usar [!DNL Adobe Sign] con formularios adaptables](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
