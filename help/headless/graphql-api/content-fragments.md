@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '4918'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -107,7 +107,7 @@ AEM proporciona funcionalidades para convertir consultas (de ambos tipos) a [con
 Las [consultas persistentes](/help/headless/graphql-api/persisted-queries.md) son el método recomendado para usar en instancias de publicación como estas:
 
 * Se almacenan en caché.
-* Se administran centralmente mediante AEM as a Cloud Service.
+* Se administran centralmente mediante AEM as a Cloud Service
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ Aunque GraphQL también admite peticiones GET, estas pueden alcanzar límites (p
 >Para permitir consultas directas o POST en Dispatcher, puede pedir al administrador del sistema que realice lo siguiente:
 >
 >* Crea una [variable de entorno de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) llamada `ENABLE_GRAPHQL_ENDPOINT`.
->* con el valor `true`.
+>* con el valor `true`
 
 >[!NOTE]
 >
@@ -132,15 +132,15 @@ Aunque GraphQL también admite peticiones GET, estas pueden alcanzar límites (p
 
 Puede probar y depurar consultas de GraphQL usando el [IDE de GraphiQL](/help/headless/graphql-api/graphiql-ide.md).
 
-## Casos de uso para creación, previsualización y publicación {#use-cases-author-preview-publish}
+## Casos de uso para la creación, previsualización y publicación {#use-cases-author-preview-publish}
 
 Los casos de uso pueden depender del tipo de entorno de AEM as a Cloud Service:
 
 * Entorno de publicación; se usa para:
    * Datos de consulta para la aplicación JS (caso de uso estándar)
 
-* Entorno de vista previa; se usa para:
-   * Previsualizar consultas antes de implementar en el entorno de publicación
+* Entorno de previsualización; se usa para:
+   * Previsualización de consultas antes de implementarlas en el entorno de publicación
       * Datos de consulta para la aplicación JS (caso de uso estándar)
 
 * Entorno de creación; se usa para:
@@ -251,7 +251,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Lista desglosada | `String` | Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
 | Etiquetas | `[String]` | Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido | `String`, `[String]` | Se utiliza para mostrar la ruta hacia otro recurso en AEM |
-| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo al que se hace referencia directamente <br><br>Multicampo, con un tipo al que se hace referencia: `[Model]` matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multicampo, con varios tipos de referencia: `[AllFragmentModels]`: matriz de todos los tipos de modelo, referenciada desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
+| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo al que se hace referencia directamente <br><br>Multicampo, con un tipo al que se hace referencia: `[Model]` matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multicampo, con varios tipos de referencia: `[AllFragmentModels]`: matriz de todos los tipos de modelo, referenciada desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
 
 {style="table-layout:auto"}
 
@@ -261,7 +261,7 @@ Además de los tipos de datos de los campos generados por el usuario, GraphQL AE
 
 Estos [campos de ayuda](#helper-fields) se marcan con un `_` que los precede para distinguir entre lo que ha definido el usuario y lo que se ha generado automáticamente.
 
-#### Ruta  {#path}
+#### Ruta {#path}
 
 El campo de ruta se utiliza como identificador en AEM GraphQL. Representa la ruta del recurso de fragmento de contenido dentro del repositorio de AEM. Lo hemos elegido como identificador de un fragmento de contenido, por los motivos siguientes:
 
@@ -932,7 +932,7 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
    * Consulte [Consulta de muestra: toda la información acerca de todas las ciudades](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-* El filtro `includeVariations` está incluido en el `List` y `Paginated` tipos de consulta.  Para recuperar las variaciones de fragmentos de contenido en los resultados de la consulta, haga clic en `includeVariations` el filtro debe establecerse en `true`.
+* El filtro `includeVariations` está incluido en los tipos de consulta `List` y `Paginated`.  Para recuperar las variaciones de fragmentos de contenido en los resultados de la consulta, el filtro `includeVariations` debe establecerse en `true`.
 
    * Consulte [Consulta de muestra para varios fragmentos de contenido y sus variaciones de un modelo determinado](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
@@ -991,12 +991,12 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
          * [Consulta de muestra para el envío de imágenes con un solo parámetro especificado](#image-delivery-single-specified-parameter)
 
-   * `_tags` : para revelar los ID de los fragmentos de contenido o las variaciones que contienen etiquetas; se trata de una matriz de `cq:tags` identificadores.
+   * `_tags` : para revelar los ID de los fragmentos de contenido o las variaciones que contienen etiquetas; se trata de una matriz de identificadores `cq:tags`.
 
       * Consulte [Consulta de muestra: nombres de todas las ciudades etiquetadas como escapadas](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
       * Consulte [Consulta de muestra para variaciones de fragmentos de contenido de un modelo determinado que tienen una etiqueta específica adjunta](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
-      * Consulte [Consulta de muestra con filtrado por ID de _tags y excluyendo variaciones](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
-      * Consulte [Consulta de muestra con filtrado por ID de _tags e incluidas variaciones](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+      * Consulte [Consulta de muestra con filtrado por los ID _tags y excluyendo variaciones](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * Consulte [Consulta de muestra con filtrado por los ID _tags e incluyendo variaciones](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
 
      >[!NOTE]
      >
@@ -1041,7 +1041,7 @@ Preguntas que han surgido:
 1. **P**: “*¿En qué se diferencia la API de GraphQL para AEM de la API Generador de consultas?*”
 
    * **R**: “*La API de GraphQL de AEM ofrece control total sobre la salida JSON y es un estándar en la industria para consultar contenido.
-En adelante, AEM tiene previsto invertir en la API de GraphQL de AEM”.*
+En adelante, AEM tiene previsto invertir en la API de GraphQL de AEM.*”
 
 ## Tutorial: Introducción a AEM Headless y GraphQL {#tutorial}
 

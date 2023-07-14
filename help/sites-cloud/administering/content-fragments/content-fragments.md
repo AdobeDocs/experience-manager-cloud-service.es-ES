@@ -7,7 +7,7 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ Para ayudarle con esto, puede obtener una previsualización del [Árbol de estru
 >* [Fragmentos de contenido Configurar componentes para procesamiento](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API de GraphQL de AEM para su uso con fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)
->* [Reutilización de fragmentos de contenido mediante MSM para recursos](/help/assets/reuse-assets-using-msm.md) (solo disponible a través del **Assets** console)
+>* [Reutilización de fragmentos de contenido mediante MSM para Assets](/help/assets/reuse-assets-using-msm.md) (solo disponible a través de la consola **Assets**)
 
 El número de canales de comunicación aumenta de forma anual. Normalmente, los canales hacen referencia al mecanismo de entrega, ya sea como los siguientes:
 
@@ -115,13 +115,13 @@ Junto con las capacidades de exportación de JSON de los componentes principales
 
 ## Publicación y previsualización {#publish-and-preview}
 
-Al igual que con todo el contenido, en algún momento querrá publicar los fragmentos de contenido en **[Servicio de publicación](/help/overview/architecture.md#runtime-architecture)**.
+Como ocurre con todos los contenidos, con el tiempo querrá publicar los fragmentos de contenido en el **[Servicio de publicación](/help/overview/architecture.md#runtime-architecture)**.
 
-Antes de ello, también puede previsualizar una experiencia entregada mediante fragmentos de contenido, haciendo lo siguiente [publicación de los fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) AEM a la dirección de correo electrónico **[Servicio de previsualización](/help/overview/architecture.md#runtime-architecture)**.
+Antes de ello, también puede previsualizar una experiencia ofrecida mediante fragmentos de contenido, [publicando los fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) en el **[Servicio de previsualización](/help/overview/architecture.md#runtime-architecture)** de AEM.
 
 >[!CAUTION]
 >
->Publicación en el **Servicio de previsualización** solo está disponible desde el **Fragmentos de contenido** consola.
+>La publicación en el **Servicio de previsualización** solo está disponible desde la consola **Fragmentos de contenido**.
 
 ## Tipo de contenido {#content-type}
 

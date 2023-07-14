@@ -1,10 +1,10 @@
 ---
-title: Notas de la versión 2023.2.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de la versión 2023.2.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2023.2.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de la versión 2023.2.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.2.0) es el 12 de abril de 2023. La próxima versión de la funcionalidad (2023.4.0) está planificada para el 7 de junio de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.2.0) es el 12 de abril de 2023. La próxima versión con funcionalidades (2023.4.0) está planificada para el 7 de junio de 2023.
 
 ## Vídeo de la versión {#release-video}
 
@@ -35,7 +35,7 @@ Eche un vistazo al vídeo de información general sobre la versión de febrero d
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nuevas funciones de [!DNL Experience Manager Sites] prelanzamiento {#prerelease-sites}
+### Nuevas funciones en el [!DNL Experience Manager Sites] prelanzamiento {#prerelease-sites}
 
 * Exportar fragmentos de contenido de AEM as a Cloud Service a Adobe target como ofertas JSON.
 * Ahora, la compatibilidad con la paginación y la ordenación de GraphQL, junto con las mejoras en el almacenamiento en caché interno, ayudan a mejorar el rendimiento de las aplicaciones cliente disociadas al recuperar grandes conjuntos de contenido de AEM mediante consultas y filtros complejos de GraphQL.
@@ -86,7 +86,7 @@ Utilice los formularios adaptables sin encabezado para que los desarrolladores p
 * crear formularios multicanal de alta calidad en el lenguaje de programación que desee
 * integrar formularios de forma nativa en sus aplicaciones móviles y de escritorio, sitios web y aplicaciones de chat
 * reutilizar los componentes de IU propios con aplicaciones de formularios
-* utilice la potencia de Adobe Experience Manager Forms
+* aprovechar la potencia de Adobe Experience Manager Forms
 
 Puede enviar un correo electrónico a aem-forms-headless@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios.
 

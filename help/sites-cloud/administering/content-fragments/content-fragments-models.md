@@ -7,7 +7,7 @@ exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2919'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
    Una vez abierto, el editor de modelos muestra lo siguiente:
 
    * A la izquierda: los campos ya definidos.
-   * A la derecha: los **Tipos de datos** disponibles para crear campos (y **Propiedades** para su uso una vez creados los campos).
+   * A la derecha: los **Tipos de datos** disponibles para crear campos (y **Propiedades** para su uso una vez creados los campos)
 
    >[!NOTE]
    >
@@ -183,7 +183,7 @@ El contenido (para el campo específico) debe ser único en todos los fragmentos
 
   >[!CAUTION]
   >
-  >Si desea utilizar MSM (que crea copias de fragmentos de contenido), utilice cualquiera **Único** Las restricciones de deben eliminarse de cualquier tipo de datos utilizado en los respectivos modelos de fragmentos de contenido. MSM para fragmentos de contenido solo está disponible en **Assets** consola.
+  >Si desea utilizar MSM (que crea copias de fragmentos de contenido), cualquier restricción **única** se debe eliminar de cualquier tipo de datos utilizado en los respectivos modelos de fragmentos de contenido. MSM para fragmentos de contenido solo está disponible en la consola de **Assets**.
 
 * Consulte **[Referencia de contenido](#content-reference)** para obtener más información acerca de ese tipo de datos específico y sus propiedades.
 

@@ -6,7 +6,7 @@ role: Admin
 source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 74%
+ht-degree: 95%
 
 ---
 
@@ -26,27 +26,27 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 ## Monitorización del estado de las instancias de flujo de trabajo {#monitoring-the-status-of-workflow-instances}
 
 1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
-1. Seleccionar **Instancias** para mostrar la lista de instancias de flujo de trabajo en ejecución que están actualmente en curso.
-1. En el carril superior, en la esquina derecha, las instancias de flujo de trabajo muestran **Ejecución de flujos de trabajo**, **Estado**, y **Detalles**.
-1. **Ejecución de flujos de trabajo** muestra el número de flujos de trabajo en ejecución y su estado. por ejemplo, en las imágenes dadas, se muestra el número de **Ejecución de flujos de trabajo** y el **Estado** AEM de la instancia:
+1. Seleccione **Instancias** para mostrar la lista de instancias de flujo de trabajo actualmente en curso.
+1. En el carril superior, en la esquina derecha, las instancias de flujo de trabajo muestran **Flujos de trabajo en ejecución**, **Estado** y **Detalles**.
+1. **Flujos de trabajo en ejecución** muestra el número de flujos de trabajo en ejecución y su estado. por ejemplo, en las imágenes especificadas, se muestra el número de **Flujos de trabajo en ejecución** y el **Estado** de la instancia de AEM:
 
    * **Estado: Correcto**
-     ![saludable](/help/sites-cloud/administering/assets/status-healthy.png)
+     ![estado-correcto](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Estado: Incorrecto**
-     ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
+     ![estado-incorrecto](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
-1. Para **Detalles del estado** de instancias de flujo de trabajo, haga clic en **Detalles**, para mostrar el **número de instancias de flujos de trabajo en ejecución**, **instancias de flujo de trabajo completadas**, **instancias de flujo de trabajo anuladas**, **instancias de flujo de trabajo fallidas**, etc. por ejemplo, a continuación se muestran las imágenes determinadas que muestran **Detalles del estado** con:
+1. En **Detalles del estado** de instancias de flujo de trabajo, haga clic en **Detalles**, para mostrar el **número de instancias de flujos de trabajo en ejecución**, **instancias de flujo de trabajo completadas**, **instancias de flujo de trabajo anuladas**, **instancias de flujo de trabajo fallidas**, etc. por ejemplo, a continuación se muestran las imágenes determinadas que muestran **Detalles del estado** con:
 
    * **Detalles del estado: Correcto**
-     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
+     ![detalles-estado-correcto](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Detalles del estado: no saludable**
-     ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+     ![detalles-estado-incorrecto](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > Para mantener la instancia de flujo de trabajo en buen estado, siga las prácticas recomendadas en [depuración regular de instancias de flujo de trabajo](#regular-purging-of-workflow-instances) o [prácticas recomendadas de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en).
+   > Para mantener la instancia de flujo de trabajo en buen estado, siga las prácticas recomendadas en [depuración regular de las instancias de flujo de trabajo](#regular-purging-of-workflow-instances) o [prácticas recomendadas del flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=es).
 
 ## Buscar instancias de flujo de trabajo {#search-workflow-instances}
 
@@ -61,7 +61,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
    * Modelo de flujo de trabajo: Seleccionar un modelo de flujo de trabajo
    * Usuario asignado: Seleccione un usuario asignado del flujo de trabajo
    * Tipo: Tarea, elemento de flujo de trabajo o error de flujo de trabajo
-   * Estado de la tarea: Activo, completado o finalizado
+   * Estado de la tarea: activo, completado o finalizado
    * Donde Estoy: Propietario AND usuario asignado, solo propietario, solo usuario asignado
    * Fecha de inicio: Fecha de inicio antes o después de una fecha especificada
    * Fecha de finalización: Fecha de finalización anterior o posterior a una fecha especificada
@@ -82,7 +82,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
    >[!NOTE]
    >
    >
-   >Para finalizar o cancelar un flujo de trabajo, debe estar en estado de espera de la intervención del usuario, como en un paso de participante. Es posible que al intentar anular un flujo de trabajo que está ejecutando trabajos en ese momento (subprocesos activos que están en ejecución) no se produzcan los resultados esperados.
+   >Para finalizar o cancelar un flujo de trabajo, debe encontrarse en un estado de espera de intervención del usuario, como ocurre en la Etapa de participante. Es posible que al intentar anular un flujo de trabajo que está ejecutando trabajos en ese momento (subprocesos activos que están en ejecución) no se produzcan los resultados esperados.
 
 
 ## Visualización de flujos de trabajo archivados {#viewing-archived-workflows}
@@ -91,7 +91,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 
 1. Seleccione **Archivo** para mostrar la lista de instancias de flujo de trabajo que se completaron correctamente.
 
-   ![instancias archivadas](/help/sites-cloud/administering/assets/archived-instances.png)
+   ![instancias-archivadas](/help/sites-cloud/administering/assets/archived-instances.png)
 
    >[!NOTE]
    >
@@ -99,7 +99,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
    >El estado de anulación se considera una terminación satisfactoria, ya que ocurre como resultado de la acción del usuario; por ejemplo:
    >
    >* uso de la acción **Finalizar**
-   >* cuando se elimina una página sujeta a un flujo de trabajo, este finaliza y se fuerza el flujo de trabajo.
+   >* cuando se elimina (a la fuerza) una página sujeta a un flujo de trabajo, a continuación, el flujo de trabajo finaliza.
 
 1. Seleccione un elemento específico y luego **Abrir historial** para ver más detalles:
 
@@ -110,14 +110,14 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 Cuando falla un flujo de trabajo, AEM proporciona la consola **Errores** para que pueda investigar y tomar las medidas adecuadas una vez que se haya manejado la causa original:
 
 * **Detalles del error**
-Abre una ventana para mostrar el **Mensaje de error**, **Step y **Pila de errores**.
+Abre una ventana para mostrar el **Mensaje de error**, **Paso y **Pila de errores**.
 
 * **Abrir historial**
 Muestra detalles del historial del flujo de trabajo.
 
 * **Paso de reintento** Ejecuta de nuevo la instancia del componente Paso de script. Utilice el comando Paso de reintento después de haber corregido la causa del error original. Por ejemplo, vuelva a intentar el paso después de corregir un error en el script que ejecuta el Paso de proceso.
 * **Finalizar** Finalice el flujo de trabajo si el error ha provocado una situación irreconciliable. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio, que ya no son válidas para la instancia de flujo de trabajo.
-* **Finalizar y volver a intentar** similar a **Finalizar** excepto que se inicia una nueva instancia de flujo de trabajo utilizando la carga útil, el título y la descripción originales.
+* **Finalizar y reintentar** similar a **Finalizar**, excepto que se inicia una nueva instancia de flujo de trabajo utilizando la carga útil, el título y la descripción originales.
 
 Para investigar los errores y luego reanudar o finalizar el flujo de trabajo más tarde, siga estos pasos:
 
@@ -126,15 +126,15 @@ Para investigar los errores y luego reanudar o finalizar el flujo de trabajo má
 1. Seleccione **Errores** para mostrar la lista de instancias de flujo de trabajo que no se completaron correctamente.
 1. Seleccione un elemento específico y luego la acción apropiada:
 
-![workflow-failure](/help/sites-cloud/administering/assets/workflow-failure.png)
+![error-flujo de trabajo](/help/sites-cloud/administering/assets/workflow-failure.png)
 
 ## Depuración regular de instancias de flujo de trabajo {#regular-purging-of-workflow-instances}
 
 Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujo de trabajo, por lo que puede depurar con regularidad las instancias de flujo de trabajo completadas o en ejecución desde el repositorio.
 
-Configurar **Configuración de depuración del flujo de trabajo de Adobe Granite** para depurar instancias de flujo de trabajo según su antigüedad y estado. También puede depurar instancias de flujo de trabajo de todos los modelos o de uno específico.
+Configure **Configuración de depuración del flujo de trabajo de Adobe Granite** para depurar instancias de flujo de trabajo según su antigüedad y estado. También puede depurar instancias de flujo de trabajo de todos los modelos o de uno específico.
 
-También puede crear varias configuraciones del servicio para depurar instancias de flujo de trabajo que cumplan distintos criterios. Por ejemplo, cree una configuración que depure las instancias de un modelo de flujo de trabajo concreto cuando se ejecuten durante mucho más tiempo del esperado. Cree otra configuración que depure todos los flujos de trabajo completados después de algunos días para minimizar el tamaño del repositorio.
+También puede crear varias configuraciones del servicio para depurar instancias de flujo de trabajo que cumplan distintos criterios. Por ejemplo, cree una configuración que depure las instancias de un modelo de flujo de trabajo concreto cuando se ejecuten durante mucho más tiempo del esperado. Cree otra configuración que depure todos los flujos de trabajo completados después de un determinado número de días para minimizar el tamaño del repositorio.
 
 Para configurar el servicio, puede configurar los archivos de configuración OSGi. Vea [Archivos de configuración OSGi](/help/implementing/deploying/configuring-osgi.md). En la tabla siguiente, se describen las propiedades que necesita para cualquiera de los métodos.
 
@@ -192,7 +192,7 @@ Puede configurar el tamaño máximo de la bandeja de entrada configurando el **S
 
 ## Uso de variables de flujo de trabajo para almacenes de datos propiedad del cliente {#using-workflow-variables-customer-datastore}
 
-Los datos procesados por flujos de trabajo se almacenan en el almacenamiento proporcionado por el Adobe (JCR). Estos datos pueden ser de naturaleza delicada. Es posible que desee guardar todos los metadatos/datos definidos por el usuario en su propio almacenamiento administrado en lugar del almacenamiento proporcionado por el Adobe. Estas secciones describen cómo configurar estas variables para el almacenamiento externo.
+Los datos procesados por flujos de trabajo se almacenan en el almacenamiento proporcionado por el Adobe (JCR). Estos datos pueden ser de naturaleza delicada. Es posible que desee guardar todos los metadatos/datos definidos por el usuario en su propio almacenamiento administrado en lugar del almacenamiento proporcionado por Adobe. En estas secciones se describe cómo configurar estas variables para el almacenamiento externo.
 
 ### Establecer el modelo para que utilice el almacenamiento externo de metadatos {#set-model-for-external-storage}
 

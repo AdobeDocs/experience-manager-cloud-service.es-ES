@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -133,7 +133,7 @@ Hay varios componentes principales de esta nueva arquitectura:
 
       * Se adapta automáticamente según las necesidades de tráfico del sitio.
 
-      * Sin embargo, de forma predeterminada hay un único conjunto de servidores de publicación en la región principal [regiones de publicación adicionales](/help/operations/additional-publish-regions.md) puede tener licencia.
+      * De forma predeterminada hay un único conjunto de servidores de publicación en la región principal, sin embargo, pueden tener licencia [regiones de publicación adicionales](/help/operations/additional-publish-regions.md).
 
       * Los usuarios finales, o los visitantes del sitio, visitan el sitio web a través del servicio de AEM Publish.
 

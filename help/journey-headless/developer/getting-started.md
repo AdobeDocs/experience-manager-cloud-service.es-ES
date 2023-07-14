@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3084'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ Una vez creado el contenido en el ejemplo de autor, debe publicarse para que est
 
 ### Servicio de previsualización {#preview}
 
-Antes de publicar en la instancia de publicación, también puede publicar el fragmento de contenido en **Servicio de previsualización** para pruebas y revisiones. Esto se hace desde el **Fragmentos de contenido** consola.
+Antes de publicar en la instancia de publicación, también puede publicar el fragmento de contenido en **Servicio de previsualización** para pruebas y revisiones. Esto se realiza desde la consola **Fragmentos de contenido**.
 
 ### Replicación {#replication}
 

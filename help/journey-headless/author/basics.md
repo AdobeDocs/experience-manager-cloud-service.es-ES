@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1715'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -30,7 +30,7 @@ Antes de comprender los fragmentos de contenido, aquí tiene una muy rápida int
 
 ### Creación, previsualización y publicación {#author-preview-publish}
 
-AEM Por lo general, una instalación de consta de tres entornos:
+Por lo general, una instalación de AEM consta de tres entornos:
 
 * Autor
 * Publicación
@@ -40,7 +40,7 @@ Inicie sesión y utilice el entorno de creación para generar su contenido. Cuan
 
 Para obtener más información, consulte Conceptos de creación.
 
-Desde el **Fragmentos de contenido** consola, también puede publicar en el **Servicio de previsualización**, para pruebas y previsualizaciones, antes de Publicar. Consulte Publicación y previsualización de un fragmento.
+Desde la consola de **Fragmentos de contenido**, también puede publicar en el **Servicio de previsualización**, para pruebas y previsualizaciones, antes de Publicar. Consulte Publicación y previsualización de un fragmento.
 
 ### Inicio de sesión {#signing-in}
 
@@ -272,7 +272,7 @@ Las acciones de publicación están disponibles en el editor:
 
 >[!NOTE]
 >
->También puede publicar el fragmento desde el **Assets** o **Fragmentos de contenido** consola.
+>También puede publicar su fragmento tanto desde la consola de **Archivos** como desde **Fragmentos de contenido**.
 
 ## Siguientes pasos {#whats-next}
 
@@ -284,13 +284,13 @@ Ahora que ha aprendido lo básico, el siguiente paso es [Obtener información so
 
 * [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md): esta página se basa principalmente en la consola **Sites**, pero la mayoría de funciones también son relevantes para la creación de los **Fragmentos de contenido** debajo de la consola **Recursos**.
 
-   * [Panel de navegación   ](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+   * [Panel de navegación](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 
    * [Encabezado](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
 
    * [Barra de herramientas de acciones](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
 
-   * [Acciones rápidas   ](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Acciones rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
 
    * [Visualización y selección de los recursos](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 
@@ -308,13 +308,13 @@ Ahora que ha aprendido lo básico, el siguiente paso es [Obtener información so
 
    * Publicación
 
-      * Desde el editor, o **Assets** consolar
+      * Desde el editor, o la consola de **Archivos**
 
-         * [Publicación rápida ](/help/assets/manage-publication.md#quick-publish)
+         * [Publicación rápida](/help/assets/manage-publication.md#quick-publish)
 
          * [Administrar publicación](/help/assets/manage-publication.md#manage-publication)
 
-      * Desde el **Fragmentos de contenido** Consola
+      * Desde la consola de **Fragmentos de contenido**
 
          * [Publicación y previsualización de un fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
 

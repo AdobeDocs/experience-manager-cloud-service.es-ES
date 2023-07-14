@@ -6,7 +6,7 @@ exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 83%
+ht-degree: 92%
 
 ---
 
@@ -359,7 +359,7 @@ Para administrar la caché globalmente, puede [configurar la configuración de O
 
 >[!NOTE]
 >
->El **Configuración del servicio de consultas persistentes** también se utiliza para [configuración del código de respuesta de consulta](#configuring-query-response-code).
+>La **Configuración del servicio de consultas persistentes** también se utiliza para la [configuración del código de respuesta de la consulta](#configuring-query-response-code).
 
 La configuración de OSGi predeterminada para instancias de publicación:
 
@@ -378,19 +378,21 @@ La configuración de OSGi predeterminada para instancias de publicación:
 
 ## Configuración del código de respuesta a la consulta {#configuring-query-response-code}
 
-De forma predeterminada, la variable `PersistedQueryServlet` envía un `200` respuesta cuando ejecuta una consulta, independientemente del resultado real.
+De forma predeterminada, la `PersistedQueryServlet` envía una respuesta `200` cuando ejecuta una consulta, independientemente del resultado real.
 
-Puede [configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para el **Configuración del servicio de consultas persistentes** para controlar qué código de estado devuelve el `/execute.json/persisted-query` extremo, cuando hay un error en la consulta persistente.
+Puede [configurar el OSGi](/help/implementing/deploying/configuring-osgi.md) para la **Configuración del servicio de consultas persistentes** para controlar qué código de estado devuelve el punto final`/execute.json/persisted-query`, cuando hay un error en la consulta persistente.
 
 >[!NOTE]
 >
->El **Configuración del servicio de consultas persistentes** también se utiliza para [administrar caché](#cache-osgi-configration).
+>La **Configuración del servicio de consultas persistentes** también se utiliza para [administrar caché](#cache-osgi-configration).
 
 El campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) se puede definir según sea necesario:
 
-* `false` (valor predeterminado): No importa si la consulta persistente es correcta o no. El `/execute.json/persisted-query` devuelve el código de estado `200` y el `Content-Type` el encabezado devuelto es `application/json`.
+* `false` (valor predeterminado):
+No importa si la consulta persistente es correcta o no. El `/execute.json/persisted-query` devuelve el código de estado `200` y el `Content-Type` el encabezado devuelto es `application/json`.
 
-* `true`: el punto final devolverá `400` o `500` según corresponda, cuando haya algún tipo de error al ejecutar la consulta persistente. Además, la variable devuelta `Content-Type` es `application/graphql-response+json`.
+* `true`:
+el punto final devolverá `400` o `500` según corresponda, cuando haya algún tipo de error al ejecutar la consulta persistente. Además, la variable devuelta `Content-Type` es `application/graphql-response+json`.
 
   >[!NOTE]
   >

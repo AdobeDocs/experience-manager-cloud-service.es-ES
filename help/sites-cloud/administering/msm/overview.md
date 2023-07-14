@@ -7,7 +7,7 @@ exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2706'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Esta página proporciona información general sobre cómo reutilizar contenido c
 
 >[!NOTE]
 >
->MSM también se puede utilizar para Recursos, incluidos Fragmentos de contenido. Para obtener más información, consulte [Reutilización de fragmentos de contenido mediante MSM para recursos](/help/assets/reuse-assets-using-msm.md) (solo disponible a través de la consola Recursos ).
+>MSM también se puede utilizar para Assets, incluidos los Fragmentos de contenido. Para obtener más información, consulte [Reutilización de fragmentos de contenido mediante MSM para Assets](/help/assets/reuse-assets-using-msm.md) (solo disponible a través de la consola Assets).
 
 ## Posibles escenarios {#possible-scenarios}
 
@@ -153,7 +153,7 @@ Como introducción, la siguiente tabla proporciona una descripción general de l
 | Término | Definición | Más detalles |
 |---|---|---|
 | Origen | Las páginas originales utilizadas como base para Live Copies | Sinónimo de páginas de modelos o modelos |
-| Live Copy    | La copia (del origen), mantenida mediante acciones de sincronización definidas según las configuraciones de despliegue |  |
+| Live Copy | La copia (del origen), mantenida mediante acciones de sincronización definidas según las configuraciones de despliegue |  |
 | Configuración de Live Copy | Definición de los detalles de configuración de una Live Copy |  |
 | Relación activa | Definición efectiva de la herencia para un recurso determinado, es decir, la conexión entre el origen y Live Copies | Garantiza que los cambios en el origen se puedan sincronizar con Live Copy |
 | Modelo | Sinónimo de origen | Se puede definir mediante una configuración de modelo |
@@ -340,6 +340,6 @@ MSM proporciona herramientas para que su implementación se pueda adaptar a las 
 * **Custom Synchronization Actions** - [Create a custom synchronization action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) when the installed actions do not meet your specific application requirements. MSM provides a Java API for creating custom synchronization actions.
 -->
 
-## Prácticas recomendadas   {#best-practices}
+## Prácticas recomendadas {#best-practices}
 
 La página [Prácticas recomendadas de MSM](best-practices.md) contiene información importante sobre la implementación.

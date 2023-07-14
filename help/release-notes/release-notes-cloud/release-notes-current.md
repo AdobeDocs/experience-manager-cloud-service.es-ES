@@ -1,12 +1,12 @@
 ---
-title: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de la versión actuales de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: b738d351a8ec607bef6c82880616061a88968e7f
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 16%
+ht-degree: 33%
 
 ---
 
@@ -16,7 +16,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 >[!NOTE]
 >
->Desde aquí puede navegar hasta las notas de versiones anteriores, como 2021 o 2022.
+>Desde aquí puede navegar hasta las notas de la versión de versiones anteriores, como 2021 o 2022.
 >
 >Eche un vistazo a la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información acerca de las próximas activaciones de funcionalidades para [!DNL Experience Manager] as a Cloud Service.
 
@@ -26,7 +26,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versión de la función actual (2023.6.0) es el 29 de junio de 2023. La próxima versión de la funcionalidad (2023.7.0) está planificada para el 27 de julio de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.6.0) es el 29 de junio de 2023. La próxima versión de la funcionalidad (2023.7.0) está planificada para el 27 de julio de 2023.
 
 ## Vídeo de la versión {#release-video}
 
@@ -38,7 +38,7 @@ Eche un vistazo al vídeo Información general sobre la versión de junio de 202
 
 ### Nuevas funciones de [!DNL Experience Manager Sites] {#sites-features}
 
-* Los fragmentos de contenido y sus referencias ahora se pueden publicar en [AEM Servicio de previsualización de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) uso del [Consola de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), permitiendo a los usuarios previsualizar la experiencia final en una aplicación de vista previa disociada antes de lanzarse.
+* Los fragmentos de contenido y sus referencias ahora se pueden publicar en el [Servicio de previsualización de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=es#access-preview-service) mediante la [consola de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es), permitiendo a los usuarios previsualizar la experiencia final en una aplicación de vista previa disociada antes de lanzarse.
 * AEM Ahora, las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante GraphQL de la aplicación de la forma más rápida y sencilla. [Variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) se puede definir en las consultas de GraphQL AEM para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de los usuarios de la aplicación de la forma que se va a.
 * Etiquetas en [Variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) AEM ahora se puede enviar a JSON mediante la API de entrega de contenido de GraphQL de la.
 
@@ -72,7 +72,7 @@ Una nueva experiencia de usuario mejorada para [crear vínculos compartidos](/he
 
 **Dynamic Media: se han actualizado los campos relacionados con los recortes inteligentes en el perfil de imagen**
 
-La interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen ahora se actualiza para reflejar las directrices actuales para definir un recorte inteligente. Consulte [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+La interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen ahora se actualiza para reflejar las directrices actuales para definir un recorte inteligente. Consulte las [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=es#crop-options).
 
 ### Nuevas funciones de la vista Recursos {#assets-view-features}
 
@@ -119,11 +119,11 @@ La vista de recursos ahora le permite [adición de texto de varios valores y com
 
 * [Uso de Adobe Acrobat Sign Solutions para Administración Pública (Queja de HIPPA) con AEM Forms](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign Solutions para Administración Pública. Esta integración proporciona un nivel avanzado de cumplimiento y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con el gobierno (departamentos y agencias gubernamentales).
 
-  La integración con Adobe Acrobat Sign Solutions para Administración Pública permite a los socios de Adobe y a los clientes gubernamentales utilizar firmas electrónicas en Forms adaptable para algunas de las líneas de negocio más importantes y sensibles. Este nivel adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con la normativa FedRAMP Moderate, lo que proporciona tranquilidad a los clientes gubernamentales de Adobe.
+  La integración con Adobe Acrobat Sign Solutions para Administración Pública permite a los socios de Adobe y a los clientes gubernamentales utilizar firmas electrónicas en Forms adaptable para algunas de las líneas de negocio más importantes y sensibles. Este nivel adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con la normativa FedRAMP Moderate, lo que proporciona tranquilidad a los clientes de la administración pública de Adobe.
 
-* [Tratamiento de errores mejorado con controladores de error personalizados en el editor de reglas](/help/forms/add-custom-error-handler-adaptive-forms.md): Ahora puede invocar una función personalizada (mediante la Biblioteca de clientes) en respuesta a un error devuelto por un servicio externo y proporcionar una respuesta adaptada a los usuarios finales. O bien, puede realizar acciones específicas en busca de errores devueltos por un servicio. Por ejemplo, puede invocar un flujo de trabajo personalizado en el backend para códigos de error específicos o informar al cliente de que el servicio está inactivo.
+* [Tratamiento de errores mejorado con controladores de error personalizados en el editor de reglas](/help/forms/add-custom-error-handler-adaptive-forms.md): Ahora puede invocar una función personalizada (mediante la Biblioteca de clientes) en respuesta a un error devuelto por un servicio externo y proporcionar una respuesta adaptada a los usuarios finales. O bien, puede realizar acciones específicas en busca de errores devueltos por un servicio. Por ejemplo, puede invocar un flujo de trabajo personalizado en el back-end para códigos de error específicos o informar al cliente de que el servicio está inactivo.
 
-  Esta funcionalidad ayuda a mejorar su capacidad general de gestión de errores mediante la introducción de respuestas de error basadas en estándares compatibles con los controladores de error OOTB, con buena flexibilidad y control.
+  Esta funcionalidad ayuda a mejorar su capacidad general de gestión de errores mediante la introducción de respuestas de error basadas en estándares compatibles con los controladores de errores OOTB, con buena flexibilidad y control.
 
 * [Métodos de autenticación mejorados para el modelo de datos de formulario](/help/forms/configure-data-sources.md): Disfrute de una mayor seguridad con la introducción de la autenticación basada en credenciales de cliente para conectar AEM Forms (modelos de datos de formulario) con fuentes de datos compatibles. Esta mejora elimina la necesidad de suplantación o inicio de sesión del usuario, lo que refuerza la protección de los datos.
 
@@ -142,9 +142,9 @@ Uso [Forms adaptable sin encabezado](https://experienceleague.adobe.com/docs/exp
 * crear formularios multicanal de alta calidad en el lenguaje de programación que desee
 * integrar formularios de forma nativa en sus aplicaciones móviles y de escritorio, sitios web y aplicaciones de chat
 * reutilizar los componentes de IU propios con aplicaciones de formularios
-* utilice la potencia de Adobe Experience Manager Forms
+* aprovechar la potencia de Adobe Experience Manager Forms
 
-Puede enviar un correo electrónico a `aem-forms-headless@adobe.com` desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez.
+Puede enviar un correo electrónico a `aem-forms-headless@adobe.com` desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios.
 
 
 ## Notas de la versión de mantenimiento {#maintenance}

@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
 source-wordcount: '1752'
-ht-degree: 74%
+ht-degree: 80%
 
 ---
 
@@ -369,7 +369,7 @@ Si:
 * crear varias etiquetas, con el nombre `Tourism` : `Business`, `City Break`, `Holiday`
 * y asignarlas a la variación Principal de varios `City` instances
 
-A continuación, puede utilizar una consulta para devolver detalles de la `name` y `tags`de todas las entradas etiquetadas como City Breaks en la `city`esquema.
+Entonces puede utilizar una consulta para devolver detalles de la `name` y `tags`de todas las entradas etiquetadas como City Breaks en el `city`esquema.
 
 **Consulta de muestra**
 
@@ -1310,7 +1310,7 @@ Esta consulta de muestra busca lo siguiente:
 }
 ```
 
-### Consulta de muestra para un fragmento de contenido anidado: tipo de modelo único {#sample-wknd-nested-fragment-single-model}
+### Consulta de muestra para un fragmento de contenido anidado: tipo de modelo único{#sample-wknd-nested-fragment-single-model}
 
 Esta consulta busca lo siguiente:
 
@@ -1338,14 +1338,14 @@ Esta consulta busca lo siguiente:
 }
 ```
 
-### Consulta de muestra para un fragmento de contenido anidado: tipo de modelo múltiple {#sample-wknd-nested-fragment-multiple-model}
+### Consulta de muestra para un fragmento de contenido anidado: tipo de modelo múltiple{#sample-wknd-nested-fragment-multiple-model}
 
 #### Tipo de modelo al que se hace referencia única
 
 Esta consulta busca lo siguiente:
 
 * para varios fragmentos de contenido de tipo `bookmark`
-   * con Referencias de fragmento a otros fragmentos de tipos de modelo específicos `Article` 
+   * con Referencias de fragmento a otros fragmentos de tipos de modelo específicos `Article`
 
 >[!NOTE]
 >
@@ -1394,7 +1394,7 @@ Esta consulta busca lo siguiente:
 }
 ```
 
-### Consulta de muestra para un fragmento de contenido de un modelo específico con referencias de contenido {#sample-wknd-fragment-specific-model-content-reference}
+### Consulta de muestra para un fragmento de contenido de un modelo específico con referencias de contenido{#sample-wknd-fragment-specific-model-content-reference}
 
 Hay dos tipos de consulta:
 
@@ -1582,7 +1582,7 @@ Esta consulta busca lo siguiente:
 }
 ```
 
-### Consulta de muestra para varios fragmentos de contenido y sus variaciones de un modelo determinado {#sample-wknd-multiple-fragment-variations-given-model}
+### Consulta de muestra para varios fragmentos de contenido y sus variaciones de un modelo dado {#sample-wknd-multiple-fragment-variations-given-model}
 
 Esta consulta busca lo siguiente:
 
@@ -1609,11 +1609,11 @@ query {
 }
 ```
 
-### Consulta de muestra para variaciones de fragmentos de contenido de un modelo determinado que tienen una etiqueta específica adjunta{#sample-wknd-fragment-variations-given-model-specific-tag}
+### Consulta de muestra para variaciones de fragmentos de contenido de un modelo dado que tienen una etiqueta específica adjunta{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 Esta consulta busca lo siguiente:
 
-* para fragmentos de contenido de tipo `article` con una o más variaciones que tienen la etiqueta `WKND : Activity / Hiking`
+* para fragmentos de contenido de tipo `article` con una o más variaciones que tiene la etiqueta `WKND : Activity / Hiking`
 
 **Consulta de muestra**
 

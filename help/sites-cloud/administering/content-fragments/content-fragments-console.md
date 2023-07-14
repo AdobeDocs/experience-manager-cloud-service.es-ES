@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1103'
-ht-degree: 89%
+ht-degree: 94%
 
 ---
 
@@ -125,9 +125,9 @@ Al pasar el ratón por encima del nombre de la carpeta, se muestra la ruta JCR.
    * Solo información
 * **Vista previa**
    * Solo información:
-      * **Sincronizado**: el fragmento de contenido está sincronizado en el **Autor** y **Previsualizar** servicios.
-      * **Fuera de sincronización**: el fragmento de contenido no está sincronizado en la **Autor** y **Previsualizar** servicios. Tienes que hacerlo **Publish** hasta **Previsualizar** para garantizar que las dos instancias vuelvan a estar sincronizadas.
-      * en blanco: El fragmento de contenido no existe en **Previsualizar** servicio.
+      * **Sincronizado**: el fragmento de contenido está sincronizado con los servicios de **Autor** y **Previsualización**.
+      * **Fuera de sincronización**: el fragmento de contenido no está sincronizado con los servicios de **Autor** y **Previsualización**. Es necesario **Publicar** para **Previsualizar** para garantizar que las dos instancias vuelvan a estar sincronizadas.
+      * en blanco: El fragmento de contenido no existe en el servicio de **Previsualización**.
 * **Modificado**
    * Solo información
 * **Modificado por**

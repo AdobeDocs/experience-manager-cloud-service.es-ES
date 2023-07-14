@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: af26c42ddd1594e5622e9b32334ce5508d097582
 workflow-type: tm+mt
 source-wordcount: '4174'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -145,7 +145,7 @@ ht-degree: 97%
          + [Notas de la versión 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Notas de la versión de Workfront para el conector mejorado de Experience Manager {#workfront}
       + [Notas de la versión de Workfront para el conector mejorado de Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + [¿Qué hay de nuevo? ](/help/release-notes/what-is-new.md)
+   + [¿Qué hay de nuevo?](/help/release-notes/what-is-new.md)
    + [Cambios importantes en AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Funciones en desuso y eliminadas](/help/release-notes/deprecated-removed-features.md)
    + [API obsoletas](/help/release-notes/deprecated-apis.md)
@@ -380,7 +380,7 @@ ht-degree: 97%
 + Assets {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [Información general y novedades](/help/assets/overview.md)
-   + [Cambios importantes en  [!DNL Assets]  como  [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
+   + [Cambios importantes en [!DNL Assets] como [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] arquitectura](/help/assets/architecture.md)
    + [Formatos de archivo compatibles](/help/assets/file-format-support.md)
    + [Información general sobre los microservicios de recursos](/help/assets/asset-microservices-overview.md)
@@ -399,7 +399,7 @@ ht-degree: 97%
       + [Etiquetas inteligentes para imágenes](/help/assets/smart-tags.md)
       + [Etiquetado inteligente de activos de vídeo](/help/assets/smart-tags-video-assets.md)
       + [Organizar recursos](/help/assets/organize-assets.md)
-      + [Uso  [!DNL Adobe Stock]  activos](/help/assets/aem-assets-adobe-stock.md)
+      + [Uso [!DNL Adobe Stock] activos](/help/assets/aem-assets-adobe-stock.md)
       + [Administrar colecciones](/help/assets/manage-collections.md)
       + [Información general sobre metadatos](/help/assets/manage-metadata.md)
       + [Integrar con [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
@@ -415,7 +415,7 @@ ht-degree: 97%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de  [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
    + Configuración, administración y ampliación de [!DNL Assets] {#admin}
@@ -436,9 +436,9 @@ ht-degree: 97%
       + [Importación y exportación metadatos de recursos](/help/assets/metadata-import-export.md)
       + [Configurar restricciones de carga de recursos](/help/assets/configure-asset-upload-restrictions.md)
    + Compartir y distribuir recursos {#brand-portal}
-      + [Configuración de  [!DNL Assets]  con  [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [Configuración de [!DNL Assets] con [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publicación de recursos en  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [Publicación de recursos desde  [!DNL Brand Portal]  en  [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es)
+      + [Publicación de recursos desde [!DNL Brand Portal] en [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es)
    + Fragmentos de contenido {#content-fragments}
       + [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
       + [Entrega sin encabezado con fragmentos de contenido y GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -524,22 +524,22 @@ ht-degree: 97%
    + Integración con Adobe Workfront {#integrations}
       + [Integraciones con  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configuración de la asignación de metadatos de recursos](/help/assets/configure-asset-metadata-mapping.md)
-      + [Instalación de  [!DNL enhanced connector]  para  [!DNL Workfront]](/help/assets/workfront-connector-install.md)
+      + [Instalación de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Eliminación de dependencias externas para instalaciones existentes](/help/assets/remove-external-dependencies.md)
-      + [Configuración de  [!DNL enhanced connector]  para  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Configuración de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Actualizar [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
    + Información general {#forms-overview}
       + [Introducción](/help/forms/home.md)
       + [Principales innovaciones de Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
-      + [Cambios importantes ](/help/forms/notable-changes.md)
+      + [Cambios importantes](/help/forms/notable-changes.md)
       + [Arquitectura](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Preguntas frecuentes](/help/forms/faq.md)
       + [Problemas conocidos](/help/forms/known-issues.md)
    + Configuración y migración {#setup-configure-migrate}
       + [Incorporación al entorno de Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configuración de un entorno de desarrollo local](/help/forms/setup-local-development-environment.md)
-      + [Habilitar los componentes principales de Forms adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+      + [Habilitar los componentes principales de formularios adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
       + [Configurar el conector de almacenamiento unificado](/help/forms/configure-unified-storage-connector.md)
       + [Migrar desde [!DNL AEM 6.5 Forms] o anterior a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos y permisos](/help/forms/forms-groups-privileges-tasks.md)
@@ -554,9 +554,9 @@ ht-degree: 97%
       + Modelo de datos de formulario {#use-form-data-model}
          + [Conexión de las fuentes de datos a Cloud Service](/help/forms/data-integration.md)
          + [Configuración de fuentes de datos](/help/forms/configure-data-sources.md)
-         + [Configuración de  [!DNL Microsoft Dynamics]  OData](/help/forms/ms-dynamics-odata-configuration.md)
+         + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
-         + [Configurar  [!DNL Microsoft Dynamics 365]  y  [!DNL Salesforce]  cloud services](/help/forms/configure-msdynamics-salesforce.md)
+         + [Configurar [!DNL Microsoft Dynamics 365] y [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
          + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)

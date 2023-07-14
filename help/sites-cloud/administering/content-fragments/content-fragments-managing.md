@@ -7,7 +7,7 @@ exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '2052'
-ht-degree: 76%
+ht-degree: 84%
 
 ---
 
@@ -241,13 +241,13 @@ Puede ver y editar las propiedades de un fragmento utilizando la pestaña [Metad
 
 Puede publicar los fragmentos de contenido en:
 
-* el **[Servicio de publicación](/help/overview/architecture.md#runtime-architecture)** - para acceso público completo
+* el **[Servicio de publicación](/help/overview/architecture.md#runtime-architecture)**: para acceso público y completo
 
-* el **[Servicio de previsualización](/help/overview/architecture.md#runtime-architecture)** : para previsualizar el contenido antes de la disponibilidad completa.
+* el **[Servicio de previsualización](/help/overview/architecture.md#runtime-architecture)**: para previsualizar el contenido antes de la disponibilidad completa
 
   >[!CAUTION]
   >
-  Publicación de fragmentos de contenido en **Servicio de previsualización** solo está disponible desde el [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); usando el **Publish** acción.
+  Publicación de fragmentos de contenido en el **Servicio de previsualización** solo está disponible desde la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); usando la acción **Publicar**.
 
   >[!NOTE]
   >
@@ -257,7 +257,7 @@ Puede publicar los fragmentos de contenido en:
   * [Configuración de OSGi para el nivel de vista previa](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
   * [Depuración de la vista previa mediante Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
-Para publicar los fragmentos de contenido con **Publish** en la barra de herramientas de la [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
+Para publicar los fragmentos de contenido con la opción **Publicar** en la barra de herramientas de la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
 >
@@ -267,7 +267,7 @@ Si publica un fragmento de contenido para el que el modelo aún no se ha publica
 
 1. Seleccione uno o varios fragmentos de la lista.
 
-1. En la barra de herramientas, seleccione **Publish** y, a continuación, una de las siguientes opciones para abrir el cuadro de diálogo correspondiente:
+1. En la barra de herramientas, seleccione **Publicar** y, a continuación, una de las siguientes opciones para abrir el cuadro de diálogo correspondiente:
 
    * **Ahora** - seleccione la opción **Servicio de publicación**, o el **Servicio de previsualización**; después de la confirmación, el fragmento se publica inmediatamente
    * **Programación** : además del servicio requerido, también puede seleccionar la fecha y la hora de publicación del fragmento
@@ -278,7 +278,7 @@ Por ejemplo, para una solicitud de publicación programada:
 
 1. Confirme la acción de publicación.
 
-También puede publicar en el **Servicio de publicación** desde el [Editor de fragmentos de contenido](#toolbar-actions-in-the-content-fragment-editor) uso de:
+También puede publicar en el **Servicio de publicación** desde el [Editor de fragmentos de contenido](#toolbar-actions-in-the-content-fragment-editor) utilizando:
 * **Publicación rápida**
 * **Administrar publicación**
 
@@ -292,10 +292,10 @@ AEM Una vez publicado un fragmento, referenciado o ambos, muestra una advertenci
 
 ## Cancelación de la publicación de un fragmento {#unpublishing-a-fragment}
 
-Para cancelar la publicación de fragmentos de contenido, seleccione uno o varios fragmentos y, a continuación, **Cancelar publicación** en la barra de herramientas de [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). Puede seleccionar **Ahora** o **Programado**.
+Para cancelar la publicación de fragmentos de contenido, seleccione uno o varios fragmentos y, a continuación, **Cancelar la publicación** en la barra de herramientas de la [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). Puede seleccionar **Ahora** o **Programado**.
 
 Cuando se abra el cuadro de diálogo correspondiente, puede seleccionar el servicio adecuado:
-![Cancelar publicación](assets/cfm-unpublish-01.png)
+![Cancelar la publicación del cuadro de diálogo](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
 >

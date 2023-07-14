@@ -7,7 +7,7 @@ exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '2461'
-ht-degree: 84%
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ En la pestaña **Variaciones** puede hacer lo siguiente:
 * [Introducir el contenido](#authoring-your-content) para el fragmento,
 * [Crear y administrar variaciones](#managing-variations) del contenido **Principal**,
 
-Realizar una serie de otras acciones en función del tipo de datos que se esté editando; por ejemplo:
+Realizar una serie de acciones diferentes en función del tipo de datos que se esté editando; por ejemplo:
 
 * [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment) (imágenes)
 
@@ -48,7 +48,7 @@ Por ejemplo:
 
 Puede hacer lo siguiente:
 
-* Edite el contenido directamente en la pestaña **Variaciones** pestaña; cada tipo de datos proporciona diferentes opciones de edición, por ejemplo:
+* Edite el contenido directamente en la pestaña de **Variaciones**; cada tipo de datos proporciona diferentes opciones de edición, por ejemplo:
 
    * para los campos **Texto de varias líneas** también puede abrir los campos [editor de pantalla completa](#full-screen-editor) a:
 
@@ -65,11 +65,11 @@ Puede hacer lo siguiente:
       * Si busca una etiqueta, se devolverá el fragmento con la variación etiquetada resaltada.
       * Las etiquetas de variación también se pueden utilizar para agrupar variaciones para un perfil específico de la red de distribución de contenido (CDN) (para el almacenamiento en caché de CDN), en lugar de utilizar el nombre de variación.
 
-     Por ejemplo, puede etiquetar fragmentos relevantes como &quot;lanzamiento de Navidad&quot; para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
+     Por ejemplo, puede etiquetar fragmentos relevantes como “lanzamiento de Navidad” para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
 
   >[!NOTE]
   >
-  >**Etiquetas** también se puede añadir (a la **Principal** variación) como parte de la [Metadatos](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+  >**Etiquetas** también se puede añadir (a la variación **Principal**) como parte de los [Metadatos](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [Crear y administrar variaciones](#managing-variations) del contenido **Principal.**
 
@@ -393,7 +393,7 @@ Hay varios métodos para agregar [imágenes](/help/sites-cloud/administering/con
 
    >[!CAUTION]
    >
-   Si, después de agregar una referencia a otro fragmento, cambia el formato a
+   Si, después de agregar una referencia a otro fragmento, cambia el formato a:
    >
    * **Texto sin formato**: la referencia se pierde completamente del fragmento.
    * **Markdown**: la referencia se mantendrá.
@@ -425,7 +425,7 @@ Para crear una nueva variación, haga lo siguiente:
 
    >[!NOTE]
    >
-   Al crear una nueva variación, todas las variables **Etiquetas** asignado actualmente a **Principal** se copian en la nueva variación.
+   Al crear una nueva variación, todas las **Etiquetas** asignadas actualmente a la variación **Principal** se copian en la nueva variación.
 
 ### Edición de una variación {#editing-a-variation}
 
@@ -478,7 +478,7 @@ La sincronización solo está disponible para copiar cambios *de **Principal**a 
 >
 Solo se sincroniza el elemento actual de la variación.
 >
-La sincronización solo funciona en **Texto de varias líneas** tipo de datos.
+La sincronización solo funciona en el tipo de datos de **texto de varias líneas**.
 >
 No está disponible como opción la transferencia de cambios *de una variación **a Principal***.
 

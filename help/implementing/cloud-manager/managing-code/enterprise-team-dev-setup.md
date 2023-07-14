@@ -5,7 +5,7 @@ exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1437'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -98,7 +98,7 @@ Con el repositorio de Git de Cloud Manager y la canalización de producción, el
 
 Por el contrario, sin un sistema de este tipo, ya que cada equipo puede realizar implementaciones por separado, existe el riesgo de que una actualización de un equipo único pueda provocar problemas de estabilidad de la producción. Además, se requiere coordinación y tiempo de inactividad planificado para implementar actualizaciones. Con un número cada vez mayor de equipos, el esfuerzo de coordinación se vuelve mucho más complejo y rápidamente inmanejable.
 
-Si se detecta un problema en las puertas de calidad, la producción no se verá afectada y el problema podrá detectarse y solucionarse sin que el personal de Adobe tenga que intervenir. Sin Cloud Service y sin probar siempre toda la implementación, las implementaciones parciales pueden provocar interrupciones que requieran una solicitud de reversión o incluso una restauración completa desde una copia de seguridad. Las pruebas parciales también podrían dar lugar a otros problemas que deben solucionarse, lo que también requeriría la coordinación y el apoyo del personal de Adobe.
+Si se detecta un problema en las puertas de calidad, la producción no se verá afectada y el problema podrá detectarse y solucionarse sin que el personal de Adobe tenga que intervenir. Sin Cloud Service y sin probar siempre toda la implementación, las implementaciones parciales pueden ocasionar interrupciones que requieran una solicitud de restablecimiento o incluso una restauración completa desde una copia de seguridad. Las pruebas parciales también podrían dar lugar a otros problemas que deben solucionarse, lo que también requeriría la coordinación y el apoyo del personal de Adobe.
 
 >[!TIP]
 >

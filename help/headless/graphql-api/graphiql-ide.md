@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1144'
-ht-degree: 83%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ La herramienta **GraphiQL** permite probar y depurar las consultas de GraphQL pe
 * ejecutar las consultas para ver inmediatamente los resultados
 * administrar **variables de consulta**
 * guardar y administrar **consultas persistentes**
-* publicar o cancelar la publicación, **Consultas persistentes**, ya sea a su **Publish** o **Previsualizar** servicio; por ejemplo, a/de `dev-publish`
+* publicar o cancelar la publicación, **Consultas persistentes**, ya sea a su servicio de **Publicación** o de **Previsualización**; por ejemplo, hacia/desde `dev-publish`
 * consultar el **historial** de las consultas anteriores
 * usar el **Explorador de documentación** para acceder a la documentación; le ayuda a conocer y comprender qué métodos están disponibles.
 
@@ -130,11 +130,11 @@ Las cachés pueden seguir ofreciendo una respuesta en caché en caso de error o 
 
 1. Seleccione **Guardar** para mantener los cambios.
 
-## Publicación y previsualización de consultas persistentes {#publishing-previewing-persisted-queries}
+## Publicación y vista previa de consultas persistentes {#publishing-previewing-persisted-queries}
 
-Una vez seleccionada la consulta persistente en la lista (panel izquierdo), puede utilizar el **Publish** acción.
+Una vez seleccionada la consulta persistente de la lista (panel izquierdo), puede utilizar la acción de **Publicación**.
 
-Esto activará la consulta en el entorno que seleccione. Puede elegir una de las siguientes opciones **Publish** entorno (por ejemplo, `dev-publish`), o su **Previsualizar** entorno para facilitar el acceso a las aplicaciones a la hora de realizar pruebas.
+Esto activará la consulta en el entorno que seleccione. Puede elegir tanto su entorno de **Publish** (por ejemplo, `dev-publish`), o su entorno de **Vista previa** para facilitar el acceso a las aplicaciones a la hora de realizar pruebas.
 
 ![Consulta persistente publicada en GraphiQL](assets/cfm-graphiql-publish.png "GraphiQL: publicar consulta persistente")
 
@@ -144,13 +144,13 @@ Esto activará la consulta en el entorno que seleccione. Puede elegir una de las
 
 ## Cancelar publicación de consultas persistentes {#unpublishing-persisted-queries}
 
-Al igual que al publicar, una vez seleccionada la consulta persistente en la lista (panel izquierdo), puede utilizar el **Cancelar publicación** acción.
+Al igual que al publicar, una vez seleccionada la consulta persistente en la lista (panel izquierdo), puede utilizar la acción de **Cancelar publicación**.
 
-Esto desactivará la consulta del entorno que seleccione; o bien su **Publish** entorno, o su **Previsualizar** entorno.
+Esto desactivará la consulta del entorno que seleccione; o bien su entorno **Publish**, o su bien su entorno **Vista previa**.
 
 >[!NOTE]
 >
->También debe asegurarse de haber realizado los cambios necesarios en la aplicación cliente para evitar posibles problemas.
+>También debe asegurarse de haber realizado los cambios necesarios en la aplicación del cliente para evitar posibles problemas.
 
 ## Copia de una URL para acceder directamente a la consulta {#copy-url}
 

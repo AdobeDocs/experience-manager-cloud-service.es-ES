@@ -311,7 +311,7 @@ En la tabla siguiente se describe cada estado que puede tener un trabajo o eleme
 
 | Estado | Descripción |
 |---|---|
-| **Borrador** | El trabajo de traducción no se ha iniciado. Los trabajos de traducción están en **Borrador** estado cuando se crean. |
+| **Borrador** | El trabajo de traducción no se ha iniciado. Los trabajos de traducción están en el estado **Borrador** cuando se crean. |
 | **Enviado** | Los archivos del trabajo de traducción tienen este estado cuando se han enviado correctamente al servicio de traducción. Este estado se puede producir después de que el comando **Ámbito de la solicitud** o **Inicio** se emita. |
 | **Previsión solicitada** | Para el flujo de trabajo de traducción humana, los archivos del trabajo se han enviado al proveedor de traducción para que los examine. Este estado aparece después de que el comando **Ámbito de la solicitud** se emita. |
 | **Previsión finalizada** | El proveedor ha creado un ámbito para el trabajo de traducción. |
@@ -444,7 +444,7 @@ Para comparar las copias de idioma con el maestro de idioma:
    ![Comparar copias de idioma](../assets/language-copy-compare.png)
 
 1. Las dos páginas (inicio y origen) se abren en paralelo.
-   * Para obtener información completa sobre el uso de esta función, consulte [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md).
+   * Para obtener información completa sobre el uso de esta funcionalidad, consulte [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Mover una página de origen o cambiarle el nombre {#move-source}
 

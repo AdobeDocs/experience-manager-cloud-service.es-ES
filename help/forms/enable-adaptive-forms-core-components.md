@@ -1,7 +1,7 @@
 ---
-title: Habilitar los componentes principales de Forms adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms
+title: Habilitar los componentes principales de formularios adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms
 seo-title: Step-by-Step Guide for enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment
-description: Obtenga información sobre cómo habilitar los componentes principales de Forms adaptables en AEM Forms as a Cloud Service con nuestra guía paso a paso. Nuestro tutorial le guiará por el proceso, lo que facilita la activación de esta potente función para su entorno de AEM Forms.
+description: Obtenga información sobre cómo habilitar los componentes principales de formularios adaptables en AEM Forms as a Cloud Service con nuestra guía paso por paso. Nuestro tutorial le guiará por el proceso, lo que facilita habilitar esta potente función para su entorno de AEM Forms.
 seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
 contentOwner: Khushwant Singh
 docset: CloudService
@@ -9,57 +9,57 @@ role: Admin
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 11%
+ht-degree: 94%
 
 ---
 
 
-# Habilitar los componentes principales de Forms adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Habilitar los componentes principales de formularios adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
-Al habilitar los componentes principales de Formularios adaptables en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer componentes principales basados en Formularios adaptables y Formularios sin encabezado mediante las instancias de Cloud Service de AEM Forms en varios canales. Se necesita un entorno habilitado para los componentes principales de Forms adaptable para utilizar Forms adaptable sin encabezado.
+Al habilitar los componentes principales de formularios adaptables en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer componentes principales basados en formularios adaptables y formularios sin encabezado mediante las instancias de Cloud Service de AEM Forms en varios canales. Se necesita un entorno habilitado para los componentes principales de formularios adaptables para utilizar formularios adaptables sin encabezado.
 
 ## Consideraciones
 
-* Cuando crea un nuevo programa as a Cloud Service de AEM Forms, [Los componentes principales de Forms adaptable y Forms adaptable sin encabezado ya están habilitados para su entorno](#are-adaptive-forms-core-components-enabled-for-my-environment).
+* Cuando crea un nuevo programa as a Cloud Service de AEM Forms, [los componentes principales de formularios adaptables y formularios adaptables sin encabezado ya están habilitados para su entorno](#are-adaptive-forms-core-components-enabled-for-my-environment).
 
-* Si tiene un programa as a Cloud Service de Forms anterior en el que los componentes principales estén [sin activar](#enable-components), puede [Añadir dependencias de componentes principales de Forms adaptable](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) AEM a su repositorio as a Cloud Service de la e implemente el repositorio en los entornos de su Cloud Service para habilitar Forms adaptable sin encabezado.
+* Si tiene un programa as a Cloud Service de formularios anterior en el que los componentes principales estén [sin habilitar](#enable-components), puede [añadir dependencias de componentes principales de formularios adaptables](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) a su repositorio de AEM as a Cloud Service e implementar el repositorio en los entornos de su Cloud Service para habilitar formularios adaptables sin encabezado.
 
 * Si el entorno de Cloud Service existente proporciona la opción de [crear Forms adaptable basado en componentes principales](creating-adaptive-form-core-components.md), los componentes principales de Forms adaptable y Forms adaptable sin encabezado ya están habilitados para su entorno y puede servir Forms adaptable basado en componentes principales como formularios sin encabezado para canales como móvil, web, aplicaciones nativas y servicios que requieren una representación sin encabezado de Forms adaptable.
 
 
-## Habilitar los componentes principales de Forms adaptables y Forms adaptable sin encabezado {#enable-headless-forms}
+## Habilitar los componentes principales de formularios adaptables y formularios adaptables sin encabezado {#enable-headless-forms}
 
-Realice los siguientes pasos, en el orden indicado, para habilitar los componentes principales de Forms adaptable y Forms adaptable sin encabezado para un entorno as a Cloud Service de AEM Forms
+Realice los siguientes pasos, en el orden indicado, para habilitar los componentes principales de formularios adaptables y formularios adaptables sin encabezado para un entorno as a Cloud Service de AEM Forms
 
 
 ![](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. Clone su repositorio Git as a Cloud Service de AEM Forms {#clone-git-repository}
+## 1. Clone su repositorio de Git de AEM Forms as a Cloud Service {#clone-git-repository}
 
-1. Iniciar sesión en [Cloud Manager](https://my.cloudmanager.adobe.com/) y seleccione su organización y programa.
+1. Inicie sesión en [Cloud Manager](https://my.cloudmanager.adobe.com/) y seleccione su organización y programa.
 
-1. Vaya a **Canalizaciones** Tarjeta de su **Resumen del programa** , haga clic en **Acceder a info del repositorio** para acceder y administrar su repositorio de Git. La página incluye la siguiente información:
+1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa** y pulse el botón **Acceder a la info del repositorio** para acceder y administrar su repositorio de Git. La página incluye la siguiente información:
 
-   * URL del repositorio Git de Cloud Manager.
-   * Credenciales del nombre de usuario de Git Repository (nombre de usuario y contraseña).
+   * La dirección URL del repositorio de Git de Cloud Manager.
+   * Credenciales del nombre de usuario del repositorio de Git (nombre de usuario y contraseña).
 
-   Clic **Generar contraseña** para ver o generar la contraseña.
+   Pulse en **Generar contraseña** para ver o generar la contraseña.
 
-1. Abra el terminal o el símbolo del sistema en el equipo local y ejecute el siguiente comando:
+1. Abra el terminal o el símbolo de comando en el equipo local de su ordenador y ejecute el siguiente comando:
 
    ```Shell
    git clone [Git Repository URL]
    ```
 
-   Cuando se le solicite, proporcione las credenciales. El repositorio se clona en el equipo local.
+   Cuando se le solicite, proporcione las credenciales. El repositorio se clona en su ordenador local.
 
 
-## 2. Añadir dependencias de componentes principales de Forms adaptables al repositorio de Git {#add-adaptive-forms-core-components-dependencies}
+## 2. Añadir dependencias de componentes principales de formularios adaptables al repositorio de Git {#add-adaptive-forms-core-components-dependencies}
 
-1. Abra la carpeta Repositorio de Git en un editor de código de texto sin formato. Por ejemplo, VS Code.
+1. Abra la carpeta del repositorio de Git en un editor de código de texto sin formato. Por ejemplo, VS Code.
 1. Abra el archivo `[AEM Repository Folder]\pom.xml` para editarlo.
-1. Reemplazar versiones de `core.forms.components.version`, `core.forms.components.af.version` y `core.wcm.components.version` componentes con versiones especificadas en [documentación de componentes principales](https://github.com/adobe/aem-core-forms-components). Si el componente no existe, agregue estos componentes.
+1. Reemplazar versiones de `core.forms.components.version`, `core.forms.components.af.version` y `core.wcm.components.version` componentes con versiones especificadas en [documentación de componentes principales](https://github.com/adobe/aem-core-forms-components). Si el componente no existe, añada estos componentes.
 
    ```XML
    <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
@@ -71,9 +71,9 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los component
    </properties>
    ```
 
-   ![Mencione la versión más reciente de los componentes principales de Forms](/help/forms/assets/latest-forms-component-version.png)
+   ![Mencione la versión más reciente de los componentes principales de formularios](/help/forms/assets/latest-forms-component-version.png)
 
-1. En la sección de dependencias del `[AEM Repository Folder]\pom.xml` , agregue las siguientes dependencias y guarde el archivo.
+1. En la sección de dependencias del archivo `[AEM Repository Folder]\pom.xml`, agregue las siguientes dependencias y guarde el archivo.
 
    ```XML
        <!-- WCM Core Component Examples Dependencies -->
@@ -134,7 +134,7 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los component
    <!-- End of AEM Forms Core Component Dependencies -->
    ```
 
-1. Abra el archivo `[AEM Repository Folder]/all/pom.xml` para editarlo. Agregue las siguientes dependencias en la `<embeddeds>` y guarde el archivo.
+1. Abra el archivo `[AEM Repository Folder]/all/pom.xml` para editarlo. Agregue las siguientes dependencias en la sección `<embeddeds>` y guarde el archivo.
 
    ```XML
    <!-- WCM Core Component Examples Dependencies -->
@@ -189,9 +189,9 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los component
    >[!NOTE]
    >
    >
-   >  Reemplazar `${appId}` con su appId.
+   >  Reemplace `${appId}` con su appId.
    >
-   >  Para encontrar su `${appId}`, en el `[AEM Repository Folder]/all/pom.xml` , busque el archivo `-packages/application/install` término. El texto antes de `-packages/application/install` el término es su `${appId}`. Por ejemplo, el siguiente código, `myheadlessform` es `${appId}`.
+   >  Para encontrar su `${appId}`, en el archivo `[AEM Repository Folder]/all/pom.xml`, busque el término `-packages/application/install`. El texto antes del término `-packages/application/install` es su `${appId}`. Por ejemplo, el siguiente código, `myheadlessform` es `${appId}`.
    >
    >   ```
    >             <embedded>
@@ -202,7 +202,7 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los component
    >             </embedded>
    >   ```
 
-1. En el `<dependencies>` de la sección `[AEM Repository Folder]/all/pom.xml` , agregue las siguientes dependencias y guarde el archivo:
+1. En la `<dependencies>` sección del archivo `[AEM Repository Folder]/all/pom.xml`, agregue las siguientes dependencias y guarde el archivo:
 
    ```XML
            <!-- Other existing dependencies -->
@@ -240,7 +240,7 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los component
            </dependency>
    ```
 
-1. Abra `[AEM Repository Folder]/ui.apps/pom.xml` para editarlo. Añada el `af-core bundle` y guarde el archivo.
+1. Abra `[AEM Repository Folder]/ui.apps/pom.xml` para editarlo. Añada la dependencia `af-core bundle` y guarde el archivo.
 
    ```XML
        <dependency>
@@ -272,21 +272,21 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los component
 
 1. Guarde y cierre el archivo.
 
-## 3. Generar e implementar el código actualizado
+## 3. Genere e implemente el código actualizado
 
-Implemente el código actualizado en los entornos de desarrollo local y de Cloud Service para habilitar los componentes principales en ambos entornos:
+Implemente el código actualizado en sus entornos de desarrollo local y de Cloud Service para habilitar los componentes principales en ambos entornos:
 
-* [AEM Cree e implemente código actualizado en un entorno de desarrollo local (SDK as a Cloud Service de la)](#core-components-on-aem-forms-local-sdk)
+* [Genere e implemente el código actualizado en un entorno de desarrollo local (AEM as a Cloud Service SDK)](#core-components-on-aem-forms-local-sdk)
 
-* [Crear e implementar código actualizado en un entorno as a Cloud Service de AEM Forms](#core-components-on-aem-forms-cs)
+* [Genere e implemente el código actualizado en un entorno as a Cloud Service de AEM Forms](#core-components-on-aem-forms-cs)
 
-### Generar e implementar código actualizado en un entorno de desarrollo local {#core-components-on-aem-forms-local-sdk}
+### Genere e implemente el código actualizado en un entorno de desarrollo local {#core-components-on-aem-forms-local-sdk}
 
-1. Abra el símbolo del sistema o el terminal.
+1. Abra el símbolo de comando o el terminal.
 
 1. Vaya al directorio raíz del proyecto del repositorio de Git.
 
-1. Ejecute el siguiente comando para crear el paquete para su entorno:
+1. Ejecute el siguiente comando para generar el paquete para su entorno:
 
    ```Shell
        mvn clean install
@@ -294,14 +294,14 @@ Implemente el código actualizado en los entornos de desarrollo local y de Cloud
 
 
 
-   Una vez que el paquete se haya creado correctamente, puede encontrarlo en [Carpeta de repositorio de Git]\all\target\[appid].all-[version].zip
+   Una vez que el paquete se haya creado correctamente, puede encontrarlo en la [Carpeta del repositorio de Git]\all\target\[appid].all-[version].zip
 
-1. Utilice el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) para implementar el [AEM Carpeta de proyecto de tipo de archivo]\all\target\[appid].all-[version]Paquete .zip en el entorno de desarrollo local.
+1. Utilice el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) para implementar la [Carpeta de proyecto arquetipo AEM]\all\target\[appid].all-[version]paquete .zip en el entorno de desarrollo local.
 
 
-### Crear e implementar código actualizado en un entorno as a Cloud Service de AEM Forms {#core-components-on-aem-forms-cs}
+### Genere e implemente el código actualizado en un entorno as a Cloud Service de AEM Forms {#core-components-on-aem-forms-cs}
 
-1. Abra el terminal o el símbolo del sistema.
+1. Abra el terminal o el símbolo del comando.
 1. Navegue hasta su `[AEM Repository Folder]` y ejecute los siguientes comandos en el orden indicado
 
    ```Shell
@@ -312,33 +312,33 @@ Implemente el código actualizado en los entornos de desarrollo local y de Cloud
     git push origin
    ```
 
-1. Una vez que los archivos se hayan confirmado en el repositorio Git, [Ejecutar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es).
+1. Una vez que los archivos se hayan confirmado en el repositorio de Git, [Ejecute la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es).
 
-   Una vez que la ejecución de la canalización se haya realizado correctamente, los componentes principales de Forms adaptable se habilitan para el entorno correspondiente. Además, se añaden una plantilla de Forms adaptable (componentes principales) y una temática de Canvas 3.0 al entorno as a Cloud Service de Forms, lo que le proporciona opciones para personalizar y crear componentes principales basados en Forms adaptable.
+   Una vez que la ejecución de la canalización se haya realizado correctamente, los componentes principales de formularios adaptables se habilitan para el entorno correspondiente. Además, se añade una plantilla de formularios adaptables (componentes principales) y una temática de Canvas 3.0 al entorno as a Cloud Service de formularios, lo que le proporciona opciones para personalizar y crear componentes principales basados en formularios adaptables.
 
 
-## Preguntas frecuentes  {#faq}
+## Preguntas frecuentes {#faq}
 
 ### ¿Qué son los componentes principales? {#core-components}
 
-El [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) AEM son un conjunto de componentes estandarizados de gestión de contenido web (WCM) para la administración de contenido web con el fin de acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de los sitios web.
+Los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) son un conjunto de componentes estandarizados de la administración de contenido web (WCM) para AEM con el objetivo de acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de sus sitios web.
 
-### ¿Qué se añaden todas las funciones al habilitar los componentes principales? {#core-components-capabilities}
+### ¿Qué capacidades completas se añaden al habilitar los componentes principales? {#core-components-capabilities}
 
-Cuando los componentes principales de Forms adaptable están habilitados para su entorno, se agregan a este una plantilla de formulario adaptable basada en componentes principales en blanco y una temática de Canvas 3.0. Después de habilitar los componentes principales de Forms adaptable para su entorno, puede:
+Cuando los componentes principales de formularios adaptables se habilitan para su entorno, se agrega a este una plantilla de formulario adaptable basada en componentes principales en blanco y una temática de Lienzo 3.0. Tras habilitar los componentes principales de formularios adaptables para su entorno, puede:
 
-* [Crear componentes principales basados en Forms adaptable](/help/forms/creating-adaptive-form-core-components.md).
+* [Crear componentes principales basados en formularios adaptables](/help/forms/creating-adaptive-form-core-components.md).
 * [Crear componentes principales basados en plantillas de formulario adaptable](/help/forms/template-editor.md).
 * [Crear temáticas personalizadas para componentes principales basadas en plantillas de formulario adaptable](/help/forms/using-themes-in-core-components.md).
-* [Proporcione representaciones JSON de un formulario adaptable basado en componentes principales a canales como móvil, web, aplicaciones nativas y servicios que requieren la representación sin encabezado de un formulario](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=es).
+* [Proporcione representaciones JSON de un formulario adaptable basado en componentes principales a canales como mobile, web, apps nativas y servicios que requieren la representación sin encabezado de un formulario](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=es).
 
-### ¿Los componentes principales de Forms adaptable están habilitados para mi entorno? {#enable-components}
+### ¿Los componentes principales de formularios adaptables están habilitados para mi entorno? {#enable-components}
 
-Para comprobar que los componentes principales de Forms adaptable están habilitados para su entorno:
+Para comprobar que los componentes principales de Formularios adaptables están habilitados para su entorno:
 
 1. [Clone su repositorio as a Cloud Service de AEM Forms](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
 
-1. Abra el `[AEM Repository Folder]/all/pom.xml` del repositorio Git del Cloud Service de AEM Forms.
+1. Abra el archivo `[AEM Repository Folder]/all/pom.xml` del repositorio de Git del Cloud Service de AEM Forms.
 
 1. Busque las siguientes dependencias:
 
@@ -346,10 +346,10 @@ Para comprobar que los componentes principales de Forms adaptable están habilit
    * core-forms-components-core
    * core-forms-components-apps
    * core-forms-components-af-apps
-   * core-forms-components-example-apps
-   * core-forms-components-samples-content
+   * core-forms-components-examples-apps
+   * core-forms-components-examples-content
 
-   ![busque el artefacto core-forms-components-af-core en all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
+   ![busque el artefacto de core-forms-components-af-core en all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
-   Si existen dependencias, los componentes principales de Forms adaptable se habilitan para su entorno.
+   Si existen dependencias, los componentes principales de Formularios adaptables se habilitan para su entorno.
 

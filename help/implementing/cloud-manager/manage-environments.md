@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2274'
-ht-degree: 37%
+ht-degree: 47%
 
 ---
 
@@ -60,7 +60,7 @@ Las funcionalidades de los entornos individuales dependen de las soluciones habi
    * Si va a agregar un **Producción + Fase** entorno, debe proporcionar un nombre de entorno y una descripción tanto para los entornos de producción como de ensayo.
    * Seleccione una **Región principal** de la lista desplegable.
       * La región principal no se puede cambiar después de crearse.
-      * En función de los derechos disponibles, puede configurar lo siguiente [varias regiones](#multiple-regions).
+      * En función de los derechos disponibles, puede configurar [varias regiones](#multiple-regions).
 
    ![Cuadro de diálogo Agregar entorno](assets/add-environment2.png)
 
@@ -80,11 +80,11 @@ Un usuario con **Propietario del negocio** Esta función puede configurar entorn
 
 Al agregar un entorno, puede elegir configurar regiones adicionales además de la región principal.
 
-1. Seleccione el **Región principal**.
+1. Seleccione la **Región principal**.
    * La región principal no se puede cambiar después de la creación del entorno.
 1. Seleccione la opción **Agregar regiones de publicación adicionales** y un nuevo **Regiones de publicación adicionales** aparece la lista desplegable de opciones.
 1. En el **Regiones de publicación adicionales** , seleccione una región adicional.
-1. La región seleccionada se añade debajo de la lista desplegable para indicar su selección.
+1. La región seleccionada se añade debajo del menú desplegable para indicar su selección.
    * Haga clic o pulse en `X` situado junto a la región seleccionada para que pueda anular su selección.
 1. Seleccione otra región de la lista **Regiones de publicación adicionales** desplegable para añadir otra región.
 1. Haga clic o pulse **Guardar** cuando esté listo para crear su entorno.
@@ -101,19 +101,19 @@ Si desea aprovisionar [redes avanzadas](/help/security/configuring-advanced-netw
 
 Si no ha especificado ninguna región adicional inicialmente, puede hacerlo después de crear los entornos si tiene los derechos necesarios.
 
-También puede quitar regiones de publicación adicionales. Sin embargo, solo puede agregar o eliminar regiones en una transacción. Si debe agregar una región y quitar una región, primero agregue, guarde el cambio y, a continuación, quite (o a la inversa).
+También puede quitar regiones de publicación adicionales. Sin embargo, solo puede añadir o eliminar regiones en una transacción. Si debe agregar una región y quitar una región, primero agregue, guarde el cambio y, a continuación, quite (o a la inversa).
 
 1. En la consola Información general del programa de su programa, haga clic en el botón de puntos suspensivos del entorno de producción y seleccione **Editar** en el menú.
 
    ![Editar entorno](assets/select-edit-environment.png)
 
-1. En el **Editar entorno de producción** , realice los cambios necesarios en las regiones de publicación adicionales.
-   * Utilice el **Regiones de publicación adicionales** para seleccionar regiones adicionales.
+1. En el cuadro de diálogo **Editar entorno de producción**, realice los cambios necesarios en las regiones de publicación adicionales.
+   * Utilice el menú desplegable **Regiones de publicación adicionales** para seleccionar regiones adicionales.
    * Haga clic en la X situada junto a las regiones de publicación adicionales seleccionadas para anular su selección.
 
    ![Editar entorno](assets/edit-environment.png)
 
-1. Haga clic o pulse **Guardar** para guardar los cambios.
+1. Pulse o haga clic en **Guardar** para guardar los cambios.
 
 Los cambios realizados en el entorno de producción se aplican tanto a los entornos de producción como de ensayo. Los cambios en varias regiones de publicación solo se pueden editar en el entorno de producción.
 

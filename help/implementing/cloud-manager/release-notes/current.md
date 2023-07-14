@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 29%
+ht-degree: 42%
 
 ---
 
@@ -21,7 +21,7 @@ Esta página documenta las notas de la versión 2023.7.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-AEM La fecha de lanzamiento de la versión 2023.7.0 de Cloud Manager en la versión as a Cloud Service de es el 29 de junio de 2023. La próxima versión está planificada para el 10 de agosto de 2023.
+La fecha de lanzamiento de Cloud Manager versión 2023.7.0 en AEM as a Cloud Service es el 29 de junio de 2023. La próxima versión está planificada para el 10 de agosto de 2023.
 
 ## Novedades {#what-is-new}
 

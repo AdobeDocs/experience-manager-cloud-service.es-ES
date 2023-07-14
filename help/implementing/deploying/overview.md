@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 42%
+ht-degree: 46%
 
 ---
 
@@ -115,7 +115,7 @@ Es posible limitar la instalación de contenido mutable a la creación o publica
 >[!NOTE]
 >Los paquetes de contenido se implementan en todos los tipos de entorno (des., fase, prod.). No es posible limitar la implementación a un entorno específico. Esta limitación se aplica para garantizar la opción de una ejecución de prueba de ejecución automatizada. El contenido específico de un entorno requiere una instalación manual a través de [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md).
 
-Además, no hay mecanismo para revertir los cambios del paquete de contenido mutable después de aplicarlos. Si los clientes detectan un problema, pueden optar por solucionarlo en su próxima versión de código o, como último recurso, restaurar todo el sistema a un punto en el tiempo antes de la implementación.
+Además, no hay ningún mecanismo para revertir los cambios del paquete de contenido mutable después de haberlos aplicado. Si los clientes detectan un problema, pueden optar por solucionarlo en su próxima versión de código o, como último recurso, restaurar todo el sistema a un punto en el tiempo antes de la implementación.
 
 AEM Cualquier paquete de terceros incluido debe validarse como compatible con el as a Cloud Service, ya que, de lo contrario, su inclusión provoca un error de implementación.
 
@@ -239,7 +239,7 @@ El siguiente Maven `POM.xml` Este fragmento de código muestra cómo se pueden i
 
 ## Cómo funcionan las implementaciones dinámicas {#how-rolling-deployments-work}
 
-AEM Al igual que las actualizaciones, las versiones de los clientes se implementan mediante una estrategia de implementación móvil para eliminar el tiempo de inactividad del clúster de creación en las circunstancias adecuadas. AEM A continuación, se describe la secuencia general de eventos, en la que los nodos con las versiones antigua y nueva del código de cliente ejecutan la misma versión del código de la.
+AEM Al igual que las actualizaciones, las versiones de los clientes se implementan mediante una estrategia de implementación móvil para eliminar el tiempo de inactividad del clúster de creación en las circunstancias adecuadas. A continuación se describe la secuencia general de eventos, en la que los nodos con las versiones antigua y nueva del código de cliente ejecutan la misma versión del código de la AEM.
 
 * Los nodos con la versión antigua están activos y se crea una versión candidata para la nueva versión, que está disponible.
 * Si hay definiciones de índice nuevas o actualizadas, se procesan los índices correspondientes. Los nodos con la versión antigua siempre utilizan los índices antiguos, mientras que los nodos con la nueva versión siempre utilizan los nuevos índices.
@@ -247,7 +247,7 @@ AEM Al igual que las actualizaciones, las versiones de los clientes se implement
 * Los nodos con la versión antigua se están ejecutando y siguen sirviendo mientras se comprueba la preparación de los nodos con la nueva versión mediante comprobaciones de estado.
 * Nodos con la nueva versión que están listos, aceptan tráfico y reemplazan los nodos con la versión antigua, que se caen.
 * Con el tiempo, los nodos con la versión antigua se sustituyen por nodos con la nueva versión hasta que solo quedan nodos con versiones nuevas, lo que completa la implementación.
-* A continuación, se implementa cualquier contenido mutable nuevo o modificado.
+* Se implementa cualquier contenido mutable nuevo o modificado.
 
 ## Índices {#indexes}
 
@@ -277,7 +277,7 @@ AEM Cambiar los usuarios del servicio o las ACL que acceden al contenido o al c�
 
 ### Cambios en el índice {#index-changes}
 
-Si se realizan cambios en los índices, es importante que la nueva versión siga utilizando sus índices hasta que finalice, mientras que la versión antigua utiliza su propio conjunto modificado de índices. El desarrollador debe seguir las técnicas de administración de índices descritas [en este artículo](/help/operations/indexing.md).
+Si se realizan cambios en los índices, es importante que la versión nueva siga utilizando sus índices hasta que finalice, mientras que la versión antigua utiliza su propio conjunto modificado de índices. El desarrollador debe seguir las técnicas de administración de índices descritas [en este artículo](/help/operations/indexing.md).
 
 ### Codificación conservadora para retrocesos {#conservative-coding-for-rollbacks}
 
