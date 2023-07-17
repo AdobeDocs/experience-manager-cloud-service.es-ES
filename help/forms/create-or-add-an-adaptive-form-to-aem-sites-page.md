@@ -88,7 +88,7 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
               &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
               &lt;/sly>
      
-     ```
+       ```
    
 1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` y añada el siguiente código al archivo:
 
