@@ -1,40 +1,85 @@
 ---
 title: Configurar una acción de envío para un formulario adaptable
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
-exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
+hide: true
+hidefromtoc: true
 source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '3178'
-ht-degree: 98%
+source-wordcount: '3366'
+ht-degree: 81%
 
 ---
 
 # Acción de envío de un formulario adaptable {#configuring-the-submit-action}
+
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Este artículo |
 
-**Se aplica a**: ✔️ componentes de base de formulario adaptable. ❌ [Componentes principales de formularios adaptables](/help/forms/configure-submit-actions-core-components.md). El Adobe recomienda utilizar los componentes principales para [Añadir Forms adaptable a una página de AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [crear Forms adaptable independiente](creating-adaptive-form-core-components.md).
+**Se aplica a**: ❌ de componentes principales de formulario adaptable ✔️ [Componentes de base de formulario adaptable](/help/forms/configuring-submit-actions.md). El Adobe recomienda utilizar los componentes principales para [Añadir Forms adaptable a una página de AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [crear Forms adaptable independiente](creating-adaptive-form-core-components.md).
 
-Se activa una acción de envío cuando un usuario hace clic en el botón **[!UICONTROL Enviar]** en un formulario adaptable. Forms as a Cloud Service proporciona las siguientes acciones de envío listas para usar.
+Una acción de envío permite elegir el destino de los datos capturados mediante un formulario adaptable. Se activa cuando un usuario hace clic en **[!UICONTROL Enviar]** en un formulario adaptable.
 
+Forms as a Cloud Service, para Forms adaptable basado en componentes principales, ofrece una matriz de acciones de envío prediseñadas. Estas acciones de envío listas para usar le permiten lo siguiente:
 
-* [Enviar al punto final REST](#submit-to-rest-endpoint)
-* [Enviar correo electrónico](#send-email)
-* [Enviar mediante modelo de datos de formulario](#submit-using-form-data-model)
-* [Invocar un flujo de trabajo de AEM](#invoke-an-aem-workflow)
-* [Enviar a SharePoint](#submit-to-sharedrive)
-* [Enviar a OneDrive](#submit-to-onedrive)
-* [Enviar a Azure Blob Storage](#azure-blob-storage)
+* Envíe datos de formulario por correo electrónico sin esfuerzo.
+* Inicie flujos de trabajo de Microsoft AEM Power Automate o flujos de trabajo de al transmitir los datos.
+* Transmita directamente los datos del formulario al servidor de Microsoft SharePoint, al almacenamiento del blob de Microsoft Azure o a Microsoft OneDrive.
+* Envíe los datos sin problemas a una fuente de datos configurada mediante el modelo de datos de formulario.
+* Envíe convenientemente los datos a un punto final REST.
 
-También puede [ampliar las acciones de envío predeterminadas](custom-submit-action-form.md) para crear su propia acción de envío.
+También puede [ampliar las acciones de envío predeterminadas](custom-submit-action-form.md) para crear una acción de envío propia.
 
-Puede configurar una acción de envío en la sección **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable, en la barra lateral.
+## Seleccionar y configurar una acción de envío para un formulario adaptable {#select-and-configure-submit-action}
 
-![Configurar la acción de envío](assets/submission.png)
+Para seleccionar y configurar una acción de envío para el formulario:
 
+1. Abra el Explorador de contenido y seleccione **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en las propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg) icono. Se abrirá el cuadro de diálogo Contenedor de formulario adaptable.
+
+1. Haga clic en  **[!UICONTROL Envío]** pestaña.
+
+   ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar una acción de envío](/help/forms/assets/adaptive-forms-submit-message.png)
+
+1. Seleccione y configure un **[!UICONTROL Acción de envío]**, según sus necesidades. Para obtener información detallada sobre la acción de envío seleccionada, consulte:
+
+   * [Enviar correo electrónico](#send-email)
+   * [Enviar a SharePoint](#submit-to-sharedrive)
+   * [Enviar mediante modelo de datos de formulario](#submit-using-form-data-model)
+   * [Enviar a Azure Blob Storage](#azure-blob-storage)
+   * [Enviar al punto final REST](#submit-to-rest-endpoint)
+   * [Enviar a OneDrive](#submit-to-onedrive)
+   * [Invocar un flujo de trabajo de AEM](#invoke-an-aem-workflow)
+
+## Enviar correo electrónico {#send-email}
+
+Para enviar un correo electrónico a uno o varios destinatarios cuando el formulario se haya enviado correctamente, puede utilizar el **[!UICONTROL Enviar correo electrónico]** Acción de envío. Esta acción le permite crear un correo electrónico que incluya datos de formulario en un formato predefinido. Por ejemplo, considere la siguiente plantilla en la que el nombre del cliente, la dirección de envío, el nombre del estado y el código postal se recuperan de los datos del formulario enviado:
+
+    ```
+    
+    Hola, ${customer_Name},
+    
+    La siguiente se establece como su dirección de envío predeterminada:
+    ${customer_Name},
+    ${customer_Shipping_Address},
+    ${customer_State},
+    ${customer_ZIPCode}
+    
+    Un saludo,
+    WKND
+    
+    ```
+
+>[!NOTE]
+>
+> * Es crucial que todos los campos de formulario tengan nombres de elemento únicos, incluso si se colocan en paneles diferentes dentro de un formulario adaptable.
+> * AEM Cuando se utiliza el correo electrónico as a Cloud Service, el correo electrónico saliente requiere cifrado. De forma predeterminada, la funcionalidad de correo electrónico saliente está deshabilitada. Para activarlo, envíe un ticket de asistencia a [Solicitar acceso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email).
+
+Además, la **[!UICONTROL Enviar correo electrónico]** La acción de envío proporciona la opción de incluir archivos adjuntos y un documento de registro (DoR) con el correo electrónico.
+
+Para habilitar la variable [!UICONTROL Adjuntar documento de registro] , consulte la documentación sobre [configurar el formulario adaptable para generar un documento de registro (DoR)](generate-document-of-record-core-components.md). Puede activar esta opción desde las propiedades del formulario adaptable.
 
 <!-- [!NOTE]
 >
@@ -57,6 +102,64 @@ Puede configurar una acción de envío en la sección **[!UICONTROL Envío]** de
 
 
 -->
+
+## Enviar a SharePoint {#submit-to-sharedrive}
+
+La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® Sharepoint conectado. Para usar la acción de envío **[!UICONTROL Enviar a SharePoint]** en un formulario adaptable:
+
+1. [Crear una configuración de SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): conecta AEM Forms a su almacenamiento de Microsoft® Sharepoint.
+2. [Utilice la acción de envío Enviar a SharePoint en un formulario adaptable](#use-sharepoint-configuartion-in-af): conecta el formulario adaptable al Microsoft® SharePoint configurado.
+
+### Crear una configuración de SharePoint {#create-sharepoint-configuration}
+
+Para conectar AEM Forms a su almacenamiento de Microsoft® Sharepoint:
+
+1. Vaya a su instancia de **AEM Forms** > **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Seleccione un **Contenedor de configuración**. No haga clic en la casilla de verificación del contenedor de configuración. Haga clic en el nombre del contenedor de configuración para seleccionarlo. La configuración se almacena en el contenedor de configuración seleccionado.
+1. Haga clic en **[!UICONTROL Crear]**. Aparecerá el asistente de configuración de SharePoint.
+   ![Configuración de SharePoint](/help/forms/assets/sharepoint_configuration.png)
+1. Especifique el **[!UICONTROL Título]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL URL de OAuth]**. Para obtener información sobre cómo recuperar el ID de cliente, el secreto de cliente o el ID de inquilino para la URL de OAuth, consulte [Documentación de Microsoft®](https://learn.microsoft.com/es-es/graph/auth-register-app-v2).
+   * Puede recuperar la variable `Client ID` y `Client Secret` de su aplicación desde el portal de Microsoft® Azure.
+   * En el portal de Microsoft® Azure, añada el URI de redireccionamiento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Reemplazar `[author-instance]` con la URL de la instancia de autor de AEM Forms.
+   * Añada los permisos de API `offline_access` y `Sites.Manage.All` para proporcionar permisos de lectura y escritura.
+   * Use la URL de OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Reemplace `<tenant-id>` por el `tenant-id` de su aplicación desde el portal de Microsoft® Azure.
+
+   >[!NOTE]
+   >
+   > El **secreto de cliente** Este campo es obligatorio u opcional según la configuración de la aplicación de Azure Active Directory. Si la aplicación está configurada para utilizar un secreto de cliente, es obligatorio proporcionar dicho secreto.
+
+1. Haga clic en **[!UICONTROL Conectar]**. Si la conexión se realiza correctamente, aparece el mensaje `Connection Successful`.
+
+1. Para seleccionar una carpeta donde guardar los datos, seleccione **Sitio de SharePoint** > **Biblioteca de documentos** > **Carpeta de SharePoint**, .
+
+   >[!NOTE]
+   >
+   >* De forma predeterminada, la variable `forms-ootb-storage-adaptive-forms-submission` está disponible en el sitio de SharePoint seleccionado. Si la carpeta no está disponible, utilice el **Crear carpeta** opción para crearlo.
+
+Ahora, puede utilizar esta configuración de SharePoint Sites para **Enviar a SharePoint** Enviar acción en un formulario adaptable.
+
+### Utilice la acción de envío Enviar a SharePoint en un formulario adaptable {#use-sharepoint-configuartion-in-af}
+
+Puede utilizar la configuración de SharePoint creada en la sección anterior para guardar datos o documentos de registro en una carpeta de SharePoint. Siga estos pasos para utilizar la acción de envío Enviar a SharePoint en un formulario adaptable:
+
+1. Crear un [Formulario adaptable](/help/forms/creating-adaptive-form.md). Al crear el formulario adaptable, seleccione la [!UICONTROL Contenedor de configuración] se usa para [creación de una configuración de SharePoint](#create-sharepoint-configuration).
+
+   >[!NOTE]
+   >
+   > Cuando no [!UICONTROL Contenedor de configuración] se selecciona, la opción global [!UICONTROL Configuración de almacenamiento] Las carpetas aparecen en la ventana de propiedades de la acción de envío.
+
+1. Seleccionar **Acción de envío** como **[!UICONTROL Enviar a SharePoint]**.
+1. Seleccione el configurado **[!UICONTROL Configuración de almacenamiento]**. Especifica la carpeta en SharePoint para guardar los datos del formulario y el documento de registro.
+1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración de envío.
+
+Cuando envía el formulario, los datos se guardan en la ubicación (carpeta) especificada de Microsoft® Sharepoint Storage.
+La estructura de carpetas para los datos guardados es `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## Enviar mediante modelo de datos de formulario {#submit-using-form-data-model}
+
+La acción de envío **[!UICONTROL Enviar mediante el modelo de datos de formulario]** escribe los datos del formulario adaptable enviados para el objeto del modelo de datos especificado en un modelo de datos de formulario en su origen de datos. Al configurar la acción de envío, puede elegir un objeto de modelo de datos cuyos datos enviados desee volver a escribir en su origen de datos.
+
+Además, puede enviar al origen de datos un archivo adjunto de formulario mediante un modelo de datos de formulario y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario, consulte integración de datos de [[!DNL AEM Forms] ](data-integration.md).
 
 ## Enviar al punto final REST {#submit-to-rest-endpoint}
 
@@ -95,34 +198,6 @@ También puede **[!UICONTROL Habilitar la petición POST]** y proporcionar una U
 >
 >Para pasar los campos como parámetros en una URL REST, todos los campos deben tener nombres de elementos diferentes, incluso si se colocan en paneles diferentes.
 
-## Enviar correo electrónico {#send-email}
-
-Puede usar la acción de envío **[!UICONTROL Enviar correo electrónico]** para enviar un correo electrónico a uno o varios destinatarios cuando el formulario se haya enviado correctamente. El correo electrónico generado puede contener datos de formulario en un formato predefinido. Por ejemplo, en la siguiente plantilla, el nombre del cliente, la dirección de envío, el nombre del estado y el código postal se recuperan de los datos del formulario enviado.
-
-    ```
-    
-    Hola, ${customer_Name},
-    
-    La siguiente se establece como su dirección de envío predeterminada:
-    ${customer_Name},
-    ${customer_Shipping_Address},
-    ${customer_State},
-    ${customer_ZIPCode}
-    
-    Un saludo,
-    WKND
-    
-    ```
-
->[!NOTE]
->
-> * Todos los campos del formulario deben tener nombres de elemento diferentes, incluso si se colocan en paneles diferentes de un formulario adaptable.
-> * AEM as a Cloud Service requiere que el correo saliente esté cifrado. De forma predeterminada, el correo electrónico saliente está deshabilitado. Para habilitarlo, envíe un ticket de asistencia a [Solicitar acceso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email).
-
-También puede incluir archivos adjuntos y un documento de registro (DoR) en el correo electrónico. Para habilitar la opción **[!UICONTROL Adjuntar documento de registro]**, configure el formulario adaptable para generar un documento de registro (DoR). Puede habilitar la opción para generar un documento de registro a partir de las propiedades del formulario adaptable.
-
-
-
 <!-- ## Send PDF via Email {#send-pdf-via-email}
 
 The **Send PDF via Email** Submit Action sends an email with a PDF containing form data, to one or more recipients on successful submission of the form.
@@ -137,11 +212,7 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## Enviar mediante modelo de datos de formulario {#submit-using-form-data-model}
 
-La acción de envío **[!UICONTROL Enviar mediante el modelo de datos de formulario]** escribe los datos del formulario adaptable enviados para el objeto del modelo de datos especificado en un modelo de datos de formulario en su origen de datos. Al configurar la acción de envío, puede elegir un objeto de modelo de datos cuyos datos enviados desee volver a escribir en su origen de datos.
-
-Además, puede enviar al origen de datos un archivo adjunto de formulario mediante un modelo de datos de formulario y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario, consulte integración de datos de [[!DNL AEM Forms] ](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -170,60 +241,7 @@ Antes de usar la acción de envío **[!UICONTROL Invocar un flujo de trabajo de 
 
 * **[!UICONTROL Contraseña del servidor de procesamiento]**: contraseña del usuario del flujo de trabajo
 
-## Enviar a SharePoint {#submit-to-sharedrive}
 
-La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® Sharepoint conectado. Para usar la acción de envío **[!UICONTROL Enviar a SharePoint]** en un formulario adaptable:
-
-1. [Crear una configuración de SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): conecta AEM Forms a su almacenamiento de Microsoft® Sharepoint.
-2. [Utilice la acción de envío Enviar a SharePoint en un formulario adaptable](#use-sharepoint-configuartion-in-af): conecta el formulario adaptable al Microsoft® SharePoint configurado.
-
-### Crear una configuración de SharePoint {#create-sharepoint-configuration}
-
-Para conectar AEM Forms a su almacenamiento de Microsoft® Sharepoint:
-
-1. Vaya a su instancia de **AEM Forms Author** > **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
-1. Una vez seleccionada la variable **[!UICONTROL Microsoft® SharePoint]**, se le redirigirá a **[!UICONTROL Explorador SharePoint]**.
-1. Seleccione un **Contenedor de configuración**. La configuración se almacena en el contenedor de configuración seleccionado.
-1. Haga clic en **[!UICONTROL Crear]**. Aparecerá el asistente de configuración de SharePoint.
-   ![Configuración de SharePoint](/help/forms/assets/sharepoint_configuration.png)
-1. Especifique el **[!UICONTROL Título]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL URL de OAuth]**. Para obtener información sobre cómo recuperar el ID de cliente, el secreto de cliente o el ID de inquilino para la URL de OAuth, consulte [Documentación de Microsoft®](https://learn.microsoft.com/es-es/graph/auth-register-app-v2).
-   * Puede recuperar la variable `Client ID` y `Client Secret` de su aplicación desde el portal de Microsoft® Azure.
-   * En el portal de Microsoft® Azure, añada el URI de redireccionamiento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Reemplace `[author-instance]` por la URL de su instancia de autor.
-   * Añada los permisos de API `offline_access` y `Sites.Manage.All` para proporcionar permisos de lectura y escritura.
-   * Use la URL de OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Reemplace `<tenant-id>` por el `tenant-id` de su aplicación desde el portal de Microsoft® Azure.
-
-   >[!NOTE]
-   >
-   > El campo **secreto de cliente** es obligatorio u opcional dependiendo de su configuración de la aplicación de Azure Active Directory. Si la aplicación está configurada para utilizar un secreto de cliente, es obligatorio proporcionar dicho secreto.
-
-1. Haga clic en **[!UICONTROL Conectar]**. Si la conexión se realiza correctamente, aparece el mensaje `Connection Successful`.
-
-1. Ahora, seleccione **Sitio de SharePoint** > **Biblioteca de documentos** > **Carpeta de SharePoint**, para guardar los datos.
-
-   >[!NOTE]
-   >
-   >* De forma predeterminada, `forms-ootb-storage-adaptive-forms-submission` está presente en el sitio de SharePoint seleccionado.
-   >* Cree una carpeta como `forms-ootb-storage-adaptive-forms-submission` si no está presente en la biblioteca `Documents` del sitio de SharePoint seleccionado haciendo clic en **Crear carpeta**.
-
-Ahora puede utilizar esta configuración de SharePoint Sites para la acción de envío en un formulario adaptable.
-
-### Uso de la configuración de SharePoint en un formulario adaptable {#use-sharepoint-configuartion-in-af}
-
-Puede utilizar la configuración de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una carpeta de SharePoint. Siga estos pasos para usar una configuración de almacenamiento de SharePoint en un formulario adaptable como:
-1. Crear un [Formulario adaptable](/help/forms/creating-adaptive-form.md).
-
-   >[!NOTE]
-   >
-   > * Seleccionar el mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde haya creado su almacenamiento de SharePoint.
-   > * Si no se selecciona ningún [!UICONTROL Contenedor de configuración], a continuación, las carpetas globales [!UICONTROL Configuración de almacenamiento] aparecen en la ventana de propiedades de la acción de envío.
-
-1. Seleccionar **Acción de envío** como **[!UICONTROL Enviar a SharePoint]**.
-   ![GIF de Sharepoint](/help/forms/assets/sharedrive-video.gif)
-1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
-1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración de envío.
-
-Al enviar el formulario, los datos se guardan en el almacenamiento de Microsoft® Sharepoint especificado.
-La estructura de carpetas para guardar datos es `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## Enviar a OneDrive {#submit-to-onedrive}
 
