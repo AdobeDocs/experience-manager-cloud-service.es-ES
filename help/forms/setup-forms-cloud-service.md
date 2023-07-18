@@ -2,14 +2,20 @@
 title: Cómo configurar un entorno de  [!DNL AEM Forms]  as a Cloud Service
 description: Aprenda a instalar y configurar un entorno de  [!DNL AEM Forms]  as a Cloud Service
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 91%
+source-wordcount: '634'
+ht-degree: 90%
 
 ---
 
 # Incorporación de [!DNL AEM Forms] as a Cloud Service {#overview}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) |
+| AEM as a Cloud Service | Este artículo |
+
 
 ## Decidir las personalidades {#personas-aem-forms-project}
 

@@ -2,7 +2,7 @@
 title: Repetibilidad en el formulario adaptable (componentes principales)
 description: Utilice la función de repetibilidad de los componentes del panel para repetir secciones similares en un formulario adaptable.
 role: Architect, Developer, Admin, User
-source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 46%
@@ -97,6 +97,7 @@ El elemento principal del panel debe contener un botón de eliminación para eli
    * Para crear un botón de eliminar panel, especifique `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
    Haga clic en **Listo**.
+>[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >

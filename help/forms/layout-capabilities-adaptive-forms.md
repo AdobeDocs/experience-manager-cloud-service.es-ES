@@ -3,14 +3,19 @@ title: Funciones de diseño de los formularios adaptables
 seo-title: Layout capabilities of Adaptive Forms
 description: El diseño y el aspecto visual de los formularios adaptables en diferentes dispositivos se rigen por la configuración de diseño. Obtenga información sobre los distintos diseños y cómo aplicarlos.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 100%
+source-wordcount: '799'
+ht-degree: 98%
 
 ---
 
 # Funciones de diseño de los formularios adaptables {#layout-capabilities-of-adaptive-forms}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service | Este artículo |
 
 [!DNL Adobe Experience Manager] permite crear formularios adaptables fáciles de usar que ofrecen experiencias dinámicas a los usuarios finales. El diseño del formulario controla cómo se muestran los elementos o los componentes de un formulario adaptable.
 
@@ -68,7 +73,7 @@ La expresión de resumen se puede utilizar para mostrar los valores proporcionad
 
 ![Paneles repetibles con un diseño de acordeón en un formulario adaptable](assets/accordion-layout.png)
 
-### [!UICONTROL Diseño con pestañas: las pestañas aparecen a la izquierda ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Diseño con pestañas: las pestañas aparecen a la izquierda]{#tabbed-layout-tabs-appear-on-the-left}
 
 Con este diseño, puede colocar el componente **[!UICONTROL Formulario adaptable con panel]** en un panel con navegación entre pestañas. Las pestañas se colocan a la izquierda del contenido del panel.
 
@@ -102,7 +107,7 @@ Este diseño, como su nombre indica, muestra los títulos de los paneles junto c
 
 ![Diseños móviles con títulos de panel en los encabezados del formulario](assets/mobile-layout1.png)
 
-### [!UICONTROL Diseño sin títulos de panel en el encabezado del formulario ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Diseño sin títulos de panel en el encabezado del formulario]{#layout-without-panel-titles-in-the-form-header}
 
 Este diseño, como su nombre indica, muestra únicamente el menú y la barra de navegación, sin títulos de panel. También incluye los iconos Siguiente y Anterior para la navegación.
 

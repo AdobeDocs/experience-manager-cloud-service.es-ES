@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 100%
+source-wordcount: '506'
+ht-degree: 97%
 
 ---
 
 # Introducción a la secuencia de formulario de varios pasos {#introduction-to-multi-step-form-sequence}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html) |
+| AEM as a Cloud Service | Este artículo |
 
 Los formularios adaptables permiten a los autores de formularios crear experiencias de captura de datos de varios pasos con gran facilidad. Estos formularios incluyen compatibilidad para crear varios paneles y asociar cada uno con diferentes patrones de navegación. Los autores de formularios pueden agrupar los campos de formulario en secciones lógicas y representar un grupo como un panel. La navegación general entre los paneles se controla mediante el diseño del panel. Los autores pueden elegir organizar los paneles en diferentes diseños, por ejemplo, colocándolos secuencialmente utilizando el diseño Asistente o de forma ad hoc utilizando el diseño en pestañas. Para obtener información sobre los diseños de panel, consulte [Funciones de diseño de formularios adaptables](layout-capabilities-adaptive-forms.md).
 
@@ -37,9 +42,8 @@ Veamos un caso de uso en el que debe crear una secuencia para los pasos de relle
 
       * Servicios de firma electrónica de Adobe Document Cloud
       * Firma manuscrita
+
    * **[!UICONTROL Confirmación]**: contiene el componente **[!UICONTROL Resumen]** que muestra un mensaje que confirma el envío del formulario una vez que el usuario lo ha firmado y llega al paso Confirmación (Resumen) de la secuencia. Los autores pueden configurar el texto del componente [!UICONTROL Resumen], mostrar un mensaje de agradecimiento, mostrar un vínculo al PDF generado, etc.
-
-
 
 1. Seleccione el diseño del panel raíz como **[!UICONTROL Asistente]**.
 1. Complete los pasos restantes para crear la plantilla de formulario. <!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->

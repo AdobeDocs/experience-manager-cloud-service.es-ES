@@ -4,14 +4,20 @@ seo-title: Creating and managing reviews in forms
 description: Una Revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre un formulario.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
-source-git-commit: 3efd7d81424369ce6430802373129ab91b7356ab
-workflow-type: ht
-source-wordcount: '652'
-ht-degree: 100%
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 98%
 
 ---
 
 # Creación y administración de revisiones en formularios{#creating-and-managing-reviews-to-forms}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
+| AEM as a Cloud Service | Este artículo |
 
 ## Revisión {#review}
 
@@ -35,7 +41,6 @@ Una revisión es un mecanismo que permite a uno o más revisores realizar coment
    >* El administrador puede acceder a cualquier grupo asociado con los usuarios del formulario.
    >* El grupo Usuarios de servicio no se puede seleccionar para la revisión.
 
-
 ### Acciones asociadas a la configuración de una revisión {#actions-that-occur-when-a-review-is-set-up}
 
 Esta sección describe lo que sucede cuando se crea o configura una revisión.
@@ -55,7 +60,6 @@ Esta sección describe lo que sucede cuando se crea o configura una revisión.
 >
 >* Solo se pueden modificar las revisiones en progreso.
 >* Las revisiones completadas no se pueden modificar.
-
 
 1. Vaya a la pestaña Formularios y seleccione un formulario.
 
@@ -107,4 +111,5 @@ Esta sección describe lo que sucede cuando se **actualiza o finaliza una revisi
    1. **Revisores**: se finaliza la tarea incompleta relacionada con la revisión de cada uno de los revisores. La tarea ya no aparece como “Pendiente” en la sección Notificaciones del revisor.
    1. **Iniciador**: la tarea asignada al iniciador de la revisión se marca como completada y se quita de la sección Notificación del iniciador de la revisión.
    1. **Todos**: la revisión se muestra en la sección Revisiones anteriores. No se pueden añadir más comentarios.
+
    ![revisión completa](assets/review-complete-imgg.png)

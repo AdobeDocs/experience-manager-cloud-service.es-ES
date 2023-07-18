@@ -2,14 +2,19 @@
 title: Generar documento de registro para formularios adaptables
 description: Explica cómo se puede generar una plantilla para un documento de registro (DoR) para formularios adaptables.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '4066'
-ht-degree: 100%
+source-wordcount: '4086'
+ht-degree: 99%
 
 ---
 
 # Generar documento de registro para formularios adaptables
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM as a Cloud Service | Este artículo |
 
 ## Información general {#overview}
 
@@ -359,6 +364,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
       * **Texto de descargo de responsabilidad**: texto del descargo de responsabilidad.
 
       ![Propiedades de página maestra](/help/forms/assets/masterpagepropertiesdor.png)
+
    >[!NOTE]
    >
    >Si está utilizando una plantilla de formulario adaptable creada con una versión del diseñador anterior a la 6.3, para que las propiedades Color de énfasis y Familia de fuentes funcionen, asegúrese de que lo siguiente esté presente en su plantilla de formulario adaptable bajo el subformulario raíz:

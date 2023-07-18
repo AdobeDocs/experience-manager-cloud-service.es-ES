@@ -4,14 +4,19 @@ seo-title: Configure Out of Office settings
 description: Configurar las opciones de Fuera de la oficina
 seo-description: Configure Out of Office settings
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 100%
+source-wordcount: '819'
+ht-degree: 98%
 
 ---
 
 # Configuración de Fuera de la oficina {#configure-out-of-office-settings}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
+| AEM as a Cloud Service | Este artículo |
 
 Si planea estar fuera de la oficina, puede especificar qué sucederá con los elementos que se le hayan asignado durante ese período.
 
@@ -28,7 +33,6 @@ Puede distribuir la delegación de elementos según los modelos de flujo de trab
 >* Cuando deshabilita la configuración de Fuera de la oficina, los elementos delegados no vuelven a asignársele automáticamente. Puede utilizar la funcionalidad Reclamar para asignarse elementos.
 >* Cuando el usuario A delega elementos en el usuario B y el usuario B los delega a su vez en el usuario C, los elementos se asignan únicamente al usuario C y no al usuario B.
 >* Cuando se produce un bucle en la asignación, las tareas permanecen asignadas al usuario original; por ejemplo, cuando el usuario A delega elementos en el usuario B, el usuario B delega en el usuario C, el usuario C delega en el usuario D y el usuario D delega en el usuario B, se crea un bucle. En estos casos, el elemento permanece asignado al usuario original. En el ejemplo anterior, el usuario original sería el usuario A.
-
 
 ## Habilitar la configuración de Fuera de la oficina en su cuenta {#enable-out-of-office}
 

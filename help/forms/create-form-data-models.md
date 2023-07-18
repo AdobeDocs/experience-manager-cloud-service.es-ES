@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 100%
+source-wordcount: '1551'
+ht-degree: 99%
 
 ---
 
 # Crear modelo de datos de formulario {#create-form-data-model}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es) |
+| AEM as a Cloud Service | Este artículo |
+
 
 ![Integración de datos](do-not-localize/data-integeration.png)
 
@@ -77,7 +83,7 @@ Haga lo siguiente para agregar o actualizar fuentes de datos a un modelo de dato
    * Para reemplazar una fuente de datos existente por otra fuente de datos del mismo tipo, pulse el icono **[!UICONTROL Editar]** para la fuente de datos y seleccione en la lista de fuentes de datos disponibles.
    * Para eliminar una fuente de datos existente, pulse el icono **[!UICONTROL Eliminar]** para la fuente de datos. El icono Eliminar está desactivado si se añade un objeto de modelo de datos en la fuente de datos en el modelo de datos del formulario.
 
-      ![fdm-properties](assets/fdm-properties.png)
+     ![fdm-properties](assets/fdm-properties.png)
 
 1. Pulse **[!UICONTROL Guardar y cerrar]** para guardar las actualizaciones.
 
@@ -108,8 +114,7 @@ Para habilitar las configuraciones de nube específicas de la implementación en
 
 1. Cree una configuración de Apache Sling según el contexto. Para crear la configuración de OSGi:
    1. **Establezca los archivos de configuración de OSGi en el tipo de archivo del proyecto [!DNL Experience Manager].**
-Cree los archivos de configuración de fábrica de OSGi con PID 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Cree un archivo con el mismo nombre en cada carpeta del modo de ejecución donde los valores deban cambiarse por modo de ejecución. Para obtener más información, consulte [Configurar OSGi para  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+Cree los archivos de configuración de fábrica de OSGi con PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Cree un archivo con el mismo nombre en cada carpeta del modo de ejecución donde los valores deban cambiarse por modo de ejecución. Para obtener más información, consulte [Configurar OSGi para  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **Establezca el json de configuración de OSGI.** Para utilizar el proveedor de anulación de configuración de Apache Sling según el contexto:
       1. En la instancia de desarrollo local `/system/console/configMgr`, seleccione la configuración de fábrica de OSGi con el nombre **[!UICONTROL Proveedor de anulación de configuración de Apache Sling según el contexto: Configuración de OSGi]**.
@@ -123,7 +128,6 @@ Se pueden agregar varias anulaciones seleccionando **[!UICONTROL +]**.
       1. Cambie el valor de `newURL` en función del entorno (o modo de ejecución).
       1. Para cambiar el valor secreto en función del modo de ejecución, se puede crear una variable secreta mediante la [API de Cloud Manager](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) y más adelante en la sección [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values). 
 Cuando este tipo de archivo del proyecto se implementa mediante la canalización de CM, la anulación ofrece valores diferentes en entornos diferentes (o modos de ejecución).
-
       >[!NOTE]
       >
       >Los usuarios de [!DNL Adobe Managed Service] pueden cifrar los valores secretos utilizando la compatibilidad con cifrado (para obtener más información, consulte [compatibilidad con cifrado para propiedades de configuración](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=es#enabling-encryption-support) y colocar texto cifrado en el valor después de [las configuraciones según el contexto están disponibles en Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es#runmode-specific-context-aware-config).

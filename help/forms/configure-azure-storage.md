@@ -2,14 +2,17 @@
 title: Configurar Azure Storage
 description: Obtenga información sobre cómo integrar formularios con el servidor de Azure Storage.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '582'
 ht-degree: 100%
 
 ---
 
 # Configuración de [!DNL Azure] Storage {#configure-azure-storage}
+
+
+![integración de datos](assets/data-integeration.png)
 
 La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md) proporciona una configuración de almacenamiento de [!DNL Azure] para integrar formularios con los servicios de [!DNL Azure] Storage. El modelo de datos de formulario se puede utilizar para crear formularios adaptables que interactúen con el servidor [!DNL Azure] para habilitar los flujos de trabajo empresariales. Por ejemplo:
 

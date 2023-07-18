@@ -2,14 +2,19 @@
 title: Configurar una acción de envío para un formulario adaptable
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3133'
-ht-degree: 100%
+source-wordcount: '3153'
+ht-degree: 99%
 
 ---
 
 # Acción de envío de un formulario adaptable {#configuring-the-submit-action}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM as a Cloud Service | Este artículo |
 
 Se activa una acción de envío cuando un usuario hace clic en el botón **[!UICONTROL Enviar]** en un formulario adaptable. Los formularios adaptables proporcionan algunas acciones de envío listas para usar. Las acciones de envío listas para usar son las siguientes:
 
@@ -111,7 +116,6 @@ Puede usar la acción de envío **[!UICONTROL Enviar correo electrónico]** para
 > * Todos los campos del formulario deben tener nombres de elemento diferentes, incluso si se colocan en paneles diferentes de un formulario adaptable.
 > * AEM as a Cloud Service requiere que el correo saliente esté cifrado. De forma predeterminada, el correo electrónico saliente está deshabilitado. Para habilitarlo, envíe un ticket de asistencia a [Solicitar acceso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email).
 
-
 También puede incluir archivos adjuntos y un documento de registro (DoR) en el correo electrónico. Para habilitar la opción **[!UICONTROL Adjuntar documento de registro]**, configure el formulario adaptable para generar un documento de registro (DoR). Puede habilitar la opción para generar un documento de registro a partir de las propiedades del formulario adaptable.
 
 
@@ -198,7 +202,6 @@ Para conectar AEM Forms a su almacenamiento de Microsoft® Sharepoint:
    >* De forma predeterminada, `forms-ootb-storage-adaptive-forms-submission` está presente en el sitio de SharePoint seleccionado.
    >* Cree una carpeta como `forms-ootb-storage-adaptive-forms-submission` si no está presente en la biblioteca `Documents` del sitio de SharePoint seleccionado haciendo clic en **Crear carpeta**.
 
-
 Ahora puede utilizar esta configuración de SharePoint Sites para la acción de envío en un formulario adaptable.
 
 ### Uso de la configuración de SharePoint en un formulario adaptable {#use-sharepoint-configuartion-in-af}
@@ -210,7 +213,6 @@ Puede utilizar la configuración de SharePoint creada en un formulario adaptable
    >
    > * Seleccionar el mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde haya creado su almacenamiento de SharePoint.
    > * Si no se selecciona ningún [!UICONTROL Contenedor de configuración], a continuación, las carpetas globales [!UICONTROL Configuración de almacenamiento] aparecen en la ventana de propiedades de la acción de envío.
-
 
 1. Seleccionar **Acción de envío** como **[!UICONTROL Enviar a SharePoint]**.
    ![GIF de Sharepoint](/help/forms/assets/sharedrive-video.gif)
@@ -257,7 +259,6 @@ Para conectar AEM Forms al almacenamiento de Microsoft® OneDrive:
    >* De forma predeterminada, `forms-ootb-storage-adaptive-forms-submission` está presente en el contenedor de OneDrive.
    > * Cree una carpeta como `forms-ootb-storage-adaptive-forms-submission`, si no está presente haciendo clic en **Crear carpeta**.
 
-
 Ahora puede usar esta configuración de almacenamiento de OneDrive para la acción de envío en un formulario adaptable.
 
 ### Usar la configuración de OneDrive en un formulario adaptable {#use-onedrive-configuartion-in-af}
@@ -269,7 +270,6 @@ Puede usar la configuración de almacenamiento de OneDrive creada en un formular
    >
    > * Seleccione el mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde ha creado su almacenamiento de OneDrive.
    > * Si no se selecciona el [!UICONTROL Contenedor de configuración], a continuación, las carpetas [!UICONTROL Configuración de almacenamiento] globales aparecen en la ventana de propiedades de la acción de envío.
-
 
 1. Seleccione **Acción de envío** como **[!UICONTROL Enviar a OneDrive]**.
    ![GIF de OneDrive](/help/forms/assets/onedrive-video.gif)
@@ -313,7 +313,6 @@ Puede utilizar la configuración del contenedor de almacenamiento de Azure cread
    >
    > * Seleccione el mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde ha creado su almacenamiento de OneDrive.
    > * Si no se selecciona ningún [!UICONTROL Contenedor de configuración], aparecerán las carpetas globales [!UICONTROL Configuración de almacenamiento] en la ventana de propiedades de la acción de envío.
-
 
 1. Seleccionar **Acción de envío** como **[!UICONTROL Enviar a almacenamiento de Azure Blob]**.
    ![GIF de almacenamiento de Azure Blob](/help/forms/assets/azure-submit-video.gif)
