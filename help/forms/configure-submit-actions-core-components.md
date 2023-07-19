@@ -3,7 +3,7 @@ title: Configurar una acción de envío para un formulario adaptable
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 hide: true
 hidefromtoc: true
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
 workflow-type: tm+mt
 source-wordcount: '3366'
 ht-degree: 81%
@@ -12,17 +12,17 @@ ht-degree: 81%
 
 # Acción de envío de un formulario adaptable {#configuring-the-submit-action}
 
+<span class="preview"> El Adobe recomienda utilizar los componentes principales para [Añadir Forms adaptable a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [crear Forms adaptable independiente](/help/forms/creating-adaptive-form-core-components.md). </span>
+
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Este artículo |
+| Se aplica a | ✅ Componentes principales de formularios adaptables, ❎ [Componentes de base de formulario adaptable](/help/forms/configuring-submit-actions.md) |
 
-**Se aplica a**: ❌ de componentes principales de formulario adaptable ✔️ [Componentes de base de formulario adaptable](/help/forms/configuring-submit-actions.md). El Adobe recomienda utilizar los componentes principales para [Añadir Forms adaptable a una página de AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [crear Forms adaptable independiente](creating-adaptive-form-core-components.md).
 
-Una acción de envío permite elegir el destino de los datos capturados mediante un formulario adaptable. Se activa cuando un usuario hace clic en **[!UICONTROL Enviar]** en un formulario adaptable.
-
-Forms as a Cloud Service, para Forms adaptable basado en componentes principales, ofrece una matriz de acciones de envío prediseñadas. Estas acciones de envío listas para usar le permiten lo siguiente:
+Una acción de envío permite elegir el destino de los datos capturados mediante un formulario adaptable. Se activa cuando un usuario hace clic en **[!UICONTROL Enviar]** en un formulario adaptable. Forms as a Cloud Service, para Forms adaptable basado en componentes principales, ofrece una matriz de acciones de envío prediseñadas. Estas acciones de envío listas para usar le permiten lo siguiente:
 
 * Envíe datos de formulario por correo electrónico sin esfuerzo.
 * Inicie flujos de trabajo de Microsoft AEM Power Automate o flujos de trabajo de al transmitir los datos.
