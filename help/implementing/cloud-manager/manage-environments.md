@@ -2,10 +2,10 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo crearlos para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 47%
+source-wordcount: '2558'
+ht-degree: 42%
 
 ---
 
@@ -172,6 +172,38 @@ Una vez activado, puede publicar contenido en el servicio de vista previa median
 >[!NOTE]
 >
 >Su entorno debe estar en la versión `2021.05.5368.20210529T101701Z` de AEM o más reciente para utilizar el servicio de vista previa. Asegúrese de que una canalización de actualización se haya ejecutado correctamente en su entorno para que pueda utilizar el servicio de vista previa.
+
+### Estado de las regiones de publicación adicionales {#additional-region-status}
+
+Si ha activado regiones de publicación adicionales, puede comprobar el estado de estas regiones desde el **Entornos** Tarjeta de.
+
+1. En el **Información general** , busque la **Entornos** Tarjeta de.
+
+1. En el **Entornos** Tarjeta de, la **Estado** reflejará si hay algún problema con las regiones de publicación adicionales configuradas. Haga clic en **Información** para obtener más información sobre las regiones.
+
+   ![Información adicional del estado de las regiones de publicación en la tarjeta Entornos](assets/additional-publish-region-status-environments-card.png)
+
+También puede acceder a la misma información desde el **Entornos** pestaña.
+
+1. En el **Información general** , seleccione la **Entornos** pestaña.
+
+1. En el **Entornos** , seleccione el entorno que desea consultar en el panel de navegación izquierdo.
+
+1. Una vez seleccionado un entorno:
+
+   * El **Información del entorno** La tabla muestra qué regiones están configuradas para el entorno seleccionado.
+   * El **Estado** de la columna **Segmentos de entorno** reflejará si hay algún problema con las regiones de publicación adicionales configuradas. Pase el ratón sobre el estado para ver los detalles de cualquier problema.
+
+   ![Información adicional del estado de las regiones de publicación en la pestaña Entornos](assets/additional-publish-region-status-environments-tab.png)
+
+Si hay algún problema con regiones de publicación adicionales:
+
+1. Por favor, ten paciencia. Cloud Manager intentará continuamente recuperar la región y puede estar disponible en cualquier momento.
+1. Si el problema persiste después de varias horas, puede quitar la región de publicación adicional y agregarla de nuevo (en la misma región u otra región) para almacenar en déclencheur una implementación completa.
+
+El tiempo que espera a que el sistema se recupere por sí solo antes de realizar acciones adicionales depende del impacto que el fallo de esa región tenga en sus sistemas.
+
+Tenga en cuenta que, en cualquier caso, [el tráfico siempre se dirigirá a la otra región más cercana que esté en línea.](/help/operations/additional-publish-regions.md) Si sigue teniendo problemas, póngase en contacto con el Servicio de atención al cliente de Adobe.
 
 ## Actualizar entornos {#updating-dev-environment}
 
