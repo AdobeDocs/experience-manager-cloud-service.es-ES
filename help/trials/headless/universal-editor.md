@@ -6,7 +6,7 @@ index: false
 source-git-commit: 372e9c6a10f7769c0db52d5909f400ce5af84b85
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 2%
+ht-degree: 12%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Editor universal"
->abstract="Vea cómo sus aplicaciones sin encabezado pueden instrumentar el editor universal para llevar la edición en contexto y de baja fricción a la punta de los dedos de sus autores."
+>abstract="Vea cómo sus aplicaciones sin encabezado pueden incorporar el Editor universal para poner al alcance de sus autores la edición en contexto y sin complicaciones."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
->title="Inicio del editor universal"
->abstract="En esta guía exploraremos el editor universal y cómo permite a los usuarios editar todos los aspectos del contenido en cualquier implementación, lo que mejora la velocidad de contenido.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
+>title="Iniciar el Editor universal"
+>abstract="En esta guía exploraremos el Editor universal y cómo permite a los usuarios editar todos los aspectos del contenido en cualquier implementación, lo que permite mejorar la velocidad del contenido.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="En este módulo, ha aprendido a personalizar el contenido mediante el Editor universal."
+>title="En este módulo, ha aprendido a personalizar el contenido utilizando el Editor universal."
 >abstract=""
 
 ## Utilice el emulador para ver el contenido como lo hacen los Reader {#emulators}
