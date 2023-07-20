@@ -2,9 +2,9 @@
 title: Repetibilidad en el formulario adaptable (componentes principales)
 description: Utilice la función de repetibilidad de los componentes del panel para repetir secciones similares en un formulario adaptable.
 role: Architect, Developer, Admin, User
-source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
+source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1391'
 ht-degree: 46%
 
 ---
@@ -26,7 +26,7 @@ Por ejemplo, considere un formulario utilizado para recopilar información sobre
 
 Al final de este artículo, aprenderá a:
 
-* Crear una sección repetible en un formulario adaptable
+* Creación de una sección repetible en un formulario adaptable
 * Definir el número mínimo o máximo de repeticiones para un componente de formulario adaptable
 * Utilice el editor de reglas para configurar las acciones de adición o eliminación para secciones repetibles
 
@@ -131,7 +131,11 @@ El elemento principal del panel debe contener un botón de eliminación para eli
 >`Panel1.instanceManager.instances[1].textbox.value`
 >
 >
->Para obtener más información, consulte: Clase: InstanceManager#instances en [Referencia de la API de Java de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
+>
+
+<!-- 
+>For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).      
+-->
 
 >[!NOTE]
 >
@@ -221,7 +225,7 @@ En el siguiente código, el panel `SampleType` utiliza la propiedad minOccours y
 ```
 
 
-## artículos relacionados
+## Artículos relacionados
 
 * [Crear un formulario adaptable](creating-adaptive-form-core-components.md)
 * [Crear estilos o temáticas para los formularios](using-themes-in-core-components.md)
