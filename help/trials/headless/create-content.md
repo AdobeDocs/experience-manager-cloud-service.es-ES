@@ -4,10 +4,10 @@ description: Utilice el modelo de fragmento de contenido que ha creado anteriorm
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 87%
+source-wordcount: '702'
+ht-degree: 76%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 87%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="Crear contenido nuevo"
+>title="Creación de contenido sin encabezado"
 >abstract="A partir del modelo creado en el módulo anterior, aprenderá a crear contenido que puede utilizar para la confección de páginas o como base de su contenido sin encabezado."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Lanzamiento de la consola de fragmentos de contenido"
->abstract="La creación de contenido coherente y de alta calidad que funcione sin problemas en todas las aplicaciones y sitios web lleva a buenas experiencias de cliente. Este módulo le guía a través de la creación de su primer fragmento de contenido para ilustrar cómo hacerlo realidad.<br><br>Inicie este módulo en una nueva pestaña haciendo clic en el botón de abajo y, a continuación, siga esta guía."
+>abstract="La creación de contenido coherente y de alta calidad que funcione sin problemas en todas las aplicaciones y sitios web lleva a buenas experiencias de cliente. Este módulo le guía a través de la creación de su primer contenido sin encabezado mediante la consola Fragmento de contenido.<br><br>Inicie este módulo en una nueva pestaña haciendo clic en el botón de abajo y, a continuación, siga esta guía."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="¡Buen trabajo! En este módulo, ha aprendido a elaborar un fragmento de contenido basado en el modelo que ha creado anteriormente. Ahora comprende cómo los equipos de contenido pueden crear y administrar contenido para aplicaciones y sitios web independientes de los ciclos de desarrollo."
+>title="¡Buen trabajo! En este módulo, ha aprendido a crear contenido sin encabezado como fragmento de contenido en función del modelo que hizo anteriormente. Ahora comprende cómo los equipos de contenido pueden crear y administrar contenido para aplicaciones y sitios web independientes de los ciclos de desarrollo."
 >abstract=""
 
 ## Creación de un fragmento de contenido {#create-fragment}
@@ -34,6 +34,8 @@ ht-degree: 87%
 Los fragmentos de contenido representan su contenido sin encabezado y se basan en estructuras predefinidas, denominadas modelos de fragmento de contenido. Ya ha creado un modelo en un módulo anterior.
 
 En este módulo, creará un nuevo fragmento de contenido basado en ese modelo mediante la consola Fragmento de contenido. Considere la consola fragmento de contenido como una biblioteca de contenido sin encabezado. Utilícela para crear nuevos fragmentos de contenido y administrar los existentes.
+
+La consola Fragmento de contenido se utiliza para crear y editar contenido sin encabezado en todos los canales de envío e independientemente del contexto, que puede ser el método más eficaz en muchos casos de creación. En un módulo posterior, exploraremos la edición de contenido sin encabezado en contexto y in situ.
 
 1. Toque o haga clic en el botón **Crear** en la parte superior derecha de la consola.
 

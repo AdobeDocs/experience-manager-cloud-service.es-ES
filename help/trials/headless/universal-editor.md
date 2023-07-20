@@ -1,22 +1,22 @@
 ---
-title: Editor universal
-description: Explore el editor universal y descubra cómo permite a cualquier persona editar cualquier aspecto del contenido en cualquier implementación.
+title: Edición en contexto
+description: Aprenda a utilizar el editor universal para editar cualquier aspecto del contenido in situ y en contexto en cualquier implementación.
 hidefromtoc: true
 index: false
-source-git-commit: 372e9c6a10f7769c0db52d5909f400ce5af84b85
+source-git-commit: 4dd0998862baf3e1d0c8ed2d42006acfcf5d0873
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 12%
+source-wordcount: '797'
+ht-degree: 6%
 
 ---
 
 
-# Editor universal {#universal-editor}
+# Edición en contexto {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Editor universal"
->abstract="Vea cómo sus aplicaciones sin encabezado pueden incorporar el Editor universal para poner al alcance de sus autores la edición en contexto y sin complicaciones."
+>title="Edición en contexto"
+>abstract="Vea cómo sus aplicaciones sin encabezado pueden aprovechar el editor universal para llevar la edición en contexto y de baja fricción a la punta de los dedos de sus autores."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,18 +25,38 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="En este módulo, ha aprendido a personalizar el contenido utilizando el Editor universal."
+>title="En este módulo, ha aprendido a personalizar el contenido en contexto y in situ mediante el Editor universal."
 >abstract=""
 
-## Utilice el emulador para ver el contenido como lo hacen los Reader {#emulators}
+## Editar texto en contexto {#edit-text}
 
-El editor universal le permite interactuar con el contenido dentro de su contexto, ver el contenido tal como se entrega a los usuarios finales y permitirle editarlo in situ.
+La edición in situ y en contexto suele ser mejor que la edición de contenido estructurada sin encabezado, como en el editor de fragmentos de contenido, que ya ha visto en módulos anteriores.
 
-1. El editor universal presenta el contenido tal como lo verán los lectores, independientemente del dispositivo. De forma predeterminada, el editor procesa la versión de escritorio del contenido. Toque o haga clic en el botón emulador en la parte superior derecha del editor para cambiar el dispositivo de destino.
+Con el editor universal, tiene una forma ágil de editar el texto en contexto y en contexto, lo que permite crear contenido de forma sencilla e intuitiva.
+
+1. El editor se debe cargar de forma predeterminada en **Texto** modo. Si no es así, toque o haga clic en **Texto** en el carril de modo en la parte izquierda del editor.
+
+1. Toque o haga clic en el título del artículo más reciente para editarlo.
+
+   ![El editor universal](assets/do-not-localize/ue-text-mode.png)
+
+1. El componente se selecciona tal como indica un borde azul con una pestaña que indica que es un componente de texto. Un cursor se encuentra en el borde a la espera de una entrada de texto. Cambie el texto a `Aloha Spirit in Lofoten`.
+
+   ![Edición de texto en el editor universal](assets/do-not-localize/ue-edit-text-2.png)
+
+1. Pulse la tecla Intro o Retorno, o toque o haga clic fuera del componente de texto y los cambios se guardarán automáticamente.
+
+El editor universal guarda los cambios automáticamente en el entorno de creación. Aún debe publicarlos para que sus lectores puedan verlos, lo que haremos en un paso posterior.
+
+## Experimente El Contenido Como Lo Hacen Los Reader {#emulators}
+
+El editor universal le permite interactuar con el contenido dentro de su contexto y verlo tal y como se entrega a los dispositivos de los usuarios.
+
+1. De forma predeterminada, el editor procesa la versión de escritorio del contenido. Toque o haga clic en el botón emulador en la parte superior derecha del editor para cambiar el dispositivo de destino.
 
    ![Elemento de menú del emulador](assets/do-not-localize/ue-emulator-1.png)
 
-1. Los Reader pueden estar en diferentes dispositivos con diferentes proporciones de aspecto, por lo que el editor tiene modos de emulación. Para ver cómo se presentará la página a los usuarios en un dispositivo móvil, seleccione la opción de dispositivo móvil en modo vertical.
+1. Los Reader pueden estar en diferentes dispositivos con diferentes proporciones de aspecto, por lo que el editor ofrece modos de emulación para ver cómo se presentará la página a los usuarios. Por ejemplo, seleccione la opción de dispositivo móvil en modo vertical.
 
    ![Elemento de menú del emulador](assets/do-not-localize/ue-emulator-3.png)
 
@@ -46,49 +66,42 @@ El editor universal le permite interactuar con el contenido dentro de su context
 
 También puede especificar dimensiones exactas para el emulador y rotar el dispositivo emulado para ver el contenido en cualquier posible dispositivo de destino.
 
-## Editar texto en contexto {#edit-text}
-
-Puede editar el texto en contexto y en contexto, lo que permite crear contenido de forma sencilla e intuitiva.
-
-1. Toque o haga clic en el título del artículo más reciente para editarlo.
-
-1. El componente se selecciona tal como indica un borde azul con una pestaña que indica que es un componente de texto. Un cursor se encuentra en el borde a la espera de una entrada de texto. Cambie el texto a `Aloha Spirit in Lofoten`.
-
-   ![Edición de texto en el editor universal](assets/do-not-localize/ue-edit-text-2.png)
-
-1. Pulse la tecla Intro o Retorno, o toque o haga clic fuera del componente de texto y los cambios se guardarán automáticamente.
-
-El editor universal guarda los cambios automáticamente, pero solo se conservan en el entorno de creación. Aún debe publicarlos para que los lectores los vean.
-
 ## Previsualización y publicación {#preview}
 
-El editor procesa el contexto tal como lo verán los lectores. Dado que debe tocar o hacer clic en el contenido para seleccionarlo, el editor no le permite seguir vínculos o interactuar con el contenido tocando o haciendo clic en él. Con el modo de vista previa, puede experimentar cómo se publica el contenido antes de publicarlo.
+Dado que debe tocar o hacer clic en el contenido para seleccionarlo en el editor, este no le permite seguir vínculos o interactuar con el contenido tocando o haciendo clic cuando está en modo de edición. Con el modo de vista previa, puede seguir los vínculos del contenido y experimentarlo como lo harían los usuarios antes de publicar.
 
 1. En el carril de modo de la parte izquierda del editor, toque o haga clic en **Previsualizar**.
 
-1. La página se abre en modo de vista previa en una nueva pestaña del explorador.
+1. Ahora, toque o haga clic en **Leer más** para el artículo principal.
 
-1. Revise los cambios y, si todo parece correcto, vuelva a la pestaña Editor universal del explorador y toque o haga clic en **Publish**.
+   ![Modo de vista previa](assets/do-not-localize/ue-preview-publish-1.png)
 
-   ![Elementos de menú previsualización y publicación](assets/do-not-localize/ue-preview-publish.png)
+1. Examine el artículo y, a continuación, utilice el **Atrás** para volver a la página principal.
+
+   ![Volver a la página principal mediante el vínculo Atrás](assets/do-not-localize/ue-preview-publish-3.png)
+
+1. Ahora, toque o haga clic en **Publish** en la parte superior derecha del editor para publicar el contenido.
+
+   ![Elementos de menú previsualización y publicación](assets/do-not-localize/ue-preview-publish-4.png)
 
 Su contenido se ha publicado.
 
 ## Edición de fragmentos de contenido {#editing-fragments}
 
-El editor universal también le permite acceder rápidamente al editor de fragmentos de contenido para acelerar la experiencia de creación de contenido.
+Para acelerar su experiencia de creación de contenido cuando la edición estructurada de contenido sin encabezado es más ventajosa que la edición in situ, el editor universal le permite acceder rápidamente al editor de fragmentos de contenido.
 
 1. Desplácese hacia abajo en la página hasta el **Aventuras** sección.
 
 1. En el carril de modo de la parte izquierda del editor, seleccione **Componentes**. Esto le permite seleccionar componentes de página en el editor.
 
-1. Pulse o haga clic en una de las aventuras para seleccionarla. Un nuevo **Editar** en el carril de modo.
+1. Pulse o haga clic en una de las aventuras para seleccionarla.
 
-   * Observe el contorno azul. La pestaña debe decir **reference** cuando se selecciona un fragmento de contenido.
-   * Dado que el editor universal permite seleccionar cualquier objeto de la página, los componentes que forman parte de un fragmento de contenido también se pueden seleccionar de forma individual.
+   * Observe el contorno azul del componente seleccionado. La pestaña debe decir **reference** cuando se selecciona un fragmento de contenido.
+   * Dado que el editor universal permite seleccionar cualquier objeto de la página, los componentes que forman parte de un fragmento de contenido también se pueden seleccionar individualmente. Toque o haga clic donde se indica en la ilustración para seleccionar todo el componente Fragmento de contenido.
 
-   ![Selección de fragmentos de contenido en el editor universal](assets/do-not-localize/ue-content-fragments.png)
+1. Un nuevo **Editar** en el carril de modo. Haga clic o pulse en **Editar** para abrir el editor de fragmentos de contenido en una nueva pestaña.
 
-1. Haga clic o pulse en **Editar** en el carril de modo para abrir el editor de fragmentos de contenido en una pestaña nueva.
+![Selección de fragmentos de contenido en el editor universal](assets/do-not-localize/ue-content-fragments.png)
+
 
 En la nueva pestaña, ahora puede editar el fragmento de contenido que seleccionó en el Editor universal.
