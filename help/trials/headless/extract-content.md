@@ -4,10 +4,10 @@ description: Aprenda a utilizar los fragmentos de contenido y la API de GraphQL 
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 94%
+source-wordcount: '1086'
+ht-degree: 96%
 
 ---
 
@@ -67,10 +67,6 @@ Inicie GraphQL Explorer en una pestaña nueva. Aquí puede generar y validar con
    ![Consulta de lista](assets/do-not-localize/list-query-1-3-4-5.png)
 
 Acaba de validar una consulta de lista para una lista completa de todos los fragmentos de contenido. Este proceso garantiza que la respuesta sea lo que espera la aplicación, con resultados que ilustran cómo las aplicaciones y sitios web recuperarán el contenido creado en AEM.
-
->[!NOTE]
->
->Si no puede seleccionar la variable **AEM Recursos de demostración** punto final de la lista desplegable, póngase en contacto con el Servicio de atención al cliente de Adobe o contacte con el [AEM Canal de Slack de Trials.](https://adobe-dx-support.slack.com/)
 
 ## Consulta de un fragmento específico de contenido de muestra {#bypath-query}
 
