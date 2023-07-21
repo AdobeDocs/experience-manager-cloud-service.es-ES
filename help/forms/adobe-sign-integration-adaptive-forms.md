@@ -4,9 +4,9 @@ description: Obtenga información sobre ¿cómo configurar Adobe Acrobat Sign p
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '1943'
 ht-degree: 99%
 
 ---
@@ -123,7 +123,7 @@ La conexión de AEM Forms con Adobe Acrobat Sign Solutions para el gobierno es u
 * Recibiendo credenciales del equipo de Adobe Sign
 * Uso de las credenciales recibidas para conectar AEM Forms con Adobe Acrobat Sign Solutions para el gobierno
 
-![](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
+![Flujo de trabajo de Adobe Sign Government](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
 
 
 AEM Forms as a Cloud Service proporciona entornos de desarrollo, de fase y de producción. Puede comenzar conectando su entorno de desarrollo para con Adobe Acrobat Sign Solutions para el gobierno y conectar los entornos de fase y producción más adelante.
