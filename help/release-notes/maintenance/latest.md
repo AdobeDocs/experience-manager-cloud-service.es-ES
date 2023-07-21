@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: eca0903050bb178f13d37073f8d65354f4bf36d3
+source-git-commit: 39b2afda66e3bcb7db8ae63a2d0dcd27014ce377
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 41%
+source-wordcount: '180'
+ht-degree: 66%
 
 ---
 
@@ -13,34 +13,25 @@ ht-degree: 41%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 12697 {#release-12697}
+## Versión 12790 {#release-12790}
 
-A continuación se resumen las mejoras continuas para la 12697 de la versión de mantenimiento, que se publicó el 14 de julio de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 12549 anterior. La 12697 de la versión de mantenimiento sustituye a la 12585 para corregir un problema.
+A continuación se resumen las mejoras continuas para la 12790 de la versión de mantenimiento, que se publicó el 21 de julio de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 12697 anterior.
 
 La activación de funciones 2023.7.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Roadmap de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
 
-### Mejoras {#enhancements-12697}
-
-- Mejoras generales de estabilidad RDE (SKYOPS-61133, SKYOPS-55281, SKYOPS-61216 y SKYOPS-61401)
-- AEM DXML-12327: Guías para la creación de informes: Compatibilidad con variables de idioma en la publicación de PDF nativos
-- AEM DXML-11518: Guías para la creación de informes: Compatibilidad con metadatos mejorada en la publicación de PDF nativos
-- AEM DXML-10093: Guías para la administración de datos: Compatibilidad para conectar con fuentes de datos externas e insertar datos en temas de dita
-- AEM DXML-10699: Guías de: Compatibilidad con el formato XLIFF en la traducción
-- AEM DXML-10141: Guías para la creación de informes: Opción para utilizar la publicación basada en microservicios para tipos de ajustes preestablecidos de PDF (nativo y DITA-OT), HTML y Personalizado
-- SKYOPS-61385: actualice el despachante para que utilice libpcre2 al evaluar expresiones regulares en Apache HTTPD
-
-### Problemas corregidos {#fixed-issues-12697}
-
-- AEM Guías de: varias mejoras y correcciones de estabilidad de PDF nativos
-- SKYOPS-53130: Mejora el soporte de la herramienta de CA en RDE
-- AEM SKYOPS-57146: Corregir el interbloqueo de Sling en el inicio de la
-- SKYOPS-61646: La fecha de la última replicación no se actualiza después de la actualización a la versión 12585
-
-### Problemas conocidos {#known-issues-12697}
+### Mejoras {#enhancements-12790}
 
 Ninguna.
 
-### Tecnologías integradas {#embedded-tech-12697}
+### Problemas corregidos {#fixed-issues-112790}
+
+- SLING-11974: regresión fija en SlingHttpServletRequest#getUserPrincipal para solicitudes no autenticadas. La corrección garantiza que se devuelva un principal incluso para solicitudes no autenticadas.
+
+### Problemas conocidos {#known-issues-12790}
+
+Ninguna.
+
+### Tecnologías integradas {#embedded-tech-12790}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
