@@ -2,12 +2,13 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
+source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 44%
+source-wordcount: '1939'
+ht-degree: 35%
 
 ---
+
 
 # Creación de contenido con el editor universal {#authoring}
 
@@ -141,7 +142,7 @@ También puede emular un dispositivo móvil y en el Editor universal:
 
 #### Apertura de la vista previa de la aplicación {#open-app-preview}
 
-Toque o haga clic en el icono Abrir vista previa de la aplicación para abrir la página que esté editando en su propio explorador, sin tener que usar el editor para previsualizar los cambios.
+Toque o haga clic en el icono de abrir vista previa de la aplicación para abrir la página que está editando en su propia pestaña del explorador, sin utilizar el editor, para previsualizar el contenido.
 
 ![Apertura de la vista previa de la aplicación](assets/open-app-preview.png)
 
@@ -177,9 +178,12 @@ En el modo de vista previa, la página se procesa en el editor tal como se verí
 
 #### Modo de texto {#text-mode}
 
-En el modo de texto, la página se procesa en el editor, pero el autor del contenido puede hacer clic para seleccionar contenido de texto y editarlo. Este es el modo predeterminado del editor cuando se carga una página.
+En el modo de texto, el autor del contenido puede hacer clic en para seleccionar contenido de texto.
 
 ![Modo de texto](assets/text-mode.png)
+
+* Puede [editar texto sin formato](#editing-content) en su lugar.
+* También puede [editar texto enriquecido](#editing-rich-text) en contexto con las opciones de formato adicionales que se muestran en el carril del componente.
 
 >[!TIP]
 >
@@ -187,9 +191,11 @@ En el modo de texto, la página se procesa en el editor, pero el autor del conte
 
 #### Modo multimedia {#media-mode}
 
-En el modo multimedia, la página se procesa en el editor, pero el autor del contenido puede hacer clic para seleccionar contenido multimedia y editarlo.
+En el modo multimedia, el autor del contenido puede hacer clic para seleccionar contenido multimedia.
 
 ![Modo Media](assets/media-mode.png)
+
+Los detalles del contenido se muestran en el carril del componente y el autor también puede [editar el contenido multimedia.](#editing-media)
 
 >[!TIP]
 >
@@ -197,11 +203,11 @@ En el modo multimedia, la página se procesa en el editor, pero el autor del con
 
 #### Modo de componente {#component-mode}
 
-En el modo de componente, la página se procesa en el editor, pero el autor del contenido puede hacer clic para seleccionar componentes de página.
+En el modo de componente, el autor del contenido puede hacer clic para seleccionar [Fragmentos de contenido.](/help/assets/content-fragments/content-fragments.md)
 
 ![Modo de componente](assets/component-mode.png)
 
-Al seleccionar un fragmento de contenido, sus detalles se muestran en la [carril de componentes.](#component-rail)
+Al seleccionar un fragmento de contenido, sus detalles se muestran en el carril del componente, donde puede [edite el fragmento de contenido.](#edit-content-fragment)
 
 >[!TIP]
 >
@@ -209,11 +215,13 @@ Al seleccionar un fragmento de contenido, sus detalles se muestran en la [carril
 
 #### Editar {#edit}
 
-En [modo de componente,](#component-mode) si selecciona un fragmento de contenido, la opción editar aparecerá en el carril del modo.
+En [modo de componente,](#component-mode) si selecciona una [Fragmento de contenido,](/help/assets/content-fragments/content-fragments.md) la opción editar aparece en el carril modo.
 
 ![Icono Editar](assets/edit.png)
 
-Al tocar o hacer clic en el botón Editar, se abre el editor de fragmentos de contenido en una nueva pestaña, lo que le permite editar contenido referenciado, así como contenido de texto y multimedia, desde el Editor universal.
+Al tocar o hacer clic en el botón Editar, se abre [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) en una nueva pestaña, lo que le permite acceder a toda la potencia del Editor de fragmentos de contenido.
+
+También puede editar los detalles del fragmento de contenido en la variable [carril componente](#edit-content-fragment) según las necesidades del flujo de trabajo.
 
 >[!TIP]
 >
@@ -223,7 +231,7 @@ Al tocar o hacer clic en el botón Editar, se abre el editor de fragmentos de co
 
 El editor ocupa la mayor parte de la ventana y es donde la página especificada en [la barra de ubicación](#location-bar) se procesa.
 
-* Si el editor se encuentra en un modo de edición como [modo de texto](#text-mode) o [modo multimedia,](#media-mode) el contenido se puede editar y no puede seguir los vínculos.
+* Si el editor se encuentra en un modo de edición como [modo de texto](#text-mode) o [modo multimedia,](#media-mode) el contenido puede editarse, pero no puede seguir los vínculos.
 * Si el editor se encuentra en [modo de previsualización,](#preview-mode) el contenido es navegable y puede seguir los vínculos, pero no puede editar el contenido.
 
 ![Editor](assets/editor.png)
@@ -240,11 +248,11 @@ En el modo de propiedades, el carril muestra las propiedades del componente sele
 
 ![Modo Propiedades](assets/properties-mode.png)
 
-Los detalles del componente seleccionado se muestran en el carril. Si ha seleccionado un fragmento de contenido utilizando [modo de componente,](#component-mode) puede modificar su configuración en el carril del componente. El editor universal guarda automáticamente los cambios.
+Según el tipo de componente que seleccione, los detalles se pueden mostrar y modificar en el carril de propiedades.
 
 ![Detalles del componente](assets/component-details.png)
 
-Tenga en cuenta que no todos los componentes tienen detalles que se puedan mostrar.
+Tenga en cuenta que no todos los componentes tienen detalles que se puedan mostrar o editar.
 
 >[!TIP]
 >
@@ -271,17 +279,59 @@ La edición de contenido es sencilla e intuitiva. En modos de edición ([modo de
 
 ![El contenido editable se resalta con un cuadro azul](assets/editable-content.png)
 
-Simplemente, toque o haga clic en el contenido dentro del cuadro azul para editar y realizar los cambios. Los cambios se guardarán automáticamente.
+Tenga en cuenta que, en el modo de edición, que si toca o hace clic en el contenido se selecciona para editar. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa.](#preview-mode)
+
+Según la variable [modo](#mode-rail) una vez que se encuentra en y el contenido que selecciona, es posible que tenga diferentes opciones de edición y que pueda revisar propiedades adicionales para el contenido mediante [carril de componentes.](#component-rail)
+
+### Edición de texto sin formato {#edit-plain-text}
+
+Si está en [modo de texto](#text-mode) y seleccione un componente de texto sin formato, puede editar el texto en su lugar.
 
 ![Edición de contenido](assets/editing-content.png)
 
-Tenga en cuenta que, en el modo de edición, que si toca o hace clic en el contenido se selecciona para editar. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa.](#preview-mode)
+Simplemente escriba para actualizar el contenido. Pulse Intro o Retorno, o toque o haga clic fuera del cuadro de texto para guardar los cambios.
 
-Según la variable [modo](#mode-rail) Una vez que se encuentra en y el contenido que selecciona, es posible que tenga diferentes opciones de edición.
+### Edición de texto enriquecido {#edit-rich-text}
 
-Además, es posible que pueda revisar propiedades adicionales para el contenido mediante el [carril de componentes.](#component-rail) Por ejemplo, si selecciona un componente de texto enriquecido, puede editar las opciones de formato en el carril del componente.
+Si está en [modo de texto](#text-mode) y seleccione un componente de texto enriquecido, puede editar el texto en su lugar.
+
+Simplemente escriba para actualizar el contenido. Pulse Intro o Retorno, o toque o haga clic fuera del cuadro de texto para guardar los cambios.
+
+Además, las opciones de formato y los detalles del texto están disponibles en el carril del componente.
 
 ![Edición de un componente de texto enriquecido](assets/rich-text-editing.png)
+
+Los cambios de formato se guardan automáticamente en el contenido.
+
+### Edición de medios {#edit-media}
+
+Si está en [modo multimedia](#media-mode) cuando seleccione una imagen, puede ver sus detalles en el carril del componente.
+
+![Edición de medios](assets/ue-edit-media.png)
+
+Haga clic o pulse en **Reemplazar** botón situado debajo de la previsualización de la imagen seleccionada en el carril del componente para reemplazar la imagen por otra de la biblioteca de recursos.
+
+1. El [selector de recursos](/help/assets/asset-selector.md#using-asset-selector) se abrirá una ventana para que pueda seleccionar un recurso.
+1. Toque o haga clic para seleccionar un nuevo recurso.
+1. Haga clic o pulse **Seleccionar** para volver al carril del componente donde se reemplazó el recurso.
+
+Los cambios se guardan automáticamente en el contenido.
+
+>[!TIP]
+>
+>Utilice la tecla de acceso directo `R` para abrir el selector de recursos que reemplazará la imagen seleccionada.
+
+### Edición de fragmentos de contenido {#edit-content-fragment}
+
+Si está en [modo componente](#component-mode) y selecciona una [Fragmento de contenido,](/help/assets/content-fragments/content-fragments.md) puede editar sus detalles en el carril del componente.
+
+![Edición de un fragmento de contenido](assets/ue-edit-cf.png)
+
+Los campos definidos en el modelo de contenido del fragmento de contenido seleccionado se muestran y pueden editarse en el carril del componente.
+
+Los cambios se guardan automáticamente en el contenido.
+
+Si desea editar el fragmento de contenido en la [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) haga clic en el botón [botón editar](#edit) en el carril de modo.
 
 ## Vista previa del contenido {#previewing-content}
 
