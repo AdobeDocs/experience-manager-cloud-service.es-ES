@@ -3,10 +3,10 @@ title: Notas de la versión 2023.7.0 para Cloud Manager en Adobe Experience Mana
 description: Estas son las notas de la versión 2023.7.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
+source-git-commit: 2721cb20083eeda7546513817f1ddfe12e9cb43a
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 42%
+source-wordcount: '265'
+ht-degree: 38%
 
 ---
 
@@ -30,6 +30,8 @@ La fecha de lanzamiento de Cloud Manager versión 2023.7.0 en AEM as a Cloud Ser
    * Esto se implementará por fases.
 * Cuándo [cancelar la ejecución,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) el paso de aprobación de la ejecución de la canalización ahora pide al usuario que proporcione un motivo para la cancelación.
    * Esto se implementará por fases.
+* Los usuarios ahora pueden acceder a [registros del proceso de copia de contenido.](/help/implementing/developing/tools/content-copy.md#accessing-logs)
+   * AEM Esta opción solo está disponible si los entornos de origen y destino están en la versión de la aplicación de la versión de la aplicación de la versión de la aplicación de datos en la que se ha realizado el `2023.7.12549` o superior.
 
 ## Correcciones de errores {#bug-fixes}
 

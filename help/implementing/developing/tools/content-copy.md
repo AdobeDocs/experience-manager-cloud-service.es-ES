@@ -2,12 +2,13 @@
 title: La herramienta Copia de contenido
 description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción en entornos as a Cloud Service a entornos más bajos para realizar pruebas.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
+source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 40%
+source-wordcount: '1308'
+ht-degree: 37%
 
 ---
+
 
 # La herramienta Copia de contenido {#content-copy}
 
@@ -40,6 +41,8 @@ Para utilizar la herramienta de copia de contenido, se requieren ciertos permiso
 |---|---|---|
 | Crear y modificar [conjuntos de contenido](#create-content-set) | Requerido | No necesario |
 | Iniciar o cancelar el [proceso de copia de contenido](#copy-content) | Requerido | Requerido |
+
+Para obtener más información sobre los permisos y cómo configurarlos, consulte el documento [AEM Perfiles de equipo y producto as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ## Creación de un conjunto de contenido {#create-content-set}
 
@@ -174,6 +177,16 @@ Para ello, en la **Copiar actividad de contenido** , seleccione la **Cancelar** 
 >Al cancelar una operación de copia de contenido, puede resultar en una copia parcial del contenido en el entorno de destino. Esta situación puede dejar el entorno de destino en un estado inutilizable.
 >
 >Si su entorno se encuentra en ese estado debido a la cancelación, póngase en contacto con el Servicio de atención al cliente de Adobe para obtener ayuda.
+
+### Acceso a registros {#accessing-logs}
+
+Puede comprobar los registros de los entornos de origen y destino para cualquier proceso de copia de contenido completado.
+
+Para ello, en la **Copiar actividad de contenido** , seleccione la **Registros** acción del menú de los tres puntos del proceso de copia para el que desea revisar los registros y, a continuación, elegir para qué entorno.
+
+![Acceso a registros para copiar el proceso de contenido](assets/copy-content-logs.png)
+
+Los registros se descargan en el equipo local. Si la descarga no comienza, compruebe la configuración del bloqueador de ventanas emergentes.
 
 ## Restricciones {#limitations}
 
