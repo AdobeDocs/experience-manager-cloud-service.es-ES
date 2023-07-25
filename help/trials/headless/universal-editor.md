@@ -1,12 +1,12 @@
 ---
 title: Edición en contexto
-description: Aprenda a utilizar el editor universal para editar cualquier aspecto del contenido in situ y en contexto en cualquier implementación.
+description: Aprenda a utilizar el editor universal para editar cualquier aspecto del contenido en contexto y en contexto en cualquier implementación.
 hidefromtoc: true
 index: false
-source-git-commit: 4dd0998862baf3e1d0c8ed2d42006acfcf5d0873
+source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 6%
+source-wordcount: '961'
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Edición en contexto"
->abstract="Vea cómo sus aplicaciones sin encabezado pueden aprovechar el editor universal para llevar la edición en contexto y de baja fricción a la punta de los dedos de sus autores."
+>abstract="Vea cómo sus aplicaciones sin encabezado pueden aprovechar el editor universal para llevar la edición de bajo nivel de fricción al alcance de sus autores."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,12 +25,16 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="En este módulo, ha aprendido a personalizar el contenido en contexto y in situ mediante el Editor universal."
+>title="En este módulo, ha aprendido a personalizar el contenido en contexto y en contexto mediante el Editor universal."
 >abstract=""
 
 ## Editar texto en contexto {#edit-text}
 
-La edición in situ y en contexto suele ser mejor que la edición de contenido estructurada sin encabezado, como en el editor de fragmentos de contenido, que ya ha visto en módulos anteriores.
+Editar en contexto y en contexto suele ser mejor que editar contenido estructurado sin encabezado, como en el editor de fragmentos de contenido, que vio en módulos anteriores.
+
+>[!NOTE]
+>
+>Para usar el editor universal en esta versión de prueba, debe usar Chrome como navegador y no en modo incógnito. Se trata de una limitación de la experiencia de prueba, no del editor universal.
 
 Con el editor universal, tiene una forma ágil de editar el texto en contexto y en contexto, lo que permite crear contenido de forma sencilla e intuitiva.
 
@@ -47,6 +51,26 @@ Con el editor universal, tiene una forma ágil de editar el texto en contexto y 
 1. Pulse la tecla Intro o Retorno, o toque o haga clic fuera del componente de texto y los cambios se guardarán automáticamente.
 
 El editor universal guarda los cambios automáticamente en el entorno de creación. Aún debe publicarlos para que sus lectores puedan verlos, lo que haremos en un paso posterior.
+
+## Editar medios en contexto {#edit-media}
+
+También puede intercambiar imágenes mientras permanece en el contexto del contenido mediante el Editor universal.
+
+1. Cambie el editor a **Medios** al tocar o hacer clic en el botón **Medios** en el carril de modo.
+
+1. Pulse o haga clic en la imagen del internauta para seleccionarla.
+
+1. En el carril del componente, puede ver los detalles del recurso. Haga clic o pulse **Reemplazar**.
+
+   ![Selección de una imagen para editarla](assets/do-not-localize/ue-edit-media.png)
+
+1. En el **Seleccionar recursos** , desplácese hacia abajo y toque o haga clic en `surfer-wave-02.JPG` imagen para seleccionarla.
+
+1. Haga clic o pulse **Seleccionar** en el **Seleccionar recursos** ventana.
+
+   ![Uso de la ventana Seleccionar recurso para seleccionar una imagen](assets/do-not-localize/ue-select-asset.png)
+
+La imagen se reemplazará por la que haya seleccionado.
 
 ## Experimente El Contenido Como Lo Hacen Los Reader {#emulators}
 
@@ -102,6 +126,5 @@ Para acelerar su experiencia de creación de contenido cuando la edición estruc
 1. Un nuevo **Editar** en el carril de modo. Haga clic o pulse en **Editar** para abrir el editor de fragmentos de contenido en una nueva pestaña.
 
 ![Selección de fragmentos de contenido en el editor universal](assets/do-not-localize/ue-content-fragments.png)
-
 
 En la nueva pestaña, ahora puede editar el fragmento de contenido que seleccionó en el Editor universal.
