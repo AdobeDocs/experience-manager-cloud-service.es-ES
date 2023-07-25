@@ -2,14 +2,16 @@
 title: Compatibilidad con notas al pie
 description: Compatibilidad con RTE para notas al pie.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 100%
+source-wordcount: '426'
+ht-degree: 88%
 
 ---
 
 # Componente Nota al pie {#footnotecomponent}
+
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 La **[!UICONTROL Nota al pie]** es el extra de información o nota que aparece al final de la página. [!UICONTROL Nota al pie] comprende las notas que se indican en el texto con números como superíndice.
 
@@ -44,13 +46,11 @@ Para añadir una nota al pie en un formulario adaptable, siga estos pasos:
    >* Las notas al pie se numeran automáticamente y aparecen de la manera en que se crean en el formulario adaptable.
    >* Si hay notas al pie duplicadas, la numeración es la misma para todas.
 
-
 1. Desde el explorador de componentes, arrastre y suelte el componente **[!UICONTROL Marcador de nota al pie]** en el formulario adaptable.
    >[!NOTE]
    >
    >* En la instancia de publicación, las notas al pie se muestran en la posición en la que se coloca el componente **[!UICONTROL Marcador de nota al pie]** en el formulario adaptable.
    >* Cuando navega entre diferentes paneles, solo aparecen notas al pie visibles en el **[!UICONTROL Marcador de nota al pie]** que está presente en el panel por el que navega.
-
 
 1. Guarde las propiedades.
 
