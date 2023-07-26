@@ -2,10 +2,10 @@
 title: Entorno de compilación
 description: Obtenga información sobre el entorno de compilación de Cloud Manager y cómo crea y prueba su código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 94%
+source-wordcount: '1005'
+ht-degree: 92%
 
 ---
 
@@ -54,27 +54,41 @@ De forma predeterminada, los proyectos se crean mediante el proceso de compilaci
 
 La variable [Complemento Maven Toolchains](https://maven.apache.org/plugins/maven-toolchains-plugin/) permite a los proyectos seleccionar un JDK específico (o toolchain) para utilizarlo en el contexto de complementos Maven con conocimiento de herramientas. Esto se hace en el archivo `pom.xml` del proyecto especificando un valor de proveedor y de versión.
 
+Este complemento de toolchain se puede añadir como parte de un perfil como se muestra a continuación.
+
 ```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-toolchains-plugin</artifactId>
-    <version>1.1</version>
-    <executions>
-        <execution>
-            <goals>
-                <goal>toolchain</goal>
-            </goals>
-        </execution>
-    </executions>
-    <configuration>
-        <toolchains>
-            <jdk>
-                <version>11</version>
-                <vendor>oracle</vendor>
-            </jdk>
-        </toolchains>
-    </configuration>
-</plugin>
+<profile>
+    <id>cm-java-11</id>
+    <activation>
+        <property>
+            <name>env.CM_BUILD</name>
+        </property>
+    </activation>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-toolchains-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>toolchain</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <toolchains>
+                        <jdk>
+                            <version>11</version>
+                            <vendor>oracle</vendor>
+                        </jdk>
+                    </toolchains>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</profile>
 ```
 
 Esto hará que todos los complementos Maven con conocimiento de herramientas utilicen el JDK de Oracle, versión 11.
