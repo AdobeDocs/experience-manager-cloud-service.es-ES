@@ -4,10 +4,10 @@ description: Utilice una aplicación React de muestra para aprender a personaliz
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
+source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 97%
+source-wordcount: '1044'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +79,7 @@ Ahora que ha modificado un titular en la aplicación, intente cambiar una imagen
 
    ![Quitar imagen del fragmento](assets/do-not-localize/swap-image-4.png)
 
-1. Haga clic o pulse en **Agregar recurso**.
+1. Haga clic o pulse **Añadir recurso** y luego **Examinar recursos** en el menú emergente.
 
 1. Se abre el cuadro de diálogo **Seleccionar recurso** y la ruta **sample-wknd-app** > **en** > **image-files** se selecciona automáticamente.
 
