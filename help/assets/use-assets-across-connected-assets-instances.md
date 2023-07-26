@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 62649d9aaa7c4307351cc83eefbab14806f91378
 workflow-type: tm+mt
-source-wordcount: '3830'
+source-wordcount: '3871'
 ht-degree: 16%
 
 ---
@@ -98,7 +98,7 @@ Para configurar los recursos de red y locales [!DNL Sites] conectividad, siga es
 1. Acceso al local [!DNL Sites] implementación en `https://[sites_servername]:port`. Haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Configuración de recursos conectados]** y proporcione los siguientes valores:
 
    1. A **[!UICONTROL Título]** de la configuración.
-   1. **[!UICONTROL URL del sitio remoto DAM]** es la dirección URL del [!DNL Assets] ubicación con el formato `https://[assets_servername]:[port]`.
+   1. **[!UICONTROL URL de DAM remoto]** es la dirección URL del [!DNL Assets] ubicación con el formato `https://[assets_servername]:[port]`.
    1. Credenciales de un distribuidor DAM (usuario técnico).
    1. En el **[!UICONTROL Punto de montaje]** , introduzca el local [!DNL Experience Manager] ruta donde [!DNL Experience Manager] recupera los recursos. Por ejemplo, la carpeta `connectedassets`. Los recursos que se recuperan de DAM se almacenan en esta carpeta en el [!DNL Sites] implementación.
    1. **[!UICONTROL URL de sitios locales]** es la ubicación del [!DNL Sites] implementación. [!DNL Assets] la implementación utiliza este valor para mantener las referencias a los recursos digitales recuperados por esta [!DNL Sites] implementación.
@@ -250,7 +250,7 @@ AEM Los creadores de Sites pueden obtener una vista previa de las actualizacione
 
 El Experience Manager muestra un `expired` Indicador visual de estado de los recursos en el Buscador de contenido de recursos remotos para impedir que los creadores del sitio utilicen el recurso en una página de Sites. Si utiliza un recurso con un `expired` estado en una página de Sites, el recurso no se muestra en la instancia de publicación del Experience Manager.
 
-## Preguntas frecuentes  {#frequently-asked-questions}
+## Preguntas frecuentes {#frequently-asked-questions}
 
 +++**Debe configurar los recursos de red si necesita utilizar los recursos disponibles en su [!DNL Sites] ¿implementación?**
 
@@ -317,6 +317,8 @@ Puede agregar recursos a [!DNL Sites] sin embargo, estos recursos no se pueden p
 
 * Para obtener información sobre el uso de los recursos, configure las [Assets Insight](/help/assets/assets-insights.md) funcionalidad en la [!DNL Sites] ejemplo.
 * El uso del explorador de rutas en los componentes de creación no se admite en los recursos conectados.
+
+* No puede arrastrar el recurso remoto al [Cuadro de diálogo Configurar componente de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). Sin embargo, puede arrastrar el recurso remoto directamente al componente de imagen en la página de Sites sin hacer clic en **[!UICONTROL Configurar]**.
 
 ### Permisos y administración de recursos {#permissions-and-managing-assets}
 
