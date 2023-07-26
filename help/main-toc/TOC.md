@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: 651fd49950c9b168a097e4b7d2812b22bd8de03f
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4194'
 ht-degree: 98%
 
 ---
@@ -340,7 +340,6 @@ ht-degree: 98%
             + [Recuperar información de acceso al repositorio de git](/help/journey-sites/quick-site/retrieve-access.md)
             + [Personalizar el tema del sitio](/help/journey-sites/quick-site/customize-theme.md)
             + [Implementar el tema personalizado](/help/journey-sites/quick-site/deploy-theme.md)
-      + [Administración de flujos de trabajo](/help/sites-cloud/administering/workflows-administering.md)
       + Reutilización del contenido {#reusing-content}
          + [MSM y traducción](/help/sites-cloud/administering/msm-and-translation.md)
          + Administrador de varios sitios {#msm}
@@ -369,6 +368,8 @@ ht-degree: 98%
             + [Configuración del marco de trabajo de integración de traducción](/help/sites-cloud/administering/translation/integration-framework.md)
             + [Volver a conectar con Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [Prácticas recomendadas de traducción](/help/sites-cloud/administering/translation/best-practices.md)
+      + [Administración de etiquetas](/help/sites-cloud/administering/tags.md)
+      + [Administración de flujos de trabajo](/help/sites-cloud/administering/workflows-administering.md)
    + Integración con AEM as a Cloud Service {#integrations}
       + [Integración con Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integración con la configuración automatizada de Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
