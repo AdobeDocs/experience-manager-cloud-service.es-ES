@@ -3,7 +3,7 @@ title: Cómo añadir un formulario adaptable a la página de AEM Sites
 description: Descubra cómo crear o agregar un formulario adaptable a su página de AEM Sites. Además, conozca las ventajas y las distintas formas de integrar formularios en su sitio web.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: ecc881ac1a9f8dd98cd57bbeb44cc35deddcbb8e
+source-git-commit: c5a3b5a22283e0e14b8d0a8464b9bba460a80c71
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 69%
@@ -82,13 +82,14 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
 1. Abra la carpeta Repositorio de Git de AEM Cloud Service en un editor de texto del plan. Por ejemplo, Microsoft Visual Code.
 1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` y añada el siguiente código al archivo:
 
-       ```
-     //Customheaderlibs.html
-     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-     &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
-     &lt;/sly>
-     
-     ```
+       &quot;
+       //Customheaderlibs.html
+       
+       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
+       &lt;/sly>
+       
+       &quot;
    
 1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` y añada el siguiente código al archivo:
 
