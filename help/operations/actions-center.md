@@ -1,20 +1,15 @@
 ---
 title: Centro de acciones
 description: Aproveche el Centro de acciones para tomar medidas adecuadas sobre problemas y conocer otra información importante
-hidefromtoc: true
-hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 90%
+source-wordcount: '727'
+ht-degree: 87%
 
 ---
 
 # Centro de acciones {#actions-center}
-
->[!NOTE]
->Esta función no se ha publicado.
 
 AEM El Cloud Service de as envía notificaciones por correo electrónico al Centro de acciones cuando se producen incidentes críticos que requieren una acción inmediata y recomendaciones proactivas para las optimizaciones. Algunos ejemplos incluyen una cola bloqueada o un conjunto de credenciales que caducan; el conjunto completo de tipos de notificación el Centro de acciones se puede ver en la [tabla siguiente](#supported-notification-types), que se ampliará con el tiempo.
 
@@ -40,7 +35,7 @@ Para configurar la recepción de notificaciones por correo electrónico del Cent
 
 ## Flujo de usuario detallado {#detailed-user-flow}
 
-Al hacer clic en el correo electrónico, se le dirigirá al Centro de acciones, y se abrirá una ventana emergente que muestra el contexto de la notificación en la que hizo clic y, en algunos casos, enlaces a información adicional que describe cómo realizar acciones correctivas.
+Al hacer clic en el correo electrónico, se le dirigirá al Centro de acciones, y se abrirá una ventana emergente que muestra el contexto de la notificación en la que hizo clic y, en algunos casos, enlaces a información adicional que describe cómo realizar acciones correctivas. También puede acceder al Centro de acciones directamente en [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), donde puede seleccionar el programa y el entorno relevantes.
 
 ![Detalles del problema](/help/operations/assets/incident-details.png)
 
