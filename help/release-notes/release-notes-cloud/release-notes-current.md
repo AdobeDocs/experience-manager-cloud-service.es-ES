@@ -3,7 +3,7 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
+source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 31%
@@ -77,7 +77,7 @@ Assets Essentials ahora ordena los resultados de búsqueda según la relevancia 
 
 * [**Temáticas listas para usar**](/help/forms/using-themes-in-core-components.md) **y plantillas**: inicie su proceso de creación de formularios con nuestras temáticas y plantillas OOTB listas para usar, diseñadas para potenciar tanto a profesionales experimentados como a autores de nuevos formularios. Creadas sin problemas con los componentes principales de Forms adaptables, estas temáticas y plantillas cuidadosamente depuradas le permiten empezar a crear formularios rápidamente para los casos de uso más comunes.
 
-!![Plantillas listas para usar](/help/forms/assets/form-templates-ootb.png)
+  ![Plantillas listas para usar](/help/forms/assets/form-templates-ootb.png)
 
 * **Componentes de React para Forms sin encabezado**: Ahora puede obtener una vista previa y personalizar las representaciones de formularios adaptables sin encabezado con los componentes de React predeterminados. Estos componentes aprovechan las clases de BEM de los componentes principales de Forms adaptables para el estilo, lo que facilita la personalización de su aspecto según sus necesidades específicas.
 
