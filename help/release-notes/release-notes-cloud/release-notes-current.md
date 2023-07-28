@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
+source-git-commit: 3ac4fcd1f3ef1ef78dcee3c10bfbc99f9d7ba3ad
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 31%
+source-wordcount: '935'
+ht-degree: 32%
 
 ---
 
@@ -50,11 +50,15 @@ Eche un vistazo al vídeo Información general sobre la versión de julio de 202
 
 ### Nuevas funciones de la vista Recursos {#assets-view-features}
 
-**Asignar un formulario de metadatos a una carpeta**
+<!--
 
-Ahora puede asignar un formulario de metadatos a una carpeta específica dentro de su implementación de Assets Essentials. Todos los recursos de la carpeta, incluidos los de las subcarpetas, muestran las propiedades definidas en el formulario de metadatos asignado.
+**Assign metadata form to a folder**
 
-![asignar formulario de metadatos a una carpeta](/help/release-notes/assets/assign-to-folder.png)
+You can now assign metadata form to a specific folder within your Assets Essentials deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
+
+![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
+
+-->
 
 **Marco de inteligencia artificial mejorado para etiquetas inteligentes de imagen**
 
