@@ -2,7 +2,7 @@
 title: La herramienta Copia de contenido
 description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción en entornos as a Cloud Service a entornos más bajos para realizar pruebas.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
+source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 37%
@@ -18,7 +18,7 @@ AEM La herramienta de copia de contenido permite a los usuarios copiar contenido
 
 Los datos actuales y reales son valiosos para las pruebas, la validación y la aceptación de usuarios. AEM La herramienta de copia de contenido le permite copiar contenido de un entorno as a Cloud Service de producción a un entorno de ensayo, desarrollo o implementación. [Entorno de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) entorno para dichas pruebas.
 
-El contenido que se va a copiar se define mediante un conjunto de contenido. Un conjunto de contenido consiste en una lista de rutas JCR que contienen el contenido mutable que se va a copiar de un entorno de servicio de creación de origen a un entorno de servicio de creación de destino dentro del mismo programa de Cloud Manager. Se permiten las siguientes rutas en un conjunto de contenido.
+El contenido que se va a copiar se define mediante un conjunto de contenido. Un conjunto de contenido consiste en una lista de rutas JCR que contienen el contenido mutable que se va a copiar desde un entorno de servicio de creación de origen a un entorno de servicio de creación de destino dentro del mismo programa de Cloud Manager. Se permiten las siguientes rutas en un conjunto de contenido.
 
 ```text
 /content
@@ -39,7 +39,7 @@ Para utilizar la herramienta de copia de contenido, se requieren ciertos permiso
 
 | Función de copia de contenido | AEM Grupo de administradores de | Función Administrador de implementación |
 |---|---|---|
-| Crear y modificar [conjuntos de contenido](#create-content-set) | Requerido | No necesario |
+| Crear y modificar [conjuntos de contenido](#create-content-set) | No necesario | Requerido |
 | Iniciar o cancelar el [proceso de copia de contenido](#copy-content) | Requerido | Requerido |
 
 Para obtener más información sobre los permisos y cómo configurarlos, consulte el documento [AEM Perfiles de equipo y producto as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md)
