@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 558662fb646abcf298a46fd0c1b1c709d53bce45
+source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 91%
@@ -734,7 +734,7 @@ Puede agregar las siguientes restricciones a los elementos del esquema JSON para
 
 ## Habilitar datos compatibles con esquemas {#enablig-schema-compliant-data}
 
-Para permitir que el formulario adaptable genere los datos compatibles con el esquema al enviar el formulario, realice los siguientes pasos:
+Para permitir que todos los Forms adaptables basados en esquemas JSON generen datos compatibles con esquemas al enviar el formulario, siga estos pasos:
 
 1. Vaya a la consola web del Experience Manager en `https://server:host/system/console/configMgr`.
 1. Localizar **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]**.
