@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 76%
+ht-degree: 82%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 76%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="¡Buen trabajo! En este módulo, ha aprendido a crear contenido sin encabezado como fragmento de contenido en función del modelo que hizo anteriormente. Ahora comprende cómo los equipos de contenido pueden crear y administrar contenido para aplicaciones y sitios web independientes de los ciclos de desarrollo."
+>title="¡Buen trabajo! En este módulo, ha aprendido a elaborar un fragmento de contenido basado en el modelo que ha creado anteriormente. Ahora comprende cómo los equipos de contenido pueden crear y administrar contenido para aplicaciones y sitios web independientes de los ciclos de desarrollo."
 >abstract=""
 
 ## Creación de un fragmento de contenido {#create-fragment}

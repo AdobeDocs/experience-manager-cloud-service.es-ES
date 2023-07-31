@@ -6,7 +6,7 @@ index: false
 source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Edición en contexto"
->abstract="Vea cómo sus aplicaciones sin encabezado pueden aprovechar el editor universal para llevar la edición de bajo nivel de fricción al alcance de sus autores."
+>abstract="Vea cómo sus aplicaciones sin encabezado pueden incorporar el Editor universal para poner al alcance de sus autores la edición en contexto y sin complicaciones."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="En este módulo, ha aprendido a personalizar el contenido en contexto y en contexto mediante el Editor universal."
+>title="En este módulo, ha aprendido a personalizar el contenido en contexto y en su lugar mediante el Editor universal."
 >abstract=""
 
 ## Editar texto en contexto {#edit-text}
