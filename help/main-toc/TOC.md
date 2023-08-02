@@ -8,7 +8,7 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 31d0bc8592bdd7c7cb71e0d7ee5eaa9898c276f2
+source-git-commit: 8a0057e52e971ebc4f396e7c43b43bad8337e6fe
 workflow-type: tm+mt
 source-wordcount: '4215'
 ht-degree: 97%
@@ -572,7 +572,7 @@ ht-degree: 97%
          + Creación de un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
             + [Creación de un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
             + [Creación de temáticas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
-            + [Temas de muestra, plantillas y modelos de datos de formulario en componentes principales](/help/forms/sample-themes-templates-form-data-models-core-components)
+            + [Temas de muestra, plantillas y modelos de datos de formulario en componentes principales](/help/forms/sample-themes-templates-form-data-models-core-components.md)
             + [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
             + [Creación de Formularios adaptables: componentes principales en una página de AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Utilizar la traducción automática o la traducción humana para traducir un formulario adaptable](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
