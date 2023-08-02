@@ -2,9 +2,9 @@
 title: Búsqueda de contenido e indexación
 description: Búsqueda de contenido e indexación
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: c19783ed4899772835a05856fc3a5601ef6a6df8
+source-git-commit: a16e627fc758c6aa8516b01aedd622da5b77318b
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2317'
 ht-degree: 35%
 
 ---
@@ -32,6 +32,7 @@ Restricciones:
 * En la actualidad, la administración de índices en AEM as a Cloud Service solo se admite para índices de tipo `lucene`.
 * Solo se admiten analizadores estándar (es decir, aquellos analizadores que se envían con el producto). No se admiten analizadores personalizados.
 * Internamente, se pueden configurar y utilizar otros índices para las consultas. Por ejemplo, las consultas que se escriben en relación con el índice `damAssetLucene`, en Skyline, podrían ejecutarse con una versión Elasticsearch de este. Esta diferencia no suele ser visible para la aplicación y el usuario; sin embargo, algunas herramientas, como `explain` informe de funciones con un índice diferente. Para ver las diferencias entre los índices de Lucene y los de Elastic, consulte [la documentación de Elastic en Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Los clientes no necesitan ni pueden configurar índices de Elasticsearch directamente.
+* Buscar por vectores de funciones similares (`useInSimilarity = true`) no es compatible.
 
 ## Usos {#how-to-use}
 
