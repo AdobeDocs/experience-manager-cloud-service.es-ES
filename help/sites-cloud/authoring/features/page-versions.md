@@ -1,10 +1,10 @@
 ---
 title: Uso de versiones de página
-description: Crear, comparar y restaurar versiones de una página
+description: AEM Obtenga información sobre cómo crear, comparar y restaurar versiones de sus páginas en la administración de segmentos de página en la administración de segmentos de la página de.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1507'
 ht-degree: 36%
 
 ---

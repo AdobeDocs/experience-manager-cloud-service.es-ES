@@ -1,10 +1,10 @@
 ---
 title: Crear y organizar páginas
-description: Crear y organizar páginas con AEM
+description: AEM Aprenda a organizar el sitio web creando y administrando páginas con la ayuda de los usuarios de la página de inicio de sesión de.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2539'
+source-wordcount: '2544'
 ht-degree: 66%
 
 ---

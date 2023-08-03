@@ -1,10 +1,10 @@
 ---
 title: Configuración de ContextHub
-description: Obtenga información sobre cómo configurar ContextHub.
+description: Aprenda a configurar ContextHub, un marco de trabajo para almacenar, manipular y presentar datos de contexto.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1689'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ AEM proporciona los siguientes candidatos de tienda de muestra en los que puede 
 
 1. En el carril del Experience Manager, pulse o haga clic en Herramientas > Sitios > ContextHub.
 1. Toque o haga clic en el contenedor de configuración predeterminado.
-1. Toque o haga clic en Configuración de Contexthub
+1. Haga clic o pulse Configuración de Contexthub
 1. Para agregar una tienda, toque o haga clic en el icono Crear y, a continuación, toque o haga clic en Configuración de tienda de ContextHub.
 
    ![Configuración de tienda de ContextHub](assets/contexthub-store-configuration.png)

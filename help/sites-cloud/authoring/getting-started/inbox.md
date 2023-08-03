@@ -1,15 +1,15 @@
 ---
 title: Su bandeja de entrada
-description: Administrar las tareas con la bandeja de entrada
+description: Aprenda a utilizar las notificaciones que llegan a la bandeja de entrada para administrar sus tareas.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 71%
+source-wordcount: '914'
+ht-degree: 70%
 
 ---
 
-# Su bandeja de entrada    {#your-inbox}
+# Su bandeja de entrada {#your-inbox}
 
 Puede recibir notificaciones desde varias áreas de AEM, incluidos flujos de trabajo y proyectos. Por ejemplo, puede recibir notificaciones sobre:
 

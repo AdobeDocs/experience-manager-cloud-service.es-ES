@@ -1,11 +1,11 @@
 ---
 title: Edición de las propiedades de página
-description: Definir las propiedades necesarias para una página
+description: AEM Obtenga información sobre cómo definir las propiedades necesarias para administrar una página en la administración de páginas en la.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2341'
-ht-degree: 81%
+source-wordcount: '2347'
+ht-degree: 80%
 
 ---
 
@@ -202,7 +202,7 @@ Esta pestaña solo está visible para páginas que sirven como modelos. Los mode
 
 * **Configuraciones de despliegue** : controla las circunstancias dentro de las que se propagan las modificaciones a Live Copy
 
-### Live Copy    {#live-copy}
+### Live Copy {#live-copy}
 
 Esta pestaña solo está visible para páginas configuradas como Live Copies. Al igual que con los modelos, las Live Copies forman parte de la [Administración de varios sitios](/help/sites-cloud/administering/msm/overview.md).
 

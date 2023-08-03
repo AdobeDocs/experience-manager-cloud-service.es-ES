@@ -1,11 +1,11 @@
 ---
 title: Publicar páginas
-description: Publicar y cancelar la publicación de páginas con AEM
+description: AEM Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante varios mecanismos en la documentación de.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 73%
+source-wordcount: '1807'
+ht-degree: 72%
 
 ---
 
