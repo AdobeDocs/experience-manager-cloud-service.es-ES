@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
+source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 16%
@@ -27,7 +27,7 @@ Para conectar su entorno de AEM Forms con el servicio reCAPTCHA de Google
 
 1. Obtener el [par de claves de la API reCAPTCHA](https://www.google.com/recaptcha/admin) de Google. Incluye un **clave del sitio** y una **clave secreta**.
 
-   ![Cree la configuración reCAPTCHA de Google del sitio web de Google para obtener las claves reCAPTCHA](/help/forms/assets/google-captcha.gif){width="50%"}
+   ![Cree la configuración reCAPTCHA de Google del sitio web de Google para obtener las claves reCAPTCHA](/help/forms/assets/google-captcha.gif)
 1. Cree el contenedor de configuración en su entorno as a Cloud Service de AEM Forms. AEM Un contenedor de configuración contiene las configuraciones de nube utilizadas para conectarse a los servicios externos de la forma que se utilizan para conectarse a los servicios externos. Para crear y configurar un contenedor de configuración para conectar su entorno de AEM Forms con el servicio reCAPTCHA de Google:
    1. Abra la instancia as a Cloud Service de AEM Forms.
    1. Vaya a **[!UICONTROL Herramientas > General > Explorador de configuración]**. En el Explorador de configuración, puede:
