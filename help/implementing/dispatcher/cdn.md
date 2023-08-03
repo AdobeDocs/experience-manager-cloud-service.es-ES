@@ -1,12 +1,12 @@
 ---
 title: CDN en AEM as a Cloud Service
-description: CDN en AEM as a Cloud Service
+description: AEM AEM Aprenda a utilizar la CDN administrada por el y a apuntar su propia CDN a la CDN administrada por el administrador de la red de distribución de contenido (CDN) administrada por el administrador de la.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 25%
+source-wordcount: '1033'
+ht-degree: 24%
 
 ---
 
