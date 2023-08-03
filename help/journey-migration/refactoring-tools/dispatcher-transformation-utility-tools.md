@@ -1,11 +1,11 @@
 ---
 title: Herramienta de Dispatcher Converter de AEM
-description: Herramienta de Dispatcher Converter de AEM
+description: AEM AEM Aprenda a convertir las configuraciones existentes en Dispatcher de forma que se conviertan en configuraciones en Dispatcher as a Cloud Service de la.
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 36%
+source-wordcount: '352'
+ht-degree: 33%
 
 ---
 

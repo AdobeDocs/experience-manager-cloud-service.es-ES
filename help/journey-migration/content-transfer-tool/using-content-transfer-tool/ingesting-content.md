@@ -1,10 +1,10 @@
 ---
 title: Ingesta de contenido en Target
-description: Ingesta de contenido en Target
+description: Aprenda a utilizar la herramienta de transferencia de contenido para introducir contenido del conjunto de migración en una instancia de Cloud Service.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1941'
 ht-degree: 11%
 
 ---
@@ -122,7 +122,7 @@ Recupere el token de migración manualmente haciendo clic en el vínculo &quot;O
 
 ### No se puede iniciar la ingesta {#unable-to-start-ingestion}
 
-Solo puede iniciar una ingesta en el entorno de destino si pertenece al entorno local de **AEM administradores de** en el servicio de creación del Cloud Service de destino. AEM Si no pertenece al grupo de administradores de la, verá un error como se muestra a continuación cuando intente iniciar una ingesta. Puede pedir al administrador que le añada al local **AEM administradores de** o pida el token en sí, que puede pegar en la variable **Entrada de token de migración** field.
+Solo puede iniciar una ingesta en el entorno de destino si pertenece al entorno local de **AEM administradores de** en el servicio de creación del Cloud Service de destino. AEM Si no pertenece al grupo de administradores de la, verá un error como se muestra a continuación cuando intente iniciar una ingesta. Puede pedir al administrador que le añada al local **AEM administradores de** o pida el token en sí, que puede pegar en el **Entrada de token de migración** field.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
