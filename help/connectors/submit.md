@@ -1,11 +1,11 @@
 ---
 title: Envío de un conector de AEM
-description: Obtenga información sobre cómo implementar conectores mediante Cloud Manager.
+description: AEM Aprenda a hacer referencia e implementar correctamente los conectores en el as a Cloud Service de la.
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 97%
+source-wordcount: '307'
+ht-degree: 95%
 
 ---
 
