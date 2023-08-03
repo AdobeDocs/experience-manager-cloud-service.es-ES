@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: a63a237e8da9260fa5f88060304b8cf9f508da7f
 workflow-type: tm+mt
 source-wordcount: '1899'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -42,7 +42,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 | **Metadatos** |  |  |  |  |  |  |
 | Crear metadatos | - | ✓ | ✓ | ✓ | ✓ | - |
 | Leer metadatos | - | ✓ | - | ✓ | ✓ | - |
-| Actualización de metadatos | - | ✓ | ✓ | ✓ | ✓ | - |
+| Actualización de los metadatos | - | ✓ | ✓ | ✓ | ✓ | - |
 | Eliminar metadatos | - | ✓ | ✓ | ✓ | ✓ | - |
 | Copiar metadatos | - | ✓ | - | ✓ | ✓ | - |
 | Mover metadatos | - | ✓ | - | ✓ | ✓ | - |
@@ -75,6 +75,7 @@ Entrada [!DNL Experience Manager] as a [!DNL Cloud Service], puede cargar direct
 ![Descripción general del protocolo de carga binaria directa](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
+>
 Ejecute los pasos anteriores en una aplicación externa y no dentro de [!DNL Experience Manager] JVM.
 
 El método ofrece una administración escalable y más eficaz de las cargas de recursos. Las diferencias con respecto a [!DNL Experience Manager] 6.5 son:
@@ -83,8 +84,11 @@ El método ofrece una administración escalable y más eficaz de las cargas de r
 * El almacenamiento en la nube binario funciona con una red de distribución de contenido (CDN) o una red perimetral. Una CDN selecciona un punto final de carga más cercano a un cliente. Cuando los datos viajan a una distancia menor a un punto final cercano, el rendimiento de carga y la experiencia del usuario mejoran, especialmente para equipos distribuidos geográficamente.
 
 >[!NOTE]
+>
 Consulte el código de cliente para implementar este enfoque en el código abierto [biblioteca de carga de aem](https://github.com/adobe/aem-upload).
+>
 [!IMPORTANT]
+>
 En determinadas circunstancias, es posible que los cambios no se propaguen completamente entre solicitudes y Experience Manager debido a la naturaleza finalmente coherente del almacenamiento en Cloud Service. Esto provoca que se produzcan respuestas 404 para iniciar o completar llamadas de carga debido a que no se propagan las creaciones de carpetas necesarias. Los clientes deben esperar respuestas 404 y gestionarlas implementando un reintento con una estrategia de back-off.
 
 ### Iniciar carga {#initiate-upload}
@@ -154,6 +158,7 @@ De nuevo, la forma más fácil y segura es simplemente utilizar partes de tamañ
 Si la carga se realiza correctamente, el servidor responde a cada solicitud con un `201` código de estado.
 
 >[!NOTE]
+>
 Para obtener más información sobre el algoritmo de carga, consulte la [documentación oficial de funciones](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) y [Documentación de API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) en el proyecto Apache Jackrabbit Oak.
 
 ### Carga completa {#complete-upload}
@@ -173,6 +178,7 @@ Una vez cargadas todas las partes de un archivo binario, envíe una solicitud de
 | `fileSize` | Número | Opcional | El tamaño, en bytes, del archivo. Si se especifica, el tamaño del archivo se incluye en los archivos de registro del sistema para el análisis de velocidad de transferencia. |
 
 >[!NOTE]
+>
 Si el recurso existe y ninguno `createVersion` ni `replace` se especifica, entonces [!DNL Experience Manager] actualiza la versión actual del recurso con el nuevo binario.
 
 Al igual que el proceso de inicio, los datos de solicitud completos pueden contener información de más de un archivo.
@@ -187,6 +193,7 @@ Para obtener más información sobre los algoritmos de carga o para crear sus pr
 * [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem).
 
 >[!NOTE]
+>
 La biblioteca de carga de aem y la herramienta de línea de comandos utilizan la variable [biblioteca node-httptransfer](https://github.com/adobe/node-httptransfer/)
 
 ### API de carga de recursos obsoletas {#deprecated-asset-upload-api}
@@ -196,13 +203,13 @@ La biblioteca de carga de aem y la herramienta de línea de comandos utilizan la
 El nuevo método de carga solo es compatible para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. Las API de [!DNL Adobe Experience Manager] 6.5 está obsoleto. Los métodos relacionados con la carga o actualización de recursos o representaciones (cualquier carga binaria) están en desuso en las siguientes API:
 
 * [API HTTP de Experience Manager Assets](mac-api-assets.md)
-* `AssetManager` API de Java, como `AssetManager.createAsset(..)`
+* `AssetManager` API de Java, como `AssetManager.createAsset(..)`, `AssetManager.createAssetForBinary(..)`, `AssetManager.getAssetForBinary(..)`, `AssetManager.removeAssetForBinary(..)`, `AssetManager.createOrUpdateAsset(..)`, `AssetManager.createOrReplaceAsset(..)`
 
 >[!MORELIKETHIS]
+>
 * [Biblioteca de código abierto aem-upload](https://github.com/adobe/aem-upload).
 * [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem).
 * [Documentación de Apache Jackrabbit Oak para carga directa](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
-
 
 ## Flujos de trabajo de procesamiento de recursos y posprocesamiento {#post-processing-workflows}
 
@@ -293,11 +300,11 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
@@ -306,5 +313,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * [Importación masiva de metadatos](metadata-import-export.md)
 
 >[!MORELIKETHIS]
+>
 * [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
-
