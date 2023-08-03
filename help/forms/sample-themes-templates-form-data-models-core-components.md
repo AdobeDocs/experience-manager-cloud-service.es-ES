@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
+source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1210'
 ht-degree: 10%
 
 ---
@@ -80,7 +80,7 @@ La plantilla básica le ayuda a crear rápidamente un formulario de experiencia 
 
 >[!TAB Teléfono]
 
-![Teléfono de plantilla básico](assets/Basic-temp-phone-view.png)
+![Teléfono de plantilla básico](assets/Basic-temp-phone-view.png){width:&quot;25%&quot;}
 
 >[!TAB Tableta]
 
@@ -93,7 +93,21 @@ La plantilla básica le ayuda a crear rápidamente un formulario de experiencia 
 
 Se utiliza una plantilla de lienzo en blanco para crear una estructura de formulario adaptable, contenido y reglas desde cero. En la plantilla en blanco no se preincorporan componentes de formulario.
 
-![Plantilla en blanco](assets/Blank-template.png)
+>[!BEGINTABS]
+
+>[!TAB Escritorio]
+
+![Plantilla de escritorio en blanco](assets/Blank-temp-desktop-view.png)
+
+>[!TAB Teléfono]
+
+![Teléfono de plantilla básico](assets/Blank-temp-phone-view.png){width:&quot;25%&quot;}
+
+>[!TAB Tableta]
+
+![Tableta de plantilla básica](assets/Blank-temp-tablet-view.png)
+
+>[!ENDTABS]
 
 ### Contáctenos. {#Contact-Us}
 
@@ -147,7 +161,7 @@ La plantilla de formulario de solicitud de compra ayuda a crear un formulario pa
 
 ## Modelos de datos de formulario de referencia {#reference-models}
 
-Después de crear una [Formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) basado en [Componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), puede conectar el back-end del formulario con la base de datos de los servidores de Microsoft® Dynamics 365 y Salesforce para habilitar los flujos de trabajo empresariales. Por ejemplo:
+Después de crear una [Formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) basado en [Componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), puede conectar el formulario con la base de datos de los servidores de Microsoft® Dynamics 365 y Salesforce para habilitar los flujos de trabajo empresariales. Por ejemplo:
 
 * escribir datos en Microsoft® Dynamics 365 y Salesforce sobre el envío de formularios adaptables;
 * escribir datos en Microsoft® Dynamics 365 y Salesforce a través de entidades personalizadas definidas en el modelo de datos de formulario y viceversa;
