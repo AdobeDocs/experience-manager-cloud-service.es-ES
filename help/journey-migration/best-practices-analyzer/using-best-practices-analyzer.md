@@ -1,10 +1,10 @@
 ---
 title: Uso del analizador de prácticas recomendadas
-description: Uso del analizador de prácticas recomendadas
+description: Aprenda a utilizar el Analizador de prácticas recomendadas para comprender la preparación de la actualización.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2484'
 ht-degree: 45%
 
 ---

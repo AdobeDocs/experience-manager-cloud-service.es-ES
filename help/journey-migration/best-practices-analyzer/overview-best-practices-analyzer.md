@@ -1,11 +1,11 @@
 ---
 title: Introducción al Analizador de prácticas recomendadas
-description: Introducción al Analizador de prácticas recomendadas
+description: AEM Aprenda a utilizar el Analizador de prácticas recomendadas para evaluar el cumplimiento de la implementación de su con las prácticas recomendadas
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 68%
+source-wordcount: '366'
+ht-degree: 65%
 
 ---
 

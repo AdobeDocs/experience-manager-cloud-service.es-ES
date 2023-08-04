@@ -1,9 +1,9 @@
 ---
 title: Información general sobre el transformador de contenido
-description: Información general sobre el transformador de contenido
-source-git-commit: 55eedd342f048e19bad5c6fbfdd16a468ff1f4f9
+description: Obtenga información sobre cómo detectar y corregir problemas relacionados con el contenido notificados por la BPA mediante el transformador de contenido.
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '393'
 ht-degree: 2%
 
 ---

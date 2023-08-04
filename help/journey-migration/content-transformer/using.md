@@ -1,10 +1,10 @@
 ---
 title: Uso del transformador de contenido
-description: Uso del transformador de contenido
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+description: AEM Aprenda a transformar la estructura de contenido con el fin de prepararse para migrar a la as a Cloud Service.
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 2%
+source-wordcount: '645'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ En la sección siguiente se comprenden las consideraciones importantes al utiliz
 * Aunque puede ejecutar el transformador de contenido en el entorno de producción, se recomienda ejecutar el transformador de contenido en un clon del entorno de producción. Lo que es más importante, debe asegurarse de que el BPA y la TC se ejecuten en el mismo entorno.
 * Debe ser administrador en el entorno en el que desea ejecutar el transformador de contenido.
 * Cualquier operación que pueda cambiar el contenido de origen ( mover/quitar/cambiar nombre ) creará de forma predeterminada un paquete de copia de seguridad de las rutas de origen en `/etc/packages/content-transformation` antes de la transformación. Aunque cada cuadro de diálogo de operación tiene una opción para deshabilitar/habilitar la creación de paquetes de copia de seguridad, se recomienda tener siempre seleccionada la opción para habilitar la creación de paquetes.
-* Cada página de la TC está configurada para enumerar un máximo de 50 hallazgos, por lo que a la vez se puede transformar un máximo de 50 hallazgos. Esto se hace para proporcionar una respuesta de puntualidad en la interfaz de usuario.
+* Cada página del transformador de contenido está configurada para enumerar un máximo de 50 conclusiones, por lo que a la vez se puede transformar un máximo de 50 conclusiones. Esto se hace para proporcionar una respuesta de puntualidad en la interfaz de usuario.
 
 ## Disponibilidad {#availability-ct}
 

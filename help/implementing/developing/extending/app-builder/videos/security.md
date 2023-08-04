@@ -1,6 +1,6 @@
 ---
 title: Seguridad de App Builder
-description: Obtenga información sobre la seguridad de la aplicación App Builder.
+description: AEM Obtenga información sobre la seguridad de la aplicación App Builder para la creación de aplicaciones as a Cloud Service.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -9,9 +9,9 @@ level: Beginner
 kt: 9460
 thumbnail: 339249.jpg
 exl-id: f0f3f254-0efa-4fab-b2fd-96571bbb719f
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '24'
+source-wordcount: '30'
 ht-degree: 0%
 
 ---

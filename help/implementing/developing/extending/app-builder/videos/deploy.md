@@ -1,6 +1,6 @@
 ---
 title: Implementación de aplicaciones de App Builder
-description: Obtenga información sobre cómo implementar aplicaciones de App Builder.
+description: AEM Obtenga información sobre cómo implementar aplicaciones de App Builder para la creación de aplicaciones as a Cloud Service.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -9,9 +9,9 @@ level: Beginner
 kt: 9461
 thumbnail: 339250.jpg
 exl-id: 54ad1cbc-a8b5-44b2-b12c-24c530a5a929
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '36'
+source-wordcount: '42'
 ht-degree: 0%
 
 ---

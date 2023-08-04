@@ -1,10 +1,10 @@
 ---
 title: Experiencia unificada para herramientas de refactorización de código
-description: Experiencia unificada para herramientas de refactorización de código
+description: Obtenga información sobre la experiencia unificada para las herramientas de refactorización de código.
 exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '265'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ El complemento de experiencia unificada ofrece las siguientes ventajas:
 
 * Unifica las herramientas que funcionan en el código fuente en una sola `node.js` aplicación expuesta como `aio-cli ` para proporcionar una experiencia de usuario coherente al usuario.
 
-* Proporciona la capacidad de ejecutar todas las herramientas mediante un único comando, al mismo tiempo que proporciona la flexibilidad para ejecutar herramientas específicas según sea necesario.
+* Proporciona la capacidad de ejecutar todas las herramientas mediante un único comando, al tiempo que proporciona la flexibilidad para ejecutar herramientas específicas según sea necesario.
 
 * Proporciona extensibilidad para simplificar la adición de nuevas herramientas, manteniendo al mismo tiempo la experiencia coherente.
 

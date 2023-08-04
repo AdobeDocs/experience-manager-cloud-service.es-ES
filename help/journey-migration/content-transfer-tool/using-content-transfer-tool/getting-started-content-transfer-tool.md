@@ -1,10 +1,10 @@
 ---
 title: Introducción a la herramienta de transferencia de contenido
-description: Introducción a la herramienta de transferencia de contenido
+description: Obtenga información sobre cómo empezar a utilizar la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1439'
 ht-degree: 21%
 
 ---

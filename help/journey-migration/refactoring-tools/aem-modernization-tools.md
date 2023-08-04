@@ -1,11 +1,11 @@
 ---
 title: Herramientas de modernización de AEM
-description: Herramientas de modernización de AEM
+description: AEM AEM Obtenga información acerca del conjunto de utilidades que se pueden utilizar para convertir las funciones de la versión heredada a las funciones modernas y compatibles de la versión as a Cloud Service de la.
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 51%
+source-wordcount: '153'
+ht-degree: 41%
 
 ---
 
