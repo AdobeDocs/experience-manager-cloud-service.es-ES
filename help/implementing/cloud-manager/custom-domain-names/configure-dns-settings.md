@@ -1,11 +1,11 @@
 ---
 title: Configuración de DNS
-description: Configuración de DNS
+description: Obtenga información sobre cómo configurar DNS para los nombres de dominio personalizados.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 87%
+source-wordcount: '338'
+ht-degree: 84%
 
 ---
 
