@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
+source-git-commit: 2b290be134be05bc15891082e8b54efef62076d0
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1277'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 # Temas de muestra, plantillas y modelos de datos de formulario en componentes principales {#sample-themes-templates-and-data-models}
 
-Los componentes principales de AEM Forms proporcionan temáticas de referencia de ejemplo, plantillas y modelos de datos de formulario para ayudarle a empezar rápidamente a crear Forms adaptable con componentes principales. Puede [habilitar componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=es) en el entorno de desarrollo as a Cloud Service y local de AEM Forms para obtener plantillas OOTB de muestra y [uso y personalización de temáticas de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+[!DNL AEM Forms] Los componentes principales proporcionan temáticas de ejemplo, plantillas y modelos de datos de formulario listos para usar para crear formularios adaptables versátiles rápidamente. También ayudan a los autores de formularios a conocer la extensibilidad, adaptabilidad y capacidad de respuesta de [Componentes principales de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) crear formularios simples en poco tiempo y formularios complejos fácilmente mientras se conecta con la base de datos sin problemas.
 
 Las temáticas, plantillas y modelos de datos de formulario de ejemplo incluidos en el paquete de contenido de referencia son:
 
@@ -39,7 +39,13 @@ Las temáticas, plantillas y modelos de datos de formulario de ejemplo incluidos
 
 ## Temas de muestra {#Sample-Themes}
 
-Los temas de ejemplo de referencia ayudan a los autores a definir y personalizar el estilo para los formularios, los autores con incluso un conocimiento básico de CSS pueden personalizar el tema según los requisitos. Autores de formularios [habilitar componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=es) Haga clic en el entorno de desarrollo as a Cloud Service y local de AEM Forms para obtener estas temáticas y describirlas de la siguiente manera:
+Los temas de ejemplo de referencia ayudan a los autores a definir y personalizar el estilo para los formularios, los autores con incluso un conocimiento básico de CSS pueden personalizar el tema según los requisitos.
+
+**¿Cómo obtener estos temas?**
+* Para activar estas temáticas **Forms as a Cloud Service** entorno, [habilitar componentes principales de Forms adaptable](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) y utilice el [canalización front-end](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) para implementar estas temáticas.
+* Para obtener estas temáticas en un **AEM.5 Forms** entorno, [habilitar componentes principales de Forms adaptable](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) y utilice el [administrador de paquetes](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components) para implementar estas temáticas.
+
+El **de serie** [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) los temas se describen de la siguiente manera:
 
 ![Temas de OOTB](assets/OOTB-themes.png)
 
@@ -51,7 +57,7 @@ La temática Lienzo es la predeterminada para los formularios y enfatiza el uso 
 
 ### WKND {#WKND}
 
-El tema de WKND encarna un diseño dinámico, imaginativo y atractivo para mostrar un aspecto elegante a sus formularios. La temática se basa en el aspecto y el estilo de [Sitio WKND](https://wknd.site/us/en.html) que es un sitio web de viajes y aventura basado en [Componentes principales de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+El tema de WKND encarna un diseño dinámico, imaginativo y atractivo para mostrar un aspecto elegante a sus formularios. La temática se basa en el aspecto y el estilo de [Sitio WKND](https://wknd.site/us/en.html) que es un sitio web de viajes y aventura basado en [Componentes principales de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es).
 
 ![Tema WKND](assets/Safety-Inspection-Form-Theme.png)
 
@@ -64,7 +70,12 @@ El tema de caballete ayuda a crear un aspecto del formulario que es atractivo y 
 
 ## Plantillas de muestra {#Sample-templates}
 
-Las plantillas definen la estructura inicial del formulario, el contenido y las acciones que se duplicarán en él o utilizarán una estructura de plantilla similar a la del formulario, por ejemplo, un formulario de consentimiento, un formulario de inscripción en beneficios y mucho más. Puede obtener las siguientes plantillas por [habilitar los componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=es) en el entorno de desarrollo as a Cloud Service o local de AEM Forms. Las plantillas de ejemplo de los componentes principales de Forms adaptable son:
+Las plantillas definen la estructura inicial del formulario, el contenido y las acciones que se duplicarán en él o utilizarán una estructura de plantilla similar a la del formulario, por ejemplo, un formulario de consentimiento, un formulario de inscripción en beneficios y mucho más.
+
+**¿Cómo obtener estas plantillas?**
+Puede obtener las plantillas implementando un [AEM Proyecto basado en Archetype 43 o posterior de](https://github.com/adobe/aem-project-archetype) a su **AEM Forms as a Cloud Service** o **AEM,5** Entorno de Forms.
+
+El **de serie** [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) Las plantillas de se describen de la siguiente manera:
 
 ![Plantillas de referencia](assets/reference-templates-core-components.png)
 
@@ -82,7 +93,7 @@ Se utiliza una plantilla de lienzo en blanco para crear una estructura de formul
 
 ### Contáctenos. {#Contact-Us}
 
-La plantilla de formulario Contacto se utiliza para crear un formulario que facilite la comunicación entre los visitantes y los administradores del sitio web. Los usuarios pueden enviar consultas, comentarios o solicitudes de asistencia a través del formulario.
+La plantilla de formulario Contacto se utiliza para crear un formulario para facilitar la comunicación entre los visitantes del sitio web y los administradores del formulario. Los usuarios pueden enviar consultas, comentarios o solicitudes de asistencia a través del formulario.
 
 ![Plantilla de contacto](assets/Contact-us-desktop-view.png)
 
@@ -100,7 +111,7 @@ La plantilla de formulario de consentimiento se utiliza para crear un formulario
 
 ### Solicitud de servicio de registro {#Log-Service-Request}
 
-La plantilla de solicitud del servicio de registro ayuda a crear un formulario que solicita servicios de registro específicos de un proveedor de servicios. El formulario sirve como solicitud formal para crear un ticket si ciertos eventos, actividades o datos se han registrado para el estado de seguimiento o monitorización.
+La plantilla de solicitud del servicio de registro ayuda a crear un formulario que solicita servicios de registro específicos de un proveedor de servicios. El formulario sirve como una solicitud formal para crear un ticket para eventos, actividades o datos registrados para monitorizar o rastrear el estado.
 
 ![Plantilla de solicitud de servicio de registro](assets/Log-service-request-desktop-view.png)
 
@@ -152,7 +163,7 @@ La plantilla de formulario de solicitud de compra ayuda a crear un formulario pa
 
 ## Modelos de datos de formulario de referencia {#reference-models}
 
-Después de crear una [Formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) basado en [Componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), puede conectar el formulario con la base de datos de los servidores de Microsoft® Dynamics 365 y Salesforce para habilitar los flujos de trabajo empresariales. Por ejemplo:
+Después de crear una [Formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#adaptive-forms-core-components) basado en [Componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction#adaptive-forms-core-components), puede conectar el formulario con la base de datos de los servidores de Microsoft® Dynamics 365 y Salesforce para habilitar los flujos de trabajo empresariales. Por ejemplo:
 
 * escribir datos en Microsoft® Dynamics 365 y Salesforce sobre el envío de formularios adaptables;
 * escribir datos en Microsoft® Dynamics 365 y Salesforce a través de entidades personalizadas definidas en el modelo de datos de formulario y viceversa;
@@ -164,4 +175,4 @@ Puede obtener los siguientes modelos de datos de formulario instalando el [Paque
 * Microsoft® Dynamics 365
 * Salesforce
 
-Para obtener información sobre el uso de estos modelos, consulte [Configuración de los servicios en la nube de Microsoft® Dynamics 365 y Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=es#configure-dynamics-cloud-service)
+Para obtener información sobre el uso de estos modelos, consulte [Configuración de los servicios en la nube de Microsoft® Dynamics 365 y Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
