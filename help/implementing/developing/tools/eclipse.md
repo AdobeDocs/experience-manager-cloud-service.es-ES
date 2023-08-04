@@ -1,11 +1,11 @@
 ---
 title: Herramientas para desarrolladores de AEM para Eclipse
-description: Herramientas para desarrolladores de AEM para Eclipse
+description: AEM Aprenda a utilizar las herramientas para desarrolladores de Eclipse, un complemento de Eclipse basado en el complemento de Eclipse para Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 3%
+source-wordcount: '1199'
+ht-degree: 2%
 
 ---
 

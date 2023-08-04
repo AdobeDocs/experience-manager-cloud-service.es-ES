@@ -1,10 +1,10 @@
 ---
 title: Product Cockpit
-description: Uso de Product Cockpit
+description: Aprenda a trabajar con la cabina de productos, que proporciona una visión general unificada de los catálogos de productos vinculados y el contenido asociado.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '448'
 ht-degree: 1%
 
 ---
