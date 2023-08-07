@@ -3,10 +3,10 @@ title: Actualizaciones de la versión de AEM
 description: AEM Descubra cómo utiliza la integración y el envío continuos (CI/CD) para mantener sus proyectos en la versión más reciente de los que utiliza as a Cloud Service.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd567c484d71e25de1808f784c455cfb9b124fbf
+source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 11%
+source-wordcount: '800'
+ht-degree: 9%
 
 ---
 
@@ -58,6 +58,37 @@ Del mismo modo, si falla una actualización automatizada de un entorno de desarr
 >[!NOTE]
 >
 >AEM Si el código personalizado se insertó en el ensayo y no en la producción, la siguiente actualización de la eliminará esos cambios para reflejar la etiqueta de Git de la última versión correcta del cliente en producción. Por lo tanto, el código personalizado que solo estaba disponible en el ensayo deberá implementarse de nuevo.
+
+## Prácticas recomendadas {#best-practices}
+
+* 
+   * **Uso del entorno de ensayo**
+   * Utilice un entorno diferente (no una fase) para ciclos largos de control de calidad/UAT.
+   * Una vez finalizada la prueba de corrección en Fase, continúe para verificar en Producción.
+
+* 
+   * **Canalización de producción**
+   * Pausar antes de implementar en Producción.
+   * Si cancela la canalización después de una implementación de fase, el código es &quot;desechable&quot; y no es un candidato válido para Producción, consulte [Configuración de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+
+* 
+   * **Canalización que no es de producción**
+* Configurar [Canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* 
+   * Acelere la velocidad y frecuencia de entrega para los errores de canalización de producción.  Identifique los problemas en las canalizaciones que no son de producción habilitando Prueba funcional del producto, Prueba funcional personalizada y Prueba de IU personalizada.
+
+* 
+   * **Copia de contenido**
+   * Uso [Copia de contenido](/help/implementing/developing/tools/content-copy.md) para mover conjuntos de contenido similares a un entorno que no sea de producción.
+
+* 
+   * **Pruebas funcionales automatizadas**
+* Incluya pruebas automatizadas en su canalización para probar la funcionalidad crítica.
+* [Pruebas funcionales del cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) y [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) AEM están bloqueando, si no se consigue, la versión no se implementará.
+
+## Regresión {#regression}
+
+Si encuentra un problema relacionado con la regresión, envíe un caso de asistencia a través de Admin Console.  Si el problema es un bloqueador y está afectando a la producción, se debe plantear un P1.  Proporcione todos los detalles necesarios para reproducir el problema de regresión.
 
 ## Almacén de nodos compuestos {#composite-node-store}
 
