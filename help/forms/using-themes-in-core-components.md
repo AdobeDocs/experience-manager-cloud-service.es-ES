@@ -4,9 +4,9 @@ description: Puede utilizar temáticas para aplicar estilo y proporcionar una id
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: crear una temática nueva, personalizar una temática, cargar una temática nueva, utilizar una temática en formularios, personalizar una temática mediante la canalización de front-end
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 1cec6e01e72cb286949f64749e2386a2b652920e
+source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2711'
 ht-degree: 17%
 
 ---
@@ -417,6 +417,7 @@ Si desea proporcionar información como un logotipo, el nombre de la empresa en 
 * [Definir la presentación de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Generar documento de registro para Forms adaptable (componentes principales)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creación de un Forms adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
+* [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## Artículo relacionado {#related-article}

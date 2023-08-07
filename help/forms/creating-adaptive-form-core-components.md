@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: e6358044af395ee0fc785db3531465a3a6fbd5d5
 workflow-type: tm+mt
-source-wordcount: '2266'
-ht-degree: 77%
+source-wordcount: '2280'
+ht-degree: 76%
 
 ---
 
@@ -188,6 +188,7 @@ Puede utilizar el servicio de prerrellenado del modelo de datos de formulario pa
 * [Crear estilos o temáticas para los formularios](using-themes-in-core-components.md)
 * [Agregar un comportamiento dinámico a los formularios mediante el editor de reglas](rule-editor.md)
 * [Definir la presentación de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## Artículo relacionado {#related-article}
