@@ -2,14 +2,19 @@
 title: Grupos de  [!DNL AEM Forms]  as a Cloud Service integrados
 description: La lista de los grupos de usuarios y los permisos predeterminados asignados a cada grupo
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 83%
+source-wordcount: '175'
+ht-degree: 85%
 
 ---
 
 # Grupos y permisos {#aem-forms-on-osgi-groups-and-privileges}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=es) |
+| AEM as a Cloud Service | Este artículo |
 
 Puede [crear grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=es#accessing) y asignar políticas y [usuarios](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=es#accessing) a los grupos. Estas políticas controlan los permisos de los usuarios que forman parte del grupo.
 
@@ -106,7 +111,7 @@ Una vez configura [!DNL AEM Forms] as a Cloud Service, los grupos enumerados
 * [Incorporación a un entorno Cloud Service](/help/forms/setup-forms-cloud-service.md)
 * [Configuración de un entorno de desarrollo local](/help/forms/setup-local-development-environment.md)
 * [AEM Migrar de Forms de 6.5 a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-* [Crear un formulario adaptable independiente](/help/forms/creating-adaptive-form-core-components.md)
+* [Creación un formulario adaptable independiente](/help/forms/creating-adaptive-form-core-components.md)
 * [Agregar un formulario adaptable a la página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 
