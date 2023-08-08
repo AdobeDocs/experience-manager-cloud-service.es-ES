@@ -1,14 +1,14 @@
 ---
 title: Publicación de recursos de Dynamic Media
-description: Descubra cómo publicar recursos de Dynamic Media.
+description: Obtenga información sobre cómo publicar recursos de vídeo e imagen de Dynamic Media para que pueda incluirlos en una página web mediante una URL o código incrustado en una página web.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 5%
+source-wordcount: '486'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,6 @@ Consulte también [Incrustar el visualizador de vídeo o de imágenes de Dynamic
 >* Los recursos deben publicarse para utilizar la dirección URL. Si los recursos no se publican, no funcionará copiar y pegar la dirección URL en un explorador web.
 >* Los ajustes preestablecidos de imagen y de visualizador se deben activar y publicar para la entrega en directo.
 >
-
 
 Para obtener información detallada sobre cómo publicar un conjunto o un recurso, consulte [Publicando recursos](/help/assets/manage-digital-assets.md).
 
