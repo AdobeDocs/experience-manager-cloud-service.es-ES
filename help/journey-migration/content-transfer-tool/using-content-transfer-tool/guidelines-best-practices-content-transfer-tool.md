@@ -2,9 +2,9 @@
 title: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 description: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1562'
 ht-degree: 19%
 
 ---
@@ -35,7 +35,7 @@ Las versiones anteriores a la 2.0.0 ya no serán compatibles y es aconsejable ut
 
 Las siguientes directrices y prácticas recomendadas se aplican a la nueva versión de la herramienta de transferencia de contenido:
 
-* Es aconsejable ejecutar [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) y [las comprobaciones de coherencia del almacén de datos](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) en el repositorio de **origen** para identificar posibles problemas y reducir el tamaño del repositorio.
+* Es aconsejable ejecutar [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=es) y [las comprobaciones de coherencia del almacén de datos](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) en el repositorio de **origen** para identificar posibles problemas y reducir el tamaño del repositorio.
 
 * En la fase de ingesta, se recomienda ejecutarla utilizando *barrido* modo habilitado en el que el repositorio existente (autor o publicación) en el entorno de AEM Cloud Service de destino se elimina por completo y, a continuación, se actualiza con los datos del conjunto de migración. Este modo es mucho más rápido que el modo sin borrado, donde el conjunto de migración se aplica sobre el contenido  existente.
 
@@ -73,7 +73,7 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al ingerir contenido en un entorno de publicación. Independientemente del contenido especificado en el conjunto de migración, este se incorpora en la instancia de destino elegida. El usuario tiene la capacidad de introducir un conjunto de migración en una instancia de autor, una instancia de publicación o ambas. Se recomienda que, al mover contenido a una instancia de producción, CTT se instale en la instancia de autor de origen para mover contenido a la instancia de autor de destino y, de forma similar, instale CTT en la instancia de publicación de origen para mover contenido a la instancia de publicación de destino. Consulte [Ejecución de la herramienta de transferencia de contenido en una instancia de publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obtener más información.
 
-* Los usuarios y grupos transferidos por la herramienta de transferencia de contenido son solo aquellos que el contenido requiere para satisfacer los permisos. El _Extracción_ El proceso copia el `/home` al conjunto de migración y realiza Asignación de usuarios agregando un campo creado a partir de la dirección de correo electrónico de cada usuario. Para obtener más información, consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). El _Ingesta_ process copia todos los usuarios y grupos a los que se hace referencia en las ACL de contenido migradas.
+* Los usuarios y grupos transferidos por la herramienta de transferencia de contenido son solo aquellos que el contenido requiere para satisfacer los permisos. El _Extracción_ El proceso copia el `/home` al conjunto de migración y realiza Asignación de usuarios agregando un campo creado a partir de la dirección de correo electrónico de cada usuario. Para obtener más información, consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). El _Ingesta_ process copia todos los usuarios y grupos a los que se hace referencia en las ACL de contenido migradas. Consulte [Migración de grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) por consideraciones adicionales para los grupos utilizados en una directiva de grupo de usuarios cerrado (CUG).
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 

@@ -2,9 +2,9 @@
 title: Asignación de usuarios y migración de principales
 description: AEM Información general sobre la asignación de usuarios y la migración de principales en as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '855'
 ht-degree: 10%
 
 ---
@@ -57,6 +57,7 @@ Se registran los siguientes casos específicos:
 * Si la configuración **Borrar contenido existente en la instancia de Cloud antes de la ingesta** Cuando se establece, los usuarios ya transferidos en la instancia de Cloud Service se eliminan junto con todo el repositorio existente. Además, se crea un nuevo repositorio en el que se ingiere contenido. Este proceso también restablece todos los ajustes, incluidos los permisos, en la instancia del Cloud Service de destino y es verdadero para un usuario administrador añadido a **administradores** grupo. El usuario administrador debe leerse en el **administradores** para recuperar el token de acceso para CTT.
 * Cuando se realizan recargas de contenido, si el contenido no se transfiere porque no ha cambiado desde la transferencia anterior, los usuarios y grupos asociados con ese contenido tampoco se transfieren. Esta regla se aplica incluso si los usuarios y grupos han cambiado mientras tanto. El motivo es que los usuarios y grupos se migran junto con el contenido con el que están asociados.
 * Si la instancia de AEM Cloud Service AEM de destino tiene un usuario con un nombre de usuario diferente pero con la misma dirección de correo electrónico que uno de los usuarios de la instancia de origen, y la asignación de usuarios está habilitada, los registros registran un mensaje de error. AEM Además, el usuario de origen no se transfiere, ya que solo se permite un usuario con una dirección de correo electrónico determinada en el sistema de destino.
+* Consulte [Migración de grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) por consideraciones adicionales para los grupos utilizados en una directiva de grupo de usuarios cerrado (CUG).
 
 ## Resumen final e informe {#final-report}
 

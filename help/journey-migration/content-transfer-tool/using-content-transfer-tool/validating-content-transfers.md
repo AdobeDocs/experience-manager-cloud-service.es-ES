@@ -2,9 +2,9 @@
 title: Validación de transferencias de contenido
 description: Utilice la herramienta de transferencia de contenido para validar las transferencias de contenido
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -163,3 +163,7 @@ Para verificarla, elija una ruta en el informe de validación y compruebe si est
 Algunas rutas de los resúmenes de extracción e ingesta se excluyen a propósito para mantener el tamaño de estos archivos manejable, con el objetivo de poder calcular el resultado de validación de migración en un plazo de dos horas desde que se completó la ingesta.
 
 Las rutas que excluimos actualmente de los resúmenes incluyen: `cqdam.text.txt` representaciones, nodos dentro de `/home`y nodos dentro de `/jcr:system`.
+
+### Los grupos de usuarios cerrados no funcionan {#validating-cugs}
+
+Consulte [Migración de grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) por consideraciones adicionales al utilizar una directiva de grupo de usuarios cerrado (CUG).
