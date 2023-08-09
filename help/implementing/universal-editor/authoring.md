@@ -2,10 +2,10 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
+source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 35%
+source-wordcount: '2271'
+ht-degree: 30%
 
 ---
 
@@ -213,20 +213,6 @@ Al seleccionar un fragmento de contenido, sus detalles se muestran en el carril 
 >
 >Utilice la tecla de acceso directo `C` para cambiar al modo de componentes.
 
-#### Editar {#edit}
-
-En [modo de componente,](#component-mode) si selecciona una [Fragmento de contenido,](/help/assets/content-fragments/content-fragments.md) la opción editar aparece en el carril modo.
-
-![Icono Editar](assets/edit.png)
-
-Al tocar o hacer clic en el botón Editar, se abre [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) en una nueva pestaña, lo que le permite acceder a toda la potencia del Editor de fragmentos de contenido.
-
-También puede editar los detalles del fragmento de contenido en la variable [carril componente](#edit-content-fragment) según las necesidades del flujo de trabajo.
-
->[!TIP]
->
->Utilice la tecla de acceso directo `E` para editar un componente seleccionado.
-
 ### El Editor {#editor}
 
 El editor ocupa la mayor parte de la ventana y es donde la página especificada en [la barra de ubicación](#location-bar) se procesa.
@@ -258,7 +244,7 @@ Tenga en cuenta que no todos los componentes tienen detalles que se puedan mostr
 >
 >Utilice la tecla de acceso directo `D` para cambiar al modo propiedades.
 
-#### Modo de árbol de contenido {#Content-tree-mode}
+#### Modo de árbol de contenido {#content-tree-mode}
 
 En el modo de árbol de contenido, el carril muestra la jerarquía del contenido de la página.
 
@@ -272,6 +258,43 @@ Al seleccionar un elemento en el árbol de contenido, el editor se desplaza hast
 >
 >Utilice la tecla de acceso directo `F` para cambiar al modo de árbol de contenido.
 
+#### Editar {#edit}
+
+En [modo de componente,](#component-mode) si selecciona una [Fragmento de contenido,](/help/assets/content-fragments/content-fragments.md) la opción editar aparece en el carril del componente.
+
+![Icono Editar](assets/edit.png)
+
+Al tocar o hacer clic en el botón Editar, se abre [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) en una nueva pestaña, lo que le permite acceder a toda la potencia del Editor de fragmentos de contenido.
+
+También puede editar los detalles del fragmento de contenido dentro del carril del componente según las necesidades del flujo de trabajo.
+
+>[!TIP]
+>
+>Utilice la tecla de acceso directo `E` para editar un componente seleccionado.
+
+#### Añadir {#add}
+
+Si selecciona un componente de contenedor en el árbol de contenido o en el editor, la opción Añadir aparecerá en el carril del componente.
+
+![Icono Agregar](assets/ue-add-component-icon.png)
+
+Al tocar o hacer clic en el botón Agregar, se abre un menú desplegable de componentes disponibles para [añadir al contenedor seleccionado.](#adding-components)
+
+>[!TIP]
+>
+>Utilice la tecla de acceso directo `A` para añadir un componente a un componente contenedor seleccionado.
+
+#### Eliminar {#delete}
+
+Si selecciona un componente dentro de un componente contenedor en el árbol de contenido o en el editor, la opción Eliminar aparece en el carril del componente.
+
+![Icono Eliminar](assets/ue-delete-component-icon.png)
+
+Toque o haga clic en el botón Eliminar [elimina el componente.](#deleting-components)
+
+>[!TIP]
+>
+>Utilice la tecla de acceso directo `Shift+Backspace` para eliminar un componente seleccionado de un contenedor.
 
 ## Edición de contenido {#editing-content}
 
@@ -281,7 +304,7 @@ La edición de contenido es sencilla e intuitiva. En modos de edición ([modo de
 
 Tenga en cuenta que, en el modo de edición, que si toca o hace clic en el contenido se selecciona para editar. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa.](#preview-mode)
 
-Según la variable [modo](#mode-rail) una vez que se encuentra en y el contenido que selecciona, es posible que tenga diferentes opciones de edición y que pueda revisar propiedades adicionales para el contenido mediante [carril de componentes.](#component-rail)
+Según la variable [modo](#mode-rail) una vez que se encuentra en y el contenido que selecciona, es posible que tenga diferentes opciones de edición y pueda revisar propiedades adicionales para el contenido mediante la variable [carril de componentes.](#component-rail)
 
 ### Edición de texto sin formato {#edit-plain-text}
 
@@ -332,6 +355,38 @@ Los campos definidos en el modelo de contenido del fragmento de contenido selecc
 Los cambios se guardan automáticamente en el contenido.
 
 Si desea editar el fragmento de contenido en la [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) haga clic en el botón [botón editar](#edit) en el carril de modo.
+
+### Adición de componentes a contenedores {#adding-components}
+
+1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
+1. A continuación, toque o haga clic en el icono Agregar en el carril del componente.
+
+   ![Selección de un componente para añadirlo a un contenedor](assets/ue-add-component.png)
+
+El componente se inserta en el contenedor y se puede editar en el editor.
+
+### Eliminación de componentes de contenedores {#deleting-components}
+
+1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
+1. Toque o haga clic en el icono de cheurón del contenedor para expandir su contenido en el árbol de contenido.
+1. A continuación, en el árbol de contenido, seleccione un componente dentro del contenedor.
+1. Toque o haga clic en el icono Eliminar en el carril del componente.
+
+   ![Eliminación de un componente](assets/ue-delete-component.png)
+
+El componente seleccionado se ha eliminado.
+
+### Reordenación de componentes en contenedores {#reordering-components}
+
+1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
+1. Si no está ya en [modo de árbol de contenido,](#content-tree-mode) cambiar a él.
+1. Toque o haga clic en el icono de cheurón del contenedor para expandir su contenido en el árbol de contenido.
+1. Arrastre los iconos de control junto a los componentes dentro del contenedor para mostrar que puede reorganizarlos. Arrastre los componentes para reordenarlos dentro del contenedor.
+
+   ![Reordenación de componentes](assets/ue-reordering-components.png)
+1. El componente arrastrado se vuelve gris en el árbol de componentes, mientras que el punto de inserción se representa mediante una línea azul. Suelte el componente para colocarlo en su nueva ubicación.
+
+Los componentes se reordenan tanto en el árbol de contenido como en el editor
 
 ## Vista previa del contenido {#previewing-content}
 

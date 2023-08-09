@@ -2,10 +2,10 @@
 title: Atributos y tipos
 description: Obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 9df57ce958bb8f7f9406b9fe342c9d2a4ccb0ae0
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 82%
+source-wordcount: '681'
+ht-degree: 77%
 
 ---
 
@@ -53,7 +53,8 @@ Dependiendo del caso de uso, `itemprop` o `itemid` pueden no ser obligatorios. P
 
 | `data-editor-behavior` | Descripción |
 |---|---|
-| `component` | Puede utilizarse para que el texto independiente, el texto enriquecido y los medios imiten a los componentes, de modo que también puedan moverse y eliminarse de la página. |
+| `component` | Se utiliza para permitir componentes de imitación de texto, texto enriquecido y medios independientes, de modo que también se pueda mover y eliminar en la página |
+| `container` | Se utiliza para permitir que los contenedores se traten como sus propios componentes, de modo que se puedan mover y eliminar en la página |
 
 ## Recursos adicionales {#additional-resources}
 
