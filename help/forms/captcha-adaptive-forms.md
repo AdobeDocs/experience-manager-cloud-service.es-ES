@@ -2,7 +2,7 @@
 title: Uso de reCAPTCHA en Forms adaptable
 description: Obtenga información sobre cómo configurar el servicio reCAPTCHA de Google en Forms adaptable.
 topic-tags: adaptive_forms, author
-source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
+source-git-commit: b4665d0291ee1223e46c8ecf13ca13ea336107d3
 workflow-type: tm+mt
 source-wordcount: '1913'
 ht-degree: 61%
@@ -207,7 +207,7 @@ Para usar reCAPTCHA en formularios adaptables haga lo siguiente:
 > 
 > No seleccione **[!UICONTROL Predeterminado]** en el menú desplegable del servicio Captcha, ya que el servicio CAPTCHA AEM predeterminado está obsoleto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422641/recaptcha-google-adaptive-forms/?quality=12&learn=on)
 
 ### Mostrar u ocultar el componente CAPTCHA en base a reglas {#show-hide-captcha}
 
