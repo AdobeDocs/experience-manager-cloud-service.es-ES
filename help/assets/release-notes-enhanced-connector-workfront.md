@@ -2,9 +2,9 @@
 title: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
+source-git-commit: 4b63c00847fa21967560a59c3bcd931433a3a73f
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1190'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,16 @@ En la siguiente sección se describen las notas de la versión generales de [!DN
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la última versión, 1.9.11 de [!DNL Workfront for Experience Manager enhanced connector] es el 19 de junio de 2023.
+La fecha de la última versión, 1.9.12 de [!DNL Workfront for Experience Manager enhanced connector] es el 9 de agosto de 2023.
 
 ## Puntos destacados de la versión {#release-highlights}
 
 La versión más reciente de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes actualizaciones:
 
-* Cuando tiene configurada la red avanzada, hay problemas al enviar contenido desde Adobe Workfront AEM a la red as a Cloud Service de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de.
+* No se pueden crear carpetas vinculadas en Experience Manager porque no hay ninguna cuenta de usuario asociada a la carpeta vinculada.
+
+* Condiciones de carrera durante las actualizaciones de metadatos de un recurso en Experience Manager.
+
 
 >[!NOTE]
 >
@@ -30,7 +33,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 >[!IMPORTANT]
 >
->El Adobe le recomienda [actualice a la última versión 1.9.11](/help/assets/workfront-connector-install.md) de la [!DNL Workfront for Experience Manager enhanced connector].
+>El Adobe le recomienda [actualice a la última versión 1.9.12](/help/assets/workfront-connector-install.md) de la [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conocidos {#known-issues}
 
@@ -39,6 +42,11 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 * Cuando utiliza la experiencia clásica de Workfront, la variable **[!UICONTROL Enviar a]** opción disponible en el **[!UICONTROL Más]** La lista desplegable no permite seleccionar el destino de destino en Experience Manager. El **[!UICONTROL Enviar a]** La opción funciona correctamente utilizando **[!UICONTROL Acciones de documento]** lista desplegable. El **[!UICONTROL Enviar a]** funciona correctamente para **[!UICONTROL Más]** y la lista desplegable. **[!UICONTROL Acciones de documento]** lista desplegable disponible en la nueva experiencia de Workfront.
 
 ## Versiones anteriores {#previous-releases}
+
+### Versión de junio de 2023 {#june-2023-release}
+
+* Cuando tiene configurada la red avanzada, hay problemas al enviar contenido desde Adobe Workfront AEM a la red as a Cloud Service de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de.
+
 
 ### Versión de mayo de 2023 {#may-2023-release}
 
@@ -170,7 +178,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 * Al vincular archivos o carpetas externos, la aplicación de Workfront muestra el `SERVER_ERROR` mensaje de error. El mensaje de error hace referencia a una excepción no autorizada debido a una discrepancia en las claves de API.
 
-* Cuando se ejecuta un flujo de trabajo Crear tarea para un recurso, la excepción de puntero nulo se muestra en los mensajes de registro.
+* Cuando se ejecuta un flujo de trabajo Crear tarea para un recurso, la excepción Puntero nulo se muestra en los mensajes de registro.
 
 * Al activar la variable `Replace Spaces with DASH` opción de configuración en Configuración avanzada en Experience Manager, da como resultado la creación de carpetas duplicadas en Workfront.
 
