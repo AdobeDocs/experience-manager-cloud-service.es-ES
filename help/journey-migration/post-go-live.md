@@ -2,10 +2,10 @@
 title: Publicar el lanzamiento
 description: Obtenga información sobre cómo supervisar problemas y mejorar el rendimiento
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 28%
+source-wordcount: '477'
+ht-degree: 22%
 
 ---
 
@@ -15,10 +15,10 @@ ht-degree: 28%
 >id="aemcloud_golive_troubleshooting"
 >title="Solución de problemas de AEM"
 >abstract="Revise las prácticas recomendadas para el desarrollo continuo y administre los registros junto con herramientas como Developer Console y CRXDE Lite para ayudar a solucionar problemas con AEM."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=es" text="Acceder y administrar registros"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Acceder y administrar registros"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
 
-Esta es la última parte del recorrido, por lo que aprenderá a monitorizar los problemas y mejorar el rendimiento una vez que se haya completado la migración. Debe garantizar la limpieza de los archivos temporales, revisar las prácticas recomendadas para el desarrollo continuo y administrar los registros.
+Este recorrido es la última parte, por lo que aprenderá a monitorizar los problemas y mejorar el rendimiento una vez que se haya completado la migración. Debe garantizar la limpieza de los archivos temporales, revisar las prácticas recomendadas para el desarrollo continuo y administrar los registros.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -45,7 +45,7 @@ Los clientes pueden acceder a la lista CRXDE Lite en el entorno de desarrollo, p
 >[!IMPORTANT]
 >Escribir en repositorios inmutables como `/libs` y `/apps` en tiempo de ejecución genera errores. Además, no tiene acceso a las herramientas para desarrolladores para entornos de ensayo y producción.
 
-Consulte [Desarrollo con CRXDE Lite](/help/implementing/developing/tools/crxde.md) AEM para aprender a desarrollar la aplicación de la con CRXDE Lite.
+Consulte [Desarrollo con CRXDE Lite](/help/implementing/developing/tools/crxde.md) AEM para obtener más información sobre cómo desarrollar la aplicación de con CRXDE Lite.
 
 ## Administración de registros {#managing-logs}
 
@@ -58,20 +58,20 @@ Consulte [Acceso y administración de registros](/help/implementing/cloud-manage
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="Ayuda y asistencia"
->abstract="Póngase en contacto con nuestro equipo de soporte de AEM para obtener aclaraciones o solucionar problemas."
+>abstract="Póngase en contacto con el equipo de soporte de de Adobe AEM para obtener aclaraciones o solucionar cualquier problema."
 >additional-url="https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html" text="Compatibilidad con Experience Cloud"
 
 Si tiene preguntas sobre el acceso a Cloud Service, póngase en contacto con su representante de Adobe o [Asistencia para el Experience Cloud](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para obtener más información.
 
 ## Aprendizajes de documentos {#document-learnings}
 
-Una vez completada la migración, debe documentar los conocimientos adquiridos durante este proceso. Algunas preguntas que pueden ayudar en el proceso de documentación son las siguientes:
+Una vez completada la migración, documente los conocimientos adquiridos durante este proceso. Algunas preguntas que pueden ayudar en el proceso de documentación son las siguientes:
 
 * ¿Qué funcionó bien y qué no?
 * ¿Cuáles fueron los principales puntos problemáticos?
-* Recommendations en caso de una migración futura.
+* Recommendations si hay una migración futura.
 
-A continuación, debe compartir estos conocimientos posteriores a la migración con las partes interesadas y los equipos de su organización.
+Comparta estos conocimientos posteriores a la migración con las partes interesadas y los equipos de su organización.
 
 ## El recorrido ha terminado, ¿o no? {#journey-ends}
 
