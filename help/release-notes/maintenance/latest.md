@@ -2,9 +2,9 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b2c67687e2f3577b44929777a31b6ce85a5f1877
+source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '620'
 ht-degree: 18%
 
 ---
@@ -22,7 +22,7 @@ La activación de funciones 2023.8.0 proporcionará el conjunto completo de func
 ### Mejoras {#enhancements-13099}
 
 - SITES-13906: GraphQL: actualice a graphql-java 20.1.
-- SITES-8972: GraphQL - Agregar opción```label``` en JSON para el tipo de datos Enumeration.
+- SITES-8972: GraphQL: agregue la etiqueta de opción en JSON para el tipo de datos de enumeración.
 - SITES-9689: GraphQL: agregue el título y la descripción en JSON para el tipo de datos de referencia de contenido.
 - SITES-13052: Fragmentos de contenido: exportar fragmentos de contenido a Adobe Target
 
