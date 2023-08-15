@@ -4,10 +4,10 @@ description: Una vez configurados los recursos de nube, deberá otorgar a su equ
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Antes de comenzar a leer esta sección, debe tener disponible la siguiente infor
 
 >[!TIP]
 >
->Con el fin de incorporarlo, le recomendamos que agregue inicialmente usuarios que participarán en las tareas inmediatas, como administradores, desarrolladores y autores de contenido. Puede continuar con el resto de la incorporación sin agregar todos los usuarios. Una vez que haya terminado la incorporación, puede escalar a un mayor número de usuarios más adelante.
+>Con el fin de realizar la incorporación, Adobe recomienda que agregue inicialmente usuarios que participarán en las tareas inmediatas, como administradores, desarrolladores y autores de contenido. Puede continuar con el resto de la incorporación sin agregar todos los usuarios. Una vez que haya terminado la incorporación, puede escalar a un mayor número de usuarios más adelante.
 
 ## Ver perfiles de producto de AEM {#view-profiles}
 

@@ -2,10 +2,10 @@
 title: Modelos de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en la creación de fragmentos de contenido y cómo crear fragmentos de contenido con contenido estructurado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2901'
-ht-degree: 89%
+source-wordcount: '2898'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
    Una vez abierto, el editor de modelos muestra lo siguiente:
 
    * A la izquierda: los campos ya definidos.
-   * A la derecha: los **Tipos de datos** disponibles para crear campos (y **Propiedades** para su uso una vez creados los campos).
+   * A la derecha: los **Tipos de datos** disponibles para crear campos (y **Propiedades** para su uso una vez creados los campos)
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ El contenido (para el campo específico) debe ser único en todos los fragmentos
 
   >[!CAUTION]
   >
-  >Si desea utilizar MSM (que crea copias de fragmentos de contenido), utilice cualquiera **Único** Las restricciones de deben eliminarse de cualquier tipo de datos utilizado en los respectivos modelos de fragmentos de contenido.
+  >Si desea utilizar MSM (que crea copias de fragmentos de contenido), cualquier restricción **única** se debe eliminar de cualquier tipo de datos utilizado en los respectivos modelos de fragmentos de contenido.
 
 * Consulte **[Referencia de contenido](#content-reference)** para obtener más información acerca de ese tipo de datos específico y sus propiedades.
 
@@ -236,7 +236,7 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 
 ### Referencia de contenido {#content-reference}
 
-La referencia de contenido le permite procesar contenido de otra fuente; por ejemplo, imagen o fragmento de contenido.
+La referencia de contenido permite procesar contenido de otra fuente; por ejemplo, imagen o fragmento de contenido.
 
 Además de las propiedades estándar, puede especificar las siguentes:
 

@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service Uso de bibliotecas del lado del cliente en el uso de
 description: AEM proporciona Carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente (clientlibs) en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2552'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ AEM el CSS y el JavaScript del sitio en un solo archivo, en una ubicación centr
 
 ## AEM Desarrollo front-end para la creación de informes as a Cloud Service de {#fed-for-aemaacs}
 
-Todos los recursos de JavaScript, CSS y otros recursos front-end deben mantenerse en el [AEM Módulo ui.frontend del tipo de archivo del proyecto de.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) La flexibilidad del tipo de archivo le permite utilizar las herramientas web modernas que elija para crear y administrar estos recursos.
+Todos los recursos de JavaScript, CSS y otros recursos front-end deben mantenerse en el [AEM Módulo ui.frontend del tipo de archivo del proyecto de.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) La flexibilidad del tipo de archivo permite utilizar las herramientas web modernas que elija para crear y administrar estos recursos.
 
 El tipo de archivo puede compilar los recursos en archivos CSS y JS únicos, incrustándolos automáticamente en una `cq:clientLibraryFolder` en el repositorio.
 
@@ -88,7 +88,7 @@ Para que las bibliotecas de cliente en `/apps` para que sea accesible, se utiliz
    * Tipo: booleano
    * Valor: `true`
 1. Si necesita administrar recursos estáticos, cree una subcarpeta denominada `resources` debajo de la carpeta de la biblioteca del cliente.
-   * Si almacena recursos estáticos en cualquier lugar que no sea la carpeta `resources`Sin embargo, no se puede hacer referencia a ellas en una instancia de publicación.
+   * Si almacena recursos estáticos en cualquier lugar que no sea la carpeta `resources`, no se puede hacer referencia a ellas en una instancia de publicación.
 1. Añada los archivos de origen a la carpeta de la biblioteca.
    * Esto suele hacerlo el proceso de compilación del front-end de [AEM Arquetipo de proyecto de.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * Si lo desea, puede organizar los archivos de origen en subcarpetas.
@@ -112,7 +112,7 @@ Una vez creada la carpeta de la biblioteca de cliente [configurado según sea ne
 * Tiene una clientlib en `/apps/myproject/clientlibs/foo`
 * Tiene una imagen estática en `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
-El `allowProxy` permite solicitar lo siguiente:
+El `allowProxy` La propiedad permite solicitar:
 
 * La clientlib mediante `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * La imagen estática mediante `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
@@ -275,7 +275,7 @@ Abriendo el `publicmain.css` revela el siguiente código:
 
 ### Uso de preprocesadores {#using-preprocessors}
 
-AEM permite el uso de preprocesadores y barcos conectables con soporte para [Compresor YUI](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) para CSS y JavaScript y [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) AEM para JavaScript con la interfaz de usuario de establecida como preprocesador predeterminado de la interfaz de usuario de.
+AEM permite el uso de preprocesadores y naves conectables con soporte para [Compresor YUI](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) para CSS y JavaScript y [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) AEM para JavaScript con la interfaz de usuario de establecida como preprocesador predeterminado de la interfaz de usuario de.
 
 Los preprocesadores conectables permiten un uso flexible que incluye:
 

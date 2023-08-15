@@ -2,9 +2,9 @@
 title: Uso del contenido de destino de varios sitios
 description: AEM Si necesita administrar contenido de destino, como actividades, experiencias y ofertas, entre sus sitios, puede aprovechar la compatibilidad integrada con varios sitios para el contenido de destino, lo que le permitirá aprovechar las ventajas que ofrece la compatibilidad con múltiples sitios para la administración de contenido de destino.
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2891'
+source-wordcount: '2890'
 ht-degree: 31%
 
 ---
@@ -83,7 +83,7 @@ El uso de varios sitios para el contenido de destino le permite compartir, despl
 Existen cuatro versiones del mismo sitio según la ubicación geográfica:
 
 * El **Estados Unidos** el sitio se encuentra en la esquina superior izquierda y es el sitio maestro. En este ejemplo, está abierto en el modo de Orientación.
-* Las otras tres versiones de este sitio son **Canadá**, **Buena Bretaña**, y **Australia**, que son todas Live Copies. Estos sitios están abiertos en el modo de vista previa.
+* Las otras tres versiones de este sitio son **Canadá**, **Gran Bretaña**, y **Australia**, que son todas Live Copies. Estos sitios están abiertos en el modo de vista previa.
 
 ![Versiones de varios sitios](/help/sites-cloud/authoring/assets/multisite-versions.png)
 
@@ -103,13 +103,13 @@ Después de actualizar la pestaña, el sitio canadiense cambia a la nueva imagen
 
 ![Cambio de versiones](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-El experto en marketing desea implementar estos cambios en la región europea y [despliega la live copy](/help/sites-cloud/administering/msm/creating-live-copies.md) al tocar o hacer clic en **Desplegar página**. Después de actualizar la pestaña, el sitio de Buena Bretaña tiene la nueva imagen, ya que el área de Europa hereda del área principal (después del despliegue).
+El experto en marketing desea implementar estos cambios en la región europea y [despliega la live copy](/help/sites-cloud/administering/msm/creating-live-copies.md) al tocar o hacer clic en **Desplegar página**. Después de actualizar la pestaña, el sitio de Gran Bretaña tiene la nueva imagen, ya que el área de Europa hereda del área principal (después del despliegue).
 
 ![Desplegar Live Copy](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
 La imagen en el sitio de Australia permanece sin cambios, que es el comportamiento deseado, ya que es verano en Australia y el experto en marketing no desea cambiar ese contenido. El sitio de Australia no cambia porque no comparte un área con ninguna otra región ni es una Live Copy de otra región. El experto en marketing nunca tiene que preocuparse de que el contenido dirigido del sitio australiano se sobrescriba.
 
-Además, para la Buena Gran Bretaña, cuyo área es una Live Copy del área principal, puede ver el estado de la herencia mediante el indicador verde junto al nombre de la actividad. Si se hereda una actividad, no puede modificarla a menos que suspenda o desasocie la Live Copy.
+Además, para Gran Bretaña, cuyo área es una Live Copy del área principal, puede ver el estado de la herencia mediante el indicador verde junto al nombre de la actividad. Si se hereda una actividad, no puede modificarla a menos que suspenda o desasocie la Live Copy.
 
 En cualquier momento, puede suspender la herencia o desasociar la herencia por completo. También puede agregar siempre experiencias locales que solo estén disponibles para esa experiencia sin suspender la herencia.
 

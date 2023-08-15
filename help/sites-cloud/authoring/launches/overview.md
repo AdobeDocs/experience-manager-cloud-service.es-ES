@@ -2,9 +2,9 @@
 title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar contenido de forma eficaz para una versión futura. Permiten realizar cambios listos para su publicación futura, sin perder las páginas actuales
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '902'
 ht-degree: 40%
 
 ---

@@ -4,22 +4,22 @@ description: Obtenga información sobre cómo configurar Dynamic Media en Adobe 
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3795'
+source-wordcount: '3794'
 ht-degree: 3%
 
 ---
 
 # Acerca de la configuración del Cloud Service Dynamic Media {#configuring-dynamic-media}
 
-Si utiliza Adobe Experience Manager para diferentes entornos, como desarrollo, ensayo y producción en directo, configure los Cloud Services de Dynamic Media para cada uno de esos entornos.
+Si utiliza Adobe Experience Manager para diferentes entornos, como desarrollo, ensayo y producción en directo, configure los Cloud Service de Dynamic Media para cada uno de esos entornos.
 
 Consulte también [Configuración de una cuenta de alias de empresa de Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md)
 
 ## Diagrama de arquitectura de Dynamic Media {#architecture-diagram-of-dynamic-media}
 
-En el diagrama de arquitectura siguiente se describe cómo funciona Dynamic Media.
+En el siguiente diagrama de arquitectura se describe cómo funciona Dynamic Media.
 
 Con la nueva arquitectura, Experience Manager es responsable de los recursos de origen principales y se sincroniza con Dynamic Media para el procesamiento y la publicación de recursos:
 
@@ -39,7 +39,6 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 >* [Entrega de contenido HTTP/2](/help/assets/dynamic-media/http2faq.md)
 >* Redireccionamiento de URL en el nivel de CDN
 >* Akamai ChinaCDN (para una entrega óptima en China)
-
 
 <!-- OBSOLETE CONTENT
 
@@ -61,12 +60,12 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Creación de una configuración de Dynamic Media en Cloud Services {#configuring-dynamic-media-cloud-services}
+## Creación de una configuración de Dynamic Media en Cloud Service {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. En Experience Manager as a Cloud Service, seleccione el logotipo as a Cloud Service de Experience Manager para acceder a la consola de navegación global.
-1. A la izquierda de la consola, seleccione el icono Herramientas y, a continuación, vaya a **[!UICONTROL Cloud Services > Configuración de Dynamic Media]**.
+1. A la izquierda de la consola, seleccione el icono Herramientas y, a continuación, vaya a **[!UICONTROL Cloud Service > Configuración de Dynamic Media]**.
 1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, seleccione **[!UICONTROL global]** (no seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**). A continuación seleccione **[!UICONTROL Crear]**.
 1. En el **[!UICONTROL Crear configuración de Dynamic Media]** , introduzca el título, la dirección de correo electrónico y la contraseña de la cuenta de Dynamic Media del administrador de la empresa de la cuenta de Dynamic Media y, a continuación, seleccione su región. Esta información se proporciona por Adobe en el correo electrónico de aprovisionamiento. Póngase en contacto con Asistencia al cliente de Adobe si no recibió este correo electrónico.
 1. Seleccionar **[!UICONTROL Conectar con Dynamic Media]**.
@@ -85,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    La nueva contraseña se guarda al seleccionar **[!UICONTROL Guardar]** en la esquina superior derecha de la **[!UICONTROL Crear configuración de Dynamic Media]** página.
 
-   Si ha seleccionado **[!UICONTROL Cancelar]** en el **[!UICONTROL Cambiar contraseña]** , aún debe introducir una nueva contraseña al guardar la configuración de Dynamic Media recién creada.
+   Si ha seleccionado **[!UICONTROL Cancelar]** en el **[!UICONTROL Cambiar contraseña]** , debe introducir una nueva contraseña cuando guarde la configuración de Dynamic Media recién creada.
 
    Consulte también [Cambiar la contraseña a Dynamic Media](#change-dm-password).
 
@@ -93,7 +92,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | Propiedad | Descripción |
    |---|---|
-   | Compañía | El nombre de la cuenta de Dynamic Media.<br>**Importante**: solo se admite una configuración de Dynamic Media en Cloud Services en una instancia de Experience Manager; no agregue más de una configuración. Hay varias configuraciones de Dynamic Media en una instancia de Experience Manager _no_ compatible o recomendado por el Adobe.<!-- CQDOC-19579 and CQDOC-19612 --><br>Consulte también [Configuración de una cuenta de alias de empresa de Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md). |
+   | Compañía | El nombre de la cuenta de Dynamic Media.<br>**Importante**: solo se admite una configuración de Dynamic Media en Cloud Service en una instancia de Experience Manager; no agregue más de una configuración. Hay varias configuraciones de Dynamic Media en una instancia de Experience Manager _no_ compatible o recomendado por el Adobe.<!-- CQDOC-19579 and CQDOC-19612 --><br>Consulte también [Configuración de una cuenta de alias de empresa de Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md). |
    | Ruta de carpeta raíz de la empresa | Ruta de la carpeta raíz de su empresa. |
    | Publicación de recursos | Puede elegir entre las tres opciones siguientes:<br>**[!UICONTROL Inmediata ]**: Cuando se cargan recursos, el sistema los ingiere y proporciona la URL o la incrustación al instante. No es necesaria la intervención del usuario para publicar los recursos.<br>**[!UICONTROL En la activación]** : primero debe publicar explícitamente el recurso antes de proporcionar un vínculo URL/incrustado.<br>**[!UICONTROL Publicación selectiva ]**- Los recursos se publican automáticamente solo para previsualización segura. También se pueden publicar explícitamente en Experience Manager as a Cloud Service sin publicar en DMS7 para envío de dominio público. En el futuro, esta opción pretende publicar recursos en Experience Manager as a Cloud Service y publicarlos en Dynamic Media, mutuamente excluyentes entre sí. Es decir, puede publicar recursos en DMS7 para poder utilizar funciones como Recorte inteligente o representaciones dinámicas. O bien, puede publicar recursos exclusivamente en el Experience Manager as a Cloud Service para la previsualización; esos mismos recursos no se publican en DMS7 para su envío en el dominio público. |
    | Servidor de previsualización segura | Permite especificar la ruta de URL del servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, Experience Manager as a Cloud Service puede acceder y previsualizar de forma segura las representaciones remotas de Dynamic Media (no se envían binarios de vuelta a la instancia as a Cloud Service de Experience Manager).<br>A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe recomienda dejar esta configuración como se ha especificado. |
@@ -171,14 +170,14 @@ Si es necesario, puede revisar la ortografía de una contraseña que haya escrit
 La contraseña modificada se guarda al seleccionar **[!UICONTROL Guardar]** en la esquina superior derecha de la **[!UICONTROL Editar configuración de Dynamic Media]** página.
 
 1. En Experience Manager as a Cloud Service, seleccione el logotipo as a Cloud Service de Experience Manager para acceder a la consola de navegación global.
-1. A la izquierda de la consola, seleccione el icono Herramientas y, a continuación, vaya a **[!UICONTROL Cloud Services > Configuración de Dynamic Media]**.
+1. A la izquierda de la consola, seleccione el icono Herramientas y, a continuación, vaya a **[!UICONTROL Cloud Service > Configuración de Dynamic Media]**.
 1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, seleccione **[!UICONTROL global]**. No seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**. A continuación, seleccione **[!UICONTROL Editar]**.
 1. En el **[!UICONTROL Editar configuración de Dynamic Media]** , directamente debajo de la página **[!UICONTROL Contraseña]** , seleccione **[!UICONTROL Cambiar contraseña]**.
 1. En el **[!UICONTROL Cambiar contraseña]** , haga lo siguiente:
 
    * En el **[!UICONTROL Nueva contraseña]** , introduzca una nueva contraseña.
 
-      El **[!UICONTROL Contraseña actual]** El campo se rellena previamente de forma intencionada y se oculta de la interacción.
+     El **[!UICONTROL Contraseña actual]** El campo se rellena previamente de forma intencionada y se oculta de la interacción.
 
    * En el **[!UICONTROL Repetir contraseña]** , vuelva a escribir la nueva contraseña y, a continuación, seleccione **[!UICONTROL Listo]**.
 
@@ -238,7 +237,6 @@ Las tareas de instalación y configuración incluyen las siguientes:
 * [Configurar la administración de color](#configuring-color-management)
 * [Editar tipos MIME para formatos compatibles](#editing-mime-types-for-supported-formats)
 * [Adición de tipos MIME para formatos no compatibles](#adding-mime-types-for-unsupported-formats)
-
 <!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
 #### Configuración del programa de instalación de Dynamic Media Publish para el servidor de imágenes {#publishing-setup-for-image-server}
@@ -429,7 +427,7 @@ Si no tiene acceso a OSGi, consulte [Configuración de OSGi](/help/implementing/
 
 1. En el **[!UICONTROL Máximo de trabajos paralelos]** , cambie el número al valor deseado.
 
-   De forma predeterminada, el número máximo de trabajos paralelos depende del número de núcleos de CPU disponibles. Por ejemplo, en un servidor de 4 núcleos, asigna dos subprocesos de trabajo. (Un valor entre 0,0 y 1,0 se basa en la relación, o cualquier número que sea bueno a uno asigna el número de subprocesos de trabajo.)
+   De forma predeterminada, el número máximo de trabajos paralelos depende del número de núcleos de CPU disponibles. Por ejemplo, en un servidor de 4 núcleos, asigna dos subprocesos de trabajo. (Un valor entre 0,0 y 1,0 se basa en la relación, o cualquier número mayor que uno asigna el número de subprocesos de trabajo.)
 
    Para la mayoría de los casos de uso, la configuración predeterminada de 0,5 es suficiente.
 

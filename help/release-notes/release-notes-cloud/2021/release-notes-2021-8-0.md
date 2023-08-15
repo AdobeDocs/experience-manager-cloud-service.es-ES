@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.8.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de la versión 2021.8.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2021.8.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de la versión 2021.8.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 50%
+source-wordcount: '1027'
+ht-degree: 49%
 
 ---
 
@@ -64,7 +64,7 @@ Eche un vistazo a la [Información general de la versión de agosto de 2021](htt
 
 * **Documento de registro basado en Acrobat**: Compatibilidad de AEM Forms as a Cloud Service con [formularios PDF de Adobe Acrobat (PDF de Acrobat)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=es) como plantilla para documentos de registro además de la plantilla de formulario basada en XFA.
 
-* **Conector del almacén de datos de Microsoft Azure**: Ahora puede [conectar el modelo de datos de formulario al almacenamiento de Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=es). Permite recuperar y almacenar datos de formulario adaptables en el almacenamiento de Microsoft Azure como un BLOB.
+* **Conector del almacén de datos de Microsoft Azure**: Ahora puede [conectar el modelo de datos de formulario al almacenamiento de Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=es). Permite recuperar y almacenar datos de formulario adaptables en el almacenamiento de Microsoft Azure como BLOB.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 

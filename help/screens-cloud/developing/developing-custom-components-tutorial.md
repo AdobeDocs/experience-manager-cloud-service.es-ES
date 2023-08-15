@@ -2,9 +2,9 @@
 title: Desarrollo de un componente personalizado para Screens as a Cloud Service
 description: El siguiente tutorial muestra los pasos para crear un componente personalizado para AEM Screens. AEM Screens AEM reutiliza muchos patrones de diseño y tecnologías existentes de otros productos de la. El tutorial destaca las diferencias y las consideraciones especiales al desarrollar para AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2107'
 ht-degree: 3%
 
 ---

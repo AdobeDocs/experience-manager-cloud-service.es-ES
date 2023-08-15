@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.6.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de la versión 2021.6.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2021.6.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de la versión 2021.6.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 45%
+source-wordcount: '1436'
+ht-degree: 44%
 
 ---
 
@@ -128,7 +128,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 ### Característica beta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    * Generar formularios finales al rellenar archivos de plantilla con datos XML.
    * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    * Generar PDF imprimibles desde un formulario PDF de XFA y un formulario de Adobe Acrobat (AcroForm).

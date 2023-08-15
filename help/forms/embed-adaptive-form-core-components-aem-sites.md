@@ -6,10 +6,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 100%
+source-wordcount: '2131'
+ht-degree: 96%
 
 ---
 
@@ -19,9 +19,9 @@ Puede crear o incrustar formularios adaptables sin problemas en una página de A
 
 Puede elegir uno de los siguientes métodos para crear o agregar un formulario adaptable en una página de AEM Sites:
 
-* **Crear un formulario adaptable mediante el componente Contenedor de Formularios adaptables**: El componente [Contenedor de formulario adaptable](#af-container-component) le permite crear experiencias de inscripción digitales utilizando componentes de Formularios adaptables directamente en el editor de AEM Sites. Esta integración proporciona una experiencia perfecta a los creadores de AEM Sites que desean crear y administrar formularios dentro de sus páginas de AEM Sites.
+* **Crear un formulario adaptable mediante el componente Contenedor de Forms adaptable**: La [Contenedor de formulario adaptable](#af-container-component) Este componente le permite crear experiencias de inscripción digitales utilizando componentes de Forms adaptables directamente en el editor de AEM Sites. Esta integración proporciona una experiencia perfecta a los creadores de AEM Sites que desean crear y administrar formularios dentro de sus páginas de AEM Sites.
 
-* **Agregar un formulario adaptable existente**: el componente de [Formularios adaptables: incrustar(v2)](#embed-existing-af) permite agregar fácilmente un formulario adaptable preexistente en una página de AEM Sites. Esta función mejora la adaptabilidad y la reutilización de formularios adaptables. Esta integración proporciona una forma cómoda para que los clientes puedan reutilizar los formularios adaptables que ya han creado.
+* **Agregar un formulario adaptable existente**: La [Forms adaptable: incrustado (v2)](#embed-existing-af) Este componente le permite agregar fácilmente un formulario adaptable preexistente a una página dentro de AEM Sites. Esta función mejora la adaptabilidad y la reutilización de formularios adaptables. Esta integración proporciona una forma cómoda para que los clientes puedan reutilizar los formularios adaptables que ya han creado.
 
 * **Utilice el Asistente para formularios adaptables para crear un formulario**: Utilice el componente de [Formularios adaptables: incrustar(v2)](#embed-new-af) para crear un formulario adaptable desde el editor de AEM Sites mediante el asistente de creación de formularios. El formulario se guarda como una entidad externa. Puede volver a utilizar este formulario en otras páginas de Sites y también en formularios independientes.
 
@@ -140,7 +140,7 @@ En el cuadro de diálogo [!UICONTROL Editar contenedor de AEM Forms], especifiq
 
 ## Incrustar un formulario adaptable  {#aem-container-component}
 
-Si usa el componente de **[!UICONTROL Formularios adaptables: incrustar (V2)]**, puede incrustar un nuevo formulario adaptable o incrustar un formulario adaptable existente en la página del sitio. El componente [!UICONTROL Formularios adaptables: incrustar(v2)] le permite:
+Si usa el componente de **[!UICONTROL Formularios adaptables: incrustar (V2)]**, puede incrustar un nuevo formulario adaptable o incrustar un formulario adaptable existente en la página del sitio. El [!UICONTROL Forms adaptable: incrustado (v2)] Este componente le permite:
 
 * [Agregar un formulario adaptable existente](#embed-new-af)
 

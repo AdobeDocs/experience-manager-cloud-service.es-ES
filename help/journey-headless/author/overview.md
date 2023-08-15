@@ -2,10 +2,10 @@
 title: Recorrido del autor de contenido sin encabezado de AEM
 description: Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles sin encabezado de AEM, sus funcionalidades, y cómo diseñar el contenido en su primer proyecto de contenido sin encabezado.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '865'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -49,7 +49,7 @@ Por supuesto, la información de este recorrido puede ser útil para otras perso
 
 Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionan conocimientos básicos sobre los contenidos sin encabezado en AEM y acercan la documentación técnica detallada.
 
-Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. Por lo tanto, si es nuevo en el contenido sin encabezado en AEM, le recomendamos que comience por el principio y avance en orden secuencialmente.
+Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. AEM Por lo tanto, si es nuevo en el uso sin encabezado en la, Adobe recomienda comenzar por el principio y avanzar secuencialmente.
 
 | # | Artículo | Descripción |
 |---|---|---|

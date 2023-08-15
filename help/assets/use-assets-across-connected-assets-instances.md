@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 62649d9aaa7c4307351cc83eefbab14806f91378
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3871'
+source-wordcount: '3870'
 ht-degree: 16%
 
 ---
@@ -316,7 +316,7 @@ Puede agregar recursos a [!DNL Sites] sin embargo, estos recursos no se pueden p
 ## Limitaciones y prácticas recomendadas {#tip-and-limitations}
 
 * Para obtener información sobre el uso de los recursos, configure las [Assets Insight](/help/assets/assets-insights.md) funcionalidad en la [!DNL Sites] ejemplo.
-* El uso del explorador de rutas en los componentes de creación no se admite en los recursos conectados.
+* El uso del explorador de rutas en componentes de creación no se admite en recursos conectados.
 
 * No puede arrastrar el recurso remoto al [Cuadro de diálogo Configurar componente de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). Sin embargo, puede arrastrar el recurso remoto directamente al componente de imagen en la página de Sites sin hacer clic en **[!UICONTROL Configurar]**.
 

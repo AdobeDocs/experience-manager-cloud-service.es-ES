@@ -2,10 +2,10 @@
 title: Encabezado y sin encabezado en AEM
 description: AEM Los proyectos de se pueden implementar en un modelo con encabezado y sin encabezado, pero la opción no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 89%
+source-wordcount: '1013'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ AEM ofrece potentes herramientas para gestionar la creación de contenido y su e
 
 AEM puede utilizarse simplemente para administrar el contenido, lo que permite que la presentación y el envío del contenido se gestionen mediante otra plataforma. Este es el modelo sin encabezado de la administración de contenido, donde los autores y desarrolladores de contenido trabajan en distintas plataformas para ofrecer experiencia a los consumidores de contenido.
 
-Pero no tiene por qué ser una elección binaria. AEM ofrece una flexibilidad sin precedentes, lo que le permite aprovechar las ventajas de ambos modelos para su proyecto.
+Pero esto no tiene que ser una elección binaria. AEM ofrece una flexibilidad sin precedentes, lo que le permite aprovechar las ventajas de ambos modelos para su proyecto.
 
 ![Modelos de implementación de AEM](/help/headless/assets/aem-implementation-models.png)
 
@@ -27,7 +27,7 @@ En un modelo de pila completa o con periférico, el contenido se administra en e
 
 En un modelo sin encabezado, el contenido se administra en el repositorio de AEM, pero se envía mediante una API como REST y GraphQL a otro sistema para procesar el contenido para la experiencia del usuario. En este modelo, el contenido se crea en AEM, pero el diseño, la presentación y entrega se realiza en otra plataforma.
 
-Las aplicaciones de una sola página (SPA) suelen ser el destino del contenido que AEM entrega sin encabezado. Sin embargo, estas SPA no tienen que ser completamente externas a AEM. AEM le permite decidir en qué medida sus SPA están integradas en AEM. Veamos un ejemplo.
+Las aplicaciones de una sola página (SPA) suelen ser el destino del contenido que AEM entrega sin encabezado. SPA AEM Sin embargo, estos no tienen por qué ser totalmente externos a los usuarios de la red de distribución de la. AEM SPA AEM La opción le permite decidir en qué grado se integran sus en el que se encuentran los usuarios de la aplicación de la. Veamos un ejemplo.
 
 ## Ejemplo de la tienda web {#web-shop-example}
 

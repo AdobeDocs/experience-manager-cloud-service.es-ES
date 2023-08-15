@@ -2,10 +2,10 @@
 title: AEM - Preguntas frecuentes sobre la integración de Commerce con Commerce Integration Framework
 description: AEM - Preguntas frecuentes sobre la integración de Commerce con Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '967'
-ht-degree: 29%
+ht-degree: 28%
 
 ---
 
@@ -47,7 +47,7 @@ Los datos dinámicos, como el precio o el inventario no se almacenan en la cach�
 
 ## AEM AEM 9. ¿Cómo funciona la invalidación de caché para Dispatcher de la con los recursos de comercio y de comercio de Dispatcher?
 
-Se recomienda configurar la invalidación de caché basada en TTL para las páginas almacenadas en caché de Dispatcher. Para obtener información dinámica como precio o acciones, se recomienda procesar los datos del lado del cliente. Para obtener más información sobre la invalidación de caché basada en TTL, consulte [Optimizar la caché de Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=es) y [AEM Optimización del rendimiento](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
+La Adobe recomienda configurar la invalidación de caché basada en TTL para las páginas almacenadas en caché de Dispatcher. Para obtener información dinámica como precio o acciones, Adobe recomienda procesar los datos del lado del cliente. Para obtener más información sobre la invalidación de caché basada en TTL, consulte [Optimizar la caché de Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=es) y [AEM Optimización del rendimiento](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
 ## 10. ¿Existe alguna recomendación sobre la búsqueda unificada en los contenidos de AEM con Comercio?
 
@@ -63,11 +63,11 @@ Los datos del producto ya se han traducido en PIM o en Adobe Commerce. AEM La in
 
 ## 13. ¿Existe alguna manera de mejorar los datos del producto con texto comercial? ¿Dónde se hace esto? AEM ¿En la solución de comercio o en la solución de comercio?
 
-AEM Se recomienda administrar los datos y el contenido relacionados con el marketing en el área de trabajo de. Decore los datos de producto de su solución de comercio con atributos adicionales mediante fragmentos de contenido o cree y vincule fragmentos de experiencias para contenido no estructurado con sus productos.
+El Adobe AEM recomienda administrar los datos y el contenido relacionados con el marketing en las listas de distribución de la. Decore los datos de producto de su solución de comercio con atributos adicionales mediante fragmentos de contenido o cree y vincule fragmentos de experiencias para contenido no estructurado con sus productos.
 
 ## 14. ¿Cómo podemos garantizar el cumplimiento de PCI al utilizar AEM para toda la capa de presentación?
 
-Recomendamos el uso de métodos de pago abstractos. Esto pone al cliente del explorador en comunicación directa con el proveedor de la puerta de enlace de pago, de modo que ni el Adobe ni las soluciones comerciales contienen ni pasan los datos del titular de la tarjeta. Este enfoque solo requiere un nivel 3 de conformidad con PCI. Sin embargo, hay cosas adicionales que considerar para que sea totalmente compatible con PCI, como por ejemplo cómo los empleados interactúan con el sistema y los datos. Para obtener más información sobre la conformidad con PCI Adobe Commerce, consulte [Requisitos de cumplimiento de PCI](https://business.adobe.com/products/magento/pci-compliance.html).
+Adobe recomienda utilizar métodos de pago abstractos. Esto pone al cliente del explorador en comunicación directa con el proveedor de la puerta de enlace de pago, de modo que ni el Adobe ni las soluciones comerciales contienen ni pasan los datos del titular de la tarjeta. Este enfoque solo requiere un nivel 3 de conformidad con PCI. Sin embargo, hay cosas adicionales que considerar para que sea totalmente compatible con PCI, como por ejemplo cómo los empleados interactúan con el sistema y los datos. Para obtener más información sobre la conformidad con PCI Adobe Commerce, consulte [Requisitos de cumplimiento de PCI](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## AEM 15. Si utilizo versiones en la nube de Adobe Commerce y de la plataforma de datos, ¿es compatible esta solución conjunta con PCI?
 

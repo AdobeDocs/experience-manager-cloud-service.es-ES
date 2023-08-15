@@ -2,10 +2,10 @@
 title: Recorrido del autor de contenido de AEM Commerce
 description: Comience aquí para obtener un recorrido guiado a través de la creación de AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ Por supuesto, la información de este recorrido puede ser útil para otras perso
 
 Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionarán conocimientos básicos y le permitirán acceder a documentación técnica detallada.
 
-Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. Por lo tanto, si es nuevo en los contenidos de AEM y Commerce, le recomendamos que comience por el principio y avance secuencialmente.
+Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. AEM Por lo tanto, si es nuevo en el sector de Contenido y comercio de la, Adobe recomienda empezar por el principio y avanzar de forma secuencial.
 
 | # | Artículo | Descripción |
 |---|---|---|

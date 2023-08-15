@@ -2,10 +2,10 @@
 title: Acceder a Admin Console
 description: Una vez que haya comprendido la preparación necesaria para la incorporación y los conceptos básicos de la estructura de AEMaaCS, ya puede iniciar sesión en Admin Console por primera vez.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 94%
+source-wordcount: '1104'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ Como administrador del sistema, es responsable de administrar los usuarios de de
 
 ## Admin Console {#admin-console}
 
-Adobe Admin Console es un lugar central para administrar las licencias y los usuarios de productos de Adobe. Admin Console le permite crear y administrar usuarios en una sola ubicación en lugar de en las distintas soluciones individuales.
+Adobe Admin Console es un lugar central para administrar las licencias y los usuarios de productos de Adobe. El Admin Console le permite crear y administrar usuarios en una sola ubicación en lugar de en las distintas soluciones individuales.
 
 ## Adobe ID {#adobe-id}
 
@@ -50,7 +50,7 @@ Antes de poder usar Admin Console para administrar usuarios dentro de su equipo,
 
 1. Como administrador del sistema, recibirá varios correos electrónicos de Adobe como parte del proceso de incorporación. Busque el correo electrónico de bienvenida que proporciona la información sobre el nombre de la organización a la que se le ha concedido acceso.
 
-1. Haga clic en el vínculo **Introducción** en el correo electrónico de bienvenida para ir a Admin Console. Si no encuentra el correo electrónico, abra un explorador directamente en Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Haga clic en el vínculo **Introducción** en el correo electrónico de bienvenida para ir a Admin Console. Si no encuentra el correo electrónico, abra un explorador directamente en el Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![Correo electrónico de bienvenida](/help/journey-onboarding/assets/get-started-email.png)
 

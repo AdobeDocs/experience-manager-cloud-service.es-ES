@@ -1,10 +1,10 @@
 ---
 title: El componente RemotePage
-description: SPA AEM El componente RemotePage es un componente de página personalizado para editar el grupo de informes de React de forma remota dentro de los grupos de informes de la.
+description: SPA AEM El componente RemotePage es un componente de página personalizado para editar el grupo de informes de React de forma remota dentro de los grupos de informes de.
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ Al decidir [qué nivel de integración](/help/implementing/developing/headful-he
 
 El componente RemotePage obtiene todos los recursos necesarios del contenido generado por la aplicación `asset-manifest.json` SPA AEM y utiliza esto para procesar los dentro de la.
 
-* SPA AEM RemotePage permite insertar los scripts y las hojas de estilo de una página en el cuerpo de un componente Página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la aplicación
+* SPA AEM RemotePage permite insertar los scripts y las hojas de estilo de una página en el cuerpo de un componente de página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la aplicación.
 * AEM SPA Los componentes de front-end virtuales permiten marcar secciones como editables en el editor de.
 * SPA AEM Juntos, un alojado en un dominio diferente se puede convertir en editable en el espacio de trabajo de la aplicación de la versión de.
 
-Consulte el artículo [SPA AEM Edición de una externa dentro de un grupo de informes](editing-external-spa.md) SPA AEM para obtener más información sobre las funciones editables y externas, haga clic en la opción de la.
+Consulte el artículo [SPA AEM Edición de una externa dentro de un grupo de informes](editing-external-spa.md) SPA AEM para obtener más información sobre las funciones editables y externas, haga clic en.
 
 ## Requisitos  {#requirements}
 

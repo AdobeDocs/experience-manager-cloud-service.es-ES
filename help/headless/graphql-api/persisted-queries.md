@@ -3,10 +3,10 @@ title: Consultas persistentes de GraphQL
 description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Experience Manager as a Cloud Service para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método HTTP GET y la respuesta se puede almacenar en caché en las capas de Dispatcher y la red de distribución de contenido (CDN), lo que a la larga mejora el rendimiento de las aplicaciones cliente.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 92%
+source-wordcount: '1680'
+ht-degree: 91%
 
 ---
 
@@ -444,7 +444,7 @@ Para crear un paquete, haga lo siguiente:
 1. Escriba un número de versión como “1.0”.
 1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para `wknd` , la ruta completa es `/conf/wknd/settings/graphql/persistentQueries`.
 1. Toque **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
-1. Toque el botón **Generar** en la definición del paquete recién creada.
+1. Pulse el botón **Generar** en la definición del paquete recién creada.
 
 Una vez creado el paquete, puede hacer lo siguiente:
 

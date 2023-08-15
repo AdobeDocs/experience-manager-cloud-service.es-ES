@@ -2,10 +2,10 @@
 title: Uso de flujos de trabajo de proyecto
 description: Hay una variedad de flujos de trabajo de proyecto disponibles de forma predeterminada.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 46%
+source-wordcount: '451'
+ht-degree: 43%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 46%
 
 Los flujos de trabajo de proyecto disponibles de forma predeterminada incluyen lo siguiente:
 
-* **Flujo de trabajo de aprobación del proyecto**: este flujo de trabajo permite asignar contenido a un usuario, revisarlo y aprobarlo.
+* **Flujo de trabajo de aprobación** : Este flujo de trabajo permite asignar contenido a un usuario, revisarlo y aprobarlo.
 * **Solicitar lanzamiento**: un flujo de trabajo solicita un lanzamiento.
 * **Solicitar página de aterrizaje**: este flujo de trabajo solicita una página de aterrizaje.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.

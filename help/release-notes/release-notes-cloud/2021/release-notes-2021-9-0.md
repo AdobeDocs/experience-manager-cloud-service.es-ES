@@ -1,10 +1,10 @@
 ---
-title: Notas de la versión 2021.9.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de la versión 2021.9.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2021.9.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de la versión 2021.9.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1568'
 ht-degree: 37%
 
 ---
@@ -78,7 +78,7 @@ CQ-4328183 was not reported on CS so not documented here.
    * Habilite la funcionalidad Forms de guardar y reanudar y almacene borradores de formularios adaptables en un repositorio de datos que administre el cliente.
    * Almacenar datos de los flujos de trabajo de AEM en proceso (datos de variables de flujo de trabajo de AEM) que contengan datos personales confidenciales (SPD) en un repositorio que administre el cliente.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    * Generar documentos rellenando archivos de plantilla con datos XML.
    * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    * Genere archivos de PDF imprimibles desde un PDF de formularios XFA y un formulario de Adobe Acrobat.
@@ -197,7 +197,7 @@ La fecha de versión de la herramienta de transferencia de contenido v1.6.0 es e
    * Omitir correctamente los errores y continuar con la actividad de asignación de usuarios
    * La asignación de usuarios ya no falla si caduca el token de acceso (después de 24 horas). La asignación de usuarios se puede volver a ejecutar desde la última vez que se detuvo.
 
-* Para aumentar la solidez de CTT, el contenido se puede ingerir en una instancia de autor o de publicación a la vez.
+* Para aumentar la solidez de CTT, el contenido se puede ingerir en la instancia de autor o en la instancia de publicación a la vez.
 
 * Cuando se incluyen versiones, la ruta `/var/audit` para migrar eventos de auditoría.
 

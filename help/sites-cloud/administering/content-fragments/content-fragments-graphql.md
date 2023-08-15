@@ -4,10 +4,10 @@ description: Aprenda los conceptos básicos de realización de un CMS sin encabe
 feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 97%
+source-wordcount: '727'
+ht-degree: 85%
 
 ---
 
@@ -50,7 +50,7 @@ GraphQL es lo siguiente:
 
   Consulte [GraphQL.org](https://graphql.org)
 
-La [API de AEM GraphQL](#aem-graphql-api) le permite realizar consultas (complejas) en sus [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md); con cada consulta según un tipo de modelo específico. Las aplicaciones pueden utilizar el contenido devuelto.
+El [AEM API de GraphQL](#aem-graphql-api) le permite realizar consultas (complejas) en su [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md); con cada consulta según un tipo de modelo específico. Las aplicaciones pueden utilizar el contenido devuelto.
 
 ## API de AEM GraphQL {#aem-graphql-api}
 
@@ -110,4 +110,4 @@ Consulte [Aprender a utilizar GraphQL con AEM: contenido de muestra y consultas]
 
 ## Tutorial: Introducción a AEM Headless y GraphQL
 
-¿Busca un tutorial práctico? Consulte el tutorial completo [Introducción a AEM Headless y GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es), que ilustra cómo crear y exponer contenido mediante las API de GraphQL de AEM y consumido por una aplicación externa, en un escenario de CMS sin encabezado.
+¿Busca un tutorial práctico? Desproteger [AEM Introducción a las soluciones sin encabezado y de GraphQL de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) AEM Tutorial completo que ilustra cómo crear y exponer contenido mediante las API de GraphQL de la interfaz de usuario de, y consumido por una aplicación externa, en un escenario de CMS sin encabezado.

@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.5.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de la versión 2021.5.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2021.5.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de la versión 2021.5.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 46%
+source-wordcount: '1352'
+ht-degree: 45%
 
 ---
 
@@ -80,7 +80,7 @@ La de la siguiente versión (2021.6.0) será el 28 de junio de 2021.
 
 ### Próxima característica beta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-Output as a Cloud service: El servicio de salida le ayuda a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en los modos sincrónico y asicrónico por lotes. El servicio Output le permite crear aplicaciones con las que puede hacer lo siguiente:
+Output as a Cloud service: El servicio de salida le ayuda a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo por lotes sincrónico y asincrónico. El servicio Output le permite crear aplicaciones con las que puede hacer lo siguiente:
 
 * Generar formularios finales al rellenar archivos de plantilla con datos XML.
 * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.

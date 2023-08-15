@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: AEM Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante varios mecanismos en la documentación de.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 72%
+source-wordcount: '1804'
+ht-degree: 71%
 
 ---
 
@@ -85,7 +85,7 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 >[!NOTE]
 >
->No se pueden publicar páginas a las que se accede mediante [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
+>Páginas a las que accede [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor no se puede publicar. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
 
 ### Publicar desde la consola {#publishing-from-the-console}
 
@@ -124,7 +124,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    ![Selección de páginas para publicación](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. Se inicia el asistente **Administrar publicación**. El primer paso, **Opciones**, le permite:
+1. Se inicia el asistente **Administrar publicación**. El primer paso, **Opciones**, le permite:
 
    * **Acción**
 
@@ -228,7 +228,7 @@ Si desea cancelar la publicación de una página que está editando, seleccione 
 
 >[!NOTE]
 >
->No se puede cancelar la publicación en el editor de las páginas a las que se accede mediante [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced). Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
+>Páginas a las que accede [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor no se puede cancelar la publicación. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
 
 ### Cancelación de la publicación desde la consola     {#unpublishing-from-the-console}
 

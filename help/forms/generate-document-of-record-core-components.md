@@ -2,10 +2,10 @@
 title: Generar documento de registro para Formularios adaptables
 description: Explica cómo se puede generar una plantilla para un documento de registro (DoR) para formularios adaptables.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3109'
-ht-degree: 100%
+source-wordcount: '3105'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ Cuando se rellena o se envía un formulario, se puede guardar un registro del fo
 
 ![Documento de registro](assets/document-of-record.png)
 
-Para crear un documento de registro, una plantilla basada en XFA o AcroForm se combina con los datos recopilados mediante un formulario adaptable. Puede generar un documento de registro automáticamente o bajo demanda. La opción bajo demanda le permite especificar una plantilla personalizada basada en XFA o AcroForm para proporcionar un aspecto personalizado al documento de registro.
+Para crear un documento de registro, una plantilla basada en XFA o AcroForm se combina con los datos recopilados mediante un formulario adaptable. Puede generar un documento de registro automáticamente o bajo demanda. La opción bajo demanda permite especificar una plantilla personalizada basada en XFA o AcroForm para proporcionar un aspecto personalizado al documento de registro.
 
 Puede hacer lo siguiente:
 
@@ -66,7 +66,7 @@ Cuando se configura un formulario adaptable para que genere automáticamente un 
 * Los desarrolladores de formularios no tienen que mantener enlaces de datos de forma manual. El documento de registro generado automáticamente se encarga de las actualizaciones relacionadas con los enlaces de datos.
 * Los desarrolladores de formularios no tienen que ocultar de forma manual los campos marcados como excluir del documento de registro. El documento de registro generado automáticamente está preconfigurado para excluir estos campos.
 * Al crear un documento de registro generado automáticamente, se ahorra el tiempo necesario para crear una plantilla de formulario para el documento de registro.
-* Crear un documento de registro generado automáticamente le permite utilizar diferentes estilos y apariencias con distintas plantillas base. Ayuda a seleccionar el mejor estilo y aspecto del documento de registro para su organización. Si no especifica estilo, los estilos del sistema se establecen como predeterminados.
+* La opción de documento de registro generado automáticamente permite utilizar diferentes estilos y apariencias con diferentes plantillas base. Ayuda a seleccionar el mejor estilo y aspecto del documento de registro para su organización. Si no especifica estilo, los estilos del sistema se establecen como predeterminados.
 * El documento de registro generado automáticamente garantiza que cualquier cambio en el formulario se refleje inmediatamente en el documento de registro.
 
 Siga estos pasos para configurar un formulario adaptable para generar automáticamente un documento de registro:
@@ -94,7 +94,7 @@ Enlace los campos de formulario adaptable con campos de plantilla para mostrar l
 1. Haga clic en **[!UICONTROL Guardar]**.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 Puede utilizar acciones de envío como &quot;Enviar correo electrónico&quot;, &quot;Invocar un flujo de trabajo de AEM&quot;, &quot;Invocar un flujo de trabajo de Power Automate&quot; y otras [Acciones de envío](configuring-submit-actions.md) para recibir un documento de registro.
@@ -106,7 +106,7 @@ Puede utilizar acciones de envío como &quot;Enviar correo electrónico&quot;, &
 
 Los formularios adaptables y las plantillas de documento de registro correspondientes pueden evolucionar a lo largo del tiempo. Puede elegir entre agregar, quitar o modificar campos a un formulario adaptable o a una plantilla de documento de registro.
 
-Cuando se realizan cambios en una plantilla de documento de registro y se carga la plantilla modificada en AEM Forms, el editor de formularios adaptables detecta automáticamente los enlaces modificados y le informa sobre los componentes de formulario adaptables que requieren nuevos enlaces. Le permite realizar actualizaciones incrementales en una plantilla de documento de registro.
+Cuando se realizan cambios en una plantilla de documento de registro y se carga la plantilla modificada en AEM Forms, el editor de formularios adaptables detecta automáticamente los enlaces modificados y le informa sobre los componentes de formulario adaptables que requieren nuevos enlaces. Permite realizar actualizaciones incrementales en una plantilla de documento de registro.
 
 Por ejemplo, una organización, *We.Retail*, tiene una plantilla de documento de registro basada en AcroForm, *we-retail-Invoice.pdf*. La plantilla tiene el siguiente aspecto:
 
@@ -328,14 +328,21 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
       * **Familia tipográfica**: la familia de fuentes de texto del Documento de registro en PDF.
 
       * **Incluir objetos de formulario que no estén enlazados al modelo de datos**: al configurar esta propiedad se incluyen campos no enlazados del formulario adaptable basado en esquemas del Documento de registro.
+
       <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
       * **Ocultar la descripción de paneles:** al configurar esta propiedad se excluye la descripción de paneles o tablas del Documento de registro. Aplicable para paneles y tablas.
+
+
+
    1. **Propiedades del campo de formulario**:
       * **Mostrar solo los valores seleccionados para los componentes Casilla de verificación y Botón de radio**: al configurar esta propiedad solo se muestran los valores seleccionados de la casilla de verificación y el botón de radio en [!UICONTROL Documento de registro].
       * **Separador para varios valores**: puede elegir cualquier separador, como comas o saltos de línea, para mostrar varios valores.
       * **Alineación de opciones**: puede seleccionar la alineación deseada (Horizontal, Vertical o Igual que el formulario adaptable) para establecer la alineación de los campos, como la casilla de verificación o el botón de radio, que se mostrarán en [!UICONTROL Documento de registro]. De forma predeterminada, la alineación vertical está establecida para los campos de [!UICONTROL Documento de registro]. Al configurar las propiedades desde la variable [!UICONTROL Propiedades del campo de formulario] del documento, se sobrescriben las propiedades establecidas en la variable [!UICONTROL Alineación de elementos] para los campos de un formulario adaptable. En caso de que seleccione la opción [!UICONTROL Igual que el formulario adaptable], se utiliza la alineación tal y como está configurada en una instancia de autor del formulario adaptable para los campos de [!UICONTROL Documento de registro].
       * **Número de opciones de alineación horizontal**: puede definir el número de opciones que se mostrarán en el Documento de registro para la alineación horizontal.
+
+
+
    1. **Propiedades de página maestra**:
       * **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
       * **Título del formulario**: título del Documento de registro.
@@ -343,7 +350,9 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
       * **Etiqueta de descargo de responsabilidad**: etiqueta de descargo de responsabilidad.
       * **Descargo de responsabilidad**: texto que especifica el ámbito de derechos y obligaciones del Documento de registro.
       * **Texto de descargo de responsabilidad**: texto del descargo de responsabilidad.
+
       ![Propiedades de página maestra](/help/forms/assets/dorpropertiesimg.png)
+
    >[!NOTE]
    >
    >Si está utilizando una plantilla de formulario adaptable creada con una versión del diseñador anterior a la 6.3, para que las propiedades Color de énfasis y Familia de fuentes funcionen, asegúrese de que lo siguiente esté presente en su plantilla de formulario adaptable bajo el subformulario raíz:

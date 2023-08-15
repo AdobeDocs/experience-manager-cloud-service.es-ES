@@ -2,16 +2,16 @@
 title: Procesamiento por lotes de comunicaciones de Experience Manager  [!DNL Forms]  as a Cloud Service
 description: Crear comunicaciones personalizadas y orientadas a la marca
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 100%
+source-wordcount: '1692'
+ht-degree: 98%
 
 ---
 
 # Utilizar el procesamiento por lotes
 
-Las comunicaciones le permiten crear, montar y entregar comunicaciones personalizadas y orientadas a la marca, como correspondencia comercial, documentos, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, facturas mensuales y kits de bienvenida. Puede utilizar las API de comunicaciones para combinar una plantilla (XFA o PDF) con datos de clientes para generar documentos en los formatos PDF, PS, PCL, DPL, IPL y ZPL.
+Las comunicaciones le permiten crear, montar y entregar comunicaciones personalizadas y orientadas a la marca, como correspondencia comercial, documentos, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, cartas de procesamiento de reclamaciones, facturas mensuales y kits de bienvenida. Puede utilizar las API de comunicaciones para combinar una plantilla (XFA o PDF) con datos de clientes para generar documentos en los formatos PDF, PS, PCL, DPL, IPL y ZPL.
 
 Las comunicaciones ofrecen API para la generación de documentos bajo demanda y planificados. Puede utilizar API sincrónicas para la generación bajo demanda y API por lotes (API asincrónicas) para la generación planificada de documentos:
 
@@ -157,7 +157,6 @@ La respuesta de la solicitud de estado contiene la sección de estado. Ofrece de
 >
 >* Cuando solicita varios formatos PRINT, el estado contiene varias entradas. Por ejemplo, PRINT/ZPL, PRINT/IPL.
 >* Un trabajo por lotes no lee todos los registros simultáneamente, sino que el trabajo sigue leyendo e incrementando el número de registros. Por lo tanto, el estado devuelve -1 hasta que se hayan leído todos los registros.
-
 
 ### Ver documentos generados {#view-generated-documents}
 

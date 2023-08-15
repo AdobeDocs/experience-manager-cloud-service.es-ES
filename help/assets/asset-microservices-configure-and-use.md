@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2930'
 ht-degree: 4%
 
 ---
@@ -145,7 +145,7 @@ Las aplicaciones personalizadas no tienen encabezado [Generador de aplicaciones 
 
 Para ilustrar el uso de un perfil personalizado, consideremos un caso de uso para aplicar texto personalizado a las imágenes de la campaña. Puede crear un perfil de procesamiento que utilice la API de Photoshop para editar las imágenes.
 
-La integración del servicio de asset compute permite al Experience Manager pasar estos parámetros a la aplicación personalizada mediante [!UICONTROL Parámetros de servicio] field. A continuación, la aplicación personalizada llama a la API de Photoshop y pasa estos valores a la API. Por ejemplo, puede pasar el nombre de la fuente, el color, el peso y el tamaño del texto para añadir el texto personalizado a las imágenes de campaña.
+La integración del servicio de asset compute de permite al Experience Manager pasar estos parámetros a la aplicación personalizada mediante [!UICONTROL Parámetros de servicio] field. A continuación, la aplicación personalizada llama a la API de Photoshop y pasa estos valores a la API. Por ejemplo, puede pasar el nombre de la fuente, el color, el peso y el tamaño del texto para añadir el texto personalizado a las imágenes de campaña.
 
 <!-- TBD: Check screenshot against the interface. -->
 

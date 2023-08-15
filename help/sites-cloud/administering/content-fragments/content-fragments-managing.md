@@ -4,10 +4,10 @@ description: Aprenda a utilizar la consola Fragmentos de contenido para administ
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 84%
+source-wordcount: '2051'
+ht-degree: 83%
 
 ---
 
@@ -394,7 +394,7 @@ Se muestran una al lado de la otra, donde:
    * Texto insertado en verde
    * Texto reemplazado en azul
 
-* El icono de pantalla completa le permite abrir cualquiera de las versiones por su cuenta; a continuación, vuelva a la vista paralela
+* El icono de pantalla completa permite abrir cualquiera de las versiones por su cuenta; a continuación, vuelva a la vista paralela
 * Puede **Revertir** a la versión específica
 * **Listo** le devolverá a la consola
 

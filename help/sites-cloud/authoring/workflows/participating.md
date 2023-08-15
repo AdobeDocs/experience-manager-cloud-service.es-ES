@@ -2,9 +2,9 @@
 title: Participación en flujos de trabajo
 description: Los flujos de trabajo suelen incluir pasos que requieren que una persona realice una actividad en una página o recurso.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1536'
 ht-degree: 36%
 
 ---
@@ -163,7 +163,7 @@ También puede utilizar la cronología para delegar o asignar un paso:
 
 ### Realización de un Retroceso en un Paso de Participante {#performing-step-back-on-a-participant-step}
 
-Si descubre que un paso, o una serie de pasos, debe repetirse, puede retroceder. Esto le permite seleccionar un paso, que se produjo anteriormente en el flujo de trabajo, para volver a procesarlo. El flujo de trabajo vuelve al paso especificado y, a continuación, continúa desde allí.
+Si descubre que un paso, o una serie de pasos, debe repetirse, puede retroceder. Esto permite seleccionar una etapa, que se produjo anteriormente en el flujo de trabajo, para volver a procesarla. El flujo de trabajo vuelve al paso especificado y, a continuación, continúa desde allí.
 
 En esta acción puede indicar:
 

@@ -1,18 +1,14 @@
 ---
 title: Enviar una confirmación de envío de formulario por correo electrónico
-seo-title: Sending a form submission acknowledgement via email
-description: AEM Forms permite configurar una acción de envío por correo electrónico que envía una confirmación a un usuario al enviar el formulario.
-seo-description: AEM Forms allows you to configure the email Submit Action that sends an acknowledgement to a user on submitting the form.
-uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
+description: AEM Forms permite configurar una acción de envío por correo electrónico que envía una confirmación a un usuario al enviar el formulario.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 100%
+source-wordcount: '366'
+ht-degree: 94%
 
 ---
 

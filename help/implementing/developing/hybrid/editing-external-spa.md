@@ -2,9 +2,9 @@
 title: Edición de un SPA externo dentro de AEM
 description: SPA AEM En este documento se describen los pasos recomendados para cargar una instancia independiente a una instancia de, agregar secciones de contenido editables y habilitar la creación de contenido.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2421'
+source-wordcount: '2418'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 Antes de que la aplicación se procese, la variable [`ModelManager`](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager) AEM debe inicializarse para gestionar la creación de la `ModelStore`.
 
-Esta inicialización debe realizarse dentro de `src/index.js` de la aplicación o dondequiera que se represente la raíz de la aplicación.
+Esta inicialización debe realizarse dentro de `src/index.js` de la aplicación o donde se represente la raíz de la aplicación.
 
 Para realizar esta inicialización, puede utilizar `initializationAsync` API proporcionada por el `ModelManager`.
 
@@ -343,7 +343,7 @@ AEM SPA Para habilitar la edición dentro de los parámetros para este ejemplo, 
 
 1. SPA Agregar ayudantes dentro del enrutamiento de la.
 
-   * AEM La página recién creada aún no puede procesar el contenido esperado en el modo de creación de la página de la página de la página de la página de la. El motivo es que el enrutador espera una ruta de `/test` AEM mientras que la ruta activa de la es `/wknd-spa-react/us/en/test`. AEM SPA Para dar cabida a la parte específica de la dirección URL que corresponde a la dirección URL, debe agregar algunos ayudantes en el lado de la.
+   * AEM La página recién creada aún no puede procesar el contenido esperado en los informes de contenido de la página de la página de la página de la página de la página de la página de la página de. El motivo es que el enrutador espera una ruta de `/test` AEM mientras que la ruta activa de la es `/wknd-spa-react/us/en/test`. AEM SPA Para dar cabida a la parte específica de la dirección URL que corresponde a la dirección URL, debe agregar algunos ayudantes en el lado de la.
 
    ![Asistente de enrutamiento](assets/external-spa-router-helper.png)
 
@@ -356,7 +356,7 @@ AEM SPA Para habilitar la edición dentro de los parámetros para este ejemplo, 
 
 1. AEM Compruebe la edición de la página en la.
 
-   * AEM Implemente el proyecto para que se ejecute y navegue hasta el proyecto recién creado. `test` página. AEM Ahora se procesa el contenido de la página y se pueden editar los componentes de la.
+   * AEM Implemente el proyecto para que se ejecute y navegue hasta el recién creado `test` página. AEM Ahora se procesa el contenido de la página y se pueden editar los componentes de la.
 
 ## Limitaciones del marco {#framework-limitations}
 

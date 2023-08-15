@@ -2,9 +2,9 @@
 title: API del Generador de consultas
 description: La funcionalidad del Asset Share Query Builder se expone a través de una API de Java&trade; y una API de REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2006'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Por ejemplo, la IU de puede adaptar el siguiente enfoque:
 * La respuesta puede tener el siguiente resultado:
 
    * `total=43`, `more=false` - Indica que el número total de visitas es 43. La interfaz de usuario puede mostrar hasta diez resultados como parte de la primera página y proporcionar paginación para las tres páginas siguientes. También puede utilizar esta implementación para mostrar un texto descriptivo como **&quot;43 resultados encontrados&quot;**.
-   * `total=100`, `more=true` - Indica que el número total de visitas es bueno a 100 y que se desconoce el recuento exacto. La IU puede mostrarse hasta diez como parte de la primera página y proporcionar paginación para las siguientes diez páginas. También puede utilizar esta función para mostrar un texto como **&quot;se han encontrado más de 100 resultados&quot;**. A medida que el usuario va a las páginas siguientes, las llamadas realizadas al Generador de consultas aumentarían el límite de `guessTotal` y también del `offset` y `limit` parámetros.
+   * `total=100`, `more=true` - Indica que el número total de visitas es mayor que 100 y que se desconoce el recuento exacto. La IU puede mostrarse hasta diez como parte de la primera página y proporcionar paginación para las siguientes diez páginas. También puede utilizar esta función para mostrar un texto como **&quot;se han encontrado más de 100 resultados&quot;**. A medida que el usuario va a las páginas siguientes, las llamadas realizadas al Generador de consultas aumentarían el límite de `guessTotal` y también del `offset` y `limit` parámetros.
 
 Además, utilice `guessTotal` en casos en los que la interfaz de usuario debe utilizar desplazamiento infinito para evitar que el Generador de consultas determine el recuento exacto de visitas.
 

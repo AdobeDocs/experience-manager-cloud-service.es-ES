@@ -2,17 +2,17 @@
 title: AEM Forms as a Cloud Service - Comunicaciones
 description: Combine datos automáticamente con plantillas XDP y PDF o genere salidas en formato PCL, ZPL y PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 100%
+source-wordcount: '683'
+ht-degree: 94%
 
 ---
 
 
 # Usar el procesamiento sincrónico {#sync-processing-introduction}
 
-Forms as a Cloud Service: las API de comunicaciones le permiten crear, montar y entregar comunicaciones personalizadas y orientadas a la marca, como correspondencia comercial, documentos, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, facturas mensuales y kits de bienvenida. Puede utilizar las API de Comunicaciones para combinar una plantilla (XFA o PDF) con datos de clientes para generar documentos en los formatos PDF, PS, PCL, DPL, IPL y ZPL.
+Las API de comunicaciones as a Cloud Service de Forms le permiten crear, montar y entregar comunicaciones personalizadas y orientadas a la marca, como correspondencia comercial, documentos, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, cartas de procesamiento de reclamaciones, facturas mensuales y kits de bienvenida. Puede utilizar las API de Comunicaciones para combinar una plantilla (XFA o PDF) con datos de clientes para generar documentos en los formatos PDF, PS, PCL, DPL, IPL y ZPL.
 
 Imagine un escenario en el que tiene una o más plantillas y varios registros de datos XML en cada plantilla. Puede utilizar las API de Comunicaciones para generar un documento de impresión para cada registro. <!-- You can also combine the records into a single document. --> El resultado es un documento PDF no interactivo. Un documento PDF no interactivo no permite a los usuarios introducir datos en los campos.
 
@@ -51,9 +51,9 @@ Las operaciones de API de un solo inquilino admiten dos tipos de autenticación:
    1. Ejecute la API de Experience Manager con el token de acceso como token de autenticación del portador.
    1. [Establezca los permisos adecuados para el usuario de la cuenta técnica en el entorno de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es#configuraci%C3%B3n-del-acceso-en-aem).
 
-   >[!NOTE]
-   >
-   >Adobe recomienda utilizar la autenticación basada en token en un entorno de producción.
+  >[!NOTE]
+  >
+  >Adobe recomienda utilizar la autenticación basada en token en un entorno de producción.
 
 <!-- 
 

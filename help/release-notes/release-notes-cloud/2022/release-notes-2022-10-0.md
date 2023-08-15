@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2022.10.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de la versión 2022.10.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2022.10.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de la versión 2022.10.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 84%
+source-wordcount: '836'
+ht-degree: 79%
 
 ---
 
@@ -48,7 +48,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets ahora le permite cargar documentos en otros tipos de formato compatibles y [previsualizarlos con el visualizador de Document Cloud incluido](/help/assets/manage-pdf-documents.md). Los tipos de formato admitidos son TXT, RTF, DOC, DOCX, PPT, PPTX, XLS y XLSX.
+* Experience Manager Assets ahora permite cargar documentos en otros tipos de formato compatibles y[previsualizarlos con el visualizador de Document Cloud incluido](/help/assets/manage-pdf-documents.md). Los tipos de formato admitidos son TXT, RTF, DOC, DOCX, PPT, PPTX, XLS y XLSX.
 
   ![Representación del PDF para otros formatos](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -65,7 +65,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 
-* **Editor de plantillas de Formularios adaptables**: el editor de plantillas le permite predefinir la estructura básica y el aspecto de los Formularios adaptables de una organización. Esta versión aporta las siguientes mejoras al editor de plantillas:
+* **Editor de plantillas de Forms adaptable**: el editor de plantillas permite predefinir la estructura básica y el aspecto del Forms adaptable de una organización. Esta versión aporta las siguientes mejoras al editor de plantillas:
    * **[Modelo de datos de formulario en el editor de plantillas](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: puede asociar un esquema del Modelo de datos de formulario a una plantilla de Formulario adaptable en el editor de plantillas. Ayuda a reducir el tiempo necesario para crear un Formulario adaptable. La opción también se agrega al editor de Formularios adaptables para que los usuarios puedan seleccionar o cambiar el Modelo de datos de formulario para los formularios existentes.
    * **[Documento de registro en el editor de plantillas](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: ahora puede estandarizar la generación de documentos de registros para todos los formularios creados con una plantilla. Esto ayuda a mejorar el cumplimiento de normas y la estandarización de los requisitos de organización.
 

@@ -1,10 +1,10 @@
 ---
 title: Restauración de contenidos en AEM as a Cloud Service
 description: Obtenga información sobre cómo restaurar el contenido de AEM as a Cloud Service desde la copia de seguridad mediante Cloud Manager.
-source-git-commit: 6813b5b9570a4d115cd0600bcccd4d787dc42154
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 79%
+source-wordcount: '1166'
+ht-degree: 76%
 
 ---
 
@@ -59,11 +59,11 @@ En primer lugar, determine el lapso de tiempo del contenido que desea restaurar.
 
 1. En la pestaña **Restaurar contenido** de la página de detalles del entorno, seleccione primero el lapso de tiempo de la restauración en la lista desplegable **Tiempo para la restauración**.
 
-   1. Si selecciona **Últimas 24 horas**, el campo vecino **Tiempo** permite especificar el tiempo exacto dentro de las últimas 24 horas para la restauración.
+   1. Si selecciona **Últimas 24 horas** la vecina **Hora** El campo permite especificar el tiempo exacto dentro de las últimas 24 horas para la restauración.
 
       ![Últimas 24 horas](assets/backup-time.png)
 
-   1. Si selecciona **La semana pasada**, el campo vecino **Día** permite seleccionar una fecha en los últimos siete días, excluidas las 24 horas anteriores.
+   1. Si selecciona **Última semana** la vecina **Día** El campo permite seleccionar una fecha en los últimos siete días, excluidas las 24 horas anteriores.
 
       ![Última semana](assets/backup-date.png)
 

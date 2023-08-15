@@ -4,9 +4,9 @@ description: Aprenda a configurar las [!DNL Adobe Experience Manager] Complement
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4301'
+source-wordcount: '4299'
 ht-degree: 4%
 
 ---
@@ -39,13 +39,13 @@ De forma predeterminada, `format`, `link`, `list`, `justify`, y `control` Los co
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * un nodo de configuración alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
+
    * Son del tipo: **jcr:primaryType** `cq:Widget`
    * Ambos tienen la siguiente propiedad:
 
       * **Nombre** `name`
       * **Tipo** `String`
       * **Valor** `./text`
-
 
 1. Según la interfaz que configure para, cree un nodo `<rtePlugins-node>`, si no existe:
 
@@ -59,7 +59,7 @@ De forma predeterminada, `format`, `link`, `list`, `justify`, y `control` Los co
 
 Después de activar un complemento, siga estas directrices para configurar el `features` propiedad.
 
-|  | Habilitar todas las funciones | Active algunas funciones específicas. | Deshabilite todas las funciones. |
+| | Habilitar todas las funciones | Active algunas funciones específicas. | Deshabilite todas las funciones. |
 |---|---|---|---|
 | Nombre | características | características | características |
 | Tipo | Cadena | `String` (multi-string; establezca Type en `String` y haga clic en `Multi` en CRXDE Lite) | Cadena |
@@ -303,8 +303,7 @@ Para crear el estilo que los autores pueden aplicar al texto en japonés, siga e
 
 1. Añada el texto de la propiedad al mismo nodo. El valor es el nombre del estilo que ven los autores al seleccionar el estilo.
    * Nombre: `text`
-*Tipo: 
-`String`
+*Tipo: `String`
    * Valor: `Japanese word-wrap`
 
 1. Cree una hoja de estilos y especifique su ruta. Consulte [especificar la ubicación de la hoja de estilo](#locationofstylesheet). Añada el siguiente contenido a la hoja de estilo. Cambie el color de fondo como desee.
@@ -356,7 +355,7 @@ Para habilitar la variable `paraformat` complemento, siga estos pasos:
 
 >[!CAUTION]
 >
->Al configurar los formatos de párrafo del RTE, no elimine la etiqueta de párrafo &lt;p> como opción de formato. Si la variable `<p>` Si se elimina la etiqueta, el autor del contenido no puede seleccionar [!UICONTROL Formatos de párrafo] opción incluso si hay formatos adicionales configurados.
+>Al configurar los formatos de párrafo del RTE, no elimine la etiqueta de párrafo &lt;p> como opción de formato. Si la variable `<p>` se elimina, el autor del contenido no puede seleccionar la etiqueta [!UICONTROL Formatos de párrafo] opción incluso si hay formatos adicionales configurados.
 
 ### Especificar los formatos de párrafo disponibles {#paraformatsindropdown}
 
@@ -379,7 +378,7 @@ Los formatos de párrafo están disponibles para su selección por:
    * **Tipo** `String`
    * **Valor** La etiqueta de bloque para el formato; por ejemplo: p, h1, h2, etc.
 
-      No es necesario introducir los corchetes angulares delimitadores.
+     No es necesario introducir los corchetes angulares delimitadores.
 
 1. Al mismo nodo, agregue otra propiedad para que el texto descriptivo aparezca en la lista desplegable:
 
@@ -392,6 +391,7 @@ Los formatos de párrafo están disponibles para su selección por:
    Repita los pasos para cada formato requerido.
 
 >[!CAUTION]
+>
 Si define formatos personalizados, los formatos predeterminados (`<p>`, `<h1>`, `<h2>`, y `<h3>`) se han eliminado. Volver a crear `<p>` formato, ya que es el formato predeterminado.
 
 ## Configuración de caracteres especiales {#spchar}
@@ -401,6 +401,7 @@ En un estándar [!DNL Experience Manager] instalación, cuando la variable `misc
 Puede configurar el RTE para que la selección de caracteres esté disponible; ya sea definiendo caracteres distintos o una secuencia completa.
 
 >[!CAUTION]
+>
 Al agregar los caracteres especiales, se anula la selección predeterminada. Si es necesario, vuelva a definir estos caracteres en la selección.
 
 ### Definir un solo carácter {#definesinglechar}
@@ -412,7 +413,7 @@ Al agregar los caracteres especiales, se anula la selección predeterminada. Si 
    * **Tipo** `String[]`
    * **Valor** `specialchars`
 
-          (o `String / *` si aplica todas las funciones para este complemento)
+         (o `String / *` si aplica todas las funciones para este complemento)
 
 1. En `misctools` cree un nodo que contenga las configuraciones de caracteres especiales:
 
@@ -452,14 +453,12 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. C
 1. Bajo este nodo (denominado según su intervalo especial de caracteres), agregue las dos propiedades siguientes:
 
    * **Nombre** `rangeStart`
-
-      **Tipo** `Long`
-      **Valor** el [Unicode](https://unicode.org/) representación (decimal) del primer carácter del intervalo
+     **Tipo** `Long`
+     **Valor** el [Unicode](https://unicode.org/) representación (decimal) del primer carácter del intervalo
 
    * **Nombre** `rangeEnd`
-
-      **Tipo** `Long`
-      **Valor** el [Unicode](https://unicode.org/) representación (decimal) del último carácter del intervalo
+     **Tipo** `Long`
+     **Valor** el [Unicode](https://unicode.org/) representación (decimal) del último carácter del intervalo
 
 1. Guarde los cambios.
 
@@ -476,9 +475,11 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. C
 Los estilos suelen aplicarse en el texto, pero también se puede aplicar un conjunto independiente de estilos en una tabla o en algunas celdas de la tabla. Estos estilos están disponibles para los autores desde el cuadro Selector de estilo en el cuadro de diálogo Propiedades de celda o Propiedades de tabla. Los estilos están disponibles al editar una tabla dentro de un componente Texto (o derivado) y no en el componente Tabla estándar.
 
 >[!NOTE]
+>
 Puede definir estilos para tablas y celdas solo para la IU clásica.
 
 >[!NOTE]
+>
 La copia y el pegado de tablas en o desde el componente RTE depende del explorador. No es compatible de serie con todos los exploradores. Puede obtener resultados variados según la estructura de la tabla y el explorador. Por ejemplo, cuando copia y pega una tabla en un componente RTE en Mozilla Firefox en la IU clásica y la IU táctil, el diseño de la tabla no se conserva.
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/table`. Cree los nodos si estos no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
@@ -489,12 +490,14 @@ La copia y el pegado de tablas en o desde el componente RTE depende del explorad
    * **Valor** `*`
 
    >[!NOTE]
+   >
    Si no desea activar todas las funciones de tabla, puede crear el `features` propiedad como:
+   >
    * **Tipo** `String[]`
+   >
    * **Valor**(s) uno, o ambos, de los siguientes, según sea necesario:
-      * `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
-      * `cellprops` para permitir la edición de las propiedades de la celda, incluidos los estilos.
-
+   * `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
+   * `cellprops` para permitir la edición de las propiedades de la celda, incluidos los estilos.
 
 1. Defina la ubicación de las hojas de estilos CSS para hacer referencia a ellas. Consulte [Especificar la ubicación de la hoja de estilos](#locationofstylesheet) ya que es lo mismo que al definir [estilos para texto](#textstyles). La ubicación puede definirse si ha definido otros estilos.
 1. En el `table` nodo cree los siguientes nodos según sea necesario:
@@ -503,11 +506,11 @@ La copia y el pegado de tablas en o desde el componente RTE depende del explorad
 
       * **Nombre** `tableStyles`
       * **Tipo** `cq:WidgetCollection`
+
    * Para definir estilos para celdas individuales (disponible en **[!UICONTROL Propiedades de celda]**),
 
       * **Nombre** `cellStyles`
       * **Tipo** `cq:WidgetCollection`
-
 
 1. Cree un nodo (en la variable `tableStyles` o `cellStyles` (según corresponda) para representar un estilo individual,
 
@@ -521,12 +524,12 @@ La copia y el pegado de tablas en o desde el componente RTE depende del explorad
       * **Nombre** `cssName`
       * **Tipo** `String`
       * **Valor** el nombre de la clase CSS (sin un `.`, por ejemplo, `cssClass` en lugar de `.cssClass`)
+
    * Para definir un texto descriptivo que aparecerá en el selector emergente,
 
       * **Nombre** `text`
       * **Tipo** `String`
       * **Valor** el texto que aparecerá en la lista de selección
-
 
 1. Guarde todos los cambios.
 
@@ -555,6 +558,7 @@ Si especifica las cadenas CSS y Style en el código, la clase CSS tiene priorida
 Cuando se activa el complemento corrector ortográfico, RTE utiliza diccionarios para cada idioma adecuado. A continuación, se seleccionan según el idioma del sitio web tomando la propiedad language del subárbol o extrayendo el idioma de la dirección URL; por ejemplo. el `/en/` La rama de se marca como Inglés, la `/de/` sucursal en alemán.
 
 >[!NOTE]
+>
 El mensaje &quot;Fallo en la revisión ortográfica&quot;. se ve si se prueba una comprobación para un idioma que no está instalado.
 
 Una instalación de Experience Manager estándar incluye los diccionarios para:
@@ -563,6 +567,7 @@ Una instalación de Experience Manager estándar incluye los diccionarios para:
 * Inglés británico (en_gb)
 
 >[!NOTE]
+>
 Los diccionarios estándar se encuentran en `/libs/cq/spellchecker/dictionaries`, junto con los archivos Léame correspondientes. No modifique los archivos.
 
 Para agregar más diccionarios, si es necesario, siga estos pasos.
@@ -571,14 +576,18 @@ Para agregar más diccionarios, si es necesario, siga estos pasos.
 1. Seleccione el idioma necesario y descargue el archivo ZIP con las definiciones ortográficas. Extraiga el contenido del archivo en su sistema de archivos.
 
    >[!CAUTION]
+   >
    Solo los diccionarios de `MySpell` es compatible con el formato de OpenOffice.org v2.0.1 o anterior. Como los diccionarios ahora son archivos de almacenamiento, se recomienda verificarlos después de la descarga.
 
 1. Busque los archivos .aff y .dic. Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
 1. Cargue los archivos .aff y .dic en el repositorio en `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
+>
 El corrector ortográfico RTE está disponible bajo demanda. No se ejecuta automáticamente cuando empieza a escribir texto.
+>
 Para ejecutar el corrector ortográfico, pulse o haga clic en el botón Corrector ortográfico de la barra de herramientas. RTE revisa la ortografía de las palabras y resalta las palabras mal escritas.
+>
 Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambiará y las palabras mal escritas dejarán de resaltarse. Para ejecutar el corrector ortográfico, toque o haga clic en el botón Corrector ortográfico de nuevo.
 
 ## Configuración del tamaño del historial para acciones de deshacer y rehacer {#undohistory}
@@ -614,6 +623,7 @@ Para definir el tamaño de la pestaña:
 Cuando la sangría está activada (predeterminada), puede definir el tamaño de la sangría:
 
 >[!NOTE]
+>
 Este tamaño de sangría solo se aplica a párrafos (bloques) de texto; no afecta a la sangría de listas reales.
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/lists`. Cree estos nodos si no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
@@ -646,11 +656,13 @@ Al añadir vínculos en [!DNL Experience Manager], puede definir los estilos CSS
    * **Tipo** `nt:unstructured`
 
    >[!NOTE]
+   >
    El `../items/text` tiene la propiedad:
+   >
    * **Nombre** `xtype`
    * **Tipo** `String`
    * **Valor** `richtext`
-
+   >
    La ubicación del `../items/text` El nodo puede variar, según la estructura del cuadro de diálogo. Dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. En `htmlRules`, cree un nodo.
@@ -665,27 +677,31 @@ Al añadir vínculos en [!DNL Experience Manager], puede definir los estilos CSS
       * **Nombre** `cssInternal`
       * **Tipo** `String`
       * **Valor** el nombre de la clase CSS (sin &#39;.&#39;); por ejemplo, `cssClass` en lugar de `.cssClass`)
+
    * Estilo CSS para vínculos externos
 
       * **Nombre** `cssExternal`
       * **Tipo** `String`
-      * **Valor** el nombre de la clase CSS (sin &#39;.&#39; anterior); por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **Valor** el nombre de la clase CSS (sin &#39;.&#39;); por ejemplo, `cssClass` en lugar de `.cssClass`)
+
    * Matriz de válidos **[!UICONTROL protocolos]** incluyendo `https://`, `https://`, `file://`, `mailto:`, y otros,
 
       * **Nombre** `protocols`
       * **Tipo** `String[]`
       * **Valor**(s) uno o más protocolos
+
    * **defaultProtocol** (propiedad de tipo **Cadena**): Protocolo que se utilizará si el usuario no ha especificado ninguno explícitamente.
 
       * **Nombre** `defaultProtocol`
       * **Tipo** `String`
       * **Valor**(s) uno o más protocolos predeterminados
+
    * Definición de cómo gestionar el atributo de destino de un vínculo. Cree un nodo:
 
       * **Nombre** `targetConfig`
       * **Tipo** `nt:unstructured`
 
-      En el nodo `targetConfig`: defina las propiedades requeridas:
+     En el nodo `targetConfig`: defina las propiedades requeridas:
 
       * Especifique el modo de destino:
 
@@ -695,26 +711,21 @@ Al añadir vínculos en [!DNL Experience Manager], puede definir los estilos CSS
 
             * `auto`: significa que se elige un destinatario automático
 
-               (especificado por el `targetExternal` para vínculos externos o `targetInternal` para vínculos internos).
+              (especificado por el `targetExternal` para vínculos externos o `targetInternal` para vínculos internos).
 
             * `manual`: no aplicable en este contexto
             * `blank`: no aplicable en este contexto
+
       * El destino de los vínculos internos:
 
          * **Nombre** `targetInternal`
          * **Tipo** `String`
          * **Valor** el destino de los vínculos internos (solo se utiliza cuando el modo sea `auto`)
+
       * El destino de los vínculos externos:
 
          * **Nombre** `targetExternal`
          * **Tipo** `String`
          * **Valor** el destino de los vínculos externos (solo se utiliza cuando el modo es `auto`).
-
-
-
-
-
-
-
 
 1. Guarde todos los cambios.

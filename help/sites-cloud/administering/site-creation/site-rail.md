@@ -4,10 +4,10 @@ description: Conozca las potentes funciones del carril del sitio para ayudarle a
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
+source-wordcount: '596'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ Conozca las potentes funciones del carril del sitio para ayudarle a personalizar
 
 ## Información general {#overview}
 
-El carril del sitio le permite administrar los recursos de tema y plantilla del sitio. [Como otros raíles](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) como el árbol de contenido, las referencias o los raíles de cronología, el carril del sitio se muestra como el panel situado más a la izquierda en la consola Sitios y muestra información sobre el elemento seleccionado. A diferencia de otros carriles, el carril del sitio solo se aplica a las raíces del sitio.
+El carril del sitio permite administrar los recursos de tema y plantilla del sitio. [Como otros raíles](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) como el árbol de contenido, las referencias o los raíles de cronología, el carril del sitio se muestra como el panel situado más a la izquierda en la consola Sitios y muestra información sobre el elemento seleccionado. A diferencia de otros carriles, el carril del sitio solo se aplica a las raíces del sitio.
 
 El carril del sitio se utiliza para administrar la información relacionada con el tema y la plantilla para su sitio, que incluye:
 

@@ -2,10 +2,10 @@
 title: Guía rápida de WCAG 2.1
 description: Guía rápida de las Directrices de accesibilidad del contenido web (WCAG) versión 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 93%
+source-wordcount: '1782'
+ht-degree: 92%
 
 ---
 
@@ -68,7 +68,7 @@ Para obtener más detalles:
 * Las directrices se numeran de 1.1 a 4.1, donde el primer número corresponde al principio superior.
 * Cada directriz consta de uno o más **criterios de éxito**.
 * Los criterios de éxito se escriben como afirmaciones, que son `True` o `False` para una página web determinada.
-* Los criterios de éxito pueden incluir una u otra opción, o excepciones, que son situaciones en las que no es necesario reunir los criterios de éxito.
+* Los criterios de éxito pueden incluir una u otra opción, o excepciones, que son situaciones en las que no es necesario cumplir.
 * Los criterios de éxito se numeran según la directriz y el principio superior, de 1.1.1 a 4.1.1. También tienen un nombre corto que resume la intención del criterio, para facilitar la referencia. Por ejemplo, el criterio de éxito [1.1.1 es contenido no textual](https://www.w3.org/TR/WCAG/#non-text-content).
 * Los criterios de éxito incluyen una lista de las **técnicas** relacionadas (que se describen más adelante).
 

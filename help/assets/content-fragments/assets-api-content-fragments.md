@@ -3,9 +3,9 @@ title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager as
 description: AEM Obtenga información acerca de la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de la función de envío sin encabezado de la aplicación de la interfaz de usuario de.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1784'
 ht-degree: 18%
 
 ---
@@ -32,7 +32,7 @@ AEM Obtenga información acerca de la compatibilidad con fragmentos de contenido
 
 El [API de REST de Assets](/help/assets/mac-api-assets.md) permite a los desarrolladores de Adobe Experience Manager as a Cloud Service AEM acceder al contenido (almacenado en la) directamente a través de la API HTTP, a través de operaciones CRUD (crear, leer, actualizar, eliminar).
 
-La API de le permite utilizar Adobe Experience Manager as a Cloud Service como un CMS (sistema de administración de contenido) sin encabezado proporcionando servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON.
+La API de le permite utilizar Adobe Experience Manager as a Cloud Service como un CMS (Sistema de administración de contenido) sin encabezado proporcionando servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON.
 
 Por ejemplo, [SPA Aplicaciones de una sola página ()](/help/implementing/developing/hybrid/introduction.md), basado en el marco de trabajo o personalizado, requieren contenido proporcionado mediante la API HTTP, a menudo en formato JSON.
 

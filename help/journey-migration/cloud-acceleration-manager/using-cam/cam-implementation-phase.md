@@ -2,9 +2,9 @@
 title: Fase de implementación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de implementación en Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '661'
 ht-degree: 4%
 
 ---
@@ -89,7 +89,7 @@ AEM Siga esta sección para poder explorar la tarjeta de actividad de la tarjeta
 
 ## Uso de la tarjeta de transferencia de contenido {#content-transfer}
 
-AEM AEM La tarjeta Transferencia de contenido le permite iniciar y administrar la transferencia de contenido desde su instancia de actual a la as a Cloud Service de la.
+AEM AEM La tarjeta Transferencia de contenido le permite iniciar y administrar la transferencia de contenido desde la instancia de actual a la as a Cloud Service de la.
 
 Siga esta sección para poder explorar la tarjeta de actividad de transferencia de contenido:
 

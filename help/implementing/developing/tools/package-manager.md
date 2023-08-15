@@ -4,9 +4,9 @@ description: Conozca los conceptos básicos de AEM; administración de paquetes 
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3770'
 ht-degree: 4%
 
 ---
@@ -395,7 +395,7 @@ El Administrador de paquetes puede realizar las siguientes validaciones:
 
 >[!NOTE]
 >
->Dado que los paquetes no se pueden utilizar para implementar código en AEMaaCS, **Importaciones de paquetes OSGi** la validación es innecesaria.
+>Como los paquetes no se pueden usar para implementar código en AEMaaCS, **Importaciones de paquetes OSGi** la validación es innecesaria.
 
 **Qué se ha comprobado**
 
@@ -417,7 +417,7 @@ Para resolver errores debido a paquetes OSGi no satisfechos, se debe ajustar la 
 
 >[!NOTE]
 >
->Dado que los paquetes no se pueden utilizar para implementar código en AEMaaCS, **Superposiciones** la validación es innecesaria.
+>Como los paquetes no se pueden usar para implementar código en AEMaaCS, **Superposiciones** la validación es innecesaria.
 
 **Qué se ha comprobado**
 

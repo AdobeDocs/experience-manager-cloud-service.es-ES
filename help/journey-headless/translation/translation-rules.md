@@ -2,10 +2,10 @@
 title: Configuración de reglas de traducción para contenido sin encabezado
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 98%
+source-wordcount: '941'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Hay una consola de **Configuración de traducción** disponible para configurar 
 
 En la Interfaz de usuario **Configuración de traducción**, hay un número de opciones disponibles para las reglas de traducción. Aquí destacamos los pasos más necesarios y típicos para una configuración de localización sin encabezado básica.
 
-1. Pulse o haga clic en **Agregar contexto**, lo que le permitirá agregar una ruta. Esta es la ruta del contenido que se ve afectado por la regla.
+1. Haga clic o pulse **Agregar contexto**, que le permite añadir una ruta. Esta es la ruta del contenido que se ve afectado por la regla.
    ![Agregar contexto](assets/add-translation-context.png)
 1. Utilice el explorador de rutas para seleccionar la ruta necesaria o pulse o haga clic en el botón **Confirmar** para guardar. Recuerde que los fragmentos de contenido, que contienen contenido sin encabezado, generalmente se encuentran debajo de `/content/dam/<your-project>`.
    ![Seleccionar la ruta](assets/select-context.png)

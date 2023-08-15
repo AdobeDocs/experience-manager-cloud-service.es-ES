@@ -2,9 +2,9 @@
 title: Uso de los adaptadores de Sling
 description: Sling ofrece un patrón de adaptador para traducir convenientemente los objetos que implementan la interfaz adaptable
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2214'
+source-wordcount: '2213'
 ht-degree: 2%
 
 ---
@@ -105,7 +105,7 @@ En el primer caso, los documentos de Java™ pueden indicar lo siguiente `adaptT
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModillableValueMap</a></td>
-   <td>Una extensión del <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, que le permite modificar las propiedades de ese nodo</td>
+   <td>Una extensión del <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, que permite modificar las propiedades de ese nodo</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>

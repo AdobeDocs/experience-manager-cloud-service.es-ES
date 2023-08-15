@@ -2,10 +2,10 @@
 title: Introducción al contenido sin encabezado de AEM as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3084'
-ht-degree: 94%
+source-wordcount: '3080'
+ht-degree: 93%
 
 ---
 
@@ -143,7 +143,7 @@ Para que cualquier proyecto tenga éxito, es importante definir claramente no so
 
 ### Ámbito {#scope}
 
-Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa acerca de los criterios de aceptación y le permite establecer una definición de listo.
+Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa los criterios de aceptación y le permite establecer una definición de listo.
 
 La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” AEM La respuesta debería ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con las que no tiene que hacer nada. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
 
@@ -259,7 +259,7 @@ Para comprender el tráfico y los patrones de tráfico, comience por reunir lo q
 
 #### Frecuencia de actualización {#update-frequency}
 
-A menudo, las secciones de experiencias tienen distintas frecuencias de actualizaciones de contenido. Comprender esto es importante para poder ajustar las configuraciones de la red de distribución de contenido (CDN) y la caché. Esto también es una aportación importante para los [Arquitectos de contenido](#content-architects), ya que diseñan modelos para representar su contenido. Tenga en cuenta lo siguiente:
+A menudo, las secciones de experiencias tienen distintas frecuencias de actualizaciones de contenido. Es importante comprender esto para poder ajustar las configuraciones de CDN y caché. Esto también es una aportación importante para los [Arquitectos de contenido](#content-architects), ya que diseñan modelos para representar su contenido. Tenga en cuenta lo siguiente:
 
 * ¿Deben caducar algunos tipos de contenido después de un período determinado?
 * ¿Hay elementos específicos del usuario que no se pueden almacenar en caché?

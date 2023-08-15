@@ -1,13 +1,11 @@
 ---
 title: Agregar la compatibilidad con nuevas configuraciones regionales a un formulario adaptable
-seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms permite agregar nuevas configuraciones regionales para localizar adaptive forms. Configuraciones regionales en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR).
-seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 89%
+source-wordcount: '1266'
+ht-degree: 88%
 
 ---
 
@@ -105,7 +103,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 1. Agregue los valores de configuración regional predeterminados `<locale-name>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
 
 1. Agregue `<locale>` a los valores de la propiedad `languages` de `/etc/languages`.
-1. Añada las carpetas recién creadas en `filter.xml`, en etc/META-INF/[jerarquía de carpetas] como:
+1. Añada las carpetas recién creadas en `filter.xml` bajo etc/META-INF/[jerarquía de carpetas] como:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>

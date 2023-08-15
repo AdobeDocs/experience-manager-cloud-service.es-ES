@@ -2,10 +2,10 @@
 title: Cómo modelar el contenido
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, aprenderá a modelar el contenido para la entrega de contenido sin encabezado de AEM utilizando el Modelado de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 97%
+source-wordcount: '1828'
+ht-degree: 95%
 
 ---
 
@@ -147,7 +147,7 @@ La estructura del modelo de contenido:
 >
 >Los modelos de fragmento de contenido también se utilizan como base de los esquemas AEM GraphQL, que se utilizan para recuperar el contenido; más información al respecto en una sesión posterior.
 
-Las solicitudes de contenido se realizan mediante la API de AEM, GraphQL, una implementación personalizada de la API de GraphQL estándar. La API de AEM GraphQL permite realizar consultas (complejas) en los fragmentos de contenido, y cada consulta se realiza de acuerdo con un tipo de modelo específico.
+Las solicitudes de contenido se realizan mediante la API de AEM, GraphQL, una implementación personalizada de la API de GraphQL estándar. AEM La API de GraphQL le permite realizar consultas (complejas) en los fragmentos de contenido, estando cada consulta según un tipo de modelo específico.
 
 Las aplicaciones pueden utilizar el contenido devuelto.
 
@@ -169,7 +169,7 @@ Dentro de un modelo:
 1. Los **Tipos de datos** permiten definir los atributos individuales.
 Por ejemplo, defina el campo que contiene el nombre de un profesor como **Texto** y sus años de servicio como un **Número**.
 1. Los tipos de datos **Referencia de contenido** y **Referencia de fragmento** permiten crear relaciones con otro contenido dentro de AEM.
-1. El tipo de datos de **Referencia de fragmento** permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
+1. El **Referencia a fragmento** El tipo de datos permite realizar varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
 
 Por ejemplo:
 ![Modelado de contenido con fragmentos de contenido](assets/headless-modeling-01.png "Modelado de contenido con fragmentos de contenido")

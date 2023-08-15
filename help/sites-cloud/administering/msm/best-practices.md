@@ -4,10 +4,10 @@ description: Conozca las prácticas recomendadas recopiladas por los equipos de 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 92%
+source-wordcount: '1420'
+ht-degree: 87%
 
 ---
 
@@ -140,7 +140,7 @@ Por lo tanto, se recomienda usar únicamente activadores `onModify` si los benef
 
 ### Tipos de nodo/Propiedades {#node-types-properties}
 
-Además de personalizar las acciones de despliegue, MSM también le permite personalizar las propiedades de los nodos que se están desplegando. La [configuración OSGi de MSM le permite excluir tipos de nodos](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de copiarse de la fuente a Live Copy.
+Además de personalizar las acciones de despliegue, MSM también le permite personalizar las propiedades de los nodos que se están desplegando. El [La configuración OSGi de MSM le permite excluir tipos de nodos](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de copiarse del origen a la Live Copy.
 
 ## Información adicional {#further-information}
 

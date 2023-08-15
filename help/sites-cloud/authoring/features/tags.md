@@ -2,10 +2,10 @@
 title: Uso de etiquetas
 description: Las etiquetas son un método rápido y sencillo de clasificar contenido en un sitio web
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 75%
+source-wordcount: '562'
+ht-degree: 71%
 
 ---
 
@@ -47,7 +47,7 @@ De forma similar a como puede publicar y cancelar la publicación de páginas, p
 
 * Activar etiquetas individuales.
 
-  Al igual que con las páginas, las nuevas etiquetas que se creen deberán activarse antes de que estén disponibles en el entorno de publicación.
+  Al igual que con las páginas, las etiquetas recién creadas deberán activarse antes de que estén disponibles en el entorno de publicación.
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: Gestión básica
 description: AEM Familiarícese con la navegación por el y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 69%
+source-wordcount: '2975'
+ht-degree: 68%
 
 ---
 
@@ -20,7 +20,7 @@ Este documento se ha diseñado para ofrecer una descripción general de la gesti
 
 ## Una interfaz con capacidad táctil {#a-touch-enabled-ui}
 
-La interfaz de usuario de AEM tiene capacidad táctil. Una interfaz con capacidad táctil le permite utilizar el tacto para interactuar con el software mediante gestos como pulsar, pulsar y mantener o deslizar el dedo. Como la interfaz de usuario de AEM es táctil, puede utilizar los gestos táctiles en dispositivos táctiles como el teléfono móvil o la tablet. Sin embargo, también están disponibles las acciones del ratón en un dispositivo de escritorio tradicional, lo que le proporciona flexibilidad en la forma en que elige crear el contenido.
+La interfaz de usuario de AEM tiene capacidad táctil. Una interfaz táctil le permite utilizar el tacto para interactuar con el software mediante gestos como pulsar, pulsar y mantener o deslizar el dedo. Como la interfaz de usuario de AEM es táctil, puede utilizar los gestos táctiles en dispositivos táctiles como el teléfono móvil o la tablet. Sin embargo, también están disponibles las acciones del ratón en un dispositivo de escritorio tradicional, lo que le proporciona flexibilidad en la forma en que elige crear el contenido.
 
 ## Primeros pasos {#first-steps}
 
@@ -418,7 +418,7 @@ La cronología puede utilizarse para ver o iniciar eventos que se hayan producid
 
 ![Árbol de cronología](/help/sites-cloud/authoring/assets/timeline.png)
 
-La columna de línea de tiempo le permite:
+La columna de cronología le permite:
 
 * Ver varios eventos relacionados con el elemento seleccionado.
 

@@ -3,10 +3,10 @@ title: Cómo añadir un formulario adaptable a la página de AEM Sites
 description: Descubra cómo crear o agregar un formulario adaptable a su página de AEM Sites. Además, conozca las ventajas y las distintas formas de integrar formularios en su sitio web.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 6a462b7a437f74e659a43f7f5d4a95663b92c2cf
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3308'
-ht-degree: 67%
+source-wordcount: '3301'
+ht-degree: 64%
 
 ---
 
@@ -24,7 +24,7 @@ Con AEM Forms, puede agregar fácilmente un formulario a su página de AEM Sites
 
 Puede utilizar el Editor de páginas de AEM para crear y agregar rápidamente varios formularios a las páginas de AEM Sites. AEM El uso del editor de páginas de permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de una página de Sites mediante la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización de los procesos empresariales. También le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios.
 
-El Cloud Service de AEM Forms proporciona el contenedor de formulario adaptable y los componentes incrustados de Forms adaptable. Puede utilizar el contenedor de formulario adaptable para crear un nuevo formulario en una página de AEM Sites o un fragmento de experiencia, mientras que el componente Forms adaptable incrustado le permite agregar un formulario adaptable existente o crear un nuevo formulario con el editor de Forms adaptable.
+El Cloud Service de AEM Forms proporciona el contenedor de formulario adaptable y los componentes incrustados de Forms adaptable. Puede utilizar el contenedor de formulario adaptable para crear un nuevo formulario en una página de AEM Sites o un fragmento de experiencia, mientras que el componente Forms adaptable: incrustado permite agregar un formulario adaptable existente o crear un nuevo formulario con el editor de Forms adaptable.
 
 ![Ejemplo de un formulario adaptable en una página de AEM Sites](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -35,7 +35,7 @@ Si ha creado formularios adaptables basados en Forms Foundation o en HTML simple
 * **Versiones:** Las páginas de AEM Sites ofrecen [sólidas capacidades de versiones](/help/sites-cloud/authoring/features/page-versions.md), lo que le permite realizar un seguimiento y administrar diferentes versiones de los formularios. Esto le permite realizar cambios y mejoras en los formularios al tiempo que se mantiene la capacidad de revertir a versiones anteriores si es necesario. El control de versiones garantiza un enfoque controlado y organizado del desarrollo y la evolución de los formularios.
 * **Segmentación (integración con Adobe Target):** Con las funcionalidades de segmentación de páginas de AEM Sites, también puede [personalizar la experiencia del formulario para diferentes audiencias](/help/sites-cloud/integrating/integration-adobe-target-ims.md). Al aprovechar los segmentos de usuario y los criterios de segmentación, puede adaptar el contenido, diseño o comportamiento del formulario a grupos específicos de usuarios. Esto le permite proporcionar una experiencia de formulario personalizada y relevante, lo que aumenta las tasas de participación y conversión.
 * **Traducción: Integración perfecta de** AEM Sites [con los servicios de traducción](/help/sites-cloud/administering/translation/overview.md), lo que le permite traducir fácilmente formularios a varios idiomas. Esta función simplifica el proceso de localización y garantiza que los formularios sean accesibles para una audiencia global. Puede administrar las traducciones de forma eficaz dentro de los proyectos de traducción de AEM, lo que reduce el tiempo y el esfuerzo necesarios para la asistencia con formularios multilingües. Consulte la sección Consideraciones para obtener más información sobre la traducción.
-* **Administración de varios sitios y Live Copy:** AEM Sites proporciona [Funciones de administración de varios sitios y Live Copy](/help/sites-cloud/administering/msm/overview.md) sólidas, lo que permite crear y administrar varios sitios web en un único entorno. Ahora esta función le permite reutilizar formularios en diferentes sitios, lo que garantiza la consistencia y reduce los esfuerzos de duplicación. Con el control y la administración centralizados, puede mantener y actualizar de forma eficaz los formularios en varios sitios web.
+* **Administración de varios sitios y Live Copy:** AEM Sites proporciona [Funciones de administración de varios sitios y Live Copy](/help/sites-cloud/administering/msm/overview.md) sólidas, lo que permite crear y administrar varios sitios web en un único entorno. Esta función ahora le permite reutilizar formularios en diferentes sitios, lo que garantiza la coherencia y reduce los esfuerzos de duplicación. Con el control y la administración centralizados, puede mantener y actualizar de forma eficaz los formularios en varios sitios web.
 * **Temáticas:** Las páginas de AEM Sites proporcionan un marco de trabajo para diseñar y mantener estilos visuales coherentes en varias páginas web. Estas definen colores, fuentes, hojas de estilo y otros elementos visuales que contribuyen a la apariencia general del sitio web. [Puede utilizar las temáticas diseñadas para una página de AEM Sites para un formulario adaptable, lo que ahorra tiempo y esfuerzo](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes).
 * **Etiquetado:** Las páginas de AEM Sites le permiten [asignar etiquetas a una página, a un recurso o a otro contenido](/help/implementing/developing/introduction/tagging-framework.md). Las etiquetas son palabras clave o etiquetas de metadatos que proporcionan una forma de categorizar y organizar el contenido en función de criterios específicos. Puede asignar una o más etiquetas a páginas, recursos o a cualquier otro elemento de contenido dentro de AEM para mejorar la búsqueda y la clasificación de los archivos.
 * **Bloquear y desbloquear contenido:** AEM Sites permite a los usuarios [controlar el acceso y las modificaciones de páginas](/help/sites-cloud/authoring/fundamentals/editing-content.md) dentro del entorno de AEM Sites. Cuando una página está bloqueada, significa que está protegida contra cambios o ediciones no autorizados por parte de otros usuarios. Solo el usuario que ha bloqueado el contenido o un administrador designado pueden desbloquearlo para permitir modificaciones.
@@ -62,7 +62,7 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 ## Consideraciones para crear un formulario adaptable en una página de AEM Sites AEM o un fragmento de experiencia de la {#consideration}
 
-* Cuando se utiliza el Contenedor de formularios adaptables para crear o añadir un formulario, los formularios pasan por un proceso de traducción y localización a través del flujo de traducción de AEM Sites. Para cada idioma, se genera una copia independiente (copia de idioma) de la página de Sites y de los formularios correspondientes y, cuando un autor de contenido modifica una regla en un formulario de la página principal, se deben realizar los mismos cambios en todas las copias de idioma del formulario. El Contenedor de formularios adaptables también permite utilizar varias funcionalidades de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios.
+* Cuando se utiliza el Contenedor de formularios adaptables para crear o añadir un formulario, los formularios pasan por un proceso de traducción y localización a través del flujo de traducción de AEM Sites. Para cada idioma, se genera una copia independiente (copia de idioma) de la página de Sites y de los formularios correspondientes y, cuando un autor de contenido modifica una regla en un formulario de la página principal, se deben realizar los mismos cambios en todas las copias de idioma del formulario. El contenedor de formulario adaptable también le permite utilizar varias funciones de las páginas de AEM Sites, como control de versiones, direccionamiento, traducción y administrador de varios sitios.
 
 * Cuando se crea o se añade un formulario utilizando el Formulario adaptable: componente incrustado, los formularios pasan por un proceso de traducción y localización utilizando el flujo de traducción de AEM Forms. En este caso, se mantiene un único formulario y se hace referencia a él en todas las copias de idioma de las páginas de Sites. El Formulario adaptable: componente incrustado no proporciona acceso a varias funcionalidades de páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios.
 
@@ -96,7 +96,7 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
    
 1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` y añada el siguiente código al archivo:
 
-     ```
+       ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
@@ -106,7 +106,7 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
    
 1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` y añada el siguiente código al archivo:
 
-     ```
+       ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
@@ -116,7 +116,7 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
    
 1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` y añada el siguiente código al archivo:
 
-     ```
+       ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
@@ -151,7 +151,7 @@ Puede crear un formulario completamente nuevo desde cero y adaptarlo específica
 
 ### Creación de un formulario en una página de AEM Sites {#create-an-adaptive-form-in-sites-editor}
 
-Puede utilizar el componente Contenedor de formularios adaptables en el Editor de páginas de AEM para crear un formulario personalizado. El componente permite crear un formulario arrastrando y soltando los componentes del formulario. Los componentes de formulario se basan en los componentes principales. Puede personalizarlos fácilmente según los requisitos de su organización.
+Puede utilizar el componente Contenedor de formularios adaptables en el Editor de páginas de AEM para crear un formulario personalizado. El componente permite crear un formulario arrastrando y soltando sus componentes. Los componentes de formulario se basan en los componentes principales. Puede personalizarlos fácilmente según los requisitos de su organización.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 

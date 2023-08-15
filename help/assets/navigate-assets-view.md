@@ -3,9 +3,9 @@ title: “Interfaz de usuario de [!DNL Assets view]”
 description: Explicación de la interfaz de usuario de y la navegación en [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 88%
 
 ---

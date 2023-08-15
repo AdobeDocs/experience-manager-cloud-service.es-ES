@@ -3,10 +3,10 @@ title: ¿Cómo asignar un flujo de trabajo a otro usuario, enviar correos electr
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo basados en formularios adaptables. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varias fuentes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '7209'
-ht-degree: 99%
+source-wordcount: '7204'
+ht-degree: 98%
 
 ---
 
@@ -124,7 +124,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
 * **[!UICONTROL Usuario asignado]**: el campo está disponible cuando la variable **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** está seleccionada en el campo **[!UICONTROL Selector de participantes]**. El campo permite seleccionar una variable de tipo de datos de cadena para definir el usuario asignado.
 
-* **[!UICONTROL Argumentos]**: el campo está disponible cuando se selecciona un script que no sea RandomParticipantChoose en el campo Selector de participantes. El campo permite proporcionar una lista de un argumento separado por comas para la secuencia de comandos seleccionada en el campo Selector de participantes. 
+* **[!UICONTROL Argumentos]**: el campo está disponible cuando se selecciona un script que no sea RandomParticipantChoose en el campo Selector de participantes. El campo permite proporcionar una lista de un argumento separado por comas para el script seleccionado en el campo Selector de participantes.
 
 * **[!UICONTROL Usuario o grupo]**: la tarea se asigna al usuario o grupo seleccionado. La opción está disponible cuando la variable **[!UICONTROL Para una opción de usuario o grupo específica]** está seleccionada en el campo **[!UICONTROL Asignar opciones]**. El campo enumera todos los usuarios y grupos del grupo [!DNL workflow-users].\
   La lista **[!UICONTROL Usuario o grupo]** en el menú desplegable enumera los usuarios y grupos a los que el usuario que ha iniciado sesión tiene acceso. La visualización del nombre de usuario depende de si tiene permisos de acceso en el nodo **[!UICONTROL usuarios]** en el repositorio CRX para ese usuario en particular.
@@ -272,7 +272,7 @@ El paso Invocar DDX tiene las siguientes propiedades:
 
 ## Paso para invocar el servicio de modelo de datos de formulario {#invoke-form-data-model-service-step}
 
-Puede usar la integración de datos de [[!DNL AEM Forms] ](data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser un servicio web, un servicio REST, un servicio OData y una solución CRM. La integración de datos de [!DNL AEM Forms] le permite crear un modelo de datos de formulario que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **[!UICONTROL paso para invocar el servicio de modelo de datos]** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a distintos orígenes de datos.
+Puede usar la integración de datos de [[!DNL AEM Forms] ](data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser un servicio web, un servicio REST, un servicio OData y una solución CRM. [!DNL AEM Forms] La integración de datos de le permite crear un modelo de datos de formulario que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **[!UICONTROL paso para invocar el servicio de modelo de datos]** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a distintos orígenes de datos.
 
 Para explicar las entradas de los campos del paso, se utilizan como ejemplo la siguiente tabla de base de datos y el archivo JSON:
 
@@ -334,7 +334,7 @@ El paso para invocar el servicio de modelo de datos de formulario tiene los camp
 
 * **[!UICONTROL Ruta del modelo de datos del formulario]**: busque y seleccione un modelo de datos de formulario presente en el servidor.
 
-* **[!UICONTROL Errores y validaciones]**: la opción permite capturar mensajes de error y especificar opciones de validación para los datos recuperados y enviados a fuentes de datos. Con estos cambios, se puede garantizar que los datos transferidos al paso para invocar el servicio de modelo de datos de formulario se ajusten a las restricciones de datos definidas por la fuente de datos. Para obtener más información, consulte [Validación automatizada de los datos de entrada](work-with-form-data-model.md#automated-validation-of-input-data).
+* **[!UICONTROL Errores y validación]**: La opción permite capturar mensajes de error y especificar opciones de validación para los datos recuperados y enviados a fuentes de datos. Con estos cambios, se puede garantizar que los datos transferidos al paso para invocar el servicio de modelo de datos de formulario se ajusten a las restricciones de datos definidas por la fuente de datos. Para obtener más información, consulte [Validación automatizada de los datos de entrada](work-with-form-data-model.md#automated-validation-of-input-data).
 
 * **[!UICONTROL Nivel de validación]**: existen tres categorías de validaciones: Básico, Completo y Desactivado:
 

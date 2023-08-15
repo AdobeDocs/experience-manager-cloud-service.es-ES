@@ -2,10 +2,10 @@
 title: Obtenga más información acerca del desarrollo de CMS sin encabezado
 description: En esta parte del recorrido para desarrolladores de contenido sin encabezado de AEM, aprenda acerca de la tecnología sin encabezado y por qué la utilizaría.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1621'
-ht-degree: 93%
+source-wordcount: '1620'
+ht-degree: 92%
 
 ---
 
@@ -76,7 +76,7 @@ Este desacoplamiento significa que cada servicio consumidor (el front-end) puede
 
 ## Fundamentos tecnológicos {#technology}
 
-Un enfoque sin encabezado le permite generar una pila de tecnologías que se adapte rápida y fácilmente a las futuras exigencias de experiencias digitales.
+Un enfoque sin encabezado le permite crear un conjunto de tecnologías que se pueden adaptar fácil y rápidamente a las futuras demandas de experiencias digitales.
 
 Las API para CMS en el pasado generalmente se basaban en REST. La transferencia de estado representativo (REST) proporciona recursos como texto en modo sin estado. Esto permite leer y modificar los recursos con un conjunto predefinido de operaciones. REST permite una buena interoperabilidad entre los servicios de la web al garantizar la representación sin estado del contenido.
 

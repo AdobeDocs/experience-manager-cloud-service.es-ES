@@ -2,9 +2,9 @@
 title: Creación y administración de canales en Screens as a Cloud Service
 description: En esta página se describe cómo crear y administrar canales en Pantallas as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1092'
 ht-degree: 2%
 
 ---
@@ -91,7 +91,7 @@ Las siguientes plantillas están disponibles mientras se utiliza la variable **C
 
 ## Usar los detalles de asignación predeterminados para los canales {#default-channels}
 
-Esta capacidad le permite definir una programación de activación predeterminada para un canal y utilizarla de forma predeterminada para cada asignación de una visualización. Esto proporciona un método para que no sea necesario repetir la engorrosa definición de programación.
+Esta capacidad permite definir una programación de activación predeterminada para un canal y utilizarla de forma predeterminada para cada asignación de una visualización. Esto proporciona un método para que no sea necesario repetir la engorrosa definición de programación.
 
 ### Crear detalles de asignación predeterminados para un canal {#create-default}
 

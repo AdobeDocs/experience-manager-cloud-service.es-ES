@@ -1,9 +1,9 @@
 ---
 title: Tablero de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO a través de una interfaz de panel clara e informativa.
-source-git-commit: 7a8e6c3d226b02c65943629d0df196252218aa3c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '844'
 ht-degree: 17%
 
 ---

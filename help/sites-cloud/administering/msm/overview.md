@@ -4,10 +4,10 @@ description: Obtenga una introducción para reutilizar contenido con las potente
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2719'
-ht-degree: 95%
+source-wordcount: '2714'
+ht-degree: 92%
 
 ---
 
@@ -136,11 +136,11 @@ Se puede acceder directamente a MSM desde la IU mediante diversas opciones desde
 
 * **Información general de Live Copy** (**Sites**)
 
-   * Esta consola le permite [ver y administrar su modelo y sus Live Copies.](live-copy-overview.md)
+   * Esta consola le permite [vea y administre su modelo y sus Live Copies.](live-copy-overview.md)
 
 * **Modelos** (**Herramientas** - **Sites**)
 
-   * Esta consola le permite [crear y administrar las configuraciones de modelo.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Esta consola le permite [cree y administre sus configuraciones de modelo.](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: 'Creación de una solicitud de API: configuración sin encabezado'
 description: Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido y la API de REST de Assets de AEM para administrar fragmentos de contenido.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 63%
+source-wordcount: '651'
+ht-degree: 58%
 
 ---
 
@@ -19,7 +19,7 @@ Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido
 
 * [La API de GraphQL](/help/headless/graphql-api/content-fragments.md) permite crear solicitudes para acceder a fragmentos de contenido y enviarlos. Esta API ofrece el conjunto más sólido de funciones para consultar y consumir contenido de fragmentos de contenido.
    * Para utilizar la API, [AEM definir y habilitar puntos finales en la](/help/headless/graphql-api/graphql-endpoint.md)y, si es necesario, el [Interfaz de GraphiQL instalada](/help/headless/graphql-api/graphiql-ide.md).
-* La [API de REST de Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permite crear y modificar fragmentos de contenido (y otros recursos).
+* [La API de REST de Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permite crear y modificar fragmentos de contenido (y otros recursos).
 
 El resto de esta guía se centra en el acceso a GraphQL y la entrega de fragmentos de contenido.
 
@@ -57,7 +57,7 @@ GraphiQL es un IDE, incluido en su entorno AEM; es accesible/visible después de
 1. El IDE de GraphiQL es un editor de consultas en el explorador para GraphQL. Puede utilizarlo para generar consultas, recuperar fragmentos de contenido y entregarlos sin encabezado como JSON.
    * La parte superior derecha desplegable le permite seleccionar el punto de conexión.
    * Un panel del extremo izquierdo enumera las consultas persistentes (cuando están disponibles)
-   * El panel intermedio de la izquierda le permite generar su consulta.
+   * El panel intermedio de la izquierda le permite generar la consulta.
    * El panel intermedio de la derecha muestra los resultados.
    * El editor de consultas incluye la finalización del código y teclas de función para ejecutar fácilmente la consulta.
 

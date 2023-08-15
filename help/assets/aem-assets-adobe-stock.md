@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2493'
+source-wordcount: '2492'
 ht-degree: 8%
 
 ---
@@ -212,7 +212,7 @@ Para configurar la cuenta de IMS:
 
 Para configurar la variable [!DNL Adobe Stock] servicio en la nube:
 
-1. En el [!DNL Experience Manager] interfaz de usuario, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. En el [!DNL Experience Manager] interfaz de usuario, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**.
 
 1. En el [!DNL Adobe Stock Configurations] página, haga clic en **[!UICONTROL Crear]**.
 
@@ -269,7 +269,7 @@ Puede crear un grupo de usuarios o asignar permisos a un grupo de usuarios exist
 
    ![user-permissions](assets/aem-stock-user-permissions.png)
 
-1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. Seleccione el [!DNL Adobe Stock] configuración de nube y haga clic en **[!UICONTROL Propiedades]**.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**. Seleccione el [!DNL Adobe Stock] configuración de nube y haga clic en **[!UICONTROL Propiedades]**.
 
 1. Agregue el grupo de usuarios recién creado al [!DNL Adobe Stock] configuración. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
@@ -460,11 +460,11 @@ Users can see the properties for both, licensed and unlicensed assets.
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
@@ -477,4 +477,3 @@ Users can see the properties for both, licensed and unlicensed assets.
 >* [Tutorial de vídeo sobre el uso de recursos de Adobe Stock con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Ayuda del plan empresarial de Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Preguntas frecuentes sobre Adobe Stock](https://helpx.adobe.com/stock/faq.html)
-

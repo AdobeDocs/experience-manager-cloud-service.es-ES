@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: c15486fb3de73773fa7e255809ffaa36715cea05
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3528'
 ht-degree: 7%
 
 ---
@@ -91,7 +91,7 @@ Hay dos opciones de recorte de imagen entre las que elegir: Recorte de píxeles 
 | **[!UICONTROL Recorte de píxeles]** | Recorte masivo de imágenes basado únicamente en dimensiones. | Desde el **[!UICONTROL Opciones de recorte]** , seleccione la opción **[!UICONTROL Recorte de píxeles]**.<br>Para recortar desde los lados de una imagen, escriba el número de píxeles que desea recortar desde cualquier lado o cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen.<br>Un recorte de píxeles del perfil de imagen se procesa de la siguiente manera:<br>· Los valores son Superior, Inferior, Izquierda y Derecha.<br>· Se considera la parte superior izquierda `0,0` y el recorte de píxeles se calcula a partir de ahí.<br>· Punto de inicio del recorte: a la izquierda es X y arriba es Y<br>· Cálculo horizontal: tamaño de píxel horizontal de la imagen original menos Izquierda y luego menos Derecha.<br>· Cálculo vertical: altura de píxel vertical menos Superior y luego menos Inferior.<br>Por ejemplo, supongamos que tiene una imagen de 4000 x 3000 píxeles. Utilice valores: Superior=250, Inferior=500, Izquierda=300, Derecha=700.<br>Desde el recorte superior izquierdo (300 250) utilizando el espacio de relleno de (4000-300-700, 3000-250-500 o 3000 2250). |
 | **[!UICONTROL Recorte inteligente]** | Recorte masivo de imágenes en función de su punto focal visual. | Smart Crop utiliza el poder de la inteligencia artificial en Adobe Sensei para automatizar rápidamente el recorte masivo de imágenes. El recorte inteligente detecta y recorta automáticamente el punto focal de cualquier imagen para adquirir el punto de interés deseado, independientemente del tamaño de la pantalla.<br>Desde el **[!UICONTROL Opciones de recorte]** , seleccione la opción **[!UICONTROL Recorte inteligente]**, luego a la derecha de **[!UICONTROL Recorte de imagen interactivo]**, habilite (active) la función.<br>Los tamaños de punto de interrupción predeterminados (**[!UICONTROL Grande]**, **[!UICONTROL Mediana]**, **[!UICONTROL Pequeño]**) cubren la gama completa de tamaños que la mayoría de las imágenes se utilizan en dispositivos móviles y tabletas, equipos de escritorio y banners. Si lo desea, puede editar los nombres predeterminados de Grande, Mediano y Pequeño.<br>Para añadir más puntos de interrupción, seleccione **[!UICONTROL Añadir recorte]**; para eliminar un recorte, seleccione el icono Basura. |
 | **[!UICONTROL Muestra de color e imagen]** | Bulk genera una muestra de imagen para cada imagen. | **Nota**: la muestra inteligente no es compatible con Dynamic Media Classic.<br>Busque y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.<br>Desde el **[!UICONTROL Opciones de recorte]** , seleccione la opción **[!UICONTROL Recorte inteligente]**. A la derecha de **[!UICONTROL Muestra de color e imagen]**, habilite (active) la función. Introduzca un valor de píxel en **[!UICONTROL Ancho]** y **[!UICONTROL Altura]** cuadros de texto.<br>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan a través del **[!UICONTROL Copiar URL]** función. Utilice su propio componente de visualización para procesar la muestra en el sitio. La excepción a esta regla son los titulares de carrusel. Dynamic Media proporciona el componente de visualización para la muestra utilizada en los titulares del carrusel.<br><br>**Uso de muestras de imagen**<br> La URL de las muestras de imagen es sencilla:<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>Donde `:Swatch` se adjunta a la solicitud de recurso.<br><br>**Uso de muestras de color**<br> Para utilizar muestras de color, debe crear un `req=userdata` con lo siguiente:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Por ejemplo, a continuación se muestra un recurso de muestra en Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>Y aquí está la muestra del recurso correspondiente `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>El `req=userdata` La respuesta es la siguiente:<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>También puede solicitar una `req=userdata` respuesta en formato XML o JSON, como en los siguientes ejemplos de URL:<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota**: debe crear su propio componente WCM para solicitar una muestra de color y analizar el `SmartSwatchColor` , representado por un valor hexadecimal de RGB de 24 bits.<br>Consulte también [`userdata`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html) en la Guía de referencia de visores. |
-| **[!UICONTROL Conservar el contenido de recorte en las resoluciones de destino]** | Para mantener el contenido de recorte en la misma proporción de aspecto | Se utiliza al crear un perfil de recorte inteligente.<br>Para generar nuevo contenido de recorte (sin dejar de mantener el punto focal) para una proporción de aspecto determinada en diferentes resoluciones, desactive esta opción <br>Si decide desmarcar esta casilla, asegúrese de que la resolución de imagen original sea la buena que defina para su perfil de Recorte inteligente.<br><br>Por ejemplo, supongamos que ha establecido las relaciones de aspecto en 600 x 600 (Grande), 400 x 400 (Mediano) y 300 x 300 (Pequeño).<br>Cuándo **[!UICONTROL Conservar el contenido de recorte en las resoluciones de destino]** La opción es *comprobado*, verá el mismo recorte en las tres resoluciones, similar a la siguiente salida de muestra de imágenes (solo con fines ilustrativos):<br>![Opción activada](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>Cuándo **[!UICONTROL Conservar el contenido de recorte en las resoluciones de destino]** La opción es *desenfrenado*, el contenido de recorte es nuevo para las tres resoluciones, similar a la siguiente salida de muestra de imágenes (solo para fines ilustrativos):<br>![Opción sin marcar](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
+| **[!UICONTROL Conservar el contenido de recorte en las resoluciones de destino]** | Para mantener el contenido de recorte en la misma proporción de aspecto | Se utiliza al crear un perfil de recorte inteligente.<br>Para generar nuevo contenido de recorte (sin dejar de mantener el punto focal) para una proporción de aspecto determinada en diferentes resoluciones, desactive esta opción <br>Si decide desactivar esta casilla, asegúrese de que la resolución de imagen original sea mayor que las resoluciones definidas para el perfil de recorte inteligente.<br><br>Por ejemplo, supongamos que ha establecido las relaciones de aspecto en 600 x 600 (Grande), 400 x 400 (Mediano) y 300 x 300 (Pequeño).<br>Cuándo **[!UICONTROL Conservar el contenido de recorte en las resoluciones de destino]** La opción es *comprobado*, verá el mismo recorte en las tres resoluciones, similar a la siguiente salida de muestra de imágenes (solo con fines ilustrativos):<br>![Opción activada](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>Cuándo **[!UICONTROL Conservar el contenido de recorte en las resoluciones de destino]** La opción es *desenfrenado*, el contenido de recorte es nuevo para las tres resoluciones, similar a la siguiente salida de muestra de imágenes (solo para fines ilustrativos):<br>![Opción sin marcar](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
 
 ### Formatos de archivo de imagen compatibles con el recorte inteligente y las muestras de color
 
@@ -104,15 +104,15 @@ La resolución máxima admitida del tamaño del archivo de entrada es de 16 K.
 | Formato de imagen | Extensión de archivo sin distinción de mayúsculas y minúsculas | Tipo MIME | Espacio de color de entrada compatible | Tamaño máximo de archivo de entrada admitido | ¿Formato de imagen admitido? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Sí |
-| CMYK |  |  |  |  | Sí |
-| EPS |  |  |  |  | No |
+| CMYK | | | | | Sí |
+| EPS | | | | | No |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Sí; se utiliza el primer fotograma del GIF animado para la representación. No se puede configurar ni cambiar el primer fotograma. |
 | JPEG | `.jpg` y `.jpeg` | image/jpeg | sRGB | 15 GB | Sí |
 | PNG | `.png` | image/png | sRGB | 15 GB | Sí |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2 GB | Sí |
-| SVG |  |  |  |  | No |
+| SVG | | | | | No |
 | TIFF | `.tif` y `.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | Sí |
-| WebP/WebP animado |  |  |  |  | No |
+| WebP/WebP animado | | | | | No |
 
 ## Creación de perfiles de imagen de Dynamic Media {#creating-image-profiles}
 
@@ -202,13 +202,13 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
    * Vaya a `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` y aplique el perfil adecuado y seleccione **[!UICONTROL Guardar]**.
 
-      ![chlimage_1-257](assets/chlimage_1-257.png)
+     ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * Vaya al CRXDE Lite en el siguiente nodo: `/content/dam/jcr:content`.
 
-      Añadir la propiedad `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` y seleccione **[!UICONTROL Guardar todo]**.
+     Añadir la propiedad `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` y seleccione **[!UICONTROL Guardar todo]**.
 
-      ![configure_image_profiles](assets/configure_image_profiles.png)
+     ![configure_image_profiles](assets/configure_image_profiles.png)
 
 ## Editar el recorte inteligente o la muestra inteligente de una sola imagen {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
@@ -272,37 +272,35 @@ Puede volver a ejecutar el recorte inteligente para generar los recortes adicion
 
    * Ajuste el tamaño de visualización de las imágenes en la página.
 
-      A la derecha de la lista desplegable de nombre del punto de interrupción, arrastre la barra deslizante a la izquierda o a la derecha para cambiar el tamaño de la visualización de la imagen visible.
+     A la derecha de la lista desplegable de nombre del punto de interrupción, arrastre la barra deslizante a la izquierda o a la derecha para cambiar el tamaño de la visualización de la imagen visible.
 
-      ![edit_smart_crop-sliderbar](assets/edit_smart_crops-sliderbar.png)
+     ![edit_smart_crop-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
    * Filtre la lista de imágenes visibles en función de los nombres de los puntos de interrupción. En el ejemplo siguiente, las imágenes se filtran con el nombre de punto de interrupción &quot;Medium&quot;.
 
-      Cerca de la esquina superior derecha de la página, en la lista desplegable, seleccione un nombre de punto de interrupción para filtrar por las imágenes que ve. (Consulte la imagen anterior).
+     Cerca de la esquina superior derecha de la página, en la lista desplegable, seleccione un nombre de punto de interrupción para filtrar por las imágenes que ve. (Consulte la imagen anterior).
 
-      ![edit_smart_crop-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
+     ![edit_smart_crop-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
    * Cambie el tamaño del cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
       * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, en la imagen, arrastre el controlador de esquina del cuadro de recorte. Ajuste el tamaño del área visible del recorte.
       * Si la imagen tiene un recorte inteligente y una muestra inteligente, en la imagen, arrastre el controlador de esquina del cuadro de recorte. Ajuste el tamaño del área visible del recorte. O bien, seleccione la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el controlador de esquina del cuadro de recorte. Ajuste el tamaño del área visible de la muestra.
 
-      ![Cambio del tamaño del recorte inteligente de una imagen](assets/edit_smart_crops-resize.png).
+     ![Cambio del tamaño del recorte inteligente de una imagen](assets/edit_smart_crops-resize.png).
 
    * Mueva el cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
       * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, en la imagen, arrastre el cuadro de recorte a una nueva ubicación.
       * Si la imagen tiene un recorte inteligente y una muestra inteligente, en la imagen, arrastre el cuadro de recorte inteligente a una nueva ubicación. O bien, seleccione la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el cuadro de recorte de muestra inteligente a una nueva ubicación.
 
-      ![edit_smart_crop-move](assets/edit_smart_crops-move.png)
+     ![edit_smart_crop-move](assets/edit_smart_crops-move.png)
 
    * Deshacer todas las ediciones y restaurar el recorte inteligente o la muestra inteligente original (solo se aplica a la sesión de edición actual).
 
-      Seleccionar **[!UICONTROL Revertir]** encima de la imagen.
+     Seleccionar **[!UICONTROL Revertir]** encima de la imagen.
 
-      ![edit_smart_crop-revert](assets/edit_smart_crops-revert.png)
-
-
+     ![edit_smart_crop-revert](assets/edit_smart_crops-revert.png)
 
 1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**, luego seleccione **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
 

@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f69b348b7de6c6537a9945793e3397bf4fe30f98
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2653'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ Del mismo modo, con todo lo que se produce de forma asíncrona, como actuar sobr
 
 Se recomienda encarecidamente que todas las conexiones HTTP salientes establezcan tiempos de espera de conexión y lectura razonables; los valores sugeridos son 1 segundo para el tiempo de espera de conexión y 5 segundos para el tiempo de espera de lectura. Los números exactos deben determinarse en función del rendimiento del sistema backend que gestiona estas solicitudes.
 
-AEM AEM Para el código que no aplica estos tiempos de espera, las instancias de que se ejecutan en el as a Cloud Service aplicarán un tiempo de espera global. Estos valores de tiempo de espera son de 10 segundos para las llamadas de conexión y de 60 segundos para las llamadas de lectura para las conexiones.
+AEM AEM Para el código que no aplica estos tiempos de espera, las instancias de que se ejecutan en el as a Cloud Service aplicarán un tiempo de espera global. Estos valores de tiempo de espera son de 10 segundos para llamadas de conexión y de 60 segundos para llamadas de lectura para conexiones.
 
 El Adobe recomienda el uso del proporcionado [Biblioteca Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) para realizar conexiones HTTP.
 

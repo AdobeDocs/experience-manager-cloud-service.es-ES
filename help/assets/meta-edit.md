@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 12%
+source-wordcount: '455'
+ht-degree: 15%
 
 ---
 
@@ -36,7 +36,7 @@ Para editar metadatos:
    >
    >Si un campo de texto está vacío, no hay ningún conjunto de metadatos existente. Puede introducir un valor en el campo y guardarlo para añadir esa propiedad de metadatos.
 
-XMP Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos de. Esto se realiza mediante el flujo de trabajo de reescritura de metadatos del Experience Manager. Cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y las propiedades recién creadas (incluidas las propiedades personalizadas como `cq:tags`) se añaden junto con el esquema.
+XMP Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos de. Esto se realiza mediante el flujo de trabajo de reescritura de metadatos del Experience Manager. Cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y se crean propiedades de nueva creación (incluidas propiedades personalizadas como `cq:tags`) se añaden junto con el esquema.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -57,11 +57,11 @@ Puede agregar sus propias áreas de nombres en Experience Manager. Al igual que 
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)

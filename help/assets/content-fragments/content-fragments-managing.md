@@ -2,10 +2,10 @@
 title: Administración de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, la base del contenido sin encabezado.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 70%
+source-wordcount: '1768'
+ht-degree: 69%
 
 ---
 
@@ -105,7 +105,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 * **Cierre de compra**
 * **Propiedades**
 
-   * Permite ver o editar los metadatos del fragmento.
+   * Permite ver, editar o ambos metadatos del fragmento.
 
 * **Editar**
 
@@ -323,7 +323,7 @@ Se muestran una al lado de la otra, donde:
    * Texto insertado en verde
    * Texto reemplazado en azul
 
-* El icono de pantalla completa le permite abrir cualquiera de las versiones por su cuenta; a continuación, vuelva a la vista paralela
+* El icono de pantalla completa permite abrir cualquiera de las versiones por su cuenta; a continuación, vuelva a la vista paralela
 * Puede **Revertir** a la versión específica
 * **Listo** le devolverá a la consola
 
@@ -353,7 +353,7 @@ Si publica un fragmento de contenido para el que el modelo aún no se ha publica
 
 Los fragmentos de contenido deben publicarse para su uso en el entorno de publicación. Esto se realiza mediante la funcionalidad estándar de Recursos:
 
-* [Publicación rápida ](/help/assets/manage-publication.md#quick-publish)
+* [Publicación rápida](/help/assets/manage-publication.md#quick-publish)
 * [Administrar publicación](/help/assets/manage-publication.md#manage-publication)
 
 Se puede acceder a esto:

@@ -2,9 +2,9 @@
 title: Entornos de desarrollo rápido
 description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones de desarrollo rápido en un entorno de nube.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3313'
+source-wordcount: '3312'
 ht-degree: 5%
 
 ---
@@ -441,7 +441,7 @@ Consulte la [documentación del modo de ejecución](/help/implementing/deploying
 >
 >La configuración OSGI de RDE es única, ya que hereda los valores de cualquier propiedad OSGI declarada por el paquete `dev` modo de ejecución.
 
-Los RDE son distintos de otros entornos en los que el contenido se puede instalar en una carpeta install.rde (o install.author.rde o install.publish.rde) en /apps. Esto le permite enviar contenido a Git y enviarlo al RDE mediante las herramientas de la línea de comandos.
+Los RDE son distintos de otros entornos en los que el contenido se puede instalar en una carpeta install.rde (o install.author.rde o install.publish.rde) en /apps. Esto permite enviar contenido a Git y enviarlo al editor de texto enriquecido (RDE) mediante las herramientas de la línea de comandos.
 
 ## Rellenar con contenido {#populating-content}
 
@@ -482,7 +482,7 @@ El número de RDE necesarios depende de la composición y los procesos de una or
 
 En el otro extremo, un equipo con un solo RDE puede utilizar procesos internos para coordinar qué desarrollador puede utilizar el entorno en un momento determinado. Esto puede suceder posiblemente cada vez que un desarrollador ha alcanzado un hito de característica intermedia y está listo para validarlo en un entorno de nube donde puede realizar rápidamente los cambios que necesita.
 
-Un modelo intermedio es aquel en el que una organización compra una serie de RDE, de modo que existe una buena probabilidad de que esté disponible un RDE no utilizado. Una estrategia podría ser asignar un RDE por equipo de depuración o función principal. Se pueden utilizar procesos internos para coordinar el uso de los entornos.
+Un modelo intermedio es aquel en el que una organización compra una serie de RDE, de modo que existe una mayor probabilidad de que esté disponible un RDE no utilizado. Una estrategia podría ser asignar un RDE por equipo de depuración o función principal. Se pueden utilizar procesos internos para coordinar el uso de los entornos.
 
 ## ¿En qué se diferencia un entorno de desarrollo rápido (RDE) de AEM Forms Cloud Service de otros entornos? {#how-are-forms-rds-different-from-cloud-development-environments}
 

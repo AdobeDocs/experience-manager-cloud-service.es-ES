@@ -2,10 +2,10 @@
 title: Administrar audiencias
 description: La consola Audiencias permite crear, organizar y administrar las audiencias de la cuenta de Adobe Target o administrar segmentos de ContextHub
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 69%
+source-wordcount: '962'
+ht-degree: 66%
 
 ---
 
@@ -42,7 +42,7 @@ Para crear un segmento de ContextHub en la consola de audiencias:
 
    >[!NOTE]
    >
-   >Puede ordenar la lista modificada pulsando o haciendo clic en **Modificado** para clasificar en orden descendente y ver las audiencias recién creadas.
+   >Puede ordenar la lista modificada tocando o haciendo clic en **Modificado** para ordenar en orden descendente y ver las audiencias recién creadas.
 
 Para obtener más información sobre la creación de segmentos con ContextHub, consulte la documentación de Configuración de la segmentación con ContextHub. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 

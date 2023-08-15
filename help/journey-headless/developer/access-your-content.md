@@ -2,10 +2,10 @@
 title: Cómo acceder al contenido a través de las API de entrega de AEM
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, aprenderá a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 97%
+source-wordcount: '1358'
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ GraphQL es una especificación de código abierto que proporciona lo siguiente:
 * un lenguaje de consulta que permite seleccionar contenido específico de objetos estructurados.
 * un tiempo de ejecución para realizar estas consultas con el contenido estructurado.
 
-GraphQL es una API que se organiza *totalmente* por tipos. Esto significa que *todo* el contenido debe estar claramente estructurado y organizado por tipo, para que GraphQL *entienda* a qué acceder y cómo hacerlo. Los campos de datos se definen dentro de esquemas de GraphQL, que definen la estructura de los objetos de contenido.
+GraphQL es una API muy tipificada. Esto significa que *todo* el contenido debe estar claramente estructurado y organizado por tipo, para que GraphQL *entienda* a qué acceder y cómo hacerlo. Los campos de datos se definen dentro de esquemas de GraphQL, que definen la estructura de los objetos de contenido.
 
 Los puntos finales de GraphQL proporcionan las rutas que responden a las consultas de GraphQL.
 
@@ -133,7 +133,7 @@ La **Referencia de fragmento**:
 
 * Es un tipo de datos específico disponible cuando se define un modelo de fragmento de contenido.
 * Hace referencia a otro fragmento, según un modelo de fragmento de contenido específico.
-* Permite crear y datos estructurados y luego recuperarlos.
+* Permite crear y recuperar datos estructurados.
 
    * Cuando se define como **multifuente**, el fragmento principal puede hacer referencia (recuperar) a varios subfragmentos.
 
@@ -146,7 +146,7 @@ Para diseñar y desarrollar los modelos de fragmento de contenido, puede obtener
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
-GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
+GraphQL is a strongly-typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
 
 For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
 

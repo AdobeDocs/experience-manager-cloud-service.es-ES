@@ -2,10 +2,10 @@
 title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante Fragmentos de contenido.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 89%
+source-wordcount: '1714'
+ht-degree: 88%
 
 ---
 
@@ -50,7 +50,7 @@ Al igual que con la mayoría de los sistemas, debe iniciar sesión. Como autor, 
 * Una contraseña
 * Un vínculo para acceder a la pantalla de inicio de sesión
 
-Su cuenta se habrá configurado con los privilegios que necesite. Si tiene algún problema, le recomendamos que se ponga en contacto con su equipo de soporte interno del proyecto.
+Su cuenta se habrá configurado con los privilegios que necesite. Si tiene algún problema, Adobe recomienda ponerse en contacto con el equipo interno de soporte del proyecto.
 
 ### Navegación {#navigation}
 
@@ -217,7 +217,7 @@ Ejemplos:
 
   ![Editor de fragmentos de contenido: mi fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
-* Un fragmento que permite escribir una sección larga de texto. Aquí hay opciones adicionales para administrar y dar formato al texto. Incluso puede abrir los campos de texto individuales en un editor de pantalla completa (con el icono en forma de pantalla pequeña de la derecha)
+* Un fragmento que le permite escribir una sección larga de texto. Aquí hay opciones adicionales para administrar y dar formato al texto. Incluso puede abrir los campos de texto individuales en un editor de pantalla completa (con el icono en forma de pantalla pequeña de la derecha)
 
   ![Editor de fragmentos de contenido: Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 

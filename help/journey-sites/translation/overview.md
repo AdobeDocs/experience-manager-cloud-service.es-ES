@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -53,9 +53,9 @@ Por supuesto, la información de este recorrido puede ser útil para todas las p
 
 Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionan conocimientos básicos sobre la traducción del contenido de los sitios en AEM y le permiten acceder a documentación técnica detallada.
 
-Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. Por lo tanto, si es nuevo en la traducción en AEM, le recomendamos que comience por el principio y avance en orden consecutivo.
+Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. AEM Por lo tanto, si es nuevo en la traducción en la práctica, el Adobe recomienda empezar por el principio y avanzar en orden consecutivo.
 
-| N.° | Artículo | Descripción |
+| # | Artículo | Descripción |
 |---|---|---|
 | 0 | Recorrido de traducción de AEM Sites | Este documento |
 | 1 | [Obtenga información sobre el contenido de los sitios y cómo traducirlo en AEM](learn-about.md) | Aprenda los conceptos de los sitios y la teoría de traducción de AEM. |

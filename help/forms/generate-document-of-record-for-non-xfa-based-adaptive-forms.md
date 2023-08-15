@@ -2,10 +2,10 @@
 title: Generar documento de registro para formularios adaptables
 description: Explica cómo se puede generar una plantilla para un documento de registro (DoR) para formularios adaptables.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4143'
-ht-degree: 98%
+source-wordcount: '4139'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Cuando se rellena o se envía un formulario, se puede guardar un registro del fo
 ![Documento de registro](assets/document-of-record.png)
 
 Para crear un documento de registro, una plantilla basada en XFA o AcroForm se combina con los datos recopilados mediante un formulario adaptable. Puede generar un documento de registro automáticamente o bajo demanda. 
-La opción bajo demanda le permite especificar una plantilla personalizada basada en XFA o AcroForm para proporcionar un aspecto personalizado al documento de registro.
+La opción bajo demanda permite especificar una plantilla personalizada basada en XFA o AcroForm para proporcionar un aspecto personalizado al documento de registro.
 
 Puede hacer lo siguiente:
 
@@ -75,7 +75,7 @@ Cuando se configura un formulario adaptable para que genere automáticamente un 
 * Los desarrolladores de formularios no tienen que mantener enlaces de datos de forma manual. El documento de registro generado automáticamente se encarga de las actualizaciones relacionadas con los enlaces de datos.
 * Los desarrolladores de formularios no tienen que ocultar de forma manual los campos marcados como excluir del documento de registro. El documento de registro generado automáticamente está preconfigurado para excluir estos campos.
 * Al crear un documento de registro generado automáticamente, se ahorra el tiempo necesario para crear una plantilla de formulario para el documento de registro.
-* Crear un documento de registro generado automáticamente le permite utilizar diferentes estilos y apariencias con distintas plantillas base. Ayuda a seleccionar el mejor estilo y aspecto del documento de registro para su organización. Si no especifica estilo, los estilos del sistema se establecen como predeterminados.
+* La opción de documento de registro generado automáticamente permite utilizar diferentes estilos y apariencias con diferentes plantillas base. Ayuda a seleccionar el mejor estilo y aspecto del documento de registro para su organización. Si no especifica estilo, los estilos del sistema se establecen como predeterminados.
 * El documento de registro generado automáticamente garantiza que cualquier cambio en el formulario se refleje inmediatamente en el documento de registro.
 
 Siga estos pasos para configurar un formulario adaptable para generar automáticamente un documento de registro:
@@ -103,7 +103,7 @@ Enlace los campos de formulario adaptable con campos de plantilla para mostrar l
 1. Haga clic en **[!UICONTROL Guardar]**.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 Puede utilizar la acción de envío de correo electrónico, la acción de envío del flujo de trabajo de Experience Manager junto con el [paso del documento de registro](configuring-submit-actions.md) y otras acciones de envío para recibir un documento de registro.
@@ -112,7 +112,7 @@ Puede utilizar la acción de envío de correo electrónico, la acción de envío
 
 Los formularios adaptables y las plantillas de documento de registro correspondientes pueden evolucionar a lo largo del tiempo. Puede elegir entre agregar, quitar o modificar campos a un formulario adaptable o a una plantilla de documento de registro.
 
-Cuando se realizan cambios en una plantilla de documento de registro y se carga la plantilla modificada en AEM Forms, el editor de formularios adaptables detecta automáticamente los enlaces modificados y le informa sobre los componentes de formulario adaptables que requieren nuevos enlaces. Le permite realizar actualizaciones incrementales en una plantilla de documento de registro.
+Cuando se realizan cambios en una plantilla de documento de registro y se carga la plantilla modificada en AEM Forms, el editor de formularios adaptables detecta automáticamente los enlaces modificados y le informa sobre los componentes de formulario adaptables que requieren nuevos enlaces. Permite realizar actualizaciones incrementales en una plantilla de documento de registro.
 
 Por ejemplo, una organización, *We.Retail*, tiene una plantilla de documento de registro basada en AcroForm, *we-retail-Invoice.pdf*. La plantilla tiene el siguiente aspecto:
 

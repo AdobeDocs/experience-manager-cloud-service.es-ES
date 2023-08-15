@@ -2,9 +2,9 @@
 title: Información general sobre fragmentos de experiencias
 description: Ampliar fragmentos de experiencias de Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1640'
 ht-degree: 1%
 
 ---
@@ -170,7 +170,7 @@ AEM Para estos casos de uso, proporciona la interfaz del proveedor de reescritur
 
 ### Interfaz de proveedor de reescritura de vínculos {#link-rewriter-provider-interface}
 
-Para casos más complicados, no cubiertos por la [predeterminado](#default-link-rewriting)AEM , ofrece la interfaz del proveedor de reescritura de vínculos. Esta interfaz es una `ConsumerType` que puede implementar en sus paquetes como servicio. AEM Evita las modificaciones que realiza en los vínculos internos de una oferta de HTML que se representan desde un fragmento de experiencia. Esta interfaz le permite personalizar el proceso de reescritura de vínculos de HTML internos para adaptarlos a sus necesidades comerciales.
+Para casos más complicados, no cubiertos por la [predeterminado](#default-link-rewriting)AEM , ofrece la interfaz del proveedor de reescritura de vínculos. Esta interfaz es una `ConsumerType` que puede implementar en sus paquetes como servicio. AEM Evita las modificaciones que realiza en los vínculos internos de una oferta de HTML que se representan desde un fragmento de experiencia. Esta interfaz le permite personalizar el proceso de reescritura de vínculos internos de HTML para adaptarlos a sus necesidades comerciales.
 
 Algunos ejemplos de casos de uso para implementar esta interfaz como servicio son:
 

@@ -4,16 +4,16 @@ description: Administración de documentos de PDF en [!DNL Adobe Experience Mana
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '849'
 ht-degree: 4%
 
 ---
 
 # Administración de documentos de PDF en Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
 
-Experience Manager Assets se integra perfectamente con el Visor de PDF de Document Cloud, lo que le permite previsualizar varias páginas de un documento de PDF. Además, también puede utilizar funciones avanzadas del visualizador de PDF de Document Cloud como anotaciones, buscar texto, navegar por el documento de PDF mediante marcadores y miniaturas, etc., en el mismo entorno. Experience Manager Assets también le permite cargar documentos en otros formatos compatibles y previsualizarlos en formato de PDF.
+Experience Manager Assets se integra perfectamente con el Visor de PDF de Document Cloud, lo que permite previsualizar varias páginas de un documento de PDF. Además, también puede utilizar funciones avanzadas del visualizador de PDF de Document Cloud como anotaciones, buscar texto, navegar por el documento de PDF mediante marcadores y miniaturas, etc., en el mismo entorno. Experience Manager Assets también permite cargar documentos en otros formatos compatibles y previsualizarlos en formato de PDF.
 
 El visualizador de PDF de Document Cloud beneficia a AEM Assets de las siguientes maneras:
 * [Compatibilidad con los componentes del visor del Document Cloud PDF](#pdf-doc-cloud)
@@ -44,7 +44,7 @@ El visualizador nativo de PDF de Doc Cloud tiene los siguientes componentes en A
 
 ## Compatibilidad con la vista previa de varias páginas y anotaciones para el recurso de PDF {#multi-page}
 
-Adobe Experience Manager Assets permite obtener una vista previa del documento del PDF que consta de varias páginas. Para obtener una vista previa de varias páginas de un documento de PDF, siga estos pasos:
+Adobe Experience Manager Assets permite previsualizar un documento del PDF que consta de varias páginas. Para obtener una vista previa de varias páginas de un documento de PDF, siga estos pasos:
 
 1. Siga los pasos para [AEM carga de recursos en la](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Examine el documento del PDF que desea cargar y previsualizar.

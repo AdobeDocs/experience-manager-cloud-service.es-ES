@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 98%
+source-wordcount: '1028'
+ht-degree: 94%
 
 ---
 
@@ -139,7 +139,7 @@ También puede enviar los archivos adjuntos del formulario a una fuente de datos
 
 ## Invocar servicios desde formularios adaptables mediante reglas {#invoke-services}
 
-En un formulario adaptable basado en un modelo de datos de formulario, puede [crear reglas](rule-editor.md) para invocar servicios configurados en el modelo de datos de formulario. La operación **[!UICONTROL Invocar servicios]** en una regla muestra todos los servicios disponibles en el modelo de datos de formulario y permite seleccionar campos de entrada y salida para el servicio. También puede usar el tipo de regla **[!UICONTROL Configurar el valor de]** para invocar un servicio del modelo de datos de formulario y establecer el valor de un campo en la salida devuelta por el servicio.
+En un formulario adaptable basado en un modelo de datos de formulario, puede [crear reglas](rule-editor.md) para invocar servicios configurados en el modelo de datos de formulario. El **[!UICONTROL Invocar servicios]** Esta operación en una regla enumera todos los servicios disponibles en el modelo de datos de formulario y permite seleccionar campos de entrada y salida para el servicio. También puede usar el tipo de regla **[!UICONTROL Configurar el valor de]** para invocar un servicio del modelo de datos de formulario y establecer el valor de un campo en la salida devuelta por el servicio.
 
 Por ejemplo, la siguiente regla invoca un servicio de obtención que toma el ID de empleado como entrada, y los valores devueltos se rellenan en los campos correspondientes ID de la persona dependiente, Apellidos, Nombre y Género del formulario.
 

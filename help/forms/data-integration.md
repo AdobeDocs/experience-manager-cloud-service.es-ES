@@ -3,10 +3,10 @@ title: Conexión de una base de datos a  [!DNL AEM Forms]  as a Cloud Servic
 seo-title: AEM Forms Data Integration
 description: Puede recuperar y guardar datos en servicios web RESTful, servicios web basados en SOAP y servicios OData desde  [!DNL AEM Forms] as a Cloud Service. El servicio proporciona una herramienta dedicada para recuperar, probar, validar y enviar datos a varios tipos de fuentes de datos.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 93%
+source-wordcount: '575'
+ht-degree: 86%
 
 ---
 

@@ -4,10 +4,10 @@ description: Descubra cómo los modelos de fragmentos de contenido sirven de bas
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2919'
-ht-degree: 91%
+source-wordcount: '2916'
+ht-degree: 90%
 
 ---
 
@@ -222,6 +222,7 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 * **[Referencia a fragmento](#fragment-reference-nested-fragments)** (fragmentos anidados)
    * Hace referencia a otros fragmentos, según los modelos específicos definidos.
    * Permite incluir o recuperar datos estructurados.
+
      >[!NOTE]
      >
      >Este método reviste especial interés en conjunción con la [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
@@ -239,7 +240,7 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 
 ### Referencia de contenido {#content-reference}
 
-La referencia de contenido le permite procesar contenido de otra fuente; por ejemplo, imagen o fragmento de contenido.
+La referencia de contenido permite procesar contenido de otra fuente; por ejemplo, imagen o fragmento de contenido.
 
 Además de las propiedades estándar, puede especificar las siguentes:
 

@@ -2,10 +2,10 @@
 title: Configuración de la segmentación con ContextHub
 description: Obtenga información sobre cómo configurar la segmentación mediante ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 88%
+source-wordcount: '1687'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ En función de la información que ya haya recopilado acerca de los visitantes d
 
 Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Las [Actividades](activities.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
-AEM permite personalizar fácilmente las experiencias de los usuarios. También le deja verificar los resultados de sus definiciones de segmento.
+AEM Le permite personalizar fácilmente las experiencias de los usuarios. También le permite verificar los resultados de las definiciones de segmentos.
 
 ## Acceso a segmentos {#accessing-segments}
 
@@ -29,8 +29,8 @@ Para acceder a sus segmentos en la navegación global, seleccione **Navegación 
 
 ## Editor de segmentos {#segment-editor}
 
-<!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-El **Editor de segmentos** le permite modificar con facilidad un segmento. Para editar un segmento, seleccione uno en la lista de segmentos y haga clic en el botón **Editar**.
+<!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
+El **Editor de segmentos** permite modificar fácilmente un segmento. Para editar un segmento, seleccione uno en la lista de segmentos y haga clic en el botón **Editar**.
 
 ![Editor de segmentos](../assets/contexthub-segment-editor.png)
 

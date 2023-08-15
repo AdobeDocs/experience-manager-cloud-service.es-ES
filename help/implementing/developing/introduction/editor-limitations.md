@@ -2,9 +2,9 @@
 title: Limitaciones del editor
 description: El editor de la IU táctil utiliza las superposiciones para interactuar con el contenido limitado en un iframe. Esta interacción crea algunas limitaciones en el uso del editor y también para los desarrolladores.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '313'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ Cuándo [edición de una página](/help/sites-cloud/authoring/fundamentals/editi
 
 ### Páginas de estructura {#structure-pages}
 
-Las páginas no pueden tener nombre `structure`. Páginas con nombre `structure` no se podrán editar en el editor de páginas.
+No se puede nombrar las páginas `structure`. Páginas con nombre `structure` no se podrán editar en el editor de páginas.
 
 ## Limitaciones de CSS {#css-limitations}
 

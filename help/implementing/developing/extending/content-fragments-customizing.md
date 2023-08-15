@@ -2,9 +2,9 @@
 title: Personalizar y ampliar fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar. Descubra cómo puede personalizarlos.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1812'
 ht-degree: 3%
 
 ---
@@ -96,17 +96,17 @@ Para integrar con el núcleo de Assets:
 >
 >El [El componente Fragmento de contenido forma parte de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es). Consulte [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) para obtener más información.
 
-AEM Se puede hacer referencia a los fragmentos de contenido desde páginas de recursos de la misma manera que desde cualquier otro tipo de recurso. AEM proporciona el **[Componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)** - a [que le permite incluir fragmentos de contenido en las páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar esta **[Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)** componente principal.
+AEM Se puede hacer referencia a los fragmentos de contenido desde páginas de recursos de la misma manera que desde cualquier otro tipo de recurso. AEM proporciona el **[Componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)** - a [componente que permite incluir fragmentos de contenido en las páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar esta **[Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)** componente principal.
 
 * El componente utiliza el `fragmentPath` para hacer referencia al fragmento de contenido real. El `fragmentPath` La propiedad de se gestiona de la misma manera que propiedades similares de otros tipos de recursos; por ejemplo, cuando el fragmento de contenido se mueve a otra ubicación.
 
-* El componente le permite seleccionar la variación que se va a mostrar.
+* El componente permite seleccionar la variación que se desea mostrar.
 
 * Además, se puede seleccionar un rango de párrafos para restringir la salida; por ejemplo, esto se puede utilizar para la salida de varias columnas.
 
 * El componente permite contenido intermedio:
 
-   * Aquí el componente le permite colocar otros recursos (imágenes, etc.) entre los párrafos del fragmento al que se hace referencia.
+   * Aquí, el componente le permite colocar otros recursos (imágenes, etc.) entre los párrafos del fragmento al que se hace referencia.
 
    * Para el contenido intermedio, debe:
 
@@ -176,7 +176,7 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
 
 * **Fragmento de contenido** ([FragmentoDeContenido](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-  Esta interfaz le permite trabajar con un fragmento de contenido de forma abstracta.
+  Esta interfaz permite trabajar con un fragmento de contenido de forma abstracta.
 
   La interfaz de le proporciona los medios para lo siguiente:
 

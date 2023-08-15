@@ -1,17 +1,17 @@
 ---
 title: Externalización de direcciones URL
-description: El externalizador es un servicio OSGi que le permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta.
+description: El externalizador es un servicio OSGi que permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
 
 # Externalización de direcciones URL {#externalizing-urls}
 
-AEM En el caso de los **Externalizador** es un servicio OSGi que le permite transformar mediante programación una ruta de recursos (por ejemplo, `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) prefijando la ruta con un DNS preconfigurado.
+AEM En el caso de los **Externalizador** es un servicio OSGi que permite transformar mediante programación una ruta de recursos (por ejemplo, `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) prefijando la ruta con un DNS preconfigurado.
 
 AEM Debido a que una instancia as a Cloud Service de la aplicación no puede conocer su dirección URL visible externamente y a que a veces se debe crear un vínculo fuera del ámbito de la solicitud, este servicio proporciona un lugar central para configurar esas direcciones URL externas y crearlas.
 
@@ -44,7 +44,7 @@ Para anular la variable `preview` y `publish` Utilice las variables de entorno d
 
 ## Configuración del servicio externalizador {#configuring-the-externalizer-service}
 
-El servicio externalizador le permite definir de forma centralizada el dominio que se puede utilizar para prefijar mediante programación las rutas de recursos. El servicio externalizador solo debe utilizarse para aplicaciones con un solo dominio.
+El servicio externalizador permite definir de forma centralizada el dominio que se puede utilizar para prefijar mediante programación las rutas de recursos. El servicio externalizador solo debe utilizarse para aplicaciones con un solo dominio.
 
 >[!NOTE]
 >

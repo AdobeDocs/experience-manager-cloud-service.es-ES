@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2535'
 ht-degree: 18%
 
 ---
@@ -192,7 +192,7 @@ A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo s
 
    >[!NOTE]
    >
-   > Solo las bibliotecas base están &quot;codificadas&quot; como parte de los scripts de página. `venia.site` no se incluye en estos archivos y, en su lugar, se incluye como parte de la plantilla de página para una buena flexibilidad. Este proceso se inspecciona más adelante.
+   > Solo las bibliotecas base están &quot;codificadas&quot; como parte de los scripts de página. `venia.site` no se incluye en estos archivos y, en su lugar, se incluye como parte de la plantilla de página para una mayor flexibilidad. Este proceso se inspecciona más adelante.
 
 1. AEM Desde el terminal, cree e implemente todo el proyecto en una instancia local de:
 

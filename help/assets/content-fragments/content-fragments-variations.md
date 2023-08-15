@@ -2,10 +2,10 @@
 title: 'Variaciones: Crear contenido de fragmentos (Recursos: fragmentos de contenido)'
 description: AEM Comprenda de qué forma las variaciones pueden hacer que el contenido sin encabezado sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de ese contenido según el propósito.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2438'
-ht-degree: 83%
+source-wordcount: '2435'
+ht-degree: 88%
 
 ---
 
@@ -46,7 +46,7 @@ Por ejemplo:
 
 Puede hacer lo siguiente:
 
-* Edite el contenido directamente en la pestaña **Variaciones** pestaña; cada tipo de datos proporciona diferentes opciones de edición, por ejemplo:
+* Edite el contenido directamente en la pestaña de **Variaciones**; cada tipo de datos proporciona diferentes opciones de edición, por ejemplo:
 
    * para los campos **Texto de varias líneas** también puede abrir los campos [editor de pantalla completa](#full-screen-editor) a:
 
@@ -63,11 +63,11 @@ Puede hacer lo siguiente:
       * Si busca una etiqueta, se devolverá el fragmento con la variación etiquetada resaltada.
       * Las etiquetas de variación también se pueden utilizar para agrupar variaciones para un perfil específico de la red de distribución de contenido (CDN) (para el almacenamiento en caché de CDN), en lugar de utilizar el nombre de variación.
 
-     Por ejemplo, puede etiquetar fragmentos relevantes como &quot;lanzamiento de Navidad&quot; para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
+     Por ejemplo, puede etiquetar fragmentos relevantes como “lanzamiento de Navidad” para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
 
   >[!NOTE]
   >
-  >**Etiquetas** también se puede añadir (a la **Principal** variación) como parte de la [Metadatos](/help/assets/content-fragments/content-fragments-metadata.md)
+  >**Etiquetas** también se puede añadir (a la variación **Principal**) como parte de los [Metadatos](/help/assets/content-fragments/content-fragments-metadata.md)
 
 * [Crear y administrar variaciones](#managing-variations) del contenido **Principal.**
 
@@ -149,7 +149,7 @@ El texto sin formato permite introducir rápidamente el contenido sin aplicar fo
 >
 >Para obtener información completa, consulte la documentación [Markdown](/help/assets/content-fragments/content-fragments-markdown.md).
 
-Esto le permite dar formato al texto mediante markdown. Puede definir lo siguiente:
+Esto permite dar formato al texto mediante markdown. Puede definir lo siguiente:
 
 * Encabezados
 * Párrafos y saltos de línea
@@ -390,7 +390,7 @@ Hay varios métodos para agregar [imágenes](/help/assets/content-fragments/cont
 
    >[!CAUTION]
    >
-   Si, después de agregar una referencia a otro fragmento, cambia el formato a
+   Si, después de agregar una referencia a otro fragmento, cambia el formato a:
    * **Texto sin formato**: la referencia se pierde completamente del fragmento.
    * **Markdown**: la referencia se mantendrá.
 
@@ -414,7 +414,7 @@ Para crear una nueva variación, haga lo siguiente:
 
    >[!NOTE]
    >
-   Al crear una nueva variación, todas las variables **Etiquetas** asignado actualmente a **Principal** se copian en la nueva variación.
+   Al crear una nueva variación, todas las **Etiquetas** asignadas actualmente a la variación **Principal** se copian en la nueva variación.
 
 ### Edición de una variación {#editing-a-variation}
 
@@ -459,7 +459,7 @@ No puede eliminar **Principal**.
 
 **Principal** es una parte integral de un fragmento de contenido y por definición contiene la copia principal del contenido, mientras que las variaciones contienen versiones individuales actualizadas y adaptadas de ese contenido. Cuando Principal se actualiza, es posible que estos cambios también sean relevantes para las variaciones y, por lo tanto, deban propagarse a ellas.
 
-Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Principal. Esto le permite copiar automáticamente los cambios realizados en Principal en la variación requerida.
+Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Principal. Esto permite copiar automáticamente los cambios realizados en Principal en la variación requerida.
 
 >[!CAUTION]
 >

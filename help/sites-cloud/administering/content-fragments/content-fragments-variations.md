@@ -4,10 +4,10 @@ description: Comprenda cómo las variaciones le permiten crear contenido para el
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2461'
-ht-degree: 92%
+source-wordcount: '2458'
+ht-degree: 90%
 
 ---
 
@@ -151,7 +151,7 @@ El texto sin formato permite introducir rápidamente el contenido sin aplicar fo
 >
 >Para obtener información completa, consulte la documentación [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md).
 
-Esto le permite dar formato al texto mediante markdown. Puede definir lo siguiente:
+Esto permite dar formato al texto mediante markdown. Puede definir lo siguiente:
 
 * Encabezados
 * Párrafos y saltos de línea
@@ -470,7 +470,7 @@ No puede eliminar **Principal**.
 
 **Principal** es una parte integral de un fragmento de contenido y por definición contiene la copia principal del contenido, mientras que las variaciones contienen versiones individuales actualizadas y adaptadas de ese contenido. Cuando Principal se actualiza, es posible que estos cambios también sean relevantes para las variaciones y, por lo tanto, deban propagarse a ellas.
 
-Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Principal. Esto le permite copiar automáticamente los cambios realizados en Principal en la variación requerida.
+Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Principal. Esto permite copiar automáticamente los cambios realizados en Principal en la variación requerida.
 
 >[!CAUTION]
 >

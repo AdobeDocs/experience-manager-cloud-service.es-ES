@@ -2,10 +2,10 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2271'
-ht-degree: 30%
+source-wordcount: '2266'
+ht-degree: 29%
 
 ---
 
@@ -217,7 +217,7 @@ Al seleccionar un fragmento de contenido, sus detalles se muestran en el carril 
 
 El editor ocupa la mayor parte de la ventana y es donde la página especificada en [la barra de ubicación](#location-bar) se procesa.
 
-* Si el editor se encuentra en un modo de edición como [modo de texto](#text-mode) o [modo multimedia,](#media-mode) el contenido puede editarse, pero no puede seguir los vínculos.
+* Si el editor se encuentra en un modo de edición como [modo de texto](#text-mode) o [modo multimedia,](#media-mode) el contenido se podrá editar, pero no podrá seguir los vínculos.
 * Si el editor se encuentra en [modo de previsualización,](#preview-mode) el contenido es navegable y puede seguir los vínculos, pero no puede editar el contenido.
 
 ![Editor](assets/editor.png)
@@ -304,7 +304,7 @@ La edición de contenido es sencilla e intuitiva. En modos de edición ([modo de
 
 Tenga en cuenta que, en el modo de edición, que si toca o hace clic en el contenido se selecciona para editar. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa.](#preview-mode)
 
-Según la variable [modo](#mode-rail) una vez que se encuentra en y el contenido que selecciona, es posible que tenga diferentes opciones de edición y pueda revisar propiedades adicionales para el contenido mediante la variable [carril de componentes.](#component-rail)
+Según la variable [modo](#mode-rail) una vez que se encuentra en y el contenido que selecciona, es posible que tenga diferentes opciones de edición y que pueda revisar propiedades adicionales para el contenido mediante [carril de componentes.](#component-rail)
 
 ### Edición de texto sin formato {#edit-plain-text}
 

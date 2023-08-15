@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 94%
+source-wordcount: '1073'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 94%
 
 ## Introducción a la carga diferida {#introduction-to-lazy-loading}
 
-Cuando un formulario se vuelve grande y complejo e incluye cientos y miles de campos, los usuarios finales experimentan tiempos de respuesta largos cuando representan formularios en tiempo de ejecución. Para minimizar el tiempo de respuesta, los formularios adaptables permiten dividir cada formulario en fragmentos lógicos y configurarlo para retrasar la inicialización o la carga de los fragmentos hasta que el fragmento tenga que ser visible. Este proceso se denomina carga diferida. Además, los fragmentos configurados para la carga diferida se descargan una vez que el usuario se desplaza a otras secciones del formulario y los fragmentos ya no son visibles.
+Cuando un formulario se vuelve grande y complejo e incluye cientos y miles de campos, los usuarios finales experimentan tiempos de respuesta largos cuando representan formularios en tiempo de ejecución. Para minimizar el tiempo de respuesta, el Forms adaptable permite dividir los formularios en fragmentos lógicos y configurarlos para retrasar la inicialización o la carga de los fragmentos hasta que el fragmento tenga que ser visible. Este proceso se denomina carga diferida. Además, los fragmentos configurados para la carga diferida se descargan una vez que el usuario se desplaza a otras secciones del formulario y los fragmentos ya no son visibles.
 
 En primer lugar, vamos a explicar cuáles son los requisitos y los pasos preparatorios antes de configurar la carga diferida.
 

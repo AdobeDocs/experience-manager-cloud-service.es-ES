@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 92%
+source-wordcount: '1143'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 92%
 
 Puede crear un formulario adaptable basado en una plantilla de formulario XFA (archivo `*.XDP`). Esta reutilización le permite conservar su inversión en formularios XFA existentes. Para obtener información sobre cómo utilizar una plantilla de formulario XFA para crear un formulario adaptable, consulte [Crear un formulario adaptable basado en una plantilla](creating-adaptive-form.md).
 
-Puede reutilizar campos del archivo XDP en su formulario adaptable. Estos campos se denominan campos vinculados. Las propiedades de los campos vinculados (como scripts, etiquetas y formato de visualización) se copian del archivo XDP. También puede optar por anular el valor de algunas de estas propiedades.
+Puede reutilizar campos del archivo XDP en su formulario adaptable. Estos campos se denominan campos enlazados. Las propiedades de los campos enlazados (como scripts, etiquetas y formato de visualización) se copian del archivo XDP. También puede optar por anular el valor de algunas de estas propiedades.
 
 [!DNL AEM Forms] ofrece una forma de ayudarle a mantener los campos de los formularios adaptables sincronizados con cualquier cambio que se realice posteriormente en los campos correspondientes del archivo XDP. Este artículo explica cómo puede habilitar esta sincronización.
 
@@ -133,7 +133,7 @@ El campo que se ha eliminado también se marca con un icono para indicar un erro
 
 >[!NOTE]
 >
->Los campos del formulario adaptable que tienen un enlace incorrecto (un valor `bindRef` no válido en el cuadro de diálogo de edición) también se consideran campos eliminados. Si el autor no corrige estos errores y publica el formulario adaptable, el campo se trata como un campo de formulario adaptable normal sin vincular y se incluye en la sección sin vincular del archivo XML de salida.
+>Los campos del formulario adaptable que tienen un enlace incorrecto (un valor `bindRef` no válido en el cuadro de diálogo de edición) también se consideran campos eliminados. Si el autor no corrige estos errores y publica el formulario adaptable, el campo se trata como un campo de formulario adaptable independiente normal y se incluye en la sección independiente del archivo XML de salida.
 
 ## Descargas {#downloads}
 

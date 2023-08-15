@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4938'
+source-wordcount: '4937'
 ht-degree: 6%
 
 ---
@@ -122,7 +122,7 @@ Google cambia periódicamente su interfaz de usuario. Como tal, los pasos para p
 
    `https://<servername.domain>:<port_number>`
 
-   Por ejemplo, `https://1a2b3c.mycompany.com:4321`. 
+   Por ejemplo, `https://1a2b3c.mycompany.com:4321`
 
    >[!NOTE]
    >
@@ -133,7 +133,7 @@ Google cambia periódicamente su interfaz de usuario. Como tal, los pasos para p
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   Por ejemplo, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`. 
+   Por ejemplo, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    >[!NOTE]
    >
@@ -204,7 +204,7 @@ A partir de Experience Manager 6.4, se introdujo un nuevo método de interfaz de
 #### Configuración de YouTube en Experience Manager 6.4 y posterior {#setting-up-youtube-in-aem-and-later}
 
 1. Asegúrese de iniciar sesión en la instancia de Dynamic Media como administrador.
-1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo del Experience Manager y, a continuación, en el carril izquierdo, vaya a **[!UICONTROL Herramientas]**(icono de martillo) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de publicación de YouTube]**.
+1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo del Experience Manager y, a continuación, en el carril izquierdo, vaya a **[!UICONTROL Herramientas]**(icono de martillo) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuración de publicación de YouTube]**.
 1. Seleccionar **[!UICONTROL global]** (no lo seleccione).
 
 1. Cerca de la esquina superior derecha de la página global, seleccione **[!UICONTROL Crear]**.
@@ -238,7 +238,7 @@ Deje abierta la página Crear configuración de YouTube; volverá a ella en un m
 
    Ahora configure etiquetas para la publicación.
 
-1. **[!UICONTROL Configuración de etiquetas para publicar]** : En la página Cloud Services > YouTube, seleccione el icono de lápiz para editar la lista de etiquetas que desea utilizar.
+1. **[!UICONTROL Configuración de etiquetas para publicar]** : En la página Cloud Service > YouTube, seleccione el icono de lápiz para editar la lista de etiquetas que desea utilizar.
 1. Para mostrar la lista de etiquetas disponibles en Experience Manager, seleccione el icono de lista desplegable (acento circunflejo invertido).
 1. Para añadirlas, seleccione una o varias etiquetas.
 
@@ -252,7 +252,7 @@ Deje abierta la página Crear configuración de YouTube; volverá a ella en un m
 
 1. Asegúrese de iniciar sesión en la instancia de Dynamic Media como administrador.
 
-1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo del Experience Manager y, a continuación, en el carril izquierdo, vaya a **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Services]**.
+1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo del Experience Manager y, a continuación, en el carril izquierdo, vaya a **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Service]**.
 1. En el encabezado Servicios de terceros, en YouTube, seleccione **[!UICONTROL Configurar ahora]**.
 1. En el cuadro de diálogo Crear configuración, introduzca un título (obligatorio) y un nombre (opcional) en los campos respectivos.
 1. Seleccione **[!UICONTROL Crear]**.
@@ -284,7 +284,7 @@ Deje abierto el cuadro de diálogo Configuración de cuenta de YouTube; volverá
 
    Ahora configure etiquetas para la publicación.
 
-1. **[!UICONTROL Configuración de etiquetas para publicar]** : En la página Cloud Services > YouTube, seleccione el icono de lápiz para editar la lista de etiquetas que desea utilizar.
+1. **[!UICONTROL Configuración de etiquetas para publicar]** : En la página Cloud Service > YouTube, seleccione el icono de lápiz para editar la lista de etiquetas que desea utilizar.
 1. Para mostrar la lista de etiquetas disponibles en Experience Manager, seleccione el icono de lista desplegable (acento circunflejo invertido).
 1. Para añadirlas, seleccione una o varias etiquetas.
 
@@ -347,7 +347,7 @@ Pegue el valor copiado en el editor de texto abierto. Necesitará este valor má
    * (Opcional) Arrastre el componente etiquetado como **[!UICONTROL Encabezado de sección]** a la izquierda y suéltelo en el área del formulario.
    * (Opcional) Seleccione **[!UICONTROL Etiqueta de campo]** para seleccionar el componente.
    * (Opcional) En el lado derecho de la página, en la pestaña Configuración, en el campo de texto Etiqueta de campo, introduzca `YouTube Privacy`.
-   * Seleccione el **[!UICONTROL Generar formulario]** y, a continuación, arrastre el componente etiquetado como **[!UICONTROL Texto con varios valores]** y suéltelo debajo de **[!UICONTROL Privacidad de YouTube]** encabezado creado.
+   * Seleccione el **[!UICONTROL Generar formulario]** y, a continuación, arrastre el componente etiquetado **[!UICONTROL Texto con varios valores]** y suéltelo debajo de **[!UICONTROL Privacidad de YouTube]** encabezado creado.
 
    * Para seleccionar el componente, seleccione **[!UICONTROL Etiqueta de campo]**.
    * En el lado derecho de la página, en la pestaña Configuración, pegue los valores de publicación de YouTube (valor Etiqueta de campo y Asignar a valor de propiedad) que copió anteriormente, en sus respectivos campos del formulario. Pegue el valor Choices en el campo Default Value.
@@ -368,8 +368,11 @@ Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. E
 >**[!UICONTROL Publicar inmediatamente]** significa que el recurso cargado (una vez sincronizado con IPS) se publica automáticamente en el sistema de entrega. Aunque esto se aplica a Dynamic Media, no se aplica a YouTube. Para publicar en YouTube, debe publicar mediante Experience Manager Author.
 
 >[!NOTE]
+>
 Para publicar contenido desde YouTube, Experience Manager utiliza el **[!UICONTROL Publicar en YouTube]** flujo de trabajo, que permite monitorizar el progreso y ver cualquier información de error.
+>
 Consulte [Monitorización de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+>
 Para obtener información de progreso más detallada, puede monitorizar el registro de YouTube en replicación. No obstante, tenga en cuenta que dicha monitorización requiere acceso de administrador.
 
 **Para publicar vídeos en su canal de YouTube:**
@@ -405,6 +408,7 @@ Después de ocho horas, si sigue viendo un mensaje de estado que dice **[!UICONT
 Puede obtener una cadena URL de YouTube generada por Dynamic Media después de publicar el vídeo. Al copiar la URL de YouTube, esta aterriza en el Portapapeles para que pueda pegarla según sea necesario en las páginas de su sitio web o aplicación.
 
 >[!NOTE]
+>
 La URL de YouTube no estará disponible para copiar hasta que haya publicado el recurso de vídeo en YouTube.
 
 Para vincular URL de YouTube a la aplicación web:
@@ -422,10 +426,13 @@ Para vincular URL de YouTube a la aplicación web:
 Cuando se cancela la publicación de un recurso de vídeo en Experience Manager, el vídeo se elimina de YouTube.
 
 >[!CAUTION]
+>
 Si elimina un vídeo directamente desde YouTube, Experience Manager no lo tendrá en cuenta y seguirá comportándose como si el vídeo se publicara en YouTube. Cancele siempre la publicación de un recurso de vídeo de YouTube mediante Experience Manager.
 
 >[!NOTE]
+>
 Para eliminar contenido de YouTube, Experience Manager utiliza el **[!UICONTROL Cancelar publicación de YouTube]** flujo de trabajo, que permite monitorizar el progreso y ver cualquier información de error.
+>
 Consulte [Monitorización de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Para cancelar la publicación de vídeos y eliminarlos de YouTube:**
@@ -466,16 +473,19 @@ Puede monitorizar el progreso, incluida la codificación fallida o la publicaci�
    Cualquier información del flujo de trabajo, como la codificación, se muestra en la cronología. Para la publicación en YouTube, la cronología del flujo de trabajo también incluye el nombre del canal de YouTube y la dirección URL del vídeo de YouTube. Además, verá cualquier notificación de error en la cronología del flujo de trabajo una vez completada la publicación.
 
    >[!NOTE]
+   >
    Los mensajes de error/error pueden tardar mucho tiempo en registrarse finalmente debido a las diversas configuraciones del flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
+   >
    * Configuración de cola de trabajos de Apache Sling
    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
    * Cola de tiempo de espera de Granite Workflow
-
+   >
    Puede ajustar la variable **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** propiedades en estas configuraciones.
 
 1. Para los flujos de trabajo en curso, consulte Instancias de flujo de trabajo disponibles en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Instancias]**.
 
    >[!NOTE]
+   >
    Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
@@ -489,21 +499,25 @@ Puede monitorizar el progreso, incluida la codificación fallida o la publicaci�
 1. Para los trabajos con errores, consulte Errores de flujo de trabajo disponibles en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Errores]**. El **[!UICONTROL error de flujo de trabajo]** muestra todas las actividades de flujo de trabajo con errores.
 
    >[!NOTE]
+   >
    Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
+   >
    El mensaje de error puede tardar mucho tiempo en registrarse finalmente debido a las diversas configuraciones del flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
+   >
    * Configuración de cola de trabajos de Apache Sling
    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
    * Cola de tiempo de espera de Granite Workflow
-
+   >
    Puede ajustar la variable **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** propiedades en estas configuraciones.
 
 1. Para ver los flujos de trabajo completados, consulte Archivo de flujo de trabajo, disponible en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Archivar]**. El **[!UICONTROL archivo de flujo de trabajo]** enumera todas las actividades de flujo de trabajo completadas.
 
    >[!NOTE]
+   >
    Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
@@ -558,7 +572,7 @@ For YouTube publishing jobs, do the following:
 
 ## Transcodificar mediante perfil de procesamiento {#transcode-video}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] permite realizar transcodificaciones básicas de archivos de vídeo MP4 mediante perfiles de procesamiento. La funcionalidad le permite no solo cargar, sino también previsualizar y escalar un archivo de vídeo MP4.
+[!DNL Experience Manager] as a [!DNL Cloud Service] permite realizar transcodificaciones básicas de archivos de vídeo MP4 mediante perfiles de procesamiento. La funcionalidad no solo le permite cargar, sino también previsualizar y escalar un archivo de vídeo MP4.
 
 ![Creación de un perfil de procesamiento para la transcodificación de vídeo en [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
@@ -573,6 +587,7 @@ Para procesar recursos mediante un perfil de procesamiento, agregue un perfil a 
 Puede añadir anotaciones a recursos de vídeo. Al realizar anotaciones en vídeos, el reproductor realiza pausas para permitirle realizar anotaciones en un fotograma. Para obtener más información, consulte [administración de recursos de vídeo](manage-video-assets.md).
 
 >[!NOTE]
+>
 El formato de vídeo MXF aún no es compatible con anotaciones de recursos de vídeo.
 
 1. Desde el [!DNL Assets] consola, seleccione **[!UICONTROL Editar]** en la tarjeta de recursos para mostrar la página de detalles del recurso.
@@ -593,16 +608,17 @@ El formato de vídeo MXF aún no es compatible con anotaciones de recursos de v�
       * 400 MB para transcodificación de 4k.
       * 800 MB para transcodificación a 1080p.
       * 8 GB para transcodificación a 720p.
+
    * El tamaño máximo de archivo que puede transcodificar a una resolución de 4k es de 2,55 GB de archivo MP4 con resolución de 4k, velocidad de bits de 12 Mbps y 23 fps.
 
-   **Consulte también**
+  **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
@@ -611,6 +627,6 @@ El formato de vídeo MXF aún no es compatible con anotaciones de recursos de v�
 * [Importación masiva de metadatos](metadata-import-export.md)
 
 >[!MORELIKETHIS]
+>
 * [Documentación de vídeo de Dynamic Media](/help/assets/dynamic-media/video.md).
 * [Más información sobre el uso, los tipos y la configuración de los perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).
-

@@ -2,9 +2,9 @@
 title: Agregar una lista de IP permitidas
 description: Obtenga información sobre cómo agregar su propia lista de permitidos IP mediante Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '196'
 ht-degree: 40%
 
 ---

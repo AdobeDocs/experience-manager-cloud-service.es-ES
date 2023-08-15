@@ -1,11 +1,11 @@
 ---
 title: Introducción a SPA en AEM usando Angular
-description: SPA SPA En este artículo se presenta una aplicación de ejemplo de la aplicación, se explica cómo se crea y se le permite ponerse en marcha con su propia aplicación de forma rápida mediante el marco de trabajo de Angular de trabajo de.
+description: SPA SPA Este artículo presenta una aplicación de ejemplo para la creación de informes, explica cómo se crea y le permite ponerse en marcha con su propia aplicación de forma rápida mediante el marco de trabajo de Angular de trabajo de.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 9%
+source-wordcount: '990'
+ht-degree: 10%
 
 ---
 

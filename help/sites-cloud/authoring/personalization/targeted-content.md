@@ -2,10 +2,10 @@
 title: Creación de contenido orientado mediante el modo de Orientación
 description: El modo Segmentación y el componente Target proporcionan herramientas para crear contenido para experiencias
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '5410'
-ht-degree: 60%
+source-wordcount: '5409'
+ht-degree: 59%
 
 ---
 
@@ -621,7 +621,7 @@ Si selecciona Adobe Target como motor:
 | Opción | Descripción |
 |---|---|
 | Direccionamiento preciso | Al habilitar el direccionamiento preciso, se indica al componente que espere a que los datos de Client Context o Context Hub estén disponibles antes de enviar la solicitud a Adobe Target. Puede aumentar el tiempo de carga. Para la creación, la orientación precisa siempre está activada. Si selecciona la casilla Direccionamiento preciso, el mbox realiza primero un mboxDefine y después un mboxUpdate, lo que da como resultado una solicitud de Ajax una vez que los datos están disponibles. Si no selecciona la casilla Direccionamiento preciso, el mbox realiza un mboxCreate, con lo que se obtiene una solicitud sincrónica inmediatamente (en este caso, no todos los datos de contexto pueden estar disponibles aún). Nota: Activar o desactivar el direccionamiento preciso en un componente concreto no afecta a la configuración que haya establecido globalmente. Siempre puede seleccionar Orientación precisa en el componente para anular la configuración global. |
-| Incluir segmentos resueltos | Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco de trabajo. Esto solo funciona en situaciones con XML API en que sincroniza segmentos de AEM. Si dispone de segmentos en AEM que Adobe Target no controla (como segmentos de script), esta opción le permite resolver el segmento en AEM y enviar información a Adobe Target de que el segmento está activo. |
+| Incluir segmentos resueltos | Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco de trabajo. Esto solo funciona en situaciones con XML API en que sincroniza segmentos de AEM. AEM Si tiene segmentos en el segmento que no son gestionados por Adobe Target AEM (como segmentos de script), esta opción le permite resolver el segmento en el que está activo y enviar información a Adobe Target en el que se indica que el segmento está activo. |
 | Parámetros heredados de contexto | Enumera los parámetros de contexto heredados del marco de trabajo de Adobe Target, si los hay, asociados a la página seleccionada. |
 | Parámetros de contexto | Toque o haga clic en Agregar campo para configurar parámetros de contexto adicionales (lo mismo que está disponible en el marco de trabajo de Target). Los parámetros de contexto añadidos al componente solo se aplican al componente y no a otros componentes, como sería el caso si hubiera añadido los parámetros de contexto directamente al marco de trabajo. |
 | Parámetros estáticos | Toque o haga clic en Agregar campo para configurar parámetros estáticos adicionales (lo mismo que está disponible en el marco de trabajo de Target). Los parámetros estáticos añadidos al componente solo se aplican al componente y no a otros componentes, como sería el caso si hubiera añadido los parámetros estáticos directamente al marco de trabajo. Los parámetros estáticos no proceden del contexto (Client Context o ContextHub). |

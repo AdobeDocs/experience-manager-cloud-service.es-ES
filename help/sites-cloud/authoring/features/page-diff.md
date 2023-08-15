@@ -2,10 +2,10 @@
 title: Diferencias de página
 description: La función de diferencia de página permite realizar una comparación en paralelo de dos páginas con sus diferencias resaltadas.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 27%
+source-wordcount: '610'
+ht-degree: 25%
 
 ---
 

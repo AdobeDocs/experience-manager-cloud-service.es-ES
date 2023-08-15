@@ -2,10 +2,10 @@
 title: Edición del contenido de una página
 description: Una vez creada la página, puede editar el contenido para realizar las actualizaciones que requiera
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2990'
-ht-degree: 54%
+source-wordcount: '2983'
+ht-degree: 53%
 
 ---
 
@@ -84,7 +84,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. Según el contexto 
 
 * **Anotar**
 
-  Permite agregar [anotaciones](/help/sites-cloud/authoring/fundamentals/annotations.md) a la página cuando revise una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones en la página.
+  Le permite agregar [anotaciones](/help/sites-cloud/authoring/fundamentals/annotations.md) a la página cuando revise una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones en la página.
 
   ![Botón Anotación](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -240,25 +240,25 @@ Las acciones disponibles para el usuario se muestran según corresponda y es pos
 
 * **Grupo**
 
-  Esto le permite seleccionar varios componentes a la vez. En un dispositivo de escritorio puede conseguir lo mismo haciendo **Control + clic** o **Comando + clic**.
+  Esto permite seleccionar varios componentes a la vez. En un dispositivo de escritorio puede conseguir lo mismo haciendo **Control + clic** o **Comando + clic**.
 
   ![Botón Agrupar](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **Principal**
 
-  Permite seleccionar el componente principal del componente seleccionado.
+  Esto permite seleccionar el componente principal del componente seleccionado.
 
   ![Botón Principal](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **Diseño**
 
-  Esto le permite modificar el [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) del componente seleccionado. Esto solo se aplica al componente seleccionado y no activa el [Modo Diseño](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) para toda la página.
+  Esto permite modificar la variable [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) del componente seleccionado. Esto solo se aplica al componente seleccionado y no activa el [Modo Diseño](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) para toda la página.
 
   ![Botón Diseño](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **Conversión en una variación de fragmento de experiencia**
 
-  Esto permite crear un nuevo [fragmento de experiencia](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) a partir del componente seleccionado o añadirlo a un fragmento de experiencia. 
+  Esto permite crear una nueva [fragmento de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) del componente seleccionado o añadirlo a un fragmento de experiencia existente.
 
   ![Convertir para el botón Fragmentos de experiencias](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -430,7 +430,7 @@ Existen dos métodos para visualizar la vista previa de una página:
 Al editar contenido, puede obtener una vista previa de la página mediante la vista previa [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes). Este modo:
 
 * Oculta los distintos mecanismos de edición para ofrecerle una vista rápida del aspecto que tendrá la página cuando se publique.
-* Permite utilizar vínculos para navegar.
+* Permite utilizar vínculos para desplazarse.
 * Does **no** actualice el contenido de la página.
 
 Durante la creación, el modo de vista previa está disponible mediante el icono situado en la parte superior derecha del editor de páginas:
@@ -492,7 +492,7 @@ El menú Información de página muestra la opción **Desbloquear** y el icono B
 >
 >Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
 >
->Pages can not be unlocked by impersonating the user who locked the page.
+>Pages cannot be unlocked by impersonating the user who locked the page.
 -->
 
 <!--

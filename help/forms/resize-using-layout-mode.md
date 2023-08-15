@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 94%
+source-wordcount: '1156'
+ht-degree: 92%
 
 ---
 
@@ -109,7 +109,7 @@ Realice los siguientes pasos para habilitar la nueva cuadrícula adaptable:
 
 ### Integrar un fragmento antiguo en un formulario adaptable con un nuevo diseño adaptable {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
-El nuevo diseño adaptable del formulario adaptable le permite añadir un fragmento de formulario adaptable con el antiguo diseño adaptable al formulario. Con todo, el nuevo diseño descarta las propiedades de diseño ya definidas para los componentes utilizados en el fragmento. Puede cambiar al modo Diseño para definir las propiedades de diseño de los componentes utilizados en el fragmento.
+El nuevo diseño adaptable del formulario adaptable le permite agregar un fragmento de formulario adaptable con el diseño antiguo al formulario. Con todo, el nuevo diseño descarta las propiedades de diseño ya definidas para los componentes utilizados en el fragmento. Puede cambiar al modo Diseño para definir las propiedades de diseño de los componentes utilizados en el fragmento.
 
 ### Integrar un fragmento con un nuevo diseño adaptable en un antiguo formulario adaptable {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 

@@ -2,10 +2,10 @@
 title: Replicación
 description: AEM Obtenga información acerca de la distribución y la solución de problemas de replicación en as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 44%
+source-wordcount: '1341'
+ht-degree: 43%
 
 ---
 

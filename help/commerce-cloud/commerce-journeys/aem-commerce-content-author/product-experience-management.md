@@ -2,9 +2,9 @@
 title: Creación de experiencias de producto
 description: Aprenda a crear contenido de producto que luego se pueda utilizar en varios canales para crear una experiencia de compra envolvente.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 412e206a66de470e2798aafc58bcac93dc7e3cad
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1165'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ Empecemos con el marcador de posición del fragmento de experiencia. AEM Abra un
 
 ![marcador de posición pem](assets/pem-placeholder.png)
 
-Abra el cuadro de diálogo del componente e introduzca un nombre para este marcador de posición. El nombre del marcador de posición es obligatorio y le permite agregar tantos marcadores de posición como necesite.
+Abra el cuadro de diálogo del componente e introduzca un nombre para este marcador de posición. El nombre del marcador de posición es obligatorio y permite agregar tantos marcadores de posición como sea necesario.
 
 ![cuadro de diálogo pem XF](assets/pem-dialog-xf.png)
 

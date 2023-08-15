@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ El contenido de la página cero se muestra de forma predeterminada cuando un vis
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-La versión de Designer de [!DNL AEM Forms] permite cambiar el mensaje que se muestra en la página cero. Para cambiar el mensaje de la página cero, realice los siguientes pasos:
+[!DNL AEM Forms] La versión de Designer de permite cambiar el mensaje que se muestra en la página cero. Para cambiar el mensaje de la página cero, realice los siguientes pasos:
 
 1. Asegúrese de que ha instalado la versión de Designer de [!DNL AEM Forms]. Puede comprobar la versión desde la pantalla Acerca de Designer.
 

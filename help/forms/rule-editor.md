@@ -1,14 +1,14 @@
 ---
 title: ¿Cómo se utiliza el editor de reglas de los formularios adaptables?
-description: El editor de reglas de formularios adaptables permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin codificación ni scripts. Introducción para comprender una regla y las directrices a partir de las cuales elegir una construcción de regla. Obtenga más información sobre los tipos de operadores y los eventos disponibles en el editor de reglas.
+description: El editor de reglas de Forms adaptable permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin codificación ni scripts. Introducción para comprender una regla y las directrices a partir de las cuales elegir una construcción de regla. Obtenga más información sobre los tipos de operadores y los eventos disponibles en el editor de reglas.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '6401'
-ht-degree: 97%
+source-wordcount: '6389'
+ht-degree: 93%
 
 ---
 
@@ -150,7 +150,7 @@ Para obtener más información sobre la configuración de servicios en el modelo
 
 Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md).
 
-El tipo de regla **[!UICONTROL Set Property]** permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición.
+El **[!UICONTROL Establecer propiedad]** tipo de regla permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición.
 
 Permite definir reglas para agregar casillas de verificación de forma dinámica al formulario adaptable. Puede utilizar una función personalizada, un objeto de formulario o una propiedad de objeto para definir una regla.
 
@@ -186,7 +186,7 @@ En la siguiente figura se muestra un ejemplo de cómo agregar casillas de verifi
 
 ### [!UICONTROL Set Value Of] {#set-value-of}
 
-El tipo de regla **[!UICONTROL Set Value Of]** le permite definir el valor de un objeto de formulario en función de si la condición especificada se cumple o no. El valor puede establecerse en un valor de otro objeto, una cadena literal, un valor derivado de una expresión matemática o una función, un valor de una propiedad de otro objeto o el resultado de un servicio de modelo de datos de formulario. Del mismo modo, se puede comprobar la existencia de una condición en un componente, una cadena, una propiedad o valores derivados de una función o expresión matemática.
+El **[!UICONTROL Configurar el valor de]** el tipo de regla permite establecer el valor de un objeto de formulario en función de si la condición especificada se cumple o no. El valor puede establecerse en un valor de otro objeto, una cadena literal, un valor derivado de una expresión matemática o una función, un valor de una propiedad de otro objeto o el resultado de un servicio de modelo de datos de formulario. Del mismo modo, se puede comprobar la existencia de una condición en un componente, una cadena, una propiedad o valores derivados de una función o expresión matemática.
 
 El tipo de regla **Set Value Of** no está disponible para todos los objetos de formulario, como paneles y botones de la barra de herramientas. Una regla de valor definido estándar tiene la siguiente estructura:
 
@@ -262,7 +262,7 @@ Una regla Enable típica se estructura de la siguiente manera:
 
 ### [!UICONTROL Disable] {#disable}
 
-Similar al tipo de regla Enable, el tipo de regla **[!UICONTROL Disable]** permite habilitar o deshabilitar un objeto de formulario en función de si se cumple o no una condición. El tipo de regla Disable también activa la acción Enable (habilitar) en caso de que la condición no se cumpla o devuelva un valor `False`.
+Similar al tipo de regla Enable, la variable **[!UICONTROL Deshabilitar]** el tipo de regla permite habilitar o deshabilitar un objeto de formulario en función de si se cumple o no una condición. El tipo de regla Disable también activa la acción Enable (habilitar) en caso de que la condición no se cumpla o devuelva un valor `False`.
 
 Una regla Disable típica se estructura de la siguiente manera:
 
@@ -767,7 +767,7 @@ También puede arrastrar y soltar condiciones dentro de una regla para editarla.
 
 ## Condiciones de expresión de fecha {#dateexpression}
 
-El editor de reglas permite usar comparaciones de fechas para crear condiciones.
+El editor de reglas permite utilizar comparaciones de fechas para crear condiciones.
 
 A continuación verá una condición de ejemplo que muestra un objeto de texto estático si la hipoteca de la casa ya está cogida, lo que el usuario indica rellenando el campo de la fecha.
 

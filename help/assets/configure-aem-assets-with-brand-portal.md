@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: '2562'
 ht-degree: 13%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 13%
 | AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
-La configuración de Adobe Experience Manager Assets Brand Portal le permite publicar recursos de marca aprobados desde Adobe Experience Manager Assets como [!DNL Cloud Service] instancia de a Brand Portal y distribuirlas a los usuarios de Brand Portal.
+La configuración de Adobe Experience Manager Assets Brand Portal permite publicar recursos de marca aprobados desde Adobe Experience Manager Assets como [!DNL Cloud Service] instancia de a Brand Portal y distribuirlas a los usuarios de Brand Portal.
 
 ## Activar Brand Portal mediante Cloud Manager {#activate-brand-portal}
 
@@ -386,7 +386,7 @@ Siga estos pasos para configurar el servicio en la nube de Brand Portal:
 
 1. Inicie sesión en Experience Manager Assets.
 
-1. Desde el **Herramientas** panel, vaya a **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. Desde el **Herramientas** panel, vaya a **[!UICONTROL Cloud Service]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. En la página Configuraciones de Brand Portal, haga clic en **[!UICONTROL Crear]**.
 

@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo administrar y resolver conflictos 
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 96%
+source-wordcount: '920'
+ht-degree: 90%
 
 ---
 
@@ -69,7 +69,7 @@ AEM proporciona lo siguiente:
 * El [controlador de conflictos predeterminado](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
 * La posibilidad de implementar un [controlador personalizado](#customized-handlers)
-* El mecanismo de clasificación de servicios que le permite establecer la prioridad de cada controlador individual
+* Mecanismo de clasificación de servicios que permite establecer la prioridad de cada controlador individual
    * Se utiliza el servicio con la clasificación más alta.
 
 ### Controlador de conflictos predeterminado {#default-conflict-handler}

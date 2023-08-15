@@ -1,11 +1,11 @@
 ---
-title: La consola Componentes
-description: La consola Componentes permite examinar todos los componentes definidos para una instancia.
+title: Consola Componentes
+description: La consola Componentes permite examinar todos los componentes definidos para la instancia
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 81%
+source-wordcount: '273'
+ht-degree: 68%
 
 ---
 
@@ -33,9 +33,9 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
 
 * **Propiedades**
 
-   ![Propiedades de la consola Componentes](/help/sites-cloud/authoring/assets/components-console-properties.png)
+  ![Propiedades de la consola Componentes](/help/sites-cloud/authoring/assets/components-console-properties.png)
 
-   En la pestaña Propiedades puede:
+  En la pestaña Propiedades puede:
 
    * Consulte las propiedades generales del componente.
       * Ver cómo se ha definido el icono o la abreviatura para el componente. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
@@ -43,24 +43,24 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
    * Ver el **Tipo de medio** y **Supertipo de recurso** (si se define) para el componente.
       * Al hacer clic en el supertipo de recurso, accederá a ese componente.
 
-   >[!NOTE]
-   >
-   >Debido a que `/apps` no se puede editar en el tiempo de ejecución, la consola Componentes es de solo lectura.
+  >[!NOTE]
+  >
+  >Debido a que `/apps` no se puede editar en el tiempo de ejecución, la consola Componentes es de solo lectura.
 
 * **Políticas**
 
-   ![Políticas de la consola Componentes](/help/sites-cloud/authoring/assets/components-console-policies.png)
+  ![Políticas de la consola Componentes](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **Uso de Live**
 
-   ![Uso activo de los componentes](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
+  ![Uso activo de los componentes](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
 
-   >[!CAUTION]
-   >
-   >Dada la naturaleza de la información recopilada para esta vista, puede tardar un rato en recopilarse o mostrarse. 
+  >[!CAUTION]
+  >
+  >Dada la naturaleza de la información recopilada para esta vista, puede tardar un rato en recopilarse o mostrarse. 
 
 * **Documentación**
 
-   Si el desarrollador ha proporcionado documentación del componente, esta aparecerá en la pestaña **Documentación**. Si no hay documentación disponible, no se mostrará la pestaña **Documentación**. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+  Si el desarrollador ha proporcionado documentación del componente, esta aparecerá en la pestaña **Documentación**. Si no hay documentación disponible, no se mostrará la pestaña **Documentación**. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
-   ![Documentación de los componentes](/help/sites-cloud/authoring/assets/components-console-documentation.png)
+  ![Documentación de los componentes](/help/sites-cloud/authoring/assets/components-console-documentation.png)

@@ -2,10 +2,10 @@
 title: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 description: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2818'
-ht-degree: 99%
+source-wordcount: '2816'
+ht-degree: 97%
 
 ---
 
@@ -294,7 +294,7 @@ Realice los siguientes pasos para configurar la memoria caché de Dispatcher par
 
 1. Abra el proyecto AEM y navegue hasta `\src\conf.dispatcher.d\available_farms`
 1. Cree una copia del archivo `default.farm`. Por ejemplo, `forms.farm`.
-1. Abra el archivo recién creado `forms.farm` para editar y reemplazar el siguiente código:
+1. Abra el recién creado `forms.farm` para editar y reemplazar el siguiente código:
 
    ```json
    #/ignoreUrlParams {
@@ -331,7 +331,7 @@ El entorno de desarrollo local está listo.
 
 ## Habilitar los componentes principales de formularios adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms
 
-Al habilitar los componentes principales de formularios adaptables en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer componentes principales basados en formularios adaptables y formularios sin encabezado mediante las instancias de Cloud Service de AEM Forms en varios canales. Se necesita un entorno habilitado para los componentes principales de formularios adaptables para utilizar formularios adaptables sin encabezado.
+Al habilitar los componentes principales de Forms adaptables en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer componentes principales basados en Forms adaptable y Forms sin encabezado con las instancias de Cloud Service de AEM Forms en varios canales. Se necesita un entorno habilitado para los componentes principales de formularios adaptables para utilizar formularios adaptables sin encabezado.
 
 Para obtener instrucciones, consulte [Habilitar los componentes principales de formularios adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
 

@@ -2,9 +2,9 @@
 title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencia Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2044'
 ht-degree: 77%
 
 ---
@@ -232,7 +232,7 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
 
    ![Creación de una variación de fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Crear** le permite crear:
+1. **Crear** permite crear:
 
    * **Variación**
    * **Variación como Live Copy**.

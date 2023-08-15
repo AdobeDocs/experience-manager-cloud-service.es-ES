@@ -5,10 +5,10 @@ description: Puede utilizar el componente Incrustar de Forms adaptable para incr
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: df772533b5b8b55a80780d848e21b2432bea253c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3232'
-ht-degree: 41%
+source-wordcount: '3230'
+ht-degree: 39%
 
 ---
 
@@ -34,12 +34,12 @@ Proporcionar AEM Forms **[!UICONTROL Contenedor de formulario adaptable]** y **[
 
 ## Why embed an Adaptive Form in AEM Sites page or AEM Experience Fragment? 
 
-Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor allows you to create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also allows you to use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
+Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also lets you use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
 
 * **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/features/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
 * **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By leveraging user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
 * **Translation:** AEM Sites [seamless integration with translation services](/help/sites-cloud/administering/translation/overview.md), allowing you to translate forms into multiple languages easily. This feature simplifies the localization process, ensuring that your forms are accessible to a global audience. You can manage translations efficiently within AEM translation projects, reducing time and effort required for multilingual form support. See considerations section for more information on translation.  
-* **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now allows you to reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
+* **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now lets you reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
 * **Themes:** AEM Sites pages provide a framework for designing and maintaining consistent visual styles across multiple web pages. These define colors, fonts, style sheets, and other visual elements that contribute to the overall look and feel of the website. [You can use the themes designed for an AEM Sites page for an Adaptive Form, saving time and effort](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes). 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/fundamentals/editing-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
@@ -68,7 +68,7 @@ Puede aprovechar al máximo esta función mediante las siguientes opciones:
 
 * Cuando se crea o se agrega un formulario mediante **[!UICONTROL Forms adaptable: incrustado (v2)]** , los formularios se traducen y localizan mediante el flujo de traducción de AEM Forms. En este caso, se mantiene un único formulario y se hace referencia a él en todas las copias de idioma de las páginas de Sites. **[!UICONTROL Forms adaptable: incrustado (v2)]** El componente no proporciona acceso a varias funciones de las páginas de AEM Sites, como control de versiones, direccionamiento, traducción y administrador de varios sitios.
 
-* Cuando se usa la variable **[!UICONTROL Contenedor de formulario adaptable]** para crear un formulario, este se traduce y localiza a través del flujo de traducción de AEM Sites. Para cada idioma, se genera una copia independiente (copia de idioma) de la página de Sites y de los formularios correspondientes y, cuando un autor de contenido modifica una regla en un formulario de la página principal, se deben realizar los mismos cambios en todas las copias de idioma del formulario. **[!UICONTROL El Contenedor de formularios adaptables también permite utilizar varias funcionalidades de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios.]**
+* Cuando se usa la variable **[!UICONTROL Contenedor de formulario adaptable]** para crear un formulario, este se traduce y localiza a través del flujo de traducción de AEM Sites. Para cada idioma, se genera una copia independiente (copia de idioma) de la página de Sites y de los formularios correspondientes y, cuando un autor de contenido modifica una regla en un formulario de la página principal, se deben realizar los mismos cambios en todas las copias de idioma del formulario. **[!UICONTROL Contenedor de formulario adaptable]** también le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios.
 
 
 ## Requisitos para incrustar un formulario adaptable en una página de AEM Sites AEM o en un fragmento de experiencia de la aplicación de datos de {#before-you-start-embedding-an-adaptive-form}
@@ -94,7 +94,7 @@ Añada el **Customheaderlibs** y **Customfoterlibs** bibliotecas de cliente a la
 1. Abra la carpeta Repositorio de Git de AEM Cloud Service en un editor de texto del plan. Por ejemplo, Microsoft® Visual Code.
 1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` y añada el siguiente código al archivo:
 
-     ```
+       ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
@@ -104,7 +104,7 @@ Añada el **Customheaderlibs** y **Customfoterlibs** bibliotecas de cliente a la
    
 1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` y añada el siguiente código al archivo:
 
-     ```
+       ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
@@ -114,7 +114,7 @@ Añada el **Customheaderlibs** y **Customfoterlibs** bibliotecas de cliente a la
    
 1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` y añada el siguiente código al archivo:
 
-     ```
+       ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
@@ -124,7 +124,7 @@ Añada el **Customheaderlibs** y **Customfoterlibs** bibliotecas de cliente a la
    
 1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` y añada el siguiente código al archivo:
 
-     ```
+       ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
@@ -331,7 +331,7 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
 1. Save the settings. The Adaptive Form  is now embedded in the page.
 
 
-AEM site also allows you to create an Adaptive Form on the fly using the Adaptive Forms - Embed component. Follow the steps to create an Adaptive Form using the **Adaptive Forms - Embed component** on AEM sites page:
+AEM site also lets you create an Adaptive Form on the fly using the Adaptive Forms - Embed component. Follow the steps to create an Adaptive Form using the **Adaptive Forms - Embed component** on AEM sites page:
 1. Open the AEM sites page, in edit mode, in which you want to embed an Adaptive Form.
 1. From the Component browser panel, drag-drop the Adaptive Forms - Embed component on the page.
 1. Click the **Plus** icon and you are redirected to the form creation wizard.

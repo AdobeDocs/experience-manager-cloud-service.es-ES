@@ -3,10 +3,10 @@ title: Canalizaciones de CI/CD
 description: Obtenga información sobre las canalizaciones de CI/CD de Cloud Manager y cómo se pueden utilizar para implementar su código de forma eficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 78%
+source-wordcount: '1337'
+ht-degree: 77%
 
 ---
 
@@ -164,7 +164,7 @@ Se aplican las siguientes restricciones.
 * Usted debe [opte por el modo flexible de las herramientas de dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para utilizar canalizaciones de configuración de nivel web.
 * Un usuario debe haber iniciado sesión con **Administrador de implementación** función para configurar o ejecutar canalizaciones.
 * En cualquier momento, solo puede haber una canalización de configuración de nivel web por entorno.
-* El usuario no puede configurar una canalización de configuración de nivel web cuando se ejecuta su canalización de pila completa correspondiente.
+* El usuario no puede configurar una canalización de configuración de nivel web cuando se está ejecutando su canalización de pila completa correspondiente.
 * La estructura del nivel web debe adherirse a la estructura de modo flexible, tal como se define en el documento [Dispatcher en la nube](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 Además, tenga en cuenta cómo se usa la función [canalización de pila completa](#full-stack-pipeline) se comporta al introducir una canalización de nivel web.

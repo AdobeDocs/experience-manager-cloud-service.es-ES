@@ -2,10 +2,10 @@
 title: Configurar la canalización
 description: Cree una canalización front-end para administrar la personalización del tema del sitio.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 89%
+source-wordcount: '966'
+ht-degree: 87%
 
 ---
 
@@ -51,7 +51,7 @@ De este modo, el desarrollo de front-end puede funcionar de forma independiente 
 
 >[!NOTE]
 >
->Las canalizaciones front-end solo pueden implementar recursos estáticos, CSS y JavaScript para aplicar algún estilo a su sitio AEM. El contenido del sitio, como páginas o activos, no se puede implementar en una canalización.
+>Las canalizaciones front-end solo pueden implementar recursos estáticos, CSS y JavaScript para aplicar algún estilo a su sitio AEM. El contenido del sitio, como páginas o recursos, no se puede implementar en una canalización.
 
 ## Acceso a Cloud Manager {#login}
 
@@ -102,7 +102,7 @@ La nueva canalización se crea y se puede ver en la sección **Canalizaciones** 
 
 >[!TIP]
 >
->Si ya está familiarizado con las canalizaciones en AEMaaCS y desea obtener más información sobre las diferencias entre los distintos tipos de canalizaciones, incluidos más detalles sobre la canalización front-end, consulte Configuración de la canalización CI/CD: Cloud Services vinculados en la [Recursos adicionales](#additional-resources) más abajo.
+>Si ya está familiarizado con las canalizaciones en AEMaaCS y desea obtener más información sobre las diferencias entre los distintos tipos de canalizaciones, incluidos más detalles sobre la canalización front-end, consulte Configuración de la canalización CI/CD: Cloud Service vinculados en la [Recursos adicionales](#additional-resources) más abajo.
 
 ## Siguientes pasos {#what-is-next}
 

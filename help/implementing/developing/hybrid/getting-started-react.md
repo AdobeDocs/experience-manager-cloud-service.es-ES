@@ -2,9 +2,9 @@
 title: Introducción a SPA en AEM usando React
 description: SPA SPA Este artículo presenta una aplicación de ejemplo para la creación de informes, explica cómo se crea y le permite ponerse en marcha con su propia aplicación de forma rápida mediante el marco de trabajo React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1141'
 ht-degree: 8%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 Las aplicaciones de una sola página (SPA) pueden ofrecer experiencias atractivas para los usuarios de sitios web. SPA AEM SPA Los desarrolladores quieren poder crear sitios utilizando marcos de trabajo de y los autores quieren editar contenido sin problemas en para un sitio creado con marcos de trabajo de la.
 
-SPA SPA AEM La función de creación de ofrece una solución completa para la asistencia de la creación de contenido en el ámbito de la. SPA SPA En este artículo se presenta una aplicación de simplificada sobre el marco de trabajo de React, que explica cómo se crea, lo que le permite ponerse en marcha con sus propios recursos de forma rápida y sin problemas para la ejecución de sus propios programas de trabajo de la aplicación de la aplicación.
+SPA SPA AEM La función de creación de ofrece una solución completa para la asistencia de la creación de contenido en el ámbito de la. SPA SPA En este artículo se presenta una aplicación de simplificada sobre el marco de trabajo de React, que explica cómo se crea, lo que le permite ponerse en marcha con su propia aplicación de forma rápida y sencilla, con la que puede trabajar con sus propios recursos de forma más rápida y eficaz.
 
 >[!NOTE]
 >

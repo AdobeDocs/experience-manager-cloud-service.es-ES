@@ -2,10 +2,10 @@
 title: Edición de las propiedades de página
 description: AEM Obtenga información sobre cómo definir las propiedades necesarias para administrar una página en la administración de páginas en la.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 80%
+source-wordcount: '2279'
+ht-degree: 78%
 
 ---
 
@@ -76,7 +76,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **URL mnemónica**
 
-   * Permite introducir una URL mnemónica para esta página, lo que le permite tener una URL más corta o expresiva.
+   * Permite introducir una URL de vanidad para esta página, lo que permite tener una URL más corta o expresiva.
    * Por ejemplo, si la URL de vanidad se establece como `welcome` en la página identificada por la ruta `/v1.0/startpage` del sitio web `http://example.com`, entonces `http://example.com/welcome` es la URL de vanidad de `http://example.com/content/v1.0/startpage`.
 
   >[!CAUTION]
@@ -104,7 +104,7 @@ Las propiedades se distribuyen entre varias pestañas.
    * **Alias**: especifica un alias que se usará con esta página
       * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, se puede acceder a esta página también mediante `/content/wknd/us/en/magazine/private`
       * La creación de un alias establece la propiedad `sling:alias` en el nodo de página, lo que solo afecta al recurso, no a la ruta del repositorio.
-      * Las páginas a las que se accede mediante alias en el editor no se pueden publicar. Las [Opciones de publicación](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) del editor solo están disponibles para las páginas a las que se accede a través de sus rutas reales.
+      * No se pueden publicar páginas a las que se accede mediante alias en el editor. Las [Opciones de publicación](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) del editor solo están disponibles para las páginas a las que se accede a través de sus rutas reales.
       * Para obtener más información, consulte [Nombres de páginas localizadas en Prácticas recomendadas para la administración de direcciones URL y SEO](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuración**

@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '6665'
+source-wordcount: '6663'
 ht-degree: 7%
 
 ---
@@ -511,7 +511,7 @@ Consulte también [Configurar una propiedad de toque](https://experienceleague.a
 **Para crear una propiedad en Etiquetas de Experience Platform:**
 
 1. En Etiquetas de Experience Platform, seleccione **[!UICONTROL Nueva propiedad]**.
-1. En el cuadro de diálogo **[!UICONTROL Crear propiedad]**, dentro del campo **[!UICONTROL Nombre]**, escriba un nombre descriptivo, como el título del sitio web. Por ejemplo, `DynamicMediaViewersProp.`. 
+1. En el cuadro de diálogo **[!UICONTROL Crear propiedad]**, dentro del campo **[!UICONTROL Nombre]**, escriba un nombre descriptivo, como el título del sitio web. Por ejemplo, `DynamicMediaViewersProp.`
 1. En el **[!UICONTROL Domains]** , introduzca el dominio del sitio web.
 1. En la lista desplegable **[!UICONTROL Opciones avanzadas]**, habilite **[!UICONTROL Configurar para el desarrollo de extensiones (no se puede modificar posteriormente)]** siempre que la extensión que desee utilizar (en este caso, los *visualizadores de Dynamic Media*) aún no se haya publicado.
 
@@ -785,7 +785,7 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
 ## Configuración de Experience Platform Tags Cloud para la integración {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. En Experience Manager Author, cerca de la esquina superior izquierda, seleccione el icono Herramientas (martillo) y, a continuación, vaya a **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuraciones de etiquetas de Experience Platform]**.
+1. En Experience Manager Author, cerca de la esquina superior izquierda, seleccione el icono Herramientas (martillo) y, a continuación, vaya a **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuraciones de etiquetas de Experience Platform]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 

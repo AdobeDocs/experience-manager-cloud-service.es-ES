@@ -2,9 +2,9 @@
 title: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
 description: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3706'
+source-wordcount: '3705'
 ht-degree: 95%
 
 ---
@@ -192,7 +192,7 @@ Es posible que desee mostrar nombres de páginas localizados a los usuarios de c
 
 AEM El desafío que supone la localización del nombre de la página es que muchas de las herramientas de localización disponibles en la plataforma dependen de que los nombres de las páginas coincidan en las distintas configuraciones regionales para mantener el contenido sincronizado.
 
-La propiedad `sling:alias` permite tener nuestro pastel y comerlo también. `sling:alias` se puede agregar como propiedad a cualquier recurso para permitir un nombre de alias para el recurso. En el ejemplo anterior, tendría:
+El `sling:alias` La propiedad permite tener nuestro pastel y comerlo también. `sling:alias` se puede agregar como propiedad a cualquier recurso para permitir un nombre de alias para el recurso. En el ejemplo anterior, tendría:
 
 * Una página del JCR en:
   `…/es/home`

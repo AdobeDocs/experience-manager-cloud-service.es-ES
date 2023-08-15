@@ -5,10 +5,10 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3174'
-ht-degree: 98%
+source-wordcount: '3173'
+ht-degree: 97%
 
 ---
 
@@ -322,7 +322,7 @@ Después de [editar las propiedades del formulario adaptable para Adobe Sign](wo
 
      >[!NOTE]
      >
-     > La firma digital también se aplica a [!DNL Adobe Acrobat Sign for Government], pero no puede aplicarla usando firmas de Cloud.
+     > La firma digital también se aplica a [!DNL Adobe Acrobat Sign for Government] pero no se puede aplicar mediante firmas en la nube.
 
    Después de agregar el campo de firma de nube al formulario adaptable, realice los siguientes pasos para completar el proceso de configuración:
 

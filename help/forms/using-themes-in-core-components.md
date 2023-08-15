@@ -4,9 +4,9 @@ description: Puede utilizar temáticas para aplicar estilo y proporcionar una id
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: crear una temática nueva, personalizar una temática, cargar una temática nueva, utilizar una temática en formularios, personalizar una temática mediante la canalización de front-end
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2711'
+source-wordcount: '2709'
 ht-degree: 17%
 
 ---
@@ -56,7 +56,7 @@ Puede [personalizar cualquiera de estas temáticas para crear una nueva](#custom
 
 ## Personalizar una temática {#customize-a-theme-core-components}
 
-La personalización de una temática hace referencia al proceso de modificación y personalización de la apariencia de una temática. Al personalizar una temática, cambia sus elementos de diseño, diseño, colores, tipografía y, a veces, el código subyacente. Le permite crear un aspecto único y personalizado para su sitio web o aplicación, al tiempo que mantiene la estructura y la funcionalidad básicas proporcionadas por la temática.
+La personalización de una temática hace referencia al proceso de modificación y personalización de la apariencia de una temática. Al personalizar una temática, cambia sus elementos de diseño, diseño, colores, tipografía y, a veces, el código subyacente. Permite crear un aspecto único y personalizado para el sitio web o la aplicación, al tiempo que mantiene la estructura y la funcionalidad básicas proporcionadas por la temática.
 
 ### Requisitos previos {#prerequisites-to-customize}
 

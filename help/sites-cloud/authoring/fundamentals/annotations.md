@@ -2,16 +2,16 @@
 title: Adición de anotaciones de página
 description: Utilice el modo de anotación para dejar anotaciones y bocetos en páginas de la misma manera que utiliza notas adhesivas para ayudarle en el proceso de revisión de contenido.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 94%
+source-wordcount: '694'
+ht-degree: 85%
 
 ---
 
 # Adición de anotaciones de página {#adding-page-annotations}
 
-La creación de contenido para la experiencia digital suele requerir análisis y comentarios antes de la publicación. Para facilitar este proceso de comentarios, AEM permite añadir anotaciones al contenido.
+La creación de contenido para la experiencia digital suele requerir análisis y comentarios antes de la publicación. AEM Para facilitar este proceso de comentarios, le permite añadir anotaciones al contenido de, en su lugar de trabajo.
 
 Una anotación coloca un boceto simple o una nota (como las notas adhesivas reales) en la página. La anotación le permite dejar comentarios o preguntas para otros autores y revisores.
 
@@ -51,7 +51,7 @@ Las anotaciones solo están visibles en el modo de anotación.
 
 ## Adición y edición de anotaciones {#annotating-a-component}
 
-Además de ver las anotaciones, el modo de anotación permite crear, editar, mover o eliminar anotaciones en el contenido
+Además de ver las anotaciones, el modo Anotar permite crear, editar, mover o eliminar anotaciones en el contenido
 
 1. [Iniciar modo de anotación](#annotate-mode) en la página.
 

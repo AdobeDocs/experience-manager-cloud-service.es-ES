@@ -3,9 +3,9 @@ title: Validación y depuración mediante las herramientas de Dispatcher
 description: Obtenga información sobre la validación local, la depuración, la estructura de archivos en modo flexible y cómo migrar del modo heredado al modo flexible.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2861'
+source-wordcount: '2860'
 ht-degree: 1%
 
 ---
@@ -395,7 +395,7 @@ Esta fase comprueba la sintaxis de Apache iniciando Apache HTTPD en un contenedo
 
 >[!NOTE]
 >
-Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito es necesario para ejecutar y depurar Dispatcher en un equipo local.
+Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito es un requisito previo para ejecutar y depurar Dispatcher en un equipo local.
 Para Windows y macOS, Adobe recomienda utilizar Docker Desktop.
 
 Esta fase también se puede ejecutar de forma independiente mediante `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
@@ -431,7 +431,7 @@ Los archivos inmutables locales se pueden actualizar ejecutando el `bin/update_m
 
 Puede ejecutar Apache Dispatcher localmente mediante `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080`.
 
-AEM Como se ha indicado anteriormente, Docker debe instalarse localmente y no es necesario para que se ejecute el programa de instalación de la plataforma de datos de la plataforma de datos de la plataforma de datos de la plataforma de datos de. Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito es necesario para ejecutar y depurar Dispatcher en un equipo local.
+AEM Como se ha indicado anteriormente, Docker debe instalarse localmente y no es necesario para que se ejecute el programa de instalación de la plataforma de datos de la plataforma de datos de la plataforma de datos de la plataforma de datos de. Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito es un requisito previo para ejecutar y depurar Dispatcher en un equipo local.
 
 La siguiente estrategia se puede utilizar para aumentar la salida del registro para el módulo de Dispatcher y ver los resultados de la `RewriteRule` evaluación en entornos locales y en la nube.
 

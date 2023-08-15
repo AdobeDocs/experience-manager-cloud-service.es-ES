@@ -2,7 +2,7 @@
 title: Exportación de fragmentos de contenido a Adobe Target
 description: Obtenga información sobre cómo exportar los fragmentos de contenido a Adobe Target para probar y personalizar experiencias.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2231'
 ht-degree: 95%
@@ -304,7 +304,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+   >If the framework you attached to the page was not activated yet, a wizard opens which lets you publish it as well.
 -->
 
 ## Exportación de un fragmento de contenido a Adobe Target {#exporting-a-content-fragment-to-adobe-target}

@@ -4,9 +4,9 @@ description: En este artículo se describe cómo crear, modificar y utilizar fac
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2444'
 ht-degree: 22%
 
 ---
@@ -134,7 +134,7 @@ El `Multi Value Property` el predicado permite buscar recursos para varios valor
 
 ## Añadir un predicado de etiquetas {#adding-a-tags-predicate}
 
-El `Tags` El predicado permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, [!DNL Assets] busca recursos para una o varias coincidencias de etiquetas en función de las etiquetas especificadas. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción Coincidir con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
+El `Tags` el predicado permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, [!DNL Assets] busca recursos para una o varias coincidencias de etiquetas en función de las etiquetas especificadas. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción Coincidir con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
 
 1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar Forms]**.
 1. En la página Buscar Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y luego pulse **Editar** ![aemassets_edit](assets/aemassets_edit.png).
@@ -188,12 +188,12 @@ De forma similar a la forma de agregar un predicado Propiedad o Opciones, puede 
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Ruta </p> </td>
+   <td><p>Ruta</p> </td>
    <td><p>Utilícelo para filtrar los resultados según la ubicación. Puede especificar diferentes rutas como opciones.</p> </td>
    <td>
     <ul>
      <li>Etiqueta</li>
-     <li>Ruta </li>
+     <li>Ruta</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -257,7 +257,7 @@ De forma similar a la forma de agregar un predicado Propiedad o Opciones, puede 
     <ul>
      <li>Etiqueta</li>
      <li>Nombre de la propiedad</li>
-     <li>Ruta </li>
+     <li>Ruta</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -345,4 +345,3 @@ Si no se le ha asignado una función de administrador, aquí encontrará una lis
 >[!MORELIKETHIS]
 >
 >* [Buscar recursos digitales](search-assets.md).
-

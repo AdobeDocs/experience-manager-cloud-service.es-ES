@@ -2,7 +2,7 @@
 title: Paquete de estructura del repositorio de proyectos de AEM
 description: Los proyectos de Maven en Adobe Experience Manager as a Cloud Service requieren una definición de subpaquete de estructura de repositorio cuyo único propósito sea definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 2%
@@ -86,7 +86,7 @@ Asegúrese de agregar este nuevo subproyecto de Maven a los proyectos principale
                         Examples of complex roots
 
 
-                        Overlays of /libs typically require defining the overlayed structure, at each level here.
+                        Overlays of /libs typically require defining the overlay structure, at each level here.
 
                         For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
 

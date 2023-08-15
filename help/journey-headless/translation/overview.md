@@ -2,10 +2,10 @@
 title: Recorrido de traducción de AEM sin encabezado
 description: Empiece aquí un recorrido guiado a través de la traducción de contenido sin encabezado utilizando las potentes herramientas de traducción de AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ Por supuesto, la información de este recorrido puede ser útil para todas las p
 
 Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionan conocimientos básicos sobre la traducción de contenido sin encabezado en AEM y le permiten acceder a documentación técnica detallada.
 
-Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. Por consiguiente, si es nuevo en la traducción sin encabezado en AEM, le recomendamos que empiece por el principio y vaya avanzando en orden consecutivo.
+Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. AEM Por lo tanto, si es nuevo en la traducción sin encabezado en la práctica, el Adobe recomienda comenzar por el principio y avanzar secuencialmente.
 
 | # | Artículo | Descripción |
 |---|---|---|

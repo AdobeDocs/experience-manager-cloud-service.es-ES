@@ -1,22 +1,18 @@
 ---
-title: Creación de ayuda en contexto para campos de formulario
-seo-title: Authoring in-context help for form fields
-description: AEM Forms le permite agregar ayuda en contexto a los campos y paneles de los formularios adaptables, como texto o medios enriquecidos, incluidos vídeos.
-seo-description: AEM Forms allows you to add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.
-uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
+title: Crear ayuda en contexto para campos de formulario
+description: AEM Forms permite agregar ayuda en contexto a los campos y paneles de los formularios adaptables, como texto o medios enriquecidos, incluidos vídeos.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '365'
+ht-degree: 94%
 
 ---
 
 
-# Creación de ayuda en contexto para campos de formulario{#authoring-in-context-help-for-form-fields}
+# Crear ayuda en contexto para campos de formulario{#authoring-in-context-help-for-form-fields}
 
 ## Introducción {#introduction}
 

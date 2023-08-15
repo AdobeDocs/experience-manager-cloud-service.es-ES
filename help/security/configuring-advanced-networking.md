@@ -2,10 +2,10 @@
 title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3571'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Un programa puede proporcionar una única variación avanzada de red. Al decidir
 
 ## Salida de puerto flexible {#flexible-port-egress}
 
-Esta función de red avanzada le permite configurar AEM as a Cloud Service para recibir tráfico a través de puertos que no sean HTTP (puerto 80) y HTTPS (puerto 443), que están abiertos de forma predeterminada.
+AEM Esta función de red avanzada le permite configurar el tráfico de salida as a Cloud Service a través de puertos que no sean HTTP (puerto 80) y HTTPS (puerto 443), que están abiertos de forma predeterminada.
 
 ### Consideraciones {#flexible-port-egress-considerations}
 
@@ -198,7 +198,7 @@ La configuración de la dirección IP de salida dedicada es idéntica a la [sali
 
 La principal diferencia es que el tráfico siempre saldrá de una IP única y dedicada. Para encontrar esa IP, utilice una resolución DNS para identificar la dirección IP asociada a `p{PROGRAM_ID}.external.adobeaemcloud.com`. No se espera que la dirección IP cambie, pero si necesita cambiarla en el futuro, se proporciona una notificación avanzada.
 
-Además de las reglas de enrutamiento admitidas por la salida de puerto flexible en el punto final `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, la dirección IP de salida dedicada admite un parámetro `nonProxyHosts`. Esto le permite declarar un conjunto de hosts que deben enrutarse a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada, lo que puede resultar útil, ya que la salida de tráfico a través de direcciones IP compartidas puede optimizarse aún más. Las direcciones URL `nonProxyHost` pueden seguir los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al inicio del dominio.
+Además de las reglas de enrutamiento admitidas por la salida de puerto flexible en el punto final `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, la dirección IP de salida dedicada admite un parámetro `nonProxyHosts`. Esto permite declarar un conjunto de hosts que deben enrutarse a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada, lo que puede resultar útil, ya que la salida de tráfico a través de direcciones IP compartidas puede optimizarse aún más. Las direcciones URL `nonProxyHost` pueden seguir los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al inicio del dominio.
 
 Al decidir entre una salida de puerto flexible y una dirección IP de salida dedicada, los clientes deben elegir una salida de puerto flexible si no se requiere una dirección IP específica, ya que Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible.
 
@@ -556,7 +556,7 @@ Cuando se añade una región adicional a un entorno que ya tiene configuradas re
 
 Si ya se ha habilitado una configuración de redes avanzadas en la región principal, siga estos pasos:
 
-1. Si ha bloqueado la infraestructura de modo que la dirección IP de AEM dedicada esté incluida en la lista de permitidos, se recomienda deshabilitar temporalmente cualquier regla de denegación de dicha infraestructura. Si no es así, existe un período breve en el que su propia infraestructura rechaza las solicitudes de las direcciones IP de la nueva región. Tenga en cuenta que esto no es necesario si ha bloqueado la infraestructura mediante el nombre de dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`AEM , por ejemplo), porque todas las regiones de la red de salida de todas las regiones de la red avanzada desde el mismo FQDN
+1. Si ha bloqueado la infraestructura de modo que la dirección IP de AEM dedicada esté incluida en la lista de permitidos, se recomienda deshabilitar temporalmente cualquier regla de denegación de dicha infraestructura. Si no es así, existe un período breve en el que su propia infraestructura rechaza las solicitudes de las direcciones IP de la nueva región. Tenga en cuenta que esto no es necesario si ha bloqueado la infraestructura mediante un nombre de dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`AEM , por ejemplo), porque todas las regiones de la red de salida de todas las regiones de la red avanzada desde el mismo FQDN
 1. Cree la infraestructura de redes con alcance de programa para la región secundaria a través de una llamada del POST a la API Crear infraestructura de red de Cloud Manager, tal como se describe en la documentación de redes avanzadas. La única diferencia en la configuración JSON de la carga útil en relación con la región principal es la propiedad region
 1. Si la infraestructura necesita estar bloqueada por IP para permitir el tráfico de AEM, añada las IP que coincidan `p1234.external.adobeaemcloud.com`. Debe haber una por región.
 

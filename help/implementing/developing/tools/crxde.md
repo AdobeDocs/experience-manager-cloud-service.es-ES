@@ -2,9 +2,9 @@
 title: Uso del CRXDE Lite
 description: El CRXDE Lite AEM forma parte del inicio rápido de la y está disponible para acceder y modificar el repositorio en los entornos de desarrollo local dentro del explorador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1685'
 ht-degree: 2%
 
 ---
@@ -144,7 +144,7 @@ El **Botón Cambiar nombre** cambia el nombre del nodo seleccionado.
 
 ### Mixins {#mixins-button}
 
-El **Botón Mixins** permite agregar tipos de mezcla al tipo de nodo. Los tipos de mixin se utilizan principalmente para añadir funciones avanzadas.
+El **Botón Mixins** permite añadir tipos de mezcla al tipo de nodo. Los tipos de mixin se utilizan principalmente para añadir funciones avanzadas.
 
 ### Herramientas {#tools-button}
 

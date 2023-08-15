@@ -2,10 +2,10 @@
 title: Creación de plantillas de página
 description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no es una tarea exclusiva para desarrolladores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4577'
-ht-degree: 56%
+source-wordcount: '4570'
+ht-degree: 55%
 
 ---
 
@@ -32,7 +32,7 @@ Para obtener información detallada sobre cómo funcionan las plantillas editabl
 
 >[!NOTE]
 >
->El **Editor de plantillas** no admite la segmentación directamente en el nivel de plantilla. Las páginas creadas a partir de una plantilla editable pueden estar segmentadas, pero esto no es posible para las plantillas en sí.
+>El **Editor de plantillas** no admite la segmentación directamente en el nivel de plantilla. Las páginas creadas a partir de una plantilla editable pueden estar segmentadas, pero no es posible segmentar las plantillas en sí.
 
 ## Antes de comenzar {#before-you-start}
 
@@ -230,7 +230,7 @@ Puesto que la plantilla se toma como referencia cuando se representa la página,
 
 Al crear o editar una plantilla, hay varios aspectos que puede definir. Editar plantillas es similar a crear páginas.
 
-El selector **Modo** de la barra de herramientas le permite seleccionar y editar la proporción adecuada de la plantilla:
+El **Modo** selector de en la barra de herramientas permite seleccionar y editar la proporción adecuada de la plantilla:
 
 * [Estructura](#editing-a-template-structure-template-author)
 * [Contenido inicial](#editing-a-template-initial-content-author)
@@ -238,7 +238,7 @@ El selector **Modo** de la barra de herramientas le permite seleccionar y editar
 
 ![Selector de modo Editor de plantillas](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-Mientras que la opción **Política de la página** del menú **Información de página** le permite [seleccionar las políticas de la página requeridas](#page-policies):
+Mientras que el **Política de página** opción en la **Información de página** El menú permite [seleccionar las directivas de página requeridas](#page-policies):
 
 ![Información de la página Editor de plantillas](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -345,7 +345,7 @@ Cree una política de contenido, o seleccione una existente, para un componente.
 
 ![Botón de política de contenido](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
 
-Esto le permite definir los detalles del diseño.
+Esto permite definir los detalles del diseño.
 
 ![Política de contenido](/help/sites-cloud/authoring/assets/template-content-policy.png)
 
@@ -407,7 +407,7 @@ Para quitar una configuración, toque o haga clic en el botón **Eliminar**.
 
 ###### Características {#features}
 
-El **Funciones** permite activar o desactivar funciones adicionales del componente.
+El **Funciones** La pestaña permite activar o desactivar funciones adicionales del componente.
 
 Por ejemplo, para un componente de imagen puede definir las proporciones de recorte, las orientaciones de imagen permitidas y si se permiten las cargas.
 

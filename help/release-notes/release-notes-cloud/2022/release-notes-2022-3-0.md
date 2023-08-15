@@ -2,9 +2,9 @@
 title: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1148'
 ht-degree: 87%
 
 ---
@@ -60,7 +60,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de marzo de 20
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**: la [API de generación de documentos](/help/forms/aem-forms-cloud-service-communications.md) ayuda a combinar, reorganizar y validar documentos PDF. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
+* **[!DNL Communications - Document Generation APIs]**: la [API de generación de documentos](/help/forms/aem-forms-cloud-service-communications.md) ayuda a combinar, reorganizar y validar documentos PDF. El servicio permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
 
    * Montar los documentos PDF.
    * Desmontar los documentos PDF.

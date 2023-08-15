@@ -3,10 +3,10 @@ title: AEM Selector de destino para la as a Cloud Service
 description: AEM Utilice el Selector de destino de la para mostrar y seleccionar recursos que puede utilizar como copia del recurso original.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 35%
+source-wordcount: '1902'
+ht-degree: 36%
 
 ---
 
@@ -192,12 +192,12 @@ Puede utilizar las propiedades del Selector de destino para personalizar la form
 | *hasMore* | booleano | No | | Cuando la aplicación tiene más contenido para mostrar, puede utilizar esta propiedad para agregar un cargador que cargue el contenido para que sea visible en la aplicación. Es un indicador que indica que la carga de contenido está en curso. |
 | *orgName* | booleano | No | | AEM Es el nombre de la organización (probablemente orgID) asociada a la |
 | *initRepoID* | cadena | No | | Es la ruta del repositorio de recursos que desea utilizar en una vista inicial predeterminada |
-| *onCreateFolder* | cadena | No | | El `onCreateFolder` permite añadir un icono que añade una nueva carpeta en la aplicación. |
+| *onCreateFolder* | cadena | No | | El `onCreateFolder` La propiedad permite añadir un icono que añade una nueva carpeta en la aplicación. |
 | *onConfirm* | cadena | No | | Se trata de una llamada de retorno cuando pulsa el botón de confirmación. |
 | *confirmDisabled* | cadena | No | | Esta propiedad controla el conmutador del botón de confirmación. |
 | *viewType* | cadena | No | | El `viewType` se utiliza para especificar las vistas que se utilizan para mostrar recursos. |
 | *viewTypeOptions* | cadena | No | | Esta propiedad está relacionada con `viewType` propiedad. puede especificar una o varias vistas para mostrar los recursos. Las opciones de viewType disponibles son: vista de lista, vista de cuadrícula, vista de galería, vista de cascada y vista de árbol. |
-| *itemNameFormatter* | cadena | No | | Esta propiedad le permite dar formato al nombre del elemento |
+| *itemNameFormatter* | cadena | No | | Esta propiedad permite dar formato al nombre del elemento |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |  | Si las traducciones de OOTB no son suficientes para las necesidades de la aplicación, puede exponer una interfaz a través de la cual puede pasar sus propios valores localizados personalizados a través del prop `i18nSymbols`. Al pasar un valor a través de esta interfaz, se anulan las traducciones predeterminadas proporcionadas y, en su lugar, se utilizan las suyas.  Para realizar la anulación, debe pasar un objeto [Descriptor del mensaje](https://formatjs.io/docs/react-intl/api/#message-descriptor) válido a la clave de `i18nSymbols` que desee anular. |
 | *inlineAlertSetup* | cadena | No | | Agrega un mensaje de alerta que desea pasar en la aplicación. Por ejemplo, agregar un mensaje de alerta que indique que no tiene permiso para acceder a esta carpeta. |
 | *intl* | Objeto | No | | El selector de destino proporciona traducciones OOTB predeterminadas. Puede seleccionar el idioma de traducción proporcionando una cadena de configuración regional válida a través del prop `intl.locale`. Por ejemplo: `intl={{ locale: "es-es" }}` </br></br> Las cadenas de configuración regional admitidas siguen los [Códigos ISO 639](https://www.iso.org/iso-639-language-codes.html) para la representación de los estándares de nombres de idiomas. </br></br> Lista de configuraciones regionales admitidas: Inglés - &#39;en-us&#39; (predeterminado) Español - &#39;es-es&#39; Alemán - &#39;de-de&#39; Francés - &#39;fr-fr&#39; Italiano - &#39;it-it&#39; Japonés - &#39;ja-jp&#39; Coreano - &#39;ko-kr&#39; Portugués - &#39;pt-br&#39; Chino (tradicional) - &#39;zh-cn&#39; Chino (Taiwán) - &#39;zh-tw&#39; |
@@ -208,7 +208,7 @@ Puede definir el Selector de destino [propiedades](#destination-selector-propert
 
 ### Ejemplo 1: Crear una carpeta en el Selector de destino
 
-El Selector de destino le permite crear una nueva carpeta para cargar, mover o copiar recursos en una ubicación concreta.
+El selector de destino permite crear una nueva carpeta para cargar, mover o copiar recursos en una ubicación concreta.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -241,7 +241,7 @@ Una vez configurado el Selector de destino y autenticado para utilizar el Select
 
 ### Barra de búsqueda {#search-bar}
 
-El Selector de destino le permite realizar una búsqueda de texto completo de los recursos dentro del repositorio seleccionado. Por ejemplo, si escribe la palabra clave `wave` en la barra de búsqueda, se muestran todos los recursos con la palabra clave `wave` mencionada en cualquiera de las propiedades de metadatos.
+El Selector de destino permite realizar una búsqueda de texto completo de los recursos dentro del repositorio seleccionado. Por ejemplo, si escribe la palabra clave `wave` en la barra de búsqueda, se muestran todos los recursos con la palabra clave `wave` mencionada en cualquiera de las propiedades de metadatos.
 
 ### Ordenación {#sorting}
 
@@ -249,7 +249,7 @@ Puede ordenar los recursos en el Selector de destino por nombre, dimensión o ta
 
 ### Repositorio de recursos {#assets-repo}
 
-AEM El Selector de destino también le permite ver los datos del repositorio que elija disponibles en la aplicación de la. Puede utilizar `repositoryID` para inicializar la ruta de la carpeta de destino que desee ver en la primera instancia del selector de destino.
+AEM El Selector de destino también permite ver los datos del repositorio que elija disponibles en la aplicación de la. Puede utilizar `repositoryID` para inicializar la ruta de la carpeta de destino que desee ver en la primera instancia del selector de destino.
 
 ### Agregar sufijo o prefijo {#add-suffix-or-prefix}
 
@@ -257,11 +257,11 @@ Es un ejemplo de lo siguiente `optionsFormSetup` propiedad. Puede usar esto para
 
 ### Cree una nueva carpeta {#create-new-folder}
 
-Le permite crear una nueva carpeta en la carpeta de destino de su [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+Permite crear una nueva carpeta en la carpeta de destino de su [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### Tipos de vista {#types-of-view}
 
-El Selector de destino le permite ver el recurso en cuatro vistas diferentes:
+El Selector de destino permite ver el recurso en cuatro vistas diferentes:
 
 * **![vista de lista](assets/do-not-localize/list-view.png) [!UICONTROL Vista de lista]**: la vista de lista muestra los archivos y carpetas desplazables en una sola columna.
 * **![vista de cuadrícula](assets/do-not-localize/grid-view.png) [!UICONTROL Vista de cuadrícula]**: la vista de cuadrícula muestra archivos y carpetas desplazables en una cuadrícula de filas y columnas.
@@ -270,8 +270,8 @@ El Selector de destino le permite ver el recurso en cuatro vistas diferentes:
 
 ### Información {#info}
 
-El icono de información le permite ver los metadatos del recurso seleccionado. Incluye varios detalles, como dimensiones, tamaño, descripción, ruta, fecha de modificación y fecha de creación. La información de los metadatos se proporciona al cargar, copiar o crear un nuevo recurso.
+El icono de información permite ver los metadatos del recurso seleccionado. Incluye varios detalles, como dimensiones, tamaño, descripción, ruta, fecha de modificación y fecha de creación. La información de los metadatos se proporciona al cargar, copiar o crear un nuevo recurso.
 
 ### Seleccionar carpeta {#select-folder}
 
-El botón Seleccionar carpeta permite seleccionar recursos para realizar varias operaciones asociadas a [propiedades](#destination-selector-properties) en el selector de destino.
+El botón Select folder permite seleccionar recursos para realizar diversas operaciones asociadas a [propiedades](#destination-selector-properties) en el selector de destino.

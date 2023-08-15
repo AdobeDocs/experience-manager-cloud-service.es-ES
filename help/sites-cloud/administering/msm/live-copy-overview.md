@@ -4,10 +4,10 @@ description: Obtenga información acerca de los conceptos básicos de la consola
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 92%
+source-wordcount: '729'
+ht-degree: 89%
 
 ---
 
@@ -94,7 +94,7 @@ Cuando selecciona una página de Live Copy, están disponibles las siguientes ac
 * **[Sincronizar](overview.md#rollout-and-synchronize)**: sincronice una Live Copy para extraer cambios del origen a la Live Copy.
 * **[Restablecer](creating-live-copies.md#resetting-a-live-copy-page)**: restablezca una página de Live Copy para eliminar todas las cancelaciones de herencia y devuélvala al mismo estado que la de origen.
 * **[Suspender](overview.md#suspending-and-cancelling-inheritance-and-synchronization)**: desactiva temporalmente la relación activa entre una Live Copy y su página de modelo.
-* **[Reanudar](creating-live-copies.md#resuming-inheritance-for-a-page)**: Reanudar le permite recuperar una relación suspendida.
+* **[Reanudar](creating-live-copies.md#resuming-inheritance-for-a-page)** : Reanudar permite restablecer una relación suspendida.
 * **[Desasociar](overview.md#detaching-a-live-copy)**: elimina de forma permanente la relación activa entre una Live Copy y su página de modelo.
 
 ## Estado de la relación {#relationship-status}
@@ -112,6 +112,6 @@ Esta pestaña proporciona información detallada acerca del estado de la relaci�
 
 ### Live Copy    {#live-copy-tab}
 
-Esta pestaña le permite ver y editar la configuración de la Live Copy.
+Esta pestaña le permite ver y editar la configuración de Live Copy.
 
 ![Pestaña Live Copy](../assets/live-copy-relationship-status-live-copy.png)

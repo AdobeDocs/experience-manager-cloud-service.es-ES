@@ -8,10 +8,10 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2362'
-ht-degree: 100%
+source-wordcount: '2361'
+ht-degree: 99%
 
 ---
 
@@ -205,7 +205,7 @@ La solicitud de flujo de trabajo que ha creado está disponible como solicitud e
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
-The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and allows you to make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
+The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and lets you make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
 
 ### El envío de un formulario adaptable {#af}
 

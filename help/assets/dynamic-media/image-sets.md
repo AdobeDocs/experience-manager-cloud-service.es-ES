@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2134'
 ht-degree: 5%
 
 ---
@@ -121,7 +121,6 @@ Dado que los usuarios pueden ampliar las imágenes en conjuntos de imágenes, as
 >* Un tiro negro, marrón y verde de la misma chaqueta.
 >* Miniatura en color negro, marrón y verde.
 
-
 ## Crear conjuntos de imágenes {#creating-image-sets}
 
 Puede crear conjuntos de imágenes a través de la interfaz de usuario o mediante la API.
@@ -164,6 +163,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/lim
    * Cerca de la esquina superior izquierda de la página Editor de conjuntos de imágenes, seleccione **[!UICONTROL Añadir recurso]**.
 
    * Cerca del centro de la página Editor de conjuntos de imágenes, seleccione **[!UICONTROL Pulse para abrir el Selector de recursos]**.
+
    Pulse para seleccionar los recursos que desea incluir en el conjunto de imágenes. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando termine, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
 
    Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y seleccionando **[!UICONTROL Volver]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, seleccione el **[!UICONTROL Filtrar]** en la barra de herramientas. Para cambiar la vista, seleccione el icono Ver y haga clic en **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]**, o **[!UICONTROL Vista de lista]**.
@@ -185,6 +185,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/lim
    * Para eliminar una imagen, selecciónela y seleccione **[!UICONTROL Eliminar recurso]**.
 
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Preestablecido]** y, a continuación, seleccione un ajuste preestablecido para aplicarlo a todos los recursos a la vez.
+
    >[!NOTE]
    >
    >Al crear el conjunto de imágenes, puede cambiar la miniatura del conjunto de imágenes. O bien, puede permitir que el Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de imágenes. Para seleccionar una miniatura, seleccione **[!UICONTROL Cambiar miniatura]** sobre el campo Título en la página Editor de conjuntos de imágenes. A continuación, seleccione cualquier imagen (puede navegar a otras carpetas para buscar imágenes también). Si seleccionó una miniatura y, a continuación, decide que quiere que el Experience Manager genere una del conjunto de imágenes, seleccione **[!UICONTROL Cambiar a]** **[!UICONTROL Miniatura automática]**.
@@ -203,17 +204,17 @@ Sin embargo, los conjuntos creados mediante ajustes preestablecidos de conjuntos
 
 * Abra las propiedades de un recurso. Las propiedades indican qué conjuntos hacen referencia al recurso seleccionado o de qué es miembro. Para ver el conjunto completo, seleccione el nombre del conjunto.
 
-   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
+  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
 * Desde una imagen de miembro de cualquier conjunto. Seleccione el **[!UICONTROL Conjuntos]** para mostrar los conjuntos de los que es miembro el recurso.
 
-   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
+  ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
 * En la búsqueda, puede seleccionar **[!UICONTROL Filtrar]** y, a continuación, expanda **[!UICONTROL Dynamic Media]** y seleccione **[!UICONTROL Conjuntos]**.
 
-   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjuntos de lotes. Para los conjuntos automatizados, la consulta de búsqueda se realiza utilizando &quot;Comienza con&quot;. Este criterio de búsqueda es diferente del de Experience Manager, que se basa en el uso de &quot;Contiene&quot;. Configuración del filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
+  La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjuntos de lotes. Para los conjuntos automatizados, la consulta de búsqueda se realiza utilizando &quot;Comienza con&quot;. Este criterio de búsqueda es diferente del de Experience Manager, que se basa en el uso de &quot;Contiene&quot;. Configuración del filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
@@ -242,10 +243,9 @@ Puede realizar varias tareas de edición en conjuntos de imágenes, como las sig
    * Para reordenar los recursos, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover los elementos).
    * Para ordenar los elementos en orden ascendente o descendente, haga clic en el encabezado de la columna.
    * Para añadir un recurso o actualizar un recurso existente, haga clic en **[!UICONTROL Añadir recurso]**. Vaya a un recurso, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
-
-      >[!NOTE]
-      >
-      >Si elimina la imagen que el Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
+     >[!NOTE]
+     >
+     >Si elimina la imagen que el Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
    * Para eliminar un recurso, selecciónelo y seleccione **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Preestablecido]** y, a continuación, seleccione un ajuste preestablecido de visor.
    * Para añadir o cambiar una miniatura, seleccione el icono de miniatura situado junto a la derecha del recurso. Vaya a la nueva miniatura o recurso de muestra, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]**.

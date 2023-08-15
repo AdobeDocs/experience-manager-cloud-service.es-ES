@@ -5,10 +5,10 @@ description: ¿Desea migrar formularios adaptables y recursos a y desde una inst
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1211'
-ht-degree: 100%
+source-wordcount: '1210'
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,6 @@ Para cargar un formulario o un recurso relacionado:
    >
    > * Cuando un nombre entra en conflicto con diferentes tipos de recursos, la carga de un paquete no reemplaza la jerarquía de carpetas existente. Por ejemplo, si tiene un formulario adaptable llamado “Aprendizaje” en la ubicación /content/dam/formsanddocuments en un servidor. El formulario adaptable se descarga y se carga en otro servidor. El segundo servidor también tiene una carpeta llamada “Aprendizaje” en la misma ubicación /content/dam/formsanddocuments. La carga falla.
    > * Solo un miembro del grupo `form-power-user` puede cargar archivos XDP.
-
 
 
 ## Descargar una temática {#downloading-a-theme}
@@ -208,7 +207,7 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -224,6 +223,6 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->

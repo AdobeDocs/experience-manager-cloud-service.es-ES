@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2020.8.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2020.8.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 34%
+source-wordcount: '1038'
+ht-degree: 33%
 
 ---
 
@@ -140,6 +140,6 @@ Siga esta sección para conocer las novedades y las actualizaciones de las herra
 
 * Complemento AIO-CLI lanzado para unificar las herramientas de refactorización de código para permitir que los desarrolladores invoquen y ejecuten las herramientas de refactorización de código desde un solo lugar. Consulte [Recurso de Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obtener más información.
 
-* AEM AEM Dispatcher Converter se ha ampliado para admitir las conversiones de configuraciones On-Premise y Adobe Managed Services Dispatcher en configuraciones de Dispatcher compatibles con el as a Cloud Service. Consulte [Recurso de Git: Dispatcher Converter de AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obtener más información.
+* AEM Dispatcher Converter se ha ampliado para admitir las conversiones de configuraciones On-Premise y de Adobe de Managed Services AEM Dispatcher en configuraciones de Dispatcher compatibles con la as a Cloud Service compatibilidad con la configuración de. Consulte [Recurso de Git: Dispatcher Converter de AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obtener más información.
 
 * AEM Conversor de Dispatcher de reescrito en ` node.js ` e integrado con el complemento AIO-CLI.

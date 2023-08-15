@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1926'
 ht-degree: 9%
 
 ---
@@ -145,6 +145,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/lim
    * Cerca de la esquina superior izquierda de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Añadir recurso]**.
 
    * Cerca del centro de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Pulse para abrir el Selector de recursos]**.
+
    Seleccione los recursos que desea incluir en el conjunto de giros. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
 
    Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, seleccione el **[!UICONTROL Filtrar]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
@@ -221,7 +222,6 @@ Si elimina la imagen que el Experience Manager utiliza para la miniatura reempla
    * Para eliminar un recurso, selecciónelo y seleccione **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, seleccione el icono Ajuste preestablecido y elija uno.
    * Para eliminar un conjunto de giros completo, vaya al conjunto de giros, selecciónelo y seleccione **[!UICONTROL Eliminar]**
-
    >[!NOTE]
    >
    >Puede editar las imágenes de un conjunto de giros navegando hasta el conjunto y seleccionando **[!UICONTROL Definir miembros]** en el carril izquierdo y, a continuación, seleccione el icono Lápiz en un recurso individual para abrir la ventana de edición.

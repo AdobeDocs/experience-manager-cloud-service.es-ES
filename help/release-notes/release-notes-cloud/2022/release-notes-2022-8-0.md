@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2022.8.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de la versión 2022.8.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2022.8.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de la versión 2022.8.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 58%
+source-wordcount: '624'
+ht-degree: 55%
 
 ---
 
@@ -63,7 +63,7 @@ Eche un vistazo al vídeo Información general sobre la versión de agosto de 20
 
 * [Asistente de Formularios adaptables](/help/forms/creating-adaptive-form.md): AEM Forms ofrece un asistente fácil de usuario empresarial que crea rápidamente Formularios adaptables. El asistente dispone de un rápido desplazamiento por pestañas para seleccionar fácilmente plantillas preconfiguradas, estilos, campos y opciones de envío para crear un formulario adaptable. Esta versión incorpora las siguientes mejoras al asistente:
 
-   * Seleccione o anule la selección de campos: el asistente le permite crear un Formulario adaptable basado en esquemas JSON y del modelo de datos de formulario. Ahora puede seleccionar un subconjunto de campos dentro de un esquema para incluirlos en un Formulario adaptable. Los campos seleccionados se convierten en los correspondientes componentes de captura de datos del Formulario adaptable para crear rápidamente los formularios adaptables deseados.
+   * Seleccionar o anular la selección de campos: el asistente le permite crear un formulario adaptable basado en esquemas JSON y del modelo de datos de formulario. Ahora puede seleccionar un subconjunto de campos dentro de un esquema para incluirlos en un Formulario adaptable. Los campos seleccionados se convierten en los correspondientes componentes de captura de datos del Formulario adaptable para crear rápidamente los formularios adaptables deseados.
 
    * Usar plantillas estáticas: los clientes con inversiones existentes en plantillas estáticas heredadas pueden continuar con su recorrido de adopción en la nube mediante el uso de plantillas estáticas en el asistente para crear formularios adaptables. Esto proporciona a los clientes tiempo adicional para migrar plantillas estáticas antiguas a plantillas editables modernas.
 

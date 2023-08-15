@@ -4,9 +4,9 @@ description: Aprenda a crear y administrar proyectos de traducción automática 
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4078'
+source-wordcount: '4077'
 ht-degree: 96%
 
 ---

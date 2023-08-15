@@ -4,10 +4,10 @@ description: Obtenga información sobre el uso del Asistente para copia de idiom
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 82%
+source-wordcount: '280'
+ht-degree: 72%
 
 ---
 
@@ -29,11 +29,11 @@ Para acceder al asistente:
 
    ![Crear copia de idioma desde el asistente](../assets/language-copy-wizard.png)
 
-1. El asistente se abre para el paso **Seleccionar origen** que le permite agregar o quitar páginas. También tiene la opción de incluir o excluir las subpáginas. Seleccione las páginas que desee incluir y toque o haga clic en **Siguiente**.
+1. El asistente se abre para **Seleccionar origen** paso que permite añadir o eliminar páginas. También tiene la opción de incluir o excluir las subpáginas. Seleccione las páginas que desee incluir y toque o haga clic en **Siguiente**.
 
    ![Adición de páginas con el asistente](../assets/language-copy-wizard-add-pages.png)
 
-1. El paso **Configurar** del asistente le permite añadir o eliminar idiomas y seleccionar el método de traducción. Haga clic o pulse **Siguiente**.
+1. El **Configurar** El paso del asistente le permite añadir o quitar idiomas y seleccionar el método de traducción. Haga clic o pulse **Siguiente**.
 
    ![Configuración del paso del asistente](../assets/language-copy-wizard-configure.png)
 

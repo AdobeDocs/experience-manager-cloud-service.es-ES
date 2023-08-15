@@ -3,9 +3,9 @@ title: Edición en contexto
 description: Aprenda a utilizar el editor universal para editar cualquier aspecto del contenido en contexto y en contexto en cualquier implementación.
 hidefromtoc: true
 index: false
-source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '959'
 ht-degree: 9%
 
 ---
@@ -74,7 +74,7 @@ La imagen se reemplazará por la que haya seleccionado.
 
 ## Experimente El Contenido Como Lo Hacen Los Reader {#emulators}
 
-El editor universal le permite interactuar con el contenido dentro de su contexto y verlo tal y como se entrega a los dispositivos de los usuarios.
+El editor universal permite interactuar con el contenido dentro de su contexto y verlo tal y como se entrega a los dispositivos de los usuarios.
 
 1. De forma predeterminada, el editor procesa la versión de escritorio del contenido. Toque o haga clic en el botón emulador en la parte superior derecha del editor para cambiar el dispositivo de destino.
 
@@ -116,7 +116,7 @@ Para acelerar su experiencia de creación de contenido cuando la edición estruc
 
 1. Desplácese hacia abajo en la página hasta el **Aventuras** sección.
 
-1. En el carril de modo de la parte izquierda del editor, seleccione **Componentes**. Esto le permite seleccionar componentes de página en el editor.
+1. En el carril de modo de la parte izquierda del editor, seleccione **Componentes**. Esto permite seleccionar componentes de página en el editor.
 
 1. Pulse o haga clic en una de las aventuras para seleccionarla.
 

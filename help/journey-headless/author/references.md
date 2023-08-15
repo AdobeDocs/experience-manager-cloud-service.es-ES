@@ -2,10 +2,10 @@
 title: Obtenga información sobre el uso de referencias en fragmentos de contenido
 description: Obtenga información sobre el uso de referencias en fragmentos de contenido para los contenidos, otros fragmentos y archivos (medios). Introduzca la necesidad y la mecánica de los fragmentos anidados para la creación de CMS sin encabezado.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 95%
+source-wordcount: '728'
+ht-degree: 87%
 
 ---
 
@@ -39,11 +39,11 @@ Algunas referencias tienen tipos de datos específicos (por ejemplo, Referencias
 
 ## Referencias de contenido {#content-references}
 
-Las referencias de contenido hacen precisamente eso: permiten hacer referencia a cualquier otro contenido. Se abre un explorador que le permitirá seleccionar el elemento de contenido.
+Las referencias de contenido hacen precisamente eso: permiten hacer referencia a cualquier otro contenido. Se abrirá un explorador que le permitirá seleccionar el elemento de contenido.
 
 ## Referencias de recursos/medios {#assets-media-references}
 
-Se puede hacer referencia a los recursos (por ejemplo, imágenes o medios) dentro de un bloque de texto utilizando la opción **Insertar recurso**. Se abre un explorador que le permitirá seleccionar el recurso.
+Se puede hacer referencia a los recursos (por ejemplo, imágenes o medios) dentro de un bloque de texto utilizando la opción **Insertar recurso**. Se abrirá un explorador que le permitirá seleccionar el recurso.
 
 ![Fragmentos de contenido: insertar recurso](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -79,7 +79,7 @@ Como autor, no es responsable de definir estas relaciones (lo que realiza el arq
 
 ### Creación de fragmentos anidados {#author-nested-fragment}
 
-La creación de referencias a fragmentos es bastante sencilla (aunque normalmente el campo no se etiqueta como **Referencia a fragmento**). Puede escribir la referencia directamente o seleccionar el icono de carpeta para abrir el explorador (lo más probable) que le permita desplazarse y seleccionar el fragmento que necesita.
+La creación de referencias a fragmentos es bastante sencilla (aunque normalmente el campo no se etiqueta como **Referencia a fragmento**). Puede escribir la referencia directamente o (lo más probable) seleccionar el icono de carpeta para abrir un explorador que le permita desplazarse y seleccionar el fragmento que necesite.
 
 ![Fragmentos de contenido: referencias](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

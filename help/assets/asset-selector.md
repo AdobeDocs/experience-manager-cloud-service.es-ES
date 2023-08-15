@@ -4,10 +4,10 @@ description: Utilice el selector de recursos para buscar y recuperar metadatos y
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2379'
-ht-degree: 94%
+source-wordcount: '2373'
+ht-degree: 91%
 
 ---
 
@@ -373,7 +373,7 @@ Puede utilizar las propiedades del Selector de recursos para personalizar la for
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |                 | Si las traducciones de OOTB no son suficientes para las necesidades de la aplicación, puede exponer una interfaz a través de la cual puede pasar sus propios valores localizados personalizados a través del prop `i18nSymbols`. Al pasar un valor a través de esta interfaz, se anulan las traducciones predeterminadas proporcionadas y, en su lugar, se utilizan las suyas.  Para realizar la anulación, debe pasar un objeto [Descriptor del mensaje](https://formatjs.io/docs/react-intl/api/#message-descriptor) válido a la clave de `i18nSymbols` que desee anular. |
 | *intl* | Objeto | No | | El Selector de recursos proporciona traducciones OOTB predeterminadas. Puede seleccionar el idioma de traducción proporcionando una cadena de configuración regional válida a través del prop `intl.locale`. Por ejemplo: `intl={{ locale: "es-es" }}` </br></br> Las cadenas de configuración regional admitidas siguen los [Códigos ISO 639](https://www.iso.org/iso-639-language-codes.html) para la representación de los estándares de nombres de idiomas. </br></br> Lista de configuraciones regionales admitidas: Inglés - &#39;en-us&#39; (predeterminado) Español - &#39;es-es&#39; Alemán - &#39;de-de&#39; Francés - &#39;fr-fr&#39; Italiano - &#39;it-it&#39; Japonés - &#39;ja-jp&#39; Coreano - &#39;ko-kr&#39; Portugués - &#39;pt-br&#39; Chino (tradicional) - &#39;zh-cn&#39; Chino (Taiwán) - &#39;zh-tw&#39; |
 | *repositoryId* | cadena | No | &#39;&#39; | Repositorio desde el que el Selector de recursos carga el contenido. |
-| *additionalAemSolutions* | `Array<string>` | No | [ ] | Le permite agregar una lista de repositorios de AEM adicionales. Si no se proporciona información en esta propiedad, solo se tienen en cuenta los repositorios de la biblioteca de medios o de AEM Assets. |
+| *additionalAemSolutions* | `Array<string>` | No | [ ] | AEM Permite añadir una lista de repositorios de recursos de la adicionales. Si no se proporciona información en esta propiedad, solo se tienen en cuenta los repositorios de la biblioteca de medios o de AEM Assets. |
 | *hideTreeNav* | booleano | No |  | Especifica si se muestra u oculta la barra lateral de navegación del árbol de recursos. Solo se utiliza en la vista modal y, por lo tanto, no hay ningún efecto de esta propiedad en la vista de carril. |
 | *onDrop* | Función | No | | La propiedad permite la funcionalidad de colocación de un recurso. |
 | *dropOptions* | `{allowList?: Object}` | No | | Configura las opciones de colocación mediante &#39;allowList&#39;. |
@@ -411,7 +411,7 @@ Utilice varias propiedades para definir los metadatos de un recurso que desee ve
 
 ### Ejemplo 3: Propiedad de filtro personalizado en la vista de carril
 
-Además de la búsqueda con facetas, el Selector de recursos le permite personalizar varios atributos para restringir la búsqueda desde la aplicación [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. Debe agregar el siguiente código para agregar filtros de búsqueda personalizados en la aplicación. En el ejemplo siguiente, la búsqueda `Type Filter` que filtra el tipo de recurso entre imágenes, documentos o vídeos o el tipo de filtro que ha agregado para la búsqueda.
+Además de la búsqueda con facetas, el Selector de recursos permite personalizar varios atributos para restringir la búsqueda desde [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aplicación. Debe agregar el siguiente código para agregar filtros de búsqueda personalizados en la aplicación. En el ejemplo siguiente, la búsqueda `Type Filter` que filtra el tipo de recurso entre imágenes, documentos o vídeos o el tipo de filtro que ha agregado para la búsqueda.
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -509,7 +509,7 @@ Para ocultar carpetas en el panel de navegación izquierdo, haga clic en el icon
 
 ### Conmutador de repositorios {#repository-switcher}
 
-El Selector de recursos también le permite cambiar de repositorio para realizar la selección de recursos. Puede seleccionar el repositorio que desee en la lista desplegable disponible en el panel izquierdo. Las opciones del repositorio disponibles en la lista desplegable se basan en la propiedad `repositoryId` definida en el archivo `index.html`. Se basa en los entornos de la organización de IMS seleccionada a la que accede el usuario que ha iniciado sesión. Los consumidores pueden aprobar un `repositoryID` preferido y, en ese caso, el Selector de recursos deja de procesar el conmutador de repositorios y solo procesa los recursos del repositorio dado.
+El Selector de recursos también le permite cambiar de repositorio para la selección de recursos. Puede seleccionar el repositorio que desee en la lista desplegable disponible en el panel izquierdo. Las opciones del repositorio disponibles en la lista desplegable se basan en la propiedad `repositoryId` definida en el archivo `index.html`. Se basa en los entornos de la organización de IMS seleccionada a la que accede el usuario que ha iniciado sesión. Los consumidores pueden aprobar un `repositoryID` preferido y, en ese caso, el Selector de recursos deja de procesar el conmutador de repositorios y solo procesa los recursos del repositorio dado.
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -530,7 +530,7 @@ El Selector de recursos también proporciona opciones de filtro listas para usar
 
 ### Búsqueda personalizada
 
-Además de la búsqueda de texto completo, el Selector de recursos le permite buscar recursos dentro de los archivos mediante búsquedas personalizadas. Puede utilizar filtros de búsqueda personalizados en los modos Vista modal y Vista de carril.
+Además de la búsqueda de texto completo, el Selector de recursos permite buscar recursos dentro de los archivos mediante búsquedas personalizadas. Puede utilizar filtros de búsqueda personalizados en los modos Vista modal y Vista de carril.
 
 ![custom-search](assets/custom-search.png)
 
@@ -538,7 +538,7 @@ También puede crear un filtro de búsqueda predeterminado para guardar los camp
 
 ### Barra de búsqueda {#search-bar}
 
-El Selector de recursos le permite realizar una búsqueda de texto completo de los recursos del repositorio seleccionado. Por ejemplo, si escribe la palabra clave `wave` en la barra de búsqueda, se muestran todos los recursos con la palabra clave `wave` mencionada en cualquiera de las propiedades de metadatos.
+El Selector de recursos permite realizar una búsqueda de texto completo de los recursos del repositorio seleccionado. Por ejemplo, si escribe la palabra clave `wave` en la barra de búsqueda, se muestran todos los recursos con la palabra clave `wave` mencionada en cualquiera de las propiedades de metadatos.
 
 ### Ordenación {#sorting}
 
@@ -571,7 +571,7 @@ Asset Selector supports two types of out of the box views:
 ### Application Integration
 
 Asset Selector is flexible and can be integrated within your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. It is accessible and localized to add, search, and select assets in your application. With Asset Selector you can:
-*   **Configure** You can configure the files/folders that you want to show at the upfront. The assets that are chosen to view can be of any supported formats, for example, JPEG. It allows you to control the display of various text or symbols as per your choice.
+*   **Configure** You can configure the files/folders that you want to show at the upfront. The assets that are chosen to view can be of any supported formats, for example, JPEG. It lets you control the display of various text or symbols as per your choice.
 *   **Perfect fit** Asset selector easily fits in your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application and choose the way you want to view. The mode of view can be inline, rail, or modal view.
 *   **Accessible** With Asset Selector, you can reach the desired asset in an easy manner.
 *   **Localize** Assets can be availed for the various locales available as per Adobe's localization standards.
@@ -596,15 +596,15 @@ You can make default multi-selection of assets by specifying the assets to the c
 ### Action buttons
 
 When you customize your application with Asset Selector based on ReactJS, you are provided with the following action buttons to perform various actions:
-*   **Open in media library** Allows you to open the asset in media library.
-*   **Upload** Allows you to upload an asset directly.
+*   **Open in media library** Lets you open the asset in media library.
+*   **Upload** Lets you upload an asset directly.
 *   **Download** Downloads the asset in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 -->
 <!--
 
 ### Status of an asset
 
-Asset Selector allows you to know the status of your uploaded assets. The status can be `Approved`, `Rejected`, or `Expired` of the asset. 
+Asset Selector lets you know the status of your uploaded assets. The status can be `Approved`, `Rejected`, or `Expired` of the asset. 
 -->
 <!--
 

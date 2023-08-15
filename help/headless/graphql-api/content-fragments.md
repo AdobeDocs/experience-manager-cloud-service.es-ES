@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4918'
-ht-degree: 93%
+source-wordcount: '4913'
+ht-degree: 92%
 
 ---
 
@@ -158,7 +158,7 @@ Además, el usuario debe tener acceso a un punto final de GraphQL para poder eje
 
 ## Generación de esquemas {#schema-generation}
 
-GraphQL es una API muy tipificada, lo que significa que los datos deben estar claramente estructurados y organizados por tipo.
+GraphQL es una API con establecimiento inflexible de tipos, lo que significa que los datos deben estar claramente estructurados y organizados por tipo.
 
 La especificación de GraphQL proporciona una serie de directrices sobre cómo crear una API robusta para buscar datos en una instancia determinada. Para ello, un cliente debe recuperar el [Esquema](#schema-generation), que contiene todos los tipos necesarios para una consulta.
 
@@ -631,7 +631,7 @@ query {
 >
 >Para obtener el mejor rendimiento, considere [Actualizar los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
-Esta funcionalidad le permite paginar en tipos de consulta que devuelven una lista. Se proporcionan dos métodos:
+Esta función permite realizar paginación en los tipos de consulta que devuelven una lista. Se proporcionan dos métodos:
 
 * `offset` y `limit` en una consulta `List`
 * `first` y `after` en una consulta `Paginated`
@@ -707,7 +707,7 @@ query {
 
 ## Envío de imágenes optimizadas para la web en consultas de GraphQL {#web-optimized-image-delivery-in-graphql-queries}
 
-El envío de imágenes optimizadas para la web permite utilizar una consulta Graphql para lo siguiente:
+La entrega de imágenes optimizadas para la web permite utilizar una consulta de Graphql para lo siguiente:
 
 * Solicitar una URL a una imagen de recursos AEM
 
@@ -725,7 +725,7 @@ Puede utilizar AEM para lo siguiente:
 
 Esto significa que los comandos se aplican durante la ejecución de la consulta, de la misma manera que los parámetros de URL en las solicitudes de GET para esas imágenes.
 
-Esto le permite crear de forma dinámica representaciones de imágenes para el envío JSON, lo que evita tener que crear y almacenar manualmente esas representaciones en el repositorio.
+Esto permite crear de forma dinámica representaciones de imágenes para la entrega JSON, lo que evita tener que crear y almacenar manualmente esas representaciones en el repositorio.
 
 La solución de GraphQL significa que puede hacer lo siguiente:
 

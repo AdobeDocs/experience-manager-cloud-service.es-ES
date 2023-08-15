@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2076'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Obtenga más información acerca de [Recopilación de datos de Experience Platfo
 
 ## Enviar `addToCart` datos de evento para el Experience Platform {#send-addtocart-to-aep}
 
-Los siguientes pasos muestran cómo enviar el `addToCart` AEM datos de evento de páginas de producto procesadas por el usuario en el Experience Platform mediante el conector de Experience Platform del CIF. Con la extensión del explorador Adobe Experience Platform Debugger, puede probar y revisar los datos enviados.
+Los siguientes pasos muestran cómo enviar el `addToCart` AEM datos de evento de páginas de producto procesadas por el usuario en el Experience Platform mediante el conector de Experience Platform del CIF. Con la extensión del explorador de Adobe Experience Platform Debugger, puede probar y revisar los datos enviados.
 
 ![Revisar los datos del evento addToCart en el Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
 
@@ -109,7 +109,7 @@ Vaya al archivo POM raíz del proyecto `pom.xml` y busque el `<id>npm ci</id>` b
 
 ### Cambiar el formato de configuración de Babel
 
-Cambiar del valor predeterminado `.babelrc` archivo de configuración relativa formato de archivo a `babel.config.js` formato. Se trata de un formato de configuración para todo el proyecto y permite aplicar los complementos y ajustes preestablecidos al `node_module` con el bueno control.
+Cambiar del valor predeterminado `.babelrc` archivo de configuración relativa formato de archivo a `babel.config.js` formato. Se trata de un formato de configuración para todo el proyecto y permite aplicar los complementos y ajustes preestablecidos al `node_module` con mayor control.
 
 1. Vaya a `ui.frontend` y elimine el existente `.babelrc` archivo.
 

@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.7.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de la versión 2021.7.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2021.7.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de la versión 2021.7.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 50%
+source-wordcount: '1314'
+ht-degree: 48%
 
 ---
 
@@ -97,7 +97,7 @@ La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!
 
 * **Documento de registro basado en Acrobat**: También puede [usar el formulario PDF de Adobe Acrobat (PDF de Acrobat)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=es) como plantilla para el documento de registro además de la plantilla de formulario basada en XFA.
 
-* **Conector del almacén de datos de Microsoft Azure**: Ahora puede [conectar el modelo de datos de formulario al almacenamiento de Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=es). Permite recuperar y almacenar datos de formulario adaptables en el almacenamiento de Microsoft Azure como un BLOB.
+* **Conector del almacén de datos de Microsoft Azure**: Ahora puede [conectar el modelo de datos de formulario al almacenamiento de Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=es). Permite recuperar y almacenar datos de formulario adaptables en el almacenamiento de Microsoft Azure como BLOB.
 
 ## Complemento CIF {#cloud-services-cif}
 

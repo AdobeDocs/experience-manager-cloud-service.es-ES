@@ -2,10 +2,10 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 58%
+source-wordcount: '2150'
+ht-degree: 56%
 
 ---
 
@@ -15,7 +15,7 @@ El entorno de creación AEM ofrece varios mecanismos para organizar y editar el 
 
 ## Administración del sitio {#managing-your-site}
 
-La consola **Sitios** le permite desplazarse por su sitio web y administrarlo mediante la barra de encabezado, la barra de herramientas, los iconos de acción (aplicables al recurso seleccionado), las rutas de exploración y, si se seleccionan, los carriles secundarios (por ejemplo, referencias y cronología).
+El **Sites** La consola de le permite desplazarse por su sitio web y administrarlo mediante la barra de encabezado, la barra de herramientas, los iconos de acción (aplicables al recurso seleccionado), las rutas de exploración y, cuando se seleccionan, los carriles secundarios (por ejemplo, la cronología y las referencias).
 
 Por ejemplo, la vista de columna:
 
@@ -265,9 +265,9 @@ Además, **Información de página** puede proporcionar acceso a analytics y rec
 Existen varios modos al editar una página que permiten realizar diferentes acciones:
 
 * [Editar](/help/sites-cloud/authoring/fundamentals/editing-content.md) : el modo que se utilizará al editar el contenido de la página.
-* [Diseño](/help/sites-cloud/authoring/features/responsive-layout.md): permite crear y editar su diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños).
+* [Diseño](/help/sites-cloud/authoring/features/responsive-layout.md) : permite crear y editar un diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños).
 * [Segmentación:](/help/sites-cloud/authoring/personalization/targeted-content.md) aumente la relevancia del contenido mediante la segmentación y efectuando mediciones en todos los canales.
-* [Deformación de tiempo](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : le permite ver el estado de una página en un momento determinado.
+* [Deformación de tiempo](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : permite ver el estado de una página en un momento determinado.
 * [Estado de Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : permite obtener una descripción general rápida del estado de live copy y de los componentes que se heredan o no.
 * [Modo de desarrollador](/help/implementing/developing/tools/developer-mode.md)
 * [Previsualizar](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) : se utiliza para ver la página tal como se muestra en el entorno de publicación; o para navegar mediante vínculos en el contenido.

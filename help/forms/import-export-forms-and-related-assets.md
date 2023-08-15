@@ -3,10 +3,10 @@ title: Importar y exportar recursos
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: Puede importar y exportar formularios adaptables y recursos relacionados a instancias de AEM. Esto ayuda a migrar formularios o a moverlos a través de sistemas.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 100%
+source-wordcount: '1323'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ Para aquellos recursos para los que es compatible cargar e importar mediante la 
 
 ## Descargar o cargar recursos de formularios y documentos {#download-or-upload-forms-amp-documents-assets}
 
-La interfaz de usuario de [!DNL AEM Forms] le permite exportar recursos desde una instancia de AEM descargándolos como paquete CRX de AEM o archivos binarios. A continuación, puede importar el paquete CRX de AEM descargado o el archivo binario en otra instancia de AEM.
+[!DNL AEM Forms] AEM AEM La interfaz de usuario de permite exportar recursos desde una instancia de descargándolos como un paquete CRX o como archivos binarios de la interfaz de usuario de CRX de la. A continuación, puede importar el paquete CRX de AEM descargado o el archivo binario en otra instancia de AEM.
 
 Exportar e importar mediante la interfaz de usuario de [!DNL AEM Forms] es compatible para todos los recursos, excepto para las plantillas de formulario adaptable y las directivas de contenido de formulario adaptable. Por lo tanto, al exportar un formulario adaptable desde la interfaz de usuario de [!DNL AEM Forms], la plantilla del formulario adaptable y las directivas de contenido relacionadas no se exportan automáticamente como otros recursos relacionados.
 
@@ -221,9 +221,9 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-[!DNL AEM Forms] UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
+[!DNL AEM Forms] UI lets you search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 
-When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -239,7 +239,7 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 

@@ -1,19 +1,19 @@
 ---
 title: Diseño adaptable
-description: AEM le permite crear un diseño adaptable para sus páginas.
+description: AEM le permite crear un diseño adaptable para sus páginas,
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 55%
+source-wordcount: '1739'
+ht-degree: 51%
 
 ---
 
-# Diseño adaptable  {#responsive-layout}
+# Diseño adaptable {#responsive-layout}
 
-AEM le permite tener un diseño adaptable para las páginas mediante el uso del **Contenedor de diseño** componente.
+AEM le permite tener un diseño adaptable para las páginas mediante el uso de la variable **Contenedor de diseño** componente.
 
-Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. Este componente se utiliza en combinación con el modo [**Diseño**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), que le permite crear y editar el diseño interactivo en función del dispositivo.
+Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se utiliza junto con el [**Diseño** modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), que le permite crear y editar su diseño interactivo en función del dispositivo.
 
 El contenedor de diseño:
 
@@ -35,7 +35,7 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
   Después de colocar el contenedor de diseño en la página, puede usar el modo de **diseño** para colocar el contenido en la red interactiva.
 
 * [**Emulador**](#selecting-a-device-to-emulate)
-Esto le permite crear y editar sitios web interactivos que reorganizan el diseño según el tamaño del dispositivo o la ventana, mediante el cambio de tamaño de los componentes de forma interactiva. A continuación, el usuario puede ver cómo se representa el contenido mediante el emulador.
+Esto permite crear y editar sitios web interactivos que reorganizan el diseño según el tamaño del dispositivo o la ventana, mediante el cambio de tamaño de los componentes de forma interactiva. A continuación, el usuario puede ver cómo se representa el contenido mediante el emulador.
 
 Con estos mecanismos de cuadrícula adaptable puede:
 
@@ -59,7 +59,7 @@ En función del proyecto, el contenedor de diseño se puede utilizar como sistem
 
 Al crear el contenido de su sitio web desea asegurarse de que el contenido se muestre correctamente según el dispositivo utilizado para ello.
 
-AEM le permite definir diseños según la anchura del dispositivo:
+AEM definir diseños según la anchura del dispositivo:
 
 * El emulador permite emular estos diseños en una amplia gama de dispositivos. Además del tipo de dispositivo, la orientación, que se selecciona mediante la opción **Rotar dispositivo**, puede afectar al punto de interrupción seleccionado a medida que cambia la anchura.
 * Los puntos de interrupción son puntos que separan las definiciones de diseño.
@@ -96,7 +96,7 @@ Por ejemplo, al seleccionar el dispositivo **iPhone 6 Plus** (definido con una a
 
    La barra de herramientas del emulador muestra opciones de diseño adicionales:
 
-   * **Rotar dispositivo**: le permite rotar un dispositivo de la orientación vertical a la horizontal y viceversa.
+   * **Rotar dispositivo** : permite girar un dispositivo desde la orientación vertical (vertical) a la orientación horizontal (horizontal) y viceversa.
 
    ![Botón Girar el dispositivo a horizontal](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Botón Girar el dispositivo a vertical](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -195,8 +195,8 @@ En el modo Diseño, se pueden realizar varias acciones en una cuadrícula:
   >
   >Las proporciones y relaciones se mantienen cuando componentes como **Imágenes** se han cambiado de tamaño.
 
-* Haga clic o toque un componente de contenido. La barra de herramientas le permite efectuar las siguientes acciones:
-   * **Principal**: le permite seleccionar todos los componentes del contenedor de diseños para efectuar acciones en conjunto.
+* Haga clic o toque un componente de contenido. La barra de herramientas le permite:
+   * **Principal** : permite seleccionar todo el componente del contenedor de diseños para realizar acciones en conjunto.
    * **Flotar a una línea nueva** : el componente se mueve a una nueva línea, según el espacio disponible en la cuadrícula.
    * **Ocultar componente** : el componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseño).
 

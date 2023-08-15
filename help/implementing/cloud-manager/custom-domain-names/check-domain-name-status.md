@@ -2,10 +2,10 @@
 title: Comprobar el estado del nombre de dominio
 description: Obtenga información sobre cómo determinar si Cloud Manager ha verificado correctamente su nombre de dominio personalizado.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 84%
+source-wordcount: '649'
+ht-degree: 82%
 
 ---
 
@@ -60,7 +60,7 @@ Este error puede producirse durante la validación del dominio del registro TXT 
 
 #### Causa de error {#cause}
 
-Fastly fija un dominio a la cuenta inicial que lo registró y ninguna otra cuenta puede registrar un subdominio sin solicitar permiso. Además, solo permite asignar un dominio Apex y subdominios asociados a un servicio y una cuenta de Fastly. Si tiene una cuenta existente de Facebook que vincula los mismos Apex y subdominios utilizados para sus dominios de AEM Cloud Service, verá este error.
+Fastly fija un dominio a la cuenta inicial que lo registró y ninguna otra cuenta puede registrar un subdominio sin solicitar permiso. Además, solo Fastly le permite asignar un dominio Apex y subdominios asociados a un servicio y una cuenta de Fastly. Si tiene una cuenta existente de Facebook que vincula los mismos Apex y subdominios utilizados para sus dominios de AEM Cloud Service, verá este error.
 
 #### Resolución de errores {#resolution}
 

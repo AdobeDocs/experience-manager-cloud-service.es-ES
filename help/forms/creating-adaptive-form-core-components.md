@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 6d9ebc5410f6ffce0f0c7c7f4e9302b30e82b70b
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2342'
-ht-degree: 74%
+source-wordcount: '2340'
+ht-degree: 71%
 
 ---
 
@@ -35,7 +35,7 @@ Antes de empezar, obtenga información sobre el tipo de componentes de Forms dis
 
 Para crear un formulario adaptable, es necesario lo siguiente:
 
-* **Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un nuevo programa, los componentes principales de formularios adaptables ya están habilitados para su entorno. Si tiene un entorno de formularios as a Cloud Service basado en el Arquetipo 39 o anterior, [Habilite los componentes principales de formularios adaptables para su entorno](enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, la plantilla y la temática de lienzo **Formularios adaptables (componente principal)** se añaden a su entorno. Si su versión del SDK de AEM es anterior a la 2023.02.0, [compruebe que tiene `prerelease` activado el indicador en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features), ya que los componentes principales de formularios adaptables formaban parte de la versión preliminar anterior a la 2023.02.0.
+* **Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un nuevo programa, los componentes principales de formularios adaptables ya están habilitados para su entorno. Si tiene un entorno as a Cloud Service de Forms basado en el tipo de archivo 39 o anterior, [Habilitar los componentes principales de Forms adaptables para su entorno](enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, la plantilla y la temática de lienzo **Formularios adaptables (componente principal)** se añaden a su entorno. Si su versión del SDK de AEM es anterior a la 2023.02.0, [compruebe que tiene `prerelease` activado el indicador en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features), ya que los componentes principales de formularios adaptables formaban parte de la versión preliminar anterior a la 2023.02.0.
 
 * **Una plantilla de formulario adaptable**: Una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece opciones para definir una temática y una acción de envío. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. Por ejemplo, enviar los datos recopilados a una fuente de datos. El servicio en la nube proporciona una plantilla OOTB, denominada en blanco:
 
@@ -85,7 +85,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
    * **Modelo de datos de formulario**: A [El modelo de datos de formulario](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
-   * **Esquema JSON**: [Esquema JSON](adaptive-form-json-schema-form-model.md) Nuestro formulario adaptable basado en componentes principales permite una integración optimizada con el sistema back-end de su organización al proporcionar la capacidad de asociar un esquema JSON, que representa la estructura de los datos que se producen o consumen. Esta asociación permite a los autores añadir contenido de forma dinámica al formulario adaptable mediante los elementos del esquema. Los elementos del esquema son fácilmente accesibles en la pestaña Objetos del modelo de datos del Explorador de contenido durante el proceso de creación y todos los campos se añaden automáticamente a cualquier formulario adaptable recién creado.
+   * **Esquema JSON**: [Esquema JSON](adaptive-form-json-schema-form-model.md) Nuestro formulario adaptable basado en componentes principales permite una integración optimizada con el sistema back-end de su organización al proporcionar la capacidad de asociar un esquema JSON, que representa la estructura de los datos que se producen o consumen. Esta asociación permite a los autores añadir contenido de forma dinámica al formulario adaptable mediante los elementos del esquema. Los elementos del esquema son fácilmente accesibles en la pestaña Objetos del modelo de datos del Explorador de contenido durante el proceso de creación y todos los campos se agregan automáticamente a cualquier formulario adaptable recién creado.
 
    De forma predeterminada, todos los campos del esquema JSON asociado se seleccionan automáticamente y se convierten en los correspondientes componentes de formulario adaptable, lo que optimiza el proceso de creación. El asistente ofrece la comodidad añadida de permitirle elegir selectivamente qué campos se deben incluir en el formulario adaptable mediante el uso de casillas de verificación.
 
