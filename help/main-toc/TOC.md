@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2f187eaec2f8418b63e54dc4f377d5798f8ed07a
+source-git-commit: d092e68b4f6dbc4f2bcfc45d2e522cfbfa831c0d
 workflow-type: tm+mt
-source-wordcount: '4238'
+source-wordcount: '4242'
 ht-degree: 97%
 
 ---
@@ -75,6 +75,7 @@ ht-degree: 97%
    + Notas de la versión de mantenimiento de AEMaaCS {#maintenance}
       + [Notas de la versión actuales sobre el mantenimiento](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [Notas de la versión de mantenimiento de 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
          + [Notas de la versión de mantenimiento de 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
          + [Notas de la versión de mantenimiento de 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
          + [Notas de la versión de mantenimiento de 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
