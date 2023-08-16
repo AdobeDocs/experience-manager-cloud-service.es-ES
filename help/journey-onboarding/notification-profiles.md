@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo crear perfiles de usuario en la Ad
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -139,3 +139,9 @@ Siga estos pasos para agregar usuarios para los que ya existen Federated ID.
 1. Haga clic en **Guardar** y se enviará un correo electrónico de bienvenida al usuario que ha añadido.
 
 El usuario invitado recibirá ahora las notificaciones. Repita estos pasos para los usuarios de su equipo que desee que reciban notificaciones.
+
+## Recursos adicionales {#additional-resources}
+
+Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
+
+* [Centro de acciones](/help/operations/actions-center.md) - Aproveche el Centro de Acciones para tomar medidas sobre incidentes y otra información importante.
