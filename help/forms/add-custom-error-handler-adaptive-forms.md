@@ -7,7 +7,7 @@ keywords: Agregue un controlador de error personalizado, agregue un controlador 
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 10%
