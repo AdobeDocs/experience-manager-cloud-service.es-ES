@@ -2,9 +2,9 @@
 title: AEM Registro para la as a Cloud Service
 description: AEM Obtenga información sobre cómo utilizar Registro para el registro as a Cloud Service para configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2683'
 ht-degree: 4%
 
 ---
@@ -17,6 +17,7 @@ AEM La configuración del registro as a Cloud Service AEM AEM y los niveles de r
 
 * AEM AEM registro de datos, que realiza el registro en el nivel de aplicación de la
 * Registro de Apache HTTPD Web Server/Dispatcher, que realiza el registro del servidor web y Dispatcher en el nivel de publicación.
+* El registro de CDN, que como su nombre indica, realiza el registro en CDN. Actualmente, esta función está disponible para los usuarios que la adoptaron por primera vez; para unirse al programa de usuarios que la adoptaron por correo electrónico **aemcs-cdnlogs-adopter@adobe.com**, incluido el nombre de su organización y el contexto acerca de su interés en la función.
 
 ## AEM Registro de {#aem-logging}
 
@@ -498,6 +499,57 @@ Define DISP_LOG_LEVEL debug
 >[!NOTE]
 >
 >AEM Para entornos as a Cloud Service, la depuración es el nivel de detalle máximo. El nivel de registro de seguimiento no es compatible, por lo que debe evitar configurarlo cuando trabaje en entornos de nube.
+
+## Registro de CDN {#cdn-log}
+
+>[!NOTE]
+>
+>Esta función aún no está disponible de forma general. Para unirse al programa de usuarios que lo adoptaron por anticipado, envíe un correo electrónico **aemcs-cdnlogs-adopter@adobe.com**, incluido el nombre de su organización y el contexto acerca de su interés en la función.
+>
+
+AEM El as a Cloud Service proporciona acceso a los registros de CDN, que son útiles para casos de uso, incluida la optimización de la proporción de visitas de caché. El formato de registro de CDN no se puede personalizar y no se puede configurar en diferentes modos, como información, advertir o error.
+
+**Ejemplo**
+
+```
+{
+"timestamp": "2023-05-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR"
+}
+```
+
+**Formato de registro**
+
+Los registros de CDN son diferentes de los otros registros en el sentido de que se adhiere a un formato json.
+
+| **Nombre del campo** | **Descripción** |
+|---|---|
+| *timestamp* | Hora a la que se inició la solicitud, después de la finalización de TLS |
+| *ttfb* | Abreviatura de *Tiempo hasta el primer byte*. Intervalo de tiempo entre el inicio de la solicitud hasta el punto en el que el cuerpo de la respuesta comenzó a transmitirse. |
+| *cli_ip* | La dirección IP del cliente. |
+| *cli_country* | De dos letras [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) código de país alfa-2 del país cliente. |
+| *librar* | El valor del encabezado de la solicitud que se utiliza para identificar la solicitud de forma exclusiva. |
+| *req_ua* | El agente de usuario responsable de realizar una solicitud HTTP determinada. |
+| *host* | La autoridad a la que está destinada la solicitud. |
+| *url* | La ruta completa, incluidos los parámetros de consulta. |
+| *método* | Método HTTP enviado por el cliente, como &quot;GET&quot; o &quot;POST&quot;. |
+| *res_ctype* | Tipo de contenido que se utiliza para indicar el tipo de medio original del recurso. |
+| *cache* | Estado de la caché. Los valores posibles son HIT, MISS o PASS |
+| *status* | El código de estado HTTP como valor entero. |
+| *res_age* | Cantidad de tiempo (en segundos) que una respuesta se ha almacenado en caché (en todos los nodos). |
+| *hacer explotar* | Centro de datos del servidor de caché de CDN. |
 
 ## Cómo acceder a los registros {#how-to-access-logs}
 
