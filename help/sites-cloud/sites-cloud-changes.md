@@ -1,11 +1,11 @@
 ---
 title: Cambios importantes en AEM Sites en AEM Cloud Service
-description: Cambios importantes en AEM Sites en AEM Cloud Service
+description: Obtenga más información sobre los cambios más importantes en AEM Sites en AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 8e06dff01e06ced62686a4784619278f29345082
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '537'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,6 @@ AEM Sites as a Cloud Service proporciona funciones de administración de experie
 >* [Cambios importantes en AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 >* [Presentación de AEM Assets as a Cloud Service](/help/assets/overview.md)
 >* [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
-
 
 Los cambios y adiciones en AEM Sites as a Cloud Service son los siguientes:
 

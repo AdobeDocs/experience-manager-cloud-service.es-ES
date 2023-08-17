@@ -1,11 +1,11 @@
 ---
 title: Administración de instancias de flujo de trabajo
-description: Obtenga información sobre cómo administrar instancias de flujo de trabajo
+description: Obtenga información sobre cómo administrar instancias de flujo de trabajo uso de la consola de flujo de trabajo
 feature: Administering
 role: Admin
-source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1288'
 ht-degree: 95%
 
 ---
