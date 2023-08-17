@@ -3,10 +3,10 @@ title: Diferencias entre AEM 6.5 Forms y AEM Cloud Services
 description: ¿Es usuario de Experience Manager Forms y desea actualizar a Adobe Experience Manager Forms as a Cloud Service? Compare AEM 6.5 Forms y AEM Cloud Services y aprenda los cambios más importantes antes de actualizar o migrar a Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 96%
+source-wordcount: '1343'
+ht-degree: 91%
 
 ---
 
@@ -60,11 +60,11 @@ Adobe Experience Manager Forms as a Cloud Service incluye algunos cambios import
 
 * **Formularios adaptables basados en XSD:** puede utilizar una plantilla XDP para diseñar una plantilla para el documento de registro. El servicio no admite formularios adaptables basados en XFA
 
-* **Componentes**: puede usar [componentes principales de formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) para diseñar los formularios. Estos se basan en componentes principales de gestión de contenidos web (WCM), siguen los estándares de BEM y se pueden personalizar fácilmente. El servicio no admite la experiencia de firma en formularios y no incluye los componentes Resumen y Verificar para formularios adaptables.
+* **Componentes**: El servicio no admite la experiencia de firma en formularios y no incluye los componentes Resumen y Verificar para el formulario adaptable.
+
+* **Interfaz del asistente:** Puede usar el complemento [Interfaz de asistente](/help/forms/creating-adaptive-form-core-components.md) para configurar rápidamente las opciones comunes y crear fácilmente un formulario adaptable.
 
 ## Portal de Forms 
-
-* Puede utilizar los componentes Búsqueda y listador, Borradores y envío y Vincular del Portal de formularios para enumerar los formularios para los usuarios que iniciaron sesión. La compatibilidad con el uso anónimo del Portal de formularios no está disponible de forma predeterminada (OOTB). Puede personalizar el Portal de formularios para habilitar la visualización de formularios para los usuarios que no hayan iniciado sesión.
 
 * El servicio no conserva metadatos para borradores y formularios adaptables enviados.
 
@@ -85,7 +85,7 @@ Forms as a Cloud Service proporciona API RESTful de generación y manipulación 
 
 ## Integración de datos (modelo de datos de formularios)
 
-* El servicio también es compatible con conectores JDBC, Microsoft Dynamics, SalesForce, servicios web basados en SOAP y servicios compatibles con OData.
+* El servicio también es compatible con Microsoft Dynamics, SalesForce, servicios web basados en SOAP y servicios compatibles con OData.
 
 * También puede conectar el perfil de usuario de AEM para recuperar y actualizar la información de usuario.
 
@@ -96,8 +96,6 @@ Forms as a Cloud Service proporciona API RESTful de generación y manipulación 
 
 ## Firma electrónica
 
-* El servicio proporciona una integración de OOTB con Adobe Sign y es compatible con DocuSign para firmas electrónicas.
-
 * El servicio también admite las funciones de Adobe Sign. Puede configurar las funciones en el editor de formularios adaptables para que los usuarios empresariales configuren fácilmente los flujos de trabajo de firma.
 
 
@@ -105,7 +103,7 @@ Forms as a Cloud Service proporciona API RESTful de generación y manipulación 
 
 * Puede utilizar un entorno de formularios de AEM 6.5 para:
 
-   * renderizar sus formularios basados en XDP como formularios HTML5. El servicio no es compatible con formularios de HTML5 (Mobile Forms).
+   * renderizar sus formularios basados en XDP como formularios HTML5. El servicio no admite Forms de HTML5.
 
    * capturar datos sin conexión y sincronizarlos la próxima vez que vuelva a conectarse con la aplicación [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html?lang=es).
 
