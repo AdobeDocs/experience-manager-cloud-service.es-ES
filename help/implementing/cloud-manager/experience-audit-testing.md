@@ -2,10 +2,10 @@
 title: Pruebas de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e9f205a506fb2d2b7f5e634b353b112bf077058a
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 91%
+source-wordcount: '588'
+ht-degree: 85%
 
 ---
 
@@ -32,6 +32,10 @@ La auditoría de experiencias en Cloud Manager garantiza que la experiencia del 
 Los resultados de la auditoría son informativos y permiten al administrador de implementación ver las puntuaciones y el cambio entre las puntuaciones actuales y anteriores. Esta perspectiva es valiosa para determinar si hay una regresión que se introdujo con la implementación actual.
 
 La auditoría de experiencias está equipada con Google Lighthouse, una herramienta de código abierto de Google y está habilitada en todas las canalizaciones de producción de Cloud Manager.
+
+>[!INFO]
+>
+>A partir del 28 de agosto de 2023, la auditoría de experiencias pasará a mostrar resultados específicos de la plataforma móvil. Tenga en cuenta que las métricas de rendimiento móviles suelen registrarse por debajo de las del escritorio, por lo que debe anticipar un cambio en el rendimiento del informe después de este cambio.
 
 >[!TIP]
 >
