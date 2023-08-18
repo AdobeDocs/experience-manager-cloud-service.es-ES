@@ -2,9 +2,9 @@
 title: Cómo acceder al contenido a través de las API de entrega de AEM
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, aprenderá a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1366'
 ht-degree: 96%
 
 ---
@@ -374,5 +374,6 @@ Ahora que ha aprendido a acceder al contenido sin encabezado y consultarlo media
    * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [Salida JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [Comprender el uso compartido de recursos de origen cruzado (Cross-Origin Resource Sharing, CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es#understand-cross-origin-resource-sharing-(cors))
+* [Consultas persistentes de GraphQL: habilitar el almacenamiento en caché en Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Generación de los tókenes de acceso para las API del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es): una breve serie de tutoriales de vídeo que ofrecen información general sobre el uso de las funciones de AEM sin encabezado, incluidos el modelado de contenido y GraphQL.
