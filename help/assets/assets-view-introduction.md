@@ -1,10 +1,10 @@
 ---
 title: ¿En qué le beneficia la nueva interfaz de usuario de AEM Assets AEM o la vista de recursos en la que se encuentra el usuario de?
-description: Obtenga más información acerca de las ventajas clave de la nueva interfaz de usuario de AEM Assets AEM o de la nueva vista de Assets en la sección de vista de recursos de la interfaz de usuario de
+description: Obtenga más información acerca de las ventajas clave de la nueva interfaz de usuario de AEM Assets AEM o de la nueva vista de recursos en la vista de recursos de la interfaz de usuario de AdobeIDs. Adobe, aprovechando su experiencia en potenciar a los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia las reglas del juego.
 mini-toc-levels: 3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1132'
 ht-degree: 66%
 
 ---

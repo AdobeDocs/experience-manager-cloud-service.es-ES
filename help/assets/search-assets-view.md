@@ -1,12 +1,12 @@
 ---
-title: Búsqueda y descubrimiento de recursos en [!DNL Assets view]
-description: Busque y descubra recursos en [!DNL Assets view].
+title: Obtenga información sobre cómo buscar y descubrir recursos en [!DNL Assets view]?
+description: Obtenga información sobre cómo buscar y descubrir recursos en la vista de AEM Assets. La potente funcionalidad de búsqueda le permite descubrir rápidamente el recurso adecuado y ayudarle a mejorar la velocidad del contenido.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: ed7ce8be17ad1445132b9aa38a0efa84ffa70fdf
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 94%
+source-wordcount: '924'
+ht-degree: 92%
 
 ---
 

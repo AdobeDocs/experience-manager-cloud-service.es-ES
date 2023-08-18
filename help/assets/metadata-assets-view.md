@@ -1,13 +1,13 @@
 ---
-title: Administración de metadatos
-description: Administración de metadatos de recursos en [!DNL Assets view]
+title: ¿Cómo se administran los metadatos en la vista de recursos?
+description: Obtenga información sobre cómo administrar metadatos en la vista de recursos. Una mejor administración de los metadatos hace que un recurso sea más accesible, fácil de administrar y completo.
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 64%
+source-wordcount: '1557'
+ht-degree: 87%
 
 ---
 
@@ -31,13 +31,13 @@ Para ver los metadatos de un recurso, navegue hasta él o búsquelo, seleccióne
 
 ![Visualización de los metadatos de un recurso](assets/metadata-view1.png)
 
-*Imagen: para ver un recurso y sus metadatos, haga clic en **[!UICONTROL Detalles]**en la barra de herramientas o haga doble clic en el recurso.*
+*Figura: para ver un recurso y sus metadatos, haga clic en **[!UICONTROL Detalles]** en la barra de herramientas o haga doble clic en él.*
 
 Los metadatos básicos, como título, descripción y fecha de carga, están disponibles en la pestaña [!UICONTROL Básico]. La pestaña [!UICONTROL Avanzado] contiene metadatos más avanzados, como el modelo de cámara, los detalles de la lente y etiquetas geográficas. La pestaña [!UICONTROL Etiquetas] contiene etiquetas aplicadas automáticamente en función del contenido de la imagen.
 
-## Actualización de metadatos {#update-metadata}
+## Actualización de los metadatos {#update-metadata}
 
-Una vez que el administrador configura el formulario de metadatos, los demás campos se pueden actualizar manualmente. Es posible que desee cambiar esto, ya que solo se lee en función del formulario de metadatos predeterminado.
+Una vez que el administrador configura el formulario de los metadatos, los demás campos se pueden actualizar manualmente. Es posible que desee cambiar esto, ya que solo se lee en función del formulario de metadatos predeterminado.
 
 ## Etiquetas inteligentes {#smart-tags}
 
@@ -47,19 +47,19 @@ Las etiquetas inteligentes se aplican en tiempo casi real y se generan en funci�
 
 ![Visualización de las etiquetas inteligentes de un recurso](assets/metadata-view-tags.png)
 
-*Imagen: para ver las etiquetas inteligentes de un recurso, haga clic en **[!UICONTROL Detalles]**en la barra de herramientas o haga doble clic en el recurso.*
+*Imagen: para ver las etiquetas inteligentes de un recurso, haga clic en **[!UICONTROL Detalles]** en la barra de herramientas o haga doble clic en él.*
 
 Las etiquetas inteligentes también contienen una puntuación de confianza en forma de porcentaje. Indica la confianza asociada a la etiqueta aplicada. Puede moderar las etiquetas inteligentes aplicadas automáticamente.
 
-## Agregar o actualizar palabras clave {#manually-tag}
+## Adición o actualización de etiquetas {#manually-tag}
 
-Puede añadir más etiquetas a los recursos, además de las etiquetas inteligentes que se agregan automáticamente, usando el servicio inteligente [!DNL Adobe Sensei]. Abra un recurso para previsualizarlo, haga clic en [!UICONTROL Etiquetas] y escriba las palabras clave que desee en el campo [!UICONTROL Palabras clave]. Para añadir la etiqueta, pulse Intro. [!DNL Assets view] indexa la palabra clave casi en tiempo real y su equipo puede buscar rápidamente los recursos actualizados con las nuevas palabras clave.
+Puede añadir más etiquetas a los recursos, además de las etiquetas inteligentes que se agregan automáticamente, usando el servicio inteligente de [!DNL Adobe Sensei]. Abra un recurso para previsualizarlo, haga clic en [!UICONTROL Etiquetas] y escriba las palabras clave que desee en el campo [!UICONTROL Palabras clave]. Para añadir la etiqueta, pulse Intro. [!DNL Assets view] indexa la palabra clave casi en tiempo real y su equipo puede buscar rápidamente los recursos actualizados con las nuevas palabras clave.
 
 También puede quitar etiquetas de la sección [!UICONTROL Etiquetas inteligentes], que [!DNL Assets view] añade automáticamente a todos los recursos cargados.
 
 ## Administración de taxonomía {#taxonomy-management}
 
-Las etiquetas también se pueden anidar en una jerarquía para admitir relaciones como categoría y subcategoría. Si necesita insertar etiquetas jerárquicas, el administrador las gestiona fácilmente en [!UICONTROL Administración de taxonomía] sección de [!UICONTROL Configuración]. Puede crear un conjunto controlado de áreas de nombres y etiquetas a las que todos los usuarios pueden acceder para utilizar mientras describen el contenido. Solo los administradores pueden configurar jerarquías de etiquetas en [!UICONTROL Administrador de taxonomía] garantizar que los valores se controlan y utilizan de forma coherente.
+Las etiquetas también se pueden anidar en una jerarquía para admitir relaciones como categoría y subcategoría. Si necesita insertar etiquetas jerárquicas, el administrador las gestiona fácilmente en la sección [!UICONTROL Administración de taxonomía] de [!UICONTROL Configuración]. Puede crear un conjunto controlado de áreas de nombres y etiquetas a las que todos los usuarios pueden acceder para utilizar mientras describen el contenido. Solo los administradores pueden configurar jerarquías de etiquetas en [!UICONTROL Administrador de taxonomía] garantizando que los valores se controlan y utilizan de forma coherente.
 
 ## Configuración de formularios de metadatos {#metadata-forms}
 
@@ -78,7 +78,7 @@ La vista Recursos utiliza la siguiente secuencia para buscar nombres de formular
 
 Subtipo MIME > Tipo MIME > `default` formulario > Formulario predeterminado
 
-Por ejemplo, si existe un formulario de metadatos con el nombre `PDF` o `pdf`, los documentos PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si un formulario de metadatos con el nombre `PDF` o `pdf` no existe, la vista de recursos coincidirá si hay un formulario de metadatos con el nombre `application`. Si hay un formulario de metadatos con el nombre `application`, los documentos de PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si la vista Recursos sigue sin encontrar un formulario de metadatos coincidente, busca el `default` metadata form para aplicar campos de metadatos definidos en el formulario a los documentos de PDF cargados. Si ninguno de estos pasos funciona, la vista Recursos aplica campos de metadatos definidos en el formulario predeterminado a todos los documentos de PDF cargados.
+Por ejemplo, si existe un formulario de metadatos con el nombre `PDF` o `pdf`, los documentos PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si un formulario de metadatos con el nombre `PDF` o `pdf` no existe, la vista de recursos coincidirá si hay un formulario de metadatos con el nombre `application`. Si hay un formulario de metadatos con el nombre `application`, los documentos PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si la vista Recursos sigue sin encontrar un formulario de metadatos coincidente, busca el `default` metadata form para aplicar campos de metadatos definidos en el formulario a los documentos de PDF cargados. Si ninguno de estos pasos funciona, la vista Recursos aplica campos de metadatos definidos en el formulario predeterminado a todos los documentos de PDF cargados.
 
 >[!IMPORTANT]
 >
@@ -99,7 +99,7 @@ Para crear un formulario de metadatos, siga estos pasos:
 
    *Imagen: interfaz de creación de formularios de metadatos con opciones para añadir componentes y para previsualizar el formulario.*
 
-1. Para cada componente, proporcione un nombre en la variable **[!UICONTROL Configuración]** en el carril derecho, proporcione una asignación con las propiedades admitidas.
+1. Para cada componente, proporcione un nombre en **[!UICONTROL Configuración]**, en el carril derecho, y una asignación con las propiedades admitidas.
 1. De forma opcional, para un componente, seleccione **[!UICONTROL Obligatorio]** para que el campo de metadatos sea obligatorio y **[!UICONTROL Solo lectura]** para que no se pueda editar en la página [!UICONTROL Detalles] del recurso.
 1. Si lo desea, haga clic en **[!UICONTROL Previsualizar]** para previsualizar el formulario que está creando.
 1. Opcionalmente, puede añadir más pestañas y los componentes necesarios en cada una.
@@ -120,19 +120,19 @@ A continuación se ofrece una descripción general de cada tipo de propiedad y d
 
 | Nombre del componente | Descripción |
 |---|---|
-| Contenedor de acordeón | Agregue un encabezado contraíble para una lista de componentes y propiedades comunes. Se puede expandir o contraer de forma predeterminada. |
-| Texto de una sola línea | Agregue una propiedad de texto de una sola línea. |
-| Texto de varias líneas | Agregue varias líneas de texto o un párrafo. Se expande a medida que un usuario escribe para incluir todo el contenido. |
-| Texto de varios valores | Agregue una propiedad de texto de varios valores. |
-| Número | Añada un componente numérico. |
-| Casilla de verificación | Agregue un valor booleano. Se almacena como TRUE o FALSE una vez guardado un valor. |
+| Contenedor de acordeón | Añada un encabezado contraíble para ver una lista de componentes y propiedades comunes. Se puede expandir o contraer de forma predeterminada. |
+| Texto de una sola línea | Añada una propiedad de texto de una sola línea. |
+| Texto de varias líneas | Añada varias líneas de texto o un párrafo. Se expande a medida que un usuario escribe para incluir todo el contenido. |
+| Texto con varios valores | Añada una propiedad de texto de varios valores. |
+| Número | Añada un componente de número. |
+| Casilla de verificación | Añada un valor booleano. Se almacena como TRUE o FALSE una vez que se guarda un valor. |
 | Fecha | Añada un componente de fecha. |
 | Lista desplegable | Añada una lista desplegable. |
-| Estado | Agregar la propiedad de estado del repositorio (asignada al repositorio:estado) |
+| Estado | Añadir la propiedad de estado del repositorio (asignada a repo:state) |
 | Estado de los recursos | Añadir la propiedad predeterminada Estado del recurso (asignada a dam:assetStatus) |
-| Etiquetas | Agregue una etiqueta de los valores almacenados en Taxonomy Management (asignados a xcm:tags). |
-| Palabras clave | Agregar palabras clave de forma libre (asignadas a dc:subject). |
-| Etiquetas inteligentes | Añada para aumentar las capacidades de búsqueda mediante la adición automática de etiquetas de metadatos. |
+| Etiquetas | Añada una etiqueta de los valores almacenados en Administración de taxonomía (asignados a xcm:tags). |
+| Palabras clave | Añada palabras clave de forma libre (asignadas a dc:subject). |
+| Etiquetas inteligentes | Añada para aumentar las capacidades de búsqueda añadiendo automáticamente etiquetas de metadatos. |
 
 ## Pasos siguientes {#next-steps}
 

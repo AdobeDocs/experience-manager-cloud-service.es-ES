@@ -1,14 +1,14 @@
 ---
-title: Marca de agua de los recursos
-description: Agregue una marca de agua a sus recursos digitales.
+title: AEM ¿Cómo crear marcas de agua para sus recursos en la?
+description: AEM Obtenga información sobre cómo añadir una marca de agua digital a los recursos en la documentación de la. Las marcas de agua pueden ayudar a los usuarios a verificar la autenticidad y la propiedad de los derechos de autor de los recursos.
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 14%
+source-wordcount: '318'
+ht-degree: 13%
 
 ---
 
