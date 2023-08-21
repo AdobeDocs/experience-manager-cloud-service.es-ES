@@ -1,19 +1,12 @@
 ---
 title: Aplicar firmas electrónicas a un formulario utilizando firmas manuscritas
-seo-title: Apply electronic signatures to a form using scribble signatures
 description: Firma de formularios mediante firmas manuscritas
 seo-description: Signing forms using scribble
-uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
-docset: aem65
-google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
 source-wordcount: '720'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -23,7 +16,7 @@ ht-degree: 87%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
 | AEM as a Cloud Service | Este artículo |
 
 
@@ -40,7 +33,7 @@ Puede usar los componentes **Firma manuscrita** y **Paso de firma** para dibujar
 
 Una vez que pulse el icono Listo ![aem_forms_save](assets/aem_forms_save.png) en la ventana Firma manuscrita, no podrá editar la firma. Si desea editar la firma, ignore la firma actual y vuelva a firmar el formulario con las opciones Pincel/Teclado mencionadas anteriormente.
 
-Puede pulsar el botón **Configurar** ![icono de configuración](assets/configure.png) para establecer la proporción de aspecto del lienzo de firma manuscrita.
+Puede pulsar el icono **Configurar** ![configurar](assets/configure.png) para establecer la relación de aspecto del lienzo de la firma manuscrita.
 * Cuando la relación de aspecto del lienzo de firma manuscrita es menor que 1, la información de geolocalización se agrega en la parte inferior del lienzo de firma manuscrita.
 
 
@@ -67,7 +60,7 @@ Puede pulsar el botón **Configurar** ![icono de configuración](assets/configur
    >
    >El componente Paso de firma ocupa el ancho completo disponible en el formulario. Se recomienda no colocar ningún otro componente en la sección que contiene el componente Paso de firma.
 
-1. En el Explorador de contenido, pulse **Contenedor del formulario** y pulse el botón **Configurar** ![icono de configuración](assets/configure.png) icono. Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables. Vaya a **Contenedor de formulario adaptable** > **Firma electrónica** y deseleccione la opción **Habilitar Adobe Sign**. Pulse el icono Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios.
+1. En el explorador de contenido, pulse **Contenedor de formulario** y haga clic en el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables. Vaya a **Contenedor de formulario adaptable** > **Firma electrónica** y deseleccione la opción **Habilitar Adobe Sign**. Pulse el icono Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios.
 
    >[!NOTE]
    >

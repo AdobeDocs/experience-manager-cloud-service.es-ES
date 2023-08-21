@@ -1,6 +1,5 @@
 ---
-title: Usar el flujo de trabajo de traducción de AEM para localizar formularios adaptables y documentos de registro
-seo-title: Using AEM translation workflow to localize Adaptive Forms and Document of Record
+title: Localizar Forms adaptable y documento de registro
 description: Aprenda a utilizar los flujos de trabajo de traducción AEM para localizar formularios adaptables y documentos de registro.
 seo-description: Learn to use AEM translation workflows to localize Adaptive Forms and Document of Record.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
@@ -8,15 +7,15 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 98%
+source-wordcount: '527'
+ht-degree: 95%
 
 ---
 
 
-# Usar el flujo de trabajo de traducción de AEM para localizar formularios adaptables y documentos de registro {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# Localizar Forms adaptable y documento de registro{#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
 Los formularios localizados le ayudan a llegar a una audiencia más amplia en todas las regiones geográficas. El flujo de trabajo de traducción de Adobe Experience Manager le ayuda a localizar formularios adaptables y sus documentos de registro. Puede usar la **traducción automática** o **traductores humanos** para localizar un formulario adaptable.
 

@@ -1,8 +1,8 @@
 ---
-title: Arquitectura de Experience Manager  [!DNL AEM Forms]  as a Cloud Service
+title: Arquitectura as a Cloud Service de AEM Forms
 description: Familiarícese con la arquitectura de  [!DNL AEM Forms]  as a Cloud Service para conocer los aspectos de escalabilidad, resiliencia y rendimiento de la plataforma.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 98%
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
 | AEM as a Cloud Service | Este artículo |
 
 [!DNL Adobe Experience Manager Forms] as a Cloud Service es una solución nativa en la nube que permite a las empresas crear, administrar, publicar y actualizar comunicaciones y formularios digitales complejos a la vez que integran los datos enviados con procesos back-end y reglas comerciales y guardan datos en un almacén de datos externo. Es una ampliación de [!DNL Adobe Experience Manager as a Cloud Service]. Para obtener más información sobre la escala, la implementación, los entornos y otras infraestructuras, consulte [Introducción a la arquitectura de [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=es).

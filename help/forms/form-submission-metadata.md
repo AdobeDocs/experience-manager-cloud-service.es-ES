@@ -1,18 +1,18 @@
 ---
-title: Cómo añadir información de los datos de usuario a los metadatos de envío de formularios
+title: Agregar información de datos de usuario a los metadatos de envío de formularios
 description: Aprenda a añadir información a los metadatos de un formulario enviado con los datos proporcionados por los usuarios. Obtenga información más detallada sobre cómo ver los metadatos de envío de formularios actualizados en el repositorio CRX.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '689'
+ht-degree: 97%
 
 ---
 
 
-# Añadir información de datos de usuario a los metadatos de envío de formularios {#adding-information-from-user-data-to-form-submission-metadata}
+# Agregar información de datos de usuario a los metadatos de envío de formularios {#adding-information-from-user-data-to-form-submission-metadata}
 
 Puede utilizar los valores introducidos en un elemento del formulario para calcular los campos de metadatos de un borrador o un envío de formulario. Los metadatos le permiten filtrar el contenido en función de los datos de usuario. Por ejemplo, un usuario introduce John Doe en el campo Nombre del formulario. Puede utilizar esta información para calcular los metadatos que pueden categorizar este envío con las iniciales JD.
 

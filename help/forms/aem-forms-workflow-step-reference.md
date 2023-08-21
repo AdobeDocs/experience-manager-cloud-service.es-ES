@@ -1,23 +1,23 @@
 ---
-title: ¿Cómo asignar un flujo de trabajo a otro usuario, enviar correos electrónicos y utilizar Adobe Sign en un flujo de trabajo?
+title: AEM Uso de flujos de trabajo de creación de informes centrados en Forms para automatizar procesos empresariales
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo basados en formularios adaptables. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varias fuentes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '7204'
+source-wordcount: '7192'
 ht-degree: 98%
 
 ---
 
-# Flujos de trabajo AEM centrados en Forms: referencia de pasos {#forms-centric-workflow-on-osgi-step-reference}
+# Uso de flujos de trabajo de centrados en Forms AEM: referencia de pasos para automatizar los procesos empresariales{#forms-centric-workflow-on-osgi-step-reference}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Este artículo |
 
-Los modelos de flujo de trabajo se utilizan para convertir una lógica empresarial en un proceso repetitivo automatizado. Un modelo le ayuda a definir y ejecutar una serie de pasos. También puede definir propiedades del modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos. Puede [incluir varios pasos del flujo de trabajo AEM en un modelo para lograr establecer una lógica empresarial](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es#extending-aem).
+Los modelos de flujo de trabajo se utilizan Un modelo le ayuda a definir y ejecutar una serie de pasos. También puede definir propiedades del modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos. Puede [incluir varios pasos del flujo de trabajo AEM en un modelo para lograr establecer una lógica empresarial](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es#extending-aem).
 
 ## Pasos centrados en Forms {#forms-workflow-steps}
 
@@ -531,7 +531,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 
 * **[!UICONTROL Seleccionar la ubicación raíz del contenido mediante]**: la raíz del contenido es un valor de cadena que especifica el URI, la referencia absoluta o la ubicación en el repositorio para recuperar los recursos relativos que utiliza el diseño de formulario. Por ejemplo, si el diseño de formulario hace referencia a una imagen de forma relativa, como `../myImage.gif`, `myImage.gif` debe estar en `repository://`. El valor predeterminado es `repository://`, que apunta al nivel raíz del repositorio.
 
-  Cuando elige un recurso de la aplicación, la ruta del URI raíz del contenido debe tener la estructura correcta. Por ejemplo, si se selecciona un formulario de una aplicación denominada SampleApp y se coloca en `SampleApp/1.0/forms/Test.xdp`, el URI de raíz de contenido debe especificarse como `repository://administrator@password/Applications/SampleApp/1.0/forms/` o `repository:/Applications/SampleApp/1.0/forms/` (cuando la autoridad sea nula). Cuando se especifica el URI de raíz de contenido de esta manera, las rutas de todos los recursos a los que se hace referencia en el formulario se resuelven en relación con este URI.
+  Cuando elige un recurso de la aplicación, la ruta del URI raíz del contenido debe tener la estructura correcta. Por ejemplo, si se selecciona un formulario de una aplicación denominada SampleApp y se coloca en `SampleApp/1.0/forms/Test.xdp`, el URI de raíz de contenido debe especificarse como `repository://administrator@password/Applications/SampleApp/1.0/forms/` o `repository:/Applications/SampleApp/1.0/forms/` (cuando la autoridad sea nula). Cuando se especifica el URI de la raíz de contenido de esta forma, las rutas de todos los recursos a los que se hace referencia en el formulario se resuelven en relación con este URI.
 
 * **[!UICONTROL Seleccionar el archivo XCI mediante]**: los archivos XCI se utilizan para describir fuentes y otras propiedades que se utilizan para elementos de diseño de formulario. Puede mantener un archivo XCI relativo a la carga útil, en una ruta absoluta o mediante una variable del tipo de datos Document.
 

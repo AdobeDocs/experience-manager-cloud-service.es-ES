@@ -1,19 +1,18 @@
 ---
-title: Configurar los modelos de datos de formulario predeterminados de Microsoft Dynamics 365 y Salesforce para formularios adaptables
+title: Configuración de Microsoft Dynamics 365 o Salesforce para AEM Forms
 description: Aprenda a integrar Microsoft Dynamics 365 y Salesforce con formularios adaptables.
-exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 98%
+source-wordcount: '952'
+ht-degree: 97%
 
 ---
 
-# Configurar los servicios en la nube de [!DNL Microsoft Dynamics 365] y [!DNL Salesforce] {#configure-azure-storage}
+# Configuración de Microsoft Dynamics 365 o Salesforce para AEM Forms {#configure-azure-storage}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM as a Cloud Service | Este artículo |
 
 La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md) proporciona servicios en la nube para [!DNL Microsoft Dynamics 365] y [!DNL Salesforce] que permiten integrar formularios adaptables con modelos de datos de formulario predeterminados. Después, los formularios adaptables pueden interactuar con los servidores de [!DNL Microsoft Dynamics 365] y [!DNL Salesforce] para activar los flujos de trabajo empresariales. Por ejemplo:

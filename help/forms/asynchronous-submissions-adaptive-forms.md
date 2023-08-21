@@ -1,23 +1,22 @@
 ---
-title: Cómo configurar el envío asincrónico en formularios adaptables
+title: AEM Configuración del envío asincrónico de Forms adaptable de la
 description: Obtenga información sobre cómo configurar el envío asincrónico en formularios adaptables. Obtenga información más detallada sobre cómo funciona el envío asincrónico en los formularios adaptables.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 98%
+source-wordcount: '749'
+ht-degree: 97%
 
 ---
 
-# Envío asincrónico de formularios adaptables {#asynchronous-submission-of-adaptive-forms}
+# AEM Configuración del envío asincrónico de Forms adaptable de {#asynchronous-submission-of-adaptive-forms}
 
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artículo |
 
 

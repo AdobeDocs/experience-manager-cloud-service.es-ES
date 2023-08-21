@@ -1,20 +1,18 @@
 ---
-title: Conexión de una base de datos a  [!DNL AEM Forms]  as a Cloud Service
-seo-title: AEM Forms Data Integration
+title: Conexión de AEM Forms a una base de datos
 description: Puede recuperar y guardar datos en servicios web RESTful, servicios web basados en SOAP y servicios OData desde  [!DNL AEM Forms] as a Cloud Service. El servicio proporciona una herramienta dedicada para recuperar, probar, validar y enviar datos a varios tipos de fuentes de datos.
-exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 86%
+source-wordcount: '570'
+ht-degree: 90%
 
 ---
 
-# Conexión de las fuentes de datos a Cloud Service {#aem-forms-data-integration}
+# Conexión de AEM Forms a una base de datos {#aem-forms-data-integration}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
 | AEM as a Cloud Service | Este artículo |
 
 
@@ -46,7 +44,7 @@ Una vez haya creado un modelo de datos de formulario, podrá utilizarlo en vario
 
 ## Introducción a la integración de datos {#get-started-with-data-integration}
 
-El primer paso para implementar la integración de datos es identificar y configurar las fuentes de datos que almacenan la información que desea utilizar en los casos de uso de las comunicaciones interactivas y los Forms adaptables. A continuación, se crea un modelo de datos de formulario que utiliza los objetos, las propiedades y los servicios de modelo de datos de una o varias fuentes de datos. Puede crear formularios adaptables y comunicaciones interactivas basadas en un modelo de datos de formulario en el que los campos de los formularios adaptables o los marcadores de posición de las comunicaciones interactivas están enlazados a las propiedades de sus respectivas fuentes de datos.
+El primer paso para implementar la integración de datos es identificar y configurar las fuentes de datos que almacenan la información que desea aprovechar en los casos de uso de las comunicaciones interactivas y los formularios adaptables. A continuación, se crea un modelo de datos de formulario que utiliza los objetos, las propiedades y los servicios de modelo de datos de una o varias fuentes de datos. Puede crear formularios adaptables y comunicaciones interactivas basadas en un modelo de datos de formulario en el que los campos de los formularios adaptables o los marcadores de posición de las comunicaciones interactivas están enlazados a las propiedades de sus respectivas fuentes de datos.
 
 [!DNL AEM Forms] también permite crear un modelo de datos de formulario independiente de las fuentes de datos y asociar o enlazar objetos y propiedades de modelo de datos en el modelo de datos de formulario con la fuente de datos más adelante. Esto elimina la dependencia de las fuentes de datos mientras trabaja en un modelo de datos de formulario.
 

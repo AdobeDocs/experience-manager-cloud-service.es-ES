@@ -1,19 +1,18 @@
 ---
-title: Creación y administración de revisiones de Formularios adaptables incrustadas o creadas en la página Sitios
-seo-title: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step
+title: Creación y administración de revisiones para un formulario adaptable
 description: Revisar es un mecanismo que permite al revisor realizar distintas tareas para formularios adaptables mediante el paso Asignar tarea
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 100%
+source-wordcount: '351'
+ht-degree: 95%
 
 ---
 
 
-# Revise el paso de Forms en la página del sitio {#review-step-forms-aem-sites-page}
+# Creación y administración de revisiones para un formulario adaptable {#review-step-forms-aem-sites-page}
 
 Al usar el [paso Asignar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es#assign-task-step) del flujo de trabajo de AEM, el revisor revisa el formulario enviado y realiza una acción sobre él. Para revisar el formulario enviado mediante el paso Asignar tarea, siga estos pasos:
 

@@ -1,13 +1,12 @@
 ---
-title: Cómo mejorar el rendimiento de los formularios grandes mediante la carga diferida
+title: Mejorar el rendimiento de los formularios grandes mediante la carga diferida
 description: Obtenga información sobre cómo mejorar el rendimiento de los formularios grandes mediante la carga diferida. La carga diferida mejora significativamente el rendimiento de los formularios adaptables grandes y complejos al aplazar la inicialización y la carga de los fragmentos de formulario hasta que son visibles.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1071'
 ht-degree: 91%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 91%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artículo |
 
 

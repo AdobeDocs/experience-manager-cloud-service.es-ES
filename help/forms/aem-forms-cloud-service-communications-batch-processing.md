@@ -1,15 +1,15 @@
 ---
-title: Procesamiento por lotes de comunicaciones de Experience Manager  [!DNL Forms]  as a Cloud Service
+title: Procesamiento por lotes de comunicaciones as a Cloud Service de AEM Forms
 description: Crear comunicaciones personalizadas y orientadas a la marca
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 98%
+source-wordcount: '1698'
+ht-degree: 97%
 
 ---
 
-# Utilizar el procesamiento por lotes
+# Procesamiento por lotes de comunicaciones as a Cloud Service de AEM Forms
 
 Las comunicaciones le permiten crear, montar y entregar comunicaciones personalizadas y orientadas a la marca, como correspondencia comercial, documentos, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, cartas de procesamiento de reclamaciones, facturas mensuales y kits de bienvenida. Puede utilizar las API de comunicaciones para combinar una plantilla (XFA o PDF) con datos de clientes para generar documentos en los formatos PDF, PS, PCL, DPL, IPL y ZPL.
 

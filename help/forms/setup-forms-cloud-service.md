@@ -1,11 +1,10 @@
 ---
-title: Cómo configurar un entorno de  [!DNL AEM Forms]  as a Cloud Service
+title: Introducción a AEM Forms as a Cloud Service
 description: Aprenda a instalar y configurar un entorno de  [!DNL AEM Forms]  as a Cloud Service
-exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 90%
+source-wordcount: '632'
+ht-degree: 98%
 
 ---
 
@@ -13,13 +12,13 @@ ht-degree: 90%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) |
 | AEM as a Cloud Service | Este artículo |
 
 
 ## Decidir las personalidades {#personas-aem-forms-project}
 
-<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Antes de incorporarse a un [!DNL AEM Forms] Un entorno as a Cloud Service, decida las personas y organice un equipo para su proyecto. Un típico [!DNL AEM Forms] el equipo del proyecto tiene las siguientes personalidades:
+<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Antes de incorporarse a un entorno de [!DNL AEM Forms] as a Cloud Service, elija a las personas que conformarán el equipo para su proyecto. Un equipo del proyecto típico de [!DNL AEM Forms] tiene las siguientes personalidades:
 
 * **Diseñador de experiencias de usuario (UX)**: un diseñador de experiencias del usuario (UX) define el estilo, el diseño y la marca de los recursos de [!DNL AEM Forms].
 
@@ -27,7 +26,7 @@ ht-degree: 90%
 
 * **Desarrollador de Forms**: un desarrollador de Forms desarrolla una solución de formularios personalizada. Normalmente, se encarga del desarrollo back-end, como el desarrollo de componentes personalizados, flujos de trabajo de AEM, el servicio de prerrellenado y mucho más.
 
-* **AEM administrador de** AEM : un administrador de la ayuda con la configuración general, como la configuración de usuarios, el refuerzo del entorno, la configuración de fuentes de datos, la configuración de correos electrónicos y software de terceros. También ayuda con las integraciones, como la integración con Adobe Analytics, Adobe Target y Adobe Sign.
+* **Administrador de AEM**: este ayuda con la configuración general, como la de usuarios, la de fuentes de datos, los correos electrónicos, el software de terceros y refuerza el entorno. También ayuda con las integraciones, como la integración con Adobe Analytics, Adobe Target y Adobe Sign.
 
 * **Usuario final**: un usuario final interactúa con el formulario publicado y lo envía, firma los formularios enviados, realiza un seguimiento de las aplicaciones enviadas a través del portal web y recibe comunicaciones personalizadas.
 

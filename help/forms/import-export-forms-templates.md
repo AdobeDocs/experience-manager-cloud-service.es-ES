@@ -1,18 +1,16 @@
 ---
-title: Importar, exportar y organizar formularios adaptables, PDF forms y otros recursos
-seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
+title: Importar o exportar recursos adaptables de Forms y AEM Forms
 description: ¿Desea migrar formularios adaptables y recursos a y desde una instancia de AEM? Obtenga información aquí sobre cómo importar y exportar formularios adaptables, PDF forms, temáticas y otros recursos de soporte desde una instancia de  [!DNL AEM Forms] .
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 98%
+source-wordcount: '1206'
+ht-degree: 96%
 
 ---
 
-# Importar, exportar y organizar formularios adaptables, PDF forms y otros recursos {#importing-and-exporting-assets-to-aem-forms}
+# Importar o exportar recursos adaptables de Forms y AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
 Puede mover formularios adaptables y recursos relacionados, como temáticas de formulario adaptable, modelos de datos de formulario, plantillas de formulario adaptable, fragmentos de documentos y PDF forms, entre instancias de [!DNL AEM Forms]. Puede importar y exportar recursos en paquetes CRX o formatos de archivo binario.
 

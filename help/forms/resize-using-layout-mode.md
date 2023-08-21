@@ -1,24 +1,24 @@
 ---
-title: Utilizar el modo Diseño para cambiar el tamaño de los componentes para formularios adaptables
+title: Utilice el modo Diseño para cambiar el tamaño de los componentes para Forms adaptable
 description: Defina la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño. Obtenga información sobre cómo acceder al modo Diseño, cambiar el tamaño de los componentes, cambiar el tamaño de los paneles, definir el diseño de varias columnas para un panel, habilitar la nueva cuadrícula adaptable para los diseños adaptables antiguos y desactivar el modo Diseño para los formularios con un diseño adaptable antiguo.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1157'
 ht-degree: 92%
 
 ---
 
-# Usar el modo Diseño para cambiar el tamaño de los componentes {#use-layout-mode-to-resize-components}
+# Usar el modo Diseño para cambiar el tamaño de los componentes para Forms adaptable {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html) |
 | AEM as a Cloud Service | Este artículo |
 
 La interfaz de creación de formularios adaptables le permite cambiar el tamaño de los componentes mediante el modo Diseño. Arrastre los puntos azules dentro de las columnas para definir los puntos iniciales y finales para colocar los componentes. Aparecen puntos azules tras pulsar el componente en la cuadrícula adaptable. La cuadrícula adaptable consta de 12 columnas iguales. El sombreado de color blanco y azul en las columnas alternativas diferencia una columna de la otra.
