@@ -1,11 +1,11 @@
 ---
 title: Introducción a los nombres de dominio personalizados
-description: La interfaz de usuario de Cloud Manager le permite agregar un dominio personalizado para identificar su sitio con un nombre único de marca en forma de autoservicio.
+description: La interfaz de usuario de Cloud Manager le permite agregar a usted mismo un dominio personalizado para identificar su sitio con un nombre único.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 74%
+ht-degree: 89%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="Administrar los nombres de dominio personalizados"
->abstract="La interfaz de usuario de Cloud Manager le permite agregar un dominio personalizado para identificar su sitio con un nombre único de marca en forma de autoservicio."
+>abstract="La interfaz de usuario de Cloud Manager le permite agregar a usted mismo un dominio personalizado para identificar su sitio con un nombre único."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=es" text="Agregar un nombre de dominio personalizado"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html?lang=es" text="Ver y actualizar nombres de dominio personalizados"
 
-La interfaz de usuario de Cloud Manager le permite agregar un dominio personalizado para identificar su sitio con un nombre único de marca en forma de autoservicio. Adobe Experience Manager as a Cloud Service se aprovisiona con un nombre de dominio predeterminado que termina en `*.adobeaemcloud.com`. Este nombre de dominio predeterminado permanece, incluso después de asociar nombres de dominio personalizados al sitio web.
+La interfaz de usuario de Cloud Manager le permite agregar a usted mismo un dominio personalizado para identificar su sitio con un nombre único. Adobe Experience Manager as a Cloud Service se aprovisiona con un nombre de dominio predeterminado que termina en `*.adobeaemcloud.com`. Este nombre de dominio predeterminado permanece, incluso después de asociar nombres de dominio personalizados al sitio web.
 
 ## ¿Qué son los nombres de dominio personalizados? {#what-are-custom-domain-names}
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service AEM ofrece un servicio integrado de red de entrega de con
 * Los nombres de dominio personalizados (y certificados) instalados en la CDN administrada por AEM se administran mediante Cloud Manager.
 * Los nombres de dominio personalizados (y certificados) instalados en su propia CDN se administran en esa CDN específica.
 
-Los dominios administrados en su propia CDN no necesitan instalarse mediante Cloud Manager. AEM Están disponibles para su uso a través de X-Forwarded-Host y coinciden con los vhosts definidos en Dispatcher. Consulte la [Documentación de CDN](/help/implementing/dispatcher/cdn.md).
+Los dominios administrados en su propia CDN no necesitan instalarse a través de Cloud Manager. Están disponibles para AEM mediante X-Forwarded-Host y coinciden con los vhosts definidos en Dispatcher. Consulte la [Documentación de la CDN](/help/implementing/dispatcher/cdn.md).
 
 En un entorno puede tener ambos dominios instalados en la CDN administrada por AEM e instalados en su propia CDN.
 
@@ -74,4 +74,4 @@ El uso de nombres de dominio personalizados con AEMaaCS conlleva varias limitaci
 * El mismo nombre de dominio no se puede usar en más de un entorno.
 * Solo se puede agregar un nombre de dominio a la vez.
 * AEM as a Cloud Service no admite dominios comodín como `*.example.com`.
-* Antes de agregar un nombre de dominio personalizado, debe instalar en el programa un certificado SSL válido que contenga el nombre de dominio personalizado (con certificados comodín válidos). Consulte [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obtener más información.
+* Antes de agregar un nombre de dominio personalizado, debe instalar en el programa un certificado SSL válido que contenga el nombre de dominio personalizado (con certificados comodín válidos). Consulte [Adición de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obtener más información.

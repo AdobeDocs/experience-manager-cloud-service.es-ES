@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 22%
+ht-degree: 28%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 22%
 >id="aemcloud_golive_troubleshooting"
 >title="Solución de problemas de AEM"
 >abstract="Revise las prácticas recomendadas para el desarrollo continuo y administre los registros junto con herramientas como Developer Console y CRXDE Lite para ayudar a solucionar problemas con AEM."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Acceder y administrar registros"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=es" text="Acceder y administrar registros"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
 
 Este recorrido es la última parte, por lo que aprenderá a monitorizar los problemas y mejorar el rendimiento una vez que se haya completado la migración. Debe garantizar la limpieza de los archivos temporales, revisar las prácticas recomendadas para el desarrollo continuo y administrar los registros.
@@ -58,7 +58,7 @@ Consulte [Acceso y administración de registros](/help/implementing/cloud-manage
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="Ayuda y asistencia"
->abstract="Póngase en contacto con el equipo de soporte de de Adobe AEM para obtener aclaraciones o solucionar cualquier problema."
+>abstract="Póngase en contacto con el equipo de Soporte AEM de Adobe para obtener aclaraciones o solucionar cualquier problema."
 >additional-url="https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html" text="Compatibilidad con Experience Cloud"
 
 Si tiene preguntas sobre el acceso a Cloud Service, póngase en contacto con su representante de Adobe o [Asistencia para el Experience Cloud](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para obtener más información.
