@@ -2,18 +2,21 @@
 title: Uso de reCAPTCHA en Forms adaptable
 description: Obtenga información sobre cómo configurar el servicio reCAPTCHA de Google en Forms adaptable.
 topic-tags: adaptive_forms, author
-source-git-commit: b4665d0291ee1223e46c8ecf13ca13ea336107d3
+source-git-commit: ad63083016f0f8c51ea336e37461562e61c02a8f
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 61%
+source-wordcount: '1932'
+ht-degree: 64%
 
 ---
 
 # Uso de reCAPTCHA en Forms adaptable{#using-reCAPTCHA-in-adaptive-forms}
 
+<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestra [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artículo |
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
@@ -28,7 +31,7 @@ CAPTCHA (prueba de Turing completamente automática y pública para diferenciar 
 >* reCAPTCHA en Forms adaptable no es compatible con el modo sin conexión en [!DNL AEM Forms] aplicación.
 >
 
-## Configuración del servicio reCAPTCHA por Google {#google-reCAPTCHA}
+## Configuración del servicio ReCAPTCHA de Google {#google-reCAPTCHA}
 
 Los autores de formularios pueden utilizar el servicio reCAPTCHA de Google para implementar reCAPTCHA en Forms adaptable. Ofrece funcionalidades de CAPTCHA avanzadas para proteger su sitio. Para obtener más información sobre cómo funciona reCAPTCHA, consulte [Google reCAPTCHA](https://developers.google.com/recaptcha/). El servicio reCAPTCHA incluye [!DNL reCAPTCHA v2] y [!DNL reCAPTCHA Enterprise] en la que se puede integrar [!DNL AEM Forms]. Según sus necesidades, puede configurar el servicio reCAPTCHA para habilitar lo siguiente:
 
@@ -56,7 +59,7 @@ Los autores de formularios pueden utilizar el servicio reCAPTCHA de Google para 
    1. Pulse **[!UICONTROL reCAPTCHA]**. Se abre la página de configuración. Seleccione el contenedor de configuración que ha creado y pulse **[!UICONTROL Crear]**.
    1. Seleccionar versión como [!DNL reCAPTCHA Enterprise] y especifique el nombre, el ID del proyecto, la clave del sitio y la clave de la API (obtenida en el paso 2) para el servicio reCAPTCHA Enterprise.
    1. Seleccione el tipo de clave, el tipo de clave debe ser el mismo que la clave de sitio configurada en la [Proyecto de Google Cloud](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), por ejemplo, **Clave de sitio de casilla** o **Clave de sitio basada en puntuación**.
-   1. Especifique un [puntuación de umbral en el rango de 0 a 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). Las puntuaciones buenas o iguales a las puntuaciones de umbral identifican la interacción humana; de lo contrario, se considera interacción de bots.
+   1. Especifique un [puntuación de umbral en el rango de 0 a 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). Las puntuaciones superiores o iguales a las puntuaciones de umbral identifican la interacción humana; de lo contrario, se considera interacción de bots.
    1. Tocar **[!UICONTROL Crear]** para crear la configuración del servicio en la nube.
 
 <!--
@@ -108,9 +111,9 @@ Para usar reCAPTCHA en formularios adaptables haga lo siguiente:
    >* No se puede usar más de un componente Captcha en un formulario adaptable. Además, no se recomienda utilizar CAPTCHA en un panel marcado para la carga lenta o en un fragmento.
    >* reCaptcha tiene un plazo y caduca en unos minutos. Por lo tanto, se recomienda colocar el componente Captcha justo antes del botón Enviar en el formulario adaptable.
 
-1. Seleccione el componente Captcha que ha agregado y pulse ![cmppr](assets/cmppr.png) para editar sus propiedades.
+1. Seleccione el componente Captcha que ha añadido y pulse ![cmppr](assets/cmppr.png) para editar sus propiedades.
 1. Especifique un título para el widget CAPTCHA. El valor predeterminado es **Captcha**. Seleccione **Ocultar título** si no desea que aparezca el título.
-1. Desde el **Servicio Captcha** menú desplegable, seleccione **reCAPTCHA** para habilitar el servicio reCAPTCHA si se ha configurado como se describe en [Servicio reCAPTCHA de Google](#google-reCAPTCHA).
+1. En el menú desplegable **servicio Captcha**, seleccione **reCAPTCHA** para habilitarlo si lo configuró como se describe en el [Servicio reCAPTCHA de Google](#google-reCAPTCHA).
 1. Seleccione una configuración en la lista desplegable Configuración para **reCAPTCHA Enterprise** o **reCAPTCHA v2**
    1. Si selecciona **reCAPTCHA Enterprise** versión, el tipo de clave puede ser **casilla de verificación** o **basado en puntuación**, se basa en la selección realizada al configurar [clave del sitio para sitios web](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key):
 
@@ -221,7 +224,7 @@ Pulse **[!UICONTROL Valor de moneda]** en el formulario y cree las siguientes re
 
 >[!NOTE]
 >
-> Cuando selecciona una configuración de reCAPTCHA v2 y el tamaño se establece en [!UICONTROL Invisible], la opción mostrar/ocultar permanece desactivada.
+> Cuando selecciona una configuración de reCAPTCHA versión 2 y el tamaño se establece en [!UICONTROL Invisible], la opción mostrar/ocultar permanece deshabilitada.
 
 ### Validar CAPTCHA {#validate-captcha}
 
