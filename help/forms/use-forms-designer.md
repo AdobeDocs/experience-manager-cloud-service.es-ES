@@ -1,15 +1,15 @@
 ---
-title: Utilice Forms Designer para crear plantillas de documento de registro y fragmentos de formulario
+title: Uso de AEM Forms Designer
 description: Usar  [!DNL AEM Forms]  Designer para crear plantillas de documento de registro.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 86%
+source-wordcount: '150'
+ht-degree: 94%
 
 ---
 
-# Utilice Forms Designer para crear plantillas de documento de registro (DoR) y fragmentos de formulario {#install-designer}
+# Uso de AEM Forms Designer {#install-designer}
 
 Designer es una herramienta gráfica de diseño de formularios que simplifica la creación de plantillas de formulario XDP y PDF. Puede diseñar una plantilla de formulario, definir su lógica y cumplir unos estrictos requisitos normativos. Estas plantillas sirven como plantilla de documento de registro para un formulario adaptable. Estas plantillas de formulario son diferentes de las [plantillas de formulario adaptable](template-editor.md).
 
