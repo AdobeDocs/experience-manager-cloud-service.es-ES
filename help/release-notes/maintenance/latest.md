@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e78410a1ce229db0dd3529bf544f694e97bfff46
+source-git-commit: 10c495505b3997ec6360aa2764ead37725759cb2
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 19%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -59,6 +59,7 @@ La activación de funciones 2023.8.0 proporcionará el conjunto completo de func
 - SITES-15359: Fragmentos de contenido: el patrón de nombre de variación no coincide correctamente con las variaciones que tienen ```'_'``` en sus nombres de recursos.
 - FORMS-10444: Plantillas de Forms adaptables: las plantillas no se pueden publicar (solución alternativa: utilice la consola de distribución).
 - CQ-4354191: Flujos de trabajo: el iniciador personalizado puede entrar en déclencheur muchas veces debido a los metadatos de replicación presentes en los nodos nt:unstructured (solución alternativa: actualice los iniciadores para excluir las propiedades de metadatos de replicación para evitar la superposición).
+- SITES-15622: GraphQL: problema con consultas persistentes con número de parámetros.
 
 ### Tecnologías integradas {#embedded-tech-13206}
 
