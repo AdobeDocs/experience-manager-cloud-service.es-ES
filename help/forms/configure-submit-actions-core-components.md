@@ -3,10 +3,10 @@ title: Configurar una acción de envío para un formulario adaptable
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
 workflow-type: tm+mt
-source-wordcount: '3365'
-ht-degree: 80%
+source-wordcount: '3575'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 80%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Este artículo |
 | Se aplica a | ✅ Componentes principales de formularios adaptables, ❎ [Componentes de base de formulario adaptable](/help/forms/configuring-submit-actions.md) |
 
@@ -36,14 +36,14 @@ También puede [ampliar las acciones de envío predeterminadas](custom-submit-ac
 
 Para seleccionar y configurar una acción de envío para el formulario:
 
-1. Abra el Explorador de contenido y seleccione **[!UICONTROL Contenedor de guía]** del formulario adaptable.
-1. Haga clic en las propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg) icono. Se abrirá el cuadro de diálogo Contenedor de formulario adaptable.
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 
-1. Haga clic en  **[!UICONTROL Envío]** pestaña.
+1. Abra la pestaña **[!UICONTROL Envío]**.
 
    ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar una acción de envío](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Seleccione y configure un **[!UICONTROL Acción de envío]**, según sus necesidades. Para obtener información detallada sobre la acción de envío seleccionada, consulte:
+1. Seleccione y configure una **[!UICONTROL acción de envío]** según sus necesidades. Para obtener información detallada sobre la acción de envío seleccionada, consulte:
 
    * [Enviar correo electrónico](#send-email)
    * [Enviar a SharePoint](#submit-to-sharedrive)
@@ -52,6 +52,7 @@ Para seleccionar y configurar una acción de envío para el formulario:
    * [Enviar al punto final REST](#submit-to-rest-endpoint)
    * [Enviar a OneDrive](#submit-to-onedrive)
    * [Invocar un flujo de trabajo de AEM](#invoke-an-aem-workflow)
+   * [Enviar a Power Automate](#microsoft-power-automate)
 
 ## Enviar correo electrónico {#send-email}
 
@@ -345,6 +346,20 @@ Al enviar el formulario, los datos se guardan en la configuración especificada 
 La estructura de carpetas para guardar datos es `/configuration_container/form_name/year/month/date/submission_id/data`.
 
 Para establecer los valores de una configuración, [Generar configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
+
+
+## Enviar a Power Automate {#microsoft-power-automate}
+
+Puede configurar un formulario adaptable para ejecutar un flujo de nube de Microsoft® Power Automate en el envío. El formulario adaptable configurado envía los datos capturados, los archivos adjuntos y el documento de registro al flujo de nube de Power Automate para su procesamiento. Le ayuda a crear una experiencia de captura de datos personalizados mientras aprovecha el poder de Microsoft® Power Automate para crear lógicas empresariales en torno a los datos capturados y automatizar los flujos de trabajo de los clientes. A continuación se muestran algunos ejemplos de lo que puede hacer después de integrar un formulario adaptable con Microsoft® Power Automate:
+
+* Usar datos de formularios adaptables en procesos empresariales de Power Automate
+* Utilice Power Automate para enviar datos capturados a más de 500 fuentes de datos o a cualquier API disponible públicamente
+* Realizar cálculos complejos en los datos capturados
+* Guardar datos de formularios adaptables en sistemas de almacenamiento con una programación predefinida
+
+El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar una acción y enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para utilizar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [conecte su instancia de Forms as a Cloud Service con Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
+
+Después de una configuración correcta, utilice el [Invocar un flujo de Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Enviar acción para enviar datos a un flujo de Power Automate.
 
 ## Usar envío sincrónico o asincrónico {#use-synchronous-or-asynchronous-submission}
 
