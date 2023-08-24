@@ -2,10 +2,10 @@
 title: Configuración de IMS que usar al integrar con Adobe Analytics
 description: Obtenga más información acerca de la configuración de IMS que usar al integrar con Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 91%
+source-wordcount: '914'
+ht-degree: 96%
 
 ---
 
@@ -45,7 +45,7 @@ El primer paso de la configuración es crear una configuración de IMS en AEM y 
 1. En AEM, abra el menú **Herramientas**.
 1. En la sección **Seguridad**, seleccione **Configuraciones de IMS de Adobe**.
 1. Seleccione **Crear** para abrir la **Configuración de cuenta técnica de Adobe IMS**.
-1. Uso de la lista desplegable debajo de **Configuración de nube**, seleccione **Adobe Analytics**.
+1. En la lista desplegable debajo de **Configuración de nube**, seleccione **Adobe Analytics**.
 1. Active **Crear nuevo certificado** e introduzca un nuevo alias.
 1. Confirme con **Crear certificado**.
 
@@ -55,7 +55,7 @@ El primer paso de la configuración es crear una configuración de IMS en AEM y 
 
    >[!CAUTION]
    >
-   >Mantenga esta configuración abierta, es necesaria de nuevo cuando [AEM Finalización de la configuración de IMS en la](#completing-the-ims-configuration-in-aem).
+   >Mantenga esta configuración abierta, será necesaria de nuevo cuando [complete la configuración de IMS en AEM](#completing-the-ims-configuration-in-aem).
 
    ![Descargar certificado](assets/integrate-analytics-ims-02.png)
 
@@ -67,15 +67,21 @@ Con Adobe Developer Console, debe crear un proyecto (integración) con Adobe Ana
 
 Abra Adobe Developer Console para crear un proyecto con Adobe Analytics que usará AEM:
 
+>[!CAUTION]
+>
+>Actualmente, solo admitimos el de Adobe Developer Console **Cuenta de servicio (JWT)** tipo de credencial.
+>
+>No use el **Servidor a servidor OAuth** tipo de credencial, que se admitirá en el futuro.
+
 1. Abra Adobe Developer Console para proyectos:
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Se mostrarán todos los proyectos que tenga. Seleccione **Crear nuevo proyecto**. La ubicación y el uso dependerán de lo siguiente:
+1. Se muestran todos los proyectos que tenga. Seleccione **Crear nuevo proyecto**. La ubicación y el uso dependerán de lo siguiente:
 
    * Si todavía no tiene ningún proyecto, **Crear nuevo proyecto** está en el centro, abajo.
      ![Creación de un nuevo proyecto: primer proyecto](assets/integration-analytics-ims-02.png)
-   * Si ya tiene proyectos existentes, estos se enumeran y **Crear nuevo proyecto** es superior derecha.
+   * Si ya tiene proyectos, estos se enumeran y **Crear nuevo proyecto** está en la parte superior derecha.
      ![Creación de un nuevo proyecto: varios proyectos](assets/integration-analytics-ims-03.png)
 
 
@@ -160,7 +166,7 @@ Al volver a AEM puede completar la configuración de IMS añadiendo los valores 
 
 1. Confirme con **Crear**.
 
-1. La configuración de Adobe Analytics AEM se muestra en la consola de.
+1. La configuración de Adobe Analytics se muestra en la consola de AEM.
 
    ![Configuración de IMS](assets/integrate-analytics-ims-11.png)
 

@@ -2,10 +2,10 @@
 title: Configuración de IMS que usar al integrar con Adobe Target
 description: Obtenga información acerca de la configuración de IMS que usar al integrar con Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 155b24c4b46e8baebd6215c0717d9f2adde95017
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 91%
+source-wordcount: '883'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ El primer paso de la configuración es crear una configuración de IMS en AEM y 
 1. En AEM, abra el menú **Herramientas**.
 1. En la sección **Seguridad**, seleccione **Configuraciones de IMS de Adobe**.
 1. Seleccione **Crear** para abrir la **Configuración de cuenta técnica de Adobe IMS**.
-1. Uso de la lista desplegable debajo de **Configuración de nube**, seleccione **Adobe Target**.
+1. En la lista desplegable debajo de **Configuración de nube**, seleccione **Adobe Target**.
 1. Active **Crear nuevo certificado** e introduzca un nuevo alias.
 1. Confirme con **Crear certificado**.
 
@@ -53,7 +53,7 @@ El primer paso de la configuración es crear una configuración de IMS en AEM y 
 
    >[!CAUTION]
    >
-   >Mantenga esta configuración abierta, es necesaria de nuevo cuando [AEM Finalización de la configuración de IMS en la](#completing-the-ims-configuration-in-aem).
+   >Mantenga esta configuración abierta, será necesaria de nuevo cuando [complete la configuración de IMS en AEM](#completing-the-ims-configuration-in-aem).
 
    ![Descargar certificado](assets/integrate-target-ims-02.png)
 
@@ -65,15 +65,21 @@ AEM utilizará el Proyecto de Adobe Developer Console (integración) con Adobe T
 
 Abra Adobe Developer Console para crear un proyecto con Adobe Target que utilizará AEM:
 
+>[!CAUTION]
+>
+>Actualmente, solo admitimos el de Adobe Developer Console **Cuenta de servicio (JWT)** tipo de credencial.
+>
+>No use el **Servidor a servidor OAuth** tipo de credencial, que se admitirá en el futuro.
+
 1. Abra Adobe Developer Console para proyectos:
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Se mostrarán todos los proyectos que tenga. Seleccione **Crear nuevo proyecto**. La ubicación y el uso dependerán de lo siguiente:
+1. Se muestran todos los proyectos que tenga. Seleccione **Crear nuevo proyecto**. La ubicación y el uso dependerán de lo siguiente:
 
    * Si todavía no tiene ningún proyecto, **Crear nuevo proyecto** está en el centro, abajo.
      ![Creación de un nuevo proyecto: primer proyecto](assets/integration-target-ims-02.png)
-   * Si ya tiene proyectos existentes, estos se enumeran y **Crear nuevo proyecto** es superior derecha.
+   * Si ya tiene proyectos, estos se enumeran y **Crear nuevo proyecto** está en la parte superior derecha.
      ![Creación de un nuevo proyecto: varios proyectos](assets/integration-target-ims-03.png)
 
 
@@ -108,7 +114,7 @@ Abra Adobe Developer Console para crear un proyecto con Adobe Target que utiliza
 
    ![Seleccione perfiles de producto y guarde la API configurada](assets/integration-target-ims-16.png)
 
-1. La creación se confirma.
+1. La creación se ha confirmado.
 
 <!--
 1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
@@ -169,7 +175,7 @@ Al volver a AEM, puede completar la configuración de IMS añadiendo los valores
 
 1. Confirme con **Crear**.
 
-1. La configuración de Adobe Target AEM se muestra en la consola de.
+1. La configuración de Adobe Target se muestra en la consola de AEM.
 
    ![Configuración de IMS](assets/integrate-target-ims-11.png)
 
