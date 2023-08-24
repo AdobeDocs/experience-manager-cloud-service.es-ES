@@ -1,11 +1,10 @@
 ---
-title: Compatibilidad con notas al pie
-description: Compatibilidad con RTE para notas al pie.
-exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+title: Compatibilidad de notas al pie con Forms adaptable
+description: Mejore el Forms adaptable con notas al pie informativas de texto enriquecido. Mejore la experiencia del usuario y la participación.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 88%
+source-wordcount: '439'
+ht-degree: 78%
 
 ---
 
@@ -33,7 +32,7 @@ En formularios adaptables, la [!UICONTROL nota al pie] sirve para mostrar inform
 Para añadir una nota al pie en un formulario adaptable, siga estos pasos:
 1. Abra un formulario adaptable en el modo **Edición**.
 1. Desde el explorador de componentes, arrastre y suelte el componente **[!UICONTROL Texto]** en el formulario adaptable.
-1. Seleccione el componente **[!UICONTROL Texto]** que ha añadido y pulse ![cmppr](assets/configure-icon.svg) para editar sus propiedades.
+1. Seleccione el **[!UICONTROL Texto]** componente que ha agregado y pulse ![cmppr](assets/configure-icon.svg) para editar sus propiedades.
 
    ![Nota al pie en formularios adaptables](/help/forms/assets/footnote_rte.png)
 

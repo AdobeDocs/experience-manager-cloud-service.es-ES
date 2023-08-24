@@ -1,13 +1,10 @@
 ---
 title: Configuración de Fuera de la oficina
-seo-title: Configure Out of Office settings
-description: Configurar las opciones de Fuera de la oficina
-seo-description: Configure Out of Office settings
-exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+description: Delegue tareas mientras está de licencia o fuera de la oficina para ejecutar el flujo de trabajo sin problemas.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 98%
+source-wordcount: '826'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +12,7 @@ ht-degree: 98%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Si planea estar fuera de la oficina, puede especificar qué sucederá con los elementos que se le hayan asignado durante ese período.
@@ -55,7 +52,7 @@ Realice los siguientes pasos para habilitar la configuración de Fuera de la ofi
 
    >[!NOTE]
    >
-   >El orden de los usuarios asignados es importante. Cuando se asigna un elemento a un usuario que ha habilitado la configuración de Fuera de la oficina, el elemento se evalúa según la lista de usuarios asignados especificados en el orden en el que se agregan los usuarios asignados. Cuando un elemento coincide con los criterios, se asigna al usuario asignado y el siguiente usuario no se comprueba.
+   >El orden de los usuarios asignados es importante. Cuando se asigna un elemento a un usuario que ha habilitado la configuración de Fuera de la oficina, el elemento se evalúa según la lista de usuarios asignados especificados en el orden en que se agregan los usuarios asignados. Cuando un elemento coincide con los criterios, se asigna al usuario asignado y el siguiente usuario no se comprueba.
 
 1. Pulse **[!UICONTROL Guardar]**. La configuración se aplica en la fecha y la hora de inicio especificadas. Si inicia sesión mientras está fuera de la oficina, no se considerará que ha vuelto hasta que cambie la configuración.
 
@@ -64,7 +61,7 @@ Ahora, los elementos que se le hayan asignado durante el período de tiempo que 
 
 >[!NOTE]
 >
->(Solo para los elementos de flujos de trabajo centrados en formularios) Active la opción **[!UICONTROL Permitir que el usuario asignado delegue mediante la configuración de Fuera de la oficina]** del paso **[!UICONTROL Asignar tarea]** del flujo de trabajo. Solo los elementos que tienen la opción mencionada habilitada se delegan en otros usuarios.
+>(Solo para los elementos de flujos de trabajo centrados en formularios) Active la opción **[!UICONTROL Permitir que el usuario asignado delegue mediante la configuración de Fuera de la oficina]** del paso **[!UICONTROL Asignar tarea]** del flujo de trabajo. Solo los elementos que tienen la opción mencionada anteriormente habilitada se delegan en otros usuarios.
 
 ## Restricciones {#limitations}
 

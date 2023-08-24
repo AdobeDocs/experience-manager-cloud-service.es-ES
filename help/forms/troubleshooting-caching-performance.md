@@ -1,14 +1,11 @@
 ---
 title: Resolución de problemas de rendimiento del almacenamiento en caché
-seo-title: Troubleshooting caching performance
-description: Resolución de problemas de rendimiento del almacenamiento en caché
-seo-description: Troubleshooting caching performance
+description: Solución de problemas relacionados con el almacenamiento en caché para AEM Forms as a Cloud Service
 contentOwner: khsingh
-exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '360'
-ht-degree: 100%
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 96%
 
 ---
 

@@ -1,12 +1,11 @@
 ---
 title: Firmar electrónicamente un formulario con firmas manuscritas
-description: Firma de formularios mediante firmas manuscritas
-seo-description: Signing forms using scribble
+description: Firme electrónicamente y sin esfuerzo Forms adaptable mediante la firma manuscrita y el paso de firma. Optimice la firma digital para aumentar la eficacia.
 topic-tags: author
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 90%
+source-wordcount: '725'
+ht-degree: 87%
 
 ---
 
