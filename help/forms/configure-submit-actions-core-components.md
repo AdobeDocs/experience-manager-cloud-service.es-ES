@@ -3,10 +3,10 @@ title: Configurar una acción de envío para un formulario adaptable
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 hide: true
 hidefromtoc: true
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '3575'
-ht-degree: 82%
+source-wordcount: '3573'
+ht-degree: 81%
 
 ---
 
@@ -357,7 +357,7 @@ Puede configurar un formulario adaptable para ejecutar un flujo de nube de Micro
 * Realizar cálculos complejos en los datos capturados
 * Guardar datos de formularios adaptables en sistemas de almacenamiento con una programación predefinida
 
-El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar una acción y enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para utilizar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [conecte su instancia de Forms as a Cloud Service con Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
+El editor de Forms adaptable proporciona el **Invocar un flujo de Microsoft® Power Automate** Enviar acción para enviar datos de formularios adaptables, archivos adjuntos y documentos de registro al flujo de nube de Power Automate. Para utilizar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [conecte su instancia de Forms as a Cloud Service con Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
 
 Después de una configuración correcta, utilice el [Invocar un flujo de Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Enviar acción para enviar datos a un flujo de Power Automate.
 

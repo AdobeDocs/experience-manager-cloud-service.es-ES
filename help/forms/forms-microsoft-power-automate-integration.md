@@ -3,10 +3,10 @@ title: Conexión y envío de datos de formularios adaptables a Microsoft&reg; Po
 description: Una guía paso a paso para conectar y enviar datos de formulario adaptable a Microsoft&reg; Power Automate.
 keywords: Forms Microsoft Power Automate adaptable, enviar datos de Forms adaptables a Microsoft Power Automate
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 76%
+source-wordcount: '1198'
+ht-degree: 75%
 
 ---
 
@@ -119,7 +119,7 @@ Tras [conectar su instancia de Forms as a Cloud Service con Microsoft® Power Au
 1. Inicie sesión en la instancia de autor, seleccione su formulario adaptable y haga clic en **[!UICONTROL Propiedades]**.
 1. En el contenedor de configuración, examine y seleccione el contenedor creado en la sección [Crear la configuración de nube de Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) y pulse **[!UICONTROL Guardar y cerrar]**.
 1. Abra el formulario adaptable para editarlo y vaya a la sección **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable.
-1. En el contenedor de propiedades, para **[!UICONTROL Acciones de envío]**, seleccione la opción **[!UICONTROL Invocar un flujo de Power Automate]**. Una lista de los flujos de Power Automate disponibles está disponible en la opción **[!UICONTROL Flujo de Power Automate]**. Seleccione el flujo necesario y los datos de formularios adaptables se envían en el momento del envío.
+1. En el contenedor de propiedades, para **[!UICONTROL Acciones de envío]** seleccione el **[!UICONTROL Invocar un flujo de Power Automate]** y seleccione una **[!UICONTROL Flujo de Power Automate]**. Seleccione el flujo necesario y los datos de formularios adaptables se envían en el momento del envío.
 
    ![Configurar la acción de envío](assets/submission.png)
 
