@@ -1,9 +1,9 @@
 ---
 title: Configuración de reglas de CDN y WAF para filtrar el tráfico
 description: Utilice las reglas del cortafuegos de aplicaciones web y CDN para filtrar el tráfico malintencionado
-source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
+source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2391'
 ht-degree: 2%
 
 ---
@@ -310,17 +310,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
 "rid": "974e67f6",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
-"req_mthd": "GET",
-"res_type": "",
+"method": "GET",
+"res_ctype": "",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=path-rule;waf=;action=blocked"
 }
 ```
@@ -329,17 +330,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
-"req_mthd": "GET",
-"res_type": "image/png",
+"method": "GET",
+"res_ctype": "image/png",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=;waf=SQLI;action=blocked"
 }
 ```
@@ -352,15 +354,16 @@ A continuación se muestra una lista de los nombres de campo utilizados en los r
 |---|---|
 | *timestamp* | Hora a la que se inició la solicitud, después de la finalización de TLS |
 | *ttfb* | Abreviatura de *Tiempo hasta el primer byte*. Intervalo de tiempo entre el inicio de la solicitud hasta el punto en el que el cuerpo de la respuesta comenzó a transmitirse. |
-| *recorte* | La dirección IP del cliente. |
+| *cli_ip* | La dirección IP del cliente. |
+| *cli_country* | De dos letras [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) código de país alfa-2 del país cliente. |
 | *librar* | El valor del encabezado de la solicitud que se utiliza para identificar la solicitud de forma exclusiva. |
-| *ua* | El agente de usuario responsable de realizar una solicitud HTTP determinada. |
+| *req_ua* | El agente de usuario responsable de realizar una solicitud HTTP determinada. |
 | *host* | La autoridad a la que está destinada la solicitud. |
 | *url* | La ruta completa, incluidos los parámetros de consulta. |
-| *req_mthd* | Método HTTP enviado por el cliente, como &quot;GET&quot; o &quot;POST&quot;. |
-| *res_type* | Tipo de contenido que se utiliza para indicar el tipo de medio original del recurso |
+| *método* | Método HTTP enviado por el cliente, como &quot;GET&quot; o &quot;POST&quot;. |
+| *res_ctype* | Tipo de contenido que se utiliza para indicar el tipo de medio original del recurso. |
 | *cache* | Estado de la caché. Los valores posibles son HIT, MISS o PASS |
-| *res_status* | El código de estado HTTP como valor entero. |
-| *res_bsize* | Bytes de cuerpo enviados al cliente en la respuesta. |
-| *servidor* | Centro de datos del servidor de caché de CDN. |
+| *status* | El código de estado HTTP como valor entero. |
+| *res_age* | Cantidad de tiempo (en segundos) que una respuesta se ha almacenado en caché (en todos los nodos). |
+| *hacer explotar* | Centro de datos del servidor de caché de CDN. |
 | *reglas* | El nombre de cualquier regla coincidente, tanto para reglas de CDN como para reglas waf.<br><br>Las reglas de CDN coincidentes aparecen en la entrada de registro para todas las solicitudes a CDN, independientemente de si se trata de una visita de CDN, una pasada o una omisión.<br><br>También indica si la coincidencia resultó en un bloqueo. <br><br>Por ejemplo, &quot;`cdn=;waf=SQLI;action=blocked`&quot;<br><br>Vacío si no coinciden las reglas. |
