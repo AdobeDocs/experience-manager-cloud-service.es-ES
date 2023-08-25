@@ -2,10 +2,10 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f28b8a85de76a1658ef45c509cbf5600baa1bb3a
 workflow-type: tm+mt
-source-wordcount: '2266'
-ht-degree: 29%
+source-wordcount: '2267'
+ht-degree: 57%
 
 ---
 
@@ -16,9 +16,9 @@ Aprenda lo fácil e intuitivo que es para los autores crear contenido con el edi
 
 ## Introducción {#introduction}
 
-El editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para que pueda ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de desarrollador avanzada.
+El editor universal permite editar cualquier aspecto de todo tipo de contenido en todas las implementaciones para que pueda ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de última generación a los desarrolladores.
 
-Para ello, el editor universal proporciona a los autores de contenido una interfaz de usuario intuitiva que requiere una formación mínima para simplemente poder saltar y comenzar a editar contenido. Este documento describe la experiencia de creación del editor universal.
+Para ello, se proporciona una IU intuitiva que requiere una formación mínima para comenzar a editar contenido. Este documento describe la experiencia de creación del editor universal.
 
 >[!TIP]
 >
@@ -30,27 +30,27 @@ Para ello, el editor universal proporciona a los autores de contenido una interf
 
 ## Preparación de la aplicación {#prepare-app}
 
-Para crear contenido para una aplicación con el editor universal, la aplicación debe estar instrumentada por un desarrollador para admitir el editor.
+Para poder crear contenido para una aplicación con el editor universal, el desarrollador debe instrumentarla para que admita el editor.
 
 >[!TIP]
 >
->Consulte [AEM Introducción al editor universal en el entorno de trabajo de la aplicación de](getting-started.md) AEM para ver un ejemplo de cómo configurar una aplicación de la para que funcione con el editor universal.
+>Consulte el documento [Introducción al editor universal en AEM](getting-started.md) para ver un ejemplo de cómo configurar una aplicación de AEM para que funcione con el editor universal.
 
 ## Inicio de sesión {#sign-in}
 
 Una vez instrumentada la aplicación para que funcione con el editor universal, deberá iniciar sesión. Para el editor universal, necesitará el Adobe ID para iniciar sesión y [tener acceso.](getting-started.md#request-access)
 
-Cuando haya iniciado sesión, introduzca la dirección URL de la página que desea editar en la [barra de ubicación.](#location-bar) para que pueda empezar a editar contenido como [contenido de texto](#text-mode) o [contenido multimedia.](#media-mode)
+Una vez que haya iniciado sesión, introduzca la URL de la página que desea editar en la [barra de ubicación.](#location-bar) para que pueda empezar a editar contenido como [contenido de texto](#text-mode) o [contenido multimedia.](#media-mode)
 
 ## Comprensión de la IU {#ui}
 
-La interfaz de usuario de se divide en cinco áreas principales.
+La IU se divide en cinco áreas principales.
 
 * [El encabezado de Experience Cloud](#experience-cloud-header)
 * [El encabezado del editor universal](#universal-editor-header)
 * [El carril de modo](#mode-rail)
 * [El editor](#editor)
-* [El carril de componentes](#component-rail)
+* [El carril de componente](#component-rail)
 
 ![La IU del editor universal](assets/ui.png)
 
@@ -86,19 +86,19 @@ El icono de ayuda proporciona acceso rápido a los recursos de aprendizaje y asi
 
 #### Notificaciones {#notifications}
 
-Este icono tiene la insignia con el número de asignaciones incompletas actualmente [notificaciones.](/help/implementing/cloud-manager/notifications.md)
+Este icono se muestra con la cantidad de [notificaciones](/help/implementing/cloud-manager/notifications.md) incompletas asignadas actualmente.
 
 ![Notificaciones](assets/notifications.png)
 
 #### Propiedades del usuario {#user-properties}
 
-Toque o haga clic en el icono que representa a su usuario para acceder a la configuración. Si no tiene configurada una imagen de usuario, se asigna un icono de forma aleatoria.
+Toque o haga clic en el icono que representa a su usuario para acceder a la configuración. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
 
 ![Propiedades del usuario](assets/user-properties.png)
 
 ### El encabezado del editor universal {#universal-editor-header}
 
-El encabezado del editor universal siempre está presente en la parte superior de la pantalla, justo debajo [del encabezado de Experience Cloud.](#experience-cloud-header) Esto le permite desplazarse rápidamente a otra página para editarla y publicarla.
+El encabezado del editor universal siempre está presente en la parte superior de la pantalla, justo debajo [del encabezado de Experience Cloud.](#experience-cloud-header) Le permite un acceso rápido a otra página para editarla y publicar la actual.
 
 ![Encabezado del editor universal](assets/universal-editor-header.png)
 
@@ -106,7 +106,7 @@ El encabezado del editor universal siempre está presente en la parte superior d
 
 El menú de hamburguesa aún no está implementado.
 
-![Menú Hamburguesa](assets/hamburger-menu.png)
+![Menú de hamburguesa](assets/hamburger-menu.png)
 
 #### Barra de ubicación {#location-bar}
 
@@ -124,7 +124,7 @@ La barra de ubicación muestra la dirección de la página que está editando. T
 
 #### Configuración del emulador {#emulator}
 
-Toque o haga clic en el icono de emulación para definir cómo el Editor universal procesa la página.
+Toque o haga clic en el icono de emulación para definir cómo el editor universal procesa la página.
 
 ![Icono Emulador](assets/emulator.png)
 
@@ -132,13 +132,13 @@ Al tocar o hacer clic en el icono de emulación, se muestran las opciones.
 
 ![Opciones de emulación](assets/emulation-options.png)
 
-De forma predeterminada, el editor se abrirá en un diseño de escritorio en el que el explorador define automáticamente la altura y la anchura.
+De forma predeterminada, el editor se abre en un diseño de escritorio en el que el explorador define automáticamente la altura y la anchura.
 
-También puede emular un dispositivo móvil y en el Editor universal:
+En el editor universal, también puede emular un dispositivo móvil, además de lo siguiente:
 
 * Definir su orientación
-* Definición del ancho y el alto
-* Cambio de la orientación
+* Definir la anchura y la altura
+* Cambiar la orientación
 
 #### Apertura de la vista previa de la aplicación {#open-app-preview}
 
@@ -152,7 +152,7 @@ Toque o haga clic en el icono de abrir vista previa de la aplicación para abrir
 
 #### Publicación {#publish}
 
-Toque o haga clic en el botón Publicar para poder publicar los cambios en el contenido en directo para que los consuman sus lectores.
+Toque o haga clic en el botón de publicación para publicar los cambios en el contenido en directo para que los lectores lo consuman.
 
 ![Botón Publicar](assets/publish.png)
 
@@ -162,7 +162,7 @@ Toque o haga clic en el botón Publicar para poder publicar los cambios en el co
 
 ### El carril de modo {#rail}
 
-El carril de modo siempre está presente en la parte izquierda del editor. Permite cambiar fácilmente el editor entre los diferentes modos de edición.
+El carril siempre está presente en la parte izquierda del editor. Permite cambiar fácilmente el editor entre los diferentes modos de edición.
 
 ![El carril de modo](assets/mode-rail.png)
 
@@ -193,7 +193,7 @@ En el modo de texto, el autor del contenido puede hacer clic en para seleccionar
 
 En el modo multimedia, el autor del contenido puede hacer clic para seleccionar contenido multimedia.
 
-![Modo Media](assets/media-mode.png)
+![Modo multimedia](assets/media-mode.png)
 
 Los detalles del contenido se muestran en el carril del componente y el autor también puede [editar el contenido multimedia.](#editing-media)
 
@@ -201,11 +201,11 @@ Los detalles del contenido se muestran en el carril del componente y el autor ta
 >
 >Utilice la tecla de acceso directo `M` para cambiar al modo multimedia.
 
-#### Modo de componente {#component-mode}
+#### Modo de componentes {#component-mode}
 
 En el modo de componente, el autor del contenido puede hacer clic para seleccionar [Fragmentos de contenido.](/help/assets/content-fragments/content-fragments.md)
 
-![Modo de componente](assets/component-mode.png)
+![Modo de componentes](assets/component-mode.png)
 
 Al seleccionar un fragmento de contenido, sus detalles se muestran en el carril del componente, donde puede [edite el fragmento de contenido.](#edit-content-fragment)
 
@@ -215,34 +215,34 @@ Al seleccionar un fragmento de contenido, sus detalles se muestran en el carril 
 
 ### El Editor {#editor}
 
-El editor ocupa la mayor parte de la ventana y es donde la página especificada en [la barra de ubicación](#location-bar) se procesa.
+El editor ocupa la mayor parte de la ventana y es donde se procesa la página especificada en [la barra de ubicación](#location-bar).
 
 * Si el editor se encuentra en un modo de edición como [modo de texto](#text-mode) o [modo multimedia,](#media-mode) el contenido se podrá editar, pero no podrá seguir los vínculos.
 * Si el editor se encuentra en [modo de previsualización,](#preview-mode) el contenido es navegable y puede seguir los vínculos, pero no puede editar el contenido.
 
 ![Editor](assets/editor.png)
 
-### Carril del componente {#component-rail}
+### Carril de componente {#component-rail}
 
-El carril del componente siempre está presente a lo largo del lado izquierdo del editor. Según su modo, puede mostrar detalles de un componente seleccionado en el contenido o en la jerarquía del contenido de la página.
+El carril del componente siempre está presente en el lado derecho del editor. Según su modo, puede mostrar detalles de un componente seleccionado en el contenido o la jerarquía del contenido de la página.
 
-![El carril de componentes](assets/component-rail.png)
+![El carril de componente](assets/component-rail.png)
 
-#### Modo de propiedades {#properties-mode}
+#### Modo propiedades {#properties-mode}
 
-En el modo de propiedades, el carril muestra las propiedades del componente seleccionado actualmente en el editor. Este es el modo predeterminado del carril del componente cuando se carga una página.
+En el modo propiedades, el carril muestra las propiedades del componente seleccionado actualmente en el editor. Este es el modo predeterminado del carril de componente cuando se carga una página.
 
-![Modo Propiedades](assets/properties-mode.png)
+![Modo propiedades](assets/properties-mode.png)
 
 Según el tipo de componente que seleccione, los detalles se pueden mostrar y modificar en el carril de propiedades.
 
-![Detalles del componente](assets/component-details.png)
+![Detalles de los componentes](assets/component-details.png)
 
 Tenga en cuenta que no todos los componentes tienen detalles que se puedan mostrar o editar.
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `D` para cambiar al modo propiedades.
+>Utilice la tecla de acceso directo `D` para cambiar al modo de propiedades.
 
 #### Modo de árbol de contenido {#content-tree-mode}
 
@@ -298,7 +298,7 @@ Toque o haga clic en el botón Eliminar [elimina el componente.](#deleting-compo
 
 ## Edición de contenido {#editing-content}
 
-La edición de contenido es sencilla e intuitiva. En modos de edición ([modo de texto](#text-mode), [modo multimedia](#media-mode), y [modo componente](#component-mode)), cuando pasa el ratón sobre el contenido en el editor, el contenido editable se resalta con un cuadro azul.
+La edición de contenido es sencilla e intuitiva. En los modos de edición ([modo de texto](#text-mode), [modo multimedia](#media-mode), y [modo de componentes](#component-mode)), cuando pasa el ratón sobre el contenido en el editor, el contenido editable se resalta con un cuadro azul.
 
 ![El contenido editable se resalta con un cuadro azul](assets/editable-content.png)
 
@@ -398,7 +398,7 @@ Tenga en cuenta que, en el modo de vista previa, tocar o hacer clic en el conten
 
 Para obtener más información acerca del editor universal, consulte estos documentos.
 
-* [Introducción al editor universal](introduction.md) - Descubra cómo el editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para que pueda ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de desarrollador avanzada.
+* [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de última generación a los desarrolladores.
 * [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el publicado.
 * [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 * [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
