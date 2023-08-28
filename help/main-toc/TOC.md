@@ -8,10 +8,10 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
+source-git-commit: 49d1e002f22427d8ffc6c5bdecd054c10eac47b9
 workflow-type: tm+mt
-source-wordcount: '4249'
-ht-degree: 97%
+source-wordcount: '4252'
+ht-degree: 98%
 
 ---
 
@@ -147,7 +147,7 @@ ht-degree: 97%
          + [Notas de la versión 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Notas de la versión 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Notas de la versión 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Notas de la versión de Workfront para el conector mejorado de Experience Manager {#workfront}
+   + Notas de la versión de Workfront para el conector mejorado de Experience Manager{#workfront}
       + [Notas de la versión de Workfront para el conector mejorado de Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [¿Qué hay de nuevo?](/help/release-notes/what-is-new.md)
    + [Cambios importantes en AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -512,13 +512,14 @@ ht-degree: 97%
       + [Preguntas frecuentes sobre la entrega de contenido HTTP2](/help/assets/dynamic-media/http2faq.md)
       + [Fin de vida útil para visualizadores Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fin de vida útil de los visualizadores DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + Trabajar con la vista Recursos {#assets-view}
+   + Trabajo con la vista Recursos {#assets-view}
       + [Introducción](/help/assets/assets-view-introduction.md)
-      + [Primeros pasos](/help/assets/get-started-assets-view.md)
+      + [Introducción](/help/assets/get-started-assets-view.md)
       + [Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md)
       + [Tipos de archivos admitidos y casos de uso](/help/assets/supported-file-formats-assets-view.md)
       + [Visualización de recursos](/help/assets/navigate-assets-view.md)
       + [Carga y adición de recursos](/help/assets/add-delete-assets-view.md)
+      + [Importación masiva de recursos](/help/assets/bulk-import-assets-view.md)
       + [Búsqueda y descubrimiento de recursos](/help/assets/search-assets-view.md)
       + [Tareas de administración de recursos](/help/assets/manage-organize-assets-view.md)
       + [Edición de imágenes](/help/assets/edit-images-assets-view.md)
@@ -572,22 +573,22 @@ ht-degree: 97%
       + [Crear un formulario adaptable](/help/forms/create-an-adaptive-form.md)
       + [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Creación de formularios adaptables: componentes principales {#authoring-adaptive-forms-core-components}
-         + Creación de un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
-            + [Creación de un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
+         + Crear un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
+            + [Crear un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
             + [Creación de temáticas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
             + [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
             + [Creación de Formularios adaptables: componentes principales en una página de AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Utilizar la traducción automática o la traducción humana para traducir un formulario adaptable](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurar la página de redireccionamiento o el mensaje de agradecimiento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Crear formularios con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
-            + [Configurar la acción de envío para un formulario adaptable](/help/forms/configure-submit-actions-core-components.md)
+            + [Configuración de una acción de envío para un formulario adaptable](/help/forms/configure-submit-actions-core-components.md)
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
       + Crear formularios adaptables: componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)
             + [Conversión de un formulario PDF existente en un formulario adaptable](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=es)
             + [Revisar y corregir formularios convertidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=es#welcome-to-review-and-correct-editor)
-         + Creación de un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
+         + Crear un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
             + [Introducción a la creación de un formulario adaptable](/help/forms/introduction-forms-authoring.md)
             + [Crear un formulario adaptable](/help/forms/creating-adaptive-form.md)
             + [Temáticas de referencia, plantillas y modelos de datos](/help/forms/reference-themes-templates-data-models.md)
@@ -601,14 +602,14 @@ ht-degree: 97%
             + [Aplicar firma manuscrita](/help/forms/signing-forms-using-scribble.md)
             + [Adición de una tabla a un formulario adaptable](/help/forms/adaptive-forms-tables.md)
             + [Agregar compatibilidad con notas al pie a un formulario adaptable](/help/forms/footnotes-richtextsupport.md)
-         + Configuración del diseño y aplicación de estilo a un formulario adaptable {#configure-layout-of-an-adaptive-form}
+         + Configuración del diseño y aplicación de estilo a un formulario adaptable{#configure-layout-of-an-adaptive-form}
             + [Definición del diseño de un formulario adaptable](/help/forms/layout-capabilities-adaptive-forms.md)
             + [Uso del modo Diseño para cambiar el tamaño de los componentes](/help/forms/resize-using-layout-mode.md)
             + [Creación de una experiencia de captura de datos en varios pasos](/help/forms/introduction-form-sequence.md)
             + [Aplicación de estilos CSS en línea a componentes de formulario adaptable individuales](/help/forms/inline-style-adaptive-forms.md)
          + Adición de reglas y uso de expresiones en un formulario adaptable {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Adición de reglas a un formulario adaptable](/help/forms/rule-editor.md)
-            + [Agregar un controlador de error personalizado mediante el servicio Invocar del Editor de reglas](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [Agregar un controlador de error personalizado mediante el servicio Invocar del editor de reglas](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + Uso [!DNL Adobe Sign] {#use-adobe-sign}
             + [Uso de Adobe Sign para firmar electrónicamente un formulario adaptable](/help/forms/working-with-adobe-sign.md)
          + Configuración de envío de acciones y envío de metadatos {#configure-submit-actions-and-metadata-submission}
@@ -639,7 +640,7 @@ ht-degree: 97%
       + [Uso de fuentes personalizadas en documentos PDF](/help/forms/use-custom-fonts.md)
       + [Problemas conocidos, prácticas recomendadas y preguntas más frecuentes](/help/forms/communications-known-issues-limitations.md)
    + Referencia de API de desarrollador {#aem-forms-developer-api-reference}
-      + [Referencia de API de Forms adaptable](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [Referencia de la API de los formularios adaptables](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Referencia de la API de comunicaciones del Cloud Service de AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [Referencia de la API de JavaScript del Cloud Service de AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [Referencia de la API de Java del Cloud Service de AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
@@ -944,7 +945,7 @@ ht-degree: 97%
       + [API de ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
       + [Configuración de la segmentación con ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=es)
    + Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
-      + Ampliación de AEM con el Generador de aplicaciones {#app-builder}
+      + Ampliación de AEM con el Generador de aplicaciones{#app-builder}
          + [Ampliación de AEM mediante el Generador de aplicaciones para desarrolladores de Adobe](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Introducción al Generador de aplicaciones](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)

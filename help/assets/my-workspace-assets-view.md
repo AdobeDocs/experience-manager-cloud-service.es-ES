@@ -2,10 +2,10 @@
 title: Mi espacio de trabajo para la vista Recursos
 description: Mi espacio de trabajo es una página que proporciona módulos visuales personalizables para acceder fácilmente a las áreas clave de la interfaz de usuario de Assets y a la información más relevante para el usuario.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: ab607be0cc4a6c7f686978250a513c776f73024e
+source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 77%
+source-wordcount: '740'
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 77%
 
 Assets ahora incluye un espacio de trabajo personalizable que proporciona utilidades para acceder fácilmente a las áreas clave de la interfaz de usuario de Assets y a la información más relevante para usted. Esta página sirve como solución integral para proporcionar información general sobre los elementos de trabajo y un acceso rápido a los flujos de trabajo clave. Un acceso más práctico a estas opciones aumenta su eficacia y velocidad de contenido.
 
-Puede acceder a mi espacio de trabajo haciendo clic en **[!UICONTROL mi espacio de trabajo]** de los elementos disponibles en el panel de navegación izquierdo. Mi espacio de trabajo incluye una variedad de widgets que muestran el acceso rápido, las perspectivas, las tareas y los widgets de contenido. Puede configurar cómo se muestran estos widgets en el espacio de trabajo en función de sus preferencias.
+Puede acceder a mi espacio de trabajo haciendo clic en **[!UICONTROL mi espacio de trabajo]** de los elementos disponibles en el panel de navegación izquierdo. Mi espacio de trabajo incluye una serie de widgets, entre los que se muestran Insights, Tareas y Contenido. Puede configurar cómo se muestran estos widgets en el espacio de trabajo en función de sus preferencias.
 
 >[!NOTE]
 >
@@ -38,17 +38,25 @@ Highlights upcoming features for Assets.
 
 **Acceso rápido**
 
-Ancle archivos, carpetas y colecciones para acceder más rápidamente a estos elementos cuando los necesite más adelante. Todos los elementos anclados se muestran en la **Acceso rápido** de Mi espacio de trabajo. Puede acceder a ellas mediante Mi espacio de trabajo en lugar de desplazarse a la ubicación en la que se guardan en el repositorio.
+Fije archivos, carpetas y colecciones para acceder más rápidamente a estos elementos cuando los necesite más adelante. Todos los elementos fijados se muestran en la sección **Acceso rápido** de Mi espacio de trabajo. Puede acceder a ellos mediante Mi espacio de trabajo en lugar de desplazarse a la ubicación en la que se guardan en el repositorio.
 
-Para anclar un recurso, una carpeta o una colección, seleccione el elemento y haga clic en **[!UICONTROL Anclar a Acceso rápido]**.
+Para anclar un recurso, una carpeta o una colección:
 
-![Tareas en el espacio de trabajo](assets/quick-access.png)
+1. Seleccione el elemento y haga clic en **[!UICONTROL Anclar a Acceso rápido]**.
+
+1. Seleccione si necesita fijar el elemento solo para usted, para toda la organización o para los grupos seleccionados. Si selecciona **[!UICONTROL Para grupos]**, defina los nombres de grupo en la **[!UICONTROL Fijar para grupos]** field.
+
+   ![Anclar elementos para grupos](assets/pin-items-for-groups.png)
+1. Clic **[!UICONTROL Fijar]**.
+
+   El elemento seleccionado se muestra en la **[!UICONTROL Acceso rápido]** de Mi espacio de trabajo.
+   ![Tareas en el espacio de trabajo](assets/quick-access.png)
 
 **Perspectivas**
 
 Los administradores pueden ver un resumen del número de descargas y cargas realizadas en el entorno de Assets durante los últimos 30 días. Puede hacer clic en **[!UICONTROL Ver todo]** para acceder rápidamente a la página de perspectivas para ver paneles más detallados.
 
-También puede ver los términos más buscados junto con el número de veces que se buscan esos términos en la implementación de la vista de recursos mediante **Insights** de Mi espacio de trabajo. También puede navegar a Perspectivas detalladas para ver las búsquedas principales durante los últimos 30 días o 12 meses.
+También puede ver los términos más buscados junto con el número de veces que se buscan esos términos en la implementación de la vista de recursos mediante **Insights** de Mi espacio de trabajo. También puede navegar hasta Insights detallados para ver las búsquedas principales durante los últimos 30 días o 12 meses.
 
 ![Insights en el espacio de trabajo](assets/insights.png)
 
