@@ -2,10 +2,10 @@
 title: Introducción a Cloud Manager
 description: Obtenga información sobre cómo Cloud Manager admite su proyecto de AEM a través de sus programas, entornos y canalizaciones.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: fe2b0eab36a3ecd6c731fe8c9ac23fd4a3175341
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 82%
+source-wordcount: '861'
+ht-degree: 97%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 82%
 
 Cloud Manager es un componente esencial de AEM as a Cloud Service y sirve como punto de entrada único para su equipo. Sus canalizaciones de CD/CI creadas para fines específicos están equipadas para garantizar pruebas exhaustivas y la máxima calidad del código para ofrecer experiencias excepcionales. Para garantizar que los clientes puedan iniciar sus proyectos rápidamente, Cloud Manager proporciona todo lo necesario en forma de autoservicio, incluida la capacidad de crear los recursos y entornos de la nube y acceder a los repositorios de Git. Estas funciones admiten configuraciones de desarrollo empresarial para que los equipos puedan trabajar con frecuencia para comprometer cambios, ofrecer rápidamente experiencias digitales excepcionales y agilizar el tiempo de obtención de valor.
 
-El administrador del sistema es el responsable de configurar el equipo de Cloud Manager, que incluirá personas que crearán sus recursos y desarrolladores en la nube. AEM as a Cloud Service Para obtener más información acerca de cómo configurar y escalar su equipo de desarrollo empresarial y ver cómo puede apoyar su proceso de desarrollo con los programas de desarrollo de su empresa, vea la sección sobre cómo configurar y escalar su equipo de desarrollo empresarial (en inglés) y ver cómo los programas de desarrollo de su empresa pueden ayudarle en el proceso de desarrollo de su empresa (en inglés), vea la sección sobre cómo los programas de desarrollo de su empresa (en inglés) y ver cómo los programas de desarrollo de su empresa pueden ayudarle en su proceso de desarrollo). [AEM Configuración de desarrollo de equipo empresarial para la as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).
+El administrador del sistema es el responsable de configurar el equipo de Cloud Manager, que incluirá personas que crearán sus recursos y desarrolladores en la nube. Para obtener más información sobre cómo configurar y escalar su equipo de desarrollo empresarial y ver cómo AEM as a Cloud Service puede apoyar su proceso de desarrollo, consulte el documento [Configuración de desarrollo del equipo empresarial para AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).
 
 ## Vaya a la página Información general de Cloud Manager {#navigate-cloud-manager}
 
@@ -23,7 +23,7 @@ Siga estos pasos para navegar a Cloud Manager.
 
 1. Seleccione la página **Programas y productos** de Cloud Manager para abrir la página **Información general**.
 
-También puede navegar a la página Programas y productos de Cloud Manager desde la página de inicio de Adobe Experience Cloud siguiendo estos pasos.
+También puede navegar hasta la página Programas y productos de Cloud Manager desde la página de inicio de Adobe Experience Cloud siguiendo estos pasos.
 
 1. Vaya a Adobe Experience Cloud en [`https://experience.adobe.com`](https://experience.adobe.com) e inicie sesión con su Adobe ID.
 
@@ -51,10 +51,12 @@ También puede navegar a la página Programas y productos de Cloud Manager desde
 | Generar token de acceso personal | Acceso a Git |  | x |  | x |
 | Crear RDE | Crear un Entorno de desarrollo rápido | x |  |  | x |
 | Restablecer RDE | Restablecer un Entorno de desarrollo rápido | x |  |  | x |
+| Creación o modificación de conjuntos de contenido | Creación o modificación de un conjunto de contenido para la copia de contenido |  | x |  |  |
+| Iniciar/cancelar copia de contenido | Iniciar o cancelar un proceso de copia de contenido |  | x |  |  |
 
 >[!NOTE]
 >
->Se puede asignar a un usuario varias funciones. Por ejemplo, asignar ambos **Propietario del negocio** y **Administrador de implementación** funciones a un usuario le da al usuario la suma de estos permisos.
+>Se puede asignar a un usuario varias funciones. Por ejemplo, asignar ambas funciones de **Propietario empresarial** y **Administrador de implementación** a un usuario le da al usuario la suma de estos permisos.
 
 ## Programas de Cloud Manager {#cloud-manager-programs}
 
@@ -75,7 +77,7 @@ Un usuario puede crear un programa de **zona protegida** o un programa de **prod
 
 ## Entornos de Cloud Manager {#cloud-manager-environments}
 
-Los entornos de nube se crean, acceden y visualizan mediante Cloud Manager. Estos entornos pueden ser entornos de producción, ensayo o desarrollo. Los distintos entornos tienen diferentes propósitos y pueden utilizarse con distintas canalizaciones CI/CD. Los entornos están compuestos por servicios como:
+Los entornos de nube se crean; podrá verlos y acceder a ellos a través de Cloud Manager. Estos entornos pueden ser entornos de producción, ensayo o desarrollo. Los distintos entornos tienen diferentes propósitos y pueden utilizarse con distintas canalizaciones CI/CD. Los entornos están compuestos por servicios como:
 
 * [Servicios de creación de AEM](#author-services)
 * [Servicios de publicación de AEM](#publish-services)
@@ -83,7 +85,7 @@ Los entornos de nube se crean, acceden y visualizan mediante Cloud Manager. Esto
 
 >[!TIP]
 >
-> Ver el vídeo [Uso de entornos de Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=es) una descripción general de los entornos disponibles.
+> Consulte el vídeo [Uso de entornos de Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=es) para ver una descripción general de los entornos disponibles.
 >
 >Consulte [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información sobre los tipos de entorno que un usuario puede crear y cómo puede hacerlo.
 
