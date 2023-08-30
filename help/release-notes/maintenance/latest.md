@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 6b4fa2802b860c938f5085f047cc880f29698f3e
+source-git-commit: 22ed74b307b9eb4c6c2f72ac2a34e2ab6d30a85c
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 18%
+source-wordcount: '284'
+ht-degree: 45%
 
 ---
 
@@ -13,60 +13,44 @@ ht-degree: 18%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 13206 {#release-13206}
+## Versión 13239 {#release-13239}
 
-A continuación se resumen las mejoras continuas para la 13206 de la versión de mantenimiento, que se publicó el 21 de agosto de 2023. Esta versión de mantenimiento sustituye a las versiones 13173 y 13099 para solucionar un problema que afecta a la funcionalidad de la bandeja de entrada.
+A continuación se resumen las mejoras continuas para la 13239 de la versión de mantenimiento, que se publicó el 29 de agosto de 2023. Esta versión de mantenimiento sustituye a las 13206 de la versión.
 
-La activación de funciones 2023.8.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
+La activación de funciones 2023.9.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
 
-### Mejoras {#enhancements-13206}
+### Mejoras {#enhancements-13239}
 
-- SITES-13906: GraphQL: actualice a graphql-java 20.1.
-- SITES-8972: GraphQL: agregue la etiqueta de opción en JSON para el tipo de datos de enumeración.
-- SITES-9689: GraphQL: agregue el título y la descripción en JSON para el tipo de datos de referencia de contenido.
-- SITES-13052: Fragmentos de contenido: exporte fragmentos de contenido a Adobe Target.
+- GRANITE-46784: Agregar opción para deshabilitar BearerAuthenticationHandler
+- GRANITE-36205: Actualice la versión interna de la versión de Oak a la más reciente
+- GRANITE-47059: Eliminar paquete SSL de Granite Jetty
+- ASSETS-26713: vínculo externo de la interfaz de usuario táctil al nuevo panel de la interfaz de usuario de la experiencia. Integración con el shell unificado y actualización con la interfaz táctil optimizada
+- SKYOPS-63302: actualizar com.adobe.granite:com.adobe.granite.auth.saml a la versión 1.0.54
+- GRANITE-46634: actualizar al cliente de eventos 1.4.0
+- GRANITE-46788: Actualizar bibliotecas de Apache Commons
+- GRANITE-29211: Actualización de las herramientas a Sling Feature Model 2.0
+- GRANITE-46705: Actualización a Apache Felix Http Jetty 4.1.14
+- GRANITE-46631: actualizar la versión de Jackrabbit a 2.20.11
+- SKYOPS-61895: Actualización a Jackrabbit Filevault 3.7.0
 
-### Problemas corregidos {#fixed-issues-13206}
+### Problemas corregidos {#fixed-issues-13239}
 
-- SITES-14937: MSM: Heredar configuraciones de despliegue del valor principal se activa al pulsar Guardar y cerrar en Live Copies.
-- SITES-14847: Fragmentos de contenido: los vínculos de fragmentos de contenido no están resaltados.
-- SITES-11620: Fragmentos de contenido: la ruta de referencias se corta ligeramente en la interfaz de usuario.
-- SITES-14171: GraphQL: Las referencias circulares no se rompen para los datos almacenados en caché en algunos casos.
-- SITES-14577: Fragmentos de experiencias: la publicación en lote no funciona para Live Copies.
-- SITES-14341: IU de administración: comportamiento incoherente del botón &quot;Propiedades&quot; cuando se eliminan permisos de eliminación.
-- SITES-11000: IU de administración - Referencias: Faltan vínculos entrantes en algunas páginas.
-- SITES-11559: IU de administración - Referencias: Los vínculos entrantes muestran páginas incorrectas.
-- SITES-14337: IU de administración: al abrir la página del editor se produce un error en casos específicos.
-- SITES-13425: ContextHub: la barra de menús no se muestra al hacer clic en el botón de ContextHub.
-- CQ-4354266: no se pueden abrir los elementos de la bandeja de entrada.
-- CQ-4354279: no se puede ver el informe de actividad en la pestaña Personalización.
-- FORMS-9971: Cuando se procesa un formulario adaptable en una configuración regional diferente, la visibilidad de los componentes se interpreta y aplica de forma inexacta.
-- FORMS-9888: Cuando un formulario adaptable se configura para redireccionarse a una URL externa (página de agradecimiento) al enviar el formulario, no se redirige a la URL externa.
-- FORMS-9845: Después de borrar una lista desplegable usando el editor de reglas, los valores proporcionados anteriormente persisten, a pesar de la supuesta autorización.
-- FORMS-9263: Cuando la etiqueta de una casilla de verificación contiene caracteres especiales y un usuario hace clic en la casilla de verificación, la casilla de verificación correspondiente no está seleccionada.
-- FORMS-9254: a medida que un usuario se desplaza por el texto del componente Términos y condiciones, la casilla de verificación dentro del componente se habilita automáticamente incluso antes de que el usuario se haya desplazado por todo el texto.
-- FORMS-9045: la etiqueta de script no resuelve las referencias de fragmento externas en el XDP base.
-- FORMS-9026: Al intentar crear un formulario adaptable con un esquema JSON que tiene Enumeraciones con cadenas vacías y valida sin errores, el proceso genera un error. A continuación, al actualizar la página, el formulario no se carga correctamente, lo que muestra un formulario en blanco junto con un error en los registros.
-- FORMS-8964: en Android™ Chrome/Firefox, el texto no se puede editar en el componente Cuadro de texto si se alcanza el límite máximo de caracteres.
-- FORMS-8668: Excesivos volcados de pila de Java™ en registros de errores, a pesar del procesamiento de formularios funcionales, lo que provoca un hinchamiento del archivo de registro.
-- FORMS-8554: la Forms adaptable con la carga diferida habilitada no funciona en el modo de vista previa de la instancia de autor.
-- FORMS-8177: Cuando el servicio de Forms está activo, se produjo una excepción &quot;com.adobe.aem.formsndocuments.publish.AssetReferenceProvider no se pudieron recuperar las dependencias del recurso.&quot; ocurre. El error desaparece al deshabilitar el servicio de Forms.
-- FORMS-3691: Faltan ámbitos de IIFE (expresión de función invocada inmediatamente) en algunos objetos. El propósito principal de utilizar un IIFE es crear un ámbito para las variables dentro de la función, evitando que esas variables contaminen el ámbito global.
-- SITES-15463: plantillas de sitios: las plantillas no se pueden publicar.
+- SKYOPS-63290: Se ha corregido la evolución incorrecta de los contenedores
+- SKYOPS-54607: El cálculo de la carga del servidor de Ratelimiter no es correcto para la solicitud que ha fallado
+- ASSETS-27648: ContentModelIT no puede leer archivos de exclusión de otros paquetes
+- GRANITE-43744: Sling Authenticator no funciona correctamente si hay una configuración incorrecta con el requisito de autenticación y la ruta de vanidad
+- AEM GRANITE-46419: Problema de integración de con Auth0 Idp
+- AEM GRANITE-46292: La configuración de Okta SAML no funciona después de la actualización de la nube de
 
-### Problemas conocidos {#known-issues-13206}
+### Problemas conocidos {#known-issues-13239}
 
-- SITES-15359: Fragmentos de contenido: el patrón de nombre de variación no coincide correctamente con las variaciones que tienen ```'_'``` en sus nombres de recursos.
-- FORMS-10444: Plantillas de Forms adaptables: las plantillas no se pueden publicar (solución alternativa: utilice la consola de distribución).
-- CQ-4354191: Flujos de trabajo: el iniciador personalizado puede entrar en déclencheur muchas veces debido a los metadatos de replicación presentes en los nodos nt:unstructured (solución alternativa: actualice los iniciadores para excluir las propiedades de metadatos de replicación para evitar la superposición).
-- SITES-15622: GraphQL: problema con consultas persistentes con número y parámetros booleanos.
-- SITES-15654: GraphQL: problemas con uniones y propiedades del mismo nombre.
+Ninguna.
 
-### Tecnologías integradas {#embedded-tech-13206}
+### Tecnologías integradas {#embedded-tech-13239}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
-| AEM OAK | 1.52-T20230629133256-25c01b8 | [API Oak 1.52.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.52.0/index.html) |
+| AEM OAK | 1,54-T20230817132355-3800a65 | [API Oak 1.54.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
 | API AEM SLING | Versión 2.27.2 | [API de Apache Sling 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Versión 1.4.20-1.4.0 | [Especificación de idioma de la plantilla HTML](https://github.com/adobe/htl-spec) |
 | Los componentes principales de AEM | Versión 2.23.2 | [Componentes principales de WCM de AEM](https://github.com/adobe/aem-core-wcm-components) |
