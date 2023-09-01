@@ -2,10 +2,10 @@
 title: Cómo hacer un lanzamiento con su aplicación sin encabezado
 description: En esta parte del recorrido para desarrolladores de AEM sin encabezado, aprenda a implementar un lanzamiento de la aplicación sin encabezado tomando su código local en Git y mudándolo a Cloud Manager Git para la canalización de integración continua/entrega continua (CI/CD).
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 93%
+source-wordcount: '1093'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ Para preparar su aplicación AEM sin encabezado para el lanzamiento, siga las pr
 
 * Evite crear consultas que produzcan más de 15 kb de JSON (gzip comprimido). Los archivos JSON largos consumen muchos recursos para que la aplicación cliente los analice.
 * Evite más de cinco niveles anidados de jerarquías de fragmento. Los niveles adicionales hacen que a los autores de contenido les resulte difícil considerar el impacto de sus cambios.
-* Utilice consultas de varios objetos en lugar de modelar consultas con jerarquías de dependencia dentro de los modelos. Esto permite una mayor flexibilidad a largo plazo para reestructurar la salida de JSON sin tener que realizar muchos cambios en el contenido.
+* Utilice consultas de varios objetos en lugar de modelar consultas con jerarquías de dependencia dentro de los modelos. Esto permite una mayor flexibilidad a largo plazo para reestructurar el output de JSON sin tener que hacer muchos cambios de contenido.
 
 ## Maximizar la proporción de visitas en caché de CDN {#maximize-cdn}
 
@@ -50,7 +50,7 @@ Para preparar su aplicación AEM sin encabezado para el lanzamiento, siga las pr
    * Utilice consultas persistentes siempre que sea posible.
    * Proporcione el tiempo de duración (TTL) de la red de distribución de contenido (CDN) por encima de 600 segundos para que la CDN los almacene en la caché.
    * AEM calcula el impacto de un cambio de modelo en las consultas existentes.
-* Divida los archivos JSON y las consultas de GraphQL entre una tasa de cambio de contenido baja y alta para que pueda reducir el tráfico del cliente a CDN y asignar un TTL más alto. Esto minimiza la CDN que vuelve a validar el JSON con el servidor de origen.
+* Divida los archivos JSON o consultas GraphQL entre tasas de cambio de contenido bajas y altas para reducir el tráfico de clientes a la CDN y asignar un TTL más alto. Esto minimiza la CDN que vuelve a validar el JSON con el servidor de origen.
 * Para invalidar activamente el contenido de la CDN, utilice la depuración leve. Esto permite a la CDN volver a descargar el contenido sin provocar una pérdida de caché.
 
 ## Mejora del tiempo para descargar contenido sin encabezado {#improve-download-time}
@@ -124,12 +124,15 @@ Ya ha iniciado su primer proyecto de AEM sin encabezado o ahora tiene los conoci
 
 ### Explorar aplicaciones de una sola página {#explore-spa}
 
-AEM Sin embargo, las tiendas sin encabezado en la no tienen por qué parar aquí. Tal vez recuerde que en la [parte de introducción del recorrido](getting-started.md#integration-levels) analizamos brevemente cómo AEM no solo admite entregas sin encabezado y modelos de pila completa tradicionales, sino que también puede admitir modelos híbridos que combinan las ventajas de ambos.
+Sin embargo, las tiendas sin encabezado de AEM no tienen que detenerse aquí. Tal vez recuerde que en la [parte de introducción del recorrido](getting-started.md#integration-levels) analizamos brevemente cómo AEM no solo admite entregas sin encabezado y modelos de pila completa tradicionales, sino que también puede admitir modelos híbridos que combinan las ventajas de ambos.
 
 Si este es el tipo de flexibilidad que necesita para su proyecto, continúe con la parte opcional adicional del recorrido, [Cómo crear aplicaciones de una sola página (SPA) con AEM.](create-spa.md)
 
 ## Recursos adicionales {#additional-resources}
 
+* [AEM Introducción a la como CMS sin encabezado](/help/headless/introduction.md)
+* [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
 * [Información general sobre la implementación de AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Uso de Cloud Manager para implementar el código](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es)
 * [Integración del repositorio Git de Cloud Manager con un repositorio Git externo e implementación de un proyecto en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=es)

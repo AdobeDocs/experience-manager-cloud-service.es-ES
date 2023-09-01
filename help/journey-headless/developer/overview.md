@@ -3,10 +3,10 @@ title: Recorrido para desarrolladores de CMS sin encabezado de AEM
 description: Obtenga información sobre el desarrollo sin encabezado mediante Adobe Experience Manager (AEM) como un CMS sin encabezado. Aprender a utilizar funciones como modelos de contenido, fragmentos de contenido y una API de GraphQL para potenciar la entrega de contenido sin encabezado.
 landing-page-description: Obtenga información sobre la entrega e implementación del contenido sin encabezado. Obtenga más información sobre el desarrollo de su estrategia dentro de su empresa.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 93%
+source-wordcount: '1099'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 Bienvenidos a la documentación para los desarrolladores que son nuevos en CMS de Adobe Experience Manager sin encabezado.
 
-Obtenga información acerca de las potentes y flexibles funciones sin encabezado, sus capacidades y cómo utilizarlas en su primer proyecto de desarrollo sin encabezado. Este recorrido proporciona toda la información necesaria para desarrollar su primera aplicación sin encabezado.
+Obtenga información sobre las funciones potentes y flexibles sin encabezado, sus capacidades y cómo utilizarlas en su primer proyecto de desarrollo sin encabezado. Este recorrido proporciona toda la información necesaria para desarrollar su primera aplicación sin encabezado.
 
 {{headless-trials-promotion}}
 
@@ -89,8 +89,10 @@ Los recorridos de documentación muestran cómo AEM resuelve un problema de la e
 
 Consulte estos recorridos adicionales para obtener más información sobre cómo las potentes funciones de AEM trabajan juntas.
 
-* [AEM Tutoriales sin encabezado de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es) AEM AEM : Si prefiere aprender con la práctica y tiene conocimientos existentes de la materia, siga nuestros tutoriales prácticos organizados por API y el marco de trabajo, que exploran la creación y el uso de aplicaciones creadas en el entorno sin encabezado de la red de aplicaciones de la red de la red de distribución de datos ().
+* El [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutoriales de AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): si prefiere aprender de forma práctica y tiene conocimientos sobre AEM, siga nuestros tutoriales prácticos organizados por API y marco de trabajo y explore la creación y el uso de aplicaciones creadas en AEM sin encabezado.
 * [Recorrido de traducción de AEM sin encabezado](/help/journey-headless/translation/overview.md): este recorrido de documentación le ofrece un amplio conocimiento sobre la tecnología sin encabezado, cómo proporciona AEM contenido sin encabezado y cómo puede traducirlo.
 * [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md). Empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones sin encabezado de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto sin encabezado.
 * [Recorrido de arquitectos Headless](/help/journey-headless/architect/overview.md): empiece aquí para ver una introducción a las potentes y flexibles funciones headless de Adobe Experience Manager as a Cloud Service y cómo diseñar contenido para su proyecto.
 * [Documentación técnica de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es): si ya tiene una comprensión firme sobre las tecnologías AEM y sin encabezado, consulte directamente nuestros documentos técnicos detallados.
+   * [AEM Introducción a la como CMS sin encabezado](/help/headless/introduction.md)

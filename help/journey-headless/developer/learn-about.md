@@ -2,10 +2,10 @@
 title: Obtenga más información acerca del desarrollo de CMS sin encabezado
 description: En esta parte del recorrido para desarrolladores de contenido sin encabezado de AEM, aprenda acerca de la tecnología sin encabezado y por qué la utilizaría.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 92%
+source-wordcount: '1638'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Este documento le ayuda a comprender la entrega de contenido sin encabezado y po
 
 ## Entrega de contenido de pila completa {#full-stack}
 
-Desde el surgimiento de los sistemas de administración de contenido (CMS) fáciles de usar y a gran escala, las organizaciones los han utilizado como una ubicación central para administrar la mensajería, la marca y las comunicaciones. El uso de CMS como punto central para administrar experiencias ha mejorado la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
+Desde que han surgido los sistemas de administración de contenido (CMS) a gran escala y fáciles de usar, las organizaciones los han utilizado como una ubicación central que permite administrar los mensajes, la promoción de la marca y las comunicaciones. El uso de CMS como punto central para administrar experiencias ha mejorado la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
 
 ![El CMS de pila completa clásico](assets/full-stack.png)
 
@@ -84,7 +84,7 @@ Sigue siendo necesario contar con API de REST sólidas. Sin embargo, las solicit
 
 La entrega de contenido sin encabezado suele utilizar las API de GraphQL. GraphQL permite una transferencia sin estado similar, pero permite consultas más específicas, reduce el número total de consultas necesarias y mejora el rendimiento. Es habitual ver que las soluciones utilizan una mezcla de REST y GraphQL, eligiendo esencialmente la mejor herramienta para el trabajo en cuestión.
 
-Independientemente de la API que elija, al definir un sistema sin encabezado basado en API comunes, puede utilizar la última tecnología de explorador y otras tecnologías web, como aplicaciones web progresivas (PWA). Las API crean una interfaz estándar que es fácilmente ampliable y adaptable.
+Independientemente de cuál sea su API elegida, al definir un sistema sin encabezado basado en API comunes, puede utilizar el explorador más reciente y otras tecnologías web, como aplicaciones web progresivas (PWA). Las API crean una interfaz estándar que es fácilmente ampliable y adaptable.
 
 Normalmente, el contenido se representa en el lado del cliente. Normalmente, esto significa que alguien llama a su contenido en un dispositivo móvil, su CMS envía el contenido y, a continuación, el dispositivo móvil (el cliente) es responsable de procesar el contenido que ha servido. Si el dispositivo es antiguo o lento, la experiencia digital también es lenta.
 
@@ -96,7 +96,7 @@ El contenido sin encabezado abre un mundo de flexibilidad para ofrecer sus exper
 
 Tener muchos canales diferentes puede significar que cada uno tiene sus propios sistemas de presentación. Aunque todas consumen el mismo contenido a través de las mismas API, la experiencia puede ser diferente debido a las diferentes presentaciones. Se debe prestar atención y atención a garantizar la coherencia de la experiencia del cliente.
 
-Al implementar sistemas de diseño cuidadosos, compartir bibliotecas de patrones y aprovechar componentes de diseño reutilizables y marcos del lado del cliente establecidos y abiertos, se pueden garantizar experiencias coherentes, pero esto debe planificarse.
+Al implementar sistemas de diseño cuidadosos, compartir bibliotecas de patrones y aprovechar componentes de diseño reutilizables, y marcos abiertos y establecidos del lado del cliente, se pueden asegurar experiencias coherentes, pero esto debe planificarse.
 
 ## El futuro es el contenido sin encabezado y es ahora {#future}
 
@@ -110,7 +110,7 @@ A medida que continúe con este recorrido para desarrolladores, aprenderá cómo
 
 Como líder del sector en la administración de experiencias digitales, Adobe se da cuenta de que la solución ideal a los desafíos del mundo real que enfrentan los creadores de experiencias rara vez es una opción binaria. Por este motivo, AEM no solo admite ambos modelos, sino que también permite de forma exclusiva la combinación híbrida continua de los dos, fusionando las ventajas del contenido sin encabezado y de pila completa, para ayudarle a servir mejor a los consumidores de su contenido, independientemente del lugar en que se encuentren.
 
-Este recorrido se centra en el modelo de entrega de contenido sin encabezado únicamente. Sin embargo, una vez que tenga este conocimiento básico, puede explorar aún más cómo utilizar el poder de ambos modelos.
+Este recorrido se centra en el modelo de entrega de contenido sin encabezado únicamente. Sin embargo, una vez que tenga este conocimiento fundacional, puede explorar más a fondo cómo utilizar el poder de ambos modelos.
 
 ## Siguientes pasos {#what-is-next}
 
@@ -127,4 +127,6 @@ Aproveche este conocimiento y continúe su recorrido de contenido sin encabezado
 Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo de contenido sin encabezado revisando el documento [Introducción a AEM Headless as a Cloud Service,](getting-started.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
 
 * [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md), comprender la estructura de AEM as a Cloud Service
-* [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es). Utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión del contenido sin encabezado con AEM y elegir lo que es adecuado para usted.
+* Un [AEM Introducción a la como CMS sin encabezado](/help/headless/introduction.md)
+* El [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.

@@ -2,10 +2,10 @@
 title: 'Creación para AEM como un CMS sin encabezado: una introducción'
 description: Una introducción al uso de las características de Adobe Experience Manager as a Cloud Service como un CMS sin encabezado para crear contenido para su proyecto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 96%
+source-wordcount: '691'
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ Esto quiere decir que el contenido puede llegar a una amplia gama de dispositivo
 (Y como ventaja doble, estos fragmentos también se pueden utilizar al construir páginas web AEM, si así lo desea).
 
 * CMS “tradicional”
-   * El contenido se crea para páginas web mediante una serie de componentes que definen cómo se procesa el contenido en el sitio web. Incluso en este caso, AEM es sumamente flexible, ya que su equipo de proyectos puede desarrollar componentes personalizados.
+   * El contenido se crea para las páginas web, utilizando una serie de componentes que definen cómo se muestra el contenido en su sitio web. Incluso en este caso, AEM es sumamente flexible, ya que su equipo de proyectos puede desarrollar componentes personalizados.
 
 ## Modelado de contenido {#content-modeling}
 
@@ -77,10 +77,16 @@ Ahora que ya conoce los conceptos y la terminología, el siguiente paso es [Apre
 
 ## Recursos adicionales {#additional-resources}
 
+* [AEM Introducción a la como CMS sin encabezado](/help/headless/introduction.md)
+
+* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+
 * Recorrido para desarrolladores de AEM sin encabezado
    * [Obtenga más información acerca del desarrollo de CMS sin encabezado](/help/journey-headless/developer/learn-about.md)
    * [Aprenda cómo modelar el contenido](/help/journey-headless/developer/model-your-content.md)
 
-* Recorrido para arquitectos de contenido sin encabezado de AEM
+* [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
 
-* Recorrido de traducción de contenidos sin encabezado de AEM
+* [Recorrido para arquitectos de contenido sin encabezado de AEM](/help/journey-headless/architect/overview.md)
+
+* [Recorrido de traducción de contenidos sin encabezado de AEM](/help/journey-headless/translation/overview.md)

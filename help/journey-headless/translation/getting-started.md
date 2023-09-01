@@ -2,10 +2,10 @@
 title: Introducción a la traducción sin encabezado AEM
 description: Conozca cómo organizar su contenido sin encabezado y cómo funcionan las herramientas de traducción de AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 94%
+source-wordcount: '1425'
+ht-degree: 99%
 
 ---
 
@@ -64,7 +64,7 @@ El contenido de AEM, ya sea páginas web tradicionales o sin encabezado, está i
 
 ## Cómo AEM almacena el contenido sin encabezado {#headless-content-in-aem}
 
-Para el especialista en traducción, no es importante comprender en profundidad cómo AEM administra el contenido sin encabezado. AEM Sin embargo, familiarizarse con los conceptos básicos y la terminología es útil, ya que más adelante utiliza herramientas de traducción de la. Lo más importante es que debe comprender su propio contenido y cómo está estructurado para que pueda traducirlo de forma eficaz.
+Para el especialista en traducción, no es importante comprender en profundidad cómo AEM administra el contenido sin encabezado. Sin embargo, familiarizarse con los conceptos básicos y la terminología resulta útil, ya que más adelante utilizará las herramientas de traducción de AEM. Lo más importante es que debe comprender su propio contenido y cómo está estructurado para que pueda traducirlo de forma eficaz.
 
 ### Modelos de contenido {#content-models}
 
@@ -153,7 +153,7 @@ La estructura final puede tener un aspecto similar al siguiente.
         |- ...
 ```
 
-Debe tomar nota de la ruta específica del contenido, ya que es necesaria más adelante para configurar la traducción.
+Debe tomar nota de la ruta específica del contenido, ya que será necesaria más adelante para configurar la traducción.
 
 >[!NOTE]
 >
@@ -188,3 +188,5 @@ Si bien se recomienda pasar a la siguiente parte del recorrido de traducción si
 * [Identificación del contenido para traducir](/help/sites-cloud/administering/translation/rules.md): aprenda cómo las reglas de traducción identifican el contenido que necesita traducirse.
 * [Configuración del marco de integración de traducciones](/help/sites-cloud/administering/translation/integration-framework.md): aprenda a configurar el marco de integración de traducciones para integrarlo con servicios de traducción de terceros.
 * [Administración de proyectos de traducción](/help/sites-cloud/administering/translation/managing-projects.md): aprenda a crear y administrar proyectos de traducción automática y humana en AEM.
+* [AEM Introducción a la como CMS sin encabezado](/help/headless/introduction.md)
+* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
