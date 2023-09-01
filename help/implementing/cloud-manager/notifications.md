@@ -2,10 +2,10 @@
 title: Notificaciones
 description: Obtenga información sobre cómo recibir información sobre las implementaciones de canalización mediante el sistema de notificación de Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 96%
+source-wordcount: '589'
+ht-degree: 89%
 
 ---
 
@@ -54,13 +54,13 @@ Las suscripciones definen para qué productos recibe notificaciones y cuáles.
 
 ![Suscripciones de notificaciones](assets/notifications-subscriptions.png)
 
-De forma predeterminada, recibirá todas las notificaciones de todos los productos. Haga clic en **Personalizar** junto a un producto para definir los tipos de notificaciones que recibe de este.
+De forma predeterminada, recibirá todas las notificaciones de todos los productos, tanto de la aplicación como por correo electrónico. Haga clic en las comillas angulares junto al nombre de un producto para mostrar las opciones detalladas y definir los tipos de notificaciones que recibe de ese producto. O bien, marque o desmarque las opciones en el nivel de producto para seleccionar o deseleccionar todas las opciones del producto.
 
 ![Personalización de la suscripción a notificaciones](assets/notifications-subscriptions-customize.png)
 
 ### Prioridad {#priority}
 
-Las alertas de prioridad están marcadas con un **ALTA** la etiqueta y se pueden configurar para que se reciban exclusivamente como alertas. En la sección **Prioridad**, puede definir qué categorías se clasifican como notificaciones prioritarias.
+Las alertas de prioridad se marcarán con la etiqueta **ALTA** y se pueden configurar para que se reciban exclusivamente como alertas. En la sección **Prioridad**, puede definir qué categorías se clasifican como notificaciones prioritarias.
 
 ![Prioridad de notificaciones](assets/notifications-priority.png)
 
