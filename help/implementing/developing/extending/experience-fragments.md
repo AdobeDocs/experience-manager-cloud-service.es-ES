@@ -2,9 +2,9 @@
 title: Información general sobre fragmentos de experiencias
 description: Ampliar fragmentos de experiencias de Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,8 @@ Por ejemplo:
 >[!NOTE]
 >
 >Los vínculos siempre hacen referencia a la instancia de publicación. Están pensados para que los consuman terceros, por lo que siempre se llama al vínculo desde la instancia de publicación, no desde la instancia de autor.
+>
+>Para obtener más información, consulte [Externalización de direcciones URL](/help/implementing/developing/tools/externalizer.md).
 
 ![Representación de HTML sin formato](assets/xf-14.png)
 
