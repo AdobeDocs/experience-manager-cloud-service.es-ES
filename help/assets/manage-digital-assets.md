@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
+source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
 workflow-type: tm+mt
-source-wordcount: '4481'
+source-wordcount: '4501'
 ht-degree: 11%
 
 ---
@@ -91,6 +91,11 @@ Para extraer los archivos ZIP, realice los siguientes pasos:
 1. Clic **[!UICONTROL Extract]**. Se inicia el proceso de extracción de zip. Una vez completado el proceso, puede ver los recursos extraídos en la carpeta de destino.
 
    ![extracción de zip](assets/zip-extraction.png)
+
+>[!NOTE]
+>
+>* El tamaño máximo de archivo ZIP admitido es de 15 GB.
+>* Puede extraer un máximo de tres archivos ZIP al mismo tiempo.
 
 ## Previsualización de recursos {#previewing-assets}
 
