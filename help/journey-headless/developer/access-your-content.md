@@ -2,10 +2,10 @@
 title: Cómo acceder al contenido a través de las API de entrega de AEM
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, aprenderá a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
+source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -30,9 +30,9 @@ Este artículo se centra en estos aspectos básicos para que entienda cómo acce
    * Descubrir los detalles de la API de AEM, GraphQL.
    * Observar algunas consultas de ejemplo para ver cómo funcionan las cosas en la práctica.
 
-## ¿Desea Acceder A Su Contenido? {#so-youd-like-to-access-your-content}
+## Acceso a su contenido? {#so-youd-like-to-access-your-content}
 
-Así que... tiene todo este contenido, perfectamente estructurado (en Fragmentos de contenido) y esperando para alimentar su nueva aplicación. La pregunta es: ¿cómo lograr eso?
+Tiene mucho contenido bien estructurado (en fragmentos de contenido) para alimentar su nueva aplicación. La pregunta es: ¿cómo lograr eso?
 
 Lo que necesita es una forma de segmentar el contenido específico, seleccionar lo que necesita y devolverlo a su aplicación para un procesamiento posterior.
 
@@ -369,10 +369,10 @@ Ahora que ha aprendido a acceder al contenido sin encabezado y consultarlo media
    * [Consulta de muestra: un solo fragmento de ciudad específico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [Consulta de muestra para metadatos: enumera los metadatos de los premios titulados GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [Consulta de muestra: todas las ciudades con una variación con nombre](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [Habilitación de la funcionalidad de fragmento de contenido en el explorador de la configuración](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [Trabajar con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-   * [Salida JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+* [Habilitación de la funcionalidad de fragmento de contenido en el explorador de la configuración](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
+* [Trabajar con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)
+   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Salida JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Comprender el uso compartido de recursos de origen cruzado (Cross-Origin Resource Sharing, CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es#understand-cross-origin-resource-sharing-(cors))
 * [Consultas persistentes de GraphQL: habilitar el almacenamiento en caché en Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Generación de los tókenes de acceso para las API del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)

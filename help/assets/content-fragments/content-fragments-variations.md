@@ -2,16 +2,22 @@
 title: 'Variaciones: Crear contenido de fragmentos (Recursos: fragmentos de contenido)'
 description: AEM Comprenda de qué forma las variaciones pueden hacer que el contenido sin encabezado sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de ese contenido según el propósito.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 88%
+source-wordcount: '2567'
+ht-degree: 90%
 
 ---
 
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
 [Variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) AEM Las son una característica importante de los fragmentos de contenido de la, ya que le permiten crear y editar copias del contenido principal para su uso en canales específicos o escenarios, lo que hace que la entrega de contenido sin encabezado sea aún más flexible.
+
+>[!NOTE]
+>
+>Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
+>
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola).
 
 En la pestaña **Variaciones** puede hacer lo siguiente:
 
@@ -88,7 +94,7 @@ El editor de texto de pantalla completa proporciona lo siguiente:
 
 ### Acciones {#actions}
 
-Las siguientes acciones también están disponibles (para todas las [formatos](#formats)) cuando el editor de pantalla completa (es decir, texto multilínea) está abierto:
+También están disponibles las siguientes acciones (para todas los [formatos](#formats)) cuando el editor de pantalla completa (es decir, texto multilínea) está abierto:
 
 * Seleccione el [formato](#formats) ([Texto enriquecido](#rich-text), [Texto sin formato,](#plain-text) [Markdown](#markdown))
 
@@ -196,7 +202,7 @@ A continuación, podrá crear un nuevo fragmento mediante lo siguiente:
 1. Selección **Crear**.
 1. Finalmente:
    1. **Listo**:
-      * devuelve (al fragmento original)
+      * vuelve (al fragmento original)
       * hace referencia al nuevo fragmento
    1. **Abrir**:
       * hace referencia al nuevo fragmento
@@ -322,7 +328,7 @@ Anotaciones:
 
 Para facilitar el proceso de creación de fragmentos de contenido, puede agregar [Recursos](/help/assets/manage-digital-assets.md) (imágenes) directamente al fragmento.
 
-Se añaden a la secuencia de párrafo del fragmento sin ningún formato; el formato se puede realizar cuando la variable [se utiliza/se hace referencia al fragmento en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Se agregan a la secuencia de párrafo del fragmento sin ningún formato; el formato se puede realizar cuando [se utiliza/se hace referencia al fragmento en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -358,7 +364,7 @@ Hay varios métodos para agregar [imágenes](/help/assets/content-fragments/cont
 
 Para facilitar el proceso de creación de fragmentos de contenido, también puede agregar otro fragmento de contenido al fragmento.
 
-Se añaden como referencia en la ubicación actual en el fragmento.
+Se agregan como referencia en la ubicación actual del fragmento.
 
 >[!NOTE]
 >
@@ -391,8 +397,33 @@ Hay varios métodos para agregar [imágenes](/help/assets/content-fragments/cont
    >[!CAUTION]
    >
    Si, después de agregar una referencia a otro fragmento, cambia el formato a:
+   >
    * **Texto sin formato**: la referencia se pierde completamente del fragmento.
    * **Markdown**: la referencia se mantendrá.
+
+## Herencia {#inheritance}
+
+La herencia es el mecanismo por el que el contenido se puede insertar automáticamente de un fragmento a otro. Los campos heredados y las variaciones pueden ser el producto de [Administración de varios sitios](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+Puede cancelar (y volver a habilitar) la herencia. Según el contexto, esto puede estar disponible para una variación o un campo individual, si el fragmento forma parte de una Live Copy.
+
+![Un fragmento de contenido que muestra la relación de herencia](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+Por ejemplo:
+
+* Cancelar herencia
+
+  ![Botón Cancelar herencia](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* Volver a habilitar la herencia (si la herencia se ha cancelado)
+
+  ![Botón Volver a activar herencia](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## Administración de variaciones {#managing-variations}
 
@@ -406,7 +437,7 @@ Para crear una nueva variación, haga lo siguiente:
 1. Seleccione **Variaciones** en la barra de iconos del panel lateral.
 1. Seleccione **Crear variación**.
 1. Se abrirá un cuadro de diálogo, especifique el **Título** y la **Descripción** de la nueva variación.
-1. Seleccionar **Añadir**; el fragmento **Principal** se copia en la nueva variación, que ahora está abierta para [edición](#editing-a-variation).
+1. Seleccione **Agregar**; el fragmento **Principal** se copia en la nueva variación, que ahora está abierta para [editar](#editing-a-variation).
 
    >[!NOTE]
    >
@@ -431,7 +462,7 @@ Para cambiar el nombre de una variación existente:
 
 1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
 1. Seleccione la variación requerida.
-1. Seleccionar **Cambiar nombre** desde el **Acciones** menú desplegable.
+1. Seleccione **Cambiar nombre** del menú desplegable **Acciones**.
 
 1. Introduzca el nuevo **Título** o **Descripción** en el cuadro de diálogo resultante.
 
@@ -447,7 +478,7 @@ Para eliminar una variación existente, haga esto:
 
 1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
 1. Seleccione la variación requerida.
-1. Seleccionar **Eliminar** desde el **Acciones** menú desplegable.
+1. Seleccione **Eliminar** del menú desplegable **Acciones**.
 
 1. Confirme la acción **Eliminar** en el cuadro de diálogo.
 
@@ -475,7 +506,7 @@ No está disponible como opción la transferencia de cambios *de una variación 
 
 1. Seleccione una variación específica y, a continuación, la acción de sincronización adecuada desde:
 
-   * el **Acciones** selector desplegable - **Sincronizar elemento actual con principal**
+   * el selector desplegable **Acciones**, **Sincronizar elemento actual con principal**
 
      ![sincronización con principal](assets/cfm-variations-11a.png)
 
@@ -491,4 +522,4 @@ No está disponible como opción la transferencia de cambios *de una variación 
 
    ![sincronización con principal](assets/cfm-variations-11c.png)
 
-1. Seleccionar **Sincronizar**, la variación se actualiza y se muestra.
+1. Seleccione **Sincronizar**: se actualiza y se muestra la variación.

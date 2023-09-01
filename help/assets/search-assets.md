@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
 workflow-type: tm+mt
-source-wordcount: '5162'
+source-wordcount: '5532'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service | Este artículo |
 
 [!DNL Adobe Experience Manager Assets] proporciona métodos de búsqueda de recursos sólidos que le ayudan a lograr una mayor velocidad de contenido. Sus equipos pueden reducir el tiempo de salida al mercado con una experiencia de búsqueda de recursos inteligente y fluida mediante la funcionalidad y los métodos personalizados predeterminados. La capacidad de búsqueda de recursos es fundamental para el uso de un sistema de administración de recursos digitales, ya sea para su uso posterior por parte de los creativos, para una administración sólida de los recursos por parte de los usuarios y los especialistas en marketing, o para la administración por parte de los administradores de DAM. Búsquedas simples, avanzadas y personalizadas que puede realizar mediante [!DNL Assets] La interfaz de usuario de u otras aplicaciones y superficies ayudan a cumplir estos casos de uso.
@@ -60,6 +60,20 @@ Puede descubrir los recursos deseados más rápido desde la página de resultado
 ![Consulte la cantidad aproximada de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.](assets/asset_search_results_in_facets_filters.png)
 
 *Imagen: consulte el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.*
+
+Experience Manager Assets muestra los recuentos de facetas de dos propiedades de forma predeterminada:
+
+* Tipo de recurso (jcr:content/metadata/dc:format)
+
+* Estado de aprobación (jcr:content/metadata/dam:status)
+
+En agosto de 2023, Experience Manager Assets incluye una nueva versión 9 de `damAssetLucene` índice. Las versiones anteriores, `damAssetLucene-8` y, a continuación, utilice el `statistical` modo para comprobar el control de acceso en una muestra de los elementos de cada recuento de facetas de búsqueda.
+
+`damAssetLucene-9` cambia el comportamiento del recuento de facetas de Oak Query para no evaluar más el control de acceso en los recuentos de facetas devueltos por el índice de búsqueda subyacente, lo que resulta en tiempos de respuesta de búsqueda más rápidos. Como resultado, a los usuarios se les pueden presentar valores de recuento de facetas, que incluyen recursos a los que no tienen acceso. Estos usuarios no pueden acceder, descargar ni leer ningún otro detalle de esos recursos, incluidas sus rutas, ni obtener más información sobre ellos.
+
+Si necesita cambiar al comportamiento anterior (`statistical` modo ), consulte [Búsqueda de contenido e indexación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=es) para crear una versión personalizada de `damAssetLucene-9` índice. El Adobe no recomienda cambiar al `secure` debido al impacto en los tiempos de respuesta de búsqueda con grandes conjuntos de resultados.
+
+Para obtener más información sobre las funcionalidades de faceta de Oak, incluida una descripción detallada de estos modos, consulte [este artículo](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Buscar sugerencias mientras escribe {#searchsuggestions}
 
@@ -124,6 +138,20 @@ Puede utilizarlo para su ventaja al aumentar la clasificación de algunos recurs
 
 *Vídeo: Comprenda cómo se clasifican los resultados de búsqueda y cómo se puede influir en la clasificación.*
 
+## Configurar el tamaño del lote de recursos para mostrar los resultados de búsqueda {#configure-asset-batch-size}
+
+Los administradores ahora pueden configurar el tamaño del lote de recursos que se muestra al realizar una búsqueda. Los resultados de la búsqueda de recursos se muestran en múltiplos del número de tamaño de lote configurado al desplazarse hacia abajo para cargar los resultados. Puede seleccionar entre los tamaños de lote disponibles de 200, 500 y 1000 recursos. Configurar un número de tamaño de lote menor resulta en tiempos de respuesta de búsqueda más rápidos.
+
+Por ejemplo, si establece el límite de recuento de resultados en un tamaño de lote de 200 recursos, Experience Manager Assets muestra un tamaño de lote de 200 recursos en los resultados de búsqueda cuando comienza a realizar la búsqueda. Cuando se desplaza hacia abajo para navegar por los resultados de búsqueda, se muestra el siguiente lote de 200 recursos. El proceso continúa hasta que se muestren todos los recursos que coincidan con la consulta de búsqueda.
+
+Para configurar el tamaño del lote de recursos:
+
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configuraciones de recursos]** > **[!UICONTROL Configuración de Omnisearch de Assets]**.
+
+1. Seleccione el límite de recuento de resultados y haga clic en **[!UICONTROL Guardar]**.
+
+   ![Configuración de tamaño de lote de recursos](/help/release-notes/assets/assets-batch-size-configuration.png)
+
 ## Búsqueda avanzada {#scope}
 
 [!DNL Experience Manager] proporciona varios métodos, como filtros, que se aplican a los recursos buscados para ayudarle a localizar los recursos deseados más rápido. A continuación se describen algunos métodos comúnmente utilizados. Algunos [ejemplos ilustrados](#samples) se comparten a continuación.
@@ -171,7 +199,7 @@ Puede buscar recursos en función de los valores exactos de los campos de metada
 | A tiempo | ontime:AAAA-MM-DDTHH |
 | Tiempo de inactividad | tiempo de inactividad:AAAA-MM-DDTHH |
 | Intervalo de tiempo (caduca dateontime,offtime) | campo faceta : límite inferior.límite superior |
-| Ruta  | /content/dam/&lt;folder name=&quot;&quot;> |
+| Ruta | /content/dam/&lt;folder name=&quot;&quot;> |
 | Título del PDF | pdftitle:&quot;Documento de Adobe&quot; |
 | Asunto | asunto: &quot;Formación&quot; |
 | Etiquetas | tags:&quot;Ubicación y viaje&quot; |
@@ -282,7 +310,7 @@ La funcionalidad de búsqueda puede tener limitaciones de rendimiento en los sig
 * La búsqueda de texto completo admite operadores como `-` y `^`. Para buscar estas cartas como literales de cadena, escriba la expresión de búsqueda entre comillas dobles. Por ejemplo, use `"Notebook - Beauty"` en lugar de `Notebook - Beauty`.
 * Si los resultados de la búsqueda son demasiados, limite el [ámbito de búsqueda](#scope) a cero en los recursos deseados. Funciona mejor cuando tiene alguna idea de cómo buscar mejor los recursos deseados, por ejemplo, tipo de archivo específico, ubicación específica, metadatos específicos, etc.
 
-* **Etiquetado**: las etiquetas le ayudan a categorizar los recursos que se pueden examinar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo. [!DNL Experience Manager] ofrece métodos para etiquetar recursos automáticamente mediante los servicios artificialmente inteligentes de Adobe Sensei, que mejoran el etiquetado de sus recursos con el uso y la formación. Al buscar recursos, las etiquetas inteligentes se tienen en cuenta. Funciona junto con la funcionalidad de búsqueda integrada. Consulte [comportamiento de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de búsqueda, puede [aumentar la clasificación de búsqueda](#searchrank) de algunos recursos seleccionados.
+* **Etiquetado**: las etiquetas le ayudan a categorizar los recursos que se pueden examinar y buscar de forma más eficaz. El etiquetado propaga la taxonomía adecuada a otros usuarios y flujos de trabajo. [!DNL Experience Manager] ofrece métodos para etiquetar recursos automáticamente mediante los servicios artificialmente inteligentes de Adobe Sensei, que mejoran el etiquetado de sus recursos con el uso y la formación. Al buscar recursos, las etiquetas inteligentes se tienen en cuenta. Funciona junto con la funcionalidad de búsqueda integrada. Consulte [comportamiento de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de búsqueda, puede [aumentar la clasificación de búsqueda](#searchrank) de algunos recursos seleccionados.
 
 * **Indexación**: En los resultados de búsqueda solo se devuelven metadatos y recursos indexados. Para obtener una mejor cobertura y rendimiento, garantice una indexación adecuada y siga las prácticas recomendadas. Consulte [indexación](#searchindex).
 
@@ -460,7 +488,7 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 
 Cree una versión para los recursos que se muestran en los resultados de búsqueda. Seleccione el recurso y haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Versión]**. Añada una etiqueta opcional o un comentario y haga clic en **[!UICONTROL Crear]**. También puede seleccionar varios recursos y crear versiones para ellos simultáneamente.
 
-### Creación de un flujo de trabajo {#create-workflow}
+### Crear un flujo de trabajo {#create-workflow}
 
 De forma similar a la capacidad Crear versión, también puede crear un flujo de trabajo para los recursos que se muestran en los resultados de búsqueda. Seleccione los recursos y haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Flujo de trabajo]**. Seleccione el modelo del flujo de trabajo, especifique un título para el flujo de trabajo y haga clic en **[!UICONTROL Inicio]**.
 

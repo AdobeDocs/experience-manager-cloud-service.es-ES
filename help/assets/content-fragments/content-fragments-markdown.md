@@ -4,16 +4,22 @@ description: Comprenda cómo el editor de fragmentos de contenido utiliza la sin
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 92%
+source-wordcount: '576'
+ht-degree: 83%
 
 ---
 
 # Markdown {#markdown}
 
 Cuando usted es [creación](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza *markdown* sintaxis para permitirle escribir fácilmente contenido sin encabezado:
+
+>[!NOTE]
+>
+>Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
+>
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola).
 
 ![Editor de Markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

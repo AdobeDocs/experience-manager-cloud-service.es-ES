@@ -2,10 +2,10 @@
 title: 'Creación de modelos de fragmentos de contenido: configuración sin encabezado'
 description: Defina la estructura del contenido que creará y servirá con las capacidades sin encabezado de AEM mediante modelos de fragmentos de contenido.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,10 +45,10 @@ Un arquitecto de la información realizaría estas tareas solo de forma esporád
 1. Cuando haya terminado de crear el modelo, toque o haga clic en **Guardar**.
 
 1. El modo del modelo recién creado depende de si ha seleccionado **Activar modelo** al crearlo:
-   * seleccionado: el nuevo modelo ya estará **Habilitado**
-   * no seleccionado: el nuevo modelo se crea en **Borrador** modo
+   * Seleccionado: el nuevo modelo ya estará **Habilitado**
+   * No seleccionado: el nuevo modelo se crea en modo **Borrador**
 
-1. Si aún no lo está, el modelo debe estar **Habilitado** para usarlo.
+1. Si aún no lo está, el modelo debe estar **Habilitado** para utilizarlo.
    1. Seleccione el modelo que acaba de crear y, a continuación, toque o haga clic en **Habilitar**.
 
       ![Activación del modelo](../assets/models-enable.png)
@@ -69,4 +69,4 @@ Ahora que ya ha definido las estructuras de los fragmentos de contenido creando 
 
 >[!TIP]
 >
->Para obtener información detallada acerca de los modelos de fragmento de contenido, consulte la [Documentación de modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+>Para obtener información detallada acerca de los modelos de fragmento de contenido, consulte la [Documentación de modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

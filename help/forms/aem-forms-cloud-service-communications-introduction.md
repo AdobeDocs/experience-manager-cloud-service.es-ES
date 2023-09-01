@@ -2,14 +2,16 @@
 title: Introducción a las comunicaciones as a Cloud Service Forms
 description: Combine datos automáticamente con plantillas XDP y PDF o genere salidas en formato PCL, ZPL y PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 96%
+source-wordcount: '1475'
+ht-degree: 76%
 
 ---
 
 # Introducción a las comunicaciones as a Cloud Service AEM Forms {#frequently-asked-questions}
+
+<span class="preview"> [Servicio DocAssurance](#doc-assurance) es una función previa al lanzamiento que puede acceder a través de nuestras [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). La documentación de la función está sujeta a cambios.</span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -102,7 +104,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Manipulación de documentos
 
-Las API de manipulación de documentos de comunicación ayudan a combinar, reorganizar y validar documentos PDF. Normalmente, crea un DDX y lo envía a las API de manipulación de documentos para montar o reorganizar un documento. El [documento DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) ofrece instrucciones sobre cómo utilizar los documentos de origen para producir un conjunto de documentos necesarios. La documentación de referencia DDX ofrece información detallada acerca de todas las operaciones compatibles. Algunos ejemplos de manipulación de documentos son los siguientes:
+Las API de manipulación de documentos de comunicación ayudan a combinar, reorganizar y validar documentos PDF. Normalmente, crea un DDX y lo envía a las API de manipulación de documentos para montar o reorganizar un documento. El [documento DDX](https://helpx.adobe.com/content/dam/help/es/experience-manager/forms-cloud-service/ddxRef.pdf) ofrece instrucciones sobre cómo utilizar los documentos de origen para producir un conjunto de documentos necesarios. La documentación de referencia DDX ofrece información detallada acerca de todas las operaciones compatibles. Algunos ejemplos de manipulación de documentos son los siguientes:
 
 ### Montar los documentos PDF
 
@@ -157,7 +159,35 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## Tipos de API de comunicaciones
+
+<span class="preview"> El servicio Document Assurance es una función previa al lanzamiento a la que puede acceder a través de nuestras [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). La documentación de la función está sujeta a cambios.</span>
+
+## Seguro de documento {#doc-assurance}
+
+El servicio DocAssurance incluye las API Signature y Encyption:
+
+### API de firma
+
+Las API de firma permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos. Dado que las características de seguridad se aplican al propio documento, éste permanece seguro y controlado durante todo su ciclo de vida. Un documento permanece seguro más allá del cortafuegos, cuando se descarga sin conexión y cuando se devuelve a su organización. Puede realizar las siguientes tareas mediante las API de firma:
+
+* Agregue un campo de firma a un documento de PDF.
+* Firmar el campo de firma especificado en un documento de PDF.
+* Certificar un documento de PDF
+
+### API de cifrado
+
+Las API de cifrado permiten cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Un usuario autorizado puede descifrar el documento para obtener acceso al contenido. Si un documento de PDF está cifrado con una contraseña, el usuario debe especificar la contraseña de apertura para poder ver el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento de PDF está cifrado con un certificado, el usuario debe descifrar el documento de PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para cifrar el documento de PDF.
+
+Puede realizar estas tareas mediante las API de cifrado:
+
+* Cifrar un documento de PDF con una contraseña.
+* Quitar el cifrado basado en contraseña de un documento de PDF.
+* Recupera el tipo de seguridad aplicada a un documento de PDF.
+
+Tanto las API de firma como las API de cifrado son [API sincrónicas](#types-of-communications-apis-types).
+
+
+## Tipos de API de comunicaciones {#types}
 
 Las comunicaciones ofrecen API HTTP para la generación de documentos por lotes y bajo demanda:
 

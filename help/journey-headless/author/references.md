@@ -2,10 +2,10 @@
 title: Obtenga información sobre el uso de referencias en fragmentos de contenido
 description: Obtenga información sobre el uso de referencias en fragmentos de contenido para los contenidos, otros fragmentos y archivos (medios). Introduzca la necesidad y la mecánica de los fragmentos anidados para la creación de CMS sin encabezado.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 87%
+source-wordcount: '712'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ Las referencias son simplemente un mecanismo para conectar los recursos, ya sea 
 
 Algunas referencias tienen tipos de datos específicos (por ejemplo, Referencias de contenidos y Referencias a fragmentos), mientras que otras se agregan simplemente como una referencia dentro de un bloque de texto (referencias de recursos y referencias Ad hoc).
 
-![Fragmentos de contenido: referencias](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![Fragmentos de contenido: referencias](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Referencias de contenido {#content-references}
 
@@ -71,7 +71,7 @@ Y esto es solo para empezar. Según la complejidad, un premio podría ser espec�
 
 La representación de estas interrelaciones se puede lograr con Referencias a fragmentos, tal como las entienden el usuario (el autor) y las aplicaciones sin encabezado.
 
-Como autor, no es responsable de definir estas relaciones (lo que realiza el arquitecto de contenido al crear el modelo de fragmento de contenido), pero necesita saber reconocer y editar las referencias.
+Como autor, no es responsable de definir estas relaciones (lo hace el arquitecto de contenido al crear el modelo de fragmento de contenido), pero necesita saber cómo reconocer y editar las referencias.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
@@ -92,11 +92,7 @@ La definición del modelo de los fragmentos de contenido controla lo siguiente:
 
 Al usar la pestaña **Árbol de estructura** del Editor de fragmentos de contenido podrá desplazarse por los fragmentos a los que hace referencia el fragmento y, a continuación, por las referencias que puedan contener. Al seleccionar una referencia, se abre ese fragmento para editarlo.
 
->[!NOTE]
->
->Con las rutas de exploración del panel principal, puede volver al punto de inicio.
-
-![Árbol de estructura de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![Árbol de estructura de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## Referencias Ad hoc {#adhoc-references}
 
@@ -110,21 +106,21 @@ Ahora que ha aprendido acerca de referencias y estructuras en los fragmentos de 
 
 ## Recursos adicionales {#additional-resources}
 
-* [Trabajar con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Trabajar con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Administración de los fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [Administración de los fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md)
 
-      * [Aplicación de la configuración a la carpeta Recursos](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Aplicación de la configuración a la carpeta Recursos](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-      * [Creación de un fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+      * [Creación de un fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Variaciones: creación de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [Creación de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Modelos de fragmento de contenido: tipos de datos](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [Modelos de fragmento de contenido: tipos de datos](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [Modelos de fragmento de contenido: propiedades](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [Modelos de fragmento de contenido: propiedades](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
 * Guías de introducción
    * [Creación de la carpeta Recursos: configuración sin encabezado](/help/headless/setup/create-assets-folder.md)

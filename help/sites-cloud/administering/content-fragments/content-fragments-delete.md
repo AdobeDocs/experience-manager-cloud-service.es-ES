@@ -3,15 +3,24 @@ title: 'Fragmentos de contenido: Eliminar consideraciones'
 description: Revise estas consideraciones importantes antes de definir las políticas de eliminación de fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse detenidamente.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '469'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Fragmentos de contenido: Eliminar consideraciones {#content-fragments-delete-considerations}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Revise estas consideraciones importantes antes de definir las políticas de eliminación de fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse detenidamente.
 

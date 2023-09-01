@@ -3,10 +3,10 @@ title: Consultas persistentes de GraphQL
 description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Experience Manager as a Cloud Service para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método HTTP GET y la respuesta se puede almacenar en caché en las capas de Dispatcher y la red de distribución de contenido (CDN), lo que a la larga mejora el rendimiento de las aplicaciones cliente.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -32,15 +32,15 @@ Por ejemplo, para crear una consulta persistente específica para la configuraci
 
 >[!NOTE]
 >
->Consulte [Habilitar la funcionalidad de fragmento de contenido en el explorador de configuración](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) para obtener más información.
+>Consulte [Habilitar la funcionalidad de fragmento de contenido en el explorador de configuración](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) para obtener más información.
 >
 >Las **Consultas persistentes de GraphQL** deben estar habilitadas para la configuración de sitios adecuada.
 
 Por ejemplo, si hay una consulta en particular llamada `my-query`, que utiliza un modelo `my-model` desde la configuración de Sites `my-conf`:
 
-* Puede crear una consulta utilizando el `my-conf` Un punto de conexión específico y, a continuación, la consulta se guarda de la siguiente manera:
+* Puede crear una consulta utilizando el punto final `my-conf` específico, y luego la consulta se guarda de la siguiente manera:
   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* Puede crear la misma consulta utilizando `global` punto final, pero la consulta se guardará de la siguiente manera:
+* Puede crear la misma consulta utilizando el punto final `global`, pero la consulta se guarda de la siguiente manera:
   `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Donde `PERSISTENT_PATH` es una ruta abreviada donde se guarda la consulta persistente.
 
-1. Por ejemplo, `wknd` es el nombre de la configuración y `plain-article-query` es el nombre de la consulta persistente. Para ejecutar la consulta:
+1. Por ejemplo, `wknd` es el nombre de configuración y `plain-article-query`, el nombre de la consulta persistente. Para ejecutar la consulta:
 
    ```shell
    $ curl -X GET \
@@ -389,10 +389,10 @@ Puede [configurar el OSGi](/help/implementing/deploying/configuring-osgi.md) par
 El campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) se puede definir según sea necesario:
 
 * `false` (valor predeterminado):
-No importa si la consulta persistente es correcta o no. El `/execute.json/persisted-query` devuelve el código de estado `200` y el `Content-Type` el encabezado devuelto es `application/json`.
+No importa si la consulta persistente es correcta o no. El `/execute.json/persisted-query` devuelve el código de estado `200` y el encabezado `Content-Type` devuelto es `application/json`.
 
 * `true`:
-el punto final devolverá `400` o `500` según corresponda, cuando haya algún tipo de error al ejecutar la consulta persistente. Además, la variable devuelta `Content-Type` es `application/graphql-response+json`.
+el punto final devolverá `400` o `500` según corresponda, cuando haya algún tipo de error al ejecutar la consulta persistente. Además, el `Content-Type` devuelto es `application/graphql-response+json`.
 
   >[!NOTE]
   >
@@ -442,7 +442,7 @@ Para crear un paquete, haga lo siguiente:
 1. Cree un nuevo paquete tocando **Crear paquete**. Se abre un cuadro de diálogo para definir el paquete.
 1. En el cuadro de diálogo Definición de paquete, en **General** introduzca un **Nombre** como “wknd-persistent-queries”.
 1. Escriba un número de versión como “1.0”.
-1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para `wknd` , la ruta completa es `/conf/wknd/settings/graphql/persistentQueries`.
+1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para la configuración `wknd` la ruta completa es `/conf/wknd/settings/graphql/persistentQueries`.
 1. Toque **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
 1. Pulse el botón **Generar** en la definición del paquete recién creada.
 

@@ -1,28 +1,28 @@
 ---
 title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muestra'
-description: Aprenda a utilizar GraphQL AEM con para que pueda ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
+description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1752'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # Formación para utilizar GraphQL con AEM: contenido y consultas de muestra {#learn-graphql-with-aem-sample-content-queries}
 
-Aprenda a utilizar GraphQL AEM con para que pueda ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
+Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 
 >[!NOTE]
 >
 >Lea esta página junto con lo siguiente:
 >
->* [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md)
->* [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+>* [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)
+>* [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 >* [API de GraphQL de AEM para su uso con fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)
 
-Para empezar a usar las consultas de GraphQL AEM y ver cómo funcionan con los fragmentos de contenido de la aplicación, ayuda ver algunos ejemplos prácticos.
+Para empezar a utilizar las consultas de GraphQL y ver cómo funcionan con fragmentos de contenido de AEM, resulta útil ver algunos ejemplos prácticos.
 
 Para ayudarle con esto, consulte lo siguiente:
 
@@ -41,7 +41,7 @@ Vea estas consultas de muestra para ver de forma ilustrada la creación de consu
 
 >[!NOTE]
 >
->Según la instancia, puede acceder directamente a [AEM Interfaz de GraphiQL incluida con la API de GraphQL de](/help/headless/graphql-api/graphiql-ide.md) para enviar y probar consultas.
+>Según la instancia, puede acceder directamente a la [interfaz de GraphQL incluida con la API de GraphQL de AEM](/help/headless/graphql-api/graphiql-ide.md) para enviar y probar consultas.
 >
 >Puede acceder al editor de consultas desde:
 >
@@ -54,7 +54,7 @@ Vea estas consultas de muestra para ver de forma ilustrada la creación de consu
 
 ### Consulta de muestra: todos los esquemas y tipos de datos disponibles {#sample-all-schemes-datatypes}
 
-Devuelve todo `types` para todos los esquemas disponibles.
+Devuelve todos los `types` para todos los esquemas disponibles.
 
 **Consulta de muestra**
 
@@ -147,7 +147,7 @@ Devuelve todo `types` para todos los esquemas disponibles.
 
 ### Consulta de muestra: toda la información acerca de todas las ciudades {#sample-all-information-all-cities}
 
-Para recuperar toda la información acerca de todas las ciudades, puede utilizar la siguiente consulta básica:
+Para recuperar toda la información acerca de todas las ciudades, puede utilizar la consulta básica:
 **Consulta de muestra**
 
 ```graphql
@@ -230,7 +230,7 @@ Cuando se ejecuta, el sistema expande automáticamente la consulta para incluir 
 
 ### Consulta de muestra: nombres de todas las ciudades {#sample-names-all-cities}
 
-Una consulta directa para devolver el `name`de todas las entradas de la `city`esquema.
+Esta es una consulta directa para devolver el `name` de todas las entradas del esquema `city`.
 
 **Consulta de muestra**
 
@@ -280,7 +280,7 @@ query {
 
 ### Consulta de muestra: un solo fragmento de ciudad específico {#sample-single-specific-city-fragment}
 
-Una consulta para devolver los detalles de una sola entrada de fragmento en una ubicación específica del repositorio.
+Esta es una consulta para devolver los detalles de una sola entrada de fragmento en una ubicación específica del repositorio.
 
 **Consulta de muestra**
 
@@ -321,7 +321,7 @@ Una consulta para devolver los detalles de una sola entrada de fragmento en una 
 
 ### Consulta de muestra: todas las ciudades con una variación con nombre {#sample-cities-named-variation}
 
-Si crea una variación, denominada &quot;Centro de Berlín&quot; (`berlin_centre`), para el `city` En Berlín, puede utilizar una consulta para devolver detalles de la variación.
+Si crea una nueva variación, denominada “Centro de Berlín” (`berlin_centre`), para el `city` de Berlín, puede utilizar una consulta para devolver detalles de la variación.
 
 **Consulta de muestra**
 
@@ -366,8 +366,8 @@ Si crea una variación, denominada &quot;Centro de Berlín&quot; (`berlin_centre
 
 Si:
 
-* crear varias etiquetas, con el nombre `Tourism` : `Business`, `City Break`, `Holiday`
-* y asignarlas a la variación Principal de varios `City` instances
+* crea varias etiquetas, con el nombre `Tourism`: `Business`, `City Break` y `Holiday`
+* y las asigna a la variación Principal de varias instancias de `City`
 
 Entonces puede utilizar una consulta para devolver detalles de la `name` y `tags`de todas las entradas etiquetadas como City Breaks en el `city`esquema.
 
@@ -544,7 +544,7 @@ query {
 
 ### Consulta de muestra: todas las personas que tienen el apellido “Jobs” o “Smith” {#sample-all-persons-jobs-smith}
 
-Una consulta que filtra todo `persons` para cualquier que tenga el nombre `Jobs`o `Smith`.
+Una consulta que filtra todas las `persons` al buscar cualquiera que tenga el apellido `Jobs`o `Smith`.
 
 **Consulta de muestra**
 
@@ -598,7 +598,7 @@ query {
 
 ### Consulta de muestra: todas las personas que no tienen el apellido “Jobs” {#sample-all-persons-not-jobs}
 
-Una consulta que filtra todo `persons` para cualquier que tenga el nombre `Jobs`o `Smith`.
+Una consulta que filtra todas las `persons` al buscar cualquiera que tenga el apellido `Jobs` o `Smith`.
 
 **Consulta de muestra**
 
@@ -708,7 +708,7 @@ query {
 }
 ```
 
-### Consulta de muestra: todas las ciudades de Alemania o Suiza con una población entre 400000 y 999999 {#sample-all-cities-d-ch-population}
+### Consulta de muestra: todas las ciudades situadas en Alemania o Suiza con una población entre 400 000 y 999 999 {#sample-all-cities-d-ch-population}
 
 Aquí se filtra una combinación de campos. Un `AND` (implícito) se utiliza para seleccionar el rango de `population`, mientras que un `OR` (explícito) se utiliza para seleccionar las ciudades requeridas.
 
@@ -1152,7 +1152,7 @@ query {
 
 ## Consultas de muestra con el proyecto WKND {#sample-queries-using-wknd-project}
 
-Estas consultas de muestra se basan en el proyecto WKND. Tiene lo siguiente:
+Estas consultas de muestra se basan en el proyecto WKND. Cuenta con lo siguiente:
 
 * Modelos de fragmentos de contenido disponibles en:
   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1163,7 +1163,7 @@ Estas consultas de muestra se basan en el proyecto WKND. Tiene lo siguiente:
 
 >[!NOTE]
 >
->Debido a que los resultados pueden ser extensos, no se reproducen aquí.
+>Como los resultados pueden ser extensos, no se reproducen aquí.
 
 ### Consulta de muestra para todos los fragmentos de contenido de un determinado modelo con las propiedades especificadas {#sample-wknd-all-model-properties}
 
@@ -1315,7 +1315,7 @@ Esta consulta de muestra busca lo siguiente:
 Esta consulta busca lo siguiente:
 
 * para un solo fragmento de contenido de tipo `article` en una ruta específica
-   * dentro de ese fragmento, la ruta y el autor del fragmento al que se hace referencia (anidado)
+   * dentro de ese fragmento, la ruta y el autor del fragmento (anidado) al que se hace referencia
 
 >[!NOTE]
 >
@@ -1446,7 +1446,7 @@ La siguiente consulta devuelve todas las referencias de contenido utilizando `_r
 
 #### Consulta de muestra para varios fragmentos de contenido con archivos adjuntos {#sample-wknd-multiple-fragments-attachments}
 
-La siguiente consulta devuelve todos los `attachments` - un campo específico (subgrupo) del tipo `content-reference`:
+La siguiente consulta devuelve todos los `attachments`, un campo específico (subgrupo) del tipo `content-reference`:
 
 >[!NOTE]
 >
@@ -1564,7 +1564,7 @@ Esta consulta busca lo siguiente:
 
 >[!NOTE]
 >
->Esta consulta muestra la reserva para fragmentos de contenido que no tienen un [Variación](/help/headless/graphql-api/content-fragments.md#variations) del nombre especificado.
+>Esta consulta demuestra la alternativa para los fragmentos de contenido que no tienen una [variación](/help/headless/graphql-api/content-fragments.md#variations) del nombre especificado.
 
 **Consulta de muestra**
 
@@ -1752,7 +1752,7 @@ query {
 } 
 ```
 
-### Consulta de muestra con filtrado por ID de _tags e incluidas las variaciones {#sample-filtering-tag-with-variations}
+### Consulta de muestra con filtrado por ID de _tags e incluyendo variaciones {#sample-filtering-tag-with-variations}
 
 Esta consulta busca lo siguiente:
 
@@ -1805,7 +1805,7 @@ Las consultas de muestra se basan en la siguiente estructura, que utiliza:
 
 ### Modelos de fragmentos de contenido de muestra (esquemas) {#sample-content-fragment-models-schemas}
 
-Para las consultas de muestra, utilice los siguientes modelos de contenido y sus interrelaciones (referencias ->):
+Para las consultas de muestra, se utilizan los siguientes modelos de contenido y sus interrelaciones (referencias ->):
 
 * [Compañía](#model-company)
 -> [Persona](#model-person)

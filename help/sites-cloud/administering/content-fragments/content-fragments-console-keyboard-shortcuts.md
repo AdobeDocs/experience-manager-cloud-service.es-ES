@@ -3,15 +3,24 @@ title: Métodos abreviados de teclado para la consola Fragmentos de contenido
 description: Hay varios métodos abreviados de teclado disponibles mediante AEM, incluidos algunos para la administración de Fragmentos de contenido
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Métodos abreviados de teclado para la consola Fragmentos de contenido {#keyboard-shortcuts-content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Hay una selección de métodos abreviados de teclado disponibles para su uso en la consola Fragmentos de contenido.
 
@@ -27,7 +36,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 >
 >Los atajos no distinguen entre mayúsculas y minúsculas.
 
-| Lugar de residencia | Acceso directo | Descripción |
+| Lugar de residencia | Atajo | Descripción |
 |---|---|---|
 | No se ha seleccionado ningún fragmento de contenido | `n` | Abrir el cuadro de diálogo Crear |
 | Seleccionar uno o varios fragmentos de contenido | `m` | Abrir el cuadro de diálogo Mover |

@@ -2,7 +2,7 @@
 title: Exportador JSON para servicios de contenido
 description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido desde o hacia AEM, más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web de AEM tradicionales, mediante métodos estandarizados que cualquier cliente puede consumir.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 31%
@@ -49,28 +49,28 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 
 * Por ejemplo, una dirección URL como:
 
-   ```shell
-   http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
+  ```
 
 * Entregará contenido como:
 
-   ![Modelo JSON del fragmento de contenido WKND](assets/json-model-wknd-content-fragment.png)
+  ![Modelo JSON del fragmento de contenido WKND](assets/json-model-wknd-content-fragment.png)
 
-   >[!NOTE]
-   >
-   >Puede [adaptar sus propios componentes](enabling-json-exporter.md) para acceder y utilizar estos datos.
+  >[!NOTE]
+  >
+  >Puede [adaptar sus propios componentes](enabling-json-exporter.md) para acceder y utilizar estos datos.
 
-   >[!NOTE]
-   >
-   >Aunque no es una implementación estándar, [se admiten varios selectores,](enabling-json-exporter.md#multiple-selectors) pero `model` debe ser el primero.
+  >[!NOTE]
+  >
+  >Aunque no es una implementación estándar, [se admiten varios selectores,](enabling-json-exporter.md#multiple-selectors) pero `model` debe ser el primero.
 
 ### Información adicional {#further-information}
 
 Consulte también lo siguiente:
 
-* API HTTP de Recursos
-   * [API HTTP de Recursos](/help/assets/developer-reference-material-apis.md)
+* API HTTP de recursos
+   * [API HTTP de recursos](/help/assets/developer-reference-material-apis.md)
 * Modelos Sling:
    * [Modelos Sling: asociación de una clase de modelo con un tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * AEM con JSON:
@@ -80,7 +80,7 @@ Consulte también lo siguiente:
 
 Para obtener más información, consulte:
 
-* [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Creación con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)

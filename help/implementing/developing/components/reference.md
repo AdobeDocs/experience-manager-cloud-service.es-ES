@@ -2,7 +2,7 @@
 title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores para los detalles de los componentes y su estructura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3648'
 ht-degree: 2%
@@ -473,4 +473,4 @@ Esta marca se muestra en la variable [Consola de componente](/help/sites-cloud/a
 
 ![README.md visible en la consola Componentes](assets/components-documentation-console.png)
 
-El Markdown admitido es el mismo que para [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+El Markdown admitido es el mismo que para [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md).

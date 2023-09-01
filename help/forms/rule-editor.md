@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '6389'
-ht-degree: 93%
+source-wordcount: '6436'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 | AEM as a Cloud Service | Este artículo |
 
 ## Información general {#overview}
@@ -73,7 +73,7 @@ Aunque puede lograr la mayoría de los casos de uso utilizando cualquier constru
 
   Por ejemplo, para ocultar los campos B, C y D en función de la condición que comprueba el valor que un usuario especifica en el campo A, escriba una regla con la estructura condición-acción o el tipo de regla When en el campo A y especifique acciones para controlar la visibilidad de los campos B, C y D. De lo contrario, necesitará tres reglas independientes en los campos B, C y D, donde cada regla comprueba la condición y muestra u oculta el campo respectivo. En este ejemplo, es más eficaz escribir el tipo de regla When en un objeto, en lugar de Show o Hide en tres objetos.
 
-* Para activar una acción basada en varias condiciones, se recomienda utilizar la construcción acción-condición. Por ejemplo, para mostrar y ocultar el campo A mediante la evaluación de condiciones en los campos B, C y D, utilice los tipos de reglas Show o Hide en el campo A.
+* Para activar una acción basada en varias condiciones, se recomienda utilizar la construcción acción-condición. Por ejemplo, para mostrar y ocultar el campo A mediante la evaluación de condiciones en los campos B, C y D, utilice el tipo de regla Mostrar u Ocultar en el campo A.
 * Utilice la construcción condición-acción o acción-condición si la regla contiene una acción para una condición.
 * Si una regla comprueba la existencia de una condición y realiza una acción inmediatamente al proporcionar un valor en un campo o al salir de un campo, se recomienda escribir una regla con la construcción condición-acción o el tipo de regla When en el campo en el que se evalúa la condición.
 * La condición de la regla When se evalúa cuando un usuario cambia el valor del objeto en el que se aplica dicha regla. Sin embargo, si desea que la acción se active cuando el valor cambia en el servidor, como para rellenar previamente el valor, se recomienda escribir una regla When que active la acción cuando el campo se inicialice.
@@ -150,9 +150,21 @@ Para obtener más información sobre la configuración de servicios en el modelo
 
 Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md).
 
-El **[!UICONTROL Establecer propiedad]** tipo de regla permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición.
+El **[!UICONTROL Establecer propiedad]** tipo de regla permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición. Puede establecer la propiedad en una de las siguientes opciones:
+* visible (booleano)
+* dorExclusion (booleano)
+* chartType (String)
+* title (cadena)
+* enabled (booleano)
+* obligatorio (booleano)
+* validationsDisabled (booleano)
+* validateExpMessage (String)
+* value (Number, String, Date)
+* items (lista)
+* válido (booleano)
+* errorMessage (String)
 
-Permite definir reglas para agregar casillas de verificación de forma dinámica al formulario adaptable. Puede utilizar una función personalizada, un objeto de formulario o una propiedad de objeto para definir una regla.
+Por ejemplo, permite definir reglas para agregar casillas de verificación de forma dinámica al formulario adaptable. Puede utilizar una función personalizada, un objeto de formulario o una propiedad de objeto para definir una regla.
 
 ![Set Property](assets/set_property_rule_new.png)
 
@@ -280,7 +292,7 @@ Una regla Disable típica se estructura de la siguiente manera:
 
 El tipo de regla **[!UICONTROL Validate]** valida el valor de un campo mediante una expresión. Por ejemplo, puede escribir una expresión para comprobar que el cuadro de texto para especificar el nombre no contenga caracteres especiales ni números.
 
-Una regla Validate típica se estructura de la siguiente manera:
+Una regla Validar típica se estructura de la siguiente manera:
 
 `Validate Object A;`
 
@@ -290,7 +302,7 @@ Una regla Validate típica se estructura de la siguiente manera:
 
 >[!NOTE]
 >
->Si el valor especificado no cumple la regla Validate, puede mostrar un mensaje de validación al usuario. Puede especificar la notificación en el **[!UICONTROL mensaje de validación del script]** en las propiedades del componente, en la barra lateral.
+>Si el valor especificado no cumple la regla Validar, puede mostrar un mensaje de validación al usuario. Puede especificar la notificación en el **[!UICONTROL mensaje de validación del script]** en las propiedades del componente, en la barra lateral.
 
 ![Script-validation](assets/script-validation.png)
 
@@ -379,7 +391,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. Botones de finalización y cancelación {#done-and-cancel-buttons}
 
-El botón **[!UICONTROL Listo]** se utiliza para guardar una regla. Puede guardar una regla incompleta. Sin embargo, las que estén incompletas no son válidas y no se ejecutan. Las reglas guardadas en un objeto de formulario se enumeran cuando se inicia el editor de reglas la próxima vez desde el mismo objeto. Puede administrar las reglas existentes en esa vista. Para obtener más información, consulte [Administrar reglas](rule-editor.md#p-manage-rules-p).
+El botón **[!UICONTROL Listo]** se utiliza para guardar una regla. Puede guardar una regla incompleta. Sin embargo, las que estén incompletas no son válidas, por lo tanto, no se ejecutan. Las reglas guardadas en un objeto de formulario se enumeran cuando se inicia el editor de reglas la próxima vez desde el mismo objeto. Puede administrar las reglas existentes en esa vista. Para obtener más información, consulte [Administrar reglas](rule-editor.md#p-manage-rules-p).
 
 El botón **[!UICONTROL Cancelar]** descarta los cambios realizados en una regla y cierra el editor de reglas.
 
@@ -549,23 +561,23 @@ Para obtener más información, consulte [jsdoc.app](https://jsdoc.app/).
 
 Etiquetas `jsdoc` compatibles:
 
-* **Privado**
-Sintaxis: `@private`
-Una función privada no se incluye como función personalizada.
+* **Sintaxis**
+privada: `@private`
+una función privada no se incluye como función personalizada.
 
-* **Nombre**
-Sintaxis: `@name funcName <Function Name>`
-Alternativamente `,` puede utilizar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
+* **Sintaxis**
+de nombre: `@name funcName <Function Name>`
+O bien, `,` puede usar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
   `funcName` es el nombre de la función (no se permiten espacios).
   `<Function Name>` es el nombre para mostrar de la función.
 
-* **Miembro**
-Sintaxis: `@memberof namespace`
-Adjunta un área de nombres a la función.
+* **Sintaxis**
+de abonado: `@memberof namespace`
+adjunta un área de nombres a la función.
 
-* **Parámetro**
-Sintaxis: `@param {type} name <Parameter Description>`
-Como alternativa, puede utilizar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
+* **Sintaxis**
+de parámetro: `@param {type} name <Parameter Description>`
+O bien, puede usar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
 Muestra los parámetros utilizados por la función. Una función puede tener varias etiquetas de parámetro, una etiqueta para cada parámetro en el orden de ocurrencia.
   `{type}` representa el tipo de parámetro. Los tipos de parámetros permitidos son:
 
@@ -578,9 +590,9 @@ Muestra los parámetros utilizados por la función. Una función puede tener var
 
   Todos los tipos de parámetros se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Tipo de devolución**
-Sintaxis: `@return {type}`
-Como alternativa, puede utilizar `@returns {type}`.
+* **Sintaxis**
+de tipo de retorno: `@return {type}`
+O bien, puede usar `@returns {type}`.
 Agrega información sobre la función, como su objetivo. 
 {type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 
@@ -807,7 +819,9 @@ La regla siguiente muestra cómo configurar la acción Invocar servicio para que
 
 ![Example-invoke-services](assets/example-invoke-services.png)
 
-Invocar el servicio de modelo de datos de formulario mediante la regla de formulario adaptable
+>[!NOTE]
+>
+>Si la entrada es de tipo matriz, los campos que admiten matrices se pueden ver en la sección desplegable Output.
 
 ### Activación de varias acciones mediante la regla When {#triggering-multiple-actions-using-the-when-rule}
 

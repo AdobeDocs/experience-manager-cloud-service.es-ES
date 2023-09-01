@@ -4,10 +4,10 @@ description: Descubra cómo las reglas de traducción identifican el contenido q
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ Las reglas de traducción identifican el contenido que se debe traducir para pá
 
 >[!TIP]
 >
->Si acaba de empezar a traducir contenido, consulte [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
+>Si acaba de empezar a traducir contenido, consulte el [Recorrido de traducción de Sites,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia con la traducción o con AEM.
 
 ## Fragmentos de contenido y reglas de traducción {#content-fragments}
 
 Las reglas de traducción descritas en este documento solo se aplican a los fragmentos de contenido si la opción **Habilitar campos de modelo de contenido para la traducción** no se ha activado en el [nivel de configuración del marco trabajo de integración de traducción.](integration-framework.md#assets-configuration-properties)
 
-Si la opción **Habilitar campos de modelo de contenido para la traducción** está activa, AEM usará el campo **Traducible** en [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) para determinar si el campo se va a traducir y crea automáticamente reglas de traducción según corresponda. Esta opción reemplaza las reglas de traducción que haya creado y no requiere intervención ni pasos adicionales.
+Si la opción **Habilitar campos de modelo de contenido para la traducción** está activa, AEM usará el campo **Traducible** en [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) para determinar si el campo se va a traducir y crea automáticamente reglas de traducción según corresponda. Esta opción reemplaza las reglas de traducción que haya creado y no requiere intervención ni pasos adicionales.
 
 Si desea utilizar reglas de traducción para traducir los fragmentos de contenido, la opción **Habilitar campos de modelo de contenido para la traducción** en la configuración del marco trabajo de integración de traducción debe estar desactivada y debe seguir los pasos descritos a continuación para crear las reglas.
 
@@ -163,7 +163,7 @@ Para acceder a ella:
 
 En la IU de las reglas de traducción puede:
 
-1. **Agregar contexto**, que le permite añadir una ruta.
+1. **Agregar contexto**, lo que le permite agregar una ruta.
 
    ![Agregar contexto de traducción](../assets/add-translation-context.png)
 
@@ -186,7 +186,7 @@ Hay cuatro atributos que puede cambiar mediante la IU:
 
 **`isDeep`** es aplicable en los filtros de nodo y es true de forma predeterminada. Comprueba si el nodo (o sus antecesores) contiene esa propiedad con el valor de propiedad especificado en el filtro. Si es false, solo lo comprueba en el nodo actual.
 
-Por ejemplo, los nodos secundarios se añaden a un trabajo de traducción incluso cuando el nodo principal tiene la propiedad `draftOnly` establézcalo en true para marcar el contenido de borrador. Aquí `isDeep` entra en juego y comprueba si los nodos principales tienen la propiedad `draftOnly` como true y excluye esos nodos secundarios.
+Por ejemplo, los nodos secundarios se agregan a un trabajo de traducción incluso cuando el nodo principal tiene la propiedad `draftOnly` establecida en true para marcar el contenido de borrador. Aquí `isDeep` entra en juego y comprueba si los nodos principales tienen la propiedad `draftOnly` como true y excluye esos nodos secundarios.
 
 En el editor, puede marcar o desmarcar **isDeep** en la pestaña **Filtros**.
 

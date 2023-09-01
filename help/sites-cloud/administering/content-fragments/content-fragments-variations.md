@@ -3,15 +3,24 @@ title: 'Variaciones: Crear contenido de fragmentos'
 description: Comprenda cómo las variaciones le permiten crear contenido para el fragmento y luego crear variaciones de ese contenido según el propósito. Esto proporciona una mayor flexibilidad para la entrega sin encabezado y la creación de páginas.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2458'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 [Variaciones](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de fragmentos de contenido de AEM, ya que le permiten crear y editar copias del contenido principal para su uso en canales específicos o escenarios, lo que hace que la creación de páginas y la entrega de contenido sin encabezado sean aún más flexibles.
 
@@ -40,7 +49,7 @@ Realizar una serie de acciones diferentes en función del tipo de datos que se e
 
 ## Creación de contenido {#authoring-your-content}
 
-Cuando abra el fragmento de contenido para editarlo, la variable **Variaciones** La pestaña se abre de forma predeterminada. Aquí puede crear el contenido, para Principal o cualquier variación que tenga. El fragmento estructurado contiene varios campos, de varios tipos de datos, que se definieron en el modelo de contenido.
+Cuando abra el fragmento de contenidos para editarlo, la pestaña **Variaciones** se abre de forma predeterminada. Aquí puede crear el contenido, para Principal o cualquier variación que tenga. El fragmento estructurado contiene varios campos, de varios tipos de datos, que se definieron en el modelo de contenido.
 
 Por ejemplo:
 
@@ -90,7 +99,7 @@ El editor de texto de pantalla completa proporciona lo siguiente:
 
 ### Acciones {#actions}
 
-Las siguientes acciones también están disponibles (para todas las [formatos](#formats)) cuando el editor de pantalla completa (es decir, texto multilínea) está abierto:
+También están disponibles las siguientes acciones (para todas los [formatos](#formats)) cuando el editor de pantalla completa (es decir, texto multilínea) está abierto:
 
 * Seleccione el [formato](#formats) ([Texto enriquecido](#rich-text), [Texto sin formato,](#plain-text) [Markdown](#markdown))
 
@@ -198,7 +207,7 @@ A continuación, podrá crear un nuevo fragmento mediante lo siguiente:
 1. Selección **Crear**.
 1. Finalmente:
    1. **Listo**:
-      * devuelve (al fragmento original)
+      * vuelve (al fragmento original)
       * hace referencia al nuevo fragmento
    1. **Abrir**:
       * hace referencia al nuevo fragmento
@@ -324,7 +333,7 @@ Anotaciones:
 
 Para facilitar el proceso de creación de fragmentos de contenido, puede agregar [Recursos](/help/assets/manage-digital-assets.md) (imágenes) directamente al fragmento.
 
-Se añaden a la secuencia de párrafo del fragmento sin ningún formato; el formato se puede realizar cuando la variable [se utiliza/se hace referencia al fragmento en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Se agregan a la secuencia de párrafo del fragmento sin ningún formato; el formato se puede realizar cuando [se utiliza/se hace referencia al fragmento en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -355,13 +364,13 @@ Hay varios métodos para agregar [imágenes](/help/sites-cloud/administering/con
    Si, después de agregar un recurso, cambia el formato a:
    >
    * **Texto sin formato**: el recurso se pierde completamente del fragmento.
-   * **Markdown**: el recurso no es visible, pero sigue ahí cuando vuelve a **Texto enriquecido**.
+   * **Marcado**: el recurso no es visible, pero permanece allí cuando vuelva a **Texto enriquecido**.
 
 ### Inserción de un fragmento de contenido en el fragmento {#inserting-content-fragment-into-your-fragment}
 
 Para facilitar el proceso de creación de fragmentos de contenido, también puede agregar otro fragmento de contenido al fragmento.
 
-Se añaden como referencia en la ubicación actual en el fragmento.
+Se agregan como referencia en la ubicación actual del fragmento.
 
 >[!NOTE]
 >
@@ -416,7 +425,7 @@ Para crear una nueva variación, haga lo siguiente:
 1. Seleccione **Variaciones** en la barra de iconos del panel lateral.
 1. Seleccione **Crear variación**.
 1. Se abrirá un cuadro de diálogo, especifique el **Título** y la **Descripción** de la nueva variación.
-1. Seleccionar **Añadir**; el fragmento **Principal** se copia en la nueva variación, que ahora está abierta para [edición](#editing-a-variation).
+1. Seleccione **Agregar**; el fragmento **Principal** se copia en la nueva variación, que ahora está abierta para [editar](#editing-a-variation).
 
    >[!NOTE]
    >
@@ -442,7 +451,7 @@ Para cambiar el nombre de una variación existente:
 
 1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
 1. Seleccione la variación requerida.
-1. Seleccionar **Cambiar nombre** desde el **Acciones** menú desplegable.
+1. Seleccione **Cambiar nombre** del menú desplegable **Acciones**.
 
 1. Introduzca el nuevo **Título** o **Descripción** en el cuadro de diálogo resultante.
 
@@ -458,7 +467,7 @@ Para eliminar una variación existente, haga esto:
 
 1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
 1. Seleccione la variación requerida.
-1. Seleccionar **Eliminar** desde el **Acciones** menú desplegable.
+1. Seleccione **Eliminar** del menú desplegable **Acciones**.
 
 1. Confirme la acción **Eliminar** en el cuadro de diálogo.
 
@@ -486,7 +495,7 @@ No está disponible como opción la transferencia de cambios *de una variación 
 
 1. Seleccione una variación específica y, a continuación, la acción de sincronización adecuada desde:
 
-   * el **Acciones** selector desplegable - **Sincronizar elemento actual con principal**
+   * el selector desplegable **Acciones**, **Sincronizar elemento actual con principal**
 
      ![sincronización con principal](assets/cfm-variations-11a.png)
 
@@ -502,4 +511,4 @@ No está disponible como opción la transferencia de cambios *de una variación 
 
    ![sincronización con principal](assets/cfm-variations-11c.png)
 
-1. Seleccionar **Sincronizar**, la variación se actualiza y se muestra.
+1. Seleccione **Sincronizar**: se actualiza y se muestra la variación.

@@ -3,7 +3,7 @@ title: Introducción a sin encabezado para AEM
 description: Obtenga información acerca de Sin encabezado en Adobe Experience Manager (AEM) con una combinación de documentación detallada y recorridos sin encabezado. Descubra cómo se utilizan funciones como los modelos de fragmento de contenido, los fragmentos de contenido y la API de GraphQL para potenciar las experiencias sin encabezado.
 landing-page-description: Obtenga información sobre cómo usar y administrar Sin encabezado en Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 98%
@@ -42,7 +42,7 @@ AEM as a Cloud Service es una herramienta flexible para el modelo de implementac
 1. **Fragmentos de contenido**
    * Un fragmento de contenido se crea basado en un modelo.
    * Los fragmentos de contenido los crean los autores de contenido mediante el editor de fragmentos de contenido de AEM.
-   * Los fragmentos de contenido se almacenan como Recursos AEM, pero se pueden administrar mediante la consola Recursos o la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
+   * Los fragmentos de contenido se almacenan como Recursos AEM, pero se pueden administrar mediante la consola Recursos o la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 1. **API de contenido para entrega**
    * La API de GraphQL de AEM es compatible con la entrega de fragmentos de contenido.
    * La API de REST de AEM Assets es compatible con las operaciones de CRUD de fragmento de contenido.

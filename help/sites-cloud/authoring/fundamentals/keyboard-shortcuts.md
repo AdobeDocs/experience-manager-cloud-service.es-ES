@@ -2,16 +2,16 @@
 title: Atajos de teclado para editar páginas
 description: Hay varios métodos abreviados del teclado disponibles mediante AEM, incluidos algunos para la edición de páginas
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Atajos de teclado para editar páginas {#keyboard-shortcuts-when-editing-pages}
 
-Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hacen referencia a la edición de páginas, otros, al [uso de consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) y algunos, en particular, a la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hacen referencia a la edición de páginas, otros, al [uso de consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) y algunos, en particular, a la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hac
 
 ## Editar métodos abreviados de teclado {#editing-keyboard-shortcuts}
 
-| Lugar de residencia | Acceso directo | Descripción |
+| Lugar de residencia | Atajo | Descripción |
 |---|---|---|
 | Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Vista previa** y el [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).* |
 | Modo de **edición** | `Ctrl-z` | [Deshacer el último cambio](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
@@ -37,7 +37,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hac
 >
 >Una vez que el usuario empiece a interactuar con la página en modo Vista previa, el método abreviado `Ctrl-Shift-m` ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el método abreviado vuelva a estar disponible.
 
-También hay varios métodos abreviados de teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) y algunos, en particular, la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+También hay varios métodos abreviados de teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) y algunos, en particular, la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 >[!NOTE]
 >

@@ -3,10 +3,10 @@ title: Uso del IDE de GraphiQL en AEM
 description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Hay una implementación del IDE de [GraphiQL](https://graphql.org/learn/serving-
 >En versiones anteriores, se necesitaba un paquete para instalar el IDE de GraphiQL. Si tiene esto instalado, ahora lo puede quitar.
 
 >[!NOTE]
->Debe tener [configurados los puntos de conexión](/help/headless/graphql-api/graphql-endpoint.md) en el [explorador de configuración](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) antes de utilizar el IDE de GraphiQL.
+>Debe tener [configurados los puntos de conexión](/help/headless/graphql-api/graphql-endpoint.md) en el [explorador de configuración](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) antes de utilizar el IDE de GraphiQL.
 
 El **GraphiQL** Esta herramienta permite probar y depurar las consultas de GraphQL permitiéndole lo siguiente:
 * seleccionar el **punto de conexión** adecuado para la configuración de sitios que desee utilizar en sus consultas
@@ -78,9 +78,9 @@ La consulta se muestra en el panel del editor. Realice los cambios que necesite 
 
 ## Ejecución de consultas {#running-queries}
 
-Puede ejecutar una nueva consulta inmediatamente, o bien puede cargar y ejecutar una consulta persistente. Para cargar una consulta persistente, selecciónela en la lista; la consulta se muestra en el panel Editor.
+Puede ejecutar una nueva consulta inmediatamente, o bien puede cargar y ejecutar una consulta persistente. Para cargar una consulta persistente, selecciónela en la lista; se muestra en el panel Editor.
 
-En cualquier caso, la consulta que se muestra en el panel Editor es la que se ejecuta cuando:
+En cualquier caso, la consulta que se muestra en el panel Editor es la que se ejecuta cuando ocurre lo siguiente:
 
 * toque o haga clic en el icono **Ejecutar consulta**
 * use la combinación de teclas `Control-Enter`

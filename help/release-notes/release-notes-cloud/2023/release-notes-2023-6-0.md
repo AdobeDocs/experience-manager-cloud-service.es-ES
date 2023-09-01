@@ -1,10 +1,10 @@
 ---
-title: Notas de la versión 2023.6.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2023.6.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 2d10d03e478bff5a162c620c41ceac38a6d7911a
+title: Notas de la versión 2023.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2023.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 42%
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.6.0) es el 29 de junio de 2023. La próxima versión de la funcionalidad (2023.7.0) está planificada para el 27 de julio de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.6.0) fue el 29 de junio de 2023. La siguiente versión con funcionalidades (2023.7.0) está planificada para el 27 de julio de 2023.
 
 ## Vídeo de la versión {#release-video}
 
@@ -37,56 +37,56 @@ Eche un vistazo al vídeo Información general sobre la versión de junio de 202
 
 ### Nuevas funciones de [!DNL Experience Manager Sites] {#sites-features}
 
-* Los fragmentos de contenido y sus referencias ahora se pueden publicar en el [Servicio de previsualización de AEM](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) mediante la [consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md), permitiendo a los usuarios previsualizar la experiencia final en una aplicación de vista previa disociada antes de lanzarse.
+* Los fragmentos de contenido y sus referencias ahora se pueden publicar en el [Servicio de previsualización de AEM](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) mediante la [consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console), permitiendo a los usuarios previsualizar la experiencia final en una aplicación de vista previa disociada antes de lanzarse.
 
 ![Vista previa en la consola de fragmentos de contenido](/help/assets/content-fragments-console-preview.png)
 
-* AEM Ahora, las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante GraphQL de la aplicación de la forma más rápida y sencilla. [Variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) se puede definir en las consultas de GraphQL AEM para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de los usuarios de la aplicación de la forma que se va a.
-* Etiquetas en [Variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) AEM ahora se puede enviar a JSON mediante la API de entrega de contenido de GraphQL de la.
+* Las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante AEM GraphQL. Las [variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=es#query-variables) se pueden definir en las consultas de GraphQL para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de AEM.
+* Las etiquetas en las [variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-models.html?lang=es) ahora se pueden enviar a JSON mediante la API de entrega de contenido AEM GraphQL.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-**Disponibilidad de la vista Nuevos recursos**
+**Disponibilidad de la nueva vista de recursos**
 
-El [nueva vista de recursos](/help/assets/assets-view-introduction.md) ahora está disponible en Experience Manager Assets. La vista de recursos proporciona una interfaz de usuario simplificada, que facilita la administración, la detección y la distribución de sus recursos digitales. La experiencia está dirigida a creativos, consumidores de recursos de solo lectura y usuarios de DAM de menor peso.
+La [nueva vista de recursos](/help/assets/assets-view-introduction.md) está ahora disponible en Experience Manager Assets. La vista de recursos proporciona la interfaz de usuario simplificada de Assets Essentials, lo que facilita la administración, la detección y la distribución de sus recursos digitales. La experiencia está dirigida a creativos, consumidores de recursos de solo lectura y usuarios de DAM de menor peso.
 
-![Administración de etiquetas](/help/assets/assets/my-workspace.png)
+![Administración de etiquetado](/help/assets/assets/my-workspace.png)
 
 **Mejoras en la experiencia de búsqueda**
 
-Experience Manager Assets ahora le permite hacer más desde la interfaz de usuario de los resultados de búsqueda: Ahora puede:
+Experience Manager Assets ahora le permite hacer más desde la interfaz de usuario de los resultados de búsqueda: Ahora puede hacer lo siguiente:
 
-* [Realizar búsqueda dentro de la ubicación actual del repositorio](/help/assets/search-assets.md) de forma predeterminada, en lugar de buscar la palabra clave en todo el repositorio.
+* [Realizar búsquedas dentro de la ubicación actual del repositorio](/help/assets/search-assets.md) de forma predeterminada, en lugar de buscar la palabra clave en todo el repositorio.
 
-* [Vaya a la ubicación de la carpeta](/help/assets/search-assets.md#aftersearch) para recursos que se muestran en los resultados de búsqueda.
+* [Ir a la ubicación de la carpeta](/help/assets/search-assets.md#aftersearch) para recursos que se muestran en los resultados de búsqueda.
 
 **Vistas previas de miniaturas para recursos 3D**
 
-[!DNL Experience Manager Assets] ahora genera [vistas previas de miniaturas para formatos de archivo 3D comunes](/help/assets/file-format-support.md) incluyendo gLB, USDz, FBX, 3DS, OBJ y SBSAR. Cuando se cargan estos archivos, las miniaturas se generan automáticamente de forma predeterminada.
+[!DNL Experience Manager Assets] genera ahora [vistas previas de miniaturas para formatos de archivo 3D comunes](/help/assets/file-format-support.md) incluidos gLB, USDz, FBX, 3DS, OBJ y SBSAR. Cuando se cargan estos archivos, las miniaturas se generan automáticamente de forma predeterminada.
 
 **Configuración de vínculos compartidos**
 
-Una nueva experiencia de usuario mejorada para [crear vínculos compartidos](/help/assets/share-assets.md) junto con un nuevo conjunto de configuraciones que permiten a los administradores personalizar el comportamiento predeterminado de esta capacidad para los usuarios.
+Una nueva experiencia de usuario mejorada para [crear vínculos compartidos](/help/assets/share-assets.md) junto con un nuevo conjunto de configuraciones que permiten a los administradores personalizar el comportamiento predeterminado de esta función para los usuarios.
 
 ![Administración de etiquetas](/help/assets/assets/config-email-service.png)
 
 **Dynamic Media: se han actualizado los campos relacionados con los recortes inteligentes en el perfil de imagen**
 
-La interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen ahora se actualiza para reflejar las directrices actuales para definir un recorte inteligente. Consulte las [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=es#crop-options).
+La interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen se actualiza ahora para reflejar las directrices actuales para definir un recorte inteligente. Consulte las [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=es#crop-options).
 
 ### Nuevas funciones de la vista Recursos {#assets-view-features}
 
 **Etiquetado jerárquico de recursos para una experiencia de búsqueda más rápida**
 
-Las listas planas de vocabularios controlados se vuelven inmanejables con el tiempo. La vista de recursos ahora admite [estructura jerárquica de etiquetado](/help/assets/tagging-management-assets-view.md), que facilita la aplicación de metadatos relevantes, la categorización de recursos, la compatibilidad con la búsqueda, la reutilización de etiquetas, la mejora de la capacidad de detección, etc.
+Las listas planas de vocabularios controlados se vuelven inmanejables con el tiempo. La vista de recursos admite ahora [estructura jerárquica de etiquetado](/help/assets/tagging-management-assets-view.md), que facilita la aplicación de metadatos relevantes, la categorización de recursos, la compatibilidad con la búsqueda, la reutilización de etiquetas, la mejora de la capacidad de detección, etc.
 
 ![Administración de etiquetas](/help/assets/assets/tags-hierarchy.png)
 
-**Anclar archivos, carpetas y colecciones para acceder rápidamente a ellos**
+**Fijación de archivos, carpetas y colecciones para un acceso más rápido**
 
-Ahora puede [anclar archivos, carpetas y colecciones para un acceso más rápido](/help/assets/my-workspace-assets-view.md) a estos elementos cuando los necesite más tarde. Los elementos anclados se muestran en la **Acceso rápido** de Mi espacio de trabajo. Puede acceder a ellas mediante Mi espacio de trabajo en lugar de desplazarse a la ubicación en la que se guardan en el repositorio.
+Ahora puede [fijar archivos, carpetas y colecciones para un acceso más rápido](/help/assets/my-workspace-assets-view.md) a estos elementos cuando los necesite más tarde. Los elementos anclados se muestran en la sección **Acceso rápido** de Mi espacio de trabajo. Puede acceder a ellos mediante Mi espacio de trabajo en lugar de desplazarse a la ubicación en la que se guardan en el repositorio.
 
 ![Tareas en el espacio de trabajo](/help/assets/assets/quick-access.png)
 
@@ -102,13 +102,13 @@ La vista de recursos ahora genera vistas previas de miniaturas para formatos de 
 
 **Ver los términos más buscados**
 
-La vista de recursos ahora admite [visualización de los términos más buscados en la implementación](/help/assets/my-workspace-assets-view.md) uso del **Insights** de Mi espacio de trabajo. También puede navegar a Perspectivas detalladas para ver las búsquedas principales durante los últimos 30 días o 12 meses.
+La vista de recursos ahora admite [visualización de los términos más buscados en la implementación](/help/assets/my-workspace-assets-view.md) uso de la sección **Insights** de Mi espacio de trabajo. También puede navegar a Perspectivas detalladas para ver las búsquedas principales durante los últimos 30 días o 12 meses.
 
 ![Tareas en el espacio de trabajo](/help/assets/assets/insights-top-searches.png)
 
-**Mejoras en formularios de metadatos**
+**Mejoras en los formularios de metadatos**
 
-La vista de recursos ahora le permite [adición de texto de varios valores y componentes de propiedad de lista desplegable](/help/assets/metadata-assets-view.md#property-components) a los formularios de metadatos.
+La vista de recursos ahora le permite [añadir texto de varios valores y componentes de propiedad de lista desplegable](/help/assets/metadata-assets-view.md#property-components) a los formularios de metadatos.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -122,17 +122,17 @@ La vista de recursos ahora le permite [adición de texto de varios valores y com
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Adobe Acrobat Sign Solutions para Administración Pública](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign Solutions para Administración Pública. Esta integración proporciona un nivel avanzado de cumplimiento y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con el gobierno (departamentos y agencias gubernamentales).
+* [Adobe Acrobat Sign Solutions para la Administración Pública](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign Solutions para la Administración Pública. Esta integración proporciona un nivel avanzado de cumplimiento y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con el gobierno (departamentos y agencias gubernamentales).
 
-  La integración con Adobe Acrobat Sign Solutions para Administración Pública permite a los socios de Adobe y a los clientes gubernamentales utilizar firmas electrónicas en Forms adaptable para algunas de las líneas de negocio más importantes y sensibles. Este nivel adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con la normativa FedRAMP Moderate, lo que proporciona tranquilidad a los clientes de la administración pública de Adobe.
+  La integración con Adobe Acrobat Sign Solutions para la Administración Pública permite a los socios de Adobe y a los clientes de la administración pública utilizar firmas electrónicas en los formularios adaptables para algunas de las líneas de negocio más importantes y confidenciales. Este nivel adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con la normativa FedRAMP Moderate, lo que proporciona tranquilidad a los clientes de la administración pública de Adobe.
 
-* [Tratamiento de errores mejorado con controladores de error personalizados en el editor de reglas](/help/forms/add-custom-error-handler-adaptive-forms.md): Ahora puede invocar una función personalizada (mediante la Biblioteca de clientes) en respuesta a un error devuelto por un servicio externo y proporcionar una respuesta adaptada a los usuarios finales. O bien, puede realizar acciones específicas en busca de errores devueltos por un servicio. Por ejemplo, puede invocar un flujo de trabajo personalizado en el back-end para códigos de error específicos o informar al cliente de que el servicio está inactivo.
+* [Tratamiento de errores mejorado con controladores de error personalizados en el editor de reglas](/help/forms/add-custom-error-handler-adaptive-forms.md): ahora puede invocar una función personalizada (mediante la Biblioteca de clientes) en respuesta a un error devuelto por un servicio externo y proporcionar una respuesta adaptada a los usuarios finales. O bien, puede realizar acciones específicas en busca de errores devueltos por un servicio. Por ejemplo, puede invocar un flujo de trabajo personalizado en el back-end para códigos de error específicos o informar al cliente de que el servicio está inactivo.
 
   Esta funcionalidad ayuda a mejorar su capacidad general de gestión de errores mediante la introducción de respuestas de error basadas en estándares compatibles con los controladores de errores OOTB, con buena flexibilidad y control.
 
 * [Métodos de autenticación mejorados para el modelo de datos de formulario](/help/forms/configure-data-sources.md): Disfrute de una mayor seguridad con la introducción de la autenticación basada en credenciales de cliente para conectar AEM Forms con fuentes de datos compatibles. Esta mejora elimina la necesidad de suplantación o inicio de sesión del usuario, lo que refuerza la protección de los datos.
 
-* [Forms adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md): Ahora puede hacer que [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), y [Fichas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componentes en un formulario adaptable basado en componentes principales para crear secciones repetibles.
+* [Forms adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md): Ahora puede hacer que [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=es), y [Fichas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es) componentes en un formulario adaptable basado en componentes principales para crear secciones repetibles.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
@@ -142,7 +142,7 @@ La vista de recursos ahora le permite [adición de texto de varios valores y com
 
 ### Formularios adaptables sin encabezado, programa para primeros usuarios {#forms-early-adopter}
 
-Uso [Forms adaptable sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=es) para permitir a los desarrolladores crear, publicar y administrar formularios interactivos a los que se puede acceder e interactuar mediante API, en lugar de a través de una interfaz gráfica de usuario tradicional. Los formularios adaptables sin encabezado le ayudan a:
+Utilice los [Formularios adaptables sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=es) para que los desarrolladores puedan crear, publicar y gestionar formularios interactivos a los que se pueda acceder y con los que se pueda interactuar a través de API, en lugar de a través de una interfaz gráfica de usuario tradicional. Los formularios adaptables sin encabezado le ayudan a:
 
 * crear formularios multicanal de alta calidad en el lenguaje de programación que desee
 * integrar formularios de forma nativa en sus aplicaciones móviles y de escritorio, sitios web y aplicaciones de chat

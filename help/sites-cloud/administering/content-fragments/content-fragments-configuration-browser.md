@@ -1,23 +1,32 @@
 ---
 title: 'Fragmentos de contenido: explorador de configuración'
-description: Obtenga información sobre cómo habilitar la funcionalidad Fragmento de contenido y GraphQL AEM en el Explorador de configuración para utilizar las funciones de envío sin encabezado de la aplicación de la configuración de la aplicación para utilizar las funciones de envío sin encabezado de la aplicación.
+description: Obtenga información sobre las funcionalidades Fragmento de contenido y GraphQL en el explorador de configuración para utilizar las funciones de envío sin encabezado de AEM.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 # Fragmentos de contenido: explorador de configuración{#content-fragments-configuration-browser}
 
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
+
 Obtenga información sobre cómo habilitar una funcionalidad de fragmento de contenido específica en el Explorador de configuración.
 
 ## Habilitación de la funcionalidad de fragmento de contenido para la instancia {#enable-content-fragment-functionality-instance}
 
-Antes de usar fragmentos de contenido, debe usar la variable **Explorador de configuración** para habilitar:
+Antes de usar fragmentos de contenido, debe usar el **Explorador de configuración** para habilitar lo siguiente:
 
 * **Modelos de fragmentos de contenido**: obligatorio
 * **Consultas persistentes de GraphQL**: opcional
@@ -26,8 +35,8 @@ Antes de usar fragmentos de contenido, debe usar la variable **Explorador de con
 >
 >Si no habilita **Modelos de fragmentos de contenido**:
 >
->* el **Crear** La opción no está disponible para crear modelos.
->* no puede [seleccione la configuración de Sites para crear el punto final relacionado](/help/headless/graphql-api/graphql-endpoint.md).
+>* La opción **Crear** no está disponible para crear modelos.
+>* No puede [seleccionar la configuración de Sites para crear el punto final relacionado](/help/headless/graphql-api/graphql-endpoint.md).
 
 Para habilitar la funcionalidad de fragmento de contenido, debe hacer lo siguiente:
 
@@ -36,22 +45,22 @@ Para habilitar la funcionalidad de fragmento de contenido, debe hacer lo siguien
 
 ### Habilitación de la funcionalidad de fragmento de contenido en el Explorador de configuración {#enable-content-fragment-functionality-in-configuration-browser}
 
-Para usar ciertos [Funcionalidad de fragmento de contenido](#creating-a-content-fragment-model), usted **debe** habilite primero estas opciones a través de **Explorador de configuración**:
+Para utilizar determinadas [funcionalidades de fragmentos de contenido](#creating-a-content-fragment-model), primero **debe** habilitarlas mediante el **Explorador de configuración**:
 
 >[!NOTE]
 >
->Para obtener más información, consulte [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Para obtener más información, consulte también [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
->[Subconfiguraciones](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (una configuración anidada en otra configuración) son totalmente compatibles para su uso con fragmentos de contenido, modelos de fragmentos de contenido y consultas de GraphQL.
+>[Subconfiguraciones](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (una configuración anidada dentro de otra configuración) es totalmente compatible para su uso con fragmentos de contenido, modelos de fragmentos de contenido y consultas de GraphQL.
 >
 >Solo tenga en cuenta lo siguiente:
 >
 >
 >* Después de crear modelos en una subconfiguración, NO es posible mover o copiar el modelo a otra subconfiguración.
 >
->* Un extremo de GraphQL se basa (aún) en una configuración principal (raíz).
+>* Un punto final de GraphQL (aún) se basa en una configuración principal (raíz).
 >
 >* Las consultas persistentes se guardan (aún) de forma relevante para la configuración principal (raíz).
 
@@ -61,8 +70,8 @@ Para usar ciertos [Funcionalidad de fragmento de contenido](#creating-a-content-
 1. Use **Crear** para abrir el cuadro de diálogo, donde:
 
    1. Especifique un **Título**.
-   1. El **Nombre** se convierte en el nombre de nodo del repositorio.
-      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de](/help/implementing/developing/introduction/naming-conventions.md).
+   1. El **nombre** se convierte en el nombre de nodo en el repositorio.
+      * Se genera automáticamente en función del título y se ajusta según las [convenciones de nomenclatura de AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Puede ajustarlo si es necesario.
    1. Para habilitar su uso, seleccione
       * **Modelos de fragmentos de contenido**
@@ -76,8 +85,8 @@ Para usar ciertos [Funcionalidad de fragmento de contenido](#creating-a-content-
 
 ### Aplicar la configuración a la carpeta {#apply-the-configuration-to-your-folder}
 
-Cuando la configuración **global** está habilitado para la funcionalidad de fragmento de contenido, se aplica a cualquier carpeta de recursos, accesible a través de **Assets** consola.
+Cuando la configuración **global** está habilitada para la funcionalidad de fragmentos de contenido, se aplica a cualquier carpeta de recursos, a la que se puede acceder a través de la consola **Recursos**.
 
-Para utilizar otras configuraciones (es decir, excluidas las globales) con una carpeta de Assets comparable, debe definir la conexión. Esta conexión se realiza seleccionando la opción **Configuración** en el **Cloud Services** de la pestaña **Propiedades de carpeta** de la carpeta adecuada.
+Para utilizar otras configuraciones (es decir, excluyendo la global) con una carpeta de Recursos comparable, debe definir la conexión. Para ello, seleccione la **configuración** adecuada en la pestaña **Cloud Services** de las **Propiedades de carpeta** de la carpeta correspondiente.
 
 ![Aplicar configuración](assets/cfm-conf-02.png)

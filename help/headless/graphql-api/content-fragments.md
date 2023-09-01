@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
+source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
 workflow-type: tm+mt
 source-wordcount: '4922'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ GraphQL es:
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-Para obtener información sobre la API de GraphQL, consulte las siguientes secciones (entre muchos otros recursos):
+Para obtener información acerca de la API de GraphQL, consulte las siguientes secciones (entre muchos otros recursos):
 
 * En [graphql.org](https://graphql.org):
 
@@ -164,7 +164,7 @@ GraphQL es una API con establecimiento inflexible de tipos, lo que significa que
 
 La especificación de GraphQL proporciona una serie de directrices sobre cómo crear una API robusta para buscar datos en una instancia determinada. Para ello, un cliente debe recuperar el [Esquema](#schema-generation), que contiene todos los tipos necesarios para una consulta.
 
-Para los fragmentos de contenido, los esquemas (estructura y tipos) de GraphQL se basan en [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) **habilitados** y sus tipos de datos.
+Para los fragmentos de contenido, los esquemas (estructura y tipos) de GraphQL se basan en [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) **habilitados** y sus tipos de datos.
 
 >[!CAUTION]
 >
@@ -201,7 +201,7 @@ Por ejemplo, si:
 
 1. Instala un paquete que contenga `Content-Fragment-Model-1` y `Content-Fragment-Model-2`:
 
-   1. Tipos de GraphQL para `Model-1` y `Model-2` se generan.
+   1. Se generan tipos de GraphQL para `Model-1` y `Model-2`.
 
 1. A continuación, modifique `Content-Fragment-Model-2`:
 
@@ -259,7 +259,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 
 ### Campos de ayuda {#helper-fields}
 
-Además de los tipos de datos de los campos generados por el usuario, GraphQL AEM para la también genera una serie de *ayudante* campos para ayudar a identificar un fragmento de contenido o para proporcionar información adicional acerca de un fragmento de contenido.
+Además de los tipos de datos de los campos generados por el usuario, GraphQL para AEM también genera una serie de campos de *ayuda* para identificar un fragmento de contenido o proporcionar información adicional acerca de este.
 
 Estos [campos de ayuda](#helper-fields) se marcan con un `_` que los precede para distinguir entre lo que ha definido el usuario y lo que se ha generado automáticamente.
 
@@ -409,7 +409,7 @@ query($variation: String!) {
 
 Esta consulta devolverá la lista completa de autores. Los autores sin la variación `another` volverán a los datos originales (`_variation` informará de `master` en este caso).
 
-Aplicar una [filter](#filtering), si desea restringir la lista a autores que proporcionen la variación especificada (y omitir autores que recurran a los datos originales):
+Aplique un [filtro](#filtering), si desea restringir la lista a autores que proporcionan la variación especificada (y omitir autores que recurren a los datos originales):
 
 ```graphql
 query($variation: String!) {
@@ -433,7 +433,7 @@ query($variation: String!) {
 
 En GraphQL existe la posibilidad de cambiar la consulta en función de variables, denominadas Directivas de GraphQL.
 
-Por ejemplo, se puede incluir la variable `adventurePrice` en una consulta para todos los `AdventureModels`, en función de una variable `includePrice`.
+Por ejemplo, puede incluir el campo `adventurePrice` en una consulta para todos los `AdventureModels`, en función de una variable `includePrice`.
 
 ![Directivas de GraphQL](assets/cfm-graphqlapi-04.png "Directivas de GraphQL")
 
@@ -571,8 +571,8 @@ Esta función permite ordenar los resultados de la consulta según un campo espe
 Los criterios de clasificación son los siguientes:
 
 * una lista de valores separados por comas que representa la ruta del campo
-   * el primer campo de la lista definirá el criterio de ordenación principal, el segundo campo se utiliza si dos valores del criterio de ordenación principal son iguales, el tercero si los dos primeros criterios son iguales, etc.
-   * notación de puntos, es decir, field1.subfield.subfield, etc...
+   * el primer campo de la lista define el orden de clasificación principal, el segundo se utiliza si dos valores del criterio de clasificación principal son iguales, el tercero si los dos primeros criterios son iguales, etc.
+   * notación de puntos, es decir, campo1.subcampo.subcampo, etc.
 * una dirección de orden opcional
    * ASC (de subida) o DESC (de bajada); ASC se aplica como predeterminado
    * se puede especificar la dirección por campo; esto significa que puede ordenar un campo en orden de subida y otro en orden de bajada (nombre, apellido DESC)
@@ -666,7 +666,7 @@ query {
 
 >[!NOTE]
 >
->* La paginación requiere un orden de clasificación estable para funcionar correctamente en varias consultas que soliciten diferentes páginas del mismo conjunto de resultados. De forma predeterminada, utiliza la ruta del repositorio de cada elemento del conjunto de resultados para asegurar que el orden sea siempre el mismo. Si se utiliza un criterio de ordenación diferente y no se puede realizar esa ordenación en el nivel de consulta JCR, el rendimiento se ve afectado, ya que todo el conjunto de resultados debe cargarse en la memoria antes de poder determinar las páginas.
+>* La paginación requiere un orden de clasificación estable para funcionar correctamente en varias consultas que soliciten diferentes páginas del mismo conjunto de resultados. De forma predeterminada, utiliza la ruta del repositorio de cada elemento del conjunto de resultados para asegurar que el orden sea siempre el mismo. Si se utiliza un orden de clasificación diferente y si esa clasificación no se puede realizar en el nivel de consulta JCR, se produce un impacto negativo en el rendimiento, ya que todo el conjunto de resultados debe cargarse en la memoria antes de que se puedan determinar las páginas.
 >
 >* Cuanto mayor sea el desplazamiento, más tiempo tardará en omitir los elementos del conjunto de resultados completo de la consulta JCR. Una solución alternativa para grandes conjuntos de resultados es utilizar la consulta paginada con el método `first` y `after`.
 
@@ -742,7 +742,7 @@ La solución de GraphQL significa que puede hacer lo siguiente:
 La estructura y la sintaxis son las siguientes:
 
 * `format`: una enumeración con todos los formatos admitidos por su extensión: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL o WEBPLY
-* `seoName`: una cadena que se utiliza como nombre de archivo en lugar del nombre del nodo
+* `seoName`: una cadena que se utiliza como nombre de archivo en lugar del nombre de nodo
 * `crop`: una subestructura de fotograma, si se omite la anchura o la altura, estas se utilizan como el mismo valor
    * `xOrigin`: el origen x del fotograma, es obligatorio
    * `yOrigin`: el origen y del fotograma, es obligatorio
@@ -753,7 +753,7 @@ La estructura y la sintaxis son las siguientes:
    * `height`: la altura de la dimensión
 * `rotation`: una enumeración de todas las rotaciones admitidas: R90, R180, R270
 * `flip`: una enumeración de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
-* `quality`: un entero entre 1 y 100 que indica el porcentaje de calidad de imagen
+* `quality`: un entero entre 1 y 100 que indica el porcentaje de calidad de la imagen
 * `width`: un entero que define la anchura de la imagen de salida, pero que el Generador de imágenes ignora
 * `preferWebp`: un booleano que indica si se prefiere webp (el valor predeterminado es falso)
 
@@ -1047,4 +1047,4 @@ En adelante, AEM tiene previsto invertir en la API de GraphQL de AEM.*”
 
 ## Tutorial: Introducción a AEM Headless y GraphQL {#tutorial}
 
-¿Busca un tutorial práctico? Desproteger [AEM Introducción a las soluciones sin encabezado y de GraphQL de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) AEM Tutorial completo que ilustra cómo crear y exponer contenido mediante las API de GraphQL de la interfaz de usuario de, y consumido por una aplicación externa, en un escenario de CMS sin encabezado.
+¿Busca un tutorial práctico? Consulte el tutorial completo [Introducción a AEM Headless y GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es), que ilustra cómo crear y exponer contenido mediante las API de GraphQL de AEM y consumido por una aplicación externa, en un escenario de CMS sin encabezado.

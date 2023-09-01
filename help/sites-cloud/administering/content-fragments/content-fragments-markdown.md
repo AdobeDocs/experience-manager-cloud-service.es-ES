@@ -3,8 +3,11 @@ title: Markdown
 description: Entender cómo el editor de fragmentos de contenido utiliza la sintaxis de markdown para permitirle crear fácilmente contenido, tanto para la creación de páginas como para la entrega sin encabezado.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 100%
@@ -12,6 +15,12 @@ ht-degree: 100%
 ---
 
 # Markdown {#markdown}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Cuando [crea](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza la sintaxis *Markdown* para permitirle escribir fácilmente contenido, tanto para la creación de páginas como para la entrega sin encabezado:
 

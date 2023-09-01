@@ -2,10 +2,10 @@
 title: Administración de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, la base del contenido sin encabezado.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 69%
+source-wordcount: '1813'
+ht-degree: 71%
 
 ---
 
@@ -34,7 +34,11 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 
 >[!NOTE]
 >
->Los fragmentos de contenido se almacenan como **Recursos**. Ahora se administran principalmente con **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** consola, aunque se pueden seguir administrando desde el **Assets** consola. Esta sección trata la administración desde el **Assets** consola.
+>Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
+>
+>Ahora se administran principalmente con **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** consola, aunque se pueden seguir administrando desde el **Assets** consola. Esta sección trata la administración desde el **Assets** consola.
+>
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola).
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 
@@ -129,7 +133,7 @@ Abra el fragmento para su edición:
 
 >[!CAUTION]
 >
->Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene problemas, póngase en contacto con el administrador del sistema.
+>Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
 1. Utilice el **Assets** para desplazarse a la ubicación del fragmento de contenido.
 1. Abra el fragmento para editarlo, haciendo lo siguiente:
@@ -175,7 +179,7 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
 
 ![Acciones de la barra de herramientas disponibles en varios modos](assets/cfm-managing-top-toolbar.png)
 
-* Se muestra un mensaje cuando ya se hace referencia al fragmento en una página de contenido. Puede **Cerrar** el mensaje.
+* Se muestra un mensaje cuando ya se hizo referencia al fragmento en una página de contenido. Puede **Cerrar** el mensaje.
 
 * El panel lateral puede ocultarse o mostrarse utilizando el icono **Alternar panel lateral**.
 
@@ -217,7 +221,7 @@ El editor tiene varias opciones:
 
   >[!CAUTION]
   >
-  >Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene problemas, póngase en contacto con el administrador del sistema.
+  >Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
   >[!NOTE]
   >

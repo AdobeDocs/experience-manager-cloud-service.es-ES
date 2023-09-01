@@ -3,10 +3,10 @@ title: Consideraciones de permisos para contenido sin encabezado
 description: Obtenga información acerca de diferentes consideraciones de permisos y ACL para una implementación sin encabezado con Adobe Experience Manager. Comprenda los diferentes perfiles y los niveles de permisos potenciales necesarios para los entornos de creación y publicación.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,9 +52,9 @@ Si utiliza IMS para miembro del grupo, añada los grupos de IMS adecuados como m
 
 Se recomienda no modificar directamente los permisos de un grupo predeterminado. En su lugar, también puede crear sus propios grupos siguiendo los permisos de grupo de **Usuarios de DAM** y restringir aún más el acceso a diferentes **carpetas** en AEM Assets.
 
-Para obtener permisos más granulares, use **Permisos** AEM consola de en la ruta y actualizar la ruta de acceso desde el `/content/dam` a una ruta más específica, es decir, `/content/dam/mycontentfragments`.
+Para obtener permisos más granulares, utilice la consola **Permisos** en AEM y actualice la ruta de `/content/dam` a una ruta más específica, como, `/content/dam/mycontentfragments`.
 
-Puede ser deseable conceder a este grupo de usuarios permisos para crear y editar fragmentos de contenido, pero no para eliminarlos. Para revisar y asignar permisos de edición, pero no para eliminar, consulte [Fragmentos de contenido: eliminar consideraciones](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+Puede ser deseable conceder a este grupo de usuarios permisos para crear y editar fragmentos de contenido, pero no para eliminarlos. Para revisar y asignar permisos de edición, pero no para eliminar, consulte [Fragmentos de contenido: eliminar consideraciones](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 ### Editores de modelos
 

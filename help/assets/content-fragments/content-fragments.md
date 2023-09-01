@@ -2,10 +2,10 @@
 title: 'Trabajar con fragmentos de contenido (Recursos: fragmentos de contenido)'
 description: Descubra cómo los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas, lo que resulta ideal para la creación de páginas y la entrega sin encabezado. También cómo se pueden usar junto con MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 88%
+source-wordcount: '2216'
+ht-degree: 86%
 
 ---
 
@@ -34,7 +34,11 @@ Los fragmentos de contenido también se pueden entregar en formato JSON, utiliza
 
 >[!NOTE]
 >
->Los fragmentos de contenido se almacenan como **Recursos**. Ahora se administran principalmente con **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** consola, aunque se pueden seguir administrando desde el **Assets** consola. Esta sección trata la administración desde el **Assets** consola.
+>Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
+>
+>Ahora se administran principalmente con **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** consola, aunque se pueden seguir administrando desde el **Assets** consola. Esta sección trata la administración desde el **Assets** consola.
+>
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola).
 
 Esta y las siguientes páginas tratan sobre las tareas para crear, configurar, mantener y utilizar sus fragmentos de contenido:
 
@@ -114,7 +118,7 @@ Junto con las capacidades de exportación de JSON de los componentes principales
 
 Cuando se accede a través de **Assets** consola puede utilizar MSM y crear Live Copies para sus fragmentos.
 
-Para obtener más información, consulte [Reutilización de fragmentos de contenido mediante MSM para recursos](/help/assets/reuse-assets-using-msm.md).
+Para obtener más información, consulte [Reutilización de fragmentos de contenido mediante MSM para recursos](/help/assets/reuse-assets-using-msm.md). Esto habilita [herencia](/help/assets/content-fragments/content-fragments-variations.md#inheritance) para variaciones y campos individuales de los fragmentos.
 
 >[!CAUTION]
 >
@@ -142,7 +146,7 @@ Los fragmentos de contenido son una estructura de contenido que:
 * Puede [contener imágenes o estar conectada a ellas](#fragments-with-visual-assets).
 * Puede usar [contenido intermedio](#in-between-content-when-page-authoring-with-content-fragments) cuando está referenciada en una página.
 
-* Son independientes del mecanismo de envío (es decir, página, canal).
+* Es independiente del mecanismo de entrega (es decir, página, canal).
 
 ### Fragmentos con recursos visuales {#fragments-with-visual-assets}
 
@@ -289,7 +293,7 @@ Para utilizar los fragmentos de contenido para la creación de páginas, tambié
 
    * Instrumental para entregar el fragmento en formato HTML o JSON.
    * Requerido para [hacer referencia al fragmento en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Responsable del diseño y la entrega de un fragmento; es decir, de los canales.
+   * Responsable del diseño y entrega de un fragmento; es decir, de los canales.
    * Los fragmentos necesitan uno o más componentes dedicados para definir el diseño y proporcionar algunos o todos los elementos/variaciones y el contenido asociado.
    * Al arrastrar un fragmento a una página en la creación, se asociará automáticamente el componente requerido.
 

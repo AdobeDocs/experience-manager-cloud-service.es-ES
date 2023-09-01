@@ -4,15 +4,24 @@ description: Obtenga información sobre cómo administrar fragmentos de contenid
 landing-page-description: Aprenda a administrar fragmentos de contenido desde la consola Fragmentos de contenido, que se centra en el uso de gran volumen de los fragmentos de contenido para casos de uso sin encabezado, pero que también se usa al crear páginas.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 85%
+ht-degree: 90%
 
 ---
 
 # Consola Fragmentos de contenido  {#content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Descubra cómo la consola Fragmentos de contenido optimiza el acceso a los fragmentos de contenido, lo que le ayuda a crearlos, buscarlos y administrarlos mediante acciones administrativas como publicarlos, cancelar la publicación o copiarlos.
 
@@ -58,14 +67,14 @@ Aquí se pueden ver tres áreas principales:
    * Se puede cambiar el tamaño para mostrar carpetas anidadas
 * Panel principal/derecho, desde aquí puede hacer lo siguiente:
    * Consultar la lista de todos los fragmentos de contenido en la rama seleccionada del árbol:
-      * La ubicación se indica mediante las rutas de exploración; también se pueden usar para cambiar la ubicación.
+      * La ubicación se indica mediante las rutas de exploración; también se pueden usar para cambiar la ubicación
       * Se muestran los fragmentos de contenido de la carpeta seleccionada y todas las carpetas secundarias:
          * [Varios campos de información](#selectuse-available-columns) acerca de un fragmento de contenido para proporcionar vínculos; según el campo, pueden realizar lo siguiente:
             * Abrir el fragmento correspondiente en el editor
             * Mostrar información sobre referencias
             * Mostrar información sobre las versiones de idioma del fragmento
             * Filtro rápido por una etiqueta seleccionada
-      * Al pasar el ratón por encima de los encabezados de columna, se muestra un selector de acciones desplegable y controles deslizantes de anchura. Esto le permite hacer lo siguiente:
+      * Al utilizar el ratón sobre los encabezados de columna, se muestran un selector de acciones desplegable y controles deslizantes de anchura. Estos le permiten hacer lo siguiente:
          * Ordenar: seleccione la acción adecuada, ya sea ascendente o descendente.
 Así se ordenará toda la tabla según esa columna. La ordenación solo está disponible en las columnas adecuadas.
          * Cambiar el tamaño de la columna: mediante los controles deslizantes de acción o de anchura

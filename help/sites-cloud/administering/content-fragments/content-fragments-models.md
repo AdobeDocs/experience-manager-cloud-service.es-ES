@@ -3,15 +3,24 @@ title: Modelos de fragmento de contenido
 description: Descubra cómo los modelos de fragmentos de contenido sirven de base para los fragmentos de contenido en AEM. Permiten crear contenido estructurado para utilizarlo en entregas sin encabezado o en la creación de páginas.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2916'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
 # Modelos de fragmento de contenido {#content-fragment-models}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Los modelos de fragmentos de contenido de AEM definen la estructura del contenido de los [fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md). Pueden utilizarse para la creación de páginas o como base para el contenido sin encabezado.
 
@@ -58,7 +67,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
 
    >[!NOTE]
    >
-   >Cuando un campo como **Requerido**, el **Etiqueta** indicado en el panel izquierdo está marcado con un asterisco (**&#42;**).
+   >Cuando un campo es **Obligatorio**, la **Etiqueta** indicada en el panel izquierdo se marca con un asterisco (**&#42;**).
 
 ![propiedades](assets/cfm-models-03.png)
 
@@ -77,7 +86,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
         >
         >Al actualizar de forma manual la propiedad **Nombre de propiedad** para un tipo de datos, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos “_” como carácter especial.
         >
-        >AEM Si los modelos creados en versiones anteriores de contienen caracteres no permitidos, elimine o actualice dichos caracteres.
+        >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
 
      Por ejemplo:
 
@@ -85,7 +94,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
 
 1. **Eliminación de un campo**
 
-   Seleccione el campo requerido y, a continuación, toque o haga clic en el icono de la papelera. Se le pedirá que confirme la acción.
+   Seleccione el campo requerido y, a continuación, toque o haga clic en el icono de la papelera. Se le solicitará que confirme la acción.
 
    ![quitar](assets/cfm-models-06.png)
 
@@ -124,12 +133,12 @@ Hay disponible una selección de tipos de datos para definir el modelo:
 * **Objeto JSON**
    * Permite al autor del fragmento de contenido introducir la sintaxis JSON en los elementos correspondientes de un fragmento.
       * Para permitir que AEM almacene el JSON directo que ha copiado/pegado desde otro servicio.
-      * El JSON se pasa y se genera como JSON en GraphQL.
+      * El JSON se pasará y se emitirá como JSON en GraphQL.
       * Incluye resaltado de sintaxis JSON, autocompletado y resaltado de errores en el editor de fragmentos de contenido.
 * **Marcador de posición de pestaña**
    * Permite la introducción de pestañas para utilizarlas al editar el contenido del fragmento de contenido.
-Se muestra como un divisor en el editor de modelos que separa las secciones de la lista de tipos de datos de contenido. Cada instancia representa el inicio de una nueva pestaña.
-En el editor de fragmentos, cada instancia aparece como una pestaña.
+Esto se mostrará como un divisor en el editor de modelos, que separa las secciones de la lista de tipos de datos de contenido. Cada instancia representa el inicio de una nueva pestaña.
+En el editor de fragmentos, cada instancia aparecerá como una pestaña.
 
      >[!NOTE]
      >
@@ -145,13 +154,13 @@ Muchas propiedades se explican por sí mismas; para otras, a continuación se pr
 
   >[!CAUTION]
   >
-  >AEM Si los modelos creados en versiones anteriores de contienen caracteres no permitidos, elimine o actualice dichos caracteres.
+  >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
 
 * **Representar como**
-Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor ve una sola instancia del campo o si se le permite crear varias instancias.
+Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor verá una sola instancia del campo o si se le permitirá crear varias instancias.
 
 * **Etiqueta de campo**
-Introducción de una **Etiqueta de campo** generará automáticamente un **Nombre de propiedad**, que se puede actualizar de forma manual si es necesario.
+Introducir una **Etiqueta de campo** generará automáticamente un **Nombre de propiedad**, que se puede actualizar de forma manual si es necesario.
 
 * **Validación**
 La validación básica está disponible mediante mecanismos como la propiedad **Requerido**. Algunos tipos de datos tienen campos de validación adicionales. Consulte [Validación](#validation) para obtener más información.
@@ -171,7 +180,7 @@ El contenido (para el campo específico) debe ser único en todos los fragmentos
 
   Se utiliza para garantizar que los autores de contenido no puedan repetir el contenido ya añadido en otro fragmento del mismo modelo.
 
-  Por ejemplo, un campo de **Texto de una sola línea** llamado `Country` en el modelo de fragmentos de contenido no puede tener el valor `Japan` en dos fragmentos de contenido dependientes. Se emite una advertencia cuando se intenta la segunda instancia.
+  Por ejemplo, un campo de **Texto de una sola línea** llamado `Country` en el modelo de fragmentos de contenido no puede tener el valor `Japan` en dos fragmentos de contenido dependientes. Se emitirá una advertencia cuando se intente la segunda instancia.
 
   >[!NOTE]
   >
@@ -490,7 +499,7 @@ Puede administrar modelos **Bloqueados** desde la consola o desde el editor de m
 
    * Puede **Desbloquear** un modelo para activar las ediciones.
 
-     Si selecciona **Desbloquear**, se muestra una advertencia y debe confirmar la **Desbloquear** acción:
+     Si selecciona **Desbloquear**, se mostrará una advertencia, y debe confirmar la acción **Desbloquear**:
      ![Mensaje al desbloquear el modelo de fragmento de contenido](assets/cfm-model-unlock-message.png)
 
      A continuación, puede abrir el modelo para editarlo.
@@ -500,7 +509,7 @@ Puede administrar modelos **Bloqueados** desde la consola o desde el editor de m
 
 * Editor de modelo
 
-   * Cuando se abre un modelo bloqueado, se le advierte y se le presentan tres acciones: **Cancelar**, **Ver solo lectura**, **Editar**:
+   * Al abrir un modelo bloqueado, se le avisará y se le presentarán tres acciones: **Cancelar**, **Ver solo lectura**, **Editar**:
 
      ![Mensaje al ver un modelo de fragmento de contenido bloqueado](assets/cfm-model-editor-lock-message.png)
 

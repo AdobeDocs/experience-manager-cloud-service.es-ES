@@ -3,10 +3,10 @@ title: AEM Uso de flujos de trabajo de creación de informes centrados en Forms 
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo basados en formularios adaptables. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varias fuentes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '7192'
-ht-degree: 98%
+source-wordcount: '7452'
+ht-degree: 79%
 
 ---
 
@@ -17,11 +17,13 @@ ht-degree: 98%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Este artículo |
 
+<span class="preview"> Funciones de cantante, pista de auditoría y opciones de autenticación basadas en documentos de identidad oficiales en [Paso Firmar documento](#sign-document-step) son funciones previas al lanzamiento y se puede acceder a ellas a través de nuestra [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
 Los modelos de flujo de trabajo se utilizan Un modelo le ayuda a definir y ejecutar una serie de pasos. También puede definir propiedades del modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos. Puede [incluir varios pasos del flujo de trabajo AEM en un modelo para lograr establecer una lógica empresarial](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es#extending-aem).
 
 ## Pasos centrados en Forms {#forms-workflow-steps}
 
-Los pasos del flujo de trabajo centrados en AEM Forms realizan operaciones específicas en un flujo de trabajo AEM. Estos pasos le permiten crear rápidamente formularios adaptables basados en flujos de trabajo centrados en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall. También puede seguir los pasos de Forms Workflow para:
+Los pasos del flujo de trabajo centrados en AEM Forms realizan operaciones específicas en un flujo de trabajo AEM. Estos pasos le permiten crear rápidamente un flujo de trabajo adaptable basado en Forms y centrado en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall. También puede seguir los pasos de Forms Workflow para:
 
 * Crear procesos empresariales, flujos de trabajo posteriores al envío y flujos de trabajo back-end para administrar los procesos de inscripción.
 
@@ -37,7 +39,7 @@ Los pasos del flujo de trabajo centrados en AEM Forms realizan operaciones espec
 
 >[!NOTE]
 >
->Si el modelo de flujo de trabajo está marcado para un almacenamiento externo, para todos los pasos del flujo de trabajo de Forms, puede seleccionar solo la opción de variable para almacenar o recuperar archivos de datos y archivos adjuntos.
+>Si el modelo de flujo de trabajo está marcado para un almacenamiento externo, para todos los pasos del Forms Workflow, puede seleccionar solo la opción de variable para almacenar o recuperar archivos de datos y archivos adjuntos.
 
 
 ## Paso de tarea de asignación {#assign-task-step}
@@ -46,10 +48,10 @@ El paso para asignar una tarea crea un elemento de trabajo y lo asigna a un usua
 
 También puede utilizar el componente para controlar el comportamiento de la tarea. Por ejemplo, crear un documento de registro automático, asignar la tarea a un usuario o grupo específico, especificar la ruta de los datos enviados, especificar la ruta de los datos que se van a rellenar previamente y especificar las acciones predeterminadas. El paso para asignar una tarea tiene las siguientes propiedades:
 
-* **[!UICONTROL Título]**: título de la tarea. El título se muestra en la bandeja de entrada AEM.
+* **[!UICONTROL Título]**: título de la tarea. AEM El título se muestra en la bandeja de entrada de la.
 * **[!UICONTROL Descripción]**: explicación de las operaciones que se realizan en la tarea. Esta información resulta útil para otros desarrolladores de procesos cuando trabaja en un entorno de desarrollo compartido.
 
-* **[!UICONTROL Ruta de vista en miniatura]**: ruta de la miniatura de la tarea. Si no se especifica ninguna ruta, se muestra la miniatura predeterminada de un formulario adaptable y, para el documento de registro, se muestra un icono predeterminado.
+* **[!UICONTROL Ruta de vista en miniatura]**: ruta de la miniatura de la tarea. Si no se especifica ninguna ruta, se mostrará una miniatura predeterminada para un formulario adaptable y, para el documento de registro, se mostrará un icono predeterminado.
 * **[!UICONTROL Fase del flujo de trabajo]**: un flujo de trabajo puede tener varias fases. Estas fases se muestran en la bandeja de entrada AEM. Puede definir estas fases en las propiedades del modelo (Barra de tareas > Página > Propiedades de la página > Fases).
 * **[!UICONTROL Prioridad]**: la prioridad seleccionada se muestra en la bandeja de entrada AEM. Las opciones disponibles son Alta, Media y Baja. El valor predeterminado es Media.
 * **[!UICONTROL Fecha de vencimiento]**: especifique el número de días u horas después de los cuales se marca la tarea con retraso. Si selecciona **[!UICONTROL No]**, la tarea nunca se marca como con retraso. También puede especificar un controlador de tiempo de espera para realizar tareas específicas después de que la tarea haya llegado a la fecha de vencimiento.
@@ -107,7 +109,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
    * **[!UICONTROL Guardar el archivo de datos de salida mediante]**: guarde el archivo de datos (.json, .xml, .doc o modelo de datos de formulario). El archivo de datos contiene información enviada a través del formulario asociado. Puede guardar el archivo de datos de salida utilizando una ruta relativa a la carga útil o almacenarla en una variable de tipo Doc, XML o JSON. Por ejemplo, [Payload_Directory]/Workflow/data, donde los datos son un archivo.
    * **[!UICONTROL Guardar archivos adjuntos mediante]**: guarde los datos adjuntos del formulario proporcionados en una tarea. Puede guardar los archivos adjuntos utilizando una ruta relativa a la carga útil o almacenarla en una variable de lista de matriz de documento.
-   * **[!UICONTROL Guardar documento de registro mediante]**: ruta para guardar un archivo de documento de registro. Por ejemplo, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puede guardar el documento de registro mediante una ruta relativa a la carga útil o almacenarlo en una variable de tipo Doc. Si selecciona **[!UICONTROL Relativo a la carga útil]**, el documento de registro no se genera si el campo de ruta se deja vacío. Esta opción solo está disponible si selecciona Formulario adaptable en la lista desplegable Tipo.
+   * **[!UICONTROL Guardar documento de registro mediante]**: ruta para guardar un archivo de documento de registro. Por ejemplo, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puede guardar el documento de registro mediante una ruta relativa a la carga útil o almacenarlo en una variable de tipo Doc. Si selecciona la opción **[!UICONTROL Relativo a la carga útil]** opción, el documento de registro no se genera si el campo de ruta se deja vacío. Esta opción solo está disponible si selecciona Formulario adaptable en la lista desplegable Tipo.
 
   <!-- 
     
@@ -126,34 +128,34 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
 * **[!UICONTROL Argumentos]**: el campo está disponible cuando se selecciona un script que no sea RandomParticipantChoose en el campo Selector de participantes. El campo permite proporcionar una lista de un argumento separado por comas para el script seleccionado en el campo Selector de participantes.
 
-* **[!UICONTROL Usuario o grupo]**: la tarea se asigna al usuario o grupo seleccionado. La opción está disponible cuando la variable **[!UICONTROL Para una opción de usuario o grupo específica]** está seleccionada en el campo **[!UICONTROL Asignar opciones]**. El campo enumera todos los usuarios y grupos del grupo [!DNL workflow-users].\
-  La lista **[!UICONTROL Usuario o grupo]** en el menú desplegable enumera los usuarios y grupos a los que el usuario que ha iniciado sesión tiene acceso. La visualización del nombre de usuario depende de si tiene permisos de acceso en el nodo **[!UICONTROL usuarios]** en el repositorio CRX para ese usuario en particular.
+* **[!UICONTROL Usuario o grupo]**: la tarea se asigna a un usuario o grupo seleccionado. La opción está disponible cuando la variable **[!UICONTROL Para una opción de usuario o grupo específica]** está seleccionada en el campo **[!UICONTROL Asignar opciones]**. El campo enumera todos los usuarios y grupos del grupo [!DNL workflow-users].\
+  La lista **[!UICONTROL Usuario o grupo]** en el menú desplegable enumera los usuarios y grupos a los que el usuario que ha iniciado sesión tiene acceso. La visualización del nombre de usuario depende de si tiene permisos de acceso en **[!UICONTROL usuarios]** nodo en el repositorio crx para ese usuario en particular.
 
 * **[!UICONTROL Enviar correo electrónico de notificación]**: seleccione esta opción para enviar notificaciones por correo electrónico al usuario asignado. Estas notificaciones se envían cuando se asigna una tarea a un usuario o a un grupo. Puede usar la variable **[!UICONTROL Dirección de correo electrónico del destinatario]** para especificar el mecanismo para recuperar la dirección de correo electrónico.
 
-* **[!UICONTROL Dirección de correo electrónico del destinatario]**: puede almacenar la dirección de correo electrónico en una variable, usar un valor literal para especificar una dirección de correo electrónico permanente o usar la dirección de correo electrónico predeterminada del usuario asignado especificada en el perfil del mismo. Puede utilizar el valor literal o una variable para especificar la dirección de correo electrónico de un grupo. La opción de variable es útil para recuperar y utilizar dinámicamente una dirección de correo electrónico. La variable **[!UICONTROL Usar la dirección de correo electrónico predeterminada del usuario asignado]** es solo para un único usuario asignado. En este caso, se utiliza la dirección de correo electrónico almacenada en el perfil del usuario asignado.
+* **[!UICONTROL Dirección de correo electrónico del destinatario]**: Puede almacenar una dirección de correo electrónico en una variable, utilizar un valor literal para especificar una dirección de correo electrónico permanente o utilizar la dirección de correo electrónico predeterminada del usuario asignado especificada en el perfil de este. Puede utilizar el valor literal o una variable para especificar la dirección de correo electrónico de un grupo. La opción de variable es útil para recuperar y utilizar dinámicamente una dirección de correo electrónico. La variable **[!UICONTROL Usar la dirección de correo electrónico predeterminada del usuario asignado]** es solo para un único usuario asignado. En este caso, se utiliza la dirección de correo electrónico almacenada en el perfil del usuario asignado.
 
-* **[!UICONTROL Plantilla de correo electrónico HTML]**: seleccione la plantilla de correo electrónico para el correo electrónico de notificación. Para editar una plantilla, modifique el archivo ubicado en /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt en el repositorio CRX.
+* **[!UICONTROL Plantilla de correo electrónico del HTML]**: seleccione la plantilla de correo electrónico para el correo electrónico de notificación. Para editar una plantilla, modifique el archivo ubicado en /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt en el repositorio CRX.
 * **[!UICONTROL Permitir delegación en]**: la bandeja de entrada AEM proporciona una opción al usuario que ha iniciado sesión para delegar el flujo de trabajo asignado a otro usuario. Se le permite delegar dentro del mismo grupo o al usuario del flujo de trabajo de otro grupo. Si la tarea está asignada a un único usuario y la opción **[!UICONTROL Permitir la delegación a los miembros del grupo de asignados]** está seleccionada, no es posible delegar la tarea a otro usuario o grupo.
-* **[!UICONTROL Compartir configuración]**: la bandeja de entrada AEM proporciona opciones para compartir una o todas las tareas de la bandeja de entrada con otros usuarios:
+* **[!UICONTROL Compartir configuración]** AEM : bandeja de entrada de la proporciona opciones para compartir una o todas las tareas de la bandeja de entrada con otro usuario:
    * Cuando la variable **[!UICONTROL Permitir que el usuario asignado comparta explícitamente en la bandeja de entrada]** está seleccionada, el usuario puede seleccionar la tarea la bandeja de entrada AEM y compartirla con otro usuario AEM.
-   * Cuando la variable **[!UICONTROL Permitir que el usuario asignado comparta a través del uso compartido de la bandeja de entrada]** está seleccionada y los usuarios comparten sus elementos de la bandeja de entrada o permiten que otros usuarios accedan a sus elementos de la bandeja de entrada, solo las tareas con la opción previamente mencionada se comparten con otros usuarios.
+   * Si la variable **[!UICONTROL Permitir que el usuario asignado comparta a través del uso compartido de bandeja de entrada]** está seleccionada y los usuarios comparten sus elementos de la bandeja de entrada o permiten a otros usuarios acceder a sus elementos de la bandeja de entrada; solo las tareas con la opción mencionada anteriormente se comparten con otros usuarios.
    * Cuando la opción de configuración **[!UICONTROL Permitir que el usuario asignado delegue mediante la configuración ‘Fuera de la oficina’]** está seleccionada. El usuario asignado puede activar la opción para delegar la tarea a otros usuarios junto con otras opciones fuera de la oficina. Las nuevas tareas asignadas al usuario fuera de la oficina se delegan (asignan) automáticamente a los usuarios mencionados en la configuración fuera de la oficina.
 
   Permite que otros usuarios elijan tareas asignadas mientras está fuera de la oficina y no puede trabajar en tareas asignadas.
 
 * **[!UICONTROL Acciones]** > **[!UICONTROL Acciones predeterminadas]**: las acciones Enviar, Guardar y Restablecer están disponibles por defecto. De forma predeterminada, todas estas acciones están habilitadas.
-* **[!UICONTROL Variable de ruta]**: nombre de la variable de ruta. La variable de ruta captura las acciones personalizadas que selecciona un usuario en la bandeja de entrada AEM.
-* **[!UICONTROL Rutas]**: una tarea puede ramificarse a diferentes rutas. Cuando se selecciona en la bandeja de entrada AEM, la ruta devuelve un valor y las ramas del flujo de trabajo se basan en la ruta seleccionada. Puede almacenar rutas en una variable de matriz de tipo de datos de cadena o seleccionar **[!UICONTROL Literal]** para agregar rutas manualmente.
+* **[!UICONTROL Variable de ruta]**: nombre de la variable de ruta. AEM La variable de ruta captura las acciones personalizadas que selecciona un usuario en la bandeja de entrada de la.
+* **[!UICONTROL Rutas]**: una tarea puede ramificarse a diferentes rutas. Cuando se selecciona en la bandeja de entrada AEM, la ruta devuelve un valor y las ramas del flujo de trabajo se basan en la ruta seleccionada. Puede almacenar rutas en una variable de matriz de tipos de datos de cadena o seleccionar **[!UICONTROL Literal]** para agregar rutas manualmente.
 
-* **[!UICONTROL Título de ruta]**: especifique el título de la ruta. Se muestra en la bandeja de entrada AEM.
-* **[!UICONTROL Icono coral]**: especifique el atributo HTML de un icono coral. La biblioteca CorelUI de Adobe proporciona un amplio conjunto de iconos táctiles. Puede elegir y utilizar un icono para la ruta. Se muestra junto con el título en la bandeja de entrada AEM. Si almacena las rutas en una variable, las rutas utilizan un icono coral predeterminado de &#39;Etiquetas&#39;.
-* **[!UICONTROL Permitir que el usuario asignado añada un comentario]**: seleccione esta opción para habilitar los comentarios en la tarea. Un usuario asignado puede agregar los comentarios desde la bandeja de entrada AEM en el momento del envío de la tarea.
+* **[!UICONTROL Título de ruta]**: especifique el título de la ruta. AEM Se muestra en la bandeja de entrada de la.
+* **[!UICONTROL Icono de Coral]**: especifique un atributo HTML de un icono coral. La biblioteca CorelUI de Adobe proporciona un amplio conjunto de iconos táctiles. Puede elegir y utilizar un icono para la ruta. AEM Se muestra junto con el título en la bandeja de entrada de la. Si almacena las rutas en una variable, las rutas utilizan un icono coral predeterminado de &#39;Etiquetas&#39;.
+* **[!UICONTROL Permitir que el usuario asignado añada un comentario]**: seleccione esta opción para habilitar los comentarios en la tarea. AEM Un usuario asignado puede agregar los comentarios desde la bandeja de entrada de la en el momento del envío de la tarea.
 * **[!UICONTROL Guardar comentario en la variable]**: guarde el comentario en una variable de tipo de datos de cadena. Esta opción solo se muestra si selecciona la casilla de verificación **[!UICONTROL Permitir que el usuario asignado añada un comentario]**.
 
-* **[!UICONTROL Permitir que el usuario asignado añada archivos adjuntos a la tarea]**: seleccione esta opción para activar los archivos adjuntos en la tarea. Un usuario asignado puede agregar los archivos adjuntos desde la bandeja de entrada AEM en el momento del envío de la tarea. También puede limitar el tamaño máximo **[!UICONTROL (Tamaño máximo del archivo)]** de un archivo adjunto. El tamaño predeterminado es de 2 MB.
+* **[!UICONTROL Permitir que el usuario asignado añada archivos adjuntos a la tarea]**: seleccione esta opción para activar los archivos adjuntos en la tarea. AEM Un usuario asignado puede agregar los archivos adjuntos desde la bandeja de entrada de la en el momento del envío de la tarea. También puede limitar el tamaño máximo **[!UICONTROL (Tamaño máximo del archivo)]** de un archivo adjunto. El tamaño predeterminado es de 2 MB.
 
-* **[!UICONTROL Guardar archivos adjuntos de tareas de salida mediante]**: especifique la ubicación de la carpeta de archivos adjuntos. Puede guardar archivos adjuntos de tareas de salida utilizando una ruta relativa a la carga útil o en una variable de matriz de tipo Doc. Esta opción solo se muestra si selecciona la casilla de verificación **[!UICONTROL Permitir que el usuario asignado añada archivos adjuntos a la tarea]** y selecciona **[!UICONTROL Formulario adaptable]**, **[!UICONTROL Formulario adaptable de solo lectura]** o **[!UICONTROL Documento PDF no interactivo]** de la lista desplegable **[!UICONTROL Tipo]** en la pestaña **[!UICONTROL Formulario/Documento]**.
+* **[!UICONTROL Guardar archivos adjuntos de tareas de salida mediante]**: especifique la ubicación de la carpeta de archivos adjuntos. Puede guardar archivos adjuntos de tareas de salida utilizando una ruta relativa a la carga útil o en una variable de una matriz de tipos de datos de documento. Esta opción solo se muestra si selecciona la casilla de verificación **[!UICONTROL Permitir que el usuario asignado añada archivos adjuntos a la tarea]** y selecciona **[!UICONTROL Formulario adaptable]**, **[!UICONTROL Formulario adaptable de solo lectura]** o **[!UICONTROL Documento PDF no interactivo]** de la lista desplegable **[!UICONTROL Tipo]** en la pestaña **[!UICONTROL Formulario/Documento]**.
 
 * **[!UICONTROL Usar metadatos personalizados]**: seleccione esta opción para habilitar el campo de metadatos personalizado. Los metadatos personalizados se utilizan en plantillas de correo electrónico.
 * **[!UICONTROL Metadatos personalizados]**: seleccione metadatos personalizado para las plantillas de correo electrónico. Los metadatos personalizados están disponibles en el repositorio CRX en apps/fd/dashboard/scripts/metadataScripts. La ruta especificada no existe en el repositorio CRX. Un administrador crea la ruta antes de utilizarla. También puede utilizar un servicio para los metadatos personalizados. También puede ampliar la interfaz de `WorkitemUserMetadataService` para proporcionar metadatos personalizados.
@@ -169,7 +171,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
 PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, al incrustar las fuentes y descomprimir el archivo. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Puede usar el paso ***Convertir a PDF/A*** en un flujo de trabajo AEM para convertir los documentos de su PDF a formato PDF/A.
 
-El paso para convertir a PDF/A tiene las siguientes propiedades:
+El paso para convertir en PDF/A tiene las siguientes propiedades:
 
 **[!UICONTROL Documento de entrada]**: el documento de entrada puede ser relativo a la carga útil, tener una ruta de acceso absoluta, puede proporcionarse como carga útil o almacenarse en una variable de tipo Doc.
 
@@ -179,14 +181,14 @@ El paso para convertir a PDF/A tiene las siguientes propiedades:
 * **[!UICONTROL Espacio de color]**: especifica el espacio de color predefinido como S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED o SWOP, que se puede utilizar para archivos PDF/A de salida.
 * **[!UICONTROL Contenido opcional]**: permita que objetos gráficos específicos o anotaciones estén visibles en un documento PDF/A de salida, solo cuando se cumpla un conjunto especificado de criterios.
 
-**[!UICONTROL Documentos de salida]**: especifica la ubicación para guardar el archivo de salida. El archivo de salida puede guardarse en una ubicación relativa a la carga útil, sobrescribir la carga útil, si esta es un archivo, o en una variable de tipo Doc.
+**[!UICONTROL Documentos de salida]**: especifica la ubicación para guardar el archivo de salida. El archivo de salida se puede guardar en una ubicación relativa a la carga útil, sobrescribir la carga útil, si esta es un archivo, o en una variable de tipo Doc.
 
 
 ## Paso para enviar correo electrónico {#send-email-step}
 
-Utilice este paso para enviar un correo electrónico, por ejemplo un correo electrónico con un documento de registro, un vínculo de un formulario adaptable <!-- , link of an interactive communication--> o con un documento PDF adjunto. Este paso es compatible con el [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Los correos electrónicos HTML responden y se adaptan al cliente de correo electrónico y al tamaño de pantalla de los destinatarios. Puede utilizar una plantilla de correo electrónico HTML para definir el aspecto, el esquema de colores y el comportamiento del correo electrónico.
+Utilice este paso para enviar un correo electrónico, por ejemplo un correo electrónico con un documento de registro, un vínculo de un formulario adaptable <!-- , link of an interactive communication--> o con un documento PDF adjunto. Este paso es compatible con el [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Los correos electrónicos HTML responden y se adaptan al cliente de correo electrónico y al tamaño de pantalla de los destinatarios. Puede utilizar una plantilla de correo electrónico de HTML para definir el aspecto, el esquema de colores y el comportamiento del correo electrónico.
 
-El paso de correo electrónico utiliza el servicio de correo de Day CQ para enviar correos electrónicos. Antes de utilizar el paso de correo electrónico, asegúrese de que el servicio de correo electrónico está configurado. De forma predeterminada, el correo electrónico admite los protocolos HTTP y HTTPs. [Póngase en contacto con el equipo de soporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=es#sending-email) para habilitar puertos para enviar correos electrónicos y para habilitar el protocolo SMTP para su entorno. La restricción ayuda a mejorar la seguridad de la plataforma.
+El paso de correo electrónico utiliza el servicio de correo de Day CQ para enviar correos electrónicos. Antes de utilizar el paso de correo electrónico, asegúrese de que el servicio de correo electrónico está configurado. De forma predeterminada, el correo electrónico admite los protocolos HTTP y HTTPs. [Póngase en contacto con el equipo de asistencia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=es#sending-email) para habilitar puertos para enviar correos electrónicos y habilitar el protocolo SMTP para su entorno. La restricción ayuda a mejorar la seguridad de la plataforma.
 
 El paso de correo electrónico tiene las siguientes propiedades:
 
@@ -247,14 +249,14 @@ Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos 
 
 ## Paso para invocar DDX {#invokeddx}
 
-Document Description XML (DDX) es un lenguaje declarativo de marcado cuyos elementos representan componentes básicos de documentos. Estos componentes básicos incluyen documentos PDF y XDP, y otros elementos como comentarios, marcadores y texto con estilo. DDX define un conjunto de operaciones que se pueden aplicar en uno o varios documentos de entrada para generar uno o más documentos de salida. Se puede utilizar un solo DDX con una amplia gama de documentos de origen. Puede usar el ***paso para invocar DDX*** en un flujo de trabajo AEM para realizar varias operaciones, como ensamblar documentos de desensamblaje, crear y modificar Acrobat y XFA Forms, y otras que se describen en [Documentación de referencia DDX](https://helpx.adobe.com/content/dam/help/es/experience-manager/forms-cloud-service/ddxRef.pdf).
+Document Description XML (DDX) es un lenguaje declarativo de marcado cuyos elementos representan componentes básicos de documentos. Estos componentes básicos incluyen documentos PDF y XDP, y otros elementos como comentarios, marcadores y texto con estilo. DDX define un conjunto de operaciones que se pueden aplicar en uno o varios documentos de entrada para generar uno o más documentos de salida. Se puede utilizar un solo DDX con una amplia gama de documentos de origen. Puede usar el complemento ***Paso Invocar DDX*** AEM en un flujo de trabajo de para realizar varias operaciones, como ensamblar documentos de desensamblaje, crear y modificar Acrobat y XFA Forms, y otras que se describen en la [Documentación de referencia de DDX](https://helpx.adobe.com/content/dam/help/es/experience-manager/forms-cloud-service/ddxRef.pdf).
 
 El paso Invocar DDX tiene las siguientes propiedades:
 
 **[!UICONTROL Documentos de entrada]**: se utiliza para establecer las propiedades de un documento de entrada. Hay varias opciones disponibles en esta pestaña:
 * **[!UICONTROL Especificar DDX mediante]**: especifica el documento de entrada que puede ser relativo a la carga útil, tener una ruta de acceso absoluta, puede proporcionarse como carga útil o almacenarse en una variable de tipo Doc.
 * **[!UICONTROL Crear Mapa de Carga útil]**: agregue todos los documentos de la carpeta de carga útil al Mapa del documento de entrada para la API de invocación en el Ensamblador. El nombre de nodo de cada documento se utiliza como clave en el mapa.
-* **[!UICONTROL Mapa del documento de entrada]**: la opción se usa para agregar varias entradas mediante el botón **[!UICONTROL AGREGAR]**. Cada entrada representa la clave del documento en el mapa y el origen del documento.
+* **[!UICONTROL Mapa del documento de entrada]**: La opción se utiliza para añadir varias entradas utilizando **[!UICONTROL AÑADIR]** botón. Cada entrada representa la clave del documento en el mapa y el origen del documento.
 
 **[!UICONTROL Opciones de entorno]**: esta opción se utiliza para definir la configuración de procesamiento de la API de invocación. Hay varias opciones disponibles en esta pestaña:
 * **[!UICONTROL Validar solo]**: comprueba la validez del documento DDX de entrada.
@@ -329,12 +331,12 @@ Para explicar las entradas de los campos del paso, se utilizan como ejemplo la s
 
 El paso para invocar el servicio de modelo de datos de formulario tiene los campos siguientes para facilitar las operaciones del modelo de datos de formulario:
 
-* **[!UICONTROL Título]**: título del paso. Ayuda a identificar el paso en el editor de flujo de trabajo.
+* **[!UICONTROL Título]**: título del paso. Ayuda a identificar los pasos en el editor de flujo de trabajo.
 * **[!UICONTROL Descripción]**: la explicación es útil para otros desarrolladores de procesos cuando trabaja en un entorno de desarrollo compartido.
 
 * **[!UICONTROL Ruta del modelo de datos del formulario]**: busque y seleccione un modelo de datos de formulario presente en el servidor.
 
-* **[!UICONTROL Errores y validación]**: La opción permite capturar mensajes de error y especificar opciones de validación para los datos recuperados y enviados a fuentes de datos. Con estos cambios, se puede garantizar que los datos transferidos al paso para invocar el servicio de modelo de datos de formulario se ajusten a las restricciones de datos definidas por la fuente de datos. Para obtener más información, consulte [Validación automatizada de los datos de entrada](work-with-form-data-model.md#automated-validation-of-input-data).
+* **[!UICONTROL Errores y validación]**: La opción permite capturar mensajes de error y especificar opciones de validación para los datos recuperados y enviados a fuentes de datos. Con estos cambios, se puede garantizar que los datos transferidos al paso para invocar el servicio de modelo de datos de formulario se ajusten a las restricciones de datos definidas por el origen de datos. Para obtener más información, consulte [Validación automatizada de los datos de entrada](work-with-form-data-model.md#automated-validation-of-input-data).
 
 * **[!UICONTROL Nivel de validación]**: existen tres categorías de validaciones: Básico, Completo y Desactivado:
 
@@ -362,22 +364,26 @@ El paso para invocar el servicio de modelo de datos de formulario tiene los camp
      Por ejemplo, si la carpeta Relativo a la carga útil en el repositorio CRX incluye un archivo adjunto en la ubicación `attachment\attachment-folder`, especifique `attachment\attachment-folder` en el cuadro de texto después de seleccionar la variable **[!UICONTROL Relativo a la carga útil]**.
 
    * **[!UICONTROL Notación de puntos JSON]**: utilice la opción cuando el valor que desea utilizar esté en un archivo JSON. Por ejemplo, insurance.customerDetails.emailAddress. La opción de notación de puntos JSON solo está disponible si se selecciona la opción Asignar campos de entrada desde la entrada JSON.
-   * **[!UICONTROL Asignar campos de entrada desde la entrada JSON]**: especifique la ruta de un archivo JSON para obtener el valor de entrada de algunos argumentos de servicio del archivo JSON. La ruta del archivo JSON puede ser relativa a la carga útil, una ruta de acceso absoluta o puede seleccionar un documento JSON de entrada utilizando una variable de tipo JSON o un modelo de datos de formulario.
+   * **[!UICONTROL Asignar campos de entrada desde la entrada JSON]**: especifique la ruta de un archivo JSON para obtener el valor de entrada de algunos argumentos de servicio del archivo JSON. La ruta del archivo JSON puede ser relativa a la carga útil, una ruta de acceso absoluta o puede seleccionar un documento JSON de entrada mediante una variable de tipo JSON o un modelo de datos de formulario.
 
 * **[!UICONTROL Entrada para servicios]** > **[!UICONTROL Proporcionar datos de entrada mediante una variable o un archivo JSON]**: seleccione la opción para obtener valores para todos los argumentos de un archivo JSON guardado en una ruta de acceso absoluta, en una ruta relativa a la carga útil o en una variable.
-* **[!UICONTROL Seleccionar el documento JSON de entrada mediante]**: el archivo JSON que contiene valores para todos los argumentos de servicio. La ruta del archivo JSON puede ser **[!UICONTROL relativa a la carga útil]** o **[!UICONTROL ruta de acceso absoluta]**. También puede recuperar el documento JSON de entrada mediante una variable de tipo de datos JSON o un modelo de datos de formulario.
+* **[!UICONTROL Seleccionar el documento JSON de entrada mediante:]** el archivo JSON que contiene valores para todos los argumentos de servicio. La ruta del archivo JSON puede ser **[!UICONTROL en relación con la carga útil]** o un **[!UICONTROL ruta absoluta]**. También puede recuperar el documento JSON de entrada mediante una variable de tipo de datos JSON o un modelo de datos de formulario.
 
 * **[!UICONTROL Notación de puntos JSON]**: deje el campo en blanco para utilizar todos los objetos del archivo JSON especificado como entrada para argumentos de servicio. Para leer un objeto JSON específico del archivo JSON especificado como entrada para los argumentos del servicio, especifique la notación de puntos para el objeto JSON. Por ejemplo: si tiene un archivo JSON similar al listado al principio de la sección, especifique insurance.customerDetails para proporcionar todos los detalles de un cliente como entrada al servicio.
-* **[!UICONTROL Resultados del servicio]** > **[!UICONTROL Asignación y escritura de valores de salida en variables o metadatos]**: seleccione la opción para guardar los valores de salida como propiedades del nodo de metadatos de instancia de flujo de trabajo en el repositorio CRX. Especifique el nombre de la propiedad de metadatos y seleccione el atributo de salida del servicio correspondiente que se va a asignar con la propiedad de metadatos. Por ejemplo: asigne el número de teléfono devuelto por el servicio de salida con la propiedad phone_number (número de teléfono) de los metadatos del flujo de trabajo. Del mismo modo, se puede almacenar la salida en una variable de tipo de datos de registro. Al seleccionar una propiedad para la opción **[!UICONTROL Atributo de salida del servicio que se va a asignar]**, solo se rellenan las variables capaces de almacenar datos de la propiedad seleccionada para la opción **[!UICONTROL Guardar salida en]**.
+* **[!UICONTROL Resultados del servicio]** > **[!UICONTROL Asignación y escritura de valores de salida en variables o metadatos]**: seleccione la opción para guardar los valores de salida como propiedades del nodo de metadatos de instancia de flujo de trabajo en el repositorio CRX. Especifique el nombre de la propiedad de metadatos y seleccione el atributo de salida del servicio correspondiente que se va a asignar con la propiedad de metadatos. Por ejemplo, asigne el número de teléfono devuelto por el servicio de salida con la propiedad phone_number (número de teléfono) de los metadatos del flujo de trabajo. Del mismo modo, se puede almacenar la salida en una variable de tipo de datos de registro. Al seleccionar una propiedad para la opción **[!UICONTROL Atributo de salida del servicio que se va a asignar]**, solo se rellenan las variables capaces de almacenar datos de la propiedad seleccionada para la opción **[!UICONTROL Guardar salida en]**.
 
-* **[!UICONTROL Resultados del servicio]** > **[!UICONTROL Guardar resultados en una variable o un archivo JSON]**: seleccione la opción para guardar los valores de salida en un archivo JSON en una ruta de acceso absoluta, en una ruta relativa a la carga útil o en una variable.
+* **[!UICONTROL Salida de servicio]** > **[!UICONTROL Guardar la salida en una variable o un archivo JSON]**: seleccione la opción para guardar los valores de salida en un archivo JSON en una ruta de acceso absoluta, en una ruta relativa a la carga útil o en una variable
 * **[!UICONTROL Guardar documento JSON de salida con las siguientes opciones]**: guarde el archivo JSON de salida. La ruta del archivo JSON de salida puede ser relativa a la carga útil o a una ruta de acceso absoluta. También puede guardar el archivo JSON de salida con una variable de tipo de datos JSON o un modelo de datos de formulario.
+
+
 
 ## Paso para firmar el documento {#sign-document-step}
 
-El paso Firmar documento le permite utilizar [!DNL Adobe Sign] para firmar documentos. Cuando utilice el paso del flujo de trabajo [!DNL Adobe Sign] para firmar un formulario adaptable, el formulario se puede pasar de un firmante a otro o se puede enviar a todos los firmantes simultáneamente, en función de la configuración del paso del flujo de trabajo. Los formularios adaptables habilitados para [!DNL Adobe Sign] se envían al servidor de Experience Manager Forms solo después de que todos los firmantes completen el proceso de firma.
+<span class="preview"> Las funciones de cantante, la pista de auditoría y la opción de autenticación basada en Id. de gobierno en el paso de Adobe Sign son funciones previas al lanzamiento y se puede acceder a ellas a través de nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-De forma predeterminada, los servicios del planificador [!DNL Adobe Sign] comprueban (sondean) la respuesta de los firmantes cada 24 horas. Puede [cambiar el intervalo predeterminado para su entorno](adobe-sign-integration-adaptive-forms.md##configure-adobe-sign-scheduler-to-sync-the-signing-status).
+El paso Firmar documento le permite utilizar [!DNL Adobe Sign] para firmar documentos. Cuando se usa la variable [!DNL Adobe Sign] Paso del flujo de trabajo para firmar un formulario adaptable, el formulario se puede pasar de un destinatario a otro o se puede enviar a todos los destinatarios simultáneamente, en función de la configuración del paso del flujo de trabajo. [!DNL Adobe Sign] Los Forms adaptables habilitados para se envían al servidor de Experience Manager Forms solo después de que todos los destinatarios completen el proceso de firma.
+
+De forma predeterminada, la variable [!DNL Adobe Sign] El servicio del planificador comprueba (sondea) la respuesta del destinatario cada 24 horas. Puede [cambiar el intervalo predeterminado para su entorno](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status).
 
 El paso Firmar documento tiene las siguientes propiedades:
 
@@ -387,15 +393,27 @@ El paso Firmar documento tiene las siguientes propiedades:
 
 * **[!UICONTROL Configuración de Adobe Sign Cloud]**: elija una configuración de [!DNL Adobe Sign] Cloud. Si no ha configurado [!DNL Adobe Sign] para [!DNL AEM Forms], consulte [Integrar Adobe Sign con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-* **[!UICONTROL Seleccionar documento para firmar mediante]**: puede elegir un documento de una ubicación relativa a la carga útil, utilizar la carga útil como documento, especificar una ruta de acceso absoluta del documento o recuperar el documento almacenado en una variable de tipo Doc.
-* **[!UICONTROL Días hasta la fecha límite]**: un documento se marca con vencimiento (fecha límite superada) después de que no haya actividad en la tarea por el número de días especificado en el campo **[!UICONTROL Días hasta la fecha límite]**. El número de días se cuenta después de que el documento se asigne a un usuario para su firma.
-* **[!UICONTROL Frecuencia del correo electrónico de recordatorio]**: puede enviar un correo electrónico de recordatorio a intervalos diarios o semanales. La semana se cuenta desde el día en que se asigna el documento a un usuario para su firma.
+* **[!UICONTROL Seleccionar documento que firmar usando]**: puede elegir un documento de una ubicación relativa a la carga útil, utilizar la carga útil como documento, especificar una ruta absoluta del documento o recuperar el documento almacenado en una variable de tipo Doc.
+* **[!UICONTROL Días hasta la fecha límite]**: un documento se marca con vencimiento (fecha límite superada) después de que no haya actividad en la tarea por el número de días especificado en el campo **[!UICONTROL Días hasta la fecha límite]**. El número de días se cuenta después de que la documentación se asigne a un usuario para su firma.
+* **[!UICONTROL Frecuencia de correo electrónico de recordatorio]**: puede enviar un correo electrónico de recordatorio a intervalos diarios o semanales. La semana se cuenta desde el día en que se asigna la documentación a un usuario para su firma.
 * **[!UICONTROL Proceso de firma]**: puede optar por firmar un documento en orden secuencial o paralelo. En orden secuencial, un solo firmante a la vez recibe el documento para su firma. Una vez que el primer firmante completa la firma del documento, el documento se envía al segundo firmante, y así sucesivamente. En orden paralelo, varios firmantes pueden firmar un documento a la vez.
 * **[!UICONTROL URL de redireccionamiento]**: especifique una URL de redireccionamiento. Una vez firmado el documento, puede redirigir al usuario asignado a una dirección URL. Normalmente, esta URL contiene un mensaje de agradecimiento o instrucciones adicionales.
 * **[!UICONTROL Fase del flujo de trabajo]**: un flujo de trabajo puede tener varias fases. Estas fases se muestran en la bandeja de entrada AEM. Puede definir estas fases en las propiedades del modelo (**[!UICONTROL Barra de tareas]** > **[!UICONTROL Página]** > **[!UICONTROL Propiedades de página]** > **[!UICONTROL Fases]**).
-* **[!UICONTROL Seleccionar firmantes]**: especifique el método para elegir firmantes para el documento. Puede asignar dinámicamente el flujo de trabajo a un usuario o grupo, o agregar manualmente los detalles de un firmante.
-* **[!UICONTROL Script o servicio para seleccionar firmantes]**: la opción solo está disponible si la opción Dinámicamente está seleccionada en el campo Seleccionar firmantes. Puede especificar un ECMAScript o un servicio para elegir los firmantes y las opciones de verificación de un documento.
-* **[!UICONTROL Detalles del firmante]**: la opción solo está disponible si la opción Manualmente está seleccionada en el campo Seleccionar firmantes. Especifique la dirección de correo electrónico y elija un mecanismo de verificación opcional. Antes de seleccionar un mecanismo de verificación de 2 pasos, asegúrese de que la opción de verificación correspondiente esté habilitada para la cuenta de [!DNL Adobe Sign]. Puede utilizar una variable del tipo de datos de cadena para definir los valores de los campos Correo electrónico, Código de país y Número de teléfono. Los campos Código de país y Número de teléfono solo se muestran si selecciona Verificación del teléfono en la lista desplegable de verificación de 2 pasos.
+* **[!UICONTROL Seleccionar destinatarios]**: especifique el método para elegir destinatarios para el documento. Puede asignar dinámicamente el flujo de trabajo a un usuario o grupo, o agregar manualmente los detalles de un destinatario. Al seleccionar Manualmente en el menú desplegable, se agregan detalles del destinatario como Correo electrónico, Función y Método de autenticación.
+
+  >[!NOTE]
+  >
+  >* En la sección Función, puede especificar la función de destinatario como Firmante, Aprobador, Aceptante, Destinatario certificado, Rellenador de formulario y Delegador.
+  >* Si selecciona Delegador en la opción Función, el Delegado puede asignar la tarea de firma a otro destinatario.
+  >* Si ha configurado un método de autenticación para [!DNL Adobe Sign], en función de su configuración, seleccionará un método de autenticación, como autenticación basada en el teléfono, autenticación basada en la identidad social, autenticación basada en el conocimiento o autenticación basada en la identidad oficial.
+
+* **[!UICONTROL Script o servicio para seleccionar destinatarios]**: La opción solo está disponible si selecciona la opción Dinámicamente en el campo Seleccionar destinatarios. Puede especificar un ECMAScript o un servicio para elegir los firmantes y las opciones de verificación de un documento.
+* **[!UICONTROL Detalles del destinatario]**: la opción solo está disponible si la opción Manualmente está seleccionada en el campo Seleccionar destinatarios. Especifique una dirección de correo electrónico y elija un mecanismo de verificación opcional. Antes de seleccionar un mecanismo de verificación de 2 pasos, asegúrese de que la opción de verificación correspondiente esté habilitada para la cuenta de [!DNL Adobe Sign]. Puede utilizar una variable del tipo de datos de cadena para definir los valores de los campos Correo electrónico, Código de país y Número de teléfono. Los campos Código de país y Número de teléfono solo se muestran si selecciona Verificación por teléfono en la lista desplegable de verificación de 2 pasos.
+* **[!UICONTROL Documento firmado]**: Puede guardar el estado del documento firmado en Variable. Para añadir una pista de auditoría de firma electrónica para una mayor seguridad y legalidad al documento firmado, puede Incluir informe de auditoría. Puede guardar el documento firmado mediante la carpeta Variable o Carga útil.
+
+  >[!NOTE]
+  >
+  > El informe de auditoría se anexa a la última página del documento firmado.
 
 <!--
 ## Document Services steps {#document-services-steps}

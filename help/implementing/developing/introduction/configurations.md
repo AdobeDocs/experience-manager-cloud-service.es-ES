@@ -2,10 +2,10 @@
 title: Configuraciones y el explorador de configuración
 description: AEM AEM Comprenda las configuraciones de la y cómo administran la configuración del espacio de trabajo en las instancias de trabajo de.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -34,7 +34,7 @@ AEM El administrador y los autores de la pueden considerar las configuraciones c
 AEM Se pueden crear configuraciones para muchas funciones diferentes dentro de los entornos de trabajo de la aplicación de la.
 
 * [Segmentos de Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Plantillas editables](/help/sites-cloud/authoring/features/templates.md)
 * varias configuraciones de nube
 
@@ -75,12 +75,12 @@ AEM Es muy sencillo crear una nueva configuración en el explorador de configura
    ![Crear configuración](assets/configuration-create.png)
 
    * El **Título** debe ser descriptivo.
-   * El **Nombre** se convierte en el nombre de nodo del repositorio.
-      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de.](naming-conventions.md)
+   * El **nombre** se convierte en el nombre de nodo del repositorio.
+      * Se genera automáticamente en función del título y se ajusta según las [convenciones de nomenclatura de AEM.](naming-conventions.md)
       * Se puede modificar si es necesario.
 1. Compruebe el tipo de configuraciones que desea permitir.
    * [Segmentos de Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Plantillas editables](/help/sites-cloud/authoring/features/templates.md)
    * varias configuraciones de nube
 1. Haga clic o pulse en **Crear**.
@@ -135,7 +135,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 El punto de partida de toda la búsqueda de configuración es un recurso de contenido, normalmente en alguna parte bajo `/content`. Podría ser una página, un componente dentro de una página, un recurso o una carpeta DAM. Este es el contenido real para el que buscamos la configuración correcta que se aplica en este contexto.
 
-Ahora, con el `Conf` objeto en mano, podemos recuperar el elemento de configuración específico que nos interesa. En este caso es `dam/imageserver`, que es una colección de configuraciones relacionadas con la variable `imageserver`. El `getItem` la llamada devuelve un `ValueMap`. Luego leemos un `bgkcolor` y proporcione un valor predeterminado de &quot;FFFFFF&quot; en caso de que la propiedad (o todo el elemento de configuración) no esté presente.
+Ahora, con el `Conf` objeto en mano, podemos recuperar el elemento de configuración específico que nos interesa. En este caso es `dam/imageserver`, que es una colección de configuraciones relacionadas con el `imageserver`. El `getItem` la llamada devuelve un `ValueMap`. Luego leemos un `bgkcolor` y proporcione un valor predeterminado de &quot;FFFFFF&quot; en caso de que la propiedad (o todo el elemento de configuración) no esté presente.
 
 Ahora vamos a echar un vistazo al contenido JCR correspondiente:
 

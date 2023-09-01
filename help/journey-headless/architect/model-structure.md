@@ -2,10 +2,10 @@
 title: Obtenga información acerca de la creación de modelos de fragmento de contenido en AEM
 description: Obtenga información sobre los conceptos y la mecánica del contenido de modelado para su CMS sin periféricos usando modelos de fragmentos de contenido.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ A continuación, se pueden crear los modelos de fragmento de contenido y definir
 
 Después de seleccionarlo, navegue a la ubicación del modelo y seleccione **Crear**. Aquí puede introducir varios detalles fundamentales.
 
-La opción **Habilitar modelo** está activada de forma predeterminada. Esto significa que el modelo está disponible para su uso (en la creación de fragmentos de contenido) en cuanto lo haya guardado. Puede desactivarlo si lo desea; más adelante tendrá la oportunidad de habilitar (o deshabilitar) un modelo existente.
+La opción **Habilitar modelo** está activada de forma predeterminada. Esto significa que el modelo estará disponible para su uso (en la creación de fragmentos de contenido) en cuanto lo haya guardado. Puede desactivarlo si lo desea; más adelante tendrá la oportunidad de habilitar (o deshabilitar) un modelo existente.
 
 ![Crear Modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -59,11 +59,11 @@ Cuando abra un nuevo modelo por primera vez, verá un gran espacio en blanco a l
 
 Entonces, ¿qué se debe hacer?
 
-Puede arrastrar instancias del **Tipos de datos** en el espacio izquierdo: ya está definiendo el modelo.
+Puede arrastrar instancias de los **Tipos de datos** en el espacio de la izquierda: ya estará definiendo su modelo.
 
  ![Definición de campos](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Después de agregar un tipo de datos, es necesario definir el **Propiedades** para ese campo. Estas dependerán del tipo que se utilice. Por ejemplo:
+Una vez que haya agregado un tipo de datos, se le pedirá que defina las **Propiedades** para ese campo. Estas dependerán del tipo que se utilice. Por ejemplo:
 
 ![Propiedades de datos](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ Se pueden agregar tantos campos como se necesite. Por ejemplo:
 
 ### Sus autores de contenido {#your-content-authors}
 
-Los autores de contenido no ven los tipos de datos y las propiedades reales que ha utilizado para crear los modelos. Esto significa que es posible que tenga que proporcionar ayuda e información sobre cómo completar campos específicos. Para obtener información básica, puede utilizar la etiqueta de campo y el valor predeterminado, pero puede que sea necesario tener en cuenta casos más complejos como la documentación específica del proyecto.
+Sus autores de contenido no ven los tipos de datos ni las propiedades reales que utilizó para crear los modelos. Esto significa que es posible que tenga que proporcionar ayuda e información sobre cómo completar campos específicos. Para obtener información básica, puede utilizar la etiqueta de campo y el valor predeterminado, pero puede que sea necesario tener en cuenta casos más complejos como la documentación específica del proyecto.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Los modelos de fragmento de contenido deben publicarse cuando se publican fragme
 
 >[!NOTE]
 >
->Si un autor intenta publicar un fragmento de contenido para el que el modelo aún no se ha publicado, una lista de selección lo indica y el modelo se publica con el fragmento.
+>Si un autor intenta publicar un fragmento de contenido para un modelo que aún no se ha publicado, la lista de selección lo indica y el modelo se publica con el fragmento.
 
 En cuanto se publica el modelo, aparece *bloqueado* en modo de SOLO LECTURA en el autor. Esto tiene como objetivo evitar cambios que pudieran provocar errores en los esquemas y consultas de GraphQL existentes, especialmente en el entorno de publicación. En la consola se indica como **Bloqueado**.
 
@@ -112,23 +112,23 @@ Ahora que ha aprendido los conceptos básicos, el siguiente paso es comenzar a c
 
 * [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md): esta página se basa principalmente en la consola de **Sitios**, pero muchas de las funciones principales también son relevantes para desplazarse y realizar acciones en el apartado **Modelos de fragmento de contenido** en la consola **General**.
 
-* [Trabajar con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Trabajar con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Definición del modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [Definición del modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)
 
-      * [Activación o desactivación de un modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [Activación o desactivación de un modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Permitir modelos de fragmento de contenido en la carpeta Recursos](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Permitir modelos de fragmento de contenido en la carpeta Recursos](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Eliminación de un modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [Eliminación de un modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#deleting-a-content-fragment-model)
 
-      * [Publicación de un modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [Publicación de un modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)
 
-      * [Cancelación de la publicación de un modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [Cancelación de la publicación de un modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#unpublishing-a-content-fragment-model)
 
-      * [Modelos de fragmento de contenido bloqueados (publicados)](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [Modelos de fragmento de contenido bloqueados (publicados)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#locked-published-content-fragment-models)
 
 * Guías de introducción
 

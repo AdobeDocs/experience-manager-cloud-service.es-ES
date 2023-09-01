@@ -2,10 +2,10 @@
 title: Ruta hacia la primera experiencia para usar AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de AEM sin encabezado, comprenderá los pasos para aplicar su primera experiencia sin encabezado en AEM, incluidas las consideraciones de planificación, y también aprenderá las prácticas recomendadas para que su ruta sea lo más fluida posible.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 96%
+source-wordcount: '1991'
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ Los autores de contenido crean contenido en función de los modelos de contenido
 
 Antes de empezar con el contenido sin encabezado de AEM, debe asegurarse de que todas las funciones necesarias estén habilitadas. Esta sección describe lo que se requiere. Los pasos reales para realizar estos pasos se detallan más adelante en la sección [Recorrido para desarrolladores de AEM sin encabezado.](#overview.md)
 
-Si lo desea, también puede ver [recursos adicionales](#additional-resources) para obtener más información sobre los temas concretos.
+También puede consultar opcionalmente los [recursos adicionales](#additional-resources) para obtener más información sobre temas individuales.
 
 ### Configuración {#configuration}
 
@@ -86,7 +86,7 @@ Si lo desea, también puede ver [recursos adicionales](#additional-resources) pa
 
 ## Implementación de su primera aplicación de AEM sin encabezado
 
-Se trata de información general de lo que necesita para implementar su primera aplicación de AEM sin encabezado para entregar su contenido. La forma de llevar a cabo estos pasos se describirá en detalle en partes posteriores del Recorrido para desarrolladores sin encabezado.
+Se trata de información general de lo que necesita para implementar su primera aplicación de AEM sin encabezado para entregar su contenido. La forma de llevar a cabo estos pasos se describe en detalle en partes posteriores del Recorrido sin encabezado para desarrolladores.
 
 1. Crear los modelos de fragmentos de contenido
 1. Crear fragmentos de contenido
@@ -106,12 +106,12 @@ Un proyecto sin encabezado no solo es exitoso debido a la tecnología implementa
 * Agrupe contenido similar en una carpeta.
    * Esto facilita que un autor de contenido copie y pegue el contenido existente para crear contenido nuevo. Por lo tanto, hacer esto en la misma carpeta lo hace más eficiente.
    * AEM permite establecer los modelos permitidos por carpeta, de modo que el botón **Crear nuevo** solo muestra los modelos compatibles con esa ubicación.
-* La creación del editor de fragmentos de contenido en línea de nuevos fragmentos de contenido se puede simplificar si la carpeta raíz está configurada en el modelo. A continuación, el profesional no tiene que elegir una ubicación, sino que solo necesita proporcionar un nombre y puede empezar a editar la nueva referencia.
+* La creación del editor de fragmentos de contenido en línea de nuevos fragmentos de contenido se puede simplificar si la carpeta raíz está configurada en el modelo. Entonces el profesional no tiene que elegir una ubicación, solo necesita proporcionar un nombre para comenzar a editar la referencia nueva.
 
 ### Creación de contenido {#authoring}
 
-* Para versiones específicas del canal de su contenido, considere la posibilidad de utilizar variaciones de fragmento de contenido. Las variaciones se sincronizan con el contenido principal para optimizar la administración de los cambios de contenido.
-* Invite a otros productores de contenido a revisar el contenido y proporcionar comentarios con anotaciones y comentarios, que están disponibles en el editor de fragmentos de contenido y globalmente entre contenidos en Admin Console de fragmentos de contenido.
+* Para versiones específicas del canal de su contenido, considere la posibilidad de utilizar variaciones de fragmento de contenido. Las variaciones se sincronizan con el contenido principal para racionalizar la administración de cambios de contenido.
+* Invite a otros productores de contenido a revisar contenido y dar comentarios.
 * Mantenga las cosas en movimiento con el menor número posible de elementos obligatorios. Los elementos obligatorios pueden bloquear el flujo de trabajo.
 
 ### Creación de contenido global {#localization}
@@ -149,6 +149,6 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 * [WKND de AEM Guides, GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): este proyecto de GitHub incluye aplicaciones de ejemplo que destacan las API de GraphQL de AEM.
 * [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md): información general completa sobre la arquitectura de AEM.
 * [Configuración sin encabezado](/help/headless/introduction.md#getting-started): una introducción rápida a funciones de AEM funciones sin encabezado para usuarios que ya conocen AEM.
-* [Crear modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md): documentación técnica sobre los modelos de fragmentos de contenido.
-* [Crear fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md): documentación técnica sobre fragmentos de contenido.
+* [Crear modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md): documentación técnica sobre los modelos de fragmentos de contenido.
+* [Crear fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments): documentación técnica sobre fragmentos de contenido.
 * [Consulta de contenido con GraphQL](/help/headless/graphql-api/content-fragments.md): documentación técnica sobre la API de GraphQL.

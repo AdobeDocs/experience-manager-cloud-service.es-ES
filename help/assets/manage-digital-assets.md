@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
 workflow-type: tm+mt
-source-wordcount: '4376'
+source-wordcount: '4508'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Este artículo describe cómo administrar y editar recursos en [!DNL Adobe Experience Manager Assets]. Para administrar [!DNL Content Fragments], consulte [[!DNL Content Fragments]](content-fragments/content-fragments.md) recursos.
@@ -76,6 +76,21 @@ Una vez activado, el Experience Manager envía notificaciones de recursos duplic
 >[!NOTE]
 >
 >Al cargar recursos en el repositorio, Experience Manager detecta la duplicación y le notifica sobre los 100 primeros recursos duplicados.
+
+## Extraer archivos .zip {#extract-zip-archives}
+
+Seleccione los archivos ZIP que se gestionan en Experience Manager y extraiga los archivos directamente en Experience Manager sin descargarlos.
+
+Para extraer los archivos ZIP, realice los siguientes pasos:
+
+1. Seleccione el tipo de archivo ZIP.
+1. Haga clic en **[!UICONTROL Extraer archivo]** opción disponible en la barra de acciones.
+1. Seleccione la carpeta en la que debe guardar los recursos extraídos disponibles en la carpeta comprimida.
+1. Haga clic en **[!UICONTROL Siguiente]**.
+1. Seleccione el comportamiento adecuado para gestionar los conflictos de nombre de archivo durante la extracción. Puede seleccionar crear una nueva versión de un recurso existente, reemplazar el recurso, mantener ambos recursos en la carpeta de destino u omitir la extracción del nuevo recurso.
+1. Clic **[!UICONTROL Extract]**. Se inicia el proceso de extracción de zip. Una vez completado el proceso, puede ver los recursos extraídos en la carpeta de destino.
+
+   ![extracción de zip](assets/zip-extraction.png)
 
 ## Previsualización de recursos {#previewing-assets}
 
