@@ -1,9 +1,9 @@
 ---
 title: Descargar e instalar Forms Designer
 description: Puede utilizar Forms Designer para crear plantillas de formulario XDP y PDF que sirvan de plantilla para un documento de registro. Designer está disponible con la licencia de  [!DNL AEM Forms] .
-source-git-commit: 34d966f6550cb9e507c751b580b16a3043137255
+source-git-commit: a22c21ba05e72c1bf18c56df72b7e3c7c62edc0c
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '344'
 ht-degree: 67%
 
 ---
