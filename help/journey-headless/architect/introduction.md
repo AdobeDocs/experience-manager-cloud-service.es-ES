@@ -2,10 +2,10 @@
 title: 'Modelado de contenido para AEM como CMS sin encabezado: introducción'
 description: Introducción al uso de las funciones de Adobe Experience Manager as a Cloud Service como CMS sin encabezado para modelar contenido para su proyecto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: d280bcfa7e4fe297952309a94bc0229d08fd5f9c
+source-git-commit: 03cf688168106f71f2df2511782be7c1f3cc0dae
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 100%
+source-wordcount: '749'
+ht-degree: 97%
 
 ---
 
@@ -82,8 +82,8 @@ Ahora que ha aprendido los conceptos y la terminología, el siguiente paso consi
    * [Obtenga más información acerca del desarrollo de CMS sin encabezado](/help/journey-headless/developer/learn-about.md)
    * [Aprenda cómo modelar el contenido](/help/journey-headless/developer/model-your-content.md)
 
-<!--
-* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
--->
+* [AEM Introducción a la como CMS sin encabezado](/help/headless/introduction.md)
+
+* [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+
+* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
