@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 3203e79d1dd083d13d9357b21040dfa88194c4db
+source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
 workflow-type: tm+mt
-source-wordcount: '9445'
+source-wordcount: '9442'
 ht-degree: 2%
 
 ---
@@ -576,7 +576,6 @@ Algunos de los casos de uso que se deben tener en cuenta para agregar pistas de 
 | **Subtítulos** | Compatibilidad con varios idiomas |
 |  | Texto descriptivo para accesibilidad |
 | **Pistas de audio** | Compatibilidad con varios idiomas |
-|  | Estéreo frente a multicanal (sonido envolvente) |
 |  | Pistas de comentarios |
 |  | Audio descriptivo |
 
@@ -669,7 +668,7 @@ En el caso de que haya configurado Dynamic Media para la publicación inmediata,
 
 >[!CAUTION]
 >
->Al cargar archivos de subtítulos o archivos de audio en un vídeo que ya se ha publicado, estos archivos se eliminan si [*reprocesar*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) el vídeo. Solo el audio original del vídeo permanece intacto. En estos casos, debe volver a cargar los archivos de subtítulos y los archivos de pista de audio en el vídeo.
+>Al cargar archivos de subtítulos o archivos de audio en un vídeo que se ha publicado o cancelado la publicación, los archivos se eliminan si [*reprocesar*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) el vídeo. Solo el audio original del vídeo permanece intacto. En estos casos, debe volver a cargar los archivos de subtítulos y los archivos de pista de audio en el vídeo.
 
 #### Añada varios subtítulos a un vídeo que tenga una URL existente con el modificador caption
 
