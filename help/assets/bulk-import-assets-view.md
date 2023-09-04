@@ -1,9 +1,9 @@
 ---
 title: Importación masiva de recursos mediante la vista Recursos
 description: Obtenga información sobre cómo importar recursos de forma masiva mediante la nueva IU de Assets (vista de Assets). Permite a los administradores importar un gran número de recursos desde un origen de datos a AEM Assets.
-source-git-commit: 49d1e002f22427d8ffc6c5bdecd054c10eac47b9
+source-git-commit: 5cc522db4bd86514c1093a0d6fee481f6604fc26
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1177'
 ht-degree: 3%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 3%
 # Importación masiva de recursos mediante la vista Recursos  {#bulk-import-assets-view}
 
 La importación masiva en la vista de AEM Assets permite a los administradores importar un gran número de recursos desde un origen de datos a AEM Assets. Los administradores ya no tienen que cargar recursos o carpetas individuales en AEM Assets.
+
+>[!NOTE]
+>
+>El importador en bloque de la vista Recursos utiliza el mismo backend que el del importador en bloque de la vista Administración. Sin embargo, ofrece más fuentes de datos para importar de y una experiencia de usuario más optimizada.
 
 Puede importar recursos desde las siguientes fuentes de datos:
 
@@ -58,6 +62,14 @@ Siga estos pasos para crear una configuración de importación masiva:
    ![Ejecución de una importación masiva](assets/bulk-import-run.png)
 
 1. Clic **[!UICONTROL Guardar]** para ejecutar la opción seleccionada.
+
+### Administración de nombres de archivo durante la importación masiva {#filename-handling-bulkimport-assets-view}
+
+Al importar recursos o carpetas de forma masiva, [!DNL Experience Manager Assets] importa toda la estructura de lo que existe en el origen de importación. [!DNL Experience Manager] sigue las reglas integradas para los caracteres especiales en los nombres de recursos y carpetas, por lo que estos nombres de archivo necesitan saneamiento. Tanto para el nombre de la carpeta como para el nombre del recurso, el título definido por el usuario permanece sin cambios y se almacena en `jcr:title`.
+
+Durante la importación masiva, [!DNL Experience Manager] busque las carpetas existentes para evitar volver a importar los recursos y las carpetas, y compruebe también las reglas de saneamiento aplicadas en la carpeta principal en la que se realiza la importación. Si las reglas de saneamiento se aplican en la carpeta principal, las mismas reglas se aplican al origen de importación. Para la nueva importación, se aplican las siguientes reglas de saneamiento para administrar los nombres de archivo de los recursos y las carpetas.
+
+Para obtener más información sobre los nombres no permitidos, la administración de nombres de recursos y la administración de nombres de carpetas durante la importación masiva, consulte [Administración de nombres de archivo durante la importación masiva en la vista de administración](add-assets.md##filename-handling-bulkimport).
 
 ## Ver configuraciones de importación masiva existentes {#view-import-configuration}
 
