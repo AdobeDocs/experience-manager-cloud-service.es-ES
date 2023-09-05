@@ -3,9 +3,9 @@ title: Configuración del conector de traducción para contenido sin encabezado
 description: Aprenda a conectar AEM a un servicio de traducción.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1231'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Si elige otro proveedor, el administrador debe instalar el paquete del conector 
 >
 >Si decide utilizar el conector del traductor de Microsoft para realizar pruebas, no es necesario realizar los pasos de las dos secciones siguientes: [Creación de una configuración de integración de traducción](#create-config) y [Asociar la configuración con su contenido.](#associate) Sin embargo, se recomienda leerlas para que esté familiarizado con los pasos para cuándo necesite configurar el conector preferido.
 >
->La licencia de prueba del conector del traductor de Microsoft no está pensada para fines de producción y si decide conceder la licencia, el administrador del sistema debe seguir los pasos detallados en la [Recursos adicionales](#additional-resources) al final de este documento para que pueda configurar esa licencia.
+>La licencia de prueba del conector del traductor de Microsoft no está pensada para fines de producción, y si decide conceder la licencia, el administrador del sistema debe seguir los pasos detallados en la sección [Recursos adicionales](#additional-resources) al final de este documento para configurar esa licencia.
 
 ## Creación de una configuración de integración de traducción {#create-config}
 
@@ -78,7 +78,7 @@ Para crear una nueva configuración de traducción:
 
 1. Proporcione la siguiente información en los campos y, a continuación, toque o haga clic en **Crear**.
    1. Seleccione **Tipo de configuración** en la lista desplegable. Seleccione **Integración de traducción** de la lista.
-   1. Escriba un **Título** para su configuración. El **Título** identifica la configuración en **Cloud Services** y en las listas desplegables de propiedades de página.
+   1. Escriba un **Título** para su configuración. El **Título** identifica la configuración en la consola **Cloud Services**, así como en las listas desplegables de propiedad de página.
    1. Opcionalmente, escriba un **Nombre** para usar para el nodo del repositorio que almacena la configuración.
 
    ![Crear configuración de traducción](assets/create-translation-configuration.png)
@@ -99,7 +99,7 @@ Para crear una nueva configuración de traducción:
    1. **Traducir metadatos**: marque esta opción para traducir los metadatos de recursos.
    1. **Traducir etiquetas**: marque esta opción para traducir las etiquetas asociadas con el recurso.
    1. **Ejecución automática de la traducción**: compruebe esta propiedad si desea que las traducciones se envíen automáticamente al servicio de traducción.
-   1. **Deshabilitar traducción de solo actualización**: cuando se marca esta opción, al actualizar el proyecto de traducción se enviarán todos los campos traducibles para su traducción, no solo los modificados desde la última traducción. La actualización del proyecto de traducción se analiza más adelante en el recorrido.
+   1. **Deshabilitar traducción de solo actualización**: cuando se marca esta opción, al actualizar el proyecto de traducción se enviarán todos los campos traducibles para su traducción, no solo los modificados desde la última traducción. La actualización del proyecto de traducción se trata más adelante en el recorrido.
    1. **Habilitar los campos del modelo de contenido para la traducción**: marque esta opción para que la configuración de traducción reconozca automáticamente los campos de los modelos de contenido en función del indicador **Traducible**.
 
 1. Haga clic o pulse en **Guardar y cerrar**.
