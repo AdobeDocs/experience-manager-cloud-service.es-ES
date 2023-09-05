@@ -3,9 +3,9 @@ title: Edición de lanzamientos
 description: Después de crear un lanzamiento para su página (o conjunto de páginas), puede editar el contenido en la copia de lanzamiento de las páginas.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '553'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 52%
 Cuando se ha creado un lanzamiento para una página (o conjunto de páginas), puede editar el contenido en la copia de lanzamiento de las páginas.
 
 1. Acceda a [Lanzamiento desde las referencias (consola Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles.
-1. Seleccionar **Ir a la página** para abrir la página y editarla.
+1. Seleccione **Ir a la página** para abrir la página y editarla.
 
 Al editar la página, verá una indicación en la barra de herramientas superior, junto con las opciones **Salir** y **Navegar**:
 
@@ -49,14 +49,14 @@ Consulte [Cambio del contenido de Live Copy](/help/sites-cloud/administering/msm
 Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias** y comparar la página de lanzamiento con la página de origen:
 
 1. En la consola **Sitios**, [vaya a la página de origen del lanzamiento y seleccione uno](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra el **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** panel y seleccione **Lanzamientos**.
+1. Abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** y seleccione **Lanzamientos**.
 1. Seleccione el lanzamiento específico y luego **Comparar con el origen**:
 
    ![Comparación entre el lanzamiento y el origen](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. Las dos páginas (inicio y origen) se abren en paralelo.
+1. Las dos páginas (inicio y origen) se abrirán una junto a la otra.
 
-   Para obtener información completa sobre el uso de esta función, consulte [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md).
+   Para obtener información completa sobre el uso de esta funcionalidad, consulte [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Cambio de las páginas de origen utilizadas {#changing-the-source-pages-used}
 
@@ -65,23 +65,23 @@ Puede añadir en cualquier momento las páginas en el rango de páginas de orige
 1. Acceda y seleccione el lanzamiento de:
    * La [consola Lanzamientos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * Seleccione **Editar**.
-   * [Referencias (consola Sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
+   * [Referencias (consola Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
       * Seleccione **Editar lanzamiento**. 
       * Se muestran las páginas de origen.
 1. Realice los cambios necesarios y confirme haciendo clic en **Guardar**.
 
 >[!NOTE]
 >
->Para agregar páginas a un lanzamiento, deben estar debajo de una raíz de idioma común; es decir, dentro de un solo sitio.
+>Para añadir páginas a un lanzamiento, deben estar debajo de una raíz de idioma común; es decir, dentro de un solo sitio.
 
-## Edición de una configuración de Launch {#editing-a-launch-configuration}
+## Edición de una configuración de lanzamiento {#editing-a-launch-configuration}
 
 Las propiedades del lanzamiento se pueden editar en cualquier momento:
 
 1. Acceda y seleccione el lanzamiento de:
-   * el [Consola de lanzamientos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
-      * Seleccionar **Propiedades**.
-   * [Referencias (consola Sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
+   * la [consola Lanzamientos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+      * Seleccione **Propiedades**.
+   * [Referencias (consola Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
       * Seleccione **Editar propiedades**. 
       * Se muestran los detalles.
 1. Realice los cambios necesarios y confirme haciendo clic en **Guardar**.
@@ -89,6 +89,6 @@ Las propiedades del lanzamiento se pueden editar en cualquier momento:
 
 ## Descubrimiento del estado de lanzamiento de una página {#discovering-the-launch-status-of-a-page}
 
-El estado se muestra al seleccionar un lanzamiento específico en la pestaña Referencias (consulte [Lanzamientos en referencias (consola Sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
+El estado se muestra al seleccionar un lanzamiento específico en la pestaña Referencias (consulte [Lanzamientos en referencias (consola Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
 
 ![Descubrimiento del estado de lanzamiento](/help/sites-cloud/authoring/assets/launches-status.png)
