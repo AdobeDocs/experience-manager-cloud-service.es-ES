@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '353'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Los sitios creados con plantillas de sitio de AEM permiten descargar, personaliz
 
 >[!NOTE]
 >
->Los temas del sitio de AEM no deben confundirse con las [plantillas de sitio de AEM](site-templates.md). Los temas del sitio de AEM solo contienen la información de estilo de un sitio de AEM. AEM AEM Las plantillas de sitio de definen la estructura del sitio y el contenido inicial, y contienen un tema de sitio de la página de la página de la página de la red que se va a permitir [creación rápida de sitios](create-site.md).
+>Los temas del sitio de AEM no deben confundirse con las [plantillas de sitio de AEM](site-templates.md). Los temas del sitio de AEM solo contienen la información de estilo de un sitio de AEM. Las plantillas del sitio de AEM definen la estructura del sitio y el contenido inicial. Además, contienen un tema del sitio de AEM para permitir la [creación rápida de sitios](create-site.md).
 
 ## Uso de temas del sitio {#using-themes}
 
