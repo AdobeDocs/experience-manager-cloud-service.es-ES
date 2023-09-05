@@ -1,11 +1,11 @@
 ---
 title: Crear una página para dispositivos móviles
-description: Al crear para móviles, puede cambiar entre varios emuladores para ver lo que ve el usuario final
+description: Al crear contenido para dispositivos móviles, puede cambiar entre varios emuladores para ver lo que ve el usuario final
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Las páginas de Adobe Experience Manager se basan en un diseño adaptable. [El d
 
 Al crear una página móvil, esta se muestra de forma que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que ve el usuario final al acceder a la página.
 
-Los dispositivos se agrupan en las categorías característica, inteligente y táctil, según las capacidades de los dispositivos para procesar una página. AEM Cuando el usuario final accede a una página móvil, detecta el dispositivo y envía la representación que corresponde a su grupo de dispositivos.
+Los dispositivos se agrupan en las categorías característica, inteligente y táctil, según las capacidades de los dispositivos para procesar una página. Cuando el usuario final accede a una página móvil, AEM detecta el dispositivo y envía la representación que corresponde a su grupo de dispositivos.
 
 >[!NOTE]
 >
