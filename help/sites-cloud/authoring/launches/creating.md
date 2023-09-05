@@ -1,17 +1,17 @@
 ---
 title: Creación de lanzamientos
-description: Puede crear un lanzamiento para habilitar la actualización de una nueva versión de las páginas web existentes para una activación futura.
+description: Puede crear un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará más adelante.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Creación de lanzamientos {#creating-launches}
 
-Cree un lanzamiento para permitir la actualización de una nueva versión de las páginas web existentes para una activación futura. Al crear un lanzamiento, especificará un título y la página de origen:
+Cree un lanzamiento para poder actualizar las páginas web existentes a la versión nueva que se activará más adelante. Al crear un lanzamiento, especificará un título y la página de origen:
 
 * El título aparece en el carril [Referencias](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references); desde allí, los autores pueden acceder al título y trabajar con él.
 * Las páginas secundarias de la página de origen se incluyen en el lanzamiento de forma predeterminada. Si lo desea, puede utilizar únicamente la página de origen.
@@ -31,20 +31,20 @@ De forma opcional, puede especificar la **fecha de lanzamiento** (y hora) para e
 
 ## Creación de un lanzamiento {#creating-a-launch}
 
-Puede crear un lanzamiento desde la consola Sitios o Lanzamientos:
+Puede crear un lanzamiento desde la consola Sites o Lanzamientos:
 
 1. Abra cualquiera de las consolas **Sites** o **Lanzamientos**.
 
    >[!NOTE]
    >
-   >Al usar el **Sites** consola es habitual desplazarse a la ubicación de la página de origen, pero esto no es obligatorio, ya que puede navegar al seleccionar la **Origen de lanzamiento** en el asistente.
+   >Al usar la consola **Sites** es habitual desplazarse a la ubicación de la página de origen, pero esto no es obligatorio, ya que puede navegar al seleccionar el **Origen de lanzamiento** en el asistente.
 
 1. Según la consola que utilice:
    * **Lanzamientos**:
-      1. Seleccionar **Crear lanzamiento** en la barra de herramientas para abrir el asistente.
+      1. Seleccione **Crear lanzamiento** en la barra de herramientas para abrir el asistente.
    * **Sites**:
       1. Seleccione **Crear** en la barra de herramientas para abrir el cuadro de selección.
-      1. De esta selección **Crear lanzamiento** para abrir el asistente.
+      1. A continuación, seleccione **Crear lanzamiento** para abrir el asistente.
 
    >[!NOTE]
    >
@@ -62,11 +62,11 @@ Puede crear un lanzamiento desde la consola Sitios o Lanzamientos:
 
    >[!NOTE]
    >
-   >Para agregar páginas o ramas a un lanzamiento, deben estar dentro de un sitio; es decir, debajo de una raíz de nivel superior común.
+   >Las páginas o ramas que se deseen añadir a un lanzamiento deben estar dentro de un sitio; es decir, por debajo de una raíz de nivel superior común.
    >
    >Si un sitio contiene raíces de idioma por debajo del nivel superior, las páginas y ramas de un lanzamiento deben estar por debajo de una raíz de idioma común.
 
-1. Para cada entrada puede especificar si desea:
+1. Para cada entrada, puede especificar lo siguiente:
 
    * **Incluir páginas secundarias**:
 
@@ -78,15 +78,15 @@ Puede crear un lanzamiento desde la consola Sitios o Lanzamientos:
 
 1. En el paso **Propiedades** del asistente, puede especificar lo siguiente:
 
-   * **Título del lanzamiento**: Nombre del lanzamiento. El nombre debe tener significado para los autores.
-   * **con contenido existente**: el contenido original se utiliza para crear el lanzamiento.
+   * **Título del lanzamiento**: el nombre del lanzamiento. El nombre debe ser significativo para los autores.
+   * **Con contenido existente**: el contenido original se utiliza para crear el lanzamiento.
    * **utilice una plantilla nueva para sustituir la página**: consulte [Creación de un lanzamiento con una plantilla nueva](#create-launch-with-new-template) para obtener más información.
    * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Para conseguirlo, esta opción convierte el lanzamiento en una [Live Copy](/help/sites-cloud/administering/msm/overview.md). Está opción está seleccionada de forma predeterminada.-->
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Propiedades del lanzamiento](/help/sites-cloud/authoring/assets/launches-properties.png)
 
-1. Uso **Crear** para completar el proceso y crear el nuevo lanzamiento. El cuadro de diálogo de confirmación le preguntará si desea abrir el lanzamiento inmediatamente.
+1. Utilice **Crear** para completar el proceso y crear el nuevo lanzamiento. El cuadro de diálogo de confirmación le preguntará si desea abrir el lanzamiento inmediatamente.
 
    Si devuelve la consola (con **Listo**) puede ver (y acceder) al lanzamiento desde las ubicaciones siguientes:
 
@@ -112,13 +112,13 @@ Al seleccionar esto, ocurrirá lo siguiente:
 
 >[!CAUTION]
 >
->Dado que se utiliza una plantilla diferente, la nueva página está vacía. Debido a la diferente estructura de la página, no se copia ningún contenido.
+>Dado que se utiliza una plantilla diferente, la nueva página está vacía. Debido a la estructura de página diferente, no se copia ningún contenido.
 >
->Este mecanismo se puede utilizar para cambiar la plantilla de un [página existente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) - aunque debe considerarse la pérdida de contenido.
+>Este mecanismo se puede utilizar para cambiar la plantilla de una [página existente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page): sin embargo, debe tenerse en cuenta la pérdida de contenido.
 
 ### Creación de un lanzamiento anidado {#creating-a-nested-launch}
 
-Crear un lanzamiento anidado (dentro de un lanzamiento) le ofrece la capacidad de crear un lanzamiento a partir de un lanzamiento existente para que los autores puedan aprovechar los cambios ya realizados, en lugar de tener que realizar los mismos cambios varias veces para cada lanzamiento.
+Crear un lanzamiento anidado (un lanzamiento dentro de otro lanzamiento) le ofrece la posibilidad de crear un lanzamiento a partir de un lanzamiento existente, de modo que los autores pueden aprovechar los cambios que ya se hayan realizado, en lugar de tener que realizar los mismos cambios varias veces en cada lanzamiento.
 
 >[!NOTE]
 >
@@ -146,16 +146,16 @@ Para crear un lanzamiento anidado desde la consola **Sites** basado en un lanzam
 1. Acceda a [Lanzamiento desde las referencias (consola Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles.
 1. Seleccione **Crear lanzamiento** para abrir el asistente (como el origen ya se ha seleccionado, se omitirá el paso **Seleccionar origen**).
 1. Introduzca el **título del lanzamiento** y cualquier otra información necesaria (como con un lanzamiento normal).
-1. Uso **Crear** para completar el proceso y crear el nuevo lanzamiento. El cuadro de diálogo de confirmación le preguntará si desea abrir el lanzamiento inmediatamente.
+1. Utilice **Crear** para completar el proceso y crear el nuevo lanzamiento. El cuadro de diálogo de confirmación le preguntará si desea abrir el lanzamiento inmediatamente.
 
 Si selecciona **Listo**, volverá al carril **Referencias** de la **consola de Sites**, si selecciona la página adecuada en la que se muestra el nuevo lanzamiento.
 
 ### Eliminación de un lanzamiento {#deleting-a-launch}
 
-Puede eliminar un lanzamiento desde el [consola lanzamientos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+Puede eliminar un lanzamiento desde la [consola de lanzamientos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
 
-* Seleccione el lanzamiento tocando o haciendo clic en la miniatura.
-* Aparecerá la barra de herramientas. Seleccione Eliminar.
+* Para seleccionar el lanzamiento, toque o haga clic en la miniatura.
+* Se mostrará la barra de herramientas: seleccione Eliminar.
 * Confirme la acción.
 
 >[!CAUTION]
