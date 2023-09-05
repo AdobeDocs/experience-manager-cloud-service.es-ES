@@ -4,9 +4,9 @@ description: Introducción y descripción general de Content and Commerce. Exper
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Con Content y Commerce de Adobe Experience Manager, las marcas pueden escalar e 
 
 Con expectativas crecientes de los clientes en cuanto a experiencias de comercio en línea, las marcas se ven presionadas para ofrecer experiencias diferenciadas y más contenido con mayor rapidez. Sin embargo, la implementación de una plataforma de administración de contenido a menudo requiere fuertes inversiones en tiempo y presupuesto para desarrollar elementos fundamentales, tales como componentes personalizados y herramientas de creación, y acumula costes en mantenimiento y actualizaciones. Experience Manager Sites ofrece Content and Commerce como módulo complementario de Experience Manager as a Cloud Service, que proporciona componentes comerciales básicos, herramientas de creación y un escaparate de referencia predeterminados para acelerar el lanzamiento, permitir una colaboración fluida entre los equipos e impulsar la conversión.
 
-Las marcas pueden integrar Experience Manager con Adobe Commerce, como parte de Adobe Experience Cloud, y cualquier motor comercial de su elección. Con Experience Manager Content and Commerce, las marcas pueden hacer lo siguiente:
+Las marcas pueden integrar Experience Manager con Adobe Commerce, parte de Adobe Experience Cloud, así como con cualquier motor de comercio que elijan. Con Experience Manager Content and Commerce, las marcas pueden hacer lo siguiente:
 
 * Escalar e innovar más rápidamente
 * Personalizar experiencias para impulsar la conversión
@@ -42,11 +42,11 @@ Esta complejidad abre la puerta a posibles fallos, un incremento del coste total
 
 ## CIF apoya con éxito a sus clientes desde 2013 {#support}
 
-Con más de 200 clientes, CIF se ha consolidado como un ingrediente exitoso para un proyecto de Content and Commerce con éxito. Esto aporta valor a la TI y a las empresas hoy y en el futuro. Proyectos recientes de clientes describen CIF como un &quot;acelerador Bueno y un gran ahorro de tiempo con mucho valor&quot;.
+Con más de 200 clientes, CIF se ha consolidado como un ingrediente exitoso para un proyecto de Content and Commerce con éxito. Esto aporta valor a la TI y a las empresas hoy y en el futuro. Los proyectos recientes de los clientes describen CIF como un “Gran acelerador y un gran ahorro de tiempo con mucho valor&quot;.
 
 ## Beneficios del CIF {#cif-benefits}
 
-CIF proporciona componentes básicos predeterminados que reducen la necesidad de usar un código personalizado, lo que acelera el tiempo de salida al mercado de las marcas. Todos los componentes principales se integran de forma predeterminada con la capa de datos del lado del cliente de Adobe para hidratar los perfiles de los clientes, como el perfil unificado. Este perfil captura en detalle el comportamiento de un visitante, lo que se puede utilizar para predecir y personalizar el recorrido del cliente en tiempo real.
+CIF proporciona componentes básicos predeterminados que reducen la necesidad de usar un código personalizado, lo que acelera el tiempo de salida al mercado de las marcas. Todos los componentes principales están integrados de forma predeterminada con la capa de datos del lado del cliente de Adobe para integrar los perfiles de los clientes, como el perfil unificado. Este perfil captura en detalle el comportamiento de un visitante, que puede utilizarse para predecir y personalizar el recorrido del cliente en tiempo real.
 
 El complemento CIF introduce el contexto del producto en Experience Manager y proporciona herramientas de creación, como una consola de producto y selectores de producto/categoría, que permiten al experto en marketing crear y ofrecer experiencias de compra en Experience Manager sin depender del desarrollador. Las ventajas incluyen las siguientes:
 
@@ -79,6 +79,6 @@ CIF admite clientes con patrones de integración estandarizados basados en prác
 
 ## Recorrido {#journey}
 
-Si está siguiendo un Recorrido comercial, vaya al paso siguiente:
+Si está siguiendo el Recorrido de Commerce, vaya al siguiente paso:
 
 * El [Recorrido de autor de contenido de AEM](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
