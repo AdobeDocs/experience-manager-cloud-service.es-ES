@@ -3,9 +3,9 @@ title: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Se
 description: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1826'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
