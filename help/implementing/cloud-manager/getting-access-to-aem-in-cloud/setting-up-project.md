@@ -3,9 +3,9 @@ title: Configuración del proyecto
 description: Descubra cómo se crean los proyectos AEM con Maven y los estándares que debe observar al crear su propio proyecto.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1404'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -15,10 +15,10 @@ Descubra cómo se crean los proyectos AEM con Maven y los estándares que debe o
 
 ## Detalles de configuración del proyecto {#project-setup-details}
 
-AEM Para generar e implementar proyectos correctamente con Cloud Manager, es necesario que se cumplan las siguientes directrices:
+Para crear e implementar correctamente con Cloud Manager, los proyectos de AEM deben cumplir las siguientes directrices:
 
 * Los proyectos deben crearse con [Apache Maven.](https://maven.apache.org)
-* Debe haber un archivo `pom.xml` en la raíz del repositorio de Git. Esta `pom.xml` Este archivo puede hacer referencia a tantos módulos secundarios (que a su vez pueden tener otros módulos secundarios, etc.) como sea necesario.
+* Debe haber un archivo `pom.xml` en la raíz del repositorio de Git. El archivo `pom.xml` puede hacer referencia a tantos submódulos (que a su vez pueden tener otros submódulos) como sea necesario.
 * Puede agregar referencias a repositorios de artefactos de Maven adicionales en sus archivos `pom.xml`.
    * El acceso a [repositorios de artefactos protegidos por contraseña](#password-protected-maven-repositories) se admite cuando se configura. Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por la red.
 * Los paquetes de contenido que se pueden implementar se descubren al analizar los archivos `.zip` del paquete de contenido, que se encuentran en un directorio denominado `target`.
@@ -110,16 +110,16 @@ Y también debe hacerlo si desea enviar un mensaje simple solo cuando la generac
 
 >[!NOTE]
 >
->Los artefactos de un repositorio de Maven protegido por contraseña deben utilizarse con mucho cuidado, ya que el código implementado a través de este mecanismo actualmente no se ejecuta en todas las [reglas de calidad del código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementado en las puertas de calidad de Cloud Manager. Por lo tanto, solo debe utilizarse en casos excepcionales y para código no vinculado a AEM. También se recomienda implementar las fuentes Java y todo el código fuente del proyecto junto con el binario.
+>Los artefactos de un repositorio de Maven protegido por contraseña deben utilizarse con mucho cuidado, ya que el código implementado a través de este mecanismo actualmente no se ejecuta en todas las [reglas de calidad del código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementado en las puertas de calidad de Cloud Manager. Por lo tanto, solo debe utilizarse en casos excepcionales y para código no vinculado a AEM. También se recomienda implementar las fuentes Java, así como todo el código fuente del proyecto junto con el binario.
 
-Para utilizar un repositorio Maven protegido por contraseña en Cloud Manager haga lo siguiente:
+Para utilizar un repositorio de Maven protegido por contraseña en Cloud Manager, haga lo siguiente:
 
 1. Especifique la contraseña (y, opcionalmente, el nombre de usuario) como un secreto en la [variable de canalización](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md).
 1. A continuación, haga referencia a ese secreto dentro de un archivo llamado `.cloudmanager/maven/settings.xml` en el repositorio de Git, que sigue al esquema [Archivo de configuración de Maven](https://maven.apache.org/settings.html).
 
 Cuando se inicia el proceso de generación de Cloud Manager:
 
-* El `<servers>` de este archivo se combina con el elemento predeterminado `settings.xml` proporcionado por Cloud Manager.
+* El elemento `<servers>` de este archivo se combina con el archivo predeterminado `settings.xml` proporcionado por Cloud Manager.
    * Los Id. de servidor que empiecen por `adobe` y `cloud-manager` se consideran reservados y no deben utilizarlos los servidores personalizados.
    * Los Id. de servidor que no coinciden con uno de estos prefijos o con el Id. predeterminado `central` nunca se reflejarán en Cloud Manager.
 * Con este archivo en su lugar, se hará referencia al Id. del servidor desde un `<repository>` y/o un elemento `<pluginRepository>` dentro del archivo `pom.xml`.
@@ -240,9 +240,9 @@ Para ello, configure el complemento maven-assembly-plugin en su proyecto.
 
 ## Omitir paquetes de contenido {#skipping-content-packages}
 
-En Cloud Manager, las generaciones pueden producir cualquier cantidad de paquetes de contenido. Por varios motivos, puede ser recomendable producir un paquete de contenido, pero no implementarlo. Un ejemplo podría ser generar paquetes de contenido que solo se utilicen para pruebas o que se vuelvan a empaquetar mediante otro paso en el proceso de compilación. Es decir, un subpaquete de otro paquete.
+En Cloud Manager, las generaciones pueden producir cualquier cantidad de paquetes de contenido. Por varios motivos, puede ser recomendable producir un paquete de contenido, pero no implementarlo. Por ejemplo, al crear paquetes de contenido que solo se utilizan para pruebas o que se van a volver a empaquetar mediante otro paso en el proceso de generación. Es decir, un subpaquete de otro paquete.
 
-Para dar cabida a estos escenarios, Cloud Manager busca una propiedad denominada `cloudManagerTarget` en las propiedades de los paquetes de contenido creados. Si esta propiedad se establece en `none`, el paquete se omitirá y no se implementará.
+Para dar cabida a estos escenarios, Cloud Manager busca una propiedad denominada `cloudManagerTarget` en las propiedades de los paquetes de contenido creados. Si esta propiedad se establece en `none`, el paquete se omite y no se implementa.
 
 El mecanismo para establecer esta propiedad depende de la forma en que la generación produce el paquete de contenido. Por ejemplo, con `filevault-maven-plugin` puede configurar el complemento de esta manera.
 
@@ -322,11 +322,11 @@ Ambas ramas tienen el mismo Id. de compromiso.
 1. Se genera y ejecuta una canalización de desarrollo `foo`.
 1. Posteriormente, se genera y ejecuta una canalización de producción `bar`.
 
-En este caso, el artefacto de `foo` se reutiliza para la canalización de producción ya que se identificó el mismo hash de compromiso.
+En este caso, el artefacto de `foo` se reutiliza para la canalización de producción, ya que se identificó el mismo hash de compromiso.
 
 ### Exclusión {#opting-out}
 
-Si lo desea, el comportamiento de reutilización se puede deshabilitar para canalizaciones específicas si configura la variable de canalización `CM_DISABLE_BUILD_REUSE` a `true`. Si se establece esta variable, el hash de compromiso se extrae y los artefactos resultantes se almacenan para su uso posterior, pero los artefactos almacenados anteriormente no se reutilizarán. Para comprender este comportamiento, imagine el siguiente escenario.
+Si lo desea, el comportamiento de reutilización se puede deshabilitar para canalizaciones específicas si configura la variable de canalización `CM_DISABLE_BUILD_REUSE` a `true`. Si se establece esta variable, el hash de compromiso se extrae y los artefactos resultantes se almacenan para su uso posterior, pero los artefactos almacenados anteriormente no se reutilizan. Para comprender este comportamiento, imagine el siguiente escenario.
 
 1. Se crea una nueva canalización.
 1. La canalización se ejecuta (ejecución #1) y el compromiso de HEAD actual es `becdddb`. La ejecución se realiza correctamente y se almacenan los artefactos resultantes.
@@ -340,6 +340,6 @@ Si lo desea, el comportamiento de reutilización se puede deshabilitar para cana
 
 * Los artefactos de generación no se reutilizan en programas diferentes, independientemente de si el hash de compromiso es idéntico.
 * Los artefactos de generación se reutilizan dentro del mismo programa incluso si la rama o canalización son diferentes.
-* [El tratamiento de las versiones de Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) reemplaza a la versión del proyecto solo en las canalizaciones de producción. Por lo tanto, si se utiliza el mismo compromiso tanto en la ejecución de una implementación de desarrollo como en la ejecución de una canalización de producción, y la canalización de implementación de desarrollo se ejecuta primero, las versiones se implementan en fase y producción sin ser cambiadas. Sin embargo, se seguirá creando una etiqueta en este caso.
+* [El tratamiento de las versiones de Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) reemplaza a la versión del proyecto solo en las canalizaciones de producción. Por lo tanto, si se utiliza el mismo compromiso tanto en la ejecución de una implementación de desarrollo como en la ejecución de una canalización de producción, y la canalización de implementación de desarrollo se ejecuta primero, las versiones se implementan en fase y producción sin sufrir cambios. Sin embargo, se seguirá creando una etiqueta en este caso.
 * Si la recuperación de los artefactos almacenados no se realiza correctamente, el paso de generación se ejecuta como si no se hubieran almacenado artefactos.
 * Las variables de canalización distintas de `CM_DISABLE_BUILD_REUSE` no se tienen en cuenta cuando Cloud Manager decide reutilizar los artefactos de generación creados anteriormente.
