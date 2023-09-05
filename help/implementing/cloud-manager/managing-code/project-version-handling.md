@@ -3,9 +3,9 @@ title: Administrar versiones del proyecto de Maven
 description: Para implementaciones de ensayo y producción de AEM as a Cloud Service, Cloud Manager genera una versión única e incremental.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 85%
 
 Para implementaciones de ensayo y producción de AEM as a Cloud Service, Cloud Manager genera una versión única e incremental
 
-Esta versión se ve en [página detalles de ejecución de canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) y la página de actividad. Cuando se ejecuta una generación, el proyecto de Maven se actualiza para utilizar esta versión y se crea una etiqueta en el repositorio de Git con esa versión como su nombre.
+Esta versión se ve en la [página de detalles de ejecución de la canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details), así como la página de actividad. Cuando se ejecuta una generación, el proyecto de Maven se actualiza para utilizar esta versión y se crea una etiqueta en el repositorio de Git con esa versión como su nombre.
 
 Si la versión original del proyecto cumple ciertos criterios, la versión actualizada del proyecto de Maven combinará la versión original y la generada por Cloud Manager. Sin embargo, la etiqueta siempre utiliza la versión generada. Para que se produzca esta combinación, la versión original del proyecto debe estar formada con exactamente tres segmentos de versión, por ejemplo, `1.0.0` o `1.2.3`, pero no `1.0` o `1`, y la versión original no debe terminar en `-SNAPSHOT`.
 
@@ -22,7 +22,7 @@ Si la versión original del proyecto cumple ciertos criterios, la versión actua
 >
 >Este valor de versión del proyecto original debe establecerse de forma estática en el elemento `<version>` del archivo de nivel superior `pom.xml` en la rama del repositorio de Git.
 
-Si la versión original cumple estos criterios, la versión generada se anexa a la original como segmento de nueva versión. La versión generada también se modificará ligeramente para incluir la ordenación y el control de versiones adecuados. Por ejemplo, suponiendo una versión generada de `2019.926.121356.0000020490` tuviera los siguientes resultados.
+Si la versión original cumple estos criterios, la versión generada se agregará a la original como segmento de nueva versión. La versión generada también se modificará ligeramente para incluir la ordenación y el control de versiones adecuados. Por ejemplo, suponiendo una versión generada de `2019.926.121356.0000020490` tuviera los siguientes resultados.
 
 | Versión | Versión en `pom.xml` | Comentar |
 |---|---|---|
