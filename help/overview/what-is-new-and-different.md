@@ -3,9 +3,9 @@ title: 'Novedades y diferencias: Adobe Experience Manager as a Cloud Service'
 description: 'Novedades y diferencias: Adobe Experience Manager (AEM) as a Cloud Service.'
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -150,7 +150,7 @@ También es significativamente diferente, ya que ahora hay:
 
 >[!TIP]
 >
->Para obtener una descripción general completa del proceso de incorporación, consulte el [recorrido de incorporación](/help/journey-onboarding/overview.md).
+>Para obtener información general completa del proceso de incorporación, consulte el [recorrido de incorporación](/help/journey-onboarding/overview.md).
 
 ## Desarrollo de {#developing}
 
@@ -192,7 +192,7 @@ Debido a la clara separación de código y contenido, los desarrolladores pueden
 
 ### Desarrollo local {#aem-as-a-cloud-service-developing-local-development}
 
-AEM AEM Para apoyar las iteraciones y el desarrollo rápidos, también es posible desarrollar aplicaciones de la fuera del contexto as a Cloud Service. Con este fin, se ponen a disposición de los desarrolladores los siguientes artefactos:
+A fin de apoyar las iteraciones y el desarrollo rápidos, también es posible desarrollar aplicaciones de AEM fuera del contexto de AEM as a Cloud Service. Con este fin, se ponen a disposición de los desarrolladores los siguientes artefactos:
 
 * Quickstart de AEM as a Cloud Service: un instalador independiente basado en `.jar` de la última base de código de AEM, con la misma superficie funcional y API.
 
@@ -242,7 +242,7 @@ Esto combina las ventajas de:
 >
 >Para obtener más información, la [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md) es un buen punto de partida.
 
-AEM Los principios básicos de la interfaz de usuario (IU) de creación, tanto para Sites como para Assets, resultarán muy familiares para cualquiera que haya utilizado la interfaz de usuario (IU) en el pasado.
+Los principios básicos de la interfaz de usuario (IU) de creación, tanto para Sites como para Assets, resultarán muy familiares para cualquiera que haya utilizado AEM en el pasado.
 
 La principal diferencia es que la IU solo es táctil; la IU clásica ya no está disponible. Por lo demás, los conceptos básicos permanecen inalterados, con solo pequeños cambios aparentes.
 
@@ -262,7 +262,7 @@ Para obtener más información, consulte [información general e introducción a
 
 ## Cómo conocer Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
-Para obtener más información, consulte:
+Para obtener más información, consulte lo siguiente:
 
 * [Introducción a Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 * La [arquitectura](/help/overview/architecture.md) de Adobe Experience Manager as a Cloud Service
@@ -274,6 +274,6 @@ Para obtener más información, consulte:
 
 >[!TIP]
 >
->Una vez que tenga una visión general de AEM as a Cloud Service, podrá incorporarse rápidamente revisando el [Recorrido de incorporación](/help/journey-onboarding/overview.md).
+>Una vez que tenga la información general de AEM as a Cloud Service, podrá incorporarse rápidamente si revisa el [Recorrido de incorporación](/help/journey-onboarding/overview.md).
 >
 >¿Ya incorporado o listo para sumergirse en las funciones de AEM de prueba? Instale el [complemento de demostraciones de referencia de AEM](/help/journey-sites/demos-add-on/overview.md) para explorar las potentes funciones de AEM con interesantes ejemplos.
