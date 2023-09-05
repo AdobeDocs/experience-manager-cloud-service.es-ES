@@ -7,9 +7,9 @@ level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
 source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '358'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Antes de empezar a usar [!DNL AEM Forms] as a Cloud Service, revise los sigu
 
   ![Problema conocido de la miniatura de Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
 
-* Cuando se utiliza un esquema con elementos repetibles para crear un formulario adaptable basado en componentes principales, la opción de arrastrar y soltar elementos repetibles del árbol del modelo de datos en el Editor de Forms adaptable no funciona.
+* Cuando se utiliza un esquema con elementos repetibles para crear un formulario adaptable basado en componentes principales, la opción de arrastrar y soltar elementos repetibles del árbol del modelo de datos en el editor de formularios adaptables no funciona.
 
 ## Restricciones {#limitations}
 
