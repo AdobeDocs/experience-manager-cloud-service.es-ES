@@ -3,9 +3,9 @@ title: Pruebas funcionales
 description: Obtenga información sobre los tres tipos diferentes de pruebas funcionales integradas en el proceso de implementación de AEM as a Cloud Service para garantizar la calidad y fiabilidad de su código.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '539'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ Hay tres tipos diferentes de pruebas funcionales en AEM as a Cloud Service.
 * [Prueba funcional personalizada](#custom-functional-testing)
 * [Prueba de IU personalizada](#custom-ui-testing)
 
-Para todas las pruebas funcionales, los resultados detallados de las pruebas pueden descargarse como un `.zip` archivo mediante el botón **Descargar registro de generación** en la pantalla de información general de la generación como parte del [proceso de implementación](/help/implementing/cloud-manager/deploy-code.md).
+Para todas las pruebas funcionales, los resultados detallados de las pruebas pueden descargarse como un archivo `.zip` con el botón **Descargar registro de la versión** en la pantalla de información general de la versión como parte del [proceso de implementación](/help/implementing/cloud-manager/deploy-code.md).
 
-Estos registros no incluyen los registros del proceso del tiempo de ejecución de AEM real. Para acceder a esos registros, consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener más información.
+Estos registros no incluyen los registros del proceso del tiempo de ejecución de AEM real. Para acceder a estos registros, consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener más información.
 
 Tanto las pruebas funcionales del producto como las pruebas funcionales personalizadas de ejemplo se basan en la los [clientes de prueba de AEM.](https://github.com/adobe/aem-testing-clients)
 
@@ -53,16 +53,16 @@ Las pruebas funcionales del producto se mantienen como un proyecto de código ab
 
 ### Prueba funcional personalizada {#custom-functional-testing}
 
-Aunque la prueba funcional del producto está definida por Adobe, puede escribir sus propias pruebas de calidad para su propia aplicación. Esto se ejecuta como prueba funcional personalizada como parte de [canal de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) o opcionalmente [canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para garantizar la calidad de la aplicación.
+Aunque la prueba funcional del producto está definida por Adobe, puede escribir sus propias pruebas de calidad para su propia aplicación. Esto se ejecuta como prueba funcional personalizada como parte de la [canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) o una [canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para garantizar la calidad de la aplicación.
 
-AEM Las pruebas funcionales personalizadas se ejecutan tanto para implementaciones de código personalizado como para actualizaciones push, lo que hace especialmente importante escribir buenas pruebas funcionales que eviten que los cambios de código de la aplicación rompan el código de la aplicación. El paso de prueba funcional personalizada siempre está presente y no se puede omitir.
+Las pruebas funcionales personalizadas se ejecutan tanto para implementaciones de código personalizado como para actualizaciones push, lo que hace especialmente importante escribir buenas pruebas funcionales que eviten que los cambios en el código de AEM rompan el código de la aplicación. El paso de prueba funcional personalizada siempre está presente y no se puede omitir.
 
 Consulte [Pruebas funcionales de Java](/help/implementing/cloud-manager/java-functional-testing.md) para obtener más información.
 
 
 ### Prueba de IU personalizada {#custom-ui-testing}
 
-La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo como Java y Maven, Node y WebDriver.io, o cualquier otro marco de trabajo y tecnología creados en Selenium.
+La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium, empaquetadas en una imagen Docker, para permitir una amplia variedad de lenguajes y marcos de trabajo como Java y Maven, Node y WebDriver.io, o cualquier otro marco de trabajo y tecnología creados en Selenium.
 
 Consulte [Pruebas de IU personalizadas](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) para obtener más información.
 
