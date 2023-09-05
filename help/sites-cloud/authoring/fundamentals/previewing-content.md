@@ -3,9 +3,9 @@ title: Vista previa del contenido
 description: Aprenda a utilizar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '274'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ AEM ofrece un servicio de vista previa de Sites que permite a los desarrolladore
 
 Facilita la previsualización de experiencias de página que, de otra manera, no serían visibles desde el entorno de creación, como transiciones de página y otro contenido solo de publicación.
 
-Para obtener más información sobre los entornos de vista previa, consulte [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+Para obtener más información acerca de los entornos de vista previa, consulte el documento [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Publicación de contenido para su previsualización {#publishing-content-to-preview}
 
