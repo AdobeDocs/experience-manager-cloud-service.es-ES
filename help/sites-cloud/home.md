@@ -4,15 +4,15 @@ description: Obtenga una lista completa de todos los recursos de asistencia de A
 landing-page-description: Aprenda a crear y a administrar AEM Sites as a Cloud Service.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-Esta página proporciona una lista completa de todos los recursos de soporte de Adobe de AEM Cloud Services. Obtenga respuestas a su pregunta sobre [!DNL AEM Sites as a Cloud Service].
+Esta página ofrece una lista completa de todos nuestros recursos de asistencia para Adobe AEM Cloud Services. Obtenga respuestas a sus preguntas sobre [!DNL AEM Sites as a Cloud Service].
 
 ## Artículos clave de Sites {#key-articles}
 
@@ -32,20 +32,20 @@ Esta página proporciona una lista completa de todos los recursos de soporte de 
 | Guía del usuario | Descripción |
 |---|---|
 | [Información general](/help/overview/home.md) | Esta guía proporciona información general sobre Experience Manager as a Cloud Service, incluida una introducción, terminología y arquitectura. |
-| [Notas de la versión](/help/release-notes/home.md) | Esta guía proporciona información importante sobre la última versión de Experience Manager as a Cloud Service, incluidas las novedades, las funciones en desuso o eliminadas, y los problemas conocidos. |
+| [Notas de la versión](/help/release-notes/home.md) | Esta guía proporciona información importante sobre la versión más reciente de Experience Manager as a Cloud Service, incluidas las novedades, las funciones obsoletas o eliminadas y los problemas conocidos. |
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con Experience Manager as a Cloud Service. |
 | [Recorrido de incorporación](/help/journey-onboarding/overview.md) | Esta guía proporciona un resumen de cómo empezar a trabajar con Experience Manager as a Cloud Service, incluyendo cómo obtener acceso y la información importante sobre protección de datos. |
 | [Guía de usuario de Assets](/help/assets/home.md) | Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service. |
 | [El paso de AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Comprender el viaje de transición a Cloud Service. |
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Descubra cómo crear y personalizar experiencias con las potentes funciones de AEM explorando estos temas de desarrollo e implementación. |
-| [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | Explore este recorrido AEM guiado a través de las potentes y flexibles funciones sin encabezado de los para que pueda prepararse para su primer proyecto sin encabezado. |
+| [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | Explore este recorrido guiado a través de las potentes y flexibles características sin encabezado de AEM para prepararse para su primer proyecto sin encabezado. |
 | [Guía del usuario sobre Connectors](/help/connectors/home.md) | Obtenga información sobre cómo integrar Connectors en Experience Manager as a Cloud Service. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones del servidor de Experience Manager as a Cloud Service, como tareas de indexación y mantenimiento. |
 | [Guía del usuario de Commerce](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en AEM as a Cloud Service. |
 
 ## Otros recursos de Experience Manager {#other-resources}
 
-* [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
+* [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 * [Documentación de Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
