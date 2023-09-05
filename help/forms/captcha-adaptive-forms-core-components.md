@@ -5,18 +5,25 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 16%
+source-wordcount: '947'
+ht-degree: 19%
 
 ---
 
-# Uso de Google AEM reCAPTCHA en un formulario adaptable con un tipo de datos de {#using-reCAPTCHA-in-adaptive-forms}
+# Usar Google AEM reCAPTCHA en un formulario adaptable de forma basado en componentes principales {#using-reCAPTCHA-in-adaptive-forms}
+
+<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestra [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| Se aplica a | Vínculo del artículo |
+| -------- | ---------------------------- |
+| Formulario adaptable basado en componentes principales | Este artículo |
+| Formulario adaptable basado en componentes de base | [Haga clic aquí](/help/forms/captcha-adaptive-forms.md) |
 
 CAPTCHA (prueba de Turing completamente automática y pública para diferenciar ordenadores de humanos) es un programa que se utiliza comúnmente en transacciones en línea para distinguir entre humanos y programas o bots automatizados. Plantea un desafío y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el sitio. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o con fines malintencionados.
 
-[!DNL AEM Forms] as a [!DNL Cloud Service] es compatible con Google reCAPTCHA v2 en Forms adaptable. Puede utilizarlo para presentar un desafío CAPTCHA al enviar el formulario. Para utilizar reCAPTCHA en un formulario adaptable haga lo siguiente:
+[!DNL AEM Forms] as a [!DNL Cloud Service] es compatible con Google reCAPTCHA v2 en Forms adaptable. Puede utilizarlo para presentar un desafío de CAPTCHA en el envío de formularios. Para utilizar reCAPTCHA en un formulario adaptable haga lo siguiente:
 
 1. [Conecte su entorno de AEM Forms con el servicio reCAPTCHA de Google](#connect-your-forms-environment-with-recaptcha-service-by-google)
 1. [Configure el formulario adaptable para mostrar el desafío CAPTCHA al enviar el formulario](#using-reCAPTCHA)
@@ -106,3 +113,9 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **P: ¿Puedo usar más de un componente Captcha en un formulario adaptable?**
 **R:** No se puede usar más de un componente Captcha en un formulario adaptable. Además, no se recomienda utilizar el componente Captcha en un fragmento o panel marcado para la carga diferida.
 
+## Consulte también
+
+* [Crear un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
+* [Crear un fragmento de formulario adaptable](/help/forms/adaptive-form-fragments-core-components.md)
+* [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
