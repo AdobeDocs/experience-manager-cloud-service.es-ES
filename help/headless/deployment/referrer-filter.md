@@ -1,18 +1,18 @@
 ---
-title: Configuración del filtro de referente con AEM Headless
-description: El Filtro de referente de Adobe Experience Manager habilita el acceso desde hosts de terceros. Se necesita una configuración OSGi para el filtro de referente para habilitar el acceso al punto de conexión de GraphQL para aplicaciones sin encabezado.
+title: Configuración del filtro de referente con AEM sin encabezado
+description: El filtro de remitente de Adobe Experience Manager habilita el acceso desde hosts de terceros. Se necesita una configuración OSGi para el filtro de referente para habilitar el acceso al punto de conexión de GraphQL para aplicaciones sin encabezado.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Filtro de referente {#referrer-filter}
 
-El Filtro de referente de Adobe Experience Manager habilita el acceso desde hosts de terceros.
+El filtro de remitente de Adobe Experience Manager habilita el acceso desde hosts de terceros.
 
 Se necesita una configuración OSGi para el filtro de referente para habilitar el acceso al punto final de GraphQL para aplicaciones sin encabezado en HTTP POST. Cuando se utilizan consultas persistentes de AEM sin encabezado que acceden a AEM a través de HTTP GET, no es necesario configurar un filtro de referente.
 
