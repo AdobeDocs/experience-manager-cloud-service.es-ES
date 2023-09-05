@@ -4,9 +4,9 @@ description: Acceso, experiencia de inicio de sesión, casos de uso compatibles 
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Para usar [!DNL Assets View], inicie sesión en [https://experience.adobe.com/#/
 
 ## Acceder a la vista Recursos {#access-assets-view}
 
-Consulte [Cómo acceder a la vista de recursos](/help/assets/assets-view-introduction.md#how-to-access-assets-view) para obtener las instrucciones detalladas sobre cómo acceder a la vista de recursos.
+Consulte [Acceder a la vista de recursos](/help/assets/assets-view-introduction.md#how-to-access-assets-view) para obtener las instrucciones detalladas sobre cómo acceder a la vista de recursos.
 
 ## Configuración de [!DNL Assets View] {#configuration}
 
@@ -57,7 +57,7 @@ Las diversas tareas de administración de activos digitales (DAM) que puede real
 
 * [Vea un vídeo para empezar a usar la vista de recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=es)
 
-* Proporcione comentarios sobre productos usando [!UICONTROL Comentarios] opción disponible en la interfaz de usuario de Vista de recursos
+* Proporcione comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista de recursos
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
