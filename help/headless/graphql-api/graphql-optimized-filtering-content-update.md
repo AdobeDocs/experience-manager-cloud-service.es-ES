@@ -3,9 +3,9 @@ title: Actualización de los fragmentos de contenido para el filtrado optimizado
 description: Obtenga información sobre cómo actualizar los fragmentos de contenido para el filtrado optimizado de GraphQL en Adobe Experience Manager as a Cloud Service para el envío de contenido sin encabezado.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Para ejecutar el procedimiento, siga estos pasos:
       <td>Todos </td>
       <td> </td>
       <td>Variable </td>
-      <td>Tamaño del lote para guardar el número de fragmentos de contenido después de la migración.<br>Esto es relevante para cuántos CF se guardan en el repositorio en un lote y se puede utilizar para optimizar el número de escrituras en el repositorio. </td>
+      <td>Tamaño del lote para guardar el número de fragmentos de contenido después de la migración.<br>Esto es relevante para ver cuántos fragmentos de contenido se guardan en el repositorio en un lote y se puede usar para optimizar el número de escrituras en el repositorio. </td>
      </tr>
      <tr>
       <td>4</td>
@@ -99,7 +99,7 @@ Para ejecutar el procedimiento, siga estos pasos:
       <td>Todos </td>
       <td> </td>
       <td>Variable </td>
-      <td>Intervalo (segundos) para procesar los fragmentos de contenido restantes hasta el siguiente límite<br>Este intervalo también se considera como un tiempo de espera antes de iniciar el trabajo y un retraso entre el procesamiento de cada número CF_MIGRATION_LIMIT posterior de CF.<br>(*)</td>
+      <td>Intervalo (segundos) para procesar los fragmentos de contenido restantes hasta el siguiente límite<br>Este intervalo también se considera como un tiempo de espera antes de iniciar el trabajo, así como un retraso entre el procesamiento de cada número de CF_MIGRATION_LIMIT de fragmentos de contenido subsiguientes.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -146,7 +146,7 @@ Para ejecutar el procedimiento, siga estos pasos:
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   Los clientes que han habilitado el acceso a los registros de entorno mediante Splunk, pueden utilizar la siguiente consulta de ejemplo para supervisar el proceso de actualización. Para obtener más información sobre la activación del registro de Splunk, consulte [Depuración de producción y ensayo](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) página.
+   Los clientes que han habilitado el acceso a los registros de entorno mediante Splunk, pueden utilizar la siguiente consulta de ejemplo para supervisar el proceso de actualización. Para obtener más información sobre cómo habilitar el registro de Splunk, consulte la página [Depuración de fase y producción](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
