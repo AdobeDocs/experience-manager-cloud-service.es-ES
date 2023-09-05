@@ -2,9 +2,9 @@
 title: 'Proceso de aprovisionamiento: información general'
 description: 'Proceso de aprovisionamiento: información general'
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Una vez completado el aprovisionamiento automático:
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-Para obtener más información, consulte [Incorporación al Experience Manager as a Cloud Service en el Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=es).
+Para obtener más información, consulte [Incorporación a Experience Manager as a Cloud Service en Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=es).
 
 ### Recursos y vínculos
 
