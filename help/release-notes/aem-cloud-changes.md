@@ -3,9 +3,9 @@ title: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 description: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '846'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ AEM Cloud Service ofrece muchas funciones y posibilidades nuevas para la gestió
 
 
 >[!NOTE]
->En este documento se destacan los cambios más importantes que se han producido en AEM en su conjunto. Para obtener más información y ver los cambios específicos de la solución, consulte:
+>En este documento se destacan los cambios más importantes que se han producido en AEM en su conjunto. Para obtener más información y ver los cambios específicos de la solución, consulte lo siguiente:
 >
 >* [Introducción a Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Novedades y diferencias](/help/overview/what-is-new-and-different.md) entre Adobe Experience Manager as a Cloud Service y las versiones anteriores
@@ -49,14 +49,14 @@ Las principales diferencias se encuentran en las siguientes áreas:
 
 ## /apps y /libs son inmutables en tiempo de ejecución {#apps-libs-immutable}
 
-Cualquier contenido y carpetas secundarias de `/apps` y `/libs` son de solo lectura. Cualquier función o código personalizados que deba realizar cambios allí no podrá hacerlo. Se devuelve un error que indica que dicho contenido es de solo lectura y que la operación de escritura no se pudo completar. Esto afecta a varias áreas de AEM:
+Cualquier contenido y carpetas secundarias de `/apps` y `/libs` son de solo lectura. Cualquier función o código personalizados que deba realizar cambios allí no podrá hacerlo. Se muestra un error que indica que dicho contenido es de solo lectura y que la operación de escritura no se pudo completar. Esto afecta a varias áreas de AEM:
 
 * No se permite ningún cambio en `/libs`.
    * Esta regla no es nueva, pero no se aplicaba en versiones anteriores locales de AEM.
 * Las superposiciones de áreas en `/libs` en las que se permite la superposición siguen estando permitidas en `/apps`.
    * Estas superposiciones deben proceder de Git a través de la canalización CI/CD.
 * La información de diseño de plantilla estática almacenada en `/apps` no se puede editar mediante la interfaz de usuario.
-   * Se recomienda utilizar plantillas editables en su lugar.
+   * En su lugar, se recomienda utilizar plantillas editables.
    * Si las plantillas estáticas siguen siendo necesarias, la información de configuración debe proceder de Git a través de la canalización CI/CD.
 * El modelo MSM y las configuraciones de implementación MSM personalizadas deben instalarse desde Git a través de la canalización CI/CD.
 * Los cambios en la traducción y localización deben proceder de Git a través de la canalización CI/CD.
