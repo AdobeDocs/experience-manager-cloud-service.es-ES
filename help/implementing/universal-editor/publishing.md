@@ -3,9 +3,9 @@ title: Publicación de contenido con el Editor visual universal
 description: Descubra cómo el Editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Cuando se aloja de forma externa, la aplicación web debe garantizar que el cont
 
 La determinación de si el nivel de autor o publicación debe ser acceso se puede realizar mediante una simple afirmación condicional en la aplicación para elegir el autor apropiado o el punto final de publicación al detectar que se está abriendo en el editor.
 
-Otra opción es implementar la aplicación en dos entornos diferentes configurados de forma diferente, de modo que uno recupere su contenido del nivel de creación y otro que lo recupere del nivel de publicación. Para permitir que los autores abran la URL publicada en el Editor universal, se puede crear una pequeña secuencia de comandos para &quot;convertir&quot; la URL del lado de publicación a su equivalente en el entorno de creación (por ejemplo, anteponiendo una etiqueta `author` subdominio), de modo que los autores se redirijan automáticamente.
+Otra opción es implementar la aplicación en dos entornos diferentes configurados de forma diferente, de modo que uno recupere su contenido del nivel de creación y otro que lo recupere del nivel de publicación. Para permitir que los autores abran la URL publicada en el editor universal, se puede crear una pequeña secuencia de comandos para “convertir” la URL del lado de publicación a su equivalente en el entorno de creación (por ejemplo, anteponiendo un subdominio `author`), de modo que los autores se redirijan automáticamente.
 
 ## Resumen {#summary}
 
