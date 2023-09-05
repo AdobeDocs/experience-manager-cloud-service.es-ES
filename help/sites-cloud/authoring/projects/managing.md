@@ -3,25 +3,25 @@ title: Administración de proyectos
 description: Proyectos le permite organizar su proyecto al agrupar los recursos en una entidad a la que se puede acceder y se puede administrar en la consola Proyectos
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '893'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 # Administración de proyectos {#managing-projects}
 
-Proyectos permite organizar el proyecto agrupando recursos en una entidad.
+Los proyectos le permiten organizar el proyecto agrupando recursos en una entidad.
 
-En el **Proyectos** , puede acceder a sus proyectos y realizar acciones en ellos:
+En la consola **Proyectos**, puede acceder a sus proyectos y realizar acciones en ellos:
 
 ![La consola Proyectos](/help/sites-cloud/authoring/assets/projects-console.png)
 
-En Proyectos, puede crear un proyecto, asociar recursos al proyecto y también eliminar un proyecto o vínculos a recursos. Es posible que desee abrir un mosaico para ver su contenido y agregar elementos a un mosaico. En este tema se describen estos procedimientos.
+En Proyectos, puede crear un proyecto, asociar recursos a él y también eliminar un proyecto o vínculos a recursos. Puede que desee abrir un mosaico para ver su contenido y añadir elementos a un mosaico. En este tema se describen esos procedimientos.
 
 ## Creación de un proyecto {#creating-a-project}
 
-AEM De forma predeterminada, proporciona estas plantillas entre las que elegir al crear un proyecto:
+De forma predeterminada, AEM proporciona estas plantillas entre las que puede elegir cuando cree un proyecto:
 
 * Proyecto simple
 * Proyecto de medios
@@ -38,19 +38,19 @@ El procedimiento para crear un proyecto es el mismo de un proyecto a otro. La di
 
    ![Creación de un proyecto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Defina el **Título** y la **Descripción** y añada una imagen en **miniatura** si es necesario. También puede agregar o eliminar usuarios y a qué grupo pertenecen. Además, haga clic en **Avanzadas** para añadir un nombre utilizado en la dirección URL.
+1. Defina el **Título** y la **Descripción** y añada una imagen en **miniatura** si es necesario. También puede añadir o eliminar usuarios y a qué grupo pertenecen. Además, haga clic en **Avanzadas** para añadir un nombre utilizado en la dirección URL.
 
    ![Adición de detalles del proyecto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Toque o haga clic en **Crear**. La confirmación le preguntará si desea abrir el nuevo proyecto o volver a la consola.
+1. Toque o haga clic en **Crear**. La confirmación le solicitará si desea abrir el nuevo proyecto o volver a la consola.
 
 ### Asociación de recursos al proyecto {#associating-resources-with-your-project}
 
-A medida que los proyectos le permiten agrupar recursos en una entidad, desea asociar recursos al proyecto. Estos recursos se denominan **Mosaicos**. Los tipos de recursos que puede agregar se describen en [Mosaicos del proyecto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
+Dado que los proyectos le permiten agrupar recursos en una entidad, desea asociar recursos al proyecto. Estos recursos se denominan **Mosaicos**. Los tipos de recursos que puede añadir se describen en [Mosaicos del proyecto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
-Para asociar recursos al proyecto:
+Para asociar recursos al proyecto, haga lo siguiente:
 
-1. Abra el proyecto desde el **Proyectos** consola.
+1. Abra el proyecto desde la consola **Proyectos**.
 1. Pulse o haga clic en **Añadir mosaico** y seleccione el mosaico que desea vincular a su proyecto. Puede seleccionar varios tipos de mosaicos.
 
    ![Adición de un mosaico a un proyecto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
@@ -67,35 +67,35 @@ Para eliminar un proyecto desde la consola o un recurso vinculado desde el proye
 
 1. Vaya a la ubicación adecuada:
 
-   * Para eliminar un proyecto, vaya al nivel superior de la **Proyectos** consola.
+   * Para eliminar un proyecto, vaya al nivel superior de la consola **Proyectos**.
    * Para eliminar un vínculo a un recurso de un proyecto, abra el proyecto en la consola **Proyectos**.
 
 1. Para introducir el modo de selección, haga clic en **Seleccionar** y seleccione el proyecto o el vínculo a un recurso.
 1. Toque o haga clic en **Eliminar**.
 
-1. Debe confirmar la eliminación en un cuadro de diálogo. Si se confirma, se elimina el proyecto o el vínculo al recurso. Toque o haga clic en **Anular selección** para salir del modo de selección.
+1. Debe confirmar la eliminación en un cuadro de diálogo. Si se confirma, se elimina el proyecto o el vínculo a un recurso. Toque o haga clic en **Anular selección** para salir del modo de selección.
 
 >[!NOTE]
 >
 >Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos asociados con el proyecto se crean automáticamente para administrar los permisos asociados. Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**. Sin embargo, si se elimina el proyecto, esos grupos no se eliminarán automáticamente. Un administrador debe eliminar manualmente los grupos en **Herramientas** > **Seguridad** > **Grupos**.
 
-### Agregar elementos a un mosaico {#adding-items-to-a-tile}
+### Adición de elementos a un mosaico {#adding-items-to-a-tile}
 
-En algunos mosaicos, es posible que desee agregar más de un elemento. Por ejemplo, puede tener más de un flujo de trabajo ejecutándose a la vez o más de una experiencia.
+En algunos mosaicos, puede que desee añadir más de un elemento. Por ejemplo, puede tener más de un flujo de trabajo que se ejecuta al mismo tiempo o más de una experiencia.
 
-Para agregar elementos a un mosaico:
+Para añadir elementos a un mosaico, haga lo siguiente:
 
 1. En **Proyectos**, vaya al proyecto y haga clic o pulse en las comillas angulares hacia abajo en el mosaico al que desee agregar un elemento.
 
    ![Adición de un elemento a un mosaico](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Agregue un elemento al mosaico como lo haría al crear un mosaico nuevo. Se describen los mosaicos del proyecto [aquí](/help/sites-cloud/authoring/projects/overview.md#project-tiles). En este ejemplo, se ha añadido otro flujo de trabajo.
+1. Añada un elemento al mosaico como lo haría al crear un mosaico nuevo. Los mosaicos del proyecto se describen [aquí](/help/sites-cloud/authoring/projects/overview.md#project-tiles). En este ejemplo, se ha añadido otro flujo de trabajo.
 
-### Abrir un mosaico {#opening-a-tile}
+### Apertura de un mosaico {#opening-a-tile}
 
 Es posible que desee ver qué elementos se incluyen en un mosaico actual o modificar o eliminar elementos en el mosaico.
 
-Para abrir un mosaico para poder ver o modificar elementos:
+Para abrir un mosaico para poder ver o modificar elementos, haga lo siguiente:
 
 1. En la consola Proyectos, pulse o haga clic en el icono de puntos suspensivos (...) en la parte inferior de la tarjeta.
 
@@ -125,17 +125,17 @@ Si el icono tiene una x junto a él, muestra los proyectos inactivos.
 
 ![Botón Alternar proyectos inactivos](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
-## Inactividad o activación de proyectos {#making-projects-inactive-or-active}
+## Inactividad o actividad de los proyectos {#making-projects-inactive-or-active}
 
-Es posible que desee dejar inactivo un proyecto si lo ha completado, pero aun así desea mantener la información del proyecto.
+Es posible que desee que un proyecto quede inactivo si lo ha completado y desea mantener la información de este.
 
-Para que un proyecto quede inactivo (o activo):
+Para que un proyecto quede inactivo (o activo), haga lo siguiente:
 
-1. En el **Proyectos** , abra el proyecto y, a continuación, busque la **Información del proyecto** mosaico.
+1. En la consola **Proyectos**, abra el proyecto y, a continuación, busque el mosaico **Información del proyecto**.
 
    >[!NOTE]
    >
-   Es posible que tenga que agregar este mosaico si aún no está en el proyecto. Consulte [Adición de mosaicos](#adding-items-to-a-tile).
+   Es posible que deba añadir este mosaico si aún no está en el proyecto. Consulte [Añadir mosaicos](#adding-items-to-a-tile).
 
 1. Pulse o haga clic en **Editar**.
 1. Cambie el selector de **Activo** a **Inactivo** (o viceversa).
