@@ -3,9 +3,9 @@ title: Preparación de la incorporación
 description: Antes de iniciar el proceso de incorporación, hay que realizar una serie de pasos preparatorios que el administrador del sistema debe conocer antes de iniciar sesión en el sistema.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +42,13 @@ La incorporación a AEM as a Cloud Service comienza con un contrato firmado entr
 * Su nivel de Premier Support (si corresponde).
 * Sus contactos para la incorporación.
 
-Si no tiene conocimiento de estos datos, póngase en contacto con el equipo de contratación de su organización.
+Si no tiene conocimiento de estos detalles, póngase en contacto con el equipo de contratación de su organización.
 
 Una vez firmado el contrato, Adobe aprovisionará sus entornos, se enviará un correo electrónico de bienvenida a los contactos de incorporación definidos en el contrato y Adobe programará una llamada de incorporación. Esto suele ocurrir un par de días después del cierre del contrato a menos que se organice una fecha de inicio del servicio futura.
 
 ## Aprovisionar el sistema {#provisioning}
 
-AEM Una vez firmado el contrato, el Adobe aprovisiona automáticamente todos los entornos en la nube de la cubiertos por el contrato. Estos entornos también se vincularán a sus programas en Cloud Manager (más información sobre este tema más adelante en el recorrido). Estos entornos de nube de AEM se incluyen en cada suscripción de AEM as a Cloud Service y suelen estar compuestos por al menos un entorno de producción, un entorno de ensayo y, opcionalmente, uno o más entornos de desarrollo o prueba.
+Una vez firmado el contrato, todos los entornos de la nube de AEM cubiertos por el contrato se aprovisiona automáticamente mediante Adobe. Estos entornos también se vincularán a sus programas en Cloud Manager (más información sobre este tema más adelante en el recorrido). Estos entornos de nube de AEM se incluyen en cada suscripción de AEM as a Cloud Service y suelen estar compuestos por al menos un entorno de producción, un entorno de ensayo y, opcionalmente, uno o más entornos de desarrollo o prueba.
 
 ## Llamada de incorporación {#onboarding-call}
 
@@ -60,7 +60,7 @@ Los asistentes de su organización deben ser los siguientes:
 * Profesionales técnicos
 * Su socio de implementación
 
-El Adobe está representado por:
+Adobe está representado por lo siguiente:
 
 * Especialista en incorporación
 * Su administrador técnico de cuentas (según corresponda)
@@ -88,4 +88,4 @@ Ahora debería tener una comprensión básica de lo siguiente:
 * Cómo afecta ese contrato al proceso de incorporación.
 * Cómo prepararse para su llamada de incorporación.
 
-Ahora que está familiarizado con estos pasos de preparación, está casi listo para iniciar sesión en el sistema usted mismo. Pero primero necesitará una breve visión general de cómo está estructurado AEM as a Cloud Service desde el punto de vista de un administrador del sistema y conocer la terminología importante. Continuar a la siguiente parte del recorrido, [AEM Terminología as a Cloud Service](terminology.md).
+Ahora que está familiarizado con estos pasos de preparación, está casi listo para iniciar sesión en el sistema usted mismo. Pero primero necesitará una breve visión general de cómo está estructurado AEM as a Cloud Service desde el punto de vista de un administrador del sistema y conocer la terminología importante. Continúe con la siguiente parte del recorrido, [Terminología de AEM as a Cloud Service](terminology.md).
