@@ -3,9 +3,9 @@ title: Sistema de estilos
 description: El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1320'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 59%
 
 El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, por lo que el componente es más flexible.
 
-Esto elimina la necesidad de desarrollar un componente personalizado para cada estilo o de personalizar el cuadro de diálogo del componente para habilitar dicha funcionalidad de estilo. AEM Esto conduce a componentes más reutilizables que se pueden adaptar rápida y fácilmente a las necesidades de los autores de contenido sin ningún tipo de desarrollo back-end de la parte superior de la pantalla.
+Esto elimina la necesidad de desarrollar un componente personalizado para cada estilo o para personalizar el cuadro de diálogo del componente para habilitar dicha funcionalidad de estilo. Esto conduce a componentes más reutilizables que se pueden adaptar con rapidez y facilidad a las necesidades de los autores de contenido sin ningún tipo de desarrollo back-end de AEM.
 
 ## Caso práctico    {#use-case}
 
@@ -26,7 +26,7 @@ El sistema de estilos proporciona una solución unificada a los requisitos del a
 * Los autores de plantillas pueden definir clases de estilo en la política de contenido de los componentes.
 * Los autores de contenido pueden seleccionar estas clases de una lista desplegable al editar el componente en una página para que puedan aplicar los estilos correspondientes.
 
-A continuación, la clase de estilo se inserta en el elemento envolvente de decoración del componente para que el desarrollador de componentes no tenga que preocuparse por administrar los estilos más allá de proporcionar sus reglas CSS.
+A continuación, la clase de estilo se inserta en el elemento envolvente de decoración del componente para que el desarrollador de componentes no tenga que preocuparse por administrar los estilos más allá de proporcionar sus reglas de CSS.
 
 ## Información general {#overview}
 
@@ -46,9 +46,9 @@ Por lo general, el uso del sistema de estilos se realiza de la siguiente manera.
 
 1. El autor de páginas de AEM puede seleccionar los estilos diseñados en el editor de página a través del menú Estilo de la barra de herramientas del componente.
 
-AEM Tenga en cuenta que solo los tres últimos pasos se llevan a cabo en la práctica en el ámbito de la. AEM Esto significa que todo el desarrollo del CSS y el JavaScript necesarios se puede realizar sin tener que realizar ninguna acción de la manera de hacer un seguimiento de la configuración de la aplicación.
+Tenga en cuenta que solo los tres últimos pasos se llevan a cabo en la práctica en el ámbito de AEM. Esto significa que todo el desarrollo del CSS y el JavaScript necesarios se puede realizar sin AEM.
 
-AEM En realidad, la implementación de los estilos solo requiere la implementación de la selección y la selección en los componentes de las plantillas deseadas.
+En realidad, la implementación de los estilos solo requiere la implementación en AEM y la selección en los componentes de las plantillas deseadas.
 
 En el diagrama siguiente, se ilustra la arquitectura del sistema de estilos.
 
@@ -63,7 +63,7 @@ En las secciones siguientes [Como autor de contenido](#as-a-content-author) y [C
 Si desea utilizar el sistema de estilos para sus propios componentes, haga lo siguiente:
 
 1. Instale el CSS como bibliotecas de cliente, tal como se describe en la sección [Información general](#overview).
-1. Configure las clases CSS que desee poner a disposición de los autores de contenido como se describe en la sección [Como autor de plantillas](#as-a-template-author).
+1. Configure las clases de CSS que desee poner a disposición de los autores de contenido como se describe en la sección [Como autor de plantillas](#as-a-template-author).
 1. Los autores de contenido pueden utilizar los estilos como se describe en la sección [Como autor de contenido](#as-a-content-author).
 
 ### Como autor de contenido    {#as-a-content-author}
@@ -95,16 +95,16 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
    ![Editar propiedades](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
-   * **Nombre de grupo:** Los estilos se pueden agrupar en el menú de estilo que verá el autor del contenido al configurar el estilo del componente.
-   * **Los estilos se pueden combinar:** Permite seleccionar varios estilos dentro de ese grupo al mismo tiempo.
-   * **Nombre de estilo:** Descripción del estilo que se mostrará al autor del contenido al configurar el estilo del componente.
-   * **Clases CSS:** El nombre real de la clase CSS asociada al estilo.
+   * **Nombre del grupo:** los estilos se pueden agrupar en el menú de estilo que verá el autor del contenido al configurar el estilo del componente.
+   * **Los estilos se pueden combinar:** permite que se seleccionen varios estilos dentro de ese grupo al mismo tiempo.
+   * **Nombre de estilo:** la descripción del estilo que se mostrará al autor del contenido al configurar el estilo del componente.
+   * **Clases de CSS:** el nombre real de la clase de CSS asociada al estilo.
 
-   Utilice los controladores de arrastre para ordenar los grupos y los estilos dentro de los grupos. Utilice los iconos Agregar o Eliminar para agregar o quitar grupos o estilos dentro de los grupos.
+   Utilice los controladores de arrastre para ordenar los grupos y los estilos dentro de los grupos. Utilice los iconos Añadir o Eliminar para añadir o quitar grupos y estilos dentro de los grupos.
 
 >[!CAUTION]
 >
->Las clases CSS (y cualquier código JavaScript necesario) configuradas como propiedades de estilo de la política de un componente deben implementarse como [Bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md) para trabajar.
+>Las clases de CSS (y cualquier código Javascript necesario) configuradas como propiedades de estilo de la política de un componente deben implementarse como [bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md) para que funcionen.
 
 ## Configuración {#setup}
 
@@ -122,7 +122,7 @@ Para que un componente funcione con el sistema de estilos de AEM y se muestre la
 >[!NOTE]
 Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
-AEM AEM Con el componente configurado, los estilos configurados por los autores de la página se insertan automáticamente mediante el elemento de decoración que se ajusta automáticamente a todos los componentes editables, de forma que se puede crear una nueva página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página. El componente en sí no necesita hacer nada más para que esto suceda.
+Con el componente configurado, los estilos configurados por los autores de la página son insertados automáticamente por AEM en el elemento de decoración que AEM envuelve automáticamente alrededor de cada componente editable. El componente en sí no necesita hacer nada más para que esto suceda.
 
 ### Activar la pestaña Estilos en el cuadro de diálogo Editar {#enable-styles-tab-edit}
 
@@ -134,7 +134,7 @@ La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
+Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la [fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ La pestaña Estilos del cuadro de diálogo Editar no está activada de forma pre
 
 ### Estilos con nombres de elemento       {#styles-with-element-names}
 
-Un desarrollador también puede configurar una lista de nombres de elemento permitidos para los estilos del componente con la propiedad matriz de cadenas `cq:styleElements`. A continuación, en la pestaña Estilos de la directiva dentro del cuadro de diálogo de diseño, el autor de la plantilla también puede elegir un nombre de elemento que se establecerá para cada estilo. Se establecerá el nombre del elemento del elemento envolvente.
+Un desarrollador también puede configurar una lista de nombres de elemento permitidos para los estilos del componente con la propiedad matriz de cadenas `cq:styleElements`. A continuación, en la pestaña Estilos de la directiva, dentro del cuadro de diálogo de diseño, el autor de la plantilla también puede elegir un nombre de elemento que se establecerá para cada estilo. Se establecerá el nombre del elemento envolvente.
 
 Esta propiedad se establece en el nodo `cq:Component`. Por ejemplo:
 
@@ -150,13 +150,13 @@ Esta propiedad se establece en el nodo `cq:Component`. Por ejemplo:
 
 >[!CAUTION]
 >
-Evite definir nombres de elementos para los estilos que se pueden combinar. Cuando se definen varios nombres de elemento, el orden de prioridad es:
+Evite definir los nombres de elemento para los estilos que se pueden combinar. Cuando se definen varios nombres de elemento, el orden de prioridad es el siguiente:
 >
 1. HTL tiene prioridad sobre todo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`.
 1. A continuación, entre diversos estilos activos, se toma el primer estilo de la lista de estilos configurados en la política del componente.
-1. Finalmente, el componente de `cq:htmlTag`/ `cq:tagName` se considera como un valor de reserva.
+1. Por último, el valor `cq:htmlTag`/`cq:tagName` del componente se considera como un valor alternativo.
 >
 
-Esta capacidad para definir nombres de estilo resulta útil para los componentes genéricos, como el contenedor de diseño o el componente Fragmento de contenido, a fin de darles un significado adicional.
+Esta capacidad para definir nombres de estilo resulta útil para los componentes genéricos, como el contenedor de diseño o el componente Fragmento de contenido, para complementar su significado.
 
 Por ejemplo, permite que un contenedor de diseños reciba valores semánticos como `<main>`, `<aside>`, `<nav>`, etc.
