@@ -3,9 +3,9 @@ title: Registro, inicio de sesión y perfil de usuario
 description: Obtenga información sobre el registro, el inicio de sesión, los datos de usuario y la sincronización de grupos para AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1167'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Las aplicaciones web a menudo proporcionan funciones de administración de cuent
 
 >[!IMPORTANT]
 >
->Para que la funcionalidad descrita en este artículo funcione, debe habilitarse la función Sincronización de datos del usuario, que en este momento requiere una solicitud al servicio de atención al cliente indicando el programa y los entornos adecuados. Si no está habilitada, la información del usuario se mantiene durante un breve periodo (de 1 a 24 horas) antes de desaparecer.
+>Para que la funcionalidad descrita en este artículo funcione, debe habilitarse la función Sincronización de datos del usuario, que en este momento requiere una solicitud al servicio de atención al cliente indicando el programa y los entornos adecuados. Si no está habilitada, la información del usuario se mantiene durante un breve período (de 1 a 24 horas) antes de desaparecer.
 
 ## Registro {#registration}
 
@@ -83,7 +83,7 @@ La interfaz `com.adobe.granite.auth.oauth.provider` se puede implementar con el 
 
 ### Sesiones de persistencia y tokens encapsulados {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service tiene habilitadas las sesiones de persistencia basadas en cookies, lo que garantiza que un usuario final se enrute al mismo nodo de publicación en cada solicitud. Para aumentar el rendimiento, la función de token encapsulado está habilitada de forma predeterminada, por lo que no es necesario hacer referencia al registro de usuario en el repositorio en cada solicitud. Si se reemplaza el nodo de publicación al que un usuario final tiene afinidad, su registro de ID de usuario estará disponible en el nuevo nodo de publicación, tal como se describe en la sección de sincronización de datos a continuación.
+AEM as a Cloud Service tiene habilitadas las sesiones de persistencia basadas en cookies, lo que garantiza que un usuario final se enrute al mismo nodo de publicación en cada solicitud. Para aumentar el rendimiento, la función de token encapsulado está habilitada de forma predeterminada, por lo que no es necesario hacer referencia al registro de usuario en el repositorio en cada solicitud. Si se reemplaza el nodo de publicación al que un usuario final tiene afinidad, su registro de ID de usuario está disponible en el nuevo nodo de publicación, tal como se describe en la sección de sincronización de datos a continuación.
 
 ## Perfil de usuario {#user-profile}
 
@@ -100,11 +100,11 @@ La información de perfil del usuario se puede escribir y leer de dos maneras:
 
 Los datos del usuario final se pueden enviar a proveedores de terceros como CRM, recuperar mediante API al iniciar sesión en AEM y conservarlos (o actualizarlos) en el nodo de perfil del usuario de AEM. AEM los puede utilizar según sea necesario.
 
-AEM El acceso en tiempo real a servicios de terceros para recuperar atributos de perfil es posible, pero es importante asegurarse de que esto no afecte sustancialmente al procesamiento de solicitudes en los.
+El acceso en tiempo real a servicios de terceros para recuperar atributos de perfil es posible, pero es importante asegurarse de que esto no afecte sustancialmente al procesamiento de solicitudes en AEM.
 
 ## Permisos (grupos de usuarios cerrados) {#permissions-closed-user-groups}
 
-Las políticas de acceso del nivel de publicación, también denominadas Grupos de usuarios cerrados (CUG), se definen en el autor de AEM como [se describe aquí](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=es#applying-your-closed-user-group-to-content-pages). AEM Para restringir ciertas secciones o páginas de un sitio web de algunos usuarios, aplique los CUG según sea necesario utilizando el autor de la, como se describe aquí, y duplíquelas en el nivel de publicación.
+Las políticas de acceso del nivel de publicación, también denominadas Grupos de usuarios cerrados (CUG), se definen en el autor de AEM como [se describe aquí](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=es#applying-your-closed-user-group-to-content-pages). Para restringir ciertas secciones o páginas de un sitio web a algunos usuarios, aplique los CUG según sea necesario utilizando el autor de AEM, como se describe aquí, y duplíquelos en el nivel de publicación.
 
 * Si los usuarios inician sesión al autenticarse con un proveedor de identidad (IdP) mediante SAML, el controlador de autenticación identificará las pertenencias de grupo del usuario (que deben coincidir con los CUG en el nivel de publicación) y persistirá la asociación entre el usuario y el grupo a través de un registro de repositorio.
 * Si el inicio de sesión se realiza sin integración de IdP, el código personalizado puede aplicar las mismas relaciones de estructura de repositorios.
