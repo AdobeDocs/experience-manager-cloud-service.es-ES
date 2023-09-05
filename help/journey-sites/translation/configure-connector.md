@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1164'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Si elige otro proveedor, el administrador debe instalar el paquete del conector 
 >
 >Si decide utilizar el conector del traductor de Microsoft para realizar pruebas, no es necesario realizar los pasos de las dos secciones siguientes: [Creación de una configuración de integración de traducción](#create-config) y [Asociar la configuración con su contenido.](#associate) Sin embargo, se recomienda leerlas para que esté familiarizado con los pasos para cuándo necesite configurar el conector preferido.
 >
->La licencia de prueba del conector del traductor de Microsoft no está pensada para fines de producción y si decide conceder la licencia, el administrador del sistema debe seguir los pasos detallados en la [Recursos adicionales](#additional-resources) al final de este documento para configurar esa licencia.
+>La licencia de la versión de prueba del conector del traductor de Microsoft no está pensada para fines de producción y si decide conceder la licencia, el administrador del sistema debe seguir los pasos detallados en la sección [Recursos adicionales](#additional-resources) al final de este documento para configurar esa licencia.
 
 ## Creación de una configuración de integración de traducción {#create-config}
 
@@ -82,7 +82,7 @@ Para crear una nueva configuración de traducción:
 1. Toque o haga clic en **Crear** en la barra de herramientas para crear la nueva configuración.
 1. Proporcione la siguiente información en los campos y, a continuación, toque o haga clic en **Crear**.
    1. Seleccione **Tipo de configuración** en la lista desplegable. Seleccione **Integración de traducción** de la lista.
-   1. Escriba un **Título** para su configuración. El **Título** identifica la configuración en **Cloud Services** y en las listas desplegables de propiedades de página.
+   1. Escriba un **Título** para su configuración. El **Título** identifica la configuración en la consola **Cloud Services**, así como en las listas desplegables de propiedad de página.
    1. Opcionalmente, escriba un **Nombre** para usar para el nodo del repositorio que almacena la configuración.
 
    ![Crear configuración de traducción](assets/create-translation-configuration.png)
