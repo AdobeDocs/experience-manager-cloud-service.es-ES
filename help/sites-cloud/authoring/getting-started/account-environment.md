@@ -3,9 +3,9 @@ title: Configuración del entorno de la cuenta
 description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Para comenzar, acceda a la opción [Usuario](#user-settings) en el encabezado.
 
 ## Configuración de usuario {#user-settings}
 
-El **Usuario** El cuadro de diálogo de configuración le permite acceder a:
+El cuadro de diálogo de configuración **Usuario** le da acceso a lo siguiente:
 
 * Suplantar como
    * Con la función Suplantar como, un usuario puede trabajar en nombre de otro usuario. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -40,13 +40,13 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
 * **Idioma**
 
-  Define el idioma que se utilizará para la interfaz de usuario del entorno de creación. Seleccione el idioma en la lista disponible.
+  Se trata del idioma que se utiliza para la IU del entorno de creación. Seleccione el idioma requerido de la lista disponible.
 
 * **Gestión de ventanas**
 
-  Define el comportamiento para abrir ventanas. Seleccione:
+  Esta opción permite definir el comportamiento o la apertura de las ventanas. Seleccione:
 
-   * **Varias ventanas** (Predeterminado)
+   * **Varias ventanas** (predeterminado)
 
       * Las páginas se abren en una nueva ventana.
 
@@ -56,13 +56,13 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
 * **Mostrar las acciones del escritorio para Assets**
 
-  AEM Esta opción requiere que utilice la aplicación de escritorio de la.
+  Esta opción requiere la utilización de la aplicación de escritorio de AEM.
 
 * **Color de anotación**
 
   Define el color predeterminado que se utiliza para realizar anotaciones.
 
-   * Haga clic en el bloque de colores para abrir el selector de muestras y seleccionar un color.
+   * Haga clic en el bloque de color para abrir el selector de muestras y seleccionar un color.
    * Como alternativa, introduzca el código hexadecimal del color deseado en el campo. 
 
 * **Presentación de fecha relativa**
@@ -85,7 +85,7 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
    * [Métodos abreviados del teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Métodos abreviados del teclado para las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-  Esta opción habilita los métodos abreviados de teclado. De forma predeterminada están habilitadas, pero se pueden deshabilitar, por ejemplo, si un usuario tiene ciertos requisitos de accesibilidad.
+  Esta opción habilita los métodos abreviados de teclado. De manera predeterminada, los métodos abreviados están habilitados, pero se pueden deshabilitar; por ejemplo, si un usuario tiene determinados requisitos de accesibilidad.
 
 * **Activar la página principal de los recursos**
 
@@ -93,4 +93,4 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
 * **Configuración de Stock**
 
-  Esta opción permite especificar la configuración preferida de Adobe Stock y solo estará disponible si el administrador del sistema ha activado [Integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Esta opción permite especificar la configuración preferida de Adobe Stock y solo está disponible si el administrador del sistema ha activado la [integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
