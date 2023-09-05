@@ -3,9 +3,9 @@ title: API obsoletas
 description: Notas de la versión específicas de las API en desuso y eliminadas de  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1116'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -111,7 +111,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>Las API Apache Felix metatype y SCR están en desuso.  En su lugar, utilice las API OSGi metatype y Declarative Service.</td>
+    <td>Las API Apache Felix metatype y SCR están en desuso.  Utilice en su lugar las API OSGi metatype y Declarative Service.</td>
     <td>5/27/21</td>
     <td>eliminado</td>
   </tr>
@@ -158,7 +158,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>La pizarra Apache Felix Http ya no es compatible. Migre su código a la pizarra Http OSGi.</td>
+    <td>La pizarra Apache Felix Http ya no es compatible. Migre su código a la pizarra HTTP OSGi.</td>
     <td>1/27/2022</td>
     <td>03/24/2022</td>
   </tr>
