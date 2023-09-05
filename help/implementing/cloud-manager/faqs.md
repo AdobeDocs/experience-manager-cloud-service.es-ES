@@ -1,20 +1,20 @@
 ---
 title: Preguntas frecuentes sobre Cloud Manager
-description: AEM Encuentre respuestas a las preguntas más frecuentes acerca de Cloud Manager en as a Cloud Service.
+description: Encuentre respuestas a las preguntas más frecuentes sobre Cloud Manager en AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '987'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 
 # Preguntas frecuentes sobre Cloud Manager {#cloud-manager-faqs}
 
-AEM Este documento proporciona respuestas a las preguntas más frecuentes acerca de Cloud Manager en as a Cloud Service.
+Este documento proporciona respuestas a las preguntas más frecuentes sobre Cloud Manager en AEM as a Cloud Service.
 
-## ¿Es posible utilizar Java™ 11 con compilaciones de Cloud Manager? {#java-11-cloud-manager}
+## ¿Es posible utilizar Java™ 11 con generaciones de Cloud Manager? {#java-11-cloud-manager}
 
 Sí. Añada el `maven-toolchains-plugin` con la configuración adecuada para Java™ 11.
 
@@ -24,7 +24,7 @@ Por ejemplo, consulte el [código de ejemplo del proyecto wknd](https://github.c
 
 ## Mi generación falla con un error sobre maven-scr-plugin después de cambiar de Java™ 8 a Java™ 11. ¿Qué puedo hacer? {#build-fails-maven-scr-plugin}
 
-AEM Es posible que la compilación de Cloud Manager de la falle al intentar cambiar la compilación de Java™ 8 a 11. Si encuentra el siguiente error, debe eliminar `maven-scr-plugin` y convierta todas las anotaciones OSGi en anotaciones OSGi R6.
+Es posible que la generación de AEM Cloud Manager falle al intentar cambiar la generación de Java™ 8 a Java™ 11. Si encuentra el siguiente error, debe quitar `maven-scr-plugin` y convertir todas las anotaciones OSGi en anotaciones OSGi R6.
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
@@ -32,7 +32,7 @@ AEM Es posible que la compilación de Cloud Manager de la falle al intentar camb
 
 Para obtener instrucciones sobre cómo eliminar este complemento, haga clic [aquí](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
-## Mi generación falla con un error sobre RequireJavaVersion después de cambiar de Java™ 8 a Java™ 11. ¿Qué puedo hacer? {#build-fails-requirejavaversion}
+## La versión arroja un error sobre RequireJavaVersion después de cambiar de Java™ 8 a Java™ 11. ¿Qué puedo hacer? {#build-fails-requirejavaversion}
 
 Para las generaciones de Cloud Manager, el `maven-enforcer-plugin` puede fallar con este error.
 
@@ -40,9 +40,9 @@ Para las generaciones de Cloud Manager, el `maven-enforcer-plugin` puede fallar 
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-Este error es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java™ para ejecutar el comando de Maven en comparación con el código de compilación. Simplemente omita `requireJavaVersion` de su configuraciones de `maven-enforcer-plugin`. 
+Este error es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando de Maven, en comparación con el código de compilación. Simplemente omita `requireJavaVersion` de su configuraciones de `maven-enforcer-plugin`. 
 
-## Error en la comprobación de calidad del código y la implementación está atascada. ¿Hay alguna manera de saltarse esta comprobación? {#deployment-stuck}
+## La comprobación de la calidad del código falló y la implementación se atascó. ¿Hay alguna manera de saltarse esta comprobación? {#deployment-stuck}
 
 Sí. Todos los errores de comprobación de la calidad del código, excepto la clasificación de seguridad, son métricas no críticas, por lo que se pueden evitar como parte de una canalización de implementación al expandir los elementos en la interfaz de usuario de los resultados.
 
@@ -54,7 +54,7 @@ Consulte los documentos [Probar la calidad del código](/help/implementing/cloud
 
 Sí. Para implementaciones de desarrolladores, los archivos de la rama de Git `pom.xml` deben contener `-SNAPSHOT` al final del valor `<version>`.
 
-Este valor permite que la implementación posterior se siga instalando cuando la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni se genera ninguna versión automática para la generación de Maven.
+Este valor permite seguir instalando la implantación posterior cuando la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni se genera ninguna versión automática para la generación de Maven.
 
 También puede establecer la versión a `-SNAPSHOT` para generaciones o implementaciones de fase y producción. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
 
@@ -62,7 +62,7 @@ Para obtener más información sobre la administración de versiones, consulte [
 
 ## ¿Cómo funcionan las versiones de paquetes para las implementaciones de fase y producción? {#snapshot-version}
 
-En las implementaciones de fase y producción, se genera una versión automática como [documentada aquí](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+En las implementaciones de fase y producción, se genera una versión automática como la [documentada aquí](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión de Maven adecuada como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
 
@@ -85,11 +85,11 @@ Caused by: org.apache.sling.api.resource.PersistenceException: Unable to commit 
 Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventAdminAsyncThread #7] org.apache.sling.distribution.journal.impl.publisher.DistributionPublisher [null] Error processing distribution package` `dstrpck-1583514457813-c81e7751-2da6-4d00-9814-434187f08d32. Retry attempts 344/infinite. Message: Error trying to extract package at path /etc/packages/com.myapp/myapp-base.ui.content-5.1.0-SNAPSHOT.
 ```
 
-El usuario `sling-distribution-importer` necesita permisos adicionales para las rutas de contenido definidas en el `ui.content package`. Esta regla suele significar que debe agregar permisos para ambos `/conf` y `/var`.
+El usuario `sling-distribution-importer` necesita permisos adicionales para las rutas de contenido definidas en el `ui.content package`. Esta regla suele significar que debe añadir permisos tanto para `/conf` como para `/var`.
 
 La solución es agregar un script de [configuración de RepositoryInitializer OSGi](/help/implementing/deploying/overview.md#repoint) a su paquete de implementación de aplicaciones para agregar ACL para el usuario `sling-distribution-importer`.
 
-En el ejemplo de error anterior, el paquete `myapp-base.ui.content-*.zip` incluye contenido en `/conf` y `/var/workflow`. Para que la implementación se realice correctamente, los permisos de `sling-distribution-importer` en esas rutas es necesario.
+En el ejemplo de error anterior, el paquete `myapp-base.ui.content-*.zip` incluye contenido en `/conf` y `/var/workflow`. Para que la implementación se realice correctamente, son necesarios los permisos del `sling-distribution-importer` en esas rutas.
 
 Este es un ejemplo de [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) configuración de OSGi que agrega permisos adicionales para el usuario `sling-distribution-importer`.  La configuración agrega permisos en `/var`. Esta configuración debe agregarse al paquete de aplicaciones en `/apps/myapp/config` (donde myapp es la carpeta donde se almacena el código de la aplicación).
 
@@ -105,7 +105,7 @@ Si [agregar una configuración OSGi de RepositoryInitializer](#cloud-manager-dep
    * Consulte [Dispatcher en la nube](/help/implementing/dispatcher/disp-overview.md#content-delivery) sobre cómo configurar el contenedor de Docker de Dispatcher para facilitar las pruebas locales.
 
 * Es posible que la implementación falle debido a algún otro error durante la replicación de los paquetes de contenido (distribución Sling) de las instancias de autor a publicación.
-   * Siga estos pasos para poder simular el problema en una configuración local.
+   * Siga estos pasos para simular el problema en una configuración local.
       1. Instale una instancia de autor y publicación localmente mediante los últimos jars del SDK de AEM.
       1. Inicie sesión en la instancia de autor.
       1. Vaya a **Herramientas**->**Implementación**->**Distribución**.
@@ -113,7 +113,7 @@ Si [agregar una configuración OSGi de RepositoryInitializer](#cloud-manager-dep
 
 ## No puedo establecer una variable mediante un comando aio. ¿Qué puedo hacer? {#set-variable}
 
-Puede recibir un `403` error como el siguiente al intentar enumerar o establecer variables de canalización a través de `aio` comandos.
+Puede recibir un error `403` como el siguiente al intentar enumerar o establecer variables de canalización mediante comandos `aio`.
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables 222
@@ -131,6 +131,6 @@ setting variables... !
 Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)
 ```
 
-En este caso, el usuario que ejecuta estos comandos debe añadirse a **Administrador de implementación** función en el Admin Console.
+En este caso, el usuario que ejecuta estos comandos necesita que lo agreguen a la función de **Administrador de implementación** en Admin Console.
 
 Consulte [Permisos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/) para obtener más información.
