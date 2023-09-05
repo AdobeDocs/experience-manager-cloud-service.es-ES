@@ -6,15 +6,15 @@ feature: Asset Compute Microservices,Workflow,Release Information,Asset Processi
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '850'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Información general sobre la ingesta y el procesamiento de recursos con microservicios de recursos {#asset-microservices-overview}
 
-Adobe Experience Manager as a [!DNL Cloud Service] proporciona un método nativo de la nube para utilizar aplicaciones y funcionalidades Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingesta y el procesamiento de recursos, con tecnología de microservicios de recursos. Los microservicios de recursos proporcionan un procesamiento escalable y resiliente de los recursos mediante servicios en la nube. Adobe administra los servicios de nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Las ventajas clave de los microservicios de recursos nativos de la nube son los siguientes:
+Adobe Experience Manager as a [!DNL Cloud Service] proporciona un método nativo en la nube para utilizar las aplicaciones y las funcionalidades de Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingesta y el procesamiento de recursos, con tecnología de microservicios de recursos. Los microservicios de recursos proporcionan un procesamiento escalable y resiliente de los recursos mediante servicios en la nube. Adobe administra los servicios de nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Las ventajas clave de los microservicios de recursos nativos de la nube son los siguientes:
 
 * Una arquitectura escalable que permite un procesamiento optimizado para operaciones que requieren muchos recursos.
 * Una indexación y extracciones de texto eficaces que no afectan al rendimiento de los entornos de Experience Manager.
