@@ -9,14 +9,14 @@ topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2310'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Construcciones de estilo para formularios adaptables {#styling-constructs-for-adaptive-forms}
+# Construcciones de estilo para formularios adaptables{#styling-constructs-for-adaptive-forms}
 
 ## Requisitos previos {#prerequisites}
 
@@ -702,7 +702,7 @@ Además, hay clases para aplicar estilo a los navegadores de pestañas (tanto iz
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
-   <td><p>Navegadores de pestañas (izquierda y superior) que no tienen navegadores anidados/secundarios/subnavegadores</p> </td>
+   <td><p>Exploradores de pestañas (izquierda y superior) que no tienen navegadores anidados/secundarios/subnavegadores</p> </td>
   </tr>
  </tbody>
 </table>
