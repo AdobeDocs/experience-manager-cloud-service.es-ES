@@ -3,9 +3,9 @@ title: Pruebas de IU
 description: La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones personalizadas
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2389'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Pruebas de IU"
->abstract="La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Java y Maven, Node y WebDriver.io, o cualquier otro marco de trabajo y tecnología creados en Selenium)."
+>abstract="La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de IU son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Java y Maven, Node y WebDriver.io, o cualquier otro marco de trabajo y tecnología creados en Selenium)."
 
 La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones.
 
@@ -23,7 +23,7 @@ La prueba de IU personalizada es una característica opcional que le permite cre
 
 AEM ofrece un conjunto integrado de [Puertas de calidad de Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantizar actualizaciones sin problemas en las aplicaciones personalizadas. En concreto, las puertas de pruebas de TI ya admiten la creación y automatización de pruebas personalizadas mediante las API de AEM.
 
-Las pruebas de interfaz de usuario se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). Además, se puede generar fácilmente un proyecto de pruebas de IU mediante el uso del [arquetipo del proyecto de AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
+Las pruebas de IU se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). Además, se puede generar fácilmente un proyecto de pruebas de IU mediante el uso del [arquetipo del proyecto de AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 
 El Adobe fomenta el uso de Cypress, ya que ofrece recarga en tiempo real y espera automática, lo que ayuda a ahorrar tiempo y mejora la productividad durante las pruebas. Cypress también proporciona una sintaxis sencilla e intuitiva, lo que facilita el aprendizaje y el uso, incluso para aquellos que son nuevos en las pruebas.
 
@@ -35,7 +35,7 @@ A diferencia de las pruebas funcionales personalizadas, que son pruebas HTTP esc
 >
 >Adobe recomienda utilizar Cypress para las pruebas de IU, siguiendo el código proporcionado en el [Repositorio de ejemplos de prueba de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 > 
->El Adobe también proporciona ejemplos de módulos de prueba de interfaz de usuario basados en JavaScript con WebdriverIO (consulte [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) y Java con WebDriver (consulte [AEM Repositorio de ejemplos de prueba](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
+>Adobe también proporciona ejemplos del módulo de prueba de la IU basados en JavaScript con WebdriverIO (consulte el [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) y Java con WebDriver (consulte el [Repositorio de ejemplos de prueba de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
 
 ## Introducción a las pruebas de IU {#get-started-ui-tests}
 
@@ -53,7 +53,7 @@ En esta sección se describen los pasos necesarios para configurar las pruebas d
 
    * Para Java y WebDriver, utilice el código de muestra del [Repositorio de ejemplos de pruebas de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
-   * Para ver otros lenguajes de programación, vea la sección [Generar pruebas de IU](#building-ui-tests) en este documento para configurar el proyecto de prueba.
+   * Para otros lenguajes de programación, consulte la sección [Generación de pruebas de IU](#building-ui-tests) en este documento para configurar el proyecto de prueba.
 
 1. Asegúrese de que las pruebas de IU estén activadas según la sección [Inclusión del cliente](#customer-opt-in) de este documento.
 
@@ -69,7 +69,7 @@ En esta sección se describen los pasos necesarios para agregar un proyecto de p
 
 >[!TIP]
 >
->El [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) Puede generar un proyecto de pruebas de interfaz de usuario, que cumpla con la siguiente descripción, si no tiene requisitos especiales para el lenguaje de programación.
+>El [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype) puede generar un proyecto de pruebas de IU que cumpla con la siguiente descripción, si no tiene requisitos especiales para el lenguaje de programación.
 
 ### Generar un contexto de generación de Docker {#generate-docker-build-context}
 
@@ -167,7 +167,7 @@ Para que Cloud Manager pueda generar y ejecutar sus pruebas de IU, debe incluirs
 * El archivo debe estar en el módulo secundario de Maven para pruebas de IU junto al archivo `pom.xml` del módulo secundario de pruebas de IU.
 * El archivo debe estar en la raíz del archivo de generación `tar.gz`.
 
-La generación de pruebas de interfaz de usuario y las ejecuciones se omiten si este archivo no está presente.
+La generación de pruebas de interfaz de usuario y las ejecuciones se omite si este archivo no está presente.
 
 Para incluir un archivo `testing.properties` en el artefacto de generación, agregue un enunciado `include` en el `assembly-ui-test-docker-context.xml` archivo.
 
@@ -207,7 +207,7 @@ En esta sección se describen las convenciones que debe seguir la imagen de Dock
 
 ### Variables de entorno {#environment-variables}
 
-Las siguientes variables de entorno se pasan a la imagen de Docker en tiempo de ejecución, según el marco de trabajo.
+Las siguientes variables de entorno se pasan a la imagen de Docker en tiempo de ejecución, en función del marco de trabajo.
 
 | Variable | Ejemplos | Descripción | Marco trabajo de prueba |
 |---|---|---|---|
@@ -238,7 +238,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 >
 >El resultado del paso de prueba de la IU solo se evalúa en función de los informes de prueba. Asegúrese de generar el informe correspondiente para la ejecución de la prueba.
 >
->Utilice aserciones en lugar de registrar un error en STDERR o devolver un código de salida distinto de cero; de lo contrario, la canalización de implementación puede continuar normalmente.
+>Utilice aserciones en lugar de registrar un error en STDERR o devolver un código de salida distinto de cero; para que la canalización de implementación pueda continuar normalmente.
 
 ### Requisitos previos {#prerequisites}
 
@@ -259,7 +259,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 
 >[!NOTE]
 >
-> Si necesita más recursos, cree un caso de servicio de atención al cliente y describa su caso de uso; el Adobe revisará su solicitud y proporcionará la asistencia adecuada.
+> Si necesita más recursos, cree un caso del Servicio de atención al cliente y describa su caso de uso; Adobe revisará su solicitud y le proporcionará la asistencia adecuada.
 
 ## Detalles específicos de Selenium
 
@@ -343,9 +343,9 @@ Antes de activar pruebas de IU en una canalización de Cloud Manager, se recomie
 
 >[!NOTE]
 >
->Los archivos de registro se almacenan en la carpeta `target/` de su repositorio.
+>Los archivos de registro se almacenan en la carpeta `target/` del repositorio.
 >
->Para obtener más información, consulte [AEM Repositorio de ejemplos de prueba](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+>Para obtener más información, consulte el [repositorio de Muestras de pruebas de AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
 ### Muestra de prueba de WebdriverIO de JavaScript {#javascript-sample}
 
@@ -369,7 +369,7 @@ Antes de activar pruebas de IU en una canalización de Cloud Manager, se recomie
 >* Los archivos de registro se almacenan en la carpeta `target/reports` de su repositorio
 >* Debe asegurarse de que tiene la última versión de Chrome, ya que la prueba descarga la última versión de ChromeDriver automáticamente para realizar pruebas.
 >
->Para obtener más información, consulte [AEM Repositorio de tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>Para obtener más información, consulte el [repositorio de Tipo de archivo del proyecto de AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Ejemplo de prueba de Java Selenium WebDriver {#java-sample}
 
@@ -390,6 +390,6 @@ Antes de activar pruebas de IU en una canalización de Cloud Manager, se recomie
 
 >[!NOTE]
 >
->Los archivos de registro se almacenan en la carpeta `target/reports` de su repositorio.
+>Los archivos de registro se almacenan en la carpeta `target/reports` del repositorio.
 >
->Para obtener más información, consulte [AEM Repositorio de ejemplos de prueba](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>Para obtener más información, consulte el [Repositorio de muestras de pruebas de AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
