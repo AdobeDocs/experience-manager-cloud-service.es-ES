@@ -3,9 +3,9 @@ title: Introducción al editor visual universal
 description: Descubra cómo el editor visual universal (también conocido como editor universal) habilita la edición de lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin encabezado y con encabezado. Descubra cómo puede ayudar a los autores de contenido a ofrecer contenidos excepcionales y mayor velocidad, y una experiencia de última generación a los desarrolladores.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '933'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ El editor universal puede instrumentarse para cualquier implementación, conteni
 
 ### Cualquier implementación {#any-implementation}
 
-Dado que las experiencias se pueden crear de muchas maneras diferentes, cualquier implementación puede utilizar el Editor universal para que los autores puedan realizar la edición en contexto.
+Dado que las experiencias se pueden crear de muchas formas, cualquier implementación puede utilizar el editor universal para que los autores puedan editar en contexto.
 
-Los usuarios suelen pensar que una implementación sin encabezado limita a los autores a editar todo el contenido en una interfaz de usuario basada en formularios, pero este no es el caso del editor universal
+Los usuarios suelen pensar que una implementación sin encabezado limita a los autores a editar todo el contenido en una IU basada en formularios, pero este no es el caso con el editor universal
 
-Los requisitos para que una implementación utilice el Editor universal son sencillos y admiten lo siguiente:
+Los requisitos de una implementación para utilizar el editor universal son muy sencillos y compatibles con lo siguiente:
 
 * **Cualquier arquitectura**: procesamiento del lado del servidor, procesamiento del lado del borde, procesamiento del lado del cliente, etc.
 * **Cualquier marco**: Vanilla AEM o cualquier estructura de terceros como React, Next.js, Angular, etc.
@@ -58,7 +58,7 @@ Al desvincular la experiencia de edición de contenido de cualquier sistema de e
 
 ![El valor del editor universal](assets/value.png)
 
-* **Ofrecer experiencias excepcionales** : Para permitir que los profesionales creen una experiencia atractiva para los visitantes, el editor universal permite a los profesionales crear y editar el contenido en el contexto de la vista previa. Esto les permite crear contenido que se ajuste al diseño de la experiencia y que constituya un recorrido significativo para los visitantes.
+* **Ofrecer experiencias excepcionales**: para que los profesionales creen una experiencia atractiva para los visitantes, el editor universal les permite generar y editar el contenido en el contexto de la vista previa. Esto les permite crear contenido que se ajuste al diseño de la experiencia y que constituya un recorrido significativo para los visitantes.
 * **Aumentar la velocidad del contenido**: para simplificar el flujo de trabajo de administración de los profesionales, el editor universal permite editar contenido en la vista previa para guiarlos, mostrando solo las opciones que son relevantes para ese contexto. Con ello, el flujo de trabajo es independiente de las fuentes de contenido.
 * **Experiencia de desarrollo de última generación**: para adaptarse al heterogéneo panorama de aplicaciones del mundo real, el editor universal está totalmente separado y es independiente de la tecnología, lo que permite a los desarrolladores utilizar su pila tecnológica preferida para implementar la experiencia.
 
@@ -82,7 +82,7 @@ Un profesional del marketing quiere crear contenido que esté adaptado al diseñ
 
 Es importante señalar que el editor universal está en progreso y algunas de las capacidades que se describen en este documento son una visión del editor final, no necesariamente representativas de sus capacidades actuales.
 
-Hable con su contacto de Adobe para obtener detalles sobre las próximas funciones planificadas para el editor universal.
+Hable con su contacto de Adobe para obtener más información sobre las próximas funciones planificadas para el editor universal.
 
 ## Recursos adicionales {#additional-resources}
 
