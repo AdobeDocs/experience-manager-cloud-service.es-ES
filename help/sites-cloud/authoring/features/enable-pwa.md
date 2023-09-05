@@ -3,9 +3,9 @@ title: Activación de las funciones progresivas de la aplicación web
 description: AEM Sites permite al autor del contenido habilitar funcionalidades de aplicación web progresiva en cualquier sitio a través de una configuración sencilla, en lugar de programarlas.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1997'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ A través de una configuración sencilla, un autor de contenido ahora puede habi
 >* Comprensión de las estrategias de almacenamiento en caché
 >* Asistencia de su equipo de desarrollo
 >
->Antes de utilizar esta función, se recomienda hablar con su equipo de desarrollo para definir la mejor manera de utilizarla para su proyecto.
+>Antes de utilizar esta función, se recomienda hablar con su equipo de desarrollo para definir la mejor manera de aprovecharla para su proyecto.
 
 ## Introducción {#introduction}
 
@@ -50,7 +50,7 @@ Estos son pasos técnicos que el autor deberá coordinar con el equipo de desarr
 
 ### Usar componentes principales {#adjust-components}
 
-La versión 2.15.0 y posteriores de los componentes principales admiten completamente las funciones de PWA de AEM Sites. Dado que AEMaaCS siempre incluye la versión más reciente de los componentes principales, puede utilizar las funciones de PWA listas para usarse. El proyecto AEMaaCS cumple automáticamente este requisito.
+La versión 2.15.0 y posteriores de los componentes principales admiten completamente las funciones de PWA de AEM Sites. Dado que AEMaaCS siempre incluye la versión más reciente de los componentes principales, puede aprovechar las funciones de PWA listas para usarse. El proyecto AEMaaCS cumple automáticamente este requisito.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Ajuste de Dispatcher {#adjust-dispatcher}
 
-La función de PWA genera y utiliza archivos `/content/<sitename>/manifest.webmanifest`. De forma predeterminada, [el despachante](/help/implementing/dispatcher/overview.md) no expone dichos archivos. Para exponerlos, el desarrollador debe añadir la siguiente configuración al proyecto del sitio.
+La función de PWA genera y utiliza archivos `/content/<sitename>/manifest.webmanifest`. De forma predeterminada, [Dispatcher](/help/implementing/dispatcher/overview.md) no expone esos archivos. Para exponerlos, el desarrollador debe añadir la siguiente configuración al proyecto del sitio.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -167,7 +167,7 @@ Esta configuración permite que el sitio se comporte como una aplicación nativa
 * **Color del tema**: define el [color de la aplicación](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) que afecta a la forma en que el sistema operativo del usuario local muestra la barra de herramientas de la IU nativa y los controles de navegación. Según el explorador, puede afectar a otros elementos de presentación de la aplicación.
    * Utilice la ventana emergente con el círculo cromático para seleccionar un color.
    * El color también puede definirse con un valor hexadecimal o RGB.
-* **Color de fondo** - Esto define el [color de fondo de la aplicación](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), que se muestra a medida que se carga la aplicación.
+* **Color de fondo**: define el [color de fondo de la aplicación,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) que se muestra a medida que se carga la aplicación.
    * Utilice la ventana emergente con el círculo cromático para seleccionar un color.
    * El color también puede definirse con un valor hexadecimal o RGB.
    * Determinados exploradores [crean una pantalla de inicio automáticamente](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) a partir del nombre de la aplicación, el color de fondo y el icono.
@@ -181,12 +181,12 @@ Esta configuración hace que partes de este sitio estén disponibles sin conexi�
 
 * **Estrategia de almacenamiento en caché y frecuencia de actualización del contenido**: esta opción define el modelo de almacenamiento en caché para la PWA.
    * **Moderadamente**: [esta configuración](https://web.dev/stale-while-revalidate/) es el caso de la mayoría de los sitios y el valor predeterminado.
-      * Con esta configuración, el contenido que el usuario ve por primera vez se carga desde la caché y, mientras lo consume, el resto del contenido de la caché se vuelve a validar.
+      * Con esta configuración, el contenido que se ve por primera vez se carga desde la caché y mientras se consume, el resto del contenido de la caché se vuelve a validar.
    * **Frecuentemente**: este es el caso de los sitios que necesitan actualizaciones para ser muy rápidos, como las casas de subastas.
       * Con esta configuración, la aplicación buscará primero el contenido más reciente a través de la red y, si no está disponible, volverá a la caché local.
    * **Raramente**: este es el caso de los sitios que son casi estáticos, como las páginas de referencia.
       * Con esta configuración, la aplicación buscará primero el contenido en la caché y, si no está disponible, volverá a la red para recuperarlo.
-* **Almacenamiento en caché previo de archivos** AEM : estos archivos alojados en los que se realiza la instalación se guardan en la caché del explorador local cuando el trabajador de servicio se instala y antes de que se utilice. Esto garantiza que la aplicación web funcione por completo cuando está sin conexión.
+* **Almacenamiento previo de los archivos en la caché**: estos archivos alojados en AEM se guardan en la caché del explorador local cuando el trabajador de servicio se instale y antes de que se utilice. Esto garantiza que la aplicación web funcione por completo cuando está sin conexión.
 * **Inclusiones de rutas**: las solicitudes de red para las rutas definidas se interceptan y el contenido almacenado en caché se devuelve de acuerdo con la **Estrategia de almacenamiento en caché y frecuencia de actualización del contenido** configuradas.
 * **Exclusiones de caché**: estos archivos nunca se almacenarán en caché, independientemente de la configuración de **Almacenamiento en caché previo de archivos** e **Inclusiones de rutas**.
 
