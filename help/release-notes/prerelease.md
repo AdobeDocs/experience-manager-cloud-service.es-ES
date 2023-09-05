@@ -3,9 +3,9 @@ title: Canal de la versión preliminar de Adobe Experience Manager as a Cloud Se
 description: Aprenda a utilizar el canal de la versión preliminar para obtener una vista previa de las próximas funciones de AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1304'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Aprenda a utilizar el canal de la versión preliminar para obtener una vista pre
 
 Adobe Experience Manager as a Cloud Service ofrece nuevas funciones con regularidad, según la [Hoja de ruta de versiones de Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es#aem-as-cloud-service)
 
-Para familiarizarse con las funciones programadas para entrar en funcionamiento en la siguiente versión de funciones, puede suscribirse al canal de prelanzamiento, al que se puede acceder configurando los entornos de desarrollo o cualquier entorno de zona protegida. AEM Puede obtener una vista previa de los cambios a los que puede acceder mediante la interfaz de usuario de y crear código para cualquier API de versión preliminar nueva.
+Para familiarizarse con las funciones programadas para el lanzamiento de la siguiente futura versión, puede suscribirse al canal de la versión preliminar, al que puede acceder configurando sus entornos de desarrollo o cualquier zona protegida. Puede obtener una vista previa de los cambios a los que puede acceder mediante la interfaz de usuario de AEM y crear código para cualquier API de versión preliminar nueva.
 
 La lista de funciones de la versión preliminar de una determinada versión se publica en las [notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
@@ -31,13 +31,13 @@ AEM as a Cloud Service tiene dos tipos de versiones.
 
 Este modelo garantiza lanzamientos continuos sin interrupción del servicio.
 
-El canal de prelanzamiento le permite previsualizar las funciones programadas para la próxima versión de las funciones, de modo que pueda evaluar las próximas funciones y planificar su posible implementación para sus propios proyectos. Le permite planificar con antelación la próxima versión de la funcionalidad.
+El canal de la versión preliminar le permite previsualizar las funciones programadas para la próxima versión a fin de evaluar la funcionalidad futura y planificar su posible implementación en sus proyectos. Le permite planificar con antelación la próxima versión de las funciones.
 
-Por ejemplo, si es mayo y está suscrito al canal de prelanzamiento, puede evaluar las funciones en la próxima versión de junio.
+Por ejemplo, si es mayo y está suscrito al canal de la versión preliminar, puede evaluar las funciones de la próxima versión de junio.
 
 ![Gráfico de cadencia de la versión preliminar](assets/prerelease-cadence.png)
 
-El prelanzamiento le ofrece un periodo móvil de un mes en las próximas funciones de AEMaaCS, lo que le da tiempo para evaluar el impacto de cualquier función nueva en sus proyectos y personalizaciones y planificar las implementaciones de dichas funciones, las pruebas y la formación del usuario.
+La versión preliminar le proporciona una ventana móvil de un mes sobre las próximas funciones de AEMaaCS, lo que le da tiempo de evaluar el impacto de cualquier nueva función en sus proyectos y personalizaciones, así como de planificar la implementación de dichas funciones, pruebas y formación del usuario.
 
 Para aprovechar al máximo el canal de la versión preliminar se requieren cuatro pasos.
 
@@ -157,7 +157,7 @@ Los JavaDocs se publican en Maven Central.
      </dependency>
    ```
 
-   Para cambiar al SDK de prelanzamiento, simplemente cambie la dependencia de `com.adobe.aem:aem-sdk-api` hasta `com.adobe.aem:aem-prerelease-sdk-api` como se indica a continuación:
+   Para cambiar al SDK de prelanzamiento, simplemente cambie la dependencia de `com.adobe.aem:aem-sdk-api` a `com.adobe.aem:aem-prerelease-sdk-api` como se indica a continuación:
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ El [complemento Maven de AEM CS SDK Analyzer versión 1.0 y superior](https://ex
 
 ## Formación de los usuarios {#train-users}
 
-Una vez que haya probado las nuevas funciones en el canal de prelanzamiento y haya decidido utilizarlas en sus proyectos, debe formar a sus usuarios.
+Una vez que haya probado las nuevas funciones en el canal de la versión preliminar y haya decidido utilizarlas en sus proyectos, debe formar a los usuarios.
 
 Adobe Experience League ofrece muchos recursos para aprender AEMaaCS.
 
