@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4308'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Puede crear una Live Copy de cualquier página:
 
 La única diferencia es que la disponibilidad del comando **Despliegue** en las páginas de origen/modelo depende de si una configuración de modelo hace referencia al origen:
 
-* Si crea la Live Copy desde una página de origen que **es** al que se hace referencia en una configuración de modelo, el comando Despliegue está disponible en las páginas de origen/modelo.
+* Si crea la Live Copy a partir de una página de origen a la que **se** hace referencia en una configuración de modelo, el comando Despliegue está disponible en las páginas de origen/modelo.
 * Si crea una Live Copy a partir de una página de origen que **no es** en una configuración de modelo, el comando Despliegue no estará disponible en las páginas de origen/modelo.
 
 Para crear una Live Copy:
@@ -135,7 +135,7 @@ Para crear una Live Copy:
    * No seleccionado: crear una Live Copy que incluya todos los descendientes de la página seleccionada (Live Copy profundo)
 
 1. (Opcional) Para especificar una o más configuraciones de despliegue que se utilizarán para Live Copy, utilice la lista desplegable **Configuración de lanzamiento** para seleccionarlas. Las configuraciones seleccionadas se muestran debajo del selector desplegable.
-1. Haga clic o pulse **Crear**. Se muestra un mensaje de confirmación, desde el que puede seleccionar una de las siguientes opciones **Abrir** o **Listo**.
+1. Haga clic o pulse **Crear**. Se muestra un mensaje de confirmación, desde el que puede seleccionar una de las opciones siguientes: **Apertura** o **Listo**.
 
    >[!NOTE]
    >
@@ -164,7 +164,7 @@ Cuando cree el sitio, proporcione valores para las siguientes propiedades:
 
 Para crear una Live Copy de un sitio a partir de una configuración de modelo:
 
-1. En el **Sites** consola, seleccione **Crear**, entonces **Sitio** en el selector desplegable.
+1. En la consola **Sites**, seleccione **Crear**, a continuación **Sitio** en el selector desplegable.
 1. Seleccione la configuración de modelo que se utilizará como origen de Live Copy y continúe con **Siguiente**:
 
    ![Crear sitio a partir de modelo](../assets/create-site-from-blueprint.png)
@@ -245,7 +245,7 @@ Despliegue una página de modelo para insertar los cambios de contenido en Live 
 
    ![Definir el tiempo de despliegue](../assets/rollout-now-later.png)
 
-Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en [***Estado de trabajos asincrónicos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en la página [***Estado de trabajos asincrónicos**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Despliegue un modelo desde el carril de referencia {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -256,7 +256,7 @@ Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en
 
    ![Desplegar modelo a partir del carril de referencias](../assets/rollout-blueprint-from-references.png)
 
-1. Se le pedirá que confirme los detalles del despliegue:
+1. Se le pide que confirme los detalles del despliegue:
 
    * **Ámbito de despliegue**:
 
@@ -270,7 +270,7 @@ Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en
 
 1. Después de confirmar estos detalles, seleccione **Despliegue** para llevar a cabo la acción.
 
-Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en [**Estado de trabajos asincrónicos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en la página [**Estado de trabajos asincrónicos**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Despliegue de un modelo desde la información general de Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ La acción [**Despliegue** también está disponible en la Información general 
 
    ![Definición de programación de despliegue](../assets/rollout-now-later.png)
 
-Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en [**Estado de trabajos asincrónicos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en la página [**Estado de trabajos asincrónicos**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### Creación de una Live Copy {#synchronizing-a-live-copy}
 
@@ -309,7 +309,7 @@ Sincronice una Live Copy para extraer cambios del origen a la Live Copy.
 
    ![Botón Sincronizar](../assets/synchronize.png)
 
-   Se solicita confirmación, use **Sincronización** para continuar.
+   Se solicitará una confirmación. Use **Sincronizar** para continuar.
 
 #### Sincronización de una Live Copy desde la Información general de Live Copy {#synchronize-a-live-copy-from-the-live-copy-overview}
 
@@ -335,7 +335,7 @@ Para cambiar el contenido de Live Copy, puede hacer lo siguiente:
 >
 >Si crea manualmente una nueva página en Live Copy, esta será local para Live Copy, lo que significa que no tiene una página de origen correspondiente a la que esté adjunta.
 >
->La práctica recomendada para crear una página local que forme parte de la relación es crear la página local en el origen y realizar un despliegue profundo. Esto creará la página localmente como Live Copies.
+>La práctica recomendada para crear una página local que forme parte de la relación es crear la página local en el origen y llevar a cabo un despliegue profundo. Esto creará la página localmente como Live Copies.
 
 >[!NOTE]
 >
@@ -423,13 +423,13 @@ Al seleccionarlo, se muestra el cuadro de diálogo. Puede seleccionar una sincro
 
 La [acción Reanudar también está disponible en la Información general de Live Copy](live-copy-overview.md#using-the-live-copy-overview), cuando se selecciona una página Live Copy.
 
-1. Abra el [Información general de Live Copy](live-copy-overview.md#using-the-live-copy-overview) y seleccione una página de Live Copy suspendida. La página se muestra como **HERENCIA CANCELADA**.
+1. Abra la [Información general de Live Copy](live-copy-overview.md#using-the-live-copy-overview) y seleccione una página de Live Copy suspendida. La página se muestra como **HERENCIA CANCELADA**.
 1. En la barra de herramientas, seleccione **Reanudar**.
 1. Indique si desea sincronizar la página después de revertir la herencia y, a continuación, confirme la acción **Reanudar** en el diálogo **Reanudar Live Copy**.
 
 ### Cambio de la profundidad de la herencia (superficial/profunda) {#changing-inheritance-depth-shallow-deep}
 
-En una Live Copy existente, puede cambiar la profundidad de una página, es decir, si se incluyen páginas secundarias.
+En una Live Copy existente, puede cambiar la profundidad de una página, es decir, ya sea que se incluyan páginas secundarias.
 
 * Cambio a una Live Copy superficial:
 
@@ -498,7 +498,7 @@ Para habilitar la herencia para un componente, pulse o haga clic en el botón **
 Si una Live Copy contiene componentes que forman parte de un sistema de párrafos, la herencia de ese sistema de párrafos cumple las siguientes reglas:
 
 * Se puede modificar el orden de los componentes de un sistema de párrafos heredado, incluso con la herencia establecida.
-* En el despliegue, el orden de los componentes se restaura a partir del modelo. Si se agregaron nuevos componentes a la Live Copy antes del despliegue, estos se reordenan junto con los componentes sobre los cuales se agregaron.
+* En el despliegue, el orden de los componentes se restaura a partir del modelo. Si se añadieran nuevos componentes a la Live Copy antes del despliegue, estos se reordenan junto con los componentes sobre los cuales se agregaron.
 * Si se cancela la herencia del sistema de párrafos, el orden de los componentes no se restaurará durante el despliegue y permanecerá tal cual en la Live Copy.
 
 >[!NOTE]
@@ -575,7 +575,7 @@ La acción [**Restablecer** también está disponible en la Información general
 
 Para realizar un seguimiento de los cambios realizados, puede ver la página de modelo en **Referencias** y compárela con su página Live Copy:
 
-1. En la consola **Sitios**, [vaya a un modelo o a una página de Live Copy y selecciónela](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. En la consola **Sites**, [vaya a un modelo o a una página de Live Copy y selecciónela](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** y, en función del contexto, seleccione:
 
    * **Modelo**
@@ -641,7 +641,7 @@ Para separar una Live Copy:
 
    ![Botón Separar](../assets/detach-button.png)
 
-1. Se muestra un cuadro de diálogo de confirmación, seleccione **Desasociar** para completar la acción.
+1. Se muestra un cuadro de diálogo de confirmación: seleccione **Desasociar** para completar la acción.
 
 ### Desasociar una página de Live Copy de la información general de Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 
