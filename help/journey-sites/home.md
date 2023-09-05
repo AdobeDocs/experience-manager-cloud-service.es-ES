@@ -3,9 +3,9 @@ title: Recorridos de AEM Sites
 description: Comience aquí para obtener una descripción general de los recorridos guiados disponibles para comprender las potentes funciones de los sitios de AEM.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Comience aquí para obtener una descripción general de los recorridos guiados d
 
 ## Introducción {#introduction}
 
-[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html) es un conjunto unificado de potentes herramientas que le permiten crear, administrar y publicar fácilmente experiencias digitales en todos los canales. Desde la configuración de la estructura de contenido inicial, hasta la creación sencilla de contenido reutilizable, la implementación en varios mercados e idiomas y la creación de aplicaciones personalizadas que ofrezcan experiencias personalizadas, AEM Sites es una solución completa y central para crear experiencias fantásticas para sus audiencias independientemente de dónde se encuentren.
+[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html) es un conjunto unificado de potentes herramientas que le permiten crear, administrar y publicar fácilmente experiencias digitales en todos los canales. Desde la configuración de la estructura de contenido inicial, hasta la creación sencilla de contenido reutilizable, la implementación en varios mercados e idiomas, así como la creación de aplicaciones personalizadas que ofrezcan experiencias personalizadas, AEM Sites es una solución completa y central para crear experiencias fantásticas para sus públicos independientemente de dónde se encuentren.
 
 ## Recorridos de documentación de AEM {#documentation-journeys}
 
@@ -43,4 +43,4 @@ Los siguientes Recorridos de documentación están disponibles para los temas de
 | [Recorrido del complemento de demostraciones de referencia](/help/journey-sites/demos-add-on/overview.md) | Comience aquí para obtener un recorrido guiado sobre cómo añadir fácilmente el complemento de demostraciones de referencia de AEM a un entorno de zona protegida con una configuración de AEM mínima y pueda probar las potentes funciones de AEM con ejemplos enriquecidos basados en las prácticas recomendadas. | Administrador del sistema |
 | [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md) | Obtenga información sobre las tecnologías de AEM Sites, cómo se pueden utilizar en el proyecto y cómo crear y actualizar proyectos de traducción en AEM de A a Z. | Especialistas en traducción |
 
-Manténgase atento a [recorridos futuros que cubran funciones adicionales](/help/journey-documentation/documentation-journeys.md#journeys).
+Manténgase atento a los [recorridos futuros que cubran funciones adicionales](/help/journey-documentation/documentation-journeys.md#journeys).
