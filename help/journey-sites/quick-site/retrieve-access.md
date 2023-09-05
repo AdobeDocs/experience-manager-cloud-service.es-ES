@@ -3,9 +3,9 @@ title: Recuperación de información de acceso al repositorio de Git
 description: Descubra cómo el desarrollador front-end utiliza Cloud Manager para acceder a la información del repositorio de Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Descubra cómo el desarrollador front-end utiliza Cloud Manager para acceder a l
 
 Si usted es desarrollador front-end y responsable solo de la personalización del tema del sitio, no necesita saber cómo se configuró AEM y puede ir a la sección [Objetivo](#objective) de este documento.
 
-AEM AEM Si también desempeña la función de administrador de Cloud Manager o de desarrollador de front-end, ha aprendido en el documento anterior del recorrido de creación rápida de sitios de la comunidad de la comunidad de usuarios de la red (), que describe cómo usar Cloud Manager para crear sitios web. [Conceder acceso al desarrollador front-end,](grant-access.md) Obtenga información sobre cómo incorporar al desarrollador front-end para que tenga acceso al repositorio de git y ahora debería saber:
+Si también desempeña la función de administrador de Cloud Manager o AEM, además de desarrollador front-end, ha aprendido en el documento anterior del Recorrido de creación rápida de sitios de AEM, [Concesión de acceso al desarrollador front-end,](grant-access.md) cómo incorporar al desarrollador front-end para que tenga acceso al repositorio de Git. Ahora debería saber lo siguiente:
 
 * Cómo añadir un desarrollador front-end como usuario.
 * Cómo conceder las funciones necesarias al desarrollador front-end.
@@ -50,9 +50,9 @@ La herramienta de Creación rápida de sitios permite a los desarrolladores fron
    * Un correo electrónico de bienvenida de Cloud Manager que le informa de su acceso
    * El nombre del programa o la URL a él dentro de Cloud Manager
 
-AEM Si le falta alguno de estos elementos, póngase en contacto con el administrador de la aplicación o con el administrador de Cloud Manager.
+Si le falta alguno de estos elementos, póngase en contacto con el administrador de AEM o de Cloud Manager.
 
-Se da por hecho que el desarrollador front-end tiene una amplia experiencia con flujos de trabajo de desarrollo front-end y herramientas comunes instaladas que incluyen:
+Se da por hecho que el desarrollador front-end tiene una amplia experiencia con flujos de trabajo de desarrollo front-end, así como herramientas comunes instaladas que incluyen:
 
 * git
 * npm
