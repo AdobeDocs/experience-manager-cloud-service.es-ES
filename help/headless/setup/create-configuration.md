@@ -3,9 +3,9 @@ title: 'Creación de una configuración: configuración sin encabezado'
 description: Cree una configuración como primer paso para empezar a utilizar sin encabezado en AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -28,8 +28,8 @@ Un administrador solo tendría que crear una configuración una vez, o poco a po
 1. Inicie sesión en AEM as a Cloud Service y, en el menú principal, seleccione **Herramientas > General > Explorador de configuración**.
 1. Proporcione un **Título** y **Nombre** para su configuración.
    * El **Título** debe ser descriptivo.
-   * El **Nombre** se convierte en el nombre de nodo del repositorio.
-      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de](/help/implementing/developing/introduction/naming-conventions.md).
+   * El **nombre** se convierte en el nombre de nodo del repositorio.
+      * Se genera automáticamente en función del título y se ajusta según las [convenciones de nomenclatura de AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Se puede modificar si es necesario.
 1. Compruebe las siguientes opciones:
    * **Modelos de fragmentos de contenido**
