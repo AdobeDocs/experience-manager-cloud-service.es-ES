@@ -3,9 +3,9 @@ title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1161'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Descubra cómo funcionan las pruebas de calidad del código de las canalizacione
 
 Las pruebas de calidad del código evalúan el código de la aplicación en función de un conjunto de reglas de calidad. Es el propósito principal de una canalización solo de calidad de código y se ejecuta inmediatamente después del paso de compilación en todas las canalizaciones de producción y no de producción.
 
-Consulte [Configuración de la canalización de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener más información sobre los distintos tipos de canalizaciones.
+Consulte la [Configuración de la canalización de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener más información sobre los distintos tipos de canalizaciones.
 
 ## Reglas de calidad de código {#understanding-code-quality-rules}
 
@@ -60,7 +60,7 @@ En la tabla siguiente se resumen las clasificaciones y los umbrales de fallo de 
 | Cobertura | Definido por una combinación de cobertura de línea de prueba unitaria y cobertura de condición mediante la fórmula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = Condiciones que se han evaluado como `true` al menos una vez al ejecutar las pruebas unitarias</li><li>`CF` = Condiciones que se han evaluado como `false` al menos una vez al ejecutar las pruebas unitarias</li><li>`LC` = Líneas cubiertas = líneas_por_cubrir - líneas_descubiertas</li><li>`B` = número total de condiciones</li><li>`EL` = número total de líneas ejecutables (líneas_por_cubrir)</li></ul> | Importante | &lt; 50% |
 | Pruebas unitarias omitidas | Número de pruebas unitarias omitidas | Información | > 1 |
 | Problemas abiertos | Tipos de problemas generales: Vulnerabilidades, errores y huecos de código | Información | > 0 |
-| Líneas duplicadas | Se define como el número de líneas involucradas en bloques duplicados. Un bloque de código se considera duplicado en las siguientes condiciones.<br>Proyectos que no son de Java:<ul><li>Debe haber al menos 100 tokens sucesivos y duplicados.</li><li>Estos tokens deben propagarse por lo menos: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li></ul>Proyectos Java:<ul></li><li> Debe haber al menos 10 instrucciones sucesivas y duplicadas, independientemente del número de tokens y líneas.</li></ul>Las diferencias en la sangría y en los literales de cadena se omiten al detectar duplicados. | Información | > 1 % |
+| Líneas duplicadas | Se define como el número de líneas involucradas en bloques duplicados. Un bloque de código se considera duplicado en las siguientes condiciones.<br>Proyectos que no son de Java:<ul><li>Debe haber al menos 100 tokens sucesivos y duplicados.</li><li>Estos tokens deben propagarse por lo menos: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li></ul>Proyectos Java:<ul></li><li> Debe haber al menos 10 instrucciones sucesivas y duplicadas, independientemente del número de tokens y líneas.</li></ul>Las diferencias en la sangría, así como en los literales de cadena, se omiten al detectar duplicados. | Información | > 1 % |
 | Compatibilidad de Cloud Service | Número de problemas de compatibilidad de servicios en la nube identificados | Información | > 0 |
 
 >[!NOTE]
@@ -103,10 +103,10 @@ A continuación, la solución correcta es quitar la contraseña codificada.
 
 >[!NOTE]
 >
->Aunque es una práctica recomendada hacer lo siguiente `@SuppressWarnings` anotación lo más específica posible, es decir, anotar solo la instrucción o el bloque específico que causa el problema; es posible realizar anotaciones a nivel de clase.
+>Aunque es una práctica recomendada hacer que la anotación `@SuppressWarnings` sea lo más específica posible, es decir, anotar solo la declaración o el bloque específico que causa el problema; es posible realizar anotaciones a nivel de clase.
 
 >[!NOTE]
->Aunque no hay ningún paso explícito de prueba de seguridad, hay reglas de calidad de código relacionadas con la seguridad evaluadas durante el paso de calidad del código. Consulte [AEM Información general de seguridad para as a Cloud Service](/help/security/cloud-service-security-overview.md) para obtener más información sobre la seguridad en Cloud Service.
+>Aunque no hay ningún paso explícito de prueba de seguridad, hay reglas de calidad de código relacionadas con la seguridad evaluadas durante el paso de calidad del código. Consulte el documento [Información general de seguridad para AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) para obtener más información sobre la seguridad en Cloud Service.
 
 ## Optimización del análisis de paquetes de contenido {#content-package-scanning-optimization}
 
@@ -116,11 +116,11 @@ Como parte del proceso de análisis de calidad, Cloud Manager realiza un anális
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
-Si los únicos elementos dentro de `myco-all-1.0.0-SNAPSHOT.zip` son los dos paquetes de contenido omitidos, luego los dos paquetes incrustados se analizan en lugar del paquete de contenido &quot;todo&quot;.
+Si los únicos elementos dentro de `myco-all-1.0.0-SNAPSHOT.zip` son los dos paquetes de contenido omitidos, entonces los dos paquetes incrustados se analizarán en lugar del paquete de contenido “todo”.
 
 Para los proyectos que producen decenas de paquetes incrustados, se ha demostrado que esta optimización ahorra más de 10 minutos por ejecución de canalización.
 
-Se puede producir un caso especial cuando el paquete de contenido “todo” contiene una combinación de paquetes de contenido omitidos y paquetes OSGi. Por ejemplo, si `myco-all-1.0.0-SNAPSHOT.zip` contenía los dos paquetes incrustados mencionados anteriormente y uno o más paquetes OSGi, luego se construye un nuevo paquete de contenido mínimo con solo los paquetes OSGi. Este paquete siempre tiene el nombre `cloudmanager-synthetic-jar-package` y los paquetes contenidos se colocan en `/apps/cloudmanager-synthetic-installer/install`.
+Se puede producir un caso especial cuando el paquete de contenido “todo” contiene una combinación de paquetes de contenido omitidos y paquetes OSGi. Por ejemplo, si `myco-all-1.0.0-SNAPSHOT.zip` contenía los dos paquetes incrustados mencionados anteriormente, así como uno o más paquetes OSGi, entonces se construye un nuevo paquete de contenido mínimo con solo los paquetes OSGi. Este paquete siempre tiene el nombre `cloudmanager-synthetic-jar-package` y los paquetes contenidos se colocan en `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >
