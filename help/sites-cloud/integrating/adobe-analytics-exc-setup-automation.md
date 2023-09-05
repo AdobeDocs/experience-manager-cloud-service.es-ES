@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '754'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ El entorno debe estar listo para la automatización de la configuración de Expe
 1. Pulse el botón **Integrar Analytics**.
 1. En el cuadro de diálogo resultante, proporcione un nombre para el **ID del grupo de informes**.
 
-   Esta cadena se utiliza para crear una nueva [ID del grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=es) en Adobe Analytics AEM como almacén de datos para los datos de analytics del sitio de seleccionado. La cadena proporcionada se anexa con identificadores de entorno y de nivel para garantizar su exclusividad.
+   Esta cadena se utilizará para crear un nuevo [ID del grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=es) en Adobe Analytics como almacén de datos para los datos del análisis del sitio de AEM seleccionado. La cadena proporcionada se añade con identificadores de entorno y de nivel para garantizar la exclusividad.
 
 1. Actualice la página y el panel y pulse **Comprobar estado de integración** para comprobar el estado de la automatización.
 
