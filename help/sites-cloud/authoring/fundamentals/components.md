@@ -3,9 +3,9 @@ title: Componentes
 description: Los componentes son la base de la creación de páginas de contenido en AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '347'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ AEM incorpora una serie de componentes integrados que proporcionan una amplia fu
 
 >[!NOTE]
 >
->AEM En esta sección solo se describen los componentes que están disponibles de forma predeterminada en una instalación estándar de la instalación de la aplicación de la versión de la aplicación de la versión de la aplicación de.
+>En esta sección solo se describen los componentes que están disponibles de forma predeterminada en una instalación de AEM estándar.
 >
 >Según la instancia, puede tener componentes personalizados desarrollados explícitamente para sus necesidades. Pueden incluso tener el mismo nombre que algunos de los componentes mencionados aquí.
 
 ## Uso general   {#general-usage}
 
-Los componentes están disponibles en la **Componentes** del panel lateral del editor de páginas cuando [edición de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Los componentes están disponibles en la pestaña **Componentes** del panel lateral del editor de página al [editar una página](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la página. A continuación, puede editarlo mediante:
 
@@ -31,7 +31,7 @@ Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la p�
 * [Editar contenido](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [Editar contenido: modo pantalla completa](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-Para obtener más información sobre cómo añadir componentes a una página, consulte [Edición del contenido de página](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Para obtener más información sobre cómo añadir componentes a una página, consulte [Edición del contenido de la página](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## Introducción a todos los componentes {#overview-of-all-components}
 
@@ -43,7 +43,7 @@ Los [componentes principales](https://experienceleague.adobe.com/docs/experience
 
 Se crean utilizando las prácticas recomendadas de AEM y constituyen la base de la experiencia de creación de AEM. Los desarrolladores pueden ampliar fácilmente los componentes principales para satisfacer necesidades específicas del proyecto.
 
-Junto con los componentes principales de WCM, también puede utilizar [Componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Estos componentes principales proporcionan métodos estándar y más sencillos para [crear o agregar formularios a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+Junto con los componentes principales de WCM, también puede utilizar [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#features). Estos componentes principales proporcionan métodos estándar y más sencillos para [crear o añadir formularios a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Configuración de plantillas {#configuring-templates}
 
