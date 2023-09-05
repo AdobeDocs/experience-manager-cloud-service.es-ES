@@ -3,9 +3,9 @@ title: Introducción al editor universal en AEM
 description: Obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '804'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Este documento le guiará a través de estos pasos.
 
 ## Solicite acceso al editor universal {#request-access}
 
-Primero debe solicitar acceso al editor universal. Consulte [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), inicie sesión y valide si tiene acceso al editor universal.
+Primero debe solicitar acceso al editor universal. Vaya a [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), inicie sesión y valide si tiene acceso al Editor universal.
 
 En caso de que no tenga acceso, puede solicitarlo a través de un formulario vinculado en la misma página.
 
@@ -165,13 +165,13 @@ itemid="urn:<referenceName>:<resource>"
 
 La aplicación ya está instrumentada para utilizar el editor universal.
 
-Consulte [Creación de contenido con el editor universal](authoring.md) para conocer lo fácil e intuitivo que es para los autores de contenido crear contenido con el Editor universal.
+Diríjase a[Creación de contenido con el editor universal](authoring.md) para descubrir lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
 
 ## Recursos adicionales {#additional-resources}
 
 Para obtener más información acerca del editor universal, consulte estos documentos.
 
-* [Introducción al editor universal](introduction.md) - Descubra cómo el editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para que pueda ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de desarrollador avanzada.
+* [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editarlos aspectos de cualquier contenido en cualquier implementación para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
 * [Creación de contenido con el editor universal](authoring.md): aprenda lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
 * [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 * [Arquitectura de editor universal](architecture.md): obtenga información sobre la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
