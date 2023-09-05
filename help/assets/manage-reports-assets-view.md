@@ -1,11 +1,11 @@
 ---
 title: Administración de informes en la vista Recursos
-description: Acceda a los datos de la sección de informes de la vista Recursos para evaluar el uso de productos y funciones y obtener perspectivas sobre las métricas de éxito clave.
+description: Acceda a los datos de la sección de informes de la vista Recursos para evaluar el uso de productos y funciones, y obtener información sobre las métricas de éxito clave.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '814'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -16,25 +16,25 @@ ht-degree: 75%
 >title="Informes"
 >abstract="La creación de informes de recursos proporcionan a los administradores visibilidad de la actividad del entorno de la vista Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto. Todos los usuarios asignados al Perfil de producto de los administradores pueden acceder al panel de Insights o crear informes definidos por el usuario."
 
-La creación de informes de recursos proporcionan a los administradores visibilidad de la actividad del entorno de la vista Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto.
+La creación de informes de recursos proporciona visibilidad a los administradores de la actividad del entorno de la vista Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto.
 
 ## Acceso a los informes {#access-reports}
 
-Todos los usuarios asignados al Perfil de producto de los administradores de la vista de recursos pueden acceder al panel de perspectivas o crear informes definidos por el usuario en la vista de recursos.
+Todas las personas asignadas al perfil de producto Administradores de la vista Recursos pueden acceder al tablero de Insights o crear informes definidos por el usuario en la vista Recursos.
 
-## Ver Insights {#view-live-statistics}
+## Vista Insights {#view-live-statistics}
 
-La vista de recursos permite ver datos en tiempo real del entorno de vista de recursos con el panel de información. Puede ver las métricas de eventos en tiempo real durante los últimos 30 días o 12 meses.
+La vista Recursos le permite ver datos en tiempo real de su entorno de la vista Recursos con el tablero de Insights. Puede ver las métricas de eventos en tiempo real durante los últimos 30 días o 12 meses.
 
 ![Opciones de la barra de herramientas al seleccionar un recurso](assets/assets-essentials-live-statistics.png)
 
 Haga clic en **[!UICONTROL Insights]** en el panel de navegación izquierdo para ver los siguientes gráficos generados automáticamente:
 
-* **Descargas**: el número de recursos descargados del entorno de vista de recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
+* **Descargas**: el número de archivos descargados del entorno de la vista Recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
 
-* **Cargas**: el número de recursos cargados en el entorno de vista de recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
+* **Cargas**: el número de archivos cargados en el entorno de la vista Recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
 
-* **Búsquedas principales**: vea los términos más buscados junto con el número de veces que se buscan en el entorno de vista de Assets en los últimos 30 días o 12 meses representados en formato de tabla.
+* **Búsquedas principales**: vea los términos más buscados junto con el número de veces que se buscan en el entorno de vista Recursos en los últimos 30 días o 12 meses representados en formato tabular.
 
 <!--
 
@@ -58,7 +58,7 @@ Para crear un informe de descarga, haga lo siguiente:
 
    >[!NOTE]
    >
-   > La vista de recursos convierte todas las zonas horarias locales a la hora universal coordinada (UTC).
+   > La vista Recursos convierte todas las zonas horarias locales a la hora universal coordinada (UTC).
 
 1. En la pestaña [!UICONTROL Columnas], seleccione los nombres de columna que debe mostrar en el informe.
 
