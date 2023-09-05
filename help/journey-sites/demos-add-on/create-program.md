@@ -3,9 +3,9 @@ title: Creación de un programa
 description: Obtenga información sobre cómo configurar un nuevo programa y una canalización para implementar el complemento.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 source-git-commit: 7c33a618f474914ca80dff525552017c55a32517
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '709'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Después de iniciar sesión en Cloud Manager, puede crear un nuevo programa de z
 
 >[!NOTE]
 >
->El usuario debe ser miembro de **Propietario del negocio** función en Cloud Manager en su organización para crear programas.
+>El usuario debe ser miembro de la función **Propietario del negocio** en Cloud Manager en su organización para crear programas.
 
 1. Inicie sesión en Adobe Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
@@ -48,7 +48,7 @@ Después de iniciar sesión en Cloud Manager, puede crear un nuevo programa de z
 
 1. Toque o haga clic en **Agregar programa** en la parte superior derecha de la ventana.
 
-1. En el **Vamos a crear su programa** diálogo:
+1. En el cuadro de diálogo **Vamos a crear su programa**:
 
    1. Proporcione un **Nombre del programa** para describir su programa.
    1. Toque o haga clic en **Configuración de una zona protegida** para su **Objetivo del programa**
@@ -56,20 +56,20 @@ Después de iniciar sesión en Cloud Manager, puede crear un nuevo programa de z
 
    ![Cuadro de diálogo Crear programa](assets/create-program.png)
 
-1. En el **Configurar la zona protegida** diálogo en el **Soluciones y complementos** , expanda la **Sites** para introducir en la lista, toque o haga clic en ella y, a continuación, marque **Demostraciones de referencia**.
+1. En el cuadro de diálogo **Configurar su zona protegida** en la tabla **Soluciones y complementos**, expanda la entrada **Sites** en la lista pulsando o haciendo clic en ella y, a continuación, marque **Demostraciones de referencia**.
 
    * Si también desea crear demostraciones para AEM Screens, consulte la opción **Screens** también en la lista. Haga clic o pulse **Actualización de estado**.
 
-   ![Seleccionar el complemento para la demostración de referencia en la configuración del programa](assets/select-reference-demo-add-on.png)
+   ![Selección del complemento para la demostración de referencia en la configuración del programa](assets/select-reference-demo-add-on.png)
 
 
-1. Haga clic o pulse **Crear** y Cloud Manager comienza a configurar el programa de zona protegida. Se le dirigirá a la pantalla de información general del programa y una breve notificación indica que el proceso se ha iniciado. Se ha añadido una tarjeta a la página de información general del nuevo programa. El proceso de configuración tardará unos minutos en completarse.
+1. Pulse o haga clic en **Crear** y Cloud Manager configurará el programa de su zona protegida. Se le dirigirá a la pantalla de información general del programa y una breve notificación indica que el proceso se ha iniciado. Se ha añadido una tarjeta a la página de información general del programa nuevo. El proceso de configuración tardará unos minutos en completarse.
 
 1. Una vez completada la configuración, la tarjeta del entorno en la página de información general muestra su estado como **Listo**. Pulse o haga clic en la tarjeta para abrir el entorno.
 
    ![Creación completa del programa](assets/ready.png)
 
-1. AEM Su entorno está listo y el complemento ahora está habilitado como opción, pero el contenido de la demostración debe implementarse para que el contenido esté disponible para que esté disponible. Para ello, toque o haga clic en el botón de los tres puntos situado junto a la canalización Implementar en desarrollador en **Canalizaciones** Tarjeta de y seleccione **Ejecutar**.
+1. Su entorno está listo y el complemento ahora está habilitado como opción, pero el contenido de la demostración debe implementarse para que el contenido esté disponible. Para ello, pulse o haga clic en el botón de los tres puntos situado junto a la canalización Implementar en Desarrollo en la tarjeta **Canalizaciones** y seleccione **Ejecutar**.
 
    ![Inicial](assets/run.png)
 
@@ -77,7 +77,7 @@ Después de iniciar sesión en Cloud Manager, puede crear un nuevo programa de z
 
    ![Implementación](assets/deployment.png)
 
-La canalización puede tardar varios minutos en completarse. AEM Una vez finalizado, el complemento y su contenido de demostración están disponibles para su uso en el entorno de creación de.
+La canalización puede tardar varios minutos en completarse. Una vez completada, el complemento y el contenido de demostración están disponibles para su uso en el entorno de creación de AEM.
 
 ## Siguientes pasos {#what-is-next}
 
