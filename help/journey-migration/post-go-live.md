@@ -2,9 +2,9 @@
 title: Publicar el lanzamiento
 description: Obtenga información sobre cómo supervisar problemas y mejorar el rendimiento
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
+source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '483'
 ht-degree: 28%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 28%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=es" text="Acceder y administrar registros"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
 
-Este recorrido es la última parte, por lo que aprenderá a monitorizar los problemas y mejorar el rendimiento una vez que se haya completado la migración. Debe garantizar la limpieza de los archivos temporales, revisar las prácticas recomendadas para el desarrollo continuo y administrar los registros.
+Este recorrido es la última parte, por lo que aprenderá a monitorizar los problemas y mejorar el rendimiento una vez completada la migración. Debe garantizar la limpieza de los archivos temporales, revisar las prácticas recomendadas para el desarrollo continuo y administrar los registros.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -51,7 +51,7 @@ Consulte [Desarrollo con CRXDE Lite](/help/implementing/developing/tools/crxde.m
 
 Los usuarios pueden acceder a una lista de archivos de registro para el entorno seleccionado.
 
-Consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener información sobre cómo acceder y administrar los registros a través de la IU o desde la API de Cloud Manager.
+Consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener información sobre cómo acceder y administrar los registros a través de la interfaz de usuario o desde la API mediante Cloud Manager.
 
 ## Contactando con soporte {#contacting-support}
 
