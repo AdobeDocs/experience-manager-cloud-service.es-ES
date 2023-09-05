@@ -3,9 +3,9 @@ title: AEM Recorrido de creación rápida de sitios
 description: Comience aquí para obtener un recorrido guiado a través de la herramienta de creación rápida de sitios AEM fácil de usar, para optimizar el desarrollo front-end de su sitio AEM y personalizar rápidamente su sitio sin conocimiento del servidor de AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1034'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Comience aquí para obtener un recorrido guiado a través de la herramienta de c
 
 ## Introducción {#introduction}
 
-AEM Sites es un potente conjunto de herramientas para crear y administrar experiencias digitales. AEM Los autores de contenido pueden crear fácilmente experiencias digitales mediante el editor de sitios y organizar el contenido mediante la consola de sitios, a la vez que pueden ver el contenido en su momento de publicación, tal y como lo envían los usuarios a sus audiencias en los distintos canales.
+AEM Sites es un potente conjunto de herramientas para crear y administrar experiencias digitales. Los autores de contenido pueden crear fácilmente experiencias digitales mediante el editor de Sites y organizar el contenido mediante la consola de Sites, a la vez que pueden ver el contenido en el momento de su publicación, tal y como lo envía AEM a los públicos en los distintos canales.
 
 La herramienta Creación rápida de sitios de AEM permite a los usuarios que no son desarrolladores crear rápidamente un nuevo sitio desde cero mediante plantillas de sitio. Una vez creada, la herramienta de creación rápida de sitios también permite la personalización rápida del tema y el estilo del sitio AEM (JavaScript, CSS y recursos estáticos). Esto permite que el desarrollador del front-end, que no necesita ningún conocimiento de AEM, trabaje de forma independiente y paralela a los creadores de contenido. El administrador de AEM simplemente descarga el tema del sitio y lo proporciona al desarrollador de front-end que lo personaliza con sus herramientas favoritas y luego confirma los cambios en el repositorio de código de AEM, que luego se implementa.
 
@@ -52,20 +52,20 @@ Explorará muchos temas en este recorrido. Los siguientes artículos le proporci
 
 | # | Artículo | Descripción | Función responsable |
 |---|---|---|--|
-| 0 | AEM Recorrido de creación rápida de sitios | Este documento | AEM Administradores de Cloud Manager y |
-| 1 | [Comprender Cloud Manager y el flujo de trabajo de creación rápida de sitios](cloud-manager.md) | Obtenga información sobre Cloud Manager y cómo vincula el nuevo proceso de creación rápida de sitios. | Administrador de AEM |
+| 0 | Recorrido de creación rápida de sitios de AEM | Este documento | Administradores de AEM y Cloud Manager |
+| 1 | [Comprender Cloud Manager y el flujo de trabajo de creación rápida de sitios](cloud-manager.md) | Obtenga información sobre Cloud Manager y cómo se vincula el nuevo proceso de creación rápida de sitios. | Administrador de AEM |
 | 2 | [Crear sitio a partir de una plantilla](create-site.md) | Obtenga información sobre cómo crear rápidamente un nuevo sitio de AEM con una plantilla de sitio. | Administrador de AEM |
 | 3 | [Configurar la canalización](pipeline-setup.md) | Cree una canalización front-end para administrar la personalización del tema del sitio. | Administrador de Cloud Manager |
 | 4 | [Conceder acceso al desarrollador de front-end](grant-access.md) | Incorpore a los desarrolladores front-end en Cloud Manager para que tengan acceso al repositorio de Git y a la canalización del sitio de AEM. | Administrador de Cloud Manager |
-| 5 | [Recuperar información de acceso al repositorio de git](retrieve-access.md) | Descubra cómo el desarrollador front-end utiliza Cloud Manager para acceder a la información del repositorio de Git. | Desarrollador front-end |
-| 6 | [Personalizar el tema del sitio](customize-theme.md) | AEM Obtenga información sobre cómo se crea un tema de sitio, cómo personalizarlo y cómo probarlo con contenido en directo | Desarrollador front-end |
+| 5 | [Recuperar información de acceso al repositorio de Git](retrieve-access.md) | Descubra cómo el desarrollador front-end utiliza Cloud Manager para acceder a la información del repositorio de Git. | Desarrollador front-end |
+| 6 | [Personalizar el tema del sitio](customize-theme.md) | Descubra cómo se crea el tema del sitio, cómo personalizarlo y cómo probarlo con contenido de AEM en directo. | Desarrollador front-end |
 | 7 | [Implementar el tema personalizado](deploy-theme.md) | Aprenda cómo implementar el tema del sitio mediante la canalización. | Desarrollador front-end |
 
 ## Siguientes pasos {#what-is-next}
 
 Ya puede empezar su Recorrido de creación rápida de sitios de Adobe.
 
-* AEM AEM Si es administrador de Experience Cloud Manager o de un administrador, o si cumple las funciones de desarrollador y administrador front-end, o si simplemente desea comprender el proceso de extremo a extremo en las funciones de administrador de Cloud Manager, comience por el principio del recorrido con el método de la administración de la configuración de la aplicación de usuario, que incluye las siguientes funciones: [Comprender Cloud Manager](cloud-manager.md) como se indica a continuación.
+* Si es administrador de AEM o Cloud Manager, o si cumple las funciones de desarrollador y administrador front-end, o si simplemente desea comprender el proceso de extremo a extremo en AEM, comience al principio del recorrido con la [Comprensión de Cloud Manager](cloud-manager.md), como se indica a continuación.
 * Si solo es responsable del desarrollo front-end e interactuará con los administradores de AEM y Cloud Manager, puede saltar a [Recuperación de información de acceso al repositorio de Git](retrieve-access.md) para obtener acceso al repositorio de Git de AEM y comenzar a personalizar.
 * Si ya comprende que AEM Sites y Cloud Manager trabajan juntos y quiere comenzar directamente con la configuración, puede [ir directamente a la creación de un sitio nuevo a partir de una plantilla.](create-site.md)
 
