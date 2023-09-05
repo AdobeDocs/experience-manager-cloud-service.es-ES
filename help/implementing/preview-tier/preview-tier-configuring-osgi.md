@@ -3,9 +3,9 @@ title: Configuración de OSGi para el nivel de vista previa
 description: Aprenda a configurar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Los valores de las propiedades OSGi del nivel de vista previa se heredan del niv
 
 >[!NOTE]
 >
->Para obtener más información sobre los entornos de vista previa, consulte [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Para obtener más información acerca de los entornos de vista previa, consulte el documento [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Configuración de los parámetros de OSGi para el nivel de previsualización. {#configuring-osgi-settings-for-the-preview-tier}
 
@@ -40,7 +40,7 @@ Para obtener más información, consulte [esta sección](/help/implementing/depl
 
 ## Depuración de la vista previa mediante Developer Console {#debugging-preview-using-the-developer-console}
 
-Siga estos pasos para poder depurar el nivel de vista previa mediante Developer Console:
+Siga estos pasos para depurar el nivel de vista previa mediante Developer Console:
 
 * En [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), seleccione **-- Todas las previsualizaciones --** o un entorno de producción que incluya **prev** en el nombre
 * Genere la información relevante para la instancia de vista previa
