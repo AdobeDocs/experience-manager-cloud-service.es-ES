@@ -3,9 +3,9 @@ title: Introducción a la administración de certificados SSL
 description: Descubra cómo Cloud Manager le proporciona herramientas de autoservicio para instalar certificados SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 81%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=es" text="Ver, actualizar y reemplazar un certificado SSL"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=es" text="Comprobar el estado de un certificado SSL"
 
-Cloud Manager le proporciona herramientas de autoservicio para instalar y administrar certificados SSL de modo que pueda proteger su sitio para los usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros como Let&#39;s Encrypt.
+Cloud Manager le proporciona herramientas de autoservicio para instalar y administrar certificados SSL para que pueda proteger su sitio para los usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros como Let’s Encrypt.
 
 ## Introducción a los certificados {#certificates}
 
@@ -69,7 +69,7 @@ Si ha alcanzado el límite, revise los certificados y considere lo siguiente:
 
 ## Más información {#learn-more}
 
-Un usuario con los permisos necesarios puede utilizar Cloud Manager para administrar los certificados SSL de un programa. Consulte los siguientes documentos para obtener más información sobre el uso de estas funciones.
+Un usuario con los permisos necesarios puede utilizar Cloud Manager para administrar los certificados SSL de un programa. Consulte los siguientes documentos para obtener más información sobre el uso de estas características.
 
 * [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * [Visualizar, actualizar y sustituir un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
