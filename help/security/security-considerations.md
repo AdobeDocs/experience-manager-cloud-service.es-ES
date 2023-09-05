@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '229'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 ## Almacén de confianza de AEM {#aem-trust-store}
 
-AEM Para admitir operaciones criptográficas asimétricas, almacena certificados dentro del repositorio de contenido, en un almacén de confianza global. Sus contenidos son públicos y, de forma predeterminada, son accesibles de forma anónima por cualquiera en las instancias de editor.
+Para admitir operaciones criptográficas asimétricas, AEM guarda certificados dentro del repositorio de contenido, en un almacén de confianza global. Sus contenidos son públicos y, de forma predeterminada, son accesibles de forma anónima por cualquiera en las instancias de editor.
 
 ### Características del almacén de confianza {#truststore-characteristics}
 
