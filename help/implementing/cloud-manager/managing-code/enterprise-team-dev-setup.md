@@ -3,9 +3,9 @@ title: Configuración del equipo de desarrollo empresarial
 description: Aprenda a configurar y escalar su equipo de desarrollo empresarial y vea cómo AEM as a Cloud Service puede ayudarle con su proceso de desarrollo.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1437'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ El código se puede implementar en entornos de desarrollo mediante una canalizac
 
 La canalización de producción implementa primero el código y la configuración en el entorno de ensayo, prueba la aplicación y, finalmente, se implementa en la producción.
 
-Un SDK de Cloud Service AEM que siempre se actualiza con las últimas mejoras as a Cloud Service de la aplicación permite el desarrollo local directamente mediante el hardware local del desarrollador. Esto permite un desarrollo rápido con tiempos de respuesta muy bajos. Por lo tanto, los desarrolladores pueden permanecer en su entorno local familiar y elegir entre una amplia variedad de herramientas de desarrollo y favorecer los entornos de desarrollo o producción cuando lo consideren adecuado.
+El SDK de Cloud Service, que siempre se actualiza con las últimas mejoras de AEM as a Cloud Service, permite el desarrollo local directamente mediante el hardware local del desarrollador. Esto permite un desarrollo rápido con tiempos de respuesta muy bajos. Por lo tanto, los desarrolladores pueden permanecer en su entorno local familiar y elegir entre una amplia variedad de herramientas de desarrollo y favorecer los entornos de desarrollo o producción cuando lo consideren adecuado.
 
 Cloud Manager admite configuraciones flexibles de varios equipos que se pueden ajustar para adaptarse a las necesidades de una empresa. Para garantizar implementaciones estables con varios equipos y evitar al mismo tiempo situaciones en las que un equipo afecte a la producción de los demás, la canalización de Cloud Manager siempre valida y prueba el código de todos los equipos juntos.
 
@@ -45,7 +45,7 @@ Por ejemplo, las aplicaciones de Adobe Creative Cloud, como Adobe Photoshop o Ad
 
 Los equipos que contribuyen a este proyecto se adhieren al siguiente proceso.
 
-Cada equipo utiliza su propio flujo de trabajo de desarrollo y tiene un repositorio de Git independiente. Se utiliza un repositorio de Git compartido adicional para incorporar proyectos. Este repositorio de Git contiene la estructura raíz del repositorio de Git de Cloud Manager, incluida la configuración compartida de Dispatcher.
+Cada equipo utiliza su propio flujo de trabajo de desarrollo y tiene un repositorio de Git independiente. Se utiliza un repositorio de Git compartido adicional para incorporar proyectos. Este repositorio de Git contiene la estructura raíz del repositorio de Git de Cloud Manager, que incluye la configuración compartida de Dispatcher.
 
 La incorporación de un nuevo proyecto requiere la inclusión en el archivo de proyecto de Maven del reactor en la raíz del repositorio de Git compartido. Para la configuración de Dispatcher, se crea un nuevo archivo de configuración dentro del proyecto de Dispatcher. Este archivo se incluye en la configuración principal de Dispatcher. Cada equipo es responsable de su propio archivo de configuración de Dispatcher. Los cambios en el repositorio de Git compartido son raros y normalmente solo son necesarios cuando se incorpora un proyecto nuevo. El trabajo principal lo realiza cada equipo de proyecto dentro de su propio repositorio de Git.
 
@@ -70,7 +70,7 @@ La configuración del repositorio de Git de Cloud Manager tiene dos ramas.
 * Una rama de versión estable que contiene el código de producción de todos los equipos.
 * Una rama de desarrollo que contiene el código de desarrollo de todos los equipos.
 
-Cada inserción en el repositorio de Git de un equipo en los déclencheur de rama estable o de desarrollo a [Acción de GitHub](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
+Cada inserción en el repositorio de Git de un equipo en el desarrollo o la rama estable activa la [Acción de GitHub](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
 
 Todos los proyectos siguen la misma configuración para la rama estable. Una inserción en la rama estable de un proyecto se inserta automáticamente a la rama estable en el repositorio de Git de Cloud Manager. La canalización de producción en Cloud Manager está configurada para activarse mediante una inserción en la rama estable. Por lo tanto, la canalización de producción se ejecuta mediante cada inserción de cualquier equipo en una rama estable y la implementación de producción se actualiza si aprueban todas las puertas de calidad.
 
@@ -82,7 +82,7 @@ La ejecución de la canalización de producción incluye la comprobación del c�
 
 Para el desarrollo local, se utiliza [SDK para AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing). SDK permite configurar el autor, la publicación y el Dispatcher local. Esto permite el desarrollo sin conexión y tiempos de respuesta rápidos. A veces solo se utiliza el entorno de creación para el desarrollo, pero la configuración rápida de los entornos de Dispatcher y de publicación permite probar todo localmente antes de insertarlo en el repositorio de Git.
 
-Los miembros de cada equipo suelen comprobar el código de Git compartido para su propio código de proyecto. No hay necesidad de comprobar otros proyectos ya que son independientes.
+Los miembros de cada equipo suelen comprobar el código de Git compartido, así como el código de su propio proyecto. No hay necesidad de comprobar otros proyectos ya que son independientes.
 
 ![Comprobación local y SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
@@ -96,7 +96,7 @@ Esta configuración del mundo real puede utilizarse como modelo y luego personal
 
 Con el repositorio de Git de Cloud Manager y la canalización de producción, el código de producción completo siempre se ejecuta a través de todas las puertas de calidad y se trata como una unidad de implementación. De esta manera, el sistema de producción siempre está activo sin interrupciones ni tiempo de espera.
 
-Por el contrario, sin un sistema de este tipo, ya que cada equipo puede realizar implementaciones por separado, existe el riesgo de que una actualización de un equipo único pueda provocar problemas de estabilidad de la producción. Además, se requiere coordinación y tiempo de inactividad planificado para implementar actualizaciones. Con un número cada vez mayor de equipos, el esfuerzo de coordinación se vuelve mucho más complejo y rápidamente inmanejable.
+Por el contrario, sin un sistema de este tipo, ya que cada equipo puede realizar implementaciones por separado, existe el riesgo de que una actualización de un equipo único pueda provocar problemas de estabilidad de la producción. Además, se requiere coordinación y tiempo de inactividad planificado para implementar actualizaciones. Con un número cada vez mayor de equipos, el esfuerzo de coordinación será mucho más complejo y se hará inmanejable rápidamente.
 
 Si se detecta un problema en las puertas de calidad, la producción no se verá afectada y el problema podrá detectarse y solucionarse sin que el personal de Adobe tenga que intervenir. Sin Cloud Service y sin probar siempre toda la implementación, las implementaciones parciales pueden ocasionar interrupciones que requieran una solicitud de restablecimiento o incluso una restauración completa desde una copia de seguridad. Las pruebas parciales también podrían dar lugar a otros problemas que deben solucionarse, lo que también requeriría la coordinación y el apoyo del personal de Adobe.
 
