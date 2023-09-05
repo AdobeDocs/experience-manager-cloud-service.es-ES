@@ -4,7 +4,7 @@ description: Este artículo presenta los conceptos de un SPA y explica cómo usa
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: ht
-source-wordcount: '0'
+source-wordcount: '2068'
 ht-degree: 100%
 
 ---
