@@ -3,9 +3,9 @@ title: Consideraciones, problemas conocidos y prácticas recomendadas
 description: Prácticas recomendadas de comunicaciones, problemas conocidos y limitaciones
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1709'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -161,11 +161,11 @@ La siguiente tabla especifica las opciones de XCI.
 
 * Puede utilizar un tipo de procesamiento específico (PDF, PRINT) solo una vez en la lista de opciones de impresión. Por ejemplo, no puede tener dos opciones PRINT y que cada una especifique un tipo de procesamiento PCL.
 
-* Para una configuración por lotes, solo se permite una instancia de combinación de valores de OutputType (PDF, PRINT) y RenderType (PostScript, PCL, IPL, ZPL, etc.).
+* Para una configuración por lotes, solo se permite una instancia de combinación de valores de OutputType (PDF, PRINT) y RenderType (PostScript, PCL, IPL, ZPL, etc.
 
 * Para las API asíncronas (procesamiento por lotes), el nivel de registro predeterminado es 2. Puede utilizar un XCI personalizado para cambiar el nivel de registro a 1.
 
-* Cuando se configura el XCI predeterminado, incluye la ruta hasta la representación original. Por ejemplo, `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`. 
+* Cuando se configura el XCI predeterminado, incluye la ruta hasta la representación original. Por ejemplo, `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 
