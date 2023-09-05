@@ -3,9 +3,9 @@ title: Arquitectura del editor universal
 description: Obtenga información sobre la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Obtenga información sobre la arquitectura del editor universal y cómo fluyen l
 
 ## Bloques de creación de arquitectura {#building-blocks}
 
-El editor universal se compone de cuatro componentes básicos esenciales que interactúan para permitir que los autores de contenido editen cualquier aspecto de cualquier contenido en cualquier implementación, de modo que pueda ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de desarrollador avanzada.
+El editor universal consta de cuatro bloques de creación básicos que interactúan para permitir que los autores de contenido editen los aspectos del contenido en cualquier implementación con el fin de ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de desarrollador de última generación.
 
 1. [Editores](#editors)
 1. [Aplicación remota](#remote-app)
@@ -29,16 +29,16 @@ Este documento describe cada uno de estos bloques de creación básicos y cómo 
 
 >[!TIP]
 >
->Para ver el editor universal y su arquitectura en acción, consulte el documento [AEM Introducción al editor universal en el entorno de trabajo de la aplicación de](getting-started.md) AEM para obtener información sobre cómo acceder al editor universal y cómo empezar a instrumentar la primera aplicación de la que se utiliza la aplicación de la.
+>Si desea ver el editor universal y su arquitectura en acción, consulte el documento [Introducción al editor universal en AEM](getting-started.md) para obtener información sobre cómo acceder al Editor Universal y comenzar a instrumentar la primera aplicación de AEM para utilizarla.
 
 ### Editores {#editors}
 
-* **Editor universal**: el editor universal utiliza un DOM instrumentado para permitir la edición in situ del contenido. Consulte [Atributos y tipos](attributes-types.md) para obtener más información sobre los metadatos necesarios. Consulte el documento [Introducción al editor universal en AEM](getting-started.md) para ver un ejemplo de la instrumentación en AEM.
+* **Editor universal**: el editor universal utiliza un DOM instrumentado para permitir la edición in situ del contenido. Consulte el documento [Atributos y tipos](attributes-types.md) para obtener más información sobre los metadatos necesarios. Consulte el documento [Introducción al editor universal en AEM](getting-started.md) para ver un ejemplo de la instrumentación en AEM.
 * **Carril de propiedades**: algunas propiedades de los componentes no se pueden editar en contexto, por ejemplo, el tiempo de rotación de un carrusel o qué pestaña del acordeón debe abrirse o cerrarse siempre. Para permitir la edición de dicha información de componentes, se proporciona un editor basado en formularios en el carril lateral.
 
 ### Aplicación remota {#remote-app}
 
-Para que una aplicación se pueda editar en contexto dentro del editor universal, se debe instrumentar el DOM. La aplicación remota debe representar ciertos atributos en el DOM. Consulte [Atributos y tipos](attributes-types.md) para obtener más información sobre los metadatos necesarios. Consulte el documento [Introducción al editor universal en AEM](getting-started.md) para ver un ejemplo de la instrumentación en AEM.
+Para que una aplicación se pueda editar en contexto dentro del editor universal, se debe instrumentar el DOM. La aplicación remota debe representar ciertos atributos en el DOM. Consulte el documento [Atributos y tipos](attributes-types.md) para obtener más información sobre los metadatos necesarios. Consulte el documento [Introducción al editor universal en AEM](getting-started.md) para ver un ejemplo de la instrumentación en AEM.
 
 El editor universal se esfuerza por conseguir un SDK mínimo, por lo que la instrumentación es responsabilidad de la implementación de la aplicación remota.
 
@@ -78,7 +78,7 @@ El editor universal envía todos los cambios de contenido a un servicio centrali
 
 Para obtener más información acerca del editor universal, consulte estos documentos.
 
-* [Introducción al editor universal](introduction.md) - Descubra cómo el editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para que pueda ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de desarrollador avanzada.
+* [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar cualquier aspecto de los contenidos en varias implementaciones para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
 * [Creación de contenido con el editor universal](authoring.md): aprenda lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
 * [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el publicado.
 * [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder y cómo instrumentar la primera aplicación de AEM para utilizar el editor universal.
