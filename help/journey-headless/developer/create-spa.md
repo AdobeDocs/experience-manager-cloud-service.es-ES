@@ -3,8 +3,8 @@ title: 'Opcional: creación de aplicaciones de una sola página (SPA) con Adobe 
 description: En esta continuación opcional del Recorrido para desarrolladores de AEM sin encabezado, aprenderá cómo AEM combina la entrega sin encabezado con las funciones tradicionales de CMS de pila completa y cómo puede crear SPA editables con el marco de trabajo del editor SPA de AEM.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: tm+mt
-source-wordcount: '1266'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
