@@ -3,9 +3,9 @@ title: Introducción a los programas de zona protegida
 description: Descubra cuáles son las diferencias entre los programas de zona protegida y los programas de producción.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '475'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Los dominios personalizados y las listas de IP permitidas no están disponibles 
 
 ### Sin redes avanzadas {#advanced-networking}
 
-[Funciones de red avanzadas](/help/security/configuring-advanced-networking.md) (por ejemplo, el aprovisionamiento de autoservicio de VPN, puertos no estándar, direcciones IP de salida dedicadas, etc.) no está disponible en programas de zonas protegidas.
+Las [Funciones de red avanzadas](/help/security/configuring-advanced-networking.md) (por ejemplo, el aprovisionamiento de autoservicio de VPN, puertos no estándar, direcciones IP de salida dedicadas, etc.) no están disponibles en los programas de zonas protegidas.
 
 ### Actualizaciones de los manuales de AEM {#updates}
 
@@ -58,15 +58,15 @@ Las actualizaciones de AEM no se insertan automáticamente en los programas de z
 * Una actualización manual solo se puede ejecutar cuando el entorno de destino tiene una canalización configurada correctamente.
 * Una actualización manual de un entorno de ensayo o producción actualizará automáticamente el otro. El conjunto de entornos Producción+Fase debe estar en la misma versión de AEM.
 
-Consulte [AEM Actualizaciones de versión de](/help/implementing/deploying/aem-version-updates.md) para obtener más información.
+Consulte las [Actualizaciones de versión de AEM](/help/implementing/deploying/aem-version-updates.md) para obtener más información.
 
-Consulte [Actualizando entorno](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) para aprender a actualizar un entorno.
+Consulte [Actualización del entorno](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) para aprender a actualizar un entorno.
 
 ### Hibernación y eliminación {#hibernation}
 
 Los entornos de un programa de zona protegida hibernan automáticamente tras ocho horas de inactividad. Los entornos de zona protegida se eliminan después de seis meses continuos de hibernación.
 
-Consulte [Entornos de zona protegida en hibernación y dehibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obtener más información sobre cómo anular la hibernación de entornos y eliminar automáticamente la zona protegida.
+Consulte [Entornos de zona protegida en hibernación y dehibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obtener más información sobre cómo anular la hibernación de entornos y eliminar automáticamente zonas protegidas.
 
 ### Sin asistencia técnica {#no-support}
 
