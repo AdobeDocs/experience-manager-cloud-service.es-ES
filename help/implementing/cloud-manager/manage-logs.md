@@ -3,9 +3,9 @@ title: Acceder y administrar registros
 description: Obtenga información sobre cómo acceder y administrar registros para ayudarle en el proceso de desarrollo en AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Para descargar los archivos de registro para un entorno específico, el comando 
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Además, puede rastrear registros a través de la interfaz de línea de comandos.
+Además, puede poner en cola los registros a través de la interfaz de línea de comandos.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
