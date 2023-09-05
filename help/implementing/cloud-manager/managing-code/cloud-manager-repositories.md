@@ -3,9 +3,9 @@ title: Repositorios de Cloud Manager
 description: Obtenga información sobre cómo crear, ver y eliminar repositorios de Git en Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Hay un único repositorio principal o una rama para una canalización determinad
 Al eliminar un repositorio:
 
 * Se impide que el nombre del repositorio eliminado se pueda utilizar para nuevos repositorios que se puedan crear en el futuro.
-   * El mensaje de error `Repository name should be unique within organization.` se muestra en estos casos.
+   * El mensaje de error `Repository name should be unique within organization.` aparece en estos casos.
 * Se hace que el repositorio eliminado no esté disponible en Cloud Manager y no esté disponible para vincularlo a una canalización.
 
 Siga estos pasos para eliminar un repositorio en Cloud Manager.
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 Esta técnica es una alternativa potencial a la solución descrita en el documento [Uso de repositorios de Git de varias fuentes](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) para organizaciones que se sientan cómodas con el uso de submódulos Git y no desean administrar un proceso de combinación externo.
 
-Por ejemplo, supongamos que hay tres repositorios, cada uno de los cuales contiene una sola rama denominada `main`. En el repositorio principal, es decir, el configurado en las canalizaciones, la variable `main` La rama tiene un `pom.xml` que declara los proyectos contenidos en los otros dos repositorios.
+Por ejemplo, supongamos que hay tres repositorios, cada uno de los cuales contiene una sola rama denominada `main`. En el repositorio principal, es decir, el configurado en las canalizaciones, la rama `main` tiene un archivo `pom.xml` que declara los proyectos contenidos en los otros dos repositorios.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
