@@ -5,7 +5,7 @@ exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 51%
+ht-degree: 92%
 
 ---
 
@@ -37,9 +37,9 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
 * [**Emulador**](#selecting-a-device-to-emulate)
 Esto permite crear y editar sitios web interactivos que reorganizan el diseño según el tamaño del dispositivo o la ventana, mediante el cambio de tamaño de los componentes de forma interactiva. A continuación, el usuario puede ver cómo se representa el contenido mediante el emulador.
 
-Con estos mecanismos de cuadrícula adaptable puede:
+Con estos mecanismos de cuadrícula adaptable puede hacer lo siguiente:
 
-* Utilice puntos de interrupción para definir diferentes diseños de contenido en función del ancho del dispositivo (relacionado con el tipo y la orientación del dispositivo).
+* Utilizar puntos de interrupción para definir diferentes diseños de contenido según la anchura del dispositivo (en relación con el tipo y la orientación del dispositivo).
 * Utilizar estos mismos puntos de interrupción y diseños de contenido para asegurarse de que el contenido es adaptable al tamaño de la ventana del navegador en el escritorio.
 * Utilizar el ajuste horizontal a la cuadrícula que le permite colocar componentes en la cuadrícula, cambiar su tamaño según sea necesario y definir cuándo deben contraerse o redistribuirse lateralmente o arriba/abajo.
 * Ocultar componentes de diseños de dispositivo específicos.
@@ -68,15 +68,15 @@ AEM definir diseños según la anchura del dispositivo:
    * El alcance de un punto de interrupción se extiende hacia la izquierda hasta el siguiente punto de interrupción.
    * No puede seleccionar específicamente un punto de interrupción; al seleccionar el dispositivo y la orientación se selecciona automáticamente el punto de interrupción adecuado.
 
-El dispositivo **Escritorio**, que no tiene una anchura específica, se relaciona con el punto de interrupción predeterminado (es decir, todo lo que está por encima del último punto de interrupción configurado).
+El dispositivo **Escritorio** no tiene una anchura específica y está relacionado con el punto de interrupción predeterminado (por ejemplo, todo lo que está por encima del último punto de interrupción configurado).
 
 >[!NOTE]
 >
 >Es posible definir puntos de interrupción para cada dispositivo individual, pero esto incrementaría drásticamente los trabajos de definición de diseño y mantenimiento.
 
-Al utilizar el emulador, se selecciona un dispositivo específico para la emulación y la definición del diseño, y el punto de interrupción relacionado se resalta también. Cualquier cambio de diseño que realice será aplicable a otros dispositivos a los que se aplique el punto de interrupción. Es decir, cualquier dispositivo situado a la izquierda del marcador de punto de interrupción activo, pero antes del marcador de punto de interrupción siguiente.
+Al seleccionar en el emulador un dispositivo específico para emular y definir el diseño, el punto de interrupción relacionado también queda resaltado. Cualquier cambio de diseño que realice será aplicable a otros dispositivos a los que se aplique el punto de interrupción. Es decir, cualquier dispositivo situado a la izquierda del marcador de punto de interrupción activo, pero antes del marcador de punto de interrupción siguiente.
 
-Por ejemplo, al seleccionar el dispositivo **iPhone 6 Plus** (definido con una anchura de 540 píxeles) para emulación y diseño, el punto de interrupción **Teléfono** (definido como 768 píxeles) se activa también. Cualquier cambio de diseño que realice en **IPHONE 6** son aplicables a otros dispositivos en el **Teléfonos** punto de interrupción, como **IPHONE 5** (definido como 320 píxeles).
+Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una anchura de 540 píxeles) para emulación y diseño, se activa también el punto de interrupción **Teléfono** (definido como 768 píxeles). Cualquier cambio de diseño que realice en **iPhone 6** es aplicable a otros dispositivos en el punto de interrupción **Teléfonos**, como **iPhone 5** (definido como 320 píxeles).
 
 ![Emuladores](/help/sites-cloud/authoring/assets/responsive-layout-emulators.png)
 
@@ -107,8 +107,8 @@ Por ejemplo, al seleccionar el dispositivo **iPhone 6 Plus** (definido con una a
 
 1. Para seleccionar un dispositivo específico para emular, puede hacer lo siguiente:
 
-   * Utilice el icono Seleccionar dispositivo y seleccione en un selector desplegable.
-   * Pulse o haga clic en el indicador de dispositivo en la barra de herramientas del emulador.
+   * Utilizar el icono Seleccionar dispositivo y seleccionarlo desde un selector desplegable.
+   * Tocar o hacer clic en el indicador del dispositivo de la barra de herramientas del emulador.
 
    ![Menú desplegable Seleccionar dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -120,7 +120,7 @@ Por ejemplo, al seleccionar el dispositivo **iPhone 6 Plus** (definido con una a
 
    ![El pliegue](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * El pliegue también se puede considerar como el salto de línea de la página (no confundir con el salto de línea de la página) [puntos de interrupción](#layout-definitions-device-emulation-and-breakpoints)) para el contenido. Esto se muestra para mayor comodidad, a fin de mostrar qué parte del contenido verá el usuario en el dispositivo antes de desplazarse.
+   * El pliegue también se puede considerar el salto de línea de la página (no confundir con los [puntos de interrupción](#layout-definitions-device-emulation-and-breakpoints)) del contenido. Esto se muestra para mayor comodidad, a fin de mostrar qué parte del contenido verá el usuario en el dispositivo antes de desplazarse.
    * La línea para el pliegue no se mostrará si la altura del dispositivo que se está emulando es mayor que el tamaño de pantalla.
    * El pliegue se muestra para la comodidad del autor y no aparece en la página publicada.
 
@@ -137,7 +137,7 @@ Un **contenedor de diseño** es un sistema de párrafos que:
 >Si no está disponible, el **contenedor de diseño** debe activarse explícitamente para un sistema de párrafos o una página. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
 1. El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Desde aquí puede arrastrarlo a la ubicación deseada en la página tras la cual verá el marcador de posición **Arrastrar componentes aquí**.
-1. A continuación, puede agregar componentes al contenedor de diseño. Estos componentes contendrán el contenido real:
+1. A continuación, puede agregar componentes al contenedor del diseño. Estos componentes contendrán el contenido real:
 
    ![Contenedor de diseño](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
@@ -149,7 +149,7 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
 >
 >Como un contenedor de diseño es un sistema de párrafos, al eliminar el componente se eliminará tanto la cuadrícula de diseño como todos los componentes (y su contenido) que se encuentren dentro del contenedor.
 
-1. Si pasa el ratón por encima o pulsa el marcador de posición de la cuadrícula, se mostrará el menú de acción.
+1. Si pasa el puntero del ratón o toca el marcador de posición de la cuadrícula, se mostrará el menú Acción.
 
    ![Agregar al contenedor de diseño](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
@@ -157,12 +157,12 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
 
    ![Botón Principal](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-1. Si el componente de diseño está anidado, seleccione la opción **Principal** presenta una selección desplegable, que permite seleccionar el contenedor de diseño anidado o sus elementos principales.
+1. Si el componente de diseño está anidado, la selección de la opción **Principal** presenta una lista desplegable de opciones que le permite seleccionar el contenedor de diseños anidado o sus elementos principales.
 
-   Cuando pasa el ratón sobre los nombres de contenedor en la lista desplegable, sus contornos se muestran en la página.
+   Cuando pasa el ratón sobre los nombres de contenedor en la lista desplegable, los contornos se muestran en la página.
 
    * El contenedor de diseños anidado en la parte inferior se muestra en azul.
-   * Cada contenedor sucesivo aparece delineado en un tono más claro de azul.
+   * Cada contenedor sucesivo aparece en un tono más claro de azul.
 
    ![Contenedores anidados](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
@@ -181,24 +181,24 @@ El modo **Diseño** puede iniciarse de dos formas.
 * Mediante el uso del [menú de modo de la barra de herramientas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) y seleccionando el modo **Diseño**.
    * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
    * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
-* Cuándo [edición de un componente individual](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
-   * Mediante el uso de **Diseño** en el menú de acción rápida del componente, puede cambiar a **Diseño** modo.
-   * **Diseño** el modo persiste mientras se edita el componente y vuelve a **Editar** modo una vez que el enfoque cambia a otro componente.
+* Al [editar un componente individual](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
+   * Mediante la opción **Diseño** en el menú de acción rápida del componente, puede cambiar al modo **Diseño**.
+   * El modo **Diseño** persiste mientras se edita el componente y vuelve al modo **Editar** en cuanto el enfoque cambia a otro componente.
 
-En el modo Diseño, se pueden realizar varias acciones en una cuadrícula:
+En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
-* Cambie el tamaño de los componentes de contenido mediante los puntos azules. El cambio de tamaño siempre se ajustará a la cuadrícula. Al cambiar el tamaño, se muestra la cuadrícula de fondo para ayudar a la alineación:
+* Redimensionar los componentes del contenido utilizando los puntos azules. Al redimensionar, siempre se hará un ajuste a la cuadrícula. Al redimensionar, se muestra la cuadrícula de fondo como referencia para la alineación:
 
   ![Cambiar el tamaño de los componentes](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
   >[!NOTE]
   >
-  >Las proporciones y relaciones se mantienen cuando componentes como **Imágenes** se han cambiado de tamaño.
+  >Se mantienen las proporciones y relaciones al cambiar el tamaño de componentes como **Imágenes**.
 
 * Haga clic o toque un componente de contenido. La barra de herramientas le permite:
    * **Principal** : permite seleccionar todo el componente del contenedor de diseños para realizar acciones en conjunto.
-   * **Flotar a una línea nueva** : el componente se mueve a una nueva línea, según el espacio disponible en la cuadrícula.
-   * **Ocultar componente** : el componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseño).
+   * **Flotar a una línea nueva**: se mueve el componente a una línea nueva, según el espacio disponible en la cuadrícula.
+   * **Ocultar componente**: el componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseños).
 
   ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
@@ -214,7 +214,7 @@ En el modo Diseño, se pueden realizar varias acciones en una cuadrícula:
 
      ![Botón Mostrar componentes ocultos](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
-   * **Revertir diseño de punto de interrupción** - Volver al diseño predeterminado. No se impone ningún diseño personalizado.
+   * **Revertir diseño de punto de interrupción**: volver al diseño predeterminado. No se impone ningún diseño personalizado.
 
      ![Botón Revertir diseño de punto de interrupción](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 

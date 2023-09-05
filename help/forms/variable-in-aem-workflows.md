@@ -5,7 +5,7 @@ exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2079'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Una variable en un modelo de flujo de trabajo es una forma de almacenar un valor basado en su tipo de datos. Puede utilizar el nombre de la variable en cualquier paso del flujo de trabajo para recuperar el valor almacenado en la variable. También puede utilizar nombres de variables para definir expresiones para tomar decisiones de enrutamiento.
@@ -45,7 +45,7 @@ Utilice el tipo de datos ArrayList para crear colecciones de variables. Puede cr
 
 Para crear una variable, haga lo siguiente:
 
-1. AEM En una instancia de, vaya a Herramientas ![Icono de martillo](assets/hammer-icon.svg) > Flujo de trabajo > Modelos.
+1. En una instancia de AEM, navegue hasta Herramientas ![Icono de martillo](assets/hammer-icon.svg) > Flujo de trabajo > Modelos.
 1. Pulse **[!UICONTROL Crear]** y especifique el título y un nombre opcional para el modelo de flujo de trabajo. Seleccione el modelo y pulse **[!UICONTROL Editar]**.
 1. Pulse el icono de variables disponible en la barra de tareas del modelo de flujo de trabajo y pulse **[!UICONTROL Agregar variable]**.
 
@@ -283,4 +283,4 @@ Para eliminar una variable, haga lo siguiente:
 
 ## Referencias {#references}
 
-Para obtener más ejemplos sobre el uso de variables en [!DNL AEM Forms] Pasos del flujo de trabajo, consulte [AEM Variables en flujos de trabajo de](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+Para obtener más ejemplos sobre el uso de variables en Pasos del flujo de trabajo de [!DNL AEM Forms], consulte [Variables en flujos de trabajo de AEM](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).

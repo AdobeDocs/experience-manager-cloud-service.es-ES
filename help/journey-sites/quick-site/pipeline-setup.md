@@ -5,7 +5,7 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '966'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -39,7 +39,7 @@ Esta parte del recorrido se aplica al administrador de Cloud Manager.
 * Debe tener acceso a Cloud Manager.
 * Debe ser miembro de la función **Administrador de implementación** en Cloud Manager.
 * Se debe configurar un repositorio de Git para el entorno de AEM en Cloud Manager.
-   * Esto suele ocurrir ya en cualquier proyecto activo. Sin embargo, si no es así, consulte la documentación de los repositorios de Cloud Manager disponible en la [Recursos adicionales](#additional-resources) sección.
+   * Esto suele ocurrir ya en cualquier proyecto activo. Sin embargo, si no es así, consulte la documentación de los repositorios de Cloud Manager disponible en la sección [Recursos adicionales](#additional-resources) para obtener más información.
 
 ## ¿Qué es una canalización front-end? {#front-end-pipeline}
 
@@ -90,7 +90,7 @@ Ahora que ha accedido a Cloud Manager, puede crear una canalización para la imp
    * Asegúrese de que esté seleccionado el entorno correcto en **Entornos de implementación aptos**.
    * Seleccione el **Repositorio** correcto.
    * Defina a qué **Rama de Git** debe estar asociada la canalización.
-   * Defina la **Ubicación del código** si el desarrollo front-end se encuentra bajo una ruta particular en el repositorio seleccionado. El valor predeterminado es la raíz del repositorio, pero a menudo el desarrollo de front-end y back-end están bajo diferentes rutas.
+   * Defina la **Ubicación del código** si el desarrollo front-end se encuentra bajo una ruta particular en el repositorio seleccionado. El valor predeterminado es la raíz del repositorio, pero a menudo el desarrollo front-end y back-end están en rutas diferentes.
 
    ![Información del código fuente para agregar una canalización](assets/add-pipeline-source-code.png)
 
@@ -102,7 +102,7 @@ La nueva canalización se crea y se puede ver en la sección **Canalizaciones** 
 
 >[!TIP]
 >
->Si ya está familiarizado con las canalizaciones en AEMaaCS y desea obtener más información sobre las diferencias entre los distintos tipos de canalizaciones, incluidos más detalles sobre la canalización front-end, consulte Configuración de la canalización CI/CD: Cloud Service vinculados en la [Recursos adicionales](#additional-resources) más abajo.
+>Si ya está familiarizado con las canalizaciones en AEMaaCS y desea obtener más información sobre las diferencias entre los distintos tipos de canalizaciones, incluidos más detalles sobre la canalización front-end, consulte Configurar canalización de CI/CD: Cloud Services vinculados en la sección [Recursos adicionales](#additional-resources).
 
 ## Siguientes pasos {#what-is-next}
 
@@ -118,5 +118,5 @@ Aproveche este conocimiento y continúe con su recorrido de Creación rápida de
 Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida de sitios al revisar el documento [Personalizar el tema del sitio,](customize-theme.md) los siguientes son algunos recursos opcionales que profundizan ciertos conceptos mencionados en este documento, pero no son necesarios para continuar el recorrido.
 
 * [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=es): si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
-* [Repositorios de Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) : Si necesita más información sobre cómo configurar y administrar repositorios Git para su proyecto AEMaaCS, consulte este documento.
-* [Configuración de la canalización de CI/CD: Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md): obtenga más información sobre la configuración de canalizaciones, tanto de pila completa como del front-end, en este documento.
+* [Repositorios de Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md): si necesita más información sobre cómo configurar y administrar repositorios Git para su proyecto AEMaaCS, consulte este documento.
+* [Configuración de la canalización de CI/CD, Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md): obtenga más información sobre la configuración de canalizaciones, tanto de pila completa como del front-end, en este documento.

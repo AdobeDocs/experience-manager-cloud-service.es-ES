@@ -6,8 +6,8 @@ role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4077'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ Los proyectos de traducción le permiten administrar la traducción del contenid
 
 >[!TIP]
 >
->Si acaba de empezar a traducir contenido, consulte [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
+>Si acaba de empezar a traducir contenido, consulte nuestro [Recorrido de traducción de Sites,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las potentes herramientas de traducción de AEM. Es ideal para aquellas personas que no tengan experiencia en traducción o en AEM.
 
 Cuando se añaden recursos a un proyecto de traducción, se crea un trabajo de traducción para ellos. Los trabajos proporcionan comandos e información de estado que se utilizan para administrar los flujos de trabajo de traducción humana y traducción automática que se ejecutan en los recursos.
 
@@ -210,7 +210,7 @@ Se puede acceder a muchas tareas de traducción y a muchas opciones avanzadas en
 
 ### Explicación de la consola Proyectos
 
-Los proyectos de traducción, en AEM, utilizan la [consola Proyectos AEM estándar](/help/sites-cloud/authoring/projects/overview.md). AEM Si no está familiarizado con proyectos de, revise esa documentación.
+Los proyectos de traducción, en AEM, utilizan la [consola Proyectos AEM estándar](/help/sites-cloud/authoring/projects/overview.md). Si no está familiarizado con Proyectos AEM, revise esa documentación.
 
 Como cualquier otro proyecto, un proyecto de traducción está compuesto por mosaicos que presentan una visión general de las tareas del proyecto.
 
@@ -277,7 +277,7 @@ Puede agregar páginas, activos o etiquetas al trabajo de su proyecto de traducc
 
 ### Adición de etiquetas a un trabajo de traducción {#adding-tags-to-a-translation-job}
 
-Puede añadir etiquetas a un proyecto de traducción similar a [cómo agregar activos y páginas a un proyecto](#adding-pages-assets-to-a-translation-job). Solo seleccione **Etiquetas** en el menú **Agregar**, a continuación, siga los mismos pasos.
+Puede añadir etiquetas a un proyecto de traducción similar a [agregar recursos y páginas a un proyecto](#adding-pages-assets-to-a-translation-job). Solo seleccione **Etiquetas** en el menú **Agregar**, a continuación, siga los mismos pasos.
 
 ### Ver detalles del proyecto de traducción {#seeing-translation-project-details}
 
@@ -303,7 +303,7 @@ Cuando se crea un proyecto utilizando el carril de referencias de una página, e
 
 ### Monitorización del estado de un trabajo de traducción {#monitoring-the-status-of-a-translation-job}
 
-El mosaico de trabajo de traducción de un proyecto de traducción proporciona el estado de un trabajo de traducción y la cantidad de páginas y activos en el trabajo.
+El mosaico de trabajo de traducción de un proyecto de traducción proporciona el estado de un trabajo de traducción y el número de páginas y recursos del trabajo.
 
 ![Trabajo de traducción](../assets/translation-job.png)
 
@@ -374,7 +374,7 @@ También puede iniciar todos los trabajos de traducción de un proyecto.
 
 1. En la consola del proyecto, seleccione el proyecto de traducción.
 1. En la barra de herramientas, toque o haga clic en **Iniciar trabajos de traducción**.
-1. En el cuadro de diálogo, revise la lista de trabajos que se han iniciado y, a continuación, confirme con **Inicio** o cancelar con **Cancelar**.
+1. En el cuadro de diálogo, revise la lista de trabajos que se iniciarán y, a continuación, confirme con **Inicio** o cancele con **Cancelar**.
 
 ### Cancelación de un trabajo de traducción {#canceling-a-translation-job}
 
@@ -390,7 +390,7 @@ Cuando el contenido regresa después de la traducción y se encuentra en el esta
 
 Si selecciona **Rechazar traducción**, tiene la opción de agregar un comentario.
 
-El rechazo de contenido lo devuelve al proveedor de traducción, donde puede ver el comentario.
+El rechazo de contenido lo devuelve al proveedor de traducción, donde podrá ver el comentario.
 
 ### Finalización y archivado de trabajos de traducción {#completing-and-archiving-translation-jobs}
 
@@ -443,7 +443,7 @@ Para comparar las copias de idioma con el maestro de idioma:
 
    ![Comparar copias de idioma](../assets/language-copy-compare.png)
 
-1. Las dos páginas (inicio y origen) se abren en paralelo.
+1. Las dos páginas (inicio y origen) se abrirán una junto a la otra.
    * Para obtener información completa sobre el uso de esta funcionalidad, consulte [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Mover una página de origen o cambiarle el nombre {#move-source}

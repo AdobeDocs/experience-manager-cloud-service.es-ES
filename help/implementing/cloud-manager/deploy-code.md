@@ -4,8 +4,8 @@ description: Obtenga información sobre cómo implementar su código mediante ca
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 2d1d3ac98f8fe40ba5f9ab1ccec946c8448ddc43
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 67%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,10 +56,10 @@ El proceso de generación implementa el código en tres fases.
 La fase **Implementación de fase** fase consiste en estos pasos.
 
 * **Validación**: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente. por ejemplo, probar que la rama configurada existe y que los entornos están disponibles.
-* **Prueba de generación y unidad**: Este paso ejecuta un proceso de generación en contenedores.
-   * Consulte [Generar detalles del entorno](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener más información sobre el entorno de compilación.
-* **Escanear código**: Este paso evalúa la calidad del código de la aplicación.
-   * Consulte [Prueba de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
+* **Prueba de generación y unidad**: este paso ejecuta un proceso de generación en contenedores.
+   * Consulte el documento [Detalles del entorno de generación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener más información sobre el entorno de generación.
+* **Escanear código**: este paso evalúa la calidad del código de la aplicación.
+   * Consulte el documento [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
 * **Crear imágenes**: Este proceso es responsable de transformar el contenido y los paquetes de Dispatcher producidos por el paso de generación en imágenes Docker y configuraciones de Kubernetes.
 * **Implementar en fase**: La imagen se implementa en el entorno de ensayo como preparación para la [Fase de prueba.](#stage-testing)
 
@@ -73,23 +73,23 @@ La fase de **prueba** incluye los siguientes pasos.
    * Consulte [Prueba funcional del producto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) para obtener más información.
 
 * **Pruebas funcionales personalizadas**: Este paso en la canalización siempre se ejecuta y no se puede omitir. Si la generación no produce JAR de prueba, la prueba se aprueba de forma predeterminada.
-   * Consulte [Pruebas funcionales personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obtener más información.
+   * Consulte [Prueba funcional personalizada](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obtener más información.
 
 * **Pruebas de IU personalizadas**: Este paso es una característica opcional que ejecuta automáticamente las pruebas de IU creadas para aplicaciones personalizadas.
    * Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Java y Maven, Node y WebDriver.io, o cualquier otro marco de trabajo y tecnología creados en Selenium).
-   * Consulte [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obtener más información.
+   * Consulte [Prueba de IU personalizada](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obtener más información.
 
 * **Auditoría de experiencias**: Este paso en la canalización siempre se ejecuta y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencias después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones.
    * Las páginas configuradas se envían al servicio y se evalúan.
    * Los resultados son informativos y muestran las puntuaciones y el cambio entre la puntuación actual y la anterior.
-   * Esta perspectiva es valiosa para determinar si hay una regresión que se introduce con la implementación actual.
+   * Este conocimiento es importante para determinar si hay una regresión que se introduce con la implementación actual.
    * Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
 
 ![Fase de prueba](assets/stage-testing.png)
 
 ## Fase de implementación de producción {#deployment-production}
 
-AEM El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto de los visitantes de un sitio de la red de producción de un sitio de.
+El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto de los visitantes a un sitio AEM.
 
 Las implementaciones de producción suelen seguir los mismos pasos que se describieron anteriormente, pero de forma gradual.
 
@@ -120,7 +120,7 @@ Los siguientes pasos agotarán el tiempo de espera si se deja a la espera de los
 
 ## Proceso de implementación {#deployment-process}
 
-Todas las implementaciones de Cloud Service siguen un proceso gradual para garantizar que no haya tiempo de espera. Consulte [Funcionamiento de las implementaciones móviles](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para obtener más información.
+Todas las implementaciones de Cloud Service siguen un proceso gradual para garantizar que no haya tiempo de espera. Consulte [Cómo funcionan las implementaciones dinámicas](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para obtener más información.
 
 >[!NOTE]
 >
@@ -128,19 +128,19 @@ Todas las implementaciones de Cloud Service siguen un proceso gradual para garan
 
 ## Volver a ejecutar una implementación de producción {#reexecute-deployment}
 
-En casos excepcionales, los pasos de implementación de producción pueden fallar por motivos transitorios. En estos casos, se admite la nueva ejecución del paso de implementación de producción siempre y cuando el paso de implementación de producción se haya completado, independientemente del tipo de finalización (por ejemplo, cancelada o fallida). Volver a ejecutar crea una nueva ejecución que utiliza la misma canalización que consta de tres pasos.
+En raras ocasiones, los pasos de implementación de producción pueden fallar por motivos transitorios. En estos casos, se admite la nueva ejecución del paso de implementación de producción siempre y cuando el paso de implementación de producción se haya completado, independientemente del tipo de finalización (por ejemplo, cancelada o fallida). Volver a ejecutar crea una nueva ejecución que utiliza la misma canalización que consta de tres pasos.
 
 1. El paso de validación: se trata esencialmente de la misma validación que se produce durante la ejecución normal de una canalización.
 1. El paso de compilación: en el contexto de una nueva ejecución, el paso de compilación copia artefactos y no ejecuta realmente un nuevo proceso de compilación.
 1. El paso de implementación de producción: utiliza la misma configuración y opciones que el paso de implementación de producción en una ejecución de canalización normal.
 
-En estas circunstancias, cuando se puede volver a ejecutar, la página de estado de la canalización de producción proporciona el **Volver a ejecutar** junto a la opción habitual **Descargar registro de compilación** opción.
+En estas circunstancias, cuando se puede volver a ejecutar, la página de estado de la canalización de producción contiene la opción **Volver a ejecutar** junto a la opción habitual **Descargar registro de compilación**.
 
 ![La opción Volver a ejecutar en la ventana de información general de la canalización](assets/re-execute.png)
 
 >[!NOTE]
 >
->En una nueva ejecución, el paso de generación se etiqueta en la interfaz de usuario para reflejar que está copiando artefactos, no reconstruyéndolos.
+>En una nueva ejecución, el paso de compilación se etiqueta en la IU para reflejar que está copiando artefactos y no reconstruyendo.
 
 ### Restricciones {#limitations}
 
@@ -151,7 +151,7 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 
 ### Volver a ejecutar la API {#reexecute-API}
 
-Además de estar disponible en la interfaz de usuario de, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para almacenar en déclencheur las reejecuciones, así como identificar las que se activaron como reejecuciones.
+Además de estar disponible en IU, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para activar las nuevas ejecuciones, así como identificar las que se activaron como ejecuciones nuevas.
 
 #### Activación de una nueva ejecución {#reexecute-deployment-api}
 
@@ -199,8 +199,8 @@ Este vínculo solo está disponible para el paso de implementación de producci�
 
 La sintaxis del valor href del vínculo HAL es solo un ejemplo. El valor real siempre debe leerse desde el vínculo HAL y no generarse.
 
-Enviar una solicitud de PUT a este extremo da como resultado una respuesta 201 si es correcta y el cuerpo de la respuesta es la representación de la nueva ejecución. Esto es similar a iniciar una ejecución normal a través de la API.
+Enviar una solicitud PUT a este punto final da como resultado una respuesta 201 si es correcta, y el cuerpo de la respuesta es la representación de la nueva ejecución. Esto es similar a iniciar una ejecución normal a través de la API.
 
 #### Identificación de una ejecución ejecutada de nuevo {#identify-reexecution}
 
-Las ejecuciones reejecutadas se pueden identificar mediante el valor `RE_EXECUTE` en el `trigger` field.
+Las ejecuciones que se han vuelto a ejecutar se pueden identificar mediante el valor `RE_EXECUTE` en el campo `trigger`.

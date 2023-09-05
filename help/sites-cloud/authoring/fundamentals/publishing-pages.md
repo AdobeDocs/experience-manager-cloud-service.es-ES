@@ -5,15 +5,15 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 71%
+ht-degree: 97%
 
 ---
 
 # Publicar páginas {#publishing-pages}
 
-Una vez que haya creado y revisado el contenido en el entorno de creación, el objetivo es [haga que esté disponible en su sitio web público](/help/sites-cloud/authoring/getting-started/concepts.md) (su entorno de publicación).
+Cuando haya creado y revisado el contenido en el entorno de creación, el objetivo consiste en [que esté disponible en su sitio web público](/help/sites-cloud/authoring/getting-started/concepts.md) (su entorno de publicación).
 
-Esto se conoce como publicación de una página. Cuando desee eliminar una página del entorno de publicación, se denomina cancelación de publicación. Al publicar y cancelar la publicación, la página permanece disponible en el entorno de creación para realizar más cambios hasta que la elimine.
+Es lo que se denomina publicar una página. Quitar una página del entorno de publicación, se denomina cancelar la publicación. Al publicar y cancelar la publicación, la página permanece disponible en el entorno de creación para realizar más cambios hasta que se elimine.
 
 Puede publicar una página (o cancelar su publicación) inmediatamente o en un momento posterior predefinido.
 
@@ -37,14 +37,14 @@ Puede encontrar diferentes términos relacionados con la publicación al trabaja
 
 ## Publicar páginas {#publishing-pages-1}
 
-Según su ubicación, puede publicar lo siguiente:
+En función de su ubicación, puede publicar lo siguiente:
 
 * [Desde el editor de páginas](#publishing-from-the-editor)
 * [Desde la consola Sitios](#publishing-from-the-console)
 
 >[!NOTE]
 >
->Si no tiene los privilegios necesarios para publicar una página específica:
+>Si no dispone de los privilegios necesarios para publicar una página específica:
 >
 >* Se activa un flujo de trabajo para notificar a la persona adecuada su solicitud de publicación.
 >* Este flujo de trabajo puede haber sido personalizado por el equipo de desarrollo.
@@ -64,14 +64,14 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 1. En función de si la página tiene referencias que es necesario publicar:
 
-   * La página se publica directamente si no hay referencias por publicar.
-   * Si la página tiene referencias que es necesario publicar, estas se enumeran en la **Publish** asistente, donde puede:
+   * La página se publica directamente si no hay ninguna referencia por publicar.
+   * Si la página tiene referencias que es necesario publicar, se enumeran en el asistente **Publicar**, donde puede:
       * Especificar qué recurso/etiqueta/etc. desea publicar junto con la página y, a continuación, utilizar **Publicar** para completar el proceso.
       * Utilizar **Cancelar** para anular la acción.
 
    ![Publicación de referencias con la página](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. Si selecciona **Publicar**, se replicará la página en el entorno de publicación. En el editor de páginas, se muestra un banner de información que confirma la acción de publicación.
+1. Si selecciona **Publicar**, se replicará la página en el entorno de publicación. En el editor de páginas se muestra un mensaje que confirma la acción de publicación.
 
    ![Mensaje de información de estado de publicación](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -81,7 +81,7 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 >[!NOTE]
 >
->La publicación desde el editor no es profunda; es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
+>La publicación desde el editor es una publicación superficial; es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
 
 >[!NOTE]
 >
@@ -112,11 +112,11 @@ Para publicar una página con Publicación rápida:
 
 >[!NOTE]
 >
->Publicación rápida es una publicación superficial, es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
+>La Publicación rápida es una publicación superficial, es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
 
 #### Administrar publicación     {#manage-publication}
 
-**Administrar publicación** ofrece más opciones que **Publicación rápida**, permitiendo la inclusión de páginas secundarias, la personalización de las referencias y el inicio de cualquier flujo de trabajo aplicable, así como la opción de publicar en un momento posterior.
+**Administrar publicación** ofrece más opciones que **Publicación rápida**, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de la opción de publicar en una fecha posterior.
 
 Para publicar o cancelar la publicación de una página con Administrar publicación:
 
@@ -134,7 +134,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
      Elija realizar esa acción ahora o en una fecha posterior.
 
-     La publicación inicia posteriormente un flujo de trabajo para publicar la página o páginas seleccionadas a la hora especificada. Por el contrario, cancelar la publicación más adelante inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento específico.
+     Posponer la publicación inicia un flujo de trabajo para publicar la página o páginas seleccionadas en el momento especificado. Por el contrario, cancelar la publicación más adelante inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento específico.
 
      >[!NOTE]
      >
@@ -168,11 +168,11 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    ![Administrar opciones de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   El cuadro de diálogo **Referencias publicadas** muestra las referencias para el contenido seleccionado. De forma predeterminada, todas están seleccionadas y se publican o dejan de publicar, pero puede desactivar la casilla para anular la selección de modo que no se incluyan en la acción.
+   El cuadro de diálogo **Referencias publicadas** muestra las referencias para el contenido seleccionado. De forma predeterminada, todas se seleccionan y se publican o dejan de publicar, pero puede anular la marca de selección de las que no desee, de modo que no se incluyan en la acción.
 
    Haga clic en **Listo** para guardar los cambios o en **Cancelar** para cancelar la selección y volver al asistente.
 
-   En el asistente, la variable **Referencias** se actualiza para reflejar su selección de referencias a publicar o dejar de publicar.
+   En el asistente, la columna **Referencias** se actualiza para reflejar su selección de referencias a publicar o dejar de publicar.
 
    ![Administrar páginas de selección de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -203,11 +203,11 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    >[!NOTE]
    >
-   >El **Flujos de trabajo** Este paso se muestra en función de los derechos que pueda tener o no el usuario. Consulte la nota anterior en esta página con respecto a los privilegios de publicación y Administración del acceso a los flujos de trabajo y [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md) para obtener más información.
+   >El paso **Flujos de trabajo** se muestra en función de los derechos que tenga o no su usuario o usuaria. Para obtener más información, consulte la nota anterior en esta página respecto a los privilegios de publicación, así como la administración del acceso a los flujos de trabajo y [aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md).
 
-   Los recursos se agrupan por los flujos de trabajo activados y cada una de las opciones dadas para:
+   Los recursos se agrupan por los flujos de trabajo activados y a cada uno se le ofrecen opciones para:
 
-   * Defina el título del flujo de trabajo.
+   * Definir el título del flujo de trabajo.
    * Mantener el paquete del flujo de trabajo, siempre que este sea compatible con varios recursos.
    * Definir un título para el paquete de flujos de trabajo si se eligió la opción para mantener dicho paquete.
 
@@ -254,13 +254,13 @@ Al igual que [utiliza la opción Administrar publicación para publicar](#manage
 
 ## Publicar y cancelar la publicación de un árbol {#publishing-and-unpublishing-a-tree}
 
-Cuando ha introducido o actualizado un número considerable de páginas de contenido (todas ellas residentes en la misma página raíz), puede resultar más fácil publicar todo el árbol en una acción.
+Cuando haya introducido o actualizado un número considerable de páginas de contenido, todas ellas residentes dentro de la misma página raíz, puede resultar más fácil publicar todo el árbol en una acción.
 
 Para hacerlo, puede utilizar la opción [Administrar publicación](#manage-publication) de la consola Sitios.
 
 1. En la consola Sitios, seleccione la página raíz de árbol que desea publicar o dejar de publicar y seleccione **Administrar publicación**.
-1. Se inicia el asistente **Administrar publicación**. Elija si publica o cancela la publicación y cuándo debe producirse, y seleccione **Siguiente** para continuar.
-1. En el **Ámbito** , seleccione la página raíz y seleccione **Incluir elementos secundarios**.
+1. Se inicia el asistente **Administrar publicación**. Elija si desea publicar o cancelar la publicación y cuándo debe producirse, y seleccione **Siguiente** para continuar.
+1. En el paso **Ámbito**, seleccione la página raíz y seleccione **Incluir tareas secundarias**.
 
    ![Administrar páginas de selección de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 

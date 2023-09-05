@@ -7,7 +7,7 @@ exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 72%
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ El Asistente para copia de idioma es una experiencia guiada para crear e instrum
 
 >[!TIP]
 >
->Si acaba de empezar a traducir contenido, consulte [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites AEM AEM mediante las potentes herramientas de traducción de, ideal para aquellos que no tengan experiencia ni en traducción ni en traducción.
+>Si acaba de empezar a traducir contenido, consulte nuestro [Recorrido de traducción de Sites,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia con la traducción o con AEM.
 
 >[!NOTE]
 >

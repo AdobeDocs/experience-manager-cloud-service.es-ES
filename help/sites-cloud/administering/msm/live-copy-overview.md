@@ -1,13 +1,13 @@
 ---
-title: Información general de Live Copy
-description: Obtenga información acerca de los conceptos básicos de la consola de información general de Live Copy para comprender rápidamente el estado de las Live Copies para sincronizar contenido.
+title: Información general de la consola de Live Copy
+description: Obtenga información acerca de los conceptos básicos de la consola de información general de Live Copy para comprender enseguida el estado de Live Copies y sincronizar el contenido.
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ La **Información general de Live Copy** se puede abrir desde el panel lateral *
 La **Información general de Live Copy** se puede abrir al ver las propiedades de una página de modelo:
 
 1. Abra las **Propiedades** de la página de modelo adecuada.
-1. Abra el **Modelo** pestaña: la **Información general de Live Copy** se muestra en la barra de herramientas superior:
+1. Abra la pestaña **Modelo**, la **Información general de Live Copy** se muestra en la barra de herramientas superior:
 
    ![Pestaña Propiedades del modelo](../assets/live-copy-blueprint-tab.png)
 

@@ -4,14 +4,14 @@ description: AEM Obtenga información sobre cómo definir las propiedades necesa
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2279'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Edición de las propiedades de página   {#editing-page-properties}
 
-Puede definir las propiedades para una página. Estas pueden variar según la naturaleza de la página. Por ejemplo, algunas páginas podrían estar conectadas a una Live Copy, mientras que otras no lo están y la información de la Live Copy está disponible según corresponda.
+Puede definir las propiedades para una página. Estas pueden variar según la naturaleza de la página. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy, mientras que otras no lo están, y la información de la Live Copy estará disponible según corresponda.
 
 ## Propiedades de página {#page-properties}
 
@@ -40,7 +40,7 @@ Las propiedades se distribuyen entre varias pestañas.
    * **Anotaciones de marca**
 
       * **Sobrescribir**: marque para definir el slug de marca en esta página.
-         * El valor lo hereda cualquier página secundaria a menos que también tenga su **Anular** valores establecidos.
+         * El valor lo hereda cualquier página secundaria a menos que también tenga valores establecidos de **Sobrescribir**.
       * **Sobrescribir valor**: el texto del slug de marca que se añadirá al título de la página.
          * El valor se anexa al título de la página después de un carácter de barra vertical como “Ciclismo en Toscana | Siempre listo para WKND”
 
@@ -50,8 +50,8 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Títulos y descripción de Más**
 
-   * **Título de página**: un título que se usará en la página. Normalmente se utiliza en los componentes de título. Si está vacío, la variable **Título** se utiliza.
-   * **Título de navegación** : puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea algo más conciso). Si está vacío, la variable **Título** se utiliza.
+   * **Título de página**: un título que se usará en la página. Normalmente se utiliza en los componentes de título. Si está vacío, se utiliza **Título**.
+   * **Título de navegación**: puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea algo más conciso). Si está vacío, se utiliza **Título**.
    * **Subtítulo**: un subtítulo que se usará en la página.
    * **Descripción**: la descripción de la página, su propósito o cualquier otro detalle que quiera añadir.
 
@@ -62,15 +62,15 @@ Las propiedades se distribuyen entre varias pestañas.
   > Consulte [Horas de activación y desactivación: configuración de activador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener detalles sobre cómo configurar la replicación automática relacionada.
 
   >[!NOTE]
-  >Si la variable **Tiempo de activación** o **Tiempo de inactividad** se encuentra en el pasado, y se configura la replicación automática, la acción relevante se activa inmediatamente.
+  >Si el **Tiempo de activación** o el **Tiempo de desactivación** se sitúan en el pasado y se configura la replicación automática, la acción relevante se activa de inmediato.
 
-   * **Tiempo de activación** : La fecha y la hora a las que se hace visible (procesada) la página publicada en el entorno de publicación. La página debe publicarse, ya sea de forma manual o mediante replicación automática preconfigurada.
+   * **Tiempo de activación**: la fecha y hora a las que se hace visible (procesada) la página publicada en el entorno de publicación. La página debe publicarse, ya sea de forma manual o mediante replicación automática preconfigurada.
 
-      * Si ya [publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) esta página se mantiene inactiva (oculta) hasta que se procesa a la hora especificada.
+      * Si ya se ha [publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), esta página se mantiene inactiva (oculta) hasta que se procese a la hora especificada.
       * Si no se publica y se configura para la replicación automática, la página se publica automáticamente y, a continuación, se procesa a la hora especificada.
-      * Si no se publica y no se configura para la replicación automática, la página no se publica automáticamente, por lo que se ve un error 404 al intentar acceder a la página.
+      * Si no se publica y no está configurada para la replicación automática, la página no se publica automáticamente, por lo que aparece un error 404 cuando se intenta acceder a ella.
 
-   * **Tiempo de inactividad** - Similar y usado a menudo en combinación con **Tiempo de activación**, define el momento en el que la página publicada se oculta en el entorno de publicación.
+   * **Tiempo de desactivación**: similar a **Tiempo de activación** y usado a menudo en combinación, define el momento en el que la página publicada se oculta en el entorno de publicación.
 
    * Deje estos campos (**Tiempo de activación** y **Tiempo de desactivación**) vacíos para las páginas que desea publicar de inmediato y disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
 
@@ -115,7 +115,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Configuración de plantilla**
 
-   * **Plantillas permitidas** - [Define la lista de plantillas disponibles](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dentro de esta subrama
+   * **Plantillas permitidas**: [define la lista de plantillas que están disponibles](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dentro de esta rama secundaria
 
 * **Requisito de autenticación**
 
@@ -133,7 +133,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **SEO**
 
-   * **URL canónica** : se puede utilizar para sobrescribir la URL canónica de la página; si se deja en blanco, la URL de la página es su URL canónica
+   * **URL canónica**: se puede usar para sobrescribir la dirección URL canónica de la página; si se deja en blanco, la dirección URL de la página será su dirección URL canónica
 
    * **Etiquetas de robots**: seleccione las etiquetas de robots para controlar el comportamiento de los rastreadores de los motores de búsqueda.
 
@@ -141,7 +141,7 @@ Las propiedades se distribuyen entre varias pestañas.
      >
      >Algunas de las opciones entran en conflicto entre sí. En caso de conflicto, la opción más permisiva tiene prioridad.
 
-   * **Generar mapa del sitio** : cuando se selecciona, se genera un archivo sitemap.xml para esta página y sus descendientes
+   * **Generar mapa del sitio**: cuando se selecciona, se genera un archivo sitemap.xml para esta página y sus descendientes.
 
 ### Imágenes {#images}
 
@@ -196,11 +196,11 @@ Las propiedades se distribuyen entre varias pestañas.
 
 ### Modelo {#blueprint}
 
-Esta pestaña solo está visible para páginas que sirven como modelos. Los modelos sirven de base para Live Copies y forman parte de [Administración de varios sitios](/help/sites-cloud/administering/msm/overview.md).
+Esta pestaña solo está visible para páginas que sirven como modelos. Los modelos sirven de base para Live Copies y forman parte de la [Administración de varios sitios](/help/sites-cloud/administering/msm/overview.md).
 
-* **Live Copies actuales** - Enumera las páginas que se basan en (es decir, que son Live Copies de) esta página de modelo
+* **Live Copies actuales**: enumera las páginas que se basan en (es decir, que son Live Copies) esta página modelo
 
-* **Configuraciones de despliegue** : controla las circunstancias dentro de las que se propagan las modificaciones a Live Copy
+* **Configuraciones de despliegue**: controla las circunstancias en las que se propagan las modificaciones a la Live Copy
 
 ### Live Copy {#live-copy}
 
@@ -223,7 +223,7 @@ Esta pestaña solo está visible para páginas configuradas como Live Copies. Al
 
    * **Herencia de Live Copy**: si está marcada, la configuración de Live Copy es eficaz en todas las tareas secundarias.
    * **Heredar configuraciones de despliegue de la página principal**: si está marcada, la configuración de despliegue se hereda de la página principal de la página
-   * **Elegir configuración de despliegue** : Define las circunstancias en las que se propagan las modificaciones desde el modelo y solo está disponible cuando **Heredar configuraciones de despliegue del elemento principal** no está seleccionado
+   * **Elija la configuración de despliegue**: define las circunstancias en las que se propagan las modificaciones desde el modelo y solo está disponible cuando **Heredar configuraciones de despliegue de la página principal** no está seleccionado
 
 ### Vista previa {#preview}
 
@@ -253,7 +253,7 @@ A través de una configuración sencilla, el autor de contenido ahora puede habi
 
    * **Estrategia de almacenamiento en caché y frecuencia de actualización del contenido**: esta opción define el modelo de almacenamiento en caché para la PWA.
    * **Archivos para almacenar en caché para su uso sin conexión**
-      * **Almacenamiento en caché previo de archivos (previsualización técnica)** AEM : los archivos alojados en los que se ha realizado la se guardan en la caché del explorador local cuando el trabajador de servicio se instala y antes de que se utilice
+      * **Almacenamiento en caché previo de archivos (previsualización técnica)**: estos archivos alojados en AEM se guardan en la caché del explorador local cuando el trabajador de servicio se instale y antes de que se utilice
       * **Bibliotecas del lado del cliente**: bibliotecas del lado del cliente para almacenar en caché para la experiencia sin conexión.
       * **Inclusiones de rutas**: las solicitudes de red para las rutas definidas se interceptan y el contenido almacenado en caché se devuelve de acuerdo con la estrategia de almacenamiento en caché y frecuencia de actualización del contenido configurado.
       * **Exclusiones de rutas**: estos archivos nunca se almacenarán en caché, independientemente de la configuración del almacenamiento en caché previo de archivos e inclusiones de rutas.
@@ -300,7 +300,7 @@ Puede seleccionar varias páginas para editarlas por lotes mediante varios méto
 * Al examinar la consola **Sites**
 * Después de usar **Buscar** para localizar un conjunto de páginas
 
-Después de seleccionar las páginas y hacer clic o pulsar en **Opción Propiedades**, se muestran las propiedades por lotes:
+Después de seleccionar las páginas y luego hacer clic o pulsar la opción **Propiedades**, se muestran las propiedades por lotes:
 
 ![Propiedades de la página de edición masivas](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -308,7 +308,7 @@ Solo se pueden editar por lotes las siguientes páginas:
 
 * Las que compartan el mismo tipo de recurso.
 * Las que no formen parte de una Live Copy.
-   * Si alguna de las páginas está en una Live Copy, se muestra un mensaje cuando se abren las propiedades.
+   * Si alguna de las páginas está en una Live Copy, se muestra un mensaje cuando se abran las propiedades.
 
 Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 
@@ -329,6 +329,6 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 * **Editar**
 
    * Puede actualizar los valores en los campos disponibles.
-      * Los nuevos valores se aplican a todas las páginas seleccionadas al seleccionar **Listo**.
+      * Los nuevos valores se aplican a todas las páginas seleccionadas cuando selecciona **Listo**.
       * Cuando el campo admite varios valores (por ejemplo, etiquetas), puede agregar un nuevo valor o eliminar un valor común.
-   * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se indican con un valor especial, como el texto `<Mixed Entries>`.
+   * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se indican con un valor especial; por ejemplo, el texto `<Mixed Entries>`.

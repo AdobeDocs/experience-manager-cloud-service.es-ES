@@ -5,13 +5,13 @@ exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
 # Centro de acciones {#actions-center}
 
-AEM El Cloud Service de as envía notificaciones por correo electrónico al Centro de acciones cuando se producen incidentes críticos que requieren una acción inmediata y recomendaciones proactivas para las optimizaciones. Algunos ejemplos incluyen una cola bloqueada o un conjunto de credenciales que caducan; el conjunto completo de tipos de notificación el Centro de acciones se puede ver en la [tabla siguiente](#supported-notification-types), que se ampliará con el tiempo.
+AEM as Cloud Service envía notificaciones al Centro de acciones por correo electrónico cuando se producen incidentes críticos que requieren una acción inmediata y recomendaciones proactivas para optimizaciones. Algunos ejemplos incluyen una cola bloqueada o un conjunto de credenciales que caducan; el conjunto completo de tipos de notificación el Centro de acciones se puede ver en la [tabla siguiente](#supported-notification-types), que se ampliará con el tiempo.
 
 Cuando se recibe una notificación por correo electrónico del Centro de acciones, se puede hacer clic en ella para abrir el Centro de acciones de AEM as a Cloud Service, con una ventana emergente que muestra contexto adicional en el que se explica la acción recomendada para el cliente.
 
@@ -41,7 +41,7 @@ Al hacer clic en el correo electrónico, se le dirigirá al Centro de acciones, 
 
 Al hacer clic en el vínculo **Más información** se conduce al usuario a este artículo, donde el tipo de notificación se puede comprobar en la siguiente [tabla de tipos de notificaciones aceptadas](#supported-notification-types), que proporciona instrucciones sobre la acción realizar.
 
-En el Centro de acciones, puede ver una lista de otras notificaciones recientes. Se recomienda que, mediante la lista Acciones, acepte una notificación para indicar al Adobe que su organización conoce la tarea y que, posteriormente, la resuelva cuando se hayan tomado medidas correctivas.
+En el Centro de acciones, puede ver una lista de otras notificaciones recientes. Se recomienda que, en la lista Acciones, reconozca una notificación para indicar a Adobe que su organización está al tanto de la tarea y que luego la resuelva cuando se hayan adoptado medidas correctivas.
 
 ![Lista de notificaciones](/help/operations/assets/notification-list.png)
 

@@ -7,7 +7,7 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Los metadatos facilitan la categorización y organización de los recursos y ayudan a los usuarios que buscan un recurso específico.
@@ -291,12 +291,12 @@ Se ofrece una herramienta (Editor de esquemas de metadatos) para definir el esqu
 
 1. Haga clic en un componente que acabe de arrastrar. En la pestaña Configuración que se abre en el panel derecho, rellene los campos siguientes:
 
-   1. Especifique una Etiqueta de campo para utilizarla como nombre para mostrar encima del campo colocado en el esquema (por ejemplo: Departamento)
-   1. En el campo Asignar a propiedad, puede ver un valor rellenado previamente **&#39;./jcr:content/metadata/default&#39;**. Cambie el &#39;**predeterminado**&#39; a un nombre de propiedad deseado, que se utiliza para almacenar la propiedad en el repositorio crx (por ejemplo: &#39;./jcr:content/metadata/department&#39;)
+   1. Especifique una etiqueta de campo para usarla como nombre para mostrar encima del campo colocado en el esquema (por ejemplo: Departamento)
+   1. En el campo Asignar a propiedad, puede ver un valor rellenado previamente **&#39;./jcr:content/metadata/default&#39;**. Cambie “**default**” a un nombre de propiedad deseado, que se utiliza para almacenar la propiedad en el repositorio crx (por ejemplo: &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >No cambie el prefijo &#39;./jcr:content/metadata/&#39;, ya que define la ruta donde se almacena la propiedad.
+      >No cambie el prefijo &#39;./jcr:content/metadata/’, ya que define la ruta en la que se almacena la propiedad.
       >
       >Además, el nombre de la propiedad debe ser único para evitar escribir valores para dos o más propiedades en la misma ubicación del repositorio. Por lo tanto, se recomienda cambiar el valor “default”.
 

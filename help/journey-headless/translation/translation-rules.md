@@ -5,7 +5,7 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ En la Interfaz de usuario **Configuración de traducción**, hay un número de o
 1. AEM guarda la configuración.
 1. Debe seleccionar el contexto que acaba de crear y, luego, pulsar o hacer clic en **Editar**. Esto abre el **Editor de reglas de traducción** para configurar las propiedades.
    ![Editor de reglas de traducción](assets/translation-rules-editor.png)
-1. De forma predeterminada, todas las configuraciones se heredan de la ruta principal, en este caso, `/content/dam`. Desmarque la opción **Heredar de`/content/dam`** para que pueda añadir campos adicionales a la configuración.
+1. De forma predeterminada, todas las configuraciones se heredan de la ruta principal, en este caso, `/content/dam`. Desmarque la opción **Heredar de`/content/dam`** para añadir campos adicionales a la configuración.
 1. Una vez desmarcado, en la sección **General** de la lista, añada los nombres de propiedad de los modelos de fragmento de contenido que haya [identificado anteriormente como campos para traducción.](getting-started.md#content-models)
    1. Introduzca el nombre de la propiedad en el campo **Nueva propiedad**.
    1. Las opciones **Traducir** y **Heredar** se marcan automáticamente.

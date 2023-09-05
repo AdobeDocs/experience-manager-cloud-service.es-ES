@@ -6,7 +6,7 @@ contentOwner: khsingh
 source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
 workflow-type: tm+mt
 source-wordcount: '1343'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service incluye algunos cambios import
 
 * Los desarrolladores mantienen el código para el Cloud Service y el entorno de desarrollo local en un [repositorio de Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html?lang=es) común. Un repositorio de Git, basado en el Arquetipo del proyecto de AEM, se genera automáticamente al crear un programa en AEM as a Cloud Service.
 
-  ![AEM creación automática de un repositorio de git en el programa de as a cloud service de](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![creación automática de un repositorio de Git en el programa de AEM as a Cloud Service](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * El flujo de desarrollo para Forms as a Cloud Service se alinea con el Arquetipo del proyecto de AEM para AEM Cloud Service. Con todo, se requieren algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. En un nivel superior, AEM requiere una separación de contenido y código en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Utilice la herramienta [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=es)Modernizador de repositorio para reestructurar los paquetes de proyectos existentes separando contenido y código en paquetes discretos para que sean compatibles con la estructura de proyectos definida para Adobe Experience Manager as a Cloud Service.
 
@@ -111,11 +111,11 @@ Forms as a Cloud Service proporciona API RESTful de generación y manipulación 
 
 * Puede utilizar las API de comunicaciones para elaborar documentos personalizados bajo demanda o por lotes en Forms as a Cloud Service. Puede utilizar un entorno de Forms de AEM 6.5 para comunicaciones interactivas y casos de uso de la interfaz de usuario del agente.
 
-## Consulte Siguiente
+## Ver siguiente
 
-* [Migración de un AEM Forms (entornos On-Premise y AMS) a AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-* [Agregar o crear página de Forms adaptable a AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Crear un formulario adaptable (componentes principales)](/help/forms/creating-adaptive-form-core-components.md)
+* [Migración desde AEM Forms (entornos On-Premise y AMS) a AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [Agregar o crear formularios adaptables en la página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Creación de un formulario adaptable (componentes principales)](/help/forms/creating-adaptive-form-core-components.md)
 
 ## Información adicional
 

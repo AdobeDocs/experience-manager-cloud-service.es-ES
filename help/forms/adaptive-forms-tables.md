@@ -9,7 +9,7 @@ exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2492'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html) |
 | AEM as a Cloud Service | Este artículo |
 
 
@@ -309,13 +309,13 @@ Para combinar estos datos con la tabla durante la ejecución, es necesario apunt
 
 Si ha creado un formulario adaptable basado en una plantilla de formulario XFA, los elementos XFA están disponibles en la pestaña Modelo de datos del buscador de contenido de AEM. Puede arrastrar y soltar estos elementos XFA, incluidas tablas, en el formulario adaptable.
 
-El elemento de tabla XFA está asignado al componente Tabla y funciona de forma predeterminada en formularios adaptables. Todas las propiedades y funcionalidades de la tabla XDP se conservan cuando se mueven al formulario adaptable y se puede realizar cualquier operación en él, igual que con la tabla de formulario adaptable nativa. Por ejemplo, si una fila de una tabla XDP se marca como repetible, también se repite cuando se suelta en el formulario adaptable.
+El elemento de tabla XFA está asignado al componente Tabla y funciona de forma predeterminada en formularios adaptables. Todas las propiedades y funcionalidades de la tabla XDP se conservan cuando se mueven al formulario adaptable y se puede realizar cualquier operación en él, igual que con la tabla de formulario adaptable nativa. Por ejemplo, si una fila de una tabla XDP se marca como repetible, también se repite cuando se suelte en el formulario adaptable.
 
 Además, puede arrastrar y soltar el subformulario XDP para agregar una fila nueva en la tabla. Sin embargo, tenga en cuenta que la colocación de un subformulario anidado no funciona.
 
 >[!NOTE]
 >
->Una tabla XDP sin una fila de encabezado no se asignará al componente Tabla de un formulario adaptable. En su lugar, se asigna al componente Panel del formulario adaptable con diseño fluido. Además, cuando se agrega una tabla anidada de un XDP a un formulario adaptable, la tabla exterior se convierte en un panel mientras se mantiene la tabla interna.
+>Una tabla XDP sin una fila de encabezado no se asignará al componente Tabla de un formulario adaptable. En lugar de ello, se asigna al componente Panel del formulario adaptable con diseño fluido. Además, cuando se agrega una tabla anidada de un XDP a un formulario adaptable, la tabla exterior se convierte en un panel mientras se mantiene la tabla interna.
 
 Además, puede arrastrar y soltar un grupo de elementos de tipo complejo XSD para crear una fila de tabla. Se crea una fila nueva justo debajo de la fila en la que se han colocado los elementos. Las celdas creadas mediante los elementos de tipo complejos XSD mantienen una referencia de enlace al XSD. También puede reemplazar una celda del cuerpo por un elemento de tipo complejo XSD al soltar el elemento en la celda.
 
@@ -323,7 +323,7 @@ Además, puede arrastrar y soltar un grupo de elementos de tipo complejo XSD par
 >
 >El número de elementos de un componente de tabla XDP, un subformulario o un tipo complejo XSD no puede superar el número de celdas de una fila. Por ejemplo, no se pueden soltar cuatro elementos en una fila que tenga solo tres celdas. Se producirá un error.
 >
->Si el número de elementos es menor que el número de celdas de una fila, la nueva fila agrega primero celdas basadas en los elementos y, a continuación, se agregan celdas predeterminadas para rellenar las celdas restantes de la fila. Por ejemplo, si suelta un grupo de tres elementos en una fila que tiene cuatro celdas, las tres primeras celdas se basan en los elementos que haya soltado y la otra celda es la celda de tabla predeterminada.
+>Si el número de elementos es menor que el número de celdas de una fila, la nueva fila agrega primero celdas basadas en los elementos y, a continuación, se agregan celdas predeterminadas para rellenar las celdas restantes de la fila. Por ejemplo, si suelta un grupo de tres elementos en una fila que tiene cuatro celdas, las tres primeras se basan en los elementos que haya soltado y la otra celda es la de tabla predeterminada.
 
 ## Consideraciones clave {#key-considerations}
 

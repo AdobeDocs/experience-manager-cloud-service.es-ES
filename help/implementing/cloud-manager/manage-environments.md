@@ -1,18 +1,18 @@
 ---
 title: Administración de entornos
-description: Obtenga información sobre los tipos de entornos que puede crear y cómo crearlos para su proyecto de Cloud Manager.
+description: Obtenga información sobre los tipos de entornos que puede crear y cómo para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
 source-wordcount: '2558'
-ht-degree: 42%
+ht-degree: 88%
 
 ---
 
 
 # Administración de entornos {#managing-environments}
 
-Obtenga información sobre los tipos de entornos que puede crear y cómo crearlos para su proyecto de Cloud Manager.
+Obtenga información sobre los tipos de entornos que puede crear y cómo para su proyecto de Cloud Manager.
 
 ## Tipos de entornos {#environment-types}
 
@@ -22,7 +22,7 @@ Un usuario con los permisos necesarios puede crear los siguientes tipos de entor
 
 * **Desarrollo**: se puede crear un entorno de desarrollo para fines de desarrollo y prueba, y solo se puede asociar con canalizaciones que no sean de producción.
 
-* **Desarrollo rápido** : Un entorno de desarrollo rápido (RDE) permite a un desarrollador implementar y revisar cambios rápidamente, minimizando la cantidad de tiempo necesario para probar funciones que han demostrado funcionar en un entorno de desarrollo local. Consulte [la documentación del entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obtener detalles acerca de cómo utilizar un RDE.
+* **Desarrollo rápido**: un entorno de desarrollo rápido (RDE) permite al desarrollador implementar y revisar cambios rápidamente, minimizando la cantidad de tiempo necesario para probar funciones que han demostrado su eficacia en un entorno de desarrollo local. Consulte [la documentación del entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obtener detalles acerca de cómo utilizar un RDE.
 
 Las funcionalidades de los entornos individuales dependen de las soluciones habilitadas en el [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) del entorno.
 
@@ -41,7 +41,7 @@ Las funcionalidades de los entornos individuales dependen de las soluciones habi
 
 1. Haga clic en el programa para el que desea agregar un entorno.
 
-1. Desde el **Resumen del programa** página, haga clic en **Agregar entorno** en el **Entornos** para añadir un entorno.
+1. En la página **Información general del programa**, haga clic en **Agregar entorno** en la tarjeta **Entornos** para agregar uno.
 
    ![Tarjeta Entornos](assets/no-environments.png)
 
@@ -57,7 +57,7 @@ Las funcionalidades de los entornos individuales dependen de las soluciones habi
       * El número de entornos disponibles/utilizados se muestra entre paréntesis detrás del nombre de tipo de entorno.
    * Proporcione un **Nombre** del entorno.
    * Proporcione una **Descripción** del entorno.
-   * Si va a agregar un **Producción + Fase** entorno, debe proporcionar un nombre de entorno y una descripción tanto para los entornos de producción como de ensayo.
+   * Si va a agregar un entorno de **Producción + Fase**, debe proporcionar un nombre de entorno y una descripción tanto para los entornos de producción como de ensayo.
    * Seleccione una **Región principal** de la lista desplegable.
       * La región principal no se puede cambiar después de crearse.
       * En función de los derechos disponibles, puede configurar [varias regiones](#multiple-regions).
@@ -70,7 +70,7 @@ La pantalla **Información general** ahora muestra el nuevo entorno en la tarjet
 
 ## Varias regiones de publicación {#multiple-regions}
 
-Un usuario con **Propietario del negocio** Esta función puede configurar entornos de producción y ensayo para incluir hasta tres regiones de publicación adicionales, además de la región principal. Las regiones de publicación adicionales pueden mejorar la disponibilidad. Consulte la [Documentación adicional de regiones de publicación](/help/operations/additional-publish-regions.md) para obtener más información.
+Un usuario con la función de **Propietario de empresa** puede configurar entornos de producción y ensayo para incluir hasta tres regiones de publicación adicionales, además de la región principal. Las regiones de publicación adicionales pueden mejorar la disponibilidad. Consulte la [Documentación adicional de regiones de publicación](/help/operations/additional-publish-regions.md) para obtener más información.
 
 >[!TIP]
 >
@@ -78,15 +78,15 @@ Un usuario con **Propietario del negocio** Esta función puede configurar entorn
 
 ### Adición de varias regiones de publicación en un entorno nuevo {#add-regions}
 
-Al agregar un entorno, puede elegir configurar regiones adicionales además de la región principal.
+Al añadir un entorno nuevo, puede elegir configurar regiones adicionales además de la principal.
 
 1. Seleccione la **Región principal**.
    * La región principal no se puede cambiar después de la creación del entorno.
-1. Seleccione la opción **Agregar regiones de publicación adicionales** y un nuevo **Regiones de publicación adicionales** aparece la lista desplegable de opciones.
-1. En el **Regiones de publicación adicionales** , seleccione una región adicional.
+1. Seleccione la opción **Agregar regiones de publicación adicionales** y aparecerá una nueva **lista desplegable de Regiones de publicación adicionales**. 
+1. En el menú desplegable **Regiones de publicación adicionales**, seleccione una región adicional.
 1. La región seleccionada se añade debajo del menú desplegable para indicar su selección.
    * Haga clic o pulse en `X` situado junto a la región seleccionada para que pueda anular su selección.
-1. Seleccione otra región de la lista **Regiones de publicación adicionales** desplegable para añadir otra región.
+1. Seleccione otra región en el menú desplegable **Regiones de publicación adicionales** para añadir otra región.
 1. Haga clic o pulse **Guardar** cuando esté listo para crear su entorno.
 
 ![Selección de varias regiones](assets/select-multiple-regions.png)
@@ -95,13 +95,13 @@ Las regiones seleccionadas se aplican a los entornos de producción y ensayo.
 
 Si no especifica ninguna región adicional, [puede hacerlo más adelante después de crear los entornos.](#edit-regions)
 
-Si desea aprovisionar [redes avanzadas](/help/security/configuring-advanced-networking.md) para el programa, se recomienda realizar este aprovisionamiento antes de agregar regiones de publicación adicionales a los entornos mediante la API de Cloud Manager. De lo contrario, el tráfico adicional de las regiones de publicación pasa por el proxy de la región principal.
+Si desea proporcionar [redes avanzadas](/help/security/configuring-advanced-networking.md) para el programa, se recomienda hacerlo antes de añadir regiones de publicación adicionales a los entornos mediante la API de Cloud Manager. De lo contrario, el tráfico de las regiones de publicación adicionales pasará a través del proxy de la región principal.
 
 ### Edición de varias regiones de publicación {#edit-regions}
 
 Si no ha especificado ninguna región adicional inicialmente, puede hacerlo después de crear los entornos si tiene los derechos necesarios.
 
-También puede quitar regiones de publicación adicionales. Sin embargo, solo puede añadir o eliminar regiones en una transacción. Si debe agregar una región y quitar una región, primero agregue, guarde el cambio y, a continuación, quite (o a la inversa).
+También puede quitar regiones de publicación adicionales. Sin embargo, solo puede añadir o eliminar regiones en una transacción. Si necesita añadir una región y quitar una región, primero añádala, guarde el cambio y, a continuación, quítela (o viceversa).
 
 1. En la consola Información general del programa de su programa, haga clic en el botón de puntos suspensivos del entorno de producción y seleccione **Editar** en el menú.
 
@@ -115,19 +115,19 @@ También puede quitar regiones de publicación adicionales. Sin embargo, solo pu
 
 1. Pulse o haga clic en **Guardar** para guardar los cambios.
 
-Los cambios realizados en el entorno de producción se aplican tanto a los entornos de producción como de ensayo. Los cambios en varias regiones de publicación solo se pueden editar en el entorno de producción.
+Los cambios realizados en el entorno de producción se aplican tanto a los entornos de producción como a los de ensayo. Los cambios en varias regiones de publicación solo se pueden editar en el entorno de producción.
 
-Si desea aprovisionar [redes avanzadas](/help/security/configuring-advanced-networking.md) para el programa, se recomienda realizar este aprovisionamiento antes de agregar regiones de publicación adicionales a los entornos. De lo contrario, el tráfico de las regiones de publicación adicionales pasa a través del proxy de la región principal.
+Si desea proporcionar [redes avanzadas](/help/security/configuring-advanced-networking.md) para el programa, se recomienda hacerlo antes de añadir regiones de publicación adicionales a los entornos. De lo contrario, el tráfico de las regiones de publicación adicionales pasará a través del proxy de la región principal.
 
 ## Detalles del entorno {#viewing-environment}
 
-Puede usar el complemento **Entornos** en la página de información general para acceder a los detalles de un entorno de dos formas.
+Puede usar la tarjeta **Entornos** en la página de información general para acceder a los detalles de un entorno de dos formas.
 
-1. Desde el **Información general** , haga clic en **Entornos** en la parte superior de la pantalla.
+1. En la página **Información general**, haga clic en la pestaña **Entornos** en la parte superior de la pantalla.
 
    ![Pestaña Entornos](assets/environments-tab2.png)
 
-   * También puede hacer clic en **Mostrar todo** botón en el **Entornos** para saltar directamente a la **Entornos** pestaña.
+   * También puede hacer clic en el botón **Mostrar todo** en la tarjeta **Entornos** para ir directamente a la pestaña **Entornos**.
 
      ![Mostrar todas las opciones](assets/environment-showall.png)
 
@@ -145,33 +145,33 @@ También puede hacer clic en el botón de los tres puntos del entorno que desee 
 
 >[!NOTE]
 >
->La tarjeta **Entornos** solo enumera tres entornos. Clic **Mostrar todo** como se describió anteriormente para ver todos los entornos del programa.
+>La tarjeta **Entornos** solo enumera tres entornos. Haga clic en el botón **Mostrar todo** como se describió anteriormente para ver todos los entornos del programa.
 
 ### Acceso al servicio Vista previa {#access-preview-service}
 
-AEM Cloud Manager proporciona un servicio de vista previa (entregado como servicio de publicación adicional) para cada entorno as a Cloud Service de la.
+Cloud Manager proporciona un servicio de vista previa (ofrecido como un servicio de publicación adicional) para cada entorno de AEM as a Cloud Service.
 
 Con el servicio puede obtener una vista previa de la experiencia final de un sitio web antes de que llegue al entorno de publicación real y de que esté disponible públicamente.
 
-Al crearlo, el servicio de vista previa le aplica una lista de permitidos IP predeterminada, denominada `Preview Default [<envId>]`, que bloquea todo el tráfico al servicio de vista previa. Anule la aplicación de la lista de permitidos IP predeterminada del servicio de vista previa para poder habilitar el acceso.
+Una vez creado, al servicio de vista previa se le aplica la lista de IP permitidas predeterminadas, etiquetada como `Preview Default [<envId>]`, que bloquea todo el tráfico en el servicio de vista previa. Anule la aplicación de la lista de IP permitidas predeterminadas del servicio de vista previa para poder habilitar el acceso.
 
 ![Servicio de vista previa y lista de permitidos](assets/preview-ip-allow.png)
 
 Un usuario con los permisos necesarios debe completar los siguientes pasos antes de compartir la URL del servicio de vista previa para garantizar el acceso a él.
 
-1. Cree una lista de permitidos IP adecuada, aplíquela al servicio de vista previa y cancele inmediatamente la aplicación del `Preview Default [<envId>]` lista de permitidos.
+1. Cree una lista de IP permitidas adecuada, aplíquela al servicio de vista previa y cancele inmediatamente la aplicación de la lista de `Preview Default [<envId>]` permitidas.
 
-   * Consulte [Aplicación y cancelación de la aplicación de Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) para obtener más información.
+   * Consulte [aplicación y cancelación de la aplicación de listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) para obtener más información.
 
-1. Use la actualización del flujo de trabajo **Lista de IP permitidas** para eliminar la IP predeterminada y agregar direcciones IP según corresponda. Consulte [Administración de Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para obtener más información.
+1. Use la actualización del flujo de trabajo **Lista de IP permitidas** para eliminar la IP predeterminada y agregar direcciones de IP según corresponda. Consulte [administración de listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para obtener más información.
 
-Una vez desbloqueado el acceso al servicio de vista previa, ya no se muestra el icono de bloqueo delante del nombre del servicio de vista previa.
+Una vez desbloqueado el acceso al servicio de vista previa, ya no se mostrará el icono de bloqueo antes del nombre del servicio de vista previa.
 
-Una vez activado, puede publicar contenido en el servicio de vista previa mediante la IU Administrar publicación dentro de AEM. Consulte [Vista previa del contenido](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obtener más información.
+Una vez activado, puede publicar contenido en el servicio de vista previa mediante la IU Administrar publicación dentro de AEM. Consulte la [vista previa del contenido](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obtener más información.
 
 >[!NOTE]
 >
->Su entorno debe estar en la versión `2021.05.5368.20210529T101701Z` de AEM o más reciente para utilizar el servicio de vista previa. Asegúrese de que una canalización de actualización se haya ejecutado correctamente en su entorno para que pueda utilizar el servicio de vista previa.
+>Su entorno debe estar en la versión `2021.05.5368.20210529T101701Z` de AEM o más reciente para utilizar el servicio de vista previa. Asegúrese de que la canalización de actualización se haya ejecutado correctamente en su entorno para que pueda utilizar el servicio de vista previa.
 
 ### Estado de las regiones de publicación adicionales {#additional-region-status}
 
@@ -209,7 +209,7 @@ Tenga en cuenta que, en cualquier caso, [el tráfico siempre se dirigirá a la o
 
 Como servicio nativo de la nube, las actualizaciones de los entornos de ensayo y producción dentro de los programas de producción se administran automáticamente mediante Adobe.
 
-Sin embargo, las actualizaciones de los entornos de desarrollo y de los entornos de los programas de zonas protegidas se administran dentro de los programas. AEM Cuando un entorno de este tipo no ejecuta la última versión de la aplicación disponible de forma pública, el estado en la variable **Entornos** Tarjeta de en **Información general** La pantalla del programa muestra **Actualización disponible**.
+Sin embargo, las actualizaciones de los entornos de desarrollo, así como de los entornos de los programas de zonas protegidas, se administran dentro de los programas. Cuando un entorno de este tipo no ejecuta la última versión de AEM disponible públicamente, el estado de la tarjeta **Entornos** en la pantalla **Información general** del programa muestra **Actualización disponible**.
 
 ![Estado de actualización del entorno](assets/environ-update.png)
 
@@ -217,7 +217,7 @@ Sin embargo, las actualizaciones de los entornos de desarrollo y de los entornos
 
 Las canalizaciones son la única manera de [implementar código en los entornos de AEM as a Cloud Service.](deploy-code.md) Por este motivo, cada canalización está asociada a una versión de AEM particular.
 
-AEM Si Cloud Manager detecta que hay una versión más reciente de la aplicación disponible que la que se implementó por última vez con la canalización, muestra la variable **Actualización disponible** estado del entorno.
+Si Cloud Manager detecta que hay una versión de AEM disponible más reciente que la implementada por última vez con la canalización, muestra el estado **Actualización disponible** para el entorno.
 
 Por lo tanto, el proceso de actualización consta de dos pasos:
 
@@ -226,11 +226,11 @@ Por lo tanto, el proceso de actualización consta de dos pasos:
 
 ### Actualizar entornos {#updating-your-environments}
 
-El **Actualizar** La opción está disponible en **Entornos** para entornos de desarrollo en programas de zona protegida al hacer clic en el botón de los tres puntos del entorno.
+La opción **Actualizar** está disponible en la tarjeta **Entornos** para entornos de desarrollo en programas de zona protegida al hacer clic en el botón de los tres puntos del entorno.
 
 ![Opción Actualizar de la tarjeta Entornos](assets/environ-update2.png)
 
-Esta opción también está disponible haciendo clic en el icono **Entornos** del programa y, a continuación, seleccione el botón de los tres puntos del entorno.
+Esta opción también está disponible si hace clic en la pestaña **Entornos** del programa y, a continuación, selecciona el botón de los tres puntos del entorno.
 
 ![Opción Actualizar de la pestaña Entornos](assets/environ-update3.png)
 
@@ -248,9 +248,9 @@ El comportamiento de la opción **Actualizar** varía según la configuración y
 
 ## Eliminar entornos de desarrollo {#deleting-environment}
 
-Un usuario con el permiso necesario puede eliminar un entorno de desarrollo.
+Los usuarios con los permisos necesarios podrán eliminar un entorno de desarrollo.
 
-Desde el **Información general** pantalla del programa en la **Entornos** , haga clic en el botón de los tres puntos del entorno de desarrollo que desee eliminar.
+En la pantalla **Información general** del programa, en la tarjeta **Entornos**, haga clic en el botón de los tres puntos del entorno de desarrollo que desee eliminar.
 
 ![La opción Eliminar](assets/environ-delete.png)
 
@@ -271,27 +271,27 @@ Seleccione **Administrar el acceso** del menú de los tres puntos del entorno en
 
 >[!TIP]
 >
->Consulte [AEM Perfiles de equipo y producto as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) AEM si desea saber cómo los perfiles de equipo y producto as a Cloud Service pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia,
+>[Perfiles de producto y equipo de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md): aprenda cómo los perfiles de producto y el equipo de AEM as a Cloud Service pueden conceder y limitar el acceso a sus soluciones con la licencia de Adobe.
 
 ## Acceder a la consola de desarrollador {#accessing-developer-console}
 
-Seleccione **Consola de desarrollador** del menú de los tres puntos del entorno en la tarjeta **Entornos**. Se abre una nueva pestaña en el explorador con la página de inicio de sesión a la **Developer Console**.
+Seleccione **Consola de desarrollador** del menú de los tres puntos del entorno en la tarjeta **Entornos**. Se abre una nueva pestaña en el explorador con la página de inicio de sesión en **Developer Console**.
 
 ![Inicie sesión en Developer Console](assets/environ-devconsole.png)
 
-Solo un usuario con **Desarrollador** La función tiene acceso a **Developer Console**. Sin embargo, para los programas de zonas protegidas, cualquier usuario con acceso a la zona protegida tiene acceso a **Developer Console**.
+Solo un usuario con la función **Desarrollador** tendrá acceso a la **Consola de desarrollador**. Sin embargo, para los programas de zonas protegidas, cualquier usuario con acceso a la zona protegida tendrá acceso a **Developer Console**.
 
-Consulte [Entornos de zona protegida en hibernación y dehibernación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation) para obtener más información.
+Consulte [Entornos de zona protegida en hibernación y cancelación de la hibernación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation) para obtener más información.
 
 Esta opción también está disponible en la pestaña **Entorno** de la ventana **Información general** al hacer clic en el menú de los tres puntos de un entorno individual.
 
 ## Iniciar sesión localmente {#login-locally}
 
-Seleccionar **Inicio de sesión local** en el menú de los tres puntos del entorno en la **Entornos** para poder iniciar sesión localmente en Adobe Experience Manager.
+Seleccione **Iniciar sesión localmente** del menú de los tres puntos del entorno en la tarjeta **Entornos** para iniciar sesión localmente en Adobe Experience Manager.
 
 ![Iniciar sesión localmente](assets/environ-login-locally.png)
 
-Además, puede iniciar sesión localmente desde el **Entornos** de la pestaña **Información general** página.
+Además, puede iniciar sesión localmente desde la pestaña **Entornos** de la página **Información general**. 
 
 ![Iniciar sesión localmente desde la pestaña Entornos](assets/environ-login-locally-2.png)
 
@@ -299,7 +299,7 @@ Además, puede iniciar sesión localmente desde el **Entornos** de la pestaña *
 
 Los nombres de dominio personalizados se admiten en los programas de Cloud Manager para los programas de Sites, tanto para los servicios de publicación como para los de vista previa. Cada entorno de Cloud Manager puede alojar hasta un máximo de 250 dominios personalizados.
 
-Para configurar los nombres de dominio personalizados, vaya a **Entornos** y haga clic en un entorno para ver los detalles del mismo.
+Para configurar los nombres de dominio personalizados, navegue hasta la pestaña **Entornos** y haga clic en un entorno para ver los detalles del mismo.
 
 ![Detalles del entorno](assets/domain-names.png)
 
@@ -316,29 +316,29 @@ Se pueden realizar las siguientes acciones en el servicio de publicación de su 
 
 ## Administrar listas de IP permitidas {#manage-ip-allow-lists}
 
-Las listas de permitidos IP son compatibles con Cloud Manager para los servicios de creación, publicación y vista previa de los programas de Sites.
+Las listas de IP permitidas son compatibles con Cloud Manager para los servicios de creación, publicación y vista previa de los programas de Sites.
 
-Para administrar listas de permitidos IP, vaya a **Entornos** de la pestaña **Información general** de su programa. Haga clic en un entorno individual para poder administrar sus detalles.
+Para administrar las listas de IP permitidas, navegue hasta la pestaña **Entornos** de la página **Información general** del programa. Haga clic en un entorno individual para poder administrar sus detalles.
 
 ### Aplicar una lista de IP permitidas {#apply-ip-allow-list}
 
-La aplicación de una lista de permitidos IP asocia todos los rangos de IP incluidos en la definición de la lista de permitidos con un servicio de autor o publicación en un entorno. Un usuario en la **Propietario del negocio** o **Administrador de implementación** La función debe haber iniciado sesión para poder aplicar una lista de permitidos IP.
+La aplicación de una lista de IP permitidas asocia todos los rangos de IP incluidos en la definición de la lista de permitidos con un servicio de autor o publicación en un entorno. Para que un usuario con la función **Propietario del negocio** o **Administrador de implementación** pueda aplicar una lista de IP permitidas, debe iniciar sesión.
 
-La lista de permitidos IP debe existir en Cloud Manager para aplicarla a un entorno. Para obtener más información sobre las listas de permitidos IP en Cloud Manager, consulte [Introducción a las Listas de permitidos IP en Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+La lista de IP permitidas debe existir en Cloud Manager para aplicarla a un entorno. Para obtener más información sobre las listas de IP permitidas en Cloud Manager, consulte [Introducción a las listas de IP permitidas en Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-**Para aplicar una lista de permitidos IP:**
+**Para aplicar una listas de IP permitidas:**
 
 1. Vaya al entorno específico desde la pestaña **Entornos** de la pantalla del programa **Información general** y navegue hasta la tabla **Listas de IP permitidas**.
-1. Utilice los campos de entrada de la parte superior de la tabla de lista de permitidos IP para poder seleccionar la lista de permitidos IP y el servicio de autor o publicación al que desee aplicarla.
+1. Utilice los campos de entrada de la parte superior de la tabla de lista de IP permitidas para seleccionar la lista de IP permitidas y el servicio de autor o publicación al que desee aplicarla.
 1. Haga clic en **Aplicar** y confirme el envío.
 
-### Anulación de la aplicación de una lista de permitidos IP {#unapply-ip-allow-list}
+### Anulación de la aplicación de una lista de IP permitidas {#unapply-ip-allow-list}
 
-Al anular la aplicación de una lista de permitidos IP, se desasocian todos los rangos de IP incluidos en la definición de la lista de permitidos de un servicio de autor o editor de un entorno. Un usuario en la **Propietario del negocio** o **Administrador de implementación** La función debe haber iniciado sesión para poder anular la aplicación de una lista de permitidos IP.
+Al anular la aplicación de una lista de IP permitidas, se desasocian todos los rangos de la IP incluidos en la definición de la lista de permitidos de un servicio de autor o editor de un entorno. Un usuario con el rol de **Propietario del negocio** o **Administrador de implementación** debe haber iniciado sesión para poder anular la aplicación de una lista de IP permitidas.
 
-**Para anular la aplicación de una lista de permitidos IP:**
+**Para anular la aplicación de una lista de IP permitidas, haga lo siguiente:**
 
 1. Vaya al entorno específico desde la pestaña **Entornos** de la pantalla del programa **Información general** y navegue hasta la tabla **Listas de IP permitidas**.
-1. Identifique la fila en la que aparece la regla de lista de permitidos IP que desea anular.
+1. Identifique la fila en la que aparece la regla de lista de IP permitidas que desea anular.
 1. Seleccione el botón de los tres puntos del final de la fila.
 1. Seleccione **No aplicar** y confirme su envío.

@@ -4,8 +4,8 @@ description: En esta parte del recorrido para desarrolladores de AEM sin encabez
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Puede agregar un nombre de dominio personalizado desde dos ubicaciones en Cloud 
 
 >[!NOTE]
 >
->Un usuario debe tener **Propietario del negocio** o **Administrador de implementación** función para agregar un nombre de dominio personalizado en Cloud Manager
+>Un usuario debe tener la función de **propietario empresarial** o **administrador de implementación** para añadir un nombre de dominio personalizado en Cloud Manager
 
 ## Adición de un nombre de dominio personalizado desde la página Configuración de dominio {#adding-cdn-settings}
 
@@ -42,7 +42,7 @@ Siga estos pasos para agregar un nombre de dominio personalizado desde la págin
    >
    >No incluya `http://`, `https://` ni espacios al introducir el dominio.
 
-1. Seleccione el **Entorno** cuyo servicio está asociado con el nombre de dominio.
+1. Seleccione el **entorno** cuyo servicio se asocia con el nombre de dominio.
 
 1. Seleccione el servicio **Publicación** o **Vista previa**.
 
@@ -64,7 +64,7 @@ Consulte [Comprobación del estado del nombre de dominio personalizado](/help/im
 
 >[!TIP]
 >
->Consulte [Agregar un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información sobre los registros TXT.
+>Consulte [Añadir un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información sobre los registros TXT.
 
 ## Adición de un nombre de dominio personalizado desde la página Entornos {#adding-cdn-environments}
 
@@ -108,4 +108,4 @@ Consulte [Comprobación del estado del nombre de dominio personalizado](/help/im
 
 >[!TIP]
 >
->Consulte [Agregar un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información sobre los registros TXT.
+>Consulte [Añadir un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información sobre los registros TXT.

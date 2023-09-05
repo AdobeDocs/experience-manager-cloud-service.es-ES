@@ -8,7 +8,7 @@ exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '4137'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
 | AEM as a Cloud Service | Este artículo |
 
 
@@ -425,7 +425,7 @@ El indicador se puede establecer en cualquiera de los siguientes valores:
 
 * **COMPLETO**: FDM realiza la validación en función de todas las restricciones.
 * **DESACTIVADO**: sin validación.
-* **BÁSICO**: FDM realiza la validación en función de las restricciones &quot;requeridas&quot; y &quot;admisibles&quot;.
+* **BÁSICO**: FDM realiza la validación en función de las restricciones “requeridas” y “admisibles”
 
 Si no se establece ningún valor para el `ValidationOptions` indicador, se aplica una validación de nivel **BÁSICO** en los datos de entrada.
 

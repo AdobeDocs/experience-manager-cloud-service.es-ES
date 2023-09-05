@@ -5,7 +5,7 @@ exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -39,7 +39,7 @@ El **Crear exportación de CSV** El asistente le permite seleccionar:
 * Profundidad
    * Ruta principal
    * Solo elementos secundarios directos
-   * Niveles adicionales de elementos secundarios
+   * Niveles adicionales de tareas secundarias
    * Niveles
 
 El archivo `export.csv` resultante se puede abrir en Excel o en cualquier otra aplicación compatible.
@@ -48,7 +48,7 @@ Para crear una exportación de CSV:
 
 1. Abra la consola **Sitios** y vaya hasta la ubicación deseada.
    * La opción **Crear informe de CSV** está disponible al explorar la consola **Sitios** (en la vista de lista).
-   * Es una opción del **Crear** menú desplegable:
+   * Es una opción del menú desplegable **Crear**:
 
      ![Opción Crear CSV](/help/sites-cloud/authoring/assets/csv-create.png)
 

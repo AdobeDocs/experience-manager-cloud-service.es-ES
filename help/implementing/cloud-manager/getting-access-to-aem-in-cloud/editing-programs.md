@@ -5,13 +5,13 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 85%
+ht-degree: 97%
 
 ---
 
 # Editar programas {#editing-programs}
 
-Los usuarios con los permisos necesarios pueden editar [programas de producción creados en su organización](creating-production-programs.md) y [programas de zona protegida creados en su organización.](creating-sandbox-programs.md) Al editar un programa puede hacer lo siguiente:
+Los usuarios con los permisos necesarios pueden editar los [programas de producción](creating-production-programs.md) así como [programas de zonas protegidas creados en su organización.](creating-sandbox-programs.md) Al editar un programa puede hacer lo siguiente:
 
 * Agregar la solución Sites a un programa existente con Assets y viceversa.
 * Eliminar Sites o Assets de un programa existente que incluya ambos.
@@ -59,11 +59,11 @@ Siga estos pasos para editar un programa.
 
 Cada vez que se edita un programa, incluida la adición o eliminación de una solución o complemento, esos cambios surtirán efecto después de la siguiente implementación.
 
-Si el programa de producción tenía habilitada la seguridad mejorada, se requiere un **Seguridad mejorada** está disponible en la **Editar programa** para confirmar que la función está activa para el programa.
+Si el programa de producción tiene habilitada la seguridad mejorada, aparece la pestaña adicional **Seguridad mejorada** en la ventana **Editar programa** para confirmar que la funcionalidad está activa para el programa.
 
 ![Seguridad mejorada activa para un programa](assets/edit-program-enhanced.png)
 
-Esta configuración no se puede modificar una vez creado el programa. Para obtener más información sobre la opción de seguridad mejorada, consulte [Creación de programas de producción](creating-production-programs.md) documento.
+Esta configuración no se puede modificar una vez creado el programa. Para obtener más información acerca de la opción de seguridad mejorada, consulte el documento [Creación de programas de producción](creating-production-programs.md).
 
 ## Eliminar programas de zona protegida {#delete-sandbox-program}
 

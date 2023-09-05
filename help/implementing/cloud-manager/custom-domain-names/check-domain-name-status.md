@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 82%
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager verificará la propiedad del dominio mediante el valor TXT y mostr
 
 * **Verificado, Error De Implementación**: la verificación TXT se realizó correctamente, pero la implementación de CDN falló.
 
-   * En estos casos, póngase en contacto con el representante del Adobe.
+   * En tales casos, póngase en contacto con su representante de Adobe.
 
 * **Dominio verificado e implementado**: este estado indica que el nombre de dominio personalizado está listo para utilizarse.
 
@@ -56,7 +56,7 @@ A continuación se indican algunos errores comunes de nombres de dominio y sus r
 
 ### Error de dominio no instalado {#domain-not-installed}
 
-Este error puede producirse durante la validación del dominio del registro TXT incluso después de comprobar que el registro se ha actualizado correctamente.
+Este error puede ocurrir durante la validación del dominio del registro TXT, incluso después de comprobar que el registro se haya actualizado correctamente.
 
 #### Causa de error {#cause}
 
@@ -82,7 +82,7 @@ El error se corrige de la siguiente manera:
 
 ## Configuraciones preexistentes de CDN para nombres de dominio personalizados {#pre-existing-cdn}
 
-Si tiene una configuración de CDN preexistente para sus nombres de dominio personalizados, aparece un mensaje informativo en la **Nombres de dominio personalizados** y **Entorno** , lo que le anima a añadir estas configuraciones a través de la interfaz de usuario para que sean visibles y configurables en Cloud Manager.
+Si tiene una configuración de CDN preexistente para sus nombres de dominio personalizados, habrá un mensaje informativo en las páginas **Nombres de dominio personalizados** y **Entorno**, lo que le anima a añadir estas configuraciones a través de la interfaz de usuario para que sean visibles y configurables en Cloud Manager.
 
 El mensaje desaparece una vez que se migran todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje puede tardar entre 1 y 2 días hábiles en desaparecer.
 

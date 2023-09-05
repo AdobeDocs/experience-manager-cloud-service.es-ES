@@ -5,7 +5,7 @@ exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1782'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ es decir, las directrices que pueden aplicarse a una amplia gama de formatos de 
 Cada directriz está redactada de manera que pueda probarse de manera objetiva para garantizar que un grupo de expertos en accesibilidad esté de acuerdo en general con que se ha cumplido la directriz. Uno de los problemas de las directrices de accesibilidad es que, si bien algunas se pueden probar técnicamente, otras requieren del criterio humano para determinar si la directriz se ha cumplido o no con éxito.
 
 * Apoyar la **implementación contextual y priorizada:**
-Las directrices de WCAG 2.1 tienen prioridad en relación con el posible efecto de no seguir una directriz sobre un grupo determinado de usuarios con discapacidad. Esto permite a los autores tomar una decisión informada sobre las directrices más importantes para su situación particular. Además, se introduce el concepto de *accesibilidad compatible*. Esto permite a los autores tomar decisiones sobre la mejor manera de utilizar tecnologías web que pueden no tener una compatibilidad de accesibilidad completa, o pueden requerir que los usuarios tengan tecnologías de asistencia y exploradores específicos, o ambos, para beneficiarse de las características de accesibilidad.
+Las directrices de WCAG 2.1 tienen prioridad en relación con el posible efecto de no seguir una directriz sobre un grupo determinado de usuarios con discapacidad. Esto permite a los autores tomar una decisión informada sobre las directrices más importantes para su situación particular. Además, se introduce el concepto de *accesibilidad compatible*. Esto permite a los autores tomar decisiones sobre la mejor manera de utilizar tecnologías web que pueden no tener una compatibilidad de accesibilidad completa, o pueden requerir que los usuarios tengan tecnologías de asistencia o exploradores específicos para beneficiarse de las características de accesibilidad.
 
 Estos objetivos han influido de manera significativa en la estructura de WCAG 2.1.
 
@@ -112,9 +112,9 @@ Se puede acceder a las técnicas:
 
 Cada técnica tiene un número único, que se relaciona con su colección. Por ejemplo, una de las técnicas de ARIA es la [Técnica ARIA2: Identificar los campos obligatorios con la propiedad requerido por ARIA](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
-Las técnicas pueden ser suficientes, aconsejables o un error:
+Las técnicas pueden ser suficientes, aconsejables o tener un error:
 
-* A *Técnica suficiente* es uno que, si se sigue, es suficiente para cumplir un criterio de éxito determinado.
+* Una *técnica suficiente* es la que, si se sigue, es suficiente para cumplir un criterio de éxito determinado.
 * Una *técnica aconsejable* es una que, de seguirse, tendrá un efecto positivo en la accesibilidad, pero puede que no sea suficiente por sí sola para garantizar que se cumple un criterio de éxito determinado.
 * Un *error* es una técnica que describe un ejemplo específico de dónde no se cumplirían los criterios de éxito.
 
@@ -126,13 +126,13 @@ La lista de las técnicas no está completa y la WAI está actualizando constant
 
 Esto se refiere a una serie de documentos, que proporcionan consejos para ayudar a los lectores a apreciar el propósito de directrices específicas y criterios de éxito. Puede [descargar una introducción, además de vínculos a información más detallada](https://www.w3.org/WAI/WCAG21/Understanding/).
 
-Cada directriz individual y criterio de éxito también tiene su propia página &quot;Comprensión&quot;, que proporciona información sobre:
+Cada directriz individual y criterio de éxito también tiene su propia página de “Comprensión”, que proporciona información sobre lo siguiente:
 
 * El propósito de la directriz.
 * Los criterios específicos de éxito.
 * Las técnicas aconsejables, que ayudan a cumplir los requisitos de la directriz, pero que no entran dentro de ningún criterio de éxito específico.
 
-La página de &quot;comprensión&quot; individual de cada criterio de éxito proporciona información sobre:
+La página de “comprensión” individual de cada criterio de éxito proporciona información sobre:
 
 * La intención del criterio de éxito.
 * Ejemplos generales de cómo se puede cumplir el criterio de éxito.
@@ -144,7 +144,7 @@ Puede encontrar un ejemplo en: [Entender los criterios de éxito 1.1.1 (&quot;Co
 
 ### Cómo cumplir con WCAG 2.1 {#how-to-meet-wcag}
 
-La sección &quot;Cómo cumplir&quot; está disponible en la [Cómo cumplir con WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) página. En esta sección se ofrece una presentación alternativa del WCAG, que permite perfeccionar el contenido de las directrices para adaptarlo los intereses o circunstancias del lector. Los lectores pueden filtrar las técnicas de criterios de éxito que deseen aplicar a la vista especificando tecnologías de contenido web específicas, como hojas de estilo en cascada o scripts, o especificando un nivel de prioridad determinado.
+La sección “Cómo cumplir” está disponible en la página [Cómo cumplir con WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). En esta sección se ofrece una presentación alternativa del WCAG, que permite perfeccionar el contenido de las directrices para adaptarlo los intereses o circunstancias del lector. Los lectores pueden filtrar las técnicas de criterios de éxito que deseen aplicar a la vista especificando tecnologías de contenido web específicas, como hojas de estilo en cascada o scripts, o especificando un nivel de prioridad determinado.
 
 Sin filtrar, este recurso proporciona todos los criterios de éxito agrupados por directriz. Para cada criterio de éxito, se proporciona lo siguiente:
 

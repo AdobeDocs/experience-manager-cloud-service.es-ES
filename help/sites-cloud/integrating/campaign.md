@@ -7,7 +7,7 @@ exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '175'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Obtenga información acerca de la asistencia de AEM as a Cloud Service para las 
 >
 >Este documento describe la integración de Adobe Campaign con AEM as a Cloud Service, la solución nativa de la nube de AEM.
 >
->Para obtener más información sobre la integración de Adobe Campaign AEM AEM con 6.5, la solución local o la solución alojada en AMS, haga lo siguiente: [ver este documento](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=es).
+>Para obtener más información sobre la integración de Adobe Campaign con AEM 6.5, la solución local o la solución alojada en AMS, [consulte este documento](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=es).
 
 ## Integración con Adobe Campaign Classic {#acc}
 

@@ -7,7 +7,7 @@ exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1420'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -29,8 +29,8 @@ Tenga en cuenta que se puede crear una Live Copy mediante una de las acciones si
 
 Los beneficios adicionales de utilizar una configuración de modelo son que:
 
-* Permiten que el autor use **Despliegue** opción de un modelo para insertar explícitamente modificaciones en Live Copies que heredan de este modelo.
-* Permitir que el autor utilice **Crear sitio** para seleccionar idiomas fácilmente y configurar la estructura de la Live Copy.
+* Permiten que el autor use la opción de **Despliegue** en un modelo para insertar explícitamente modificaciones a Live Copies que heredan de este modelo.
+* Permiten que el autor utilice **Crear sitio** para seleccionar idiomas fácilmente y configurar la estructura de la Live Copy.
 * Definen una configuración de despliegue predeterminada para Live Copies que tengan una relación con el modelo.
 
 En caso de que no se haga referencia a una configuración de modelo, los despliegues solo se pueden iniciar desde las propias Live Copies, lo que básicamente extrae contenido de la fuente.
@@ -39,7 +39,7 @@ Al crear un nuevo sitio con Live Copy, resulta ventajoso crear configuraciones d
 
 >[!NOTE]
 >
->Los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esta regla al configurar Live Copy.
+>Tenga en cuenta que los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esto al configurar Live Copy.
 
 ## Sincronización de componentes y contenedores {#components-and-container-synchronization}
 
@@ -48,7 +48,7 @@ En general, la regla de despliegue en MSM con respecto a la sincronización de c
 * Los componentes se despliegan sincronizando cualquier recurso contenido en el modelo.
 * Los contenedores solo sincronizan el recurso actual.
 
-Esto significa que los componentes se tratan como un acumulado y, en un despliegue, el componente en sí y todos sus elementos secundarios se sustituyen por los de los modelos. Esto significa que si se agrega un recurso a un componente de este tipo localmente, se pierde en el contenido del modelo al desplegarse.
+Esto significa que los componentes se tratan como un acumulado y, en un despliegue, el componente en sí y todos sus elementos secundarios se sustituyen por los de los modelos. Esto significa que si se añade un recurso a un componente de este tipo de manera local, se reemplazará por el contenido del modelo al desplegarse.
 
 Para admitir el anidado de componentes de modo que los componentes añadidos localmente se mantengan en un despliegue, el componente debe declararse como contenedor.
 
@@ -84,7 +84,7 @@ Al crear maestros de idiomas, tenga en cuenta lo siguiente:
 * Mientras que MSM en sí **no proporciona traducción de contenido**, se puede integrar con conectores de traducción de terceros que sí lo hagan. Tenga en cuenta lo siguiente:
    * MSM le permite cancelar la herencia en el nivel de página o componente. Esto evita sobrescribir el contenido traducido (de una Live Copy, con contenido aún no traducido de un modelo) en el próximo despliegue.
       * Algunos conectores de traducción de terceros automatizan esta administración de las herencias de MSM.
-      * Consulte con su proveedor de servicios de traducción para obtener más información.
+      * Consulte a su proveedor de servicios de traducción para obtener más información.
       * Un enfoque alternativo para crear y traducir maestros de idiomas es usar copias de idiomas junto con el marco de trabajo de integración de traducción listo para usar de AEM.
 
 Para obtener más información, consulte [Traducción de contenido para sitios multilingües](/help/sites-cloud/administering/translation/overview.md) y [Prácticas recomendadas de traducción](/help/sites-cloud/administering/translation/best-practices.md).

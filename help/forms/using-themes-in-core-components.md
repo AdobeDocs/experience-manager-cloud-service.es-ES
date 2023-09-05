@@ -7,7 +7,7 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2709'
-ht-degree: 17%
+ht-degree: 19%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Puede crear y aplicar temáticas para aplicar estilo a un formulario adaptable. Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes. Una temática se administra de forma independiente sin hacer referencia a un formulario adaptable y se puede reutilizar en varios formularios adaptables de Forms.
@@ -24,7 +24,7 @@ Puede crear y aplicar temáticas para aplicar estilo a un formulario adaptable. 
 
 Forms como Cloud Service proporciona los siguientes temas para componentes principales basados en Forms adaptables:
 
-* [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
+* [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -46,7 +46,7 @@ Una temática es un paquete que incluye el archivo CSS, los archivos JavaScript 
 
 Forms como Cloud Service proporciona los siguientes temas para componentes principales basados en Forms adaptables.
 
-* [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
+* [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -95,7 +95,7 @@ Los ejemplos proporcionados en el documento se basan en la variable **Lienzo** t
 
 Para clonar una temática para componentes principales basados en Forms adaptable, elija una de las siguientes temáticas:
 
-* [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
+* [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -414,7 +414,7 @@ Si desea proporcionar información como un logotipo, el nombre de la empresa en 
 
 ## Ver siguiente
 
-* [Definir la presentación de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Generar documento de registro para Forms adaptable (componentes principales)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creación de un Forms adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
 * [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

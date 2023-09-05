@@ -5,11 +5,11 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3705'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
-# Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service {#seo-and-url-management-best-practices-for-aem}
+# Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service{#seo-and-url-management-best-practices-for-aem}
 
 La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. En consecuencia, es necesario abordar las preocupaciones de SEO en muchos proyectos de Adobe Experience Manager (AEM) as a Cloud Service.
 
@@ -25,7 +25,7 @@ Hay algunas prácticas recomendadas aceptadas en las direcciones URL.
 
 En el proyecto de AEM, al evaluar las URL, pregúntese lo siguiente:
 
-*&quot;Si un usuario viera esta URL y ningún contenido en la página, ¿podría este usuario describir de qué trata la página?&quot;*
+*“Si un usuario viera esta URL sin contenido en la página, ¿podría describir de qué se trata?”*
 
 Si la respuesta es sí, es probable que la URL funcione bien en un motor de búsqueda.
 
@@ -77,9 +77,9 @@ se prefiere en lugar de `mybrand.com/products/product-detail.1234.html`
 
 * Asegúrese de que cada página solo se proporcione desde un protocolo.
 
-   * A veces, los sitios se proporcionan mediante `http` hasta que un usuario llega a una página con un formulario de cierre de compra o de inicio de sesión, por ejemplo, y luego cambia a `https`. Al establecer vínculos desde esta página, si el usuario puede regresar a las páginas de `http` y acceder a ellas a través de `https`, el motor de búsqueda las rastreará como dos páginas diferentes.
+   * A veces, los sitios se proporcionan a través de `http` hasta que llega a una página con un formulario de cierre de compra o de inicio de sesión que es cuando cambia a `https`. Al establecer vínculos desde esta página, si el usuario puede regresar a las páginas de `http` y acceder a ellas a través de `https`, el motor de búsqueda las rastreará como dos páginas diferentes.
 
-   * Actualmente, Google prefiere las páginas `https` a las `http`. Por esta razón, a menudo facilita las cosas servir a todo el sitio en `https`.
+   * Actualmente, Google prefiere las páginas `https` a las `http`. Por esta razón, a menudo proporcionar `https` en todo el sitio facilita las cosas a todo el mundo.
 
 ### Configuración de servidor {#server-configuration}
 
@@ -190,7 +190,7 @@ Es posible que desee mostrar nombres de páginas localizados a los usuarios de c
 * Sería mejor que la URL fuera:
   `www.mydomain.com/es/casa.html`.
 
-AEM El desafío que supone la localización del nombre de la página es que muchas de las herramientas de localización disponibles en la plataforma dependen de que los nombres de las páginas coincidan en las distintas configuraciones regionales para mantener el contenido sincronizado.
+El desafío que supone la localización del nombre de la página es que muchas de las herramientas de localización disponibles en la plataforma AEM dependen de que los nombres de las páginas coincidan en las distintas configuraciones regionales para mantener el contenido sincronizado.
 
 El `sling:alias` La propiedad permite tener nuestro pastel y comerlo también. `sling:alias` se puede agregar como propiedad a cualquier recurso para permitir un nombre de alias para el recurso. En el ejemplo anterior, tendría:
 
@@ -285,7 +285,7 @@ Sin embargo, también hay una forma más sencilla de gestionarlo:
 
 Hasta ahora, ha implementado asignaciones junto con la lógica de sus componentes para utilizar estas asignaciones al enviar URL a nuestras páginas.
 
-La parte final es el manejo de estas URL abreviadas cuando llegan a Dispatcher, que es donde `mod_rewrite` comienza a funcionar. La mayor ventaja de usar `mod_rewrite` es que las direcciones URL se asignan de nuevo a su formulario largo *antes* se envían al módulo de Dispatcher. Esto significa que Dispatcher solicitará la URL larga del servidor de publicación y la almacenará en la memoria caché correspondiente. Por lo tanto, cualquier vaciado de Dispatcher que venga del servidor de publicación, puede invalidar este contenido con éxito.
+La parte final es el manejo de estas URL abreviadas cuando llegan a Dispatcher, que es donde `mod_rewrite` comienza a funcionar. La mayor ventaja de usar `mod_rewrite` es que las URL se asignan de nuevo a su formulario largo *antes* de enviarse al módulo de Dispatcher. Esto significa que Dispatcher solicitará la URL larga del servidor de publicación y la almacenará en la memoria caché correspondiente. Por lo tanto, cualquier vaciado de Dispatcher que venga del servidor de publicación, puede invalidar este contenido con éxito.
 
 Para implementar estas reglas, puede agregar elementos `RewriteRule` debajo del host virtual en la configuración de Apache HTTP Server. Si desea expandir las URL abreviadas del ejemplo anterior, puede implementar una regla con este aspecto:
 
@@ -348,7 +348,7 @@ Disallow: /
 
 De lo contrario, en un entorno activo, puede optar por no permitir determinadas rutas que no desee indexar.
 
-La advertencia de colocar el `robots.txt` en la raíz del sitio es que las solicitudes de vaciado del Dispatcher pueden borrar este archivo, y es probable que las asignaciones de URL coloquen la raíz del sitio en un lugar diferente al `DOCROOT` tal como se define en la configuración del servidor HTTP Apache. Por este motivo, es común colocar este archivo en la instancia de autor en la raíz del sitio y replicarlo en la instancia de publicación.
+La advertencia de colocar el archivo `robots.txt` en la raíz del sitio es que las solicitudes de vaciado de Dispatcher pueden borrar este archivo, y es probable que las asignaciones de URL coloquen la raíz del sitio en un lugar diferente al `DOCROOT`, como se define en la configuración del servidor de HTTP Apache. Por este motivo, es común colocar este archivo en la instancia de autor en la raíz del sitio y replicarlo en la instancia de publicación.
 
 ### Crear un mapa del sitio XML en AEM {#building-an-xml-sitemap-on-aem}
 
@@ -370,7 +370,7 @@ Por ejemplo, piense en un sitio que defina una raíz de mapa del sitio de nivel 
 
 En la configuración predeterminada, el cuadro de diálogo Propiedades de página proporciona una opción para marcar una página como raíz de mapa del sitio y, por lo tanto, como se describe más arriba, generar un mapa del sitio propio y de sus descendientes. Este comportamiento se implementa mediante las implementaciones de la variable `SitemapGenerator` y se puede ampliar añadiendo implementaciones alternativas. Sin embargo, como la frecuencia con la que se regeneran los mapas del sitio XML depende en gran medida de los flujos de trabajo y las cargas de trabajo de creación de contenido, el producto no envía ninguna configuración `SitemapScheduler`. Esto hace que la función sea de inclusión efectiva.
 
-Para habilitar el trabajo en segundo plano que genera los mapas del sitio XML, haga lo siguiente `SitemapScheduler` debe estar configurado. Para ello, cree una configuración OSGi para el `org.apache.sling.sitemap.impl.SitemapScheduler` PID. La expresión del planificador `0 0 0 * * ?` puede utilizarse como punto de partida para regenerar todos los mapas del sitio XML una vez al día a medianoche.
+Para habilitar el trabajo en segundo plano que genera los mapas del sitio XML, debe estar configurado un `SitemapScheduler`. Para ello, cree una configuración OSGi para el `org.apache.sling.sitemap.impl.SitemapScheduler` PID. La expresión del planificador `0 0 0 * * ?` puede utilizarse como punto de partida para regenerar todos los mapas del sitio XML una vez al día a medianoche.
 
 ![Mapa del sitio de Apache Sling: planificador](assets/sling-sitemap-scheduler.png)
 

@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2543'
-ht-degree: 66%
+ht-degree: 99%
 
 ---
 
@@ -77,13 +77,13 @@ Al crear una nueva página, hay dos campos de claves:
 * **[Nombre](#name)**:
 
    * Se usa para generar la URI.
-   * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se deriva del título. Consulte la siguiente sección [Restricciones de nombres de páginas y Prácticas recomendadas](#page-name-restrictions-and-best-practices) para obtener más detalles.
+   * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se obtiene a partir del título. Consulte la siguiente sección [Restricciones de nombres de páginas y Prácticas recomendadas](#page-name-restrictions-and-best-practices) para obtener más detalles.
 
 #### Restricciones de nombres de páginas y prácticas recomendadas {#page-name-restrictions-and-best-practices}
 
 El **título** y el **nombre** de la página se pueden crear por separado, pero están relacionados:
 
-* Al crear una página, solo aparece el **Título** Este campo es obligatorio. Si no **Nombre** AEM se proporciona al crear la página, generará un nombre a partir de los primeros 64 caracteres del título (observando la validación que se indica a continuación). Solo se utilizan los 64 primeros caracteres para ofrecer compatibilidad con la práctica recomendada de nombres de página cortos.
+* Al crear una página, solo se precisa el campo **Título**. Si no se proporciona ningún **nombre** durante la creación de la página, AEM genera un nombre a partir de los 64 primeros caracteres del título (observe el conjunto de validación a continuación). Solo se utilizan los 64 primeros caracteres para ofrecer compatibilidad con la práctica recomendada de nombres de página cortos.
 * Si el autor especifica manualmente un nombre de página, el límite de 64 caracteres no se aplica. Sin embargo, es posible que se produzcan otras limitaciones técnicas en la longitud del nombre de la página.
 
 >[!TIP]
@@ -112,7 +112,7 @@ Para obtener toda la información sobre los caracteres permitidos, consulte las 
 
 Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre** de página de esta cadena y lo [validará según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR.
 
-A **Título** se acepta el campo que contiene caracteres no válidos, pero el nombre derivado tiene los caracteres no válidos sustituidos. Por ejemplo:
+Se acepta un campo de **Título** con caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
 
 | Título | Nombre derivado |
 |---|---|
@@ -121,7 +121,7 @@ A **Título** se acepta el campo que contiene caracteres no válidos, pero el no
 
 #### Nombre {#name}
 
-Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. AEM Cuando detecta caracteres no válidos, el campo se resalta con un mensaje explicativo.
+Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. Cuando detecta caracteres no válidos, el campo se resalta con un mensaje explicativo.
 
 ![Ejemplo de introducción de un nombre de página no válido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -129,15 +129,15 @@ Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nom
 >
 >Evite utilizar un código de dos letras como nombre de página, tal como se indica en la norma ISO-639-1, a menos que sea la raíz de un idioma.
 >
->Consulte [Preparación del contenido para su traducción](/help/sites-cloud/administering/translation/preparation.md) para obtener más información.
+>Consulte [Preparación de contenido para su traducción](/help/sites-cloud/administering/translation/preparation.md) para obtener más información.
 
 ### Plantillas {#templates}
 
-AEM En, una plantilla especifica un tipo de página especializado. Se utiliza una plantilla como base para cualquier página nueva que se cree.
+En AEM, una plantilla especifica un tipo de página especializado. Se utiliza una plantilla como base para cualquier página nueva que se cree.
 
 La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 
-AEM Se incluye con varias plantillas listas para usar. Se proporciona de forma predeterminada. Las plantillas disponibles dependen del sitio web individual. Los campos principales son:
+AEM incluye varias plantillas listas para usar de forma predeterminada. Las plantillas disponibles dependen del sitio web individual. Los campos principales son:
 
 * **Título** El título se muestra en la página web resultante.
 
@@ -159,7 +159,7 @@ Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de 
 * Carrusel
 * Y muchos más
 
-Una vez que haya creado y abierto una página, puede [añadir contenido mediante los componentes](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), que están disponibles en el [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
+Una vez que haya creado y abierto una página, puede [añadir contenido mediante los componentes](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component) que están disponibles en el [explorador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
 >[!TIP]
 >
@@ -173,7 +173,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
 1. Abra la consola Sitios (por ejemplo, `https://<host>:<port>/sites.html/content`).
 1. Desplácese hasta la ubicación en la que desee crear la nueva página.
-1. Abra el selector desplegable con **Crear** en la barra de herramientas, seleccione **Página** de la lista:
+1. Abra el selector desplegable con **Crear** en la barra de herramientas y, a continuación, seleccione **Página** en la lista:
 
    ![Creación de una página](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -189,9 +189,9 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
    * Utilice las tres pestañas para especificar las [propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) que desee asignar a la nueva página; a continuación, pulse o haga clic en **Crear** para crear la página.
 
-   * Uso **Atrás** para volver a la selección de plantilla.
+   * Utilice **Atrás** para volver a la selección de plantilla.
 
-   Los campos clave son:
+   Los campos clave son los siguientes:
 
    * **Título**:
 
@@ -199,15 +199,15 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
    * **Nombre**:
 
-      * Se usa para generar la URI. Si no se especifica, el nombre se deriva del título.
+      * Se usa para generar la URI. Si no se especifica, el nombre se obtiene a partir del título.
       * Al indicar un valor **Nombre** cuando se cree una página, AEM [validará el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR.
-      * Usted **no se pueden enviar caracteres no válidos** en el **Nombre** field. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
+      * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. Cuando AEM detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
    >[!TIP]
    >
-   >Consulte [Convenciones de nomenclatura de páginas](#page-naming-conventions).
+   >Consulte [Convenciones de asignación de nombres a páginas](#page-naming-conventions).
 
-   La información mínima necesaria para crear una página nueva es la siguiente **Título**.
+   La información mínima necesaria para crear una página nueva es el **Título**.
 
    ![Proporcionar título de página](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
@@ -217,7 +217,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
    >[!NOTE]
    >
-   >Si crea una página con un nombre que ya existe en la ubicación, el sistema generará automáticamente una variación del nombre añadiéndole un número. Por ejemplo, si `beach` ya existe, se crea una nueva página `beach1`.
+   >Si crea una página con un nombre que ya existe en la ubicación, el sistema generará automáticamente una variación del nombre añadiéndole un número. Por ejemplo, si `beach` ya existe, la página nueva pasará a llamarse `beach1`.
 
 1. Al volver a la consola, podrá ver la nueva página:
 
@@ -242,7 +242,7 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 
    Botón ![Editar](/help/sites-cloud/authoring/assets/edit.png)
 
-1. La página se abre y puede hacer lo siguiente [editar la página](/help/sites-cloud/authoring/fundamentals/editing-content.md) según sea necesario.
+1. Se abrirá la página, y podrá [editarla](/help/sites-cloud/authoring/fundamentals/editing-content.md) si es necesario.
 
 >[!NOTE]
 >
@@ -253,12 +253,12 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 Puede copiar una página y todas sus páginas secundarias en una nueva ubicación:
 
 1. En la consola **Sitios**, desplácese hasta que encuentre la página que desea copiar.
-1. Seleccione la página mediante:
+1. Seleccione la página mediante lo siguiente:
 
    * [Acciones rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) y la barra de herramientas
 
-   Y luego el **Copiar** icono de página:
+   Y luego el icono de página **Copiar**:
 
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
@@ -277,7 +277,7 @@ Puede copiar una página y todas sus páginas secundarias en una nueva ubicació
 
 >[!NOTE]
 >
->Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` pasa a `beach1`.
+>Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema genera automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` se convierte en `beach1`.
 
 >[!NOTE]
 >
@@ -294,50 +294,50 @@ El procedimiento para mover o cambiar el nombre de una página es básicamente e
 AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga referencia a la página que se está moviendo o cambiando de nombre. Esto se puede hacer página por página para proporcionar una flexibilidad total.
 
 1. Desplácese hasta que encuentre la página que desea mover.
-1. Seleccione la página mediante:
+1. Seleccione la página mediante lo siguiente:
 
    * [Acciones rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) y la barra de herramientas
 
-   Y luego seleccione la **Mover** icono de página:
+   A continuación, seleccione el icono **Mover página**:
 
    ![Botón Mover](/help/sites-cloud/authoring/assets/move.png)
 
    Se abrirá el asistente para mover páginas.
 
-1. Desde el **Cambiar nombre** fase del asistente puede realizar una de las acciones siguientes:
+1. En el paso **Cambiar nombre** del asistente puede realizar una de las acciones siguientes:
 
    * Especifique el nombre que desea que tenga la página cuando se haya desplazado y, a continuación, toque o haga clic en **Siguiente** para continuar.
    * **Haga clic en Cancelar** para anular el proceso.
 
    ![Mover y cambiar el nombre de la página](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
-   El nombre de página puede ser el mismo si sólo mueve la página.
+   El nombre de página puede ser el mismo si solo mueve la página.
 
    >[!NOTE]
    >
-   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` pasa a `beach1`.
+   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` se convierte en `beach1`.
 
-1. Desde el **Seleccionar destino** fase del asistente puede realizar una de las acciones siguientes:
+1. En el paso **Seleccionar destino** del asistente puede realizar una de las acciones siguientes:
 
-   * Utilice el [vista de columna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) para desplazarse a la nueva ubicación de la página:
+   * Utilice la [vista de columna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) para desplazarse a la nueva ubicación de la página:
 
       * Seleccione el destino haciendo clic en la miniatura de destino.
       * Haga clic en **Siguiente** para continuar.
 
-   * Uso **Atrás** para volver a la especificación del nombre de página.
+   * Utilice **Volver** para volver al apartado para especificar el nombre de la página.
 
    >[!NOTE]
    >
-   >De forma predeterminada, el elemento principal de la página que está moviendo o cambiando de nombre está seleccionado como destino.
+   >De forma predeterminada, el elemento principal de la página que está moviendo o cuyo nombre va a cambiar se selecciona como destino.
 
    ![Seleccionar destino de movimiento de página](/help/sites-cloud/authoring/assets/move-page-destination.png)
 
    >[!NOTE]
    >
-   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a `winter1`.
+   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` se convierte en `winter1`.
 
-1. Si la página está vinculada, si se hace referencia a ella o si se ha publicado, los detalles aparecen en la **Ajustar/volver a publicar** paso.
+1. Si la página está vinculada, si se hace referencia a ella o si se ha publicado, los detalles aparecen en el paso **Ajustar/Volver a publicar**.
 
    Puede indicar qué debería ajustarse o volverse a publicar, según proceda.
 
@@ -347,19 +347,19 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    ![Volver a publicar la página al moverla](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
-1. Seleccionar **Mover** completará el proceso y moverá o cambiará el nombre de la página según corresponda.
+1. Si selecciona **Mover** se completará el proceso y moverá o cambiará el nombre de la página según corresponda.
 
 >[!NOTE]
 >
->Si la página ya se ha publicado, al mover la página se cancela su publicación automáticamente. De forma predeterminada, se vuelve a publicar cuando se completa el movimiento, pero esto puede cambiar desmarcando la opción **Volver a publicar** en el campo **Ajustar/volver a publicar** paso.
+>Si la página ya se ha publicado, al mover la página se cancela la publicación automáticamente. De forma predeterminada, se vuelve a publicar una vez finalizado su desplazamiento, pero esto puede cambiar si se desmarca el campo **Volver a publicar** en el paso **Ajustar/volver a publicar**.
 
 >[!NOTE]
 >
->Si no se hace referencia a la página, la variable **Ajustar/volver a publicar** Este paso se ha omitido.
+>Si no se hace referencia a la página, se omite el paso **Ajustar/volver a publicar**.
 
 >[!NOTE]
 >
->Cambiar el nombre de una página también está sujeto a la [Convenciones de nomenclatura de páginas](#page-naming-conventions) al especificar el nuevo nombre de página.
+>Cambiar el nombre de una página también está sujeto a las [Convenciones de nomenclatura de páginas](#page-naming-conventions) al especificar el nuevo nombre de página.
 
 >[!NOTE]
 >
@@ -384,12 +384,12 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
 
 >[!NOTE]
 >
->Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte [Trabajos asincrónicos](/help/operations/asynchronous-jobs.md) en la guía del usuario Operaciones.
+>Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte el documento [Trabajos asincrónicos](/help/operations/asynchronous-jobs.md) en la guía del usuario Operaciones.
 
 ### Eliminar una página {#deleting-a-page}
 
 1. Desplácese hasta que vea la página que desea eliminar.
-1. Uso [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) para seleccionar la página requerida, utilice **Eliminar** en la barra de herramientas:
+1. Uso [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) para seleccionar la página requerida, luego utilice **Eliminar** en la barra de herramientas:
 
    ![Botón Eliminar](/help/sites-cloud/authoring/assets/delete.png)
 
@@ -401,7 +401,7 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
 
    ![Cuadro de diálogo Eliminar](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **¿Quiere archivar las páginas antes de la eliminación?** - Si se selecciona, las versiones de las páginas seleccionadas para su eliminación se crean al eliminarlas.
+   * **¿Quiere archivar las páginas antes de la eliminación?** Si se selecciona, las versiones de las páginas seleccionadas para su eliminación se crearán al eliminarlas.
       * [Las versiones se pueden restaurar más adelante](/help/sites-cloud/authoring/features/page-versions.md).
       * Las páginas eliminadas sin versiones anteriores no se pueden restaurar.
    * **Cancelar** para anular la acción
@@ -427,7 +427,7 @@ Puede crear carpetas para organizar archivos y páginas.
 
 1. Abra la consola **Sitios** y vaya hasta la ubicación deseada.
 1. Para abrir la lista de opciones, seleccione **Crear** en la barra de herramientas
-1. Seleccionar **Carpeta** para abrir el cuadro de diálogo. Aquí puede indicar el **Nombre** y el **Título**:
+1. Seleccione **Carpeta** para abrir el cuadro de diálogo. Aquí puede indicar el **Nombre** y el **Título**:
 
    ![Crear carpeta](/help/sites-cloud/authoring/assets/organizing-create-folder.png)
 
@@ -435,7 +435,7 @@ Puede crear carpetas para organizar archivos y páginas.
 
 >[!NOTE]
 >
->Las carpetas también están sujetas al [Convenciones de nomenclatura de páginas](#page-naming-conventions) al especificar el nuevo nombre de carpeta.
+>Las carpetas también están sujetas a las [Convenciones de asignación de nombres a páginas](#page-naming-conventions) al especificar el nuevo nombre de carpeta.
 
 >[!CAUTION]
 >

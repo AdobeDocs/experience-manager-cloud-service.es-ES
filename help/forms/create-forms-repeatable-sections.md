@@ -5,7 +5,7 @@ role: Architect, Developer, Admin, User
 source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 46%
+ht-degree: 98%
 
 ---
 
@@ -15,43 +15,43 @@ ht-degree: 46%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
-Una sección repetible hace referencia a una parte de un formulario que se puede duplicar o repetir varias veces para recopilar información de varias instancias de los mismos datos.
+Una sección repetible hace referencia a una parte de un formulario que se puede duplicar o repetir varias veces para recopilar información para instancias de los mismos datos.
 
 Por ejemplo, considere un formulario utilizado para recopilar información sobre la experiencia laboral de una persona. Puede tener una sección repetible para capturar los detalles de cada trabajo anterior. La sección repetible generalmente contiene campos como nombre de la empresa, cargo, fechas de empleo y responsabilidades del puesto. El usuario puede agregar varias instancias de la sección repetible para introducir información sobre cada trabajo que ha realizado.
 
 ![Repetibilidad](/help/forms/assets/repeatable-adaptive-form-example.gif)
 
-Al final de este artículo, aprenderá a:
+Al final de este artículo, aprenderá lo siguiente:
 
 * Creación de una sección repetible en un formulario adaptable
 * Definir el número mínimo o máximo de repeticiones para un componente de formulario adaptable
-* Utilice el editor de reglas para configurar las acciones de adición o eliminación para secciones repetibles
+* Utilizar el editor de reglas para configurar las acciones de adición o eliminación para secciones repetibles
 
-Puede usar el complemento [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Fichas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), o [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) componentes para hacer que las secciones de un formulario adaptable sean repetibles. Puede agregar componentes secundarios al panel, al acordeón, a las pestañas horizontales o a los componentes del asistente para crear secciones repetibles en un formulario.
+Puede usar el complemento [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=es), [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Fichas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es), o [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es) componentes para hacer que las secciones de un formulario adaptable sean repetibles. Puede agregar componentes secundarios al panel, al acordeón, a las pestañas horizontales o al asistente para crear secciones repetibles en un formulario.
 
 
-Los ejemplos de este documento se basan en [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) componente. Puede realizar los mismos pasos para realizar la [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Pestañas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), y [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) componentes repetibles.
+Los ejemplos de este documento se basan en el componente [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=es). Puede realizar los mismos pasos hacer repetibles los componentes [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Pestañas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es) y [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es).
 
 ## Agregar o eliminar secciones repetibles en un formulario {#add-or-delete-repeatable-section-in-panel-container}
 
-Para repetir un panel en el formulario o quitar paneles repetibles, un autor de formularios utiliza un componente Botón para agregar o quitar instancias del panel. Para agregar o eliminar secciones repetibles (paneles) en un formulario:
+Para repetir un panel en el formulario o quitar paneles repetibles, un autor de formularios utiliza un componente de botón para agregar o quitar instancias del panel. Para agregar o eliminar secciones repetibles (paneles) en un formulario, haga lo siguiente:
 
-* [Hacer que el contenedor del panel sea repetible](#make-panel-container-repeatable)
-* [Agregar sección repetible](#add-repeatable-section-using-instance-manager-via-scripts)
-* [Eliminar secciones repetibles](#delete-repeatable-section-using-instance-manager-via-scripts)
+* [Hacer repetible el contenedor del panel](#make-panel-container-repeatable)
+* [Añada una sección repetible](#add-repeatable-section-using-instance-manager-via-scripts)
+* [Elimine las secciones repetibles](#delete-repeatable-section-using-instance-manager-via-scripts)
 
 ### Hacer repetible el contenedor del panel {#make-panel-container-repeatable}
 
 ![Pestaña Accesibilidad](/help/forms/assets/repeat-panel.png)
 
-Para que un panel sea repetible, realice los siguientes pasos:
+Para hacer que un panel sea repetible, realice los siguientes pasos:
 1. Seleccione un contenedor de panel y pulse ![cmppr](/help/forms/assets/cmppr.png).
-1. Haga clic en **panel de repetición** y active la opción para **hacer panel repetible**.
-1. Establecer **repeticiones mínimas** si es necesario para secciones mínimas repetibles, puede definir lo siguiente **repeticiones mínimas** a cero para los paneles que no se repiten o para quitar los paneles repetidos. De forma predeterminada, el valor de repetición mínima es cero.
-1. Establecer **máxima repetición** para repetir el número de veces necesario en el panel, el valor predeterminado es infinito.
+1. Haga clic en **repetir panel** y active la opción para **hacer repetible el panel**.
+1. Establezca **repeticiones mínimas** según sea necesario para las secciones mínimas repetibles. Puede establecer las **repeticiones mínimas** a cero para la no repetición de paneles o para quitar los paneles repetidos. De forma predeterminada, el valor de repetición mínima es cero.
+1. Establezca **repeticiones máximas** para repetir el panel el número de veces necesarias. De forma predeterminada, el valor es infinito.
 
    >[!NOTE]
    >
@@ -59,17 +59,17 @@ Para que un panel sea repetible, realice los siguientes pasos:
    > * La repetición mínima no puede ser un valor -ve.
    > * Para crear un panel no repetible, establezca el valor del campo máximo y mínimo en uno.
 
-### Adición de una sección repetible mediante el Instance Manager (mediante scripts) {#add-repeatable-section-using-instance-manager-via-scripts}
+### Adición de una sección repetible mediante Instance Manager (mediante secuencias de comandos) {#add-repeatable-section-using-instance-manager-via-scripts}
 
-El elemento principal del panel que se va a repetir debe contener un botón Add para administrar la instancia de repetición del panel. Realice los siguientes pasos para insertar botones en el elemento principal y habilitar scripts en los botones:
+El elemento principal del panel que se va a repetir debe contener un botón de adición para administrar la instancia de repetición del panel. Realice los siguientes pasos para insertar botones en el elemento principal y habilitar scripts en los botones:
 
-1. Añadir un **componente de botón** al elemento principal del panel. En el siguiente vídeo de ejemplo, un componente de botón con el nombre de la etiqueta **Añadir** Nombre de campo y **AddPanel**, se utiliza. Seleccione el componente y pulse ![Editar reglas](/help/forms/assets/edit-rules.png). Las reglas del componente Botón se abren en el editor de reglas.
+1. Añada un **componente de botón** al elemento principal del panel. En el siguiente vídeo de ejemplo, se utiliza un componente de botón con el nombre de etiqueta **Agregar** y el nombre de campo **AgregarPanel**. Seleccione el componente y pulse ![Editar reglas](/help/forms/assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
 1. En la ventana Editor de reglas, haga clic en **Crear**.
 
    Seleccione **Editor visual** en la fila Objetos y funciones de formularios.
 
    1. En el área de regla, en CUANDO, **se hace clic** en seleccionar estado.
-   1. En ENTONCES, seleccione **Añadir instancia** y arrastre y suelte el panel utilizando ![toggle-side-panel](/help/forms/assets/toggle-side-panel.png) o selecciónelo mediante **Suelte el objeto o seleccione aquí.**
+   1. En LUEGO, seleccione **Añadir instancia**, y arrastre y suelte el panel mediante el ![panel lateral de alternancia](/help/forms/assets/toggle-side-panel.png) o selecciónelo utilizando **Colocar objeto o seleccionar aquí.**
 
    Seleccione **Editor de código** en la fila Objetos y funciones de formularios. Haga clic en **Editar reglas** y en el área de código:
 
@@ -80,17 +80,17 @@ El elemento principal del panel que se va a repetir debe contener un botón Add 
 >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
 
-### Eliminar secciones repetibles con el Instance Manager (mediante scripts) {#delete-repeatable-section-using-instance-manager-via-scripts}
+### Eliminar secciones repetibles con Instance Manager (mediante secuencias de comandos) {#delete-repeatable-section-using-instance-manager-via-scripts}
 
-El elemento principal del panel debe contener un botón de eliminación para eliminar la instancia de los paneles repetibles. Realice los siguientes pasos para insertar botones en el elemento principal y habilitar scripts en los botones para eliminar paneles repetibles:
+El elemento principal del panel debe contener un botón de eliminación para eliminar la instancia de los paneles repetibles. Realice los siguientes pasos para insertar botones en el elemento principal y habilitar secuencias de comandos en los botones para eliminar paneles repetibles:
 
-1. Añadir un **componente de botón** al elemento principal del panel, en el siguiente vídeo, un componente de botón con el nombre de la etiqueta **eliminar** Nombre de campo y **DeletePanel** se utiliza. Seleccione el componente y pulse ![Editar reglas](/help/forms/assets/edit-rules.png). Las reglas del componente Botón se abren en el editor de reglas.
+1. Añada un **componente de botón** al elemento principal del panel. En el siguiente vídeo, se utiliza un componente de botón con el nombre de etiqueta **eliminar** y nombre de campo **EliminarPanel**. Seleccione el componente y pulse ![Editar reglas](/help/forms/assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
 1. En la ventana Editor de reglas, haga clic en **Crear**.
 
    Seleccione **Editor visual** en la fila Objetos y funciones de formularios.
 
-   1. En el área de regla, en CUÁNDO **DeletePanel**, seleccione el estado **se hace clic**.
-   1. En ENTONCES, seleccione **Eliminar instancia** y arrastre y suelte el panel utilizando ![toggle-side-panel](/help/forms/assets/toggle-side-panel.png) o selecciónelo mediante **Suelte el objeto o seleccione aquí.**
+   1. En el área de reglas, en CUANDO **EliminarPanel**, **se hace clic** en seleccionar estado.
+   1. En LUEGO, seleccione **Quitar instancia**, y arrastre y suelte el panel utilizando el ![panel lateral de alternancia](/help/forms/assets/toggle-side-panel.png) o selecciónelo utilizando **Colocar objeto o seleccionar aquí.**
 
    Seleccione **Editor de código** en la fila Objetos y funciones de formularios. Haga clic en **Editar reglas** y en el área de código:
 
@@ -167,11 +167,11 @@ El subformulario repetible es similar a los paneles repetibles de los formulario
 1. Seleccione el subformulario que desea repetir.
 1. En la paleta Objeto, haga clic en la pestaña Subformulario y seleccione De posición variable o De posición fija en la lista Contenido.
 1. Haga clic en la pestaña Enlace y seleccione Repetir subformulario para cada elemento de datos.
-1. Para especificar el número mínimo de repeticiones, seleccione Mínimo y escriba un número en el cuadro correspondiente. Si esta opción se establece en 0 y no se proporcionan datos para los objetos del subformulario en el momento de la combinación de datos, el subformulario no se colocará cuando se represente el formulario.
+1. Para especificar el número mínimo de repeticiones, seleccione Mínimo y escriba un número en el cuadro correspondiente. Si la opción se ajusta a 0 y no se suministran datos para los objetos del subformulario en el momento de la combinación de datos, el subformulario no se coloca al procesar el formulario.
 1. Para especificar el número máximo de repeticiones de subformulario, seleccione Máx. y escriba un número en el cuadro correspondiente. Si no se especifica un valor en el cuadro Máx., el número de repeticiones de subformulario es ilimitado.
 1. Para especificar un número definido de repeticiones de subformulario, independientemente de la cantidad de datos, seleccione la opción Recuento inicial y escriba un número en el cuadro correspondiente. Si se selecciona esta opción y no hay ningún dato disponible o existen menos entradas de datos que el valor especificado en Recuento inicial, las instancias vacías del subformulario todavía se colocan en el formulario.
 1. Agregue dos botones en el subformulario principal: uno para añadir instancias y otro para eliminar instancias de subformularios repetibles. Para ver los pasos detallados, consulte [Generar una acción](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. Ahora, vincule la plantilla del formulario al formulario adaptable. Para ver los pasos detallados, consulte [Crear un formulario adaptable basado en una plantilla](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template).
+1. Ahora, vincule la plantilla del formulario al formulario adaptable. Para ver los pasos detallados, consulte [Crear un formulario adaptable basado en una plantilla](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=es#create-an-adaptive-form-based-on-an-xfa-form-template).
 1. Utilice los botones creados en el paso 9 para añadir y quitar subformularios.
 
 El archivo .zip adjunto contiene un subformulario repetible de ejemplo.
@@ -180,7 +180,7 @@ El archivo .zip adjunto contiene un subformulario repetible de ejemplo.
 
 ## Utilizar la configuración repetida de un esquema XML (XSD) {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-Puede crear paneles repetibles a partir de un esquema XML y de la propiedad minOccours y maxOccurs de cualquier elemento de tipo complejo. Para obtener información detallada sobre el esquema XML, consulte [Crear formularios adaptables mediante el esquema XML como modelo de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html).
+Puede crear paneles repetibles a partir de un esquema XML y de la propiedad minOccours y maxOccurs de cualquier elemento de tipo complejo. Para obtener información detallada sobre el esquema XML, consulte [Crear formularios adaptables mediante el esquema XML como modelo de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html?lang=es).
 
 En el siguiente código, el panel `SampleType` utiliza la propiedad minOccours y maxOccurs.
 
@@ -228,6 +228,6 @@ En el siguiente código, el panel `SampleType` utiliza la propiedad minOccours y
 ## Artículos relacionados
 
 * [Crear un formulario adaptable](creating-adaptive-form-core-components.md)
-* [Crear estilos o temáticas para los formularios](using-themes-in-core-components.md)
-* [Agregar un comportamiento dinámico a los formularios mediante el editor de reglas](rule-editor.md)
-* [Definir la presentación de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Creación de estilos o temáticas para los formularios](using-themes-in-core-components.md)
+* [Adición de un comportamiento dinámico a los formularios mediante el editor de reglas](rule-editor.md)
+* [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)

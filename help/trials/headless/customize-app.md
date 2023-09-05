@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Empiece en el editor de fragmentos de contenido con la aplicación de muestra qu
 
 1. Haga clic o pulse en el botón **Vista previa** en la parte superior derecha de la pantalla del editor.
 
-1. La aplicación de muestra se abre en una nueva pestaña. La aplicación es para la marca ficticia de estilo de vida al aire libre WKND. Desplácese hacia abajo por la página para desplazarse por el contenido de ejemplo.
+1. La aplicación de muestra se abre en una nueva pestaña. La aplicación es para la marca ficticia de estilo de vida al aire libre WKND. Muévase hacia abajo por la página para desplazarse por el contenido de ejemplo.
 
 1. Vuelva a la pestaña del explorador del editor de fragmentos de contenido para continuar.
 
@@ -105,7 +105,7 @@ Ahora que ha actualizado la imagen del ciclista, vamos a ver cómo añadir conte
 
 1. Seleccione la capa **Ciclista de montaña: ventas**.
 
-1. Para crear una nueva llamada en este panel, debe crear un nuevo fragmento de contenido de momento de compra. Haga clic o pulse en el botón **+ Crear nuevo fragmento**.
+1. Para crear una nueva llamada en este panel, debe crear un nuevo fragmento de contenido en el momento de ventas. Haga clic o pulse en el botón **+ Crear nuevo fragmento**.
 
    ![Adición de un momento de ventas](assets/do-not-localize/add-reference-1-5.png)
 

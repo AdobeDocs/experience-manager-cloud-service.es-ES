@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -57,11 +57,11 @@ Antes de comenzar a traducir el contenido de AEM, existen varios requisitos.
 
 ## Cómo almacena el contenido AEM {#content-in-aem}
 
-Para el especialista en traducción, no es importante comprender en profundidad cómo administra el contenido AEM. AEM Sin embargo, familiarizarse con los conceptos básicos y la terminología es útil, ya que más adelante utilizará herramientas de traducción de la aplicación de la traducción de la manera más rápida y sencilla. Lo más importante es que debe comprender su propio contenido y cómo está estructurado para traducirlo de forma eficaz.
+Para el especialista en traducción, no es importante comprender en profundidad cómo administra el contenido AEM. Sin embargo, familiarizarse con los conceptos básicos y la terminología resultará útil, ya que más adelante utilizará las herramientas de traducción de AEM. Lo más importante es comprender su propio contenido y cómo está estructurado para traducirlo de forma eficaz.
 
-### Consola Sitios {#sites-console}
+### Consola Sites {#sites-console}
 
-La consola Sites proporciona información general sobre la estructura del contenido, lo que facilita la navegación y la administración al crear páginas nuevas, mover y copiar páginas y publicar contenido.
+La consola Sites proporciona una descripción general de la estructura del contenido, lo que facilita la navegación y la administración al crear páginas nuevas, mover y copiar páginas o publicar contenido.
 
 Para acceder a la consola Sites:
 
@@ -75,7 +75,7 @@ Para acceder a la consola Sites:
 
    ![Jerarquía de contenido](assets/sites-console-hierarchy.png)
 
-1. Al tocar o hacer clic en la casilla de verificación de un elemento de una columna, se selecciona ese elemento y se muestran sus detalles en la columna de la derecha, así como varias acciones disponibles en la barra de herramientas de arriba.
+1. Al tocar o hacer clic en la casilla de verificación de un elemento de una columna, se selecciona ese elemento y se muestran sus detalles en la columna de la derecha, y varias acciones disponibles en la barra de herramientas de arriba.
 
    ![Selección de contenido](assets/sites-console-selection.png)
 
@@ -175,7 +175,7 @@ La estructura final puede tener un aspecto similar al siguiente.
     |- ...
 ```
 
-Debe tomar nota de la ruta específica del contenido, ya que es necesaria más adelante para configurar la traducción.
+Debe tomar nota de la ruta específica del contenido, porque será necesaria más adelante para configurar la traducción.
 
 >[!NOTE]
 >

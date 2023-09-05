@@ -7,7 +7,7 @@ exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 90%
+ht-degree: 94%
 
 ---
 
@@ -77,7 +77,7 @@ AEM proporciona lo siguiente:
 El controlador de conflictos predeterminado es `ResourceNameRolloutConflictHandler`
 
 * Con este controlador, la página de modelo tiene prioridad.
-* La clasificación de servicio de este controlador se establece en un nivel bajo, es decir, por debajo del valor predeterminado para `service.ranking` , ya que se supone que los controladores personalizados necesitarán una clasificación más alta. Sin embargo, la clasificación no está al nivel mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
+* La clasificación de servicio de este controlador se establece en un nivel bajo, es decir, por debajo del valor predeterminado para la propiedad `service.ranking`, ya que se supone que los controladores personalizados necesitarán una clasificación más alta. Sin embargo, la clasificación no está al nivel mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
 
 Este controlador de conflictos da prioridad al modelo. Por ejemplo, la página de Live Copy `/b` se mueve dentro de la rama de Live Copy a `/b_msm_moved`.
 

@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1014'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -34,13 +34,13 @@ Los casos de uso habituales para usar variables de entorno incluyen:
 
 >[!NOTE]
 >
->Debe ser miembro de la [**Administrador de implementación** función](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) para agregar o modificar variables de entorno.
+>Tiene que estar abonado a la función de [**Administrador de implementación**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) para agregar o modificar las variables de entorno.
 
 1. Inicie sesión en Adobe Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager enumera los distintos programas disponibles. Seleccione el que desee administrar.
 1. Seleccione la pestaña **Entornos** para el programa elegido, seleccione el entorno para el que desea crear una variable de entorno en el panel de navegación izquierdo.
 1. En los detalles del entorno, seleccione la pestaña **Configuración** y a continuación, seleccione **Agregar** para abrir el cuadro de diálogo **Configuración del entorno**.
-   * Si agrega una variable de entorno por primera vez, verá un **Agregar configuración** en el centro de la página. Puede utilizar este botón o **Agregar** para abrir el cuadro de diálogo **Configuración del entorno**.
+   * Si agrega una variable de entorno por primera vez, verá el botón **Agregar configuración** en el centro de la página. Puede utilizar este botón o **Agregar** para abrir el cuadro de diálogo **Configuración del entorno**.
 
    ![Pestaña Configuración](assets/configuration-tab.png)
 
@@ -88,7 +88,7 @@ Una vez creadas las variables de entorno, puede actualizarlas con el botón **Ag
 
    ![Editar variable](assets/edit-variable.png)
 
-1. Después de haber realizado todos los cambios de configuración necesarios, seleccione **Guardar**.
+1. Una vez que haya realizado todos los cambios de configuración necesarios, seleccione **Guardar**.
 
 [Al igual que cuando se agregan variables,](#add-variables) se muestra un indicador con el estado **Actualizando** en la parte superior de la tabla y junto a las variables recién actualizadas para indicar que el entorno se está actualizando con la configuración. Una vez finalizadas, las variables de entorno actualizadas se pueden ver en la tabla.
 

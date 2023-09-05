@@ -5,7 +5,7 @@ exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1687'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ AEM Le permite personalizar fácilmente las experiencias de los usuarios. Tambi�
 
 ## Acceso a segmentos {#accessing-segments}
 
-El [Audiencias](audiences.md) se utiliza para administrar segmentos para ContextHub y audiencias para su cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub.
+La consola [Audiencies](audiences.md) se utiliza para administrar segmentos para ContextHub, así como públicos para su cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub.
 
 Para acceder a sus segmentos en la navegación global, seleccione **Navegación > Personalización > Audiencias**. Seleccione la configuración (por ejemplo, WKND Site) para ver los segmentos:
 
@@ -65,13 +65,13 @@ Las siguientes comparaciones de segmentos están disponibles y listas para usars
 
 >[!NOTE]
 >
->Al comparar valores, si no se establece el tipo de datos de la comparación (es decir, se establece para la detección automática), el motor de segmentación de ContextHub simplemente comparará los valores como lo haría JavaScript. No transmite valores a sus tipos esperados, lo que puede llevar a resultados engañosos. Por ejemplo:
+>Al comparar valores, si no se establece el tipo de datos de la comparación (es decir, se configura para la detección automática), el motor de segmentación de ContextHub simplemente comparará los valores como lo haría JavaScript. No transmite valores a sus tipos esperados, lo que puede llevar a resultados engañosos. Por ejemplo:
 >
 >`null < 30 // will return true`
 >
 >Por lo tanto, cuando [cree segmentos](#creating-a-new-segment), debe seleccionar un **tipo de datos** siempre que se conozcan los tipos de valores comparados. Por ejemplo:
 >
->Al comparar la propiedad `profile/age`, ya sabe que el tipo comparado es un **número**, así que aunque `profile/age` no está configurado, una comparación `profile/age` se devuelve menos de 30 **false**, como cabría esperar.
+>Al comparar la propiedad `profile/age`, ya sabe que el tipo comparado es un **número**, por lo que incluso si `profile/age` no está establecido, una comparación `profile/age` menor que 30 se devuelve **false**, como cabría esperar.
 
 ### Referencias {#references}
 
@@ -92,7 +92,7 @@ Para definir el nuevo segmento:
 
    ![Agregar segmento](../assets/contexthub-create-segment.png)
 
-1. En el **Nuevo segmento de ContextHub**, introduzca un título para el segmento y un valor de ampliación si es necesario y, a continuación, toque o haga clic en **Crear**.
+1. En el **Nuevo segmento de ContextHub**, escriba un título para el segmento y un valor de ampliación si es necesario y, a continuación, toque o haga clic en **Crear**.
 
    ![Nuevo segmento](../assets/contexthub-new-segment.png)
 
@@ -199,8 +199,8 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 1. Proporcione un **Título** y **Nombre** para su carpeta.
    * El **Título** debe ser descriptivo.
-   * El **Nombre** se convierte en el nombre de nodo del repositorio.
-      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de](/help/implementing/developing/introduction/naming-conventions.md).
+   * El **nombre** se convierte en el nombre de nodo del repositorio.
+      * Se genera automáticamente en función del título y se ajusta según las [convenciones de nomenclatura de AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Se puede modificar si es necesario.
 
    ![Crear carpeta](../assets/contexthub-create-folder.png)
@@ -279,7 +279,7 @@ O si no se resuelve:
 
 Estas pruebas también se pueden realizar en páginas de contenido y en combinación con contenido de destino y **Actividades** y **Experiencias** relacionadas.
 
-Si ha configurado una actividad y experiencia, puede probar fácilmente el segmento con la actividad. Para obtener más información sobre la configuración de una actividad de, consulte la [documentación sobre creación de contenido de destino](targeted-content.md).
+Si ha configurado una actividad y experiencia, puede probar fácilmente el segmento con la actividad. Para obtener más información sobre la configuración de una actividad, consulte la [documentación sobre la creación de contenido de destino](targeted-content.md).
 
 1. En el modo de edición de una página en la que ha configurado contenido de destino, puede ver que el contenido se orienta mediante un icono de flecha en el contenido.
 1. Cambie al modo de previsualización y, con el Context Hub, cambie a un perfil que no coincida con la segmentación configurada para la experiencia.

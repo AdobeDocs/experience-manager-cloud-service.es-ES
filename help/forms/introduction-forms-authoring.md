@@ -13,7 +13,7 @@ exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2482'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | Este artículo |
 
 ## Información general {#overview}
@@ -37,10 +37,10 @@ Los formularios adaptables le permiten crear formularios atractivos, interactivo
 Es un modelo de formulario ideal si tiene inversiones en formularios XFA o XDP. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Cualquier regla XFA existente se conservará en el formulario adaptable asociado. El formulario adaptable resultante admitirá construcciones XFA, como validaciones, eventos, propiedades y patrones.
 
 * **Usar una definición de esquema XML (XSD) o un esquema JSON**
-Los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles para su uso en la pestaña Objetos del modelo de datos del Explorador de contenido al crear Forms adaptable.
+Los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema estarán disponibles para su uso en la pestaña Objetos del modelo de datos del explorador de contenido al crear formularios adaptables.
 
 * **Usar ninguno o no usar un modelo de formulario**
-El Forms adaptable creado con esta opción no utiliza ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
+Los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
 
   >[!NOTE]
   >
@@ -198,7 +198,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Panel</td>
-   <td><p>Agrega un panel o subpanel.</p> <p>También puede agregar un componente de panel desde la barra de herramientas del panel principal mediante la variable <span class="uicontrol">Agregar panel secundario</code> botón. Del mismo modo, puede agregar una barra de herramientas específica de un panel mediante la variable <span class="uicontrol">Agregar barra de herramientas del panel</code> botón. Puede configurar la posición de la barra de herramientas del panel mediante el cuadro de diálogo Editar panel.</p> </td>
+   <td><p>Agrega un panel o subpanel.</p> <p>También puede agregar un componente de panel desde la barra de herramientas del panel principal mediante el botón <span class="uicontrol">Agregar panel secundario</code> botón. |Del mismo modo, puede agregar una barra de herramientas específica de un panel mediante el botón <span class="uicontrol">Agregar barra de herramientas del panel</code> botón. Puede configurar la posición de la barra de herramientas del panel mediante el cuadro de diálogo Editar panel.</p> </td>
   </tr>
   <tr>
    <td>Cuadro de contraseña</td>

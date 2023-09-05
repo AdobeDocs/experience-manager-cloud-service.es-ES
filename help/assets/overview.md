@@ -8,7 +8,7 @@ exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 66%
+ht-degree: 97%
 
 ---
 
@@ -39,15 +39,15 @@ Los siguientes son los beneficios clave de Assets as a [!DNL Cloud Service]. Par
 
 ## Experiencias basadas en personas disponibles {#persona-based-experiences}
 
-Adobe ofrece una solución sólida de administración de activos digitales (DAM) para que usted pueda sacar el máximo partido sus recursos digitales. Adobe Experience Manager Assets tiene dos experiencias independientes que utilizan el mismo repositorio de Cloud Service:
+Adobe ofrece una solución sólida de administración de activos digitales (DAM) para que usted pueda sacar el máximo partido sus recursos digitales. Adobe Experience Manager Assets tiene dos experiencias independientes que utilizan el mismo repositorio de Cloud Services:
 
-* **Vista de administrador**: la interfaz de usuario as a Cloud Service de Assets existente. Utilice la vista de administración para todas las funcionalidades avanzadas de administración de recursos, incluidas integraciones, flujos de trabajo, automatización de contenido, publicación y mucho más.
+* **Vista de administrador**: la interfaz de usuario as a Cloud Service de Assets existente. Utilice la vista de administrador para todas las funcionalidades avanzadas de administración de recursos, incluidas integraciones, flujos de trabajo, automatización de contenido, publicación y mucho más.
 
-* **Vista de recursos**: la experiencia de administración de recursos ligera de Adobe para almacenar, administrar, descubrir y utilizar recursos digitales. Interfaz de usuario optimizada que contiene funciones esenciales de administración de recursos. Diseñado para los usuarios de DAM ligeros con un enfoque en la carga, administración de metadatos, búsqueda, descarga y uso compartido.
+* **Vista de recursos**: la experiencia de administración de recursos ligera de Adobe para almacenar, administrar, descubrir y utilizar recursos digitales. Interfaz de usuario optimizada que contiene funciones esenciales de administración de recursos. Diseñada para los usuarios de DAM ligeros con un enfoque en la carga, administración de metadatos, búsqueda, descarga y uso compartido.
 
-Los usuarios con acceso a la vista Administración también pueden acceder a la vista Recursos. La vista de recursos proporciona una interfaz de usuario simplificada que facilita la administración, la detección y la distribución de sus recursos digitales. Un amplio conjunto de usuarios de diferentes funciones, incluidos los equipos creativos, de marketing y de línea de negocios, pueden colaborar en los activos y acceder a los activos correctos y aprobados cuando y donde los necesiten. Muchos usuarios ocasionales de DAM prefieren la vista Recursos porque solo contiene un subconjunto de funciones. La experiencia está dirigida a creativos, consumidores de recursos de solo lectura y usuarios de DAM de menor peso.
+Los usuarios con acceso a la vista del administrador también pueden acceder a la vista Recursos. La interfaz de usuario simplificada de Assets Essentials facilita la administración, la detección y la distribución de sus recursos digitales. Un amplio conjunto de usuarios de diferentes funciones, incluidos los equipos creativos, de marketing y de línea de negocios, pueden colaborar en los activos y acceder a los activos correctos y aprobados cuando y donde los necesiten. Muchos usuarios ocasionales de DAM prefieren la vista Recursos porque solo contiene un subconjunto de funciones. La experiencia está dirigida a creativos, consumidores de recursos de solo lectura y usuarios de DAM de menor peso.
 
-Los bibliotecarios, desarrolladores y superusuarios de DAM pueden seguir utilizando la vista Administrador o cambiar entre las interfaces de usuario, según sea necesario. Puede seleccionar la experiencia que mejor se adapte a su función.
+Los bibliotecarios, desarrolladores y superusuarios de DAM pueden seguir utilizando la vista de administrador o cambiar entre las interfaces de usuario, según sea necesario. Puede seleccionar la experiencia que mejor se adapte a su función.
 
 ![add-tags](assets/newui-overview.svg)
 

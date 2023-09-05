@@ -20,8 +20,8 @@ ht-degree: 9%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
->title="Iniciar el Editor universal"
->abstract="En esta guía exploraremos el Editor universal y cómo permite a los usuarios editar todos los aspectos del contenido en cualquier implementación, lo que permite mejorar la velocidad del contenido.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
+>title="Inicio del editor universal"
+>abstract="En esta guía exploraremos el editor universal y cómo permite editar todos los aspectos del contenido en cualquier implementación, lo que mejora la velocidad de contenido.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"

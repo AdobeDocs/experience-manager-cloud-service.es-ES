@@ -5,7 +5,7 @@ exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ AEM es una solución de gestión de experiencia web de vanguardia y ofrece mucha
 * Configuración y procesamiento de un componente de IU personalizado. Por ejemplo, permita que un autor arrastre y suelte un componente de vídeo y configure un vídeo específico para que se reproduzca en el sitio en directo.
 * Actuación en un recurso con un servicio de socio. Por ejemplo, enviar un recurso a una plataforma de vídeo cuando se publica una página.
 * Análisis de un sitio, página o recurso en la Admin Console de AEM. Por ejemplo, hacer recomendaciones de SEO para una página existente o no publicada.
-* Acceso de nivel de página a los datos de usuario mantenidos por un servicio externo. Por ejemplo, utilice información demográfica para personalizar la experiencia del sitio. Obtenga información acerca de ContextHub, un marco de trabajo para almacenar, manipular y presentar datos de contexto.
+* Acceso de nivel de página a los datos de usuario mantenidos por un servicio externo. Por ejemplo, utilice la información demográfica para personalizar la experiencia del sitio. Obtenga información acerca de ContextHub, un marco de trabajo para almacenar, manipular y presentar datos de contexto.
 * Traducción de metadatos de recursos o copias de sitios. Consulte el [Conector del Bootstrap del marco de trabajo de traducciones de AEM](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) para ver el código de muestra mediante el marco de trabajo de traducciones de AEM, que es la implementación preferida de los conectores de traducción.
 
 
@@ -52,7 +52,7 @@ Además de la documentación estática anterior, Adobe y la comunidad de AEM ofr
 Reglas de estructura del paquete
 -----------------------
 
-AEM Para admitir implementaciones móviles, los paquetes as a Cloud Service, de los que los conectores son ejemplos, tienen una estricta separación entre el contenido &quot;inmutable&quot; y el &quot;mutable&quot;. Los paquetes deben separarse claramente entre los que incluyen:
+Para admitir implementaciones móviles, los paquetes de AEM as a Cloud Service, de los cuales los conectores son ejemplos, tienen una estricta separación entre el contenido “inmutable” y el “mutable”. Los paquetes deben separarse claramente entre los que incluyen:
 
 * `/apps`
 * `/content` y `/conf`
@@ -74,7 +74,7 @@ Un aspecto de la implementación del conector es el código que respalda la conf
 Configuraciones según el contexto
 -----------------------------
 
-[Configuraciones según el contexto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) permite crear capas de configuración en distintas carpetas, incluso `/libs`, `/apps`, `/conf` y subcarpetas en `/conf`. Admite la herencia para que un cliente pueda configurar la configuración global mientras realiza cambios específicos para cada micrositio. Dado que es posible utilizar esta función para las configuraciones de Cloud Services, el código del conector debe hacer referencia a la configuración mediante la API de configuración según el contexto en lugar de hacer referencia a un nodo de configuración específico.
+[Configuraciones según el contexto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) permite crear capas de configuración en distintas carpetas, incluso `/libs`, `/apps`, `/conf` y subcarpetas en `/conf`. Admite la herencia para que un cliente pueda configurar la configuración global mientras realiza cambios específicos para cada micrositio. Dado que es posible utilizar esta función para las configuraciones de Cloud Service, el código del conector debe hacer referencia a la configuración mediante la API de configuración según el contexto en lugar de hacer referencia a un nodo de configuración específico.
 
 Si se utilizan configuraciones modificadas en el conector, cree el conector para gestionar la inclusión/combinación de cualquier actualización futura de las configuraciones predeterminadas proporcionadas por el conector con cualquier configuración del cliente. Recuerde que el cambio de contenido o configuración personalizado (como el que ha cambiado el cliente) sin advertencia ni consentimiento del cliente puede romperse (o crear un comportamiento inesperado) con su conector.
 

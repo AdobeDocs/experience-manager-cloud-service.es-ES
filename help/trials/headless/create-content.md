@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 82%
 
 Los fragmentos de contenido representan su contenido sin encabezado y se basan en estructuras predefinidas, denominadas modelos de fragmento de contenido. Ya ha creado un modelo en un módulo anterior.
 
-En este módulo, creará un nuevo fragmento de contenido basado en ese modelo mediante la consola Fragmento de contenido. Considere la consola fragmento de contenido como una biblioteca de contenido sin encabezado. Utilícela para crear nuevos fragmentos de contenido y administrar los existentes.
+En este módulo creará un nuevo fragmento de contenido basado en ese modelo mediante la consola de fragmentos de contenido. Considere la consola fragmento de contenido como una biblioteca de contenido sin encabezado. Utilícela para crear nuevos fragmentos de contenido y administrar los existentes.
 
 La consola Fragmento de contenido se utiliza para crear y editar contenido sin encabezado en todos los canales de envío e independientemente del contexto, que puede ser el método más eficaz en muchos casos de creación. En un módulo posterior, exploraremos la edición de contenido sin encabezado en contexto y in situ.
 
 1. Toque o haga clic en el botón **Crear** en la parte superior derecha de la consola.
 
-1. El **Fragmento de contenido nuevo** se abrirá un cuadro de diálogo en el que puede empezar a crear un nuevo fragmento de contenido. **Ubicación** se rellena automáticamente con la ubicación en la que se guarda el nuevo contenido.
+1. Se abre el cuadro de diálogo **Nuevo fragmento de contenido**, en el que puede empezar a crearlo. **Ubicación** se rellena automáticamente con el lugar donde se guarda el nuevo contenido.
 
 1. En el desplegable **modelo de Fragmento de contenido**, seleccione el modelo de Fragmento de contenido **Aventura** que creó anteriormente.
 
@@ -51,11 +51,11 @@ La consola Fragmento de contenido se utiliza para crear y editar contenido sin e
 
 >[!TIP]
 >
->Según la configuración del explorador, la nueva pestaña del explorador puede ser suprimida por un bloqueador de ventanas emergentes. Si el nuevo fragmento no se abre después de hacer clic en **Crear y abrir**, compruebe la configuración de su explorador.
+>Según la configuración del explorador, la nueva pestaña del explorador puede ser suprimida por un bloqueador de ventanas emergentes. Si el nuevo fragmento no se abre después de hacer clic en **Crear y abrir**, compruebe la configuración del explorador.
 
 ## Adición de contenido a su Fragmento de contenido {#add-content}
 
-Después de guardar y abrir el nuevo fragmento de contenido, el editor de fragmentos de contenido se abre en una nueva pestaña. Aquí puede añadir el contenido del nuevo fragmento.
+Una vez guardado y abierto el nuevo fragmento de contenido, el editor de fragmentos de contenido se abre en una nueva pestaña. Aquí puede añadir el contenido del nuevo fragmento.
 
 1. El editor de fragmentos de contenido muestra los campos definidos en el modelo seleccionado. Aquí puede añadir contenido a cada campo para completar el fragmento de contenido. El progreso se guarda automáticamente.
 

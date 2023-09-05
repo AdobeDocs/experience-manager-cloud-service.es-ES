@@ -5,7 +5,7 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ La auditoría de experiencia es una característica disponible en las canalizaci
 
 La auditoría de experiencias en Cloud Manager garantiza que la experiencia del usuario final en el sitio sea de los más altos estándares.
 
-Los resultados de la auditoría son informativos y permiten al administrador de implementación ver las puntuaciones y el cambio entre las puntuaciones actuales y anteriores. Esta perspectiva es valiosa para determinar si hay una regresión que se introdujo con la implementación actual.
+Los resultados de la auditoría son informativos y permiten al administrador de implementación ver las puntuaciones y el cambio entre las puntuaciones actuales y anteriores. Esta perspectiva es importante para determinar si hay una regresión que se haya introducido con la implementación actual.
 
 La auditoría de experiencias está equipada con Google Lighthouse, una herramienta de código abierto de Google y está habilitada en todas las canalizaciones de producción de Cloud Manager.
 
@@ -72,6 +72,6 @@ La métrica de cambios puede tener uno de los siguientes valores.
 
 Al profundizar en cualquiera de las pruebas, se dispone de una puntuación a nivel de página más detallada. Se puede ver la puntuación de las páginas individuales para la prueba específica junto con el cambio con respecto a la anterior.
 
-Al hacer clic en los detalles de cualquier página individual se proporciona información sobre los elementos de la página que se evaluaron y se proporcionan instrucciones para solucionar problemas si se detectan oportunidades de mejora.
+Al hacer clic en los detalles de cualquier página individual se proporciona información sobre los elementos de la página que se evaluaron, así como las instrucciones para solucionar problemas si se detectan oportunidades de mejora.
 
 ![Puntuaciones a nivel de página](/help/implementing/cloud-manager/assets/exp-audit-2.png)

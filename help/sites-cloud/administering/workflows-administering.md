@@ -6,7 +6,7 @@ role: Admin
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -30,18 +30,18 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 1. En el carril superior, en la esquina derecha, las instancias de flujo de trabajo muestran **Flujos de trabajo en ejecución**, **Estado** y **Detalles**.
 1. **Flujos de trabajo en ejecución** muestra el número de flujos de trabajo en ejecución y su estado. por ejemplo, en las imágenes especificadas, se muestra el número de **Flujos de trabajo en ejecución** y el **Estado** de la instancia de AEM:
 
-   * **Estado: Correcto**
-     ![estado-correcto](/help/sites-cloud/administering/assets/status-healthy.png)
+   * **Estado: correcto**
+     ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
-   * **Estado: Incorrecto**
+   * **Estado: incorrecto**
      ![estado-incorrecto](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. En **Detalles del estado** de instancias de flujo de trabajo, haga clic en **Detalles**, para mostrar el **número de instancias de flujos de trabajo en ejecución**, **instancias de flujo de trabajo completadas**, **instancias de flujo de trabajo anuladas**, **instancias de flujo de trabajo fallidas**, etc. por ejemplo, a continuación se muestran las imágenes determinadas que muestran **Detalles del estado** con:
 
-   * **Detalles del estado: Correcto**
-     ![detalles-estado-correcto](/help/sites-cloud/administering/assets/status-details-healthy.png)
+   * **Detalles del estado: correcto**
+     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
-   * **Detalles del estado: no saludable**
+   * **Detalles del estado: incorrecto**
      ![detalles-estado-incorrecto](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -198,7 +198,7 @@ Los datos procesados por flujos de trabajo se almacenan en el almacenamiento pro
 
 En el nivel del modelo de flujo de trabajo, se proporciona un indicador para indicar que el modelo (y sus instancias de tiempo de ejecución) tiene almacenamiento externo de metadatos. Las variables de flujo de trabajo no se mantendrán en JCR para las instancias de flujo de trabajo de los modelos marcados para almacenamiento externo.
 
-La propiedad *userMetadataPersistenceEnabled* se almacena en *jcr:nodo de contenido* del modelo de flujo de trabajo. Este indicador se mantiene en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
+La propiedad *userMetadataPersistenceEnabled* se almacena en la variable *jcr:nodo de contenido* del modelo de flujo de trabajo. Este indicador se mantiene en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
 
 La siguiente ilustración muestra cómo establecer el indicador en un flujo de trabajo.
 

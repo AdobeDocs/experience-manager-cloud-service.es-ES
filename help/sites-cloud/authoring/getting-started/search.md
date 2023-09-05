@@ -1,11 +1,11 @@
 ---
 title: Búsqueda
-description: Encuentre su contenido más rápido con una búsqueda completa
+description: Encuentre su contenido más rápidamente con una búsqueda completa
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 76%
+ht-degree: 98%
 
 ---
 
@@ -33,11 +33,11 @@ Con el carril de búsqueda puede:
 
 Para buscar y filtrar sus recursos: 
 
-1. Abra **Buscar** (con la lupa de la barra de herramientas) y escriba el término de búsqueda. Se realizan sugerencias que se pueden seleccionar:
+1. Abra **Buscar** (con la lupa de la barra de herramientas) y escriba el término de búsqueda. Se ofrecen sugerencias que se pueden seleccionar:
 
    ![Término de búsqueda](/help/sites-cloud/authoring/assets/search-term.png)
 
-   De forma predeterminada, los resultados de la búsqueda están limitados a su ubicación actual (es decir, la consola y el tipo de recurso relacionado):
+   De forma predeterminada, los resultados de la búsqueda están limitados a su ubicación actual (es decir, la consola y el tipo de recurso relacionado): 
 
    ![Ubicación de la búsqueda](/help/sites-cloud/authoring/assets/search-term-location.png)
 
@@ -57,7 +57,7 @@ Para buscar y filtrar sus recursos:
    El panel lateral permite seleccionar:
 
    * Búsquedas guardadas
-   * Buscar directorio
+   * Directorio de búsqueda
    * Etiquetas
    * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de LiveCopy.
 
@@ -65,7 +65,7 @@ Para buscar y filtrar sus recursos:
    >
    >Los criterios de búsqueda pueden variar:
    >
-   >* Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de Recursos y Comunidades son comprensiblemente especializados.
+   >* Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de Assets y Comunidades son comprensiblemente especializados.
    >* Su instancia, al igual que los formularios de búsqueda, se puede personalizar (según la ubicación en AEM).
 
 <!--
@@ -80,7 +80,7 @@ Para buscar y filtrar sus recursos:
 
 >[!NOTE]
 >
->Los criterios de búsqueda se mantienen al seleccionar un elemento en los resultados de búsqueda.
+>Los criterios de búsqueda se mantienen al seleccionar un elemento en los resultados de la búsqueda.
 >
 >Cuando se selecciona un elemento en la página de resultados de la búsqueda, al volver a la página de búsqueda después de usar el botón Atrás del explorador, los criterios de búsqueda se mantienen. 
 
@@ -100,7 +100,7 @@ Además de buscar aplicando una amplia gama de criterios, también puede guardar
 
    ![Búsquedas guardadas](/help/sites-cloud/authoring/assets/saved-searches.png)
 
-1. Una vez guardado, puede:
+1. Una vez guardada, puede hacer lo siguiente:
 
    * Use **x** (con el nombre de la búsqueda guardada) para iniciar una nueva consulta (la búsqueda guardada en sí no se eliminará).
    * Use la opción **Editar búsqueda guardada**, cambie las condiciones de búsqueda y luego utilice **Guardar** nuevamente.

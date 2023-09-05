@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Inicie GraphQL Explorer en una pestaña nueva. Aquí puede generar y validar con
 
    ![Consulta de lista](assets/do-not-localize/list-query-1-3-4-5.png)
 
-Acaba de validar una consulta de lista para una lista completa de todos los fragmentos de contenido. Este proceso garantiza que la respuesta sea lo que espera la aplicación, con resultados que ilustran cómo las aplicaciones y sitios web recuperarán el contenido creado en AEM.
+Acaba de validar una consulta de lista para obtener una lista completa de todos los fragmentos de contenido. Este proceso garantiza que la respuesta sea lo que espera la aplicación, con resultados que ilustran cómo las aplicaciones y sitios web recuperarán el contenido creado en AEM.
 
 ## Consulta de un fragmento específico de contenido de muestra {#bypath-query}
 

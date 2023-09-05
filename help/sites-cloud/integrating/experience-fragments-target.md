@@ -5,7 +5,7 @@ exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2254'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -48,7 +48,7 @@ Los fragmentos de experiencias se pueden exportar al espacio de trabajo predeter
 
 >[!NOTE]
 >
->Para obtener más información, consulte:
+>Para obtener más información, consulte lo siguiente:
 >
 >* [Desarrollo de Adobe Target](https://developers.adobetarget.com/)
 >* [Componentes principales: fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
@@ -75,7 +75,7 @@ Antes de exportar un fragmento, debe agregar la **Configuración de nube** para 
 * seleccionar un espacio de trabajo de Target como destino
 * seleccione un dominio externalizador para reescribir referencias en el fragmento de experiencia (opcional)
 
-Las opciones requeridas se pueden seleccionar en **Propiedades de página** de la carpeta, fragmento o ambos necesarios; la especificación se hereda según sea necesario.
+Las opciones requeridas se pueden seleccionar en **Propiedades de página** de la carpeta o fragmento necesarios; la especificación se hereda según sea necesario.
 
 1. Vaya a la consola de **fragmentos de experiencias**.
 
@@ -356,7 +356,7 @@ Para exportar un fragmento de experiencia de AEM a Target (después de especific
 
 ## Uso de los fragmentos de experiencias en Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Después de realizar las tareas anteriores, el fragmento de experiencia se muestra en la página Ofertas de Target. Consulte [documentación específica de Target](https://experiencecloud.adobe.com/resources/help/es_ES/target/target/aem-experience-fragments.html) para aprender lo que se puede lograr allí.
+Después de realizar las tareas anteriores, el fragmento de experiencia se muestra en la página Ofertas de Target. Consulte la [documentación específica de Target](https://experiencecloud.adobe.com/resources/help/es_ES/target/target/aem-experience-fragments.html) para aprender lo que se puede lograr allí.
 
 >[!NOTE]
 >

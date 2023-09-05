@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 21%
+ht-degree: 37%
 
 ---
 
@@ -17,7 +17,7 @@ Esta página documenta las notas de la versión 2023.8.0 para Cloud Manager en A
 
 >[!NOTE]
 >
->Consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md) para las notas de la versión actuales de Adobe Experience Manager as a Cloud Service.
+>Consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md) para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service.
 
 ## Fecha de lanzamiento {#release-date}
 
@@ -26,7 +26,7 @@ La fecha de lanzamiento de Cloud Manager 2023.8.0 en AEM as a Cloud Service es e
 ## Novedades {#what-is-new}
 
 * Al configurar un conjunto de contenido como [copiar contenido,](/help/implementing/developing/tools/content-copy.md) [configuraciones según el contexto](/help/implementing/developing/introduction/configurations.md) ahora se permiten en los conjuntos de contenido de la interfaz de usuario.
-* Se han realizado mejoras para mejorar la comprensión y la aparición de mensajes de error en la IU de Cloud Manager.
+* Se han realizado mejoras para la comprensión y la aparición de mensajes de error en la IU de Cloud Manager.
 
 ## Programa de adopción temprana {#early-adoption}
 
@@ -55,9 +55,9 @@ El tablero aprovecha Google Lighthouse, una herramienta automatizada de código 
 
 ## Correcciones de errores {#bug-fixes}
 
-* El **Entornos** El menú ahora se cierra después de activar el **[Copiar contenido](/help/implementing/developing/tools/content-copy.md)** modal.
-* [Nueva ejecución de una canalización](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) ya no se permite si la ejecución anterior no tiene un `commitId` se establece en el estado de fase de compilación.
-* Ahora se muestra un mensaje más comprensible para los errores poco frecuentes cuando un usuario hace clic en una canalización en el **Actividad** o **Canalización** pantallas.
+* El menú **Entornos** ahora se cierra después de activar **[Copiar contenido](/help/implementing/developing/tools/content-copy.md)** modal.
+* [La nueva ejecución de una canalización](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) ya no se permite si la ejecución anterior no tiene un `commitId` establecido en el estado de fase de compilación.
+* Ahora se muestra un mensaje más comprensible para los errores poco frecuentes cuando un usuario hace clic en una canalización en las pantallas **Actividad** o **Canalización**.
 * El `contentSetName` ya no falta en los registros y ahora se proporciona en las entradas al iniciar una [copia de contenido](/help/implementing/developing/tools/content-copy.md) operación.
 * En determinadas circunstancias excepcionales, ya no es posible iniciar dos ejecuciones desde la misma canalización que conducen a un estado &quot;atascado&quot;.
 * Cuando caduca un certificado, los nombres de dominio y las listas de IP permitidas asociadas con el certificado ya no se eliminarán de la CDN.

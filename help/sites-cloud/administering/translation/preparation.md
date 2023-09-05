@@ -6,8 +6,8 @@ role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ Por lo general, los sitios web multilingües ofrecen contenido en varios idiomas
 
 >[!TIP]
 >
->Si acaba de empezar a traducir contenido, consulte [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante herramientas de traducción potentes, ideales para aquellos que no tienen experiencia en traducción o en la traducción de contenido de AEM AEM, y que utilizan herramientas de traducción potentes, que son ideales para aquellos que no tienen experiencia con la traducción o la traducción de contenido en la mayoría de los casos.
+>Si acaba de empezar a traducir contenido, consulte el [Recorrido de traducción de Sites,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia con la traducción o con AEM.
 
 El [Sitio del tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) incluye varias ramas de idioma y utiliza la siguiente estructura:
 

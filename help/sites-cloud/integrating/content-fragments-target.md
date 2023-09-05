@@ -5,7 +5,7 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2231'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -69,7 +69,7 @@ Antes de exportar un fragmento, debe agregar la **Configuración de nube** para 
 * seleccionar un espacio de trabajo de Target como destino
 * seleccionar un dominio externalizador para reescribir referencias en el fragmento de contenido (opcional)
 
-Las opciones requeridas se pueden seleccionar en **Propiedades de página** de la carpeta, fragmento o ambos necesarios; la especificación se hereda según sea necesario.
+Las opciones requeridas se pueden seleccionar en **Propiedades de página** de la carpeta o fragmento necesarios; la especificación se hereda según sea necesario.
 
 1. Vaya a la consola **Recursos**.
 
@@ -338,9 +338,9 @@ Para exportar un fragmento de contenido de AEM a Target (después de especificar
 
    >[!NOTE]
    >
-   >Las acciones reales que se muestran dependen del estado del fragmento y de los recursos relacionados.
+   >Las acciones reales mostradas dependen del estado del fragmento y de los recursos relacionados.
    >
-   >Si todo ya se ha publicado y no se ha modificado nada desde entonces, este paso se pasa por alto.
+   >Si ya se ha publicado todo y no se ha modificado nada desde entonces, se omite este paso.
 
    >[!NOTE]
    >
@@ -396,7 +396,7 @@ Para evitar estas situaciones, haga lo siguiente:
 
 ## Otros recursos {#further-resources}
 
-Para obtener más información, consulte:
+Para obtener más información, consulte lo siguiente:
 
 <!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)

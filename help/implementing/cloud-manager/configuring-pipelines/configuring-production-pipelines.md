@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
    **Comportamiento de errores de métricas importantes**: durante la configuración o edición de la canalización, el **Administrador de implementación** tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad. Las opciones disponibles son:
 
    * **Preguntar cada vez**: esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
-   * **Fallo inmediatamente** : si se selecciona, la canalización se cancela siempre que se produce un error importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+   * **Fallo inmediatamente**: si se selecciona, la canalización se cancela siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
    * **Continuar inmediatamente**: si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
    ![Configuración de canalización de producción](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -95,7 +95,7 @@ Una canalización de código de pila completa implementa simultáneamente compil
 
 >[!NOTE]
 >
->Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección está desactivada.
+>Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección se desactiva.
 
 Para finalizar la configuración de la canalización de producción de código de pila completa, siga estos pasos.
 
@@ -126,18 +126,18 @@ Para finalizar la configuración de la canalización de producción de código d
 
    ![Definición de una ruta para la auditoría de experiencias](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. Clic **Agregar página** y la ruta se completa automáticamente con la dirección de su entorno y se agrega a la tabla de rutas.
+1. Haga clic en **Agregar página** y la ruta se completará de forma automática con la dirección de su entorno, además se agregará a la tabla de rutas.
 
    ![Guardar ruta de acceso a la tabla](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
 1. Siga agregando rutas según sea necesario repitiendo los dos pasos anteriores.
 
    * Puede agregar un máximo de 25 rutas.
-   * Si no define ninguna ruta, la página principal del sitio se incluye en la auditoría de experiencias de forma predeterminada.
+   * Si no define una ruta, la página principal del sitio se incluye en la auditoría de experiencias de forma predeterminada.
 
 1. Haga clic en **Guardar** para guardar la canalización.
 
-Las rutas configuradas para la auditoría de experiencias se envían al servicio y se evalúan según las pruebas de rendimiento, accesibilidad, SEO (Optimización del motor de búsqueda), prácticas recomendadas y PWA (Aplicación web progresiva) cuando se ejecuta la canalización. Consulte [Comprender los resultados de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
+Las rutas configuradas para la auditoría de experiencias se envían al servicio y se evalúan según las pruebas de rendimiento, accesibilidad, SEO (optimización del motor de búsqueda), prácticas recomendadas y PWA (aplicación web progresiva) cuando se ejecuta la canalización. Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 

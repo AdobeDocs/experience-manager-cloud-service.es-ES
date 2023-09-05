@@ -3,8 +3,8 @@ title: Introducción a AEM Forms as a Cloud Service
 description: Aprenda a instalar y configurar un entorno de  [!DNL AEM Forms]  as a Cloud Service
 source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

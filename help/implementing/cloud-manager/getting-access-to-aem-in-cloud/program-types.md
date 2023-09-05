@@ -5,7 +5,7 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Un programa de Cloud Manager vendrá aprovisionado automáticamente con su propi
 
 Para acceder al repositorio de Git de Cloud Manager, los usuarios deberán utilizar un cliente de Git con una herramienta de línea de comandos, un cliente de Git visual independiente o el IDE que el usuario elija, como Eclipse, IntelliJ o NetBeans.
 
-Una vez configurado el cliente de Git, puede administrar el repositorio de Git desde la interfaz de usuario de Cloud Manager. Para obtener más información sobre cómo administrar Git mediante la interfaz de usuario de Cloud Manager, consulte [Acceso a Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+Una vez configurado el cliente de Git, puede administrar el repositorio Git desde la interfaz de usuario de Cloud Manager. Para obtener más información sobre cómo administrar Git mediante la interfaz de usuario de Cloud Manager, consulte [Acceso a Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 Para comenzar a desarrollar la aplicación de AEM Cloud, se debe realizar una copia local del código de la aplicación desprotegiéndolo del repositorio de Cloud Manager a una ubicación de su equipo local.
 

@@ -7,7 +7,7 @@ exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2714'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -148,7 +148,7 @@ Se puede acceder directamente a MSM desde la IU mediante diversas opciones desde
 
 ### Términos utilizados {#terms-used}
 
-Como introducción, la siguiente tabla proporciona una descripción general de los términos principales utilizados con MSM. Se tratan en más detalles en las secciones y páginas siguientes.
+Como introducción, la siguiente tabla proporciona una descripción general de los términos principales utilizados con MSM. Se tratarán en más detalles en las secciones y páginas siguientes.
 
 | Término | Definición | Más detalles |
 |---|---|---|
@@ -231,13 +231,13 @@ Al crear (o un proceso) una [nueva página dentro de una Live Copy existente](#l
 * Se puede continuar con un despliegue profundo activado para Live Copy de nivel superior en la Live Copy anidada.
 * Cualquier vínculo entre los orígenes se reescribe dentro de Live Copies.
 
-Por ejemplo, los vínculos que dirigen desde el segundo al primer modelo se reescriben como vínculos que apuntan desde la Live Copy anidada/segunda a la primera Live Copy.
+Por ejemplo, los vínculos que apuntan desde el segundo al primer modelo se reescriben como vínculos que apunten desde la Live Copy anidada/segunda a la primera Live Copy.
 
 ![Live Copies anidadas](../assets/live-copy-nested.png)
 
 >[!NOTE]
 >
->AEM Si mueve o cambia el nombre de una página dentro de la rama de Live Copy, se trata como una Live Copy anidada para permitir que los usuarios realicen un seguimiento de las relaciones de forma remota.
+>Si mueve o cambia el nombre de una página dentro de la rama de Live Copy, esta se trata como una Live Copy anidada para permitir que AEM rastree las relaciones.
 
 #### Copias activas apiladas {#stacked-live-copies}
 

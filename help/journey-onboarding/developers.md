@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ Según sus necesidades organizativas, los mismos usuarios pueden tener ambos rol
 Antes de comenzar las tareas descritas en este documento como desarrollador o administrador de implementación, asegúrese de que el administrador del sistema haya completado todos los pasos de este recorrido de incorporación. Esto significa lo siguiente:
 
 * El administrador del sistema ha asignado desarrolladores y administradores de implementación a sus respectivos perfiles de producto.
-* Los desarrolladores deben asignarse además a **AEM Usuarios de** o **AEM Administradores de** AEM los perfiles de producto también se utilizan en el uso de la.
+* Los desarrolladores deben asignarse adicionalmente a los perfiles de producto de **usuarios de AEM** o de **administradores de AEM** para utilizar AEM también.
 * Se han configurado los recursos de Cloud.
 
 ## Acceder a Git {#accessing-git}

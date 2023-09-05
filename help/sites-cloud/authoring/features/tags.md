@@ -1,20 +1,20 @@
 ---
 title: Uso de etiquetas
-description: Las etiquetas son un método rápido y sencillo de clasificar contenido en un sitio web
+description: Las etiquetas son un método rápido y fácil de clasificar contenido dentro del sitio web
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 71%
+ht-degree: 96%
 
 ---
 
 # Uso de etiquetas   {#using-tags}
 
-Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Las etiquetas se pueden considerar palabras clave o etiquetas que se pueden adjuntar a una página, un recurso u otro contenido para permitir las búsquedas y encontrar ese contenido y el contenido relacionado.
+Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Las etiquetas pueden considerarse como palabras clave o etiquetas que se pueden adjuntar a una página, un recurso o cualquier otro contenido para que con las búsquedas se encuentre ese contenido y el relacionado.
 
-* Consulte Administración de etiquetas para obtener información sobre cómo crear y administrar etiquetas, y a qué etiquetas de contenido se han aplicado. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
-* Consulte [Etiquetado para desarrolladores](/help/implementing/developing/introduction/tagging-framework.md) para obtener información sobre el marco de etiquetado e incluir y ampliar etiquetas en aplicaciones personalizadas.
+* Consulte Administración de etiquetas para obtener información sobre cómo crear y administrarlas y sobre las etiquetas de contenido que se han aplicado. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
+* Consulte [Etiquetado para desarrolladores](/help/implementing/developing/introduction/tagging-framework.md) para obtener información sobre el marco de trabajo de etiquetado, así como la forma de incluir y ampliar las etiquetas en aplicaciones personalizadas.
 
 ## Diez motivos para utilizar etiquetas {#ten-reasons-to-use-tagging}
 
@@ -27,9 +27,9 @@ Las etiquetas son un método rápido y sencillo de clasificar contenido dentro d
 1. **Habilitación de SEO**: las etiquetas aplicadas como propiedades de página se mostrarán automáticamente en las metaetiquetas de la página, por lo que serán visibles a los motores de búsqueda.
 1. **Sofisticación simple**: las etiquetas se pueden crear simplemente a partir de una palabra y pulsar un botón. Después, se pueden añadir un título, una descripción y marcas ilimitadas para proporcionar más semántica a la etiqueta.
 1. **Consistencia central**: el sistema de etiquetado es un componente central de AEM que todas las capacidades de AEM utilizan para categorizar contenido. Además, la API de etiquetado está disponible para los desarrolladores para que creen aplicaciones compatibles con el etiquetado con acceso a las mismas taxonomías.
-1. **Combina estructura y flexibilidad**: AEM es ideal para trabajar con información estructurada, ya que anida páginas y rutas de acceso. Es igualmente potente cuando se trabaja con información no estructurada, debido a la búsqueda de texto completo integrada. El etiquetado combina las ventajas tanto de la estructura como de la flexibilidad.
+1. **Combina estructura y flexibilidad**: AEM es ideal para trabajar con información estructurada, ya que anida páginas y rutas de acceso. También es extremadamente útil a la hora de trabajar con información sin estructurar, debido a la búsqueda incorporada de texto completo. El etiquetado combina las ventajas tanto de la estructura como de la flexibilidad.
 
-Al diseñar la estructura de contenido para un sitio y el esquema de metadatos para los recursos, tenga en cuenta el enfoque ligero y accesible que proporciona el etiquetado.
+A la hora de diseñar la estructura de contenido para un sitio y el esquema de metadatos para los recursos, considere la ligereza y la accesibilidad que proporciona el etiquetado.
 
 ## Aplicación de etiquetas   {#applying-tags}
 

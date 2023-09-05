@@ -7,7 +7,7 @@ exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
 workflow-type: tm+mt
 source-wordcount: '2426'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -28,9 +28,9 @@ En esta sección se proporciona información sobre las configuraciones de despli
 >
 >Actualizar o cambiar una configuración de despliegue predeterminada **no** está recomendado. Si hay algún requisito para una acción en directo personalizada, debe añadirse en una configuración de despliegue personalizada.
 
-### Desplegar Déclencheur {#rollout-triggers}
+### Activadores de despliegue {#rollout-triggers}
 
-Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace que se produzca el lanzamiento. Las configuraciones de despliegue pueden utilizar uno de los siguientes déclencheur:
+Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace que se produzca el lanzamiento. Las configuraciones de despliegue pueden utilizar uno de los siguientes activadores:
 
 * **En el despliegue**: el comando **Despliegue** se utiliza en la página del modelo, o el comando **Sincronizar** se usa en la página de Live Copy.
 * **En la modificación**: la página de origen se modifica.
@@ -54,7 +54,7 @@ Si las acciones de configuración de lanzamiento instaladas no cumplen con sus r
 | Desactivar si se desactiva el modelo | Desactiva la Live Copy cuando se desactiva el origen | En la desactivación | `targetDeactivate` |
 | Insertar al modificar | Inserta el contenido en Live Copy cuando se modifica el origen<br>Utilice esta configuración de despliegue con moderación, ya que utiliza el activador En la modificación. | En la modificación | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
 | Insertar al modificar (superficial) | Inserta el contenido en Live Copy cuando se modifica la página del modelo, sin actualizar las referencias (por ejemplo, para copias superficiales)<br>Utilice esta configuración de despliegue con moderación, ya que utiliza el activador “En la modificación”. | En la modificación | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
-| Promocionar lanzamiento | Configuración de lanzamiento estándar para promocionar páginas con dicho fin. | En el despliegue | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
+| Promocionar lanzamiento | Configuración de despliegue estándar para promocionar páginas con dicho fin. | En el despliegue | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### Acciones de sincronización {#synchronization-actions}
 
@@ -62,13 +62,13 @@ En la siguiente tabla, se enumeran las opciones de sincronización listas para u
 
 Si las acciones instaladas no cumplen con sus requisitos, puede [Cree una nueva acción de sincronización.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
-| Nombre de acción | Descripción | Propiedades |
+| Nombre de la acción | Descripción | Propiedades |
 |---|---|---|
 | `contentCopy` | Cuando los nodos de origen no existen en la Live Copy, esta acción los copia en esta. [Configure el servicio de **acción de copia de contenido de CQ MSM**](#excluding-properties-and-node-types-from-synchronization) para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. |  |
 | `contentDelete` | Esta acción elimina los nodos de la Live Copy que no existen en el origen. [Configure el servicio de **acción de eliminación de contenido de CQ MSM**](#excluding-properties-and-node-types-from-synchronization) para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. |  |
 | `contentUpdate` | Esta acción actualiza el contenido de la Live Copy con los cambios del origen. [Configure el servicio de **acción de actualización de contenido de CQ MSM**](#excluding-properties-and-node-types-from-synchronization) para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. |  |
 | `editProperties` | Esta acción edita las propiedades de la Live Copy. La propiedad `editMap` determina qué propiedades se editan y su valor. El valor de la propiedad `editMap` debe utilizar el siguiente formato:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` y `new_value` son expresiones regulares y `n` es un entero incrementado.<br>Por ejemplo, considere el siguiente valor para `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Este valor edita las propiedades de los nodos de Live Copy de la siguiente manera:<br>Las propiedades `sling:resourceType` que se establecen como `contentpage` o `homepage` están configuradas en `mobilecontentpage`.<br>Las propiedades `cq:template` definidas en `contentpage` se establecen como `mobilecontentpage`. | `editMap: (String)` identifica la propiedad, el valor actual y el nuevo valor. Consulte la descripción para obtener más información. |
-| `notify` | Esta acción envía un evento de página que indica que la página se ha lanzado. Para recibir notificaciones, primero debe suscribirse a eventos de despliegue. |  |
+| `notify` | Esta acción envía un evento de página que indica que la página se ha lanzado. Para recibir notificaciones, primero debe suscribirse a los eventos de lanzamiento. |  |
 | `orderChildren` | Esta acción ordena los nodos secundarios según el orden del modelo. |  |
 | `referencesUpdate` | Esta acción de sincronización actualiza las referencias en la Live Copy.<br>Busca rutas de acceso en las páginas de Live Copy que apuntan a un recurso dentro del modelo. Cuando se encuentran, se actualiza la ruta de acceso para que apunte al recurso relacionado dentro de la Live Copy. Las referencias que tienen los destinos fuera del modelo no cambian. <br>[Configure el servicio de **acción de actualización de referencias de CQ MSM**](#excluding-properties-and-node-types-from-synchronization) para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. |  |
 | `targetVersion` | Esta acción crea una versión de la Live Copy.<br>Esta acción debe ser la única acción de sincronización incluida en una configuración de lanzamiento. |  |
@@ -176,7 +176,7 @@ También puede configurar las opciones de configuración de despliegue para una 
 
 1. Si es necesario, ajuste la marca de **Herencia de Live Copy**. Si se selecciona, la configuración de Live Copy es eficaz en todas las páginas secundarias.
 
-1. Borre la **Heredar configuración de despliegue del elemento principal** y, a continuación, seleccione una o varias configuraciones de despliegue de la lista.
+1. Borre la propiedad **Heredar configuración de despliegue del elemento principal** y, a continuación, seleccione una o varias opciones de configuración de despliegue de la lista.
 
    Las configuraciones de despliegue seleccionadas aparecen debajo de la lista desplegable.
 
@@ -186,14 +186,14 @@ También puede configurar las opciones de configuración de despliegue para una 
 
 ### Configuración de despliegue para una página de modelo {#setting-the-rollout-configuration-for-a-blueprint-page}
 
-Configure una página de modelo con las opciones de configuración de despliegue que se utilizarán cuando se implemente la página de modelo.
+Configure una página modelo con las configuraciones de despliegue que se usarán cuando se lance la página modelo.
 
-Tenga en cuenta que las páginas secundarias de la página de modelo heredan la configuración. Al configurar la configuración de despliegue para su uso, podría estar anulando la configuración que la página hereda de su elemento principal.
+Tenga en cuenta que las páginas secundarias de la página de modelo heredan la configuración. Al establecer la configuración de despliegue para su uso, se anula la configuración que la página hereda de su elemento principal.
 
 1. Utilice la consola **Sitios** para seleccionar la página de modelo.
 1. En la barra de herramientas, seleccione **Propiedades**.
 1. Abra la pestaña **Modelo**.
-1. Seleccione una o varias **Configuraciones de despliegue** uso del selector desplegable.
+1. Seleccione una o más **opciones de configuración de lanzamiento** con el selector desplegable.
 1. Para almacenar las actualizaciones, seleccione **Guardar**.
 
 ### Opciones de la configuración de lanzamiento predeterminada del sistema {#setting-the-system-default-rollout-configuration}
