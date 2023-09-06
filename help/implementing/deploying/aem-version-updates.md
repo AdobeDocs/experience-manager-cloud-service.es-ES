@@ -3,7 +3,7 @@ title: Actualizaciones de la versión de AEM
 description: AEM Descubra cómo utiliza la integración y el envío continuos (CI/CD) para mantener sus proyectos en la versión más reciente de los que utiliza as a Cloud Service.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: ca91e969014415e872ecf8e42fe86ffc9ca41e10
+source-git-commit: 7cdbda468221c42325a957131c6817c9f85a574a
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 9%
@@ -55,28 +55,22 @@ Del mismo modo, si falla una actualización automatizada de un entorno de desarr
 
 ## Prácticas recomendadas {#best-practices}
 
-* 
-   * **Uso del entorno de ensayo**
-   * Utilice un entorno diferente (no una fase) para ciclos largos de control de calidad/UAT.
-   * Una vez finalizada la prueba de corrección en Fase, continúe para verificar en Producción.
+* **Uso del entorno de ensayo**
+* Utilice un entorno diferente (no una fase) para ciclos largos de control de calidad/UAT.
+* Una vez finalizada la prueba de corrección en Fase, continúe para verificar en Producción.
 
-* 
-   * **Canalización de producción**
-   * Pausar antes de implementar en Producción.
-   * Si cancela la canalización después de una implementación de fase, el código es &quot;desechable&quot; y no es un candidato válido para Producción, consulte [Configuración de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+* **Canalización de producción**
+* Pausar antes de implementar en Producción.
+* Si cancela la canalización después de una implementación de fase, el código es &quot;desechable&quot; y no es un candidato válido para Producción, consulte [Configuración de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
-* 
-   * **Canalización que no es de producción**
+* **Canalización que no es de producción**
 * Configurar [Canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-* 
-   * Acelere la velocidad y frecuencia de entrega para los errores de canalización de producción.  Identifique los problemas en las canalizaciones que no son de producción habilitando Prueba funcional del producto, Prueba funcional personalizada y Prueba de IU personalizada.
+* Acelere la velocidad y frecuencia de entrega para los errores de canalización de producción.  Identifique los problemas en las canalizaciones que no son de producción habilitando Prueba funcional del producto, Prueba funcional personalizada y Prueba de IU personalizada.
 
-* 
-   * **Copia de contenido**
-   * Uso [Copia de contenido](/help/implementing/developing/tools/content-copy.md) para mover conjuntos de contenido similares a un entorno que no sea de producción.
+* **Copia de contenido**
+* Uso [Copia de contenido](/help/implementing/developing/tools/content-copy.md) para mover conjuntos de contenido similares a un entorno que no sea de producción.
 
-* 
-   * **Pruebas funcionales automatizadas**
+* **Pruebas funcionales automatizadas**
 * Incluya pruebas automatizadas en su canalización para probar la funcionalidad crítica.
 * [Pruebas funcionales del cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) y [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) AEM están bloqueando, si no se consigue, la versión no se implementará.
 
