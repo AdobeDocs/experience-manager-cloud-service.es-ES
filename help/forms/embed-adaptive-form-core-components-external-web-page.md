@@ -4,9 +4,9 @@ description: Aprenda a incrustar un formulario adaptable en una página web exte
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '979'
 ht-degree: 91%
 
 ---
@@ -99,14 +99,12 @@ Para incrustar el formulario adaptable, haga lo siguiente:
 
 El formulario adaptable está incrustado en la página web. Observe lo siguiente en el formulario adaptable integrado:
 
-* El encabezado y el pie de página del formulario adaptable original no se incluyen en el formulario incrustado.
 * Los borradores y los formularios enviados están disponibles en la pestaña Borradores y envíos del portal de formularios.
 * La acción de envío configurada en el formulario adaptable original se mantendrá en el formulario incrustado.
 * Las reglas de los formularios adaptables se conservarán y funcionarán perfectamente en el formulario incrustado.
 * La segmentación de experiencias y las pruebas A/B configuradas en el formulario adaptable original no funcionarán en el formulario incrustado.
 * Si Adobe Analytics está configurado en el formulario original, los datos de análisis se capturarán en el servidor de Adobe Analytics. Sin embargo, no estará disponible en el informe de análisis de Forms.
-
-En Forms adaptable basado en componentes principales, las bibliotecas de cliente (ClientLibs) se incluyen y cargan junto con los componentes Encabezado y Pie de página de un formulario. Por lo tanto, cuando se incrusta un Forms adaptable basado en componentes principales en una página web, siempre incluye el encabezado y el pie de página del formulario.
+* En Forms adaptable basado en componentes principales, las bibliotecas de cliente (ClientLibs) se incluyen y cargan junto con los componentes Encabezado y Pie de página de un formulario. Por lo tanto, cuando se incrusta un Forms adaptable basado en componentes principales en una página web, siempre incluye el encabezado y el pie de página del formulario.
 
 ## Topología de ejemplo {#sample-topology}
 
