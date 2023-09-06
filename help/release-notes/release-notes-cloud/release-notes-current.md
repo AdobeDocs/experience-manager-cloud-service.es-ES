@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+source-git-commit: 9da87302369331fb55c1c8036c5b22fa686b1be8
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1938'
 ht-degree: 15%
 
 ---
@@ -144,7 +144,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[Protect sus documentos con las API de DocAssurance (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de DocAssurance le permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se transforma en un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan obtener acceso. Esta capa reforzada de protección no solo protege los datos valiosos de los ojos no autorizados, sino que también proporciona tranquilidad. Las API de firma permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos.
 
-  Puede conectar la asistencia de Adobe para unirse al programa de usuarios que lo adoptaron por primera vez para las API de DocAssurance.
+
+  <br> Puede enviar un correo electrónico a `aem-forms-early-adopter-program@adobe.com` desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a la capacidad de su entorno.  <br>  <br>
+
 
 * **[Forms adaptable sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=es)**: utilice Forms adaptable sin encabezado para permitir que los desarrolladores creen, publiquen y administren formularios interactivos a los que se puede acceder e interactuar mediante API, en lugar de hacerlo a través de una interfaz gráfica de usuario tradicional. Los formularios adaptables sin encabezado le ayudan a:
 
