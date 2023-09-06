@@ -2,9 +2,9 @@
 title: SPA Procesamiento del lado del servidor y de
 description: SPA El uso del procesamiento del lado del servidor (SSR) en el servidor puede acelerar la carga inicial de la página y, a continuación, pasar más procesamiento al cliente.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,10 @@ Las siguientes secciones detallan cómo se puede utilizar Adobe I/O Runtime SPA 
 >Adobe recomienda un espacio de trabajo de Adobe I/O Runtime independiente por entorno (ensayo, producción, prueba, etc.). Esto permite crear patrones típicos del ciclo de vida de desarrollo de sistemas (SDLC) con diferentes versiones de una sola aplicación implementada en diferentes entornos. Consulte [CI/CD para aplicaciones de App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) para obtener más información.
 >
 >No se necesita un espacio de trabajo independiente por instancia (autor, publicación) a menos que haya diferencias en la implementación de tiempo de ejecución por tipo de instancia.
+
+>[!NOTE]
+>
+>Cloud Manager no admite la implementación en Adobe I/O Runtime. Como resultado, es necesario configurar su propia infraestructura para implementar el código SSR en Adobe I/O Runtime.
 
 ## Configuración del procesador remoto {#remote-content-renderer-configuration}
 
