@@ -1,25 +1,25 @@
 ---
-title: Ingesta de contenido en Target
-description: Aprenda a utilizar la herramienta de transferencia de contenido para introducir contenido del conjunto de migración en una instancia de Cloud Service.
+title: Ingesta de contenido en Cloud Service
+description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 11%
+source-wordcount: '1954'
+ht-degree: 8%
 
 ---
 
-# Ingesta de contenido en Target {#ingesting-content}
+# Ingesta de contenido en Cloud Service {#ingesting-content}
 
 ## Proceso de ingesta en la herramienta de transferencia de contenido {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Ingesta de contenido"
->abstract="Hace referencia a la ingesta de contenido del conjunto de migración en la instancia de Cloud Service del destinatario. La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior."
+>abstract="La ingesta hace referencia a la ingesta de contenido del conjunto de migración en la instancia del Cloud Service de destino. La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es" text="Ingesta superior"
 
-Siga los pasos a continuación para ingerir el conjunto de migración de la herramienta de transferencia de contenido:
+Siga los pasos a continuación para ingerir el conjunto de migración mediante Cloud Acceleration Manager:
 
 >[!NOTE]
 >¿Se acordó de registrar un ticket de asistencia para esta ingesta? Consulte [Consideraciones importantes antes de utilizar la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) por esa y otras consideraciones para ayudar a que la ingesta sea exitosa.
@@ -80,7 +80,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
    Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-   
+
    Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
@@ -181,4 +181,7 @@ Las prácticas recomendadas indican que si una ingesta debe ejecutarse con wipe=
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya completado la ingesta de contenido en Target, puede ver los registros de cada paso (extracción e ingesta) y buscar errores. Consulte [Visualización de registros del conjunto de migraciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=es) para obtener más información.
+AEM Cuando la ingesta se haya realizado correctamente, la indexación de la se iniciará automáticamente. Consulte [Indexación después de migrar contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) para obtener más información.
+
+Una vez que haya completado la ingesta de contenido en Cloud Service, puede ver los registros de cada paso (extracción e ingesta) y buscar errores. Consulte [Visualización de registros del conjunto de migraciones](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) para obtener más información.
+
