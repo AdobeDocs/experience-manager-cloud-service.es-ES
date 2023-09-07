@@ -1,19 +1,18 @@
 ---
-title: Notas de la versión 2023.8.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service
-description: Estas son las notas de la versión 2023.8.0 para Cloud Manager en AEM as a Cloud Service.
+title: Notas de la versión 2023.9.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service
+description: Estas son las notas de la versión 2023.9.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
+source-git-commit: dd52aef2f88cf64e8d9a32b1c8cafe4fcfbcb812
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 37%
+source-wordcount: '409'
+ht-degree: 24%
 
 ---
 
 
-# Notas de la versión 2023.8.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión 2023.9.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta las notas de la versión 2023.8.0 para Cloud Manager en AEM as a Cloud Service.
+Esta página documenta las notas de la versión 2023.9.0 para Cloud Manager en AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,12 +20,11 @@ Esta página documenta las notas de la versión 2023.8.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2023.8.0 en AEM as a Cloud Service es el 10 de agosto de 2023. El próximo lanzamiento está programado para el 7 de septiembre de 2023.
+La fecha de lanzamiento de Cloud Manager 2023.9.0 en AEM as a Cloud Service fue el 7 de septiembre de 2023. El próximo lanzamiento está programado para el 5 de octubre de 2023.
 
 ## Novedades {#what-is-new}
 
-* Al configurar un conjunto de contenido como [copiar contenido,](/help/implementing/developing/tools/content-copy.md) [configuraciones según el contexto](/help/implementing/developing/introduction/configurations.md) ahora se permiten en los conjuntos de contenido de la interfaz de usuario.
-* Se han realizado mejoras para la comprensión y la aparición de mensajes de error en la IU de Cloud Manager.
+Esta versión se centra en la corrección de errores.
 
 ## Programa de adopción temprana {#early-adoption}
 
@@ -55,12 +53,6 @@ El tablero aprovecha Google Lighthouse, una herramienta automatizada de código 
 
 ## Correcciones de errores {#bug-fixes}
 
-* El menú **Entornos** ahora se cierra después de activar **[Copiar contenido](/help/implementing/developing/tools/content-copy.md)** modal.
-* [La nueva ejecución de una canalización](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) ya no se permite si la ejecución anterior no tiene un `commitId` establecido en el estado de fase de compilación.
-* Ahora se muestra un mensaje más comprensible para los errores poco frecuentes cuando un usuario hace clic en una canalización en las pantallas **Actividad** o **Canalización**.
-* El `contentSetName` ya no falta en los registros y ahora se proporciona en las entradas al iniciar una [copia de contenido](/help/implementing/developing/tools/content-copy.md) operación.
-* En determinadas circunstancias excepcionales, ya no es posible iniciar dos ejecuciones desde la misma canalización que conducen a un estado &quot;atascado&quot;.
-* Cuando caduca un certificado, los nombres de dominio y las listas de IP permitidas asociadas con el certificado ya no se eliminarán de la CDN.
-   * En tales casos, el sitio continuará siendo accesible.
-   * [](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)La IU de Cloud Manager proporcionará advertencias avanzadas más visibles de que el certificado SSL está a punto de caducar.
-* AEM Se corrigió un problema con la pérdida de acceso de los usuarios a un punto final de publicación en situaciones en las que Sites se agrega como solución a un programa solo de Assets.
+* Cuando se elimina un programa, también se elimina cualquier canalización asociada en ejecución, lo que garantiza que la canalización no se designe incorrectamente como estado de error.
+* En ocasiones, cuando se &#39;completan&#39; todos los pasos de la ejecución de una canalización, el estado de la canalización se ve como &quot;en ejecución&quot;, lo que hace que parezca que está en un estado atascado. Ahora se ve como &#39;Completo&#39;.
+* Para las ramas de repositorio generadas mediante el tipo de archivo del generador de código, la canalización CI/CD falla.
