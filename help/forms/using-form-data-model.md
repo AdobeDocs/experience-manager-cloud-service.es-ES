@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 94%
+source-wordcount: '1244'
+ht-degree: 78%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Este artículo |
 
 
@@ -146,3 +146,26 @@ Por ejemplo, la siguiente regla invoca un servicio de obtención que toma el ID 
 ![invocar-servicio](assets/invoke-service.png)
 
 Además, puede usar la API `guidelib.dataIntegrationUtils.executeOperation` para escribir un JavaScript en el Editor de código del Editor de reglas. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+
+### Invocar un modelo de datos de formulario mediante funciones personalizadas {#invoke-form-data-model-using-custom-functions}
+
+Puede [invocar un modelo de datos de formulario desde el editor de reglas mediante funciones personalizadas](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Para invocar el modelo de datos de formulario, agregue un modelo de datos de formulario a la lista de permitidos. Para agregar un modelo de datos de formulario a una lista de permitidos:
+
+1. Vaya a la consola web del Experience Manager en `https://server:host/system/console/configMgr`.
+1. Localizar **[!UICONTROL Lista blanca a nivel de formulario adaptable del modelo de datos de formulario para la invocación de servicio: fábrica de configuración]**.
+1. Clic ![icono de signo más](/help/forms/assets/Smock_Add_18_N.svg) para añadir la configuración.
+1. Añadir **[!UICONTROL Patrón de ruta de contenido]** para especificar la ubicación de su Forms adaptable.  El valor predeterminado es `/content/forms/af/(.*)` que incluye todo el Forms adaptable. También puede especificar la ruta para un formulario adaptable específico.
+1. Añadir **[!UICONTROL Patrón de ruta del modelo de datos de formulario]** para especificar la ubicación del modelo de datos de formulario. El valor predeterminado es `/content/dams/formsanddocuments-fdm/(.*)` que incluye todo el modelo de datos de formulario. También puede especificar la ruta para un modelo de datos de formulario específico.
+1. Guarde la configuración.
+
+La configuración añadida se guarda en **[!UICONTROL Lista blanca a nivel de formulario adaptable del modelo de datos de formulario para la invocación de servicio: fábrica de configuración]** opción.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
+
+>[!NOTE]
+>
+> AEM Para invocar un modelo de datos de formulario desde el editor de reglas utilizando funciones personalizadas a través de un proyecto de arquetipo de:
+>
+>1. [Creación de un archivo de configuración](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. Establezca las propiedades de getContentPathPattern y getFormDataModelPathPattern.
+>1. Implemente el proyecto.

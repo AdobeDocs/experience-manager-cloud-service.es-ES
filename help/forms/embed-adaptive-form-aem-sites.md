@@ -5,10 +5,10 @@ description: Puede utilizar el componente Incrustar de Forms adaptable para incr
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
 workflow-type: tm+mt
-source-wordcount: '3158'
-ht-degree: 38%
+source-wordcount: '3177'
+ht-degree: 44%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 38%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service | Este artículo |
 
 
@@ -58,11 +58,11 @@ Puede aprovechar al máximo esta función mediante las siguientes opciones:
 
 * **[Conversión de un formulario adaptable incrustado en un fragmento de experiencia](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Convertir un formulario adaptable incrustado agregado a una página de AEM Sites en un fragmento de experiencia para reutilizar el formulario en varias páginas de AEM Sites.
 
-* **[Crear y agregar un formulario adaptable personalizado a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):** Puede usar el complemento **[!UICONTROL Contenedor de formulario adaptable]** para crear un formulario nuevo desde cero y adaptarlo específicamente a sus necesidades y preferencias de diseño.
+* **[Crear y agregar un formulario adaptable personalizado a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):****[!UICONTROL puede utilizar el componente contenedor de formulario adaptable para crear un formulario completamente nuevo desde cero y adaptarlo específicamente a sus necesidades y preferencias de diseño.]**
 
-* **[Crear y agregar un formulario adaptable personalizado a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** AEM Puede ampliar el alcance de los formularios añadiéndolos a los fragmentos de experiencias de la aplicación, lo que permite una reutilización perfecta en varias páginas o sitios.
+* **[Crear y agregar un formulario adaptable personalizado a los fragmentos de experiencias](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** puede ampliar el alcance de los formularios añadiéndolos a los fragmentos de experiencias de AEM, lo que permite una reutilización perfecta en varias páginas o sitios.
 
-* **Agregar varios formularios a una página de AEM Sites o a un fragmento de experiencia:**  Puede crear o agregar varios Forms adaptables a una página de AEM Sites para proporcionar varias opciones a los usuarios en función de sus preferencias y requisitos. AEM Puede utilizar el Editor de páginas de para incrustar rápidamente varios formularios en las páginas de AEM Sites. Puede usar el complemento **[!UICONTROL Contenedor de formulario adaptable]** Componente varias veces para añadir Forms adaptable en una página de AEM Sites. Puede usar el complemento **[!UICONTROL Forms adaptable: incrustado]** componente varias veces en una página AEM Sites, solo si **[!UICONTROL El formulario abarca toda la anchura del marco]** La opción está seleccionada. En caso de que la **[!UICONTROL El formulario abarca toda la anchura del marco]** La opción no está activada, la página de AEM Sites solo admite que un formulario adaptable exista sin un iframe. Para agregar más Forms adaptable con la variable **[!UICONTROL Forms adaptable: incrustado]** componente, seleccione **[!UICONTROL El formulario abarca toda la anchura del marco]** opción.
+* **Agregar varios formularios a una página de AEM Sites o a un fragmento de experiencia:** puede crear o agregar varios formularios adaptables a una página AEM Sites para proporcionar varias opciones a los usuarios en función de sus preferencias y requisitos. AEM Puede utilizar el Editor de páginas de para incrustar rápidamente varios formularios en las páginas de AEM Sites. Puede usar el complemento **[!UICONTROL Contenedor de formulario adaptable]** Componente varias veces para añadir Forms adaptable en una página de AEM Sites. Puede usar el complemento **[!UICONTROL Forms adaptable: incrustado]** componente varias veces en una página AEM Sites, solo si **[!UICONTROL El formulario abarca toda la anchura del marco]** La opción está seleccionada. En caso de que la **[!UICONTROL El formulario abarca toda la anchura del marco]** La opción no está activada, la página de AEM Sites solo admite que un formulario adaptable exista sin un iframe. Para agregar más Forms adaptable con la variable **[!UICONTROL Forms adaptable: incrustado]** componente, seleccione **[!UICONTROL El formulario abarca toda la anchura del marco]** opción.
 
 ## Consideraciones para incrustar un formulario adaptable en una página de AEM Sites AEM o en un fragmento de experiencia de {#consideration}
 
@@ -75,13 +75,13 @@ Puede aprovechar al máximo esta función mediante las siguientes opciones:
 
 Antes de empezar a incrustar un nuevo formulario adaptable o un formulario adaptable preexistente mediante **[!UICONTROL Forms adaptable: incrustado (v2)]**, habilitar **Componentes principales de Forms adaptable** y agregue **Bibliotecas de cliente de Forms adaptables** a la página de AEM Sites:
 
-+++  Habilitar los componentes principales de Forms adaptables para su entorno de AEM Cloud Service
++++  Habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service
 
 Asegúrese de que los [componentes principales de formularios adaptables estén habilitados para su entorno de AEM Forms as a Cloud Service](enable-adaptive-forms-core-components.md).
 
 +++
 
-+++  Añadir bibliotecas de cliente de Forms adaptables a su página de AEM Sites o fragmento de experiencia
++++  Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites o de fragmento de experiencia
 
 Si la variable **[!UICONTROL Cuando el formulario abarca el ancho completo de una página]** está seleccionada en la **[!UICONTROL Contenedores de formulario]** Cuando se utilizan el cuadro de diálogo de configuración y el Forms adaptable mediante los componentes principales, es necesario incluir las bibliotecas de cliente en la página del sitio correspondiente.
 
@@ -222,7 +222,7 @@ AEM También puede ampliar la accesibilidad de los formularios incrustándolos e
 
 A continuación, puede [establecer la acción de envío](/help/forms/configuring-submit-actions.md) y propiedades avanzadas de un formulario adaptable incrustado mediante el asistente para la creación de formularios.
 
-### Conversión de un formulario en una página de AEM Sites en un fragmento de experiencia {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
+### Conversión de un formulario en una página de AEM Sites a un fragmento de experiencia {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 Puede convertir un formulario adaptable existente en un editor de páginas de Sites a un Fragmento de experiencia para reutilizar el formulario en varias páginas o sitios.
 
@@ -240,7 +240,7 @@ Para convertir un formulario adaptable en una página de AEM Sites en un Fragmen
 
    * **Acción:** Seleccione para crear un fragmento de experiencia o Añadir a un fragmento de experiencia existente.
    * **Ruta principal:** Especifique la ruta de la carpeta en la que se alojará el Fragmento de experiencia. La opción solo está disponible para crear un nuevo Fragmento de experiencia.
-   * **Plantilla:** Especifique la ruta de la plantilla del Fragmento de experiencia. Si no tiene una plantilla de fragmento de experiencia, [crearlo](/help/implementing/developing/extending/experience-fragments.md). La opción solo está disponible para agregar formularios adaptables a un Fragmento de experiencia existente.
+   * **Plantilla:** Especifique la ruta de la plantilla del Fragmento de experiencia. Si no tiene una plantilla de fragmento de experiencia, [créela](/help/implementing/developing/extending/experience-fragments.md). La opción solo está disponible para agregar formularios adaptables a un Fragmento de experiencia existente.
    * **Título del fragmento:** Especifique el título del Fragmento de experiencia. El título identifica de forma exclusiva un Fragmento de experiencia.
    * **Etiquetas de fragmento:** Especifique la etiqueta del fragmento de experiencia. La etiqueta identifica de forma exclusiva la categoría de un fragmento de experiencia.
 
@@ -259,6 +259,11 @@ Puede personalizar la configuración avanzada del componente **[!UICONTROL Formu
 * **Usar el idioma de la página**: utilice la configuración local de la página de AEM Sites en lugar de la configuración regional del formulario adaptable. Esta opción solo es aplicable al formulario adaptable (base).
 * **Definir el enfoque del formulario**: seleccione esta opción para establecer el enfoque en el primer campo del formulario adaptable. Esta opción solo es aplicable al formulario adaptable (base).
 * **Tema**: seleccione un tema que defina el estilo de los componentes del formulario adaptable. El estilo incluye propiedades de apariencia, como el estilo de fuente, el color de fondo, las dimensiones y la alineación. Esta opción solo es aplicable al formulario adaptable (base).
+
+  >[!NOTE]
+  >
+  > Puede usar el complemento **Usar idioma de la página**, **Definir enfoque en formulario** y **Tema** solo para formularios adaptables (Foundation).
+
 * **El formulario abarca toda la anchura del marco**: Un marco en línea (iframe) es un elemento de HTML que carga un formulario adaptable en una página de AEM Sites.
 
    * Si la variable **[!UICONTROL El formulario abarca toda la anchura del marco]** Cuando se marca la casilla de verificación, un formulario adaptable ocupa la anchura completa del contenedor en el que se coloca. En este caso, no se utiliza un iframe para procesar el formulario. La presentación y el diseño de un formulario adaptable se adaptan para abarcar toda la anchura del contenedor, lo que lo hace adaptable y capaz de adaptarse a diferentes tamaños de pantalla. Esta opción permite incrustar varios Forms adaptables en una página de AEM Sites.
@@ -369,5 +374,5 @@ Tenga en cuenta los siguientes puntos al incrustar Forms AEM adaptable en págin
 
 ## Consulte también {#see-also}
 
-* [Crear componente principal basado en Forms adaptable independiente](/help/forms/creating-adaptive-form-core-components.md)
-* [Crear un formulario adaptable basado en componentes principales directamente en una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Crear formularios adaptables independientes basados en los componentes principales](/help/forms/creating-adaptive-form-core-components.md)
+* [Creación de un formulario adaptable basado en componentes principales directamente en una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

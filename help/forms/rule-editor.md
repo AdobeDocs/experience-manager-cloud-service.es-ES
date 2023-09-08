@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
 workflow-type: tm+mt
-source-wordcount: '6436'
+source-wordcount: '6446'
 ht-degree: 94%
 
 ---
@@ -634,7 +634,7 @@ Por ejemplo, desea agregar una función personalizada que calcule el área de un
 
 Para crear una biblioteca de cliente y agregarla al repositorio CRX, siga estos pasos:
 
-1. Crear un cliente. Realice los siguientes pasos en la biblioteca. Para obtener más información, consulte [Uso de bibliotecas del lado del cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=es#developing).
+1. Crear una biblioteca de cliente. Para obtener más información, consulte [Uso de bibliotecas del lado del cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=es#developing).
 1. En CRXDE, agregue una propiedad `categories`con valor de tipo de cadena como `customfunction` a la carpeta `clientlib`.
 
    >[!NOTE]
@@ -656,6 +656,10 @@ Para abrir un formulario en modo de edición, seleccione un formulario y pulse *
    [![Uso de funciones personalizadas para crear una regla](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. Pulse **[!UICONTROL Listo]**. Se agrega la función personalizada.
+
+   >[!NOTE]
+   >
+   > Para invocar un modelo de datos de formulario desde el editor de reglas utilizando funciones personalizadas, [ver aquí](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### Tipos admitidos para la declaración de funciones {#function-declaration-supported-types}
 
