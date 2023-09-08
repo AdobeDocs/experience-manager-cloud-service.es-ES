@@ -135,7 +135,7 @@ Para que un proyecto quede inactivo (o activo), haga lo siguiente:
 
    >[!NOTE]
    >
-   Es posible que deba añadir este mosaico si aún no está en el proyecto. Consulte [Añadir mosaicos](#adding-items-to-a-tile).
+   >Es posible que deba añadir este mosaico si aún no está en el proyecto. Consulte [Añadir mosaicos](#adding-items-to-a-tile).
 
 1. Pulse o haga clic en **Editar**.
 1. Cambie el selector de **Activo** a **Inactivo** (o viceversa).
