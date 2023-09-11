@@ -2,10 +2,10 @@
 title: Asignación de usuarios y migración de principales
 description: AEM Información general sobre la asignación de usuarios y la migración de principales en as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 10%
+source-wordcount: '952'
+ht-degree: 9%
 
 ---
 
@@ -21,43 +21,40 @@ ht-degree: 10%
 
 ## Introducción {#introduction}
 
-Como parte del recorrido de transición a Adobe Experience Manager AEM () as a Cloud Service AEM AEM, debe mover usuarios y grupos de su sistema de existente a los de la red de usuarios de la red de trabajo de la red de trabajo de la red de trabajo de la red de la red de trabajo de la red de as a Cloud Service. Esta tarea la realiza la herramienta de transferencia de contenido.
+Como parte del recorrido de transición a Adobe Experience Manager AEM () as a Cloud Service AEM AEM, los usuarios y grupos (o &quot;principales&quot;) deben migrarse de los sistemas de existentes a los as a Cloud Service de la. Esta tarea la realiza la herramienta de transferencia de contenido.
 
-Un cambio importante en AEM as a Cloud Service es el uso completamente integrado de Adobe ID para acceder al nivel de creación. Este proceso requiere el uso del [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar usuarios y grupos de usuarios. La información de perfil de usuario está centralizada en el sistema Identity Management de Adobe (IMS), que proporciona un inicio de sesión único en todas las aplicaciones de la nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Debido a este cambio, los usuarios existentes deben asignarse a sus ID de IMS para evitar usuarios duplicados en la instancia de autor del Cloud Service. AEM Dado que los grupos de los grupos tradicionales son fundamentalmente diferentes de los grupos de IMS, los grupos no se asignan, pero los dos conjuntos de grupos deben reconciliarse una vez completada la migración.
+Un cambio importante en AEM as a Cloud Service es el uso completamente integrado de Adobe ID para acceder al nivel de creación. Este proceso requiere el uso del [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar usuarios y grupos de usuarios. La información de perfil de usuario está centralizada en el sistema Identity Management de Adobe (IMS), que proporciona un inicio de sesión único en todas las aplicaciones de la nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Debido a este cambio, los usuarios existentes deben asignarse a sus ID de IMS para evitar la creación de usuarios duplicados en la instancia de autor del Cloud Service. AEM Dado que los grupos de los grupos tradicionales son fundamentalmente diferentes de los grupos de IMS, los grupos no se asignan, pero los dos conjuntos de grupos deben reconciliarse una vez completada la migración.
 
-## Detalles de migración de usuarios {#user-migration-detail}
+## Detalles de migración principal {#principal-migration-detail}
 
-La herramienta de transferencia de contenido y Cloud Acceleration Manager migrarán al sistema en la nube todos los usuarios asociados con el contenido que se está migrando.
+La herramienta de transferencia de contenido y Cloud Acceleration Manager migrarán al sistema de la nube todas las entidades de seguridad asociadas con el contenido que se está migrando.  AEM La herramienta de transferencia de contenido lo hace copiando todas las entidades de seguridad del sistema de fuentes de datos de origen durante el proceso de extracción.  A continuación, Ingesta de CAM selecciona y migra solo las entidades principales asociadas con el contenido que se está ingiriendo.
 
 ## Detalles de asignación de usuarios {#user-mapping-detail}
 
-AEM Los usuarios de Adobe IMS se pueden asignar a los usuarios de Adobe IMS correspondientes con la misma dirección de correo electrónico.  Esta asignación se puede realizar automáticamente en CTT y se puede controlar mediante un conmutador antes de iniciar la extracción. El usuario puede anular la configuración predeterminada de la opción al iniciar la extracción.
+AEM Los usuarios de Adobe IMS se pueden asignar a los usuarios de Adobe IMS correspondientes con la misma dirección de correo electrónico.  Esta asignación se puede realizar automáticamente en CTT (durante el paso de extracción) y se puede controlar o no mediante un conmutador antes de iniciar la extracción. El usuario puede anular la configuración predeterminada de la opción al iniciar la extracción.
 
 * Si el sistema de origen es una instancia de autor, la opción predeterminada para realizar la asignación es _el_, porque es el proceso recomendado.
-* Si el sistema de origen es una instancia de publicación, la opción predeterminada para realizar la asignación es _desactivado_, porque los usuarios no se migran ni utilizan normalmente en instancias de publicación.
+* Si el sistema de origen es una instancia de publicación, la opción predeterminada para realizar la asignación es _desactivado_, ya que los usuarios no se migran ni se utilizan normalmente en instancias de publicación; o si se utilizan, se suele utilizar un sistema de autenticación diferente (es decir, no IMS) para ellos.
+
+Independientemente de si los usuarios están asignados durante la extracción o no, estos, junto con los grupos, se migran al sistema en la nube durante la ingesta si están asociados con el contenido que se está migrando.
 
 ## Consideraciones importantes a la hora de asignar y migrar usuarios {#important-considerations}
-
 
 ### Casos excepcionales {#exceptional-cases}
 
 Se registran los siguientes casos específicos:
 
-1. Si un usuario no tiene una dirección de correo electrónico en `profile/email` campo de su *jcr* , el usuario o grupo en cuestión puede migrarse, pero no está asignado. Este escenario se da incluso si la dirección de correo electrónico se utiliza como nombre de usuario para iniciar sesión.
-
-1. Si el usuario está deshabilitado, se trata igual que si no lo estuviera. Se asigna y migra con normalidad y permanece deshabilitado en la instancia de nube.
-
-1. Si existe un usuario en la instancia de AEM Cloud Service AEM de destino con el mismo nombre de usuario (rep:principalName) que uno de los usuarios de la instancia de origen, no se migra el usuario en cuestión.
-
-1. Si un usuario se migra sin que se le asigne mediante Asignación de usuarios, en el sistema de la nube de destino no puede iniciar sesión con su ID de IMS. O bien, si su dirección de correo electrónico no coincide con la dirección de correo electrónico utilizada para iniciar sesión en IMS, en el sistema de la nube de Target tampoco pueden iniciar sesión con su ID de IMS. AEM Es posible que puedan iniciar sesión utilizando el método tradicional, pero este método no suele ser el deseado o esperado.
-
+1. Si un usuario no tiene dirección de correo electrónico en la `profile/email` campo de su *jcr* , el usuario o grupo en cuestión puede migrarse, pero no está asignado. Este escenario se da incluso si la dirección de correo electrónico se utiliza como nombre de usuario para iniciar sesión.
+2. Si el usuario está deshabilitado, se trata igual que otros usuarios; se asigna y migra con normalidad y permanece deshabilitado en la instancia de nube.
+3. AEM Si existe un principal con el mismo nombre (rep:principalName) tanto en la instancia de origen como en la instancia de AEM Cloud Service de destino, el principal en cuestión no se migra y el principal existente anteriormente en el sistema de la nube permanece sin cambios.
+4. Si un usuario se migra sin que se le asigne mediante Asignación de usuarios, en el sistema de la nube de destino el usuario no podrá iniciar sesión con su ID de IMS. O bien, si su dirección de correo electrónico no coincide con la dirección de correo electrónico utilizada para iniciar sesión en IMS, en el sistema de la nube de Target tampoco podrán iniciar sesión con su ID de IMS. AEM Es posible que puedan iniciar sesión utilizando el método de inicio de sesión tradicional (inicio de sesión local), pero este método no suele ser el deseado o esperado.
 
 ## Consideraciones adicionales {#additional-considerations}
 
-* Si la configuración **Borrar contenido existente en la instancia de Cloud antes de la ingesta** Cuando se establece, los usuarios ya transferidos en la instancia de Cloud Service se eliminan junto con todo el repositorio existente. Además, se crea un nuevo repositorio en el que se ingiere contenido. Este proceso también restablece todos los ajustes, incluidos los permisos, en la instancia del Cloud Service de destino y es verdadero para un usuario administrador añadido a **administradores** grupo. El usuario administrador debe leerse en el **administradores** para recuperar el token de acceso para CTT.
-* Cuando se realizan recargas de contenido, si el contenido no se transfiere porque no ha cambiado desde la transferencia anterior, los usuarios y grupos asociados con ese contenido tampoco se transfieren. Esta regla se aplica incluso si los usuarios y grupos han cambiado mientras tanto. El motivo es que los usuarios y grupos se migran junto con el contenido con el que están asociados.
+* Si la configuración **Borrar contenido existente en la instancia de Cloud antes de la ingesta** Cuando se establece, los usuarios ya transferidos en la instancia de Cloud Service se eliminan junto con todo el repositorio existente; se crea un nuevo repositorio en el que se ingiere contenido. Este proceso también restablece todos los ajustes, incluidos los permisos, en la instancia del Cloud Service de destino y es verdadero para un usuario administrador añadido a **administradores** grupo. El usuario administrador debe volver a agregarse al **administradores** para recuperar el token de acceso para la ingesta de CTT/CAM.
+* Cuando se realizan recargas de contenido, si el contenido no se transfiere porque no ha cambiado desde la transferencia anterior, los usuarios y grupos asociados con ese contenido tampoco se transfieren. Esta regla es verdadera incluso si los usuarios y grupos han cambiado en el sistema de origen. El motivo es que los usuarios y grupos solo se migran junto con el contenido con el que están asociados.
 * Si la instancia de AEM Cloud Service AEM de destino tiene un usuario con un nombre de usuario diferente pero con la misma dirección de correo electrónico que uno de los usuarios de la instancia de origen, y la asignación de usuarios está habilitada, los registros registran un mensaje de error. AEM Además, el usuario de origen no se transfiere, ya que solo se permite un usuario con una dirección de correo electrónico determinada en el sistema de destino.
-* Consulte [Migración de grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) por consideraciones adicionales para los grupos utilizados en una directiva de grupo de usuarios cerrado (CUG).
+* Consulte [Migración de grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) por consideraciones adicionales para las entidades de seguridad utilizadas en una directiva de grupo de usuarios cerrado (CUG).
 
 ## Resumen final e informe {#final-report}
 
