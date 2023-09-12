@@ -5,15 +5,17 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
+source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
 
 # Ver y comprender los informes de análisis de Forms adaptable {#viewing-and-understanding-aem-forms-analytics-reports}
+
+<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestra [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 En el panorama de rápida evolución del análisis digital, mantenerse en sintonía con las tendencias globales es esencial para tomar decisiones informadas y optimizar las experiencias digitales. Para solucionarlo, Forms adaptable se integra perfectamente con Adobe Analytics para capturar y realizar un seguimiento de las métricas de rendimiento de los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones basadas en datos, utilizando métricas y análisis para mejorar la facilidad de uso y la eficacia de los formularios.
 
