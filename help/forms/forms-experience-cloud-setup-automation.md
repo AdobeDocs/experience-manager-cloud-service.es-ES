@@ -1,9 +1,9 @@
 ---
 title: Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud
 description: La automatización de la configuración de Experience Cloud ayuda a conectar Adobe Analytics a un formulario adaptable. Ayuda a rastrear y analizar la interacción del usuario con un formulario adaptable, lo que ofrece perspectivas sobre las interacciones y la participación de los visitantes.
-source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
+source-git-commit: c88f8f61cf54059b1d141d08b77983dd45edfaa6
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1011'
 ht-degree: 2%
 
 ---
@@ -117,3 +117,5 @@ Siga los pasos que se indican a continuación para habilitar y configurar Adobe 
 
 1. Clic **Adobe Analytics** para ver el informe y analizar los datos de rendimiento.
 
+
+Para conectar un formulario adaptable con Adobe Analytics mediante un método antiguo, visite [Integración de AEM Forms con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
