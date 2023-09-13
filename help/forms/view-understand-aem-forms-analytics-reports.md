@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
+source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Para el informe de AEM Forms Analytics, primero debe integrar Adobe Analytics en
 1. AEM En la instancia de la, vaya a **[!UICONTROL Forms]** >> **[!UICONTROL Forms y documento]**.
 1. Seleccione el formulario y verá que Adobe Analytics está integrado, como se muestra a la izquierda, en el Forms activado para Adobe Analytics.
 
-   ![Ver informe](assets/activ-aa.png)
+   ![Ver informe](assets/activ-aa.png){width="100%"}
 
 1. Clic **Adobe Analytics** para ver el informe y analizar los datos de rendimiento.
 
@@ -50,7 +50,7 @@ Tiene las métricas Representaciones de formularios, Envíos de formularios, Err
 
 * **Visitantes únicos**: Los visitantes únicos representan la cantidad de veces que un visitante procesa el formulario. Para obtener más información sobre los visitantes únicos, consulte [Visitantes únicos, visitas y comportamiento del cliente](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 
-  ![Rendimiento de Forms](assets/forms-performance.png)
+  ![Rendimiento de Forms](assets/forms-performance.png){width="100%"}
 
 ### **Visitantes a sus formularios** {#visitors-to-your-forms}
 
@@ -59,46 +59,46 @@ Esto le permite obtener información valiosa sobre la actividad del visitante en
 * **Visitas y envíos**: Describe la frecuencia de visitas a los formularios en un intervalo de fechas y el número correspondiente de envíos de formularios, para obtener más información sobre este clic [Visitas](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 * **Visitantes únicos y sus visitas totales**: distingue entre los usuarios nuevos y los que regresan. Por ejemplo: un visitante puede llegar a su sitio todos los días durante un mes, pero contará como un visitante único. Visita [Visitantes únicos](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) para obtener información detallada.
 
-  ![Visitantes de Forms](assets/forms-visitors.png)
+  ![Visitantes de Forms](assets/forms-visitors.png){width="100%"}
 
 ### **Tipo de dispositivo** {#device-type}
 
 El tipo de dispositivo ayuda a identificar el tipo de dispositivo utilizado para acceder a los formularios. Clasifica el tipo de dispositivo como Tipo de dispositivo móvil. Por ejemplo, en este caso, es Tipo de dispositivo móvil: Otro y Tipo de dispositivo móvil: Teléfono móvil. Los distintos tipos de dispositivos móviles incluyen teléfono móvil, tableta, reproductor multimedia, consola de juegos y más.
 
-![Tipo de dispositivo](assets/device-type.png)
+![Tipo de dispositivo](assets/device-type.png){width="100%"}
 
 ### **Desglose geográfico** {#geographical-breakdown}
 
 Muestra la ubicación desde la que se accede a Forms. Proporciona información específica de la región acerca de los usuarios del formulario; por ejemplo, puede ver que la información específica de la región acerca de un usuario del formulario es India, como se muestra en la imagen.
 
-![desglose geográfico](assets/geographical-breakdown.png)
+![Desglose geográfico](assets/geographical-breakdown.png){width="100%"}
 
 ### **Principales fuentes de tráfico y formularios populares** {#top-sources-of-traffic-and-popular-forms}
 
 Esto le ayuda a identificar la fuente principal o el vínculo desde el que se hace referencia a los formularios. Por ejemplo, en la imagen siguiente puede ver instancias de búsqueda de sus formularios adaptables donde el 18,9 % son **Escritos o marcadores**, 70,49 % basado en **Motores de búsqueda** y el 24 % son de **Otros sitios web**. Puede definir elementos de dimensión en función de sus necesidades. Además, puede averiguar cuáles son los formularios más visitados o populares.
 
-![Sitios de referencia](assets/referred-sites.png)
+![Sitios preferidos](assets/referred-sites.png){width="100%"}
 
 ### **Actividad del usuario en los formularios principales** {#user-activity-on-top-forms}
 
 Una vista completa de la participación del usuario en las visitas de campo, las representaciones de formularios, los errores de validación, los formularios abandonados y los envíos de formularios proporciona información sobre los formularios más activos. En la imagen que se muestra a continuación, verá que el formulario de solicitud es el más activo, según las métricas de Evento de formulario.
 
-![user-activity](assets/user-activity.png)
+![Actividad del usuario](assets/user-activity.png){width="100%"}
 
 ### **Cronología del tiempo empleado en los formularios** {#timeline-for-time-spent-on-forms}
 
 Es el tiempo que los usuarios invierten en los formularios a lo largo del tiempo, lo que le ayuda a identificar los patrones de participación.
 
-![time-spent-on-forms](assets/time-spent-on-forms.png)
+![Tiempo empleado en los formularios](assets/time-spent-on-forms.png){width="100%"}
 
 ### **Áreas en las que los visitantes requieren ayuda para rellenar el formulario** {#areas-requiring-assistance}
 
 Las métricas como las vistas de ayuda, los errores de validación y las visitas a los campos revelan dónde necesitan asistencia los usuarios o cómo podemos rastrear errores en los campos. Por ejemplo, en la siguiente imagen puede ver que en un formulario con campos como **Nombre completo**, **Número de teléfono**, **DoB**. El **Nombre completo** El campo tiene 12 visitas, de las 12 visitas, 8 visitas tienen error de validación y 1 hizo clic en el icono de ayuda para ver la ayuda en este campo. Se pueden ver los datos de métricas de otros campos de formulario.
 
-![áreas de asistencia](assets/assisting-areas.png)
+![Áreas de asistencia](assets/assisting-areas.png){width="100%"}
 
 ### **El último campo de formulario que vieron los visitantes antes de abandonar el formulario** {#last-form-field-that-visitors-viewed}
 
 Le ayuda a analizar los campos del formulario en los que los usuarios han invertido tiempo antes de abandonarlo. Por ejemplo, en la siguiente imagen, de 5 formularios abandonados, quedan 2 en el campo **Nombre completo**, quedan 2 en el campo **Número de teléfono** y 1 izquierda en el campo **Entrada de texto**.
 
-![field-visitors](assets/field-visitors.png)
+![Visitantes de campo](assets/field-visitors.png){width="100%"}
