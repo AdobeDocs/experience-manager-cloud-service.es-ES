@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d97b17981e82323317e34185e47ee3f4224795b3
+source-git-commit: eb0d74e4ab1feaf29de2254fed7c80e690622dce
 workflow-type: tm+mt
-source-wordcount: '4284'
+source-wordcount: '4288'
 ht-degree: 95%
 
 ---
@@ -76,6 +76,7 @@ ht-degree: 95%
    + Notas de la versión de mantenimiento de AEMaaCS {#maintenance}
       + [Notas de la versión actuales sobre el mantenimiento](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [Notas de la versión de mantenimiento de 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md)
          + [Notas de la versión de mantenimiento de 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
          + [Notas de la versión de mantenimiento de 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
          + [Notas de la versión de mantenimiento de 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
@@ -534,7 +535,7 @@ ht-degree: 95%
       + [Tipos de archivos admitidos y casos de uso](/help/assets/supported-file-formats-assets-view.md)
       + [Visualización de recursos](/help/assets/navigate-assets-view.md)
       + [Carga y adición de recursos](/help/assets/add-delete-assets-view.md)
-      + [Importación masiva de recursos](/help/assets/bulk-import-assets-view.md)
+      + [Importación de recursos por lotes](/help/assets/bulk-import-assets-view.md)
       + [Búsqueda y descubrimiento de recursos](/help/assets/search-assets-view.md)
       + [Tareas de administración de recursos](/help/assets/manage-organize-assets-view.md)
       + [Edición de imágenes](/help/assets/edit-images-assets-view.md)
