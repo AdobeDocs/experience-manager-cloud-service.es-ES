@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo crear perfiles de usuario en la Ad
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
+source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 98%
+source-wordcount: '989'
+ht-degree: 96%
 
 ---
 
@@ -22,6 +22,10 @@ De vez en cuando, Adobe debe ponerse en contacto con los usuarios en relación c
 
 * **Notificación de incidente**: estas notificaciones se envían durante un incidente o cuando Adobe ha identificado un posible problema de disponibilidad con su entorno AEM as a Cloud Service.
 * **Notificación proactiva**: estas notificaciones se envían cuando un miembro del equipo de asistencia de Adobe desea proporcionar orientación sobre una posible optimización o recomendación que pueda beneficiar a su entorno AEM as a Cloud Service.
+
+>[!NOTE]
+>
+>No se admite la asignación de grupos a notificaciones dinámicas. En su lugar, debe asignar usuarios directamente a los perfiles de producto.
 
 Para que reciban estas notificaciones los usuarios correctos, debe configurar y asignar los perfiles de usuario como se describe en este documento.
 
