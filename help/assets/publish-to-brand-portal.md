@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 56a4b03e78e835108aa57fdb241803e75b867260
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 96%
+source-wordcount: '1263'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Como administrador de recursos de Adobe Experience Manager (AEM), puede publicar recursos, carpetas y colecciones en la instancia Brand Portal de AEM Assets. Además, puede programar el flujo de trabajo de publicación de un recurso o carpeta para una fecha u hora posterior. Una vez publicados, los usuarios de Brand Portal pueden acceder a los recursos, carpetas y colecciones y distribuirlos a otros usuarios.
@@ -87,6 +87,16 @@ Inicie sesión en la interfaz de Brand Portal para ver los recursos publicados (
 
 ![bp_landingpage](assets/bp_landingpage.png)
 
+>[!NOTE]
+>
+> * Los usuarios existentes que forman parte del grupo DAM-Users tienen acceso de lectura en la ruta &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
+>* Los nuevos usuarios (o usuarios no administradores) requieren los siguientes derechos para publicar en Brand Portal.
+> Rutas:
+> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
+>/libs : jcr:read
+>/conf : jcr:read
+>/content : jcr:read , crx:replicate
+>/content/dam/ : jcr:read ,Modify , crx:replicate
 
 ## Publicar carpetas en Brand Portal {#publish-folders-to-brand-portal}
 
@@ -104,7 +114,7 @@ Puede publicar o cancelar la publicación de las carpetas de recursos inmediatam
 
    * En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**.
 
-      En el menú, seleccione **[!UICONTROL Publicar en Brand Portal]**.
+     En el menú, seleccione **[!UICONTROL Publicar en Brand Portal]**.
 
    * En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**.
 
@@ -253,11 +263,11 @@ Consulte la [documentación de Brand Portal](https://experienceleague.adobe.com/
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
