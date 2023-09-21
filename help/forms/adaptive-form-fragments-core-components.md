@@ -5,10 +5,10 @@ topic-tags: author
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: b3aac0cb7682f66c72c32ebf706f5db4067b12ed
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 36%
+source-wordcount: '1680'
+ht-degree: 35%
 
 ---
 
@@ -43,6 +43,11 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
    ![Muestra el tipo de modelo en la pestaña Modelo de formulario](assets/create-af-1-1.png)
 
    * **Ninguno**: Especifica que se cree el fragmento desde cero sin usar ningún modelo de formulario.
+
+     >[!NOTE]
+     >
+     >Una ventaja de los fragmentos basados en componentes principales sobre los fragmentos basados en componentes básicos es la capacidad de utilizar varios fragmentos basados en componentes principales no vinculados a ningún modelo de formulario en un único formulario adaptable.
+
    * **Esquema**: Especifica que se crea el fragmento con un esquema XML o JSON cargado en AEM Forms. Puede cargar o seleccionar entre los esquemas XML o JSON disponibles como modelo de formulario para el fragmento. Al seleccionar un esquema XML, también puede crear un fragmento de formulario adaptable seleccionando un complexType presente en el esquema seleccionado de la **[!UICONTROL Tipo complejo de esquema XML]** cuadro desplegable. Al seleccionar un esquema JSON, también puede crear un fragmento de formulario adaptable seleccionando una definición de esquema presente en el esquema seleccionado de la **[!UICONTROL Definiciones de esquema JSON]** cuadro desplegable.
    * **Modelo de datos de formulario**: Especifica la creación del fragmento mediante un modelo de datos de formulario. Puede crear un fragmento de formulario adaptable basado en un único objeto de modelo de datos en un modelo de datos de formulario. Expanda la lista desplegable Definiciones del modelo de datos de formulario. Esta lista enumera todos los objetos de modelo de datos del modelo de datos de formulario especificado. Seleccione un objeto de modelo de datos de la lista.
 
