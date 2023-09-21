@@ -16,8 +16,8 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Ingesta de contenido"
->abstract="Hace referencia a la ingesta de contenido del conjunto de migración en la instancia de Cloud Service de destino. La herramienta de transferencia de contenido tiene una función que permite la recarga de contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="Extracción superior"
+>abstract="Hace referencia a la ingesta de contenido del conjunto de migración en la instancia de Cloud Service de destino. La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=es#top-up-extraction-process" text="Extracción superior"
 
 Siga los pasos a continuación para ingerir el conjunto de migración mediante Cloud Acceleration Manager:
 
