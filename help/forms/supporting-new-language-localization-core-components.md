@@ -1,7 +1,7 @@
 ---
 title: Cómo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes principales
 description: AEM Forms permite agregar nuevas configuraciones regionales para localizar adaptive forms.
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 53%
@@ -48,7 +48,7 @@ AEM Forms admite actualmente la localización del contenido de los formularios a
 
 ![Añadir una configuración regional a un repositorio](add-a-locale-adaptive-form-core-components.png)
 
-### AEM 1. Clonar el repositorio de Git as a Cloud Service de la {#clone-the-repository}
+### AEM Clonar el repositorio de Git as a Cloud Service de {#clone-the-repository}
 
 1. Abra la línea de comandos y seleccione un directorio para almacenar el repositorio, como `/cloud-service-repository/`.
 
@@ -63,7 +63,7 @@ AEM Forms admite actualmente la localización del contenido de los formularios a
    Después de completar correctamente el comando, cree una carpeta `<my-program>` se ha creado. Contiene el contenido clonado del repositorio de Git. En el resto del artículo, la carpeta se denomina, `[AEM Forms as a Cloud Service Git repostory]`.
 
 
-### 2. Añada la nueva configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service}
+### Añada la nueva configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service}
 
 1. Abra la carpeta del repositorio, clonada en la sección anterior, en un editor de texto sin formato.
 1. Navegue hasta la carpeta `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. Puede encontrar el `<appid>` en el `archetype.properties` archivos del proyecto.
@@ -74,7 +74,7 @@ AEM Forms admite actualmente la localización del contenido de los formularios a
 1. Añada el [código de configuración regional del idioma](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) desea agregar, por ejemplo, agregue &quot;hi&quot; para hindi.
 1. Guarde y cierre el archivo.
 
-### 3. Cree una biblioteca de cliente para agregar una configuración regional.
+### Crear una biblioteca de cliente para agregar una configuración regional.
 
 AEM Forms proporciona una biblioteca de cliente de ejemplo para ayudarle a agregar nuevas configuraciones regionales fácilmente. Puede descargar y agregar `clientlib-it-custom-locale` de la biblioteca de cliente del repositorio de componentes principales de Forms adaptable en GitHub al repositorio as a Cloud Service de Forms. Para añadir la biblioteca de cliente, siga estos pasos:
 
@@ -84,7 +84,7 @@ AEM Forms proporciona una biblioteca de cliente de ejemplo para ayudarle a agreg
 1. Vaya a `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` y pegue el `clientlib-it-custom-locale` directorio.
 
 
-### 4. Cree un archivo específico de la configuración regional {#locale-specific-file}
+### Crear un archivo específico de la configuración regional {#locale-specific-file}
 
 1. Navegue hasta `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Busque el [Archivo .json de la configuración regional en inglés en GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), que contiene el último conjunto de cadenas predeterminadas incluidas en el producto.
@@ -94,7 +94,7 @@ AEM Forms proporciona una biblioteca de cliente de ejemplo para ayudarle a agreg
 1. Guarde y cierre el archivo.
 
 
-### 4. Agregue compatibilidad con la configuración regional al diccionario {#add-locale-support-for-the-dictionary}
+### Agregar compatibilidad con la configuración regional al diccionario {#add-locale-support-for-the-dictionary}
 
 Realice este paso solo si la configuración regional `<locale>` que está agregando no está entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`.
 
@@ -133,7 +133,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 
    ![Añada las carpetas recién creadas en `filter.xml` bajo `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### 5. Confirme los cambios e implemente la canalización {#commit-changes-in-repo-deploy-pipeline}
+### Confirme los cambios e implemente la canalización {#commit-changes-in-repo-deploy-pipeline}
 
 Confirme los cambios en el repositorio de Git después de agregar compatibilidad con una nueva configuración regional. Implemente el código mediante la canalización de pila completa. Aprenda a [configurar una canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline) para añadir compatibilidad con una nueva configuración regional.
 Una vez finalizada la canalización, la configuración regional recién agregada aparece en el entorno de AEM.
