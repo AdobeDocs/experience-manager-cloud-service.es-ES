@@ -2,10 +2,10 @@
 title: Agregar la compatibilidad con nuevas configuraciones regionales a un formulario adaptable
 description: AEM Forms permite agregar nuevas configuraciones regionales para localizar adaptive forms. Configuraciones regionales en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR).
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 95%
+source-wordcount: '1251'
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 95%
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=es) |
-| AEM as a Cloud Service | Este artículo |
 
 AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi (hi_IN).
 
@@ -31,7 +30,7 @@ La localización de formularios adaptables se basa en dos tipos de diccionarios 
 
 ## Agregar compatibilidad con nuevas configuraciones regionales {#add-support-for-new-locales}
 
-Siga estos dos pasos para agregar compatibilidad con una nueva configuración regional:
+Siga estos dos pasos para agregar compatibilidad con una configuración regional:
 
 1. [Agregar compatibilidad con la localización para configuraciones regionales no admitidas](#add-localization-support-for-non-supported-locales)
 1. [Usar configuraciones regionales agregadas en Formularios adaptables](#use-added-locale-in-af)
@@ -40,7 +39,7 @@ Siga estos dos pasos para agregar compatibilidad con una nueva configuración re
 
 AEM Forms admite actualmente la localización del contenido de los formularios adaptables en las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR).
 
-Para añadir compatibilidad con una nueva configuración regional en el tiempo de ejecución de un formulario adaptable:
+Para agregar compatibilidad con una configuración regional:
 
 1. [Clone su repositorio](#clone-the-repository)
 1. [Añada una configuración regional al servicio GuideLocalizationService.](#add-a-locale-to-the-guide-localization-service)
@@ -114,12 +113,12 @@ Antes de confirmar los cambios en el repositorio de Git de AEM, debe acceder a s
 
 #### 5. Confirmar los cambios en el repositorio e implementar la canalización {#commit-changes-in-repo-deploy-pipeline}
 
-Confirme los cambios en el repositorio de Git después de agregar compatibilidad con una nueva configuración regional. Implemente el código mediante la canalización de pila completa. Aprenda a [configurar una canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline) para añadir compatibilidad con una nueva configuración regional.
+Confirme los cambios en el repositorio de GIT después de agregar una compatibilidad con la configuración regional. Implemente el código mediante la canalización de pila completa. Aprenda a [configurar una canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline) para añadir compatibilidad con una nueva configuración regional.
 Una vez finalizada la canalización, la configuración regional recién agregada aparece en el entorno de AEM.
 
 ### Uso de una configuración regional añadida en formularios adaptables {#use-added-locale-in-af}
 
-Siga estos pasos para utilizar y procesar un formulario adaptable mediante una configuración regional recién agregada:
+Siga estos pasos para utilizar y procesar un formulario adaptable mediante la configuración regional recién agregada:
 
 1. Inicie sesión en la instancia de autor de AEM.
 1. Vaya a **Formularios** > **Formularios y documentos**.
