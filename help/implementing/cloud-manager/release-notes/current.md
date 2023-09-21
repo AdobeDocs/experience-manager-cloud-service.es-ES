@@ -3,9 +3,9 @@ title: Notas de la versión 2023.9.0 para Cloud Manager en Adobe Experience Mana
 description: Estas son las notas de la versión 2023.9.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
+source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '443'
 ht-degree: 23%
 
 ---
@@ -55,6 +55,6 @@ El tablero aprovecha Google Lighthouse, una herramienta automatizada de código 
 
 ## Correcciones de errores {#bug-fixes}
 
-* Cuando se elimina un programa, también se elimina cualquier canalización asociada en ejecución, lo que garantiza que la canalización no se designe incorrectamente como estado de error.
-* El botón Publicar finalización está desactivado e informa al usuario del motivo por el que una canalización está en curso.
-* En ocasiones, cuando se &#39;completan&#39; todos los pasos de la ejecución de una canalización, el estado de la canalización se ve como &quot;en ejecución&quot;, lo que hace que parezca que está en un estado atascado. Ahora se ve como &#39;Completo&#39;.
+* Cuando se elimina un programa, cualquier canalización asociada en ejecución ahora también se elimina.
+* Si una canalización está en curso, la variable **Enviar** del botón **Go-live completado** El cuadro de diálogo de está desactivado e informa al usuario de que la fecha de lanzamiento no se puede establecer debido a la canalización en ejecución.
+* Se ha corregido un error ocasional en el que todos los pasos de la ejecución de una canalización se marcaban como completados, pero el estado de la canalización seguía ejecutándose, lo que daba la apariencia de un estado atascado.
