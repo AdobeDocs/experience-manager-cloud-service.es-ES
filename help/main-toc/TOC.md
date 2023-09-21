@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
+source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
 workflow-type: tm+mt
-source-wordcount: '4293'
+source-wordcount: '4303'
 ht-degree: 95%
 
 ---
@@ -604,6 +604,7 @@ ht-degree: 95%
             + [Configuración de una acción de envío para un formulario adaptable](/help/forms/configure-submit-actions-core-components.md)
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+            + [Añadir una configuración regional para Forms adaptable basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
       + Componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)

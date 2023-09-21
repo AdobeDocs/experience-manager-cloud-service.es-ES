@@ -1,11 +1,10 @@
 ---
-title: Agregar la compatibilidad con nuevas configuraciones regionales a un formulario adaptable
-description: AEM Forms permite agregar nuevas configuraciones regionales para localizar adaptive forms. Configuraciones regionales en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR).
-exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
+title: Cómo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes principales
+description: AEM Forms permite agregar nuevas configuraciones regionales para localizar adaptive forms.
+source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 55%
+source-wordcount: '1336'
+ht-degree: 53%
 
 ---
 

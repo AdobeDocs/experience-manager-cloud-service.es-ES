@@ -2,9 +2,9 @@
 title: Agregar la compatibilidad con nuevas configuraciones regionales a un formulario adaptable
 description: AEM Forms permite agregar nuevas configuraciones regionales para localizar adaptive forms. Configuraciones regionales en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR).
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
+source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1259'
 ht-degree: 91%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 91%
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=es) |
+| Componentes principales | [Haga clic aquí](supporting-new-language-localization-core-components.md) |
+| Componentes de base | Este artículo |
 
 AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi (hi_IN).
 
