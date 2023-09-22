@@ -1,9 +1,9 @@
 ---
 title: Cómo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes principales
 description: Aprenda a agregar nuevas configuraciones regionales para un formulario adaptable.
-source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
+source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1484'
 ht-degree: 31%
 
 ---
@@ -16,12 +16,11 @@ ht-degree: 31%
 | Componentes de base | [Haga clic aquí](supporting-new-language-localization.md) |
 | Componentes principales | Este artículo |
 
-AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). 
+AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi (hi_IN).
 
 ## ¿Cómo se selecciona la configuración regional para un formulario adaptable?
 
-
-Existen dos métodos para identificar y seleccionar la configuración regional de un formulario adaptable cuando se procesa:
+Antes de empezar a añadir una nueva configuración regional para un Forms adaptable, es necesario que conozca cómo se selecciona una configuración regional para un formulario adaptable. Existen dos métodos para identificar y seleccionar la configuración regional de un formulario adaptable cuando se procesa:
 
 * **Uso del [locale] Selector en la dirección URL**: al procesar un formulario adaptable, el sistema identifica la configuración regional solicitada inspeccionando el [locale] en la dirección URL del formulario adaptable. La dirección URL sigue este formato: http:/[URL del servidor de AEM Forms]/content/forms/af/[afName].[locale].html?wcmmode=disabled. El uso del [locale] El selector de permite el almacenamiento en caché del formulario adaptable.
 
