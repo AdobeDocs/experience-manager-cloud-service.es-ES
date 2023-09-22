@@ -1,10 +1,10 @@
 ---
 title: Cómo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes principales
 description: Aprenda a agregar nuevas configuraciones regionales para un formulario adaptable.
-source-git-commit: 056aecd0ea1fd9ec1e4c05299d2c50bca161615f
+source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 32%
+source-wordcount: '1449'
+ht-degree: 31%
 
 ---
 
@@ -20,17 +20,18 @@ AEM Forms admite de forma predeterminada las configuraciones regionales de ingl�
 
 ## ¿Cómo se selecciona la configuración regional para un formulario adaptable?
 
+
 Existen dos métodos para identificar y seleccionar la configuración regional de un formulario adaptable cuando se procesa:
 
 * **Uso del [locale] Selector en la dirección URL**: al procesar un formulario adaptable, el sistema identifica la configuración regional solicitada inspeccionando el [locale] en la dirección URL del formulario adaptable. La dirección URL sigue este formato: http:/[URL del servidor de AEM Forms]/content/forms/af/[afName].[locale].html?wcmmode=disabled. El uso del [locale] El selector de permite el almacenamiento en caché del formulario adaptable.
 
 * Recuperando los parámetros en el orden indicado a continuación:
 
-   * Parámetro de solicitud `afAcceptLang`: Para anular la configuración regional del explorador del usuario, puede pasar el parámetro de solicitud afAcceptLang. Por ejemplo, esta URL exige procesar el formulario en la configuración regional francesa canadiense: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **Parámetro de solicitud`afAcceptLang`**: Para anular la configuración regional del explorador del usuario, puede pasar el parámetro de solicitud afAcceptLang. Por ejemplo, esta URL exige procesar el formulario en la configuración regional francesa canadiense: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
 
-   * Configuración regional del explorador (encabezado Accept-Language): el sistema también tiene en cuenta la configuración regional del explorador del usuario, que se especifica en la solicitud utilizando `Accept-Language` encabezado.
+   * **Configuración regional del explorador (encabezado Accept-Language)**: el sistema también tiene en cuenta la configuración regional del explorador del usuario, que se especifica en la solicitud utilizando `Accept-Language` encabezado.
 
-  Si no hay una biblioteca de cliente disponible para la configuración regional solicitada, el sistema comprueba si existe una biblioteca de cliente para el código de idioma dentro de la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (Inglés sudafricano) y no hay biblioteca de cliente para `en_ZA`, el formulario adaptable utilizará la biblioteca de cliente para en (inglés) si está disponible. Si no se encuentra ninguno, el formulario adaptable recurre al diccionario para el `en` configuración regional.
+  Si no hay una biblioteca de cliente disponible para la configuración regional solicitada, el sistema comprueba si existe una biblioteca de cliente para el código de idioma dentro de la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (Inglés sudafricano) y no hay biblioteca de cliente para `en_ZA`, el formulario adaptable utiliza la biblioteca de cliente para en (inglés) si está disponible. Si no se encuentra ninguno, el formulario adaptable recurre al diccionario para el `en` configuración regional.
 
   Una vez identificada la configuración regional, el formulario adaptable selecciona el diccionario específico del formulario correspondiente. Si no se encuentra el diccionario de la configuración regional solicitada, el valor predeterminado será utilizar el diccionario del idioma en el que se creó el formulario adaptable.
 
@@ -42,7 +43,8 @@ Existen dos métodos para identificar y seleccionar la configuración regional d
 Antes de empezar a añadir compatibilidad con una nueva configuración regional,
 
 * Instale un editor de texto sin formato (IDE) para facilitar la edición. Los ejemplos de este documento se basan en Microsoft® Visual Studio Code.
-* Clone el repositorio de componentes principales de Forms adaptable. Para clonar el repositorio, haga lo siguiente:
+* Instale una versión de [Git](https://git-scm.com), si no está disponible en el equipo.
+* Clonar el [Componentes principales de Forms adaptable](https://github.com/adobe/aem-core-forms-components) repositorio. Para clonar el repositorio, haga lo siguiente:
    1. Abra la línea de comandos o la ventana de terminal y vaya a una ubicación para almacenar el repositorio. Por ejemplo `/adaptive-forms-core-components`
    1. Ejecute el siguiente comando para clonar el repositorio:
 
@@ -50,7 +52,7 @@ Antes de empezar a añadir compatibilidad con una nueva configuración regional,
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  El repositorio incluye una biblioteca de cliente necesaria para agregar una configuración regional.
+  El repositorio incluye una biblioteca de cliente necesaria para agregar una configuración regional. En el resto del artículo, la carpeta se denomina, [Repositorio de componentes principales de Forms adaptable].
 
 
 ## Añadir una configuración regional {#add-localization-support-for-non-supported-locales}
@@ -59,9 +61,9 @@ Para añadir compatibilidad con una nueva configuración regional, siga estos pa
 
 ![Añadir una configuración regional a un repositorio](add-a-locale-adaptive-form-core-components.png)
 
-### AEM Clonar el repositorio de Git as a Cloud Service de {#clone-the-repository}
+### AEM 1. Clonar el repositorio de Git as a Cloud Service de la {#clone-the-repository}
 
-1. Abra la línea de comandos y seleccione un directorio para almacenar el repositorio, como `/cloud-service-repository/`.
+1. Abra la línea de comandos y seleccione un directorio para almacenar el repositorio as a Cloud Service de AEM Forms, como `/cloud-service-repository/`.
 
 1. Ejecute el siguiente comando para clonar el repositorio:
 
@@ -74,7 +76,7 @@ Para añadir compatibilidad con una nueva configuración regional, siga estos pa
    Después de completar correctamente el comando, cree una carpeta `<my-program>` se ha creado. Contiene el contenido clonado del repositorio de Git. En el resto del artículo, la carpeta se denomina, `[AEM Forms as a Cloud Service Git repository]`.
 
 
-### Añada la nueva configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service}
+### 2. Añada la nueva configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service}
 
 1. Abra la carpeta del repositorio, clonada en la sección anterior, en un editor de texto sin formato.
 1. Navegue hasta la carpeta `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. Puede encontrar el `<appid>` en el `archetype.properties` archivos del proyecto.
@@ -85,17 +87,17 @@ Para añadir compatibilidad con una nueva configuración regional, siga estos pa
 1. Añada el [código de configuración regional del idioma](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) que desea agregar, por ejemplo, agregue &#39;hi&#39; para hindi.
 1. Guarde y cierre el archivo.
 
-### Crear una biblioteca de cliente para agregar una configuración regional.
+### 3. Cree una biblioteca de cliente para agregar una configuración regional.
 
-AEM Forms proporciona una biblioteca de cliente de ejemplo para ayudarle a agregar nuevas configuraciones regionales fácilmente. Puede descargar y agregar `clientlib-it-custom-locale` de la biblioteca de cliente del repositorio de componentes principales de Forms adaptable en GitHub al repositorio as a Cloud Service de Forms. Para añadir la biblioteca de cliente, siga estos pasos:
+AEM Forms proporciona una biblioteca de cliente de ejemplo para ayudarle a agregar nuevas configuraciones regionales fácilmente. Puede descargar y agregar `clientlib-it-custom-locale` biblioteca de cliente de [Repositorio de componentes principales de Forms adaptable] en GitHub al repositorio as a Cloud Service de Forms. Para añadir la biblioteca de cliente, siga estos pasos:
 
-1. Abra el repositorio de componentes principales de Forms adaptable en el editor de texto sin formato. Si no ha clonado el repositorio, consulte [Requisitos previos](#prerequistes) para obtener instrucciones para clonar el repositorio.
+1. Abra su [Repositorio de componentes principales de Forms adaptable] en el editor de texto sin formato. Si no ha clonado el repositorio, consulte [Requisitos previos](#prerequistes) para obtener instrucciones para clonar el repositorio.
 1. Navegue hasta el directorio `/aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs`
 1. Copie el `clientlib-it-custom-locale` directorio.
 1. Vaya a `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` y pegue el `clientlib-it-custom-locale` directorio.
 
 
-### Crear un archivo específico de la configuración regional {#locale-specific-file}
+### 4. Cree un archivo específico de la configuración regional {#locale-specific-file}
 
 1. Navegue hasta `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Busque el [Archivo .json de la configuración regional en inglés en GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), que contiene el último conjunto de cadenas predeterminadas incluidas en el producto.
@@ -105,7 +107,7 @@ AEM Forms proporciona una biblioteca de cliente de ejemplo para ayudarle a agreg
 1. Guarde y cierre el archivo.
 
 
-### Agregar compatibilidad con la configuración regional al diccionario {#add-locale-support-for-the-dictionary}
+### 5. Agregar compatibilidad con la configuración regional al diccionario {#add-locale-support-for-the-dictionary}
 
 Realice este paso solo si la configuración regional `<locale>` que está agregando no está entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`.
 
@@ -144,9 +146,9 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 
    ![Añada las carpetas recién creadas en `filter.xml` bajo `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### Confirme los cambios e implemente la canalización {#commit-changes-in-repo-deploy-pipeline}
+### 6. Confirme los cambios e implemente la canalización {#commit-changes-in-repo-deploy-pipeline}
 
-Confirme los cambios en el repositorio de Git después de agregar compatibilidad con una nueva configuración regional. Implemente el código mediante la canalización de pila completa. Aprenda a [configurar una canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline) para añadir compatibilidad con una nueva configuración regional.
+Confirme los cambios en el repositorio de GIT después de agregar la nueva configuración regional. Implemente el código mediante la canalización de pila completa. Aprenda a [configurar una canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline) para añadir compatibilidad con una nueva configuración regional.
 
 Una vez que la ejecución de la canalización se haya realizado correctamente, la configuración regional recién agregada estará lista para su uso.
 
