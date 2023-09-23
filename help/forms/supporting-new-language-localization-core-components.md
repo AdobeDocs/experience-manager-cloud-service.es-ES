@@ -1,10 +1,10 @@
 ---
 title: Cómo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes principales
 description: Aprenda a agregar nuevas configuraciones regionales para un formulario adaptable.
-source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
+source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 22%
+source-wordcount: '1339'
+ht-degree: 23%
 
 ---
 
@@ -20,17 +20,17 @@ AEM Forms admite de forma predeterminada las configuraciones regionales de ingl�
 
 ## ¿Cómo se selecciona la configuración regional para un formulario adaptable?
 
-Antes de empezar a añadir una nueva configuración regional para un Forms adaptable, es necesario que conozca cómo se selecciona una configuración regional para un formulario adaptable. Existen dos métodos para identificar y seleccionar la configuración regional de un formulario adaptable cuando se procesa:
+Forms Antes de empezar a añadir una configuración regional para un formulario adaptable, debe comprender cómo se selecciona una configuración regional para un formulario adaptable. Existen dos métodos para identificar y seleccionar la configuración regional de un formulario adaptable cuando se procesa:
 
-* **Uso del [locale] Selector en la dirección URL**: al procesar un formulario adaptable, el sistema identifica la configuración regional solicitada inspeccionando el [locale] en la dirección URL del formulario adaptable. La dirección URL sigue este formato: http:/[URL del servidor de AEM Forms]/content/forms/af/[afName].[locale].html?wcmmode=disabled. El uso del [locale] El selector de permite el almacenamiento en caché del formulario adaptable.
+* **Uso del `locale` Selector en la dirección URL**: al procesar un formulario adaptable, el sistema identifica la configuración regional solicitada inspeccionando el [locale] en la dirección URL del formulario adaptable. La dirección URL sigue este formato: http:/[URL del servidor de AEM Forms]/content/forms/af/[afName].[locale].html?wcmmode=disabled. El uso del [locale] El selector de permite el almacenamiento en caché del formulario adaptable. Por ejemplo, la dirección URL `www.example.com/content/forms/af/contact-us.hi.html?wcmmmode=disabled` procesa el formulario en hindi.
 
 * Recuperando los parámetros en el orden indicado a continuación:
 
-   * **Parámetro de solicitud`afAcceptLang`**: Para anular la configuración regional del explorador del usuario, puede pasar el parámetro de solicitud afAcceptLang. Por ejemplo, esta URL exige procesar el formulario en la configuración regional francesa canadiense: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **Uso del `afAcceptLang`parámetro de solicitud**: Para anular la configuración regional del explorador del usuario, puede pasar el parámetro de solicitud afAcceptLang. Por ejemplo, la variable `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr` La URL obliga al servidor de AEM Forms a procesar el formulario en la configuración regional en francés canadiense.
 
-   * **Configuración regional del explorador (encabezado Accept-Language)**: el sistema también tiene en cuenta la configuración regional del explorador del usuario, que se especifica en la solicitud utilizando `Accept-Language` encabezado.
+   * **Uso de la configuración regional del explorador (encabezado Accept-Language)**: el sistema también tiene en cuenta la configuración regional del explorador del usuario, que se especifica en la solicitud utilizando `Accept-Language` encabezado.
 
-  Si no hay una biblioteca de cliente disponible para la configuración regional solicitada, el sistema comprueba si existe una biblioteca de cliente para el código de idioma dentro de la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (Inglés sudafricano) y no hay biblioteca de cliente para `en_ZA`, el formulario adaptable utiliza la biblioteca de cliente para en (inglés) si está disponible. Si no se encuentra ninguno, el formulario adaptable recurre al diccionario para el `en` configuración regional.
+  Si una biblioteca de cliente (el proceso para crear y utilizar la biblioteca se trata más adelante en este artículo) para la configuración regional solicitada no está disponible, el sistema comprueba si existe una biblioteca de cliente para el código de idioma dentro de la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (Inglés sudafricano) y no hay biblioteca de cliente para `en_ZA`, el formulario adaptable utiliza la biblioteca de cliente para en (inglés) si está disponible. Si no se encuentra ninguno, el formulario adaptable recurre al diccionario para el `en` configuración regional.
 
   Una vez identificada la configuración regional, el formulario adaptable selecciona el diccionario específico del formulario correspondiente. Si no se encuentra el diccionario de la configuración regional solicitada, el valor predeterminado será utilizar el diccionario del idioma en el que se creó el formulario adaptable.
 
@@ -39,19 +39,21 @@ Antes de empezar a añadir una nueva configuración regional para un Forms adapt
 
 ## Requisitos previos {#prerequistes}
 
-Antes de empezar a añadir compatibilidad con una nueva configuración regional,
+Antes de empezar a añadir una configuración regional:
 
-* Instale un editor de texto sin formato (IDE) para facilitar la edición. Los ejemplos de este documento se basan en Microsoft® Visual Studio Code.
+* Instale un editor de texto sin formato (IDE) para facilitar la edición. Los ejemplos de este documento se basan en [Microsoft® Visual Studio Code](https://code.visualstudio.com/download).
 * Instale una versión de [Git](https://git-scm.com), si no está disponible en el equipo.
 * Clonar el [Componentes principales de Forms adaptable](https://github.com/adobe/aem-core-forms-components) repositorio. Para clonar el repositorio, haga lo siguiente:
-   1. Abra la línea de comandos o la ventana de terminal y vaya a una ubicación para almacenar el repositorio. Por ejemplo `/adaptive-forms-core-components`
+   1. Abra la línea de comandos o la ventana de terminal y vaya a una ubicación para almacenar el repositorio. Por ejemplo, `/adaptive-forms-core-components`
    1. Ejecute el siguiente comando para clonar el repositorio:
 
       ```SHELL
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  El repositorio incluye una biblioteca de cliente necesaria para agregar una configuración regional. En el resto del artículo, la carpeta se denomina, [Repositorio de componentes principales de Forms adaptable].
+  El repositorio incluye una biblioteca de cliente necesaria para agregar una configuración regional.
+
+  Si la ejecución del comando se realiza correctamente, el repositorio se clona en `aem-core-forms-components` en el equipo. En el resto del artículo, la carpeta se denomina, [Repositorio de componentes principales de Forms adaptable].
 
 
 ## Añadir una configuración regional {#add-localization-support-for-non-supported-locales}
@@ -169,7 +171,13 @@ Realice los siguientes pasos para previsualizar un formulario adaptable con la c
 * El Adobe recomienda crear un proyecto de traducción después de crear un formulario adaptable.
 
 * Cuando se agregan campos nuevos en un formulario adaptable existente:
-   * **Para traducción automática**: vuelva a crear el diccionario y ejecute el proyecto de traducción. Los campos añadidos a un formulario adaptable después de crear un proyecto de traducción permanecen sin traducir.
-   * **Para traducción humana**: exporte el diccionario a través de `[server:port]/libs/cq/i18n/gui/translator.html`. Actualice el diccionario de los campos recién añadidos y cárguelo.
+   * **Para traducción automática**[: vuelva a crear el diccionario y ejecute el proyecto de traducción](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Los campos añadidos a un formulario adaptable después de crear un proyecto de traducción permanecen sin traducir.
+   * **Para traducción humana**: exporte el diccionario mediante la interfaz de usuario de `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Actualice el diccionario de los campos recién añadidos y cárguelo.
+
+## Ver más
+
+* [Utilizar la traducción automática o la traducción humana para traducir un formulario adaptable basado en componentes principales](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Generar documento de registro para Formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
+* [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 
