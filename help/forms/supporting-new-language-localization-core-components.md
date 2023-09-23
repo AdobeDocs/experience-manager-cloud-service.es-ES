@@ -1,10 +1,10 @@
 ---
 title: Cómo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes principales
 description: Aprenda a agregar nuevas configuraciones regionales para un formulario adaptable.
-source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
+source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 31%
+source-wordcount: '1254'
+ht-degree: 22%
 
 ---
 
@@ -163,25 +163,6 @@ Realice los siguientes pasos para previsualizar un formulario adaptable con la c
 1. Seleccione un formulario adaptable y haga clic en **Previsualizar como HTML**.
 1. Añada `&afAcceptLang=<locale-name>` en la URL de un formulario adaptable.
 1. Actualice la página y el formulario adaptable se procesará en la configuración regional especificada.
-
-Existen dos métodos para identificar la configuración regional de un formulario adaptable. Cuando se procesa un formulario adaptable, este identifica la configuración regional solicitada de las siguientes formas:
-
-* Recuperando el selector `[local]` en la URL del formulario adaptable. El formato de la URL es el siguiente `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. El uso del selector `[local]` permite almacenar en caché un formulario adaptable.
-
-* Recuperando los siguientes parámetros en el orden indicado:
-
-   * Parámetro de solicitud `afAcceptLang`
-Para anular la configuración regional del explorador de los usuarios, puede pasar el `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obliga a procesar el formulario en la configuración regional francés canadiense:
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
-
-   * La configuración regional del explorador establecida para el usuario, que se especifica en la solicitud utilizando el encabezado `Accept-Language`.
-
-Si no existe una biblioteca de cliente para la configuración regional solicitada, se busca una biblioteca de cliente para el código de idioma presente en la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (inglés sudafricano) y la biblioteca de cliente `en_ZA` no existe, el formulario adaptable utiliza la biblioteca de cliente del idioma `en` (inglés), si existe. Sin embargo, si no existe ninguna biblioteca, el formulario adaptable utiliza el diccionario de la configuración regional `en`.
-
-Una vez identificada la configuración regional, el formulario adaptable elige el diccionario específico del formulario. Si no se encuentra el diccionario específico del formulario para la configuración regional solicitada, utiliza el diccionario del idioma en el que se crea el formulario adaptable.
-
-Si no hay información de configuración regional disponible, el formulario adaptable se muestra en su idioma original, el idioma utilizado durante el desarrollo de los formularios.
-
 
 ## Prácticas recomendadas para la compatibilidad con localización nueva {#best-practices}
 
