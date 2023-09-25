@@ -2,7 +2,7 @@
 title: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 description: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9212042db782dc413b64d40ebde096c12d754f97
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 19%
@@ -49,7 +49,7 @@ La fórmula general para calcular el espacio libre necesario en disco es la sigu
    * *tamaño del almacén de nodos*: el tamaño del directorio del almacén de segmentos o el tamaño de la base de datos MongoDB.
 Por lo tanto, para un tamaño de almacén de segmentos de 20 GB, el espacio libre requerido en disco sería de 94 GB.
 
-* Es necesario mantener un conjunto de migración a lo largo de la actividad de transferencia de contenido para admitir recargas de contenido. Se puede crear y mantener un máximo de cinco conjuntos de migración por proyecto en Cloud Acceleration Manager a la vez durante la actividad de transferencia de contenido. Si se necesitan más de cinco conjuntos de migración, deberá crear un segundo proyecto en Cloud Acceleration Manager. Sin embargo, esto requerirá una administración de proyectos adicional y un control fuera del producto para evitar que varios usuarios sobrescriban contenido en el destino.
+* Es necesario mantener un conjunto de migración a lo largo de la actividad de transferencia de contenido para admitir recargas de contenido. Se puede crear y mantener un máximo de veinte conjuntos de migración por proyecto en Cloud Acceleration Manager a la vez durante la actividad de transferencia de contenido. Si se necesitan más de veinte conjuntos de migración, deberá crear un segundo proyecto en Cloud Acceleration Manager. Sin embargo, esto requerirá una administración de proyectos adicional y un control fuera del producto para evitar que varios usuarios sobrescriban contenido en el destino.
 
 * Evite alterar el directorio de instalación de la herramienta CTT. De forma predeterminada, la instalación se realiza en la ruta crx-quickstart/cloud-migration. Otras bibliotecas utilizan internamente esta ubicación específica. Modificar esta ruta puede provocar problemas de extracción.
 

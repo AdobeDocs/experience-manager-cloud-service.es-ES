@@ -2,7 +2,7 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Obtenga información sobre cómo empezar a utilizar la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7de874f607c98501052ddb715c4af98f6c5d5324
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 21%
@@ -86,7 +86,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
    >[!NOTE]
    >
-   >Se puede crear un máximo de cinco conjuntos de migración, incluidos conjuntos caducados, por proyecto en Cloud Acceleration Manager.
+   >Se puede crear un máximo de veinte conjuntos de migración, incluidos conjuntos caducados, por proyecto en Cloud Acceleration Manager.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 

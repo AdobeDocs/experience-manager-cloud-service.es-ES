@@ -2,10 +2,10 @@
 title: Información general sobre la herramienta de transferencia de contenido
 description: AEM AEM Aprenda a utilizar la herramienta de transferencia de contenido para transferir contenido de una instancia de transferencia de contenido local a una instancia de as a Cloud Service de la aplicación
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 57%
+ht-degree: 54%
 
 ---
 
@@ -47,7 +47,7 @@ Existen dos fases asociadas con la transferencia de contenido:
 
 El conjunto de migración tiene los siguientes atributos:
 
-* Con la nueva versión, puede crear un máximo de cinco conjuntos de migración dentro de un proyecto creado en Cloud Acceleration Manager.
+* Con la nueva versión, puede crear un máximo de veinte conjuntos de migración dentro de un proyecto creado en Cloud Acceleration Manager.
 * Cada conjunto de migración debe tener un nombre exclusivo.
 
 La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior.
