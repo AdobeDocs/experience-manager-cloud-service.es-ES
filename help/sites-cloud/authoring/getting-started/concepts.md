@@ -2,12 +2,13 @@
 title: Conceptos de creación
 description: AEM Aprenda los conceptos de creación en entornos de creación, publicación y previsualización de, usando el autor.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 96%
 
 ---
+
 
 # Conceptos de creación {#authoring-concepts}
 
@@ -26,6 +27,8 @@ El entorno de creación ofrece mecanismos para crear, actualizar y revisar el co
 ![Diagrama del creador, el editor y los distribuidores](/help/sites-cloud/authoring/assets/author-publish.png)
 
 En el entorno de creación, las funcionalidades de AEM están disponibles mediante la interfaz de usuario de creación de AEM. Desde el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
+
+{{edge-delivery-authoring}}
 
 ## Entorno de creación {#author-environment}
 

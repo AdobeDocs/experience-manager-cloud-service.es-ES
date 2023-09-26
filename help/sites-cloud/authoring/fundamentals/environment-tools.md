@@ -2,16 +2,19 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 96%
 
 ---
 
+
 # Herramientas y entorno de creación {#authoring-the-environment-and-tools}
 
 El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y consolas.
+
+{{edge-delivery-authoring}}
 
 ## Administración del sitio {#managing-your-site}
 

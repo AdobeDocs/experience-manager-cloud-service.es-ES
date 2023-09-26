@@ -4,16 +4,19 @@ description: Descubra cómo los administradores utilizan AEM para crear un nuevo
 feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 100%
 
 ---
 
+
 # Crear un nuevo canal {#new-site}
 
 Descubra cómo los administradores utilizan AEM para crear un nuevo sitio mediante plantillas de sitio para definir el estilo y la estructura del sitio.
+
+{{edge-delivery-authoring}}
 
 ## Información general {#overview}
 

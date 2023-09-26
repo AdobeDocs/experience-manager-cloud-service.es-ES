@@ -2,12 +2,13 @@
 title: Crear y organizar páginas
 description: AEM Aprenda a organizar el sitio web creando y administrando páginas con la ayuda de los usuarios de la página de inicio de sesión de.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2543'
 ht-degree: 99%
 
 ---
+
 
 # Crear y organizar páginas {#creating-and-organizing-pages}
 
@@ -26,6 +27,8 @@ En este documento se describe cómo crear y administrar páginas con Adobe Exper
 >[!TIP]
 >
 >Existen varios [métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) que puede utilizar desde la consola de sitios web, y que le permitirán organizar las páginas de forma más eficaz.
+
+{{edge-delivery-authoring}}
 
 ## Organizar el sitio web {#organizing-your-website}
 

@@ -2,12 +2,13 @@
 title: Gestión básica
 description: Familiarícese con la navegación por AEM y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 98%
 
 ---
+
 
 # Gestión básica {#basic-handling}
 
@@ -17,6 +18,8 @@ Este documento se ha diseñado para ofrecer una descripción general de la gesti
 >
 >* Algunas funcionalidades no están disponibles en todas las consolas y es posible que otras adicionales estén disponibles en algunas consolas. En otras páginas se ofrece información específica sobre las consolas individuales y su funcionalidad relacionada.
 >* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) y [al editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+{{edge-delivery-authoring}}
 
 ## Una interfaz con capacidad táctil {#a-touch-enabled-ui}
 
