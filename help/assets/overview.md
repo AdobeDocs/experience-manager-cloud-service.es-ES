@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 97%
+source-wordcount: '825'
+ht-degree: 88%
 
 ---
 
@@ -52,6 +52,12 @@ Los bibliotecarios, desarrolladores y superusuarios de DAM pueden seguir utiliza
 ![add-tags](assets/newui-overview.svg)
 
 Para obtener información sobre cómo acceder a la vista Recursos y algunas de las simplificaciones que ofrece a través de la vista Administración, consulte [Introducción a la vista de recursos](/help/assets/assets-view-introduction.md).
+
+## Integración con la creación basada en documentos para Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
+
+Edge Delivery permite crear sitios web atractivos y rápidos donde los autores pueden actualizar y publicar contenido rápidamente y se pueden iniciar nuevos sitios rápidamente.
+
+Integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web utilicen las imágenes disponibles en repositorios de AEM Assets durante la creación de documentos en Microsoft Word o Google Docs. Para obtener más información, consulte [Integración de AEM Assets con la creación basada en documentos](/help/edge/using.md#integrate-assets-edge).
 
 ## Nuevas funcionalidades de Recursos {#whats-new-assets}
 
