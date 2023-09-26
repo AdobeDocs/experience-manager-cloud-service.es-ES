@@ -1,17 +1,17 @@
 ---
 title: Configuración del entorno de la cuenta
-description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
+description: Adobe Experience Manager AEM () permite configurar la cuenta y ciertos elementos del entorno de creación.
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '488'
-ht-degree: 100%
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 60%
 
 ---
 
 # Configuración del entorno de la cuenta   {#configuring-your-account-environment}
 
-AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
+Adobe Experience Manager AEM () permite configurar la cuenta y ciertos elementos del entorno de creación.
 
 Mediante la opción [Usuario](#user-settings) del [encabezado](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) y el cuadro de diálogo [Mis preferencias](#my-preferences) asociado, puede modificar las opciones de usuario.
 
@@ -24,7 +24,7 @@ El cuadro de diálogo de configuración **Usuario** le da acceso a lo siguiente:
 * Suplantar como
    * Con la función Suplantar como, un usuario puede trabajar en nombre de otro usuario. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * Perfil
-   * Ofrece un práctico vínculo a la configuración de usuario<!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->.
+   * Ofrece un práctico vínculo a la configuración del usuario <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [Mis preferencias](#my-preferences)
    * Especifique las distintas preferencias exclusivas al usuario 
 
@@ -32,9 +32,9 @@ El cuadro de diálogo de configuración **Usuario** le da acceso a lo siguiente:
 
 ### Mis preferencias {#my-preferences}
 
-Puede acceder al cuadro de diálogo **Preferencias** a través de la opción [Usuario](#user-settings) en el encabezado.
+El **Mis preferencias** se accede al cuadro de diálogo a través del [Usuario](#user-settings) en el encabezado.
 
-Cada usuario puede establecer determinadas propiedades para sí mismo. 
+Cada usuario puede establecer sus propias propiedades preferidas.
 
 ![Mis preferencias](/help/sites-cloud/authoring/assets/user-preferences.png)
 
@@ -56,18 +56,18 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
 * **Mostrar las acciones del escritorio para Assets**
 
-  Esta opción requiere la utilización de la aplicación de escritorio de AEM.
+  AEM Esta opción requiere que utilice la aplicación de escritorio de la aplicación de.
 
 * **Color de anotación**
 
   Define el color predeterminado que se utiliza para realizar anotaciones.
 
-   * Haga clic en el bloque de color para abrir el selector de muestras y seleccionar un color.
+   * Haga clic en el bloque de colores para poder abrir el selector de muestras y seleccionar un color.
    * Como alternativa, introduzca el código hexadecimal del color deseado en el campo. 
 
 * **Presentación de fecha relativa**
 
-  Para mejorar la legibilidad, AEM procesará las fechas dentro de los últimos siete días como fechas relativas (por ejemplo, hace tres días) y las fechas más antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
+  AEM Para mejorar la legibilidad, la función procesa las fechas dentro de los últimos siete días como fechas relativas (por ejemplo, hace tres días) y las fechas más antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
 
   Esta opción define el modo en que se muestran las fechas del sistema. Las opciones disponibles son las siguientes:
 
@@ -80,12 +80,12 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
 * **Habilitar métodos abreviados**
 
-  AEM admite varios métodos abreviados del teclado para mejorar la eficiencia de la creación de contenido.
+  AEM La creación de formularios es compatible con varios métodos abreviados de teclado que hacen que la creación sea más eficaz.
 
    * [Métodos abreviados del teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Métodos abreviados del teclado para las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-  Esta opción habilita los métodos abreviados de teclado. De manera predeterminada, los métodos abreviados están habilitados, pero se pueden deshabilitar; por ejemplo, si un usuario tiene determinados requisitos de accesibilidad.
+  Esta opción habilita los métodos abreviados de teclado. De forma predeterminada, están habilitadas, pero se pueden deshabilitar, por ejemplo, si un usuario tiene ciertos requisitos de accesibilidad.
 
 * **Activar la página principal de los recursos**
 
@@ -93,4 +93,4 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
 * **Configuración de Stock**
 
-  Esta opción permite especificar la configuración preferida de Adobe Stock y solo está disponible si el administrador del sistema ha activado la [integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Esta opción le permite especificar la configuración preferida de Adobe Stock y solo está disponible si el administrador del sistema ha activado [Integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

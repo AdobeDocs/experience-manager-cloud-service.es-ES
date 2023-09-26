@@ -4,16 +4,16 @@ description: Obtenga información sobre cómo administrar y resolver conflictos 
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 94%
+ht-degree: 63%
 
 ---
 
 # Despliegue de conflictos {#msm-rollout-conflicts}
 
-Pueden producirse conflictos si se crean nuevas páginas con el mismo nombre en la rama del modelo y en una rama de Live Copy dependiente. Estos conflictos deben manejarse y resolverse en el momento del despliegue.
+Pueden producirse conflictos si se crean nuevas páginas con el mismo nombre en la rama del modelo y en una rama de Live Copy dependiente. Estos conflictos deben gestionarse y resolverse en el momento del despliegue.
 
 ## Gestión de conflictos {#conflict-handling}
 
@@ -21,17 +21,17 @@ Cuando existen páginas en conflicto (en las ramas de modelo y Live Copy), MSM l
 
 Para garantizar que el despliegue no esté bloqueado, las definiciones posibles pueden incluir las siguientes:
 
-* Qué página (modelo o Live Copy) tendrá prioridad durante el despliegue
+* Qué página (modelo o Live Copy) tiene prioridad durante el despliegue
 * Qué páginas se cambian de nombre y cómo
-* Cómo afectará esto a cualquier contenido publicado
+* Cómo afecta esto a cualquier contenido publicado
 
-El comportamiento predeterminado de AEM es que el contenido publicado no se verá afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, dicho contenido se publicará después de la gestión y el despliegue del conflicto.
+El comportamiento predeterminado de Adobe Experience Manager AEM () es que el contenido publicado no se ve afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, ese contenido se publica después de la gestión y el despliegue del conflicto.
 
 Además de la funcionalidad estándar, se pueden agregar controladores de conflicto personalizados para implementar distintas reglas. También pueden permitir acciones de publicación como un proceso individual.
 
 ### Escenario de ejemplo {#example-scenario}
 
-En las secciones siguientes utilizamos el ejemplo de la página nueva `b`, creada tanto en el modelo como en la rama de Live Copy (creada manualmente), para ilustrar los distintos métodos de resolución de conflictos:
+En las secciones siguientes, se muestra un ejemplo de una página nueva `b` se utiliza, creado tanto en el modelo como en la rama de Live Copy (creada manualmente), para ilustrar los distintos métodos de resolución de conflictos:
 
 * modelo: `/b`
 
@@ -77,9 +77,9 @@ AEM proporciona lo siguiente:
 El controlador de conflictos predeterminado es `ResourceNameRolloutConflictHandler`
 
 * Con este controlador, la página de modelo tiene prioridad.
-* La clasificación de servicio de este controlador se establece en un nivel bajo, es decir, por debajo del valor predeterminado para la propiedad `service.ranking`, ya que se supone que los controladores personalizados necesitarán una clasificación más alta. Sin embargo, la clasificación no está al nivel mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
+* La clasificación de servicio de este controlador se ha establecido en un nivel bajo. Es decir, por debajo del valor predeterminado para `service.ranking` porque se supone que los controladores personalizados necesitan una clasificación más alta. Sin embargo, la clasificación no está al nivel mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
 
-Este controlador de conflictos da prioridad al modelo. Por ejemplo, la página de Live Copy `/b` se mueve dentro de la rama de Live Copy a `/b_msm_moved`.
+Este controlador de conflictos da prioridad al modelo. Por ejemplo, la página Live Copy `/b` se mueve dentro de la rama de Live Copy a `/b_msm_moved`.
 
 * Live Copy: `/b`
 
@@ -98,7 +98,7 @@ Este controlador de conflictos da prioridad al modelo. Por ejemplo, la página d
 |  | Modelo después del despliegue | Live Copy después del despliegue | Live Copy después del despliegue | Publicación después del despliegue |
 |---|---|---|---|---|
 | Value | `b` | `b` | `b_msm_moved` | `b` |
-| Comentar |  | Tiene el contenido de la página de modelo `b` que se desplegó | Tiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy | Sin cambios, contiene el contenido de la página original `b` que se creó manualmente en la rama de Live Copy y ahora se llama `b_msm_moved` |
+| Comentar |  | Tiene el contenido de la página de modelo `b` que se desplegó | Tiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy | Sin cambios; contiene el contenido de la página original `b` que se creó manualmente en la rama de Live Copy y ahora se llama `b_msm_moved` |
 | Value | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Comentar |  |  | Sin cambios | Sin cambios |
 
@@ -111,7 +111,7 @@ Los controladores de conflictos personalizados pueden hacer lo siguiente:
 * Nombrarse según sus necesidades.
 * Desarrollarse/configurarse según sus necesidades.
    * Por ejemplo, puede desarrollar un controlador para que la página Live Copy tenga prioridad.
-* Se puede diseñar para que se configure usando la [Configuración OSGi](/help/implementing/deploying/configuring-osgi.md). En particular:
+* Se puede configurar utilizando la variable [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md). En particular:
    * La **clasificación de servicios** define el orden relacionado con otros controladores de conflictos (`service.ranking`).
       * El valor predeterminado es `0`.
 
@@ -127,19 +127,19 @@ En este caso, Live Copy tiene prioridad. La página de modelo `/b` no se copia y
 
 * Modelo: `/b`
 
-  No se copia en absoluto y se ignora.
+  No se copia en absoluto, pero se ignora.
 
 * Live Copy: `/b`
 
-  Permanece igual.
+  Sigue siendo el mismo.
 
 #### Después del despliegue {#after-rollout-no-conflict}
 
 |  | Modelo después del despliegue | Live Copy después del despliegue | Publicación después del despliegue |
 |---|---|---|---|
 | Value | `b` | `b` | `b` |
-| Comentar |  | Sin cambios, tiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy | Sin cambios, contiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy |
-| Value | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
+| Comentar |  | Sin cambios; tiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy | Sin cambios; contiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy |
+| Value | `/bp-level-1,` | `/lc-level-1` | `/lc-level-1` |
 | Comentar |  | Sin cambios | Sin cambios |
 
 ### Clasificación de servicios {#service-rankings}
