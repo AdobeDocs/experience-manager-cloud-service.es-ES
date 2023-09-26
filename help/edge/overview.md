@@ -1,7 +1,7 @@
 ---
 title: Introducción a los Edge Delivery Services
-description: Introducción a los Edge Delivery Services
-source-git-commit: 22a3795340add4ae29ec690b41baef96e8fb4adc
+description: Introducción a los Edge Delivery Services.
+source-git-commit: 6334efceb9abae560ae77c133df1a70ffb438e6a
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -27,7 +27,7 @@ El diagrama siguiente ilustra cómo se puede editar contenido en Microsoft Word 
 
 Edge Delivery es un conjunto de servicios componibles que permiten un alto grado de flexibilidad en la forma en que se crea contenido en el sitio web. Como se mencionó anteriormente, puede utilizar ambos [AEM creación de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) y [creación basada en documentos](https://www.hlx.live/docs/authoring).
 
-Por ejemplo, puede utilizar contenido directamente desde documentos de Microsoft Word o Google. Esto significa que los documentos de esas fuentes pueden convertirse en páginas del sitio web. Además, los encabezados, las listas, las imágenes y los elementos de fuente se pueden transferir desde la fuente inicial al sitio web. El nuevo contenido se añadirá instantáneamente sin un proceso de reconstrucción.
+Por ejemplo, puede utilizar contenido directamente desde Microsoft Word o Google Docs. Esto significa que los documentos de esas fuentes pueden convertirse en páginas del sitio web. Además, los encabezados, las listas, las imágenes y los elementos de fuente se pueden transferir desde la fuente inicial al sitio web. El nuevo contenido se añadirá instantáneamente sin un proceso de reconstrucción.
 
 Edge Delivery aprovecha GitHub para que los clientes puedan administrar e implementar código directamente desde su repositorio de GitHub. Por ejemplo, puede escribir contenido en Google Docs o en Microsoft Word, y la funcionalidad del sitio se puede desarrollar mediante CSS y JavaScript en GitHub Cuando esté listo, puede utilizar la extensión del explorador Sidekick para previsualizar y publicar actualizaciones de contenido.
 
