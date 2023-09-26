@@ -3,9 +3,9 @@ title: Creación de fragmentos de contenido
 description: Obtenga información sobre cómo crear contenido para los fragmentos de contenido y, a continuación, crear variaciones de ese contenido según el propósito. Esto proporciona una mayor flexibilidad para la entrega sin encabezado y la creación de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2227'
 ht-degree: 4%
 
 ---
@@ -484,7 +484,7 @@ El **Campos** el panel enumera todos los campos del fragmento de contenido. El i
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Marcador de posición de pestaña</b></p><p>Aunque no se representa mediante un icono real, una variable <b>Marcador de ficha</b> se representa en el panel izquierdo, así como en el panel central.</p> </td>
+   <td><p><b>Marcador de posición de pestaña</b></p><p>Aunque no se representa mediante un icono real, una variable <b>Marcador de ficha</b> se representa en el panel izquierdo. <br>También se representa en el panel central, ya sea horizontalmente como se muestra o en una lista desplegable (cuando hay demasiados para mostrar horizontalmente).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
