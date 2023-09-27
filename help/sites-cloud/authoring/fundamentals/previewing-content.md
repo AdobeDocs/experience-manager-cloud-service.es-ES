@@ -2,10 +2,10 @@
 title: Vista previa del contenido
 description: Aprenda a utilizar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '274'
-ht-degree: 100%
+source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 86%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 100%
 AEM ofrece un servicio de vista previa de Sites que permite a los desarrolladores y autores de contenido previsualizar la experiencia final de un sitio web antes de que llegue al entorno de publicación y esté disponible de manera pública.
 
 Facilita la previsualización de experiencias de página que, de otra manera, no serían visibles desde el entorno de creación, como transiciones de página y otro contenido solo de publicación.
+
+>[!NOTE]
+>
+>Tal como está el contenido *publicado* AEM Al entorno de vista previa, se puede acceder mediante una dirección URL (por lo que no necesita acceder a la dirección URL de la página de acceso a la página de acceso a la página).
 
 Para obtener más información acerca de los entornos de vista previa, consulte el documento [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
@@ -31,6 +35,9 @@ Puede publicar contenido en el servicio de vista previa utilizando la IU **Publi
 
 1. Un cuadro de diálogo mostrará las direcciones URL para acceder al contenido en el entorno de vista previa.
 
+   >[!NOTE]
+   >
+   >Tal como está el contenido *publicado* AEM Al entorno de vista previa, se puede acceder mediante una dirección URL (por lo que no necesita acceder a la dirección URL de la página de acceso a la página de acceso a la página).
 
 Como alternativa, para usar las direcciones URL mostradas en el asistente para ver el contenido de vista previa, también puede anteponer `preview-` a la URL de publicación de la instancia de producción.
 
