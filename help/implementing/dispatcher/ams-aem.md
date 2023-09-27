@@ -3,7 +3,7 @@ title: Migración de la configuración de Dispatcher de AMS a AEM as a Cloud Ser
 description: Migración de la configuración de Dispatcher de AMS a AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 24c6e5e78e3e1b30e4becfad2f4f6e57e75ad4e9
 workflow-type: tm+mt
 source-wordcount: '1451'
 ht-degree: 18%
@@ -105,7 +105,7 @@ Elimine cualquier archivo de granja en `conf.dispatcher.d/enabled_farms` que tie
 
 ### Cambiar el nombre de los archivos
 
-Todas las granjas en `conf.d/enabled_farms` debe cambiarse el nombre para que coincida con el patrón `*.farm`, por ejemplo, un archivo de granja llamado `customerX_farm.any` debería cambiarse el nombre `customerX.farm`.
+Todas las granjas en `conf.dispatcher.d/enabled_farms` debe cambiarse el nombre para que coincida con el patrón `*.farm`, por ejemplo, un archivo de granja llamado `customerX_farm.any` debería cambiarse el nombre `customerX.farm`.
 
 ### Compruebe la caché
 
