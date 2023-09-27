@@ -2,10 +2,10 @@
 title: Introducción al Recorrido de incorporación a AEM as a Cloud Service
 description: Comience aquí para obtener una descripción general del recorrido guiado a través del proceso de incorporación para AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
+source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 96%
+source-wordcount: '1221'
+ht-degree: 95%
 
 ---
 
@@ -86,7 +86,7 @@ Los siguientes artículos describen en detalle los conceptos básicos de incorpo
 
 >[!NOTE]
 >
->Edge Delivery Services es un nuevo conjunto de servicios componibles que permiten un entorno de desarrollo rápido en el que los autores pueden actualizar y publicar rápidamente y en el que los nuevos sitios se inician rápidamente. Para obtener más información acerca de los servicios de entrega de Edge, consulte la [Página de introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
+>Edge Delivery Services es un nuevo conjunto de servicios componibles que permiten un entorno de desarrollo rápido y flexible en el que los autores pueden actualizar y publicar rápidamente y en el que los nuevos sitios se inician rápidamente. Para obtener más información acerca de los servicios de entrega de Edge, consulte la [Página de introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## Siguientes pasos {#what-is-next}
 
