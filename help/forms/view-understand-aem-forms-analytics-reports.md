@@ -5,7 +5,7 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Al capturar y rastrear los indicadores de rendimiento clave, las empresas pueden
 
 ## Configuración de Adobe Analytics en Forms adaptable {#setup-adobe-analytics-to-aem-forms}
 
-Para el informe de AEM Forms Analytics, primero debe integrar Adobe Analytics en AEM Forms mediante la automatización de la configuración del Experience Cloud. La automatización de la configuración de Experience Cloud en Forms adaptable requiere una licencia de Adobe Analytics, recopilación de datos (anteriormente, Adobe Launch) para administrar los scripts de seguimiento e integración con la API de Experience Platform Launch para optimizar la agregación de datos y la generación de perspectivas. Visita [Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud](/help/forms/forms-experience-cloud-setup-automation.md) para obtener información completa sobre la configuración.
+Para el informe de AEM Forms Analytics, primero debe integrar Adobe Analytics en AEM Forms mediante la automatización de la configuración del Experience Cloud. La automatización de la configuración de Experience Cloud en Forms adaptable requiere una licencia de Adobe Analytics, recopilación de datos (anteriormente, Adobe Launch) para administrar los scripts de seguimiento e integración con la API de Experience Platform Launch para optimizar la agregación de datos y la generación de perspectivas. Visita [Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) para obtener información completa sobre la configuración.
 
 ## Ver informe de Adobe Analytics de Forms adaptable {#view-adobe-analytics-report}
 

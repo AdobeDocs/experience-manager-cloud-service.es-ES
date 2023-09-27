@@ -3,7 +3,7 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 407afc27911c507d3662fa4897b29e8187bbec7a
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 15%
@@ -116,7 +116,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * [**Soporte empresarial de Google reCAPTCHA**](/help/forms/captcha-adaptive-forms-core-components.md): utilice Google reCAPTCHA Enterprise en un formulario adaptable para proporcionar una protección mejorada contra la actividad fraudulenta y el correo no deseado, lo que ofrece una experiencia de usuario más segura. Con un análisis de riesgo avanzado y una integración perfecta, los usuarios genuinos pueden enviar fácilmente formularios mientras los bots están bloqueados de manera efectiva.
 
-* [**Adobe Analytics con automatización de la configuración de Experience Cloud para Forms**](/help/forms/forms-experience-cloud-setup-automation.md): Ahora puede habilitar Adobe Analytics con la automatización de la configuración de Experience Cloud con un par de botones. Permite conectar AEM Forms as a Cloud Service con etiquetas de Experience Platform y Adobe Analytics para capturar y realizar un seguimiento de las métricas de rendimiento de los formularios publicados.
+* [**Adobe Analytics con automatización de la configuración de Experience Cloud para Forms**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): Ahora puede habilitar Adobe Analytics con la automatización de la configuración de Experience Cloud con un par de botones. Permite conectar AEM Forms as a Cloud Service con etiquetas de Experience Platform y Adobe Analytics para capturar y realizar un seguimiento de las métricas de rendimiento de los formularios publicados.
 
 * [**Plantilla de informe de Adobe Analytics para Forms adaptable**](/help/forms/view-understand-aem-forms-analytics-reports.md): Forms as a Cloud Service ahora proporciona un informe OOTB de Adobe Analytics. Le ayuda a comprender fácilmente el rendimiento de sus formularios. Las métricas de nivel de formulario proporcionan una perspectiva del rendimiento del formulario en varios indicadores clave de rendimiento (KPI) como, representaciones, visitantes, envíos o tiempo medio de cumplimentación. Al realizar un seguimiento del comportamiento y los comentarios de los usuarios, se pueden identificar las áreas del formulario que causan confusión y guiar las mejoras en el diseño y la funcionalidad del formulario.
 
