@@ -2,10 +2,10 @@
 title: Introducción al Recorrido de incorporación a AEM as a Cloud Service
 description: Comience aquí para obtener una descripción general del recorrido guiado a través del proceso de incorporación para AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
-workflow-type: ht
-source-wordcount: '1172'
-ht-degree: 100%
+source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
+workflow-type: tm+mt
+source-wordcount: '1220'
+ht-degree: 96%
 
 ---
 
@@ -83,6 +83,10 @@ Los siguientes artículos describen en detalle los conceptos básicos de incorpo
 | 8 | [Asignar perfiles de producto de AEM](assign-profiles-aem.md) | Descubra cómo el administrador del sistema asigna los integrantes del equipo a los perfiles de producto en AEM as a Cloud Service. | Administrador del sistema |
 | 9 | [Tareas del desarrollador y del administrador de implementación](developers.md) | Opcional: Aprenda, como Desarrollador, cómo puede acceder a Git de Cloud Manager y administrarlo y, como Administrador de implementación, cómo puede configurar canalizaciones e implementar código en Cloud Manager. | Desarrolladores y administradores de implementación |
 | 10 | [Tareas del usuario de AEM](aem-users.md) | Opcional: Aprenda, como autor de AEM, cómo puede acceder a la instancia de AEM as a Cloud Service y familiarizarse con la creación de contenido para AEM as a Cloud Service. | Usuarios de AEM  |
+
+>[!NOTE]
+>
+>Edge Delivery Services es un nuevo conjunto de servicios componibles que permiten un entorno de desarrollo rápido en el que los autores pueden actualizar y publicar rápidamente y en el que los nuevos sitios se inician rápidamente. Para obtener más información acerca de los servicios de entrega de Edge, consulte la [Página de introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## Siguientes pasos {#what-is-next}
 
