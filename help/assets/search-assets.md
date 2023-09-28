@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
+source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
 workflow-type: tm+mt
-source-wordcount: '5532'
-ht-degree: 7%
+source-wordcount: '5561'
+ht-degree: 6%
 
 ---
 
@@ -46,12 +46,26 @@ Utilice el **[!UICONTROL Filtros]** panel para buscar recursos, carpetas, etique
 ## Comprender la interfaz de búsqueda de recursos {#searchui}
 
 Familiarícese con la interfaz de búsqueda de recursos y las acciones disponibles.
-
-![Comprender la interfaz de resultados de búsqueda de Experience Manager Assets](assets/aem_search_results.png)
-
+<!--
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
+-->
+![Comprender la interfaz de resultados de búsqueda de Experience Manager Assets](assets/aem-search-interface.png)
 *Figura: Comprender [!DNL Experience Manager Assets] interfaz de resultados de búsqueda.*
 
-**A.** Guarde la búsqueda como una colección inteligente. **B.** Filtros o predicados para reducir los resultados de búsqueda. **C.** Muestra archivos, carpetas o ambos. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F..** Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Seleccione los resultados de búsqueda cargados. **H..** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **YO.** Cierre la búsqueda. **J.** Cambiar entre la vista de tarjeta y la vista de lista.
+**A.** Guarde la búsqueda como una colección inteligente.
+**B.** Filtros o predicados para reducir los resultados de búsqueda.
+**C.** Muestra archivos, carpetas o ambos.
+**D.** La ubicación de búsqueda es DAM.
+**E.** Acceder a búsquedas guardadas.
+**F..** Haga clic en Filtros para abrir o cerrar el carril izquierdo.
+**G.** Muestra los recursos como búsqueda predeterminada.
+**H..** La ubicación de búsqueda es DAM.
+**YO.** Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario.
+**J.** Seleccione los resultados de búsqueda cargados.
+**K.** Ordene por Creado, Modificado, Nombre, Ninguno.
+**L.** Ordene por orden ascendente o descendente.
+**M.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **N.** Cierre la búsqueda.
+**O.** Cambiar entre la vista de tarjeta y la vista de lista.
 
 ### Facetas de búsqueda dinámica {#dynamicfacets}
 
@@ -160,7 +174,10 @@ Para configurar el tamaño del lote de recursos:
 
 **Buscar recursos dentro de una carpeta**: puede limitar la búsqueda a una carpeta específica. En el **[!UICONTROL Filtros]** panel, añadir ruta de una carpeta. Solo puede seleccionar una carpeta a la vez.
 
-![Limite los resultados de búsqueda a una carpeta agregando una ruta de carpeta en el panel Filtros](assets/search_folder_select.gif)
+![Limite los resultados de búsqueda a una carpeta agregando una ruta de carpeta en el panel Filtros](assets/limiting-search.gif)
+<!--
+![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *Imagen: limitar los resultados de búsqueda a una carpeta añadiendo una ruta de carpeta en el panel Filtros.*
 
@@ -277,7 +294,9 @@ Pase los siguientes parámetros de solicitud en una URL para iniciar el selector
 
 Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server]:[port]/aem/assetpicker`. Vaya a la carpeta deseada y seleccione uno o varios recursos. También puede buscar el recurso deseado en el cuadro Omnisearch, aplicar un filtro según sea necesario y, a continuación, seleccionarlo.
 
-![Busque y seleccione un recurso en el selector de recursos](assets/assetpicker.png)
+![Busque y seleccione un recurso en el selector de recursos](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *Imagen: busque y seleccione un recurso en el selector de recursos.*
 
