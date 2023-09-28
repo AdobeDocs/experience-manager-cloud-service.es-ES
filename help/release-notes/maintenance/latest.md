@@ -2,7 +2,7 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b147c80581bcb554ae0b4ac971c5f98e7160d1df
+source-git-commit: c62ae58240298604e6cd7737678603eb734434b3
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 8%
@@ -94,15 +94,9 @@ La activación de funciones 2023.10.0 proporciona el conjunto completo de funcio
 * FORMS-10248: en Forms adaptable basado en componentes principales, configurar el valor de un botón de opción o de una casilla de verificación cuando el tipo de valor de datos es booleano no funciona como se esperaba.
 * FORMS-8114: El selector de fechas y el patrón no se leen correctamente en el lector de pantalla NVDA. En concreto, cuando se utiliza el lector de pantalla NVDA, el selector de fechas sin patrón se lee correctamente. Sin embargo, cuando se aplica un patrón al selector de fechas, se lee como una tabla en lugar de interpretarse correctamente.
 
-
-
-
-
-
-
 ### Problemas conocidos {#known-issues-13665}
 
-Ninguno
+Ninguna.
 
 ### Tecnologías integradas {#embedded-tech-13665}
 
