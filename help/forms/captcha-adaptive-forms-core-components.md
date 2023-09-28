@@ -2,19 +2,16 @@
 title: Uso de Google AEM reCAPTCHA en un formulario adaptable con un tipo de datos de
 description: Mejore la seguridad de los formularios con el servicio reCAPTCHA de Google sin esfuerzo. Guía paso a paso en el interior!
 topic-tags: Adaptive Forms, author
-hide: true
-hidefromtoc: true
-Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+keywords: Servicio reCAPTCHA de Google, Forms adaptable, desafío CAPTCHA, prevención de bots, componentes principales, seguridad de envío de formularios, prevención de correo no deseado de formularios
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '945'
 ht-degree: 19%
 
 ---
 
-# Usar Google AEM reCAPTCHA en un formulario adaptable de forma basado en componentes principales {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestra [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+# Usar Google AEM reCAPTCHA en un formulario adaptable de forma basado en componentes principales {#using-reCAPTCHA-in-adaptive-forms}
 
 | Se aplica a | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -54,13 +51,9 @@ Para conectar su entorno de AEM Forms con el servicio reCAPTCHA de Google
    1. Seleccione un contenedor de configuración, creado o actualizado en la sección anterior. Pulse **[!UICONTROL Crear]**.
    1. Especificar **[!UICONTROL Título]**, **[!UICONTROL Nombre]**, **[!UICONTROL Clave del sitio]**, y **[!UICONTROL Clave secreta]** para el servicio reCAPTCHA (obtenido en el paso 1). Pulse **[!UICONTROL Crear]**.
 
-
    ![Configure el Cloud Service para que conecte su entorno de AEM Forms con el servicio reCAPTCHA de Google](/help/forms/assets/captcha-configuration.gif)
 
-
-
    Una vez configurado el servicio reCAPTCHA, estará disponible para su uso en un formulario adaptable. Para obtener más información, consulte [usar Google reCAPTCHA en un formulario adaptable](#using-reCAPTCHA).
-
 
 ## Uso de Google reCAPTCHA en un formulario adaptable {#using-reCAPTCHA}
 

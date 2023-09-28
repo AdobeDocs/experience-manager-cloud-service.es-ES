@@ -7,17 +7,16 @@ keywords: Añadir un controlador de errores personalizado, añadir un controlado
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 963fcbe1e333dd6e0540e29ea150881826a1323c
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 76%
+source-wordcount: '2406'
+ht-degree: 77%
 
 ---
 
 
 # Controladores de errores en formularios adaptables (Componentes principales) {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestra [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |

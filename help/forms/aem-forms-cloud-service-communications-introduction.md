@@ -2,16 +2,17 @@
 title: Introducción a las comunicaciones as a Cloud Service Forms
 description: Combine datos automáticamente con plantillas XDP y PDF o genere salidas en formato PCL, ZPL y PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 76%
+source-wordcount: '1426'
+ht-degree: 79%
 
 ---
 
+
 # Introducción a las comunicaciones as a Cloud Service AEM Forms {#frequently-asked-questions}
 
-<span class="preview"> [Servicio DocAssurance](#doc-assurance) es una función previa al lanzamiento que puede acceder a través de nuestras [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). La documentación de la función está sujeta a cambios.</span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -104,7 +105,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Manipulación de documentos
 
-Las API de manipulación de documentos de comunicación ayudan a combinar, reorganizar y validar documentos PDF. Normalmente, crea un DDX y lo envía a las API de manipulación de documentos para montar o reorganizar un documento. El [documento DDX](https://helpx.adobe.com/content/dam/help/es/experience-manager/forms-cloud-service/ddxRef.pdf) ofrece instrucciones sobre cómo utilizar los documentos de origen para producir un conjunto de documentos necesarios. La documentación de referencia DDX ofrece información detallada acerca de todas las operaciones compatibles. Algunos ejemplos de manipulación de documentos son los siguientes:
+Las API de manipulación de documentos de comunicación ayudan a combinar, reorganizar y validar documentos PDF. Normalmente, crea un DDX y lo envía a las API de manipulación de documentos para montar o reorganizar un documento. El [documento DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) ofrece instrucciones sobre cómo utilizar los documentos de origen para producir un conjunto de documentos necesarios. La documentación de referencia DDX ofrece información detallada acerca de todas las operaciones compatibles. Algunos ejemplos de manipulación de documentos son los siguientes:
 
 ### Montar los documentos PDF
 
@@ -158,9 +159,6 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 ### Convert PDF Documents into XDP Documents
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
-
-
-<span class="preview"> El servicio Document Assurance es una función previa al lanzamiento a la que puede acceder a través de nuestras [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). La documentación de la función está sujeta a cambios.</span>
 
 ## Seguro de documento {#doc-assurance}
 
@@ -302,3 +300,9 @@ If you attempt to flatten a non-interactive PDF document, an exception occurs.
 An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form.  -->
+
+## Vea también {#see-also}
+
+
+* [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
+* [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
