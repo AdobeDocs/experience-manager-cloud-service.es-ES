@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 39284210e6639c4ed2a80cf86dbf0ea32d889986
+source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1419'
 ht-degree: 20%
 
 ---
@@ -50,7 +50,7 @@ Obtenga más información acerca de los Edge Delivery Services en el artículo [
 
 **Asignar un formulario de metadatos a una carpeta**
 
-Ahora puede asignar un formulario de metadatos a una carpeta específica dentro de la implementación de Assets Essentials. Todos los recursos de la carpeta, incluidos los de las subcarpetas, muestran las propiedades definidas en el formulario de metadatos asignado.
+Ahora puede asignar un formulario de metadatos a una carpeta específica dentro de la implementación. Todos los recursos de la carpeta, incluidos los de las subcarpetas, muestran las propiedades definidas en el formulario de metadatos asignado.
 
 ![asignar formulario de metadatos a una carpeta](/help/release-notes/assets/assign-to-folder.png)
 
