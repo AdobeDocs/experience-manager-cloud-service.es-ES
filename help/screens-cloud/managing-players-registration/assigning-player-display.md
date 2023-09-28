@@ -1,10 +1,10 @@
 ---
 title: Asignación del reproductor a una pantalla en Pantallas as a Cloud Service
-description: En esta página se describe cómo asignar un reproductor a una visualización en Pantallas as a Cloud Service.
+description: Aprenda a asignar un reproductor a una pantalla en Pantallas as a Cloud Service.
 exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '224'
 ht-degree: 2%
 
 ---
@@ -23,18 +23,18 @@ Una vez registrado el reproductor, es obligatorio asignar un reproductor a la vi
 
 Siga los pasos a continuación para asignar un reproductor a una pantalla:
 
-1. Seleccionar **Jugadores** en el Panel de administración de red del panel de navegación izquierdo y seleccione el reproductor. Haga clic en **Asignar visualización**
+1. Seleccionar **Jugadores** en el Panel de administración de red del panel de navegación izquierdo y seleccione el reproductor. Clic **Asignar visualización**
 
    ![imagen](/help/screens-cloud/assets/player/register-player7.png)
 
-1. **Asignar una pantalla** se abre el cuadro de diálogo. Seleccione la pantalla de la lista y haga clic en **Seleccionar**.
+1. **Asignar una pantalla** se abre el cuadro de diálogo. Seleccione la visualización de la lista y haga clic en **Seleccionar**.
 
    ![imagen](/help/screens-cloud/assets/player/register-player8.png)
 
 ## Reproducción de contenido {#content-playback}
 
-Una vez que haya asignado una pantalla a un reproductor, como se muestra en la sección anterior, verá la pantalla asignada debajo de **PANTALLA ASIGNADA** panel.
+Después de asignar una pantalla a un reproductor, como se muestra en la sección anterior, verá la pantalla asignada debajo de **PANTALLA ASIGNADA** panel.
 
-Ahora, la pantalla se asigna al reproductor y el canal empezará a reproducir el contenido. El reproductor debe descargar y comenzar a reproducir contenido. **Enhorabuena.**
+Ahora, la pantalla se asigna al reproductor y el canal comienza a reproducir el contenido. El reproductor debe descargar y comenzar a reproducir el contenido. **Enhorabuena.**
 
 ![imagen](/help/screens-cloud/assets/player/output.gif)

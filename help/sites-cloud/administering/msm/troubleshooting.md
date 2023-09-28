@@ -4,10 +4,10 @@ description: Descubra cómo solucionar los problemas más comunes relacionados c
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '761'
-ht-degree: 100%
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 52%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 
 Si está experimentando lo que cree que es un comportamiento incorrecto o un error en MSM, antes de comenzar y realizar la solución de problemas detallada, asegúrese de lo siguiente:
 
-* Lea las [Preguntas más frecuentes sobre MSM](#faq), pues es posible que sus problemas o preguntas ya se hayan solucionado allí.
-* Lea el [Artículo de prácticas recomendadas de MSM](best-practices.md), ya que se ofrecen varias sugerencias y aclaraciones sobre una serie de ideas erróneas.
+* Compruebe la [PREGUNTAS FRECUENTES DE MSM](#faq) porque es posible que sus problemas o preguntas ya se hayan solucionado allí.
+* Compruebe la [Artículo de prácticas recomendadas de MSM](best-practices.md) como varios consejos se ofrecen allí junto con aclaraciones de algunos conceptos erróneos.
 
 ## Búsqueda de información avanzada sobre el modelo y el estado de Live Copy {#advanced-info}
 
@@ -42,7 +42,7 @@ Los servlets anteriores devolvían información calculada basada en los nodos y 
 
 * `cq:LiveSync` tipo de mezcla
    * Esto está configurado en los nodos `jcr:content` y define las páginas raíz de Live Copy.
-   * Estas páginas tendrán un `cq:LiveSyncConfig` nodo secundario del tipo `cq:LiveCopy` que contendrán información básica y obligatoria sobre Live Copy a través de las siguientes propiedades:
+   * Esas páginas tienen un `cq:LiveSyncConfig` nodo secundario de tipo `cq:LiveCopy` que contiene información básica y obligatoria sobre Live Copy a través de las siguientes propiedades:
       * `cq:master` apunta a la página de modelo de Live Copy.
       * `cq:rolloutConfigs` indica las configuraciones de despliegue activas aplicadas a Live Copy.
       * `cq:isDeep` es verdadero si las páginas secundarias de esta página raíz de Live Copy están incluidas en Live Copy.
@@ -55,7 +55,7 @@ Los servlets anteriores devolvían información calculada basada en los nodos y 
 
 La información presente en estas propiedades debe reflejarse en la interfaz de usuario, sin embargo, al solucionar problemas, puede resultar útil observar el comportamiento de MSM directamente en el repositorio a medida que se producen acciones de MSM.
 
-Conocer esas propiedades también puede ser útil para consultar el repositorio y averiguar conjuntos de páginas que están en estados particulares. Por ejemplo:
+Conocer esas propiedades también puede ser útil para poder consultar el repositorio y averiguar conjuntos de páginas que están en estados particulares. Por ejemplo:
 
 * `select * from cq:LiveSync` devuelve todas las páginas raíz de Live Copy.
 
@@ -71,23 +71,23 @@ Consulte [este artículo](best-practices.md) para obtener más información sobr
 
 ### ¿Cómo puedo quitar los permisos de despliegue de un grupo de autores? {#remove-rollout-permissions}
 
-No hay **despliegue** que se pueda establecer o eliminar para principales AEM (usuarios o grupos).
+No hay ninguna **despliegue** privilegio que se puede establecer o eliminar para principales de Adobe Experience Manager (usuarios o grupos).
 
 Como alternativa, puede hacer lo siguiente:
 
 * Personalizar la interfaz de usuario del producto para ocultar las acciones de despliegue de un principal determinado.
-* Quitar los privilegios de escritura del árbol de Live Copy para los autores a los que no se les permite desplegar.
+* Elimine los privilegios de escritura del árbol de Live Copy para los autores a los que no se les permite desplegar.
 
 ### ¿Por qué veo páginas de Live Copy con el sufijo &quot;_msm_moved&quot;? {#moved-pages}
 
-Si se despliega una página de modelo, actualizará su página de Live Copy o creará una nueva página de Live Copy si aún no existe (por ejemplo, cuando se implemente por primera vez o cuando se elimine manualmente la página de Live Copy).
+Si se despliega una página de modelo, actualiza su página de Live Copy o crea una página de Live Copy si aún no existe. Por ejemplo, cuando se despliega por primera vez o cuando la página de Live Copy se eliminó manualmente.
 
-Sin embargo, en este último caso, si una página sin una propiedad `cq:LiveRelationship` existe con el mismo nombre, se cambia el nombre de esta página en consecuencia antes de crear la página Live Copy.
+Sin embargo, en este último caso, si una página sin `cq:LiveRelationship` La propiedad existe con el mismo nombre. El nombre de esta página se cambia por lo tanto antes de crear la página Live Copy.
 
-De forma predeterminada, el despliegue espera una página de Live Copy vinculada, a la que se implementarán las actualizaciones de los modelos o ninguna página cuando se cree una página de Live Copy.
+De forma predeterminada, el despliegue espera una página de Live Copy vinculada en la que se implementen las actualizaciones de los modelos. O bien, no espera ninguna página cuando se crea una página Live Copy.
 
-Si se encuentra una página &quot;independiente&quot;, MSM elige cambiar el nombre de esta página y crear una página de Live Copy separada y vinculada.
+Si se encuentra una página &quot;independiente&quot;, MSM elige cambiar el nombre de esta página y crea una página de Live Copy separada y vinculada.
 
-Esta página independiente en un subárbol de Live Copy suele ser el resultado de la operación de **Desasociar**, o bien la página anterior de Live Copy fue eliminada manualmente por un autor y luego recreada con el mismo nombre.
+Esta página independiente en un subárbol de Live Copy suele ser el resultado de una **Desasociar** o la página anterior de Live Copy fue eliminada manualmente por un autor y luego recreada con el mismo nombre.
 
-Para evitar esto, use la característica de Live Copy **Suspender** en lugar de **Desasociar**. Encuentre más información sobre la acción **Desasociar** en [este artículo.](creating-live-copies.md)
+Para evitarlo, utilice la Live Copy **Suspender** función en lugar de **Desasociar**. Más detalles sobre la **Desasociar** La acción se puede encontrar en [este artículo.](creating-live-copies.md)
