@@ -4,15 +4,15 @@ description: Los formularios adaptables proporcionan un mecanismo para crear un 
 topic-tags: author
 keywords: Agregar fragmentos de formulario adaptable, fragmentos de formulario adaptable, Crear un fragmento de formulario, Agregar un fragmento a un formulario adaptable, Administrar fragmentos
 feature: Adaptive Forms
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 290cdecdb355b5c9a872d0f12ac701d271a258d4
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1745'
 ht-degree: 35%
 
 ---
 
 
-# Fragmentos de formulario adaptable {#adaptive-form-fragments}
+# Crear y utilizar fragmentos de Forms adaptables en un formulario adaptable basado en componentes principales {#adaptive-form-fragments}
 
 
 | Versión | Vínculo del artículo |
