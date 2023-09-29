@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: abd0632a6874e4917a9ca7fc4fd11696f4c55caa
+source-git-commit: 904b35d31dc317703ad1aec09cefee3c111abcb0
 workflow-type: tm+mt
-source-wordcount: '4271'
+source-wordcount: '4286'
 ht-degree: 94%
 
 ---
@@ -462,6 +462,7 @@ ht-degree: 94%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Árbol de estructura](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Previsualización: representación JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+      + [Reutilización de fragmentos de contenido mediante MSM para recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
    + Dynamic Media {#dynamicmedia}
       + Recorrido de Dynamic Media: Conceptos básicos {#dm-journey}
          + [Parte I: Dynamic Media, Casos de uso, Flujo de recursos a través del sistema](/help/assets/dynamic-media/dm-journey-part1.md)
