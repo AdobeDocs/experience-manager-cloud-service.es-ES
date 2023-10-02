@@ -8,7 +8,7 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a741105afdb2fb4dc3bfb70dc6dcb1bf317a3aea
+source-git-commit: 9146bf7222ad3cb74e6558868c41b822364ef3f0
 workflow-type: tm+mt
 source-wordcount: '4296'
 ht-degree: 94%
@@ -542,8 +542,8 @@ ht-degree: 94%
       + [Configuración de  [!DNL enhanced connector]  para  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Actualizar [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
-+ Integración con Adobe Express {#integration-adobe-express}
-   + [Complemento de AEM Assets para Adobe Express](/help/assets/addon-adobe-express.md)
+   + Integración con Adobe Express {#integration-adobe-express}
+      + [Complemento de AEM Assets para Adobe Express](/help/assets/addon-adobe-express.md)
 + Forms {#forms}
    + Información general {#forms-overview}
       + [Introducción](/help/forms/home.md)
