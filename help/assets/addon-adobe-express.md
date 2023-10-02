@@ -1,9 +1,7 @@
 ---
 title: Complemento de AEM Assets para Adobe Express
 description: El complemento de AEM Assets para Adobe Express le permite acceder directamente a los recursos almacenados en AEM Assets desde la interfaz de usuario de Adobe Express.
-hide: true
-hidefromtoc: true
-source-git-commit: 5fe4204bcfdd42edad53ca80b693800aef0a5dc5
+source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
