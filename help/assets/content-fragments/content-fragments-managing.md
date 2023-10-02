@@ -2,10 +2,10 @@
 title: Administración de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, la base del contenido sin encabezado.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 69%
+source-wordcount: '1877'
+ht-degree: 68%
 
 ---
 
@@ -196,6 +196,10 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
    * **Desactivado**: rojo
 
 * Un botón le permite **Pruebe el nuevo editor**, abriendo directamente el *nuevo* [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md) que es accesible a través de la [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+
+  >[!WARNING]
+  >
+  >El nuevo editor se abrirá en la misma pestaña. No se recomienda tener ambos editores abiertos al mismo tiempo.
 
 * **Guardar** proporciona acceso a la opción **Guardar y cerrar**.
 
