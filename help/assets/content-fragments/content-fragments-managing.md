@@ -2,10 +2,10 @@
 title: Administración de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, la base del contenido sin encabezado.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 71%
+source-wordcount: '1855'
+ht-degree: 69%
 
 ---
 
@@ -38,7 +38,7 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 >
 >Ahora se administran principalmente con **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** consola, aunque se pueden seguir administrando desde el **Assets** consola. Esta sección trata la administración desde el **Assets** consola.
 >
->Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola).
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola). Ambos editores tienen un conmutador en la barra de herramientas superior para proporcionar acceso rápido al otro editor.
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 
@@ -194,6 +194,8 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
    * **Publicado**: verde
    * **Modificado**: naranja
    * **Desactivado**: rojo
+
+* Un botón le permite **Pruebe el nuevo editor**, abriendo directamente el *nuevo* [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md) que es accesible a través de la [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 
 * **Guardar** proporciona acceso a la opción **Guardar y cerrar**.
 

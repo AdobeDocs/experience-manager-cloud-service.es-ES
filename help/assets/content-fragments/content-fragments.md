@@ -2,10 +2,10 @@
 title: 'Trabajar con fragmentos de contenido (Recursos: fragmentos de contenido)'
 description: Descubra cómo el as a Cloud Service Fragmentos de contenido en Adobe Experience Manager AEM () le permite diseñar, crear, depurar y utilizar contenido independiente de las páginas, lo que resulta ideal para la creación de páginas y la entrega sin encabezado. También cómo se pueden usar junto con MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 59%
+source-wordcount: '2229'
+ht-degree: 58%
 
 ---
 
@@ -38,7 +38,7 @@ Los fragmentos de contenido también se pueden entregar en formato JSON, utiliza
 >
 >Ahora se administran principalmente con **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** consola, aunque se pueden seguir administrando desde el **Assets** consola. Esta sección trata la administración desde el **Assets** consola.
 >
->Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola).
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola). Ambos editores tienen un conmutador en la barra de herramientas superior para proporcionar acceso rápido al otro editor.
 
 Esta y las siguientes páginas tratan sobre las tareas para crear, configurar, mantener y utilizar sus fragmentos de contenido:
 
