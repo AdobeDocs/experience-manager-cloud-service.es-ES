@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8304ab7999ad467ef5966a6aec143416c8158f78
+source-git-commit: cada650e940aa941538a43ffb1f9a16d1f0b8a61
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 60%
+source-wordcount: '83'
+ht-degree: 62%
 
 ---
 # Fragmentos de código {#snippets}
@@ -14,3 +14,9 @@ ht-degree: 60%
 ## Creación de Edge Delivery Services {#edge-delivery-authoring}
 
 [!BADGE AEM Para crear contenido de la para Edge Delivery Services, haga clic aquí.]{type=Positive url="/help/edge/overview.md" tooltip="AEM Creación de contenido de la para Edge Delivery Services"}
+
+## Compatibilidad con IMS para asignar grupos a perfiles {#ims-group-profiles}
+
+>[!NOTE]
+>
+>AEM no admite la asignación de grupos a perfiles. Los usuarios deben añadirse individualmente en su lugar.

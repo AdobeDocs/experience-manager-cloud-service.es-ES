@@ -1,14 +1,13 @@
 ---
 title: La herramienta Copia de contenido
 description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción en entornos as a Cloud Service a entornos más bajos para realizar pruebas.
-exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
+source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
 workflow-type: tm+mt
 source-wordcount: '1306'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
-
 
 # La herramienta Copia de contenido {#content-copy}
 
@@ -201,3 +200,5 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * La herramienta de copia de contenido no tiene capacidad de control de versiones y no puede detectar automáticamente el contenido modificado o recién creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
    * Si desea actualizar el entorno de destino solo con cambios de contenido, desde la última operación de copia de contenido, debe crear un conjunto de contenido. A continuación, especifique las rutas en la instancia de origen en las que se han realizado cambios desde la última operación de copia de contenido.
 * La información de la versión no se incluye en una copia de contenido.
+
+{{ims-group-profiles}}
