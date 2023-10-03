@@ -1,14 +1,14 @@
 ---
 title: Cómo crear una secuencia de formularios de varios pasos
-description: Con [!DNL Experience Manager Forms], puede definir una secuencia de paneles de formulario para que los usuarios se desplacen por un formulario adaptable y lo rellenen. Obtenga información más detallada utilizando un caso de uso como ejemplo para crear una secuencia de formulario de varios pasos.
+description: Con [!DNL Experience Manager Forms], puede definir una secuencia de paneles de formulario para que los usuarios se desplacen por un formulario adaptable y lo rellenen.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 89%
+source-wordcount: '547'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Los formularios adaptables permiten a los autores de formularios crear experiencias de captura de datos de varios pasos con gran facilidad. Estos formularios incluyen compatibilidad para crear varios paneles y asociar cada uno con diferentes patrones de navegación. Los autores de formularios pueden agrupar los campos de formulario en secciones lógicas y representar un grupo como un panel. La navegación general entre los paneles se controla mediante el diseño del panel. Los autores pueden elegir organizar los paneles en diferentes diseños, por ejemplo, colocándolos secuencialmente utilizando el diseño Asistente o de forma ad hoc utilizando el diseño en pestañas. Para obtener información sobre los diseños de panel, consulte [Funciones de diseño de formularios adaptables](layout-capabilities-adaptive-forms.md).

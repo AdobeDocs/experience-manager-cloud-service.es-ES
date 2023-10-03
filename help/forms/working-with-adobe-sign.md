@@ -1,17 +1,17 @@
 ---
 title: ¿Cómo usar [!DNL Adobe Sign] en un formulario adaptable?
-description: Puede habilitar flujos de trabajo de firma electrónica ([!DNL Adobe Sign]) para un formulario adaptable con el fin de automatizar los flujos de trabajo de firma, simplificar los procesos de firma única y múltiple y firmar electrónicamente los formularios desde dispositivos móviles.
+description: Utilice Adobe Sign en un formulario adaptable para permitir que los destinatarios de formularios firmen electrónicamente un formulario desde el dispositivo y el lugar de su elección.
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '3173'
+source-wordcount: '3169'
 ht-degree: 97%
 
 ---
-
 
 # Uso de [!DNL Adobe Sign] en un formulario adaptable {#using-adobe-sign-in-an-adaptive-form}
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
 | AEM as a Cloud Service | Este artículo |
 
 

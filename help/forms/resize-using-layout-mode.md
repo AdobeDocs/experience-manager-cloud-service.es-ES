@@ -1,18 +1,18 @@
 ---
-title: Utilice el modo Diseño para cambiar el tamaño de los componentes para Forms adaptable
-description: Defina la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño. Obtenga información sobre cómo acceder al modo Diseño, cambiar el tamaño de los componentes, cambiar el tamaño de los paneles, definir el diseño de varias columnas para un panel, habilitar la nueva cuadrícula adaptable para los diseños adaptables antiguos y desactivar el modo Diseño para los formularios con un diseño adaptable antiguo.
+title: Utilizar el modo Diseño para cambiar el tamaño de los componentes para formularios adaptables
+description: Defina la posición de los componentes de AEM Forms, aprenda a acceder al modo de diseño, cambie el tamaño de los componentes, cambie el tamaño de los paneles y defina el diseño de varias columnas para un panel.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 92%
+source-wordcount: '1134'
+ht-degree: 90%
 
 ---
 
-# Usar el modo Diseño para cambiar el tamaño de los componentes para Forms adaptable {#use-layout-mode-to-resize-components}
+# Utilice el modo Diseño para cambiar el tamaño de los componentes para el Forms adaptable {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 

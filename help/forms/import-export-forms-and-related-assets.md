@@ -1,12 +1,10 @@
 ---
-title: Importar y exportar recursos
-seo-title: Import and export assets to [!DNL AEM Forms]
-description: Puede importar y exportar formularios adaptables y recursos relacionados a instancias de AEM. Esto ayuda a migrar formularios o a moverlos a través de sistemas.
-seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+title: Cómo importar y exportar recursos a [!DNL AEM Forms]?
+description: Aprenda a utilizar DocuSign con un formulario adaptable para recopilar firmas electrónicas.
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 97%
+source-wordcount: '1314'
+ht-degree: 95%
 
 ---
 

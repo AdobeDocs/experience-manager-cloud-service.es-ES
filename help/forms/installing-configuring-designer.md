@@ -1,14 +1,14 @@
 ---
-title: Descargar e instalar Forms Designer
-description: Puede utilizar Forms Designer para crear plantillas de formulario XDP y PDF que sirvan de plantilla para un documento de registro. Designer está disponible con la licencia de  [!DNL AEM Forms] .
+title: Cómo descargar e instalar Forms Designer para crear plantillas de documento de registro
+description: Utilice Forms Designer para crear plantillas de formulario XDP y de PDF que sirvan de plantilla para un documento de registro.
 keywords: Instalar Designer, Instalar Forms Designer, Requisitos para instalar Forms Designer
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
 source-wordcount: '397'
-ht-degree: 67%
+ht-degree: 63%
 
 ---
-
 
 # Descargar e instalar Forms Designer {#installing-and-configuring-designer}
 

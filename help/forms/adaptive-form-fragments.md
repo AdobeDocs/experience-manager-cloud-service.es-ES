@@ -1,17 +1,15 @@
 ---
 title: Fragmentos de formulario adaptable
-seo-title: Adaptive Form Fragments
-description: Los formularios adaptables proporcionan un mecanismo para crear un segmento de formulario, como un panel o un grupo de campos, para utilizarlo en cualquier formulario adaptable. También puede guardar un panel existente como fragmento.
-seo-description: Adaptive Forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any Adaptive Form. You can also save an existing panel as fragment.
+description: Un fragmento de formulario es un componente modular y reutilizable de un formulario. Aprenda a crear fragmentos de formulario y a reutilizarlos en todos los formularios para un ensamblado de formularios eficaz.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 17df7ef15fbd4077201f7e0678ffc9ea2732863d
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 97%
+source-wordcount: '2018'
+ht-degree: 96%
 
 ---
 

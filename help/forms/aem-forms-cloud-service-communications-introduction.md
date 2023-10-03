@@ -1,12 +1,11 @@
 ---
-title: Introducción a las comunicaciones as a Cloud Service Forms
-description: Combine datos automáticamente con plantillas XDP y PDF o genere salidas en formato PCL, ZPL y PostScript
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+title: Introducción a las comunicaciones de Forms as a Cloud Service
+description: Utilice las API de comunicación para firmar, certificar o proteger sus documentos, automatizar los procesos de generación de PDF y convertir los documentos de PDF a otro formato.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1426'
-ht-degree: 79%
+source-wordcount: '1433'
+ht-degree: 78%
 
 ---
 

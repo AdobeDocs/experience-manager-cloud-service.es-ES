@@ -1,14 +1,14 @@
 ---
 title: Diseño de un esquema XML para un formulario adaptable
-description: Aprenda a utilizar el esquema XML como modelo de formulario en un formulario adaptable. Obtenga información más detallada con un ejemplo de esquema XML, añada propiedades especiales a los campos mediante el esquema XML y limite los valores aceptables para un componente de formulario adaptable.
+description: Aprenda a crear un esquema XML para un formulario adaptable y a crear un formulario adaptable basado en el esquema para generar datos de quejas de esquema.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 100%
+source-wordcount: '950'
+ht-degree: 97%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: Crear modelo de datos de formulario
-description: La integración de datos de Experience Manager Forms ofrece una interfaz de usuario intuitiva para crear y trabajar con modelos de datos de formulario. Aprenda a crear modelos de datos de formulario con o sin fuentes de datos configuradas.
+title: Cómo crear el modelo de datos de formulario
+description: AEM Aprenda a crear un modelo de datos de formulario (FDM) y a enviar o recuperar datos a una fuente de datos mediante un formulario adaptable o un flujo de trabajo de.
 feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 99%
+source-wordcount: '1544'
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 

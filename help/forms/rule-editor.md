@@ -1,13 +1,13 @@
 ---
-title: ¿Cómo se utiliza el editor de reglas de los formularios adaptables?
-description: El editor de reglas de Forms adaptable permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin codificación ni scripts. Introducción para comprender una regla y las directrices a partir de las cuales elegir una construcción de regla. Obtenga más información sobre los tipos de operadores y los eventos disponibles en el editor de reglas.
+title: ¿Qué es el editor de reglas de Forms adaptable?
+description: El editor de reglas de formularios adaptables permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin codificación ni scripts.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '6446'
+source-wordcount: '6422'
 ht-degree: 94%
 
 ---

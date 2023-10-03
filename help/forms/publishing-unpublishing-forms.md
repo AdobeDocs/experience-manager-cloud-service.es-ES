@@ -1,19 +1,14 @@
 ---
-title: Publicar y cancelar la publicación de formularios y documentos
-seo-title: Publishing and unpublishing forms and documents
-description: Puede programar la publicación y cancelación de la publicación de formularios. Los formularios publicados se replican en la instancia de publicación.
-seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
-uuid: 0bad5608-b7a8-4599-81cc-2cd0a3dc7dd5
+title: ¿Cómo se publican y cancelan la publicación de formularios y documentos?
+description: Programe la publicación y cancelación de publicación de su Forms adaptable. Los formularios publicados se replican en la instancia de publicación.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+docset: aem65s
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 100%
+source-wordcount: '1335'
+ht-degree: 98%
 
 ---
 
@@ -78,7 +73,6 @@ Un recurso puede tener los siguientes estados:
       >[!NOTE]
       >
       >No seleccione varios recursos. No se pueden publicar varios recursos a la vez.
-
 
 1. Cuando se inicia el proceso Publicar, aparece un cuadro de diálogo de confirmación con todos los recursos y recursos relacionados. En el cuadro de diálogo que contiene los recursos relacionados, pulse **[!UICONTROL Publicar]**. El recurso se publica y aparece el cuadro de diálogo Éxito al publicar recursos.
 

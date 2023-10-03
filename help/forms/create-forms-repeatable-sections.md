@@ -1,14 +1,14 @@
 ---
-title: Repetibilidad en el formulario adaptable (componentes principales)
-description: Utilice la función de repetibilidad de los componentes del panel para repetir secciones similares en un formulario adaptable.
+title: Cómo crear paneles repetibles en los componentes principales del formulario adaptable
+description: Aprenda a crear secciones o campos repetibles en un formulario adaptable.
 role: Architect, Developer, Admin, User
-source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
+exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 98%
+source-wordcount: '1390'
+ht-degree: 96%
 
 ---
-
 
 # Crear formularios con secciones repetibles (componentes principales) {#repeat-panel}
 

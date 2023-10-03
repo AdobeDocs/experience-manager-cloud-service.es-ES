@@ -1,14 +1,12 @@
 ---
 title: Temas de referencia
-seo-title: Reference Themes
-description: AEM Forms proporciona temas de formularios adaptables que puede obtener de Distribución de software y utilizar para aplicar estilo a un formulario.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
+description: Utilice la referencia a las temáticas de formularios adaptables, las plantillas y los modelos de datos de formulario que se proporcionan para empezar rápidamente.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
-source-git-commit: 575e9836d676cf6711e039a5bb6860ad04324d60
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 100%
+source-wordcount: '510'
+ht-degree: 96%
 
 ---
 

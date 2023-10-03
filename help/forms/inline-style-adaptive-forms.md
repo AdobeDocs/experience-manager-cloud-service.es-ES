@@ -1,14 +1,14 @@
 ---
 title: Cómo aplicar estilos en línea a los componentes de un formulario adaptable
-description: Aunque puede aplicar estilos personalizados a un formulario adaptable, también puede aplicar propiedades CSS en línea a los componentes individuales de un formulario adaptable. Aprenda a aplicar estilos en línea a los componentes de un formulario adaptable. Obtenga información más detallada con un ejemplo sobre cómo aplicar un estilo en línea a un componente de campo de texto.
+description: Aprenda a aplicar estilos personalizados a un formulario adaptable, también puede aplicar propiedades CSS en línea a los componentes individuales de un formulario adaptable.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 92%
+source-wordcount: '769'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Puede definir el aspecto y el estilo generales de un formulario adaptable especificando los estilos mediante el [Editor de temáticas](themes.md). Además, puede aplicar estilos CSS en línea a componentes de formulario adaptable individuales y previsualizar los cambios sobre la marcha. Los estilos en línea reemplazan el estilo proporcionado en el tema.

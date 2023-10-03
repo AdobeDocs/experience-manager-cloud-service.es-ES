@@ -1,16 +1,14 @@
 ---
-title: Palabras clave en formularios adaptables
-seo-title: Adaptive Forms keywords
-description: Estas palabras reservadas no se pueden usar como identificadores en los formularios adaptables.
-seo-description: You cannnot use these reserved words as identifiers in your Adaptive Forms.
+title: Palabras clave reservadas de Forms adaptable
+description: Palabras clave reservadas que no se pueden usar como identificadores en un Forms adaptable.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 100%
+source-wordcount: '209'
+ht-degree: 92%
 
 ---
 
@@ -239,4 +237,4 @@ Las palabras clave de los formularios adaptables son identificadores reservados 
  </tbody>
 </table>
 
-Además de las palabras clave enumeradas anteriormente, evite utilizar nombres que sean similares a las [API de JavaScript utilizadas en los formularios adaptables](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Además de las palabras clave enumeradas anteriormente, evite utilizar nombres que sean similares a las [API de JavaScript utilizadas en los formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).

@@ -1,11 +1,11 @@
 ---
-title: Consideraciones, problemas conocidos y prácticas recomendadas
-description: Prácticas recomendadas de comunicaciones, problemas conocidos y limitaciones
+title: Consideraciones, problemas conocidos y prácticas recomendadas en AEM Forms
+description: 'Consideraciones: problemas conocidos y prácticas recomendadas para las API de comunicación de AEM Forms.'
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '1709'
-ht-degree: 100%
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+workflow-type: tm+mt
+source-wordcount: '1716'
+ht-degree: 98%
 
 ---
 

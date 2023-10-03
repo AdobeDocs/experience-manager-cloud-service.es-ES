@@ -1,11 +1,11 @@
 ---
-title: Integrar DocuSign con un formulario adaptable
+title: Cómo integrar DocuSign con un formulario adaptable
 description: Aprenda a utilizar DocuSign con un formulario adaptable para recopilar firmas electrónicas.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 100%
+source-wordcount: '1559'
+ht-degree: 99%
 
 ---
 
@@ -160,7 +160,7 @@ Ahora, su entorno de AEM Forms está configurado para utilizar DocuSign. Asegúr
 
 Puede habilitar [!DNL DocuSign] para un formulario adaptable existente o crear un formulario adaptable con [!DNL DocuSign] habilitado. Elija una de las acciones siguientes:
 
-- [Crear un formulario adaptable con  [!DNL DocuSign]  habilitado](#create-an-adaptive-form-for-docusign)
+- [Crear un formulario adaptable con [!DNL DocuSign] habilitado](#create-an-adaptive-form-for-docusign)
 - [Habilitar  [!DNL DocuSign]  para un formulario adaptable existente](#editafsign).
 
 #### Crear un formulario adaptable para DocuSign {#create-an-adaptive-form-for-docusign}
@@ -174,6 +174,7 @@ Para crear un formulario adaptable habilitado para firmar:
    1. Especifique el **[!UICONTROL Nombre]** y el **[!UICONTROL Título]** para el formulario adaptable.
 
    1. Seleccione el [contenedor de configuración](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creado al [integrarse [!DNL DocuSign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+
    El contenedor de configuración contiene [!DNL DocuSign] Cloud Service configurado para su entorno. Estos servicios están disponibles para su selección en el editor de formularios adaptables.
 
 1. En la pestaña **[!UICONTROL Modelo de formulario]**, seleccione una de las siguientes opciones:

@@ -1,10 +1,11 @@
 ---
-title: Configuración de Microsoft&reg; Dynamics 365 o Salesforce para AEM Forms
-description: Aprenda a integrar Microsoft&reg; Dynamics 365 y Salesforce con formularios adaptables.
-source-git-commit: 483a72f67f361023ebeefa3d74ec9f35a5f4f765
+title: Configurar los modelos de datos de formulario predeterminados de Microsoft Dynamics 365 y Salesforce para Forms adaptable
+description: Aprenda a integrar Microsoft Dynamics 365 y Salesforce con Forms adaptable.
+exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 74%
+source-wordcount: '960'
+ht-degree: 73%
 
 ---
 

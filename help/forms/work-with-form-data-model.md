@@ -1,14 +1,14 @@
 ---
 title: ¿Cómo se trabaja con el modelo de datos de formulario?
-description: Obtenga información sobre cómo agregar objetos y servicios de modelos de datos, crear objetos de modelos de datos y propiedades secundarias, configurar servicios, agregar asociaciones y trabajar con propiedades de navegación de servicios OData. Descubra más información sobre cómo generar y editar datos de ejemplo, probar objetos y servicios de modelos de datos y automatizar la validación de datos de entrada.
+description: Agregar objetos y servicios del modelo de datos, crear objetos del modelo de datos y propiedades secundarias, configurar servicios y trabajar con propiedades de navegación de servicios OData.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '4137'
-ht-degree: 98%
+source-wordcount: '4108'
+ht-degree: 97%
 
 ---
 

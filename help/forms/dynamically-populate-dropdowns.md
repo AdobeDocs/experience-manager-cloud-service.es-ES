@@ -1,18 +1,14 @@
 ---
-title: Rellenado dinámico de listas desplegables
-seo-title: Dynamically populating drop-down lists
-description: Procedimiento para rellenar dinámicamente listas desplegables basadas en alguna lógica
-seo-description: Procedure to dynamically populate drop-down lists based on some logic
+title: ¿Cómo rellenar dinámicamente listas desplegables?
+description: Aprenda a crear un cuadro de lista en cascada o rellenar dinámicamente listas desplegables.
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 100%
+source-wordcount: '346'
+ht-degree: 94%
 
 ---
 

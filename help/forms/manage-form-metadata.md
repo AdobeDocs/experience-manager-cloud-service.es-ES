@@ -1,12 +1,10 @@
 ---
-title: Administración de metadatos
-seo-title: Manage [!DNL AEM Forms] metadata
+title: Administración de metadatos para AEM Forms
 description: Los metadatos facilitan la categorización y organización de los recursos y ayudan a los usuarios que buscan un recurso específico.
-seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1738'
 ht-degree: 96%
 
 ---

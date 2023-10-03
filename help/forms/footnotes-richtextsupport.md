@@ -1,10 +1,11 @@
 ---
-title: Compatibilidad de notas al pie con Forms adaptable
-description: Mejore el Forms adaptable con notas al pie informativas de texto enriquecido. Mejore la experiencia del usuario y la participación.
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+title: Compatibilidad con notas al pie en Forms adaptable
+description: Utilizar el Editor de texto enriquecido (RTE) para notas al pie de página en un formulario adaptable.
+exl-id: f04dae84-daab-42f8-876f-02fe426f62be
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 78%
+source-wordcount: '438'
+ht-degree: 79%
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: Creación y administración de revisiones para un formulario adaptable
-description: Revisar es un mecanismo que permite al revisor realizar distintas tareas para formularios adaptables mediante el paso Asignar tarea
+title: ¿Cómo crear y administrar revisiones de Forms adaptable incrustadas o creadas en páginas de Sites?
+description: Revisar es un mecanismo que permite al revisor realizar distintas tareas para formularios adaptables mediante el paso Asignar tarea.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 95%
+source-wordcount: '358'
+ht-degree: 93%
 
 ---
 

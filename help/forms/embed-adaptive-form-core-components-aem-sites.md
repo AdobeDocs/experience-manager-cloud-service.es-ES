@@ -1,13 +1,13 @@
 ---
-title: Crear o agregar un formulario adaptable mediante el Editor de AEM Sites
-description: Puede utilizar el formulario adaptable (componentes principales) en una página de AEM Sites para rellenar y enviar un formulario sin salir de las páginas de AEM Sites.
+title: 'Cómo añadir o crear un formulario adaptable: componentes principales en la página de AEM Sites'
+description: Utilice los componentes principales de un formulario adaptable en una página de AEM Sites para rellenar y enviar un formulario sin salir de las páginas de AEM Sites.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2131'
+ht-degree: 94%
 
 ---
 

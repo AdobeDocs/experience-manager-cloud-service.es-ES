@@ -1,14 +1,14 @@
 ---
 title: Cómo configurar  [!DNL Microsoft Dynamics]  OData
-description: Obtenga información sobre cómo crear un modelo de datos de formulario basado en las entidades, atributos y servicios definidos el servicio  [!DNL Microsoft Dynamics] . El modelo de datos de formulario se puede utilizar para crear formularios adaptables que interactúen con el servidor de  [!DNL Microsoft Dynamics] para habilitar flujos de trabajo empresariales.
+description: Aprenda a crear el modelo de datos de formulario en función de las entidades, atributos y servicios definidos en [!DNL Microsoft Dynamics] servicio.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 96%
+source-wordcount: '982'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | Este artículo |
 
 ![integración de datos](assets/data-integeration.png)

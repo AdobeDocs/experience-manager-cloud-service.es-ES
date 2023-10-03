@@ -1,11 +1,12 @@
 ---
-title: Traducir un formulario adaptable basado en componentes principales
-description: Utilizar la traducción automática o la traducción humana para traducir un formulario adaptable basado en componentes principales
+title: Cómo traducir un formulario adaptable basado en componentes principales
+description: Aprenda a crear un modelo de datos de formulario en AEM Forms, probarlo con datos y servicios de ejemplo y configurar varias opciones para un modelo.
 feature: Adaptive Forms
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 97%
+source-wordcount: '893'
+ht-degree: 93%
 
 ---
 

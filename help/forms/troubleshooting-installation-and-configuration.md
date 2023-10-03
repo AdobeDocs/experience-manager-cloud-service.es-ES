@@ -1,11 +1,12 @@
 ---
-title: Resolución de problemas de instalación y configuración Servicio de nube de
-description: Solucionar problemas relacionados con la instalación y la configuración de AEM Forms as a Cloud Service
+title: Resolución de problemas de instalación y configuración
+description: Resolución de problemas de instalación y configuración del entorno as a Cloud Service de AEM Forms.
 contentOwner: khsingh
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 91%
+source-wordcount: '172'
+ht-degree: 95%
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: Temáticas, plantillas y modelos de datos de formulario de referencia
+title: Temáticas, plantillas y modelos de datos de formulario de referencia en AEM Forms
 seo-title: Reference Themes, Templates, and Form Data models
-description: AEM Forms proporciona temáticas de formularios adaptables, plantillas y modelos de datos de formulario que puede obtener en Distribución de software
+description: AEM Forms proporciona temáticas de formularios adaptables, plantillas y modelos de datos de formulario de ejemplo para ayudarle a crear formularios rápidamente.
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 94%
+source-wordcount: '839'
+ht-degree: 91%
 
 ---
 

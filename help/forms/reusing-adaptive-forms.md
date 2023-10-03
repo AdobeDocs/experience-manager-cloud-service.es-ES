@@ -1,13 +1,12 @@
 ---
-title: Reutilización de propiedades de metadatos de un formulario adaptable
-seo-title: Reuse metadata properties of an Adaptive Form
-description: Puede reutilizar un formulario adaptable existente para crear nuevos formularios adaptables.
+title: Cómo reutilizar las propiedades de metadatos de un formulario adaptable
+description: Descubra cómo reutilizar de forma eficaz un formulario adaptable existente para crear uno nuevo.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 90%
+source-wordcount: '613'
+ht-degree: 87%
 
 ---
 
@@ -18,7 +17,7 @@ ht-degree: 90%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Si desea utilizar algunas de las propiedades de un formulario adaptable existente para generar uno nuevo, puede utilizar simplemente la funcionalidad Copiar y pegar. Además, puede pegar el nuevo formulario adaptable en la ruta de carpeta deseada. Todas las propiedades de metadatos se replican, y también se copian los XFA y XSD de los formularios adaptables basados en XFA y XSD.

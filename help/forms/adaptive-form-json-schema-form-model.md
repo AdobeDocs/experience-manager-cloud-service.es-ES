@@ -1,14 +1,14 @@
 ---
 title: Diseño de un esquema JSON para un formulario adaptable
-description: Aprenda a crear formularios adaptables utilizando el esquema JSON como modelo de formulario. Puede utilizar esquemas JSON existentes para crear formularios adaptables. Profundice con una muestra de un esquema JSON, preconfigure los campos en la definición del esquema JSON, limite los valores aceptables para un componente de un formulario adaptable y aprenda construcciones no compatibles.
+description: Aprenda a crear un esquema JSON para un formulario adaptable y a crear un formulario adaptable basado en el esquema para producir datos de quejas de esquema.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 91%
+source-wordcount: '1343'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
 | AEM as a Cloud Service | Este artículo |
 
 

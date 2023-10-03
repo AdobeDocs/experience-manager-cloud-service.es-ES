@@ -1,10 +1,10 @@
 ---
-title: Crear y utilizar temas para diseñar un formulario adaptable
-description: Puede utilizar temáticas para estilizar y proporcionar una identidad visual a un formulario adaptable. Puede compartir una temática en cualquier número de formularios adaptables.
+title: Crear y utilizar temáticas para aplicar estilo a un formulario adaptable
+description: Utilice temáticas de formularios adaptables para aplicar estilos y proporcionar una identidad visual a un formulario adaptable. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '5576'
+source-wordcount: '5578'
 ht-degree: 98%
 
 ---
