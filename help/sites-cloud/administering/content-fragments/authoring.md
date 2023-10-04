@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo crear contenido para los fragmento
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
+source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
 workflow-type: tm+mt
 source-wordcount: '2253'
 ht-degree: 4%
@@ -27,8 +27,7 @@ Este editor proporciona lo siguiente:
 * [Previsualizar](#preview-content-fragment) de la experiencia procesada por el fragmento de contenido.
 * Capacidad para [Publish](#publish-content-fragment) y [Cancelar publicación](#unpublish-content-fragment) del editor.
 * Capacidad para [ver y abrir copias de idioma asociadas](#view-language-copies) en el editor.
-* Capacidad para [ver detalles de la versión](#view-version-history) en el editor.
-   * También puede revertir a una versión seleccionada.
+* Capacidad para [ver detalles de la versión](#view-version-history) en el editor. También puede revertir a una versión seleccionada.
 * Capacidad para [ver y abrir referencias principales](#view-parent-references).
 * Una vista jerárquica del fragmento de contenido y sus referencias, con el [Árbol de estructura](#structure-tree).
 
