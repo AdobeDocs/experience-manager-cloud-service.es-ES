@@ -3,13 +3,13 @@ title: Creación de fragmentos de contenido
 description: Obtenga información sobre cómo crear contenido para los fragmentos de contenido y, a continuación, crear variaciones de ese contenido según el propósito. Esto proporciona una mayor flexibilidad para la entrega sin encabezado y la creación de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2253'
 ht-degree: 4%
 
 ---
-
 
 # Creación de fragmentos de contenido {#authoring-content-fragments}
 
@@ -32,23 +32,9 @@ Este editor proporciona lo siguiente:
 * Capacidad para [ver y abrir referencias principales](#view-parent-references).
 * Una vista jerárquica del fragmento de contenido y sus referencias, con el [Árbol de estructura](#structure-tree).
 
->[!CAUTION]
+>[!WARNING]
 >
 >El editor descrito en esta sección es *solamente* disponible en el *en línea* Adobe Experience Manager AEM () as a Cloud Service.
-
->[!CAUTION]
->
->Para editar un fragmento de contenido, necesita lo siguiente [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
-> 
->Por ejemplo, si no tiene `edit` permisos el editor será de solo lectura.
-
->[!NOTE]
->
->Consulte la documentación de Assets para obtener información completa sobre [editor de fragmentos de contenido original](/help/assets/content-fragments/content-fragments-variations.md) - está disponible tanto en el **Assets** y la **Fragmentos de contenido** consola.
-
->[!NOTE]
->
->El equipo del proyecto puede personalizar el editor si es necesario. Consulte [Personalización de la consola y el editor de fragmentos de contenido](/help/implementing/developing/extending/content-fragments-console-and-editor.md) para obtener más información.
 
 ## Editor de fragmentos de contenido {#content-fragment-editor}
 
@@ -76,12 +62,6 @@ Cuando abra el Editor de fragmentos de contenido por primera vez, verá cuatro �
    * if **Marcador de ficha** Los campos de se definen dentro del modelo que se muestra aquí y pueden utilizarse para navegar; se presentarán horizontalmente o como una lista desplegable
 
 ![Editor de fragmentos de contenido: información general](assets/cf-authoring-overview.png)
-
->[!CAUTION]
->
->Un modelo de fragmento de contenido puede definir con frecuencia campos de datos llamados **Título** y **Descripción**. Si existen, son campos definidos por el usuario que se pueden actualizar en la *panel central* al editar el fragmento.
->
->El fragmento de contenido y sus variaciones también tienen campos de metadatos (propiedades de variación) llamados **Título** y **Descripción**. Estos campos son parte integral de cualquier fragmento de contenido y se definen inicialmente al crear el fragmento. Se pueden actualizar en el *panel derecho* al editar el fragmento.
 
 ## Navegar por la estructura de fragmentos de contenido {#navigate-structure}
 
@@ -494,3 +474,19 @@ El **Campos** el panel enumera todos los campos del fragmento de contenido. El i
   </tr>
  </tbody>
 </table>
+
+## Es bueno saber {#good-to-know}
+
+Además:
+
+* Para editar un fragmento de contenido, necesita lo siguiente [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
+
+  Por ejemplo, si no tiene `edit` permisos el editor será de solo lectura.
+
+* Un modelo de fragmento de contenido puede definir con frecuencia campos de datos llamados **Título** y **Descripción**. Si existen, son campos definidos por el usuario que se pueden actualizar en la *panel central* al editar el fragmento.
+
+  El fragmento de contenido y sus variaciones también tienen campos de metadatos (propiedades de variación) llamados **Título** y **Descripción**. Estos campos son parte integral de cualquier fragmento de contenido y se definen inicialmente al crear el fragmento. Se pueden actualizar en el *panel derecho* al editar el fragmento.
+
+* Consulte la documentación de Assets para obtener información completa sobre [editor de fragmentos de contenido original](/help/assets/content-fragments/content-fragments-variations.md) - está disponible tanto en el **Assets** y la **Fragmentos de contenido** consola.
+
+* El equipo del proyecto puede personalizar el editor si es necesario. Consulte [Personalización de la consola y el editor de fragmentos de contenido](/help/implementing/developing/extending/content-fragments-console-and-editor.md) para obtener más información.
