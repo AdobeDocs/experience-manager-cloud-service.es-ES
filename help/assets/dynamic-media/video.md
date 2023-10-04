@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
+source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
 workflow-type: tm+mt
-source-wordcount: '9442'
+source-wordcount: '9448'
 ht-degree: 2%
 
 ---
@@ -551,6 +551,7 @@ Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado 
 1. Para crear un caso de soporte, siga las instrucciones y asegúrese de proporcionar la siguiente información:
 
    * Nombre del contacto principal, correo electrónico, teléfono.
+   * Su ID de programa y el ID de entorno.
    * Nombre de su cuenta de Dynamic Media.
    * Especifique que desea habilitar la compatibilidad con DASH, subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, en Experience Manager 6.5.
 
