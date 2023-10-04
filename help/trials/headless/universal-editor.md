@@ -1,21 +1,21 @@
 ---
-title: Edición en contexto
-description: Aprenda a utilizar el editor universal para editar cualquier aspecto del contenido en contexto y en contexto en cualquier implementación.
+title: Edición en contexto con el editor universal
+description: Explore cómo puede utilizar el editor universal para editar cualquier aspecto del contenido en contexto y en contexto en cualquier implementación.
 hidefromtoc: true
 index: false
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
+source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '971'
 ht-degree: 9%
 
 ---
 
-
-# Edición en contexto {#editing-in-context}
+# Edición en contexto con el editor universal {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Edición en contexto"
+>title="Edición en contexto con el editor universal"
 >abstract="Vea cómo sus aplicaciones sin encabezado pueden incorporar el Editor universal para poner al alcance de sus autores la edición en contexto y sin complicaciones."
 
 >[!CONTEXTUALHELP]
