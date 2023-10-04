@@ -1,26 +1,26 @@
 ---
-title: Publicación de contenido con el Editor visual universal
-description: Descubra cómo el Editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
+title: Publicación de contenido con el editor universal
+description: Descubra cómo el Editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: ht
-source-wordcount: '367'
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+workflow-type: tm+mt
+source-wordcount: '361'
 ht-degree: 100%
 
 ---
 
 
-# Publicación de contenido con el Editor visual universal {#publishing}
+# Publicación de contenido con el editor universal {#publishing}
 
-Descubra cómo el Editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
+Descubra cómo el Editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 
 ## Similitudes con AEM {#similarities}
 
-Para los usuarios de AEM, el proceso para publicar contenido con el Editor visual universal funciona como está acostumbrado: al publicar en AEM, el contenido se duplica desde el nivel de creación al nivel de publicación.
+Para los usuarios de AEM, el proceso para publicar contenido con el Editor universal funciona como está acostumbrado: al publicar en AEM, el contenido se duplica desde el nivel de creación al nivel de publicación.
 
 ## Diferencias {#differences}
 
-Lo que hace que la publicación con el Editor visual universal sea un poco diferente no es tanto el editor en sí, sino el alojamiento externo de la aplicación que el Editor universal hace posible.
+Lo que hace que la publicación con el Editor universal sea un poco diferente no es tanto el editor en sí, sino el alojamiento externo de la aplicación que el Editor universal hace posible.
 
 Cuando se aloja de forma externa, la aplicación web debe garantizar que el contenido se cargue desde el nivel de creación cuando los autores abren la aplicación en el editor y se carga desde el nivel de publicación cuando los visitantes acceden a la aplicación.
 
