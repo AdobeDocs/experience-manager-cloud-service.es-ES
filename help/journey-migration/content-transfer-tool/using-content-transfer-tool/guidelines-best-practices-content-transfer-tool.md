@@ -2,10 +2,10 @@
 title: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 description: Conozca las directrices y las prácticas recomendadas para utilizar la herramienta de transferencia de contenido.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 14%
+source-wordcount: '1432'
+ht-degree: 16%
 
 ---
 
@@ -78,12 +78,6 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 * Los usuarios y grupos transferidos por la herramienta de transferencia de contenido son solo aquellos que el contenido requiere para satisfacer los permisos. El _Extracción_ El proceso copia el `/home` al conjunto de migración y realiza Asignación de usuarios agregando un campo creado a partir de la dirección de correo electrónico de cada usuario. Para obtener más información, consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). El _Ingesta_ process copia todos los usuarios y grupos a los que se hace referencia en las ACL de contenido migradas. Consulte [Migración de grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) por consideraciones adicionales para los grupos utilizados en una directiva de grupo de usuarios cerrado (CUG).
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
-
-* Después de completar la *Extracción* fase del proceso de transferencia de contenido y antes de iniciar la *Fase de ingesta* AEM para introducir contenido en el archivo as a Cloud Service de la *Fase* o *Producción* instancias, registre un ticket de asistencia. Notificar al Adobe de su intención de ejecutar *Ingesta* para que el Adobe pueda garantizar que no se produzcan interrupciones durante la *Ingesta* proceso. Registre el ticket de asistencia una semana antes de lo planeado *Ingesta* fecha. Después de enviar el vale de soporte, el equipo de asistencia le indicará los pasos siguientes. Puede enviar un vale de soporte técnico con los siguientes detalles:
-
-   * Fecha exacta y hora estimada (con su zona horaria) en que planea iniciar la *Ingesta* fase.
-   * Tipo de entorno (fase o producción) en el que planea introducir los datos.
-   * ID de programa.
 
 * El *Fase de ingesta* para el autor reduce la implementación de todo el autor. AEM Esto significa que el autor no está disponible durante todo el proceso de ingesta de datos. Asegúrese también de que no se ejecuten canalizaciones de Cloud Manager mientras ejecuta el *Ingesta* fase.
 

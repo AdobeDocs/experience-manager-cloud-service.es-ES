@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Cloud Service
 description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
+source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2191'
 ht-degree: 7%
 
 ---
@@ -20,9 +20,6 @@ ht-degree: 7%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=es#top-up-extraction-process" text="Extracción superior"
 
 Siga los pasos a continuación para ingerir el conjunto de migración mediante Cloud Acceleration Manager:
-
->[!NOTE]
->¿Se acordó de registrar un ticket de asistencia para esta ingesta? Consulte [Consideraciones importantes antes de utilizar la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) por esa y otras consideraciones para ayudar a que la ingesta sea exitosa.
 
 1. Vaya a Cloud Acceleration Manager. Haga clic en la tarjeta del proyecto y en la tarjeta Transferencia de contenido. Vaya a **Trabajos de ingesta** y haga clic en **Nueva ingesta**
 
@@ -120,21 +117,27 @@ Este mensaje indica que Cloud Acceleration Manager no pudo llegar al servicio de
 > El campo &quot;Token de migración&quot; se muestra porque, en algunos casos, la recuperación de ese token es lo que realmente no está permitido. Al permitir que se proporcione manualmente, puede permitir al usuario iniciar la ingesta rápidamente, sin ninguna ayuda adicional. Si se proporciona el token y sigue apareciendo el mensaje, el problema no consistió en recuperar el token.
 
 * AEM El as a Cloud Service mantiene el estado del entorno y, ocasionalmente, debe reiniciar el servicio de migración por varios motivos normales. Si ese servicio se está reiniciando, no se podrá acceder a él, pero estará disponible en algún momento.
-* Es posible que se esté ejecutando otro proceso en la instancia. Por ejemplo, si Release Orchestrator aplica una actualización, el sistema puede estar ocupado y el servicio de migración no está disponible con regularidad. Por este motivo, y la posibilidad de corromper la instancia de fase o producción, es muy recomendable pausar las actualizaciones durante una ingesta.
+* Es posible que se esté ejecutando otro proceso en la instancia. Por ejemplo, si [AEM Actualizaciones de versión de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) está aplicando una actualización, el sistema puede estar ocupado y el servicio de migración no está disponible regularmente. Una vez completado ese proceso, se puede volver a intentar iniciar la ingesta.
 * Si un [Se ha aplicado la Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) a través de Cloud Manager, impide que Cloud Acceleration Manager llegue al servicio de migración. No se puede añadir una dirección IP para ingestas porque es dinámica. Actualmente, la única solución es deshabilitar la lista de permitidos IP mientras se ejecuta la ingesta.
 * Puede haber otras razones que requieren investigación. Si la ingesta sigue fallando, póngase en contacto con el Servicio de atención al cliente de Adobe.
 
-### Actualizaciones automáticas a través de Release Orchestrator sigue activado
+### AEM Actualizaciones e ingestas de versiones de
 
-Release Orchestrator mantiene actualizados automáticamente los entornos mediante la aplicación automática de actualizaciones. Si la actualización se activa cuando se realiza una ingesta, puede causar resultados impredecibles, incluido el daño del entorno. Una buena razón para registrar un ticket de asistencia al cliente antes de iniciar una ingesta (consulte la &quot;Nota&quot; anterior), de modo que se pueda programar la desactivación temporal del Release Orchestrator.
+[AEM Actualizaciones de versión de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) AEM se aplican automáticamente a los entornos para mantenerlos actualizados con la versión as a Cloud Service más reciente de la. Si la actualización se activa cuando se realiza una ingesta, puede causar resultados impredecibles, incluido el daño del entorno.
 
-Si Release Orchestrator sigue ejecutándose cuando se inicia una ingesta, la interfaz de usuario presenta este mensaje. Puede optar por continuar de todos modos, aceptando el riesgo, marcando el campo y pulsando el botón de nuevo.
+AEM Si el programa de destino incorpora las &quot;Actualizaciones de versión de&quot;, el proceso de ingesta intentará desactivar su cola antes de iniciarse. Cuando se complete la ingesta, el estado del actualizador de versiones se devolverá a como estaba antes de que se iniciara la ingesta.
 
 >[!NOTE]
 >
-> Release Orchestrator se está implementando en entornos de desarrollo, por lo que también se deben pausar las actualizaciones en esos entornos.
+> AEM Ya no es necesario registrar un ticket de asistencia para desactivar las &quot;Actualizaciones de versión de la versión de la aplicación&quot; de la aplicación.
 
-![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+AEM Si &quot;Actualizaciones de la versión de la versión de la aplicación&quot; está activa (es decir, las actualizaciones se están ejecutando o están en cola para ejecutarse), la ingesta no comenzará y la interfaz de usuario mostrará el siguiente mensaje. Una vez completadas las actualizaciones, se puede iniciar la ingesta. Cloud Manager se puede utilizar para ver el estado actual de las canalizaciones del programa.
+
+>[!NOTE]
+>
+> AEM &quot;Actualizaciones de la versión de la aplicación&quot; se ejecuta en la canalización del entorno y esperará hasta que la canalización esté limpia. Si las actualizaciones se ponen en cola durante más tiempo del esperado, asegúrese de que un flujo de trabajo personalizado no tenga la canalización bloqueada de forma involuntaria.
+
+![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
 ### Error de ingesta superior debido a una infracción de la restricción de unicidad
 
