@@ -1,16 +1,16 @@
 ---
-title: Incrustar formulario adaptable en una página web externa
-description: Aprenda a incrustar un formulario adaptable en una página web externa
+title: Cómo incrustar un formulario adaptable basado en componentes principales en una página web externa
+description: Aprenda a incrustar un Forms adaptable en un sitio web.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 91%
+source-wordcount: '984'
+ht-degree: 88%
 
 ---
-
 
 # Incrustar formulario adaptable basado en componentes principales en una página web externa {#embed-adaptive-form-in-external-web-page}
 
@@ -162,6 +162,3 @@ Al incrustar un formulario adaptable en una página web, tenga en cuenta las sig
 1. En la instancia de publicación de AEM, vaya al Administrador de configuración de la consola web de AEM en `https://'[server]:[port]'/system/console/configMgr`.
 1. Busque y abra la configuración **Filtro de referencias de Apache Sling**.
 1. En el campo Hosts permitidos, especifique el dominio en el que reside la página web. Permita que el host realice peticiones POST al servidor de AEM. También puede utilizar una expresión regular para especificar una serie de dominios de aplicación externos.
-
-
-

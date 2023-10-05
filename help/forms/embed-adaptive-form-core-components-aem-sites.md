@@ -4,9 +4,9 @@ description: Utilice los componentes principales de un formulario adaptable en u
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2150'
 ht-degree: 94%
 
 ---
@@ -267,3 +267,8 @@ La página de AEM Sites mantiene una referencia al formulario adaptable. Cuando 
 
 * El encabezado y el pie de página del formulario original no se incluyen en el formulario incrustado.
 * Los borradores de los usuarios y los envíos de formularios incrustados son compatibles y visibles en las pestañas Borradores y Formularios enviados del portal de Formularios.
+
+>[!MORELIKETHIS]
+>
+>* [Incrustar formulario adaptable basado en componentes principales en una página web externa](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [Incrustar formulario adaptable en una página web externa](/help/forms/embed-adaptive-form-external-web-page.md)

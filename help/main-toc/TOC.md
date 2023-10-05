@@ -8,10 +8,10 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9146bf7222ad3cb74e6558868c41b822364ef3f0
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '4296'
-ht-degree: 94%
+source-wordcount: '4308'
+ht-degree: 93%
 
 ---
 
@@ -570,6 +570,7 @@ ht-degree: 94%
          + [Integración de un formulario adaptable con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incrustar un formulario adaptable en una página de AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Incrustar formulario adaptable basado en componentes principales en una página web externa](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [Incrustar formulario adaptable basado en componentes de base en una página web externa](/help/forms/embed-adaptive-form-external-web-page.md)
       + Modelo de datos de formulario {#use-form-data-model}
          + [Conexión de las fuentes de datos a Cloud Service](/help/forms/data-integration.md)
          + [Configuración de fuentes de datos](/help/forms/configure-data-sources.md)
