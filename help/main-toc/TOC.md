@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: 1d0001f967cad074ffc8d91f77241502ffaa1d94
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4313'
 ht-degree: 93%
 
 ---
@@ -87,6 +87,7 @@ ht-degree: 93%
    + Notas de la versión de Cloud Manager {#cloud-manager}
       + [Notas de la versión actual](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [Notas de la versión 2023.9.0](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
          + [Notas de la versión 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [Notas de la versión 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [Notas de la versión 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
@@ -847,7 +848,8 @@ ht-degree: 93%
          + [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [Tablero de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Acceder y administrar registros](/help/implementing/cloud-manager/manage-logs.md)
-      + [Creación de informes de SLA](/help/implementing/cloud-manager/sla-reporting.md)
+      + [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md)
+      + [Crear informes de SLA](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Notificaciones](/help/implementing/cloud-manager/notifications.md)
       + Certificados SSL {#manage-ssl-certificates}

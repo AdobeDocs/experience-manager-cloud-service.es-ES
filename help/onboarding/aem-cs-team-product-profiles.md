@@ -2,12 +2,13 @@
 title: Perfiles de AEM as a Cloud Service Team y de producto
 description: Aprenda cómo los perfiles de equipo y de producto de AEM as a Cloud Service pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '759'
-ht-degree: 100%
+source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 89%
 
 ---
+
 
 # Perfiles de AEM as a Cloud Service Team y de producto {#product-profiles}
 
@@ -54,10 +55,18 @@ Cloud Manager tiene perfiles de producto preconfigurados que se pueden considera
 
 Cada uno de los perfiles de producto tiene permisos específicos asociados a ellos.
 
-* **Propietario del negocio**: En este rol, tiene permiso para agregar un nuevo programa o editar un programa, agregar o actualizar un entorno, implementar código en un entorno de AEM o ejecutar comprobaciones de calidad del código.
-* **Administrador de implementación**: En este rol, tiene permiso para agregar o actualizar un entorno, ejecutar cualquier canalización e implementar código en un entorno de AEM, o ejecutar comprobaciones de calidad del código.
-* **Desarrollador**: En este rol, tiene permiso para generar tokens de acceso personal para acceder a Git.
-* **Administrador de programas**: En este rol, tiene permiso para programar canalizaciones, anular las puertas de calidad de tres niveles y proporcionar la aprobación de producción.
+* **Propietario del negocio**
+   * AEM En este rol tiene permiso para agregar un nuevo programa o editar un programa, agregar o actualizar un entorno, implementar código en un entorno de trabajo o ejecutar comprobaciones de calidad del código de un entorno de trabajo.
+   * Este usuario es responsable de definir los indicadores clave de rendimiento (KPI), aprobar implementaciones de producción y anular errores importantes de tres niveles cuando sea necesario.
+* **Administrador de implementación**
+   * AEM En esta función, tiene permiso para agregar o actualizar un entorno, ejecutar cualquier canalización e implementar código en un entorno de trabajo, o ejecutar comprobaciones de calidad del código en un entorno de trabajo, o bien, ejecutar comprobaciones de calidad del código.
+   * Este usuario gestiona las operaciones de implementación y utiliza Cloud Manager para ejecutar implementaciones de ensayo/producción, editar las canalizaciones CI/CD, aprobar errores importantes de tres niveles cuando sea necesario y puede acceder al repositorio de Git.
+* **Desarrollador**
+   * En este rol, tiene permiso para generar tokens de acceso personal para acceder a Git.
+   * Este usuario desarrolla y prueba el código de aplicación personalizado y emplea principalmente Cloud Manager para ver el estado de implementación y puede acceder al repositorio de Git para confirmaciones de código.
+* **Administrador de programa**
+   * En este rol, tiene permiso para programar canalizaciones, anular las puertas de calidad de tres niveles y proporcionar la aprobación de producción.
+   * Este usuario emplea Cloud Manager para realizar la configuración del equipo, revisar el estado y ver los indicadores clave de rendimiento (KPI) y puede aprobar errores importantes de tres niveles cuando sea necesario.
 
 Se puede asignar un usuario a varios perfiles de producto. Por ejemplo, si se asignan ambos roles, **Propietario del negocio** y **Administrador de implementación** a un usuario, le da la suma de estos permisos.
 

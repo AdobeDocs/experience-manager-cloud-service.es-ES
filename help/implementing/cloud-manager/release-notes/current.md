@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión 2023.9.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service
-description: Estas son las notas de la versión 2023.9.0 para Cloud Manager en AEM as a Cloud Service.
+title: Notas de la versión 2023.10.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service
+description: Estas son las notas de la versión 2023.10.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
+source-git-commit: 661eac787439e6e696574a6973afa7e39eeb443e
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 23%
+source-wordcount: '529'
+ht-degree: 18%
 
 ---
 
 
-# Notas de la versión 2023.9.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión 2023.10.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta las notas de la versión 2023.9.0 para Cloud Manager en AEM as a Cloud Service.
+Esta página documenta las notas de la versión 2023.10.0 para Cloud Manager en AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,16 +21,31 @@ Esta página documenta las notas de la versión 2023.9.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2023.9.0 en AEM as a Cloud Service fue el 14 de septiembre de 2023. El próximo lanzamiento está programado para el 5 de octubre de 2023.
+La fecha de lanzamiento de Cloud Manager 2023.10.0 en AEM as a Cloud Service es el 5 de octubre de 2023. El próximo lanzamiento está planificado para el 2 de noviembre de 2023.
 
 ## Novedades {#what-is-new}
 
-* Los registros de CDN, cuando están disponibles, se pueden descargar a través de la IU de Cloud Manager.
-* Los usuarios ahora pueden optar por incluir las pruebas de auditoría de experiencias con tecnología Google LightHouse en canalizaciones full stack que no sean de producción.
+* [Ahora puede cancelar de forma segura una canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#cancel) en los pasos validar y crear imagen.
+* Mejoras en [indexación](/help/operations/indexing.md) han reducido la duración de la canalización al implementar nuevos índices.
+   * Las mejoras varían según el perfil de contenido.
+* Automático [actualizaciones para entornos de desarrollo](/help/implementing/cloud-manager/manage-environments.md#updating-environments) están habilitadas de forma predeterminada para los programas nuevos, lo que le ahorra el tiempo necesario para ejecutar las actualizaciones manualmente.
+   * Esta actualización se implementará por fases.
+* Con la versión de octubre de 2023 de Cloud Manager, las versiones de Java y Maven se actualizan mediante una implementación gradual.
+   * Apache Maven se está actualizando a la versión 3.8.8.
+   * Las versiones de Java se actualizan al Oracle JDK 8u371 y al Oracle JDK 11.0.20.
+   * De forma predeterminada, la variable `JAVA_HOME` la variable de entorno se está actualizando a `/usr/lib/jvm/jdk1.8.0_371` que contiene el Oracle JDK 8u371.
+   * Ver el documento [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener más información.
+   * [Consulte el aviso de OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) para obtener más información sobre la seguridad y las correcciones de errores en estas actualizaciones de JDK.
 
 ## Programa de adopción temprana {#early-adoption}
 
 Forme parte de nuestro programa de adopción anticipada y tenga la oportunidad de probar algunas de las próximas funciones.
+
+### Permisos personalizados {#custom-permissions}
+
+[Permisos personalizados de Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) le permite crear nuevos perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para los usuarios de Cloud Manager.
+
+si está interesado en probar esta nueva función y compartir sus comentarios, envíe un mensaje de correo electrónico a `Grp-CloudManager-custom-permissions@adobe.com` de su dirección de correo electrónico asociada a su Adobe ID.
 
 ### Restauración de contenido de autoservicio {#content-restore}
 
@@ -52,9 +67,3 @@ Si está interesado en probar esta nueva función y compartir sus comentarios, e
 El tablero aprovecha Google Lighthouse, una herramienta automatizada de código abierto para mejorar la calidad de sus aplicaciones web. Puede ejecutarlo en cualquier página web, pública o que requiera autenticación. Tiene auditorías de rendimiento, accesibilidad, aplicaciones web progresivas, SEO y más.
 
 ¿Interesado en probar a conducir el nuevo tablero? Envíe un correo electrónico a `aem-lighthouse-pilot@adobe.com` a partir de su correo electrónico asociado con su Adobe ID y podemos ayudarle a empezar.
-
-## Correcciones de errores {#bug-fixes}
-
-* Cuando se elimina un programa, cualquier canalización asociada en ejecución ahora también se elimina.
-* Si una canalización está en curso, la variable **Enviar** del botón **Go-live completado** El cuadro de diálogo de está desactivado e informa al usuario de que la fecha de lanzamiento no se puede establecer debido a la canalización en ejecución.
-* Se ha corregido un error ocasional en el que todos los pasos de la ejecución de una canalización se marcaban como completados, pero el estado de la canalización seguía ejecutándose, lo que daba la apariencia de un estado atascado.
