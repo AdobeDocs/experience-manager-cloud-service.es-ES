@@ -1,13 +1,13 @@
 ---
 title: Configuración de reglas de filtro de tráfico con reglas WAF
 description: Usar reglas de filtrado de tráfico con reglas WAF para filtrar el tráfico
-source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
+exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
+source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2740'
 ht-degree: 2%
 
 ---
-
 
 # Configuración de reglas de filtrado de tráfico con reglas WAF para filtrar el tráfico {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
@@ -32,8 +32,7 @@ Las reglas de filtro de tráfico se pueden implementar en todos los tipos de ent
 
    ```
    config/
-        cdn/
-           cdn.yaml
+        cdn.yaml
    ```
 
 1. `cdn.yaml` debe contener metadatos, así como una lista de reglas de filtros de tráfico y reglas WAF.
@@ -46,7 +45,15 @@ Las reglas de filtro de tráfico se pueden implementar en todos los tipos de ent
    data:
      trafficFilters:
        rules:
-         ...
+       # Block simple path
+       - name: block-path
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/block/me'
+         action: block
    ```
 
 El parámetro &quot;kind&quot; debe configurarse como &quot;CDN&quot; y la versión debe establecerse como la versión de esquema, que actualmente es &quot;1&quot;. Consulte los ejemplos más adelante.
@@ -81,6 +88,7 @@ El parámetro &quot;kind&quot; debe configurarse como &quot;CDN&quot; y la versi
       > Los usuarios deben iniciar sesión como administrador de implementación para configurar o ejecutar estas canalizaciones.
       > Además, solo puede configurar y ejecutar una canalización de configuración por entorno.
 
+   1. Establezca Ubicación del código en la ubicación donde se almacena la configuración raíz (p. ej. /config).
    1. Seleccione **Guardar**. La nueva canalización aparecerá en la tarjeta de canalización y se podrá ejecutar cuando esté lista.
    1. Para RDE, se utilizará la línea de comandos, pero RDE no es compatible en este momento.
 
@@ -171,6 +179,7 @@ Un grupo de condiciones está compuesto por varias condiciones simples o de grup
 | **doesNotMatch** | `string` | true si el resultado del captador no coincide con la expresión regular proporcionada |
 | **en** | `array[string]` | true si la lista proporcionada contiene un resultado de captador |
 | **notIn** | `array[string]` | true si la lista proporcionada no contiene el resultado del captador |
+| **existe** | `boolean` | true cuando se establece en true y la propiedad existe o cuando se establece en false y la propiedad no existe |
 
 ### Estructura de acción {#action-structure}
 
@@ -188,7 +197,7 @@ Las acciones se priorizan según sus tipos en la siguiente tabla, en la que se o
 
 ### Lista de indicadores WAF {#waf-flags-list}
 
-El `wafFlag` La propiedad puede incluir lo siguiente:
+El `wafFlags` La propiedad puede incluir lo siguiente:
 
 | **Identificador de marca** | **Nombre de indicador** | **Descripción** |
 |---|---|---|
@@ -318,7 +327,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-**Ejemplo 4**
+**Ejemplo 5**
 
 Esta regla bloquea el acceso a los países OFAC:
 
@@ -333,7 +342,8 @@ data:
       - name: block-ofac-countries
         when:
           allOf:
-            - { reqProperty: tier, equals: publish }
+            - reqProperty: tier
+              matches: "author|publish"
             - reqProperty: clientCountry
               in:
                 - SY
@@ -379,8 +389,8 @@ data:
   trafficFilters:
     - name: limit-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        - reqProperty: tier
+        - matches: "author|publish"
       rateLimit:
         limit: 60
         window: 10
