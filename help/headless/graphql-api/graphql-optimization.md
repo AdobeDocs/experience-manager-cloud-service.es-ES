@@ -2,7 +2,7 @@
 title: Optimización de consultas de GraphQL
 description: Aprenda a optimizar las consultas de GraphQL al filtrar, paginar y ordenar los fragmentos de contenido en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: ba864cb28d2de0559d36f113e8e154ed5c115cae
+source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 65%
@@ -104,7 +104,7 @@ Para reducir los problemas de rendimiento y memoria, este conjunto de resultados
 AEM proporciona dos métodos para optimizar las consultas de GraphQL:
 
 * [Filtrado híbrido](#use-aem-graphql-hybrid-filtering)
-* [Paginación](#use-graphql-pagination)
+* [Paginación](#use-aem-graphql-pagination)
 
    * [Ordenación](#use-graphql-sorting) no está directamente relacionada con la optimización, pero sí con la paginación
 
