@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
+source-git-commit: 51b048f753fe2e548d0ffdd9e3a903b21032aed7
 workflow-type: tm+mt
-source-wordcount: '9448'
+source-wordcount: '9463'
 ht-degree: 2%
 
 ---
@@ -521,7 +521,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 
 
-### Habilite la compatibilidad con DASH, subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media {#enable-dash}
+## Habilite la compatibilidad con DASH, subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media {#enable-dash}
 
 **Acerca de la activación de la compatibilidad con DASH en su cuenta**
 DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para streaming de video y es ampliamente adoptado en diferentes visores de video. Cuando DASH está habilitado en su cuenta, tiene la opción de elegir entre DASH o HLS para flujo de vídeo adaptable. O bien, puede optar por ambos con el cambio automático entre los reproductores cuando **[!UICONTROL auto]** está seleccionado como tipo de reproducción en el ajuste preestablecido de Visor.
@@ -539,7 +539,7 @@ La activación de la compatibilidad con DASH en su cuenta se realiza mediante un
 
 **Acerca de la activación de la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta**
 
-Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado en su cuenta, también puede beneficiarse de tener soporte de pistas de multi-subtítulos y multi-audio habilitado automáticamente. Después de la activación, todos los vídeos subsiguientes que cargue se procesarán con una nueva arquitectura de back-end que incluya compatibilidad para agregar pistas de varios subtítulos y audio a sus vídeos.
+Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado en su cuenta, también puede beneficiarse de tener soporte de múltiples subtítulos y pistas de audio múltiples automáticamente habilitado. Después de la activación, todos los vídeos subsiguientes que cargue se procesarán con una nueva arquitectura de back-end que incluya compatibilidad para agregar pistas de varios subtítulos y audio a sus vídeos.
 
 >[!IMPORTANT]
 >
@@ -551,8 +551,9 @@ Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado 
 1. Para crear un caso de soporte, siga las instrucciones y asegúrese de proporcionar la siguiente información:
 
    * Nombre del contacto principal, correo electrónico, teléfono.
-   * Su ID de programa y el ID de entorno.
-   * Nombre de su cuenta de Dynamic Media.
+   * Su entorno de Cloud Service (ID de programa e ID de entorno).
+   * Nombre de la cuenta de empresa de Dynamic Media.
+   * Su región de Dynamic Media: Norteamérica (NA), Asia-Pacífico (APAC) o Europa-Oriente Medio-Asia (EMEA).
    * Especifique que desea habilitar la compatibilidad con DASH, subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, en Experience Manager 6.5.
 
 1. La Asistencia al cliente de Adobe le agrega a la Lista de espera de clientes en función del orden en que se envían las solicitudes.
@@ -887,7 +888,7 @@ Consulte [Servir contenido estático (que no sea de imagen)](https://experiencel
 
 ## Añadir marcadores de capítulo al vídeo {#adding-chapter-markers-to-video}
 
-Puede facilitar la visualización y navegación de los vídeos de formulario largo añadiendo marcadores de capítulo a vídeos únicos o a conjuntos de vídeos adaptables. Cuando un usuario reproduce el vídeo, puede seleccionar los marcadores de capítulo en la cronología del vídeo (también conocida como selección manual de vídeo). Pueden desplazarse fácilmente a su punto de interés o ir inmediatamente a nuevos contenidos, formación y demostraciones.
+Puede facilitar la visualización y navegación de los vídeos de formato largo añadiendo marcadores de capítulo a vídeos únicos o a conjuntos de vídeos adaptables. Cuando un usuario reproduce el vídeo, puede seleccionar los marcadores de capítulo en la cronología del vídeo (también conocida como selección manual de vídeo). Pueden desplazarse fácilmente a su punto de interés o ir inmediatamente a nuevos contenidos, formación y demostraciones.
 
 >[!NOTE]
 >
