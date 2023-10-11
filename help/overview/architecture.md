@@ -2,10 +2,10 @@
 title: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service
 description: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1826'
-ht-degree: 100%
+source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
+workflow-type: tm+mt
+source-wordcount: '2015'
+ht-degree: 91%
 
 ---
 
@@ -198,3 +198,26 @@ La nueva arquitectura de AEM as a Cloud Service presenta algunos cambios e innov
 * Se ha introducido el concepto de nodo maestro para automatizar el ciclo de vida de los nodos de publicación. El nodo maestro es un nodo de publicación especializado, al que ningún usuario final tiene acceso y desde el que se crean todos los nodos del servicio de publicación. Las operaciones de mantenimiento, como la compactación, se realizan en el repositorio de contenido adjunto al nodo maestro. Los nodos de publicación se reciclan diariamente y no requieren ningún tipo de mantenimiento rutinario; en el pasado, dicho mantenimiento requería cierto tiempo de inactividad, especialmente para la instancia de creación.
 
 * La arquitectura separa completamente el contenido de la aplicación del código de la aplicación y la configuración. Todo el código y la configuración son prácticamente inmutables y se codifican en la imagen de línea de base utilizada para crear los distintos nodos de Author y Publish. Como resultado, existe una garantía absoluta de que cada nodo es idéntico, y los cambios en el código y la configuración solo se pueden realizar de forma global mediante la ejecución de una canalización de Cloud Manager.
+
+## AEM con Edge Delivery Services {#aem-with-edge-delivery-services}
+
+Con la adición de Edge Delivery Services AEM, ofrece experiencias excepcionales que impulsan la participación y las conversiones. AEM Lo hace ofreciendo experiencias de alto impacto que son rápidas de crear y desarrollar. Los Edge Delivery Services son un conjunto de servicios componibles que permiten un entorno de desarrollo rápido en el que los autores pueden actualizar y publicar rápidamente y en el que los nuevos sitios se inician rápidamente. De este modo, los Edge Delivery Services permiten mejorar la conversión, reducir los costes y proporcionar una velocidad de contenido extrema.
+
+La arquitectura actualizada consta de:
+
+* Gestión de contenido, que ahora incluye una selección de editores:
+   * Editor visual universal
+   * Editor de fragmentos de contenido
+   * Editor de página
+   * Creación basada en documentos; desde SharePoint o Google Drive
+* Entrega de experiencias, que ahora incluye:
+   * Servicios de entrega perimetral
+* Servicios auxiliares para la entrega rápida y eficaz de contenido y código
+
+![AEM Información general as a Cloud Service de: con Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM Información general as a Cloud Service de: con Edge Delivery Services")
+
+Consulte también lo siguiente:
+
+* [AEM Información general as a Cloud Service de: con Edge Delivery Services](/help/edge/overview.md)
+* [Uso de Edge Delivery Services](/help/edge/using.md)
+* [AEM Explore la arquitectura subyacente y las piezas importantes de la arquitectura as a Cloud Service con los Edge Delivery Services.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
