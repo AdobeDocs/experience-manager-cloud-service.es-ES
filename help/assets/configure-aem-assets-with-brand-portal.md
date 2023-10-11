@@ -5,7 +5,7 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
+source-git-commit: ac393e4b275693fae7413fb79496052d106b219c
 workflow-type: tm+mt
 source-wordcount: '2589'
 ht-degree: 12%
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 La configuración de Adobe Experience Manager Assets Brand Portal permite publicar recursos de marca aprobados desde Adobe Experience Manager Assets como [!DNL Cloud Service] instancia de a Brand Portal y distribuirlas a los usuarios de Brand Portal.
@@ -106,7 +106,6 @@ Realice los siguientes pasos para validar la conexión entre su Experience Manag
    Un agente de distribución de Brand Portal (**[!UICONTROL bpdistributionagent0]**) se crea en **[!UICONTROL Publicar en Brand Portal]**.
 
    ![Crear agente de distribución](assets/test-bpconfig2.png)
-
 
 1. Clic **[!UICONTROL Publicar en Brand Portal]** para abrir el agente de distribución.
 
