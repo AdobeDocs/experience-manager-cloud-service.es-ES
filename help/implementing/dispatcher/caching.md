@@ -3,9 +3,9 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: AEM Obtenga información acerca de los conceptos básicos del almacenamiento en caché en as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
+source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2878'
 ht-degree: 2%
 
 ---
@@ -99,6 +99,33 @@ En ambos casos, los encabezados de almacenamiento en caché se pueden sobrescrib
 ```
 
 Al modificar los encabezados de almacenamiento en caché en la capa de Dispatcher, tenga cuidado de no almacenar en caché demasiado ampliamente. Consulte la descripción en la sección HTML/texto [superior](#html-text). Además, asegúrese de que los recursos que se supone que deben mantenerse privados (en lugar de almacenarse en caché) no formen parte del `LocationMatch` filtros de directiva.
+
+AEM Los recursos JCR (superiores a 16 KB) almacenados en el almacén de blobs generalmente se sirven como redirecciones 302 por parte de los usuarios de. Estas redirecciones son interceptadas y seguidas por CDN y el contenido se entrega directamente desde el almacén de blobs. En estas respuestas solo se puede personalizar un conjunto limitado de encabezados. Por ejemplo, para personalizar `Content-Disposition` debe utilizar las directivas de dispatcher de la siguiente manera:
+
+```
+<LocationMatch "\.(?i:pdf)$">
+  ForceType application/pdf
+  Header set Content-Disposition inline
+  </LocationMatch>
+```
+
+La lista de encabezados que se pueden personalizar en las respuestas de blob es la siguiente:
+
+```
+content-security-policy
+x-frame-options
+x-xss-protection
+x-content-type-options
+x-robots-tag
+access-control-allow-origin
+content-disposition
+permissions-policy
+referrer-policy
+x-vhost
+content-disposition
+cache-control
+vary
+```
 
 #### Nuevo comportamiento de almacenamiento en caché predeterminado {#new-caching-behavior}
 
