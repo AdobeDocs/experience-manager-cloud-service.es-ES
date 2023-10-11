@@ -1,13 +1,14 @@
 ---
-title: AEM Configuración del envío asincrónico de Forms adaptable de la
+title: AEM Cómo configurar el envío asincrónico en Forms adaptable para la
 description: Obtenga información sobre cómo configurar el envío asincrónico en formularios adaptables. Obtenga información más detallada sobre cómo funciona el envío asincrónico en los formularios adaptables.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 97%
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: Diseño de un esquema JSON para un formulario adaptable
+title: Cómo diseñar un esquema JSON para un formulario adaptable
 description: Aprenda a crear un esquema JSON para un formulario adaptable y a crear un formulario adaptable basado en el esquema para producir datos de quejas de esquema.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 90%
+source-wordcount: '1345'
+ht-degree: 89%
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: Crear ayuda en contexto para campos de formulario
+title: AEM ¿Cómo se agrega el texto de ayuda para los campos de Forms adaptables de la?
 description: AEM Forms permite agregar ayuda en contexto a los campos y paneles de los formularios adaptables, como texto o medios enriquecidos, incluidos vídeos.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 94%
+source-wordcount: '369'
+ht-degree: 91%
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: ¿Cómo se trabaja con el modelo de datos de formulario?
+title: ¿Cuál es el proceso para trabajar con un modelo de datos de formulario en AEM Forms?
 description: Agregar objetos y servicios del modelo de datos, crear objetos del modelo de datos y propiedades secundarias, configurar servicios y trabajar con propiedades de navegación de servicios OData.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4115'
 ht-degree: 97%
 
 ---

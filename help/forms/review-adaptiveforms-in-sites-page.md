@@ -1,12 +1,12 @@
 ---
-title: ¿Cómo crear y administrar revisiones de Forms adaptable incrustadas o creadas en páginas de Sites?
+title: ¿Cómo se envía un formulario adaptable para su revisión? ¿Cómo administrar las revisiones de un formulario adaptable de AEM?
 description: Revisar es un mecanismo que permite al revisor realizar distintas tareas para formularios adaptables mediante el paso Asignar tarea.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 93%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: Texto de marcador de posición de  [!DNL AEM Forms]
+title: ¿Cómo se agrega texto de marcador de posición a los campos de formulario?
 description: El texto de marcador de posición está diseñado para ayudar al usuario con la introducción de datos cuando el control no tiene valor. Puede ser un valor de muestra o una breve descripción del formato esperado.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 100%
+source-wordcount: '211'
+ht-degree: 96%
 
 ---
 

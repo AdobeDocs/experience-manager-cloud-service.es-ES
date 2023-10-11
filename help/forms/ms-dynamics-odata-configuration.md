@@ -1,14 +1,14 @@
 ---
-title: Cómo configurar  [!DNL Microsoft Dynamics]  OData
+title: ¿Cómo configuro? [!DNL Microsoft Dynamics] OData para AEM Forms
 description: Aprenda a crear el modelo de datos de formulario en función de las entidades, atributos y servicios definidos en [!DNL Microsoft Dynamics] servicio.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 95%
+source-wordcount: '986'
+ht-degree: 94%
 
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: Cómo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable
+title: ¿Cómo puedo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes de base?
 description: Para el Forms adaptable, puede añadir configuraciones regionales para más idiomas, aparte de la que se proporciona de forma predeterminada.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 80%
+source-wordcount: '1264'
+ht-degree: 79%
 
 ---
 

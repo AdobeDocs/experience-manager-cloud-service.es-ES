@@ -1,9 +1,9 @@
 ---
-title: Obtenga información sobre cómo importar, exportar y organizar Forms adaptable, PDF forms y otros recursos en un[!DNL AEM Forms] instancia
+title: Cómo importar, exportar y organizar Forms adaptable o PDF forms en una instancia de AEM Forms
 description: Obtenga información sobre cómo migrar Forms adaptable, PDF form AEM, temáticas y otros recursos de soporte a y desde instancias de y de la.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 94%

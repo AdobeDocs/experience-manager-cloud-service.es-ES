@@ -1,11 +1,11 @@
 ---
-title: Grupos de  [!DNL AEM Forms]  as a Cloud Service integrados
+title: ¿Qué grupos de usuarios están disponibles de forma predeterminada en AEM Forms as a Cloud Service?
 description: La lista de los grupos de usuarios y los permisos predeterminados asignados a cada grupo
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 85%
+source-wordcount: '185'
+ht-degree: 87%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 85%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Puede [crear grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=es#accessing) y asignar políticas y [usuarios](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=es#accessing) a los grupos. Estas políticas controlan los permisos de los usuarios que forman parte del grupo.
@@ -108,9 +108,9 @@ Una vez configura [!DNL AEM Forms] as a Cloud Service, los grupos enumerados
 
 ## Consulte también
 
-* [Incorporación a un entorno Cloud Service](/help/forms/setup-forms-cloud-service.md)
+* [Incorporación al entorno de Cloud Service](/help/forms/setup-forms-cloud-service.md)
 * [Configuración de un entorno de desarrollo local](/help/forms/setup-local-development-environment.md)
-* [AEM Migrar de Forms de 6.5 a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [Migración de AEM 6.5 Forms a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [Creación un formulario adaptable independiente](/help/forms/creating-adaptive-form-core-components.md)
 * [Agregar un formulario adaptable a la página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 

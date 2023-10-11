@@ -1,14 +1,14 @@
 ---
-title: Cómo incrustar un formulario adaptable basado en componentes principales en una página web externa
-description: Aprenda a incrustar un Forms adaptable en un sitio web.
+title: ¿Cómo se puede incrustar un formulario adaptable en una página web externa?
+description: Aprenda a incrustar un formulario adaptable en una página web externa
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 88%
+source-wordcount: '982'
+ht-degree: 90%
 
 ---
 

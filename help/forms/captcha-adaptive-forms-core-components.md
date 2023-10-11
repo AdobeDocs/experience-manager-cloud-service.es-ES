@@ -1,15 +1,15 @@
 ---
-title: Uso de Google AEM reCAPTCHA en un formulario adaptable con un tipo de datos de
+title: ¿Cómo se utiliza Google AEM reCAPTCHA en un formulario adaptable con un tipo de datos de la?
 description: Mejore la seguridad de los formularios con el servicio reCAPTCHA de Google sin esfuerzo. Guía paso a paso en el interior!
 topic-tags: Adaptive Forms, author
 keywords: Servicio reCAPTCHA de Google, Forms adaptable, desafío CAPTCHA, prevención de bots, componentes principales, seguridad de envío de formularios, prevención de correo no deseado de formularios
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '947'
 ht-degree: 19%
 
 ---
-
 
 # Usar Google AEM reCAPTCHA en un formulario adaptable de forma basado en componentes principales {#using-reCAPTCHA-in-adaptive-forms}
 

@@ -1,11 +1,11 @@
 ---
-title: ¿Cómo se crea una plantilla de formulario adaptable?
+title: ¿Cómo se puede crear una plantilla de formulario adaptable?
 description: Cree plantillas de formularios adaptables para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2095'
-ht-degree: 97%
+source-wordcount: '2096'
+ht-degree: 96%
 
 ---
 

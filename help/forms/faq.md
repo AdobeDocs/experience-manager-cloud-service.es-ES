@@ -1,13 +1,13 @@
 ---
-title: Preguntas frecuentes sobre Forms as a Cloud Service
+title: Preguntas frecuentes sobre AEM Forms as a Cloud Service
 description: Preguntas frecuentes sobre Forms as a Cloud Service
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
-source-git-commit: 93e7c4b31ea3037c98b64790ffdee11f94cc6134
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '995'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Puede descargar la documentación de referencia de la API de [!DNL JavaScript™
 * **¿Puedo seguir utilizando las temáticas y las plantillas existentes?**
 Sí, puede seguir utilizando las temáticas creadas con AEM 6.4 Forms y AEM 6.5 Forms después de usar la [Utilidad de migración](migrate-to-forms-as-a-cloud-service.md) para moverlos a [!DNL AEM Forms] as a Cloud Service.
 
-   También puede crear un proyecto basado en el [Arquetipo](setup-local-development-environment.md#forms-cloud-service-local-development-environment) de [!DNL AEM Forms] as a Cloud Service y utilizar las plantillas y las temáticas de ejemplo que incluye.
+  También puede crear un proyecto basado en el [Arquetipo](setup-local-development-environment.md#forms-cloud-service-local-development-environment) de [!DNL AEM Forms] as a Cloud Service y utilizar las plantillas y las temáticas de ejemplo que incluye.
 
 * **¿Puedo producir datos compatibles con esquemas?**
 Sí, puede crear formularios adaptables para producir datos compatibles con esquemas.
@@ -60,7 +60,7 @@ La funciones relacionadas con el almacenamiento en caché de contenido seguro es
 
 * **Tengo un formulario adaptable localizado; pero no se está representando la versión localizada. ¿Cuál puede ser la causa y cómo puedo resolver el problema?**
 
-   La convención de URL de los formularios adaptables localizados admite ahora la especificación de una configuración regional en la URL. La nueva convención de URL permite almacenar en caché formularios localizados en Dispatcher o CDN. En el entorno de Cloud Service, utilice el formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar una versión localizada de un formulario adaptable en lugar de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe recomienda utilizar el almacenamiento en caché de CDN o Dispatcher. Ayuda a mejorar la velocidad de procesamiento de los formularios rellenados previamente.
+  La convención de URL de los formularios adaptables localizados admite ahora la especificación de una configuración regional en la URL. La nueva convención de URL permite almacenar en caché formularios localizados en Dispatcher o CDN. En el entorno de Cloud Service, utilice el formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar una versión localizada de un formulario adaptable en lugar de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe recomienda utilizar el almacenamiento en caché de CDN o Dispatcher. Ayuda a mejorar la velocidad de procesamiento de los formularios rellenados previamente.
 
 * **He actualizado un formulario adaptable; ¿la versión actualizada no está disponible para que los clientes la utilicen?**
 De forma predeterminada, CDN actualiza la caché cada 5 minutos. Espere 5 minutos y, a continuación, compruebe si aparece la versión actualizada.
@@ -82,11 +82,11 @@ El modelo de datos de formulario no proporciona ningún método para utilizar ce
 
 * **¿Puedo utilizar la acción de envío del portal de Forms en formularios adaptables?**
 
-   Modifique los formularios adaptables existentes para utilizar las acciones de envío de [Enviar a extremo REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Enviar correo electrónico](configuring-submit-actions.md#send-email), [Enviar mediante el modelo de datos de formulario](configuring-submit-actions.md#submit-using-form-data-model) e [Invocar un flujo de trabajo de AEM](configuring-submit-actions.md#invoke-an-aem-workflow). El portal de Forms y la acción de envío del portal de Forms todavía no están disponibles. Consulte las notas de la versión mensuales para obtener más información la disponibilidad de las funciones.
+  Modifique los formularios adaptables existentes para utilizar las acciones de envío de [Enviar a extremo REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Enviar correo electrónico](configuring-submit-actions.md#send-email), [Enviar mediante el modelo de datos de formulario](configuring-submit-actions.md#submit-using-form-data-model) e [Invocar un flujo de trabajo de AEM](configuring-submit-actions.md#invoke-an-aem-workflow). El portal de Forms y la acción de envío del portal de Forms todavía no están disponibles. Consulte las notas de la versión mensuales para obtener más información la disponibilidad de las funciones.
 
 * **¿Puedo usar la aplicación [!DNL AEM Forms] con [!DNL AEM Forms] as a Cloud Service?**
 
-   Los formularios adaptables ofrecen un diseño interactivo. Estos formularios cambian el aspecto, el diseño y la interactividad en función del dispositivo subyacente. Puede seguir utilizando formularios adaptables en dispositivos móviles mientras consulta las notas de la versión mensuales sobre la disponibilidad de las funciones.
+  Los formularios adaptables ofrecen un diseño interactivo. Estos formularios cambian el aspecto, el diseño y la interactividad en función del dispositivo subyacente. Puede seguir utilizando formularios adaptables en dispositivos móviles mientras consulta las notas de la versión mensuales sobre la disponibilidad de las funciones.
 
 * **¿Qué funciones no forman parte de la versión inicial de GA?**
 El portal de Forms, la aplicación [!DNL AEM Forms], la integración con Adobe Analytics y la integración con Adobe Target no forman parte de la versión inicial de GA. Consulte las notas de la versión mensuales para obtener más información sobre las nuevas funciones.

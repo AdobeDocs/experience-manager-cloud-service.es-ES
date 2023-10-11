@@ -1,12 +1,12 @@
 ---
-title: Temas de referencia
+title: Obtener temáticas de referencia y plantillas para formularios adaptables
 description: Utilice la referencia a las temáticas de formularios adaptables, las plantillas y los modelos de datos de formulario que se proporcionan para empezar rápidamente.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 96%
+source-wordcount: '518'
+ht-degree: 94%
 
 ---
 

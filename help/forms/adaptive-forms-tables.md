@@ -1,12 +1,12 @@
 ---
-title: Tablas en formularios adaptables
+title: ¿Cómo se agregan tablas a un formulario adaptable?
 description: Utilice el componente Tabla para agregar tablas a un formulario adaptable. Junto con ayudar con el diseño interactivo, el componente de tabla permite añadir elementos de tabla XDP.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2496'
 ht-degree: 95%
 
 ---

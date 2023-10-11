@@ -1,10 +1,10 @@
 ---
-title: Administración de metadatos para AEM Forms
+title: ¿Cómo se pueden administrar los metadatos de AEM Forms?
 description: Los metadatos facilitan la categorización y organización de los recursos y ayudan a los usuarios que buscan un recurso específico.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1741'
 ht-degree: 96%
 
 ---

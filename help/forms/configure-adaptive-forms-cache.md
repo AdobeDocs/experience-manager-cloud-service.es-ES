@@ -1,15 +1,15 @@
 ---
-title: Configuración de la caché de los formularios adaptables
+title: ¿Qué es la caché de formularios adaptables? AEM ¿y cómo almacenar en caché un formulario adaptable de la?
 description: La memoria caché de Forms adaptable está diseñada para Forms y documentos adaptables con el objetivo de reducir el tiempo necesario para procesar un formulario o documento adaptable.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 69%
+source-wordcount: '974'
+ht-degree: 68%
 
 ---
 
