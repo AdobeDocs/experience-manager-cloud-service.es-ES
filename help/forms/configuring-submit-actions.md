@@ -2,7 +2,7 @@
 title: Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: 89e61c009890e2052c5db74b38c93fd54e697cd3
 workflow-type: tm+mt
 source-wordcount: '3395'
 ht-degree: 97%
@@ -235,6 +235,8 @@ La acción de envío **[!UICONTROL Enviar a OneDrive]** conecta un formulario ad
 2. [Utilizar la acción de envío Enviar a OneDrive en un formulario adaptable](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): conecta el formulario adaptable al Microsoft® OneDrive configurado.
 
 ### Crear configuración de OneDrive {#create-onedrice-configuration}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
 Para conectar AEM Forms al almacenamiento de Microsoft® OneDrive:
 
