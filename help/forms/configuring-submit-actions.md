@@ -2,7 +2,7 @@
 title: Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 89e61c009890e2052c5db74b38c93fd54e697cd3
+source-git-commit: 6d949d9f31cc13b30f8ba06058911ddfe8e817af
 workflow-type: tm+mt
 source-wordcount: '3395'
 ht-degree: 97%
@@ -229,14 +229,16 @@ La estructura de carpetas para guardar datos es `/folder_name/form_name/year/mon
 
 ## Enviar a OneDrive {#submit-to-onedrive}
 
-La acción de envío **[!UICONTROL Enviar a OneDrive]** conecta un formulario adaptable con un Microsoft® OneDrive. Puede enviar los datos del formulario, el archivo, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® OneDrive conectado. Para usar la acción de envío [!UICONTROL Enviar a OneDrive] en un formulario adaptable:
+La acción de envío **[!UICONTROL Enviar a OneDrive]** conecta un formulario adaptable con un Microsoft® OneDrive. Puede enviar los datos del formulario, el archivo, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® OneDrive conectado.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+Para usar la acción de envío [!UICONTROL Enviar a OneDrive] en un formulario adaptable:
 
 1. [Crear una configuración de OneDrive](#create-a-onedrive-configuration-create-onedrive-configuration): conecta AEM Forms al almacenamiento de Microsoft® OneDrive.
 2. [Utilizar la acción de envío Enviar a OneDrive en un formulario adaptable](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): conecta el formulario adaptable al Microsoft® OneDrive configurado.
 
 ### Crear configuración de OneDrive {#create-onedrice-configuration}
-
->[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
 Para conectar AEM Forms al almacenamiento de Microsoft® OneDrive:
 
