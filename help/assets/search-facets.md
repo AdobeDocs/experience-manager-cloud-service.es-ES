@@ -4,10 +4,10 @@ description: En este artículo se describe cómo crear, modificar y utilizar fac
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
 workflow-type: tm+mt
-source-wordcount: '2444'
-ht-degree: 22%
+source-wordcount: '2503'
+ht-degree: 21%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 22%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Una implementación empresarial de Adobe Experience Manager Assets tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso adecuado puede resultar arduo y requerir tiempo si solo utiliza las capacidades de búsqueda genéricas de Experience Manager.
@@ -303,6 +303,18 @@ De forma similar a la forma de agregar un predicado Propiedad o Opciones, puede 
   </tr>
  </tbody>
 </table>
+
+## Eliminar las facetas de búsqueda predeterminadas {#removing-default-search-facets}
+
+El Adobe recomienda tener cuidado al eliminar las facetas de búsqueda predeterminadas para evitar problemas de rendimiento. La eliminación de las facetas de búsqueda predeterminadas también puede afectar al comportamiento de las funciones predeterminadas.
+
+No elimine los siguientes campos ocultos, ya que provoca un problema de rendimiento de consulta con OmniSearch y las colecciones inteligentes:
+
+* group.2_group.type=dam:Asset
+
+* group.1_group.type=nt:folder
+
+* group.p.or=true
 
 ## Restaurar las facetas de búsqueda predeterminadas {#restoring-default-search-facets}
 
