@@ -2,9 +2,9 @@
 title: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 9981fb1ac5ddf5d918cf76476fa185c524749c70
+source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1355'
 ht-degree: 1%
 
 ---
@@ -15,17 +15,20 @@ En la siguiente sección se describen las notas de la versión generales de [!DN
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la última versión, 1.9.13 de [!DNL Workfront for Experience Manager enhanced connector] es el 11 de septiembre de 2023.
+La fecha de la última versión, 1.9.14, de [!DNL Workfront for Experience Manager enhanced connector] es el 13 de octubre de 2023.
 
 ## Puntos destacados de la versión {#release-highlights}
 
-La versión más reciente de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes actualizaciones:
+La versión más reciente de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes correcciones de errores:
 
-* El conector mejorado de Experience Manager recupera todas las suscripciones de evento de Workfront mientras elimina una suscripción de evento de un proyecto, lo que provoca un impacto en el rendimiento de la aplicación.
+* Cuando las suscripciones a eventos están desactivadas en Configuración avanzada, aún puede seleccionar las opciones para **AEM Suscribirse a los eventos de actualización de documentos para actualizar los metadatos de recursos de la**, **Publicar todos los recursos del proyecto en Brand Portal al finalizar el proyecto**, y **Habilitar sincronización de comentarios**.
 
-* Cuando se envía un recurso de Workfront a Experience Manager, el tipo MIME del recurso no se establece en `dc:format` atributo en el Experience Manager.
+* Algunos de los recursos almacenados en Experience Manager no se representan correctamente al previsualizarlos en Workfront.
 
-* Los ID de proyecto de Workfront almacenados en el conector mejorado del Experience Manager incluyen duplicados.
+* Al reconfigurar la conexión del Experience Manager con Workfront, las suscripciones de eventos como la actualización de sincronización de comentarios, la eliminación o la actualización de documentos no se crean correctamente.
+
+* Mejoras importantes de rendimiento de la API para la creación de carpetas vinculadas, actualizar, habilitar carpetas vinculadas, sincronizar comentarios, habilitar y deshabilitar, guardar configuración avanzada en el conector.
+
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 >[!IMPORTANT]
 >
->El Adobe le recomienda [actualice a la última versión 1.9.13](/help/assets/workfront-connector-install.md) de la [!DNL Workfront for Experience Manager enhanced connector].
+>El Adobe le recomienda [actualice a la última versión 1.9.14](/help/assets/workfront-connector-install.md) de la [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conocidos {#known-issues}
 
@@ -43,6 +46,14 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 * Cuando utiliza la experiencia clásica de Workfront, la variable **[!UICONTROL Enviar a]** opción disponible en el **[!UICONTROL Más]** La lista desplegable no permite seleccionar el destino de destino en Experience Manager. El **[!UICONTROL Enviar a]** La opción funciona correctamente utilizando **[!UICONTROL Acciones de documento]** lista desplegable. El **[!UICONTROL Enviar a]** funciona correctamente para **[!UICONTROL Más]** y la lista desplegable. **[!UICONTROL Acciones de documento]** lista desplegable disponible en la nueva experiencia de Workfront.
 
 ## Versiones anteriores {#previous-releases}
+
+### Versión de septiembre de 2023 {#september-2023-release}
+
+* El conector mejorado de Experience Manager recupera todas las suscripciones de evento de Workfront mientras elimina una suscripción de evento de un proyecto, lo que provoca un impacto en el rendimiento de la aplicación.
+
+* Cuando se envía un recurso de Workfront a Experience Manager, el tipo MIME del recurso no se establece en `dc:format` atributo en el Experience Manager.
+
+* Los ID de proyecto de Workfront almacenados en el conector mejorado del Experience Manager incluyen duplicados.
 
 ### Versión de agosto de 2023 {#august-2023-release}
 
