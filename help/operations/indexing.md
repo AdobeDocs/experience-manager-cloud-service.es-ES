@@ -2,10 +2,10 @@
 title: Búsqueda de contenido e indexación
 description: AEM Obtenga información acerca de la búsqueda de contenido y la indexación en as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 34%
+source-wordcount: '2433'
+ht-degree: 32%
 
 ---
 
@@ -34,6 +34,11 @@ Restricciones:
 * Internamente, se pueden configurar y utilizar otros índices para las consultas. Por ejemplo, las consultas que se escriben en relación con el índice `damAssetLucene`, en Skyline, podrían ejecutarse con una versión Elasticsearch de este. Esta diferencia no suele ser visible para la aplicación y el usuario; sin embargo, algunas herramientas, como `explain` informe de funciones con un índice diferente. Para ver las diferencias entre los índices de Lucene y los de Elastic, consulte [la documentación de Elastic en Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Los clientes no necesitan ni pueden configurar índices de Elasticsearch directamente.
 * Buscar por vectores de funciones similares (`useInSimilarity = true`) no es compatible.
 
+>[!TIP]
+>
+>Para obtener más información sobre la indexación y las consultas de Oak, incluida una descripción detallada de las funciones de búsqueda avanzada e indexación, consulte la [Documentación de Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
+
+
 ## Usos {#how-to-use}
 
 Las definiciones de índice se pueden clasificar en tres casos de uso principales, como se indica a continuación:
@@ -54,11 +59,15 @@ Una definición de índice puede caer en una de las siguientes categorías:
 
 3. Índice totalmente personalizado: Es posible crear un índice completamente nuevo desde cero. Su nombre debe tener un prefijo para evitar conflictos de nombres. Por ejemplo: `/oak:index/acme.product-1-custom-2`, donde el prefijo es `acme.`
 
+>[!NOTE]
+>
+>Introducción de nuevos índices en la `dam:Asset` Se desaconseja el tipo de nodo (especialmente los índices de texto completo), ya que pueden entrar en conflicto con las funciones del producto OOTB, lo que provoca problemas funcionales y de rendimiento. En general, se añaden propiedades adicionales a la variable `damAssetLucene-*` La versión de índice es la forma más adecuada de indexar consultas en la `dam:Asset` tipo de nodo (estos cambios se combinarán automáticamente en una nueva versión del producto del índice si posteriormente se libera). Si tiene alguna duda, póngase en contacto con el Soporte de Adobe para obtener asesoramiento.
+
 ## Preparación de la nueva definición de índice {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Si personaliza un índice predeterminado, como `damAssetLucene-8`, copie la última definición de índice lista para usarse de un *entorno de Cloud Service* con el Administrador de paquetes CRX DE (`/crx/packmgr/`). Cambiarle el nombre a `damAssetLucene-8-custom-1` (o superior) y agregue las personalizaciones dentro del archivo XML. Esto garantiza que las configuraciones necesarias no se eliminen de forma involuntaria. Por ejemplo, el nodo `tika` bajo `/oak:index/damAssetLucene-8/tika` es necesario en el índice personalizado del servicio en la nube. No existe en el SDK de la nube.
+>Si personaliza un índice predeterminado, como `damAssetLucene-8`, copie la última definición de índice lista para usarse de un *entorno de Cloud Service* con el Administrador de paquetes CRX DE (`/crx/packmgr/`). Cambiarle el nombre a `damAssetLucene-8-custom-1` (o superior) y agregue las personalizaciones dentro del archivo XML. Esto garantiza que las configuraciones necesarias no se eliminen de forma involuntaria. Por ejemplo, la variable `tika` nodo bajo `/oak:index/damAssetLucene-8/tika` es necesario en el índice personalizado implementado en un entorno de AEM Cloud Service AEM, pero no existe en el SDK de la aplicación local de la interfaz de usuario de.
 
 Para las personalizaciones de un índice OOTB, prepare un nuevo paquete que contenga la definición del índice real que siga este patrón de nomenclatura:
 

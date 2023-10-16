@@ -2,9 +2,9 @@
 title: Referencia de predicados del generador de consultas
 description: AEM Referencia de predicado para la API del Generador de consultas en as a Cloud Service de la.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2295'
 ht-degree: 2%
 
 ---
@@ -25,6 +25,8 @@ El nombre &quot;root&quot; nunca se usa en una consulta; está implícito.
 * **`p.limit`** : número que indica el tamaño de página.
 * **`p.guessTotal`** - recomendado: evite calcular el total del resultado, que puede resultar costoso. Un número que indica el total máximo que se va a contar hasta (por ejemplo, 1000, un número que proporciona a los usuarios suficientes comentarios sobre el tamaño aproximado y los números exactos para obtener resultados más pequeños). O bien, `true` para contar solo hasta el mínimo necesario `p.offset` + `p.limit`.
 * **`p.excerpt`** - si se configura como `true`, incluya un extracto de texto completo en el resultado.
+* **`p.indexTag`** : si se configura, incluirá una opción de etiqueta de índice en la consulta (consulte [Etiqueta de índice de opción de consulta](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
+* **`p.facetStrategy`** - si se configura como `oak`, Query Builder delegará la extracción de facetas a Oak (consulte [Facetas](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
 * **`p.hits`** : (solo para el servlet JSON) seleccione la forma en que se escriben las visitas como JSON, con estas estándar (ampliables mediante el servicio ResultHitWriter).
    * **`simple`** - elementos mínimos como `path`, `title`, `lastmodified`, `excerpt` (si está configurado).
    * **`full`** - procesamiento JSON de sling del nodo, con `jcr:path` que indica la ruta de la visita. De forma predeterminada, solo enumera las propiedades directas del nodo, incluido un árbol más profundo con `p.nodedepth=N`, donde 0 significa todo el subárbol infinito. Añadir `p.acls=true` para incluir los permisos JCR de la sesión actual en el elemento de resultado dado (asignaciones: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
@@ -106,7 +108,7 @@ Este predicado restringe el resultado a fragmentos de contenido.
 
 ### `dateComparison` {#datecomparison}
 
-Este predicado compara dos propiedades de fecha JCR entre sí. Puede comprobar si son iguales, desiguales, buenos o buenos que o iguales.
+Este predicado compara dos propiedades de fecha JCR entre sí. Puede comprobar si son iguales, desiguales, mayores o mayores que o iguales.
 
 Un predicado solo de filtrado y no puede utilizar un índice de búsqueda.
 
@@ -117,8 +119,8 @@ Un predicado solo de filtrado y no puede utilizar un índice de búsqueda.
 * **`operation`**
    * `=` para coincidencia exacta (predeterminado)
    * `!=` para comparación de desigualdad
-   * `>` para `property1` bueno que `property2`
-   * `>=` para `property1` bueno que o igual a `property2`
+   * `>` para `property1` mayor que `property2`
+   * `>=` para `property1` mayor que o igual a `property2`
 
 ### intervalo de fechas {#daterange}
 
@@ -222,7 +224,7 @@ Admite la extracción de facetas y proporciona bloques para cada nombre de nodo 
 
 ### notexpired {#notexpired}
 
-Este predicado coincide con los elementos al comprobar si una propiedad de fecha JCR es buena o igual a la hora actual del servidor. Se puede utilizar para comprobar un `expiresAt` y limita los resultados únicamente a los valores que aún no han caducado (`notexpired=true`) o que ya han caducado (`notexpired=false`).
+Este predicado coincide con los elementos al comprobar si una propiedad de fecha JCR es mayor o igual que la hora actual del servidor. Se puede utilizar para comprobar un `expiresAt` y limita los resultados únicamente a los valores que aún no han caducado (`notexpired=true`) o que ya han caducado (`notexpired=false`).
 
 No admite el filtrado.
 
