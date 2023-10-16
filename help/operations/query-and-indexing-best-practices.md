@@ -3,9 +3,9 @@ title: Prácticas recomendadas de consulta e indexación
 description: Aprenda a optimizar los índices y las consultas en función de las directrices de prácticas recomendadas de Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
+source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '3144'
 ht-degree: 1%
 
 ---
@@ -315,4 +315,15 @@ Esto puede ocurrir por varias razones:
    * En este caso, el motor de consulta debe leer todos los resultados devueltos por el índice y ordenarlos en memoria.
    * Esto es muchas veces más lento que aplicar la ordenación en la consulta de índice subyacente.
 1. El ejecutor de la consulta está intentando repetir un conjunto de resultados grande.
-   * Esta situación puede ocurrir por varias razones: | Causa | Mitigación | |----------|--------------| | La Comisión de `p.guessTotal` (o el uso de un guessTotal muy grande) que hace que QueryBuilder itere una gran cantidad de resultados contando resultados |Proporcionar `p.guessTotal` con un valor apropiado | | El uso de un límite grande o ilimitado en el Generador de consultas (por ejemplo, `p.limit=-1`) |Use un valor apropiado para `p.limit` (idealmente 1000 o menos) | | El uso de un predicado de filtrado en el Generador de consultas que filtra grandes cantidades de resultados de la consulta JCR subyacente | Reemplazar predicados de filtrado con restricciones que se pueden aplicar en la consulta JCR subyacente | | El uso de un orden basado en el comparador en QueryBuilder |Reemplazar por orden basado en propiedades en la consulta JCR subyacente (mediante propiedades indizadas como ordenadas) | | Filtrado de una gran cantidad de resultados debido al control de acceso |Aplique una propiedad indizada o una restricción de ruta adicional a la consulta para reflejar el control de acceso | | El uso de &#39;paginación de desplazamiento&#39; con un desplazamiento grande |Considere utilizar [Paginación de conjunto de claves](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Iteración de números de resultados grandes o ilimitados |Considere utilizar [Paginación de conjunto de claves](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Índice elegido incorrecto |Use Etiquetas en la definición de consulta e índice para asegurarse de que se utiliza el índice esperado|
+   * Esta situación puede ocurrir por varias razones, como se enumera a continuación:
+
+| Causa | Mitigación |
+|----------|--------------|
+| La Comisión de `p.guessTotal` (o el uso de un guessTotal muy grande) que hace que QueryBuilder itere una gran cantidad de resultados contando resultados | Proporcionar `p.guessTotal` con un valor apropiado |
+| El uso de un límite grande o ilimitado en Query Builder (es decir, `p.limit=-1`) | Use un valor apropiado para `p.limit` (idealmente 1000 o menos) |
+| El uso de un predicado de filtrado en el Generador de consultas, que filtra grandes cantidades de resultados de la consulta JCR subyacente | Reemplace los predicados de filtrado por restricciones que se puedan aplicar en la consulta JCR subyacente |
+| Uso de un orden basado en Comparator en QueryBuilder | Reemplazar por el orden basado en propiedades en la consulta JCR subyacente (mediante propiedades indizadas como ordenadas) |
+| Filtrado de una gran cantidad de resultados debido al control de acceso | Aplique una propiedad indizada o una restricción de ruta adicional a la consulta para reflejar el control de acceso |
+| El uso de &quot;paginación de desplazamiento&quot; con un desplazamiento grande | Considere utilizar [Paginación de conjunto de claves](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Iteración de números de resultados grandes o ilimitados | Considere utilizar [Paginación de conjunto de claves](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Índice elegido incorrecto | Utilice Etiquetas en la consulta y la definición del índice para asegurarse de que se utiliza el índice esperado |
