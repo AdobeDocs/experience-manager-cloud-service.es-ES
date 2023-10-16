@@ -4,9 +4,9 @@ description: En este artículo se describe cómo crear, modificar y utilizar fac
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '2503'
+source-wordcount: '2506'
 ht-degree: 21%
 
 ---
@@ -342,6 +342,7 @@ Si no se le ha asignado una función de administrador, aquí encontrará una lis
 
 **Consulte también**
 
+* [Prácticas recomendadas de búsqueda](search-best-practices.md)
 * [Traducir recursos](translate-assets.md)
 * [API HTTP de recursos](mac-api-assets.md)
 * [Formatos de archivo compatibles con recursos](file-format-support.md)

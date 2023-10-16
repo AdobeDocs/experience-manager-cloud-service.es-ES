@@ -8,9 +8,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 66a6897a28bb7fa57992c6782c001629f0f1d0c5
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '4325'
+source-wordcount: '4330'
 ht-degree: 93%
 
 ---
@@ -537,6 +537,8 @@ ht-degree: 93%
       + [Ver recursos, carpetas y colecciones](/help/assets/manage-notifications-assets-view.md)
       + [Administrar informes](/help/assets/manage-reports-assets-view.md)
       + [Administrar etiquetas](/help/assets/tagging-management-assets-view.md)
+   + Prácticas recomendadas{#best-practices}
+      + [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md)
    + Integración con Adobe Workfront {#integrations}
       + [Integraciones con  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configuración de la asignación de metadatos de recursos](/help/assets/configure-asset-metadata-mapping.md)
@@ -736,7 +738,7 @@ ht-degree: 93%
    + [PWA Studio de Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migración](/help/commerce-cloud/migration.md)
    + [Preguntas más frecuentes](/help/commerce-cloud/faq.md)
-+ Servicios de entrega perimetral {#edge-delivery}
++ Edge Delivery Services {#edge-delivery}
    + [Introducción a Edge Delivery](/help/edge/overview.md)
    + [Uso de Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
