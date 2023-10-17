@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 3fbdb150a9a1c133b4910603682e37f1c5d885d2
+source-git-commit: e771913562b3770e5a504432d40c770804aadc4b
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 35%
+source-wordcount: '435'
+ht-degree: 34%
 
 ---
 
@@ -44,7 +44,8 @@ La activación de funciones 2023.10.0 proporcionará el conjunto completo de fun
 
 ### Problemas conocidos {#known-issues-13804}
 
-Ninguna.
+* CQ-4354836: no se puede iniciar el flujo de trabajo o crear una tarea desde la consola Proyectos.
+* CQ-4354834 : los usuarios no pueden agregar comentarios en una tarea de la bandeja de entrada.
 
 ### Tecnologías integradas {#embedded-tech-13804}
 
