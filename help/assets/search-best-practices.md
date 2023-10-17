@@ -2,9 +2,9 @@
 title: Prácticas recomendadas de búsqueda para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Prácticas recomendadas para buscar, buscar y recuperar metadatos de recursos dentro de la aplicación.
 contentOwner: KK
-source-git-commit: 31526510cc32c9587e76da522d9377afd837d991
+source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2544'
 ht-degree: 3%
 
 ---
@@ -299,13 +299,11 @@ The newly added assets are not indexed.
 
 <table>
     <tr>
-        <th> S.No.</th>
         <th> Parámetros </th>
         <th> Vista de administrador </th>
         <th> Vista de recursos </th>
     </tr>
     <tr>
-        <td> 1. </td>
         <td> Facetas personalizadas </td>
         <td> Puede añadir <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">facetas de búsqueda personalizadas según el requisito.</td>
         <td> Las facetas personalizadas se admiten parcialmente en la vista Recursos. Las facetas admitidas son:
@@ -319,37 +317,31 @@ The newly added assets are not indexed.
         </td>
     </tr>
     <tr>
-        <td> 2. </td>
         <td> Operadores </td>
         <td> Admite AND, OR y NOT </td>
         <td> No compatible </td>
     </tr>
     <tr>
-        <td> 3. </td>
         <td> Comodines </td>
         <td> Admite el signo de interrogación (?) y un asterisco (*).</td>
         <td> No compatible </td>
     </tr>
     <tr>
-        <td> 4. </td>
         <td> Ampliación de resultados de búsqueda </td>
         <td> Compatible </td>
         <td> No compatible </td>
     </tr>
      <tr>
-        <td> 5. </td>
         <td> Borrar todos los filtros a la vez </td>
         <td> No compatible </td>
         <td> Compatible</td>
     </tr>
      <tr>
-        <td> 6. </td>
         <td> Archivos/carpetas/archivos y carpetas </td>
         <td> Compatible </td>
         <td> Hay una opción para seleccionar una carpeta disponible en "Tipo de archivo" </td>
     </tr>
      <tr>
-        <td> 7. </td>
         <td> Estado de los recursos </td>
         <td> 
             Las opciones compatibles son:
@@ -374,7 +366,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 8. </td>
         <td> Tipo de archivo </td>
         <td>
         Las opciones compatibles son:
@@ -398,7 +389,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 9. </td>
         <td> Tamaño de archivo </td>
         <td>
         Las opciones compatibles son:
@@ -410,7 +400,6 @@ The newly added assets are not indexed.
         <td> No compatible </td>
     </tr>
      <tr>
-        <td> 10. </td>
         <td> Otros filtros </td>
         <td>
             <ul>
@@ -427,7 +416,6 @@ The newly added assets are not indexed.
         <td> No compatible </td>
     </tr>
      <tr>
-        <td> 11. </td>
         <td> Buscar elemento similar </td>
         <td> Compatible </td>
         <td> No compatible </td>
