@@ -2,9 +2,9 @@
 title: ¿Cómo se puede crear una plantilla de formulario adaptable?
 description: Cree plantillas de formularios adaptables para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2098'
 ht-degree: 96%
 
 ---
@@ -223,3 +223,8 @@ También puede guardar un formulario adaptable como plantilla para usarlo en el 
 * Cuando modifique las propiedades del formulario en el editor de plantillas, no utilice la propiedad BindReference.
 * Si desea agregar un punto de ruptura, créelo cuando cree una plantilla de formulario adaptable. 
 Para obtener más información sobre los puntos de ruptura, consulte [Diseño adaptable](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=es#authoring).
+
+
+## Vea también {#see-also}
+
+{{see-also}}

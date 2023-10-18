@@ -2,10 +2,10 @@
 title: ¿Cómo puedo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes de base?
 description: Para el Forms adaptable, puede añadir configuraciones regionales para más idiomas, aparte de la que se proporciona de forma predeterminada.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 79%
+source-wordcount: '1266'
+ht-degree: 80%
 
 ---
 
@@ -159,3 +159,8 @@ Obtenga una [biblioteca de cliente de ejemplo](/help/forms/assets/locale-support
 * Cuando se agregan campos nuevos en un formulario adaptable existente:
    * **Para traducción automática**: vuelva a crear el diccionario y ejecute el proyecto de traducción. Los campos añadidos a un formulario adaptable después de crear un proyecto de traducción permanecen sin traducir.
    * **Para traducción humana**: exporte el diccionario a través de `[server:port]/libs/cq/i18n/gui/translator.html`. Actualice el diccionario de los campos recién añadidos y cárguelo.
+
+
+## Vea también {#see-also}
+
+{{see-also}}

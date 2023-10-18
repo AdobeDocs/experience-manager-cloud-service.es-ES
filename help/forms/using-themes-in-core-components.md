@@ -2,9 +2,9 @@
 title: ¿Cómo se pueden crear y utilizar temáticas en el Forms adaptable?
 description: Puede utilizar temáticas para aplicar estilos y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2680'
 ht-degree: 18%
 
 ---
@@ -418,7 +418,11 @@ Si desea proporcionar información como un logotipo, el nombre de la empresa en 
 * [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
-## Artículo relacionado {#related-article}
+>[!MORELIKETHIS]
+>
+>* [Habilitar los componentes principales de formularios adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
 
-* [Habilitar los componentes principales de formularios adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
-* [Crear un formulario adaptable independiente basado en componentes principales](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=es)
+
+## Vea también {#see-also}
+
+{{see-also}}

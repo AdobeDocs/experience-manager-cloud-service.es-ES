@@ -2,7 +2,7 @@
 title: Configurar Azure Storage
 description: Obtenga información sobre cómo integrar formularios con el servidor de Azure Storage.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 100%
@@ -101,3 +101,13 @@ Después de definir las propiedades de un objeto de modelo de datos como claves 
 >[!NOTE]
 >
 >Solo se permiten 10 claves de búsqueda por cada entidad de Azure, ya que Azure solo permite 10 etiquetas por cada blob, y el valor de las propiedades marcadas como claves de búsqueda se almacena en etiquetas de índice de Azure después del hash.
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

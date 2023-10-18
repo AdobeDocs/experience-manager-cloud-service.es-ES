@@ -4,9 +4,9 @@ description: Descubra cómo crear o agregar un formulario adaptable a su página
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: a1b63508ed7040c719778bd1c422728bc0e2e4f2
+source-git-commit: 7b797524d0df764c497baa6e4ffd0b3cabd368ca
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3221'
 ht-degree: 87%
 
 ---
@@ -262,6 +262,7 @@ Al enviar un formulario, puede redirigir al usuario a otra página web o a un me
 * [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
 
 
-## Artículo relacionado {#related-article}
+## Vea también {#see-also}
 
-* [Crear un formulario adaptable independiente basado en componentes principales](/help/forms/creating-adaptive-form-core-components.md)
+{{see-also}}
+

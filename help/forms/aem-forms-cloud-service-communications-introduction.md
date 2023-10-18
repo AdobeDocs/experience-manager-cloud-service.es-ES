@@ -3,9 +3,9 @@ title: ¿Qué son las API de comunicación as a Cloud Service de Forms?
 description: Utilice las API de comunicación para firmar, certificar o proteger sus documentos, automatizar los procesos de generación de PDF y convertir los documentos de PDF a otro formato.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1446'
 ht-degree: 77%
 
 ---
@@ -302,6 +302,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Vea también {#see-also}
 
-
 * [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
 * [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+* [Arquitectura as a Cloud Service de AEM Forms para Forms adaptable y API de comunicación](/help/forms/aem-forms-cloud-service-architecture.md)

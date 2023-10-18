@@ -4,9 +4,10 @@ description: Obtenga información sobre ¿cómo configurar Adobe Acrobat Sign p
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1939'
 ht-degree: 99%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 99%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service | Este artículo |
 
 [!DNL Adobe Acrobat Sign] activa los flujos de trabajo de firma electrónica para flujos de trabajo adaptables de Forms y de AEM. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y muchas más.
@@ -214,8 +215,7 @@ Por ejemplo, para ejecutar el servicio de configuración diariamente a las 00:00
 Para establecer los valores de una configuración, [Generar configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
 
 
-## Artículos relacionados {#related-articles}
-
-* [Usar Adobe Acrobat Sign en un formulario adaptable](working-with-adobe-sign.md)
-
-* [Prácticas recomendadas para utilizar Adobe Acrobat Sign con formularios adaptables](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+>[!MORELIKETHIS]
+>
+>* [Firmar electrónicamente un formulario con firmas manuscritas](/help/forms/signing-forms-using-scribble.md)
+>* [Prácticas recomendadas para utilizar Adobe Acrobat Sign con formularios adaptables](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)

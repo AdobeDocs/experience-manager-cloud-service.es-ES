@@ -3,10 +3,10 @@ title: ¿Cómo reutilizo las propiedades de metadatos de un formulario adaptable
 description: Descubra cómo reutilizar de forma eficaz un formulario adaptable existente para crear uno nuevo.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 86%
+source-wordcount: '617'
+ht-degree: 87%
 
 ---
 
@@ -71,3 +71,8 @@ El contenido de un formulario adaptable pegado se puede cambiar utilizando los s
 1. **Volver a publicar el formulario:**
 
    El recurso pegado es diferente del copiado. Puede publicarlo como un nuevo recurso para que esté disponible para los usuarios finales. Para obtener información sobre cómo publicar un recurso, <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
+
+
+## Vea también {#see-also}
+
+{{see-also}}

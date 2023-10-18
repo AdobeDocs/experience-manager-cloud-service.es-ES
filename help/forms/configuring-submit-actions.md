@@ -2,9 +2,9 @@
 title: Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6d949d9f31cc13b30f8ba06058911ddfe8e817af
+source-git-commit: ddc7ddbcd1761b4320e1c7a30a015d844ef3e0c0
 workflow-type: tm+mt
-source-wordcount: '3395'
+source-wordcount: '3403'
 ht-degree: 97%
 
 ---
@@ -403,3 +403,7 @@ Como parte de las directrices de seguridad y endurecimiento de AEM, configure la
 Cuando rellena previamente un modelo de datos de formulario o un formulario adaptable basado en un esquema, con datos XML o JSON que se ajustan a un esquema que no contiene las etiquetas `<afData>`, `<afBoundData>`y `</afUnboundData>`, los datos de los campos ilimitados del formulario adaptable se perderán. El esquema puede ser un esquema XML, JSON o un modelo de datos de formulario. Los campos sin límites son campos de formulario adaptable sin la propiedad `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
+
+>[!MORELIKETHIS]
+>
+>* [Crear una acción de envío personalizada para un formulario adaptable](/help/forms/custom-submit-action-form.md)

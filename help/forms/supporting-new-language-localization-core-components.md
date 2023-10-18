@@ -2,10 +2,10 @@
 title: ¿Cómo puedo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes principales?
 description: Aprenda a agregar nuevas configuraciones regionales para un formulario adaptable.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 23%
+source-wordcount: '1328'
+ht-degree: 22%
 
 ---
 
@@ -176,6 +176,10 @@ Realice los siguientes pasos para previsualizar un formulario adaptable con la c
 
 ## Ver más
 
-* [Utilizar la traducción automática o la traducción humana para traducir un formulario adaptable basado en componentes principales](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Generar documento de registro para Formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
 * [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+## Vea también {#see-also}
+
+{{see-also}}

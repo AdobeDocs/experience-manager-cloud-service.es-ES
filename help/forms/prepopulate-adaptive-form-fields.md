@@ -3,7 +3,7 @@ title: ¿Cómo rellenar previamente los campos del formulario adaptable?
 description: Utilice los datos existentes para rellenar previamente los campos de un formulario adaptable. Los usuarios pueden rellenar previamente la información básica de un formulario iniciando sesión con sus perfiles sociales.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 95%

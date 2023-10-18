@@ -2,10 +2,10 @@
 title: Cómo configurar el conector de almacenamiento unificado para AEM Forms
 description: Obtenga información sobre cómo administrar el conector de almacenamiento unificado para AEM Forms. Utilice el conector de almacenamiento unificado para conectar AEM Forms a almacenes de datos externos.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 95%
 
 ---
 
@@ -66,3 +66,10 @@ Estas son las directrices a seguir a la hora de utilizar flujos de trabajo de AE
 * No utilice un paso de un flujo de trabajo de AEM personalizado de un modelo de flujos de trabajo para almacenar datos en el repositorio CRX DE.
 
 * Cuando [configure un modelo de flujo de trabajo de AEM para un almacenamiento de datos externo](#configure-workflow-external-data-storage), no cree columnas personalizadas para la Bandeja de entrada AEM, ya que los valores de las columnas personalizadas no se recuperan si el elemento de trabajo de la Bandeja de entrada AEM pertenece a un flujo de trabajo marcado para un almacenamiento externo.
+
+>[!MORELIKETHIS]
+>
+>* [Configuración de fuentes de datos para AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configuración del almacenamiento de Azure para AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integración de Microsoft Dynamics 365 y Salesforce con Forms adaptable](/help/forms/configure-msdynamics-salesforce.md)
+>  [Añadir el portal de Forms a una página de AEM Sites](/help/forms/configure-forms-portal.md)

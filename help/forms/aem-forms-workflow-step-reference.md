@@ -4,7 +4,7 @@ description: Los flujos de trabajo centrados en Forms le permiten crear rápidam
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: AEM Uso de flujos de trabajo de, uso de los pasos Asignar tarea, paso Convertir en PDF/A, paso Generar documento de registro, uso de flujos de trabajo, paso Firmar documento, paso Generar salida impresa, paso Generar salida de PDF no interactiva
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '7446'
 ht-degree: 79%
@@ -592,3 +592,11 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 * [Variables en flujos de trabajo de AEM centrados en Forms](/help/forms/variable-in-aem-workflows.md)
 * [Configuración de Fuera de la oficina](/help/forms/configure-out-of-office-settings.md)
 
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Forms-centric workflow on OSGi](/help/forms/aem-forms-workflow.md)
+>* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+
+-->

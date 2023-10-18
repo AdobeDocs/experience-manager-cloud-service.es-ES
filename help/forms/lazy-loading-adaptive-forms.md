@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1077'
 ht-degree: 90%
 
 ---
@@ -88,3 +88,8 @@ Estos son algunos puntos importantes que debe tener en cuenta al desarrollar scr
 * No reenvíe el valor de referencia de un campo dentro de un panel de carga diferida, independientemente de si el campo está marcado como global en los fragmentos o no.
 * Utilice la función Restablecer del panel para restablecer todos sus elementos visibles mediante la siguiente expresión de clic.\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
+
+
+## Vea también {#see-also}
+
+{{see-also}}

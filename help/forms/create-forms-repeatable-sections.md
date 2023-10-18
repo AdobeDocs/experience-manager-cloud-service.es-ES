@@ -3,7 +3,7 @@ title: Cómo crear paneles repetibles en los componentes principales del formula
 description: Aprenda a crear secciones o campos repetibles en un formulario adaptable.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 96%
@@ -225,9 +225,14 @@ En el siguiente código, el panel `SampleType` utiliza la propiedad minOccours y
 ```
 
 
-## Artículos relacionados
+## Vea también {#see-also}
 
-* [Crear un formulario adaptable](creating-adaptive-form-core-components.md)
-* [Creación de estilos o temáticas para los formularios](using-themes-in-core-components.md)
-* [Adición de un comportamiento dinámico a los formularios mediante el editor de reglas](rule-editor.md)
-* [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [Crear un formulario adaptable](creating-adaptive-form-core-components.md)
+>* [Creación de estilos o temáticas para los formularios](using-themes-in-core-components.md)
+>* [Adición de un comportamiento dinámico a los formularios mediante el editor de reglas](rule-editor.md)
+>* [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 94%
+source-wordcount: '499'
+ht-degree: 92%
 
 ---
 
@@ -75,3 +75,7 @@ Para asociar grupos de usuarios con un formulario adaptable:
 >
 >Asegúrese de que todos los usuarios están replicados como miembros revisores de los grupos de usuarios en la implementación remota.
 
+>[!MORELIKETHIS]
+>
+>* [Creación y administración de revisiones en formularios](/help/forms/create-reviews-forms.md)
+>* [Creación y administración de revisiones para un formulario adaptable](/help/forms/review-adaptiveforms-in-sites-page.md)

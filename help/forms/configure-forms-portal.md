@@ -2,9 +2,9 @@
 title: Crear un portal de Forms en una página de Experience Manager Sites?
 description: Obtenga información sobre cómo crear un portal de Forms y utilizar componentes principales listos para usar en una página de AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1841'
 ht-degree: 94%
 
 ---
@@ -182,3 +182,19 @@ Puede configurar la característica de guardado automático para un formulario a
 1. Seleccione la casilla de verificación **[!UICONTROL Habilitar]** para habilitar el guardado automático del formulario. Puede configurar lo siguiente:
 * De forma predeterminada, [!UICONTROL Evento de formulario adaptable] se establece en “true”, lo que significa que el formulario se guardará automáticamente después de cada evento.
 * En [!UICONTROL Activador], establezca activar el guardado automático en función de la ocurrencia de un evento o después de un intervalo de tiempo específico.
+
+## Vea también {#see-also}
+
+{{see-also}}
+
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+
+-->

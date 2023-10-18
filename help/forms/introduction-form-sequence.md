@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '549'
 ht-degree: 88%
 
 ---
@@ -51,3 +51,8 @@ Veamos un caso de uso en el que debe crear una secuencia para los pasos de relle
 1. Complete los pasos restantes para crear la plantilla de formulario. <!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->
 
 Después de definir la secuencia del formulario en la plantilla de formulario, puede utilizarla para crear formularios que tengan la estructura básica definida como dicha secuencia, aunque siempre puede personalizar el formulario para adaptarlo a sus necesidades.
+
+
+## Vea también {#see-also}
+
+{{see-also}}

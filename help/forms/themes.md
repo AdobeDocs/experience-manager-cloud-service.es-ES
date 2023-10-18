@@ -2,9 +2,9 @@
 title: ¿Cómo se pueden crear y utilizar temáticas para aplicar estilo a un formulario adaptable?
 description: Utilice temáticas de formularios adaptables para aplicar estilos y proporcionar una identidad visual a un formulario adaptable. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '5579'
+source-wordcount: '5581'
 ht-degree: 98%
 
 ---
@@ -670,3 +670,8 @@ Puede ver el CSS generado mediante las siguientes opciones:
 
   Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
 Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.
+
+
+## Vea también {#see-also}
+
+{{see-also}}

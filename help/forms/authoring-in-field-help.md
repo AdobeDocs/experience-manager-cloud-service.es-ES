@@ -4,10 +4,10 @@ description: AEM Forms permite agregar ayuda en contexto a los campos y paneles 
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 91%
+source-wordcount: '384'
+ht-degree: 88%
 
 ---
 
@@ -65,3 +65,7 @@ Al añadir ayuda al panel, se muestra el icono **?** junto a la descripción del
 
 ![Ejemplo de ayuda en contexto a nivel del panel de formulario](assets/photoshop-1.png)
 
+>[!MORELIKETHIS]
+>
+>* [Agregar texto de marcador de posición a campos de formulario](/help/forms/placeholder-text-in-aem-forms.md)
+>* [Agregar nota al pie a un formulario adaptable para texto enriquecido](/help/forms/footnotes-richtextsupport.md)

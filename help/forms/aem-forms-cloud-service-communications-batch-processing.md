@@ -2,10 +2,10 @@
 title: 'Creación de PDF a granel sin esfuerzo: domine el arte con el procesamiento por lotes: su guía de autoayuda para generar millones de documentos de PDF.'
 description: Crear comunicaciones personalizadas y orientadas a la marca
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1705'
-ht-degree: 96%
+source-wordcount: '1735'
+ht-degree: 95%
 
 ---
 
@@ -171,3 +171,10 @@ Entendámoslo con la ayuda de un ejemplo: Supongamos que hay un archivo de datos
 ## Documentación de referencia del API
 
 La documentación de referencia de la API ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia del API está disponible en formato .yaml. Puede descargar el archivo [API por lotes](assets/batch-api.yaml) y cargarlo en Postman para comprobar la funcionalidad de las API.
+
+>[!MORELIKETHIS]
+>
+>* [Introducción a las comunicaciones as a Cloud Service AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitectura as a Cloud Service de AEM Forms para Forms adaptable y API de comunicación](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

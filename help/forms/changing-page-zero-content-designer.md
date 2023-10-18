@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 83%
+source-wordcount: '248'
+ht-degree: 80%
 
 ---
 
@@ -45,3 +45,8 @@ El contenido de la página cero se muestra de forma predeterminada cuando un vis
 >[!NOTE]
 >
 >Es posible que la propiedad personalizada que acaba de crear no aparezca correctamente en el cuadro de diálogo Propiedades del formulario cuando vuelva a abrir el formulario. Sin embargo, funciona bien, y el formulario muestra el mensaje de la página cero actualizado.
+
+>[!MORELIKETHIS]
+>
+>* [Descargue e instale Forms Designer para crear plantillas de documento de registro](/help/forms/installing-configuring-designer.md)
+>* [Utilice Forms Designer para crear plantillas de documento de registro (DoR) y fragmentos de formulario?](/help/forms/use-forms-designer.md)

@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1548'
 ht-degree: 98%
 
 ---
@@ -139,3 +139,8 @@ Cuando este tipo de archivo del proyecto se implementa mediante la canalización
 Ahora tiene un modelo de datos de formulario con fuentes de datos añadidas. A continuación, puede editar el modelo de datos de formulario para agregar y configurar objetos y servicios del modelo de datos, añadir asociaciones entre objetos del modelo de datos, editar propiedades, añadir objetos y propiedades del modelo de datos personalizado, generar datos de ejemplo, etc.
 
 Para obtener más información, consulte [Trabajo con el modelo de datos de formulario](work-with-form-data-model.md).
+
+
+>[!MORELIKETHIS]
+>
+>* [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)

@@ -5,7 +5,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 90%
@@ -162,3 +162,11 @@ Al incrustar un formulario adaptable en una página web, tenga en cuenta las sig
 1. En la instancia de publicación de AEM, vaya al Administrador de configuración de la consola web de AEM en `https://'[server]:[port]'/system/console/configMgr`.
 1. Busque y abra la configuración **Filtro de referencias de Apache Sling**.
 1. En el campo Hosts permitidos, especifique el dominio en el que reside la página web. Permita que el host realice peticiones POST al servidor de AEM. También puede utilizar una expresión regular para especificar una serie de dominios de aplicación externos.
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Embed adaptive form based on core components to AEM sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+
+-->

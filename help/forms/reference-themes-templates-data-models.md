@@ -2,9 +2,9 @@
 title: AEM ¿Cómo se obtienen las temáticas y plantillas de referencia para los formularios de?
 description: AEM Forms proporciona temáticas de formularios adaptables, plantillas y modelos de datos de formulario de ejemplo para ayudarle a crear formularios rápidamente.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '841'
 ht-degree: 90%
 
 ---
@@ -120,3 +120,8 @@ Puede obtener los siguientes modelos de datos de formulario instalando el [Paque
 * Salesforce
 
 Para obtener información sobre el uso de estos modelos, consulte [Configuración de los servicios en la nube de Microsoft Dynamics 365 y Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=es#configure-dynamics-cloud-service)
+
+
+## Vea también {#see-also}
+
+{{see-also}}

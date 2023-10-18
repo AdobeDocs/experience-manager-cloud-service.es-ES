@@ -4,13 +4,13 @@ description: Obtenga información sobre cómo se puede redirigir a los usuarios 
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
-workflow-type: ht
-source-wordcount: '233'
-ht-degree: 100%
+exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 98%
 
 ---
-
 
 # Configurar la página de redireccionamiento {#configuring-redirect-page}
 
@@ -32,3 +32,11 @@ Los autores de formularios pueden configurar una página para cada formulario, a
 **Relacionado**
 
 * [Configuración de la página de redireccionamiento (Formularios de base)](configuring-redirect-page.md)
+
+>[!MORELIKETHIS]
+>
+>* [Configurar una página de redireccionamiento](/help/forms/configuring-redirect-page.md)
+
+## Vea también {#see-also}
+
+{{see-also}}

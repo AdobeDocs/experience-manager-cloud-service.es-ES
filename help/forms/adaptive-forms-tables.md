@@ -4,9 +4,9 @@ description: Utilice el componente Tabla para agregar tablas a un formulario ada
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2498'
 ht-degree: 95%
 
 ---
@@ -329,3 +329,8 @@ Además, puede arrastrar y soltar un grupo de elementos de tipo complejo XSD par
 * Cada celda del cuerpo de una tabla predeterminada tiene asociado un nombre de elemento predefinido. Si agrega otra tabla al formulario adaptable, las celdas predeterminadas del cuerpo de la tabla nueva tendrán el mismo nombre de elemento que en la primera tabla. En este caso, los datos generados al enviar el formulario incluirán datos en las celdas predeterminadas del cuerpo de solo una de las tablas. Por lo tanto, asegúrese de cambiar el nombre de los elementos de las celdas predeterminadas del cuerpo para que sean únicos en todas las tablas y evitar la pérdida de datos.
 
   Tenga en cuenta que esto solo es aplicable a las celdas predeterminadas del cuerpo. Si agrega más filas o columnas a una tabla, se generarán automáticamente nombres de elementos únicos para las celdas no predeterminadas del cuerpo.
+
+## Vea también {#see-also}
+
+{{see-also}}
+

@@ -5,9 +5,9 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1013'
 ht-degree: 91%
 
 ---
@@ -355,3 +355,7 @@ Para comprobar que los componentes principales de Formularios adaptables están 
    ![busque el artefacto de core-forms-components-af-core en all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    Si existen dependencias, los componentes principales de Formularios adaptables se habilitan para su entorno.
+
+>[!MORELIKETHIS]
+>
+>* [Crear un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)

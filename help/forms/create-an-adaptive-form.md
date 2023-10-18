@@ -7,13 +7,13 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '2780'
+source-wordcount: '2748'
 ht-degree: 97%
 
 ---
-
 
 # Crear un formulario adaptable {#creating-an-adaptive-form}
 
@@ -88,7 +88,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
    * Al seleccionar una plantilla, la acción de envío especificada en la plantilla se selecciona automáticamente. Puede seleccionar una acción de envío diferente en la pestaña Envío. La pestaña **[!UICONTROL Envío]** muestra todas las acciones de envío disponibles.
 
-   * Cuando la plantilla seleccionada no especifica una acción de envío, puede utilizar la pestaña **[!UICONTROL Envío]** para seleccionar una acción de envío.
+   * Cuando la plantilla seleccionada no especifica una acción de envío, puede utilizar la pestaña **[!UICONTROL Envío]** para seleccionar una acción de envío
 
 1. (Opcional) En la pestaña **[!UICONTROL Entrega]**, puede especificar una fecha de publicación o cancelación de publicación de un formulario adaptable.
 
@@ -271,7 +271,4 @@ También puede modificar las propiedades del modelo del formulario desde el edit
 
 >[!MORELIKETHIS]
 >
->* [Crear un formulario adaptable en una página de AEM Sites o un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
->* [Crear un tema de formularios adaptables personalizado](using-themes-in-core-components.md)
->* [Configurar acciones de envío para un formulario](configuring-submit-actions.md)
->* [Componentes principales de formularios adaptables disponibles](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#components)
+>* [Crear un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)

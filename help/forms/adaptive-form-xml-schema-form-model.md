@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '959'
 ht-degree: 96%
 
 ---
@@ -298,3 +298,7 @@ Tiene dos opciones:
 **¿Por qué no puedo arrastrar elementos individuales de un subformulario (estructura generada a partir de cualquier tipo complejo) para subformularios repetibles (los valores minOccours o maxOccurs son superiores a 1)?**
 
 En un subformulario repetible, debe utilizar el subformulario Completo. Si solo le interesan los campos selectivos, utilice toda la estructura y elimine los no deseados.
+
+>[!MORELIKETHIS]
+>
+>* [Diseño de un esquema JSON para un formulario adaptable](/help/forms/adaptive-form-json-schema-form-model.md)

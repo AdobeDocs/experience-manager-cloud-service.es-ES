@@ -5,9 +5,9 @@ topic-tags: author
 keywords: Agregar fragmentos de formulario adaptable, fragmentos de formulario adaptable, Crear un fragmento de formulario, Agregar un fragmento a un formulario adaptable, Administrar fragmentos
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1716'
 ht-degree: 35%
 
 ---
@@ -190,8 +190,8 @@ Puede realizar varias operaciones en los fragmentos de formularios adaptables me
 Los fragmentos de formulario adaptable de referencia que se pueden utilizar para crear el formulario están disponibles.
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
+
+
 ## Vea también {#see-also}
 
-* [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Crear o agregar temáticas en Forms adaptable](/help/forms/using-themes-in-core-components.md)
-* [Usar Google AEM reCAPTCHA en un formulario adaptable de forma basado en componentes principales](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

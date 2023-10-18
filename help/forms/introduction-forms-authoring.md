@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2484'
 ht-degree: 96%
 
 ---
@@ -362,3 +362,7 @@ La estructura del contenido suele contener los siguientes componentes principale
 * **barra de herramientas:** Un contenedor del formulario adaptable tiene asociada una barra de herramientas global, que es global para el formulario. Esta barra de herramientas se puede agregar mediante la acción **[!UICONTROL Agregar barra de herramientas]** en la barra de edición, que permite a los autores agregar acciones, como Enviar, Guardar, Restablecer, etc.
 
 * **activos:** Este nodo contiene información adicional utilizada para la creación de formularios. Por ejemplo, detalles del modelo del formulario, detalles de localización, etc.
+
+## Vea también {#see-also}
+
+{{see-also}}

@@ -5,10 +5,10 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 79%
+source-wordcount: '1140'
+ht-degree: 78%
 
 ---
 
@@ -169,3 +169,8 @@ En el siguiente código, el panel `SampleType` utiliza la propiedad minOccours y
 >[!NOTE]
 >
 >Para los diseños que no son de acordeón, utilice los componentes de botón del formulario adaptable para agregar y quitar instancias.
+
+
+>[!MORELIKETHIS]
+>
+>* [Crear formularios con secciones repetibles en los componentes principales del formulario adaptable](/help/forms/create-forms-repeatable-sections.md)
