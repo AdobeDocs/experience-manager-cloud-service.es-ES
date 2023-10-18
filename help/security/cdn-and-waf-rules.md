@@ -2,10 +2,10 @@
 title: Configuración de reglas de filtro de tráfico con reglas WAF
 description: Usar reglas de filtrado de tráfico con reglas WAF para filtrar el tráfico
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
+source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
 workflow-type: tm+mt
-source-wordcount: '2740'
-ht-degree: 2%
+source-wordcount: '3810'
+ht-degree: 1%
 
 ---
 
@@ -526,3 +526,296 @@ A continuación se muestra una lista de los nombres de campo utilizados en los r
 | *res_age* | Cantidad de tiempo (en segundos) que una respuesta se ha almacenado en caché (en todos los nodos). |
 | *hacer explotar* | Centro de datos del servidor de caché de CDN. |
 | *reglas* | El nombre de cualquier regla coincidente.<br><br>También indica si la coincidencia resultó en un bloqueo. <br><br>Por ejemplo, &quot;`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`&quot;<br><br>Vacío si no coinciden las reglas. |
+
+## Tutorial de herramientas del panel  {#dashboard-tooling}
+
+El Adobe de proporciona un mecanismo para descargar las herramientas del panel en el equipo para introducir registros de CDN descargados mediante Cloud Manager. Con esta herramienta, puede analizar el tráfico para determinar las reglas de filtro de tráfico apropiadas que se deben declarar, incluidas las reglas WAF. En esta sección primero se proporcionan algunas instrucciones para familiarizarse con las herramientas de tablero en un entorno de desarrollo, seguidas de instrucciones sobre cómo aprovechar ese conocimiento para crear reglas en un entorno de producción.
+
+Los clientes que adoptaron por primera vez las Reglas de filtro de tráfico deben solicitar un zip de la herramienta de panel, que incluye un archivo LÉAME que describe cómo cargar el contenedor de Docker e introducir los registros de CDN.
+
+
+### Familiarizarse con las herramientas de tablero {#dashboard-getting-familiar}
+
+1. Cree una canalización de configuración de no producción de Cloud Manager asociada a un entorno de desarrollo. En primer lugar, seleccione la opción Canalización de implementación. A continuación, seleccione Implementación segmentada, Configuración, su repositorio, la rama de Git y establezca la ubicación del código en /config.
+
+   ![Agregar implementación de selección de canalización que no sea de producción](/help/security/assets/waf-select-pipeline1.png)
+
+   ![Agregar canalización que no sea de producción y seleccionar segmentación](/help/security/assets/waf-select-pipeline2.png)
+
+
+1. En su espacio de trabajo, cree una configuración de carpeta en el nivel raíz y añada un archivo llamado cdn.yaml, donde declarará una regla simple y la configurará en el modo de registro en lugar de en el modo de bloqueo.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: log
+   ```
+
+1. Confirme e inserte los cambios e implemente la configuración mediante la canalización de configuración.
+
+   ![Ejecutar canalización de configuración](/help/security/assets/waf-run-pipeline.png)
+
+1. Una vez implementada la configuración, intente acceder a https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me con su explorador web o con el comando curl a continuación. Debe recibir una página de error 404, ya que esa página no existe.
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. Descargue los registros de CDN de Cloud Manager y valide que las reglas coinciden según lo esperado, con una propiedad rules que coincida con el nombre de la regla:
+
+   ```
+   "rules": "match=log-rule-example"
+   ```
+
+   ![Seleccionar registros de descarga](/help/security/assets/waf-download-logs1.png)
+
+   ![Descargar registros](/help/security/assets/waf-download-logs2.png)
+
+1. Cargue la imagen Docker con las herramientas del panel y siga el archivo LÉAME para introducir los registros de CDN. Como se muestra en las siguientes capturas de pantalla, seleccione el período de tiempo adecuado, el entorno adecuado y los filtros correctos.
+
+   ![Seleccionar tiempo del panel](/help/security/assets/dashboard-select-time.png)
+
+   ![Seleccionar entorno del panel](/help/security/assets/dashboard-select-env.png)
+
+1. Una vez aplicados los filtros adecuados, debería poder ver un panel cargado con los datos esperados. En la captura de pantalla siguiente, el ejemplo de regla de registro se ha activado 3 veces en las últimas 2 horas, por la misma IP ubicada en Irlanda, utilizando un navegador web y una flexión.
+
+   ![Ver datos del tablero de desarrollo](/help/security/assets/dashboard-see-data-logmode.png)
+   ![Ver widgets de datos del tablero de desarrollo](/help/security/assets/dashboard-see-data-logmode2.png)
+
+1. Ahora cambie cdn.yaml para poner la regla en modo de bloqueo y asegurar que las páginas estén bloqueadas, como se espera. A continuación, confirme, inserte y almacene en déclencheur la canalización de configuración como se hizo anteriormente.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: block
+   ```
+
+1. Una vez implementada la configuración, intente acceder a https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me con su explorador web o con el comando curl a continuación. Debe recibir una página de error 406 que indique que la solicitud se ha bloqueado.
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. Una vez más, descargue los registros de CDN en Cloud Manager (nota: Las nuevas solicitudes pueden tardar hasta 5 minutos en exponerse en los registros de CDN) e impórtelas en las herramientas de panel como lo hicimos anteriormente. Una vez finalizado, actualice el panel. Como puede ver en la captura de pantalla siguiente, las solicitudes a /log/me están bloqueadas por nuestra regla.
+
+   ![Ver datos del tablero de producción](/help/security/assets/dashboard-see-data-blockmode.png)
+   ![Ver datos del tablero de producción](/help/security/assets/dashboard-see-data-blockmode2.png)
+
+1. Si tiene activados los filtros de tráfico WAF (se requiere una licencia adicional después de que la función sea GA), repita con una regla de filtro de tráfico WAF, en modo de registro, e implemente las reglas.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: log-waf-flags
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           action:
+             type: log
+             wafFlags:
+                 - SANS
+                 - SIGSCI-IP
+                 - TORNODE
+                 - NOUA
+                 - SCANNER
+                 - USERAGENT
+                 - PRIVATEFILE
+                 - ABNORMALPATH
+                 - TRAVERSAL
+                 - NULLBYTE
+                 - BACKDOOR
+                 - LOG4J-JNDI
+                 - SQLI
+                 - XSS
+                 - CODEINJECTION
+                 - CMDEXE
+                 - NO-CONTENT-TYPE
+                 - UTF8
+   ```
+
+1. Utilice una herramienta como [nikto](https://github.com/sullo/nikto/tree/master) para generar solicitudes coincidentes. El comando siguiente enviará unas 550 solicitudes malintencionadas en menos de 1 minuto.
+
+   ```
+   ./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
+   ```
+
+1. Descargue los registros de CDN desde Cloud Manager (recuerde que pueden tardar hasta 5 minutos en aparecer) y compruebe que aparecen tanto las reglas declaradas coincidentes como los indicadores WAF.
+
+   Como puede ver, varias de las peticiones producidas por Nikto están siendo marcadas por la WAF como maliciosas. Podemos ver que Nikto trató de explotar las vulnerabilidades CMDEXE, SQLI y NULLBYTE. Si ahora cambia la acción de registro a bloqueo y vuelve a realizar el déclencheur de un análisis con Nikto, todas las solicitudes marcadas anteriormente se bloquearán en este momento.
+
+   ![Ver datos WAF](/help/security/assets/dashboard-see-data-waf.png)
+
+
+   Tenga en cuenta que cuando una solicitud coincida con cualquiera de los indicadores WAF, aparecerán esos indicadores WAF, aunque no formen parte de la regla declarada; de este modo, siempre tendrá en cuenta el posible tráfico malintencionado nuevo, para el que aún no ha declarado reglas coincidentes. A modo de ejemplo:
+
+   ```
+   "rules": "match=log-waf-flags,waf=SQLI,action=blocked"
+   ```
+
+1. Repita el proceso con una regla que utilice límites de velocidad en el modo de registro. Como siempre, confirme, inserte y almacene en déclencheur la canalización de configuración para aplicar la configuración.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: limit-requests-client-ip
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           rateLimit:
+             limit: 10
+             window: 1
+             penalty: 60
+             groupBy:
+               - reqProperty: clientIp
+           action: log
+   ```
+
+1. Utilice una herramienta como [Vegeta](https://github.com/tsenart/vegeta) para generar tráfico.
+
+   ```
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+   ```
+
+1. Después de ejecutar la herramienta, puede descargar registros de CDN e introducirlos en el panel para verificar que se ha activado la regla del limitador de velocidad
+
+   Ahora que está familiarizado con el funcionamiento de las reglas de filtro de tráfico, puede pasar al entorno de producción.
+
+### Implementación de reglas en el entorno de producción {#dashboard-prod-env}
+
+Asegúrese de declarar inicialmente las reglas en el modo de registro para validar que no hay falsos positivos, lo que significa tráfico legítimo que se bloquearía incorrectamente.
+
+1. Cree una canalización de configuración de producción asociada a su entorno de producción.
+
+1. Copie las reglas recomendadas a continuación en su cdn.yaml. Es posible que desee modificar las reglas en función de las características únicas del tráfico en directo del sitio web. Confirme, inserte y almacene en déclencheur su canalización de configuración. Asegúrese de que las reglas estén en modo de registro.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 100
+        window: 1
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
+      # Block requests coming from OFAC countries
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
+        # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+        - name: block-waf-flags-globally
+          when:
+            reqProperty: tier
+            matches: "author|publish"
+          action:
+            type: block
+            wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+        # Disable protection against CMDEXE on /bin
+        - name: allow-cdmexe-on-root-bin
+          when:
+            allOf:
+              - reqProperty: tier
+                matches: "author|publish"
+              - reqProperty: path
+                matches: "^/bin/.*"
+          action:
+            type: allow
+            wafFlags:
+              - CMDEXE
+```
+
+1. Añada reglas adicionales para bloquear el tráfico malintencionado que pueda conocer. Por ejemplo, ciertas direcciones IP que han estado atacando el sitio.
+
+1. Después de unos minutos, horas o días, según el volumen de tráfico del sitio, descargue los registros de CDN de Cloud Manager y analícelos con el panel.
+
+1. Estas son algunas consideraciones:
+   1. Las reglas declaradas que coinciden con el tráfico aparecen en los gráficos y registros de solicitudes para que pueda comprobar fácilmente si se están activando las reglas declaradas.
+   1. El tráfico que coincide con los indicadores WAF aparece en gráficos y registros de solicitudes, incluso si no los ha registrado en una regla. De este modo, siempre tendrá en cuenta el posible tráfico malintencionado nuevo y podrá crear nuevas reglas según sea necesario. Observe los indicadores WAF que no se reflejan en las reglas declaradas y considere la posibilidad de declararlos.
+   1. Para las reglas de coincidencia, inspeccione los registros de solicitud para ver si hay falsos positivos y si puede filtrarlos fuera de las reglas. Por ejemplo, puede que sean un falso positivo solo para determinadas rutas.
+
+1. Establezca las reglas adecuadas en modo de bloque y considere también la posibilidad de agregar reglas adicionales. Tal vez algunas de las reglas deberían permanecer en el modo de registro a medida que analiza más con más tráfico.
+
+1. Volver a implementar la configuración
+
+1. Itere y analice los paneles con frecuencia.
+
