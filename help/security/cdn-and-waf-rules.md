@@ -2,9 +2,9 @@
 title: Configuración de reglas de filtro de tráfico con reglas WAF
 description: Usar reglas de filtrado de tráfico con reglas WAF para filtrar el tráfico
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
+source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3810'
 ht-degree: 1%
 
 ---
@@ -532,7 +532,7 @@ A continuación se muestra una lista de los nombres de campo utilizados en los r
 
 El Adobe de proporciona un mecanismo para descargar las herramientas del panel en el equipo para introducir registros de CDN descargados mediante Cloud Manager. Con esta herramienta, puede analizar el tráfico para determinar las reglas de filtro de tráfico apropiadas que se deben declarar, incluidas las reglas WAF. En esta sección primero se proporcionan algunas instrucciones para familiarizarse con las herramientas de tablero en un entorno de desarrollo, seguidas de instrucciones sobre cómo aprovechar ese conocimiento para crear reglas en un entorno de producción.
 
-Los clientes que adoptaron por primera vez las Reglas de filtro de tráfico deben solicitar un zip de la herramienta de panel, que incluye un archivo LÉAME que describe cómo cargar el contenedor de Docker e introducir los registros de CDN.
+Las herramientas de tablero se pueden clonar directamente desde el [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Repositorio de GitHub.
 
 
 ### Familiarizarse con las herramientas de tablero {#dashboard-getting-familiar}
