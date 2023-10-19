@@ -1,8 +1,8 @@
 ---
 title: Configuración de OSGi para el nivel de vista previa
 description: Aprenda a configurar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
-exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+exl-id: 1310eb1a-63ad-44f1-adf5-7a93ee3a8ae6
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: ht
 source-wordcount: '219'
 ht-degree: 100%
