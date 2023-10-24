@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bb7bbe5e31d75a72b3c81939ce560e3ff3979a86
+source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
 workflow-type: tm+mt
-source-wordcount: '4331'
+source-wordcount: '4336'
 ht-degree: 93%
 
 ---
@@ -873,6 +873,7 @@ ht-degree: 93%
          + [Aplicación y cancelación de la aplicación de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Administración de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md)
+      + [Explicación de las solicitudes de contenido de Cloud Service](/help/implementing/cloud-manager/content-requests.md)
       + [Preguntas frecuentes sobre Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Desarrollo para AEM as a Cloud Service {#developing}
       + [Estructura del proyecto AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
