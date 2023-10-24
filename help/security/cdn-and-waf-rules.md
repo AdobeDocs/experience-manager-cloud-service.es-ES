@@ -2,9 +2,9 @@
 title: Configuración de reglas de filtro de tráfico con reglas WAF
 description: Usar reglas de filtrado de tráfico con reglas WAF para filtrar el tráfico
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
+source-git-commit: 5231d152a67b72909ca5b38f0bbc40616ccd4739
 workflow-type: tm+mt
-source-wordcount: '3810'
+source-wordcount: '3661'
 ht-degree: 1%
 
 ---
@@ -166,6 +166,7 @@ Un grupo de condiciones está compuesto por varias condiciones simples o de grup
 | reqHeader | `string` | Devuelve el encabezado de la solicitud con el nombre especificado |
 | queryParam | `string` | Devuelve el parámetro de consulta con el nombre especificado |
 | reqCookie | `string` | Devuelve una cookie con el nombre especificado |
+| postParam | `string` | Devuelve el parámetro con el nombre especificado del cuerpo. Solo funciona cuando el cuerpo es de tipo de contenido `application/x-www-form-urlencoded` |
 
 **Predicado**
 
@@ -208,12 +209,9 @@ El `wafFlags` La propiedad puede incluir lo siguiente:
 | TRAVESÍA | Recorrido de directorio | Directory Traversal es el intento de navegar por carpetas privilegiadas a través de un sistema con la esperanza de obtener información confidencial. |
 | USERAGENT | Herramientas de ataque | La herramienta de ataque es el uso de software automatizado para identificar vulnerabilidades de seguridad o para intentar explotar una vulnerabilidad descubierta. |
 | LOG4J-JNDI | Log4J JNDI | Los ataques JNDI de Log4J intentan explotar el [Vulnerabilidad de Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) presente en las versiones de Log4J anteriores a la 2.16.0 |
-| AWS SSRF | AWS-SSRF | La falsificación de solicitudes del lado del servidor (SSRF) es una solicitud que intenta enviar solicitudes realizadas por la aplicación web a sistemas internos de destino. Los ataques SSRF de AWS utilizan SSRF para obtener claves de Amazon Web Service (AWS) y obtener acceso a los bloques de S3 y a sus datos. |
 | BHH | Encabezados de salto incorrectos | Los encabezados de salto incorrectos indican un intento de contrabando HTTP a través de un encabezado Transfer-Encoding (TE) o Content-Length (CL) mal formado o un encabezado TE y CL bien formado |
 | RUTA ANORMAL | Ruta anormal | Ruta anormal indica que la ruta original difiere de la ruta normalizada (por ejemplo, `/foo/./bar` se normaliza a `/foo/bar`) |
-| COMPRIMIDO | Compresión detectada | El cuerpo de la solicitud del POST está comprimido y no se puede inspeccionar. Por ejemplo, si se especifica un encabezado de solicitud &quot;Content-Encoding: gzip&quot; y el cuerpo del POST no es texto sin formato. |
 | DOUBLEENCODING | Codificación doble | La codificación doble comprueba la técnica de evasión de los caracteres HTML de codificación doble |
-| FORCEFULBROWSING | Exploración forzada | La exploración forzada es el intento fallido de acceder a las páginas de administración |
 | NOTUTF8 | Codificación no válida | La codificación no válida puede hacer que el servidor traduzca caracteres malintencionados de una solicitud a una respuesta, lo que provoca una denegación de servicio o XSS |
 | JSON-ERROR | Error de codificación de JSON | Un cuerpo de solicitud de POST, PUT o PATCH que se especifica como que contiene JSON dentro del encabezado de solicitud &quot;Content-Type&quot;, pero que contiene errores de análisis de JSON. Esto suele estar relacionado con un error de programación o una solicitud automatizada o maliciosa. |
 | MALFORMED-DATA | Datos mal formados en el cuerpo de la solicitud | Un cuerpo de solicitud de POST, PUT o PATCH con un formato incorrecto según el encabezado de solicitud &quot;Content-Type&quot;. Por ejemplo, si se especifica un encabezado de solicitud &quot;Content-Type: application/x-www-form-urlencoded&quot; y contiene un cuerpo de POST que es json. Esto suele ser un error de programación, una solicitud automatizada o maliciosa. Requiere agente 3.2 o superior. |
@@ -222,9 +220,7 @@ El `wafFlags` La propiedad puede incluir lo siguiente:
 | SIN CONTENIDO | Falta el encabezado de solicitud &quot;Content-Type&quot; | Una solicitud de POST, PUT o PATCH que no tiene un encabezado de solicitud &quot;Content-Type&quot;. De forma predeterminada, los servidores de aplicaciones deben suponer &quot;Content-Type: text/plain; charset=us-ascii&quot; en este caso. Es posible que a muchas solicitudes automatizadas y maliciosas les falte &quot;Tipo de contenido&quot;. |
 | NOUA | No hay agente de usuario | Muchas solicitudes automatizadas y maliciosas utilizan agentes de usuario falsos o que faltan para dificultar la identificación del tipo de dispositivo que realiza las solicitudes. |
 | TORNODO | Tráfico de Tor | Tor es un software que oculta la identidad de un usuario. Un pico en el tráfico de Tor puede indicar que un atacante está tratando de ocultar su ubicación. |
-| CENTRO DE DATOS | Tráfico del centro de datos | El tráfico del centro de datos es tráfico no orgánico originado en proveedores de alojamiento identificados. Este tipo de tráfico no suele estar asociado a un usuario final real. |
 | NULLBYTE | Byte nulo | Los bytes nulos no suelen aparecer en una solicitud e indican que la solicitud tiene un formato incorrecto y es potencialmente maliciosa. |
-| IMPOSTOR | SearchBot Impostor | El impostor de bots de búsqueda es alguien que finge ser un bot de búsqueda de Google o Bing, pero que no es legítimo. Tenga en cuenta que no depende de una respuesta por sí misma, sino que debe resolverse primero en la nube, por lo que no debe utilizarse en una regla pre. |
 | PRIVATEFILE | Archivos privados | Los archivos privados suelen ser de naturaleza confidencial, como un Apache `.htaccess` o un archivo de configuración que podría filtrar información confidencial |
 | ESCÁNER | Escáner | Identifica los servicios y herramientas de digitalización más populares |
 | RESPONSESPLIT | División de respuesta HTTP | Identifica cuándo se envían los caracteres CRLF como entrada a la aplicación para insertar encabezados en la respuesta HTTP |
