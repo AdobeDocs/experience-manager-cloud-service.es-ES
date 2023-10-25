@@ -3,10 +3,10 @@ title: Configurar canalizaciones de producción
 description: Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 98%
+source-wordcount: '1420'
+ht-degree: 80%
 
 ---
 
@@ -56,42 +56,18 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
 
    ![Configuración de canalización de producción](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. En el **Código fuente** debe definir dónde debe recuperar la canalización su código y qué tipo de código es.
+1. En el **Código fuente** pestaña debe seleccionar qué tipo de código debe procesar la canalización.
 
-   * **[Código front-end](#front-end-code)**
    * **[Código de pila completa](#full-stack-code)**
-   * **[Configuración de nivel web](#web-tier-config)**
+   * **[Implementación dirigida](#targeted-deployment)**
 
-Los pasos para completar la creación de la canalización de producción varían según la opción de **Código fuente** que haya seleccionado. Siga los enlaces anteriores para ir a la siguiente sección de este documento para completar la configuración de la canalización.
+Consulte el documento [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener más información sobre los tipos de canalizaciones.
 
-### Código front-end {#front-end-code}
-
-Una canalización de código front-end implementa las compilaciones de código front-end que contienen una o más aplicaciones de interfaz de usuario del lado del cliente. Consulte el documento [Canalizaciones CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para obtener más información sobre este tipo de canalización.
-
-Para finalizar la configuración de la canalización de producción de código front-end, siga estos pasos.
-
-1. En el **Código fuente**, debe definir las siguientes opciones.
-
-   * **Repositorio**: esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
-
-   >[!TIP]
-   > 
-   >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
-
-   * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
-      * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
-   * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
-   * **Pausar antes de implementar en producción**: esta opción pone en pausa la canalización antes de implementarla en producción.
-
-   ![Código front-end](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
-
-1. Haga clic en **Guardar** para guardar la canalización.
-
-La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
+Los pasos para completar la creación de la canalización de producción varían según el tipo de código fuente seleccionado. Siga los vínculos anteriores para ir a la siguiente sección de este documento para poder completar la configuración de la canalización.
 
 ### Código de pila completa {#full-stack-code}
 
-Una canalización de código de pila completa implementa simultáneamente compilaciones de código de back-end y front-end que contienen una o más aplicaciones de servidor AEM junto con la configuración HTTPD/Dispatcher. Consulte el documento [Canalizaciones CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) para obtener más información sobre este tipo de canalización.
+Una canalización de código de pila completa implementa simultáneamente compilaciones de código de back-end y front-end que contienen una o más aplicaciones de servidor AEM junto con la configuración HTTPD/Dispatcher.
 
 >[!NOTE]
 >
@@ -109,7 +85,7 @@ Para finalizar la configuración de la canalización de producción de código d
 
    * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
-   * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
+   * **Ignorar configuración de nivel web**: cuando se selecciona, la canalización no implementa la configuración del nivel web.
    * **Pausar antes de implementar en producción**: esta opción pone en pausa la canalización antes de implementarla en producción.
    * **Programada**: esta opción permite al usuario activar la implementación de producción programada.
 
@@ -141,43 +117,54 @@ Las rutas configuradas para la auditoría de experiencias se envían al servicio
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
-### Configuración de nivel web {#web-tier-config}
+### Implementación dirigida {#targeted-deployment}
 
-Una canalización de configuración de nivel web implementa las configuraciones de HTTPD/Dispatcher. Consulte el documento [Canalizaciones CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) para obtener más información sobre este tipo de canalización.
+AEM Una implementación de destino implementa el código únicamente para partes seleccionadas de la aplicación de. En una implementación de este tipo puede elegir **Incluir** uno de los siguientes tipos de código:
 
-Para finalizar la configuración de la canalización de producción de código de pila completa, siga estos pasos.
+* **[Configuración](#config)** AEM : configure las opciones de su entorno de, tareas de mantenimiento, reglas de CDN y mucho más.
+   * Ver el documento [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md) para obtener información sobre cómo administrar las configuraciones en el repositorio de modo que se implementen correctamente.
+* **[Código front-end](#front-end-code)** AEM - Configure JavaScript y CSS para el front-end de su aplicación de la.
+   * Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
+   * Consulte el documento [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
+* **[Configuración de nivel web](#web-tier-config)** : configure las propiedades de Dispatcher para almacenar, procesar y enviar páginas web al cliente.
 
-1. En el **Código fuente**, debe definir las siguientes opciones.
+>[!NOTE]
+>
+>* Si existe una canalización de código de nivel web para el entorno seleccionado, esta selección está deshabilitada.
+>* Si tiene una canalización de pila completa existente implementando en un entorno, al crear una canalización de configuración de capa web para el mismo entorno, se omitirá la configuración de capa web existente en la canalización de pila completa.
+> * En cualquier momento, solo puede haber una canalización de implementación de configuración por entorno.
+
+Los pasos para completar la creación de la canalización de implementación de producción y destino son los mismos una vez que elija un tipo de implementación.
+
+1. Elija el tipo de implementación que necesita.
+
+![Opciones de implementación objetivo](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-targeted-deployment.png)
+
+1. Defina el **Entornos de implementación aptos**.
+
+   * Si la canalización es una canalización de implementación, debe seleccionar a qué entornos debe implementar.
+
+1. En **Código fuente**, defina las siguientes opciones:
 
    * **Repositorio**: esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
 
    >[!TIP]
    > 
-   >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
+   >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para poder aprender a añadir y administrar repositorios en Cloud Manager.
 
    * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
-      * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
+      * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.
    * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
-      * Para las canalizaciones de configuración de nivel web, esta es normalmente la ruta que contiene los directorios `conf.d`, `conf.dispatcher.d` y `opt-in`.
-      * Por ejemplo, si la estructura del proyecto se generó a partir del [tipo de archivo del proyecto de AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) la ruta sería `/dispatcher/src`.
    * **Pausar antes de implementar en producción**: esta opción pone en pausa la canalización antes de implementarla en producción.
-   * **Programada**: esta opción permite al usuario activar la implementación de producción programada.
+   * **Programada**: esta opción permite al usuario activar la implementación de producción programada. Solo disponible para implementaciones de destino de nivel web.
 
-   ![Código de capa web](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
+   ![Configurar canalización de implementación](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
-1. Haga clic en **Guardar** para guardar la canalización.
-
->[!NOTE]
->
->Si tiene una canalización de pila completa existente implementando en un entorno, al crear una canalización de configuración de capa web para el mismo entorno, se omitirá la configuración de capa web existente en la canalización de pila completa.
+1. Haga clic en **Guardar**.
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
-## Desarrollo de Sites con la canalización front-end {#developing-with-front-end-pipeline}
-
-Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
-
-Consulte [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
+Al ejecutar una canalización de implementación de destino, las configuraciones [como las configuraciones de WAF](/help/security/traffic-filter-rules-including-waf.md) se implementarán, siempre que se guarden en el entorno, el repositorio y la rama que haya definido en la canalización.
 
 ## Omitir paquetes de Dispatcher {#skip-dispatcher-packages}
 

@@ -2,10 +2,10 @@
 title: Editar programas
 description: Obtenga información sobre cómo editar los programas de producción y de zonas protegidas para ajustar sus opciones después de crearlas.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 50%
+source-wordcount: '507'
+ht-degree: 44%
 
 ---
 
@@ -53,15 +53,19 @@ Debe ser miembro de la función **Propietario empresarial** para editar programa
    * Esta fecha es solo para uso informativo. Almacena en déclencheur el widget Go Live en la página de información general del programa. A su vez, proporciona vínculos internos del producto a la documentación de prácticas recomendadas as a Cloud Service de Adobe Experience Manager AEM () para que se ajuste a su recorrido, lo que culmina en una experiencia de Go Live exitosa.
    * Esta pestaña no está disponible para programas de zonas protegidas.
 
+1. Si los derechos requeridos están disponibles para el programa, la variable **Seguridad** La pestaña mostrará dónde puede modificar las opciones de seguridad del programa.
+
+   ![Editar configuración de seguridad](assets/edit-program-security.png)
+
+   * HIPAA no se puede habilitar o deshabilitar después de [creación de programas.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      * [Más información](https://www.adobe.com/go/hipaa-ready_es) acerca de la implementación de la solución compatible con HIPAA de Adobe.
+   * Una vez activada, la protección WAF-DDOS se puede configurar mediante la configuración de una [canalización que no sea de producción.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+
+   {{waf-limited-release}}
+
 1. Clic **Actualizar** para guardar los cambios en el programa.
 
 Cada vez que se edita un programa, incluida la adición o eliminación de una solución o complemento, esos cambios surten efecto después de la siguiente implementación.
-
-Si el programa de producción tiene habilitada la seguridad mejorada, aparece la pestaña adicional **Seguridad mejorada** en la ventana **Editar programa** para confirmar que la funcionalidad está activa para el programa.
-
-![Seguridad mejorada activa para un programa](assets/edit-program-enhanced.png)
-
-No puede editar esta configuración después de crear el programa. Para obtener más información sobre la opción de seguridad mejorada, consulte [Creación de programas de producción](creating-production-programs.md).
 
 ## Eliminar programas de zona protegida {#delete-sandbox-program}
 

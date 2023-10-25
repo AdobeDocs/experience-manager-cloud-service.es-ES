@@ -1,8 +1,8 @@
 ---
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 29%
+source-wordcount: '262'
+ht-degree: 27%
 
 ---
 # Fragmentos de código {#snippets}
@@ -20,6 +20,10 @@ ht-degree: 29%
 >[!NOTE]
 >
 >AEM no admite la asignación de grupos a perfiles. Los usuarios deben añadirse individualmente en su lugar.
+
+## Versión limitada de configuración WAF {#waf-limited-release}
+
+[!BADGE La protección WAF-DDOS estará disponible a finales de 2023.]{type=Caution tooltip="La protección WAF-DDOS estará disponible a finales de 2023."}
 
 ## Vea también {#see-also}
 
