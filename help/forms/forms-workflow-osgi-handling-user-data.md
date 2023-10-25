@@ -5,10 +5,10 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 99%
+source-wordcount: '1030'
+ht-degree: 96%
 
 ---
 
@@ -74,7 +74,7 @@ Puede acceder a los datos de usuario de una instancia de flujo de trabajo del re
 Sin embargo, no puede identificar flujos de trabajo asociados a un iniciador (o los resultados pueden ser ambiguos) en los siguientes casos:
 
 * **Flujos de trabajo activados a través de una carpeta inspeccionada**: una instancia de flujo de trabajo no se puede identificar por su iniciador si el flujo de trabajo se activa mediante una carpeta inspeccionada. En este caso, la información del usuario se codifica en los datos almacenados.
-* **Flujos de trabajo iniciados desde una instancia de publicación de AEM**: todas las instancias de flujo de trabajo se crean mediante un usuario de servicio cuando se envían formularios adaptables y comunicaciones o cartas interactivas desde una instancia de publicación de AEM. En estos casos, el nombre de usuario del usuario que ha iniciado sesión no se captura en los datos de la instancia de flujo de trabajo.
+* **AEM Flujo de trabajo iniciado desde una instancia de publicación**: todas las instancias de flujo de trabajo se crean mediante un usuario de servicio cuando se envían Forms AEM adaptable o cartas desde una instancia de publicación de la publicación de la publicación de la. En estos casos, el nombre de usuario del usuario que ha iniciado sesión no se captura en los datos de la instancia de flujo de trabajo.
 
 ### Acceder a los datos de usuario {#access}
 

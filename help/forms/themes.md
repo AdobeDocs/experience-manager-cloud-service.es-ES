@@ -2,9 +2,9 @@
 title: ¿Cómo se pueden crear y utilizar temáticas para aplicar estilo a un formulario adaptable?
 description: Utilice temáticas de formularios adaptables para aplicar estilos y proporcionar una identidad visual a un formulario adaptable. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '5581'
+source-wordcount: '5578'
 ht-degree: 98%
 
 ---
@@ -652,7 +652,7 @@ Puede ver el CSS generado mediante las siguientes opciones:
     
     * **Editor de temáticas:**
     
-    El editor de temáticas permite crear temáticas para darle estilo al formulario &lt;!-- o comunicación interactiva -->. Puede especificar el estilo de los componentes de una temática, que permite la coherencia en el aspecto y la presentación de varios formularios &lt;!-- o comunicaciones interactivas --> que desarrolle. Se recomienda especificar información de estilo en una temática y, a continuación, aplicarla a un formulario.
+    El editor de temáticas permite crear temáticas para darle estilo al formulario &lt;!-- o comunicación interactiva -->. Puede especificar el estilo de los componentes de una temática, que permite mantener la coherencia en la apariencia y la presentación de varios formularios que desarrolle. Se recomienda especificar información de estilo en una temática y, a continuación, aplicarla a un formulario.
     
     * **Estilo alineado:**
     
