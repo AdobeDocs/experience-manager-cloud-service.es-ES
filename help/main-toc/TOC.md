@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
+source-git-commit: c9ad4b6f2ae5107569c556ca11c75868c9e4be63
 workflow-type: tm+mt
-source-wordcount: '4336'
+source-wordcount: '4335'
 ht-degree: 93%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 93%
    + [Compatibilidad con IMS para AEM as a Cloud Service](/help/security/ims-support.md)
    + [Compatibilidad con cookies del mismo sitio para AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
-   + [Configuración de reglas de filtrado de tráfico con reglas WAF para filtrar el tráfico](/help/security/cdn-and-waf-rules.md)
+   + [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Consideraciones de seguridad de AEM as a Cloud Service Security](/help/security/security-considerations.md)
 + Incorporación {#onboarding}
    + [Empiece aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=es)
@@ -578,7 +578,7 @@ ht-degree: 93%
          + [Conectar AEM Forms a la base de datos o fuente de datos](/help/forms/data-integration.md)
          + [Configuración de fuentes de datos](/help/forms/configure-data-sources.md)
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Integración de aplicaciones de Salesforce con el flujo de credenciales de cliente de OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
          + [Configurar [!DNL Microsoft Dynamics 365] y [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)

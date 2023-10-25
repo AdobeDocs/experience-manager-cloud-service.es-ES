@@ -3,7 +3,7 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 20%
@@ -38,7 +38,7 @@ Eche un vistazo al vídeo Información general sobre la versión de septiembre d
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## Servicios de entrega perimetral {#edge-delivery}
+## Edge Delivery Services {#edge-delivery}
 
 Edge Delivery es un nuevo conjunto de servicios componibles centrados en maximizar el impacto del contenido para impulsar resultados comerciales mensurables en el punto de interacción del cliente.
 
@@ -60,7 +60,7 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
 * **Extraer archivos .zip**: capacidad para seleccionar archivos ZIP administrados en Experience Manager y [extracción de los archivos directamente en el Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sin descargarlos.
 
-  ![Anclar elementos para grupos](/help/release-notes/assets/extract-archive.png)
+  ![Fijar elementos para grupos](/help/release-notes/assets/extract-archive.png)
 
 ### Funciones previas al lanzamiento disponibles en [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
@@ -126,7 +126,7 @@ Filtre el tráfico en la CDN en función de lo siguiente:
 
 ¿Quiere probar la función y compartir sus comentarios? Envíe un correo electrónico a **aemcs-waf-adopter@adobe.com** desde su ID de correo electrónico oficial para obtener más información sobre el programa de usuarios que lo adoptaron por primera vez. El espacio es limitado.
 
-Obtenga más información acerca de la función en el artículo [aquí](/help/security/cdn-and-waf-rules.md).
+Obtenga más información acerca de la función en el artículo [aquí](/help/security/traffic-filter-rules-including-waf.md).
 
 ## Cloud Manager {#cloud-manager}
 

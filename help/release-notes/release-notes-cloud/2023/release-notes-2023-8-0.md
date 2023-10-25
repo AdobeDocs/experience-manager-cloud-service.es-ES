@@ -1,13 +1,13 @@
 ---
 title: Notas de la versión 2023.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 2b242cb10fb5d1da725c1396633d2db779a78639
+exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1686'
-ht-degree: 16%
+ht-degree: 20%
 
 ---
-
 
 # Notas de la versión 2023.8.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -66,7 +66,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **Importación masiva de recursos desde fuentes de datos**: Los administradores ahora tienen el [capacidad para importar un gran número de recursos](/help/assets/bulk-import-assets-view.md) de una fuente de datos a AEM Assets. Los administradores ya no tienen que cargar recursos o carpetas individuales en AEM Assets. Las fuentes de datos admitidas para la importación masiva incluyen Azure, AWS, Google Cloud y Dropbox.
+* **Importación masiva de recursos desde fuentes de datos**: Los administradores ahora tienen el [capacidad para importar un gran número de recursos](/help/assets/bulk-import-assets-view.md) de una fuente de datos a AEM Assets. Los administradores ya no tienen que cargar archivos o carpetas individuales a AEM Assets. Las fuentes de datos admitidas para la importación masiva son Azure, AWS, Google Cloud y Dropbox.
 
   ![Importación masiva de recursos desde una fuente de datos](/help/release-notes/assets/bulk-import.png)
 
@@ -74,9 +74,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Edición de imágenes con Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flexibilidad al anclar elementos para el acceso rápido a Mi espacio de trabajo**: capacidad para seleccionar y anclar elementos para usted, para toda su organización o para una lista de grupos para que se muestren en el [Sección Acceso rápido de Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md) en función de su selección.
+* **Flexibilidad al fijar elementos para el acceso rápido de Mi espacio de trabajo**: capacidad para seleccionar y anclar elementos para usted, para toda su organización o para una lista de grupos para que se muestren en el [Sección Acceso rápido de Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md) en función de su selección.
 
-  ![Anclar elementos para grupos](/help/release-notes/assets/pin-items-for-groups.png)
+  ![Fijar elementos para grupos](/help/release-notes/assets/pin-items-for-groups.png)
 
 ### Nuevas funciones en la vista de administración {#admin-view-features}
 
@@ -96,7 +96,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **Assets**: capacidad para seleccionar archivos ZIP administrados en Experience Manager y [extracción de los archivos directamente en el Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sin descargarlos.
 
-  ![Anclar elementos para grupos](/help/release-notes/assets/extract-archive.png)
+  ![Fijar elementos para grupos](/help/release-notes/assets/extract-archive.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -156,7 +156,7 @@ Filtre el tráfico en la CDN en función de lo siguiente:
 
 ¿Quiere probar la función y compartir sus comentarios? Envíe un correo electrónico a **aemcs-waf-adopter@adobe.com** desde su ID de correo electrónico oficial para obtener más información sobre el programa de usuarios que lo adoptaron por primera vez. El espacio es limitado.
 
-Obtenga más información acerca de la función en el artículo [aquí](/help/security/cdn-and-waf-rules.md).
+Obtenga más información acerca de la función en el artículo [aquí](/help/security/traffic-filter-rules-including-waf.md).
 
 
 ## Notas de la versión de mantenimiento {#maintenance}
