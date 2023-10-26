@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
+source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2733'
 ht-degree: 4%
 
 ---
@@ -69,9 +69,6 @@ Además de proporcionar tiempos de espera, se debe implementar un manejo adecuad
 
 ## Administrar límites de tasa de solicitud {#rate-limit-handling}
 
->[!NOTE]
->La respuesta de error HTTP cambiará de 503 a 429 durante la semana del 7 de agosto de 2023.
->
 AEM AEM Cuando la tasa de solicitudes entrantes que se van a supera los niveles correctos, responde a las nuevas solicitudes con el código de error HTTP 429. AEM Las aplicaciones que realizan llamadas programáticas a los programas pueden considerar la posibilidad de programar de forma defensiva, reintentando después de unos segundos con una estrategia de retroceso exponencial. AEM Antes de mediados de agosto de 2023, respondió a la misma condición con el código de error HTTP 503.
 
 ## Sin personalizaciones de IU clásica {#no-classic-ui-customizations}
