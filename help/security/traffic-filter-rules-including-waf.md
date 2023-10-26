@@ -2,9 +2,9 @@
 title: Reglas de filtro de tráfico, incluidas las reglas WAF
 description: Configuración de reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicaciones web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
+source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3453'
 ht-degree: 1%
 
 ---
@@ -227,7 +227,7 @@ when:
 
 ### Estructura de acción {#action-structure}
 
-Especificado por `action` campo que puede ser una cadena que especifica el tipo de acción (permitir, bloque, registro) y supone los valores predeterminados para todas las demás opciones o un objeto donde el tipo de regla se define mediante `type` campo obligatorio junto con otras opciones aplicables a ese tipo.
+Un `action` puede ser una cadena que especifique la acción (permitir, bloquear o registrar) o un objeto compuesto por el tipo de acción (permitir, bloquear o registrar) y opciones como wafFlags y/o estado.
 
 **Tipos de acción**
 
@@ -278,6 +278,8 @@ El `wafFlags` , que se puede utilizar en las reglas de filtro de tráfico WAF co
 * Los archivos de configuración no deben contener secretos, ya que cualquier persona que tenga acceso al repositorio de Git podrá leerlos.
 
 * Las Listas de permitidos IP definidas en Cloud Manager tienen prioridad sobre las reglas de los filtros de tráfico.
+
+* Las coincidencias de reglas WAF solo aparecen en los registros de CDN para los fallos y pasadas de CDN, no en las visitas.
 
 ## Ejemplos de reglas {#examples}
 
@@ -491,7 +493,7 @@ Las reglas se comportan de la siguiente manera:
 * Si el WAF tiene licencia y está habilitado, la variable `waf` El atributo enumerará cualquier indicador WAF (por ejemplo, SQLI) que se haya detectado, independientemente de si los indicadores WAF se han enumerado en alguna regla. Esto sirve para conocer las posibles nuevas reglas que se pueden declarar.
 * Si no coinciden las reglas declaradas por el cliente y no coinciden las reglas waf, la variable `rules` la propiedad estará en blanco.
 
-En general, las reglas coincidentes aparecen en la entrada de registro para todas las solicitudes a la CDN, independientemente de si se trata de una visita de CDN, una pasada o una omisión. Sin embargo, las reglas WAF aparecen en la entrada de registro solo para solicitudes a la CDN que se consideran errores o pasadas de CDN, pero no visitas de CDN.
+Como se ha indicado anteriormente, las coincidencias de reglas WAF solo aparecen en los registros de CDN para errores y pasadas de CDN, no para visitas.
 
 El ejemplo siguiente muestra un ejemplo `cdn.yaml` y dos entradas de registro de CDN:
 
