@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6e834244f3de7e615df12b137f2ae90a11e64ad0
+source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 19%
+source-wordcount: '920'
+ht-degree: 20%
 
 ---
 
@@ -68,17 +68,12 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ### Nuevas funciones de [!DNL Experience Manager Forms] {#forms-features}
 
-* **Propiedades personalizadas para Forms adaptable**: puede asociar atributos personalizados (pares clave-valor) con una plantilla de formulario o un componente de formularios adaptables para permitir a los desarrolladores de formularios proporcionar comportamientos de formulario dinámicos que se adapten en función de los valores de estos atributos personalizados. Por ejemplo, los desarrolladores pueden crear diferentes representaciones de un componente Forms sin encabezado en plataformas móviles, de escritorio o web, en función de los valores de los atributos personalizados, lo que mejora significativamente la experiencia del usuario en una amplia gama de dispositivos.
+* **[Propiedades personalizadas para Forms adaptable](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**: puede asociar atributos personalizados (pares clave-valor) con una plantilla de formulario o un componente de formularios adaptables para permitir a los desarrolladores de formularios proporcionar comportamientos de formulario dinámicos que se adapten en función de los valores de estos atributos personalizados. Por ejemplo, los desarrolladores pueden crear diferentes representaciones de un componente Forms sin encabezado en plataformas móviles, de escritorio o web, en función de los valores de los atributos personalizados, lo que mejora significativamente la experiencia del usuario en una amplia gama de dispositivos.
 
 * **Temas y plantillas**: Inicie el proceso de creación de formularios con nuestras nuevas temáticas y plantillas, diseñadas para potenciar tanto a profesionales experimentados como a autores de nuevos formularios. Creadas sin problemas con los componentes principales de Forms adaptables, estas temáticas y plantillas cuidadosamente depuradas le permiten empezar a crear formularios rápidamente para los casos de uso más comunes.
 
   ![Plantillas listas para usar](/help/forms/assets/form-templates-ootb.png)
 
-### Funciones previas al lanzamiento disponibles en [!DNL Forms] {#pre-release-features-available-in-forms-channel}
-
-* **Enviar Forms a la lista de SharePoint de Microsoft**: AEM Forms proporciona una integración OOTB para enviar datos de formulario directamente a SharePoint List, lo que le permite aprovechar las capacidades de Listas de SharePoint.
-
-  >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 ### Programa de adopción temprana {#forms-early-adopter}
 
