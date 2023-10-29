@@ -1,13 +1,13 @@
 ---
 title: Explicación de las solicitudes de contenido de Cloud Service
 description: Si ha adquirido licencias de solicitud de contenido de Adobe, obtenga información acerca de los tipos de solicitudes de contenido que mide Adobe Experience Cloud as a Service y las variaciones con las herramientas de informes de análisis de una organización.
-source-git-commit: e34b21194e35b2f56dd1e7df2165c3fa5c0cb7da
+exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 12%
 
 ---
-
 
 # Solicitudes de contenido de Cloud Service
 
@@ -67,5 +67,3 @@ Consulte también [Tablero de licencias](/help/implementing/cloud-manager/licens
 | Excluir llamadas al Commerce integration framework | Excluido | AEM Se trata de solicitudes realizadas a los que se reenvían al Commerce integration framework (la dirección URL comienza por ) `/api/graphql`—para evitar el recuento doble, no son facturables para el Cloud Service. |
 | Excluir `manifest.json` | Excluido | El manifiesto no es una llamada de API y sirve para proporcionar información sobre cómo instalar sitios web en equipos de escritorio o teléfonos móviles. El Adobe no debe contar la solicitud JSON a `/etc.clientlibs/*/manifest.json` |
 | Excluir `favicon.ico` | Excluido | Aunque el contenido devuelto no debe ser HTML ni JSON, observamos que en algunos casos, como en los flujos de autenticación SAML, los iconos favoritos se pueden devolver como HTML y, por lo tanto, se excluyen explícitamente del recuento. |
-
-

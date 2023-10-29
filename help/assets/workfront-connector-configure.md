@@ -4,10 +4,10 @@ description: Configuración de [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bb80414989aa5ceb624550d0ea41283c7d5da4c6
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
+source-wordcount: '1772'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] configura el conector mejorado después de instalarlo. Para obtener instrucciones de instalación, consulte [Instale el conector](/help/assets/workfront-integrations.md).
@@ -44,7 +44,7 @@ AEM Las suscripciones a eventos se utilizan para notificar a los usuarios de eve
 
 Para utilizar estas funciones, habilite las suscripciones a eventos.
 
-* Editar [!UICONTROL Herramientas de Workfront] Configuración de Cloud Services creada en el paso 5 y seleccione. [!UICONTROL Suscripciones de eventos] pestaña.
+* Editar [!UICONTROL Herramientas de Workfront] Configuración de Cloud Service creada en el paso 5 y seleccione. [!UICONTROL Suscripciones de eventos] pestaña.
 * Seleccione el [!UICONTROL Integración personalizada de Workfront] ha creado en la sección 6.
 * Clic [!UICONTROL Habilitar suscripciones a eventos de Workfront].
 
@@ -80,6 +80,7 @@ La asignación de metadatos entre proyectos de Workfront AEM AEM y carpetas de r
 
 Para configurar las asignaciones, siga estos pasos:
 
+1. Añadir `jcr:read` permisos para `/conf/global/settings/dam/adminui-extension/foldermetadataschema` para `wf-workfront-users` grupo.
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos de carpeta]**.
 1. Seleccione el formulario de esquema de metadatos de carpeta que desee editar y haga clic en Editar.
 1. Seleccione el campo del formulario del esquema de metadatos de la carpeta que desea editar y seleccione la pestaña Configuración en el panel derecho.
@@ -151,7 +152,7 @@ En el editor de flujo de trabajo, edite las propiedades de **[!UICONTROL Workfro
 
 ## Sincronización de comentarios {#comments-sync}
 
-1. Entrada [!DNL Experience Manager], acceso **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de herramientas de Workfront]**, seleccione la configuración y seleccione **[!UICONTROL Propiedades]**.
+1. Entrada [!DNL Experience Manager], acceso **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuración de herramientas de Workfront]**, seleccione la configuración y seleccione **[!UICONTROL Propiedades]**.
 
    ![sincronización de comentarios](/help/assets/assets/comments-sync1.png)
 
@@ -171,7 +172,7 @@ Para probar la sincronización de los comentarios de Workfront AEM a la, siga es
 
 AEM AEM Para mantener el historial de versiones de los recursos en la, configure el control de versiones de los recursos en la.
 
-1. En Experience Manager, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de herramientas de Workfront]** y abra el **[!UICONTROL Avanzadas]** pestaña.
+1. En Experience Manager, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuración de herramientas de Workfront]** y abra el **[!UICONTROL Avanzadas]** pestaña.
 
 1. Seleccionar opción **[!UICONTROL Almacenar recursos con el mismo nombre que las versiones del recurso existente]**. Cuando se selecciona, esta opción permite almacenar recursos cargados con el mismo nombre y en la misma ubicación que la versión del recurso existente. Si no se selecciona, se crea un nuevo recurso con un nombre diferente (por ejemplo, `asset-name.pdf` y `asset-name-1.pdf`).
 
@@ -193,7 +194,7 @@ En el editor de flujo de trabajo de Experience Manager, edite las propiedades de
 
 ## Publicar recursos automáticamente {#auto-publish-assets}
 
-1. En Experience Manager, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de herramientas de Workfront]** y abra el **[!UICONTROL Avanzadas]** pestaña.
+1. En Experience Manager, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuración de herramientas de Workfront]** y abra el **[!UICONTROL Avanzadas]** pestaña.
 
 1. Seleccionar **[!UICONTROL Publicar recursos automáticamente cuando se envíen desde Workfront]**. Esta opción habilita la publicación automática de recursos cuando se envían de Workfront AEM a los recursos de la aplicación de la. Esta función se puede habilitar de forma condicional especificando un campo de formulario personalizado de Workfront y el valor en el que debe establecerse. AEM Siempre que se envía un documento a la, si cumple la condición, el recurso se publica automáticamente.
 

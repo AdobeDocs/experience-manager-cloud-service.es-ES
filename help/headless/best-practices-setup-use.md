@@ -1,13 +1,13 @@
 ---
 title: AEM Prácticas recomendadas para la configuración y el uso de GraphQL con fragmentos de contenido para la administración de contenido
 description: AEM Conozca las Prácticas recomendadas para la configuración y el uso de GraphQL con fragmentos de contenido de la aplicación.
-source-git-commit: 9a544fb9d2494862efdb2263f3b9b61214c4b8b9
+exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 34%
 
 ---
-
 
 # AEM Prácticas recomendadas para la configuración y el uso de GraphQL con fragmentos de contenido para la administración de contenido{#best-practices-setup-use-aem-graphql-content-fragments}
 
