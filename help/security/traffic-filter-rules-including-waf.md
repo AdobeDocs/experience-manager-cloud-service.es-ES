@@ -2,9 +2,9 @@
 title: Reglas de filtro de tráfico, incluidas las reglas WAF
 description: Configuración de reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicaciones web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
+source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3473'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 # Reglas de filtro de tráfico, incluidas las reglas WAF {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->Esta función estará disponible próximamente en entornos de desarrollo, con un despliegue gradual en entornos de ensayo y producción en noviembre. Puede solicitar acceso anticipado en la fase y producción enviando un correo electrónico a **aemcs-waf-adopter@adobe.com**.
+>Esta función ya está disponible en entornos de desarrollo, con un despliegue gradual en entornos de ensayo y producción a finales de noviembre. Puede solicitar acceso anticipado en la fase y producción enviando un correo electrónico a **aemcs-waf-adopter@adobe.com**.
 
 Las reglas de filtro de tráfico se pueden utilizar para bloquear o permitir solicitudes en la capa de CDN, lo que puede resultar útil en situaciones como las siguientes:
 
@@ -26,6 +26,8 @@ AEM La mayoría de estas reglas de filtro de tráfico están disponibles para to
 Una subcategoría de reglas de filtro de tráfico requiere una licencia de seguridad mejorada o una licencia de protección WAF-DDoS, y estará disponible a finales de este año. Estas reglas poderosas se conocen como reglas de filtro de tráfico WAF (cortafuegos de aplicaciones web) (o reglas WAF para abreviar) y tienen acceso a [Indicadores WAF](#waf-flags-list) se describe más adelante en este artículo.
 
 Las reglas de filtro de tráfico se pueden implementar mediante canalizaciones de configuración de Cloud Manager para los tipos de entorno de desarrollo, ensayo y producción en programas de producción (que no sean de zonas protegidas). El soporte para RDE vendrá en el futuro.
+
+[Seguir un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) para generar rápidamente experiencia concreta en esta función.
 
 ## Organización de este artículo {#how-organized}
 

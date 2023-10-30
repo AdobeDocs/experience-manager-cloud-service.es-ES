@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '1583'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -171,7 +171,7 @@ Cuando migre modelos de flujo de trabajo de AEM Forms 6.5 a Cloud Service, espec
 La utilidad de migración le ayuda a migrar formularios adaptables en función de los componentes de base. Además, Forms as a Cloud Service es compatible con los componentes principales de los formularios adaptables. Por lo tanto, puede hacer lo siguiente:
 
 * [Crear formularios adaptables independientes basados en los componentes principales](/help/forms/creating-adaptive-form-core-components.md)
-* [Creación de un formulario adaptable basado en componentes principales directamente en una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Crear un formulario adaptable basado en componentes principales directamente en una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 Para obtener más información sobre AEM Forms as a Cloud Service, consulte lo siguiente:
 

@@ -3,7 +3,7 @@ title: Cómo descargar e instalar Forms Designer para crear plantillas de docum
 description: Utilice Forms Designer para crear plantillas de formulario XDP y de PDF que sirvan de plantilla para un documento de registro.
 keywords: Instalar Designer, Instalar Forms Designer, Requisitos para instalar Forms Designer
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 64%
@@ -74,8 +74,13 @@ Para instalar Designer, realice los siguientes pasos:
 * [Usar fuentes personalizadas](/help/forms/use-custom-fonts.md)
 * [Crear un formulario adaptable independiente basado en componentes principales](/help/forms/creating-adaptive-form-core-components.md)
 * [Crear o agregar un formulario adaptable mediante la página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Utilice Forms Designer para crear plantillas de documento de registro (DoR) y fragmentos de formulario](/help/forms/use-forms-designer.md)
 
+
+<!--
 
 >[!MORELIKETHIS]
 >
->* [Utilice Forms Designer para crear plantillas de documento de registro (DoR) y fragmentos de formulario](/help/forms/use-forms-designer.md)
+>* [Use Forms Designer to create Document of Record (DoR) templates and form fragments](/help/forms/use-forms-designer.md)
+
+-->

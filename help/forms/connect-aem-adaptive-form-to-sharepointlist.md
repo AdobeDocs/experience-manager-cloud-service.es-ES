@@ -5,9 +5,9 @@ role: User, Developer
 keywords: conecte el formulario adaptable a la lista de Microsoft SharePoint, conecte el formulario adaptable a la lista de Microsoft SharePoint, integre el formulario adaptable a la lista de Microsoft SharePoint, integre el formulario adaptable a la lista de AEM AEM, envíe datos de un formulario adaptable a la lista de Microsoft, envíe el flujo de trabajo a la lista de SharePoint y envíe el formulario adaptable a la lista de SharePoint AEM SharePoint.
 hide: true
 hidefromToC: true
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 5%
 
 ---
@@ -86,16 +86,12 @@ Obtenga información sobre cómo [AEM Uso de flujo de trabajo](https://experienc
 * [Configurar fuentes de datos](/help/forms/configuring-submit-actions.md)
 * [Crear un modelo de datos de formulario](/help/forms/create-form-data-models.md)
 * [Uso de flujos de trabajo de centrados en Forms AEM: referencia de pasos para automatizar los procesos empresariales](/help/forms/aem-forms-workflow-step-reference.md)
-
-## Información adicional
-
+* [Crear una acción de envío personalizada para un formulario adaptable](/help/forms/custom-submit-action-form.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Incrustar un formulario adaptable en una página de AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
 * [Crear, utilizar y personalizar temáticas en un formulario adaptable](/help/forms/using-themes-in-core-components.md)
 
->[!MORELIKETHIS]
->
->* [Crear una acción de envío personalizada para un formulario adaptable](/help/forms/custom-submit-action-form.md)
+
 
 
 

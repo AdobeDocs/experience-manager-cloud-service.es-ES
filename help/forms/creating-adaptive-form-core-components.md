@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 93%
+source-wordcount: '2303'
+ht-degree: 94%
 
 ---
 
@@ -191,15 +191,21 @@ Puede utilizar el servicio de rellenado previo del modelo de datos de formulario
 1. Pulse **[!UICONTROL Guardar]** para guardar las propiedades.
 
 
-## Ver siguiente
+<!--
 
-* [Creación de estilos o temáticas para los formularios](using-themes-in-core-components.md)
-* [Adición de un comportamiento dinámico a los formularios mediante el editor de reglas](rule-editor.md)
-* [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+## See next
+
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+
+-->
 
 ## Vea también {#see-also}
 
 {{see-also}}
 
+* [Adición de un comportamiento dinámico a los formularios mediante el editor de reglas](rule-editor.md)
+* [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
 
