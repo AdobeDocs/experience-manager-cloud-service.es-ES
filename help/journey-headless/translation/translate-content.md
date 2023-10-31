@@ -2,17 +2,17 @@
 title: Traducir contenido sin encabezado
 description: Utilice el conector de traducción para traducir el contenido sin encabezado.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+workflow-type: tm+mt
 source-wordcount: '2175'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 
 # Traducir contenido sin encabezado {#translate-content}
 
-Utilice el conector de traducción para traducir el contenido sin encabezado.
+Utilice la integración de traducción para traducir el contenido sin encabezado.
 
 ## La historia hasta ahora {#story-so-far}
 
