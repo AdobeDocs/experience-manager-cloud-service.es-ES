@@ -4,10 +4,10 @@ description: Aprenda a utilizar modelos de fragmentos de contenido de AEM para c
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
-workflow-type: ht
-source-wordcount: '993'
-ht-degree: 100%
+source-git-commit: 07f61a3f6a794e18bc2e02e966392cdce3103a81
+workflow-type: tm+mt
+source-wordcount: '1009'
+ht-degree: 98%
 
 ---
 
@@ -98,6 +98,7 @@ Siga los mismos pasos que se describen arriba para agregar estos campos adiciona
 
    * **Procesar como:** **Referencia de contenido**. Cuando cree una aventura, este campo señalará al recurso de imagen que represente este viaje.
    * **Etiqueta de campo:** `Image` esta es la etiqueta que se muestra para este campo al crear una nueva aventura.
+   * **Ruta raíz:** `/content/dam/aem-demo-assets/en` : especifica una ruta de punto de partida al buscar recursos con el Selector de recursos.
 
 1. Después de agregar los campos necesarios para el modelo de fragmento de contenido, en la parte superior derecha de la ventana, haga clic en **Guardar**.
 
