@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7b22d8c4d253642c92f6b2121e2883dac375a5c7
+source-git-commit: 4e3cf2276cdd5fb0722aee0e6cec11da951ca49d
 workflow-type: tm+mt
-source-wordcount: '4347'
+source-wordcount: '4357'
 ht-degree: 93%
 
 ---
@@ -548,6 +548,10 @@ ht-degree: 93%
 
    + Integración con Adobe Express {#integration-adobe-express}
       + [Complemento de AEM Assets para Adobe Express](/help/assets/addon-adobe-express.md)
+
+   + Integración con Creative Cloud {#integration-creative-cloud}
+      + [Conectar AEM Assets a Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+
 + Forms {#forms}
    + Información general {#forms-overview}
       + [Introducción](/help/forms/home.md)
