@@ -3,7 +3,7 @@ title: Crear una plantilla de formulario adaptable basada en el componente princ
 description: Cree plantillas de formulario adaptable basadas en componentes principales para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 25a1504e2655e414f32dfea20e416889cea06dcc
+source-git-commit: f562d082520037fa1b15272c763d35e93dab137f
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 58%
@@ -294,7 +294,6 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## Vea también {#see-also}
 
 {{see-also}}
-
 * [Creación de estilos o temáticas para los formularios](using-themes-in-core-components.md)
 * [Creación de un formulario adaptable (componentes principales)](/help/forms/creating-adaptive-form-core-components.md)
 
