@@ -2,16 +2,16 @@
 title: Trabajos asincrónicos
 description: Adobe Experience Manager optimiza el rendimiento completando asincrónicamente algunas tareas que requieren muchos recursos como operaciones en segundo plano.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '865'
 ht-degree: 70%
 
 ---
 
 # Operaciones asincrónicas {#asynchronous-operations}
 
-Para reducir el impacto negativo en el rendimiento, Adobe Experience Manager procesa de manera asincrónica determinadas operaciones de larga duración y que requieren gran cantidad de recursos como operaciones en segundo plano. El procesamiento asincrónico implica poner en cola varios trabajos y ejecutarlos en serie, según la disponibilidad de los recursos del sistema.
+Para reducir el impacto negativo en el rendimiento, Adobe Experience Manager procesa de forma asíncrona determinadas operaciones de larga duración y que requieren gran cantidad de recursos como operaciones en segundo plano. El procesamiento asincrónico implica poner en cola varios trabajos y ejecutarlos en serie, según la disponibilidad de los recursos del sistema.
 
 Estas operaciones incluyen:
 
@@ -19,7 +19,6 @@ Estas operaciones incluyen:
 * Desplazar muchos recursos o recursos con muchas referencias
 * Exportar e importar metadatos de recursos de manera masiva
 * Recuperar recursos que estén por encima del umbral establecido, desde una implementación remota de Experience Manager
-* Desplazar páginas
 * Desplegar Live Copies
 
 Puede ver el estado de los trabajos asincrónicos desde el **[!UICONTROL Operaciones en segundo plano]** panel en **Navegación global** -> **Herramientas** -> **General** -> **Trabajos**.
@@ -124,20 +123,6 @@ Si el número de recursos, carpetas o referencias que se van a mover supera el n
 1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito, error.
 1. Guarde los cambios.
 
-### Configurar operaciones asincrónicas de movimiento de página {#configuring-asynchronous-page-move-operations}
-
-Si el número de referencias a las páginas que se van a mover supera el número de umbral, la operación de movimiento se realiza de manera asincrónica.
-
-1. AEM AEM Inicie sesión en la consola web de inicio rápido de Jar de la aplicación de inicio de sesión de la aplicación de en `https://<host>:<port>/system/console` como usuario administrador.
-1. Vaya a **OSGi** > **Configuración**
-1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajo de operación de movimiento de página.]**
-1. En el campo **[!UICONTROL Número de umbral de referencias]**, especifique el número de umbral de referencias para el procesamiento asincrónico de las operaciones de movimiento de página.
-
-   ![Umbral de movimiento de página](assets/async-page-move.png)
-
-1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito, error.
-1. Guarde los cambios.
-
 ### Configurar operaciones de MSM asincrónicas {#configuring-asynchronous-msm-operations}
 
 1. AEM AEM Inicie sesión en la consola web de inicio rápido de Jar de la aplicación de inicio de sesión de la aplicación de en `https://<host>:<port>/system/console` como usuario administrador.
@@ -154,4 +139,3 @@ Si el número de referencias a las páginas que se van a mover supera el número
 >* [Crear y organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
 >* [Importe y exporte metadatos de recursos de manera masiva](/help/assets/metadata-import-export.md).
 >* [Utilice Recursos conectados para compartir recursos DAM desde implementaciones remotas](/help/assets/use-assets-across-connected-assets-instances.md).
-
