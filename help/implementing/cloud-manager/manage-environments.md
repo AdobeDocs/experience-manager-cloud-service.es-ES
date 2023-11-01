@@ -2,10 +2,10 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
+source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 88%
+source-wordcount: '2601'
+ht-degree: 85%
 
 ---
 
@@ -36,6 +36,8 @@ Las funcionalidades de los entornos individuales dependen de las soluciones habi
 >Los entornos de producción y ensayo solo se crean como un par. No puede crear solo un entorno de ensayo o de producción.
 
 ## Agregar un entorno {#adding-environments}
+
+Para agregar o editar un entorno, un usuario debe ser miembro del **Propietario del negocio** función.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -234,7 +236,7 @@ Esta opción también está disponible si hace clic en la pestaña **Entornos** 
 
 ![Opción Actualizar de la pestaña Entornos](assets/environ-update3.png)
 
-Un usuario con el rol de **Administrador de implementación** puede utilizar esta opción para actualizar la canalización asociada con este entorno a la última versión de AEM.
+Un usuario con **Administrador de implementación** o **Propietario del negocio** AEM Esta función puede utilizar esta opción para actualizar la canalización asociada con este entorno a la última versión de la versión de la.
 
 Una vez que la versión de la canalización se actualice a la última versión de AEM disponible públicamente, se solicitará al usuario que ejecute la canalización asociada para implementar la última versión en el entorno.
 
@@ -248,7 +250,7 @@ El comportamiento de la opción **Actualizar** varía según la configuración y
 
 ## Eliminar entornos de desarrollo {#deleting-environment}
 
-Los usuarios con los permisos necesarios podrán eliminar un entorno de desarrollo.
+Un usuario con **Administrador de implementación** o **Propietario del negocio** La función puede eliminar un entorno de desarrollo.
 
 En la pantalla **Información general** del programa, en la tarjeta **Entornos**, haga clic en el botón de los tres puntos del entorno de desarrollo que desee eliminar.
 
@@ -287,7 +289,7 @@ Esta opción también está disponible en la pestaña **Entorno** de la ventana 
 
 ## Iniciar sesión localmente {#login-locally}
 
-Seleccione **Iniciar sesión localmente** del menú de los tres puntos del entorno en la tarjeta **Entornos** para iniciar sesión localmente en Adobe Experience Manager.
+Seleccionar **Inicio de sesión local** en el menú de los tres puntos del entorno en la **Entornos** para iniciar sesión localmente en Adobe Experience Manager.
 
 ![Iniciar sesión localmente](assets/environ-login-locally.png)
 
@@ -300,6 +302,8 @@ Además, puede iniciar sesión localmente desde la pestaña **Entornos** de la p
 Los nombres de dominio personalizados se admiten en los programas de Cloud Manager para los programas de Sites, tanto para los servicios de publicación como para los de vista previa. Cada entorno de Cloud Manager puede alojar hasta un máximo de 250 dominios personalizados.
 
 Para configurar los nombres de dominio personalizados, navegue hasta la pestaña **Entornos** y haga clic en un entorno para ver los detalles del mismo.
+
+Un usuario debe tener la función de **propietario empresarial** o **administrador de implementación** para añadir un nombre de dominio personalizado en Cloud Manager
 
 ![Detalles del entorno](assets/domain-names.png)
 

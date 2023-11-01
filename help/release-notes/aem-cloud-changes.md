@@ -2,10 +2,10 @@
 title: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 description: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 30edc83364dd9666b94f54048abc8b7f92ad6ce3
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 49%
+source-wordcount: '871'
+ht-degree: 48%
 
 ---
 
@@ -79,21 +79,7 @@ Además de los cambios en la carpeta `/home` en el nivel de publicación, no se 
 
 ## No se permiten los modos de ejecución personalizados {#custom-runmodes}
 
-Se proporcionan los siguientes modos de ejecución predeterminados para AEM Cloud Service:
-
-* `author`
-* `publish`
-* `prod`
-* `author.prod`
-* `publish.prod`
-* `stage`
-* `author.stage`
-* `publish.stage`
-* `dev`
-* `author.dev`
-* `publish.dev`
-
-Los modos de ejecución adicionales o personalizados no son compatibles en AEM Cloud Service.
+Los modos de ejecución adicionales o personalizados no son compatibles en AEM Cloud Service. Para obtener una lista de los modos de ejecución predeterminados para AEM Cloud Service, consulte el documento [AEM Implementación en as a Cloud Service de la.](/help/implementing/deploying/overview.md#runmodes)
 
 ## Eliminación de agentes de replicación y cambios relacionados {#replication-agents}
 

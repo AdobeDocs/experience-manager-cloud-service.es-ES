@@ -2,7 +2,7 @@
 title: Desarrollo de Sites con la canalización front-end
 description: Con la canalización front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar velocidad sustancial. Este documento describe algunas consideraciones particulares del proceso de compilación del front-end que deben darse.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 36e40976c43826efd7921cd9429373fe97a20426
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 1%
@@ -30,7 +30,7 @@ El contenido del `dist` AEM Esta carpeta es lo que se implementa finalmente para
 
 De forma predeterminada, la canalización front-end utiliza el nodo 14, pero 12 y 16 también están disponibles.
 
-Puede usar el complemento `CM_CUSTOM_VAR_NODE_VERSION` para establecer la versión deseada.
+Puede usar el complemento `NODE_VERSION` para establecer la versión deseada.
 
 ## Fuente única de verdad {#single-source-of-truth}
 

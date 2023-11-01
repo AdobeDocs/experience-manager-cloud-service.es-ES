@@ -2,10 +2,10 @@
 title: Agregar un nombre de dominio personalizado
 description: Obtenga información sobre cómo agregar un nombre de dominio personalizado mediante Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 600288a87e024fbe58ff605a8bcdc61535cc0759
+source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 93%
+source-wordcount: '637'
+ht-degree: 87%
 
 ---
 
@@ -22,7 +22,9 @@ Puede agregar un nombre de dominio personalizado desde dos ubicaciones en Cloud 
 
 ## Adición de un nombre de dominio personalizado desde la página Configuración de dominio {#adding-cdn-settings}
 
-Siga estos pasos para agregar un nombre de dominio personalizado desde la página **Configuración de dominio.** Si utiliza una CDN diferente a la de Fastly proporcionada, estos pasos no funcionarán para usted y debe configurar su dominio con la CDN configurada.
+Al agregar un nombre de dominio personalizado, el dominio se proporcionará utilizando el certificado válido y más específico. Si varios certificados tienen el mismo dominio, se elige el actualizado más recientemente. El Adobe recomienda administrar los certificados de modo que no haya dominios superpuestos.
+
+Siga estos pasos para agregar un nombre de dominio personalizado desde la página **Configuración de dominio.** Estos pasos se basan en Fastly. Si utiliza una CDN diferente, debe configurar el dominio con la CDN que ha elegido utilizar.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 

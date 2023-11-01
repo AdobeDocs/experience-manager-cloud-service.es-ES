@@ -2,10 +2,10 @@
 title: Agregar un certificado SSL
 description: Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 94%
+source-wordcount: '555'
+ht-degree: 88%
 
 ---
 
@@ -17,29 +17,9 @@ Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio
 >
 >Un certificado puede tardar unos días en aprovisionarse. Por lo tanto, Adobe recomienda que el certificado se aprovisione con bastante antelación.
 
-## Formato del certificado {#certificate-format}
+## Requisitos de certificado {#certificate-requirements}
 
-Los archivos de certificado SSL deben tener el formato PEM para que se instalen con Cloud Manager. Las extensiones de archivo comunes del formato PEM incluyen `.pem,` .`crt`, `.cer`, y `.cert`.
-
-Los siguientes comandos `openssl` se pueden utilizar para convertir certificados que no sean PEM.
-
-* Convertir PFX a PEM
-
-  ```shell
-  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-  ```
-
-* Convertir P7B a PEM
-
-  ```shell
-  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-  ```
-
-* Convertir DER a PEM
-
-  ```shell
-  openssl x509 -inform der -in certificate.cer -out certificate.pem
-  ```
+Consulte la sección **Requisitos de certificado** del documento [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) AEM para asegurarse de que el certificado que desea agregar es compatible con el as a Cloud Service de la.
 
 ## Agregar un certificado {#adding-a-cert}
 
