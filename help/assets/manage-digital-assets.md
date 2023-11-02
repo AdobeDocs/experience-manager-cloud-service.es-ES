@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
+source-git-commit: 22cfb23784544947b6a38be0453959913c9e8ccd
 workflow-type: tm+mt
-source-wordcount: '4501'
+source-wordcount: '4519'
 ht-degree: 11%
 
 ---
@@ -266,6 +266,14 @@ Se conservan las demás propiedades e información de metadatos. No se crea una 
    >Si selecciona una representación en el panel **[!UICONTROL Representaciones]**, la barra de herramientas cambia de contexto y muestra solo las acciones que son relevantes para la representación. Las opciones, como el icono Cargar representación, no se muestran. Para ver estas opciones en la barra de herramientas, vaya a la página de detalles del recurso.
 
    Puede configurar las dimensiones de la representación que desee que se muestren en la página de detalles de un recurso de imagen o vídeo. En función de las dimensiones que especifique, Assets mostrará la representación con las dimensiones exactas o más cercanas.
+
+   No puede crear representaciones con los prefijos siguientes, ya que son internos del Adobe:
+
+   * cq5
+
+   * cqdam
+
+   * cq5dam
 
    Para configurar las dimensiones de representación de una imagen en el nivel de detalle del recurso, superponga el `renditionpicker` nodo (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) y configure el valor de la propiedad de anchura. Configure el **[!UICONTROL tamaño de la propiedad (Long) en KB]** en lugar de la anchura para personalizar la representación en la página de detalles del recurso según el tamaño de la imagen. En el caso de la personalización basada en el tamaño, la propiedad `preferOriginal` asigna preferencia al original si el tamaño de la representación coincidente es mayor que el del original.
 
