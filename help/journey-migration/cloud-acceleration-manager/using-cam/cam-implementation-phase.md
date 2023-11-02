@@ -2,9 +2,9 @@
 title: Fase de implementación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de implementación en Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '652'
 ht-degree: 4%
 
 ---
@@ -109,7 +109,7 @@ Siga esta sección para poder explorar la tarjeta de actividad de transferencia 
 
 1. Descargue e instale la herramienta de transferencia de contenido para rellenar el conjunto de migración y completar la fase de extracción de la transferencia de contenido. Revisar [Introducción a la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es) para aprender a utilizar la herramienta de transferencia de contenido.
 
-1. AEM Para ingerir contenido del conjunto de migración en un entorno en el que esté as a Cloud Service, debe iniciar una ingesta. Vaya a **Trabajos de ingesta** y haga clic en **Nueva ingesta**. Revisar [Ingesta de contenido en Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) para que pueda aprender a completar la fase de Ingesta de la transferencia de contenido.
+1. AEM Para ingerir contenido del conjunto de migración en un entorno en el que esté as a Cloud Service, debe iniciar una ingesta. Vaya a **Trabajos de ingesta** y haga clic en **Nueva ingesta**. Revisar [Ingesta de contenido en Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para que pueda aprender a completar la fase de Ingesta de la transferencia de contenido.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 

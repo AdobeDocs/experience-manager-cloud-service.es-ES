@@ -2,10 +2,10 @@
 title: Extracción de contenido del origen
 description: Obtenga información sobre cómo extraer contenido de una instancia de Adobe Experience Manager AEM () de origen para transferirlo más tarde a una instancia de Cloud Service AEM de.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 28%
+source-wordcount: '735'
+ht-degree: 27%
 
 ---
 
@@ -28,6 +28,9 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 1. Seleccione un conjunto de migración de la **Transferencia de contenido** y haga clic en **Extract** para iniciar la extracción.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
+
+   >[!TIP]
+   >Ahora se puede programar una ingesta para que se inicie automáticamente inmediatamente después de que una extracción se realice correctamente. Consulte [Ingesta de contenido en Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para obtener más información.
 
    >[!IMPORTANT]
    >

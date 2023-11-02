@@ -2,9 +2,9 @@
 title: Gestión de repositorios de contenido grandes
 description: En esta sección se describe la administración de repositorios de contenido grandes
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1835'
 ht-degree: 8%
 
 ---
@@ -26,7 +26,7 @@ Para acelerar las fases de extracción e ingesta de la actividad de transferenci
 
 En la sección siguiente se comprenden las consideraciones importantes antes de comenzar:
 
-* A partir de la versión 2.0.16 de CTT, la configuración de precopia se realiza automáticamente cuando se instala el paquete. Además, si el tamaño del conjunto de migración es bueno a 200 GB, el proceso de extracción utiliza automáticamente la función de precopia. El archivo azcopy.config se crea en el directorio crx-quickstart/cloud-migration/. No es necesario que realice manualmente la configuración de precopia si utiliza la versión 2.0.16 o posterior de CTT.
+* A partir de la versión 2.0.16 de CTT, la configuración de precopia se realiza automáticamente cuando se instala el paquete. Además, si el tamaño del conjunto de migración es mayor de 200 GB, el proceso de extracción utiliza automáticamente la función de precopia. El archivo azcopy.config se crea en el directorio crx-quickstart/cloud-migration/. No es necesario que realice manualmente la configuración de precopia si utiliza la versión 2.0.16 o posterior de CTT.
 
 * AEM La versión de origen debe ser de 6.3 a 6.5.
 
@@ -46,7 +46,7 @@ En la sección siguiente se comprenden las consideraciones importantes antes de 
 
 ### AEM Consideraciones adicionales si la instancia de origen está configurada para utilizar el almacén de datos de archivo {#additional-considerations-aem-instance-filedatastore}
 
-* El sistema local debe tener un espacio libre estrictamente bueno al tamaño 1/256 del almacén de datos de origen. Por ejemplo, si el tamaño del almacén de datos es de 3 terabytes, debe existir espacio libre bueno a 11,72 GB en `crx-quickstart/cloud-migration` en el origen para que funcione AzCopy. Como mínimo, el sistema de origen debe tener 1 GB de espacio libre. El espacio libre se puede obtener utilizando `df -h` en instancias de Linux® y el comando dir en instancias de Windows.
+* El sistema local debe tener un espacio libre estrictamente superior a 1/256 del almacén de datos de origen. Por ejemplo, si el tamaño del almacén de datos es de 3 terabytes, debe existir espacio libre superior a 11,72 GB en `crx-quickstart/cloud-migration` en el origen para que funcione AzCopy. Como mínimo, el sistema de origen debe tener 1 GB de espacio libre. El espacio libre se puede obtener utilizando `df -h` en instancias de Linux® y el comando dir en instancias de Windows.
 
 * Cada vez que se ejecuta la extracción con AzCopy habilitado, todo el almacén de datos de archivos se aplana y se copia en el contenedor de migración de la nube. Si el conjunto de migración es menor que el tamaño del almacén de datos, la extracción de AzCopy no es el enfoque óptimo.
 
@@ -55,7 +55,7 @@ En la sección siguiente se comprenden las consideraciones importantes antes de 
 ## Configuración para utilizar AzCopy como paso previo a la copia {#setting-up-pre-copy-step}
 
 >[!NOTE]
->A partir de la versión 2.0.16 de CTT, la configuración de precopia se realiza automáticamente cuando se instala el paquete. Además, si el tamaño del conjunto de migración es bueno a 200 GB, el proceso de extracción utiliza automáticamente la función de precopia. El archivo azcopy.config se crea en el directorio crx-quickstart/cloud-migration/. Si desea actualizar la configuración del archivo manualmente, revise las secciones a continuación.
+>A partir de la versión 2.0.16 de CTT, la configuración de precopia se realiza automáticamente cuando se instala el paquete. Además, si el tamaño del conjunto de migración es mayor de 200 GB, el proceso de extracción utiliza automáticamente la función de precopia. El archivo azcopy.config se crea en el directorio crx-quickstart/cloud-migration/. Si desea actualizar la configuración del archivo manualmente, revise las secciones a continuación.
 
 AEM Siga esta sección para aprender a configurar para utilizar AzCopy como paso previo a la copia con la herramienta de transferencia de contenido para migrar el contenido a la as a Cloud Service de la:
 
@@ -63,7 +63,7 @@ AEM Siga esta sección para aprender a configurar para utilizar AzCopy como paso
 
 Es importante determinar el tamaño total del almacén de datos por dos motivos:
 
-* AEM Si la fuente de datos está configurada para utilizar el almacén de datos de archivo, el sistema local debe tener un espacio libre estrictamente bueno al tamaño 1/256 del almacén de datos de origen.
+* AEM Si la fuente de datos está configurada para utilizar el almacén de datos de archivo, el sistema local debe tener un espacio libre estrictamente superior al tamaño 1/256 del almacén de datos de origen.
 
 #### Almacén de datos de almacenamiento de Azure Blob {#azure-blob-storage}
 
@@ -191,6 +191,9 @@ Si hay un problema con AzCopy, la extracción falla inmediatamente y los registr
 
 AzCopy omite automáticamente los blobs copiados antes del error en ejecuciones posteriores y no es necesario copiarlos de nuevo.
 
+>[!TIP]
+>Ahora se puede programar una ingesta para que se inicie automáticamente inmediatamente después de que una extracción se realice correctamente. Consulte [Ingesta de contenido en Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para obtener más información.
+
 #### Para el almacén de datos de archivos {#file-data-store-extract}
 
 Cuando se ejecuta AzCopy para el almacén de datos del archivo de origen, debe ver mensajes como estos en los registros que indican que se están procesando las carpetas:
@@ -198,8 +201,7 @@ Cuando se ejecuta AzCopy para el almacén de datos del archivo de origen, debe v
 
 ### 5. Ingesta con AzCopy {#ingesting-azcopy}
 
-Consulte [Ingesta de contenido en Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-para obtener información general sobre la ingesta de contenido en el destinatario desde Cloud Acceleration Manager (CAM), incluidas instrucciones sobre cómo utilizar AzCopy (copia previa), o no, en el cuadro de diálogo &quot;Nueva ingesta&quot;.
+Consulte [Ingesta de contenido en Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para obtener información general sobre la ingesta de contenido en el destinatario desde Cloud Acceleration Manager (CAM), incluidas instrucciones sobre cómo utilizar AzCopy (copia previa), o no, en el cuadro de diálogo &quot;Nueva ingesta&quot;.
 
 Para aprovechar AzCopy durante la ingesta, el Adobe AEM requiere que esté en una versión as a Cloud Service de la que sea al menos la versión 2021.6.5561.
 

@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Cloud Service
 description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
+source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2324'
 ht-degree: 7%
 
 ---
@@ -31,27 +31,35 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
 
 1. Proporcione la información necesaria para crear una ingesta.
 
-   * Seleccione el conjunto de migración que contiene los datos extraídos como origen.
+   * **Conjunto de migración:** Seleccione el conjunto de migración que contiene los datos extraídos como origen.
       * Los conjuntos de migración caducarán después de un período de inactividad prolongado, por lo que se espera que la ingesta se produzca relativamente pronto después de realizar la extracción. Revisar [Caducidad del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener más información.
-   * Seleccione el entorno de destino. En este entorno es donde se ingiere el contenido del conjunto de migración. Seleccione el nivel. (Autor/Publicación). Los entornos de desarrollo rápido no son compatibles.
+
+   >[!TIP]
+   > Si la extracción se está ejecutando actualmente, el cuadro de diálogo lo indicará. Una vez que la extracción haya finalizado correctamente, la ingesta se iniciará automáticamente. Si la extracción falla o se detiene, el trabajo de ingesta se rescindirá.
+
+   * **Destino:** Seleccione el entorno de destino. En este entorno es donde se ingiere el contenido del conjunto de migración.
+      * Las ingestas no admiten un destino de entorno de desarrollo rápido (RDE) y no aparecen como una posible opción de destino, aunque el usuario tenga acceso a él.
+      * Aunque un conjunto de migración se puede ingerir en varios destinos simultáneamente, un destino solo puede ser el destino de una ingesta en ejecución o en espera a la vez.
+
+   * **Nivel:** Seleccione el nivel. (Autor/Publicación).
+      * Si el origen era `Author`, se recomienda ingerirlo en el `Author` nivel en el objetivo. Del mismo modo, si el origen era `Publish`, el destino debe ser `Publish` y también.
 
    >[!NOTE]
-   >Las siguientes notas se aplican a la ingesta de contenido:
-   > Si el origen era Author, se recomienda ingerirlo en el nivel Author en el destino. Del mismo modo, si el origen era Publish, el destino también debería ser Publish.
    > Si el nivel de destino es `Author`, la instancia de autor se cierra durante la duración de la ingesta y no está disponible para los usuarios (por ejemplo, los autores o cualquier persona que realice mantenimiento). El motivo es proteger el sistema y evitar cualquier cambio que pueda perderse o causar un conflicto de ingesta. Asegúrese de que su equipo esté al tanto de este hecho. Tenga en cuenta también que el entorno parece hibernado durante la ingesta del autor.
-   > Puede ejecutar el paso opcional previo a la copia para acelerar de forma significativa la ingesta. Consulte [Ingesta con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obtener más información.
-   > Si se utiliza la ingesta con copia previa (para S3 o Azure Data Store), se recomienda ejecutar primero la ingesta de autor solo. Al hacerlo, se acelera la ingesta de Publish cuando se ejecuta más adelante.
-   > Las ingestas no admiten un destino de entorno de desarrollo rápido (RDE) y no aparecen como una posible opción de destino, aunque el usuario tenga acceso a él.
 
-   >[!IMPORTANT]
-   > Solo puede iniciar una ingesta en el entorno de destino si pertenece al entorno local de **AEM administradores de** en el servicio de creación del Cloud Service de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más información.
-
-   * Elija la `Wipe` valor
+   * **Borrar:** Elija la `Wipe` valor
       * El **Barrido** establece el punto de inicio del destino de la ingesta. If **Barrido** AEM Cuando está activada, el destino, incluido todo su contenido, se restablece a la versión de la especificada en Cloud Manager. Si no está habilitado, el destino mantiene su contenido actual como punto de partida.
       * Tenga en cuenta que esta opción sí **NO** afectar a cómo se realizará la ingesta de contenido. La ingesta siempre utiliza una estrategia de sustitución de contenido y _no_ una estrategia de combinación de contenido para que, en ambos **Barrido** y **Sin barrido** En algunos casos, la ingesta de un conjunto de migración sobrescribirá el contenido en la misma ruta en el destino. Por ejemplo, si el conjunto de migración contiene `/content/page1` y el destino ya contiene `/content/page1/product1`, la ingesta eliminará todo el `page1` ruta y sus subpáginas, incluidas `product1`y reemplácelo por el contenido del conjunto de migración. Esto significa que se debe realizar una planificación cuidadosa al realizar una **Sin barrido** la ingesta a un destino que incluya cualquier contenido que se deba mantener.
 
    >[!IMPORTANT]
    > Si la configuración **Barrido** está habilitado para la ingesta, restablece todo el repositorio existente, incluidos los permisos de usuario en la instancia de Cloud Service de destino. Este restablecimiento también es verdadero para un usuario administrador agregado a **administradores** y ese usuario deben volver a agregarse al grupo de administradores para iniciar una ingesta.
+
+   * **Copia previa:** Elija la `Pre-copy` valor
+      * Puede ejecutar el paso opcional previo a la copia para acelerar de forma significativa la ingesta. Consulte [Ingesta con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obtener más información.
+      * Si se utiliza la ingesta con copia previa (para S3 o Azure Data Store), se recomienda ejecutar `Author` la ingestión solo primero. Al hacerlo, se acelera el `Publish` la ingesta cuando se ejecuta más tarde.
+
+   >[!IMPORTANT]
+   > Solo puede iniciar una ingesta en el entorno de destino si pertenece al entorno local de **AEM administradores de** en el servicio de creación del Cloud Service de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más información.
 
 1. Clic **Ingesta**.
 
@@ -162,6 +170,9 @@ La solución puede requerir que la extracción superior se realice de nuevo sin 
 
 Las prácticas recomendadas indican que si **Sin barrido** La ingesta debe ejecutarse con un conjunto de migración que incluya versiones (es decir, extraídas con &quot;incluir versiones&quot; = true), es crucial que el contenido del destino se modifique lo menos posible, hasta que se complete el recorrido de migración. De lo contrario, pueden producirse estos conflictos.
 
+### Ingesta Rescindida
+
+Una ingesta creada con una extracción en ejecución como conjunto de migración de origen esperará pacientemente hasta que la extracción se realice correctamente y, en ese momento, comenzará con normalidad. Si la extracción falla o se detiene, la ingesta y su trabajo de indexación no comenzarán, pero se rescindirán. En este caso, compruebe la extracción para determinar por qué ha fallado, corrija el problema y vuelva a empezar a extraer. Una vez que se esté ejecutando la extracción fija, se puede programar una nueva ingesta.
 
 ## Siguientes pasos {#whats-next}
 

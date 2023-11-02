@@ -2,9 +2,9 @@
 title: Validación de transferencias de contenido
 description: Utilice la herramienta de transferencia de contenido para validar las transferencias de contenido
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1084'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ Los usuarios pueden determinar de forma fiable si todo el contenido extraído po
 
 >[!INFO]
 >
->Esta función estará disponible a partir de la versión de la herramienta de transferencia de contenido (CTT) 1.8.x. El entorno de destino de AEM Cloud Service debe ejecutar al menos la versión 6158 o buena. También requiere que se configure el entorno de origen para ejecutarse [copia previa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La función de validación busca el archivo azcopy.config en el origen. Si no encuentra este archivo, no se ejecutará la validación. Para obtener más información sobre cómo configurar un archivo azcopy.config, consulte [esta página](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>Esta función estará disponible a partir de la versión de la herramienta de transferencia de contenido (CTT) 1.8.x. El entorno de destino de AEM Cloud Service debe ejecutar al menos la versión 6158 o superior. También requiere que se configure el entorno de origen para ejecutarse [copia previa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La función de validación busca el archivo azcopy.config en el origen. Si no encuentra este archivo, no se ejecutará la validación. Para obtener más información sobre cómo configurar un archivo azcopy.config, consulte [esta página](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 La validación de una transferencia de contenido es una función opcional. Al habilitar esta función, se aumentará el tiempo necesario para realizar una extracción y una ingesta. AEM Para utilizar la función, habilítela en la consola del sistema del entorno de origen de la siguiendo estos pasos:
 
@@ -72,7 +72,7 @@ Para ver una ilustración gráfica de esto, consulte los siguientes ejemplos:
 
 Una vez finalizada la extracción, comience la ingesta.
 
-La parte superior del registro de ingesta contendrá una entrada, similar a `aem-ethos/tools:1.2.438`. Asegúrese de que este número de versión sea **1,2,438** o buena AEM, de lo contrario, la validación no es compatible con la versión de los as a Cloud Service de validación que está utilizando.
+La parte superior del registro de ingesta contendrá una entrada, similar a `aem-ethos/tools:1.2.438`. Asegúrese de que este número de versión sea **1,2,438** AEM o superior, de lo contrario, la validación no es compatible con la versión de la as a Cloud Service de la que está utilizando la.
 
 Una vez finalizada la ingesta y iniciada la validación, se anota la siguiente entrada de registro en el &quot;log&quot; de ingesta:
 
@@ -101,7 +101,7 @@ Migration validation took 33 minutes
 
 Este es un ejemplo de una validación que se ha realizado correctamente, ya que no faltaban entradas en el resumen de ingesta que estuvieran presentes en el resumen de extracción.
 
-Para comparar, el aspecto que tendría un informe de validación si la validación hubiera fallado es este:
+Para comparar, el aspecto que tendría un informe de validación si la validación hubiera fallado (o si se hubiera realizado una migración superior):
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]
