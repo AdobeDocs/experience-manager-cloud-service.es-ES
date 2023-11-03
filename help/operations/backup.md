@@ -1,16 +1,16 @@
 ---
-title: AEM Copia de seguridad y restauración en as a Cloud Service
+title: Copia de seguridad y restauración en AEM as a Cloud Service
 description: AEM as a Cloud Service Obtenga información acerca de Copia de seguridad y restauración en
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 24%
+ht-degree: 27%
 
 ---
 
 
-# AEM Copia de seguridad y restauración en as a Cloud Service {#backup-aemaacs}
+# Copia de seguridad y restauración en AEM as a Cloud Service {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -46,6 +46,6 @@ AEM Después de una restauración, la versión de la se actualiza a la más reci
 
 ## Copia de seguridad fuera del sitio {#offsite-backup}
 
-Aunque las copias de seguridad regulares cubren el riesgo de eliminaciones accidentales o fallos técnicos en AEM Cloud Services, también deben cubrirse los riesgos que pueden surgir del fallo de una región. Además de la disponibilidad, el riesgo más bueno en estas interrupciones de la región de datos es principalmente la pérdida de datos.
+AEM Si bien los backups regulares cubren el riesgo de eliminaciones accidentales o fallos técnicos en los Cloud Service de la red, también deben cubrirse los riesgos que pueden surgir por el fallo de una región. Además de la disponibilidad, el mayor riesgo en estas interrupciones de la región de datos es principalmente la pérdida de datos.
 AEM El as a Cloud Service AEM cubre este riesgo como estándar para todos los entornos de producción de la. AEM Copia continuamente todo el contenido de la en una región remota y lo pone a disposición para su recuperación durante tres meses. El Adobe llama a esta funcionalidad Copia de seguridad fuera del sitio.
-AEM La restauración de AEM Cloud Services para entornos de ensayo y producción se realiza mediante ingeniería de fiabilidad del servicio en caso de que se produzcan interrupciones en la región de datos.
+AEM La restauración de los Cloud Service AEM de la para los entornos de ensayo y producción se realiza mediante ingeniería de fiabilidad del servicio de la unidad de servicio si se producen interrupciones en la región de datos.

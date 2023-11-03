@@ -1,15 +1,15 @@
 ---
-title: Publicar el lanzamiento
+title: Publicar Go-Live
 description: Obtenga información sobre cómo supervisar problemas y mejorar el rendimiento
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
-# Publicar el lanzamiento {#post-go-live}
+# Publicar Go-Live {#post-go-live}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
@@ -53,7 +53,7 @@ Los usuarios pueden acceder a una lista de archivos de registro para el entorno 
 
 Consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener información sobre cómo acceder y administrar los registros a través de la interfaz de usuario o desde la API mediante Cloud Manager.
 
-## Contactando con soporte {#contacting-support}
+## Contacto con el soporte {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"

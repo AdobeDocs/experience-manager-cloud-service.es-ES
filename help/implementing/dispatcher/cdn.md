@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -34,13 +34,13 @@ AEM Siga las secciones a continuación para utilizar la interfaz de usuario de a
 
 AEM De forma predeterminada, para una configuración de CDN administrada por el, todo el tráfico público puede llegar al servicio de publicación, tanto para entornos de producción como de no producción (desarrollo y fase). Puede limitar el tráfico al servicio de publicación para un entorno determinado (por ejemplo, limitar el ensayo por un rango de direcciones IP) mediante la interfaz de usuario de Cloud Manager.
 
-Consulte [Administración de Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) para obtener más información.
+Consulte [administración de listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) para obtener más información.
 
 >[!CAUTION]
 >
 >AEM Solo las solicitudes de las IP permitidas son atendidas por CDN administradas por el administrador de la red de distribución de contenido (CDN) que se gestionan en la. AEM Si dirige su propia CDN a la CDN administrada por la CDN, asegúrese de que las IP de su CDN estén incluidas en la lista de permitidos.
 
-## AEM La CDN del cliente apunta a la CDN administrada por el {#point-to-point-CDN}
+## La CDN del cliente apunta a la CDN administrada por AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -131,7 +131,7 @@ AEM La CDN gestionada por el grupo de usuarios agrega encabezados a cada solicit
 >
 >Si hay una CDN administrada por el cliente, estas cabeceras reflejan la ubicación del servidor proxy CDN de los clientes en lugar del cliente real. Por lo tanto, para la CDN administrada por el cliente, la CDN de los clientes debe administrar los encabezados de geolocalización.
 
-Los valores de los códigos de país son los códigos alfa-2 descritos [aquí](https://en.wikipedia.org/wiki/ISO_3166-1).
+Los valores de los códigos de país son los códigos Alpha-2 descritos [aquí](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 Los valores de los códigos de continente son:
 
