@@ -2,9 +2,9 @@
 title: Asignación de usuarios y migración de principales
 description: AEM Información general sobre la asignación de usuarios y la migración de principales en as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
+source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '1003'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ Un cambio importante en AEM as a Cloud Service es el uso completamente integrado
 
 ## Detalles de migración principal {#principal-migration-detail}
 
-La herramienta de transferencia de contenido y Cloud Acceleration Manager migrarán al sistema de la nube todas las entidades de seguridad asociadas con el contenido que se está migrando.  AEM La herramienta de transferencia de contenido lo hace copiando todas las entidades de seguridad del sistema de fuentes de datos de origen durante el proceso de extracción.  A continuación, Ingesta de CAM selecciona y migra solo las entidades principales asociadas con el contenido que se está ingiriendo.
+La herramienta de transferencia de contenido y Cloud Acceleration Manager migrarán al sistema de la nube todas las entidades de seguridad asociadas con el contenido que se está migrando.  AEM La herramienta de transferencia de contenido lo hace copiando todas las entidades de seguridad del sistema de fuentes de datos de origen durante el proceso de extracción.  A continuación, Ingesta de CAM selecciona y migra solo las entidades principales asociadas con el contenido que se está ingiriendo. Si un principal está en una directiva ACL o CUG de contenido migrado, ese principal y todos los grupos en los que se encuentra y todos sus grupos antecesores (principales) se migrarán. Además, si un principal del contenido es un grupo, también se migrarán todos sus grupos descendientes (secundarios) y usuarios.
 
 ## Detalles de asignación de usuarios {#user-mapping-detail}
 
