@@ -2,9 +2,9 @@
 title: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service
 description: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
+source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2665'
 ht-degree: 10%
 
 ---
@@ -198,7 +198,7 @@ En ambos casos, se ejecuta el mismo conjunto de pruebas automatizadas. Se compon
 
 * aportado por el Adobe para garantizar la integridad del producto
 * pruebas aportadas por el cliente
-   * Pruebas funcionales: http
+   * AEM Pruebas funcionales: a través de solicitudes http al nivel de autor o publicación de la
    * Pruebas de IU: basadas en la tecnología Selenium o Cypress
 
 Estas pruebas automatizadas se ejecutan en el entorno de ensayo, por lo que es importante mantener el contenido del entorno de ensayo lo más cerca posible del contenido de la instancia de producción.
