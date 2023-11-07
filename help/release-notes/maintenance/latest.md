@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 01f148dbe885c96b27f88a88e7020a1008f4c1d3
+source-git-commit: e7e565556b382a662fb8afc5aadaa26d2357e294
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 23%
+source-wordcount: '1193'
+ht-degree: 11%
 
 ---
 
@@ -13,67 +13,103 @@ ht-degree: 23%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 14029 {#release-14029}
+## Versión 14157 {#release-14157}
 
-A continuación se resumen las mejoras continuas para la 14029 de la versión de mantenimiento, que se publicó el 25 de octubre de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 13804 anterior.
+A continuación se resumen las mejoras continuas para la 14157 de la versión de mantenimiento, que se publicó el 7 de noviembre de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 14029 anterior.
 
 La activación de funciones 2023.11.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
 
-### Mejoras {#enhancements-14029}
+### Mejoras {#enhancements-14157}
 
-* ASSETS-28551: mejorar la escalabilidad de la interfaz de usuario de Mi vínculo compartido
-* ASSETS-28566: Añadir dam:metadataForm: índice Lucene
-* ASSETS-29281: actualizar RAPI para enviar eventos de descarga de la versión 2
+* ASSETS-29631: Assets Cloud: Utilice dam:roles para una entrega/búsqueda segura.
+* CQ-4354515: Translations: Opción para suprimir la traducción de recursos a los que se hace referencia.
+* FORMS-9993: Defina los pasos para mover los componentes principales de Forms a Skyline.
+* FORMS-10570: Incorporar API de EC a API: primer enrutador.
+* GRANITE-48143: actualizar Sling ResourceMerger a 1.4.4.
+* SITES-14874: Eventing: expanda el árbol CFM para que los eventos de modelo incluyan cambios en los metadatos.
+* SITES-2719: Fragmentos de contenido: Compatibilidad de etiquetado para variaciones de fragmentos de contenido (reactivada).
+* SITES-3619: Fragmentos de contenido: etiquetas de variación CF de GraphQL salida en JSON y filtrado por etiqueta de variación (reactivada).
+* SITES-13750: Fragmentos de contenido: elimina las etiquetas de un modelo de fragmento de contenido.
+* SITES-13920: Fragmentos de contenido: Compatibilidad con la configuración minItems para varios campos (versión previa).
+* SITES-14080: Fragmentos de contenido: Eliminar la etiqueta de una variación de fragmento de contenido.
+* SITES-14770: Fragmentos de contenido: la variación del fragmento debe incluir la propiedad fieldTags.
+* SITES-15356: Fragmentos de contenido: Devolver la etiqueta como encabezado de respuesta cuando se crea un recurso.
+* SITES-15357: Fragmentos de contenido: permitir la publicación de fragmentos sin sus referencias.
+* SITES-15938: Fragmentos de contenido: faltan metadatos de referencia de contenido.
+* SITES-16078: Fragmentos de contenido: rellene la propiedad de resultado de validación de la variación cuando se recupere un fragmento.
+* SITES-16545: Fragmentos de contenido: agregue un punto final para recuperar las referencias de la variación de un fragmento de contenido.
+* SITES-16853: Fragmentos de contenido: Eliminar /adobe/sites/cf/fragments/{fragmentId}/variation/{name}Extremo /tags.
 
-### Problemas corregidos {#fixed-issues-14029}
+### Problemas corregidos {#fixed-issues-14157}
 
-* ASSETS-25199: el componente principal de la imagen no muestra los cultivos inteligentes adecuados
-* ASSETS-26142: unified-shell.js customEnvLabel no se establece ni se vuelve a intentar si la solicitud de detección falla o se interrumpe
-* ASSETS-26416: el predicado de fecha relativa siempre se define como &quot;hace 1 día(s)&quot; en el formulario de búsqueda
-* ASSETS-27321: borrar la caché de grupo en los cambios de miembro del equipo
-* ASSETS-27591: Corrija la dependencia en el org.json antiguo
-* ASSETS-28439: Lista de bloqueados de etiquetas inteligentes NPE cuando la lista de bloqueados global no está configurada
-* ASSETS-28612: corrección de BlockedTagResolver en &quot;repository-api&quot;
-* ASSETS-28634: el campo Omnisearch de las existencias de Adobe no obtiene datos de recursos añadidos automáticamente
-* ASSETS-28727: la lista de configuración del perfil de procesamiento no muestra los valores de altura y anchura personalizados especificados
-* AEM ASSETS-29056: añadir representaciones de transcodificación perfil de procesamiento estándar
-* ASSETS-29105: el proveedor de restricciones no se encuentra en SecurityProviderRegistration requiredServicePids en el modelo de características de RDE
-* ASSETS-29106: la vista de las existencias de Adobe AEM genera un error en el shell unificado habilitado para la creación de informes de
-* ASSETS-29115: Quitar la propiedad de configuración para las rutas del proveedor de restricción
-* ASSETS-29208: Errores en la carga de recursos causados por solicitudes enviadas a un pod de creación antes de que se registre el servicio CompleteUploadAssetServlet
-* ASSETS-29297: Problema al crear la opción de filtro Guardar búsqueda con desprotegido
-* ASSETS-29363: El perfil de metadatos no aplica los valores predeterminados para IPTC
-* ASSETS-29404: el informe de vínculos compartidos alcanza el límite de consultas
-* ASSETS-29431: quitar indicadores de funciones antiguas
-* ASSETS-29443: el Héroe de Unified Shell permanece visible y se puede hacer clic cuando el modo de encabezado de Granite Shell cambia a &quot;selección&quot;
-* ASSETS-29476: la llamada a la API scene7DAMService.getS7FileReference(asset) no devuelve el valor esperado.
-* ASSETS-29515: Assets/Nodes con &quot;jcr:lastModifiedBy&quot;: &quot;workflow-process-service&quot; se muestra como &quot;usuario externo&quot; en la vista de lista
-* ASSETS-29579: Los usuarios no administradores no pueden crear un conjunto de imágenes
-* ASSETS-29631: Utilice dam:roles para una entrega/búsqueda segura
-* AEM ASSETS-29689: dc:roles (y la nueva propiedad dam:roles) debe filtrarse de lado de la
-* ASSETS-29738: la restricción de carga de recursos falla con NullPointerException
-* ASSETS-29779: los recursos pequeños no se pueden procesar en webp porque no están en el almacenamiento de blob
-* ASSETS-29892: Se produce un error en la exportación de metadatos en una carpeta con un gran número de recursos
-* ASSETS-29996: &quot;Usuario externo&quot; como modificador al cargar recursos de forma intermitente solo en instancias de PROD
-* ASSETS-30167: HTML para adobe_dam: se producen restricciones después de cargar un recurso
-* ASSETS-30276: Compartir vínculo de la interfaz de usuario: no se puede compartir desde los detalles del recurso
-* ASSETS-30434: el evento de procesamiento de recursos completado no se envía a la canalización
-* ASSETS-30519: Agregar RAPI a REDMetricsServletFilter
-* CQ-4354413: QueryBuilder: las consultas con corchetes se traducen incorrectamente a xpath
-* CQ-4354834: no se puede agregar un comentario en la tarea de bandeja de entrada
-* CQ-4354836: no se puede iniciar el flujo de trabajo o crear una tarea desde la consola Proyectos
-* CQ-4354867: La referencia ToggleCondition hace referencia a un campo inexistente en InstanceActionServlet
-* AEM CQ-4354895: Kit de traducción de: 12 de octubre
-* GRANITE-45560: representación de esquema común en la envolvente de evento
-* GRANITE-47267: Actualización a Apache Felix Http Jetty 4.2.18
-* GRANITE-47599: Las importaciones de contenido fallan desde 13323 actualización (JCRVLT-721)
-* GRANITE-47873: Actualización a Apache Felix Webconsole 4.9.6
-
-### Problemas conocidos {#known-issues-14029}
-
+* Se han corregido varios problemas de accesibilidad
 * ASSETS-31015: no se pueden cargar archivos en Assets con extensiones de archivo desconocidas.
+* ASSETS-24739: deshabilitar el punto final de acción personalizada Frame.io en la publicación.
+* CMGR-49845: Reflujo de contenido: Problema con la identificación de la ruta raíz correcta para un punto de comprobación determinado.
+* CMGR-49709: Reflujo de contenido: actualice el filtro de propiedades para ignorar propiedades adicionales.
+* CQ-4354503: la configuración de Adobe IMS se elimina aleatoriamente.
+* CQ-4354414: ConfigurationReplicationEventHandler crea muchas acciones de vaciado individuales.
+* CQ-4354401: Traducciones: el recurso creado por Proyectos debe guardarse antes de iniciar el procesamiento de recursos.
+* CQ-4354430: Traducciones: Se ha producido un error al añadir recursos que no forman parte de una estructura de carpetas de idioma a un proyecto de traducción.
+* CQ-4354412: Traducciones: al eliminar el contenido del trabajo de traducción, no se elimina todo el contenido referenciado.
+* CQ-4354636: Translations: La creación de una copia de idioma en el nivel raíz del idioma no ajusta las rutas en la página.
+* CQ-4354700: Workflows: La pantalla de carga útil del flujo de trabajo no se carga.
+* CQ-4354834: Workflows: no se puede añadir un comentario en la tarea de bandeja de entrada del flujo de trabajo.
+* FORMS-11302: El título del componente editado en RTE se muestra incorrectamente en el Editor de formularios adaptables > Editor de reglas.
+* GRANITE-45706: La importación de i18n falla si el valor clave tiene (&quot;Äú)) FLORES.
+* SITES-14156: Eventos: Los eventos de publicación no siempre se envían.
+* SITES-14520: GraphQL: mal rendimiento con consultas de graphql paginadas debido a FT_SITES-2719.
+* SITES-16444: GraphQL: DataFetchingException para campos del mismo nombre que no aparecen en la consulta de GraphQL.
+* SITES-16225: GraphQL: Los tipos de contenido de los campos RTE de modelo y fragmento devueltos por la API de Java no son correctos.
+* SITES-15373: Fragmentos de contenido: /adobe/sites/cf/fragments/{fragmentId}/variation/{name}El extremo /tags no utiliza las convenciones de nomenclatura de recursos correctas.
+* SITES-15709: Fragmentos de contenido: Crear problema de extremo de modelo al crear un campo booleano.
+* SITES-15727: Fragmentos de contenido: el campo de tipo &quot;Etiqueta&quot; solo se puede añadir una vez en el editor de modelos.
+* SITES-15782: Fragmentos de contenido: falta una propiedad única del modelo de campo del tipo Lista desglosada.
+* SITES-15786: Fragmentos de contenido: El fragmento de contenido no se puede crear en una carpeta que contenga &quot;.
+* SITES-15790: Fragmentos de contenido: Actualizar encabezado de ubicación para la creación de versiones.
+* SITES-15923: Fragmentos de contenido: El administrador de CF no muestra todas las carpetas.
+* SITES-15987: Fragmentos de contenido: obteniendo 500 al crear una variante.
+* SITES-16067: Fragmentos de contenido: No se puede modificar el tipo MIME del campo de fragmento de texto largo.
+* SITES-16074: Fragmentos de contenido: Etiquete campos que no sean de cadena[] no se puede recuperar de JCR.
+* SITES-16079: Fragmentos de contenido: /fragments/{id}/references ha comenzado a devolver duplicados.
+* SITES-16118: Fragmentos de contenido: si se aplica un parche a un fragmento y falta un campo de fragmento en el modelo, se genera una excepción.
+* SITES-16119: Fragmentos de contenido: si los metadatos del fragmento contienen campos no reconocidos, se genera una excepción.
+* SITES-16121: Fragmentos de contenido: la recuperación de un campo de fecha de modelo genera una excepción.
+* SITES-16123: Fragmentos de contenido: Si un recurso no es un fragmento de contenido, el extremo de obtener fragmentos genera una excepción.
+* SITES-16208: Fragmentos de contenido: ContentFragmentModelIdentifier expone una propiedad de título engañosa.
+* SITES-16707: Fragmentos de contenido: Los tipos de datos de los modelos de fragmentos de contenido no se leen correctamente.
+* SITES-16818: Fragmentos de contenido: realice la eliminación solo cuando haya etiquetas.
+* SITES-16207: Fragmentos de contenido: La operación POST /adobe/sites/cf/models devuelve dos códigos de estado OK diferentes.
+* SITES-15616: Fragmentos de contenido: El extremo de publicación no publica a veces todas las referencias de un fragmento de contenido.
+* SITES-16027: Fragmentos de contenido: falta información de referencia de variación en la respuesta del fragmento.
+* SITES-16243: Fragmentos de contenido: Buscar y reemplazar no funciona con campos que tienen Procesar como: Múltiple.
+* SITES-16250: Fragmentos de contenido: Al aplicar parches a un CF, a veces se devuelve un encabezado de etiqueta incorrecto.
+* SITES-16686: Fragmentos de contenido: las referencias no fragmentos de fragmentos de contenido se serializan cuando la referencia principal está en la profundidad máxima.
+* SITES-16234: ContextHub: el nombre correcto de la actividad de marca seleccionada no se muestra al iniciar la segmentación.
+* SITES-12880: Fast-Track: solución de localización para Sites > Configuración de Analytics.
+* SITES-16103: Fragmentos de experiencias: Las opciones de Target no se muestran en Cloud Service debido a un error de la consola.
+* SITES-16001: MSM: capacidad para excluir componentes de varios campos de la configuración de despliegue al crear Live Copy.
+* SITES-16559: MSM: Las configuraciones de despliegue se eliminan durante el proceso de despliegue de los fragmentos de experiencias.
+* SITES-16797: MSM: se ha corregido la reactivación de la herencia para un campo CF en el Editor.
+* SITES-16273: Editor de páginas: error de copia y pegado dentro de páginas de aem sites desde el portapapeles.
+* SITES-16126: Administrador de sitios: el rendimiento de la creación es lento para los usuarios que no son administradores después de SITES-10288.
+* FORMS-10534: Se produce un error en el editor de reglas al seleccionar la opción de operando booleano.
+* FORMS-10248: en un formulario adaptable, cuando el valor de los datos es de tipo booleano, las reglas no establecen correctamente los valores de los botones de opción o los componentes de casilla de verificación.
+* FORMS-11361: El componente desplegable toma como valor predeterminado automáticamente la selección de la primera opción de la lista.
+* FORMS-11413: un error relacionado con el servicio de relleno previo del portal de Forms se activa mediante Forms adaptable, incluso cuando el servicio no está en uso.
+* FORMS-11433: Cuando se incluye un componente que no es de formulario en un formulario adaptable, el proceso de envío no se completa.
+* FORMS-11206: Cuando un usuario intenta programar un flujo de trabajo de publicación para un formulario adaptable, no funciona como se espera.
+* FORMS-11546: Lighthouse ha detectado una etiqueta ARIA que falta para los paneles repetidos en un formulario adaptable, lo que afecta a la accesibilidad.
+* FORMS-11095: el atributo ARIA se define incorrectamente para los campos de número de teléfono, dirección de correo electrónico y número, lo que provoca problemas de accesibilidad.
+* FORMS-9894: la API del servicio de salida genera un código de error incorrecto cuando un usuario proporciona una ruta de repositorio no válida, lo que provoca confusión para los usuarios que encuentran este problema.
+* FORMS-11404: el servicio ImportData se comporta de forma incoherente al combinar varios datos XML con un PDF con extensión de lector. Concretamente, conserva correctamente las propiedades de Extensiones de Reader de un documento de PDF de salida, pero no lo hace para otros PDF de salida.
 
-### Tecnologías integradas {#embedded-tech-14029}
+
+### Problemas conocidos {#known-issues-14157}
+
+Ninguna.
+
+### Tecnologías integradas {#embedded-tech-14157}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
