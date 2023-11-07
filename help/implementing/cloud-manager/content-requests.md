@@ -2,10 +2,10 @@
 title: Explicación de las solicitudes de contenido de Cloud Service
 description: Si ha adquirido licencias de solicitud de contenido de Adobe, obtenga información acerca de los tipos de solicitudes de contenido que mide Adobe Experience Cloud as a Service y las variaciones con las herramientas de informes de análisis de una organización.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 12%
+source-wordcount: '1164'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,7 @@ Las solicitudes de contenido pueden tener variaciones con las herramientas de in
 | Herramientas de seguridad y monitorización de terceros | Las herramientas de monitorización y análisis de seguridad pueden generar solicitudes de contenido para AEM que no se rastrean en informes de Analytics. |
 | Acceso a API | El acceso mediante programación a páginas o a API de Adobe Experience Manager AEM puede generar solicitudes de contenido para las que no se realiza un seguimiento en los informes de Analytics y que no se rastrean en los informes de. |
 | Solicitudes de recuperación previa | El uso de un servicio de recuperación previa para cargar previamente las páginas a fin de aumentar la velocidad puede provocar aumentos significativos en el tráfico de las solicitudes de contenido. |
-| DDOS | Mientras que Adobe hace todo lo posible por detectar y filtrar automáticamente el tráfico de los ataques de DDOS, no hay garantías de que se detecten todos los ataques de DDOS posibles |
+| DDOS | Mientras el Adobe intenta detectar y filtrar automáticamente el tráfico de los ataques de DDOS, no hay garantías de que se detecten todos los ataques de DDOS posibles. |
 | Bloqueadores de tráfico | El uso de un bloqueador de tráfico en un explorador puede excluir el seguimiento de algunas solicitudes. |
 | Firewalls | Los firewalls pueden bloquear el seguimiento de Analytics. Este escenario es más frecuente con los servidores de seguridad corporativos. |
 
@@ -59,7 +59,7 @@ Consulte también [Tablero de licencias](/help/implementing/cloud-manager/licens
 | Código HTTP 400-499 | Excluido | Se devuelven errores al visitante cuando el contenido no existe (404) o hay otros problemas relacionados con el contenido o la solicitud. |
 | Código HTTP 300-399 | Excluido | Son solicitudes correctas que comprueban si algo ha cambiado en el servidor o redirigen la solicitud a otro recurso. No contienen contenido en sí, por lo que no son facturables. |
 | Solicitudes que se dirigen a /libs/* | Excluido | AEM Las solicitudes JSON internas de la, como el token de CSRF, que no es facturable. |
-| Tráfico de ataques DDOS | Excluido | Protección DDOS. AEM La detección automática de algunos de los ataques de DDOS y los bloquean es buena. Los ataques de DDOS si se detectan no son facturables.<br><br>Tipos de DDOS detectados automáticamente:<br>· DOSBlockedCiphersSHA<br>· DOSBlockedPattern<br>· DDOSSuspiciousRequest |
+| Tráfico de ataques DDOS | Excluido | Protección DDOS. AEM La detección automática de algunos de los ataques de DDOS y los bloquean es buena. Los ataques de DDOS si se detectan no son facturables. |
 | AEM Monitorización as a Cloud Service de NewRelic | Excluido | AEM Monitoreo global as a Cloud Service. |
 | URL para que los clientes supervisen su programa de Cloud Service | Excluido | URL recomendada para monitorizar externamente la disponibilidad.<br><br>`/system/probes/health` |
 | AEM Servicio de calentamiento del pod as a Cloud Service | Excluido | Agente de usuario: skyline-service-warmup/1.* |

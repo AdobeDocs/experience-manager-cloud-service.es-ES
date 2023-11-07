@@ -3,9 +3,9 @@ title: Prácticas recomendadas de búsqueda para [!DNL Adobe Experience Manager]
 description: Prácticas recomendadas para buscar, buscar y recuperar metadatos de recursos dentro de la aplicación.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2603'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ Puede hacer la búsqueda más específica añadiendo la palabra clave de búsque
 
 La búsqueda muestra resultados similares si está trabajando en **[!UICONTROL Vista de recursos]** y también.
 
-<!--[Watch a video to perform a simple search in AEM Assets] ()-->
+[Vea un vídeo para realizar una búsqueda básica en AEM Assets](https://video.tv.adobe.com/v/3425489)
 
 ## Archivos y carpetas {#files-folders}
 
@@ -67,7 +67,7 @@ Seleccione la carpeta de la ruta y vaya a la carpeta requerida si desea buscar d
 
 ![Búsqueda mediante archivos y carpetas](assets/files-folders.png)
 
-<!--[Watch a video to perform search in AEM Assets using Files and Folders] ()-->
+[Vea un vídeo para realizar búsquedas en AEM Assets mediante archivos y carpetas](https://video.tv.adobe.com/v/3425487)
 
 ## Operadores {#operators}
 
@@ -119,7 +119,7 @@ El asterisco es un operador comodín que se utiliza para ampliar la búsqueda es
 * `car*` devuelve recursos con lavado de coche, transportista, carro, etc.
 * `*car` devuelve recursos con un coche moderno, un coche deportivo, etc.
 
-<!--[Watch a video to perform a search in AEM Assets using wildcards] ()-->
+[Vea un vídeo para realizar una búsqueda en AEM Assets utilizando caracteres comodín](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL Vista de recursos]** no admite el uso de comodines.
 
@@ -172,8 +172,6 @@ Siga estos pasos en **[!UICONTROL Vista de recursos]**:
 1. Vaya a Filtros. En [!UICONTROL Tipo MIME], seleccione [!UICONTROL PDF].
 1. Ir a [!UICONTROL Estado del recurso], seleccione [!UICONTROL Todo] para incluir todos los recursos publicados y no publicados.
 
-<!--[Watch a video to perform search in AEM Assets using various filters] ()-->
-
 **Escenario 5: buscar todas las imágenes excepto PNG**
 
 Cuando no está seguro del título o la metadescripción de un recurso, puede utilizar varios filtros de búsqueda para que la búsqueda sea más relevante. Por ejemplo, para buscar recursos en **[!UICONTROL Vista de administrador]**, siga los pasos a continuación:
@@ -188,6 +186,8 @@ Para buscar recursos utilizando el escenario mencionado en **[!UICONTROL Vista d
 
 1. Vaya a los filtros de búsqueda.
 1. Vaya a Filtros. En [!UICONTROL Tipo MIME], seleccione todos los tipos MIME dados pero Anule la selección de PNG.
+
+[Vea un vídeo para realizar búsquedas en AEM Assets mediante filtros](https://video.tv.adobe.com/v/3425486)
 
 ## Búsqueda avanzada {#advanced-search}
 
@@ -240,6 +240,8 @@ Puede capturar un criterio específico mediante varios filtros de búsqueda. La 
 ![Buscar mediante etiquetas](assets/search-tags.png)
 
 La búsqueda muestra resultados similares si está trabajando en **[!UICONTROL Vista de recursos]** y también.
+
+[Vea un vídeo para realizar búsquedas en AEM Assets mediante Búsqueda avanzada](https://video.tv.adobe.com/v/3425490)
 
 **Escenario 9: encontrar una coincidencia similar para el coche de color rojo**
 
