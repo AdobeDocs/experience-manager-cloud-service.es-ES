@@ -3,10 +3,10 @@ title: Notas de la versión 2023.10.0 para Cloud Manager en Adobe Experience Man
 description: Estas son las notas de la versión 2023.10.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
+source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 19%
+source-wordcount: '599'
+ht-degree: 29%
 
 ---
 
@@ -30,10 +30,10 @@ La fecha de lanzamiento de Cloud Manager 2023.10.0 en AEM as a Cloud Service es 
 * Automático [actualizaciones para entornos de desarrollo](/help/implementing/cloud-manager/manage-environments.md#updating-environments) están habilitadas de forma predeterminada para los programas nuevos, lo que le ahorra el tiempo necesario para ejecutar las actualizaciones manualmente.
    * Esta actualización se implementará por fases.
 * Con la versión de octubre de 2023 de Cloud Manager, las versiones de Java se actualizan mediante una implementación gradual.
-   * Se han actualizado las versiones menores de Java 8 y 11 y Maven, que se implementarán por fases en los próximos 2 meses. La nueva versión tiene varias correcciones de seguridad y de errores. Las nuevas versiones son:
-   * *Maven: 3.8.8*
-   * *Versión de Java 8: /usr/lib/jvm/jdk1.8.0_371*
-   * *Versión de Java 11: /usr/lib/jvm/jdk-11.0.20*
+   * Se han actualizado las versiones menores de Java 8 y 11 y Maven, que se implementarán por fases en los próximos 2 meses. La nueva versión tiene varias correcciones de seguridad y de errores. Las nuevas API son:
+      * **Maven:** `3.8.8`
+      * **Versión de Java 8:** `/usr/lib/jvm/jdk1.8.0_371`
+      * **Versión de Java 11:** `/usr/lib/jvm/jdk-11.0.20`
    * [Consulte el aviso de OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) para obtener más información sobre la seguridad y las correcciones de errores en estas actualizaciones de JDK.
 
 ## Programa de adopción temprana {#early-adoption}
@@ -66,3 +66,15 @@ Si está interesado en probar esta nueva función y compartir sus comentarios, e
 El tablero aprovecha Google Lighthouse, una herramienta automatizada de código abierto para mejorar la calidad de sus aplicaciones web. Puede ejecutarlo en cualquier página web, pública o que requiera autenticación. Tiene auditorías de rendimiento, accesibilidad, aplicaciones web progresivas, SEO y más.
 
 ¿Interesado en probar a conducir el nuevo tablero? Envíe un correo electrónico a `aem-lighthouse-pilot@adobe.com` a partir de su correo electrónico asociado con su Adobe ID y podemos ayudarle a empezar.
+
+## Problemas conocidos {#known-issues}
+
+Hay un error conocido que evita [configuración de canalizaciones de implementación](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) de insertarse en producción.
+
+Si la variable **Pausa antes de implementar en producción** se requiere para una canalización de implementación de configuración, la siguiente es la solución sugerida hasta que se resuelva el error.
+
+1. Ejecutar la canalización.
+1. Pruebe el código en el entorno de ensayo.
+1. Cuando la implementación y la aprobación estén disponibles, haga clic en **Rechazar**.
+1. Edite la canalización para deshabilitar el **Pausa antes de implementar en producción** opción.
+1. Vuelva a ejecutar la canalización. Se volverá a ejecutar en el ensayo y después en la producción.
