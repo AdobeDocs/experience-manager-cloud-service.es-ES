@@ -2,9 +2,9 @@
 title: Navegación al proveedor de servicios de Screens
 description: En esta página se describe cómo navegar al proveedor de servicios de Screens.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: ad5a8656b200ba35a0a6f58afd4be03202138f47
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '292'
 ht-degree: 6%
 
 ---
@@ -38,6 +38,9 @@ Siga los pasos a continuación para configurar el proveedor de servicios de Scre
 3. Introduzca los siguientes detalles en el cuadro de diálogo Editar configuración.
    * **URL de publicación** AEM - URL de publicación de la aplicación (por ejemplo, `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **URL del autor** AEM - URL del autor de la (por ejemplo, `https://author-p12345-e12345.adobeaemcloud.com`)
+
+   >[!NOTE]
+   >AEM AEM Asegúrese de crear y publicar al menos un canal de pantalla de antes de configurar la opción en el proveedor de servicios de pantalla de la sección de la. Para crear un canal, vaya a /screens.html en su proveedor de contenido.
 
    ![imagen](/help/screens-cloud/assets/configure/configure-screens4.png)
 

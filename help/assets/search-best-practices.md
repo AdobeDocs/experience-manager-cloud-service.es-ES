@@ -3,7 +3,7 @@ title: Prácticas recomendadas de búsqueda para [!DNL Adobe Experience Manager]
 description: Prácticas recomendadas para buscar, buscar y recuperar metadatos de recursos dentro de la aplicación.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 780f0dee9a2a0fd7fa63b93bdd8be6bc23eef04f
+source-git-commit: a3f7564932e7f9318841623376f62dad91ceca18
 workflow-type: tm+mt
 source-wordcount: '2544'
 ht-degree: 3%
@@ -46,7 +46,9 @@ Puede hacer la búsqueda más específica añadiendo la palabra clave de búsque
 
 La búsqueda muestra resultados similares si está trabajando en **[!UICONTROL Vista de recursos]** y también.
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
+-->
 
 ## Archivos y carpetas {#files-folders}
 
@@ -67,7 +69,9 @@ Seleccione la carpeta de la ruta y vaya a la carpeta requerida si desea buscar d
 
 ![Búsqueda mediante archivos y carpetas](assets/files-folders.png)
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
+-->
 
 ## Operadores {#operators}
 
@@ -119,7 +123,9 @@ El asterisco es un operador comodín que se utiliza para ampliar la búsqueda es
 * `car*` devuelve recursos con lavado de coche, transportista, carro, etc.
 * `*car` devuelve recursos con un coche moderno, un coche deportivo, etc.
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425488)
+-->
 
 **[!UICONTROL Vista de recursos]** no admite el uso de comodines.
 
@@ -187,7 +193,9 @@ Para buscar recursos utilizando el escenario mencionado en **[!UICONTROL Vista d
 1. Vaya a los filtros de búsqueda.
 1. Vaya a Filtros. En [!UICONTROL Tipo MIME], seleccione todos los tipos MIME dados pero Anule la selección de PNG.
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425486)
+-->
 
 ## Búsqueda avanzada {#advanced-search}
 
@@ -241,7 +249,9 @@ Puede capturar un criterio específico mediante varios filtros de búsqueda. La 
 
 La búsqueda muestra resultados similares si está trabajando en **[!UICONTROL Vista de recursos]** y también.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425490)
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)  
+-->
 
 **Escenario 9: encontrar una coincidencia similar para el coche de color rojo**
 
