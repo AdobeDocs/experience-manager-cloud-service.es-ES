@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
+source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2147'
 ht-degree: 89%
 
 ---
@@ -45,7 +45,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 
      >[!NOTE]
      >
-     > En Forms adaptable basado en componentes principales, puede utilizar un solo fragmento de formulario varias veces en un formulario. Admite fragmentos de formulario basados en ninguno y en esquema.
+     > En Forms adaptable, puede utilizar un solo fragmento de formulario (basado en componentes principales) varias veces en un formulario. Admite fragmentos de formulario basados en ninguno y en esquema.
 
    * **Plantilla de formulario**: Especifica la creación del fragmento mediante una plantilla XDP cargada en [!DNL AEM Forms]. Seleccione la plantilla XDP adecuada como modelo de formulario para el fragmento.
 
@@ -173,7 +173,7 @@ Puede utilizar un fragmento de formulario basado en esquemas varias veces en un 
 
 >[!NOTE]
 >
-> * Si utiliza fragmentos de formulario basados en ninguno varias veces en un formulario adaptable, se produce la sincronización de datos entre los campos de los fragmentos. Puede usar una sola [fragmento de formulario (basado en componentes principales)](/help/forms/adaptive-form-fragments-core-components.md)  varias veces en un formulario. Admite fragmentos de formulario basados en ninguno y en esquema sin problemas de sincronización de datos.
+> Si utiliza fragmentos de formulario basados en ninguno varias veces en un formulario adaptable, se produce la sincronización de datos entre los campos de los fragmentos. Puede usar una sola [fragmento de formulario (basado en componentes principales)](/help/forms/adaptive-form-fragments-core-components.md) que no esté vinculado a ningún modelo de datos de formulario varias veces en un formulario sin experimentar problemas de sincronización de datos.
 
 ## Asignar automáticamente fragmentos para enlazar datos {#auto-mapping-of-fragments-for-data-binding}
 
@@ -261,9 +261,11 @@ Para localizar un formulario adaptable que contenga fragmentos de formulario ada
 * (**Solo Mac**) Para asegurarse de que la funcionalidad de los fragmentos del formulario funciona perfectamente en todas las situaciones, agregue la siguiente entrada al archivo /private/etc/hosts:
   `127.0.0.1 <Host machine>` **Equipo host**: El equipo Mac de Apple en el que [!DNL AEM Forms] está implementado.
 
-## Fragmentos de referencia {#reference-fragments}
+<!--
+## Reference Fragments {#reference-fragments}
 
-Los fragmentos de formulario adaptables de referencia que se pueden usar para crear el formulario están disponibles. Para obtener más información, consulte [Usar fragmentos de referencia](reference-adaptive-form-fragments.md).
+Reference Adaptive Form Fragments that you can use to create your form are available. For more information, see [Reference Fragments](reference-adaptive-form-fragments.md).
+-->
 
 >[!MORELIKETHIS]
 >
