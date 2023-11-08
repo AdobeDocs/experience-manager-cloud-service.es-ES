@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 95%
+source-wordcount: '2167'
+ht-degree: 89%
 
 ---
 
@@ -42,6 +42,11 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 1. Haga clic para abrir el **modelo de formulario** y desde el menú desplegable **Seleccionar desde**, seleccione uno de los siguientes modelos para el fragmento:
 
    * **Ninguno**: Especifica que se cree el fragmento desde cero sin usar ningún modelo de formulario.
+
+     >[!NOTE]
+     >
+     > En Forms adaptable basado en componentes principales, puede utilizar un solo fragmento de formulario varias veces en un formulario. Admite fragmentos de formulario basados en ninguno y en esquema.
+
    * **Plantilla de formulario**: Especifica la creación del fragmento mediante una plantilla XDP cargada en [!DNL AEM Forms]. Seleccione la plantilla XDP adecuada como modelo de formulario para el fragmento.
 
    ![Crear un formulario adaptable mediante una plantilla de formulario como modelo](assets/form-template-model.png)
@@ -159,6 +164,16 @@ Puede crear fragmentos de formulario adaptable anidados, lo que significa que pu
 ### Cambiar fragmentos {#change-fragments}
 
 Puede reemplazar o cambiar un fragmento de formulario adaptable por otro fragmento mediante la propiedad **Seleccionar activo de fragmento** en el cuadro de diálogo Editar componente para un panel de fragmento de formulario adaptable.
+
+### Usar un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
+
+Puede utilizar un fragmento de formulario basado en esquemas varias veces en un formulario adaptable para guardar datos de forma única para cada campo de fragmento de formulario. Por ejemplo, puede utilizar un fragmento de formulario de dirección para recopilar detalles de dirección para direcciones permanentes, de comunicación y actuales en un formulario de solicitud de préstamo.
+
+![usar varios fragmentos en formularios adaptables](/help/forms/assets/using-multiple-fragment-af.gif)
+
+>[!NOTE]
+>
+> * Si utiliza fragmentos de formulario basados en ninguno varias veces en un formulario adaptable, se produce la sincronización de datos entre los campos de los fragmentos. Puede usar una sola [fragmento de formulario (basado en componentes principales)](/help/forms/adaptive-form-fragments-core-components.md)  varias veces en un formulario. Admite fragmentos de formulario basados en ninguno y en esquema sin problemas de sincronización de datos.
 
 ## Asignar automáticamente fragmentos para enlazar datos {#auto-mapping-of-fragments-for-data-binding}
 

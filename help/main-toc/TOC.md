@@ -169,7 +169,7 @@ ht-degree: 93%
    + [Compatibilidad con IMS para AEM as a Cloud Service](/help/security/ims-support.md)
    + [Compatibilidad con cookies del mismo sitio para AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
-   + [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md)
+   + [Reglas de filtro de tráfico, incluidas reglas WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Consideraciones de seguridad de AEM as a Cloud Service Security](/help/security/security-considerations.md)
 + Incorporación {#onboarding}
    + [Empiece aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=es)

@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -158,11 +158,11 @@ Los Edge Delivery Services funcionan sobre una CDN e infraestructura sin servido
 
 La conversión a HTML AEM semántico se produce a partir del contenido publicado servido desde el nivel de creación de la publicación o desde el entorno de creación basado en documentos de la publicación de la publicación de la publicación de la documentación de.
 
-El diagrama siguiente ilustra cómo se puede editar el contenido de Sites en Microsoft Word (creación basada en documentos) y publicarlo en Edge Delivery. AEM También muestra el método de publicación tradicional de la publicación de la utilizando los diversos editores.
+El diagrama siguiente ilustra cómo se puede editar el contenido de Sites en Microsoft Word (creación basada en documentos) y publicarlo en Edge Delivery. También muestra el método de publicación tradicional en AEM utilizando los diversos editores.
 
 ![AEM Sites as a Cloud Service: con Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service: con Edge Delivery Services")
 
-Como los Edge Delivery Services forman parte de Adobe Experience Manager y, como tales, Edge Delivery, AEM Sites y AEM Assets pueden coexistir en el mismo dominio. Este es un caso de uso común para sitios web más grandes. Por ejemplo, es posible que un cliente desee migrar una página concreta con mucho tráfico a los Edge Delivery Services AEM, mientras que el resto de páginas podrían permanecer en el nivel de publicación de la.
+Como los Edge Delivery Services forman parte de Adobe Experience Manager y, como tales, Edge Delivery, AEM Sites y AEM Assets pueden coexistir en el mismo dominio. Este es un caso de uso común en sitios web más grandes. Por ejemplo, es posible que un cliente desee migrar una página concreta con mucho tráfico a los Edge Delivery Services AEM, mientras que el resto de páginas podrían permanecer en el nivel de publicación de la.
 
 ## Arquitectura de desarrollo {#development-architecture}
 

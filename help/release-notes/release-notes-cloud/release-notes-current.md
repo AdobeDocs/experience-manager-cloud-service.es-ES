@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -87,9 +87,9 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 [Filtrado de tráfico en la CDN administrada por Adobe](/help/security/traffic-filter-rules-including-waf.md) declarando reglas que coincidan con el tráfico del sitio web por propiedades, incluidas la dirección url, la dirección IP y el agente de usuario, o estableciendo límites de tasa de tráfico personalizados para protegerse contra ataques DoS. Los clientes también pueden otorgar licencias a un conjunto de reglas avanzadas de cortafuegos de aplicaciones web (WAF) para obtener una protección adicional contra amenazas sofisticadas de sitios web.
 
-Le recomendamos que se familiarice con las reglas de filtro de tráfico con [prueba de un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! Le guiará a través de la configuración de una nueva canalización de configuración de Cloud Manager, la declaración de reglas en un archivo de configuración y el análisis de registros de CDN para tráfico malicioso.
+Le recomendamos que se familiarice con las reglas de filtro de tráfico con [prueba de un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=es)! Le guiará a través de la configuración de una nueva canalización de configuración de Cloud Manager, la declaración de reglas en un archivo de configuración y el análisis de registros de CDN para tráfico malicioso.
 
-Las reglas de filtro de tráfico ya están disponibles en los entornos de desarrollo, con un despliegue gradual a los entornos de ensayo y producción en noviembre. Puede solicitar acceso anticipado en la fase y producción enviando un correo electrónico a **aemcs-waf-adopter@adobe.com**.
+Las reglas de filtro de tráfico ya están disponibles en los entornos de desarrollo, con un despliegue gradual a los entornos de ensayo y producción en noviembre. Puede solicitar acceso anticipado a la fase y la producción enviando un correo electrónico a **aemcs-waf-adopter@adobe.com**.
 
 Las reglas avanzadas de filtro de tráfico WAF se pueden licenciar a finales de este año a través de las ofertas de Seguridad mejorada o Protección WAF-DDoS.
 
