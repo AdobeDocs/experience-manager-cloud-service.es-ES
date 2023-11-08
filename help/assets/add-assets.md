@@ -4,10 +4,10 @@ description: Añadir sus recursos digitales a [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
 workflow-type: tm+mt
-source-wordcount: '3156'
-ht-degree: 2%
+source-wordcount: '3188'
+ht-degree: 7%
 
 ---
 
@@ -58,11 +58,11 @@ También puede solicitar que se realice un procesamiento adicional de los recurs
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritorio y arrastrarlos en la interfaz de usuario (explorador web) a la carpeta de destino. También puede iniciar la carga desde la interfaz de usuario de.
+Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritorio y arrastrarlos en la interfaz de usuario (explorador web) a la carpeta de destino. También puede iniciar la carga desde la interfaz de usuario de. [!DNL Experience Manager] puede alojar carpetas con más de 1000 recursos. Si desea cargar más elementos en dicha carpeta con más de 1000 elementos existentes, puede provocar un retraso en la carga o creación de la nueva carpeta.
 
 >[!IMPORTANT]
 >
->Los recursos que cargue en Experience Manager buena y que tengan un nombre de archivo de más de 100 caracteres tienen un nombre abreviado cuando se utilizan en Dynamic Media.
+>Los recursos que carga en Experience Manager y que tienen un nombre de archivo de más de 100 caracteres tienen un nombre abreviado cuando se utilizan en Dynamic Media.
 >
 >Los 100 primeros caracteres del nombre de archivo se utilizan tal cual; los caracteres restantes se sustituyen por una cadena alfanumérica. Este método de cambio de nombre garantiza un nombre único cuando el recurso se utiliza en Dynamic Media. También está diseñado para dar cabida a la longitud máxima de nombre de archivo de recursos permitida en Dynamic Media.
 
@@ -181,11 +181,11 @@ Para configurar la herramienta Importación masiva, siga estos pasos:
 
 1. Seleccione el modo de autenticación necesario en la lista desplegable. **Clave de acceso de Azure** proporciona acceso completo a la cuenta de almacenamiento de Azure, mientras que **Token SAS de Azure** permite al administrador limitar las capacidades del token mediante permisos y directivas de caducidad.
 
-1. Proporcione el nombre de la carpeta raíz que contiene los recursos de la fuente de datos en la **[!UICONTROL Carpeta de origen]** field.
+1. Proporcione el nombre de la carpeta raíz que contiene los recursos de la fuente de datos en el campo **[!UICONTROL Carpeta de origen]**.
 
 1. (Opcional) Proporcione el tamaño mínimo de archivo de los recursos en MB para incluirlos en el proceso de ingesta en la **[!UICONTROL Filtrar por tamaño mínimo]** field.
 
-1. (Opcional) Proporcione el tamaño máximo de archivo de los recursos en MB para incluirlos en el proceso de ingesta en **[!UICONTROL Filtrar por tamaño máximo]** field.
+1. (Opcional) Proporcione el tamaño máximo de archivo de los recursos en MB para incluirlos en el proceso de ingesta en **[!UICONTROL Filtrar por tamaño máximo]**.
 
 1. (Opcional) Especifique una lista de tipos MIME separados por comas que se excluirán de la ingesta en **[!UICONTROL Excluir tipos MIME]** field. Por ejemplo, `image/jpeg, image/.*, video/mp4`. Consulte [todos los formatos de archivo admitidos](/help/assets/file-format-support.md).
 
@@ -193,9 +193,9 @@ Para configurar la herramienta Importación masiva, siga estos pasos:
 
 1. Seleccione el **[!UICONTROL Eliminar archivo de origen tras importar]** opción para eliminar los archivos originales del almacén de datos de origen después de importar los archivos en [!DNL Experience Manager].
 
-1. Seleccione el **[!UICONTROL Modo de importación]**. Seleccionar **Omitir**, **Reemplazar**, o **Crear versión**. El modo de omisión es el predeterminado y, en este modo, el ingestor omite la importación de un recurso si ya existe. Ver el significado de [reemplazar y crear opciones de versión](#handling-upload-existing-file).
+1. Seleccione el **[!UICONTROL Modo de importación]**. Seleccione **Omitir**, **Reemplazar** o **Crear versión**. El modo de omisión es el predeterminado y, en este modo, el ingestor omite la importación de un recurso si ya existe. Ver el significado de [reemplazar y crear opciones de versión](#handling-upload-existing-file).
 
-1. Para definir una ubicación en DAM en la que se importarán los recursos mediante **[!UICONTROL Carpeta de destino de recursos]** , especifique una ruta. Por ejemplo, `/content/dam/imported_assets`.
+1. Especifique una ruta para definir una ubicación en DAM en la que se importarán los recursos mediante **[!UICONTROL Carpeta de destino de recursos]**. Por ejemplo, `/content/dam/imported_assets`.
 
 1. (Opcional) Especifique el archivo de metadatos que desea importar, proporcionado en formato CSV, en la variable **[!UICONTROL Archivo de metadatos]** field. Especifique el archivo CSV en la ubicación del blob de origen y consulte la ruta al configurar la herramienta Importación masiva. El formato de archivo CSV al que se hace referencia en este campo es el mismo que el formato de archivo CSV cuando se selecciona [Importación y exportación de metadatos de recursos de forma masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Si selecciona la opción **Eliminar archivo de origen tras importar** opción, filtre los archivos CSV mediante la variable **Excluir** o **Incluir tipo MIME** o **Filtrar por ruta/archivo** campos. Puede utilizar una expresión regular para filtrar los archivos CSV en estos campos.
 
@@ -207,7 +207,7 @@ Después de crear la configuración de la herramienta Importación masiva, puede
 
 ### Editar la configuración {#edit-configuration}
 
-Para editar los detalles de configuración, seleccione la configuración y haga clic en **[!UICONTROL Editar]**. No se puede editar el título de la configuración y el origen de datos de importación mientras se realiza la operación de edición.
+Para editar los detalles de configuración, seleccione la configuración y haga clic en **[!UICONTROL Editar]**. No se puede editar el título de la configuración y la fuente de datos de importación mientras se realiza la operación de edición.
 
 ### Eliminar la configuración {#delete-configuration}
 
@@ -215,7 +215,7 @@ Seleccione la configuración y haga clic en **[!UICONTROL Eliminar]** para elimi
 
 ### Validar la conexión con el origen de datos {#validate-connection}
 
-Para validar la conexión con el origen de datos, seleccione la configuración y haga clic en **[!UICONTROL check]**. Si la conexión se realiza correctamente, el Experience Manager muestra el siguiente mensaje:
+Para validar la conexión con el origen de datos, seleccione la configuración y haga clic en **[!UICONTROL check]**. Si la conexión se realiza correctamente, Experience Manager muestra el siguiente mensaje:
 
 ![Mensaje de éxito de importación masiva](assets/bulk-import-success-message.png)
 
@@ -317,7 +317,7 @@ Para programar una importación masiva única o recurrente, ejecute los siguient
 
 1. Cree una configuración de importación masiva.
 1. Seleccione la configuración y seleccione **[!UICONTROL Programación]** en la barra de herramientas.
-1. Establezca una ingesta única o programe una programación por hora, diaria o semanal. Haga clic en **[!UICONTROL Enviar]**.
+1. Establezca una ingesta única o programe una programación horaria, diaria o semanal. Haga clic en **[!UICONTROL Enviar]**.
 
    ![Programar trabajo de ingestor masivo](assets/bulk-ingest-schedule1.png)
 
