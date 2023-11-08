@@ -5,10 +5,12 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+hide: true
+hidefromtoc: true
+source-git-commit: 0712e7bb4f3150fd3361bc77652c6883845f960c
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 29%
+ht-degree: 34%
 
 ---
 
@@ -48,11 +50,11 @@ La cronología muestra el flujo de actividad para las operaciones que realiza en
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
