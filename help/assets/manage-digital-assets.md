@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 22cfb23784544947b6a38be0453959913c9e8ccd
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
 workflow-type: tm+mt
-source-wordcount: '4519'
+source-wordcount: '4346'
 ht-degree: 11%
 
 ---
@@ -43,39 +43,6 @@ No se admiten los siguientes caracteres (lista de caracteres separados por espac
 ## Carga de activos {#uploading-assets}
 
 Consulte [añadir recursos digitales a Experience Manager](add-assets.md).
-
-## Detección de recursos duplicados {#detect-duplicate-assets}
-
-<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
-
-Si un usuario DAM carga uno o más recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y se lo comunica al usuario. La detección de duplicados está desactivada de forma predeterminada, ya que puede afectar al rendimiento según el tamaño del repositorio y el número de recursos cargados.
-
-Para habilitar la función:
-
-1. Vaya a **[!UICONTROL Herramientas > Recursos > Configuraciones de recursos]**.
-
-1. Clic **[!UICONTROL Detector de duplicación de recursos]**.
-
-1. En el [!UICONTROL Página Detector de duplicación de recursos], haga clic en **[!UICONTROL Habilitado]**.
-
-   `dam:sha1` El valor del campo Detectar metadatos garantiza que se detecten recursos duplicados aunque los nombres de archivo sean diferentes.
-
-1. Haga clic en **[!UICONTROL Guardar]**.
-
-   ![Detector de duplicación de recursos](assets/asset-duplication-detector.png)
-
->[!NOTE]
->
->Si ha configurado el detector de duplicación con `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` archivo de configuración (configuración OSGi), puede seguir utilizándolo, sin embargo, Adobe recomienda utilizar el nuevo método.
-
-
-Una vez activado, el Experience Manager envía notificaciones de recursos duplicados a la bandeja de entrada del Experience Manager. Es un resultado agregado para varios duplicados. Los usuarios pueden optar por eliminar los recursos en función de los resultados.
-
-![Notificación de bandeja de entrada para recursos duplicados](assets/duplicate-detect-inbox-notification.png)
-
->[!NOTE]
->
->Al cargar recursos en el repositorio, Experience Manager detecta la duplicación y le notifica sobre los 100 primeros recursos duplicados.
 
 ## Extraer archivos .zip {#extract-zip-archives}
 
