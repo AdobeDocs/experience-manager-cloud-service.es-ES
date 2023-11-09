@@ -2,9 +2,9 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
+source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1124'
 ht-degree: 12%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 12%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 14157 {#release-14157}
+## Versión 14227 {#release-14227}
 
-A continuación se resumen las mejoras continuas para la 14157 de la versión de mantenimiento, que se publicó el 7 de noviembre de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 14029 anterior.
+A continuación se resumen las mejoras continuas para la 14227 de la versión de mantenimiento, que se publicó el 9 de noviembre de 2023. Esta versión de mantenimiento es una actualización de la versión de mantenimiento 14029 anterior. La 14227 de la versión de mantenimiento sustituye a la 14157 para corregir un problema.
 
 La activación de funciones 2023.11.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
 
-### Mejoras {#enhancements-14157}
+### Mejoras {#enhancements-14227}
 
 * ASSETS-29631: Assets Cloud: Utilice dam:roles para una entrega/búsqueda segura.
 * CQ-4354515: Translations: Opción para suprimir la traducción de recursos a los que se hace referencia.
@@ -40,7 +40,7 @@ La activación de funciones 2023.11.0 proporcionará el conjunto completo de fun
 * SITES-16545: Fragmentos de contenido: agregue un punto final para recuperar las referencias de la variación de un fragmento de contenido.
 * SITES-16853: Fragmentos de contenido: Eliminar /adobe/sites/cf/fragments/{fragmentId}/variation/{name}Extremo /tags.
 
-### Problemas corregidos {#fixed-issues-14157}
+### Problemas corregidos {#fixed-issues-14227}
 
 * Se han corregido varios problemas de accesibilidad
 * ASSETS-31015: no se pueden cargar archivos en Assets con extensiones de archivo desconocidas.
@@ -85,7 +85,6 @@ La activación de funciones 2023.11.0 proporcionará el conjunto completo de fun
 * SITES-16243: Fragmentos de contenido: Buscar y reemplazar no funciona con campos que tienen Procesar como: Múltiple.
 * SITES-16250: Fragmentos de contenido: Al aplicar parches a un CF, a veces se devuelve un encabezado de etiqueta incorrecto.
 * SITES-16686: Fragmentos de contenido: las referencias no fragmentos de fragmentos de contenido se serializan cuando la referencia principal está en la profundidad máxima.
-* SITES-16234: ContextHub: el nombre correcto de la actividad de marca seleccionada no se muestra al iniciar la segmentación.
 * SITES-12880: Fast-Track: solución de localización para Sites > Configuración de Analytics.
 * SITES-16103: Fragmentos de experiencias: Las opciones de Target no se muestran en Cloud Service debido a un error de la consola.
 * SITES-16001: MSM: capacidad para excluir componentes de varios campos de la configuración de despliegue al crear Live Copy.
@@ -102,11 +101,11 @@ La activación de funciones 2023.11.0 proporcionará el conjunto completo de fun
 * FORMS-11546: Lighthouse ha detectado una etiqueta ARIA que falta para los paneles repetidos en un formulario adaptable, lo que afecta a la accesibilidad.
 * FORMS-11095: el atributo ARIA se define incorrectamente para los campos de número de teléfono, dirección de correo electrónico y número, lo que provoca problemas de accesibilidad.
 
-### Problemas conocidos {#known-issues-14157}
+### Problemas conocidos {#known-issues-14227}
 
 Ninguna.
 
-### Tecnologías integradas {#embedded-tech-14157}
+### Tecnologías integradas {#embedded-tech-14227}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
