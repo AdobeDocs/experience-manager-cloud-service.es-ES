@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
+source-git-commit: 1835559f9becea5f79d179be9b01efbe67c82151
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2148'
 ht-degree: 89%
 
 ---
@@ -173,7 +173,7 @@ Puede utilizar un fragmento de formulario basado en esquemas varias veces en un 
 
 >[!NOTE]
 >
-> Si utiliza fragmentos de formulario basados en ninguno varias veces en un formulario adaptable, se produce la sincronización de datos entre los campos de los fragmentos. Puede usar una sola [fragmento de formulario (basado en componentes principales)](/help/forms/adaptive-form-fragments-core-components.md) que no esté vinculado a ningún modelo de datos de formulario varias veces en un formulario sin experimentar problemas de sincronización de datos.
+> Si utiliza fragmentos de formulario basados en ninguno varias veces en un formulario adaptable, se produce un problema de sincronización de datos entre los campos de los fragmentos. Puede usar una sola [fragmento de formulario (basado en componentes principales)](/help/forms/adaptive-form-fragments-core-components.md) que no está vinculado a ningún modelo de datos de formulario, varias veces en un formulario sin experimentar problemas de sincronización de datos.
 
 ## Asignar automáticamente fragmentos para enlazar datos {#auto-mapping-of-fragments-for-data-binding}
 
