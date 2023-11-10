@@ -4,12 +4,13 @@ description: Explore cómo puede utilizar el editor universal para editar cualqu
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
+source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 9%
+source-wordcount: '977'
+ht-degree: 11%
 
 ---
+
 
 # Edición en contexto con el editor universal {#editing-in-context}
 
@@ -38,11 +39,11 @@ Editar en contexto y en contexto suele ser mejor que editar contenido estructura
 
 Con el editor universal, tiene una forma ágil de editar el texto en contexto y en contexto, lo que permite crear contenido de forma sencilla e intuitiva.
 
-1. El editor se debe cargar de forma predeterminada en **Texto** modo. Si no es así, toque o haga clic en **Texto** en el carril de modo en la parte izquierda del editor.
+1. El editor se debe cargar de forma predeterminada en **Componentes** modo. Si no es así, toque o haga clic en **Componentes** en el carril de modo en la parte izquierda del editor.
 
-1. Toque o haga clic en el título del artículo más reciente para editarlo.
+1. Pulse dos veces o haga clic en el título del artículo más reciente para editarlo.
 
-   ![El editor universal](assets/do-not-localize/ue-text-mode.png)
+   ![El editor universal](assets/do-not-localize/ue-component-mode.png)
 
 1. El componente se selecciona tal como indica un borde azul con una pestaña que indica que es un componente de texto. Un cursor se encuentra en el borde a la espera de una entrada de texto. Cambie el texto a `Aloha Spirit in Lofoten`.
 
@@ -56,11 +57,9 @@ El editor universal guarda los cambios automáticamente en el entorno de creaci�
 
 También puede intercambiar imágenes mientras permanece en el contexto del contenido mediante el Editor universal.
 
-1. Cambie el editor a **Medios** al tocar o hacer clic en el botón **Medios** en el carril de modo.
+1. Restante en **Componentes** en el modo, toque o haga clic en la imagen del internauta para seleccionarla.
 
-1. Pulse o haga clic en la imagen del internauta para seleccionarla.
-
-1. En el carril del componente, puede ver los detalles del recurso. Haga clic o pulse **Reemplazar**.
+1. En el carril del componente, puede ver los detalles del recurso. Haga clic o pulse en **Imagen destacada** miniatura.
 
    ![Selección de una imagen para editarla](assets/do-not-localize/ue-edit-media.png)
 
@@ -82,7 +81,7 @@ El editor universal permite interactuar con el contenido dentro de su contexto y
 
 1. Los Reader pueden estar en diferentes dispositivos con diferentes proporciones de aspecto, por lo que el editor ofrece modos de emulación para ver cómo se presentará la página a los usuarios. Por ejemplo, seleccione la opción de dispositivo móvil en modo vertical.
 
-   ![Elemento de menú del emulador](assets/do-not-localize/ue-emulator-3.png)
+   ![Elemento de menú del emulador](assets/do-not-localize/ue-emulator-2.png)
 
 1. Consulte el cambio de contenido en el editor. El icono del emulador también cambia para reflejar el modo en el que se encuentra. Toque o haga clic en cualquier lugar fuera del menú del emulador para cerrarlo e interactuar con el contenido.
 
@@ -118,12 +117,12 @@ Para acelerar su experiencia de creación de contenido cuando la edición estruc
 
 1. En el carril de modo de la parte izquierda del editor, seleccione **Componentes**. Esto permite seleccionar componentes de página en el editor.
 
-1. Pulse o haga clic en una de las aventuras para seleccionarla.
+1. Toque o haga clic en una de las aventuras, como **Bali Surf Camp** para seleccionarlo.
 
-   * Observe el contorno azul del componente seleccionado. La pestaña debe decir **reference** cuando se selecciona un fragmento de contenido.
+   * Observe el contorno azul del componente seleccionado. La pestaña debe mostrar el nombre del fragmento de contenido cuando se selecciona uno. En este caso **Bali Surf Camp**.
    * Dado que el editor universal permite seleccionar cualquier objeto de la página, los componentes que forman parte de un fragmento de contenido también se pueden seleccionar individualmente. Toque o haga clic donde se indica en la ilustración para seleccionar todo el componente Fragmento de contenido.
 
-1. Un nuevo **Editar** en el carril de modo. Haga clic o pulse en **Editar** para abrir el editor de fragmentos de contenido en una nueva pestaña.
+1. El **Editar** aparece un icono en el carril del componente. Haga clic o pulse en **Editar** para abrir el editor de fragmentos de contenido en una nueva pestaña.
 
 ![Selección de fragmentos de contenido en el editor universal](assets/do-not-localize/ue-content-fragments.png)
 
