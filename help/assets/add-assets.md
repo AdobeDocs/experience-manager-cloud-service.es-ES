@@ -4,9 +4,9 @@ description: Añadir sus recursos digitales a [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
+source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
 workflow-type: tm+mt
-source-wordcount: '3188'
+source-wordcount: '3211'
 ht-degree: 7%
 
 ---
@@ -384,7 +384,7 @@ Los detalles técnicos de las API de carga y del protocolo, y los vínculos al S
 
 * La carga binaria directa es un nuevo método para cargar recursos. Es compatible de forma predeterminada con las funciones y los clientes del producto, como [!DNL Experience Manager] interfaz de usuario, [!DNL Adobe Asset Link], y [!DNL Experience Manager] aplicación de escritorio. Cualquier código personalizado personalizado o ampliado por los equipos técnicos de los clientes debe utilizar las nuevas API y protocolos de carga.
 
-* El Adobe recomienda no añadir más de 1000 recursos en cada carpeta de [!DNL Experience Manager Assets]. Aunque puede agregar más recursos a una carpeta, es posible que experimente problemas de rendimiento, como una navegación más lenta a dichas carpetas.
+* El Adobe recomienda no añadir más de 1000 recursos en cada carpeta de [!DNL Experience Manager Assets]. Si intenta hacerlo, puede recibir un mensaje de alerta que diga: &quot;Este directorio contiene más de 1000 elementos. Las cargas y las nuevas creaciones de carpetas pueden retrasarse&quot;. Aunque todavía puede agregar más recursos a una carpeta, puede experimentar problemas de rendimiento como una navegación más lenta a dichas carpetas.
 
 * Al seleccionar **[!UICONTROL Reemplazar]** en el [!UICONTROL Conflicto de nombres] , el ID del recurso se regenera para el nuevo recurso. Este ID es diferente del ID del recurso anterior. If [Assets Insights](/help/assets/assets-insights.md) está habilitado para rastrear impresiones o clics con [!DNL Adobe Analytics], el ID del recurso regenerado invalida los datos capturados para el recurso en [!DNL Analytics].
 
