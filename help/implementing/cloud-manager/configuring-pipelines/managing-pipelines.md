@@ -3,10 +3,10 @@ title: Administración de canalizaciones
 description: Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: b8d692e354851a31b4f66b24135c863b5ca723b4
+source-git-commit: 01a89f779689733fb82a556291e091026def63e0
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 80%
+source-wordcount: '957'
+ht-degree: 59%
 
 ---
 
@@ -34,6 +34,38 @@ En la parte inferior de la lista de canalizaciones, tiene opciones generales.
 * **Mostrar todo**: Lleva al usuario a la pantalla Canalizaciones para ver todas las canalizaciones en una tabla más detallada.
 * **Acceder a la info del repositorio**: Muestra la información necesaria para acceder al repositorio de Git de Cloud Manager
 * **Más información**: Navega hasta los recursos de documentación de canalización de CI/CD.
+
+## Ventana Canalizaciones {#pipelines}
+
+El **Canalizaciones** La ventana muestra una lista completa de todas las canalizaciones para el programa seleccionado. Esto resulta útil, ya que presenta información más completa que la disponible en el [Tarjeta de canalización.](#pipeline-card)
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+
+1. Desde el **Resumen del programa** página, toque o haga clic en **Canalizaciones** para cambiar a la pestaña **Canalizaciones** ventana.
+
+1. Aquí puede ver una lista de todas las canalizaciones para el programa, así como iniciar y detener la ejecución de la canalización como lo haría en el **Tarjeta de canalizaciones**.
+
+Si se está ejecutando una canalización, pase el ratón sobre su **Estado** La columna revelará detalles sobre la ejecución.
+
+![Detalles de ejecución de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
+
+Toque o haga clic **Ver detalles** le llevará a la [detalles de la ejecución de la canalización.](#view-details)
+
+## Ventana de actividad {#activity}
+
+El **Actividades** La ventana muestra una lista completa de todas las ejecuciones de canalizaciones para el programa seleccionado.
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+
+1. Desde el **Resumen del programa** página, toque o haga clic en **Actividad** para cambiar a la pestaña **Actividad** ventana.
+
+1. Aquí puede ver una lista de todas las ejecuciones de canalización del programa, incluidas las ejecuciones actuales e históricas.
+
+Si se está ejecutando una canalización, pase el ratón sobre su **Estado** La columna revelará detalles sobre la ejecución.
+
+![Detalles de ejecución de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
+
+Toque o haga clic **Ver detalles** le llevará a la [detalles de la ejecución de la canalización.](#view-details)
 
 ## Ejecutar canalizaciones {#running-pipelines}
 
@@ -88,6 +120,16 @@ Puede ver los detalles de una canalización para ver el estado y los registros d
 ![Detalles de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
 Desde aquí puede ver el estado de los distintos pasos de la canalización y recuperar los registros de generación con fines diagnósticos. Ver el documento [Implementar el código](/help/implementing/cloud-manager/deploy-code.md) para obtener más información sobre la implementación del código y la ejecución de pruebas.
+
+Todos los pasos de la ejecución de una canalización se muestran con los que aún no se han iniciado atenuados. Los pasos finalizados muestran su duración.
+
+Una vez completado el paso de una canalización, se presenta un resumen.
+
+![Resumen del paso](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
+
+Haga clic o pulse en **Ver detalles** vínculo para mostrar el **Duración** sección. Esto incluye la duración promedio de la canalización en función de la tendencia histórica para ese programa.
+
+![Duración](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
 >[!NOTE]
 >

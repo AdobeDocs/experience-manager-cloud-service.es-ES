@@ -2,10 +2,10 @@
 title: 'Novedades y diferencias: Adobe Experience Manager as a Cloud Service'
 description: 'Novedades y diferencias: Adobe Experience Manager (AEM) as a Cloud Service.'
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1896'
-ht-degree: 100%
+source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+workflow-type: tm+mt
+source-wordcount: '1897'
+ht-degree: 99%
 
 ---
 
@@ -206,7 +206,7 @@ A fin de apoyar las iteraciones y el desarrollo rápidos, también es posible de
 
 >[!NOTE]
 >
->Para obtener más información, comience con [Copia de seguridad](/help/operations/backup.md), [Indexación](/help/operations/indexing.md) y [Otras tareas de mantenimiento](/help/operations/maintenance.md).
+>Para obtener más información, comience por [restauración de contenido](/help/operations/backup.md), [Indexación](/help/operations/indexing.md), y [otras tareas de mantenimiento](/help/operations/maintenance.md).
 
 Con AEM as a Cloud Service, esas operaciones se automatizan para que ya no sea necesaria ninguna interrupción del servicio.
 
@@ -274,6 +274,6 @@ Para obtener más información, consulte lo siguiente:
 
 >[!TIP]
 >
->Una vez que tenga la información general de AEM as a Cloud Service, podrá incorporarse rápidamente si revisa el [Recorrido de incorporación](/help/journey-onboarding/overview.md).
+>Una vez que tenga una visión general de AEM as a Cloud Service, podrá incorporarse rápidamente revisando el [Recorrido de incorporación](/help/journey-onboarding/overview.md).
 >
 >¿Ya incorporado o listo para sumergirse en las funciones de AEM de prueba? Instale el [complemento de demostraciones de referencia de AEM](/help/journey-sites/demos-add-on/overview.md) para explorar las potentes funciones de AEM con interesantes ejemplos.
