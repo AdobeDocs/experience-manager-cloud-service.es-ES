@@ -14,7 +14,7 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Solución de problemas de AEM"
->abstract="Revise las prácticas recomendadas para el desarrollo continuo y administre los registros junto con herramientas como Developer Console y CRXDE Lite para ayudar a solucionar problemas con AEM."
+>abstract="Revise las prácticas recomendadas para el desarrollo continuo y administre los registros junto con herramientas como Developer Console y CRXDE Lite para ayudar a solucionar problemas con AEM"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=es" text="Acceder y administrar registros"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
 
