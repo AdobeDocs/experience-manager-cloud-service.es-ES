@@ -2,9 +2,9 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
+source-git-commit: 1a128e35be06d018ec25fb0e6a479cfd0d242dbd
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1114'
 ht-degree: 12%
 
 ---
@@ -21,7 +21,7 @@ La activación de funciones 2023.11.0 proporcionará el conjunto completo de fun
 
 ### Mejoras {#enhancements-14227}
 
-* ASSETS-29631: Assets Cloud: Utilice dam:roles para una entrega/búsqueda segura.
+<!--* ASSETS-29631: Assets Cloud: Use dam:roles for secure delivery/search.-->
 * CQ-4354515: Translations: Opción para suprimir la traducción de recursos a los que se hace referencia.
 * FORMS-9993: Defina los pasos para mover los componentes principales de Forms a Skyline.
 * FORMS-10570: Incorporar API de EC a API: primer enrutador.
