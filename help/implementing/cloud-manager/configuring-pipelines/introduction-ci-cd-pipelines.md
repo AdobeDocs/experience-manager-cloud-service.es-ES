@@ -3,9 +3,9 @@ title: Canalizaciones de CI/CD
 description: Obtenga información sobre las canalizaciones de CI/CD de Cloud Manager y cómo se pueden utilizar para implementar su código de forma eficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1443'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Una canalización que no es de producción sirve principalmente para ejecutar an
 Además de la producción y la no producción, las canalizaciones pueden diferenciarse por el tipo de código que implementan.
 
 * **[Canalizaciones de pila completa](#full-stack-pipeline)**: Implementan simultáneamente generaciones de código back-end y front-end que contienen una o más aplicaciones de servidor de AEM junto con configuraciones de HTTPD/Dispatcher
-* **[Configuración de canalizaciones de implementación](#config-deployment-pipeline)** AEM : configure las opciones de su entorno de, tareas de mantenimiento, reglas de CDN y mucho más.
+* **[Configurar canalizaciones](#config-deployment-pipeline)** AEM : configure las opciones de su entorno de, tareas de mantenimiento, reglas de CDN y mucho más.
 * **[Canalizaciones front-end](#front-end)**: Implementan generaciones de código front-end que contienen una o más aplicaciones de interfaz de usuario del lado del cliente.
 * **[Canalizaciones de configuración de nivel web](#web-tier-config-pipelines)**: Implementan las configuraciones de HTTPD/Dispatcher
 
@@ -111,15 +111,15 @@ Para aprender a configurar canalizaciones de pila completa, consulte los siguien
 * [Agregar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 * [Agregar una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
-## Configuración de canalizaciones de implementación {#config-deployment-pipeline}
+## Configurar canalizaciones {#config-deployment-pipeline}
 
-AEM Con una canalización de implementación de configuración, puede implementar ajustes de configuración en su entorno para tareas de mantenimiento, reglas de CDN y mucho más.
+AEM Con una canalización de configuración puede implementar ajustes de configuración en su entorno de para tareas de mantenimiento, reglas de CDN y mucho más.
 
 Consulte el documento [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md) para obtener información sobre cómo administrar las configuraciones en el repositorio de modo que se implementen correctamente.
 
-### Configurar canalizaciones de implementación {#configure-config-deployment}
+### Configuración de canalizaciones de configuración {#configure-config-deployment}
 
-Para obtener información sobre cómo configurar canalizaciones de implementación, consulte los siguientes documentos:
+Para obtener información sobre cómo configurar canalizaciones de configuración, consulte los siguientes documentos:
 
 * [Agregar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
 * [Agregar una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)

@@ -3,9 +3,9 @@ title: Notas de la versión 2023.11.0 para Cloud Manager en Adobe Experience Man
 description: Estas son las notas de la versión 2023.11.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71746b00c2d4ee05126af54241db30a7d3aeab1c
+source-git-commit: 3a9eaa162d62cd3e674f14ba39ed7c96ad271f79
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '746'
 ht-degree: 13%
 
 ---
@@ -26,7 +26,7 @@ La fecha de lanzamiento de Cloud Manager 2023.11.0 en AEM as a Cloud Service es 
 ## Novedades {#what-is-new}
 
 * AEM La protección del cortafuegos de aplicaciones web-DDOS (WAF-DDOS) ya está disponible para su compra como parte de sus derechos as a Cloud Service y [se puede configurar en modo de autoservicio.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* Especializado [Configuración de canalizaciones de implementación](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Las canalizaciones ya están disponibles para configurar la configuración del entorno, las tareas de mantenimiento, las reglas de CDN y más en cuestión de minutos.
+* Especializado [canalizaciones de configuración](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) ahora están disponibles para configurar las opciones del entorno, las tareas de mantenimiento, las reglas de CDN y mucho más en cuestión de minutos.
 * [Al copiar contenido](/help/implementing/developing/tools/content-copy.md) desde un entorno superior a un entorno de desarrollo, ahora se muestra un mensaje que aconseja precaución al copiar grandes conjuntos de contenido, ya que los entornos de desarrollo tienen una capacidad limitada.
 * [La página de detalles de ejecución de la canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) ahora mostrará todos los pasos de una ejecución de canalización con los que aún no se han iniciado atenuados.
 * En ambos **[Actividad](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** y **[Canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** En algunas páginas, ahora está disponible un resumen de la ejecución de la canalización al hacer clic en una canalización con un estado en ejecución.
@@ -75,9 +75,9 @@ El tablero aprovecha Google Lighthouse, una herramienta automatizada de código 
 
 ## Problemas conocidos {#known-issues}
 
-Hay un error conocido que evita [configuración de canalizaciones de implementación](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) de insertarse en producción.
+Hay un error conocido que evita [canalizaciones de configuración](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) de insertarse en producción.
 
-Si la variable **Pausa antes de implementar en producción** se requiere para una canalización de implementación de configuración, la siguiente es la solución sugerida hasta que se resuelva el error.
+Si la variable **Pausa antes de implementar en producción** se requiere para una canalización de configuración, la siguiente es la solución sugerida hasta que se resuelva el error.
 
 1. Ejecutar la canalización.
 1. Pruebe el código en el entorno de ensayo.

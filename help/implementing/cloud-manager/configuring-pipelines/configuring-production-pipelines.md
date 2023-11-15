@@ -3,9 +3,9 @@ title: Configurar canalizaciones de producción
 description: Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1418'
 ht-degree: 80%
 
 ---
@@ -132,7 +132,7 @@ AEM Una implementación de destino implementa el código únicamente para partes
 >
 >* Si existe una canalización de código de nivel web para el entorno seleccionado, esta selección está deshabilitada.
 >* Si tiene una canalización de pila completa existente implementando en un entorno, al crear una canalización de configuración de capa web para el mismo entorno, se omitirá la configuración de capa web existente en la canalización de pila completa.
-> * En cualquier momento, solo puede haber una canalización de implementación de configuración por entorno.
+> * En cualquier momento, solo puede haber una canalización de configuración por entorno.
 
 Los pasos para completar la creación de la canalización de implementación de producción y destino son los mismos una vez que elija un tipo de implementación.
 
@@ -158,7 +158,7 @@ Los pasos para completar la creación de la canalización de implementación de 
    * **Pausar antes de implementar en producción**: esta opción pone en pausa la canalización antes de implementarla en producción.
    * **Programada**: esta opción permite al usuario activar la implementación de producción programada. Solo disponible para implementaciones de destino de nivel web.
 
-   ![Configurar canalización de implementación](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![Configurar canalización](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. Haga clic en **Guardar**.
 
