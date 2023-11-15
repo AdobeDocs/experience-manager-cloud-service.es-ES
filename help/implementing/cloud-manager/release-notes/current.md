@@ -3,9 +3,9 @@ title: Notas de la versión 2023.11.0 para Cloud Manager en Adobe Experience Man
 description: Estas son las notas de la versión 2023.11.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b51b3c9aed4d9dacbf12a6cad5f8923d82766bd9
+source-git-commit: 71746b00c2d4ee05126af54241db30a7d3aeab1c
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '750'
 ht-degree: 13%
 
 ---
@@ -31,7 +31,10 @@ La fecha de lanzamiento de Cloud Manager 2023.11.0 en AEM as a Cloud Service es 
 * [La página de detalles de ejecución de la canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) ahora mostrará todos los pasos de una ejecución de canalización con los que aún no se han iniciado atenuados.
 * En ambos **[Actividad](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** y **[Canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** En algunas páginas, ahora está disponible un resumen de la ejecución de la canalización al hacer clic en una canalización con un estado en ejecución.
 * Un nuevo **Duración** se ha añadido a la sección [página de detalles de canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) que incluye la duración promedio del paso de canalización en función de la tendencia histórica para ese programa.
-* En la página de ejecución de la canalización, los pasos finalizados ahora muestran la duración.
+* En el [página ejecución de canalización,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) los pasos finalizados ahora muestran la duración.
+* Ejecuciones que [reutilizar artefactos de generación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) ahora mostrará el vínculo a la ejecución que creó inicialmente esos artefactos.
+* La opción para seleccionar **Errores importantes en las métricas** ahora se puede configurar para [canalizaciones de calidad de código](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) y también.
+
 
 ## Programa de adopción temprana {#early-adoption}
 
