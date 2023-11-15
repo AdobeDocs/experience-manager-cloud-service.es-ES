@@ -2,20 +2,20 @@
 title: AEM ¿Cómo se obtienen las temáticas y plantillas de referencia para los formularios de?
 description: AEM Forms proporciona temáticas de formularios adaptables, plantillas y modelos de datos de formulario de ejemplo para ayudarle a crear formularios rápidamente.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: dd0c45352ea402065c7c6fced1394849ed9c316c
+source-git-commit: 046ffed13569ca3f9c104fb4525d28361873277a
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 90%
+source-wordcount: '868'
+ht-degree: 88%
 
 ---
 
 # Temáticas, plantillas y modelos de datos de formulario de referencia {#reference-themes-templates-and-data-models}
 
 
-| Versión | Vínculo del artículo |
+| Se aplica a | Vínculo del artículo |
 | -------- | ---------------------------- |
-| Componentes principales de Formularios adaptables | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
-| AEM as a Cloud Service | Este artículo |
+| Formulario adaptable basado en componentes principales | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| Formulario adaptable basado en componentes de base | Este artículo |
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
