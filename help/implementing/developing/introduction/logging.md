@@ -2,10 +2,10 @@
 title: AEM Registro para la as a Cloud Service
 description: AEM Obtenga información sobre cómo utilizar Registro para el registro as a Cloud Service para configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
+source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 3%
+source-wordcount: '2683'
+ht-degree: 10%
 
 ---
 
@@ -523,7 +523,8 @@ Tenga en cuenta que la función de reenvío de Splunk aún no admite registros d
 "cache": "PASS",
 "status": 200,
 "res_age": 0,
-"pop": "PAR"
+"pop": "PAR",
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -534,19 +535,21 @@ Los registros de CDN son diferentes de los otros registros en el sentido de que 
 | **Nombre del campo** | **Descripción** |
 |---|---|
 | *timestamp* | Hora a la que se inició la solicitud, después de la finalización de TLS |
-| *ttfb* | Abreviatura de *Tiempo hasta el primer byte*. Intervalo de tiempo entre el inicio de la solicitud hasta el punto en el que el cuerpo de la respuesta comenzó a transmitirse. |
+| *ttfb* | Abreviatura de *Time To First Byte*. Intervalo de tiempo entre el inicio de la solicitud hasta el punto en el que el cuerpo de la respuesta comenzó a transmitirse. |
 | *cli_ip* | La dirección IP del cliente. |
-| *cli_country* | De dos letras [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) código de país alfa-2 del país cliente. |
-| *librar* | El valor del encabezado de la solicitud que se utiliza para identificar la solicitud de forma exclusiva. |
-| *req_ua* | El agente de usuario responsable de realizar una solicitud HTTP determinada. |
+| *cli_country* | Código de país [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2 de dos letras correspondiente al país del cliente. |
+| *rid* | El valor del encabezado de la solicitud que se utiliza para identificar la solicitud de forma exclusiva. |
+| *req_ua* | El agente de usuario responsable de realizar una petición HTTP determinada. |
 | *host* | La autoridad a la que está destinada la solicitud. |
-| *url* | La ruta completa, incluidos los parámetros de consulta. |
-| *método* | Método HTTP enviado por el cliente, como &quot;GET&quot; o &quot;POST&quot;. |
+| *URL* | La ruta completa, incluidos los parámetros de consulta. |
+| *method* | Método HTTP enviado por el cliente, como &quot;GET&quot; o &quot;POST&quot;. |
 | *res_ctype* | Tipo de contenido que se utiliza para indicar el tipo de medio original del recurso. |
 | *cache* | Estado de la caché. Los valores posibles son HIT, MISS o PASS |
-| *status* | El código de estado HTTP como valor entero. |
-| *res_age* | Cantidad de tiempo (en segundos) que una respuesta se ha almacenado en caché (en todos los nodos). |
-| *hacer explotar* | Centro de datos del servidor de caché de CDN. |
+| *status* | El código de estado HTTP como un valor entero. |
+| *res_age* | Cantidad de tiempo (en segundos) que una respuesta se ha almacenado en la caché (en todos los nodos). |
+| *pop* | Centro de datos del servidor de caché de CDN. |
+| *reglas* | Los nombres de cualquier elemento coincidente [reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md) y indicadores WAF, que también indican si la coincidencia generó un bloqueo. Vacío si no coinciden las reglas. |
+
 
 ## Cómo acceder a los registros {#how-to-access-logs}
 
