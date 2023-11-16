@@ -3,9 +3,9 @@ title: Canalizaciones de CI/CD
 description: Obtenga información sobre las canalizaciones de CI/CD de Cloud Manager y cómo se pueden utilizar para implementar su código de forma eficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1423'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Una canalización que no es de producción sirve principalmente para ejecutar an
 Además de la producción y la no producción, las canalizaciones pueden diferenciarse por el tipo de código que implementan.
 
 * **[Canalizaciones de pila completa](#full-stack-pipeline)**: Implementan simultáneamente generaciones de código back-end y front-end que contienen una o más aplicaciones de servidor de AEM junto con configuraciones de HTTPD/Dispatcher
-* **[Configurar canalizaciones](#config-deployment-pipeline)** AEM : configure las opciones de su entorno de, tareas de mantenimiento, reglas de CDN y mucho más.
+* **[Configurar canalizaciones](#config-deployment-pipeline)** - Configurar e implementar reglas de filtro de tráfico, incluidas las reglas WAF, en cuestión de minutos
 * **[Canalizaciones front-end](#front-end)**: Implementan generaciones de código front-end que contienen una o más aplicaciones de interfaz de usuario del lado del cliente.
 * **[Canalizaciones de configuración de nivel web](#web-tier-config-pipelines)**: Implementan las configuraciones de HTTPD/Dispatcher
 
@@ -113,7 +113,7 @@ Para aprender a configurar canalizaciones de pila completa, consulte los siguien
 
 ## Configurar canalizaciones {#config-deployment-pipeline}
 
-AEM Con una canalización de configuración puede implementar ajustes de configuración en su entorno de para tareas de mantenimiento, reglas de CDN y mucho más.
+Con una canalización de configuración, puede configurar e implementar reglas de filtro de tráfico, incluidas las reglas WAF, en cuestión de minutos.
 
 Consulte el documento [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md) para obtener información sobre cómo administrar las configuraciones en el repositorio de modo que se implementen correctamente.
 
@@ -129,10 +129,6 @@ Para obtener información sobre cómo configurar canalizaciones de configuració
 El código front-end es cualquier código que sirve como archivos estáticos. Es independiente del código de la IU que sirve AEM y puede incluir temas del sitio, SPA definidos por el cliente, SPA y otras soluciones.
 
 Las canalizaciones front-end ayudan a sus equipos a optimizar su proceso de diseño y desarrollo al permitir la implementación acelerada del código front-end asincrónico del desarrollo back-end. Esta canalización dedicada implementa JavaScript y CSS en la capa de distribución de AEM como tema, lo que da como resultado una nueva versión del tema a la que se puede hacer referencia desde páginas que proporciona AEM.
-
->[!IMPORTANT]
->
->Debe tener habilitada la versión de AEM `2021.10.5933.20211012T154732Z ` o superior con AEM Sites para utilizar las canalizaciones front-end.
 
 >[!NOTE]
 >
