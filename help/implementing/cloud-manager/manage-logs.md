@@ -2,10 +2,10 @@
 title: Acceder y administrar registros
 description: Obtenga información sobre cómo acceder y administrar registros para ayudarle en el proceso de desarrollo en AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 87%
+source-wordcount: '345'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ Puede acceder a una lista de archivos de registro disponibles para el entorno se
 
 ## Descargar registros {#download-logs}
 
-Para descargar registros, haga lo siguiente.
+Para descargar registros, haga lo siguiente:
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -32,11 +32,17 @@ Para descargar registros, haga lo siguiente.
 
    ![Cuadro de diálogo Descargar registros](assets/download-preview.png)
 
+   En caso de [Regiones de publicación adicionales](/help/operations/additional-publish-regions.md) están habilitados para su entorno, podrá seleccionar cada región y descargar sus registros por separado, como se muestra a continuación:
+
+   ![Descargar registros para regiones de publicación adicionales](assets/download-publish-region-logs.png)
+
 1. Una vez seleccionado el servicio, haga clic en el icono de descarga situado junto al registro que desea recuperar.
 
 También puede acceder a sus registros desde la página **Entornos**.
 
 ![Registros de la pantalla Entornos](assets/download-logs.png)
+
+
 
 ## Registros a través de la API {#logs-through-api}
 
