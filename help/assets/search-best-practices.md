@@ -3,9 +3,9 @@ title: Prácticas recomendadas de búsqueda para [!DNL Adobe Experience Manager]
 description: Prácticas recomendadas para buscar, buscar y recuperar metadatos de recursos dentro de la aplicación.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
+source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2520'
 ht-degree: 3%
 
 ---
@@ -38,11 +38,11 @@ Los resultados de búsqueda que coinciden con todos los términos de búsqueda e
 
 Especificar `classic car` como palabra clave de búsqueda y haga clic en Buscar. Puede ver las sugerencias de búsqueda en una lista desplegable a medida que escribe la palabra clave. Las sugerencias de búsqueda se basan en el contenido del índice de búsqueda de la implementación del Experience Manager. Si no puede ver los recursos adecuados en el menú desplegable, pulse la tecla Intro para ver la lista de resultados. Los resultados se ordenan por relevancia, empezando por las coincidencias más cercanas.
 
-![Realización del método de búsqueda básico 1](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 Puede hacer la búsqueda más específica añadiendo la palabra clave de búsqueda entre comillas dobles (&quot; &quot;). Esta búsqueda solo incluye recursos que contienen los términos especificados juntos. Los criterios de búsqueda son: `"classic car"`. Por lo tanto, los resultados de búsqueda con ambos términos `classic` y `car` se muestran.
 
-![Búsqueda de coincidencia exacta](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 La búsqueda muestra resultados similares si está trabajando en **[!UICONTROL Vista de recursos]** y también.
 
@@ -65,7 +65,7 @@ Para lograr este escenario, ejecute los pasos a continuación:
 Seleccione la carpeta de la ruta y vaya a la carpeta requerida si desea buscar dentro de la carpeta específica.
 3. Seleccione Archivos de la lista desplegable para mostrar todos los archivos con la palabra clave `classic car`.
 
-![Búsqueda mediante archivos y carpetas](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
@@ -164,7 +164,7 @@ Siga estos pasos en **[!UICONTROL Vista de administrador]**:
 1. Seleccionar [!UICONTROL PDF].
 1. Ir a [!UICONTROL Estado] > [!UICONTROL Publish] > [!UICONTROL Sin publicar].
 
-![Ejemplo de filtro 2](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 Siga estos pasos en **[!UICONTROL Vista de recursos]**:
 
@@ -180,7 +180,7 @@ Cuando no está seguro del título o la metadescripción de un recurso, puede ut
 1. Vaya a Filtros. En [!UICONTROL Tipo de archivo], expanda [!UICONTROL Imágenes] y seleccione [!UICONTROL Habilitado para web]
 1. Anule la selección de PNG.
 
-![Buscar todas las imágenes excepto jeep](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 Para buscar recursos utilizando el escenario mencionado en **[!UICONTROL Vista de recursos]**, siga los pasos a continuación:
 
@@ -203,7 +203,7 @@ Para realizar una búsqueda del escenario 6:
 2. Vaya al panel Filtros y seleccione Documentos en Tipo de archivo.
 3. Refine la búsqueda con el comodín de asterisco. Tipo `"classic car"` para buscar todos los recursos que contienen el `classic car` palabra clave.
 
-![Escenario 6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 El escenario 6 no se puede ejecutar en **[!UICONTROL Vista de recursos]** ya que no admite el uso de comodines.
 
@@ -213,7 +213,7 @@ Para realizar una búsqueda del escenario 7:
 
 Escriba el `car - classic` en la barra de búsqueda. Vaya al panel Filtros y seleccione Documentos en Tipo de archivo. El orden de prioridad de la búsqueda se basa en lo siguiente: Prioridad 1: Prioridad de metadatos 2: Etiquetas inteligentes
 
-![Escenario 7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 El escenario 7 no se puede ejecutar en **[!UICONTROL Vista de recursos]** ya que no admite el uso de comodines.
 
@@ -237,7 +237,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 Puede capturar un criterio específico mediante varios filtros de búsqueda. La etiqueta es una palabra clave que se asigna a un recurso para que se pueda identificar entre un gran número de recursos. Por ejemplo, en este caso, busque recursos con *jeep* etiquetas en él. Para ello, escriba `tags:jeep` en la barra de búsqueda. En los resultados de búsqueda solo se muestran los recursos que cumplen estos criterios.
 
-![Buscar mediante etiquetas](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 La búsqueda muestra resultados similares si está trabajando en **[!UICONTROL Vista de recursos]** y también.
 
