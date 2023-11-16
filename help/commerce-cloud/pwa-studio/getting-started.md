@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '764'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Para conectar el PWA Studio con el extremo de GraphQL AEM de la, puede utilizar 
 
    Puede encontrar más detalles sobre la personalización del componente Navegación en [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) y en el [Marco de extensibilidad](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentación del PWA Studio.
 
-1. AEM El cliente Apollo espera el punto final de GraphQL de la en `<https://pwa-studio/endpoint.js>`. Para asignar el extremo a esta ubicación, deberá personalizar la configuración UPWARD de la aplicación PWA Studio: a. AEM Añada la variable_CFM_GRAPHQL AEM a pwa-root/.env y adáptela para que apunte a su punto final de GraphQL Fragmentos de contenido de.
+1. AEM El cliente Apollo espera el punto final de GraphQL de la en `<https://pwa-studio/endpoint.js>`. Para asignar el extremo a esta ubicación, personalice la configuración UPWARD de la aplicación PWA Studio: a. AEM Añada la variable_CFM_GRAPHQL AEM a pwa-root/.env y adáptela para que apunte a su punto final de GraphQL Fragmentos de contenido de.
 
    Ejemplo: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
@@ -93,15 +93,15 @@ AEM Siga la documentación de Fragmentos de contenido de para configurar un punt
 
 * Política de uso compartido de recursos de origen cruzado de Adobe Granite (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   Establezca la propiedad allowedorigin en el nombre de host completo de la aplicación PWA.
+  Establezca la propiedad allowedorigin en el nombre de host completo de la aplicación PWA.
 
-   Ejemplo:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Ejemplo:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtro de referente de Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   Establezca la propiedad allow.hosts en el nombre de host de la aplicación PWA.
+  Establezca la propiedad allow.hosts en el nombre de host de la aplicación PWA.
 
-   Ejemplo: `pwa-studio-test-vflyn.local.pwadev`
+  Ejemplo: `pwa-studio-test-vflyn.local.pwadev`
 
 Puede encontrar ejemplos completos de ambas configuraciones aquí: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
@@ -109,7 +109,7 @@ Para mostrar el extremo de GraphQL, hemos preparado algunos modelos de fragmento
 
 ## Usos {#how-to-use}
 
-Esta extensión se considera una implementación de ejemplo de cómo conectar una aplicación PWA Studio AEM con la aplicación para recuperar y procesar contenido a través de GraphQL.
+Esta extensión se considera una implementación de ejemplo de cómo conectar una aplicación PWA Studio AEM con la que se ha creado un vínculo para recuperar y procesar contenido a través de GraphQL.
 
 Según el caso de uso, desea crear sus propios modelos de fragmento de contenido personalizados, que resultan en un esquema de GraphQL personalizado que luego pueden consumir sus propios componentes de React.
 

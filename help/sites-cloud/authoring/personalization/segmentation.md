@@ -2,16 +2,16 @@
 title: Información acerca de la segmentación
 description: La segmentación es una consideración clave al crear una campaña
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '538'
 ht-degree: 74%
 
 ---
 
 # Información acerca de la segmentación {#understanding-segmentation}
 
-La segmentación es una consideración clave al crear una campaña. En la mayoría de los casos, deberá tener los segmentos ya definidos antes de iniciar la campaña.
+La segmentación es una consideración clave al crear una campaña. En la mayoría de los casos, debe tener segmentos ya definidos antes de iniciar la campaña.
 
 Los visitantes del sitio tienen diferentes intereses y objetivos cuando llegan a un sitio. Comprender estos objetivos y cumplir las expectativas es un factor de éxito importante para el marketing en línea.
 

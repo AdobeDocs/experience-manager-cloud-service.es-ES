@@ -2,10 +2,10 @@
 title: Introducción al contenido sin encabezado de AEM as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 97%
+source-wordcount: '3096'
+ht-degree: 95%
 
 ---
 
@@ -85,7 +85,7 @@ Para modificar el contenido sin problemas, AEM ofrece dos API sólidas.
 * La API de GraphQL permite crear solicitudes para acceder a fragmentos de contenido y enviarlos.
 * La API de REST de Assets permite crear y modificar fragmentos de contenido (y otros recursos).
 
-Aprenderá a utilizar estas API en una parte posterior del recorrido sin encabezado de AEM. O consulte la sección de [recursos adicionales](#additional-resources) para obtener más documentación.
+AEM Obtenga información acerca de estas API y cómo utilizarlas en una parte posterior del recorrido sin encabezado de la. O bien, consulte [recursos adicionales](#additional-resources) para obtener más documentación.
 
 ## Niveles de integración sin encabezado {#integration-levels}
 
@@ -273,7 +273,7 @@ Ahora que ha completado esta parte del recorrido para desarrolladores de AEM sin
 * Tener en cuenta los niveles de integración de AEM sin encabezado.
 * Ser capaz de definir el proyecto en términos del ámbito.
 
-Debe continuar su recorrido sin encabezado de AEM revisando a continuación el documento [Ruta de la primera experiencia para usar el contenido sin encabezado de AEM](path-to-first-experience.md), donde aprenderá a configurar las herramientas necesarias y a empezar a pensar en modelar los datos en AEM.
+AEM Debe continuar con el recorrido sin encabezado de la revisando el documento a continuación [AEM Ruta a la primera experiencia al usar el sin encabezado](path-to-first-experience.md) AEM donde aprenderá a configurar las herramientas necesarias y a empezar a pensar en el modelado de sus datos en el entorno de la creación de informes de usuario de la plataforma de datos de la plataforma de datos de la plataforma de datos de la plataforma de datos de.
 
 ## Recursos adicionales {#additional-resources}
 

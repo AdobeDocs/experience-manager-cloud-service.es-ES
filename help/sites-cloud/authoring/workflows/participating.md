@@ -2,10 +2,10 @@
 title: Participación en flujos de trabajo
 description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 99%
+source-wordcount: '1527'
+ht-degree: 93%
 
 ---
 
@@ -75,7 +75,7 @@ Utilice el siguiente procedimiento para completar el elemento de trabajo:
 1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (pulse o haga clic en la miniatura).
 1. Seleccione **Completar** en la barra de herramientas.
-1. Se abre el cuadro de diálogo **Completar elemento de trabajo**. Seleccione **Etapa siguiente** del selector desplegable y añada un **Comentario**, si fuera necesario.
+1. El **Completar elemento de trabajo** se abre. Seleccione **Etapa siguiente** del selector desplegable y añada un **Comentario**, si fuera necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
 
 #### Finalización de una etapa de participante: editor de la página {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ Utilice el siguiente procedimiento para completar el elemento de trabajo:
 
 1. Abra la [página para editarla](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Seleccione **Completar** de la barra de estado situada en la parte superior.
-1. Se abre el cuadro de diálogo **Completar elemento de trabajo**. Seleccione **Etapa siguiente** del selector desplegable y añada un **Comentario**, si fuera necesario.
+1. El **Completar elemento de trabajo** se abre. Seleccione **Etapa siguiente** del selector desplegable y añada un **Comentario**, si fuera necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
 
 #### Finalización de una etapa de participante: cronología {#completing-a-participant-step-timeline}
@@ -134,7 +134,7 @@ Utilice el siguiente procedimiento para delegar un elemento de trabajo:
 1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (pulse o haga clic en la miniatura).
 1. Seleccione **Delegar** en la barra de herramientas.
-1. Se abrirá el cuadro de diálogo. Especifique el **Usuario** del selector desplegable (también puede ser un grupo) y añada un **Comentario** si fuera necesario.
+1. Se abre el cuadro de diálogo. Especifique el **Usuario** del selector desplegable (también puede ser un grupo) y añada un **Comentario** si fuera necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
 
 #### Delegación de una etapa de participante: editor de páginas {#delegating-a-participant-step-page-editor}
@@ -143,7 +143,7 @@ Utilice el siguiente procedimiento para delegar un elemento de trabajo:
 
 1. Abra la [página para editarla](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Seleccione **Delegar** de la barra de estado situada en la parte superior.
-1. Se abrirá el cuadro de diálogo. Especifique el **Usuario** del selector desplegable (también puede ser un grupo) y añada un **Comentario** si fuera necesario.
+1. Se abre el cuadro de diálogo. Especifique el **Usuario** del selector desplegable (también puede ser un grupo) y añada un **Comentario** si fuera necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
 
 #### Delegación de una etapa de participante: cronología {#delegating-a-participant-step-timeline}

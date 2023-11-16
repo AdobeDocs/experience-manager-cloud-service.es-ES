@@ -2,10 +2,10 @@
 title: Repositorios de Cloud Manager
 description: Obtenga información sobre cómo crear, ver y eliminar repositorios de Git en Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 96%
+source-wordcount: '585'
+ht-degree: 87%
 
 ---
 
@@ -26,7 +26,7 @@ Siga estos pasos para ver y administrar repositorios en Cloud Manager.
 
 1. Desde el **Resumen del programa** página, toque o haga clic en **Repositorios** para cambiar a la pestaña **Repositorios** página.
 
-1. Haga clic en **Añadir repositorio**.
+1. Clic **Añadir repositorio**.
 
    ![Botón Agregar repositorio](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
@@ -36,7 +36,7 @@ Siga estos pasos para ver y administrar repositorios en Cloud Manager.
 
 Cuando se cierra el asistente, el nuevo repositorio se muestra en la tabla.
 
-Puede seleccionar el repositorio en la tabla, hacer clic en el botón de puntos suspensivos y seleccionar **Copiar URL del repositorio**, **Ver y actualizar** o **Eliminar**.
+Puede seleccionar el repositorio en la tabla, hacer clic en el botón de puntos suspensivos y seleccionar **Copiar URL del repositorio**, **Ver y actualizar**, o **Eliminar**.
 
 ![Opciones del repositorio](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,9 +58,9 @@ Al eliminar un repositorio:
 
 Siga estos pasos para eliminar un repositorio en Cloud Manager.
 
-1. En la página **Información general del programa** página, haga clic en **Repositorios** y vaya a la página **Repositorios**.
+1. Desde el **Resumen del programa** , haga clic en **Repositorios** y vaya a la **Repositorios** página.
 
-1. Seleccione el repositorio y haga clic en el botón de tres puntos y seleccione **Eliminar** para eliminar el repositorio.
+1. Seleccione el repositorio, haga clic en el botón de puntos suspensivos y seleccione **Eliminar** para eliminar el repositorio.
 
    ![Eliminar repositorio](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 

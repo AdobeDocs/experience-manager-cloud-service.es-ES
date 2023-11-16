@@ -2,10 +2,10 @@
 title: Agregar un certificado SSL
 description: Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 88%
+source-wordcount: '552'
+ht-degree: 82%
 
 ---
 
@@ -29,11 +29,11 @@ Siga estos pasos para agregar un certificado mediante Cloud Manager.
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Haga clic en **Certificados SSL** en el panel de navegación izquierdo. Se muestra en la pantalla principal una tabla con detalles de cualquier certificado SSL existente.
+1. Clic **Certificados SSL** en el panel de navegación izquierdo. Se muestra en la pantalla principal una tabla con detalles de cualquier certificado SSL existente.
 
    ![Agregar un certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Haga clic en **Agregar certificado SSL** para abrir el cuadro de diálogo **Agregar certificado SSL**.
+1. Clic **Agregar certificado SSL** para abrir **Agregar certificado SSL** Cuadro de diálogo.
 
    * Escriba un nombre para el certificado en **Nombre del certificado**.
       * Esto es solo para fines informativos y puede ser cualquier nombre que le ayude a hacer referencia al certificado fácilmente.

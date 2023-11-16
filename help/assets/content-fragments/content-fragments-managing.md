@@ -2,9 +2,9 @@
 title: Administración de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, la base del contenido sin encabezado.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1873'
 ht-degree: 68%
 
 ---
@@ -185,7 +185,7 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
 
 * Debajo del nombre del fragmento puede ver el nombre del [Modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) que se utiliza para crear el fragmento actual:
 
-   * El nombre también es un vínculo que abrirá el editor de modelos.
+   * El nombre también es un vínculo que abre el editor de modelos.
 
 * Ver el estado del fragmento; por ejemplo, información sobre cuándo se creó, modificó o publicó. El estado también está codificado por colores:
 
@@ -199,7 +199,7 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
 
   >[!WARNING]
   >
-  >El nuevo editor se abrirá en la misma pestaña. No se recomienda tener ambos editores abiertos al mismo tiempo.
+  >El nuevo editor se abre en la misma pestaña. No se recomienda tener ambos editores abiertos al mismo tiempo.
 
 * **Guardar** proporciona acceso a la opción **Guardar y cerrar**.
 

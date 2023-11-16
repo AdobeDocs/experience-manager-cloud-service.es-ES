@@ -2,10 +2,10 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 47%
+source-wordcount: '2432'
+ht-degree: 45%
 
 ---
 
@@ -38,7 +38,7 @@ Para poder crear contenido para una aplicación con el editor universal, el desa
 
 ## Inicio de sesión {#sign-in}
 
-Una vez instrumentada la aplicación para que funcione con el editor universal, deberá iniciar sesión. Para el editor universal, necesitará el Adobe ID para iniciar sesión y [tener acceso.](getting-started.md#request-access)
+Una vez que la aplicación esté instrumentada para trabajar con el Editor universal, inicie sesión en el Editor universal. Necesita un Adobe ID para iniciar sesión y [tienen acceso al Editor universal.](getting-started.md#request-access)
 
 Una vez que haya iniciado sesión, introduzca la URL de la página que desea editar en la [barra de ubicación.](#location-bar) para que pueda empezar a editar contenido como [contenido de texto](#text-mode) o [contenido multimedia.](#media-mode)
 
@@ -192,7 +192,7 @@ En el modo de vista previa, la página se procesa en el editor tal como se verí
 
 #### Modo de componentes {#component-mode}
 
-En el modo de componentes, el autor del contenido puede hacer clic en para seleccionar componentes y editarlos, lo que incluye:
+En el modo de componentes, el autor del contenido puede seleccionar componentes para editarlos, incluidos los siguientes:
 
 * [Edición de texto sin formato](#editing-content) en su lugar.
 * [Edición de texto enriquecido](#editing-rich-text) en contexto, con las opciones de formato adicionales mostradas en el carril propiedades.

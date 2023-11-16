@@ -4,10 +4,10 @@ description: La automatización de la configuración de Experience Cloud proporc
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '754'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ El entorno debe estar listo para la automatización de la configuración de Expe
 1. Vaya a **Sitios** y seleccione la raíz del sitio que desea integrar con Adobe Analytics.
 1. Expanda el menú del carril lateral y pulse **Configurar Analytics**.
 
-   Esta es una nueva opción del carril lateral que abrirá un panel que proporcionará controles y el estado para la automatización de la configuración de Experience Cloud.
+   Se trata de una nueva opción del carril lateral que abre un panel que proporciona controles y el estado para la automatización de la configuración del Experience Cloud.
 1. Pulse el botón **Integrar Analytics**.
 1. En el cuadro de diálogo resultante, proporcione un nombre para el **ID del grupo de informes**.
 

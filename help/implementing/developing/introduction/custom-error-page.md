@@ -2,9 +2,9 @@
 title: Páginas de error personalizadas
 description: AEM viene con un controlador de error estándar para administrar errores HTTP, que se puede personalizar.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '572'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Puede desarrollar sus propias secuencias de comandos para personalizar las pági
    * de `/libs/sling/servlet/errorhandler/`
    * hasta `/apps/sling/servlet/errorhandler/`
 
-   La ruta de destino no existe de forma predeterminada, por lo que deberá crearla al hacerlo por primera vez.
+   La ruta de destino no existe de forma predeterminada, por lo que debe crearla al hacerlo por primera vez.
 
 1. Navegue hasta `/apps/sling/servlet/errorhandler`. Aquí puede hacer lo siguiente:
 
@@ -49,7 +49,7 @@ Puede desarrollar sus propias secuencias de comandos para personalizar las pági
 >
 >El `404.jsp` AEM La secuencia de comandos se ha diseñado específicamente para permitir la autenticación de los usuarios; en particular, para permitir el inicio de sesión en el sistema en caso de errores.
 >
->Por lo tanto, la sustitución de esta secuencia de comandos debe realizarse con bueno cuidado.
+>Por lo tanto, la sustitución de esta secuencia de comandos debe realizarse con mucho cuidado.
 
 ### Personalización de la Respuesta a Errores HTTP 500 {#customizing-the-response-to-http-errors}
 

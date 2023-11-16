@@ -2,10 +2,10 @@
 title: Su bandeja de entrada
 description: Aprenda a utilizar las notificaciones que llegan a la bandeja de entrada para administrar sus tareas.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ Para abrir la bandeja de entrada de notificaciones AEM:
 
 1. Toque o haga clic en el indicador de la barra de herramientas.
 
-1. Seleccione **Ver todo**. Se abrirá la **bandeja de entrada AEM.** La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
+1. Seleccione **Ver todo**. El **AEM Bandeja de entrada de** abre. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
 1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se realiza con el selector de vistas (barra de herramientas, arriba a la derecha).
 
    Para ambas vistas también puede definir una [Configuración de vista](#inbox-view-settings). Las opciones disponibles dependen de la vista actual.
@@ -142,7 +142,7 @@ Para ambas vistas (Lista y Calendario) puede definir la siguiente configuración
    * Se inicia el asistente de acciones
    * Se abre una página de documentación
 
-   Por ejemplo, la opción **Delegar** abre el siguiente cuadro de diálogo:
+   Por ejemplo, **Delegar** abre un cuadro de diálogo:
 
    ![Delegar tarea de bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 

@@ -2,9 +2,9 @@
 title: Uso de sus propios repositorios de GitHub en Cloud Manager
 description: Obtenga información sobre cómo configurar Cloud Manager para que funcione con sus propios repositorios de GitHub.
 feature: Release Information
-source-git-commit: 8d689ea08ab7caf9cb0fa84df23d7e0fd906f379
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ La configuración consta de dos pasos principales:
 
 Cloud Manager ahora conoce su repositorio de GitHub, pero aún necesita acceso a él. Para conceder acceso, debe instalar la aplicación de Adobe de GitHub y comprobar que es el propietario del repositorio especificado.
 
-1. Después de agregar su propio repositorio, la variable **Validación de propiedad de repositorio privado** se abrirá.
+1. Después de agregar su propio repositorio, la variable **Validación de propiedad de repositorio privado** se abre.
 
    ![Validación de propiedad de repositorio privado](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
@@ -65,7 +65,7 @@ Cloud Manager ahora conoce su repositorio de GitHub, pero aún necesita acceso a
 
 1. De nuevo en **Validación de propiedad de repositorio privado** , Cloud Manager ha generado el contenido del archivo privado en la **Contenido de archivo secreto** field. Copie el contenido de ese campo.
 
-   * El contenido del archivo secreto solo se mostrará una vez. Si no copia el contenido antes de cerrar esta ventana, deberá volver a generar el secreto.
+   * El contenido del archivo secreto solo se mostrará una vez. Si no copia el contenido antes de cerrar esta ventana, vuelva a generar el secreto.
 
    ![Copiar contenido de archivo secreto](/help/implementing/cloud-manager/assets/repos/new-secret.png)
 
@@ -81,7 +81,7 @@ Hasta la validación, el repositorio se mostrará con un icono rojo que indica q
 
 Tenga en cuenta que la variable **Tipo** identifica fácilmente los repositorios proporcionados por el Adobe (**Adobe**) y sus propios repositorios de GitHub (**GitHub**).
 
-Si necesita volver al repositorio en una fecha posterior para completar la validación, en el **Repositorios** , toque o haga clic en el botón de puntos suspensivos en la fila que representa el repositorio de GitHub que acaba de añadir y seleccione **Validación de propiedad** en el menú desplegable.
+Si necesita volver al repositorio en una fecha posterior para completar la validación, en la **Repositorios** , toque o haga clic en el botón de puntos suspensivos en la fila que representa el repositorio de GitHub que acaba de añadir y seleccione **Validación de propiedad** en el menú desplegable.
 
 ## Uso de sus propios repositorios de GitHub con Cloud Manager {#using}
 

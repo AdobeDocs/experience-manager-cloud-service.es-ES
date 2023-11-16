@@ -2,10 +2,10 @@
 title: Creación de un sitio de muestra
 description: Cree un sitio de demostración en AEM basado en una biblioteca de plantillas preconfiguradas.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 92%
 
 ---
 
@@ -35,11 +35,11 @@ Este documento le ayuda a comprender cómo crear un nuevo sitio basado en las pl
 
 Una vez que la canalización haya implementado el complemento Demostraciones de referencia, puede acceder al entorno de creación de AEM para crear sitios de demostración basados en el contenido del complemento.
 
-1. En la página de información general del programa de Cloud Manager, pulse o haga clic en el vínculo al entorno de creación de AEM.
+1. AEM En la página de información general del programa de Cloud Manager, pulse o haga clic en el vínculo al entorno de creación de la.
 
    ![Acceso al entorno de creación](assets/access-author.png)
 
-1. En el menú principal de AEM, pulse o haga clic en **Sitios**.
+1. AEM En el menú principal de la, toque o haga clic en **Sites**.
 
    ![Acceso a sitios](assets/access-sites.png)
 
@@ -104,7 +104,7 @@ Ahora que ha completado esta parte del recorrido del complemento de demostració
 Ahora puede probar las características de AEM usando contenido de complementos. Tiene dos opciones para continuar con el recorrido:
 
 * Si desea llevar a cabo una demostración completa y probar el contenido de AEM Screens, asegúrese de que ha implementado un sitio basado en la **Plantilla de sitio de We.Cafe**, tal como se ha descrito antes. Continúe a [Habilitación de AEM Screens para el sitio de demostración.](screens.md)
-* Si solo tiene que mostrar contenido de Sites, continúe con [Administración de los sitios de demostración,](manage.md) donde conocerá las herramientas disponibles para ayudarle a administrar los sitios de demostración y cómo eliminarlos.
+* Si solo tiene que mostrar contenido de Sites, continúe a [Administrar Los Sitios De Demostración,](manage.md) donde puede obtener información sobre las herramientas disponibles para ayudarle a administrar los sitios de muestra y cómo eliminarlos.
 
 ## Recursos adicionales {#additional-resources}
 

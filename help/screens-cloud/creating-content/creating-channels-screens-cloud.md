@@ -2,9 +2,9 @@
 title: Creación y administración de canales en Screens as a Cloud Service
 description: En esta página se describe cómo crear y administrar canales en Pantallas as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1087'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Siga los pasos a continuación para crear un nuevo canal de secuencia en Pantall
 
    ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
-1. Seleccione la plantilla, como, **Canal de secuencia** desde el **Crear** asistente y haga clic en **Siguiente**.
+1. Seleccione la plantilla, como, **Canal de secuencia** desde el **Crear** y haga clic en **Siguiente**.
 
    ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
 
@@ -65,7 +65,7 @@ Navegue hasta el canal del proyecto y seleccione el canal, como se muestra en la
 
 Para añadir o editar contenido en un canal, siga los pasos a continuación:
 
-1. Seleccione el canal que desee editar, como se muestra en la figura siguiente. Haga clic en **Editar** desde la esquina superior izquierda de la barra de acciones para abrir el editor.
+1. Seleccione el canal que desee editar, como se muestra en la figura siguiente. Clic **Editar** desde la esquina superior izquierda de la barra de acciones para abrir el editor.
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
@@ -76,7 +76,7 @@ Para añadir o editar contenido en un canal, siga los pasos a continuación:
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >Haga clic en **Previsualizar** para obtener una vista previa del contenido del canal.
+   >Clic **Previsualizar** para obtener una vista previa del contenido del canal.
    >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## Plantillas disponibles en el asistente de creación {#available-templates}

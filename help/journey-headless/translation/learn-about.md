@@ -2,10 +2,10 @@
 title: Obtenga información sobre el contenido sin encabezado y su traducción en AEM
 description: Aprenda conceptos sin encabezado, cómo se asignan a AEM y la teoría de la traducción de AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 98%
+source-wordcount: '742'
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ Además de ofrecer herramientas sólidas para crear, gestionar y entregar págin
 
 La potencia de AEM le permite entregar contenido sin encabezado, en pilas completas o en ambos modelos al mismo tiempo. Para el especialista en traducción, se puede aplicar el mismo conjunto de herramientas de traducción a ambos tipos de contenido, lo que le ofrece un enfoque unificado para traducir el contenido.
 
-Más adelante en el recorrido conocerá los detalles sobre cómo AEM traduce el contenido, pero a un alto nivel, el concepto es sencillo:
+Más adelante, en el recorrido AEM, aprenderá los detalles acerca de cómo traduce el contenido, pero, en un nivel superior, el concepto es simple:
 
 1. Defina una conexión a un servicio de traducción configurando el marco de trabajo de integración de traducción.
 1. Defina qué contenido debe traducirse mediante reglas de traducción.

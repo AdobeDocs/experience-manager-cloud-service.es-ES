@@ -2,10 +2,10 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2166'
-ht-degree: 96%
+source-wordcount: '2164'
+ht-degree: 94%
 
 ---
 
@@ -73,7 +73,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
   El explorador de componentes se abre en la parte izquierda de la ventana.
 
-  Para añadir un componente a la página, haga clic en el componente requerido y arrástrelo a la ubicación que desee.
+  Para añadir un componente a la página, haga clic en el componente requerido y arrástrelo a la ubicación requerida.
 
   ![Navegador de componentes en dispositivos de escritorio](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
@@ -149,7 +149,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
   El explorador de recursos se abre en la parte izquierda de la ventana.
 
-  Para añadir un recurso a la página, haga clic en el recurso en cuestión y arrástrelo al componente o a la ubicación correspondiente.
+  Para añadir un recurso a la página, haga clic en el recurso necesario y arrástrelo a la ubicación o al componente necesarios.
 
   ![Explorador de recursos en dispositivos de escritorio](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 

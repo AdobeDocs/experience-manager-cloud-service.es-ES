@@ -2,10 +2,10 @@
 title: 'Modelado de contenido para AEM como CMS sin encabezado: introducción'
 description: Introducción al uso de las funciones de Adobe Experience Manager as a Cloud Service como CMS sin encabezado para modelar contenido para su proyecto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 03cf688168106f71f2df2511782be7c1f3cc0dae
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 97%
+source-wordcount: '748'
+ht-degree: 94%
 
 ---
 
@@ -66,7 +66,7 @@ En AEM, usted, como arquitecto de contenido, realizará el modelado de contenido
 
 Se trata más bien de un detalle de desarrollo, pero puede interesarle para completar la historia.
 
-Una vez que haya creado los modelos de fragmento de contenido y los autores los hayan utilizado para generar el contenido, las aplicaciones sin encabezado deben acceder a este contenido.
+Después de crear los modelos de fragmento de contenido y de que los autores los hayan utilizado para generar el contenido, las aplicaciones sin encabezado deben acceder a este contenido.
 
 Adobe Experience Manager (AEM) as a Cloud Service, puede acceder selectivamente a sus fragmentos de contenido mediante la API de GraphQL de AEM para devolver solo el contenido necesario. Con la API, un desarrollador puede formular consultas que seleccionan contenido específico. Este proceso de selección se basa en *sus* Modelos de fragmento de contenido.
 

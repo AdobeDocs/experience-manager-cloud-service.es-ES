@@ -2,10 +2,10 @@
 title: Vista previa del contenido
 description: Aprenda a utilizar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 86%
+source-wordcount: '315'
+ht-degree: 80%
 
 ---
 
@@ -26,8 +26,8 @@ Para obtener más información acerca de los entornos de vista previa, consulte 
 
 Puede publicar contenido en el servicio de vista previa utilizando la IU **Publicación administrada**.
 
-1. En la consola Sites, seleccione la página o páginas que desee enviar para obtener una vista previa y haga clic en el botón **Administrar publicación**
-1. En el asistente siguiente, seleccione **Vista previa** como destino
+1. En la consola Sitios, seleccione la página o páginas que desee enviar para obtener una vista previa y haga clic en **Administrar publicación** botón.
+1. En el asistente siguiente, seleccione **Vista previa** como destino.
 
    ![publicación administrada](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 

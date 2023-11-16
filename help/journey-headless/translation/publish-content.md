@@ -2,10 +2,10 @@
 title: Publicar contenido traducido sin encabezado
 description: Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1389'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1387'
+ht-degree: 97%
 
 ---
 
@@ -95,7 +95,7 @@ Sin embargo, como ya se mencionó, el proceso difiere un poco si elige crear el 
 1. Vaya a **Navegación** -> **Recursos** -> **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
 1. Seleccione la raíz de idioma del proyecto. En este caso, se ha seleccionado `/content/dam/wknd/en`.
 1. Toque o haga clic en el selector de carril y muestre el panel **Referencias**.
-1. Toque o haga clic en **Copias de idioma**.
+1. Haga clic o pulse **Copias de idioma**.
 1. Marque la casilla de verificación **Copias de idioma**.
 1. Expanda la sección **Actualizar copias de idioma** en la parte inferior del panel de referencias.
 1. En el menú desplegable **Proyecto**, seleccione **Agregar a un proyecto de traducción existente**.
@@ -137,7 +137,7 @@ Para actualizar una traducción, puede agregar un nuevo trabajo al proyecto exis
 
    ![Seleccionar idioma de destino](assets/select-target-language.png)
 
-1. Una vez configurado el idioma de destino del nuevo trabajo de traducción, toque o haga clic en el botón de puntos suspensivos en la parte inferior de la tarjeta de trabajo para ver los detalles del trabajo.
+1. Una vez establecido el idioma de destino del nuevo trabajo de traducción, toque o haga clic en los puntos suspensivos en la parte inferior de la tarjeta de trabajo para ver los detalles del trabajo.
 1. El trabajo está vacío la primera vez que se crea. Agregue contenido al trabajo tocando o haciendo clic en el botón **Agregar** y utilizando el explorador de rutas [como hacía antes al crear originalmente el proyecto de traducción.](translate-content.md##manually-creating)
 
 >[!TIP]

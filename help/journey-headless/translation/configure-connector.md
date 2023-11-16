@@ -2,10 +2,10 @@
 title: Configuración de la integración de traducción para contenido sin encabezado
 description: Aprenda a conectar AEM a un servicio de traducción.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 97%
+source-wordcount: '1230'
+ht-degree: 95%
 
 ---
 
@@ -132,7 +132,7 @@ Ahora que ha completado esta parte del recorrido de traducción sin encabezado, 
 * Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.
 
-Amplíe este conocimiento y continúe su recorrido de traducción sin encabezado de AEM revisando el documento [Traducir contenido,](translation-rules.md) donde aprenderá a utilizar la configuración realizada hasta el momento para traducir realmente su contenido.
+AEM Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de la revisando el documento a continuación [Traducir contenido,](translation-rules.md) donde aprenderá a utilizar la configuración hasta el momento para traducir realmente el contenido.
 
 ## Recursos adicionales {#additional-resources}
 

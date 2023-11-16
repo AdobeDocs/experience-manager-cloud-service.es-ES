@@ -2,10 +2,10 @@
 title: Aplicación de flujos de trabajo a páginas
 description: Durante la creación, puede invocar flujos de trabajo para realizar acciones en las páginas; también es posible aplicar más de un flujo de trabajo.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '660'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 93%
 
 ---
 
@@ -52,9 +52,7 @@ Puede iniciar un flujo de trabajo desde las ubicaciones siguientes:
 * [la opción Crear de la barra de herramientas del sitio](#starting-a-workflow-from-the-sites-toolbar).
 * [el carril Escala de tiempo de la consola Sitios](#starting-a-workflow-from-the-timeline).
 
-En ambos casos deberá hacer lo siguiente:
-
-* [Especificar los detalles del flujo de trabajo en el asistente Crear flujo de trabajo](#specifying-workflow-details-in-the-create-workflow-wizard).
+En ambos casos, debe [Especifique los Detalles del flujo de trabajo en el Asistente de creación de flujos de trabajo](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Inicio de un flujo de trabajo desde la barra de herramientas de Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -123,7 +121,7 @@ Puede especificar los detalles:
    * Un recurso existente para ver acciones adicionales:
 
       * **Incluir elementos secundarios** para especificar que en el flujo de trabajo se incluyen los elementos secundarios de ese recurso.
-Se abrirá un cuadro de diálogo para que pueda ajustar la selección según lo siguiente:
+Se abre un cuadro de diálogo para que pueda ajustar la selección según lo siguiente:
 
          * Incluir solo los elementos secundarios inmediatos.
          * Incluir solo las páginas modificadas.
@@ -143,6 +141,6 @@ Se abrirá un cuadro de diálogo para que pueda ajustar la selección según lo 
 
 ## Inicio de un flujo de trabajo desde el Editor de página {#starting-a-workflow-from-the-page-editor}
 
-Al editar una página, puede seleccionar **Información de página** en la barra de herramientas. El menú desplegable tiene la opción **Iniciar en flujo de trabajo**. Se abrirá un cuadro de diálogo en el que puede especificar el flujo de trabajo necesario junto con un título, si fuera necesario: 
+Al editar una página, puede seleccionar **Información de página** en la barra de herramientas. El menú desplegable tiene la opción **Iniciar en flujo de trabajo**. Esto abre un cuadro de diálogo en el que puede especificar el flujo de trabajo requerido, junto con un título si es necesario:
 
 ![Inicio de un flujo de trabajo desde el Editor de página](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

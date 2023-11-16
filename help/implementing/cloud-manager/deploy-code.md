@@ -2,10 +2,10 @@
 title: Implementar el código
 description: Obtenga información sobre cómo implementar su código mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 2d1d3ac98f8fe40ba5f9ab1ccec946c8448ddc43
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1192'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ _Solo el tipo de canalización de código de pila completa admite la digitalizac
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. Haga clic en el programa para el que desee implementar el código.
+1. Haga clic en el programa para el que desea implementar el código.
 
 1. Haga clic en **Implementar** en la llamada a la acción en la pantalla **Información general** para iniciar el proceso de implementación.
 

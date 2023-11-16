@@ -2,10 +2,10 @@
 title: Administración de páginas en el lanzamiento
 description: Puede crear páginas nuevas dentro del lanzamiento. También puede eliminar páginas no deseadas.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 100%
+source-wordcount: '289'
+ht-degree: 94%
 
 ---
 
@@ -25,34 +25,32 @@ Puede navegar por la estructura del lanzamiento desde:
 * El Editor de página:
 
    * Seleccione **Navegar** para abrir la estructura del lanzamiento en la consola:
-      ![Navegar desde el lanzamiento desde el editor de páginas](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+     ![Navegar desde el lanzamiento desde el editor de páginas](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
-      >[!NOTE]
-      >
-      >También puede:
-      >
-      >* **Dejar** el lanzamiento y volver a la edición de la página de origen
-
+     >[!NOTE]
+     >
+     >También puede:
+     >
+     >* **Dejar** el lanzamiento y volver a la edición de la página de origen
 
 * La consola **Lanzamientos**: si selecciona un lanzamiento específico, puede seleccionar **Administrar contenido**:
-   ![Consola de lanzamiento: administrar contenido](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+  ![Consola de lanzamiento: administrar contenido](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 * La consola **Sites**: si selecciona una página de origen específica y abre **Referencias**, puede seleccionar **Lanzamientos** seguido de **Administrar contenido**:
-   ![Consola de lanzamiento: administrar contenido](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+  ![Consola de lanzamiento: administrar contenido](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
-   >[!NOTE]
-   >
-   >También puede seleccionar **Consola de lanzamientos** para acceder a **Administrar contenido** (y otras acciones).
+  >[!NOTE]
+  >
+  >También puede seleccionar **Consola de lanzamientos** para acceder a **Administrar contenido** (y otras acciones).
 
-Todos estos puntos de entrada abrirán el lanzamiento en la consola Sites, donde podrá hacer lo siguiente:
+Todos estos puntos de entrada abren el lanzamiento en la consola Sitios, donde puede:
 
 * Navegar,
 * **Crear** páginas nuevas,
 * Seleccione las páginas existentes y tome medidas; por ejemplo, **Editar**, abrir **Propiedades**, **Bloqueo**, **Copiar**, **Pegar** y **Eliminar**
-
-   ![Navegar por el lanzamiento en la consola Sites desde Administrar contenido](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+  ![Navegar por el lanzamiento en la consola Sites desde Administrar contenido](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Utilice el carril **Referencias** para volver a las páginas **Origen de lanzamiento**:
-   ![Consola de Sites: origen del lanzamiento](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
+  ![Consola de Sites: origen del lanzamiento](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## Agregar páginas al lanzamiento {#add-pages-to-launch}
 

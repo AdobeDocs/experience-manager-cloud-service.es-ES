@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2463'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Las organizaciones que trabajan con recursos digitales utilizan cada vez más vocabulario controlado por taxonomía en los metadatos de recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes suelen utilizar para consultar y buscar sus recursos digitales. El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que los recursos se puedan identificar y recuperar fácilmente en las búsquedas.
@@ -123,7 +123,7 @@ Para crear y entrenar un modelo para las etiquetas específicas de su empresa, s
 1. Cree las etiquetas necesarias y la estructura de etiquetas adecuada. Cargue las imágenes relevantes en el repositorio de DAM.
 1. Entrada [!DNL Experience Manager] interfaz de usuario, acceso **[!UICONTROL Assets]** > **[!UICONTROL Formación sobre etiquetas inteligentes]**.
 1. Haga clic en **[!UICONTROL Crear]**. Proporcione un **[!UICONTROL Título]**, **[!UICONTROL Descripción]**.
-1. Haga clic en el icono de la carpeta en **[!UICONTROL Etiquetas]** field. Se abre una ventana emergente.
+1. Haga clic en el icono de carpeta en **[!UICONTROL Etiquetas]** field. Se abre una ventana emergente.
 1. Busque o seleccione las etiquetas adecuadas de las etiquetas existentes en `cq-tags` que desee agregar al modelo. Haga clic en **[!UICONTROL Siguiente]**.
 
    >[!NOTE]

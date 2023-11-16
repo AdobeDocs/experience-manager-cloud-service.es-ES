@@ -1,6 +1,6 @@
 ---
-title: AEM Integración de componentes principales del CIF de y Adobe Experience Platform
-description: AEM Obtenga información sobre cómo enviar datos de evento de tienda desde una página de producto procesada por el al Experience Platform mediante el conector de Experience Platform del CIF.
+title: AEM CIF Integración de componentes principales y Adobe Experience Platform de-
+description: AEM Obtenga información sobre cómo enviar datos de evento de tienda desde una página de producto procesada por el al Experience Platform CIF mediante el conector de Experience Platform de la tienda de datos de la tienda.
 sub-product: Commerce
 version: Cloud Service
 activity: setup
@@ -11,16 +11,16 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2074'
 ht-degree: 1%
 
 ---
 
-# AEM Integración de componentes principales del CIF de y Adobe Experience Platform {#aem-cif-aep-integration}
+# AEM CIF Integración de componentes principales y Adobe Experience Platform de- {#aem-cif-aep-integration}
 
-El [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) Los componentes principales proporcionan una integración perfecta con [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) para reenviar eventos de tienda y sus datos desde interacciones del lado del cliente, como __añadir al carro__.
+El [Commerce integration framework CIF ()](https://github.com/adobe/aem-core-cif-components) Los componentes principales proporcionan una integración perfecta con [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) para reenviar eventos de tienda y sus datos desde interacciones del lado del cliente, como __añadir al carro__.
 
 El [AEM Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components) El proyecto proporciona una biblioteca JavaScript llamada [Conector de Adobe Experience Platform para Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) para recopilar datos de evento de su tienda de Commerce. Esos datos de evento se envían al Experience Platform, donde se utilizan en otros productos de Adobe Experience Cloud, como Adobe Analytics y Adobe Target, para crear un perfil de 360 grados que cubra un recorrido del cliente. Al conectar los datos de Commerce a otros productos de Adobe Experience Cloud, puede realizar tareas como analizar el comportamiento del usuario en el sitio, realizar pruebas AB y crear campañas personalizadas.
 
@@ -28,7 +28,7 @@ Obtenga más información acerca de [Recopilación de datos de Experience Platfo
 
 ## Enviar `addToCart` datos de evento para el Experience Platform {#send-addtocart-to-aep}
 
-Los siguientes pasos muestran cómo enviar el `addToCart` AEM datos de evento de páginas de producto procesadas por el usuario en el Experience Platform mediante el conector de Experience Platform del CIF. Con la extensión del explorador de Adobe Experience Platform Debugger, puede probar y revisar los datos enviados.
+Los siguientes pasos muestran cómo enviar el `addToCart` AEM datos de evento de páginas de producto procesadas por el usuario en el Experience Platform CIF mediante el conector de Experience Platform de la interfaz de usuario de. Con la extensión del explorador de Adobe Experience Platform Debugger, puede probar y revisar los datos enviados.
 
 ![Revisar los datos del evento addToCart en el Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
 
@@ -48,7 +48,7 @@ Siga las [Configuración local](https://experienceleague.adobe.com/docs/experien
 
 ### Configuración del proyecto
 
-Siga las [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) AEM Pasos para crear un proyecto de Commerce (CIF) completamente nuevo.
+Siga las [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) AEM CIF Pasos para crear un nuevo proyecto de comercio de la ().
 
 >[!TIP]
 >
@@ -67,7 +67,7 @@ El implementado localmente `My Demo StoreFront` el sitio de commerce con código
 
 ![AEM Sitio de comercio predeterminado](../assets/aep-integration/demo-aem-storefront.png)
 
-### Instalación de las dependencias del conector Peregrine y CIF-AEP
+### CIF Instalación de dependencias del conector Peregrine y AEP-
 
 AEM Para recopilar y enviar los datos de evento desde las páginas de categoría y producto de este sitio de comercio de la, debe instalar la clave `npm` paquetes en la `ui.frontend` AEM módulo del proyecto de comercio de la.
 
@@ -170,9 +170,9 @@ Para [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-co
    ]
    ```
 
-### Inicialización de los componentes principales de Peregrine y CIF
+### CIF Inicialización de los componentes principales de Peregrine y
 
-Para inicializar los componentes principales de Peregrine y CIF basados en React, cree la configuración y los archivos JavaScript necesarios.
+CIF Para inicializar los componentes principales y de Peregrine basados en React, cree la configuración y los archivos JavaScript necesarios.
 
 1. Vaya a `ui.frontend` y cree la siguiente carpeta: `src/main/webpack/components/commerce/App`
 
@@ -226,7 +226,7 @@ Para inicializar los componentes principales de Peregrine y CIF basados en React
 
    >[!IMPORTANT]
    >
-   >Aunque es posible que ya esté familiarizado con el [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) archivo de __AEM Guias de viaje - Proyecto Venia en CIF__ Sin embargo, hay algunos cambios que debe realizar en este archivo. Primero, revise cualquier __PENDIENTE__ comentarios. A continuación, dentro de `eventsCollector` propiedad, busque la variable `eventsCollector > aed` y actualice el `orgId` y `datastreamId` a los valores correctos. [Más información](./aep.md#add-aep-values-to-aem).
+   >Aunque es posible que ya esté familiarizado con el [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) archivo de __AEM CIF Guias de viaje en Venia - Proyecto Venia__ Sin embargo, hay algunos cambios que debe realizar en este archivo. Primero, revise cualquier __PENDIENTE__ comentarios. A continuación, dentro de `eventsCollector` propiedad, busque la variable `eventsCollector > aed` y actualice el `orgId` y `datastreamId` a los valores correctos. [Más información](./aep.md#add-aep-values-to-aem).
 
 1. Crear un `App.js` con el siguiente contenido. Este archivo es similar al típico archivo de punto de inicio de la aplicación React y contiene los vínculos React y Personalizado, así como el uso de React Context para facilitar la integración del Experience Platform.
 
@@ -440,7 +440,7 @@ Para almacenar en déclencheur AEM el evento, puede utilizar el autor de la publ
 
 1. En la barra de acciones superior, haga clic en __Ver como aparece publicado__, luego haz clic en cualquier categoría preferida en la navegación de la tienda.
 
-1. Haga clic en cualquier tarjeta de producto preferida de la __Página de productos__, luego seleccione __color, tamaño__ para habilitar el __Añadir al carro__ botón.
+1. Haga clic en cualquier tarjeta de producto preferida de __Página de productos__, luego seleccione __color, tamaño__ para habilitar el __Añadir al carro__ botón.
 
 
 1. Abra el __Adobe Experience Platform Debugger__ en el panel de extensiones del explorador y seleccione. __SDK de Experience Platform Wed__ en el carril izquierdo.
@@ -462,7 +462,7 @@ Para almacenar en déclencheur AEM el evento, puede utilizar el autor de la publ
 
 ## Detalles de implementación {#implementation-details}
 
-El [Conector del Experience Platform del CIF](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) se basa en el [Conector de Experience Platform para Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), que forma parte del [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) proyecto.
+El [CIF Conector del Experience Platform de](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) se basa en el [Conector de Experience Platform para Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), que forma parte del [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) proyecto.
 
 El proyecto PWA Studio permite crear tiendas de Progressive Web Application (PWA) con Adobe Commerce o Magento Open Source. El proyecto también contiene una biblioteca de componentes llamada [Peregrina](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) para agregar lógica a los componentes visuales. El [Biblioteca Peregrina](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) también proporciona los vínculos React personalizados que utilizan [Conector del Experience Platform](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) para integrarse perfectamente con Experience Platform.
 

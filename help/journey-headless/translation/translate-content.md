@@ -2,10 +2,10 @@
 title: Traducir contenido sin encabezado
 description: Utilice el conector de traducción para traducir el contenido sin encabezado.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2175'
-ht-degree: 99%
+source-wordcount: '2170'
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ Para los propietarios de contenido que también son responsables de la traducci�
 1. Vaya a **Navegación** -> **Recursos** -> **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
 1. Seleccione la raíz de idioma del proyecto. En este caso, se ha seleccionado `/content/dam/wknd/en`.
 1. Toque o haga clic en el selector de carril y muestre el panel **Referencias**.
-1. Toque o haga clic en **Copias de idioma**.
+1. Haga clic o pulse **Copias de idioma**.
 1. Marque la casilla de verificación **Copias de idioma**.
 1. Expanda la sección **Actualizar copias de idioma** en la parte inferior del panel de referencias.
 1. En el menú desplegable **Proyecto**, seleccione **Crear proyecto(s) de traducción**.
@@ -130,7 +130,7 @@ Al crear automáticamente el proyecto de traducción, AEM evalúa el contenido s
 
 Para ver los detalles del contenido sin encabezado incluidos en este proyecto, haga lo siguiente:
 
-1. Toque o haga clic en el botón de puntos suspensivos en la parte inferior de la tarjeta **Trabajo de traducción**.
+1. Toque o haga clic en el botón de puntos suspensivos en la parte inferior de la **Trabajo de traducción** Tarjeta de.
 1. La ventana **Trabajo de traducción** lista todos los elementos del trabajo.
    ![Detalles del trabajo de traducción](assets/translation-job-detail.png)
 1. Toque o haga clic en una línea para ver el detalle de esa línea, teniendo en cuenta que una línea puede representar varios elementos de contenido para traducir.
@@ -226,7 +226,7 @@ Si va a esta carpeta mediante **Navegación** -> **Archivos** -> **Recursos**, v
 
 El marco de trabajo de traducción de AEM recibe las traducciones del conector de traducción y, a continuación, crea automáticamente la estructura de contenido en función de la raíz del idioma y utilizando las traducciones proporcionadas por el conector.
 
-Es importante comprender que este contenido no está publicado y, por consiguiente, no está disponible para los servicios sin encabezado. Aprenderemos sobre esta estructura de creación y publicación y veremos cómo publicar nuestro contenido traducido en el siguiente paso del recorrido de traducción.
+Es importante comprender que este contenido no está publicado y, por consiguiente, no está disponible para los servicios sin encabezado. Aprenderá sobre esta estructura de creación y publicación y verá cómo publicar contenido traducido en el siguiente paso del recorrido de traducción.
 
 ## Traducción humana {#human-translation}
 
@@ -242,7 +242,7 @@ Ahora que ha completado esta parte del recorrido de traducción sin encabezado, 
 * Poder crear nuevos proyectos de traducción.
 * Utilice los proyectos de traducción para traducir el contenido sin encabezado.
 
-Amplíe este conocimiento y continúe con su recorrido de traducción sin encabezado de AEM revisando el documento [Publicar contenido traducido](publish-content.md) donde aprenderá a publicar su contenido traducido y a actualizar esas traducciones a medida que cambie el contenido raíz del idioma.
+AEM Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de la revisando el documento a continuación [Publicar contenido traducido](publish-content.md) donde aprenderá a publicar el contenido traducido y a actualizar esas traducciones a medida que cambie el contenido raíz del idioma.
 
 ## Recursos adicionales {#additional-resources}
 

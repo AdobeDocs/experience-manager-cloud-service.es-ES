@@ -2,9 +2,9 @@
 title: Validación de transferencias de contenido
 description: Utilice la herramienta de transferencia de contenido para validar las transferencias de contenido
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -138,7 +138,7 @@ Consulte [Asignación de usuarios y migración de principales](/help/journey-mig
 
 Una vez que la extracción y la ingesta se hayan completado correctamente, estará disponible un resumen y un informe de la migración principal. Esta información se puede utilizar para validar qué usuarios y grupos se migraron correctamente y, quizás, para determinar por qué no se migraron algunos.
 
-Para ver esta información, vaya a Cloud Acceleration Manager. Haga clic en la tarjeta de proyecto y en la tarjeta Transferencia de contenido. Vaya a **Trabajos de ingesta** y busque la ingesta que desea comprobar. Haga clic en los tres puntos (**...**) para esa ingesta, luego haga clic en **Ver resumen principal** en la lista desplegable.
+Para ver esta información, vaya a Cloud Acceleration Manager. Haga clic en la tarjeta del proyecto y en la tarjeta Transferencia de contenido. Vaya a **Trabajos de ingesta** y busque la ingesta que desea comprobar. Haga clic en los tres puntos (**...**) para esa ingesta y haga clic en **Ver resumen principal** en la lista desplegable.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 

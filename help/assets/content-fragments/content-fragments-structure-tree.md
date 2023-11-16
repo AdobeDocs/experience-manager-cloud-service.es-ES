@@ -2,10 +2,10 @@
 title: Árbol de estructura de fragmentos de contenido (Recursos - Fragmentos de contenido)
 description: Utilice la funcionalidad Árbol de estructura del Editor de fragmentos de contenido en AEM para comprender mejor el contenido sin encabezado.
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 58%
+source-wordcount: '169'
+ht-degree: 50%
 
 ---
 
@@ -23,7 +23,7 @@ En el Editor de fragmentos de contenido puede seleccionar el icono Árbol de est
 
 ![Árbol de estructura de fragmentos de contenido en el panel lateral](assets/cfm-structuretree-01.png)
 
-Esto abrirá una representación de la estructura del fragmento en el panel izquierdo. Con esta opción puede navegar hasta los fragmentos a los que se hace referencia y acceder a ellos. Al seleccionar una referencia, se abre ese fragmento para editarlo.
+Esto abre una representación de la estructura del fragmento en el panel izquierdo. Con esta opción puede navegar hasta los fragmentos a los que se hace referencia y acceder a ellos. Al seleccionar una referencia, se abre ese fragmento para editarlo.
 
 >[!NOTE]
 >

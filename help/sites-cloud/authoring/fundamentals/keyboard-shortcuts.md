@@ -2,10 +2,10 @@
 title: Atajos de teclado para editar páginas
 description: Hay varios métodos abreviados del teclado disponibles mediante AEM, incluidos algunos para la edición de páginas
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '237'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hac
 
 >[!NOTE]
 >
->Una vez que el usuario empiece a interactuar con la página en modo Vista previa, el método abreviado `Ctrl-Shift-m` ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el método abreviado vuelva a estar disponible.
+>Una vez que el usuario empiece a interactuar con la página en modo Vista previa, el método abreviado `Ctrl-Shift-m` ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el acceso directo vuelva a estar disponible.
 
 También hay varios métodos abreviados de teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) y algunos, en particular, la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 

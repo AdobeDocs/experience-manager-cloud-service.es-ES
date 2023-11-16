@@ -2,10 +2,10 @@
 title: Uso del contenido de destino de varios sitios
 description: Si necesita administrar contenido de destino, como actividades, experiencias y ofertas, entre sus sitios, puede aprovechar el soporte integrado con varios sitios para el contenido de destino
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2890'
-ht-degree: 99%
+source-wordcount: '2889'
+ht-degree: 98%
 
 ---
 
@@ -144,7 +144,7 @@ Las áreas pueden abarcar actividades y ofertas. Después de crear un área en a
 
 >[!NOTE]
 >
->El área predeterminada denominada Área maestra se contrae de forma predeterminada al pulsar o hacer clic en el nombre de una marca **hasta** crear otra área. A continuación, cuando selecciona una marca en la consola **Actividad** u **Ofertas**, llegará a la consola **Área**.
+>El área predeterminada denominada Área maestra se contrae de forma predeterminada al pulsar o hacer clic en el nombre de una marca **hasta** se crea otra área. A continuación, cuando selecciona una marca en la consola **Actividad** u **Ofertas**, llegará a la consola **Área**.
 
 Para crear una nueva área:
 

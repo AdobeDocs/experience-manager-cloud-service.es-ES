@@ -4,9 +4,9 @@ description: Explore cómo puede utilizar el editor universal para editar cualqu
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '969'
 ht-degree: 11%
 
 ---
@@ -87,7 +87,7 @@ El editor universal permite interactuar con el contenido dentro de su contexto y
 
 1. Vuelva a poner el emulador en modo escritorio.
 
-También puede especificar dimensiones exactas para el emulador y rotar el dispositivo emulado para ver el contenido en cualquier posible dispositivo de destino.
+También puede especificar dimensiones exactas para el emulador y rotar el dispositivo emulado para ver el contenido en cualquier dispositivo de destino potencial.
 
 ## Previsualización y publicación {#preview}
 
@@ -95,7 +95,7 @@ Dado que debe tocar o hacer clic en el contenido para seleccionarlo en el editor
 
 1. En el carril de modo de la parte izquierda del editor, toque o haga clic en **Previsualizar**.
 
-1. Ahora, toque o haga clic en **Leer más** para el artículo principal.
+1. Ahora toque o haga clic en **Leer más** para el artículo principal.
 
    ![Modo de vista previa](assets/do-not-localize/ue-preview-publish-1.png)
 
@@ -103,7 +103,7 @@ Dado que debe tocar o hacer clic en el contenido para seleccionarlo en el editor
 
    ![Volver a la página principal mediante el vínculo Atrás](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. Ahora, toque o haga clic en **Publish** en la parte superior derecha del editor para publicar el contenido.
+1. Ahora toque o haga clic en **Publish** en la parte superior derecha del editor para publicar el contenido.
 
    ![Elementos de menú previsualización y publicación](assets/do-not-localize/ue-preview-publish-4.png)
 

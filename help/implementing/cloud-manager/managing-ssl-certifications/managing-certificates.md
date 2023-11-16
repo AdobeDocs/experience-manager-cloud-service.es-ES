@@ -2,10 +2,10 @@
 title: Administración de certificados SSL
 description: Obtenga información sobre cómo utilizar Cloud Manager para comprobar el estado de los certificados SSL y cómo editarlos, reemplazarlos, actualizarlos y eliminarlos.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 98%
+source-wordcount: '637'
+ht-degree: 82%
 
 ---
 
@@ -33,7 +33,7 @@ Cuando un certificado caduca, cualquier dominio que esté en uso con el certific
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 1. Navegue hasta la pantalla **Certificados SSL** de la pantalla **Entornos**.
-1. Verá una tabla con una fila para cada certificado SSL que se haya instalado correctamente en su programa. Haga clic en el botón de los tres puntos del extremo derecho de la fila del certificado que desea actualizar y seleccione **Ver y actualizar**.
+1. Puede ver una tabla con una fila para cada certificado SSL que se haya instalado correctamente en el programa. Haga clic en el botón de los tres puntos del extremo derecho de la fila del certificado que desea actualizar y seleccione **Ver y actualizar**.
 1. Los detalles del certificado se muestran y se pueden actualizar.
 1. Ejecute la canalización para implementar el certificado actualizado.
 
@@ -56,7 +56,7 @@ Siga estos pasos para eliminar un certificado SSL.
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 1. Navegue hasta la pantalla **Certificados SSL** de la pantalla **Entornos**.
-1. Verá una tabla con una fila para cada certificado SSL que se haya instalado correctamente en su programa. Haga clic en el botón de los tres puntos del extremo derecho de la fila del certificado que desea eliminar y seleccione **Eliminar**.
+1. Puede ver una tabla con una fila para cada certificado SSL que se haya instalado correctamente en el programa. Haga clic en los puntos suspensivos en el extremo derecho de la fila del certificado que desea eliminar y seleccione **Eliminar**.
 1. Confirme la eliminación en el cuadro de diálogo **Eliminar certificado SSL**.
 1. Ejecute la canalización para anular la implementación del certificado eliminado.
 

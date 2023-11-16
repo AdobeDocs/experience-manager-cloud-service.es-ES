@@ -3,13 +3,13 @@ title: Modelos de fragmento de contenido
 description: Descubra cómo los modelos de fragmentos de contenido sirven de base para los fragmentos de contenido en AEM. Estos fragmentos le permiten crear contenido estructurado para utilizarlo en entregas sin encabezado o en la creación de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 61%
+source-wordcount: '3061'
+ht-degree: 60%
 
 ---
-
 
 # Modelos de fragmento de contenido {#content-fragment-models}
 
@@ -181,6 +181,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * Permite la introducción de pestañas para utilizarlas al editar el contenido del fragmento de contenido.
       * Se muestran como divisores en el editor de modelos, que separan las secciones de la lista de tipos de datos de contenido. Cada instancia representa el inicio de una nueva pestaña.
       * En el editor de fragmentos, cada instancia aparece como una pestaña.
+
      >[!NOTE]
      >
      >Este tipo de datos se utiliza exclusivamente para dar formato; el esquema AEM GraphQL lo ignora.
@@ -198,10 +199,10 @@ Muchas propiedades se explican por sí mismas; para otras, a continuación se pr
   >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
 
 * **Representar como**
-Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor verá una sola instancia del campo o si se le permitirá crear varias instancias.
+Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor ve una sola instancia del campo o si se le permite crear varias instancias.
 
 * **Etiqueta de campo**
-Introducir una **Etiqueta de campo** genera automáticamente un **Nombre de propiedad**, que se puede actualizar de forma manual si es necesario.
+Introducción de una **Etiqueta de campo** genera automáticamente un **Nombre de propiedad**, que se puede actualizar de forma manual si es necesario.
 
 * **Validación**
 La validación básica está disponible mediante mecanismos como la propiedad **Requerido**. Algunos tipos de datos tienen campos de validación adicionales. Consulte [Validación](#validation) para obtener más información.

@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ac393e4b275693fae7413fb79496052d106b219c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2589'
+source-wordcount: '2585'
 ht-degree: 12%
 
 ---
@@ -48,7 +48,7 @@ Puede activar Brand Portal al crear los entornos de producción para su Experien
 
    Brand Portal tiene derecho a uno de los entornos disponibles y se refleja en la **[!UICONTROL Información del entorno]**.
 
-   Una vez que encuentre el entorno asociado a Brand Portal, haga clic en **[!UICONTROL Activar Brand Portal]** para iniciar el flujo de trabajo de activación.
+   Cuando encuentre el entorno asociado a Brand Portal, haga clic en **[!UICONTROL Activar Brand Portal]** para iniciar el flujo de trabajo de activación.
 
    ![Activar Brand Portal](assets/create-environment4.png)
 
@@ -86,7 +86,7 @@ Realice los siguientes pasos si no está seguro de la dirección URL de Brand Po
 
 1. Inicie sesión en [Admin Console](https://adminconsole.adobe.com/) y vaya a **[!UICONTROL Productos]**.
 1. En el panel izquierdo, seleccione **[!UICONTROL ADOBE EXPERIENCE MANAGER BRAND PORTAL - BRAND PORTAL]**.
-1. Haga clic en **[!UICONTROL Ir a Brand Portal]** para abrir directamente Brand Portal en el explorador.
+1. Clic **[!UICONTROL Ir a Brand Portal]** para abrir directamente Brand Portal en el explorador.
 
    O bien copie la URL del inquilino de Brand Portal desde el **[!UICONTROL Ir a Brand Portal]** y péguelo en el explorador para abrir la interfaz de Brand Portal.
 
@@ -444,7 +444,7 @@ Perform the following steps to validate the configuration:
 
    ![test-bpconfig3](assets/test-bpconfig3.png)
 
-1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
+1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click the **[!UICONTROL Test Connection]** icon.
 
    ![test-bpconfig4](assets/test-bpconfig4.png)
 

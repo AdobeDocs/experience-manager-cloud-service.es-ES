@@ -2,10 +2,10 @@
 title: Restauración de contenidos en AEM as a Cloud Service
 description: Obtenga información sobre cómo restaurar el contenido de AEM as a Cloud Service desde la copia de seguridad mediante Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: bf8493909fa995ec30d67646aec5b712318dbf75
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 76%
+source-wordcount: '1162'
+ht-degree: 71%
 
 ---
 
@@ -46,13 +46,13 @@ En primer lugar, determine el lapso de tiempo del contenido que desea restaurar.
 
 >[!NOTE]
 >
->Un usuario con la función **Propietario empresarial** o **Administrador de implementación**, para comenzar una operación de restauración, debe iniciar sesión.
+>Un usuario con **Propietario del negocio** o **Administrador de implementación** La función debe estar conectada para iniciar una operación de restauración.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
 1. Haga clic en el programa para el que desea iniciar una restauración.
 
-1. En la página **Información general del programa**, en la tarjeta **Entornos**, haga clic en el botón de puntos suspensivos situado junto al entorno para el que desea iniciar una restauración y seleccione **Restaurar contenido**.
+1. Desde el **Resumen del programa** , en la **Entornos** , haga clic en el botón de los tres puntos situado junto al entorno para el que desea iniciar una restauración y seleccione **Restaurar contenido**.
 
    ![Opción Restaurar](assets/backup-option.png)
 

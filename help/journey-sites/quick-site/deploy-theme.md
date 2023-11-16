@@ -2,10 +2,10 @@
 title: Implementar el tema personalizado
 description: Aprenda cómo implementar el tema del sitio mediante la canalización.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1023'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1022'
+ht-degree: 96%
 
 ---
 
@@ -36,9 +36,9 @@ Esta parte del recorrido se aplica al desarrollador front-end.
 
 ## Iniciar la canalización {#start-pipeline}
 
-Una vez que haya confirmado los cambios de personalización del tema en el repositorio de Git de AEM, puede ejecutar [la canalización que el administrador creó](pipeline-setup.md) para implementar los cambios.
+AEM Después de confirmar los cambios de personalización de la temática en el repositorio de Git de, puede ejecutar [la canalización que ha creado el administrador](pipeline-setup.md) para implementar los cambios.
 
-1. Inicie sesión en Cloud Manager [como lo hizo para recuperar la información de acceso de Git](retrieve-access.md) y acceda a su programa. En la pestaña **Información general**, verá una tarjeta para **Canalizaciones**.
+1. Inicie sesión en Cloud Manager [como lo hizo para recuperar la información de acceso de Git](retrieve-access.md) y acceda a su programa. En el **Información general** pestaña, verá una tarjeta para **Canalizaciones**.
 
    ![Información general de Cloud Manager](assets/cloud-manager-overview.png)
 
@@ -107,7 +107,7 @@ A continuación se muestran algunos recursos adicionales que profundizan en algu
 * [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=es): si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
 * [Permisos basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=es): Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Vea este documento para obtener detalles sobre estas funciones y cómo administrarlas.
 * [Repositorios de Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md): si necesita más información sobre cómo configurar y administrar repositorios Git para su proyecto AEMaaCS, vea este documento.
-* [Configuración de la canalización de CI/CD: Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md): obtenga más información sobre la configuración de canalizaciones, tanto full stack como front-end, en este documento.
+* [Configuración de la canalización de CI/CD, Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md): obtenga más información sobre la configuración de canalizaciones, tanto de pila completa como del front-end, en este documento.
 * [Plantilla de sitio AEM estándar](https://github.com/adobe/aem-site-template-standard): este es el repositorio de GitHub de la plantilla de sitio AEM estándar.
 * [Tema del sitio AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e): este es el repositorio de GitHub del tema del sitio AEM.
 * [npm](https://www.npmjs.com): los temas de AEM utilizados para construir sitios rápidamente se basan en npm.

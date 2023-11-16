@@ -1,13 +1,13 @@
 ---
 title: Permisos personalizados
 description: Descubra cómo puede utilizar permisos personalizados para crear nuevos perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+exl-id: 167da985-7f19-45b3-90a3-884817907da2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1506'
 ht-degree: 2%
 
 ---
-
 
 # Permisos personalizados {#custom-permissions}
 
@@ -81,7 +81,7 @@ Ahora que tiene un nuevo perfil de producto, puede asignarle permisos personaliz
 
    ![Permisos editables](assets/permissions-tab.png)
 
-1. Toque o haga clic en **Editar** Vínculo de un permiso para editarlo.
+1. Haga clic o pulse en **Editar** Vínculo de un permiso para editarlo.
 
 1. El **Editar permisos** se abre.
    * El permiso seleccionado en el paso anterior se selecciona en la columna izquierda.

@@ -2,10 +2,10 @@
 title: Diseño adaptable
 description: AEM le permite crear un diseño adaptable para sus páginas,
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 92%
+source-wordcount: '1734'
+ht-degree: 86%
 
 ---
 
@@ -108,7 +108,7 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 1. Para seleccionar un dispositivo específico para emular, puede hacer lo siguiente:
 
    * Utilizar el icono Seleccionar dispositivo y seleccionarlo desde un selector desplegable.
-   * Tocar o hacer clic en el indicador del dispositivo de la barra de herramientas del emulador.
+   * Pulse o haga clic en el indicador de dispositivo en la barra de herramientas del emulador.
 
    ![Menú desplegable Seleccionar dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -120,8 +120,8 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
    ![El pliegue](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * El pliegue también se puede considerar el salto de línea de la página (no confundir con los [puntos de interrupción](#layout-definitions-device-emulation-and-breakpoints)) del contenido. Esto se muestra para mayor comodidad, a fin de mostrar qué parte del contenido verá el usuario en el dispositivo antes de desplazarse.
-   * La línea para el pliegue no se mostrará si la altura del dispositivo que se está emulando es mayor que el tamaño de pantalla.
+   * El pliegue también se puede considerar el salto de línea de la página (no confundir con los [puntos de interrupción](#layout-definitions-device-emulation-and-breakpoints)) del contenido. Esto se muestra para mayor comodidad, a fin de mostrar qué parte del contenido ve el usuario en el dispositivo antes de desplazarse.
+   * La línea para el pliegue no se muestra si la altura del dispositivo que se está emulando es mayor que el tamaño de pantalla.
    * El pliegue se muestra para la comodidad del autor y no aparece en la página publicada.
 
 ## Adición de un contenedor de diseño y su contenido (modo de edición) {#adding-a-layout-container-and-its-content-edit-mode}
@@ -136,7 +136,7 @@ Un **contenedor de diseño** es un sistema de párrafos que:
 >
 >Si no está disponible, el **contenedor de diseño** debe activarse explícitamente para un sistema de párrafos o una página. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Desde aquí puede arrastrarlo a la ubicación deseada en la página tras la cual verá el marcador de posición **Arrastrar componentes aquí**.
+1. El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Desde aquí puede arrastrarlo a la ubicación requerida en la página después de la cual puede ver el **Arrastrar componentes aquí** marcador.
 1. A continuación, puede agregar componentes al contenedor del diseño. Estos componentes contendrán el contenido real:
 
    ![Contenedor de diseño](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -202,7 +202,7 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
   ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* En el modo **Diseño** puede pulsar o hacer clic en **Arrastrar componentes aquí** para seleccionar el componente completo. La barra de herramientas se muestra para este modo.
+* Entrada **Diseño** modo en el que puede tocar o hacer clic en **Arrastre los componentes aquí** para seleccionar todo el componente. La barra de herramientas se muestra para este modo.
 
   La barra de herramientas tiene diferentes opciones en función del estado del componente de diseño y de los componentes que le pertenecen. Por ejemplo:
 

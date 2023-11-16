@@ -3,9 +3,9 @@ title: Prácticas recomendadas de consulta e indexación
 description: Aprenda a optimizar los índices y las consultas en función de las directrices de prácticas recomendadas de Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3144'
+source-wordcount: '3133'
 ht-degree: 1%
 
 ---
@@ -132,15 +132,16 @@ El `Reset Statistics` se proporciona la opción para eliminar todas las estadís
 
 ### Explicar la consulta
 
-La herramienta de consulta Explicar permite a los desarrolladores comprender el plan de ejecución de la consulta (consulte [Lectura del Plan de ejecución de consultas](#reading-query-execution-plan)), incluidos los detalles de cualquier índice utilizado al ejecutar la consulta. Esto puede utilizarse para comprender la eficacia con la que se indexa una consulta para predecir o analizar retrospectivamente su rendimiento.
+La herramienta de consulta Explicar permite a los desarrolladores comprender el plan de ejecución de la consulta (consulte [Lectura del Plan de ejecución de consultas](#reading-query-execution-plan)), incluidos los detalles de cualquier índice utilizado al ejecutar la consulta. Esto puede utilizarse para comprender la eficacia con la que se indexa una consulta para predecir o analizar de forma retrospectiva su rendimiento.
 
 #### Explicación de una consulta
 
 Para explicar una consulta, haga lo siguiente:
+
 * Seleccione el idioma de consulta adecuado mediante la variable `Language` desplegable.
 * Introduzca la sentencia de consulta en la `Query` field.
 * Si es necesario, seleccione cómo se ejecutará la consulta utilizando las casillas de verificación proporcionadas.
-   * De forma predeterminada, no es necesario ejecutar las consultas JCR para identificar el plan de ejecución de consultas (este no es el caso de las consultas de QueryBuilder).
+   * De forma predeterminada, no es necesario ejecutar las consultas JCR para identificar el plan de ejecución de la consulta (este no es el caso de las consultas de QueryBuilder).
    * Se proporcionan tres opciones para ejecutar la consulta:
       * `Include Execution Time` : ejecute la consulta pero no intente leer ningún resultado.
       * `Read first page of results` : ejecute la consulta y lea la primera &quot;página&quot; de 20 resultados (replicando las prácticas recomendadas para ejecutar consultas).
@@ -238,7 +239,7 @@ Esta sección del plan establece que:
 
 Este plan de ejecución de consultas generará todos los recursos por debajo de `/content/dam` leerse desde el índice y, a continuación, filtrarse más por el motor de consultas (que solo incluirá los que coincidan con la restricción de propiedad no indizada en el conjunto de resultados).
 
-Incluso si solo un pequeño porcentaje de recursos coincide con la restricción `jcr:content/metadata/myProperty = "My Property Value"`, la consulta deberá leer un gran número de nodos para poder (intentar) rellenar la &quot;página&quot; de resultados solicitada. Esto puede dar como resultado un rendimiento incorrecto de la consulta, que se mostrará como con un bajo `Read Optimization` puntuación en la herramienta de rendimiento de consultas) y puede generar mensajes ADVERTENCIA que indiquen que se está atravesando un gran número de nodos (consulte [Índice de recorrido](#index-traversal)).
+Incluso si solo un pequeño porcentaje de recursos coincide con la restricción `jcr:content/metadata/myProperty = "My Property Value"`, la consulta necesita leer un gran número de nodos para (intentar) rellenar la &quot;página&quot; de resultados solicitada. Esto puede dar como resultado un rendimiento incorrecto de la consulta, que se mostrará como con un bajo `Read Optimization` puntuación en la herramienta de rendimiento de consultas) y puede generar mensajes ADVERTENCIA que indiquen que se está atravesando un gran número de nodos (consulte [Índice de recorrido](#index-traversal)).
 
 Para optimizar el rendimiento de esta segunda consulta, cree una versión personalizada de `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) y agregue la siguiente definición de propiedad:
 

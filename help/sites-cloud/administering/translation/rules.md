@@ -4,10 +4,10 @@ description: Descubra cómo las reglas de traducción identifican el contenido q
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '1291'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 99%
 
 ---
 
@@ -171,7 +171,7 @@ En la IU de las reglas de traducción puede:
 
    ![Seleccionar contexto](../assets/select-context.png)
 
-1. A continuación, debe seleccionar el contexto y hacer clic en **Editar**. Se abrirá el editor de reglas de traducción.
+1. A continuación, debe seleccionar el contexto y hacer clic en **Editar**. Se abrirá el Editor de reglas de traducción.
 
    ![Editor de reglas de traducción](../assets/translation-rules-editor.png)
 

@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 87%
+source-wordcount: '1151'
+ht-degree: 84%
 
 ---
 
@@ -79,7 +79,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de marzo de 20
 ### Novedades {#what-is-new-cif}
 
 * SEO mejorado para escenarios de varias tiendas: los formatos de URL para PDP/PLP ahora se pueden configurar en el nivel de tienda mediante las propiedades de configuración en la nube del CIF
-* El selector de productos es compatible con los productos clasificados mediante la nueva opción de filtro de la IU.  Esto permite a los profesionales del contenido preparar la administración de contenido de producto para próximos lanzamientos del producto
+* El selector de productos es compatible con los productos clasificados mediante una nueva opción de filtro en la interfaz de usuario.  Esto permite a los profesionales del contenido preparar la administración de contenido de producto para próximos lanzamientos del producto
 * Administración simplificada de la configuración del CIF y gestión de errores mediante el uso del nombre de configuración en la nube del CIF, en lugar de la URL del proxy de configuración
 * Selección manual de categorías para la lista de productos y los componentes de carrusel. Esto permite a los profesionales del contenido utilizar estos componentes en páginas de contenido, fuera de la experiencia del catálogo
 
@@ -113,7 +113,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido versión
 
 ### Novedades {#what-is-new-ctt}
 
-* Comprobar protecciones de tamaño: la función de comprobación de tamaño de la herramienta de transferencia de contenido ayuda a reducir las transferencias de contenido fallidas.  Con la función Comprobar tamaño, los usuarios pueden 1) determinar si tienen suficiente espacio en disco en `crx-quickstart` antes de la extracción, y 2) estime el tamaño del conjunto de migración y verifique si es compatible. Si se infringen una o ambas comprobaciones, los usuarios verán advertencias en la IU de CTT. Con esta protección, puede evitar errores en la transferencia de contenido y discutir de forma proactiva las opciones de migración con el Servicio de atención al cliente de Adobe. Consulte [Determinar el tamaño del conjunto de migración y el espacio en disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es#migration-set-size) para obtener más información.
+* Comprobar protecciones de tamaño: la función de comprobación de tamaño de la herramienta de transferencia de contenido ayuda a reducir las transferencias de contenido fallidas.  Con la función Comprobar tamaño, los usuarios pueden 1) determinar si tienen suficiente espacio en disco en `crx-quickstart` antes de la extracción, y 2) estime el tamaño del conjunto de migración y verifique si es compatible. Si se infringen una o ambas comprobaciones, los usuarios ven advertencias en la IU de CTT. Con esta protección, puede evitar errores en la transferencia de contenido y discutir de forma proactiva las opciones de migración con el Servicio de atención al cliente de Adobe. Consulte [Determinar el tamaño del conjunto de migración y el espacio en disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es#migration-set-size) para obtener más información.
 
 ## Analizador de prácticas recomendadas {#bpa-release}
 

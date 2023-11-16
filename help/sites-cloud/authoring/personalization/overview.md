@@ -2,10 +2,10 @@
 title: Personalización y segmentación de contenido
 description: Descubra cómo puede crear contenido personalizado y con objetivo con AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '1055'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1053'
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 La personalización del contenido web que proporciona a los clientes significa adaptar esas experiencias a sus intereses y necesidades. Puede hacerlo en función de la información que tenga sobre ellos, por ejemplo, resúmenes de compras, edad, sexo y geografía, entre otros.
 
-Con Adobe Experience Manager as a Cloud Service (AEM) puede crear una selección de contenido y especificar qué audiencias (grupos de usuarios finales) verán cada experiencia individual. Esto significa que está segmentando las experiencias personalizadas a audiencias específicas.
+Con Adobe Experience Manager as a Cloud Service AEM () puede crear una selección de contenido y especificar qué audiencias (grupos de usuarios finales) ven cada experiencia individual. Esto significa que está segmentando las experiencias personalizadas a audiencias específicas.
 
 Cuando el lector esté en línea, el motor de segmentación revisará la información disponible sobre el usuario final y la comparará con las definiciones de las experiencias. A continuación, el motor *“decidirá”* qué experiencia personalizada se debe mostrar.
 
@@ -40,7 +40,7 @@ Al crear páginas, puede definir varias experiencias, y cada experiencia se dest
 
 Una oferta es una experiencia personalizada que, a menudo, está disponible durante un período de tiempo limitado.
 
-Por ejemplo, la página de un sitio web de ejemplo puede utilizar ofertas para la imagen de teaser que aparece en la parte superior de la página. Una persona mayor de 30 años y una persona menor de 30 años verán diferentes ofertas como teaser de experiencias.
+Por ejemplo, una página de un sitio web de ejemplo puede utilizar ofertas para la imagen de teaser que aparece en la parte superior de la página. Una persona mayor de 30 años y una persona menor de 30 años pueden ver diferentes ofertas como teaser de experiencias.
 
 ## Audiencia {#audience}
 

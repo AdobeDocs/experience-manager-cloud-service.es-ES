@@ -2,10 +2,10 @@
 title: Gestión básica
 description: Familiarícese con la navegación por AEM y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 98%
+source-wordcount: '2970'
+ht-degree: 95%
 
 ---
 
@@ -133,7 +133,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
   Las rutas de exploración, que se encuentran en el centro del raíl y siempre muestran la descripción del elemento seleccionado, le permiten desplazarse dentro de una consola específica. Desde la consola **Sitios** puede desplazarse por los niveles de su sitio web.
 
-  Simplemente haga clic en el texto de la ruta de exploración para ver una lista desplegable con los niveles de la jerarquía del elemento seleccionado actualmente. Haga clic en una entrada para ir a esa ubicación.
+  Simplemente haga clic en el texto de la ruta de exploración para mostrar una lista desplegable con los niveles de la jerarquía del elemento seleccionado actualmente. Haga clic en una entrada para saltar a esa ubicación.
 
   ![Ejemplo de rutas de exploración expandidas](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -171,7 +171,7 @@ Hay varios medios de ayuda disponibles:
 
 * **Barra de herramientas de la consola**
 
-  Según su ubicación, el icono **Ayuda** abrirá los recursos adecuados:
+  Según su ubicación, la variable **Ayuda** abre los recursos adecuados:
 
   ![Icono de ayuda](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -473,8 +473,8 @@ Consulte el documento [Uso del carril del sitio para administrar el tema del sit
 >
 >Puede encontrar una descripción completa del proceso de creación de un nuevo sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md).
 
-### Filtro {#filter}
+### Filter {#filter}
 
-Se abrirá un panel similar al de [Buscar](/help/sites-cloud/authoring/getting-started/search.md) con filtros de ubicación apropiados ya establecidos, lo que le permite filtrar aún más el contenido que desea ver.
+Se abrirá un panel similar al siguiente: [búsqueda](/help/sites-cloud/authoring/getting-started/search.md) con los filtros de ubicación adecuados ya establecidos, lo que le permite filtrar aún más el contenido que desea ver.
 
 ![Ejemplo de filtro](/help/sites-cloud/authoring/assets/filter.png)

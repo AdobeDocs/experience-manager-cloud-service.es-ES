@@ -3,10 +3,10 @@ title: Administración de puntos de conexión de GraphQL en AEM
 description: Aprenda a administrar los puntos de conexión de GraphQL en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 95%
+source-wordcount: '512'
+ht-degree: 93%
 
 ---
 
@@ -62,7 +62,7 @@ Para habilitar el punto de conexión correspondiente:
 
 1. Vaya a **Herramientas**, **General** y, a continuación, seleccione **GraphQL**.
 1. Seleccione **Crear**.
-1. El diálogo **Crear nuevo punto de conexión de GraphQL** se abrirá. Aquí puede especificar lo siguiente:
+1. El **Crear nuevo extremo de GraphQL** se abre. Aquí puede especificar lo siguiente:
    * **Nombre**: nombre del punto de conexión; puede escribir cualquier texto.
    * **Utilice el esquema GraphQL proporcionado por**: utilice la lista desplegable para seleccionar el sitio o proyecto requerido.
 

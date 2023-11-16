@@ -2,10 +2,10 @@
 title: Configurar la canalización
 description: Cree una canalización front-end para administrar la personalización del tema del sitio.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 98%
+source-wordcount: '965'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Ahora verá una descripción general del programa. Su página tendrá un aspecto
 
 ![Información general de Cloud Manager](assets/cloud-manager-overview.png)
 
-Observe el nombre del programa al que ha accedido o copie la URL. Deberá proporcionárselo más adelante al desarrollador de front-end.
+Observe el nombre del programa al que ha accedido o copie la URL. Debe proporcionárselo más adelante al desarrollador front-end.
 
 ## Creación de una canalización front-end {#create-front-end-pipeline}
 

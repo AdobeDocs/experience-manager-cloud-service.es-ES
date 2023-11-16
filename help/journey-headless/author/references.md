@@ -2,9 +2,9 @@
 title: Obtenga información sobre el uso de referencias en fragmentos de contenido
 description: Obtenga información sobre el uso de referencias en fragmentos de contenido para los contenidos, otros fragmentos y archivos (medios). Introduzca la necesidad y la mecánica de los fragmentos anidados para la creación de CMS sin encabezado.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '710'
 ht-degree: 92%
 
 ---
@@ -39,7 +39,7 @@ Algunas referencias tienen tipos de datos específicos (por ejemplo, Referencias
 
 ## Referencias de contenido {#content-references}
 
-Las referencias de contenido hacen precisamente eso: permiten hacer referencia a cualquier otro contenido. Se abrirá un explorador que le permitirá seleccionar el elemento de contenido.
+Las referencias de contenido hacen precisamente eso: permiten hacer referencia a cualquier otro contenido. Se abre un explorador que permite seleccionar el elemento de contenido.
 
 ## Referencias de recursos/medios {#assets-media-references}
 

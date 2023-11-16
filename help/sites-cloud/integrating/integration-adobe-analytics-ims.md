@@ -2,10 +2,10 @@
 title: Configuración de IMS que usar al integrar con Adobe Analytics
 description: Obtenga más información acerca de la configuración de IMS que usar al integrar con Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 96%
+source-wordcount: '911'
+ht-degree: 94%
 
 ---
 
@@ -145,7 +145,7 @@ Seleccione una entrada de proyecto específica para mostrar más detalles acerca
 * API
    * Por ejemplo, Adobe Analytics
 
-En algunos de estos casos, deberá completar la integración de Adobe Analytics en AEM según IMS.
+En algunos de estos casos, debe completar la integración de Adobe Analytics AEM en basado en IMS y en el código de tiempo de la aplicación de la plataforma de datos de.
 
 ## Finalización de la configuración de IMS en AEM {#completing-the-ims-configuration-in-aem}
 
@@ -201,7 +201,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Legacy Cloud Services**.
 1. Scroll down to **Adobe Analytics** and select **Configure now**.
 
-   The **Create Configuration** dialog will open.
+   The **Create Configuration** dialog opens.
 
 1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
@@ -209,7 +209,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Confirm with **Create**.
 
-   The **Edit Component** dialog will open.
+   The **Edit Component** dialog opens.
 
 1. Enter the details in the **Analytics Settings** tab:
 

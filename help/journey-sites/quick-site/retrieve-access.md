@@ -2,10 +2,10 @@
 title: Recuperación de información de acceso al repositorio de Git
 description: Descubra cómo el desarrollador front-end utiliza Cloud Manager para acceder a la información del repositorio de Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 93%
 
 ---
 
@@ -74,9 +74,9 @@ El administrador de Cloud Manager lo habrá incorporado como usuario de Cloud Ma
 
 Si no ha recibido este correo electrónico, póngase en contacto con el administrador de Cloud Manager.
 
-## Acceso a Cloud Manager {#access-cloud-manager}
+## Acceder a Cloud Manager {#access-cloud-manager}
 
-1. Inicie sesión en Adobe Experience Cloud en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) o haga clic en el vínculo que aparece en el correo electrónico de bienvenida.
+1. Inicie sesión en Adobe Experience Cloud en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) o haga clic en el vínculo proporcionado en el correo electrónico de bienvenida.
 
 1. Cloud Manager enumera los distintos programas disponibles. Pulse o haga clic en el que necesite acceder según le indique el administrador de Cloud Manager. Si este es su primer proyecto front-end para AEMaaCS, es probable que solo haya un programa disponible.
 
@@ -111,7 +111,7 @@ Ahora que ha completado esta parte del Recorrido de creación rápida de sitios 
 * Comprender a alto nivel qué es Cloud Manager.
 * Haber recuperado sus credenciales para acceder al Git de AEM y confirmar sus personalizaciones.
 
-Aproveche este conocimiento y continúe con su Recorrido de creación rápida de sitios de AEM revisando el documento [Personalización del tema del sitio,](customize-theme.md) donde aprenderá cómo se crea el tema del sitio, cómo personalizarlo y cómo probarlo con contenido de AEM en directo.
+AEM Aproveche este conocimiento y continúe con su recorrido de Creación rápida de sitios de la revisando el documento [Personalizar el tema del sitio,](customize-theme.md) AEM dónde aprenderá cómo se crea el tema del sitio, cómo personalizarlo y cómo probarlo con contenido en directo
 
 ## Recursos adicionales {#additional-resources}
 

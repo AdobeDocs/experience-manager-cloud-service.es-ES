@@ -2,9 +2,9 @@
 title: Uso del analizador de prácticas recomendadas
 description: Aprenda a utilizar el Analizador de prácticas recomendadas para comprender la preparación de la actualización.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2478'
 ht-degree: 45%
 
 ---
@@ -61,7 +61,7 @@ Siga esta sección para obtener información sobre la vista del informe Analizad
 
    ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Haga clic en **Generar informe** para ejecutar el Analizador de prácticas recomendadas.
+1. Clic **Generar informe** para ejecutar el Analizador de prácticas recomendadas.
 
    ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -69,7 +69,7 @@ Siga esta sección para obtener información sobre la vista del informe Analizad
 
    ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. Una vez generado el informe de BPA, muestra un resumen y la cantidad de conclusiones en un formato de tabla organizado por el tipo de búsqueda y el nivel de importancia. Para obtener más detalles sobre un hallazgo particular, puede hacer clic en el número que corresponde al tipo de hallazgo en la tabla.
+1. Una vez generado el informe de BPA, muestra un resumen y la cantidad de conclusiones en un formato de tabla organizado por el tipo de búsqueda y el nivel de importancia. Para obtener más detalles sobre una búsqueda determinada, puede hacer clic en el número que corresponda al tipo de búsqueda de la tabla.
 
    ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 

@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: AEM Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante varios mecanismos en la documentación de.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 97%
+source-wordcount: '1801'
+ht-degree: 95%
 
 ---
 
@@ -100,7 +100,7 @@ En la consola Sitios hay dos opciones para la publicación:
 
 Para publicar una página con Publicación rápida:
 
-1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Publicación rápida**.
+1. Seleccione la página o páginas en la consola Sitios y haga clic en **Publicación rápida** botón.
 
    ![Selección de páginas para publicación](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -120,7 +120,7 @@ Para publicar una página con Publicación rápida:
 
 Para publicar o cancelar la publicación de una página con Administrar publicación:
 
-1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Administrar publicación**.
+1. Seleccione la página o páginas en la consola Sitios y haga clic en **Administrar publicación** botón.
 
    ![Selección de páginas para publicación](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -234,7 +234,7 @@ Si desea cancelar la publicación de una página que está editando, seleccione 
 
 Al igual que [utiliza la opción Administrar publicación para publicar](#manage-publication), puede usarla para cancelar la publicación.
 
-1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Administrar publicación**.
+1. Seleccione la página o páginas en la consola Sitios y haga clic en **Administrar publicación** botón.
 1. Se inicia el asistente **Administrar publicación**. En el primer paso, **Opciones**, seleccione **Cancelar publicación** en lugar de la opción predeterminada **Publicar**.
 
    ![Cancelación de la publicación: opciones](/help/sites-cloud/authoring/assets/publishing-unpublish.png)

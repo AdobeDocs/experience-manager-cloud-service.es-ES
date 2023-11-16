@@ -2,10 +2,10 @@
 title: Edición de lanzamientos
 description: Después de crear un lanzamiento para su página (o conjunto de páginas), puede editar el contenido en la copia de lanzamiento de las páginas.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ Cuando se ha creado un lanzamiento para una página (o conjunto de páginas), pu
 1. Acceda a [Lanzamiento desde las referencias (consola Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles.
 1. Seleccione **Ir a la página** para abrir la página y editarla.
 
-Al editar la página, verá una indicación en la barra de herramientas superior, junto con las opciones **Salir** y **Navegar**:
+Al editar la página, puede ver una indicación en la barra de herramientas superior, junto con el **Salir** y **Navegar** opciones:
 
 ![Salir y navegar por el lanzamiento desde el editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

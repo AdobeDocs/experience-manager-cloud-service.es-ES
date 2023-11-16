@@ -2,9 +2,9 @@
 title: Creación de experiencias comerciales
 description: Aprenda a crear y a crear experiencias relacionadas con el comercio de forma eficaz obteniendo acceso a los datos y al contenido del producto sin salir del contexto.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-AEM El complemento CIF amplía la creación de informes con capacidades específicas del comercio. Esto permite a los autores crear y administrar experiencias relacionadas con el comercio de forma eficaz, obteniendo acceso a los datos y al contenido del producto sin abandonar el contexto.
+CIF AEM El complemento de amplía la creación de informes con capacidades específicas del comercio. Esto permite a los autores crear y administrar experiencias relacionadas con el comercio de forma eficaz, obteniendo acceso a los datos y al contenido del producto sin abandonar el contexto.
 
 ## Seleccionadores {#pickers}
 
@@ -33,7 +33,7 @@ Al hacer clic en la categoría principal, el autor vuelve al nivel de producto.
 
 ![Componente Teaser sin selección](../assets/authoring/teaser_component_without_selection.png)
 
-El cuadro de diálogo de configuración de este componente requiere un producto. CIF utiliza el SKU como identificador del producto. Los autores pueden introducir el SKU a mano o hacer clic en el icono de la carpeta para abrir el selector de productos. Después de seleccionar y cerrar el selector, el cuadro de diálogo del componente muestra el nombre del producto seleccionado
+El cuadro de diálogo de configuración de este componente requiere un producto. CIF utiliza el SKU de como identificador de producto. Los autores pueden introducir el SKU a mano o hacer clic en el icono de la carpeta para abrir el selector de productos. Después de seleccionar y cerrar el selector, el cuadro de diálogo del componente muestra el nombre del producto seleccionado
 
 ![Componente teaser con selección](../assets/authoring/teaser_component_with_selection.png)
 
@@ -47,7 +47,7 @@ Este selector ofrece la posibilidad de explorar la estructura del catálogo para
 
 ![Componente de carrusel sin selección](../assets/authoring/carousel_component_without_selection.png)
 
-El cuadro de diálogo de configuración de este componente requiere 1 : n categorías. CIF utiliza el UID/ID como identificador de categoría. Los autores pueden introducir el UID manualmente o hacer clic en el icono de carpeta para abrir el selector de categorías. Después de seleccionar y cerrar el selector, el cuadro de diálogo del componente muestra el nombre de la categoría seleccionada.
+El cuadro de diálogo de configuración de este componente requiere 1 : n categorías. CIF utiliza el UUID/ID como identificador de categoría. Los autores pueden introducir el UID manualmente o hacer clic en el icono de carpeta para abrir el selector de categorías. Después de seleccionar y cerrar el selector, el cuadro de diálogo del componente muestra el nombre de la categoría seleccionada.
 
 ![Componente de carrusel con selección](../assets/authoring/carousel_component_with_selection.png)
 
@@ -65,7 +65,7 @@ Analógicamente, los productos se pueden enviar en una página (que crea un comp
 
 ### Adición de vínculos en campos de texto mediante RTE {#rte}
 
-Las páginas del catálogo de productos del CIF son páginas virtuales que se procesan sobre la marcha. AEM Por lo tanto, no es posible incrustar hipervínculos como para las páginas de normales. CIF añade una nueva acción &quot;Vínculos de comercio&quot; al RTE (Editor de texto enriquecido). Esta acción funciona exactamente igual que la acción normal &quot;Hipervínculo&quot;, pero permite a los autores seleccionar un producto o una categoría mediante los selectores.
+CIF Las páginas de catálogo de productos de son páginas virtuales que se procesan sobre la marcha. AEM Por lo tanto, no es posible incrustar hipervínculos como para las páginas de normales. CIF Añade una nueva acción &quot;Vínculos de comercio&quot; a RTE (Editor de texto enriquecido). Esta acción funciona exactamente igual que la acción normal &quot;Hipervínculo&quot;, pero permite a los autores seleccionar un producto o una categoría mediante los selectores.
 
 ![RTE](../assets/authoring/RTE.png)
 

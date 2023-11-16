@@ -2,10 +2,10 @@
 title: Diferencias de página
 description: La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 93%
+source-wordcount: '609'
+ht-degree: 89%
 
 ---
 
@@ -65,7 +65,7 @@ La comparación de diferencias detecta los cambios en el nivel de componente y d
 
 ### Pantalla completa y salida   {#fullscreen-and-exiting}
 
-Para centrarse en un contenido específico, puede hacer clic en el icono de pantalla completa para que cualquier “lado” de la comparación de diferencias en paralelo se amplíe en la ventana completa del navegador.
+Para centrarse en un contenido determinado, puede hacer clic en el icono de pantalla completa para que cualquier &quot;lado&quot; de la comparación de diferencias en paralelo se amplíe en la ventana completa del explorador.
 
 ![Botón Pantalla completa](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 

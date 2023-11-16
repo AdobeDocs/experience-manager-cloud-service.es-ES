@@ -2,10 +2,10 @@
 title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante Fragmentos de contenido.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 84%
+source-wordcount: '1727'
+ht-degree: 83%
 
 ---
 
@@ -135,7 +135,7 @@ Puede hacerlo creando una serie de carpetas dentro de la sección **Archivos** d
 
 ![Opción Crear carpeta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Se abre un cuadro de diálogo en el que puede introducir los detalles y confirmarlos con **Crear**:
+Se abrirá un cuadro de diálogo en el que puede introducir los detalles y confirmar con **Crear**:
 
 ![Cuadro de diálogo Crear carpeta](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -216,7 +216,7 @@ Cuando se abre el editor por primera vez, ve lo siguiente:
 
 Por ejemplo, un fragmento puede:
 
-* Requiere varios fragmentos de información, algunos con un tipo específico. Para el contenido sin encabezado, las referencias son clave (más adelante, en el recorrido, aprenderá sobre ellas).
+* Requiere varios fragmentos de información, algunos con un tipo específico. Para el contenido sin encabezado, las referencias son clave (las aprenderá más adelante en su recorrido).
 
 * Permite escribir una sección larga de texto. Aquí hay opciones adicionales para administrar y dar formato al texto. Incluso puede abrir los campos de texto individuales en un editor de pantalla completa (con el icono en forma de pantalla pequeña de la derecha)
 
@@ -240,7 +240,7 @@ De acuerdo. Esta sección puede parecer un poco extraña, pero en cuanto abra el
 
 * **Modelos de fragmentos de contenido**
 
-  Verá el nombre del modelo de fragmento de contenido en el panel derecho del editor. También se trata de un vínculo que conduce al editor de modelos.
+  Puede ver el nombre del modelo de fragmento de contenido en el panel derecho del editor. También se trata de un vínculo que conduce al editor de modelos.
 Los modelos de fragmento de contenido son vitales para los fragmentos de contenido, ya que definen la estructura que se utiliza. Sin embargo, crearlos y editarlos es, normalmente, responsabilidad de otra persona, el arquitecto de contenido.
 
   >[!NOTE]

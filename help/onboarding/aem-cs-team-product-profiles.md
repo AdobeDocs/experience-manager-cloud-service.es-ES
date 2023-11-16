@@ -2,10 +2,10 @@
 title: Perfiles de AEM as a Cloud Service Team y de producto
 description: Aprenda cómo los perfiles de equipo y de producto de AEM as a Cloud Service pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 89%
+source-wordcount: '849'
+ht-degree: 85%
 
 ---
 
@@ -24,9 +24,9 @@ AEM as a Cloud Service es una oferta totalmente nativa de la nube que ofrece AEM
 
 Los integrantes del equipo de AEM as a Cloud Service se agregan y asignan a uno o más de los siguientes perfiles de producto a través de Admin Console durante la incorporación.
 
-* **Administradores de AEM**: un administrador de AEM se suele asignar a desarrolladores, en particular a desarrolladores que necesitan tener acceso, por ejemplo, a los entornos de desarrollo. El perfil de producto del administrador de AEM se utiliza para otorgar privilegios de administrador en la instancia de AEM asociada.
+* **AEM Administradores de** AEM : Un administrador de la se suele asignar a desarrolladores, en particular a desarrolladores que necesitan acceso, por ejemplo, a los entornos de desarrollo. El perfil de producto del administrador de AEM se utiliza para otorgar privilegios de administrador en la instancia de AEM asociada.
 
-* **Usuarios de AEM**: Los usuarios de AEM son los usuarios de su organización que utilizan AEM as a Cloud Service generalmente para crear contenido. Estos usuarios deberán acceder a AEM para realizar sus tareas. El perfil de producto de los usuarios de AEM suele asignarse a un autor de contenido de AEM que crea y revisa el contenido. Este contenido puede ser de muchos tipos, como páginas, recursos, publicaciones, etc. El perfil de producto de AEM de los usuarios que se muestra a continuación se asigna a estos miembros.
+* **Usuarios de AEM**: Los usuarios de AEM son los usuarios de su organización que utilizan AEM as a Cloud Service generalmente para crear contenido. AEM Estos usuarios deben acceder a la documentación de para realizar sus tareas a la vez que lo hacen El perfil de producto de los usuarios de AEM suele asignarse a un autor de contenido de AEM que crea y revisa el contenido. Este contenido puede ser de muchos tipos, como páginas, recursos, publicaciones, etc. El perfil de producto de AEM de los usuarios que se muestra a continuación se asigna a estos miembros.
 
 ![Perfiles de producto](/help/onboarding/assets/admin-console-profiles.png)
 

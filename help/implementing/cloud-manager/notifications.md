@@ -2,10 +2,10 @@
 title: Notificaciones
 description: Obtenga información sobre cómo recibir información sobre las implementaciones de canalización mediante el sistema de notificación de Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 89%
+source-wordcount: '584'
+ht-degree: 79%
 
 ---
 
@@ -32,11 +32,11 @@ La pestaña **Anuncios** incluye anuncios de productos de Adobe. Los anuncios ha
 
 ![Barra lateral de notificaciones](assets/notificaitons-announcements.png)
 
-Haga clic en una notificación o un anuncio para ver los detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan a los detalles de esa actividad, como la ventana de ejecución de la canalización.
+Haga clic en una notificación o anuncio para ver sus detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan a los detalles de esa actividad, como la ventana de ejecución de la canalización.
 
-Haga clic en la opción **Ver todo** en la parte inferior del panel para ver todos los anuncios de la bandeja de entrada.
+Haga clic en **Ver todo** en la parte inferior del panel para ver todos los anuncios de la bandeja de entrada.
 
-Haga clic en la opción **Marcar todo como leído** en la parte inferior del panel para marcar todas las notificaciones no leídas como leídas y borrar el distintivo del icono de la campana.
+Haga clic en **Marcar todos como leídos** en la parte inferior del panel para marcar todas las notificaciones no leídas como leídas y borrar el distintivo del icono de la campana.
 
 ## Configuración de notificaciones {#configuration}
 

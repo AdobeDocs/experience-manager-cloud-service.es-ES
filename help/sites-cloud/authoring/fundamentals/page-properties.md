@@ -2,10 +2,10 @@
 title: Edición de las propiedades de página
 description: AEM Obtenga información sobre cómo definir las propiedades necesarias para administrar una página en la administración de páginas en la.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2280'
+ht-degree: 96%
 
 ---
 
@@ -227,7 +227,7 @@ Esta pestaña solo está visible para páginas configuradas como Live Copies. Al
 
 ### Vista previa {#preview}
 
-Cuando un entorno de previsualización esté habilitado, verá lo siguiente:
+Cuando un entorno de vista previa está habilitado, verá lo siguiente:
 
 * URL de previsualización: la URL utilizada para acceder al contenido en el entorno de previsualización.
 
@@ -286,7 +286,7 @@ Al editar una página puede, utilizar **Información de página** para definir l
 
 1. Abra la página para la que desee editar las propiedades.
 1. Seleccione el icono **Información de página** para abrir el menú de selección:
-1. Seleccione **Abrir propiedades** para abrir un cuadro de diálogo que le permite editar las propiedades, ordenadas por la pestaña adecuada. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
+1. Seleccionar **Abrir propiedades** y se abre un cuadro de diálogo que le permite editar las propiedades, ordenadas por la pestaña correspondiente. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
    * **Cancelar**
    * **Guardar y cerrar**
 1. Utilice el botón **Guardar y cerrar** para guardar los cambios. 

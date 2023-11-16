@@ -2,9 +2,9 @@
 title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 46ff33808e710b511db7cfcdad931c14846d8cfe
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3600'
+source-wordcount: '3598'
 ht-degree: 96%
 
 ---
@@ -55,7 +55,7 @@ Una vez realizada la llamada, la infraestructura de red tarda aproximadamente 15
 Si la configuración de salida de puerto flexible con alcance de programa está lista, el punto final `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` debe invocarse por entorno para habilitar la red en el nivel de entorno y para declarar opcionalmente cualquier regla de reenvío de puerto. Los parámetros se pueden configurar por entorno para ofrecer flexibilidad.
 
 Las reglas de reenvío de puertos deben declararse para cualquier puerto de destino que no sea 80/443, pero solo si no utiliza el protocolo http o https, 
-especificando el conjunto de hosts de destino (nombres o IP, y con puertos). La conexión de cliente que utiliza el puerto 80/443 a través de http/https debe seguir utilizando la configuración de proxy en su conexión para que se apliquen las propiedades de red avanzada a la conexión. Para cada host de destino, los clientes deben asignar el puerto de destino deseado a un puerto desde 30000 hasta 30999.
+especificando el conjunto de hosts de destino (nombres o IP, y con puertos). La conexión de cliente que utiliza el puerto 80/443 a través de http/https debe seguir utilizando la configuración de proxy en su conexión para que se apliquen a la conexión las propiedades de red avanzada. Para cada host de destino, los clientes deben asignar el puerto de destino deseado a un puerto desde 30000 hasta 30999.
 
 La API debe responder en solo unos segundos e indicar un estado de actualización y, después de unos 10 minutos, el método `GET` del punto de conexión debe indicar que la red avanzada está habilitada.
 

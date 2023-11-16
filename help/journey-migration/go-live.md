@@ -2,9 +2,9 @@
 title: Go-Live
 description: Aprenda a realizar la migración una vez que el código y el contenido estén listos para la nube
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1704'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 >title="Preparación para el lanzamiento"
 >abstract="Para garantizar un lanzamiento con éxito y sin problemas en AEM as a Cloud Service, debe planificar los periodos de congelación de código y contenido, las iteraciones de prueba, las recargas de contenido, las pruebas de rendimiento, las pruebas de seguridad y mucho más."
 
-En esta parte del recorrido AEM, aprenderá a planificar y realizar la migración una vez que el código y el contenido estén listos para transferirse a la as a Cloud Service de la. Además, aprenderá cuáles son las prácticas recomendadas y las limitaciones conocidas al realizar la migración.
+En esta parte del recorrido AEM, aprenderá a planificar y realizar la migración una vez que el código y el contenido estén listos para transferirse a la as a Cloud Service. Además, aprenderá cuáles son las prácticas recomendadas y las limitaciones conocidas al realizar la migración.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -86,11 +86,11 @@ Al realizar la migración de producción, debe evitar ejecutar la herramienta de
 
 **AEM Optimización de la carga en el origen de la al realizar la migración de contenido**
 
-AEM Recuerde, la carga en el origen de la se buena durante la fase de extracción. Debe tener en cuenta lo siguiente:
+AEM Recuerde, la carga en el origen de la es mayor durante la fase de extracción. Debe tener en cuenta lo siguiente:
 
 * La herramienta de transferencia de contenido es un proceso Java externo que utiliza un montón de JVM de 4 GB
 * AEM La versión que no es AzCopy descarga binarios, los almacena en un espacio temporal en el autor del origen, consumiendo E/S del disco y, a continuación, los carga en el contenedor de Azure, que consume ancho de banda de red
-* [AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) transfiere blobs directamente desde el almacén de blobs al contenedor de Azure, lo que ahorra ancho de banda de red y E/S de disco. La versión de AzCopy todavía utiliza el ancho de banda del disco y de la red para extraer y cargar los datos del almacén de segmentos en el contenedor de Azure
+* [AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) transfiere blobs directamente desde el almacén de blobs al contenedor de Azure, lo que ahorra ancho de banda de red y E/S de disco. La versión de AzCopy sigue utilizando el ancho de banda del disco y de la red para extraer y cargar los datos del almacén de segmentos en el contenedor de Azure
 * El proceso de la herramienta de transferencia de contenido es más ligero en los recursos del sistema durante la fase de ingesta, ya que solo transmite registros de ingesta y no hay mucha carga en la instancia de origen en lo que respecta a E/S de disco o ancho de banda de red.
 
 ## Limitaciones conocidas {#known-limitations}
@@ -138,7 +138,7 @@ Revise esta lista de actividades para asegurarse de que la migración se realiza
 * Configure CDN, SSL y DNS.
    * Si utiliza su propia CDN, introduzca un ticket de asistencia para configurar el enrutamiento adecuado.
       * Consulte la sección [AEM Los puntos de CDN del cliente a CDN administrada de](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) en la documentación de CDN para obtener más información.
-      * Deberá configurar SSL y DNS según la documentación de su proveedor de CDN.
+      * Configure SSL y DNS según la documentación de su proveedor de CDN.
    * Si no utiliza una CDN adicional, administre SSL y DNS según la siguiente documentación:
       * Administración de certificados SSL
          * [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

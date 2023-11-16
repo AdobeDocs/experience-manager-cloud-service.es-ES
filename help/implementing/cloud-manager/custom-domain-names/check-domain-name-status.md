@@ -2,10 +2,10 @@
 title: Comprobar el estado del nombre de dominio
 description: Obtenga información sobre cómo determinar si Cloud Manager ha verificado correctamente su nombre de dominio personalizado.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 97%
+source-wordcount: '647'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Puede determinar el estado del nombre de dominio personalizado en Cloud Manager.
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Haga clic en **Configuración de dominio** en el panel de navegación izquierdo.
+1. Clic **Configuración de dominio** en el panel de navegación izquierdo.
 
 1. Haga clic en el icono **Estado** del nombre de dominio.
 

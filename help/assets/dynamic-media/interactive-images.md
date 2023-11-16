@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '4176'
 ht-degree: 2%
@@ -38,7 +38,7 @@ El tutorial ayuda a ilustrar los pasos de integración de imágenes interactivas
 
 Pasos de las imágenes interactivas:
 
-1. **(Opcional) Identificar variables de puntos interactivos**. Si utiliza Adobe Experience Manager Assets y Dynamic Media de forma independiente, identifique las variables dinámicas utilizadas en la implementación de Quickview existente. Al hacerlo, se asegura de que pueda introducir datos de punto interactivo al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables de punto interactivo](#optional-identifying-hotspot-variables).
+1. **(Opcional) Identificar variables de puntos interactivos**. Si utiliza Adobe Experience Manager Assets y Dynamic Media de forma independiente, identifique las variables dinámicas utilizadas en la implementación de Quickview existente. Al hacerlo, se garantiza la entrada de datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables de punto interactivo](#optional-identifying-hotspot-variables).
 Sin embargo, si utiliza Experience Manager Sites, o comercio electrónico de Experience Manager, o ambos, este paso no es necesario.
 
 1. **(Opcional) Cree un ajuste preestablecido de visualizador de imágenes interactivo**. Personalice la imagen gráfica que se utiliza para representar las zonas interactivas. No es necesario crear su propio ajuste preestablecido de visualizador de imágenes interactivas si desea utilizar el ajuste preestablecido de visualizador de imágenes interactivas predeterminado denominado `Shoppable_Banner` en su lugar.
@@ -47,7 +47,7 @@ Consulte [(Opcional) Creación de un ajuste preestablecido de visualizador de im
 1. **Cargar un titular de imagen**. Cargue los titulares de las imágenes que desee hacer interactivos.
 Consulte [Carga de un titular de imagen](#uploading-an-image-banner).
 
-1. **Añadir puntos interactivos a un titular de imagen**. Añada una o más zonas interactivas a un titular de imagen. Asocie cada una de ellas con una acción como un hipervínculo, una vista rápida o un fragmento de experiencia. Después de agregar zonas interactivas, terminará esta tarea publicando la imagen interactiva.
+1. **Añadir puntos interactivos a un titular de imagen**. Añada una o más zonas interactivas a un titular de imagen. Asocie cada una con una acción como un hipervínculo, una vista rápida o un fragmento de experiencia. Después de agregar zonas interactivas, terminará esta tarea publicando la imagen interactiva.
 Consulte [Adición de puntos interactivos a un titular de imagen](#adding-hotspots-to-an-image-banner).
 Consulte [Vista previa de imágenes interactivas](#optional-previewing-interactive-images) - Opcional. Si lo desea, puede ver una representación del titular de la compra y probar su interactividad.
 Consulte [Publicando recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de imagen interactivos.
@@ -405,7 +405,7 @@ El código incrustado devuelto por Experience Manager Assets tiene un controlado
              s7interactiveimageviewer.setHandlers({
                 "quickViewActivate": function(inData) {
                     var sku=inData.sku; //SKU for product ID
-                    //To pass other parameter from the hotspot, you will need to add custom parameter during the hotspot setup as parameterName=value
+                    //To pass other parameter from the hotspot, add custom parameter during the hotspot setup as parameterName=value
                     loadQuickView(sku); //Replace this call with your Quickview plugin
                     //See your Quickviewer plugin for the Quickview call
                  },

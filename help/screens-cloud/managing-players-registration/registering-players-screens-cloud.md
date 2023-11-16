@@ -2,9 +2,9 @@
 title: Registro de reproductores en pantallas as a Cloud Service
 description: En esta página se describe cómo registrar reproductores en Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ Siga los pasos a continuación para registrar su reproductor:
    1. **Limitar uso**: pulse el botón para desactivar el límite de uso del código de registro. De forma predeterminada, la opción Limitar uso está desactivada.
    1. **Límite de uso**: elija el número del límite de uso
 
-1. Haga clic en **Crear** para crear el código de registro. Verá su reproductor con el código de registro en la lista.
+1. Clic **Crear** para crear el código de registro. Puedes ver tu reproductor con el código de registro en la lista.
 
    ![imagen](/help/screens-cloud/assets/player/register-player3.png)
 
@@ -55,7 +55,7 @@ Siga los pasos a continuación para registrar su reproductor:
    ![imagen](/help/screens-cloud/assets/player/register-player4.png)
 
 
-1. Una vez que haya añadido el código, verá que el reproductor ahora está registrado desde la IU de administración del reproductor.
+1. Cuando haya añadido el código, podrá ver que el reproductor está registrado desde la IU de administración del reproductor.
 
    ![imagen](/help/screens-cloud/assets/player/register-player5.png)
 

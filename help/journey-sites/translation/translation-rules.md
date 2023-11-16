@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '788'
+ht-degree: 96%
 
 ---
 
@@ -97,7 +97,7 @@ Ahora que ha completado esta parte del recorrido de traducción de AEM Sites, de
 * Comprender lo que hacen las reglas de traducción.
 * Poder definir sus propias reglas de traducción.
 
-Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites. Revise el documento [Traducir contenido](translate-content.md) donde aprenderá cómo funcionan juntos el conector y las reglas para traducir contenido.
+Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento a continuación [Traducir contenido](translate-content.md) donde aprenderá cómo funcionan juntos el conector y las reglas para traducir contenido.
 
 ## Recursos adicionales {#additional-resources}
 

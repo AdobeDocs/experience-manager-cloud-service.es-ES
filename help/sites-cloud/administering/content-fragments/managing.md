@@ -3,13 +3,13 @@ title: Administración de los fragmentos de contenido
 description: AEM Obtenga información sobre cómo administrar los fragmentos de contenido de la aplicación de la consola y el editor, como base del contenido sin encabezado, o para la creación de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: d381cc80e2c15ea35f9fd23baa78806ce15ec1af
+exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 59%
+source-wordcount: '2532'
+ht-degree: 56%
 
 ---
-
 
 # Administración de los fragmentos de contenido {#managing-content-fragments}
 
@@ -70,7 +70,7 @@ Para obtener más información detallada, consulte:
 
 ### Estructura y gestión básicas de la consola {#basic-structure-handling-content-fragments-console}
 
-La selección **Fragmentos de contenido** abrirá la consola en una pestaña nueva.
+Seleccionar **Fragmentos de contenido** abre la consola en una nueva pestaña.
 
 ![Consola Fragmentos de contenido: información general](assets/cf-managing-console-overview.png)
 
@@ -131,7 +131,7 @@ Algunas acciones están disponibles desde la consola, sin seleccionar un fragmen
 
 #### Acciones para un fragmento de contenido (seleccionado) {#actions-selected-content-fragment}
 
-Si se selecciona un fragmento específico, se abrirá una barra de herramientas centrada en las acciones disponibles para dicho fragmento. También puede seleccionar varios fragmentos: la selección de acciones se ajustará en consecuencia.
+Al seleccionar un fragmento específico, se abre una barra de herramientas centrada en las acciones disponibles para dicho fragmento. También puede seleccionar varios fragmentos: la selección de acciones se ajustará en consecuencia.
 
 ![Consola Fragmentos de contenido: barra de herramientas para un fragmento seleccionado](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -224,7 +224,7 @@ Crear un fragmento de contenido:
    >
    >Para que la ubicación del nuevo fragmento esté predefinida, puede desplazarse a la carpeta en la que desee crear el fragmento o especificar la ubicación durante el proceso de creación.
 
-1. Se abre el cuadro de diálogo **Nuevo fragmento de contenido** desde donde puede especificar lo siguiente:
+1. El **Fragmento de contenido nuevo** se abre, desde donde puede especificar lo siguiente:
 
    * **Ubicación**: esto se completará automáticamente con la ubicación actual, pero puede seleccionar una ubicación diferente si es necesario
    * **Modelo de fragmento de contenido**: seleccione el modelo que desea utilizar como base del fragmento en la lista desplegable.

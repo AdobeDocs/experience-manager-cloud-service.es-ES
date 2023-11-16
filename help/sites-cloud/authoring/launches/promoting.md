@@ -2,10 +2,10 @@
 title: Promoción de lanzamientos
 description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '812'
+ht-degree: 98%
 
 ---
 
@@ -80,7 +80,7 @@ Puede promocionar lanzamientos desde la consola **Sites** o la consola **Lanzami
 
 ## Promoción de páginas de lanzamiento al editar {#promoting-launch-pages-when-editing}
 
-Cuando está editando una página de lanzamiento, la acción **Promocionar lanzamiento** también está disponible en **Información de la página**. Esta acción abrirá el asistente para recopilar la información necesaria.
+Cuando está editando una página de lanzamiento, la acción **Promocionar lanzamiento** también está disponible en **Información de la página**. Esto abre el asistente para recopilar la información necesaria.
 
 ![Promocionar lanzamiento desde la información del sitio](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 

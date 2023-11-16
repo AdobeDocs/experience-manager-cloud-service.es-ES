@@ -2,10 +2,10 @@
 title: Creación de programas de producción
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de producción y alojar tráfico en directo.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 88%
+source-wordcount: '601'
+ht-degree: 73%
 
 ---
 
@@ -22,7 +22,7 @@ Siga estos pasos para crear un programa de producción.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. Haga clic en **Agregar programa** en la esquina superior derecha de la pantalla.
+1. Clic **Agregar programa** desde la esquina superior derecha de la pantalla.
 
    ![Página de aterrizaje de Cloud Manager](assets/log-in.png)
 
@@ -49,7 +49,7 @@ Siga estos pasos para crear un programa de producción.
 
    ![Seleccionar soluciones](assets/setup-prod-select.png)
 
-1. Haga clic en el elemento adicional antes de los nombres de las soluciones para mostrar complementos opcionales, como seleccionar la opción de complemento **Comercio** en **Sites**.
+1. Haga clic en las comillas angulares antes de los nombres de las soluciones para mostrar complementos opcionales, como seleccionar la opción **Comercio** opción de complemento en **Sites**.
 
    ![Seleccionar complementos](assets/setup-prod-commerce.png)
 
@@ -70,7 +70,7 @@ El programa lo crea Cloud Manager y aparece y se puede seleccionar en la página
 
 ## Acceso a su programa {#accessing}
 
-1. Una vez que vea la tarjeta del programa en la página de aterrizaje, seleccione el botón de tres puntos para ver las opciones de menú disponibles.
+1. Cuando vea la tarjeta del programa en la página de aterrizaje, seleccione el botón de puntos suspensivos para ver las opciones de menú disponibles.
 
    ![Información general del programa](assets/program-overview.png)
 
@@ -80,7 +80,7 @@ El programa lo crea Cloud Manager y aparece y se puede seleccionar en la página
 
    ![Información general del programa](assets/set-up-prod5.png)
 
-Si en cualquier momento necesita cambiar a otro programa o volver a la página de información general para crear otro programa, haga clic en el nombre del programa en la parte superior izquierda de la pantalla para mostrar la opción **Vaya a**.
+Si en cualquier momento necesita cambiar a otro programa o volver a la página de información general para crear otro programa, haga clic en el nombre del programa en la parte superior izquierda de la pantalla para mostrar el **Vaya a** opción.
 
 ![Vaya a](assets/create-program-a1.png)
 

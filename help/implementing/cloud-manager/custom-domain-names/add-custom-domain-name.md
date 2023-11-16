@@ -2,10 +2,10 @@
 title: Agregar un nombre de dominio personalizado
 description: Obtenga información sobre cómo agregar un nombre de dominio personalizado mediante Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 87%
+source-wordcount: '632'
+ht-degree: 83%
 
 ---
 
@@ -30,11 +30,11 @@ Siga estos pasos para agregar un nombre de dominio personalizado desde la págin
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Haga clic en **Configuración de dominio** en el panel de navegación izquierdo.
+1. Clic **Configuración de dominio** en el panel de navegación izquierdo.
 
    ![La ventana Configuración de dominio](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. Haga clic en el botón **Agregar dominio** en la parte superior derecha para abrir el cuadro de diálogo **Agregar nombre de dominio**.
+1. Haga clic en **Añadir dominio** en la parte superior derecha para abrir el **Agregar nombre de dominio** diálogo.
 
    ![Cuadro de diálogo Agregar dominio](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -82,7 +82,7 @@ Siga estos pasos para agregar un nombre de dominio personalizado desde la págin
 
    1. Introduzca el nombre de dominio personalizado.
    1. Seleccione el certificado SSL asociado a este nombre en la lista desplegable.
-   1. Haga clic en **+Agregar**.
+   1. Clic **+Agregar**.
 
    ![Añadir nombre de dominio personalizado](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 

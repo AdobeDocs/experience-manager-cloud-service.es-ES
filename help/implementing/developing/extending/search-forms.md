@@ -2,9 +2,9 @@
 title: Configurar formularios de búsqueda
 description: Configuración de Search Forms para Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2035'
 ht-degree: 17%
 
 ---
@@ -292,7 +292,7 @@ Los siguientes predicados están disponibles, según la configuración:
     </ul> </td>
   </tr>
   <tr>
-   <td>Ruta </td>
+   <td>Ruta</td>
    <td>Filtre según una ruta específica. Puede especificar varias rutas como opciones.</td>
    <td>
     <ul>
@@ -575,7 +575,7 @@ Puede añadir o editar campos y definir o actualizar su configuración:
 
    * Va a añadir un nuevo campo:
 
-     Después de agregar el predicado, **Configuración** se abrirá y mostrará las propiedades que se pueden definir.
+     Después de agregar el predicado, la variable **Configuración** se abre la pestaña y muestra las propiedades que se pueden definir.
 
    * Desea actualizar un predicado existente:
 
@@ -634,7 +634,7 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
 1. Cree el nodo que define la propiedad en la que se va a buscar.
 
-   Necesitará un nodo raíz que contenga definiciones de las opciones individuales que deben estar disponibles para el usuario.
+   Necesita un nodo raíz que contenga definiciones de las opciones individuales que deben estar disponibles para el usuario.
 
    Los nodos de las opciones individuales necesitan las propiedades:
 

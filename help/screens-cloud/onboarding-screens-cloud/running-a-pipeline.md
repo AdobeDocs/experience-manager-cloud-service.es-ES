@@ -2,7 +2,7 @@
 title: Ejecución de una canalización
 description: En esta página se describe la ejecución de una canalización para el proyecto Screens as a Cloud Service en Cloud Manager.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 3%
@@ -52,7 +52,7 @@ En la siguiente sección se describe cómo configurar la canalización de CI/CD 
 
    ![imagen](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. Una vez completado el proceso de generación, verá un vínculo de autor desde el **Entornos** Tarjeta del servidor de Cloud Manager **Información general** página.
+1. Una vez completado el proceso de compilación, puede ver un vínculo de autor desde el **Entornos** Tarjeta del servidor de Cloud Manager **Información general** página.
 
    ![imagen](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 

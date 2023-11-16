@@ -2,16 +2,16 @@
 title: Terminología de AEM as a Cloud Service
 description: Antes de iniciar sesión en AEMaaCS, es útil conocer parte de la terminología del sistema y su estructura básica.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 87%
 
 ---
 
 # Terminología de AEM as a Cloud Service {#terminology}
 
-En esta parte del [recorrido de incorporación,](overview.md) aprenderá parte de la terminología de AEM as a Cloud Service y su estructura básica.
+En esta parte del [recorrido de incorporación,](overview.md) AEM se aprende parte de la terminología de la as a Cloud Service y su estructura básica.
 
 ## Objetivo {#objective}
 
@@ -53,4 +53,4 @@ Ahora que ha completado esta parte del recorrido de incorporación de AEM, deber
 * Las diferentes capas que componen AEMaaCS.
 * Conceptos básicos de lo que hace cada capa.
 
-Aproveche este conocimiento y continúe con su recorrido de incorporación de AEM al leer el documento [Acceso a Admin Console](admin-console.md), donde aprenderá a acceder a la consola y a verificar su estado como administrador del sistema.
+AEM Aproveche este conocimiento y continúe con su recorrido de incorporación de la leyendo el documento a continuación [Acceso al Admin Console](admin-console.md), donde aprenderá a acceder a la consola y a verificar su estado como administrador del sistema.

@@ -2,10 +2,10 @@
 title: Pruebas de IU
 description: La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones personalizadas
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2389'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2385'
+ht-degree: 99%
 
 ---
 
@@ -183,7 +183,7 @@ Para incluir un archivo `testing.properties` en el artefacto de generación, agr
 
 >[!NOTE]
 >
->Si el proyecto no incluye esta línea, deberá editar el archivo para optar por la prueba de IU.
+>Si el proyecto no incluye esta línea, edite el archivo para optar por la prueba de IU.
 >
 >El archivo puede contener una línea que aconseje no editarlo. Esto se debe a que se introdujo en el proyecto antes de que se introdujera la prueba de IU de inclusión y los clientes no tenían la intención de editar el archivo. Se puede ignorar con seguridad.
 

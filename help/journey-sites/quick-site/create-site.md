@@ -2,10 +2,10 @@
 title: Creación de un sitio a partir de una plantilla
 description: Obtenga información sobre cómo crear rápidamente un nuevo sitio de AEM con una plantilla de sitio.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1506'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1504'
+ht-degree: 98%
 
 ---
 
@@ -75,13 +75,13 @@ Usar una plantilla para crear un nuevo sitio es muy sencillo.
 
    ![Creación de un nuevo sitio a partir de una plantilla](assets/create-site-from-template.png)
 
-1. En el asistente Crear sitio, pulse o haga clic en **Importar** en la parte superior de la columna izquierda.
+1. En el asistente Crear sitio, toque o haga clic en **Importar** en la parte superior de la columna izquierda.
 
    ![Asistente de creación de sitios](assets/site-creation-wizard.png)
 
 1. En el explorador de archivos, busque la plantilla [que descargó previamente](#obtaining-template) y pulse o haga clic en **Cargar**.
 
-1. Una vez cargada, aparece en la lista de plantillas disponibles. Pulse o haga clic en ella para seleccionarla (lo que también muestra información acerca de la plantilla en la columna derecha) y luego en **Siguiente**.
+1. Una vez cargada, aparece en la lista de plantillas disponibles. Pulse o haga clic para seleccionarla (lo que también muestra información sobre la plantilla en la columna derecha) y, a continuación, pulse o haga clic en **Siguiente**.
 
    ![Seleccionar una plantilla](assets/select-site-template.png)
 

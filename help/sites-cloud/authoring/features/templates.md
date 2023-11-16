@@ -2,9 +2,9 @@
 title: Creación de plantillas de página
 description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no son tareas exclusivas de los desarrolladores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '4570'
+source-wordcount: '4567'
 ht-degree: 97%
 
 ---
@@ -607,7 +607,7 @@ Con las propiedades de página, puede definir las bibliotecas del cliente necesa
 
 >[!NOTE]
 >
->Si bien el autor de una plantilla puede especificar la política de página de la plantilla, deberá obtener información del desarrollador sobre las bibliotecas del cliente apropiadas.
+>Aunque el autor de la plantilla puede especificar la política de página de la plantilla, debe obtener detalles del desarrollador de las bibliotecas del lado del cliente adecuadas.
 
 ### Edición de una plantilla: propiedades de la página inicial, autor {#editing-a-template-initial-page-properties-author}
 

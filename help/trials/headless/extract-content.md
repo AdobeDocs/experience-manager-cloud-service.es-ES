@@ -4,10 +4,10 @@ description: Aprenda a utilizar los fragmentos de contenido y la API de GraphQL 
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 98%
+source-wordcount: '1076'
+ht-degree: 93%
 
 ---
 
@@ -163,7 +163,7 @@ Puede crear una consulta persistente que incluya los datos que desee consumir de
 
    >[!NOTE]
    >
-   >Si no ha utilizado las mismas descripciones de campo que se describen en los módulos anteriores, deberá actualizar los nombres de campo en esta consulta.
+   >Si no ha utilizado las mismas descripciones de campo que se describen en los módulos anteriores, actualice los nombres de campo en esta consulta.
    >
    >Utilice la función de autocompletado de GraphQL (Ctrl+Espacio u Opción+Espacio) como se describió anteriormente para ayudar a identificar las propiedades disponibles.
 
@@ -183,7 +183,7 @@ Puede crear una consulta persistente que incluya los datos que desee consumir de
 
 1. La consulta se mantiene tal y como se confirma con un mensaje de banner en la parte inferior de la pantalla. La consulta ahora aparece en el panel izquierdo de consultas persistentes de la ventana.
 
-1. Para que la consulta persistente esté disponible públicamente, deberá publicarse, de forma muy parecida a cómo deben publicarse los Fragmentos de contenido. Haga clic en el botón de **Publicación** en la parte superior derecha del editor de consultas para publicar la consulta.
+1. Para que la consulta persistente esté disponible públicamente, debe publicarse, de forma muy similar a como se deben publicar los fragmentos de contenido. Clic **Publish** en la parte superior derecha del editor de consultas para publicar la consulta.
 
 1. La publicación se confirma mediante una notificación de banner.
 

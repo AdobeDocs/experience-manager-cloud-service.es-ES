@@ -2,10 +2,10 @@
 title: Entornos de zona protegida en hibernación y dehibernación
 description: Descubra cómo los entornos de un programa de zona protegida entran automáticamente en modo de hibernación y cómo puede anularlo.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '685'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ Siga estos pasos para hibernar manualmente los entornos de programa de zona prot
 
    ![Confirmar hibernación](assets/hibernate-2.png)
 
-Cuando la hibernación se realice correctamente, verá la notificación de finalización del proceso de hibernación para su entorno en la pantalla **Developer Console**.
+Cuando la hibernación se realice correctamente, verá la notificación de finalización del proceso de hibernación para su entorno en el **Developer Console** pantalla.
 
 ![Confirmación de hibernación](assets/hibernate-4.png)
 
@@ -71,7 +71,7 @@ Puede hibernar manualmente el programa de zona protegida desde Developer Console
 
    * Consulte [Acceso a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obtener más información sobre Developer Console.
 
-1. Haga clic en **Deshibernar**.
+1. Clic **Anular la hibernación**.
 
    ![Botón Deshibernar](assets/de-hibernation-img1.png)
 

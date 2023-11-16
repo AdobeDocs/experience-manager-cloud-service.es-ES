@@ -2,9 +2,9 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Obtenga información sobre cómo empezar a utilizar la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1427'
 ht-degree: 21%
 
 ---
@@ -34,7 +34,7 @@ Solo se admite la versión 2.0.0 y posteriores, y es aconsejable utilizar la ver
 >
 >También puede producirse un error de conexión si se ha eliminado un conjunto de migración de Cloud Acceleration Manager.
 
-AEM La instancia de origen puede estar ejecutándose detrás de un cortafuegos donde solo puede llegar a ciertos hosts que se han añadido a una Lista de permitidos. AEM Para ejecutar correctamente una extracción, será necesario poder acceder a los siguientes extremos desde la instancia que se está ejecutando:
+AEM La instancia de origen puede estar ejecutándose detrás de un cortafuegos donde solo puede llegar a ciertos hosts que se han añadido a una Lista de permitidos. AEM Para ejecutar correctamente una extracción, es necesario poder acceder a los siguientes puntos finales desde la instancia que se está ejecutando
 
 * El servicio Azure Blob Storage: `casstorageprod.blob.core.windows.net`
 
@@ -98,7 +98,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
    >
    >AEM El nombre debe seguir las mismas convenciones de un nodo de, por lo que no puede contener ninguno de estos caracteres: . / : [ ] | *
 
-1. Ahora debería ver la lista de migración en la vista de lista. Haga clic en el símbolo de tres puntos (**...**) para abrir el menú desplegable y hacer clic en **Copiar clave de extracción**. Necesitará esta clave durante la fase de extracción. Copie esta clave de extracción.
+1. Ahora debería ver la lista de migración en la vista de lista. Seleccione el símbolo de tres puntos (**...**) para abrir la lista desplegable y seleccionar **Copiar clave de extracción**. Necesita esta clave durante la fase de extracción. Copie esta clave de extracción.
 
    >[!NOTE]
    >
@@ -118,7 +118,7 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
 
 1. Después de instalar la versión más reciente de la herramienta de transferencia de contenido en la instancia de Adobe Experience Manager de origen, vaya a **Operaciones: migración de contenido**
 
-1. Haga clic en **Crear conjunto de migración**
+1. Clic **Crear conjunto de migración**
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -149,7 +149,7 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
       >* `/home`
       >* `/etc` (algunos `/etc` se permite seleccionar las rutas en CTT)
 
-1. Haga clic en **Guardar** después de rellenar todos los campos en la variable **Crear conjunto de migración** pantalla de detalles.
+1. Clic **Guardar** después de rellenar todos los campos en la variable **Crear conjunto de migración** pantalla de detalles.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
@@ -161,7 +161,7 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
    * A *green cloud* indicates that you can complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
+1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 
@@ -179,11 +179,11 @@ Siga los pasos a continuación para ejecutar una comprobación de tamaño:
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Esto abrirá el **Comprobar tamaño** diálogo.
+1. Esto abre el **Comprobar tamaño** diálogo.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Haga clic en **Comprobar tamaño** para iniciar el proceso. Volverá a la vista de lista del conjunto de migración y verá un mensaje que indica que **Comprobar tamaño** se está ejecutando.
+1. Clic **Comprobar tamaño** para iniciar el proceso. Volverá a la vista de lista del conjunto de migración y verá un mensaje que indica que **Comprobar tamaño** se está ejecutando.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 

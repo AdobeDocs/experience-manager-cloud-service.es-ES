@@ -3,9 +3,9 @@ title: Notas de la versión 2023.11.0 para Cloud Manager en Adobe Experience Man
 description: Estas son las notas de la versión 2023.11.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4e2ea040ec14515525424b42f524601d34786cb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '745'
 ht-degree: 13%
 
 ---

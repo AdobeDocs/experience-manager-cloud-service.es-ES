@@ -2,10 +2,10 @@
 title: Crear y organizar páginas
 description: AEM Aprenda a organizar el sitio web creando y administrando páginas con la ayuda de los usuarios de la página de inicio de sesión de.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 98%
+source-wordcount: '2449'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ En este documento se describe cómo crear y administrar páginas con Adobe Exper
 
 ## Organizar el sitio web {#organizing-your-website}
 
-Como creador, deberá organizar el sitio web dentro de AEM. Esto implica crear y asignar un nombre a las páginas de contenido para que:
+AEM Como creador, debe organizar el sitio web dentro de las páginas de la página de inicio de la página de. Esto implica crear y asignar un nombre a las páginas de contenido para que:
 
 * Pueda encontrarlas con facilidad en el entorno de creación
 * Los usuarios que visiten el sitio web puedan explorarlas fácilmente en el entorno de publicación
@@ -222,7 +222,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
    >
    >Si crea una página con un nombre que ya existe en la ubicación, el sistema generará automáticamente una variación del nombre añadiéndole un número. Por ejemplo, si `beach` ya existe, la página nueva pasará a llamarse `beach1`.
 
-1. Al volver a la consola, podrá ver la nueva página:
+1. Si vuelve a la consola, podrá ver su nueva página:
 
    ![Nueva página resultante](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
 

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '929'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Todos los recursos digitales, metadatos y contenido de los documentos de Microsoft® Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta completamente los permisos adecuados. Los metadatos se tratan en detalle en Metadatos en la administración de recursos digitales.
@@ -87,7 +87,7 @@ A continuación se indican los pasos para agregar etiquetas a un recurso:
 
 1. Iniciar sesión en [!DNL Experience Manager Assets].
 1. Clic **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**, seleccione el recurso y haga clic en **[!UICONTROL Propiedades]** para abrir las propiedades del recurso.
-1. En el **[!UICONTROL Básico]** pestaña, haga clic en el icono de la carpeta en **[!UICONTROL Etiquetas]** metadatos. Se abre una ventana emergente.
+1. En el **[!UICONTROL Básico]** pestaña, haga clic en el icono de carpeta en **[!UICONTROL Etiquetas]** metadatos. Se abre una ventana emergente.
 1. Busque o seleccione las etiquetas adecuadas de las etiquetas existentes en `cq-tags`. Puede asignar varias etiquetas al recurso.
 
    Puede ordenar la estructura de las etiquetas en orden de subida o de bajada, según el **[!UICONTROL Nombre]** (orden alfabético), **[!UICONTROL Creado]** fecha, o **[!UICONTROL Modificado]** fecha. En la siguiente ilustración, la estructura de etiquetas se ordena alfabéticamente en función de la variable **[!UICONTROL Nombre]**.
@@ -113,7 +113,7 @@ Para obtener más información, consulte [administrar colecciones](manage-collec
 
 Un perfil de procesamiento contiene [!DNL Assets] comandos de procesamiento que se aplican a los recursos que se cargan en carpetas predefinidas. Los perfiles se utilizan para automatizar el procesamiento del contenido de una carpeta o de los recursos recién cargados. Puede utilizar perfiles para organizar mejor los recursos.
 
-La estandarización del uso de metadatos, los nombres de archivo y la estructura de carpetas garantiza que, a medida que el grupo de recursos digitales crezca, pueda aplicar perfiles de procesamiento a las carpetas con la buena precisión y coherencia.
+La estandarización del uso de metadatos, los nombres de archivo y la estructura de carpetas garantiza que, a medida que el grupo de recursos digitales crezca, pueda aplicar perfiles de procesamiento a las carpetas con mayor precisión y coherencia.
 
 **Consulte también**
 

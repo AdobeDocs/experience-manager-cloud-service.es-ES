@@ -2,9 +2,9 @@
 title: Notas de la versión 2023.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1441'
 ht-degree: 20%
 
 ---
@@ -115,7 +115,7 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
 ### Nuevo comportamiento de almacenamiento en caché de CDN para parámetros de URL relacionados con campañas {#cache-url-params}
 
-Para los nuevos entornos, la CDN eliminará los parámetros de consulta relacionados con el marketing de forma predeterminada para aumentar el rendimiento de la campaña de marketing y las relaciones de visitas de la caché. Los entornos existentes no se ven afectados. [Más información.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+Para los nuevos entornos, la CDN eliminará los parámetros de consulta relacionados con el marketing de forma predeterminada para aumentar el rendimiento de la campaña de marketing y las proporciones de visitas de la caché. Los entornos existentes no se ven afectados. [Más información.](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
 ### Programa de adopción anticipada de Reglas de filtro de tráfico (incluidas las Reglas WAF) {#waf-early-adopter}
 

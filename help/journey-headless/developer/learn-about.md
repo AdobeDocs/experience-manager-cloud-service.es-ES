@@ -2,10 +2,10 @@
 title: Obtenga más información acerca del desarrollo de CMS sin encabezado
 description: En esta parte del recorrido para desarrolladores de contenido sin encabezado de AEM, aprenda acerca de la tecnología sin encabezado y por qué la utilizaría.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 98%
+source-wordcount: '1636'
+ht-degree: 93%
 
 ---
 
@@ -106,7 +106,7 @@ Es imposible predecir el futuro, pero el contenido sin encabezado le da la agili
 
 ## AEM y el contenido sin encabezado {#aem-and-headless}
 
-A medida que continúe con este recorrido para desarrolladores, aprenderá cómo AEM admite la entrega de contenido sin encabezado junto con sus funciones de entrega de pila completa.
+A medida que continúa con este recorrido AEM para desarrolladores, aprenderá cómo admite la entrega sin encabezado junto con sus funcionalidades de entrega de pila completa.
 
 Como líder del sector en la administración de experiencias digitales, Adobe se da cuenta de que la solución ideal a los desafíos del mundo real que enfrentan los creadores de experiencias rara vez es una opción binaria. Por este motivo, AEM no solo admite ambos modelos, sino que también permite de forma exclusiva la combinación híbrida continua de los dos, fusionando las ventajas del contenido sin encabezado y de pila completa, para ayudarle a servir mejor a los consumidores de su contenido, independientemente del lugar en que se encuentren.
 
@@ -120,7 +120,7 @@ Gracias por empezar con el recorrido de contenido sin encabezado de AEM Ahora qu
 * Comprenda por qué y cuándo es necesario el contenido sin encabezado.
 * Conocer en un nivel superior cómo se utilizan los conceptos del contenido sin encabezado y cómo se interrelacionan.
 
-Aproveche este conocimiento y continúe su recorrido de contenido sin encabezado de AEM al revisar el documento [Introducción a AEM Headless as a Cloud Service](getting-started.md) donde aprenderá a configurar las herramientas necesarias y a empezar a pensar en cómo AEM aborda la entrega de contenido sin encabezado y sus requisitos previos.
+AEM Aproveche este conocimiento y continúe con su recorrido sin encabezado de la revisando el documento a continuación [AEM Introducción a la as a Cloud Service sin encabezado de](getting-started.md) AEM aquí aprenderá a configurar las herramientas necesarias y a pensar en cómo aborda la entrega de contenido sin encabezado y sus requisitos previos, de manera más sencilla y eficaz.
 
 ## Recursos adicionales {#additional-resources}
 

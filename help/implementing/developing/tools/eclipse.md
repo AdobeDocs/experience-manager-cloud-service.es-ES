@@ -2,9 +2,9 @@
 title: Herramientas para desarrolladores de AEM para Eclipse
 description: AEM Aprenda a utilizar las herramientas para desarrolladores de Eclipse, un complemento de Eclipse basado en el complemento de Eclipse para Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1192'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ AEM Antes de usar las herramientas para desarrolladores de, debe hacer lo siguie
 
 >[!NOTE]
 >
->En macOS, debe hacer clic con el botón derecho en **Eclipse.app**, y luego seleccione **Mostrar contenido del paquete** para encontrar su `eclipse.ini`**.**
+>En macOS, debe hacer clic con el botón derecho **Eclipse.app**, y luego seleccione **Mostrar contenido del paquete** para encontrar su `eclipse.ini`**.**
 
 ## AEM Cómo instalar las herramientas para desarrolladores de para Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -134,14 +134,14 @@ Puede usar el complemento **Nuevo proyecto** para crear la estructura adecuada p
    1. En el panel Explorador de proyectos, despliegue `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
    1. Haga clic con el botón derecho en `apps` y elija **Mostrar en** > **Explorador del sistema**.
    1. Elimine el `apps` y `etc` carpetas que debería ver ahora y coloque aquí el `apps` y `etc` carpetas del paquete de contenido.
-   1. En Eclipse, haga clic con el botón secundario en el `PROJECT.ui.apps` proyecto y elija **Actualizar**.
+   1. En Eclipse, haga clic con el botón secundario en `PROJECT.ui.apps` proyecto y elija **Actualizar**.
 
 1. A continuación, haga lo mismo para el `PROJECT.ui.content` y reemplace su carpeta de contenido por la de sus paquetes:
 
    1. En el panel Explorador de proyectos, despliegue `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
    1. Haga clic con el botón derecho en la carpeta de contenido más profunda y elija **Mostrar en** -> **Explorador del sistema**.
    1. Elimine la carpeta de contenido que debería ver ahora y coloque aquí la carpeta de contenido de su paquete de contenido.
-   1. En Eclipse, haga clic con el botón secundario en el `PROJECT.ui.content` proyecto y elija **Actualizar**.
+   1. En Eclipse, haga clic con el botón secundario en `PROJECT.ui.content` proyecto y elija **Actualizar**.
 
 1. Ahora tiene que actualizar el `filter.xml` archivos de estos dos proyectos para que se correspondan con el contenido del paquete de contenido. Para ello, abra el `META-INF/vault/filter.xml` del paquete de contenido en un editor de texto/código independiente.
 

@@ -2,10 +2,10 @@
 title: Creación y administración de ofertas (consola Ofertas)
 description: Utilice la consola Ofertas para crear ofertas que se pueden usar en las experiencias de actividad
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ Agregue etiquetas, si es necesario.
 
 1. Confirme con **Listo**.
 
-   Si ahora va a la consola **Ofertas de Fragmento de experiencia**, verá su nuevo fragmento de experiencia, junto con sus variaciones asociadas.
+   Si ahora va a la **Ofertas de fragmentos de experiencias** , puede ver el nuevo fragmento de experiencia, junto con sus variaciones asociadas.
 
 ### Segmentación con la plantilla de ofertas {#targeting-offers-template}
 

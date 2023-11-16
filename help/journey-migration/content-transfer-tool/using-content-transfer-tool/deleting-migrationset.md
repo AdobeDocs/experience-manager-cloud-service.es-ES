@@ -2,9 +2,9 @@
 title: Eliminación de un conjunto de migración en la herramienta de transferencia de contenido
 description: Obtenga información sobre cómo eliminar un conjunto de migraciones en la herramienta de transferencia de contenido.
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '232'
 ht-degree: 8%
 
 ---
@@ -26,7 +26,7 @@ Para eliminar un conjunto de migración, siga los pasos a continuación:
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. Cuando haga clic en **Eliminar** verá un cuadro de diálogo para confirmar la acción de eliminación.
+1. Al hacer clic en **Eliminar** verá un cuadro de diálogo para confirmar la acción de eliminación.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
 

@@ -3,9 +3,9 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: AEM Obtenga información acerca de los conceptos básicos del almacenamiento en caché en as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2874'
 ht-degree: 2%
 
 ---
@@ -277,7 +277,7 @@ Los enfoques difieren en términos de disponibilidad de niveles, la capacidad de
   <tr>
     <th>N/D</th>
     <th>Disponibilidad de nivel</th>
-    <th>Deduplicación </th>
+    <th>Anulación de duplicación </th>
     <th>Garantía </th>
     <th>Acción </th>
     <th>Impacto </th>

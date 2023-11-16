@@ -2,10 +2,10 @@
 title: Guía rápida de introducción para la creación de páginas
 description: Guía rápida y de alto nivel para empezar a crear contenido de página.
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 98%
+source-wordcount: '1561'
+ht-degree: 90%
 
 ---
 
@@ -93,11 +93,11 @@ La forma de seleccionar una página depende de la vista que utilice en la consol
 
 1. Vista de columna:
 
-   * Haga clic o toque en la miniatura del recurso en cuestión: la vista en miniatura muestra una marca de verificación para indicar que se ha seleccionado.
+   * Pulse o haga clic en la miniatura del recurso en cuestión: la miniatura muestra una marca de verificación para mostrar que se ha seleccionado.
 
 1. Vista en lista:
 
-   * Haga clic o toque en la miniatura del recurso en cuestión: la vista en miniatura muestra una marca de verificación para indicar que se ha seleccionado.
+   * Pulse o haga clic en la miniatura del recurso en cuestión: la miniatura muestra una marca de verificación para mostrar que se ha seleccionado.
 
 1. Vista de tarjeta:
 
@@ -168,7 +168,7 @@ Para editar la página:
 
    >[!NOTE]
    >
-   >Puede **pegar** componentes en la misma página o en otra página. Si pega el componente en una página diferente que ya estaba abierta antes de la operación de cortar o copiar, tendrá que actualizase la página. 
+   >Puede **pegar** componentes en la misma página o en otra página. Si pega el componente en una página diferente que ya estaba abierta antes de la operación de cortar o copiar, necesitará actualizar la página.
 
    * [Eliminar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un componente:
 
@@ -258,7 +258,7 @@ Todas estas acciones pueden activarse del siguiente modo:
 
    * [Mover](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
-      * Se abrirá el asistente para recoger la información necesaria para mover la página. Siga las instrucciones que aparecen en la pantalla.
+      * El asistente se abre para recopilar la información necesaria para mover la página. Siga las instrucciones que aparecen en pantalla.
 
    * [Eliminar](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
@@ -302,7 +302,7 @@ Para crear una [versión](/help/sites-cloud/authoring/features/page-versions.md)
 
    ![Opción de vista Cronología](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Haga clic o pulse en los puntos suspensivos, en la parte inferior derecha de la columna Cronología, para mostrar botones adicionales; como, por ejemplo, **Guardar como versión**.
+1. Pulse o haga clic en los puntos suspensivos en la parte inferior derecha de la columna Cronología para mostrar botones adicionales, como **Guardar como versión**.
 
    ![Vista Cronología](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan vers
 
    Si ya se ha guardado una versión de su página, se indica en la cronología.
 
-1. Pulse o haga clic en la versión que desea restaurar. Esto mostrará botones de acción adicionales:
+1. Pulse o haga clic en la versión que desee restaurar. Esto mostrará botones de acción adicionales:
 
    * **Volver a esta versión**
 

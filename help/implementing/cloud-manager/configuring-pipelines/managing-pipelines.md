@@ -3,10 +3,10 @@ title: Administración de canalizaciones
 description: Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 01a89f779689733fb82a556291e091026def63e0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 59%
+source-wordcount: '952'
+ht-degree: 46%
 
 ---
 
@@ -71,7 +71,7 @@ Toque o haga clic **Ver detalles** le llevará a la [detalles de la ejecución d
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Navegue hasta la tarjeta **Canalizaciones** de la página **Información general del programa** y haga clic en el botón de los tres puntos situado junto a la canalización que ejecute, seleccione **Ejecutar** del menú.
+1. Vaya a **Canalizaciones** de la tarjeta de **Resumen del programa** y haga clic en el botón de los tres puntos situado junto a la canalización que ejecute, seleccione **Ejecutar** en el menú.
 
 1. La ejecución de la canalización comienza y se indica con la columna **Estado**.
 
@@ -83,7 +83,7 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Navegue hasta la tarjeta **Canalizaciones** de la página **Información general del programa**, haga clic en el botón de los tres puntos situado junto a la canalización que desee editar y, a continuación, seleccione **Editar** del menú.
+1. Vaya a **Canalizaciones** de la tarjeta de **Resumen del programa** y haga clic en el botón de los tres puntos situado junto a la canalización que desee editar y, a continuación, seleccione **Editar** en el menú.
 
 1. El cuadro de diálogo **Editar canalización de producción** o **Editar canalización que no sea de producción** se mostrará y le permitirá editar los mismos detalles introducidos al crear la canalización.
 
@@ -91,7 +91,7 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
       * [Configurar canalizaciones de producción](configuring-production-pipelines.md)
       * [Configurar canalizaciones que no sean de producción](configuring-non-production-pipelines.md)
 
-1. Haga clic en **Actualizar** cuando haya terminado de editar la canalización.
+1. Clic **Actualizar** una vez que haya terminado de editar la canalización.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Navegue hasta la tarjeta **Canalizaciones** de la página **Información general del programa** y haga clic en el botón de los tres puntos situado junto a la canalización que ejecute, seleccione **Eliminar** del menú.
+1. Vaya a **Canalizaciones** de la tarjeta de **Resumen del programa** y haga clic en el botón de los tres puntos situado junto a la canalización que ejecute, seleccione **Eliminar** en el menú.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Puede ver los detalles de una canalización para ver el estado y los registros d
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Navegue hasta la tarjeta **Canalizaciones** de la página **Información general del programa** y haga clic en el botón de los tres puntos situado junto a la canalización que ejecute, seleccione **Ver detalles** del menú.
+1. Vaya a **Canalizaciones** de la tarjeta de **Resumen del programa** y haga clic en el botón de los tres puntos situado junto a la canalización que ejecute, seleccione **Ver detalles** en el menú.
 
 1. Se le redirigirá a la página de detalles de la canalización en ejecución.
 

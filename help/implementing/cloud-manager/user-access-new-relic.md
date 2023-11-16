@@ -2,10 +2,10 @@
 title: New Relic One
 description: Obtenga información sobre el servicio de supervisión del rendimiento de la aplicación (APM) de New Relic One para AEM as a Cloud Service y cómo puede acceder a él.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 6ba6dddd8f949e55a0575bd373c0b87dc2d7f2b5
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 91%
+source-wordcount: '1730'
+ht-degree: 90%
 
 ---
 
@@ -44,7 +44,7 @@ Siga los siguientes pasos para definir los usuarios de la cuenta secundaria de N
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. Haga clic en el programa para el cual desea administrar sus usuarios de New Relic One.
+1. Haga clic en el programa para el que desee administrar los usuarios de New Relic One.
 
 1. En la parte inferior de la tarjeta **Entornos**, en la página Información general del programa, haga clic en el botón de los tres puntos y seleccione **Administrar usuarios**.
 

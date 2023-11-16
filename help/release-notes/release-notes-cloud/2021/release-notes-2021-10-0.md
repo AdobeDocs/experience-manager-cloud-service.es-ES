@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.10.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2021.10.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2021.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2021.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 71%
+source-wordcount: '1436'
+ht-degree: 73%
 
 ---
 
@@ -77,13 +77,13 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 ### Novedades {#what-is-new-cif}
 
-* El complemento CIF es compatible con la versión 2.4.3 más reciente de Commerce con nuevas API y esquemas de GraphQL
+* CIF El complemento es compatible con la versión 2.4.3 más reciente de Commerce con nuevas API y esquemas de GraphQL
 
-* Los autores pueden añadir vínculos a páginas de productos y catálogos en campos de texto mediante el editor de texto enriquecido (RTE). Se ha añadido un icono de CIF a la barra de herramientas de RTE que abrirá los selectores para buscar y seleccionar rápidamente el producto o la categoría sin salir del contexto.
+* Los autores pueden añadir vínculos a páginas de productos y catálogos en campos de texto mediante el editor de texto enriquecido (RTE). CIF Se ha añadido un icono de a la barra de herramientas de RTE que abre los selectores para buscar y seleccionar rápidamente el producto o la categoría sin salir del contexto.
 
 * AEM El carro de compras emergente y el cierre de compra existentes se han sustituido por páginas dedicadas al carro de compras y al cierre de compra de la. Los componentes de estas páginas se crean utilizando los componentes Peregrine ampliables de Adobe Commerce
 
-* Los comerciantes pueden ocultar determinadas categorías del catálogo de productos en la navegación mediante el backend de Commerce. El componente principal de navegación del CIF respeta la configuración del backend de comercio &quot;incluir en el menú&quot; para mostrar u ocultar categorías en la navegación
+* Los comerciantes pueden ocultar determinadas categorías del catálogo de productos en la navegación mediante el backend de Commerce. CIF El componente principal Navegación de la aplicación respeta la configuración del backend de comercio &quot;incluir en el menú&quot; para mostrar u ocultar categorías en la navegación
 
 * AEM Venia devuelve el error HTTP 404 si no se encuentra la categoría o la página del producto
 
@@ -98,10 +98,10 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 
 ### Novedades {#what-is-new-cm-nov}
 
-* Los usuarios ahora pueden utilizar nuevas canalizaciones front-end para implementar exclusivamente el código front-end de forma acelerada. Consulte [Canalizaciones principales de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para obtener más información.
+* Los usuarios ahora pueden aprovechar las nuevas canalizaciones de front-end para implementar exclusivamente el código front-end de forma acelerada. Consulte [Canalizaciones principales de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para obtener más información.
 
   >[!IMPORTANT]
-  >AEM Debe estar en la versión de la `2021.10.5933.20211012T154732Z` para utilizar nuevas canalizaciones front-end.
+  >Debe estar en la versión AEM `2021.10.5933.20211012T154732Z` para utilizar las nuevas canalizaciones de Front End.
 
 * La duración de la canalización Calidad del código se reduce significativamente al realizar el análisis del código de una manera más eficiente sin necesidad de crear una imagen de AEM completa. Este cambio se implementará progresivamente durante las semanas siguientes a la publicación.
 

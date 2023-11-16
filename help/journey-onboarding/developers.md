@@ -4,17 +4,17 @@ description: Una vez que el administrador del sistema haya configurado los recur
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 95%
+source-wordcount: '1411'
+ht-degree: 90%
 
 ---
 
 
 # Tareas del desarrollador y del administrador de implementación {#developer-deployment-manager}
 
-En esta parte opcional del [recorrido de incorporación,](overview.md) aprenderá cómo los desarrolladores y los administradores de implementación pueden acceder a Git para desarrollar aplicaciones y utilizar canalizaciones para implementarlas.
+En esta parte opcional de [recorrido de incorporación,](overview.md) aprenderá cómo los desarrolladores y los administradores de implementación pueden acceder a git para desarrollar aplicaciones y utilizar canalizaciones para implementarlas.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -64,7 +64,7 @@ Puede acceder a sus repositorios de Git y administrarlos mediante la administrac
 
    ![Botón Acceder a la info del repositorio en la tarjeta Entornos](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Haga clic en el botón **Ver información de repositorios** para abrir un cuadro de diálogo para ver:
+1. Haga clic en **Ver información del repositorio** para abrir un cuadro de diálogo para ver:
 
    * La dirección URL del repositorio de Git de Cloud Manager.
    * El nombre de usuario de Git.
@@ -82,7 +82,7 @@ Siga estos pasos para crear la primera canalización de implementación que no s
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Acceda a la tarjeta **Canalizaciones** de la pantalla de inicio de Cloud Manager. Haga clic en **+Agregar** y seleccione **Agregar canalización que no sea de producción**.
+1. Acceda a la tarjeta **Canalizaciones** de la pantalla de inicio de Cloud Manager. Haga clic en **+Agregar** y seleccione **Añadir canalización que no es de producción**.
 
    ![Agregar canalización que no sea de producción](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
@@ -119,7 +119,7 @@ Ahora que los desarrolladores han agregado su código personalizado a los reposi
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Navegue hasta la tarjeta **Canalizaciones** de la página **Información general del programa**, haga clic en el botón de los tres puntos situado junto a la canalización que ha creado en la sección anterior y seleccione **Ejecutar** del menú.
+1. Vaya a **Canalizaciones** de la tarjeta de **Resumen del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que ha creado en la sección anterior y seleccione **Ejecutar** en el menú.
 
 1. La ejecución de la canalización comienza y se indica con la columna **Estado**.
 

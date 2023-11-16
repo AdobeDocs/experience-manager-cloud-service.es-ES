@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1163'
+ht-degree: 97%
 
 ---
 
@@ -133,7 +133,7 @@ Ahora que ha completado esta parte del recorrido de traducción de AEM Sites, de
 * Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.
 
-Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento [Configurar las reglas de traducción,](translation-rules.md) donde aprenderá a definir qué contenido traducir.
+Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento a continuación [Configuración de reglas de traducción,](translation-rules.md) donde aprenderá a definir qué contenido traducir.
 
 ## Recursos adicionales {#additional-resources}
 

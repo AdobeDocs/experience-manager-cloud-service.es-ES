@@ -2,10 +2,10 @@
 title: Configuración de la segmentación con ContextHub
 description: Obtenga información sobre cómo configurar la segmentación mediante ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 98%
+source-wordcount: '1682'
+ht-degree: 95%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 La segmentación es una consideración clave al crear una campaña. Consulte [Información acerca de la segmentación](segmentation.md) para obtener información sobre cómo funciona la segmentación y los términos clave.
 
-En función de la información que ya haya recopilado acerca de los visitantes del sitio y los objetivos que quiera lograr, deberá definir los segmentos y las estrategias necesarios para el contenido de destino.
+En función de la información que ya haya recopilado acerca de los visitantes del sitio y los objetivos que desee lograr, defina los segmentos y las estrategias necesarios para el contenido de destino.
 
 Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Las [Actividades](activities.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 

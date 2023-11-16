@@ -1,13 +1,13 @@
 ---
 title: Personalización de consolas
 description: AEM Obtenga información acerca de las distintas opciones que proporciona para personalizar las consolas de la instancia de creación.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
-
 
 # Personalización de consolas {#customizing-consoles}
 

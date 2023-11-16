@@ -2,10 +2,10 @@
 title: Edición del contenido de una página
 description: Una vez creada la página, puede editar el contenido para realizar las actualizaciones necesarias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2983'
-ht-degree: 97%
+source-wordcount: '2978'
+ht-degree: 94%
 
 ---
 
@@ -151,9 +151,9 @@ Puede agregar un componente nuevo mediante el cuadro **Arrastrar componentes aqu
 
      ![Insertar un componente](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * En un dispositivo de escritorio puede hacer doble clic en el cuadro **Arrastrar componentes aquí**.
+   * Si está en un dispositivo de escritorio, puede hacer doble clic en el **Arrastre los componentes aquí** cuadro.
 
-   * Se abrirá el cuadro de diálogo **Insertar nuevo componente** para que pueda seleccionar el componente requerido: 
+   * El **Insertar nuevo componente** Abrir el cuadro de diálogo para seleccionar el componente requerido:
 
      ![Cuadro de diálogo Insertar nuevo componente](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -185,7 +185,7 @@ Si al examinar los recursos descubre que necesita realizar alguna modificación 
 
 ## Barra de herramientas del componente {#component-toolbar}
 
-Si se selecciona un componente, se abrirá la barra de herramientas, que proporciona acceso a distintas acciones que se pueden realizar en el componente.
+Al seleccionar un componente, se abre la barra de herramientas. Esto proporciona acceso a varias acciones que se pueden realizar en el componente.
 
 Las acciones disponibles para el usuario se muestran según corresponda y es posible que no todas las acciones se describan aquí.
 
@@ -361,7 +361,7 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-cl
 
 >[!TIP]
 >
->El ámbito de la acción Diseño se reduce al componente seleccionado. Por ejemplo, si está editando el diseño de un componente y hace clic en otro componente, se mostrará la barra de herramientas de edición estándar del componente recién seleccionado (no la barra de herramientas de diseño) y desaparecen tanto los controles de cambio de tamaño como la barra de herramientas del emulador.
+>El ámbito de la acción Diseño se reduce al componente seleccionado. Por ejemplo, si está editando el diseño de un componente y hace clic en otro componente, se muestra la barra de herramientas de edición estándar del componente recién seleccionado (no la barra de herramientas de diseño) y desaparecen los controladores de cambio de tamaño y la barra de herramientas del emulador.
 >
 >Si necesita editar el diseño general de la página y modificar múltiples componentes, cambie al [modo de diseño](/help/sites-cloud/authoring/features/responsive-layout.md).
 

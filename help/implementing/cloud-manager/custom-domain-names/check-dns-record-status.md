@@ -2,10 +2,10 @@
 title: Comprobación del estado de registro DNS
 description: Obtenga información sobre cómo determinar si la configuración de DNS se resuelve correctamente mediante Cloud Manager.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '250'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ En Cloud Manager puede determinar si su nombre de dominio se resuelve correctame
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Haga clic en **Configuración de dominio** en el panel de navegación izquierdo.
+1. Clic **Configuración de dominio** en el panel de navegación izquierdo.
 
 1. Haga clic en el icono **Estado** del nombre de dominio.
 

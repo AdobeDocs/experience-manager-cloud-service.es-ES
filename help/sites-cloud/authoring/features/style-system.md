@@ -2,10 +2,10 @@
 title: Sistema de estilos
 description: El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1320'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 98%
 
 ---
 
@@ -95,7 +95,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
    ![Editar propiedades](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
-   * **Nombre del grupo:** los estilos se pueden agrupar en el menú de estilo que verá el autor del contenido al configurar el estilo del componente.
+   * **Nombre de grupo:** Los estilos se pueden agrupar en el menú de estilo que ve el autor del contenido al configurar el estilo del componente.
    * **Los estilos se pueden combinar:** permite que se seleccionen varios estilos dentro de ese grupo al mismo tiempo.
    * **Nombre de estilo:** la descripción del estilo que se mostrará al autor del contenido al configurar el estilo del componente.
    * **Clases de CSS:** el nombre real de la clase de CSS asociada al estilo.
@@ -120,7 +120,7 @@ Para que un componente funcione con el sistema de estilos de AEM y se muestre la
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
+Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Con el componente configurado, los estilos configurados por los autores de la página son insertados automáticamente por AEM en el elemento de decoración que AEM envuelve automáticamente alrededor de cada componente editable. El componente en sí no necesita hacer nada más para que esto suceda.
 
@@ -134,11 +134,11 @@ La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la [fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
+Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la [fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
->La pestaña Estilos del cuadro de diálogo Editar no está activada de forma predeterminada.
+La pestaña Estilos del cuadro de diálogo Editar no está activada de forma predeterminada.
 
 ### Estilos con nombres de elemento       {#styles-with-element-names}
 
@@ -150,11 +150,11 @@ Esta propiedad se establece en el nodo `cq:Component`. Por ejemplo:
 
 >[!CAUTION]
 >
->Evite definir los nombres de elemento para los estilos que se pueden combinar. Cuando se definen varios nombres de elemento, el orden de prioridad es el siguiente:
+Evite definir los nombres de elemento para los estilos que se pueden combinar. Cuando se definen varios nombres de elemento, el orden de prioridad es el siguiente:
 >
->1. HTL tiene prioridad sobre todo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`.
->1. A continuación, entre diversos estilos activos, se toma el primer estilo de la lista de estilos configurados en la política del componente.
->1. Por último, el valor `cq:htmlTag`/`cq:tagName` del componente se considera como un valor alternativo.
+1. HTL tiene prioridad sobre todo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`.
+1. A continuación, entre diversos estilos activos, se toma el primer estilo de la lista de estilos configurados en la política del componente.
+1. Por último, el valor `cq:htmlTag`/`cq:tagName` del componente se considera como un valor alternativo.
 >
 
 Esta capacidad para definir nombres de estilo resulta útil para los componentes genéricos, como el contenedor de diseño o el componente Fragmento de contenido, para complementar su significado.

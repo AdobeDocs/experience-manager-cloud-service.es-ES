@@ -2,10 +2,10 @@
 title: Personalización del tema del sitio
 description: Descubra cómo se crea el tema del sitio, cómo personalizarlo y cómo probarlo con contenido de AEM en directo.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 64509c13abacd6a6b54b58245acbf510feafdffa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 100%
+source-wordcount: '962'
+ht-degree: 96%
 
 ---
 
@@ -135,7 +135,7 @@ Ahora que ha completado esta parte del Recorrido de creación rápida de sitios 
 * Consulte cómo probar las personalizaciones de temas mediante contenido AEM real a través de un proxy local.
 * Obtenga información sobre cómo confirmar los cambios en el repositorio de Git de AEM.
 
-Aproveche este conocimiento y continúe con el recorrido de Creación rápida de sitios de AEM revisando el documento [Implementar un tema personalizado,](deploy-theme.md) donde aprenderá a implementar el tema utilizando la canalización front-end.
+AEM Aproveche este conocimiento y continúe con su recorrido de Creación rápida de sitios de la revisando el documento [Implementar El Tema Personalizado,](deploy-theme.md) donde aprenderá a implementar el tema mediante la canalización front-end.
 
 ## Recursos adicionales {#additional-resources}
 

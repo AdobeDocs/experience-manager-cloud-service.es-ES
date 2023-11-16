@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 100%
+source-wordcount: '491'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ En un nivel superior, la traducción en AEM consiste en cuatro pasos simples:
 1. Revise y publique el contenido traducido.
 
 
-Más adelante, en el recorrido, aprenderá los detalles sobre cómo AEM traduce el contenido paso a paso.
+Más adelante, en el recorrido AEM, aprenderá los detalles acerca de cómo traduce el contenido paso a paso.
 
 ## Siguientes pasos {#what-is-next}
 

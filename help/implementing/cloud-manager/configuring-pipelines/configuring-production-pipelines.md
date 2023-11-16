@@ -3,10 +3,10 @@ title: Configurar canalizaciones de producción
 description: Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 80%
+source-wordcount: '1416'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa** y haga clic en **Agregar** para seleccionar **Agregar canalización de producción**.
+1. Vaya a **Canalizaciones** de la tarjeta de **Resumen del programa** y haga clic en **Añadir** para seleccionar **Agregar canalización de producción**.
 
    ![Información general de la tarjeta Canalizaciones de Administrador de programa](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
