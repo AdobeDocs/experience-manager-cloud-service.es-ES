@@ -1,10 +1,11 @@
 ---
 title: Indexación después de migrar contenido
 description: Descubra cómo el proceso de migración indexará el contenido ingerido en la instancia del Cloud Service de destino.
-source-git-commit: 22c5cbf300bb0b3b0db04fcfa669dde44197c326
+exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 8%
+source-wordcount: '506'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="Indexación de contenido"
->abstract="La indexación de AEM hace referencia a la indexación del contenido en la instancia de Cloud Service después de migrar el contenido a ella. La indexación es necesaria para permitir la búsqueda de contenido en esa instancia."
+>abstract="La indexación de AEM hace referencia a la indexación del contenido en la instancia de Cloud Service después de migrar el contenido a ella. La indexación es necesaria para admitir la búsqueda de contenido en esa instancia."
 
 Una vez que Cloud Acceleration Manager complete la ingesta de contenido en la instancia de Cloud Service, estará listo para utilizarse. Inicialmente, el contenido no se indexa, lo que probablemente resulte en un entorno inestable en el que se pueden esperar problemas como contenido inexplorable y rendimiento degradado.
 Para obtener un rendimiento óptimo en la instancia, el proceso de migración iniciará automáticamente la indexación del contenido. No hay nada que hacer, excepto monitorizar el progreso de indexación.
@@ -45,13 +46,13 @@ Cuando la ingesta se realiza correctamente, el trabajo de indexación se inicia 
 
 ### Completar
 
-Cuando el trabajo de indexación se realiza correctamente, la instancia está lista para utilizarse con un rendimiento óptimo. En este punto, los registros del trabajo de indexación estarán disponibles para verlos o descargarlos para inspeccionarlos.
+Cuando el trabajo de indexación se realiza correctamente, la instancia está lista para utilizarse con un rendimiento óptimo. En este punto, los registros del trabajo de indexación están disponibles para verlos o descargarlos para inspeccionarlos.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-indexing/complete.png)
 
 ### Errores
 
-La indexación de la instancia del Cloud Service de destino muy probablemente se realizará correctamente. En algunos casos, puede fallar y la fila del trabajo de ingesta aparecerá de la siguiente manera. En todos los casos, puede encontrar algunos detalles del error pasando el ratón por encima del estado del error y puede proporcionar más información para ayudarle a determinar los pasos siguientes. En este punto, los registros del trabajo de indexación estarán disponibles para verlos o descargarlos para descubrir el origen del error. Si el siguiente paso no está claro, póngase en contacto con el Soporte técnico de Adobe e incluya detalles sobre la ingesta y el registro de indexación.
+La indexación de la instancia del Cloud Service de destino muy probablemente se realizará correctamente. En algunos casos, puede fallar y la fila del trabajo de ingesta aparecerá de la siguiente manera. En todos los casos, puede encontrar algunos detalles del error pasando el ratón por encima del estado del error y puede proporcionar más información para ayudarle a determinar los pasos siguientes. En este punto, los registros del trabajo de indexación están disponibles para verlos o descargarlos para descubrir el origen del error. Si el siguiente paso no está claro, póngase en contacto con el Soporte técnico de Adobe e incluya detalles sobre la ingesta y el registro de indexación.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 
