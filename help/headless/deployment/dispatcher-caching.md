@@ -2,13 +2,13 @@
 title: 'Consultas persistentes de GraphQL: habilitar el almacenamiento en caché en Dispatcher'
 description: Dispatcher es una capa de almacenamiento en caché y seguridad situada frente a los entornos de publicación de Adobe Experience Manager. AEM Puede habilitar el almacenamiento en caché para consultas persistentes en la interfaz de usuario sin encabezado de.
 feature: Dispatcher, GraphQL API
-source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
+exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
+source-git-commit: ea5b404e83c11f0057342bff22ba45e6b0ead124
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 6%
+source-wordcount: '391'
+ht-degree: 8%
 
 ---
-
 
 # Consultas persistentes de GraphQL: habilitar el almacenamiento en caché en Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
 
@@ -26,7 +26,7 @@ El almacenamiento en caché de consultas persistentes no está habilitado de for
 
 >[!NOTE]
 >
->Para obtener documentación detallada sobre Dispatcher, consulte la [Guía de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es).
+>Para obtener documentación detallada acerca de Dispatcher, consulte la [Guía de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es).
 
 ## Habilitar el almacenamiento en caché de consultas persistentes {#enable-caching-persisted-queries}
 
@@ -37,6 +37,27 @@ Para habilitar el almacenamiento en caché de consultas persistentes, defina la 
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
    ```
+
+>[!NOTE]
+>
+>Cuando el almacenamiento en caché de Dispatcher está habilitado para consultas persistentes mediante `Define CACHE_GRAPHQL_PERSISTED_QUERIES` un `ETag` Dispatcher agrega el encabezado a la respuesta.
+>
+>De forma predeterminada, la variable `ETag` El encabezado de está configurado con la siguiente directiva:
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>Sin embargo, esta configuración puede causar problemas cuando se utiliza en las respuestas de consulta persistentes, ya que no tiene en cuenta los pequeños cambios en la respuesta.
+>
+>Para lograr objetivos individuales `ETag` cálculos en *cada* respuesta única en el `FileETag Digest` la configuración debe usarse en la configuración de dispatcher:
+>
+>```xml
+><Directory />    
+>   ...    
+>   FileETag Digest
+></Directory> 
+>```
 
 >[!NOTE]
 >
