@@ -1,16 +1,14 @@
 ---
 title: Introducción a la creación de formularios adaptables
 description: AEM Forms proporciona una interfaz fácil de usar pero potente para la creación de formularios adaptables. Ofrece una serie de componentes y herramientas que puede utilizar para crear formularios.
-uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2482'
 ht-degree: 96%
 
 ---
@@ -52,9 +50,9 @@ La IU táctil para crear formularios adaptables es intuitiva y proporciona lo si
 
 * Funcionalidad de arrastrar y soltar
 * Componentes de formulario estándar
-* Repositorio integrado para activos
+* Repositorio integrado para recursos
 
-Cuando crea un formulario adaptable nuevo o edita uno existente, utiliza los siguientes elementos de la interfaz de usuario:
+Cuando crea o edita un formulario adaptable existente, utiliza los siguientes elementos de la interfaz de usuario:
 
 * [Barra lateral](#sidebar)
 * [Barra de herramientas de la página](#page-toolbar)

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2303'
-ht-degree: 94%
+source-wordcount: '2301'
+ht-degree: 92%
 
 ---
 
@@ -35,19 +35,19 @@ Antes de empezar, obtenga información sobre el tipo de componentes de Forms dis
 
 Para crear un formulario adaptable, es necesario lo siguiente:
 
-* **Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un nuevo programa, los componentes principales de formularios adaptables ya están habilitados para su entorno. Si tiene un entorno de formularios as a Cloud Service basado en Archetype 39 o anterior, [Habilite los componentes principales de formularios adaptables para su entorno](enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, la plantilla y la temática de lienzo **Formularios adaptables (componente principal)** se añaden a su entorno. Si su versión del SDK de AEM es anterior a la 2023.02.0, [compruebe que tiene `prerelease` activado el indicador en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features), ya que los componentes principales de formularios adaptables formaban parte de la versión preliminar anterior a la 2023.02.0.
+* **Habilitar los componentes principales de Forms adaptables para su entorno**: Al crear un programa, los componentes principales de Forms adaptable ya están habilitados para su entorno. Si tiene un entorno de formularios as a Cloud Service basado en Archetype 39 o anterior, [Habilite los componentes principales de formularios adaptables para su entorno](enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, la plantilla y la temática de lienzo **Formularios adaptables (componente principal)** se añaden a su entorno. Si su versión del SDK de AEM es anterior a la 2023.02.0, [compruebe que tiene `prerelease` activado el indicador en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features), ya que los componentes principales de formularios adaptables formaban parte de la versión preliminar anterior a la 2023.02.0.
 
 * **Una plantilla de formulario adaptable**: Una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece opciones para definir una temática y una acción de envío. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. Por ejemplo, enviar los datos recopilados a una fuente de datos. El servicio en la nube proporciona una plantilla OOTB, denominada en blanco:
 
    * La plantilla `blank` se incluye con cada nuevo programa as a Cloud Service de AEM Forms.
    * Puede instalar el paquete de referencia mediante el Administrador de paquetes para agregar la plantilla `blank` a su programa as a Cloud Service de AEM Forms.
-   * También puede [crear una nueva plantilla de formularios adaptables (componentes principales)](/help/forms/template-editor-core-components.md) desde cero.
+   * También puede [crear una plantilla de Forms adaptable (componentes principales)](/help/forms/template-editor-core-components.md) desde cero.
    * También puede implementar [plantillas de muestra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) a su entorno. Esto le ayuda a empezar a crear formularios rápidamente.
 
 * **Una temática de formulario adaptable**: Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes.  La plantilla `Canvas` se incluye con cada nuevo programa as a Cloud Service de AEM Forms. También puede implementar [temas de muestra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) a su entorno. Esto le ayudará a dar estilo a los formularios y le proporcionará una estructura base para crear o personalizar una temática según sus necesidades empresariales.
 
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
-    * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
+    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
 * **Permisos**: añada sus usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable. Para obtener una lista detallada de los formularios y grupos de usuarios específicos, consulte [Grupos y permisos](forms-groups-privileges-tasks.md).
 

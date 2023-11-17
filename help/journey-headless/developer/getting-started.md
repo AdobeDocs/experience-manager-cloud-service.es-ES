@@ -2,10 +2,10 @@
 title: Introducción al contenido sin encabezado de AEM as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3096'
-ht-degree: 95%
+source-wordcount: '3095'
+ht-degree: 94%
 
 ---
 
@@ -117,7 +117,7 @@ Este nivel de integración se basa en el nivel dos al permitir que la mayoría d
 
 ### Todavía no tiene un consumidor externo del contenido sin encabezado, como una aplicación de una sola página (SPA). {#do-not-have-a-spa}
 
-Si su objetivo es crear una nueva SPA que consuma contenido sin encabezado desde AEM, puede utilizar funciones como Fragmentos de contenido para administrar el contenido sin encabezado y también generar una SPA dentro del marco de trabajo del editor de SPA.
+SPA AEM SPA AEM SPA Si su objetivo es crear una interfaz de usuario que consuma contenido sin encabezado de los recursos, puede utilizar funciones como Fragmentos de contenido para administrar el contenido sin encabezado y también crear un marco de trabajo de con el editor de contenido sin encabezado, por ejemplo, para crear una interfaz de usuario que le permita crear una interfaz de usuario con el editor de contenido sin encabezado
 
 Con el editor de SPA, la SPA no solo consume contenido de AEM, sino que también es totalmente editable dentro de AEM por sus autores de contenido, lo que le ofrece la flexibilidad de envío sin encabezado y de edición en contexto dentro de AEM.
 

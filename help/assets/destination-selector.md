@@ -3,13 +3,13 @@ title: AEM Selector de destino para la as a Cloud Service
 description: AEM Utilice el Selector de destino de la para mostrar y seleccionar recursos que puede utilizar como copia del recurso original.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
+exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1906'
 ht-degree: 36%
 
 ---
-
 
 # Selector de destino de Micro-Frontend {#Overview}
 
@@ -212,7 +212,7 @@ Puede definir el Selector de destino [propiedades](#destination-selector-propert
 
 ### Ejemplo 1: Crear una carpeta en el Selector de destino
 
-El selector de destino permite crear una nueva carpeta para cargar, mover o copiar recursos en una ubicación concreta.
+El selector de destino permite crear una carpeta para cargar, mover o copiar recursos en una ubicación concreta.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -261,7 +261,7 @@ Es un ejemplo de lo siguiente `optionsFormSetup` propiedad. Puede usar esto para
 
 ### Cree una nueva carpeta {#create-new-folder}
 
-Permite crear una nueva carpeta en la carpeta de destino de su [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+Permite crear una carpeta en la carpeta de destino de su [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### Tipos de vista {#types-of-view}
 

@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1162'
 ht-degree: 97%
 
 ---
@@ -71,7 +71,7 @@ Una vez instalado el paquete de conector para el servicio de traducción preferi
 * Si se va a realizar una traducción humana o automática
 * Si se debe traducir otro contenido asociado con las páginas, como etiquetas
 
-Para crear una nueva configuración de traducción:
+Para crear una configuración de traducción:
 
 1. En el menú de navegación global, toque o haga clic en **Herramientas** -> **Cloud Services** -> **Cloud Services de traducción**.
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. Esto suele basarse en un proyecto en particular o puede ser global.

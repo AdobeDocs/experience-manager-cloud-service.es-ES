@@ -2,10 +2,10 @@
 title: Administrar los sitios de muestra
 description: Obtenga información sobre las herramientas disponibles para ayudarle a administrar los sitios de muestra y cómo eliminarlos.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 95%
+source-wordcount: '942'
+ht-degree: 94%
 
 ---
 
@@ -93,7 +93,7 @@ Puede eliminar las plantillas del mismo modo bajo el encabezado **Eliminar plant
 ¡Felicitaciones! Ha completado el recorrido del complemento de demostraciones de referencia de AEM. Ahora debería hacer lo siguiente:
 
 * Obtenga información básica sobre Cloud Manager y comprenda cómo las canalizaciones envían contenido y configuración a AEM.
-* Aprenda a utilizar Cloud Manager para crear un nuevo programa.
+* Aprenda a utilizar Cloud Manager para crear un programa.
 * Obtenga información sobre cómo activar el complemento de demostraciones de referencia para el nuevo programa y poder ejecutar una canalización para implementar el contenido del complemento.
 * Obtenga información sobre cómo acceder al entorno de creación de AEM para crear un sitio basado en una plantilla.
 * Obtenga información sobre cómo acceder a las utilidades de demostración de autoservicio.

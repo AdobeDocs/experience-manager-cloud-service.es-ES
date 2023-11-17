@@ -2,10 +2,10 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan para crear una página que se utiliza como base para la nueva página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3291'
-ht-degree: 6%
+source-wordcount: '3287'
+ht-degree: 8%
 
 ---
 
@@ -40,7 +40,7 @@ Este documento:
 
 La creación de plantillas de página se realiza principalmente con [consola de plantillas y editor de plantillas](/help/sites-cloud/authoring/features/templates.md) por un autor de plantillas. En esta sección se ofrece una descripción general de este proceso y se incluye una descripción de lo que sucede a nivel técnico.
 
-Al crear una nueva plantilla editable:
+Al crear una nueva plantilla editable, haga lo siguiente:
 
 1. Crear un [carpeta para las plantillas](#template-folders). Esto no es obligatorio, pero es una práctica recomendada.
 1. Seleccione una [tipo de plantilla](#template-type). Esto se copia para crear el [definición de plantilla](#template-definitions).
@@ -103,7 +103,7 @@ Al crear una nueva plantilla editable:
 
 1. Úselo para crear páginas de contenido.
 
-   * Cuando se utiliza una plantilla para crear una nueva página, no hay ninguna diferencia visible ni indicación entre las plantillas estáticas y editables.
+   * Cuando se utiliza una plantilla para crear una página, no hay ninguna diferencia visible ni indicación entre las plantillas estáticas y editables.
    * Para el autor de la página, el proceso es transparente.
 
    Para obtener más información sobre cómo un autor de páginas utiliza plantillas para crear una página, consulte [Crear y organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -141,11 +141,11 @@ Para organizar las plantillas, puede utilizar las siguientes carpetas:
 >
 >Aunque puede anidar las carpetas, cuando el usuario las vea en la **Plantillas** consola se presentan como una estructura plana.
 
-En una instancia estándar de AEM, la carpeta `global` ya existe en la consola de plantillas. Contiene plantillas predeterminadas y actúa como alternativa en caso de que no se encuentre ninguna política ni ningún tipo de plantilla en la carpeta actual. Puede agregar las plantillas predeterminadas a esta carpeta o crear una nueva carpeta (recomendado).
+En una instancia estándar de AEM, la carpeta `global` ya existe en la consola de plantillas. Contiene plantillas predeterminadas y actúa como alternativa en caso de que no se encuentre ninguna política ni ningún tipo de plantilla en la carpeta actual. Puede agregar las plantillas predeterminadas a esta carpeta o crear una carpeta (recomendado).
 
 >[!NOTE]
 >
->Se recomienda crear una nueva carpeta para guardar las plantillas personalizadas y no utilizar el `global` carpeta.
+>Se recomienda crear una carpeta para guardar las plantillas personalizadas y no utilizar el `global` carpeta.
 
 >[!CAUTION]
 >
@@ -161,7 +161,7 @@ Los tipos de plantilla y las directivas se heredan en todas las carpetas según 
 
 Se crea una lista de todas las entradas permitidas. Si alguna configuración se superpone ( `path`/ `label`), solo se presenta al usuario la instancia más cercana a la carpeta actual.
 
-Para crear una carpeta nueva, puede hacer lo siguiente:
+Para crear una carpeta, puede hacer lo siguiente:
 
 * Mediante programación o con el CRXDE Lite
 * Uso del [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)

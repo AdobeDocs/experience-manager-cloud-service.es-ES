@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 79%
+source-wordcount: '835'
+ht-degree: 77%
 
 ---
 
@@ -69,7 +69,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
    * **[Modelo de datos de formulario en el editor de plantillas](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: puede asociar un esquema del Modelo de datos de formulario a una plantilla de Formulario adaptable en el editor de plantillas. Ayuda a reducir el tiempo necesario para crear un Formulario adaptable. La opción también se agrega al editor de Formularios adaptables para que los usuarios puedan seleccionar o cambiar el Modelo de datos de formulario para los formularios existentes.
    * **[Documento de registro en el editor de plantillas](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: ahora puede estandarizar la generación de documentos de registros para todos los formularios creados con una plantilla. Esto ayuda a mejorar el cumplimiento de normas y la estandarización de los requisitos de organización.
 
-* **[Lanzamiento del asistente de Formularios adaptables desde una página de AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)**: la página de AEM Sites ha ampliado la compatibilidad con Adaptive Forms. Ahora puede crear un nuevo Formulario adaptable o incrustar un Formulario adaptable existente mientras permanece en la página de AEM Sites.
+* **[Lanzamiento del asistente de Formularios adaptables desde una página de AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)**: la página de AEM Sites ha ampliado la compatibilidad con Adaptive Forms. Ahora puede crear un formulario adaptable o incrustar un formulario adaptable existente mientras permanece en la página de AEM Sites.
 * **[Cambiar la alineación de visualización de las casillas de verificación y el botón de opción en DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: ahora puede establecer la alineación deseada (Horizontal, Vertical, Igual que Formularios adaptables) para la casilla de verificación y el botón de opción del Documento de registro. Esta opción determina el posicionamiento de las opciones de casilla de verificación y botón de opción en el Documento de registro.
 
 ## Complemento CIF {#cloud-services-cif}

@@ -2,9 +2,9 @@
 title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores para los detalles de los componentes y su estructura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 2%
 
 ---
@@ -248,7 +248,7 @@ Content not found
 >See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
 -->
 
-Para crear un nuevo widget para utilizarlo en un cuadro de diálogo de componentes, es necesario crear un nuevo componente de campo de Granite UI.
+Para crear un widget para utilizarlo en un cuadro de diálogo de componentes, es necesario crear un componente de campo de interfaz de usuario de Granite.
 
 Si considera el cuadro de diálogo como un contenedor simple para un elemento de formulario, también puede ver el contenido principal del cuadro de diálogo como campos de formulario. La creación de un nuevo campo de formulario requiere la creación de un tipo de recurso; esto equivale a la creación de un nuevo componente. Para ayudarle en esa tarea, la interfaz de usuario de Granite ofrece un componente de campo genérico del que heredar (mediante `sling:resourceSuperType`):
 

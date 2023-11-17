@@ -2,9 +2,9 @@
 title: Desarrollo de un componente personalizado para Screens as a Cloud Service
 description: El siguiente tutorial muestra los pasos para crear un componente personalizado para AEM Screens. AEM Screens AEM reutiliza muchos patrones de diseño y tecnologías existentes de otros productos de la. El tutorial destaca las diferencias y las consideraciones especiales al desarrollar para AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2106'
 ht-degree: 3%
 
 ---
@@ -329,7 +329,7 @@ Los componentes de AEM Screens se representan de forma diferente en el modo de e
 
 1. Copie y pegue `shared` carpeta de biblioteca de cliente para crear una biblioteca de cliente llamada `production`.
 
-   ![Copie la biblioteca de cliente compartida para crear una nueva biblioteca de cliente de producción](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![Copie la biblioteca de cliente compartida para crear una biblioteca de cliente de producción](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    Copie la biblioteca de cliente compartida para crear una biblioteca de cliente de producción.
 

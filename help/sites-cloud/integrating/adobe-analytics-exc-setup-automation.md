@@ -4,10 +4,10 @@ description: La automatización de la configuración de Experience Cloud proporc
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 96%
+source-wordcount: '750'
+ht-degree: 92%
 
 ---
 
@@ -50,7 +50,7 @@ El entorno debe estar listo para la automatización de la configuración de Expe
 1. Pulse el botón **Integrar Analytics**.
 1. En el cuadro de diálogo resultante, proporcione un nombre para el **ID del grupo de informes**.
 
-   Esta cadena se utilizará para crear un nuevo [ID del grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=es) en Adobe Analytics como almacén de datos para los datos del análisis del sitio de AEM seleccionado. La cadena proporcionada se añade con identificadores de entorno y de nivel para garantizar la exclusividad.
+   Esta cadena se utiliza para crear un [ID del grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=es) en Adobe Analytics AEM como almacén de datos para los datos de analytics del sitio de seleccionado. La cadena proporcionada se añade con identificadores de entorno y de nivel para garantizar la exclusividad.
 
 1. Actualice la página y el panel y pulse **Comprobar estado de integración** para comprobar el estado de la automatización.
 

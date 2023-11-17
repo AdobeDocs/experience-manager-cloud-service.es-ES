@@ -1,10 +1,10 @@
 ---
 title: Encabezados HTTP personalizados
-description: Aprenda a configurar encabezados HTTP personalizados que se envían al motor de comercio, junto con los que ya envía CIF.
+description: CIF Obtenga información sobre cómo configurar encabezados HTTP personalizados que se envían al motor de comercio, junto con los que ya envía el administrador de la aplicación de correo electrónico de.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '285'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 ## Información general {#overview}
 
-Para obtener más control sobre su back-end, los autores pueden configurar encabezados HTTP personalizados que se envían al motor de comercio, junto con los que ya envía CIF. Los casos de uso comunes incluyen configuraciones de varias tiendas en las que puede utilizar encabezados HTTP para controlar la respuesta del back-end de comercio.
+CIF Para obtener más control sobre su back-end, los autores pueden configurar encabezados HTTP personalizados que se envían al motor de comercio, junto con los que ya envía el usuario Los casos de uso comunes incluyen configuraciones de varias tiendas en las que puede utilizar encabezados HTTP para controlar la respuesta del back-end de comercio.
 
 >[!NOTE]
 >
@@ -26,8 +26,8 @@ Para configurar los encabezados HTTP personalizados, primero debe definirlos. Lo
 
 Puede configurar los valores de los encabezados HTTP en la página Configuración de Cloud Service de su proyecto:
 
-1. Vaya a la página de configuración del Cloud Service en Herramientas -> Cloud Services -> Configuración del CIF
-1. Abra una configuración existente o cree una nueva
+1. Vaya a la página de configuración del Cloud Service en Herramientas -> Cloud Services CIF -> Configuración de la
+1. Abra una configuración existente o cree una
 1. Vaya a la pestaña &quot;Avanzado&quot; y busque el campo múltiple &quot;Encabezados HTTP personalizados&quot;. Puede seleccionar los encabezados definidos anteriormente y asignarles valores.
 
 Los componentes que utilizan la configuración de servicio en la nube anterior enviarán estos encabezados HTTP con cada solicitud de GraphQL.
@@ -36,5 +36,5 @@ Los componentes que utilizan la configuración de servicio en la nube anterior e
 
 Aunque el servicio permite definir cualquier nombre de encabezado, incluidos los estándar, no estarán disponibles para su configuración. En otras palabras, no se pueden anular los encabezados HTTP estándar con esta función. Se puede encontrar una lista de nombres de encabezado restringidos [aquí](https://developer.mozilla.org/es-ES/docs/Web/HTTP/Headers). Además de estos, hay dos encabezados más que no se pueden utilizar:
 
-* &quot;Tienda&quot;: utilizada por CIF para identificar la tienda Adobe Commerce
-* &quot;Preview-Version&quot;: utilizado por CIF para recuperar productos clasificados
+* CIF &quot;Almacén&quot;: utilizado por los usuarios para identificar la tienda de Adobe Commerce.
+* CIF &quot;Preview-Version&quot;: utilizado por los usuarios para recuperar productos clasificados.

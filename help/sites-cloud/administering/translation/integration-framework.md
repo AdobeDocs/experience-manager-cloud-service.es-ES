@@ -4,10 +4,10 @@ description: Aprenda a configurar el marco de trabajo de integración de traducc
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '1518'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1517'
+ht-degree: 99%
 
 ---
 
@@ -67,7 +67,7 @@ Después de configurar un marco de trabajo de integración de traducciones, pued
 >
 >Para obtener una descripción general de las funciones de traducción de contenido de AEM, consulte [Traducción de contenido para sitios multilingües](overview.md).
 
-Una sola configuración del marco de trabajo controla cómo se traducen el contenido de la página y los recursos. Para crear una nueva configuración de traducción:
+Una sola configuración del marco de trabajo controla cómo se traducen el contenido de la página y los recursos. Para crear una configuración de traducción:
 
 1. En el [menú de navegación global,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) pulse o haga clic en **Herramientas -> Cloud Services y Cloud Services de traducción**.
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. A menudo se basa en un sitio en particular, pero puede ser global.

@@ -2,10 +2,10 @@
 title: Uso del contenido de destino de varios sitios
 description: Si necesita administrar contenido de destino, como actividades, experiencias y ofertas, entre sus sitios, puede aprovechar el soporte integrado con varios sitios para el contenido de destino
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 98%
+source-wordcount: '2885'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Este documento describe lo siguiente:
 
 Para configurar cómo sus sitios comparten contenido personalizado, debe realizar los pasos siguientes:
 
-1. [Crear una nueva área](#creating-new-areas) o [crear una nueva área como Live Copy](#creating-new-areas). Un área incluye todas las actividades disponibles para un *área* de la página; es decir, la ubicación en la página a la que se dirige el componente. Al crear un área nueva, se crea una vacía; si crea una nueva área como Live Copy puede heredar contenido de las estructuras del sitio.
+1. [Crear una nueva área](#creating-new-areas) o [crear un área como live copy](#creating-new-areas). Un área incluye todas las actividades disponibles para un *área* de la página; es decir, la ubicación en la página a la que se dirige el componente. Al crear un área nueva, se crea una vacía; si crea una nueva área como Live Copy puede heredar contenido de las estructuras del sitio.
 
 1. [Vincular el sitio o la página](#linking-sites-to-an-area) a un área.
 
@@ -119,9 +119,9 @@ En cualquier momento, puede suspender la herencia o desasociar la herencia por c
 
 ### Creación de una nueva área frente a la creación de una nueva como Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-En AEM, tiene la opción de crear una área nueva o crear una área nueva como Live Copy. Crear una nueva área agrupa actividades y todo lo que pertenezca a esas actividades, como ofertas, experiencias, etc. Puede crear una nueva área cuando desee crear un conjunto de contenido de destino distinto o cuando desee compartir un conjunto de contenido de destino.
+En AEM, tiene la opción de crear una área nueva o crear una área nueva como Live Copy. Crear una nueva área agrupa actividades y todo lo que pertenezca a esas actividades, como ofertas, experiencias, etc. Puede crear un área cuando desee crear un conjunto de contenido de destino completamente distinto o cuando desee compartir un conjunto de contenido de destino.
 
-Sin embargo, si ha configurado la herencia mediante MSM entre los dos sitios, puede que desee heredar las actividades. En este caso, se crea una nueva área como Live Copy, donde Y es una Live Copy de X y, por lo tanto, hereda también todas las actividades.
+Sin embargo, si ha configurado la herencia mediante MSM entre los dos sitios, puede que desee heredar las actividades. En este caso, se crea un área como Live Copy, donde Y es una Live Copy de X y, por lo tanto, hereda también todas las actividades.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Las áreas pueden abarcar actividades y ofertas. Después de crear un área en a
 >
 >El área predeterminada denominada Área maestra se contrae de forma predeterminada al pulsar o hacer clic en el nombre de una marca **hasta** se crea otra área. A continuación, cuando selecciona una marca en la consola **Actividad** u **Ofertas**, llegará a la consola **Área**.
 
-Para crear una nueva área:
+Para crear un área:
 
 1. Vaya a **Personalización** > **Actividades** u **Ofertas** y, a continuación, a su marca.
 1. Haga clic o pulse **Crear área**.

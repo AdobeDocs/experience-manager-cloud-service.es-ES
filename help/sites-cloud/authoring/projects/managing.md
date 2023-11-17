@@ -2,10 +2,10 @@
 title: Administración de proyectos
 description: Proyectos le permite organizar su proyecto al agrupar los recursos en una entidad a la que se puede acceder y se puede administrar en la consola Proyectos
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '893'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '892'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ De forma predeterminada, AEM proporciona estas plantillas entre las que puede el
 * Product Photo Shoot Project 
 -->
 
-El procedimiento para crear un proyecto es el mismo de un proyecto a otro. La diferencia entre los tipos de proyectos incluye las [funciones de usuario](/help/sites-cloud/authoring/projects/overview.md) y los [flujos de trabajo](/help/sites-cloud/authoring/projects/workflows.md) disponibles. Para crear un nuevo proyecto:
+El procedimiento para crear un proyecto es el mismo de un proyecto a otro. La diferencia entre los tipos de proyectos incluye las [funciones de usuario](/help/sites-cloud/authoring/projects/overview.md) y los [flujos de trabajo](/help/sites-cloud/authoring/projects/workflows.md) disponibles. Para crear un proyecto:
 
 1. En **Proyectos**, pulse o haga clic en **Crear** y abrirá el asistente **Crear proyecto**:
 1. Seleccione una plantilla y haga clic en **Siguiente**.
@@ -135,7 +135,7 @@ Para que un proyecto quede inactivo (o activo), haga lo siguiente:
 
    >[!NOTE]
    >
-   >Es posible que deba añadir este mosaico si aún no está en el proyecto. Consulte [Añadir mosaicos](#adding-items-to-a-tile).
+   Es posible que deba añadir este mosaico si aún no está en el proyecto. Consulte [Añadir mosaicos](#adding-items-to-a-tile).
 
 1. Pulse o haga clic en **Editar**.
 1. Cambie el selector de **Activo** a **Inactivo** (o viceversa).

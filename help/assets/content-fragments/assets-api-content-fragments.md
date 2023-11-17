@@ -3,9 +3,9 @@ title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager as
 description: Obtenga información acerca de la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de la función de entrega sin encabezado de Adobe Experience Manager.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1791'
 ht-degree: 13%
 
 ---
@@ -263,7 +263,7 @@ AEM El uso puede variar en función de si utiliza un entorno de autor o publicac
 
 Hay algunas limitaciones:
 
-* **Actualmente no se admiten modelos de fragmento de contenido**: no se pueden leer ni crear. Para poder crear un fragmento de contenido nuevo o actualizar uno existente, los desarrolladores deben conocer la ruta correcta al modelo de fragmento de contenido. Actualmente, el único método para obtener una descripción general de estos es a través de la IU de administración.
+* **Actualmente no se admiten modelos de fragmento de contenido**: no se pueden leer ni crear. Para poder crear o actualizar un fragmento de contenido existente, los desarrolladores deben conocer la ruta correcta al modelo de fragmento de contenido. Actualmente, el único método para obtener una descripción general de estos es a través de la IU de administración.
 * **Las referencias se omiten**. Actualmente no hay comprobaciones sobre si se hace referencia a un fragmento de contenido existente. Por lo tanto, por ejemplo, si elimina un fragmento de contenido, podrían producirse problemas en una página que contenga una referencia al fragmento de contenido eliminado.
 * **Tipo de datos JSON** La salida de la API de REST del *Tipo de datos JSON* es *salida basada en cadenas*.
 

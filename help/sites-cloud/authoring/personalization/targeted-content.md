@@ -2,10 +2,10 @@
 title: Creación de contenido orientado mediante el modo de Orientación
 description: El modo segmentación y el componente de Target proporcionan herramientas para crear contenido para experiencias
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '5409'
-ht-degree: 99%
+source-wordcount: '5408'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ Para añadir una actividad, haga lo siguiente:
 
    >[!NOTE]
    >
-   >Al crear una actividad nueva y tener una configuración de nube de Adobe Target asociada a la página o a uno de sus elementos raíz, AEM supone automáticamente que Adobe Target es el motor.
+   >Cuando crea una actividad y tiene una configuración de nube de Adobe Target AEM asociada a la página o a uno de sus elementos principales, supone automáticamente que Adobe Target es el motor de la actividad de, que se utiliza para crear una actividad de.
 
 1. En el menú desplegable del motor de **Orientación**, seleccione el motor de orientación.
 

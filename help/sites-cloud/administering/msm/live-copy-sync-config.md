@@ -4,9 +4,9 @@ description: Obtenga información acerca de las potentes opciones de sincronizac
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2425'
 ht-degree: 96%
 
 ---
@@ -45,7 +45,7 @@ Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace 
 
 En la siguiente tabla, se enumeran las opciones de configuración de despliegue listas para usarse de AEM. La tabla incluye las acciones de activación y sincronización de cada configuración de lanzamiento.
 
-Si las acciones de configuración de lanzamiento instaladas no cumplen con sus requisitos, puede [cree una nueva configuración de despliegue.](#creating-a-rollout-configuration)
+Si las acciones de configuración de lanzamiento instaladas no cumplen con sus requisitos, puede [cree una configuración de despliegue.](#creating-a-rollout-configuration)
 
 | Nombre | Descripción | Activador | [Acciones de sincronización](#synchronization-actions) |
 |---|---|---|---|

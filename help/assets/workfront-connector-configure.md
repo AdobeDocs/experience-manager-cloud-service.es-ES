@@ -4,9 +4,9 @@ description: Configuración de [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1770'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ La asignación de metadatos entre documentos y recursos de Adobe Workfront AEM s
 Para configurar las asignaciones, siga estos pasos:
 
 1. Vaya a **Herramientas** > **Assets** > **Esquemas de metadatos**.
-1. Seleccione el formulario de esquema de metadatos que desee editar y haga clic en **Editar** o cree un nuevo esquema de metadatos desde cero.
+1. Seleccione el formulario de esquema de metadatos que desee editar y haga clic en **Editar** o cree un esquema de metadatos desde cero.
 1. Seleccione el campo del formulario de esquema de metadatos que desea editar y seleccione **Configuración** en el panel derecho.
 1. Entrada [!DNL Workfront] Campo de formulario personalizado, seleccione el nombre del [!DNL Workfront] AEM que desee asignar a la propiedad seleccionada de la. Las opciones disponibles son:
 

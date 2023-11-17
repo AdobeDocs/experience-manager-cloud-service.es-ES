@@ -1,13 +1,13 @@
 ---
 title: Ampliación del Administrador de varios sitios
 description: Obtenga información sobre cómo ampliar la funcionalidad del Administrador de varios sitios.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2435'
 ht-degree: 2%
 
 ---
-
 
 # Ampliación del Administrador de varios sitios {#extending-the-multi-site-manager}
 
@@ -165,7 +165,7 @@ La nueva configuración de despliegue está disponible al establecer configuraci
 
 ### Creación de la configuración de despliegue {#create-the-rollout-configuration}
 
-Para crear una nueva configuración de despliegue:
+Para crear una configuración de despliegue:
 
 1. Abrir CRXDE Lite en `https://<host>:<port>/crx/de`.
 

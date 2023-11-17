@@ -2,9 +2,9 @@
 title: Creación y administración de pantallas en pantallas as a Cloud Service
 description: En esta página se describe cómo crear y administrar pantallas en Pantallas as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '657'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ Puede cambiar el carril de la carpeta para que no muestre todas las carpetas a c
 
 1. Seleccionar **Ocultar carpetas** para cerrarlo de nuevo.
 
-## Cómo crear una carpeta nueva {#create-folder}
+## Cómo crear una carpeta {#create-folder}
 
 Puede crear carpetas para organizar mejor las pantallas.
 
@@ -86,7 +86,7 @@ Puede crear carpetas para organizar mejor las pantallas.
 
    ![imagen](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## Cómo crear una nueva carpeta anidada {#nested-folder}
+## Cómo crear una carpeta anidada {#nested-folder}
 
 1. Navegue hasta la vista de inventario de pantallas.
 

@@ -2,10 +2,10 @@
 title: Configurar la canalización
 description: Cree una canalización front-end para administrar la personalización del tema del sitio.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 97%
+source-wordcount: '964'
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ Cree una canalización front-end para administrar la personalización del tema d
 En el documento anterior del recorrido de Creación rápida del sitio de AEM, [Crear sitio a partir de una plantilla,](create-site.md) ha aprendido a utilizar una plantilla de sitio para crear rápidamente un sitio AEM que se pueda personalizar aún más con herramientas front-end y ahora debería:
 
 * Entender cómo obtener plantillas del sitio de AEM.
-* Obtenga información sobre cómo crear un nuevo sitio con una plantilla.
+* Aprenda a crear un sitio con una plantilla.
 * Consulte cómo descargar la plantilla del nuevo sitio para facilitarla al desarrollador front-end.
 
 Este artículo se basa en estos aspectos básicos para que pueda configurar una canalización front-end que el desarrollador de front-end utilizará más adelante en el recorrido para implementar personalizaciones front-end.

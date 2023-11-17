@@ -4,10 +4,10 @@ description: Aprenda a utilizar AEM para crear un sitio mediante plantillas de s
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 96%
+source-wordcount: '773'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Aprenda a utilizar AEM para crear un sitio mediante plantillas de sitio para def
 
 Para que los autores de contenido puedan crear páginas con contenido, primero debe crearse el sitio. Esto generalmente lo realiza un administrador de AEM que define la estructura inicial del sitio. El uso de plantillas de sitio hace que la creación del sitio sea rápida y flexible.
 
-La herramienta de creación rápida de sitios de AEM permite a los usuarios que no son desarrolladores crear rápidamente un nuevo sitio desde cero mediante plantillas de sitio.
+AEM La herramienta Creación rápida de sitios permite a los usuarios que no son desarrolladores crear rápidamente un sitio desde cero mediante plantillas de sitio.
 
 Una vez creada, la herramienta de creación rápida de sitios también permite la personalización rápida del tema y el estilo del sitio AEM (JavaScript, CSS y recursos estáticos). Esto permite que el desarrollador del front-end, que no necesita ningún conocimiento de AEM, trabaje de forma independiente y paralela a los creadores de contenido. El administrador de AEM simplemente descarga el tema del sitio y lo proporciona al desarrollador de front-end que lo personaliza con sus herramientas favoritas y luego confirma los cambios en el repositorio de código de AEM, que luego se implementa.
 

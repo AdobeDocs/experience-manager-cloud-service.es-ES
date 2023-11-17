@@ -2,10 +2,10 @@
 title: Creación de un sitio de muestra
 description: Cree un sitio de demostración en AEM basado en una biblioteca de plantillas preconfiguradas.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 92%
+source-wordcount: '836'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ Cree un sitio de demostración en AEM basado en una biblioteca de plantillas pre
 
 En el documento anterior del recorrido del complemento Demostraciones de referencia de AEM, [Creación de un programa,](create-program.md) ha dado el primer paso de configuración para crear un programa con fines de prueba y ha utilizado una canalización para implementar el contenido del complemento. Ahora debería hacer lo siguiente:
 
-* Aprenda a utilizar Cloud Manager para crear un nuevo programa.
+* Aprenda a utilizar Cloud Manager para crear un programa.
 * Obtenga información sobre cómo activar el complemento de demostraciones de referencia para el nuevo programa.
 * Poder ejecutar una canalización para implementar el contenido del complemento.
 
@@ -25,7 +25,7 @@ En este artículo se describe el siguiente paso del proceso: crear un nuevo siti
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo crear un nuevo sitio basado en las plantillas del complemento Demostraciones de referencia. Después de leer, debería haber logrado lo siguiente:
+Este documento le ayuda a comprender cómo crear un sitio basado en las plantillas del complemento Demostraciones de referencia. Después de leer, debería haber logrado lo siguiente:
 
 * Comprender cómo acceder al entorno de creación de AEM.
 * Saber cómo crear un sitio basado en una plantilla.

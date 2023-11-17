@@ -4,10 +4,10 @@ description: Aprenda a crear y administrar proyectos de traducción automática 
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4075'
+ht-degree: 99%
 
 ---
 
@@ -448,9 +448,10 @@ Para comparar las copias de idioma con el maestro de idioma:
 
 ## Mover una página de origen o cambiarle el nombre {#move-source}
 
-Si una página de origen ya traducida necesita ser [cambiada de nombre o movida](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), volver a traducir la página después del traslado creará una nueva copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior seguirá ahí.
+Si una página de origen ya traducida necesita ser [cambiado de nombre o movido](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), vuelva a traducir la página después de moverla y cree una copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior seguirá ahí.
 
 La práctica recomendada en este escenario es seguir este procedimiento:
+
 1. Cancele la publicación de las copias de idioma asociadas con la página de origen que desee mover.
 1. Elimínelas.
 1. Cree nuevas copias de idioma a partir de la página de origen que acaba de mover.

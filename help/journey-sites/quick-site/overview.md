@@ -2,10 +2,10 @@
 title: AEM Recorrido de creación rápida de sitios
 description: Comience aquí para obtener un recorrido guiado a través de la herramienta de creación rápida de sitios AEM fácil de usar, para optimizar el desarrollo front-end de su sitio AEM y personalizar rápidamente su sitio sin conocimiento del servidor de AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1034'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1032'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Comience aquí para obtener un recorrido guiado a través de la herramienta de c
 
 AEM Sites es un potente conjunto de herramientas para crear y administrar experiencias digitales. Los autores de contenido pueden crear fácilmente experiencias digitales mediante el editor de Sites y organizar el contenido mediante la consola de Sites, a la vez que pueden ver el contenido en el momento de su publicación, tal y como lo envía AEM a los públicos en los distintos canales.
 
-La herramienta Creación rápida de sitios de AEM permite a los usuarios que no son desarrolladores crear rápidamente un nuevo sitio desde cero mediante plantillas de sitio. Una vez creada, la herramienta de creación rápida de sitios también permite la personalización rápida del tema y el estilo del sitio AEM (JavaScript, CSS y recursos estáticos). Esto permite que el desarrollador del front-end, que no necesita ningún conocimiento de AEM, trabaje de forma independiente y paralela a los creadores de contenido. El administrador de AEM simplemente descarga el tema del sitio y lo proporciona al desarrollador de front-end que lo personaliza con sus herramientas favoritas y luego confirma los cambios en el repositorio de código de AEM, que luego se implementa.
+AEM La herramienta Creación rápida de sitios permite a los usuarios que no son desarrolladores crear rápidamente un sitio desde cero mediante plantillas de sitio. Una vez creada, la herramienta de creación rápida de sitios también permite la personalización rápida del tema y el estilo del sitio AEM (JavaScript, CSS y recursos estáticos). Esto permite que el desarrollador del front-end, que no necesita ningún conocimiento de AEM, trabaje de forma independiente y paralela a los creadores de contenido. El administrador de AEM simplemente descarga el tema del sitio y lo proporciona al desarrollador de front-end que lo personaliza con sus herramientas favoritas y luego confirma los cambios en el repositorio de código de AEM, que luego se implementa.
 
 Elimina cualquier conocimiento de desarrollador para la creación del sitio, suprime los requisitos de conocimientos de AEM para el desarrollo front-end y permite que el desarrollo del tema transcurra en paralelo con la creación de contenido. Con ello, la herramienta Creación rápida de sitios de AEM acelera enormemente el tiempo de respuesta del sitio. Asimismo, aumenta la agilidad de la personalización y la implementación.
 
@@ -54,7 +54,7 @@ Explorará muchos temas en este recorrido. Los siguientes artículos le proporci
 |---|---|---|--|
 | 0 | Recorrido de creación rápida de sitios de AEM | Este documento | Administradores de AEM y Cloud Manager |
 | 1 | [Comprender Cloud Manager y el flujo de trabajo de creación rápida de sitios](cloud-manager.md) | Obtenga información sobre Cloud Manager y cómo se vincula el nuevo proceso de creación rápida de sitios. | Administrador de AEM |
-| 2 | [Crear sitio a partir de una plantilla](create-site.md) | Obtenga información sobre cómo crear rápidamente un nuevo sitio de AEM con una plantilla de sitio. | Administrador de AEM |
+| 2 | [Crear sitio a partir de una plantilla](create-site.md) | AEM Obtenga información sobre cómo crear rápidamente un sitio de con una plantilla de sitio. | Administrador de AEM |
 | 3 | [Configurar la canalización](pipeline-setup.md) | Cree una canalización front-end para administrar la personalización del tema del sitio. | Administrador de Cloud Manager |
 | 4 | [Conceder acceso al desarrollador de front-end](grant-access.md) | Incorpore a los desarrolladores front-end en Cloud Manager para que tengan acceso al repositorio de Git y a la canalización del sitio de AEM. | Administrador de Cloud Manager |
 | 5 | [Recuperar información de acceso al repositorio de Git](retrieve-access.md) | Descubra cómo el desarrollador front-end utiliza Cloud Manager para acceder a la información del repositorio de Git. | Desarrollador front-end |

@@ -2,9 +2,9 @@
 title: Administración de etiquetas
 description: AEM Obtenga información sobre cómo administrar etiquetas en la de organizar el contenido.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2265'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Existen varios pasos para crear y utilizar etiquetas para organizar el contenido
 
 Se utiliza un área de nombres para organizar otras etiquetas. Se puede considerar como la etiqueta de nivel inferior y se suele utilizar para agrupar otras etiquetas.
 
-1. Para crear una nueva Área de nombres, abra el [consola de etiquetado](#tagging-console) y toque o haga clic en **Crear** en la barra de herramientas y, a continuación, **Crear área de nombres**.
+1. Para crear un área de nombres, abra [consola de etiquetado](#tagging-console) y toque o haga clic en **Crear** en la barra de herramientas y, a continuación, **Crear área de nombres**.
 
    ![Cuadro de diálogo Agregar área de nombres](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -101,7 +101,7 @@ Un área de nombres no necesita contener subetiquetas. Como un área de nombres 
 
 Las etiquetas se suelen añadir a áreas de nombres.
 
-1. Para crear una etiqueta nueva, abra el [consola de etiquetado.](#tagging-console)
+1. Para crear una etiqueta, abra el [consola de etiquetado.](#tagging-console)
 
 1. Seleccione el área de nombres donde desea crear la etiqueta. O seleccione otra etiqueta para crear una subetiqueta debajo de ella.
 
@@ -123,11 +123,11 @@ La etiqueta se crea y la consola se actualiza para mostrar la nueva etiqueta.
 Las etiquetas permiten la creación flexible de su propia taxonomía en función de sus necesidades organizativas.
 
 * Puede crear etiquetas secundarias de etiquetas existentes seleccionando la etiqueta principal en la consola antes de crear la nueva etiqueta.
-* Si crea una etiqueta sin seleccionar un área de nombres u otra etiqueta, creará de forma efectiva una nueva área de nombres.
+* Si crea una etiqueta sin seleccionar un área de nombres u otra etiqueta, creará de forma efectiva un área de nombres.
 
 ### Publicación de etiquetas {#publishing-tags}
 
-AEM Al igual que con la creación de cualquier otro contenido en la, una vez creada una etiqueta (o área de nombres), solo existe en el entorno de creación. Para que las etiquetas estén disponibles para los usuarios, debe publicarlas.
+AEM Al igual que con la creación de cualquier otro contenido en la, después de crear una etiqueta (o área de nombres), solo existe en el entorno de creación. Para que las etiquetas estén disponibles para los usuarios, debe publicarlas.
 
 1. Para publicar una etiqueta, abra el [consola de etiquetado.](#tagging-console)
 

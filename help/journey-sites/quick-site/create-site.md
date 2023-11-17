@@ -1,17 +1,17 @@
 ---
 title: Creación de un sitio a partir de una plantilla
-description: Obtenga información sobre cómo crear rápidamente un nuevo sitio de AEM con una plantilla de sitio.
+description: AEM Obtenga información sobre cómo crear rápidamente un sitio de con una plantilla de sitio.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 98%
+source-wordcount: '1496'
+ht-degree: 91%
 
 ---
 
 # Creación de un sitio a partir de una plantilla {#create-site-from-template}
 
-Obtenga información sobre cómo crear rápidamente un nuevo sitio de AEM con una plantilla de sitio.
+AEM Obtenga información sobre cómo crear rápidamente un sitio de con una plantilla de sitio.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -20,14 +20,14 @@ En el documento anterior del Recorrido de creación rápida de sitios de AEM, [C
 * Comprender cómo AEM Sites y Cloud Manager colaboran para facilitar el desarrollo front-end
 * Vea cómo el paso de personalización del front-end está completamente disociado de AEM y no requiere conocimientos de AEM.
 
-Este artículo desarrolla estos aspectos básicos para que pueda llevar a cabo el primer paso de configuración y crear un nuevo sitio a partir de una plantilla que luego pueda personalizar con herramientas front-end.
+Este artículo se basa en estos aspectos básicos para que pueda realizar el primer paso de configuración y crear un sitio para una plantilla que luego pueda personalizar con herramientas front-end.
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo crear rápidamente un nuevo sitio de AEM con una plantilla del sitio. Después de leer, debería haber logrado lo siguiente:
+AEM Este documento le ayuda a comprender cómo crear rápidamente un sitio con una plantilla de sitio de. Después de leer, debería haber logrado lo siguiente:
 
 * Entender cómo obtener plantillas del sitio de AEM.
-* Obtenga información sobre cómo crear un nuevo sitio con una plantilla.
+* Aprenda a crear un sitio con una plantilla.
 * Consulte cómo descargar la plantilla del nuevo sitio para facilitarla al desarrollador front-end.
 
 ## Función responsable {#responsible-role}
@@ -65,7 +65,7 @@ Una vez descargado, puede cargarlo en su entorno de AEM como lo haría con cualq
 
 ## Instalación de una plantilla del sitio {#installing-template}
 
-Usar una plantilla para crear un nuevo sitio es muy sencillo.
+Usar una plantilla para crear un sitio es fácil.
 
 1. Inicie sesión en el entorno de creación de AEM y vaya a la consola Sites.
 
@@ -171,7 +171,7 @@ Ahora ha completado la configuración. Los autores de contenido ahora pueden emp
 Ahora que ha completado esta parte del Recorrido de creación rápida de sitios de AEM, debe hacer lo siguiente:
 
 * Entender cómo obtener plantillas del sitio de AEM.
-* Obtenga información sobre cómo crear un nuevo sitio con una plantilla.
+* Aprenda a crear un sitio con una plantilla.
 * Consulte cómo descargar la plantilla del nuevo sitio para facilitarla al desarrollador front-end.
 
 Aproveche este conocimiento y continúe con su Recorrido de creación rápida de sitios de AEM revisando el documento [Configurar la canalización,](pipeline-setup.md) donde creará una canalización front-end para administrar la personalización del tema de su sitio.

@@ -2,9 +2,9 @@
 title: Creación y administración de canales en Screens as a Cloud Service
 description: En esta página se describe cómo crear y administrar canales en Pantallas as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1086'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Este documento le ayuda a comprender la creación y administración de canales p
 >**Requisitos previos**
 >Antes de comenzar esta sección de la Guía, revise lo siguiente [Creación y administración de proyectos en Pantallas as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-Siga los pasos a continuación para crear un nuevo canal de secuencia en Pantallas as a Cloud Service:
+Siga los pasos a continuación para crear un canal de secuencia en Pantallas as a Cloud Service:
 
 1. Vaya al proveedor de contenido de Screens.
 

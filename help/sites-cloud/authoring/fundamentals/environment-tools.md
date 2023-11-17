@@ -2,10 +2,10 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2164'
-ht-degree: 94%
+source-wordcount: '2163'
+ht-degree: 93%
 
 ---
 
@@ -120,7 +120,7 @@ Para añadir un recurso a la página, selecciónelo y arrástrelo a la ubicació
 
 * Un componente existente del tipo adecuado.
    * Por ejemplo, puede arrastrar un recurso de tipo imagen hacia un componente de imagen.
-* Un [marcador de posición](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) en el sistema de párrafos para crear un componente nuevo del tipo correspondiente.
+* A [placeholder](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) en el sistema de párrafos para crear un componente del tipo adecuado.
    * Por ejemplo, puede arrastrar un recurso de tipo imagen al sistema de párrafos para crear un componente de imagen.
 
 >[!NOTE]

@@ -2,9 +2,9 @@
 title: Uso del CRXDE Lite
 description: El CRXDE Lite AEM forma parte del inicio rápido de la y está disponible para acceder y modificar el repositorio en los entornos de desarrollo local dentro del explorador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1683'
 ht-degree: 2%
 
 ---
@@ -206,7 +206,7 @@ Para crear una propiedad con el CRXDE Lite:
 
 ## Creación de un archivo {#creating-a-file}
 
-Para crear un nuevo archivo con el CRXDE Lite:
+Para crear un archivo con el CRXDE Lite:
 
 1. Abra el CRXDE Lite en el explorador.
 1. En el [**Panel Explorador**,](#explorer-pane) haga clic con el botón derecho en el componente donde desee crear el archivo y seleccione **Crear**, entonces **Crear archivo**.

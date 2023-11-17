@@ -2,10 +2,10 @@
 title: Introducción a los programas de zona protegida
 description: Descubra cuáles son las diferencias entre los programas de zona protegida y los programas de producción.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '475'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '474'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Un programa de zona protegida es uno de los dos tipos de programas disponibles e
 
 ## Creación automática {#auto-creation}
 
-Los programas de zona protegida incluyen la creación automática. Siempre que cree un nuevo programa de zona protegida, Cloud Manager hará lo siguiente automáticamente:
+Los programas de zona protegida incluyen la creación automática. Siempre que cree un programa de zona protegida, Cloud Manager hará lo siguiente automáticamente:
 
 * Agregar AEM Sites y AEM Assets como soluciones en su programa.
 * Establecer un repositorio Git de proyecto con un proyecto de ejemplo basado en el arquetipo del [proyecto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)

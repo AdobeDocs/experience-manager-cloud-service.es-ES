@@ -2,9 +2,9 @@
 title: Modelos de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en la creación de fragmentos de contenido y cómo crear fragmentos de contenido con contenido estructurado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2935'
 ht-degree: 93%
 
 ---
@@ -297,7 +297,7 @@ Esto especifica una ruta raíz para los fragmentos a los que se hace referencia.
 
 * **Permitir creación de fragmentos**
 
-  Esto permitirá al autor del fragmento crear un nuevo fragmento basado en el modelo adecuado.
+  Esto permite al autor del fragmento crear un fragmento basado en el modelo adecuado.
 
    * **fragmentreferencecomposite**: permite al autor del fragmento crear un compuesto seleccionando varios fragmentos.
 

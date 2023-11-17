@@ -2,9 +2,9 @@
 title: Permisos personalizados
 description: Descubra cómo puede utilizar permisos personalizados para crear nuevos perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1501'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ En esta sección se detallan estos pasos. Puede que le resulte útil consultar l
 
 ### Crear un nuevo perfil de producto {#create}
 
-Primero debe crear un nuevo perfil de producto para poder asignar permisos personalizados.
+Primero debe crear un perfil de producto para poder asignar permisos personalizados.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
@@ -123,10 +123,10 @@ Los siguientes permisos están disponibles para crear perfiles personalizados.
 
 | Permiso | Descripción |
 |---|---|
-| Creación de programa | Permitir que los usuarios creen un nuevo programa |
+| Creación de programa | Permitir que los usuarios creen un programa |
 | Acceso al programa | Permitir que los usuarios tengan acceso a los programas |
 | Edición de programa | Permitir que los usuarios editen programas |
-| Crear entorno | Permitir que los usuarios creen un nuevo entorno |
+| Crear entorno | Permitir que los usuarios creen un entorno |
 | Edición de entorno | Permitir que los usuarios actualicen y editen entornos |
 | Registros de entorno leídos | Permitir que los usuarios lean los registros del entorno |
 | Creación de canalización | Permitir que los usuarios creen nuevas canalizaciones |
@@ -145,7 +145,7 @@ Los permisos de nivel de organización hacen referencia a permisos que siempre s
 
 Los siguientes permisos son permisos de nivel de organización:
 
-* **Creación de programa** : Este permiso permite a los usuarios crear un nuevo programa en la organización.
+* **Creación de programa** : Este permiso permite a los usuarios crear un programa en la organización.
 * **Acceso a información de repositorio** Este permiso de nivel de inquilino/organización permite a los usuarios generar un nombre de usuario, una contraseña y una URL de repositorio para acceder y contribuir en el proyecto del cliente.
    * El nombre de usuario y la contraseña para acceder al repositorio serán comunes en todos los repositorios de la organización, pero la URL del repositorio será única para cada programa.
    * Consulte el documento [Acceso a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md) para obtener más información.

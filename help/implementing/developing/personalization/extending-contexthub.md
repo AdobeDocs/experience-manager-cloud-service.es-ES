@@ -2,9 +2,9 @@
 title: Ampliación de ContextHub
 description: Defina nuevos tipos de módulos y tiendas de ContextHub cuando los que se proporcionan no cumplan con los requisitos de su solución
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ En la mayoría de los casos, solo es necesario un candidato y la prioridad se pu
 
 ## Creación de tipos de módulos de IU de ContextHub {#creating-contexthub-ui-module-types}
 
-Cree tipos de módulos de IU personalizados cuando los que están [instalado con ContextHub](sample-modules.md) no cumpla con sus requisitos. Para crear un tipo de módulo de interfaz de usuario, cree un nuevo procesador de módulos de interfaz de usuario ampliando `ContextHub.UI.BaseModuleRenderer` y, a continuación, registrarla con `ContextHub.UI`.
+Cree tipos de módulos de IU personalizados cuando los que están [instalado con ContextHub](sample-modules.md) no cumpla con sus requisitos. Para crear un tipo de módulo de interfaz de usuario, cree un procesador de módulos de interfaz de usuario ampliando el `ContextHub.UI.BaseModuleRenderer` y, a continuación, registrarla con `ContextHub.UI`.
 
 Para crear un procesador de módulos de IU, cree un `Class` que contiene la lógica que procesa el módulo de interfaz de usuario. Como mínimo, la clase debe realizar las siguientes acciones:
 

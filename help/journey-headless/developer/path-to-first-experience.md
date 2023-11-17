@@ -2,10 +2,10 @@
 title: Ruta hacia la primera experiencia para usar AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de AEM sin encabezado, comprenderá los pasos para aplicar su primera experiencia sin encabezado en AEM, incluidas las consideraciones de planificación, y también aprenderá las prácticas recomendadas para que su ruta sea lo más fluida posible.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 98%
+source-wordcount: '1999'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +70,7 @@ Durante la fase de desarrollo, se recomienda trabajar con un entorno de desarrol
 
 Los desarrolladores necesitan un entorno de desarrollo de AEM configurado con los modelos de contenido rellenados. El desarrollador desarrolla el cliente que consumirá el contenido desde AEM sin in encabezado, ya que los autores de contenido siguen creándolo. Por eso las definiciones de API son muy importantes. Al aprovechar el SDK de AEM, el desarrollador puede crear un enlace de prueba para que se puedan crear pruebas de cliente y unidad a fin de garantizar que el cliente pueda procesar el contenido correctamente.
 
-Los autores de contenido crean contenido en función de los modelos de contenido que se han definido en el entorno de ensayo. Con la herramienta de creación de fragmentos de contenido, el autor crea un nuevo fragmento de contenido o edita un fragmento de contenido existente. Antes de publicarlo, el autor puede obtener una previsualización del aspecto que tendrá para el cliente si trabaja con el desarrollador para impulsar el modelo de contenido al desarrollo o configurar un entorno de desarrollador solo para que los autores puedan obtener una vista previa del aspecto que tendría para el cliente.
+Los autores de contenido crean contenido en función de los modelos de contenido que se han definido en el entorno de ensayo. Con la herramienta de creación de fragmentos de contenido, el autor crearía un fragmento de contenido o editaría uno existente. Antes de publicarlo, el autor puede obtener una previsualización del aspecto que tendrá para el cliente si trabaja con el desarrollador para impulsar el modelo de contenido al desarrollo o configurar un entorno de desarrollador solo para que los autores puedan obtener una vista previa del aspecto que tendría para el cliente.
 
 ## Configuración {#setup}
 

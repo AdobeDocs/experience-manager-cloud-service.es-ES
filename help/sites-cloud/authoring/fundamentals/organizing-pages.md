@@ -2,10 +2,10 @@
 title: Crear y organizar páginas
 description: AEM Aprenda a organizar el sitio web creando y administrando páginas con la ayuda de los usuarios de la página de inicio de sesión de.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 97%
+source-wordcount: '2448'
+ht-degree: 96%
 
 ---
 
@@ -210,7 +210,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
    >
    >Consulte [Convenciones de asignación de nombres a páginas](#page-naming-conventions).
 
-   La información mínima necesaria para crear una página nueva es el **Título**.
+   La información mínima necesaria para crear una página es la siguiente **Título**.
 
    ![Proporcionar título de página](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 

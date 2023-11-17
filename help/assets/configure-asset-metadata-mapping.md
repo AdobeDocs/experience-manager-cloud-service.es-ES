@@ -2,10 +2,10 @@
 title: Configuración de la asignación de metadatos de recursos entre Workfront y Experience Manager Assets
 description: Asigne los campos de metadatos del recurso entre Adobe Workfront y las aplicaciones as a Cloud Service del Experience Manager. Como resultado de la asignación de campos de metadatos, cuando envía un recurso de Workfront a Experience Manager Assets, puede ver los metadatos del recurso asignado en Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 3%
+source-wordcount: '1023'
+ht-degree: 4%
 
 ---
 
@@ -56,7 +56,7 @@ Para enviar la imagen de Workfront a Experience Manager Assets:
 
 1. Haga clic en el icono Menú principal ![Mostrar menú](assets/show-menu.svg) disponible en la esquina superior derecha de la aplicación de Adobe Workfront y, a continuación, haga clic en **[!UICONTROL Proyectos]**.
 
-1. Clic **[!UICONTROL Nuevo proyecto]** para crear un nuevo proyecto.
+1. Clic **[!UICONTROL Nuevo proyecto]** para crear un proyecto.
 
 1. Clic **[!UICONTROL Documentos]** opción disponible en el panel izquierdo, arrastre y, a continuación, seleccione la imagen que debe enviar a Experience Manager Assets.
 
@@ -82,7 +82,7 @@ Para configurar la asignación de metadatos mediante un nuevo formulario de meta
 
 1. Seleccione el formulario de esquema y haga clic en **[!UICONTROL Editar]**.
 
-1. (Opcional) En el Editor de formularios de esquemas de metadatos, haga clic en `+` para crear una nueva pestaña para los campos de Workfront.
+1. (Opcional) En el Editor de formularios de esquemas de metadatos, haga clic en `+` para crear una pestaña para los campos de Workfront.
 
 1. Haga clic en **[!UICONTROL Generar formulario]** y arrastre la pestaña **[!UICONTROL Texto de línea única]** al formulario. Haga clic en el componente en el formulario. En el **[!UICONTROL Generar formulario]** pestaña:
 
@@ -132,11 +132,11 @@ Puede navegar a la imagen en Experience Manager Assets y ver los metadatos asoci
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)

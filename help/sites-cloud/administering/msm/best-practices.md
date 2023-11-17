@@ -4,10 +4,10 @@ description: Conozca las prácticas recomendadas recopiladas por los equipos de 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 95%
+source-wordcount: '1419'
+ht-degree: 94%
 
 ---
 
@@ -66,7 +66,7 @@ Tenga en cuenta que AEM tiene dos enfoques principales para crear Live Copies:
 
 A continuación se indican algunas consideraciones que se deben tener en cuenta al crear un sitio:
 
-* Para crear un nuevo sitio, necesita una [configuración de modelo](creating-live-copies.md#managing-blueprint-configurations).
+* Para crear un sitio, necesita un [configuración de modelo](creating-live-copies.md#managing-blueprint-configurations).
 * Para permitir la selección de rutas de idioma a crear en un sitio nuevo, las raíces de idioma correspondientes deben existir en el modelo (fuente).
 * Una vez [se ha creado un nuevo sitio como Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (mediante **Crear**, luego **Sitio**), los dos primeros niveles de esta Live Copy son *superficiales*. Los elementos secundarios de la página no pertenecen a la relación dinámica, pero se desplegará si se encuentra una relación dinámica que coincida con el activador.
 
