@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 43220614f567bdfad17c6ac9c8b3adcc856ff044
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2068'
 ht-degree: 1%
 
 ---
@@ -502,6 +502,6 @@ __Eventos XDM de perfil:__
 Para obtener más información, consulte los siguientes recursos:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [información general sobre el conector del Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
-- [Eventos del conector del Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
+- [[!DNL Data Connection] descripción general](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] Eventos](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
 - [Información general de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
