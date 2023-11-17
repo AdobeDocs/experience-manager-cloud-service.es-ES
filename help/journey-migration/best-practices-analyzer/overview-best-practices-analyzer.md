@@ -2,10 +2,10 @@
 title: Introducción al Analizador de prácticas recomendadas
 description: AEM Aprenda a utilizar el Analizador de prácticas recomendadas para evaluar el cumplimiento de la implementación de su con las prácticas recomendadas
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 65%
+ht-degree: 51%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 65%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="Información general acerca de Best Practices Analyzer"
->abstract="Best Practices Analyzer proporciona una evaluación de la implementación de AEM actual indicando las áreas que no siguen las prácticas de AEM recomendadas. También proporciona orientación sobre los próximos pasos para adoptar las prácticas recomendadas de AEM. Best Practices Analyzer acelera los procesos de evaluación de la preparación para pasar de una implementación de Adobe Experience Manager (AEM) existente a AEM as a Cloud Service."
+>abstract="Best Practices Analyzer proporciona una evaluación de la implementación de AEM actual indicando las áreas que no siguen las prácticas de AEM recomendadas. También proporciona orientación sobre los próximos pasos para adoptar las prácticas recomendadas de AEM. Además, ayuda a acelerar los procesos de evaluación de la preparación para pasar de una implementación de Adobe Experience Manager AEM AEM () existente a una implementación as a Cloud Service."
 
-Best Practices Analyzer proporciona una evaluación de la implementación de AEM actual indicando las áreas que no siguen las prácticas de AEM recomendadas. También proporciona orientación sobre los próximos pasos para adoptar las prácticas recomendadas de AEM. Best Practices Analyzer acelera los procesos de evaluación de la preparación para pasar de una implementación de Adobe Experience Manager (AEM) existente a AEM as a Cloud Service.
+Best Practices Analyzer proporciona una evaluación de la implementación de AEM actual indicando las áreas que no siguen las prácticas de AEM recomendadas. También proporciona orientación sobre los próximos pasos para adoptar las prácticas recomendadas de AEM. Además, ayuda a acelerar los procesos de evaluación de la preparación para pasar de una implementación de Adobe Experience Manager AEM AEM () existente a una implementación as a Cloud Service.
 
 Esta herramienta genera un informe que identifica las áreas de posible refactorización, que es el primer paso en el viaje de transición a AEM as a Cloud Service.
 
