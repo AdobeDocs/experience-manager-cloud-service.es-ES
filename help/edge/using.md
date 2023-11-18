@@ -3,10 +3,10 @@ title: Uso de Edge Delivery Services
 description: Uso de Edge Delivery Services (EDS)
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 99%
+source-wordcount: '617'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Edge Delivery aprovecha GitHub para que los clientes puedan administrar e implem
 
 ## Uso de Sidekick {#using-sidekick}
 
-AEM Sidekick ofrece una barra de herramientas con opciones según el contexto para que pueda editar, previsualizar y publicar contenido fácilmente. Tras la [instalación](https://www.hlx.live/docs/sidekick-extension), la extensión de AEM Sidekick se puede utilizar en entornos de proyecto o al editar el contenido (por ejemplo, en documentos de Google). Según el entorno, tiene varias acciones disponibles, como Previsualizar, Recargar, Editar y Publicar. También puede cambiar de entorno al utilizar la barra de tareas, pasando de la vista previa a la producción y viceversa.
+AEM Sidekick ofrece una barra de herramientas con opciones según el contexto para que pueda editar, previsualizar y publicar contenido fácilmente. Tras la [instalación](https://www.hlx.live/docs/sidekick-extension), la extensión de AEM Sidekick se puede utilizar en entornos de proyecto o al editar el contenido (por ejemplo, en documentos de Google). Según el entorno, tiene varias acciones disponibles, como Previsualizar, Recargar, Editar y Publicar. También puede cambiar de entorno al utilizar la barra de tareas, pasando de la vista previa a la producción y a la inversa.
 
 **Para publicar**, abra Sidekick en una página de vista previa y utilice la acción Publicar. Después de hacer clic en Publicar, la versión de vista previa actual de la página estará disponible en los entornos en directo y de producción.
 

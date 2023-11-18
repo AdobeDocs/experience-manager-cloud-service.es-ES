@@ -2,7 +2,7 @@
 title: Tipos de módulos de IU de ContextHub de muestra
 description: ContextHub proporciona varios módulos de IU de ejemplo que puede utilizar en sus soluciones
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -170,7 +170,7 @@ El origen del módulo de IU se encuentra en `/libs/granite/contexthub/components
 
 ### Configuración {#configuration-5}
 
-Instancias del `contexthub.screen-orientation` El módulo de interfaz de usuario no requiere un valor para la configuración detallada. El siguiente texto JSON representa la configuración predeterminada del módulo. El `clickable` la propiedad es `false` de forma predeterminada. Si anula la configuración predeterminada para establecer `clickable` hasta `true`, al hacer clic en el módulo, se muestra una ventana emergente en la que puede seleccionar la orientación.
+Instancias del `contexthub.screen-orientation` El módulo de interfaz de usuario no requiere un valor para la configuración detallada. El siguiente texto JSON representa la configuración predeterminada del módulo. El `clickable` la propiedad es `false` de forma predeterminada. Si anula la configuración predeterminada para establecer `clickable` hasta `true`Al hacer clic en el módulo, se muestra una ventana emergente en la que puede seleccionar la orientación.
 
 ```javascript
 {
@@ -186,7 +186,7 @@ Instancias del `contexthub.screen-orientation` El módulo de interfaz de usuario
 
 ## Tipo de módulo de IU de contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-El `contexthub.tagcloud` El módulo de IU muestra información sobre las etiquetas. En la barra de herramientas, el módulo de IU muestra el número de etiquetas. La ventana emergente muestra una nube de etiquetas y un cuadro de texto para añadir nuevas etiquetas. El módulo de IU obtiene información de un almacén de ContextHub denominado tagcloud que se basa en la variable `contexthub.tagcloud` candidato de tienda.
+El `contexthub.tagcloud` El módulo de IU muestra información sobre las etiquetas. En la barra de herramientas, el módulo de IU muestra el número de etiquetas. La ventana emergente muestra una nube de etiquetas y un cuadro de texto para agregar nuevas etiquetas. El módulo de IU obtiene información de un almacén de ContextHub denominado tagcloud que se basa en la variable `contexthub.tagcloud` candidato de tienda.
 
 ![módulo contexthub.tagcloud](assets/tagcloud-module.png)
 
@@ -210,7 +210,7 @@ Instancias del `contexthub.tagcloud` El módulo de interfaz de usuario no requie
 
 ## Tipo de módulo de IU de granite.profile {#granite-profile-ui-module-type}
 
-El `granite.profile` El módulo de IU de ContextHub muestra el nombre para mostrar del usuario actual. La ventana emergente muestra el nombre de inicio de sesión del usuario y le permite cambiar el valor del nombre para mostrar. El módulo de interfaz de usuario obtiene información de un almacén de ContextHub denominado perfil que se basa en la variable [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) candidato de tienda.
+El `granite.profile` El módulo de IU de ContextHub muestra el nombre para mostrar del usuario actual. La ventana emergente muestra el nombre de inicio de sesión del usuario y permite cambiar el valor del nombre para mostrar. El módulo de interfaz de usuario obtiene información de un almacén de ContextHub denominado perfil que se basa en la variable [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) candidato de tienda.
 
 ![módulo granite.profile](assets/profile-module.png)
 

@@ -2,9 +2,9 @@
 title: Servicio de notificación de Screens en Screens as a Cloud Service
 description: En esta página se describe cómo configurar el servicio de notificaciones en Pantallas as a Cloud Service.
 index: true
-source-git-commit: 81ce7954479366e40b47325577e1450f3d7a4c29
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '125'
 ht-degree: 4%
 
 ---
@@ -24,6 +24,6 @@ En AEM Screens Cloud, los clientes pueden solicitar alertas sobre el estado de i
 
 * Nombre del cliente
 * OrgID de IMS
-* Frecuencia de programación: especifique la hora o la frecuencia en horas (por ejemplo, 1) a las que el monitor debe enviar correos electrónicos.
+* Frecuencia de programación: especifique la hora o la frecuencia en horas (por ejemplo, 1) a las que este monitor debe enviar correos electrónicos.
 * Tiempo de espera de ping: especifica el intervalo en minutos tras el cual se debe considerar que un dispositivo no está accesible.
 * ID de correo electrónico : ID de correo electrónico a los que se enviará el informe

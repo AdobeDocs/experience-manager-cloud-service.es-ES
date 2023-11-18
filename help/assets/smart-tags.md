@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2461'
 ht-degree: 6%
@@ -123,7 +123,7 @@ Para crear y entrenar un modelo para las etiquetas específicas de su empresa, s
 1. Cree las etiquetas necesarias y la estructura de etiquetas adecuada. Cargue las imágenes relevantes en el repositorio de DAM.
 1. Entrada [!DNL Experience Manager] interfaz de usuario, acceso **[!UICONTROL Assets]** > **[!UICONTROL Formación sobre etiquetas inteligentes]**.
 1. Haga clic en **[!UICONTROL Crear]**. Proporcione un **[!UICONTROL Título]**, **[!UICONTROL Descripción]**.
-1. Haga clic en el icono de carpeta en **[!UICONTROL Etiquetas]** field. Se abre una ventana emergente.
+1. Haga clic en el icono de carpeta en **[!UICONTROL Etiquetas]** field. Se abrirá una ventana emergente.
 1. Busque o seleccione las etiquetas adecuadas de las etiquetas existentes en `cq-tags` que desee agregar al modelo. Haga clic en **[!UICONTROL Siguiente]**.
 
    >[!NOTE]

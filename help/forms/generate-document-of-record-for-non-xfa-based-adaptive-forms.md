@@ -2,10 +2,10 @@
 title: Cómo generar un documento de registro (DoR) para AEM Forms
 description: Obtenga información sobre cómo generar una plantilla para un documento de registro (DoR) para Forms adaptable.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4142'
-ht-degree: 96%
+source-wordcount: '4140'
+ht-degree: 95%
 
 ---
 
@@ -112,7 +112,7 @@ Puede utilizar la acción de envío de correo electrónico, la acción de envío
 
 Los formularios adaptables y las plantillas de documento de registro correspondientes pueden evolucionar a lo largo del tiempo. Puede elegir entre agregar, quitar o modificar campos a un formulario adaptable o a una plantilla de documento de registro.
 
-Cuando se realizan cambios en una plantilla de documento de registro y se carga la plantilla modificada en AEM Forms, el editor de formularios adaptables detecta automáticamente los enlaces modificados y le informa sobre los componentes de formulario adaptables que requieren nuevos enlaces. Permite realizar actualizaciones incrementales en una plantilla de documento de registro.
+Al cambiar una plantilla de documento de registro y cargar la plantilla modificada en AEM Forms, el editor de Forms adaptable detecta automáticamente los enlaces modificados y le informa sobre los componentes de formulario adaptable que requieren nuevos enlaces. Permite realizar actualizaciones incrementales en una plantilla de documento de registro.
 
 Por ejemplo, una organización, *We.Retail*, tiene una plantilla de documento de registro basada en AcroForm, *we-retail-Invoice.pdf*. La plantilla tiene el siguiente aspecto:
 

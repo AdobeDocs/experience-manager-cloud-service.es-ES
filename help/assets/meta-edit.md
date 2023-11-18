@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 Los metadatos son información adicional sobre el recurso en el que se puede buscar. Se extrae automáticamente al cargar una imagen. Puede editar los metadatos existentes o agregar nuevas propiedades de metadatos a los campos existentes (por ejemplo, cuando un campo de metadatos está en blanco).
 
-Dado que las empresas necesitan vocabularios de metadatos controlados y fiables, [!DNL Experience Manager Assets] no permite la adición ad hoc de nuevas propiedades de metadatos. Aunque los autores no pueden agregar nuevos campos de metadatos para los recursos, sí pueden hacerlo los desarrolladores. Consulte [Creación de una nueva propiedad de metadatos para los recursos](meta-edit.md#editing-metadata-schema).
+Dado que las empresas necesitan vocabularios de metadatos controlados y fiables, [!DNL Experience Manager Assets] no permite agregar nuevas propiedades de metadatos bajo demanda. Aunque los autores no pueden agregar nuevos campos de metadatos para los recursos, sí pueden hacerlo los desarrolladores. Consulte [Creación de una nueva propiedad de metadatos para los recursos](meta-edit.md#editing-metadata-schema).
 
 ## Edición de metadatos para un recurso {#editing-metadata-for-an-asset}
 

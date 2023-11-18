@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 1%
@@ -144,9 +144,10 @@ El controlador también requiere una llamada a la función para que funcione la 
    * Asigne cualquier variable adicional contenida en la vista rápida.
 
       * Actualice el `loadQuickView(sku,*var1*,*var2*)` llame a si agrega más variables.
+
    * Cree un `loadQuickView` () en la página, fuera del visor.
 
-      Por ejemplo, lo siguiente escribe el valor de SKU en la consola del explorador:
+     Por ejemplo, lo siguiente escribe el valor de SKU en la consola del explorador:
 
    ```xml {.line-numbers}
    function loadQuickView(sku){
@@ -156,9 +157,7 @@ El controlador también requiere una llamada a la función para que funcione la 
 
    * Cargue una página de HTML de pruebas en un servidor web y ábrala.
 
-      Las variables de la vista rápida están asignadas. La llamada a la función está configurada. Y la consola del explorador escribe el valor de la variable en la consola del explorador. Para ello, utiliza la función de ejemplo proporcionada.
-
-
+     Las variables de la vista rápida están asignadas. La llamada a la función está configurada. Y la consola del explorador escribe el valor de la variable en la consola del explorador. Para ello, utiliza la función de ejemplo proporcionada.
 
 1. Ahora puede utilizar una función para invocar una ventana emergente simple en la vista rápida. El siguiente ejemplo utiliza un `DIV` para ver una ventana emergente.
 1. Aplicar estilo a la ventana emergente `DIV` de la siguiente manera. Añada un estilo adicional como desee.
@@ -192,7 +191,7 @@ El controlador también requiere una llamada a la función para que funcione la 
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
-           document.getElementById("quickview_div").style.display="block"; // show popup
+           document.getElementById("quickview_div").style.display="block"; // show pop-up
        }
    </script>
    ```

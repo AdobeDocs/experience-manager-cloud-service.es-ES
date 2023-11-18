@@ -2,10 +2,10 @@
 title: Recorrido del autor de contenido sin encabezado de AEM
 description: Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles sin encabezado de AEM, sus funcionalidades, y cómo diseñar el contenido en su primer proyecto de contenido sin encabezado.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 88%
+source-wordcount: '873'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ Esta guía le llevará por los temas más importantes para que, al completarla, 
 
 * Conozca lo que es la entrega de contenido sin encabezado y sus beneficios.
 * Comprenderá las funciones sin encabezado de AEM y cómo trabajan conjuntamente para ofrecer una experiencia sin encabezado.
-* Tenga la capacidad de crear contenido para su proyecto sin encabezado de AEM.
+* AEM Puede crear contenido para su proyecto sin encabezado de.
 
 ## Recorridos de documentación de AEM {#documentation-journeys}
 

@@ -2,9 +2,9 @@
 title: Publicar contenido traducido sin encabezado
 description: Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1359'
 ht-degree: 83%
 
 ---
@@ -155,7 +155,7 @@ A partir de este punto, [inicie y administre su trabajo de traducción igual que
 * Obtener información general sobre qué es la entrega de contenido sin encabezado.
 * Tener un conocimiento básico de las funciones de AEM sin encabezado.
 * Conocer las funciones de traducción de AEM y cómo se relacionan con el contenido sin encabezado.
-* Tener la posibilidad de empezar a traducir su propio contenido sin encabezado.
+* Poder empezar a traducir su propio contenido sin encabezado.
 
 Ya está listo para traducir su propio contenido sin encabezado en AEM. Aun así, AEM es una herramienta potente y hay muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la [sección de Recursos adicionales](#additional-resources) para obtener más información acerca de las funciones que ha visto en este recorrido.
 

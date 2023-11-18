@@ -2,9 +2,9 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan para crear una página que se utiliza como base para la nueva página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3279'
+source-wordcount: '3278'
 ht-degree: 8%
 
 ---
@@ -449,7 +449,7 @@ Define el contenido inicial que tendrá una nueva página al crearla:
 * Se combina con la estructura ( `/structure`) al crear una página.
 * Las páginas existentes no se actualizarán si el contenido inicial cambia después de la creación.
 * El `root` El nodo contiene una lista de componentes para definir qué está disponible en la página resultante.
-* Si el contenido se añade a un componente en modo de estructura y dicho componente se desbloquea posteriormente (o viceversa), este contenido se utiliza como contenido inicial.
+* Si el contenido se añade a un componente en modo de estructura y dicho componente se desbloquea posteriormente (o a la inversa), este contenido se utiliza como contenido inicial.
 
 ### Diseño {#layout}
 

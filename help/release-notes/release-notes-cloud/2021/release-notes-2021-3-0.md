@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.3.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2021.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -74,9 +74,9 @@ Póngase en contacto con el representante de su Adobe para ver una demostración
 
 * Ahora, el componente de detalles del producto se puede utilizar y configurar en cualquier página de contenido
 
-* Lanzamiento del sitio de referencia de CIF Venia el 25 de marzo de 2021, que incluye la versión más reciente de los componentes principales de CIF v1.9.0. Consulte [Sitio de referencia de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) para obtener más información.
+* CIF CIF Lanzamiento del sitio de referencia de Venia el 25 de marzo de 2021, que incluye la versión más reciente de componentes principales (v1.9.0) de la versión de Venia. Consulte [Sitio de referencia de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) para obtener más información.
 
-* Componentes principales de CIF v1.9.0. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) para obtener más información.
+* CIF Lanzamiento de los componentes principales de la versión 1.9.0 de. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) para obtener más información.
 
 
 ## Cloud Manager {#cloud-manager}

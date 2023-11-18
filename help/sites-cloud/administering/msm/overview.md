@@ -4,10 +4,10 @@ description: Obtenga una introducción para reutilizar contenido con las potente
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 94%
+source-wordcount: '2698'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ El Administrador de varios sitios (MSM) le permite usar el mismo contenido del s
    * Crear contenido una vez y después
    * reutilizarlo en otras áreas (mediante [Live Copies](#live-copies)) del mismo sitio u otros.
 * A continuación, MSM mantiene las relaciones activas entre el contenido de origen y sus Live Copies para lo siguiente:
-   * Al llevar a cabo cambios en el contenido de origen, se sincronizan el origen y las Live Copies.
+   * Al cambiar el contenido de origen, se sincronizan el origen y las Live Copies.
    * Puede hacer ajustes solo en el contenido de las Live Copies desconectando la relación activa para subpáginas o componentes individuales.
 
 Esta página proporciona información general sobre cómo reutilizar contenido con MSM. Las siguientes páginas tratan en detalle los problemas relacionados.
@@ -189,7 +189,7 @@ En el ejemplo anterior, `/content/wknd/language-masters/en` es la ubicación mae
 
 * El contenido siguiente `/content/wknd/language-masters/en` es el origen.
 * El contenido siguiente `/content/wknd/language-masters/en` se copia debajo de `/content/wknd/us/en/` y `/content/wknd/ca/en` nodos. Estas son Live Copies.
-* Los autores realizan cambios en las páginas siguientes `/content/wknd/language-masters/en`.
+* Los autores cambian las páginas a continuación `/content/wknd/language-masters/en`.
 * Cuando se activa, MSM sincroniza estos cambios con Live Copies.
 
 ### Live Copies: composición {#live-copies-composition}
@@ -320,10 +320,10 @@ Los siguientes pasos describen el procedimiento estándar de uso de MSM para reu
 1. Determine la configuración de despliegue que desea utilizar.
 
    1. MSM [instala varias configuraciones de despliegue](live-copy-sync-config.md#installed-rollout-configurations) que pueden satisfacer varios casos de uso.
-   1. Opcionalmente, puede [crear una configuración de despliegue](live-copy-sync-config.md#creating-a-rollout-configuration) si es necesario.
+   1. Opcionalmente, puede [creación de una configuración de despliegue](live-copy-sync-config.md#creating-a-rollout-configuration) si es necesario.
 
 1. Determine dónde debe [especificar las configuraciones de despliegue que se van a utilizar](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) y configúrelas según sea necesario.
-1. Si es necesario, [cree una configuración de modelo](creating-live-copies.md#creating-a-blueprint-configuration) que identifique el contenido de origen de Live Copy.
+1. Si es necesario, [crear una configuración de modelo](creating-live-copies.md#creating-a-blueprint-configuration) que identifica el contenido de origen de Live Copy.
 1. [Cree una Live Copy.](creating-live-copies.md#creating-a-live-copy)
 1. Realice los cambios necesarios en el contenido de origen. Debe utilizar el proceso normal de revisión y aprobación de contenido que ha establecido su organización.
 1. [Despliegue](creating-live-copies.md#rolling-out-a-blueprint) el modelo o [sincronice la Live Copy](creating-live-copies.md#synchronizing-a-live-copy) con los cambios.

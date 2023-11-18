@@ -2,10 +2,10 @@
 title: 'Novedades y diferencias: Adobe Experience Manager as a Cloud Service'
 description: 'Novedades y diferencias: Adobe Experience Manager (AEM) as a Cloud Service.'
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1889'
-ht-degree: 94%
+source-wordcount: '1891'
+ht-degree: 93%
 
 ---
 
@@ -182,7 +182,7 @@ Otro requisito común para los desarrolladores es el acceso rápido a los archiv
 
 Debido a la clara separación de código y contenido, los desarrolladores pueden utilizar un proceso particular para actualizar contenido como parte de una implementación. Los casos de uso habituales del contenido mutable son:
 
-* Contenido estándar *predeterminado* que forma parte del proyecto del cliente (por ejemplo, carpetas, plantillas, flujos de trabajo, etc.)
+* Standard *predeterminado* contenido que forma parte del proyecto del cliente (por ejemplo, carpetas, plantillas, flujos de trabajo, etc.)
 
 * Definiciones de índices de búsqueda
 

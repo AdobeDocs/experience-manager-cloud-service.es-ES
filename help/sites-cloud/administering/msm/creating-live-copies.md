@@ -4,10 +4,10 @@ description: Aprenda a crear y sincronizar Live Copies para reutilizar el conten
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -417,7 +417,7 @@ Una vez [suspendida](#suspending-inheritance-from-page-properties), la acción *
 
 ![Botón Reanudar](../assets/resume.png)
 
-Al seleccionarlo, se muestra el cuadro de diálogo. Puede seleccionar una sincronización, si es necesario, y confirmar la acción.
+Al seleccionarlo, se muestra el cuadro de diálogo. Si es necesario, puede seleccionar una sincronización y confirmar la acción.
 
 #### Reanudación de una página Live Copy desde la Información general de Live Copy {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -467,7 +467,7 @@ Para especificar o cambiar la profundidad:
 
 ### Cancelación de la herencia de un componente {#cancelling-inheritance-for-a-component}
 
-Cancele la herencia de Live Copy de un componente para que ya no se sincronice con el componente de origen. Si es necesario, puede habilitar la herencia en un momento posterior.
+Cancele la herencia de Live Copy de un componente para que ya no se sincronice con el componente de origen. Puede habilitar la herencia en un momento posterior si es necesario.
 
 >[!NOTE]
 >

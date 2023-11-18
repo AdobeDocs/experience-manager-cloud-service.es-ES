@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2020.11.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2020.11.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.11.0."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 18%
+source-wordcount: '1262'
+ht-degree: 19%
 
 ---
 
@@ -62,7 +62,7 @@ La de la siguiente versión (2020.12.0) será el 17 de diciembre de 2020
    * Los usuarios pueden navegar por el cuadro de diálogo Vínculo de correo electrónico mediante la variable `Tab` clave.
    * El flujo de trabajo para crear perfiles de codificación de vídeo es más fácil de usar dada la mejora del lector de pantalla.
    * Al navegar mediante `Tab` , el enfoque se desplaza a los elementos de la interfaz de usuario adecuados en el flujo de trabajo para crear un vídeo interactivo.
-   * La página Publicar, la página Editar recurso, la página Editar recortes inteligentes y la página Editor de conjuntos de imágenes se han mejorado para cumplir con los estándares web. Los usuarios de tecnología de asistencia (AT) ahora pueden navegar fácilmente por estas páginas y realizar acciones como recortar imágenes.
+   * La página Publicar, la página Editar recurso, la página Editar recortes inteligentes y la página Editor de conjuntos de imágenes se han mejorado para cumplir con los estándares web. Los usuarios de tecnología de asistencia (AT) ahora pueden navegar fácilmente por estas páginas y actuar en ellas, como recortar imágenes.
    * Se han mejorado los visores para permitir que los usuarios naveguen con un teclado.
    * Los usuarios del teclado y del lector de pantalla pueden utilizar la funcionalidad de recorte.
    * Los usuarios del teclado pueden administrar mejor los puntos interactivos.
@@ -73,9 +73,9 @@ La de la siguiente versión (2020.12.0) será el 17 de diciembre de 2020
 
 ### Novedades {#what-is-new-commerce}
 
-* Lanzamiento del sitio de referencia de CIF Venia el 11 de noviembre de 2020, que incluye la versión más reciente de los componentes principales de CIF v1.5.0. Consulte [Sitio de referencia de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) para obtener más información.
+* CIF CIF Lanzamiento del sitio de referencia de Venia el 11 de noviembre de 2020, que incluye la versión más reciente de componentes principales de la versión v1.5.0 de la versión de Venia, el 2020. Consulte [Sitio de referencia de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) para obtener más información.
 
-* Componentes principales de CIF v1.5.0. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) para obtener más información.
+* CIF Lanzamiento de los componentes principales de la versión 1.5.0 de. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) para obtener más información.
 
 ### Correcciones de errores {#bug-fixes-commerce}
 

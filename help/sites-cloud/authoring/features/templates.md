@@ -2,10 +2,10 @@
 title: Creación de plantillas de página
 description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no son tareas exclusivas de los desarrolladores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4538'
-ht-degree: 87%
+source-wordcount: '4535'
+ht-degree: 86%
 
 ---
 
@@ -73,7 +73,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * O directamente en: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Puede [crear una carpeta para las plantillas](#creating-a-template-folder-admin), si lo necesita.
 * [Crea una plantilla nueva](#creating-a-new-template-template-author), que inicialmente estará vacía.
-* [Defina propiedades adicionales](#defining-template-properties-template-author) para la plantilla, si es necesario
+* [Definición de propiedades adicionales](#defining-template-properties-template-author) para la plantilla si es necesario
 * [Editar la plantilla](#editing-templates-template-authors) para definir lo siguiente:
    * [Estructura](#editing-a-template-structure-template-author): contenido predefinido que no se puede cambiar en las páginas creadas con la plantilla.
    * [Contenido inicial](#editing-a-template-initial-content-author): contenido predefinido que se puede cambiar en las páginas creadas con la plantilla.
@@ -351,8 +351,8 @@ Esto permite definir los detalles del diseño.
 
 La ventana de configuración se divide en dos.
 
-* En la parte izquierda del cuadro de diálogo, debajo de la sección **Política**, puede seleccionar una política existente.
-* En el lado derecho del cuadro de diálogo, debajo de la sección **Propiedades**, puede establecer las propiedades específicas del tipo de componente.
+* En el lado izquierdo del cuadro de diálogo, debajo de **Política**, puede seleccionar una directiva existente o seleccionar una existente.
+* En el lado derecho del cuadro de diálogo, debajo de **Propiedades**, puede establecer las propiedades específicas del tipo de componente.
 
 Las propiedades disponibles dependen del componente seleccionado. Por ejemplo, para un componente de texto, las propiedades definen las opciones de copiar y pegar, las opciones de formato y el estilo de párrafo, entre otras opciones.
 

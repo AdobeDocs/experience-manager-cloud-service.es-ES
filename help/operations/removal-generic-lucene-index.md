@@ -2,7 +2,7 @@
 title: Eliminación del índice Lucene genérico
 description: Obtenga información acerca de la eliminación planificada de índices Lucene genéricos y cómo puede verse afectado.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Para admitir volúmenes de datos de clientes más grandes, Adobe AEM ya no crea 
 
 El Adobe ya ha ajustado los costes de índice a través de la `costPerEntry` y `costPerExecution` para garantizar que otros índices como `/oak:index/pathreference` se utilizan con preferencia siempre que sea posible.
 
-Las aplicaciones de cliente que utilizan consultas que aún dependen de este índice deben actualizarse inmediatamente para utilizar otros índices existentes, que pueden personalizarse si es necesario. Como alternativa, se pueden añadir nuevos índices personalizados a la aplicación del cliente. AEM Puede encontrar las instrucciones completas para la administración de índices en as a Cloud Service en la [documentación de indexación](/help/operations/indexing.md).
+Las aplicaciones de cliente que utilizan consultas que aún dependen de este índice deben actualizarse inmediatamente para utilizar otros índices existentes, que se pueden personalizar si es necesario. Como alternativa, se pueden añadir nuevos índices personalizados a la aplicación del cliente. AEM Puede encontrar las instrucciones completas para la administración de índices en as a Cloud Service en la [documentación de indexación](/help/operations/indexing.md).
 
 ## ¿Se Ve Afectado? {#are-you-affected}
 
@@ -129,7 +129,7 @@ Históricamente, el índice Lucene genérico se ha utilizado para admitir la bú
 
 #### Búsqueda del selector de campos de ruta {#picker-search}
 
-AEM incluye un componente de cuadro de diálogo personalizado con el tipo de recurso de Sling `granite/ui/components/coral/foundation/form/pathfield`AEM , que proporciona un explorador o selector para seleccionar otra ruta de acceso de la. El selector de campos de ruta predeterminado, que se utiliza cuando no hay ningún campo personalizado `pickerSrc` se define en la estructura de contenido, representa una barra de búsqueda en el cuadro de diálogo emergente.
+AEM incluye un componente de cuadro de diálogo personalizado con el tipo de recurso de Sling `granite/ui/components/coral/foundation/form/pathfield`AEM , que proporciona un explorador o selector para seleccionar otra ruta de acceso de la. El selector de campos de ruta predeterminado, que se utiliza cuando no hay ningún campo personalizado `pickerSrc` La propiedad se define en la estructura de contenido y representa una barra de búsqueda en el cuadro de diálogo emergente.
 
 Los tipos de nodo con los que se puede buscar se pueden especificar utilizando el `nodeTypes` propiedad.
 

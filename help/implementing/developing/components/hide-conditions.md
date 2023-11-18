@@ -2,7 +2,7 @@
 title: Uso de Ocultar condiciones
 description: Ocultar condiciones se puede utilizar para determinar si un recurso de componente se procesa o no.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 2%
@@ -45,7 +45,7 @@ Al definir la expresión Hide, tenga en cuenta:
 
 * Para ser válido, se debe expresar el ámbito en el que se encuentra la propiedad (por ejemplo, `cqDesign.myProperty`).
 * Los valores son de solo lectura.
-* Las funciones (si son necesarias) deben limitarse a un conjunto determinado proporcionado por el servicio.
+* Las funciones (si es necesario) deben limitarse a un conjunto determinado proporcionado por el servicio.
 
 ## Ejemplos {#example}
 

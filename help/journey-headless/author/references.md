@@ -2,10 +2,10 @@
 title: Obtenga información sobre el uso de referencias en fragmentos de contenido
 description: Obtenga información sobre el uso de referencias en fragmentos de contenido para los contenidos, otros fragmentos y archivos (medios). Introduzca la necesidad y la mecánica de los fragmentos anidados para la creación de CMS sin encabezado.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 91%
+source-wordcount: '705'
+ht-degree: 84%
 
 ---
 
@@ -27,13 +27,13 @@ Este artículo se basa en estos conceptos para que pueda comprender cómo utiliz
    * Referencias de contenidos
    * Referencias de recursos/medios
    * Referencias a fragmentos
-   * Referencias Ad hoc desde dentro de un bloque de texto
+   * Referencias improvisadas desde un bloque de texto
 
 ## Qué son las referencias {#what-are-references}
 
 Las referencias son simplemente un mecanismo para conectar los recursos, ya sea otro contenido, recursos (como en las imágenes) u otros fragmentos. Aunque son muy similares, existen algunas diferencias.
 
-Algunas referencias tienen tipos de datos específicos (por ejemplo, Referencias de contenidos y Referencias a fragmentos), mientras que otras se agregan simplemente como una referencia dentro de un bloque de texto (referencias de recursos y referencias Ad hoc).
+Algunas referencias tienen tipos de datos dedicados (por ejemplo, Referencias de contenido y Referencias de fragmento), mientras que otras simplemente se añaden como referencia dentro de un bloque de texto (referencias de recursos y referencias improvisadas).
 
 ![Fragmentos de contenido: referencias](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -96,7 +96,7 @@ Al usar la pestaña **Árbol de estructura** del Editor de fragmentos de conteni
 
 ## Referencias Ad hoc {#adhoc-references}
 
-Las referencias Ad hoc se pueden agregar como un vínculo simple dentro de un bloque de texto:
+Las referencias improvisadas se pueden añadir como un vínculo simple dentro de un bloque de texto:
 
 ![Fragmentos de contenido: referencias Ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 

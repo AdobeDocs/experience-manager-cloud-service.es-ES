@@ -3,7 +3,7 @@ title: Prácticas recomendadas de consulta e indexación
 description: Aprenda a optimizar los índices y las consultas en función de las directrices de prácticas recomendadas de Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3128'
 ht-degree: 1%
@@ -147,12 +147,12 @@ Para explicar una consulta, haga lo siguiente:
       * `Read first page of results` : ejecute la consulta y lea la primera &quot;página&quot; de 20 resultados (replicando las prácticas recomendadas para ejecutar consultas).
       * `Include Node Count` - ejecutar la consulta y leer el conjunto de resultados completo (generalmente no se recomienda esto: consulte [Índice de recorrido](#index-traversal)).
 
-#### Ventana emergente Explicación de consulta {#query-explanation-popup}
+#### Ventana emergente Explicación de la consulta {#query-explanation-popup}
 
-![Ventana emergente Explicación de consulta](./assets/query-explanation-popup.png)
+![Ventana emergente Explicación de la consulta](./assets/query-explanation-popup.png)
 
-Después de seleccionar `Explain`, al usuario se le mostrará una ventana emergente que describe el resultado de la explicación de la consulta (y la ejecución, si está seleccionada).
-Esta ventana emergente incluye detalles de:
+Después de seleccionar `Explain`A continuación, se muestra al usuario una ventana emergente que describe el resultado de la explicación de la consulta (y la ejecución, si está seleccionada).
+Esta ventana emergente incluye detalles de lo siguiente:
 * Los índices utilizados al ejecutar la consulta (o ningún índice si la consulta se ejecutaría mediante [Recorrido del repositorio](#repository-traversal)).
 * El tiempo de ejecución (si `Include Execution Time` casilla de verificación estaba activada) y recuento de resultados leídos (si `Read first page of results` o `Include Node Count` casillas de verificación marcadas).
 * El plan de ejecución, que permite un análisis detallado de cómo se ejecuta la consulta: consulte [Lectura del Plan de ejecución de consultas](#reading-query-execution-plan) para saber cómo interpretar esto.

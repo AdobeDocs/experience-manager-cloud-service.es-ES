@@ -2,9 +2,9 @@
 title: Uso del transformador de contenido
 description: AEM Aprenda a transformar la estructura de contenido con el fin de prepararse para migrar a la as a Cloud Service.
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '638'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ El transformador de contenido está empaquetado con la variable [Herramienta de 
 
    ![imagen](/help/journey-migration/content-transformer/assets/ct-4.png)
 
-1. Puede seleccionar todos los problemas o problemas específicos y realizar acciones como moverlos, quitarlos y cambiarles el nombre para resolverlos. También se pueden añadir rutas personalizadas utilizando **Añadir rutas** botón en la esquina superior derecha.
+1. Puede seleccionar todos los problemas o problemas específicos y moverlos, quitarlos o cambiarles el nombre para resolverlos. También se pueden añadir rutas personalizadas utilizando **Añadir rutas** botón en la esquina superior derecha.
 
    >[!NOTE]
    > Al utilizar la operación de movimiento, se recomienda mover todas las rutas a una sola carpeta (por ejemplo, en `/etc/packages/content-transformation/paths`), de modo que cuando se instalen los paquetes de copia de seguridad para devolver la instancia al estado original, la carpeta (`/etc/packages/content-transformation/paths`) se puede eliminar mediante la operación de eliminación para reducir el tamaño del repositorio.

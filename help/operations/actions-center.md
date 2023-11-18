@@ -2,10 +2,10 @@
 title: Centro de acciones
 description: Aproveche el Centro de Acciones para actuar convenientemente sobre incidentes y otra información importante
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 93%
+ht-degree: 79%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 AEM as Cloud Service envía notificaciones al Centro de acciones por correo electrónico cuando se producen incidentes críticos que requieren una acción inmediata y recomendaciones proactivas para optimizaciones. Algunos ejemplos incluyen una cola bloqueada o un conjunto de credenciales que caducan; el conjunto completo de tipos de notificación el Centro de acciones se puede ver en la [tabla siguiente](#supported-notification-types), que se ampliará con el tiempo.
 
-Cuando se recibe una notificación por correo electrónico del Centro de acciones, se puede hacer clic en ella para abrir el Centro de acciones de AEM as a Cloud Service, con una ventana emergente que muestra contexto adicional en el que se explica la acción recomendada para el cliente.
+AEM Cuando se recibe una notificación por correo electrónico del Centro de acciones, se puede hacer clic en ella para abrir el Centro de acciones de un as a Cloud Service, con una ventana emergente que muestra un contexto adicional que explica la acción que debe realizar un cliente.
 
 Además de mostrar información sobre la notificación de correo electrónico a la que se acaba de hacer clic, el Centro de acciones sirve como un lugar centralizado en el que se pueden ver y administrar el conjunto de notificaciones actuales y antiguas. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -35,7 +35,7 @@ Para configurar la recepción de notificaciones por correo electrónico del Cent
 
 ## Flujo de usuario detallado {#detailed-user-flow}
 
-Al hacer clic en el correo electrónico, se le dirigirá al Centro de acciones, y se abrirá una ventana emergente que muestra el contexto de la notificación en la que hizo clic y, en algunos casos, enlaces a información adicional que describe cómo realizar acciones correctivas. También puede acceder al Centro de acciones directamente en [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), donde puede seleccionar el programa y el entorno relevantes.
+Al hacer clic en el correo electrónico, se le lleva al Centro de acciones, con una ventana emergente que muestra el contexto de la notificación en la que ha hecho clic y, en algunos casos, vínculos a información adicional que describe cómo realizar acciones correctivas. También puede acceder al Centro de acciones directamente en [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), donde puede seleccionar el programa y el entorno relevantes.
 
 ![Detalles del problema](/help/operations/assets/incident-details.png)
 
@@ -45,7 +45,7 @@ En el Centro de acciones, puede ver una lista de otras notificaciones recientes.
 
 ![Lista de notificaciones](/help/operations/assets/notification-list.png)
 
-En la mayoría de los casos, la notificación debe proporcionar todo el contexto necesario para resolver el problema. Sin embargo, si tiene preguntas para el Soporte de Adobe, puede hacer clic en el enlace **Contactar con Soporte** en la ventana emergente. Esto mostrará un formulario desde el cual puede describir la pregunta y enviarla para crear el ticket de Soporte, que también incluirá una referencia a la notificación específica para que un ingeniero de Soporte de Adobe tenga el contexto relevante.
+En la mayoría de los casos, la ventana emergente debe proporcionar todo el contexto necesario para resolver el problema. Sin embargo, si tiene alguna duda sobre la asistencia de Adobe, puede hacer clic en el **Atención al cliente** en la ventana emergente. Esto mostrará un formulario desde el cual puede describir la pregunta y enviarla para crear el ticket de Soporte, que también incluirá una referencia a la notificación específica para que un ingeniero de Soporte de Adobe tenga el contexto relevante.
 
 ![Contacto con el soporte 1](/help/operations/assets/contact-support1.png)
 

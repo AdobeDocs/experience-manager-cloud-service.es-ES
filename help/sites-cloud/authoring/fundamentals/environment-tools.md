@@ -2,10 +2,10 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2158'
-ht-degree: 90%
+source-wordcount: '2161'
+ht-degree: 87%
 
 ---
 
@@ -189,7 +189,7 @@ Al hacer clic en el componente, se resaltará el componente en el editor de pág
 
   Los componentes de una página básica tienen las opciones habituales.
 
-  Si el componente en el que hace clic en el árbol se puede editar, aparecerá un icono de llave inglesa a la derecha del nombre. Al hacer clic en este icono, se iniciará directamente el cuadro de diálogo de edición del componente.
+  Si el componente en el que hace clic en el árbol se puede editar, aparecerá un icono de llave inglesa a la derecha del nombre. Al hacer clic en este icono, se inicia el cuadro de diálogo de edición del componente.
 
   ![Botón Editar árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -288,7 +288,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* Según las características de la página, es posible que algunos modos no estén disponibles.
 >* El acceso a algunos modos requiere los permisos o privilegios adecuados.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a las restricciones de espacio.
->* Existe un [método abreviado de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).
+>* Hay un [atajo de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre **Previsualizar** y el modo seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).
 >
 
 ## Selección de la ruta {#path-selection}
@@ -315,10 +315,10 @@ El navegador de rutas está organizado como la [vista de columna](/help/sites-cl
 
 ![Navegador de rutas](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Una vez seleccionado un recurso, el botón **Seleccionar** en la parte superior derecha del cuadro de diálogo se activa. Seleccione para confirmar la selección o **Cancelar** para cancelar.
+* Una vez seleccionado un recurso, la variable **Seleccionar** en la parte superior derecha del cuadro de diálogo se activa. Seleccione para confirmar la selección o **Cancelar** para cancelar.
 * Si el contexto permite la selección de varios recursos, al seleccionar un recurso también se activa el botón **Seleccionar**, pero también se agrega un recuento del número de recursos seleccionados a la esquina superior derecha de la ventana. Haga clic en la **X** junto al número para anular toda la selección.
 * Al navegar por el árbol, su ubicación se refleja en las rutas de exploración en la parte superior del cuadro de diálogo. Estas rutas de exploración también se pueden utilizar para saltar rápidamente dentro de la jerarquía de recursos.
-* Puede utilizar en cualquier momento el campo de búsqueda en la parte superior del cuadro de diálogo. Haga clic en **X** en el campo de búsqueda para borrar la búsqueda.
+* Puede utilizar en cualquier momento el campo de búsqueda situado en la parte superior del cuadro de diálogo. Haga clic en **X** en el campo de búsqueda para borrar la búsqueda.
 * Para limitar la búsqueda, puede mostrar las opciones de filtro y filtrar los resultados en función de una ruta determinada.
 
   ![Opción Filtros](/help/sites-cloud/authoring/assets/filters-option.png)

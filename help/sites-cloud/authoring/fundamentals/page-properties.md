@@ -2,10 +2,10 @@
 title: Edición de las propiedades de página
 description: AEM Obtenga información sobre cómo definir las propiedades necesarias para administrar una página en la administración de páginas en la.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -315,7 +315,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 * **Ver**
 
    * Una lista de las páginas afectadas
-      * Si es necesario, puede seleccionar o anular la selección
+      * Si es necesario, puede seleccionar o deseleccionar
       * Pestañas
          * Las propiedades se ordenan en pestañas, al igual que cuando se visualizan las propiedades de una página.
    * Un subconjunto de propiedades

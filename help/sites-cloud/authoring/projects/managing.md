@@ -2,10 +2,10 @@
 title: Administración de proyectos
 description: Proyectos le permite organizar su proyecto al agrupar los recursos en una entidad a la que se puede acceder y se puede administrar en la consola Proyectos
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 84%
+source-wordcount: '875'
+ht-degree: 82%
 
 ---
 
@@ -38,7 +38,7 @@ El procedimiento para crear un proyecto es el mismo de un proyecto a otro. La di
 
    ![Creación de un proyecto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Defina el **Título** y la **Descripción** y añada una imagen en **miniatura** si es necesario. También puede añadir o eliminar usuarios y a qué grupo pertenecen. Además, haga clic en **Avanzadas** para añadir un nombre utilizado en la dirección URL.
+1. Defina el **Título** y **Descripción** y añada un **Miniatura** imagen si es necesario. También puede añadir o eliminar usuarios y a qué grupo pertenecen. Además, haga clic en **Avanzadas** para añadir un nombre utilizado en la dirección URL.
 
    ![Adición de detalles del proyecto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -138,7 +138,7 @@ Para que un proyecto quede inactivo (o activo), haga lo siguiente:
    Es posible que deba añadir este mosaico si aún no está en el proyecto. Consulte [Añadir mosaicos](#adding-items-to-a-tile).
 
 1. Seleccione **Editar**.
-1. Cambie el selector de **Activo** a **Inactivo** (o viceversa).
+1. Cambiar el selector de **Activo** hasta **Inactivo** (o a la inversa).
 
    ![Activación de un proyecto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 

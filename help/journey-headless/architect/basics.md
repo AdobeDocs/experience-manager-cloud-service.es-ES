@@ -2,10 +2,10 @@
 title: Información sobre los conceptos básicos del modelado de contenido
 description: Conozca los aspectos básicos del modelado de contenido para su de contenido sin encabezado de CMS utilizando fragmentos de contenido.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 94%
+source-wordcount: '900'
+ht-degree: 93%
 
 ---
 
@@ -109,7 +109,7 @@ El tipo de datos se puede configurar para que los autores de fragmentos puedan h
 
 >[!NOTE]
 >
->También puede crear referencias ad hoc utilizando vínculos dentro de bloques de texto.
+>También puede crear referencias improvisadas utilizando vínculos dentro de bloques de texto.
 
 ## Niveles de estructura (fragmentos anidados) {#levels-of-structure-nested-fragments}
 

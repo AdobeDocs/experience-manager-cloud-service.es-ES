@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 5%
@@ -87,7 +87,7 @@ A continuación se indican los pasos para agregar etiquetas a un recurso:
 
 1. Iniciar sesión en [!DNL Experience Manager Assets].
 1. Clic **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**, seleccione el recurso y haga clic en **[!UICONTROL Propiedades]** para abrir las propiedades del recurso.
-1. En el **[!UICONTROL Básico]** pestaña, haga clic en el icono de carpeta en **[!UICONTROL Etiquetas]** metadatos. Se abre una ventana emergente.
+1. En el **[!UICONTROL Básico]** pestaña, haga clic en el icono de carpeta en **[!UICONTROL Etiquetas]** metadatos. Se abrirá una ventana emergente.
 1. Busque o seleccione las etiquetas adecuadas de las etiquetas existentes en `cq-tags`. Puede asignar varias etiquetas al recurso.
 
    Puede ordenar la estructura de las etiquetas en orden de subida o de bajada, según el **[!UICONTROL Nombre]** (orden alfabético), **[!UICONTROL Creado]** fecha, o **[!UICONTROL Modificado]** fecha. En la siguiente ilustración, la estructura de etiquetas se ordena alfabéticamente en función de la variable **[!UICONTROL Nombre]**.

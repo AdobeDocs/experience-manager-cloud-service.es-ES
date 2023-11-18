@@ -2,9 +2,9 @@
 title: Creación de contenido orientado mediante el modo de Orientación
 description: El modo segmentación y el componente de Target proporcionan herramientas para crear contenido para experiencias
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '5306'
+source-wordcount: '5304'
 ht-degree: 87%
 
 ---
@@ -585,7 +585,7 @@ Si aparece contenido inesperado en la página al cargar un perfil, compruebe la 
 
    La página cambia para mostrar el contenido dirigido al contexto actual.
 
-1. Para realizar cambios en las ofertas que se muestran, cambie al modo de Orientación. Con la actividad de simulación seleccionada, edite las ofertas para el contexto configurado en el modo de vista previa.
+1. Para cambiar las ofertas que se muestran, cambie al modo de Orientación. Con la actividad de simulación seleccionada, edite las ofertas para el contexto configurado en el modo de vista previa.
 
 ## Configuración de opciones del componente de Target {#configuring-target-component-options}
 

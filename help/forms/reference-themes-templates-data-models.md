@@ -2,10 +2,10 @@
 title: AEM ¿Cómo se obtienen las temáticas y plantillas de referencia para los formularios de?
 description: AEM Forms proporciona temáticas de formularios adaptables, plantillas y modelos de datos de formulario de ejemplo para ayudarle a crear formularios rápidamente.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 046ffed13569ca3f9c104fb4525d28361873277a
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 88%
+source-wordcount: '867'
+ht-degree: 86%
 
 ---
 
@@ -116,7 +116,7 @@ La plantilla básica le ayuda a crear rápidamente un formulario de inscripción
 Después, los formularios adaptables pueden interactuar con los servidores de Microsoft Dynamics 365 y Salesforce para habilitar los flujos de trabajo empresariales. Por ejemplo:
 
 * Escriba datos en Microsoft Dynamics 365 y Salesforce al enviar formularios adaptables.
-* Escriba datos en Microsoft Dynamics 365 y Salesforce a través de entidades personalizadas definidas en el modelo de datos de formulario y viceversa.
+* escribir datos en Microsoft Dynamics 365 y Salesforce a través de entidades personalizadas definidas en el modelo de datos de formulario y a la inversa;
 * Consulte el servidor de Microsoft Dynamics 365 y Salesforce para obtener datos y rellenar previamente formularios adaptables.
 * Lea los datos del servidor de Microsoft Dynamics 365 y Salesforce.
 

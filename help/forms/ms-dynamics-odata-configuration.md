@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 94%
+source-wordcount: '985'
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 * consultar datos en el servidor de [!DNL Microsoft Dynamics] y rellenar automáticamente formularios adaptables;
 * escribir datos en [!DNL Microsoft Dynamics] sobre el envío de formularios adaptables;
-* escribir datos en [!DNL Microsoft Dynamics] mediante entidades personalizadas definidas en el modelo de datos de formulario y viceversa.
+* Escritura de datos en [!DNL Microsoft Dynamics] mediante entidades personalizadas definidas en el modelo de datos de formulario y a la inversa
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 

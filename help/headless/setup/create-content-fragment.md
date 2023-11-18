@@ -2,10 +2,10 @@
 title: 'Creación de fragmentos de contenido: configuración sin encabezado'
 description: Aprenda a utilizar fragmentos de contenido de AEM para diseñar, crear, depurar y utilizar contenido independiente de las páginas para una entrega sin encabezado.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,7 @@ Seleccione la ubicación y el modelo que desee utilizar para crear el fragmento 
    * Los modelos disponibles dependen de la [**Configuración de nube** que definió para la carpeta de recursos](create-assets-folder.md) en el que está creando el fragmento de contenido.
    * Si el modelo no está disponible, compruebe la configuración de la carpeta de recursos.
 
-   Añada el título, el nombre y, si es necesario, la descripción.
+   Añada el Título, el Nombre y, si es necesario, la Descripción.
 
    ![Cuadro de diálogo Crear fragmento de contenido nuevo](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 

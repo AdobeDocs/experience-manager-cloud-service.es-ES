@@ -2,9 +2,9 @@
 title: Notas de la versión 2023.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1442'
 ht-degree: 20%
 
 ---
@@ -120,6 +120,7 @@ Para los nuevos entornos, la CDN eliminará los parámetros de consulta relacion
 ### Programa de adopción anticipada de Reglas de filtro de tráfico (incluidas las Reglas WAF) {#waf-early-adopter}
 
 Filtre el tráfico en la CDN en función de lo siguiente:
+
 * encabezados y propiedades de solicitud (por ejemplo, dirección IP)
 * patrones de tráfico asociados a tráfico malintencionado
 

@@ -3,10 +3,10 @@ title: Recorrido para desarrolladores de CMS sin encabezado de AEM
 description: Obtenga información sobre el desarrollo sin encabezado mediante Adobe Experience Manager (AEM) como un CMS sin encabezado. Aprender a utilizar funciones como modelos de contenido, fragmentos de contenido y una API de GraphQL para potenciar la entrega de contenido sin encabezado.
 landing-page-description: Obtenga información sobre la entrega e implementación del contenido sin encabezado. Obtenga más información sobre el desarrollo de su estrategia dentro de su empresa.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 97%
+source-wordcount: '1095'
+ht-degree: 95%
 
 ---
 
@@ -28,11 +28,11 @@ Obtenga información sobre las funciones potentes y flexibles sin encabezado, su
 
 La implementación sin encabezado de AEM utiliza modelos de fragmentos de contenido y fragmentos de contenido para centrarse en la creación de fragmentos de contenido estructurados, de canal neutro y reutilizables, así como su entrega en varios canales. Para lograrlo, renuncia a la administración de páginas y componentes, como es habitual en las soluciones de pila completas. Es un patrón de desarrollo moderno y dinámico para implementar experiencias digitales.
 
-Esta guía le conduce por los temas de implementación sin encabezado en AEM, por lo que cuando haya terminado:
+AEM Esta guía le guía por los temas de implementación sin encabezado en la documentación de para que, cuando haya terminado, pueda:
 
 * Comprenderá perfectamente qué es la entrega de contenido sin encabezado y sus ventajas.
 * Comprenderá las funciones sin encabezado de AEM y cómo trabajan conjuntamente para ofrecer una experiencia sin encabezado.
-* Tendrá la posibilidad de realizar los primeros pasos en la implementación de su primer proyecto AEM sin encabezado.
+* AEM Realice los primeros pasos en la implementación de su primer proyecto sin encabezado de.
 
 >[!TIP]
 >

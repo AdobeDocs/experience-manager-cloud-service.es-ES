@@ -2,10 +2,10 @@
 title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar contenido con eficacia para una versión futura. También permiten realizar los cambios para una publicación en el futuro, a la vez que se mantienen las páginas actuales
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 93%
+source-wordcount: '898'
+ht-degree: 94%
 
 ---
 
@@ -102,7 +102,7 @@ Los lanzamientos permiten realizar lo siguiente:
 
 ## La consola Lanzamientos {#the-launches-console}
 
-La consola Lanzamientos proporciona una descripción general de los lanzamientos y le permite realizar acciones con los enumerados. Se puede acceder a la consola desde: 
+La consola Lanzamientos proporciona una descripción general de los lanzamientos y le permite actuar sobre los enumerados. Se puede acceder a la consola desde: 
 
 * La consola **Herramientas**: **Herramientas**, **Sitios** **Lanzamientos**.
 

@@ -4,10 +4,10 @@ description: Obtenga información acerca de las potentes opciones de sincronizac
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -174,7 +174,7 @@ También puede configurar las opciones de configuración de despliegue para una 
 
    ![Herencia de Live Copy de la página principal](../assets/live-copy-inherit.png)
 
-1. Si es necesario, ajuste la marca de **Herencia de Live Copy**. Si se selecciona, la configuración de Live Copy es eficaz en todas las páginas secundarias.
+1. Si es necesario, ajuste el **Herencia de Live Copy** Indicador. Si se selecciona, la configuración de Live Copy es eficaz en todas las páginas secundarias.
 
 1. Borre la propiedad **Heredar configuración de despliegue del elemento principal** y, a continuación, seleccione una o varias opciones de configuración de despliegue de la lista.
 

@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3403'
 ht-degree: 12%
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Funcionalidad de Administrador de varios sitios (MSM) en [!DNL Adobe Experience Manager] permite a los usuarios reutilizar contenido que se crea una vez y se reutiliza en varias ubicaciones web. La misma funcionalidad está disponible para los recursos digitales con el nombre MSM para [!DNL Assets]. Uso de MSM para [!DNL Assets], puede:
@@ -71,7 +71,7 @@ MSM mantiene una relación activa entre el recurso de origen y sus Live Copies p
 
 ## Crear una Live Copy de un recurso {#create-livecopy}
 
-Para crear una Live Copy a partir de uno o varios recursos o carpetas de origen, siga uno de estos procedimientos:
+Para crear Live Copy a partir de uno o varios recursos o carpetas de origen, siga uno de estos procedimientos:
 
 * Método 1: seleccionar los recursos de origen y hacer clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]** en la barra de herramientas de la parte superior.
 * Método 2: en [!DNL Experience Manager] interfaz de usuario, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]** desde la esquina superior derecha de la interfaz.
@@ -251,7 +251,7 @@ Puede cancelar la herencia de Live Copy para un:
 * Variación de fragmento de contenido
 * Campo de datos del fragmento de contenido
 
-Esto significa que el elemento ya no está sincronizado con el componente de origen. Si es necesario, puede habilitar la herencia en un momento posterior.
+Esto significa que el elemento ya no está sincronizado con el componente de origen. Puede habilitar la herencia en un momento posterior si es necesario.
 
 ### Cancelar herencia {#cancel-inheritance}
 

@@ -5,10 +5,10 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1149'
-ht-degree: 79%
+source-wordcount: '1148'
+ht-degree: 77%
 
 ---
 
@@ -60,7 +60,7 @@ Las tareas asignadas a un grupo aparecen en la bandeja de entrada de todos los m
 Al abrir una tarea, puede ver los detalles de la tarea y realizar las acciones disponibles. Las acciones disponibles para una tarea se definen en la Etapa de tarea de asignación del Forms Workflow asociado.
 
 1. Pulse para seleccionar la miniatura de la tarea. Las opciones para abrir o delegar la tarea seleccionada aparecen en la parte superior.
-1. Pulse **Abrir** para ver los detalles de la tarea y realizar acciones. Se abre la vista de tareas detallada. En esta vista, puede ver los detalles de la tarea y realizar acciones respecto a ella.
+1. Seleccionar **Abrir** para ver los detalles de las tareas y las acciones disponibles. Se abre la vista de tareas detallada. En esta vista, puede ver los detalles de una tarea y actuar en ella.
 
    >[!NOTE]
    >

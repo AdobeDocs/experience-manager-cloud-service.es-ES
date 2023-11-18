@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1943'
 ht-degree: 3%
@@ -17,7 +17,7 @@ Possible topics to cover in this article are below.
 
 * Compile a list of enhancements done in the last ~1 year.
 * Showcase a few prominent use cases (search?) in a screencast.
-* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, popup dialogs, and so on.
+* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, pop-up dialogs, and so on.
 * List all UIs that are keyboard navigable.
 * Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, and so on.
 * Do we need to add support matrix of user tasks with browser and screen reader combinations. Everything may not work in all browsers and/or using all screen readers.
@@ -73,7 +73,7 @@ Muchos elementos de la interfaz de usuario en los que se puede hacer clic o que 
 <!-- TBD items:
 
 * The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
-* How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
+* How to open and browse through the profile pop-up dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
 * Using the [!DNL Experience Manager] tag browser and operating the buttons like delete tag? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
@@ -183,7 +183,7 @@ La funcionalidad de búsqueda se hace accesible mediante la siguiente funcionali
 
 * El título de página, disponible para un lector de pantalla, ayuda a identificar la página como página de búsqueda de recursos.
 * Los usuarios buscan recursos desde el campo Omnisearch. Los usuarios pueden abrirlo con la navegación mediante el teclado o con el método abreviado de teclado `/`.
-* Los usuarios pueden empezar a escribir la palabra clave de búsqueda y, a continuación, seleccionar las sugerencias automáticas utilizando las teclas de flecha. La sugerencia destacada se puede seleccionar mediante el `Return` clave y recursos se buscan para la sugerencia seleccionada.
+* Los usuarios pueden empezar a escribir la palabra clave de búsqueda y, a continuación, seleccionar las sugerencias automáticas utilizando las teclas de flecha. La sugerencia destacada se puede seleccionar mediante las opciones `Return` clave y recursos se buscan para la sugerencia seleccionada.
 * Los lectores de pantalla pueden identificar y anunciar las casillas de verificación de estado mixto (en las que, a menos que seleccione todos los predicados anidados, las casillas de verificación de primer nivel no están seleccionadas y se atraviesan) en el panel Filtros al filtrar los resultados de búsqueda.
 * El enfoque del usuario se desplaza a las opciones de búsqueda una vez cerrado el cuadro Omnisearch.
 

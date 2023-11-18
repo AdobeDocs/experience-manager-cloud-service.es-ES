@@ -2,9 +2,9 @@
 title: Su bandeja de entrada
 description: Aprenda a utilizar las notificaciones que llegan a la bandeja de entrada para administrar sus tareas.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '911'
 ht-degree: 94%
 
 ---
@@ -148,7 +148,7 @@ Para ambas vistas (Lista y Calendario) puede definir la siguiente configuración
 
    En función de si ha abierto un cuadro de diálogo, un asistente o una página de documentación, puede:
 
-   * Confirmar la acción adecuada; por ejemplo, Reasignar.
+   * Confirme la acción adecuada; por ejemplo, reasignar.
    * Cancelar la acción
    * Seleccione la flecha hacia atrás para volver a la bandeja de entrada; por ejemplo, si se ha abierto un asistente de acciones o una página de documentación, puede volver a la bandeja de entrada.
 
