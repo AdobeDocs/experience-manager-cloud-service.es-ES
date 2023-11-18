@@ -2,9 +2,9 @@
 title: Permisos personalizados
 description: Descubra cómo puede utilizar permisos personalizados para crear nuevos perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 33d14ac66fa46c25f1e027aa86848768fd0271ff
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1559'
 ht-degree: 2%
 
 ---
@@ -96,11 +96,6 @@ Ahora que tiene un nuevo perfil de producto, puede asignarle permisos personaliz
 
 1. Seleccione el **Añadir todo** en la parte superior del **Permisos disponibles** para agregar todos los permisos.
 
-1. Si el perfil siempre debe tener todos los elementos de permisos, considere la posibilidad de utilizar la variable **Inclusión automática** opción.
-
-   * **Activado** : todos los elementos de permisos actuales y los elementos de permisos futuros se moverán a Elementos de permisos incluidos y, al guardarlos, se aplicarán en consecuencia.
-   * **Desactivado** - Todos los elementos de permiso se moverán de nuevo a los elementos de permiso disponibles y, al guardarlos, se aplicarán según corresponda.
-
 1. Seleccionar **Guardar** cuando haya terminado de definir los elementos de permiso para el nuevo perfil de producto.
 
 El nuevo perfil de producto ahora se guarda con sus permisos personalizados.
@@ -129,6 +124,10 @@ Los siguientes permisos están disponibles para crear perfiles personalizados.
 | Crear entorno | Permitir que los usuarios creen un entorno |
 | Edición de entorno | Permitir que los usuarios actualicen y editen entornos |
 | Registros de entorno leídos | Permitir que los usuarios lean los registros del entorno |
+| Administrar variables de entorno | Permitir que los usuarios creen, editen o eliminen configuraciones de entorno |
+| Entorno Restaurar crear | Permitir que los usuarios creen una restauración del entorno |
+| Restablecimiento rápido del entorno de desarrollo | Permitir a los usuarios restablecer el entorno de desarrollo rápido |
+| Gestor de copia de contenido | Permitir a los usuarios administrar las operaciones de copia de contenido |
 | Creación de canalización | Permitir que los usuarios creen nuevas canalizaciones |
 | Eliminación de canalización | Permitir que los usuarios eliminen canalizaciones |
 | Edición de canalización | Permitir que los usuarios editen canalizaciones |
@@ -138,6 +137,15 @@ Los siguientes permisos están disponibles para crear perfiles personalizados.
 | Anular/Rechazar errores importantes de métricas | Permitir que los usuarios anulen o rechacen errores importantes de métricas |
 | Programación de implementaciones de producción | Permitir a los usuarios programar un paso de implementación de producción |
 | Acceso a información de repositorio | Permitir a los usuarios acceder a la información del repositorio y generar una contraseña de acceso |
+| Creación de repositorio | Permitir a los usuarios crear nuevos repositorios de Git |
+| Eliminación del repositorio | Permitir que los usuarios eliminen repositorios de Git |
+| Edición de repositorio | Permitir que los usuarios editen repositorios de Git |
+| Generación de código de repositorio | Permitir que los usuarios generen proyectos a partir de tipos de archivo |
+| Administrador de nombres de dominio | Permitir que los usuarios creen, editen o eliminen nombres de dominio |
+| Administrar Lista de permitidos IP | Permitir a los usuarios crear, editar o eliminar enlaces de lista de permitidos y lista de permitidos IP |
+| Administrador de infraestructura de red | Permitir a los usuarios crear, editar o eliminar la infraestructura de red |
+| Administrador de certificados SSL | Permitir a los usuarios crear, editar o eliminar certificados SSL |
+| Administrador de usuarios de subcuenta de New Relic | Permitir que los usuarios lean/editen usuarios de cuentas secundarias de New Relic |
 
 ### Permisos en el nivel de organización {#organization-level}
 
