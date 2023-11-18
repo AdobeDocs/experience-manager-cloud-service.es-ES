@@ -2,10 +2,10 @@
 title: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 97%
+source-wordcount: '1379'
+ht-degree: 94%
 
 ---
 
@@ -15,20 +15,14 @@ En la siguiente sección se describen las notas generales de la versión de [!DN
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la última versión, 1.9.14, de [!DNL Workfront for Experience Manager enhanced connector] es el 13 de octubre de 2023.
+La fecha de la última versión, 1.9.15 de [!DNL Workfront for Experience Manager enhanced connector] es el 17 de noviembre de 2023.
 
 ## Puntos destacados de la versión {#release-highlights}
 
 La versión más reciente de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes correcciones de errores:
 
-* Cuando las suscripciones a eventos están deshabilitadas en Configuración avanzada, puede seguir seleccionando las opciones para **Suscribirse a los eventos de actualización de documentos para actualizar los metadatos de AEM Assets**, **Publicar todos los recursos del proyecto en Brand Portal al finalizar el proyecto** y **Habilitar la sincronización de comentarios**.
-
-* Algunos de los recursos almacenados en Experience Manager no se representan correctamente al previsualizarlos en Workfront.
-
-* Al reconfigurar la conexión de Experience Manager con Workfront, las suscripciones de eventos como la actualización de sincronización de comentarios, la eliminación o la actualización de documentos no se crean correctamente.
-
-* Mejoras importantes de rendimiento de la API para la creación de carpetas vinculadas, actualizar, habilitar carpetas vinculadas, sincronizar comentarios, habilitar y deshabilitar, guardar la configuración avanzada en el conector.
-
+* AEM Mientras ve la lista de carpetas de, el cuadro de diálogo tarda más de un minuto en cargarse.
+* Autorizado [!DNL Workfront] Los usuarios de reciben registros de errores de autenticación de forma consistente.
 
 >[!NOTE]
 >
@@ -37,7 +31,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 >[!IMPORTANT]
 >
->Adobe le recomienda [actualizar a la versión más reciente 1.9.14](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe le recomienda [actualizar a la versión más reciente 1.9.15](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conocidos {#known-issues}
 
@@ -46,6 +40,16 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 * Cuando utiliza la experiencia clásica de Workfront, la variable **[!UICONTROL Enviar a]** opción disponible en el **[!UICONTROL Más]** La lista desplegable no permite seleccionar el destino de destino en Experience Manager. La opción **[!UICONTROL Enviar a]** funciona correctamente utilizando la lista desplegable **[!UICONTROL Acciones de documento]**. La opción **[!UICONTROL Enviar a]** funciona correctamente para la lista desplegable **[!UICONTROL Más]** y la lista desplegable **[!UICONTROL Acciones de documento]** disponible en la nueva experiencia de Workfront.
 
 ## Versiones anteriores {#previous-releases}
+
+### Versión de octubre de 2023 {#october-2023-release}
+
+* Cuando las suscripciones a eventos están deshabilitadas en Configuración avanzada, puede seguir seleccionando las opciones para **Suscribirse a los eventos de actualización de documentos para actualizar los metadatos de AEM Assets**, **Publicar todos los recursos del proyecto en Brand Portal al finalizar el proyecto** y **Habilitar la sincronización de comentarios**.
+
+* Algunos de los recursos almacenados en Experience Manager no se representan correctamente al previsualizarlos en Workfront.
+
+* Al reconfigurar la conexión de Experience Manager con Workfront, las suscripciones de eventos como la actualización de sincronización de comentarios, la eliminación o la actualización de documentos no se crean correctamente.
+
+* Mejoras importantes de rendimiento de la API para la creación de carpetas vinculadas, actualizar, habilitar carpetas vinculadas, sincronizar comentarios, habilitar y deshabilitar, guardar la configuración avanzada en el conector.
 
 ### Versión de septiembre de 2023 {#september-2023-release}
 
