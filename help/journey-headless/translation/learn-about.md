@@ -2,10 +2,10 @@
 title: Obtenga información sobre el contenido sin encabezado y su traducción en AEM
 description: Aprenda conceptos sin encabezado, cómo se asignan a AEM y la teoría de la traducción de AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 95%
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ Desde que han surgido los sistemas de administración de contenido (CMS) a gran 
 
 ![El CMS de pila completa clásico](/help/journey-headless/developer/assets/full-stack.png)
 
-En un CMS de pila completa, toda la funcionalidad para manipular contenido está en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
+En un CMS de pila completa, la funcionalidad para manipular contenido se encuentra en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
 
 * Hay un solo sistema que mantener.
 * El contenido se administra de forma centralizada.
@@ -47,7 +47,7 @@ Cuando hablamos de un CMS sin encabezado, el CMS administra el contenido y conti
 
 ![CMS sin encabezado](/help/journey-headless/developer/assets/headless-cms.png)
 
-Los servicios que consumen, ya sean experiencias de AR, una tienda web, experiencias móviles, aplicaciones web progresivas (progressive web apps, PWA), etc., reciben contenido del CMS sin encabezado y proporcionan su propia renderización. Se ocupan de proporcionar sus propios HEADS para su contenido.
+Los servicios de consumo, ya sean experiencias de RA, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., incorporan contenido del CMS sin encabezado y proporcionan su propio procesamiento. Se ocupan de proporcionar sus propios HEADS para su contenido.
 
 Omitir el HEAD simplifica el CMS al eliminar la complejidad. Al hacerlo, también se traslada la responsabilidad de procesar el contenido a los servicios que realmente necesitan el contenido y que a menudo son más adecuados para dicho procesamiento.
 

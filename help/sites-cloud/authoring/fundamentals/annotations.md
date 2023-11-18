@@ -2,10 +2,10 @@
 title: Adición de anotaciones de página
 description: Utilice el modo de anotación para dejar anotaciones y bocetos en páginas de la misma manera que utiliza notas adhesivas para ayudarle en el proceso de revisión de contenido.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 91%
+source-wordcount: '676'
+ht-degree: 74%
 
 ---
 
@@ -43,11 +43,11 @@ Las anotaciones solo están visibles en el modo de anotación.
 
    ![Ejemplos de anotaciones](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Toque o haga clic en la anotación para abrir el cuadro de diálogo de anotaciones y ver sus detalles.
+1. Seleccione la anotación para abrir el cuadro de diálogo de anotaciones y ver sus detalles.
 
    ![Detalles de anotación](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. Para salir del modo de anotación y volver al modo anterior, toque o haga clic en el botón X en la parte derecha de la barra de herramientas superior.
+1. Para salir del modo de anotación y volver al anterior, seleccione el botón x en la parte derecha de la barra de herramientas superior.
 
 ## Adición y edición de anotaciones {#annotating-a-component}
 
@@ -55,9 +55,9 @@ Además de ver las anotaciones, el modo Anotar permite crear, editar, mover o el
 
 1. [Iniciar modo de anotación](#annotate-mode) en la página.
 
-1. Haga clic o toque el icono Añadir anotación (símbolo &quot;+&quot; a la izquierda de la barra de herramientas) para empezar a añadir anotaciones.
+1. Seleccione el icono Añadir anotación (símbolo &quot;+&quot; a la izquierda de la barra de herramientas) para empezar a añadir anotaciones.
 
-1. Haga clic o toque el componente necesario (los componentes que se pueden anotar se resaltan con un borde azul) para añadir la anotación y abrir el cuadro de diálogo:
+1. Seleccione el componente necesario (los componentes que se pueden anotar se resaltan con un borde azul) para añadir la anotación y abrir el cuadro de diálogo:
 
    ![Adición de una anotación](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -80,9 +80,9 @@ Además de ver las anotaciones, el modo Anotar permite crear, editar, mover o el
 
 1. Cuando haya terminado de editar una anotación concreta, puede hacer lo siguiente:
 
-   * Haga clic o toque el marcador de texto para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o [eliminar la anotación.](#deleting-annotations)
+   * Seleccione el marcador de texto para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o [eliminar la anotación.](#deleting-annotations)
    * Cambiar la posición del marcador de texto.
-   * Toque o haga clic en una línea de un boceto para seleccionarlo y arrastrarlo a la posición deseada.
+   * Seleccione una línea de esbozo para seleccionarlo y arrastrarlo a la posición deseada.
    * Desplace o copie un componente
       * Todas las anotaciones relacionadas y sus bocetos también se moverán o copiarán, pero su posición en relación con el párrafo seguirá siendo la misma.
 
@@ -101,9 +101,9 @@ Las anotaciones y sus bocetos asociados se pueden eliminar.
 
 1. [Inicie el modo Anotar](#annotate-mode) en la página.
 
-1. Hacer clic en el marcador de texto, o tocarlo, para abrir la anotación.
+1. Seleccione el marcador de texto para abrir la anotación.
 
-1. Toque o haga clic en el icono Eliminar.
+1. Seleccione el icono Eliminar.
 
    ![Eliminar anotación](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
@@ -119,7 +119,7 @@ Solo puede eliminar bocetos específicos, en lugar de toda la anotación con tod
 
 1. [Inicie el modo Anotar](#annotate-mode) en la página.
 
-1. Toque o haga clic en el boceto. AEM lo resalta con un cuadro azul más oscuro.
+1. Seleccione el boceto. AEM lo resalta con un cuadro azul más oscuro.
 
    ![Seleccione el boceto a eliminar](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 

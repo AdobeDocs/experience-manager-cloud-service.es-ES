@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1151'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -34,7 +34,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de marzo de 20
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Sites] {#prerelease-features-sites}
 
-* Los tipos de datos del modelo de contenido ahora se pueden definir como traducibles mediante una sencilla casilla de verificación en el editor de modelos de contenido. Además, las reglas y configuraciones de traducción de AEM se actualizan automáticamente.
+* Los tipos de datos del modelo de contenido ahora se pueden definir como traducibles mediante una sencilla casilla de verificación en el editor de modelos de contenido. AEM Además, las reglas y configuraciones de traducción de la se actualizan automáticamente.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

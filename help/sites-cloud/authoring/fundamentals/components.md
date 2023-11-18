@@ -2,16 +2,16 @@
 title: Componentes
 description: Los componentes son la base de la creación de páginas de contenido en AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '347'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 94%
 
 ---
 
 # Componentes {#components}
 
-Los componentes son la base de la creación de páginas de contenido en Adobe Experience Manager (AEM). Componentes como imágenes, texto, títulos, etc. se pueden arrastrar y soltar fácilmente para crear el contenido.
+Los componentes son la base de la creación de páginas de contenido en Adobe Experience Manager (AEM). Los componentes, como imágenes, texto, títulos, etc., se pueden arrastrar y soltar fácilmente para crear el contenido.
 
 AEM incorpora una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web. Están disponibles durante [la edición de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md) y se agrupan por áreas funcionales principales (denominadas grupos de componentes) para ayudar a efectuar la filtración.
 

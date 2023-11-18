@@ -3,10 +3,10 @@ title: Seguridad de Adobe Experience Manager as a Cloud Service
 description: Obtenga más información sobre las funciones de seguridad de Adobe Experience Manager as a Cloud Service.
 landing-page-description: Obtenga información sobre temas de seguridad importantes relacionados con Experience Manager as a Cloud Service.
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 100%
+source-wordcount: '384'
+ht-degree: 94%
 
 ---
 

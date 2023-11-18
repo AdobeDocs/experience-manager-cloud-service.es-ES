@@ -2,10 +2,10 @@
 title: Implementar el tema personalizado
 description: Aprenda cómo implementar el tema del sitio mediante la canalización.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 96%
+source-wordcount: '1014'
+ht-degree: 88%
 
 ---
 
@@ -42,11 +42,11 @@ AEM Después de confirmar los cambios de personalización de la temática en el 
 
    ![Información general de Cloud Manager](assets/cloud-manager-overview.png)
 
-1. Toque o haga clic en los puntos suspensivos junto a la canalización que necesita iniciar. En el menú desplegable, seleccione **Ejecutar**.
+1. Seleccione los puntos suspensivos junto a la canalización que necesita iniciar. En el menú desplegable, seleccione **Ejecutar**.
 
    ![Ejecutar canalización](assets/run-pipeline.png)
 
-1. En el cuadro de diálogo de confirmación **Ejecutar canalización**, toque o haga clic en **Sí**.
+1. En el **Ejecutar canalización** cuadro de diálogo de confirmación, seleccione **Sí**.
 
    ![Confirmar ejecución de canalización](assets/pipeline-confirm.png)
 
@@ -58,7 +58,7 @@ AEM Después de confirmar los cambios de personalización de la temática en el 
 
 Puede comprobar el estado de la canalización para ver los detalles de su progreso en cualquier momento.
 
-1. Toque o haga clic en los puntos suspensivos junto a la canalización.
+1. Seleccione los puntos suspensivos junto a la canalización.
 
    ![Ver detalles de canalización](assets/view-pipeline-details.png)
 
@@ -68,7 +68,7 @@ Puede comprobar el estado de la canalización para ver los detalles de su progre
 
 >[!TIP]
 >
->En la ventana de detalles de la canalización, puede tocar o hacer clic en **Descargar registro** para cualquier paso de la canalización con fines de depuración en caso de que algún paso falle. La depuración de la canalización está fuera del ámbito de este recorrido. Consulte los documentos técnicos de Cloud Manager en la sección [Recursos adicionales](#additional-resources) de esta página.
+>En la ventana de detalles de la canalización, puede seleccionar **Descargar registro** para cualquier paso de la canalización con fines de depuración en caso de que algún paso falle. La depuración de la canalización está fuera del ámbito de este recorrido. Consulte los documentos técnicos de Cloud Manager en la sección [Recursos adicionales](#additional-resources) de esta página.
 
 ## Validación de las personalizaciones implementadas {#view-customizations}
 
@@ -112,7 +112,7 @@ A continuación se muestran algunos recursos adicionales que profundizan en algu
 * [Tema del sitio AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e): este es el repositorio de GitHub del tema del sitio AEM.
 * [npm](https://www.npmjs.com): los temas de AEM utilizados para construir sitios rápidamente se basan en npm.
 * [webpack](https://webpack.js.org): los temas de AEM utilizados para construir sitios rápidamente dependen del webpack.
-* [Creación y organización de páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md): esta guía detalla cómo administrar las páginas de su sitio AEM si desea personalizarlo aún más después de crearlo a partir de la plantilla.
+* [Crear y organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) AEM : Esta guía detalla cómo administrar las páginas de su sitio de si desea personalizarlo aún más después de crearlo a partir de la plantilla.
 * [Cómo trabajar con el paquete](/help/implementing/developing/tools/package-manager.md): los paquetes permiten importar y exportar el contenido del repositorio. Este documento explica cómo trabajar con paquetes en AEM 6.5, que también se aplica a AEMaaCS.
 * [Recorrido de incorporación](/help/journey-onboarding/overview.md): esta guía sirve como punto de partida para garantizar que sus equipos estén configurados y tengan acceso a AEM as a Cloud Service.
 * [Documentación de Cloud Manager de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es): explore la documentación de Cloud Manager para obtener toda la información detallada sobre sus funciones.

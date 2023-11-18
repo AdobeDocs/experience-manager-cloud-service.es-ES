@@ -2,9 +2,9 @@
 title: Uso del CRXDE Lite
 description: El CRXDE Lite AEM forma parte del inicio rápido de la y está disponible para acceder y modificar el repositorio en los entornos de desarrollo local dentro del explorador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1685'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ La interfaz de usuario del CRXDE Lite aparece de la siguiente manera en el explo
 
 >[!TIP]
 >
->También puede acceder a CRXDE Lite AEM desde el menú de. En el menú principal, seleccione **Herramientas** -> **General** -> **CRXDE Lite**.
+>También puede acceder a CRXDE Lite AEM desde el menú de. En el menú principal, seleccione **Herramientas** > **General** > **CRXDE Lite**.
 
 ## Información general sobre la interfaz de usuario {#overview-of-the-user-interface}
 
@@ -163,7 +163,7 @@ El **Widget de inicio** muestra el usuario que ha iniciado sesión actualmente.
 
 Haga clic en él para iniciar sesión o volver a iniciarla como otro usuario. El `@crx.default` representa que se encuentra en el espacio de trabajo predeterminado (y solo) del repositorio.
 
-El **Preferencias** se puede utilizar para establecer el idioma de la interfaz de usuario y para ver y personalizar las teclas de marcación rápida para varias acciones como guardar, buscar, crear notas, etc.
+El **Preferencias** se puede utilizar para establecer el idioma de la interfaz de usuario y para ver y personalizar las teclas de marcación rápida para diversas acciones como guardar, buscar, crear notas, etc.
 
 ## Creación de una carpeta {#creating-a-folder}
 

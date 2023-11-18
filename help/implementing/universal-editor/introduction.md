@@ -2,10 +2,10 @@
 title: Introducción al editor universal
 description: Descubra cómo el editor universal permite la edición de lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin encabezado y con encabezado. Descubra cómo puede ayudar a los autores de contenido a ofrecer contenidos excepcionales y mayor velocidad, y una experiencia de última generación a los desarrolladores.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 96%
+source-wordcount: '925'
+ht-degree: 89%
 
 ---
 
@@ -34,8 +34,8 @@ Los usuarios suelen pensar que una implementación sin encabezado limita a los a
 
 Los requisitos de una implementación para utilizar el editor universal son muy sencillos y compatibles con lo siguiente:
 
-* **Cualquier arquitectura**: procesamiento del lado del servidor, procesamiento del lado del borde, procesamiento del lado del cliente, etc.
-* **Cualquier marco**: Vanilla AEM o cualquier estructura de terceros como React, Next.js, Angular, etc.
+* **Cualquier arquitectura** : Procesamiento del lado del servidor, procesamiento del lado del borde, procesamiento del lado del cliente, etc.
+* **Cualquier marco** AEM : Vainilla o cualquier marco de terceros como React, Next.js, Angular, etc.
 * **Cualquier alojamiento**: se puede alojar localmente en AEM o en un dominio remoto.
 
 ### Cualquier contenido {#any-content}
@@ -50,7 +50,7 @@ Un autor de contenido debe tener la misma experiencia de edición potente que of
 
 Para un autor de contenidos, estos no se limitan a la información que contienen, sino a cómo se presentan y reciben. El contenido viene con metadatos adicionales y reglas de instrumentación que el editor universal puede comprender y editar, como por ejemplo:
 
-* **Aplicación de diseño y estilo**: mediante un sistema de estilos, el profesional del marketing y el autor de contenido pueden aplicar distintos estilos a su contenido y crear diferentes diseños, como columnas, carruseles, pestañas, acordeones, etc.
+* **Aplicar diseño y estilo** : Mediante un sistema de estilos, el profesional de marketing y el autor del contenido pueden aplicar diferentes estilos a su contenido y crear diferentes diseños para este, como columnas, carruseles, pestañas, acordeones, etc.
 
 ## Valor {#value}
 

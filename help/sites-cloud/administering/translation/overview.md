@@ -4,10 +4,10 @@ description: Obtenga información general sobre cómo traducir contenido para si
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '289'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Si el proveedor de servicios de traducción no proporciona un conector para la i
 
 >[!NOTE]
 >
->El usuario debe ser miembro del grupo `project-administrators` para utilizar las funciones de copia de idioma.
+>El usuario debe ser miembro de `project-administrators` para utilizar las funciones de copia de idioma.
 
 ## Prácticas recomendadas   {#best-practices}
 

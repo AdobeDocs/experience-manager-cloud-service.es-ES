@@ -2,10 +2,10 @@
 title: 'Creación de una solicitud de API: configuración sin encabezado'
 description: Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido y la API de REST de Assets de AEM para administrar fragmentos de contenido.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 95%
+source-wordcount: '652'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ Antes de poder utilizar las API de GraphQL, se debe crear un punto de conexión 
 1. Seleccione **Crear**.
 1. Se abre el cuadro de diálogo **Crear nuevo punto final de GraphQL**. Aquí puede especificar lo siguiente:
    * **Nombre**: nombre del punto de conexión; puede escribir cualquier texto.
-   * **Utilice el esquema GraphQL proporcionado por**: utilice la lista desplegable para seleccionar la configuración requerida.
+   * **Usar esquema de GraphQL proporcionado por**: utilice la lista desplegable para seleccionar la configuración requerida.
 1. Confirme con **Crear**.
 1. En la consola, ahora se muestra una **Ruta** en función de la configuración creada anteriormente. Esta ruta se utiliza para ejecutar consultas de GraphQL.
 

@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: AEM Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante varios mecanismos en la documentación de.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1801'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -224,7 +224,7 @@ De [forma similar a la publicación](#publishing-pages), se puede cancelar la p
 
 ### Cancelación de la publicación desde el editor     {#unpublishing-from-the-editor}
 
-Si desea cancelar la publicación de una página que está editando, seleccione **Cancelar publicación de página** en el menú **Información de página**, de un modo similar a como haría para [publicar la página](#publishing-from-the-editor).
+Al editar una página, si desea cancelar la publicación de esa página, seleccione **Cancelar publicación de página** en el **Información de página** menú, tanto como lo haría [publicar la página](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ Cuando haya introducido o actualizado un número considerable de páginas de con
 
 Para hacerlo, puede utilizar la opción [Administrar publicación](#manage-publication) de la consola Sitios.
 
-1. En la consola Sitios, seleccione la página raíz de árbol que desea publicar o dejar de publicar y seleccione **Administrar publicación**.
+1. En la consola Sitios, seleccione la página raíz del árbol que desea publicar o cancelar la publicación y seleccione **Administrar publicación**.
 1. Se inicia el asistente **Administrar publicación**. Elija si desea publicar o cancelar la publicación y cuándo debe producirse, y seleccione **Siguiente** para continuar.
 1. En el paso **Ámbito**, seleccione la página raíz y seleccione **Incluir tareas secundarias**.
 

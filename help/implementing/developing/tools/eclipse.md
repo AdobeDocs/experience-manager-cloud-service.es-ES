@@ -2,9 +2,9 @@
 title: Herramientas para desarrolladores de AEM para Eclipse
 description: AEM Aprenda a utilizar las herramientas para desarrolladores de Eclipse, un complemento de Eclipse basado en el complemento de Eclipse para Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1191'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ En Eclipse, una perspectiva determina las acciones y vistas disponibles dentro d
 
 _Herramientas de desarrollo de Experience Manager para Eclipse_ AEM AEM Proporcione una Perspectiva de la que le ofrezca un control total sobre sus Proyectos e instancias de la aplicación. AEM Para abrir la Perspectiva de la:
 
-1. En la barra de menús de Eclipse, seleccione **Ventana** -> **Perspectiva** -> **Abrir perspectiva** -> **Otros**.
+1. En la barra de menús de Eclipse, seleccione **Ventana** > **Perspectiva** > **Abrir perspectiva** > **Otros**.
 1. Seleccionar **AEM** en el cuadro de diálogo y haga clic en **Abrir**.
 
 ![AEM La perspectiva de la en Eclipse](assets/eclipse-aem-perspective.png)
@@ -83,7 +83,7 @@ Siga estos pasos para crear el proyecto de ejemplo:
 
    >[!NOTE]
    >
-   >Este paso puede tardar un momento, ya que m2eclipse necesita analizar los catálogos de arquetipos.
+   >Este paso puede tardar un momento, ya que m2eclipse debe analizar los catálogos de tipo de archivo.
 
 1. Elegir `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` en el menú, haga clic en **Siguiente**.
 
@@ -139,7 +139,7 @@ Puede usar el complemento **Nuevo proyecto** para crear la estructura adecuada p
 1. A continuación, haga lo mismo para el `PROJECT.ui.content` y reemplace su carpeta de contenido por la de sus paquetes:
 
    1. En el panel Explorador de proyectos, despliegue `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
-   1. Haga clic con el botón derecho en la carpeta de contenido más profunda y elija **Mostrar en** -> **Explorador del sistema**.
+   1. Haga clic con el botón derecho en la carpeta de contenido más profunda y elija **Mostrar en** > **Explorador del sistema**.
    1. Elimine la carpeta de contenido que debería ver ahora y coloque aquí la carpeta de contenido de su paquete de contenido.
    1. En Eclipse, haga clic con el botón secundario en `PROJECT.ui.content` proyecto y elija **Actualizar**.
 
@@ -194,7 +194,7 @@ Puede usar el complemento **Nuevo proyecto** para crear la estructura adecuada p
 
 Una vez finalizado, el paquete debería estar ejecutándose en la instancia y, al guardarlo, cualquier cambio se sincronizará automáticamente con la instancia.
 
-Si desea volver a compilar un paquete a partir del proyecto, haga clic con el botón derecho en el `PROJECT.ui.apps` o `PROJECT.ui.content` y elija **Ejecutar como** -> **Instalación de Maven**.
+Si desea volver a compilar un paquete a partir del proyecto, haga clic con el botón derecho en el `PROJECT.ui.apps` o `PROJECT.ui.content` y elija **Ejecutar como** > **Instalación de Maven**.
 
 Ahora tiene una carpeta de destino creada con el paquete dentro de (llamada, por ejemplo, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
@@ -206,7 +206,7 @@ Para resolver dependencias no válidas y la definición del proyecto, siga estos
 
 1. Seleccione todos los proyectos creados.
 1. Haga clic con el botón derecho.
-1. En el menú contextual, seleccione **Maven** -> **Actualizar proyectos**.
+1. En el menú contextual, seleccione **Maven** > **Actualizar proyectos**.
 1. Marque **Forzar actualizaciones de instantáneas/versiones**.
 1. Haga clic en **Aceptar**.
 

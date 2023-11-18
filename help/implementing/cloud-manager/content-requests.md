@@ -2,9 +2,9 @@
 title: Explicación de las solicitudes de contenido de Cloud Service
 description: Si ha adquirido licencias de solicitud de contenido de Adobe, obtenga información acerca de los tipos de solicitudes de contenido que mide Adobe Experience Cloud as a Service y las variaciones con las herramientas de informes de análisis de una organización.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 9%
 
 ---
@@ -33,7 +33,7 @@ Consulte también [Tablero de licencias](/help/implementing/cloud-manager/licens
 
 ## Explicación de las solicitudes de contenido de Cloud Service {#about-content-request}
 
-Las solicitudes de contenido se rastrean automáticamente en el perímetro de Adobe Experience Manager AEM () as a Cloud Service AEM, a través del análisis automatizado de los archivos de registro procedentes de la CDN as a Cloud Service de la, aislando las solicitudes que devuelven contenido de HTML (text/html) o JSON (application/json) de la CDN y en función de una serie de reglas de inclusión y exclusión detalladas a continuación. AEM Una solicitud de contenido se produce de forma independiente del contenido devuelto que se proporciona desde las cachés de CDN o que vuelve al origen de CDN (Dispatcher de).
+Las solicitudes de contenido se rastrean automáticamente en el extremo as a Cloud Service AEM de Adobe Experience Manager AEM (), a través del análisis automatizado de los archivos de registro procedentes de la CDN as a Cloud Service de la red de distribución de contenido (CDN), aislando las solicitudes que devuelven contenido de HTML (text/html) o JSON (application/json) de la CDN y en función de varias reglas de inclusión y exclusión detalladas a continuación. AEM Una solicitud de contenido se produce de forma independiente del contenido devuelto que se proporciona desde las cachés de CDN o que vuelve al origen de CDN (Dispatcher de).
 
 AEM Para los clientes que aportan su propia CDN además de las as a Cloud Service, este seguimiento dará como resultado números que no se pueden usar para comparar con las solicitudes de contenido con licencia, que tendrán que ser medidos por el cliente en el extremo de la CDN externa.
 

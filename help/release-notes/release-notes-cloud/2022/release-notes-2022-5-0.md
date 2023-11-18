@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 75%
+source-wordcount: '789'
+ht-degree: 73%
 
 ---
 
@@ -68,7 +68,7 @@ Experience Manager Assets utiliza las funcionalidades de Adobe Sensei AI para ah
 
 * Acceso rápido a la cabina de productos: acceda fácilmente a la información detallada completa del producto con un solo clic en el Editor de sitios
 
-  ![Habilitar lista de deseos](/help/assets/CIF/enable-wishlist.png)
+<!-- Image was not found during PR validation despite correct path   ![Enable wantlist](/help/assets/CIF/enable-wishlist.png) -->
 
 * Compatibilidad con componentes de comercio de marketing adicionales: los componentes se pueden configurar para mostrar una llamada a acción de complemento al carro y de complemento a la lista de deseos.
 

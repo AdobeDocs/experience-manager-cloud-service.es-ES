@@ -2,10 +2,10 @@
 title: Cómo integrar DocuSign con un formulario adaptable
 description: Aprenda a utilizar DocuSign con un formulario adaptable para recopilar firmas electrónicas.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1559'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -186,7 +186,7 @@ Para crear un formulario adaptable habilitado para firmar:
 1. Pulse **[!UICONTROL Crear.]** Se crea un formulario adaptable con firma habilitada. Puede agregar campos de [!DNL DocuSign] al formulario y enviarlo para su firma.
 1. Abra el formulario adaptable en modo de edición. En la pestaña **[!UICONTROL Contenido]**, pulse **[!UICONTROL Contenedor del formulario]** y pulse ![Configurar](assets/configure-icon.svg).
 
-1. En la sección **[!UICONTROL Envío]**, seleccione **[!UICONTROL Enviar con firmas electrónicas de DocuSign]** de la lista desplegable **[!UICONTROL Enviar acción]**.
+1. En el **[!UICONTROL Envío]** , seleccione **[!UICONTROL Enviar con firmas electrónicas de DocuSign]** desde el **[!UICONTROL Acción de envío]** lista desplegable.
 
 1. En la sección **[!UICONTROL Configuración de la acción]**, pulse **[!UICONTROL Añadir]** para agregar un destinatario y especificar la dirección de correo electrónico del destinatario. Pulse **[!UICONTROL Añadir]** para agregar más destinatarios.
 
@@ -211,7 +211,7 @@ Para usar [!DNL DocuSign] en un formulario adaptable existente:
 
 1. Abra el formulario adaptable en modo de edición. En la pestaña **[!UICONTROL Contenido]**, pulse **[!UICONTROL Contenedor del formulario]** y pulse ![Configurar](assets/configure-icon.svg).
 
-1. En la sección **[!UICONTROL Envío]**, seleccione **[!UICONTROL Enviar con firmas electrónicas de DocuSign]** de la lista desplegable **[!UICONTROL Enviar acción]**.
+1. En el **[!UICONTROL Envío]** , seleccione **[!UICONTROL Enviar con firmas electrónicas de DocuSign]** desde el **[!UICONTROL Acción de envío]** lista desplegable.
 
 1. En la sección **[!UICONTROL Configuración de la acción]**, pulse **[!UICONTROL Añadir]** para agregar un destinatario y especificar la dirección de correo electrónico del destinatario. Pulse **[!UICONTROL Añadir]** para agregar más destinatarios.
 

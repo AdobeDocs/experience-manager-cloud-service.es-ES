@@ -2,9 +2,9 @@
 title: Complemento Maven del paquete de contenido de Adobe
 description: AEM Utilice el complemento Maven del paquete de contenido para implementar aplicaciones de
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1832'
 ht-degree: 6%
 
 ---
@@ -26,16 +26,17 @@ Este documento detalla cómo utilizar Maven para administrar estas tareas. Sin e
 >[!NOTE]
 >
 >Paquete **creación** ahora es propiedad de [Complemento Maven del paquete Apache Jackrabbit FileVault.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>
 >* El `content-package-maven-plugin` ya no es compatible con el empaquetado de la versión 1.0.2.
 >* Este artículo describe la **implementación** AEM Uno de los paquetes construidos que se van a lo realiza el complemento Maven del paquete de contenido de Adobe.
 
 ## AEM Paquetes y la estructura del proyecto de {#aem-project-structure}
 
-AEM El as a Cloud Service AEM se adhiere a las prácticas recomendadas más recientes para la administración de paquetes y la estructura de proyectos implementadas por el último tipo de archivo del proyecto de.
+AEM El as a Cloud Service AEM se adhiere a las prácticas recomendadas más recientes para la administración de paquetes y la estructura de proyectos implementadas por el último Arquetipo de proyecto de.
 
 >[!TIP]
 >
->Para obtener más información, consulte la [AEM Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) AEM artículo en la documentación as a Cloud Service de la y el [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) documentación. AEM Ambos son totalmente compatibles con la versión 6.5 de.
+>Consulte la [AEM Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) AEM artículo en la documentación as a Cloud Service de la y el [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) documentación. AEM Ambos son totalmente compatibles con la versión 6.5 de.
 
 ## Obtención del complemento Maven del paquete de contenido {#obtaining-the-content-package-maven-plugin}
 
@@ -267,4 +268,4 @@ AEM AEM El último tipo de archivo del proyecto de implementa la estructura de p
 
 >[!TIP]
 >
->Para obtener más información, consulte la [AEM Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) AEM artículo en la documentación as a Cloud Service de la y el [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) documentación. AEM Ambos son totalmente compatibles con la versión 6.5 de.
+>Consulte la [AEM Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) AEM artículo en la documentación as a Cloud Service de la y el [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) documentación. AEM Ambos son totalmente compatibles con la versión 6.5 de.

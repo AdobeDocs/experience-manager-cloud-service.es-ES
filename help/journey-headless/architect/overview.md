@@ -2,10 +2,10 @@
 title: Recorrido para arquitectos de contenido sin encabezado de AEM
 description: Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles del contenido de AEM sin encabezado, sus funcionalidades y cómo diseñar el contenido en su primer proyecto sin encabezado.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 96%
+source-wordcount: '797'
+ht-degree: 87%
 
 ---
 
@@ -29,7 +29,7 @@ Esta guía le llevará por los temas más importantes para que, al completarla, 
 
 ## Recorridos de documentación de AEM {#documentation-journeys}
 
-[Un recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados. Proporciona una narrativa que ayuda al lector (que puede ser nuevo en AEM) a entender y resolver un problema empresarial de principio a fin, mientras asume un conocimiento previo mínimo de AEM.
+[Un Recorrido de documentación](/help/journey-documentation/documentation-journeys.md) AEM AEM une muchos temas y características diferentes y complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en la comprensión, comprensión y solución de un problema empresarial de principio a fin, mientras que asume un conocimiento previo mínimo de la materia o el conocimiento.
 
 Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
@@ -41,7 +41,7 @@ Este recorrido está diseñado para los arquitectos de contenido. Como arquitect
 
 El recorrido establece los requisitos, pasos y enfoque de un proyecto de AEM sin encabezado desde la perspectiva del arquitecto de contenido. El recorrido definirá las personas adicionales con las que el arquitecto de contenido debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el del arquitecto de contenido.
 
-Por supuesto, la información de este recorrido puede ser útil para otras personas, pero parte de la información puede ser superflua para otras en diferentes funciones. Manténgase atento a recorridos futuros que cubran funciones adicionales.
+La información de este recorrido puede ser útil para otras personas, pero parte de la información es superflua para ciertas funciones. Manténgase atento a recorridos futuros que cubran funciones adicionales.
 
 ## Recorrido para arquitectos de contenido sin encabezado {#the-journey}
 
@@ -64,7 +64,7 @@ Ya está listo para empezar su recorrido de Adobe sin encabezado. Le animamos a 
 
 Los recorridos de documentación muestran cómo AEM resuelve un problema empresarial al proporcionar una narrativa que lo guía a través de procesos y características complejas e interrelacionadas. Un recorrido ilustra cómo varias funciones trabajan juntas para satisfacer una sola necesidad empresarial.
 
-Ya que estos recorridos están diseñados para mantenerse por su cuenta. Sin embargo, varios de ellos pueden relacionarse entre sí. Consulte estos recorridos adicionales para obtener más información sobre cómo las potentes funciones de AEM trabajan juntas.
+Ya que estos recorridos están diseñados para mantenerse por su cuenta. Sin embargo, varios de ellos pueden estar relacionados entre sí. Consulte estos recorridos adicionales para obtener más información sobre cómo las potentes funciones de AEM trabajan juntas.
 
 * [Recorrido de traducción de AEM sin encabezado](/help/journey-headless/translation/overview.md). Este recorrido de documentación le ofrece una amplia comprensión de la tecnología sin encabezado, cómo AEM presenta el contenido sin encabezado y cómo puede traducirlo.
 * [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md). Empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones sin encabezado de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto sin encabezado.

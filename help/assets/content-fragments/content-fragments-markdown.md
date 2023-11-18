@@ -4,10 +4,10 @@ description: Comprenda cómo el editor de fragmentos de contenido utiliza la sin
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 83%
+source-wordcount: '578'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ Puede definir lo siguiente:
 
 ## Anotación de encabezado {#heading-notation}
 
-Para crear un encabezado, coloque una almohadilla (#) delante del encabezado. Se utiliza una almohadilla (#) para un H1, dos (##) para un H2, etc. Se pueden usar hasta seis almohadillas. Por ejemplo:
+Para crear un encabezado, coloque una almohadilla (#) delante del encabezado. Se utiliza una almohadilla (#) para un H1, dos (##) para un H2 y así sucesivamente. Se pueden usar hasta seis almohadillas. Por ejemplo:
 
     `## This is an H2`
 
@@ -105,7 +105,7 @@ Una imagen de estilo de referencia tiene la siguiente sintaxis:
 
     `![Alt text][id]`
 
-Donde “id” es el nombre de una referencia de imagen definida. Las referencias de imagen se definen con una sintaxis idéntica a las referencias de vínculo:
+Donde &quot;id&quot; es el nombre de una referencia de imagen definida. Las referencias de imagen se definen con una sintaxis idéntica a las referencias de vínculo:
 
     `[id]: url/to/image "Optional title attribute"`
 

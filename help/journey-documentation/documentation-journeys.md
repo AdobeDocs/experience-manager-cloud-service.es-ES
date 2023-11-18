@@ -3,10 +3,10 @@ title: Recorridos de documentación de AEM
 description: Los Recorridos de documentación proporcionan una estructura narrativa dentro de la documentación de AEM al unir funciones complejas y dispares para poder resolver un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1349'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1347'
+ht-degree: 96%
 
 ---
 
@@ -77,12 +77,12 @@ Los Recorridos de documentación están pensados como un complemento de la docum
 |---|---|---|---|---|---|---|
 | Recorrido de documentación | Un recorrido define cómo AEM puede resolver un problema empresarial general a través de una narrativa que guía a los lectores a través de procesos y características complejos e interrelacionados. Ilustra cómo varias funciones trabajan juntas para resolver una necesidad empresarial de manera óptima. | Lectores nuevos en AEM | Familiaridad general de CMS | Opciones y configuración detalladas | Texto | CA. 1 hora |
 | Documentos técnicos | Los documentos técnicos se centran en características individuales, detallando el funcionamiento técnico de la funcionalidad y cada opción disponible para el usuario. | Usuarios de AEM con experiencia | Experiencia en AEM | Contexto y fondo | Texto | Varía |
-| Tutorial | Un tutorial es una explicación detallada de un tema que muestra a un desarrollador o administrador cómo lograr una meta técnica (generalmente programación o configuración del sistema) paso a paso, proporcionando ejemplos específicos y código de ejemplo y, generalmente, aprovechando un conjunto limitado de funciones. | Desarrolladores o administradores de AEM | Experiencia en AEM | Fondo y teoría | Vídeo | >1 hora |
+| Tutorial | Un tutorial es una explicación detallada de un tema que muestra a un desarrollador o administrador cómo lograr una meta técnica (generalmente programación o configuración del sistema) paso a paso, proporcionando ejemplos específicos y código de ejemplo y, generalmente, utilizando un conjunto limitado de funciones. | Desarrolladores o administradores de AEM | Experiencia en AEM | Fondo y teoría | Vídeo | >1 hora |
 | Guía de introducción | Una guía de introducción es una guía rápida de una nueva funcionalidad de AEM específica. Se trata de una descripción general rápida de una funcionalidad individual que lleva al usuario a través de los pasos importantes (pero no todos) para configurar y utilizar un caso de uso sencillo. | Administradores de AEM | Experiencia en AEM | Fondo, teoría y opciones detalladas | Texto | &lt;1 hora |
 
 ## ¿Qué recorridos hay? {#journeys}
 
-Ya hay disponibles varios recorridos de documentación. Dado que cada recorrido está diseñado como una narrativa, empiece con la introducción y siga leyendo hasta el final para poder entender el tema en el contexto de AEM.
+Ya tiene a su disposición varios Recorridos de documentación. Dado que cada recorrido está diseñado como una narrativa, empiece con la introducción y siga leyendo hasta el final para poder entender el tema en el contexto de AEM.
 
 | Recorrido | Descripción |
 |---|---|

@@ -2,10 +2,10 @@
 title: Variables de entorno de Cloud Manager
 description: Las variables de entorno estándar se pueden configurar y administrar mediante Cloud Manager y se proporcionan al entorno de tiempo de ejecución para su uso en la configuración OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 96%
+source-wordcount: '1010'
+ht-degree: 85%
 
 ---
 
@@ -65,7 +65,7 @@ Un indicador con el estado **Actualizando** se muestra en la parte superior de l
 
 >[!TIP]
 >
->Si desea agregar varias variables, se recomienda agregar la primera variable y luego usar el botón **Agregar** del cuadro de diálogo **Configuración del entorno** para agregar las variables adicionales. De este modo, puede agregarlas con una actualización al entorno.
+>Si desea agregar varias variables, se recomienda agregar la primera variable y luego usar el **Añadir** botón en el **Configuración del entorno** para añadir las variables adicionales. De este modo, puede agregarlas con una actualización al entorno.
 
 ## Actualizar variables de entorno {#update-variables}
 
@@ -88,13 +88,13 @@ Una vez creadas las variables de entorno, puede actualizarlas con el botón **Ag
 
    ![Editar variable](assets/edit-variable.png)
 
-1. Una vez que haya realizado todos los cambios de configuración necesarios, seleccione **Guardar**.
+1. Después de realizar los cambios de configuración necesarios, seleccione **Guardar**.
 
 [Al igual que cuando se agregan variables,](#add-variables) se muestra un indicador con el estado **Actualizando** en la parte superior de la tabla y junto a las variables recién actualizadas para indicar que el entorno se está actualizando con la configuración. Una vez finalizadas, las variables de entorno actualizadas se pueden ver en la tabla.
 
 >[!TIP]
 >
->Si desea actualizar varias variables, se recomienda usar el cuadro de diálogo **Configuración del entorno** para actualizar todas las variables necesarias a la vez antes de pulsar o hacer clic en **Guardar**. De este modo, puede agregarlas con una actualización al entorno.
+>Si desea actualizar varias variables, se recomienda utilizar la variable **Configuración del entorno** para actualizar todas las variables necesarias a la vez antes de pulsar o hacer clic en **Guardar**. De este modo, puede agregarlas con una actualización al entorno.
 
 ## Utilizar variables de entorno {#using}
 
@@ -110,7 +110,7 @@ Consulte la [documentación oficial de Maven](https://maven.apache.org/settings.
 
 ## Disponibilidad de variables de entorno {#availability}
 
-Las variables de entorno se pueden usar en varios lugares.
+Las variables de entorno se pueden utilizar en varios lugares.
 
 ### Creación, previsualización y publicación {#author-preview-publish}
 

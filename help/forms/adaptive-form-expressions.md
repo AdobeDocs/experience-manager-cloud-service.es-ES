@@ -1,10 +1,10 @@
 ---
 title: ¿Qué son las expresiones de formulario adaptable?
 description: Utilice expresiones de formularios adaptables para agregar validación automática, cálculo y activar o desactivar la visibilidad de una sección.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2697'
-ht-degree: 99%
+source-wordcount: '2698'
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ La expresión “options” se utiliza para rellenar de manera dinámica las opc
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Siempre que el valor de **marital_status** cambia, se recupera la expresión. También puede rellenar el menú desplegable desde un servicio REST. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+Siempre que el valor de **marital_status** cambia, se recupera la expresión. También puede rellenar la lista desplegable desde un servicio REST. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### Expresión “summary” {#summary}
 

@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 16%
@@ -33,7 +33,7 @@ La funcionalidad Recursos conectados admite los casos de uso anteriores mediante
 
 Al editar páginas en [!UICONTROL Editor de página] como destino de destino, los creadores pueden buscar, examinar e incrustar recursos sin problemas desde un entorno diferente [!DNL Assets] implementación que actúa como origen de recursos. Los administradores crean una integración única de una implementación de [!DNL Experience Manager] con [!DNL Sites] con otra implementación de [!DNL Experience Manager] con [!DNL Assets] capacidad. También puede utilizar imágenes de Dynamic Media en las páginas web del sitio a través de Recursos conectados y utilizar las funcionalidades de Dynamic Media, como los ajustes preestablecidos de recorte inteligente y de imagen.
 
-Para el [!DNL Sites] Para los creadores, los recursos remotos están disponibles como recursos locales de solo lectura. La funcionalidad admite la búsqueda y el acceso ininterrumpidos a recursos remotos en el Editor del sitio. Para cualquier otro caso de uso que requiera que el cuerpo de recursos completo esté disponible en Sites, considere migrar los recursos de forma masiva en lugar de aprovechar los recursos conectados.
+Para el [!DNL Sites] Para los creadores, los recursos remotos están disponibles como recursos locales de solo lectura. La funcionalidad admite la búsqueda y el acceso ininterrumpidos a recursos remotos en el Editor del sitio. Para cualquier otro caso de uso que requiera que el cuerpo de recursos completo esté disponible en Sites, considere migrar los recursos de forma masiva en lugar de utilizar Recursos conectados.
 
 ### Requisitos previos e implementaciones admitidas {#prerequisites}
 

@@ -1,9 +1,10 @@
 ---
 title: Uso del transformador de contenido
 description: AEM Aprenda a transformar la estructura de contenido con el fin de prepararse para migrar a la as a Cloud Service.
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '642'
 ht-degree: 3%
 
 ---
@@ -62,7 +63,7 @@ El transformador de contenido está empaquetado con la variable [Herramienta de 
    >[!NOTE]
    > Cualquier operación que pueda cambiar el contenido de origen (`move`/`remove`/`rename`) creará de forma predeterminada un paquete de copia de seguridad de las rutas de origen en `/etc/packages/content-transformation` antes de la transformación. Aunque cada cuadro de diálogo de operación tiene una opción para deshabilitar/habilitar la creación de paquetes de copia de seguridad, se recomienda tener siempre seleccionada la opción para habilitar la creación de paquetes.
 
-1. A continuación, se muestra un ejemplo de un paquete de copia de seguridad creado para la operación de movimiento de las rutas, haga clic en Instalar para recuperar las rutas de origen. Tenga en cuenta que la instalación solo devolverá las rutas de origen a su ubicación original y no eliminará las rutas a las que se movieron durante la transformación. Para eliminar las rutas en la ubicación desplazada, haga clic en **Añadir rutas** para añadir la ubicación (por ejemplo, `/etc/packages/content-transformation/paths`), seleccione la ubicación y haga clic en **Eliminar**.
+1. A continuación, se muestra un ejemplo de un paquete de copia de seguridad creado para la operación de movimiento de las rutas, haga clic en Instalar para recuperar las rutas de origen. La instalación solo devuelve las rutas de origen a su ubicación original y no elimina las rutas a las que se movieron durante la transformación. Para eliminar las rutas en la ubicación desplazada, haga clic en **Añadir rutas** para añadir la ubicación (por ejemplo, `/etc/packages/content-transformation/paths`), seleccione la ubicación y haga clic en **Eliminar**.
 
    >[!CAUTION]
    > No eliminar `/etc/packages/content-transformation` ya que esta es la ubicación donde residen los paquetes de copia de seguridad. Solo cuando esté seguro de que ya no necesita estos paquetes, puede eliminar esta ubicación para reducir el tamaño del repositorio.

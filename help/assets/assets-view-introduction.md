@@ -1,20 +1,20 @@
 ---
 title: AEM ¿En qué le beneficia la vista de Assets en el caso de los?
-description: AEM Obtenga más información acerca de las ventajas clave de la vista de Assets en la. Adobe, aprovechando su experiencia en potenciar a los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia las reglas del juego.
+description: AEM Obtenga más información acerca de las ventajas clave de la vista de Assets en la. Adobe, con su experiencia en el empoderamiento de los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia el juego.
 mini-toc-levels: 3
-source-git-commit: 20e0527ebecb6720f39c0a4b2957dc899117d96f
+exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
-
 
 # Introducción a la vista Recursos {#assets-view}
 
 ![Implementación de Assets Essentials](assets/banner-image.jpg)
 
-En el vertiginoso panorama digital actual, en el que la creación y la entrega de contenido en tiempo real son esenciales, es primordial contar con una experiencia de gestión de activos digitales (DAM) diseñada para la velocidad de marketing descendente. Adobe, aprovechando su experiencia en potenciar a los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia las reglas del juego. Este enfoque, que da prioridad al flujo de trabajo, revoluciona la forma en que las empresas gestionan sus recursos digitales dinámicos, lo que permite a los especialistas en marketing maximizar la eficacia a la hora de buscar, colaborar, personalizar y entregar recursos. Estos flujos de trabajo optimizados aceleran la velocidad del contenido e impulsan los esfuerzos de marketing a nuevas cuotas.
+En el vertiginoso panorama digital actual, en el que la creación y la entrega de contenido en tiempo real son esenciales, es primordial contar con una experiencia de gestión de activos digitales (DAM) diseñada para la velocidad de marketing descendente. Adobe, con su experiencia en el empoderamiento de los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia el juego. Este enfoque, que da prioridad al flujo de trabajo, revoluciona la forma en que las empresas gestionan sus recursos digitales dinámicos, lo que permite a los especialistas en marketing maximizar la eficacia a la hora de buscar, colaborar, personalizar y entregar recursos. Estos flujos de trabajo optimizados aceleran la velocidad del contenido e impulsan los esfuerzos de marketing a nuevas cuotas.
 
 Para obtener más información sobre las experiencias basadas en personas disponibles para Assets as a Cloud Service, consulte [Introducción a Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
@@ -128,9 +128,3 @@ Utilice estos vínculos para empezar rápidamente a usar la vista Recursos:
 
 * [Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md)
 * [Introducción a la vista de recursos](/help/assets/get-started-assets-view.md)
-
-
-
-
-
-

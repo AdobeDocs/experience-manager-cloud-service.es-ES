@@ -2,10 +2,10 @@
 title: Proyectos
 description: Los proyectos permiten agrupar recursos en una entidad cuyo entorno común compartido facilita la administración de sus proyectos
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1255'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ La consola Proyectos es donde se accede a los proyectos y se administran dentro 
 ![La consola Proyectos](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Seleccione **Cronología** y luego un proyecto para ver su cronología.
-* Pulse o haga clic en **Seleccionar** para entrar en el modo de selección.
+* Seleccionar **Seleccionar** para entrar en el modo de selección.
 * Haga clic en **Crear** para añadir proyectos.
 * **Alternar proyectos activos** permite cambiar entre todos los proyectos y solamente los que están activos.
 * **Mostrar vista de estadísticas** permite ver las estadísticas del proyecto relativas a las finalizaciones de tareas.

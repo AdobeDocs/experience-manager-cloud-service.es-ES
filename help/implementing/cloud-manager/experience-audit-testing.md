@@ -2,9 +2,9 @@
 title: Pruebas de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '589'
 ht-degree: 93%
 
 ---
@@ -35,7 +35,7 @@ La auditoría de experiencias está equipada con Google Lighthouse, una herramie
 
 >[!INFO]
 >
->A partir del 31 de agosto de 2023, la auditoría de experiencias pasará a mostrar resultados específicos de la plataforma móvil. Tenga en cuenta que las métricas de rendimiento móviles suelen registrarse por debajo de las del escritorio, por lo que debe anticipar un cambio en el rendimiento del informe después de este cambio.
+>A partir del 31 de agosto de 2023, la auditoría de experiencias pasará a mostrar resultados específicos de la plataforma móvil. Tenga en cuenta que las métricas de rendimiento móviles suelen registrar un rendimiento inferior al de los equipos de escritorio, por lo que debe anticipar un cambio en el rendimiento informado después de este cambio.
 
 >[!TIP]
 >

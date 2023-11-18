@@ -2,10 +2,10 @@
 title: Recorrido de traducción de AEM sin encabezado
 description: Empiece aquí un recorrido guiado a través de la traducción de contenido sin encabezado utilizando las potentes herramientas de traducción de AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 95%
+source-wordcount: '1040'
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ Si ya está familiarizado con AEM, el contenido sin encabezado y su traducción,
 
 ## Recorridos de documentación de AEM {#documentation-journeys}
 
-[Un recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados. Proporciona una narrativa que ayuda al lector (que puede ser nuevo en AEM) a entender y resolver un problema empresarial de principio a fin, mientras asume un conocimiento previo mínimo de AEM.
+[Un Recorrido de documentación](/help/journey-documentation/documentation-journeys.md) AEM AEM une muchos temas y características diferentes y complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en la comprensión, comprensión y solución de un problema empresarial de principio a fin, mientras que asume un conocimiento previo mínimo de la materia o el conocimiento.
 
 Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
@@ -53,7 +53,7 @@ Los siguientes son los perfiles que interactúan en este recorrido.
 | Administrador | Gestiona la configuración base de AEM | El especialista en traducción trabaja con el administrador para realizar los cambios de configuración necesarios para la traducción, como instalar un conector de traducción. |
 | Arquitecto de contenido | Analiza los requisitos de los datos que deben entregarse sin encabezado y define la estructura de estos datos | Los especialistas en traducción trabajan con el arquitecto de contenido para definir la organización del contenido y así poder traducirlo fácilmente. |
 
-Por supuesto, la información de este recorrido puede ser útil para todas las personas, pero parte de la información puede ser superflua para ciertas funciones. Manténgase atento a [recorridos futuros que cubran funciones adicionales](/help/journey-documentation/documentation-journeys.md#journeys).
+La información de este recorrido puede ser útil para todas las personas, pero parte de la información puede ser superflua para ciertas funciones. Manténgase atento a [recorridos futuros que cubran funciones adicionales](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## El recorrido de traducción sin encabezado {#the-journey}
 
@@ -78,7 +78,7 @@ Ya está listo para empezar su recorrido de traducción sin encabezado de Adobe.
 
 Los recorridos de documentación muestran cómo AEM resuelve un problema empresarial al proporcionar una narrativa que lo guía a través de procesos y características complejas e interrelacionadas. Un recorrido ilustra cómo varias funciones trabajan juntas para satisfacer una sola necesidad empresarial.
 
-Ya que estos recorridos están diseñados para mantenerse por su cuenta. Sin embargo, varios de ellos pueden relacionarse entre sí. Consulte estos recorridos adicionales para obtener más información sobre cómo las potentes funciones de AEM trabajan juntas.
+Ya que estos recorridos están diseñados para mantenerse por su cuenta. Sin embargo, varios de ellos pueden estar relacionados entre sí. Consulte estos recorridos adicionales para obtener más información sobre cómo las potentes funciones de AEM trabajan juntas.
 
 * [Recorrido de creación Headless](/help/journey-headless/author/overview.md): empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones headless de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto headless.
 * [Recorrido de arquitectos Headless](/help/journey-headless/architect/overview.md): empiece aquí para ver una introducción a las potentes y flexibles funciones headless de Adobe Experience Manager as a Cloud Service y cómo diseñar contenido para su proyecto.

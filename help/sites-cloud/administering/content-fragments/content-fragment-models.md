@@ -4,10 +4,10 @@ description: Descubra cómo los modelos de fragmentos de contenido sirven de bas
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3060'
-ht-degree: 60%
+source-wordcount: '3058'
+ht-degree: 59%
 
 ---
 
@@ -129,7 +129,7 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
 
 1. **Eliminación de un campo**
 
-   Seleccione el campo requerido y, a continuación, toque o haga clic en el icono de la papelera. Se le solicitará que confirme la acción.
+   Seleccione el campo requerido y, a continuación, seleccione el icono de la papelera. Se le solicitará que confirme la acción.
 
    ![Quitar](assets/cf-cfmodels-remove-icon.png)
 
@@ -161,7 +161,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
 * **Fecha y hora**
    * Adición de una fecha u hora
 * **Lista desglosada**
-   * Adición de un conjunto de campos de casilla de verificación, botones de opción o desplegables
+   * Agregar un conjunto de campos de casilla de verificación, botón de opción o lista desplegable
 * **Etiquetas**
    * Permite a los autores de fragmentos acceder y seleccionar áreas de etiquetas
 * **Referencia de contenido**
@@ -374,7 +374,7 @@ Puede hacer lo siguiente **Activar** o **Deshabilitar** Seleccione los modelos d
 
 Una vez creado un modelo, debe activarse para que:
 
-* Esté disponible para seleccionarse al crear un nuevo fragmento de contenido.
+* Está disponible para su selección al crear un fragmento de contenido.
 * Se pueda hacer referencia a él desde un modelo de fragmento de contenido.
 * Esté disponible para GraphQL y por lo tanto, se genere el esquema.
 

@@ -2,9 +2,9 @@
 title: Agregar un certificado SSL
 description: Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '551'
 ht-degree: 82%
 
 ---
@@ -19,7 +19,7 @@ Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio
 
 ## Requisitos de certificado {#certificate-requirements}
 
-Consulte la sección **Requisitos de certificado** del documento [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) AEM para asegurarse de que el certificado que desea agregar es compatible con el as a Cloud Service de la.
+Revise la sección **Requisitos de certificado** del documento [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) AEM para asegurarse de que el certificado que desea agregar es compatible con el as a Cloud Service de la.
 
 ## Agregar un certificado {#adding-a-cert}
 

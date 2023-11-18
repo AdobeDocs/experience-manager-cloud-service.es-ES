@@ -4,10 +4,10 @@ description: Descubra cómo las reglas de traducción identifican el contenido q
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 99%
+source-wordcount: '1288'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Las reglas de traducción descritas en este documento solo se aplican a los frag
 
 Si la opción **Habilitar campos de modelo de contenido para la traducción** está activa, AEM usará el campo **Traducible** en [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) para determinar si el campo se va a traducir y crea automáticamente reglas de traducción según corresponda. Esta opción reemplaza las reglas de traducción que haya creado y no requiere intervención ni pasos adicionales.
 
-Si desea utilizar reglas de traducción para traducir los fragmentos de contenido, la opción **Habilitar campos de modelo de contenido para la traducción** en la configuración del marco trabajo de integración de traducción debe estar desactivada y debe seguir los pasos descritos a continuación para crear las reglas.
+Si desea utilizar reglas de traducción para traducir los fragmentos de contenido, la variable **Habilitar los campos de modelo de contenido para la traducción** La opción de configuración del marco de trabajo de integración de traducciones debe estar desactivada y debe seguir los pasos descritos a continuación para crear las reglas.
 
 ## Información general {#overview}
 
@@ -167,7 +167,7 @@ En la IU de las reglas de traducción puede:
 
    ![Agregar contexto de traducción](../assets/add-translation-context.png)
 
-1. Utilice el navegador de rutas para seleccionar el contexto necesario y toque o haga clic en el botón **Confirmar** para guardar.
+1. Utilice el navegador de rutas para seleccionar el contexto necesario y seleccione **Confirmar** botón para guardar.
 
    ![Seleccionar contexto](../assets/select-context.png)
 

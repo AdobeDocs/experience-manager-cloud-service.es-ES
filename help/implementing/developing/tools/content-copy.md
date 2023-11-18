@@ -2,10 +2,10 @@
 title: La herramienta Copia de contenido
 description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción en entornos as a Cloud Service a entornos más bajos para realizar pruebas.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 38%
+source-wordcount: '1292'
+ht-degree: 34%
 
 ---
 
@@ -41,7 +41,7 @@ Para utilizar la herramienta de copia de contenido, se requieren ciertos permiso
 | Crear y modificar [conjuntos de contenido](#create-content-set) | No necesario | Requerido |
 | Iniciar o cancelar el [proceso de copia de contenido](#copy-content) | Requerido | Requerido |
 
-Para obtener más información sobre los permisos y cómo configurarlos, consulte el documento [AEM Perfiles de equipo y producto as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md)
+Para obtener más información sobre los permisos y cómo configurarlos, consulte [AEM Perfiles de equipo y producto as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Creación de un conjunto de contenido {#create-content-set}
 
@@ -57,7 +57,7 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
    ![Conjuntos de contenido](assets/content-sets.png)
 
-1. En la pestaña **Detalles** del asistente, proporcione un nombre y una descripción para el conjunto de contenido y pulse o haga clic en **Continuar**.
+1. En el **Detalles** del asistente, proporcione un nombre y una descripción para el conjunto de contenido y seleccione **Continuar**.
 
    ![Detalles del conjunto de contenido](assets/add-content-set-details.png)
 
@@ -74,8 +74,8 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
    1. En la lista de rutas incluidas, haga clic en **Adición de subrutas de exclusión** situado junto a la ruta que desee restringir.
    1. Introduzca el subtrazado que desea excluir debajo del trazado seleccionado.
-   1. Pulse o haga clic en **Excluir ruta**.
-   1. Pulse o haga clic en **Añadir subrutas de exclusión** para agregar rutas adicionales para excluir según sea necesario.
+   1. Seleccionar **Excluir ruta**.
+   1. Seleccionar **Adición de subrutas de exclusión** de nuevo para añadir rutas adicionales que excluir según sea necesario.
       * Las rutas excluidas deben ser relativas a la ruta incluida.
       * No hay límite en el número de rutas excluidas.
 
@@ -88,7 +88,7 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
    ![Edición de la lista de rutas](assets/add-content-set-excluded-paths.png)
 
-1. Pulse o haga clic en **Crear** para crear el conjunto de contenido.
+1. Seleccionar **Crear** para crear el conjunto de contenido.
 
 A partir de ahora, se puede utilizar el conjunto de contenido para copiar contenido entre entornos.
 
@@ -136,7 +136,7 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 
 1. Si es necesario, también puede elegir **Incluir listas de control de acceso** en el proceso de copia.
 
-1. Pulse o haga clic en **Copiar**.
+1. Seleccionar **Copiar**.
 
 Se inicia el proceso de copia. El estado del proceso de copia se refleja en la consola del conjunto de contenido seleccionado.
 

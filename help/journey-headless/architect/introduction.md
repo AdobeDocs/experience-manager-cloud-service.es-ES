@@ -2,10 +2,10 @@
 title: 'Modelado de contenido para AEM como CMS sin encabezado: introducción'
 description: Introducción al uso de las funciones de Adobe Experience Manager as a Cloud Service como CMS sin encabezado para modelar contenido para su proyecto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 94%
+source-wordcount: '745'
+ht-degree: 78%
 
 ---
 
@@ -29,14 +29,14 @@ Desde que han surgido los sistemas de administración de contenido (CMS) a gran 
 
 ![El CMS de pila completa clásico](/help/journey-headless/developer/assets/full-stack.png)
 
-En un CMS de pila completa, toda la funcionalidad para manipular contenido está en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
+En un CMS de pila completa, la funcionalidad para manipular contenido se encuentra en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
 
 * Hay un solo sistema que mantener.
 * El contenido se administra de forma centralizada.
 * Todos los servicios del sistema están integrados.
 * La creación de contenido es directa.
 
-Por consiguiente, si se necesita agregar un nuevo canal o admitir nuevos tipos de experiencias, se pueden insertar uno o más componentes nuevos en la pila, y solo hay un lugar donde realizar cambios.
+Por lo tanto, si se debe añadir un nuevo canal o se requiere compatibilidad con nuevos tipos de experiencias, se pueden insertar uno o más componentes nuevos en la pila y solo hay un lugar para realizar cambios.
 
 ![Agregar un nuevo canal a la pila](/help/journey-headless/developer/assets/adding-channel.png)
 
@@ -50,15 +50,15 @@ Cuando hablamos de un CMS sin encabezado, el CMS administra el contenido y conti
 
 ![CMS sin encabezado](/help/journey-headless/developer/assets/headless-cms.png)
 
-Los servicios que consumen, ya sean experiencias AR, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., reciben contenido del CMS sin encabezado y proporcionan su propia representación. Se ocupan de proporcionar sus propios HEADS para su contenido.
+Los servicios de consumo, ya sean experiencias de RA, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., incorporan contenido del CMS sin encabezado y proporcionan su propio procesamiento. Se ocupan de proporcionar sus propios HEADS para su contenido.
 
 Omitir el HEAD simplifica el CMS al eliminar la complejidad. Al hacerlo, también se traslada la responsabilidad de procesar el contenido a los servicios que realmente necesitan el contenido y que a menudo son más adecuados para dicho procesamiento.
 
 ## Modelado de contenido {#content-modeling}
 
-El modelado de contenido (también conocido como modelado de datos) es su especialidad, por lo que ¿qué debe tenerse en cuenta al modelar sin encabezado?
+El modelado de contenido (también conocido como modelado de datos) es su especialidad, por lo que ¿qué debe tenerse en cuenta al modelar para aplicaciones sin encabezado?
 
-Para que las aplicaciones sin encabezado puedan acceder a su contenido y hacer algo con él, el contenido realmente necesita tener una estructura predefinida. Sería posible tener su contenido como forma libre, pero complicaría *mucho* la vida útil de las aplicaciones.
+Para que las aplicaciones sin encabezado puedan acceder al contenido y hacer algo con él, el contenido debe tener una estructura predefinida. Sería posible tener su contenido como forma libre, pero complicaría *mucho* la vida útil de las aplicaciones.
 
 En AEM, usted, como arquitecto de contenido, realizará el modelado de contenido para diseñar una gama de **Modelos de fragmento de contenido**. Definen la estructura utilizada cuando los autores de contenido crean **Fragmentos de contenido** que alojan el contenido.
 

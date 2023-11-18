@@ -4,10 +4,10 @@ description: Descubra cómo se pueden utilizar las plantillas de sitio AEM para 
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '568'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 84%
 
 ---
 
@@ -37,15 +37,15 @@ Puede agregar varias plantillas a AEM, que luego se pueden usar para [crear siti
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Toque o haga clic en **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de una plantilla**.
+1. Seleccionar **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de plantilla**.
 
    ![Creación de un sitio a partir de una plantilla](../assets/create-site-from-template.png)
 
-1. En el asistente Crear sitio, toque o haga clic en **Importar** en la parte superior de la columna izquierda.
+1. En el asistente Crear sitio, seleccione **Importar** en la parte superior de la columna izquierda.
 
    ![Asistente de creación de sitios](../assets/site-creation-wizard.png)
 
-1. En el explorador de archivos, busque la plantilla que desee utilizar y toque o haga clic en **Cargar**.
+1. En el explorador de archivos, busque la plantilla que desee utilizar y seleccione **Cargar**.
 
 1. Una vez cargado, aparece en la lista de plantillas disponibles.
 
@@ -62,7 +62,7 @@ Las plantillas de sitio son simplemente paquetes con una estructura lógica que 
 * `files`: carpeta con el kit de interfaz de usuario, XD archivo y, posiblemente, otros archivos
 * `previews`: carpeta con capturas de pantalla de la plantilla del sitio.
 * `site`: paquete de contenido del contenido que se copia para cada sitio creado a partir de esta plantilla, como plantillas de página, páginas, etc.
-* `theme`: fuentes de [tema del sitio](site-themes.md) para modificar el aspecto del sitio, incluidos CSS, JavaScript, etc.
+* `theme`: fuentes del [tema del sitio](site-themes.md) para modificar el aspecto del sitio, incluidos CSS, JavaScript, etc.
 
 ## Plantilla de sitio estándar {#standard-site-template}
 

@@ -2,9 +2,9 @@
 title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores para los detalles de los componentes y su estructura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3646'
+source-wordcount: '3642'
 ht-degree: 2%
 
 ---
@@ -181,7 +181,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
 | `component.html` | `nt:file` | Este es el archivo de script HTL del componente. |
 | `cq:icon` | `String` | Este valor apunta a la variable [icono del componente](#component-icon) y aparece en el navegador de componentes. |
 
-Si nos fijamos en el **Texto** componente, podemos ver una serie de estos elementos:
+Si mira el **Texto** puede ver varios de estos elementos:
 
 ![Estructura del componente Texto](assets/components-text.png)
 
@@ -250,7 +250,7 @@ Content not found
 
 Para crear un widget para utilizarlo en un cuadro de diálogo de componentes, es necesario crear un componente de campo de interfaz de usuario de Granite.
 
-Si considera el cuadro de diálogo como un contenedor simple para un elemento de formulario, también puede ver el contenido principal del cuadro de diálogo como campos de formulario. La creación de un nuevo campo de formulario requiere la creación de un tipo de recurso; esto equivale a la creación de un nuevo componente. Para ayudarle en esa tarea, la interfaz de usuario de Granite ofrece un componente de campo genérico del que heredar (mediante `sling:resourceSuperType`):
+Si considera el cuadro de diálogo como un contenedor simple para un elemento de formulario, también puede ver el contenido principal del cuadro de diálogo como campos de formulario. La creación de un nuevo campo de formulario requiere la creación de un tipo de recurso; esto equivale a la creación de un componente. Para ayudarle en esa tarea, la interfaz de usuario de Granite ofrece un componente de campo genérico del que heredar (mediante `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -441,7 +441,7 @@ La validación de campos en la IU de Granite y en los widgets de la IU de Granit
 
 ### Detectar la disponibilidad del cuadro de diálogo {#dialog-ready}
 
-Si tiene un JavaScript personalizado que solo debe ejecutarse cuando el cuadro de diálogo esté disponible y listo, debe escuchar el `dialog-ready` evento.
+Si tiene un JavaScript personalizado que debe ejecutarse solo cuando el cuadro de diálogo esté disponible y listo, debe escuchar el `dialog-ready` evento.
 
 Este evento se activa cada vez que se carga el cuadro de diálogo (o se vuelve a cargar) y está listo para usarse, lo que significa que siempre que haya un cambio (crear/actualizar) en el DOM del cuadro de diálogo.
 

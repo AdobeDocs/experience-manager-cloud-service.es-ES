@@ -2,10 +2,10 @@
 title: Creación de programas de zona protegida
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de zona protegida para formación, demostración, POC u otros fines que no sean de producción.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '444'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 93%
 
 ---
 
@@ -27,11 +27,11 @@ Obtenga más información sobre los tipos de programas en el documento [Explicac
 
    ![Creación de tipo de programa](assets/create-sandbox.png)
 
-1. Si lo desea, puede agregar una imagen al programa arrastrando y soltando un archivo de imagen en el destino **Agregar una imagen de programa** o haciendo clic en él para seleccionar una imagen de un explorador de archivos. Haga clic o pulse **Continuar**.
+1. Si lo desea, puede agregar una imagen al programa arrastrando y soltando un archivo de imagen en el destino **Agregar una imagen de programa** o haciendo clic en él para seleccionar una imagen de un explorador de archivos. Seleccionar **Continuar**.
 
    * La imagen solo sirve como mosaico en la ventana de información general del programa y ayuda a identificar el programa.
 
-1. En el cuadro de diálogo **Configurar la zona protegida**, elija qué soluciones desea habilitar en el programa de zona protegida marcando las opciones en la tabla **Soluciones y complementos**.
+1. En el **Configurar la zona protegida** , seleccione las soluciones que desea habilitar en el programa de zona protegida marcando las opciones en la **Soluciones y complementos** tabla.
 
    * Utilice las comillas angulares que aparecen junto a los nombres de las soluciones para mostrar complementos opcionales adicionales para las soluciones.
 

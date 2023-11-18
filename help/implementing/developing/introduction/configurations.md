@@ -2,9 +2,9 @@
 title: Configuraciones y el explorador de configuración
 description: Comprenda las configuraciones de Adobe Experience Manager AEM AEM () y cómo administran la configuración del espacio de trabajo en los entornos de trabajo de los usuarios de la.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1487'
 ht-degree: 6%
 
 ---
@@ -68,8 +68,8 @@ AEM El Explorador de configuración permite a un administrador crear, administra
 
 AEM Es sencillo crear una configuración en mediante el Explorador de configuración en la interfaz de usuario de la interfaz de usuario de.
 
-1. AEM Inicie sesión en el as a Cloud Service y, en el menú principal, seleccione **Herramientas** -> **General** -> **Explorador de configuración**.
-1. Haga clic o pulse en **Crear**.
+1. AEM Inicie sesión en el as a Cloud Service y, en el menú principal, seleccione **Herramientas** > **General** > **Explorador de configuración**.
+1. Seleccione **Crear**.
 1. Proporcione un **Título** y **Nombre** para su configuración.
 
    ![Crear configuración](assets/configuration-create.png)
@@ -83,7 +83,7 @@ AEM Es sencillo crear una configuración en mediante el Explorador de configurac
    * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Plantillas editables](/help/sites-cloud/authoring/features/templates.md)
    * varias configuraciones de nube
-1. Haga clic o pulse en **Crear**.
+1. Seleccione **Crear**.
 
 >[!TIP]
 >
@@ -93,7 +93,7 @@ AEM Es sencillo crear una configuración en mediante el Explorador de configurac
 
 Si considera las configuraciones como espacios de trabajo, se pueden establecer derechos de acceso en esas configuraciones para exigir quién puede acceder a esos espacios de trabajo y quién no.
 
-1. AEM Inicie sesión en el as a Cloud Service y, en el menú principal, seleccione **Herramientas** -> **General** -> **Explorador de configuración**.
+1. AEM Inicie sesión en el as a Cloud Service y, en el menú principal, seleccione **Herramientas** > **General** > **Explorador de configuración**.
 1. Seleccione la configuración que desee editar y, a continuación, seleccione **Propiedades** en la barra de herramientas.
 1. Seleccione cualquier función adicional que desee añadir a la configuración.
 
@@ -110,7 +110,7 @@ Si considera las configuraciones como espacios de trabajo, se pueden establecer 
 1. Compruebe las opciones de acceso que deben tener uno o más usuarios o funciones seleccionados y haga clic en **Añadir**.
    ![Añadir derechos de acceso a una configuración](assets/configuration-edit.png)
 1. Repita los pasos para poder seleccionar usuarios o funciones y asignar derechos de acceso adicionales según sea necesario.
-1. Haga clic o pulse **Guardar y cerrar** cuando termine.
+1. Seleccionar **Guardar y cerrar** cuando termine.
 
 ## Configuraciones como desarrollador {#configurations-developer}
 
@@ -196,9 +196,9 @@ AEM Para admitir esto, la búsqueda de configuración tiene un mecanismo de here
 
 ### Uso de configuraciones {#using-configurations}
 
-AEM Las configuraciones en las configuraciones de los segmentos de la lista se basan en Configuraciones según el contexto de Sling. Los paquetes Sling proporcionan una API de servicio que se puede utilizar para obtener configuraciones según el contexto. Las configuraciones según el contexto son configuraciones que están relacionadas con un recurso de contenido o un árbol de recursos tal como estaban [se describe en el ejemplo anterior.](#developer-example)
+AEM Las configuraciones en las configuraciones de los segmentos de la lista se basan en Configuraciones según el contexto de Sling. Los paquetes Sling proporcionan una API de servicio que se puede utilizar para obtener configuraciones según el contexto. Las configuraciones según el contexto son configuraciones que están relacionadas con un recurso de contenido o un árbol de recursos tal como estaban [descrito en el ejemplo anterior](#developer-example).
 
-Para obtener más información sobre las configuraciones según el contexto, ver ejemplos y cómo utilizarlas, [consulte la documentación de Sling.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+Para obtener más información sobre las configuraciones según el contexto, ejemplos y cómo utilizarlas, consulte la [Documentación de Sling.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### Consola web de ConfMgr {#confmgr-web-console}
 

@@ -3,10 +3,10 @@ title: Uso del IDE de GraphiQL en AEM
 description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 95%
+source-wordcount: '1137'
+ht-degree: 94%
 
 ---
 
@@ -82,7 +82,7 @@ Puede ejecutar una nueva consulta inmediatamente, o bien puede cargar y ejecutar
 
 En cualquier caso, la consulta que se muestra en el panel Editor es la que se ejecuta cuando ocurre lo siguiente:
 
-* toque o haga clic en el icono **Ejecutar consulta**
+* seleccione en la **Ejecutar consulta** icono
 * use la combinación de teclas `Control-Enter`
 
 ## Variables de consulta {#query-variables}
@@ -99,7 +99,7 @@ Se recomiendan las [Consultas persistentes](/help/headless/graphql-api/persisted
 
 >[!NOTE]
 >
->Para obtener más información, consulte [Almacenamiento en caché de las consultas persistentes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Consulte [Almacenamiento en caché de consultas persistentes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >

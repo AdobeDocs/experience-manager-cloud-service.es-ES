@@ -2,10 +2,10 @@
 title: Configuración del equipo de desarrollo empresarial
 description: Aprenda a configurar y escalar su equipo de desarrollo empresarial y vea cómo AEM as a Cloud Service puede ayudarle con su proceso de desarrollo.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '1437'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager admite configuraciones flexibles de varios equipos que se pueden a
 
 Cada empresa tiene diferentes requisitos, incluida la configuración de equipos, los procesos y los flujos de trabajo de desarrollo. Adobe utiliza la configuración que se describe a continuación para varios proyectos que ofrecen experiencias además de AEM as a Cloud Service.
 
-Por ejemplo, las aplicaciones de Adobe Creative Cloud, como Adobe Photoshop o Adobe Illustrator, incluyen recursos de contenido como tutoriales, ejemplos y guías para los usuarios finales. Este contenido lo consumen las aplicaciones cliente mediante AEM as a Cloud Service de forma directa, realizan llamadas de la API al nivel de publicación de AEM Cloud para recuperar el contenido estructurado como flujos JSON y aprovechan la [Red de entrega de contenido (CDN) en AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) para ofrecer contenido estructurado y no estructurado con un rendimiento óptimo.
+Por ejemplo, las aplicaciones de Adobe Creative Cloud, como Adobe Photoshop o Adobe Illustrator, incluyen recursos de contenido como tutoriales, ejemplos y guías para los usuarios finales. AEM Este contenido lo consumen las aplicaciones cliente mediante el uso de as a Cloud Service AEM de forma directa, realizan llamadas de API al nivel de publicación de la nube de la para recuperar el contenido estructurado como flujos JSON y utilizan el [AEM Red de entrega de contenido (CDN) en as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) para ofrecer contenido estructurado y no estructurado con un rendimiento óptimo.
 
 Los equipos que contribuyen a este proyecto se adhieren al siguiente proceso.
 

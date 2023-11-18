@@ -2,10 +2,10 @@
 title: 'Variaciones: Crear contenido de fragmentos (Recursos: fragmentos de contenido)'
 description: AEM Comprenda de qué forma las variaciones pueden hacer que el contenido sin encabezado sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de ese contenido según el propósito.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 55%
+source-wordcount: '2530'
+ht-degree: 54%
 
 ---
 
@@ -79,7 +79,7 @@ Puede hacer lo siguiente:
 
 ### Editor de pantalla completa {#full-screen-editor}
 
-Al editar un campo de texto multilínea, puede abrir el editor de pantalla completa; toque o haga clic dentro del texto real y, a continuación, seleccione el siguiente icono de acción:
+Al editar un campo de texto multilínea, puede abrir el editor de pantalla completa; seleccione dentro del texto real y, a continuación, seleccione el siguiente icono de acción:
 
 ![icono del editor de pantalla completa](assets/cfm-variations-03.png)
 

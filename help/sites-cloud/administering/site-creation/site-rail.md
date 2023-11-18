@@ -4,10 +4,10 @@ description: Conozca las potentes funciones del carril del sitio para ayudarle a
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 95%
+source-wordcount: '583'
+ht-degree: 81%
 
 ---
 
@@ -38,7 +38,7 @@ Con el carril del sitio en la consola Sitios, seleccione la raíz del sitio para
 
 ![Descargar fuentes de temas](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Toque o haga clic en **Descargar fuentes de temas** para descargar una copia local del tema del sitio como `.zip` archivo para fines de personalización.
+Seleccionar **Descargar fuentes de temas** para descargar una copia local del tema del sitio como `.zip` para fines de personalización.
 
 ## Descarga de recursos de plantilla {#downloading-template-resources}
 
@@ -48,7 +48,7 @@ Si el sitio se basa en una plantilla de sitio, y el carril del sitio se muestra 
 
 ![Descargar fuentes de temas](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Toque o haga clic en los botones situados debajo del encabezado **Descargar recursos de plantilla adicionales** para descargar una copia local de los archivos disponibles.
+Seleccione el botón o los botones situados debajo del encabezado **Descargar recursos de plantilla adicionales** para descargar una copia local de los archivos disponibles.
 
 ## Visualización y cambio de versiones de temas {#them-versions}
 
@@ -60,11 +60,11 @@ Con el carril del sitio en la consola Sitios, seleccione la raíz del sitio para
 
 La versión actual del tema se muestra con su hash de compromiso junto con la marca de tiempo de su última actualización del estado.
 
-Haga clic o pulse **Seleccionar versión** para ver las versiones anteriores de la temática.
+Seleccionar **Seleccionar versión** para ver las versiones anteriores de la temática.
 
 ![Seleccionar la versión del tema](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Toque o haga clic en la versión a la que desee cambiar y, a continuación, toque o haga clic en **Aplicar** para realizar el cambio.
+Seleccione la versión a la que desee cambiar y, a continuación, seleccione **Aplicar** para realizar el cambio.
 
 Si AEM detecta que se ha implementado una versión más reciente del tema a través de la canalización front-end, pero no se ha aplicado a su sitio, se mostrará un icono de notificación.
 
@@ -78,7 +78,7 @@ Si el sitio no se creó con una plantilla de sitio, no es posible utilizar la ca
 
 Sin embargo, puede habilitar la canalización front-end para su sitio mediante el carril del sitio.
 
-Con el carril del sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio y, a continuación, toque o haga clic en **Habilitar canalización front-end**.
+Con el carril del sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio y, a continuación, seleccione **Habilitar canalización front-end**.
 
 ![Habilitar canalización front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 

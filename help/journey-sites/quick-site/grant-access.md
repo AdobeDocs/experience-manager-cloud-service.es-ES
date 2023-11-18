@@ -2,10 +2,10 @@
 title: Concesión de acceso al desarrollador front-end
 description: Incorpore a los desarrolladores front-end en Cloud Manager para que tengan acceso al repositorio de Git y a la canalización del sitio de AEM.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 97%
+source-wordcount: '778'
+ht-degree: 91%
 
 ---
 
@@ -65,7 +65,7 @@ En primer lugar, debe añadir al desarrollador front-end como usuario mediante A
 
    ![Perfiles de producto](assets/product-profiles.png)
 
-1. Para asignar el desarrollador front-end a los perfiles correctos, toque o haga clic en **Usuarios** y, a continuación, la **Añadir usuario** botón.
+1. Para asignar al desarrollador front-end a los perfiles correctos, seleccione la **Usuarios** y, a continuación, la **Añadir usuario** botón.
 
    ![Adición del usuario](assets/add-user.png)
 
@@ -73,11 +73,11 @@ En primer lugar, debe añadir al desarrollador front-end como usuario mediante A
 
    ![Adición de un usuario al equipo](assets/add-to-team.png)
 
-1. En la selección **Producto**, pulse o haga clic en el signo más y, a continuación, seleccione **Adobe Experience Manager as a Cloud Service** y asigne los perfiles de producto **Administrador de implementación** y **Desarrollador** al usuario.
+1. En el **Product** , seleccione el signo más y, a continuación, seleccione **Adobe Experience Manager as a Cloud Service** y asigne el **Administrador de implementación** y **Desarrollador** perfiles de producto para el usuario.
 
    ![Asignación de perfiles de equipo](assets/assign-team.png)
 
-1. Pulse o haga clic en **Guardar**. Se enviará un correo electrónico de bienvenida al desarrollador front-end que añadió como usuario.
+1. Seleccionar **Guardar** y se enviará un correo electrónico de bienvenida al desarrollador front-end que añadió como usuario.
 
 El desarrollador front-end invitado puede acceder a Cloud Manager haciendo clic en el vínculo del correo electrónico de bienvenida e iniciando sesión con su Adobe ID.
 

@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Cloud Service
 description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2326'
 ht-degree: 7%
 
 ---
@@ -139,7 +139,7 @@ AEM Si el programa de destino incorpora las &quot;Actualizaciones de versión de
 >
 > AEM Ya no es necesario registrar un ticket de asistencia para desactivar las &quot;Actualizaciones de versión de la versión de la aplicación&quot; de la aplicación.
 
-AEM Si &quot;Actualizaciones de la versión de la versión de la aplicación&quot; está activa (es decir, las actualizaciones se están ejecutando o están en cola para ejecutarse), la ingesta no comenzará y la interfaz de usuario mostrará el siguiente mensaje. Una vez completadas las actualizaciones, se puede iniciar la ingesta. Cloud Manager se puede utilizar para ver el estado actual de las canalizaciones del programa.
+AEM Si &quot;Actualizaciones de la versión de la versión de la&quot; está activo (es decir, las actualizaciones se están ejecutando o están en cola para ejecutarse), la ingesta no comenzará y la interfaz de usuario mostrará el siguiente mensaje. Una vez completadas las actualizaciones, se puede iniciar la ingesta. Cloud Manager se puede utilizar para ver el estado actual de las canalizaciones del programa.
 
 >[!NOTE]
 >
@@ -162,13 +162,14 @@ Este conflicto debe resolverse manualmente. Alguien familiarizado con el conteni
 ### Error de ingesta superior debido a que no se puede eliminar el nodo al que se hace referencia
 
 Otra causa común de una [Ingesta superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) el error es un conflicto de versiones para un nodo en particular en la instancia de destino. Para identificar este error, descargue el registro de ingesta mediante la interfaz de usuario de Cloud Acceleration Manager y busque una entrada como la siguiente:
+
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: No se puede eliminar el nodo al que se hace referencia: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
 Esto puede suceder si se modifica un nodo en el destino entre una ingesta y una **Sin barrido** ingesta de tal manera que se ha creado una nueva versión. Si el conjunto de migración se ha extraído con la opción &quot;incluir versiones&quot; habilitada, puede producirse un conflicto, ya que el destino tiene ahora una versión más reciente a la que hacen referencia el historial de versiones y otro contenido. El proceso de ingesta no podrá eliminar el nodo de versión infractor porque se hace referencia a él.
 
 La solución puede requerir que la extracción superior se realice de nuevo sin el nodo infractor. O bien, creando un pequeño conjunto de migración del nodo infractor, pero con la opción &quot;incluir versiones&quot; deshabilitada.
 
-Las prácticas recomendadas indican que si **Sin barrido** La ingesta debe ejecutarse con un conjunto de migración que incluya versiones (es decir, extraídas con &quot;incluir versiones&quot; = true), es crucial que el contenido del destino se modifique lo menos posible, hasta que se complete el recorrido de migración. De lo contrario, pueden producirse estos conflictos.
+Las prácticas recomendadas indican que si **Sin barrido** La ingesta debe ejecutarse con un conjunto de migración que incluya versiones (es decir, extraídas con &quot;incluir versiones&quot;=true), es crucial que el contenido del destino se modifique lo menos posible, hasta que se complete el recorrido de migración. De lo contrario, pueden producirse estos conflictos.
 
 ### Ingesta Rescindida
 

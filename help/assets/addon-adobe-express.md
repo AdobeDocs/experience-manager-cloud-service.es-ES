@@ -1,9 +1,10 @@
 ---
 title: Complemento de AEM Assets para Adobe Express
 description: El complemento de AEM Assets para Adobe Express le permite acceder directamente a los recursos almacenados en AEM Assets desde la interfaz de usuario de Adobe Express.
-source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
+exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Siga estos pasos para agregar el complemento de AEM Assets al Adobe Express:
 
 1. Abra la aplicación web de Adobe Express.
 
-1. Abra un nuevo lienzo en blanco cargando una nueva plantilla o proyecto, o creando un nuevo recurso.
+1. Abra un nuevo lienzo en blanco cargando una nueva plantilla o proyecto, o creando un recurso.
 
 1. Clic **[!UICONTROL Complementos]** disponible en el panel de navegación izquierdo.
 
@@ -64,4 +65,3 @@ Después de incorporar las modificaciones adecuadas en el lienzo Express, puede 
 1. Clic **[!UICONTROL Cargar]** para cargar el recurso en AEM Assets.
 
    ![AEM Guardado de recursos en el](assets/aem-assets-add-on-save.png)
-

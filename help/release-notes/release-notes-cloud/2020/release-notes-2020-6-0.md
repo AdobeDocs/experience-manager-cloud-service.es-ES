@@ -2,10 +2,10 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.6.0".'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 90%
+source-wordcount: '1932'
+ht-degree: 94%
 
 ---
 
@@ -62,7 +62,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
   Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
 
-* Un usuario de programa de zona protegida en el rol de *Propietario del negocio* o *Administrador de implementación* en Cloud Manager ahora puede eliminar su conjunto de entornos de producción y ensayo en la interfaz de usuario de Cloud Manager. La opción Eliminar ya está disponible en la tarjeta Entorno de la **Información general de programas** y la **Entornos** página. Al seleccionar la opción de eliminación en producción o fase también se eliminan las otras del conjunto.
+* Un usuario de programa de zona protegida en el rol de *Propietario del negocio* o *Administrador de implementación* en Cloud Manager ahora puede eliminar su conjunto de entornos de producción y ensayo en la interfaz de usuario de Cloud Manager. La opción Eliminar ya está disponible en la tarjeta de entorno de la página **Información general de Programas** y en la página **Entornos**. Al seleccionar la opción de eliminación en producción o fase también se eliminan las otras del conjunto.
 
   Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
 
@@ -72,7 +72,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 * Ahora hay disponible una página **LEARN** en Cloud Manager, a la que se puede acceder desde la barra de navegación superior. Esta página incluye recursos para ayudar a los usuarios a conocer los flujos de trabajo utilizados con más frecuencia según su rol asignado en Cloud Manager.
 
-* Los Programas de zona protegida ahora se identifican mediante una **Sandbox** que se muestra en la tarjeta de programa de la página de aterrizaje y junto al nombre del programa en la **Resumen del programa** página.
+* Los Programas de zona protegida ahora se identifican mediante un distintivo de **Zona protegida** que se muestra en la tarjeta de programa de la página de aterrizaje junto al nombre del programa en la página **Información general del Programa**.
 
 * Un usuario con el rol de SysAdmin ahora tiene acceso con un solo clic a la ubicación de Admin Console desde la que se pueden administrar los roles de los usuarios o los permisos de Cloud Manager. Ahora está disponible el botón **Administrar acceso** en la página de aterrizaje junto al botón **Agregar Programa**.
 
@@ -98,7 +98,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 ### Problemas conocidos {#known-issues-cm}
 
-* Los entornos de un programa de zona protegida hibernan cuando no se detecta ninguna actividad durante un tiempo determinado. Este estado no se observa en Cloud Manager. Sin embargo, el estado se puede observar a través de Developer Console. Esto se solucionará en una próxima versión.
+* Los entornos dentro de un programa de zona protegida hibernan cuando no se detecte ninguna actividad durante un tiempo determinado. Este estado no se observa en Cloud Manager. Sin embargo, el estado se puede observar a través de Developer Console. Esto se solucionará en una próxima versión.
 
 * El vínculo a Developer Console directamente desde Cloud Manager no mostrará la opción de anular la hibernación o hibernar el entorno de un programa de zona protegida para pruebas. Para solucionarlo, una vez en Developer Console, agregue el patrón `#release-cm-p1234-e5678` al final de la dirección URL, donde *1234* es el ID de Programa y *5678* es el ID del entorno. Esto se solucionará en una próxima versión.
 

@@ -2,10 +2,10 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 93%
+source-wordcount: '2158'
+ht-degree: 90%
 
 ---
 
@@ -90,7 +90,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
    * Filtrar componentes por su nombre.
    * Restringir la visualización a un grupo específico mediante la selección desplegable.
 
-  Para obtener una descripción más detallada del componente, puede hacer clic o pulsar el icono de información situado junto al componente en el navegador de **componentes** (si está disponible). Por ejemplo, para el **fragmento de contenido**:
+  Para obtener una descripción más detallada del componente, puede seleccionar el icono de información junto al componente en la **Componentes** explorador (si está disponible). Por ejemplo, para el **fragmento de contenido**:
 
   ![Información del explorador de componentes](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -163,13 +163,13 @@ Si necesita realizar rápidamente un cambio en un recurso, puede iniciar el [edi
 
 ## Árbol de contenido {#content-tree}
 
-El **Árbol de contenido** ofrece información general de todos los componentes de la página en una jerarquía, para que pueda ver en general cómo está compuesta la página.
+El **Árbol de contenido** ofrece información general de todos los componentes de la página en una jerarquía, para que pueda ver de un vistazo cómo está compuesta la página.
 
 El árbol de contenido es una pestaña del panel lateral (junto con el explorador de recursos y componentes). Para abrir (o cerrar) el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
 
 ![Botón Árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-Cuando abra el panel lateral, se deslizará para abrirse (de izquierda a derecha). Seleccione la pestaña **Árbol de contenido** si es necesario. Cuando se abre, puede ver una representación en forma de árbol de la página o plantilla, de modo que sea más fácil comprender cómo se estructura jerárquicamente su contenido. Además, en una página compleja, hace que sea más fácil saltar de un componente de página a otro.
+Cuando abra el panel lateral, se deslizará para abrirse (de izquierda a derecha). Seleccione la pestaña **Árbol de contenido** si es necesario. Cuando se abre, puede ver una representación en forma de árbol de la página o plantilla, de modo que sea más fácil comprender cómo se estructura jerárquicamente su contenido. Además, en una página compleja, resulta más fácil saltar entre los componentes de la página.
 
 ![Árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
@@ -315,7 +315,7 @@ El navegador de rutas está organizado como la [vista de columna](/help/sites-cl
 
 ![Navegador de rutas](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Una vez seleccionado un recurso, el botón **Seleccionar** en la parte superior derecha del cuadro de diálogo se activa. Pulse o haga clic para confirmar la selección o **Cancelar** para anular la operación.
+* Una vez seleccionado un recurso, el botón **Seleccionar** en la parte superior derecha del cuadro de diálogo se activa. Seleccione para confirmar la selección o **Cancelar** para cancelar.
 * Si el contexto permite la selección de varios recursos, al seleccionar un recurso también se activa el botón **Seleccionar**, pero también se agrega un recuento del número de recursos seleccionados a la esquina superior derecha de la ventana. Haga clic en la **X** junto al número para anular toda la selección.
 * Al navegar por el árbol, su ubicación se refleja en las rutas de exploración en la parte superior del cuadro de diálogo. Estas rutas de exploración también se pueden utilizar para saltar rápidamente dentro de la jerarquía de recursos.
 * Puede utilizar en cualquier momento el campo de búsqueda en la parte superior del cuadro de diálogo. Haga clic en **X** en el campo de búsqueda para borrar la búsqueda.

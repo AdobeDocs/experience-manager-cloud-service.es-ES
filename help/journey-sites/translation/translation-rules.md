@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 96%
+source-wordcount: '776'
+ht-degree: 86%
 
 ---
 
@@ -57,22 +57,22 @@ Hay una consola de **Configuración de traducción** disponible para configurar 
 
 Para acceder a ella:
 
-1. Vaya a **Herramientas** -> **General**.
-1. Toque o haga clic en **Configuración de traducción**.
+1. Vaya a **Herramientas** > **General**.
+1. Seleccione **Configuración de traducción**.
 
 AEM crea automáticamente reglas de traducción para todo el contenido. Para ver estas reglas, haga lo siguiente:
 
-1. Seleccione el `/content` contexto y luego la opción **Editar** en la barra de herramientas.
+1. Seleccione el `/content` contexto.
+1. En la barra de herramientas, seleccione **Editar**.
 1. El Editor de reglas de traducción se abre con las reglas que AEM crea automáticamente para la ruta `/content`.
 
    ![Editor de reglas de traducción](assets/translation-rules-editor.png)
 
 1. Las propiedades de página que se traducen se encuentran en la sección **General** de la lista. Puede agregar o actualizar nombres de propiedades existentes que desee incluir explícitamente en la traducción.
-   1. Introduzca el nombre de la propiedad en el campo **Nueva propiedad**.
-   1. Las opciones **Traducir** y **Heredar** se marcan automáticamente.
-   1. Haga clic o pulse **Agregar**.
+   1. En el **Nueva propiedad** , introduzca el nombre de la propiedad. Las opciones **Traducir** y **Heredar** se marcan automáticamente.
+   1. Seleccionar **Añadir**.
    1. Repita estos pasos para todos los campos que debe traducir.
-   1. Haga clic o pulse **Guardar**.
+   1. Seleccione **Guardar**.
 
 Ya ha configurado las reglas de traducción.
 

@@ -2,7 +2,7 @@
 title: Configurar formularios de búsqueda
 description: Configuración de Search Forms para Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2035'
 ht-degree: 17%
@@ -64,7 +64,7 @@ Las configuraciones predeterminadas disponibles (enumeradas alfabéticamente) so
 
 >[!NOTE]
 >
->Para obtener más información sobre los formularios de búsqueda relacionados con recursos, consulte [Recursos - Facetas de búsqueda](/help/assets/search-facets.md)
+>Para obtener más información sobre los formularios de búsqueda relacionados con recursos, consulte [Recursos - Facetas de búsqueda](/help/assets/search-facets.md).
 
 
 ## Predicados y su configuración {#predicates-and-their-settings}

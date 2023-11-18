@@ -2,9 +2,9 @@
 title: Permisos personalizados
 description: Descubra cómo puede utilizar permisos personalizados para crear nuevos perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1474'
 ht-degree: 2%
 
 ---
@@ -52,11 +52,11 @@ Primero debe crear un perfil de producto para poder asignar permisos personaliza
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
-1. En la página de aterrizaje de Cloud Manager, toque o haga clic en **Administrar acceso** botón
+1. En la página de aterrizaje de Cloud Manager, seleccione **Administrar acceso** botón
 
 ![Botón Administrar acceso](assets/manage-access.png)
 
-1. Se le redirigirá a **Productos** pestaña del Admin Console, donde puede administrar usuarios y permisos para cloud manager. En el Admin Console, toque o haga clic en **Nuevo perfil** botón.
+1. Se le redirigirá a **Productos** pestaña del Admin Console, donde puede administrar usuarios y permisos para cloud manager. En el Admin Console, seleccione **Nuevo perfil** botón.
 
 ![Botón Nuevo perfil](assets/admin-console-new-profile.png)
 
@@ -67,7 +67,7 @@ Primero debe crear un perfil de producto para poder asignar permisos personaliza
    * **Descripción** - Una descripción informativa del perfil en la que se explique su finalidad (opcional)
    * **Notificar a los usuarios por correo electrónico** : cuando se selecciona, se notifica a los usuarios por correo electrónico cuando se agregan o eliminan de este perfil.
 
-1. Haga clic o pulse **Guardar** cuando se complete.
+1. Seleccionar **Guardar** cuando se complete.
 
 El nuevo perfil de producto se guarda y es visible en la lista de perfiles de producto del Admin Console.
 
@@ -75,13 +75,13 @@ El nuevo perfil de producto se guarda y es visible en la lista de perfiles de pr
 
 Ahora que tiene un nuevo perfil de producto, puede asignarle permisos personalizados.
 
-1. En el Admin Console, toque o haga clic en el nombre del [nuevo perfil de producto que acaba de crear.](#create)
+1. En el Admin Console, seleccione el nombre del [nuevo perfil de producto que acaba de crear.](#create)
 
 1. En la ventana que se abre, seleccione la **Permisos** para ver una lista de permisos editables.
 
    ![Permisos editables](assets/permissions-tab.png)
 
-1. Haga clic o pulse en **Editar** Vínculo de un permiso para editarlo.
+1. Seleccione el **Editar** Vínculo de un permiso para editarlo.
 
 1. El **Editar permisos** se abre.
    * El permiso seleccionado en el paso anterior se selecciona en la columna izquierda.
@@ -90,18 +90,18 @@ Ahora que tiene un nuevo perfil de producto, puede asignarle permisos personaliz
 
    ![Editar elementos de permiso](assets/edit-permission-items.png)
 
-1. Pulse o haga clic en el signo más (`+`) junto al elemento de permiso para añadirlo a la columna **Elementos de permisos incluidos**.
+1. Seleccione el signo más (`+`) junto al elemento de permiso para añadirlo a la columna **Elementos de permisos incluidos**.
 
-   * Haga clic o pulse en `i` junto a un elemento de permiso para obtener más información al respecto.
+   * Seleccione el `i` junto a un elemento de permiso para obtener más información al respecto.
 
-1. Haga clic o pulse en **Añadir todo** en la parte superior del **Permisos disponibles** para agregar todos los permisos.
+1. Seleccione el **Añadir todo** en la parte superior del **Permisos disponibles** para agregar todos los permisos.
 
 1. Si el perfil siempre debe tener todos los elementos de permisos, considere la posibilidad de utilizar la variable **Inclusión automática** opción.
 
    * **Activado** : todos los elementos de permisos actuales y los elementos de permisos futuros se moverán a Elementos de permisos incluidos y, al guardarlos, se aplicarán en consecuencia.
    * **Desactivado** - Todos los elementos de permiso se moverán de nuevo a los elementos de permiso disponibles y, al guardarlos, se aplicarán según corresponda.
 
-1. Haga clic o pulse **Guardar** cuando haya terminado de definir los elementos de permiso para el nuevo perfil de producto.
+1. Seleccionar **Guardar** cuando haya terminado de definir los elementos de permiso para el nuevo perfil de producto.
 
 El nuevo perfil de producto ahora se guarda con sus permisos personalizados.
 
@@ -109,11 +109,11 @@ El nuevo perfil de producto ahora se guarda con sus permisos personalizados.
 
 Ahora puede asignar usuarios al nuevo perfil de producto que ha creado con permisos personalizados.
 
-1. En el Admin Console, toque o haga clic en el nombre del [nuevo perfil de producto al que acaba de asignar permisos personalizados.](#assign-permissions)
+1. En el Admin Console, seleccione el nombre del [nuevo perfil de producto al que acaba de asignar permisos personalizados.](#assign-permissions)
 
 1. En la ventana que se abre, seleccione la **Usuarios** pestaña.
 
-1. Haga clic o pulse en **Agregar usuarios** y asigne usuarios a su nuevo perfil de productos con permisos personalizados.
+1. Seleccione el **Agregar usuarios** y asigne usuarios a su nuevo perfil de productos con permisos personalizados.
 
 Consulte la sección **Adición de usuarios y grupos de usuarios a un perfil de producto** del documento [Administración de perfiles de producto para usuarios empresariales](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) para obtener más información sobre cómo utilizar el Admin Console.
 
@@ -148,7 +148,7 @@ Los siguientes permisos son permisos de nivel de organización:
 * **Creación de programa** : Este permiso permite a los usuarios crear un programa en la organización.
 * **Acceso a información de repositorio** Este permiso de nivel de inquilino/organización permite a los usuarios generar un nombre de usuario, una contraseña y una URL de repositorio para acceder y contribuir en el proyecto del cliente.
    * El nombre de usuario y la contraseña para acceder al repositorio serán comunes en todos los repositorios de la organización, pero la URL del repositorio será única para cada programa.
-   * Consulte el documento [Acceso a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md) para obtener más información.
+   * Consulte [Acceso a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md) para obtener más información.
 
 ## Términos {#terms}
 
@@ -176,7 +176,7 @@ Los elementos de permisos hacen referencia al ámbito en el que se aplicará el 
 Tenga en cuenta las siguientes limitaciones al utilizar permisos personalizados.
 
 * El perfil de permisos personalizados también enumerará los programas, entornos y canalizaciones de AMS al configurar los permisos.
-* Recursos como programa, entorno, canalización, etc. Los permisos creados en Cloud Manager pueden tardar dos minutos en mostrarse en Admin Console para la configuración de permisos.
+* Los recursos como programa, entorno, canalización, etc. creados en Cloud Manager pueden tardar hasta dos minutos en mostrarse en Admin Console para la configuración de permisos.
 * En casos excepcionales en los que el servicio de permisos personalizados no responde, los perfiles predefinidos siguen estando disponibles y los usuarios de perfiles predefinidos siguen teniendo el acceso adecuado.
 
 ## Preguntas más frecuentes {#faq}
@@ -188,7 +188,7 @@ Tenga en cuenta las siguientes limitaciones al utilizar permisos personalizados.
 * Administrador de implementación
 * Desarrollador
 
-Para obtener más información sobre las funciones predefinidas, consulte el documento [AEM Perfiles de equipo y producto as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md)
+Para obtener más información sobre las funciones predefinidas, consulte [AEM Perfiles de equipo y producto as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ### ¿Qué les sucede a los perfiles de permiso predefinidos con introducción a los perfiles personalizados?
 

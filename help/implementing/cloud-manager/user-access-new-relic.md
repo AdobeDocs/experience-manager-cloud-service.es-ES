@@ -2,10 +2,10 @@
 title: New Relic One
 description: Obtenga información sobre el servicio de supervisión del rendimiento de la aplicación (APM) de New Relic One para AEM as a Cloud Service y cómo puede acceder a él.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 90%
+source-wordcount: '1728'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ Siga los siguientes pasos para definir los usuarios de la cuenta secundaria de N
 
    * También puede acceder a la opción **Administrar usuarios** mediante el botón de los tres puntos de la parte superior de la pantalla **Entornos** de su programa.
 
-1. En el cuadro de diálogo **Administrar usuarios de New Relic**, escriba el nombre y los apellidos del usuario que desea agregar y haga clic en el botón **Agregar**. Repita este paso para todos los usuarios que desee agregar.
+1. En el **Administrar usuarios de New Relic** , introduzca el nombre y los apellidos del usuario que desea añadir y haga clic en el botón **Añadir** botón. Repita este paso para todos los usuarios que desee agregar.
 
    ![Agregar usuarios](assets/newrelic-add-users.png)
 
@@ -154,7 +154,7 @@ Las siguientes limitaciones se aplican a la adición de usuarios a New Relic One
 >
 >Si no se detecta ninguna actividad en su cuenta de New Relic One durante 90 días o más, se detendrá el agente de APM.
 >
->Abra un ticket de asistencia a través de la [AEM Portal de asistencia](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) si desea volver a habilitar el agente de APM para sus entornos de AEMaaCS.
+>Abra un ticket de asistencia a través de la [AEM Portal de asistencia](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) si desea volver a habilitar el agente de APM para los entornos de AEMaaCS.
 
 Para obtener más ayuda o instrucciones adicionales sobre las ofertas de New Relic One para su programa de AEM as a Cloud Service, abra un ticket de asistencia a través del [Portal de asistencia de AEM](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
 
@@ -202,4 +202,4 @@ Mientras que el soporte de Adobe supervisa la aplicación de AEM as a Cloud Serv
 
 ### El agente de APM de mi cuenta de New Relic One está detenido. ¿Qué pasó? {#deactivated}
 
-[Los agentes de APM están detenidos](#limitations) si no se detecta ninguna actividad durante 90 días o más. Abra un ticket de asistencia a través de la [AEM Portal de asistencia](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) si desea volver a habilitar el agente de APM para sus entornos de AEMaaCS.
+[Los agentes de APM están detenidos](#limitations) si no se detecta ninguna actividad durante 90 días o más. Abra un ticket de asistencia a través de la [AEM Portal de asistencia](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) si desea volver a habilitar el agente de APM para los entornos de AEMaaCS.

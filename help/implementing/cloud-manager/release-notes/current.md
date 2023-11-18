@@ -3,10 +3,10 @@ title: Notas de la versión 2023.11.0 para Cloud Manager en Adobe Experience Man
 description: Estas son las notas de la versión 2023.11.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 13%
+source-wordcount: '740'
+ht-degree: 12%
 
 ---
 
@@ -50,7 +50,7 @@ Si está interesado en probar esta nueva función y compartir sus comentarios, e
 
 [Permisos personalizados de Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) le permite crear nuevos perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para los usuarios de Cloud Manager.
 
-si está interesado en probar esta nueva función y compartir sus comentarios, envíe un mensaje de correo electrónico a `Grp-CloudManager-custom-permissions@adobe.com` de su dirección de correo electrónico asociada a su Adobe ID.
+si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `Grp-CloudManager-custom-permissions@adobe.com` de su dirección de correo electrónico asociada a su Adobe ID.
 
 ### Restauración de contenido de autoservicio {#content-restore}
 
@@ -59,7 +59,7 @@ si está interesado en probar esta nueva función y compartir sus comentarios, e
 * Restauración de la copia de seguridad puntual de las 24 horas anteriores
 * Restauraciones a tiempo fijo de hasta siete días
 
-Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-restorefrombackup-adopter@adobe.com` de su correo electrónico asociado a su Adobe ID. Importante:
+Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-restorefrombackup-adopter@adobe.com` de su correo electrónico asociado a su Adobe ID.
 
 * El programa de los primeros en adoptarlo se limita únicamente a los entornos de desarrollo.
 * La disponibilidad del programa de adopción anticipada de esta función es limitada.

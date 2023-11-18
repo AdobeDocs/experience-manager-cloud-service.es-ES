@@ -2,10 +2,10 @@
 title: Creación de un sitio de muestra
 description: Cree un sitio de demostración en AEM basado en una biblioteca de plantillas preconfiguradas.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 89%
+source-wordcount: '815'
+ht-degree: 72%
 
 ---
 
@@ -21,7 +21,7 @@ En el documento anterior del recorrido del complemento Demostraciones de referen
 * Obtenga información sobre cómo activar el complemento de demostraciones de referencia para el nuevo programa.
 * Poder ejecutar una canalización para implementar el contenido del complemento.
 
-En este artículo se describe el siguiente paso del proceso: crear un nuevo sitio o proyecto de AEM Screens en AEM basado en las plantillas del complemento Demostraciones de referencia.
+En este artículo se describe el siguiente paso del proceso: crear un sitio o proyecto de AEM Screens AEM en basado en las plantillas del complemento Demostraciones de referencia.
 
 ## Objetivo {#objective}
 
@@ -35,23 +35,23 @@ Este documento le ayuda a comprender cómo crear un sitio basado en las plantill
 
 Una vez que la canalización haya implementado el complemento Demostraciones de referencia, puede acceder al entorno de creación de AEM para crear sitios de demostración basados en el contenido del complemento.
 
-1. AEM En la página de información general del programa de Cloud Manager, pulse o haga clic en el vínculo al entorno de creación de la.
+1. AEM En la página de información general del programa de Cloud Manager, seleccione el vínculo al entorno de creación de.
 
    ![Acceso al entorno de creación](assets/access-author.png)
 
-1. AEM En el menú principal de la, toque o haga clic en **Sites**.
+1. AEM En el menú principal de la, seleccione **Sites**.
 
    ![Acceso a sitios](assets/access-sites.png)
 
-1. Desde la consola Sites, pulse o haga clic en **Crear** en la parte superior derecha de la pantalla y seleccione **Sitio a partir de una plantilla** en la lista desplegable.
+1. En la consola Sitios, seleccione **Crear** en la parte superior derecha de la pantalla y seleccione **Sitio a partir de plantilla** en la lista desplegable.
 
    ![Crear sitio a partir de una plantilla](assets/create-site-from-template.png)
 
-1. Se inicia el asistente para la creación del sitio. En la columna izquierda puede ver las plantillas de demostración que la canalización implementó en la instancia de creación. Pulse o haga clic en una para seleccionarla y mostrar los detalles en la columna derecha. Si desea probar o hacer una demostración de AEM Screens, asegúrese de seleccionar la opción **Plantilla de sitio de We.Cafe**. Haga clic o pulse **Siguiente**.
+1. Se inicia el asistente para la creación del sitio. En la columna izquierda puede ver las plantillas de demostración que la canalización implementó en la instancia de creación. Seleccione uno para seleccionarlo y mostrar los detalles en la columna derecha. Si desea probar o hacer una demostración de AEM Screens, asegúrese de elegir **Plantilla del sitio de We.Cafe**. Seleccione **Siguiente**.
 
    ![Asistente de creación de sitios](assets/site-creation-wizard.png)
 
-1. En la siguiente pantalla, proporcione un título para el sitio o el proyecto de Screens. Se puede proporcionar un nombre de sitio o se genera a partir del título si se omite. Haga clic o pulse en **Crear**.
+1. En la siguiente pantalla, proporcione un título para el sitio o el proyecto de Screens. Se puede proporcionar un nombre de sitio o se genera a partir del título si se omite. Seleccione **Crear**.
 
    * El título del sitio aparece en la barra de título de los exploradores.
    * El nombre del sitio forma parte de la dirección URL.
@@ -59,7 +59,7 @@ Una vez que la canalización haya implementado el complemento Demostraciones de 
 
    ![Detalles del sitio](assets/site-details.png)
 
-1. La creación del sitio se confirma con un cuadro de diálogo. Haga clic o pulse en **Listo**.
+1. La creación del sitio se confirma con un cuadro de diálogo. Seleccionar **Listo**.
 
    ![Creación del sitio completa](assets/site-creation-complete.png)
 
@@ -77,11 +77,11 @@ Ahora que se ha creado el sitio de demostración, puede navegar y utilizarlo com
 
    ![Vista de columna](assets/column-view.png)
 
-1. Pulse o haga clic en el sitio para explorar su estructura y contenido. La vista de columna se expande continuamente a medida que navega por el árbol de contenido del sitio de demostración.
+1. Seleccione el sitio para explorar su estructura y contenido. La vista de columna se expande continuamente a medida que navega por el árbol de contenido del sitio de demostración.
 
    ![Estructura del sitio](assets/site-structure.png)
 
-1. Pulse o haga clic en una página para seleccionarla y, a continuación, en **Editar** en la barra de herramientas.
+1. Seleccione una página para seleccionarla y luego seleccione **Editar** en la barra de herramientas.
 
    ![Seleccionar página](assets/select-page.png)
 
@@ -103,7 +103,7 @@ Ahora que ha completado esta parte del recorrido del complemento de demostració
 
 Ahora puede probar las características de AEM usando contenido de complementos. Tiene dos opciones para continuar con el recorrido:
 
-* Si desea llevar a cabo una demostración completa y probar el contenido de AEM Screens, asegúrese de que ha implementado un sitio basado en la **Plantilla de sitio de We.Cafe**, tal como se ha descrito antes. Continúe a [Habilitación de AEM Screens para el sitio de demostración.](screens.md)
+* Si desea realizar una demostración completa y probar el contenido de AEM Screens, asegúrese de haber implementado un sitio basado en **Plantilla del sitio de We.Cafe** como se describió anteriormente y siga [Habilite AEM Screens para el sitio de demostración.](screens.md)
 * Si solo tiene que mostrar contenido de Sites, continúe a [Administrar Los Sitios De Demostración,](manage.md) donde puede obtener información sobre las herramientas disponibles para ayudarle a administrar los sitios de muestra y cómo eliminarlos.
 
 ## Recursos adicionales {#additional-resources}

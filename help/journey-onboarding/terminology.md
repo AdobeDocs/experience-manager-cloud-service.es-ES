@@ -2,10 +2,10 @@
 title: Terminología de AEM as a Cloud Service
 description: Antes de iniciar sesión en AEMaaCS, es útil conocer parte de la terminología del sistema y su estructura básica.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 87%
+source-wordcount: '463'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ Ahora que comprende lo que ha llevado al proceso de incorporación al leer el do
 
 AEM as a Cloud Service es una herramienta potente y flexible y para utilizar cualquier herramienta, debe estar familiarizado con su organización, la terminología y el lenguaje que se usa para describirla. Este documento resume algunos términos clave que debe comprender antes de comenzar a utilizar el sistema.
 
-Tras leer este documento, comprenderá lo siguiente:
+Después de leer este documento, debería saber lo siguiente
 
 * Las diferentes capas que componen AEMaaCS.
 * Conceptos básicos de lo que hace cada capa.
@@ -44,7 +44,7 @@ Un ejemplo suele ser útil para contextualizar esta jerarquía.
    * Un programa de Assets para la división WKND Media
 * Los programas de WKND Magazine y WKND Media tendrían **entornos** de desarrollo, ensayo y producción.
 * **Los repositorios** se utilizan para mantener el código personalizado y las aplicaciones para WKND Magazine y WKND Media.
-* Varios **herramientas y flujos de trabajo** trabajan en todos los repositorios para implementar código mediante canalizaciones de CI/CD, registros de acceso, acceso de AEM, etc.
+* Varios **herramientas y flujos de trabajo** AEM Trabaje en todos los repositorios para implementar código mediante canalizaciones de CI/CD, registros de acceso, acceso, etc., y así sucesivamente.
 
 ## Siguientes pasos {#what-is-next}
 

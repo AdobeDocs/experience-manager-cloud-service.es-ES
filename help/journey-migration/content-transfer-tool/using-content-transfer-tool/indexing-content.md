@@ -2,9 +2,9 @@
 title: Indexación después de migrar contenido
 description: Descubra cómo el proceso de migración indexará el contenido ingerido en la instancia del Cloud Service de destino.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '505'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ Para empezar, vaya a Cloud Acceleration Manager. Haga clic en la tarjeta del pro
 y ver los trabajos enumerados.
 
 >[!NOTE]
->Puede ver o descargar los registros de indexación mediante las acciones del trabajo de ingesta, usando la lista desplegable ... . Los registros estarán disponibles en el
+>Puede ver o descargar los registros de indexación mediante las acciones del trabajo de ingesta, utilizando la lista desplegable ... . Los registros estarán disponibles en el
 > Sección de acciones &quot;Registro de indexación&quot;, una vez completado el trabajo de indexación
 
 ### Pendiente

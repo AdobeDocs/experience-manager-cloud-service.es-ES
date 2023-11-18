@@ -2,10 +2,10 @@
 title: Configuración de DNS
 description: Obtenga información sobre cómo configurar DNS para los nombres de dominio personalizados.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 96%
+source-wordcount: '337'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ Inicie sesión en el registrador de dominios y cree un registro `CNAME` para se�
 
 Un dominio Apex es un dominio personalizado que no contiene un subdominio, como `example.com`. Un dominio Apex está configurado con un registro `A`, `ALIAS` o `ANAME` a través de su proveedor DNS. Los dominios Apex deben apuntar a direcciones IP específicas.
 
-Agregue todo lo siguiente `A` registra la configuración DNS de su dominio a través de su proveedor de dominios.
+Añada lo siguiente `A` registra la configuración DNS de su dominio a través de su proveedor de dominios.
 
 * `A RECORD`
 

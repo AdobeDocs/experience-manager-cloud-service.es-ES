@@ -2,9 +2,9 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3435'
 ht-degree: 97%
 
 ---
@@ -113,8 +113,8 @@ El parámetro `kind` debe establecerse en `CDN` y la versión debe establecerse 
 
 1. Para tipos de entorno distintos de RDE, cree una canalización de configuración de implementación de destino en Cloud Manager.
 
-   * [Consulte este documento para canalizaciones de producción.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [Consulte este documento para canalizaciones que no sean de producción.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [Consulte Configuración de canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [Consulte Configuración de canalizaciones que no son de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 Para RDE, se utilizará la línea de comandos, pero RDE no es compatible en este momento.
 

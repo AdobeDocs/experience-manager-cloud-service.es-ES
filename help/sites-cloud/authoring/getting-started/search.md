@@ -2,10 +2,10 @@
 title: Búsqueda
 description: Encuentre su contenido más rápidamente con una búsqueda completa
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 98%
+source-wordcount: '492'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ La función de búsqueda está disponible en la barra de herramientas superior:
 Con el carril de búsqueda puede:
 
 * Busque una palabra clave, una ruta o una etiqueta específicas.
-* Filtre según los criterios específicos del recurso, como fechas de modificación, estados de página, tamaño de archivo, etc.
+* Filtre según criterios específicos de recurso, como fechas de modificación, estados de página, tamaño de archivo, etc.
 * Defina y utilice una [búsqueda guardada](#saved-searches) según los criterios anteriores
 
 >[!NOTE]

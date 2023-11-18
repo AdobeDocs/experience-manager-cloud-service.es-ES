@@ -2,10 +2,10 @@
 title: Métodos abreviados del teclado para las consolas
 description: Ahorre tiempo durante la creación mediante estos métodos abreviados del teclado
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 69%
+source-wordcount: '378'
+ht-degree: 64%
 
 ---
 
@@ -65,7 +65,7 @@ Además, los métodos abreviados de teclado son los mismos para todas las config
 
 ## Desactivación de métodos abreviados del teclado {#deactivating-keyboard-shortcuts}
 
-AEM proporciona métodos abreviados del teclado para algunas de las funciones que se utilizan con más frecuencia (editar, propiedades, copiar/pegar, mostrar diversos menús de raíl secundarios, etc.).
+AEM proporciona métodos abreviados del teclado para algunas de las funciones que se utilizan con más frecuencia (editar, propiedades, copiar/pegar, mostrar varios menús de raíl secundarios, etc.).
 
 Para los usuarios que no utilizan métodos abreviados de teclado o que tienen ciertos requisitos de accesibilidad, se pueden desactivar todos los métodos abreviados de teclado.
 

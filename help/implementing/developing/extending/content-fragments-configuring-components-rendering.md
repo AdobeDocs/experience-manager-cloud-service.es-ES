@@ -2,9 +2,9 @@
 title: Fragmentos de contenido Configurar componentes para procesamiento
 description: Fragmentos de contenido Configurar componentes para procesamiento
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '521'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ Esta información es necesaria cuando:
 * Debe implementar su propio componente basado en fragmentos de contenido,
 * Y necesita hacer uso de los servicios avanzados.
 
-Se recomienda utilizar los componentes principales.
+El Adobe recomienda utilizar los componentes principales.
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ Si necesita una o más de estas funciones, (por lo general) es más fácil utili
 
 ## Servicio OSGi: configuración del componente Fragmento de contenido {#osgi-service-content-fragment-component-configuration}
 
-La configuración debe enlazarse al servicio OSGi **Configuración del componente Fragmento de contenido**:
+La configuración debe estar enlazada al servicio OSGi **Configuración del componente Fragmento de contenido**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 

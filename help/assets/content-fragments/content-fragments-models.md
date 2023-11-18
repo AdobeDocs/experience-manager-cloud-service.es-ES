@@ -2,10 +2,10 @@
 title: Modelos de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en la creación de fragmentos de contenido y cómo crear fragmentos de contenido con contenido estructurado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2935'
-ht-degree: 93%
+source-wordcount: '2931'
+ht-degree: 91%
 
 ---
 
@@ -88,7 +88,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
 
 1. **Eliminación de un campo**
 
-   Seleccione el campo requerido y, a continuación, toque o haga clic en el icono de la papelera. Se le solicitará que confirme la acción.
+   Seleccione el campo requerido y, a continuación, seleccione el icono de la papelera. Se le solicitará que confirme la acción.
 
    ![quitar](assets/cfm-models-06.png)
 
@@ -113,7 +113,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
 * **Fecha y hora**
    * Adición de una fecha u hora
 * **Lista desglosada**
-   * Adición de un conjunto de casillas de verificación, botones de opción o campos desplegables
+   * Agregar un conjunto de casillas de verificación, botones de opción o campos de lista desplegable
 * **Etiquetas**
    * Permite a los autores de fragmentos acceder y seleccionar áreas de etiquetas
 * **Referencia de contenido**
@@ -331,9 +331,9 @@ Para tener un control total sobre el uso de los modelos de fragmentos de conteni
 
 ### Activación de un modelo de fragmento de contenido {#enabling-a-content-fragment-model}
 
-Una vez creado un modelo, debe activarse para que:
+Cuando se crea un modelo, debe habilitarse para que:
 
-* Esté disponible para seleccionarse al crear un nuevo fragmento de contenido.
+* Está disponible para su selección al crear un fragmento de contenido.
 * Se pueda hacer referencia a él desde un modelo de fragmento de contenido.
 * Esté disponible para GraphQL y por lo tanto, se genere el esquema.
 

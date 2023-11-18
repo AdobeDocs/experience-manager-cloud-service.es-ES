@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 15%
+source-wordcount: '971'
+ht-degree: 7%
 
 ---
 
@@ -36,14 +36,14 @@ Imagine un escenario en el que desee mostrar metadatos en cascada en función de
 
 Independientemente del tipo de recurso elegido, muestre la información de copyright como un campo obligatorio.
 
-1. Pulse o haga clic en [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
-1. En la página **[!UICONTROL Formularios de esquema]**, seleccione un formulario de esquema y, a continuación, pulse o haga clic en **[!UICONTROL Editar]** en la barra de herramientas para editar el esquema.
+1. Seleccione el [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
+1. En el **[!UICONTROL Esquema Forms]** , seleccione un formulario de esquema y, a continuación, seleccione **[!UICONTROL Editar]** en la barra de herramientas para editar el esquema.
 
    ![select_form](assets/select_form.png)
 
 1. (Opcional) En el editor de esquemas de metadatos, cree un campo para condicionalizar. Especifique un nombre y una ruta de propiedad en la **[!UICONTROL Configuración]** pestaña.
 
-   Para crear una pestaña, pulse o haga clic en `+` para agregar una pestaña y luego agregar un campo de metadatos.
+   Para crear una pestaña, seleccione `+` para agregar una pestaña y luego agregar un campo de metadatos.
 
    ![add_tab](assets/add_tab.png)
 
@@ -53,7 +53,7 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
 1. Los pares clave-valor son las opciones proporcionadas para un usuario de formulario. Puede proporcionar los pares clave-valor manualmente o desde un archivo JSON.
 
-   * Para especificar los valores manualmente, seleccione **[!UICONTROL Añadir manualmente]** y pulse o haga clic en **[!UICONTROL Agregar opción]** y especifique el texto y el valor de la opción. Por ejemplo, especifique los tipos de recursos Vídeo, PDF, Word e Imagen.
+   * Para especificar los valores manualmente, seleccione **[!UICONTROL Añadir manualmente]** y seleccione **[!UICONTROL Agregar opción]** y especifique el texto y el valor de la opción. Por ejemplo, especifique los tipos de recursos Vídeo, PDF, Word e Imagen.
 
    * Para recuperar los valores de un archivo JSON de forma dinámica, seleccione **[!UICONTROL Añadir mediante ruta de JSON]** y proporcione la ruta del archivo JSON. [!DNL Experience Manager] recupera los pares clave-valor en tiempo real cuando se presenta el formulario al usuario.
 
@@ -80,7 +80,7 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
    ![select_depenentfield](assets/select_dependentfield.png)
 
 1. En **[!UICONTROL Requisito]**, elija la **[!UICONTROL Necesario, según nueva regla]** opción.
-1. Pulse o haga clic en **[!UICONTROL Agregar regla]** y elija el campo **[!UICONTROL Tipo de recurso]** para crear una dependencia. También elija el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Pulse o haga clic en **[!UICONTROL Listo]** para guardar los cambios.
+1. Seleccionar **[!UICONTROL Agregar regla]** y elija la **[!UICONTROL Tipo de recurso]** para crear una dependencia. Elija también el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Seleccionar **[!UICONTROL Listo]** para guardar los cambios.
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,13 +90,13 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
 1. En **[!UICONTROL Visibilidad]**, seleccione la opción **[!UICONTROL Visible, según la nueva regla]**.
 
-1. Pulse o haga clic en **[!UICONTROL Agregar regla]** y elija el campo **[!UICONTROL Tipo de recurso]** para crear una dependencia. También elija el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Pulse o haga clic en **[!UICONTROL Listo]** para guardar los cambios.
+1. Seleccionar **[!UICONTROL Agregar regla]** y elija la **[!UICONTROL Tipo de recurso]** para crear una dependencia. También elija el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Seleccionar **[!UICONTROL Listo]** para guardar los cambios.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >Para restablecer los valores, toque o haga clic en un espacio en blanco o en cualquier lugar de la interfaz que no sean los valores. Si se restablecen los valores, vuelva a seleccionarlos.
+   >Para restablecer los valores, seleccione en cualquier lugar de la interfaz que no sean los valores. Si se restablecen los valores, vuelva a seleccionarlos.
 
    >[!NOTE]
    >

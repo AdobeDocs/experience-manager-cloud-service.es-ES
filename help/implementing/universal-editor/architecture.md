@@ -2,10 +2,10 @@
 title: Arquitectura del editor universal
 description: Obtenga información sobre la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 100%
+source-wordcount: '650'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Este documento describe cada uno de estos bloques de creación básicos y cómo 
 
 >[!TIP]
 >
->Si desea ver el editor universal y su arquitectura en acción, consulte el documento [Introducción al editor universal en AEM](getting-started.md) para obtener información sobre cómo acceder al Editor Universal y comenzar a instrumentar la primera aplicación de AEM para utilizarla.
+>Para ver el Editor universal y su arquitectura en acción, consulte [AEM Introducción al editor universal en el entorno de trabajo de la aplicación de](getting-started.md) AEM para obtener información sobre cómo acceder al editor universal y cómo empezar a instrumentar la primera aplicación de la que se utiliza la aplicación de la.
 
 ### Editores {#editors}
 
@@ -50,7 +50,7 @@ El editor universal se esfuerza por conseguir un SDK mínimo, por lo que la inst
 ### Capa de persistencia {#persistence-layer}
 
 * **Modelo de fragmento de contenido**: para admitir el carril para editar las propiedades del Fragmento de contenido, el editor de Fragmentos de contenido y los editores basados en formularios, se requieren modelos por componente y por fragmento de contenido.
-* **Contenido**: se puede almacenar en cualquier parte, como en AEM, Magento, etc.
+* **Contenido** AEM - El contenido se puede almacenar en cualquier lugar, como en el caso de la, el Magento, etc.
 
 ![Capa de persistencia](assets/persistence-layer.png)
 

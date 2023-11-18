@@ -2,10 +2,10 @@
 title: Contenido asociado (recursos - fragmentos de contenido)
 description: AEM Comprender cómo la función de contenido asociada proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 52%
+source-wordcount: '230'
+ht-degree: 51%
 
 ---
 
@@ -19,7 +19,7 @@ AEM La función de contenido asociado proporciona la conexión para que los recu
 >
 >Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento y/o página.
 
-Para realizar la asociación, primero debe [agregar los recursos multimedia a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede hacer lo siguiente:
+Para realizar la asociación, primero debe [añadir los recursos multimedia a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede hacer lo siguiente:
 
 1. Abrir el fragmento y seleccionar **Contenido asociado** en el panel lateral.
 
@@ -28,7 +28,7 @@ Para realizar la asociación, primero debe [agregar los recursos multimedia a un
 1. Dependiendo de si alguna colección ya se ha asociado o no, seleccione:
 
    * **Asociar contenido** - esta es la primera colección asociada
-   * **Asociar colección** - las colecciones asociadas ya están configuradas
+   * **Asociar colección**: las colecciones asociadas ya están configuradas
 
 1. Seleccione la colección requerida.
 

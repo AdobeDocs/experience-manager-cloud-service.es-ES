@@ -4,9 +4,9 @@ description: En este artículo se describe cómo crear, modificar y utilizar fac
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2504'
 ht-degree: 21%
 
 ---
@@ -108,7 +108,7 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 1. Realice una de las siguientes acciones:
 
    * En el **[!UICONTROL Nombre de propiedad]** , mencione la ruta del archivo JSON donde define los nodos para las opciones y especifique los pares de clave-valor correspondientes.
-   * Tocar ![Icono de adición de recursos](assets/do-not-localize/aem_assets_add_icon.png) situado junto al campo Opciones para especificar el texto y el valor de visualización de las opciones que desea proporcionar en el panel Filtros. Para agregar otra opción, toque o haga clic en ![Icono de adición de recursos](assets/do-not-localize/aem_assets_add_icon.png) y repita el paso.
+   * Tocar ![Icono de adición de recursos](assets/do-not-localize/aem_assets_add_icon.png) situado junto al campo Opciones para especificar el texto y el valor de visualización de las opciones que desea proporcionar en el panel Filtros. Para añadir otra opción, seleccione ![Icono de adición de recursos](assets/do-not-localize/aem_assets_add_icon.png) y repita el paso.
 
 1. Compruebe que la opción **[!UICONTROL Selección única]** se borra para que el usuario pueda seleccionar varias opciones a la vez para diferentes tipos de archivos (por ejemplo, imágenes, documentos, multimedia y archivos). Si elige **[!UICONTROL Selección única]**, el usuario solo puede seleccionar una opción para diferentes tipos de archivo a la vez.
 
@@ -145,7 +145,7 @@ El `Tags` el predicado permite realizar búsquedas de recursos basadas en etique
 
    ![Configuración típica del predicado de etiquetas](assets/tags_predicate.png)
 
-1. En el **[!UICONTROL Descripción]** , escriba una descripción opcional y pulse o haga clic en **[!UICONTROL Listo]**.
+1. En el **[!UICONTROL Descripción]** , introduzca una descripción opcional y, a continuación, seleccione **[!UICONTROL Listo]**.
 1. Vaya al panel Buscar. El **[!UICONTROL Etiquetas]** El predicado se agrega al panel Buscar.
 1. Especifique las etiquetas en función de las cuales desea buscar recursos o seleccione en la lista de sugerencias.
 1. Seleccionar **[!UICONTROL Coincidir con todo]** para buscar coincidencias que incluyan todas las etiquetas especificadas.

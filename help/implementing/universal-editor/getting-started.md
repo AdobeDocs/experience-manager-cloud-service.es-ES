@@ -2,10 +2,10 @@
 title: Introducción al editor universal en AEM
 description: Obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 87%
+source-wordcount: '920'
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ Obtenga información sobre cómo acceder al editor universal y cómo instrumenta
 
 Aunque el editor universal puede editar contenido desde cualquier fuente, este documento utilizará una aplicación AEM como ejemplo.
 
-Hay varios pasos para incorporar la aplicación de AEM e instrumentarla para utilizar el editor universal.
+AEM Hay que seguir varios pasos para incorporar la aplicación de e instrumentarla para que utilice el editor universal.
 
 1. [Solicite acceso al editor universal.](#request-access)
 1. [Incluya la biblioteca principal del editor universal.](#core-library)
@@ -43,13 +43,13 @@ Haga clic en **Solicitud de acceso** y rellene el formulario como se le indica p
 
 ## Incluya la biblioteca principal del editor universal {#core-library}
 
-Para que la aplicación se pueda instrumentar para su uso con el editor universal, debe incluir la siguiente dependencia.
+Para poder instrumentar la aplicación para su uso con el editor universal, debe incluir la siguiente dependencia.
 
 ```javascript
 @adobe/universal-editor-cors
 ```
 
-Para activar la instrumentación, debe agregarse la siguiente importación a su `index.js`.
+Para activar la instrumentación, se debe añadir la siguiente importación a su `index.js`.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -103,7 +103,7 @@ Esta propiedad debe establecerse en la configuración de OSGi `org.apache.sling.
 
 El servicio de editor universal requiere un [nombre de recurso uniforme (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) para identificar y utilizar el sistema back-end correcto para el contenido de la aplicación que se está editando. Por lo tanto, se requiere un esquema URN para volver a asignar contenido a los recursos de contenido.
 
-Los atributos de instrumentación agregados a la página constan principalmente de [microdatos del HTML,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) un estándar del sector que también puede utilizarse para hacer que el HTML sea más semántico, que los documentos HTML sean indizables, etc.
+Los atributos de instrumentación añadidos a la página constan principalmente de [Microdatos de HTML,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) un estándar del sector que también se puede utilizar para hacer que HTML sea más semántico, para hacer que los documentos de HTML sean indexables, etc.
 
 ### Creación de conexiones {#connections}
 

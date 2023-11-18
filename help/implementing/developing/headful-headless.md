@@ -2,10 +2,10 @@
 title: Modelos con encabezado y sin encabezado en AEM
 description: Los proyectos de AEM se pueden implementar en un modelo con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 93%
+source-wordcount: '1014'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Pero esto no tiene que ser una elección binaria. AEM ofrece una flexibilidad si
 
 ![Modelos de implementación de AEM](/help/headless/assets/aem-implementation-models.png)
 
-En un modelo de pila completa o con periférico, el contenido se administra en el repositorio de AEM, y los componentes de AEM basados en Java, HTL, etc., se utilizan para representar el contenido para la experiencia del usuario. En este modelo, la creación del contenido, el estilo, la presentación y la entrega se realizan en AEM.
+AEM AEM En un modelo con encabezado o de pila completa, el contenido se administra en el repositorio de y se utilizan componentes basados en Java, HTL, etc., para procesar el contenido para la experiencia del usuario. En este modelo, la creación del contenido, el estilo, la presentación y la entrega se realizan en AEM.
 
 En un modelo sin encabezado, el contenido se administra en el repositorio de AEM, pero se envía mediante una API como REST y GraphQL a otro sistema para procesar el contenido para la experiencia del usuario. En este modelo, el contenido se crea en AEM, pero el diseño, la presentación y entrega se realiza en otra plataforma.
 

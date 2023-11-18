@@ -1,10 +1,10 @@
 ---
 title: Cómo importar y exportar recursos a [!DNL AEM Forms]?
 description: Aprenda a utilizar DocuSign con un formulario adaptable para recopilar firmas electrónicas.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 94%
+source-wordcount: '1322'
+ht-degree: 90%
 
 ---
 
@@ -32,10 +32,10 @@ Para descargar recursos de formularios y documentos:
 1. Seleccione los recursos de los formularios y pulse en el icono **[!UICONTROL Descargar]**.
 1. En Descargar recursos, elija una de las siguientes opciones y pulse **[!UICONTROL Descargar]**.
 
-   * **Descargar como paquete CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de [!DNL AEM Forms] a otra. Descarga todos los recursos y carpetas como un paquete crx. Cualquier activo de formulario, incluidos los formularios creados en AEM (formularios adaptables y fragmentos de formularios adaptables), documentos PDF y recursos (XSD, XFS, imágenes), se puede descargar como paquete desde la interfaz de usuario de [!DNL AEM Forms]. 
+   * **Descargar como paquete CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de [!DNL AEM Forms] a otra. Descarga todos los recursos y carpetas como un paquete CRX. AEM Todos los recursos de formulario, incluidos los formularios creados en la aplicación (Forms adaptable y fragmentos de formulario adaptable), los documentos de PDF y los recursos (XSD, XFS, imágenes), se pueden descargar como paquete desde [!DNL AEM Forms] IU.
 La ventaja de descargar recursos como un paquete es que también descarga recursos que el recurso seleccionado para descargar ha utilizado. Por ejemplo, si tiene un formulario adaptable que utiliza una plantilla de formulario, XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como paquete, el paquete descargado también contiene la plantilla de formulario, XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
 
-   * **Descargar recursos como archivos binarios:** Utilice la opción para descargar solo plantillas de formulario (XDP), Formularios PDF (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos de formularios que poseen binarios, como XSD, XDP, imágenes, PDF y XDP como un archivo .zip. 
+   * **Descargar recursos como archivos binarios:** Utilice la opción para descargar solo plantillas de formulario (XDP), PDF forms (PDF), documentos (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos de formularios que poseen binarios, como XSD, XDP, imágenes, PDF y XDP como un archivo .zip. 
 No puede descargar formularios adaptables, fragmentos de formularios adaptables y temáticas con la opción **[!UICONTROL Descargar recursos como archivos binarios]**. Para descargar estos recursos, debe utilizar la opción **[!UICONTROL Descargar como paquete CRX]**.
 
    Los recursos seleccionados se descargan como un archivo (archivo .zip).

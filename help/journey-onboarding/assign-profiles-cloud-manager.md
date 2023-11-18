@@ -4,10 +4,10 @@ description: Siga esta página para obtener información sobre cómo asignar mie
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1528'
-ht-degree: 94%
+source-wordcount: '1527'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Después de leer este documento, debería poder hacer lo siguiente:
 
 ## Requisitos previos {#prerequisites}
 
-AEM Para asignar integrantes del equipo a perfiles de producto, debe tener detalles sobre los integrantes del equipo, que deben acceder a los perfiles as a Cloud Service, lo que incluye:
+AEM Para asignar integrantes del equipo a perfiles de producto, debe tener detalles sobre los integrantes del equipo, que deben acceder a los perfiles as a Cloud Service, que incluyen:
 
 * Nombres
 * Direcciones de correo electrónico

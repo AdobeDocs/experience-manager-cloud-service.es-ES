@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service Uso de bibliotecas del lado del cliente en el uso de
 description: AEM proporciona Carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente (clientlibs) en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2551'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Si la carpeta de la biblioteca cliente contiene uno o varios archivos de código
 Las carpetas de la biblioteca de cliente contienen los siguientes elementos:
 
 * Los archivos de origen JS o CSS
-* Recursos estáticos que admiten estilos CSS, como iconos, fuentes web, etc.
+* Recursos estáticos compatibles con los estilos CSS, como iconos, fuentes web, etc.
 * Uno `js.txt` archivo y/o uno `css.txt` que identifican los archivos de origen que se van a combinar en los archivos JS o CSS generados
 
 ![Arquitectura de Clientlib](assets/clientlib-architecture.drawio.png)
@@ -170,7 +170,7 @@ El `dumplibs` El componente incluye un selector de prueba que muestra el código
 
 ## Funciones adicionales de carpeta de biblioteca de cliente {#additional-features}
 
-AEM Hay otras funciones compatibles con las carpetas de la biblioteca de cliente en la documentación de la biblioteca de cliente en la documentación de la biblioteca de la biblioteca de cliente de la versión de. AEM Sin embargo, estos no son necesarios en los casos as a Cloud Service y, por lo tanto, se desaconseja su uso. Se enumeran aquí para completar la información.
+AEM Hay otras funciones compatibles con las carpetas de biblioteca de cliente en la documentación de la biblioteca de. AEM Sin embargo, estos no son necesarios en los casos as a Cloud Service y, por lo tanto, se desaconseja su uso. Se enumeran aquí para completar la información.
 
 >[!WARNING]
 >
@@ -339,7 +339,7 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-Para obtener más información sobre las opciones de GCC, consulte la [Documentación de GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
+Para obtener más información sobre las opciones de GCC, consulte [Documentación de GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### Establecer minificador predeterminado del sistema {#set-system-default-minifier}
 

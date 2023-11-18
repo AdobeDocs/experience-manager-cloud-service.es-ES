@@ -2,10 +2,10 @@
 title: Introducción a la traducción sin encabezado AEM
 description: Conozca cómo organizar su contenido sin encabezado y cómo funcionan las herramientas de traducción de AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 95%
+source-wordcount: '1413'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ Este documento le ayuda a comprender cómo empezar a traducir contenido sin enca
 
 ## Requisitos y requisitos previos {#requirements-prerequisites}
 
-Antes de empezar a traducir el contenido AEM sin encabezado, existen varios requisitos.
+AEM Antes de empezar a traducir el contenido sin encabezado, existen varios requisitos que se deben cumplir
 
 ### Conocimiento {#knowledge}
 
@@ -78,17 +78,17 @@ El arquitecto de contenido trabaja al principio del proyecto para definir esta e
 
 Dado que los modelos de contenido definen la estructura de su contenido, debe saber qué campos de los modelos se deben traducir. Normalmente, se trabaja con el arquitecto de contenido para definir esto. Para examinar los campos de los modelos de contenido, siga los pasos a continuación.
 
-1. Vaya a **Herramientas** -> **General** -> **Modelos de fragmento de contenido**.
-1. Los modelos de fragmento de contenido generalmente se almacenan en una estructura de carpetas. Toque o haga clic en la carpeta de su proyecto.
-1. Se enumeran los modelos. Pulse o haga clic en el modelo para ver los detalles.
+1. Vaya a **Herramientas** > **General** > **Modelos de fragmento de contenido**.
+1. Los modelos de fragmento de contenido generalmente se almacenan en una estructura de carpetas. Seleccione la carpeta del proyecto.
+1. Se enumeran los modelos. Seleccione el modelo para ver los detalles.
    ![Modelos de fragmentos de contenido](assets/content-fragment-models.png)
 1. Se abrirá el **Editor de modelos de fragmento de contenido**.
    1. La columna izquierda contiene los campos del modelo. Esta columna nos interesa.
    1. La columna derecha contiene los campos que se pueden agregar al modelo. Esta columna se puede ignorar.
       ![Editor del modelo de fragmentos de contenido](assets/content-fragment-model-editor.png)
-1. Pulse o haga clic en uno de los campos del modelo. AEM los marca y los detalles de ese campo se muestran en la columna derecha.
+1. Seleccione uno de los campos del modelo. AEM los marca y los detalles de ese campo se muestran en la columna derecha.
    ![Detalle del Editor de modelos de fragmento de contenido](assets/content-fragment-model-editor-detail.png)
-1. El arquitecto de contenido habilita el campo de **Traducible** en todos los campos del modelo de contenido que deban traducirse.
+1. El arquitecto de contenido habilita la variable **Traducible** en cada campo del Modelo de contenido que debe traducirse.
 
 >[!TIP]
 >

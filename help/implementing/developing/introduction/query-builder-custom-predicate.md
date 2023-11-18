@@ -2,9 +2,9 @@
 title: Implementación de un evaluador de predicados personalizado para el Generador de consultas
 description: AEM El Generador de consultas de ofrece una forma fácil y personalizable de consultar el repositorio de contenido en la que se encuentra
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---

@@ -2,10 +2,10 @@
 title: 'Creación de una configuración: configuración sin encabezado'
 description: Cree una configuración como primer paso para empezar a utilizar sin encabezado en AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '327'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Si está familiarizado con las [plantillas de página en una implementación de 
 
 Un administrador solo tendría que crear una configuración una vez, o poco a poco cuando se necesite un nuevo espacio de trabajo para organizar los modelos de contenido. Para los fines de esta guía de introducción, solo necesitamos crear una configuración.
 
-1. Inicie sesión en AEM as a Cloud Service y, en el menú principal, seleccione **Herramientas > General > Explorador de configuración**.
+1. AEM Inicie sesión en el as a Cloud Service y, en el menú principal, seleccione **Herramientas > General > Explorador de configuración**.
 1. Proporcione un **Título** y **Nombre** para su configuración.
    * El **Título** debe ser descriptivo.
    * El **nombre** se convierte en el nombre de nodo del repositorio.
@@ -37,7 +37,7 @@ Un administrador solo tendría que crear una configuración una vez, o poco a po
 
    ![Creación de configuración](../assets/create-configuration.png)
 
-1. Haga clic o pulse **Crear**
+1. Seleccione **Crear**
 
 Si es necesario, puede crear varias configuraciones. Las configuraciones también se pueden anidar.
 

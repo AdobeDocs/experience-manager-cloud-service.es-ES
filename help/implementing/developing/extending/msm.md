@@ -2,9 +2,9 @@
 title: Ampliación del Administrador de varios sitios
 description: Obtenga información sobre cómo ampliar la funcionalidad del Administrador de varios sitios.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2435'
+source-wordcount: '2425'
 ht-degree: 2%
 
 ---
@@ -106,11 +106,11 @@ El `LiveActionFactory` crea instancias del `LiveAction` para una configuración 
 
 Utilice el `LiveAction` nodo de configuración en el repositorio para almacenar información que afecta al comportamiento en tiempo de ejecución del `LiveAction` ejemplo. El nodo en el repositorio que almacena el `LiveAction` La configuración de está disponible para `LiveActionFactory` durante la ejecución. Por lo tanto, puede agregar propiedades al nodo de configuración a y utilizarlas en su `LiveActionFactory` según sea necesario.
 
-Por ejemplo, una `LiveAction` necesita almacenar el nombre del autor del modelo. Una propiedad del nodo de configuración incluye el nombre de la propiedad de la página de modelo que almacena la información. En tiempo de ejecución, la variable `LiveAction` recupera el nombre de propiedad de la configuración y, a continuación, obtiene el valor de propiedad.
+Por ejemplo, una `LiveAction` debe almacenar el nombre del autor del modelo. Una propiedad del nodo de configuración incluye el nombre de la propiedad de la página de modelo que almacena la información. En tiempo de ejecución, la variable `LiveAction` recupera el nombre de propiedad de la configuración y, a continuación, obtiene el valor de propiedad.
 
 El parámetro del [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) El método es un `Resource` objeto. Esta `Resource` representa el objeto `cq:LiveSyncAction` para esta acción activa en la configuración de despliegue.
 
-Consulte el documento [Creación de una configuración de despliegue](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) para obtener más información.
+Consulte [Creación de una configuración de despliegue](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) para obtener más información.
 
 Como de costumbre, al utilizar un nodo de configuración, debe adaptarlo a un `ValueMap` objeto:
 
@@ -136,7 +136,7 @@ Los siguientes objetos se proporcionan como parámetros del `execute` método de
    * El `autoSave` indica si su `LiveAction` debe guardar los cambios realizados en el repositorio
    * El `reset` Este valor indica el modo de restablecimiento del despliegue.
 
-A partir de estos objetos puede obtener toda la información acerca de la `LiveCopy`. También puede utilizar la variable `Resource` objetos que obtener `ResourceResolver`, `Session`, y `Node` objetos. Estos objetos son útiles para manipular el contenido del repositorio:
+A partir de estos objetos, puede obtener información sobre `LiveCopy`. También puede utilizar la variable `Resource` objetos que obtener `ResourceResolver`, `Session`, y `Node` objetos. Estos objetos son útiles para manipular el contenido del repositorio:
 
 En la primera línea del siguiente código, el origen es el `Resource` objeto de la página de origen:
 
@@ -349,7 +349,7 @@ Agregue dependencias para que el compilador Eclipse pueda hacer referencia a las
 
 Lo siguiente `LiveActionFactory` clase implementa un `LiveAction` que registra mensajes sobre las páginas de origen y destino y copia el `cq:lastModifiedBy` del nodo de origen al nodo de destino. El nombre de la acción activa es `exampleLiveAction`.
 
-1. En el Explorador del proyecto Eclipse, haga clic con el botón secundario en `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` paquete y haga clic en **Nuevo** -> **Clase**.
+1. En el Explorador del proyecto Eclipse, haga clic con el botón secundario en `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` paquete y haga clic en **Nuevo** > **Clase**.
 
 1. Para el **Nombre**, introduzca `ExampleLiveActionFactory` y luego haga clic en **Finalizar**.
 
@@ -617,7 +617,7 @@ A continuación, debe asegurarse de que:
 * Correo electrónico de contacto:
 
    * Se excluye de las propiedades desplegadas.
-   * Consulte el documento [Configuración de la sincronización de Live Copy](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) para obtener más información.
+   * Consulte [Configuración de la sincronización de Live Copy](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) para obtener más información.
 
 * Estilo visual clave:
 

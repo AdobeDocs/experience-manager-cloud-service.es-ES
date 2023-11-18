@@ -2,10 +2,10 @@
 title: Uso del contenido de destino de varios sitios
 description: Si necesita administrar contenido de destino, como actividades, experiencias y ofertas, entre sus sitios, puede aprovechar el soporte integrado con varios sitios para el contenido de destino
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2885'
-ht-degree: 96%
+source-wordcount: '2844'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ Este documento describe lo siguiente:
 
 Para configurar cómo sus sitios comparten contenido personalizado, debe realizar los pasos siguientes:
 
-1. [Crear una nueva área](#creating-new-areas) o [crear un área como live copy](#creating-new-areas). Un área incluye todas las actividades disponibles para un *área* de la página; es decir, la ubicación en la página a la que se dirige el componente. Al crear un área nueva, se crea una vacía; si crea una nueva área como Live Copy puede heredar contenido de las estructuras del sitio.
+1. [Crear una nueva área](#creating-new-areas) o [crear un área como live copy](#creating-new-areas). Un área incluye todas las actividades disponibles para un *área* de la página; es decir, la ubicación en la página a la que se dirige el componente. La creación de una nueva área crea una área vacía, mientras que la creación de una área como Live Copy permite heredar el contenido en las estructuras del sitio.
 
 1. [Vincular el sitio o la página](#linking-sites-to-an-area) a un área.
 
@@ -52,7 +52,7 @@ Un sitio o Live Copy vincula un área que contiene las actividades que deben est
 
 ## Casos de uso {#use-cases}
 
-Puede configurar el soporte de varios sitios para el contenido de destino de varias formas, según el caso de uso. En esta sección se describe cómo puede funcionar esta opción, en teoría, con una marca. Además, en [Ejemplo: segmentación de contenido basado en áreas geográficas](#example-targeting-content-based-on-geography), puede ver una aplicación real de segmentación de contenido en varios sitios.
+Puede configurar la compatibilidad de varios sitios para el contenido de destino de varias formas, según el caso de uso. En esta sección se describe cómo puede funcionar esta opción, en teoría, con una marca. Además, en [Ejemplo: segmentación de contenido basado en áreas geográficas](#example-targeting-content-based-on-geography), puede ver una aplicación real de segmentación de contenido en varios sitios.
 
 El contenido de destino se agrupa en las denominadas áreas, que definen el ámbito de los sitios o las páginas. Estas áreas se definen en el nivel de la marca. Una marca puede contener varias áreas. Las áreas pueden ser diferentes entre marcas. Si bien una marca solo puede contener el área principal y, por lo tanto, se comparte entre todas las marcas, otra marca puede contener varias marcas (por ejemplo, según la región). Por lo tanto, las marcas no necesitan reflejar el conjunto de áreas entre ellas.
 
@@ -144,18 +144,18 @@ Las áreas pueden abarcar actividades y ofertas. Después de crear un área en a
 
 >[!NOTE]
 >
->El área predeterminada denominada Área maestra se contrae de forma predeterminada al pulsar o hacer clic en el nombre de una marca **hasta** se crea otra área. A continuación, cuando selecciona una marca en la consola **Actividad** u **Ofertas**, llegará a la consola **Área**.
+>El área predeterminada denominada Área maestra se contrae de forma predeterminada al seleccionar el nombre de una marca **hasta** se crea otra área. A continuación, cuando selecciona una marca en la consola **Actividad** u **Ofertas**, llegará a la consola **Área**.
 
 Para crear un área:
 
 1. Vaya a **Personalización** > **Actividades** u **Ofertas** y, a continuación, a su marca.
-1. Haga clic o pulse **Crear área**.
+1. Seleccionar **Crear área**.
 
    ![Crear área](/help/sites-cloud/authoring/assets/multisite-create-area.png)
 
 1. Haga clic en el icono **Área** y en **Siguiente**.
 1. En el campo **Título**, especifique un nombre para la nueva área. Si lo desea, seleccione etiquetas.
-1. Haga clic o pulse en **Crear**.
+1. Seleccione **Crear**.
 
    AEM redirige a la ventana de la marca, donde enumera las áreas creadas. Si hay otra área además del área principal, puede crear áreas directamente en la consola de marca.
 
@@ -168,7 +168,7 @@ Cree una zona como una Live Copy para heredar el contenido de destino a través 
 Para crear un área como una Live Copy, haga lo siguiente:
 
 1. Vaya a **Personalización** > **Actividades** u **Ofertas** y, a continuación, a su marca.
-1. Haga clic o pulse **Crear área como Live Copy**.
+1. Seleccionar **Crear área como Live Copy**.
 
    ![Crear área como Live Copy](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
 
@@ -190,7 +190,7 @@ Para crear un área como una Live Copy, haga lo siguiente:
    >
    >Cuando una página se transforma en una Live Copy y el área configurada de la página modelo resulta ser también el modelo del área configurada para las Live Copy de las páginas, el valor de LiveAction **personalizationContentRollout** activa un elemento subRollout sincrónico, que forma parte de la **configuración de despliegue estándar**.
 
-1. Haga clic o pulse en **Crear**.
+1. Seleccione **Crear**.
 
    AEM redirige a la ventana de la marca, donde enumera las áreas creadas. Si hay otra área además del área principal, puede crear áreas directamente desde la ventana de marca.
 
@@ -209,13 +209,13 @@ Al vincular, solo están disponibles las actividades, experiencias y ofertas del
 Para vincular un sitio a un área:
 
 1. Desplácese hasta el sitio (o página) que desee vincular a un área.
-1. Seleccione el sitio o la página y haga clic o pulse en **Ver propiedades**.
-1. Haga clic o pulse la pestaña **Personalización.**
+1. Seleccione el sitio o la página y seleccione **Ver propiedades**.
+1. Seleccione el **Personalización** pestaña.
 1. En el menú **Marca**, seleccione la marca que desea vincular al área. Después de seleccionar la marca, las áreas están disponibles en el menú **Referencia de área**.
 
    ![Vinculación de sitios](/help/sites-cloud/authoring/assets/multisite-english.png)
 
-1. Seleccione el área del menú desplegable **Referencia de área** y haga clic o pulse **Guardar**.
+1. Seleccione el área de la **Referencia de área** menú desplegable y seleccione **Guardar**.
 
    ![Referencia del área](/help/sites-cloud/authoring/assets/multisite-area-reference.png)
 
@@ -239,8 +239,8 @@ Una actividad que se hereda de otro sitio aparece en verde junto al nombre de la
 
 Para suspender o desasociar la herencia del contenido de destino en una actividad:
 
-1. Desplácese a la página donde desea restaurar la herencia y haga clic o pulse en el modo **Segmentación** en el menú desplegable.
-1. Si la página está vinculada a un área que es una Live Copy, se ve el estado de la herencia. Haga clic o pulse **Iniciar segmentación**.
+1. Vaya a la página en la que desea desasociar o suspender la herencia y seleccione **Segmentación** en el menú desplegable mode.
+1. Si la página está vinculada a un área que es una Live Copy, se ve el estado de la herencia. Seleccione **Iniciar segmentación**.
 1. Para suspender una actividad, siga uno de estos procedimientos:
 
    1. Seleccione un elemento de la actividad, como el público. AEM muestra automáticamente el cuadro de diálogo de confirmación Suspender Live Copy. (Puede suspender Live Copy pulsando o haciendo clic en cualquier elemento durante el proceso de Segmentación).
@@ -248,7 +248,7 @@ Para suspender o desasociar la herencia del contenido de destino en una activida
 
    ![Suspender Live Copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
-1. Haga clic o pulse **Suspender** para suspender la actividad. Las actividades suspendidas están marcadas en rojo.
+1. Seleccionar **Suspender** para suspender la actividad. Las actividades suspendidas están marcadas en rojo.
 
    ![Live Copy suspendida](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
@@ -256,10 +256,10 @@ Para suspender o desasociar la herencia del contenido de destino en una activida
 
 Para interrumpir la herencia del contenido de destino en una actividad:
 
-1. Desplácese a la página donde desee desasociar la Live Copy de la principal y haga clic o pulse en el modo **Segmentación** en el menú desplegable.
-1. Si la página está vinculada a un área que es una Live Copy, se ve el estado de la herencia. Haga clic o pulse **Iniciar segmentación**.
+1. Vaya a la página en la que desea separar la Live Copy del original y seleccione **Segmentación** en el menú desplegable mode.
+1. Si la página está vinculada a un área que es una Live Copy, se ve el estado de la herencia. Seleccione **Iniciar segmentación**.
 1. Seleccione **Separar Live Copy** en el menú desplegable de la barra de herramientas. AEM confirma que desea separar la Live Copy.
-1. Haga clic o pulse en **Desasociar** para desasociar la Live Copy de la actividad. Una vez desvinculada, ya no se muestra el menú desplegable de la herencia. La actividad es ahora una actividad local.
+1. Seleccionar **Desasociar** para desasociar la live copy de la actividad. Una vez desvinculada, ya no se muestra el menú desplegable de la herencia. La actividad es ahora una actividad local.
 
    ![Actividad local](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
@@ -269,13 +269,13 @@ Si ha suspendido la herencia del contenido de destino en una actividad, puede re
 
 Para restaurar la herencia del contenido de destino de una actividad, haga lo siguiente:
 
-1. Desplácese a la página donde desea restaurar la herencia y haga clic o pulse el modo **Segmentación** en el menú desplegable.
-1. Haga clic o pulse **Iniciar segmentación**.
+1. Vaya a la página donde desea restaurar la herencia y seleccione **Segmentación** en el menú desplegable mode.
+1. Seleccione **Iniciar segmentación**.
 1. Seleccione **Reanudar Live Copy** en el menú desplegable de la barra de herramientas.
 
    ![Reanudar Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
-1. Haga clic o pulse **Reanudar** para confirmar que desea reanudar la herencia de la Live Copy. Las modificaciones realizadas en la actividad actual se pierden si se reanuda la herencia.
+1. Seleccionar **Reanudar** para confirmar que desea reanudar la herencia de live copy. Las modificaciones realizadas en la actividad actual se pierden si se reanuda la herencia.
 
 ## Eliminación de áreas {#deleting-areas}
 
@@ -284,5 +284,5 @@ Cuando se elimina un área, se eliminan todas las actividades que contiene. AEM 
 Para eliminar un área:
 
 1. Desplácese a **Personalización** > **Actividades** o **Ofertas** y luego a su marca.
-1. Pulse o haga clic en el icono situado junto al área que desea eliminar.
-1. Pulse o haga clic en **Eliminar** y confirme que desea eliminar el área.
+1. Seleccione el icono situado junto al área que desee eliminar.
+1. Seleccionar **Eliminar** y confirme que desea eliminar el área.

@@ -2,10 +2,10 @@
 title: Búsqueda de contenido e indexación
 description: AEM Obtenga información acerca de la búsqueda de contenido y la indexación en as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 31%
+source-wordcount: '2428'
+ht-degree: 29%
 
 ---
 
@@ -67,7 +67,7 @@ Una definición de índice puede caer en una de las siguientes categorías:
 
 >[!NOTE]
 >
->Si personaliza un índice predeterminado, como `damAssetLucene-8`, copie la última definición de índice lista para usarse de un *entorno de Cloud Service* con el Administrador de paquetes CRX DE (`/crx/packmgr/`). Cambiarle el nombre a `damAssetLucene-8-custom-1` (o superior) y agregue las personalizaciones dentro del archivo XML. Esto garantiza que las configuraciones necesarias no se eliminen de forma involuntaria. Por ejemplo, la variable `tika` nodo bajo `/oak:index/damAssetLucene-8/tika` es necesario en el índice personalizado implementado en un entorno de AEM Cloud Service AEM, pero no existe en el SDK de la aplicación local de la interfaz de usuario de.
+>Si personaliza un índice predeterminado, por ejemplo, `damAssetLucene-8`, copie la última definición de índice lista para usar de un *entorno Cloud Service* usar el Administrador de paquetes CRX DE (`/crx/packmgr/`). Cambiarle el nombre a `damAssetLucene-8-custom-1` (o superior) y agregue las personalizaciones dentro del archivo XML. Esto garantiza que las configuraciones necesarias no se eliminen de forma involuntaria. Por ejemplo, la variable `tika` nodo bajo `/oak:index/damAssetLucene-8/tika` es necesario en el índice personalizado implementado en un entorno de AEM Cloud Service AEM, pero no existe en el SDK de la aplicación local de la interfaz de usuario de.
 
 Para las personalizaciones de un índice OOTB, prepare un nuevo paquete que contenga la definición del índice real que siga este patrón de nomenclatura:
 
@@ -240,7 +240,7 @@ Después de agregar la nueva definición de índice, implemente la nueva aplicac
 
 >[!TIP]
 >
->Para obtener más información sobre la estructura de paquetes necesaria para AEM as a Cloud Service, consulte el documento [Estructura del proyecto de AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>AEM Para obtener más información sobre la estructura de paquetes necesaria para el as a Cloud Service de la, consulte [AEM Estructura del proyecto de](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Administración de índices mediante implementaciones móviles {#index-management-using-rolling-deployments}
 

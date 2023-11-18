@@ -4,10 +4,10 @@ description: Utilice el modelo de fragmento de contenido que ha creado anteriorm
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 91%
+source-wordcount: '688'
+ht-degree: 81%
 
 ---
 
@@ -37,15 +37,15 @@ En este módulo, creará un fragmento de contenido basado en ese modelo mediante
 
 La consola Fragmento de contenido se utiliza para crear y editar contenido sin encabezado en todos los canales de envío e independientemente del contexto, que puede ser el método más eficaz en muchos casos de creación. En un módulo posterior, exploraremos la edición de contenido sin encabezado en contexto y in situ.
 
-1. Toque o haga clic en el botón **Crear** en la parte superior derecha de la consola.
+1. Seleccione el **Crear** en la parte superior derecha de la consola.
 
-1. Se abre el cuadro de diálogo **Nuevo fragmento de contenido**, en el que puede empezar a crearlo. **Ubicación** se rellena automáticamente con el lugar donde se guarda el nuevo contenido.
+1. El **Fragmento de contenido nuevo** se abrirá un cuadro de diálogo en el que puede empezar a crear un fragmento de contenido. **Ubicación** se rellena automáticamente con el lugar donde se guarda el nuevo contenido.
 
 1. En el desplegable **modelo de Fragmento de contenido**, seleccione el modelo de Fragmento de contenido **Aventura** que creó anteriormente.
 
 1. Agregue `Tuscany` como **Título** descriptivo para el Fragmento de contenido. Esto es para identificar el fragmento en la consola.
 
-1. Toque o haga clic en **Crear y abrir**.
+1. Seleccionar **Crear y abrir**.
 
 ![Creación de un nuevo fragmento de contenido](assets/do-not-localize/create-content.png)
 
@@ -71,7 +71,7 @@ Una vez guardado y abierto el nuevo fragmento de contenido, el editor de fragmen
 
 1. Proporcione una **Imagen** que sea representativa del viaje pulsando o haciendo clic en **Agregar recurso** en el  campo de **Imagen**.
 
-1. En la ventana emergente del recurso, pulse o haga clic en **Examinar recursos** para seleccionar un recurso existente en la biblioteca de recursos.
+1. En la ventana emergente del recurso, seleccione **Examinar recursos** para seleccionar entre un recurso existente en la biblioteca de recursos.
 
    ![Añadir recurso](assets/do-not-localize/add-asset.png)
 
@@ -79,17 +79,17 @@ Una vez guardado y abierto el nuevo fragmento de contenido, el editor de fragmen
 
 1. El contenido de la carpeta **ciclismo-toscana** se muestra a la derecha. Seleccionar la imagen `ADOBESTOCK_141786166.JPEG`.
 
-1. Pulse o haga clic en **Seleccionar**.
+1. Seleccionar **Seleccionar**.
 
    ![Seleccionar recurso](assets/do-not-localize/select-asset.png)
 
 1. La imagen seleccionada se muestra en el fragmento de contenido. El editor guarda automáticamente los cambios.
 
-1. Una vez que haya terminado de añadir contenido, toque o haga clic en el botón **Publicar** en la parte superior derecha del editor. Esto hace que el fragmento de contenido esté disponible para su consumo en aplicaciones externas. Después, seleccione **Ahora** de la lista desplegable. También puede programarlo para publicarlo más adelante.
+1. Una vez que haya terminado de añadir contenido, seleccione la **Publish** en la parte superior derecha del editor. Esto hace que el fragmento de contenido esté disponible para su consumo en aplicaciones externas. Después, seleccione **Ahora** de la lista desplegable. También puede programarlo para publicarlo más adelante.
 
    ![Publicar contenido](assets/do-not-localize/publish.png)
 
-1. Aparece el cuadro de diálogo **Publicar fragmentos de contenido**. AEM realiza automáticamente una comprobación de referencia para asegurarse de que se publican todos los recursos necesarios para el fragmento de contenido. En este caso, también deberá publicar el modelo que ha creado. Haga clic o pulse **Publicar**.
+1. Aparece el cuadro de diálogo **Publicar fragmentos de contenido**. AEM realiza automáticamente una comprobación de referencia para asegurarse de que se publican todos los recursos necesarios para el fragmento de contenido. En este caso, también deberá publicar el modelo que ha creado. Seleccionar **Publish**.
 
    ![Publicación y comprobación de referencia](assets/do-not-localize/publish-confirm.png)
 

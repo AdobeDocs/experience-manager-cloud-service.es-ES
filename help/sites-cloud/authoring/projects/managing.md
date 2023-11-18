@@ -2,10 +2,10 @@
 title: Administración de proyectos
 description: Proyectos le permite organizar su proyecto al agrupar los recursos en una entidad a la que se puede acceder y se puede administrar en la consola Proyectos
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 99%
+source-wordcount: '876'
+ht-degree: 84%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Los proyectos le permiten organizar el proyecto agrupando recursos en una entidad.
 
-En la consola **Proyectos**, puede acceder a sus proyectos y realizar acciones en ellos:
+En el **Proyectos** consola, accede a sus proyectos y actúa en ellos:
 
 ![La consola Proyectos](/help/sites-cloud/authoring/assets/projects-console.png)
 
@@ -33,7 +33,7 @@ De forma predeterminada, AEM proporciona estas plantillas entre las que puede el
 
 El procedimiento para crear un proyecto es el mismo de un proyecto a otro. La diferencia entre los tipos de proyectos incluye las [funciones de usuario](/help/sites-cloud/authoring/projects/overview.md) y los [flujos de trabajo](/help/sites-cloud/authoring/projects/workflows.md) disponibles. Para crear un proyecto:
 
-1. En **Proyectos**, pulse o haga clic en **Crear** y abrirá el asistente **Crear proyecto**:
+1. Entrada **Proyectos**, seleccione **Crear** para abrir **Crear proyecto** asistente:
 1. Seleccione una plantilla y haga clic en **Siguiente**.
 
    ![Creación de un proyecto](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -42,7 +42,7 @@ El procedimiento para crear un proyecto es el mismo de un proyecto a otro. La di
 
    ![Adición de detalles del proyecto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Toque o haga clic en **Crear**. La confirmación le solicitará si desea abrir el nuevo proyecto o volver a la consola.
+1. Seleccione **Crear**. La confirmación le solicitará si desea abrir el nuevo proyecto o volver a la consola.
 
 ### Asociación de recursos al proyecto {#associating-resources-with-your-project}
 
@@ -51,7 +51,7 @@ Dado que los proyectos le permiten agrupar recursos en una entidad, desea asocia
 Para asociar recursos al proyecto, haga lo siguiente:
 
 1. Abra el proyecto desde la consola **Proyectos**.
-1. Pulse o haga clic en **Añadir mosaico** y seleccione el mosaico que desea vincular a su proyecto. Puede seleccionar varios tipos de mosaicos.
+1. Seleccionar **Añadir mosaico** y seleccione el mosaico que desea vincular a su proyecto. Puede seleccionar varios tipos de mosaicos.
 
    ![Adición de un mosaico a un proyecto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
@@ -59,7 +59,7 @@ Para asociar recursos al proyecto, haga lo siguiente:
    >
    >Los mosaicos de proyecto que se pueden asociar a un proyecto se describen detalladamente en [Mosaicos de proyecto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
-1. Toque o haga clic en **Crear**. El recurso está vinculado al proyecto y, a partir de ahora, podrá acceder a él desde el proyecto.
+1. Seleccione **Crear**. El recurso está vinculado al proyecto y, a partir de ahora, podrá acceder a él desde el proyecto.
 
 ### Eliminación de un proyecto o un vínculo a un recurso {#deleting-a-project-or-resource-link}
 
@@ -71,9 +71,9 @@ Para eliminar un proyecto desde la consola o un recurso vinculado desde el proye
    * Para eliminar un vínculo a un recurso de un proyecto, abra el proyecto en la consola **Proyectos**.
 
 1. Para introducir el modo de selección, haga clic en **Seleccionar** y seleccione el proyecto o el vínculo a un recurso.
-1. Toque o haga clic en **Eliminar**.
+1. Seleccione **Eliminar**.
 
-1. Debe confirmar la eliminación en un cuadro de diálogo. Si se confirma, se elimina el proyecto o el vínculo a un recurso. Toque o haga clic en **Anular selección** para salir del modo de selección.
+1. Debe confirmar la eliminación en un cuadro de diálogo. Si se confirma, se elimina el proyecto o el vínculo a un recurso. Seleccionar **Anular selección** para salir del modo de selección.
 
 >[!NOTE]
 >
@@ -85,11 +85,11 @@ En algunos mosaicos, puede que desee añadir más de un elemento. Por ejemplo, p
 
 Para añadir elementos a un mosaico, haga lo siguiente:
 
-1. En **Proyectos**, vaya al proyecto y haga clic o pulse en las comillas angulares hacia abajo en el mosaico al que desee agregar un elemento.
+1. Entrada **Proyectos**, vaya al proyecto y seleccione las comillas angulares hacia abajo en el mosaico al que desee agregar un elemento.
 
    ![Adición de un elemento a un mosaico](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Añada un elemento al mosaico como lo haría al crear un mosaico nuevo. Los mosaicos del proyecto se describen [aquí](/help/sites-cloud/authoring/projects/overview.md#project-tiles). En este ejemplo, se ha añadido otro flujo de trabajo.
+1. Agregue un elemento al mosaico como lo haría al crear un mosaico. Los mosaicos del proyecto se describen [aquí](/help/sites-cloud/authoring/projects/overview.md#project-tiles). En este ejemplo, se ha añadido otro flujo de trabajo.
 
 ### Apertura de un mosaico {#opening-a-tile}
 
@@ -97,7 +97,7 @@ Es posible que desee ver qué elementos se incluyen en un mosaico actual o modif
 
 Para abrir un mosaico para poder ver o modificar elementos, haga lo siguiente:
 
-1. En la consola Proyectos, pulse o haga clic en el icono de puntos suspensivos (...) en la parte inferior de la tarjeta.
+1. En la consola Proyectos, seleccione el icono de puntos suspensivos (...) en la parte inferior de la tarjeta.
 
    ![Apertura de un mosaico](/help/sites-cloud/authoring/assets/project-links.png)
 
@@ -111,7 +111,7 @@ Puede ver las estadísticas del proyecto en la consola **Proyectos**.
 
 ### Visualización de la cronología de un proyecto {#viewing-a-project-timeline}
 
-La cronología del proyecto proporciona información sobre la última vez que se utilizaron los recursos del proyecto. Para ver la cronología del proyecto, pulse o haga clic en **Cronología** y, a continuación, introduzca el modo de selección y seleccione el proyecto. Los recursos se muestran en el panel izquierdo. Pulse o haga clic en **Cronología** para volver a la consola **Proyectos**.
+La cronología del proyecto proporciona información sobre la última vez que se utilizaron los recursos del proyecto. Para ver la cronología del proyecto, seleccione **Cronología**, luego introduzca el modo de selección y seleccione el proyecto. Los recursos se muestran en el panel izquierdo. Seleccionar **Cronología** para volver a la **Proyectos** consola.
 
 ![Cronología del proyecto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
@@ -137,9 +137,9 @@ Para que un proyecto quede inactivo (o activo), haga lo siguiente:
    >
    Es posible que deba añadir este mosaico si aún no está en el proyecto. Consulte [Añadir mosaicos](#adding-items-to-a-tile).
 
-1. Pulse o haga clic en **Editar**.
+1. Seleccione **Editar**.
 1. Cambie el selector de **Activo** a **Inactivo** (o viceversa).
 
    ![Activación de un proyecto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Toque o haga clic en **Hecho** para guardar los cambios.
+1. Seleccionar **Listo** para guardar los cambios.

@@ -2,9 +2,9 @@
 title: Eliminación del índice Lucene genérico
 description: Obtenga información acerca de la eliminación planificada de índices Lucene genéricos y cómo puede verse afectado.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ De este modo, la consulta vuelve al índice de texto completo genérico, donde t
 
 ### Ejemplo de autor {#author-instance}
 
-Además de las consultas en los servlets de la aplicación del cliente, los componentes OSGi y los scripts de procesamiento, puede haber una serie de usos específicos del autor del índice Lucene genérico.
+Además de las consultas en los servlets de la aplicación del cliente, los componentes OSGi y los scripts de procesamiento, puede haber varios usos específicos del autor del índice Lucene genérico.
 
 #### Búsqueda de referencia {#reference-search}
 

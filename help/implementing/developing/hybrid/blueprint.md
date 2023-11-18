@@ -2,9 +2,9 @@
 title: Modelo SPA
 description: SPA SPA AEM En este documento se describe el contrato general independiente del marco de trabajo que cualquier marco de trabajo de debe cumplir para que pueda implementar componentes de la estructura editables dentro de los componentes de la.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2055'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ El resto de este documento describe los requisitos de esta capa específica del 
 
 AEM La estructura de contenido de la página se almacena en el archivo de datos de. SPA El modelo de la página se utiliza para asignar e instanciar componentes de la. SPA SPA AEM Los desarrolladores de la crean componentes de la a los que asignan componentes de la aplicación. AEM Para ello, utilizan el tipo de recurso (o la ruta al componente de) como clave única.
 
-SPA Los componentes de la página deben estar sincronizados con el modelo de página y se deben actualizar con cualquier cambio en su contenido en consecuencia. Se debe utilizar un patrón que aproveche los componentes dinámicos para crear instancias de los componentes sobre la marcha siguiendo la estructura del modelo de página proporcionada.
+SPA Los componentes de la página deben estar sincronizados con el modelo de página y se deben actualizar con cualquier cambio en su contenido en consecuencia. Se debe utilizar un patrón que utilice componentes dinámicos para crear instancias de los componentes sobre la marcha siguiendo la estructura del modelo de página proporcionada.
 
 ### Metadatos de campos {#meta-fields}
 
@@ -259,7 +259,7 @@ El siguiente fragmento ilustra la representación típica del HTML de una estruc
 
 ## Navegación y enrutamiento {#navigation-and-routing}
 
-La aplicación es propietaria del enrutamiento. AEM El desarrollador front-end debe implementar primero un componente de navegación (asignado a un componente de navegación de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de). Este componente procesaría vínculos de URL para usarlos junto con una serie de rutas que mostrarán u ocultarán fragmentos de contenido.
+La aplicación es propietaria del enrutamiento. AEM En primer lugar, el desarrollador front-end debe implementar un componente de navegación (asignado a un componente de navegación de). Este componente procesaría vínculos de URL para usarlos junto con una serie de rutas que mostrarán u ocultarán fragmentos de contenido.
 
 El subyacente [`PageModelManager`](#pagemodelmanager) biblioteca y sus [`ModelRouter`](routing.md) Los módulos de (habilitados de forma predeterminada) son responsables de la recuperación previa y de proporcionar acceso al modelo asociado a una ruta de recurso determinada.
 

@@ -2,10 +2,10 @@
 title: Sistema de estilos
 description: El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 98%
+source-wordcount: '1317'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Esto elimina la necesidad de desarrollar un componente personalizado para cada e
 
 ## Caso práctico    {#use-case}
 
-Los autores de plantillas no solo necesitan la capacidad de configurar el funcionamiento de los componentes para los autores de contenido, sino también de configurar una serie de variaciones visuales alternativas de un componente.
+Los autores de plantillas no solo necesitan la capacidad de configurar el funcionamiento de los componentes para los autores de contenido, sino también de configurar varias variaciones visuales alternativas de un componente.
 
 Del mismo modo, los autores de contenido no solo necesitan la capacidad de estructurar y organizar su contenido, sino también de seleccionar cómo se presenta visualmente.
 
@@ -63,7 +63,7 @@ En las secciones siguientes [Como autor de contenido](#as-a-content-author) y [C
 Si desea utilizar el sistema de estilos para sus propios componentes, haga lo siguiente:
 
 1. Instale el CSS como bibliotecas de cliente, tal como se describe en la sección [Información general](#overview).
-1. Configure las clases de CSS que desee poner a disposición de los autores de contenido como se describe en la sección [Como autor de plantillas](#as-a-template-author).
+1. Configure las clases CSS que desee poner a disposición de los autores de contenido como se describe en la sección [Como autor de plantillas](#as-a-template-author).
 1. Los autores de contenido pueden utilizar los estilos como se describe en la sección [Como autor de contenido](#as-a-content-author).
 
 ### Como autor de contenido    {#as-a-content-author}
@@ -73,7 +73,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
    ![Sistema de estilos para el autor](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Toque o haga clic en el botón **Estilos** de la barra de herramientas del componente **Lista** para abrir el menú Estilo y cambiar el aspecto del componente.
+1. Seleccione el **Estilos** en la barra de herramientas del **Lista** para abrir el menú Estilo y cambiar el aspecto del componente.
 
    ![Seleccionar estilos](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -83,7 +83,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
 ### Como autor de plantillas    {#as-a-template-author}
 
-1. Mientras edita la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite la plantilla de la página a través de **Información de la página -> Editar plantilla**.
+1. Mientras edita la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite la plantilla de la página mediante **Información de página > Editar plantilla**.
 
    ![Editar plantilla](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 

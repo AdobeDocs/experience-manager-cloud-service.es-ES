@@ -2,10 +2,10 @@
 title: Uso de sus propios repositorios de GitHub en Cloud Manager
 description: Obtenga información sobre cómo configurar Cloud Manager para que funcione con sus propios repositorios de GitHub.
 feature: Release Information
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ La configuración consta de dos pasos principales:
 
 ### Añadir repositorio {#add-repo}
 
-1. En Cloud Manager, desde el **Resumen del programa** página, toque o haga clic en **Repositorios** para cambiar a la pestaña **Repositorios** y haga clic en **Añadir repositorio**.
+1. En Cloud Manager, desde el **Resumen del programa** , seleccione la **Repositorios** para cambiar a la pestaña **Repositorios** y haga clic en **Añadir repositorio**.
 
 1. En el **Añadir repositorio** diálogo, seleccione **Repositorio privado** como el tipo de repositorio.
 
@@ -39,11 +39,11 @@ La configuración consta de dos pasos principales:
 
    ![Añadir su propio repositorio](/help/implementing/cloud-manager/assets/repos/add-own-github.png)
 
-1. Haga clic o pulse **Guardar**.
+1. Seleccione **Guardar**.
 
 >[!TIP]
 >
->Para obtener más información sobre la administración de repositorios en Cloud Manager, consulte el documento [Repositorios de Cloud Manager.](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+>Para obtener más información sobre la administración de repositorios en Cloud Manager, consulte [Repositorios de Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
 ### Validación de propiedad de repositorio privado {#validate-ownership}
 
@@ -57,7 +57,7 @@ Cloud Manager ahora conoce su repositorio de GitHub, pero aún necesita acceso a
    * Un propietario de su organización de GitHub debe instalar la aplicación ubicada en `https://github.com/apps/cloud-manager-for-aem-stage` y conceder acceso al repositorio.
    * Consulte la documentación de GitHub para obtener más información sobre cómo hacerlo.
 
-1. Para mejorar la seguridad, debe crear un archivo secreto en la rama predeterminada del repositorio. Haga clic o pulse **Generar**.
+1. Para mejorar la seguridad, debe crear un archivo secreto en la rama predeterminada del repositorio. Seleccionar **Generar**.
 
 1. Confirme la generación del archivo secreto tocando o haciendo clic en **Confirmar**.
 
@@ -71,7 +71,7 @@ Cloud Manager ahora conoce su repositorio de GitHub, pero aún necesita acceso a
 
 1. Cree un nuevo archivo en la rama predeterminada de su repositorio de GitHub llamado `.well-known/adobe/cloud-manager-challenge` y pegue el contenido del archivo secreto en ese archivo y guarde.
 
-1. Una vez que la aplicación está instalada y el archivo secreto existe en el repositorio, puede tocar o hacer clic en **Validate** en el **Validación de propiedad de repositorio privado** diálogo.
+1. Una vez que la aplicación esté instalada y el archivo secreto exista en el repositorio, puede seleccionar **Validate** en el **Validación de propiedad de repositorio privado** diálogo.
 
 La aplicación se puede instalar y el archivo secreto se puede crear en cualquier orden. Sin embargo, ambos pasos deben completarse antes de poder validar.
 
@@ -79,9 +79,9 @@ Hasta la validación, el repositorio se mostrará con un icono rojo que indica q
 
 ![Repositorio no validado](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-Tenga en cuenta que la variable **Tipo** identifica fácilmente los repositorios proporcionados por el Adobe (**Adobe**) y sus propios repositorios de GitHub (**GitHub**).
+El **Tipo** identifica fácilmente los repositorios proporcionados por el Adobe (**Adobe**) y sus propios repositorios de GitHub (**GitHub**).
 
-Si necesita volver al repositorio en una fecha posterior para completar la validación, en la **Repositorios** , toque o haga clic en el botón de puntos suspensivos en la fila que representa el repositorio de GitHub que acaba de añadir y seleccione **Validación de propiedad** en el menú desplegable.
+Si necesita volver al repositorio en una fecha posterior para completar la validación, en la **Repositorios** , seleccione el botón de los tres puntos de la fila que representa el repositorio de GitHub que acaba de añadir y seleccione **Validación de propiedad** en el menú desplegable.
 
 ## Uso de sus propios repositorios de GitHub con Cloud Manager {#using}
 
@@ -101,10 +101,10 @@ Cuando se cierra o combina la solicitud de extracción, la canalización de cali
 
 ## Restricciones {#limitations}
 
-Tenga en cuenta las siguientes limitaciones al utilizar sus propios repositorios de GitHub con Cloud Manager.
+Limitaciones al utilizar sus propios repositorios de GitHub con Cloud Manager.
 
-* No puede usar los repositorios de GitHub como origen de repositorio directo para las canalizaciones que administra.
+* No puede usar los repositorios de GitHub como el origen del repositorio directo para las canalizaciones que administra.
    * Esta funcionalidad está planificada.
-* No se puede pausar la validación de la solicitud de extracción mediante la comprobación de GitHub desde Cloud Manager.
+* No puede pausar la validación de la solicitud de extracción mediante la comprobación de GitHub desde Cloud Manager.
    * Si el repositorio de GitHub se valida en Cloud Manager, Cloud Manager siempre intentará validar las solicitudes de extracción creadas para ese repositorio.
 Si la aplicación de Adobe de GitHub se elimina de su organización de GitHub, se eliminará la función de validación de solicitudes de extracción de todos los repositorios.

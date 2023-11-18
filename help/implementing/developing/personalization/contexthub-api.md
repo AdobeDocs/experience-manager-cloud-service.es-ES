@@ -2,9 +2,9 @@
 title: Referencia de la API de JavaScript de ContextHub
 description: La API de JavaScript de ContextHub está disponible para los scripts cuando se agrega el componente ContextHub a la página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4620'
+source-wordcount: '4612'
 ht-degree: 3%
 
 ---
@@ -403,7 +403,7 @@ Un objeto que representa la respuesta sin procesar.
 
 #### getServiceDetails() {#getservicedetails}
 
-Recupera el objeto de servicio para este objeto ContextHub.Store.JSONPStore. El objeto de servicio contiene toda la información necesaria para crear la dirección URL del servicio.
+Recupera el objeto de servicio para este objeto ContextHub.Store.JSONPStore. El objeto de servicio contiene la información necesaria para crear la dirección URL del servicio.
 
 ##### Devuelve {#returns-getservicedetails}
 
@@ -744,7 +744,7 @@ If `triggerForPastEvents` es `false`, esta función no devuelve ningún valor.
 
 ## ContextHub.Utils.inheritance {#contexthub-utils-inheritance}
 
-Clase de utilidad que permite a un objeto heredar las propiedades y métodos de otro objeto.
+Clase de utilidad que permite a un objeto heredar las propiedades y los métodos de otro objeto.
 
 ### Funciones (ContextHub.Utils.inheritance) {#functions-contexthub-utils-inheritance}
 

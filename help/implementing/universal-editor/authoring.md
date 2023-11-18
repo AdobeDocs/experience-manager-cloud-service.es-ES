@@ -2,10 +2,10 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 45%
+source-wordcount: '2398'
+ht-degree: 39%
 
 ---
 
@@ -68,7 +68,7 @@ Seleccione el vínculo de Adobe Experience Cloud a la izquierda del encabezado p
 
 #### Organización {#organization}
 
-Muestra la organización en la que ha iniciado sesión. Toque o haga clic para cambiar a otra organización si su Adobe ID está asociado a varias.
+Muestra la organización en la que ha iniciado sesión. Seleccione esta opción para cambiar a otra organización si su Adobe ID está asociado a varias.
 
 ![Indicador de organización](assets/organization.png)
 
@@ -92,7 +92,7 @@ Este icono se muestra con la cantidad de [notificaciones](/help/implementing/clo
 
 #### Propiedades del usuario {#user-properties}
 
-Toque o haga clic en el icono que representa a su usuario para acceder a la configuración. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
+Seleccione el icono que representa al usuario para acceder a su configuración de usuario. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
 
 ![Propiedades del usuario](assets/user-properties.png)
 
@@ -114,11 +114,11 @@ En la página de inicio puede introducir la dirección URL del sitio que desea e
 
 >[!NOTE]
 >
->Todas las páginas que desee editar deben [instrumentarse para admitir el editor universal.](getting-started.md)
+>Cualquier página que desee editar con el editor universal debe ser [instrumentado para admitir el editor universal.](getting-started.md)
 
 #### Barra de ubicación {#location-bar}
 
-La barra de ubicación muestra la dirección de la página que está editando. Toque o haga clic para introducir la dirección de otra página que desea editar.
+La barra de ubicación muestra la dirección de la página que está editando. Seleccione para introducir la dirección de otra página que desea editar.
 
 ![Barra de ubicación](assets/location-bar.png)
 
@@ -128,17 +128,17 @@ La barra de ubicación muestra la dirección de la página que está editando. T
 
 >[!NOTE]
 >
->Todas las páginas que desee editar deben [instrumentarse para admitir el editor universal.](getting-started.md)
+>Cualquier página que desee editar con el editor universal debe ser [instrumentado para admitir el editor universal.](getting-started.md)
 
 #### Configuración del encabezado de autenticación {#authentication-settings}
 
-Toque o haga clic en el icono de configuración del encabezado de autenticación si necesita establecer un secreto de autenticación.
+Seleccione el icono de configuración del encabezado de autenticación si necesita establecer un secreto de autenticación.
 
 ![Botón Configuración del encabezado de autenticación](assets/authentication-header-settings.png)
 
 #### Configuración del emulador {#emulator}
 
-Toque o haga clic en el icono de emulación para definir cómo el editor universal procesa la página.
+Seleccione el icono de emulación para definir cómo el editor universal procesa la página.
 
 ![Icono Emulador](assets/emulator.png)
 
@@ -156,7 +156,7 @@ En el editor universal, también puede emular un dispositivo móvil, además de 
 
 #### Apertura de la vista previa de la aplicación {#open-app-preview}
 
-Toque o haga clic en el icono de abrir vista previa de la aplicación para abrir la página que está editando en su propia pestaña del explorador, sin utilizar el editor, para previsualizar el contenido.
+Seleccione el icono de abrir vista previa de la aplicación para abrir la página que está editando en su propia pestaña del explorador, sin utilizar el editor, para previsualizar el contenido.
 
 ![Apertura de la vista previa de la aplicación](assets/open-app-preview.png)
 
@@ -166,7 +166,7 @@ Toque o haga clic en el icono de abrir vista previa de la aplicación para abrir
 
 #### Publicación {#publish}
 
-Toque o haga clic en el botón de publicación para publicar los cambios en el contenido en directo para que los lectores lo consuman.
+Seleccione el botón Publicar para poder publicar los cambios en el contenido publicado para que los lectores lo consuman.
 
 ![Botón Publicar](assets/publish.png)
 
@@ -182,7 +182,7 @@ El carril de modo está justo debajo del botón de inicio y siempre está presen
 
 #### Modo de vista previa {#preview-mode}
 
-En el modo de vista previa, la página se procesa en el editor tal como se vería en el servicio publicado. Esto permite al autor del contenido navegar por el contenido haciendo clic en los vínculos, etc.
+En el modo de vista previa, la página se procesa en el editor tal como se vería en el servicio publicado. Esto permite al autor del contenido navegar por el contenido haciendo clic en vínculos, etc.
 
 ![Modo de vista previa](assets/preview-mode.png)
 
@@ -254,7 +254,7 @@ Al seleccionar un elemento en el árbol de contenido, el editor se desplaza hast
 
 ##### Editar {#edit}
 
-En [modo de componentes,](#component-mode) las opciones de edición del componente seleccionado aparecen en el carril propiedades. En el carril de propiedades puede editar el componente seleccionado. Si el componente seleccionado es un fragmento de contenido, también puede tocar o hacer clic en el botón Editar.
+En [modo de componentes,](#component-mode) las opciones de edición del componente seleccionado aparecen en el carril propiedades. En el carril de propiedades puede editar el componente seleccionado. Si el componente seleccionado es un fragmento de contenido, también puede seleccionar el botón Editar.
 
 ![Icono Editar](assets/edit.png)
 
@@ -310,9 +310,9 @@ Si está en [modo componentes](#component-mode) y seleccione un componente de te
 
 ![Edición de contenido](assets/editing-content.png)
 
-Pulse Intro o Retorno, o toque o haga clic fuera del cuadro de texto para guardar los cambios.
+Pulse Intro o Retorno o seleccione fuera del cuadro de texto para guardar los cambios.
 
-Al tocar o hacer clic para seleccionar el componente de texto, sus detalles se muestran en el carril de propiedades. También puede editar el texto en el carril.
+Al seleccionar el componente de texto, sus detalles se muestran en el carril de propiedades. También puede editar el texto en el carril.
 
 ![Edición de texto en el carril de propiedades](assets/ue-editing-text-component-rail.png)
 
@@ -322,7 +322,7 @@ Además, los detalles del texto están disponibles en el carril de propiedades. 
 
 Si está en [modo componentes](#component-mode) y seleccione un componente de texto enriquecido. Puede editar el texto local haciendo doble clic o pulsando dos veces en el componente.
 
-Pulse Intro o Retorno, o toque o haga clic fuera del cuadro de texto para guardar los cambios.
+Pulse Intro o Retorno o seleccione fuera del cuadro de texto para guardar los cambios.
 
 ![Edición de un componente de texto enriquecido](assets/rich-text-editing.png)
 
@@ -334,11 +334,11 @@ Si está en [modo componentes](#component-mode) cuando seleccione una imagen, pu
 
 ![Edición de medios](assets/ue-edit-media.png)
 
-Haga clic o pulse en **Reemplazar** botón debajo de la previsualización de la imagen seleccionada en el carril propiedades para reemplazar la imagen por otra de la biblioteca de recursos.
+Seleccione el **Reemplazar** botón debajo de la previsualización de la imagen seleccionada en el carril propiedades para reemplazar la imagen por otra de la biblioteca de recursos.
 
 1. El [selector de recursos](/help/assets/asset-selector.md#using-asset-selector) se abrirá una ventana para que pueda seleccionar un recurso.
-1. Toque o haga clic para seleccionar un nuevo recurso.
-1. Haga clic o pulse **Seleccionar** para volver al carril de propiedades en el que se reemplazó el recurso.
+1. Seleccione para seleccionar un nuevo recurso.
+1. Seleccionar **Seleccionar** para volver al carril de propiedades en el que se reemplazó el recurso.
 
 Los cambios se guardan automáticamente en el contenido.
 
@@ -365,7 +365,7 @@ Según las necesidades del flujo de trabajo, es posible que desee editar el frag
 ### Adición de componentes a contenedores {#adding-components}
 
 1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
-1. A continuación, toque o haga clic en el icono Agregar en el carril de propiedades.
+1. A continuación, seleccione el icono de añadir en el carril de propiedades.
 
    ![Selección de un componente para añadirlo a un contenedor](assets/ue-add-component.png)
 
@@ -378,9 +378,9 @@ El componente se inserta en el contenedor y se puede editar en el editor.
 ### Eliminación de componentes de contenedores {#deleting-components}
 
 1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
-1. Toque o haga clic en el icono de cheurón del contenedor para expandir su contenido en el árbol de contenido.
+1. Seleccione el icono de cheurón del contenedor para expandir su contenido en el árbol de contenido.
 1. A continuación, en el árbol de contenido, seleccione un componente dentro del contenedor.
-1. Toque o haga clic en el icono Eliminar en el carril de propiedades.
+1. Seleccione el icono Eliminar en el carril de propiedades.
 
    ![Eliminación de un componente](assets/ue-delete-component.png)
 
@@ -394,7 +394,7 @@ El componente seleccionado se ha eliminado.
 
 1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
 1. Si no está ya en [modo de árbol de contenido,](#content-tree-mode) cambiar a él.
-1. Toque o haga clic en el icono de cheurón del contenedor para expandir su contenido en el árbol de contenido.
+1. Seleccione el icono de cheurón del contenedor para expandir su contenido en el árbol de contenido.
 1. Arrastre los iconos de control junto a los componentes dentro del contenedor para mostrar que puede reorganizarlos. Arrastre los componentes para reordenarlos dentro del contenedor.
 
    ![Reordenación de componentes](assets/ue-reordering-components.png)

@@ -2,10 +2,10 @@
 title: Información sobre los conceptos básicos del modelado de contenido
 description: Conozca los aspectos básicos del modelado de contenido para su de contenido sin encabezado de CMS utilizando fragmentos de contenido.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 95%
+source-wordcount: '901'
+ht-degree: 94%
 
 ---
 
@@ -130,7 +130,7 @@ Por ejemplo, puede que tenga definidos los siguientes modelos de fragmento de co
 * Persona
 * Premios
 
-Parece bastante sencillo, pero, por supuesto, una compañía tiene un director ejecutivo (CEO) y empleados...y todas ellas se definen como una persona.
+Parece bastante sencillo, pero una compañía tiene un CEO y empleados....y todas ellas se definen como una persona.
 
 Una persona puede obtener un premio (o tal vez dos).
 

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 13%
+source-wordcount: '686'
+ht-degree: 12%
 
 ---
 
@@ -70,8 +70,8 @@ Algunos casos de uso para exportar metadatos por lotes son:
 
 1. En el **[!UICONTROL Propiedades para exportar]** , especifique si desea exportar todas las propiedades o propiedades específicas. Si elige Propiedades selectivas para exportar, añada las propiedades deseadas.
 
-1. En la barra de herramientas, pulse o haga clic en **[!UICONTROL Exportar]**. Un mensaje confirma que se exportan los metadatos. Cierre el mensaje.
-1. Abra la notificación de la bandeja de entrada para el trabajo de exportación. Seleccione el trabajo y haga clic en **[!UICONTROL Abrir]** en la barra de herramientas. Para descargar el archivo CSV con los metadatos, pulse o haga clic en **[!UICONTROL Descargar CSV]** desde la barra de herramientas. Haga clic en **[!UICONTROL Cerrar]**.
+1. En la barra de herramientas, seleccione **[!UICONTROL Exportar]**. Un mensaje confirma que se exportan los metadatos. Cierre el mensaje.
+1. Abra la notificación de la bandeja de entrada para el trabajo de exportación. Seleccione el trabajo y haga clic en **[!UICONTROL Abrir]** en la barra de herramientas. Para descargar el archivo CSV con los metadatos, seleccione **[!UICONTROL Descarga CSV]** en la barra de herramientas. Haga clic en **[!UICONTROL Cerrar]**.
 
    ![Cuadro de diálogo para descargar el archivo CSV que contiene metadatos exportados en bloque](assets/csv_download.png)
 
@@ -80,11 +80,11 @@ Algunos casos de uso para exportar metadatos por lotes son:
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
@@ -94,4 +94,3 @@ Algunos casos de uso para exportar metadatos por lotes son:
 >[!MORELIKETHIS]
 >
 >* [Importar metadatos al importar recursos de forma masiva](/help/assets/add-assets.md#asset-bulk-ingestor)
-

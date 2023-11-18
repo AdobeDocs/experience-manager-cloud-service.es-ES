@@ -2,10 +2,10 @@
 title: Obtenga información sobre el uso de referencias en fragmentos de contenido
 description: Obtenga información sobre el uso de referencias en fragmentos de contenido para los contenidos, otros fragmentos y archivos (medios). Introduzca la necesidad y la mecánica de los fragmentos anidados para la creación de CMS sin encabezado.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 92%
+source-wordcount: '708'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Por ejemplo, puede que tenga definidos los siguientes modelos de fragmento de co
 * Persona
 * Premios
 
-Parece bastante sencillo, pero, por supuesto, una compañía tiene un director ejecutivo (CEO) y empleados...y todas ellas se definen como una persona.
+Parece bastante sencillo, pero una compañía tiene un CEO y empleados....y todas ellas se definen como una persona.
 
 Una persona puede obtener un premio (o tal vez dos).
 

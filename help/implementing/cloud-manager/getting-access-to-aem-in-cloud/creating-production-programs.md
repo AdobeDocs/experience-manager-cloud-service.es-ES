@@ -2,9 +2,9 @@
 title: Creación de programas de producción
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de producción y alojar tráfico en directo.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '597'
 ht-degree: 73%
 
 ---
@@ -30,9 +30,9 @@ Siga estos pasos para crear un programa de producción.
 
    ![Creación del asistente del programa](assets/create-production-program.png)
 
-1. Para añadir, si lo desea, una imagen al programa, arrastre y suelte un archivo de imagen en el destino **Añadir una imagen del programa** o haga clic en él para seleccionar una imagen de un explorador de archivos. Haga clic o pulse **Continuar**.
+1. Para añadir, si lo desea, una imagen al programa, arrastre y suelte un archivo de imagen en el destino **Añadir una imagen del programa** o haga clic en él para seleccionar una imagen de un explorador de archivos. Seleccionar **Continuar**.
 
-1. Si tiene los derechos necesarios, la variable **Seguridad** se mostrará la pestaña y proporcionará la opción de activación **HIPAA** y/o **Protección WAF-DDOS** para su programa de producción. Si es necesario para el programa que está creando, marque las opciones aplicables y, a continuación, toque o haga clic en **Continuar**.
+1. Si tiene los derechos necesarios, la variable **Seguridad** se mostrará la pestaña y proporcionará la opción de activación **HIPAA** y/o **Protección WAF-DDOS** para su programa de producción. Si es necesario para el programa que está creando, marque las opciones aplicables y, a continuación, seleccione **Continuar**.
 
    * HIPAA no se puede habilitar o deshabilitar después de la creación del programa.
       * [Más información](https://www.adobe.com/go/hipaa-ready_es) acerca de la implementación de la solución compatible con HIPAA de Adobe.

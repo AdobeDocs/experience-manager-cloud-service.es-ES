@@ -3,10 +3,10 @@ title: “Interfaz de usuario de [!DNL Assets view]”
 description: Explicación de la interfaz de usuario de y la navegación en [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -41,7 +41,7 @@ Al iniciar sesión en [!DNL Assets view], verá la siguiente interfaz.
 Puede examinar las carpetas desde la interfaz de usuario principal o desde la barra lateral izquierda. Al hacerlo, puede utilizar la interfaz para ver las miniaturas de los recursos y examinar visualmente el repositorio o ver los detalles de los recursos para encontrar rápidamente el que desee. Las opciones disponibles en la barra lateral izquierda son las siguientes:
 
 * [Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md): Assets ahora incluye un espacio de trabajo personalizable que proporciona utilidades para acceder fácilmente a las áreas clave de la interfaz de usuario de Assets y a la información más relevante para usted. Esta página sirve como solución integral para proporcionar información general sobre los elementos de trabajo y un acceso rápido a los flujos de trabajo clave. Un acceso más práctico a estas opciones aumenta su eficacia y velocidad de contenido.
-* [Tareas](/help/assets/my-workspace-assets-view.md): Puede ver las tareas asignadas en la pestaña de **Mis tareas**. Por su parte, las tareas que crea puede verse en la pestaña de **Tareas asignadas**. Además, las tareas que complete se encuentran en la pestaña de **Tareas completadas**.
+* [Tareas](/help/assets/my-workspace-assets-view.md): Puede ver las tareas asignadas en la pestaña de **Mis tareas**. Por su parte, las tareas que crea puede verse en la pestaña de **Tareas asignadas**. Además, las tareas que complete se encuentran en **Tareas completadas** pestaña.
 * [Recursos](/help/assets/manage-organize-assets-view.md): lista de todas las carpetas en una vista de árbol, a las que tiene acceso.
 * **Vistos recientemente**: lista de recursos que ha previsualizado recientemente. [!DNL Assets view] muestra solo los recursos que previsualiza. No muestra los recursos por los que pasa de largo al examinar los archivos o carpetas del repositorio.
 * [Colecciones](/help/assets/manage-collections-assets-view.md): una colección es un conjunto de recursos, carpetas u otras colecciones dentro de la vista Recursos de Adobe Experience Manager. Utilice las colecciones para compartir recursos entre los usuarios. A diferencia de las carpetas, una colección puede incluir recursos de distintas ubicaciones. Puede compartir varias colecciones con un usuario. Cada colección contiene referencias a recursos. La integridad referencial de los recursos se mantiene entre colecciones.

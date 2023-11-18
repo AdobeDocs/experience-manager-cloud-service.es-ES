@@ -2,9 +2,9 @@
 title: Adición de ContextHub a las páginas y acceso a las tiendas
 description: Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Utilice los almacenes de ContextHub para mantener los datos de contexto. Context
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-Todos los tipos de almacén son extensiones de [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) clase. Para obtener información acerca de cómo crear un nuevo tipo de almacén, consulte [Crear tiendas personalizadas](extending-contexthub.md#creating-custom-store-candidates). Para obtener información acerca de los tipos de almacén de ejemplo, consulte [Candidatos de tienda de ContextHub de muestra](sample-stores.md).
+Todos los tipos de almacén son extensiones de [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) clase. Para obtener información sobre cómo crear un tipo de almacén, consulte [Crear tiendas personalizadas](extending-contexthub.md#creating-custom-store-candidates). Para obtener información acerca de los tipos de almacén de ejemplo, consulte [Candidatos de tienda de ContextHub de muestra](sample-stores.md).
 
 ### Modos de persistencia {#persistence-modes}
 

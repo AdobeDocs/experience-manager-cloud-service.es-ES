@@ -2,9 +2,9 @@
 title: Tipos de módulos de IU de ContextHub de muestra
 description: ContextHub proporciona varios módulos de IU de ejemplo que puede utilizar en sus soluciones
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,7 @@ El origen del módulo de IU se encuentra en `/libs/granite/contexthub/components
 
 ### Configuración {#configuration-5}
 
-Instancias del `contexthub.screen-orientation` El módulo de interfaz de usuario no requiere un valor para la configuración detallada. El siguiente texto JSON representa la configuración predeterminada del módulo. Tenga en cuenta que la variable `clickable` la propiedad es `false` de forma predeterminada. Si anula la configuración predeterminada para establecer `clickable` hasta `true`, al hacer clic en el módulo, se muestra una ventana emergente en la que puede seleccionar la orientación.
+Instancias del `contexthub.screen-orientation` El módulo de interfaz de usuario no requiere un valor para la configuración detallada. El siguiente texto JSON representa la configuración predeterminada del módulo. El `clickable` la propiedad es `false` de forma predeterminada. Si anula la configuración predeterminada para establecer `clickable` hasta `true`, al hacer clic en el módulo, se muestra una ventana emergente en la que puede seleccionar la orientación.
 
 ```javascript
 {

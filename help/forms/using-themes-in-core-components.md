@@ -2,9 +2,9 @@
 title: ¿Cómo se pueden crear y utilizar temáticas en el Forms adaptable?
 description: Puede utilizar temáticas para aplicar estilos y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2676'
 ht-degree: 18%
 
 ---
@@ -367,7 +367,7 @@ El tema se implementa mediante la variable [canalización front-end.](https://ex
 
    ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-Una vez finalizada la compilación, la temática está disponible en la instancia de autor para el uso. Aparece bajo la etiqueta **[!UICONTROL Estilo]** en el asistente de creación de formularios adaptables, mientras crea un nuevo formulario adaptable.
+Una vez finalizada la compilación, la temática está disponible en la instancia de autor para el uso. Aparece bajo la etiqueta **[!UICONTROL Estilo]** en el asistente de creación de formularios adaptables, mientras crea un formulario adaptable.
 
 ![tema personalizado disponible en la pestaña estilo](/help/forms/assets/custom-theme-style-tab.png)
 

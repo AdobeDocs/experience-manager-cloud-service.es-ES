@@ -2,10 +2,10 @@
 title: Recuperación de información de acceso al repositorio de Git
 description: Descubra cómo el desarrollador front-end utiliza Cloud Manager para acceder a la información del repositorio de Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 93%
+source-wordcount: '880'
+ht-degree: 83%
 
 ---
 
@@ -78,7 +78,7 @@ Si no ha recibido este correo electrónico, póngase en contacto con el administ
 
 1. Inicie sesión en Adobe Experience Cloud en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) o haga clic en el vínculo proporcionado en el correo electrónico de bienvenida.
 
-1. Cloud Manager enumera los distintos programas disponibles. Pulse o haga clic en el que necesite acceder según le indique el administrador de Cloud Manager. Si este es su primer proyecto front-end para AEMaaCS, es probable que solo haya un programa disponible.
+1. Cloud Manager enumera los distintos programas disponibles. Seleccione el que necesita acceder según lo proporcionado por el administrador de Cloud Manager. Si este es su primer proyecto front-end para AEMaaCS, es probable que solo haya un programa disponible.
 
    ![Selección de un programa en Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -88,7 +88,7 @@ Ahora verá una descripción general del programa. Su página tendrá un aspecto
 
 ## Recuperación de información de acceso al repositorio  {#repo-access}
 
-1. En la sección **Canalizaciones** de la página Cloud Manager, pulse o haga clic en el botón **Acceder a información de repositorio**.
+1. En el **Canalizaciones** de la página Cloud Manager, seleccione la opción **Acceder a info del repositorio** botón.
 
    ![Canalizaciones](assets/pipelines-repo-info.png)
 
@@ -96,13 +96,13 @@ Ahora verá una descripción general del programa. Su página tendrá un aspecto
 
    ![Información del repositorio](assets/repo-info.png)
 
-1. Pulse o haga clic en el botón **Generar contraseña** para crear una contraseña.
+1. Seleccione el **Generar contraseña** para crear una contraseña para usted.
 
 1. Guarde la contraseña generada en un administrador de contraseñas seguro. La contraseña no se volverá a mostrar nunca más.
 
 1. Copie también los campos **Nombre de usuario** y la **Línea de comandos de Git**. Utilizará esta información más adelante para acceder al repositorio.
 
-1. Haga clic o pulse en **Cerrar**.
+1. Seleccionar **Cerrar**.
 
 ## Siguientes pasos {#what-is-next}
 

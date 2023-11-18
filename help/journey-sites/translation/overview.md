@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 97%
+source-wordcount: '927'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ Si ya está familiarizado con AEM Sites y sus requisitos de traducción, es posi
 
 ## Recorridos de documentación de AEM {#documentation-journeys}
 
-[Un recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados. Proporciona una narrativa que ayuda al lector (que puede ser nuevo en AEM) a entender y resolver un problema empresarial de principio a fin, mientras asume un conocimiento previo mínimo de AEM.
+[Un Recorrido de documentación](/help/journey-documentation/documentation-journeys.md) AEM AEM une muchos temas y características diferentes y complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en la comprensión, comprensión y solución de un problema empresarial de principio a fin, mientras que asume un conocimiento previo mínimo de la materia o el conocimiento.
 
 Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
@@ -47,7 +47,7 @@ Los siguientes son los perfiles que interactúan en este recorrido.
 | Administrador | Gestiona la configuración base de AEM | El especialista en traducción trabaja con el administrador para realizar los cambios de configuración necesarios para la traducción, como instalar un conector de traducción. |
 | Arquitecto de contenido | Analiza los requisitos de los datos que deben entregarse como sitios y define la estructura de estos datos | Los especialistas en traducción trabajan con el arquitecto de contenido para definir la organización del contenido y así poder traducirlo fácilmente. |
 
-Por supuesto, la información de este recorrido puede ser útil para todas las personas, pero parte de la información puede ser superflua para ciertas funciones. Manténgase atento a [recorridos futuros que cubran funciones adicionales](/help/journey-documentation/documentation-journeys.md#journeys).
+La información de este recorrido puede ser útil para todas las personas, pero parte de la información puede ser superflua para ciertas funciones. Manténgase atento a [recorridos futuros que cubran funciones adicionales](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## Recorrido de traducción de sitios {#the-journey}
 

@@ -2,9 +2,9 @@
 title: Trabajos asincrónicos
 description: Adobe Experience Manager optimiza el rendimiento completando asincrónicamente algunas tareas que requieren muchos recursos como operaciones en segundo plano.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '863'
 ht-degree: 70%
 
 ---
@@ -21,7 +21,7 @@ Estas operaciones incluyen:
 * Recuperar recursos que estén por encima del umbral establecido, desde una implementación remota de Experience Manager
 * Desplegar Live Copies
 
-Puede ver el estado de los trabajos asincrónicos desde el **[!UICONTROL Operaciones en segundo plano]** panel en **Navegación global** -> **Herramientas** -> **General** -> **Trabajos**.
+Puede ver el estado de los trabajos asincrónicos desde el **[!UICONTROL Operaciones en segundo plano]** panel en **Navegación global** > **Herramientas** > **General** > **Trabajos**.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Siempre que AEM procese una operación de manera asincrónica, recibirá una not
 
 Para ver en detalle el estado de las operaciones asincrónicas, vaya a la **[!UICONTROL Operaciones en segundo plano]** página.
 
-1. En la interfaz del Experience Manager, seleccione **Navegación global** -> **Herramientas** -> **General** -> **Trabajos**.
+1. En la interfaz del Experience Manager, seleccione **Navegación global** > **Herramientas** > **General** > **Trabajos**.
 
 1. En el **[!UICONTROL Operaciones en segundo plano]** , revise los detalles de las operaciones.
 

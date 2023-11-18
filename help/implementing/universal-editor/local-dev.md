@@ -2,9 +2,9 @@
 title: AEM Desarrollo local con el editor universal de la aplicación
 description: AEM Descubra cómo el Editor universal admite la edición en instancias de locales con fines de desarrollo.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ El servicio de editor universal es lo que une al editor universal y al sistema b
 
 [Versión 16 de NodeJS](https://nodejs.org/en/download/releases) es necesario para ejecutar una copia local del servicio de editor universal
 
-AEM El servicio de edición universal lo distribuye directamente el departamento de ingeniería de la. VIP póngase en contacto con su contacto de ingeniería en el programa de trabajo de la unidad de control para obtener una copia local del mismo.
+AEM El servicio de edición universal lo distribuye directamente el departamento de ingeniería de la. VIP Póngase en contacto con el ingeniero del programa de la para obtener una copia local.
 
 El departamento de ingeniería le proporcionará un `universal-editor-service.cjs` archivo. Guarde esto en su entorno de desarrollo local.
 

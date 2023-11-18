@@ -2,9 +2,9 @@
 title: Creación del etiquetado en aplicaciones de AEM
 description: AEM Trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de personalizada
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Recuperación de un objeto Tag {#retrieving-a-tag-object}
 
-A `Tag` se puede recuperar mediante la variable `TagManager`, ya sea resolviendo una etiqueta existente o creando una nueva:
+A `Tag` se puede recuperar mediante la variable `TagManager`, ya sea resolviendo una etiqueta existente o creando una:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -168,4 +168,4 @@ El finés está ahora disponible en el cuadro de diálogo de etiquetas de las pr
 
 >[!NOTE]
 >
->AEM El nuevo idioma debe ser uno de los idiomas reconocidos por la comunidad, es decir, debe estar disponible como un nodo a continuación `/libs/wcm/core/resources/languages`.
+>AEM El nuevo idioma debe ser uno de los idiomas reconocidos por la comunidad de idiomas de los que se dispone en la. Es decir, debe estar disponible como nodo debajo de `/libs/wcm/core/resources/languages`.

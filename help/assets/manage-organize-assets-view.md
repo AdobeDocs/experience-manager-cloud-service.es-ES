@@ -4,7 +4,7 @@ description: Mueva, elimine, copie, cambie de nombre, actualice y convierta en v
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 92%
@@ -104,7 +104,7 @@ Para establecer el estado del activo:
 
 1. Seleccione el recurso y haga clic en **[!UICONTROL Detalles]** en la barra de herramientas.
 
-1. En la pestaña **[!UICONTROL Básico]**, seleccione el estado del activo en la lista desplegable **[!UICONTROL Estado]**. Los valores posibles incluyen Aprobado, Rechazado y Sin estado (predeterminado).
+1. En el **[!UICONTROL Básico]** pestaña, seleccione el estado del recurso en **[!UICONTROL Estado]** lista desplegable. Los valores posibles incluyen Aprobado, Rechazado y Sin estado (predeterminado).
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
@@ -143,7 +143,7 @@ Para añadir el campo de metadatos Fecha de caducidad al formulario, arrastre el
 
 * [Vea un vídeo para administrar recursos en la vista Recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=es)
 
-* Proporcione comentarios sobre productos usando [!UICONTROL Comentarios] opción disponible en la interfaz de usuario de la vista Recursos
+* Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 

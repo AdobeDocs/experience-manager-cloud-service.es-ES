@@ -2,9 +2,9 @@
 title: ¿Cómo compartir vínculos a recursos?
 description: Genere un vínculo y comparta recursos con otras personas que no tengan acceso a la aplicación de  [!DNL Assets view] .
 exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 93%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 93%
 
 Para generar un vínculo para un recurso o una carpeta que contenga recursos:
 
-1. Seleccione los recursos o las carpetas que contienen los recursos y haga clic en **[!UICONTROL Compartir vínculo]**.
+1. Seleccione los recursos, las carpetas o ambos que contienen recursos y haga clic en **[!UICONTROL Compartir vínculo]**.
 
 1. Si desea ajustarlo, haga clic en el icono del calendario para definir una fecha de caducidad para el vínculo mediante el campo **[!UICONTROL Fecha de caducidad]**. También puede especificar una fecha directamente, en formato `yyyy-mm-dd`. De forma predeterminada, la fecha de caducidad de un vínculo se establece en dos semanas a partir de la fecha en que se compartió.
 
@@ -45,7 +45,7 @@ Para descargar todos los recursos a la vez, cambie a la **[!UICONTROL Vista de l
 
 * [Vea un vídeo para compartir vínculos para recursos en la vista Recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=es)
 
-* Proporcione comentarios sobre productos usando [!UICONTROL Comentarios] opción disponible en la interfaz de usuario de la vista Recursos
+* Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 

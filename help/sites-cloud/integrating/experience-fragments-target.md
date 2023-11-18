@@ -2,10 +2,10 @@
 title: Exportación de fragmentos de experiencias a Adobe Target
 description: Obtenga información sobre cómo exportar los fragmentos de experiencias a Adobe Target para probar y personalizar experiencias.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2254'
-ht-degree: 99%
+source-wordcount: '2246'
+ht-degree: 96%
 
 ---
 
@@ -165,7 +165,7 @@ Ahora puede seleccionar la nueva configuración para editarla.
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -189,7 +189,7 @@ Ahora puede seleccionar la nueva configuración para editarla.
 
    * **Use objetivos precisos:** De forma predeterminada, esta casilla de verificación está seleccionada. Si se selecciona, la configuración del servicio en la nube esperará a que el contexto se cargue antes de cargar el contenido. Véase la nota siguiente.
 
-   * **Sincronizar segmentos desde Adobe Target:** Seleccione esta opción para descargar los segmentos definidos en Target y utilizarlos en AEM. Debe seleccionar esta opción cuando la propiedad Tipo de API sea REST, ya que los segmentos en línea no son compatibles y siempre necesita utilizar segmentos de Target. (Tenga en cuenta que el término de AEM de &quot;segmento&quot; equivale a la &quot;audiencia&quot; de Target).
+   * **Sincronizar segmentos desde Adobe Target:** Seleccione esta opción para descargar los segmentos definidos en Target y utilizarlos en AEM. Seleccione esta opción cuando la propiedad Tipo de API sea REST, ya que los segmentos en línea no son compatibles y siempre necesita utilizar segmentos de Target. AEM (El término de de &quot;segmento&quot; equivale a la &quot;audiencia&quot; de Target).
 
    * **Biblioteca de cliente:** de forma predeterminada, AT.js (mbox.js está obsoleto).
 
@@ -290,8 +290,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
   ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
@@ -301,7 +301,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Select **Done**.
 1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
 
    >[!NOTE]
@@ -326,19 +326,19 @@ Para exportar un fragmento de experiencia de AEM a Target (después de especific
    >
    >Debe ser una variación web del Fragmento de experiencia.
 
-1. Toque o haga clic en **Exportar a Adobe Target**.
+1. Seleccionar **Exportación a Adobe Target**.
 
    >[!NOTE]
    >
    >Si el fragmento de experiencia ya se ha exportado, seleccione **Actualización del estado en Adobe Target**.
 
-1. Toque o haga clic en **Exportación sin publicación** o **Publicación** según sea necesario.
+1. Seleccionar **Exportar sin publicar** o **Publish** según sea necesario.
 
    >[!NOTE]
    >
    >La selección de **Publicación** publicará de inmediato el fragmento de experiencia y lo enviará a Target.
 
-1. Toque o haga clic en **Aceptar** en el cuadro de diálogo de confirmación.
+1. Seleccionar **OK** en el cuadro de diálogo de confirmación.
 
    El fragmento de experiencia debería estar en Target.
 

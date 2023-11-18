@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo crear perfiles de usuario en la Ad
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 93%
+source-wordcount: '982'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Obtenga información sobre cómo crear perfiles de usuario en la Admin Console p
 
 ## Información general {#overview}
 
-De vez en cuando, Adobe debe ponerse en contacto con los usuarios en relación con sus entornos AEM as a Cloud Service. Además de las notificaciones internas del producto, Adobe también utiliza ocasionalmente el correo electrónico para las notificaciones. Existen dos tipos de notificaciones de correo electrónico:
+De vez en cuando, Adobe AEM contacta con los usuarios en relación con sus entornos as a Cloud Service de. Además de las notificaciones internas del producto, Adobe también utiliza ocasionalmente el correo electrónico para las notificaciones. Existen dos tipos de notificaciones de correo electrónico:
 
 * **Notificación de incidente**: estas notificaciones se envían durante un incidente o cuando Adobe ha identificado un posible problema de disponibilidad con su entorno AEM as a Cloud Service.
 * **Notificación proactiva**: estas notificaciones se envían cuando un miembro del equipo de asistencia de Adobe desea proporcionar orientación sobre una posible optimización o recomendación que pueda beneficiar a su entorno AEM as a Cloud Service.
@@ -148,4 +148,4 @@ El usuario invitado recibirá ahora las notificaciones. Repita estos pasos para 
 
 Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
-* [Centro de acciones](/help/operations/actions-center.md) - Aproveche el Centro de Acciones para tomar medidas sobre incidentes y otra información importante.
+* [Centro de acciones](/help/operations/actions-center.md) - Aproveche el Centro de Acciones para actuar convenientemente sobre incidentes y otra información importante.

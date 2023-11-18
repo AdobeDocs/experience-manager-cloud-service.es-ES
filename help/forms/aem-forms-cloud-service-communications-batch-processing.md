@@ -2,10 +2,10 @@
 title: 'Creación de PDF a granel sin esfuerzo: domine el arte con el procesamiento por lotes: su guía de autoayuda para generar millones de documentos de PDF.'
 description: Crear comunicaciones personalizadas y orientadas a la marca
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -162,7 +162,7 @@ La respuesta de la solicitud de estado contiene la sección de estado. Ofrece de
 
 Al finalizar el trabajo, los documentos generados se almacenan en la carpeta `success`, en la ubicación de destino especificada en la configuración del almacén de datos por lotes. Si hay algún error, el servicio crea una carpeta `failure`. Ofrece información sobre el tipo y el motivo de los errores.
 
-Entendámoslo con la ayuda de un ejemplo: Supongamos que hay un archivo de datos de entrada `record1.xml` y dos tipos de salida: `PDF` y `PCL`. A continuación, la ubicación de destino contiene dos subcarpetas: `pdf` y `pcl`; una para cada uno de los tipos de salida. Supongamos que la generación de PDF se ha realizado correctamente y que la subcarpeta `pdf` contiene la subcarpeta `success`, que a su vez contiene el documento de PDF generado `record1.pdf`. Supongamos que la generación de PCL ha fallado y luego la subcarpeta `pcl` contiene una subcarpeta `failure`, que a su vez contiene un archivo de error `record1.error.txt`, que contiene detalles del error. Además, la ubicación de destino contiene una carpeta temporal llamada `__tmp__`, que contiene ciertos archivos necesarios durante la ejecución por lotes. Esta carpeta se puede eliminar cuando no haya ejecuciones por lotes activas que hagan referencia a la carpeta de destino.
+Entendámoslo con la ayuda de un ejemplo: Supongamos que hay un archivo de datos de entrada `record1.xml` y dos tipos de salida: `PDF` y `PCL`. A continuación, la ubicación de destino contiene dos subcarpetas: `pdf` y `pcl`; una para cada uno de los tipos de salida. Supongamos que la generación de PDF se ha realizado correctamente y que la subcarpeta `pdf` contiene la subcarpeta `success`, que a su vez contiene el documento de PDF generado `record1.pdf`. Supongamos que la generación de PCL ha fallado y luego la subcarpeta `pcl` contiene una subcarpeta `failure`, que a su vez contiene un archivo de error `record1.error.txt`, que contiene detalles del error. Además, la ubicación de destino contiene una carpeta temporal llamada `__tmp__` que contiene ciertos archivos necesarios durante la ejecución por lotes. Esta carpeta se puede eliminar cuando no haya ejecuciones por lotes activas que hagan referencia a la carpeta de destino.
 
 >[!NOTE]
 >

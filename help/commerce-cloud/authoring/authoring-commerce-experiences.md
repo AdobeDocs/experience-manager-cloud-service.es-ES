@@ -2,9 +2,9 @@
 title: Creación de experiencias comerciales
 description: Aprenda a crear y a crear experiencias relacionadas con el comercio de forma eficaz obteniendo acceso a los datos y al contenido del producto sin salir del contexto.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Esto crea un vínculo de marcador de posición que se sustituye por un vínculo 
 
 ### Acceso al contenido del producto asociado {#associated-content}
 
-Si el editor universal reconoce productos 1:n en una página, el panel lateral mostrará automáticamente la pestaña &quot;Contenido de comercio asociado&quot;. AEM Esta pestaña permite a los autores acceder rápidamente al contenido de la documentación que se ha etiquetado con el producto (consulte ). [AEM enriquecer datos de productos con contenido asociado de la](./enrich-product-associated-content.md) para obtener más información). Esta pestaña ofrece desplegables para filtrar por tipo de contenido y productos específicos si hay varios productos en la página. El uso del contenido funciona exactamente igual que el uso de contenido de la pestaña Recursos.
+Si el editor universal reconoce productos 1:n en una página, el panel lateral mostrará automáticamente la pestaña &quot;Contenido de comercio asociado&quot;. AEM Esta pestaña permite a los autores acceder rápidamente al contenido de la documentación que se ha etiquetado con el producto (consulte ). [AEM enriquecer datos de productos con contenido asociado de la](./enrich-product-associated-content.md) para obtener más información). Esta pestaña ofrece listas desplegables para filtrar por tipo de contenido y productos específicos si hay varios productos en la página. El uso del contenido funciona exactamente igual que el uso de contenido de la pestaña Recursos.
 
 ![Panel lateral de datos del producto](../assets/authoring/associated-commerce-content-tab.png)
 

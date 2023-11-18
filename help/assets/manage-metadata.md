@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2003'
-ht-degree: 8%
+source-wordcount: '2000'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 [!DNL Adobe Experience Manager Assets] mantiene los metadatos de cada recurso. Permite una categorización y organización más sencillas de los recursos y ayuda a las personas que buscan un recurso específico. Con la capacidad de extraer metadatos de archivos cargados en [!DNL Experience Manager Assets], la administración de metadatos se integra con el flujo de trabajo creativo. Con la capacidad de mantener y administrar metadatos con sus recursos, puede organizar y procesar recursos automáticamente en función de sus metadatos.
@@ -135,7 +135,7 @@ Enterprise Manager Assets permite editar los metadatos de varios recursos simult
 
 1. Desplácese hasta la ubicación de los recursos que desee editar.
 1. Seleccione los recursos para los que desea editar propiedades comunes.
-1. En la barra de herramientas, pulse o haga clic en **[!UICONTROL Propiedades]** para abrir [!UICONTROL Propiedades] para los recursos seleccionados.
+1. En la barra de herramientas, seleccione **[!UICONTROL Propiedades]** para abrir [!UICONTROL Propiedades] para los recursos seleccionados.
 
    >[!NOTE]
    >
@@ -149,9 +149,8 @@ Enterprise Manager Assets permite editar los metadatos de varios recursos simult
    >* En el [!UICONTROL Propiedades] puede eliminar recursos de la lista de recursos cancelando la selección. La lista de recursos tiene todos los recursos seleccionados de forma predeterminada. Los metadatos de los recursos que elimina de la lista no se actualizan.
    >* En la parte superior de la lista de recursos, active la casilla de verificación situada junto a **[!UICONTROL Título]** para alternar entre seleccionar los recursos y borrar la lista.
 
-
-1. Para seleccionar un esquema de metadatos diferente para los recursos, pulse o haga clic en **[!UICONTROL Configuración]** en la barra de herramientas, y seleccione el esquema deseado. Guarde los cambios.
-1. Para anexar los nuevos metadatos con los metadatos existentes en los campos que contienen varios valores, seleccione el **[!UICONTROL modo Anexar]**. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Pulse o haga clic en **[!UICONTROL Enviar]**.
+1. Para seleccionar un esquema de metadatos diferente para los recursos, seleccione **[!UICONTROL Configuración]** en la barra de herramientas, y seleccione el esquema deseado. Guarde los cambios.
+1. Para anexar los nuevos metadatos con los metadatos existentes en los campos que contienen varios valores, seleccione el **[!UICONTROL modo Anexar]**. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Seleccione **[!UICONTROL Enviar]**.
 
    >[!CAUTION]
    >
@@ -233,7 +232,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * PDF y PDF/X: aplicaciones de Adobe PDF y de terceros.
 * PRISMA - [Requisitos de publicación para metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` XMP - metadatos de la página para texto de página.
+* `xmpPG` XMP - metadatos de la página para texto paginado.
 
 ### Metadatos específicos de medios múltiples {#multimedia-specific-metadata}
 
@@ -251,11 +250,11 @@ La creación de flujos de trabajo impulsados por metadatos le ayuda a automatiza
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Facetas de búsqueda](search-facets.md)
@@ -266,4 +265,3 @@ La creación de flujos de trabajo impulsados por metadatos le ayuda a automatiza
 >
 >* [Metadatos XMP](xmp-metadata.md)
 >* [Cómo editar o añadir metadatos](meta-edit.md)
-

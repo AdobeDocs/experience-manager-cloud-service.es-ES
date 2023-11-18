@@ -2,7 +2,7 @@
 title: Edición de un SPA externo dentro de AEM
 description: SPA AEM En este documento se describen los pasos recomendados para cargar una instancia independiente a una instancia de, agregar secciones de contenido editables y habilitar la creación de contenido.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 2%
@@ -366,7 +366,7 @@ El componente RemotePage espera que la implementación proporcione un manifiesto
 
 SPA AEM El siguiente material de referencia puede resultar útil para comprender la existencia de la en el contexto de la misma.
 
-* [Encabezado y sin encabezado en AEM](/help/implementing/developing/headful-headless.md)
+* [Modelos con encabezado y sin encabezado en AEM](/help/implementing/developing/headful-headless.md)
 * [AEM Arquetipo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 * [SPA El proyecto de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es)
 * [Introducción a SPA en AEM usando React](/help/implementing/developing/hybrid/getting-started-react.md)

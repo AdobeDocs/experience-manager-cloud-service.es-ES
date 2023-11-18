@@ -2,10 +2,10 @@
 title: Administrar los sitios de muestra
 description: Obtenga información sobre las herramientas disponibles para ayudarle a administrar los sitios de muestra y cómo eliminarlos.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 94%
+source-wordcount: '936'
+ht-degree: 89%
 
 ---
 
@@ -41,7 +41,7 @@ Este documento le ayuda a comprender cómo administrar los sitios de muestra que
 
 Ahora que tiene sus propios sitios de muestra, probablemente le gustaría saber cómo puede administrarlos. La canalización no solo implementó las plantillas de sitio para dar contenido a los sitios de muestra, sino también un conjunto de utilidades para administrar esos sitios.
 
-1. En la barra de navegación global de AEM, seleccione **Herramientas** -> **Demostraciones de referencia** -> **Utilidades de demostración de referencia**.
+1. AEM En la barra de navegación global de la, seleccione **Herramientas** > **Demostraciones de referencia** > **Utilidades de demostración de referencia**.
 
    ![Utilidades de demostración de autoservicio](assets/demo-utilities.png)
 
@@ -49,7 +49,7 @@ Ahora que tiene sus propios sitios de muestra, probablemente le gustaría saber 
 
    ![Tablero](assets/dashboard.png)
 
-Utilidades de demostración de autoservicio proporciona una serie de herramientas.
+Utilidades de demostración de autoservicio proporciona varias herramientas.
 
 * **Eliminar sitios**: seleccione el sitio que desee eliminar en esta instancia de Adobe Experience Manager. Tenga en cuenta que esta es una acción destructiva y no se puede deshacer una vez iniciada.
 * **Eliminar plantillas de sitio**: seleccione la plantilla de sitio que desee eliminar en esta instancia de Adobe Experience Manager. Antes de eliminar una plantilla de sitio, asegúrese de que todos los sitios que hacen referencia a la plantilla también se eliminen. Tenga en cuenta que esta es una acción destructiva y no se puede deshacer una vez iniciada.
@@ -62,11 +62,11 @@ Utilidades de demostración de autoservicio proporciona una serie de herramienta
 
  Después de probar un conjunto de funcionalidades de AEM, es posible que ya no necesite el sitio de muestra o incluso la plantilla en la que se basa. Es fácil eliminar los sitios de muestra y las plantillas de sitio.
 
-1. Acceda a las **Utilidades de demostración de referencia** y toque o haga clic en **Eliminar sitios**.
+1. Acceda a la **Utilidades de demostración de referencia** y seleccione **Eliminar sitios**.
 
    ![Eliminar sitios](assets/delete-sites.png)
 
-1. Los sitios disponibles se presentan en una lista. Compruebe el sitio o sitios que desea eliminar y, a continuación, toque o haga clic en **Eliminar**.
+1. Los sitios disponibles se presentan en una lista. Compruebe el sitio o sitios que desea eliminar y, a continuación, seleccione **Eliminar**.
 
    >[!CAUTION]
    >

@@ -2,10 +2,10 @@
 title: Edición de las propiedades de página
 description: AEM Obtenga información sobre cómo definir las propiedades necesarias para administrar una página en la administración de páginas en la.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 96%
+source-wordcount: '2270'
+ht-degree: 94%
 
 ---
 
@@ -87,9 +87,9 @@ Las propiedades se distribuyen entre varias pestañas.
   >* No admiten patrones regex.
   >* No debe configurarse en una página existente.
 
-   * **Añadir**: pulse o haga clic para mostrar un campo con el que definir una URL de vanidad para la página.
-      * Pulse o haga clic de nuevo para añadir varias.
-      * Pulse o haga clic en el botón **Eliminar** para eliminar la URL de vanidad.
+   * **Añadir** : seleccione esta opción para mostrar un campo y definir una URL de vanidad para la página.
+      * Seleccione de nuevo para añadir varias.
+      * Seleccione el **Eliminar** para eliminar la URL de vanidad.
    * **Redirigir URL de vanidad**: indica si desea que la página use la URL de vanidad.
 
 ### Avanzado  {#advanced}
@@ -105,7 +105,7 @@ Las propiedades se distribuyen entre varias pestañas.
       * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, se puede acceder a esta página también mediante `/content/wknd/us/en/magazine/private`
       * La creación de un alias establece la propiedad `sling:alias` en el nodo de página, lo que solo afecta al recurso, no a la ruta del repositorio.
       * No se pueden publicar páginas a las que se accede mediante alias en el editor. Las [Opciones de publicación](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) del editor solo están disponibles para las páginas a las que se accede a través de sus rutas reales.
-      * Para obtener más información, consulte [Nombres de páginas localizadas en Prácticas recomendadas para la administración de direcciones URL y SEO](/help/overview/seo-and-url-management.md#localized-page-names).
+      * Consulte [Nombres de páginas localizados bajo Prácticas recomendadas de administración de direcciones SEO y URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuración**
 
@@ -147,7 +147,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Imagen destacada**
 
-  Seleccione y configure la imagen que desea mostrar. Se utiliza en los componentes que hacen referencia a la página; por ejemplo, teasers, listas de páginas, etc.
+  Seleccione y configure la imagen que desea mostrar. Se utiliza en componentes que hacen referencia a la página; por ejemplo, teasers, listas de páginas, etc.
 
    * **Imagen**
 
@@ -237,7 +237,7 @@ A través de una configuración sencilla, el autor de contenido ahora puede habi
 
 >[!NOTE]
 >
->Para obtener más información, consulte [Activación de las funciones de la aplicación web progresiva](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Consulte [Activación de funciones de aplicación web progresiva](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Configurar la experiencia instalable**
 

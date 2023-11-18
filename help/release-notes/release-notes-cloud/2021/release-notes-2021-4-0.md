@@ -1,10 +1,10 @@
 ---
-title: Notas de la versión 2021.4.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2021.4.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2021.4.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2021.4.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1533'
 ht-degree: 41%
 
 ---
@@ -83,7 +83,7 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 * Cuando se realiza una selección en la página Propiedades para actualizar los metadatos, la interfaz tarda en responder cuando el esquema proporciona muchas opciones. (CQ-4318538)
 
-* Al actualizar y guardar el valor de los metadatos en un campo de texto de una sola línea, los valores del menú desplegable se eliminan, incluso si las ediciones están desactivadas en el menú desplegable. (CQ-4317077)
+* Al actualizar y guardar el valor de los metadatos en un campo de texto de una sola línea, los valores del menú de lista desplegable se eliminan, incluso si las ediciones están desactivadas en el menú de lista desplegable. (CQ-4317077)
 
 * Puede utilizar puntos suspensivos como anotación para revisar los recursos. Cuando se utiliza una elipse pequeña, la elipse se superpone con el número de la anotación en la versión de impresión. (CQ-4316792)
 
@@ -132,7 +132,7 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 * AEM Extensión para PWA Studio incl. integración de ejemplo
 
-* Nuevo componente principal de navegación del CIF que amplía el componente principal de navegación de WCM
+* CIF Nuevo componente principal de navegación de que amplía el componente principal de navegación de WCM
 
 * AEM Indicador visual para datos de catálogo clasificados en tienda de
 

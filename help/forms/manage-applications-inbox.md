@@ -5,10 +5,10 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 80%
+source-wordcount: '1149'
+ht-degree: 79%
 
 ---
 
@@ -95,7 +95,7 @@ Además, la pestaña muestra el historial de tareas para cada fase completada en
 
 La barra de herramientas Acciones muestra todas las opciones disponibles para la tarea. Mientras que Guardar, Restablecer y Delegar son acciones predeterminadas, otras acciones disponibles se configuran en [Asignar paso de tarea](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=es#extending-aem). En el ejemplo anterior, se configura Aprobar y Rechazar en el flujo de trabajo.
 
-A medida que realiza una acción sobre la tarea, esta continúa en el flujo de trabajo.
+A medida que actúa en la tarea, esta continúa en el flujo de trabajo.
 
 ### Ver tareas completadas {#view-completed-tasks}
 

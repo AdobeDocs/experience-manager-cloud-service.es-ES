@@ -4,9 +4,9 @@ description: Aprenda a utilizar Dynamic Media para entregar recursos para su con
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '397'
 ht-degree: 6%
 
 ---
@@ -81,7 +81,7 @@ Los recursos habilitados para Dynamic Media incluyen `pyramid.tiffs`.
 
 ### Cambio de vistas de recursos {#asset-views-change}
 
-Con Dynamic Media habilitado, puede acercar y alejar la imagen haciendo clic en el icono `+` y `-` botones. También puede tocar o hacer clic para acercar el zoom a determinadas áreas. Revertir le lleva a la versión original y puede hacer que la imagen de pantalla completa haciendo clic en las flechas diagonales. Dynamic Media habilitado aparece de la siguiente manera:
+Con Dynamic Media habilitado, puede acercar y alejar la imagen haciendo clic en el icono `+` y `-` botones. También puede seleccionar para ampliar una zona determinada. Revertir le lleva a la versión original y puede hacer que la imagen de pantalla completa haciendo clic en las flechas diagonales. Dynamic Media habilitado aparece de la siguiente manera:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

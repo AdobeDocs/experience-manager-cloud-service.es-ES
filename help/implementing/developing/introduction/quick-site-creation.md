@@ -2,9 +2,9 @@
 title: Creación rápida de sitios y personalización del front-end
 description: Descubra cómo la herramienta Creación rápida de sitios utiliza plantillas de sitio, temas y la canalización front-end para permitir una implementación rápida de nuevos sitios y desvincular el desarrollo front-end.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '324'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ La herramienta de creación rápida de sitios es una herramienta fácil de usar 
 
 AEM Para ello, la herramienta de Creación rápida de sitios utiliza varias funciones as a Cloud Service potentes de la:
 
-1. **AEM Plantillas de sitio de** se utilizan para definir el contenido y la estructura base del sitio y el estilo del sitio, y los selecciona un administrador al crear un nuevo sitio.
+1. **AEM Plantillas de sitio de** se utilizan para definir el contenido y la estructura base del sitio y el estilo del sitio, y los selecciona un administrador al crear un sitio.
 1. Un **AEM Tema del sitio** se incluye en la plantilla y contiene CSS, JavaScript y recursos estáticos que definen el estilo del sitio.
 1. El **Canalización front-end** se puede utilizar para implementar personalizaciones en el tema del sitio independientemente del desarrollo del back-end.
 

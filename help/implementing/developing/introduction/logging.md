@@ -2,9 +2,9 @@
 title: AEM Registro para la as a Cloud Service
 description: AEM Obtenga información sobre cómo utilizar Registro para el registro as a Cloud Service para configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2757'
+source-wordcount: '2753'
 ht-degree: 10%
 
 ---
@@ -279,7 +279,7 @@ AEM as a Cloud Service proporciona tres registros para los servidores web Apache
 * Registro de errores del servidor web Apache HTTPD
 * Registro de Dispatcher
 
-Tenga en cuenta que estos registros solo están disponibles para el nivel de publicación.
+Estos registros solo están disponibles para el nivel de publicación.
 
 AEM Este conjunto de registros proporciona información sobre las solicitudes HTTP al nivel de publicación as a Cloud Service AEM de la antes de que dichas solicitudes lleguen a la aplicación de la. AEM AEM Esto es importante tenerlo en cuenta, ya que, idealmente, la mayoría de las solicitudes HTTP a los servidores de nivel de publicación están servidas por contenido que está almacenado en caché por el servidor web Apache HTTPD y Dispatcher, y nunca llegan a la aplicación en sí misma. AEM Por lo tanto, no hay instrucciones de registro para estas solicitudes en los registros de Java, Solicitud o Acceso de la.
 
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM El as a Cloud Service proporciona acceso a los registros de CDN, que son útiles para casos de uso, incluida la optimización de la proporción de visitas de caché. El formato de registro de CDN no se puede personalizar y no se puede configurar en diferentes modos, como información, advertir o error.
 
-Tenga en cuenta que la función de reenvío de Splunk aún no admite registros de CDN.
+La función de reenvío de Splunk aún no admite registros de CDN.
 
 **Ejemplo**
 
@@ -643,7 +643,7 @@ A continuación encontrará un ejemplo de solicitud de asistencia al cliente:
 Programa 123, Sobre de producción
 
 * Dirección de extremo HEC de Splunk: `splunk-hec-ext.acme.com`
-* Índice de Splunk: acme_123prod (el cliente puede elegir la convención de nombres que desee)
+* Índice de Splunk: acme_123prod (el cliente puede elegir la convención de nomenclatura que desee)
 * Puerto de Splunk: 443
 * Token HEC de Splunk: ABC123
 

@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo crear contenido para los fragmento
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2251'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ Cuando abra el Editor de fragmentos de contenido por primera vez, verá cuatro �
    * en el **Propiedades** puede actualizar la pestaña **Título** y **Descripción** para el fragmento, o **Variación**
 * panel central: muestra los campos y el contenido reales de la variación seleccionada
    * le permite editar el contenido
-   * if **Marcador de ficha** Los campos de se definen dentro del modelo que se muestra aquí y pueden utilizarse para navegar; se presentarán horizontalmente o como una lista desplegable
+   * if **Marcador de ficha** Los campos de se definen dentro del modelo que se muestra aquí y pueden utilizarse para navegar; se presentarán horizontalmente o como una lista desplegable.
 
 ![Editor de fragmentos de contenido: información general](assets/cf-authoring-overview.png)
 
@@ -345,7 +345,7 @@ En la pestaña Propiedades (panel derecho), también puede editar:
 
 * **Título**
 * **Descripción**
-* **Etiquetas**: mediante el menú desplegable o el cuadro de diálogo de selección
+* **Etiquetas**: mediante la lista desplegable o el cuadro de diálogo de selección
 
   ![Editor de fragmentos de contenido: administrar etiquetas](assets/cf-authoring-edit-tags.png)
 
@@ -399,7 +399,7 @@ El editor de fragmentos de contenido proporciona a los autores la opción de pre
 Para utilizar esta función, primero debe:
 
 * Trabaje con su equipo de TI para configurar la aplicación de front-end externa que procesará el fragmento de contenido consumiendo su salida JSON.
-* Una vez configurada la aplicación de front-end externa, la variable **Patrón de URL de previsualización predeterminado** debe definirse como un [propiedad del modelo de fragmento de contenido adecuado](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* Cuando se configura la aplicación de front-end externa, la variable **Patrón de URL de previsualización predeterminado** debe definirse como [propiedad del modelo de fragmento de contenido adecuado](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
 
 Cuando se haya definido la dirección URL, la variable **Previsualizar** El botón está activo. Puede seleccionar este botón para iniciar la aplicación externa (en una pestaña independiente) para procesar el fragmento de contenido.
 
@@ -475,8 +475,6 @@ El **Campos** el panel enumera todos los campos del fragmento de contenido. El i
 </table>
 
 ## Es bueno saber {#good-to-know}
-
-Además:
 
 * Para editar un fragmento de contenido, necesita lo siguiente [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
 

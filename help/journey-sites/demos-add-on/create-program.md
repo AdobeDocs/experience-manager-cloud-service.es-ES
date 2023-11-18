@@ -2,10 +2,10 @@
 title: Creación de un programa
 description: Obtenga información sobre cómo configurar un nuevo programa y una canalización para implementar el complemento.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 58%
+source-wordcount: '696'
+ht-degree: 53%
 
 ---
 
@@ -46,30 +46,30 @@ Después de iniciar sesión en Cloud Manager, puede crear un programa de zona pr
 
    ![Información general de Cloud Manager](assets/cloud-manager.png)
 
-1. Toque o haga clic en **Agregar programa** en la parte superior derecha de la ventana.
+1. Seleccionar **Agregar programa** en la parte superior derecha de la ventana.
 
 1. En el cuadro de diálogo **Vamos a crear su programa**:
 
    1. Proporcione un **Nombre del programa** para describir su programa.
-   1. Toque o haga clic en **Configuración de una zona protegida** para su **Objetivo del programa**
-   1. Haga clic o pulse **Continuar**.
+   1. Seleccionar **Configuración de una zona protegida** para su **Objetivo del programa**
+   1. Seleccionar **Continuar**.
 
    ![Cuadro de diálogo Crear programa](assets/create-program.png)
 
 1. En el **Configuración de la zona protegida** diálogo en el **Soluciones y complementos** , expanda la **Sites** para escribir en la lista, toque o haga clic en ella y, a continuación, marque **Demostraciones de referencia**.
 
-   * Si también desea crear demostraciones para AEM Screens, consulte la **Screens** en la lista. Haga clic o pulse **Actualizar**.
+   * Si también desea crear demostraciones para AEM Screens, consulte la **Screens** en la lista. Seleccionar **Actualizar**.
 
    ![Selección del complemento para la demostración de referencia en la configuración del programa](assets/select-reference-demo-add-on.png)
 
 
-1. Pulse o haga clic en **Crear** y Cloud Manager configurará el programa de su zona protegida. Se le dirigirá a la pantalla de información general del programa y una breve notificación indica que el proceso se ha iniciado. Se ha añadido una tarjeta a la página de información general del programa nuevo. El proceso de configuración tarda unos minutos en completarse.
+1. Seleccionar **Crear** y Cloud Manager comienza a configurar el programa de zona protegida. Se le dirigirá a la pantalla de información general del programa y una breve notificación indica que el proceso se ha iniciado. Se ha añadido una tarjeta a la página de información general del programa nuevo. El proceso de configuración tarda unos minutos en completarse.
 
-1. Una vez completada la configuración, la tarjeta del entorno en la página de información general muestra su estado como **Listo**. Toque o haga clic en la tarjeta para poder abrir el entorno.
+1. Una vez completada la configuración, la tarjeta del entorno en la página de información general muestra su estado como **Listo**. Seleccione la tarjeta para poder abrir el entorno.
 
    ![Creación completa del programa](assets/ready.png)
 
-1. Su entorno está listo y el complemento ahora está habilitado como opción, pero el contenido de la demostración debe implementarse para que el contenido esté disponible. Para ello, pulse o haga clic en el botón de puntos suspensivos situado junto a la canalización Implementar en desarrollador en **Canalizaciones** Tarjeta de y seleccione **Ejecutar**.
+1. Su entorno está listo y el complemento ahora está habilitado como opción, pero el contenido de la demostración debe implementarse para que el contenido esté disponible. Para ello, seleccione el botón de los tres puntos situado junto a la canalización Implementar en desarrollador en la **Canalizaciones** Tarjeta de y seleccione **Ejecutar**.
 
    ![Inicial](assets/run.png)
 

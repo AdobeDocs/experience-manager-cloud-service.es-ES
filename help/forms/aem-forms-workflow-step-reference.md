@@ -4,10 +4,10 @@ description: Los flujos de trabajo centrados en Forms le permiten crear rápidam
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: AEM Uso de flujos de trabajo de, uso de los pasos Asignar tarea, paso Convertir en PDF/A, paso Generar documento de registro, uso de flujos de trabajo, paso Firmar documento, paso Generar salida impresa, paso Generar salida de PDF no interactiva
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '7446'
-ht-degree: 79%
+source-wordcount: '7444'
+ht-degree: 78%
 
 ---
 
@@ -396,7 +396,7 @@ El paso Firmar documento tiene las siguientes propiedades:
 * **[!UICONTROL Proceso de firma]**: puede optar por firmar un documento en orden secuencial o paralelo. En orden secuencial, un solo firmante a la vez recibe el documento para su firma. Una vez que el primer firmante completa la firma del documento, el documento se envía al segundo firmante, y así sucesivamente. En orden paralelo, varios firmantes pueden firmar un documento a la vez.
 * **[!UICONTROL URL de redireccionamiento]**: especifique una URL de redireccionamiento. Una vez firmado el documento, puede redirigir al usuario asignado a una dirección URL. Normalmente, esta URL contiene un mensaje de agradecimiento o instrucciones adicionales.
 * **[!UICONTROL Fase del flujo de trabajo]**: un flujo de trabajo puede tener varias fases. Estas fases se muestran en la bandeja de entrada AEM. Puede definir estas fases en las propiedades del modelo (**[!UICONTROL Barra de tareas]** > **[!UICONTROL Página]** > **[!UICONTROL Propiedades de página]** > **[!UICONTROL Fases]**).
-* **[!UICONTROL Seleccionar destinatarios]**: especifique el método para elegir destinatarios para el documento. Puede asignar dinámicamente el flujo de trabajo a un usuario o grupo, o agregar manualmente los detalles de un destinatario. Al seleccionar Manualmente en el menú desplegable, se agregan detalles del destinatario como Correo electrónico, Función y Método de autenticación.
+* **[!UICONTROL Seleccionar destinatarios]**: especifique el método para elegir destinatarios para el documento. Puede asignar dinámicamente el flujo de trabajo a un usuario o grupo, o agregar manualmente los detalles de un destinatario. Al seleccionar Manualmente en la lista desplegable, se agregan detalles del destinatario como Correo electrónico, Función y Método de autenticación.
 
   >[!NOTE]
   >
@@ -546,7 +546,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 
 * **[!UICONTROL Seleccionar la ubicación raíz del contenido mediante]**: la raíz del contenido es un valor de cadena que especifica el URI, la referencia absoluta o la ubicación en el repositorio para recuperar los recursos relativos que utiliza el diseño de formulario. Por ejemplo, si el diseño de formulario hace referencia a una imagen de forma relativa, como `../myImage.gif`, `myImage.gif` debe estar en `repository://`. El valor predeterminado es `repository://`, que apunta al nivel raíz del repositorio.
 
-  Cuando elige un recurso de la aplicación, la ruta del URI raíz del contenido debe tener la estructura correcta. Por ejemplo, si se selecciona un formulario de una aplicación denominada SampleApp y se coloca en `SampleApp/1.0/forms/Test.xdp`, el URI de raíz de contenido debe especificarse como `repository://administrator@password/Applications/SampleApp/1.0/forms/` o `repository:/Applications/SampleApp/1.0/forms/` (cuando la autoridad sea nula). Cuando se especifica el URI de la raíz de contenido de esta forma, las rutas de todos los recursos a los que se hace referencia en el formulario se resuelven en relación con este URI.
+  Cuando elige un recurso de la aplicación, la ruta del URI raíz del contenido debe tener la estructura correcta. Por ejemplo, si se selecciona un formulario de una aplicación denominada SampleApp y se coloca en `SampleApp/1.0/forms/Test.xdp`, el URI de raíz de contenido debe especificarse como `repository://administrator@password/Applications/SampleApp/1.0/forms/` o `repository:/Applications/SampleApp/1.0/forms/` (cuando la autoridad sea nula). Cuando se especifica el URI de raíz de contenido de esta manera, las rutas de todos los recursos a los que se hace referencia en el formulario se resuelven en relación con este URI.
 
 * **[!UICONTROL Seleccionar el archivo XCI mediante]**: los archivos XCI se utilizan para describir fuentes y otras propiedades que se utilizan para elementos de diseño de formulario. Puede mantener un archivo XCI relativo a la carga útil, en una ruta absoluta o mediante una variable del tipo de datos Document.
 
@@ -572,7 +572,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 
 * **Archivo de plantilla**: especifica la ubicación de la plantilla XDP. Es un campo obligatorio.
 
-* **Documento de datos**: especifica la ubicación del XML de datos que debe combinarse con la plantilla.
+* **Documento de datos**: especifica la ubicación del xml de datos que debe combinarse con la plantilla.
 
 ### Documento de salida {#output-document}
 

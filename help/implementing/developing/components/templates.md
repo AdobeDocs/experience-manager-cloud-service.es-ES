@@ -2,9 +2,9 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan para crear una página que se utiliza como base para la nueva página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3279'
 ht-degree: 8%
 
 ---
@@ -40,7 +40,7 @@ Este documento:
 
 La creación de plantillas de página se realiza principalmente con [consola de plantillas y editor de plantillas](/help/sites-cloud/authoring/features/templates.md) por un autor de plantillas. En esta sección se ofrece una descripción general de este proceso y se incluye una descripción de lo que sucede a nivel técnico.
 
-Al crear una nueva plantilla editable, haga lo siguiente:
+Al crear una plantilla editable, debe hacer lo siguiente:
 
 1. Crear un [carpeta para las plantillas](#template-folders). Esto no es obligatorio, pero es una práctica recomendada.
 1. Seleccione una [tipo de plantilla](#template-type). Esto se copia para crear el [definición de plantilla](#template-definitions).
@@ -112,7 +112,7 @@ Al crear una nueva plantilla editable, haga lo siguiente:
 
 >[!TIP]
 >
->No introduzca nunca en una plantilla información que deba internacionalizarse. Para fines de internalización, la variable [Funciones de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es) se recomiendan.
+>Nunca introduzca en una plantilla información que deba internacionalizarse. Para fines de internalización, la variable [Funciones de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es) se recomiendan.
 
 >[!NOTE]
 >
@@ -191,13 +191,13 @@ Para crear una carpeta, puede hacer lo siguiente:
 
 1. Además de los permisos y privilegios estándar de creación (por ejemplo, `content-authors`Ahora debe asignar grupos y definir los derechos de acceso (ACL) necesarios para que los autores puedan crear plantillas en la nueva carpeta.
 
-   El `template-authors` group es el grupo predeterminado que debe asignarse. Consulte la sección [ACL y grupos](#acls-and-groups) para obtener más información.
+   El `template-authors` group es el grupo predeterminado que se debe asignar. Consulte la sección [ACL y grupos](#acls-and-groups) para obtener más información.
 
    <!--See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.-->
 
 ### Uso del explorador de configuración {#using-the-configuration-browser}
 
-1. Ir a **Navegación global** -> **Herramientas** > [**Explorador de configuración**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. Ir a **Navegación global** > **Herramientas** > [**Explorador de configuración**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    Las carpetas existentes se muestran a la izquierda, incluida la `global` carpeta.
 
@@ -289,9 +289,9 @@ Este valor predeterminado `template-authors` grupo solo abarca las configuracion
 
 ## Tipo de plantilla {#template-type}
 
-Al crear una plantilla nueva, debe especificar un tipo de plantilla:
+Al crear una plantilla, debe especificar un tipo de plantilla:
 
-* Los tipos de plantilla proporcionan plantillas para una plantilla de forma eficaz. Al crear una plantilla nueva, se utiliza la estructura y el contenido inicial del tipo de plantilla seleccionado para crear la nueva plantilla.
+* Los tipos de plantilla proporcionan plantillas para una plantilla de forma eficaz. Al crear una plantilla, se utiliza la estructura y el contenido inicial del tipo de plantilla seleccionado para crear la nueva plantilla.
 
    * El tipo de plantilla se copia para crearla.
    * Una vez realizada la copia, la única conexión entre la plantilla y el tipo de plantilla es una referencia estática con fines informativos.
@@ -338,7 +338,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >
@@ -432,7 +432,7 @@ Este nodo contiene propiedades para la plantilla:
 
 Define la estructura de la página resultante:
 
-* Se combina con el contenido inicial ( `/initial`) al crear una página nueva.
+* Se combina con el contenido inicial ( `/initial`) al crear una página.
 * Los cambios realizados en la estructura se reflejan en cualquier página creada con la plantilla.
 * El `root` ( `structure/jcr:content/root`) define la lista de componentes disponibles en la página resultante.
    * Los componentes definidos en la estructura de la plantilla no se pueden mover ni eliminar de ninguna página resultante.
@@ -446,7 +446,7 @@ Define la estructura de la página resultante:
 Define el contenido inicial que tendrá una nueva página al crearla:
 
 * Contiene un `jcr:content` que se copia en cualquier página nueva.
-* Se combina con la estructura ( `/structure`) al crear una página nueva.
+* Se combina con la estructura ( `/structure`) al crear una página.
 * Las páginas existentes no se actualizarán si el contenido inicial cambia después de la creación.
 * El `root` El nodo contiene una lista de componentes para definir qué está disponible en la página resultante.
 * Si el contenido se añade a un componente en modo de estructura y dicho componente se desbloquea posteriormente (o viceversa), este contenido se utiliza como contenido inicial.
@@ -545,7 +545,7 @@ Al procesar una página:
 
 ### Disponibilidad de la plantilla {#template-availability}
 
-Al crear una nueva página en la interfaz de administración del sitio, la lista de plantillas disponibles depende de la ubicación de la nueva página y de las restricciones de colocación especificadas en cada plantilla.
+Al crear una página en la interfaz de administración del sitio, la lista de plantillas disponibles depende de la ubicación de la nueva página y de las restricciones de colocación especificadas en cada plantilla.
 
 Las siguientes propiedades determinan si una plantilla `T` se puede usar para que una nueva página se coloque como elemento secundario de la página `P`. Cada una de estas propiedades es una cadena de varios valores que contiene cero o más expresiones regulares que se utilizan para la coincidencia con rutas:
 

@@ -2,10 +2,10 @@
 title: Personalización del tema del sitio
 description: Descubra cómo se crea el tema del sitio, cómo personalizarlo y cómo probarlo con contenido de AEM en directo.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 96%
+source-wordcount: '960'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ Una vez que esté cómodo con la estructura del proyecto de tema, inicie el prox
 
    ![npm run live](assets/npm-run-live.png)
 
-1. Cuando se inicia el servidor proxy, se abre automáticamente un explorador a `http://localhost:7001/`. Pulse o haga clic en **INICIAR SESIÓN LOCALMENTE (SOLO TAREAS DE ADMINISTRACIÓN)** e inicie sesión con las credenciales del usuario proxy proporcionadas por el administrador de AEM.
+1. Cuando se inicia el servidor proxy, se abre automáticamente un explorador a `http://localhost:7001/`. Seleccionar **INICIAR SESIÓN LOCALMENTE (SOLO TAREAS DE ADMINISTRACIÓN)** AEM e inicie sesión con las credenciales de usuario de proxy proporcionadas por el administrador de la.
 
    ![Iniciar sesión localmente](assets/sign-in-locally.png)
 

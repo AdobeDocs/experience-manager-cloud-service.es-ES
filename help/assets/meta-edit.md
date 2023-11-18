@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 15%
+source-wordcount: '443'
+ht-degree: 7%
 
 ---
 
@@ -24,13 +24,13 @@ Para editar metadatos:
 
 1. Realice una de las siguientes acciones:
 
-   * En la interfaz de usuario de Assets, seleccione el recurso y pulse o haga clic en **[!UICONTROL Ver propiedades]** de la barra de herramientas.
+   * En la interfaz de usuario de Assets, seleccione el recurso y el **[!UICONTROL Ver propiedades]** de la barra de herramientas.
    * En la miniatura del recurso, seleccione **[!UICONTROL Ver propiedades]** acción rápida.
-   * En la página de recursos, pulse o haga clic en **[!UICONTROL Ver propiedades]** en la barra de herramientas.
+   * En la página de recursos, seleccione **[!UICONTROL Ver propiedades]** en la barra de herramientas.
 
-   La página de recursos muestra todos los metadatos del recurso. Estos metadatos se extraían automáticamente cuando se cargaban (incorporaban) en Experience Manager Assets.
+   La página del recurso muestra los metadatos del recurso. Estos metadatos se extraían automáticamente cuando se cargaban (incorporaban) en Experience Manager Assets.
 
-1. Edite los metadatos de las distintas pestañas, según sea necesario, y cuando termine, pulse o haga clic en **[!UICONTROL Guardar]** en la barra de herramientas para guardar los cambios. Pulse o haga clic en **[!UICONTROL Cerrar]** para volver a la interfaz web de Assets.
+1. Edite los metadatos de las distintas pestañas, según sea necesario, y cuando termine, seleccione **[!UICONTROL Guardar]** en la barra de herramientas para guardar los cambios. Seleccionar **[!UICONTROL Cerrar]** para volver a la interfaz web de Assets.
 
    >[!NOTE]
    >
@@ -49,10 +49,10 @@ Para obtener más información sobre cómo editar el esquema de metadatos, consu
 Puede agregar sus propias áreas de nombres en Experience Manager. Al igual que hay áreas de nombres predefinidas como cq, jcr y sling, puede tener un área de nombres para los metadatos del repositorio y el procesamiento xml.
 
 1. Vaya a la página de administración del tipo de nodo *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. Haga clic o toque **[!UICONTROL Áreas de nombres]** en la parte superior de la página. La página de administración del área de nombres se muestra en una ventana.
+1. Seleccionar **[!UICONTROL Áreas de nombres]** en la parte superior de la página. La página de administración del área de nombres se muestra en una ventana.
 
-1. Para agregar un área de nombres, toque o haga clic en **[!UICONTROL Nuevo]** en la parte inferior.
-1. Especifique un área de nombres personalizada en la convención del área de nombres XML (especifique el ID en forma de URI y un prefijo asociado para el ID) y toque o haga clic en **[!UICONTROL Guardar]**.
+1. Para añadir un área de nombres, seleccione **[!UICONTROL Nuevo]** en la parte inferior.
+1. Especifique un área de nombres personalizada en la convención del área de nombres XML (especifique el ID en forma de URI y un prefijo asociado para el ID) y seleccione **[!UICONTROL Guardar]**.
 
 **Consulte también**
 

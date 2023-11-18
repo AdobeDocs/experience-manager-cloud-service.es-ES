@@ -2,10 +2,10 @@
 title: Cómo hacer un lanzamiento con su aplicación sin encabezado
 description: En esta parte del recorrido para desarrolladores de AEM sin encabezado, aprenda a implementar un lanzamiento de la aplicación sin encabezado tomando su código local en Git y mudándolo a Cloud Manager Git para la canalización de integración continua/entrega continua (CI/CD).
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1093'
+ht-degree: 96%
 
 ---
 
@@ -67,7 +67,7 @@ Una vez que haya probado que todo funcione correctamente, estará listo para ins
 
 Una vez cargadas las actualizaciones en Cloud Manager, se pueden implementar en AEM as a Cloud Service mediante la [canalización CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es).
 
-Puede comenzar a implementar su código aprovechando la canalización CI/CD de Cloud Manager, que se explica en detalle [aquí](/help/implementing/deploying/overview.md).
+Puede empezar a implementar el código utilizando la canalización de CI/CD de Cloud Manager, que se trata detalladamente [aquí](/help/implementing/deploying/overview.md).
 
 ## Monitorización del rendimiento {#performance-monitoring}
 

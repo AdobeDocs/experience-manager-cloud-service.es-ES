@@ -2,9 +2,9 @@
 title: Consola Componentes
 description: La consola Componentes permite examinar todos los componentes definidos para la instancia
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 69%
 
 ---
@@ -29,7 +29,7 @@ Con el icono **Solo contenido** (parte superior izquierda) podrá abrir el panel
 
 ### Detalles de los componentes {#component-details}
 
-Para ver los detalles de un componente específico, pulse o haga clic en el recurso requerido. Hay tres pestañas que proporcionan:
+Para ver los detalles de un componente específico, seleccione el recurso necesario. Hay tres pestañas que proporcionan:
 
 * **Propiedades**
 

@@ -2,10 +2,10 @@
 title: Recorridos de AEM Sites
 description: Comience aquí para obtener una descripción general de los recorridos guiados disponibles para comprender las potentes funciones de los sitios de AEM.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '418'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 82%
 
 ---
 
@@ -19,7 +19,7 @@ Comience aquí para obtener una descripción general de los recorridos guiados d
 
 ## Recorridos de documentación de AEM {#documentation-journeys}
 
-[Un recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados. Proporciona una narrativa que ayuda al lector (que puede ser nuevo en AEM) a entender y resolver un problema empresarial de principio a fin, mientras asume un conocimiento previo mínimo de AEM.
+[Un Recorrido de documentación](/help/journey-documentation/documentation-journeys.md) AEM AEM une muchos temas y características diferentes y complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en la comprensión, comprensión y solución de un problema empresarial de principio a fin, mientras que asume un conocimiento previo mínimo de la materia o el conocimiento.
 
 Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
@@ -31,7 +31,7 @@ Los Recorridos del sitio están diseñados para personas diferentes, exponiendo 
 
 El recorrido individual está definido para un perfil específico o audiencia, pero también incluye perfiles adicionales con los que el lector interactúa.
 
-La información en los recorridos puede ser útil para varias personas, pero un recorrido está dirigido a una persona específica y cierta información puede ser superflua a ciertas funciones.
+La información de los recorridos puede ser útil para varias personas, pero un recorrido está dirigido a una persona específica y cierta información puede ser superflua a ciertas funciones.
 
 ## Recorridos de sitios {#sites-journeys}
 

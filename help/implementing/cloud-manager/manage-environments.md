@@ -2,10 +2,10 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2601'
-ht-degree: 85%
+source-wordcount: '2585'
+ht-degree: 83%
 
 ---
 
@@ -87,9 +87,9 @@ Al añadir un entorno nuevo, puede elegir configurar regiones adicionales ademá
 1. Seleccione la opción **Agregar regiones de publicación adicionales** y aparecerá una nueva **lista desplegable de Regiones de publicación adicionales**. 
 1. En el menú desplegable **Regiones de publicación adicionales**, seleccione una región adicional.
 1. La región seleccionada se añade debajo del menú desplegable para indicar su selección.
-   * Haga clic o pulse en `X` situado junto a la región seleccionada para que pueda anular su selección.
+   * Seleccione el `X` situado junto a la región seleccionada para que pueda anular su selección.
 1. Seleccione otra región en el menú desplegable **Regiones de publicación adicionales** para añadir otra región.
-1. Haga clic o pulse **Guardar** cuando esté listo para crear su entorno.
+1. Seleccionar **Guardar** cuando esté listo para crear su entorno.
 
 ![Selección de varias regiones](assets/select-multiple-regions.png)
 
@@ -115,7 +115,7 @@ También puede quitar regiones de publicación adicionales. Sin embargo, solo pu
 
    ![Editar entorno](assets/edit-environment.png)
 
-1. Pulse o haga clic en **Guardar** para guardar los cambios.
+1. Seleccionar **Guardar** para guardar los cambios.
 
 Los cambios realizados en el entorno de producción se aplican tanto a los entornos de producción como a los de ensayo. Los cambios en varias regiones de publicación solo se pueden editar en el entorno de producción.
 
@@ -200,12 +200,12 @@ También puede acceder a la misma información desde el **Entornos** pestaña.
 
 Si hay algún problema con regiones de publicación adicionales:
 
-1. Por favor, ten paciencia. Cloud Manager intentará continuamente recuperar la región y puede estar disponible en cualquier momento.
-1. Si el problema persiste después de varias horas, puede quitar la región de publicación adicional y agregarla de nuevo (en la misma región u otra región) para almacenar en déclencheur una implementación completa.
+1. Ten paciencia. Cloud Manager intenta continuamente recuperar la región y puede estar disponible en cualquier momento.
+1. Si el problema persiste después de varias horas, puede quitar la región de publicación adicional y volver a agregarla (en la misma región u otra región) para almacenar en déclencheur una implementación completa.
 
 El tiempo que espera a que el sistema se recupere por sí solo antes de realizar acciones adicionales depende del impacto que el fallo de esa región tenga en sus sistemas.
 
-Tenga en cuenta que, en cualquier caso, [el tráfico siempre se dirigirá a la otra región más cercana que esté en línea.](/help/operations/additional-publish-regions.md) Si sigue teniendo problemas, póngase en contacto con el Servicio de atención al cliente de Adobe.
+En cualquier caso, [el tráfico siempre se dirige a la otra región más cercana que está en línea.](/help/operations/additional-publish-regions.md) Si sigue teniendo problemas, póngase en contacto con el Servicio de atención al cliente de Adobe.
 
 ## Actualizar entornos {#updating-dev-environment}
 
@@ -333,7 +333,7 @@ La lista de IP permitidas debe existir en Cloud Manager para aplicarla a un ento
 **Para aplicar una listas de IP permitidas:**
 
 1. Vaya al entorno específico desde la pestaña **Entornos** de la pantalla del programa **Información general** y navegue hasta la tabla **Listas de IP permitidas**.
-1. Utilice los campos de entrada de la parte superior de la tabla de lista de IP permitidas para seleccionar la lista de IP permitidas y el servicio de autor o publicación al que desee aplicarla.
+1. Utilice los campos de entrada de la parte superior de la tabla de lista de permitidos IP para poder seleccionar la lista de permitidos IP y el servicio de autor o publicación al que desee aplicarla.
 1. Haga clic en **Aplicar** y confirme el envío.
 
 ### Anulación de la aplicación de una lista de IP permitidas {#unapply-ip-allow-list}

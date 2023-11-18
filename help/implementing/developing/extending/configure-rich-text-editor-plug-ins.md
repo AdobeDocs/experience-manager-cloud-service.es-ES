@@ -4,9 +4,9 @@ description: Aprenda a configurar las [!DNL Adobe Experience Manager] Complement
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4299'
+source-wordcount: '4298'
 ht-degree: 4%
 
 ---
@@ -233,7 +233,7 @@ A continuación, especifique las ubicaciones de las hojas de estilos a las que d
 
    * **Nombre** `externalStyleSheets`
    * **Tipo** `String[]` (varias cadenas; haga clic en **Múltiple** en CRXDE)
-   * **Valor(es)** Ruta de acceso y nombre de archivo de cada hoja de estilos que desee incluir. Utilice las rutas del repositorio.
+   * **Valores** Ruta de acceso y nombre de archivo de cada hoja de estilos que desee incluir. Utilice las rutas del repositorio.
 
    >[!NOTE]
    >
@@ -586,9 +586,9 @@ Para agregar más diccionarios, si es necesario, siga estos pasos.
 >
 El corrector ortográfico RTE está disponible bajo demanda. No se ejecuta automáticamente cuando empieza a escribir texto.
 >
-Para ejecutar el corrector ortográfico, pulse o haga clic en el botón Corrector ortográfico de la barra de herramientas. RTE revisa la ortografía de las palabras y resalta las palabras mal escritas.
+Para ejecutar el corrector ortográfico, seleccione el botón Corrector ortográfico de la barra de herramientas. RTE revisa la ortografía de las palabras y resalta las palabras mal escritas.
 >
-Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambiará y las palabras mal escritas dejarán de resaltarse. Para ejecutar el corrector ortográfico, toque o haga clic en el botón Corrector ortográfico de nuevo.
+Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambiará y las palabras mal escritas dejarán de resaltarse. Para ejecutar el corrector ortográfico, vuelva a seleccionar el botón Corrector ortográfico.
 
 ## Configuración del tamaño del historial para acciones de deshacer y rehacer {#undohistory}
 

@@ -4,9 +4,9 @@ description: Explore cómo puede utilizar el editor universal para editar cualqu
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '936'
 ht-degree: 11%
 
 ---
@@ -39,9 +39,9 @@ Editar en contexto y en contexto suele ser mejor que editar contenido estructura
 
 Con el editor universal, tiene una forma ágil de editar el texto en contexto y en contexto, lo que permite crear contenido de forma sencilla e intuitiva.
 
-1. El editor se debe cargar de forma predeterminada en **Componentes** modo. Si no es así, toque o haga clic en **Componentes** en el carril de modo en la parte izquierda del editor.
+1. El editor se debe cargar de forma predeterminada en **Componentes** modo. Si no es así, seleccione **Componentes** en el carril de modo en la parte izquierda del editor.
 
-1. Pulse dos veces o haga clic en el título del artículo más reciente para editarlo.
+1. Seleccione dos veces el título del artículo más reciente para editarlo.
 
    ![El editor universal](assets/do-not-localize/ue-component-mode.png)
 
@@ -49,7 +49,7 @@ Con el editor universal, tiene una forma ágil de editar el texto en contexto y 
 
    ![Edición de texto en el editor universal](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Pulse la tecla Intro o Retorno, o toque o haga clic fuera del componente de texto y los cambios se guardarán automáticamente.
+1. Pulse la tecla Intro/Retorno o seleccione fuera del componente de texto y los cambios se guardarán automáticamente.
 
 El editor universal guarda los cambios automáticamente en el entorno de creación. Aún debe publicarlos para que sus lectores puedan verlos, lo que haremos en un paso posterior.
 
@@ -57,15 +57,15 @@ El editor universal guarda los cambios automáticamente en el entorno de creaci�
 
 También puede intercambiar imágenes mientras permanece en el contexto del contenido mediante el Editor universal.
 
-1. Restante en **Componentes** en el modo, toque o haga clic en la imagen del internauta para seleccionarla.
+1. Restante en **Componentes** , seleccione la imagen del internauta para seleccionarla.
 
-1. En el carril del componente, puede ver los detalles del recurso. Haga clic o pulse en **Imagen destacada** miniatura.
+1. En el carril del componente, puede ver los detalles del recurso. Seleccione el **Imagen destacada** miniatura.
 
    ![Selección de una imagen para editarla](assets/do-not-localize/ue-edit-media.png)
 
-1. En el **Seleccionar recursos** , desplácese hacia abajo y toque o haga clic en `surfer-wave-02.JPG` imagen para seleccionarla.
+1. En el **Seleccionar recursos** , desplácese hacia abajo y seleccione la `surfer-wave-02.JPG` imagen para seleccionarla.
 
-1. Haga clic o pulse **Seleccionar** en el **Seleccionar recursos** ventana.
+1. Seleccionar **Seleccionar** en el **Seleccionar recursos** ventana.
 
    ![Uso de la ventana Seleccionar recurso para seleccionar una imagen](assets/do-not-localize/ue-select-asset.png)
 
@@ -75,7 +75,7 @@ La imagen se reemplazará por la que haya seleccionado.
 
 El editor universal permite interactuar con el contenido dentro de su contexto y verlo tal y como se entrega a los dispositivos de los usuarios.
 
-1. De forma predeterminada, el editor procesa la versión de escritorio del contenido. Toque o haga clic en el botón emulador en la parte superior derecha del editor para cambiar el dispositivo de destino.
+1. De forma predeterminada, el editor procesa la versión de escritorio del contenido. Seleccione el botón emulador en la parte superior derecha del editor para cambiar el dispositivo de destino.
 
    ![Elemento de menú del emulador](assets/do-not-localize/ue-emulator-1.png)
 
@@ -83,7 +83,7 @@ El editor universal permite interactuar con el contenido dentro de su contexto y
 
    ![Elemento de menú del emulador](assets/do-not-localize/ue-emulator-2.png)
 
-1. Consulte el cambio de contenido en el editor. El icono del emulador también cambia para reflejar el modo en el que se encuentra. Toque o haga clic en cualquier lugar fuera del menú del emulador para cerrarlo e interactuar con el contenido.
+1. Consulte el cambio de contenido en el editor. El icono del emulador también cambia para reflejar el modo en el que se encuentra. Seleccione cualquier lugar fuera del menú del emulador para cerrarlo e interactuar con el contenido.
 
 1. Vuelva a poner el emulador en modo escritorio.
 
@@ -91,11 +91,11 @@ También puede especificar dimensiones exactas para el emulador y rotar el dispo
 
 ## Previsualización y publicación {#preview}
 
-Dado que debe tocar o hacer clic en el contenido para seleccionarlo en el editor, este no le permite seguir vínculos o interactuar con el contenido tocando o haciendo clic cuando está en modo de edición. Con el modo de vista previa, puede seguir los vínculos del contenido y experimentarlo como lo harían los usuarios antes de publicar.
+Como es necesario seleccionar el contenido para seleccionarlo en el editor, el editor no permite seguir vínculos o interactuar con el contenido tocando o haciendo clic cuando está en modo de edición. Con el modo de vista previa, puede seguir los vínculos del contenido y experimentarlo como lo harían los usuarios antes de publicar.
 
-1. En el carril de modo de la parte izquierda del editor, toque o haga clic en **Previsualizar**.
+1. En el carril de modo de la parte izquierda del editor, seleccione **Previsualizar**.
 
-1. Ahora toque o haga clic en **Leer más** para el artículo principal.
+1. Ahora seleccione la **Leer más** para el artículo principal.
 
    ![Modo de vista previa](assets/do-not-localize/ue-preview-publish-1.png)
 
@@ -103,7 +103,7 @@ Dado que debe tocar o hacer clic en el contenido para seleccionarlo en el editor
 
    ![Volver a la página principal mediante el vínculo Atrás](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. Ahora toque o haga clic en **Publish** en la parte superior derecha del editor para publicar el contenido.
+1. Ahora seleccione la **Publish** en la parte superior derecha del editor para publicar el contenido.
 
    ![Elementos de menú previsualización y publicación](assets/do-not-localize/ue-preview-publish-4.png)
 
@@ -117,12 +117,12 @@ Para acelerar su experiencia de creación de contenido cuando la edición estruc
 
 1. En el carril de modo de la parte izquierda del editor, seleccione **Componentes**. Esto permite seleccionar componentes de página en el editor.
 
-1. Toque o haga clic en una de las aventuras, como **Bali Surf Camp** para seleccionarlo.
+1. Seleccione una de las aventuras, como **Bali Surf Camp** para seleccionarlo.
 
    * Observe el contorno azul del componente seleccionado. La pestaña debe mostrar el nombre del fragmento de contenido cuando se selecciona uno. En este caso **Bali Surf Camp**.
-   * Dado que el editor universal permite seleccionar cualquier objeto de la página, los componentes que forman parte de un fragmento de contenido también se pueden seleccionar individualmente. Toque o haga clic donde se indica en la ilustración para seleccionar todo el componente Fragmento de contenido.
+   * Dado que el editor universal permite seleccionar cualquier objeto de la página, los componentes que forman parte de un fragmento de contenido también se pueden seleccionar individualmente. Seleccione la ubicación indicada en la ilustración para seleccionar todo el componente Fragmento de contenido.
 
-1. El **Editar** aparece un icono en el carril del componente. Haga clic o pulse en **Editar** para abrir el editor de fragmentos de contenido en una nueva pestaña.
+1. El **Editar** aparece un icono en el carril del componente. Seleccione el **Editar** para abrir el editor de fragmentos de contenido en una nueva pestaña.
 
 ![Selección de fragmentos de contenido en el editor universal](assets/do-not-localize/ue-content-fragments.png)
 

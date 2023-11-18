@@ -2,10 +2,10 @@
 title: Creación de un sitio a partir de una plantilla
 description: AEM Obtenga información sobre cómo crear rápidamente un sitio de con una plantilla de sitio.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 91%
+source-wordcount: '1474'
+ht-degree: 78%
 
 ---
 
@@ -41,7 +41,7 @@ Las plantillas del sitio son una forma de combinar el contenido básico del siti
 * `files`: carpeta con el kit de IU, el archivo XD y, posiblemente, otros archivos.
 * `previews`: carpeta con capturas de pantalla de la plantilla del sitio.
 * `site`: paquete de contenido del contenido que se copia para cada sitio creado a partir de esta plantilla, como plantillas de página, páginas, etc.
-* `theme`: fuentes del tema de la plantilla para modificar el aspecto del sitio, incluyendo CSS, JavaScript, etc.
+* `theme`: fuentes del tema de la plantilla para modificar el aspecto del sitio, incluidos CSS, JavaScript, etc.
 
 Las plantillas son potentes, porque se pueden reutilizar para que los autores de contenido creen rápidamente un sitio. Y dado que puede tener varias plantillas disponibles en su instalación de AEM, tiene flexibilidad para satisfacer diversas necesidades comerciales.
 
@@ -71,17 +71,17 @@ Usar una plantilla para crear un sitio es fácil.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Pulse o haga clic en **Crear** en la parte superior derecha de la pantalla y, en el menú desplegable, seleccione **Sitio a partir de una plantilla**.
+1. Seleccionar **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de plantilla**.
 
    ![Creación de un nuevo sitio a partir de una plantilla](assets/create-site-from-template.png)
 
-1. En el asistente Crear sitio, toque o haga clic en **Importar** en la parte superior de la columna izquierda.
+1. En el asistente Crear sitio, seleccione **Importar** en la parte superior de la columna izquierda.
 
    ![Asistente de creación de sitios](assets/site-creation-wizard.png)
 
-1. En el explorador de archivos, busque la plantilla [que descargó previamente](#obtaining-template) y pulse o haga clic en **Cargar**.
+1. En el explorador de archivos, busque la plantilla [que descargó anteriormente](#obtaining-template) y seleccione **Cargar**.
 
-1. Una vez cargada, aparece en la lista de plantillas disponibles. Pulse o haga clic para seleccionarla (lo que también muestra información sobre la plantilla en la columna derecha) y, a continuación, pulse o haga clic en **Siguiente**.
+1. Una vez cargada, aparece en la lista de plantillas disponibles. Selecciónela para seleccionarla (lo que también revela información sobre la plantilla en la columna derecha) y, a continuación, seleccione **Siguiente**.
 
    ![Seleccionar una plantilla](assets/select-site-template.png)
 
@@ -90,11 +90,11 @@ Usar una plantilla para crear un sitio es fácil.
    * El título del sitio aparece en la barra de título de los exploradores.
    * El nombre del sitio forma parte de la dirección URL.
 
-1. Pulse o haga clic en **Crear**, el nuevo sitio se creará a partir de la plantilla del sitio.
+1. Seleccionar **Crear** y el nuevo sitio se crea a partir de la plantilla del sitio.
 
    ![Detalles del nuevo sitio](assets/create-site-details.png)
 
-1. En el cuadro de diálogo de confirmación que aparece, toque o haga clic en **Listo**.
+1. En el cuadro de diálogo de confirmación que aparece, seleccione **Listo**.
 
    ![Cuadro de diálogo de éxito](assets/success.png)
 
@@ -115,7 +115,7 @@ Las plantillas del sitio son muy potentes y flexibles, y se puede crear cualquie
 
 Si necesita personalizar más el front-end, tenga en cuenta que el desarrollador de este puede no estar familiarizado con los detalles del contenido. Por lo tanto, es aconsejable proporcionarle una ruta al contenido típico que se pueda usar como base de referencia al personalizar el tema. Un ejemplo típico es la página de inicio del idioma principal del sitio.
 
-1. En el explorador de sitios, vaya a la página de inicio del idioma principal del sitio y, a continuación, pulse o haga clic en la página para seleccionarla y en **Editar** en la barra de menús.
+1. En el explorador de sitios, vaya a la página de inicio del idioma principal del sitio y, a continuación, seleccione la página para seleccionarla y, a continuación, seleccione **Editar** en la barra de menús.
 
    ![Página de inicio típica](assets/home-page-in-console.png)
 
@@ -137,7 +137,7 @@ Ahora que el sitio se ha creado, el tema del sitio generado por la plantilla se 
 
    ![Visualización del carril de sitios](assets/show-site-rail.png)
 
-1. Pulse o haga clic en la raíz del nuevo sitio y, a continuación, en **Descargar fuentes de temas** en el carril del sitio.
+1. Seleccione la raíz del nuevo sitio y, a continuación, seleccione **Descargar fuentes de temas** en el carril del sitio.
 
    ![Descarga de fuentes de temas](assets/download-theme-sources.png)
 
@@ -147,8 +147,8 @@ Ahora tiene una copia de los archivos de origen del tema en los archivos de desc
 
 Para que el desarrollador front-end pueda previsualizar las personalizaciones utilizando contenido de AEM real de su sitio, debe configurar un usuario proxy.
 
-1. En AEM, desde la navegación principal, vaya a **Herramientas** -> **Seguridad** -> **Usuarios**.
-1. En la consola de administración de usuarios, pulse o haga clic en **Crear**.
+1. AEM En el caso de la navegación principal, vaya a **Herramientas** > **Seguridad** > **Usuarios**.
+1. En la consola de administración de usuarios, seleccione **Crear**.
 
    ![Consola de administración de usuarios](assets/user-management-console.png)
 1. En la ventana **Crear nuevo usuario**, debe proporcionar como mínimo, lo siguiente:
@@ -162,7 +162,7 @@ Para que el desarrollador front-end pueda previsualizar las personalizaciones ut
 
    ![Adición al grupo](assets/add-to-group.png)
 
-1. Haga clic o pulse en **Guardar y cerrar**.
+1. Seleccionar **Guardar y cerrar**.
 
 Ahora ha completado la configuración. Los autores de contenido ahora pueden empezar a crear contenido en el momento en que comienza la preparación del sitio para la personalización del front-end en el siguiente paso del recorrido.
 
@@ -181,7 +181,7 @@ Aproveche este conocimiento y continúe con su Recorrido de creación rápida de
 Aunque se recomienda pasar a la siguiente parte del Recorrido de creación rápida de sitios de AEM al revisar el documento [Configuración de la canalización,](pipeline-setup.md) los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar el recorrido.
 
 * [Plantilla de sitio estándar de AEM](https://github.com/adobe/aem-site-template-standard): este es el repositorio de GitHub de la plantilla de sitio estándar de AEM.
-* [Creación y organización de páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md). Esta guía detalla cómo administrar las páginas de su sitio AEM si desea personalizarlo aún más después de crearlo a partir de la plantilla.
+* [Crear y organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) AEM : Esta guía detalla cómo administrar las páginas de su sitio de si desea personalizarlo aún más después de crearlo a partir de la plantilla.
 * [Cómo trabajar con el paquete](/help/implementing/developing/tools/package-manager.md): los paquetes permiten importar y exportar el contenido del repositorio. Este documento explica cómo trabajar con paquetes en AEM 6.5, que también se aplica a AEMaaCS.
 * [Documentación de administración del sitio](/help/sites-cloud/administering/site-creation/create-site.md). Consulte los documentos técnicos sobre la creación de sitios para obtener más información sobre las funciones de la herramienta de creación rápida de sitios.
 * [Crear o agregar formularios a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): conozca las técnicas paso a paso y las prácticas recomendadas para integrar formularios en su sitio web y optimizar sus experiencias digitales para lograr el máximo impacto.

@@ -3,10 +3,10 @@ title: Conectores de Adobe Experience Manager as a Cloud Service
 description: Obtenga información sobre los conectores, lo que pueden hacer y cómo implementar estas valiosas herramientas en Experience Manager.
 landing-page-description: Obtenga información sobre los conectores, lo que pueden hacer y cómo implementar estas valiosas herramientas en Experience Manager.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 100%
+source-wordcount: '397'
+ht-degree: 94%
 
 ---
 

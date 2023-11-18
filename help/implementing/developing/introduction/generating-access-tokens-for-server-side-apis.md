@@ -2,10 +2,10 @@
 title: Generación de tokens de acceso para las API del lado del servidor
 description: AEM Obtenga información sobre cómo facilitar la comunicación entre un servidor de terceros y el as a Cloud Service de la mediante la generación de un token JWT seguro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 0%
+source-wordcount: '2089'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ A continuación se describe el flujo de servidor a servidor, junto con un flujo 
 
 ## El flujo de servidor a servidor {#the-server-to-server-flow}
 
-AEM AEM AEM as a Cloud Service Los usuarios con un rol de administrador de organización de IMS y que sean miembros del Perfil de producto de usuarios de la organización de usuarios o administradores de la organización de la en AEM Author, pueden generar un conjunto de credenciales a partir de la. Cada credencial es una carga útil JSON que incluye un certificado (la clave pública), una clave privada y una cuenta técnica que consta de una `clientId` y `clientSecret`. AEM Estas credenciales las puede recuperar posteriormente un usuario con la función de administrador de entorno as a Cloud Service AEM de la, y deben instalarse en un servidor que no sea de la red de servidores de y tratarse cuidadosamente como una clave secreta. AEM Este archivo de formato JSON contiene todos los datos necesarios para integrarse con una API as a Cloud Service de. Los datos se utilizan para crear un token JWT firmado, que se intercambia con los servicios de Identity Management de Adobe (IMS) por un token de acceso IMS. AEM A continuación, este token de acceso se puede utilizar como token de autenticación del portador para realizar solicitudes a los as a Cloud Service de la. El certificado de las credenciales caduca después de un año de forma predeterminada, pero se puede actualizar cuando sea necesario, tal como se describe a continuación [aquí](#refresh-credentials).
+AEM AEM AEM AEM Los usuarios con un rol de administrador de organización de IMS y que sean miembros del Perfil de producto de usuarios de la organización de IMS o administradores de la organización de la en Autor, pueden generar un conjunto de credenciales a partir de las credenciales as a Cloud Service de los usuarios de la organización de. Cada credencial es una carga útil JSON que incluye un certificado (la clave pública), una clave privada y una cuenta técnica que consta de una `clientId` y `clientSecret`. AEM Estas credenciales las puede recuperar posteriormente un usuario con la función de administrador de entorno as a Cloud Service AEM de la, y deben instalarse en un servidor que no sea de la red de servidores de y tratarse cuidadosamente como una clave secreta. AEM Este archivo de formato JSON contiene todos los datos necesarios para integrarse con una API as a Cloud Service de. Los datos se utilizan para crear un token JWT firmado, que se intercambia con los servicios de Identity Management de Adobe (IMS) por un token de acceso IMS. AEM A continuación, este token de acceso se puede utilizar como token de autenticación del portador para realizar solicitudes a los as a Cloud Service de la. El certificado de las credenciales caduca después de un año de forma predeterminada, pero se puede actualizar cuando sea necesario, tal como se describe a continuación [aquí](#refresh-credentials).
 
 El flujo de servidor a servidor incluye los siguientes pasos:
 
@@ -49,7 +49,7 @@ Una vez creadas las credenciales, aparecerán en el **Cuentas técnicas** en la 
 
 ![Ver credenciales](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-Los usuarios pueden ver las credenciales más adelante mediante la acción Ver. Además, como se describe más adelante en el artículo, los usuarios pueden editar las credenciales de la misma cuenta técnica. Para realizar esta edición, crean una nueva clave privada o certificado, para casos en los que se debe renovar o revocar el certificado.
+Los usuarios pueden ver las credenciales más adelante mediante la acción Ver. Además, como se describe más adelante en el artículo, los usuarios pueden editar las credenciales de la misma cuenta técnica. Para realizar esta edición, crean una clave privada o un certificado, para casos en los que se debe renovar o revocar el certificado.
 
 AEM Los usuarios con la función Administrador de entornos as a Cloud Service de la aplicación de la pueden crear posteriormente credenciales para cuentas técnicas adicionales. Esta capacidad es útil cuando diferentes API tienen diferentes requisitos de acceso. Por ejemplo, lectura frente a lectura-escritura.
 
@@ -59,7 +59,7 @@ AEM Los usuarios con la función Administrador de entornos as a Cloud Service de
 
 >[!IMPORTANT]
 >
->AEM AEM Un administrador de organización de IMS (normalmente el mismo usuario que aprovisionó el entorno mediante Cloud Manager), que también es miembro del Perfil de producto de usuarios de AEM o administradores de en AEM Author, debe acceder primero a Developer Console. A continuación, haga clic en **Crear nueva cuenta técnica** AEM para que las credenciales se generen y posteriormente se recuperen mediante un usuario con permisos de administrador en el entorno as a Cloud Service de la. Si el administrador de la organización de IMS aún no ha creado la cuenta técnica, un mensaje le informa de que necesita la función de administrador de la organización de IMS.
+>AEM AEM AEM Un administrador de organización de IMS (normalmente el mismo usuario que aprovisionó el entorno mediante Cloud Manager), que también es miembro del Perfil de producto de usuarios o administradores de en el Autor de, debe acceder primero a Developer Console. A continuación, haga clic en **Crear nueva cuenta técnica** AEM para que las credenciales se generen y posteriormente se recuperen mediante un usuario con permisos de administrador en el entorno as a Cloud Service de la. Si el administrador de la organización de IMS aún no ha creado la cuenta técnica, un mensaje le informa de que necesita la función de administrador de la organización de IMS.
 
 ### AEM AEM Instalación de las credenciales del servicio de en un servidor que no sea de tipo {#install-the-aem-service-credentials-on-a-non-aem-server}
 

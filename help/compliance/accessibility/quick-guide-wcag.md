@@ -2,10 +2,10 @@
 title: Guía rápida de WCAG 2.1
 description: Guía rápida de las Directrices de accesibilidad del contenido web (WCAG) versión 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1782'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ WCAG 2.1 consiste en un conjunto de directrices tecnológicas independientes y c
 
 Por ejemplo, describir una imagen (o cualquier otro contenido no textual) mediante el uso del `alt` atributo en HTML beneficia en gran medida a las personas no videntes o con visión parcial. La descripción textual del `alt` atributo puede convertirse en salida de voz o transmitirse a pantallas de braille actualizables electrónicas.
 
-Además, WCAG 2.1 puede proporcionar ventajas para otros beneficiarios, incluso las personas que pueden considerarse *con discapacidades de situación*. Las personas que, por circunstancias como la tecnología de navegación, la velocidad de conexión de red o el entorno de navegación, pueden experimentar barreras similares a las de las personas con discapacidad.
+Además, WCAG 2.1 puede proporcionar ventajas para otros beneficiarios, incluidas las personas que se pueden considerar *con discapacidades de situación*. Las personas que, por circunstancias como la tecnología de navegación, la velocidad de conexión de red o el entorno de navegación, pueden experimentar barreras similares a las de las personas con discapacidad.
 
 Con Adobe Experience Manager, los autores de contenido o los propietarios de sitios web pueden crear contenido web que cumpla los criterios de éxito relevantes de WCAG 2.1 de nivel A y de nivel AA.
 

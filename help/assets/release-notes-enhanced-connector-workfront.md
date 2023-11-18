@@ -2,10 +2,10 @@
 title: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 100%
+source-wordcount: '1352'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 >[!NOTE]
 >
->AEM 6.4 ha llegado al final de la asistencia ampliada. Para obtener más información, consulte nuestros [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Busque las versiones compatibles [aquí](https://experienceleague.adobe.com/docs/?lang=es).
+>AEM 6.4 ha llegado al final de la asistencia ampliada. Consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Busque las versiones compatibles [aquí](https://experienceleague.adobe.com/docs/?lang=es).
 
 
 >[!IMPORTANT]
@@ -43,7 +43,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 * Al configurar las carpetas vinculadas con proyectos con la versión AEM 6.4, Experience Manager no guarda los campos **[!UICONTROL subcarpetas]** y **[!UICONTROL Crear carpeta vinculada en proyectos con portafolio]**. El valor del campo **[!UICONTROL subcarpetas]** se actualiza a **[!UICONTROL indefinido]** y el valor del campo **[!UICONTROL Crear carpeta vinculada en proyectos con portafolio]** se actualiza a **[!UICONTROL Portfolio predeterminado]** automáticamente después de guardar la configuración.
 
-* Cuando utiliza la experiencia clásica de Workfront, la opción **[!UICONTROL Enviar a]** disponible en la lista desplegable **[!UICONTROL Más]** no permite seleccionar el destino objetivo en Experience Manager. La opción **[!UICONTROL Enviar a]** funciona correctamente utilizando la lista desplegable **[!UICONTROL Acciones de documento]**. La opción **[!UICONTROL Enviar a]** funciona correctamente para la lista desplegable **[!UICONTROL Más]** y la lista desplegable **[!UICONTROL Acciones de documento]** disponible en la nueva experiencia de Workfront.
+* Cuando utiliza la experiencia clásica de Workfront, la variable **[!UICONTROL Enviar a]** opción disponible en el **[!UICONTROL Más]** La lista desplegable no permite seleccionar el destino de destino en Experience Manager. La opción **[!UICONTROL Enviar a]** funciona correctamente utilizando la lista desplegable **[!UICONTROL Acciones de documento]**. La opción **[!UICONTROL Enviar a]** funciona correctamente para la lista desplegable **[!UICONTROL Más]** y la lista desplegable **[!UICONTROL Acciones de documento]** disponible en la nueva experiencia de Workfront.
 
 ## Versiones anteriores {#previous-releases}
 

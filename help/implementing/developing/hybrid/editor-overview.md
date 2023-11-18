@@ -2,10 +2,10 @@
 title: Información general del editor de SPA
 description: Este artículo ofrece una información general completa del Editor de SPA y cómo funciona, e incluye flujos de trabajo detallados de interacción del Editor de SPA dentro de AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1630'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1632'
+ht-degree: 96%
 
 ---
 
@@ -21,13 +21,13 @@ Los sitios creados con marcos de trabajo de las SPA comunes, como React y Angula
 
 Para permitir la edición de las SPA dentro de AEM, se necesita una asignación entre la salida JSON de las SPA y el modelo de contenido en el repositorio AEM para guardar los cambios en el contenido.
 
-El soporte de las SPA en AEM introduce una capa delgada de JS que interactúa con el código JS de las SPA cuando se carga en el Editor de páginas con el que se pueden enviar eventos y activar la ubicación de los controles de edición para permitir la edición en contexto. Esta función se basa en el concepto de punto final de la API de Servicios de contenido, ya que el contenido de las SPA debe cargarse a través de los Servicios de contenido.
+El soporte de las SPA en AEM introduce una capa delgada de JS que interactúa con el código JS de las SPA cuando se carga en el Editor de páginas con el que se pueden enviar eventos y activar la ubicación de los controles de edición para permitir la edición en contexto. SPA Esta función se basa en el concepto de extremo de API de servicios de contenido porque el contenido de la debe cargarse mediante servicios de contenido.
 
-Para obtener más información sobre las SPA en AEM, consulte los siguientes documentos:
+SPA AEM Para obtener más información acerca de la de en, consulte lo siguiente:
 
-* [Modelo de SPA](blueprint.md) para los requisitos técnicos de una SPA
-* [Introducción a las SPA en AEM con React](getting-started-react.md) para un recorrido rápido por una SPA simple usando React
-* [Introducción a las SPA en AEM con Angular](getting-started-angular.md) para realizar un recorrido rápido por una SPA simple usando Angular
+* [Modelo de SPA](blueprint.md) para los requisitos técnicos de una SPA.
+* [Introducción a las SPA en AEM con React](getting-started-react.md) para un recorrido rápido por una SPA simple usando React.
+* [Introducción a las SPA en AEM con Angular](getting-started-angular.md) para realizar un recorrido rápido por una SPA simple usando Angular.
 
 ## Diseño {#design}
 
@@ -185,6 +185,6 @@ El Editor del SDK de SPA de AEM es totalmente compatible con Adobe, y se sigue a
 * Editar configuraciones (p. ej., oyentes)
 * Deshacer, Rehacer
 * Diferencias de página y Deformación de tiempo
-* Funciones que realizan la reescritura de HTML del lado del servidor, como Verificador de vínculos, servicio de reescritura de CDN, acortamiento de URL, etc.
+* Funciones que realizan la reescritura del HTML en el lado del servidor, como Verificador de vínculos, servicio de reescritura de CDN, acortamiento de URL, etc.
 * Modo de desarrollador
 * Lanzamientos de AEM

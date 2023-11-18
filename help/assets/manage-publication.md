@@ -5,7 +5,7 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 6%
@@ -96,7 +96,7 @@ Después de aplicar los filtros, haga clic en **[!UICONTROL OK]** y haga clic en
 
 En la ilustración anterior, puede ver diferentes valores para la variable **[!UICONTROL Destino de publicación]** atributo. Recordemos el hecho de que ha elegido publicar en [!DNL Experience Manager Assets] (`Destination: Publish`). A continuación, ¿por qué se muestra que solo se publican una carpeta y un recurso? `AEM`y los otros dos recursos se publican en ambos `AEM` y `Dynamic Media`?
 
-En este caso, debe comprender la función de las propiedades de carpeta. El de una carpeta **[!UICONTROL Modo de publicación de Dynamic Media]** La propiedad desempeña un papel importante en la publicación. Para ver las propiedades de una carpeta, seleccione una carpeta y haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. Para ver un recurso, consulte las propiedades de su carpeta principal.
+En este caso, debe comprender la función de las propiedades de carpeta. Una carpeta de **[!UICONTROL Modo de publicación de Dynamic Media]** La propiedad desempeña un papel importante en la publicación. Para ver las propiedades de una carpeta, seleccione una carpeta y haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. Para ver un recurso, consulte las propiedades de su carpeta principal.
 
 En la tabla siguiente se explica cómo se produce la publicación en función del **[!UICONTROL Destino]** y **[!UICONTROL Modo de publicación de Dynamic Media]**:
 
@@ -133,7 +133,6 @@ Ahora vamos a cambiar la **[!UICONTROL Destino]** en el caso de uso anterior par
 >Si ha personalizado la variable [!DNL Manage Publication] , la personalización seguirá funcionando con las funcionalidades existentes.
 >
 >Sin embargo, puede quitar la personalización existente para utilizar la nueva [!DNL Manager Publication] funciones.
-
 
 ## Publicar recursos más tarde {#publish-assets-later}
 
@@ -182,6 +181,7 @@ Puede publicar recursos, carpetas y colecciones en [!DNL Experience Manager Asse
 El `Request Publication` La opción ayuda a autenticar el flujo de trabajo de los recursos antes de publicarlos en [!DNL AEM] Entorno de recursos. [!DNL AEM] proporciona un nivel diferente de permisos a varios usuarios. Puede ser un *colaborador* que está cargando recursos, pero no puede publicarlos hasta que se verifiquen las cargas. Además, ser un *Administrador* puede administrar los flujos de trabajo de lectura y escritura de Assets.
 
 La opción Solicitar publicación está disponible para los siguientes usuarios:
+
 * **Colaborador:** Si es un usuario que puede contribuir a [!DNL AEM] Recursos, tendrá acceso limitado a la [!DNL AEM] Flujo de trabajo de recursos. `Manage publication` El botón está oculto para usted. Como colaborador, solo puede contribuir añadiendo recursos, pero no puede publicarlos ni tener acceso de lectura al flujo de trabajo.
 
 * **Usuario de flujo de trabajo:** Este usuario no puede publicar recursos, pero tiene acceso de lectura al flujo de trabajo. Como usuario de flujo de trabajo, puede:

@@ -2,9 +2,9 @@
 title: Crear contenido accesible para Adobe Experience Manager as a Cloud Service (conformidad con WCAG 2.1)
 description: Utilice AEM as a Cloud Service para ayudar a que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '13861'
+source-wordcount: '13859'
 ht-degree: 99%
 
 ---
@@ -476,7 +476,7 @@ Por ejemplo, una persona con una deficiencia en la percepción entre el color ro
 
 Además, las personas que utilizan exploradores de solo texto, dispositivos de pantallas monocromáticas o páginas en blanco y negro no pueden percibir el color.
 
-Otra consideración es el estado *seleccionado* para un elemento de interfaz (por ejemplo, pestañas y botones de alternar, entre otros), que debe transmitirse de alguna manera que no sea solo con el color y más allá de una presentación visual. Para estos elementos, el uso adicional de patrones, formas e información programática resulta útil a la hora de crear una experiencia de usuario totalmente inclusiva que no dependa de un sentido específico.
+Otra consideración es la *seleccionado* estado de un elemento de interfaz (por ejemplo, pestañas, botones de alternar, entre otros), que debe transmitirse de alguna manera que no sea solo con el color y más allá de una presentación visual. Para estos elementos, el uso adicional de patrones, formas e información programática resulta útil a la hora de crear una experiencia de usuario totalmente inclusiva que no dependa de un sentido específico.
 
 #### Cómo cumplir: Uso del color (1.4.1)     {#how-to-meet-use-of-color}
 
@@ -671,7 +671,7 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 2.1.2](https://ww
 
 [Directrices 2.2 Tiempo suficiente: Proporcione a los usuarios tiempo suficiente para leer y usar el contenido.](https://www.w3.org/TR/WCAG/#enough-time)
 
-Esto trata de garantizar que los usuarios tengan tiempo suficiente para leer y realizar acciones.
+Esto trata de garantizar que los usuarios tengan tiempo suficiente para leer y actuar.
 
 ### Tiempo ajustable (2.2.1)  {#timing-adjustable}
 

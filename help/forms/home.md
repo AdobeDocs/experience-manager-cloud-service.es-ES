@@ -3,10 +3,10 @@ title: Introducción a  [!DNL AEM Forms]  as a Cloud Service
 description: Descubra AEM Forms para producir formularios preparados para la empresa, crear flujos de trabajo de procesos empresariales y utilizar los servicios de documentos para producir y proteger documentos.
 landing-page-description: Obtenga información sobre cómo utilizar formularios en AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 97%
+source-wordcount: '1149'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centra
 
 ## Digitalización y optimización de la experiencia de inscripción e incorporación
 
-Puede aprovechar el servicio para crear y desplegar formularios digitales interactivos y atractivos. Por ejemplo, imagine una organización que desea digitalizar su recorrido de inscripción de clientes. Tienen varias fuentes de datos con los datos de clientes existentes. Buscan una forma de rellenar previamente los formularios, agregarles firmas electrónicas y archivar los formularios rellenados como archivos PDF. Además, tienen varios formularios impresos (PDF forms), y también quieren convertir todos sus formularios impresos en formularios digitales.
+Puede aprovechar el servicio para crear y desplegar formularios digitales interactivos y atractivos. Por ejemplo, imagine una organización que desea digitalizar su recorrido de inscripción de clientes. Tienen varias fuentes de datos con los datos de clientes existentes. Buscan una forma de rellenar previamente los formularios, agregarles firmas electrónicas y archivar los formularios rellenados como archivos PDF. Además, la organización tiene varios formularios impresos (PDF forms) y también quiere convertir sus formularios impresos en formularios digitales.
 
 La organización puede utilizar [!DNL AEM Forms] as a Cloud Service para crear formularios digitales, conectar formularios a fuentes de datos existentes, integrar formularios con [!DNL Adobe Sign] para agregarles firmas electrónicas y generar el documento de registro (DoR) para archivar los formularios enviados como archivos PDF. Asimismo, pueden usar el servicio para convertir los PDF forms existentes en formularios digitales.
 

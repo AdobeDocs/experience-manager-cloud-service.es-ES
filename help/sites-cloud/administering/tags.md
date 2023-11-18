@@ -2,9 +2,9 @@
 title: Administración de etiquetas
 description: AEM Obtenga información sobre cómo administrar etiquetas en la de organizar el contenido.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2265'
+source-wordcount: '2210'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Hay algunos detalles técnicos que se deben tener en cuenta al crear y administr
    * Una etiqueta que no es una etiqueta contenedora se denomina etiqueta de hoja.
    * Un área de nombres de etiqueta puede ser una etiqueta de hoja o una etiqueta contenedora.
 
-Para obtener más información técnica sobre cómo funcionan las etiquetas, consulte el documento [AEM Marco de etiquetado de.](/help/implementing/developing/introduction/tagging-framework.md)
+Para obtener más información técnica sobre cómo funcionan las etiquetas, consulte [AEM Marco de etiquetado de](/help/implementing/developing/introduction/tagging-framework.md).
 
 ## Consola de etiquetado {#tagging-console}
 
@@ -62,7 +62,7 @@ La consola de etiquetado se utiliza para crear y administrar etiquetas y sus tax
 Para acceder a la consola de etiquetado:
 
 1. Inicie sesión en un entorno de creación con privilegios administrativos.
-1. En el menú de navegación global, seleccione **`Tools`** -> **`General`** ->
+1. En el menú de navegación global, seleccione **`Tools`** > **`General`** ->
    **`Tagging`**.
 
 ![AEM La consola de etiquetado en la](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -79,7 +79,7 @@ Existen varios pasos para crear y utilizar etiquetas para organizar el contenido
 
 Se utiliza un área de nombres para organizar otras etiquetas. Se puede considerar como la etiqueta de nivel inferior y se suele utilizar para agrupar otras etiquetas.
 
-1. Para crear un área de nombres, abra [consola de etiquetado](#tagging-console) y toque o haga clic en **Crear** en la barra de herramientas y, a continuación, **Crear área de nombres**.
+1. Para crear un área de nombres, abra [consola de etiquetado](#tagging-console) y seleccione la **Crear** en la barra de herramientas y, a continuación, **Crear área de nombres**.
 
    ![Cuadro de diálogo Agregar área de nombres](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -89,7 +89,7 @@ Se utiliza un área de nombres para organizar otras etiquetas. Se puede consider
    * **Nombre** - Si no se especifica un nombre, se crea un nombre de nodo válido a partir del **Título**. Ver el documento [AEM Marco de etiquetado de](/help/implementing/developing/introduction/tagging-framework.md#tagid) para obtener más información.
    * **Descripción** : descripción del área de nombres (opcional)
 
-1. Una vez introducida la información necesaria, toque o haga clic en **Crear**.
+1. Una vez introducida la información necesaria, seleccione **Crear**.
 
 Se crea el área de nombres. Tenga en cuenta que en la consola de etiquetado, las áreas de nombres se encuentran en el nivel inferior (en la columna del extremo izquierdo de la consola) y se representan mediante iconos de carpeta, lo que refleja su naturaleza como &quot;contenedor&quot; o agrupación de otras etiquetas.
 
@@ -105,7 +105,7 @@ Las etiquetas se suelen añadir a áreas de nombres.
 
 1. Seleccione el área de nombres donde desea crear la etiqueta. O seleccione otra etiqueta para crear una subetiqueta debajo de ella.
 
-1. Haga clic o pulse en **Crear** en la barra de herramientas y, a continuación, **Crear etiqueta**.
+1. Seleccione el **Crear** en la barra de herramientas y, a continuación, **Crear etiqueta**.
 
 1. El **Crear etiqueta** se abre. Proporcione la información necesaria para la nueva etiqueta.
 
@@ -116,7 +116,7 @@ Las etiquetas se suelen añadir a áreas de nombres.
 
    ![Cuadro de diálogo Crear etiqueta](assets/create-tag.png)
 
-1. Haga clic o pulse **Enviar**.
+1. Seleccione **Enviar**.
 
 La etiqueta se crea y la consola se actualiza para mostrar la nueva etiqueta.
 
@@ -135,7 +135,7 @@ AEM Al igual que con la creación de cualquier otro contenido en la, después de
 
    ![Selección de etiquetas en la consola](assets/select-tags.png)
 
-1. El **Publicar etiqueta** El cuadro de diálogo solicita una confirmación para publicar las etiquetas seleccionadas. Haga clic o pulse **Publicar**.
+1. El **Publicar etiqueta** El cuadro de diálogo solicita una confirmación para publicar las etiquetas seleccionadas. Seleccionar **Publish**.
 
    ![El modal de confirmación Publicar etiqueta](assets/publish-tag.png)
 
@@ -183,7 +183,7 @@ Puede ver más detalles acerca de la etiqueta, incluidos quién la publicó por 
 
    ![Visualización de propiedades de etiqueta](assets/tag-properties.png)
 
-Para obtener más información sobre la selección de los modos de visualización y el carril, consulte el documento [Gestión básica.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+Para obtener más información sobre la selección de los modos de visualización y el carril, consulte [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 ### Edición de etiquetas {#editing-tags}
 
@@ -199,7 +199,7 @@ Las etiquetas y los espacios de nombre se pueden editar después de la creación
    * **Descripción**
    * [**Localización**](#managing-tags-in-different-languages)
 
-1. Una vez realizadas las ediciones, toque o haga clic en **Enviar**.
+1. Una vez realizadas las ediciones, seleccione **Enviar**.
 
 Para obtener más información sobre cómo añadir traducciones de idioma, consulte la sección sobre [Administración de etiquetas en diferentes idiomas](#managing-tags-in-different-languages).
 
@@ -215,7 +215,7 @@ Para desactivar la etiqueta en la instancia de autor y quitarla de la instancia 
 
    ![Selección de etiquetas en la consola](assets/select-tags.png)
 
-1. El **Cancelar publicación de etiqueta** El cuadro de diálogo solicita una confirmación para publicar las etiquetas seleccionadas. Haga clic o pulse **Publicar**.
+1. El **Cancelar publicación de etiqueta** El cuadro de diálogo solicita una confirmación para publicar las etiquetas seleccionadas. Seleccionar **Publish**.
 
    ![El modal de confirmación Publicar etiqueta](assets/unpublish-tag.png)
 
@@ -239,13 +239,13 @@ Puede resultar útil ver a qué contenido se aplica una etiqueta en particular. 
 
    ![Visualización de referencias de etiquetas](assets/tag-references.png)
 
-1. Pulse o haga clic en el número de referencias de etiqueta para ver la lista detallada del contenido asignado a la etiqueta.
+1. Seleccione el número de referencias de etiqueta para ver la lista detallada del contenido asignado a la etiqueta.
 
    ![Visualización de los detalles de las referencias de la etiqueta](assets/tag-references-detail.png)
 
 Pase el ratón o pulse una referencia al contenido en la lista para mostrar la ruta completa del contenido.
 
-Para obtener más información sobre la selección de los modos de visualización y el carril, consulte el documento [Gestión básica.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+Para obtener más información sobre la selección de los modos de visualización y el carril, consulte [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 ### Mover etiquetas {#moving-tags}
 
@@ -257,20 +257,20 @@ Puede ser necesario limpiar o reorganizar la taxonomía de etiquetado moviendo u
 
 1. Para mover o cambiar el nombre de una etiqueta, abra [consola de etiquetado.](#tagging-console)
 
-1. Seleccione la etiqueta que desea mover o cambiar el nombre y toque o haga clic en **Mover** en la barra de herramientas.
+1. Seleccione la etiqueta que desee mover o cambiar el nombre y seleccione **Mover** en la barra de herramientas.
 
 1. En el **Mover etiqueta** , especifique qué propiedad desea cambiar.
 
    * **Cambiar nombre a** - El nuevo nombre que desea dar a la etiqueta
       * Este campo se rellena previamente con el nombre actual de la etiqueta.
-      * Deje sin modificar si solo desea mover la etiqueta y no cambiarle el nombre.
+      * Deje sin modificar si sólo desea mover la etiqueta y no cambiarle el nombre.
    * **Mover a** - Dónde desea mover la etiqueta
       * Este campo se rellena previamente con la ubicación actual de la etiqueta.
-      * Deje sin modificar si solo desea cambiar el nombre de la etiqueta y no moverla.
+      * Deje sin modificar si sólo desea cambiar el nombre de la etiqueta y no moverla.
 
    ![Mover etiqueta](assets/move-tag.png)
 
-1. Haga clic o pulse **Enviar**.
+1. Seleccione **Enviar**.
 
 Se cambia el nombre de la etiqueta o se mueve a su nueva ubicación. Si la etiqueta seleccionada es una etiqueta contenedora, al mover la etiqueta también se moverán todas las etiquetas secundarias.
 
@@ -280,15 +280,15 @@ Si la taxonomía de etiquetado tiene duplicados o etiquetas similares, puede res
 
 1. Para combinar dos etiquetas, abra [consola de etiquetado.](#tagging-console)
 
-1. Seleccione la etiqueta que desea combinar en otra etiqueta y, a continuación, toque o haga clic en **Combinar** en la barra de herramientas.
+1. Seleccione la etiqueta que desea combinar en otra etiqueta y, a continuación, seleccione **Combinar** en la barra de herramientas.
 
-1. En el **Combinar etiqueta** , toque o haga clic en **Examinar** icono de la **Combinar en** para especificar en qué etiqueta desea combinar la etiqueta seleccionada.
+1. En el **Combinar etiqueta** , seleccione la **Examinar** icono de la **Combinar en** para especificar en qué etiqueta desea combinar la etiqueta seleccionada.
 
    ![Cuadro de diálogo Combinar etiqueta](assets/merge-tag.png)
 
-1. Haga clic o pulse **Enviar**.
+1. Seleccione **Enviar**.
 
-La etiqueta seleccionada en la consola se combina con la etiqueta especificada en el cuadro de diálogo. Cuando se mueve o combina una etiqueta a la que se hace referencia, la etiqueta no se elimina físicamente de modo que sea posible mantener referencias. Consulte el documento [AEM Marco de etiquetado de](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) para obtener más información.
+La etiqueta seleccionada en la consola se combina con la etiqueta especificada en el cuadro de diálogo. Cuando se mueve o combina una etiqueta a la que se hace referencia, la etiqueta no se elimina físicamente de modo que sea posible mantener referencias. Consulte [AEM Marco de etiquetado de](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) para obtener más información.
 
 ### Eliminación de etiquetas {#deleting-tags}
 
@@ -296,15 +296,15 @@ Si la taxonomía de etiquetado cambia y hace que una etiqueta o área de nombres
 
 1. Para eliminar una etiqueta, abra el [consola de etiquetado.](#tagging-console)
 
-1. Seleccione la etiqueta que desea eliminar y, a continuación, toque o haga clic en **Eliminar** en la barra de herramientas.
+1. Seleccione la etiqueta que desee eliminar y, a continuación, seleccione **Eliminar** en la barra de herramientas.
 
-1. El **Eliminar etiqueta** El cuadro de diálogo solicita una confirmación para eliminar las etiquetas seleccionadas. Haga clic o pulse **Eliminar**.
+1. El **Eliminar etiqueta** El cuadro de diálogo solicita una confirmación para eliminar las etiquetas seleccionadas. Seleccione **Eliminar**.
 
    ![El modal de confirmación Eliminar etiqueta](assets/delete-tag.png)
 
 1. AEM Comprobaciones para asegurarse de que no se hace referencia a la etiqueta.
 
-   1. AEM Si no se encuentran referencias, se solicita una confirmación final para eliminar el elemento de la lista de referencias. Haga clic o pulse **Eliminar**
+   1. AEM Si no se encuentran referencias, se solicita una confirmación final para eliminar el elemento de la lista de referencias. Seleccione **Eliminar**
 
       ![No se han encontrado referencias](assets/no-references-found.png)
 
@@ -353,11 +353,11 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 El `title` La propiedad de una etiqueta se puede traducir a varios idiomas. Una vez traducido, el título de etiqueta adecuado se puede mostrar según el idioma del usuario o el contenido.
 
-Supongamos que tenemos una etiqueta llamada.. `Animals` que deseamos traducir al alemán y al francés.
+Supongamos que tenemos una etiqueta llamada.. `Animals` que queremos traducir al alemán y al francés.
 
 1. Abra el [consola de etiquetado.](#tagging-console)
 
-1. Seleccione la etiqueta que desea traducir y, a continuación, toque o haga clic en **Editar** en la barra de herramientas.
+1. Seleccione la etiqueta que desee traducir y, a continuación, seleccione **Editar** en la barra de herramientas.
 
 1. En el **Editar etiqueta** diálogo, en el **Localización** , seleccione el idioma de destino, por ejemplo, alemán.
 
@@ -367,7 +367,7 @@ Supongamos que tenemos una etiqueta llamada.. `Animals` que deseamos traducir al
 
    ![Traducción de títulos de etiquetas](assets/translate-tag.png)
 
-1. Haga clic o pulse **Enviar**.
+1. Seleccione **Enviar**.
 
 Para las páginas de contenido, el idioma elegido para la etiqueta se toma del idioma de la página, cuando está disponible.
 
@@ -377,4 +377,4 @@ Para añadir un nuevo idioma al cuadro de diálogo, consulte el documento [AEM C
 
 >[!TIP]
 >
->AEM Si desea obtener más información acerca de las funciones de localización de la, consulte el documento [Traducción Del Contenido Para Sitios Multilingües.](/help/sites-cloud/administering/translation/overview.md)
+>AEM Si desea obtener más información acerca de las funciones de localización de la, consulte [Traducción Del Contenido Para Sitios Multilingües](/help/sites-cloud/administering/translation/overview.md).

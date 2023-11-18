@@ -2,9 +2,9 @@
 title: Uso de la fusión de recursos de Sling en Adobe Experience Manager as a Cloud Service
 description: La fusión de recursos de Sling proporciona servicios para acceder y combinar recursos
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -188,7 +188,7 @@ Estas funciones, junto con las funciones estándar, permiten:
 
 * **Ocultar tareas secundarias de un nodo (conservando las propiedades del nodo)**
 
-  El nodo, sus propiedades y sus tareas secundarias se definen en `/libs`. El nodo y sus propiedades son necesarios en la variable `/apps` superposición/anulación, pero algunos o todos los nodos secundarios no son necesarios en la `/apps` superposición/anulación.
+  El nodo, sus propiedades y sus tareas secundarias se definen en `/libs`. El nodo y sus propiedades son necesarios en la variable `/apps` superposición/anulación, pero algunos o todos los nodos secundarios no son obligatorios en la `/apps` superposición/anulación.
 
    1. Cree el nodo correspondiente en `/apps`
    1. Creación de la propiedad `sling:hideChildren`:

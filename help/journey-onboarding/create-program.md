@@ -3,9 +3,9 @@ title: Crear un programa
 description: Aprenda a utilizar Cloud Manager para crear su primer programa.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '676'
 ht-degree: 67%
 
 ---
@@ -51,7 +51,7 @@ Dado que sirven para diferentes propósitos, los diferentes entornos tienen dife
 
    ![Página de aterrizaje de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. En el asistente Crear programa, seleccione **Configuración de una zona protegida**, proporcione un nombre de programa y toque o haga clic en **Continuar**.
+1. En el asistente Crear programa, seleccione **Configuración de una zona protegida**, proporcione un nombre de programa y seleccione **Continuar**.
 
    ![Creación de tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 

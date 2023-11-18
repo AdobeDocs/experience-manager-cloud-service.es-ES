@@ -2,10 +2,10 @@
 title: Configuración de la segmentación con ContextHub
 description: Obtenga información sobre cómo configurar la segmentación mediante ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 95%
+source-wordcount: '1652'
+ht-degree: 88%
 
 ---
 
@@ -88,11 +88,11 @@ Para definir el nuevo segmento:
 
 1. Después de [acceder a los segmentos](#accessing-segments), [vaya a la carpeta](#organizing-segments) donde desea crear el segmento.
 
-1. Toque o haga clic en el botón **Crear** y seleccione **Crear segmento de ContextHub**.
+1. Seleccione el **Crear** y seleccione **Crear segmento de ContextHub**.
 
    ![Agregar segmento](../assets/contexthub-create-segment.png)
 
-1. En el **Nuevo segmento de ContextHub**, escriba un título para el segmento y un valor de ampliación si es necesario y, a continuación, toque o haga clic en **Crear**.
+1. En el **Nuevo segmento de ContextHub**, introduzca un título para el segmento y un valor de ampliación si es necesario y, a continuación, seleccione **Crear**.
 
    ![Nuevo segmento](../assets/contexthub-new-segment.png)
 
@@ -103,7 +103,7 @@ Para definir el nuevo segmento:
 
 1. Desde la consola de segmentos, edite el segmento recién creado para abrirlo en el editor de segmentos.
 1. Arrastre una comparación o referencia al editor de segmentos que aparecerá en el contenedor AND predeterminado.
-1. Toque o haga doble clic en la opción de configuración de la nueva referencia o segmento para editar los parámetros específicos. En este ejemplo, estamos probando personas en Basilea.
+1. Seleccione dos veces la opción de configuración de la nueva referencia o segmento para editar los parámetros específicos. En este ejemplo, estamos probando personas en Basilea.
 
    ![Pruebas para personas en Basilea](../assets/contexthub-comparing-property-value.png)
 
@@ -193,7 +193,7 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 ### Cree una nueva carpeta {#create-folder}
 
-1. Después de [acceder a los segmentos](#accessing-segments), toque o haga clic en el botón **Crear** y seleccione **Carpeta**.
+1. Después [acceso a los segmentos](#accessing-segments), seleccione la **Crear** y seleccione **Carpeta**.
 
    ![Agregar carpeta](../assets/contexthub-create-segment.png)
 
@@ -205,24 +205,24 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
    ![Crear carpeta](../assets/contexthub-create-folder.png)
 
-1. Haga clic o pulse en **Crear**.
+1. Seleccione **Crear**.
 
    ![Confirmar carpeta](../assets/contexthub-confirm-folder.png)
 
 1. La carpeta aparece en la lista de segmentos.
    * La forma en que ordene las columnas afectará a dónde aparece la nueva carpeta en la lista.
-   * Puede tocar o hacer clic en los encabezados de columna para ajustar la ordenación.
+   * Puede seleccionar los encabezados de columna para ajustar la ordenación.
      ![La nueva carpeta](../assets/contexthub-folder.png)
 
 ### Modificar carpetas existentes {#modify-folders}
 
-1. Después de [acceder a los segmentos](#accessing-segments), toque o haga clic en la carpeta que desee modificar para seleccionarla.
+1. Después [acceso a los segmentos](#accessing-segments), seleccione la carpeta que desee modificar para seleccionarla.
 
    ![Seleccionar carpeta](../assets/contexthub-select-folder.png)
 
-1. Toque o haga clic en **Cambiar nombre** en la barra de herramientas para cambiar el nombre de la carpeta.
+1. Seleccionar **Cambiar nombre** en la barra de herramientas para cambiar el nombre de la carpeta.
 
-1. Proporcione un nuevo **Título de la carpeta** y toque o haga clic en **Guardar**.
+1. Proporcione un nuevo **Título de carpeta** y seleccione **Guardar**.
 
    ![Cambiar nombre de carpeta](../assets/contexthub-rename-folder.png)
 
@@ -232,25 +232,25 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 ### Eliminar una carpeta
 
-1. Después de [acceder a los segmentos](#accessing-segments), toque o haga clic en la carpeta que desee modificar para seleccionarla.
+1. Después [acceso a los segmentos](#accessing-segments), seleccione la carpeta que desee modificar para seleccionarla.
 
    ![Seleccionar carpeta](../assets/contexthub-select-folder.png)
 
-1. Toque o haga clic en **Eliminar** en la barra de herramientas para eliminar la carpeta.
+1. Seleccionar **Eliminar** en la barra de herramientas para eliminar la carpeta.
 
 1. Un cuadro de diálogo presenta una lista de carpetas seleccionadas para su eliminación.
 
    ![Confirmar eliminación](../assets/contexthub-confirm-segment-delete.png)
 
-   * Toque o haga clic en **Eliminar** para confirmar.
-   * Toque o haga clic **Cancelar** para cancelar.
+   * Seleccionar **Eliminar** para confirmar.
+   * Seleccionar **Cancelar** para cancelar.
 
 1. Si alguna de las carpetas seleccionadas contiene subcarpetas o segmentos, su eliminación debe confirmarse.
 
    ![Confirmar la eliminación de tareas secundarias](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Toque o haga clic en **Forzar eliminación** para confirmar.
-   * Toque o haga clic en **Cancelar** para cancelar.
+   * Seleccionar **Forzar eliminación** para confirmar.
+   * Seleccionar **Cancelar** para cancelar.
 
 >[!NOTE]
 >

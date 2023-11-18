@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2585'
+source-wordcount: '2584'
 ht-degree: 12%
 
 ---
@@ -313,7 +313,7 @@ Ahora puede utilizar el ID de cliente (clave de API), el secreto de cliente y la
 
    ![Create New Integration](assets/create-new-integration1.png)
 
-1. Create a new integration page opens. 
+1. Create an integration page. 
    
    Select your organization from the drop-down list.
 
@@ -377,7 +377,7 @@ Siga estos pasos para configurar la cuenta de IMS.
 >
 >Sólo debe tener una configuración de IMS.
 >
->Asegúrese de que la configuración de IMS pase la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarla y crear una configuración nueva y válida.
+>Asegúrese de que la configuración de IMS pase la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarla y crear otra configuración válida.
 
 ### Configurar el servicio en la nube de  {#configure-the-cloud-service}
 

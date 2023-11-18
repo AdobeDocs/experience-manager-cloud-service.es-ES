@@ -1,17 +1,17 @@
 ---
 title: Aplicación de flujos de trabajo a páginas
-description: Durante la creación, puede invocar flujos de trabajo para realizar acciones en las páginas; también es posible aplicar más de un flujo de trabajo.
+description: Durante la creación, puede invocar flujos de trabajo para que actúen en las páginas; también es posible aplicar más de un flujo de trabajo.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 93%
+source-wordcount: '654'
+ht-degree: 83%
 
 ---
 
 # Aplicación de flujos de trabajo a páginas {#applying-workflows-to-pages}
 
-Durante la creación, puede invocar flujos de trabajo para realizar acciones en las páginas; también es posible aplicar más de un flujo de trabajo.
+Durante la creación, puede invocar flujos de trabajo para que actúen en las páginas; también es posible aplicar más de un flujo de trabajo.
 
 A la hora de aplicar el flujo de trabajo, se especifica la siguiente información:
 
@@ -116,7 +116,7 @@ Puede especificar los detalles:
 
 1. En la etapa **Ámbito**, puede seleccionar lo siguiente:
 
-   * **Añadir contenido** para abrir el [explorador de rutas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) y seleccionar recursos adicionales. En el explorador, haga clic o pulse en **Seleccionar** para añadir contenido a la instancia de flujo de trabajo.
+   * **Añadir contenido** para abrir [explorador de rutas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) y seleccione recursos adicionales; en el explorador, seleccione **Seleccionar** para añadir el contenido a la instancia de flujo de trabajo.
 
    * Un recurso existente para ver acciones adicionales:
 

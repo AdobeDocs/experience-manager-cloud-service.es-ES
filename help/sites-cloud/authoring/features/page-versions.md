@@ -2,10 +2,10 @@
 title: Uso de versiones de página
 description: AEM Obtenga información sobre cómo crear, comparar y restaurar versiones de sus páginas en la administración de segmentos de página en la administración de segmentos de la página de.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 99%
+source-wordcount: '1505'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Puede crear una versión de su recurso desde:
 1. Desplácese hasta mostrar la página para la que desea crear una versión.
 1. Seleccione la página en [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra el raíl **Cronología**.
-1. Pulse o haga clic en los puntos suspensivos junto al campo de comentarios para mostrar las opciones:
+1. Seleccione los puntos suspensivos junto al campo Comentario para mostrar las opciones:
 
    ![Versiones en el reíl de la cronología](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
@@ -209,7 +209,7 @@ Para usar esta función, haga lo siguiente:
 
 Deformación de tiempo es un [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) del editor de páginas. Para iniciarlo, basta con activarlo como cualquier otro modo.
 
-1. Inicie el editor para la página donde desea iniciar Deformación de tiempo y, a continuación, seleccione **Deformación de tiempo** en la selección de modo.
+1. Inicie el editor de la página donde desea iniciar Deformación de tiempo y, a continuación, seleccione **Deformación de tiempo** en la selección de modo.
 
    ![Modo Deformación de tiempo](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

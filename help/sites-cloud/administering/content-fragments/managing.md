@@ -4,10 +4,10 @@ description: AEM Obtenga información sobre cómo administrar los fragmentos de 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 56%
+source-wordcount: '2531'
+ht-degree: 54%
 
 ---
 
@@ -124,7 +124,7 @@ Algunas acciones están disponibles desde la consola, sin seleccionar un fragmen
 
   >[!NOTE]
   >
-  >La consola **Recursos** se utiliza para acceder a recursos como imágenes, vídeos, etc.  Se puede acceder a esta consola:
+  >El **Assets** La consola de se utiliza para acceder a recursos como imágenes, vídeos, etc.  Se puede acceder a esta consola:
   >
   >* usando el vínculo **Abrir en Recursos** (en la consola Fragmentos de contenido)
   >* directamente desde el global **Navegación** cristal
@@ -201,7 +201,7 @@ Al pasar el ratón por encima del nombre de la carpeta, se muestra la ruta JCR.
 
      ![Consola Fragmentos de contenido: Indicador de idioma](assets/cf-managing-console-language-indicator.png)
 
-   * Pulse o haga clic en el recuento para abrir un cuadro de diálogo que muestre todas las copias de idioma. Para abrir una copia de idioma específica, haga clic en **Título** en el cuadro de diálogo.
+   * Seleccione el recuento para abrir un cuadro de diálogo que muestre todas las copias de idioma. Para abrir una copia de idioma específica, haga clic en **Título** en el cuadro de diálogo.
 
      ![Consola Fragmentos de contenido: cuadro de diálogo Idioma](assets/cf-managing-console-languages-dialog.png)
 
@@ -300,7 +300,7 @@ Puede publicar los fragmentos de contenido en:
 
   >[!NOTE]
   >
-  >Para obtener más información sobre los entornos de previsualización, consulte:
+  >Para obtener más información sobre los entornos de vista previa, consulte lo siguiente:
   >
   >* [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [Configuración de OSGi para el nivel de vista previa](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
@@ -414,7 +414,7 @@ El icono indica la configuración regional del fragmento de contenido, junto con
 
 ![Consola Fragmentos de contenido: Indicador de idioma](assets/cfc-console-language-indicator.png)
 
-Pulse o haga clic en el recuento para abrir un cuadro de diálogo que muestre todas las copias de idioma. Para abrir una copia de idioma específica, haga clic en **Título** en el cuadro de diálogo.
+Seleccione el recuento para abrir un cuadro de diálogo que muestre todas las copias de idioma. Para abrir una copia de idioma específica, haga clic en **Título** en el cuadro de diálogo.
 
 ![Consola Fragmentos de contenido: cuadro de diálogo Idioma](assets/cf-managing-console-languages-dialog.png)
 

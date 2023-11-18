@@ -2,10 +2,10 @@
 title: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
 description: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 11%
+source-wordcount: '250'
+ht-degree: 12%
 
 ---
 
@@ -24,7 +24,7 @@ Siga el método recomendado como se describe a continuación:
 
 * Utilice la misma versión de la herramienta de transferencia de contenido que se utilizó en la instancia de autor.
 
-* Solo es necesario migrar un nodo de publicación único. Debe eliminarse del equilibrador de carga antes de comenzar la extracción.
+* Solo se debe migrar un nodo de publicación único. Debe eliminarse del equilibrador de carga antes de comenzar la extracción.
 
 * Durante la ingesta para publicar, el nivel de publicación no se reducirá (a diferencia del autor).
 

@@ -4,10 +4,10 @@ description: Aprenda a configurar el marco de trabajo de integración de traducc
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1517'
-ht-degree: 99%
+source-wordcount: '1499'
+ht-degree: 91%
 
 ---
 
@@ -69,13 +69,13 @@ Después de configurar un marco de trabajo de integración de traducciones, pued
 
 Una sola configuración del marco de trabajo controla cómo se traducen el contenido de la página y los recursos. Para crear una configuración de traducción:
 
-1. En el [menú de navegación global,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) pulse o haga clic en **Herramientas -> Cloud Services y Cloud Services de traducción**.
+1. En el [menú de navegación global,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) select **Herramientas > Cloud Service y Cloud Service en traducción**.
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. A menudo se basa en un sitio en particular, pero puede ser global.
-1. Proporcione la siguiente información en los campos y, a continuación, pulse o haga clic en **Crear**:
+1. Proporcione la siguiente información en los campos y seleccione **Crear**.:
    1. Seleccione **Tipo de configuración** en la lista desplegable.
    1. Escriba un **Título** para su configuración. El **Título** identifica la configuración en la consola **Cloud Services**, así como en las listas desplegables de propiedad de página.
-   1. De forma opcional, escriba un **Nombre** para usarlo en el nodo del repositorio que almacena la configuración.
-1. En la ventana **Editar configuración**, configure las propiedades de las pestañas **Sitios** y **Recursos** y, a continuación, pulse o haga clic en **Guardar y cerrar**.
+   1. Opcionalmente, escriba un **Nombre** para usar para el nodo del repositorio que almacena la configuración.
+1. En el **Editar configuración** , configure las propiedades en la **Sites** y **Assets** pestañas y, a continuación, seleccione **Guardar y cerrar**.
 
 ### Propiedades de configuración de sitios {#sites-configuration-properties}
 
@@ -118,7 +118,7 @@ Para configurar la traducción de las páginas de origen a otros idiomas, asóci
 * La configuración en la nube que conecta AEM con su proveedor de traducción.
 * El marco de trabajo de integración de traducciones que configura los detalles de la traducción.
 
-Tenga en cuenta que la configuración de nube del marco de trabajo de integración de traducción identifica la configuración de nube que se utilizará para la conexión con el proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco de trabajo, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco trabajo.
+La configuración de nube del marco de trabajo de integración de traducciones identifica la configuración de nube que se utilizará para la conexión con el proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco de trabajo, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco trabajo.
 
 Cuando asocia una página con una configuración de nube, los descendientes de la página heredan la asociación. Por ejemplo, si asocia la página `/content/wknd/language-masters/en/magazine` con un marco de trabajo de integración de traducción, la página `magazine` y las páginas secundarias debajo se traducen según el marco de trabajo.
 
@@ -128,16 +128,16 @@ Si es necesario, puede anular la asociación en una página descendiente. Por ej
 
 Asocie una página al proveedor de traducción que esté utilizando para traducir la página y las páginas descendientes.
 
-1. En la consola Sites, seleccione la página que desea configurar y toque o haga clic en **Ver propiedades**.
-1. Toque o haga clic en la pestaña **Cloud Services**.
-1. En el menú desplegable **Agregar configuración**, seleccione la configuración.
-1. Haga clic o pulse **Guardar y cerrar**.
+1. En la consola Sitios, seleccione la página que desea configurar y seleccione **Ver propiedades**.
+1. Seleccione la pestaña **Cloud Services**.
+1. En el **Agregar configuración** , seleccione la configuración.
+1. Seleccionar **Guardar y cerrar**.
 
 ### Asociación de páginas a un marco de trabajo integración de traducción {#associating-pages-with-a-translation-integration-framework}
 
 Asocie una página al marco de trabajo de integración de traducción que define cómo desea realizar la traducción de la página y de las páginas descendientes.
 
-1. En la consola Sites, seleccione la página que desea configurar y toque o haga clic en **Ver propiedades**.
-1. Toque o haga clic en la pestaña **Cloud Services**.
-1. En el menú desplegable **Agregar configuración**, seleccione la configuración.
-1. Haga clic o pulse **Guardar y cerrar**.
+1. En la consola Sitios, seleccione la página que desea configurar y seleccione **Ver propiedades**.
+1. Seleccione la pestaña **Cloud Services**.
+1. En el **Agregar configuración** , seleccione la configuración.
+1. Seleccionar **Guardar y cerrar**.

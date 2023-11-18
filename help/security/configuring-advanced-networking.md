@@ -2,10 +2,10 @@
 title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3598'
-ht-degree: 96%
+source-wordcount: '3594'
+ht-degree: 93%
 
 ---
 
@@ -196,7 +196,7 @@ Sin la función de dirección IP dedicada habilitada, el tráfico proveniente de
 
 La configuración de la dirección IP de salida dedicada es idéntica a la [salida de puerto flexible](#configuring-flexible-port-egress-provision).
 
-La principal diferencia es que el tráfico siempre saldrá de una IP única y dedicada. Para encontrar esa IP, utilice una resolución DNS para identificar la dirección IP asociada a `p{PROGRAM_ID}.external.adobeaemcloud.com`. No se espera que la dirección IP cambie, pero si necesita cambiarla en el futuro, se proporciona una notificación avanzada.
+La principal diferencia es que el tráfico siempre saldrá de una IP única y dedicada. Para encontrar esa IP, utilice una resolución DNS para identificar la dirección IP asociada a `p{PROGRAM_ID}.external.adobeaemcloud.com`. No se espera que la dirección IP cambie, pero si debe cambiarse en el futuro, se proporciona una notificación avanzada.
 
 Además de las reglas de enrutamiento admitidas por la salida de puerto flexible en el punto final `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, la dirección IP de salida dedicada admite un parámetro `nonProxyHosts`. Esto permite declarar un conjunto de hosts que deben enrutarse a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada, lo que puede resultar útil, ya que la salida de tráfico a través de direcciones IP compartidas puede optimizarse aún más. Las direcciones URL `nonProxyHost` pueden seguir los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al inicio del dominio.
 
@@ -372,7 +372,7 @@ Tenga en cuenta que aunque no haya reglas de enrutamiento de tráfico de entorno
 
 La configuración de VPN en el nivel de programa se puede actualizar invocando el punto de conexión `PUT /api/program/<program_id>/network/<network_id>`.
 
-Tenga en cuenta que el espacio de direcciones no se puede cambiar después del aprovisionamiento de VPN inicial. Si es necesario, póngase en contacto con Asistencia al cliente. Además, el parámetro `kind` (`flexiblePortEgress`, `dedicatedEgressIP` o `VPN`) no se puede modificar. Póngase en contacto con la asistencia al cliente para obtener ayuda; describa lo que ya se ha creado y el motivo del cambio.
+El espacio de direcciones no se puede cambiar después del aprovisionamiento de VPN inicial. Si es necesario, póngase en contacto con Asistencia al cliente. Además, el parámetro `kind` (`flexiblePortEgress`, `dedicatedEgressIP` o `VPN`) no se puede modificar. Póngase en contacto con la asistencia al cliente para obtener ayuda; describa lo que ya se ha creado y el motivo del cambio.
 
 Las reglas de enrutamiento por entorno se pueden actualizar invocando de nuevo el punto de conexión `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`. Asegúrese de incluir el conjunto completo de parámetros de configuración en lugar de un subconjunto. Las actualizaciones de entorno suelen tardar entre 5 y 10 minutos en aplicarse.
 
@@ -544,7 +544,7 @@ Si el tiempo de inactividad puede causar un impacto comercial significativo, pó
 
 ## Configuración de redes avanzadas para regiones de publicación adicionales {#advanced-networking-configuration-for-additional-publish-regions}
 
-Cuando se añade una región adicional a un entorno que ya tiene configuradas redes avanzadas, el tráfico de la región de publicación adicional que coincida con las reglas de redes avanzadas se enrutará de forma predeterminada a través de la región principal. Sin embargo, si la región principal deja de estar disponible, el tráfico de redes avanzadas se elimina si no se han habilitado las redes avanzadas en la región adicional. Si desea optimizar la latencia y aumentar la disponibilidad en caso de que una de las regiones sufra una interrupción, es necesario habilitar las redes avanzadas para las regiones de publicación adicionales. En las siguientes secciones se describen dos escenarios diferentes.
+Cuando se añade una región adicional a un entorno que ya tiene configuradas redes avanzadas, el tráfico de la región de publicación adicional que coincida con las reglas de redes avanzadas se enrutará de forma predeterminada a través de la región principal. Sin embargo, si la región principal deja de estar disponible, el tráfico de redes avanzadas se elimina si no se han habilitado las redes avanzadas en la región adicional. Si desea optimizar la latencia y aumentar la disponibilidad en caso de que una de las regiones sufra una interrupción, es necesario habilitar la red avanzada para las regiones de publicación adicionales. En las siguientes secciones se describen dos escenarios diferentes.
 
 >[!NOTE]
 >
@@ -558,7 +558,7 @@ Si ya se ha habilitado una configuración de redes avanzadas en la región princ
 
 1. Si ha bloqueado la infraestructura de modo que la dirección IP de AEM dedicada esté incluida en la lista de permitidos, se recomienda deshabilitar temporalmente cualquier regla de denegación de dicha infraestructura. Si no es así, su propia infraestructura denegará las solicitudes de las direcciones IP de la nueva región durante un breve período. Tenga en cuenta que esto no es necesario si ha bloqueado la infraestructura mediante un nombre de dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`AEM , por ejemplo), porque todas las regiones de la red de salida de todas las regiones de la red avanzada desde el mismo FQDN
 1. Cree la infraestructura de redes con alcance de programa para la región secundaria a través de una llamada del POST a la API Crear infraestructura de redes de Cloud Manager, tal como se describe en la documentación de redes avanzadas. La única diferencia en la configuración JSON de la carga útil en relación con la región principal es la propiedad de la región
-1. Si la infraestructura necesita estar bloqueada por IP para permitir el tráfico de AEM, añada las IP que coincidan `p1234.external.adobeaemcloud.com`. Debe haber una por región.
+1. AEM Si la infraestructura debe estar bloqueada por una dirección IP para permitir el tráfico de, agregue las direcciones IP que coincidan `p1234.external.adobeaemcloud.com`. Debe haber una por región.
 
 #### Las redes avanzadas aún no están configuradas en ninguna región {#not-yet-configured}
 

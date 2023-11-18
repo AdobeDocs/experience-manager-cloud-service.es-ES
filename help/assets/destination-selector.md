@@ -4,9 +4,9 @@ description: AEM Utilice el Selector de destino de la para mostrar y seleccionar
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '1904'
 ht-degree: 36%
 
 ---
@@ -259,7 +259,7 @@ AEM El Selector de destino también permite ver los datos del repositorio que el
 
 Es un ejemplo de lo siguiente `optionsFormSetup` propiedad. Puede usar esto para confirmar la selección; se pasa en la `onConfirm` evento.
 
-### Cree una nueva carpeta {#create-new-folder}
+### Crear una carpeta. {#create-new-folder}
 
 Permite crear una carpeta en la carpeta de destino de su [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
@@ -274,7 +274,7 @@ El Selector de destino permite ver el recurso en cuatro vistas diferentes:
 
 ### Información {#info}
 
-El icono de información permite ver los metadatos del recurso seleccionado. Incluye varios detalles, como dimensiones, tamaño, descripción, ruta, fecha de modificación y fecha de creación. La información de los metadatos se proporciona al cargar, copiar o crear un nuevo recurso.
+El icono de información permite ver los metadatos del recurso seleccionado. Incluye varios detalles, como dimensiones, tamaño, descripción, ruta, fecha de modificación y fecha de creación. La información de los metadatos se proporciona al cargar, copiar o crear un recurso.
 
 ### Seleccionar carpeta {#select-folder}
 

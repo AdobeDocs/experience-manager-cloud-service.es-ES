@@ -3,9 +3,9 @@ title: Prácticas recomendadas de consulta e indexación
 description: Aprenda a optimizar los índices y las consultas en función de las directrices de prácticas recomendadas de Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3133'
+source-wordcount: '3128'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ La restricción principal de cualquier consulta debe ser una coincidencia de pro
 
 El motor de consultas considera un solo índice. Esto significa que un índice existente puede y debe personalizarse añadiéndole más propiedades de índice personalizadas.
 
-El [Hoja de trucos de consulta JCR](#jcr-query-cheatsheet) en la sección de este documento se enumeran las restricciones disponibles y también se describe el aspecto que debe tener una definición de índice para que se recoja. Utilice el [Herramienta de rendimiento de consultas](#query-performance-tool) para probar la consulta y asegurarse de que se utiliza el índice correcto y de que el motor de consultas no necesita evaluar las restricciones fuera del índice.
+El [Hoja de trucos de consulta JCR](#jcr-query-cheatsheet) de este documento enumera las restricciones disponibles y también describe el aspecto que debe tener una definición de índice para que se recoja. Utilice el [Herramienta de rendimiento de consultas](#query-performance-tool) para probar la consulta y asegurarse de que se utiliza el índice correcto y de que el motor de consultas no necesita evaluar las restricciones fuera del índice.
 
 ### Pedidos {#ordering}
 
@@ -138,7 +138,7 @@ La herramienta de consulta Explicar permite a los desarrolladores comprender el 
 
 Para explicar una consulta, haga lo siguiente:
 
-* Seleccione el idioma de consulta adecuado mediante la variable `Language` desplegable.
+* Seleccione el idioma de consulta adecuado mediante la variable `Language` lista desplegable.
 * Introduzca la sentencia de consulta en la `Query` field.
 * Si es necesario, seleccione cómo se ejecutará la consulta utilizando las casillas de verificación proporcionadas.
    * De forma predeterminada, no es necesario ejecutar las consultas JCR para identificar el plan de ejecución de la consulta (este no es el caso de las consultas de QueryBuilder).
@@ -239,7 +239,7 @@ Esta sección del plan establece que:
 
 Este plan de ejecución de consultas generará todos los recursos por debajo de `/content/dam` leerse desde el índice y, a continuación, filtrarse más por el motor de consultas (que solo incluirá los que coincidan con la restricción de propiedad no indizada en el conjunto de resultados).
 
-Incluso si solo un pequeño porcentaje de recursos coincide con la restricción `jcr:content/metadata/myProperty = "My Property Value"`, la consulta necesita leer un gran número de nodos para (intentar) rellenar la &quot;página&quot; de resultados solicitada. Esto puede dar como resultado un rendimiento incorrecto de la consulta, que se mostrará como con un bajo `Read Optimization` puntuación en la herramienta de rendimiento de consultas) y puede generar mensajes ADVERTENCIA que indiquen que se está atravesando un gran número de nodos (consulte [Índice de recorrido](#index-traversal)).
+Incluso si solo un pequeño porcentaje de recursos coincide con la restricción `jcr:content/metadata/myProperty = "My Property Value"`, la consulta debe leer un gran número de nodos para (intentar) rellenar la &quot;página&quot; de resultados solicitada. Esto puede dar como resultado un rendimiento incorrecto de la consulta, que se mostrará como con un bajo `Read Optimization` puntuación en la herramienta de rendimiento de consultas) y puede generar mensajes ADVERTENCIA que indiquen que se está atravesando un gran número de nodos (consulte [Índice de recorrido](#index-traversal)).
 
 Para optimizar el rendimiento de esta segunda consulta, cree una versión personalizada de `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) y agregue la siguiente definición de propiedad:
 
@@ -309,6 +309,7 @@ Las consultas que utilizan un índice, pero que aún leen grandes cantidades de 
 ```
 
 Esto puede ocurrir por varias razones:
+
 1. No todas las restricciones de la consulta se pueden controlar en el índice.
    * En este caso, se está leyendo un superconjunto del conjunto de resultados final desde el índice y, a continuación, se está filtrando en el motor de consultas.
    * Esto es muchas veces más lento que aplicar restricciones en la consulta de índice subyacente.

@@ -4,10 +4,10 @@ description: Aprenda a utilizar AEM para crear un sitio mediante plantillas de s
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 93%
+source-wordcount: '756'
+ht-degree: 77%
 
 ---
 
@@ -55,19 +55,19 @@ El uso de una plantilla para crear un sitio es sencillo.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Toque o haga clic en **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de una plantilla**.
+1. Seleccionar **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de plantilla**.
 
    ![Creación de un sitio a partir de una plantilla](../assets/create-site-from-template.png)
 
-1. En el asistente Crear sitio, toque o haga clic en una plantilla existente del panel izquierdo o en **Importar** en la parte superior de la columna izquierda para importar una plantilla nueva.
+1. En el asistente Crear sitio, seleccione una plantilla existente en el panel izquierdo o en **Importar** en la parte superior de la columna izquierda para importar una plantilla nueva.
 
    ![Asistente de creación de sitios](../assets/site-creation-wizard.png)
 
-   1. Si elige importar, en el explorador de archivos, busque la plantilla que desee usar y toque o haga clic en **Cargar**.
+   1. Si elige importar, en el explorador de archivos, busque la plantilla que desee utilizar y seleccione **Cargar**.
 
    1. Una vez cargado, aparece en la lista de plantillas disponibles.
 
-1. Al seleccionar una plantilla, se muestra información sobre la plantilla en la columna derecha. Con la plantilla deseada seleccionada, toque o haga clic en **Siguiente**.
+1. Al seleccionar una plantilla, se muestra información sobre la plantilla en la columna derecha. Con la plantilla deseada seleccionada, seleccione **Siguiente**.
 
    ![Seleccionar una plantilla](../assets/select-site-template.png)
 
@@ -77,11 +77,11 @@ El uso de una plantilla para crear un sitio es sencillo.
    * El nombre del sitio forma parte de la dirección URL.
    * El nombre del sitio debe cumplir con las [convenciones de asignación de nombres de páginas de AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
 
-1. Toque o haga clic en **Crear** y el sitio se crea a partir de la plantilla de sitio.
+1. Seleccionar **Crear** y el sitio se crea a partir de la plantilla del sitio.
 
    ![Detalles del nuevo sitio](../assets/create-site-details.png)
 
-1. En el cuadro de diálogo de confirmación que aparece, toque o haga clic en **Listo**.
+1. En el cuadro de diálogo de confirmación que aparece, seleccione **Listo**.
 
    ![Cuadro de diálogo de éxito](../assets/success.png)
 
@@ -93,10 +93,10 @@ El uso de una plantilla para crear un sitio es sencillo.
 
 ## Personalización del sitio {#site-customization}
 
-Si su sitio requiere personalización más allá de las plantillas disponibles, tiene una serie de opciones.
+Si su sitio requiere personalización más allá de las plantillas disponibles, tiene varias opciones.
 
-* Si es necesario ajustar la estructura del sitio o el contenido inicial, [la plantilla del sitio se puede personalizar para satisfacer sus necesidades](site-templates.md).
-* Si es necesario ajustar el estilo del sitio, [el tema del sitio se puede descargar y personalizar](/help/journey-sites/quick-site/overview.md).
-* Si es necesario ajustar la funcionalidad del sitio, [este se puede personalizar completamente](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* Si se debe ajustar la estructura del sitio o el contenido inicial, [la plantilla del sitio se puede personalizar para satisfacer sus necesidades](site-templates.md).
+* Si se debe ajustar el estilo del sitio, [el tema del sitio se puede descargar y personalizar](/help/journey-sites/quick-site/overview.md).
+* Si es necesario ajustar la funcionalidad del sitio, [el sitio se puede personalizar completamente](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Cualquier personalización debe realizarse con el apoyo de un equipo de desarrollo.

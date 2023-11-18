@@ -2,10 +2,10 @@
 title: Configuración del proyecto
 description: Descubra cómo se crean los proyectos AEM con Maven y los estándares que debe observar al crear su propio proyecto.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1404'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1399'
+ht-degree: 97%
 
 ---
 
@@ -110,7 +110,7 @@ Y también debe hacerlo si desea enviar un mensaje simple solo cuando la generac
 
 >[!NOTE]
 >
->Los artefactos de un repositorio de Maven protegido por contraseña deben utilizarse con mucho cuidado, ya que el código implementado a través de este mecanismo actualmente no se ejecuta en todas las [reglas de calidad del código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementado en las puertas de calidad de Cloud Manager. Por lo tanto, solo debe utilizarse en casos excepcionales y para código no vinculado a AEM. También se recomienda implementar las fuentes Java, así como todo el código fuente del proyecto junto con el binario.
+>Los artefactos de un repositorio Maven protegido por contraseña deben utilizarse con precaución porque el código implementado mediante este mecanismo actualmente no se ejecuta a través de [reglas de calidad de código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementado en las puertas de calidad de Cloud Manager. Por lo tanto, solo debe utilizarse en casos excepcionales y para código no vinculado a AEM. También se recomienda implementar las fuentes Java, así como todo el código fuente del proyecto junto con el binario.
 
 Para utilizar un repositorio de Maven protegido por contraseña en Cloud Manager, haga lo siguiente:
 

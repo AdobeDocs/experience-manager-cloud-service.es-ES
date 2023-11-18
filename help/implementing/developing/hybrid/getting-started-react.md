@@ -2,10 +2,10 @@
 title: Introducción a SPA en AEM usando React
 description: SPA SPA Este artículo presenta una aplicación de ejemplo para la creación de informes, explica cómo se crea y le permite ponerse en marcha con su propia aplicación de forma rápida mediante el marco de trabajo React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 8%
+source-wordcount: '1139'
+ht-degree: 10%
 
 ---
 
@@ -105,7 +105,7 @@ AEM Una vez creado, el paquete se puede cargar en una instancia de.
 
 ### Tipo de archivo del proyecto AEM. {#aem-project-archetype}
 
-AEM Cualquier proyecto debe utilizar la variable [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)SPA , que es compatible con proyectos de que utilizan React o Angular SPA y utiliza el SDK de.
+Cualquier proyecto AEM debería utilizar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
 
 ## Estructura de aplicación {#application-structure}
 
@@ -117,7 +117,7 @@ Como ejemplo se utiliza un componente de imagen simplificado, pero todos los com
 
 ### index.js {#index-js}
 
-SPA El punto de entrada en la es, por supuesto, el `index.js` archivo que se muestra aquí simplificado para centrarse en el contenido importante.
+SPA El punto de entrada en la es el `index.js` archivo que se muestra aquí simplificado para centrarse en el contenido importante.
 
 ```
 import ReactDOM from 'react-dom';
@@ -266,4 +266,4 @@ Normalmente, es necesario que los componentes de una aplicación de una sola pá
 * La [Información general del Editor de SPA](editor-overview.md) profundiza en el modelo de comunicación entre AEM y el SPA.
 * [SPA Proyecto de WKND](wknd-tutorial.md) SPA AEM es un tutorial paso a paso sobre la implementación de un proyecto de simple en el sector de la.
 * [SPA Asignación de modelos dinámicos a componentes para la creación de](model-to-component-mapping.md) SPA AEM explica el modelo dinámico para la asignación de componentes y cómo funciona dentro de la asignación de componentes de la interfaz de usuario de la aplicación de datos en la.
-* [SPA Modelo de](blueprint.md) SPA AEM SPA AEM ofrece una explicación detallada de cómo funciona el SDK de la para la creación de informes en caso de que desee implementar un esquema de trabajo de forma más sencilla que no sea React o Angular, o simplemente desee tener una comprensión más profunda de la aplicación.
+* [SPA Modelo de](blueprint.md) SPA AEM SPA AEM ofrece una explicación detallada de cómo funciona el SDK de la para la creación de informes en caso de que desee implementar un entorno de trabajo que no sea React o Angular, o simplemente desee tener una comprensión más profunda de la aplicación.

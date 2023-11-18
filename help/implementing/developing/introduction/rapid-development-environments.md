@@ -2,7 +2,7 @@
 title: Entornos de desarrollo rápido
 description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones de desarrollo rápido en un entorno de nube.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3304'
 ht-degree: 5%
@@ -40,7 +40,7 @@ Siga estos pasos para poder usar Cloud Manager para crear un RDE para su program
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. Haga clic en el programa al que desea agregar un RDE para mostrar sus detalles.
+1. Haga clic en el programa al que desee agregar un RDE para mostrar sus detalles.
 
    * Los RDE se pueden agregar a ambos [programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) y [programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 

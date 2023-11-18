@@ -2,10 +2,10 @@
 title: 'Creación para AEM como un CMS sin encabezado: una introducción'
 description: Una introducción al uso de las características de Adobe Experience Manager as a Cloud Service como un CMS sin encabezado para crear contenido para su proyecto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 97%
+source-wordcount: '690'
+ht-degree: 94%
 
 ---
 
@@ -61,7 +61,7 @@ Esto quiere decir que el contenido puede llegar a una amplia gama de dispositivo
 
 El modelado de contenido (también conocido como modelado de datos) es otro término técnico, ¿por qué debería interesarle como autor?
 
-Para que las aplicaciones sin encabezado puedan acceder a su contenido y hacer algo con él, el contenido debe tener una estructura predefinida. Sería posible que el contenido fuese de forma libre, pero complicaría *mucho* la vida a las aplicaciones.
+Para que las aplicaciones sin encabezado puedan acceder al contenido y hacer algo con él, el contenido debe tener una estructura predefinida. Sería posible que el contenido fuese de forma libre, pero complicaría *mucho* la vida a las aplicaciones.
 
 Básicamente, el proceso de definición de la estructura a la que debe ceñirse el contenido implica el diseño de un modelo, y a esto se le conoce como modelado de datos.
 

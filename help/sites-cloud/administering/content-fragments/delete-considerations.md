@@ -3,13 +3,13 @@ title: 'Fragmentos de contenido: Eliminar consideraciones'
 description: Revise estas consideraciones importantes antes de definir las políticas de eliminación de fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse detenidamente.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '450'
 ht-degree: 57%
 
 ---
-
 
 # Eliminar consideraciones para fragmentos de contenido {#delete-considerations-content-fragments}
 
@@ -23,14 +23,14 @@ En relación con los permisos de eliminación, los fragmentos de contenido deben
 
 1. **El fragmento de contenido como una sola entidad.**
 
-   * **Caso de uso**: un usuario que necesita editar/actualizar un fragmento de contenido: **y eliminar un fragmento completo**.
+   * **Caso de uso**: un usuario que debe editar/actualizar un fragmento de contenido - **y eliminar un fragmento completo**.
    * **Permisos**: el permiso Eliminar se puede asignar a través de Administración de usuarios o grupos.
 
 2. **Las varias subentidades que conforman un fragmento de contenido; por ejemplo, variaciones, subnodos.**
 
    La operación básica del editor de fragmentos de contenido requiere que se puedan eliminar estos subelementos transitorios. Por ejemplo, al manipular variaciones; también al editar metadatos o administrar contenido asociado.
 
-   * **Caso de uso**: un usuario que necesita editar/actualizar un fragmento de contenido: **sin permitir eliminar un fragmento completo**.
+   * **Caso de uso**: un usuario que debe editar/actualizar un fragmento de contenido - **sin permitir eliminar un fragmento completo**.
    * **Permisos**: consulte [Permisos necesarios para la funcionalidad del editor únicamente](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
@@ -76,4 +76,3 @@ Los permisos previos para permitir que un usuario o grupo específico edite o ac
 * Para todos los nodos siguientes `jcr:content` de todos los fragmentos de contenido:
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`, y `jcr:removeChildNodes`, `jcr:removeNode`
-

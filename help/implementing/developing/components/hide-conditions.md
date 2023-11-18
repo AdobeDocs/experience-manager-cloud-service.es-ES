@@ -2,9 +2,9 @@
 title: Uso de Ocultar condiciones
 description: Ocultar condiciones se puede utilizar para determinar si un recurso de componente se procesa o no.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Al definir la expresión Hide, tenga en cuenta:
 
 AEM Se pueden encontrar ejemplos de condiciones de ocultación a lo largo de la y la [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) en particular. Por ejemplo, considere la [componente principal de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) tal como se implementa en [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-[Uso del editor de plantillas](/help/sites-cloud/authoring/features/templates.md), el autor de la plantilla puede definir en el cuadro de diálogo de diseño qué opciones del componente de lista están disponibles para el autor de la página. Opciones como permitir que la lista sea una lista estática, una lista de páginas secundarias, una lista de páginas etiquetadas, etc. se puede activar o desactivar.
+[Uso del editor de plantillas](/help/sites-cloud/authoring/features/templates.md), el autor de la plantilla puede definir en el cuadro de diálogo de diseño qué opciones del componente de lista están disponibles para el autor de la página. Pueden habilitarse o deshabilitarse opciones como permitir que la lista sea una lista estática, una lista de páginas secundarias, una lista de páginas etiquetadas, etc.
 
 Si un autor de una plantilla decide deshabilitar la opción de páginas secundarias, se establece una propiedad de diseño y se evalúa una condición de ocultación con respecto a ella, lo que hace que la opción no se procese para el autor de la página.
 

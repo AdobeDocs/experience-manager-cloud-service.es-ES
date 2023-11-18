@@ -2,9 +2,9 @@
 title: Promoción de lanzamientos
 description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '811'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ Puede promocionar lanzamientos desde la consola **Sites** o la consola **Lanzami
       1. Seleccione la página de lanzamiento necesaria mediante el [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md).
       1. La acción **Promocionar** está disponible en la barra de herramientas.
    * La consola **Lanzamientos**:
-      1. Seleccione el lanzamiento (toque o haga clic en la miniatura).
+      1. Seleccione el lanzamiento (seleccione la miniatura).
       1. Seleccione **Promocionar**.
 1. En el primer paso puede especificar:
    * **Destino**

@@ -4,10 +4,10 @@ description: AEM AEM Una vez configurados los recursos de nube, conceda a su equ
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 79%
+source-wordcount: '885'
+ht-degree: 77%
 
 ---
 
@@ -24,7 +24,7 @@ En esta parte del [recorrido de incorporación,](overview.md) AEM AEM aprenderá
 
 Después de leer el documento anterior en este recorrido de incorporación, [Crear entornos,](create-environments.md) AEM AEM y una vez configurados los recursos de nube, conceda a su equipo acceso para que se autoconfigure usando perfiles de producto de la. Como administrador del sistema, puede hacerlo asignando perfiles de producto de AEM.
 
-Después de leer este documento, debería poder comprender lo siguiente:
+Después de leer este documento, debería comprender lo siguiente:
 
 * Qué son los perfiles de producto de AEM.
 * Añadir integrantes del equipo al perfil de producto Usuario de AEM.
@@ -88,7 +88,7 @@ Estas tareas requieren que sea administrador del sistema con el perfil de produc
 
    ![Administrar acceso](/help/journey-onboarding/assets/add-team1.png)
 
-1. Una nueva pestaña le lleva a Admin Console desde el que tiene acceso a la instancia de autor del entorno. Seleccione **Administradores de AEM** o **Usuarios de AEM** en función de los permisos que se le deben otorgar a esta persona.
+1. Una nueva pestaña le lleva a Admin Console desde el que tiene acceso a la instancia de autor del entorno. Seleccionar **AEM Administradores de** o **AEM Usuarios de** en función de los permisos que se le deben otorgar a esta persona.
 
    ![Asignar acceso](/help/journey-onboarding/assets/add-team2.png)
 

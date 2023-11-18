@@ -2,16 +2,16 @@
 title: Materiales de referencia de la API
 description: AEM Tiene API amplias y potentes que puede utilizar para su proyecto de experiencia digital.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '662'
 ht-degree: 10%
 
 ---
 
 # Materiales de referencia de la API {#api-reference-materials}
 
-Adobe Experience Manager AEM AEM () proporciona muchas API para desarrollar aplicaciones y ampliar el alcance de los recursos AEM La tecnología de código abierto se basa en una serie de tecnologías de código abierto, que también se pueden utilizar.
+Adobe Experience Manager AEM AEM () proporciona muchas API para desarrollar aplicaciones y ampliar el alcance de los recursos AEM La tecnología de código abierto se basa en varias tecnologías de código abierto, que también se pueden utilizar.
 
 ## AEM API de núcleo {#core-aem-apis}
 
@@ -19,8 +19,8 @@ AEM Las siguientes API son fundamentales para la.
 
 | API | Descripción |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstracciones de productos como páginas, recursos, flujos de trabajo, etc. |
-| [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pila web abierta de Adobe que proporciona varios componentes esenciales (tenga en cuenta que los materiales de Granite 6.5 se aplican a AEMaaCS) |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstracciones de productos, como páginas, recursos, flujos de trabajo, etc. |
+| [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pila web abierta de Adobe que proporciona varios componentes esenciales (los materiales de Granite 6.5 se aplican a AEMaaCS) |
 | [IU de Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Estilo visual del Adobe para las IU de la nube, diseñado para proporcionar coherencia en la experiencia del usuario |
 
 <!---
@@ -29,7 +29,7 @@ AEM Las siguientes API son fundamentales para la.
 
 ## Marcos de trabajo adicionales {#additional-apis}
 
-AEM Se basa en una serie de API de código abierto adicionales.
+AEM Se basa en varias API de código abierto adicionales.
 
 | API | Descripción |
 |---|---|
@@ -44,7 +44,7 @@ AEM Se basa en los cuatro conjuntos de API de Java principales siguientes en ord
 
 | Prioridad | API | Descripción |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstracciones de productos como páginas, recursos, flujos de trabajo, etc. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstracciones de productos, como páginas, recursos, flujos de trabajo, etc. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST y abstracciones basadas en recursos como recursos, mapas de valores y solicitudes HTTP. |
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Resumen de datos y contenido, como nodos, propiedades y sesiones. |
 | 4 | [Apache Felix](https://felix.apache.org/) | Abstracciones del contenedor de aplicaciones OSGi, como servicios y componentes (OSGi). |

@@ -3,10 +3,10 @@ title: AEM Screens as a Cloud Service
 description: Obtenga más información sobre AEM Screens y cómo funciona esta solución de señalización digital.
 landing-page-description: Comprender AEM Screens as a Cloud Service.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 76%
+source-wordcount: '420'
+ht-degree: 72%
 
 ---
 

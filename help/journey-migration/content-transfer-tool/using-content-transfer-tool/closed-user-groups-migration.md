@@ -3,10 +3,11 @@ title: Migración de grupos de usuarios cerrados
 description: Obtenga información acerca de las consideraciones especiales necesarias para habilitar los grupos de usuarios cerrados después de migrar contenido a Adobe Experience Manager as a Cloud Service.
 hide: true
 hidefromtoc: true
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 8%
+source-wordcount: '461'
+ht-degree: 9%
 
 ---
 
@@ -46,4 +47,3 @@ En resumen, estos son los pasos para habilitar el CUG después de una migración
    - Si no es así, utilice Paquetes para instalarla en la instancia de destino (o crearla manualmente allí) y activarla junto con sus miembros. A continuación, compruebe que existe en Publish.
 1. Volver a publicar todas las páginas asociadas con una política de CUG, asegurándose de que se publique, por ejemplo, editando primero la página. Es importante volver a publicarlos todos.
    - Una vez que se hayan vuelto a publicar todas las páginas, compruebe la funcionalidad de cada página protegida por CUG.
-

@@ -1,14 +1,12 @@
 ---
 title: Añadir un controlador de error personalizado en Forms AEM adaptable basado en componentes principales para Forms adaptable de la
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms core components
 description: AEM Forms proporciona controladores de éxitos y de errores predeterminados para un formulario mediante el punto final REST configurado para invocar un servicio externo. AEM Puede agregar un controlador de error predeterminado y un controlador de error personalizado en un formulario adaptable con un formato de formulario adaptable con un nombre de usuario.
-seo-description: Error handler function and Rule Editor in Adaptive Forms core components helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: Añadir un controlador de errores personalizado, añadir un controlador de errores predeterminado, añadir un controlador de errores en el formulario, utilizar el servicio de invocación del editor de reglas para añadir un controlador de errores personalizado, configurar el editor de reglas para añadir un controlador de errores personalizado y añadir un controlador de errores personalizado mediante el editor de reglas
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 77%
@@ -252,7 +250,7 @@ Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respu
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
-           alert("CustomErrorHandler - Please enter valid PetId.")
+           alert("CustomErrorHandler - Enter valid PetId.")
            globals.invoke('defaultErrorHandler',response, headers)
            console.log("Custom Error Handler processing end...");
        }

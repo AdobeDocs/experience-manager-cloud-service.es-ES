@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2020.8.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2020.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 33%
+source-wordcount: '1036'
+ht-degree: 36%
 
 ---
 
@@ -76,7 +76,7 @@ La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2020.8.0 es el
 
 ### Novedades {#what-is-new-cloud-manager}
 
-* La auditoría de contenido es una característica habilitada en las canalizaciones de producción de Cloud Manager Sites. La configuración de Canalizaciones de producción para programas con Sites ahora incluye una tercera pestaña llamada **Auditoría de contenido**. Cada vez que se ejecuta un flujo de producción, se incluye un nuevo paso de Auditoría de contenido en la canalización después de realizar pruebas funcionales personalizadas que evalúan el sitio en relación con una serie de dimensiones, que incluye rendimiento, SEO (Optimización de motores de búsqueda), accesibilidad, prácticas recomendadas y PWA (Aplicación web progresiva).
+* La auditoría de contenido es una característica habilitada en las canalizaciones de producción de Cloud Manager Sites. La configuración de Canalizaciones de producción para programas con Sites ahora incluye una tercera pestaña llamada **Auditoría de contenido**. Cada vez que se ejecuta un flujo de producción, se incluye un nuevo paso de Auditoría de contenido en la canalización después de realizar pruebas funcionales personalizadas que evalúan el sitio en relación con varias dimensiones, que incluyen rendimiento, SEO (Optimización de motores de búsqueda), accesibilidad, prácticas recomendadas y PWA (Aplicación web progresiva).
 
 
   >[!NOTE]
@@ -116,7 +116,7 @@ La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2020.8.0 es el
 
 * La pestaña Auditoría de contenido muestra incorrectamente la dirección URL base mediante el uso del dominio Autor en lugar del dominio Publicación.
 
-* Para activar el paso Auditoría de contenido, los usuarios deben editar la canalización y, opcionalmente, agregar páginas. Si no se agregan páginas, se audita la página principal.
+* Para activar el paso Auditoría de contenido, los usuarios deben editar la canalización y, opcionalmente, añadir páginas. Si no se añaden páginas, se audita la página principal.
 
 ## Herramienta de transferencia de contenido {#content-transfer-tool}
 

@@ -2,10 +2,10 @@
 title: Diseño adaptable
 description: AEM le permite crear un diseño adaptable para sus páginas,
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 86%
+source-wordcount: '1731'
+ht-degree: 83%
 
 ---
 
@@ -45,7 +45,7 @@ Con estos mecanismos de cuadrícula adaptable puede hacer lo siguiente:
 * Ocultar componentes de diseños de dispositivo específicos.
 * Realizar el control de columnas.
 
-En función del proyecto, el contenedor de diseño se puede utilizar como sistema de párrafos predeterminado para las páginas o como componente disponible para añadirse a su página mediante el explorador de componentes (o ambos).
+Según el proyecto, el contenedor de diseño se puede utilizar como sistema de párrafos predeterminado para las páginas o como componente disponible para añadirse a su página mediante el explorador de componentes (o ambos).
 
 >[!TIP]
 >
@@ -108,7 +108,7 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 1. Para seleccionar un dispositivo específico para emular, puede hacer lo siguiente:
 
    * Utilizar el icono Seleccionar dispositivo y seleccionarlo desde un selector desplegable.
-   * Pulse o haga clic en el indicador de dispositivo en la barra de herramientas del emulador.
+   * Seleccione el indicador de dispositivo en la barra de herramientas del emulador.
 
    ![Menú desplegable Seleccionar dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -143,7 +143,7 @@ Un **contenedor de diseño** es un sistema de párrafos que:
 
 ## Selección y ejecución de una acción en un contenedor de diseños (modo de edición) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-Al igual que con otros componentes, puede seleccionar un contenedor de diseños (cuando se encuentra en el modo de **edición**) y luego realizar una acción en él (copiar, cortar, eliminar):
+Al igual que con otros componentes, puede seleccionar un contenedor de diseño (cuando se encuentra en ) y luego actuar en él (cuando se encuentra en **Editar** modo):
 
 >[!CAUTION]
 >
@@ -195,14 +195,14 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
   >
   >Se mantienen las proporciones y relaciones al cambiar el tamaño de componentes como **Imágenes**.
 
-* Haga clic o toque un componente de contenido. La barra de herramientas le permite:
+* Seleccione un componente de contenido, la barra de herramientas le permite:
    * **Principal** : permite seleccionar todo el componente del contenedor de diseños para realizar acciones en conjunto.
    * **Flotar a una línea nueva**: se mueve el componente a una línea nueva, según el espacio disponible en la cuadrícula.
    * **Ocultar componente**: el componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseños).
 
   ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* Entrada **Diseño** modo en el que puede tocar o hacer clic en **Arrastre los componentes aquí** para seleccionar todo el componente. La barra de herramientas se muestra para este modo.
+* Entrada **Diseño** modo puede seleccionar el **Arrastre los componentes aquí** para seleccionar todo el componente. La barra de herramientas se muestra para este modo.
 
   La barra de herramientas tiene diferentes opciones en función del estado del componente de diseño y de los componentes que le pertenecen. Por ejemplo:
 

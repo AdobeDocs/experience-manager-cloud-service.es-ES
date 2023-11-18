@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2872'
+source-wordcount: '2870'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Ahora imaginen que Creative Director mira las imágenes y dice:
 
 _&quot;Realmente quería esta toma para que la mano grande señale a los cuatro, y la mano pequeña señale al 1 para que el dial del reloj sea más fácil de ver&quot;._
 
-El creativo tendría que volver a rodar todas estas nuevas imágenes estáticas.
+El creativo tendría que volver a rodar todas las nuevas imágenes estáticas.
 
 Sin embargo, con Dynamic Media, si tiene diferentes ajustes preestablecidos de imagen, puede utilizar esas imágenes dondequiera que las necesite. Los ajustes preestablecidos de imagen aplican estándares.
 
@@ -187,7 +187,7 @@ Observe en la vista previa que puede seleccionar las muestras de zapatillas de r
 ![Conjunto de imágenes en ejecución con el visor flotante aplicado](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _El `Running` Conjunto de imágenes con el visor flotante aplicado._
 
-En este caso, la variable `Flyout` se seleccionó el visor. En este punto, puede obtener una vista previa del conjunto de imágenes en el visor. Sin embargo, es mejor verlo en su navegador, justo cómo lo ve un cliente. Usted selecciona **[!UICONTROL URL]** en la parte inferior izquierda, copie la dirección URL y péguela en el explorador. [Pruébelo.](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}.
+En este caso, la variable `Flyout` se ha seleccionado el visor. En este punto, puede obtener una vista previa del conjunto de imágenes en el visor. Sin embargo, es mejor verlo en su navegador, justo cómo lo ve un cliente. Usted selecciona **[!UICONTROL URL]** en la parte inferior izquierda, copie la dirección URL y péguela en el explorador. [Pruébelo.](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}.
 
 La dirección URL única permite utilizar el conjunto de imágenes y el visor donde los necesite en el sitio web. Es posible que haya observado en el ejemplo anterior que **[!UICONTROL Incrustar]** es a la derecha del botón URL. Al seleccionar **[!UICONTROL Incrustar]** Además, puede copiar el código de este conjunto/visor de imágenes y añadirlo a una página web o a un componente de Experience Manager Sites.
 
@@ -208,7 +208,7 @@ Acaba de leer acerca de los conjuntos de imágenes y visores. Veamos un par de o
 
 ## Opcional: Más información
 
-Si desea obtener más información sobre lo que acaba de leer, utilice los materiales siguientes para explorar conceptos en bueno detalle. De lo contrario, el Recorrido de Dynamic Media se habrá completado.
+Si desea obtener más información sobre lo que acaba de leer, utilice los materiales siguientes para explorar los conceptos con mayor detalle. De lo contrario, el Recorrido de Dynamic Media se habrá completado.
 
 _Temas de ayuda de Dynamic Media_
 

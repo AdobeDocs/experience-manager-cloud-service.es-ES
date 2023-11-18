@@ -4,10 +4,10 @@ description: Obtenga una introducción para reutilizar contenido con las potente
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 96%
+source-wordcount: '2702'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Esta página proporciona información general sobre cómo reutilizar contenido c
 
 >[!NOTE]
 >
->MSM también se puede utilizar para Assets, incluidos los Fragmentos de contenido. Para obtener más información, consulte [Reutilización de fragmentos de contenido mediante MSM para Assets](/help/assets/reuse-assets-using-msm.md) (solo disponible a través de la consola Assets).
+>MSM también se puede utilizar para Assets, incluidos los Fragmentos de contenido. Consulte [Reutilización de fragmentos de contenido mediante MSM para recursos](/help/assets/reuse-assets-using-msm.md) (solo disponible a través de la consola Recursos ).
 
 ## Posibles escenarios {#possible-scenarios}
 
@@ -172,7 +172,7 @@ Como introducción, la siguiente tabla proporciona una descripción general de l
 
 >[!TIP]
 >
->Consulte el documento [Ampliación del Administrador de varios sitios](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) para los nombres de objeto.
+>Consulte [Ampliación del Administrador de varios sitios](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) para los nombres de objeto.
 
 ## Live Copies {#live-copies}
 
@@ -278,7 +278,7 @@ Un despliegue es la acción central de MSM que sincroniza Live Copies con sus or
 Una configuración de despliegue define cuándo y cómo se sincroniza una Live Copy con el contenido de origen. Una configuración de despliegue consta de un activador y una o más acciones de sincronización:
 
 * **Activador**: un activador es un evento que hace que se produzca la acción de sincronización dinámica, como la activación de una página de origen. MSM define los activadores que puede utilizar.
-* **Acciones de sincronización**: las acciones de sincronización se realizan en la Live Copy para sincronizarlas con el origen. Algunas acciones de ejemplo son copiar contenido, ordenar nodos secundarios y activar la página de Live Copy. MSM proporciona una serie de acciones de sincronización.
+* **Acciones de sincronización**: las acciones de sincronización se realizan en la Live Copy para sincronizarlas con el origen. Algunas acciones de ejemplo son copiar contenido, ordenar nodos secundarios y activar la página de Live Copy. MSM proporciona varias acciones de sincronización.
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ Cada página y componente de una Live Copy está asociado con su página de orig
 
 Puede **Suspender** la herencia Live Copy de una página de Live Copy para cambiar las propiedades y los componentes de la página. Al suspender la herencia, las propiedades y los componentes de la página ya no se sincronizan con el origen.
 
-Al editar una página individual, los autores pueden **Cancelar la herencia** de un componente. Cuando se cancela la herencia, la relación dinámica se suspende y la sincronización no se lleva a cabo para ese componente. Cancelar la herencia y sincronizar resulta útil cuando es necesario personalizar las secciones secundarias del contenido.
+Al editar una página individual, los autores pueden **Cancelar la herencia** de un componente. Cuando se cancela la herencia, la relación dinámica se suspende y la sincronización no se lleva a cabo para ese componente. Cancelar la herencia y la sincronización resulta útil cuando se deben personalizar las subsecciones del contenido.
 
 ### Desasociación de una Live Copy {#detaching-a-live-copy}
 

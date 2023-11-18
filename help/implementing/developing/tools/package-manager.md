@@ -4,9 +4,9 @@ description: Conozca los conceptos básicos de AEM; administración de paquetes 
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3769'
+source-wordcount: '3771'
 ht-degree: 4%
 
 ---
@@ -97,7 +97,7 @@ Para crear, modificar, cargar e instalar paquetes, los usuarios deben tener los 
 
 Puede acceder al Administrador de paquetes de tres formas:
 
-1. AEM Desde el menú principal de la -> **Herramientas** -> **Implementación** -> **Paquetes**
+1. AEM En el menú principal de la > **Herramientas** > **Implementación** > **Paquetes**
 1. Desde [CRXDE Lite](crxde.md) uso de la barra superior del conmutador
 1. Directamente accediendo a `http://<host>:<port>/crx/packmgr/`
 
@@ -314,7 +314,7 @@ Una vez que se ha creado un paquete, se puede volver a empaquetar. Al volver a a
 
 1. Clic **Guardar** para guardar.
 
-1. Clic **Más** -> **Reajustar** y un cuadro de diálogo le pedirá confirmación.
+1. Clic **Más** > **Reajustar** y un cuadro de diálogo le pedirá confirmación.
 
 ### Visualización de otras versiones de paquetes {#other-versions}
 
@@ -324,7 +324,7 @@ Dado que cada versión de un paquete aparece en la lista como cualquier otro paq
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Más** -> **Otras versiones** y se abre un cuadro de diálogo con una lista de otras versiones del mismo paquete con información de estado.
+1. Clic **Más** > **Otras versiones** y se abre un cuadro de diálogo con una lista de otras versiones del mismo paquete con información de estado.
 
 ### Visualización del contenido del paquete y prueba de la instalación {#viewing-package-contents-and-testing-installation}
 
@@ -334,11 +334,11 @@ Una vez creado un paquete, puede ver su contenido.
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Para ver el contenido, haga clic en **Más** -> **Contenido** y Administrador de paquetes muestra todo el contenido del paquete en el registro de actividades.
+1. Para ver el contenido, haga clic en **Más** > **Contenido** y Administrador de paquetes muestra todo el contenido del paquete en el registro de actividades.
 
    ![Contenido del paquete](assets/package-contents.png)
 
-1. Para realizar una ejecución en seco de la instalación, haga clic en **Más** -> **Probar instalación** y el Administrador de paquetes registran los resultados como si se hubiera realizado la instalación.
+1. Para realizar una ejecución en seco de la instalación, haga clic en **Más** > **Probar instalación** y el Administrador de paquetes registran los resultados como si se hubiera realizado la instalación.
 
    ![Probar instalación](assets/test-install.png)
 
@@ -478,7 +478,7 @@ La validación siempre debe producirse después de cargar el paquete, pero antes
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Para validar el paquete, haga clic en **Más** -> **Validate**,
+1. Para validar el paquete, haga clic en **Más** > **Validate**,
 
 1. En el cuadro de diálogo modal que aparece a continuación, utilice las casillas de verificación para seleccionar los tipos de validación y comenzar la validación haciendo clic en **Validate**.
 
@@ -516,7 +516,7 @@ Los paquetes se definen mediante sus filtros. Puede hacer que el Administrador d
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Más** -> **Cobertura**.
+1. Clic **Más** > **Cobertura**.
 
 1. Los detalles de cobertura se enumeran en el registro de actividad.
 
@@ -532,7 +532,7 @@ Antes de la instalación del paquete, el Administrador de paquetes crea automát
 
 1. [Acceda al Administrador de paquetes.](#accessing)
 
-1. Abra los detalles del paquete que desea instalar desde la lista de paquetes haciendo clic en el nombre del paquete.
+1. Abra los detalles del paquete que desee instalar en la lista de paquetes haciendo clic en el nombre del paquete.
 
 1. Haga clic en **Instalar** en los detalles del elemento o en el **Instalar** en el estado del paquete.
 
@@ -574,9 +574,9 @@ Al desinstalar un paquete, el contenido del repositorio se revierte a la instant
 
 1. [Acceda al Administrador de paquetes.](#accessing)
 
-1. Abra los detalles del paquete que desea desinstalar de la lista de paquetes haciendo clic en el nombre del paquete.
+1. Abra los detalles del paquete que desee desinstalar de la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Más** -> **Desinstalar**, para eliminar el contenido de este paquete del repositorio.
+1. Clic **Más** > **Desinstalar**, para eliminar el contenido de este paquete del repositorio.
 
 1. Un cuadro de diálogo solicitará confirmación y enumerará todos los cambios que se realizan.
 
@@ -602,7 +602,7 @@ Repita el contenido de un paquete para instalarlo en la instancia de publicació
 
 1. Abra los detalles del paquete que desee duplicar desde la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Más** -> **Replicar**.
+1. Clic **Más** > **Replicar**.
 
 1. El paquete se duplica y los detalles se incluyen en el registro de actividad.
 

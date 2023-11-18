@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3491'
-ht-degree: 15%
+source-wordcount: '3489'
+ht-degree: 16%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Adobe Experience Manager Assets es una solución de administración de activos digitales (DAM) que se puede integrar con Adobe Creative Cloud para ayudar a los usuarios de DAM a trabajar junto con equipos creativos, lo que optimiza la colaboración en el proceso de creación de contenido.
@@ -37,7 +37,7 @@ Continúe leyendo para saber qué integraciones elegir entre el escritorio y el 
 | Simplifique la experiencia para creativos en equipos de escritorio | Optimice el acceso a los recursos desde DAM ([!DNL Assets]) para profesionales creativos, o más ampliamente, usuarios de escritorio que trabajan en aplicaciones nativas de creación de recursos. Necesitan una forma fácil y directa de descubrir, utilizar (abrir), editar y guardar cambios en Experience Manager y cargar nuevos archivos. | Windows o Mac para escritorio; aplicaciones de Creative Cloud |
 | Proporcionar recursos de alta calidad y listos para usar de [!DNL Adobe Stock] | Los especialistas en marketing ayudan a acelerar el proceso de creación de contenido al ayudar con la obtención y el descubrimiento de recursos. Los profesionales creativos utilizan los recursos aprobados desde sus herramientas creativas. | [!DNL Assets]; [!DNL Adobe Stock] marketplace; campos de metadatos |
 | Distribuir y compartir recursos por organizaciones | Los departamentos internos/sucursales locales y los socios externos, distribuidores y agencias utilizan los activos aprobados compartidos por la organización matriz. La organización desea compartir de forma segura y sin problemas los recursos creados para una reutilización más amplia. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
-| Generar automáticamente variaciones predefinidas de recursos cargados | Procese recursos automáticamente aprovechando la tecnología de transformación y gestión de medios única de Adobe para acciones predefinidas. Cree una lógica personalizada para definir sus propias acciones mediante API y microservicios de recursos. | [!DNL Assets]Interfaz de usuario |
+| Generar automáticamente variaciones predefinidas de recursos cargados | Procese recursos automáticamente mediante la tecnología de transformación y gestión de medios única de Adobe para acciones predefinidas. Cree una lógica personalizada para definir sus propias acciones mediante API y microservicios de recursos. | [!DNL Assets]Interfaz de usuario |
 
 ## Ofertas de Adobes para satisfacer las necesidades de colaboración {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -210,7 +210,7 @@ Adobe Asset Link ofrece una buena compatibilidad con este caso de uso:
 
 La aplicación de escritorio de Experience Manager proporciona un recurso compartido de red para los recursos abiertos en la aplicación nativa. De forma predeterminada, todos los cambios realizados localmente se cargan automáticamente en Experience Manager después de un breve tiempo. Con una configuración de este tipo, los ahorros frecuentes durante la fase de trabajo en curso se cargarían en Experience Manager y se versionarían, lo que crearía una gran cantidad de tráfico de red y posibles desafíos de escalabilidad, sin mencionar las versiones innecesarias en Experience Manager.
 
-El método recomendado aquí es utilizar una opción en la aplicación de escritorio de Experience Manager para desactivar las actualizaciones automatizadas y cargar cambios en los recursos en Experience Manager manualmente, aprovechando la acción de cargar cambios en la IU de estado de los recursos de la aplicación.
+El método recomendado aquí es utilizar una opción en la aplicación de escritorio de Experience Manager para desactivar las actualizaciones automatizadas y cargar cambios en los recursos en Experience Manager manualmente, mediante la acción cargar cambios en la interfaz de usuario del estado del recurso de la aplicación.
 
 #### Carga masiva en DAM {#bulk-upload-to-dam}
 

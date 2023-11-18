@@ -4,10 +4,10 @@ description: Aprenda a utilizar los fragmentos de contenido y la API de GraphQL 
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 93%
+source-wordcount: '1069'
+ht-degree: 89%
 
 ---
 
@@ -119,9 +119,9 @@ Ahora que ha ejecutado los dos tipos principales de consultas, está listo para 
 
 1. Defina los elementos que debe contener la consulta para el modelo de fragmento de contenido que ha seleccionado. De nuevo, escriba la llave de apertura `{` y, a continuación, pulse Ctrl+Espacio u Opción+Espacio para ver una lista de autocompletado. Seleccione `items` de las opciones.
 
-1. Toque o haga clic en el botón **Embellecer** para dar formato automáticamente al código y facilitar su lectura.
+1. Seleccione el **Adornar** para dar formato automáticamente al código de modo que sea más fácil de leer.
 
-1. Una vez finalizada, toque o haga clic en el botón **Reproducir** en la parte superior izquierda del editor para ejecutar la consulta. El editor completa automáticamente los `items`, que se resaltan brevemente en amarillo, y se ejecuta la consulta.
+1. Una vez finalizado, seleccione la **Reproducir** en la parte superior izquierda del editor para ejecutar la consulta. El editor completa automáticamente los `items`, que se resaltan brevemente en amarillo, y se ejecuta la consulta.
 
 1. Los resultados se muestran en el panel derecho, junto al editor de consultas.
 
@@ -177,13 +177,13 @@ Puede crear una consulta persistente que incluya los datos que desee consumir de
 
 1. En el elemento emergente de **Nombre de la consulta**, asígnele el nombre a la consulta `adventure-list`.
 
-1. Pulse o haga clic en **Guardar como**.
+1. Seleccionar **Guardar como**.
 
    ![Consulta persistente](assets/do-not-localize/persist-query.png)
 
 1. La consulta se mantiene tal y como se confirma con un mensaje de banner en la parte inferior de la pantalla. La consulta ahora aparece en el panel izquierdo de consultas persistentes de la ventana.
 
-1. Para que la consulta persistente esté disponible públicamente, debe publicarse, de forma muy similar a como se deben publicar los fragmentos de contenido. Clic **Publish** en la parte superior derecha del editor de consultas para publicar la consulta.
+1. Para que la consulta persistente esté disponible públicamente, debe publicarse, de modo muy similar a como se deben publicar los fragmentos de contenido. Clic **Publish** en la parte superior derecha del editor de consultas para publicar la consulta.
 
 1. La publicación se confirma mediante una notificación de banner.
 

@@ -1,16 +1,14 @@
 ---
 title: ¿Cómo se crea un Forms adaptable accesible?
 description: AEM Forms proporciona herramientas para crear Forms adaptable accesible y ayuda a cumplir con los estándares de accesibilidad.
-uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 98%
+source-wordcount: '2023'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +16,7 @@ ht-degree: 98%
 
 ## Introducción {#introduction}
 
-Un formulario accesible es un formulario que todos pueden utilizar, incluidos los usuarios con necesidades especiales. Los formularios adaptables incluyen una serie de características y funcionalidades que mejoran la funcionalidad de uso de los usuarios con diferentes capacidades. La creación de accesibilidad en los formularios adaptables no solo permite la mayor audiencia posible de contenido, sino que también es un requisito al proporcionar documentos en zonas geográficas en las que se exige el cumplimiento de los estándares de accesibilidad. [!DNL AEM Forms] ayuda a los desarrolladores de formularios a cumplir con los estándares de accesibilidad.
+Un formulario accesible es un formulario que todos pueden utilizar, incluidos los usuarios con necesidades especiales. Los Forms adaptables incluyen varias funciones y capacidades que mejoran la facilidad de uso de los usuarios con diferentes capacidades. La creación de accesibilidad en los formularios adaptables no solo permite la mayor audiencia posible de contenido, sino que también es un requisito al proporcionar documentos en zonas geográficas en las que se exige el cumplimiento de los estándares de accesibilidad. [!DNL AEM Forms] ayuda a los desarrolladores de formularios a cumplir con los estándares de accesibilidad.
 
 Durante la creación de un formulario adaptable, el autor debe tener en cuenta los siguientes puntos para crear un formulario adaptable accesible:
 
@@ -159,7 +157,7 @@ Los siguientes métodos abreviados del teclado están disponibles en [!DNL AEM F
 | Restablecer los datos rellenados en un formulario | Alt + R |
 | Enviar un formulario | Alt + S |
 
-Además, hay varias teclas de método abreviado de teclado disponibles para el **[!UICONTROL Selector de fechas]** en los formularios adaptables. Para habilitar las teclas de método abreviado, pulse el componente **[!UICONTROL Selector de fechas]** y pulse ![Configurar](assets/configure-icon.svg) para abrir las propiedades. En la sección **[!UICONTROL Patrones]**, seleccione un patrón de visualización mediante las listas desplegables **[!UICONTROL Tipo]** y **[!UICONTROL Patrón]**. Guarde las propiedades para habilitar el uso de teclas de método abreviado para el componente **[!UICONTROL Selector de fechas]**.
+Además, hay varias teclas de método abreviado de teclado disponibles para el **[!UICONTROL Selector de fechas]** en los formularios adaptables. Para habilitar las teclas de método abreviado, pulse el componente **[!UICONTROL Selector de fechas]** y pulse ![Configurar](assets/configure-icon.svg) para abrir las propiedades. En el **[!UICONTROL Patrones]** , seleccione un patrón de visualización usando el **[!UICONTROL Tipo]** y **[!UICONTROL Patrón]** listas desplegables. Guarde las propiedades para habilitar el uso de teclas de método abreviado para el componente **[!UICONTROL Selector de fechas]**.
 
 Las siguientes teclas de método abreviado de teclado están disponibles para el componente Selector de fecha en formularios adaptables:
 

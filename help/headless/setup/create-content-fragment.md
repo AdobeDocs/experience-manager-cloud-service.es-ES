@@ -2,10 +2,10 @@
 title: 'Creación de fragmentos de contenido: configuración sin encabezado'
 description: Aprenda a utilizar fragmentos de contenido de AEM para diseñar, crear, depurar y utilizar contenido independiente de las páginas para una entrega sin encabezado.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '347'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 87%
 
 ---
 
@@ -25,12 +25,12 @@ Los fragmentos de contenido contienen contenido estructurado y se pueden entrega
 
 Los autores de contenido generarán el número de fragmentos de contenido que corresponda para representar el contenido que crean. Esta será su tarea principal en AEM. Para los fines de esta guía de introducción, solo necesitamos crear una.
 
-1. Inicie sesión en AEM as a Cloud Service y, en el menú principal, seleccione **Navegación** -> **Fragmentos de contenido**.
+1. AEM Inicie sesión en el as a Cloud Service y, en el menú principal, seleccione **Navegación** > **Fragmentos de contenido**.
 
-1. Toque o haga clic en la [carpeta creada anteriormente.](create-assets-folder.md)
-1. Haga clic o pulse en **Crear**.
+1. Seleccione el [carpeta creada anteriormente.](create-assets-folder.md)
+1. Seleccione **Crear**.
 1. La creación de un fragmento de contenido se presenta como un cuadro de diálogo.
-Seleccione la ubicación y el modelo que desea utilizar para crear el fragmento de contenido.
+Seleccione la ubicación y el modelo que desee utilizar para crear el fragmento de contenido.
 
    * Los modelos disponibles dependen de la [**Configuración de nube** que definió para la carpeta de recursos](create-assets-folder.md) en el que está creando el fragmento de contenido.
    * Si el modelo no está disponible, compruebe la configuración de la carpeta de recursos.
@@ -39,7 +39,7 @@ Seleccione la ubicación y el modelo que desea utilizar para crear el fragmento 
 
    ![Cuadro de diálogo Crear fragmento de contenido nuevo](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. Toque o haga clic en **Crear** o **Crear y abrir**.
+1. Seleccionar **Crear** o  **Crear y abrir**.
 
 Los fragmentos de contenido pueden hacer referencia a otros fragmentos de contenido, lo que permite anidar una estructura de contenido si es necesario.
 

@@ -1,13 +1,13 @@
 ---
 title: Personalización de la creación de páginas
 description: AEM Obtenga información sobre los mecanismos que proporciona el as a Cloud Service para personalizar la funcionalidad de creación de páginas.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '969'
 ht-degree: 3%
 
 ---
-
 
 # Personalización de la creación de páginas {#customizing-page-authoring}
 
@@ -22,7 +22,7 @@ Al personalizar, puede crear su propia clientlib en `/apps.` La nueva clientlib 
 * Depender de la clientlib de creación `cq.authoring.editor.sites.page`.
 * Forme parte de las `cq.authoring.editor.sites.page.hook` categoría.
 
-Para obtener más información sobre clientlibs, consulte el documento [AEM Uso de bibliotecas del lado del cliente en el as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Consulte [AEM as a Cloud Service Uso de bibliotecas del lado del cliente en el uso de](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Superposiciones {#overlays}
 
@@ -32,7 +32,7 @@ Al crear una superposición, no es necesaria una copia 1:1 del original, ya que 
 
 Para obtener más información, consulte la [Conjunto de documentación JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-Para obtener más información sobre las superposiciones, consulte el documento [Superposiciones para Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+Para obtener más información sobre las superposiciones, consulte [Superposiciones para Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Añadir nueva capa (modo) {#add-new-layer-mode}
 

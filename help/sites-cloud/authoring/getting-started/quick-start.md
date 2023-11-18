@@ -2,10 +2,10 @@
 title: Guía rápida de introducción para la creación de páginas
 description: Guía rápida y de alto nivel para empezar a crear contenido de página.
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 90%
+source-wordcount: '1541'
+ht-degree: 84%
 
 ---
 
@@ -51,7 +51,7 @@ Antes de comenzar la guía de inicio rápido, aquí hay una pequeña colección 
 
 >[!NOTE]
 >
->Existen varios métodos abreviados del teclado que pueden hacer que la experiencia de creación sea más sencilla.
+>Existen varios métodos abreviados del teclado que pueden facilitar la experiencia de creación.
 >
 >* [Métodos abreviados del teclado al editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [Métodos abreviados del teclado para las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
@@ -87,17 +87,17 @@ Hasta [crear una página](/help/sites-cloud/authoring/fundamentals/organizing-pa
 
 ### Seleccionar su página para ejecutar acciones adicionales   {#selecting-your-page-for-further-action}
 
-Puede seleccionar una página para poder realizar acciones en ella. Si se selecciona una página, se actualizará automáticamente la barra de herramientas para que se muestren las acciones relevantes para ese recurso.
+Puede seleccionar una página para poder actuar en ella. Si se selecciona una página, se actualizará automáticamente la barra de herramientas para que se muestren las acciones relevantes para ese recurso.
 
 La forma de seleccionar una página depende de la vista que utilice en la consola:
 
 1. Vista de columna:
 
-   * Pulse o haga clic en la miniatura del recurso en cuestión: la miniatura muestra una marca de verificación para mostrar que se ha seleccionado.
+   * Seleccione la miniatura del recurso en cuestión: la miniatura se superpone con una marca de verificación para indicar que se ha seleccionado.
 
 1. Vista en lista:
 
-   * Pulse o haga clic en la miniatura del recurso en cuestión: la miniatura muestra una marca de verificación para mostrar que se ha seleccionado.
+   * Seleccione la miniatura del recurso en cuestión: la miniatura se superpone con una marca de verificación para indicar que se ha seleccionado.
 
 1. Vista de tarjeta:
 
@@ -114,7 +114,7 @@ La forma de seleccionar una página depende de la vista que utilice en la consol
 
 Hay [acciones rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) disponibles:
 
-1. [Desplácese hasta la página](#finding-your-page) sobre la que quiera llevar a cabo una acción.
+1. [Navegue hasta la página](#finding-your-page) desea seguir actuando.
 1. Pase el puntero del ratón sobre la tarjeta que representa el recurso requerido. Se muestran las acciones rápidas:
 
    ![Acciones de tarjeta](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -147,7 +147,7 @@ Para editar la página:
 
    * [Editar el contenido de un componente existente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) en la página:
 
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice el icono **Editar** (lápiz) para abrir el cuadro de diálogo.
+      * Abra la barra de herramientas de componentes seleccionando. Utilice el icono **Editar** (lápiz) para abrir el cuadro de diálogo.
       * Abra el editor del componente pulsando y manteniendo pulsado o haciendo doble clic lento. Se muestran las acciones disponibles (para algunos componentes se trata de una selección limitada).
       * Para ver todas las acciones disponibles, acceda al modo de pantalla completa mediante:
 
@@ -155,16 +155,16 @@ Para editar la página:
 
    * [Configurar las propiedades de un componente existente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice el icono **Configurar** (llave inglesa) para abrir el cuadro de diálogo.
+      * Abra la barra de herramientas de componentes seleccionando. Utilice el icono **Configurar** (llave inglesa) para abrir el cuadro de diálogo.
 
    * [Desplazar un componente](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) mediante las siguientes opciones:
 
       * Arrastre el componente en cuestión a la ubicación nueva.
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice los iconos **Cortar** y **Pegar** donde sea necesario.
+      * Abra la barra de herramientas de componentes seleccionando. Utilice el **Cortar** entonces **Pegar** iconos donde sea necesario.
 
    * [Copiar (y pegar)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un componente:
 
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice los iconos **Copiar** y **Pegar** cuando sea necesario.
+      * Abra la barra de herramientas de componentes seleccionando. Utilice el **Copiar** entonces **Pegar** iconos según sea necesario.
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ Para editar la página:
 
    * [Eliminar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un componente:
 
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella y utilice el icono **Eliminar.**
+      * Abra la barra de herramientas de componentes seleccionando y, a continuación, utilice la **Eliminar** icono.
 
    * [Añadir anotaciones](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) a la página:
 
@@ -292,7 +292,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
    ![Vista Referencias](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. Pulse o haga clic en el tipo de referencia requerido para mostrar más detalles y (cuando corresponda) realizar más acciones.
+1. Seleccione el tipo de referencia necesario para mostrar más detalles y (cuando corresponda) realizar más acciones.
 
 ### Crear una versión de su página   {#creating-a-version-of-your-page}
 
@@ -302,7 +302,7 @@ Para crear una [versión](/help/sites-cloud/authoring/features/page-versions.md)
 
    ![Opción de vista Cronología](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Pulse o haga clic en los puntos suspensivos en la parte inferior derecha de la columna Cronología para mostrar botones adicionales, como **Guardar como versión**.
+1. Seleccione los puntos suspensivos en la parte inferior derecha de la columna Cronología para mostrar botones adicionales, como **Guardar como versión**.
 
    ![Vista Cronología](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan vers
 
    Si ya se ha guardado una versión de su página, se indica en la cronología.
 
-1. Pulse o haga clic en la versión que desee restaurar. Esto mostrará botones de acción adicionales:
+1. Seleccione la versión que desea restaurar. Esto mostrará botones de acción adicionales:
 
    * **Volver a esta versión**
 

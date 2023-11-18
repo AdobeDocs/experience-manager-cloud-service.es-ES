@@ -2,10 +2,10 @@
 title: Su bandeja de entrada
 description: Aprenda a utilizar las notificaciones que llegan a la bandeja de entrada para administrar sus tareas.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 97%
+source-wordcount: '910'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Puede recibir notificaciones desde varias áreas de AEM, incluidos flujos de tra
       * Estos pueden ser producto del paso **Participante** del flujo de trabajo.
    * Elementos con errores, que permiten a los administradores volver a intentar realizar un paso que ha fallado.
 
-Estas notificaciones las recibe en su propia bandeja de entrada, donde puede verlas y realizar acciones.
+Recibirá estas notificaciones en su propia bandeja de entrada, donde podrá verlas y actuar en consecuencia.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Desde cualquiera de las consolas, en el encabezado se muestra el número actual 
 
 Para abrir la bandeja de entrada de notificaciones AEM:
 
-1. Toque o haga clic en el indicador de la barra de herramientas.
+1. Seleccione el indicador en la barra de herramientas.
 
 1. Seleccione **Ver todo**. El **AEM Bandeja de entrada de** abre. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
 1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se realiza con el selector de vistas (barra de herramientas, arriba a la derecha).

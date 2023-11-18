@@ -2,10 +2,10 @@
 title: Uso de tareas
 description: Las tareas representan elementos de trabajo por realizar en el contenido y se utilizan en los proyectos para determinar el nivel de compleción de las tareas actuales
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '576'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ Haga clic en los puntos suspensivos (...) en el mosaico Tarea para mostrar la li
 
 #### Detalles de la tarea {#task-details}
 
-Para obtener más información sobre una tarea determinada, en la lista de tareas, pulse o haga clic en la tarea y en **Abrir**.
+Para obtener más información sobre una tarea determinada, en la Lista de tareas, seleccione la tarea y **Abrir**.
 
 ![Detalles de la tarea](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -63,12 +63,12 @@ Puede agregar nuevas tareas a los proyectos. A continuación, estas tareas apare
 
 Para añadir una tarea, haga lo siguiente:
 
-1. En el mosaico **Tareas** del proyecto, pulse o haga clic en el icono +. Se abre la ventana **Agregar tarea**.
+1. En el proyecto, en la variable **Tareas** , seleccione el icono +. Se abre la ventana **Agregar tarea**.
 1. Escriba información sobre la tarea. El título de la tarea y el grupo al que está asignada son obligatorios. La información adicional, como la ruta de contenido, la descripción, la prioridad de la tarea y la fecha de vencimiento, son opcionales. Además, puede seleccionar la pestaña **Avanzadas** para introducir el nombre de la tarea, que se utiliza para asignar un nombre a la dirección URL.
 
    ![Adición de una tarea](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. Toque o haga clic en **Crear**.
+1. Seleccione **Crear**.
 
 ## Trabajar con tareas en la bandeja de entrada {#working-with-tasks-in-the-inbox}
 

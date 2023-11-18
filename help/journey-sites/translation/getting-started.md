@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 95%
+source-wordcount: '1390'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,7 @@ Este documento le ayuda a comprender cómo empezar a traducir contenido de sitio
 
 ## Requisitos y requisitos previos {#requirements-prerequisites}
 
-Antes de comenzar a traducir el contenido de AEM, existen varios requisitos.
+AEM Antes de empezar a traducir el contenido de la, existen varios requisitos.
 
 ### Conocimiento {#knowledge}
 
@@ -65,7 +65,7 @@ La consola Sites proporciona una descripción general de la estructura del conte
 
 Para acceder a la consola Sites:
 
-1. En el menú de navegación global, pulse o haga clic en **Navegación** -> **Sitios**.
+1. En el menú de navegación global, seleccione **Navegación** > **Sites**.
 1. La consola Sites se abre en el nivel superior del contenido.
 1. Asegúrese de que la **Vista de columna** se selecciona mediante el selector de vista situado en la parte superior derecha de la ventana.
 
@@ -75,7 +75,7 @@ Para acceder a la consola Sites:
 
    ![Jerarquía de contenido](assets/sites-console-hierarchy.png)
 
-1. Al tocar o hacer clic en la casilla de verificación de un elemento de una columna, se selecciona ese elemento y se muestran sus detalles en la columna de la derecha, y varias acciones disponibles en la barra de herramientas de arriba.
+1. Al tocar o hacer clic en la casilla de verificación de un elemento de una columna, se selecciona ese elemento y se muestran sus detalles en la columna de la derecha, así como varias acciones disponibles en la barra de herramientas de arriba.
 
    ![Selección de contenido](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ La consola Sites le permite desplazarse por el contenido y proporciona una descr
 
 Para editar una página:
 
-1. Utilice la consola Sites para localizar y seleccionar una página. Recuerde que debe tocar o hacer clic en la casilla de verificación de una página individual para seleccionarla.
+1. Utilice la consola Sites para localizar y seleccionar una página. Recuerde que debe seleccionar la casilla de verificación de una página individual para seleccionarla.
 
    ![Selección de una página para editarla](assets/sites-editor-select-page.png)
 

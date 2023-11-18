@@ -3,10 +3,10 @@ title: Administración de canalizaciones
 description: Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 46%
+source-wordcount: '938'
+ht-degree: 45%
 
 ---
 
@@ -41,7 +41,7 @@ El **Canalizaciones** La ventana muestra una lista completa de todas las canaliz
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Desde el **Resumen del programa** página, toque o haga clic en **Canalizaciones** para cambiar a la pestaña **Canalizaciones** ventana.
+1. Desde el **Resumen del programa** , seleccione la **Canalizaciones** para cambiar a la pestaña **Canalizaciones** ventana.
 
 1. Aquí puede ver una lista de todas las canalizaciones para el programa, así como iniciar y detener la ejecución de la canalización como lo haría en el **Tarjeta de canalizaciones**.
 
@@ -57,7 +57,7 @@ El **Actividades** La ventana muestra una lista completa de todas las ejecucione
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Desde el **Resumen del programa** página, toque o haga clic en **Actividad** para cambiar a la pestaña **Actividad** ventana.
+1. Desde el **Resumen del programa** , seleccione la **Actividad** para cambiar a la pestaña **Actividad** ventana.
 
 1. Aquí puede ver una lista de todas las ejecuciones de canalización del programa, incluidas las ejecuciones actuales e históricas.
 
@@ -87,7 +87,7 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
 
 1. El cuadro de diálogo **Editar canalización de producción** o **Editar canalización que no sea de producción** se mostrará y le permitirá editar los mismos detalles introducidos al crear la canalización.
 
-   * Consulte las siguientes páginas para obtener más información sobre todos los campos y las opciones de configuración disponibles para las canalizaciones.
+   * Consulte las siguientes páginas para obtener más información sobre los campos y las opciones de configuración disponibles para las canalizaciones.
       * [Configurar canalizaciones de producción](configuring-production-pipelines.md)
       * [Configurar canalizaciones que no sean de producción](configuring-non-production-pipelines.md)
 
@@ -127,7 +127,7 @@ Una vez completado el paso de una canalización, se presenta un resumen.
 
 ![Resumen del paso](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
-Haga clic o pulse en **Ver detalles** vínculo para mostrar el **Duración** sección. Esto incluye la duración promedio de la canalización en función de la tendencia histórica para ese programa.
+Seleccione el **Ver detalles** vínculo para mostrar el **Duración** sección. Esto incluye la duración promedio de la canalización en función de la tendencia histórica para ese programa.
 
 ![Duración](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
@@ -141,20 +141,20 @@ Si una canalización se encuentra en la fase de validación o compilación de im
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. En la página de información general del programa, haga clic en el botón de los tres puntos de la canalización que desee cancelar en el **Canalizaciones** Tarjeta de.
+1. En la página de información general del programa, haga clic en el botón de puntos suspensivos de la canalización que desee cancelar en **Canalizaciones** Tarjeta de.
 
    ![Cancelar una canalización](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
-1. Haga clic o pulse **Cancelar**.
+1. Seleccionar **Cancelar**.
 
 También puede cancelar una canalización desde la página de detalles de la canalización.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a **Canalizaciones** de la pestaña **Resumen del programa** y toque o haga clic en la canalización que desee cancelar.
+1. Vaya a **Canalizaciones** de la pestaña **Resumen del programa** y seleccione la canalización que desee cancelar.
 
 1. Se le redirigirá a la página de detalles de la canalización en ejecución.
 
    ![Cancelar detalles de canalización](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
-1. Haga clic o pulse **Cancelar**.
+1. Seleccionar **Cancelar**.

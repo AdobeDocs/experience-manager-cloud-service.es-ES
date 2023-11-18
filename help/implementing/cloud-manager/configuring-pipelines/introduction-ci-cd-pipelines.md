@@ -3,10 +3,10 @@ title: Canalizaciones de CI/CD
 description: Obtenga información sobre las canalizaciones de CI/CD de Cloud Manager y cómo se pueden utilizar para implementar su código de forma eficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 92%
+source-wordcount: '1418'
+ht-degree: 90%
 
 ---
 
@@ -61,7 +61,7 @@ Estas se describen en detalle más adelante en este documento.
 
 ### Explicación de las canalizaciones de CI-CD en Cloud Manager {#understand-pipelines}
 
-La siguiente tabla resume todas las canalizaciones disponibles en Cloud Manager y sus usos.
+La siguiente tabla resume las canalizaciones disponibles en Cloud Manager y sus usos.
 
 | Tipo de canalización | Implementación o calidad del código | Código fuente | Función | Notas |
 |--- |--- |--- |---|---|
@@ -115,7 +115,7 @@ Para aprender a configurar canalizaciones de pila completa, consulte los siguien
 
 Con una canalización de configuración, puede configurar e implementar reglas de filtro de tráfico, incluidas las reglas WAF, en cuestión de minutos.
 
-Consulte el documento [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md) para obtener información sobre cómo administrar las configuraciones en el repositorio de modo que se implementen correctamente.
+Consulte [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md) para obtener información sobre cómo administrar las configuraciones en el repositorio de modo que se implementen correctamente.
 
 ### Configuración de canalizaciones de configuración {#configure-config-deployment}
 

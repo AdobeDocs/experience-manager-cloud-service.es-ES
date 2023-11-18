@@ -2,10 +2,10 @@
 title: Fase de preparación
 description: AEM Obtenga información acerca de los pasos que debe seguir para asegurarse de que la instalación de la está lista para moverse a la nube.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -34,7 +34,7 @@ AEM Este documento le ayuda a comprender qué factores debe tener en cuenta para
 
 AEM as a Cloud Service AEM trae muchas nuevas características y posibilidades para la gestión de sus Proyectos de la.
 
-AEM AEM Junto con estas mejoras, se han introducido varias diferencias entre las instalaciones on-premise de y Adobe Managed Services, en comparación con las instalaciones on-premise de as a Cloud Service.
+AEM Junto con estas mejoras, se han introducido varias diferencias entre las instalaciones on-premise de y Adobe Managed Services AEM, en comparación con las as a Cloud Service.
 
 AEM La lista de los elementos de la siguiente tabla es el subconjunto de los cambios más relevantes para una migración a as a Cloud Service. Puede consultar la lista completa de cambios importantes [aquí](/help/release-notes/aem-cloud-changes.md).
 
@@ -150,7 +150,7 @@ AEM La lista de los elementos de la siguiente tabla es el subconjunto de los cam
   <tr>
     <td>Cambios en la autenticación</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=es">Compatibilidad con IMS para AEM as a Cloud Service</td>
-    <td>Si anteriormente utilizaba la integración con SAML 2.0 tanto en creación como en publicación antes de pasar a Cloud Service AEM, el cambio principal es que Autor as a Cloud Service solo se integra con Adobe IMS. AEM Sin embargo, el nivel de publicación as a Cloud Service de la todavía puede utilizar SAML u otras integraciones de autenticación. AEM El as a Cloud Service ofrece compatibilidad con la autenticación IMS solo para usuarios creadores, administradores y desarrolladores. La autenticación IMS no ofrece compatibilidad con usuarios finales externos de sitios de clientes como visitantes del sitio.</td>
+    <td>Si anteriormente utilizaba la integración con SAML 2.0 tanto en creación como en publicación antes de pasar a Cloud Service AEM, el cambio principal es que Autor as a Cloud Service solo se integra con Adobe IMS. AEM Sin embargo, el nivel de publicación as a Cloud Service de la todavía puede utilizar SAML u otras integraciones de autenticación. AEM as a Cloud Service ofrece compatibilidad con la autenticación IMS solo para usuarios creadores, administradores y desarrolladores. La autenticación IMS no ofrece compatibilidad con usuarios finales externos de sitios de clientes como visitantes del sitio.</td>
   </tr>
 </tbody>
 </table>

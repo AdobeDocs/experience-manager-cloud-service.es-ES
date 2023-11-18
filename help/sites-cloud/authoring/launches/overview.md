@@ -2,10 +2,10 @@
 title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar contenido con eficacia para una versión futura. También permiten realizar los cambios para una publicación en el futuro, a la vez que se mantienen las páginas actuales
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 96%
+source-wordcount: '899'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ Cuando llegue el trimestre siguiente, las páginas de lanzamiento se promocionan
 
 También se puede realizar lo siguiente:
 
-* Se han creado lanzamientos para varias ramas de raíz. Si bien puede crear el lanzamiento para todo el sitio (y realizar los cambios allí), este método es poco práctico, ya que es necesario copiar todo el sitio. Cuando hay cientos o incluso miles de páginas implicadas, los requisitos del sistema y el rendimiento se ven afectados por la acción de copiar y, posteriormente, por las comparaciones necesarias para las tareas de promoción.
+* Se han creado lanzamientos para varias ramas de raíz. Aunque puede crear el lanzamiento para todo el sitio (y realizar los cambios allí), esto puede resultar poco práctico, ya que se debe copiar todo el sitio. Cuando hay cientos o incluso miles de páginas implicadas, los requisitos del sistema y el rendimiento se ven afectados por la acción de copiar y, posteriormente, por las comparaciones necesarias para las tareas de promoción.
 * Cree lanzamientos anidados (un lanzamiento dentro de otro lanzamiento). Esto permite crear un lanzamiento a partir de uno existente, de modo que los autores puedan aprovechar los cambios ya realizados, en lugar de tener que realizar los mismos cambios varias veces para cada lanzamiento.
 
 En esta sección se describe cómo crear, editar y promocionar (y, si fuera necesario [eliminar](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) páginas de lanzamiento desde la consola Sitios o la [consola Lanzamientos](#the-launches-console):
@@ -96,7 +96,7 @@ Los lanzamientos permiten realizar lo siguiente:
 
    ![Referencias de lanzamientos en la consola Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Pulse o haga clic en el lanzamiento adecuado. Se mostrará una lista de acciones posibles:
+1. Seleccione el lanzamiento adecuado y se mostrará la lista de acciones posibles:
 
    ![Acciones que se deben realizar en lanzamientos desde la consola Sitios](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

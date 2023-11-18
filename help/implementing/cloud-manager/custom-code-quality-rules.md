@@ -2,9 +2,9 @@
 title: Reglas de calidad del código personalizadas
 description: Esta página describe las reglas de calidad del código personalizadas ejecutadas por Cloud Manager como parte de las pruebas de calidad del código. Se basan en las prácticas recomendadas de ingeniería de Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4097'
+source-wordcount: '4095'
 ht-degree: 87%
 
 ---
@@ -542,7 +542,7 @@ AEM Las aplicaciones de se suelen comunicar con otras aplicaciones mediante el p
 
 Esta regla comprueba que un objeto HttpClient de este tipo no es privado dentro de un método, sino global en un nivel de clase, por lo que se puede reutilizar. En este caso, el campo httpClient debe establecerse en el constructor de la clase o en el `activate()` (si esta clase es un componente o servicio OSGi).
 
-Compruebe también la [Guía de optimización](https://hc.apache.org/httpclient-legacy/performance.html) de HttpClient para conocer algunas prácticas recomendadas sobre el uso de HttpClient.
+Compruebe la [Guía de optimización](https://hc.apache.org/httpclient-legacy/performance.html) de HttpClient para conocer algunas prácticas recomendadas sobre el uso de HttpClient.
 
 #### Código no conforme {#non-compliant-code-14}
 

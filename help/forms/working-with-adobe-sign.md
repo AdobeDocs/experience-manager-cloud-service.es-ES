@@ -6,10 +6,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3172'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -168,7 +168,7 @@ Para seleccionar un servicio de Cloud Service y la petición de firma:
 
    Si la lista **[!UICONTROL Adobe Sign Cloud Service]** está vacía, consulte el artículo [Configurar [!DNL Adobe Sign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) para configurar el servicio.
 
-   La lista desplegable enumera los servicios de Cloud Service que existen en la carpeta `global` en Herramientas > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Además, la lista desplegable también enumera los servicios de Cloud Service que existen en la carpeta que selecciona en el campo **[!UICONTROL Contenedor de configuración]** al crear un formulario adaptable.
+   La lista desplegable enumera los Cloud Service que existen en la variable `global` en Herramientas > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Además, la lista desplegable también enumera los Cloud Service que existen en la carpeta que selecciona en la **[!UICONTROL Contenedor de configuración]** al crear un formulario adaptable.
 
 1. Seleccione el orden de firma del cuadro de diálogo **[!UICONTROL Los destinatarios pueden completar]**. Los destinatarios pueden firmar un formulario adaptable **[!UICONTROL secuencialmente]** (un destinatario tras otro) o **[!UICONTROL simultáneamente]** (en cualquier orden).
 
@@ -286,7 +286,7 @@ De forma opcional, también puede asociar un bindref al ID del acuerdo (agreemen
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 La experiencia de firma de formularios está lista. Puede obtener una vista previa del formulario para comprobar la experiencia de firma. En el formulario publicado, los campos de [!DNL Adobe Sign] Block se muestran cuando un destinatario recibe el formulario para firmar a través de un correo electrónico. Si la opción **[!UICONTROL ¿Cuándo son la misma persona el destinatario y quien rellena el formulario?]** se marca como sí y se cumple la condición, se redirige al usuario al acuerdo de Adobe Sign después de los envíos y el usuario puede firmar el documento inmediatamente, en lugar de esperar a que el acuerdo aparezca en el correo electrónico.

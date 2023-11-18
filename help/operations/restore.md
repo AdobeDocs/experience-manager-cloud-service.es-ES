@@ -2,10 +2,10 @@
 title: Restauración de contenidos en AEM as a Cloud Service
 description: Obtenga información sobre cómo restaurar el contenido de AEM as a Cloud Service desde la copia de seguridad mediante Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 71%
+source-wordcount: '1158'
+ht-degree: 60%
 
 ---
 
@@ -21,7 +21,7 @@ Obtenga información sobre cómo restaurar el contenido de AEM as a Cloud Servic
 >* La función solo está disponible en entornos de desarrollo.
 >* Las restauraciones de contenido están limitadas a dos al mes por programa.
 >
->AEM Para obtener más información sobre el sistema de copia de seguridad y restauración existente para el as a Cloud Service de la, consulte el documento [AEM Copia de seguridad y restauración en as a Cloud Service](/help/operations/backup.md)
+>AEM Para obtener más información sobre el sistema de copia de seguridad y restauración existente para los as a Cloud Service de la, consulte [AEM Copia de seguridad y restauración en as a Cloud Service](/help/operations/backup.md).
 
 ## Información general {#overview}
 
@@ -58,7 +58,7 @@ En primer lugar, determine el lapso de tiempo del contenido que desea restaurar.
 
    * También puede navegar directamente a la pestaña **Restaurar contenido** de la página de detalles de un entorno específico.
 
-1. En la pestaña **Restaurar contenido** de la página de detalles del entorno, seleccione primero el lapso de tiempo de la restauración en la lista desplegable **Tiempo para la restauración**.
+1. En el **Restaurar contenido** de la página de detalles del entorno, seleccione primero el lapso de tiempo de la restauración en la pestaña **Tiempo para la restauración** lista desplegable.
 
    1. Si selecciona **Últimas 24 horas** la vecina **Hora** El campo permite especificar el tiempo exacto dentro de las últimas 24 horas para la restauración.
 
@@ -72,13 +72,13 @@ En primer lugar, determine el lapso de tiempo del contenido que desea restaurar.
 
    ![Copias de seguridad disponibles](assets/backup-available.png)
 
-1. Busque la copia de seguridad que desea restaurar mediante el icono de información para ver información sobre la versión del código y la versión de AEM que se incluye en la copia de seguridad y tenga en cuenta las implicaciones de una restauración cuando [seleccione la copia de seguridad.](#choosing-the-right-backup)
+1. AEM Busque la copia de seguridad que desea restaurar mediante el icono de información para ver información sobre la versión del código y la versión incluidos en dicha copia de seguridad y tenga en cuenta las implicaciones de una restauración cuando [elegir la copia de seguridad.](#choosing-the-right-backup)
 
    ![Información de copia de seguridad](assets/backup-info.png)
 
-   * Tenga en cuenta que la marca de tiempo mostrada para las opciones de restauración se basa en la zona horaria del equipo del usuario.
+   * La marca de tiempo mostrada para las opciones de restauración se basa en la zona horaria del equipo del usuario.
 
-1. Haga clic en el icono **Restaurar** en el extremo derecho de la fila que representa la copia de seguridad que desea restaurar para iniciar el proceso de restauración.
+1. Haga clic en **Restaurar** en el extremo derecho de la fila que representa la copia de seguridad que desea restaurar para iniciar el proceso de restauración.
 
 1. Consulte los detalles en el cuadro de diálogo **Restaurar contenido** antes de confirmar la solicitud haciendo clic en **Restaurar**.
 
@@ -103,7 +103,7 @@ Existen varios escenarios.
    * En este caso, no se mostrará un ID de compromiso.
    * Se recomienda clonar ambos repositorios y utilizar una herramienta de diferenciación para comparar las ramas.
 
-Además, tenga en cuenta que una restauración puede causar que los entornos de producción y ensayo no estén sincronizados. Usted es responsable de las consecuencias de restaurar contenido.
+Además, tenga en cuenta que una restauración puede provocar que los entornos de producción y ensayo no estén sincronizados. Usted es responsable de las consecuencias de restaurar contenido.
 
 ## Actividad de restauración {#restore-activity}
 

@@ -2,10 +2,10 @@
 title: Configurar la canalización
 description: Cree una canalización front-end para administrar la personalización del tema del sitio.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 96%
+source-wordcount: '956'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ De este modo, el desarrollo de front-end puede funcionar de forma independiente 
 
 1. Inicie sesión en Adobe Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Cloud Manager enumera los distintos programas disponibles. Toque o haga clic en el que desee administrar. Si acaba de empezar con AEM as a Cloud Service, es probable que solo tenga disponible un programa.
+1. Cloud Manager enumera los distintos programas disponibles. Seleccione el que desee administrar. Si acaba de empezar con AEM as a Cloud Service, es probable que solo tenga disponible un programa.
 
    ![Selección de un programa en Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -71,7 +71,7 @@ Observe el nombre del programa al que ha accedido o copie la URL. Debe proporcio
 
 Ahora que ha accedido a Cloud Manager, puede crear una canalización para la implementación de front-end.
 
-1. En la sección **Canalizaciones** de la página Cloud Manager, toque o haga clic en el botón **Agregar**.
+1. En el **Canalizaciones** de la página Cloud Manager, seleccione la opción **Añadir** botón.
 
    ![Canalizaciones](assets/pipelines-add.png)
 
@@ -83,7 +83,7 @@ Ahora que ha accedido a Cloud Manager, puede crear una canalización para la imp
 
    ![Agregar configuración de canalización](assets/add-pipeline-configuration.png)
 
-1. Haga clic o pulse **Continuar**.
+1. Seleccionar **Continuar**.
 
 1. En la pestaña **Código fuente**:
    * Seleccione **Código front-end** como el tipo de código que se va a implementar.
@@ -94,7 +94,7 @@ Ahora que ha accedido a Cloud Manager, puede crear una canalización para la imp
 
    ![Información del código fuente para agregar una canalización](assets/add-pipeline-source-code.png)
 
-1. Haga clic o pulse **Guardar**.
+1. Seleccione **Guardar**.
 
 La nueva canalización se crea y se puede ver en la sección **Canalizaciones** de la ventana Cloud Manager. Si toca hacer clic en los puntos suspensivos después del nombre de la canalización, aparecerán opciones para editar o ver los detalles según sea necesario.
 

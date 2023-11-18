@@ -3,13 +3,13 @@ title: Markdown
 description: Entender cómo el editor de fragmentos de contenido utiliza la sintaxis de markdown para permitirle crear fácilmente contenido, tanto para la creación de páginas como para la entrega sin encabezado.
 feature: Content Fragments
 role: User
-source-git-commit: af97fec754edae6216551763fd20cad5ee07179c
+exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 91%
+source-wordcount: '559'
+ht-degree: 88%
 
 ---
-
 
 # Markdown {#markdown}
 
@@ -31,7 +31,7 @@ Puede definir lo siguiente:
 
 ## Anotación de encabezado {#heading-notation}
 
-Para crear un encabezado, coloque una almohadilla (#) delante del encabezado. Se utiliza una almohadilla (#) para un H1, dos (##) para un H2, etc. Se pueden usar hasta seis almohadillas. Por ejemplo:
+Para crear un encabezado, coloque una almohadilla (#) delante del encabezado. Se utiliza una almohadilla (#) para un H1, dos (##) para un H2 y así sucesivamente. Se pueden usar hasta seis almohadillas. Por ejemplo:
 
     `## This is an H2`
 

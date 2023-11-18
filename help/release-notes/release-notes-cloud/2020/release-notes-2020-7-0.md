@@ -2,10 +2,10 @@
 title: Notas de la versión 2020.7.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.7.0."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 78%
+source-wordcount: '1032'
+ht-degree: 76%
 
 ---
 
@@ -88,7 +88,7 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.7.0 es 9 de jul
 
 * Las canalizaciones de Cloud Manager ahora admiten las variables y los secretos establecidos por el cliente.
 
-  Consulte Variables de canalización para obtener más información.
+  Consulte las Variables de canalización para obtener más información.
 
 * Ahora se admiten repositorios de Maven privados enlazados con la autenticación.
 
@@ -105,7 +105,7 @@ Consulte Uso de la compatibilidad con Java 11 para obtener más información.
 
 * Ciertos errores en el proceso de calidad del código podrían ocasionar que el archivo de registro no se genere correctamente.
 
-* Algunas veces al crear un nuevo programa, el nombre sugerido era un duplicado de un nombre de programa existente.
+* Al crear un programa, el nombre sugerido a veces devolvía un duplicado de un nombre de programa existente.
 
 * Algunos registros de pasos de canalización de gran tamaño no se podían descargar de forma consistente a través de la interfaz de usuario.
 

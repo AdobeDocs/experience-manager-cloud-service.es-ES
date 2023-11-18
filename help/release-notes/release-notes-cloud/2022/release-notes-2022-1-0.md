@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.1.0 de la versión [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión 2022.1.0 de la versión [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 93%
+source-wordcount: '1072'
+ht-degree: 87%
 
 ---
 
@@ -88,12 +88,12 @@ Eche un vistazo al vídeo [Información general sobre la versión de enero de 20
 * Componentes myAccount mejorados
 * El componente Recomendación de producto admite tipos de página adicionales (página de inicio, carro de compras, confirmación de pedido)
 * **Lista de deseos**
-   * Los visitantes con sesión iniciada pueden añadir productos a una lista de deseos
+   * Los visitantes que iniciaron sesión pueden agregar productos a una lista de artículos deseados
    * Es posible administrar la lista de deseos y sus productos a través de myAccount
    * El botón Añadir a la lista de deseos se puede activar o desactivar en un nivel de componente mediante una directiva (por ejemplo, teaser de productos, detalles de productos
    * Disponible como componente principal y en la AEM Venia Storefront
 
-![Lista de deseos](/help/assets/CIF/wishlist.png)
+<!-- Image was not found during PR validation despite correct path ![Wishlist](/help/assets/CIF/wantlist.png) -->
 
 ## Cloud Manager {#cloud-manager}
 

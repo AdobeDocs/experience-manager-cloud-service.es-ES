@@ -2,9 +2,9 @@
 title: Introducción al contenido sin encabezado de AEM as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3095'
+source-wordcount: '3093'
 ht-degree: 94%
 
 ---
@@ -123,7 +123,7 @@ Con el editor de SPA, la SPA no solo consume contenido de AEM, sino que también
 
 ## Condiciones y requisitos previos {#requirements-prerequisites}
 
-Antes de comenzar con su proyecto sin encabezado de AEM, existen varios requisitos.
+AEM Antes de comenzar un proyecto de integración sin encabezado, deben cumplirse varios requisitos
 
 ### Conocimiento {#knowledge}
 

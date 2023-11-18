@@ -2,10 +2,10 @@
 title: Gestión básica
 description: Familiarícese con la navegación por AEM y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2970'
-ht-degree: 95%
+source-wordcount: '2943'
+ht-degree: 91%
 
 ---
 
@@ -31,21 +31,21 @@ Inmediatamente después de iniciar sesión, llegará al [Panel de navegación](#
 
 ![Panel de navegación](/help/sites-cloud/authoring/assets/navigation.png)
 
-Para comprender bien el uso básico de AEM, este documento se basa en la consola **Sitios**. Pulse o haga clic en **Sitios** para comenzar.
+Para comprender bien el uso básico de AEM, este documento se basa en la consola **Sitios**. Seleccionar en **Sites** para empezar.
 
 ## Navegación de productos    {#product-navigation}
 
-Cada vez que se accede por primera vez a una consola, se inicia un tutorial de navegación por los productos. Tómese un minuto y haga clic o pulse para obtener una buena descripción general del funcionamiento básico de AEM.
+Cada vez que se accede por primera vez a una consola, se inicia un tutorial de navegación por los productos. AEM Dedique un minuto a seleccionar hasta el final para obtener una buena descripción general de la gestión básica de los recursos de la.
 
 ![Tutorial de navegación](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Toque o haga clic en **Siguiente** para avanzar a la siguiente página de la descripción general. Para cerrar, pulse o haga clic en **Cerrar**, o pulse o haga clic fuera del cuadro de diálogo de la descripción general.
+Seleccionar **Siguiente** para avanzar a la siguiente página de la descripción general. Seleccionar **Cerrar** o seleccione fuera del cuadro de diálogo información general para cerrar.
 
 La descripción general se reiniciará la próxima vez que acceda a una consola, a menos que vea todas las diapositivas o marque la opción **No volver a mostrar esto**.
 
 ## Navegación global {#global-navigation}
 
-Puede navegar entre las consolas con el panel de navegación global. Se activa como un menú desplegable a pantalla completa cuando pulse o haga clic en el vínculo de Adobe Experience Manager en la parte superior izquierda de la pantalla.
+Puede navegar entre las consolas con el panel de navegación global. Se activa como una lista desplegable de pantalla completa al seleccionar el vínculo de Adobe Experience Manager en la parte superior izquierda de la pantalla.
 
 Para volver a la ubicación anterior, puede cerrar el panel de navegación global tocando o haciendo clic en **Cerrar**.
 
@@ -79,7 +79,7 @@ En Navegación, las consolas disponibles son:
 
 ## Panel de herramientas {#tools-panel}
 
-En el panel Herramientas hay un panel lateral que contiene una serie de categorías, que agrupan consolas de herramientas similares. Las consolas Herramientas permiten acceder a toda una serie de consolas y herramientas personalizadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+En el panel Herramientas hay un panel lateral que contiene una serie de categorías, que agrupan consolas de herramientas similares. Las consolas Herramientas permiten acceder a varias consolas y herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Panel de herramientas](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -304,7 +304,7 @@ Si se selecciona un recurso en la columna situada más a la izquierda, se muestr
 
    * El nombre del recurso y las comillas angulares se resaltan al pulsar o hacer clic en él.
    * Los elementos secundarios del recurso en el que se hizo clic o pulsó se muestran en la columna a la derecha del recurso en el que se hizo clic o pulsó.
-   * Si pulsa o hace clic en un nombre de recurso que no tiene tareas secundarias, sus detalles se muestran en la última columna.
+   * Si selecciona un nombre de recurso que no tiene tareas secundarias, sus detalles se muestran en la última columna.
 
 * Al tocar o hacer clic en la miniatura, se selecciona el recurso.
 
@@ -331,7 +331,7 @@ Si se selecciona un recurso en la columna situada más a la izquierda, se muestr
    * El título de la página
    * Fechas importantes (como la de la última modificación o la última publicación)
    * Si la página está bloqueada u oculta, o si es parte de una Live Copy
-   * Si procede, cuando tenga que realizar una acción como parte de un flujo de trabajo
+   * Si procede, cuando tenga que actuar como parte de un flujo de trabajo
       * Los marcadores que indican las acciones requeridas pueden estar relacionados con las entradas de su [Bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 * Las [acciones rápidas](#quick-actions) también están disponibles en esta vista, como la selección y acciones comunes como la edición.
@@ -352,12 +352,12 @@ Si se selecciona un recurso en la columna situada más a la izquierda, se muestr
 
    * Cuando se seleccionan todos los elementos de la lista, esta casilla de verificación aparece activada.
 
-      * Toque o haga clic en la casilla de verificación para anular toda la selección.
+      * Seleccione la casilla de verificación para anular toda la selección.
 
    * Cuando solo se seleccionan algunos elementos, aparece con un signo menos.
 
-      * Toque o haga clic en la casilla de verificación para seleccionar todo.
-      * Vuelva a tocar o hacer clic en la casilla de verificación para anular toda la selección.
+      * Seleccione la casilla de verificación para seleccionar todo.
+      * Vuelva a seleccionar la casilla de verificación para anular toda la selección.
 
 * Seleccione las columnas a mostrar mediante la opción **Ajustes de visualización**, que se encuentra debajo del botón Vistas. Las siguientes columnas están disponibles para su visualización:
 
@@ -383,7 +383,7 @@ Si se selecciona un recurso en la columna situada más a la izquierda, se muestr
 
   ![Orden de las columnas](/help/sites-cloud/authoring/assets/column-order.png)
 
-  Toque o haga clic en la barra de selección vertical y arrastre el elemento hasta una nueva posición en la lista.
+  Seleccione la barra de selección vertical y arrastre el elemento a una nueva posición en la lista.
 
   ![Lista de pedidos](/help/sites-cloud/authoring/assets/order-list.png)
 
@@ -471,7 +471,7 @@ Consulte el documento [Uso del carril del sitio para administrar el tema del sit
 
 >[!TIP]
 >
->Puede encontrar una descripción completa del proceso de creación de un nuevo sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md).
+>Puede encontrar una descripción completa del proceso de crear un sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md).
 
 ### Filter {#filter}
 
