@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '6663'
+source-wordcount: '6661'
 ht-degree: 7%
 
 ---
@@ -52,7 +52,7 @@ La integración aprovecha dos tipos independientes y separados de seguimiento de
 
 ### Acerca del seguimiento con Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
-Adobe Analytics permite rastrear las acciones que realiza el usuario final cuando interactúa con los visualizadores de Dynamic Media en el sitio web. Adobe Analytics también le permite hacer un seguimiento de datos específicos del visor. Por ejemplo, puede rastrear y registrar eventos de carga de vista junto con el nombre del recurso, cualquier acción de zoom que se haya producido y las acciones de reproducción de vídeo.
+Adobe Analytics permite rastrear las acciones que realiza el usuario cuando interactúa con los visualizadores de Dynamic Media en el sitio web. Adobe Analytics también le permite hacer un seguimiento de datos específicos del visor. Por ejemplo, puede rastrear y registrar eventos de carga de vista junto con el nombre del recurso, cualquier acción de zoom que se haya producido y las acciones de reproducción de vídeo.
 
 En Etiquetas de Experience Platform, los conceptos de *Elementos de datos* y *Reglas* trabajen juntos para habilitar el seguimiento de Adobe Analytics.
 
@@ -221,9 +221,9 @@ El valor exacto devuelto por el elemento de datos depende del contexto. Si el el
    * Utiliza el evento de pulsación de teclas de la extensión de etiquetas de Experience Platform principal como déclencheur.
    * Envía el valor de **[!UICONTROL ZoomScale]** Elemento de datos a Adobe Analytics.
 
-Ahora, supongamos que el usuario final carga la página web con los dos visores. Entrada *visor1*, se acercan a una escala del 50 %; a continuación, en *visor2*, se acercan a una escala del 25%. Entrada *visor1*, recorren la imagen y finalmente presionan una tecla en el teclado.
+Ahora, supongamos que el usuario carga la página web con los dos visores. Entrada *visor1*, se acercan a una escala del 50 %; a continuación, en *visor2*, se acercan a una escala del 25%. Entrada *visor1*, recorren la imagen y finalmente presionan una tecla en el teclado.
 
-La actividad del usuario final provoca que se realicen las dos llamadas de seguimiento siguientes a Adobe Analytics:
+La actividad del usuario provoca que se realicen las dos llamadas de seguimiento siguientes a Adobe Analytics:
 
 * La primera llamada se produce porque **[!UICONTROL TrackPan]** La regla se activa cuando el usuario entra en pánico *visor1*. Esa llamada envía el 50 % como valor de **[!UICONTROL ZoomScale]** Elemento de datos porque el elemento de datos sabe que la regla se activa por *visor1* y obtiene el valor de escala correspondiente;
 * La segunda llamada se produce porque **[!UICONTROL TrackKey]** La regla se activa cuando el usuario presiona una tecla del teclado. Esa llamada envía el 25 % como valor de **[!UICONTROL ZoomScale]** Elemento de datos porque el visor no activó la regla. Como tal, el elemento de datos devuelve el valor más actualizado.
@@ -519,7 +519,7 @@ Consulte también [Configurar una propiedad de toque](https://experienceleague.a
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
-   Seleccione la propiedad recién creada y continúe a *Instalación y configuración de extensiones*.
+   Seleccione la propiedad creada y continúe a *Instalación y configuración de extensiones*.
 
 ### Instalación y configuración de extensiones {#installing-and-setup-of-extensions}
 

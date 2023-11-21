@@ -2,10 +2,10 @@
 title: ¿Cómo se pueden administrar los metadatos de AEM Forms?
 description: Los metadatos facilitan la categorización y organización de los recursos y ayudan a los usuarios que buscan un recurso específico.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1743'
-ht-degree: 96%
+source-wordcount: '1742'
+ht-degree: 94%
 
 ---
 
@@ -140,7 +140,7 @@ A continuación se ofrece una amplia lista de propiedades de metadatos compatibl
      <li>HTML</li> 
      <li>PDF</li> 
      <li>Ambas</li> 
-    </ul> <p>Esta opción se utiliza para restringir el formato de procesamiento de los formularios solo en el Portal de Forms donde sean visibles para el usuario final.</p> </td> 
+    </ul> <p>Esta opción se utiliza para restringir el formato de procesamiento de los formularios solo en el portal de formularios donde sean visibles para el usuario.</p> </td> 
   </tr> 
   <tr> 
    <td>Etiquetas</td> 

@@ -2,10 +2,10 @@
 title: Implementación de un conector de AEM
 description: AEM Obtenga información sobre cómo generar, probar e implementar un conector de. Además, aprenderá sobre los patrones de integración comunes.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 98%
+source-wordcount: '980'
+ht-degree: 95%
 
 ---
 
@@ -63,7 +63,7 @@ Además, solo Adobe debe escribir código en `/libs`, y los clientes y socios en
 
 Es posible que también sea necesario refactorizar los conectores existentes para mover cualquier configuración que se haya colocado una vez `/etc` en otras carpetas de nivel superior, como `/conf`. Esta reestructuración se llevó a cabo como parte de AEM 6.5 y se describe en la [Documentación de AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es).
 
-Se recomienda colocar la mayoría del código del conector en `/apps/connectors/<vendor>` para promover una estructura de repositorio limpia en los clientes que tienen varios conectores.
+Se recomienda colocar la mayoría del código del conector en `/apps/connectors/<vendor>` para promocionar una estructura de repositorio limpia para los clientes que tienen varios conectores.
 
 Configuración de servicios de nube
 -----------------------------

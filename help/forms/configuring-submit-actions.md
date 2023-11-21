@@ -2,9 +2,9 @@
 title: Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 93%
 
 ---
@@ -446,7 +446,7 @@ Utilice **[!UICONTROL Revalidar en el servidor]** en el contenedor de formulario
 
 Habilitar la validación del lado del servidor
 
-Si el usuario final omite esas validaciones y envía los formularios, el servidor volverá a realizar la validación. Si la validación falla al final del servidor, se detendrá la transacción del envío. Al usuario final se le volverá a presentar el formulario original. Los datos capturados y enviados se presentarán al usuario como un error.
+Si el usuario final omite esas validaciones y envía los formularios, el servidor volverá a realizar la validación. Si la validación falla al final del servidor, se detendrá la transacción del envío. Al usuario se le volverá a presentar el formulario original. Los datos capturados y enviados se presentarán al usuario como un error.
 
 >[!NOTE]
 >

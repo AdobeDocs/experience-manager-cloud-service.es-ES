@@ -4,7 +4,7 @@ description: Incruste sin problemas Forms adaptable en una página de AEM Sites 
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3164'
 ht-degree: 44%
@@ -265,7 +265,7 @@ Puede personalizar la configuración avanzada del componente **[!UICONTROL Formu
 
 * **El formulario abarca toda la anchura del marco**: Un marco en línea (iframe) es un elemento de HTML que carga un formulario adaptable en una página de AEM Sites.
 
-   * Si la variable **[!UICONTROL El formulario abarca toda la anchura del marco]** Cuando se marca la casilla de verificación, un formulario adaptable ocupa la anchura completa del contenedor en el que se coloca. En este caso, no se utiliza un iframe para procesar el formulario. La presentación y el diseño de un formulario adaptable se adaptan para abarcar toda la anchura del contenedor, lo que lo hace adaptable y capaz de adaptarse a diferentes tamaños de pantalla. Esta opción permite incrustar varios Forms adaptables en una página de AEM Sites.
+   * Si la variable **[!UICONTROL El formulario abarca toda la anchura del marco]** Cuando se marca la casilla de verificación, un formulario adaptable ocupa la anchura completa del contenedor en el que se coloca. En este caso, no se utiliza un iframe para procesar el formulario. La presentación y el diseño de un formulario adaptable se adaptan para abarcar toda la anchura del contenedor, lo que lo hace adaptable y capaz de adaptarse a diferentes tamaños de pantalla. Esta opción le permite incrustar varios Forms adaptables en una página de AEM Sites.
 
      >[!NOTE]
      >

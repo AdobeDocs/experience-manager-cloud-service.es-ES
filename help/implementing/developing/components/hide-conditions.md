@@ -2,7 +2,7 @@
 title: Uso de Ocultar condiciones
 description: Ocultar condiciones se puede utilizar para determinar si un recurso de componente se procesa o no.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # Uso de Ocultar condiciones {#using-hide-conditions}
 
-Ocultar condiciones se puede utilizar para determinar si un recurso de componente se procesa o no. Un ejemplo de esto sería cuando un autor de plantillas configure el componente principal [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) en el [editor de plantillas](/help/sites-cloud/authoring/features/templates.md) y decide deshabilitar las opciones para generar la lista en función de las páginas secundarias. Al deshabilitar esta opción en el cuadro de diálogo de diseño, se establece una propiedad de modo que cuando se procese el componente de lista, se evalúe la condición de ocultar y no se muestre la opción para mostrar páginas secundarias.
+Ocultar condiciones se puede utilizar para determinar si un recurso de componente se procesa o no. Un ejemplo de esto sería cuando un autor de plantillas configura el componente principal [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) en el [editor de plantillas](/help/sites-cloud/authoring/features/templates.md) y decide deshabilitar las opciones para generar la lista en función de las páginas secundarias. Al deshabilitar esta opción en el cuadro de diálogo de diseño, se establece una propiedad de modo que cuando se procese el componente de lista, se evalúe la condición de ocultar y no se muestre la opción para mostrar páginas secundarias.
 
 ## Información general {#overview}
 

@@ -2,7 +2,7 @@
 title: Edición de un SPA externo dentro de AEM
 description: SPA AEM En este documento se describen los pasos recomendados para cargar una instancia independiente a una instancia de, agregar secciones de contenido editables y habilitar la creación de contenido.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 2%
@@ -111,7 +111,7 @@ El `initializationAsync` puede aceptar opcionalmente un `options` objeto como pa
 
    ![Propiedades del componente Texto](assets/external-spa-text-properties.png)
 
-   Estos valores se pasan como propiedades al recién creado `AEMText` React y se puede utilizar para procesar el contenido.
+   Estos valores se pasan como propiedades a la variable creada `AEMText` React y se puede utilizar para procesar el contenido.
 
    ```javascript
    import React from 'react';
@@ -343,7 +343,7 @@ AEM SPA Para habilitar la edición dentro de los parámetros para este ejemplo, 
 
 1. SPA Agregar ayudantes dentro del enrutamiento de la.
 
-   * AEM La página recién creada aún no puede procesar el contenido esperado en los informes de contenido de la página de la página de la página de la página de la página de la página de la página de. El motivo es que el enrutador espera una ruta de `/test` AEM mientras que la ruta activa de la es `/wknd-spa-react/us/en/test`. AEM SPA Para dar cabida a la parte específica de la dirección URL que corresponde a la dirección URL, debe agregar algunos ayudantes en el lado de la.
+   * AEM La página creada aún no puede procesar el contenido esperado en la página de. El motivo es que el enrutador espera una ruta de `/test` AEM mientras que la ruta activa de la es `/wknd-spa-react/us/en/test`. AEM SPA Para dar cabida a la parte específica de la dirección URL que corresponde a la dirección URL, debe agregar algunos ayudantes en el lado de la.
 
    ![Asistente de enrutamiento](assets/external-spa-router-helper.png)
 
@@ -356,7 +356,7 @@ AEM SPA Para habilitar la edición dentro de los parámetros para este ejemplo, 
 
 1. AEM Compruebe la edición de la página en la.
 
-   * AEM Implemente el proyecto para que se ejecute y navegue hasta el recién creado `test` página. AEM Ahora se procesa el contenido de la página y se pueden editar los componentes de la.
+   * AEM Implemente el proyecto para que se ejecute y navegue hasta el archivo creado. `test` página. AEM Ahora se procesa el contenido de la página y se pueden editar los componentes de la.
 
 ## Limitaciones del marco {#framework-limitations}
 

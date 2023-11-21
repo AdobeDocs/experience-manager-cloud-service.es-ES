@@ -3,10 +3,10 @@ title: Uso del IDE de GraphiQL en AEM
 description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 94%
+source-wordcount: '1138'
+ht-degree: 90%
 
 ---
 
@@ -105,7 +105,7 @@ Se recomiendan las [Consultas persistentes](/help/headless/graphql-api/persisted
 >
 >Las reglas de reescritura personalizadas en Dispatcher pueden anular los valores predeterminados de publicación de AEM.
 >
->En caso de que esté enviando encabezados de control de caché basados en TTL desde Dispatcher, según un patrón de coincidencia de ubicación, es posible que desee excluir `/graphql/execute.json/*` de las coincidencias.
+>En el caso de que esté enviando encabezados de control de caché basados en TTL desde Dispatcher, según un patrón de coincidencia de ubicación, si es necesario, es posible que desee excluir `/graphql/execute.json/*` de los partidos.
 
 Con GraphQL puede configurar los encabezados de caché HTTP para controlar estos parámetros para la consulta persistente individual.
 

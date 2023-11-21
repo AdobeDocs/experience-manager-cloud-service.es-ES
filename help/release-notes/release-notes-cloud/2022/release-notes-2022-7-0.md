@@ -2,7 +2,7 @@
 title: Notas de la versión 2022.7.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.7.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 23%
@@ -54,7 +54,7 @@ Eche un vistazo al vídeo Información general sobre la versión de julio de 202
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Assets] {#prerelease-features-assets}
 
-Ahora puede configurar Adobe Experience Manager Assets en [restringir el tipo de recursos que los usuarios pueden cargar en función del tipo MIME](/help/assets/configure-asset-upload-restrictions.md).
+Ahora puede configurar Adobe Experience Manager Assets para que [restringir el tipo de recursos que los usuarios pueden cargar en función del tipo MIME](/help/assets/configure-asset-upload-restrictions.md).
 
 ![Restricciones de carga de recursos](/help/assets/assets/asset-upload-restrictions.png)
 
@@ -89,7 +89,7 @@ Ahora puede configurar Adobe Experience Manager Assets en [restringir el tipo de
 
 * AEM Ahora, el enriquecimiento del catálogo de productos admite páginas de. Esto permite a los autores administrar la asociación página - producto.
 
-* Varias mejoras en los componentes principales del CIF
+* CIF Varias mejoras en los componentes principales de la
 
 ### Corrección de errores {#bug-fixes-cif}
 

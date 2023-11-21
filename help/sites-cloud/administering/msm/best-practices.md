@@ -4,7 +4,7 @@ description: Conozca las prácticas recomendadas recopiladas por los equipos de 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 92%
@@ -113,9 +113,9 @@ Cuando considere la posibilidad de mover páginas a una Live Copy, tenga en cuen
    * No agregue otras acciones a esta configuración.
 1. Coloque la nueva configuración.
    * Para desplegar completamente la página, mueva mientras elimina las páginas respectivas en su antigua ubicación en Live Copy:
-      * Coloque la configuración recién creada antes de la configuración de despliegue estándar. La configuración de despliegue estándar se encargará de eliminar las páginas en sus ubicaciones antiguas.
+      * Coloque la configuración creada antes de la configuración de despliegue estándar. La configuración de despliegue estándar se encargará de eliminar las páginas en sus ubicaciones antiguas.
       * Para desplegar la página, mueva las páginas mientras mantiene las respectivas en sus antiguas ubicaciones en Live Copies (básicamente duplicando el contenido):
-         * Coloque la configuración recién creada después de la configuración de despliegue estándar. Esto garantizará que no se elimine contenido en la Live Copy ni se desactive de la publicación.
+         * Coloque la configuración creada después de la configuración de despliegue estándar. Esto garantizará que no se elimine contenido en la Live Copy ni se desactive de la publicación.
 
 ## Personalización de despliegues {#customizing-rollouts}
 

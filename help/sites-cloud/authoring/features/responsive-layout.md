@@ -2,10 +2,10 @@
 title: Diseño adaptable
 description: AEM le permite crear un diseño adaptable para sus páginas,
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 83%
+source-wordcount: '1732'
+ht-degree: 82%
 
 ---
 
@@ -149,7 +149,7 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseño (
 >
 >Como un contenedor de diseño es un sistema de párrafos, al eliminar el componente se eliminará tanto la cuadrícula de diseño como todos los componentes (y su contenido) que se encuentren dentro del contenedor.
 
-1. Si pasa el puntero del ratón o toca el marcador de posición de la cuadrícula, se mostrará el menú Acción.
+1. Si pasa el ratón sobre el marcador de posición de la cuadrícula o lo pulsa, se muestra el menú de acción.
 
    ![Agregar al contenedor de diseño](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

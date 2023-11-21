@@ -4,10 +4,10 @@ description: Utilice una aplicación React de muestra para aprender a personaliz
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 88%
+source-wordcount: '1019'
+ht-degree: 87%
 
 ---
 
@@ -89,7 +89,7 @@ Ahora que ha modificado un titular en la aplicación, intente cambiar una imagen
 
 1. Seleccionar **Previsualizar** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña. Haga clic en actualizar en el explorador y debería ver la nueva imagen del ciclista con pantalones cortos amarillos en la aplicación.
 
-Es muy fácil actualizar imágenes y recursos en sus aplicaciones con el CMS de AEM sin encabezado.
+AEM Es así de fácil actualizar imágenes y recursos en sus aplicaciones con CMS sin encabezado, que no tiene encabezado.
 
 ## Adición de una referencia a un nuevo fragmento de contenido en la aplicación {#create-moment}
 

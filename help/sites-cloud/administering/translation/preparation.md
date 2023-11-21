@@ -4,10 +4,10 @@ description: Aprenda a preparar el contenido para la traducción al desarrollar 
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 86%
+source-wordcount: '752'
+ht-degree: 83%
 
 ---
 
@@ -52,7 +52,7 @@ El [Sitio del tutorial de WKND](/help/implementing/developing/introduction/devel
 
 La copia de idioma para la que creó originalmente el contenido del sitio es el maestro de idioma. El maestro de idiomas es la fuente que se traduce a otros idiomas.
 
-Cada rama de idioma de un sitio se denomina copia de idioma. La página raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, `/content/wknd/fr` es la raíz del idioma para la copia en francés. Las copias de idioma deben utilizar una [raíz de idioma configurada correctamente](preparation.md#creating-a-language-root) para que el idioma correcto se dirija cuando se realicen traducciones de un sitio de origen.
+Cada rama de idioma de un sitio se denomina copia de idioma. La página raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, `/content/wknd/fr` es la raíz del idioma para la copia en francés. Las copias de idioma deben utilizar un [raíz de idioma configurada correctamente](preparation.md#creating-a-language-root) para que el idioma correcto se dirija cuando se realicen traducciones de un sitio de origen.
 
 Siga estos pasos para preparar su sitio para la traducción:
 

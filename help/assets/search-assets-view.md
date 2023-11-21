@@ -3,10 +3,10 @@ title: Obtenga información sobre cómo buscar y descubrir recursos en [!DNL Ass
 description: Obtenga información sobre cómo buscar y descubrir recursos en la vista de AEM Assets. La potente funcionalidad de búsqueda le permite descubrir rápidamente el recurso adecuado y ayudarle a mejorar la velocidad del contenido.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 92%
+source-wordcount: '922'
+ht-degree: 90%
 
 ---
 
@@ -123,7 +123,7 @@ Para eliminar filtros personalizados:
 
 ## Búsquedas guardadas {#saved-search}
 
-La funcionalidad de búsqueda es bastante fácil de usar en [!DNL Assets view]. Desde el cuadro de búsqueda, no solo puede escribir una palabra clave y pulsar la tecla Intro para ver los resultados, sino que también puede buscar rápidamente de nuevo las palabras clave consultadas recientemente con un solo clic.
+La funcionalidad de búsqueda es bastante fácil de usar en [!DNL Assets view]. Desde el cuadro de búsqueda, puede escribir una palabra clave y pulsar Intro para ver los resultados, o puede buscar rápidamente de nuevo las palabras clave buscadas recientemente con un solo clic.
 
 También puede filtrar los resultados de búsqueda según criterios específicos en torno a los metadatos y el tipo de recursos. Para los filtros utilizados con frecuencia, a fin de mejorar la experiencia de búsqueda, [!DNL Assets view] permite guardar los parámetros de búsqueda. A continuación, puede seleccionar la búsqueda guardada para buscar y aplicar el filtro con un solo clic.
 
@@ -146,7 +146,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 * [Vea un vídeo para buscar recursos en la vista Recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=es)
 
-* Proporcione comentarios sobre productos usando [!UICONTROL Comentarios] opción disponible en la interfaz de usuario de la vista Recursos
+* Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 

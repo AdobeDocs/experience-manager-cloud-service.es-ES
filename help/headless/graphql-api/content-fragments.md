@@ -3,7 +3,7 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '4923'
 ht-degree: 93%
@@ -499,7 +499,7 @@ Los siguientes operadores pueden utilizarse para comparar campos con un determin
 | `AFTER` | `Calendar`, `Date`, `Time` | ... el punto en el tiempo indicado por el valor es posterior al indicado por el contenido del campo |
 | `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... el punto en el tiempo indicado por el valor es posterior o igual al indicado por el contenido del campo |
 
-Algunos tipos también permiten especificar opciones adicionales que modifican como se evalúa una expresión:
+Algunos tipos también permiten especificar opciones adicionales que modifican cómo se evalúa una expresión:
 
 | Opción | Tipo(s) | Descripción |
 |--- |--- |--- |

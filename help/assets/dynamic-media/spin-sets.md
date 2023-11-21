@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 9%
@@ -168,7 +168,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/lim
 
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Preestablecido]** y, a continuación, seleccione un ajuste preestablecido para aplicarlo a todos los recursos a la vez.
 
-1. Seleccione **[!UICONTROL Guardar]**. El conjunto de giros recién creado aparecerá en la carpeta en la que lo creó.
+1. Seleccione **[!UICONTROL Guardar]**. El conjunto de giros creado aparecerá en la carpeta en la que lo creó.
 
 ## Visualización de conjuntos de giros {#viewing-spin-sets}
 

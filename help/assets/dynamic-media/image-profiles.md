@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3528'
 ht-degree: 7%
@@ -134,7 +134,7 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
    ![recorte](assets/crop.png)
 
-1. Seleccione **[!UICONTROL Guardar]**. El perfil recién creado aparece en la lista de perfiles disponibles.
+1. Seleccione **[!UICONTROL Guardar]**. El perfil creado aparece en la lista de perfiles disponibles.
 
 ## Editar o eliminar perfiles de imagen de Dynamic Media {#editing-or-deleting-image-profiles}
 

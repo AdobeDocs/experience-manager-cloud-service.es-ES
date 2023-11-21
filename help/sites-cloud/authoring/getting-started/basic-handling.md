@@ -2,10 +2,10 @@
 title: Gestión básica
 description: Familiarícese con la navegación por AEM y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 91%
+source-wordcount: '2945'
+ht-degree: 90%
 
 ---
 
@@ -231,7 +231,7 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 
 En la [Vista de tarjeta](#card-view) algunas acciones están disponibles como iconos de acción rápida y se encuentran en la barra de herramientas. Los iconos de acción rápida están disponibles para un único elemento a la vez, con lo que no es necesario preseleccionarlos.
 
-Las acciones rápidas se pueden ver al pasar el ratón (dispositivo de escritorio) por encima de una tarjeta de recurso. Las acciones rápidas disponibles pueden depender de la consola y del contexto. Por ejemplo, estas son las acciones rápidas para una página de la consola **Sitios**:
+Las acciones rápidas están visibles cuando pasa el ratón sobre una tarjeta de recursos (dispositivo de escritorio). Las acciones rápidas disponibles pueden depender de la consola y del contexto. Por ejemplo, estas son las acciones rápidas para una página de la consola **Sitios**:
 
 ![Opciones adicionales](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -366,7 +366,7 @@ Si se selecciona un recurso en la columna situada más a la izquierda, se muestr
    * **Publicado**: estado de publicación
    * **Vista previa**: estado de la vista previa
    * **Plantilla**: plantilla en la que se basa la página
-   * **Flujo de trabajo**: flujo de trabajo aplicado actualmente a la página. Tiene más información disponible al pasar el ratón o abrir la línea de tiempo.
+   * **Flujo de trabajo**: flujo de trabajo aplicado actualmente a la página. Hay más información disponible cuando pasa el ratón sobre o abre Cronología.
    * **Análisis de la página**
    * **Visitantes únicos**
    * **Tiempo empleado en la página**

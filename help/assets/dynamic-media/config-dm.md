@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar Dynamic Media en Adobe 
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3794'
 ht-degree: 3%
@@ -84,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    La nueva contraseña se guarda al seleccionar **[!UICONTROL Guardar]** en la esquina superior derecha de la **[!UICONTROL Crear configuración de Dynamic Media]** página.
 
-   Si ha seleccionado **[!UICONTROL Cancelar]** en el **[!UICONTROL Cambiar contraseña]** , debe introducir una nueva contraseña cuando guarde la configuración de Dynamic Media recién creada.
+   Si ha seleccionado **[!UICONTROL Cancelar]** en el **[!UICONTROL Cambiar contraseña]** , aún debe introducir una nueva contraseña al guardar la configuración de Dynamic Media creada.
 
    Consulte también [Cambiar la contraseña a Dynamic Media](#change-dm-password).
 

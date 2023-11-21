@@ -3,7 +3,7 @@ title: Cómo importar, exportar y organizar Forms adaptable o PDF forms en una i
 description: Obtenga información sobre cómo migrar Forms adaptable, PDF form AEM, temáticas y otros recursos de soporte a y desde instancias de y de la.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 94%
@@ -185,7 +185,7 @@ Puede utilizar carpetas para organizar los recursos. La organización de documen
 
    Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero sobre el icono de error ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) que aparece junto al campo de nombre.
 
-   Puede pulsar la carpeta recién creada para entrar en ella y crear recursos o carpetas dentro de la carpeta. Además, puede seleccionar una carpeta y elegir colocarla en la cola para descargarla, eliminarla o editar su nombre.
+   Puede pulsar la carpeta creada para entrar en ella y crear recursos o carpetas dentro de la carpeta. Además, puede seleccionar una carpeta y elegir colocarla en la cola para descargarla, eliminarla o editar su nombre.
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

@@ -2,7 +2,7 @@
 title: Replicación
 description: AEM Obtenga información acerca de la distribución y la solución de problemas de replicación en as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 43%
@@ -64,7 +64,7 @@ También puede crear un modelo de flujo de trabajo que utilice la variable `Publ
 1. Desde la página de inicio as a Cloud Service de AEM, vaya a **Herramientas - Flujo de trabajo - Modelos**.
 1. En la página Modelos de flujo de trabajo, pulse **Crear** en la esquina superior derecha de la pantalla.
 1. Agregue un título y un nombre al modelo. Para obtener más información, consulte [Creación de modelos de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es).
-1. Seleccione el modelo recién creado de la lista y pulse **Editar**
+1. Seleccione el modelo creado de la lista y pulse **Editar**
 1. En la siguiente ventana, arrastre y suelte el paso de proceso en el flujo del modelo actual:
 
    ![Etapa del proceso](/help/operations/assets/processstep.png)

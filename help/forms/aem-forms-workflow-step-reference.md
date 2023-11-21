@@ -4,9 +4,9 @@ description: Los flujos de trabajo centrados en Forms le permiten crear rápidam
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: AEM Uso de flujos de trabajo de, uso de los pasos Asignar tarea, paso Convertir en PDF/A, paso Generar documento de registro, uso de flujos de trabajo, paso Firmar documento, paso Generar salida impresa, paso Generar salida de PDF no interactiva
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '7444'
+source-wordcount: '7448'
 ht-degree: 78%
 
 ---

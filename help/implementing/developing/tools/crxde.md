@@ -2,9 +2,9 @@
 title: Uso del CRXDE Lite
 description: El CRXDE Lite AEM forma parte del inicio rápido de la y está disponible para acceder y modificar el repositorio en los entornos de desarrollo local dentro del explorador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 2%
 
 ---
@@ -192,7 +192,7 @@ Ahora puede adaptar el nodo a sus necesidades modificando propiedades o creando 
 >
 La mayoría de las operaciones de edición, incluidas **Crear nodo**, guarda todos los cambios en la memoria y solo los almacena en el repositorio al guardarlos (mediante el [**Botón Guardar todo**](#save-all-button)). Sin embargo, algunas operaciones, como mover, persisten automáticamente.
 >
-El repositorio también lleva a cabo la validación con respecto a si el tipo de nodo del nodo principal permite el nodo recién creado al guardar los cambios. Si recibe un mensaje de error al guardar un nodo, compruebe si la estructura de contenido es válida (por ejemplo, no puede crear un `nt:unstructured` nodo como elemento secundario de `nt:folder` node).
+El repositorio también lleva a cabo la validación con respecto a si el tipo de nodo del nodo principal permite el nodo creado al guardar los cambios. Si recibe un mensaje de error al guardar un nodo, compruebe si la estructura de contenido es válida (por ejemplo, no puede crear un `nt:unstructured` nodo como elemento secundario de `nt:folder` node).
 
 ## Creación de una propiedad {#creating-a-property}
 
@@ -242,7 +242,7 @@ Para importar una definición de tipo de nodo:
 Con CRXDE Lite puede mostrar el archivo `error.log` que se encuentra en el sistema de archivos en `<aem-install-dir>/crx-quickstart/logs` y filtrarlo con el nivel de registro adecuado. Proceda como se indica a continuación:
 
 1. Abra el CRXDE Lite en el explorador.
-1. En, en el menú desplegable de la derecha de [**Pestaña Consola**](#console-tab) en la parte inferior de la ventana, seleccione **Registros de servidor**.
+1. En el menú desplegable de la derecha del [**Pestaña Consola**](#console-tab) en la parte inferior de la ventana, seleccione **Registros de servidor**.
 1. Haga clic en **Detener** para mostrar los mensajes.
 
 Puede hacer lo siguiente:

@@ -2,9 +2,9 @@
 title: Referencia de la API de JavaScript de ContextHub
 description: La API de JavaScript de ContextHub está disponible para los scripts cuando se agrega el componente ContextHub a la página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4612'
+source-wordcount: '4613'
 ht-degree: 3%
 
 ---
@@ -219,7 +219,7 @@ Recupera las claves del almacén. Opcionalmente, puede recuperar las claves que 
 
 ##### Parámetros {#parameters-getkeys}
 
-* **`includeInternals`:** Un valor de `true` incluye claves utilizadas internamente en los resultados. Estas claves comienzan por el guion bajo (`_`) carácter. El valor predeterminado es `false`.
+* **`includeInternals`:** Un valor de `true` incluye las claves utilizadas internamente en los resultados. Estas claves comienzan por el guion bajo (`_`) carácter. El valor predeterminado es `false`.
 
 ##### Devuelve {#returns-getkeys}
 
@@ -856,7 +856,7 @@ Una copia del árbol que se ha limpiado.
 
 #### getItem() {#getitem}
 
-Recupera el valor de un objeto para la clave a.
+Recupera el valor de un objeto para la clave.
 
 ##### Parámetros {#parameters-getitem-2}
 

@@ -2,9 +2,9 @@
 title: Instalación y configuración de reproductores en pantallas as a Cloud Service
 description: En esta página se describe cómo instalar y configurar reproductores en Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ La monitorización de la reproducción básica en un reproductor AEM Screens nos
 
 * Mejore la reacción a pantallas en blanco o experiencias rotas en el campo.
 
-* Reduce el riesgo de mostrar una experiencia rota al usuario final.
+* Reduce el riesgo de mostrar una experiencia rota al usuario.
 
 ### Explicación de propiedades {#understand-properties}
 

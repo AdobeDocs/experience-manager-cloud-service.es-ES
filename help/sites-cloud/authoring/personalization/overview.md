@@ -2,10 +2,10 @@
 title: Personalización y segmentación de contenido
 description: Descubra cómo puede crear contenido personalizado y con objetivo con AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 93%
+source-wordcount: '1054'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ AEM proporciona un marco de herramientas para:
 * Definir las reglas utilizadas para determinar la información de usuario conocida con respecto a la definición de una audiencia.
 * Configurar las páginas para presentar experiencias personalizadas segmentadas, para procesar el contenido específico aplicable al usuario final actual.
 
-La siguiente descripción general presenta algunos de los términos utilizados para la personalización en AEM as a Cloud Service, seguidos de un orden de acción recomendado.
+AEM En la siguiente descripción general se presentan algunos de los términos utilizados para la personalización en el as a Cloud Service de la, seguidos de un orden de acción recomendado.
 
 ## Experiencia {#experience}
 

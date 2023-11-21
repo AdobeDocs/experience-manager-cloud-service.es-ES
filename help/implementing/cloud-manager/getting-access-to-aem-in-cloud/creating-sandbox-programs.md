@@ -2,10 +2,10 @@
 title: Creación de programas de zona protegida
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de zona protegida para formación, demostración, POC u otros fines que no sean de producción.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -49,7 +49,7 @@ Verá una nueva tarjeta de programa de zona protegida en la página de aterrizaj
 
 Puede ver los detalles de la configuración de la zona protegida, así como acceder al entorno (una vez disponible) en la página de información general del programa.
 
-1. En la página de aterrizaje de Cloud Manager, haga clic en el botón de puntos suspensivos del programa recién creado.
+1. En la página de aterrizaje de Cloud Manager, haga clic en el botón de puntos suspensivos del programa creado.
 
    ![Acceso a la información general del programa](assets/program-overview-sandbox.png)
 

@@ -2,10 +2,10 @@
 title: Pruebas de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 93%
+source-wordcount: '588'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ La auditoría de experiencia es una característica disponible en las canalizaci
 
 1. No introduzcan regresiones.
 
-La auditoría de experiencias en Cloud Manager garantiza que la experiencia del usuario final en el sitio sea de los más altos estándares.
+La auditoría de experiencias en Cloud Manager garantiza que la experiencia del usuario en el sitio sea de los más altos estándares.
 
 Los resultados de la auditoría son informativos y permiten al administrador de implementación ver las puntuaciones y el cambio entre las puntuaciones actuales y anteriores. Esta perspectiva es importante para determinar si hay una regresión que se haya introducido con la implementación actual.
 

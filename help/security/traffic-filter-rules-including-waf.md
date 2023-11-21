@@ -2,7 +2,7 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3437'
 ht-degree: 95%
@@ -192,7 +192,7 @@ Un grupo de condiciones está compuesto por varias condiciones simples o de grup
 
 | **Propiedad** | **Tipo** | **Descripción** |
 |---|---|---|
-| reqProperty | `string` | Solicitar propiedad.<br><br>Uno de:<br><ul><li>`path`: devuelve la ruta completa de una dirección URL sin los parámetros de consulta.</li><li>`queryString`: devuelve la parte de consulta de una dirección URL</li><li>`method`: devuelve el método HTTP utilizado en la solicitud.</li><li>`tier`: devuelve uno de `author`, `preview` o `publish`.</li><li>`domain`: devuelve la propiedad de dominio (tal como se define en el encabezado `Host`) en minúsculas</li><li>`clientIp`: devuelve la IP del cliente.</li><li>`clientCountry`: devuelve un código de dos letras ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) que identifica en qué país se encuentra el cliente.</li></ul> |
+| reqProperty | `string` | Solicitar propiedad.<br><br>Uno de:<br><ul><li>`path`: Devuelve la ruta completa de una dirección URL sin los parámetros de consulta.</li><li>`queryString`: Devuelve la parte de consulta de una dirección URL</li><li>`method`: devuelve el método HTTP utilizado en la solicitud.</li><li>`tier`: devuelve uno de `author`, `preview` o `publish`.</li><li>`domain`: devuelve la propiedad de dominio (tal como se define en el encabezado `Host`) en minúsculas</li><li>`clientIp`: devuelve la IP del cliente.</li><li>`clientCountry`: devuelve un código de dos letras ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) que identifica en qué país se encuentra el cliente.</li></ul> |
 | reqHeader | `string` | Devuelve el encabezado de la solicitud con el nombre especificado |
 | queryParam | `string` | Devuelve el parámetro de consulta con el nombre especificado |
 | reqCookie | `string` | Devuelve una cookie con el nombre especificado |

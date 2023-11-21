@@ -3,10 +3,10 @@ title: ¿Cómo rellenar previamente los campos del formulario adaptable?
 description: Utilice los datos existentes para rellenar previamente los campos de un formulario adaptable. Los usuarios pueden rellenar previamente la información básica de un formulario iniciando sesión con sus perfiles sociales.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 95%
+source-wordcount: '2041'
+ht-degree: 94%
 
 ---
 
@@ -261,7 +261,7 @@ Por lo general, los campos enlazados (esquema de formulario) y no enlazados se c
 
 >[!NOTE]
 >
-> Como regla general, no mezcle campos enlazados y no enlazados si están intersectados en datos rellenos por el usuario final en campos no enlazados. Si es posible, debe modificar el esquema o la plantilla de formulario XFA y agregar una entrada para los campos no enlazados, de modo que también se conviertan en enlazados y sus datos estén disponibles como otros campos en los datos enviados.
+> Como regla general, no mezcle campos enlazados y no enlazados si están intersectados en datos rellenados por el usuario en campos no enlazados. Si es posible, debe modificar el esquema o la plantilla de formulario XFA y agregar una entrada para los campos no enlazados, de modo que también se conviertan en enlazados y sus datos estén disponibles como otros campos en los datos enviados.
 
 ## Protocolos admitidos para rellenar previamente datos de usuario {#supported-protocols-for-prefilling-user-data}
 

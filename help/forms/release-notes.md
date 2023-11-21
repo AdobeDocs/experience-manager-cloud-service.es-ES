@@ -2,10 +2,10 @@
 title: Notas de la versión as a Cloud Service de AEM Forms
 description: Obtenga información sobre las nuevas funciones, versiones beta, información previa al lanzamiento y mucho más de AEM Forms as a Cloud Service.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 8074c0e9566b679830a56094bc9b47cb22f4bb4a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 93%
+source-wordcount: '2024'
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service recibe mejoras de f
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-- **Analytics para formularios adaptables**: Ahora puede capturar y hacer un seguimiento del comportamiento del inicio de sesión y no inicio de sesión (Anónimo) mediante Adobe Analytics para formularios adaptables para recoger las opiniones de los usuarios finales. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario final.
+- **Analytics para Forms adaptable**: ahora puede capturar y rastrear el comportamiento del inicio de sesión y no inicio de sesión (anónimo) mediante Adobe Analytics para Forms adaptable para recopilar las perspectivas de usuario. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
@@ -52,7 +52,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 - **Utilizar funciones de Adobe Sign en un formulario adaptable**: Adobe Sign para el nivel de servicio empresarial tiene la opción de ampliar las funciones de los destinatarios del contrato, más allá del firmante, para que coincidan mejor con los requisitos del flujo de trabajo. Ahora puede [permitir que cada destinatario del acuerdo configure su función en un formulario adaptable](working-with-adobe-sign.md#addsignerstoanadaptiveform), siendo la de firmante la función predeterminada.
 
-- **Analytics para formularios adaptables**: Ahora puede capturar y [hacer un seguimiento del comportamiento del usuario final mediante Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) para que el formulario adaptable recopile información del usuario final. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario final.
+- **Analytics para Forms adaptable**: Ahora puede capturar y [seguimiento del comportamiento del usuario mediante Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) para que Forms adaptable recopile información del usuario. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario.
 
 - **Conecte fácilmente AEM Forms con Microsoft Dynamics y Salesforce**: El servicio proporciona una configuración de origen de datos y modelos de datos predeterminados para Microsoft Dynamics y Salesforce, lo que lo hace [más rápido y fácil para los desarrolladores configurar Microsoft Dynamics y Salesforce como fuentes de datos para un formulario adaptable](configure-msdynamics-salesforce.md).
 
@@ -61,7 +61,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 ### Características beta de [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
 - **Conector de almacenamiento unificado:** Utilice el conector de almacenamiento unificado para externalizar los datos en proceso en repositorios que administre el cliente. Por ejemplo, puede almacenar datos de los flujos de trabajo de AEM en proceso (datos de variables del flujo de trabajo de AEM) que contengan datos personales confidenciales (SPD) en un repositorio que administra el cliente.
-  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
+  <!--* Enable Forms Portal's save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](aem-forms-cloud-service-communications.md) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    - Generar documentos rellenando archivos de plantilla con datos XML.
@@ -90,7 +90,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
   * Enable searching of forms based on a various criteria, such as form properties, metadata, and tags.
 
-  * Lists drafts and submissions related to Adaptive Form created by end user.
+  * Lists drafts and submissions related to Adaptive Form created by user.
 
   -->
 
@@ -110,7 +110,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 - **Conector de almacenamiento unificado:** Utilice el conector de almacenamiento unificado para externalizar los datos en proceso en repositorios que administre el cliente. Por ejemplo, puede
 
-   - Habilitar la funcionalidad de guardar y reanudar el portal de Forms y almacenar borradores de formularios adaptables en un repositorio de datos que administre el cliente.
+   - Habilite la funcionalidad Forms de guardar y reanudar y almacene borradores de formularios adaptables en un repositorio de datos que administre el cliente.
    - Almacenar datos de los flujos de trabajo de AEM en proceso (datos de variables de flujo de trabajo de AEM) que contengan datos personales confidenciales (SPD) en un repositorio que administre el cliente.
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](aem-forms-cloud-service-communications.md) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
@@ -124,7 +124,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 - **Utilizar funciones de Adobe Sign en un formulario adaptable**: Adobe Sign para el nivel de servicio empresarial tiene la opción de ampliar las funciones de los destinatarios del contrato, más allá del firmante, para que coincidan mejor con los requisitos del flujo de trabajo. Ahora puede [permitir que cada destinatario del acuerdo configure su función en un formulario adaptable](working-with-adobe-sign.md#addsignerstoanadaptiveform), siendo la de firmante la función predeterminada.
 
-- **Analytics para formularios adaptables**: Ahora puede capturar y hacer un seguimiento del comportamiento del usuario final mediante Adobe Analytics para que el formulario adaptable recopile información del usuario final. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario final.
+- **Analytics para Forms adaptable**: ahora puede capturar y rastrear el comportamiento del usuario mediante Adobe Analytics para Forms adaptable para recopilar las perspectivas del usuario. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario.
 
 - **Conecte fácilmente AEM Forms con Microsoft Dynamics y Salesforce**: El servicio proporciona una configuración de origen de datos y modelos de datos predeterminados para Microsoft Dynamics y Salesforce, lo que lo hace [más rápido y fácil para los desarrolladores configurar Microsoft Dynamics y Salesforce como fuentes de datos para un formulario adaptable](configure-msdynamics-salesforce.md).
 
@@ -207,9 +207,9 @@ Puede escribir a formscsbeta@adobe.com para inscribirse en el programa beta.
 
 - **Utilizar el método de autenticación de Id. de gobierno en los formularios adaptables habilitados para Adobe Sign**
 
-  Con la tecnología de algoritmos avanzados de aprendizaje automático, el proceso de Id. de gobierno de Adobe Sign ofrece a las empresas de todo el mundo la capacidad de garantizar una autenticación de alta calidad de la identidad de sus destinatarios. Ahora puede utilizar el método de autenticación de identidad de Id. de gobierno en los formularios adaptativos habilitados para Adobe Sign.
+  Con la tecnología de algoritmos avanzados de aprendizaje automático, el proceso de identificación oficial de Adobe Sign ofrece a las empresas de todo el mundo la capacidad de garantizar una autenticación de alta calidad de la identidad de sus destinatarios. Ahora puede utilizar el método de autenticación de identidad de Id. de gobierno en los formularios adaptativos habilitados para Adobe Sign.
 
-  La Id. de gobierno es un método de autenticación de identidad premium que indica al destinatario cómo [cargar la imagen de un documento de identidad emitido por el gobierno (licencia de conducir, identificación nacional, pasaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) y luego evalúa ese documento para asegurarse de que es auténtico.
+  El Id. de gobierno es un método de autenticación de identidad premium que indica al destinatario que [cargar la imagen de un documento de identidad emitido por el gobierno (licencia de conducir, identificación nacional, pasaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)y, a continuación, evalúa ese documento para asegurarse de que es auténtico.
 
 - **Compatibilidad para utilizar la experiencia de firma en formularios para envíos asincrónicos de formularios adaptables**
 

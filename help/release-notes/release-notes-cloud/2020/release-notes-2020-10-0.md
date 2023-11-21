@@ -1,10 +1,10 @@
 ---
-title: Notas de la versión 2020.10.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2020.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.10.0."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 30%
 
 ---
@@ -47,7 +47,7 @@ La de la siguiente versión (2020.11.0) será el 1 de diciembre de 2020.
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics para Forms adaptable**: ahora puede capturar y rastrear el comportamiento del inicio de sesión y no inicio de sesión (anónimo) mediante Adobe Analytics para Forms adaptable para recopilar las perspectivas del usuario final. Ayuda a los usuarios empresariales a tomar decisiones informadas sobre el contenido, el diseño y el estilo del formulario adaptable en función de las perspectivas recopiladas.
+* **Analytics para Forms adaptable**: ahora puede capturar y rastrear el comportamiento del inicio de sesión y no inicio de sesión (anónimo) mediante Adobe Analytics para Forms adaptable para recopilar las perspectivas de usuario. Ayuda a los usuarios empresariales a tomar decisiones informadas sobre el contenido, el diseño y el estilo del formulario adaptable en función de las perspectivas recopiladas.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
@@ -63,15 +63,15 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 ### Novedades {#what-is-new-commerce}
 
-* Lanzamiento del sitio de referencia de CIF Venia 2020.10.2, que incluye la versión más reciente de los componentes principales de CIF 1.4.0. Consulte [Sitio de referencia de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) para obtener más información.
+* CIF CIF Lanzamiento del sitio de referencia de Venia de la versión 2020.10.2, que incluye la versión más reciente de componentes principales de la versión 1.4.0 de la versión de. Consulte [Sitio de referencia de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) para obtener más información.
 
-* Componentes principales de CIF v1.4.0. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) para obtener más información.
+* CIF Lanzamiento de los componentes principales de la versión 1.4.0 de. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) para obtener más información.
 
 ### Correcciones de errores {#bug-fixes-commerce}
 
 * Las solicitudes de GraphQL que se encontraban en la consola de producto y los seleccionadores se realizaban mediante el POST HTTP. Este problema se ha corregido para garantizar que el cliente de Apollo GraphQL respete la configuración de OSGi del cliente de GraphQL para admitir solicitudes de GET si se configura.
 
-* La interfaz de usuario de configuración de CIF Cloud muestra los botones &quot;Guardar y cerrar&quot; para las configuraciones en /lib y /apps/. Pero estas interfaces son de solo lectura, por lo que la interfaz de usuario se fija para mostrar solo el botón &quot;Cerrar&quot;.
+* CIF La interfaz de usuario de configuración de nube de muestra los botones &quot;Guardar y cerrar&quot; para las configuraciones en /lib y /apps/. Pero estas interfaces son de solo lectura, por lo que la interfaz de usuario se fija para mostrar solo el botón &quot;Cerrar&quot;.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -90,7 +90,7 @@ La fecha de lanzamiento de Cloud Manager en Experience Manager as a Cloud Servic
 * Se aumentó el número de variables de entorno por entorno a 200.
 
 * La tarjeta Entorno de la página Información general ahora enumera hasta tres entornos. Los usuarios pueden seleccionar el botón **Mostrar todo** para ir a la página Resumen de entornos y ver una tabla con una lista completa de entornos.
-Consulte [Entorno de visualización](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obtener más información.
+Consulte [Ver entorno](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obtener más información.
 
 ### Correcciones de errores {#bug-fixes-cloud-manager}
 

@@ -2,7 +2,7 @@
 title: ¿Cómo puedo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes principales?
 description: Aprenda a agregar nuevas configuraciones regionales para un formulario adaptable.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 22%
@@ -145,7 +145,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
    <filter root="/etc/languages"/>
    ```
 
-   ![Añada las carpetas recién creadas en `filter.xml` bajo `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
+   ![Añada las carpetas creadas en `filter.xml` bajo `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
 ### 6. Confirme los cambios e implemente la canalización {#commit-changes-in-repo-deploy-pipeline}
 

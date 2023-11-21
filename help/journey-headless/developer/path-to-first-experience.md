@@ -2,10 +2,10 @@
 title: Ruta hacia la primera experiencia para usar AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de AEM sin encabezado, comprenderá los pasos para aplicar su primera experiencia sin encabezado en AEM, incluidas las consideraciones de planificación, y también aprenderá las prácticas recomendadas para que su ruta sea lo más fluida posible.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1995'
-ht-degree: 91%
+source-wordcount: '1996'
+ht-degree: 90%
 
 ---
 
@@ -104,7 +104,7 @@ Un proyecto sin encabezado no solo es exitoso debido a la tecnología implementa
 * Si tiene restricciones de acceso, intente alinear su modelo de contenido con los requisitos de acceso.
 * Cuando tiene requisitos de acceso, deben dirigir su jerarquía de contenido. Agrupe el contenido que edita el mismo grupo de personas.
 * Agrupe contenido similar en una carpeta.
-   * Esto facilita que un autor de contenido copie y pegue el contenido existente para crear contenido nuevo. Por lo tanto, hacer esto en la misma carpeta lo hace más eficiente.
+   * Es más probable que un autor de contenido copie y pegue el contenido existente para crear contenido nuevo. Por lo tanto, hacer esto en la misma carpeta lo hace más eficiente.
    * AEM permite establecer los modelos permitidos por carpeta, de modo que el botón **Crear nuevo** solo muestra los modelos compatibles con esa ubicación.
 * La creación del editor de fragmentos de contenido en línea de nuevos fragmentos de contenido se puede simplificar si la carpeta raíz está configurada en el modelo. A continuación, el profesional no tiene que elegir una ubicación, sino que solo tiene que proporcionar un nombre y puede empezar a editar la nueva referencia.
 

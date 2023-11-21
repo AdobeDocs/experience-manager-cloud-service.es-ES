@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 14%
@@ -118,7 +118,7 @@ Al agregar recursos al conjunto, estos se agregan automáticamente en orden alfa
 
 1. Para eliminar un recurso, seleccione la casilla de verificación correspondiente y seleccione **[!UICONTROL Eliminar recurso]**.
 1. Para aplicar un ajuste preestablecido, seleccione **[!UICONTROL Preestablecido]** en la esquina superior derecha, seleccione un ajuste preestablecido para aplicarlo a los recursos.
-1. Seleccione **[!UICONTROL Guardar]**. El conjunto de medios mixtos recién creado aparecerá en la carpeta en la que lo creó.
+1. Seleccione **[!UICONTROL Guardar]**. El conjunto de medios mixtos creado aparecerá en la carpeta en la que lo creó.
 
 ## Editar conjuntos de medios mixtos {#editing-mixed-media-sets}
 

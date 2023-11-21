@@ -2,7 +2,7 @@
 title: Información general sobre el transformador de contenido
 description: Obtenga información sobre cómo detectar y corregir problemas relacionados con el contenido notificados por la BPA mediante el transformador de contenido.
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 2%
@@ -24,7 +24,7 @@ El transformador de contenido puede ayudar a resolver los problemas que se encue
 | DOPI | deprecated.ordered.index | Elimine los índices obsoletos. |
 | OAUI | non.migrated.oauth.users | AEM Elimine estos usuarios para asegurarse de que no se migran a los as a Cloud Service de la. |
 | PCX | page.complex.medium <br> page.complex.high | AEM Elimine las páginas o elementos secundarios o muévalos a una ubicación diferente para asegurarse de que no se migren a las páginas o elementos secundarios as a Cloud Service de la página o el sitio de trabajo de la página o el sitio de trabajo. |
-| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modify <br> custom.replication.agent.discovery | Elimine los agentes de replicación recién creados. <br> O <br> Elimine las propiedades modificadas o agregadas. |
+| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modify <br> custom.replication.agent.discovery | Elimine los agentes de replicación creados. <br> O <br> Elimine las propiedades modificadas o agregadas. |
 | URS | clientlibs.location <br> file.location <br> node.location <br> workflow.location | Desplácese a la ubicación correcta para evitar problemas durante la migración. |
 | URS | node.size | Mover los nodos temporalmente a`/etc/packages/content-transformation/paths` AEM para asegurarse de que no se migran a la as a Cloud Service. |
 

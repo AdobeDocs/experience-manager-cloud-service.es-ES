@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.6.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2021.6.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 44%
+source-wordcount: '1435'
+ht-degree: 48%
 
 ---
 
@@ -48,7 +48,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 ### Novedades {#what-is-new-junecm}
 
-* El servicio Vista previa se implementará progresivamente en todos los programas. Se notifica a los clientes en el producto cuando su programa está habilitado para el servicio Vista previa. Consulte [Acceso al servicio Vista previa](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obtener más información.
+* El servicio Vista previa se implementará progresivamente en todos los programas. Se notifica a los clientes en el producto cuando su programa esté habilitado para el servicio de previsualización. Consulte [Acceder al servicio de previsualización](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obtener más información.
 
 * Las dependencias de Maven descargadas durante el paso de generación ahora se almacenan en la memoria caché entre ejecuciones de canalización. Esta característica se habilitará para los clientes en las próximas semanas.
 
@@ -60,13 +60,13 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 * La regla de calidad `ImmutableMutableMixCheck` se ha actualizado para clasificar nodos `/oak:index` como inmutables.
 
-* Las reglas de calidad `CQBP-84` y `CQBP-84--dependencies` se han consolidado en una única regla. AEM Como parte de esta consolidación, el análisis de dependencias identifica con mayor precisión los problemas en dependencias de terceros que se implementan en el tiempo de ejecución de la.
+* Las reglas de calidad `CQBP-84` y `CQBP-84--dependencies` se han consolidado en una única regla. Como parte de esta consolidación, el análisis de dependencias identifica con mayor precisión los problemas en dependencias de terceros que se implementan en el tiempo de ejecución de AEM.
 
-* Para evitar confusiones, se han consolidado las filas de segmento Publicar AEM y Publicar Dispatcher en la página Detalles del entorno.
+* Para evitar confusiones, se han consolidado las filas de segmentos Publicar AEM y Publicar Dispatcher en la página Detalles del entorno.
 
   ![Entornos de Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* Se ha agregado una nueva regla de calidad de código para validar la estructura de los índices `damAssetLucene`. Consulte [Índices Oak de DAM Asset Lucene personalizados](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obtener más información.
+* Se ha agregado una nueva regla de calidad de código para validar la estructura de los índices `damAssetLucene`. Consulte [Índices personalizados de recursos DAM de Oak Lucene](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obtener más información.
 
 * La página Detalles del entorno ahora mostrará varios nombres de dominio para los servicios Publicación y Vista previa (según corresponda). Consulte [Detalles del entorno](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obtener más información.
 
@@ -102,7 +102,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 * La configuración de vista se mejora para permitir que los usuarios elijan una vista predeterminada y un parámetro de ordenación predeterminado.
 * La funcionalidad de descarga de Linkshare utiliza descargas asincrónicas que aumentan la velocidad de descarga.
 * Los usuarios pueden buscar y filtrar las carpetas en función de los predicados de propiedades.
-* [!DNL Experience Manager Assets] incrusta el Visor de PDF con tecnología [!DNL Adobe Document Cloud] para obtener una vista previa de los documentos admitidos. Esta función permite a los usuarios previsualizar el PDF y otros archivos de varias páginas sin ningún procesamiento complejo. Esto mejora la paridad de las funciones con [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] incrusta el visor de PDF con tecnología [!DNL Adobe Document Cloud] para obtener una vista previa de los documentos admitidos. Esta función permite a los usuarios previsualizar el PDF y otros archivos de varias páginas sin ningún procesamiento complejo. Esto mejora la paridad de las funciones con [!DNL Experience Manager] 6.5.
 
 ### Errores corregidos en [!DNL Assets] {#bugs-fixed-assets}
 
@@ -167,7 +167,7 @@ La fecha de lanzamiento as a Cloud Service de AEM Screens es el 24 de junio de 2
 
 ### Novedades {#what-is-new-cif}
 
-* Nuevos tipos de datos de referencia de productos y categorías del CIF para fragmentos de contenido (incl. soporte de la interfaz de usuario del selector de productos/categorías)
+* CIF Nuevos tipos de datos de referencia de productos y categorías para fragmentos de contenido (incl. soporte de la interfaz de usuario del selector de productos/categorías)
 * Nuevo componente principal de fragmento de contenido de Commerce
 * AEM Búsqueda de comercio de texto completo admitida en el back-end de la
 * Los componentes principales de Commerce admiten la recopilación de datos de Adobe Commerce Sensei Recs

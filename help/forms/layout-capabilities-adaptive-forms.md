@@ -2,10 +2,10 @@
 title: ¿Cuáles son las capacidades de diseño de Adaptive Forms?
 description: El diseño y el aspecto visual de los formularios adaptables en diferentes dispositivos se rigen por la configuración de diseño. Obtenga información sobre los distintos diseños y cómo aplicarlos.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 92%
+source-wordcount: '860'
+ht-degree: 90%
 
 ---
 
@@ -71,7 +71,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 Con este diseño, puede colocar el componente **[!UICONTROL Formulario adaptable con panel]** en un panel con navegación de estilo acordeón. Este diseño también permite crear paneles repetibles. Los paneles repetibles permiten agregar o quitar paneles de forma dinámica según sea necesario. Puede definir el número mínimo y máximo de veces que se repite un panel. Además, el título del panel se puede determinar dinámicamente en función de la información proporcionada en los elementos del panel.
 
-La expresión de resumen se puede utilizar para mostrar los valores proporcionados por el usuario final en el título del panel minimizado.
+La expresión de resumen se puede utilizar para mostrar los valores proporcionados por el usuario en el título del panel minimizado.
 
 ![Paneles repetibles con un diseño de acordeón en un formulario adaptable](assets/accordion-layout.png)
 

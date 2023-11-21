@@ -1,7 +1,7 @@
 ---
 title: ¿Qué son las expresiones de formulario adaptable?
 description: Utilice expresiones de formularios adaptables para agregar validación automática, cálculo y activar o desactivar la visibilidad de una sección.
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2698'
 ht-degree: 98%
@@ -121,7 +121,7 @@ La expresión “summary” se utiliza generalmente para repetir elementos secun
 
 **Tipo de devolución:** La expresión devuelve un valor String que se convierte en el título del acordeón.
 
-**Ejemplo:**“Número de cuenta : “ + textbox1.value
+**Ejemplo:** “Número de cuenta: ” + textbox1.value
 
 ### Expresión “validate” {#validate-expression}
 
@@ -187,7 +187,7 @@ Los métodos para agregar validaciones en un campo son los siguientes:
 
 ### Requerido {#required}
 
-Para hacer que un componente sea obligatorio, en el diálogo **Editar** del componente, puede seleccionar la opción **Título y texto > Requerido**. También puede agregar el mensaje necesario correspondiente (opcional) . .
+Para hacer que un componente sea obligatorio, en el diálogo **Editar** del componente, puede seleccionar la opción **Título y texto > Requerido**. También puede agregar el mensaje necesario correspondiente (opcional).
 
 ### motivos de validación {#validation-patterns}
 
@@ -205,7 +205,7 @@ El formato de visualización puede utilizarse para mostrar los datos en distinto
 
 ### GuideBridge: API y eventos {#guidebridge-apis-and-events}
 
-GuideBridge es una colección de API que se pueden usar para interactuar con formularios adaptables en el modelo de memoria en un explorador. Para obtener una introducción detallada a la API de Guide Bridge, los métodos de clase y los eventos expuestos, consulte [Referencia de la API de la biblioteca JavaScript™ para formularios adaptables](https://helpx.adobe.com/es/aem-forms/6/javascript-api/).
+GuideBridge es una colección de API que se pueden usar para interactuar con Forms adaptable en el modelo de memoria en un explorador. Para obtener una introducción detallada a la API de Guide Bridge, los métodos de clase y los eventos expuestos, consulte [Referencia de la API de la biblioteca JavaScript™ para formularios adaptables](https://helpx.adobe.com/es/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >

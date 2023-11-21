@@ -4,9 +4,9 @@ description: Conozca los conceptos básicos de AEM; administración de paquetes 
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3771'
+source-wordcount: '3774'
 ht-degree: 4%
 
 ---
@@ -401,7 +401,7 @@ El Administrador de paquetes puede realizar las siguientes validaciones:
 
 Esta validación inspecciona el paquete para todos los archivos JAR (paquetes OSGi) y extrae su `manifest.xml` AEM (que contiene las dependencias con versiones en las que se basa dicho paquete OSGi) y verifica la instancia de la exporta dichas dependencias con las versiones correctas.
 
-**Cómo se informa de él**
+**Cómo se informa**
 
 AEM Cualquier dependencia con versiones que la instancia de la instancia de la aplicación no pueda satisfacer se enumera en el registro de actividad del administrador de paquetes.
 
@@ -425,7 +425,7 @@ AEM Esta validación determina si el paquete que se está instalando contiene un
 
 Por ejemplo, dada una superposición existente en `/apps/sling/servlet/errorhandler/404.jsp`, un paquete que contiene `/libs/sling/servlet/errorhandler/404.jsp`, de forma que cambie el archivo existente en `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Cómo se informa de él**
+**Cómo se informa**
 
 Cualquier superposición de este tipo se describe en el registro de actividad del administrador de paquetes.
 
@@ -447,7 +447,7 @@ Para resolver este problema, el responsable del archivo de superposición en `/a
 
 Esta validación comprueba qué permisos se agregan, cómo se administran (combinar/reemplazar) y si los permisos actuales se ven afectados.
 
-**Cómo se informa de él**
+**Cómo se informa**
 
 Los permisos se describen en el registro de actividad del administrador de paquetes.
 

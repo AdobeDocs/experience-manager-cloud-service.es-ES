@@ -2,10 +2,10 @@
 title: Administración de actividades
 description: La consola Actividades permite crear, organizar y administrar las actividades de marketing de las marcas
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 86%
+source-wordcount: '1958'
+ht-degree: 85%
 
 ---
 
@@ -213,7 +213,7 @@ Para evitar problemas de sincronización, use siempre nombres únicos para las a
 
 >[!NOTE]
 >
->Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId` a cada campaña. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; por tanto, los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
+>Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId` a cada campaña. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
 >
 >Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribirá la campaña existente.
 >

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2870'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ _Creación de un ajuste preestablecido de imagen seleccionando opciones en la pe
 
 Lo recuerda en [Estructura de una URL de Dynamic Media](#dm-journey-d) anteriormente, había leído acerca de la URL de Dynamic Media y cómo se crea. El **[!UICONTROL Modificador de imagen]** en el cuadro de texto se puede escribir cualquier parámetro de procesamiento de imagen adicional que desee. Los parámetros se incluyen en el nombre del ajuste preestablecido de la URL cuando se entregan las imágenes mediante el ajuste preestablecido. En la captura de pantalla anterior, el parámetro `bgc=451B15` se ha añadido. Es decir, se ha añadido un color de fondo marrón oscuro.
 
-Puede considerar un ajuste preestablecido de imagen como una fórmula para sus imágenes. Entregará todas las imágenes que utilicen el ajuste preestablecido, de forma consistente, cada vez; será el mismo. El parámetro `&op_brightness=+10` también se ha añadido para aumentar ligeramente el brillo.
+Puede considerar un ajuste preestablecido de imagen como una fórmula para sus imágenes. Entregará todas las imágenes que utilicen el ajuste preestablecido, de forma coherente, cada vez; será el mismo. El parámetro `&op_brightness=+10` también se ha añadido para aumentar ligeramente el brillo.
 
 Cuando haya terminado, guarde el ajuste preestablecido y ya estará disponible para todas las imágenes que tenga. En este caso, queremos aplicar la variable _Mediana_ imagen preestablecida a una imagen de un tazón de chocolate líquido.
 

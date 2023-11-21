@@ -2,7 +2,7 @@
 title: ¿Cómo puedo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes de base?
 description: Para el Forms adaptable, puede añadir configuraciones regionales para más idiomas, aparte de la que se proporciona de forma predeterminada.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 80%
@@ -104,7 +104,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 1. Agregue los valores de configuración regional predeterminados `<locale-name>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
 
 1. Agregue `<locale>` a los valores de la propiedad `languages` de `/etc/languages`.
-1. Añada las carpetas recién creadas en `filter.xml` bajo etc/META-INF/[jerarquía de carpetas] como:
+1. Añada las carpetas creadas en `filter.xml` bajo etc/META-INF/[jerarquía de carpetas] como:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>

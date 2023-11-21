@@ -2,7 +2,7 @@
 title: Eliminación del índice Lucene genérico
 description: Obtenga información acerca de la eliminación planificada de índices Lucene genéricos y cómo puede verse afectado.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -154,6 +154,7 @@ Antes de la eliminación del índice Lucene genérico, la variable `pathfield` E
 >[!NOTE]
 >
 >El Editor del modelo de fragmentos de contenido utiliza campos de ruta especializados con el tipo de recurso Sling `dam/cfm/models/editor/components/contentreference`.
+>
 > * En la actualidad, estos realizan consultas sin especificar tipos de nodo, lo que da como resultado que se registre un ADVERTENCIA debido al uso del índice Lucene genérico.
 > * Las instancias de estos componentes pronto utilizarán de forma predeterminada `cq:Page` y `dam:Asset` tipos de nodo sin más acción del cliente.
 > * El `nodeTypes` se puede agregar la propiedad para anular estos tipos de nodos predeterminados.
@@ -167,6 +168,6 @@ Adobe adoptará un enfoque en dos fases para eliminar el índice Lucene genéric
 
 El Adobe supervisará los mensajes de registro mencionados anteriormente e intentará ponerse en contacto con los clientes que sigan dependiendo del índice Lucene genérico.
 
-Como mitigación a corto plazo, Adobe agregará definiciones de índice personalizadas directamente a los sistemas de los clientes para evitar problemas funcionales o de rendimiento como resultado de la eliminación del índice Lucene genérico según sea necesario.
+Como mitigación a corto plazo, Adobe agrega definiciones de índice personalizadas directamente a los sistemas de los clientes para evitar problemas funcionales o de rendimiento como resultado de la eliminación del índice Lucene genérico según sea necesario.
 
-En estos casos, se proporcionará al cliente la definición de índice actualizada y se le aconsejará que la incluya en futuras versiones de su aplicación mediante Cloud Manager.
+En estos casos, se proporciona al cliente la definición de índice actualizada y se le informa de que la incluye en futuras versiones de su aplicación a través de Cloud Manager.

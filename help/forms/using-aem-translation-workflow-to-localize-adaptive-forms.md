@@ -6,7 +6,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 94%
@@ -28,7 +28,7 @@ El servicio de traducción automática traduce inmediatamente el contenido de lo
 1. En la pantalla **Agregar diccionario al proyecto de traducción**, seleccione las opciones **Crear un nuevo proyecto de traducción** o **Agregar a un proyecto de traducción existente**.
 1. En el campo **Título del proyecto**, especifique el título. Por ejemplo, `Government Reference Site - German locale.`
 1. En el campo **Idiomas de destino**, especifique una configuración regional (por ejemplo, `German(de)`) y haga clic en **Listo**. Puede especificar varias configuraciones regionales. El formulario se traduce a todas las configuraciones regionales especificadas en el campo **Idiomas de destino**.
-1. En el cuadro de diálogo Diccionario agregado, haga clic en **Abrir proyectos**. En la pantalla Proyectos, abra el proyecto recién creado.
+1. En el cuadro de diálogo Diccionario agregado, haga clic en **Abrir proyectos**. En la pantalla Proyectos, abra el proyecto creado.
 1. Haga clic en los **puntos suspensivos** que aparecen en la parte inferior del mosaico **Resumen de la traducción**. Se abre la pantalla Resumen de la traducción.
 1. Haga clic en el icono **Editar** que aparece en la parte superior de la pantalla **Resumen de la traducción**. Abra la pestaña **Traducción** y seleccione Traducción automática en la pantalla **Método de traducción**. Seleccione el **Proveedor de traducción** y la **Configuración en la nube** adecuados. Haga clic en el icono **Listo** que aparece en la parte superior de la pantalla.
 1. En el mosaico **Trabajo de traducción**, haga clic en el icono ![aem62forms_downarrow](assets/aem62forms_downarrow.png) y luego haga clic en **Iniciar**. El estado del mosaico cambia a Borrador. Al finalizar la traducción, el estado cambia a **Listo para revisión**. Actualice la página después de unos minutos y verifique el estado.

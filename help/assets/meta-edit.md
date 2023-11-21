@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -36,7 +36,7 @@ Para editar metadatos:
    >
    >Si un campo de texto está vacío, no hay ningún conjunto de metadatos existente. Puede introducir un valor en el campo y guardarlo para añadir esa propiedad de metadatos.
 
-XMP Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos de. Esto se realiza mediante el flujo de trabajo de reescritura de metadatos del Experience Manager. Cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y se crean propiedades de nueva creación (incluidas propiedades personalizadas como `cq:tags`) se añaden junto con el esquema.
+XMP Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos de. Esto se realiza mediante el flujo de trabajo de reescritura de metadatos del Experience Manager. Cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y crean propiedades (incluidas propiedades personalizadas como `cq:tags`) se añaden junto con el esquema.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 

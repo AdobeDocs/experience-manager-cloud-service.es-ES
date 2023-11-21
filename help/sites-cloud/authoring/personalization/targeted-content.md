@@ -2,9 +2,9 @@
 title: Creación de contenido orientado mediante el modo de Orientación
 description: El modo segmentación y el componente de Target proporcionan herramientas para crear contenido para experiencias
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '5304'
+source-wordcount: '5302'
 ht-degree: 87%
 
 ---
@@ -51,7 +51,7 @@ Las actividades y experiencias que ve en el modo de Target reflejan la [consola 
 
 >[!NOTE]
 >
->Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId` a cada campaña. Al eliminar la campaña en Adobe Target, thirdPartyId no se elimina. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; por tanto, los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
+>Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId` a cada campaña. Al eliminar la campaña en Adobe Target, thirdPartyId no se elimina. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
 >
 >Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribirá la campaña existente.
 >

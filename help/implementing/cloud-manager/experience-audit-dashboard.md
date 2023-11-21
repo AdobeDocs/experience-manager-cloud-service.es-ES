@@ -2,10 +2,10 @@
 title: Tablero de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO a través de una interfaz de panel clara e informativa.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 23%
+source-wordcount: '830'
+ht-degree: 22%
 
 ---
 
@@ -16,7 +16,7 @@ Descubra cómo la auditoría de experiencias valida el proceso de implementació
 
 >[!NOTE]
 >
->Esta función solo está disponible para [el programa de adopción temprana.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Esta funcionalidad solo está disponible para [el programa de clientes pioneros.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 >
 >AEM Para obtener más información sobre la función de auditoría de experiencias existente para los informes as a Cloud Service, consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md).
 
@@ -28,7 +28,7 @@ La auditoría de experiencia es una característica disponible en las canalizaci
 
 1. No introduzcan regresiones.
 
-La auditoría de experiencias en Cloud Manager garantiza que la experiencia del usuario final en el sitio sea de los más altos estándares.
+La auditoría de experiencias en Cloud Manager garantiza que la experiencia del usuario en el sitio sea de los más altos estándares.
 
 Los resultados de la auditoría son informativos y permiten al administrador de implementación ver las puntuaciones y el cambio entre las puntuaciones actuales y anteriores. Esta perspectiva es importante para determinar si hay una regresión que se haya introducido con la implementación actual.
 

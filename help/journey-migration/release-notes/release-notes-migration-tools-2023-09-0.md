@@ -3,9 +3,9 @@ title: AEM Notas de la versión de las herramientas de migración de la versión
 description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2022.09.0 de
 feature: Release Information
 exl-id: 484a60d4-a439-43d6-a23e-4a3b45ef4160
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '147'
 ht-degree: 4%
 
 ---
@@ -22,8 +22,8 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v3.0.0 e
 
 ### Novedades {#what-is-new-ctt}
 
-La herramienta de transferencia de contenido se ha mejorado considerablemente para ofrecer las siguientes ventajas:
+La herramienta de transferencia de contenido se ha mejorado para proporcionar las siguientes ventajas:
 
-* Se ha reducido el tiempo de transferencia al migrar un subconjunto de un repositorio de contenido mediante AzCopy para copiar solo los ID de blob necesarios en lugar de copiar todos los ID de blob
-* Reposiciones de contenido diferencial más rápidas con la actualización de Oak
-* Se ha mejorado la solidez al separar el proceso de indexación del proceso de ingesta de contenido. En caso de error de indexación, no es necesario volver a ingerir el contenido. Solo la indexación se reiniciará automáticamente, lo que ahorrará un tiempo y esfuerzo significativos
+* Se ha reducido el tiempo de transferencia al migrar un subconjunto de un repositorio de contenido mediante AzCopy para copiar solo los ID de blob necesarios en lugar de copiar todos los ID de blob.
+* Reposiciones de contenido diferencial más rápidas con la actualización de Oak.
+* Se ha mejorado la solidez al separar el proceso de indexación del proceso de ingesta de contenido. Si se produce un error en la indexación, no es necesario volver a introducir el contenido. Solo la indexación se reinicia automáticamente, lo que ahorra un tiempo y esfuerzo significativos.

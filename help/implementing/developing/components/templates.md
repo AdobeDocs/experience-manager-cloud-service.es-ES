@@ -2,7 +2,7 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan para crear una página que se utiliza como base para la nueva página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 8%
@@ -356,7 +356,7 @@ When creating an editable template, the value is copied from the template type t
 Si ha creado una plantilla que puede servir de base a otras plantillas, puede copiar esta plantilla como un tipo de plantilla.
 
 1. Cree una plantilla como lo haría con cualquier plantilla de página [como se documenta aquí](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), que servirá de base para el tipo de plantilla.
-1. Con el CRXDE Lite, copie la plantilla recién creada desde el `templates` nodo a `template-types` nodo bajo el [carpeta de plantillas](#template-folders).
+1. Con CRXDE Lite, copie la plantilla creada desde el `templates` nodo a `template-types` nodo bajo el [carpeta de plantillas](#template-folders).
 1. Elimine la plantilla del `templates` nodo bajo el [carpeta de plantillas](#template-folders).
 1. En la copia de la plantilla que se encuentra debajo de `template-types` nodo, eliminar todo `cq:template` y `cq:templateType` propiedades de todos `jcr:content` nodos.
 
@@ -595,6 +595,6 @@ El diagrama siguiente muestra el proceso de evaluación de la plantilla:
 
 Para limitar qué plantillas se pueden utilizar para crear páginas secundarias en una página determinada, utilice la variable `cq:allowedTemplates` propiedad de `jcr:content` de la página para especificar la lista de plantillas que pueden utilizarse como páginas secundarias. Cada valor de la lista debe ser una ruta absoluta a una plantilla para una página secundaria permitida, por ejemplo `/apps/wknd/templates/page-content`.
 
-Puede usar el complemento `cq:allowedTemplates` propiedad en la plantilla  `jcr:content` para que esta configuración se aplique a todas las páginas recién creadas que utilicen esta plantilla.
+Puede usar el complemento `cq:allowedTemplates` propiedad en la plantilla  `jcr:content` para aplicar esta configuración a todas las páginas creadas que utilicen esta plantilla.
 
 Si desea agregar más restricciones, por ejemplo con respecto a la jerarquía de plantillas, puede utilizar la variable `allowedParents/allowedChildren` propiedades en la plantilla. A continuación, puede especificar explícitamente que las páginas creadas a partir de una plantilla T tengan que ser páginas principales o secundarias de páginas creadas a partir de una plantilla T.

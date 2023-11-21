@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Para conectar el PWA Studio con el extremo de GraphQL AEM de la, puede utilizar 
 
 1. AEM El cliente Apollo espera el punto final de GraphQL de la en `<https://pwa-studio/endpoint.js>`. Para asignar el extremo a esta ubicación, personalice la configuración UPWARD de la aplicación PWA Studio: a. AEM Añada la variable_CFM_GRAPHQL AEM a pwa-root/.env y adáptela para que apunte a su punto final de GraphQL Fragmentos de contenido de.
 
-   Ejemplo: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
+   Ejemplos: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
    b. Añada una resolución proxy a la configuración UPWARD. Una configuración de muestra ASCENDENTE podría tener este aspecto:
 
@@ -95,13 +95,13 @@ AEM Siga la documentación de Fragmentos de contenido de para configurar un punt
 
   Establezca la propiedad allowedorigin en el nombre de host completo de la aplicación PWA.
 
-  Ejemplo:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Ejemplos:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtro de referente de Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
   Establezca la propiedad allow.hosts en el nombre de host de la aplicación PWA.
 
-  Ejemplo: `pwa-studio-test-vflyn.local.pwadev`
+  Ejemplos: `pwa-studio-test-vflyn.local.pwadev`
 
 Puede encontrar ejemplos completos de ambas configuraciones aquí: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
@@ -117,7 +117,7 @@ Las configuraciones de producción pueden variar en varios aspectos.
 
 * Puede tener un único extremo de GraphQL AEM federado que combine datos de GraphQL de Adobe Commerce y de la aplicación de datos de la aplicación de datos en lugar de personalizar el cliente de Apollo.
 * La aplicación de PWA Studio AEM podría utilizar la URL de extremo de GraphQL de la directamente, sin un proxy con UPWARD. El proxy también se puede mover a una capa diferente (por ejemplo, CDN).
-* El enfoque que mejor se adapte a sus necesidades también depende en gran medida de cómo entregue la aplicación PWA Studio al usuario final.
+* El enfoque que mejor se adapte a sus necesidades también depende en gran medida de cómo distribuya la aplicación PWA Studio al usuario.
 
 Esta extensión incluye dos ejemplos.
 

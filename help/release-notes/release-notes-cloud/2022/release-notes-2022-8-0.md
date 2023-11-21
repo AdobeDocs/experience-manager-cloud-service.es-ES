@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 55%
+source-wordcount: '623'
+ht-degree: 51%
 
 ---
 
@@ -53,7 +53,7 @@ Eche un vistazo al vídeo Información general sobre la versión de agosto de 20
 
 ### Nuevas funciones de [!DNL Assets] {#features-assets}
 
-* Ahora puede configurar Adobe Experience Manager Assets en [restringir el tipo de recursos que los usuarios pueden cargar en función del tipo MIME](/help/assets/configure-asset-upload-restrictions.md).
+* Ahora puede configurar Adobe Experience Manager Assets para que [restringir el tipo de recursos que los usuarios pueden cargar en función del tipo MIME](/help/assets/configure-asset-upload-restrictions.md).
 
   ![Restricciones de carga de recursos](/help/assets/assets/asset-upload-restrictions.png)
 
@@ -67,7 +67,7 @@ Eche un vistazo al vídeo Información general sobre la versión de agosto de 20
 
    * Usar plantillas estáticas: los clientes con inversiones existentes en plantillas estáticas heredadas pueden continuar con su recorrido de adopción en la nube mediante el uso de plantillas estáticas en el asistente para crear formularios adaptables. Esto proporciona a los clientes tiempo adicional para migrar plantillas estáticas antiguas a plantillas editables modernas.
 
-* [Quitar campos ocultos de un documento de registro (DoR) durante el procesamiento en el servidor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): puede generar el PDF de documento de registro para los usuarios finales que contenga únicamente aquellos campos que fueron visibles para ellos durante la experiencia de captura de datos. Al enviar el formulario, el servidor valida qué campos se ocultaron al usuario final en función de los datos enviados y excluye del documento de registro para mantener la coherencia.
+* [Quitar campos ocultos de un documento de registro (DoR) durante el procesamiento en el servidor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): puede generar el PDF de documento de registro para los usuarios finales que contenga únicamente aquellos campos que fueron visibles para ellos durante la experiencia de captura de datos. Al enviar el formulario, el servidor valida qué campos se ocultaron al usuario en función de los datos enviados y los excluye del documento de registro para mantener la coherencia.
 
 ## Complemento CIF {#cloud-services-cif}
 

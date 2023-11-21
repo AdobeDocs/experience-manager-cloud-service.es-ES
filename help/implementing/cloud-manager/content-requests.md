@@ -2,9 +2,9 @@
 title: Explicación de las solicitudes de contenido de Cloud Service
 description: Si ha adquirido licencias de solicitud de contenido de Adobe, obtenga información acerca de los tipos de solicitudes de contenido que mide Adobe Experience Cloud as a Service y las variaciones con las herramientas de informes de análisis de una organización.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1160'
 ht-degree: 9%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 9%
 
 ## Variaciones de solicitudes de contenido de Cloud Service{#content-requests-variances}
 
-Las solicitudes de contenido pueden tener variaciones con las herramientas de informes de Analytics de una organización, como se resume en la siguiente tabla. En general, las herramientas de Analytics recopilan datos mediante instrumentación del lado del cliente <b>no debe utilizarse</b> para informar sobre la cantidad de solicitudes de contenido para un sitio determinado, simplemente porque a menudo dependen del consentimiento del usuario final para activarse, por lo tanto se pierden una fracción significativa del tráfico. AEM Las herramientas de Analytics que recopilan datos del lado del servidor en archivos de registro o los informes de CDN para clientes que agregan su propia CDN además de la as a Cloud Service, proporcionarán mejores recuentos de datos. Para informar sobre Vistas de página, así como su rendimiento asociado, el Servicio de datos de Adobe RUM es la opción recomendada por el Adobe.
+Las solicitudes de contenido pueden tener variaciones con las herramientas de informes de Analytics de una organización, como se resume en la siguiente tabla. En general, las herramientas de Analytics recopilan datos mediante instrumentación del lado del cliente <b>no debe utilizarse</b> para informar sobre la cantidad de solicitudes de contenido para un sitio determinado, simplemente porque a menudo dependen del consentimiento del usuario para activarse, por lo tanto se pierden una fracción significativa del tráfico. AEM Las herramientas de Analytics que recopilan datos del lado del servidor en archivos de registro o los informes de CDN para clientes que agregan su propia CDN además de la as a Cloud Service, proporcionarán mejores recuentos de datos. Para informar sobre Vistas de página, así como su rendimiento asociado, el Servicio de datos de Adobe RUM es la opción recomendada por el Adobe.
 
 | Motivo de la variación | Explicación |
 |---|---|
-| Consentimiento del usuario final | Las herramientas de Analytics que dependen de instrumentos del lado del cliente suelen depender del consentimiento del usuario final para activarse. Esto podría representar la mayoría del tráfico que no se rastrea. Para los clientes que deseen medir las solicitudes de contenido por su cuenta, se recomienda confiar en las herramientas de análisis que recopilan informes del lado del servidor o de CDN. |
+| Consentimiento del usuario final | Las herramientas de Analytics que dependen de la instrumentación del lado del cliente suelen depender del consentimiento del usuario para activarse. Esto podría representar la mayoría del tráfico que no se rastrea. Para los clientes que deseen medir las solicitudes de contenido por su cuenta, se recomienda confiar en las herramientas de análisis que recopilan informes del lado del servidor o de CDN. |
 | Etiquetado | Es posible que todas las páginas o llamadas a la API que se rastrean como solicitudes de contenido de Adobe Experience Manager AEM () no estén etiquetadas con el seguimiento de Analytics. |
 | Reglas de administración de etiquetas | La configuración de reglas de administración de etiquetas puede dar como resultado varias configuraciones de recopilación de datos en una página, lo que da como resultado una combinación de discrepancias con el seguimiento de solicitudes de contenido. |
 | Bots | Los bots desconocidos que no han sido identificados previamente y eliminados por AEM pueden causar discrepancias de seguimiento. |

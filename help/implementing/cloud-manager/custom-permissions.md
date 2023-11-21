@@ -1,21 +1,21 @@
 ---
 title: Permisos personalizados
-description: Descubra cómo puede utilizar permisos personalizados para crear nuevos perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
+description: Descubra cómo puede utilizar permisos personalizados para crear perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: 33d14ac66fa46c25f1e027aa86848768fd0271ff
+source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 2%
+source-wordcount: '1532'
+ht-degree: 38%
 
 ---
 
 # Permisos personalizados {#custom-permissions}
 
-Descubra cómo puede utilizar permisos personalizados para crear nuevos perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
+Descubra cómo puede utilizar permisos personalizados para crear perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 
 >[!NOTE]
 >
->Esta función solo está disponible para [el programa de adopción temprana.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Esta funcionalidad solo está disponible para [el programa de clientes pioneros.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 
 ## Introducción {#introduction}
 
@@ -26,91 +26,91 @@ Cloud Manager tiene un conjunto de funciones predefinidas que rigen el acceso a 
 * Administrador de implementación
 * Desarrollador
 
-Los permisos personalizados permiten a los usuarios crear nuevos perfiles de permisos personalizados con permisos configurables para restringir el acceso de los usuarios de Cloud Manager a programas, canalizaciones y entornos.
+Los permisos personalizados permiten a los usuarios crear perfiles de permisos personalizados con permisos configurables para restringir el acceso de los usuarios de Cloud Manager a programas, canalizaciones y entornos.
 
 >[!TIP]
 >
->Para obtener más información sobre las funciones predefinidas, consulte el documento [AEM Perfiles de equipo y producto as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md)
+>Para obtener más información sobre las funciones predefinidas, consulte [AEM Perfiles de equipo y producto as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
-## Uso de permisos personalizados {#using}
+## Cómo utilizar los permisos personalizados {#using}
 
-Para crear y utilizar sus propios permisos personalizados se requieren tres pasos:
+Para crear y utilizar sus propios permisos personalizados, se requieren tres pasos:
 
-1. [Cree un nuevo perfil de producto.](#create)
-1. [Asigne permisos personalizados al nuevo perfil de producto.](#assign-permissions)
-1. [Asigne usuarios al nuevo perfil de productos.](#assign-users)
+1. [Cree un perfil de producto.](#create)
+1. [Asigne permisos personalizados al perfil del producto.](#assign-permissions)
+1. [Asigne usuarios al perfil de producto.](#assign-users)
 
-En esta sección se detallan estos pasos. Puede que le resulte útil consultar la [Términos](#terms) y [Permisos configurables](#configurable-permissions) secciones a medida que crea sus propios permisos personalizados.
+Esta sección detalla estos pasos. Puede que le resulte útil consultar las secciones [Términos](#terms) y [Permisos configurables](#configurable-permissions) a medida que crea sus propios permisos personalizados.
 
 >[!NOTE]
 >
->Debe tener derechos de administrador de productos en Admin Console para Adobe Experience Manager as a Cloud Service para crear nuevos perfiles y administrar permisos para Cloud Manager.
+>Debe tener derechos de administrador de productos en Admin Console para Adobe Experience Manager as a Cloud Service para crear perfiles y administrar permisos para Cloud Manager.
 
 ### Crear un nuevo perfil de producto {#create}
 
-Primero debe crear un perfil de producto para poder asignar permisos personalizados.
+Cree primero un perfil de producto antes del cual pueda asignar permisos personalizados.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. En la página de aterrizaje de Cloud Manager, seleccione **Administrar acceso** botón
+1. En la página de aterrizaje de Cloud Manager, seleccione **Administrar acceso** botón.
 
 ![Botón Administrar acceso](assets/manage-access.png)
 
-1. Se le redirigirá a **Productos** pestaña del Admin Console, donde puede administrar usuarios y permisos para cloud manager. En el Admin Console, seleccione **Nuevo perfil** botón.
+1. Se le redirigirá a la pestaña **Productos** de Admin Console, donde puede administrar usuarios y permisos para Cloud Manager. En el Admin Console, seleccione **Nuevo perfil** botón.
 
 ![Botón Nuevo perfil](assets/admin-console-new-profile.png)
 
 1. Proporcione los detalles generales sobre el perfil.
 
-   * **Nombre del perfil del producto** - Un nombre descriptivo para el perfil
-   * **Nombre para mostrar** - Un nombre abreviado que se mostrará en la interfaz de usuario (opciones)
-   * **Descripción** - Una descripción informativa del perfil en la que se explique su finalidad (opcional)
-   * **Notificar a los usuarios por correo electrónico** : cuando se selecciona, se notifica a los usuarios por correo electrónico cuando se agregan o eliminan de este perfil.
+   * **Nombre del perfil del producto**: un nombre descriptivo para el perfil
+   * **Nombre para mostrar** - Un nombre abreviado que se muestra en la interfaz de usuario (opciones)
+   * **Descripción**: una descripción informativa del perfil en la que se explique su finalidad (opcional)
+   * **Notificar a los usuarios por correo electrónico** : cuando se selecciona, se notifica a los usuarios por correo electrónico cuando se añaden o eliminan de este perfil.
 
 1. Seleccionar **Guardar** cuando se complete.
 
-El nuevo perfil de producto se guarda y es visible en la lista de perfiles de producto del Admin Console.
+El nuevo perfil de producto se guarda y es visible en la lista de perfiles de producto de Admin Console.
 
 ### Asignar permisos personalizados al perfil {#assign-permissions}
 
 Ahora que tiene un nuevo perfil de producto, puede asignarle permisos personalizados.
 
-1. En el Admin Console, seleccione el nombre del [nuevo perfil de producto que acaba de crear.](#create)
+1. En el Admin Console, seleccione el nombre del [nuevo perfil de producto que ha creado](#create).
 
-1. En la ventana que se abre, seleccione la **Permisos** para ver una lista de permisos editables.
+1. En la ventana que se abre, seleccione la pestaña **Permisos** para ver una lista de permisos editables.
 
    ![Permisos editables](assets/permissions-tab.png)
 
-1. Seleccione el **Editar** Vínculo de un permiso para editarlo.
+1. Seleccione el **Editar** de un permiso para poder editarlo.
 
-1. El **Editar permisos** se abre.
+1. El **Editar permiso** se abre.
    * El permiso seleccionado en el paso anterior se selecciona en la columna izquierda.
-   * Los elementos de permiso disponibles para la asignación del permiso se encuentran en la columna central denominada **Permiso disponible** Elementos.
-   * Los elementos de permisos asignados se encuentran en la columna derecha con la etiqueta **Elementos de permisos incluidos**.
+   * Los elementos de permiso disponibles para la asignación del permiso se encuentran en la columna central denominada Elementos de **permisos disponibles**.
+   * Los elementos de permiso asignados se encuentran en la columna derecha con la etiqueta **Elementos de permisos incluidos**.
 
    ![Editar elementos de permiso](assets/edit-permission-items.png)
 
-1. Seleccione el signo más (`+`) junto al elemento de permiso para añadirlo a la columna **Elementos de permisos incluidos**.
+1. Seleccione el signo más (`+`) junto al elemento de permiso para poder agregarlo a la columna **Elementos de permisos incluidos**.
 
-   * Seleccione el `i` junto a un elemento de permiso para obtener más información al respecto.
+   * Seleccione el `i` junto a un elemento de permiso si desea obtener más información al respecto.
 
-1. Seleccione el **Añadir todo** en la parte superior del **Permisos disponibles** para agregar todos los permisos.
+1. Seleccione el **Añadir todo** en la parte superior del **Permisos disponibles** para que pueda añadir todos los permisos.
 
 1. Seleccionar **Guardar** cuando haya terminado de definir los elementos de permiso para el nuevo perfil de producto.
 
-El nuevo perfil de producto ahora se guarda con sus permisos personalizados.
+El nuevo perfil de producto se guarda ahora con sus permisos personalizados.
 
 ### Asignar usuarios a los permisos personalizados {#assign-users}
 
 Ahora puede asignar usuarios al nuevo perfil de producto que ha creado con permisos personalizados.
 
-1. En el Admin Console, seleccione el nombre del [nuevo perfil de producto al que acaba de asignar permisos personalizados.](#assign-permissions)
+1. En el Admin Console, seleccione el nombre del [nuevo perfil de producto al que ha asignado permisos personalizados.](#assign-permissions)
 
-1. En la ventana que se abre, seleccione la **Usuarios** pestaña.
+1. En la ventana que se abre, seleccione la pestaña **Usuarios**.
 
 1. Seleccione el **Agregar usuarios** y asigne usuarios a su nuevo perfil de productos con permisos personalizados.
 
-Consulte la sección **Adición de usuarios y grupos de usuarios a un perfil de producto** del documento [Administración de perfiles de producto para usuarios empresariales](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) para obtener más información sobre cómo utilizar el Admin Console.
+Consulte la sección **Adición de usuarios y grupos de usuarios a un perfil de producto** del documento [Administración de perfiles de producto para usuarios empresariales](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html?lang=es) para obtener más información sobre cómo utilizar el Admin Console.
 
 ## Permisos configurables {#configurable-permissions}
 
@@ -120,7 +120,7 @@ Los siguientes permisos están disponibles para crear perfiles personalizados.
 |---|---|
 | Creación de programa | Permitir que los usuarios creen un programa |
 | Acceso al programa | Permitir que los usuarios tengan acceso a los programas |
-| Edición de programa | Permitir que los usuarios editen programas |
+| Edición del programa | Permitir que los usuarios editen programas |
 | Crear entorno | Permitir que los usuarios creen un entorno |
 | Edición de entorno | Permitir que los usuarios actualicen y editen entornos |
 | Registros de entorno leídos | Permitir que los usuarios lean los registros del entorno |
@@ -128,34 +128,34 @@ Los siguientes permisos están disponibles para crear perfiles personalizados.
 | Entorno Restaurar crear | Permitir que los usuarios creen una restauración del entorno |
 | Restablecimiento rápido del entorno de desarrollo | Permitir a los usuarios restablecer el entorno de desarrollo rápido |
 | Gestor de copia de contenido | Permitir a los usuarios administrar las operaciones de copia de contenido |
-| Creación de canalización | Permitir que los usuarios creen nuevas canalizaciones |
+| Creación de canalización | Permitir que los usuarios creen canalizaciones |
 | Eliminación de canalización | Permitir que los usuarios eliminen canalizaciones |
-| Edición de canalización | Permitir que los usuarios editen canalizaciones |
-| Implementaciones de producción aprobadas/rechazadas | Permitir que los usuarios aprueben o rechacen un paso de implementación de producción |
-| Ejecuciones de canalización canceladas | Permitir a los usuarios cancelar las ejecuciones de canalización |
-| Inicio de ejecuciones de canalización | Permitir que los usuarios inicien nuevas ejecuciones de canalización |
-| Anular/Rechazar errores importantes de métricas | Permitir que los usuarios anulen o rechacen errores importantes de métricas |
-| Programación de implementaciones de producción | Permitir a los usuarios programar un paso de implementación de producción |
-| Acceso a información de repositorio | Permitir a los usuarios acceder a la información del repositorio y generar una contraseña de acceso |
-| Creación de repositorio | Permitir a los usuarios crear nuevos repositorios de Git |
+| Edición de canalizaciones | Permitir que los usuarios editen canalizaciones |
+| Aprobar/Rechazar implementaciones de producción | Permitir que los usuarios aprueben o rechacen un paso de implementación de producción |
+| Cancelar ejecuciones de canalización | Permitir a los usuarios cancelar las ejecuciones de canalización |
+| Iniciar ejecuciones de canalizaciones | Permitir que los usuarios inicien una nueva ejecución de canalización |
+| Anular/Rechazar errores de métricas importantes | Permitir que los usuarios anulen o rechacen errores importantes de métricas |
+| Programar implementaciones de producción | Permitir a los usuarios programar un paso de implementación de producción |
+| Acceso a información de repositorios | Permitir a los usuarios acceder a la información del repositorio y generar una contraseña de acceso |
+| Creación de repositorio | Permitir que los usuarios creen repositorios de Git |
 | Eliminación del repositorio | Permitir que los usuarios eliminen repositorios de Git |
 | Edición de repositorio | Permitir que los usuarios editen repositorios de Git |
-| Generación de código de repositorio | Permitir que los usuarios generen proyectos a partir de tipos de archivo |
+| Generación de código de repositorio | Permitir que los usuarios generen proyectos a partir del tipo de archivo |
 | Administrador de nombres de dominio | Permitir que los usuarios creen, editen o eliminen nombres de dominio |
 | Administrar Lista de permitidos IP | Permitir a los usuarios crear, editar o eliminar enlaces de lista de permitidos y lista de permitidos IP |
 | Administrador de infraestructura de red | Permitir a los usuarios crear, editar o eliminar la infraestructura de red |
 | Administrador de certificados SSL | Permitir a los usuarios crear, editar o eliminar certificados SSL |
-| Administrador de usuarios de subcuenta de New Relic | Permitir que los usuarios lean/editen usuarios de cuentas secundarias de New Relic |
+| Administrador de usuarios de subcuenta de New Relic | Permitir a los usuarios leer o editar usuarios de subcuentas de New Relic |
 
-### Permisos en el nivel de organización {#organization-level}
+### Permisos de nivel de organización {#organization-level}
 
 Los permisos de nivel de organización hacen referencia a permisos que siempre se conceden a todos los programas de una organización.
 
 Los siguientes permisos son permisos de nivel de organización:
 
 * **Creación de programa** : Este permiso permite a los usuarios crear un programa en la organización.
-* **Acceso a información de repositorio** Este permiso de nivel de inquilino/organización permite a los usuarios generar un nombre de usuario, una contraseña y una URL de repositorio para acceder y contribuir en el proyecto del cliente.
-   * El nombre de usuario y la contraseña para acceder al repositorio serán comunes en todos los repositorios de la organización, pero la URL del repositorio será única para cada programa.
+* **Acceso a información de repositorio** Este permiso de nivel de inquilino/organización permite a los usuarios generar un nombre de usuario, una contraseña y una URL de repositorio para acceder y contribuir al proyecto del cliente.
+   * El nombre de usuario y la contraseña para acceder al repositorio son comunes en todos los repositorios de la organización, pero la URL del repositorio es única para cada programa.
    * Consulte [Acceso a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md) para obtener más información.
 
 ## Términos {#terms}
@@ -164,32 +164,32 @@ Los siguientes términos se utilizan para crear y administrar permisos personali
 
 | Término | Descripción |
 |---|---|
-| Permisos predefinidos | Funciones predefinidas como **Propietario del negocio**, **Administrador de implementación**, etc. para regular varias funciones de Cloud Manager. Para obtener más información sobre las funciones predefinidas, consulte el documento [AEM Perfiles de equipo y producto as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md) |
-| Permisos personalizados | Características de Cloud Manager que permiten a los usuarios crear perfiles de permiso para definir funciones que rigen las funciones compatibles con Cloud Manager |
-| Perfil del producto | Se crea en Admin Console para administrar permisos configurables que se aplicarán a los usuarios que forman parte del perfil de permisos |
+| Permisos predefinidos | Funciones predefinidas como **Propietario del negocio** y **Administrador de implementación** para regular varias funciones de Cloud Manager. Para obtener más información sobre las funciones predefinidas, consulte [AEM Perfiles de equipo y producto as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md) |
+| Permisos personalizados | Las funciones de Cloud Manager permiten a los usuarios crear perfiles de permisos para definir funciones que rigen las funciones compatibles con Cloud Manager |
+| Perfil del producto | Se crea en el Admin Console para administrar los permisos configurables que se aplican a los usuarios que forman parte del perfil de permisos |
 | Permiso configurable | Permisos de Cloud Manager que se pueden configurar en el perfil de permisos |
 | Elemento de permiso | Un programa, entorno o recurso de canalización en el que se puede aplicar un permiso |
 
-Los elementos de permisos hacen referencia al ámbito en el que se aplicará el permiso. Normalmente, será una de las siguientes:
+Los elementos de permisos hacen referencia al ámbito donde se aplica el permiso. Normalmente, es una de las siguientes:
 
 | Tipo de elemento de permiso | Ejemplos | Descripción |
 |---|---|---|
-| Organización | organización:compañíaA | Todos los recursos aplicables de una organización. Un recurso puede ser un programa, un entorno o una canalización. Si el usuario agrega una organización para cualquier permiso, todos los recursos nuevos de esa organización también tendrán ese permiso. |
+| Organización | organization:companyA | Todos los recursos aplicables de una organización. Un recurso puede ser un programa, un entorno o una canalización. Si el usuario agrega una organización para cualquier permiso, todos los recursos nuevos de esa organización también tendrán ese permiso. |
 | Programa | Programa A | Todos los recursos aplicables de un programa |
 | Entorno | Programa A: entorno | Aplicable en un entorno específico |
-| Canalización | Programa A: Canalización | Aplicable en una canalización específica |
+| Canalización | Programa A: canalización | Aplicable en una canalización específica |
 
 ## Restricciones {#limitations}
 
 Tenga en cuenta las siguientes limitaciones al utilizar permisos personalizados.
 
-* El perfil de permisos personalizados también enumerará los programas, entornos y canalizaciones de AMS al configurar los permisos.
-* Los recursos como programa, entorno, canalización, etc. creados en Cloud Manager pueden tardar hasta dos minutos en mostrarse en Admin Console para la configuración de permisos.
-* En casos excepcionales en los que el servicio de permisos personalizados no responde, los perfiles predefinidos siguen estando disponibles y los usuarios de perfiles predefinidos siguen teniendo el acceso adecuado.
+* El perfil de permisos personalizados también enumera los programas, entornos y canalizaciones de AMS al configurar los permisos.
+* Los recursos como programa, entorno y canalización creados en Cloud Manager pueden tardar dos minutos en mostrarse en Admin Console para la configuración de permisos.
+* En casos excepcionales en los que el servicio de permisos personalizados no responde, los perfiles predefinidos siguen estando disponibles y teniendo el acceso adecuado.
 
-## Preguntas más frecuentes {#faq}
+## Preguntas frecuentes {#faq}
 
-### ¿Qué perfiles de permisos son perfiles de permisos predefinidos?
+### ¿Qué perfiles de permisos son los predefinidos?
 
 * Propietario del negocio
 * Administrador de programa
@@ -208,12 +208,12 @@ No, los perfiles predeterminados no se pueden editar. No puede agregar ni quitar
 
 ### ¿Debería eliminar los perfiles de permiso predefinidos, ya que los perfiles personalizados ya están disponibles?
 
-Los perfiles de permiso predefinidos no se deben eliminar del Admin Console.
+No elimine perfiles de permiso predefinidos del Admin Console.
 
 ### ¿Puedo añadir usuarios a varios perfiles de permisos?
 
-Sí, un usuario puede formar parte de varios perfiles, incluidos perfiles de permisos predefinidos y personalizados. Cuando se asigna a un usuario a varios perfiles, los permisos combinados de todos los perfiles de permiso asignados estarán disponibles para ese usuario.
+Sí, un usuario puede formar parte de varios perfiles, incluidos perfiles de permisos predefinidos y personalizados. Cuando se asigna a un usuario a varios perfiles, los permisos combinados de todos los perfiles de permiso asignados están disponibles para ese usuario.
 
-### ¿Qué sucede si un usuario tiene permiso para editar un entorno o canalización pero no tiene acceso a un programa que contenga el entorno o canalización?
+### ¿Qué sucede si un usuario tiene permiso para editar un entorno o canalización, pero no tiene acceso a un programa que contenga el entorno o canalización?
 
-En este caso, el usuario no podrá acceder al entorno o la canalización si no tiene el **Acceso al programa** permisos que contengan el entorno o la canalización.
+En este caso, el usuario no puede acceder al entorno o la canalización si no tiene el **Acceso al programa** permisos que contengan el entorno o la canalización.

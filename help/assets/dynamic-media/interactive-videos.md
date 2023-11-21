@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '5966'
+source-wordcount: '5964'
 ht-degree: 3%
 
 ---
@@ -586,7 +586,7 @@ La implementación de Quickview existente normalmente representa una cadena de a
 1. La lógica back-end devuelve los datos de vista rápida o el contenido correspondiente al código front-end.
 1. El código front-end carga los datos de vista rápida o el contenido.
 1. De forma opcional, el código front-end convierte los datos de vista rápida cargados en una representación de HTML.
-1. El código front-end muestra un cuadro de diálogo o panel modal y procesa el contenido del HTML en la pantalla para el usuario final.
+1. El código front-end muestra un cuadro de diálogo o panel modal y procesa el contenido del HTML en la pantalla para el usuario.
 
 Estas llamadas no representan llamadas de API públicas independientes a las que la lógica de página web puede llamar desde un paso arbitrario. En su lugar, es una llamada encadenada en la que cada paso siguiente se oculta en la última fase (llamada de retorno) del paso anterior.
 
@@ -598,7 +598,7 @@ En un controlador de eventos de este tipo, el código front-end hace lo siguient
 * Construye una URL de vista rápida basada en los datos de miniaturas.
 * Déclencheur el proceso de cargar la vista rápida desde el backend y procesarla en la pantalla para mostrarla.
 
-Además, el visualizador de vídeo interactivo admite el modo de funcionamiento de pantalla completa. El usuario final obtiene un déclencheur de las vistas rápidas seleccionando una miniatura sin salir de la pantalla completa. Para lograr esta funcionalidad, modifique el código front-end de modo que el cuadro de diálogo modal de vista rápida esté adjunto al contenedor del visor. No agregue el documento BODY ni ningún otro elemento de página web que no esté disponible cuando el visor esté en modo de pantalla completa. El código que realiza este trabajo escucha una llamada de retorno del visor más que se envía después de que el visor se cargue en la página.
+Además, el visualizador de vídeo interactivo admite el modo de funcionamiento de pantalla completa. El usuario obtiene un déclencheur de las vistas rápidas seleccionando una miniatura sin salir de la pantalla completa. Para lograr esta funcionalidad, modifique el código front-end de modo que el cuadro de diálogo modal de vista rápida esté adjunto al contenedor del visor. No agregue el documento BODY ni ningún otro elemento de página web que no esté disponible cuando el visor esté en modo de pantalla completa. El código que realiza este trabajo escucha una llamada de retorno del visor más que se envía después de que el visor se cargue en la página.
 
 El código incrustado devuelto por el Experience Manager ya tiene un controlador de eventos listo para usar. Se comenta como se ve en el siguiente fragmento de código resaltado:
 

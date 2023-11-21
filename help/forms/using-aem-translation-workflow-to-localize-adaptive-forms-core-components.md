@@ -3,7 +3,7 @@ title: ¿Cómo podemos traducir un formulario adaptable basado en componentes pr
 description: Aprenda a crear un modelo de datos de formulario en AEM Forms, probarlo con datos y servicios de ejemplo y configurar varias opciones para un modelo.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 93%
@@ -25,7 +25,7 @@ El servicio de traducción automática traduce inmediatamente el contenido de lo
    * Para añadir un nuevo diccionario a un proyecto de traducción existente, seleccione la opción de **[!UICONTROL Añadir a un proyecto de traducción existente]** y seleccione un **[!UICONTROL Proyecto de traducción existente]**.
 1. En el campo **Idiomas de destino**, especifique una configuración regional (por ejemplo, `German(de)`). Puede especificar varias configuraciones regionales. El formulario se traduce a todas las configuraciones regionales especificadas en el campo **Idiomas de destino.** Haga clic en **Listo**.
 1. En el cuadro de diálogo Diccionario agregado, haga clic en **Abrir proyectos**.
-1. En la pantalla Proyectos, haga clic en el proyecto recién creado. Por ejemplo, haga clic en **Sitio de referencia del gobierno - configuración regional en alemán**.
+1. En la pantalla Proyectos, haga clic en el proyecto creado. Por ejemplo, haga clic en **Sitio de referencia del gobierno - configuración regional en alemán**.
 1. En el mosaico **Trabajo de traducción**, haga clic en el icono ![aem62forms_downarrow](assets/aem62forms_downarrow.png) y luego haga clic en **Iniciar**. El estado del mosaico cambia a Borrador. Al finalizar la traducción, el estado cambia a **Aprobado**. Actualice la página después de unos minutos y verifique el estado.
 
    ![Iniciar traducción](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
@@ -68,7 +68,7 @@ Realice los siguientes pasos para localizar un formulario y su documento de regi
    * Para añadir un nuevo diccionario a un proyecto de traducción existente, seleccione la opción de **[!UICONTROL Añadir a un proyecto de traducción existente]** y seleccione un **[!UICONTROL Proyecto de traducción existente]**.
 1. En el campo **Idiomas de destino**, especifique una configuración regional (por ejemplo, `German(de)`). Puede especificar varias configuraciones regionales. El formulario se traduce a todas las configuraciones regionales especificadas en el campo **Idiomas de destino.** Haga clic en **Listo**.
 1. En el cuadro de diálogo Diccionario agregado, haga clic en **Abrir proyectos**.
-1. En la pantalla Proyectos, haga clic en el proyecto recién creado. Por ejemplo, haga clic en **Sitio de referencia del gobierno - configuración regional en alemán**.
+1. En la pantalla Proyectos, haga clic en el proyecto creado. Por ejemplo, haga clic en **Sitio de referencia del gobierno - configuración regional en alemán**.
 1. En la parte inferior del **Resumen**, haga clic en las **elipses**. Se abre la pantalla Propiedades del proyecto de traducción.
 1. Abra la pestaña **[!UICONTROL Avanzadas]** en la parte superior de la pantalla **Propiedades del proyecto de traducción**. Para el **[!UICONTROL Campo de traducción]**, seleccione **[!UICONTROL Traducción humana]**. Haga clic en **Guardar y cerrar** en la parte superior de la pantalla.
 1. En **Trabajo de traducción**, haga clic en el icono ![aem62forms_downarrow](assets/aem62forms_downarrow.png) y, a continuación, haga clic en **Exportar**. En el cuadro de diálogo Exportar, haga clic en la opción Descargar archivo exportado. Descarga un archivo .zip.

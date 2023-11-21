@@ -2,7 +2,7 @@
 title: Compatibilidad con OAuth2 para el servicio de correo
 description: Compatibilidad con Oauth2 para el servicio de correo en Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: ede877212de3394cbdc81e1097d3d6eaf9f390cc
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 98%
@@ -26,7 +26,7 @@ Para obtener más información sobre el servicio de correo de AEM as a Cloud Ser
    ![Iniciar proceso de registro de aplicación](assets/oauth-outlook1.png)
 
 1. Rellene la información según sus necesidades y haga clic en **Registro**.
-1. Vaya a la aplicación recién creada y seleccione **Permisos de API**.
+1. Vaya a la aplicación creada y seleccione **Permisos de API**.
 1. Vaya a **Añadir permisos** > **Permisos de gráfico** > **Permisos delegados**.
 1. Seleccione los siguientes permisos para su aplicación y haga clic en **Añadir permiso**:
    * `https://outlook.office.com/SMTP.Send`

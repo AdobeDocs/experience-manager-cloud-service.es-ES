@@ -2,10 +2,10 @@
 title: Registro, inicio de sesión y perfil de usuario
 description: Obtenga información sobre el registro, el inicio de sesión, los datos de usuario y la sincronización de grupos para AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1167'
-ht-degree: 100%
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '1165'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ A continuación se describen dos métodos para la aplicación del registro.
 
 ### Gestionado por AEM {#aem-managed-registration}
 
-Se puede escribir un código de registro personalizado que contenga, como mínimo, el nombre de usuario y la contraseña del usuario final y que cree un registro de usuario en AEM que se pueda utilizar para autenticarse durante el inicio de sesión. Los siguientes pasos suelen utilizarse para construir este mecanismo de registro:
+AEM Se puede escribir un código de registro personalizado que contenga, como mínimo, el nombre de usuario y la contraseña del usuario y que cree un registro de usuario en el que se pueda utilizar para autenticarse durante el inicio de sesión. Los siguientes pasos suelen utilizarse para construir este mecanismo de registro:
 
 1. Mostrar un componente de AEM personalizado que recopila información de registro
 1. Tras el envío, se utiliza un usuario de servicio aprovisionado correctamente para lo siguiente:
@@ -67,7 +67,7 @@ Los clientes pueden integrarse con un IdP (proveedor de identidad), que autentic
 
 **BASADO EN SAML**
 
-Los clientes pueden utilizar la autenticación basada en SAML a través de su SAML IdP preferido. Cuando se utiliza un IdP con AEM, el IdP es responsable de autenticar las credenciales del usuario final e intermediar la autenticación del usuario con AEM, crear el registro de usuario en AEM según sea necesario y administrar la membresía de grupo del usuario en AEM, como se describe en la afirmación de SAML.
+Los clientes pueden utilizar la autenticación basada en SAML a través de su SAML IdP preferido. AEM AEM AEM AEM Cuando se utiliza un IdP con el, el IdP es responsable de autenticar las credenciales del usuario e intermediar la autenticación del usuario con el, crear el registro de usuario en el que es necesario y administrar la pertenencia del usuario al grupo en el que es miembro, tal como se describe en la afirmación de SAML. El IdP es el responsable de la autenticación del usuario con el que es miembro, según se describe en la declaración de.
 
 >[!NOTE]
 >

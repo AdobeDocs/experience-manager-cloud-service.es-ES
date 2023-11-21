@@ -2,7 +2,7 @@
 title: ¿Cómo se pueden crear y utilizar temáticas en el Forms adaptable?
 description: Puede utilizar temáticas para aplicar estilos y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2676'
 ht-degree: 18%
@@ -319,7 +319,7 @@ Se necesita un repositorio para implementar la temática. Inicie sesión en su [
 
 ##### 5.2. Insertar los cambios en el repositorio {#committing-the-changes}
 
-Ahora, inserte los cambios en el repositorio de temáticas de su Cloud Service de AEM Forms. .
+Ahora, inserte los cambios en el repositorio de temáticas de su Cloud Service de AEM Forms.
 
 1. Vaya a la raíz de la carpeta de temáticas.  En este caso, el nombre de la carpeta de temas es `aem-forms-theme-canvas`.
 1. Abra el símbolo de comando o el terminal.

@@ -2,9 +2,9 @@
 title: Notas de la versión 2021.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1572'
 ht-degree: 20%
 
 ---
@@ -111,7 +111,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 ### Novedades {#what-is-new-screens}
 
-* Pantallas as a Cloud Service ahora admite la monitorización básica de la reproducción. El reproductor ahora informa de varias métricas de reproducción con cada ping (el valor predeterminado es de 30 segundos). En función de las métricas, puede detectar varios casos extremos (experiencia atascada, pantalla en blanco, problema de programación, etc.). Esta función permite que el equipo supervise de forma remota si un reproductor está reproduciendo el contenido correctamente. Mejora la reacción ante pantallas en blanco o experiencias rotas en el campo y disminuye el riesgo de mostrar una experiencia rota al usuario final.
+* Pantallas as a Cloud Service ahora admite la monitorización básica de la reproducción. El reproductor ahora informa de varias métricas de reproducción con cada ping (el valor predeterminado es de 30 segundos). En función de las métricas, puede detectar varios casos extremos (experiencia atascada, pantalla en blanco, problema de programación, etc.). Esta función permite que el equipo supervise de forma remota si un reproductor está reproduciendo el contenido correctamente. Mejora la reacción ante pantallas en blanco o experiencias rotas en el campo y disminuye el riesgo de mostrar una experiencia rota al usuario.
 Consulte [Monitorización de reproducción básica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) para obtener más información.
 
 * Ahora se admite la compatibilidad con miniaturas para vídeos en Pantallas as a Cloud Service. Un autor de contenido puede definir una miniatura para los vídeos, de modo que la imagen se utilice como marcador de posición y pruebe correctamente la reproducción y la segmentación del contenido, mientras el equipo correspondiente finaliza el vídeo real. La imagen también se puede utilizar en caso de que falle la reproducción del vídeo.

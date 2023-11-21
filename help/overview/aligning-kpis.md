@@ -2,10 +2,10 @@
 title: Alineación de los KPI
 description: AEM Aprenda a elegir los KPI adecuados para su implementación de
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 97%
+source-wordcount: '497'
+ht-degree: 93%
 
 ---
 

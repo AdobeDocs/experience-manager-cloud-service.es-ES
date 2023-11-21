@@ -3,10 +3,10 @@ title: Configurar canalizaciones de producción
 description: Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 79%
+source-wordcount: '1412'
+ht-degree: 77%
 
 ---
 

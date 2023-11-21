@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Utilice el flujo de trabajo de AEM Forms para automatizar y crear rápidamente flujos de trabajo de procesos empresariales. Por ejemplo, revisión y aprobación, generación de PDF, flujos de trabajo de Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2392'
 ht-degree: 97%
@@ -66,7 +66,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 1. Abra la consola Modelos de flujo de trabajo. La URL predeterminada es `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleccione **Crear** y, a continuación, **Crear modelo**. Aparecerá el cuadro de diálogo Agregar modelo del flujo de trabajo.
 1. Escriba el **Título** y el **Nombre** (opcional). Por ejemplo, una solicitud hipotecaria. Pulse **Listo**.
-1. Seleccione el modelo del flujo de trabajo recién creado y pulse **Editar**. Ahora puede agregar pasos al flujo de trabajo para crear lógica empresarial. La primera vez que cree un modelo del flujo de trabajo, contendrá:
+1. Seleccione el modelo de flujo de trabajo creado y pulse **Editar**. Ahora puede agregar pasos al flujo de trabajo para crear lógica empresarial. La primera vez que cree un modelo del flujo de trabajo, contendrá:
 
    * Los pasos: Inicio del flujo y Fin del flujo. Estos pasos representan el principio y el final del flujo de trabajo. Estos pasos son obligatorios y no se pueden editar ni eliminar.
    * Un ejemplo de paso de participante denominado Paso 1. Este paso está configurado para asignar un elemento de trabajo al administrador. Elimine este paso.
