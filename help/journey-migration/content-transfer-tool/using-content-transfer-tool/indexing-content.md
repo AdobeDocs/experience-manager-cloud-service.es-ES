@@ -16,7 +16,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="Indexación de contenido"
->abstract="La indexación de AEM hace referencia a la indexación del contenido en la instancia de Cloud Service después de migrar el contenido a ella. La indexación es necesaria para admitir la búsqueda de contenido en esa instancia."
+>abstract="La indexación de AEM hace referencia a la indexación del contenido en la instancia de Cloud Service después de migrar el contenido a ella. La indexación es necesaria para permitir la búsqueda de contenido en esa instancia."
 
 Una vez que Cloud Acceleration Manager complete la ingesta de contenido en la instancia de Cloud Service, estará listo para utilizarse. Inicialmente, el contenido no se indexa, lo que probablemente resulte en un entorno inestable en el que se pueden esperar problemas como contenido inexplorable y rendimiento degradado.
 Para obtener un rendimiento óptimo en la instancia, el proceso de migración iniciará automáticamente la indexación del contenido. No hay nada que hacer, excepto monitorizar el progreso de indexación.

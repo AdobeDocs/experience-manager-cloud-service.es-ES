@@ -3,14 +3,14 @@ title: Prácticas recomendadas de búsqueda para [!DNL Adobe Experience Manager]
 description: Prácticas recomendadas para buscar, buscar y recuperar metadatos de recursos dentro de la aplicación.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
+source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
 workflow-type: tm+mt
-source-wordcount: '2520'
+source-wordcount: '2521'
 ht-degree: 3%
 
 ---
 
-# AEM Prácticas recomendadas de búsqueda
+# Prácticas recomendadas de búsqueda de AEM Assets
 
 [!DNL Adobe Experience Manager Assets] proporciona métodos de búsqueda de recursos sólidos que le ayudan a lograr una mayor velocidad de contenido. A veces, encontrar el recurso adecuado puede ser arduo y requerir mucho tiempo. Por lo tanto, busque la capacidad Recursos en [!DNL Adobe Experience Manager Assets] es fundamental para el uso de un sistema de administración de activos digitales, ya sea para su uso posterior por parte de los creativos, para una administración sólida de los activos por parte de los usuarios empresariales y los especialistas en marketing, o para la administración por parte de los administradores de DAM.
 

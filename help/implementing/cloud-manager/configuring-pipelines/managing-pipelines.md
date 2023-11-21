@@ -6,7 +6,7 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 45%
+ht-degree: 68%
 
 ---
 
@@ -35,25 +35,25 @@ En la parte inferior de la lista de canalizaciones, tiene opciones generales.
 * **Acceder a la info del repositorio**: Muestra la información necesaria para acceder al repositorio de Git de Cloud Manager
 * **Más información**: Navega hasta los recursos de documentación de canalización de CI/CD.
 
-## Ventana Canalizaciones {#pipelines}
+## Ventana de canalizaciones {#pipelines}
 
-El **Canalizaciones** La ventana muestra una lista completa de todas las canalizaciones para el programa seleccionado. Esto resulta útil, ya que presenta información más completa que la disponible en el [Tarjeta de canalización.](#pipeline-card)
+La ventana **Canalizaciones** muestra una lista completa de todas las canalizaciones para el programa seleccionado. Esto resulta útil, ya que presenta información más completa que la disponible en la [Tarjeta de canalización.](#pipeline-card)
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
 1. Desde el **Resumen del programa** , seleccione la **Canalizaciones** para cambiar a la pestaña **Canalizaciones** ventana.
 
-1. Aquí puede ver una lista de todas las canalizaciones para el programa, así como iniciar y detener la ejecución de la canalización como lo haría en el **Tarjeta de canalizaciones**.
+1. Aquí puede ver una lista de todas las canalizaciones para el programa, así como iniciar y detener la ejecución de la canalización como lo haría en la **Tarjeta de canalizaciones**.
 
-Si se está ejecutando una canalización, pase el ratón sobre su **Estado** La columna revelará detalles sobre la ejecución.
+Si se está ejecutando una canalización, pasar el ratón sobre su columna **Estado** revela los detalles sobre la ejecución.
 
 ![Detalles de ejecución de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-Toque o haga clic **Ver detalles** le llevará a la [detalles de la ejecución de la canalización.](#view-details)
+Pulsar o hacer clic en **Ver detalles** le llevará a los [detalles de la ejecución de la canalización.](#view-details)
 
 ## Ventana de actividad {#activity}
 
-El **Actividades** La ventana muestra una lista completa de todas las ejecuciones de canalizaciones para el programa seleccionado.
+La ventana **Actividades** muestra una lista completa de todas las ejecuciones de canalizaciones para el programa seleccionado.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -61,11 +61,11 @@ El **Actividades** La ventana muestra una lista completa de todas las ejecucione
 
 1. Aquí puede ver una lista de todas las ejecuciones de canalización del programa, incluidas las ejecuciones actuales e históricas.
 
-Si se está ejecutando una canalización, pase el ratón sobre su **Estado** La columna revelará detalles sobre la ejecución.
+Si se está ejecutando una canalización, pasar el ratón sobre su columna **Estado** revela los detalles sobre la ejecución.
 
 ![Detalles de ejecución de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Toque o haga clic **Ver detalles** le llevará a la [detalles de la ejecución de la canalización.](#view-details)
+Pulsar o hacer clic en **Ver detalles** le llevará a los [detalles de la ejecución de la canalización.](#view-details)
 
 ## Ejecutar canalizaciones {#running-pipelines}
 
@@ -121,7 +121,7 @@ Puede ver los detalles de una canalización para ver el estado y los registros d
 
 Desde aquí puede ver el estado de los distintos pasos de la canalización y recuperar los registros de generación con fines diagnósticos. Ver el documento [Implementar el código](/help/implementing/cloud-manager/deploy-code.md) para obtener más información sobre la implementación del código y la ejecución de pruebas.
 
-Todos los pasos de la ejecución de una canalización se muestran con los que aún no se han iniciado atenuados. Los pasos finalizados muestran su duración.
+Todos los pasos de la ejecución de una canalización se muestran con los que aún no se han iniciado en gris. Los pasos finalizados muestran su duración.
 
 Una vez completado el paso de una canalización, se presenta un resumen.
 
