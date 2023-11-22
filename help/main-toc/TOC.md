@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a6d43e6d4138305c2f98dfb6e33946d36fb50fe1
+source-git-commit: 219eb2544dbac8ac5104be4ef8eb1bae996d95f0
 workflow-type: tm+mt
-source-wordcount: '4381'
+source-wordcount: '4384'
 ht-degree: 93%
 
 ---
@@ -139,6 +139,7 @@ ht-degree: 93%
    + Notas de la versión de las herramientas de migración {#migration-tools}
       + [Notas de la versión actual](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2023 {#2023}
+         + [Notas de la versión 2023.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
          + [Notas de la versión 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
          + [Notas de la versión 2023.8.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
          + [Notas de la versión 2023.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-07-0.md)
@@ -844,7 +845,7 @@ ht-degree: 93%
          + [Uso de Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Uso de varios repositorios](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Configuración del equipo de desarrollo empresarial](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [Uso de sus propios repositorios de GitHub](/help/implementing/cloud-manager/managing-code/byo-github.md)
+         + [Trabajar con sus propios repositorios de GitHub](/help/implementing/cloud-manager/managing-code/byo-github.md)
       + [Variables de entorno](/help/implementing/cloud-manager/environment-variables.md)
       + Canalizaciones de CI-CD de Cloud Manager {#cicd-pipelines}
          + [Introducción](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)

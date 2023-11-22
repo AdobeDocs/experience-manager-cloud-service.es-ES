@@ -1,8 +1,9 @@
 ---
 title: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.03.0 de
-description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2022.03.0 de
+description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.03.0 de
 feature: Release Information
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
+source-git-commit: d7e5a14c2dfee41b4ab5af733218fe58d17871fa
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 10%
@@ -11,7 +12,7 @@ ht-degree: 10%
 
 # AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.03.0 de {#release-notes}
 
-AEM Esta página describe las notas de la versión de las herramientas de migración de la versión 2022.03.0 de as a Cloud Service.
+AEM Esta página describe las notas de la versión de las herramientas de migración en la versión as a Cloud Service 2023.03.0 de.
 
 ## Analizador de prácticas recomendadas {#bpa-release}
 
@@ -32,7 +33,7 @@ El 03 de marzo de 2023 es la fecha de lanzamiento del Analizador de prácticas r
 
 ### Fecha de la versión {#release-date-ctt}
 
-La fecha de versión de la herramienta de transferencia de contenido v2.0.16 es el 8 de marzo de 2022.
+La fecha de versión de la herramienta de transferencia de contenido v2.0.16 es el 8 de marzo de 2023.
 
 ### Novedades {#what-is-new-ctt}
 
