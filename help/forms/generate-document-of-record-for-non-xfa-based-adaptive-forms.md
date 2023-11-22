@@ -2,7 +2,7 @@
 title: Cómo generar un documento de registro (DoR) para AEM Forms
 description: Obtenga información sobre cómo generar una plantilla para un documento de registro (DoR) para Forms adaptable.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 94%
@@ -500,7 +500,7 @@ Un archivo XCI ayuda a establecer varias propiedades de un documento. Forms as a
 ### Utilice un archivo XCI personalizado en el entorno de desarrollo local de Forms as a Cloud Service.
 
 1. Cargue el archivo XCI en su entorno de desarrollo local.
-1. Abra el administrador de configuración del SDK de Cloud Service. La URL predeterminada es <http://localhost:4502/system/console/configMgr>.
+1. Abra el Administrador de configuración del SDK de Cloud Service. La URL predeterminada es <http://localhost:4502/system/console/configMgr>.
 1. Busque y abra la configuración del **[!UICONTROL canal web de comunicaciones interactivas y formularios adaptables]**.
 1. Especifique la ruta del archivo XCI y haga clic en **[!UICONTROL Guardar]**.
 
