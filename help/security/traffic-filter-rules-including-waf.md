@@ -2,10 +2,10 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
 workflow-type: tm+mt
-source-wordcount: '3437'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -259,7 +259,6 @@ La propiedad `wafFlags`, que se puede utilizar en las reglas de filtro de tráfi
 | JSON-ERROR | Error de codificación de JSON | Un cuerpo de solicitud POST, PUT o PATCH que se especifica que contiene JSON dentro del encabezado de solicitud &quot;Content-Type&quot;, pero que contiene errores de análisis de JSON. Esto suele estar relacionado con un error de programación o una solicitud automatizada o maliciosa. |
 | MALFORMED-DATA | Datos mal formados en el cuerpo de la solicitud | Un cuerpo de solicitud POST, PUT o PATCH con un formato incorrecto según el encabezado de solicitud &quot;Content-Type&quot;. Por ejemplo, si se especifica un encabezado de solicitud &quot;Content-Type: application/x-www-form-urlencoded&quot; y contiene un cuerpo POST que es json. Esto suele ser un error de programación, una solicitud automatizada o maliciosa. Requiere agente 3.2 o superior. |
 | SANS | Tráfico IP malintencionado | [SANS Internet Storm Center](https://isc.sans.edu/) lista de direcciones IP sobre las que se ha informado que han participado en actividades maliciosas |
-| SIGSCI-IP | Efecto de red | IP marcada por SignalSciences: siempre que el motor de decisión marque una IP debido a una señal maliciosa, esa IP se propagará a todos los clientes. Se registran las solicitudes posteriores de aquellas direcciones IP que contengan cualquier señal adicional durante la duración del indicador |
 | NO-CONTENT-TYPE | Falta el encabezado de solicitud &quot;Content-Type&quot; | Una solicitud POST, PUT o PATCH que no tiene un encabezado de solicitud &quot;Content-Type&quot;. De forma predeterminada, los servidores de aplicaciones deben suponer &quot;Content-Type: text/plain; charset=us-ascii&quot; en este caso. Es posible que a muchas solicitudes automatizadas y maliciosas les falte &quot;Tipo de contenido&quot;. |
 | NOUA | No hay agente de usuario | Muchas solicitudes automatizadas y maliciosas utilizan agentes de usuario falsos o ausentes para dificultar la identificación del tipo de dispositivo que realiza las solicitudes. |
 | TORNODE | Tráfico de Tor | Tor es un software que oculta la identidad de un usuario. Un pico en el tráfico de Tor puede indicar que un atacante está tratando de ocultar su ubicación. |
@@ -639,7 +638,6 @@ data:
         type: log
         wafFlags:
           - SANS
-          - SIGSCI-IP
           - TORNODE
           - NOUA
           - SCANNER
