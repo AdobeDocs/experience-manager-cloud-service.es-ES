@@ -1,10 +1,10 @@
 ---
-title: AEM Prácticas recomendadas y puntos clave que deben tenerse en cuenta a la hora de trabajar con formularios adaptables de la.
+title: Prácticas recomendadas y puntos clave que deben tenerse en cuenta a la hora de trabajar con formularios adaptables de AEM.
 description: Algunas prácticas recomendadas y puntos clave que deben tenerse en cuenta a la hora de trabajar con los componentes de los formularios adaptables.
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '641'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
