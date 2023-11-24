@@ -1,6 +1,6 @@
 ---
-title: Cómo habilitar los componentes principales de Forms adaptable en el entorno de desarrollo as a Cloud Service y local de AEM Forms
-description: Obtenga información sobre cómo habilitar los componentes principales de Forms adaptables en AEM Forms as a Cloud Service.
+title: Habilitar los componentes principales de los formularios adaptables en AEM Forms as a Cloud Service y en el entorno de desarrollo local
+description: Obtenga información sobre cómo habilitar los componentes principales de formularios adaptables en AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
@@ -8,18 +8,18 @@ exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Habilitar los componentes principales de Forms adaptable {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Habilitar los componentes principales de los formularios adaptables {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
-Al habilitar los componentes principales de Forms adaptables en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer componentes principales basados en Forms adaptable y Forms sin encabezado con las instancias de Cloud Service de AEM Forms en varios canales. Se necesita un entorno habilitado para los componentes principales de formularios adaptables para utilizar formularios adaptables sin encabezado.
+Al habilitar los componentes principales de los formularios adaptables en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer en varios canales los componentes principales basados en formularios adaptables y sin encabezado mediante las instancias de Cloud Service de AEM Forms. Se necesita un entorno habilitado para los componentes principales de formularios adaptables para utilizar formularios adaptables sin encabezado.
 
 ## Consideraciones
 

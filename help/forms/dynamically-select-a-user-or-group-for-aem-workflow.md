@@ -1,17 +1,17 @@
 ---
-title: AEM ¿Cómo se seleccionan los usuarios en el flujo de trabajo de?
+title: Seleccionar los usuarios en el flujo de trabajo de AEM
 description: Obtenga información sobre cómo seleccionar un usuario o un grupo para un flujo de trabajo de  [!DNL AEM Forms]  en tiempo de ejecución.
 content-type: troubleshooting
 topic-tags: publish
 source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# AEM Selección dinámica de usuarios o grupos en el flujo de trabajo de {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Selección dinámica de usuarios o grupos en el flujo de trabajo de AEM {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Obtenga información sobre cómo seleccionar un usuario o un grupo para un flujo de trabajo de [!DNL AEM Forms] en tiempo de ejecución.
 

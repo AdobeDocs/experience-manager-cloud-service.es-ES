@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo configurar las colas compartidas?
+title: Configuración de las colas compartidas
 description: Aprenda a utilizar colas compartidas en flujos de trabajo de  [!DNL AEM Forms]  centrados en formularios en OSGi.
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -7,7 +7,7 @@ docset: aem65
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '839'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ El usuario que ha iniciado sesión debe ser miembro del grupo [!DNL `workflow-us
 
 ## Compartir uno o todos los elementos de la Bandeja de entrada con otro usuario
 
-AEM La Bandeja de entrada de permite compartir un solo elemento o todos los elementos de la Bandeja de entrada con otro usuario.
+La bandeja de entrada AEM permite compartir uno o todos los elementos de la bandeja de entrada con otro usuario.
 
 ### Compartir todos los elementos de la Bandeja de entrada
 

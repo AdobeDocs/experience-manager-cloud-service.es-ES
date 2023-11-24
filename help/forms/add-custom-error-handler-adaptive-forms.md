@@ -11,13 +11,13 @@ exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 source-git-commit: 1dd0bbbe8a366b38a923e61bd987e248c2f78e86
 workflow-type: tm+mt
 source-wordcount: '2445'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
-# AEM Agregar controladores de error personalizados en el Forms adaptable de la {#error-handlers-in-adaptive-form}
+# Añadir controladores de error personalizados en Formularios adaptables de AEM {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable de los [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear nuevos formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) o [añadirlos a las páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -28,9 +28,9 @@ AEM Forms proporciona controladores de éxito y de error predeterminados para lo
 
 ![flujo de trabajo del controlador de errores para comprender cómo añadir el controlador de errores personalizado en los formularios](/help/forms/assets/error-handler-workflow.png)
 
-El formulario adaptable valida las entradas que se proporcionan en los campos en función de criterios de validación predefinidos y comprueba los distintos errores devueltos por el extremo REST configurado para invocar un servicio externo. Puede definir los criterios de validación en función de la fuente de datos que utilice con el formulario adaptable. Por ejemplo, si utiliza los servicios web RESTful como fuente de datos, puede definir los criterios de validación en un archivo de definición Swagger.
+El formulario adaptable valida las entradas proporcionadas en los campos en función de criterios de validación predefinidos y comprueba los distintos errores devueltos por el punto final REST configurado para invocar un servicio externo. Puede definir los criterios de validación en función de la fuente de datos que utilice con el formulario adaptable. Por ejemplo, si utiliza los servicios web RESTful como fuente de datos, puede definir los criterios de validación en un archivo de definición Swagger.
 
-Si los valores de entrada cumplen los criterios de validación, los valores se envían al origen de datos; de lo contrario, el formulario adaptable muestra un mensaje de error utilizando un controlador de errores. De forma similar a este enfoque, el Forms adaptable se integra con controladores de error personalizados para realizar validaciones de datos. Si los valores de entrada no cumplen los criterios de validación, los mensajes de error se muestran a nivel de campo en el formulario adaptable. Esto ocurre cuando el mensaje de error de validación devuelto por el servidor tiene el formato de mensaje estándar.
+Si los valores de entrada cumplen los criterios de validación, los valores se envían al origen de datos; de lo contrario, el formulario adaptable muestra un mensaje de error utilizando un controlador de errores. De forma similar a este enfoque, los formularios adaptables se integran con los controladores de errores personalizados para realizar validaciones de datos. Si los valores de entrada no cumplen los criterios de validación, los mensajes de error se muestran a nivel de campo en el formulario adaptable. Esto ocurre cuando el mensaje de error de validación devuelto por el servidor tiene el formato de mensaje estándar.
 
 
 ## Usos de los controladores de errores {#uses-of-error-handler}
@@ -177,37 +177,37 @@ Puede ver el valor de dataRef en la ventana **[!UICONTROL Propiedades]** de un c
 
 ## Adición de un controlador de error mediante el Editor de reglas {#add-error-handler-using-rule-editor}
 
-Utilizando la acción del [Servicio de invocación del editor de reglas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es#invoke), se definen los criterios de validación en función de la fuente de datos que se utilice con el formulario adaptable. Por ejemplo, si utiliza los servicios web RESTful como fuente de datos, puede definir los criterios de validación en un archivo de definición Swagger. Al utilizar las funciones de controlador de error y el Editor de reglas en Forms adaptable, puede administrar y personalizar de forma eficaz la gestión de errores. Las condiciones se definen mediante el Editor de reglas y se configuran las acciones que deben realizarse cuando se activa la regla. Los formularios adaptables validan las entradas que se proporcionan en los campos en función de criterios de validación predefinidos. En caso de que los valores de entrada no cumplan los criterios de validación, los mensajes de error se muestran a nivel de campo en un formulario adaptable.
+Utilizando la acción del [Servicio de invocación del editor de reglas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es#invoke), se definen los criterios de validación en función de la fuente de datos que se utilice con el formulario adaptable. Por ejemplo, si utiliza los servicios web RESTful como fuente de datos, puede definir los criterios de validación en un archivo de definición Swagger. Gracias a las funciones del controlador de errores y el editor de reglas en los formularios adaptables, se puede administrar y personalizar de forma eficaz la gestión de errores. Las condiciones se definen mediante el Editor de reglas y se configuran las acciones que deben realizarse cuando se activa la regla. Los formularios adaptables validan las entradas que se proporcionan en los campos en función de criterios de validación predefinidos. En caso de que los valores de entrada no cumplan los criterios de validación, los mensajes de error se muestran a nivel de campo en un formulario adaptable.
 
 >[!NOTE]
 >
 > * Para utilizar controladores de errores con la acción Invocar servicio del Editor de reglas, configure los formularios adaptables con un modelo de datos de formulario.
-> * Se proporciona un controlador de error predeterminado para mostrar mensajes de error en los campos si la respuesta de error está en el esquema estándar. También puede llamar al controlador de error predeterminado desde la función del controlador de error personalizado.
+> * De forma predeterminada, se proporciona el controlador de errores para mostrar los mensajes de error en los campos si la respuesta de error está en el esquema estándar. También puede llamar al controlador de error predeterminado desde la función del controlador de error personalizado.
 
-Con el Editor de reglas, puede:
-* [Agregar función de controlador de error predeterminada](#add-default-errror-handler)
+Con el editor de reglas, se puede hacer lo siguiente:
+* [Añadir la función del controlador de errores predeterminado](#add-default-errror-handler)
 * [Añadir función del controlador de errores personalizado](#add-custom-errror-handler)
 
 
-### Agregar función de controlador de error predeterminada {#add-default-errror-handler}
+### Añadir la función del controlador de errores predeterminado {#add-default-errror-handler}
 
-Se admite un controlador de error predeterminado para mostrar mensajes de error en los campos si la respuesta de error está en el esquema estándar o en un error de validación del lado del servidor.
-Para comprender cómo utilizar un controlador de error predeterminado con [Servicio de invocación del editor de reglas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es#invoke) acción, tome un ejemplo de un formulario adaptable simple con dos campos, **ID de mascota** y **Nombre de mascota** y utilice un controlador de error predeterminado en **ID de mascota** para comprobar si hay varios errores devueltos por el extremo REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Para agregar un controlador de error predeterminado mediante la acción Invocar servicio del Editor de reglas, ejecute los siguientes pasos:
+Se admite un controlador de errores predeterminado para mostrar los mensajes de error en los campos si la respuesta de error está en el esquema estándar o en un error de validación del lado del servidor.
+Para comprender cómo utilizar un controlador de errores predeterminado con la acción [Invocar servicio del editor de reglas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es#invoke), vamos a ver un ejemplo de formulario adaptable con dos campos, **ID de mascota** y **Nombre de mascota**. Además, usaremos un controlador de errores predeterminado en el campo **ID de mascota** para comprobar si hay varios errores devueltos por el punto final REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`, `404 - Not Found` y `400 - Bad Request`.  Para añadir un controlador de error predeterminado mediante la acción Invocar servicio del Editor de reglas, ejecute los siguientes pasos:
 
 1. Abra el formulario adaptable en el modo de creación, seleccione cualquier objeto del formulario y pulse **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
 1. Pulse **[!UICONTROL Crear]**.
-1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, **Cuándo[Nombre del campo ID de mascota]** se ha cambiado. Seleccione se cambia de la **Seleccionar estado** lista desplegable.
+1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, **cuando se ha cambiado el [nombre del campo ID de mascota]**, Seleccionar se ha cambiado en la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
 1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
-1. Seleccione los enlaces de datos en la sección **Salida**. Seleccionar **Nombre de mascota** en el **Output** sección.
-1. Seleccionar **[!UICONTROL Controlador de error predeterminado]** desde el **Controlador de errores** sección.
+1. Seleccione los enlaces de datos en la sección **Salida**. Seleccione **Nombre de mascota** en la sección **Salida**.
+1. Seleccione **[!UICONTROL Controlador de errores personalizado]** en la sección **Controlador de errores**.
 1. Haga clic en **[!UICONTROL Listo]**.
 
-![agregar un controlador de error predeterminado para las comprobaciones de validación de campos en un formulario](/help/forms/assets/default-error-handler.png)
+![añadir un controlador de error predeterminado para las comprobaciones de validación de campos en un formulario](/help/forms/assets/default-error-handler.png)
 
 Como resultado de esta regla, los valores introducidos para **ID de mascota** comprueban la validación de **Nombre de mascota** utilizando el servicio externo invocado por el punto final REST. Si los criterios de validación basados en la fuente de datos fallan, los mensajes de error se muestran en el nivel de campo.
 
-![mostrar el mensaje de error predeterminado cuando se agrega un controlador de error predeterminado en un formulario para controlar las respuestas de error](/help/forms/assets/default-error-message.png)
+![mostrar el mensaje de error predeterminado cuando se añade un controlador de error predeterminado en un formulario para controlar las respuestas de error](/help/forms/assets/default-error-message.png)
 
 ### Añadir función del controlador de errores personalizado {#add-custom-errror-handler}
 
@@ -217,7 +217,7 @@ Puede añadir una función del controlador de errores personalizado para realiza
 * enviar eventos de Analytics a cualquier plataforma de Analytics. Por ejemplo, Adobe Analytics.
 * mostrar cuadro de diálogo modal con mensajes de error.
 
-Además de las acciones mencionadas, los controladores de error personalizados se pueden utilizar para ejecutar funciones personalizadas que cumplan con los requisitos específicos del usuario.
+Además de las acciones mencionadas, los controladores de errores predeterminados se pueden utilizar para ejecutar funciones personalizadas que cumplan con los requisitos específicos del usuario.
 
 El controlador de errores personalizado es una función (Biblioteca de cliente) diseñada para responder a los errores devueltos por un servicio externo y proporcionar una respuesta personalizada a los usuarios finales. Cualquier biblioteca de cliente con anotación `@errorHandler` se considera que es una función del controlador de errores personalizado. Esta anotación identifica la función de controlador de errores especificada en el archivo `.js`.
 Para comprender cómo crear y utilizar un controlador de errores personalizado con la acción [Invocar servicio del editor de reglas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es#invoke), vamos a ver un ejemplo de formulario adaptable con dos campos, **ID de mascota** y **Nombre de mascota**. Además, usar un controlador de errores personalizado en el campo **ID de mascota** para comprobar si hay varios errores devueltos por el punto final REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`, `404 - Not Found` y `400 - Bad Request`.
@@ -231,8 +231,8 @@ Para añadir y utilizar un controlador de errores personalizado en un formulario
 Para crear una función de error personalizada, realice los siguientes pasos:
 
 1. [Clone su repositorio de AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git).
-1. Cree una carpeta en `[AEM Forms as a Cloud Service repository folder]/apps/` carpeta. Por ejemplo, cree una carpeta denominada como `experience-league`
-1. Vaya a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` y cree un `ClientLibraryFolder` as `clientlibs`.
+1. Crear una carpeta dentro de la carpeta `[AEM Forms as a Cloud Service repository folder]/apps/`. Por ejemplo, cree una carpeta denominada `experience-league`
+1. Vaya a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` y cree un `ClientLibraryFolder` como `clientlibs`.
 1. Cree una carpeta con el nombre `js`.
 1. Navegue hasta la carpeta `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`. 
 1. Añada un archivo JavaScript, por ejemplo `function.js`. El archivo contiene el código del controlador de errores personalizado.
@@ -259,7 +259,7 @@ Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respu
 
    >[!NOTE]
    >
-   > En el `.content.xml` , añada el `allowProxy` y `categories` propiedades.
+   > En el archivo `.content.xml`, añade las propiedades `allowProxy` y `categories`.
    >
    > * `allowProxy = [Boolean]true`
    > * `categories= customfunctionsdemo`
@@ -297,11 +297,11 @@ Una vez que la canalización se haya ejecutado correctamente, el controlador de 
 
 #### 2. Utilizar el Editor de reglas para configurar el controlador de errores personalizado {#use-custom-error-handler}
 
-Antes de implementar el controlador de error personalizado en un formulario adaptable, asegúrese de que el nombre de la biblioteca de cliente en la variable **[!UICONTROL Categoría de biblioteca de cliente]** se alinea con el nombre especificado en la opción categories de `.content.xml` archivo.
+Antes de implementar el controlador de error personalizado en un formulario adaptable, asegúrese de que el nombre de la biblioteca de cliente en la **[!UICONTROL Categoría de biblioteca del cliente]** corresponda con el nombre especificado en la opción de categorías del archivo `.content.xml`.
 
-![Agregar el nombre de la biblioteca de cliente en la configuración del contenedor del formulario adaptable](/help/forms/assets/client-library-category-name.png)
+![Añadir el nombre de la biblioteca de cliente en la configuración del contenedor del formulario adaptable](/help/forms/assets/client-library-category-name.png)
 
-En este caso, el nombre de la biblioteca de cliente se proporciona como `customfunctionsdemo` en el `.content.xml` archivo.
+En este caso, el nombre de la biblioteca del cliente se proporciona como `customfunctionsdemo` en el archivo `.content.xml`.
 
 Para utilizar un controlador de errores personalizado utilizando la acción **[!UICONTROL Invocar servicio del Editor de reglas]**:
 
@@ -408,7 +408,7 @@ Using this custom error handler, the adaptive form converts the fields listed in
 ## Vea también {#see-also}
 
 {{see-also}}
-* [Crear y usar controladores de error personalizados en Forms adaptable (componentes principales)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+* [Crear y usar controladores de error personalizados en Formularios adaptables (componentes principales)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
 
 <!--
 

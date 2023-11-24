@@ -1,23 +1,23 @@
 ---
-title: ¿Cómo se crean y administran revisiones en formularios?
-description: Utilice el mecanismo de revisión para agregar revisores y permitir que realicen comentarios sobre un formulario.
+title: Crear y administrar las revisiones en los formularios
+description: Utilice el mecanismo de revisión para agregar revisores y permitir que realicen comentarios en un formulario.
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Creación y administración de revisiones en formularios{#creating-and-managing-reviews-to-forms}
+# Creación y administración de las revisiones en los formularios{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. En este artículo se describe un enfoque antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque antiguo para crear Formularios adaptables mediante componentes de base. </span>
 
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 ## Revisión {#review}
@@ -33,7 +33,7 @@ Una revisión es un mecanismo que permite a uno o más revisores realizar coment
    * **Título**: obligatorio. Puede contener caracteres alfanuméricos, guiones o guiones bajos.
    * **Descripción**: opcional, descripción del objetivo/contenido de la revisión.
    * **Fecha límite**: opcional, fecha en la que finaliza la revisión. Si se sobrepasa la fecha límite, la tarea aparece como “Vencida”.
-   * **Nombre del revisor**: es obligatorio especificar al menos uno. Utilice el cuadro combinado para agregar revisores, escribiendo una lista de nombres con todos los nombres coincidentes; seleccione un nombre y haga clic en **Añadir**. En la siguiente sección de la **Revisores** La pestaña muestra los nombres de todos los revisores.
+   * **Nombre del revisor**: es obligatorio especificar al menos uno. Utilice el cuadro combinado para agregar revisores, escribiendo una lista de nombres con todos los nombres coincidentes; seleccione un nombre y haga clic en **Añadir**. En la siguiente sección de la pestaña **Revisores** se muestra el nombre de todos los revisores.
 
 1. Haga clic en **Inicio** para comenzar una revisión.
 
@@ -68,7 +68,7 @@ Esta sección describe lo que sucede cuando se crea o configura una revisión.
 
    Haga clic en el icono **Administrar revisión** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)
 
-   Para los usuarios que no sean el iniciador, el icono Administrar revisión está deshabilitado.
+   El icono Administrar revisión está deshabilitado para los usuarios distintos del iniciador.
 
 1. Aparece una pantalla que muestra la información:
 

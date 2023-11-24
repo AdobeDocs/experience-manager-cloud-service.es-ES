@@ -1,15 +1,15 @@
 ---
-title: 'Creación de PDF a granel sin esfuerzo: domine el arte con el procesamiento por lotes: su guía de autoayuda para generar millones de documentos de PDF.'
+title: Creación masiva de PDF sin esfuerzo; domine el arte con el procesamiento por lotes, su guía de autoayuda para generar millones de documentos PDF.
 description: Crear comunicaciones personalizadas y orientadas a la marca
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
-# Procesamiento por lotes de comunicaciones as a Cloud Service de AEM Forms
+# Procesamiento por lotes de Comunicaciones de AEM Forms as a Cloud Service
 
 Las comunicaciones le permiten crear, montar y entregar comunicaciones personalizadas y orientadas a la marca, como correspondencia comercial, documentos, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, facturas mensuales y kits de bienvenida. Puede utilizar las API de comunicaciones para combinar una plantilla (XFA o PDF) con datos de clientes para generar documentos en los formatos PDF, PS, PCL, DPL, IPL y ZPL.
 
@@ -174,7 +174,7 @@ La documentación de referencia de la API ofrece información detallada sobre to
 
 >[!MORELIKETHIS]
 >
->* [Introducción a las comunicaciones as a Cloud Service AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [Arquitectura as a Cloud Service de AEM Forms para Forms adaptable y API de comunicación](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Introducción a Comunicaciones de AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitectura de AEM Forms as a Cloud Service para Formularios adaptables y API de comunicaciones](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

@@ -1,6 +1,6 @@
 ---
-title: ¿Qué son las palabras clave reservadas de Forms adaptable?
-description: Palabras clave reservadas que no se pueden usar como identificadores en un Forms adaptable.
+title: ¿Qué son las palabras clave reservadas de los formularios adaptables?
+description: Palabras clave reservadas que no se pueden usar como identificadores en los formularios adaptables.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -8,7 +8,7 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 

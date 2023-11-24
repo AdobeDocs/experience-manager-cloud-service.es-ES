@@ -1,6 +1,6 @@
 ---
-title: ¿Cómo se crea un Forms adaptable accesible?
-description: AEM Forms proporciona herramientas para crear Forms adaptable accesible y ayuda a cumplir con los estándares de accesibilidad.
+title: Crear formularios adaptables y accesibles
+description: AEM Forms tiene herramientas que permiten crear formularios adaptables y accesibles para cumplir con los estándares de accesibilidad.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -8,7 +8,7 @@ exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2022'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ La herramienta Inspector de nombres y descripciones accesibles (ANDI) ayuda a id
 * Detecta problemas de accesibilidad del teclado y del contraste de color
 * Identifica claramente el contenido del lector de pantalla de acuerdo con los estándares
 
-ANDI trabaja con los principales exploradores de Internet. Consulte la documentación de [ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
+ANDI trabaja con los principales exploradores de Internet. Consulte la [documentación de ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
 
 ### Descargue e instale la temática Ultramarine-Accessible
 

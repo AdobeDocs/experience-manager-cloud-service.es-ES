@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo se utiliza AEM Forms para la automatización de los procesos empresariales (BPM)?
+title: Utilizar AEM Forms para la automatización de los procesos empresariales (BPM)
 seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: Utilice el flujo de trabajo de AEM Forms para automatizar y crear rápidamente flujos de trabajo de procesos empresariales. Por ejemplo, revisión y aprobación, generación de PDF, flujos de trabajo de Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
@@ -7,14 +7,14 @@ topic-tags: publish, document_services
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2392'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
 
 # Flujo de trabajo centrado en Forms en OSGi {#forms-centric-workflow-on-osgi}
 
-![Imagen de muestra](do-not-localize/header.png)
+![Hero Images](do-not-localize/header.png)
 
 Las empresas recopilan datos de cientos y miles de formularios, varios sistemas back-end y fuentes de datos en línea o sin conexión. También tienen un conjunto dinámico de usuarios para tomar decisiones sobre los datos, lo que implica procesos de revisión y aprobación iterativos.
 
@@ -274,5 +274,5 @@ Al minimizar el número de instancias del flujo de trabajo, aumenta el rendimien
 
 >[!MORELIKETHIS]
 >
->* [AEM Uso del flujo de trabajo de traducción de para localizar Forms adaptable y documento de registro](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+>* [Usar el flujo de trabajo de traducción de AEM para localizar formularios adaptables y documentos de registro](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
 >* [Variables en flujos de trabajo de AEM centrados en Forms](/help/forms/variable-in-aem-workflows.md)

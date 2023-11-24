@@ -1,40 +1,40 @@
 ---
-title: Configurar una acción de envío para un formulario adaptable?
+title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias
 keywords: Obtenga información sobre cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de sharepoint, conectar un formulario adaptable a una biblioteca de documentos de sharepoint, conectar un formulario adaptable al modelo de datos de formulario
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3634'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
 # Acción de envío de un formulario adaptable {#configuring-the-submit-action}
 
-<span class="preview"> El Adobe recomienda utilizar los componentes principales para [Añadir Forms adaptable a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [crear Forms adaptable independiente](/help/forms/creating-adaptive-form-core-components.md). </span>
+<span class="preview"> Adobe recomienda utilizar los componentes principales para [añadir Formularios adaptables a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) o para [crear Formularios adaptables independientes](/help/forms/creating-adaptive-form-core-components.md). </span>
 
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
-| Se aplica a | ✅ Componentes principales de formularios adaptables, ❎ [Componentes de base de formulario adaptable](/help/forms/configuring-submit-actions.md) |
+| Se aplica a lo siguiente: | ✅ Componentes principales de formularios adaptables, ❎ [Componentes de base de formularios adaptables](/help/forms/configuring-submit-actions.md) |
 
 
-Una acción de envío permite elegir el destino de los datos capturados mediante un formulario adaptable. Se activa cuando un usuario hace clic en **[!UICONTROL Enviar]** en un formulario adaptable. Forms as a Cloud Service, para Forms adaptable basado en componentes principales, ofrece una matriz de acciones de envío prediseñadas. Estas acciones de envío listas para usar le permiten lo siguiente:
+Una acción de envío permite elegir el destino de los datos capturados mediante un formulario adaptable. Se activa cuando un usuario hace clic en el botón **[!UICONTROL Enviar]** en un formulario adaptable. Forms as a Cloud Service, para Formularios adaptables basados en componentes principales, ofrece una matriz de acciones de envío creadas previamente. Estas acciones de envío listas para usar le permiten lo siguiente:
 
-* Envíe datos de formulario por correo electrónico sin esfuerzo.
-* Inicie flujos de trabajo de Microsoft AEM Power Automate o flujos de trabajo de al transmitir los datos.
-* Transmita directamente los datos del formulario al servidor de Microsoft SharePoint, al almacenamiento del blob de Microsoft Azure o a Microsoft OneDrive.
-* Envíe los datos sin problemas a una fuente de datos configurada mediante el modelo de datos de formulario.
-* Envíe convenientemente los datos a un punto final REST.
+* Enviar datos de formulario por correo electrónico sin esfuerzo.
+* Iniciar flujos de Microsoft Power Automate o flujos de trabajo de AEM al transmitir los datos.
+* Transmitir directamente los datos del formulario al servidor de Microsoft SharePoint, a Microsoft Azure Blob Storage o a Microsoft OneDrive.
+* Enviar los datos sin problemas a una fuente de datos configurada mediante el modelo de datos de formulario.
+* Enviar cómodamente los datos a un punto final REST.
 
 También puede [ampliar las acciones de envío predeterminadas](custom-submit-action-form.md) para crear una acción de envío propia.
 
 ## Seleccionar y configurar una acción de envío para un formulario adaptable {#select-and-configure-submit-action}
 
-Para seleccionar y configurar una acción de envío para el formulario:
+Para seleccionar y configurar una acción de envío para el formulario, haga lo siguiente:
 
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
@@ -43,11 +43,11 @@ Para seleccionar y configurar una acción de envío para el formulario:
 
    ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar una acción de envío](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Seleccione y configure una **[!UICONTROL acción de envío]** según sus necesidades. Para obtener información detallada sobre la acción de envío seleccionada, consulte:
+1. Seleccione y configure una **[!UICONTROL acción de envío]** según sus necesidades. Para obtener información detallada sobre la acción de envío seleccionada, consulte lo siguiente:
 
    * [Enviar correo electrónico](#send-email)
    * [Enviar a SharePoint](#submit-to-sharedrive)
-   * [Enviar mediante modelo de datos de formulario](#submit-using-form-data-model)
+   * [Enviar mediante el modelo de datos de formulario](#submit-using-form-data-model)
    * [Enviar a Azure Blob Storage](#azure-blob-storage)
    * [Enviar al punto final REST](#submit-to-rest-endpoint)
    * [Enviar a OneDrive](#submit-to-onedrive)
@@ -56,7 +56,7 @@ Para seleccionar y configurar una acción de envío para el formulario:
 
 ## Enviar correo electrónico {#send-email}
 
-Para enviar un correo electrónico a uno o varios destinatarios cuando el formulario se haya enviado correctamente, puede utilizar el **[!UICONTROL Enviar correo electrónico]** Acción de envío. Esta acción le permite crear un correo electrónico que incluya datos de formulario en un formato predefinido. Por ejemplo, considere la siguiente plantilla en la que el nombre del cliente, la dirección de envío, el nombre del estado y el código postal se recuperan de los datos del formulario enviado:
+Para enviar un correo electrónico a uno o varios destinatarios cuando el formulario se haya enviado correctamente, puede utilizar la acción de envío **[!UICONTROL Enviar correo electrónico]**. Esta acción le permite crear un correo electrónico que incluya datos de formulario en un formato predefinido. Por ejemplo, considere la siguiente plantilla en la que el nombre del cliente, la dirección de envío, el nombre del estado y el código postal se recuperan de los datos del formulario enviado:
 
     ```
     
@@ -76,11 +76,11 @@ Para enviar un correo electrónico a uno o varios destinatarios cuando el formul
 >[!NOTE]
 >
 > * Es crucial que todos los campos de formulario tengan nombres de elemento únicos, incluso si se colocan en paneles diferentes dentro de un formulario adaptable.
-> * AEM Cuando se utiliza el correo electrónico as a Cloud Service, el correo electrónico saliente requiere cifrado. De forma predeterminada, la funcionalidad de correo electrónico saliente está deshabilitada. Para activarlo, envíe un ticket de asistencia a [Solicitar acceso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email).
+> * Cuando se utiliza AEM as a Cloud Service, el correo electrónico saliente requiere un cifrado. De forma predeterminada, la funcionalidad del correo electrónico saliente está deshabilitada. Para habilitarlo, envíe un ticket de asistencia a [Solicitar acceso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email).
 
-Además, la **[!UICONTROL Enviar correo electrónico]** La acción de envío proporciona la opción de incluir archivos adjuntos y un documento de registro (DoR) con el correo electrónico.
+Además, la acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un documento de registro (DoR) con el correo electrónico.
 
-Para habilitar la variable [!UICONTROL Adjuntar documento de registro] , consulte la documentación sobre [configurar el formulario adaptable para generar un documento de registro (DoR)](generate-document-of-record-core-components.md). Puede activar esta opción desde las propiedades del formulario adaptable.
+Para habilitar la opción [!UICONTROL Adjuntar documento de registro], consulte la documentación acerca de [configurar el formulario adaptable para generar un documento de registro (DoR)](generate-document-of-record-core-components.md). Puede activar esta opción desde las propiedades del formulario adaptable.
 
 <!-- [!NOTE]
 >
@@ -128,7 +128,7 @@ Para conectar AEM Forms al almacenamiento de la biblioteca de documentos de Micr
 1. Vaya a su instancia de **AEM Forms Author** > **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Una vez seleccionada la variable **[!UICONTROL Microsoft® SharePoint]**, se le redirigirá a **[!UICONTROL Explorador SharePoint]**.
 1. Seleccione un **Contenedor de configuración**. La configuración se almacena en el contenedor de configuración seleccionado.
-1. Clic **[!UICONTROL Crear]** > **[!UICONTROL Biblioteca de documentos de SharePoint]** en la lista desplegable. Aparecerá el asistente de configuración de SharePoint.
+1. Haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Biblioteca de documentos de SharePoint]** en la lista desplegable. Aparecerá el asistente de configuración de SharePoint.
 
 ![Configuración de SharePoint](/help/forms/assets/sharepoint_configuration.png)
 1. Especifique el **[!UICONTROL Título]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL URL de OAuth]**. Para obtener información sobre cómo recuperar el ID de cliente, el secreto de cliente o el ID de inquilino para la URL de OAuth, consulte [Documentación de Microsoft®](https://learn.microsoft.com/es-es/graph/auth-register-app-v2).
@@ -436,9 +436,9 @@ Puede configurar un formulario adaptable para ejecutar un flujo de nube de Micro
 * Realizar cálculos complejos en los datos capturados
 * Guardar datos de formularios adaptables en sistemas de almacenamiento con una programación predefinida
 
-El editor de Forms adaptable proporciona el **Invocar un flujo de Microsoft® Power Automate** Enviar acción para enviar datos de formularios adaptables, archivos adjuntos y documentos de registro al flujo de nube de Power Automate. Para utilizar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [conecte su instancia de Forms as a Cloud Service con Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
+El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para utilizar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [conecte su instancia de Forms as a Cloud Service con Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
 
-Después de una configuración correcta, utilice el [Invocar un flujo de Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Enviar acción para enviar datos a un flujo de Power Automate.
+Después de una configuración correcta, utilice la acción de envío [Invocar un flujo de Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) para enviar datos a un flujo de Power Automate.
 
 ## Usar envío sincrónico o asincrónico {#use-synchronous-or-asynchronous-submission}
 

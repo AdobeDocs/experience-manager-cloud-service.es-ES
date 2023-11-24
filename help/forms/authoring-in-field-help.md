@@ -1,13 +1,13 @@
 ---
-title: AEM ¿Cómo se agrega el texto de ayuda para los campos de Forms adaptables de la?
-description: AEM Forms permite agregar ayuda en contexto a los campos y paneles de los formularios adaptables, como texto o medios enriquecidos, incluidos vídeos.
+title: Agregae el texto de ayuda para los campos de los formularios adaptables de AEM
+description: AEM Forms le permite agregar ayuda en contexto a los campos y paneles de los formularios adaptables, como texto o medios enriquecidos, incluidos vídeos.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -67,5 +67,5 @@ Al añadir ayuda al panel, se muestra el icono **?** junto a la descripción del
 
 >[!MORELIKETHIS]
 >
->* [Agregar texto de marcador de posición a campos de formulario](/help/forms/placeholder-text-in-aem-forms.md)
->* [Agregar nota al pie a un formulario adaptable para texto enriquecido](/help/forms/footnotes-richtextsupport.md)
+>* [Agregar texto de marcador de posición a los campos de formulario](/help/forms/placeholder-text-in-aem-forms.md)
+>* [Agregar nota al pie de texto enriquecido a un formulario adaptable](/help/forms/footnotes-richtextsupport.md)

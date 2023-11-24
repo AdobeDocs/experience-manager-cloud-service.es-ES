@@ -1,15 +1,15 @@
 ---
-title: Cómo generar el documento de registro para el Forms adaptable
-description: Obtenga información sobre cómo generar una plantilla para un documento de registro (DoR) para componentes principales de Forms adaptable.
+title: Generación del documento de registro para los formularios adaptables
+description: Obtén información sobre cómo generar una plantilla para un documento de registro (DoR) para componentes principales de Formularios adaptables.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3106'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
-# Generar documento de registro para Forms adaptable (componentes principales)
+# Generar documento de registro para formularios adaptables (Componentes principales)
 
 ## Información general {#overview}
 
@@ -66,7 +66,7 @@ Cuando se configura un formulario adaptable para que genere automáticamente un 
 * Los desarrolladores de formularios no tienen que mantener enlaces de datos de forma manual. El documento de registro generado automáticamente se encarga de las actualizaciones relacionadas con los enlaces de datos.
 * Los desarrolladores de formularios no tienen que ocultar de forma manual los campos marcados como excluir del documento de registro. El documento de registro generado automáticamente está preconfigurado para excluir estos campos.
 * Al crear un documento de registro generado automáticamente, se ahorra el tiempo necesario para crear una plantilla de formulario para el documento de registro.
-* La opción de documento de registro generado automáticamente permite utilizar diferentes estilos y apariencias con diferentes plantillas base. Ayuda a seleccionar el mejor estilo y aspecto del documento de registro para su organización. Si no especifica estilo, los estilos del sistema se establecen como predeterminados.
+* Crear un documento de registro generado automáticamente permite utilizar diferentes estilos y apariencias con distintas plantillas base. Ayuda a seleccionar el mejor estilo y aspecto del documento de registro para su organización. Si no especifica estilo, los estilos del sistema se establecen como predeterminados.
 * El documento de registro generado automáticamente garantiza que cualquier cambio en el formulario se refleje inmediatamente en el documento de registro.
 
 Siga estos pasos para configurar un formulario adaptable para generar automáticamente un documento de registro:

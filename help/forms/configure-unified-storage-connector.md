@@ -5,7 +5,7 @@ exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 78%
+ht-degree: 82%
 
 ---
 
@@ -71,5 +71,5 @@ Estas son las directrices a seguir a la hora de utilizar flujos de trabajo de AE
 >
 >* [Configuración de fuentes de datos para AEM Forms](/help/forms/configure-data-sources.md)
 >* [Configuración del almacenamiento de Azure para AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integración de Microsoft Dynamics 365 y Salesforce con Forms adaptable](/help/forms/configure-msdynamics-salesforce.md)
->  [Añadir el portal de Forms a una página de AEM Sites](/help/forms/configure-forms-portal.md)
+>* [Integración de Microsoft Dynamics 365 y Salesforce con Formularios adaptables](/help/forms/configure-msdynamics-salesforce.md)
+>  [Agregar Portal de Forms a una página de AEM Sites](/help/forms/configure-forms-portal.md)

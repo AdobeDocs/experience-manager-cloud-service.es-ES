@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo actualizar los metadatos de un formulario enviado?
+title: Actualizar los metadatos de un formulario enviado
 description: Aprenda a añadir información a los metadatos de un formulario enviado con los datos proporcionados por los usuarios. Obtenga información más detallada sobre cómo ver los metadatos de envío de formularios actualizados en el repositorio CRX.
 feature: Adaptive Forms
 role: User
@@ -7,7 +7,7 @@ level: Intermediate
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 

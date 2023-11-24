@@ -11,7 +11,7 @@ ht-degree: 98%
 
 # Expresiones de formularios adaptables {#adaptive-form-expressions}
 
-Los formularios adaptables ofrecen una experiencia de cumplimentación de formularios optimizada y simplificada para los usuarios finales con funciones de scripts dinámicos. Permite escribir expresiones para agregar varios comportamientos, como mostrar/ocultar campos y paneles dinámicos. También permiten agregar campos calculados, crear campos de solo lectura, agregar lógica de validación y mucho más. El comportamiento dinámico se basa en los datos introducidos por el usuario o rellenados previamente.
+Los formularios adaptables ofrecen una experiencia de cumplimentación de formularios optimizada y simplificada para los usuarios finales con funciones de scripts dinámicos. Permiten escribir expresiones para agregar varios comportamientos, como mostrar u ocultar campos y paneles dinámicos. También permiten agregar campos calculados, crear campos de solo lectura, agregar lógica de validación y mucho más. El comportamiento dinámico se basa en los datos introducidos por el usuario o rellenados previamente.
 
 JavaScript™ es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones JavaScript™ válidas y utilizan API de modelos de scripts de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener la lista completa de clases, eventos, objetos y API públicas de los formularios adaptables, consulte [Referencia de la API de la biblioteca JavaScript™ para formularios adaptables](https://helpx.adobe.com/es/experience-manager/6-5/forms/javascript-api/index.html).
 

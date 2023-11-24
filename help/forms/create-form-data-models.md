@@ -1,6 +1,6 @@
 ---
-title: Cómo crear el modelo de datos de formulario
-description: AEM Aprenda a crear un modelo de datos de formulario (FDM) y a enviar o recuperar datos a una fuente de datos mediante un formulario adaptable o un flujo de trabajo de.
+title: Crear modelo de datos de formulario
+description: Aprenda a crear un modelo de datos de formulario (FDM) y a enviar o recuperar datos a una fuente de datos mediante un formulario adaptable o un flujo de trabajo de AEM.
 feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
@@ -8,7 +8,7 @@ exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '1548'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

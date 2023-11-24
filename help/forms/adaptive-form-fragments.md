@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo se crean y utilizan fragmentos de formulario adaptables?
+title: Creación y utilización de fragmentos de formularios adaptables
 description: Un fragmento de formulario es un componente modular y reutilizable de un formulario. Aprenda a crear fragmentos de formulario y a reutilizarlos en todos los formularios para un ensamblado de formularios eficaz.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,16 @@ exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
 source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
 workflow-type: tm+mt
 source-wordcount: '2148'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
-# Crear y utilizar fragmentos de Forms adaptables en un formulario adaptable  {#adaptive-form-fragments}
+# Crear y utilizar fragmentos de Formularios adaptables en un formulario adaptable  {#adaptive-form-fragments}
 
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Aunque cada formulario está diseñado para un propósito específico, hay algunos segmentos comunes en la mayoría de las formas, como para proporcionar detalles personales como nombre y dirección, detalles familiares, detalles de ingresos, etc. Los desarrolladores de formularios deben crear estos segmentos comunes cada vez que se crea un nuevo formulario. Los formularios adaptables proporcionan un mecanismo cómodo para crear segmentos de formulario como un panel o un grupo de campos solo una vez y reutilizarlos. Estos segmentos reutilizables e independientes se denominan fragmentos de formulario adaptables.
@@ -69,7 +69,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 
 En el modo de edición, puede arrastrar y soltar cualquier componente del formulario adaptable de la barra de tareas de AEM en el fragmento. <!-- For information about Adaptive Form components, see Introduction to authoring Adaptive Forms. -->
 
-Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP como modelo de formulario para el fragmento, aparecerá una nueva pestaña que mostrará la jerarquía del modelo de formulario en el buscador de contenido. Permite arrastrar y soltar elementos del modelo de formulario en el fragmento. Los elementos del modelo de formulario agregados se convierten en componentes de formulario, al tiempo que se conservan las propiedades originales del XDP o XSD asociado.
+Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP como modelo de formulario para el fragmento, aparecerá una nueva pestaña que mostrará la jerarquía del modelo de formulario en el buscador de contenido. Permite arrastrar y soltar los elementos del modelo de formulario en el fragmento. Los elementos del modelo de formulario agregados se convierten en componentes de formulario, al tiempo que se conservan las propiedades originales del XDP o XSD asociado.
 
 ### Guardar panel como fragmento {#save-panel-as-a-fragment}
 
@@ -269,4 +269,4 @@ Reference Adaptive Form Fragments that you can use to create your form are avail
 
 >[!MORELIKETHIS]
 >
->* [Fragmentos de formulario adaptable en componentes principales](/help/forms/adaptive-form-fragments-core-components.md)
+>* [Fragmentos de formularios adaptables en componentes principales](/help/forms/adaptive-form-fragments-core-components.md)

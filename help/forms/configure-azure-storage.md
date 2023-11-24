@@ -12,7 +12,7 @@ ht-degree: 97%
 # Configuración de [!DNL Azure] Storage {#configure-azure-storage}
 
 
-![integración de datos](assets/data-integeration.png)
+![data-integeration](assets/data-integeration.png)
 
 La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md) proporciona una configuración de almacenamiento de [!DNL Azure] para integrar formularios con los servicios de [!DNL Azure] Storage. El modelo de datos de formulario se puede utilizar para crear formularios adaptables que interactúen con el servidor [!DNL Azure] para habilitar los flujos de trabajo empresariales. Por ejemplo:
 

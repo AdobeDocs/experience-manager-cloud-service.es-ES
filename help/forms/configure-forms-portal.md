@@ -5,17 +5,17 @@ exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1840'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
-# Añadir el portal de Forms a una página de AEM Sites {#publish-forms-on-portal}
+# Portal Agregar Formularios adaptables a una página de AEM Sites {#publish-forms-on-portal}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 En un escenario típico de implementación de portal centrado en formularios, el desarrollo de los formularios y el de portales son dos actividades separadas. Mientras los diseñadores de formularios diseñan y almacenan formularios en un repositorio, los desarrolladores web crean una aplicación web para enumerar formularios y administrar su envío. Los formularios se copian en el nivel web, ya que no hay ninguna comunicación entre el repositorio de formularios y la aplicación web.
@@ -39,11 +39,11 @@ Los componentes del portal de Forms le permiten agregar las siguientes funciones
 
 AEM Forms proporciona los siguientes componentes listos para usar del portal:
 
-* Buscar y listar: Este componente le permite enumerar formularios del repositorio de formularios en la página del portal y proporciona opciones de configuración para enumerar formularios basados en criterios específicos.
+* Buscar y listar: este componente le permite mostrar una lista de formularios del repositorio de formularios en la página del portal y proporciona opciones de configuración para mostrar una lista de formularios basados en criterios específicos.
 
 * Borradores y envíos: Mientras que el componente Buscar y listar muestra los formularios que publica el autor de Forms, el componente Borradores y envíos muestra los formularios guardados como borrador para completarlos posteriormente y enviarlos. Este componente proporciona una experiencia personalizada a cualquier usuario que haya iniciado sesión.
 
-* Vínculo: Este componente le permite crear un vínculo a un formulario en cualquier parte de la página.
+* Vínculo: este componente permite crear un vínculo a un formulario en cualquier parte de la página.
 
 Puede [importar los componentes listos para usar del portal de Forms](#import-forms-portal-components-aem-archetype) desde el proyecto AEM Archetype. Después de la importación, realice las siguientes configuraciones:
 

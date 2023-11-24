@@ -1,6 +1,6 @@
 ---
-title: ¿Cómo cambiar el contenido de la página cero en Designer?
-description: Cambie el mensaje que se muestra en la página cero de un PDF XFA para los visualizadores que no son de Adobe PDF.
+title: Cambiar el contenido de la página cero en Designer
+description: Cambie el mensaje que se muestra en la página cero de un PDF de XFA para los visualizadores PDF que no son de Adobe.
 uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ El contenido de la página cero se muestra de forma predeterminada cuando un vis
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] La versión de Designer de permite cambiar el mensaje que se muestra en la página cero. Para cambiar el mensaje de la página cero, realice los siguientes pasos:
+La versión de Designer de [!DNL AEM Forms] permite cambiar el mensaje que se muestra en la página cero. Para cambiar el mensaje de la página cero, realice los siguientes pasos:
 
 1. Asegúrese de que ha instalado la versión de Designer de [!DNL AEM Forms]. Puede comprobar la versión desde la pantalla Acerca de Designer.
 
@@ -48,5 +48,5 @@ El contenido de la página cero se muestra de forma predeterminada cuando un vis
 
 >[!MORELIKETHIS]
 >
->* [Descargue e instale Forms Designer para crear plantillas de documento de registro](/help/forms/installing-configuring-designer.md)
->* [Utilice Forms Designer para crear plantillas de documento de registro (DoR) y fragmentos de formulario?](/help/forms/use-forms-designer.md)
+>* [Descargar e instalar Forms Designer para crear plantillas de documento de registro](/help/forms/installing-configuring-designer.md)
+>* [Utilice Forms Designer para crear plantillas de documento de registro (DoR) y fragmentos de formulario](/help/forms/use-forms-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo se envía un formulario adaptable para su revisión?
+title: Enviar un formulario adaptable para revisión
 description: Comparta un formulario adaptable para su revisión con uno o más revisores.
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '499'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 

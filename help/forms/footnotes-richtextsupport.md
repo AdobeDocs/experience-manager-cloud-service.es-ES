@@ -1,17 +1,17 @@
 ---
 title: Cómo agregar una nota al pie a un formulario adaptable
-description: Utilizar el Editor de texto enriquecido (RTE) para notas al pie de página en un formulario adaptable.
+description: Utilizar el editor de texto enriquecido (RTE) para notas al pie de página en un formulario adaptable.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Componente Nota al pie {#footnotecomponent}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 La **[!UICONTROL Nota al pie]** es el extra de información o nota que aparece al final de la página. [!UICONTROL Nota al pie] comprende las notas que se indican en el texto con números como superíndice.
 
@@ -33,7 +33,7 @@ En formularios adaptables, la [!UICONTROL nota al pie] sirve para mostrar inform
 Para añadir una nota al pie en un formulario adaptable, siga estos pasos:
 1. Abra un formulario adaptable en el modo **Edición**.
 1. Desde el explorador de componentes, arrastre y suelte el componente **[!UICONTROL Texto]** en el formulario adaptable.
-1. Seleccione el **[!UICONTROL Texto]** componente que ha agregado y pulse ![cmppr](assets/configure-icon.svg) para editar sus propiedades.
+1. Seleccione el componente **[!UICONTROL Texto]** que ha añadido y pulse ![cmppr](assets/configure-icon.svg) para editar sus propiedades.
 
    ![Nota al pie en formularios adaptables](/help/forms/assets/footnote_rte.png)
 

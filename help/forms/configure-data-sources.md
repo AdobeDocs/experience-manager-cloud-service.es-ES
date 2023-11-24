@@ -1,6 +1,6 @@
 ---
-title: Configurar fuentes de datos
-description: Obtenga información sobre cómo configurar servicios web RESTful, servicios web basados en SOAP y servicios OData como fuentes de datos para un modelo de datos de formulario.
+title: Configurar las fuentes de datos
+description: Aprenda a configurar los servicios web RESTful, los servicios web basados en SOAP y los servicios OData como fuentes de datos para un modelo de datos de formulario.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
@@ -8,21 +8,21 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2201'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
 
-# Configurar fuentes de datos {#configure-data-sources}
+# Configuración de las fuentes de datos {#configure-data-sources}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 ![Integración de datos](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] La integración de datos de le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes tipos son compatibles de forma predeterminada:
+La integración de datos de [!DNL Experience Manager Forms] le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes tipos son compatibles de forma predeterminada:
 
 * Bases de datos relacionales: MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL y [!DNL Oracle RDBMS]
 * Servicios web RESTful
@@ -39,7 +39,7 @@ La integración de datos es compatible con los tipos de autenticación OAuth2.0(
 ### Requisitos previos
 
 Antes de configurar bases de datos relacionales mediante la configuración de la consola web de [!DNL Experience Manager], es obligatorio lo siguiente:
-* [Habilite la red avanzada a través de la API de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=es), ya que los puertos están desactivados de forma predeterminada.
+* [Habilitar las redes avanzadas mediante la API de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=es), ya que los puertos están deshabilitados de forma predeterminada.
 * [Añadir dependencias de controladores JDBC en Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=es#mysql-driver-dependencies).
 
 
@@ -123,7 +123,7 @@ Para configurar la carpeta para las configuraciones de servicios en la nube:
 
 ## Configurar servicios web de RESTful {#configure-restful-web-services}
 
-Los servicios web RESTful se pueden describir mediante [Especificaciones de Swagger](https://swagger.io/specification/v2/) en formato JSON o YAML en una [!DNL Swagger] archivo de definición. Para configurar el servicio web RESTful en [!DNL Experience Manager] as a Cloud Service, asegúrese de que dispone del archivo [!DNL Swagger] ([versión 2.0 de Swagger](https://swagger.io/specification/v2/)) o [!DNL Swagger] ([versión 3.0 de Swagger](https://swagger.io/specification/v3/)) en su sistema de archivos o la URL donde se hospeda el archivo.
+El servicio web RESTful se puede describir con las [especificaciones de Swagger](https://swagger.io/specification/v2/) en formato JSON o YAML en un archivo de definición de [!DNL Swagger]. Para configurar el servicio web RESTful en [!DNL Experience Manager] as a Cloud Service, asegúrese de que dispone del archivo [!DNL Swagger] ([versión 2.0 de Swagger](https://swagger.io/specification/v2/)) o [!DNL Swagger] ([versión 3.0 de Swagger](https://swagger.io/specification/v3/)) en su sistema de archivos o la URL donde se hospeda el archivo.
 
 ### Configuración de servicios RESTful para la especificación de API abierta versión 2.0 {#configure-restful-services-open-api-2.0}
 
@@ -134,7 +134,7 @@ Los servicios web RESTful se pueden describir mediante [Especificaciones de Swag
 1. Pulse **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio RESTful]** en la lista desplegable **[!UICONTROL Tipo de servicio]**; opcionalmente puede examinar y seleccionar una imagen de miniatura para la configuración, y pulsar **[!UICONTROL Siguiente]**.
 1. Especifique los siguientes detalles para el servicio RESTful:
 
-   * Seleccione una URL o un archivo del [!UICONTROL Origen de Swagger] y, en consecuencia, especifique la variable [!DNL Swagger URL] a la[!DNL  Swagger] archivo de definición de o cargue el [!DNL Swagger] desde el sistema de archivos local.
+   * Seleccione la URL o archivo en la lista desplegable [!UICONTROL Fuente de Swagger] y, en consecuencia, especifique el [!DNL Swagger URL] para el archivo de definición [!DNL  Swagger] o cargue el archivo [!DNL Swagger] de su sistema de archivos local.
    * En función de la entrada de fuente de [!DNL  Swagger], los siguientes campos aparecen ya cumplimentados con valores:
 
       * Esquema: Los protocolos de transferencia utilizados por el API de REST. El número de tipos de esquema que se muestran en la lista desplegable depende de los esquemas definidos en la fuente de [!DNL Swagger].
@@ -159,7 +159,7 @@ Los servicios web RESTful se pueden describir mediante [Especificaciones de Swag
 1. Pulse **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio RESTful]** en la lista desplegable **[!UICONTROL Tipo de servicio]**; opcionalmente puede examinar y seleccionar una imagen de miniatura para la configuración, y pulsar **[!UICONTROL Siguiente]**.
 1. Especifique los siguientes detalles para el servicio RESTful:
 
-   * Seleccione una URL o un archivo del [!UICONTROL Origen de Swagger] y, en consecuencia, especifique la variable [!DNL Swagger 3.0 URL] a la[!DNL  Swagger] archivo de definición de o cargue el [!DNL Swagger] desde el sistema de archivos local.
+   * Seleccione la URL o archivo en la lista desplegable [!UICONTROL Fuente de Swagger] y, en consecuencia, especifique la [!DNL Swagger 3.0 URL] para el archivo de definición [!DNL  Swagger] o cargue el archivo [!DNL Swagger] de su sistema de archivos local.
    * En función de la entrada de origen de [!DNL  Swagger], se muestra la información de conexión con el servidor de destino.
    * Seleccione el tipo de autenticación (ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales de cliente](https://oauth.net/2/grant-types/client-credentials/)), autenticación básica, clave de la API o autenticación personalizada) para acceder al servicio RESTful y facilitar los detalles correspondientes para la autenticación.
 
@@ -180,7 +180,7 @@ Consulte [Especificación de OpenAPI 3.0](https://swagger.io/specification/v3/) 
 
 ### Configuración del cliente HTTP del modelo de datos del formulario para optimizar el rendimiento {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] forma un modelo de datos al integrarse con los servicios web RESTful, ya que la fuente de datos incluye configuraciones de cliente HTTP para la optimización del rendimiento.
+Modelo de datos del formulario [!DNL Experience Manager Forms] al integrarse con los servicios web RESTful, ya que la fuente de datos incluye configuraciones de cliente HTTP para la optimización del rendimiento.
 
 Establezca las siguientes propiedades de la configuración **[!UICONTROL Configuración del cliente HTTP del modelo de datos del formulario para fuente de datos de REST]** para especificar la expresión regular:
 
@@ -224,7 +224,7 @@ El siguiente archivo JSON muestra un ejemplo:
 
 ## Configurar servicios web SOAP {#configure-soap-web-services}
 
-Los servicios web basados en SOAP se describen utilizando [Especificaciones del lenguaje de descripción de servicios web (WSDL)](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] no admiten el modelo WSDL de estilo RPC.
+Los servicios web basados en SOAP se describen utilizando [Especificaciones del lenguaje de descripción de servicios web (WSDL)](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] no admite el modelo WSDL de estilo RPC.
 
 Para configurar el servicio web basado en SOAP en [!DNL Experience Manager] as a Cloud Service, asegúrese de que cuenta con la URL de WSDL para el servicio web y haga lo siguiente:
 

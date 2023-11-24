@@ -1,11 +1,11 @@
 ---
 title: Conexión de una base de datos a  [!DNL AEM Forms]  as a Cloud Service
-description: AEM Recupere y guarde datos en servicios web RESTful, servicios web basados en SOAP y servicios OData desde un formulario adaptable o un flujo de trabajo de la.
+description: Recupere y guarde datos en servicios web RESTful, servicios web basados en SOAP y servicios OData desde un formulario adaptable o un flujo de trabajo de AEM.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
 source-git-commit: 596cd08a98b1d9d47825438e1d64b6db3f847271
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 59%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 
@@ -22,7 +22,7 @@ ht-degree: 59%
 
 Las infraestructuras empresariales incluyen diferentes sistemas back-end o fuentes de datos, como bases de datos, servicios web, servicios REST, servicios OData y soluciones CRM. En conjunto, crean un sistema de información que sirve datos a las aplicaciones empresariales para realizar el trabajo diario. Por otro lado, las aplicaciones capturan datos y los envían de vuelta para actualizar las fuentes de datos.
 
-Al conectar un formulario adaptable a una base de datos, se requiere la integración con fuentes de datos para recuperar los datos de los clientes mientras se representan los formularios. Hay casos de uso en los que se recuperan datos de fuentes de datos basadas en entradas de usuarios de formularios adaptables. Además, cuando se envía un formulario adaptable a una base de datos, los datos del formulario adaptable enviados se pueden escribir de forma diferida para actualizar las fuentes de datos correspondientes.
+Al conectar un formulario adaptable a una base de datos, se requiere la integración con fuentes de datos para recuperar los datos de los clientes mientras se procesan los formularios. Hay casos de uso en los que se recuperan datos de fuentes de datos basadas en entradas de usuarios de formularios adaptables. Además, cuando se envía un formulario adaptable a una base de datos, los datos del formulario adaptable enviados se pueden escribir de forma diferida para actualizar las fuentes de datos correspondientes.
 
 Si bien un sistema modular y distribuido tiene sus propias ventajas, el desafío consiste en integrar y crear asociaciones de datos entre fuentes de datos. La integración de datos es la clave de una infraestructura empresarial funcional y eficiente con diferentes fuentes de datos conectadas a aplicaciones para intercambiar datos del negocio.
 
@@ -30,7 +30,7 @@ Si bien un sistema modular y distribuido tiene sus propias ventajas, el desafío
 
 ![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
-La integración de datos de [!DNL AEM Forms] permite configurar y conectar diferentes fuentes de datos con [!DNL AEM Forms]. Proporciona una interfaz de usuario intuitiva para crear un esquema de representación de datos unificado de entidades y servicios empresariales a través de fuentes de datos conectadas. La representación unificada se conoce como modelo de datos de formulario, una extensión del esquema JSON. Las entidades de un modelo de datos de formulario se denominan objetos de modelo de datos. Un modelo de datos de formulario le permite:
+La integración de datos de [!DNL AEM Forms] permite configurar y conectar diferentes fuentes de datos con [!DNL AEM Forms]. Proporciona una interfaz de usuario intuitiva para crear un esquema de representación de datos unificado de entidades y servicios empresariales a través de fuentes de datos conectadas. La representación unificada se conoce como modelo de datos de formulario, una extensión del esquema JSON. Las entidades de un modelo de datos de formulario se denominan objetos de modelo de datos. Un modelo de datos de formulario le permite hacer lo siguiente:
 
 * acceder a los objetos, las propiedades y los servicios de modelo de datos desde las fuentes de datos conectadas;
 * crear objetos y propiedades personalizadas para el modelo de datos;
@@ -39,14 +39,14 @@ La integración de datos de [!DNL AEM Forms] permite configurar y conectar difer
 
 Una vez creado un modelo de datos de formulario, puede utilizarlo para lo siguiente:
 
-* Crear un Forms adaptable basado en un modelo de datos de formulario
-* Prerrellenar Forms adaptable desde las fuentes de datos configuradas
+* Crear formularios adaptables basados en un modelo de datos de formulario
+* Rellenar previamente los formularios adaptables desde fuentes de datos configuradas
 * invocar servicios u operaciones de fuentes de datos mediante las reglas de los formularios adaptables;
 * escribir los datos de los formularios adaptables enviados en fuentes de datos.
 
 ## Introducción a la integración de datos {#get-started-with-data-integration}
 
-El primer paso para implementar la integración de datos para enviar el formulario adaptable a una base de datos es identificar y configurar las fuentes de datos que almacenan la información que desea utilizar en el Forms adaptable. A continuación, se crea un modelo de datos de formulario que utiliza objetos, propiedades y servicios del modelo de datos de una o varias fuentes de datos. Puede crear un Forms adaptable basado en un modelo de datos de formulario en el que los campos de los formularios adaptables están enlazados a las propiedades de sus respectivas fuentes de datos.
+El primer paso para implementar la integración de datos para enviar el formulario adaptable a una base de datos es identificar y configurar las fuentes de datos que almacenan la información que desea utilizar en Formularios adaptables. A continuación, se crea un modelo de datos de formulario que utiliza los objetos, las propiedades y los servicios de modelo de datos de una o varias fuentes de datos. Puede crear Formularios adaptables basados en un modelo de datos de formulario en el que los campos de los formularios adaptables están enlazados a las propiedades de sus respectivas fuentes de datos.
 
 [!DNL AEM Forms] también permite crear un modelo de datos de formulario independiente de las fuentes de datos y asociar o enlazar objetos y propiedades de modelo de datos en el modelo de datos de formulario con la fuente de datos más adelante. Esto elimina la dependencia de las fuentes de datos mientras trabaja en un modelo de datos de formulario.
 

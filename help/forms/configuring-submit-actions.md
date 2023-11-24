@@ -1,11 +1,11 @@
 ---
-title: Configurar una acción de envío para un formulario adaptable?
+title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3428'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 93%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
-**Se aplica a**: ✔️ componentes de base de formulario adaptable. ❌ [Componentes principales de formularios adaptables](/help/forms/configure-submit-actions-core-components.md). El Adobe recomienda utilizar los componentes principales para [Añadir Forms adaptable a una página de AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [crear Forms adaptable independiente](creating-adaptive-form-core-components.md).
+**Se aplica a**: ✔️ los componentes de base de formulario adaptable. ❌ [Componentes principales del Formulario adaptable](/help/forms/configure-submit-actions-core-components.md). Adobe recomienda utilizar los componentes principales para [añadir Formularios adaptables a una página de AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) o para [crear Formularios adaptables independientes](creating-adaptive-form-core-components.md).
 
 Se activa una acción de envío cuando un usuario hace clic en el botón **[!UICONTROL Enviar]** en un formulario adaptable. Forms as a Cloud Service proporciona las siguientes acciones de envío listas para usar.
 
@@ -192,7 +192,7 @@ Para conectar AEM Forms al almacenamiento de la biblioteca de documentos de Micr
 1. Vaya a su instancia de **AEM Forms Author** > **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Una vez seleccionada la variable **[!UICONTROL Microsoft® SharePoint]**, se le redirigirá a **[!UICONTROL Explorador SharePoint]**.
 1. Seleccione un **Contenedor de configuración**. La configuración se almacena en el contenedor de configuración seleccionado.
-1. Clic **[!UICONTROL Crear]** > **[!UICONTROL Biblioteca de documentos de SharePoint]** en la lista desplegable. Aparecerá el asistente de configuración de SharePoint.
+1. Haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Biblioteca de documentos de SharePoint]** en la lista desplegable. Aparecerá el asistente de configuración de SharePoint.
 
 ![Configuración de SharePoint](/help/forms/assets/sharepoint_configuration.png)
 1. Especifique el **[!UICONTROL Título]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL URL de OAuth]**. Para obtener información sobre cómo recuperar el ID de cliente, el secreto de cliente o el ID de inquilino para la URL de OAuth, consulte [Documentación de Microsoft®](https://learn.microsoft.com/es-es/graph/auth-register-app-v2).
@@ -412,7 +412,7 @@ Puede configurar un formulario adaptable para ejecutar un flujo de nube de Micro
 
 El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar una acción y enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para utilizar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [conecte su instancia de Forms as a Cloud Service con Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
 
-Después de una configuración correcta, utilice el [Invocar un flujo de Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Enviar acción para enviar datos a un flujo de Power Automate.
+Después de una configuración correcta, utilice la acción de envío [Invocar un flujo de Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) para enviar datos a un flujo de Power Automate.
 
 ## Usar envío sincrónico o asincrónico {#use-synchronous-or-asynchronous-submission}
 

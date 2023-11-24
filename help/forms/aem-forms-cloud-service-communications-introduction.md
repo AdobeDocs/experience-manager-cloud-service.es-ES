@@ -1,21 +1,21 @@
 ---
-title: ¿Qué son las API de comunicación as a Cloud Service de Forms?
-description: Utilice las API de comunicación para firmar, certificar o proteger sus documentos, automatizar los procesos de generación de PDF y convertir los documentos de PDF a otro formato.
+title: ¿Qué son las API de comunicaciones de Forms as a Cloud Service?
+description: Utilice las API de comunicaciones para firmar, certificar o proteger sus documentos, automatizar los procesos de generación de documentos PDF y convertirlos a otro formato.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1446'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
-# Introducción a las comunicaciones as a Cloud Service AEM Forms {#frequently-asked-questions}
+# Introducción a Comunicaciones de AEM Forms as a Cloud Service {#frequently-asked-questions}
 
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 La funcionalidad de comunicaciones le ayuda a crear documentos estandarizados, personalizados y aprobados por la marca, como correspondencia comercial, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, facturas mensuales o kits de bienvenida.
@@ -131,7 +131,7 @@ Figura: Dividir un documento fuente basado en marcadores en varios documentos
 
 ### Convertir y validar documentos compatibles con PDF/A
 
-Puede utilizar las API de manipulación de documentos para convertir un documento PDF en un documento compatible con PDF/A y para determinar si un documento PDF es compatible con PDF/A. PDF/A es un formato de archivo diseñado para la preservación a largo plazo del contenido del documento. Las fuentes están incrustadas en el documento y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo.
+Puede utilizar las API de manipulación de documentos para convertir un documento PDF en un documento compatible con PDF/A y para determinar si un documento PDF es compatible con PDF/A. PDF/A es un formato de archivo elaborado para la conservación del contenido del documento a largo plazo. Las fuentes están incrustadas en el documento y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo.
 
 <!-- 
 
@@ -159,29 +159,29 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## Seguro de documento {#doc-assurance}
+## Seguro del documento {#doc-assurance}
 
-El servicio DocAssurance incluye las API Signature y Encyption:
+El servicio DocAssurance incluye las API de firma y codificación:
 
-### API de firma
+### API de firmas
 
-Las API de firma permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos. Dado que las características de seguridad se aplican al propio documento, éste permanece seguro y controlado durante todo su ciclo de vida. Un documento permanece seguro más allá del cortafuegos, cuando se descarga sin conexión y cuando se devuelve a su organización. Puede realizar las siguientes tareas mediante las API de firma:
+Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos. Dado que las características de seguridad se aplican al propio documento, este permanece seguro y controlado durante todo su ciclo de vida. Un documento permanece seguro más allá del cortafuegos mientras se descarga sin conexión y se envía nuevamente a su organización. Puede realizar las siguientes tareas mediante las API de firmas:
 
-* Agregue un campo de firma a un documento de PDF.
-* Firmar el campo de firma especificado en un documento de PDF.
-* Certificar un documento de PDF
+* Agregue un campo de firma a un documento PDF.
+* Firme el campo de firma especificado en un documento PDF.
+* Certificar un documento PDF
 
-### API de cifrado
+### Las API de cifrado
 
-Las API de cifrado permiten cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Un usuario autorizado puede descifrar el documento para obtener acceso al contenido. Si un documento de PDF está cifrado con una contraseña, el usuario debe especificar la contraseña de apertura para poder ver el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento de PDF está cifrado con un certificado, el usuario debe descifrar el documento de PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para cifrar el documento de PDF.
+Las API de cifrado permiten encriptar y desencriptar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento PDF está encriptado con una contraseña, el usuario debe escribir la contraseña para abrir y visualizar el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento PDF está encriptado con un certificado, el usuario debe desencriptar el documento PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para encriptarlo.
 
-Puede realizar estas tareas mediante las API de cifrado:
+Puede realizar estas tareas mediante las API de encriptado:
 
-* Cifrar un documento de PDF con una contraseña.
-* Quitar el cifrado basado en contraseña de un documento de PDF.
-* Recupera el tipo de seguridad aplicada a un documento de PDF.
+* Encriptar un documento PDF con una contraseña.
+* Quitar el encriptado de contraseña de un documento PDF.
+* Recupera el tipo de seguridad aplicada a un documento PDF.
 
-Tanto las API de firma como las API de cifrado son [API sincrónicas](#types-of-communications-apis-types).
+Tanto las API de firma como las de encriptado son [API sincrónicas](#types-of-communications-apis-types).
 
 
 ## Tipos de API de comunicaciones {#types}
@@ -304,4 +304,4 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 * [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
 * [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [Arquitectura as a Cloud Service de AEM Forms para Forms adaptable y API de comunicación](/help/forms/aem-forms-cloud-service-architecture.md)
+* [Arquitectura de AEM Forms as a Cloud Service para Formularios adaptables y API de comunicaciones](/help/forms/aem-forms-cloud-service-architecture.md)

@@ -1,6 +1,6 @@
 ---
-title: ¿Qué es la caché de formularios adaptables? AEM ¿y cómo almacenar en caché un formulario adaptable de la?
-description: La memoria caché de Forms adaptable está diseñada para Forms y documentos adaptables con el objetivo de reducir el tiempo necesario para procesar un formulario o documento adaptable.
+title: ¿Qué es la caché de formularios adaptables? ¿Cómo almacenar en caché un formulario adaptable de AEM?
+description: La memoria caché de Formularios adaptables está diseñada para Formularios y documentos adaptables con el objetivo de reducir el tiempo necesario para procesar un formulario o documento adaptable.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,14 @@ discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 source-git-commit: 5e02cf36112ce29cd3ebfd772623654328598bf2
 workflow-type: tm+mt
 source-wordcount: '984'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 
 # Configuración de la caché de los formularios adaptables {#configure-adaptive-forms-cache}
 
-Una caché es un mecanismo para acortar los tiempos de acceso a los datos, reducir la latencia y mejorar las velocidades de entrada y salida (E/S). La caché de Forms adaptable almacena únicamente el contenido del HTML y la estructura JSON de un formulario adaptable sin guardar los datos rellenados previamente. Esto contribuye a reducir el tiempo necesario para representar un formulario adaptable en el cliente. Está diseñada específicamente para formularios adaptables.
+Una caché es un mecanismo para acortar los tiempos de acceso a los datos, reducir la latencia y mejorar las velocidades de entrada y salida (E/S). La caché de los formularios adaptables almacena únicamente el contenido HTML y la estructura JSON de un formulario adaptable sin guardar los datos rellenados previamente. Esto contribuye a reducir el tiempo necesario para representar un formulario adaptable en el cliente. Está diseñada específicamente para formularios adaptables.
 
 ## Configuración de la caché de los formularios adaptables en instancias de autor y publicación {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
@@ -41,14 +41,14 @@ También puede configurar el almacenamiento en caché de un formulario adaptable
 
 ### Requisitos previos {#pre-requisites}
 
-* Habilite la [combinar o prerrellenar datos en el cliente](prepopulate-adaptive-form-fields.md#prefill-at-client) opción. Esto ayuda a combinar los datos únicos de cada instancia del formulario prerrellenado.
-* [Habilite un agente de vaciado para cada instancia de publicación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=es#invalidating-dispatcher-cache-from-a-publishing-instance). Esto le permitirá obtener un mejor rendimiento de almacenamiento en caché en los formularios adaptables. La URL predeterminada de los agentes de vaciado es `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
+* Habilite la opción [combinar o rellenar previamente los datos en el cliente](prepopulate-adaptive-form-fields.md#prefill-at-client). Esto ayuda a combinar los datos únicos de cada instancia del formulario rellenado previamente.
+* [Habilite el agente de vaciado para cada instancia de publicación](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=es#invalidating-dispatcher-cache-from-a-publishing-instance). Esto le permitirá obtener un mejor rendimiento de almacenamiento en caché en los formularios adaptables. La URL predeterminada de los agentes de vaciado es `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
 ### Consideraciones para almacenar los formularios adaptables en la caché en Dispatcher {#considerations}
 
 * Cuando utilice la caché de los formularios adaptables, utilice [!DNL Dispatcher] de AEM para almacenar en caché las bibliotecas de cliente (CSS y JavaScript) de un formulario adaptable.
 * Cuando desarrolle componentes personalizados, mantenga deshabilitada la caché de los formularios adaptables en el servidor utilizado para el desarrollo.
-* Las URL sin extensión no se almacenan en caché. Por ejemplo, las URL con el patrón `/content/forms/[folder-structure]/[form-name].html` se almacenan en la caché, y el almacenamiento en la caché ignora las URL con el patrón `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Por lo tanto, utilice direcciones URL con extensiones para aprovechar las ventajas del almacenamiento en caché.
+* Las URL sin extensión no se almacenan en caché. Por ejemplo, las URL con el patrón `/content/forms/[folder-structure]/[form-name].html` se almacenan en la caché, y el almacenamiento en la caché ignora las URL con el patrón `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Para esto, utilice una URL con extensiones para aprovechar las ventajas del almacenamiento en caché.
 * Consideraciones para los formularios adaptables localizados:
    * En el entorno de Cloud Service, utilice el formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar una versión localizada de un formulario adaptable en lugar de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
    * Deshabilite el uso de la configuración regional del explorador <!-- [Disable using browser locale](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) -->para URL con el formato `http://host:port/content/forms/af/<adaptivefName>.html`.
@@ -90,7 +90,7 @@ Siga los pasos que se indican a continuación para poder habilitar y configurar 
 
    * El formulario adaptable permanecerá en la caché hasta que no se publique una versión actualizada.
 
-   * Cuando se publica una versión más reciente de un recurso al que se hace referencia en un formulario adaptable, el formulario adaptable afectado se invalida automáticamente. Existen algunas excepciones a la hora de invalidar automáticamente los recursos a los que se hace referencia. Para obtener más información sobre las excepciones, consulte la [solución de problemas](#troubleshooting) sección.
+   * Cuando se publica una versión más reciente del recurso al que se hace referencia en un formulario adaptable, el formulario adaptable afectado se invalida automáticamente. Existen algunas excepciones a la hora de invalidar automáticamente los recursos a los que se hace referencia. Para obtener más información sobre las excepciones, consulte la sección [Solución de problemas](#troubleshooting).
 1. [Añada las siguientes reglas: dispatcher.any o un archivo de reglas personalizadas](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#specifying-the-documents-to-cache). Esto excluirá las URL que no admitan el almacenamiento en caché; por ejemplo, comunicaciones interactivas.
 
    ```JSON
@@ -129,11 +129,11 @@ El entorno de AEM está configurado para almacenar en caché los formularios ada
 
 ## Solución de problemas {#troubleshooting}
 
-### Algunos Forms adaptables que contienen imágenes o vídeos no se invalidan automáticamente en la caché de Dispatcher {#videos-or-images-not-auto-invalidated}
+### Algunos formularios adaptables que contienen imágenes o vídeos no se invalidan automáticamente en la caché de Dispatcher. {#videos-or-images-not-auto-invalidated}
 
 #### Problema {#issue1}
 
-Cuando selecciona y agrega imágenes o vídeos a un formulario adaptable mediante el explorador de recursos y se editan en el editor de recursos, estos recursos no se invalidan automáticamente en la caché de Dispatcher.
+Cuando selecciona y añade imágenes o vídeos a un formulario adaptable mediante el explorador de recursos y se editan en el editor de recursos, estos recursos no se invalidan automáticamente en la caché de Dispatcher.
 
 #### Solución {#Solution1}
 
@@ -143,11 +143,11 @@ Después de publicar las imágenes y el vídeo, cancele la publicación y publiq
 
 #### Problema {#issue2}
 
-Cuando se agrega un fragmento de contenido o de experiencia a un formulario adaptable y estos recursos se editan y publican de forma independiente, el Forms adaptable que los contiene no se invalida automáticamente de la caché de Dispatcher.
+Cuando se añade un fragmento de contenido o de experiencia a un formulario adaptable y estos recursos se editan y publican de forma independiente, los formularios adaptables que los contienen no se invalidan automáticamente de la caché de Dispatcher.
 
 #### Solución {#Solution2}
 
-Después de publicar un fragmento de contenido o un fragmento de experiencia actualizado, cancele la publicación del Forms adaptable que utiliza estos recursos y vuelva a publicarlo explícitamente.
+Después de publicar un fragmento de contenido o fragmento de experiencia actualizado, cancele la publicación del formulario adaptable que utiliza estos recursos y vuelva a publicarlo explícitamente.
 
 ### Solo se almacena en caché la primera instancia de un formulario adaptable{#only-first-insatnce-of-adptive-forms-is-cached}
 

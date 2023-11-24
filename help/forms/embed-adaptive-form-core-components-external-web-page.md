@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo se puede incrustar un formulario adaptable en una página web externa?
+title: Incrustar un formulario adaptable en una página web externa
 description: Aprenda a incrustar un formulario adaptable en una página web externa
 contentOwner: Khushwant Singh
 docset: CloudService
@@ -8,16 +8,16 @@ exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
 source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '982'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Incrustar formulario adaptable basado en componentes principales en una página web externa {#embed-adaptive-form-in-external-web-page}
+# Incrustar un formulario adaptable basado en componentes principales en una página web externa {#embed-adaptive-form-in-external-web-page}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Este artículo |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=es) |
 
 
 Puede [integrar formularios adaptables en una página de AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md) o en una página web alojada fuera de AEM. El formulario adaptable incrustado es completamente funcional, y los usuarios pueden rellenarlo y enviarlo sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
@@ -104,7 +104,7 @@ El formulario adaptable está incrustado en la página web. Observe lo siguiente
 * Las reglas de los formularios adaptables se conservarán y funcionarán perfectamente en el formulario incrustado.
 * La segmentación de experiencias y las pruebas A/B configuradas en el formulario adaptable original no funcionarán en el formulario incrustado.
 * Si Adobe Analytics está configurado en el formulario original, los datos de análisis se capturarán en el servidor de Adobe Analytics. Sin embargo, no estará disponible en el informe de análisis de Forms.
-* En Forms adaptable basado en componentes principales, las bibliotecas de cliente (ClientLibs) se incluyen y cargan junto con los componentes Encabezado y Pie de página de un formulario. Por lo tanto, cuando se incrusta un Forms adaptable basado en componentes principales en una página web, siempre incluye el encabezado y el pie de página del formulario.
+* En Formularios adaptables basados en componentes principales, las bibliotecas de cliente (ClientLibs) se incluyen y cargan junto con los componentes Encabezado y Pie de página de un formulario. Por lo tanto, cuando se incrusta un Formulario adaptable basado en componentes principales en una página web, siempre incluye el encabezado y el pie de página del formulario.
 
 ## Topología de ejemplo {#sample-topology}
 

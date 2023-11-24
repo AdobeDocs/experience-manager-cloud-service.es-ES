@@ -1,6 +1,6 @@
 ---
-title: ¿Cómo se envía una confirmación de envío de formulario por correo electrónico en AEM Forms?
-description: AEM Forms le permite configurar una acción de envío por correo electrónico que envía una confirmación a un usuario al enviar el formulario.
+title: Mandar una confirmación de envío de formulario por correo electrónico en AEM Forms
+description: AEM Forms permite configurar una confirmación de envío por correo electrónico a un usuario cuando se envía el formulario.
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
