@@ -3,9 +3,9 @@ title: Cómo habilitar Adobe Analytics para un formulario adaptable
 description: La automatización de la configuración de Experience Cloud ayuda a conectar Adobe Analytics a un formulario adaptable para realizar un seguimiento de las perspectivas sobre las interacciones y la participación de los visitantes.
 keywords: Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud, habilitar Adobe Analytics en Forms, Adobe Analytics en Formularios adaptables, integración de análisis de Forms, Forms y Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
-workflow-type: ht
-source-wordcount: '1593'
+source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
+workflow-type: tm+mt
+source-wordcount: '1576'
 ht-degree: 100%
 
 ---
@@ -160,16 +160,14 @@ Para conectar un formulario adaptable en una página de AEM Sites para habilitar
    ![estructura de superposición](/help/forms/assets/overlaystructure.png){width="100%"}
 
 1. Añadir un archivo de `customfooterlibs.html`.
-      
-       ```
-       &quot;
-       // customheaderlibs.html
-       &lt;sly data-sly-use.page=&quot;com.adobe.cq.wcm.core.components.models.Page&quot;>
-       &lt;sly data-sly-test=&quot;${page.data &amp;&amp; page.dataLayerClientlibIncluded}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.commons.v1.datalayer&#39;, async=true}&quot;>&lt;/sly>
-       &lt;/sly>
-       
-       ```
-   
+
+   ```
+   // customheaderlibs.html
+   <sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
+   <sly data-sly-test="${page.data && page.dataLayerClientlibIncluded}" data-sly-call="${clientlib.js @ categories='core.forms.components.commons.v1.datalayer', async=true}"></sly>
+   </sly>
+   ```
+
    El `customfooterlibs.html` se utiliza para JavaScript.
 
 1. [Ejecución de la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=es) para implementar los cambios.
