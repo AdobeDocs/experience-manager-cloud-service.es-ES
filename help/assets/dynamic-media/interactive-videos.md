@@ -102,7 +102,7 @@ Si utiliza un WCM (Administrador de contenido web) de terceros, debe integrar el
 >* Desea añadir interactividad al vídeo activando en Vistas rápidas.
 >* La implementación de Experience Manager hace lo siguiente *no* utilice un marco de integración de comercio electrónico para extraer datos de productos en Experience Manager desde cualquier solución de comercio electrónico, como IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
-Si la implementación de Experience Manager utiliza el comercio electrónico, puede omitir esta tarea y continuar con la siguiente.
+>Si la implementación de Experience Manager utiliza el comercio electrónico, puede omitir esta tarea y continuar con la siguiente.
 
 Comience identificando las variables dinámicas utilizadas por la implementación de Quickview existente para poder asignar miniaturas de productos a la vista rápida de productos correspondiente durante el proceso de creación de vídeo interactivo.
 
@@ -243,7 +243,7 @@ Si ya ha cargado el vídeo y los recursos de miniaturas, continúe en [Añada in
 
 >[!NOTE]
 >
-El formato de vídeo MXF aún no se admite para su uso con vídeos interactivos en Dynamic Media.
+>El formato de vídeo MXF aún no se admite para su uso con vídeos interactivos en Dynamic Media.
 
 Si ha cargado vídeos o imágenes incorrectos, o si desea eliminar vídeos o imágenes cargados que ya no necesita, consulte [Eliminar recursos](/help/assets/manage-digital-assets.md#delete-assets).
 
@@ -266,11 +266,11 @@ Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/e
 
 >[!NOTE]
 >
-Las herramientas de uso compartido de medios sociales de un vídeo interactivo no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, puede utilizar o crear ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
+>Las herramientas de uso compartido de medios sociales de un vídeo interactivo no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, puede utilizar o crear ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
 
 >[!NOTE]
 >
-El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+>El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
 
 Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la página, son compatibles durante la sesión de creación y edición actual.
 
@@ -493,7 +493,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
 
    >[!NOTE]
    >
-   Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El `.vtt` El archivo se guardará en `_VTT` carpeta en la raíz de **[!UICONTROL Assets]**. El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
+   >Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El `.vtt` El archivo se guardará en `_VTT` carpeta en la raíz de **[!UICONTROL Assets]**. El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
 
 1. Publique el vídeo interactivo. La publicación crea el código incrustado o la dirección URL que finalmente copia y pega en las experiencias del sitio web.
 
@@ -503,7 +503,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
 
    >[!NOTE]
    >
-   Para publicar un vídeo de ventas con vistas rápidas, asegúrese de publicar también cada uno de los recursos de imagen relacionados del vídeo desde su área de comercio, por separado.
+   >Para publicar un vídeo de ventas con vistas rápidas, asegúrese de publicar también cada uno de los recursos de imagen relacionados del vídeo desde su área de comercio, por separado.
 
    Después de agregar segmentos de cronología y publicar el vídeo interactivo, está listo para agregarlo a la página de aterrizaje del sitio web existente. Consulte [Integración de un vídeo interactivo con el sitio web](#integrating-an-interactive-video-with-your-website).
 
@@ -529,9 +529,9 @@ El código incrustado copiado se configura para un entorno interactivo, de modo 
 
 >[!NOTE]
 >
-En este punto, si ha agregado interactividad con solo páginas web con hipervínculos, habrá terminado.
+>En este punto, si ha agregado interactividad con solo páginas web con hipervínculos, habrá terminado.
 >
-Sin embargo, si ha agregado interactividad para almacenar en déclencheur una vista rápida, las miniaturas junto al vídeo interactivo son solo para fines de visualización; aún no se han integrado con las vistas rápidas existentes. En tal caso, debe integrar el vídeo interactivo con las vistas rápidas existentes en el sitio web.
+>Sin embargo, si ha agregado interactividad para almacenar en déclencheur una vista rápida, las miniaturas junto al vídeo interactivo son solo para fines de visualización; aún no se han integrado con las vistas rápidas existentes. En tal caso, debe integrar el vídeo interactivo con las vistas rápidas existentes en el sitio web.
 
 **Ejemplo**
 
@@ -574,7 +574,7 @@ La integración es tan sencilla como eliminar el código de incrustación de ví
 
 >[!NOTE]
 >
-Esta tarea solo se aplica si es un cliente independiente de Experience Manager Assets.
+>Esta tarea solo se aplica si es un cliente independiente de Experience Manager Assets.
 
 El último paso de este proceso es integrar su vídeo interactivo con una implementación de Quickview existente que se utilice en su sitio web. No hay ninguna solución para la integración que funcione para todos los casos. Cada implementación de Quickview es única. Por lo tanto, se necesita un enfoque específico que implique la asistencia de una persona de TI front-end.
 
@@ -657,27 +657,27 @@ El proceso de construir la URL de vista rápida es opuesto al proceso de identif
   <tbody>
   <tr>
     <td><p>SKU único, encontrado en la cadena de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td>SKU único, encontrado en la ruta URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td><p>SKU e ID de categoría en la cadena de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   </tbody>
 </table>

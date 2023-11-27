@@ -222,6 +222,7 @@ Si elimina la imagen que el Experience Manager utiliza para la miniatura reempla
    * Para eliminar un recurso, selecciónelo y seleccione **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, seleccione el icono Ajuste preestablecido y elija uno.
    * Para eliminar un conjunto de giros completo, vaya al conjunto de giros, selecciónelo y seleccione **[!UICONTROL Eliminar]**
+
    >[!NOTE]
    >
    >Puede editar las imágenes de un conjunto de giros navegando hasta el conjunto y seleccionando **[!UICONTROL Definir miembros]** en el carril izquierdo y, a continuación, seleccione el icono Lápiz en un recurso individual para abrir la ventana de edición.

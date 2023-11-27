@@ -316,6 +316,7 @@ Si una propiedad OSGi requiere valores diferentes para autor y para publicación
 * Separar `config.author` y `config.publish` Las carpetas OSGi deben usarse, tal como se describe en la sección [Sección Resolución de modo de ejecución](#runmode-resolution).
 * Existen dos opciones para crear los nombres de variables independientes que se deben utilizar:
    * la primera opción, que se recomienda: en todas las carpetas OSGi (como `config.author` y `config.publish`) declarado para definir valores diferentes, utilice el mismo nombre de variable. Por ejemplo
+
      `$[env:ENV_VAR_NAME;default=<value>]`, donde el valor predeterminado corresponde al valor predeterminado para ese nivel (autor o publicación). Al configurar la variable de entorno mediante [API de Cloud Manager](#cloud-manager-api-format-for-setting-properties) o a través de un cliente, diferencie entre los niveles utilizando el parámetro &quot;service&quot; como se describe en esta sección [Documentación de referencia del API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). El parámetro &quot;service&quot; enlazará el valor de la variable al nivel OSGi adecuado. Puede ser &quot;author&quot;, &quot;publish&quot; o &quot;preview&quot;.
    * la segunda opción, que es declarar distintas variables utilizando un prefijo como `author_<samevariablename>` y `publish_<samevariablename>`
 

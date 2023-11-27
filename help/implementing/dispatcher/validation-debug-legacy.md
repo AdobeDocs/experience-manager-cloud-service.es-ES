@@ -312,7 +312,7 @@ Los archivos incluidos deben tener el siguiente nombre:
 
 >[!TIP]
 >
-Para poder incluir más archivos de una manera mucho menos limitada, es posible que desee cambiar al modo de configuración flexible de Dispatcher. Consulte [Validación y depuración mediante las herramientas de Dispatcher](/help/implementing/dispatcher/validation-debug.md) para obtener más información sobre el modo flexible.
+>Para poder incluir más archivos de una manera mucho menos limitada, es posible que desee cambiar al modo de configuración flexible de Dispatcher. Consulte [Validación y depuración mediante las herramientas de Dispatcher](/help/implementing/dispatcher/validation-debug.md) para obtener más información sobre el modo flexible.
 
 También puede incluir la variable **predeterminado** versión de las reglas de reescritura, cuyo nombre es `conf.d/rewrites/default_rewrite.rules`.
 Tenga en cuenta que no hay una versión predeterminada de los archivos de variables.
@@ -351,7 +351,7 @@ Para evitar este error, copie y pegue la ruta de acceso desde el Explorador de W
 Esta fase comprueba la sintaxis de Apache iniciando Docker en una imagen. AEM Docker debe estar instalado localmente, pero tenga en cuenta que no es necesario para que se ejecute el programa de instalación de la aplicación de la red de distribución de datos de.
 
 >[!NOTE]
-Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito previo es necesario para ejecutar y depurar Dispatcher en un equipo local.
+>Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito previo es necesario para ejecutar y depurar Dispatcher en un equipo local.
 
 Esta fase también se puede ejecutar de forma independiente mediante `validator full -d out src/dispatcher`, que genera un directorio &quot;out&quot; necesario para el siguiente comando `bin/docker_run.sh out host.docker.internal:4503 8080`.
 

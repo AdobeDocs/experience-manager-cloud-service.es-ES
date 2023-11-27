@@ -266,6 +266,7 @@ Puede utilizar **[!UICONTROL Cronología]** con **[!UICONTROL Vista de tarjeta]*
 Cuando se usa **[!UICONTROL Vista de lista]**, una columna adicional para **[!UICONTROL Dynamic Media]** aparece el estado de publicación.
    * Una carpeta configurada para sincronizarse con Dynamic Media muestra el **[!UICONTROL Dynamic Media]** de forma predeterminada.
    * Una carpeta que es *no* configurado para sincronizarse con Dynamic Media no muestra la columna Dynamic Media.
+
       ![Vista de lista y cronología](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Solucionar problemas de publicación selectiva {#selective-publish-troubleshoot}

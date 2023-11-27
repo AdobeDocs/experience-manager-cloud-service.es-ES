@@ -123,7 +123,7 @@ Consulte la [Documentación de directrices para desarrolladores](/help/implement
 
 >[!NOTE]
 >
-El token de acceso de desarrollo local es válido durante un máximo de 24 horas tras las cuales debe regenerarse mediante el mismo método.
+>El token de acceso de desarrollo local es válido durante un máximo de 24 horas tras las cuales debe regenerarse mediante el mismo método.
 
 AEM AEM Los desarrolladores pueden utilizar este token para realizar llamadas desde su aplicación de prueba no-a un entorno as a Cloud Service de la. AEM Normalmente, el desarrollador utiliza este token con la aplicación que no es de la aplicación en su propio portátil, es decir, con la aplicación que no es de la misma aplicación. AEM Además, el entorno de as a Cloud no suele ser de producción.
 
@@ -152,7 +152,7 @@ Después de pulsar el botón, se genera un nuevo conjunto de credenciales. Puede
 
 >[!NOTE]
 >
-Después de hacer clic en **Actualizar credenciales del servicio** , las credenciales antiguas permanecen registradas hasta que caducan, pero solo el conjunto más reciente está disponible para verse desde Developer Console en un momento dado.
+>Después de hacer clic en **Actualizar credenciales del servicio** , las credenciales antiguas permanecen registradas hasta que caducan, pero solo el conjunto más reciente está disponible para verse desde Developer Console en un momento dado.
 
 ## Revocación de credenciales de servicio {#service-credentials-revocation}
 

@@ -434,7 +434,7 @@ Define REWRITE_LOG_LEVEL debug
 <tbody>
 <tr>
 <td>Fecha y hora</td>
-<td>[17/jul/2020]:23:48:16 +0000]</td>
+<td>[17/jul/2020]:23:48:16 +0000&rbrack;</td>
 </tr>
 <tr>
 <td>Nombre de pod</td>

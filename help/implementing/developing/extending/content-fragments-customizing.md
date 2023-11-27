@@ -61,6 +61,7 @@ Los fragmentos de contenido, basados en un modelo de fragmento de contenido, se 
 * Todo el contenido se almacena en `jcr:content/data` nodo del recurso:
 
    * Los datos del elemento se almacenan en el subnodo maestro:
+
      `jcr:content/data/master`
 
    * Las variaciones se almacenan en un subnodo que lleva el nombre de la variación: por ejemplo, `jcr:content/data/myvariation`

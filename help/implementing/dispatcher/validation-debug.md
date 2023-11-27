@@ -300,7 +300,7 @@ Durante una implementación de Cloud Manager, la variable `httpd -t` también se
 
 >[!NOTE]
 >
-Consulte la [Recarga y validación automáticas](#automatic-loading) para obtener una alternativa eficaz a la ejecución `validate.sh` después de cada modificación de la configuración.
+>Consulte la [Recarga y validación automáticas](#automatic-loading) para obtener una alternativa eficaz a la ejecución `validate.sh` después de cada modificación de la configuración.
 
 ### Fase 1 {#first-phase}
 
@@ -439,8 +439,8 @@ Esta fase comprueba la sintaxis de Apache iniciando Apache HTTPD en un contenedo
 
 >[!NOTE]
 >
-Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito es un requisito previo para ejecutar y depurar Dispatcher en un equipo local.
-Para Windows y macOS, Adobe recomienda utilizar Docker Desktop.
+>Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito es un requisito previo para ejecutar y depurar Dispatcher en un equipo local.
+>Para Windows y macOS, Adobe recomienda utilizar Docker Desktop.
 
 Esta fase también se puede ejecutar de forma independiente mediante `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -509,13 +509,13 @@ Los registros para entornos de nube se exponen a través del servicio de registr
 
 >[!NOTE]
 >
-AEM Para los entornos en los que se ha as a Cloud Service el recurso, la depuración es el nivel de detalle máximo. El nivel de registro de seguimiento no es compatible, por lo que debe evitar configurarlo cuando trabaje en entornos de nube.
+>AEM Para los entornos en los que se ha as a Cloud Service el recurso, la depuración es el nivel de detalle máximo. El nivel de registro de seguimiento no es compatible, por lo que debe evitar configurarlo cuando trabaje en entornos de nube.
 
 ### Recarga y validación automáticas {#automatic-reloading}
 
 >[!NOTE]
 >
-Debido a una limitación del sistema operativo Windows, esta función solo está disponible para usuarios de macOS y Linux®.
+>Debido a una limitación del sistema operativo Windows, esta función solo está disponible para usuarios de macOS y Linux®.
 
 En lugar de ejecutar la validación local (`validate.sh`) e iniciando el contenedor de docker (`docker_run.sh`), cada vez que se modifique la configuración, se puede ejecutar alternativamente el `docker_run_hot_reload.sh` script. La secuencia de comandos observa cualquier cambio en la configuración y la vuelve a cargar automáticamente y vuelve a ejecutar la validación. Con esta opción, puede ahorrar una cantidad de tiempo considerable durante la depuración.
 
@@ -620,7 +620,7 @@ Con la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager ge
 
    >[!NOTE]
    >
-   En el modo flexible, debe utilizar rutas relativas en lugar de rutas absolutas.
+   >En el modo flexible, debe utilizar rutas relativas en lugar de rutas absolutas.
 1. **Implementar en producción:**
    * Confirmar el archivo `opt-in/USE_SOURCES_DIRECTLY` a una rama de Git implementada por la canalización de producción en los entornos de ensayo y producción de la nube.
    * Utilice Cloud Manager para implementar en el ensayo.

@@ -22,5 +22,5 @@ La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.44 es el 
 
 ### Correcciones de errores {#bug-fixes-bpa}
 
-* 
+* &#x200B;
    * El transformador de contenido no pudo recuperar los resultados de BPA. Esto se ha corregido.

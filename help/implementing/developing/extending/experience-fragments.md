@@ -83,9 +83,11 @@ Para crear una plantilla de fragmento de experiencia que detecte el **Crear frag
 1. Ambas:
 
    1. El tipo de recurso de la plantilla (el nodo inicial) debe heredar de:
+
       `cq/experience-fragments/components/xfpage`
 
    1. Y el nombre de la plantilla debe comenzar por:
+
       `experience-fragments`
 Este patrón permite a los usuarios crear fragmentos de experiencias en /content/experience-fragments como `cq:allowedTemplates` de esta carpeta incluye todas las plantillas que tienen nombres que comienzan por `experience-fragment`. Los clientes pueden actualizar esta propiedad para incluir sus propios esquemas de nomenclatura o ubicaciones de plantillas.
 

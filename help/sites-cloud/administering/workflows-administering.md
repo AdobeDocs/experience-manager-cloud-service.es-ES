@@ -31,17 +31,21 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 1. **Flujos de trabajo en ejecución** muestra el número de flujos de trabajo en ejecución y su estado. por ejemplo, en las imágenes especificadas, se muestra el número de **Flujos de trabajo en ejecución** y el **Estado** de la instancia de AEM:
 
    * **Estado: correcto**
+
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Estado: incorrecto**
+
      ![estado-incorrecto](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. En **Detalles del estado** de instancias de flujo de trabajo, haga clic en **Detalles**, para mostrar el **número de instancias de flujos de trabajo en ejecución**, **instancias de flujo de trabajo completadas**, **instancias de flujo de trabajo anuladas**, **instancias de flujo de trabajo fallidas**, etc. por ejemplo, a continuación se muestran las imágenes determinadas que muestran **Detalles del estado** con:
 
    * **Detalles del estado: correcto**
+
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Detalles del estado: incorrecto**
+
      ![detalles-estado-incorrecto](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]

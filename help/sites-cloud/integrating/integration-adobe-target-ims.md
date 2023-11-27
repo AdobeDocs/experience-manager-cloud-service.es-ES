@@ -78,8 +78,10 @@ Abra Adobe Developer Console para crear un proyecto con Adobe Target que utiliza
 1. Se muestran todos los proyectos que tenga. Seleccione **Crear nuevo proyecto**. La ubicación y el uso dependerán de lo siguiente:
 
    * Si todavía no tiene ningún proyecto, **Crear nuevo proyecto** está en el centro, abajo.
+
      ![Creación de un nuevo proyecto: primer proyecto](assets/integration-target-ims-02.png)
    * Si ya tiene proyectos, estos se enumeran y **Crear nuevo proyecto** está en la parte superior derecha.
+
      ![Creación de un nuevo proyecto: varios proyectos](assets/integration-target-ims-03.png)
 
 

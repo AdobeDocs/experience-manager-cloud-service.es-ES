@@ -425,7 +425,7 @@ Este nodo contiene propiedades para la plantilla:
 
 * **Nombre**: `jcr:title`
 * **Nombre**: `status`
-   * ``**Tipo**: `String`
+   * &grave;&grave;**Tipo**: `String`
    * **Valor**: `draft`, `enabled` o `disabled`
 
 ### Estructura {#structure}
@@ -489,6 +489,7 @@ Las políticas de página permiten definir la variable [política de contenido](
    * Estableciendo la propiedad status en `jcr:content` nodo.
 
       * Por ejemplo, en:
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Defina la propiedad:
@@ -501,6 +502,7 @@ Las políticas de página permiten definir la variable [política de contenido](
 
    * [Defina las rutas de plantilla permitidas en la variable **Propiedades de página**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) de la página adecuada o de la página raíz de una subrama.
    * Establezca la propiedad:
+
      `cq:allowedTemplates`
 En el `jcr:content` de la rama requerida.
 

@@ -89,7 +89,7 @@ Los permisos se dividen en las siguientes categorías.
 
 >[!NOTE]
 >
-Para poder ver la información de control de acceso, el usuario que ha iniciado sesión en el CRXDE Lite debe tener derechos para leer las entradas ACL.
+>Para poder ver la información de control de acceso, el usuario que ha iniciado sesión en el CRXDE Lite debe tener derechos para leer las entradas ACL.
 
 ### Pestaña Replicación {#replication-tab}
 
@@ -190,9 +190,9 @@ Ahora puede adaptar el nodo a sus necesidades modificando propiedades o creando 
 
 >[!NOTE]
 >
-La mayoría de las operaciones de edición, incluidas **Crear nodo**, guarda todos los cambios en la memoria y solo los almacena en el repositorio al guardarlos (mediante el [**Botón Guardar todo**](#save-all-button)). Sin embargo, algunas operaciones, como mover, persisten automáticamente.
+>La mayoría de las operaciones de edición, incluidas **Crear nodo**, guarda todos los cambios en la memoria y solo los almacena en el repositorio al guardarlos (mediante el [**Botón Guardar todo**](#save-all-button)). Sin embargo, algunas operaciones, como mover, persisten automáticamente.
 >
-El repositorio también lleva a cabo la validación con respecto a si el tipo de nodo del nodo principal permite el nodo creado al guardar los cambios. Si recibe un mensaje de error al guardar un nodo, compruebe si la estructura de contenido es válida (por ejemplo, no puede crear un `nt:unstructured` nodo como elemento secundario de `nt:folder` node).
+>El repositorio también lleva a cabo la validación con respecto a si el tipo de nodo del nodo principal permite el nodo creado al guardar los cambios. Si recibe un mensaje de error al guardar un nodo, compruebe si la estructura de contenido es válida (por ejemplo, no puede crear un `nt:unstructured` nodo como elemento secundario de `nt:folder` node).
 
 ## Creación de una propiedad {#creating-a-property}
 

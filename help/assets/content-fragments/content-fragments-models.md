@@ -224,6 +224,7 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 * **[Referencia a fragmento](#fragment-reference-nested-fragments)** (fragmentos anidados)
    * Hace referencia a otros fragmentos, según los modelos específicos definidos.
    * Permite incluir o recuperar datos estructurados.
+
      >[!NOTE]
      >
      >Este método reviste especial interés en conjunción con la [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).

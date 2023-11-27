@@ -85,7 +85,7 @@ Realice las siguientes acciones para conectar su instancia de Forms as a Cloud S
 
    >[!NOTE]
    >
-   Cuando cree un formulario adaptable, especifique el nombre del contenedor en el campo **[!UICONTROL Contenedor de configuración]**.
+   >Cuando cree un formulario adaptable, especifique el nombre del contenedor en el campo **[!UICONTROL Contenedor de configuración]**.
 
 1. En la página de configuración, pulse **[!UICONTROL Crear]** para crear una configuración de [!DNL Microsoft®® Power Automate Flow Service] en AEM Forms.
 1. En la página **[!UICONTROL Configurar el servicio Dataverse para Microsoft® Power Automate]**, especifique el **[!UICONTROL ID del cliente]** (también denominado ID de aplicación), el **[!UICONTROL secreto del cliente]**, la **[!UICONTROL URL de OAuth]** y la **[!UICONTROL URL del entorno de Dynamics]**. Utilice el ID del cliente, el secreto del cliente, la URL de OAuth y la URL del entorno de Dynamics de la [Aplicación de Microsoft® Azure Active Directory](#ms-power-automate-application) creada en la sección anterior. Utilice la opción Puntos finales en la interfaz de usuario de la aplicación de Microsoft® Azure Active Directory para encontrar la URL de OAuth
@@ -101,7 +101,7 @@ Realice las siguientes acciones para conectar su instancia de Forms as a Cloud S
 
    >[!NOTE]
    >
-   Cuando cree un formulario adaptable, especifique el nombre del contenedor en el campo **[!UICONTROL Contenedor de configuración]**.
+   >Cuando cree un formulario adaptable, especifique el nombre del contenedor en el campo **[!UICONTROL Contenedor de configuración]**.
 
 1. En la página de configuración, pulse **[!UICONTROL Crear]** para crear una configuración de [!DNL Microsoft®® Power Automate Flow Service] en AEM Forms.
 1. En la página **[!UICONTROL Configurar Dataverse para Microsoft® Power Automate]**, especifique el **[!UICONTROL ID del cliente]** (también denominado ID de aplicación), el **[!UICONTROL Secreto del cliente]**, la **[!UICONTROL URL de OAuth]** y la **[!UICONTROL URL del entorno de Dynamics]**. Utilice el ID del cliente, el secreto del cliente, la URL de OAuth y el ID del entorno de Dynamics. Utilice la opción Puntos finales en la interfaz de usuario de la aplicación de Microsoft® Azure Active Directory para encontrar la URL de OAuth. Abra el enlace [Mis flujos](https://us.flow.microsoft.com) y pulse Mis flujos para usar el ID indicado en la URL como ID del entorno de Dynamics.
@@ -128,7 +128,7 @@ Tras [conectar su instancia de Forms as a Cloud Service con Microsoft® Power Au
 
 >[!NOTE]
 >
-Antes de enviar el formulario adaptable, asegúrese de que se añada el activador `When an HTTP Request is received` con el esquema JSON a continuación a su flujo de Power Automate.
+>Antes de enviar el formulario adaptable, asegúrese de que se añada el activador `When an HTTP Request is received` con el esquema JSON a continuación a su flujo de Power Automate.
 
 ```
         {

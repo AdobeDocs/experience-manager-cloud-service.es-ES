@@ -63,7 +63,7 @@ Hay disponible un modelo de datos de formulario de [!DNL Salesforce] de forma pr
 
 Para acceder al modelo de datos de formulario, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Integraciones de datos]**. La lista de carpetas disponibles incluye una carpeta con el título especificado para `DappTitle` al [generar el proyecto de arquetipo de AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Pulse el nombre de la carpeta, seleccione la opción **[!UICONTROL Modelo de datos de Salesforce]** y pulse el icono ![Editar](assets/edit.png) para ver el modelo de datos de formulario.
 
-Después de configurar el ](#configure-salesforce-cloud-service)servicio de configuración en la nube de [[!DNL Salesforce] , podrá integrar formularios adaptables con el modelo de datos predeterminado de [!DNL Salesforce].
+Después de configurar el [&#128279;](#configure-salesforce-cloud-service)servicio de configuración en la nube de [!DNL Salesforce] , podrá integrar formularios adaptables con el modelo de datos predeterminado de [!DNL Salesforce].
 
 ## Configurar el servicio en la nube de [!DNL Microsoft® Dynamics 365] {#configure-dynamics-cloud-service}
 
@@ -99,10 +99,10 @@ Hay disponible un modelo de datos de formulario de [!DNL Microsoft® Dynamics 36
 
 Para acceder al modelo de datos de formulario, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Integraciones de datos]**. La lista de carpetas disponibles incluye una carpeta con el título especificado para `DappTitle` al [generar el proyecto de arquetipo de AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Pulse el nombre de la carpeta, seleccione **[!UICONTROL Modelo de datos de Microsoft Dynamics 365]** y pulse el icono ![Editar](assets/edit.png) para ver el modelo de datos de formulario.
 
-Después de configurar el ](#configure-dynamics-cloud-service)servicio de configuración en la nube de [[!DNL Microsoft® Dynamics 365] , podrá integrar formularios adaptables con el modelo de datos predeterminado de [!DNL Microsoft® Dynamics 365].
+Después de configurar el [&#128279;](#configure-dynamics-cloud-service)servicio de configuración en la nube de [!DNL Microsoft® Dynamics 365] , podrá integrar formularios adaptables con el modelo de datos predeterminado de [!DNL Microsoft® Dynamics 365].
 
 >[!MORELIKETHIS]
 >
-* [Configuración de fuentes de datos para AEM Forms](/help/forms/configure-data-sources.md)
-* [Configuración del almacenamiento de Azure para AEM Forms](/help/forms/configure-azure-storage.md)
-[Añadir el portal de Forms a una página de AEM Sites](/help/forms/configure-forms-portal.md)
+>* [Configuración de fuentes de datos para AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configuración del almacenamiento de Azure para AEM Forms](/help/forms/configure-azure-storage.md)
+>[Añadir el portal de Forms a una página de AEM Sites](/help/forms/configure-forms-portal.md)

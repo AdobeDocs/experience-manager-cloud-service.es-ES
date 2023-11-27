@@ -89,6 +89,7 @@ Para configurar la asignación de metadatos mediante un nuevo formulario de meta
    1. Especificar `Project Name` en el **[!UICONTROL Etiqueta de campo]** field.
 
    1. Especificar `./jcr:content/metadata/wm:projectName` en el **[!UICONTROL Asignar a la propiedad]** field. Como guía, utilice la siguiente plantilla para definir las asignaciones de campos en Experience Manager Assets:
+
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Al configurar asignaciones en Workfront, ha asignado `wm:projectName` Campo de Experience Manager Assets a Proyecto > Nombre del campo de Workfront.

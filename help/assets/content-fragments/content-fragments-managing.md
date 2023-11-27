@@ -299,16 +299,16 @@ Además de las opciones estándar, [Cronología](/help/assets/manage-digital-ass
 
 >[!NOTE]
 >
-Los comentarios son lo siguiente:
+>Los comentarios son lo siguiente:
 >
-* De funcionalidad estándar para todos los recursos
-* Realizados en la cronología
-* Relacionados con el recurso de fragmento
+>* De funcionalidad estándar para todos los recursos
+>* Realizados en la cronología
+>* Relacionados con el recurso de fragmento
 >
-Las anotaciones (para fragmentos de contenido) son lo siguiente:
+>Las anotaciones (para fragmentos de contenido) son lo siguiente:
 >
-* Introducidas en el editor de fragmentos
-* Específicas para un segmento seleccionado de texto dentro del fragmento
+>* Introducidas en el editor de fragmentos
+>* Específicas para un segmento seleccionado de texto dentro del fragmento
 >
 
 Por ejemplo:
@@ -339,7 +339,7 @@ Se muestran una al lado de la otra, donde:
 
 >[!NOTE]
 >
-No se puede editar el contenido del fragmento al comparar fragmentos.
+>No se puede editar el contenido del fragmento al comparar fragmentos.
 
 ![Comparación de variaciones](assets/cfm-managing-06.png)
 
@@ -357,9 +357,9 @@ Puede volver a una versión específica del fragmento:
 
 >[!CAUTION]
 >
-Si el fragmento se basa en un modelo, debe asegurarse de que [el modelo se ha publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Si el fragmento se basa en un modelo, debe asegurarse de que [el modelo se ha publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
+>Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
 
 Los fragmentos de contenido deben publicarse para su uso en el entorno de publicación. Esto se realiza mediante la funcionalidad estándar de Recursos:
 
@@ -375,7 +375,7 @@ Además, cuando [publicar una página que use el fragmento](/help/sites-cloud/au
 
 >[!CAUTION]
 >
-Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
+>Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
 
 ## Eliminación de un fragmento {#deleting-a-fragment}
 
@@ -386,11 +386,11 @@ Para eliminar un fragmento:
 
    >[!NOTE]
    >
-   La acción **Eliminar** no se encuentra disponible como Acción rápida.
+   >La acción **Eliminar** no se encuentra disponible como Acción rápida.
 
 3. En la barra de herramientas, seleccione **Eliminar**.
 4. Confirme la acción **Eliminar**.
 
    >[!CAUTION]
    >
-   Si ya se hace referencia al fragmento en una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se elimina de cualquier página de contenido.
+   >Si ya se hace referencia al fragmento en una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se elimina de cualquier página de contenido.

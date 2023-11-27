@@ -32,6 +32,7 @@ Consulte el artículo [SPA AEM Edición de una externa dentro de un grupo de inf
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
+
      ![ejemplo de propiedad entrypoints](assets/asset-manifest-entrypoints.png)
 * La aplicación debe poder inicializarse en un `<div id="root"></div>` debajo del `body` Elemento. Si se espera un marcado diferente para que la aplicación cree una instancia, esto debe ajustarse en consecuencia en los scripts HTL del componente proxy que tenga un `sling:resourceSuperType="spa-project-core/components/remotepage`.
 

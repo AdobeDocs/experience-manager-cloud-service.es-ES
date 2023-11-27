@@ -58,7 +58,7 @@ Para obtener más información detallada, consulte:
 
 * [Buscar y filtrar en la consola Fragmentos de contenido](#filtering-fragments)
 
-* Una selección de los [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)métodos abreviados de teclado están disponibles para su uso en esta consola
+* Una selección de los [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)métodos abreviados de teclado están disponibles para su uso en esta consola
 
 >[!NOTE]
 >

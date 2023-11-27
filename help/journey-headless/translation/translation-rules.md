@@ -81,6 +81,7 @@ En el **Configuración de traducción** IU, hay varias opciones disponibles para
    1. Seleccionar **Añadir**.
    1. Repita estos pasos para todos los campos que debe traducir.
    1. Seleccione **Guardar**.
+
       ![Añadir propiedades](assets/add-property.png)
 
 Ya ha configurado las reglas de traducción.

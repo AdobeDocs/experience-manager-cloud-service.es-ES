@@ -70,7 +70,7 @@ Déclencheur el:
 
 Para redirigir una solicitud:
 
-`https://localhost:4503/welcome` ``
+`https://localhost:4503/welcome` &grave;&grave;
 
 A:
 
