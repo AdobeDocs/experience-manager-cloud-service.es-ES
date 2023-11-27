@@ -161,7 +161,7 @@ Para conectar un formulario adaptable en una página de AEM Sites para habilitar
 
 1. Añadir un archivo de `customfooterlibs.html`.
       
-      ```
+       ```
        &quot;
        // customheaderlibs.html
        &lt;sly data-sly-use.page=&quot;com.adobe.cq.wcm.core.components.models.Page&quot;>
