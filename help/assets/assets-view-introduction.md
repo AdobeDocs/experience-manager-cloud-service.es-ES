@@ -3,10 +3,10 @@ title: AEM ¿En qué le beneficia la vista de Assets en el caso de los?
 description: AEM Obtenga más información acerca de las ventajas clave de la vista de Assets en la. Adobe, con su experiencia en el empoderamiento de los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia el juego.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 76%
+ht-degree: 74%
 
 ---
 
@@ -95,7 +95,7 @@ Configure rápidamente una estructura de carpetas para su organización mediante
 
 ### Enfoque de búsqueda prioritaria para mejorar la eficacia {#search-first}
 
-Aproveche el potencial de la biblioteca de recursos digitales de su organización con la potente búsqueda con funciones de vanguardia. Puede despedirse de la molestia de examinar manualmente innumerables archivos y carpetas. Cualquier persona puede localizar al instante la imagen, el vídeo o el documento perfectos que necesita para crear campañas de marketing impresionantes, presentaciones cautivadoras y contenido atractivo. Nuestro primer motor de búsqueda le permite navegar sin esfuerzo por los tipos de recursos, los metadatos, las etiquetas inteligentes e incluso el contenido en sí sin saber la palabra clave exacta. Adopte el futuro de DAM con nuestro servicio Buscar primero y aproveche todo el potencial de la biblioteca de recursos digitales.
+Aproveche el potencial de la biblioteca de recursos digitales de su organización con la potente búsqueda con funciones de vanguardia. Puede despedirse de la molestia de navegar manualmente por un sinnúmero de archivos y carpetas. Cualquier persona puede localizar al instante la imagen, el vídeo o el documento perfectos que necesita para crear campañas de marketing impresionantes, presentaciones cautivadoras y contenido atractivo. Nuestro primer motor de búsqueda le permite navegar sin esfuerzo por los tipos de recursos, los metadatos, las etiquetas inteligentes e incluso el contenido en sí sin saber la palabra clave exacta. Adopte el futuro de DAM con nuestro servicio Buscar primero y aproveche todo el potencial de la biblioteca de recursos digitales.
 
 ![Buscar primero](assets/search-first.gif)
 
