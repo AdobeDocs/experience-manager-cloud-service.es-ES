@@ -6,9 +6,9 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 9d2f8794a061c44cab016ab049c8c8ac7b3b2784
+source-git-commit: 9e06c115af2a262859d39bcd5ee0016df2475591
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1825'
 ht-degree: 100%
 
 ---
@@ -329,13 +329,13 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form.
+`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form. -->
 
-### Edit reCAPTCHA service domain {#reCAPTCHA-service-domain}
+### Editar dominio de servicio reCAPTCHA {#reCAPTCHA-service-domain}
 
-reCAPTCHA service uses `https://www.recaptcha.net/` as the default domain. You can modify the settings to set `https://www.google.com/` or any custom domain name for loading, rendering, and validating the reCAPTCHA service.
+El servicio reCAPTCHA utiliza `https://www.recaptcha.net/` como dominio predeterminado. Puede modificar la configuración para establecer `https://www.google.com/` o cualquier nombre de dominio personalizado para cargar, procesar y validar el servicio reCAPTCHA.
 
-Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** configuration to specify `https://www.google.com/` or any other custom domain name. The following JSON file displays a sample:
+Establezca la propiedad **[!UICONTROL af.cloudservices.recaptcha.domain]** de la configuración **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]** para especificar `https://www.google.com/` o cualquier otro nombre de dominio personalizado. El siguiente archivo JSON muestra un ejemplo:
 
 ```json
 {
@@ -343,9 +343,9 @@ Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!U
 }
 ```
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
+Para establecer los valores de una configuración, [Generar configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
 
-## See Also {#see-also}
+## Vea también {#see-also}
 
 {{see-also}}
 
