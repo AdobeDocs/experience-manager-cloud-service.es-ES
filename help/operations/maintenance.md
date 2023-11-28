@@ -2,7 +2,7 @@
 title: Tareas de mantenimiento en AEM as a Cloud Service
 description: AEM Obtenga información acerca de las tareas de mantenimiento en los as a Cloud Service de la y cómo configurarlas.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 35223fba365cf55fca51eb8420b7217ec3e95ccc
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 62%
@@ -44,7 +44,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
   <tr>
     <td>Depuración de la versión</td>
     <td>Adobe</td>
-    <td>Para los entornos existentes (los creados antes del 1 de noviembre de 2023), la depuración está deshabilitada y no se habilitará en el futuro a menos que el cliente lo habilite explícitamente, momento en el cual también puede configurarla con valores personalizados.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Los nuevos entornos (los creados a partir del 1 de noviembre de 2023) tendrán la depuración habilitada de forma predeterminada con los valores siguientes, y los clientes podrán configurarla con valores personalizados.
+    <td>Para los entornos existentes (los creados antes del 4 de febrero de 2024), la depuración está deshabilitada y no se habilitará en el futuro a menos que el cliente lo habilite explícitamente, momento en el cual también puede configurarla con valores personalizados.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Los nuevos entornos (los creados a partir del 4 de febrero de 2024) tendrán la depuración habilitada de forma predeterminada con los valores siguientes, y los clientes podrán configurarla con valores personalizados.
      <ol>
        <li>Se eliminan las versiones con más de 30 días</li>
        <li>Se conservan las cinco versiones más recientes de los últimos 30 días</li>
@@ -56,7 +56,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
   <tr>
     <td>Purga del registro de auditoría</td>
     <td>Adobe</td>
-    <td>Para los entornos existentes (los creados antes del 1 de noviembre de 2023), la depuración está deshabilitada y no se habilitará en el futuro a menos que el cliente lo habilite explícitamente, momento en el cual también puede configurarla con valores personalizados.<br><br> <!-- See above for the two line breaks -->Los nuevos entornos (los creados a partir del 1 de noviembre de 2023) tendrán la depuración habilitada de forma predeterminada en <code>/content</code> del repositorio según el siguiente comportamiento:
+    <td>Para los entornos existentes (los creados antes del 4 de febrero de 2024), la depuración está deshabilitada y no se habilitará en el futuro a menos que el cliente lo habilite explícitamente, momento en el cual también puede configurarla con valores personalizados.<br><br> <!-- See above for the two line breaks -->Los nuevos entornos (los creados a partir del 4 de febrero de 2024) tendrán la depuración habilitada de forma predeterminada en <code>/content</code> del repositorio según el siguiente comportamiento:
      <ol>
        <li>Para la auditoría de replicación, se eliminan los registros de auditoría con más de tres días</li>
        <li>Para la auditoría de DAM (Assets), se eliminan los registros de auditoría con más de 30 días</li>
