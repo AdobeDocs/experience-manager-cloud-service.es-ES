@@ -2,7 +2,7 @@
 title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 24b0871e75280d0125c13b1605c0e8b5e555c8e7
 workflow-type: tm+mt
 source-wordcount: '3428'
 ht-degree: 95%
@@ -54,8 +54,6 @@ Puede configurar una acción de envío en la sección **[!UICONTROL Envío]** de
 >[!CAUTION]
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
-
-
 -->
 
 ## Enviar al punto final REST {#submit-to-rest-endpoint}
@@ -173,10 +171,12 @@ Antes de usar la acción de envío **[!UICONTROL Invocar un flujo de trabajo de 
 ## Enviar a SharePoint {#submit-to-sharedrive}
 
 La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® Sharepoint conectado.
-
-<!-- Using Submit to SharePoint, you can:
+<!--
+Using Submit to SharePoint, you can:
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) 
+
+-->
 
 ### Conectar un formulario adaptable a la biblioteca de documentos de SharePoint {#connect-af-sharepoint-doc-library}
 
@@ -194,7 +194,7 @@ Para conectar AEM Forms al almacenamiento de la biblioteca de documentos de Micr
 1. Seleccione un **Contenedor de configuración**. La configuración se almacena en el contenedor de configuración seleccionado.
 1. Haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Biblioteca de documentos de SharePoint]** en la lista desplegable. Aparecerá el asistente de configuración de SharePoint.
 
-![Configuración de SharePoint](/help/forms/assets/sharepoint_configuration.png)
+   ![Configuración de SharePoint](/help/forms/assets/sharepoint_configuration.png)
 1. Especifique el **[!UICONTROL Título]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL URL de OAuth]**. Para obtener información sobre cómo recuperar el ID de cliente, el secreto de cliente o el ID de inquilino para la URL de OAuth, consulte [Documentación de Microsoft®](https://learn.microsoft.com/es-es/graph/auth-register-app-v2).
    * Puede recuperar la variable `Client ID` y `Client Secret` de su aplicación desde el portal de Microsoft® Azure.
    * En el portal de Microsoft® Azure, añada el URI de redireccionamiento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Reemplace `[author-instance]` por la URL de su instancia de autor.
@@ -236,6 +236,7 @@ Cuando envía el formulario, los datos se guardan en el almacenamiento de la bib
 La estructura de carpetas para guardar datos es `/folder_name/form_name/year/month/date/submission_id/data`.
 
 <!--
+
 ### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
@@ -268,13 +269,6 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
-    >[!NOTE]
-    >
-    > In Microsoft® SharePoint List, the following column types are not supported:
-    > * image column
-    > * metadata column
-    > * person column
-    > * external data column
 
 #### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
 
@@ -287,14 +281,14 @@ You can use the created SharePoint List configuration in an Adaptive Form, to sa
 
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
-    >[!NOTE]
-    >
-    > In Microsoft® SharePoint List, the following column types are not supported:
-    > * image column
-    > * metadata column
-    > * person column
-    > * external data column
-    
+>[!NOTE]
+>
+> In Microsoft® SharePoint List, the following column types are not supported:
+> * image column
+> * metadata column
+> * person column
+> * external data column
+
 -->
 
 ## Enviar a OneDrive {#submit-to-onedrive}

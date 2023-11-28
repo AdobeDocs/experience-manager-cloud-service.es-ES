@@ -3,7 +3,7 @@ title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias
 keywords: Obtenga información sobre cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de sharepoint, conectar un formulario adaptable a una biblioteca de documentos de sharepoint, conectar un formulario adaptable al modelo de datos de formulario
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 24b0871e75280d0125c13b1605c0e8b5e555c8e7
 workflow-type: tm+mt
 source-wordcount: '3634'
 ht-degree: 94%
@@ -101,7 +101,6 @@ Para habilitar la opción [!UICONTROL Adjuntar documento de registro], consulte 
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 
-
 -->
 
 ## Enviar a SharePoint {#submit-to-sharedrive}
@@ -111,8 +110,7 @@ La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario 
 <!--
 Using Submit to SharePoint, you can:
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list)
--->
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
 
 ### Conectar un formulario adaptable a la biblioteca de documentos de SharePoint {#connect-af-sharepoint-doc-library}
 
