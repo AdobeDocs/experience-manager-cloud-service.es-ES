@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2791'
 ht-degree: 4%
 
 ---
@@ -166,7 +166,7 @@ Los niveles de registro son los siguientes:
 
 Los volcados de hilos en entornos de Cloud se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. AEM Mientras tanto, póngase en contacto con el servicio de asistencia técnica de la si son necesarios volcados de hilos para depurar un problema, especificando la ventana de tiempo exacta.
 
-## CRX/DE Lite y Developer Console {#crxde-lite-and-developer-console}
+## AEM CRX/DE Lite y consola para desarrolladores as a Cloud Service de {#crxde-lite-and-developer-console}
 
 ### Desarrollo local {#local-development}
 
@@ -176,15 +176,19 @@ Tenga en cuenta que en el desarrollo local (con el SDK), `/apps` y `/libs` se pu
 
 ### Herramientas de desarrollo de AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
+>[!NOTE]
+>AEM La consola de desarrollador as a Cloud Service no debe confundirse con el nombre similar [*Consola de Adobe Developer*](https://developer.adobe.com/developer-console/).
+>
+
 Los clientes pueden acceder a la lista CRXDE en el entorno de desarrollo del nivel de creación, pero no en la fase o en la producción. El repositorio inmutable (`/libs`, `/apps`) no se puede escribir en durante la ejecución, por lo que al intentar hacerlo se producirán errores.
 
-En su lugar, el Explorador de repositorios se puede iniciar desde Developer Console, proporcionando una vista de solo lectura del repositorio para todos los entornos en los niveles de creación, publicación y vista previa. Más información sobre el Explorador de repositorios [aquí](/help/implementing/developing/tools/repository-browser.md).
+AEM En su lugar, el Explorador de repositorios se puede iniciar desde la Consola de desarrollador as a Cloud Service de, lo que proporciona una vista de solo lectura del repositorio para todos los entornos en los niveles de creación, publicación y vista previa. Más información sobre el Explorador de repositorios [aquí](/help/implementing/developing/tools/repository-browser.md).
 
-AEM Hay disponible un conjunto de herramientas para depurar entornos de desarrollador as a Cloud Service en Developer Console para entornos de RDE, desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones URL del servicio de autor o publicación de la siguiente manera:
+AEM Hay disponible un conjunto de herramientas para depurar entornos de desarrollador as a Cloud Service AEM en la Consola de desarrollador as a Cloud Service de la aplicación de la aplicación de depuración de para entornos de RDE, desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones URL del servicio de autor o publicación de la siguiente manera:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Como método abreviado, se puede utilizar el siguiente comando CLI de Cloud Manager para iniciar la consola del desarrollador en función de un parámetro de entorno que se describe a continuación:
+AEM Como método abreviado, se puede utilizar el siguiente comando de CLI de Cloud Manager para iniciar la consola de desarrollador as a Cloud Service de en función de un parámetro de entorno que se describe a continuación:
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -202,11 +206,11 @@ Como se muestra a continuación, los desarrolladores pueden resolver las depende
 
 ![Consola de desarrollo 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-También resulta útil para la depuración, ya que Developer Console tiene un vínculo a la herramienta Explicar consulta:
+AEM También resulta útil para la depuración, ya que la Consola de desarrollador as a Cloud Service tiene un vínculo a la herramienta Explicar consulta:
 
 ![Consola de desarrollo 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Para los programas de producción, el acceso a Developer Console se define mediante la &quot;Cloud Manager: función de desarrollador&quot; en el Admin Console AEM, mientras que para los programas de zona protegida, Developer Console está disponible para cualquier usuario con un perfil de producto que le permite acceder a las versiones as a Cloud Service de los programas de la zona protegida. AEM AEM Para todos los programas, se necesita &quot;Cloud Manager: función de desarrollador&quot; para los volcados de estado y el explorador de repositorios y los usuarios también deben definirse en el perfil de producto de los usuarios o administradores de la en los servicios de autor y publicación para ver los datos de ambos servicios. Para obtener más información sobre la configuración de permisos de usuario, consulte [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+AEM Para los programas de producción, el acceso a la consola de desarrollador as a Cloud Service se define mediante la &quot;Cloud Manager: función de desarrollador&quot; en Adobe Admin Console AEM, mientras que para los programas de zona protegida, la consola de desarrollador as a Cloud Service AEM de la está disponible para cualquier usuario con un perfil de producto que le permita acceder a la as a Cloud Service. AEM AEM Para todos los programas, se necesita &quot;Cloud Manager: función de desarrollador&quot; para los volcados de estado y el explorador de repositorios y los usuarios también deben definirse en el perfil de producto de los usuarios o administradores de la en los servicios de autor y publicación para ver los datos de ambos servicios. Para obtener más información sobre la configuración de permisos de usuario, consulte [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Monitorización del rendimiento {#performance-monitoring}
 

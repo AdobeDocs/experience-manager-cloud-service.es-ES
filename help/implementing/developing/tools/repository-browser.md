@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: El explorador del repositorio proporciona una vista de solo lectura del repositorio para todos los entornos en los niveles de creación, publicación y vista previa.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '866'
 ht-degree: 2%
 
 ---
@@ -25,20 +25,20 @@ ht-degree: 2%
 
 El explorador del repositorio es una herramienta para desarrolladores que proporciona una vista de solo lectura del repositorio para todos los entornos en los niveles de creación, publicación y vista previa. Está diseñado para facilitar la visualización de la estructura de contenido y facilitar la visualización o depuración del contenido.
 
-Se puede acceder a ella desde Developer Console y se puede utilizar para examinar el repositorio de una instancia de autor o publicación para un entorno seleccionado.
+Accesible desde el [AEM Consola de desarrollador as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), se puede utilizar para examinar el repositorio de una instancia de autor o publicación para un entorno seleccionado.
 
 ### Requisitos previos de acceso {#access-prerequisites}
 
-Se deben cumplir las siguientes condiciones para acceder a Developer Console o al explorador del repositorio
+AEM Se deben cumplir las siguientes condiciones para acceder a la Consola de desarrollador as a Cloud Service o al Explorador de repositorios de la aplicación
 
-Para acceder a Developer Console:
+AEM Para acceder a la consola de desarrollador as a Cloud Service de la:
 
-* Para los programas de producción, los usuarios deben tener **Cloud Manager: función de desarrollador** en el Admin Console
+* Para los programas de producción, los usuarios deben tener **Cloud Manager: función de desarrollador** en Adobe Admin Console
 * AEM Para los programas de zonas protegidas, está disponible para cualquier usuario con un perfil de producto que les permita acceder a las zonas as a Cloud Service de la.
 
 Para acceder al Explorador de repositorios:
 
-* Los usuarios deben tener el **Cloud Manager: Desarrollador** Función en el Admin Console para ver instancias de autor y publicación.
+* Los usuarios deben tener el **Cloud Manager: Desarrollador** AEM Función en la consola de desarrollador as a Cloud Service de la para ver instancias de autor y publicación.
 * AEM Además, para el autor, los usuarios con el Perfil de producto de usuarios de la aplicación pueden ver el explorador del repositorio con un acceso de lectura mínimo; los permisos del usuario se respetan al examinar el repositorio. AEM Los usuarios con el Perfil de producto de los administradores de la pueden ver el explorador del repositorio con acceso de lectura completo.
 
 Para obtener más información sobre la configuración de permisos de usuario, consulte la [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
