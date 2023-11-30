@@ -3,10 +3,10 @@ title: Obtenga información sobre cómo buscar y descubrir recursos en [!DNL Ass
 description: Obtenga información sobre cómo buscar y descubrir recursos en la vista de AEM Assets. La potente funcionalidad de búsqueda le permite descubrir rápidamente el recurso adecuado y ayudarle a mejorar la velocidad del contenido.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 90%
+source-wordcount: '1321'
+ht-degree: 73%
 
 ---
 
@@ -141,6 +141,67 @@ What about temporarily hiding an asset (suspending search on it) from the search
 
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
+
+## Trabajar con los resultados de búsqueda {#work-with-search-results}
+
+Puede seleccionar los recursos que se muestran en los resultados de búsqueda y realizar las acciones siguientes:
+
+* **Detalles**: ver y editar las propiedades del recurso.
+
+* **Añadir a la colección**: añadir el recurso seleccionado a una colección.
+
+* **Descargar**: descargar un recurso.
+
+* **Eliminar**: eliminar un recurso.
+
+* **Copiar**: copiar un recurso en una ubicación de carpeta diferente.
+
+* **Mover**: mover un recurso a una ubicación de carpeta diferente.
+
+* **Cambiar nombre**: cambiar el nombre de un recurso.
+
+* **Asignar tareas**: asignar tareas a los usuarios de un recurso.
+
+* **Compartir vínculo**: [compartir vínculos](share-links-for-assets-view.md) para un recurso con otros usuarios para que puedan acceder a él y descargarlo.
+
+* **Ver**: [monitorizar las operaciones](manage-notifications-assets-view.md) realizadas en un recurso.
+
+* **Mostrar ubicación del archivo**: ir a la ubicación de la carpeta de recursos.
+
+* **Fijar en Acceso rápido**: [fijar un recurso](my-workspace-assets-view.md) para un acceso más rápido cuando lo necesite más tarde. Todos los elementos fijados se muestran en la sección **Acceso rápido** de Mi espacio de trabajo.
+
+## Configurar la primera página de inicio de búsqueda {#configuring-search-first-homepage}
+
+La primera página de inicio de búsqueda le permite navegar por varios archivos y carpetas al instante. Permite navegar sin esfuerzo por los tipos de recursos, los metadatos, las etiquetas inteligentes e incluso el propio contenido sin saber la palabra clave exacta. [!DNL Assets view] le permite configurar su página de inicio controlando lo que debería aparecer al iniciar sesión en [!DNL Assets view].
+
+Para configurar la primera página de inicio de búsqueda, ejecute los pasos a continuación:
+
+1. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración general]**.
+1. Seleccionar **[!UICONTROL Buscar primero]**. Además, abre la configuración relacionada con la búsqueda primero. Puede establecer [alineación](#setting-alignment-search-bar) o [establecer imagen de fondo y logotipo](#setting-background-image-and-logo) de su página de inicio.
+
+### Establecer la alineación de la barra de búsqueda {#setting-alignment-search-bar}
+
+[!DNL Assets view] permite cambiar la alineación de la barra de búsqueda. Puede hacer que la barra de búsqueda aparezca en el centro o en la parte superior. Seleccione la alineación adecuada y haga clic en **[!UICONTROL Guardar]**.
+
+![Buscar primera alineación de página principal](assets/search-first-alignment.png)
+
+### Estableciendo imagen de fondo y logotipo de la página principal {#setting-background-image-and-logo}
+
+Puede agregar el logotipo de la marca y la imagen de fondo a la primera página de inicio de búsqueda. Siga estos pasos:
+
+1. Vaya a **[!UICONTROL Imagen de fondo y logotipo]** sección debajo de **[!UICONTROL Homepage]**.
+1. Clic **[!UICONTROL Reemplazar]** para examinar imágenes de un repositorio de recursos existente.
+1. Haga clic en **[!UICONTROL Guardar]**. [Previsualizar](#preview-configured-homepage) los cambios para revisar las modificaciones.
+
+### Previsualizar página principal configurada {#preview-configured-homepage}
+
+Puede obtener una vista previa para comprobar el diseño y el formato de la primera página de inicio de búsqueda. Uso de **[!UICONTROL Previsualizar]**, puede corregir el diseño o realizar modificaciones según sea necesario. Para obtener una vista previa de la página principal configurada, ejecute los pasos siguientes:
+
+1. Clic **[!UICONTROL Configuración general]** y seleccione **[!UICONTROL Buscar primero]**.
+1. Vaya a **[!UICONTROL Personalizar la primera página de inicio de búsqueda]** y haga clic en **[!UICONTROL Previsualizar]**. Alternar entre **[!UICONTROL Tema oscuro]** para obtener una vista previa de la página principal en un tema oscuro o claro.
+1. Clic **[!UICONTROL Cerrar]** para cerrar la pantalla de vista previa.
+
+   ![Buscar la primera previsualización de página principal](assets/search-first-preview.gif)
 
 ## Pasos siguientes {#next-steps}
 

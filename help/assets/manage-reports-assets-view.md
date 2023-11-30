@@ -2,10 +2,10 @@
 title: Administración de informes en la vista Recursos
 description: Acceda a los datos de la sección de informes de la vista Recursos para evaluar el uso de productos y funciones, y obtener información sobre las métricas de éxito clave.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="assets_reports"
 >title="Informes"
->abstract="La creación de informes de recursos proporcionan a los administradores visibilidad de la actividad del entorno de la vista Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto. Todos los usuarios asignados al Perfil de producto de los administradores pueden acceder al panel de Insights o crear informes definidos por el usuario."
+>abstract="La creación de informes de recursos proporciona visibilidad a los administradores de la actividad del entorno de la vista Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto. Todos los usuarios asignados al Perfil de producto de los administradores pueden acceder al panel de Insights o crear informes definidos por el usuario."
 
 La creación de informes de recursos proporciona visibilidad a los administradores de la actividad del entorno de la vista Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto.
 
@@ -26,13 +26,23 @@ Todas las personas asignadas al perfil de producto Administradores de la vista R
 
 La vista Recursos le permite ver datos en tiempo real de su entorno de la vista Recursos con el tablero de Insights. Puede ver las métricas de eventos en tiempo real durante los últimos 30 días o 12 meses.
 
-![Opciones de la barra de herramientas al seleccionar un recurso](assets/assets-essentials-live-statistics.png)
+<!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
 
 Haga clic en **[!UICONTROL Insights]** en el panel de navegación izquierdo para ver los siguientes gráficos generados automáticamente:
+
+![Perspectivas](assets/insights.png)
 
 * **Descargas**: el número de archivos descargados del entorno de la vista Recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
 
 * **Cargas**: el número de archivos cargados en el entorno de la vista Recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
+
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+
+* **Uso de almacenamiento**: el uso del almacenamiento, en bytes, para el entorno de vista de recursos representado mediante un gráfico de barras.
+
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+
+<!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Búsquedas principales**: vea los términos más buscados junto con el número de veces que se buscan en el entorno de vista Recursos en los últimos 30 días o 12 meses representados en formato tabular.
 
