@@ -2,10 +2,10 @@
 title: Modelos de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en la creación de fragmentos de contenido y cómo crear fragmentos de contenido con contenido estructurado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2931'
-ht-degree: 90%
+source-wordcount: '3005'
+ht-degree: 88%
 
 ---
 
@@ -150,7 +150,7 @@ Muchas propiedades se explican por sí mismas; para otras, a continuación se pr
   >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
 
 * **Representar como**
-Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esta propiedad permite definir si el autor ve una sola instancia del campo o si se le permite crear varias instancias.
+Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esta propiedad permite definir si el autor ve una sola instancia del campo o si se le permite crear varias instancias. Cuándo **Campo múltiple** se utiliza. puede definir el número mínimo y máximo de elementos: consulte [Validación](#validation) para obtener más información.
 
 * **Etiqueta de campo**
 Introducción de una **Etiqueta de campo** generará automáticamente un **Nombre de propiedad**, que se puede actualizar de forma manual si es necesario.
@@ -212,6 +212,17 @@ Varios tipos de datos ahora incluyen la posibilidad de definir los requisitos de
    * Solo se puede hacer referencia a las imágenes con un intervalo predefinido de anchura o altura (en píxeles).
 * **Referencia a fragmento**
    * Pruebe un modelo de fragmento de contenido específico.
+* **Número mínimo de elementos** / **Número máximo de elementos**
+
+  Campos que se han definido como **Campo múltiple** (configurado con **Procesar como**) tiene las siguientes opciones:
+
+   * **Número mín. de elementos**
+   * **Cantidad máx. de elementos**
+
+  Estos se validan:
+
+   * El valor máximo se valida en [Editor de fragmentos de contenido original](/help/assets/content-fragments/content-fragments-variations.md).
+   * Ambos se validan en [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Uso de referencias para formar contenido anidado {#using-references-to-form-nested-content}
 
@@ -224,7 +235,6 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 * **[Referencia a fragmento](#fragment-reference-nested-fragments)** (fragmentos anidados)
    * Hace referencia a otros fragmentos, según los modelos específicos definidos.
    * Permite incluir o recuperar datos estructurados.
-
      >[!NOTE]
      >
      >Este método reviste especial interés en conjunción con la [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).

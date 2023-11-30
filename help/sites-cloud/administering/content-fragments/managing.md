@@ -4,10 +4,10 @@ description: AEM Obtenga información sobre cómo administrar los fragmentos de 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 52%
+source-wordcount: '2622'
+ht-degree: 51%
 
 ---
 
@@ -58,7 +58,7 @@ Para obtener más información detallada, consulte:
 
 * [Buscar y filtrar en la consola Fragmentos de contenido](#filtering-fragments)
 
-* Una selección de los [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)métodos abreviados de teclado están disponibles para su uso en esta consola
+* Una selección de los [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)métodos abreviados de teclado están disponibles para su uso en esta consola
 
 >[!NOTE]
 >
@@ -143,10 +143,7 @@ Al seleccionar un fragmento específico, se abre una barra de herramientas centr
 * **[Mover](/help/assets/manage-digital-assets.md)**
 * **[Cambiar nombre](/help/assets/manage-digital-assets.md)**
 * **[Eliminar](#deleting-a-fragment)**
-
-<!--
 * **[Replace](#find-and-replace)**
--->
 
 >[!NOTE]
 >
@@ -369,13 +366,22 @@ Cuando se abra el cuadro de diálogo correspondiente, puede seleccionar el servi
 >
 >Si ya se hace referencia al fragmento desde otro fragmento o desde una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar.
 
-<!--
-## Find and Replace {#find-and-replace}
+## Buscar y reemplazar {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+El **Reemplazar** La acción está disponible (en la barra de herramientas superior) para buscar y reemplazar el texto especificado en los fragmentos de contenido seleccionados.
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![Buscar y reemplazar](assets/cf-managing-find-replace.png)
+
+Antes del reemplazo, se comprueban los criterios de validación y se le informa de cualquier conflicto, lo que le permite cambiar la cadena de reemplazo o reemplazar únicamente las instancias validadas.
+
+>[!NOTE]
+>
+>La acción de buscar y reemplazar solo se puede realizar en un máximo de 20 fragmentos de contenido seleccionados (a la vez).
+>
+>Si selecciona más de 20 fragmentos de contenido, verá el mensaje **No se puede encontrar y reemplazar**.
+
+![Confirmar reemplazo](assets/cf-managing-confirm-replace.png)
+
 
 ## Eliminación de un fragmento {#deleting-a-fragment}
 

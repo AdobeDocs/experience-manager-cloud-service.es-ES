@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo crear contenido para los fragmento
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2267'
 ht-degree: 4%
 
 ---
@@ -59,6 +59,10 @@ Cuando abra el Editor de fragmentos de contenido por primera vez, verá cuatro �
 * panel central: muestra los campos y el contenido reales de la variación seleccionada
    * le permite editar el contenido
    * if **Marcador de ficha** Los campos de se definen dentro del modelo que se muestra aquí y pueden utilizarse para navegar; se presentarán horizontalmente o como una lista desplegable.
+
+  >[!NOTE]
+  >
+  >Según las definiciones del modelo subyacente, los campos pueden estar sujetos a ciertos tipos de [Validación](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ![Editor de fragmentos de contenido: información general](assets/cf-authoring-overview.png)
 
