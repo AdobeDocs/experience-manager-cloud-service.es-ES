@@ -3,10 +3,10 @@ title: Obtenga información sobre cómo buscar y descubrir recursos en [!DNL Ass
 description: Obtenga información sobre cómo buscar y descubrir recursos en la vista de AEM Assets. La potente funcionalidad de búsqueda le permite descubrir rápidamente el recurso adecuado y ayudarle a mejorar la velocidad del contenido.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 73%
+source-wordcount: '1314'
+ht-degree: 74%
 
 ---
 
@@ -172,7 +172,7 @@ Puede seleccionar los recursos que se muestran en los resultados de búsqueda y 
 
 ## Configurar la primera página de inicio de búsqueda {#configuring-search-first-homepage}
 
-La primera página de inicio de búsqueda le permite navegar por varios archivos y carpetas al instante. Permite navegar sin esfuerzo por los tipos de recursos, los metadatos, las etiquetas inteligentes e incluso el propio contenido sin saber la palabra clave exacta. [!DNL Assets view] le permite configurar su página de inicio controlando lo que debería aparecer al iniciar sesión en [!DNL Assets view].
+Experience Manager Assets le permite seleccionar la página de aterrizaje predeterminada para su organización. Al utilizar Buscar primero como página principal, también tiene opciones para adaptar la marca de la página configurando las imágenes de fondo y del logotipo para que coincidan con su marca.
 
 Para configurar la primera página de inicio de búsqueda, ejecute los pasos a continuación:
 

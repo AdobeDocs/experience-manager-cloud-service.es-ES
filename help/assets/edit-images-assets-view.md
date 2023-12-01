@@ -3,10 +3,10 @@ title: Edición de imágenes
 description: Edite imágenes mediante opciones que se sirven de [!DNL Adobe Photoshop Express] y guarde imágenes actualizadas como versiones.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 72%
+source-wordcount: '1171'
+ht-degree: 71%
 
 ---
 
@@ -82,12 +82,12 @@ Puede convertir rápidamente una imagen JPEG a un formato PNG mediante Adobe Exp
 
 ## Edición de imágenes con el editor incrustado de Adobe Express {#edit-using-embedded-editor}
 
-[!DNL Assets view] proporciona una edición completa de las imágenes directamente desde el repositorio de recursos. El editor integrado permite editar una imagen de forma fácil e intuitiva mediante [!DNL Adobe Express]. Acelera la reutilización de los recursos mediante el uso de plantillas o la modificación de los recursos existentes. Puede utilizar elementos predefinidos para que su recurso tenga un aspecto impresionante o realizar acciones rápidas para editar la imagen con solo unos clics.
+Los usuarios con acceso a Express ahora disponen de herramientas integradas de edición y creación de imágenes desde Adobe Express y Adobe Firefly disponibles directamente en AEM Assets para mejorar la reutilización del contenido y acelerar la velocidad de contenido. También puede utilizar elementos predefinidos para que su recurso tenga un aspecto impresionante o realizar acciones rápidas para editar la imagen con solo unos clics.
 
 Para editar imágenes con [!DNL Adobe Express] editor incrustado, siga los pasos a continuación:
 
 1. Seleccione una imagen de su [!DNL Experience Manager] Repositorio de recursos.
-1. Clic **[!UICONTROL Abrir en Adobe Express]**. [!DNL Adobe Express] aparece la pantalla.
+1. Clic **[!UICONTROL Abrir en Adobe Express]**.
 
    ![editor incrustado de Adobe Express](assets/embedded-editor.png)
 
@@ -95,20 +95,20 @@ Para editar imágenes con [!DNL Adobe Express] editor incrustado, siga los pasos
 
 1. Una vez completada la edición de imágenes, puede descargar un recurso como nuevo o guardarlo como una nueva versión.
 
-## Crear nuevo recurso con el Adobe Express {#create-new-embedded-editor}
+## Creación de nuevos recursos mediante el Adobe Express {#create-new-embedded-editor}
 
-[!DNL Assets view] proporciona funcionalidad para crear una nueva plantilla desde cero mediante [!DNL Adobe Express] editor incrustado. Para crear un nuevo recurso con [!DNL Adobe Expresss], ejecute los pasos siguientes:
+[!DNL Assets view] proporciona funcionalidad para crear una nueva plantilla desde cero mediante [!DNL Adobe Express] editor incrustado. Para crear un nuevo recurso con [!DNL Adobe Express], ejecute los pasos siguientes:
 
-1. Vaya a **[!UICONTROL Mi espacio de trabajo]** y haga clic en **[!UICONTROL Crear]**. [!DNL Adobe Express] el lienzo en blanco se muestra dentro de [!DNL Assets view] interfaz de usuario.
+1. Vaya a **[!UICONTROL Mi espacio de trabajo]** y haga clic en **[!UICONTROL Crear]** dentro del titular del Adobe Express que se muestra encima de la etiqueta [!UICONTROL Acceso rápido] sección. [!DNL Adobe Express] el lienzo en blanco se muestra dentro de [!DNL Assets view] interfaz de usuario.
 1. Cree su contenido con [Plantillas](https://helpx.adobe.com/in/express/using/work-with-templates.html). En caso contrario, vaya a **[!UICONTROL Sus cosas]** para modificar contenido existente.
 1. Una vez finalizada la edición, haga clic en **[!UICONTROL Guardar como nuevo recurso]**.
-1. Especifique la ruta de destino del recurso creado.
+1. Especifique la ruta de destino del recurso creado y haga clic en **[!UICONTROL Guardar]**.
 
 >[!NOTE]
 >
->* Solo puede modificar `JPEG` y `PNG` formatos.
+>* Solo puede modificar imágenes de `JPEG` y `PNG` tipos de formato.
 >* El tamaño del recurso debe ser inferior a 14 MB.
->* Puede guardar una imagen como `PDF`, `JPEG`, o `PNG` formatos.
+>* Puede guardar una imagen en `PDF`, `JPEG`, o `PNG` formatos.
 
 ## Edición de imágenes mediante [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
