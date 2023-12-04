@@ -2,10 +2,10 @@
 title: ¿Cómo puedo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes principales?
 description: Aprenda a agregar nuevas configuraciones regionales para un formulario adaptable.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 22%
+source-wordcount: '1335'
+ht-degree: 18%
 
 ---
 
@@ -13,10 +13,12 @@ ht-degree: 22%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| Componentes de base | [Haga clic aquí](supporting-new-language-localization.md) |
+| Componentes básicos | [Haga clic aquí](supporting-new-language-localization.md) |
 | Componentes principales | Este artículo |
 
-AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi (hi_IN). También puede presentar Forms adaptable en un idioma de derecha a izquierda (RTL) como árabe, persa y urdu si agrega estas configuraciones regionales.
+<span class="preview"> La función de soporte de idioma de derecha a izquierda está disponible en el programa para usuarios pioneros. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad. </span>
+
+AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi(hi_IN). También puede presentar Forms adaptable en un idioma de derecha a izquierda (RTL) como árabe, persa y urdu si agrega estas configuraciones regionales.
 
 ## ¿Cómo se selecciona la configuración regional para un formulario adaptable?
 
@@ -100,7 +102,7 @@ AEM Forms proporciona una biblioteca de cliente de ejemplo para ayudarle a agreg
 
 ### 4. Cree un archivo específico de la configuración regional {#locale-specific-file}
 
-1. Navegue hasta `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
+1. Vaya a `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Busque el [Archivo .json de la configuración regional en inglés en GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), que contiene el último conjunto de cadenas predeterminadas incluidas en el producto.
 1. Cree un archivo .json para la configuración regional específica.
 1. En el archivo .json recién creado, refleje la estructura del archivo de configuración regional en inglés.
@@ -171,7 +173,7 @@ Realice los siguientes pasos para previsualizar un formulario adaptable con la c
 * El Adobe recomienda crear un proyecto de traducción después de crear un formulario adaptable.
 
 * Cuando se agregan campos nuevos en un formulario adaptable existente:
-   * **Para traducción automática**[: vuelva a crear el diccionario y ejecute el proyecto de traducción](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Los campos añadidos a un formulario adaptable después de crear un proyecto de traducción permanecen sin traducir.
+   * **Para traducción automática**: Vuelva a crear el diccionario y [ejecutar el proyecto de traducción](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Los campos añadidos a un formulario adaptable después de crear un proyecto de traducción permanecen sin traducir.
    * **Para traducción humana**: exporte el diccionario mediante la interfaz de usuario de `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Actualice el diccionario de los campos recién añadidos y cárguelo.
 
 ## Ver más

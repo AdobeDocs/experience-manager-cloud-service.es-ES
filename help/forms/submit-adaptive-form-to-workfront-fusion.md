@@ -3,15 +3,17 @@ title: Integración de Adobe Workfront Fusion con AEM Forms Submission
 description: Adobe Workfront Fusion le permite centrarse en nuevas tareas en lugar de centrarse en tareas repetitivas. Puede conectar Adobe Workfront Fusion a un formulario adaptable mediante el envío de formularios.
 keywords: Enviar un formulario adaptable a Adobe Workfront Fusion, Integración de Adobe Workfront Fusion con AEM Forms Submission, Adobe Workfront Fusion con AEM Forms, Workfront Fusion con AEM Forms, Conexión de Workfront Fusion a AEM Forms, AEM Forms y Workfront Fusion, Conexión de Workfront Fusion con AEM Forms?, Conexión de Workfront Fusion a un formulario
 topic-tags: author, developer
-source-git-commit: b1a5c321d7b765a53c1c38fff9888eb22172edae
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1242'
 ht-degree: 4%
 
 ---
 
 
 # Envío de un formulario adaptable a Adobe Workfront Fusion
+
+<span class="preview"> La función está disponible en el programa de usuarios pioneros. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad. </span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatiza el proceso de repetición de las mismas tareas, como los flujos de trabajo de aprobación de documentos, el filtrado y la ordenación por correo electrónico, lo que le permite centrarse en nuevas tareas en lugar de en las recurrentes. Adobe Workfront Fusion incluye varios escenarios. Un escenario consiste en una serie de módulos que ejecutan la transferencia de datos entre aplicaciones y servicios web. En un escenario concreto, se agregan varios pasos (módulos) para automatizar una tarea.
 
