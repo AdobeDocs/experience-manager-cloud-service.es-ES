@@ -3,10 +3,10 @@ title: Introducción a Edge Delivery Services
 description: Introducción a Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 185a192b0d40e25cdb09fd8a1f222d9d9b1bd631
+source-git-commit: c3c1a2c89031b6a7a44ac8d16ecb2e64f37490a8
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 72%
+source-wordcount: '823'
+ht-degree: 71%
 
 ---
 
@@ -50,7 +50,7 @@ Es fácil empezar a usar Edge Delivery Services. Para empezar, siga los pasos de
 
 ## Obtención de ayuda de Adobe {#adobe-gethelp}
 
-Puede interactuar con los equipos de productos de Adobe a través del canal de colaboración de productos suministrado (consulte a continuación para obtener los detalles de acceso) para responder a preguntas sobre el uso del producto o las prácticas recomendadas. No hay términos de nivel de servicio (SLT) asociados a las conversaciones a través del canal de colaboración de productos. Si un problema de producto necesita más investigación y solución de problemas, y debe cumplir con los SLT de respuesta, puede enviar un ticket de asistencia después de la [proceso de soporte](https://experienceleague.adobe.com/?lang=es&amp;support-tab=home?lang=es#support).
+Puede interactuar con los equipos de productos de Adobe a través del canal de colaboración de productos suministrado (consulte a continuación para obtener los detalles de acceso) para responder a preguntas sobre el uso del producto o las prácticas recomendadas. No hay ningún destinatario de nivel de servicio (SLT, Service Level Targets) asociado a las conversaciones a través del canal de colaboración de productos. Si un problema de producto necesita más investigación y solución de problemas, y debe cumplir con los SLT de respuesta, puede enviar un ticket de asistencia después de la [proceso de soporte](https://experienceleague.adobe.com/?lang=es&amp;support-tab=home?lang=es#support).
 
 Adobe proporciona tres canales para ayudarle con Edge Delivery Services:
 
