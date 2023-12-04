@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
 workflow-type: tm+mt
-source-wordcount: '4393'
-ht-degree: 93%
+source-wordcount: '4420'
+ht-degree: 94%
 
 ---
 
@@ -178,7 +178,7 @@ ht-degree: 93%
 + Incorporación {#onboarding}
    + [Empiece aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=es)
    + Recorrido de incorporación {#journey}
-      + [Recorrido de incorporación Información general](/help/journey-onboarding/overview.md)
+      + [Información general sobre el recorrido de incorporación](/help/journey-onboarding/overview.md)
       + [Preparación de la incorporación](/help/journey-onboarding/preparation.md)
       + [Terminología de AEM as a Cloud Service](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
@@ -322,7 +322,7 @@ ht-degree: 93%
          + [Estructurar la administración de diversos sitios para el contenido segmentado](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [Administración de actividades](/help/sites-cloud/authoring/personalization/activities.md)
          + [Administrar audiencias](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [Creación y administración de ofertas (Consola de ofertas)](/help/sites-cloud/authoring/personalization/offers.md)
+         + [Creación y administración de ofertas (consola Ofertas)](/help/sites-cloud/authoring/personalization/offers.md)
          + [Información acerca de la segmentación](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Configuración de la segmentación con ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registro, inicio de sesión y perfil de usuario](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -585,6 +585,7 @@ ht-degree: 93%
          + [Incrustar formulario adaptable basado en componentes principales en una página web externa](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Incrustar formulario adaptable basado en componentes de base en una página web externa](/help/forms/embed-adaptive-form-external-web-page.md)
       + Modelo de datos de formulario {#use-form-data-model}
+         + [Envío de un formulario adaptable a Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Conectar AEM Forms a la base de datos o fuente de datos](/help/forms/data-integration.md)
          + [Configuración de fuentes de datos](/help/forms/configure-data-sources.md)
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -612,7 +613,7 @@ ht-degree: 93%
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Añadir una configuración regional para Forms adaptable basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
-      + Componentes de base {#authoring-adaptive-forms-foundation-components}
+      + Componentes básicos {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)
             + [Conversión de un formulario PDF existente en un formulario adaptable](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=es)
@@ -788,7 +789,7 @@ ht-degree: 93%
       + [Autenticación](/help/headless/security/authentication.md)
    + Implementación {#deployment}
       + [Arquitectura](/help/headless/deployment/architecture.md)
-      + [Dispatcher - Puntos finales](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher: puntos finales](/help/headless/deployment/dispatcher.md)
       + [Dispatcher: habilitar el almacenamiento en caché para consultas persistentes](/help/headless/deployment/dispatcher-caching.md)
       + [Configuración de CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Filtro de referente](/help/headless/deployment/referrer-filter.md)
