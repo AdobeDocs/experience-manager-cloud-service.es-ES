@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
+source-git-commit: ce98053371c8a40db3935c47356213e712a4e39e
 workflow-type: tm+mt
-source-wordcount: '4420'
-ht-degree: 94%
+source-wordcount: '4429'
+ht-degree: 93%
 
 ---
 
@@ -727,6 +727,8 @@ ht-degree: 94%
          + [Creación de experiencias de producto](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + Integraciones {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
+      + [CIF Componente de Live Search para](/help/commerce-cloud/integrating/live-search-plp.md)
+      + [CIF Componente de emergente de Live Search](/help/commerce-cloud/integrating/live-search-popover.md)
       + [Solución de comercio de terceros](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
