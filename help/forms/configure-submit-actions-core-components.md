@@ -3,7 +3,7 @@ title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias
 keywords: Obtenga información sobre cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de sharepoint, conectar un formulario adaptable a una biblioteca de documentos de sharepoint, conectar un formulario adaptable al modelo de datos de formulario
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
+source-git-commit: e9110b5f5b46d38712b7462490afc1052fb8d00c
 workflow-type: tm+mt
 source-wordcount: '4114'
 ht-degree: 87%
@@ -439,6 +439,7 @@ Después de una configuración correcta, utilice la acción de envío [Invocar u
 Puede configurar un formulario adaptable para enviar datos a Workfront Fusion en el envío. Workfront Fusion permite la automatización de los procesos para que el usuario pueda concentrarse en nuevas tareas en lugar de repetir las mismas tareas una y otra vez. Automatiza tanto las tareas simples como las complejas, ahorrando tiempo y garantizando una ejecución coherente del proceso.
 
 El editor de Forms adaptable proporciona el **Invocar un escenario de Workfront Fusion** Enviar acción para enviar datos de Forms adaptable o archivos adjuntos a un escenario de Workfront Fusion. Para utilizar la acción de envío para enviar los datos capturados a un escenario de Workfront Fusion, consulte [Envío de un formulario adaptable a Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+
 
 ## Usar envío sincrónico o asincrónico {#use-synchronous-or-asynchronous-submission}
 
