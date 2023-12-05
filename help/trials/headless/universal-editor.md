@@ -4,10 +4,10 @@ description: Explore cómo puede utilizar el editor universal para editar cualqu
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 11%
+ht-degree: 6%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Edición en contexto con el editor universal"
->abstract="Vea cómo sus aplicaciones sin encabezado pueden incorporar el Editor universal para poner al alcance de sus autores la edición en contexto y sin complicaciones."
+>abstract="Vea cómo sus aplicaciones sin encabezado pueden utilizar el editor universal para llevar la edición de bajo nivel de fricción al alcance de sus autores."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="Inicio del editor universal"
->abstract="En esta guía exploraremos el editor universal y cómo permite editar todos los aspectos del contenido en cualquier implementación, lo que mejora la velocidad de contenido.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
+>abstract="En esta guía, explorará el editor universal y cómo permite a los usuarios editar todos los aspectos del contenido en cualquier implementación, lo que mejora la velocidad de contenido.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"

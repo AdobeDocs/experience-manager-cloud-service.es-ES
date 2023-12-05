@@ -4,8 +4,8 @@ description: Mi espacio de trabajo es una página que proporciona módulos visua
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
 source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 83%
+source-wordcount: '743'
+ht-degree: 93%
 
 ---
 
@@ -40,16 +40,16 @@ Highlights upcoming features for Assets.
 
 Fije archivos, carpetas y colecciones para acceder más rápidamente a estos elementos cuando los necesite más adelante. Todos los elementos fijados se muestran en la sección **Acceso rápido** de Mi espacio de trabajo. Puede acceder a ellos mediante Mi espacio de trabajo en lugar de desplazarse a la ubicación en la que se guardan en el repositorio.
 
-Para anclar un recurso, una carpeta o una colección:
+Para fijar un recurso, una carpeta o una colección, haga lo siguiente:
 
-1. Seleccione el elemento y haga clic en **[!UICONTROL Anclar a Acceso rápido]**.
+1. Seleccione el elemento y haga clic en **[!UICONTROL fijar a Acceso rápido]**.
 
-1. Seleccione si necesita fijar el elemento solo para usted, para toda la organización o para los grupos seleccionados. Si selecciona **[!UICONTROL Para grupos]**, defina los nombres de grupo en la **[!UICONTROL Fijar para grupos]** field.
+1. Seleccione si necesita fijar el elemento solo para usted, para toda la organización o para los grupos seleccionados. Si selecciona **[!UICONTROL Para grupos]**, defina los nombres de grupo en el campo **[!UICONTROL Fijar para grupos]**.
 
-   ![Anclar elementos para grupos](assets/pin-items-for-groups.png)
-1. Clic **[!UICONTROL Fijar]**.
+   ![Fijar elementos para grupos](assets/pin-items-for-groups.png)
+1. Haga clic en **[!UICONTROL Fijar]**.
 
-   El elemento seleccionado se muestra en la **[!UICONTROL Acceso rápido]** de Mi espacio de trabajo.
+   Los elementos seleccionados se muestran en la sección **[!UICONTROL Acceso rápido]** de Mi espacio de trabajo.
    ![Tareas en el espacio de trabajo](assets/quick-access.png)
 
 **Perspectivas**
