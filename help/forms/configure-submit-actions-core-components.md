@@ -3,10 +3,10 @@ title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias
 keywords: Obtenga información sobre cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de sharepoint, conectar un formulario adaptable a una biblioteca de documentos de sharepoint, conectar un formulario adaptable al modelo de datos de formulario
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
 workflow-type: tm+mt
-source-wordcount: '4006'
-ht-degree: 90%
+source-wordcount: '4114'
+ht-degree: 87%
 
 ---
 
@@ -53,6 +53,7 @@ Para seleccionar y configurar una acción de envío para el formulario, haga lo 
    * [Enviar a OneDrive](#submit-to-onedrive)
    * [Invocar un flujo de trabajo de AEM](#invoke-an-aem-workflow)
    * [Enviar a Power Automate](#microsoft-power-automate)
+   * [Enviar a Workfront Fusion](#workfront-fusion)
 
 ## Enviar correo electrónico {#send-email}
 
@@ -432,6 +433,12 @@ Puede configurar un formulario adaptable para ejecutar un flujo de nube de Micro
 El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para utilizar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [conecte su instancia de Forms as a Cloud Service con Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
 
 Después de una configuración correcta, utilice la acción de envío [Invocar un flujo de Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) para enviar datos a un flujo de Power Automate.
+
+## Enviar a Workfront Fusion {#workfront-fusion}
+
+Puede configurar un formulario adaptable para enviar datos a Workfront Fusion en el envío. Workfront Fusion permite la automatización de los procesos para que el usuario pueda concentrarse en nuevas tareas en lugar de repetir las mismas tareas una y otra vez. Automatiza tanto las tareas simples como las complejas, ahorrando tiempo y garantizando una ejecución coherente del proceso.
+
+El editor de Forms adaptable proporciona el **Invocar un escenario de Workfront Fusion** Enviar acción para enviar datos de Forms adaptable o archivos adjuntos a un escenario de Workfront Fusion. Para utilizar la acción de envío para enviar los datos capturados a un escenario de Workfront Fusion, consulte [Envío de un formulario adaptable a Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
 
 ## Usar envío sincrónico o asincrónico {#use-synchronous-or-asynchronous-submission}
 
