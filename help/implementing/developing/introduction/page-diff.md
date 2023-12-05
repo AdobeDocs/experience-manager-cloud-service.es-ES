@@ -2,10 +2,10 @@
 title: Desarrollo y diferencia de página
 description: Comprenda cómo funciona la función Diferencias de página y cómo puede afectar a un desarrollador
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 1%
+ht-degree: 12%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## Descripción general de funciones {#feature-overview}
 
-La creación de contenido es un proceso iterativo. Crear con eficacia requiere poder ver qué ha cambiado de una iteración a otra. Ver una versión de la página y luego la otra es ineficiente y propensa a errores. Un autor desea poder comparar la página actual con una versión anterior en paralelo con las diferencias resaltadas.
+La creación de contenido es un proceso iterativo. La creación con eficiencia de contenido requiere poder ver qué ha cambiado de una iteración a otra. Visualizar la versión de la página y luego otra es un proceso poco eficaz y propenso a errores. Un autor desea poder comparar la página actual con una versión anterior en paralelo con las diferencias resaltadas.
 
 La diferencia de página permite al usuario comparar la página actual con lanzamientos, versiones anteriores, etc. Para obtener más información sobre esta función de usuario, consulte [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md).
 

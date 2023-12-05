@@ -2,10 +2,10 @@
 title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3594'
-ht-degree: 93%
+source-wordcount: '3526'
+ht-degree: 92%
 
 ---
 
@@ -366,7 +366,7 @@ Las reglas de reenvío de puertos deben declararse para cualquier tráfico TCP d
 
 La API debe responder en solo unos segundos, indicando un estado de `updating` y después de unos 10 minutos, una llamada al punto de conexión GET de entorno de Cloud Manager mostraría un estado de `ready`, con lo que indica que se ha aplicado la actualización al entorno.
 
-Tenga en cuenta que aunque no haya reglas de enrutamiento de tráfico de entorno (hosts o bypass), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` debe llamarse, solo con una carga útil vacía.
+Incluso si no hay reglas de enrutamiento de tráfico de entorno (hosts o bypass), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` Aún debe llamarse, solo con una carga útil vacía.
 
 ### Actualización de la VPN {#updating-the-vpn}
 
@@ -556,7 +556,7 @@ Cuando se añade una región adicional a un entorno que ya tiene configuradas re
 
 Si ya se ha habilitado una configuración de redes avanzadas en la región principal, siga estos pasos:
 
-1. Si ha bloqueado la infraestructura de modo que la dirección IP de AEM dedicada esté incluida en la lista de permitidos, se recomienda deshabilitar temporalmente cualquier regla de denegación de dicha infraestructura. Si no es así, su propia infraestructura denegará las solicitudes de las direcciones IP de la nueva región durante un breve período. Tenga en cuenta que esto no es necesario si ha bloqueado la infraestructura mediante un nombre de dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`AEM , por ejemplo), porque todas las regiones de la red de salida de todas las regiones de la red avanzada desde el mismo FQDN
+1. Si ha bloqueado la infraestructura de modo que la dirección IP de AEM dedicada esté incluida en la lista de permitidos, se recomienda deshabilitar temporalmente cualquier regla de denegación de dicha infraestructura. Si no es así, su propia infraestructura denegará las solicitudes de las direcciones IP de la nueva región durante un breve período. Esto no es necesario si ha bloqueado la infraestructura mediante un nombre de dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`AEM , por ejemplo), porque todas las regiones de la red de salida de todas las regiones de la red avanzada desde el mismo FQDN
 1. Cree la infraestructura de redes con alcance de programa para la región secundaria a través de una llamada del POST a la API Crear infraestructura de redes de Cloud Manager, tal como se describe en la documentación de redes avanzadas. La única diferencia en la configuración JSON de la carga útil en relación con la región principal es la propiedad de la región
 1. AEM Si la infraestructura debe estar bloqueada por una dirección IP para permitir el tráfico de, agregue las direcciones IP que coincidan `p1234.external.adobeaemcloud.com`. Debe haber una por región.
 

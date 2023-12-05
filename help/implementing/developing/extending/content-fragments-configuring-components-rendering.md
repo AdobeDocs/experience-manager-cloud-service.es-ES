@@ -2,10 +2,10 @@
 title: Fragmentos de contenido Configurar componentes para procesamiento
 description: Fragmentos de contenido Configurar componentes para procesamiento
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 6%
+source-wordcount: '519'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ Esto se hace configurando la variable [Servicio OSGi: configuración del compone
 Esta información es necesaria cuando:
 
 * Debe implementar su propio componente basado en fragmentos de contenido,
-* Y necesita hacer uso de los servicios avanzados.
+* Y necesita usar los servicios avanzados.
 
 El Adobe recomienda utilizar los componentes principales.
 

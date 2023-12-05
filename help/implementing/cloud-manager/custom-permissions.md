@@ -2,9 +2,9 @@
 title: Permisos personalizados
 description: Descubra cómo puede utilizar permisos personalizados para crear perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1525'
 ht-degree: 38%
 
 ---
@@ -40,7 +40,7 @@ Para crear y utilizar sus propios permisos personalizados, se requieren tres pas
 1. [Asigne permisos personalizados al perfil del producto.](#assign-permissions)
 1. [Asigne usuarios al perfil de producto.](#assign-users)
 
-Esta sección detalla estos pasos. Puede que le resulte útil consultar las secciones [Términos](#terms) y [Permisos configurables](#configurable-permissions) a medida que crea sus propios permisos personalizados.
+Esta sección detalla estos pasos. Puede que le resulte útil ver [Términos](#terms) y [Permisos configurables](#configurable-permissions) secciones a medida que crea sus propios permisos personalizados.
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Los siguientes permisos están disponibles para crear perfiles personalizados.
 | Administrar variables de entorno | Permitir que los usuarios creen, editen o eliminen configuraciones de entorno |
 | Entorno Restaurar crear | Permitir que los usuarios creen una restauración del entorno |
 | Restablecimiento rápido del entorno de desarrollo | Permitir a los usuarios restablecer el entorno de desarrollo rápido |
-| Gestor de copia de contenido | Permitir a los usuarios administrar las operaciones de copia de contenido |
+| Administración de copia de contenido | Permitir que los usuarios administren las operaciones de copia de contenido |
 | Creación de canalización | Permitir que los usuarios creen canalizaciones |
 | Eliminación de canalización | Permitir que los usuarios eliminen canalizaciones |
 | Edición de canalizaciones | Permitir que los usuarios editen canalizaciones |
@@ -137,10 +137,10 @@ Los siguientes permisos están disponibles para crear perfiles personalizados.
 | Anular/Rechazar errores de métricas importantes | Permitir que los usuarios anulen o rechacen errores importantes de métricas |
 | Programar implementaciones de producción | Permitir a los usuarios programar un paso de implementación de producción |
 | Acceso a información de repositorios | Permitir a los usuarios acceder a la información del repositorio y generar una contraseña de acceso |
-| Creación de repositorio | Permitir que los usuarios creen repositorios de Git |
-| Eliminación del repositorio | Permitir que los usuarios eliminen repositorios de Git |
-| Edición de repositorio | Permitir que los usuarios editen repositorios de Git |
-| Generación de código de repositorio | Permitir que los usuarios generen proyectos a partir del tipo de archivo |
+| Creación de repositorios | Permitir que los usuarios creen repositorios de Git |
+| Eliminación de repositorios | Permitir que los usuarios eliminen repositorios de Git |
+| Edición de repositorios | Permitir que los usuarios editen repositorios de Git |
+| Generación de código de repositorios | Permitir que los usuarios generen proyectos a partir del tipo de archivo |
 | Administrador de nombres de dominio | Permitir que los usuarios creen, editen o eliminen nombres de dominio |
 | Administrar Lista de permitidos IP | Permitir a los usuarios crear, editar o eliminar enlaces de lista de permitidos y lista de permitidos IP |
 | Administrador de infraestructura de red | Permitir a los usuarios crear, editar o eliminar la infraestructura de red |

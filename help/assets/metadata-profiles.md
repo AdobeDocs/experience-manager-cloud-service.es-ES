@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 20%
+source-wordcount: '1396'
+ht-degree: 21%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 20%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Un perfil de metadatos le permite aplicar metadatos predeterminados a los recursos de una carpeta. Cree un perfil de metadatos y aplíquelo a una carpeta. Cualquier recurso que cargue posteriormente en la carpeta heredará los metadatos predeterminados configurados en el perfil de metadatos.
@@ -27,7 +27,7 @@ Al utilizar estrategias de nomenclatura de archivos y carpetas coherentes y adec
 ## Añadir un perfil de metadatos {#adding-a-metadata-profile}
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]** y haga clic en **[!UICONTROL Crear]**.
-1. Escriba un título para el perfil de metadatos, por ejemplo Metadatos de muestra, y pulse **[!UICONTROL Enviar]**. Se muestra el formulario de edición para el perfil de metadatos.
+1. Introduzca un título para el perfil de metadatos, por ejemplo, Metadatos de muestra, y seleccione **[!UICONTROL Enviar]**. Se muestra el formulario de edición para el perfil de metadatos.
 1. Haga clic en un componente y configure sus propiedades en la **[!UICONTROL Configuración]** pestaña. Por ejemplo, haga clic en **[!UICONTROL Descripción]** y editar sus propiedades.
 Edite las siguientes propiedades para **[!UICONTROL Descripción]** componente:
 
@@ -95,7 +95,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 #### Aplicar perfiles de metadatos a carpetas desde Propiedades {#applying-metadata-profiles-to-folders-from-properties}
 
 1. En el carril izquierdo, haga clic en **[!UICONTROL Assets]** a continuación, vaya a la carpeta a la que desee aplicar un perfil de metadatos.
-1. En la carpeta, haga clic o haga clic en la marca de verificación para seleccionarla y, a continuación, haga clic o haga clic en **Propiedades**.
+1. En la carpeta, seleccione la marca de verificación para seleccionarla y, a continuación, seleccione **Propiedades**.
 1. Seleccione el **[!UICONTROL Perfiles de metadatos]** y seleccione el perfil en el menú desplegable y haga clic en. **[!UICONTROL Guardar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
 ### Aplicar un perfil de metadatos globalmente {#applying-a-metadata-profile-globally}

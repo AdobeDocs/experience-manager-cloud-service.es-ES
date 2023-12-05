@@ -1,14 +1,14 @@
 ---
-title: Administre recursos digitales
+title: Administrar recursos digitales
 description: Obtenga información acerca de los distintos métodos de administración y edición de recursos
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4301'
+source-wordcount: '4270'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Este artículo describe cómo administrar y editar recursos en [!DNL Adobe Experience Manager Assets]. Para administrar [!DNL Content Fragments], consulte [[!DNL Content Fragments]](content-fragments/content-fragments.md) recursos.
@@ -69,13 +69,13 @@ Para extraer los archivos ZIP, realice los siguientes pasos:
 Para obtener una vista previa de un recurso, siga estos pasos.
 
 1. En la interfaz de usuario de Assets, vaya a la ubicación del recurso que desea previsualizar.
-1. Pulse el recurso que desee para abrirlo.
+1. Seleccione el recurso que desee para abrirlo.
 
 1. En el modo de vista previa, las opciones de zoom están disponibles para [tipos de imagen admitidos](/help/assets/file-format-support.md) (con edición interactiva).
 
    Para ampliar un recurso, seleccione `+` (o seleccione la lupa del recurso). Para alejar, seleccione `-`. Al acercar, puede mirar de cerca cualquier área de la imagen si realiza una panorámica. La flecha para restablecer el zoom le devuelve a la vista original.
 
-   Tocar **[!UICONTROL Restablecer]** para restablecer la vista al tamaño original.
+   Seleccionar **[!UICONTROL Restablecer]** para restablecer la vista al tamaño original.
 
 ## Editar propiedades {#editing-properties}
 
@@ -340,7 +340,7 @@ Para realizar búsquedas sencillas, avanzadas y personalizadas con el fin de des
 
 Los iconos de acción rápida están disponibles para un solo recurso a la vez. Según el dispositivo, realice las siguientes acciones para mostrar los iconos de acción rápida:
 
-* Dispositivos táctiles: toque y mantenga presionado. Por ejemplo, en una iPad, puede pulsar y mantener pulsado un recurso para que se muestren las acciones rápidas.
+* Dispositivos táctiles: toque y mantenga presionado. Por ejemplo, en una iPad, puede seleccionar y mantener presionado un recurso para que se muestren las acciones rápidas.
 * Dispositivos no táctiles: Pase el puntero por encima. Por ejemplo, en un dispositivo de escritorio, se muestra la barra de acciones rápidas si pasa el puntero sobre la miniatura del recurso.
 
 <!-- Hiding this topic via cqdoc-18707
@@ -543,7 +543,7 @@ Para imprimir las anotaciones y revisar el estado, seleccione la **[!UICONTROL I
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   Para modificar el aspecto del archivo de PDF procesado, por ejemplo, el color, el tamaño y el estilo de fuente, el color de fondo de los comentarios y los estados, abra **[!UICONTROL Configuración del PDF de anotaciones]** en el Administrador de configuración y modifique las opciones que desee. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
+   Para modificar el aspecto del archivo de PDF procesado, por ejemplo, el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y los estados, abra **[!UICONTROL Configuración del PDF de anotaciones]** en el Administrador de configuración y modifique las opciones que desee. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
 
    Vuelva al archivo de PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
 

@@ -2,16 +2,16 @@
 title: Cómo generar un documento de registro (DoR) para AEM Forms
 description: Obtenga información sobre cómo generar una plantilla para un documento de registro (DoR) para Forms adaptable.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4139'
+source-wordcount: '4124'
 ht-degree: 94%
 
 ---
 
 # Generar documento de registro para formularios adaptables
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 
 | Versión | Vínculo del artículo |
@@ -48,7 +48,7 @@ Cargue la plantilla XFA (archivo XDP) en la instancia de AEM Forms. Realice los 
 
 1. En la instancia de autor del Experience Manager, haga clic en **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos].**
 1. Seleccione un formulario y haga clic en **[!UICONTROL Propiedades]**.
-1. En la ventana Propiedades, pulse **[!UICONTROL Modelo de formulario]**.
+1. En la ventana Propiedades, seleccione **[!UICONTROL Modelo de formulario]**.
 1. En la pestaña **[!UICONTROL Modelo de formulario]**, en el menú desplegable **[!UICONTROL Seleccionar de]**, elija **[!UICONTROL Esquema]** o **[!UICONTROL Ninguno]**. También puede seleccionar un modelo de formulario al crear un formulario.
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Asociar plantilla de formulario como plantilla de documento de registro**. Al seleccionar esta opción, se muestran todas las plantillas XFA (archivos XDP) disponibles en el equipo. Seleccione el archivo apropiado. Además, asegúrese de que se utiliza el mismo esquema (esquema de datos) para el formulario adaptable y la plantilla XFA seleccionada (archivo XDP).
 1. Haga clic en **[!UICONTROL Listo.]**
@@ -61,7 +61,7 @@ Cargue el PDF de Adobe Acrobat (AcroForm) a su instancia de AEM Forms. Realice l
 
 1. En la instancia de autor del Experience Manager, haga clic en **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos].**
 1. Seleccione un formulario y haga clic en **[!UICONTROL Propiedades]**.
-1. En la ventana Propiedades, pulse **[!UICONTROL Modelo de formulario]**.
+1. En la ventana Propiedades, seleccione **[!UICONTROL Modelo de formulario]**.
 1. En la pestaña **[!UICONTROL Modelo de formulario]**, en el menú desplegable **[!UICONTROL Seleccionar de]**, elija **[!UICONTROL Esquema]** o **[!UICONTROL Ninguno]**. También puede seleccionar un modelo de formulario al crear un formulario.
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Asociar plantilla de formulario como plantilla de documento de registro**. Al seleccionar esta opción, se muestran todos los PDF de Acrobat (AcroForm) disponibles en el equipo. Seleccione el archivo apropiado.
 1. Haga clic en **[!UICONTROL Listo.]**
@@ -75,14 +75,14 @@ Cuando se configura un formulario adaptable para que genere automáticamente un 
 * Los desarrolladores de formularios no tienen que mantener enlaces de datos de forma manual. El documento de registro generado automáticamente se encarga de las actualizaciones relacionadas con los enlaces de datos.
 * Los desarrolladores de formularios no tienen que ocultar de forma manual los campos marcados como excluir del documento de registro. El documento de registro generado automáticamente está preconfigurado para excluir estos campos.
 * Al crear un documento de registro generado automáticamente, se ahorra el tiempo necesario para crear una plantilla de formulario para el documento de registro.
-* La opción de documento de registro generado automáticamente permite utilizar diferentes estilos y apariencias con diferentes plantillas base. Ayuda a seleccionar el mejor estilo y aspecto del documento de registro para su organización. Si no especifica estilo, los estilos del sistema se establecen como predeterminados.
+* Crear un documento de registro generado automáticamente permite utilizar diferentes estilos y apariencias con distintas plantillas base. Ayuda a seleccionar el mejor estilo y aspecto del documento de registro para su organización. Si no especifica estilo, los estilos del sistema se establecen como predeterminados.
 * El documento de registro generado automáticamente garantiza que cualquier cambio en el formulario se refleje inmediatamente en el documento de registro.
 
 Siga estos pasos para configurar un formulario adaptable para generar automáticamente un documento de registro:
 
 1. En la instancia de autor del Experience Manager, haga clic en **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos].**
 1. Seleccione un formulario y haga clic en **[!UICONTROL Propiedades]**.
-1. En la ventana Propiedades, pulse **[!UICONTROL Modelo de formulario]**.
+1. En la ventana Propiedades, seleccione **[!UICONTROL Modelo de formulario]**.
 1. En la pestaña **[!UICONTROL Modelo de formulario]**, en el menú desplegable **[!UICONTROL Seleccionar de]**, elija **[!UICONTROL Esquema]** o **[!UICONTROL Ninguno]**. También puede seleccionar un modelo de formulario al crear un formulario.
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Generar documento de registro**.
 1. Haga clic en **[!UICONTROL Listo.]**
@@ -335,10 +335,10 @@ Al generar un documento de registro, puede cambiar la información de marca del 
 
 Para localizar la información de marca indicada en la pestaña Documento de registro, asegúrese de que la configuración regional del explorador esté correctamente configurada. Para personalizar la información de marca del documento de registro, siga estos pasos:
 
-1. Seleccione un panel (panel raíz) en el documento de registro y, a continuación, pulse ![configure](assets/configure.png).
-1. Pulse ![dortab](assets/dortab.png). Aparecerá la pestaña Documento de registro.
+1. Seleccione un panel (panel raíz) en el documento de registro y, a continuación, seleccione ![configurar](assets/configure.png).
+1. Seleccionar ![dortab](assets/dortab.png). Aparecerá la pestaña Documento de registro.
 1. Seleccione la plantilla predeterminada o una plantilla personalizada para procesar el documento de registro. Si selecciona la plantilla predeterminada, aparece una vista previa en miniatura del documento de registro debajo de la lista desplegable Plantilla.
-1. En función de si selecciona una plantilla predeterminada o personalizada, algunas o todas las propiedades siguientes aparecen en la pestaña Documento de registro. Especifique las siguientes propiedades mencionadas para definir el aspecto del Documento de registro:
+1. En función de si selecciona una plantilla predeterminada o personalizada, algunas de las siguientes propiedades, o todas ellas, aparecen en la pestaña Documento de registro. Especifique las siguientes propiedades mencionadas para definir el aspecto del Documento de registro:
 
    1. **Propiedades básicas**:
       * **Plantilla**: si elige una plantilla personalizada, busque y seleccione un XDP en el servidor [!DNL AEM Forms]. Si desea utilizar una plantilla que no esté ya en el servidor [!DNL AEM Forms], primero debe cargar el XDP en el servidor [!DNL AEM Forms].
@@ -360,7 +360,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
    1. **Propiedades de página maestra**:
       * **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
-      * **Título del formulario**: título del Documento de registro.
+      * **Título del formulario**: título del documento de registro.
       * **Texto de encabezado**: texto que aparece en la sección de encabezado del Documento de registro.
       * **Etiqueta de descargo de responsabilidad**: etiqueta de descargo de responsabilidad.
       * **Descargo de responsabilidad**: texto que especifica el ámbito de derechos y obligaciones del Documento de registro.
@@ -384,7 +384,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
    </proto>
    ```
 
-1. Para guardar los cambios de personalización de marca, pulse **[!UICONTROL Listo]**.
+1. Para guardar los cambios de marca, seleccione **[!UICONTROL Listo]**.
 
 ## Asistencia del Documento de registro en el Editor de formularios adaptables {#dor-support-in-adaptiveform}
 
@@ -401,7 +401,7 @@ Realice los siguientes pasos desde la instancia de autor del editor de formulari
 
    * **[!UICONTROL Generar documento de registro]**: cuando se selecciona esta opción, la plantilla del [!UICONTROL documento de registro] se genera automáticamente para el formulario adaptable.
 
-1. Pulse ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
+1. Seleccionar ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
 
 ![Asistencia para la plantilla del documento de registro](/help/forms/assets/dor-templatesupport.png)
 

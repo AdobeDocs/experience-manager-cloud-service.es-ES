@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '614'
 ht-degree: 7%
 
 ---
@@ -55,7 +55,7 @@ Para crear y compartir una carpeta privada:
    >
    >La carpeta privada tiene al menos un miembro con `Owner` función. Por lo tanto, el administrador no puede quitar todos los miembros propietarios de una carpeta privada. Sin embargo, para eliminar los propietarios existentes (y el propio administrador) de la carpeta privada, el administrador debe agregar otro usuario como propietario.
 
-1. Haga clic en **[!UICONTROL Guardar y cerrar]**. Según la función que asigne, al usuario se le asigna un conjunto de privilegios en la carpeta privada cuando inicia sesión en [!DNL Assets].
+1. Clic **[!UICONTROL Guardar y cerrar]**. Según la función que asigne, al usuario se le asigna un conjunto de privilegios en la carpeta privada cuando inicia sesión en [!DNL Assets].
 1. Clic **[!UICONTROL Ok]** para cerrar el mensaje de confirmación.
 1. El usuario con el que comparte la carpeta recibe una notificación de uso compartido en su interfaz de usuario.
 

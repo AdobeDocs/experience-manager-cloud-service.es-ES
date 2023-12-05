@@ -4,10 +4,10 @@ description: Aprenda a añadir información a los metadatos de un formulario env
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 93%
+source-wordcount: '693'
+ht-degree: 89%
 
 ---
 
@@ -27,8 +27,8 @@ Imagine otro ejemplo de un formulario que captura el ID de correo electrónico y
 Realice los siguientes pasos para agregar un elemento a los metadatos:
 
 1. Abra el formulario adaptable en el modo Edición.\
-   Para abrir el formulario en el modo Edición, seleccione el formulario en el Administrador de formularios y pulse **[!UICONTROL Abrir]**.
-1. En el modo Edición, seleccione un componente y pulse ![nivel de campo](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** y, a continuación, pulse ![cmppr](assets/configure-icon.svg).
+   Para abrir el formulario en el modo Edición, seleccione el formulario en el Administrador de formularios y seleccione **[!UICONTROL Abrir]**.
+1. En el modo de edición, seleccione un componente y seleccione ![field-level](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**, y luego seleccione ![cmppr](assets/configure-icon.svg).
 1. En la barra lateral, haga clic en **[!DNL Metadata]**.
 1. En la sección Metadatos, haga clic en **[!DNL Add]**.
 1. Utilice el campo Valor de la pestaña Metadatos para añadir scripts. Los scripts que agregue recopilarán datos de los elementos del formulario y calcularán los valores de los que se alimentan los metadatos.

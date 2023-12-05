@@ -2,10 +2,10 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3357'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,7 @@ Este artículo está organizado en las secciones siguientes:
 * **Información general sobre protección del tráfico:** descubra cómo está protegido contra el tráfico malintencionado.
 * **Proceso sugerido para configurar reglas:** lea acerca de una metodología de alto nivel para proteger su sitio web.
 * **Configuración:** descubra cómo configurar e implementar reglas de filtro de tráfico, incluidas las reglas WAF avanzadas.
-* **Sintaxis de reglas:** obtenga información sobre cómo declarar reglas de filtro de tráfico en el archivo de configuración de `cdn.yaml`. Esto incluye las reglas de filtro de tráfico disponibles para todos los clientes de Sites y Forms, así como la subcategoría de reglas WAF para aquellos que otorgan licencia a esa funcionalidad.
+* **Sintaxis de reglas:** obtenga información sobre cómo declarar reglas de filtro de tráfico en el archivo de configuración de `cdn.yaml`. Esto incluye las reglas de filtro de tráfico disponibles para todos los clientes de Sites y Forms, y la subcategoría de reglas WAF para aquellos que otorgan licencia a esa capacidad.
 * **Ejemplos de reglas:** consulte ejemplos de reglas declaradas para ponerse en marcha.
 * **Reglas de límite de volumen:** aprenda a utilizar reglas de limitación de volumen para proteger el sitio de ataques de gran volumen.
 * **Registros de CDN:** compruebe qué reglas declaradas e indicadores WAF coinciden con el tráfico.
@@ -79,7 +79,7 @@ A continuación, se presenta un proceso de extremo a extremo recomendado de alto
         cdn.yaml
    ```
 
-1. `cdn.yaml` debe contener metadatos, así como una lista de reglas de filtros de tráfico y reglas WAF.
+1. `cdn.yaml` debe contener metadatos y una lista de reglas de filtros de tráfico y reglas WAF.
 
    ```
    kind: "CDN"
@@ -149,7 +149,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-El formato de las reglas de filtro de tráfico en el archivo `cdn.yaml` se describe a continuación. Vea algunos [ejemplos más](#examples) en una sección posterior, así como en una sección independiente sobre [Reglas de límite de volumen](#rate-limit-rules).
+El formato de las reglas de filtro de tráfico en el archivo `cdn.yaml` se describe a continuación. Ver algunos [otros ejemplos](#examples) en una sección posterior y en una sección independiente sobre [Reglas de límite de velocidad](#rate-limit-rules).
 
 
 | **Propiedad** | **La mayoría de las reglas de filtro de tráfico** | **Reglas de filtro de tráfico WAF** | **Tipo** | **Valor predeterminado** | **Descripción** |
@@ -416,9 +416,9 @@ Los límites de volumen se calculan por CDN POP. Por ejemplo, supongamos que los
 | **Propiedad** | **Tipo** | **Predeterminado** | **SIGNIFICADO** |
 |---|---|---|---|
 | limit | entero de 10 a 10000 | required | Volumen de solicitud (por CDN POP) en solicitudes por segundo para las que se activa la regla. |
-| ventana | integer enum: 1, 10 o 60 | 10 | Ventana de muestreo en segundos para la que se calcula el volumen de solicitud. La precisión de los contadores dependerá del tamaño de la ventana (ventana más grande, mayor precisión). Por ejemplo, se puede esperar una precisión del 50 % para la ventana de 1 segundo y del 90 % para la de 60 segundos. |
+| ventana | integer enum: 1, 10 o 60 | 10 | Ventana de muestreo en segundos para la que se calcula el volumen de solicitud. La precisión de los contadores dependerá del tamaño de la ventana (ventana más grande, mayor precisión). Por ejemplo, se puede esperar una precisión del 50 % para la ventana de 1 segundo y del 90 % para la de 60 segundos. |
 | penalty | entero de 60 a 3600 | 300 (5 minutos) | Período en segundos durante el cual se bloquean las solicitudes de coincidencia (redondeado al minuto más próximo). |
-| groupBy | array[Getter] | ninguno | El contador de limitador de volumen se añadirá mediante un conjunto de propiedades de solicitud (por ejemplo, clientIp). |
+| groupBy | array[Getter] | ninguno | El contador del limitador de velocidad se agregará mediante un conjunto de propiedades de solicitud (por ejemplo, clientIp). |
 
 
 ### Ejemplos {#ratelimiting-examples}
@@ -471,7 +471,7 @@ data:
 
 AEM as a Cloud Service proporciona acceso a los registros de CDN, que son útiles para casos de uso, incluida la optimización de la proporción de visitas de caché y la configuración de reglas de filtro de tráfico. Los registros de CDN aparecen en el cuadro diálogo de Cloud Manager **Descargar registros**, al seleccionar el servicio de creación o publicación.
 
-Tenga en cuenta que los registros de CDN pueden retrasarse hasta 5 minutos.
+Los registros de CDN se pueden retrasar hasta cinco minutos.
 
 La propiedad `rules` describe qué reglas de filtro de tráfico coinciden y tiene el siguiente patrón:
 

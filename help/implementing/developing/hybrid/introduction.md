@@ -2,9 +2,9 @@
 title: Introducción y tutorial de SPA
 description: Este artículo presenta los conceptos de un SPA y explica cómo usar una aplicación de SPA básica para la creación, mostrando cómo se relaciona con el Editor de SPA de AEM subyacente.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2045'
 ht-degree: 93%
 
 ---
@@ -38,7 +38,7 @@ El tutorial se basa en la funcionalidad AEM estándar y en la aplicación de pro
 
 >[!CAUTION]
 >
->Este documento utiliza la [Aplicación de proyecto WKND SPA](https://github.com/adobe/aem-guides-wknd-spa) únicamente con fines de demostración. No debe utilizarse para ningún trabajo de proyecto.
+>Este documento utiliza la [Aplicación de proyecto WKND SPA](https://github.com/adobe/aem-guides-wknd-spa) únicamente con fines de demostración. No lo utilice para ningún trabajo de proyecto.
 
 >[!TIP]
 >

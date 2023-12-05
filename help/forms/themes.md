@@ -2,16 +2,16 @@
 title: ¿Cómo se pueden crear y utilizar temáticas para aplicar estilo a un formulario adaptable?
 description: Utilice temáticas de formularios adaptables para aplicar estilos y proporcionar una identidad visual a un formulario adaptable. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5578'
+source-wordcount: '5558'
 ht-degree: 98%
 
 ---
 
 # Creación y uso de temáticas {#creating-and-using-themes}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -363,7 +363,7 @@ Cuando seleccione un componente en el lienzo, verá la barra de herramientas de 
 * **[!UICONTROL Widget de cuadro numérico]**: permite seleccionar el componente para personalizar su aspecto en la barra lateral.
 * **[!UICONTROL Widget de campos]**: permite seleccionar el componente genérico para el estilo. En este ejemplo, todos los componentes de entrada de texto (cuadro de texto/cuadro numérico/paso numérico/entrada de fecha) están seleccionados para el estilo.
 
-* ![field-level](assets/select_parent_icon.svg): permite seleccionar el componente principal para el estilo. Si selecciona un cuadro numérico y pulsa este icono, el componente de campo estará seleccionado. Si selecciona el componente de campo y pulsa este icono, el panel estará seleccionado. Si sigue pulsando este icono para seleccionarlo, acaba seleccionando el diseño para el estilo.
+* ![field-level](assets/select_parent_icon.svg): permite seleccionar el componente principal para el estilo. Si selecciona un cuadro numérico y selecciona este icono, el componente de campo estará seleccionado. Si selecciona el componente de campo y este icono, el panel estará seleccionado. Si sigue pulsando este icono para seleccionarlo, acaba seleccionando el diseño para el estilo.
 
 >[!NOTE]
 >
@@ -589,7 +589,7 @@ Para copiar una temática, realice los siguientes pasos:
 
 1. En la instancia de creación, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Temáticas]**.
 1. Abra la carpeta Biblioteca de temáticas.
-1. En la carpeta Biblioteca de temáticas, pase el puntero sobre la temática correspondiente y pulse **[!UICONTROL Copiar]**.
+1. En la carpeta Biblioteca de temáticas, pase el puntero sobre la temática correspondiente y seleccione **[!UICONTROL Copiar]**.
 1. Pegue la temática copiada fuera de la carpeta Biblioteca de temáticas.
 1. Personalice la temática copiada.
 

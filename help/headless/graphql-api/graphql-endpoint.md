@@ -3,10 +3,10 @@ title: Administración de puntos de conexión de GraphQL en AEM
 description: Aprenda a administrar los puntos de conexión de GraphQL en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 90%
+source-wordcount: '512'
+ht-degree: 88%
 
 ---
 
@@ -91,4 +91,4 @@ Seleccione el nuevo punto de conexión y **Publicación** para que esté totalme
 >
 >En instancias de publicación esto puede suponer un problema de seguridad, ya que las consultas de GraphQL pueden imponer una carga pesada en el servidor.
 >
->Debe configurar [ACL adecuados para su caso de uso](/help/headless/security/permissions.md) en el punto de conexión.
+>Configuración de [ACL adecuados para su caso de uso](/help/headless/security/permissions.md) en el extremo.

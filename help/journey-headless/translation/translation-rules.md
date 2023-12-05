@@ -2,9 +2,9 @@
 title: Configuración de reglas de traducción para contenido sin encabezado
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '912'
 ht-degree: 73%
 
 ---
@@ -73,7 +73,7 @@ En el **Configuración de traducción** IU, hay varias opciones disponibles para
    ![Agregar contexto](assets/add-translation-context.png)
 1. Utilice el navegador de rutas para seleccionar la ruta requerida y seleccione **Confirmar** para guardar. Recuerde que los fragmentos de contenido, que contienen contenido sin encabezado, generalmente se encuentran debajo de `/content/dam/<your-project>`.
    ![Seleccionar la ruta](assets/select-context.png)
-1. Seleccione el contexto que acaba de crear y luego seleccione **Editar**. Esto abre el **Editor de reglas de traducción** para configurar las propiedades.
+1. Seleccione el contexto que ha creado y luego seleccione **Editar**. Esto abre el **Editor de reglas de traducción** para configurar las propiedades.
    ![Editor de reglas de traducción](assets/translation-rules-editor.png)
 1. De forma predeterminada, todas las configuraciones se heredan de la ruta principal, en este caso, `/content/dam`. Desmarque la opción **Heredar de`/content/dam`** para añadir campos adicionales a la configuración.
 1. Si no está marcada, en **General** de la lista, agregue los nombres de las propiedades de los modelos de fragmentos de contenido que [previamente identificados como campos para la traducción.](getting-started.md#content-models)
@@ -81,7 +81,6 @@ En el **Configuración de traducción** IU, hay varias opciones disponibles para
    1. Seleccionar **Añadir**.
    1. Repita estos pasos para todos los campos que debe traducir.
    1. Seleccione **Guardar**.
-
       ![Añadir propiedades](assets/add-property.png)
 
 Ya ha configurado las reglas de traducción.

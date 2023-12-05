@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2928'
-ht-degree: 4%
+source-wordcount: '2859'
+ht-degree: 3%
 
 ---
 
@@ -219,7 +219,7 @@ Una vez que los microservicios de recursos completen el procesamiento de los rec
 
 Para los casos de uso habituales del posprocesamiento, considere la posibilidad de utilizar el método para aplicar un flujo de trabajo a una carpeta. Para aplicar un modelo de flujo de trabajo en la carpeta [!UICONTROL Propiedades], siga estos pasos:
 
-1. Crear un modelo del flujo de trabajo.
+1. Cree un modelo del flujo de trabajo.
 1. Seleccione una carpeta y haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas y haga clic en **[!UICONTROL Procesamiento de recursos]** pestaña.
 1. En **[!UICONTROL Flujo de trabajo de inicio automático]**, seleccione el flujo de trabajo necesario, proporcione un título para el flujo de trabajo y guarde los cambios.
 
@@ -240,7 +240,7 @@ Cuando no sea necesario posprocesar, cree y utilice un modelo de flujo de trabaj
 
 ##### Creación del modelo de flujo de trabajo de inicio automático desactivado
 
-1. Navegue hasta __Herramientas > Flujo de trabajo > Modelos__
+1. Vaya a __Herramientas > Flujo de trabajo > Modelos__
 1. Seleccionar __Crear > Crear modelo__ desde la barra de acciones superior
 1. Proporcione un título y un nombre para el nuevo modelo de flujo de trabajo, por ejemplo:
    * Título: Deshabilitar el flujo de trabajo de inicio automático

@@ -2,10 +2,10 @@
 title: Diseño adaptable
 description: AEM le permite crear un diseño adaptable para sus páginas,
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 82%
+source-wordcount: '1737'
+ht-degree: 80%
 
 ---
 
@@ -49,7 +49,7 @@ Según el proyecto, el contenedor de diseño se puede utilizar como sistema de p
 
 >[!TIP]
 >
->Adobe proporciona [documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del diseño interactivo como referencia que se puede entregar a los desarrolladores de interfaces de usuario, lo cual les permite usar la cuadrícula de AEM fuera de AEM como, por ejemplo, para crear maquetas HTML estáticas para un sitio de AEM futuro.
+>El Adobe proporciona [Documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) AEM AEM del diseño interactivo como referencia que se puede dar a los desarrolladores de front-end para que puedan utilizar la cuadrícula de la fuera de la red de la interfaz de usuario de, por ejemplo, al crear maquetas de HTML AEM estáticos para un sitio futuro en el que se vaya a realizar un seguimiento de la interfaz de usuario de la interfaz de usuario de la aplicación de red.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
    La barra de herramientas del emulador muestra opciones de diseño adicionales:
 
-   * **Rotar dispositivo** : permite girar un dispositivo desde la orientación vertical (vertical) a la orientación horizontal (horizontal) y viceversa.
+   * **Rotar dispositivo** : Permite girar un dispositivo desde la orientación vertical (vertical) a la horizontal (horizontal) y a la inversa.
 
    ![Botón Girar el dispositivo a horizontal](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Botón Girar el dispositivo a vertical](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -149,7 +149,7 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseño (
 >
 >Como un contenedor de diseño es un sistema de párrafos, al eliminar el componente se eliminará tanto la cuadrícula de diseño como todos los componentes (y su contenido) que se encuentren dentro del contenedor.
 
-1. Si pasa el ratón sobre el marcador de posición de la cuadrícula o lo pulsa, se muestra el menú de acción.
+1. Si pasa el ratón por encima o selecciona el marcador de posición de la cuadrícula, se muestra el menú de acción.
 
    ![Agregar al contenedor de diseño](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

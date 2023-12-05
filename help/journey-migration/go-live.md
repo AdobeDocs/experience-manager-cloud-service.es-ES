@@ -2,9 +2,9 @@
 title: Go-Live
 description: Aprenda a realizar la migración una vez que el código y el contenido estén listos para la nube
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1697'
 ht-degree: 4%
 
 ---
@@ -86,7 +86,7 @@ Al realizar la migración de producción, debe evitar ejecutar la herramienta de
 
 **AEM Optimización de la carga en el origen de la al realizar la migración de contenido**
 
-AEM Recuerde, la carga en el origen de la es mayor durante la fase de extracción. Debe tener en cuenta lo siguiente:
+AEM Recuerde, la carga en el origen de la es mayor durante la fase de extracción. Tenga en cuenta lo siguiente:
 
 * La herramienta de transferencia de contenido es un proceso Java externo que utiliza un montón de JVM de 4 GB
 * AEM La versión que no es AzCopy descarga binarios, los almacena en un espacio temporal en el autor del origen, consumiendo E/S del disco y, a continuación, los carga en el contenedor de Azure, que consume ancho de banda de red

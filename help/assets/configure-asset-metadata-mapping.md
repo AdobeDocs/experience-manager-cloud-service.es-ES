@@ -2,10 +2,10 @@
 title: Configuración de la asignación de metadatos de recursos entre Workfront y Experience Manager Assets
 description: Asigne los campos de metadatos del recurso entre Adobe Workfront y las aplicaciones as a Cloud Service del Experience Manager. Como resultado de la asignación de campos de metadatos, cuando envía un recurso de Workfront a Experience Manager Assets, puede ver los metadatos del recurso asignado en Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ Para enviar la imagen de Workfront a Experience Manager Assets:
 
 1. Clic **[!UICONTROL Enviar a]**, luego elija el nombre de la integración de Experience Manager Assets Essentials.
 
-   ![Enviar a AEM](assets/send-to-aem.png)
+   ![AEM Enviar a la](assets/send-to-aem.png)
 
 1. Seleccione la carpeta de destino del recurso y haga clic en **[!UICONTROL Seleccionar carpeta]**.
 
@@ -89,14 +89,13 @@ Para configurar la asignación de metadatos mediante un nuevo formulario de meta
    1. Especificar `Project Name` en el **[!UICONTROL Etiqueta de campo]** field.
 
    1. Especificar `./jcr:content/metadata/wm:projectName` en el **[!UICONTROL Asignar a la propiedad]** field. Como guía, utilice la siguiente plantilla para definir las asignaciones de campos en Experience Manager Assets:
-
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Al configurar asignaciones en Workfront, ha asignado `wm:projectName` Campo de Experience Manager Assets a Proyecto > Nombre del campo de Workfront.
 
       `wm` hace referencia al nombre de área de nombres y `projectName` hace referencia al título de la propiedad. Utilice el `namespace:propertyTitle` para definir asignaciones de campos de metadatos.
 
-      ![Enviar a AEM](assets/metadata-schema-mapping.png)
+      ![AEM Enviar a la](assets/metadata-schema-mapping.png)
 
 1. Haga clic en **[!UICONTROL Generar formulario]** y arrastre la pestaña **[!UICONTROL Texto de línea única]** al formulario. Haga clic en el componente en el formulario. En el **[!UICONTROL Generar formulario]** pestaña:
 
@@ -124,7 +123,7 @@ Para aplicar la configuración de metadatos a la carpeta de imágenes:
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
 
-1. Seleccione el esquema de metadatos de la lista disponible y haga clic en **[!UICONTROL Aplicar a las carpetas]**.
+1. Seleccione el esquema de metadatos de la lista disponible y haga clic en **[!UICONTROL Aplicar a carpetas]**.
 
 1. Seleccione la carpeta de destino a la que [la imagen se envía desde la aplicación de Adobe Workfront](#send-image-workfront-assets) y haga clic en **[!UICONTROL Aplicar]**.
 

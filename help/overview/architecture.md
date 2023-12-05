@@ -2,10 +2,10 @@
 title: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service
 description: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 12%
+source-wordcount: '2658'
+ht-degree: 11%
 
 ---
 
@@ -133,7 +133,7 @@ Hay otros servicios adyacentes:
    * Es responsable de exponer los datos del cliente, como las métricas de licencia (por ejemplo, Solicitudes de contenido, Almacenamiento, Usuarios) o los informes de uso (como el número de cargas y descargas).
    * Los datos del cliente se pueden exponer a través de las API y dentro de las interfaces de usuario del producto (como Cloud Manager).
 * El servicio Métrica de usuario real (RUM):
-   * Es responsable de recopilar las métricas clave de una experiencia del cliente (como vistas de página, elementos vitales web principales y eventos de conversión), así como de responder a las consultas asociadas (por ejemplo, vistas de página principales de un dominio determinado en los últimos 7 días).
+   * Es responsable de recopilar las métricas clave de una experiencia del cliente (como vistas de página, elementos vitales web principales y eventos de conversión) y responder a las consultas asociadas (por ejemplo, las vistas de página principales de un dominio determinado en los últimos 7 días).
 * El servicio de cómputo de recursos:
    * Es responsable del procesamiento de imágenes, vídeos y documentos cargados; por ejemplo, archivos de PDF y Adobe Photoshop. El procesamiento puede utilizar Adobe Sensei para extraer metadatos de imagen y vídeo (como etiquetas descriptivas o tonos de color principales) y luego generar representaciones (como diferentes tamaños o formatos), con acceso a API como las API de Adobe Photoshop y Adobe Lightroom.
 * El servicio Identity Management (IMS):
@@ -190,7 +190,7 @@ AEM Los desarrolladores y administradores gestionan la aplicación as a Cloud Se
 
 AEM Cloud Manager administra todas las actualizaciones de las instancias de la aplicación as a Cloud Service de la. Es obligatorio, ya que es la única manera de generar, probar e implementar la aplicación del cliente en los niveles de autor, vista previa y publicación. Estas actualizaciones se pueden activar por Adobe, cuando hay lista una nueva versión de AEM Cloud Service, o por su cuenta, cuando hay una nueva versión de la aplicación lista.
 
-Esto se implementa mediante una canalización de implementación, junto con cada entorno dentro de un programa. Cuando se está ejecutando una canalización de Cloud Manager, se crea una nueva versión de la aplicación del cliente, tanto para el nivel de creación como para el de publicación. Esto se logra combinando los últimos paquetes de clientes con la última imagen de línea base de Adobe.
+Esto se implementa mediante una canalización de implementación, junto con cada entorno dentro de un programa. Cuando se está ejecutando una canalización de Cloud Manager, se crea una nueva versión de la aplicación del cliente, tanto para el nivel de creación como para el de publicación. Esto se logra combinando los últimos paquetes de clientes con la última imagen de Adobe de línea de base.
 
 La canalización de implementación se activa cuando los clientes realizan cambios en el código o cuando Adobe implementa una nueva versión de mantenimiento.
 

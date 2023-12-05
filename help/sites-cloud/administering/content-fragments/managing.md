@@ -4,10 +4,10 @@ description: AEM Obtenga información sobre cómo administrar los fragmentos de 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2622'
-ht-degree: 51%
+source-wordcount: '2617'
+ht-degree: 46%
 
 ---
 
@@ -58,7 +58,7 @@ Para obtener más información detallada, consulte:
 
 * [Buscar y filtrar en la consola Fragmentos de contenido](#filtering-fragments)
 
-* Una selección de los [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)métodos abreviados de teclado están disponibles para su uso en esta consola
+* Una selección de [métodos abreviados del teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) están disponibles para su uso en esta consola
 
 >[!NOTE]
 >
@@ -85,9 +85,9 @@ Aquí se pueden ver tres áreas principales:
    * Puede seleccionar una rama específica del árbol
    * Se puede cambiar el tamaño para mostrar carpetas anidadas
 * Panel principal/derecho, desde aquí puede hacer lo siguiente:
-   * Consultar la lista de todos los fragmentos de contenido en la rama seleccionada del árbol:
+   * Consulte la lista de todos los fragmentos de contenido en la rama seleccionada del árbol:
       * Se mostrarán los fragmentos de contenido de la carpeta seleccionada y todas las carpetas secundarias:
-         * La ubicación se indica mediante las rutas de exploración; también se pueden usar para cambiar la ubicación:
+         * La ubicación se indica mediante las rutas de exploración; también se pueden utilizar para cambiar la ubicación:
       * [Se muestra información sobre cada fragmento](#information-content-fragments)
          * [Puede seleccionar qué columnas mostrar](#select-columns-console)
       * [Varios campos de información](#information-content-fragments) acerca de un fragmento de contenido para proporcionar vínculos; según el campo, pueden realizar lo siguiente:
@@ -143,7 +143,7 @@ Al seleccionar un fragmento específico, se abre una barra de herramientas centr
 * **[Mover](/help/assets/manage-digital-assets.md)**
 * **[Cambiar nombre](/help/assets/manage-digital-assets.md)**
 * **[Eliminar](#deleting-a-fragment)**
-* **[Replace](#find-and-replace)**
+* **[Reemplazar](#find-and-replace)**
 
 >[!NOTE]
 >
@@ -223,10 +223,10 @@ Crear un fragmento de contenido:
 
 1. El **Fragmento de contenido nuevo** se abre, desde donde puede especificar lo siguiente:
 
-   * **Ubicación** - esto se completará automáticamente con la ubicación actual, pero puede seleccionar una ubicación diferente si es necesario
-   * **Modelo de fragmento de contenido**: seleccione el modelo que desea utilizar como base del fragmento en la lista desplegable.
+   * **Ubicación** - Completado automáticamente con la ubicación actual, pero puede seleccionar una ubicación diferente si es necesario.
+   * **Modelo de fragmento de contenido** : seleccione el modelo que desea utilizar como base del fragmento en la lista desplegable.
    * **Título**
-   * **Nombre** - se completará automáticamente en función de la variable **Título**, pero puede editarlo si es necesario
+   * **Nombre** - Completado automáticamente en función de **Título**, pero puede editarlo si es necesario.
    * **Descripción**
 
    ![Nuevo cuadro de diálogo Fragmento de contenido](assets/cf-managing-new-cf-dialog.png)
@@ -293,7 +293,7 @@ Puede publicar los fragmentos de contenido en:
 
   >[!CAUTION]
   >
-  >Publicación de fragmentos de contenido en el **Servicio de previsualización** solo está disponible desde la consola Fragmentos de contenido; usando la acción **Publicar**.
+  >Publicación de fragmentos de contenido en **Servicio de previsualización** solo está disponible desde la consola Fragmentos de contenido; se utiliza la variable **Publish** acción.
 
   >[!NOTE]
   >

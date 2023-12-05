@@ -2,9 +2,9 @@
 title: Uso del CRXDE Lite
 description: El CRXDE Lite AEM forma parte del inicio rápido de la y está disponible para acceder y modificar el repositorio en los entornos de desarrollo local dentro del explorador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1678'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ El widget Ruta del nodo muestra la ruta al nodo seleccionado actualmente.
 
 También puede usarlo para saltar a un nodo al introducir la ruta a mano o pegarla desde otro lugar y pulsar Intro.
 
-También es compatible con la búsqueda de nodos con un nombre de nodo específico. Introduzca el nombre del nodo que desea buscar y espere (o seleccione el icono de búsqueda en el lado derecho). Si se carga un nodo o nodos determinados en el panel del explorador, se muestra la lista y puede seleccionar la ruta y pulsar Entrar para desplazarse hasta ella. Tenga en cuenta que solo funciona para los nodos cargados actualmente en la aplicación cliente CRXDE en el explorador. Si desea buscar en todo el repositorio, utilice **Herramientas** ->: **Consulta**.
+También es compatible con la búsqueda de nodos con un nombre de nodo específico. Introduzca el nombre del nodo que desea buscar y espere (o seleccione el icono de búsqueda en el lado derecho). Si se carga un nodo o nodos determinados en el panel del explorador, se muestra la lista y puede seleccionar la ruta y pulsar Entrar para desplazarse hasta ella. Solo funciona para los nodos cargados actualmente en la aplicación cliente CRXDE en el explorador. Si desea buscar en todo el repositorio, utilice **Herramientas** ->: **Consulta**.
 
 ### Panel del explorador {#explorer-pane}
 
@@ -89,7 +89,7 @@ Los permisos se dividen en las siguientes categorías.
 
 >[!NOTE]
 >
->Para poder ver la información de control de acceso, el usuario que ha iniciado sesión en el CRXDE Lite debe tener derechos para leer las entradas ACL.
+Para poder ver la información de control de acceso, el usuario que ha iniciado sesión en el CRXDE Lite debe tener derechos para leer las entradas ACL.
 
 ### Pestaña Replicación {#replication-tab}
 
@@ -190,9 +190,9 @@ Ahora puede adaptar el nodo a sus necesidades modificando propiedades o creando 
 
 >[!NOTE]
 >
->La mayoría de las operaciones de edición, incluidas **Crear nodo**, guarda todos los cambios en la memoria y solo los almacena en el repositorio al guardarlos (mediante el [**Botón Guardar todo**](#save-all-button)). Sin embargo, algunas operaciones, como mover, persisten automáticamente.
+La mayoría de las operaciones de edición, incluidas **Crear nodo**, guarda todos los cambios en la memoria y solo los almacena en el repositorio al guardarlos (mediante el [**Botón Guardar todo**](#save-all-button)). Sin embargo, algunas operaciones, como mover, persisten automáticamente.
 >
->El repositorio también lleva a cabo la validación con respecto a si el tipo de nodo del nodo principal permite el nodo creado al guardar los cambios. Si recibe un mensaje de error al guardar un nodo, compruebe si la estructura de contenido es válida (por ejemplo, no puede crear un `nt:unstructured` nodo como elemento secundario de `nt:folder` node).
+El repositorio también lleva a cabo la validación con respecto a si el tipo de nodo del nodo principal permite el nodo creado al guardar los cambios. Si recibe un mensaje de error al guardar un nodo, compruebe si la estructura de contenido es válida (por ejemplo, no puede crear un `nt:unstructured` nodo como elemento secundario de `nt:folder` node).
 
 ## Creación de una propiedad {#creating-a-property}
 

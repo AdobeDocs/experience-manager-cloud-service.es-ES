@@ -4,10 +4,10 @@ description: Utilice una aplicación React de muestra para aprender a personaliz
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 87%
+source-wordcount: '1017'
+ht-degree: 85%
 
 ---
 
@@ -69,7 +69,7 @@ Ahora que ha modificado un titular en la aplicación, intente cambiar una imagen
 
 1. Vuelva a la pestaña del explorador del editor de fragmentos de contenido desde la vista previa.
 
-1. Debe volver al lugar correcto en el editor de fragmentos de contenido. Las rutas de exploración en la parte superior izquierda del editor muestran dónde se encuentra en la jerarquía de contenido. Haga clic o pulse en **Ciclista de montaña en el Cañón** en las rutas de exploración para volver a esa página.
+1. Debe volver al lugar correcto en el editor de fragmentos de contenido. Las rutas de exploración en la parte superior izquierda del editor muestran dónde se encuentra en la jerarquía de contenido. Seleccionar **Mtn Biker en Canyon** en las rutas de exploración para volver a esa página.
 
    ![Rutas de exploración](assets/do-not-localize/swap-image-2.png)
 

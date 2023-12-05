@@ -2,10 +2,10 @@
 title: Uso del analizador de prácticas recomendadas
 description: Aprenda a utilizar el Analizador de prácticas recomendadas para comprender la preparación de la actualización.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 44%
+source-wordcount: '2418'
+ht-degree: 42%
 
 ---
 
@@ -53,11 +53,11 @@ Best Practices Analyzer se puede descargar como archivo zip desde el portal de d
 
 ## Visualización del informe del Analizador de prácticas recomendadas {#viewing-report}
 
-### Adobe Experience Manager 6.3.0 y versiones posteriores {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 y posterior {#aem-later-versions}
 
 Siga esta sección para obtener información sobre la vista del informe Analizador de prácticas recomendadas:
 
-1. Seleccione Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador de prácticas recomendadas**.
+1. Seleccione Adobe Experience Manager y vaya a herramientas > **Operaciones** > **Analizador de prácticas recomendadas**.
 
    ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
@@ -186,7 +186,7 @@ Las siguientes direcciones URL están disponibles para el acceso HTTP, donde `<h
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` para el formato CSV
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` para el formato TSV
 
-### Ejecución de una petición HTTP {#executing-http-request}
+### Ejecución de una solicitud HTTP {#executing-http-request}
 
 La interfaz HTTP puede utilizarse en diversos métodos.
 
@@ -233,7 +233,7 @@ Los siguientes valores de respuesta son posibles:
 
 ## Información del administrador
 
-### Ajuste de la duración de caché {#cache-adjustment}
+### Ajuste de duración de caché {#cache-adjustment}
 
 La duración predeterminada de la caché de BPA es de 24 horas. AEM Con la opción para actualizar un informe y volver a generar la caché, tanto en la instancia de como en la interfaz HTTP, es probable que este valor predeterminado sea adecuado para la mayoría de los usos del BPA. AEM Si el tiempo de generación de informes es particularmente largo para la instancia de la, es posible que desee ajustar la duración de la caché para minimizar la regeneración del informe.
 
@@ -242,7 +242,7 @@ El valor de duración de la caché se almacena como la `maxCacheAge` propiedad e
 
 El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante CRX/DE Lite.
 
-### Instalar en AEM 6.1 {#installing-on-aem61}
+### AEM Instalación en.1 {#installing-on-aem61}
 
 BPA utiliza una cuenta de usuario de servicio del sistema denominada `repository-reader-service` para ejecutar Pattern Detector. Esta cuenta está disponible en AEM 6.2 y posteriores. AEM En la versión 6.1, se debe crear esta cuenta *antes de* Instalación de BPA siguiendo los pasos siguientes:
 

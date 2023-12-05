@@ -3,10 +3,10 @@ title: Cómo habilitar Adobe Analytics para un formulario adaptable
 description: La automatización de la configuración de Experience Cloud ayuda a conectar Adobe Analytics a un formulario adaptable para realizar un seguimiento de las perspectivas sobre las interacciones y la participación de los visitantes.
 keywords: Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud, habilitar Adobe Analytics en Forms, Adobe Analytics en Formularios adaptables, integración de análisis de Forms, Forms y Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 100%
+source-wordcount: '1555'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ Siga los pasos que se indican a continuación para habilitar y configurar Adobe 
 1. Creación de un contenedor de configuración para los servicios en la nube:
    1. Vaya a **[!UICONTROL Herramientas > General > Explorador de configuración]**.
    1. Seleccione o cree un contenedor de configuración y habilite la carpeta para **[!UICONTROL Configuraciones de nube]**.
-   1. Pulse **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
+   1. Seleccionar **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
 1. En la instancia de AEM, vaya a **[Formularios]** >> **[Formularios y documentos]**.
 1. Seleccione su **[!UICONTROL Formulario]** >> **[!UICONTROL Propiedades]**, en el **[!UICONTROL Contenedor de configuración]**, seleccione el contenedor de configuración que creó o seleccionó en el Paso 1 **[!UICONTROL Explorador de configuración]**.
 1. Seleccione el Panel de tareas en el carril izquierdo y haga clic en **Análisis de configuración** y **Activar Adobe Analytics**.
@@ -210,7 +210,7 @@ Una vez que haya enlazado las reglas de Forms y Sites a través de los pasos men
 
 1. Haga clic en **Flujo de publicaciones** a la izquierda.
 1. Haga clic en **Añadir biblioteca** y escriba el nombre que prefiera.
-1. En el menú desplegable **Entorno** a la derecha, seleccione **desarrollo**.
+1. En el **Entorno** desplegable a la derecha, seleccione **desarrollo**.
 1. Haga clic en **Añadir todos los recursos modificados**.
 1. Haga clic en **Guardar y generar en desarrollo**.
 

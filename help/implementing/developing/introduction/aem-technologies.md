@@ -2,10 +2,10 @@
 title: Fundamentos técnicos de AEM
 description: AEM AEM Una visión general de los fundamentos técnicos de la, incluido cómo se estructura la y las tecnologías fundamentales como JCR, Sling y OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 1%
+source-wordcount: '2130'
+ht-degree: 0%
 
 ---
 
@@ -146,7 +146,7 @@ Todos los scripts de Sling se almacenan en subcarpetas de `/apps` (mutable, scri
 
 Otros puntos que hay que tener en cuenta son:
 
-* Cuando se requiere el método (GET, POST), se especifica en mayúsculas según la especificación HTTP, por ejemplo, `jobs.POST.esp`
+* Cuando se requiere el método (GET, POST), se especifica en mayúsculas como según la especificación HTTP, por ejemplo, `jobs.POST.esp`
 * Se admiten varios motores de scripts, pero los scripts comunes recomendados son HTL y JavaScript.
 
 AEM La lista de motores de scripts admitidos por la instancia determinada de se enumera en la consola de administración de Felix ( ). `http://<host>:<port>/system/console/slingscripting`).
@@ -159,7 +159,7 @@ En el ejemplo anterior, si la variable `sling:resourceType` es `hr/jobs` y luego
    * Se utiliza el POST en el nombre del script.
    * El script es `/apps/hr/jobs/jobs.POST.esp`.
 * URL con otros formatos que no terminan con `.html`
-   * Por ejemplo, `../content/corporate/jobs/developer.pdf`. 
+   * Por ejemplo, `../content/corporate/jobs/developer.pdf`
    * El script es `/apps/hr/jobs/jobs.pdf.esp`; el sufijo se agrega al nombre del script.
 * URL con selectores
    * Los selectores se pueden utilizar para mostrar el mismo contenido en un formato alternativo. Por ejemplo, una versión compatible con una impresora, una fuente RSS o un resumen.
@@ -239,7 +239,7 @@ Si llama a la representación (la secuencia de comandos) directamente, oculta el
    * El `POST.jsp` script en su `sling:resourceType` ubicación
 * Su arquitectura de código ya no es tan limpia ni está tan claramente estructurada como debería ser; es de suma importancia para el desarrollo a gran escala
 
-### API Sling {#sling-api}
+### API de Sling {#sling-api}
 
 Utiliza el paquete de API de Sling, `org.apache.sling.*`, y bibliotecas de etiquetas.
 
@@ -247,7 +247,7 @@ Utiliza el paquete de API de Sling, `org.apache.sling.*`, y bibliotecas de etiqu
 
 Una consideración final es la necesidad de hacer referencia a los elementos existentes dentro de los guiones.
 
-Los scripts más complejos (scripts agregados) acceden a varios recursos (por ejemplo, navegación, barra lateral, pie de página, elementos de una lista) y lo hacen incluyendo el *resource*.
+Los scripts más complejos (scripts de agregación) acceden a varios recursos (por ejemplo, navegación, barra lateral, pie de página, elementos de una lista) y lo hacen incluyendo el *resource*.
 
 En este caso, puede utilizar la variable `sling:include("/<path>/<resource>")` comando. Incluye efectivamente la definición del recurso al que se hace referencia.
 
@@ -273,7 +273,7 @@ Esta arquitectura le permite ampliar Sling con módulos específicos de la aplic
 Esta funcionalidad permite realizar las siguientes acciones en cualquiera de los paquetes de la instalación:
 
 * Instalar
-* Inicial
+* Iniciar
 * Detener
 * Actualizar
 * Desinstalar
@@ -290,7 +290,7 @@ La siguiente lista ofrece información general sobre la estructura que se ve den
 * `/content` : contenido creado para su sitio web.
 * `/etc`
 * `/home` : información de usuario y grupo.
-* `/libs` AEM - Bibliotecas y definiciones que pertenecen al núcleo de la. Las subcarpetas de `/libs` AEM representan las funciones de la aplicación listas para usar de la serie de la aplicación de la aplicación de la. El contenido de `/libs` no se puede modificar. Las funciones específicas del sitio web deben realizarse en `/apps`.
+* `/libs` AEM - Bibliotecas y definiciones que pertenecen al núcleo de la. Las subcarpetas de `/libs` AEM representan las funciones de la aplicación listas para usar de la serie de la aplicación de la. El contenido de `/libs` no se puede modificar. Las funciones específicas del sitio web deben realizarse en `/apps`.
 * `/tmp` - Zona de trabajo temporal.
 * `/var` : archivos que cambian y son actualizados por el sistema; como registros de auditoría, estadísticas y administración de eventos.
 

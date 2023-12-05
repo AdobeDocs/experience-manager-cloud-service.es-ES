@@ -2,9 +2,9 @@
 title: Adición de ContextHub a las páginas y acceso a las tiendas
 description: Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Para habilitar las funciones de ContextHub y vincular a las bibliotecas de JavaS
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-Tenga en cuenta que también debe configurar si la barra de herramientas de ContextHub aparece en el modo de vista previa. Consulte [Mostrar y ocultar la interfaz de usuario de ContextHub](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+También debe configurar si la barra de herramientas de ContextHub aparece en el modo de vista previa. Consulte [Mostrar y ocultar la interfaz de usuario de ContextHub](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## Acerca de las tiendas ContextHub {#about-contexthub-stores}
 
@@ -103,7 +103,7 @@ Los elementos de datos individuales se almacenan como un conjunto de pares clave
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-Tenga en cuenta que los candidatos de tienda personalizados pueden definir funciones adicionales que proporcionen acceso para almacenar datos.
+Los candidatos de tienda personalizados pueden definir funciones adicionales que proporcionen acceso para almacenar datos.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Las reglas que se utilizan para resolver estos segmentos se resumen de la siguie
 
 >[!WARNING]
 >
->Los segmentos instalados se proporcionan como configuraciones de referencia para ayudarle a crear su propia configuración dedicada para su proyecto y, como tales, no deben utilizarse directamente.
+>Los segmentos instalados se proporcionan como configuraciones de referencia para ayudarle a crear su propia configuración dedicada para su proyecto. No los utilice directamente.
 
 ## Depuración de ContextHub {#debugging-contexthub}
 

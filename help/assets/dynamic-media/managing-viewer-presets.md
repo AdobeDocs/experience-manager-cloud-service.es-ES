@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4384'
+source-wordcount: '4326'
 ht-degree: 8%
 
 ---
@@ -69,7 +69,6 @@ Todos los ajustes preestablecidos de visualizador integrados que se incluyen con
 * Apple iPad
 * Smartphone Android™
 * Tablet Android™
-
 <!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### Tipos de medios enriquecidos para ajustes preestablecidos de visor {#rich-media-types-for-viewer-presets}
@@ -291,7 +290,7 @@ Consulte &quot;Notas de la versión de los visualizadores&quot; en la tabla de c
   </tr>
   <tr>
    <td>Zoom_oscuro<br /> </td>
-   <td>Acercar o alejar<br /> </td>
+   <td>Zoom<br /> </td>
    <td><code>html5_basiczoomviewer_dark.css</code></td>
   </tr>
   <tr>
@@ -331,13 +330,13 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
    <td><p>Panes</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Toque</strong></p> </td>
+   <td><p><strong>Seleccionar</strong></p> </td>
    <td><p>Muestra una ventana flotante</p> </td>
    <td><p>Muestra u oculta la interfaz de usuario</p> </td>
    <td><p>Muestra u oculta la interfaz de usuario</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Pulsar dos veces</strong></p> </td>
+   <td><p><strong>Seleccionar dos veces</strong></p> </td>
    <td><p>No se aplica</p> </td>
    <td><p>Aumenta o restablece</p> </td>
    <td><p>Aumenta o restablece</p> </td>
@@ -385,7 +384,7 @@ Experience Manager muestra una amplia variedad de ajustes preestablecidos de vis
 
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
-1. En la propiedad limit, cambie el número al deseado, por ejemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. En la propiedad limit, cambie el número al deseado, por ejemplo, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Seleccionar **[!UICONTROL Guardar todo]**.
 
 ## Crear ajustes preestablecidos de visor {#creating-a-new-viewer-preset}
@@ -420,15 +419,16 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de visu
 
    * En el **[!UICONTROL Tipo seleccionado]** en el menú desplegable, seleccione un componente cuyo diseño visual desee personalizar. Como alternativa, puede seleccionar cualquier elemento visual en el visor para seleccionarlo y configurarlo.
 
-      El editor visual permite ver el efecto que una propiedad determinada tiene en un estilo. Establezca o ajuste cualquier propiedad para ver instantáneamente qué efecto tiene en el visor mediante la muestra a la izquierda del editor.
+     El editor visual permite ver el efecto que una propiedad determinada tiene en un estilo. Establezca o ajuste cualquier propiedad para ver instantáneamente qué efecto tiene en el visor mediante la muestra a la izquierda del editor.
 
-      Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visualizador se describen en &quot;Personalización&quot; *`<viewer name>`* Visor&quot; en el tema de ayuda de [Guía de referencia del visor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por ejemplo, si está creando un ajuste preestablecido de visualizador del tipo `Mixed_Media`, consulte [Personalizar visor de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obtener una lista y una descripción de cada propiedad.
+     Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visualizador se describen en &quot;Personalización&quot; *`<viewer name>`* Visor&quot; en el tema de ayuda de [Guía de referencia del visor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por ejemplo, si está creando un ajuste preestablecido de visualizador del tipo `Mixed_Media`, consulte [Personalizar visor de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obtener una lista y una descripción de cada propiedad.
 
    * Si ha definido la configuración de estilo en un archivo CSS independiente, puede cargar el archivo CSS en Experience Manager Assets. Para buscar el archivo CSS cargado y asociarlo al ajuste preestablecido de visualizador, seleccione **[!UICONTROL Importar CSS]** debajo de la **[!UICONTROL Tipo seleccionado]** menú desplegable (si es necesario, desplace el editor visual hacia arriba para verlo).
 
-      Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si está creando un visor de Zoom, todas las reglas CSS que importe deben definirse con el nombre de clase del visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
+     Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si está creando un visor de Zoom, todas las reglas CSS que importe deben definirse con el nombre de clase del visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
 
-      Puede importar CSS arbitrario y hecho a mano siempre que defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier sección &quot;Personalización *&lt;viewer name=&quot;&quot;>* Visor&quot; en el tema de ayuda de [Guía de referencia del visor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por ejemplo, si desea leer acerca de los marcadores CSS del Visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) Sin embargo, es posible que el editor visual no entienda algunos valores CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
+     Puede importar CSS arbitrario y hecho a mano siempre que defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier sección &quot;Personalización *&lt;viewer name=&quot;&quot;>* Visor&quot; en el tema de ayuda de [Guía de referencia del visor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por ejemplo, si desea leer acerca de los marcadores CSS del Visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) Sin embargo, es posible que el editor visual no entienda algunos valores CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
+
    >[!NOTE]
    >
    >Si prefiere editar la CSS directamente en su formulario sin procesar, seleccione **[!UICONTROL Mostrar/ocultar CSS]** debajo del menú desplegable Tipo seleccionado (si es necesario, desplace el editor visual hacia arriba para verlo).
@@ -513,7 +513,7 @@ Para ilustrar, supongamos que tiene un segmento de vídeo de 30 segundos. Ademá
 | **Subsegmento de vídeo** | **Tiempo de subsegmento en segundos** | **Miniaturas visibles en el panel** |
 |---|---|---|
 | 1 | 0-10 | 1, 2, 3, 4 |
-| 2 | 10-20 | 4, 5, 6, 7 |
+| 2 | De 10 a 20 | 4, 5, 6, 7 |
 | 3 | 20-30 | 6, 7, 8, 9 |
 
 El subsegmento de vídeo 3 no se extiende más allá de las miniaturas que se le han asignado. Observe también que las miniaturas 4, 6 y 7 son visibles en el panel el doble de tiempo que las otras miniaturas.
@@ -533,9 +533,9 @@ En el ejemplo de la tabla anterior, 30 segundos / 3 subsegmentos de vídeo = vis
 
 Al crear ajustes preestablecidos de visualizador de titular de carrusel, se puede acceder a cambiar el estilo de las zonas interactivas de la siguiente manera:
 
-|  | **Descripción** | **Acciones** |
+| | **Descripción** | **Acciones** |
 |---|---|---|
-| **[!UICONTROL Icono de punto interactivo]** | Cambiar el icono utilizado para el punto interactivo | Para cambiar la imagen del icono de punto interactivo, en la **[!UICONTROL Aspecto]** pestaña, en **[!UICONTROL Componente seleccionado]**, seleccione **[!UICONTROL ImageMapEffect]**. En **[!UICONTROL Icono]**, seleccione **[!UICONTROL Fondo]** y, en el campo **[!UICONTROL Imagen]**, vaya a la imagen de fondo que desee. |
+| **[!UICONTROL Icono de punto interactivo]** | Cambiar el icono utilizado para el punto interactivo | Para cambiar la imagen del icono de punto interactivo, en la **[!UICONTROL Aspecto]** pestaña, en **[!UICONTROL Componente seleccionado]**, seleccione **[!UICONTROL ImageMapEffect]**. En **[!UICONTROL Icono]**, seleccione **[!UICONTROL Fondo]** y en el **[!UICONTROL Imagen]** vaya a la imagen de fondo que desee. |
 
 ## Activar o desactivar ajustes preestablecidos de visualizador {#activating-or-deactivating-viewer-presets}
 

@@ -2,10 +2,10 @@
 title: Gestión básica
 description: Familiarícese con la navegación por AEM y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2945'
-ht-degree: 90%
+source-wordcount: '2943'
+ht-degree: 88%
 
 ---
 
@@ -17,13 +17,13 @@ Este documento se ha diseñado para ofrecer una descripción general de la gesti
 >[!NOTE]
 >
 >* Algunas funcionalidades no están disponibles en todas las consolas y es posible que otras adicionales estén disponibles en algunas consolas. En otras páginas se ofrece información específica sobre las consolas individuales y su funcionalidad relacionada.
->* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) y [al editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>* AEM Los métodos abreviados del teclado están disponibles en todo el mundo En particular, cuando [uso de consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) y [edición de páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
 ## Una interfaz con capacidad táctil {#a-touch-enabled-ui}
 
-La interfaz de usuario de AEM tiene capacidad táctil. Una interfaz táctil le permite utilizar el tacto para interactuar con el software mediante gestos como pulsar, pulsar y mantener o deslizar el dedo. Como la interfaz de usuario de AEM es táctil, puede utilizar los gestos táctiles en dispositivos táctiles como el teléfono móvil o la tablet. Sin embargo, también están disponibles las acciones del ratón en un dispositivo de escritorio tradicional, lo que le proporciona flexibilidad en la forma en que elige crear el contenido.
+La interfaz de usuario de AEM tiene capacidad táctil. Una interfaz táctil le permite utilizar el tacto para interactuar con el software mediante gestos como seleccionar, pulsar y mantener o deslizar el dedo. Como la interfaz de usuario de AEM es táctil, puede utilizar los gestos táctiles en dispositivos táctiles como el teléfono móvil o la tablet. Sin embargo, también están disponibles las acciones del ratón en un dispositivo de escritorio tradicional, lo que le proporciona flexibilidad en la forma en que elige crear el contenido.
 
 ## Primeros pasos {#first-steps}
 
@@ -53,7 +53,7 @@ Para volver a la ubicación anterior, puede cerrar el panel de navegación globa
 
 La navegación global dispone de dos paneles, representados por iconos en el lado izquierdo de la pantalla:
 
-* **[Navegación](#navigation-panel)**: se representa mediante una brújula    y el panel predeterminado al iniciar sesión en AEM.
+* **[Navegación](#navigation-panel)** AEM - Se representa mediante una brújula y el panel predeterminado al iniciar sesión en la interfaz de usuario de la aplicación de la interfaz de usuario de la página de
 * **[Herramientas](#tools-panel)**: se representan con un martillo
 
 A continuación, se describen las opciones disponibles en estos paneles.
@@ -255,9 +255,9 @@ La selección de un recurso específico depende de la vista y el dispositivo com
 
 | Ver | Seleccionar opción táctil | Seleccionar escritorio | Anular la selección táctil | Anular la selección de escritorio |
 |---|---|---|---|---|
-| Columna | Pulsar la miniatura | Hacer clic en la miniatura | Pulsar la miniatura | Hacer clic en la miniatura |
-| Tarjeta | Pulsar y mantener la tarjeta | Pasar el ratón y, a continuación, utilizar la marca de verificación de acción rápida | Pulsar la tarjeta | Hacer clic en la tarjeta |
-| Lista | Pulsar la miniatura | Hacer clic en la miniatura | Pulsar la miniatura | Hacer clic en la miniatura |
+| Columna | Seleccionar la miniatura | Hacer clic en la miniatura | Seleccionar la miniatura | Hacer clic en la miniatura |
+| Tarjeta | Seleccione y mantenga pulsada la tarjeta | Pasar el ratón y, a continuación, utilizar la marca de verificación de acción rápida | Seleccione la tarjeta | Hacer clic en la tarjeta |
+| Lista | Seleccionar la miniatura | Hacer clic en la miniatura | Seleccionar la miniatura | Hacer clic en la miniatura |
 
 #### Seleccionar todo {#select-all}
 
@@ -436,7 +436,7 @@ La columna de cronología le permite:
          * Con la excepción de los flujos de trabajo transitorios, ya que para estos no se guarda información de historial <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * Mostrar todos
 
-* Agregar o ver comentarios sobre el elemento seleccionado. El cuadro **Comentario** se muestra en la parte inferior de la lista de eventos. Si se escribe un comentario y se presiona Retorno, el comentario se registra. Se mostrará cuando seleccione **Comentarios** o **Mostrar todo**.
+* Agregar o ver comentarios sobre el elemento seleccionado. El cuadro **Comentario** se muestra en la parte inferior de la lista de eventos. Escribir un comentario y seleccionar Volver hará que se registre el comentario. Se muestra cuando se selecciona **Comentarios** o **Mostrar todo**.
 
 * Determinadas consolas tienen funciones adicionales. Por ejemplo, en la consola Sitios puede:
 

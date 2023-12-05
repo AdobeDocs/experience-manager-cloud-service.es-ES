@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 18%
+source-wordcount: '364'
+ht-degree: 15%
 
 ---
 
@@ -25,7 +25,7 @@ Un tutorial en vídeo que detalla las opciones para integrar varias vistas de la
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-AEM Las funciones de administración de varios sitios de Live Copy y de copia de idioma se utilizan con Commerce Integration Framework para administrar globalmente los sitios en las regiones y las configuraciones regionales.
+AEM Las funciones de administración de varios sitios de Live Copy y de copia de idioma se utilizan con el Commerce integration framework para administrar globalmente los sitios en las regiones y las configuraciones regionales.
 
 AEM La configuración recomendada es utilizar una relación 1:1 entre el sitio de y la vista de la tienda de Adobe Commerce.
 
@@ -39,11 +39,11 @@ AEM AEM CIF Para conectar un sitio de y los componentes principales de la a una 
 
 3. Cree una configuración secundaria de la configuración del CIF de Cloud Service siguiendo estos pasos:
 
-   * AEM En el camino a Herramientas, vaya a Herramientas -> General -> [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * AEM En el paso de la página, vaya a Herramientas > General > [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Seleccione la configuración base que ha creado
    * Cree una configuración siguiendo los pasos descritos anteriormente en el punto 2
 
-   Esta nueva configuración se crea como una configuración secundaria de la base. Ahora puede ir a Herramientas -> General -> Explorador de configuración y crear los ajustes de configuración.
+   Esta nueva configuración se crea como una configuración secundaria de la base. Ahora puede ir a Herramientas > General > Explorador de configuración y crear los ajustes de configuración.
 
    >[!TIP]
    >

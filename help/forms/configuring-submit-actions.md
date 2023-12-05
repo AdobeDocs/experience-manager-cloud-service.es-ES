@@ -2,10 +2,10 @@
 title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 0e6c4e6745a03e0d48c535e2e113d2a7e5ff4e78
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3859'
-ht-degree: 92%
+source-wordcount: '3805'
+ht-degree: 91%
 
 ---
 
@@ -264,7 +264,7 @@ Para conectar AEM Forms a la lista de SharePoint de Microsoft®:
 
 1. Haga clic en **[!UICONTROL Conectar]**. Si la conexión se realiza correctamente, aparece el mensaje `Connection Successful`.
 1. Seleccionar **[!UICONTROL Sitio de SharePoint]** y **[!UICONTROL Lista de SharePoint]** en la lista desplegable.
-1. Pulse **[!UICONTROL Crear]** para crear la configuración de nube para Microsoft® SharePointList.
+1. Seleccionar **[!UICONTROL Crear]** para crear la configuración de nube para Microsoft® SharePointList.
 
 
 #### Uso del envío mediante el modelo de datos de formulario en un formulario adaptable {#use-submit-using-fdm}

@@ -2,10 +2,10 @@
 title: 'Creación de una carpeta de recursos: configuración sin encabezado'
 description: Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 88%
+source-wordcount: '375'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,7 @@ Un administrador solo tendría que crear carpetas ocasionalmente para organizar 
       * Se puede modificar si es necesario.
 
    ![Crear carpeta](../assets/assets-folder-create.png)
-1. Seleccione la carpeta que acaba de crear pasando el puntero sobre ella y pulsando la marca de verificación. A continuación, seleccione **Propiedades** en la barra de herramientas (o utilice el `p` [método abreviado de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
+1. Seleccione la carpeta que ha creado pasando el puntero sobre ella y pulsando la marca de verificación. A continuación, seleccione **Propiedades** en la barra de herramientas (o utilice el `p` [método abreviado de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
 1. En la ventana **Propiedades**, seleccione la pestaña **Servicios de nube**.
 1. Para la **Configuración de nube**, seleccione la [configuración que creó anteriormente.](create-configuration.md)
    ![Configurar la carpeta de recursos](../assets/assets-folder-configure.png)
@@ -43,7 +43,7 @@ Un administrador solo tendría que crear carpetas ocasionalmente para organizar 
 
    ![Ventana de confirmación](../assets/assets-folder-confirmation.png)
 
-Puede crear subcarpetas adicionales dentro de la carpeta que acaba de crear. Las subcarpetas heredarán la **Configuración de nube** de la carpeta principal. Sin embargo, esto se puede sobrescribir si desea utilizar modelos de otra configuración.
+Puede crear subcarpetas adicionales dentro de la carpeta que ha creado. Las subcarpetas heredarán la **Configuración de nube** de la carpeta principal. Sin embargo, esto se puede sobrescribir si desea utilizar modelos de otra configuración.
 
 Si está usando una estructura de sitio localizada, puede [crear una raíz de idioma](/help/assets/translate-assets.md) debajo de la nueva carpeta.
 

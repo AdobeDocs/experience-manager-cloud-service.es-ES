@@ -2,10 +2,10 @@
 title: Registro, inicio de sesión y perfil de usuario
 description: Obtenga información sobre el registro, el inicio de sesión, los datos de usuario y la sincronización de grupos para AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 93%
+source-wordcount: '1132'
+ht-degree: 90%
 
 ---
 
@@ -113,7 +113,7 @@ Independientemente del inicio de sesión, el código personalizado también pued
 
 ## Sincronización de datos {#data-synchronization}
 
-Los usuarios finales de sitios web esperan una experiencia coherente en cada solicitud de página web o incluso cuando inician sesión con un explorador diferente, aunque no sean conscientes de que se los lleva a diferentes nodos de servidor de la infraestructura del nivel de publicación. AEM as a Cloud Service lo consigue sincronizando rápidamente la `/home` jerarquía de carpetas (información de perfil de usuario, pertenencia a grupos, etc.) en todos los nodos del nivel de publicación.
+Los usuarios finales de sitios web esperan una experiencia coherente en cada solicitud de página web o incluso cuando inician sesión con un explorador diferente, aunque no sean conscientes de que se los lleva a diferentes nodos de servidor de la infraestructura del nivel de publicación. AEM El as a Cloud Service lo consigue sincronizando rápidamente el `/home` jerarquía de carpetas (información de perfil de usuario, pertenencia a grupos, etc.) en todos los nodos del nivel de publicación.
 
 A diferencia de otras soluciones de AEM, la sincronización de usuarios y la pertenencia a grupos en AEM as a Cloud Service no utiliza un enfoque de mensajería de extremo a extremo, sino que implementa un enfoque de publicación-suscripción que no requiere la configuración del cliente.
 

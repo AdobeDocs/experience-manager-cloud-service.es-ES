@@ -2,10 +2,10 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan para crear una página que se utiliza como base para la nueva página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3278'
-ht-degree: 8%
+source-wordcount: '3267'
+ht-degree: 4%
 
 ---
 
@@ -56,7 +56,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * La estructura permite definir componentes y contenido para la plantilla.
    * Los componentes definidos en la estructura de la plantilla no se pueden mover a una página resultante ni eliminar de ninguna página resultante.
    * Si desea que los autores de páginas puedan añadir y quitar componentes, agregue un sistema de párrafos a la plantilla.
-   * Los componentes pueden volver a desbloquearse y bloquearse para que pueda definir el contenido inicial.
+   * Los componentes se pueden volver a desbloquear y bloquear para permitirle definir el contenido inicial.
 
    Para obtener más información sobre cómo define la estructura un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
@@ -86,7 +86,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    **Diseño**
 
    * Puede definir el diseño de la plantilla para una amplia gama de dispositivos.
-   * El diseño interactivo para las plantillas funciona tal como lo hace para la creación de páginas.
+   * El diseño interactivo para las plantillas funciona igual que para la creación de páginas.
 
    Para obtener más información sobre cómo define el diseño de la plantilla un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
 
@@ -141,7 +141,7 @@ Para organizar las plantillas, puede utilizar las siguientes carpetas:
 >
 >Aunque puede anidar las carpetas, cuando el usuario las vea en la **Plantillas** consola se presentan como una estructura plana.
 
-En una instancia estándar de AEM, la carpeta `global` ya existe en la consola de plantillas. Contiene plantillas predeterminadas y actúa como alternativa en caso de que no se encuentre ninguna política ni ningún tipo de plantilla en la carpeta actual. Puede agregar las plantillas predeterminadas a esta carpeta o crear una carpeta (recomendado).
+AEM En una instancia estándar, la variable `global` ya existe una carpeta en la consola de plantillas. Contiene plantillas predeterminadas y actúa como alternativa en caso de que no se encuentre ninguna política ni ningún tipo de plantilla en la carpeta actual. Puede agregar las plantillas predeterminadas a esta carpeta o crear una carpeta (recomendado).
 
 >[!NOTE]
 >
@@ -241,7 +241,7 @@ La siguiente tabla detalla los permisos necesarios para editar plantillas.
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
-   <td>Template Autores<br /> </td>
+   <td>Autores de plantillas<br /> </td>
    <td>leer, escribir, replicar</td>
    <td>Autores de plantillas que crean, leen, actualizan, eliminan y replican plantillas en sitios específicos <code>/conf</code> espacio</td>
   </tr>
@@ -425,7 +425,7 @@ Este nodo contiene propiedades para la plantilla:
 
 * **Nombre**: `jcr:title`
 * **Nombre**: `status`
-   * &grave;&grave;**Tipo**: `String`
+   * &quot;**Tipo**: `String`
    * **Valor**: `draft`, `enabled` o `disabled`
 
 ### Estructura {#structure}
@@ -489,7 +489,6 @@ Las políticas de página permiten definir la variable [política de contenido](
    * Estableciendo la propiedad status en `jcr:content` nodo.
 
       * Por ejemplo, en:
-
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Defina la propiedad:
@@ -502,7 +501,6 @@ Las políticas de página permiten definir la variable [política de contenido](
 
    * [Defina las rutas de plantilla permitidas en la variable **Propiedades de página**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) de la página adecuada o de la página raíz de una subrama.
    * Establezca la propiedad:
-
      `cq:allowedTemplates`
 En el `jcr:content` de la rama requerida.
 
@@ -595,8 +593,8 @@ El diagrama siguiente muestra el proceso de evaluación de la plantilla:
 
 #### Limitación de plantillas utilizadas en páginas secundarias {#limiting-templates-used-in-child-pages}
 
-Para limitar qué plantillas se pueden utilizar para crear páginas secundarias en una página determinada, utilice la variable `cq:allowedTemplates` propiedad de `jcr:content` de la página para especificar la lista de plantillas que pueden utilizarse como páginas secundarias. Cada valor de la lista debe ser una ruta absoluta a una plantilla para una página secundaria permitida, por ejemplo `/apps/wknd/templates/page-content`.
+Para limitar qué plantillas se pueden utilizar para crear páginas secundarias en una página determinada, utilice la variable `cq:allowedTemplates` propiedad de `jcr:content` de la página para especificar la lista de plantillas que pueden utilizarse como páginas secundarias. Cada valor de la lista debe ser una ruta absoluta a una plantilla para una página secundaria permitida, por ejemplo, `/apps/wknd/templates/page-content`.
 
 Puede usar el complemento `cq:allowedTemplates` propiedad en la plantilla  `jcr:content` para aplicar esta configuración a todas las páginas creadas que utilicen esta plantilla.
 
-Si desea agregar más restricciones, por ejemplo con respecto a la jerarquía de plantillas, puede utilizar la variable `allowedParents/allowedChildren` propiedades en la plantilla. A continuación, puede especificar explícitamente que las páginas creadas a partir de una plantilla T tengan que ser páginas principales o secundarias de páginas creadas a partir de una plantilla T.
+Si desea agregar más restricciones, por ejemplo, con respecto a la jerarquía de plantillas, puede utilizar la variable `allowedParents/allowedChildren` propiedades en la plantilla. A continuación, puede especificar explícitamente que las páginas creadas a partir de una plantilla T tengan que ser páginas principales o secundarias de páginas creadas a partir de una plantilla T.

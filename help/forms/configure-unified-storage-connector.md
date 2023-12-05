@@ -2,10 +2,10 @@
 title: Cómo configurar el conector de almacenamiento unificado (USC) para AEM Forms
 description: Obtenga información sobre cómo administrar el conector de almacenamiento unificado (USC) para AEM Forms. Utilice el conector de almacenamiento unificado (USC) para conectar AEM Forms a almacenes de datos externos.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 82%
+source-wordcount: '642'
+ht-degree: 76%
 
 ---
 
@@ -26,10 +26,10 @@ Antes de ejecutar estos pasos, asegúrese de que dispone de una cuenta de [!DNL 
 Siga estos pasos para crear la configuración de [!DNL Azure] Storage:
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Almacenamiento de Azure]**.
-1. Seleccione una carpeta para crear la configuración y pulse **[!UICONTROL Crear]**.
+1. Seleccione una carpeta para crear la configuración y seleccione **[!UICONTROL Crear]**.
 1. Especifique un título para la configuración en el campo **[!UICONTROL Título]**.
 1. Especifique el nombre de la cuenta de [!DNL Azure] Storage en el campo **[!UICONTROL Cuenta de Azure Storage]**.
-1. Especifique la clave para acceder a la cuenta de Azure Storage en el campo **[!UICONTROL Clave de acceso de Azure]** y pulse **[!UICONTROL Guardar]**.
+1. Especifique la clave para acceder a la cuenta de almacenamiento de Azure en la **[!UICONTROL Clave de acceso de Azure]** y seleccione **[!UICONTROL Guardar]**.
 
 ### AEM Configuración del conector de almacenamiento unificado (USC) para flujos de trabajo de la {#configure-unified-storage-connector-workflows}
 
@@ -39,17 +39,17 @@ AEM Realice los siguientes pasos para configurar el conector de almacenamiento u
 
 1. En la sección **[!UICONTROL Flujo de trabajo]**, seleccione **[!UICONTROL Azure]** en la lista desplegable Almacenamiento.
 1. Especifique la ruta de configuración [para la configuración del almacenamiento de Azure](#create-azure-storage-configuration) en el campo **[!UICONTROL Ruta de configuración del almacenamiento]**.
-1. Pulse **[!UICONTROL Publicar]** y, a continuación, pulse **[!UICONTROL Guardar]** para guardar la configuración.
+1. Seleccionar **[!UICONTROL Publish]** y luego seleccione **[!UICONTROL Guardar]** para guardar la configuración.
 
 ### Configuración de un modelo de flujo de trabajo de AEM para un almacenamiento de datos externo {#configure-workflow-external-data-storage}
 
 Realice los siguientes pasos para configurar un modelo de flujo de trabajo de AEM para un almacenamiento de datos externo:
 
-1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. Navegue hasta **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
 1. Seleccione el nombre de un modelo y pulse **[!UICONTROL Editar]**.
-1. Pulse el icono Información de página y luego pulse **[!UICONTROL Abrir propiedades]**.
+1. Seleccione el icono Información de página y luego pulse **[!UICONTROL Abrir propiedades]**.
 1. Seleccione **[!UICONTROL Externalizar el almacenamiento de los datos del flujo de trabajo]**.
-1. Pulse **[!UICONTROL Guardar y cerrar]** para guardar las propiedades.
+1. Seleccione **[!UICONTROL Guardar y cerrar]** para guardar las propiedades.
 
 >[!NOTE]
 >

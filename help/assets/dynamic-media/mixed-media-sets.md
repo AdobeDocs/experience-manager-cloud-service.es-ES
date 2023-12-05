@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 14%
+source-wordcount: '1507'
+ht-degree: 11%
 
 ---
 
@@ -118,7 +118,7 @@ Al agregar recursos al conjunto, estos se agregan automáticamente en orden alfa
 
 1. Para eliminar un recurso, seleccione la casilla de verificación correspondiente y seleccione **[!UICONTROL Eliminar recurso]**.
 1. Para aplicar un ajuste preestablecido, seleccione **[!UICONTROL Preestablecido]** en la esquina superior derecha, seleccione un ajuste preestablecido para aplicarlo a los recursos.
-1. Seleccione **[!UICONTROL Guardar]**. El conjunto de medios mixtos creado aparecerá en la carpeta en la que lo creó.
+1. Seleccionar **[!UICONTROL Guardar]**. El conjunto de medios mixtos creado aparecerá en la carpeta en la que lo creó.
 
 ## Editar conjuntos de medios mixtos {#editing-mixed-media-sets}
 
@@ -158,7 +158,7 @@ Puede realizar varias tareas de edición en los recursos de conjuntos de medios 
 
    >[!NOTE]
    >
-   >* Para editar los recursos de un conjunto de medios mixtos, vaya al conjunto de medios mixtos. Pulse (no seleccione) el conjunto para poder abrirlo en la página Vista previa del conjunto de Experience Manager. En el carril izquierdo, seleccione el circunflejo invertido para abrir la lista desplegable y, a continuación, seleccione **[!UICONTROL Definir miembros]**. En la página Definir miembros, coloque el puntero sobre un recurso y seleccione **[!UICONTROL Editar]** (icono de lápiz) para abrir la página de edición.
+   >* Para editar los recursos de un conjunto de medios mixtos, vaya al conjunto de medios mixtos. Seleccione (no seleccione) el conjunto para poder abrirlo en la página Vista previa del conjunto de Experience Manager. En el carril izquierdo, seleccione el circunflejo invertido para abrir la lista desplegable y, a continuación, seleccione **[!UICONTROL Definir miembros]**. En la página Definir miembros, coloque el puntero sobre un recurso y seleccione **[!UICONTROL Editar]** (icono de lápiz) para abrir la página de edición.
    >
    >* Para eliminar un conjunto de medios mixtos completo, en cualquier modo de visualización (como la vista de tarjeta o la vista de columna), vaya al conjunto de medios mixtos. Pase el ratón sobre el conjunto y seleccione **[!UICONTROL Seleccionar]** (icono de marca de verificación). Prensa **[!UICONTROL Retroceso]** en el teclado o seleccione **[!UICONTROL Más]** (fila de tres puntos) y seleccione **[!UICONTROL Eliminar]**.
 

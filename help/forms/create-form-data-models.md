@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 100%
+source-wordcount: '1512'
+ht-degree: 83%
 
 ---
 
@@ -37,17 +37,17 @@ La integración de datos de [!DNL Experience Manager Forms] ofrece una interfaz 
 Asegúrese de haber configurado las fuentes de datos que desea utilizar en el modelo de datos de formulario como se describe en [Configurar fuentes de datos](configure-data-sources.md). Para crear un modelo de datos de formulario basado en fuentes de datos configuradas, haga lo siguiente:
 
 1. En la instancia de autor de [!DNL Experience Manager], vaya a **[!UICONTROL Formularios > Integraciones de datos]**.
-1. Pulse **[!UICONTROL Crear > Modelo de datos de formulario.]**
+1. Seleccionar **[!UICONTROL Crear > Modelo de datos de formulario]**.
 1. En el cuadro de diálogo Crear un modelo de datos de formulario:
 
    * Especifique un nombre para el modelo de datos del formulario.
    * (**Opcional**) Especifique el título, la descripción y las etiquetas del modelo de datos del formulario.
-   * (**Opcional y aplicable solo si se configuran fuentes de datos**) Pulse el icono de verificación situado junto al campo **[!UICONTROL Configuración de la fuente de datos]** y seleccione el nodo de configuración donde residen los servicios en la nube para las fuentes de datos que desea utilizar. Restringe la lista de fuentes de datos disponibles para su selección en la página siguiente a las disponibles en el nodo de configuración seleccionado. Sin embargo, cualquier fuente de datos de perfil de usuario de [!DNL Experience Manager] se enumera de forma predeterminada. Si no selecciona un nodo de configuración, se enumeran las fuentes de datos de todos los nodos de configuración.
+   * (**Opcional y aplicable solo si se han configurado fuentes de datos**) Seleccione el icono de verificación situado junto a **[!UICONTROL Configuración de fuente de datos]** y seleccione el nodo de configuración donde residen los servicios en la nube para las fuentes de datos que desea utilizar. Restringe la lista de fuentes de datos disponibles para su selección en la página siguiente a las disponibles en el nodo de configuración seleccionado. Sin embargo, cualquier fuente de datos de perfil de usuario de [!DNL Experience Manager] se enumera de forma predeterminada. Si no selecciona un nodo de configuración, se enumeran las fuentes de datos de todos los nodos de configuración.
 
-1. Pulse **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Siguiente]**.
 
 1. (**Aplicable únicamente si se han configurado fuentes de datos**). La pantalla **[!UICONTROL Seleccionar fuente de datos]** enumera las fuentes de datos disponibles, si las hay. Seleccione las fuentes de datos que desee utilizar en el modelo de datos de formulario.
-1. Pulse **[!UICONTROL Crear]** y en el cuadro de diálogo de confirmación, pulse **[!UICONTROL Abrir]** para abrir el editor del modelo de datos de formulario.
+1. Seleccionar **[!UICONTROL Crear]** y en el cuadro de diálogo de confirmación, seleccione **[!UICONTROL Abrir]** para abrir el editor del modelo de datos de formulario.
 
    Revisemos los diferentes componentes de la interfaz de usuario del editor del modelo de datos de formulario.
 
@@ -71,21 +71,21 @@ Para obtener más información sobre el editor del modelo de datos de formulario
 
 Haga lo siguiente para agregar o actualizar fuentes de datos a un modelo de datos de formulario existente.
 
-1. Vaya a **[!UICONTROL Formularios > Integraciones de datos]**, seleccione el modelo de datos de formulario en el que desea agregar o actualizar las fuentes de datos y pulse **[!UICONTROL Propiedades]**.
+1. Ir a **[!UICONTROL Forms > Integraciones de datos]**, seleccione el modelo de datos de formulario en el que desea agregar o actualizar las fuentes de datos y seleccione **[!UICONTROL Propiedades]**.
 1. En las propiedades del modelo de datos de formulario, vaya a la pestaña **[!UICONTROL Actualizar fuente]**.
 
    En la pestaña **[!UICONTROL Actualizar fuente]**:
 
-   * Toque el icono Examinar en el campo **[!UICONTROL Configuración según el contexto]** y seleccione un nodo de configuración en el que reside la configuración de nube para la fuente de datos que desea agregar. Si no selecciona ningún nodo, solo se enumeran las configuraciones de nube que residen en el nodo `global` al pulsar **[!UICONTROL Añadir fuentes]**.
+   * Seleccione el icono de examinar en la **[!UICONTROL Configuración según el contexto]** y seleccione un nodo de configuración en el que reside la configuración de nube para la fuente de datos que desea agregar. Si no selecciona ningún nodo, las configuraciones de nube de solo residen en el `global` Los nodos de se muestran al seleccionar **[!UICONTROL Agregar orígenes]**.
 
-   * Para agregar una fuente de datos nueva, pulse **[!UICONTROL Añadir fuentes]** y seleccione las fuentes de datos que desea añadir al modelo de datos de formulario. Se muestran todas las fuentes de datos configuradas en `global` y el nodo de configuración seleccionado, de haber.
+   * Para añadir una nueva fuente de datos, seleccione **[!UICONTROL Agregar orígenes]** y seleccione las fuentes de datos que desea añadir al modelo de datos de formulario. Se muestran todas las fuentes de datos configuradas en `global` y el nodo de configuración seleccionado, de haber.
 
-   * Para reemplazar una fuente de datos existente por otra fuente de datos del mismo tipo, pulse el icono **[!UICONTROL Editar]** para la fuente de datos y seleccione en la lista de fuentes de datos disponibles.
-   * Para eliminar una fuente de datos existente, pulse el icono **[!UICONTROL Eliminar]** para la fuente de datos. El icono Eliminar está desactivado si se añade un objeto de modelo de datos en la fuente de datos en el modelo de datos del formulario.
+   * Para reemplazar una fuente de datos existente por otra fuente de datos del mismo tipo, seleccione la opción **[!UICONTROL Editar]** para la fuente de datos y seleccione en la lista de fuentes de datos disponibles.
+   * Para eliminar una fuente de datos existente, seleccione la **[!UICONTROL Eliminar]** para la fuente de datos. El icono Eliminar está desactivado si se añade un objeto de modelo de datos en la fuente de datos en el modelo de datos del formulario.
 
      ![fdm-properties](assets/fdm-properties.png)
 
-1. Pulse **[!UICONTROL Guardar y cerrar]** para guardar las actualizaciones.
+1. Seleccionar **[!UICONTROL Guardar y cerrar]** para guardar las actualizaciones.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Haga lo siguiente para agregar o actualizar fuentes de datos a un modelo de dato
 
 [!UICONTROL El modelo de datos de formulario] utiliza [Configuraciones según el contexto de Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=es) para ser compatible con distintos parámetros de fuente de datos y conectarse con fuentes de datos para diferentes modos de ejecución de [!DNL Experience Manager].
 
-Cuando el [!UICONTROL modelo de datos de formulario] utiliza configuraciones de nube para almacenar parámetros, que cuando se registran e implementan mediante el control de fuente (repositorio GIT de Cloud Manager), crea una configuración de nube con los mismos parámetros para todos los modos de ejecución (desarrollo, fase y producción). Sin embargo, en los casos de uso en los que sea necesario tener diferentes conjuntos de datos para entornos de prueba y producción, se utilizan parámetros de fuente de datos (por ejemplo, la URL de la fuente de datos) para diferentes modos de ejecución de [!DNL Experience Manager].
+Cuando el [!UICONTROL modelo de datos de formulario] utiliza configuraciones de nube para almacenar parámetros, que cuando se registran e implementan mediante el control de fuente (repositorio GIT de Cloud Manager), crea una configuración de nube con los mismos parámetros para todos los modos de ejecución (desarrollo, fase y producción). Sin embargo, en los casos de uso en los que sea necesario tener diferentes conjuntos de datos para entornos de prueba y producción, se utilizan parámetros de fuente de datos (por ejemplo, la URL de la fuente de datos) para diferentes [!DNL Experience Manager] modos de ejecución.
 
 Para conseguirlo, debe crear una configuración de OSGi que contenga pares de parámetros-valor de la fuente de datos. Esto anula el mismo par de la configuración de nube del [!UICONTROL modelo de datos de formulario] en el momento de ejecución. Como las configuraciones de OSGi son compatibles con estos modos de ejecución de forma predeterminada, puede anular un parámetro de fuente de datos en diferentes valores según el modo de ejecución.
 
@@ -114,7 +114,7 @@ Para habilitar las configuraciones de nube específicas de la implementación en
 
 1. Cree una configuración de Apache Sling según el contexto. Para crear la configuración de OSGi:
    1. **Establezca los archivos de configuración de OSGi en el tipo de archivo del proyecto [!DNL Experience Manager].**
-Cree los archivos de configuración de fábrica de OSGi con PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Cree un archivo con el mismo nombre en cada carpeta del modo de ejecución donde los valores deban cambiarse por modo de ejecución. Para obtener más información, consulte [Configurar OSGi para  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+Crear archivos de configuración de fábrica de OSGi con PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Cree un archivo con el mismo nombre en cada carpeta del modo de ejecución donde los valores deban cambiarse por modo de ejecución. Para obtener más información, consulte [Configurar OSGi para  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **Establezca el json de configuración de OSGI.** Para utilizar el proveedor de anulación de configuración de Apache Sling según el contexto:
       1. En la instancia de desarrollo local `/system/console/configMgr`, seleccione la configuración de fábrica de OSGi con el nombre **[!UICONTROL Proveedor de anulación de configuración de Apache Sling según el contexto: Configuración de OSGi]**.

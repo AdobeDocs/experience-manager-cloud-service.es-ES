@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 89%
+source-wordcount: '761'
+ht-degree: 80%
 
 ---
 
 # Aplicar estilos en línea a los componentes de un formulario adaptable {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -27,8 +27,8 @@ Puede definir el aspecto y el estilo generales de un formulario adaptable especi
 
 Para añadir estilos en línea a un componente:
 
-1. Abra el formulario en el Editor de formularios y cambie el modo al modo Estilo. Para cambiar el modo al modo Estilo, en la barra de herramientas de la página, pulse ![lista desplegable de lienzo](assets/Smock_ChevronDown.svg) > **[!UICONTROL Estilo]**.
-1. Seleccione un componente de la página y pulse el botón Editar ![botón-editar](assets/edit.svg). Las propiedades del estilo se abren en la barra lateral.
+1. Abra el formulario en el Editor de formularios y cambie el modo al modo Estilo. Para cambiar el modo al modo Estilo, en la barra de herramientas de la página, seleccione ![lista desplegable de lienzo](assets/Smock_ChevronDown.svg) > **[!UICONTROL Estilo]**.
+1. Seleccione un componente de la página y haga clic en el botón Editar ![edit-button](assets/edit.svg). Las propiedades del estilo se abren en la barra lateral.
 
    También puede seleccionar componentes en el árbol de jerarquía del formulario de la barra lateral. El árbol de jerarquía del formulario está disponible como Objetos del formulario en la barra lateral.
 
@@ -46,7 +46,7 @@ Para añadir estilos en línea a un componente:
    * [!UICONTROL Avanzadas] (Permite escribir CSS personalizado para el componente)
 
 1. Del mismo modo, puede aplicar estilos a otras partes de un componente, como [!UICONTROL Widget], [!UICONTROL Pie de ilustración] y [!UICONTROL Ayuda].
-1. Pulse **[!UICONTROL Listo]** para confirmar los cambios o **[!UICONTROL Cancelar]** para descartarlos.
+1. Seleccionar **[!UICONTROL Listo]** para confirmar los cambios o **[!UICONTROL Cancelar]** para descartar los cambios.
 
 ## Ejemplo: estilos en línea de un componente de campo {#example-inline-styles-for-a-field-component}
 
@@ -111,9 +111,9 @@ Siguiendo los pasos anteriores, puede seleccionar y aplicar estilos a otros comp
 
 ## Copiar y pegar estilos {#copy-paste-styles}
 
-También puede copiar y pegar un estilo de un componente a otro en un formulario adaptable. En el modo **[!UICONTROL Estilo]**, pulse el componente y pulse el icono Copiar ![Copiar](assets/property-copy-icon.svg).
+También puede copiar y pegar un estilo de un componente a otro en un formulario adaptable. En el **[!UICONTROL Estilo]** , seleccione el componente y seleccione el icono Copiar ![Copiar](assets/property-copy-icon.svg).
 
-Pulse el otro componente del mismo tipo y pulse el icono Pegar ![Copiar](assets/Smock_Paste_18_N.svg) para pegar el estilo copiado. También puede pulsar el icono Borrar estilo ![Copiar](assets/clear-style-icon.svg) para borrar el estilo aplicado.
+Seleccione el otro componente del mismo tipo y seleccione el icono Pegar ![Copiar](assets/Smock_Paste_18_N.svg) para pegar el estilo copiado. También puede seleccionar el icono Borrar estilo ![Copiar](assets/clear-style-icon.svg) para borrar el estilo aplicado.
 
 ## Definir estilos para diferentes estados de un componente {#set-styles-for-states}
 
@@ -121,15 +121,15 @@ Puede definir estilos para los diferentes estados de un tipo de componente. Los 
 
 Para definir el estilo de un estado de un componente:
 
-1. En el modo **[!UICONTROL Estilo]**, pulse el componente y pulse el icono Editar ![Editar](assets/Smock_Edit_18_N.svg).
+1. En el **[!UICONTROL Estilo]** , seleccione el componente y seleccione el icono Editar ![Editar](assets/Smock_Edit_18_N.svg).
 
 1. Seleccione el estado del componente mediante la lista desplegable **[!UICONTROL Estado]**.
 
    ![Seleccionar estado](assets/select-state.png)
 
-1. Defina el estilo para el estado seleccionado del componente y pulse ![Guardar](assets/save_icon.svg) para guardar las propiedades.
+1. Defina el estilo para el estado seleccionado del componente y seleccione ![Guardar](assets/save_icon.svg) para guardar las propiedades.
 
-También puede simular los estados de éxito y error. Pulse el icono Expandir para ver las opciones **[!UICONTROL Simular éxito]** y **[!UICONTROL Simular error]**.
+También puede simular los estados de éxito y error. Seleccione el icono Expandir para ver el **[!UICONTROL Simulación correcta]** y **[!UICONTROL Error de simulación]** opciones.
 
 ![Simular estados](assets/simulate-states.png)
 

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2400'
-ht-degree: 19%
+source-wordcount: '2391'
+ht-degree: 18%
 
 ---
 
@@ -114,7 +114,7 @@ Las colecciones inteligentes se crean guardando una búsqueda para que pueda mod
 1. En la lista **[!UICONTROL Búsquedas guardadas]**, seleccione la colección inteligente que desee modificar. El panel Buscar aparecen los filtros configurados para la búsqueda guardada.
 1. Desde el **[!UICONTROL Archivos y carpetas]** , seleccione **[!UICONTROL Archivos]**.
 1. Modifique uno o más filtros según sea necesario. Seleccionar **[!UICONTROL Editar colección inteligente]**. También puede editar el nombre de la colección inteligente.
-1. Seleccione **[!UICONTROL Guardar]**. El **[!UICONTROL Editar colección inteligente]** aparece el cuadro de diálogo.
+1. Seleccionar **[!UICONTROL Guardar]**. El **[!UICONTROL Editar colección inteligente]** aparece el cuadro de diálogo.
 1. Seleccionar **[!UICONTROL Sobrescribir]** para reemplazar la colección inteligente original por la colección editada. Como alternativa, seleccione **[!UICONTROL Guardar como]** para guardar la colección editada por separado.
 1. En el cuadro de diálogo de confirmación, seleccione **[!UICONTROL Guardar]** para completar el proceso.
 
@@ -231,7 +231,7 @@ Puede agregar una colección a otra colección, creando así una colección anid
 
 En la interfaz de usuario de Assets, puede buscar o filtrar recursos en función de determinadas reglas, criterios de búsqueda o facetas de búsqueda personalizadas. Si los guarda como **[!UICONTROL Búsquedas guardadas]**, puede acceder a ellos más adelante desde la lista **[!UICONTROL Búsquedas guardadas]** del panel Filtro. Al crear una búsqueda guardada también se crea una colección inteligente.
 
-Las búsquedas guardadas se crean al crear una colección inteligente. Las colecciones inteligentes se agregan automáticamente a la lista **[!UICONTROL Búsquedas guardadas]**. La consulta Búsquedas guardadas para la colección se guarda en la `dam:query`propiedad de CRXDE en la ubicación relativa`/content/dam/collections/`. No existen límites para las búsquedas que se pueden guardar y para las búsquedas guardadas que se muestran en la lista.
+Las búsquedas guardadas se crean al crear una colección inteligente. Las colecciones inteligentes se agregan automáticamente a la lista **[!UICONTROL Búsquedas guardadas]**. La consulta Búsquedas guardadas para la colección se guarda en `dam:query` propiedad en CRXDE en la ubicación relativa `/content/dam/collections/`. No existen límites para las búsquedas que se pueden guardar y para las búsquedas guardadas que se muestran en la lista.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la co
 
 1. En la consola Colecciones, seleccione la colección en la que desea ejecutar un flujo de trabajo.
 1. Seleccione el icono de navegación global y elija **[!UICONTROL Cronología]** de la lista.
-1. En la cronología, pulse o seleccione el icono del circunflejo invertido en la parte inferior y, a continuación, seleccione **[!UICONTROL Iniciar flujo de trabajo]**.
+1. En la cronología, seleccione el icono del circunflejo invertido en la parte inferior y, a continuación, seleccione **[!UICONTROL Iniciar flujo de trabajo]**.
 1. En la sección **[!UICONTROL Iniciar flujo de trabajo]**, seleccione un modelo de flujo de trabajo de la lista. Por ejemplo, seleccione el modelo **[!UICONTROL Recurso de actualización DAM]**.
 1. Introduzca un título para el flujo de trabajo y seleccione **[!UICONTROL Inicio]**.
 1. En el cuadro de diálogo, seleccione **[!UICONTROL Continuar]**. El flujo de trabajo se ejecuta en todos los recursos de la colección.

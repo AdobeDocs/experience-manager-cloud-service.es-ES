@@ -4,10 +4,10 @@ description: Aprenda a preparar el contenido para la traducción al desarrollar 
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 83%
+source-wordcount: '756'
+ht-degree: 73%
 
 ---
 
@@ -68,8 +68,8 @@ Cree una raíz de idioma como la página raíz de una copia de idioma que identi
 
 Para crear la raíz de idioma, cree una página y utilice un código de idioma ISO como valor para la propiedad **Nombre**. El código de idioma debe tener uno de los siguientes formatos:
 
-* `<language-code>` - El código de idioma admitido es un código de dos letras como se define en la norma ISO-639-1, por ejemplo `en`.
-* `<language-code>_<country-code>` o `<language-code>-<country-code>` - El código de país admitido es un código de dos letras en minúsculas o mayúsculas, tal como se define en la norma ISO 3166, por ejemplo `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>` - El código de idioma admitido es un código de dos letras como se define en la norma ISO-639-1, por ejemplo, `en`.
+* `<language-code>_<country-code>` o `<language-code>-<country-code>` - El código de país admitido es un código de dos letras en minúsculas o mayúsculas, tal como se define en la norma ISO 3166, por ejemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 Puede utilizar cualquiera de los dos formatos, según la estructura que haya elegido para el sitio global. Por ejemplo, la página raíz de la copia en francés del sitio WKND tiene `fr` como la propiedad **Nombre**. El **Nombre** La propiedad se utiliza como nombre del nodo de página en el repositorio y, por lo tanto, determina la ruta de la página (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
@@ -80,7 +80,7 @@ Puede utilizar cualquiera de los dos formatos, según la estructura que haya ele
    ![Crear página](../assets/create-page.png)
 
 1. Seleccione la plantilla de página y luego seleccione **Siguiente**.
-1. En el campo **Nombre** escriba el código de país con el formato de `<language-code>` o `<language-code>_<country-code>`, por ejemplo `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Escriba un título para la página.
+1. En el **Nombre** campo escriba el código de país con el formato de `<language-code>` o `<language-code>_<country-code>`, por ejemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Escriba un título para la página.
 
    ![Crear página raíz de idioma](../assets/create-language-root.png)
 

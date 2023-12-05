@@ -2,10 +2,10 @@
 title: Implementar el código
 description: Obtenga información sobre cómo implementar su código mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 91%
+source-wordcount: '1190'
+ht-degree: 80%
 
 ---
 
@@ -145,13 +145,13 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 ### Restricciones {#limitations}
 
 * Volver a ejecutar el paso de implementación de producción solo estará disponible para la última ejecución.
-* Volver a ejecutarlo no será posible para las ejecuciones de actualización push.
+* Volver a ejecutar no está disponible para ejecuciones de actualización push.
    * Si la última ejecución es una ejecución de actualización push, no será posible volver a ejecutarla.
 * Si la última ejecución ha fallado en cualquier momento antes del paso de implementación de producción, no será posible volver a ejecutarla.
 
 ### Volver a ejecutar la API {#reexecute-API}
 
-Además de estar disponible en IU, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para activar las nuevas ejecuciones, así como identificar las que se activaron como ejecuciones nuevas.
+Además de estar disponible en la interfaz de usuario de, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para almacenar en déclencheur las reejecuciones e identificar las que se activaron como reejecuciones.
 
 #### Activación de una nueva ejecución {#reexecute-deployment-api}
 
@@ -199,7 +199,7 @@ Este vínculo solo está disponible para el paso de implementación de producci�
 
 La sintaxis del valor href del vínculo HAL es solo un ejemplo. El valor real siempre debe leerse desde el vínculo HAL y no generarse.
 
-Enviar una solicitud PUT a este punto final da como resultado una respuesta 201 si es correcta, y el cuerpo de la respuesta es la representación de la nueva ejecución. Esto es similar a iniciar una ejecución normal a través de la API.
+Enviar una solicitud de PUT a este extremo da como resultado una respuesta 201 si es correcta y el cuerpo de la respuesta es la representación de la nueva ejecución. Esto es similar a iniciar una ejecución normal a través de la API.
 
 #### Identificación de una ejecución ejecutada de nuevo {#identify-reexecution}
 

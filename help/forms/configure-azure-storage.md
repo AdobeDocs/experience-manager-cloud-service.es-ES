@@ -2,10 +2,10 @@
 title: Configurar Azure Storage
 description: Obtenga información sobre cómo integrar formularios con el servidor de Azure Storage.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 97%
+source-wordcount: '583'
+ht-degree: 84%
 
 ---
 
@@ -26,10 +26,10 @@ La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.
 Antes de ejecutar estos pasos, asegúrese de que dispone de una cuenta de [!DNL Azure] Storage y una clave de acceso para autorizar el acceso a la cuenta de [!DNL Azure] Storage.
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Almacenamiento de Azure]**.
-1. Seleccione una carpeta para crear la configuración y pulse **[!UICONTROL Crear]**.
+1. Seleccione una carpeta para crear la configuración y seleccione **[!UICONTROL Crear]**.
 1. Especifique un título para la configuración en el campo **[!UICONTROL Título]**.
 1. Especifique el nombre de la cuenta de [!DNL Azure] Storage en el campo **[!UICONTROL Cuenta de Azure Storage]**.
-1. Especifique la clave para acceder a la cuenta de Azure Storage en el campo **[!UICONTROL Clave de acceso de Azure]** y pulse **[!UICONTROL Guardar]**.
+1. Especifique la clave para acceder a la cuenta de almacenamiento de Azure en la **[!UICONTROL Clave de acceso de Azure]** y seleccione **[!UICONTROL Guardar]**.
 
 ## Crear modelo de datos de formulario {#create-azure-form-data-model}
 
@@ -41,13 +41,13 @@ Después de crear el modelo de datos de formulario y los objetos de modelo, pued
 
 Para agregar servicios de [!DNL Azure]:
 
-1. En el modo Edición, seleccione los servicios en la sección **[!UICONTROL Servicios]** del panel izquierdo y pulse **[!UICONTROL Agregar selección]**. Los servicios seleccionados se muestran en la pestaña **[!UICONTROL Servicios]** del modelo de datos de formulario.
+1. En el modo Editar, seleccione los servicios del **[!UICONTROL Servicios]** en el panel izquierdo y seleccione **[!UICONTROL Agregar selección]**. Los servicios seleccionados se muestran en la pestaña **[!UICONTROL Servicios]** del modelo de datos de formulario.
 
    ![Agregar los servicios seleccionados](assets/select-services.png)
 
 1. En la pestaña **[!UICONTROL Servicios]**, seleccione el servicio y **[!UICONTROL Editar propiedades]**. En función del servicio, defina los objetos del modelo de entrada o salida del servicio.
 
-1. Pulse **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario.
+1. Seleccionar **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario.
 
    La siguiente tabla describe los servicios de [!DNL Azure] disponibles:
 
@@ -92,9 +92,9 @@ Para agregar servicios de [!DNL Azure]:
 
 Para definir la propiedad de un objeto de modelo de datos como clave de búsqueda:
 
-1. En la pestaña **[!UICONTROL Modelo]**, seleccione la propiedad de un objeto de modelo de datos y pulse **[!UICONTROL Editar propiedades]**.
+1. En el **[!UICONTROL Modelo]** pestaña, seleccione la propiedad del objeto del modelo de datos y seleccione **[!UICONTROL Editar propiedades]**.
 1. Cambie el botón de alternancia de la opción **[!UICONTROL Clave de búsqueda]** al estado ACTIVADO. Esta opción solo está disponible para los tipos de datos principales.
-1. Pulse **[!UICONTROL Listo]** y, a continuación, pulse **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario.
+1. Seleccionar **[!UICONTROL Listo]** y luego seleccione **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario.
 
 Después de definir las propiedades de un objeto de modelo de datos como claves de búsqueda, los valores hash se almacenan en etiquetas de índice de Azure y los valores codificados en Base64 se almacenan en los metadatos de Azure.
 

@@ -4,10 +4,10 @@ description: Aprenda a crear y administrar proyectos de traducción automática 
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3971'
-ht-degree: 86%
+source-wordcount: '3960'
+ht-degree: 85%
 
 ---
 
@@ -463,7 +463,7 @@ AEM Aunque ofrece varias soluciones de traducción e interfaces, también es pos
 
 ### Exportación de un trabajo de traducción {#exporting-a-translation-job}
 
-Puede descargar el contenido de un trabajo de traducción, por ejemplo, para enviarlo a un proveedor de traducción que no esté integrado con AEM a través de un conector o para revisar el contenido.
+AEM Puede descargar el contenido de un trabajo de traducción, por ejemplo, para enviarlo a un proveedor de traducción que no esté integrado con a través de un conector o para revisar el contenido.
 
 1. En el menú desplegable del mosaico del trabajo de traducción, seleccione **Exportar**.
 1. En el cuadro de diálogo, seleccione **Descargar archivo exportado** y, si es necesario, utilice el cuadro de diálogo del explorador web para guardar el archivo.
@@ -471,7 +471,7 @@ Puede descargar el contenido de un trabajo de traducción, por ejemplo, para env
 
 ### Importación de un trabajo de traducción {#importing-a-translation-job}
 
-Puede importar contenido traducido a AEM, por ejemplo, cuando el proveedor de traducción se lo envía porque no están integrados con AEM a través de un conector.
+AEM AEM Se puede importar contenido traducido a los recursos, por ejemplo, cuando el proveedor de traducción se lo envía porque no están integrados con los recursos a través de un conector de la aplicación de traducción de los recursos de la aplicación de la traducción de los recursos de la red de.
 
 1. En el menú desplegable del mosaico del trabajo de traducción, seleccione **Importar**.
 1. Utilice el cuadro de diálogo del explorador web para seleccionar el archivo que desea importar.

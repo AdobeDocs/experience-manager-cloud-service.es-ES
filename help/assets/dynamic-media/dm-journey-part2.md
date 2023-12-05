@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2872'
+source-wordcount: '2677'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Lo recuerda en [Estructura de una URL de Dynamic Media](#dm-journey-d) anteriorm
 
 Puede considerar un ajuste preestablecido de imagen como una fórmula para sus imágenes. Entregará todas las imágenes que utilicen el ajuste preestablecido, de forma coherente, cada vez; será el mismo. El parámetro `&op_brightness=+10` también se ha añadido para aumentar ligeramente el brillo.
 
-Cuando haya terminado, guarde el ajuste preestablecido y ya estará disponible para todas las imágenes que tenga. En este caso, queremos aplicar la variable _Mediana_ imagen preestablecida a una imagen de un tazón de chocolate líquido.
+Cuando haya terminado, guarde el ajuste preestablecido y ya estará disponible para todas las imágenes que tenga. En este caso, desea aplicar la variable _Mediana_ imagen preestablecida a una imagen de un tazón de chocolate líquido.
 
 ![Aplicación del ajuste preestablecido de imagen *Mediana* para generar una representación de una imagen](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Aplicar el ajuste preestablecido de imagen Medio para generar una representación de una imagen._
@@ -222,7 +222,7 @@ _Temas de ayuda de Dynamic Media_
 
 _Tutoriales de Dynamic Media_
 
-* [Uso de Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=es)
+* [Uso de Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
 * [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (buscar en _Dynamic Media_)
 
 _Visores de Dynamic Media_

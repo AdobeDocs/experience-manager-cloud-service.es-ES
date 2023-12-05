@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 9%
+source-wordcount: '1956'
+ht-degree: 8%
 
 ---
 
@@ -144,7 +144,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/lim
 
    * Cerca de la esquina superior izquierda de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Añadir recurso]**.
 
-   * Cerca del centro de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Pulse para abrir el Selector de recursos]**.
+   * Cerca del centro de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Seleccione para abrir el Selector de recursos]**.
 
    Seleccione los recursos que desea incluir en el conjunto de giros. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
 
@@ -168,7 +168,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/lim
 
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Preestablecido]** y, a continuación, seleccione un ajuste preestablecido para aplicarlo a todos los recursos a la vez.
 
-1. Seleccione **[!UICONTROL Guardar]**. El conjunto de giros creado aparecerá en la carpeta en la que lo creó.
+1. Seleccionar **[!UICONTROL Guardar]**. El conjunto de giros creado aparecerá en la carpeta en la que lo creó.
 
 ## Visualización de conjuntos de giros {#viewing-spin-sets}
 
@@ -222,7 +222,6 @@ Si elimina la imagen que el Experience Manager utiliza para la miniatura reempla
    * Para eliminar un recurso, selecciónelo y seleccione **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, seleccione el icono Ajuste preestablecido y elija uno.
    * Para eliminar un conjunto de giros completo, vaya al conjunto de giros, selecciónelo y seleccione **[!UICONTROL Eliminar]**
-
    >[!NOTE]
    >
    >Puede editar las imágenes de un conjunto de giros navegando hasta el conjunto y seleccionando **[!UICONTROL Definir miembros]** en el carril izquierdo y, a continuación, seleccione el icono Lápiz en un recurso individual para abrir la ventana de edición.

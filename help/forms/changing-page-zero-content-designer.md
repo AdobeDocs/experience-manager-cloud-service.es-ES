@@ -1,15 +1,13 @@
 ---
 title: Cambiar el contenido de la página cero en Designer
 description: Cambie el mensaje que se muestra en la página cero de un PDF de XFA para los visualizadores PDF que no son de Adobe.
-uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 100%
+source-wordcount: '246'
+ht-degree: 92%
 
 ---
 
@@ -44,7 +42,7 @@ La versión de Designer de [!DNL AEM Forms] permite cambiar el mensaje que se mu
 
 >[!NOTE]
 >
->Es posible que la propiedad personalizada que acaba de crear no aparezca correctamente en el cuadro de diálogo Propiedades del formulario cuando vuelva a abrir el formulario. Sin embargo, funciona bien, y el formulario muestra el mensaje de la página cero actualizado.
+>Es posible que la propiedad personalizada que ha creado no aparezca correctamente en el cuadro de diálogo Propiedades del formulario cuando vuelva a abrir el formulario. Sin embargo, funciona bien, y el formulario muestra el mensaje de la página cero actualizado.
 
 >[!MORELIKETHIS]
 >

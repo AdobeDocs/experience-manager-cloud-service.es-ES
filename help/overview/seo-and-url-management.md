@@ -2,10 +2,10 @@
 title: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
 description: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3705'
-ht-degree: 99%
+source-wordcount: '3539'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,6 @@ A continuación se ofrecen algunas sugerencias generales para crear las URL para
    * Si se utilizan selectores en una página, se prefieren los selectores que proporcionan un valor semántico.
    * Si un ser humano no puede leer su URL, un motor de búsqueda tampoco podrá.
    * Por ejemplo:
-
      `mybrand.com/products/product-detail.product-category.product-name.html`
 se prefiere en lugar de `mybrand.com/products/product-detail.1234.html`
 
@@ -250,7 +249,6 @@ Sin embargo, también hay una forma más sencilla de gestionarlo:
    Mediante la consola web (por ejemplo, localhost:4502/system/console/configMgr) puede configurar el Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
-
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Se recomienda crear las asignaciones necesarias para acortar las URL como expresiones regulares y luego definir estas configuraciones en un nodo OsgiConfignode `config.publish`, que se incluye en la creación.
@@ -460,7 +458,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Además, la funcionalidad implementada para los mapas del sitio XML también se puede utilizar en diferentes casos de uso, por ejemplo para añadir el vínculo canónico o las alternativas de idioma al encabezado de una página. Consulte la [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obtener más información.
+Además, la funcionalidad implementada para los mapas del sitio XML también se puede utilizar en diferentes casos de uso, por ejemplo, para añadir el vínculo canónico o las alternativas de idioma al encabezado de una página. Consulte la [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obtener más información.
 
 ### Crear redirecciones 301 para URL heredadas {#creating-redirects-for-legacy-urls}
 

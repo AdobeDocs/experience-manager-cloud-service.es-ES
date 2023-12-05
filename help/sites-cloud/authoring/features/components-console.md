@@ -2,10 +2,10 @@
 title: Consola Componentes
 description: La consola Componentes permite examinar todos los componentes definidos para la instancia
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 69%
+ht-degree: 66%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 69%
 
 La consola Componentes permite examinar todos los componentes definidos para la instancia y ver información clave de cada componente.
 
-Se puede acceder a ella desde **Herramientas ->** **General ->** **Componentes**. Como no hay una estructura de árbol para componentes, solo está disponible la vista en lista.
+Se puede acceder a ella desde **Herramientas >** **General >** **Componentes**. Como no hay una estructura de árbol para componentes, solo está disponible la vista en lista.
 
 ![La consola Componentes](/help/sites-cloud/authoring/assets/components-console.png)
 

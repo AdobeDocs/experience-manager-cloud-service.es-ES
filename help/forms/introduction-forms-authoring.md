@@ -6,16 +6,16 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2465'
 ht-degree: 96%
 
 ---
 
 # Editor de formularios adaptables {#introduction-to-authoring-adaptive-forms}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -96,9 +96,9 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
 
   Permite editar las propiedades de un componente. Las propiedades cambian según el componente. Para ver las propiedades del contenedor de formulario adaptable, haga lo siguiente:
 
-  Seleccione un componente y, a continuación, pulse ![nivel de campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, pulse ![propiedades](assets/Smock_Wrench_18_N.svg).
+  Seleccione un componente y luego seleccione ![field-level](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contenedor de formulario adaptable]**, y luego seleccione ![propiedades](assets/Smock_Wrench_18_N.svg).
 
-* **Explorador de activos**
+* **Explorador de recursos**
 
   Segmenta contenido de distintos tipos, como imágenes, documentos, páginas, películas, etc.
 
@@ -154,7 +154,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Correo electrónico</td>
-   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Archivo adjunto</td>
@@ -307,7 +307,7 @@ La barra de herramientas de la parte superior de la página ofrece opciones que 
 
 Al seleccionar un componente, aparece una barra de herramientas que le permite trabajar con él. Puede obtener opciones para cortar, pegar, mover y especificar propiedades de los componentes. Las opciones son las siguientes:
 
-A.**Configurar**: Al pulsar **[!UICONTROL Configurar]**, las propiedades de los componentes se pueden ver en la barra lateral. La configuración de estas propiedades permite personalizar la experiencia de captura de datos. Puede cambiar el nombre del elemento del componente, especificar el texto de la etiqueta en el campo Título del componente. El nombre del elemento permite capturar los valores que introducen los usuarios mediante el componente. En las propiedades del componente, se especifica el comportamiento del componente y se administran los datos que haya introducido el usuario. Configure las propiedades en la barra lateral para capturar los datos de usuario y utilizarlos en un procesamiento posterior. Las propiedades del contenedor de formularios adaptables permiten especificar la configuración de bibliotecas de cliente, diseños, temáticas, documentos de registro, guardado, envío y metadatos.
+A.**Configurar**: cuando selecciona **[!UICONTROL Configurar]**, las propiedades de los componentes se pueden ver en la barra lateral. La configuración de estas propiedades permite personalizar la experiencia de captura de datos. Puede cambiar el nombre del elemento del componente, especificar el texto de la etiqueta en el campo Título del componente. El nombre del elemento permite capturar los valores que introducen los usuarios mediante el componente. En las propiedades del componente, se especifica el comportamiento del componente y se administran los datos que haya introducido el usuario. Configure las propiedades en la barra lateral para capturar los datos de usuario y utilizarlos en un procesamiento posterior. Las propiedades del contenedor de formularios adaptables permiten especificar la configuración de bibliotecas de cliente, diseños, temáticas, documentos de registro, guardado, envío y metadatos.
 
 B.**Copiar**: Puede utilizar la opción Copiar para copiar un componente y pegarlo en otros lugares del formulario. Al pegar un componente, este recibirá un nombre de elemento nuevo, pero conservará las propiedades del componente copiado.
 
@@ -325,7 +325,7 @@ H. **Grupo**: Permite seleccionar varios componentes si desea cortar, copiar o p
 
 I. **Principal**: Permite seleccionar el elemento principal de un componente. Por ejemplo, un campo de texto se encuentra dentro de una subsección, que reside en una sección. La sección se encuentra en el panel raíz de la guía y el contenedor del formulario adaptable es el principal de un panel raíz de la guía. Puede ver todas las opciones de un componente con la jerarquía ordenada en la parte inferior.
 
-Por ejemplo, si pulsa **[!UICONTROL Principal]** en un cuadro de texto, podrá ver lo siguiente:
+Por ejemplo, si selecciona **[!UICONTROL Principal]** para un cuadro de texto, puede ver lo siguiente:
 
 * Subsección
 * Sección

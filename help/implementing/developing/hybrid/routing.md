@@ -2,9 +2,9 @@
 title: SPA Enrutamiento de modelo de
 description: AEM Para las aplicaciones de una sola página en la, la aplicación es responsable del enrutamiento. Este documento describe el mecanismo de ruta, el contrato y las opciones disponibles.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ De forma predeterminada, este comportamiento se habilita automáticamente. SPA P
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-SPA AEM Tenga en cuenta que cada ruta de la debe corresponder a un recurso accesible en la (por ejemplo, &quot; `/content/mysite/mypage"`), ya que `PageModelManager` intentará cargar automáticamente el modelo de página correspondiente una vez seleccionada la ruta. SPA Sin embargo, si es necesario, el también puede definir una &quot;lista de bloqueados&quot; de rutas que el `PageModelManager`:
+SPA AEM Cada ruta de la debe corresponder a un recurso accesible en el que se puede acceder a través de la ruta (por ejemplo, &quot; `/content/mysite/mypage"`), ya que `PageModelManager` intentará cargar automáticamente el modelo de página correspondiente una vez seleccionada la ruta. SPA Sin embargo, si es necesario, el también puede definir una &quot;lista de bloqueados&quot; de rutas que el `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

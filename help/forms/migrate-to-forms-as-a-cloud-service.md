@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 98%
+source-wordcount: '1430'
+ht-degree: 92%
 
 ---
 
@@ -105,20 +105,20 @@ Realice los siguientes pasos para lograr que sus recursos de [!DNL AEM Forms] se
 
 1. Utilice la opción una tras otra para lograr que sus recursos de [!DNL AEM Forms] sean compatibles con [!DNL AEM] as a Cloud Service:
 
-   1. Pulse **[!UICONTROL Migración de recursos de AEM Forms]** y, en la siguiente pantalla, pulse **[!UICONTROL Iniciar migración]**. Hace que sus formularios adaptables y temáticas en su entorno de [!DNL AEM Forms] sean compatibles con [!DNL AEM] as a Cloud Service.
+   1. Seleccionar **[!UICONTROL Migración de recursos de AEM Forms]** y, en la pantalla siguiente, seleccione **[!UICONTROL Iniciar migración]**. Hace que sus formularios adaptables y temáticas en su entorno de [!DNL AEM Forms] sean compatibles con [!DNL AEM] as a Cloud Service.
 
-   1. Pulse **[!UICONTROL Migración de componentes personalizados de formularios adaptables]** y, en la página Migración de componentes personalizados, pulse **[!UICONTROL Iniciar migración]**. Hace que cualquier componente personalizado desarrollado para formularios adaptables y superposiciones de componentes en su entorno de [!DNL AEM Forms] sea compatible con [!DNL AEM] as a Cloud Service.
+   1. Seleccionar **[!UICONTROL Migración de componentes personalizados de Forms adaptable]** y en la página Migración de componentes personalizados, seleccione **[!UICONTROL Iniciar migración]**. Hace que cualquier componente personalizado desarrollado para formularios adaptables y superposiciones de componentes en su entorno de [!DNL AEM Forms] sea compatible con [!DNL AEM] as a Cloud Service.
 
-   1. Pulse **[!UICONTROL Migración de plantillas de formularios adaptables]** y, en la página Migración de componentes personalizados, pulse **[!UICONTROL Iniciar migración]**. Hace que las plantillas de formularios adaptables en `/apps` o `/conf` y las que se crean con el editor de plantillas de AEM sean compatibles con [!DNL AEM] as a Cloud Service.
+   1. Seleccionar **[!UICONTROL Migración de plantillas de Forms adaptable]** y en la página Migración de componentes personalizados, seleccione **[!UICONTROL Iniciar migración]**. Hace que las plantillas de formularios adaptables en `/apps` o `/conf` y las que se crean con el editor de plantillas de AEM sean compatibles con [!DNL AEM] as a Cloud Service.
 
-   1. Pulse **[!UICONTROL Migración de configuraciones en la nube de AEM Forms]** y, a continuación, en la página Migración de configuración, pulse **[!UICONTROL Iniciar migración]**. Actualiza y mueve los siguientes servicios en la nube a una nueva ubicación:
+   1. Seleccionar **[!UICONTROL Migración de configuraciones de nube de AEM Forms]** y, a continuación, en la página Migración de configuración, seleccione **[!UICONTROL Iniciar migración]**. Actualiza y mueve los siguientes servicios en la nube a una nueva ubicación:
 
       * Servicio en la nube de modelo de datos de formulario
       * Servicio en la nube de Google reCAPTCHA
       * Servicio de nube de [!DNL Adobe Sign]
       * Servicio en la nube de Adobe Fonts
 
-   1. Pulse **[!UICONTROL Migración de scripts del editor de código]**, especifique una ubicación para guardar funciones reutilizables y pulse **[!UICONTROL Iniciar migración].
+   1. Seleccionar **[!UICONTROL Migración de scripts del editor de código]**, especifique una ubicación para guardar funciones reutilizables y seleccione **[!UICONTROL Iniciar migración].
 
    Cloud Service no es compatible con scripts del editor de reglas. La herramienta **[!UICONTROL Migración de scripts del editor de código]** convierte todos los scripts de regla en su entorno en funciones reutilizables y aplica las funciones reutilizables al editor visual en la ubicación apropiada. Estas funciones reutilizables se guardan en forma de bibliotecas de cliente y le ayudan a mantener intacta la funcionalidad existente. La herramienta aplica automáticamente las funciones reutilizables generadas a los formularios adaptables correspondientes.
 

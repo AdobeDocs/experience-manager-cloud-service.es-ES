@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 15%
+source-wordcount: '1066'
+ht-degree: 10%
 
 ---
 
@@ -41,7 +41,7 @@ Esta variable de entorno se utiliza en dos lugares:
 - Llamadas de GraphQL AEM AEM CIF desde el servidor de comercio a través de un cliente de GraphQl que se puede compartir de forma habitual y que utilizan los componentes principales de los clientes y los componentes de proyecto del cliente de la.
 - Configure una URL de proxy de GraphQL AEM en cada entorno en el que se configure la variable y que esté disponible en `/api/graphql`. AEM CIF CIF Esta URL la utilizan las herramientas de creación de comercio de la (complemento de) y los componentes del lado del cliente de la.
 
-Se puede usar una dirección URL de extremo de GraphQL diferente para cada entorno de AEM as a Cloud Service. AEM AEM De este modo, los proyectos pueden conectar entornos de ensayo de la con sistemas de ensayo de comercio y entornos de producción de la segmentación con un sistema de producción de comercio. El extremo de GraphQL debe estar disponible para el público, no se admiten conexiones privadas VPN o locales. CIF Opcionalmente, se puede proporcionar un encabezado de autenticación para utilizar funciones de autenticación adicionales que requieran autenticación.
+Se puede utilizar una dirección URL de extremo de GraphQL AEM diferente para cada entorno as a Cloud Service de la. AEM AEM De este modo, los proyectos pueden conectar entornos de ensayo de la con sistemas de ensayo de comercio y entornos de producción de la segmentación con un sistema de producción de comercio. Ese extremo de GraphQL debe estar disponible para el público, no se admiten conexiones privadas VPN o locales. CIF Opcionalmente, se puede proporcionar un encabezado de autenticación para utilizar funciones de autenticación adicionales que requieran autenticación.
 
 De forma opcional, y solo para Adobe Commerce CIF AEM Enterprise/Cloud, el complemento de admite el uso de datos de catálogo clasificados para autores de informes en la fase de creación de informes Estos datos requieren que configure un encabezado de autorización. AEM Este encabezado solo está disponible y se utiliza en instancias de Autor de por motivos de seguridad. AEM Las instancias de publicación no pueden mostrar datos clasificados.
 
@@ -107,7 +107,7 @@ CIF El complemento y el complemento de la [Componentes principales del CIF](http
 
 CIF Esta configuración se puede ajustar para el proyecto mediante la configuración del Cloud Service de la aplicación de la manera siguiente:
 
-1. AEM En la sección de configuración, vaya a Herramientas -> Cloud Service CIF -> Configuración de la.
+1. AEM En la página de inicio, vaya a Herramientas > Cloud Service CIF > Configuración de la.
 
 2. Seleccione la configuración de comercio que desee cambiar.
 

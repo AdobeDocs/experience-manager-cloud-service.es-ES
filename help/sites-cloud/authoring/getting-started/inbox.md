@@ -2,10 +2,10 @@
 title: Su bandeja de entrada
 description: Aprenda a utilizar las notificaciones que llegan a la bandeja de entrada para administrar sus tareas.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 94%
+source-wordcount: '910'
+ht-degree: 88%
 
 ---
 

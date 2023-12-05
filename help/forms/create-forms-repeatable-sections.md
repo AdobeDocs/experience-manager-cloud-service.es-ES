@@ -3,10 +3,10 @@ title: Creación de paneles repetibles en los componentes principales del formul
 description: Aprenda a crear secciones o campos repetibles en un formulario adaptable.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 96%
+source-wordcount: '1256'
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ Para repetir un panel en el formulario o quitar paneles repetibles, un autor de 
 ![Pestaña Accesibilidad](/help/forms/assets/repeat-panel.png)
 
 Para hacer que un panel sea repetible, realice los siguientes pasos:
-1. Seleccione un contenedor de panel y pulse ![cmppr](/help/forms/assets/cmppr.png).
+1. Seleccione un contenedor de panel y seleccione ![cmppr](/help/forms/assets/cmppr.png).
 1. Haga clic en **repetir panel** y active la opción para **hacer repetible el panel**.
 1. Establezca **repeticiones mínimas** según sea necesario para las secciones mínimas repetibles. Puede establecer las **repeticiones mínimas** a cero para la no repetición de paneles o para quitar los paneles repetidos. De forma predeterminada, el valor de repetición mínima es cero.
 1. Establezca **repeticiones máximas** para repetir el panel el número de veces necesarias. De forma predeterminada, el valor es infinito.
@@ -63,7 +63,7 @@ Para hacer que un panel sea repetible, realice los siguientes pasos:
 
 El elemento principal del panel que se va a repetir debe contener un botón de adición para administrar la instancia de repetición del panel. Realice los siguientes pasos para insertar botones en el elemento principal y habilitar scripts en los botones:
 
-1. Añada un **componente de botón** al elemento principal del panel. En el siguiente vídeo de ejemplo, se utiliza un componente de botón con el nombre de etiqueta **Agregar** y el nombre de campo **AgregarPanel**. Seleccione el componente y pulse ![Editar reglas](/help/forms/assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
+1. Añada un **componente de botón** al elemento principal del panel. En el siguiente vídeo de ejemplo, se utiliza un componente de botón con el nombre de etiqueta **Agregar** y el nombre de campo **AgregarPanel**. Seleccione el componente y seleccione ![edit-rules](/help/forms/assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
 1. En la ventana Editor de reglas, haga clic en **Crear**.
 
    Seleccione **Editor visual** en la fila Objetos y funciones de formularios.
@@ -84,7 +84,7 @@ El elemento principal del panel que se va a repetir debe contener un botón de a
 
 El elemento principal del panel debe contener un botón de eliminación para eliminar la instancia de los paneles repetibles. Realice los siguientes pasos para insertar botones en el elemento principal y habilitar secuencias de comandos en los botones para eliminar paneles repetibles:
 
-1. Añada un **componente de botón** al elemento principal del panel. En el siguiente vídeo, se utiliza un componente de botón con el nombre de etiqueta **eliminar** y nombre de campo **EliminarPanel**. Seleccione el componente y pulse ![Editar reglas](/help/forms/assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
+1. Añada un **componente de botón** al elemento principal del panel. En el siguiente vídeo, se utiliza un componente de botón con el nombre de etiqueta **eliminar** y nombre de campo **EliminarPanel**. Seleccione el componente y seleccione ![edit-rules](/help/forms/assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
 1. En la ventana Editor de reglas, haga clic en **Crear**.
 
    Seleccione **Editor visual** en la fila Objetos y funciones de formularios.
@@ -151,8 +151,8 @@ El elemento principal del panel debe contener un botón de eliminación para eli
 
 A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
 
-1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
+1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
+1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
 
    Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
 

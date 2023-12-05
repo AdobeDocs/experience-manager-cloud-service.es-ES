@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f2f81e2e3e7ff0b5bad4a5490f5cbec752c92578
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 5%
+source-wordcount: '1329'
+ht-degree: 4%
 
 ---
 
@@ -81,10 +81,10 @@ Para descargar recursos, siga estos pasos:
    |---|---|
    | **[!UICONTROL Crear una carpeta independiente para cada recurso]** | Seleccione esta opción para crear una carpeta para cada recurso que contenga todas las representaciones descargadas para el recurso. Si no se selecciona, cada recurso (y sus representaciones si se seleccionan para su descarga) se encuentra en la carpeta principal del archivo generado. |
    | **[!UICONTROL Correo electrónico]** | Seleccione esta opción para enviar una notificación por correo electrónico (que contenga un vínculo a la descarga) a otro usuario. El usuario destinatario debe ser miembro de `dam-users` grupo. Las plantillas de correo electrónico estándar están disponibles en las siguientes ubicaciones:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Las plantillas que personaliza durante la implementación están disponibles en las siguientes ubicaciones: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Puede almacenar plantillas personalizadas específicas del inquilino en las siguientes ubicaciones:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
-   | **[!UICONTROL Recursos]** | Seleccione esta opción para descargar el recurso en su forma original.<br>La opción subrecursos está disponible si el recurso original tiene subrecursos. |
-   | **[!UICONTROL Representaciones]** | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso seleccionado. |
+   | **[!UICONTROL Recurso(s)]** | Seleccione esta opción para descargar el recurso en su forma original.<br>La opción subrecursos está disponible si el recurso original tiene subrecursos. |
+   | **[!UICONTROL Representación(es)]** | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso seleccionado. |
    | **[!UICONTROL Recortes inteligentes]** | Seleccione esta opción para descargar todas las representaciones de recorte inteligente del recurso seleccionado desde [!DNL Experience Manager]. Se crea un archivo zip con las representaciones de recorte inteligente y se descarga en el equipo local. |
-   | **[!UICONTROL Representaciones dinámicas]** | Seleccione esta opción para generar una serie de representaciones alternativas en tiempo real. Al seleccionar esta opción, también puede seleccionar las representaciones que desea crear dinámicamente seleccionando en el [Ajuste preestablecido de imagen](/help/assets/dynamic-media/image-presets.md) lista. <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen opcional, como la inversión de la imagen. La opción solo está disponible si tiene [!DNL Dynamic Media] activado. |
+   | **[!UICONTROL Representación(es) dinámica(es)]** | Seleccione esta opción para generar una serie de representaciones alternativas en tiempo real. Al seleccionar esta opción, también puede seleccionar las representaciones que desea crear dinámicamente seleccionando en el [Ajuste preestablecido de imagen](/help/assets/dynamic-media/image-presets.md) lista. <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen opcional, como la inversión de la imagen. La opción solo está disponible si tiene [!DNL Dynamic Media] activado. |
 
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Descargar]**.
 
@@ -139,7 +139,7 @@ Para habilitar la variable `OnOffTimeAssetAccessFilter` , debe crear una configu
 1. En el código del proyecto en Git, cree un archivo de configuración en `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. El archivo debe contener `{}` como su contenido, lo que significa una configuración OSGi vacía para el componente OSGi correspondiente. Esta acción habilita el servicio.
 1. Implemente su código, incluida esta nueva configuración, a través de [!DNL Cloud Manager].
 1. Una vez implementados, se puede acceder a las representaciones y los metadatos según la configuración de tiempo de activación y desactivación de los recursos. Si la fecha u hora actual es anterior a la hora de activación o posterior a la hora de inactividad, se muestra un mensaje de error.
-Para obtener más información sobre cómo agregar una configuración OSGi vacía, puede consultar esto [guía](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
+Para obtener más información sobre cómo agregar una configuración OSGi vacía, consulte esto [guía](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Sugerencias y limitaciones {#tips-limitations}
 

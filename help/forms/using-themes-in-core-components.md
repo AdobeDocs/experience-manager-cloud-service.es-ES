@@ -2,10 +2,10 @@
 title: ¿Cómo se pueden crear y utilizar temáticas en el Forms adaptable?
 description: Puede utilizar temáticas para aplicar estilos y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2676'
-ht-degree: 18%
+source-wordcount: '2610'
+ht-degree: 17%
 
 ---
 
@@ -60,7 +60,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 * Familiarícese con [configuración de una canalización en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline) y tener conocimientos básicos sobre cómo configurar una canalización le ayuda a administrar e implementar de forma eficaz las personalizaciones de temas.
 * Obtenga información sobre cómo [configurar un usuario con la función colaborador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=es). Si sabe cómo configurar un usuario con la función de colaborador, puede conceder los permisos necesarios para personalizar temáticas.
-* Instalar la última versión de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
+* Instale la última versión de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
 * Instale un editor de texto sin formato. Por ejemplo, Microsoft® Visual Studio Code. Utilizar un editor de texto sin formato como Microsoft® Visual Studio Code proporciona un entorno fácil de usar para editar y modificar archivos de temas.
 
 ### Configurar su entorno
@@ -377,7 +377,7 @@ Los pasos para aplicar una temática a un formulario adaptable son los siguiente
 
 1. Inicie sesión en la instancia de creación de AEM Forms.
 
-1. Vaya a **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
+1. Seleccionar **Adobe Experience Manager** > **Forms** > **Forms y documentos**.
 
 1. Haga clic en **Crear** > **Formularios adaptables**. Se abre el asistente para crear formularios adaptables.
 
@@ -433,5 +433,5 @@ Si desea proporcionar información como un logotipo, el nombre de la empresa en 
 * [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Generar documento de registro para Forms adaptable (componentes principales)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creación de un Forms adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
-* [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Plantillas temáticas y modelos de datos de formularios de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
 * [Habilitar los componentes principales de formularios adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)

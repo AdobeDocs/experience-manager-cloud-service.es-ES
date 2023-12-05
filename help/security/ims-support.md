@@ -2,10 +2,10 @@
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad del sistema de administración de imágenes con Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 100%
+source-wordcount: '1917'
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ Una vez que un cliente existe como una organización de IMS, debe configurar su 
 ![Integración de IMS](/help/security/assets/ims2.png)
 
 1. El administrador del sistema designado recibe una invitación para iniciar sesión en Cloud Manager. Después de iniciar sesión en Cloud Manager, los administradores del sistema pueden optar por ofrecer los programas y entornos de AEM o navegar a Admin Console para llevar a cabo tareas administrativas.
-1. El administrador del sistema reclama un dominio para confirmar la propiedad del dominio en cuestión (por ejemplo, acme.com).
+1. El administrador del sistema reclama un dominio para confirmar la propiedad del dominio en cuestión (por ejemplo, acme.com)
 1. El administrador del sistema configura los directorios de usuario.
 1. El administrador del sistema realiza la configuración de IDP en Admin Console para configurar el registro único.
 1. El administrador de AEM gestiona los grupos locales, los permisos y los privilegios de la forma habitual.

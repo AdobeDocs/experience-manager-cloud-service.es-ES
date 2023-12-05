@@ -2,10 +2,10 @@
 title: AEM Registro para la as a Cloud Service
 description: AEM Obtenga información sobre cómo utilizar Registro para el registro as a Cloud Service para configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 10%
+source-wordcount: '2720'
+ht-degree: 8%
 
 ---
 
@@ -113,7 +113,7 @@ AEM AEM Los niveles de registro se establecen por tipo de entorno a través de l
 <tbody>
 <tr>
 <td>Fecha y hora</td>
-<td>29.04.2020 21:50:13.398</td>
+<td>29.4.2020 21:50:13,398</td>
 </tr>
 <tr>
 <td>AEM ID de nodo as a Cloud Service</td>
@@ -190,14 +190,14 @@ A continuación se muestran ejemplos de las configuraciones de registro recomend
 
 AEM as a Cloud Service AEM El registro de solicitudes HTTP de proporciona una perspectiva de las solicitudes HTTP realizadas a los clientes y sus respuestas HTTP en orden de tiempo. AEM Este registro es útil para comprender las solicitudes HTTP realizadas a y el orden en el que se procesan y responden a las que se realizan las solicitudes.
 
-La clave para comprender este registro es asignar los pares de solicitud y respuesta HTTP por sus ID, indicados por el valor numérico entre corchetes. Tenga en cuenta que, a menudo, las solicitudes de y sus respuestas correspondientes tienen otras solicitudes HTTP y respuestas interconectadas entre ellas en el registro.
+La clave para comprender este registro es asignar los pares de solicitud y respuesta HTTP por sus ID, indicados por el valor numérico entre corchetes. A menudo, las solicitudes y sus respuestas correspondientes tienen otras solicitudes HTTP y respuestas interconectadas entre ellas en el registro.
 
 **Ejemplo de registro**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -285,7 +285,7 @@ AEM Este conjunto de registros proporciona información sobre las solicitudes HT
 
 ### Registro de acceso al servidor web Apache HTTPD {#apache-httpd-web-server-access-log}
 
-El registro de acceso del servidor web HTTP Apache proporciona instrucciones para cada solicitud HTTP que llega al servidor web/Dispatcher del nivel de publicación. Tenga en cuenta que las solicitudes servidas desde una CDN ascendente no se reflejan en estos registros.
+El registro de acceso del servidor web HTTP Apache proporciona instrucciones para cada solicitud HTTP que llega al servidor web/Dispatcher del nivel de publicación. Las solicitudes servidas desde una CDN ascendente no se reflejan en estos registros.
 
 Consulte la información sobre el formato del registro de errores en la [documentación oficial de apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -434,7 +434,7 @@ Define REWRITE_LOG_LEVEL debug
 <tbody>
 <tr>
 <td>Fecha y hora</td>
-<td>[17/jul/2020]:23:48:16 +0000&rbrack;</td>
+<td>[17/jul/2020]:23:48:16 +0000]</td>
 </tr>
 <tr>
 <td>Nombre de pod</td>
@@ -454,7 +454,7 @@ Define REWRITE_LOG_LEVEL debug
 </tr>
 <tr>
 <td>Duración</td>
-<td>1949ms</td>
+<td>1949 ms</td>
 </tr>
 <tr>
 <td>Granja</td>
@@ -577,7 +577,7 @@ AEM Los registros de se encuentran en la carpeta `crx-quickstart/logs`, donde se
 * AEM Registro de petición HTTP: `request.log`
 * AEM Registro de acceso HTTP de: `access.log`
 
-Los registros de capa de Apache, incluido Dispatcher, están en el contenedor Docker que contiene Dispatcher. Consulte la [Documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=es) para obtener información sobre cómo iniciar Dispatcher.
+Los registros de capa de Apache, incluido Dispatcher, están en el contenedor Docker que contiene Dispatcher. Consulte la [Documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) para obtener información sobre cómo iniciar Dispatcher.
 
 Para recuperar los registros:
 
@@ -611,7 +611,7 @@ Los clientes que tengan cuentas de Splunk pueden solicitar a través del ticket 
 
 El ancho de banda de red asociado con los registros enviados a Splunk se considera parte del uso de E/S de red del cliente.
 
-Tenga en cuenta que el reenvío de Splunk aún no admite registros de CDN.
+El reenvío de Splunk aún no admite registros de CDN.
 
 ### Activación del reenvío de Splunk {#enabling-splunk-forwarding}
 

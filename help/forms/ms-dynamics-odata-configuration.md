@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 92%
+source-wordcount: '957'
+ht-degree: 87%
 
 ---
 
@@ -100,7 +100,6 @@ Haga lo siguiente para registrar un cliente de OAuth en el equipo de los Servici
 
    * `Client-ID` es un ID de cliente que puede generar con cualquier generador GUID.
    * `redirect-uri` es la dirección URL del servicio en la nube de OData de [!DNL Microsoft Dynamics] en [!DNL Experience Manager Forms]. El servicio en la nube predeterminado instalado con [!DNL Experience Manager Forms] se implementa en la siguiente URL:
-
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Ejecute el siguiente comando para conceder acceso desde el equipo AD FS:
@@ -123,11 +122,12 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 >
 >Para obtener una guía paso a paso sobre la configuración de [!DNL Microsoft Dynamics 365], en línea o de forma local, consulte [[!DNL Microsoft Dynamics] Configuración de OData](ms-dynamics-odata-configuration.md).
 
-1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Pulse para seleccionar la carpeta en la que desea crear una configuración de nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para seleccionar la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpetas para configuraciones de servicios en la nube](#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
 
-1. Pulse **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio OData]** en la lista desplegable **[!UICONTROL Tipo de servicio]**. También puede examinar y seleccionar una imagen en miniatura para la configuración y pulsar **[!UICONTROL Siguiente]**. En la pestaña **[!UICONTROL Configuración de autenticación]**:
+1. Seleccionar **[!UICONTROL Crear]** para abrir **[!UICONTROL Asistente de configuración de creación de fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio OData]** desde el **[!UICONTROL Tipo de servicio]** , si lo desea, busque y seleccione una imagen en miniatura para la configuración y seleccione **[!UICONTROL Siguiente]**.
+En la pestaña **[!UICONTROL Configuración de autenticación]**:
 
    1. Introduzca el valor del campo **[!UICONTROL Raíz del servicio]**. Vaya a la instancia de Dynamics y luego a **[!UICONTROL Recursos para desarrolladores]** para ver el valor del campo Raíz del servicio. por ejemplo, https://&lt;tenant-name>/api/data/v9.1/
 

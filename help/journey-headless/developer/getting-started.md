@@ -2,10 +2,10 @@
 title: Introducción al contenido sin encabezado de AEM as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3093'
-ht-degree: 94%
+source-wordcount: '3057'
+ht-degree: 93%
 
 ---
 
@@ -181,7 +181,7 @@ Cree un plan sobre la traducción de contenido que necesita.
 
 Sea claro sobre el flujo de trabajo de actualización de contenido. ¿Cuál es el proceso de aprobación que debe admitir el sistema? ¿Se pueden utilizar los flujos de trabajo de AEM para automatizar este proceso?
 
-Tenga en cuenta que la [jerarquía de contenido](#content-hierarchy) se puede utilizar para facilitar la traducción.
+Su [jerarquía de contenido](#content-hierarchy) se puede utilizar para facilitar la traducción.
 
 Consulte la sección [recursos adicionales](#additional-resources) para obtener documentación adicional sobre los flujos de trabajo de AEM y las herramientas de traducción, entre ellos, los vínculos al recorrido de traducción sin encabezado de AEM.
 

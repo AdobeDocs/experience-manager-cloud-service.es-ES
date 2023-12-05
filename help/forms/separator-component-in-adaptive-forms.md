@@ -5,10 +5,10 @@ uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 54%
+source-wordcount: '313'
+ht-degree: 52%
 
 ---
 
@@ -28,7 +28,7 @@ Puede utilizar el modo Diseño para definir el número de columnas a las que se 
 
 Para especificar las propiedades de un componente Separador:
 
-1. Seleccione un componente Separador y pulse ![cmppr](assets/cmppr.png). Las propiedades se abren en la barra lateral.
+1. Seleccione un componente Separador y seleccione ![cmppr](assets/cmppr.png). Las propiedades se abren en la barra lateral.
 1. Haga clic en una pestaña de la sección Propiedades CSS en línea para poder especificar las propiedades CSS. Por ejemplo, un. En la pestaña Field, haga clic en **Agregar elemento**. Se añade una fila con dos campos.
 1. En el primer campo de la izquierda, especifique la propiedad CSS3 que desee aplicar. Por ejemplo, **border**. También puede seleccionar una propiedad haciendo clic en el botón de flecha hacia abajo. La lista desplegable no es exhaustiva y puede especificar cualquier nombre de propiedad CSS3 admitido en este campo.
 1. En el campo adyacente, especifique un valor válido para la propiedad CSS3 especificada. Por ejemplo, **3 píxeles negro sólido**.

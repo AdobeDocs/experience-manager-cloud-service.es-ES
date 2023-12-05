@@ -2,17 +2,17 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
 
 # Herramientas y entorno de creación {#authoring-the-environment-and-tools}
 
-El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y consolas.
+El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
 
 {{edge-delivery-authoring}}
 
@@ -108,7 +108,7 @@ El explorador de recursos es una pestaña del panel lateral que está situada ju
 
 ![Alternar panel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha. Seleccione la pestaña **Recursos** si es necesario.
+Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha. Seleccione el **Assets** pestaña si es necesario.
 
 ![Botón Explorador de recursos](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -224,7 +224,7 @@ Abra la consola en cuestión, desplácese hasta el recurso y abra **Referencias*
 
 Seleccione el tipo de referencia adecuado para obtener más información. En determinadas situaciones, hay disponibles acciones adicionales al seleccionar una referencia específica, como las siguientes:
 
-* La opción **Vínculos entrantes** proporciona una lista de páginas que hacen referencia a la página, así como un acceso directo a la opción **Editar** de una de esas páginas, al seleccionar un vínculo específico.
+* **Vínculos entrantes**, proporciona una lista de páginas que hacen referencia a la página, así como acceso directo a **Editar** Seleccione una de esas páginas cuando seleccione un vínculo específico.
 
    * Esto solo puede mostrar vínculos estáticos, no vínculos generados dinámicamente; por ejemplo, desde el componente Lista.
 

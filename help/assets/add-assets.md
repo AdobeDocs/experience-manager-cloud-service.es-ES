@@ -4,10 +4,10 @@ description: Añadir sus recursos digitales a [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3179'
-ht-degree: 7%
+source-wordcount: '3137'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ También puede solicitar que se realice un procesamiento adicional de los recurs
 
 [!DNL Assets] proporcione los siguientes métodos de carga. El Adobe recomienda que entienda su caso de uso y la aplicabilidad de una opción de carga antes de utilizarla.
 
-| Método de carga | Cuándo se usa? | Persona principal |
+| Método de carga | ¿Cuándo usar? | Persona principal |
 |---------------------|----------------|-----------------|
 | [Interfaz de usuario de la consola Assets](#upload-assets) | Carga ocasional, facilidad para presionar y arrastrar, carga del buscador. No utilice para cargar muchos recursos. | Todos los usuarios |
 | [Cargar API](#upload-using-apis) | Para las decisiones dinámicas durante la carga. | Desarrollador |
@@ -37,7 +37,7 @@ También puede solicitar que se realice un procesamiento adicional de los recurs
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
-   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
+   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Select the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -207,7 +207,7 @@ Después de crear la configuración de la herramienta Importación masiva, puede
 
 ### Editar la configuración {#edit-configuration}
 
-Para editar los detalles de configuración, seleccione la configuración y haga clic en **[!UICONTROL Editar]**. No se puede editar el título de la configuración y la fuente de datos de importación mientras se realiza la operación de edición.
+Para editar los detalles de configuración, seleccione la configuración y haga clic en **[!UICONTROL Editar]**. No se puede editar el título de la configuración y el origen de datos de importación mientras se realiza la operación de edición.
 
 ### Eliminar la configuración {#delete-configuration}
 
@@ -215,7 +215,7 @@ Seleccione la configuración y haga clic en **[!UICONTROL Eliminar]** para elimi
 
 ### Validar la conexión con el origen de datos {#validate-connection}
 
-Para validar la conexión con el origen de datos, seleccione la configuración y haga clic en **[!UICONTROL check]**. Si la conexión se realiza correctamente, Experience Manager muestra el siguiente mensaje:
+Para validar la conexión con el origen de datos, seleccione la configuración y haga clic en **[!UICONTROL check]**. Si la conexión se realiza correctamente, el Experience Manager muestra el siguiente mensaje:
 
 ![Mensaje de éxito de importación masiva](assets/bulk-import-success-message.png)
 
@@ -417,5 +417,5 @@ Los detalles técnicos de las API de carga y del protocolo, y los vínculos al S
 >
 >* Aplicación de escritorio de [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es)
 >* [Acerca de [!DNL Adobe Asset Link]](https://www.adobe.com/es/creativecloud/business/enterprise/adobe-asset-link.html)
->* [[!DNL Adobe Asset Link] documentación.](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] documentación](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
 >* [Referencia técnica para la carga de recursos](developer-reference-material-apis.md#asset-upload)

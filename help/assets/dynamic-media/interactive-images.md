@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4175'
-ht-degree: 2%
+source-wordcount: '4072'
+ht-degree: 1%
 
 ---
 
 # Imágenes interactivas{#interactive-images}
 
-Puede convertir fácilmente las imágenes estáticas en experiencias atractivas y enriquecidas para los clientes arrastrando y soltando puntos interactivos &quot;de venta&quot; en una imagen. Los puntos de acceso de compra combinan información adicional sobre un producto o servicio con una capacidad directa de punto de venta de &quot;Agregar al carro de compras&quot; o &quot;Comprar&quot;. Los clientes pueden pulsar estos puntos interactivos que se vinculan directamente al producto o servicio, añadirlo a un carro de compras o vincularlo a una página web. Las experiencias directas como estas aumentan la participación de los clientes y las conversiones en el sitio web.
+Puede convertir fácilmente las imágenes estáticas en experiencias atractivas y enriquecidas para los clientes arrastrando y soltando puntos interactivos &quot;de venta&quot; en una imagen. Los puntos de acceso de compra combinan información adicional sobre un producto o servicio con una capacidad directa de punto de venta de &quot;Agregar al carro de compras&quot; o &quot;Comprar&quot;. Los clientes pueden seleccionar estos puntos interactivos que se vinculan directamente al producto o servicio, añadirlo a un carro de compras o vincularlo a una página web. Las experiencias directas como estas aumentan la participación de los clientes y las conversiones en el sitio web.
 
 A continuación se muestra un titular de ventas con una ventana emergente de vista rápida. Un usuario activa la vista rápida tocando el círculo o el &quot;punto interactivo&quot; del modelo.
 
@@ -65,7 +65,7 @@ Si utiliza un WCM (Administrador de contenido web) de terceros, integre el nuevo
 >* Desea añadir interactividad a la imagen activando en Vistas rápidas.
 >* La implementación de Experience Manager hace lo siguiente *no* utilice un marco de integración de comercio electrónico para extraer datos de productos en Experience Manager desde cualquier solución de comercio electrónico. Estas soluciones incluyen IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop.
 >
->Si la implementación de Experience Manager utiliza el comercio electrónico, puede omitir esta tarea y continuar con la siguiente.
+Si la implementación de Experience Manager utiliza el comercio electrónico, puede omitir esta tarea y continuar con la siguiente.
 
 Comience identificando las variables dinámicas utilizadas por la implementación de vista rápida existente, de modo que pueda introducir datos de puntos interactivos para crear la imagen interactiva.
 
@@ -179,20 +179,20 @@ Después de guardar el ajuste preestablecido de visualizador, se activa automát
 **Para crear un ajuste preestablecido de visualizador de imágenes interactivo:**
 
 1. En el carril izquierdo, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de visor]**.
-1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Crear]**.
+1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo Nuevo ajuste preestablecido de visualizador, escriba un nombre para describir el ajuste preestablecido de visualizador de banner interactivo.
 
    Este título aparece en la página de lista Ajuste preestablecido de visualizador después de guardar.
 
 1. En el menú desplegable Tipo de medio enriquecido, seleccione **[!UICONTROL Imagen interactiva]**.
 1. Seleccione **[!UICONTROL Crear]**.
-1. En la página Editar ajuste preestablecido de visor, pulse el botón **[!UICONTROL Aspecto]** pestaña.
+1. En la página Editar ajuste preestablecido de visor, seleccione la opción **[!UICONTROL Aspecto]** pestaña.
 1. Realice una de las siguientes acciones:
 
-   * Para cargar su propia imagen de punto interactivo que desee utilizar en las imágenes, pulse el icono Selector de recursos. En la página Seleccionar contenido, vaya a la imagen de punto interactivo que desee utilizar y selecciónela. Seleccione el icono de la marca de verificación en la esquina superior derecha.
-   * Para seleccionar una imagen de punto interactivo predefinida, pulse el icono Galería de puntos interactivos. En la paleta galería de puntos interactivos, pulse la imagen de punto interactivo que desee utilizar.
+   * Para cargar su propia imagen de punto interactivo que desee utilizar en las imágenes, seleccione el icono Selector de recursos. En la página Seleccionar contenido, vaya a la imagen de punto interactivo que desee utilizar y selecciónela. Seleccione el icono de la marca de verificación en la esquina superior derecha.
+   * Para seleccionar una imagen de punto interactivo predefinida, seleccione el icono Galería de puntos interactivos. En la paleta galería de puntos interactivos, seleccione la imagen de punto interactivo que desee utilizar.
 
-1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]**.
+1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 
    Asegúrese de publicar el nuevo ajuste preestablecido de visualizador.
 
@@ -222,7 +222,7 @@ Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/e
 
 >[!NOTE]
 >
->Las herramientas para compartir en medios sociales de la imagen interactiva no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, utilice o cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
+Las herramientas para compartir en medios sociales de la imagen interactiva no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, utilice o cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
 
 Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la página, son compatibles durante la sesión de creación y edición actual.
 
@@ -232,50 +232,50 @@ Consulte [(Opcional) Previsualizar imágenes interactivas](#optional-previewing-
 
 >[!NOTE]
 >
->Cuando se añaden puntos interactivos a una imagen en una imagen interactiva o un titular de carrusel, la información del punto interactivo se almacena en la misma ubicación de metadatos. Esta ubicación es relativa a la ubicación de la imagen, independientemente de si es una imagen interactiva o un titular de carrusel. Esta funcionalidad significa que puede reutilizar fácilmente la misma imagen, junto con sus datos de punto interactivo definidos, en cualquier visor.
+Cuando se añaden puntos interactivos a una imagen en una imagen interactiva o un titular de carrusel, la información del punto interactivo se almacena en la misma ubicación de metadatos. Esta ubicación es relativa a la ubicación de la imagen, independientemente de si es una imagen interactiva o un titular de carrusel. Esta funcionalidad significa que puede reutilizar fácilmente la misma imagen, junto con sus datos de punto interactivo definidos, en cualquier visor.
 >
->Sin embargo, tenga en cuenta que los titulares de carrusel admiten mapas de imagen en imágenes que también pueden contener puntos interactivos; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o un titular de carrusel que utilice la misma imagen. Puede crear imágenes interactivas y titulares de carrusel con copias independientes de la misma imagen.
+Sin embargo, tenga en cuenta que los titulares de carrusel admiten mapas de imagen en imágenes que también pueden contener puntos interactivos; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o un titular de carrusel que utilice la misma imagen. Puede crear imágenes interactivas y titulares de carrusel con copias independientes de la misma imagen.
 >
->Consulte también [Banners de carrusel](/help/assets/dynamic-media/carousel-banners.md).
+Consulte también [Banners de carrusel](/help/assets/dynamic-media/carousel-banners.md).
 
 >[!NOTE]
 >
->Si está editando imágenes interactivas con zonas interactivas y recorta la imagen, se eliminan las zonas interactivas.
+Si está editando imágenes interactivas con zonas interactivas y recorta la imagen, se eliminan las zonas interactivas.
 
 **Para añadir zonas interactivas a un titular de imagen:**
 
 1. En la vista Recursos, vaya al titular de la imagen que desee hacer interactivo.
 1. Realice una de las siguientes acciones:
 
-   * Pase el ratón sobre la imagen y pulse **[!UICONTROL Seleccionar]** (icono de marca de verificación). En la barra de herramientas, pulse **[!UICONTROL Editar]**.
+   * Pase el ratón sobre la imagen y seleccione **[!UICONTROL Seleccionar]** (icono de marca de verificación). En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 
-   * Pase el ratón sobre la imagen y pulse **[!UICONTROL Más acciones]** (icono de tres puntos) **[!UICONTROL > Editar]**.
+   * Pase el ratón sobre la imagen y seleccione **[!UICONTROL Más acciones]** (icono de tres puntos) **[!UICONTROL > Editar]**.
 
-   * Para abrirla en la página Vista de detalles, pulse la imagen. En la barra de herramientas, pulse **[!UICONTROL Editar]**.
+   * Para abrirla en la página Vista de detalles, seleccione la imagen. En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 
-1. Cerca de la esquina superior izquierda de la página, pulse **[!UICONTROL Agregar zona interactiva]** (icono con el dedo) para abrir la página de administración de puntos interactivos.
-1. Cerca de la esquina superior izquierda de la página, pulse **[!UICONTROL Punto interactivo]**.
+1. Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Añadir punto interactivo]** (icono de selección con el dedo) para abrir la página de administración de puntos interactivos.
+1. Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Punto interactivo]**.
 
-   1. Cerca de la esquina superior izquierda de la página Administración de puntos interactivos, pulse **[!UICONTROL Punto interactivo]**.
-   1.  En la imagen, pulse una ubicación en la que desee que aparezca el punto interactivo. Si es necesario, arrastre la zona interactiva para ajustar su ubicación. O bien, utilice las teclas de flecha del teclado para controlar la posición de una zona activa seleccionada.
+   1. Cerca de la esquina superior izquierda de la página Administración de puntos interactivos, seleccione **[!UICONTROL Punto interactivo]**.
+   1. En la imagen, seleccione una ubicación en la que desee que aparezca el punto interactivo. Si es necesario, arrastre la zona interactiva para ajustar su ubicación. O bien, utilice las teclas de flecha del teclado para controlar la posición de una zona activa seleccionada.
    1. Añada más zonas interactivas según sea necesario repitiendo los pasos a y b.
-   1. (Opcional) Para eliminar una zona interactiva, selecciónela en la imagen y, a continuación, pulse **[!UICONTROL Eliminar]** (icono de papelera) debajo de **[!UICONTROL Puntos interactivos]** encabezado.
+   1. (Opcional) Para eliminar una zona interactiva, selecciónela en la imagen y, a continuación, seleccione **[!UICONTROL Eliminar]** (icono de papelera) debajo de **[!UICONTROL Puntos interactivos]** encabezado.
 
 1. En el campo de texto Nombre, escriba el nombre del punto interactivo. Este nombre también aparece en la lista desplegable Punto interactivo seleccionado.
 1. Realice una de las siguientes acciones:
 
    * Seleccionar **[!UICONTROL Quickview]**.
 
-      * Si es cliente de Experience Manager Sites o de comercio electrónico, seleccione el icono Selector de productos (lupa) para abrir la página Seleccionar producto. Seleccione el producto que desea utilizar y, a continuación, pulse **Seleccionar** en la esquina superior derecha de la página. Volverá a la página de administración de puntos interactivos.
+      * Si es cliente de Experience Manager Sites o de comercio electrónico, seleccione el icono Selector de productos (lupa) para abrir la página Seleccionar producto. Seleccione el producto que desea utilizar y, a continuación, seleccione **Seleccionar** en la esquina superior derecha de la página. Volverá a la página de administración de puntos interactivos.
       * Si es usted *no* un cliente de Experience Manager Sites o eCommerce
 
          * Consulte [Identificación de variables de punto interactivo](#optional-identifying-hotspot-variables); debe definir estas variables.
          * A continuación, introduzca manualmente el valor SKU. En el campo de texto Valor de SKU, escriba la SKU del producto. El valor SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida. Garantiza que el sistema sepa que asocia el punto interactivo pulsado con la vista rápida de una SKU en particular.
-         * (Opcional) Si hay otras variables dentro de la vista rápida que se utilizan para identificar un producto con más detalle, pulse **[!UICONTROL Añadir variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, `category=Mens` es una variable añadida.
+         * (Opcional) Si hay otras variables dentro de la vista rápida que se utilizan para identificar un producto con más detalle, seleccione **[!UICONTROL Añadir variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, `category=Mens` es una variable añadida.
 
    * Seleccionar **[!UICONTROL Hipervínculo]**.
 
-      * Si es cliente de Experience Manager Sites, pulse el icono Selector de sitio (carpeta). Vaya a una dirección URL. El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+      * Si es cliente de Experience Manager Sites, seleccione el icono Selector de sitio (carpeta). Vaya a una dirección URL. El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
       * Si es cliente independiente, en el campo de texto HREF, especifique la ruta de URL completa a una página web vinculada.
 
    Asegúrese de especificar si desea abrir el vínculo en una nueva pestaña del explorador (opción predeterminada recomendada) o en la misma pestaña.
@@ -284,14 +284,14 @@ Consulte [(Opcional) Previsualizar imágenes interactivas](#optional-previewing-
 
    * Seleccionar **[!UICONTROL Fragmento de experiencia]**.
 
-      * Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Seleccione el fragmento de experiencia que desee utilizar. A continuación, pulse **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página. Volverá a la página de administración de puntos interactivos.
+      * Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Seleccione el fragmento de experiencia que desee utilizar. A continuación seleccione **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página. Volverá a la página de administración de puntos interactivos.
 Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Especifique la anchura y altura del fragmento de experiencia tal como desea que aparezca en el titular.
 
         >[!NOTE]
         >
-        >Las herramientas para compartir en medios sociales de la imagen interactiva no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, utilice o cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
+        Las herramientas para compartir en medios sociales de la imagen interactiva no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, utilice o cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
 
 1. Seleccionar **[!UICONTROL Guardar]** para guardar su trabajo y volver a la página de exploración.
 1. Publique la imagen interactiva. La publicación ofrece el banner a través de la nube y también genera código incrustado que le permite integrarse con un sitio web de terceros.
@@ -304,7 +304,7 @@ Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/e
 
    >[!NOTE]
    >
-   >Si está editando imágenes interactivas con zonas interactivas y recorta la imagen, se eliminarán las zonas interactivas.
+   Si está editando imágenes interactivas con zonas interactivas y recorta la imagen, se eliminarán las zonas interactivas.
 
 ### (Opcional) Previsualizar imágenes interactivas {#optional-previewing-interactive-images}
 
@@ -317,10 +317,10 @@ Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/dynamic
 
 **Para previsualizar imágenes interactivas:**
 
-1. En la vista Recursos, navegue hasta una imagen interactiva existente que haya creado y pulse para abrirla en Vista previa.
-1. Cerca de la esquina superior izquierda de la página Vista previa, en la lista desplegable Contenido, pulse **[!UICONTROL Espectadores]**.
-1. En la lista Visualizadores, pulse **[!UICONTROL Shoppable_Banner]** o el nombre del ajuste preestablecido del visualizador de imágenes interactivas que ha creado.
-1. Para probar las acciones asociadas de las zonas interactivas, pulse las zonas interactivas en la imagen.
+1. En la vista Recursos, vaya a una imagen interactiva existente que haya creado y seleccione para abrirla en Vista previa.
+1. Cerca de la esquina superior izquierda de la página Vista previa, en la lista desplegable Contenido, seleccione **[!UICONTROL Espectadores]**.
+1. En la lista Visualizadores, seleccione **[!UICONTROL Shoppable_Banner]** o el nombre del ajuste preestablecido del visualizador de imágenes interactivas que ha creado.
+1. Para probar las acciones asociadas de las zonas interactivas, seleccione las zonas interactivas de la imagen.
 
 ## Publicar recursos de imagen interactiva {#publishing-interactive-image-assets}
 
@@ -352,7 +352,7 @@ La integración es tan sencilla como eliminar el `IMG` y reemplazándolo por el 
 
 >[!NOTE]
 >
->A partir de este punto, los puntos interactivos de la imagen interactiva de ventas del sitio web de demostración solo tienen fines de visualización. Todavía no se han integrado con las vistas rápidas existentes.
+A partir de este punto, los puntos interactivos de la imagen interactiva de ventas del sitio web de demostración solo tienen fines de visualización. Todavía no se han integrado con las vistas rápidas existentes.
 
 Para aplicar un &quot;recorte&quot; a una imagen interactiva de ventas para un entorno interactivo, incluya el atributo de configuración Imagen interactiva `ZoomView.iscommand` a la ruta. En este caso, la variable `ZoomView` el componente se llama y `iscommand` es el comando de servicio de imágenes &quot;recortar&quot; que se aplica.
 
@@ -366,7 +366,7 @@ Ya está listo para integrar la imagen interactiva con una vista rápida existen
 
 >[!NOTE]
 >
->Esta tarea solo se aplica si es un cliente independiente de Experience Manager Assets.
+Esta tarea solo se aplica si es un cliente independiente de Experience Manager Assets.
 
 El último paso de este proceso es integrar la imagen interactiva con una implementación de vista rápida existente en el sitio web. No hay ninguna solución para la integración que funcione para todos los casos. Cada implementación de Quickview es única y se necesita un enfoque específico. Por lo tanto, la participación de la asistencia de una persona de TI front-end es útil.
 
@@ -426,27 +426,27 @@ Con los ejemplos de URL de vista rápida anteriores, puede ver en los siguientes
  <tbody>
   <tr>
    <td><p>SKU único, encontrado en la cadena de consulta</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>SKU único, encontrado en la ruta URL</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>SKU e ID de categoría en la cadena de consulta</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
  </tbody>
 </table>

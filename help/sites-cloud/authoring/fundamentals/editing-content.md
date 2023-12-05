@@ -2,10 +2,10 @@
 title: Edición del contenido de una página
 description: Una vez creada la página, puede editar el contenido para realizar las actualizaciones necesarias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2973'
-ht-degree: 93%
+source-wordcount: '2974'
+ht-degree: 92%
 
 ---
 
@@ -322,7 +322,7 @@ Por ejemplo, el componente **Texto**:
 
 Para mover un componente de párrafo:
 
-1. Seleccione el párrafo que desee mover manteniéndolo pulsado o mediante clic y mantener.
+1. Seleccione el párrafo que desea mover con las funciones de seleccionar y mantener pulsado o de mantener pulsado.
 1. Arrastre el párrafo a la nueva ubicación. AEM indica dónde se puede depositar el párrafo. Colóquelo en la ubicación que desee.
 
    ![Mover un componente](/help/sites-cloud/authoring/assets/editing-moving-component.png)

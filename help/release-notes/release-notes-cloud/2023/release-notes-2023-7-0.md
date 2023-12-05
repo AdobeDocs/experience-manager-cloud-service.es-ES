@@ -2,9 +2,9 @@
 title: Notas de la versión 2023.7.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.7.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '896'
 ht-degree: 47%
 
 ---
@@ -25,7 +25,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] La versión de la función actual (2023.7.0) es el 27 de julio de 2023. La próxima versión de la funcionalidad (2023.8.0) está planificada para el 31 de agosto de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.7.0) fue el viernes, 27 de julio de 2023. La siguiente versión con funcionalidades (2023.8.0) está planificada para el viernes, 31 de agosto de 2023.
 
 ## Vídeo de la versión {#release-video}
 
@@ -80,7 +80,7 @@ Assets Essentials ahora ordena los resultados de la búsqueda según la relevanc
 
 * [**Temáticas listas para usar**](/help/forms/using-themes-in-core-components.md) **y plantillas**: inicie su proceso de creación de formularios con nuestras temáticas y plantillas OOTB listas para usar, diseñadas para potenciar tanto a profesionales experimentados como a autores de nuevos formularios. Creadas sin problemas con los componentes principales de Forms adaptables, estas temáticas y plantillas cuidadosamente depuradas le permiten empezar a crear formularios rápidamente para los casos de uso más comunes.
 
-* **[Componentes de React para Forms sin encabezado](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: Ahora puede obtener una vista previa y personalizar las representaciones de formularios adaptables sin encabezado con los componentes de React predeterminados. Estos componentes aprovechan las clases de BEM de los componentes principales de Forms adaptables para el estilo, lo que facilita la personalización de su aspecto según sus necesidades específicas.
+* **[Componentes de React para Forms sin encabezado](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: Ahora puede obtener una vista previa y personalizar las representaciones de formularios adaptables sin encabezado con los componentes de React predeterminados. Estos componentes utilizan clases de BEM de componentes principales de Forms adaptables para el estilo, lo que facilita la personalización de su aspecto según sus necesidades específicas.
 
 * [**Crear Forms adaptable con secciones repetibles**](/help/forms/create-forms-repeatable-sections.md): Ahora puede hacer que [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=es), y [Fichas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es) Componentes basados en formularios adaptables repetibles para capturar varios registros de datos.  Estas secciones repetibles le permiten proporcionar varias entradas de datos fácilmente. Resulta útil cuando se desconocen de antemano las instancias de datos requeridas. Un usuario que rellena formularios puede agregar o quitar secciones fácilmente, lo que permite que los formularios se adapten a diferentes escenarios de entrada de datos y simplifica la recopilación de varias ocurrencias del mismo registro de datos.
 

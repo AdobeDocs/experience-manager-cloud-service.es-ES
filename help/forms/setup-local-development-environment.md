@@ -2,10 +2,10 @@
 title: ¿Cómo configuro un entorno de desarrollo local para AEM Forms?
 description: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2846'
-ht-degree: 94%
+source-wordcount: '2682'
+ht-degree: 95%
 
 ---
 
@@ -89,7 +89,7 @@ Para descargar la última versión del SDK de Adobe Experience Manager as a Clou
 1. Vaya a la pestaña **[!UICONTROL AEM as a Cloud Service]**.
 1. Ordene por fecha de publicación en orden de bajada.
 1. Haga clic en el SDK de Adobe Experience Manager as a Cloud Service más reciente, el archivo de características de Experience Manager Forms (complemento de AEM Forms), los recursos de referencia de formularios o Forms Designer.
-1. Revise y acepte el EULA. Presione el botón **[!UICONTROL Descargar]**.
+1. Revise y acepte el EULA. Seleccione el botón **[!UICONTROL Descargar]**.
 
 ## Configurar las herramientas de desarrollo para Proyectos AEM {#setup-development-tools-for-AEM-projects}
 
@@ -241,7 +241,7 @@ Utilice este proyecto para crear formularios adaptables, implementar actualizaci
 >[!NOTE]
 >
 > Configure la versión 30 o posterior de AEM Archetype para obtener y utilizar los modelos de datos de formulario Microsoft® Dynamics 365 y Salesforce con AEM Forms as a Cloud Service.
->Configure la versión 32 o posterior de AEM Archetype para obtener y utilizar los temas Tranquil, Urbane y Ultramarine con AEM Forms as a Cloud Service.
+Configure la versión 32 o posterior de AEM Archetype para obtener y utilizar los temas Tranquil, Urbane y Ultramarine con AEM Forms as a Cloud Service.
 
 Para configurar el proyecto, haga lo siguiente:
 
@@ -268,7 +268,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     >* Al crear un proyecto de tipo de archivo con versión 45, la variable [AEM Carpeta de proyecto de tipo de archivo]/pom.xml establece inicialmente la versión de los componentes principales de formularios en 2.0.64. Antes de crear o implementar el proyecto Archetype, actualice la versión de los componentes principales de Forms a 2.0.62.
+     * Al crear un proyecto de tipo de archivo con versión 45, la variable [AEM Carpeta de proyecto de tipo de archivo]/pom.xml establece inicialmente la versión de los componentes principales de formularios en 2.0.64. Antes de crear o implementar el proyecto Archetype, actualice la versión de los componentes principales de Forms a 2.0.62.
 
 1. Implemente el proyecto en su entorno de desarrollo local. Puede utilizar el siguiente comando para implementarlo en su entorno de desarrollo local
 
@@ -335,7 +335,7 @@ El entorno de desarrollo local está listo.
 
 ## Habilitar los componentes principales de formularios adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms
 
-Al habilitar los componentes principales de Forms adaptables en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer componentes principales basados en Forms adaptable y Forms sin encabezado con las instancias de Cloud Service de AEM Forms en varios canales. Se necesita un entorno habilitado para los componentes principales de formularios adaptables para utilizar formularios adaptables sin encabezado.
+Al habilitar los componentes principales de los formularios adaptables en AEM Forms as a Cloud Service, puede empezar a crear, publicar y ofrecer en varios canales los componentes principales basados en formularios adaptables y sin encabezado mediante las instancias de Cloud Service de AEM Forms. Se necesita un entorno habilitado para los componentes principales de formularios adaptables para utilizar formularios adaptables sin encabezado.
 
 Para obtener instrucciones, consulte [Habilitar los componentes principales de formularios adaptables en el entorno de desarrollo as a Cloud Service y local de AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
 

@@ -2,10 +2,10 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2398'
-ht-degree: 39%
+source-wordcount: '2387'
+ht-degree: 37%
 
 ---
 
@@ -172,7 +172,7 @@ Seleccione el botón Publicar para poder publicar los cambios en el contenido pu
 
 >[!TIP]
 >
->Consulte el documento [Publicación de contenido con el editor universal](publishing.md) para obtener más información sobre la publicación con el editor universal.
+>Ver el documento [Publicación de contenido con el editor universal](publishing.md) para obtener más información sobre cómo publicar con el editor universal.
 
 ### El carril de modo {#rail}
 
@@ -232,7 +232,7 @@ Según el tipo de componente que seleccione, los detalles se pueden mostrar y mo
 
 ![Detalles de los componentes](assets/component-details.png)
 
-Tenga en cuenta que no todos los componentes tienen detalles que se puedan mostrar o editar.
+No todos los componentes tienen detalles que se puedan mostrar o editar.
 
 >[!TIP]
 >
@@ -300,7 +300,7 @@ La edición de contenido es sencilla e intuitiva. Entrada [modo componentes](#co
 
 >[!TIP]
 >
->Tenga en cuenta que en el modo de componentes, al tocar o hacer clic en el contenido se selecciona para editarlo. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa.](#preview-mode)
+>En el modo de componentes, al tocar o hacer clic en el contenido, se selecciona para editarlo. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa.](#preview-mode)
 
 Según el contenido que seleccione, puede tener diferentes opciones de edición in situ, así como información y opciones adicionales para el contenido en la [carril de propiedades.](#properties-rail)
 
@@ -407,14 +407,14 @@ Los componentes se reordenan tanto en el árbol de contenido como en el editor
 
 Cuando haya terminado de editar el contenido, a menudo querrá navegar por él para ver cómo queda dentro del contenido de otras páginas. En el [modo de vista previa](#preview-mode), puede hacer clic en los vínculos para navegar por el contenido como lo haría un lector. El contenido se muestra en el editor tal y como se publicaría.
 
-Tenga en cuenta que, en el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo haría con un lector. Si desea seleccionar el contenido para editarlo, cambie a [modo de componentes.](#component-mode)
+En el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo haría con un lector. Si desea seleccionar el contenido para editarlo, cambie a [modo de componentes.](#component-mode)
 
 ## Recursos adicionales {#additional-resources}
 
 Para obtener más información acerca del editor universal, consulte estos documentos.
 
 * [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar cualquier aspecto de los contenidos en varias implementaciones para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
-* [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el publicado.
+* [Publicación de contenido con el editor universal](publishing.md) - Descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 * [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 * [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 * [Atributos y tipos](attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.

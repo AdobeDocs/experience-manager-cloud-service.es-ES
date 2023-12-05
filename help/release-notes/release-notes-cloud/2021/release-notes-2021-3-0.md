@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 38%
+source-wordcount: '1271'
+ht-degree: 35%
 
 ---
 
@@ -74,7 +74,7 @@ Póngase en contacto con el representante de su Adobe para ver una demostración
 
 * Ahora, el componente de detalles del producto se puede utilizar y configurar en cualquier página de contenido
 
-* CIF CIF Lanzamiento del sitio de referencia de Venia el 25 de marzo de 2021, que incluye la versión más reciente de componentes principales (v1.9.0) de la versión de Venia. Consulte [Sitio de referencia de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) para obtener más información.
+* CIF CIF Lanzamiento del sitio de referencia de Venia el 25 de marzo de 2021, que incluye la versión más reciente de componentes principales (v1.9.0) de la versión de Venia. Consulte [CIF Sitio de referencia de Venia en](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) para obtener más información.
 
 * CIF Lanzamiento de los componentes principales de la versión 1.9.0 de. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) para obtener más información.
 
@@ -85,8 +85,8 @@ Esta sección describe las notas de la versión para Cloud Manager en AEM as a C
 
 ## Fecha de lanzamiento {#release-date-cm-march}
 
-La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.3.0 es el 11 de marzo de 2021.
-La próxima versión está planificada para el 08 de abril de 2021.
+AEM La fecha de lanzamiento de Cloud Manager en as a Cloud Service 2021.3.0 de es el 11 de marzo de 2021.
+La próxima versión está planificada para el viernes, 08 de abril de 2021.
 
 ### Novedades {#what-is-new-march}
 
@@ -94,7 +94,7 @@ La próxima versión está planificada para el 08 de abril de 2021.
 
 * Los usuarios con los permisos necesarios ahora pueden editar un programa, lo que les permite hacer lo siguiente en forma de autoservicio:
 
-   * Agregar la solución Sites a un programa existente con Assets o viceversa.
+   * Agregar la solución Sites a un programa existente con Assets o a la inversa.
    * Eliminar Sites o Assets de un programa existente que incluya ambos.
    * Agregar el derecho a una solución no utilizada a un programa existente o como un nuevo programa.
 
@@ -147,7 +147,7 @@ La fecha de versión de la herramienta de transferencia de contenido v1.3.0 es e
 ### Novedades de la herramienta de transferencia de contenido {#what-is-new-ctt-march}
 
 * CTT ahora se instala en `/apps` en lugar de `/libs` Es posible que los marcadores del explorador para ciertas páginas ya no sean válidos.
-* Cuando se instala CTT, el usuario debe desplazarse a un nivel adicional para llegar a la página de transferencia de contenido. Consulte [Uso de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=es) para obtener más información.
+* Cuando se instala CTT, el usuario debe desplazarse a un nivel adicional para llegar a la página de transferencia de contenido. Consulte [Uso de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) para obtener más información.
 
 ### Correcciones de errores {#bug-fixes-ctt-march}
 
@@ -157,7 +157,7 @@ La fecha de versión de la herramienta de transferencia de contenido v1.3.0 es e
 
 ### Fecha de la versión {#release-date-bpa}
 
-El 22 de marzo de 2021 es la fecha de lanzamiento del Analizador de prácticas recomendadas versión 2.1.8.
+La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.8 es el 22 de marzo de 2021.
 
 ### Novedades del Analizador de prácticas recomendadas {#what-is-new-bpa}
 

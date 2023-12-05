@@ -2,9 +2,9 @@
 title: Externalización de direcciones URL
 description: El externalizador es un servicio OSGi que permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Esta sección muestra algunos ejemplos de cómo se puede utilizar el servicio Ex
 
 >[!NOTE]
 >
->No se deben crear vínculos absolutos en el contexto de HTML. Por lo tanto, esta utilidad no debe utilizarse en estos casos.
+>No se deben crear vínculos absolutos en el contexto de HTML. Por lo tanto, no utilice esta utilidad en estos casos.
 
 * **Para externalizar una ruta con el dominio &quot;publicar&quot;:**
 

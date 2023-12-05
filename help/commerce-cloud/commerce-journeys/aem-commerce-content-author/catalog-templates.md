@@ -2,7 +2,7 @@
 title: Administrar páginas y plantillas del catálogo de productos
 description: Obtenga información sobre cómo administrar páginas y plantillas de catálogo de productos
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -89,7 +89,7 @@ La plantilla se puede previsualizar con cualquier categoría o producto. Abrir *
 
 ![crear plantilla ](assets/create-template-picker.png)
 
-Ahora tenemos que asignar esta plantilla a la categoría específica. Abra las propiedades en **Información de página** y cambie a la pestaña commerce. Haga clic en el icono de la carpeta para seleccionar **Compra El Look** del selector de categorías. Es posible asignar varias categorías a una plantilla e incluir también subcategorías activando la casilla de verificación.
+Ahora tiene que asignar esta plantilla a la categoría específica. Abra las propiedades en **Información de página** y cambie a la pestaña commerce. Haga clic en el icono de la carpeta para seleccionar **Compra El Look** del selector de categorías. Es posible asignar varias categorías a una plantilla e incluir también subcategorías activando la casilla de verificación.
 
 ![crear plantilla asociada](assets/create-template-associate.png)
 

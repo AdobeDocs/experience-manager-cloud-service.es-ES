@@ -4,9 +4,9 @@ description: Conozca las prácticas recomendadas recopiladas por los equipos de 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1413'
 ht-degree: 92%
 
 ---
@@ -119,7 +119,7 @@ Cuando considere la posibilidad de mover páginas a una Live Copy, tenga en cuen
 
 ## Personalización de despliegues {#customizing-rollouts}
 
-Las configuraciones de despliegue de MSM son altamente personalizables. Debe tener en cuenta que la automatización de los despliegues puede tener consecuencias de gran alcance. Como práctica recomendada, debe planificar con mucho cuidado antes de realizar las siguientes actividades:
+Las configuraciones de despliegue de MSM son altamente personalizables. La automatización de los despliegues puede tener consecuencias de gran alcance. Como práctica recomendada, debe planificar con mucho cuidado antes de realizar las siguientes actividades:
 
 * Automatización de despliegues como [activadores onModify](#onmodify)
 * Personalización de [tipos de nodo/propiedades](#node-types-properties)

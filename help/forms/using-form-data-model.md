@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 75%
+source-wordcount: '1213'
+ht-degree: 71%
 
 ---
 
@@ -31,7 +31,7 @@ La integración de datos de [!DNL Experience Manager Forms] permite utilizar fue
 
 Un modelo de datos de formulario es una extensión del esquema JSON que puede utilizar para lo siguiente:
 
-* [Crear formularios adaptables y fragmentos;](#create-af)
+* [Crear Forms adaptable y fragmentos](#create-af)
   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
 * [Usar una vista previa con datos de ejemplo;](#preview-ic)
 * [Usar el servicio del modelo de datos de formulario;](#prefill)
@@ -46,7 +46,7 @@ Puede crear [formularios adaptables](creating-adaptive-form.md) y fragmentos de 
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Pulse para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
+1. Seleccionar para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
 
    Seleccione un modelo de datos de formulario.
 
@@ -93,14 +93,14 @@ El editor del modelo de datos de formulario permite generar y editar datos de ej
 <!--To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
-1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
+1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and select **[!UICONTROL Preview]**.
 
 The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-Para obtener una vista previa de un formulario adaptable con datos de ejemplo, abra el formulario adaptable en el modo Autor y pulse **[!UICONTROL Vista previa]**.
+Para obtener una vista previa de un formulario adaptable con datos de ejemplo, abra el formulario adaptable en el modo Autor y seleccione **[!UICONTROL Previsualizar]**.
 
 ## Prerrellenado mediante el servicio del modelo de datos de formulario {#prefill}
 
@@ -130,10 +130,10 @@ También puede enviar los archivos adjuntos del formulario a una fuente de datos
 
 1. Agregue un objeto de modelo de datos que incluya una propiedad binaria al modelo de datos de formulario.
 1. En el formulario adaptable, arrastre y coloque el componente **[!UICONTROL Archivo adjunto]** desde el Explorador de componente al formulario adaptable.
-1. Pulse para seleccionar el componente añadido y pulse ![icono_configuración](assets/configure-icon.svg) para abrir el Explorador de propiedades del componente.
-1. En el campo Referencia de enlace, pulse ![foldersearch_18](assets/folder-search-icon.svg) y desplácese hasta seleccionar la propiedad binaria añadida en el modelo de datos de formulario. Configure otras propiedades según corresponda.
+1. Seleccione para seleccionar el componente añadido y seleccione ![settings_icon](assets/configure-icon.svg) para abrir el Explorador de propiedades del componente.
+1. En el campo Referencia de enlace, seleccione ![foldersearch_18](assets/folder-search-icon.svg) y desplácese hasta seleccionar la propiedad binaria añadida en el modelo de datos de formulario. Configure otras propiedades según corresponda.
 
-   Pulse ![check-button](assets/save_icon.svg) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
+   Seleccionar ![botón de verificación](assets/save_icon.svg) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
 
 1. En la sección Envío de las propiedades del contenedor de formulario adaptable, active **[!UICONTROL Enviar archivos adjuntos del formulario]**. Esto envía el archivo adjunto del campo de propiedad binaria a la fuente de datos al enviar el formulario.
 
@@ -151,7 +151,7 @@ Además, puede usar la API `guidelib.dataIntegrationUtils.executeOperation` para
 
 Puede [invocar un modelo de datos de formulario desde el editor de reglas mediante funciones personalizadas](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Para invocar el modelo de datos de formulario, agregue un modelo de datos de formulario a la lista de permitidos. Para agregar un modelo de datos de formulario a una lista de permitidos:
 
-1. Vaya a la consola web del Experience Manager en `https://server:host/system/console/configMgr`.
+1. Vaya a la consola web de Experience Manager en `https://server:host/system/console/configMgr`.
 1. Localizar **[!UICONTROL Lista blanca a nivel de formulario adaptable del modelo de datos de formulario para la invocación de servicio: fábrica de configuración]**.
 1. Clic ![icono de signo más](/help/forms/assets/Smock_Add_18_N.svg) para añadir la configuración.
 1. Añadir **[!UICONTROL Patrón de ruta de contenido]** para especificar la ubicación de su Forms adaptable.  El valor predeterminado es `/content/forms/af/(.*)` que incluye todo el Forms adaptable. También puede especificar la ruta para un formulario adaptable específico.

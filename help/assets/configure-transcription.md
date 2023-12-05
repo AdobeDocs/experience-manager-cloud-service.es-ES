@@ -9,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 87%
+source-wordcount: '1663'
+ht-degree: 86%
 
 ---
 
@@ -83,7 +83,7 @@ Ahora vamos a configurar la transcripción en este perfil de vídeo. Vaya a **[!
 
 Una vez configurado el perfil de procesamiento para la transcripción de archivos de audio y vídeo, puede aplicar este perfil de procesamiento a las carpetas mediante uno de los métodos siguientes:
 
-* Seleccione una definición de perfil de procesamiento en **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de procesamiento]** y utilice la acción **[!UICONTROL Aplicar perfil a las carpetas]**. El explorador de contenido le permite desplazarse a una carpeta específica, seleccionarla y confirmar la aplicación del perfil.
+* Seleccione una definición de perfil de procesamiento en **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de procesamiento]** y utilice **[!UICONTROL Aplicar perfil a las carpetas]** acción. El explorador de contenido le permite desplazarse a una carpeta específica, seleccionarla y confirmar la aplicación del perfil.
 * Seleccione una carpeta en la interfaz de usuario de Assets y haga clic en **[!UICONTROL Propiedades]** para abrir las propiedades de la carpeta. Haga clic en la pestaña **[!UICONTROL Procesamiento de recursos]** y seleccione el perfil de procesamiento adecuado para la carpeta en la lista **[!UICONTROL Perfil de procesamiento]**. Para guardar los cambios, haga clic en **[!UICONTROL Guardar y cerrar]**.
 
   ![configure-transcription-service](assets/video-processing-profile3.png)

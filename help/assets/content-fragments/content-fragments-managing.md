@@ -2,10 +2,10 @@
 title: Administración de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, la base del contenido sin encabezado.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 67%
+source-wordcount: '1873'
+ht-degree: 66%
 
 ---
 
@@ -100,13 +100,13 @@ En el **Assets** consola hay una serie de acciones disponibles para sus fragment
 
 Seleccione el fragmento para mostrar la barra de herramientas con las acciones aplicables:
 
-* **Volver a procesar los recursos**
+* **Volver a procesar recursos**
 * **Crear**
 * **Descargar**
 
    * Guarde el fragmento como archivo ZIP; puede definir si desea incluir elementos, variaciones o metadatos.
 
-* **Cierre de compra**
+* **Finalizar compra**
 * **Propiedades**
 
    * Permite ver, editar o ambos metadatos del fragmento.
@@ -299,21 +299,21 @@ Además de las opciones estándar, [Cronología](/help/assets/manage-digital-ass
 
 >[!NOTE]
 >
->Los comentarios son lo siguiente:
+Los comentarios son lo siguiente:
 >
->* De funcionalidad estándar para todos los recursos
->* Realizados en la cronología
->* Relacionados con el recurso de fragmento
+* De funcionalidad estándar para todos los recursos
+* Realizados en la cronología
+* Relacionados con el recurso de fragmento
 >
->Las anotaciones (para fragmentos de contenido) son lo siguiente:
+Las anotaciones (para fragmentos de contenido) son lo siguiente:
 >
->* Introducidas en el editor de fragmentos
->* Específicas para un segmento seleccionado de texto dentro del fragmento
+* Introducidas en el editor de fragmentos
+* Específicas para un segmento seleccionado de texto dentro del fragmento
 >
 
 Por ejemplo:
 
-![Escala de cronología](assets/cfm-managing-05.png)
+![Cronología](assets/cfm-managing-05.png)
 
 ## Comparación de versiones de fragmento {#comparing-fragment-versions}
 
@@ -339,7 +339,7 @@ Se muestran una al lado de la otra, donde:
 
 >[!NOTE]
 >
->No se puede editar el contenido del fragmento al comparar fragmentos.
+No se puede editar el contenido del fragmento al comparar fragmentos.
 
 ![Comparación de variaciones](assets/cfm-managing-06.png)
 
@@ -357,9 +357,9 @@ Puede volver a una versión específica del fragmento:
 
 >[!CAUTION]
 >
->Si el fragmento se basa en un modelo, debe asegurarse de que [el modelo se ha publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Si el fragmento se basa en un modelo, debe asegurarse de que [el modelo se ha publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
->Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
+Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
 
 Los fragmentos de contenido deben publicarse para su uso en el entorno de publicación. Esto se realiza mediante la funcionalidad estándar de Recursos:
 
@@ -369,13 +369,13 @@ Los fragmentos de contenido deben publicarse para su uso en el entorno de public
 Se puede acceder a esto:
 
 * Después de la creación; usando [acciones disponibles en la consola Recursos](#actions-for-a-content-fragment-assets-console).
-* En el [Editor de fragmentos de contenido](#toolbar-actions-in-the-content-fragment-editor).
+* Desde el [Editor de fragmentos de contenido](#toolbar-actions-in-the-content-fragment-editor).
 
 Además, cuando [publicar una página que use el fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); el fragmento se enumera en las referencias de página.
 
 >[!CAUTION]
 >
->Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
+Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
 
 ## Eliminación de un fragmento {#deleting-a-fragment}
 
@@ -386,11 +386,11 @@ Para eliminar un fragmento:
 
    >[!NOTE]
    >
-   >La acción **Eliminar** no se encuentra disponible como Acción rápida.
+   La acción **Eliminar** no se encuentra disponible como Acción rápida.
 
 3. En la barra de herramientas, seleccione **Eliminar**.
 4. Confirme la acción **Eliminar**.
 
    >[!CAUTION]
    >
-   >Si ya se hace referencia al fragmento en una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se elimina de cualquier página de contenido.
+   Si ya se hace referencia al fragmento en una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se elimina de cualquier página de contenido.

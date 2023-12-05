@@ -1,10 +1,10 @@
 ---
 title: ¿Qué son las expresiones de formulario adaptable?
 description: Utilice expresiones de formularios adaptables para agregar validación automática, cálculo y activar o desactivar la visibilidad de una sección.
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2698'
-ht-degree: 98%
+source-wordcount: '2683'
+ht-degree: 97%
 
 ---
 
@@ -187,7 +187,7 @@ Los métodos para agregar validaciones en un campo son los siguientes:
 
 ### Requerido {#required}
 
-Para hacer que un componente sea obligatorio, en el diálogo **Editar** del componente, puede seleccionar la opción **Título y texto > Requerido**. También puede agregar el mensaje necesario correspondiente (opcional).
+Para hacer que un componente sea obligatorio, en el diálogo **Editar** del componente, puede seleccionar la opción **Título y texto > Requerido**. También puede añadir el mensaje necesario correspondiente (opcional).
 
 ### motivos de validación {#validation-patterns}
 
@@ -274,8 +274,8 @@ Realice los siguientes pasos para crear un motivo personalizado para un tipo de 
 1. Abra la pestaña Propiedades del nodo que ha creado. Por ejemplo, abra la pestaña Propiedades de `textboxpatterns`. Agregue la propiedad `guideComponentType` a este nodo y establezca su valor en *fd/af/components/formatter/guideTextBox*.
 
 1. El valor de esta propiedad varía según el campo para el que desee definir los motivos. Para el campo numérico, el valor de la propiedad `guideComponentType` es *fd/af/components/formatter/guideNumericBox*. El valor del campo Marcador de datos es *fd/af/components/formatter/guideDatepicker*.
-&grave;&grave;
-1. Puede agregar un motivo personalizado al asignar una propiedad al `textboxpatterns` nodo. Agregue una propiedad con un nombre (por ejemplo `pattern1`) y establezca su valor en el motivo que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El motivo estará disponible para todos los cuadros de texto que utilice en formularios adaptables.
+``
+1. Puede agregar un motivo personalizado al asignar una propiedad al `textboxpatterns` nodo. Agregue una propiedad con un nombre (por ejemplo, `pattern1`) y establezca su valor en el patrón que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El motivo estará disponible para todos los cuadros de texto que utilice en formularios adaptables.
 
    ![Crear motivos personalizados para campos en CrxDe](assets/creating-custom-patterns.png)
 

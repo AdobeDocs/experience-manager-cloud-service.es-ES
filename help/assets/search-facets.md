@@ -1,13 +1,13 @@
 ---
-title: Facetas de búsqueda.
+title: Buscar facetas.
 description: En este artículo se describe cómo crear, modificar y utilizar facetas de búsqueda en Experience Manager.
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2504'
-ht-degree: 21%
+source-wordcount: '2498'
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ Las facetas de búsqueda que aparecen en el panel Filtros se definen en el formu
 Para las búsquedas de texto completo, agregue `Fulltext` predicado para el formulario. Utilice el predicado Propiedad para buscar recursos que coincidan con una sola propiedad especificada. Utilice el predicado Opciones para buscar recursos que coincidan con uno o varios valores de una propiedad en particular. Agregue el predicado Intervalo de fechas para buscar recursos creados dentro de un intervalo de fechas especificado.
 
 1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar Forms]**.
-1. En la página Buscar Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]**, y pulse  **Editar** ![aemassets_edit](assets/aemassets_edit.png).
+1. En la página Buscar Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]**, luego seleccione  **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Busque y seleccione el carril de búsqueda de administración de Assets](assets/assets_admin_searchrail.png)
 
@@ -49,7 +49,7 @@ Para las búsquedas de texto completo, agregue `Fulltext` predicado para el form
 
    *Imagen: utilice la pestaña Configuración para proporcionar las opciones necesarias de un predicado.*
 
-1. En el campo **[!UICONTROL Nombre de propiedad]**, indique un nombre válido para la propiedad de metadatos que desea asociar al predicado. Es el nombre sobre el cual se realiza la búsqueda. Por ejemplo, escriba `jcr:content/metadata/dc:description` o `./jcr:content/metadata/dc:description`. También puede seleccionar un nodo existente del cuadro de diálogo de selección.
+1. En el campo **[!UICONTROL Nombre de propiedad]**, indique un nombre válido para la propiedad de metadatos que desea asociar al predicado. Es el nombre sobre el cual se realiza la búsqueda. Por ejemplo, introduzca `jcr:content/metadata/dc:description` o `./jcr:content/metadata/dc:description`. También puede seleccionar un nodo existente del cuadro de diálogo de selección.
 
    ![Asocie una propiedad de metadatos con un predicado en el campo Nombre de propiedad](assets/property_settings.png)
 
@@ -63,7 +63,7 @@ Para las búsquedas de texto completo, agregue `Fulltext` predicado para el form
    Previsualice el formulario de búsqueda antes de enviar los cambios
 
 1. Para cerrar la vista previa, haga clic en **[!UICONTROL Cerrar]** ![close](assets/do-not-localize/close_icon.png) en la esquina superior derecha de la vista previa.
-1. Tocar **[!UICONTROL Listo]** para guardar la configuración.
+1. Seleccionar **[!UICONTROL Listo]** para guardar la configuración.
 1. Vaya al panel Buscar de la interfaz de usuario de Assets. El predicado Propiedad se agrega al panel.
 1. Escriba una descripción del recurso que se va a buscar en el cuadro de texto. Por ejemplo, introduzca &quot;Adobe&quot;. Al realizar una búsqueda, los recursos con una descripción que coincida con &quot;Adobe&quot; se muestran en los resultados de la búsqueda.
 
@@ -101,14 +101,14 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 >
 >El predicado Opciones es un contenedor personalizado que incluye predicados de propiedad para demostrar el comportamiento descrito. Actualmente, no hay ningún extremo REST disponible para admitir la funcionalidad de forma nativa.
 
-1. Pulse el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas > General > Buscar Forms]**.
-1. En la página **[!UICONTROL Buscar formularios]**, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y pulse el icono Editar.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas > General > Buscar Forms]**.
+1. Desde el **[!UICONTROL Buscar Forms]** página, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y, a continuación, seleccione el icono Editar.
 1. En la página **[!UICONTROL Editar formulario de búsqueda]**, arrastre **[!UICONTROL Predicado de opciones]** desde la pestaña **[!UICONTROL Seleccionar predicado]** al panel principal.
-1. En la pestaña **[!UICONTROL Configuración]**, indique una etiqueta y un nombre para la propiedad. Por ejemplo, para buscar recursos en función de su formato, especifique un nombre práctico para la etiqueta, por ejemplo, **[!UICONTROL Tipo de archivo]**. Indique la propiedad en función de la cual se realizará la búsqueda en el campo de propiedad, por ejemplo `jcr:content/metadata/dc:format.`
+1. En la pestaña **[!UICONTROL Configuración]**, indique una etiqueta y un nombre para la propiedad. Por ejemplo, para buscar recursos en función de su formato, especifique un nombre descriptivo para la etiqueta, por ejemplo, **[!UICONTROL Tipo de archivo]**. Especifique la propiedad en función de la cual se realizará la búsqueda en el campo de propiedad, por ejemplo, `jcr:content/metadata/dc:format.`
 1. Realice una de las siguientes acciones:
 
    * En el **[!UICONTROL Nombre de propiedad]** , mencione la ruta del archivo JSON donde define los nodos para las opciones y especifique los pares de clave-valor correspondientes.
-   * Tocar ![Icono de adición de recursos](assets/do-not-localize/aem_assets_add_icon.png) situado junto al campo Opciones para especificar el texto y el valor de visualización de las opciones que desea proporcionar en el panel Filtros. Para añadir otra opción, seleccione ![Icono de adición de recursos](assets/do-not-localize/aem_assets_add_icon.png) y repita el paso.
+   * Seleccionar ![Icono de adición de recursos](assets/do-not-localize/aem_assets_add_icon.png) situado junto al campo Opciones para especificar el texto y el valor de visualización de las opciones que desea proporcionar en el panel Filtros. Para añadir otra opción, seleccione ![Icono de adición de recursos](assets/do-not-localize/aem_assets_add_icon.png) y repita el paso.
 
 1. Compruebe que la opción **[!UICONTROL Selección única]** se borra para que el usuario pueda seleccionar varias opciones a la vez para diferentes tipos de archivos (por ejemplo, imágenes, documentos, multimedia y archivos). Si elige **[!UICONTROL Selección única]**, el usuario solo puede seleccionar una opción para diferentes tipos de archivo a la vez.
 
@@ -124,11 +124,11 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 El `Multi Value Property` el predicado permite buscar recursos para varios valores. Imagine un escenario en el que tiene imágenes de varios productos en [!DNL Assets] y los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de productos basadas en varios números de SKU.
 
 1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar Forms]**.
-1. En la página Buscar Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]**, el grifo **Editar** ![aemassets_edit](assets/aemassets_edit.png).
+1. En la página Buscar Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]**, seleccione **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. En la página Editar formulario de búsqueda, arrastre un **[!UICONTROL predicado de propiedades de varios valores]** desde la pestaña **[!UICONTROL Seleccionar predicado]** hasta el panel principal.
-1. En el **[!UICONTROL Configuración]** , introduzca una etiqueta y un texto de marcador de posición para el predicado. Especifique el nombre de la propiedad en función del cual se realizará la búsqueda en el campo de propiedad, por ejemplo `jcr:content/metadata/dc:value`. También puede utilizar el cuadro de diálogo de selección para seleccionar un nodo.
+1. En el **[!UICONTROL Configuración]** , introduzca una etiqueta y un texto de marcador de posición para el predicado. Especifique el nombre de la propiedad en función del cual se realizará la búsqueda en el campo de propiedad, por ejemplo, `jcr:content/metadata/dc:value`. También puede utilizar el cuadro de diálogo de selección para seleccionar un nodo.
 1. Asegúrese de que la opción **[!UICONTROL Compatibilidad con delimitadores]** está seleccionada. En el campo **[!UICONTROL Delimitadores de entrada]**, especifique delimitadores para separar valores individuales. De forma predeterminada, se especifica una coma como delimitador. Puede especificar un delimitador diferente.
-1. En el **Descripción** , escriba una descripción opcional y pulse **[!UICONTROL Listo]**.
+1. En el **Descripción** , introduzca una descripción opcional y, a continuación, seleccione **[!UICONTROL Listo]**.
 1. Vaya al panel Filtros de la interfaz de usuario de Assets. El predicado **[!UICONTROL Propiedad de varios valores]** se agrega al panel.
 1. Especifique varios valores en el campo Valor múltiple separados por delimitadores y realice la búsqueda. El predicado obtiene una coincidencia de texto exacta para los valores especificados.
 
@@ -137,9 +137,9 @@ El `Multi Value Property` el predicado permite buscar recursos para varios valor
 El `Tags` el predicado permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, [!DNL Assets] busca recursos para una o varias coincidencias de etiquetas en función de las etiquetas especificadas. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción Coincidir con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
 
 1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar Forms]**.
-1. En la página Buscar Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y luego pulse **Editar** ![aemassets_edit](assets/aemassets_edit.png).
+1. En la página Buscar Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y luego seleccione **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. En la página Editar formulario de búsqueda, arrastre **[!UICONTROL Predicado de etiquetas]** desde la pestaña Seleccionar predicado al panel principal.
-1. En la pestaña Configuración, introduzca un texto de marcador de posición para el predicado. Especifique el nombre de la propiedad en función del cual se realizará la búsqueda en el campo de propiedad, por ejemplo `jcr:content/metadata/cq:tags`. También puede seleccionar un nodo en CRXDE desde el cuadro de diálogo de selección.
+1. En la pestaña Configuración, introduzca un texto de marcador de posición para el predicado. Especifique el nombre de la propiedad en función del cual se realizará la búsqueda en el campo de propiedad, por ejemplo, `jcr:content/metadata/cq:tags`. También puede seleccionar un nodo en CRXDE desde el cuadro de diálogo de selección.
 1. Configure la propiedad Ruta de etiquetas raíz de este predicado para rellenar varias etiquetas en la lista Etiquetas.
 1. Seleccione la opción **[!UICONTROL Mostrar todas las etiquetas]** para buscar recursos que incluyan todas las etiquetas que especifique.
 
@@ -325,8 +325,8 @@ El icono de bloqueo de una opción de la página Buscar Forms indica que la conf
 Para restaurar la faceta de búsqueda predeterminada, realice estos pasos:
 
 1. Seleccionar **[!UICONTROL Carril de búsqueda de administración de Assets]** en el **[!UICONTROL Buscar Forms]** página.
-1. Tocar **[!UICONTROL Eliminar]** ![icono eliminar](assets/do-not-localize/deleteoutline.png) en la barra de herramientas.
-1. En el cuadro de diálogo de confirmación, pulse **[!UICONTROL Eliminar]** para quitar los cambios personalizados.
+1. Seleccionar **[!UICONTROL Eliminar]** ![icono eliminar](assets/do-not-localize/deleteoutline.png) en la barra de herramientas.
+1. En el cuadro de diálogo de confirmación, seleccione **[!UICONTROL Eliminar]** para quitar los cambios personalizados.
 
    Después de eliminar los cambios personalizados en las facetas de búsqueda, vuelve a aparecer un candado antes de **[!UICONTROL Carril de búsqueda de administración de Assets]** en la página **[!UICONTROL Buscar formularios]**.
 

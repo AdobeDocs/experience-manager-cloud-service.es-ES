@@ -1,13 +1,13 @@
 ---
 title: ¿Cómo se envía un formulario adaptable para su revisión? ¿Cómo administrar las revisiones de un formulario adaptable de AEM?
-description: Revisar es un mecanismo que permite al revisor realizar distintas tareas para formularios adaptables mediante el paso Asignar tarea.
+description: La revisión es un mecanismo que permite al revisor realizar diferentes tareas en los formularios adaptables mediante el paso Asignar tarea.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 93%
+source-wordcount: '338'
+ht-degree: 83%
 
 ---
 
@@ -25,7 +25,7 @@ Al usar el [paso Asignar](https://experienceleague.adobe.com/docs/experience-man
 1. Abra la instancia de autor en modo de edición.
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** >  **[!UICONTROL Modelos]** > **[!UICONTROL Crear]** > **[!UICONTROL Crear modelo]**
 1. Especifique el Título del flujo de trabajo y añada el paso **[Asignar tarea]**
-1. Toque ![settings_icon](assets/settings_icon.png) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Asignar tarea]**.
+1. Seleccionar ![settings_icon](assets/settings_icon.png) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Asignar tarea]**.
 1. Abra la pestaña [!UICONTROL Formulario y documento] y abra la lista desplegable [!UICONTROL Rellenado previamente] y especifique:
 
    * Seleccionar archivo de datos de entrada mediante
@@ -44,7 +44,7 @@ Al usar el [paso Asignar](https://experienceleague.adobe.com/docs/experience-man
 Ahora, configure la acción Enviar de un componente Contenedor de formulario adaptable en la página del sitio :
 
 1. Vaya a la página del sitio.
-1. Toque ![settings_icon](assets/settings_icon.png) de un contenedor de formulario adaptable. Se abre el cuadro de diálogo **[!UICONTROL Contenedor de formulario adaptable]**.
+1. Seleccionar ![settings_icon](assets/settings_icon.png) de un contenedor de formulario adaptable. Se abre el cuadro de diálogo **[!UICONTROL Contenedor de formulario adaptable]**.
 1. Abra la pestaña **[!UICONTROL Envío]** y especifique **[!UICONTROL Enviar acción]** para [Invocar un flujo de trabajo de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=es#invoke-an-aem-workflow)
 
 1. Haga clic en [Listo] para guardar los cambios.

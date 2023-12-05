@@ -1,18 +1,18 @@
 ---
-title: Integración de visualizadores de Dynamic Media con etiquetas de Analytics y Adobe Experience Platform
+title: Integración de visores de Dynamic Media con etiquetas de Experience Platform y Adobe Analytics
 description: Obtenga información acerca de la extensión de visores de Dynamic Media para Experience Platform y visores de Dynamic Media 5.13. Permite a los clientes de etiquetas de Adobe Analytics y Platform utilizar eventos y datos específicos para los visores de Dynamic Media en la configuración de etiquetas de Experience Platform.
 contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '6661'
-ht-degree: 7%
+source-wordcount: '6701'
+ht-degree: 6%
 
 ---
 
-# Integración de visualizadores de Dynamic Media con etiquetas de Analytics y Adobe Experience Platform {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Integración de visores de Dynamic Media con etiquetas de Experience Platform y Adobe Analytics {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## ¿Qué es la integración de visores de Dynamic Media con etiquetas de Experience Platform y Adobe Analytics? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -506,7 +506,7 @@ Después de configurar las etiquetas de Experience Platform, se configura lo sig
 
 Una propiedad de Etiquetas de Experience Platform es una configuración con nombre que mantiene todos los ajustes juntos. Se genera y publica una biblioteca de las opciones de configuración en diferentes niveles de entorno (desarrollo, ensayo y producción).
 
-Consulte también [Configurar una propiedad de toque](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
+Consulte también [Configurar una propiedad de selección](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 **Para crear una propiedad en Etiquetas de Experience Platform:**
 
@@ -748,7 +748,7 @@ La configuración del Experience Manager consta de los dos pasos principales sig
    * **[!UICONTROL Título]** : introduzca un título descriptivo para la cuenta.
    * **[!UICONTROL Servidor de autorización]** - Vuelva a la página de detalles de integración que abrió anteriormente. Seleccione el **[!UICONTROL JWT]** pestaña. Copie el nombre del servidor, sin la ruta, como se indica a continuación.
 
-   Vuelva a la página **[!UICONTROL Cuenta]** y, a continuación, pegue el nombre en el campo correspondiente.
+   Vuelva a la **[!UICONTROL Cuenta]** y, a continuación, pegue el nombre en el campo correspondiente.
 Por ejemplo, `https://ims-na1.adobelogin.com/`
 (el nombre del servidor de ejemplo es solo para fines explicativos)
 

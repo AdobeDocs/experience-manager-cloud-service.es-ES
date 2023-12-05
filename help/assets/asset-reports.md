@@ -5,18 +5,18 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 9%
+source-wordcount: '935'
+ht-degree: 8%
 
 ---
 
-# Informes de Asset {#asset-reports}
+# Informes de recurso {#asset-reports}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Los informes de recursos le permiten evaluar la utilidad de su [!DNL Adobe Experience Manager Assets] implementación. Con [!DNL Assets], puede generar varios informes para sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, cómo interactúan los usuarios con los recursos y cuáles son <!-- downloaded and --> compartido.
@@ -38,7 +38,7 @@ Cuando se genera un informe, se le notifica mediante <!-- through an email (opti
 * Vencimiento
 * Modificación
 * Publicación
-* [!DNL Brand Portal] publicación
+* [!DNL Brand Portal] publicar
 * Uso del disco
 * Archivos
 * Vínculos compartidos
@@ -88,7 +88,7 @@ Cuando se genera un informe, se le notifica mediante <!-- through an email (opti
 
    ![Página de detalles del informe Archivos](assets/files_report.png)
 
-   El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Las columnas no se pueden personalizar.
+   El **[!UICONTROL Vínculos compartidos]** El informe muestra las direcciones URL de los recursos que se comparten con usuarios externos desde [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Las columnas no se pueden personalizar.
 
    El **[!UICONTROL Vínculos compartidos]** no incluye opciones para subcarpetas y representaciones porque solo publica las direcciones URL compartidas que aparecen en `/var/dam/share`.
 
@@ -105,7 +105,7 @@ Cuando se genera un informe, se le notifica mediante <!-- through an email (opti
    ![Seleccionar o cancelar la selección de columnas del informe](assets/custom_columns.png)
 
 1. Clic **[!UICONTROL Crear]** en la barra de herramientas. Un mensaje notifica que se ha iniciado la generación del informe.
-1. En el [!UICONTROL Informes de recursos] página, el estado de generación del informe se basa en el estado actual del trabajo de informe, por ejemplo [!UICONTROL Correcto], [!UICONTROL Error], [!UICONTROL En cola], o [!UICONTROL Programado]. El mismo estado aparece en la bandeja de entrada de notificaciones. Para ver la página del informe, haga clic en el vínculo del informe. También puede seleccionar el informe y hacer clic en **[!UICONTROL Ver]** en la barra de herramientas.
+1. En el [!UICONTROL Informes de recursos] página, el estado de generación del informe se basa en el estado actual del trabajo de informe, por ejemplo, [!UICONTROL Correcto], [!UICONTROL Error], [!UICONTROL En cola], o [!UICONTROL Programado]. El mismo estado aparece en la bandeja de entrada de notificaciones. Para ver la página del informe, haga clic en el vínculo del informe. También puede seleccionar el informe y hacer clic en **[!UICONTROL Ver]** en la barra de herramientas.
 
    ![Un informe generado](assets/report_page.png)
 
@@ -133,7 +133,7 @@ Puede agregar columnas personalizadas a los siguientes informes para mostrar má
 * Vencimiento
 * Modificación
 * Publicación
-* [!DNL Brand Portal] publicación
+* [!DNL Brand Portal] publicar
 * Archivos
 
 Para añadir columnas personalizadas a estos informes, siga estos pasos:
@@ -194,10 +194,10 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)

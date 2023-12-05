@@ -2,10 +2,10 @@
 title: Búsqueda
 description: Encuentre su contenido más rápidamente con una búsqueda completa
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 90%
+ht-degree: 83%
 
 ---
 
@@ -44,7 +44,7 @@ Para buscar y filtrar sus recursos:
 1. Si es necesario, puede quitar el filtro de ubicación (seleccione **X** en el filtro que desea eliminar) para buscar en todas las consolas/tipos de recursos.
 1. Los resultados se muestran agrupados según la consola y el tipo de recurso relacionado.
 
-   Puede seleccionar un recurso específico (para realizar más acciones), o profundizar seleccionando el tipo de recurso necesario; por ejemplo **Ver todos los sitios**: 
+   Puede seleccionar un recurso específico (para realizar más acciones), o profundizar seleccionando el tipo de recurso necesario; por ejemplo, **Ver todos los sitios**:
 
    ![Resultados de la búsqueda](/help/sites-cloud/authoring/assets/search-results.png)
 
@@ -59,7 +59,7 @@ Para buscar y filtrar sus recursos:
    * Búsquedas guardadas
    * Directorio de búsqueda
    * Etiquetas
-   * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de LiveCopy.
+   * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de Live Copy.
 
    >[!NOTE]
    >

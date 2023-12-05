@@ -2,10 +2,10 @@
 title: Ingesta de contenido en Cloud Service
 description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 7%
+source-wordcount: '2275'
+ht-degree: 5%
 
 ---
 
@@ -49,7 +49,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
 
    * **Borrar:** Elija la `Wipe` valor
       * El **Barrido** establece el punto de inicio del destino de la ingesta. If **Barrido** AEM Cuando está activada, el destino, incluido todo su contenido, se restablece a la versión de la especificada en Cloud Manager. Si no está habilitado, el destino mantiene su contenido actual como punto de partida.
-      * Tenga en cuenta que esta opción sí **NO** afectar a cómo se realizará la ingesta de contenido. La ingesta siempre utiliza una estrategia de sustitución de contenido y _no_ una estrategia de combinación de contenido para que, en ambos **Barrido** y **Sin barrido** En algunos casos, la ingesta de un conjunto de migración sobrescribirá el contenido en la misma ruta en el destino. Por ejemplo, si el conjunto de migración contiene `/content/page1` y el destino ya contiene `/content/page1/product1`, la ingesta eliminará todo el `page1` ruta y sus subpáginas, incluidas `product1`y reemplácelo por el contenido del conjunto de migración. Esto significa que se debe realizar una planificación cuidadosa al realizar una **Sin barrido** la ingesta a un destino que incluya cualquier contenido que se deba mantener.
+      * Esta opción hace lo siguiente **NO** afectar a cómo se realizará la ingesta de contenido. La ingesta siempre utiliza una estrategia de sustitución de contenido y _no_ una estrategia de combinación de contenido para que, en ambos **Barrido** y **Sin barrido** En algunos casos, la ingesta de un conjunto de migración sobrescribirá el contenido en la misma ruta en el destino. Por ejemplo, si el conjunto de migración contiene `/content/page1` y el destino ya contiene `/content/page1/product1`, la ingesta eliminará todo el `page1` ruta y sus subpáginas, incluidas `product1`y reemplácelo por el contenido del conjunto de migración. Esto significa que se debe realizar una planificación cuidadosa al realizar una **Sin barrido** la ingesta a un destino que incluya cualquier contenido que se deba mantener.
 
    >[!IMPORTANT]
    > Si la configuración **Barrido** está habilitado para la ingesta, restablece todo el repositorio existente, incluidos los permisos de usuario en la instancia de Cloud Service de destino. Este restablecimiento también es verdadero para un usuario administrador agregado a **administradores** y ese usuario deben volver a agregarse al grupo de administradores para iniciar una ingesta.
@@ -84,7 +84,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
 La herramienta de transferencia de contenido tiene una función que permite extraer contenido diferencial realizando una *recargar* del conjunto de migración. Esto permite modificar el conjunto de migración para incluir únicamente el contenido que ha cambiado desde la extracción anterior sin tener que extraer todo el contenido de nuevo.
 
 >[!NOTE]
->Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service. Si ha utilizado el paso de precopia para la primera ingesta, puede omitir la precopia para las ingestas de recarga posteriores (si el tamaño del conjunto de migración de recarga es inferior a 200 GB). El motivo es que puede añadir tiempo a todo el proceso.
+>Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse al Cloud Service. Si ha utilizado el paso de precopia para la primera ingesta, puede omitir la precopia para las ingestas de recarga posteriores (si el tamaño del conjunto de migración de recarga es inferior a 200 GB). El motivo es que puede añadir tiempo a todo el proceso.
 
 Para introducir contenido diferencial una vez completadas algunas ingestas, debe ejecutar un [Extracción Superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)y, a continuación, utilice el método de ingesta con **Barrido** opción **inhabilitado**. Asegúrese de leer el **Barrido** Esta explicación anterior para evitar perder contenido que ya se encuentra en el destino.
 

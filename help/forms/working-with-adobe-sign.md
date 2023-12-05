@@ -6,16 +6,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3172'
-ht-degree: 94%
+source-wordcount: '3131'
+ht-degree: 90%
 
 ---
 
 # Utilizar [!DNL Adobe Sign] en un formulario adaptable {#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 
 | Versión | Vínculo del artículo |
@@ -76,7 +76,7 @@ Puede habilitar [!DNL Adobe Sign] para un formulario adaptable existente o crear
 Para crear un formulario adaptable habilitado para firmar:
 
 1. Vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos]**.
-1. Pulse **[!UICONTROL Crear]** y seleccione **[!UICONTROL Formulario adaptable]**. Aparece una lista de plantillas. Seleccione una plantilla y toque **[!UICONTROL Siguiente]**.
+1. Seleccionar **[!UICONTROL Crear]** y seleccione **[!UICONTROL Formulario adaptable]**. Aparece una lista de plantillas. Seleccione una plantilla y seleccione **[!UICONTROL Siguiente]**.
 1. En la pestaña **[!UICONTROL Básico]**:
 
    1. Especifique el **[!UICONTROL Nombre]** y el **[!UICONTROL Título]** para el formulario adaptable.
@@ -91,14 +91,14 @@ Para crear un formulario adaptable habilitado para firmar:
 
    * Si no cuenta con una plantilla de formulario personalizada, seleccione la opción **[!UICONTROL Generar documento de registro]**. Cuando se utiliza la opción, el documento enviado para firmar muestra todos los campos del formulario adaptable.
 
-1. Pulse **[!UICONTROL Crear.]** Se crea un formulario adaptable con firma habilitada. Puede agregar campos de [!DNL Adobe Sign] al formulario y enviarlo para su firma.
+1. Seleccionar **[!UICONTROL Crear.]** Se crea un formulario adaptable con firma habilitada. Puede agregar campos de [!DNL Adobe Sign] al formulario y enviarlo para su firma.
 
 #### Habilitar [!DNL Adobe Sign] para un formulario adaptable {#editafsign}
 
 Para usar [!DNL Adobe Sign] en un formulario adaptable existente:
 
 1. Vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos]**.
-1. Seleccione el formulario adaptable y pulse **[!UICONTROL Propiedades]**.
+1. Seleccione el formulario adaptable y seleccione **[!UICONTROL Propiedades]**.
 1. En la pestaña **[!UICONTROL Básico]**, seleccione el [contenedor de configuración](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creado al integrarse [!DNL Adobe Sign] con [!DNL AEM Forms].
 1. En la pestaña **[!UICONTROL Modelo de formulario]**, seleccione una de las siguientes opciones:
 
@@ -106,7 +106,7 @@ Para usar [!DNL Adobe Sign] en un formulario adaptable existente:
 
    * Si no cuenta con una plantilla de formulario personalizada, seleccione la opción **[!UICONTROL Generar documento de registro]**. Cuando se utiliza la opción, el documento enviado para firmar muestra todos los campos del formulario adaptable.
 
-1. Pulse **[!UICONTROL Guardar y cerrar]**. El formulario adaptable está habilitado para [!DNL Adobe Sign]. Ahora, puede agregar campos de [!DNL Adobe Sign] al formulario y enviarlo para su firma.
+1. Seleccionar **[!UICONTROL Guardar y cerrar]**. El formulario adaptable está habilitado para [!DNL Adobe Sign]. Ahora, puede agregar campos de [!DNL Adobe Sign] al formulario y enviarlo para su firma.
 
 ### Adición de campos de [!DNL Adobe Sign] a un formulario adaptable {#addadobesignfieldstoanadaptiveform}
 
@@ -126,15 +126,15 @@ Para agregar campos a un formulario adaptable y personalizar varias opciones rel
    >  * Use el bloque de [!DNL Adobe Sign] solo para los formularios adaptables que generan automáticamente el documento de registro. Si utiliza un XDP personalizado para generar un documento de registro o un formulario basado en un formulario adaptable, el bloque de [!DNL Adobe Sign] no es compatible.
 
 
-1. Seleccione el componente **[!UICONTROL Adobe Sign Block]** y pulse el icono **[!UICONTROL Editar]** ![Edit](assets/Smock_Edit_18_N.svg). Muestra las opciones para agregar campos y formatear la apariencia de un campo.
+1. Seleccione el **[!UICONTROL Bloque de Adobe Sign]** y seleccione el componente **[!UICONTROL Editar]** ![Editar](assets/Smock_Edit_18_N.svg) icono. Muestra las opciones para agregar campos y formatear la apariencia de un campo.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
-   **A.** Seleccione y agregue campos de [!DNL Adobe Sign]. **B.** Amplíe el bloque de [!DNL Adobe Sign] a vista de pantalla completa.
+   **A.** Seleccione y agregue campos de [!DNL Adobe Sign]. **B.** Amplíe el bloque [!DNL Adobe Sign] a vista de pantalla completa.
 
-1. Pulse el icono ![Adobe Sign](assets/adobesign.png) del campo **[!UICONTROL Adobe Sign]**. Muestra las opciones para seleccionar y agregar campos de [!DNL Adobe Sign].
+1. Seleccione el **[!UICONTROL Adobe Sign]** Campo ![Adobe Sign](assets/adobesign.png) icono. Muestra las opciones para seleccionar y agregar campos de [!DNL Adobe Sign].
 
-   Amplíe el campo desplegable **[!UICONTROL Tipo]** para seleccionar un campo de [!DNL Adobe Sign] y pulse el icono de Listo ![Save](assets/save_icon.svg) para agregar el campo seleccionado al bloque de [!DNL Adobe Sign]. El campo desplegable **[!UICONTROL Tipo]** incluye los tipos de campo Firma, Información de destinatario y Datos. La integración de [!DNL Adobe Sign] con AEM [!DNL Forms] admite campos enumerados solo en el cuadro desplegable [!UICONTROL Tipo]. Para obtener información detallada sobre los campos de [!DNL Adobe Sign], consulte [Documentación de Adobe Sign](https://helpx.adobe.com/es/sign/help/field-types.html).
+   Expanda el **[!UICONTROL Tipo]** campo desplegable para seleccionar una [!DNL Adobe Sign] y seleccione el campo Listo ![Guardar](assets/save_icon.svg) para añadir el campo seleccionado a [!DNL Adobe Sign] Bloque. El campo desplegable **[!UICONTROL Tipo]** incluye los tipos de campo Firma, Información de destinatario y Datos. La integración de [!DNL Adobe Sign] con AEM [!DNL Forms] admite campos enumerados solo en el cuadro desplegable [!UICONTROL Tipo]. Para obtener información detallada sobre los campos de [!DNL Adobe Sign], consulte [Documentación de Adobe Sign](https://helpx.adobe.com/es/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -149,7 +149,7 @@ Para agregar campos a un formulario adaptable y personalizar varias opciones rel
 
 De serie, [!DNL Adobe Sign] no está habilitado para un formulario adaptable. Para habilitarlo:
 
-1. En el navegador de contenido, pulse **[!UICONTROL Contenedor de formulario]** y haga clic en el icono **[!UICONTROL Configurar]** ![configure](assets/Smock_Wrench_18_N.svg). Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables.
+1. En el Explorador de contenido, seleccione **[!UICONTROL Contenedor del formulario]** y seleccione la opción **[!UICONTROL Configurar]** ![configurar](assets/Smock_Wrench_18_N.svg) icono. Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables.
 1. En el navegador de propiedades, amplíe el acordeón **[!UICONTROL Firma electrónica]** y seleccione la opción **[!UICONTROL Habilitar Adobe Sign]**. Se habilita [!DNL Adobe Sign] para un formulario adaptable.
 
 ### Seleccione [!DNL Adobe Sign] Cloud Service y la petición de firma {#select-adobe-sign-cloud-service-and-signing-order}
@@ -162,7 +162,7 @@ Para seleccionar un servicio de Cloud Service y la petición de firma:
 
 ![Cloud-service](assets/cloud-service.png)
 
-1. En el navegador de contenido, pulse **[!UICONTROL Contenedor de formulario]** y haga clic en el icono **[!UICONTROL Configurar]** ![configure](assets/Smock_Wrench_18_N.svg). Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables.
+1. En el Explorador de contenido, seleccione **[!UICONTROL Contenedor del formulario]** y seleccione la opción **[!UICONTROL Configurar]** ![configurar](assets/Smock_Wrench_18_N.svg) icono. Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables.
 1. En el navegador de propiedades, amplíe el acordeón **[!UICONTROL Firma electrónica]** y seleccione la opción **[!UICONTROL Habilitar Adobe Sign]**. Se habilita [!DNL Adobe Sign] para un formulario adaptable.
 1. Seleccione un servicio de Cloud Service de la lista ya configurada de [!DNL Adobe Sign] Cloud Service.
 
@@ -178,15 +178,15 @@ Para seleccionar un servicio de Cloud Service y la petición de firma:
 
 1. Utilice el campo de id. de acuerdo para asociar una referencia vinculante a la identificación del acuerdo (agreementId). Agrega el ID de acuerdo a la sección afBoundData de envío de datos para formularios basados en esquemas. El ID de acuerdo también se agrega a la sección afSubmissionInfo de los datos enviados para todos los formularios habilitados para Adobe Sign. Puede utilizar el ID del acuerdo para rastrear el estado del acuerdo mediante código personalizado (requiere implementación personalizada).
 
-1. [Agregue destinatarios a un formulario adaptable](working-with-adobe-sign.md#addsignerstoanadaptiveform) y pulse Listo ![Save](assets/save_icon.svg) para guardar los cambios.
+1. [Adición de destinatarios a un formulario adaptable](working-with-adobe-sign.md#addsignerstoanadaptiveform) y seleccione el botón Listo ![Guardar](assets/save_icon.svg) para guardar los cambios.
 
 ### Agregar destinatarios a un formulario adaptable {#addsignerstoanadaptiveform}
 
 Puede tener uno o varios destinatarios para un acuerdo de Adobe Sign. Al agregar un destinatario, también se pueden configurar los detalles de autenticación del mismo y seleccionar si el usuario que rellena el formulario y el destinatario son la misma persona. Realice los siguientes pasos para agregar y proporcionar varios detalles sobre un destinatario:
 
-1. En el navegador de contenido, pulse **[!UICONTROL Contenedor de formulario]** y haga clic en el icono **[!UICONTROL Configurar]** ![configure](assets/Smock_Wrench_18_N.svg). Se abrirá el explorador de propiedades con las propiedades del contenedor de formularios adaptables.
+1. En el Explorador de contenido, seleccione **[!UICONTROL Contenedor del formulario]** y seleccione la opción **[!UICONTROL Configurar]** ![configurar](assets/Smock_Wrench_18_N.svg) icono. Se abrirá el explorador de propiedades con las propiedades del contenedor de formularios adaptables.
 1. En el navegador de propiedades, amplíe el acordeón **[!UICONTROL Firma electrónica]** y seleccione la opción **[!UICONTROL Habilitar Adobe Sign]**. Se habilita [!DNL Adobe Sign] para un formulario adaptable.
-1. Pulse **[!UICONTROL Agregar destinatario]**. Se agrega un destinatario al formulario adaptable. Puede agregar varios destinatarios a un formulario adaptable. Todos los destinatarios reciben un acuerdo de Adobe Sign al presentar el formulario adaptable.
+1. Seleccionar **[!UICONTROL Añadir destinatario]**. Se agrega un destinatario al formulario adaptable. Puede agregar varios destinatarios a un formulario adaptable. Todos los destinatarios reciben un acuerdo de Adobe Sign al presentar el formulario adaptable.
    ![phone-details](assets/recipient-settings.png)
 
 1. Haga clic en el icono **[!UICONTROL Editar]** ![Edit](assets/Smock_Edit_18_N.svg) para especificar la siguiente información sobre el destinatario:
@@ -216,7 +216,7 @@ Puede tener uno o varios destinatarios para un acuerdo de Adobe Sign. Al agregar
 
    La imagen anterior tiene dos ejemplos de [!DNL Adobe Sign] Block: Información personal y detalles de Office
 
-   Pulsa el icono ![Save](assets/save_icon.svg). Se agrega el destinatario.
+   Seleccione el ![Guardar](assets/save_icon.svg) icono. Se agrega el destinatario.
 
 ### Seleccionar acción de envío para un formulario adaptable {#selectsubmitactionforanadaptiveform}
 
@@ -301,15 +301,15 @@ Después de [editar las propiedades del formulario adaptable para Adobe Sign](wo
 
    ![Bloque de firma](assets/sign-block-new.png)
 
-1. Seleccione el componente **[!UICONTROL Adobe Sign Block]** y pulse el icono **[!UICONTROL Editar]** ![Edit](assets/Smock_Edit_18_N.svg). Muestra las opciones para agregar campos y formatear la apariencia de un campo.
+1. Seleccione el **[!UICONTROL Bloque de Adobe Sign]** y seleccione el componente **[!UICONTROL Editar]** ![Editar](assets/Smock_Edit_18_N.svg) icono. Muestra las opciones para agregar campos y formatear la apariencia de un campo.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
-   **A.** Seleccione y agregue campos de [!DNL Adobe Sign]. **B.** Amplíe el bloque de [!DNL Adobe Sign] a vista de pantalla completa.
+   **A.** Seleccione y agregue campos de [!DNL Adobe Sign]. **B.** Amplíe el bloque [!DNL Adobe Sign] a vista de pantalla completa.
 
-1. Pulse el icono ![Adobe Sign](assets/adobesign.png) del **[!UICONTROL campo Adobe Sign]**. Muestra las opciones para seleccionar y agregar campos de [!DNL Adobe Sign].
+1. Seleccione el **[!UICONTROL Campo de Adobe Sign]** ![Adobe Sign](assets/adobesign.png) icono. Muestra las opciones para seleccionar y agregar campos de [!DNL Adobe Sign].
 
-   Amplíe el campo desplegable **[!UICONTROL Tipo]** para seleccionar **[!UICONTROL Firma digital]** y pulse el icono de **[!UICONTROL Listo]** para agregar el campo seleccionado al bloque de [!DNL Adobe Sign].
+   Expanda el **[!UICONTROL Tipo]** campo desplegable para seleccionar **[!UICONTROL Firma digital]** y seleccione la **[!UICONTROL Listo]** para añadir el campo seleccionado a [!DNL Adobe Sign] Bloque.
 
    ![Firmas digitales](assets/digital_signatures_new.png)
 

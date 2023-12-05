@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '578'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,7 @@ Define what is not included
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 [!DNL Adobe Experience Manager] platform proporciona diferentes funcionalidades para administrar recursos. Media Library permite a los usuarios cargar un pequeño número de recursos en el repositorio, buscarlos y utilizarlos en las páginas web y realizar tareas sencillas de administración de recursos en los recursos.
@@ -64,7 +64,7 @@ Media Library cubre ampliamente los siguientes casos de uso:
 Para utilizar la funcionalidad de Media Library, puede utilizar la opción predeterminada [!DNL Experience Manager] interfaz de usuario. Media Library forma parte de [!DNL Experience Manager Sites] instalación y no se requiere una interfaz o complemento por separado. Con la interfaz existente, los usuarios de Media Library tienen derecho a realizar las siguientes tareas:
 
 * Cree carpetas para organizar los recursos.
-* Carga de activos.
+* Cargar recursos.
 * Publicar recursos.
 * Editar, mover y copiar recursos.
 * Examinar, filtrar y buscar (incluye la búsqueda por similitudes) recursos.
@@ -94,7 +94,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >Muchos casos de uso de DAM avanzados se completan con [!DNL Experience Manager Assets]. La licencia de Media Library le da derecho a realizar únicamente los casos de uso enumerados mediante Media Library. Si un caso de uso no aparece en la lista, no lo utilice con la licencia de Media Library. Si tiene alguna duda, póngase en contacto con Atención al cliente.
 
-Tenga en cuenta que no puede utilizar etiquetas inteligentes, [!DNL Asset] vínculo, [!DNL Asset] selector, etiquetado masivo, modificación de flujos de trabajo de recursos o estándar [!DNL Adobe Experience Manager] para acceder a Media Library sin [!DNL Assets] licencia.
+No puede utilizar etiquetas inteligentes, [!DNL Asset] vínculo, [!DNL Asset] selector, etiquetado masivo, modificación de flujos de trabajo de recursos o estándar [!DNL Adobe Experience Manager] para acceder a Media Library sin [!DNL Assets] licencia.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

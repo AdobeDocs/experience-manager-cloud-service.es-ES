@@ -2,9 +2,9 @@
 title: Herramientas para desarrolladores de AEM para Eclipse
 description: AEM Aprenda a utilizar las herramientas para desarrolladores de Eclipse, un complemento de Eclipse basado en el complemento de Eclipse para Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1138'
 ht-degree: 2%
 
 ---
@@ -112,7 +112,7 @@ Siga estos pasos para crear el proyecto de ejemplo:
 
    ![AEM Conectar con el servidor de](assets/connect-server.png)
 
-1. Haga clic en **Finalizar**. Se crea la estructura del proyecto.
+1. Clic **Finalizar**. Se crea la estructura del proyecto.
 
    >[!NOTE]
    >

@@ -2,9 +2,9 @@
 title: Candidatos de tienda de ContextHub de muestra
 description: ContextHub proporciona varios candidatos de tienda de muestra que puede utilizar en sus soluciones
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '457'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ContextHub proporciona varios candidatos de tienda de muestra que puede utilizar
 
 >[!WARNING]
 >
->Los candidatos de tienda de muestra se proporcionan como configuraciones de referencia para ayudarle a crear su propia configuración dedicada para su proyecto y, como tal, no debe utilizarse directamente.
+>Los candidatos de tienda de muestra se proporcionan como configuraciones de referencia para ayudarle a crear su propia configuración dedicada para su proyecto. No los utilice directamente.
 
 ## Aem.segmentation: candidato de tienda de muestra {#aem-segmentation-sample-store-candidate}
 

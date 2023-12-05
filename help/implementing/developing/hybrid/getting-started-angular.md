@@ -1,15 +1,15 @@
 ---
-title: Introducción a SPA en AEM usando Angular
+title: SPA AEM Introducción a la administración de la en Angular
 description: SPA SPA Este artículo presenta una aplicación de ejemplo para la creación de informes, explica cómo se crea y le permite ponerse en marcha con su propia aplicación de forma rápida mediante el marco de trabajo de Angular de trabajo de.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 12%
+source-wordcount: '981'
+ht-degree: 6%
 
 ---
 
-# Introducción a SPA en AEM usando Angular {#getting-started-with-spas-in-aem-using-angular}
+# SPA AEM Introducción a la administración de la en Angular {#getting-started-with-spas-in-aem-using-angular}
 
 Las aplicaciones de una sola página (SPA) pueden ofrecer experiencias atractivas para los usuarios de sitios web. SPA AEM SPA Los desarrolladores quieren poder crear sitios utilizando marcos de trabajo de y los autores quieren editar contenido sin problemas en para un sitio creado con marcos de trabajo de la.
 
@@ -88,7 +88,7 @@ module.exports = {
 };
 ```
 
-### Compilando {#building}
+### Edificio {#building}
 
 La creación de la aplicación utiliza [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
 
@@ -266,13 +266,13 @@ Finalmente, la imagen se puede representar en `image.component.html`.
 
 Normalmente, es necesario que los componentes de una aplicación de una sola página compartan información. Existen varias formas recomendadas de hacerlo, enumeradas de la siguiente manera en orden creciente de complejidad.
 
-* **Opción 1:** Centralice la lógica y difunda los componentes necesarios, por ejemplo, utilizando una clase util como solución pura orientada a objetos.
+* **Opción 1:** Centralice la lógica y difunda a los componentes necesarios, por ejemplo, utilizando una clase util como solución pura orientada a objetos.
 * **Opción 2:** Compartir estados de componentes mediante una biblioteca de estados como NgRx.
 * **Opción 3:** Aproveche la jerarquía de objetos personalizando y ampliando el componente contenedor.
 
 ## Pasos siguientes {#next-steps}
 
-* [Introducción a SPA en AEM usando React](getting-started-react.md) muestra cómo se crea una SPA básica para trabajar con el Editor de SPA de AEM usando React.
+* [SPA AEM Introducción a la administración de la en React](getting-started-react.md) SPA SPA AEM muestra cómo se crea una básica para trabajar con el Editor de en el uso de React para el uso de la aplicación de react.
 * La [Información general del Editor de SPA](editor-overview.md) profundiza en el modelo de comunicación entre AEM y el SPA.
 * [SPA Proyecto de WKND](wknd-tutorial.md) SPA AEM es un tutorial paso a paso sobre la implementación de un proyecto de simple en el sector de la.
 * [SPA Asignación de modelos dinámicos a componentes para la creación de](model-to-component-mapping.md) SPA AEM explica el modelo dinámico para la asignación de componentes y cómo funciona dentro de la asignación de componentes de la interfaz de usuario de la aplicación de datos en la.

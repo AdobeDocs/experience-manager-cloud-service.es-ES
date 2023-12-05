@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 1%
+source-wordcount: '719'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +64,7 @@ Para conectar el PWA Studio con el extremo de GraphQL AEM de la, puede utilizar 
 
 1. AEM El cliente Apollo espera el punto final de GraphQL de la en `<https://pwa-studio/endpoint.js>`. Para asignar el extremo a esta ubicación, personalice la configuración UPWARD de la aplicación PWA Studio: a. AEM Añada la variable_CFM_GRAPHQL AEM a pwa-root/.env y adáptela para que apunte a su punto final de GraphQL Fragmentos de contenido de.
 
-   Ejemplos: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
+   Ejemplo: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
    b. Añada una resolución proxy a la configuración UPWARD. Una configuración de muestra ASCENDENTE podría tener este aspecto:
 
@@ -95,17 +95,17 @@ AEM Siga la documentación de Fragmentos de contenido de para configurar un punt
 
   Establezca la propiedad allowedorigin en el nombre de host completo de la aplicación PWA.
 
-  Ejemplos:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Ejemplo:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtro de referente de Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
   Establezca la propiedad allow.hosts en el nombre de host de la aplicación PWA.
 
-  Ejemplos: `pwa-studio-test-vflyn.local.pwadev`
+  Ejemplo: `pwa-studio-test-vflyn.local.pwadev`
 
 Puede encontrar ejemplos completos de ambas configuraciones aquí: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-Para mostrar el extremo de GraphQL, hemos preparado algunos modelos de fragmentos de contenido de muestra y datos a través de un paquete de contenido. Estos funcionan bien junto con los componentes de React proporcionados con la extensión de PWA Studio.
+Para mostrar el extremo de GraphQL, hay algunos modelos de fragmentos de contenido de muestra y datos preparados a través de un paquete de contenido. Estos funcionan bien junto con los componentes de React proporcionados con la extensión de PWA Studio.
 
 ## Usos {#how-to-use}
 

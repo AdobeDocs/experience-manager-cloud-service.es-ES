@@ -5,10 +5,10 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 77%
+source-wordcount: '1084'
+ht-degree: 65%
 
 ---
 
@@ -30,8 +30,8 @@ En resumen, la bandeja de entrada le permite crear una aplicación y administrar
 ## Crear aplicación {#create-application}
 
 1. Vaya a Bandeja de entrada de AEM, en https://&#39;[server]:[port]&#39;/aem/inbox.
-1. En la interfaz de usuario de la bandeja de entrada, pulse **[!UICONTROL Crear > Aplicación]**. Aparece la página Seleccionar aplicación.
-1. Seleccione una aplicación y haga clic en **[!UICONTROL Crear]**. Se abre el formulario adaptable asociado a la aplicación. Rellene la información del formulario adaptable y pulse **[!UICONTROL Enviar]**. Inicia el flujo de trabajo asociado y crea una tarea en la bandeja de entrada del usuario asignado.
+1. En la IU de la bandeja de entrada, seleccione **[!UICONTROL Crear > Aplicación]**. Aparece la página Seleccionar aplicación.
+1. Seleccione una aplicación y haga clic en **[!UICONTROL Crear]**. Se abre el formulario adaptable asociado a la aplicación. Rellene la información del formulario adaptable y seleccione **[!UICONTROL Enviar]**. Inicia el flujo de trabajo asociado y crea una tarea en la bandeja de entrada del usuario asignado.
 
 ## Administrar tareas {#manage-tasks}
 
@@ -41,17 +41,17 @@ Cuando un flujo de trabajo de Forms déclencheur y usted es un usuario asignado 
 
 Las tareas asignadas a un grupo aparecen en la bandeja de entrada de todos los miembros del grupo. Cualquier miembro del grupo puede reclamar esa tarea o delegarla a otro miembro del grupo. Para ello:
 
-1. Pulse para seleccionar la miniatura de la tarea. Las opciones para abrir o delegar la tarea aparecen en la parte superior.
+1. Seleccione la miniatura de la tarea. Las opciones para abrir o delegar la tarea aparecen en la parte superior.
 
    ![select-task](assets/select-task.png)
 
 1. Realice una de las acciones siguientes:
 
-   * Para delegar la tarea, pulse **[!UICONTROL Delegar]**. Se abre el cuadro de diálogo Delegar elemento. Seleccione un usuario, tiene la opción de añadir un comentario, y pulse **[!UICONTROL OK]**.
+   * Para delegar la tarea, seleccione **[!UICONTROL Delegar]**. Se abre el cuadro de diálogo Delegar elemento. Seleccione un usuario, tiene la opción de añadir un comentario, y seleccione **[!UICONTROL OK]**.
 
    ![delegate](assets/delegate.png)
 
-   * Para reclamar la tarea, pulse **[!UICONTROL Abrir]**. Se abrirá el cuadro de diálogo Asignar a sí mismo. Pulse **[!UICONTROL Continuar]** para reclamar la tarea. La tarea reclamada aparece con usted como el usuario asignado en su bandeja de entrada.
+   * Para reclamar la tarea, seleccione **[!UICONTROL Abrir]**. Se abrirá el cuadro de diálogo Asignar a sí mismo. Seleccionar **[!UICONTROL Continuar]** para reclamar la tarea. La tarea reclamada aparece con usted como el usuario asignado en su bandeja de entrada.
 
    ![claim](assets/claim.png)
 
@@ -59,7 +59,7 @@ Las tareas asignadas a un grupo aparecen en la bandeja de entrada de todos los m
 
 Al abrir una tarea, puede ver los detalles de la tarea y realizar las acciones disponibles. Las acciones disponibles para una tarea se definen en la Etapa de tarea de asignación del Forms Workflow asociado.
 
-1. Pulse para seleccionar la miniatura de la tarea. Las opciones para abrir o delegar la tarea seleccionada aparecen en la parte superior.
+1. Seleccione la miniatura de la tarea. Las opciones para abrir o delegar la tarea seleccionada aparecen en la parte superior.
 1. Seleccionar **Abrir** para ver los detalles de las tareas y las acciones disponibles. Se abre la vista de tareas detallada. En esta vista, puede ver los detalles de una tarea y actuar en ella.
 
    >[!NOTE]
@@ -87,7 +87,7 @@ La pestaña Formulario del área de contenido principal muestra los archivos adj
 
 La pestaña Detalles del flujo de trabajo de la parte superior muestra el progreso de la tarea mediante varias fases del flujo de trabajo. Muestra las fases completadas, actuales y pendientes de la tarea. Las fases para un flujo de trabajo se definen en la [Etapa de tarea de asignación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=es#extending-aem) del flujo de trabajo asociado.
 
-Además, la pestaña muestra el historial de tareas para cada fase completada en el flujo de trabajo. Puede pulsar **[!UICONTROL Ver detalles]** en una fase completada para conocer los detalles de dicha fase. Muestra comentarios, archivos adjuntos de formularios y tareas, estado, fechas de inicio y finalización, etc., sobre la tarea.
+Además, la pestaña muestra el historial de tareas para cada fase completada en el flujo de trabajo. Puede seleccionar **[!UICONTROL Ver detalles]** para una fase completada con el fin de conocer los detalles de dicha fase. Muestra comentarios, archivos adjuntos de formularios y tareas, estado, fechas de inicio y finalización, etc., sobre la tarea.
 
 ![workflow-details](assets/workflow-details.png)
 
@@ -101,12 +101,12 @@ A medida que actúa en la tarea, esta continúa en el flujo de trabajo.
 
 La Bandeja de entrada de AEM solo muestra las tareas activas. Las tareas completadas no aparecen en la lista. Sin embargo, puede utilizar los filtros de la bandeja de entrada para filtrar las tareas en función de varios parámetros, como el tipo de tarea, el estado, las fechas de inicio y finalización. Para ver las tareas completadas:
 
-1. En Bandeja de entrada de AEM, pulse ![toggle-side-panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
-1. Pulse el acordeón **[!UICONTROL Estado de la tarea]** y seleccione **[!UICONTROL Completar]**. Se mostrarán todas las tareas completadas.
+1. AEM En Bandeja de entrada de, seleccione ![toggle-side-panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
+1. Seleccionar **[!UICONTROL Estado de tarea]** acordeón y seleccione **[!UICONTROL Completar]**. Se mostrarán todas las tareas completadas.
 
    ![filter](assets/filter.png)
 
-1. Pulse para seleccionar una tarea y haga clic en **[!UICONTROL Abrir]**.
+1. Seleccione una tarea y haga clic en **[!UICONTROL Abrir]**.
 
 La tarea se abre para mostrar el documento o el formulario adaptable asociado a la tarea. En el caso del formulario adaptable, la tarea muestra el formulario adaptable de solo lectura o su documento de registro PDF, tal y como se ha configurado en la pestaña Formulario/documento del [paso Asignar flujo de trabajo de tarea](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=es#extending-aem).
 
@@ -114,7 +114,7 @@ La sección de detalles de la tarea muestra información como la acción realiza
 
 ![completed-task](assets/completed-task.png)
 
-La pestaña **[!UICONTROL Detalles del flujo de trabajo]** muestra cada paso del flujo de trabajo. Pulse **[!UICONTROL Ver detalles]** en un paso para obtener información detallada.
+La pestaña **[!UICONTROL Detalles del flujo de trabajo]** muestra cada paso del flujo de trabajo. Seleccionar **[!UICONTROL Ver detalles]** para obtener información detallada sobre un paso.
 
 ![completed-task-workflow](assets/completed-task-workflow.png)
 

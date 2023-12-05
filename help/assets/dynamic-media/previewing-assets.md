@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1228'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <li><p><strong>Convierta su cámara 3D</strong> - Orbita tu vista alrededor de la escena 3D y los objetos.</p> Mouse: haga clic con el botón izquierdo + arrastre.</p> Pantalla táctil: presione + arrastre.</p></li>
       <li><p><strong>Panorámica de la cámara</strong> - Mueva la vista a la izquierda, a la derecha, arriba o abajo.</p> Ratón: haga clic con el botón derecho y arrastre.</p> Pantalla táctil: presionar dos dedos + arrastrar.</p></li>
       <li><p><strong>Zoom de la cámara</strong> - Aplique el zoom de la cámara si desea moverse dentro y fuera de las áreas de la escena 3D.</p> Ratón: rueda de desplazamiento.</p> Pantalla táctil: Pellizco de dedo.</p></li>
-      <li><p><strong>Vuelva a centrar su cámara</strong> - Orbita tu vista alrededor de la escena 3D y los objetos.</p> Ratón: haga doble clic.</p> Pantalla táctil: toque dos veces.</li></ul></td>
+      <li><p><strong>Vuelva a centrar su cámara</strong> - Orbita tu vista alrededor de la escena 3D y los objetos.</p> Ratón: haga doble clic.</p> Pantalla táctil: seleccione dos veces.</li></ul></td>
       </tr>
       <tr>
       <td><p>Imagen</p> </td>
@@ -71,7 +71,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
         </ul> <p><strong>Para obtener una vista previa del recurso en un visor concreto</strong></p>
         <ul>
         <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong> en la lista, seleccione el visor que desee aplicar al recurso.</li>
-        </ul><p>Utilice el <strong>+</strong> y <strong>-</strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br>Si está en una pantalla táctil, toque dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a tocar dos veces la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+        </ul><p>Utilice el <strong>+</strong> y <strong>-</strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br>Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Multimedia</td>
@@ -92,7 +92,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <td><p><strong>Para obtener una vista previa de un recurso en un visor concreto</strong></p>
         <ul>
         <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong> en la lista, seleccione el visor que desee aplicar al recurso.</li>
-        </ul> <p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, toque dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a tocar dos veces la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p></td>
+        </ul> <p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p></td>
       </tr>
       <tr>
       <td>Conjunto de giros</td>
@@ -101,7 +101,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <td><p><strong>Para obtener una vista previa de un recurso en un visor concreto</strong></p>
         <ul>
         <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong> en la lista, seleccione el visor que desee aplicar al recurso.</li>
-        </ul><p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, toque dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a tocar dos veces la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+        </ul><p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de medios mixtos</td>
@@ -110,7 +110,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <td><p><strong>Para obtener una vista previa de un recurso en un visor concreto</strong></p>
         <ul>
         <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong> en la lista, seleccione el visor que desee aplicar al recurso.</li>
-        </ul> <p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, toque dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a tocar dos veces la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+        </ul> <p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de carrusel</td>
@@ -131,7 +131,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
         </ul> <p><strong>Para obtener una vista previa del recurso en un visor concreto</strong></p>
         <ul>
         <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong>, a continuación, seleccione un visor que desee aplicar al recurso.</li>
-        </ul> <p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, toque dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a tocar dos veces la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+        </ul> <p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
     </tbody>
     </table>

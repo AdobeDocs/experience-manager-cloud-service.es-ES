@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2745'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="Directrices de desarrollo de AEM as a Cloud Service"
 >abstract="Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS."
->additional-url="https://video.tv.adobe.com/v/330555/?captions=spa/" text="Demostración de la estructura del paquete"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demostración de la estructura del paquete"
 
 AEM Este documento presenta directrices para el desarrollo de la as a Cloud Service AEM AEM y sobre formas importantes en las que difiere de la de la en los locales y la de la en AMS.
 
@@ -33,7 +33,7 @@ El estado no debe conservarse en la memoria, sino que debe persistir en el repos
 
 ## Estado en el sistema de archivos {#state-on-the-filesystem}
 
-AEM El sistema de archivos de la instancia no debe utilizarse en as a Cloud Service de la. El disco es efímero y se elimina cuando las instancias se reciclan. Es posible el uso limitado del sistema de archivos para el almacenamiento temporal relacionado con el procesamiento de solicitudes únicas, pero no se debe abusar de él para archivos enormes. Esto se debe a que puede tener un impacto negativo en la cuota de uso de recursos y encontrarse con limitaciones de disco.
+AEM No utilice el sistema de archivos de la instancia en el as a Cloud Service de la. El disco es efímero y se elimina cuando las instancias se reciclan. Es posible el uso limitado del sistema de archivos para el almacenamiento temporal relacionado con el procesamiento de solicitudes únicas, pero no se debe abusar de él para archivos enormes. Esto se debe a que puede tener un impacto negativo en la cuota de uso de recursos y encontrarse con limitaciones de disco.
 
 Por ejemplo, cuando no se admite el uso del sistema de archivos, el nivel de publicación debe garantizar que los datos que deban persistir se envíen a un servicio externo para un almacenamiento a largo plazo.
 
@@ -47,7 +47,7 @@ El código ejecutado como tarea en segundo plano debe suponer que la instancia e
 
 Para minimizar los problemas, si es posible deben evitarse los trabajos de larga duración y, como mínimo, deben poder reanudarse. Para ejecutar estos trabajos, utilice Trabajos de Sling, que tienen una garantía de al menos una vez y, por lo tanto, si se interrumpen, se vuelven a ejecutar lo antes posible. Pero probablemente no deberían empezar desde el principio de nuevo. Para programar estos trabajos, es mejor utilizar la variable [Trabajos de Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) planificador, ya que esto garantiza de nuevo la ejecución de al menos una vez.
 
-El Planificador de Sling Commons no debe utilizarse para programar, ya que la ejecución no se puede garantizar. Es más probable que esté programado.
+No utilice el Planificador de Sling Commons para la programación, ya que la ejecución no se puede garantizar. Es más probable que esté programado.
 
 Del mismo modo, con todo lo que se produce de forma asíncrona, como actuar sobre eventos de observación (ya sean eventos JCR o eventos de recursos Sling), no se puede garantizar su ejecución y, por lo tanto, debe utilizarse con cuidado. AEM Esto ya es así para implementaciones de en el presente.
 
@@ -109,7 +109,7 @@ Por ejemplo, cambiar una definición de índice en un repositorio de contenido g
 
 Para el desarrollo local, las entradas de registro se escriben en archivos locales en la variable `/crx-quickstart/logs` carpeta.
 
-En entornos de Cloud, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para rastrear los registros. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+En entornos de Cloud, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para rastrear los registros. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Configuración del nivel de registro**
 
@@ -172,7 +172,7 @@ Los volcados de hilos en entornos de Cloud se recopilan de forma continua, pero 
 
 Para el desarrollo local, los desarrolladores tienen acceso completo a CRXDE Lite (`/crx/de`AEM ) y la consola web de (`/system/console`).
 
-Tenga en cuenta que en el desarrollo local (con el SDK), `/apps` y `/libs` se puede escribir directamente en, que es diferente de los entornos de Cloud, donde esas carpetas de nivel superior son inmutables.
+En el desarrollo local (mediante el SDK), `/apps` y `/libs` se puede escribir directamente en, que es diferente de los entornos de Cloud, donde esas carpetas de nivel superior son inmutables.
 
 ### Herramientas de desarrollo de AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 

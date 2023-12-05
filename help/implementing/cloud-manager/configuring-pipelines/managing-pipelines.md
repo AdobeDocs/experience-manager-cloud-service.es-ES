@@ -3,10 +3,10 @@ title: Administración de canalizaciones
 description: Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 68%
+source-wordcount: '928'
+ht-degree: 64%
 
 ---
 
@@ -43,7 +43,7 @@ La ventana **Canalizaciones** muestra una lista completa de todas las canalizaci
 
 1. Desde el **Resumen del programa** , seleccione la **Canalizaciones** para cambiar a la pestaña **Canalizaciones** ventana.
 
-1. Aquí puede ver una lista de todas las canalizaciones para el programa, así como iniciar y detener la ejecución de la canalización como lo haría en la **Tarjeta de canalizaciones**.
+1. Aquí puede ver una lista de todas las canalizaciones para el programa y comenzar y detener la ejecución de la canalización como lo haría en el **Tarjeta de canalizaciones**.
 
 Si se está ejecutando una canalización, pasar el ratón sobre su columna **Estado** revela los detalles sobre la ejecución.
 

@@ -2,10 +2,10 @@
 title: Trabajos asincrónicos
 description: Adobe Experience Manager optimiza el rendimiento completando asincrónicamente algunas tareas que requieren muchos recursos como operaciones en segundo plano.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 70%
+source-wordcount: '856'
+ht-degree: 64%
 
 ---
 
@@ -29,7 +29,7 @@ Puede ver el estado de los trabajos asincrónicos desde el **[!UICONTROL Operaci
 >
 >Para obtener más información, consulte [configuraciones de cola](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## Monitorizar el estado de las operaciones asincrónicas {#monitor-the-status-of-asynchronous-operations}
+## Supervisar el estado de las operaciones asincrónicas {#monitor-the-status-of-asynchronous-operations}
 
 Siempre que AEM procese una operación de manera asincrónica, recibirá una notificación en la [bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) y por correo electrónico (si está activada).
 
@@ -123,7 +123,7 @@ Si el número de recursos, carpetas o referencias que se van a mover supera el n
 1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito, error.
 1. Guarde los cambios.
 
-### Configurar operaciones de MSM asincrónicas {#configuring-asynchronous-msm-operations}
+### Configurar operaciones asincrónicas de MSM {#configuring-asynchronous-msm-operations}
 
 1. AEM AEM Inicie sesión en la consola web de inicio rápido de Jar de la aplicación de inicio de sesión de la aplicación de en `https://<host>:<port>/system/console` como usuario administrador.
 1. Vaya a **OSGi** > **Configuración**

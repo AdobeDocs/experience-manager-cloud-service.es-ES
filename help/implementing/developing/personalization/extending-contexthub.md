@@ -2,9 +2,9 @@
 title: Ampliación de ContextHub
 description: Defina nuevos tipos de módulos y tiendas de ContextHub cuando los que se proporcionan no cumplan con los requisitos de su solución
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Para crear un candidato de tienda, se utiliza el [`ContextHub.Utils.inheritance.
 * [`ContextHub.Store.JSONPStore`](contexthub-api.md#contexthub-store-jsonpstore)
 * [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Tenga en cuenta que cada almacén base amplía la variable [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) tienda.
+Cada almacén base amplía el [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) tienda.
 
 En el siguiente ejemplo se crea la extensión más sencilla del `ContextHub.Store.PersistedStore` candidato de tienda:
 

@@ -1,17 +1,15 @@
 ---
 title: Añadir controladores de errores personalizados en formularios adaptables para formularios adaptables de AEM
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
-description: AEM Forms proporciona controladores de éxitos y de errores predeterminados para un formulario mediante el punto final REST configurado para invocar un servicio externo. Puede añadir un controlador de errores predeterminado y un controlador de errores personalizado en un formulario adaptable de AEM.
-seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
+description: AEM Forms proporciona controladores de éxitos y de errores predeterminados para un formulario mediante el punto final REST configurado para invocar un servicio externo. Se puede añadir un controlador de errores predeterminado y otro personalizado en un formulario adaptable de AEM.
 keywords: Añadir un controlador de errores personalizado, añadir un controlador de errores predeterminado, añadir un controlador de errores en el formulario, utilizar el servicio de invocación del editor de reglas para añadir un controlador de errores personalizado, configurar el editor de reglas para añadir un controlador de errores personalizado y añadir un controlador de errores personalizado mediante el editor de reglas
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: 1dd0bbbe8a366b38a923e61bd987e248c2f78e86
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 100%
+source-wordcount: '2377'
+ht-degree: 96%
 
 ---
 
@@ -194,9 +192,9 @@ Con el editor de reglas, se puede hacer lo siguiente:
 Se admite un controlador de errores predeterminado para mostrar los mensajes de error en los campos si la respuesta de error está en el esquema estándar o en un error de validación del lado del servidor.
 Para comprender cómo utilizar un controlador de errores predeterminado con la acción [Invocar servicio del editor de reglas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es#invoke), vamos a ver un ejemplo de formulario adaptable con dos campos, **ID de mascota** y **Nombre de mascota**. Además, usaremos un controlador de errores predeterminado en el campo **ID de mascota** para comprobar si hay varios errores devueltos por el punto final REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`, `404 - Not Found` y `400 - Bad Request`.  Para añadir un controlador de error predeterminado mediante la acción Invocar servicio del Editor de reglas, ejecute los siguientes pasos:
 
-1. Abra el formulario adaptable en el modo de creación, seleccione cualquier objeto del formulario y pulse **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
-1. Pulse **[!UICONTROL Crear]**.
-1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, **cuando se ha cambiado el [nombre del campo ID de mascota]**, Seleccionar se ha cambiado en la lista desplegable **Seleccionar estado**.
+1. Abra un formulario adaptable en el modo Autor, seleccione un componente del formulario y seleccione **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
+1. Seleccione **[!UICONTROL Crear]**.
+1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, **Cuándo[Nombre del campo ID de mascota]** se ha cambiado. Seleccione se cambia de la **Seleccionar estado** lista desplegable.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
 1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
 1. Seleccione los enlaces de datos en la sección **Salida**. Seleccione **Nombre de mascota** en la sección **Salida**.
@@ -235,7 +233,7 @@ Para crear una función de error personalizada, realice los siguientes pasos:
 1. Vaya a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` y cree un `ClientLibraryFolder` como `clientlibs`.
 1. Cree una carpeta con el nombre `js`.
 1. Navegue hasta la carpeta `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`. 
-1. Añada un archivo JavaScript, por ejemplo `function.js`. El archivo contiene el código del controlador de errores personalizado.
+1. Añada un archivo JavaScript, por ejemplo, `function.js`. El archivo contiene el código del controlador de errores personalizado.
 Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respuesta y los encabezados, recibidos del extremo del servicio REST, en la consola del explorador.
 
    ```javascript
@@ -305,8 +303,8 @@ En este caso, el nombre de la biblioteca del cliente se proporciona como `custom
 
 Para utilizar un controlador de errores personalizado utilizando la acción **[!UICONTROL Invocar servicio del Editor de reglas]**:
 
-1. Abra el formulario adaptable en el modo de creación, seleccione cualquier objeto del formulario y pulse **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
-1. Pulse **[!UICONTROL Crear]**.
+1. Abra un formulario adaptable en el modo Autor, seleccione un componente del formulario y seleccione **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
+1. Seleccione **[!UICONTROL Crear]**.
 1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, cuando se ha cambiado el **[Nombre del campo ID de mascota]**, seleccione **se ha cambiado** en la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
 1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
@@ -335,7 +333,7 @@ If the server validation error message does not display in the standard format, 
 
 Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
+1. In adaptive form authoring mode, select the Form Container object and select ![adaptive form properties](assets/configure_icon.png) to open its properties.
 1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
 1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
 1. Select the Submit Action:
@@ -345,7 +343,7 @@ Before adding custom handler, you must configure the adaptive form for asynchron
 
     ![adaptive form submission properties](assets/af_submission_properties.png)
 
-1. Tap ![Save](assets/save_icon.png) to save the properties.
+1. Select ![Save](assets/save_icon.png) to save the properties.
 
 ### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
 
@@ -353,10 +351,10 @@ AEM Forms provides out-of-the-box success and error handlers for form submission
 
 Execute the following steps to add custom error handler on Adaptive Form submission:
 
-1. Open an Adaptive Form in authoring mode, select any form object, and tap  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
+1. Open an Adaptive Form in authoring mode, select any form object, and select  to open the rule editor.
+1. Select **[!UICONTROL Form]** in the Form Objects tree and select **[!UICONTROL Create]**.
 1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and tap **[!UICONTROL Done]** to save the rule.
+1. Write a rule to convert custom error structure to the standard error structure and select **[!UICONTROL Done]** to save the rule.
 
 The following is a sample code to convert a custom error structure to the standard error structure:
 
@@ -408,7 +406,7 @@ Using this custom error handler, the adaptive form converts the fields listed in
 ## Vea también {#see-also}
 
 {{see-also}}
-* [Crear y usar controladores de error personalizados en Formularios adaptables (componentes principales)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+* [Crear y usar controladores de error personalizados en Forms adaptable (componentes principales)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
 
 <!--
 

@@ -2,9 +2,9 @@
 title: Configuración de ContextHub
 description: Aprenda a configurar ContextHub, un marco de trabajo para almacenar, manipular y presentar datos de contexto.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1609'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Añada un modo de interfaz de usuario para agrupar módulos de ContextHub relaci
 1. Proporcione valores para las siguientes propiedades:
 
    * Título del modo de IU: título que identifica el modo de IU
-   * Icono de modo: el selector para [Icono de Coral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) para utilizar, por ejemplo `coral-Icon--user`
+   * Icono de modo: el selector para [Icono de Coral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) para utilizar, por ejemplo, `coral-Icon--user`
    * Habilitado: seleccione esta opción para mostrar el modo de IU en la barra de herramientas de ContextHub
 
 1. Seleccione Guardar.
@@ -78,7 +78,7 @@ Las propiedades del módulo de interfaz de usuario incluyen una configuración d
 
 1. En el carril del Experience Manager, seleccione Herramientas > Sitios > ContextHub.
 1. Seleccione el contenedor de configuración al que desea agregar un módulo de interfaz de usuario.
-1. Haga clic o escriba la Configuración de ContextHub a la que desea agregar el módulo de interfaz de usuario.
+1. Seleccione o escriba la Configuración de ContextHub a la que desea agregar el módulo de interfaz de usuario.
 1. Seleccione el modo de interfaz de usuario al que va a agregar el módulo de interfaz de usuario.
 1. Seleccione el botón Crear y, a continuación, seleccione Módulo de IU de ContextHub (genérico).
 

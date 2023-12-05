@@ -3,10 +3,10 @@ title: Crear una plantilla de formulario adaptable basada en el componente princ
 description: Cree plantillas de formulario adaptable basadas en componentes principales para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 58%
+source-wordcount: '1961'
+ht-degree: 53%
 
 ---
 
@@ -46,13 +46,13 @@ Experience Manager proporciona una carpeta global para organizar las plantillas.
 
 Después de crear una carpeta, ábrala y haga lo siguiente para crear una plantilla:
 
-1. Pulse **[!UICONTROL Crear]** dentro de la carpeta que ha creado.
-1. En el **[!UICONTROL Elegir un tipo de plantilla]** , seleccione **[!UICONTROL Plantilla de formulario adaptable (componente principal)]** y pulse **[!UICONTROL Siguiente]**.
+1. Seleccionar **[!UICONTROL Crear]** dentro de la carpeta que ha creado.
+1. En el **[!UICONTROL Elegir un tipo de plantilla]** , seleccione **[!UICONTROL Plantilla de formulario adaptable (componente principal)]** y seleccione **[!UICONTROL Siguiente]**.
 
-1. En el **[!UICONTROL Detalles de plantilla]** , proporcione un **Título de plantilla** y pulse **[!UICONTROL Crear]**.
+1. En el **[!UICONTROL Detalles de plantilla]** , proporcione un **Título de plantilla** y seleccione **[!UICONTROL Crear]**.
 También puede proporcionar una descripción.
 
-1. Pulse **[!UICONTROL Listo]** para volver a la consola o pulse **[!UICONTROL Abrir]** para abrir la plantilla en el editor.
+1. Seleccionar **[!UICONTROL Listo]** para volver a la consola, o seleccione **[!UICONTROL Abrir]** para abrir la plantilla en el editor.
 
 ## IU del editor de plantillas {#template-editor-ui}
 
@@ -64,8 +64,7 @@ Contiene las siguientes opciones:
    * **Alternar panel lateral**: Permite mostrar u ocultar la barra lateral.
    * **Información de la página**: Permite especificar información, como la hora de publicación/cancelación de la publicación, las miniaturas, las bibliotecas del lado del cliente, la directiva de página y la biblioteca de diseños de páginas del lado del cliente.
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Selector de modo:** Permite cambiar el modo. 
-Puede elegir el modo **[!UICONTROL Estructura]**, **[!UICONTROL Contenido inicial]**, **[!UICONTROL Control de diseño]** en el menú contextual. El modo Estructura permite agregar y personalizar el encabezado y el pie de página. El modo de Contenido inicial permite personalizar el contenido del formulario.
+   * **Selector de modo:** Le permite cambiar el modo. Puede elegir el modo **[!UICONTROL Estructura]**, **[!UICONTROL Contenido inicial]**, **[!UICONTROL Control de diseño]** en el menú contextual. El modo Estructura permite agregar y personalizar el encabezado y el pie de página. El modo de Contenido inicial permite personalizar el contenido del formulario.
    * **Vista previa:** Permite obtener una vista previa del aspecto de la plantilla al publicarla. Puede utilizar el Selector de capa y la Vista previa para alternar los modos de edición y vista previa.
 * **Barra lateral:** Proporciona los exploradores de Contenido, Propiedades, Recursos y Componentes.
 * **Barra de herramientas de componentes:** Al seleccionar un componente, aparecerá una barra de herramientas que le permite personalizarlo.
@@ -120,7 +119,7 @@ Por ejemplo, puede agregar el componente Encabezado en la plantilla. Al seleccio
 
 Cuando se selecciona la opción Contenido inicial, el contenedor de formulario adaptable de la plantilla se abrirá como un formulario adaptable para su edición. Permite crear contenido predefinido que se puede cambiar al crear un Forms adaptable asociado a la plantilla. Al igual que la creación de un formulario adaptable, puede especificar la configuración inicial, como seleccionar un tema y enviar acciones.
 
-Los autores de formularios lo utilizan como base para crear un formulario. La estructura del flujo de contenido se especifica en la capa Contenido inicial de la plantilla. Para cambiar a la edición del contenido inicial de la plantilla de formulario, antes de Vista previa en la barra de herramientas de la página, pulse ![canvas-drop-down](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenido inicial]**.
+Los autores de formularios lo utilizan como base para crear un formulario. La estructura del flujo de contenido se especifica en la capa Contenido inicial de la plantilla. Para cambiar a la edición del contenido inicial de la plantilla de formulario, antes de Vista previa en la barra de herramientas de la página, seleccione ![lista desplegable de lienzo](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenido inicial]**.
 
 ![Encabezado y pie de página agregados en la capa Contenido inicial](assets/header-and-footer.png)
 
@@ -144,9 +143,9 @@ Consulte el artículo [explicación del diseño interactivo](https://experiencel
 
 Al crear una plantilla, esta se agrega como borrador. Habilite la plantilla para utilizarla para crear formularios adaptables. Para habilitar una plantilla, haga lo siguiente:
 
-1. Vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Plantillas]** y abra la carpeta en la que ha creado la plantilla.
+1. Vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Plantillas]**y abra la carpeta en la que ha creado la plantilla.
 La plantilla que ha creado se marcará como borrador.
-1. Seleccione la plantilla y pulse **[!UICONTROL Habilitar]** en la barra de herramientas. 
+1. Seleccione la plantilla y seleccione **[!UICONTROL Activar]** en la barra de herramientas.
 Cuando cree un formulario adaptable, podrá ver la plantilla en la lista cuando se le pida que elija una plantilla.
 
 ## Importar o exportar una plantilla {#importing-or-exporting-a-template}
@@ -161,7 +160,7 @@ Un formulario funciona con su plantilla. Cuando se descarga un formulario adapta
 
 Los autores pueden asociar un [!UICONTROL Esquema de modelo de datos de formulario] a una plantilla de formulario adaptable en un editor de plantillas. Permite a los autores seleccionar un esquema del editor de plantillas. Cuando asocia un esquema a una plantilla y un autor de formularios crea un formulario basado en ella, el esquema se preselecciona para el formulario. Ayuda a los autores de formularios a regular el uso del esquema y también ahorra tiempo a los autores de formularios. Para seleccionar un esquema del modelo de datos de formulario en el editor de plantillas, haga lo siguiente:
 
-1. Tocar **[!UICONTROL Explorador de contenido]** situado en el lado izquierdo.
+1. Seleccionar **[!UICONTROL Explorador de contenido]** situado en el lado izquierdo.
 1. Vaya a la **[!UICONTROL Configuración]** del contenedor del formulario.
 1. Seleccione **[!UICONTROL Modelo de datos]**.
 1. Elija su modelo de datos de formulario mediante **[!UICONTROL Seleccionar modelo de datos de formulario]** y guarde la configuración.
@@ -186,7 +185,7 @@ Change the layer from **Structure** to **Initial Content**, and start adding con
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and tap **[!UICONTROL Done]**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and select **[!UICONTROL Done]**. The tabbed template structure is applied.
 
 ### Adding content in tabs {#adding-content-in-tabs}
 
@@ -225,10 +224,10 @@ Cuando agrega al menos un grupo de propiedades personalizadas mediante la direct
 #### Seleccione un nombre de grupo personalizado en el cuadro de diálogo de edición de un componente principal {#select-a-custom-group-name}
 
 1. Abra un formulario adaptable en modo de edición.
-1. Pulse el componente para el que se han definido las propiedades personalizadas en el editor de plantillas y pulse ![settings_icon](assets/configure-icon.svg) para abrir el cuadro de diálogo de edición del componente.
+1. Seleccione el componente para el que se han definido las propiedades personalizadas en el editor de plantillas y seleccione ![settings_icon](assets/configure-icon.svg) para abrir el cuadro de diálogo de edición del componente.
 1. Seleccione el **[!UICONTROL Avanzadas]** pestaña.
 1. Seleccione el nombre del grupo de propiedades personalizadas de **[!UICONTROL Selección de propiedad personalizada]** menú desplegable. Todos los nombres de grupo personalizados definidos se rellenan automáticamente en la lista desplegable.
-1. Pulse **[!UICONTROL Listo]** para guardar las propiedades.
+1. Seleccionar **[!UICONTROL Listo]** para guardar las propiedades.
 
 ![seleccionar nombre de grupo de propiedades personalizadas](/help/forms/assets/select-custom-properties-group-name.png)
 
@@ -279,7 +278,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## Prácticas recomendadas {#best-practices}
 
-* Cree plantillas utilizando los componentes basados en los componentes principales, por ejemplo, texto de formulario adaptable, contenedor de formulario adaptable y mucho más. Para obtener información sobre los componentes principales de Forms adaptables, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es).
+* Cree plantillas utilizando los componentes basados en Componentes principales, por ejemplo, Texto de formulario adaptable, Contenedor de formulario adaptable y más. Para obtener información sobre los componentes principales de Forms adaptables, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es).
 * Limite el número de plantillas para que coincidan con los tipos de formulario fundamentalmente diferentes disponibles en los sitios web
 * Proporcione la flexibilidad y las capacidades de configuración necesarias a los componentes personalizados utilizados en una plantilla.
 

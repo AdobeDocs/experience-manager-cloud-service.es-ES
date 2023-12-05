@@ -2,10 +2,10 @@
 title: Referencia de la API de JavaScript de ContextHub
 description: La API de JavaScript de ContextHub está disponible para los scripts cuando se agrega el componente ContextHub a la página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4613'
-ht-degree: 3%
+source-wordcount: '4602'
+ht-degree: 2%
 
 ---
 
@@ -162,7 +162,7 @@ Combina un objeto de datos o una matriz con los datos almacenados. Cada par clav
 * **Objeto:** Las claves son los nombres de propiedad.
 * **Matriz:** Las claves son los índices de matriz.
 
-Tenga en cuenta que los valores pueden ser objetos.
+Los valores pueden ser objetos.
 
 ##### Parámetros {#parameters-addallitems}
 
@@ -261,7 +261,7 @@ Inicializa el almacén.
 
 * **`name`:** El nombre de la tienda.
 * **`config`:** Un objeto que contiene propiedades de configuración:
-   * `eventDeferring`: El valor predeterminado es 32.
+   * `eventDeferring`: el valor predeterminado es 32.
    * `eventing`: La [ContextHub.Utils.Eventing](#contexthub-utils-eventing) objeto para este almacén. El valor predeterminado es `ContextHub.eventing` El objeto utiliza.
    * `persistence`: La `ContextHub.Utils.Persistence` objeto para este almacén. El valor predeterminado es `ContextHub.persistence` objeto.
 
@@ -383,7 +383,7 @@ Configura los detalles para conectarse al servicio JSONP que utiliza este objeto
 
 * **`serviceConfig`:** Un objeto que contiene las siguientes propiedades:
    * `host`: (Cadena) El nombre del servidor o la dirección IP.
-   * `jsonp`: (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.*Object.name* El objeto &rbrace; se agrega al objeto service.params.
+   * `jsonp`: (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.*Object.name* El objeto } se agrega al objeto service.params.
    * `params`: parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
    * `path`: (Cadena) Ruta al servicio.
    * `port`: (Número) Número de puerto del servicio.
@@ -410,7 +410,7 @@ Recupera el objeto de servicio para este objeto ContextHub.Store.JSONPStore. El 
 Un objeto con las siguientes propiedades:
 
 * **`host`:** (Cadena) El nombre del servidor o la dirección IP.
-* **`jsonp`:** (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.*Object.name* El objeto &rbrace; se agrega al objeto service.params.
+* **`jsonp`:** (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.*Object.name* El objeto } se agrega al objeto service.params.
 * **`params`:** Parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
 * **`path`:** (Cadena) Ruta de acceso al servicio.
 * **`port`:** (Número) El número de puerto del servicio.
@@ -442,7 +442,7 @@ inicializa el `ContextHub.Store.JSONPStore` objeto.
    * `eventDeferring`: 32.
    * `eventing`: el objeto ContextHub.Utils.Eventing de este almacén. El valor predeterminado es `ContextHub.eventing` objeto.
    * `persistence`: el objeto ContextHub.Utils.Persistence para este almacén. De forma predeterminada, se utiliza la persistencia de la memoria (objeto JavaScript).
-   * `service`: (Objeto)
+   * `service`: (objeto)
       * `host`: (Cadena) El nombre del servidor o la dirección IP.
       * `jsonp`: (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Si es true, la variable `{callback: "ContextHub.Callbacks.*Object.name*}`se agrega el objeto a `service.params`.
       * `params`: parámetros de URL (objeto) representados como propiedades de objeto. Los nombres y valores de parámetro son los nombres y valores de las propiedades de objeto, respectivamente.

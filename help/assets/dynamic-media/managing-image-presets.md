@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3629'
+source-wordcount: '3587'
 ht-degree: 8%
 
 ---
 
 # Administrar ajustes preestablecidos de imagen{#managing-image-presets}
 
-Los ajustes preestablecidos de imagen permiten que Adobe Experience Manager Assets entregue dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y formato para mostrar imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
+Los ajustes preestablecidos de imagen permiten a Adobe Experience Manager Assets entregar dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y formato para mostrar imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
 
 Los administradores pueden crear ajustes preestablecidos para exportar recursos. Los usuarios pueden elegir un ajuste preestablecido al exportar imágenes, que también redistribuye las imágenes según las especificaciones del administrador.
 
@@ -88,7 +88,7 @@ Para utilizar Dynamic Media para previsualizar y generar representaciones dinám
 
 Puede acceder a `Rasterize PDF/AI Image Preview Rendition` procesar opciones de componentes mediante el `DAM Update Asset` flujo de trabajo.
 
-Seleccione Adobe Experience Manager en la parte superior izquierda y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Recurso de actualización DAM]** y, en la barra de herramientas, seleccione **[!UICONTROL Editar]**. En la página de flujo de trabajo de recursos de actualización de DAM, pulse dos veces el botón `Rasterize PDF/AI Image Preview Rendition` para abrir el cuadro de diálogo Propiedades del paso.
+Seleccione Adobe Experience Manager en la parte superior izquierda y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Recurso de actualización DAM]** y, en la barra de herramientas, seleccione **[!UICONTROL Editar]**. En la página Flujo de trabajo de recursos de actualización de DAM, seleccione dos veces la opción `Rasterize PDF/AI Image Preview Rendition` para abrir el cuadro de diálogo Propiedades del paso.
 
 #### Rasterizar PDF/AI a las opciones de representación de previsualización de imagen {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -138,7 +138,7 @@ Puede configurar el tamaño de las miniaturas configurando estos ajustes en la v
 
 Con el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**, el servidor de imágenes genera miniaturas y esta configuración es independiente de la configuración aplicada al paso **[!UICONTROL Procesar miniaturas]**. La generación de miniaturas a través del paso **[!UICONTROL Miniaturas de proceso]** es la forma más lenta y con mayor consumo de memoria para crear miniaturas.
 
-El tamaño de la miniatura se define en el siguiente formato: **[!UICONTROL anchura:height:centro]**, por ejemplo `80:80:false`. La anchura y la altura determinan el tamaño en píxeles de la miniatura. El valor central puede ser false o true. Si se establece en true, indica que la imagen en miniatura tiene exactamente el tamaño indicado en la configuración. Si la imagen redimensionada es más pequeña, se centra dentro de la miniatura.
+El tamaño de la miniatura se define en el siguiente formato: **[!UICONTROL anchura:height:centro]**, por ejemplo, `80:80:false`. La anchura y la altura determinan el tamaño en píxeles de la miniatura. El valor central puede ser false o true. Si se establece en true, indica que la imagen en miniatura tiene exactamente el tamaño indicado en la configuración. Si la imagen redimensionada es más pequeña, se centra dentro de la miniatura.
 
 >[!NOTE]
 >
@@ -146,7 +146,6 @@ El tamaño de la miniatura se define en el siguiente formato: **[!UICONTROL anch
 >
 >* Los tamaños de miniatura de los vídeos se configuran en la variable **[!UICONTROL Miniaturas FFmpeg]** paso, en el **[!UICONTROL Proceso]** pestaña debajo de **[!UICONTROL Argumentos]**.
 >
-
 
 **Para configurar el tamaño de la miniatura:**
 
@@ -179,7 +178,7 @@ Los ajustes preestablecidos de imagen que cree estarán disponibles como represe
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
-1. En la propiedad limit, cambie el número al deseado, por ejemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. En la propiedad limit, cambie el número al deseado, por ejemplo, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Seleccionar **[!UICONTROL Guardar todo]**.
 
 ### Crear ajustes preestablecidos de imagen {#creating-image-presets}
@@ -233,7 +232,7 @@ Si los deja en blanco, el Experience Manager verá que este ajuste preestablecid
 
 Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descritas en esta sección. Además, Adobe recomienda estas opciones de &quot;práctica recomendada&quot; para comenzar:
 
-* **[!UICONTROL Formato]** (pestaña **[!UICONTROL Básico]**): Seleccione **[!UICONTROL JPEG]** u otro formato que cumpla sus necesidades. Todos los navegadores web admiten el formato de imagen JPEG; ofrece un buen equilibrio entre los tamaños de archivos pequeños y la calidad de imagen. Sin embargo, las imágenes en formato JPEG utilizan un esquema de compresión con pérdidas que puede introducir artefactos de imagen no deseados si el ajuste de compresión es demasiado bajo. Por este motivo, Adobe recomienda establecer la calidad de compresión en 75. Este ajuste ofrece un buen equilibrio entre la calidad de imagen y el tamaño de archivo pequeño.
+* **[!UICONTROL Formato]** (**[!UICONTROL Básico]** pestaña): seleccione **[!UICONTROL JPEG]** u otro formato que cumpla sus necesidades. Todos los navegadores web admiten el formato de imagen JPEG; ofrece un buen equilibrio entre los tamaños de archivos pequeños y la calidad de imagen. Sin embargo, las imágenes en formato JPEG utilizan un esquema de compresión con pérdidas que puede introducir artefactos de imagen no deseados si el ajuste de compresión es demasiado bajo. Por este motivo, Adobe recomienda establecer la calidad de compresión en 75. Este ajuste ofrece un buen equilibrio entre la calidad de imagen y el tamaño de archivo pequeño.
 
 * **[!UICONTROL Activar enfoque simple]**: No seleccione **[!UICONTROL Activar enfoque simple]** (este filtro de enfoque ofrece menos control que la configuración de máscara de enfoque).
 
@@ -245,7 +244,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
 | --- | --- |
 | **Nombre** | Introduzca un nombre descriptivo sin espacios en blanco. Para ayudar a los usuarios a identificar este ajuste preestablecido de imagen, incluya la especificación de tamaño de imagen en el nombre. |
 | **Anchura y altura** | Especifique el tamaño en píxeles de la imagen resultante. La anchura y la altura deben ser superiores a 0 píxeles. Si alguno de los valores es 0, no se crea ningún ajuste preestablecido. Si ambos valores están en blanco, se crea un ajuste preestablecido de imagen interactivo. |
-| **Formato** | Elija un formato en el menú.<br>Elección **JPEG** ofrece las siguientes opciones adicionales:<br>· **Calidad** - La escala de calidad JPEG es 1-100. La escala es visible cuando arrastra el control deslizante.<br>· **Activar disminución de resolución de crominancia de JPG** - Dado que el ojo es menos sensible a la información de color de alta frecuencia que la luminancia de alta frecuencia, las imágenes JPEG dividen la información de la imagen en componentes de luminancia y color. Cuando se comprime una imagen del JPEG, el componente de luminancia se deja a resolución completa, mientras que los componentes de color se reducen de resolución promediando grupos de píxeles juntos. La disminución de la resolución reduce el volumen de datos en la mitad o en un tercio, sin afectar casi nada a la calidad percibida. La disminución de resolución no es aplicable a imágenes en escala de grises. Esta técnica reduce la cantidad de compresión útil para imágenes con alto contraste (por ejemplo, imágenes con texto superpuesto).<br><br>Elección **GIF** o **GIF con alfa** proporciona estas opciones adicionales **Cuantificación de color GIF** opciones:<br>· **Tipo** - Seleccionar **Adaptable** (valor predeterminado), **Web**, o **Macintosh**. Si selecciona **GIF con alfa**, la opción Macintosh no está disponible.<br>· **Tramado** - Seleccionar **Difuso** o **Desactivado**.<br>· **Número de colores** - Escriba un número 2 - 256.<br>· **Lista de colores** : introduzca una lista separada por comas. Por ejemplo, para blanco, gris y negro, escriba `000000,888888,ffffff`.<br><br>Elección **PDF**, **TIFF**, o **TIFF con alfa** proporciona esta opción adicional:<br>· **Compresión** - Seleccione un algoritmo de compresión. Las opciones de algoritmo para el PDF son **Ninguno**, **Zip**, y **Jpeg**; para el TIFF, son **Ninguno**, **LZW**, **Jpeg**, y **Zip**; y para TIFF con alfa son **Ninguno**, **LZW**, y **Zip**.<br><br>Elección **PNG**, **PNG con alfa**, o **EPS** no proporciona opciones adicionales. |
+| **Formato** | Elija un formato en el menú.<br>Elección **JPEG** ofrece las siguientes opciones adicionales:<br>· **Calidad** - La escala de calidad JPEG es 1-100. La escala es visible cuando arrastra el control deslizante.<br>· **Activar disminución de resolución de crominancia de JPG** - Dado que el ojo es menos sensible a la información de color de alta frecuencia que la luminancia de alta frecuencia, las imágenes JPEG dividen la información de la imagen en componentes de luminancia y color. Cuando se comprime una imagen del JPEG, el componente de luminancia se deja a resolución completa, mientras que los componentes de color se reducen de resolución promediando grupos de píxeles juntos. La disminución de la resolución reduce el volumen de datos en la mitad o en un tercio, sin afectar casi nada a la calidad percibida. La disminución de resolución no es aplicable a imágenes en escala de grises. Esta técnica reduce la cantidad de compresión útil para imágenes con alto contraste (por ejemplo, imágenes con texto superpuesto).<br><br>Elección **GIF** o **GIF con alfa** proporciona estas opciones adicionales **Cuantificación de color GIF** opciones:<br>· **Tipo** - Seleccionar **Adaptable** (valor predeterminado), **Web**, o **Macintosh**. Si selecciona **GIF con Alpha**, la opción Macintosh no está disponible.<br>· **Tramado** - Seleccionar **Difuso** o **Desactivado**.<br>· **Número de colores** - Escriba un número 2 - 256.<br>· **Lista de colores** : introduzca una lista separada por comas. Por ejemplo, para blanco, gris y negro, escriba `000000,888888,ffffff`.<br><br>Elección **PDF**, **TIFF**, o **TIFF con alfa** proporciona esta opción adicional:<br>· **Compresión** - Seleccione un algoritmo de compresión. Las opciones de algoritmo para el PDF son **Ninguno**, **Zip**, y **Jpeg**; para el TIFF, son **Ninguno**, **LZW**, **Jpeg**, y **Zip**; y para TIFF con Alpha son **Ninguno**, **LZW**, y **Zip**.<br><br>Elección **PNG**, **PNG con Alpha**, o **EPS** no proporciona opciones adicionales. |
 | **Enfoque** | Seleccionar **Activar enfoque simple** para aplicar un filtro de enfoque básico a la imagen después de cambiar su tamaño. El enfoque puede ayudar a compensar el desenfoque que puede producirse cuando se muestra una imagen en un tamaño diferente. |
 
 #### Opciones de pestaña avanzadas {#advanced-tab-options}
@@ -345,43 +344,43 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html) - Invierte cada componente de color para un efecto de imagen negativo.
 
-   ```xml {.line-numbers}
-   &op_invert=1
-   ```
+  ```xml {.line-numbers}
+  &op_invert=1
+  ```
 
-   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
+  ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - Aplica un filtro de desenfoque a la imagen.
 
-   ```xml {.line-numbers}
-   &op_blur=7
-   ```
+  ```xml {.line-numbers}
+  &op_blur=7
+  ```
 
-   ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
+  ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
 * Comandos combinados - op_blur y op-invert
 
-   ```xml {.line-numbers}
-   &op_invert=1&op_blur=7
-   ```
+  ```xml {.line-numbers}
+  &op_invert=1&op_blur=7
+  ```
 
-   ![chlimage_1-80](assets/chlimage_1-501.png)
+  ![chlimage_1-80](assets/chlimage_1-501.png)
 
 * [op_bright](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html) - Reduce o aumenta el brillo.
 
-   ```xml {.line-numbers}
-   &op_brightness=58
-   ```
+  ```xml {.line-numbers}
+  &op_brightness=58
+  ```
 
-   ![6_5_imagepreset-edit-bright](assets/6_5_imagepreset-edit-brightness.png)
+  ![6_5_imagepreset-edit-bright](assets/6_5_imagepreset-edit-brightness.png)
 
 * [opaco](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) - Ajusta la opacidad de la imagen. Permite reducir la opacidad en primer plano.
 
-   ```xml {.line-numbers}
-   opac=29
-   ```
+  ```xml {.line-numbers}
+  opac=29
+  ```
 
-   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
+  ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
 ### Editar ajustes preestablecidos de imagen {#modifying-image-presets}
 

@@ -2,10 +2,10 @@
 title: Compatibilidad con OAuth2 para el servicio de correo
 description: Compatibilidad con Oauth2 para el servicio de correo en Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 92%
+source-wordcount: '672'
+ht-degree: 88%
 
 ---
 
@@ -65,7 +65,7 @@ A continuación, genere el token de actualización, que forma parte de la config
    ```
 
 1. Cuando se le pida, conceda el permiso.
-1. La dirección URL se redirecciona a una nueva ubicación, construida con este formato:
+1. La dirección URL redirige a una nueva ubicación, construida con este formato:
 
    ```
    http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`

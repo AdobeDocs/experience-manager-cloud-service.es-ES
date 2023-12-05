@@ -2,10 +2,10 @@
 title: Referencia de predicados del generador de consultas
 description: AEM Referencia de predicado para la API del Generador de consultas en as a Cloud Service de la.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 2%
+source-wordcount: '2270'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ El nombre &quot;root&quot; nunca se usa en una consulta; está implícito.
 
 * **`p.offset`** : número que indica el inicio de la página de resultados, es decir, cuántos elementos se deben omitir.
 * **`p.limit`** : número que indica el tamaño de página.
-* **`p.guessTotal`** - recomendado: evite calcular el total del resultado, que puede resultar costoso. Un número que indica el total máximo que se va a contar hasta (por ejemplo, 1000, un número que proporciona a los usuarios suficientes comentarios sobre el tamaño aproximado y los números exactos para obtener resultados más pequeños). O bien, `true` para contar solo hasta el mínimo necesario `p.offset` + `p.limit`.
+* **`p.guessTotal`** - recomendado: evite calcular el total del resultado, que puede resultar costoso. Un número que indica el total máximo que se va a contar hasta (por ejemplo, 1000, un número que proporciona a los usuarios comentarios suficientes sobre el tamaño aproximado y los números exactos para obtener resultados más pequeños). O bien, `true` para contar solo hasta el mínimo necesario `p.offset` + `p.limit`.
 * **`p.excerpt`** - si se configura como `true`, incluya un extracto de texto completo en el resultado.
 * **`p.indexTag`** : si se configura, incluirá una opción de etiqueta de índice en la consulta (consulte [Etiqueta de índice de opción de consulta](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
 * **`p.facetStrategy`** - si se configura como `oak`, Query Builder delegará la extracción de facetas a Oak (consulte [Facetas](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
@@ -32,7 +32,7 @@ El nombre &quot;root&quot; nunca se usa en una consulta; está implícito.
    * **`full`** - procesamiento JSON de sling del nodo, con `jcr:path` que indica la ruta de la visita. De forma predeterminada, solo enumera las propiedades directas del nodo, incluido un árbol más profundo con `p.nodedepth=N`, donde 0 significa todo el subárbol infinito. Añadir `p.acls=true` para incluir los permisos JCR de la sesión actual en el elemento de resultado dado (asignaciones: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
    * **`selective`** - solo las propiedades especificadas en `p.properties`, que es un espacio separado (use `+` en la lista de direcciones URL) de rutas relativas. Si la ruta relativa tiene una profundidad `>1`, estas propiedades se representan como objetos secundarios. El especial `jcr:path` La propiedad incluye la ruta de la visita.
 
-### grupo  {#group}
+### grupo {#group}
 
 Este predicado permite crear condiciones anidadas. Los grupos pueden contener grupos anidados. Todo lo que hay en una consulta del Generador de consultas está implícito en un grupo raíz, que puede tener `p.or` y `p.not` también parámetros de.
 
@@ -76,7 +76,7 @@ Este predicado permite ordenar los resultados. Si se requiere ordenar por varias
 
 #### Propiedades {#properties-13}
 
-* **`orderby`** : nombre de propiedad JCR indicado por una @ inicial, por ejemplo `@jcr:lastModified` o `@jcr:content/jcr:title`u otro predicado de la consulta, por ejemplo `2_property`, según el orden
+* **`orderby`** : nombre de propiedad JCR indicado por una @ inicial, por ejemplo, `@jcr:lastModified` o `@jcr:content/jcr:title`u otro predicado de la consulta, por ejemplo, `2_property`, según el orden
 * **`sort`** - dirección del orden, ya sea `desc` para descendente o `asc` para ascendente (predeterminado)
 * **`case`** - si se configura como `ignore`, no distingue entre mayúsculas y minúsculas, es decir, `a` va antes que `B`; si está vacío o no, la ordenación distingue entre mayúsculas y minúsculas, es decir `B` va antes que `a`
 
@@ -92,7 +92,7 @@ Este predicado admite la extracción de facetas y proporciona bloques para cada 
 
 #### Propiedades {#properties}
 
-* **`boolproperty`** - ruta relativa a la propiedad, por ejemplo `myFeatureEnabled` o `jcr:content/myFeatureEnabled`
+* **`boolproperty`** - ruta relativa a la propiedad, por ejemplo, `myFeatureEnabled` o `jcr:content/myFeatureEnabled`
 * **`value`** - valor para comprobar la propiedad, `true` o `false`
 
 ### contentfragment {#contentfragment}
@@ -134,10 +134,10 @@ No admite el filtrado.
 
 #### Propiedades {#properties-3}
 
-* **`property`** - ruta relativa a un `DATE` propiedad, por ejemplo `jcr:lastModified`
-* **`lowerBound`** : límite de fecha inferior para la propiedad check, por ejemplo `2014-10-01`
+* **`property`** - ruta relativa a un `DATE` , por ejemplo, `jcr:lastModified`
+* **`lowerBound`** : límite de fecha inferior para comprobar la propiedad, por ejemplo, `2014-10-01`
 * **`lowerOperation`** - `>` (más reciente) o `>=` (en o posterior), se aplica al `lowerBound`. El valor predeterminado es `>`
-* **`upperBound`** : límite superior para comprobar la propiedad, por ejemplo `2014-10-01T12:15:00`
+* **`upperBound`** : límite superior para comprobar la propiedad de, por ejemplo, `2014-10-01T12:15:00`
 * **`upperOperation`** - `<` (anterior) o `<=` (en o anteriores), se aplica a `upperBound`. El valor predeterminado es `<`
 * **`timeZone`** : ID de la zona horaria que se utilizará cuando no se proporcione como cadena de fecha ISO-8601. El valor predeterminado es la zona horaria predeterminada del sistema.
 
@@ -186,7 +186,7 @@ Admite la extracción de facetas y proporciona bloques para cada código de idio
 
 #### Propiedades {#properties-8}
 
-* **`language`** - Código de idioma ISO, por ejemplo `de`
+* **`language`** - código de idioma ISO, por ejemplo, `de`
 
 ### recurso principal {#mainasset}
 
@@ -260,7 +260,7 @@ Admite la extracción de facetas y proporciona bloques para cada valor de propie
 
 #### Propiedades {#properties-15}
 
-* **`property`** - ruta relativa a la propiedad, por ejemplo `jcr:title`.
+* **`property`** - ruta relativa a la propiedad, por ejemplo, `jcr:title`.
 * **`value`** : valor para comprobar la propiedad; sigue el tipo de propiedad JCR a las conversiones de cadena.
 * **`N_value`** - uso `1_value`, `2_value`, ... para buscar varios valores (combinados con `OR` de forma predeterminada, con `AND` if `and=true`).
 * **`and`** - se establece en `true` para combinar varios valores (`N_value`) con `AND`
@@ -347,7 +347,7 @@ Admite la extracción de facetas y proporciona bloques para cada etiqueta única
 
 #### Propiedades {#properties-21}
 
-* **`tag`** - ruta del título de la etiqueta que se busca, por ejemplo `properties:orientation/landscape`
+* **`tag`** - ruta del título de la etiqueta que se va a buscar, por ejemplo, `properties:orientation/landscape`
 * **`N_value`** - uso `1_value`, `2_value`, ... para buscar varias etiquetas (combinadas con `OR` de forma predeterminada, con `AND` if `and=true`)
 * **`property`** - propiedad (o ruta relativa a la propiedad) que se va a ver (valor predeterminado `cq:tags`)
 
@@ -359,7 +359,7 @@ Admite la extracción de facetas y proporciona bloques para cada etiqueta única
 
 #### Propiedades {#properties-22}
 
-* **`tagid`** - ID de etiqueta que se busca, por ejemplo `properties:orientation/landscape`
+* **`tagid`** - ID de etiqueta que se va a buscar, por ejemplo, `properties:orientation/landscape`
 * **`N_value`** - uso `1_value`, `2_value`, ... para comprobar si hay varios ID de etiqueta (combinados con `OR` de forma predeterminada, con `AND` if `and=true`)
 * **`property`** - propiedad (o ruta relativa a la propiedad) que se va a ver (valor predeterminado `cq:tags`)
 
@@ -384,4 +384,4 @@ Admite la extracción de facetas y proporciona bloques para cada tipo único en 
 
 #### Propiedades {#Properties-2}
 
-* **`type`** - tipo de nodo o `mixin` nombre para buscar, por ejemplo `cq:Page`
+* **`type`** - tipo de nodo o `mixin` nombre para buscar, por ejemplo, `cq:Page`

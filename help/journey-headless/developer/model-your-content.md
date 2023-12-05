@@ -2,10 +2,10 @@
 title: Cómo modelar el contenido
 description: En esta parte del Recorrido AEM para desarrolladores de Adobe Experience Manager AEM () sin encabezado, aprenda a modelar el contenido para la entrega sin encabezado mediante modelos de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 69%
+source-wordcount: '1814'
+ht-degree: 67%
 
 ---
 
@@ -210,7 +210,7 @@ Al principio, debe habilitar Modelos de fragmento de contenido para el sitio. Es
 >
 >Consulte Recursos adicionales: Fragmentos de contenido en el explorador de configuración
 
-A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede realizar en **Herramientas** -> **General** -> **Modelos de fragmento de contenido**. Por ejemplo:
+A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en **Herramientas** > **General** > **Modelos de fragmento de contenido**. Por ejemplo:
 
 ![Modelo de fragmento de contenido](assets/cfm-model.png)
 
@@ -224,7 +224,7 @@ Los fragmentos de contenido se basan siempre en un modelo de fragmento de conten
 
 ### Selección del modelo apropiado {#select-model}
 
-El primer paso para crear el contenido es crear un fragmento de contenido. Esto se realiza mediante Crear -> Fragmento de contenido en la carpeta necesaria en Recursos -> Archivos. El asistente le guiará por los pasos.
+El primer paso para crear el contenido es crear un fragmento de contenido. Esto se realiza mediante Crear > Fragmento de contenido en la carpeta requerida en Recursos > Archivos. El asistente le guiará por los pasos.
 
 Un fragmento de contenido se basa en un modelo de fragmento de contenido específico que se selecciona como primer paso del proceso de creación.
 

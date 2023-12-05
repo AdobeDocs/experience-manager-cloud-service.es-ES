@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 5%
+source-wordcount: '1290'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 5%
 * Compartir usando [[!DNL Adobe Asset Link]](https://www.adobe.com/es/creativecloud/business/enterprise/adobe-asset-link.html).
 * Compartir usando [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
-## Compartir recursos como un vínculo {#sharelink}
+## Uso compartido de recursos como vínculo {#sharelink}
 
 Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos, especialistas en marketing y otros [!DNL Experience Manager] usuarios. La funcionalidad permite a los usuarios anónimos acceder y descargar los recursos compartidos con ellos. Al descargar recursos desde un vínculo compartido, [!DNL Experience Manager Assets] utiliza un servicio asincrónico que ofrece una descarga más rápida e ininterrumpida. Los recursos que se van a descargar se colocan en segundo plano en archivos ZIP de un tamaño de archivo manejable. Para las descargas grandes, la descarga está agrupada en varios archivos de 100 GB por tamaño de archivo.
 
@@ -183,7 +183,7 @@ Los especialistas en marketing y los usuarios de la línea de negocios pueden co
 
 * **Adobe Asset Link**: los profesionales creativos pueden buscar y utilizar recursos directamente desde [!DNL Adobe InDesign], [!DNL Adobe Illustrator], y [!DNL Adobe Photoshop].
 
-## Configuración del uso compartido de recursos {#configure-sharing}
+## Configurar el uso compartido de recursos {#configure-sharing}
 
 Las distintas opciones para compartir los recursos requieren una configuración específica y tienen requisitos previos específicos.
 
@@ -223,7 +223,7 @@ Before you can share assets as links, configure the email service.
 
 When you download assets from the link shared using the Link Sharing feature, Experience Manager compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Click/Tap the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Select the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the web console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
 1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 1. Save the changes.

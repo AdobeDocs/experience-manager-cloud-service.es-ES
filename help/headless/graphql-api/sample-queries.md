@@ -3,10 +3,10 @@ title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muest
 description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '1752'
-ht-degree: 100%
+source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
+workflow-type: tm+mt
+source-wordcount: '1754'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Vea estas consultas de muestra para ver de forma ilustrada la creación de consu
 >
 >Puede acceder al editor de consultas desde:
 >
->* **Herramientas** -> **General** -> **Editor de consultas de GraphQL**
+>* **Herramientas** > **General** > **Editor de consultas de GraphQL**
 >* directamente; por ejemplo, `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -362,7 +362,7 @@ Si crea una nueva variación, denominada “Centro de Berlín” (`berlin_centre
 }
 ```
 
-### Consulta de muestra: nombres de todas las ciudades Etiquetado como City Breaks {#sample-names-all-cities-tagged-city-breaks}
+### Consulta de muestra: nombres de todas las ciudades etiquetadas como escapadas {#sample-names-all-cities-tagged-city-breaks}
 
 Si:
 

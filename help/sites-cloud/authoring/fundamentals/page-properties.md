@@ -2,10 +2,10 @@
 title: Edición de las propiedades de página
 description: AEM Obtenga información sobre cómo definir las propiedades necesarias para administrar una página en la administración de páginas en la.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2270'
-ht-degree: 93%
+source-wordcount: '2268'
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Título y etiquetas**
 
-   * **Título**: el título de la página se muestra en varias ubicaciones. Por ejemplo, la vista de la pestaña **Sitios web** y las vistas de lista o tarjeta **Sitios**.
+   * **Título** - El título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la pestaña **Sitios web** y las vistas de lista o tarjeta **Sitios**.
       * Este es un campo obligatorio.
    * **Etiquetas**: aquí puede agregar o quitar etiquetas de la página al actualizar la lista en el cuadro de diálogo de selección.
       * Después de seleccionar una etiqueta, aparece debajo del cuadro de selección. Puede quitar una etiqueta de esta lista utilizando la x.
@@ -98,7 +98,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * **Idioma**: el idioma de la página
    * **Raíz del idioma**: si la página es la raíz de una copia en un idioma, es necesario marcar esta opción
-   * **Redirigir**: indica la página a la cual esta deberá redirigirse automáticamente con un estado HTML `302 Found`.
+   * **Redirigir** - Indica la página a la que esta página debe redirigirse automáticamente con un HTML `302 Found` estado.
       * **Redirección permanente**: cuando se selecciona, la página redirige a la ruta de destino proporcionada junto con un estado HTML `301 Moved Permanently`.
    * **Diseño**: indica si se muestra o se oculta la página en la navegación de páginas del sitio resultante
    * **Alias**: especifica un alias que se usará con esta página
@@ -323,12 +323,12 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
       * Si reduce la selección de páginas a una sola página, se verán todas las propiedades.
    * Propiedades comunes con un valor común
       * En el modo Ver solo se muestran las propiedades con un valor común.
-      * Cuando el campo admite varios valores (por ejemplo, etiquetas), los valores solo se mostrarán si *todos* son comunes. Si solo son comunes algunos de ellos, solo se mostrarán en el momento de editar.
+      * Cuando el campo tiene varios valores (por ejemplo, Etiquetas), los valores solo se mostrarán cuando *todo* son comunes. Si solo algunas son comunes, solo se mostrarán al editar.
       * Cuando no existen propiedades con un valor común, se muestra un mensaje. 
 
 * **Editar**
 
    * Puede actualizar los valores en los campos disponibles.
       * Los nuevos valores se aplican a todas las páginas seleccionadas cuando selecciona **Listo**.
-      * Cuando el campo admite varios valores (por ejemplo, etiquetas), puede agregar un nuevo valor o eliminar un valor común.
+      * Cuando el campo tiene varios valores (por ejemplo, Etiquetas), puede anexar un nuevo valor o quitar un valor común.
    * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se indican con un valor especial; por ejemplo, el texto `<Mixed Entries>`.

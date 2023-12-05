@@ -4,10 +4,10 @@ description: Utilice los componentes principales del formulario adaptable en una
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
-workflow-type: ht
-source-wordcount: '2150'
-ht-degree: 100%
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+workflow-type: tm+mt
+source-wordcount: '2067'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ Puede elegir uno de los siguientes métodos para crear o agregar un formulario a
 
 * **Agregar un formulario adaptable existente**: el componente de [Formularios adaptables: incrustados (v2)](#embed-existing-af) permite agregar fácilmente un formulario adaptable que ya existe en una página de AEM Sites. Esta función mejora la adaptabilidad y la reutilización de formularios adaptables. Esta integración proporciona una forma cómoda para que los clientes puedan reutilizar los formularios adaptables que ya han creado.
 
-* **Utilice el Asistente para formularios adaptables para crear un formulario**: Utilice el componente de [Formularios adaptables: incrustar(v2)](#embed-new-af) para crear un formulario adaptable desde el editor de AEM Sites mediante el asistente de creación de formularios. El formulario se guarda como una entidad externa. Puede volver a utilizar este formulario en otras páginas de Sites y también en formularios independientes.
+* **Uso del Asistente para Forms adaptable para crear un formulario**: utilice el [Forms adaptable: incrustado (v2)](#embed-new-af) para crear un formulario adaptable desde el editor de AEM Sites con el asistente para la creación de formularios. El formulario se guarda como una entidad externa. Puede volver a utilizar este formulario en otras páginas de Sites y también en formularios independientes.
 
 * **Agregar varios Formularios adaptables en una página de AEM Sites**: para agregar varios Formularios adaptables en una página de AEM Sites, utilice los componentes de contenedor de AEM Forms: [Formularios adaptables: incrustado(v2)](#embed-new-af) y [Contenedor de formulario adaptable](#af-container-component). En caso de que necesite agregar más de un formulario adaptable como div dentro de una página de AEM Sites, puede utilizar el componente Contenedor de formulario adaptable.
 
@@ -203,7 +203,7 @@ Para utilizar componentes de formularios adaptables en una página de AEM Sites,
 
 1. Abra la página de AEM Sites en el modo de edición.
 1. Desde el panel del explorador de componentes, arrastre y suelte el componente [!UICONTROL Formularios adaptables: incrustar] en la página.
-1. Pulse el componente [!UICONTROL Formularios adaptables: incrustar] en la página de Sites y, a continuación, pulse en ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) en la barra de acciones. Se abrirá el cuadro de diálogo de **[!UICONTROL Editar formularios adaptables: incrustar]**.
+1. Seleccione el [!UICONTROL Forms adaptable: incrustado] en la página sitios y seleccione ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) en la barra de acciones. Se abrirá el cuadro de diálogo de **[!UICONTROL Editar formularios adaptables: incrustar]**.
 1. Busque y seleccione el formulario adaptable para incrustarlo en la [!UICONTROL Ruta de recursos].
 1. Guarde la configuración. El formulario adaptable está ahora incrustado en la página.
 
@@ -253,7 +253,7 @@ Considere los siguientes escenarios para publicar Formularios adaptables agregad
 Para modificar cualquier configuración o propiedad de un formulario adaptable, realice una de las siguientes acciones:
 
 * Abra el formulario original en Formularios adaptables en los respectivos editores y modifíquelo.
-* Pulse el formulario adaptable desde la página de Sites en el modo Edición y, a continuación, pulse **[!UICONTROL Editar en una nueva ventana]**. El formulario original se abrirá en el modo Edición, en el cual puede modificarlo.
+* Seleccione el formulario adaptable desde la página de Sites en el modo Edición y, a continuación, seleccione **[!UICONTROL Editar en una nueva ventana]**. El formulario original se abrirá en el modo de edición, donde puede modificarlo.
 
 ## Cambiar el diseño de un formulario adaptable agregado a una página de AEM Sites {#change-layout-af-aem-sites-page}
 

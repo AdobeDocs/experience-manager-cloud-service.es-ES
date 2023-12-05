@@ -2,10 +2,10 @@
 title: Ampliación del Administrador de varios sitios
 description: Obtenga información sobre cómo ampliar la funcionalidad del Administrador de varios sitios.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2429'
-ht-degree: 2%
+source-wordcount: '2337'
+ht-degree: 1%
 
 ---
 
@@ -175,23 +175,20 @@ Para crear una configuración de despliegue:
 
 1. En esta ubicación, cree un nodo con las siguientes propiedades:
 
-   * **Nombre**: Nombre del nodo de la configuración de lanzamiento, por ejemplo `contentCopy` o `workflow`
+   * **Nombre**: el nombre del nodo de la configuración de lanzamiento, por ejemplo, `contentCopy` o `workflow`
    * **Tipo**: `cq:RolloutConfig`
 
 1. Agregue las siguientes propiedades a este nodo:
 
    * **Nombre**: `jcr:title`
-
      **Tipo**: `String`
      **Valor**: un título de identificación que aparecerá en la interfaz de usuario
 
    * **Nombre**: `jcr:description`
-
      **Tipo**: `String`
      **Valor**: una descripción opcional.
 
    * **Nombre**: `cq:trigger`
-
      **Tipo**: `String`
      **Valor**: La [Desplegar Déclencheur](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) para utilizar
       * `rollout`
@@ -207,7 +204,7 @@ Las configuraciones de despliegue se almacenan debajo de [nodo de configuración
 
 Agregar nodos secundarios de tipo `cq:LiveSyncAction` para agregar acciones de sincronización a la configuración de lanzamiento. El orden de los nodos de acción de sincronización determina el orden en que se producen las acciones.
 
-1. En CRXDE Lite, seleccione su [Configuración de despliegue](#create-the-rollout-configuration) nodo, por ejemplo `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
+1. En CRXDE Lite, seleccione su [Configuración de despliegue](#create-the-rollout-configuration) nodo, por ejemplo, `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
 1. Cree un nodo con las siguientes propiedades de nodo:
 
@@ -529,7 +526,7 @@ Cree la configuración de despliegue de MSM que utiliza el `LiveActionFactory` q
 
 Configure la configuración de despliegue que creó en el procedimiento anterior para que utilice el `ExampleLiveActionFactory` clase.
 
-1. Abra CRXDE Lite.
+1. Abra el CRXDE Lite.
 
 1. Cree el siguiente nodo en `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
@@ -586,7 +583,7 @@ La lista de idiomas se almacena debajo de `/libs/wcm/core/resources/languages` n
 
 Para modificar los idiomas:
 
-1. Abra CRXDE Lite.
+1. Abra el CRXDE Lite.
 1. Seleccione el `/apps` y haga clic en **Crear**, entonces **Crear carpeta.**
 
 1. Asigne un nombre a la nueva carpeta `wcm`.
@@ -637,7 +634,6 @@ La propiedad dialog controla si una propiedad de página está sujeta a desplieg
       * **Tipo**: `String`
       * **Valor**: Contiene el nombre de la propiedad considerada y es comparable al valor de la propiedad `name`
          * Por ejemplo, consulte
-
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Cuándo `cq-msm-lockable` se ha definido, romper/cerrar la cadena interactuará con MSM de la siguiente manera:

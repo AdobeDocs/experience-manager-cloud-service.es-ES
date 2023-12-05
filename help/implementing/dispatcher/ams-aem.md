@@ -3,10 +3,10 @@ title: Migración de la configuración de Dispatcher de AMS a AEM as a Cloud Ser
 description: Migración de la configuración de Dispatcher de AMS a AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 16%
+source-wordcount: '1459'
+ht-degree: 7%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 16%
 
 AEM La configuración de Apache y Dispatcher en as a Cloud Service es bastante similar a la de AMS. Las principales diferencias son las siguientes:
 
-* AEM En as a Cloud Service, algunas directivas de Apache no se pueden utilizar (por ejemplo, `Listen` o `LogLevel`)
+* AEM En as a Cloud Service, es posible que no se utilicen algunas directivas de Apache (por ejemplo, `Listen` o `LogLevel`)
 * AEM En as a Cloud Service, solo se pueden colocar algunas partes de la configuración de Dispatcher en los archivos de inclusión y su nombre es importante. Por ejemplo, las reglas de filtro que desee reutilizar en distintos hosts deben colocarse en un archivo llamado `filters/filters.any`. Consulte la página de referencia para obtener más información.
 * AEM En as a Cloud Service, hay una validación adicional para no permitir reglas de filtro escritas mediante `/glob` para evitar problemas de seguridad. Porque `deny *` se utiliza en lugar de `allow *` (que no se puede utilizar), los clientes se benefician de ejecutar Dispatcher localmente y de realizar pruebas y errores, mirando los registros para saber exactamente qué rutas están bloqueando los filtros de Dispatcher para que se puedan agregar.
 
@@ -52,7 +52,6 @@ Si todavía hay secciones en los archivos host virtuales que hagan referencia ex
 </VirtualHost>
 ```
 
-
 elimínelos o haga comentarios. Las frases de estas secciones no se procesan, pero si se conservan, se pueden editar sin efecto, lo que es confuso.
 
 ### Verificar reescrituras
@@ -86,7 +85,7 @@ En todos los archivos host virtuales:
 Cambiar nombre `PUBLISH_DOCROOT` hasta `DOCROOT`
 Elimine las secciones que hacen referencia a variables denominadas `DISP_ID`, `PUBLISH_FORCE_SSL` o `PUBLISH_WHITELIST_ENABLED`
 
-### Comprueba el estado ejecutando el validador
+### Compruebe su estado ejecutando el validador
 
 Ejecute el validador de Dispatcher en el directorio, con la variable `httpd` subcomando:
 
@@ -103,11 +102,11 @@ Si hay directivas de Apache que no están incluidas en la lista de permitidos, e
 Elimine cualquier archivo de granja en `conf.dispatcher.d/enabled_farms` que tiene `author`, `unhealthy`, `health`,
 `lc` o `flush` en su nombre. Todos los archivos de granja en `conf.dispatcher.d/available_farms` que no están vinculados a también se pueden eliminar.
 
-### Cambiar el nombre de los archivos
+### Cambiar nombre de archivos de granja
 
 Todas las granjas en `conf.dispatcher.d/enabled_farms` debe cambiarse el nombre para que coincida con el patrón `*.farm`, por ejemplo, un archivo de granja llamado `customerX_farm.any` debería cambiarse el nombre `customerX.farm`.
 
-### Compruebe la caché
+### Comprobar caché
 
 Introducir directorio `conf.dispatcher.d/cache`.
 
@@ -131,7 +130,7 @@ En cada archivo de granja, elimine cualquier contenido de la variable `cache/all
 $include "../cache/default_invalidate.any"
 ```
 
-### Compruebe los encabezados de cliente
+### Comprobación de encabezados de cliente
 
 Introducir directorio `conf.dispatcher.d/clientheaders`.
 
@@ -156,7 +155,7 @@ con la frase:
 $include "../clientheaders/default_clientheaders.any"
 ```
 
-### Comprueba el filtro
+### Comprobar filtro
 
 Introducir directorio `conf.dispatcher.d/filters`.
 
@@ -181,7 +180,7 @@ con la frase:
 $include "../filters/default_filters.any"
 ```
 
-### Compruebe las representaciones
+### Comprobar procesamientos
 
 Introducir directorio `conf.dispatcher.d/renders`.
 
@@ -195,7 +194,7 @@ En cada archivo de granja, elimine cualquier contenido de la variable `renders` 
 $include "../renders/default_renders.any"
 ```
 
-### Comprueba los hosts virtuales
+### Comprobar hosts virtuales
 
 Cambie el nombre del directorio `conf.dispatcher.d/vhosts` hasta `conf.dispatcher.d/virtualhosts` e introdúzcala.
 
@@ -220,7 +219,7 @@ con la frase:
 $include "../virtualhosts/default_virtualhosts.any"
 ```
 
-### Comprueba el estado ejecutando el validador
+### Compruebe su estado ejecutando el validador
 
 AEM Ejecute el validador de Dispatcher as a Cloud Service de la en el directorio, con el `dispatcher` subcomando:
 
@@ -232,7 +231,7 @@ Si se observan errores relacionados con la falta de archivos include, comprueba 
 
 Si hay errores relacionados con la variable no definida `PUBLISH_DOCROOT`, renómbrala a `DOCROOT`.
 
-Para consulta por cualquier otro error, consulte la sección Resolución de problemas de la documentación de la herramienta de validación.
+Para ver todos los demás errores, consulte la sección Resolución de problemas de la documentación de la herramienta de validación.
 
 ### Pruebe la configuración con una implementación local (requiere la instalación de Docker).
 
@@ -258,6 +257,6 @@ Esto inicia el contenedor y expone a Apache en el puerto local 8080.
 
 ### Utilice la nueva configuración de Dispatcher
 
-Felicitaciones. Si el validador ya no informa ningún problema y el contenedor de docker se inició sin errores ni advertencias, está listo para mover la configuración al subdirectorio `dispatcher/src` del repositorio de Git.
+Felicitaciones. Si el validador ya no informa ningún problema y el contenedor de docker se inicia sin errores ni advertencias, está listo para mover la configuración a una `dispatcher/src` subdirectorio del repositorio de Git.
 
 **Los clientes que utilizan la versión 1 de configuración de AMS Dispatcher deben ponerse en contacto con el servicio de atención al cliente para ayudarles a migrar de la versión 1 a la versión 2 y así poder seguir las instrucciones anteriores.**

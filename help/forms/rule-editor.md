@@ -1,20 +1,20 @@
 ---
 title: ¿Cómo se utiliza el editor de reglas para agregar reglas a los campos de formulario para agregar un comportamiento dinámico y generar una lógica compleja a un formulario adaptable?
-description: El editor de reglas de formularios adaptables permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin codificación ni scripts.
+description: El editor de reglas de Forms adaptable permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin codificación ni scripts.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '6439'
-ht-degree: 94%
+source-wordcount: '6457'
+ht-degree: 88%
 
 ---
 
 # Adición de reglas a un formulario adaptable {#adaptive-forms-rule-editor}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -332,13 +332,13 @@ El editor de reglas proporciona una interfaz de usuario completa pero sencilla p
 Para iniciar la interfaz de usuario del editor de reglas:
 
 1. Abra un formulario adaptable en modo de creación.
-1. Pulse el objeto de formulario para el que desea escribir una regla y, en la barra de herramientas de componentes, pulse ![edit-rules](assets/edit-rules-icon.svg). Aparecerá la interfaz de usuario del editor de reglas.
+1. Seleccione el objeto de formulario para el que desea escribir una regla y, en la barra de herramientas de componentes, seleccione ![edit-rules](assets/edit-rules-icon.svg). Aparecerá la interfaz de usuario del editor de reglas.
 
    ![create-rules](assets/create-rules.png)
 
    Cualquier regla existente en los objetos de formulario seleccionados se muestra en esta vista. Para obtener información sobre la administración de reglas existentes, consulte [Administrar reglas](rule-editor.md#p-manage-rules-p).
 
-1. Pulse **[!UICONTROL Crear]** para escribir una regla nueva. El editor visual de la interfaz de usuario del editor de reglas se abre de forma predeterminada cuando se inicia el editor de reglas por primera vez.
+1. Seleccionar **[!UICONTROL Crear]** para escribir una regla nueva. El editor visual de la interfaz de usuario del editor de reglas se abre de forma predeterminada cuando se inicia el editor de reglas por primera vez.
 
    ![Interfaz de usuario del editor de reglas](assets/rule-editor-ui.png)
 
@@ -364,7 +364,7 @@ La pestaña Funciones incluye un conjunto de funciones integradas, como Sum Of (
 >
 >Puede buscar texto en nombres de objetos y funciones y títulos en las pestañas Objetos de formulario y Funciones.
 
-En el árbol izquierdo de los objetos de formulario, puede pulsar los objetos de formulario para mostrar las reglas aplicadas a cada uno de ellos. No solo puede desplazarse por las reglas de los distintos objetos de formulario, sino que también puede copiar y pegar reglas entre los objetos de formulario. Para obtener más información, consulte [Copiar y pegar reglas](rule-editor.md#p-copy-paste-rules-p).
+En el árbol izquierdo de los objetos de formulario, puede seleccionar los objetos de formulario para mostrar las reglas aplicadas a cada uno de ellos. No solo puede desplazarse por las reglas de los distintos objetos de formulario, sino que también puede copiar y pegar reglas entre los objetos de formulario. Para obtener más información, consulte [Copiar y pegar reglas](rule-editor.md#p-copy-paste-rules-p).
 
 ### C. Alternar entre funciones y objetos de formulario {#c-form-objects-and-functions-toggle-br}
 
@@ -416,15 +416,15 @@ Para escribir las reglas, realice los siguientes pasos:
 
 1. En primer lugar, escriba la regla para controlar la visibilidad del campo del salario del cónyuge en función de la opción que seleccione el usuario para el botón de opción de estado civil.
 
-   Abra el formulario de solicitud de préstamo en modo de creación. Pulse el componente **[!UICONTROL Marital Status]** y haga clic en ![edit-rules](assets/edit-rules-icon.svg). A continuación, pulse **[!UICONTROL Crear]** para iniciar el editor de reglas.
+   Abra el formulario de solicitud de préstamo en modo de creación. Seleccione el **[!UICONTROL Estado civil]** Componente y seleccione ![edit-rules](assets/edit-rules-icon.svg). A continuación, seleccione **[!UICONTROL Crear]** para iniciar el editor de reglas.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
    Al iniciar el editor de reglas, la regla When se selecciona de forma predeterminada. Además, el objeto de formulario (en este caso, Marital Status) desde el que se inició el editor de reglas se especifica en la instrucción When.
 
-   Aunque no puede cambiar ni modificar el objeto seleccionado, puede utilizar la lista desplegable de reglas, como se muestra a continuación, para seleccionar otro tipo de regla. Si desea crear una regla en otro objeto, pulse Cancelar para salir del editor de reglas y volver a iniciarla desde el objeto de formulario deseado.
+   Aunque no puede cambiar ni modificar el objeto seleccionado, puede utilizar la lista desplegable de reglas, como se muestra a continuación, para seleccionar otro tipo de regla. Si desea crear una regla en otro objeto, seleccione Cancelar para salir del editor de reglas y volver a iniciarla desde el objeto de formulario deseado.
 
-1. Pulse el menú desplegable **[!UICONTROL Seleccionar estado]** y haga clic en **[!UICONTROL es igual a]**. Aparece el campo **[!UICONTROL Escribir una cadena]**.
+1. Seleccionar **[!UICONTROL Seleccionar estado]** y seleccione. **[!UICONTROL is equal to]**. Aparece el campo **[!UICONTROL Escribir una cadena]**.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -442,7 +442,7 @@ Para escribir las reglas, realice los siguientes pasos:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Arrastre y suelte el campo **[!UICONTROL Spouse Salary]** de la pestaña Objetos de formulario en el campo **[!UICONTROL Colocar objeto o seleccionar aquí]**. También puede pulsar el botón **[!UICONTROL Colocar objeto o seleccionar aquí]** y seleccionar el campo **[!UICONTROL Spouse Salary]** del menú emergente, que enumera todos los objetos del formulario.
+1. Arrastre y suelte el campo **[!UICONTROL Spouse Salary]** de la pestaña Objetos de formulario en el campo **[!UICONTROL Colocar objeto o seleccionar aquí]**. Como alternativa, seleccione la **[!UICONTROL Soltar objeto o seleccionar aquí]** y seleccione el campo **[!UICONTROL Salario del cónyuge]** del menú emergente, que muestra todos los objetos de formulario del formulario.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -450,7 +450,7 @@ Para escribir las reglas, realice los siguientes pasos:
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
-1. Pulse **[!UICONTROL Listo]** para guardar la regla.
+1. Seleccionar **[!UICONTROL Listo]** para guardar la regla.
 
 1. Repita los pasos del 1 al 5 para definir otra regla que oculte el campo Spouse Salary si el estado civil es Single (soltero o soltera). La regla aparece de la siguiente manera en el editor.
 
@@ -464,13 +464,13 @@ Para escribir las reglas, realice los siguientes pasos:
 
 1. A continuación, escriba una regla para calcular el importe de idoneidad para el préstamo, que es el 50 % del salario total, y muéstrela en el campo Loan Eligibility. Para lograr este resultado, cree reglas **[!UICONTROL Set Value Of]** sobre el campo Loan Eligibility.
 
-   En el modo de creación, pulse el campo **[!UICONTROL Loan Eligibility]** y haga clic en ![edit-rules](assets/edit-rules-icon.svg). A continuación, pulse **[!UICONTROL Crear]** para iniciar el editor de reglas.
+   En el modo Autor, seleccione **[!UICONTROL Idoneidad del préstamo]** y seleccione ![edit-rules](assets/edit-rules-icon.svg). A continuación, seleccione **[!UICONTROL Crear]** para iniciar el editor de reglas.
 
 1. Seleccione la regla **[!UICONTROL Set Value Of]** en la lista desplegable de reglas.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Pulse **[!UICONTROL Seleccionar opción]** y seleccione **[!UICONTROL Expresión matemática]**. Se abre un campo para escribir una expresión matemática.
+1. Seleccionar **[!UICONTROL Seleccionar opción]** y seleccione **[!UICONTROL Expresión matemática]**. Se abre un campo para escribir una expresión matemática.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -484,7 +484,7 @@ Para escribir las reglas, realice los siguientes pasos:
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. A continuación, pulse el área resaltada alrededor del campo de expresión y haga clic en **[!UICONTROL Ampliar expresión]**.
+1. A continuación, seleccione en el área resaltada alrededor del campo de expresión y seleccione **[!UICONTROL Ampliar expresión]**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
@@ -498,7 +498,7 @@ Para escribir las reglas, realice los siguientes pasos:
 
    A continuación, cree una condición que, cuando devuelva un valor True, ejecute la expresión.
 
-1. Pulse **[!UICONTROL Agregar condición]** para agregar una instrucción When.
+1. Seleccionar **[!UICONTROL Agregar condición]** para agregar una instrucción When.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
@@ -512,7 +512,7 @@ Para escribir las reglas, realice los siguientes pasos:
 
    La regla finalmente aparece de la siguiente manera en el editor de reglas. ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
-1. Pulse **[!UICONTROL Listo]**. Se guarda la regla.
+1. Seleccionar **[!UICONTROL Listo]**. Se guarda la regla.
 
 1. Repita los pasos del 7 al 14 para definir otra regla que calcule la idoneidad del préstamo si el estado civil es Single (soltero o soltera). La regla aparece de la siguiente manera en el editor.
 
@@ -602,8 +602,8 @@ Agrega información sobre la función, como su objetivo.
 
   Todos los demás tipos de valor devuelto se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos de valor devuelto no distinguen entre mayúsculas y minúsculas.
 
-   * Sintaxis
-**This** `@this currentComponent`
+   * **Esta**
+Sintaxis: `@this currentComponent`
 
   Utilice @this para hacer referencia al componente de formulario adaptable en el que se escribe la regla.
 
@@ -644,18 +644,18 @@ Para crear una biblioteca de cliente y agregarla al repositorio CRX, siga estos 
 Después de agregar la biblioteca de cliente en el repositorio CRX, utilícela en el formulario adaptable. Permite utilizar la función personalizada como regla en el formulario. Para agregar la biblioteca del cliente en el formulario adaptable, siga estos pasos:
 
 1. Abra el formulario en modo de edición. 
-Para abrir un formulario en modo de edición, seleccione un formulario y pulse **[!UICONTROL Abrir]**.
-1. En el modo de edición, seleccione un componente y, a continuación, pulse ![field-level](assets/select_parent_icon.svg) > **[!UICONTROL Contenedor de formulario adaptable]** y haga clic en ![cmppr](assets/configure-icon.svg).
+Para abrir un formulario en modo de edición, seleccione un formulario y seleccione **[!UICONTROL Abrir]**.
+1. En el modo de edición, seleccione un componente y, a continuación, seleccione ![field-level](assets/select_parent_icon.svg) > **[!UICONTROL Contenedor de formulario adaptable]**, y luego seleccione ![cmppr](assets/configure-icon.svg).
 1. En la barra lateral, bajo Nombre de la biblioteca de cliente, agregue la biblioteca de cliente. (`customfunction` en el ejemplo)
 
    ![Agregar la biblioteca de cliente de funciones personalizada](assets/clientlib.png)
 
-1. Seleccione el cuadro numérico de entrada y pulse ![edit-rules](assets/edit-rules-icon.svg) para abrir el editor de reglas.
-1. Pulse **[!UICONTROL Crear regla]**. Con las opciones que se muestran a continuación, cree una regla para guardar el valor al cuadrado de la entrada en el campo Salida del formulario.
+1. Seleccione el cuadro numérico de entrada y seleccione ![edit-rules](assets/edit-rules-icon.svg) para abrir el editor de reglas.
+1. Seleccionar **[!UICONTROL Crear regla]**. Con las opciones que se muestran a continuación, cree una regla para guardar el valor al cuadrado de la entrada en el campo Salida del formulario.
 
    [![Uso de funciones personalizadas para crear una regla](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
-1. Pulse **[!UICONTROL Listo]**. Se agrega la función personalizada.
+1. Seleccionar **[!UICONTROL Listo]**. Se agrega la función personalizada.
 
    >[!NOTE]
    >
@@ -726,22 +726,22 @@ var c = {
 
 ## Administrar reglas {#manage-rules}
 
-Cualquier regla existente en un objeto de formulario aparece enumerada al pulsar el objeto y hacer clic en ![edit-rules1](assets/edit-rules-icon.svg). Puede ver el título y una vista previa del resumen de la regla. Además, la interfaz de usuario le permite expandir y ver el resumen completo de la regla, cambiar el orden de las reglas, editar las reglas y eliminarlas.
+Cualquier regla existente en un objeto de formulario se enumera al seleccionar el objeto y al seleccionar ![edit-rules1](assets/edit-rules-icon.svg). Puede ver el título y una vista previa del resumen de la regla. Además, la interfaz de usuario le permite expandir y ver el resumen completo de la regla, cambiar el orden de las reglas, editar las reglas y eliminarlas.
 
 ![List-rules](assets/list-rules.png)
 
 Puede realizar las siguientes acciones en reglas:
 
-* **Ampliar/contraer**: la columna Contenido de la lista de reglas muestra el contenido de las reglas. Si todo el contenido de la regla no está visible en la vista predeterminada, pulse ![expand-rule-content](assets/Smock_ChevronDown.svg) para ampliarla.
+* **Ampliar/contraer**: la columna Contenido de la lista de reglas muestra el contenido de las reglas. Si todo el contenido de la regla no está visible en la vista predeterminada, seleccione ![expand-rule-content](assets/Smock_ChevronDown.svg) para expandirlo.
 
 * **Reordenar**: cualquier regla nueva que cree se apilará en la parte inferior de la lista de reglas. Las reglas se ejecutan de arriba a abajo. La regla de la parte superior se ejecuta primero, seguida de otras reglas del mismo tipo. Por ejemplo, si tiene las reglas When, Show, Enable y When en las posiciones primera, segunda, tercera y cuarta desde la parte superior, respectivamente, la regla When en la parte superior se ejecuta primero, seguida de la regla When en la cuarta posición. A continuación, se ejecutan las reglas Show y Enable. 
 Puede cambiar el orden de una regla al pulsar ![sort-rules](assets/sort-rules.svg) o arrástrela hasta el orden deseado en la lista.
 
-* **Editar**: para editar una regla, active la casilla de verificación situada junto al título de la misma. Aparecerán las opciones para editar y eliminar la regla. Pulse **[!UICONTROL Editar]** para abrir la regla seleccionada en el editor de reglas <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
+* **Editar**: para editar una regla, active la casilla de verificación situada junto al título de la misma. Aparecerán las opciones para editar y eliminar la regla. Seleccionar **[!UICONTROL Editar]** para abrir la regla seleccionada en el editor de reglas <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
 
-* **Eliminar**: para eliminar una regla, selecciónela y pulse **[!UICONTROL Eliminar]**.
+* **Eliminar**: para eliminar una regla, selecciónela y seleccione **[!UICONTROL Eliminar]**.
 
-* **Habilitar/deshabilitar**: cuando tenga que suspender temporalmente el uso de una regla, puede seleccionar una o más reglas y pulsar **[!UICONTROL Deshabilitar]** en la barra de herramientas de acciones para desactivarlas. Si una regla está deshabilitada, no se ejecuta en tiempo de ejecución. Para habilitar una regla que esté deshabilitada, puede seleccionarla y pulsar Habilitar en la barra de herramientas de acciones. La columna de estado de la regla muestra si la regla está habilitada o deshabilitada.
+* **Habilitar/deshabilitar**: Cuando tenga que suspender temporalmente el uso de una regla, puede seleccionar una o varias reglas y seleccionar **[!UICONTROL Deshabilitar]** en la barra de herramientas Acciones para desactivarlos. Si una regla está deshabilitada, no se ejecuta en tiempo de ejecución. Para habilitar una regla que esté deshabilitada, puede seleccionarla y seleccionar Habilitar en la barra de herramientas de acciones. La columna de estado de la regla muestra si la regla está habilitada o deshabilitada.
 
 ![Deshabilitar regla](assets/disablerule.png)
 
@@ -751,23 +751,23 @@ Puede copiar y pegar una regla de un campo a otros campos similares para ahorrar
 
 Para copiar y pegar reglas, haga lo siguiente:
 
-1. Pulse el objeto de formulario del que desea copiar una regla y, en la barra de herramientas de componentes, pulse ![editar regla](assets/edit-rules-icon.svg). La interfaz de usuario del editor de reglas aparece con el objeto de formulario seleccionado y aparecen las reglas existentes.
+1. Seleccione el objeto de formulario del que desea copiar una regla y, en la barra de herramientas de componentes, seleccione ![editar regla](assets/edit-rules-icon.svg). La interfaz de usuario del editor de reglas aparece con el objeto de formulario seleccionado y aparecen las reglas existentes.
 
    ![copyrule](assets/copyrule.png)
 
    Para obtener información sobre la administración de reglas existentes, consulte [Administrar reglas](rule-editor.md#p-manage-rules-p).
 
-1. Seleccione la casilla de verificación situada junto al título de la regla. Aparecerán las opciones para administrar la regla. Pulse **[!UICONTROL Copiar]**.
+1. Seleccione la casilla de verificación situada junto al título de la regla. Aparecerán las opciones para administrar la regla. Seleccionar **[!UICONTROL Copiar]**.
 
    ![copyrule2](assets/copyrule2.png)
 
-1. Seleccione otro objeto de formulario al que desee pegar la regla y pulse **[!UICONTROL Pegar]**. Además, puede editar la regla para realizar cambios en ella.
+1. Seleccione otro objeto de formulario al que desee pegar la regla y seleccione **[!UICONTROL Pegar]**. Además, puede editar la regla para realizar cambios en ella.
 
    >[!NOTE]
    >
    >Puede pegar una regla en otro objeto de formulario solo si dicho objeto de formulario admite el evento de regla copiada. Por ejemplo, un botón admite el evento de clic. Puede pegar una regla con un evento de clic en un botón, pero no en una casilla de verificación.
 
-1. Pulse **[!UICONTROL Listo]** para guardar la regla.
+1. Seleccionar **[!UICONTROL Listo]** para guardar la regla.
 
 ## Expresiones anidadas {#nestedexpressions}
 
@@ -777,7 +777,7 @@ A continuación verá un ejemplo de una regla anidada que muestra un mensaje al 
 
 ![Expresión compleja](assets/complexexpression.png)
 
-También puede arrastrar y soltar condiciones dentro de una regla para editarla. Pulse y pase el ratón por encima del identificador ( ![controlador](assets/drag-handle.svg)) antes de una condición. Una vez que el puntero se convierta en el símbolo de mano como se muestra a continuación, arrastre y suelte la condición en cualquier lugar dentro de la regla. La estructura de la regla cambia.
+También puede arrastrar y soltar condiciones dentro de una regla para editarla. Seleccione y pase el ratón sobre el controlador ( ![manipular](assets/drag-handle.svg)) antes de una condición. Una vez que el puntero se convierta en el símbolo de mano como se muestra a continuación, arrastre y suelte la condición en cualquier lugar dentro de la regla. La estructura de la regla cambia.
 
 ![Arrastrar y soltar](assets/drag-and-drop.png)
 

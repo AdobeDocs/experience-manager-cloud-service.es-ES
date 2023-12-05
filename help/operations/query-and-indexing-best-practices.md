@@ -3,10 +3,10 @@ title: Prácticas recomendadas de consulta e indexación
 description: Aprenda a optimizar los índices y las consultas en función de las directrices de prácticas recomendadas de Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3127'
-ht-degree: 1%
+source-wordcount: '3088'
+ht-degree: 0%
 
 ---
 
@@ -171,7 +171,7 @@ Tenga en cuenta la siguiente consulta:
 
 ... que contiene -
 * 3 restricciones
-   * Tipo de nodo (`dam:Asset`)
+   * Nodetype (`dam:Asset`)
    * Ruta (descendientes de `/content/dam`)
    * Propiedad (`jcr:content/metadata/dc:title = "My Title"`)
 * Solicitud por parte de `jcr:created` propiedad
@@ -211,7 +211,7 @@ Consideración de una consulta diferente:
 
 ... que contiene -
 * 3 restricciones
-   * Tipo de nodo (`dam:Asset`)
+   * Nodetype (`dam:Asset`)
    * Ruta (descendientes de `/content/dam`)
    * Propiedad (`jcr:content/metadata/myProperty = "My Property Value"`)
 * Solicitud por parte de `jcr:created` property**
@@ -268,7 +268,7 @@ A continuación se presentan algunas prácticas recomendadas a tener en cuenta a
    * Utilice una etiqueta de índice en la definición del índice (y en la consulta asociada) y `selectionPolicy = tag` para asegurarse de que el índice solo se utiliza para las consultas deseadas.
    * Asegurar `queryPaths` y `includedPaths` se proporcionan ambos (normalmente con los mismos valores).
    * Uso `excludedPaths` para excluir rutas que no contendrán resultados útiles.
-   * Uso `analyzed` propiedades solo cuando es necesario, por ejemplo cuando necesita utilizar una restricción de consulta de texto completo únicamente para esa propiedad.
+   * Uso `analyzed` propiedades solo cuando es necesario, por ejemplo, cuando necesita utilizar una restricción de consulta de texto completo únicamente para esa propiedad.
    * Especificar siempre `async = [ async, nrt ] `, `compatVersion = 2` y `evaluatePathRestrictions = true`.
    * Especificar solo `nodeScopeIndex = true` si necesita un índice de texto completo de ámbito de nodo.
 

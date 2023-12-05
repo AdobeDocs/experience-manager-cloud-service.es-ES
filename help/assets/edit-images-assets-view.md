@@ -3,10 +3,10 @@ title: Edición de imágenes
 description: Edite imágenes mediante opciones que se sirven de [!DNL Adobe Photoshop Express] y guarde imágenes actualizadas como versiones.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 71%
+source-wordcount: '1136'
+ht-degree: 72%
 
 ---
 
@@ -91,7 +91,7 @@ Para editar imágenes con [!DNL Adobe Express] editor incrustado, siga los pasos
 
    ![editor incrustado de Adobe Express](assets/embedded-editor.png)
 
-   Puede aprovechar la funcionalidad de [!DNL Adobe Express] para realizar todas las acciones relacionadas con la edición de imágenes, como [redimensionar imagen](https://helpx.adobe.com/in/express/using/resize-image.html), [quitar o cambiar el color de fondo](https://helpx.adobe.com/in/express/using/remove-background.html), [recortar imagen](https://helpx.adobe.com/in/express/using/crop-image.html), y mucho más.
+   Puede utilizar la funcionalidad de [!DNL Adobe Express] para realizar todas las acciones relacionadas con la edición de imágenes, como [redimensionar imagen](https://helpx.adobe.com/in/express/using/resize-image.html), [quitar o cambiar el color de fondo](https://helpx.adobe.com/in/express/using/remove-background.html), [recortar imagen](https://helpx.adobe.com/in/express/using/crop-image.html), y mucho más.
 
 1. Una vez completada la edición de imágenes, puede descargar un recurso como nuevo o guardarlo como una nueva versión.
 

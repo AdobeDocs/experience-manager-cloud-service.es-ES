@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3489'
-ht-degree: 16%
+source-wordcount: '3431'
+ht-degree: 14%
 
 ---
 
@@ -37,7 +37,7 @@ Continúe leyendo para saber qué integraciones elegir entre el escritorio y el 
 | Simplifique la experiencia para creativos en equipos de escritorio | Optimice el acceso a los recursos desde DAM ([!DNL Assets]) para profesionales creativos, o más ampliamente, usuarios de escritorio que trabajan en aplicaciones nativas de creación de recursos. Necesitan una forma fácil y directa de descubrir, utilizar (abrir), editar y guardar cambios en Experience Manager y cargar nuevos archivos. | Windows o Mac para escritorio; aplicaciones de Creative Cloud |
 | Proporcionar recursos de alta calidad y listos para usar de [!DNL Adobe Stock] | Los especialistas en marketing ayudan a acelerar el proceso de creación de contenido al ayudar con la obtención y el descubrimiento de recursos. Los profesionales creativos utilizan los recursos aprobados desde sus herramientas creativas. | [!DNL Assets]; [!DNL Adobe Stock] marketplace; campos de metadatos |
 | Distribuir y compartir recursos por organizaciones | Los departamentos internos/sucursales locales y los socios externos, distribuidores y agencias utilizan los activos aprobados compartidos por la organización matriz. La organización desea compartir de forma segura y sin problemas los recursos creados para una reutilización más amplia. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
-| Generar automáticamente variaciones predefinidas de recursos cargados | Procese recursos automáticamente mediante la tecnología de transformación y gestión de medios única de Adobe para acciones predefinidas. Cree una lógica personalizada para definir sus propias acciones mediante API y microservicios de recursos. | [!DNL Assets]Interfaz de usuario |
+| Generar automáticamente variaciones predefinidas de recursos cargados | Procese recursos automáticamente mediante la tecnología de transformación y gestión de medios única de Adobe para acciones predefinidas. Cree una lógica personalizada para definir sus propias acciones mediante API y microservicios de recursos. | [!DNL Assets] interfaz de usuario |
 
 ## Ofertas de Adobes para satisfacer las necesidades de colaboración {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -57,7 +57,7 @@ Decidir qué capacidad utilizar
 
 ### Asignación de casos de uso y soluciones de Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
-| Caso de uso | Adobe Asset Link | Aplicación de escritorio de Experience Manager | Observaciones o métodos alternativos |
+| Caso de uso | Adobe Asset Link | aplicación de escritorio de Experience Manager | Observaciones o métodos alternativos |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Descubrir: examinar carpetas | Sí | IU web de Experience Manager + acciones de escritorio | Al examinar el recurso compartido de red, desactive las miniaturas para evitar la descarga de archivos binarios de recursos. |
 | Discover: acceso a colecciones | Sí | IU web de Experience Manager + acciones de escritorio |  |
@@ -99,7 +99,7 @@ Para admitir casos de uso de distribución de recursos, tenga en cuenta las sigu
 * **Cambio o actualización de recursos principales:** Un cambio en un recurso digital que requiere un trabajo considerable y que a veces debe hacerse durante un período de tiempo más largo. Generalmente incluye varios cambios. El recurso debe guardarse varias veces mientras se actualiza. Las principales actualizaciones de recursos suelen hacer que el recurso entre en una etapa de trabajo en curso.
 * **DAM**: Administración de recursos digitales. En este documento, es sinónimo de Experience Manager Assets, a menos que se mencione específicamente lo contrario.
 * **Usuario creativo:** Un profesional creativo que crea recursos digitales mediante las aplicaciones y los servicios de Creative Cloud. En algunos casos, un usuario creativo puede ser miembro de un equipo creativo que puede utilizar Creative Cloud, pero no crea recursos digitales (como un director creativo o un administrador de equipo creativo).
-* **Usuario de DAM:** Usuario típico de un sistema DAM. Según la organización, un usuario de DAM puede ser un usuario de marketing o no de marketing, por ejemplo un usuario de línea de negocios (LOB), bibliotecario, vendedor, etc.
+* **Usuario de DAM:** Usuario típico de un sistema DAM. Según la organización, un usuario de DAM puede ser un usuario de marketing o no de marketing, por ejemplo, un usuario de línea de negocios (LOB), bibliotecario, vendedor, etc.
 
 ### Consideraciones al utilizar la integración de Experience Manager y Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
@@ -220,7 +220,7 @@ Es posible que deba cargar simultáneamente un número mayor de archivos en DAM 
 * Carga de recursos proporcionados por agencias creativas
 * Cargar los recursos seleccionados de un conjunto mayor si la selección se realiza fuera de DAM
 
-Tenga en cuenta que esta descripción hace referencia a la carga de archivos operacionalmente (por ejemplo, cada semana o con cada sesión de fotos ), como parte normal del flujo de trabajo del usuario de escritorio. Las migraciones de recursos grandes no están cubiertas aquí.
+Esta descripción hace referencia a la carga de archivos de forma operativa (por ejemplo, cada semana o con cada sesión fotográfica ), como parte normal del flujo de trabajo del usuario de escritorio. Las migraciones de recursos grandes no están cubiertas aquí.
 
 Puede utilizar las siguientes capacidades de carga:
 

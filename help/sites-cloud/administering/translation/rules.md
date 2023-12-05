@@ -4,10 +4,10 @@ description: Descubra cómo las reglas de traducción identifican el contenido q
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -214,7 +214,7 @@ En la IU, puede marcar o desmarcar **Traducir** en la pestaña **Propiedades**.
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** se utiliza para propiedades que no tienen texto, sino códigos de idioma, por ejemplo `jcr:language`. El usuario no traduce texto sino la configuración regional del idioma de origen a destino. Estas propiedades no se envían para su traducción.
+**`updateDestinationLanguage`** se utiliza para propiedades que no tienen texto, sino códigos de idioma, por ejemplo, `jcr:language`. El usuario no traduce texto sino la configuración regional del idioma de origen a destino. Estas propiedades no se envían para su traducción.
 
 En la IU, puede marcar o desmarcar **Traducir** en la pestaña **Propiedades** para modificar este valor, pero para las propiedades específicas que tienen códigos de idioma como valor.
 

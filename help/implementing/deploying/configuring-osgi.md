@@ -3,10 +3,10 @@ title: Configurar OSGi para Adobe Experience Manager as a Cloud Service
 description: Configuración de OSGi con valores secretos y valores específicos del entorno
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3317'
-ht-degree: 2%
+source-wordcount: '3265'
+ht-degree: 1%
 
 ---
 
@@ -176,7 +176,7 @@ AEM Los archivos de configuración OSGi con formato JSON se pueden escribir a ma
 1. En su IDE, abra el `ui.apps` , busque o cree la carpeta de configuración (`/apps/.../config.<runmode>`), que identifica los modos de ejecución que debe aplicar la nueva configuración OSGi
 1. En esta carpeta de configuración, cree un `<PID>.cfg.json` archivo. El PID es la identidad persistente del componente OSGi. Normalmente es el nombre de clase completo de la implementación del componente OSGi. Por ejemplo:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Tenga en cuenta que los nombres de archivo de fábrica de configuración OSGi utilizan el `<factoryPID>-<name>.cfg.json` convención de nomenclatura
+Los nombres de archivo de fábrica de configuración OSGi utilizan el `<factoryPID>-<name>.cfg.json` convención de nomenclatura
 1. Abra el nuevo `.cfg.json` y defina las combinaciones de clave y valor para los pares de propiedad y valor OSGi, siguiendo el [Formato de configuración OSGi de JSON](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Guarde los cambios en el nuevo `.cfg.json` archivo
 1. Añada y confirme su nuevo archivo de configuración OSGi en Git
@@ -191,14 +191,14 @@ AEM AEM La consola web del Jar de inicio rápido de SDK de la se puede utilizar 
 
 1. AEM AEM Inicie sesión en la consola web de inicio rápido de Jar de la aplicación de inicio de sesión de la aplicación de en `https://<host>:<port>/system/console` como usuario administrador
 1. Vaya a **OSGi** > **Configuración**
-1. Para configurarlo, busque el componente OSGi y pulse su título para editarlo
+1. Para configurarlo, busque el componente OSGi y seleccione el título que desea editar
    ![Configuración de OSGi](./assets/configuring-osgi/configuration.png)
 1. Edite los valores de las propiedades de configuración de OSGi mediante la interfaz de usuario web según sea necesario
 1. Registre la identidad persistente (PID) en un lugar seguro. Esto se utiliza más adelante para generar el JSON de configuración de OSGi
-1. Pulse Guardar
+1. Seleccione Guardar
 1. Vaya a OSGi > Impresora de configuración del instalador OSGi
 1. Pegue el PID copiado en el paso 5 y asegúrese de que el formato de serialización está establecido en &quot;OSGi Configurator JSON&quot;.
-1. Pulse Imprimir
+1. Seleccione Imprimir
 1. La configuración de OSGi en formato JSON se mostrará en la sección Propiedades de configuración serializadas
    ![Impresora de configuración del instalador OSGi](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. En su IDE, abra el `ui.apps` , busque o cree la carpeta de configuración (`/apps/.../config.<runmode>`), que identifica los modos de ejecución que debe aplicar la nueva configuración OSGi.
@@ -316,7 +316,6 @@ Si una propiedad OSGi requiere valores diferentes para autor y para publicación
 * Separar `config.author` y `config.publish` Las carpetas OSGi deben usarse, tal como se describe en la sección [Sección Resolución de modo de ejecución](#runmode-resolution).
 * Existen dos opciones para crear los nombres de variables independientes que se deben utilizar:
    * la primera opción, que se recomienda: en todas las carpetas OSGi (como `config.author` y `config.publish`) declarado para definir valores diferentes, utilice el mismo nombre de variable. Por ejemplo
-
      `$[env:ENV_VAR_NAME;default=<value>]`, donde el valor predeterminado corresponde al valor predeterminado para ese nivel (autor o publicación). Al configurar la variable de entorno mediante [API de Cloud Manager](#cloud-manager-api-format-for-setting-properties) o a través de un cliente, diferencie entre los niveles utilizando el parámetro &quot;service&quot; como se describe en esta sección [Documentación de referencia del API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). El parámetro &quot;service&quot; enlazará el valor de la variable al nivel OSGi adecuado. Puede ser &quot;author&quot;, &quot;publish&quot; o &quot;preview&quot;.
    * la segunda opción, que es declarar distintas variables utilizando un prefijo como `author_<samevariablename>` y `publish_<samevariablename>`
 

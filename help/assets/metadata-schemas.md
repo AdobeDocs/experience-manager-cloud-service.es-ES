@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2638'
-ht-degree: 11%
+source-wordcount: '2627'
+ht-degree: 9%
 
 ---
 
@@ -43,12 +43,12 @@ Para ver una lista de formularios o plantillas, en [!DNL Experience Manager] int
 
 | Plantillas | | Descripción |
 |---|---|---|
-| [!UICONTROL predeterminada] | | El formulario de esquema de metadatos base para los recursos. |
+| [!UICONTROL predeterminado] | | El formulario de esquema de metadatos base para los recursos. |
 | | Los siguientes formularios secundarios heredan las propiedades del [!UICONTROL predeterminado] formulario: | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulario de esquema para vídeos de Dynamic Media. |
 | | <ul><li>[!UICONTROL imagen]</li></ul> | Formulario de esquema para imágenes con el tipo MIME como `image/jpeg` y `image/png`. <br> El [!UICONTROL imagen] El formulario tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL riña]: Formulario de esquema para los recursos con TIFF de subtipo.</li></ul> |
 | | <ul><li>[!UICONTROL aplicación]</li></ul> | Formulario de esquema para recursos con tipo MIME como `application/pdf` y `application/zip`. <br>[!UICONTROL pdf]: Formulario de esquema para recursos con PDF de subtipo. |
-| | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de esquema para recursos de vídeo con tipo MIME como `video/avi` y `video/mp4`. |
+| | <ul><li>[!UICONTROL video]</li></ul> | Formulario de esquema para recursos de vídeo con tipo MIME como `video/avi` y `video/mp4`. |
 | [!UICONTROL colección] | | Formulario de esquema para colecciones. |
 | [!UICONTROL contentfragment] | | Formulario de esquema para fragmentos de contenido. |
 | [!UICONTROL formularios] | | Este formulario de esquema está relacionado con [!DNL Adobe Experience Manager Forms]. |
@@ -91,15 +91,15 @@ El **[!UICONTROL Generar formulario]** La pestaña enumera los elementos de form
 | Nombre del componente | Descripción |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL Encabezado de sección] | Añada un encabezado de sección para una lista de componentes comunes. |
-| [!UICONTROL Texto de una sola línea] | Agregue una propiedad de texto de una sola línea. Se almacena como una cadena. |
-| [!UICONTROL Texto con varios valores] | Añada una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
+| [!UICONTROL Texto de línea única] | Agregue una propiedad de texto de una sola línea. Se almacena como una cadena. |
+| [!UICONTROL Texto con varios valores] | Agregue una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
 | [!UICONTROL Número] | Añada un componente de número. |
 | [!UICONTROL Fecha] | Añada un componente de fecha. |
-| [!UICONTROL Lista desplegable] | Añada una lista desplegable. |
-| [!UICONTROL Etiquetas estándar] | Añadir una etiqueta. |
+| [!UICONTROL Desplegable] | Añada una lista desplegable. |
+| [!UICONTROL Etiquetas estándar] | Añada una etiqueta. |
 | [!UICONTROL Etiquetas inteligentes] | Añada para aumentar las capacidades de búsqueda añadiendo automáticamente etiquetas de metadatos. |
 | [!UICONTROL Campo oculto] | Agregue un campo oculto. Se envía como parámetro de POST cuando se guarda el recurso. |
-| [!UICONTROL Recurso al que se hace referencia en] | Agregue este componente para ver la lista de recursos a los que hace referencia el recurso. |
+| [!UICONTROL Recurso al que hace referencia] | Agregue este componente para ver la lista de recursos a los que hace referencia el recurso. |
 | [!UICONTROL Referencia de recursos] | Agregar para mostrar una lista de recursos que hacen referencia al recurso. |
 | [!UICONTROL Referencias de productos] | Agregar para mostrar la lista de productos vinculados con el recurso. |
 | [!UICONTROL Metadatos de contexto] | Agregue para controlar la visualización de otras pestañas de metadatos en la página de propiedades de los recursos. |
@@ -223,12 +223,12 @@ Solo los recursos cargados en la carpeta a la que se aplica este esquema se ajus
 La herencia de metadatos por recursos se basa en el esquema aplicado a la carpeta de nivel superior en la jerarquía. Las subcarpetas aplican o heredan el mismo esquema. Si se aplica un esquema diferente en el nivel de subcarpeta, se detiene la herencia.
 
 1. Entrada [!DNL Experience Manager] interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
-1. Seleccione la casilla de verificación situada antes de un formulario, por ejemplo el formulario de metadatos predeterminado, y haga clic en **[!UICONTROL Copiar]** y guárdelo como un formulario personalizado. Especifique un nombre personalizado para el formulario, por ejemplo `my_default`. También puede crear un formulario personalizado.
+1. Seleccione la casilla de verificación situada antes de un formulario como, por ejemplo, el formulario de metadatos predeterminado y haga clic en **[!UICONTROL Copiar]** y guárdelo como un formulario personalizado. Especifique un nombre personalizado para el formulario, por ejemplo, `my_default`. También puede crear un formulario personalizado.
 
 1. En el **[!UICONTROL Forms de esquema de metadatos]** , seleccione la `my_default` y haga clic en **[!UICONTROL Editar]**.
 1. En el **[!UICONTROL Editor de esquemas de metadatos]** , agregue un campo de texto al formulario de esquema. Por ejemplo, agregue un campo con la etiqueta **[!UICONTROL Categoría]**.
 1. Haga clic en **[!UICONTROL Guardar]**. El formulario modificado aparece en la lista **[!UICONTROL Forms de esquema de metadatos]** página.
-1. Seleccionar **[!UICONTROL Aplicar a las carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
+1. Seleccionar **[!UICONTROL Aplicar a carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
 1. Seleccione la carpeta en la que desea aplicar el esquema modificado y, a continuación, seleccione **[!UICONTROL Aplicar]**.
 1. Si la carpeta tiene aplicado el otro esquema de metadatos, aparece un mensaje que advierte de que está a punto de sobrescribir el esquema de metadatos existente. Clic **Sobrescribir**.
 1. Clic **OK** para cerrar el mensaje de éxito.
@@ -245,7 +245,7 @@ Puede definir campos obligatorios en el nivel de carpeta, que se aplican a los r
 1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
 1. Guarde el formulario de metadatos predeterminado como un formulario personalizado. Por ejemplo, guárdelo como `my_default`.
 1. Edite el formulario personalizado. Añada un campo obligatorio. Por ejemplo, añada un **[!UICONTROL Categoría]** y haga que el campo sea obligatorio.
-1. Haga clic en **[!UICONTROL Guardar]**. El formulario modificado aparece en la lista **[!UICONTROL Forms de esquema de metadatos]** página. Seleccione el formulario y luego seleccione **[!UICONTROL Aplicar a las carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
+1. Haga clic en **[!UICONTROL Guardar]**. El formulario modificado aparece en la lista **[!UICONTROL Forms de esquema de metadatos]** página. Seleccione el formulario y luego seleccione **[!UICONTROL Aplicar a carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
 1. Vaya a la carpeta y cargue algunos recursos a los que les faltan metadatos para el campo obligatorio agregado al formulario personalizado. Se muestra un mensaje para los metadatos que faltan para el campo obligatorio en la vista de tarjeta del recurso.
 1. (Opcional) Acceso `https://[server]:[port]/system/console/components/`. Configuración y activación `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` componente que está desactivado de forma predeterminada. Establezca la frecuencia con la que el Experience Manager comprueba la validez de los metadatos de los recursos.
 

@@ -2,9 +2,9 @@
 title: ¿Cómo puedo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes principales?
 description: Aprenda a agregar nuevas configuraciones regionales para un formulario adaptable.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1333'
 ht-degree: 18%
 
 ---
@@ -74,7 +74,7 @@ Para añadir compatibilidad con una nueva configuración regional, siga estos pa
    git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
    ```
 
-   Reemplazar `<my-org>` y `<my-program>` en la URL anterior con el nombre de su organización y el nombre del programa. Para obtener instrucciones detalladas sobre cómo obtener el nombre de la organización, el nombre del programa o la ruta completa de su repositorio Git y las credenciales necesarias para clonar el repositorio, consulte la [Acceso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git) artículo.
+   Reemplazar `<my-org>` y `<my-program>` en la URL anterior con el nombre de su organización y el nombre del programa. Para obtener instrucciones detalladas sobre cómo obtener el nombre de la organización, el nombre del programa o la ruta completa de su repositorio Git y las credenciales necesarias para clonar el repositorio, consulte [Acceso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git) artículo.
 
    Después de completar correctamente el comando, cree una carpeta `<my-program>` se ha creado. Contiene el contenido clonado del repositorio de Git. En el resto del artículo, la carpeta se denomina, `[AEM Forms as a Cloud Service Git repository]`.
 

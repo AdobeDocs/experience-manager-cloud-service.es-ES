@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3528'
-ht-degree: 7%
+source-wordcount: '3555'
+ht-degree: 5%
 
 ---
 
@@ -42,7 +42,7 @@ Entrada **[!UICONTROL Máscara de enfoque]**, tiene las siguientes opciones de f
   </tr>
   <tr>
    <td>Radio</td>
-   <td>Determina el número de píxeles adyacentes a los píxeles de borde que afectarán al enfoque. En las imágenes de alta resolución, especifique un valor entre 1 y 2. Un valor bajo solo aplica enfoque a los píxeles de borde; un valor alto enfoca una banda más ancha de píxeles. El valor adecuado depende del tamaño de la imagen. El valor predeterminado es 0,2. El intervalo es de 0 a 250.</td>
+   <td>Determina el número de píxeles adyacentes a los píxeles de borde que afectarán al enfoque. Para imágenes de alta resolución, escriba de 1 a 2. Un valor bajo enfoca únicamente los píxeles de borde; un valor alto enfoca una banda más ancha de píxeles. El valor correcto depende del tamaño de la imagen. El valor predeterminado es 0,2. El intervalo es de 0 a 250.</td>
   </tr>
   <tr>
    <td>Umbral</td>
@@ -134,7 +134,7 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
    ![recorte](assets/crop.png)
 
-1. Seleccione **[!UICONTROL Guardar]**. El perfil creado aparece en la lista de perfiles disponibles.
+1. Seleccionar **[!UICONTROL Guardar]**. El perfil creado aparece en la lista de perfiles disponibles.
 
 ## Editar o eliminar perfiles de imagen de Dynamic Media {#editing-or-deleting-image-profiles}
 
@@ -178,7 +178,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 #### Aplicar perfiles de imagen de Dynamic Media a carpetas desde Propiedades {#applying-image-profiles-to-folders-from-properties}
 
-1. Pulse el logotipo de Experience Manager y vaya a **[!UICONTROL Assets]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]**.
 1. Vaya a *carpeta* (no es un recurso) al que desea aplicar un perfil de imagen.
 1. Según la vista en la que se encuentre, siga uno de estos procedimientos:
    * En la vista de tarjeta, pase el puntero sobre la carpeta y, a continuación, seleccione la marca de verificación para seleccionarla.
@@ -258,7 +258,7 @@ Después de editar un recorte inteligente y guardarlo, el cambio se propaga dond
 
 >[!IMPORTANT]
 >
->Cuando se realinea o se cambia el tamaño manualmente de la ventana de recorte inteligente de varios recursos, estas ediciones se mantienen y conservan, incluso si después se decide reprocesar dichos recursos. Sin embargo, si edita la anchura, la altura o ambas opciones en el área **[!UICONTROL Recorte de imagen adaptable]** del perfil de imagen, esos recursos se someterán a reprocesamiento.
+>Cuando se realinea o se cambia el tamaño manualmente de la ventana de recorte inteligente de varios recursos, dichas ediciones se mantienen y conservan, incluso si posteriormente se decide reprocesar dichos recursos. Sin embargo, si edita la anchura, la altura o ambas opciones en el área **[!UICONTROL Recorte de imagen adaptable]** del perfil de imagen, esos recursos se someterán a reprocesamiento.
 >Consulte [Volver a procesar los recursos de Dynamic Media en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Puede volver a ejecutar el recorte inteligente para generar los recortes adicionales de nuevo, si es necesario.

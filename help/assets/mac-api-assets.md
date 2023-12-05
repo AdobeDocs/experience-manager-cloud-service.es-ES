@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1587'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 ## Información general {#overview}
@@ -138,7 +138,7 @@ Una llamada de API falla con un `500` código de respuesta si el nodo principal 
 
 **Parámetros**: `name` es el nombre de la carpeta.
 
-**Solicitar**
+**Solicitud**
 
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
@@ -177,7 +177,7 @@ Crear una representación para un recurso. Si no se proporciona el nombre del pa
 
 **Parámetros**: los parámetros son `name` para el nombre de la representación y `file` como referencia de archivo.
 
-**Solicitar**
+**Solicitud**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
@@ -257,7 +257,7 @@ Mueve una carpeta o un recurso en la ruta determinada a un nuevo destino.
 
 Elimina un recurso (-tree) en la ruta proporcionada.
 
-**Solicitar**
+**Solicitud**
 
 * `DELETE /api/assets/myFolder`
 * `DELETE /api/assets/myFolder/myAsset.png`

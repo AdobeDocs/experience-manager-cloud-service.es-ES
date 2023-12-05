@@ -2,10 +2,10 @@
 title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencia Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 98%
+source-wordcount: '2035'
+ht-degree: 97%
 
 ---
 
@@ -68,7 +68,7 @@ Los fragmentos de experiencias deben usarse en las siguientes situaciones:
    * Incrustación de contenido en puntos de contacto de terceros.
 * Si tiene una experiencia con diferentes variaciones o representaciones.
    * Variaciones específicas del canal o del contexto.
-   * Experiencias que tiene sentido agrupar; por ejemplo, una campaña con distintas experiencias en diferentes canales.
+   * Experiencias que tiene sentido agrupar; por ejemplo, una campaña con diferentes experiencias en diferentes canales.
 * Al utilizar el comercio omnicanal.
    * Convertir los puntos de contacto en transaccionales.
 

@@ -5,10 +5,10 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 100%
+source-wordcount: '994'
+ht-degree: 98%
 
 ---
 
@@ -137,7 +137,7 @@ Es necesario ser administrador de AEM para eliminar los datos de usuario de las 
 
    1. Vaya a `https://'[server]:[port]'/aem/start.html` e inicie sesión con las credenciales de administrador.
    1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Instancias]**.
-   1. Seleccione las instancias de flujo de trabajo relevantes para el usuario y pulse **[!UICONTROL Finalizar]** para finalizar las instancias en ejecución.
+   1. Seleccione las instancias de flujo de trabajo relevantes para el usuario y seleccione **[!UICONTROL Finalizar]** para finalizar instancias en ejecución.
 
       Para obtener más información sobre cómo trabajar con instancias de flujo de trabajo, consulte [Administración de instancias de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=es#authoring).
 

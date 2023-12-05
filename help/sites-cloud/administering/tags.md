@@ -2,9 +2,9 @@
 title: Administración de etiquetas
 description: AEM Obtenga información sobre cómo administrar etiquetas en la de organizar el contenido.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2200'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ La consola de etiquetado se utiliza para crear y administrar etiquetas y sus tax
 Para acceder a la consola de etiquetado:
 
 1. Inicie sesión en un entorno de creación con privilegios administrativos.
-1. En el menú de navegación global, seleccione **`Tools`** > **`General`** ->
+1. En el menú de navegación global, seleccione **`Tools`** > **`General`** >
    **`Tagging`**.
 
 ![AEM La consola de etiquetado en la](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -91,7 +91,7 @@ Se utiliza un área de nombres para organizar otras etiquetas. Se puede consider
 
 1. Una vez introducida la información necesaria, seleccione **Crear**.
 
-Se crea el área de nombres. Tenga en cuenta que en la consola de etiquetado, las áreas de nombres se encuentran en el nivel inferior (en la columna del extremo izquierdo de la consola) y se representan mediante iconos de carpeta, lo que refleja su naturaleza como &quot;contenedor&quot; o agrupación de otras etiquetas.
+Se crea el área de nombres. En la consola de etiquetado, las áreas de nombres se encuentran en el nivel inferior (en la columna del extremo izquierdo de la consola) y se representan mediante iconos de carpeta, que reflejan su naturaleza como &quot;contenedor&quot; o agrupación de otras etiquetas.
 
 Ahora puede [crear nuevas etiquetas](#creating-tags) en esta área de nombres o [administrar etiquetas existentes.](#managing-tags)
 
@@ -163,7 +163,7 @@ Existen varias acciones que puede realizar en las etiquetas y áreas de nombres 
 * [Combinar](#merging-tags)
 * [Eliminar](#deleting-tags)
 
-Tenga en cuenta que cuando no hay suficiente espacio disponible en la barra de herramientas, hay opciones adicionales disponibles detrás del icono de puntos suspensivos.
+Cuando no hay suficiente espacio disponible en la barra de herramientas, hay opciones adicionales disponibles detrás del icono de puntos suspensivos.
 
 ### Visualización de propiedades de etiqueta {#viewing-tag-properties}
 
@@ -243,7 +243,7 @@ Puede resultar útil ver a qué contenido se aplica una etiqueta en particular. 
 
    ![Visualización de los detalles de las referencias de la etiqueta](assets/tag-references-detail.png)
 
-Pase el ratón o pulse una referencia al contenido en la lista para mostrar la ruta completa del contenido.
+Pase el ratón o seleccione un contenido de referencia en la lista para mostrar la ruta completa del contenido.
 
 Para obtener más información sobre la selección de los modos de visualización y el carril, consulte [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
@@ -304,7 +304,7 @@ Si la taxonomía de etiquetado cambia y hace que una etiqueta o área de nombres
 
 1. AEM Comprobaciones para asegurarse de que no se hace referencia a la etiqueta.
 
-   1. AEM Si no se encuentran referencias, se solicita una confirmación final para eliminar el elemento de la lista de referencias. Seleccione **Eliminar**
+   1. AEM Si no se encuentran referencias, se solicita una confirmación final para eliminar el elemento de la lista de referencias. Seleccionar **Eliminar**
 
       ![No se han encontrado referencias](assets/no-references-found.png)
 

@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo configurar Dynamic Media en Adobe 
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3794'
-ht-degree: 3%
+source-wordcount: '3811'
+ht-degree: 2%
 
 ---
 
@@ -107,7 +107,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. Seleccione **[!UICONTROL Guardar]**. Se guardarán la nueva contraseña y configuración de Dynamic Media. Si ha seleccionado **[!UICONTROL Cancelar]** en su lugar, no se actualiza la contraseña.
+1. Seleccionar **[!UICONTROL Guardar]**. Se guardarán la nueva contraseña y configuración de Dynamic Media. Si ha seleccionado **[!UICONTROL Cancelar]** en su lugar, no se actualiza la contraseña.
 1. En el **[!UICONTROL Configuración de Dynamic Media]** , seleccione **[!UICONTROL OK]** para comenzar la configuración.
 
    >[!IMPORTANT]
@@ -205,7 +205,7 @@ Cuando ejecuta Dynamic Media AEM en el servidor de correo electrónico, actualme
 
 1. En Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![13-16-02_08-2019](assets/2019-08-02_16-13-14.png)
 
 1. Se abre una nueva pestaña del explorador a la **[!UICONTROL Configuración de la consola web Adobe Experience Manager]** página.
 
@@ -262,7 +262,7 @@ Para configurar las propiedades de color predeterminadas para habilitar la corre
 1. Abra el [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), e inicie sesión en su cuenta con las credenciales proporcionadas durante el aprovisionamiento.
 1. Ir a **[!UICONTROL Configuración > Configuración de aplicación]**.
 1. Expanda el área **[!UICONTROL Ajustes de publicación]** y seleccione **[!UICONTROL Servidor de imágenes]**. Configure **[!UICONTROL Publicar contexto]** en **[!UICONTROL Servicio de imágenes]** cuando establezca los valores predeterminados para las instancias de publicación.
-1. Desplácese hasta la propiedad que debe cambiar; por ejemplo, una propiedad en **[!UICONTROL Atributos de gestión de color]** área.
+1. Desplácese hasta la propiedad que debe cambiar; por ejemplo, una propiedad de la variable **[!UICONTROL Atributos de gestión de color]** área.
 Se pueden definir las siguientes propiedades de corrección de color:
 
    | Propiedad | Descripción |
@@ -311,9 +311,9 @@ Consulte [Cargar recursos](/help/assets/add-assets.md).
 1. En la carpeta mimeTypes, seleccione un tipo MIME.
 1. En el lado derecho de la página del CRXDE Lite, en la parte inferior:
 
-   * Pulse dos veces el botón **[!UICONTROL activado]** field. De forma predeterminada, todos los tipos MIME de recursos están habilitados (establecidos en **[!UICONTROL true]**), lo que significa que los recursos se sincronizan con Dynamic Media para su procesamiento. Si desea excluir el procesamiento de este tipo MIME de recurso, cambie este ajuste a **[!UICONTROL false]**.
+   * Haga doble clic en **[!UICONTROL activado]** field. De forma predeterminada, todos los tipos MIME de recursos están habilitados (establecidos en **[!UICONTROL true]**), lo que significa que los recursos se sincronizan con Dynamic Media para su procesamiento. Si desea excluir el procesamiento de este tipo MIME de recurso, cambie este ajuste a **[!UICONTROL false]**.
 
-   * Pulsar dos veces **[!UICONTROL jobParam]** para abrir su campo de texto asociado. Consulte [Tipos MIME admitidos](/help/assets/file-format-support.md) para obtener una lista de valores de parámetros de procesamiento permitidos que puede utilizar para un tipo MIME determinado.
+   * Seleccionar dos veces **[!UICONTROL jobParam]** para abrir su campo de texto asociado. Consulte [Tipos MIME admitidos](/help/assets/file-format-support.md) para obtener una lista de valores de parámetros de procesamiento permitidos que puede utilizar para un tipo MIME determinado.
 
 1. Realice una de las siguientes acciones:
    * Repita los pasos del 3 al 4 para editar más tipos MIME.
@@ -330,13 +330,13 @@ Puede agregar tipos MIME personalizados para formatos no compatibles en Experien
 1. Inicie sesión en el Experience Manager as a Cloud Service como administrador del producto.
 1. En Experience Manager as a Cloud Service, vaya a **[!UICONTROL Herramientas > Operaciones > Consola web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![13-16-02_08-2019](assets/2019-08-02_16-13-14.png)
 
 1. Se abre una nueva pestaña del explorador a la **[!UICONTROL Configuración de la consola web Adobe Experience Manager]** página.
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. En la página, desplácese hacia abajo hasta el nombre *Servicio MIME de tipo de recurso de Adobe CQ Scene7* como se muestra en la siguiente captura de pantalla. A la derecha del nombre, pulse la opción **[!UICONTROL Editar los valores de configuración]** (icono de lápiz).
+1. En la página, desplácese hacia abajo hasta el nombre *Servicio MIME de tipo de recurso de Adobe CQ Scene7* como se muestra en la siguiente captura de pantalla. A la derecha del nombre, seleccione **[!UICONTROL Editar los valores de configuración]** (icono de lápiz).
 
    ![Editar los valores de configuración](assets/2019-08-02_16-44-56.png)
 
@@ -369,7 +369,7 @@ Puede agregar tipos MIME personalizados para formatos no compatibles en Experien
 
    ![Edición de un archivo DWG en CRXDE Lite](assets/crxdelite_cqdoc-14627.png)
 
-1. Con el tipo MIME `image_vnd.dwg` aún seleccionado, desde el **[!UICONTROL Propiedades]** , en la pestaña **[!UICONTROL activado]** fila, debajo de **[!UICONTROL Valor]** en el encabezado de la columna, pulse dos veces el valor. El **[!UICONTROL Valor]** se abre la lista desplegable.
+1. Con el tipo MIME `image_vnd.dwg` aún seleccionado, desde el **[!UICONTROL Propiedades]** , en la pestaña **[!UICONTROL activado]** fila, debajo de **[!UICONTROL Valor]** encabezado de columna, seleccione dos veces el valor. El **[!UICONTROL Valor]** se abre la lista desplegable.
 1. Tipo `false` en el campo (o seleccione **[!UICONTROL false]** de la lista desplegable).
 
    ![Edición de tipos MIME en CRXDE Lite](assets/2019-08-02_16-60-30.png)
@@ -474,7 +474,7 @@ La configuración de conexión de carga de Dynamic Media Classic (Scene7) sincro
 
 **Para actualizar el número máximo de conexiones de carga al servidor de Dynamic Media Classic (Scene7):**
 
-1. Navegue hasta `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Vaya a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el **[!UICONTROL Número de conexiones]** o el campo **[!UICONTROL Tiempo de espera del trabajo activo]** , o ambos, cambie el número como desee.
 
    El **[!UICONTROL Número de conexiones]** Esta opción controla la cantidad máxima de conexiones HTTP permitidas para la carga de Experience Manager a Dynamic Media. Normalmente, el valor predefinido de diez conexiones es suficiente.

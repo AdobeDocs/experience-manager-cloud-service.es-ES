@@ -4,10 +4,10 @@ description: Puede integrar formularios adaptables en una página de AEM Sites o
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3164'
-ht-degree: 98%
+source-wordcount: '3145'
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
-* **[Crear un formulario adaptable con plantillas aprobadas e incrustarlo en una página de AEM Sites](#embed-form-using-adaptive-form-wizzard-aem-sites):** puede aprovechar las plantillas aprobadas previamente para crear e incrustar rápidamente Formularios adaptables que se ajusten a las directrices de personalización de marca y los estándares de diseño de su organización.
+* **[Crear un formulario adaptable con plantillas aprobadas e incrustarlo en una página de AEM Sites](#embed-form-using-adaptive-form-wizzard-aem-sites):** Puede utilizar plantillas aprobadas previamente para crear e incrustar rápidamente Forms adaptables que se ajusten a las directrices de promoción de la marca y los estándares de diseño de su organización.
 
 * **[Añada formularios existentes a una página de AEM Sites](#embed-an-adaptive-form-in-sites-editor):** puede integrar fácilmente formularios que ya haya creado en sus sitios web, lo que permite a los visitantes interactuar con ellos directamente.
 
@@ -201,7 +201,7 @@ Para incrustar un formulario adaptable en una página de Sites, haga lo siguient
 
 1. Abra la página de AEM Sites en el modo de edición.
 1. Arrastre y suelte el componente **[!UICONTROL Formularios adaptables: incrustados (v2)]** del explorador de componentes a la página de Sites.
-1. Pulse el componente **[!UICONTROL Formularios adaptables: incrustados]** en la página de Sites y, a continuación, pulse en ![propiedades del Contenedor de formulario adaptable](/help/forms/assets/configure-icon.svg) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar formularios adaptables: incrustados (v2)]**.
+1. Seleccione el **[!UICONTROL Forms adaptable: incrustado]** en la página Sitios y seleccione ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar formularios adaptables: incrustados (v2)]**.
 1. Busque y seleccione el formulario adaptable para incrustarlo en la **[!UICONTROL Ruta de recursos]**.
 1. Guarde la configuración. El formulario adaptable está ahora incrustado en la página.
 
@@ -215,7 +215,7 @@ También puede ampliar la accesibilidad de los formularios incrustándolos en el
 
 1. Abra un Fragmento de experiencia en modo de edición.
 1. Arrastre y suelte el componente **[!UICONTROL Formularios adaptables: incrustados (v2)]** del explorador de componentes al Fragmento de experiencia.
-1. Pulse el componente **[!UICONTROL Formularios adaptables: incrustados]** en el Fragmento de experiencia y ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar formularios adaptables: incrustados (v2)]**.
+1. Seleccione el **[!UICONTROL Forms adaptable: incrustado]** en el Fragmento de experiencia y seleccione ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar formularios adaptables: incrustados (v2)]**.
 1. Busque y seleccione el formulario adaptable para incrustarlo en la **[!UICONTROL Ruta de recursos]**.
 1. Guarde la configuración. El formulario adaptable ahora está incrustado en el Fragmento de experiencia.
 
@@ -240,7 +240,7 @@ Para convertir un formulario adaptable en una página de AEM Sites en un Fragmen
    * **Acción:** seleccione crear un Fragmento de experiencia o añadir a un Fragmento de experiencia existente.
    * **Ruta principal:** especifique la ruta de la carpeta en la que se alojará el Fragmento de experiencia. La opción solo está disponible para crear un nuevo Fragmento de experiencia.
    * **Plantilla:** especifique la ruta de la plantilla del Fragmento de experiencia. Si no tiene una plantilla de fragmento de experiencia, [créela](/help/implementing/developing/extending/experience-fragments.md). La opción solo está disponible para agregar formularios adaptables a un Fragmento de experiencia existente.
-   * **Título del fragmento:** Especifique el título del Fragmento de experiencia. El título identifica de forma exclusiva un Fragmento de experiencia.
+   * **Título del fragmento:** Especifique el título del Fragmento de experiencia. El título identifica de forma exclusiva un fragmento de experiencia.
    * **Etiquetas del fragmento:** especifique la etiqueta del Fragmento de experiencia. La etiqueta identifica de forma exclusiva la categoría de un Fragmento de experiencia.
 
 ## Configurar las propiedades de incrustación del Formulario adaptable (v2)
@@ -311,9 +311,9 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
    >
    >Multiple Adaptive Forms - Embed components on a page are not supported.
 
-1. To create and embed a new form, on the component toolbar, tap the **Create Form** icon. A window to create the form opens. 
+1. To create and embed a new form, on the component toolbar, select the **Create Form** icon. A window to create the form opens. 
 
-1. Tap the embedded Adaptive Forms - Embed component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
+1. Select the embedded Adaptive Forms - Embed component in the sites page, and then select ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
 1. In the Edit Adaptive Forms - Embed dialog, specify the following.
 
     **Asset Type:** Select the type of asset to embed. 
@@ -357,7 +357,7 @@ Consideremos los siguientes escenarios a la hora de publicar un formulario adapt
 Para modificar cualquier configuración o propiedad del formulario adaptable incrustado, realice una de las siguientes acciones.
 
 * Abra el formulario original en Formularios adaptables en los respectivos editores y modifíquelo.
-* Pulse el formulario adaptable desde la página de Sites en el modo Edición y, a continuación, pulse **[!UICONTROL Editar en una nueva ventana]**. El formulario original se abrirá en el modo Edición, en el cual puede modificarlo.
+* Seleccione el formulario adaptable desde la página de Sites en el modo Edición y, a continuación, seleccione **[!UICONTROL Editar en una nueva ventana]**. El formulario original se abrirá en el modo Edición, en el cual puede modificarlo.
 
 >[!NOTE]
 >

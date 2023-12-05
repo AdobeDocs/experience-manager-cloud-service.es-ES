@@ -3,10 +3,10 @@ title: Consultas persistentes de GraphQL
 description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Experience Manager as a Cloud Service para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método HTTP GET y la respuesta se puede almacenar en caché en las capas de Dispatcher y la red de distribución de contenido (CDN), lo que a la larga mejora el rendimiento de las aplicaciones cliente.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 98%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
@@ -257,7 +257,7 @@ Esta consulta se puede mantener en una ruta `wknd/adventures-by-activity`. Para 
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-Tenga en cuenta que `%3B` es la codificación UTF-8 para `;` y `%3D` es la codificación para `=`. Las variables de consulta y los caracteres especiales deben ser [codificados correctamente](#encoding-query-url) para que se ejecute la consulta persistente.
+La codificación UTF-8 `%3B` es para `;` y `%3D` es la codificación para `=`. Las variables de consulta y los caracteres especiales deben ser [codificados correctamente](#encoding-query-url) para que se ejecute la consulta persistente.
 
 ## Almacenamiento en caché de las consultas persistentes {#caching-persisted-queries}
 
@@ -443,8 +443,8 @@ Para crear un paquete, haga lo siguiente:
 1. En el cuadro de diálogo Definición de paquete, en **General** introduzca un **Nombre** como “wknd-persistent-queries”.
 1. Escriba un número de versión como “1.0”.
 1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para la configuración `wknd` la ruta completa es `/conf/wknd/settings/graphql/persistentQueries`.
-1. Toque **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
-1. Pulse el botón **Generar** en la definición del paquete creada.
+1. Seleccionar **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
+1. Seleccione el **Generar** en la definición del paquete creada.
 
 Una vez creado el paquete, puede hacer lo siguiente:
 

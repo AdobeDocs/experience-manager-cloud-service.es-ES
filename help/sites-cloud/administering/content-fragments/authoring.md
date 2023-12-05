@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo crear contenido para los fragmento
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2266'
 ht-degree: 4%
 
 ---
@@ -190,7 +190,7 @@ Los campos definidos como Texto sin formato o Markdown tienen un cuadro de texto
 Para **[Texto de varias líneas](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** campos definidos como **Texto enriquecido**, hay varias funciones disponibles:
 
 * Edite el contenido:
-   * Deshacer, Rehacer
+   * Deshacer/Rehacer
    * Pegar/pegar como texto
    * Copiar
    * Seleccionar formato de párrafo

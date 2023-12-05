@@ -1,15 +1,15 @@
 ---
-title: Introducción a SPA en AEM usando React
+title: SPA AEM Introducción a la administración de la en React
 description: SPA SPA Este artículo presenta una aplicación de ejemplo para la creación de informes, explica cómo se crea y le permite ponerse en marcha con su propia aplicación de forma rápida mediante el marco de trabajo React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 10%
+source-wordcount: '1130'
+ht-degree: 5%
 
 ---
 
-# Introducción a SPA en AEM usando React {#getting-started-with-spas-in-aem-using-react}
+# SPA AEM Introducción a la administración de la en React {#getting-started-with-spas-in-aem-using-react}
 
 Las aplicaciones de una sola página (SPA) pueden ofrecer experiencias atractivas para los usuarios de sitios web. SPA AEM SPA Los desarrolladores quieren poder crear sitios utilizando marcos de trabajo de y los autores quieren editar contenido sin problemas en para un sitio creado con marcos de trabajo de la.
 
@@ -95,7 +95,7 @@ module.exports = {
 };
 ```
 
-### Compilando {#building}
+### Edificio {#building}
 
 La creación de la aplicación utiliza [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
 
@@ -262,7 +262,7 @@ Normalmente, es necesario que los componentes de una aplicación de una sola pá
 
 ## Pasos siguientes {#next-steps}
 
-* [Introducción a SPA en AEM usando Angular](getting-started-angular.md) muestra cómo se crea una SPA básica para trabajar con el Editor de SPA en AEM usando Angular.
+* [SPA AEM Introducción a la administración de la en el uso de Angular](getting-started-angular.md) SPA SPA AEM muestra cómo se crea una básica para trabajar con el Editor de en el uso de Angular.
 * La [Información general del Editor de SPA](editor-overview.md) profundiza en el modelo de comunicación entre AEM y el SPA.
 * [SPA Proyecto de WKND](wknd-tutorial.md) SPA AEM es un tutorial paso a paso sobre la implementación de un proyecto de simple en el sector de la.
 * [SPA Asignación de modelos dinámicos a componentes para la creación de](model-to-component-mapping.md) SPA AEM explica el modelo dinámico para la asignación de componentes y cómo funciona dentro de la asignación de componentes de la interfaz de usuario de la aplicación de datos en la.

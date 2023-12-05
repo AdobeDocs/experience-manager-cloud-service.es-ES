@@ -2,10 +2,10 @@
 title: Cómo agregar una nota al pie a un formulario adaptable
 description: Utilizar el editor de texto enriquecido (RTE) para notas al pie de página en un formulario adaptable.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 100%
+source-wordcount: '429'
+ht-degree: 96%
 
 ---
 
@@ -33,7 +33,7 @@ En formularios adaptables, la [!UICONTROL nota al pie] sirve para mostrar inform
 Para añadir una nota al pie en un formulario adaptable, siga estos pasos:
 1. Abra un formulario adaptable en el modo **Edición**.
 1. Desde el explorador de componentes, arrastre y suelte el componente **[!UICONTROL Texto]** en el formulario adaptable.
-1. Seleccione el componente **[!UICONTROL Texto]** que ha añadido y pulse ![cmppr](assets/configure-icon.svg) para editar sus propiedades.
+1. Seleccione el **[!UICONTROL Texto]** componente que ha añadido y seleccione ![cmppr](assets/configure-icon.svg) para editar sus propiedades.
 
    ![Nota al pie en formularios adaptables](/help/forms/assets/footnote_rte.png)
 

@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 100%
+source-wordcount: '746'
+ht-degree: 92%
 
 ---
 
@@ -31,14 +31,14 @@ Siga leyendo para obtener más información sobre el envío asincrónico en form
 
 Para configurar el envío asincrónico en un formulario adaptable:
 
-1. En el modo Autor del formulario adaptable, seleccione el objeto Contenedor de formulario y pulse ![cmppr1](assets/configure-icon.svg) para abrir sus propiedades.
+1. En el modo Autor del formulario adaptable, seleccione el objeto Contenedor de formulario y seleccione ![cmppr1](assets/configure-icon.svg) para abrir sus propiedades.
 1. En la sección de propiedades de **[!UICONTROL Envío]**, habilite **[!UICONTROL Usar envío asincrónico]**.
 1. En la sección **[!UICONTROL Al enviar]**, seleccione una de las siguientes opciones para realizarla cuando se envíe correctamente del formulario.
 
    * **[!UICONTROL Redirigir a URL]**: redirige a la URL o página especificada después de enviar el formulario. Puede especificar una URL o examinar y elegir la ruta a una página en el campo **[!UICONTROL URL/ruta de redireccionamiento]**.
    * **[!UICONTROL Mostrar mensaje]**: muestra un mensaje sobre el envío del formulario. Puede escribir un mensaje en el campo de texto debajo de la opción **[!UICONTROL Mostrar mensaje]**. El campo de texto admite el formato de texto enriquecido.
 
-1. Pulse ![check-button1](assets/save_icon.svg) para guardar las propiedades.
+1. Seleccionar ![check-button1](assets/save_icon.svg) para guardar las propiedades.
 
 ## Funcionamiento del envío asincrónico {#how-asynchronous-submission-works}
 
@@ -108,11 +108,11 @@ Los desarrolladores y autores de formularios pueden escribir reglas a nivel de f
 
 Realice los siguientes pasos para escribir reglas para controlar los eventos de éxito y error.
 
-1. Abra el formulario adaptable en el modo Autor, seleccione cualquier objeto de formulario y pulse ![edit-rules1](assets/edit-rules-icon.svg) para abrir el Editor de reglas.
-1. Seleccione **[!UICONTROL Formulario]** en el árbol Objetos de formulario y pulse **[!UICONTROL Crear]**.
+1. Abra el formulario adaptable en el modo Autor, seleccione cualquier objeto de formulario y seleccione ![edit-rules1](assets/edit-rules-icon.svg) para abrir el editor de reglas.
+1. Seleccionar **[!UICONTROL Form]** en el árbol Objetos de formulario y seleccione **[!UICONTROL Crear]**.
 1. Seleccione **[!UICONTROL Se ha enviado correctamente]** o **[!UICONTROL Error de envío]** en la lista desplegable **[!UICONTROL Seleccionar estado]**.
 1. Defina una acción **[!UICONTROL Entonces]** para el estado seleccionado. Por ejemplo, seleccione **[!UICONTROL Navegar a]** y después escriba o pegue una URL. También puede arrastrar cualquier función con la pestaña **[!UICONTROL Funciones]** a la regla.
 
    ![controlador de envío correcto](assets/form-submission-handler.png)
 
-1. Pulse **[!UICONTROL Listo]** para guardar la regla.
+1. Seleccionar **[!UICONTROL Listo]** para guardar la regla.

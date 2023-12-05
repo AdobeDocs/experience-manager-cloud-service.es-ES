@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 10%
+source-wordcount: '1059'
+ht-degree: 9%
 
 ---
 
@@ -70,11 +70,11 @@ El **[!UICONTROL Generar formulario]** La pestaña enumera los elementos de form
   </tr>
   <tr>
    <td><p>Texto de una sola línea</p> </td>
-   <td><p> Añada una propiedad de texto de una sola línea. Se almacena como una cadena.</p> </td>
+   <td><p> Agregue una propiedad de texto de una sola línea. Se almacena como una cadena.</p> </td>
   </tr>
   <tr>
    <td><p>Texto con varios valores</p> </td>
-   <td><p> Añada una propiedad de texto de varios valores. Se almacena como una matriz de cadenas.</p> </td>
+   <td><p> Agregue una propiedad de texto de varios valores. Se almacena como una matriz de cadenas.</p> </td>
   </tr>
   <tr>
    <td><p>Número</p> </td>
@@ -90,7 +90,7 @@ El **[!UICONTROL Generar formulario]** La pestaña enumera los elementos de form
   </tr>
   <tr>
    <td><p>Etiquetas estándar</p> </td>
-   <td><p> Añadir una etiqueta. </p> </td>
+   <td><p> Añada una etiqueta. </p> </td>
   </tr>
   <tr>
    <td><p>Campo oculto</p> </td>
@@ -141,7 +141,7 @@ Si configura un esquema de metadatos para una carpeta, la ruta al formulario de 
 
 1. Seleccione el [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]**> **[!UICONTROL Esquemas de metadatos de carpeta]**.
 1. En la página Forms del esquema de metadatos de carpeta, seleccione el formulario de esquema que desee aplicar a una carpeta.
-1. En la barra de herramientas, seleccione **[!UICONTROL Aplicar a las carpetas]**.
+1. En la barra de herramientas, seleccione **[!UICONTROL Aplicar a carpetas]**.
 
 1. Seleccione la carpeta en la que desea aplicar el esquema y, a continuación, seleccione **[!UICONTROL Aplicar]**. Si ya se ha aplicado un esquema de metadatos en la carpeta, un mensaje de advertencia le informa de que está a punto de sobrescribir el esquema de metadatos existente. Seleccionar **[!UICONTROL Sobrescribir]**.
 1. Abra las propiedades de metadatos de la carpeta a la que aplicó el esquema de metadatos.

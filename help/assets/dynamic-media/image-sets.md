@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 5%
+source-wordcount: '2145'
+ht-degree: 3%
 
 ---
 
@@ -148,7 +148,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/lim
 **Para crear conjuntos de imágenes:**
 
 1. En Adobe Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global.
-1. Tocar **[!UICONTROL Navegación]** > **[!UICONTROL Assets]**. Desplácese hasta donde desee crear un conjunto de imágenes y vaya a **[!UICONTROL Crear]** > **[!UICONTROL Conjunto de imágenes]** para abrir la página Editor de conjuntos de imágenes.
+1. Seleccionar **[!UICONTROL Navegación]** > **[!UICONTROL Assets]**. Desplácese hasta donde desee crear un conjunto de imágenes y vaya a **[!UICONTROL Crear]** > **[!UICONTROL Conjunto de imágenes]** para abrir la página Editor de conjuntos de imágenes.
 
    También puede crear el conjunto desde una carpeta que contenga los recursos.
 
@@ -164,7 +164,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/lim
 
    * Cerca del centro de la página Editor de conjuntos de imágenes, seleccione **[!UICONTROL Pulse para abrir el Selector de recursos]**.
 
-   Pulse para seleccionar los recursos que desea incluir en el conjunto de imágenes. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando termine, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
+   Seleccione para seleccionar los recursos que desea incluir en el conjunto de imágenes. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando termine, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
 
    Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y seleccionando **[!UICONTROL Volver]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, seleccione el **[!UICONTROL Filtrar]** en la barra de herramientas. Para cambiar la vista, seleccione el icono Ver y haga clic en **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]**, o **[!UICONTROL Vista de lista]**.
 
@@ -236,14 +236,13 @@ Puede realizar varias tareas de edición en conjuntos de imágenes, como las sig
 
    * Pase el ratón sobre un recurso de conjunto de imágenes y seleccione **[!UICONTROL Editar]** (icono de lápiz).
    * Pase el ratón sobre un recurso de conjunto de imágenes y seleccione **[!UICONTROL Seleccionar]** (icono de marca de verificación), y luego seleccione **[!UICONTROL Editar]** en la barra de herramientas.
-   * Pulse en un recurso de conjunto de imágenes y seleccione **[!UICONTROL Editar]** (icono de lápiz) en la barra de herramientas.
+   * Seleccione en un recurso de conjunto de imágenes y, a continuación, seleccione **[!UICONTROL Editar]** (icono de lápiz) en la barra de herramientas.
 
 1. Para editar las imágenes del conjunto de imágenes, realice una de las siguientes acciones:
 
    * Para reordenar los recursos, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover los elementos).
    * Para ordenar los elementos en orden ascendente o descendente, haga clic en el encabezado de la columna.
    * Para añadir un recurso o actualizar un recurso existente, haga clic en **[!UICONTROL Añadir recurso]**. Vaya a un recurso, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
-
      >[!NOTE]
      >
      >Si elimina la imagen que el Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
@@ -256,7 +255,7 @@ Puede realizar varias tareas de edición en conjuntos de imágenes, como las sig
    >
    >Puede editar las imágenes de un conjunto de imágenes. Vaya al conjunto y seleccione **[!UICONTROL Definir miembros]** en el carril izquierdo. Para abrir la ventana de edición, seleccione el icono Lápiz en un recurso.
 
-1. Tocar **[!UICONTROL Guardar]** cuando haya terminado de editar.
+1. Seleccionar **[!UICONTROL Guardar]** cuando haya terminado de editar.
 
 ## Previsualizar conjuntos de imágenes {#previewing-image-sets}
 

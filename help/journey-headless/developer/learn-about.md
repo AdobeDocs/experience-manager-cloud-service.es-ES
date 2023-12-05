@@ -2,10 +2,10 @@
 title: Obtenga más información acerca del desarrollo de CMS sin encabezado
 description: En esta parte del recorrido para desarrolladores de contenido sin encabezado de AEM, aprenda acerca de la tecnología sin encabezado y por qué la utilizaría.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 89%
+source-wordcount: '1626'
+ht-degree: 86%
 
 ---
 
@@ -56,7 +56,7 @@ Los usuarios esperan que haya participación independientemente de la plataforma
 
 El HEAD de cualquier sistema es generalmente el procesador de salida de dicho sistema, normalmente en forma de GUI u otra salida gráfica.
 
-Por ejemplo, es probable que un servidor sin periféricos esté sentado en una estantería en una sala de servidores en algún lugar y no tenga un monitor conectado. Para acceder a él, debe conectarse de forma remota. En este caso, el monitor es la cabeza, ya que se encarga de procesar el output del servidor. Usted, como consumidor del servicio, proporcione su propio monitor cuando se conecte de forma remota a él.
+Un servidor sin encabezado, por ejemplo, se encuentra probablemente en un rack en una sala de servidores en algún lugar y no tiene un monitor conectado. Para acceder a él, debe conectarse de forma remota. En este caso, el monitor es la cabeza, ya que se encarga de procesar el output del servidor. Usted, como consumidor del servicio, proporcione su propio monitor cuando se conecte de forma remota a él.
 
 Cuando hablamos de un CMS sin encabezado, el CMS administra el contenido y continúa entregándolo a los consumidores. Sin embargo, al entregar únicamente **contenido** de forma estandarizada, un CMS sin encabezado omite el procesamiento de salida final, dejando la **presentación** del contenido al servicio que lo consume.
 
@@ -68,7 +68,7 @@ Omitir el HEAD simplifica el CMS al eliminar la complejidad. Al hacerlo, tambié
 
 ## Desacoplamiento {#decoupling}
 
-La entrega sin encabezado es posible mediante la exposición de un conjunto de interfaces de programación de aplicaciones (API) sólidas y flexibles que todas las experiencias pueden aprovechar. La API sirve como idioma común entre los servicios, y los une en el ámbito del contenido mediante una entrega de contenido estandarizada, pero permitiéndoles la flexibilidad para implementar sus propias soluciones.
+La entrega sin encabezado es posible al exponer un conjunto de interfaces de programación de aplicaciones (API) sólidas y flexibles en las que todas las experiencias pueden seleccionar. La API sirve como idioma común entre los servicios, y los une en el ámbito del contenido mediante una entrega de contenido estandarizada, pero permitiéndoles la flexibilidad para implementar sus propias soluciones.
 
 El contenido sin encabezado es un ejemplo de desvinculación del contenido de su presentación. O en un sentido más genérico, desacoplando el front-end del back-end de su pila de servicios. En una configuración sin encabezado, el sistema de presentación (la cabeza) está desacoplada de la administración de contenido (la cola). Los dos únicamente interactúan mediante llamadas de API.
 

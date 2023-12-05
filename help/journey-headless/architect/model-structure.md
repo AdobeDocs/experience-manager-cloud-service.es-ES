@@ -2,10 +2,10 @@
 title: Obtenga información acerca de la creación de modelos de fragmento de contenido en AEM
 description: Obtenga información sobre los conceptos y la mecánica del contenido de modelado para su CMS sin periféricos usando modelos de fragmentos de contenido.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -28,7 +28,7 @@ Este artículo se basa en estos modelos para que pueda comprender cómo crear su
 <!--
 ## Enabling Content Fragment Models {#enabling-content-fragment-models}
 
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Creación de modelos de fragmento de contenido {#creating-content-fragment-models}
 
-A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en **Herramientas** -> **General** -> **Modelos de fragmento de contenido**.
+A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en **Herramientas** > **General** > **Modelos de fragmento de contenido**.
 
 ![Modelos de fragmento de contenido en Herramientas](assets/cfm-tools.png)
 

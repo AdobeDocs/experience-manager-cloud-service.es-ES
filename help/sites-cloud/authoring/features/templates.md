@@ -2,10 +2,10 @@
 title: Creación de plantillas de página
 description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no son tareas exclusivas de los desarrolladores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4535'
-ht-degree: 86%
+source-wordcount: '4523'
+ht-degree: 84%
 
 ---
 
@@ -95,11 +95,11 @@ Al crear una plantilla editable, debe hacer lo siguiente:
 
 ### Creación de una carpeta de plantillas: administrador {#creating-a-template-folder-admin}
 
-Se debe crear una carpeta de plantillas para su proyecto que contenga las plantillas específicas del proyecto. Es una tarea de administración que se describe en el documento [Plantillas de páginas](/help/implementing/developing/components/templates.md#template-folders).-->
+Se debe crear una carpeta de plantillas para su proyecto que contenga las plantillas específicas del proyecto. Es una tarea de administración que se describe en el documento [Plantillas de página](/help/implementing/developing/components/templates.md#template-folders).
 
 ### Creación de una plantilla nueva: autor de plantillas {#creating-a-new-template-template-author}
 
-1. Abra la **Consola de plantillas** (que encontrará en **Herramientas ->** **General**) y navegue a la carpeta requerida.
+1. Abra el **Consola de plantillas** (a través de **Herramientas >** **General**) y luego vaya a la carpeta requerida.
 
    >[!NOTE]
    >
@@ -143,7 +143,7 @@ Una plantilla puede tener las siguientes propiedades:
 * Título
    * Un título utilizado para identificar la plantilla, como en el asistente **Crear página**.
 * Descripción
-   * Una descripción opcional para proporcionar más información sobre la plantilla y su uso, que puede verse, por ejemplo, en el asistente de **Crear página**.
+   * Una descripción opcional para proporcionar más información acerca de la plantilla y su uso, que se puede ver, por ejemplo, en la **Crear página** asistente.
 
 Para ver o editar las propiedades:
 
@@ -415,7 +415,7 @@ Por ejemplo, para un componente de imagen, puede definir la proporción del reco
 
 >[!CAUTION]
 >
->Tenga en cuenta que, en AEM, las proporciones de recorte se definen como **altura/anchura**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios de creación de páginas no notarán ninguna diferencia siempre que defina claramente el **Nombre**, ya que esto es lo que se muestra en la interfaz de usuario.
+>AEM En las proporciones de recorte se definen como **alto/ancho**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios de creación de páginas no notarán ninguna diferencia siempre que defina claramente el **Nombre**, ya que esto es lo que se muestra en la interfaz de usuario.
 
 >[!NOTE]
 >
@@ -459,7 +459,7 @@ En la pestaña **Componentes permitidos**, defina los componentes disponibles pa
 
 ###### Componentes predeterminados {#default-components}
 
-En la pestaña **Componentes predeterminados**, puede definir qué componentes se asocian automáticamente a determinados tipos de medios, de modo que cuando un autor arrastre un recurso desde el navegador de recursos, AEM sabe a qué componente debe asociarlo. Tenga en cuenta que solo los componentes con zonas desplegables están disponibles para esta configuración.
+En la pestaña **Componentes predeterminados**, puede definir qué componentes se asocian automáticamente a determinados tipos de medios, de modo que cuando un autor arrastre un recurso desde el navegador de recursos, AEM sabe a qué componente debe asociarlo. Solo están disponibles para esta configuración los componentes con zonas de colocación.
 
 Seleccionar **Agregar asignación** para agregar un componente completamente nuevo y una asignación de tipo MIME.
 

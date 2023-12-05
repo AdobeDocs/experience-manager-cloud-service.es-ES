@@ -2,10 +2,10 @@
 title: Cómo hacer un lanzamiento con su aplicación sin encabezado
 description: En esta parte del recorrido para desarrolladores de AEM sin encabezado, aprenda a implementar un lanzamiento de la aplicación sin encabezado tomando su código local en Git y mudándolo a Cloud Manager Git para la canalización de integración continua/entrega continua (CI/CD).
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 96%
+source-wordcount: '1060'
+ht-degree: 91%
 
 ---
 
@@ -83,7 +83,7 @@ Para que los usuarios tengan la mejor experiencia posible al utilizar la aplicac
       * Comprobar el número de usuarios, solicitudes y cargas
 * Acceso a informes de rendimiento específicos de aplicaciones y de espacio
    * Una vez que el servidor esté activo, compruebe si las métricas generales son verdes, naranjas o rojas y, a continuación, identifique los problemas específicos de la aplicación.
-   * Abra los mismos informes filtrados anteriormente en la aplicación o el espacio (por ejemplo, escritorio de Photoshop, muro de pago).
+   * Abra los mismos informes que los filtrados a la aplicación o al espacio (por ejemplo, Photoshop Desktop, Paywall)
    * Utilice las API de registro de Splunk para acceder al rendimiento del servicio y de la aplicación.
    * Póngase en contacto con asistencia al cliente en caso de que surjan otros problemas.
 
@@ -124,7 +124,7 @@ Ya ha iniciado su primer proyecto de AEM sin encabezado o ahora tiene los conoci
 
 ### Explorar aplicaciones de una sola página {#explore-spa}
 
-Sin embargo, las tiendas sin encabezado de AEM no tienen que detenerse aquí. Tal vez recuerde que en la [parte de introducción del recorrido](getting-started.md#integration-levels) analizamos brevemente cómo AEM no solo admite entregas sin encabezado y modelos de pila completa tradicionales, sino que también puede admitir modelos híbridos que combinan las ventajas de ambos.
+Sin embargo, las tiendas sin encabezado de AEM no tienen que detenerse aquí. Quizás recuerde en el [Introducción como parte del recorrido](getting-started.md#integration-levels) AEM hemos discutido brevemente cómo el sistema no solo admite la entrega sin encabezado y los modelos tradicionales full-stack, sino que también puede admitir modelos híbridos que combinan las ventajas de ambos.
 
 Si este es el tipo de flexibilidad que necesita para su proyecto, continúe con la parte opcional adicional del recorrido, [Cómo crear aplicaciones de una sola página (SPA) con AEM.](create-spa.md)
 

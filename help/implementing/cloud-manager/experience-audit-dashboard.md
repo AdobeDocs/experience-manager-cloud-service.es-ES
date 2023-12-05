@@ -2,9 +2,9 @@
 title: Tablero de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO a través de una interfaz de panel clara e informativa.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '824'
 ht-degree: 22%
 
 ---
@@ -77,7 +77,7 @@ En el **Puntuaciones de Lighthouse** , encontrará una vista de tendencias de la
 
 ![Gráfico de puntuaciones de Lighthouse](assets/lighthouse-scores.png)
 
-Tenga en cuenta que cada punto del gráfico es el promedio de todas las implementaciones en el mes de interés.
+Cada punto del gráfico es el promedio de todas las implementaciones en el mes de interés.
 
 Para volver a la página de ejecución de la canalización de producción, simplemente seleccione la flecha hacia atrás en el explorador.
 

@@ -2,10 +2,10 @@
 title: Pruebas de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 90%
+source-wordcount: '585'
+ht-degree: 82%
 
 ---
 
@@ -35,7 +35,7 @@ La auditoría de experiencias está equipada con Google Lighthouse, una herramie
 
 >[!INFO]
 >
->A partir del 31 de agosto de 2023, la auditoría de experiencias pasará a mostrar resultados específicos de la plataforma móvil. Tenga en cuenta que las métricas de rendimiento móviles suelen registrar un rendimiento inferior al de los equipos de escritorio, por lo que debe anticipar un cambio en el rendimiento informado después de este cambio.
+>A partir del 31 de agosto de 2023, la auditoría de experiencias pasará a mostrar resultados específicos de la plataforma móvil. Las métricas de rendimiento de Mobile suelen registrar menos que las de los equipos de escritorio, por lo que debería anticipar un cambio en el rendimiento del informe después de este cambio.
 
 >[!TIP]
 >
@@ -58,11 +58,11 @@ Hay una puntuación a nivel agregado para cada tipo de prueba, como rendimiento,
 
 La métrica de cambios puede tener uno de los siguientes valores.
 
-* **Valor positivo**: Las páginas han mejorado en la prueba seleccionada desde la última ejecución de la canalización de producción.
+* **Valor positivo** : Las páginas han mejorado en la prueba seleccionada desde que se ejecutó la última canalización de producción.
 
-* **Valor negativo**: Las páginas han retrocedido en la prueba seleccionada desde que se ejecutó la última canalización de producción.
+* **Valor negativo** : las páginas han retrocedido en la prueba seleccionada desde que se ejecutó la última canalización de producción.
 
-* **Sin cambio**: Las páginas tienen la misma puntuación desde que se ejecutó la última canalización de producción.
+* **Sin cambios** : Las páginas tienen la misma puntuación desde que se ejecutó la última canalización de producción.
 
 * **N/D**: No había ninguna puntuación disponible para comparar.
 
