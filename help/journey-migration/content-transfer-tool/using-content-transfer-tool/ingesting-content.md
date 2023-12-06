@@ -2,10 +2,10 @@
 title: Ingesta de contenido en Cloud Service
 description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 5%
+source-wordcount: '2313'
+ht-degree: 4%
 
 ---
 
@@ -93,6 +93,12 @@ Comience creando un trabajo de ingesta y asegúrese de que **Barrido** se desact
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## Solución de problemas {#troubleshooting}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_troubleshooting"
+>title="Solución de problemas de ingesta de contenido"
+>abstract="Consulte los registros de ingesta y la documentación para encontrar soluciones a los motivos comunes por los que una ingesta puede fallar, encontrar la forma de solucionar el problema y ejecutar la ingesta de nuevo."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Validación de transferencias de contenido"
 
 ### CAM no puede recuperar el token de migración {#cam-unable-to-retrieve-the-migration-token}
 
