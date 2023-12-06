@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1866'
 ht-degree: 1%
 
 ---
@@ -215,10 +215,9 @@ CIF Para inicializar los componentes principales y de Peregrine basados en React
            baseUrl: storeConfig.storeRootUrl
        },
        eventsCollector: {
-           // Enable the Experience Platform Connector and define the org and datastream to use
-           aep: {
-               orgId: // TODO: add your orgId
-               datastreamId: // TODO: add your datastreamId
+           eventForwarding: {
+               commerce: true,
+               aep: false,
            }
        }
    };
@@ -432,7 +431,7 @@ Después de completar la configuración del Experience Platform anterior, debe t
 
 ## Déclencheur `addToCart` y verificar la recopilación de datos {#event-trigger-verify}
 
-AEM Los pasos anteriores completan la configuración de comercio y Experience Platform de la. Ahora puede almacenar en déclencheur una `addToCart` y comprobar la recopilación de datos con el depurador de Experience Platform y el conjunto de datos __Métricas y gráficos__ en la interfaz de usuario del producto.
+AEM Los pasos anteriores completan la configuración de comercio y Experience Platform de la. Ahora puede almacenar en déclencheur una `addToCart` y compruebe la recopilación de datos con el evento [Inspector quitanieves](https://chromewebstore.google.com/detail/snowplow-inspector/maplkdomeamdlngconidoefjpogkmljm?pli=1) y conjunto de datos __Métricas y gráficos__ en la interfaz de usuario del producto.
 
 Para almacenar en déclencheur AEM el evento, puede utilizar el autor de la publicación o el servicio de publicación desde la configuración local de, o bien utilizar el autor de la publicación desde la configuración local de. AEM Para este ejemplo, inicie sesión en su cuenta para utilizar el autor de la.
 
@@ -443,9 +442,7 @@ Para almacenar en déclencheur AEM el evento, puede utilizar el autor de la publ
 1. Haga clic en cualquier tarjeta de producto preferida de __Página de productos__, luego seleccione __color, tamaño__ para habilitar el __Añadir al carro__ botón.
 
 
-1. Abra el __Adobe Experience Platform Debugger__ en el panel de extensiones del explorador y seleccione. __SDK de Experience Platform Wed__ en el carril izquierdo.
-
-   ![Depurador de AEP](../assets/aep-integration/AEP-Debugger.png)
+1. Abra el __Inspector quitanieves__ en el panel de extensiones del explorador y seleccione. __SDK de Experience Platform Wed__ en el carril izquierdo.
 
 
 1. Vuelva a la __Página de productos__ y haga clic en __Añadir al carro__ botón. Esto envía datos al Experience Platform. El __Adobe Experience Platform Debugger__ La extensión muestra los detalles del evento.
@@ -462,9 +459,9 @@ Para almacenar en déclencheur AEM el evento, puede utilizar el autor de la publ
 
 ## Detalles de implementación {#implementation-details}
 
-El [CIF Conector del Experience Platform de](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) se basa en el [Conector de Experience Platform para Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), que forma parte del [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) proyecto.
+El [CIF Conector del Experience Platform de](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) se basa en el [Conexión de datos para Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), que forma parte del [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) proyecto.
 
-El proyecto PWA Studio permite crear tiendas de Progressive Web Application (PWA) con Adobe Commerce o Magento Open Source. El proyecto también contiene una biblioteca de componentes llamada [Peregrina](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) para agregar lógica a los componentes visuales. El [Biblioteca Peregrina](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) también proporciona los vínculos React personalizados que utilizan [Conector del Experience Platform](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) para integrarse perfectamente con Experience Platform.
+El proyecto PWA Studio permite crear tiendas de Progressive Web Application (PWA) con Adobe Commerce o Magento Open Source. El proyecto también contiene una biblioteca de componentes llamada [Peregrina](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) para agregar lógica a los componentes visuales. El [Biblioteca Peregrina](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) también proporciona los vínculos React personalizados que utilizan [CIF Conector del Experience Platform de](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) para integrarse perfectamente con Experience Platform.
 
 
 ## Eventos admitidos {#supported-events}
