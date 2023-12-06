@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 7aeab6ab7dcd933a1d02514b6eea752527055c77
 workflow-type: tm+mt
-source-wordcount: '4863'
-ht-degree: 91%
+source-wordcount: '4910'
+ht-degree: 90%
 
 ---
 
@@ -1035,6 +1035,15 @@ Para acceder al punto de conexión de GraphQL desde un sitio web externo, debe c
 ## Autenticación {#authentication}
 
 Consulte [Autenticación para consultas de GraphQL de AEM remotas en fragmentos de contenido](/help/headless/security/authentication.md).
+
+## Restricciones {#limitations}
+
+Para protegerse de posibles problemas, se han impuesto limitaciones predeterminadas a las consultas:
+
+* La consulta no puede contener más de 1 millón de caracteres (1024 * 1024)
+* La consulta no puede contener más de 15000 tokens
+* La consulta no puede contener más de 200000 tokens de espacio en blanco
+* La profundidad de la consulta no puede superar los 500
 
 ## Preguntas frecuentes {#faqs}
 
