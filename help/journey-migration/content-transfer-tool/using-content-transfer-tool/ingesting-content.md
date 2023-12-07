@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Cloud Service
 description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
+source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2315'
 ht-degree: 4%
 
 ---
@@ -132,8 +132,8 @@ Este mensaje indica que Cloud Acceleration Manager no pudo llegar al servicio de
 
 * AEM El as a Cloud Service mantiene el estado del entorno y, ocasionalmente, debe reiniciar el servicio de migración por varios motivos normales. Si ese servicio se está reiniciando, no se podrá acceder a él, pero estará disponible en algún momento.
 * Es posible que se esté ejecutando otro proceso en la instancia. Por ejemplo, si [AEM Actualizaciones de versión de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) está aplicando una actualización, el sistema puede estar ocupado y el servicio de migración no está disponible regularmente. Una vez completado ese proceso, se puede volver a intentar iniciar la ingesta.
-* Si un [Se ha aplicado la Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) a través de Cloud Manager, impide que Cloud Acceleration Manager llegue al servicio de migración. No se puede añadir una dirección IP para ingestas porque es dinámica. Actualmente, la única solución es deshabilitar la lista de permitidos IP mientras se ejecuta la ingesta.
-* Puede haber otras razones que requieren investigación. Si la ingesta sigue fallando, póngase en contacto con el Servicio de atención al cliente de Adobe.
+* Si un [Se ha aplicado la Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) a través de Cloud Manager, impide que Cloud Acceleration Manager llegue al servicio de migración. No se puede añadir una dirección IP para ingestas porque es dinámica. Actualmente, la única solución es deshabilitar la lista de permitidos de IP durante el proceso de ingesta e indexación.
+* Puede haber otras razones que requieren investigación. Si la ingesta o la indexación siguen fallando, póngase en contacto con el Servicio de atención al cliente de Adobe.
 
 ### AEM Actualizaciones e ingestas de versiones de
 
