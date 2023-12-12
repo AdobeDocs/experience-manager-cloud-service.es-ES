@@ -1,11 +1,11 @@
 ---
 title: ¿Cómo utilizo el modo Diseño para cambiar el tamaño de los componentes de los formularios adaptables?
 description: Defina la posición de los componentes de AEM Forms, aprenda a acceder al modo de diseño, cambie el tamaño de los componentes, cambie el tamaño de los paneles y defina el diseño de varias columnas para un panel.
-feature: Adaptive Forms
 role: User
 level: Intermediate
+feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 76%

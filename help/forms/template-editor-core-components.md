@@ -1,12 +1,13 @@
 ---
 title: Crear una plantilla de formulario adaptable basada en el componente principal
 description: Cree plantillas de formulario adaptable basadas en componentes principales para definir la estructura básica y el contenido inicial con el Editor de plantillas.
+feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1961'
-ht-degree: 53%
+ht-degree: 56%
 
 ---
 
@@ -200,7 +201,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### Agregar propiedades personalizadas a componentes de formulario adaptable mediante una directiva de plantilla
 
-Las propiedades personalizadas le permiten asociar atributos personalizados (pares clave-valor) a un componente principal del formulario adaptable mediante la plantilla de formulario. Las propiedades personalizadas se reflejan en la variable **[!UICONTROL propiedades]** de la representación sin encabezado del componente. Permite crear un comportamiento de formulario dinámico que se adapta en función de los valores de atributos personalizados. Por ejemplo, los desarrolladores pueden diseñar varias representaciones de un componente Forms sin encabezado para plataformas móviles, de escritorio o web, lo que mejora significativamente la experiencia del usuario en una amplia gama de dispositivos.
+Las propiedades personalizadas le permiten asociar atributos personalizados (pares clave-valor) a un componente principal del formulario adaptable mediante la plantilla de un formulario. Las propiedades personalizadas se reflejan en la variable **[!UICONTROL propiedades]** de la representación sin encabezado del componente. Permite crear un comportamiento de formulario dinámico que se adapta en función de los valores de atributos personalizados. Por ejemplo, los desarrolladores pueden diseñar varias representaciones de un componente Forms sin encabezado para plataformas móviles, de escritorio o web, lo que mejora significativamente la experiencia del usuario en una amplia gama de dispositivos.
 
 Los pasos para agregar propiedades personalizadas a los campos de componente principal del formulario adaptable son los siguientes:
 

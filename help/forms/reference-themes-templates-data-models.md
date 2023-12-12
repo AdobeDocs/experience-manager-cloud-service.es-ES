@@ -1,11 +1,12 @@
 ---
 title: AEM ¿Cómo se obtienen las temáticas y plantillas de referencia para los formularios de?
 description: AEM Forms proporciona temáticas de formularios adaptables, plantillas y modelos de datos de formulario de ejemplo para ayudarle a crear formularios rápidamente.
+feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 86%
+source-wordcount: '772'
+ht-degree: 94%
 
 ---
 
@@ -14,10 +15,10 @@ ht-degree: 86%
 
 | Se aplica a | Vínculo del artículo |
 | -------- | ---------------------------- |
-| Formulario adaptable basado en componentes principales | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| Formulario adaptable basado en componentes principales | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) |
 | Formulario adaptable basado en componentes de base | Este artículo |
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) o [adición de Formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 AEM Forms as a Cloud Service proporciona varias temáticas, plantillas y modelos de datos de formulario de referencia para ayudarle a empezar rápidamente a crear formularios adaptables. Puede descargar el [paquete de contenido de referencia del portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/es/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) y usar el [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) para instalar el [paquete de contenido de referencia](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/es/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) en su entorno de producción, desarrollo o desarrollo local. Así, podrá conseguir estos activos de referencia.
 

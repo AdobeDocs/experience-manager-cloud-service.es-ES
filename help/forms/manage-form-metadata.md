@@ -1,17 +1,18 @@
 ---
 title: ¿Cómo se pueden administrar los metadatos de AEM Forms?
 description: Los metadatos facilitan la categorización y organización de los recursos y ayudan a los usuarios que buscan un recurso específico.
+feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '1742'
-ht-degree: 94%
+source-wordcount: '1733'
+ht-degree: 98%
 
 ---
 
 # Adición, eliminación o edición de metadatos de un formulario adaptable {#manage-form-metadata}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 
 | Versión | Vínculo del artículo |

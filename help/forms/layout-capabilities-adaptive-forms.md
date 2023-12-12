@@ -1,8 +1,9 @@
 ---
 title: ¿Cuáles son las capacidades de diseño de Adaptive Forms?
 description: El diseño y el aspecto visual de los formularios adaptables en diferentes dispositivos se rigen por la configuración de diseño. Obtenga información sobre los distintos diseños y cómo aplicarlos.
+feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 93%

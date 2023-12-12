@@ -2,8 +2,9 @@
 title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias
 keywords: Obtenga información sobre cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de sharepoint, conectar un formulario adaptable a una biblioteca de documentos de sharepoint, conectar un formulario adaptable al modelo de datos de formulario
+feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: e9110b5f5b46d38712b7462490afc1052fb8d00c
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '4114'
 ht-degree: 87%

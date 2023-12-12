@@ -1,8 +1,9 @@
 ---
 title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
+feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 738a0ceeb0a8cc9b08a1871ef3b2939cbcf2f80a
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '3913'
 ht-degree: 88%

@@ -4,9 +4,9 @@ description: AEM Forms proporciona controladores de éxitos y de errores predete
 keywords: Añadir un controlador de errores personalizado, añadir un controlador de errores predeterminado, añadir un controlador de errores en el formulario, utilizar el servicio de invocación del editor de reglas para añadir un controlador de errores personalizado, configurar el editor de reglas para añadir un controlador de errores personalizado y añadir un controlador de errores personalizado mediante el editor de reglas
 contentOwner: Ruchita Srivastav
 content-type: reference
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2329'
 ht-degree: 96%

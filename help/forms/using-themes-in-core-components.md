@@ -1,8 +1,9 @@
 ---
 title: ¿Cómo se pueden crear y utilizar temáticas en el Forms adaptable?
 description: Puede utilizar temáticas para aplicar estilos y proporcionar una identidad visual a un formulario adaptable mediante componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
+feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 17%

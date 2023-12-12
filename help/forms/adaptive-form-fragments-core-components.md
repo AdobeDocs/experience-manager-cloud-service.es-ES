@@ -3,9 +3,9 @@ title: ¿Qué son los fragmentos de formulario adaptable?
 description: Los formularios adaptables proporcionan un mecanismo para crear un segmento de formulario, como un panel o un grupo de campos, para utilizarlo en cualquier formulario adaptable. También puede guardar un panel existente como fragmento.
 topic-tags: author
 keywords: Agregar fragmentos de formulario adaptable, fragmentos de formulario adaptable, Crear un fragmento de formulario, Agregar un fragmento a un formulario adaptable, Administrar fragmentos
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1768'
 ht-degree: 91%

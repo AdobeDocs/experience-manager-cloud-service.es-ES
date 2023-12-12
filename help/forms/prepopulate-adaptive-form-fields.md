@@ -2,17 +2,18 @@
 title: ¿Cómo rellenar previamente los campos del formulario adaptable?
 description: Utilice los datos existentes para rellenar previamente los campos de un formulario adaptable. Los usuarios pueden rellenar previamente la información básica de un formulario iniciando sesión con sus perfiles sociales.
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 94%
+source-wordcount: '2007'
+ht-degree: 97%
 
 ---
 
 # Rellenar previamente los campos de un formulario adaptable{#prefill-adaptive-form-fields}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |

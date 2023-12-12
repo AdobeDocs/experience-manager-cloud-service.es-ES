@@ -1,20 +1,20 @@
 ---
 title: Cómo crear una secuencia de formularios de varios pasos
 description: Con [!DNL Experience Manager Forms], puede definir una secuencia de paneles de formulario para que los usuarios se desplacen por un formulario adaptable y lo rellenen.
-feature: Adaptive Forms
 role: User
 level: Intermediate
+feature: Adaptive Forms, Foundation Components
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 0eac90a8f120a9c7655e68533d4b0a32292621e1
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 83%
+source-wordcount: '537'
+ht-degree: 90%
 
 ---
 
 # Introducción a la secuencia de formulario de varios pasos {#introduction-to-multi-step-form-sequence}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/creating-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
