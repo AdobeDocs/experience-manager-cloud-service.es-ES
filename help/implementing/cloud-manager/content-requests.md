@@ -2,16 +2,35 @@
 title: Explicación de las solicitudes de contenido de Cloud Service
 description: Si ha adquirido licencias de solicitud de contenido de Adobe, obtenga información acerca de los tipos de solicitudes de contenido que mide Adobe Experience Cloud as a Service y las variaciones con las herramientas de informes de análisis de una organización.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 949f0ec1aa89fd05813bc9ffb02a75fb0ad84a32
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 9%
+source-wordcount: '2690'
+ht-degree: 4%
 
 ---
 
 # Solicitudes de contenido de Cloud Service
 
-## Variaciones de solicitudes de contenido de Cloud Service{#content-requests-variances}
+## Introducción {#introduction}
+
+Las solicitudes de contenido del Cloud Service se miden mediante la recopilación de datos del lado del servidor. La colección se habilita mediante el análisis de registro de CDN.
+
+>[!NOTE]
+>Además, para un número limitado de [Clientes que adoptaron por primera vez](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter), la recopilación del lado del cliente también se habilita mediante la medición RUM (Real User Monitoring). Para obtener más información, consulte la documentación de [este artículo](#real-user-monitoring-for-aem-as-a-cloud-service).
+
+## Explicación de las solicitudes de contenido de Cloud Service {#understaing-cloud-service-content-requests}
+
+Las solicitudes de contenido se recopilan automáticamente en el lado del servidor en el perímetro de Adobe Experience Manager as a Cloud Service AEM, a través del análisis automatizado de los archivos de registro procedentes de la CDN as a Cloud Service de la red de distribución de contenido (CDN) de. Esto se realiza aislando las solicitudes que devuelven el HTML `(text/html)` o JSON `(application /Json)` contenido de la CDN y en función de varias reglas de inclusión y exclusión detalladas a continuación. AEM Una solicitud de contenido se produce de forma independiente del contenido devuelto que se sirve desde las cachés de CDN o del contenido que regresa al origen de CDN (Dispatchers).
+
+El Servicio de Monitorización de Usuarios Reales (RUM) , la recopilación del lado del cliente, ofrece un reflejo más preciso de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web. Esto proporciona a los clientes una información avanzada sobre el tráfico y el rendimiento de sus páginas. Aunque esto resulta beneficioso para ambos clientes, que utilizan la CDN administrada por Adobe o una CDN administrada que no es por Adobe. Además, ahora se pueden habilitar los informes automáticos de tráfico para los clientes que utilicen una CDN administrada que no sea de Adobe, lo que elimina la necesidad de compartir cualquier informe de tráfico con Adobe.
+
+AEM Para los clientes que aportan su propia CDN además de las as a Cloud Service, los informes del lado del servidor resultarán en números que no se pueden usar para comparar con las solicitudes de contenido con licencia. El cliente tendrá que medir estos números en el extremo de la CDN externa. Para estos clientes, los informes del lado del cliente y el rendimiento asociado, la variable [Adobe RUM Data Service](#real-user-monitoring-for-aem-as-a-cloud-service) es la opción recomendada por el Adobe. Consulte la [notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) para obtener información sobre cómo realizar la inclusión.
+
+## Colección del lado del servidor {#serverside-collection}
+
+Existen reglas para excluir bots conocidos, incluidos servicios bien conocidos que visitan el sitio regularmente para actualizar su índice de búsqueda o servicio.
+
+### Variaciones de solicitudes de contenido de Cloud Service {#content-requests-variances}
 
 Las solicitudes de contenido pueden tener variaciones con las herramientas de informes de Analytics de una organización, como se resume en la siguiente tabla. En general, *no* utilice herramientas de analytics que recopilan datos mediante instrumentación del lado del cliente para informar sobre el número de solicitudes de contenido para un sitio determinado, simplemente porque a menudo dependen del consentimiento del usuario para activarse, por lo tanto se pierden una fracción significativa del tráfico. AEM Las herramientas de Analytics que recopilan datos del lado del servidor en archivos de registro o los informes de CDN para clientes que agregan su propia CDN además de la as a Cloud Service, proporcionarán mejores recuentos de datos. Para informar sobre Vistas de página y su rendimiento asociado, el servicio de datos de Adobe RUM es la opción recomendada por el Adobe.
 
@@ -31,15 +50,7 @@ Las solicitudes de contenido pueden tener variaciones con las herramientas de in
 
 Consulte también [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md).
 
-## Explicación de las solicitudes de contenido de Cloud Service {#about-content-request}
-
-Las solicitudes de contenido se rastrean automáticamente en el extremo as a Cloud Service AEM de Adobe Experience Manager AEM (), a través del análisis automatizado de los archivos de registro procedentes de la CDN as a Cloud Service de la red de distribución de contenido (CDN), aislando las solicitudes que devuelven contenido de HTML (text/html) o JSON (application/json) de la CDN y en función de varias reglas de inclusión y exclusión detalladas a continuación. AEM Una solicitud de contenido se produce de forma independiente del contenido devuelto que se proporciona desde las cachés de CDN o que vuelve al origen de CDN (Dispatcher de).
-
-AEM Para los clientes que aportan su propia CDN además de las as a Cloud Service, este seguimiento dará como resultado números que no se pueden usar para comparar con las solicitudes de contenido con licencia, que tendrán que ser medidos por el cliente en el extremo de la CDN externa.
-
-Existen reglas para excluir bots conocidos, incluidos servicios bien conocidos que visitan el sitio regularmente para actualizar su índice de búsqueda o servicio.
-
-### Tipos de solicitudes de contenido incluidas{#included-content-requests}
+### Tipos de solicitudes de contenido incluidas {#included-content-requests}
 
 | Tipo de solicitud | Solicitud de contenido | Descripción |
 | --- | --- | --- |
@@ -51,7 +62,7 @@ Existen reglas para excluir bots conocidos, incluidos servicios bien conocidos q
 
 Consulte también [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md).
 
-### Tipos de solicitudes de contenido excluido{#excluded-content-request}
+### Tipos de solicitudes de contenido excluido {#excluded-content-request}
 
 | Tipo de solicitud | Solicitud de contenido | Descripción |
 | --- | --- | --- |
@@ -67,3 +78,103 @@ Consulte también [Tablero de licencias](/help/implementing/cloud-manager/licens
 | Excluir llamadas al Commerce integration framework | Excluido | AEM Se trata de solicitudes realizadas a los que se reenvían al Commerce integration framework (la dirección URL comienza por ) `/api/graphql`—para evitar el recuento doble, no son facturables para el Cloud Service. |
 | Excluir `manifest.json` | Excluido | El manifiesto no es una llamada de API y sirve para proporcionar información sobre cómo instalar sitios web en equipos de escritorio o teléfonos móviles. El Adobe no debe contar la solicitud JSON a `/etc.clientlibs/*/manifest.json` |
 | Excluir `favicon.ico` | Excluido | Aunque el contenido devuelto no debe ser HTML ni JSON, observamos que en algunos casos, como en los flujos de autenticación SAML, los iconos favoritos se pueden devolver como HTML y, por lo tanto, se excluyen explícitamente del recuento. |
+
+## Colección del lado cliente {#cliendside-collection}
+
+## AEM Monitoreo de Usuario Real (RUM) para el uso as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+
+>[!INFO]
+>
+>Esta función solo está disponible para los primeros programas de usuarios que la adoptaron.
+>Debe utilizar la versión de AEM Cloud Service. **2023.11.14227** y superiores para habilitar el servicio de datos de RUM.
+
+### Información general {#overview}
+
+Real User Monitoring (RUM) es un tipo de tecnología de monitorización del rendimiento que captura y analiza las experiencias de usuario digital de un sitio web o aplicación en tiempo real. Proporciona visibilidad del rendimiento en tiempo real de una aplicación web y proporciona una perspectiva precisa de la experiencia del usuario final.
+
+Real User Monitoring (RUM) proporciona un profundo conocimiento de las métricas clave de rendimiento desde el inicio de la URL hasta que la solicitud se devuelve al explorador, lo que ayuda a los desarrolladores a mejorar la aplicación para que sea fácil de usar para los usuarios finales.
+
+### ¿Quién puede beneficiarse del servicio de monitoreo de datos RUM? {#who-can-benefit-from-rum-data-monitoring-service}
+
+El servicio de datos RUM es beneficioso para quienes utilizan la CDN de Adobe, ya que ofrece una reflexión más precisa de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web al reflejar el número de vistas de página del lado del cliente que se pueden comparar con las vistas de página del registro de CDN del lado del servidor existentes. Además, para los clientes que utilizan su propia CDN, el Adobe ahora puede agilizar los informes de tráfico automáticos que incluyen Vistas de página para ellos, lo que significa que no tienen que compartir ningún informe de tráfico con Adobe.
+
+También es una buena oportunidad para obtener perspectivas avanzadas sobre el rendimiento de su página, tanto para los clientes que utilizan la CDN de Adobe como para aquellos que utilizan su propia CDN.
+
+### Comprender cómo funciona el servicio de datos de Real User Monitoring (RUM) {#understand-how-the-rum-data-service-works}
+
+Adobe Experience Manager utiliza Real User Monitoring (RUM) para ayudar a los clientes y al Adobe a comprender cómo interactúan los visitantes con los sitios con tecnología de Adobe Experience Manager, diagnosticar problemas de rendimiento y medir la efectividad de los experimentos. RUM preserva la privacidad de los visitantes a través del muestreo (solo se supervisará una pequeña parte de todas las vistas de página) y la exclusión prudente de toda la información de identificación personal (PII).
+
+### Monitorización de usuarios reales (RUM) y privacidad {#rum-and-privacy}
+
+La monitorización de usuarios reales en Adobe Experience Manager está diseñada para preservar la privacidad del visitante y minimizar la recopilación de datos. Como visitante, esto significa que el sitio que está visitando no recopilará información personal ni se pondrá a disposición del Adobe.
+
+Como operador de sitio, esto significa que no se requiere ninguna opción de inclusión adicional para habilitar la monitorización a través de esta función. Por lo tanto, no habrá ninguna ventana emergente adicional que los usuarios finales acepten para habilitar la monitorización RUM.
+
+### Muestreo de datos RUM {#rum-data-sampling}
+
+Las soluciones tradicionales de análisis web intentan recopilar datos de cada visitante. La Monitorización de usuarios reales de Adobe Experience Manager solo captura información de una pequeña fracción de las vistas de página. Real User Monitoring (RUM) está diseñado para ser muestreado y anonimizado en lugar de un reemplazo para el análisis. De forma predeterminada, las páginas tendrán una proporción de muestreo de 1:100. Los operadores del sitio no pueden configurar este número para aumentar o disminuir la tasa de muestreo a día de hoy. Para calcular el tráfico total con precisión, por cada 100 vistas de página, recopilamos datos detallados de una, lo que le proporciona una aproximación fiable del tráfico general&quot;.
+
+A medida que se decide si los datos se recopilarán en función de la vista de página por vista de página, resulta prácticamente imposible rastrear las interacciones en varias páginas. RUM no tiene concepto de visitas, visitantes o sesiones, solo de vistas de página. Esto es por diseño.
+
+### Qué datos se recopilan {#what-data-is-being-collected}
+
+Real User Monitoring (RUM) está diseñado para evitar la recopilación de información de identificación personal. A continuación, se enumera el conjunto completo de información que puede recopilar Real User Monitoring de Adobe Experience Manager:
+
+* El nombre de host del sitio que se está visitando, por ejemplo: `experienceleague.adobe.com`
+* El tipo de agente de usuario general que se utiliza para mostrar la página, como: escritorio o móvil
+* El momento de la recopilación de datos, como por ejemplo: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
+* La dirección URL de la página que se está visitando, por ejemplo: `https://experienceleague.adobe.com/docs`
+* La URL del referente (la URL de la página que está vinculada a la página actual, si el usuario ha seguido un vínculo)
+* ID de la vista de página generado aleatoriamente, con un formato similar al siguiente: `2Ac6`
+* El peso o la inversa de la velocidad de muestreo, como: `100`. Esto significa que solo se registrará una de cada cien vistas de página
+* El punto de comprobación o el nombre de un evento concreto en la secuencia de carga de la página o de interacción con él como visitante
+* El origen o identificador del elemento DOM con el que interactúa el usuario para el punto de comprobación mencionado anteriormente. Por ejemplo, podría ser una imagen
+* El objetivo o vínculo a una página o recurso externo con el que el usuario interactúa para el punto de comprobación mencionado anteriormente. Por ejemplo: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
+* Las métricas de rendimiento de elementos vitales de la web (CWV) principales, la pintura de contenido más grande (LCP), el primer retraso de entrada (FID) y el cambio de diseño acumulativo (CLS), que describen la calidad de experiencia del visitante.
+
+### Cómo configurar el servicio de datos de Real User Monitoring (RUM) {#how-to-set-up-them-rum-data-service}
+
+* Si desea formar parte de nuestro programa de adopción anticipada, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio para el entorno de producción, ensayo y desarrollo desde su dirección de correo electrónico asociada a su Adobe ID. El equipo de productos de Adobe habilitará entonces el servicio de datos de Real User Monitoring (RUM).
+* Una vez finalizado, el equipo de productos de Adobe creará un canal de colaboración con el cliente.
+* El equipo de productos de Adobe se pondrá en contacto con usted para proporcionarle la clave de dominio y la URL del panel de datos, donde podrá ver las vistas de páginas y [Elementos vitales de la web (CWV)](https://web.dev/vitals/) métricas recopiladas por la colección de monitorización de usuarios reales (RUM) del lado del cliente.
+* A continuación, se le guiará sobre cómo utilizar la clave de dominio para acceder a la URL del panel de datos y ver las métricas.
+
+### Cómo se utilizan los datos de Real User Monitoring (RUM) {#how-rum-data-is-being-used}
+
+Los datos de RUM son beneficiosos para los siguientes propósitos:
+
+* Para identificar y corregir los cuellos de botella de rendimiento de las ubicaciones de los clientes
+* Informes de tráfico automáticos y optimizados que incluyen Vistas de página para clientes que utilizan su propia CDN, lo que significa que no tienen que compartir ningún informe de tráfico con Adobe.
+* Comprender cómo Adobe Experience Manager interactúa con otros scripts (como análisis, segmentación o bibliotecas externas) en la misma página para aumentar la compatibilidad.
+
+### Limitaciones y comprensión de la variación en las vistas de página y las métricas de rendimiento {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+
+A medida que analiza estos datos, es posible que haya variaciones en las vistas de página y otras métricas de rendimiento notificadas por Real User Monitoring (RUM). Estas variaciones pueden atribuirse a varios factores inherentes a la monitorización en tiempo real del lado del cliente. Estas son las consideraciones clave que los clientes deben tener en cuenta al interpretar sus datos de RUM:
+
+1. **Bloqueadores de rastreadores**
+
+   * Los usuarios finales que utilizan bloqueadores de rastreadores o extensiones de privacidad pueden impedir la recopilación de datos de Real User Monitoring (RUM), ya que estas herramientas restringen la ejecución de los scripts de seguimiento. Esta restricción puede provocar que no se informe lo suficiente sobre las vistas de página y las interacciones del usuario, lo que crea una discrepancia entre la actividad real del sitio y los datos capturados por RUM.
+
+1. **Limitaciones al capturar llamadas API/JSON**
+
+   * El servicio de datos de RUM se centra en la experiencia del lado del cliente y no captura las llamadas API back-end o JSON en este momento. La exclusión de estas llamadas de los datos de Real User Monitoring (RUM) creará variaciones a partir de las solicitudes de contenido medidas por CDN Analytics.
+
+### Preguntas más frecuentes {#faq}
+
+1. **¿Cómo puedo configurar las rutas para incluir o excluir en la monitorización?**
+
+   Los clientes podrán configurar rutas para incluir o excluir las direcciones URL para la monitorización estableciendo las variables de entorno dentro de la configuración en Cloud Manager mediante estas variables: `AEM_WEBVITALS_EXCLUDE` y `AEM_WEBVITALS_INCLUDE_PATHS`
+
+   Tenga en cuenta que, de forma predeterminada, la configuración &quot;incluir&quot; está configurada para dirigirse a &quot;/content&quot;. Es importante recordar que las rutas que debe configurar aquí son rutas de contenido dentro del sistema, no las rutas URL que ve en su explorador. Esta distinción es clave para configurar y personalizar con precisión la configuración para satisfacer sus necesidades específicas.
+
+1. **¿Adobe podría rastrear todas las vistas de página antes de que la interacción llegue a la CDN administrada por el cliente o en el momento en que la interacción llegue a la CDN administrada por el cliente?**
+
+   Sí.
+
+1. **¿Podrán los clientes integrar los scripts del servicio de datos RUM con sistemas de terceros como Dynatrace?**
+
+   Sí.
+
+1. **¿Se están recopilando las métricas de constantes web &quot;Interacción con la siguiente pintura&quot;, &quot;Tiempo hasta el primer byte&quot; y &quot;Primera pintura de contenido&quot;?**
+
+   Se recopilan la interacción con la siguiente pintura (INP) y el tiempo hasta el primer byte (TTFB).  La primera pintura con contenido no se recopila en este momento.
