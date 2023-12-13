@@ -2,9 +2,9 @@
 title: Actualización del contenido mediante las API de AEM Assets
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, descubra cómo utilizar la API de REST para acceder y actualizar el contenido de sus fragmentos de contenido.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1061'
 ht-degree: 89%
 
 ---
@@ -321,6 +321,7 @@ Debe continuar con su recorrido sin encabezado AEM revisando a continuación el 
 
 ## Recursos adicionales {#additional-resources}
 
+* [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [API HTTP de Recursos](/help/assets/mac-api-assets.md)
 * [API de REST de fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [Referencia de la API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)

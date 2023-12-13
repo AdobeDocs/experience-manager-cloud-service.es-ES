@@ -3,10 +3,10 @@ title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager as
 description: Obtenga información acerca de la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de la función de entrega sin encabezado de Adobe Experience Manager.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 38cb2605e2133e858c60644084cf515a03b54f60
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 13%
+source-wordcount: '1747'
+ht-degree: 11%
 
 ---
 
@@ -29,6 +29,10 @@ Obtenga información acerca de la compatibilidad con fragmentos de contenido en 
 >* incluye compatibilidad con los fragmentos de contenido
 >
 >La implementación actual de la API HTTP de Assets se basa en la variable [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) estilo arquitectónico.
+
+>[!NOTE]
+>
+>Para obtener la información más reciente sobre las API de Experience Manager, visite también [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 El [API de REST de Assets](/help/assets/mac-api-assets.md) permite a los desarrolladores de Adobe Experience Manager as a Cloud Service AEM acceder al contenido (almacenado en la) directamente a través de la API HTTP mediante las operaciones CRUD (crear, leer, actualizar, eliminar).
 
@@ -64,7 +68,7 @@ Utiliza el `/api/assets` punto final y requiere la ruta del recurso para acceder
 
 * Esto significa que para acceder al recurso en:
    * `/content/dam/path/to/asset`
-* Solicitar:
+* Solicitud:
    * `/api/assets/path/to/asset`
 
 Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
@@ -100,7 +104,7 @@ Esto significa que los siguientes (`write`) las solicitudes no se pueden combina
  <thead>
   <tr>
    <td>Aspecto</td>
-   <td>La API de REST de Recursos<br/> </td>
+   <td>API de REST de Assets<br/> </td>
    <td>AEM Componente<br/> (componentes que utilizan modelos Sling)</td>
   </tr>
  </thead>
@@ -113,7 +117,7 @@ Esto significa que los siguientes (`write`) las solicitudes no se pueden combina
   <tr>
    <td>Operaciones compatibles</td>
    <td><p>Crear, leer, actualizar, eliminar.</p> <p>Con operaciones adicionales, según el tipo de entidad.</p> </td>
-   <td>Solo lectura.</td>
+   <td>Sólo lectura.</td>
   </tr>
   <tr>
    <td>Acceso</td>
@@ -147,9 +151,9 @@ AEM Si la API de REST de Assets se utiliza en un entorno sin requisitos de auten
 
 >[!NOTE]
 >
->Para obtener más información, consulte lo siguiente:
+>Para obtener más información, consulte:
 >
->* [Explicación de CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es)
+>* [Explicación de CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
 >* [AEM Vídeo: Desarrollo de CORS con la aplicación de la tecnología de la información (04:06).](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
 >
 
