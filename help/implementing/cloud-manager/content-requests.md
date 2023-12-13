@@ -2,7 +2,7 @@
 title: Explicación de las solicitudes de contenido de Cloud Service
 description: Si ha adquirido licencias de solicitud de contenido de Adobe, obtenga información acerca de los tipos de solicitudes de contenido que mide Adobe Experience Cloud as a Service y las variaciones con las herramientas de informes de análisis de una organización.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 949f0ec1aa89fd05813bc9ffb02a75fb0ad84a32
+source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
 workflow-type: tm+mt
 source-wordcount: '2690'
 ht-degree: 4%
@@ -81,7 +81,7 @@ Consulte también [Tablero de licencias](/help/implementing/cloud-manager/licens
 
 ## Colección del lado cliente {#cliendside-collection}
 
-## AEM Monitoreo de Usuario Real (RUM) para el uso as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+### AEM Monitoreo de Usuario Real (RUM) para el uso as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >

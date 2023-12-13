@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ac7af61751c3cf751a7370b454855c5361fabe02
+source-git-commit: acaf2371886b161ce5e8b9f9a9771267703bb32d
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 14%
+source-wordcount: '1278'
+ht-degree: 16%
 
 ---
 
@@ -41,12 +41,6 @@ Eche un vistazo al vídeo Información general sobre la versión de noviembre de
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Programa de adopción temprana {#sites-early-adopter}
-
-**Puede aprovechar las [Servicio Real User Monitoring (RUM) Data](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEM para habilitar la recopilación del lado del cliente para el uso de la as a Cloud Service.
-
-El servicio de datos de Real User Monitoring (RUM) ofrece una reflexión más precisa de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web. Es una gran oportunidad para obtener perspectivas avanzadas sobre el rendimiento de su página. Aunque esto resulta beneficioso para los clientes que utilizan CDN administrada por Adobe o CDN no administrada por Adobe. Además, para los clientes que utilizan una CDN administrada que no es de Adobe, ahora se pueden habilitar los informes de tráfico automatizados para ellos, lo que elimina la necesidad de compartir cualquier informe de tráfico con Adobe.
-
-Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio para el entorno de producción, ensayo y desarrollo desde su dirección de correo electrónico asociada a su Adobe ID. El equipo de productos de Adobe habilitará entonces el servicio de datos de Real User Monitoring (RUM).
 
 **[Buscar y reemplazar cadenas en fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: la consola Fragmento de contenido proporciona a los usuarios una forma fácil e intuitiva de reemplazar una cadena que aparece en varios fragmentos de contenido a la vez para acelerar la velocidad del contenido.
 
