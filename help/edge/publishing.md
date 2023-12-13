@@ -2,9 +2,9 @@
 title: Publicación de contenido para Edge Delivery Services
 description: Descubra cómo funciona la publicación de contenido con los Edge Delivery Services AEM y cómo publicar contenido con los Edge Delivery Services de la.
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: e3bbcfa3fcef1ed1e5b6cf2da5a17c7e636b9539
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Con los Edge Delivery Services, la publicación de contenido es perfecta independientemente de la fuente de contenido:
 
-* Contenido basado en documentos: consulte [Publicar sección](https://www.aem.live/docs/#publish) de la documentación de Edge Delivery Services.
+* Contenido basado en documentos: consulte [Publicar sección](/help/edge/docs/authoring.md) de la documentación de Edge Delivery Services.
 * AEM Contenido de la aplicación: consulte los detalles a continuación.
 
 ## AEM Flujo de publicación de la lista de {#publishing-flow}

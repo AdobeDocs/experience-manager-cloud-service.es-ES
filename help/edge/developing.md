@@ -2,9 +2,9 @@
 title: Desarrollo para Edge Delivery Services
 description: AEM Aprenda a desarrollar bloques y personalizar su proyecto de para trabajar con Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: eca5126ca46a9b3b837739c31a6891471a16cfe3
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '257'
 ht-degree: 14%
 
 ---
@@ -20,7 +20,7 @@ Los bloques son la parte más fundamental de una página que envían los Edge De
 
 AEM proporciona bloques estándar como parte del producto dentro de la plantilla del proyecto. Estos bloques incluyen encabezados, texto, imágenes, vínculos, listas, etc.
 
-Consulte la [Sección Generar](https://www.aem.live/docs/#build) Consulte la documentación de Edge Delivery Services para obtener más información sobre los bloques de y cómo desarrollar para los servicios de envío de Edge.
+Consulte la [Sección Generar](/help/edge/developer/block-collection.md) Consulte la documentación de Edge Delivery Services para obtener más información sobre los bloques de y cómo desarrollar para los servicios de envío de Edge.
 
 ## Edge Delivery Services y GitHub {#github-edge}
 
@@ -30,4 +30,4 @@ AEM Los autores pueden crear contenido mediante la creación basada en documento
 
 Los sitios web se crean automáticamente para cada una de las ramas, desde la previsualización de contenido hasta la producción. Todos los recursos que introduce en el repositorio de GitHub están disponibles en el sitio web sin un proceso de compilación.
 
-Consulte la [Sección Generar](https://www.aem.live/docs/#build) Consulte la documentación de Edge Delivery Services para obtener más información sobre los bloques de y cómo desarrollar para los servicios de envío de Edge.
+Consulte la [Sección Generar](/help/edge/developer/block-collection.md) Consulte la documentación de Edge Delivery Services para obtener más información sobre los bloques de y cómo desarrollar para los servicios de envío de Edge.
