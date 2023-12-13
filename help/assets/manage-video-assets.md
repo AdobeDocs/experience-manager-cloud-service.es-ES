@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
 workflow-type: tm+mt
-source-wordcount: '4937'
+source-wordcount: '4905'
 ht-degree: 6%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 El formato de vídeo es una parte esencial de los recursos digitales de una organización. [!DNL Adobe Experience Manager] ofrece ofertas y funciones maduras para administrar todo el ciclo de vida de los recursos de vídeo después de su creación.
@@ -73,8 +73,7 @@ Google cambia periódicamente su interfaz de usuario. Como tal, los pasos para p
 
 **Para establecer la configuración de Google Cloud:**
 
-1. Cree una cuenta de Google.
-   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
+1. [Crear una cuenta de Google](https://accounts.google.com/lifecycle/flows/signup?flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;service=mail&amp;dsh=S-1878016829%3A1702493284416645&amp;theme=glif).
 
    Si ya tiene una cuenta de Google, puede pasar al siguiente paso.
 
@@ -369,11 +368,11 @@ Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. E
 
 >[!NOTE]
 >
->Para publicar contenido desde YouTube, Experience Manager utiliza el **[!UICONTROL Publicar en YouTube]** flujo de trabajo, que permite monitorizar el progreso y ver cualquier información de error.
+Para publicar contenido desde YouTube, Experience Manager utiliza el **[!UICONTROL Publicar en YouTube]** flujo de trabajo, que permite monitorizar el progreso y ver cualquier información de error.
 >
->Consulte [Monitorización de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+Consulte [Monitorización de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
->Para obtener información de progreso más detallada, puede monitorizar el registro de YouTube en replicación. No obstante, tenga en cuenta que dicha monitorización requiere acceso de administrador.
+Para obtener información de progreso más detallada, puede monitorizar el registro de YouTube en replicación. No obstante, tenga en cuenta que dicha monitorización requiere acceso de administrador.
 
 **Para publicar vídeos en su canal de YouTube:**
 
@@ -409,7 +408,7 @@ Puede obtener una cadena URL de YouTube generada por Dynamic Media después de p
 
 >[!NOTE]
 >
->La URL de YouTube no estará disponible para copiar hasta que haya publicado el recurso de vídeo en YouTube.
+La URL de YouTube no estará disponible para copiar hasta que haya publicado el recurso de vídeo en YouTube.
 
 Para vincular URL de YouTube a la aplicación web:
 
@@ -427,13 +426,13 @@ Cuando se cancela la publicación de un recurso de vídeo en Experience Manager,
 
 >[!CAUTION]
 >
->Si elimina un vídeo directamente desde YouTube, Experience Manager no lo tendrá en cuenta y seguirá comportándose como si el vídeo se publicara en YouTube. Cancele siempre la publicación de un recurso de vídeo de YouTube mediante Experience Manager.
+Si elimina un vídeo directamente desde YouTube, Experience Manager no lo tendrá en cuenta y seguirá comportándose como si el vídeo se publicara en YouTube. Cancele siempre la publicación de un recurso de vídeo de YouTube mediante Experience Manager.
 
 >[!NOTE]
 >
->Para eliminar contenido de YouTube, Experience Manager utiliza el **[!UICONTROL Cancelar publicación de YouTube]** flujo de trabajo, que permite monitorizar el progreso y ver cualquier información de error.
+Para eliminar contenido de YouTube, Experience Manager utiliza el **[!UICONTROL Cancelar publicación de YouTube]** flujo de trabajo, que permite monitorizar el progreso y ver cualquier información de error.
 >
->Consulte [Monitorización de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+Consulte [Monitorización de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Para cancelar la publicación de vídeos y eliminarlos de YouTube:**
 
@@ -474,19 +473,19 @@ Puede monitorizar el progreso, incluida la codificación fallida o la publicaci�
 
    >[!NOTE]
    >
-   >Los mensajes de error/error pueden tardar mucho tiempo en registrarse finalmente debido a las diversas configuraciones del flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
+   Los mensajes de error/error pueden tardar mucho tiempo en registrarse finalmente debido a las diversas configuraciones del flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
    >
-   >* Configuración de cola de trabajos de Apache Sling
-   >* Controlador de trabajos de proceso externo de Adobe Granite Workflow
-   >* Cola de tiempo de espera de Granite Workflow
+   * Configuración de cola de trabajos de Apache Sling
+   * Controlador de trabajos de proceso externo de Adobe Granite Workflow
+   * Cola de tiempo de espera de Granite Workflow
    >
-   >Puede ajustar la variable **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** propiedades en estas configuraciones.
+   Puede ajustar la variable **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** propiedades en estas configuraciones.
 
 1. Para los flujos de trabajo en curso, consulte Instancias de flujo de trabajo disponibles en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Instancias]**.
 
    >[!NOTE]
    >
-   >Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
+   Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
 
@@ -500,25 +499,25 @@ Puede monitorizar el progreso, incluida la codificación fallida o la publicaci�
 
    >[!NOTE]
    >
-   >Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
+   Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
    >
-   >El mensaje de error puede tardar mucho tiempo en registrarse finalmente debido a las diversas configuraciones del flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
+   El mensaje de error puede tardar mucho tiempo en registrarse finalmente debido a las diversas configuraciones del flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
    >
-   >* Configuración de cola de trabajos de Apache Sling
-   >* Controlador de trabajos de proceso externo de Adobe Granite Workflow
-   >* Cola de tiempo de espera de Granite Workflow
+   * Configuración de cola de trabajos de Apache Sling
+   * Controlador de trabajos de proceso externo de Adobe Granite Workflow
+   * Cola de tiempo de espera de Granite Workflow
    >
-   >Puede ajustar la variable **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** propiedades en estas configuraciones.
+   Puede ajustar la variable **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** propiedades en estas configuraciones.
 
 1. Para ver los flujos de trabajo completados, consulte Archivo de flujo de trabajo, disponible en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Archivar]**. El **[!UICONTROL archivo de flujo de trabajo]** enumera todas las actividades de flujo de trabajo completadas.
 
    >[!NOTE]
    >
-   >Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
+   Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
@@ -588,7 +587,7 @@ Puede añadir anotaciones a recursos de vídeo. Al realizar anotaciones en víde
 
 >[!NOTE]
 >
->El formato de vídeo MXF aún no es compatible con anotaciones de recursos de vídeo.
+El formato de vídeo MXF aún no es compatible con anotaciones de recursos de vídeo.
 
 1. Desde el [!DNL Assets] consola, seleccione **[!UICONTROL Editar]** en la tarjeta de recursos para mostrar la página de detalles del recurso.
 1. Para reproducir el vídeo, haga clic en **[!UICONTROL Previsualizar]**.
@@ -628,5 +627,5 @@ Puede añadir anotaciones a recursos de vídeo. Al realizar anotaciones en víde
 
 >[!MORELIKETHIS]
 >
->* [Documentación de vídeo de Dynamic Media](/help/assets/dynamic-media/video.md).
->* [Más información sobre el uso, los tipos y la configuración de los perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).
+* [Documentación de vídeo de Dynamic Media](/help/assets/dynamic-media/video.md).
+* [Más información sobre el uso, los tipos y la configuración de los perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).

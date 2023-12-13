@@ -2,10 +2,10 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Obtenga información sobre cómo empezar a utilizar la herramienta de transferencia de contenido
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 21%
+source-wordcount: '1362'
+ht-degree: 16%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 21%
 >id="aemcloud_ctt_download"
 >title="Descargar"
 >abstract="La herramienta de transferencia de contenido se puede descargar como un archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM). Asegúrese de descargar la última versión."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es" text="Notas de la versión"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es" text="Notas de la versión"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Portal de distribución de software"
 
-La herramienta de transferencia de contenido se puede descargar como un archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de origen de Adobe Experience Manager AEM (). Asegúrese de descargar la última versión. Para obtener más información sobre la versión más reciente, consulte [Notas de versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
+La herramienta de transferencia de contenido se puede descargar como un archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante las siguientes opciones [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de origen de Adobe Experience Manager AEM (). Asegúrese de descargar la versión más reciente. Para obtener más información sobre la versión más reciente, consulte [Notas de versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es).
 
 Solo se admite la versión 2.0.0 y posteriores, y es aconsejable utilizar la versión más reciente.
 
@@ -45,7 +45,7 @@ AEM La instancia de origen puede estar ejecutándose detrás de un cortafuegos d
 
 A veces, es difícil comprender los problemas de conexión SSL/TLS. AEM Para solucionar los problemas de conexión durante un proceso de extracción, puede habilitar el registro SSL a través de la consola del sistema del entorno de origen de la aplicación de origen siguiendo estos pasos:
 
-1. Vaya a la consola web de Adobe Experience Manager en la instancia de origen, en **Herramientas - Operaciones - Consola web** o directamente a la dirección URL en *https://serveraddress:serverport/system/console/configMgr*
+1. Vaya a la consola web de Adobe Experience Manager en la instancia de origen, en **Herramientas > Operaciones > Consola web** o directamente a la dirección URL en *https://serveraddress:serverport/system/console/configMgr*
 1. Buscar por **Configuración del servicio de extracción de herramienta de transferencia de contenido**
 1. Utilice el botón del icono de lápiz para editar sus valores de configuración
 1. Habilite la **Habilitar el registro SSL para la extracción** configuración, luego pulse **Guardar**:
@@ -78,15 +78,15 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
 1. AEM Inicie sesión en Cloud Acceleration Manager (CAM) y haga clic en el proyecto CAM que había creado anteriormente para evaluar su preparación para pasar a la fase as a Cloud Service de la. Si no ha creado ningún proyecto CAM, consulte Creación y gestión de un proyecto en CAM.
 
-1. Haga clic en **Transferencia de contenido** Tarjeta de. Esto lo llevará a la vista Lista de conjuntos de migración.
+1. Haga clic en **Transferencia de contenido** para abrir la vista Lista del conjunto de migraciones.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
-1. Para crear un conjunto de migraciones, haga clic en **Crear conjunto de migración**.
+1. Cree un conjunto de migración haciendo clic en **Crear conjunto de migración**.
 
    >[!NOTE]
    >
-   >Se puede crear un máximo de veinte conjuntos de migración, incluidos conjuntos caducados, por proyecto en Cloud Acceleration Manager.
+   >Se puede crear un máximo de 20 conjuntos de migración, incluidos conjuntos caducados, por proyecto en Cloud Acceleration Manager.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
@@ -114,11 +114,11 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 >abstract="Después de crear un conjunto de migración, debe rellenarse con el contenido de la instancia de origen que debe moverse al entorno de AEM as a Cloud Service. Para ello, la herramienta de transferencia de contenido debe instalarse en la instancia de origen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=es" text="Extracción de contenido"
 
-Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Manager, debe instalar la versión más reciente de la herramienta de transferencia de contenido en la instancia de origen de Adobe Experience Manager AEM (). Siga esta sección para aprender a rellenar el conjunto de migración.
+Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Manager, instale la versión más reciente de la herramienta de transferencia de contenido en la instancia de origen de Adobe Experience Manager AEM (). Para obtener información sobre cómo rellenar el conjunto de migración, siga esta sección.
 
 1. Después de instalar la versión más reciente de la herramienta de transferencia de contenido en la instancia de Adobe Experience Manager de origen, vaya a **Operaciones: migración de contenido**
 
-1. Clic **Crear conjunto de migración**
+1. Clic **Crear conjunto de migración**.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -132,7 +132,7 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
 
 1. A continuación, seleccione los siguientes parámetros para crear un conjunto de migración:
 
-   1. **Incluir versión**: seleccione la opción que desee. Cuando se incluyen versiones, la ruta `/var/audit` para migrar eventos de auditoría.
+   1. **Incluir versión**: seleccione según sea necesario. Cuando se incluyen versiones, la ruta `/var/audit` para migrar eventos de auditoría.
 
       ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
 
@@ -140,7 +140,7 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
       >Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza recargas con `wipe=false`, debe deshabilitar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
 
 
-   1. **Rutas que se incluyen**: utilice el explorador para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas escribiendo o seleccionando.
+   1. **Rutas que se incluirán**: utilice el explorador de rutas para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas escribiendo o seleccionando.
 
       >[!IMPORTANT]
       >Las siguientes rutas están restringidas al crear un conjunto de migración:
@@ -202,4 +202,4 @@ Siga los pasos a continuación para ejecutar una comprobación de tamaño:
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a crear un conjunto de migración, ya puede obtener información sobre los procesos de extracción e ingesta en la herramienta de transferencia de contenido. Antes de aprender estos procesos, debe revisar [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) AEM para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y mover el contenido a la ubicación as a Cloud Service de la.
+Una vez que haya aprendido a crear un conjunto de migración, ya puede obtener información sobre los procesos de extracción e ingesta en la herramienta de transferencia de contenido. Antes de aprender estos procesos, debe revisar [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) AEM para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y mover el contenido a la posición as a Cloud Service.

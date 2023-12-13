@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
 workflow-type: tm+mt
-source-wordcount: '9454'
+source-wordcount: '9350'
 ht-degree: 1%
 
 ---
@@ -849,21 +849,21 @@ Consulte [Servir contenido estático (que no sea de imagen)](https://experiencel
 
    Consulte [WebVTT: El formato de seguimiento de texto de vídeo web](https://w3c.github.io/webvtt/).
 
-   Existen herramientas y servicios gratuitos y premium que puede utilizar para crear archivos de subtítulos y subtítulos fuera de Dynamic Media. Por ejemplo, para crear un archivo de subtítulos de vídeo simple sin estilo, puede utilizar la siguiente herramienta gratuita de edición y creación de subtítulos en línea:
+   Hay muchos sitios web que ofrecen herramientas y servicios gratuitos y de primera calidad que puede utilizar para crear archivos de subtítulos/subtítulos WebVTT fuera de Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
-   [Creador de subtítulos WebVTT](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   <!-- [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   Para obtener los mejores resultados, utilice la herramienta en Internet Explorer 9 o posterior, Google Chrome o Safari.
+   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   En la herramienta, en la variable **[!UICONTROL Introducir URL del archivo de vídeo]** , pegue la URL copiada del archivo de vídeo y seleccione **[!UICONTROL Cargar]**. Consulte [Obtener una URL para un recurso](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) para obtener la dirección URL del propio archivo de vídeo, que puede pegar en **[!UICONTROL Introducir URL del campo de archivo de vídeo]**. Internet Explorer, Chrome o Safari pueden reproducir el vídeo de forma predeterminada.
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
 
-   Ahora siga las instrucciones en pantalla del sitio para crear y guardar el archivo WebVTT. Cuando haya terminado, copie el contenido del archivo de rótulo y péguelo en un editor de texto sin formato y guárdelo con la extensión de nombre de archivo VTT.
+Siga las instrucciones en pantalla de un sitio para crear y guardar el archivo WebVTT. Cuando haya terminado, copie el contenido del archivo de rótulo y péguelo en un editor de texto sin formato y guárdelo con la extensión de nombre de archivo VTT.
 
-   >[!NOTE]
-   >
-   Para que los subtítulos de vídeo se admitan globalmente en varios idiomas, el estándar WebVTT requiere que cree archivos .vtt independientes y que realice llamadas a cada idioma que desee admitir.
+>[!NOTE]
+>
+Para que los subtítulos de vídeo se admitan globalmente en varios idiomas, el estándar WebVTT requiere que cree archivos .vtt independientes y que realice llamadas a cada idioma que desee admitir.
 
-   Por lo general, debe asignar al archivo VTT de rótulo el mismo nombre que al archivo de vídeo y anexarlo a la configuración regional del idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
+Por lo general, debe asignar al archivo VTT de rótulo el mismo nombre que al archivo de vídeo y anexarlo a la configuración regional del idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
 
 1. En Experience Manager, cargue el archivo de subtítulos WebVTT en DAM.
 1. Vaya a *publicado* recurso de vídeo que desea asociar con el archivo de rótulo que ha cargado.
