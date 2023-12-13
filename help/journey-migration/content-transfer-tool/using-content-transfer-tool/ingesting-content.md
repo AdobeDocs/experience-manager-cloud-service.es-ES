@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Cloud Service
 description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
+source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
 workflow-type: tm+mt
-source-wordcount: '2315'
+source-wordcount: '2392'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
       * Los conjuntos de migración caducarán después de un período de inactividad prolongado, por lo que se espera que la ingesta se produzca relativamente pronto después de realizar la extracción. Revisar [Caducidad del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener más información.
 
    >[!TIP]
-   > Si la extracción se está ejecutando actualmente, el cuadro de diálogo lo indicará. Una vez que la extracción haya finalizado correctamente, la ingesta se iniciará automáticamente. Si la extracción falla o se detiene, el trabajo de ingesta se rescindirá.
+   > Si la extracción se está ejecutando, el cuadro de diálogo lo indicará. Una vez que la extracción ha finalizado correctamente, la ingesta se inicia automáticamente. Si la extracción falla o se detiene, el trabajo de ingesta se rescindirá.
 
    * **Destino:** Seleccione el entorno de destino. En este entorno es donde se ingiere el contenido del conjunto de migración.
       * Las ingestas no admiten un destino de entorno de desarrollo rápido (RDE) y no aparecen como una posible opción de destino, aunque el usuario tenga acceso a él.
@@ -49,7 +49,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
 
    * **Borrar:** Elija la `Wipe` valor
       * El **Barrido** establece el punto de inicio del destino de la ingesta. If **Barrido** AEM Cuando está activada, el destino, incluido todo su contenido, se restablece a la versión de la especificada en Cloud Manager. Si no está habilitado, el destino mantiene su contenido actual como punto de partida.
-      * Esta opción hace lo siguiente **NO** afectar a cómo se realizará la ingesta de contenido. La ingesta siempre utiliza una estrategia de sustitución de contenido y _no_ una estrategia de combinación de contenido para que, en ambos **Barrido** y **Sin barrido** En algunos casos, la ingesta de un conjunto de migración sobrescribirá el contenido en la misma ruta en el destino. Por ejemplo, si el conjunto de migración contiene `/content/page1` y el destino ya contiene `/content/page1/product1`, la ingesta eliminará todo el `page1` ruta y sus subpáginas, incluidas `product1`y reemplácelo por el contenido del conjunto de migración. Esto significa que se debe realizar una planificación cuidadosa al realizar una **Sin barrido** la ingesta a un destino que incluya cualquier contenido que se deba mantener.
+      * Esta opción hace lo siguiente **NO** afectar a cómo se realizará la ingesta de contenido. La ingesta siempre utiliza una estrategia de sustitución de contenido y _no_ una estrategia de combinación de contenido para que, en ambos **Barrido** y **Sin barrido** En algunos casos, la ingesta de un conjunto de migración sobrescribirá el contenido en la misma ruta en el destino. Por ejemplo, si el conjunto de migración contiene `/content/page1` y el destino ya contiene `/content/page1/product1`, la ingesta elimina el `page1` ruta y sus subpáginas, incluidas `product1`y reemplácelo por el contenido del conjunto de migración. Esto significa que se debe realizar una planificación cuidadosa al realizar una **Sin barrido** la ingesta a un destino que incluya cualquier contenido que se deba mantener.
 
    >[!IMPORTANT]
    > Si la configuración **Barrido** está habilitado para la ingesta, restablece todo el repositorio existente, incluidos los permisos de usuario en la instancia de Cloud Service de destino. Este restablecimiento también es verdadero para un usuario administrador agregado a **administradores** y ese usuario deben volver a agregarse al grupo de administradores para iniciar una ingesta.
@@ -78,7 +78,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingesta superior"
->abstract="Utilice la función superior para mover el contenido modificado desde la actividad de transferencia de contenido anterior. Una vez finalizada la ingesta, compruebe si hay errores/advertencias en los registros. Los errores deben solucionarse inmediatamente, ya sea abordando los problemas notificados o poniéndose en contacto con el Servicio de atención al cliente de Adobe."
+>abstract="Utilice la función superior para mover el contenido modificado desde la actividad de transferencia de contenido anterior. Una vez finalizada la ingesta, compruebe los registros para ver si hay errores o advertencias. Los errores deben solucionarse inmediatamente, ya sea abordando los problemas notificados o poniéndose en contacto con el Servicio de atención al cliente de Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=es" text="Visualización de registros"
 
 La herramienta de transferencia de contenido tiene una función que permite extraer contenido diferencial realizando una *recargar* del conjunto de migración. Esto permite modificar el conjunto de migración para incluir únicamente el contenido que ha cambiado desde la extracción anterior sin tener que extraer todo el contenido de nuevo.
@@ -97,7 +97,7 @@ Comience creando un trabajo de ingesta y asegúrese de que **Barrido** se desact
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Solución de problemas de ingesta de contenido"
->abstract="Consulte los registros de ingesta y la documentación para encontrar soluciones a los motivos comunes por los que una ingesta puede fallar, encontrar la forma de solucionar el problema y ejecutar la ingesta de nuevo."
+>abstract="Consulte los registros de ingesta y la documentación para encontrar soluciones a los motivos comunes por los que una ingesta puede fallar y encontrar la manera de solucionar el problema. Una vez corregida, la ingesta se puede ejecutar de nuevo."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Validación de transferencias de contenido"
 
 ### CAM no puede recuperar el token de migración {#cam-unable-to-retrieve-the-migration-token}
@@ -135,11 +135,11 @@ Este mensaje indica que Cloud Acceleration Manager no pudo llegar al servicio de
 * Si un [Se ha aplicado la Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) a través de Cloud Manager, impide que Cloud Acceleration Manager llegue al servicio de migración. No se puede añadir una dirección IP para ingestas porque es dinámica. Actualmente, la única solución es deshabilitar la lista de permitidos de IP durante el proceso de ingesta e indexación.
 * Puede haber otras razones que requieren investigación. Si la ingesta o la indexación siguen fallando, póngase en contacto con el Servicio de atención al cliente de Adobe.
 
-### AEM Actualizaciones e ingestas de versiones de
+### AEM Actualizaciones e ingestas de versiones de {#aem-version-updates-and-ingestions}
 
 [AEM Actualizaciones de versión de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) AEM se aplican automáticamente a los entornos para mantenerlos actualizados con la versión as a Cloud Service más reciente de la. Si la actualización se activa cuando se realiza una ingesta, puede causar resultados impredecibles, incluido el daño del entorno.
 
-AEM Si el programa de destino incorpora las &quot;Actualizaciones de versión de&quot;, el proceso de ingesta intentará desactivar su cola antes de iniciarse. Cuando se complete la ingesta, el estado del actualizador de versiones se devolverá a como estaba antes de que se iniciara la ingesta.
+AEM Si el programa de destino incorpora las &quot;Actualizaciones de versión de&quot;, el proceso de ingesta intenta deshabilitar su cola antes de iniciarse. Cuando se completa la ingesta, el estado del actualizador de versiones se devuelve a como estaba antes de que se iniciaran las ingestas.
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ AEM Si &quot;Actualizaciones de la versión de la versión de la&quot; está act
 
 >[!NOTE]
 >
-> AEM &quot;Actualizaciones de la versión de la aplicación&quot; se ejecuta en la canalización del entorno y esperará hasta que la canalización esté limpia. Si las actualizaciones se ponen en cola durante más tiempo del esperado, asegúrese de que un flujo de trabajo personalizado no tenga la canalización bloqueada de forma involuntaria.
+> AEM &quot;Actualizaciones de la versión de la aplicación&quot; se ejecuta en la canalización del entorno y espera hasta que la canalización esté limpia. Si las actualizaciones se ponen en cola durante más tiempo del esperado, asegúrese de que un flujo de trabajo personalizado no tenga la canalización bloqueada de forma involuntaria.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Error de ingesta superior debido a una infracción de la restricción de unicidad
+### Error de ingesta superior debido a una infracción de la restricción de unicidad {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 Una causa común de una [Ingesta superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) el error es un conflicto en los id de nodo. Para identificar este error, descargue el registro de ingesta mediante la interfaz de usuario de Cloud Acceleration Manager y busque una entrada como la siguiente:
 
@@ -165,7 +165,7 @@ También puede suceder si un nodo en el destino se mueve entre una ingesta y una
 
 Este conflicto debe resolverse manualmente. Alguien familiarizado con el contenido debe decidir cuál de los dos nodos se debe eliminar, teniendo en cuenta otro contenido que haga referencia a él. La solución puede requerir que la extracción superior se realice de nuevo sin el nodo infractor.
 
-### Error de ingesta superior debido a que no se puede eliminar el nodo al que se hace referencia
+### Error de ingesta superior debido a que no se puede eliminar el nodo al que se hace referencia {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 Otra causa común de una [Ingesta superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) el error es un conflicto de versiones para un nodo en particular en la instancia de destino. Para identificar este error, descargue el registro de ingesta mediante la interfaz de usuario de Cloud Acceleration Manager y busque una entrada como la siguiente:
 
@@ -175,11 +175,17 @@ Esto puede suceder si se modifica un nodo en el destino entre una ingesta y una 
 
 La solución puede requerir que la extracción superior se realice de nuevo sin el nodo infractor. O bien, creando un pequeño conjunto de migración del nodo infractor, pero con la opción &quot;incluir versiones&quot; deshabilitada.
 
-Las prácticas recomendadas indican que si **Sin barrido** La ingesta debe ejecutarse con un conjunto de migración que incluya versiones (es decir, extraídas con &quot;incluir versiones&quot;=true), es crucial que el contenido del destino se modifique lo menos posible, hasta que se complete el recorrido de migración. De lo contrario, pueden producirse estos conflictos.
+Las prácticas recomendadas indican que si **Sin barrido** La ingesta debe ejecutarse con un conjunto de migración que incluya versiones. Es crucial que el contenido del destino se modifique lo menos posible, hasta que se complete el recorrido de migración. De lo contrario, pueden producirse estos conflictos.
 
-### Ingesta Rescindida
+### Error de ingesta debido a valores de propiedad de nodos grandes {#ingestion-failure-due-to-large-node-property-values}
 
-Una ingesta creada con una extracción en ejecución como conjunto de migración de origen esperará pacientemente hasta que la extracción se realice correctamente y, en ese momento, comenzará con normalidad. Si la extracción falla o se detiene, la ingesta y su trabajo de indexación no comenzarán, pero se rescindirán. En este caso, compruebe la extracción para determinar por qué ha fallado, corrija el problema y vuelva a empezar a extraer. Una vez que se esté ejecutando la extracción fija, se puede programar una nueva ingesta.
+Los valores de propiedad del nodo almacenados en MongoDB no pueden superar los 16 MB. Si el valor de un nodo supera el tamaño admitido, la ingesta falla y el registro contiene un `BSONObjectTooLarge` y especifique qué nodo ha superado el máximo. Tenga en cuenta que se trata de una restricción de MongoDB.
+
+Consulte la `Node property value in MongoDB` nota en [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obtener más información y un vínculo a una herramienta Oak que pueda ayudar a encontrar todos los nodos grandes. Una vez corregidos todos los nodos con tamaños grandes, ejecute de nuevo la extracción y la ingesta.
+
+### Ingesta Rescindida {#ingestion-rescinded}
+
+Una ingesta creada con una extracción en ejecución como el conjunto de migración de origen espera pacientemente hasta que la extracción se realice correctamente y, en ese momento, comienza con normalidad. Si la extracción falla o se detiene, la ingesta y su trabajo de indexación no comenzarán, pero se rescindirán. En este caso, compruebe la extracción para determinar por qué ha fallado, corrija el problema y vuelva a empezar a extraer. Una vez que se esté ejecutando la extracción fija, se puede programar una nueva ingesta.
 
 ## Siguientes pasos {#whats-next}
 
