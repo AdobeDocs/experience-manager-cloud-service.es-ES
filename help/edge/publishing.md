@@ -2,7 +2,7 @@
 title: Publicación de contenido para Edge Delivery Services
 description: Descubra cómo funciona la publicación de contenido con los Edge Delivery Services AEM y cómo publicar contenido con los Edge Delivery Services de la.
 feature: Edge Delivery Services
-source-git-commit: e3bbcfa3fcef1ed1e5b6cf2da5a17c7e636b9539
+source-git-commit: 166525b6987215a64521d1ff63a222187376ba65
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -28,7 +28,7 @@ El flujo de información al publicar es el siguiente. Una vez que el autor inici
 1. AEM El autor del contenido publica contenido de la en el editor universal.
 1. Un evento de publicación se inserta en la cola de canalización de Adobe.
 1. El servicio de publicación de entrega perimetral reenvía los eventos relevantes a la API de administración de entrega perimetral.
-1. Edge Delivery extrae e e ingiere el HTML AEM semántico de Autor de la.
+1. Edge Delivery extrae e ingiere el HTML AEM semántico de Autor de la.
 1. AEM Se actualiza el estado de publicación de la.
 
 ## Cómo empezar a trabajar {#how-to-get-started}
