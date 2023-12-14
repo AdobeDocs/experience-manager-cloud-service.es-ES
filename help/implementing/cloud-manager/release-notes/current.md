@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión 2023.11.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service
-description: Estas son las notas de la versión 2023.11.0 para Cloud Manager en AEM as a Cloud Service.
+title: Notas de la versión 2023.12.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service
+description: Estas son las notas de la versión 2023.12.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 25%
+source-wordcount: '772'
+ht-degree: 17%
 
 ---
 
 
-# Notas de la versión 2023.11.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión 2023.12.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta las notas de la versión 2023.11.0 para Cloud Manager en AEM as a Cloud Service.
+Esta página documenta las notas de la versión 2023.12.0 para Cloud Manager en AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,36 +21,42 @@ Esta página documenta las notas de la versión 2023.11.0 para Cloud Manager en 
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2023.11.0 en AEM as a Cloud Service es el 14 de noviembre de 2023. La próxima versión está planificada para el 7 de diciembre de 2023.
+AEM La fecha de lanzamiento de Cloud Manager 2023.12.0 en as a Cloud Service es el 14 de diciembre de 2023. La próxima versión está planificada para el 18 de enero de 2024.
 
 ## Novedades {#what-is-new}
 
-* AEM La protección del cortafuegos de aplicaciones web-DDOS (WAF-DDOS) ya está disponible para su compra como parte de su derecho as a Cloud Service a la licencia y [se puede configurar en modo de autoservicio.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* Especializado [canalizaciones de configuración](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) ahora están disponibles para configurar e implementar reglas de filtro de tráfico, incluidas las reglas WAF, en cuestión de minutos.
-* [Al copiar contenido](/help/implementing/developing/tools/content-copy.md) desde un entorno superior a un entorno de desarrollo, ahora se muestra un mensaje que aconseja precaución al copiar grandes conjuntos de contenido, ya que los entornos de desarrollo tienen una capacidad limitada.
-* [La página de detalles de ejecución de la canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) ahora muestra todos los pasos de una ejecución de canalización con los que aún no se han iniciado atenuados.
-* En ambos **[Actividad](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** y **[Canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** En las páginas, ahora está disponible un resumen de la ejecución de la canalización al seleccionar una canalización con un estado en ejecución.
-* Se ha añadido una nueva sección **Duración** a la [página de detalles de canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) que incluye la duración promedio del paso de canalización en función de la tendencia histórica para ese programa.
-* En el [página ejecución de canalización,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) los pasos finalizados ahora muestran la duración.
-* Ejecuciones que [reutilizar artefactos de generación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) ahora muestra el vínculo a la ejecución que creó inicialmente esos artefactos.
-* La opción para seleccionar **Errores importantes en las métricas** ahora se puede configurar para [canalizaciones de calidad de código](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) y también.
-
+* [Permisos personalizados de Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) le permite crear perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para los usuarios de Cloud Manager.
+   * Esta función se implementará por fases y se espera que finalice con la versión de febrero de 2024 de Cloud Manager.
+   * Envíe un correo electrónico a `Grp-CloudManager-custom-permissions@adobe.com` desde la dirección de correo electrónico asociada a su Adobe ID, si desea activarse antes.
+* Los contenedores de compilación ahora admiten la versión 18 de Node.js para [canalizaciones de front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+* Para los programas de Cloud Manager recién creados, [la subcuenta de New Relic asociada](/help/implementing/cloud-manager/user-access-new-relic.md) no está activada de forma predeterminada.
+   * Se desactivará para los programas existentes en los que no se haya accedido a la subcuenta de New Relic durante más de 90 días.
+   * Si desea utilizar la subcuenta de New Relic, deberá registrarse a través de Cloud Manager.
+* Los despliegues de versiones menores para java 8 y 11 y las actualizaciones para maven [anunciado e iniciado con la versión de octubre de Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) se han completado.
+   * Se agregó compatibilidad con el nodo 18 para canalizaciones de front-end y full-stack.
+   * Se ha actualizado Java 8 versión secundaria a `jdk1.8.0_371`.
+   * Se ha actualizado Java 11 versión menor a `jdk-11.0.20`.
+   * Se ha añadido compatibilidad con Java 17.
+   * Maven se ha actualizado a la versión 3.8.8
+   * La imagen base del contenedor de compilación se actualizó a Ubuntu 22.04.
 
 ## Programa para primeros usuarios {#early-adoption}
 
 Para tener la oportunidad de probar algunas de las próximas funciones, forme parte del programa de adopción anticipada de Adobe.
+
+### Recopilación del lado del cliente mediante Real User Monitoring (RUM) {#rum}
+
+Puede aprovechar las [Servicio Real User Monitoring (RUM) Data](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) AEM para habilitar la recopilación del lado del cliente para el uso de la as a Cloud Service.
+
+El servicio de datos de Real User Monitoring (RUM) ofrece una reflexión más precisa de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web. Es una gran oportunidad para obtener perspectivas avanzadas sobre el rendimiento de su página. Esto resulta beneficioso para los clientes que utilizan CDN administrada por Adobe o CDN administrada por no Adobe. Para los clientes que utilizan una CDN administrada que no es de Adobe, ahora se pueden habilitar los informes de tráfico automatizados para ellos, lo que elimina la necesidad de compartir cualquier informe de tráfico con Adobe.
+
+Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com` de la dirección de correo electrónico asociada a su Adobe ID. Incluya el nombre de dominio para los entornos de producción, fase y desarrollo en su correo electrónico.  La disponibilidad del programa de adopción anticipada de esta función es limitada.
 
 ### Traer su propio GitHub {#byo-github}
 
 Si utiliza GitHub para administrar sus repositorios, [ahora puede validar códigos directamente dentro de sus repositorios de GitHub a través de Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md)Esta integración elimina la necesidad de sincronizar el código de forma coherente con el repositorio de Adobe y le permite comprobar las solicitudes de extracción antes de combinarlas en las ramas principales.
 
 Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `Grp-CloudManager_BYOG@adobe.com` de su dirección de correo electrónico asociada a su Adobe ID.
-
-### Permisos personalizados {#custom-permissions}
-
-[Permisos personalizados de Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) le permite crear perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para los usuarios de Cloud Manager.
-
-Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `Grp-CloudManager-custom-permissions@adobe.com` de su dirección de correo electrónico asociada a su Adobe ID.
 
 ### Restauración de contenido de autoservicio {#content-restore}
 
@@ -72,15 +78,3 @@ Si está interesado en probar esta nueva función y compartir sus comentarios, e
 El tablero utiliza Google Lighthouse, una herramienta automatizada de código abierto para mejorar la calidad de sus aplicaciones web. Puede ejecutarlo en cualquier página web, pública o que requiera autenticación. Tiene auditorías de rendimiento, accesibilidad, aplicaciones web progresivas, SEO y más.
 
 ¿Interesado en probar a conducir el nuevo tablero? Para empezar, envíe un correo electrónico a `aem-lighthouse-pilot@adobe.com` de su correo electrónico asociado a su Adobe ID.
-
-## Problemas conocidos {#known-issues}
-
-Hay un error conocido que impide lo siguiente [canalizaciones de configuración](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) de insertarse en producción.
-
-Si la variable **Pausa antes de implementar en producción** se requiere para una canalización de configuración, la siguiente es la solución sugerida hasta que se resuelva el error.
-
-1. Ejecutar la canalización.
-1. Pruebe el código en el entorno de ensayo.
-1. Cuando la implementación y la aprobación estén disponibles, haga clic en **Rechazar**.
-1. Edite la canalización para poder deshabilitar las **Pausa antes de implementar en producción** opción.
-1. Vuelva a ejecutar la canalización para que se pueda ejecutar de nuevo en el ensayo y, a continuación, en la producción.

@@ -2,10 +2,10 @@
 title: Entorno de compilación
 description: Obtenga información sobre el entorno de compilación de Cloud Manager y cómo crea y prueba su código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 93%
+source-wordcount: '1029'
+ht-degree: 90%
 
 ---
 
@@ -18,10 +18,10 @@ Obtenga información sobre el entorno de compilación de Cloud Manager y cómo c
 
 Cloud Manager crea y prueba su código mediante un entorno de compilación especializado.
 
-* El entorno de compilación está basado en Linux, derivado de Ubuntu 18.04.
+* El entorno de compilación está basado en Linux, derivado de Ubuntu 22.04.
 * Apache Maven 3.8.8 está instalado.
 * Las versiones de Java instaladas son JDK 8u371 y JDK 11.0.20 y Oracle.
-* De forma predeterminada, la variable de entorno `JAVA_HOME` está configurada en `/usr/lib/jvm/jdk1.8.0_371`, que contiene JDK 8u371 de Oracle. Consulte la [Versión JDK de ejecución de Maven alternativa](#alternate-maven-jdk-version) para obtener más información.
+* De forma predeterminada, la variable `JAVA_HOME` la variable de entorno está configurada como `/usr/lib/jvm/jdk1.8.0_371` que contiene el Oracle JDK 8u371. Consulte la [Versión JDK de ejecución de Maven alternativa](#alternate-maven-jdk-version) para obtener más información.
 * Hay algunos paquetes de sistema adicionales instalados que son necesarios.
    * `bzip2`
    * `unzip`
@@ -35,6 +35,7 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven se configura a nivel de sistema con un archivo `settings.xml`, que incluye automáticamente el repositorio de artefactos de Adobe público usando un perfil denominado `adobe-public`. (Consulte [Repositorio Maven público de Adobe](https://repo1.maven.org/) para obtener más información).
+* Node.js 18 está disponible para [canalizaciones front-end y full stack.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
