@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 475505fc8b5eb63c3563e8fabb28f515ff690393
+source-git-commit: a768eddbddb4b418b228839fdf5a9cdaf1488991
 workflow-type: tm+mt
-source-wordcount: '4456'
-ht-degree: 93%
+source-wordcount: '4545'
+ht-degree: 91%
 
 ---
 
@@ -761,6 +761,45 @@ ht-degree: 93%
    + [Publicación de contenido para la entrega de Edge](/help/edge/publishing.md)
    + [Desarrollo para la entrega en Edge](/help/edge/developing.md)
    + [Proyectos existentes y entrega perimetral](/help/edge/existing-projects.md)
+   + Creación de aplicaciones de envío de Edge {#build}
+      + [Introducción: Tutorial para desarrolladores](/help/edge/developer/tutorial.md)
+      + [Anatomía de un proyecto](/help/edge/developer/anatomy-of-a-franklin-project.md)
+      + [Colección de bloques](/help/edge/developer/block-collection.md)
+      + [Hojas de cálculo](/help/edge/developer/spreadsheets.md)
+      + [Forms](/help/edge/developer/forms.md)
+      + [Indexación](/help/edge/developer/indexing.md)
+      + [Mantenerlo en 100](/help/edge/developer/keeping-it-100.md)
+      + [Marcado: secciones](/help/edge/developer/markup-sections-blocks.md)
+      + [Favicon](/help/edge/developer/favicon.md)
+      + [Encabezados personalizados](/help/edge/docs/custom-headers.md)
+      + [Prácticas recomendadas para desarrolladores](/help/edge/docs/dev-collab-and-good-practices.md)
+   + Publicación de aplicaciones de envío de Edge {#publish}
+      + [Creación](/help/edge/docs/authoring.md)
+      + [Metadatos masivos](/help/edge/docs/bulk-metadata.md)
+      + [Bot Slack](/help/edge/docs/slack.md)
+      + [Marcadores](/help/edge/docs/placeholders.md)
+      + [Sitemap](/help/edge/developer/sitemap.md)
+      + [Configuración de SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
+   + Inicio de aplicaciones de envío de Edge {#launch}
+      + [Lista de comprobación de lanzamiento](/help/edge/docs/go-live-checklist.md)
+      + [Invalidación push](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
+      + [Configuración de Cloudflare Worker](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
+      + [Configuración de Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
+      + [Configuración rápida](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [Redirecciones](/help/edge/docs/redirects.md)
+   + Recursos para la entrega de Edge {#resources}
+      + Sidekick {#sidekick}
+         + [Uso del Sidekick](/help/edge/docs/sidekick.md)
+         + [Instalación de extensiones](/help/edge/docs/sidekick-extension.md)
+         + [Configurador de proyectos](https://www.aem.live/tools/sidekick/)
+         + [Biblioteca de Sidekick](/help/edge/docs/sidekick-library.md)
+      + [Preguntas más frecuentes](/help/edge/docs/faq.md)
+      + [API de administración](https://www.aem.live/docs/admin.html)
+      + [status.hlx.live](https://status.hlx.live/history)
+      + Herramientas {#tools}
+         + [Extensión de Sidekick Chrome](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Bot de Github](https://github.com/apps/aem-code-sync)
+         + [Registro de auditoría](/help/edge/docs/auditlog.md)
 + Headless {#headless}
    + [¿Qué es un CMS sin encabezado?](/help/headless/what-is-headless.md)
    + [Introducción a AEM Headless](/help/headless/introduction.md)
