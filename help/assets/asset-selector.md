@@ -4,20 +4,19 @@ description: Utilice el selector de recursos para buscar y recuperar metadatos y
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
+source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
 workflow-type: tm+mt
 source-wordcount: '2371'
 ht-degree: 91%
 
 ---
 
+# Selector de recursos de Micro-Frontend {#Overview}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | Este artículo |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
-
-# Selector de recursos de Micro-Frontend {#Overview}
+| AEM as a Cloud Service | Este artículo |
 
 El Selector de recursos de Micro-Frontend proporciona una interfaz de usuario que se integra fácilmente con el repositorio de [!DNL Experience Manager Assets as a Cloud Service] para poder examinar o buscar recursos digitales disponibles en el repositorio y utilizarlos en la experiencia de creación de la aplicación.
 
