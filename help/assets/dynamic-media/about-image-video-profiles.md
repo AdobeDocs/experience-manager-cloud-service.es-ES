@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f9f82c144e6f919ed9b82caf9e1bc0408a352fd6
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de imagen de Dynamic Media o un perfil de vídeo de Dynamic Media que haya cambiado posteriormente.
 
-Por ejemplo, supongamos que ha creado un perfil de imagen de Dynamic Media y lo ha asignado a una carpeta. A todos los recursos de imagen que haya cargado en la carpeta se les había aplicado automáticamente el perfil de imagen. Sin embargo, más adelante decide añadir una nueva proporción de recorte inteligente al perfil de imagen. Ahora, en lugar de tener que seleccionar y volver a cargar los recursos en la carpeta de nuevo, simplemente ejecute el *Scene7: Volver a procesar recursos* flujo de trabajo.
+Por ejemplo, supongamos que ha creado un perfil de imagen de Dynamic Media y lo ha asignado a una carpeta. A todos los recursos de imagen que haya cargado en la carpeta se les había aplicado automáticamente el perfil de imagen. Sin embargo, más adelante decide añadir una nueva proporción de recorte inteligente al perfil de imagen. Ahora, en lugar de tener que seleccionar y volver a cargar los recursos en la carpeta de nuevo, simplemente ejecute el *Reprocesar Dynamic Media* flujo de trabajo.
 
 Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso en el que se haya producido un error de procesamiento por primera vez. Aunque no haya editado un perfil de imagen o de vídeo, o ya haya aplicado un perfil de imagen o de vídeo, puede ejecutar el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
 
@@ -56,13 +56,13 @@ Consulte [Ajustar el tamaño del lote del flujo de trabajo de reprocesamiento](#
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
-Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
+Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Dynamic Media Reprocess workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
 
 -->
 
 **Para volver a procesar los recursos de Dynamic Media en una carpeta:**
 
-1. Entrada [!DNL Experience Manager], en la página Recursos, vaya a una carpeta de recursos que tenga asignado un perfil de imagen o un perfil de vídeo y para la que desee aplicar la variable **Scene7: volver a procesar recursos** flujo de trabajo.
+1. Entrada [!DNL Experience Manager], en la página Recursos, vaya a una carpeta de recursos que tenga asignado un perfil de imagen o un perfil de vídeo y para la que desee aplicar la variable **Reprocesar Dynamic Media** flujo de trabajo.
 
    Las carpetas que tienen asignado un perfil de imagen o de vídeo tienen el nombre del perfil directamente debajo del nombre de la carpeta en la vista de tarjeta.
 
@@ -78,10 +78,10 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    ![Captura de pantalla de Recursos en Experience Manager que muestra una carpeta seleccionada de recursos, la lista desplegable Cronología resaltada, el botón Iniciar flujo de trabajo resaltado y el icono en forma de gráfico a la derecha del campo Comentario también resaltado](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Seleccionar **[!UICONTROL Iniciar flujo de trabajo]**.
-1. Desde el **[!UICONTROL Iniciar flujo de trabajo]** lista desplegable, elija **[!UICONTROL Scene7: Volver a procesar recursos]**.
+1. Desde el **[!UICONTROL Iniciar flujo de trabajo]** lista desplegable, elija **[!UICONTROL Reprocesar Dynamic Media]**.
 1. (Opcional) En el **Introducir título de flujo de trabajo** , introduzca un nombre para el flujo de trabajo. Puede utilizar el nombre para hacer referencia a la instancia de flujo de trabajo, si es necesario.
 
-   ![Captura de pantalla de la interfaz de usuario Cronología con &quot;Scene7: Reprocesar recursos&quot; seleccionado en la lista desplegable Iniciar flujo de trabajo y el botón Inicio resaltado](/help/assets/dynamic-media/assets/reprocess-assets2.png).
+   ![Captura de pantalla de la interfaz de usuario Cronología con la opción &quot;Reprocesar Dynamic Media&quot; seleccionada en la lista desplegable Iniciar flujo de trabajo y el botón Inicio resaltado](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. Seleccionar **[!UICONTROL Inicio]**, luego seleccione **[!UICONTROL Confirmar]**.
 
@@ -94,15 +94,15 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 **Para ajustar de forma opcional el tamaño del lote del flujo de trabajo de reprocesamiento:**
 
 1. Entrada [!DNL Experience Manager], seleccione **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global, seleccione **[!UICONTROL Herramientas]** Icono de (martillo) > **[!UICONTROL Flujo de trabajo > Modelos]**.
-1. En la página Modelos de flujo de trabajo, en Vista de tarjeta o Vista de lista, seleccione **[!UICONTROL Scene7: Volver a procesar recursos]**.
+1. En la página Modelos de flujo de trabajo, en Vista de tarjeta o Vista de lista, seleccione **[!UICONTROL Reprocesar Dynamic Media]**.
 
-   ![Captura de pantalla de la página Modelos de flujo de trabajo con el flujo de trabajo &quot;Scene7: Reprocesar recursos&quot; seleccionado en la vista de tarjeta del Experience Manager.](/help/assets/dynamic-media/assets/reprocess-assets7.png).
+   ![Captura de pantalla de la página Modelos de flujo de trabajo con el flujo de trabajo &quot;Dynamic Media Reprocess&quot; seleccionado en la vista de tarjeta de Experience Manager.](/help/assets/dynamic-media/assets/reprocess-assets7.png).
 
-1. En la barra de herramientas, seleccione **[!UICONTROL Editar]**. Se abre una nueva pestaña del explorador en la página del modelo de flujo de trabajo Scene7: Reprocesar recursos.
-1. En la página de flujo de trabajo Scene7: Reprocesar recursos, cerca de la esquina superior derecha, seleccione **[!UICONTROL Editar]** para desbloquear el flujo de trabajo.
+1. En la barra de herramientas, seleccione **[!UICONTROL Editar]**. Una nueva pestaña del explorador abre la página Modelo de flujo de trabajo de reprocesamiento de Dynamic Media.
+1. En la página Flujo de trabajo de nuevo procesamiento de Dynamic Media, cerca de la esquina superior derecha, seleccione **[!UICONTROL Editar]** para desbloquear el flujo de trabajo.
 1. En el flujo de trabajo, seleccione el componente Carga por lotes de Scene7 para abrir la barra de herramientas y, a continuación, seleccione **[!UICONTROL Configurar]** en la barra de herramientas.
 
-   ![Captura de pantalla del componente &quot;Carga por lotes de Scene7&quot; en la página &quot;Scene7: Reprocesamiento de recursos&quot; con el puntero del ratón sobre el icono &quot;Configurar&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
+   ![Captura de pantalla del componente &quot;Carga por lotes de Scene7&quot; en la página &quot;Reprocesamiento de Dynamic Media&quot; con el puntero del ratón sobre el icono &quot;Configurar&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
 
 1. En el **[!UICONTROL Carga de lotes en Scene7: propiedades de la etapa]** , establezca lo siguiente:
    * En el **[!UICONTROL Título]** y **[!UICONTROL Descripción]** campos de texto, introduzca un nuevo título y una descripción para el trabajo, si lo desea.
@@ -116,11 +116,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. En la esquina superior derecha de la **[!UICONTROL Carga de lotes en Scene7 - Propiedades de la etapa]** , seleccione **[!UICONTROL Listo]**.
 
-1. En la esquina superior derecha de la página Scene7: modelo de flujo de trabajo Reprocesar recursos, seleccione **[!UICONTROL Sincronización]**. Cuando vea **[!UICONTROL Sincronizado]** Sin embargo, el modelo de tiempo de ejecución del flujo de trabajo se ha sincronizado correctamente y está listo para volver a procesar los recursos en una carpeta.
+1. En la esquina superior derecha de la página Modelo de flujo de trabajo de reprocesamiento de Dynamic Media, seleccione **[!UICONTROL Sincronización]**. Cuando vea **[!UICONTROL Sincronizado]** Sin embargo, el modelo de tiempo de ejecución del flujo de trabajo se ha sincronizado correctamente y está listo para volver a procesar los recursos en una carpeta.
 
    ![Captura de pantalla de Recursos en Experience Manager que muestra una carpeta seleccionada de recursos, la lista desplegable Cronología resaltada, el botón Iniciar flujo de trabajo resaltado y el icono en forma de gráfico a la derecha del campo Comentario también resaltado](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
-1. Cierre la pestaña del explorador que muestra el modelo de flujo de trabajo Scene7: Reprocesar recursos.
+1. Cierre la pestaña del explorador que muestra el modelo de flujo de trabajo Reprocesar de Dynamic Media.
 
 <!-- MAY BE NEEDED IN THE FUTURE
 
@@ -142,6 +142,6 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
 
 -->
