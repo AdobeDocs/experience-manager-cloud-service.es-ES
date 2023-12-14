@@ -3,9 +3,9 @@ title: Notas de la versión 2023.12.0 para Cloud Manager en Adobe Experience Man
 description: Estas son las notas de la versión 2023.12.0 para Cloud Manager en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
+source-git-commit: b3a338f469ea04d2c31204149d619931a55f2b24
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '766'
 ht-degree: 17%
 
 ---
@@ -36,7 +36,6 @@ AEM La fecha de lanzamiento de Cloud Manager 2023.12.0 en as a Cloud Service es 
    * Se agregó compatibilidad con el nodo 18 para canalizaciones de front-end y full-stack.
    * Se ha actualizado Java 8 versión secundaria a `jdk1.8.0_371`.
    * Se ha actualizado Java 11 versión menor a `jdk-11.0.20`.
-   * Se ha añadido compatibilidad con Java 17.
    * Maven se ha actualizado a la versión 3.8.8
    * La imagen base del contenedor de compilación se actualizó a Ubuntu 22.04.
 
