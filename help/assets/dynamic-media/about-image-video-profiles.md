@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f9f82c144e6f919ed9b82caf9e1bc0408a352fd6
+source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Por ejemplo, supongamos que ha creado un perfil de imagen de Dynamic Media y lo 
 
 Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso en el que se haya producido un error de procesamiento por primera vez. Aunque no haya editado un perfil de imagen o de vídeo, o ya haya aplicado un perfil de imagen o de vídeo, puede ejecutar el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
 
-Si lo desea, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento desde un valor predeterminado de 50 hasta 1000 recursos. Cuando ejecute el _Scene7: Volver a procesar recursos_ flujo de trabajo en una carpeta, los recursos se agrupan en lotes y se envían al servidor de Dynamic Media para su procesamiento. Después del procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan el [!DNL Adobe Experience Manager]. Si el tamaño del lote es grande, puede experimentar un retraso en el procesamiento. O bien, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
+Si lo desea, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento desde un valor predeterminado de 50 hasta 1000 recursos. Cuando ejecute el _Reprocesar Dynamic Media_ flujo de trabajo en una carpeta, los recursos se agrupan en lotes y se envían al servidor de Dynamic Media para su procesamiento. Después del procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan el [!DNL Adobe Experience Manager]. Si el tamaño del lote es grande, puede experimentar un retraso en el procesamiento. O bien, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
 
 Consulte [Ajustar el tamaño del lote del flujo de trabajo de reprocesamiento](#adjusting-load).
 
