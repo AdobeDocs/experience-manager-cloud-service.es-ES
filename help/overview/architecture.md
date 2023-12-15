@@ -2,9 +2,9 @@
 title: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service
 description: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 3e40832ee4351c92ffc4eb22540223e331323821
 workflow-type: tm+mt
-source-wordcount: '2658'
+source-wordcount: '2696'
 ht-degree: 11%
 
 ---
@@ -56,9 +56,11 @@ Existen cuatro tipos de [entorno](/help/implementing/cloud-manager/manage-enviro
       * Esto es independiente de los cambios que se inician por Adobe como parte de una actualización de mantenimiento o por las implementaciones de código.
       * También puede realizar pruebas manuales en el caso de una implementación de código.
    * El contenido del entorno de ensayo se suele mantener sincronizado con el contenido de producción mediante la función de copia de contenido de autoservicio.
+   * Realizar pruebas de rendimiento y seguridad en el entorno de ensayo.  Tiene el mismo tamaño que la producción.
 * Entorno de desarrollo:
    * AEM Un entorno de desarrollo permite a los desarrolladores implementar y probar aplicaciones en las mismas condiciones de tiempo de ejecución que los entornos de ensayo y producción.
    * Los cambios pasan por una canalización de implementación que permite las mismas puertas de calidad y seguridad del código que en las canalizaciones de implementación de producción.
+   * Los entornos de desarrollo no tienen el mismo tamaño que los de fase y producción, y no deben utilizarse para realizar pruebas de rendimiento y seguridad.
 * Entorno de desarrollo rápido (RDE):
    * Un entorno RDE permite realizar iteraciones de desarrollo rápidas al implementar código nuevo o existente en las instancias RDE, sin pasar por una canalización de implementación formal, como se encuentra en los entornos de desarrollo normales.
 
