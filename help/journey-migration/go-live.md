@@ -2,9 +2,9 @@
 title: Go-Live
 description: Aprenda a realizar la migración una vez que el código y el contenido estén listos para la nube
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1721'
 ht-degree: 4%
 
 ---
@@ -152,6 +152,8 @@ Revise esta lista de actividades para asegurarse de que la migración se realiza
       * El TTL es la cantidad de tiempo que un registro DNS permanece en una caché antes de solicitar una actualización al servidor.
       * Si tiene un TTL muy alto, las actualizaciones del registro DNS tardarán más en propagarse.
 * Ejecute pruebas de rendimiento y seguridad que cumplan los requisitos y objetivos de su empresa.
+   * Realizar pruebas en el entorno de ensayo.  Tiene el mismo tamaño que la producción.
+   * Los entornos de desarrollo no tienen el mismo tamaño que los de fase y producción.
 * Pase el ratón por encima y asegúrese de que el go-live real se realiza sin ninguna implementación nueva o actualización de contenido.
 * Crear perfiles de notificación de usuario Admin Console. Consulte [Perfiles de notificación](/help/journey-onboarding/notification-profiles.md)
 
