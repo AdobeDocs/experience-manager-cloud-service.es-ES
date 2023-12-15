@@ -2,10 +2,10 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: efca024511b5d79553864fbcefda3649ab7af7b6
 workflow-type: tm+mt
-source-wordcount: '2585'
-ht-degree: 83%
+source-wordcount: '2607'
+ht-degree: 81%
 
 ---
 
@@ -18,9 +18,9 @@ Obtenga información sobre los tipos de entornos que puede crear y cómo para su
 
 Un usuario con los permisos necesarios puede crear los siguientes tipos de entornos (dentro de los límites de lo que está disponible para el inquilino específico).
 
-* **Producción + Fase**: los entornos de producción y ensayo están disponibles en pareja y se utilizan para fines de producción y prueba, respectivamente.
+* **Producción + Fase** - Los entornos de producción y ensayo están disponibles en pareja y se utilizan para fines de producción y prueba, respectivamente. Realizar pruebas de rendimiento y seguridad en el entorno de ensayo. Tiene el mismo tamaño que la producción.
 
-* **Desarrollo**: se puede crear un entorno de desarrollo para fines de desarrollo y prueba, y solo se puede asociar con canalizaciones que no sean de producción.
+* **Desarrollo** : se puede crear un entorno de desarrollo con fines de desarrollo y prueba y solo se puede asociar con canalizaciones que no sean de producción.  Los entornos de desarrollo no tienen el mismo tamaño que los de fase y producción, y no deben utilizarse para realizar pruebas de rendimiento y seguridad.
 
 * **Desarrollo rápido**: un entorno de desarrollo rápido (RDE) permite al desarrollador implementar y revisar cambios rápidamente, minimizando la cantidad de tiempo necesario para probar funciones que han demostrado su eficacia en un entorno de desarrollo local. Consulte [la documentación del entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obtener detalles acerca de cómo utilizar un RDE.
 
