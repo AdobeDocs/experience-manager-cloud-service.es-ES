@@ -2,9 +2,9 @@
 title: Monitorización de infraestructura y servicios en AEM as a Cloud Service
 description: Monitorización de infraestructura y servicios en AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 484a9a133b2f3d873d725542fc66652134c5e4d5
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '562'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ Con la Monitorización personalizada, los clientes pueden, opcionalmente, propor
 
 >[!NOTE]
 >
-> Esta funcionalidad solo se ofrece a los clientes con [Soporte avanzado en la nube.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Si tiene alguna pregunta, póngase en contacto con el equipo de su cuenta de Adobe.
+> Esta funcionalidad solo se ofrece para entornos de producción y clientes con [Soporte avanzado en la nube.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Si tiene alguna pregunta, póngase en contacto con el equipo de su cuenta de Adobe.
 
 ## Monitorización del módulo interno {#module-monitoring}
 
@@ -47,7 +47,7 @@ Mientras que la disponibilidad externa se centra en la monitorización del usuar
 * El tamaño del repositorio de creación está dentro de ciertos límites.
 * Las operaciones de copia de seguridad se completaron correctamente.
 * Se supervisa el estado y el rendimiento de la base de datos.
-* Los servicios de nube AEM se comportan según lo esperado, incluidas las colas de replicación sin bloquear, los datos coherentes y las consultas de rendimiento.
+* AEM Los servicios en la nube de se comportan según lo esperado, incluidas las colas de replicación sin bloquear, los datos coherentes y las consultas con rendimiento.
 
 Se añaden comprobaciones adicionales a los entornos aprovisionados para Forms. Las definiciones de comprobación no son estáticas y están sujetas a cambios y actualizaciones.
 
