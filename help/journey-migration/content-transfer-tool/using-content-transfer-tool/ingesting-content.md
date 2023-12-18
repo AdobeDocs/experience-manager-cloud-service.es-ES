@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Cloud Service
 description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
+source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2407'
 ht-degree: 4%
 
 ---
@@ -159,9 +159,11 @@ Una causa común de una [Ingesta superior](/help/journey-migration/content-trans
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: propiedad violada de la restricción de unicidad [jcr:uuid] con valor a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-AEM Cada nodo de la interfaz de usuario de debe tener un uuid único. Este error indica que un nodo que se está ingiriendo tiene el mismo uuid que uno que existe en otra parte en una ruta diferente en la instancia de destino.
-Esta situación puede suceder si se mueve un nodo en el origen entre una extracción y una [Extracción Superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-También puede suceder si un nodo en el destino se mueve entre una ingesta y una ingesta superior subsiguiente.
+AEM Cada nodo de la interfaz de usuario de debe tener un uuid único. Este error indica que un nodo que se está ingiriendo tiene el mismo uuid que uno que existe en una ruta diferente en la instancia de destino. Esta situación puede ocurrir por dos razones:
+
+* Un nodo se mueve en el origen entre una extracción y una siguiente [Extracción Superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+   * _RECORDAR_: para las extracciones superiores, el nodo seguirá existiendo en el conjunto de migración, aunque ya no exista en el origen.
+* Un nodo en el destino se mueve entre una ingesta y una ingesta superior subsiguiente.
 
 Este conflicto debe resolverse manualmente. Alguien familiarizado con el contenido debe decidir cuál de los dos nodos se debe eliminar, teniendo en cuenta otro contenido que haga referencia a él. La solución puede requerir que la extracción superior se realice de nuevo sin el nodo infractor.
 
@@ -171,7 +173,7 @@ Otra causa común de una [Ingesta superior](/help/journey-migration/content-tran
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: No se puede eliminar el nodo al que se hace referencia: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-Esto puede suceder si se modifica un nodo en el destino entre una ingesta y una **Sin barrido** ingesta de tal manera que se ha creado una nueva versión. Si el conjunto de migración se ha extraído con la opción &quot;incluir versiones&quot; habilitada, puede producirse un conflicto, ya que el destino tiene ahora una versión más reciente a la que hacen referencia el historial de versiones y otro contenido. El proceso de ingesta no podrá eliminar el nodo de versión infractor porque se hace referencia a él.
+Esto puede suceder si se modifica un nodo en el destino entre una ingesta y una **Sin barrido** ingesta de tal manera que se ha creado una nueva versión. Si el conjunto de migración se ha extraído con la opción &quot;incluir versiones&quot; habilitada, puede producirse un conflicto, ya que el destino tiene ahora una versión más reciente a la que hacen referencia el historial de versiones y otro contenido. El proceso de ingesta no puede eliminar el nodo de versión infractor porque se hace referencia a él.
 
 La solución puede requerir que la extracción superior se realice de nuevo sin el nodo infractor. O bien, creando un pequeño conjunto de migración del nodo infractor, pero con la opción &quot;incluir versiones&quot; deshabilitada.
 
@@ -179,7 +181,7 @@ Las prácticas recomendadas indican que si **Sin barrido** La ingesta debe ejecu
 
 ### Error de ingesta debido a valores de propiedad de nodos grandes {#ingestion-failure-due-to-large-node-property-values}
 
-Los valores de propiedad del nodo almacenados en MongoDB no pueden superar los 16 MB. Si el valor de un nodo supera el tamaño admitido, la ingesta falla y el registro contiene un `BSONObjectTooLarge` y especifique qué nodo ha superado el máximo. Tenga en cuenta que se trata de una restricción de MongoDB.
+Los valores de propiedad del nodo almacenados en MongoDB no pueden superar los 16 MB. Si el valor de un nodo supera el tamaño admitido, la ingesta falla y el registro contiene un `BSONObjectTooLarge` y especifique qué nodo ha superado el máximo. Esta es una restricción de MongoDB.
 
 Consulte la `Node property value in MongoDB` nota en [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obtener más información y un vínculo a una herramienta Oak que pueda ayudar a encontrar todos los nodos grandes. Una vez corregidos todos los nodos con tamaños grandes, ejecute de nuevo la extracción y la ingesta.
 
