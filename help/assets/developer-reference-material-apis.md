@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: a63a237e8da9260fa5f88060304b8cf9f508da7f
+source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1931'
 ht-degree: 7%
 
 ---
@@ -76,7 +76,7 @@ Entrada [!DNL Experience Manager] as a [!DNL Cloud Service], puede cargar direct
 
 >[!IMPORTANT]
 >
->Ejecute los pasos anteriores en una aplicación externa y no dentro de [!DNL Experience Manager] JVM.
+Ejecute los pasos anteriores en una aplicación externa y no dentro de [!DNL Experience Manager] JVM.
 
 El método ofrece una administración escalable y más eficaz de las cargas de recursos. Las diferencias con respecto a [!DNL Experience Manager] 6.5 son:
 
@@ -85,11 +85,11 @@ El método ofrece una administración escalable y más eficaz de las cargas de r
 
 >[!NOTE]
 >
->Consulte el código de cliente para implementar este enfoque en el código abierto [biblioteca de carga de aem](https://github.com/adobe/aem-upload).
+Consulte el código de cliente para implementar este enfoque en el código abierto [biblioteca de carga de aem](https://github.com/adobe/aem-upload).
 >
->[!IMPORTANT]
+[!IMPORTANT]
 >
->En determinadas circunstancias, es posible que los cambios no se propaguen completamente entre solicitudes y Experience Manager debido a la naturaleza finalmente coherente del almacenamiento en Cloud Service. Esto provoca que se produzcan respuestas 404 para iniciar o completar llamadas de carga debido a que no se propagan las creaciones de carpetas necesarias. Los clientes deben esperar respuestas 404 y gestionarlas implementando un reintento con una estrategia de back-off.
+En determinadas circunstancias, es posible que los cambios no se propaguen completamente entre solicitudes y Experience Manager debido a la naturaleza finalmente coherente del almacenamiento en Cloud Service. Esto provoca que se produzcan respuestas 404 para iniciar o completar llamadas de carga debido a que no se propagan las creaciones de carpetas necesarias. Los clientes deben esperar respuestas 404 y gestionarlas implementando un reintento con una estrategia de back-off.
 
 ### Iniciar carga {#initiate-upload}
 
@@ -97,8 +97,8 @@ Envíe una solicitud de POST HTTP a la carpeta deseada. Los recursos se crean o 
 
 El tipo de contenido del cuerpo de la solicitud debe ser `application/x-www-form-urlencoded` datos de formulario, que contienen los siguientes campos:
 
-* `(string) fileName`: Requerido. El nombre del recurso tal como aparece en [!DNL Experience Manager].
-* `(number) fileSize`: Requerido. El tamaño de archivo, en bytes, del recurso que se carga.
+* `(string) fileName`: obligatorio. El nombre del recurso tal como aparece en [!DNL Experience Manager].
+* `(number) fileSize`: obligatorio. El tamaño de archivo, en bytes, del recurso que se carga.
 
 Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, siempre que cada binario contenga los campos obligatorios. Si se realiza correctamente, la solicitud responde con un `201` código de estado y un cuerpo que contiene datos JSON en el siguiente formato:
 
@@ -135,7 +135,7 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
 
 La salida del inicio de una carga incluye uno o más valores de URI de carga. Si se proporciona más de un URI, el cliente puede dividir el binario en partes y realizar solicitudes de PUT de cada parte a los URI de carga proporcionados, por orden. Si decide dividir el binario en partes, siga las siguientes directrices:
 
-* Cada parte, excepto la última, debe tener un tamaño bueno o igual a `minPartSize`.
+* Cada parte, excepto la última, debe tener un tamaño mayor o igual que `minPartSize`.
 * Cada pieza debe tener un tamaño inferior o igual a `maxPartSize`.
 * Si el tamaño del binario supera `maxPartSize`, divida el binario en partes para cargarlo.
 * No es necesario que utilice todos los URI.
@@ -159,7 +159,7 @@ Si la carga se realiza correctamente, el servidor responde a cada solicitud con 
 
 >[!NOTE]
 >
->Para obtener más información sobre el algoritmo de carga, consulte la [documentación oficial de funciones](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) y [Documentación de API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) en el proyecto Apache Jackrabbit Oak.
+Para obtener más información sobre el algoritmo de carga, consulte la [documentación oficial de funciones](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) y [Documentación de API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) en el proyecto Apache Jackrabbit Oak.
 
 ### Carga completa {#complete-upload}
 
@@ -179,11 +179,248 @@ Una vez cargadas todas las partes de un archivo binario, envíe una solicitud de
 
 >[!NOTE]
 >
->Si el recurso existe y ninguno `createVersion` ni `replace` se especifica, entonces [!DNL Experience Manager] actualiza la versión actual del recurso con el nuevo binario.
+Si el recurso existe y ninguno `createVersion` ni `replace` se especifica, entonces [!DNL Experience Manager] actualiza la versión actual del recurso con el nuevo binario.
 
 Al igual que el proceso de inicio, los datos de solicitud completos pueden contener información de más de un archivo.
 
 El proceso de carga de un binario no termina hasta que se invoca la dirección URL completa del archivo. Una vez completado el proceso de carga, se procesa un recurso. El procesamiento no se inicia aunque el archivo binario del recurso se haya cargado completamente, pero el proceso de carga no se haya completado. Si la carga se realiza correctamente, el servidor responde con un `200` código de estado.
+
+### AEM Ejemplo de script de shell para cargar recursos en as a Cloud Service {#upload-assets-shell-script}
+
+AEM En el siguiente ejemplo de shell-script se ilustra el proceso de carga de varios pasos para el acceso binario directo dentro de la as a Cloud Service `aem-upload.sh`:
+
+```bash
+#!/bin/bash
+
+# Check if pv is installed
+if ! command -v pv &> /dev/null; then
+    echo "Error: 'pv' command not found. Please install it before running the script."
+    exit 1
+fi
+
+# Check if jq is installed
+if ! command -v jq &> /dev/null; then
+    echo "Error: 'jq' command not found. Please install it before running the script."
+    exit 1
+fi
+
+# Set DEBUG to true to enable debug statements
+DEBUG=true
+
+# Function for printing debug statements
+function debug() {
+    if [ "${DEBUG}" = true ]; then
+        echo "[DEBUG] $1"
+    fi
+}
+
+# Function to check if a file exists
+function file_exists() {
+    [ -e "$1" ]
+}
+
+# Function to check if a path is a directory
+function is_directory() {
+    [ -d "$1" ]
+}
+
+# Check if the required number of parameters are provided
+if [ "$#" -ne 4 ]; then
+    echo "Usage: $0 <aem-url> <asset-folder> <file-to-upload> <bearer-token>"
+    exit 1
+fi
+
+AEM_URL="$1"
+ASSET_FOLDER="$2"
+FILE_TO_UPLOAD="$3"
+BEARER_TOKEN="$4"
+
+# Extracting file name or folder name from the file path
+NAME=$(basename "${FILE_TO_UPLOAD}")
+
+# Step 1: Check if "file-to-upload" is a folder
+if is_directory "${FILE_TO_UPLOAD}"; then
+    echo "Uploading files from the folder recursively..."
+    
+    # Recursively upload files in the folder
+    find "${FILE_TO_UPLOAD}" -type f | while read -r FILE_PATH; do
+        FILE_NAME=$(basename "${FILE_PATH}")
+        debug "Uploading file: ${FILE_PATH}"
+        
+        # You can choose to initiate upload for each file here
+        # For simplicity, let's assume you use the same ASSET_FOLDER for all files
+        ./aem-upload.sh "${AEM_URL}" "${ASSET_FOLDER}" "${FILE_PATH}" "${BEARER_TOKEN}"
+    done
+else
+    # "file-to-upload" is a single file
+    FILE_NAME="${NAME}"
+
+    # Step 2: Calculate File Size
+    FILE_SIZE=$(stat -c %s "${FILE_TO_UPLOAD}")
+
+    # Step 3: Initiate Upload
+    INITIATE_UPLOAD_ENDPOINT="${AEM_URL}/content/dam/${ASSET_FOLDER}.initiateUpload.json"
+
+    debug "Initiating upload..."
+    debug "Initiate Upload Endpoint: ${INITIATE_UPLOAD_ENDPOINT}"
+    debug "File Name: ${FILE_NAME}"
+    debug "File Size: ${FILE_SIZE}"
+
+    INITIATE_UPLOAD_RESPONSE=$(curl -X POST \
+        -H "Authorization: Bearer ${BEARER_TOKEN}" \
+        -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+        -d "fileName=${FILE_NAME}" \
+        -d "fileSize=${FILE_SIZE}" \
+        ${INITIATE_UPLOAD_ENDPOINT})
+
+    # Continue with the rest of the script...
+fi
+
+
+# Check if the response body contains the specified HTML content for a 404 error
+if echo "${INITIATE_UPLOAD_RESPONSE}" | grep -q "<title>404 Specified folder not found</title>"; then
+    echo "Folder not found. Creating the folder..."
+
+    # Attempt to create the folder
+    CREATE_FOLDER_ENDPOINT="${AEM_URL}/api/assets/${ASSET_FOLDER}"
+
+    debug "Creating folder..."
+    debug "Create Folder Endpoint: ${CREATE_FOLDER_ENDPOINT}"
+
+    CREATE_FOLDER_RESPONSE=$(curl -X POST \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer ${BEARER_TOKEN}" \
+        -d '{"class":"'${ASSET_FOLDER}'","properties":{"title":"'${ASSET_FOLDER}'"}}' \
+        ${CREATE_FOLDER_ENDPOINT})
+
+    # Check the response code and inform the user accordingly
+    STATUS_CODE_CREATE_FOLDER=$(echo "${CREATE_FOLDER_RESPONSE}" | jq -r '.properties."status.code"')
+    case ${STATUS_CODE_CREATE_FOLDER} in
+        201)
+            echo "Folder created successfully. Initiating upload again..."
+
+            # Retry Initiate Upload after creating the folder
+            INITIATE_UPLOAD_RESPONSE=$(curl -X POST \
+                -H "Authorization: Bearer ${BEARER_TOKEN}" \
+                -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+                -d "fileName=${FILE_NAME}" \
+                -d "fileSize=${FILE_SIZE}" \
+                ${INITIATE_UPLOAD_ENDPOINT})
+            ;;
+        409)
+            echo "Error: Folder already exists."
+            ;;
+        412)
+            echo "Error: Precondition failed. Root collection cannot be found or accessed."
+            exit 1
+            ;;
+        500)
+            echo "Error: Internal Server Error. Something went wrong."
+            exit 1
+            ;;
+        *)
+            echo "Error: Unexpected response code ${STATUS_CODE_CREATE_FOLDER}"
+            exit 1
+            ;;
+    esac
+fi
+
+# Extracting values from the response
+FOLDER_PATH=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.folderPath')
+UPLOAD_URIS=($(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].uploadURIs[]'))
+UPLOAD_TOKEN=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].uploadToken')
+MIME_TYPE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].mimeType')
+MIN_PART_SIZE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].minPartSize')
+MAX_PART_SIZE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].maxPartSize')
+COMPLETE_URI=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.completeURI')
+
+# Extracting "Affinity-cookie" from the response headers
+AFFINITY_COOKIE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | grep -i 'Affinity-cookie' | awk '{print $2}')
+
+debug "Folder Path: ${FOLDER_PATH}"
+debug "Upload Token: ${UPLOAD_TOKEN}"
+debug "MIME Type: ${MIME_TYPE}"
+debug "Min Part Size: ${MIN_PART_SIZE}"
+debug "Max Part Size: ${MAX_PART_SIZE}"
+debug "Complete URI: ${COMPLETE_URI}"
+debug "Affinity Cookie: ${AFFINITY_COOKIE}"
+if $DEBUG; then
+    i=1
+    for UPLOAD_URI in "${UPLOAD_URIS[@]}"; do
+        debug "Upload URI $i: "$UPLOAD_URI
+        i=$((i+1))
+    done
+fi
+
+
+# Calculate the number of parts needed
+NUM_PARTS=$(( (FILE_SIZE + MAX_PART_SIZE - 1) / MAX_PART_SIZE ))
+debug "Number of Parts: $NUM_PARTS"
+
+# Calculate the part size for the last chunk
+LAST_PART_SIZE=$(( FILE_SIZE % MAX_PART_SIZE ))
+if [ "${LAST_PART_SIZE}" -eq 0 ]; then
+    LAST_PART_SIZE=${MAX_PART_SIZE}
+fi
+
+# Step 4: Upload binary to the blob store in parts
+PART_NUMBER=1
+for i in $(seq 1 $NUM_PARTS); do
+    PART_SIZE=${MAX_PART_SIZE}
+    if [ ${PART_NUMBER} -eq ${NUM_PARTS} ]; then
+        PART_SIZE=${LAST_PART_SIZE}
+        debug "Last part size: ${PART_SIZE}"
+    fi
+
+    PART_FILE="/tmp/${FILE_NAME}_part${PART_NUMBER}"
+
+    # Creating part file 
+    SKIP=$((PART_NUMBER - 1))
+    SKIP=$((MAX_PART_SIZE * SKIP))
+    dd if="${FILE_TO_UPLOAD}" of="${PART_FILE}"  bs="${PART_SIZE}" skip="${SKIP}" count="${PART_SIZE}" iflag=skip_bytes,count_bytes  > /dev/null 2>&1
+    debug "Creating part file: ${PART_FILE} with size ${PART_SIZE}, skipping first ${SKIP} bytes."
+
+    
+    UPLOAD_URI=${UPLOAD_URIS[$PART_NUMBER-1]}
+
+    debug "Uploading part ${PART_NUMBER}..."
+    debug "Part Size: $PART_SIZE"
+    debug "Part File: ${PART_FILE}"
+    debug "Part File Size: $(stat -c %s "${PART_FILE}")"
+    debug "Upload URI: ${UPLOAD_URI}"
+
+    # Upload the part in the background
+    if command -v pv &> /dev/null; then
+        pv "${PART_FILE}" | curl --progress-bar -X PUT --data-binary "@-" "${UPLOAD_URI}" &
+    else
+        curl -# -X PUT --data-binary "@${PART_FILE}" "${UPLOAD_URI}" &
+    fi
+
+    PART_NUMBER=$((PART_NUMBER + 1))
+done
+
+# Wait for all background processes to finish
+wait
+
+# Step 5: Complete the upload in AEM
+COMPLETE_UPLOAD_ENDPOINT="${AEM_URL}${COMPLETE_URI}"
+
+debug "Completing the upload..."
+debug "Complete Upload Endpoint: ${COMPLETE_UPLOAD_ENDPOINT}"
+
+RESPONSE=$(curl -X POST \
+    -H "Authorization: Bearer ${BEARER_TOKEN}" \
+    -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+    -H "Affinity-cookie: ${AFFINITY_COOKIE}" \
+    --data-urlencode "uploadToken=${UPLOAD_TOKEN}" \
+    --data-urlencode "fileName=${FILE_NAME}" \
+    --data-urlencode "mimeType=${MIME_TYPE}" \
+    "${COMPLETE_UPLOAD_ENDPOINT}")
+    
+debug $RESPONSE
+
+echo "File upload completed successfully."
+```
 
 ### Biblioteca de carga de código abierto {#open-source-upload-library}
 
@@ -194,7 +431,7 @@ Para obtener más información sobre los algoritmos de carga o para crear sus pr
 
 >[!NOTE]
 >
->La biblioteca de carga de aem y la herramienta de línea de comandos utilizan la variable [biblioteca node-httptransfer](https://github.com/adobe/node-httptransfer/)
+La biblioteca de carga de aem y la herramienta de línea de comandos utilizan la variable [biblioteca node-httptransfer](https://github.com/adobe/node-httptransfer/)
 
 ### API de carga de recursos obsoletas {#deprecated-asset-upload-api}
 
@@ -207,9 +444,9 @@ El nuevo método de carga solo es compatible para [!DNL Adobe Experience Manager
 
 >[!MORELIKETHIS]
 >
->* [Biblioteca de código abierto aem-upload](https://github.com/adobe/aem-upload).
->* [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem).
->* [Documentación de Apache Jackrabbit Oak para carga directa](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
+* [Biblioteca de código abierto aem-upload](https://github.com/adobe/aem-upload).
+* [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem).
+* [Documentación de Apache Jackrabbit Oak para carga directa](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## Flujos de trabajo de procesamiento de recursos y posprocesamiento {#post-processing-workflows}
 
@@ -314,4 +551,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
