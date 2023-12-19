@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: db0f60537a65c426dae88b5440622c9034c736e2
+source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 34%
+source-wordcount: '371'
+ht-degree: 33%
 
 ---
 
@@ -39,6 +39,7 @@ La activación de funciones 2023.12.0 proporciona el conjunto completo de funcio
 * ASSETS-31297: Impedir la eliminación del recurso copiado de los medios dinámicos.
 * ASSETS-30811: Actualizaciones de referencia para el servicio de etiquetas de bloque enlazado.
 * AEM GRANITE-46418: Actualizar eventos de Sling en: El soporte de GaugeSupport tiene una recursión infinita en registerWithSuffix (SLING-11918).
+* GRANITE-48937: Corrija la regresión de la 14538 de la versión de mantenimiento en la que Omnisearch no funciona en la página aem/start.html.
 
 ### Problemas conocidos {#known-issues-14697}
 
