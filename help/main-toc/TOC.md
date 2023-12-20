@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7734a0f476d6f5a4e8f15ee3c0e6a9d89797b2b9
+source-git-commit: c54ef4f80703497e9f26847be2fe99867b74c094
 workflow-type: tm+mt
-source-wordcount: '4557'
+source-wordcount: '4556'
 ht-degree: 91%
 
 ---
@@ -778,7 +778,6 @@ ht-degree: 91%
    + Publicación de aplicaciones de envío de Edge {#publish}
       + [Creación](/help/edge/docs/authoring.md)
       + [Metadatos masivos](/help/edge/docs/bulk-metadata.md)
-      + [Bot Slack](/help/edge/docs/slack.md)
       + [Marcadores](/help/edge/docs/placeholders.md)
       + [Sitemap](/help/edge/developer/sitemap.md)
       + [Configuración de SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
@@ -797,7 +796,7 @@ ht-degree: 91%
          + [Biblioteca de Sidekick](/help/edge/docs/sidekick-library.md)
       + [Preguntas más frecuentes](/help/edge/docs/faq.md)
       + [API de administración](https://www.aem.live/docs/admin.html)
-      + [status.hlx.live](https://status.hlx.live/history)
+      + [AEM Estado de](https://www.aemstatus.net)
       + Herramientas {#tools}
          + [Extensión de Sidekick Chrome](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Bot de Github](https://github.com/apps/aem-code-sync)
