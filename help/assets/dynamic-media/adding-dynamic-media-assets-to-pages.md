@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2d79742c2097748d736bc4d2d2046711d978fc5
 workflow-type: tm+mt
-source-wordcount: '3217'
+source-wordcount: '3166'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ Si no hay componentes de Dynamic Media disponibles para agregar a una página, p
 
 1. En la parte derecha de la barra de herramientas, cerca de la parte superior de la página, en la lista desplegable, seleccione **[!UICONTROL Estructura]**.
 
-   ![Directiva](/help/assets/assets-dm/structure-mode.png)
+   ![Política](/help/assets/assets-dm/structure-mode.png)
 
 1. Cerca de la parte inferior de la página, seleccione **[!UICONTROL Contenedor de diseño]** para abrir su barra de herramientas y, a continuación, seleccione el icono Directiva.
 1. En el **[!UICONTROL Contenedor de diseño]** , debajo de la **[!UICONTROL Propiedades]** encabezado, asegúrese de que la variable **[!UICONTROL Componentes permitidos]** está seleccionada.
@@ -157,7 +157,7 @@ Puede editar la siguiente configuración de Dynamic Media seleccionando la **[!U
 
   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-* **[!UICONTROL Puntos de interrupción]** : Si utiliza este recurso en un sitio adaptable, debe añadir los puntos de interrupción de imagen. Los puntos de interrupción de imagen deben separarse con comas (,). Esta opción funciona cuando no hay altura o anchura definida en un ajuste preestablecido de imagen.
+* **[!UICONTROL Puntos de interrupción]** : Si utiliza este recurso en un sitio adaptable, debe añadir los puntos de interrupción de imagen. Los puntos de interrupción de imagen deben estar separados por comas (,). Esta opción funciona cuando no hay altura o anchura definida en un ajuste preestablecido de imagen.
 
   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
@@ -221,7 +221,7 @@ Puede editar la siguiente configuración de Dynamic Media seleccionando **[!UICO
 
 Utilice el componente Dynamic Media para agregar recursos de imagen de recorte inteligente a las páginas web. Al editar el componente, puede elegir utilizar un ajuste preestablecido de visualizador de vídeo para reproducir el vídeo en la página.
 
-Consulte [Uso del recorte inteligente con Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)
+Consulte [Uso del recorte inteligente con Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html?lang=es)
 
 Consulte también [Perfiles de imagen](/help/assets/dynamic-media/image-profiles.md).
 
@@ -269,7 +269,7 @@ Puede editar la siguiente configuración de Dynamic Media seleccionando **[!UICO
 
 ### Componente: Medios interactivos {#interactive-media-component}
 
-El componente de medios interactivos es para aquellos recursos que tienen interactividad en ellos, como puntos interactivos o mapas de imagen. Si tiene una imagen interactiva, un vídeo interactivo o un titular de carrusel, utilice el **[!UICONTROL Medios interactivos]** componente.
+El componente de medios interactivos es para aquellos recursos que tienen interactividad en ellos, como zonas interactivas o mapas de imagen. Si tiene una imagen interactiva, un vídeo interactivo o un titular de carrusel, utilice el **[!UICONTROL Medios interactivos]** componente.
 
 El componente multimedia interactivo es inteligente. Tanto si añade una imagen como si añade un vídeo, tiene varias opciones. Además, el visor es adaptable: el tamaño de la pantalla cambia automáticamente en función del tamaño de la pantalla. Todos los visualizadores son visualizadores de HTML5.
 
