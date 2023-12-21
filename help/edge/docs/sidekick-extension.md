@@ -1,8 +1,14 @@
 ---
-description: "\u200B\u200BThe AEM sidekick provides content authors with a toolbar offering context-aware options so that they can edit, preview, and publish their content directly from the pages of your website."
-title: Installing the AEM Sidekick
+description: AEM "\u200B\u200BTl barra de tareas de la barra de tareas proporciona a los autores de contenido una barra de herramientas que ofrece opciones según el contexto para que puedan editar, previsualizar y publicar su contenido directamente desde las páginas del sitio web."
+title: Instalación del AEM Sidekick
 feature: Edge Delivery Services
+source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
+workflow-type: tm+mt
+source-wordcount: '38'
+ht-degree: 0%
+
 ---
-# Installing the AEM Sidekick
+
+# Instalación del AEM Sidekick
 
 {{$include 332515f6-c568-402f-bc04-13d251225893}}
