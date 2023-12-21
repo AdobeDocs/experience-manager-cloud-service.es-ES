@@ -1,9 +1,9 @@
 ---
 title: Dynatrace OneAgent
 description: AEM Aprenda a utilizar OneAgent de Dynatrace con el as a Cloud Service de la
-source-git-commit: 2e70c8be73915bea860b98e02c08772bb4f5dcd2
+source-git-commit: 9379e6a1ec323ff4f05e994e9265da1363b4a3df
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ A continuación se describen los detalles necesarios para las solicitudes de con
 
 | **Campo** | **Descripción** |
 |---|---|
-| URL de entorno de Dynatrace | La URL de su entorno de Dynatrace.<br><br>Para los clientes de Dynatrace SaaS, el formato es `https://<environment>.live.dynatrace.com`.<br><br>Para los clientes de Dynatrace Managed, el formato es `https://<your-managed-url>/e/<environmentId>` |
+| URL de entorno de Dynatrace | La URL de su entorno de Dynatrace.<br><br>Para los clientes de Dynatrace SaaS, el formato es `https://<you-environment-id>.live.dynatrace.com`.<br><br>Para los clientes de Dynatrace Managed, el formato es `https://<your-managed-url>/e/<environmentId>` |
 | ID de entorno de Dynatrace | El ID del entorno de Dynatrace, que se puede encontrar en la URL del entorno |
 | Token de entorno de Dynatrace | El token de entorno de OneAgent. Consulte la documentación de Dynatrace para ver cómo crearlo.<br><br>Esto debe considerarse un secreto, por lo que debe seguir las prácticas de seguridad adecuadas. Por ejemplo, protéjalo con contraseña en un sitio web como **zerobin.net**, a la que puede hacer referencia el ticket de asistencia al cliente, junto con la contraseña. |
 | Token de acceso a API de Dynatrace | El token de acceso API del entorno de Dynatrace. Consulte la documentación de Dynatrace para ver cómo crearlo.<br><br>Esto debe considerarse un secreto, por lo que debe seguir las prácticas de seguridad adecuadas. Por ejemplo, protéjalo con contraseña en un sitio web como **zerobin.net**, a la que puede hacer referencia el ticket de asistencia al cliente, junto con la contraseña.<br><br>Nota: Esto solo es necesario para Dynatrace Managed. |
-| Puerto de destino de Dynatrace | El puerto de destino de Dynatrace.<br><br>Nota: Esto solo es necesario para Dynatrace Managed. |
+| Puerto ActiveGate de Dynatrace | El puerto ActiveGate de Dynatrace al que OneAgent debe conectarse.<br><br>Nota: Esto solo es necesario para Dynatrace Managed. |
 | AEM ID de entorno(s) de la | AEM Id. de entorno de la red de trabajo que Dynatrace va a monitorizar. |
 
 
