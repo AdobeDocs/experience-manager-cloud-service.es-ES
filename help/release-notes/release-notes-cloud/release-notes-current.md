@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a5121436b2e48302fcf14478764aede1495e089c
+source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 24%
+source-wordcount: '828'
+ht-degree: 22%
 
 ---
 
@@ -53,13 +53,21 @@ El servicio de datos de Real User Monitoring (RUM) ofrece una reflexión más pr
 Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio para el entorno de producción, ensayo y desarrollo desde su dirección de correo electrónico asociada a su Adobe ID. El equipo de productos de Adobe habilitará entonces el servicio de datos de Real User Monitoring (RUM).
 
 
-<!--
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New Features in Admin View {#admin-view-features}
+### Nuevas funciones en la vista Recursos {#assets-view-features}
 
+**Creación de imágenes de GenAI con Adobe Firefly**
 
+Cree nuevas imágenes basadas en consultas de búsqueda con una integración de la función de Adobe Firefly de texto a imagen (requiere licencia de Adobe Firefly).
+
+![Integración del Firefly de recursos](/help/assets/assets/assets-firefly-integration.png)
+
+**Buscar imágenes similares**
+
+Ahora puede encontrar contenido fácilmente seleccionando una imagen y viendo imágenes similares en el repositorio de Experience Manager Assets.
+
+<!--
 
 * **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
 
