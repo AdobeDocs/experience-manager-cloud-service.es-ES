@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: AEM Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante varios mecanismos en la documentación de.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 91%
+source-wordcount: '1847'
+ht-degree: 89%
 
 ---
 
@@ -49,6 +49,12 @@ En función de su ubicación, puede publicar lo siguiente:
 >* Se activa un flujo de trabajo para notificar a la persona adecuada su solicitud de publicación.
 >* Este flujo de trabajo puede haber sido personalizado por el equipo de desarrollo.
 >* Se muestra brevemente un mensaje para notificarle que el flujo de trabajo se ha activado.
+
+>[!NOTE]
+>
+>Si desea conservar el orden de la página, debe publicar la página principal al publicar cualquier página secundaria.
+>
+>El orden de las páginas no está garantizado si solo se seleccionan páginas secundarias para su publicación (ya que la información del orden se mantiene en la página principal).
 
 >[!NOTE]
 >
