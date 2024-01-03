@@ -2,10 +2,10 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 37%
+source-wordcount: '2179'
+ht-degree: 38%
 
 ---
 
@@ -44,11 +44,10 @@ Una vez que haya iniciado sesión, introduzca la URL de la página que desea edi
 
 ## Comprensión de la IU {#ui}
 
-La IU se divide en cinco áreas principales.
+La interfaz de usuario de se divide en estas áreas principales.
 
 * [El encabezado de Experience Cloud](#experience-cloud-header)
-* [El encabezado del editor universal](#universal-editor-header)
-* [El carril de modo](#mode-rail)
+* [Barra de herramientas del Editor universal](#universal-editor-toolbar)
 * [El editor](#editor)
 * [El carril de propiedades](#properties-rail)
 
@@ -96,11 +95,11 @@ Seleccione el icono que representa al usuario para acceder a su configuración d
 
 ![Propiedades del usuario](assets/user-properties.png)
 
-### El encabezado del editor universal {#universal-editor-header}
+### Barra de herramientas del editor universal {#universal-editor-toolbar}
 
-El encabezado del editor universal siempre está presente en la parte superior de la pantalla, justo debajo [del encabezado de Experience Cloud.](#experience-cloud-header) Le permite un acceso rápido a otra página para editarla y publicar la actual.
+La barra de herramientas del Editor universal siempre está presente en la parte superior de la pantalla, justo debajo [el encabezado Experience Cloud.](#experience-cloud-header) Le permite un acceso rápido a otra página para editarla y publicar la actual.
 
-![Encabezado del editor universal](assets/universal-editor-header.png)
+![Barra de herramientas del Editor universal](assets/universal-editor-toolbar.png)
 
 #### El botón Inicio {#home-button}
 
@@ -132,7 +131,7 @@ La barra de ubicación muestra la dirección de la página que está editando. S
 
 #### Configuración del encabezado de autenticación {#authentication-settings}
 
-Seleccione el icono de configuración del encabezado de autenticación si necesita establecer un secreto de autenticación.
+Seleccione el icono de configuración del encabezado de autenticación si es necesario [establezca un encabezado de autenticación personalizado para el desarrollo local.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![Botón Configuración del encabezado de autenticación](assets/authentication-header-settings.png)
 
@@ -154,6 +153,16 @@ En el editor universal, también puede emular un dispositivo móvil, además de 
 * Definir la anchura y la altura
 * Cambiar la orientación
 
+#### Modo de vista previa {#preview-mode}
+
+En el modo de vista previa, la página se procesa en el editor tal como se vería en el servicio publicado. Esto permite al autor del contenido navegar por el contenido haciendo clic en vínculos, etc.
+
+![Modo de vista previa](assets/preview-mode.png)
+
+>[!TIP]
+>
+>Utilice la tecla de acceso directo `P` para cambiar al modo de vista previa y desde él.
+
 #### Apertura de la vista previa de la aplicación {#open-app-preview}
 
 Seleccione el icono de abrir vista previa de la aplicación para abrir la página que está editando en su propia pestaña del explorador, sin utilizar el editor, para previsualizar el contenido.
@@ -174,47 +183,13 @@ Seleccione el botón Publicar para poder publicar los cambios en el contenido pu
 >
 >Ver el documento [Publicación de contenido con el editor universal](publishing.md) para obtener más información sobre cómo publicar con el editor universal.
 
-### El carril de modo {#rail}
-
-El carril de modo está justo debajo del botón de inicio y siempre está presente en la parte izquierda del editor. Permite cambiar fácilmente el editor entre diferentes modos de uso.
-
-![El carril de modo](assets/mode-rail.png)
-
-#### Modo de vista previa {#preview-mode}
-
-En el modo de vista previa, la página se procesa en el editor tal como se vería en el servicio publicado. Esto permite al autor del contenido navegar por el contenido haciendo clic en vínculos, etc.
-
-![Modo de vista previa](assets/preview-mode.png)
-
->[!TIP]
->
->Utilice la tecla de acceso directo `P` para cambiar al modo de vista previa.
-
-#### Modo de componentes {#component-mode}
-
-En el modo de componentes, el autor del contenido puede seleccionar componentes para editarlos, incluidos los siguientes:
-
-* [Edición de texto sin formato](#editing-content) en su lugar.
-* [Edición de texto enriquecido](#editing-rich-text) en contexto, con las opciones de formato adicionales mostradas en el carril propiedades.
-* [Edición de contenido multimedia](#editing-media)
-* [Edición de fragmentos de contenido](#edit-content-fragment)
-
-![Modo de componentes](assets/component-mode.png)
-
-Al seleccionar un componente, los detalles de su contenido se muestran en la [carril de propiedades.](#properties-rail) Según el tipo de contenido, puede editarlo in situ o en el carril de propiedades.
-
->[!TIP]
->
->Utilice la tecla de acceso directo `C` para cambiar al modo de componentes.
-
 ### El Editor {#editor}
 
 El editor ocupa la mayor parte de la ventana y es donde se procesa la página especificada en [la barra de ubicación](#location-bar).
 
-* Si el editor se encuentra en [modo de componentes,](#component-mode) el contenido se podrá editar, pero no podrá seguir los vínculos.
-* Si el editor se encuentra en [modo de previsualización,](#preview-mode) el contenido es navegable y puede seguir los vínculos, pero no puede editar el contenido.
-
 ![Editor](assets/editor.png)
+
+Si el editor se encuentra en [modo de previsualización,](#preview-mode) el contenido es navegable y puede seguir los vínculos, pero no puede editar el contenido.
 
 ### Carril de propiedades {#properties-rail}
 
@@ -254,7 +229,7 @@ Al seleccionar un elemento en el árbol de contenido, el editor se desplaza hast
 
 ##### Editar {#edit}
 
-En [modo de componentes,](#component-mode) las opciones de edición del componente seleccionado aparecen en el carril propiedades. En el carril de propiedades puede editar el componente seleccionado. Si el componente seleccionado es un fragmento de contenido, también puede seleccionar el botón Editar.
+Al editar, las opciones del componente seleccionado aparecen en el carril de propiedades, donde puede editar el componente seleccionado. Si el componente seleccionado es un fragmento de contenido, también puede seleccionar el botón Editar.
 
 ![Icono Editar](assets/edit.png)
 
@@ -294,19 +269,19 @@ Toque o haga clic en el botón Eliminar [elimina el componente.](#deleting-compo
 
 ## Edición de contenido {#editing-content}
 
-La edición de contenido es sencilla e intuitiva. Entrada [modo componentes](#component-mode)A medida que pasa el ratón sobre el contenido en el editor, el contenido editable se resalta con un cuadro azul.
+La edición de contenido es sencilla e intuitiva. Al pasar el ratón sobre el contenido en el editor, el contenido editable se resalta con un cuadro azul.
 
 ![El contenido editable se resalta con un cuadro azul](assets/editable-content.png)
 
 >[!TIP]
 >
->En el modo de componentes, al tocar o hacer clic en el contenido, se selecciona para editarlo. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa.](#preview-mode)
+>De forma predeterminada, al tocar o hacer clic en el contenido, se selecciona para editarlo. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa.](#preview-mode)
 
 Según el contenido que seleccione, puede tener diferentes opciones de edición in situ, así como información y opciones adicionales para el contenido en la [carril de propiedades.](#properties-rail)
 
 ### Edición de texto sin formato {#edit-plain-text}
 
-Si está en [modo componentes](#component-mode) y seleccione un componente de texto sin formato, puede editar el texto local haciendo doble clic o pulsando dos veces en el componente.
+Puede editar el texto en su lugar haciendo doble clic o pulsando dos veces el componente.
 
 ![Edición de contenido](assets/editing-content.png)
 
@@ -320,7 +295,7 @@ Además, los detalles del texto están disponibles en el carril de propiedades. 
 
 ### Edición de texto enriquecido {#edit-rich-text}
 
-Si está en [modo componentes](#component-mode) y seleccione un componente de texto enriquecido. Puede editar el texto local haciendo doble clic o pulsando dos veces en el componente.
+Puede editar el texto en su lugar haciendo doble clic o pulsando dos veces el componente.
 
 Pulse Intro o Retorno o seleccione fuera del cuadro de texto para guardar los cambios.
 
@@ -330,25 +305,20 @@ Además, las opciones de formato y los detalles del texto están disponibles en 
 
 ### Edición de medios {#edit-media}
 
-Si está en [modo componentes](#component-mode) cuando seleccione una imagen, puede ver sus detalles en el carril propiedades.
+Puede ver sus detalles en el carril de propiedades.
 
 ![Edición de medios](assets/ue-edit-media.png)
 
-Seleccione el **Reemplazar** botón debajo de la previsualización de la imagen seleccionada en el carril propiedades para reemplazar la imagen por otra de la biblioteca de recursos.
-
+1. Toque o haga clic en la previsualización de la imagen seleccionada en el carril de propiedades.
 1. El [selector de recursos](/help/assets/asset-selector.md#using-asset-selector) se abrirá una ventana para que pueda seleccionar un recurso.
 1. Seleccione para seleccionar un nuevo recurso.
 1. Seleccionar **Seleccionar** para volver al carril de propiedades en el que se reemplazó el recurso.
 
 Los cambios se guardan automáticamente en el contenido.
 
->[!TIP]
->
->Utilice la tecla de acceso directo `R` para abrir el selector de recursos que reemplazará la imagen seleccionada.
-
 ### Edición de fragmentos de contenido {#edit-content-fragment}
 
-Si está en [modo componentes](#component-mode) y selecciona una [Fragmento de contenido,](/help/sites-cloud/administering/content-fragments/overview.md) puede editar sus detalles en el carril propiedades.
+Si selecciona una [Fragmento de contenido,](/help/sites-cloud/administering/content-fragments/overview.md) puede editar sus detalles en el carril propiedades.
 
 ![Edición de un fragmento de contenido](assets/ue-edit-cf.png)
 
@@ -407,7 +377,7 @@ Los componentes se reordenan tanto en el árbol de contenido como en el editor
 
 Cuando haya terminado de editar el contenido, a menudo querrá navegar por él para ver cómo queda dentro del contenido de otras páginas. En el [modo de vista previa](#preview-mode), puede hacer clic en los vínculos para navegar por el contenido como lo haría un lector. El contenido se muestra en el editor tal y como se publicaría.
 
-En el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo haría con un lector. Si desea seleccionar el contenido para editarlo, cambie a [modo de componentes.](#component-mode)
+En el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo haría con un lector. Si desea seleccionar el contenido para editarlo, desactive [modo de vista previa.](#preview-mode)
 
 ## Recursos adicionales {#additional-resources}
 
