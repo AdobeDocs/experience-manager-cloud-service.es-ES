@@ -2,9 +2,9 @@
 title: Publicar páginas
 description: AEM Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante varios mecanismos en la documentación de.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
+source-git-commit: 00520bff0f3b0d36610d8601077198856c8b71dd
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1927'
 ht-degree: 85%
 
 ---
@@ -52,7 +52,7 @@ En función de su ubicación, puede publicar lo siguiente:
 
 >[!NOTE]
 >
->Si desea conservar el orden de las páginas, debe utilizar [Administrar publicación](#manage-publication) para publicar la página principal junto con cualquier página secundaria, en una sola acción.
+>Si desea conservar el orden de la página, debe utilizar [Administrar publicación](#manage-publication) para publicar la página principal junto con cualquier página secundaria, en una sola acción.
 >
 >No se garantiza el orden de las páginas:
 >* si solo se seleccionan páginas secundarias para la publicación (ya que la información de pedido se mantiene en la página principal)
@@ -128,7 +128,7 @@ Para publicar una página con Publicación rápida:
 
 >[!NOTE]
 >
->Si desea conservar el orden de las páginas, debe utilizar **Administrar publicación** para publicar la página principal junto con las páginas secundarias en una sola acción.
+>Si desea conservar el orden de la página, debe utilizar **Administrar publicación** para publicar la página principal junto con las páginas secundarias en una sola acción.
 >
 >No se garantiza el orden de las páginas:
 >* si solo se seleccionan páginas secundarias para la publicación (ya que la información de pedido se mantiene en la página principal)
