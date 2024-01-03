@@ -2,10 +2,10 @@
 title: Reprocesamiento de recursos digitales
 description: Obtenga información acerca de los distintos métodos de reprocesamiento de recursos digitales
 contentOwner: KK
-source-git-commit: 3fb72e0768c44506b0f20f99a48cea837d722387
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 1%
+source-wordcount: '685'
+ht-degree: 0%
 
 ---
 
@@ -33,21 +33,21 @@ En caso de que seleccione una carpeta:
 
    ![Opciones de reprocesamiento de recursos](assets/reprocessing-assets-options.png)
 
-* **[!UICONTROL Proceso completo]:** Seleccione esta opción cuando desee ejecutar el proceso general, incluidos el perfil predeterminado, el perfil personalizado, el procesamiento dinámico (si está configurado) y los flujos de trabajo posteriores al procesamiento.
-* **[!UICONTROL Avanzadas]:** Seleccione esta opción para elegir el reprocesamiento avanzado.
+   * **[!UICONTROL Proceso completo]:** Seleccione esta opción cuando desee ejecutar el proceso general, incluidos el perfil predeterminado, el perfil personalizado, el procesamiento dinámico (si está configurado) y los flujos de trabajo posteriores al procesamiento.
+   * **[!UICONTROL Avanzadas]:** Seleccione esta opción para elegir el reprocesamiento avanzado.
 
-  ![Opciones avanzadas de reprocesamiento de recursos](assets/reprocessing-assets-options-advanced.png)
+     ![Opciones avanzadas de reprocesamiento de recursos](assets/reprocessing-assets-options-advanced.png)
 
-Seleccione entre las siguientes opciones avanzadas:
+     Seleccione entre las siguientes opciones avanzadas:
 
-* **[!UICONTROL Representaciones de previsualización predeterminadas]:** Elija esta opción cuando desee volver a procesar las representaciones que se previsualizan de forma predeterminada.
+      * **[!UICONTROL Representaciones de previsualización predeterminadas]:** Elija esta opción cuando desee volver a procesar las representaciones que se previsualizan de forma predeterminada.
 
-* **[!UICONTROL Metadatos]:** Elija esta opción cuando desee extraer información de metadatos y etiquetas inteligentes para los recursos seleccionados.
+      * **[!UICONTROL Metadatos]:** Elija esta opción cuando desee extraer información de metadatos y etiquetas inteligentes para los recursos seleccionados.
 
-* **[!UICONTROL Perfiles de procesamiento]:** Elija esta opción cuando desee volver a procesar un perfil seleccionado. Puede elegir **[!UICONTROL Proceso completo]** opción para incluir el procesamiento predeterminado y el perfil personalizado asignado en el nivel de carpeta.
-  <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+      * **[!UICONTROL Perfiles de procesamiento]:** Elija esta opción cuando desee volver a procesar un perfil seleccionado. Puede elegir **[!UICONTROL Proceso completo]** opción para incluir el procesamiento predeterminado y el perfil personalizado asignado en el nivel de carpeta.
+        <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-* **[!UICONTROL Flujo de trabajo de posprocesamiento]:** Elija esta opción donde se requiera un procesamiento adicional de recursos que no se pueda lograr con los perfiles de procesamiento. Se pueden añadir a la configuración flujos de trabajo posteriores al procesamiento adicionales. El posprocesamiento le permite agregar un procesamiento completamente personalizado sobre el procesamiento configurable mediante microservicios de recursos.
+      * **[!UICONTROL Flujo de trabajo de posprocesamiento]:** Elija esta opción donde se requiera un procesamiento adicional de recursos que no se pueda lograr con los perfiles de procesamiento. Se pueden añadir a la configuración flujos de trabajo posteriores al procesamiento adicionales. El posprocesamiento le permite agregar un procesamiento completamente personalizado sobre el procesamiento configurable mediante microservicios de recursos.
 
 Consulte [uso de microservicios de recursos y perfiles de procesamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) para obtener más información sobre los perfiles de procesamiento y el flujo de trabajo posterior al procesamiento.
 
@@ -71,7 +71,7 @@ Más información sobre [Reprocesar etiquetas de color para imágenes existentes
 
 ### Recorte inteligente {#reprocessing-smart-crop}
 
-Más información sobre [Recorte inteligente de Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=es) que permite aplicar un recorte específico (**[!UICONTROL Recorte inteligente]** y recorte de píxeles) y ajuste de la configuración a los recursos cargados.
+Más información sobre [Recorte inteligente de Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) que permite aplicar un recorte específico (**[!UICONTROL Recorte inteligente]** y recorte de píxeles) y ajuste de la configuración a los recursos cargados.
 
 ### Metadatos {#reprocessing-metadata}
 

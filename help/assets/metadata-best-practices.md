@@ -4,7 +4,7 @@ description: Conozca las prácticas recomendadas sobre metadatos para administra
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 8434cb580ba8afc018a5a4357a4d249a06c566c2
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%
@@ -97,25 +97,25 @@ La estrategia de gobernanza puede incluir:
 
 Determine de dónde proviene la información y examine los detalles de la estrategia de metadatos, incluidas las propiedades y sus fuentes. Puede ampliarse según la complejidad de la estrategia. En las grandes empresas, hay un sistema de gestión de metadatos principal que supervisa varios sistemas en la pila principal.
 
-<br>
-
 >[!NOTE]
 >
 >Obtenga información sobre cómo [administración de metadatos de recursos digitales](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Ser coherente con la estrategia de metadatos
 
-Una estrategia de metadatos uniforme garantiza la organización y recuperación eficaces de los recursos digitales. Adoptar un enfoque estratégico para capturar e implementar valores de metadatos, lo que permite la flexibilidad para la evolución sin cambios innecesarios. <br>
-En la administración de metadatos en toda la empresa, la coherencia es importante a la hora de nombrar y hacer referencia a los recursos. Por ejemplo, cuando administre varios recursos simultáneamente, considere la posibilidad de agregar metadatos masivos. <br>
+Una estrategia de metadatos uniforme garantiza la organización y recuperación eficaces de los recursos digitales. Adoptar un enfoque estratégico para capturar e implementar valores de metadatos, lo que permite la flexibilidad para la evolución sin cambios innecesarios.
+
+En la administración de metadatos en toda la empresa, la coherencia es importante a la hora de nombrar y hacer referencia a los recursos. Por ejemplo, cuando administre varios recursos simultáneamente, considere la posibilidad de agregar metadatos masivos.
+
 Estas son algunas de las prácticas recomendadas a seguir:
 
-* **Evite valores duplicados:** Si tiene una colección de imágenes de una campaña de marketing, utilice nombres coherentes y evite duplicados.<br>
+* **Evite valores duplicados:** Si tiene una colección de imágenes de una campaña de marketing, utilice nombres coherentes y evite duplicados.
 Por ejemplo, en lugar de usar nombres duplicados como *campaign_image_001* y *campaign_image_002*, implemente una convención de nombres sistemática como *product_launch_001* y *product_launch_002*, garantizando una identificación clara y ordenada.
 
-* **Utilice vocabularios controlados de forma eficaz:** Implemente vocabularios controlados empleando términos estandarizados para las etiquetas. <br>
+* **Utilice vocabularios controlados de forma eficaz:** Implemente vocabularios controlados empleando términos estandarizados para las etiquetas.
 Por ejemplo, utilice de forma coherente términos como *product_launch* o *event_promotion* al etiquetar imágenes con temáticas para mantener una secuencia sistemática.
 
-* **Mantener la precisión y la integridad:** Para mantener la coherencia, precisión, integridad y alineación de los metadatos en varias fuentes es crucial.<br>
+* **Mantener la precisión y la integridad:** Para mantener la coherencia, precisión, integridad y alineación de los metadatos en varias fuentes es crucial.
 Por ejemplo, al agregar metadatos a un documento de PDF, compruebe que detalles como los nombres de autor y las palabras clave sean precisos y completos.
 
 #### Vídeo: Añadir metadatos masivos a los recursos
@@ -124,7 +124,8 @@ Por ejemplo, al agregar metadatos a un documento de PDF, compruebe que detalles 
 
 ### Evaluar y mejorar la capacidad de búsqueda de metadatos
 
-Evalúe la estrategia de metadatos para mejorar la capacidad de búsqueda. Simplifique los flujos de trabajo y mejore las capacidades de búsqueda para una reutilización eficiente. Evite tratar con metadatos que no tengan un propósito claro.<br>
+Evalúe la estrategia de metadatos para mejorar la capacidad de búsqueda. Simplifique los flujos de trabajo y mejore las capacidades de búsqueda para una reutilización eficiente. Evite tratar con metadatos que no tengan un propósito claro.
+
 Puede tener en cuenta las siguientes prácticas recomendadas para optimizar la búsqueda de metadatos:
 
 * **Optimización de palabras clave:** Mejore la capacidad de búsqueda de metadatos optimizando las palabras clave asociadas con los recursos. Puede mejorar la relevancia de las palabras clave para recursos concretos en el Administrador de recursos siguiendo estos pasos:
@@ -132,9 +133,9 @@ Puede tener en cuenta las siguientes prácticas recomendadas para optimizar la b
    1. Ir a **[!UICONTROL Assets]** > **[!UICONTROL Archivo]** > **[!UICONTROL [Carpeta de recursos]]**.
    1. Seleccione el recurso cuyos metadatos desea actualizar y, a continuación, haga clic en **[!UICONTROL Propiedades]**.
    1. Vaya a **[!UICONTROL Avanzadas]** y haga clic en **[!UICONTROL Añadir]** en el **[!UICONTROL Elevar para palabras clave de búsqueda]**.
-   1. Escriba la palabra clave para la que desea aumentar la búsqueda y haga clic en **[!UICONTROL Añadir]**.<br>
+   1. Escriba la palabra clave para la que desea aumentar la búsqueda y haga clic en **[!UICONTROL Añadir]**.
 Puede agregar varias palabras clave y organizarlas según su prioridad.
-   1. Haga clic en **[!UICONTROL Guardar y cerrar]**.<br>
+   1. Clic **[!UICONTROL Guardar y cerrar]**.
 Busque el recurso con las palabras clave agregadas. El recurso aparece entre los resultados de búsqueda principales.
 
   Obtenga información sobre cómo [impulsar la búsqueda en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
@@ -151,7 +152,7 @@ Busque el recurso con las palabras clave agregadas. El recurso aparece entre los
 
 ### Mantenga los metadatos simples y fáciles de entender
 
-Simplifique los metadatos para mejorar la gobernanza y la adopción de usuarios. Sea directo y fácil de entender, lo que anima a los usuarios a añadir información esencial. <br>
+Simplifique los metadatos para mejorar la gobernanza y la adopción de usuarios. Sea directo y fácil de entender, lo que anima a los usuarios a añadir información esencial.
 Pruebe las siguientes prácticas recomendadas para simplificar los metadatos:
 
 * **Optimizar opciones de propiedad:** Céntrese en resaltar las propiedades esenciales sin sobrecargar a los usuarios con demasiados campos de metadatos para rellenar. Por ejemplo, al añadir metadatos para una imagen, incluya solo campos clave como título, descripción y etiquetas para una categorización eficaz.
