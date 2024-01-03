@@ -4,9 +4,9 @@ description: Explore cómo puede utilizar el editor universal para editar cualqu
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '886'
 ht-degree: 6%
 
 ---
@@ -39,9 +39,7 @@ Editar en contexto y en contexto suele ser mejor que editar contenido estructura
 
 Con el editor universal, tiene una forma ágil de editar el texto en contexto y en contexto, lo que permite crear contenido de forma sencilla e intuitiva.
 
-1. El editor se debe cargar de forma predeterminada en **Componentes** modo. Si no es así, seleccione **Componentes** en el carril de modo en la parte izquierda del editor.
-
-1. Seleccione dos veces el título del artículo más reciente para editarlo.
+1. Haga doble clic para seleccionar el título del artículo más reciente y editarlo.
 
    ![El editor universal](assets/do-not-localize/ue-component-mode.png)
 
@@ -49,7 +47,7 @@ Con el editor universal, tiene una forma ágil de editar el texto en contexto y 
 
    ![Edición de texto en el editor universal](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Pulse la tecla Intro/Retorno o seleccione fuera del componente de texto y los cambios se guardarán automáticamente.
+1. Seleccione fuera del componente de texto y los cambios se guardarán automáticamente.
 
 El editor universal guarda los cambios automáticamente en el entorno de creación. Aún debe publicarlos para que sus lectores puedan verlos, lo que haremos en un paso posterior.
 
@@ -57,7 +55,7 @@ El editor universal guarda los cambios automáticamente en el entorno de creaci�
 
 También puede intercambiar imágenes mientras permanece en el contexto del contenido mediante el Editor universal.
 
-1. Restante en **Componentes** , seleccione la imagen del internauta para seleccionarla.
+1. Seleccione la imagen del internauta para seleccionarla.
 
 1. En el carril del componente, puede ver los detalles del recurso. Seleccione el **Imagen destacada** miniatura.
 
@@ -75,7 +73,7 @@ La imagen se reemplazará por la que haya seleccionado.
 
 El editor universal permite interactuar con el contenido dentro de su contexto y verlo tal y como se entrega a los dispositivos de los usuarios.
 
-1. De forma predeterminada, el editor procesa la versión de escritorio del contenido. Seleccione el botón emulador en la parte superior derecha del editor para cambiar el dispositivo de destino.
+1. De forma predeterminada, el editor procesa la versión de escritorio del contenido. Seleccione el botón emulador en la parte superior derecha de la barra de herramientas del Editor universal para cambiar el dispositivo de destino.
 
    ![Elemento de menú del emulador](assets/do-not-localize/ue-emulator-1.png)
 
@@ -91,9 +89,9 @@ También puede especificar dimensiones exactas para el emulador y rotar el dispo
 
 ## Previsualización y publicación {#preview}
 
-Como es necesario seleccionar el contenido para seleccionarlo en el editor, el editor no permite seguir vínculos o interactuar con el contenido tocando o haciendo clic cuando está en modo de edición. Con el modo de vista previa, puede seguir los vínculos del contenido y experimentarlo como lo harían los usuarios antes de publicar.
+Como es necesario seleccionar el contenido para modificarlo en el editor, el editor no permite seguir vínculos o interactuar con el contenido tocando o haciendo clic en él. Con el modo de vista previa, puede seguir los vínculos del contenido y experimentarlo como lo harían los usuarios antes de publicar.
 
-1. En el carril de modo de la parte izquierda del editor, seleccione **Previsualizar**.
+1. En la barra de herramientas del Editor universal, seleccione **Previsualizar**.
 
 1. Ahora seleccione la **Leer más** para el artículo principal.
 
@@ -113,9 +111,11 @@ Su contenido se ha publicado.
 
 Para acelerar su experiencia de creación de contenido cuando la edición estructurada de contenido sin encabezado es más ventajosa que la edición in situ, el editor universal le permite acceder rápidamente al editor de fragmentos de contenido.
 
-1. Desplácese hacia abajo en la página hasta el **Aventuras** sección.
+1. Desactive el modo de vista previa tocando el botón **Previsualizar** de la barra de herramientas del Editor universal.
 
-1. En el carril de modo de la parte izquierda del editor, seleccione **Componentes**. Esto permite seleccionar componentes de página en el editor.
+   ![Desactivar el modo de vista previa](assets/do-not-localize/ue-toggle-off-preview.png)
+
+1. Desplácese hacia abajo en la página hasta el **Aventuras** sección.
 
 1. Seleccione una de las aventuras, como **Bali Surf Camp** para seleccionarlo.
 
