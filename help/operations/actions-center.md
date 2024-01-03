@@ -2,10 +2,10 @@
 title: Centro de acciones
 description: Aproveche el Centro de Acciones para actuar convenientemente sobre incidentes y otra información importante
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 79%
+source-wordcount: '734'
+ht-degree: 73%
 
 ---
 
@@ -63,14 +63,14 @@ AEM as a Cloud Service tiene varios tipos de notificaciones, pero solo un subcon
 |---|---|---|---|
 | Incidencias operativas | Incidentes críticos que requieren una acción inmediata | Usuario asignado al perfil de producto &quot;Notificación de problemas - Cloud Service&quot; | X |
 | Recomendaciones proactivas | Optimizaciones que deben planificarse | Usuario asignado al perfil de producto “Notificación proactiva - Cloud Service” | X |
-| Estados de canalización de Cloud Manager | Información sobre el estado de sus canalizaciones | Usuario con las funciones de Propietario empresarial, Administrador de programas o Administrador de implementación, casilla de verificación &quot;Otros&quot; seleccionada en las [Preferencias de Experience Cloud](https://experience.adobe.com/preferences), como [se describe aquí](/help/implementing/cloud-manager/notifications.md). |   |
+| Estados de canalización de Cloud Manager | Información sobre el estado de sus canalizaciones | Usuario con los roles de Propietario del negocio, Administrador de programa o Administrador de implementación, casilla de verificación &quot;Otros&quot; seleccionada en [Preferencias del Experience Cloud](https://experience.adobe.com/preferences), como [descrito aquí](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## Tipos de notificación compatibles {#supported-notification-types}
 
 En la tabla siguiente se enumeran los tipos de notificación admitidos actualmente en el Centro de acciones. Actualmente, las notificaciones se limitan a entornos de producción.
 
 | Tipo de notificación | Perfil de producto relacionado | Acción correctiva |
-|---|---|---|
+|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cola de replicación bloqueada | Problema | Desbloquear la cola siguiendo las instrucciones de la [Documentación de replicación](/help/operations/replication.md#troubleshooting) |
+| Consulta GraphQL persistente no válida | Problema | Corrija la consulta de GraphQL no válida haciendo referencia a la variable [Documentación de solución de problemas de consultas persistentes de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
 | Certificado S2S caducado | Proactivo | Obtenga información sobre cómo actualizar una credencial en la [documentación de Generación de tokens de acceso para las API del lado del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) |
-
