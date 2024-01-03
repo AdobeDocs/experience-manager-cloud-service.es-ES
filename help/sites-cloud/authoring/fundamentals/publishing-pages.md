@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: AEM Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante varios mecanismos en la documentación de.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
+source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 89%
+source-wordcount: '1925'
+ht-degree: 85%
 
 ---
 
@@ -52,9 +52,11 @@ En función de su ubicación, puede publicar lo siguiente:
 
 >[!NOTE]
 >
->Si desea conservar el orden de la página, debe publicar la página principal al publicar cualquier página secundaria.
+>Si desea conservar el orden de las páginas, debe utilizar [Administrar publicación](#manage-publication) para publicar la página principal junto con cualquier página secundaria, en una sola acción.
 >
->El orden de las páginas no está garantizado si solo se seleccionan páginas secundarias para su publicación (ya que la información del orden se mantiene en la página principal).
+>No se garantiza el orden de las páginas:
+>* si solo se seleccionan páginas secundarias para la publicación (ya que la información de pedido se mantiene en la página principal)
+>* si las páginas principales y secundarias se publican en acciones independientes
 
 >[!NOTE]
 >
@@ -123,6 +125,14 @@ Para publicar una página con Publicación rápida:
 #### Administrar publicación     {#manage-publication}
 
 **Administrar publicación** ofrece más opciones que **Publicación rápida**, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de la opción de publicar en una fecha posterior.
+
+>[!NOTE]
+>
+>Si desea conservar el orden de las páginas, debe utilizar **Administrar publicación** para publicar la página principal junto con las páginas secundarias en una sola acción.
+>
+>No se garantiza el orden de las páginas:
+>* si solo se seleccionan páginas secundarias para la publicación (ya que la información de pedido se mantiene en la página principal)
+>* si las páginas principales y secundarias se publican en acciones independientes
 
 Para publicar o cancelar la publicación de una página con Administrar publicación:
 
