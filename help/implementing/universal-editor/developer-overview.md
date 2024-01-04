@@ -1,7 +1,7 @@
 ---
 title: AEM Información general del editor universal para desarrolladores
 description: AEM Si usted es un desarrollador de interesado en cómo funciona el editor universal y cómo utilizarlo en su proyecto, este documento le ofrece una introducción completa al instrumentarlo para que trabaje con el editor universal.
-source-git-commit: 4219ce35ed353bef0592bc088c0b5df8c6c9cc6f
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '3082'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 # AEM Información general del editor universal para desarrolladores {#developer-overview}
 
 AEM Si usted es un desarrollador de interesado en cómo funciona el editor universal y cómo utilizarlo en su proyecto, este documento le ofrece una introducción completa al instrumentarlo para que trabaje con el editor universal.
+
+{{universal-editor-status}}
 
 ## Función {#purpose}
 

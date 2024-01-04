@@ -2,10 +2,10 @@
 title: Arquitectura del editor universal
 description: Obtenga información sobre la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '651'
-ht-degree: 87%
+ht-degree: 83%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 87%
 # Arquitectura del editor universal {#architecture}
 
 Obtenga información sobre la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
+
+{{universal-editor-status}}
 
 ## Bloques de creación de arquitectura {#building-blocks}
 
@@ -80,7 +82,7 @@ Para obtener más información acerca del editor universal, consulte estos docum
 
 * [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar cualquier aspecto de los contenidos en varias implementaciones para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
 * [Creación de contenido con el editor universal](authoring.md): aprenda lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
-* [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el publicado.
+* [Publicación de contenido con el editor universal](publishing.md) - Descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 * [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder y cómo instrumentar la primera aplicación de AEM para utilizar el editor universal.
 * [Atributos y tipos](attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
 * [Autenticación del editor universal](authentication.md): obtenga información sobre cómo se autentica el editor universal.

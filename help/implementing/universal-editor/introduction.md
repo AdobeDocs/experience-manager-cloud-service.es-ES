@@ -2,10 +2,10 @@
 title: Introducción al editor universal
 description: Descubra cómo el editor universal permite la edición de lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin encabezado y con encabezado. Descubra cómo puede ayudar a los autores de contenido a ofrecer contenidos excepcionales y mayor velocidad, y una experiencia de última generación a los desarrolladores.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '925'
-ht-degree: 89%
+ht-degree: 84%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 89%
 # Introducción al editor universal {#introduction}
 
 Descubra cómo el editor universal permite la edición de lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin encabezado y con encabezado. Descubra cómo puede ayudar a los autores de contenido a ofrecer contenidos excepcionales y mayor velocidad, y una experiencia de última generación a los desarrolladores.
+
+{{universal-editor-status}}
 
 ## Fondo {#background}
 
@@ -62,9 +64,9 @@ Al desvincular la experiencia de edición de contenido de cualquier sistema de e
 * **Aumentar la velocidad del contenido**: para simplificar el flujo de trabajo de administración de los profesionales, el editor universal permite editar contenido en la vista previa para guiarlos, mostrando solo las opciones que son relevantes para ese contexto. Con ello, el flujo de trabajo es independiente de las fuentes de contenido.
 * **Experiencia de desarrollo de última generación**: para adaptarse al heterogéneo panorama de aplicaciones del mundo real, el editor universal está totalmente separado y es independiente de la tecnología, lo que permite a los desarrolladores utilizar su pila tecnológica preferida para implementar la experiencia.
 
-## Editor universal y Editor de fragmentos de contenido {#universal-editor-content-fragment-editor}
+## Editor universal y editor de fragmentos de contenido {#universal-editor-content-fragment-editor}
 
-A primera vista, puede parecer que el editor universal y el editor de fragmentos de contenido proporcionan funciones de edición similares. Sin embargo, estos editores ofrecen capacidades muy diferentes y ejecutan diferentes trabajos del profesional del marketing.
+A primera vista, podría parecer que el Editor universal y el Editor de fragmentos de contenido proporcionan funcionalidades de edición similares. Sin embargo, estos editores ofrecen capacidades muy diferentes y ejecutan diferentes trabajos del profesional del marketing.
 
 ### Editor de fragmentos de contenido {#content-fragment-editor}
 
@@ -89,7 +91,7 @@ Hable con su contacto de Adobe para obtener más información sobre las próxima
 Para obtener más información acerca del editor universal, consulte estos documentos.
 
 * [Creación de contenido con el editor universal](authoring.md): aprenda lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
-* [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el publicado.
+* [Publicación de contenido con el editor universal](publishing.md) - Descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 * [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 * [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 * [Atributos y tipos](attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.

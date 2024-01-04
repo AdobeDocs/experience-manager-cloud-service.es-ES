@@ -2,10 +2,10 @@
 title: Introducción al editor universal en AEM
 description: Obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 78%
+source-wordcount: '900'
+ht-degree: 76%
 
 ---
 
@@ -17,6 +17,8 @@ Obtenga información sobre cómo acceder al editor universal y cómo instrumenta
 >[!TIP]
 >
 >Si prefiere ir directamente a un ejemplo, puede revisar la [Aplicación de muestra del editor universal en GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
+
+{{universal-editor-status}}
 
 ## Pasos para la incorporación {#onboarding}
 
@@ -201,7 +203,7 @@ Para obtener más información acerca del editor universal, consulte estos docum
 
 * [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar cualquier aspecto de los contenidos en varias implementaciones para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
 * [Creación de contenido con el editor universal](authoring.md): aprenda lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
-* [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el publicado.
+* [Publicación de contenido con el editor universal](publishing.md) - Descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 * [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 * [Atributos y tipos](attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
 * [Autenticación del editor universal](authentication.md): obtenga información sobre cómo se autentica el editor universal.

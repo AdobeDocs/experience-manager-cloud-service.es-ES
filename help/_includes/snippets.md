@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+source-git-commit: 6a370269317621f09f0dcdc7f701d7c8a4891ea4
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 100%
+source-wordcount: '236'
+ht-degree: 80%
 
 ---
 # Fragmentos de código {#snippets}
@@ -18,6 +18,12 @@ ht-degree: 100%
 ## Versión limitada de configuración WAF {#waf-limited-release}
 
 [!BADGE La protección WAF-DDOS estará disponible a finales de 2023.]{type=Caution tooltip="La protección WAF-DDOS estará disponible a finales de 2023."}
+
+## Estado del editor universal {#universal-editor-status}
+
+>[!NOTE]
+>
+>El editor universal sigue en desarrollo y sus capacidades están sujetas a cambios y pueden diferir de lo que se detalla en este documento.
 
 ## Vea también {#see-also}
 

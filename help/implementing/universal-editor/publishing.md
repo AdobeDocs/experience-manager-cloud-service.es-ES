@@ -1,26 +1,28 @@
 ---
 title: Publicación de contenido con el editor universal
-description: Descubra cómo el Editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
+description: Descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 82%
+ht-degree: 55%
 
 ---
 
 
 # Publicación de contenido con el editor universal {#publishing}
 
-Descubra cómo el Editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
+Descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
+
+{{universal-editor-status}}
 
 ## Similitudes con AEM {#similarities}
 
-Para los usuarios de AEM, el proceso para publicar contenido con el Editor universal funciona como está acostumbrado: al publicar en AEM, el contenido se duplica desde el nivel de creación al nivel de publicación.
+AEM AEM Para los usuarios de, el proceso de publicación de contenido con el editor universal funciona como está acostumbrado: al publicarse en el editor, el contenido se replica desde el nivel de creación al de publicación, en el de publicación, en el de publicación.
 
 ## Diferencias {#differences}
 
-Lo que hace que la publicación con el Editor universal sea un poco diferente no es tanto el editor en sí, sino el alojamiento externo de la aplicación que el Editor universal hace posible.
+Lo que hace que la publicación con el editor universal sea un poco diferente no es tanto el editor en sí, sino el alojamiento externo de la aplicación que el editor universal hace posible.
 
 Cuando se aloja de forma externa, la aplicación web debe garantizar que el contenido se cargue desde el nivel de creación cuando los autores abren la aplicación en el editor y se carga desde el nivel de publicación cuando los visitantes acceden a la aplicación.
 
