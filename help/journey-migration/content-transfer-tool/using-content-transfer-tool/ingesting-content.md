@@ -96,9 +96,9 @@ Comience creando un trabajo de ingesta y asegúrese de que **Barrido** se desact
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
->title="Solución de problemas de ingesta de contenido"
+>title="Resolución de problemas de ingestión de contenidos"
 >abstract="Consulte los registros de ingesta y la documentación para encontrar soluciones a los motivos comunes por los que una ingesta puede fallar y encontrar la manera de solucionar el problema. Una vez corregida, la ingesta se puede ejecutar de nuevo."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Validación de transferencias de contenido"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=es" text="Validación de transferencias de contenido"
 
 ### CAM no puede recuperar el token de migración {#cam-unable-to-retrieve-the-migration-token}
 
