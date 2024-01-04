@@ -1,15 +1,15 @@
 ---
 title: Métodos abreviados de teclado para la consola Fragmentos de contenido
-description: Hay varios métodos abreviados de teclado disponibles mediante AEM, incluidos algunos para la administración de Fragmentos de contenido
+description: AEM Hay varios métodos abreviados del teclado disponibles mediante el uso de la opción, incluida una selección para administrar Fragmentos de contenido.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
+exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 94%
+source-wordcount: '223'
+ht-degree: 88%
 
 ---
-
 
 # Métodos abreviados de teclado para la consola Fragmentos de contenido {#keyboard-shortcuts-content-fragments-console}
 

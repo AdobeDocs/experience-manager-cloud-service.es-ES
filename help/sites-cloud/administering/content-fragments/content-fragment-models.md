@@ -1,13 +1,13 @@
 ---
 title: Modelos de fragmento de contenido
-description: Descubra cómo los modelos de fragmentos de contenido sirven de base para los fragmentos de contenido en AEM. Estos fragmentos le permiten crear contenido estructurado para utilizarlo en entregas sin encabezado o en la creación de páginas.
+description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para los fragmentos de contenido en las, lo que le permite crear contenido estructurado para utilizarlo en entregas sin encabezado o en la creación de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 59%
+source-wordcount: '3125'
+ht-degree: 56%
 
 ---
 
@@ -32,7 +32,7 @@ Para usar modelos de fragmentos de contenido, haga lo siguiente:
    >
    >Si la variable [No se ha habilitado el uso de modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/setup.md), el **Crear** Esta opción no estará disponible.
 
-1. Especifique el **Título del modelo**.
+1. Especifique el **Título de modelo**.
 También puede definir varias propiedades; por ejemplo, agregar **Etiquetas**, a **Descripción**, seleccione **Habilitar modelo** hasta [habilitar el modelo](#enabling-disabling-a-content-fragment-model) si es necesario, y defina la
    **Patrón de URL de previsualización predeterminado**.
 
@@ -131,7 +131,7 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
 
    Seleccione el campo requerido y, a continuación, seleccione el icono de la papelera. Se le solicitará que confirme la acción.
 
-   ![Quitar](assets/cf-cfmodels-remove-icon.png)
+   ![Eliminar](assets/cf-cfmodels-remove-icon.png)
 
 1. Añada todos los campos obligatorios y defina las propiedades relacionadas, según sea necesario. Por ejemplo:
 
@@ -262,8 +262,8 @@ Varios tipos de datos ahora incluyen la posibilidad de definir los requisitos de
 
   Campos que se han definido como **Campo múltiple** (configurado con **Procesar como**) tiene las siguientes opciones:
 
-   * **Número mín. de elementos**
-   * **Cantidad máx. de elementos**
+   * **Número mínimo de elementos**
+   * **Número máximo de elementos**
 
   Se validan en la [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md).
 
@@ -373,7 +373,7 @@ Esto especifica una ruta raíz para los fragmentos a los que se hace referencia.
 >
 >Existe un mecanismo de protección contra la recurrencia. Prohíbe que el usuario seleccione el fragmento de contenido actual en la Referencia a fragmento y puede provocar un cuadro de diálogo vacío del selector de Referencia a fragmento.
 >
->También existe una protección contra la recurrencia para las referencias fragmento en GraphQL. Si crea una consulta profunda en dos fragmentos de contenido que se hacen referencia entre sí, devolverá un valor nulo.
+>También hay protección contra recurrencias para las referencias a fragmento en GraphQL. Si crea una consulta profunda en dos fragmentos de contenido que se hacen referencia entre sí, devolverá un valor nulo.
 
 ## Activación o desactivación de un modelo de fragmento de contenido {#enabling-disabling-a-content-fragment-model}
 
