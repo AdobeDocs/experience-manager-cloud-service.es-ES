@@ -2,10 +2,10 @@
 title: Alineación de los KPI
 description: AEM Aprenda a elegir los KPI adecuados para su implementación de
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 93%
+source-wordcount: '482'
+ht-degree: 92%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 93%
 >id="aemcloud_alignkpis"
 >title="Alineación de los KPI"
 >abstract="En un mundo digital, se puede medir casi todo. Elegir los indicadores clave de rendimiento (KPI) adecuados para la implementación de Adobe Experience Manager ayudará a su equipo a enfocarse en lo más importante."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=es" text="Evaluación de los indicadores clave de rendimiento (KPI)"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=es" text="Elección del equipo adecuado"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="Evaluación de los indicadores clave de rendimiento (KPI)"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="Elección del equipo adecuado"
 
 En un mundo digital, se puede medir casi todo. Elegir tres KPI para la implementación de Adobe Experience Manager ayuda a su equipo a centrarse en lo que más importa.
 

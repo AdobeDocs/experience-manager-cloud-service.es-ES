@@ -2,10 +2,10 @@
 title: Personas adecuadas, funciones correctas
 description: Aprenda a elegir a las personas adecuadas y asignarlas a las funciones adecuadas para su proyecto.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 98%
+source-wordcount: '832'
+ht-degree: 97%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 98%
 >id="aemcloud_chooseteam"
 >title="Elija el equipo adecuado"
 >abstract="Debe colocar a las personas adecuadas en los trabajos correctos para que la implementación de Adobe Experience Manager tenga éxito."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aligning-kpis.html?lang=es" text="Alineación de los KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=es" text="Evaluación de los KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alineación de los KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="Evaluación de los KPI"
 
 Es probable que en su organización varios departamentos sean propietarios de diferentes aspectos de la experiencia digital. Sin gobierno, la fase está lista para interminables debates, luchas internas y confusión.
 

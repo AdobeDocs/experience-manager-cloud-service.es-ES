@@ -3,7 +3,7 @@ title: Implementación en AEM as a Cloud Service
 description: AEM Obtenga información acerca de los aspectos básicos y las prácticas recomendadas de implementación de en el as a Cloud Service de la
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '3429'
 ht-degree: 98%
@@ -175,7 +175,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Administrador de paquetes: migración de paquetes de contenido mutable"
 >abstract="Explore el uso de Administrador de paquetes para casos de uso en los que un paquete de contenido debe instalarse de forma &quot;única&quot;. La instalación incluye importar contenido específico desde la producción hasta el montaje para depurar un problema de producción, transferir un paquete de contenido pequeño del entorno local a entornos de AEM Cloud, etc."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es" text="Herramienta de transferencia de contenido"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="Herramienta de transferencia de contenido"
 
 Hay casos de uso en los que un paquete de contenido debe instalarse con definición. Por ejemplo, importar contenido específico de la producción a ensayo para depurar un problema de producción. Para estos escenarios, el [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) se puede utilizar en entornos de AEM as a Cloud Service.
 
