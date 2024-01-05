@@ -4,16 +4,16 @@ description: Comprenda cómo el editor de fragmentos de contenido utiliza la sin
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 79%
+source-wordcount: '586'
+ht-degree: 78%
 
 ---
 
 # Markdown {#markdown}
 
-Cuando usted es [creación](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza *markdown* sintaxis para permitirle escribir fácilmente contenido sin encabezado:
+Cuando usted es [creación](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza *markdown* sintaxis para permitirle escribir fácilmente contenido para una entrega sin encabezado o para la creación de páginas:
 
 >[!NOTE]
 >

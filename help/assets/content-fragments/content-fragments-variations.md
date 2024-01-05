@@ -1,17 +1,17 @@
 ---
-title: 'Variaciones: Crear contenido de fragmentos (Recursos: fragmentos de contenido)'
-description: AEM Comprenda de qué forma las variaciones pueden hacer que el contenido sin encabezado sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de ese contenido según el propósito.
+title: 'Variaciones: Creación de contenido de fragmentos (Recursos: fragmentos de contenido)'
+description: Comprenda cómo las variaciones de fragmentos de contenido le permiten crear contenido para el fragmento y luego crear variaciones de ese contenido según el propósito, aumentando así la flexibilidad.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 54%
+source-wordcount: '2474'
+ht-degree: 52%
 
 ---
 
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
-[Variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) AEM son una característica importante de los fragmentos de contenido de la. El motivo es que le permiten crear y editar copias del contenido principal para utilizarlas en canales y escenarios específicos, lo que hace que la entrega de contenido sin encabezado sea aún más flexible.
+[Variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una función significativa de los fragmentos de contenido en Adobe AEM Experience Manager () as a Cloud Service. Esto se debe a que le permiten crear y editar copias del **Principal** contenido para su uso en canales y escenarios específicos. En particular, esto hace que la entrega de contenido sin encabezado sea aún más flexible.
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ Volver a seleccionar la pestaña original (por ejemplo, **Little Pony Inc.**) ci
 
 La opción **Fragmento de contenido nuevo** permite crear un fragmento. Para conseguirlo, se abre en el editor una variación del asistente para crear fragmentos de contenido.
 
-**Crear un fragmento de contenido:**
+**Para crear un fragmento de contenido:**
 
 1. Ir a y seleccionar la carpeta requerida.
 1. Seleccionar **Siguiente**.

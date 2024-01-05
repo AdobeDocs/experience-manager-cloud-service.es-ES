@@ -1,11 +1,11 @@
 ---
 title: Modelos de fragmentos de contenido (recursos - fragmentos de contenido)
-description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en la creación de fragmentos de contenido y cómo crear fragmentos de contenido con contenido estructurado.
+description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en las, lo que le permite crear fragmentos de contenido con contenido estructurado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '3005'
-ht-degree: 88%
+source-wordcount: '3011'
+ht-degree: 87%
 
 ---
 
@@ -30,7 +30,7 @@ Para usar modelos de fragmentos de contenido, haga lo siguiente:
    >
    >Si [no se ha habilitado el uso de modelos de fragmentos de contenido](/help/assets/content-fragments/content-fragments-configuration-browser.md), la opción **Crear** no estará disponible.
 
-1. Especifique el **Título del modelo**.
+1. Especifique el **Título de modelo**.
 También puede definir varias propiedades; por ejemplo, agregar **Etiquetas**, a **Descripción** y seleccione **Habilitar modelo** hasta [habilitar el modelo](#enabling-disabling-a-content-fragment-model) si es necesario.
 
    >[!NOTE]
@@ -185,7 +185,7 @@ El contenido (para el campo específico) debe ser único en todos los fragmentos
 
   >[!CAUTION]
   >
-  >Si desea utilizar MSM (que crea copias de fragmentos de contenido), cualquier restricción **única** se debe eliminar de cualquier tipo de datos utilizado en los respectivos modelos de fragmentos de contenido.
+  >Si desea utilizar MSM (que crea copias de fragmentos de contenido), utilice cualquiera **Único** Las restricciones de deben eliminarse de cualquier tipo de datos utilizado en los respectivos modelos de fragmentos de contenido.
 
 * Consulte **[Referencia de contenido](#content-reference)** para obtener más información acerca de ese tipo de datos específico y sus propiedades.
 
@@ -216,8 +216,8 @@ Varios tipos de datos ahora incluyen la posibilidad de definir los requisitos de
 
   Campos que se han definido como **Campo múltiple** (configurado con **Procesar como**) tiene las siguientes opciones:
 
-   * **Número mín. de elementos**
-   * **Cantidad máx. de elementos**
+   * **Número mínimo de elementos**
+   * **Número máximo de elementos**
 
   Estos se validan:
 

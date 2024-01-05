@@ -1,17 +1,23 @@
 ---
 title: Contenido asociado (recursos - fragmentos de contenido)
-description: AEM Comprender cómo la función de contenido asociada proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento.
+description: AEM Comprenda cómo la función de contenido asociada para los fragmentos de contenido de proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 51%
+source-wordcount: '281'
+ht-degree: 41%
 
 ---
 
 # Contenido asociado{#associated-content}
 
-AEM La función de contenido asociado proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad para la entrega de contenido sin encabezado mediante [proporcionar una serie de recursos a los que acceder al utilizar el fragmento de contenido en una página,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) además de ayudar a reducir el tiempo necesario para buscar el recurso adecuado.
+En el caso de los fragmentos de contenido de Adobe Experience Manager AEM () as a Cloud Service, la función de contenido asociada (disponible en el editor original) proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento. Esto proporciona flexibilidad al [proporcionar una serie de recursos a los que acceder al utilizar el fragmento de contenido](/help/assets/content-fragments/content-fragments.md#using-associated-content), a la vez que reduce el tiempo necesario para buscar el recurso adecuado. Esta función se puede utilizar tanto para la entrega de contenido sin encabezado como para la creación de páginas.
+
+>[!NOTE]
+>
+>Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
+>
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola.
 
 ## Adición de contenido asociado {#adding-associated-content}
 

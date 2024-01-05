@@ -1,11 +1,11 @@
 ---
-title: 'Trabajar con fragmentos de contenido (Recursos: fragmentos de contenido)'
+title: Uso de fragmentos de contenido (recursos - fragmentos de contenido)
 description: Descubra cómo el as a Cloud Service Fragmentos de contenido en Adobe Experience Manager AEM () le permite diseñar, crear, depurar y utilizar contenido independiente de las páginas, lo que resulta ideal para la creación de páginas y la entrega sin encabezado. También cómo se pueden usar junto con MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2229'
-ht-degree: 58%
+source-wordcount: '2222'
+ht-degree: 57%
 
 ---
 
@@ -88,7 +88,7 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en v
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 >
->Para obtener más información, consulte también [AEM Explicación de los fragmentos de contenido y de experiencias en la creación de](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments?lang=es).
+>Para obtener más información, consulte también [AEM Explicación de los fragmentos de contenido y de experiencias en la creación de](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=es#content-fragments).
 
 ## Fragmentos de contenido y servicios de contenido {#content-fragments-and-content-services}
 
@@ -212,7 +212,7 @@ Los activos de fragmento de contenido están formados por las siguientes partes 
 
      >[!NOTE]
      >
-     >Los recursos también se pueden añadir como [contenido adicional (intermedio)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) al utilizar un fragmento en una página, usando contenido asociado o recursos del explorador Recursos.
+     >Los recursos también se pueden añadir como contenido adicional (intermedio) al utilizar un fragmento en una página mediante [Contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) o recursos del explorador de recursos.
 
 * **Contenido asociado**
 

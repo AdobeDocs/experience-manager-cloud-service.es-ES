@@ -2,16 +2,16 @@
 title: Árbol de estructura de fragmentos de contenido (Recursos - Fragmentos de contenido)
 description: Utilice la funcionalidad Árbol de estructura del Editor de fragmentos de contenido en AEM para comprender mejor el contenido sin encabezado.
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 50%
+source-wordcount: '172'
+ht-degree: 38%
 
 ---
 
 # Árbol de estructura de fragmento de contenido {#content-fragment-structure-tree}
 
-Utilice la funcionalidad Árbol de estructura del Editor de fragmentos de contenido en AEM para comprender mejor el contenido sin encabezado.
+AEM Utilice la función Árbol de estructura del Editor de fragmentos de contenido en la documentación de para comprender mejor el contenido, en particular para la entrega sin encabezado, en la.
 
 >[!NOTE]
 >

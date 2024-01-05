@@ -1,17 +1,17 @@
 ---
 title: Administración de fragmentos de contenido (recursos - fragmentos de contenido)
-description: AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, la base del contenido sin encabezado.
+description: AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, como base del contenido sin encabezado o para la creación de páginas.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 66%
+source-wordcount: '1885'
+ht-degree: 65%
 
 ---
 
 # Administración de los fragmentos de contenido {#managing-content-fragments}
 
-AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, la base del contenido sin encabezado.
+AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, como base del contenido sin encabezado o para la creación de páginas.
 
 Después de definir los [Modelos de fragmento de contenido](#creating-a-content-model) puede utilizarlas para [crear los fragmentos de contenido](#creating-a-content-fragment).
 
