@@ -1,12 +1,13 @@
 ---
 title: Administración de instancias de flujo de trabajo
-description: Obtenga información sobre cómo administrar instancias de flujo de trabajo uso de la consola de flujo de trabajo
+description: Obtenga información sobre cómo administrar instancias de flujo de trabajo mediante la consola de flujo de trabajo
 feature: Administering
 role: Admin
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 99%
+source-wordcount: '1286'
+ht-degree: 98%
 
 ---
 
@@ -31,26 +32,22 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 1. **Flujos de trabajo en ejecución** muestra el número de flujos de trabajo en ejecución y su estado. por ejemplo, en las imágenes especificadas, se muestra el número de **Flujos de trabajo en ejecución** y el **Estado** de la instancia de AEM:
 
    * **Estado: correcto**
-
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Estado: incorrecto**
-
      ![estado-incorrecto](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. En **Detalles del estado** de instancias de flujo de trabajo, haga clic en **Detalles**, para mostrar el **número de instancias de flujos de trabajo en ejecución**, **instancias de flujo de trabajo completadas**, **instancias de flujo de trabajo anuladas**, **instancias de flujo de trabajo fallidas**, etc. por ejemplo, a continuación se muestran las imágenes determinadas que muestran **Detalles del estado** con:
 
    * **Detalles del estado: correcto**
-
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Detalles del estado: incorrecto**
-
      ![detalles-estado-incorrecto](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > Para mantener la instancia de flujo de trabajo en buen estado, siga las prácticas recomendadas en [depuración regular de las instancias de flujo de trabajo](#regular-purging-of-workflow-instances) o [prácticas recomendadas del flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=es).
+   > Para mantener la instancia de flujo de trabajo en buen estado, siga las prácticas recomendadas en [depuración regular de las instancias de flujo de trabajo](#regular-purging-of-workflow-instances) o [prácticas recomendadas del flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Buscar instancias de flujo de trabajo {#search-workflow-instances}
 
@@ -114,7 +111,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 Cuando falla un flujo de trabajo, AEM proporciona la consola **Errores** para que pueda investigar y tomar las medidas adecuadas una vez que se haya manejado la causa original:
 
 * **Detalles del error**
-Abre una ventana para mostrar el **Mensaje de error**, **Paso y **Pila de errores**.
+Abre una ventana para mostrar el **Mensaje de error**, **Step y **Pila de errores**.
 
 * **Abrir historial**
 Muestra detalles del historial del flujo de trabajo.
@@ -268,5 +265,3 @@ public interface UserMetaDataPersistenceProvider {
  
 } 
 ```
-
-

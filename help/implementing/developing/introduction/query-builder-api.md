@@ -2,9 +2,9 @@
 title: API del Generador de consultas
 description: La funcionalidad del Asset Share Query Builder se expone a través de una API de Java&trade; y una API de REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ La API de REST proporciona acceso a las mismas funciones a través de HTTP con r
 
 ## Sesión de Gem {#gem-session}
 
-[AEM Gems de](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en) es una serie de conocimientos técnicos en Adobe Experience Manager proporcionados por expertos en Adobe.
+[AEM Gems de](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) es una serie de conocimientos técnicos en Adobe Experience Manager proporcionados por expertos en Adobe.
 
-Puede [revise la sesión dedicada al generador de consultas](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=en) para obtener información general y utilizar la herramienta.
+Puede [revise la sesión dedicada al generador de consultas](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) para obtener información general y utilizar la herramienta.
 
 ## Consultas de muestra {#sample-queries}
 
@@ -281,7 +281,7 @@ property.3_value=Whistler Mountain Biking
 
 De forma predeterminada, el servlet JSON de QueryBuilder devuelve un conjunto predeterminado de propiedades para cada nodo en el resultado de búsqueda (por ejemplo, ruta, nombre y título). Para obtener control sobre las propiedades que se devuelven, puede realizar una de las siguientes acciones:
 
-Especifique
+Especificar
 
 ```xml
 p.hits=full
@@ -320,7 +320,7 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-Otra cosa que puede hacer es incluir nodos secundarios en la respuesta del Generador de consultas. Especifique
+Otra cosa que puede hacer es incluir nodos secundarios en la respuesta del Generador de consultas. Especificar
 
 ```xml
 p.nodedepth=n

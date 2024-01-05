@@ -2,10 +2,10 @@
 title: Ejecución de una canalización
 description: En esta página se describe la ejecución de una canalización para el proyecto Screens as a Cloud Service en Cloud Manager.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 3%
+source-wordcount: '271'
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 En esta sección se describe cómo ejecutar la canalización e implementar el código para el programa en Cloud Manager.
 
 >[!NOTE]
->Consulte [Configuración de la canalización de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) y [Implemente su código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) para obtener información sobre cómo ejecutar la canalización para su programa en Cloud Manager.
+>Consulte [Configuración de la canalización de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) y [Implemente su código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) para obtener información sobre cómo ejecutar la canalización para su programa en Cloud Manager.
 
 ## Objetivo {#objective}
 
@@ -35,14 +35,14 @@ En la siguiente sección se describe cómo configurar la canalización de CI/CD 
 1. Seleccione las opciones en la **Configurar canalización** asistente. Haga clic en **Guardar**.
 
    >[!NOTE]
-   >Para obtener más información sobre las opciones del asistente Configurar canalización, consulte [Configuración de la canalización desde Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) para obtener más información.
+   >Para obtener más información sobre las opciones del asistente Configurar canalización, consulte [Configuración de la canalización desde Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) para obtener más información.
 
    ![imagen](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Una vez completada la configuración de la canalización, se actualiza la tarjeta de llamada a la acción.
 
    >[!NOTE]
-   >Para obtener más información sobre las fases de la implementación en Cloud Manager, consulte [Implementar el código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) para obtener más información.
+   >Para obtener más información sobre las fases de la implementación en Cloud Manager, consulte [Implementar el código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) para obtener más información.
 
    ![imagen](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

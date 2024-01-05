@@ -3,7 +3,7 @@ title: Generación de tokens de acceso para las API del lado del servidor (hered
 description: AEM Obtenga información sobre cómo facilitar la comunicación entre un servidor de terceros y el as a Cloud Service de la mediante la generación de un token JWT seguro
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -19,11 +19,11 @@ A continuación se describe el flujo de servidor a servidor, junto con un flujo 
 <!-- ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## El flujo de servidor a servidor {#the-server-to-server-flow}
 
-AEM AEM AEM Un usuario con un rol de administrador de organización de IMS y que también sea miembro del Perfil de producto de usuarios de la organización de IMS o administradores de la organización de la organización de AEM en AEM Author, puede generar una credencial as a Cloud Service de la organización de. AEM Esa credencial la puede recuperar posteriormente un usuario con la función de administrador de entorno as a Cloud Service de la y debe instalarse en el servidor y tratarse cuidadosamente como una clave secreta. AEM Este archivo de formato JSON contiene todos los datos necesarios para integrarse con una API as a Cloud Service de. Los datos se utilizan para crear un token JWT firmado, que se intercambia con IMS por un token de acceso IMS. AEM A continuación, este token de acceso se puede utilizar como token de autenticación del portador para realizar solicitudes a los as a Cloud Service de la. Las credenciales caducan después de un año de forma predeterminada, pero se pueden actualizar cuando sea necesario, tal como se describe a continuación [aquí](#refresh-credentials).
+AEM AEM AEM AEM Un usuario con una función de administrador de organización de IMS y que también sea miembro del Perfil de producto de usuarios de la organización de IMS o administradores de la en Autor de la organización de IMS, puede generar una credencial as a Cloud Service de la organización de IMS (en inglés) que se llame a la función de usuario de la organización de IMS. AEM Esa credencial la puede recuperar posteriormente un usuario con la función de administrador de entorno as a Cloud Service de la y debe instalarse en el servidor y tratarse cuidadosamente como una clave secreta. AEM Este archivo de formato JSON contiene todos los datos necesarios para integrarse con una API as a Cloud Service de. Los datos se utilizan para crear un token JWT firmado, que se intercambia con IMS por un token de acceso IMS. AEM A continuación, este token de acceso se puede utilizar como token de autenticación del portador para realizar solicitudes a los as a Cloud Service de la. Las credenciales caducan después de un año de forma predeterminada, pero se pueden actualizar cuando sea necesario, tal como se describe a continuación [aquí](#refresh-credentials).
 
 El flujo de servidor a servidor incluye los siguientes pasos:
 
@@ -65,7 +65,7 @@ Después de generarse, las credenciales se pueden recuperar más adelante presio
 
 >[!IMPORTANT]
 >
->AEM AEM Un administrador de organización de IMS, que suele ser el usuario que aprovisionó el entorno mediante Cloud Manager, y que también debe ser miembro del Perfil de producto de los usuarios o administradores de los administradores de la en AEM Author, accede a Developer Console. A continuación, deben hacer clic en **Generar credenciales de servicio** AEM para que las credenciales se generen y posteriormente las recupere un usuario con permisos de administrador en el entorno as a Cloud Service de la. Si el administrador de la organización de IMS no ha realizado esta tarea, un mensaje le informa de que necesita la función Administrador de organización de IMS.
+>AEM AEM AEM Un administrador de organización de IMS, que suele ser el usuario que aprovisionó el entorno mediante Cloud Manager, y que también debe ser miembro del Perfil de producto de los usuarios o administradores de la en Autor de la aplicación, accede a la consola de desarrollador. A continuación, deben hacer clic en **Generar credenciales de servicio** AEM para que las credenciales se generen y posteriormente las recupere un usuario con permisos de administrador en el entorno as a Cloud Service de la. Si el administrador de la organización de IMS no ha realizado esta tarea, un mensaje le informa de que necesita la función Administrador de organización de IMS.
 
 ### AEM AEM Instalación de las credenciales del servicio de en un servidor que no sea de tipo {#install-the-aem-service-credentials-on-a-non-aem-server}
 
@@ -111,7 +111,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 AEM Una vez que se crea el usuario de la cuenta técnica en la cuenta de usuario técnica de (se produce después de la primera solicitud con el token de acceso correspondiente), el usuario de la cuenta técnica debe recibir los permisos adecuados **in** AEM.
 
-AEM De forma predeterminada, en el servicio de creación de AEM, el usuario de la cuenta técnica se agrega al grupo de usuarios Colaboradores, que proporciona acceso de lectura a los usuarios de la cuenta de usuario de forma.
+AEM AEM De forma predeterminada, en el servicio de autor de la, el usuario de la cuenta técnica se agrega al grupo de usuarios Colaboradores, que proporciona acceso de lectura a los recursos de la cuenta de usuario de forma.
 
 AEM Este usuario de la cuenta técnica en la que se está usando puede aprovisionarse de permisos adicionales mediante los métodos habituales.
 
@@ -123,7 +123,7 @@ Consulte la [Documentación de directrices para desarrolladores](/help/implement
 
 >[!NOTE]
 >
->El token de acceso de desarrollo local es válido durante un máximo de 24 horas tras las cuales debe regenerarse mediante el mismo método.
+El token de acceso de desarrollo local es válido durante un máximo de 24 horas tras las cuales debe regenerarse mediante el mismo método.
 
 AEM AEM Los desarrolladores pueden utilizar este token para realizar llamadas desde su aplicación de prueba no-a un entorno as a Cloud Service de la. AEM Normalmente, el desarrollador utiliza este token con la aplicación que no es de la aplicación en su propio portátil, es decir, con la aplicación que no es de la misma aplicación. AEM Además, el entorno de as a Cloud no suele ser de producción.
 
@@ -152,7 +152,7 @@ Después de pulsar el botón, se genera un nuevo conjunto de credenciales. Puede
 
 >[!NOTE]
 >
->Después de hacer clic en **Actualizar credenciales del servicio** , las credenciales antiguas permanecen registradas hasta que caducan, pero solo el conjunto más reciente está disponible para verse desde Developer Console en un momento dado.
+Después de hacer clic en **Actualizar credenciales del servicio** , las credenciales antiguas permanecen registradas hasta que caducan, pero solo el conjunto más reciente está disponible para verse desde Developer Console en un momento dado.
 
 ## Revocación de credenciales de servicio {#service-credentials-revocation}
 

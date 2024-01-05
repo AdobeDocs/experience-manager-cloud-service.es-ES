@@ -3,9 +3,9 @@ title: Recursos de asistencia para Experience Manager as a Cloud Service Sites
 description: Obtenga una lista completa de todos los recursos de asistencia de Adobe AEM Cloud Services. Encuentre respuestas a sus preguntas sobre AEM Sites as Cloud Service.
 landing-page-description: Aprenda a crear y a administrar AEM Sites as a Cloud Service.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: ce841a83d46dc1c4fa2edc858e4a0be0af3ac170
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '383'
 ht-degree: 98%
 
 ---

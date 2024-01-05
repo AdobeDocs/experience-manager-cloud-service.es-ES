@@ -2,10 +2,10 @@
 title: Replicación
 description: AEM Obtenga información acerca de la distribución y la solución de problemas de replicación en as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 43%
+source-wordcount: '1312'
+ht-degree: 39%
 
 ---
 
@@ -57,11 +57,11 @@ Puede activar una replicación de árbol seleccionando **Herramientas - Flujo de
 
 No invoque el modelo original. En su lugar, asegúrese de copiar primero el modelo e invocar esa copia.
 
-Al igual que todos los flujos de trabajo, también se puede invocar mediante una API. Para obtener más información, consulte [Interactuar con flujos de trabajo mediante programación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=es#extending-aem).
+Al igual que todos los flujos de trabajo, también se puede invocar mediante una API. Para obtener más información, consulte [Interactuar con flujos de trabajo mediante programación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 También puede crear un modelo de flujo de trabajo que utilice la variable `Publish Content Tree` paso del proceso:
 
-1. Desde la página de inicio as a Cloud Service de AEM, vaya a **Herramientas - Flujo de trabajo - Modelos**.
+1. AEM En la página de inicio as a Cloud Service de la, vaya a **Herramientas - Flujo de trabajo - Modelos**.
 1. En la página Modelos de flujo de trabajo, pulse **Crear** en la esquina superior derecha de la pantalla.
 1. Agregue un título y un nombre al modelo. Para obtener más información, consulte [Creación de modelos de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es).
 1. Seleccione el modelo creado de la lista y pulse **Editar**

@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión 2021.2.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2021.2.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 33%
+source-wordcount: '1185'
+ht-degree: 34%
 
 ---
 
@@ -55,7 +55,7 @@ La de la siguiente versión (2021.3.0) será el 25 de marzo de 2021.
 
 * Los recursos se pueden obtener utilizando [!DNL Experience Manager Assets Brand Portal]. Ayuda a obtener activos de los usuarios de la agencia para nuevas campañas de marketing, fotos y proyectos.
 
-* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] tiene derecho a tener una configuración previa [!DNL Brand Portal] ejemplo. El [!DNL Cloud Manager] el usuario puede activar [!DNL Brand Portal] el [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Consulte [activar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=es).
+* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] tiene derecho a tener una configuración previa [!DNL Brand Portal] ejemplo. El [!DNL Cloud Manager] el usuario puede activar [!DNL Brand Portal] el [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Consulte [activar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 * Las empresas ahora pueden obtener recursos mediante [!DNL Brand Portal]. La función de obtención de recursos utiliza [!DNL Brand Portal] para ayudar a los clientes a interactuar con los usuarios de la agencia a fin de que obtengan activos para nuevas campañas de marketing, fotos y proyectos. Consulte [abastecimiento de recursos en [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es).
 
@@ -78,9 +78,9 @@ La de la siguiente versión (2021.3.0) será el 25 de marzo de 2021.
 
 * Se han ampliado las propiedades de la consola del producto para mostrar los recursos vinculados y los fragmentos de experiencias, incluida la acción para navegar rápidamente al contenido asociado.
 
-* Lanzamiento del sitio de referencia de CIF Venia el 24 de febrero de 2021, que incluye la versión más reciente de los componentes principales de CIF v1.8.0. Consulte [Sitio de referencia de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) para obtener más información.
+* CIF CIF Lanzamiento del sitio de referencia de Venia el 24 de febrero de 2021, que incluye la versión más reciente de componentes principales (v1.8.0) de la versión de Venia. Consulte [CIF Sitio de referencia de Venia en](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) para obtener más información.
 
-* Componentes principales de CIF v1.8.0. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) para obtener más información.
+* CIF Lanzamiento de los componentes principales de la versión 1.8.0 de. Consulte [CIF Componentes principales](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) para obtener más información.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -91,7 +91,7 @@ La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.2.0 es e
 ### Novedades {#what-is-new-cloud-manager}
 
 
-* Los clientes de Assets ahora podrán elegir cuándo y dónde implementar su instancia de Brand Portal de manera autoservicio mediante la interfaz de usuario de Cloud Manager. Para un programa normal (que no sea de zona protegida) con la solución Assets, ahora Brand Portal se puede aprovisionar en el entorno de producción. El aprovisionamiento solo se puede realizar una vez en el entorno de producción.
+* Los clientes de Assets ahora podrán elegir cuándo y dónde implementar su instancia de Brand Portal de manera autoservicio mediante la interfaz de usuario de Cloud Manager. Para un programa normal (que no sea de zona protegida) con la solución Assets, Brand Portal ahora se puede aprovisionar en el entorno de producción. El aprovisionamiento solo se puede realizar una vez en el entorno de producción.
 
 * El arquetipo del proyecto AEM utilizado en la creación de proyectos y de zonas protegidas se ha actualizado a la versión 25.
 
@@ -101,7 +101,7 @@ La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.2.0 es e
 
 * La interfaz de usuario de Cloud Manager informará al usuario que no pueda agregar o actualizar temporalmente el nombre de dominio porque el entorno asociado tiene una canalización en ejecución conectada a él o está en espera del paso de aprobación.
 
-* Propiedades establecidas en el cliente `pom.xml` los archivos con el prefijo sonar ahora se eliminan dinámicamente para evitar errores de análisis de calidad y generación.
+* Las propiedades establecidas en los archivos `pom.xml` del cliente con el prefijo “sonar” ahora se eliminan dinámicamente para evitar errores de análisis de calidad y digitalización.
 
 * La interfaz de usuario de Cloud Manager informará al usuario de que no puede seleccionar temporalmente un certificado SSL si lo está utilizando un nombre de dominio que se esté implementando actualmente.
 
@@ -123,7 +123,7 @@ La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.2.0 es e
 
 ### Fecha de la versión {#release-date-ctt}
 
-La fecha de lanzamiento de la herramienta de transferencia de contenido versión 1.2.4 es el 10 de febrero de 2021.
+La fecha de versión de la herramienta de transferencia de contenido v1.2.4 es el 10 de febrero de 2021.
 
 ### Correcciones de errores {#bug-fixes-ctt}
 
@@ -131,12 +131,12 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido versión
 
 ### Fecha de lanzamiento {#release-date-ctt-feb}
 
-La fecha de lanzamiento de la herramienta de transferencia de contenido versión 1.2.2 es el 01 de febrero de 2021.
+La fecha de lanzamiento de la herramienta de transferencia de contenido v1.2.2 es el 1 de febrero de 2021.
 
 ### Novedades de la herramienta de transferencia de contenido {#what-is-new-ctt}
 
 * Nueva capacidad e IU agregada a la herramienta de transferencia de contenido: herramienta de asignación de usuarios. Esta función asigna automáticamente los usuarios y grupos existentes a sus ID de sistema de Identity Management de Adobe como parte de la actividad de migración de contenido.
-Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=es) para obtener más información.
+Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obtener más información.
 * La herramienta de transferencia de contenido ahora migra todos los grupos y usuarios a los que se hace referencia en el conjunto de migración, incluidos los elementos secundarios.
 * Los usuarios pueden seleccionar determinadas rutas en `/etc` al crear conjuntos de migración.
 
@@ -159,7 +159,7 @@ La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.2 es el 1
 ### Novedades de las herramientas de refactorización de código {#what-is-new-crt}
 
 * Se ha lanzado la nueva versión del complemento AIO-CLI. La versión más reciente de este complemento incluye varias correcciones de errores para el Modernizador de repositorios.
-Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para obtener más información sobre este complemento.
+Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) para obtener más información sobre este complemento.
 
 ### Correcciones de errores {#bug-fixes-crt}
 

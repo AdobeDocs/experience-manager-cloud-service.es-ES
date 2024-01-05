@@ -2,10 +2,10 @@
 title: Desarrollo de un componente personalizado para Screens as a Cloud Service
 description: El siguiente tutorial muestra los pasos para crear un componente personalizado para AEM Screens. AEM Screens AEM reutiliza muchos patrones de diseño y tecnologías existentes de otros productos de la. El tutorial destaca las diferencias y las consideraciones especiales al desarrollar para AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 3%
+source-wordcount: '2042'
+ht-degree: 2%
 
 ---
 
@@ -28,12 +28,12 @@ Para completar este tutorial, necesita lo siguiente:
 
 1. Entorno de desarrollo local
 
-Los pasos y las capturas de pantalla del tutorial se realizan mediante **CRXDE Lite**. Los IDE también se pueden utilizar para completar el tutorial. Más información sobre cómo utilizar un IDE para desarrollar [AEM con el que se puede encontrar aquí.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en)
+Los pasos y las capturas de pantalla del tutorial se realizan mediante **CRXDE Lite**. Los IDE también se pueden utilizar para completar el tutorial. Más información sobre cómo utilizar un IDE para desarrollar [AEM con el que se puede encontrar aquí.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
 
 
 ## Configuración del proyecto {#project-setup}
 
-El código fuente de un proyecto de Screens se suele administrar como un proyecto Maven de varios módulos. Para acelerar el tutorial, se ha generado previamente un proyecto utilizando [AEM Arquetipo de proyecto 13](https://github.com/adobe/aem-project-archetype). Más información sobre [AEM Puede encontrar aquí la creación de un proyecto con el tipo de archivo del proyecto de Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en).
+El código fuente de un proyecto de Screens se suele administrar como un proyecto Maven de varios módulos. Para acelerar el tutorial, se ha generado previamente un proyecto utilizando [AEM Arquetipo de proyecto 13](https://github.com/adobe/aem-project-archetype). Más información sobre [AEM Puede encontrar aquí la creación de un proyecto con el tipo de archivo del proyecto de Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
 
 1. Descargue e instale los siguientes paquetes mediante [Administrador de paquetes CRX](http://localhost:4502/crx/packmgr/index.jsp):
 
@@ -129,7 +129,7 @@ AEM Screens tiene algunas restricciones interesantes que no son necesariamente v
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Los componentes de Screens requieren dos procesamientos diferentes, en función de qué [modo de creación](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=en#page-modes) se está utilizando:
+   Los componentes de Screens requieren dos procesamientos diferentes, en función de qué [modo de creación](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) se está utilizando:
 
    1. **Producción**: Modo de vista previa o publicación (wcmmode=disabled)
    1. **Editar**: se utiliza para todos los demás modos de creación, es decir, edición, diseño, andamiaje, desarrollador...
@@ -279,7 +279,7 @@ Los componentes de AEM Screens se representan de forma diferente en el modo de e
 
 1. Agregue las siguientes propiedades a la biblioteca de cliente compartida:
 
-   * `allowProxy` | Booleana | `true`
+   * `allowProxy` | Booleano | `true`
 
    * `categories`| Cadena[] | `cq.screens.components`
 
@@ -376,7 +376,7 @@ Una tercera categoría clientlibrary: `cq.screens.components.edit` se puede usar
 
 ## Crear una página de diseño {#design-page}
 
-AEM Screens utiliza [Plantillas de página estáticas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=es) y [Configuraciones de diseño](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=en) para cambios globales. Las configuraciones de diseño se utilizan frecuentemente para configurar los componentes permitidos para Parsys en un canal. Una práctica recomendada es almacenar estas configuraciones de una manera específica de la aplicación.
+AEM Screens utiliza [Plantillas de página estáticas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) y [Configuraciones de diseño](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) para cambios globales. Las configuraciones de diseño se utilizan frecuentemente para configurar los componentes permitidos para Parsys en un canal. Una práctica recomendada es almacenar estas configuraciones de una manera específica de la aplicación.
 
 A continuación se crea una página de diseño de ejecución de We.Retail que almacena todas las configuraciones específicas del proyecto de ejecución de We.Retail.
 

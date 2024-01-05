@@ -3,10 +3,10 @@ title: AEM Notas de la versión de las herramientas de migración de la versión
 description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2021.11.0 de
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 14%
+source-wordcount: '368'
+ht-degree: 11%
 
 ---
 
@@ -25,7 +25,7 @@ La fecha de lanzamiento de Cloud Acceleration Manager es el 25 de octubre de 202
 
 ### Novedades {#what-is-new-cam}
 
-Cloud Acceleration Manager ahora permite a los usuarios ver informes de BPA históricos en un informe de líneas de tendencias. Con este informe, los usuarios pueden ver el progreso que están realizando en una representación gráfica fácil de consumir. Consulte [Uso de Ver línea de tendencia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) para obtener más información.
+Cloud Acceleration Manager ahora permite a los usuarios ver informes de BPA históricos en un informe de líneas de tendencias. Con este informe, los usuarios pueden ver el progreso que están realizando en una representación gráfica fácil de consumir. Consulte [Uso de Ver línea de tendencia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#trendline-view-cam) para obtener más información.
 
 ### Fecha de lanzamiento {#release-date-october-cam}
 
@@ -33,7 +33,7 @@ La fecha de lanzamiento de Cloud Acceleration Manager es el 4 de octubre de 2021
 
 ### Novedades {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager ahora permite a los usuarios ver los informes de BPA en una vista previa imprimible, lo que permite hacer una impresión simple o una impresión en el PDF para compartir fácilmente. Consulte los pasos 6 y 7 en [Tarjeta de análisis de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager ahora permite a los usuarios ver los informes de BPA en una vista previa imprimible, lo que permite hacer una impresión simple o una impresión en el PDF para compartir fácilmente. Consulte los pasos 6 y 7 en [Tarjeta de análisis de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
 
 
 ## Herramienta de transferencia de contenido {#ctt-release}
@@ -44,7 +44,7 @@ La fecha de versión de la herramienta de transferencia de contenido v1.6.0 es e
 
 ### Novedades {#what-is-new-ctt-oct}
 
-* Se ha mejorado la herramienta de asignación de usuarios con una experiencia de usuario simplificada que incluye las siguientes funciones. Para obtener más información, consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
+* Se ha mejorado la herramienta de asignación de usuarios con una experiencia de usuario simplificada que incluye las siguientes funciones. Para obtener más información, consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html).
    * Probar la conexión a la API de administración de usuarios antes de ejecutar la asignación de usuarios
    * Omitir correctamente los errores y continuar con la actividad de asignación de usuarios
    * La asignación de usuarios ya no falla si **Token de acceso** caduca pasadas 24 horas. La asignación de usuarios se puede volver a ejecutar desde la última vez que se detuvo.

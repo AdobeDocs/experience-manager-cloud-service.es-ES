@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.1.0 de la versión [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión 2022.1.0 de la versión [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 87%
+source-wordcount: '1065'
+ht-degree: 86%
 
 ---
 
@@ -123,7 +123,7 @@ La fecha de versión de la herramienta de transferencia de contenido v1.8.6 es e
 
 ### Novedades {#what-is-new-ctt}
 
-* Validación de contenido: los usuarios pueden determinar de forma fiable si todo el contenido extraído por la herramienta de transferencia de contenido se ha introducido correctamente en la instancia de destino. Para utilizar esta función, actívela en la `System Console` AEM del entorno de origen de la. Consulte [Validación de transferencias de contenido: introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=es#getting-started) para obtener más información.
+* Validación de contenido: los usuarios pueden determinar de forma fiable si todo el contenido extraído por la herramienta de transferencia de contenido se ha introducido correctamente en la instancia de destino. Para utilizar esta función, actívela en la `System Console` AEM del entorno de origen de la. Consulte [Validación de transferencias de contenido: introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) para obtener más información.
 
 ### Correcciones de errores {#bug-fixes-ctt}
 

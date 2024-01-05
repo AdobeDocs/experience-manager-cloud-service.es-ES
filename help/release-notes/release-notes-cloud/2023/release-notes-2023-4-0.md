@@ -2,10 +2,10 @@
 title: Notas de la versión 2023.4.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.4.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 99%
+source-wordcount: '1122'
+ht-degree: 98%
 
 ---
 
@@ -42,9 +42,9 @@ Eche un vistazo al vídeo Información general sobre la versión de abril de 202
 
 ### Nuevas funciones en el canal de prelanzamiento de [!DNL Experience Manager Sites] {#prerelease-sites}
 
-* Los fragmentos de contenido y sus referencias ahora se pueden publicar en el [Servicio de previsualización de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=es#access-preview-service) mediante la [consola de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es), permitiendo a los usuarios previsualizar la experiencia final en una aplicación de vista previa disociada antes de lanzarse.
-* Las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante AEM GraphQL. Las [variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=es#query-variables) se pueden definir en las consultas de GraphQL para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de AEM.
-* Las etiquetas en las [variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-models.html?lang=es) ahora se pueden enviar a JSON mediante la API de entrega de contenido AEM GraphQL.
+* Los fragmentos de contenido y sus referencias ahora se pueden publicar en el [Servicio de previsualización de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html#access-preview-service) mediante la [consola de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es), permitiendo a los usuarios previsualizar la experiencia final en una aplicación de vista previa disociada antes de lanzarse.
+* Las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante AEM GraphQL. Las [variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) se pueden definir en las consultas de GraphQL para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de AEM.
+* Las etiquetas en las [variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) ahora se pueden enviar a JSON mediante la API de entrega de contenido AEM GraphQL.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -71,7 +71,7 @@ Eche un vistazo al vídeo Información general sobre la versión de abril de 202
 
 ### Función en [!DNL Assets] versión preliminar {#prerelease-feature-assets}
 
-* Dynamic Media: la interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen ahora se actualiza para reflejar las directrices actuales para definir un recorte inteligente. Consulte las [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=es#crop-options).
+* Dynamic Media: la interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen ahora se actualiza para reflejar las directrices actuales para definir un recorte inteligente. Consulte las [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

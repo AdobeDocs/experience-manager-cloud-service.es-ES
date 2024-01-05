@@ -3,9 +3,9 @@ title: Dispatcher en la nube
 description: Obtenga información sobre las herramientas de Dispatcher, los módulos Apache compatibles y los modos heredados y flexibles.
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '716'
 ht-degree: 98%
 
 ---

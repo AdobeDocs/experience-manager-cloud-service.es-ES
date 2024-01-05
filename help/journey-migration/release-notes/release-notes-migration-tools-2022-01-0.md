@@ -3,9 +3,9 @@ title: AEM Notas de la versión de las herramientas de migración de la versión
 description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2022.1.0 de
 feature: Release Information
 exl-id: cbd0c316-bda3-48fb-89d6-a8f97bad1970
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '133'
 ht-degree: 6%
 
 ---
@@ -22,7 +22,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido versión
 
 ### Novedades {#what-is-new-ctt}
 
-* Alternar añadido a la fase de extracción en la herramienta de transferencia de contenido para permitir que los usuarios puedan desactivarlo [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) durante la extracción. Para obtener velocidades de extracción óptimas, la copia previa durante la extracción debe deshabilitarse para conjuntos de migración pequeños o si solo se han agregado unos pocos blobs desde la última extracción.
+* Alternar añadido a la fase de extracción en la herramienta de transferencia de contenido para permitir que los usuarios puedan desactivarlo [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante la extracción. Para obtener velocidades de extracción óptimas, la copia previa durante la extracción debe deshabilitarse para conjuntos de migración pequeños o si solo se han agregado unos pocos blobs desde la última extracción.
 
 ### Correcciones de errores {#bug-fixes-ctt}
 

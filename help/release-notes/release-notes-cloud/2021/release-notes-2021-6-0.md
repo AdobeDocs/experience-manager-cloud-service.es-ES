@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 48%
+source-wordcount: '1432'
+ht-degree: 47%
 
 ---
 
@@ -43,7 +43,7 @@ AEM Esta sección describe las notas de la versión para Cloud Manager en las ve
 
 ### Fecha de lanzamiento {#release-date-june-cm}
 
-La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.6.0 es el 10 de junio de 2021.
+AEM La fecha de lanzamiento de Cloud Manager en la versión as a Cloud Service 2021.6.0 de es el 10 de junio de 2021.
 La próxima versión está planificada para el 15 de julio de 2021.
 
 ### Novedades {#what-is-new-junecm}
@@ -153,7 +153,7 @@ La fecha de lanzamiento as a Cloud Service de AEM Screens es el 24 de junio de 2
 ### Novedades {#what-is-new-screens-june}
 
 >[!NOTE]
->Consulte [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guía de conocimientos básicos necesarios para instalar, configurar y ejecutar correctamente Screens as a Cloud Service y vincular a la documentación técnica de conceptos detallados.
+>Consulte [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) Guía de conocimientos básicos necesarios para instalar, configurar y ejecutar correctamente Screens as a Cloud Service y vincular a la documentación técnica de conceptos detallados.
 
 * La administración del registro masivo de dispositivos significa que el aprovisionamiento de grandes cantidades de reproductores es más rápido y eficiente.
 
@@ -182,7 +182,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.5.4 e
 
 ### Novedades {#what-is-new-ctt-latest}
 
-* Compatibilidad con un [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) Se ha añadido un paso para utilizarlo con CTT. AEM El paso previo a la copia se puede utilizar para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido cuando la instancia de origen se configura para utilizar un almacén de datos de Amazon S3 o Azure Blob Storage.
+* Compatibilidad con un [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) Se ha añadido un paso para utilizarlo con CTT. AEM El paso previo a la copia se puede utilizar para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido cuando la instancia de origen se configura para utilizar un almacén de datos de Amazon S3 o Azure Blob Storage.
 
 * Se ha añadido una protección a CTT para evitar que los usuarios detengan una ingesta y corrompan los datos una vez que hayan alcanzado el punto crítico durante la fase de ingesta.
 

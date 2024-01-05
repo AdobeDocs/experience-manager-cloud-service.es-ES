@@ -2,9 +2,9 @@
 title: Creación y administración de pantallas en pantallas as a Cloud Service
 description: En esta página se describe cómo crear y administrar pantallas en Pantallas as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '649'
 ht-degree: 3%
 
 ---
@@ -133,4 +133,4 @@ Se puede acceder a todas las operaciones de carpeta a través de la barra de acc
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con el recorrido as a Cloud Service de Screens revisando el documento a continuación [Asignación de canales a una pantalla en Pantallas as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
+Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con el recorrido as a Cloud Service de Screens revisando el documento a continuación [Asignación de canales a una pantalla en Pantallas as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

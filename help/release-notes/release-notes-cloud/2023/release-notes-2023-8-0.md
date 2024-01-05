@@ -2,10 +2,10 @@
 title: Notas de la versión 2023.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 20%
+source-wordcount: '1691'
+ht-degree: 22%
 
 ---
 
@@ -15,7 +15,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] La versión de la funcionalidad actual (2023.8.0) es el 31 de agosto de 2023. La próxima versión de la funcionalidad (2023.9.0) está planificada para el 28 de septiembre de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.8.0) fue el viernes, 31 de agosto de 2023. La siguiente versión con funcionalidades (2023.9.0) está planificada para el viernes, 28 de septiembre de 2023.
 
 ## Vídeo de la versión {#release-video}
 
@@ -74,7 +74,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Edición de imágenes con Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flexibilidad al fijar elementos para el acceso rápido de Mi espacio de trabajo**: capacidad para seleccionar y anclar elementos para usted, para toda su organización o para una lista de grupos para que se muestren en el [Sección Acceso rápido de Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md) en función de su selección.
+* **Flexibilidad al anclar elementos para el acceso rápido a Mi espacio de trabajo**: capacidad para seleccionar y anclar elementos para usted, para toda su organización o para una lista de grupos para que se muestren en el [Sección Acceso rápido de Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md) en función de su selección.
 
   ![Fijar elementos para grupos](/help/release-notes/assets/pin-items-for-groups.png)
 
@@ -110,11 +110,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **Adobe Analytics con automatización de la configuración de Experience Cloud para Forms**: Ahora puede habilitar Adobe Analytics con la automatización de la configuración de Experience Cloud con un par de botones. Permite conectar AEM Forms as a Cloud Service con etiquetas de Experience Platform y Adobe Analytics para capturar y realizar un seguimiento de las métricas de rendimiento de los formularios publicados.
 
-* **Plantilla de informe de Adobe Analytics para Forms adaptable**: Forms as a Cloud Service ahora proporciona un informe OOTB de Adobe Analytics. Le ayuda a comprender fácilmente el rendimiento de sus formularios. Las métricas de nivel de formulario proporcionan una perspectiva del rendimiento del formulario en varios indicadores clave de rendimiento (KPI) como, representaciones, visitantes, envíos o tiempo medio de cumplimentación. Al realizar un seguimiento del comportamiento y los comentarios de los usuarios, se pueden identificar las áreas del formulario que causan confusión y guiar las mejoras en el diseño y la funcionalidad del formulario.
+* **Plantilla de informe de Adobe Analytics para Forms adaptable**: Forms as a Cloud Service ahora proporciona un informe OOTB de Adobe Analytics. Le ayuda a comprender fácilmente el rendimiento de sus formularios. Las métricas a nivel de formulario le proporcionan una perspectiva del rendimiento del formulario en varios indicadores clave de rendimiento (KPI) como, representaciones, visitantes, envíos, tiempo de relleno promedio. Al realizar un seguimiento del comportamiento y los comentarios de los usuarios, se pueden identificar las áreas del formulario que causan confusión y guiar las mejoras en el diseño y la funcionalidad del formulario.
 
   ![Informe de Adobe Analytics de participación del usuario del formulario adaptable](/help/forms/assets/forms-analytics-report.png)
 
-* **[Fragmento de formulario en Forms adaptable basado en componentes principales](/help/forms/adaptive-form-fragments-core-components.md)**: Diga adiós a la duplicación, optimice su inventario digital y mejore la colaboración a medida que eleva su experiencia de creación de formularios con fragmentos de formularios. Estos componentes reutilizables se integran perfectamente en varios formularios, lo que optimiza la creación de formularios coherentes y de aspecto profesional. Los fragmentos de formulario garantizan la reutilización, la estandarización y la coherencia de la marca mediante la funcionalidad &quot;cambiar una vez y reflejar en todas partes&quot;. Experimente una mayor capacidad de mantenimiento y eficacia, ya que las actualizaciones realizadas en un solo lugar se propagan automáticamente a todos los formularios que utilizan estos fragmentos.
+* **[Fragmento de formulario en Forms adaptable basado en componentes principales](/help/forms/adaptive-form-fragments-core-components.md)**: Diga adiós a la duplicación, optimice su inventario digital y mejore la colaboración a medida que eleva su experiencia de creación de formularios con fragmentos de formularios. Estos componentes reutilizables se integran perfectamente en varios formularios, lo que optimiza la creación de formularios coherentes y de aspecto profesional. Los fragmentos de formulario garantizan la reutilización, la estandarización y la coherencia de la marca mediante la funcionalidad “cambiar una vez y reflejar en todas partes”. Experimente una mayor capacidad de mantenimiento y eficacia, ya que las actualizaciones realizadas en un solo lugar se propagan automáticamente a todos los formularios que utilizan estos fragmentos.
 
 * **[Paso de flujo de trabajo de Adobe Sign mejorado](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: El paso del flujo de trabajo de Adobe Sign se ha mejorado para incluir lo siguiente:
    * **Autenticación basada en documentos de identidad oficiales para Adobe Sign**: la autenticación basada en documentos de identidad oficiales de Adobe Acrobat Sign ofrece un nivel adicional de verificación al permitir a los usuarios autenticarse con documentos de identidad emitidos por el gobierno (licencia de conducir, identificación nacional, pasaporte). Al utilizar documentos de identificación de confianza, esta mejora añade un nivel adicional de confianza al proceso de firma, lo que lo hace ideal para situaciones que requieren una mayor seguridad, conformidad y validación del usuario.
@@ -123,7 +123,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
    * **Nuevas funciones para los destinatarios del acuerdo más allá del firmante**: Adobe Acrobat Sign tiene la opción de ampliar las funciones de los destinatarios del acuerdo más allá del firmante para que coincidan mejor con sus requisitos de flujo de trabajo. Cuando se habilita, cada destinatario de un acuerdo tiene su función configurable individualmente, con firmante como predeterminado.
 
-* **[Protect carga sus documentos con las API de Document Assurance (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de Document Assurance le permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se transforma en un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan obtener acceso. Esta capa reforzada de protección no solo protege los datos valiosos de los ojos no autorizados, sino que también proporciona tranquilidad. Las API de firma permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos.
+* **[Protect carga sus documentos con las API de Document Assurance (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de Document Assurance le permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se transforma en un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan obtener acceso. Esta capa reforzada de protección no solo protege los datos valiosos de los ojos no autorizados, sino que también proporciona tranquilidad. Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos.
 
 * **Compatibilidad con recuentos de páginas en las API de comunicación**: Ahora, junto con recuperar el documento a través de las API de comunicación, también puede recibir la información valiosa sobre el número de páginas que contiene el documento.
 

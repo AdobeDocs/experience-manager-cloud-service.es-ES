@@ -2,7 +2,7 @@
 title: Go-Live
 description: Aprenda a realizar la migración una vez que el código y el contenido estén listos para la nube
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 4%
@@ -126,7 +126,7 @@ Revise esta lista de actividades para asegurarse de que la migración se realiza
 * Realice la recarga final del contenido.
 * Valide las configuraciones de Dispatcher.
    * Utilizar un validador de Dispatcher local que facilite la configuración, validación y simulación del Dispatcher localmente
-      * [Configure las herramientas locales de Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+      * [Configure las herramientas locales de Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
    * Revise detenidamente la configuración del host virtual.
       * La solución más fácil (y predeterminada) es incluir `ServerAlias *` en el archivo host virtual en el `/dispatcher/src/conf.d/available_vhostsfolder`.
          * Esto permitirá que funcionen los alias de host utilizados por las pruebas funcionales del producto, la invalidación de la caché del despachante y los clones.

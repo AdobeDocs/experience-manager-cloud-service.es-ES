@@ -3,10 +3,10 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: AEM Obtenga información acerca de los conceptos básicos del almacenamiento en caché en as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 2%
+source-wordcount: '2775'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ Este método es útil, por ejemplo, cuando la lógica empresarial requiere ajust
   ```
 
   >[!NOTE]
-  >El encabezado Surrogate-Control se aplica a la CDN administrada por Adobe. Si se usa un [CDN administrado por el cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), es posible que se requiera un encabezado diferente según el proveedor de CDN.
+  >El encabezado Surrogate-Control se aplica a la CDN administrada por Adobe. Si se usa un [CDN administrado por el cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), es posible que se requiera un encabezado diferente según el proveedor de CDN.
 
   Tenga cuidado al configurar encabezados de control de caché globales o encabezados de caché similares que coincidan con una regex amplia, de modo que no se apliquen al contenido que debe mantener privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se aplican de manera precisa. AEM Dicho esto, el encabezado de caché se elimina de forma as a Cloud Service si detecta que Dispatcher lo ha aplicado a lo que detecta que Dispatcher no puede almacenar en caché, tal como se describe en la documentación de Dispatcher. AEM Para obligar a los usuarios a aplicar siempre los encabezados de almacenamiento en caché, se puede añadir la variable **`always`** como se indica a continuación:
 
@@ -78,7 +78,7 @@ Este método es útil, por ejemplo, cuando la lógica empresarial requiere ajust
   >Los demás métodos, incluido el [AEM Dispatcher-ttl proyecto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anula correctamente los valores.
 
   >[!NOTE]
-  >Dispatcher puede seguir almacenando en caché el contenido según su propia caché [reglas de almacenamiento en caché](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=es). Para que el contenido sea verdaderamente privado, asegúrese de que Dispatcher no lo almacene en caché.
+  >Dispatcher puede seguir almacenando en caché el contenido según su propia caché [reglas de almacenamiento en caché](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Para que el contenido sea verdaderamente privado, asegúrese de que Dispatcher no lo almacene en caché.
 
 ### Bibliotecas del lado cliente (js,css) {#client-side-libraries}
 
@@ -240,7 +240,7 @@ En el caso de los entornos creados en octubre de 2023 o posterior, para almacena
 
 Envíe un ticket de asistencia si desea deshabilitar este comportamiento.
 
-En el caso de entornos creados antes de octubre de 2023, se recomienda configurar el de `ignoreUrlParams` propiedad como [documentado aquí](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#ignoring-url-parameters).
+En el caso de entornos creados antes de octubre de 2023, se recomienda configurar el de `ignoreUrlParams` propiedad como [documentado aquí](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 
 ## Invalidación de caché de Dispatcher {#disp}

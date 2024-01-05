@@ -2,10 +2,10 @@
 title: Notas de la versión 2020.11.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.11.0."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 19%
+source-wordcount: '1223'
+ht-degree: 16%
 
 ---
 
@@ -34,7 +34,7 @@ La de la siguiente versión (2020.12.0) será el 17 de diciembre de 2020
 
 * **Ingesta masiva de recursos**: proporcione a los clientes un servicio de ingesta escalable y nativo de la nube que utilice [!DNL Experience Manager] Arquitectura as a Cloud Service, incluidos los microservicios de recursos. Los casos de uso clave incluyen la ingesta a escala con monitorización, creación de informes y programación, a la vez que permiten la transferencia inicial de recursos a los almacenes de datos en la nube mediante herramientas comunes de carga en la nube. Consulte [herramienta ingestor masivo de recursos](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-  Esta herramienta es para usuarios administradores del sistema, consultores o socios de implementación. Esta función permite la ingesta a gran escala y se utiliza idealmente durante la ingesta inicial o la ingesta ocasional a gran escala. Para trabajos de ingesta más pequeños, utilice el [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) o [carga mediante la interfaz de usuario de Assets](/help/assets/add-assets.md#upload-assets).
+  Esta herramienta es para usuarios administradores del sistema, consultores o socios de implementación. Esta función permite la ingesta a gran escala y se utiliza idealmente durante la ingesta inicial o la ingesta ocasional a gran escala. Para trabajos de ingesta más pequeños, utilice el [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es) o [carga mediante la interfaz de usuario de Assets](/help/assets/add-assets.md#upload-assets).
 
   ![Configuración del importador en bloque](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -73,9 +73,9 @@ La de la siguiente versión (2020.12.0) será el 17 de diciembre de 2020
 
 ### Novedades {#what-is-new-commerce}
 
-* CIF CIF Lanzamiento del sitio de referencia de Venia el 11 de noviembre de 2020, que incluye la versión más reciente de componentes principales de la versión v1.5.0 de la versión de Venia, el 2020. Consulte [Sitio de referencia de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) para obtener más información.
+* CIF CIF Lanzamiento del sitio de referencia de Venia el 11 de noviembre de 2020, que incluye la versión más reciente de componentes principales de la versión v1.5.0 de la versión de Venia, el 2020. Consulte [CIF Sitio de referencia de Venia en](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) para obtener más información.
 
-* CIF Lanzamiento de los componentes principales de la versión 1.5.0 de. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) para obtener más información.
+* CIF Lanzamiento de los componentes principales de la versión 1.5.0 de. Consulte [CIF Componentes principales](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) para obtener más información.
 
 ### Correcciones de errores {#bug-fixes-commerce}
 
@@ -113,7 +113,7 @@ Consulte [Administración de entornos](/help/implementing/cloud-manager/manage-e
 
 ### Analizadores de creación de SDK {#analyzers}
 
-El complemento Maven de AEM as a Cloud Service SDK Build Analyzer detecta problemas en un proyecto maven, incluidas las dependencias que faltan. Proporciona a los desarrolladores la oportunidad de descubrir problemas durante el desarrollo local, mucho antes de implementarlos en entornos de nube con Cloud Manager. Para obtener más información, consulte la documentación [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es#developing) y [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+El complemento Maven de AEM as a Cloud Service SDK Build Analyzer detecta problemas en un proyecto maven, incluidas las dependencias que faltan. Ofrece a los desarrolladores la oportunidad de descubrir problemas durante el desarrollo local, mucho antes de implementarlos en entornos Cloud con Cloud Manager. Para obtener más información, consulte la documentación [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es#developing) y [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
 
 ### Otros {#others-foundation}
 
@@ -121,7 +121,7 @@ Nuevo [Sintaxis &quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overvie
 
 ## Herramienta de transferencia de contenido {#content-transfer-tool}
 
-Siga esta sección para conocer las novedades y las actualizaciones de [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang?es) Versión v1.1.12.
+Siga esta sección para conocer las novedades y las actualizaciones de [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Versión v1.1.12.
 
 ### Novedades {#what-is-new-ctt}
 

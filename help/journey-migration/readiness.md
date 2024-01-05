@@ -2,10 +2,10 @@
 title: Fase de preparación
 description: AEM Obtenga información acerca de los pasos que debe seguir para asegurarse de que la instalación de la está lista para moverse a la nube.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 7%
+source-wordcount: '1900'
+ht-degree: 6%
 
 ---
 
@@ -49,7 +49,7 @@ AEM La lista de los elementos de la siguiente tabla es el subconjunto de los cam
 <tbody>
   <tr>
     <td>Separar filtros mutables e inmutables en paquetes correspondientes</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=es">AEM Cambios importantes as a Cloud Service</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEM AEM Estructura del proyecto de para el as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">AEM Cambios importantes as a Cloud Service</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEM AEM Estructura del proyecto de para el as a Cloud Service</a></td>
     <td>AEM Un paquete único que se puede implementar en el as a Cloud Service puede tener subpaquetes, principalmente para contener contenido mutable e inmutable separado en sus propios paquetes.</td>
   </tr>
   <tr>
@@ -89,12 +89,12 @@ AEM La lista de los elementos de la siguiente tabla es el subconjunto de los cam
   </tr>
   <tr>
     <td>Cambiar a operaciones asincrónicas</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">Configuración de operaciones asincrónicas</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html#configuring-asynchronous-msm-operations">Configuración de operaciones asincrónicas</a></td>
     <td>Para mejorar el rendimiento general de los entornos, ciertas operaciones se ejecutan en modo asincrónico. Los trabajos asincrónicos se ponen en cola y se ejecutan cuando hay recursos del sistema disponibles.</td>
   </tr>
   <tr>
     <td>Estrategias de autenticación e integración basadas en tokens</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">Generación de tokens de acceso para las API del lado del servidor</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">Tutorial de autenticación basada en tokens</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow">Generación de tokens de acceso para las API del lado del servidor</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication">Tutorial de autenticación basada en tokens</a></td>
     <td>AEM AEM Es habitual que los sistemas externos a los que se realiza la operación de la conexión estén intentando realizar operaciones HTTP dentro de los sistemas de la conexión de red<br>AEM El enfoque recomendado es implementar las estrategias descritas aquí, en lugar de depender de la creación de nombres de usuario locales con contraseñas en el.</td>
   </tr>
   <tr>
@@ -109,13 +109,13 @@ AEM La lista de los elementos de la siguiente tabla es el subconjunto de los cam
   </tr>
   <tr>
     <td>AEM Métodos de carga de recursos y pasos de proceso de flujo de trabajo admitidos en el as a Cloud Service</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">Cargar comparaciones de API y pasos de proceso de WF admitidos</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html#post-processing-workflows-steps">Cargar comparaciones de API y pasos de proceso de WF admitidos</a></td>
     <td>AEM En as a Cloud Service, durante la carga o descarga de un recurso, el recurso se transmite directamente dentro o fuera del almacenamiento binario. <br>No todos los pasos del proceso de flujo de trabajo son compatibles con AEMaaCS.</td>
   </tr>
   <tr>
     <td>Lanzadores de flujo de trabajo</td>
     <td></td>
-    <td>Elimine del código cualquier lanzador de flujos de trabajo que active el flujo de trabajo de recursos de actualización de DAM predeterminado o personalizado. <br>AEM El servicio de procesamiento de recursos procesará todos los recursos cargados en el recurso as a Cloud Service de la. Para ver los pasos personalizados, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Flujos de trabajo de posprocesamiento</a> sobre cómo configurar flujos de trabajo posteriores al procesamiento.</td>
+    <td>Elimine del código cualquier lanzador de flujos de trabajo que active el flujo de trabajo de recursos de actualización de DAM predeterminado o personalizado. <br>AEM El servicio de procesamiento de recursos procesará todos los recursos cargados en el recurso as a Cloud Service de la. Para ver los pasos personalizados, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> Flujos de trabajo de posprocesamiento</a> sobre cómo configurar flujos de trabajo posteriores al procesamiento.</td>
   </tr>
   <tr>
     <td>Pasos de representación personalizada</td>
@@ -139,7 +139,7 @@ AEM La lista de los elementos de la siguiente tabla es el subconjunto de los cam
   </tr>
   <tr>
     <td>Configuraciones y almacenamiento en caché de Dispatcher</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">Dispatcher en la nube</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=en#other-content">Administración de caché<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">Dispatcher en la nube</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">Administración de caché<br></td>
     <td>Las configuraciones de Dispatcher deben seguir una estructura específica.<br>Las configuraciones deben administrarse como parte del código e implementarse mediante la canalización de Cloud Manager.</td>
   </tr>
   <tr>
@@ -149,7 +149,7 @@ AEM La lista de los elementos de la siguiente tabla es el subconjunto de los cam
   </tr>
   <tr>
     <td>Cambios en la autenticación</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=es">Compatibilidad con IMS para AEM as a Cloud Service</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">Compatibilidad con IMS para AEM as a Cloud Service</td>
     <td>Si anteriormente utilizaba la integración con SAML 2.0 tanto en creación como en publicación antes de pasar a Cloud Service AEM, el cambio principal es que Autor as a Cloud Service solo se integra con Adobe IMS. AEM Sin embargo, el nivel de publicación as a Cloud Service de la todavía puede utilizar SAML u otras integraciones de autenticación. AEM as a Cloud Service ofrece compatibilidad con la autenticación IMS solo para usuarios creadores, administradores y desarrolladores. La autenticación IMS no ofrece compatibilidad con usuarios finales externos de sitios de clientes como visitantes del sitio.</td>
   </tr>
 </tbody>
@@ -171,7 +171,7 @@ La siguiente figura muestra los pasos clave involucrados durante la fase de revi
 
 A continuación, explora en detalle qué significa cada uno de estos pasos.
 
-### Evaluación de la preparación de Cloud Service {#assess-cloud-readiness}
+### Evaluación de la preparación del Cloud Service {#assess-cloud-readiness}
 
 AEM El primer paso es evaluar la preparación para pasar de la versión de su existente a la de Cloud Service AEM y determinar las áreas que requieren refactorización para que sean compatibles con las versiones as a Cloud Service de la.
 
@@ -200,11 +200,11 @@ Un informe típico debe contener estas entradas:
 
 Una vez completados los informes del Analizador de prácticas recomendadas, compártalos con los equipos relevantes para que pueda confirmar las conclusiones y planificar los pasos siguientes. Según sus preferencias, también puede distribuir una versión impresa del informe utilizando [Vista preliminar](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
 
-### Revisión de la planificación de recursos {#review-resource-planning}
+### Revisión de Planificación de Recursos {#review-resource-planning}
 
 Una vez que haya calculado el nivel de esfuerzo necesario para pasar a Cloud Service, debe identificar los recursos, crear un equipo y asignar funciones y responsabilidades para el proceso de transición.
 
-### Establecimiento de los KPI {#establish-kpis}
+### Establecimiento de KPI {#establish-kpis}
 
 AEM Si no ha establecido los Indicadores clave de rendimiento (KPI) anteriormente, se recomienda establecer los KPI para la implementación de la aplicación de la para ayudar a su equipo a centrarse en lo que más importa.
 

@@ -2,10 +2,10 @@
 title: Notas de la versión 2020.12.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2020.12.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 13%
+source-wordcount: '652'
+ht-degree: 11%
 
 ---
 
@@ -36,9 +36,9 @@ La de la siguiente versión (2021.1.0) es el 28 de enero de 2021.
 
 ### Novedades {#what-is-new-commerce}
 
-* CIF CIF Lanzamiento del sitio de referencia de Venia de la versión 2020.12.01, que incluye la versión más reciente de componentes principales de la versión 1.6.0 de la versión de Venia. Consulte [Sitio de referencia de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) para obtener más información.
+* CIF CIF Lanzamiento del sitio de referencia de Venia de la versión 2020.12.01, que incluye la versión más reciente de componentes principales de la versión 1.6.0 de la versión de Venia. Consulte [CIF Sitio de referencia de Venia en](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) para obtener más información.
 
-* CIF Lanzamiento de los componentes principales de la versión 1.6.0 de. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) para obtener más información.
+* CIF Lanzamiento de los componentes principales de la versión 1.6.0 de. Consulte [CIF Componentes principales](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) para obtener más información.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -64,7 +64,7 @@ La fecha de lanzamiento de Cloud Manager en Adobe Experience Manager AEM () as a
 
 ### Novedades de [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Se ha lanzado la nueva versión del complemento AIO-CLI. AEM La versión más reciente de este plug-in incluye correcciones de errores para el Conversor de Dispatcher de y el Modernizador de repositorios, y también admite una nueva utilidad: Convertidor de índices. Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=en#benefits) donde puede obtener más información sobre este complemento.
+* Se ha lanzado la nueva versión del complemento AIO-CLI. AEM La versión más reciente de este plug-in incluye correcciones de errores para el Conversor de Dispatcher de y el Modernizador de repositorios, y también admite una nueva utilidad: Convertidor de índices. Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) donde puede obtener más información sobre este complemento.
 
 * AEM Index Converter es una utilidad que se puede usar para transformar las definiciones de índice Oak personalizadas de un cliente para que sean compatibles con las definiciones de índice Oak as a Cloud Service. Consulte [Conversor de índices](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) para obtener más información.
 

@@ -2,10 +2,10 @@
 title: Generación de tokens de acceso para las API del lado del servidor
 description: AEM Obtenga información sobre cómo facilitar la comunicación entre un servidor de terceros y el as a Cloud Service de la mediante la generación de un token JWT seguro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2089'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ A continuación se describe el flujo de servidor a servidor, junto con un flujo 
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## El flujo de servidor a servidor {#the-server-to-server-flow}
 
@@ -122,7 +122,7 @@ En primer lugar, se debe crear un nuevo perfil de producto en Adobe Admin Consol
 1. Seleccione el perfil que ha creado en la lista de perfiles.
 1. Seleccionar **Añadir usuario**.
 
-   ![Agregar usuario](/help/implementing/developing/introduction/assets/s2s-addusers.png)
+   ![Añadir usuario](/help/implementing/developing/introduction/assets/s2s-addusers.png)
 
 1. Añada la cuenta técnica que ha creado (en este caso, ) `84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`) y haga clic en **Guardar**.
 
@@ -154,7 +154,7 @@ También puede comprobar que la cuenta técnica aparece en la lista del usuario 
 1. Compruebe que su cuenta técnica de es la lista de usuarios y selecciónela.
 1. Haga clic en **Grupos** para que pueda verificar que el usuario forma parte del grupo que corresponde al perfil de producto. Este usuario también es miembro de un puñado de otros grupos, incluidos los Colaboradores:
 
-   ![Miembros del grupo](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
+   ![Pertenencia a grupo](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
 
 >[!NOTE]
 >

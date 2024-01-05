@@ -4,7 +4,7 @@ description: Uso de la herramienta de asignación de usuarios (heredada)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 1%
@@ -94,7 +94,7 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
 
    >[!IMPORTANT]
    >
-   >* Una vez finalizada la asignación de usuarios, puede volver a la página Migración de contenido con la ruta de exploración. La tarjeta Asignación de usuarios muestra el estado y la marca de tiempo. Clic **Transferencia de contenido** para poder crear un conjunto de migración para ejecutar la extracción. Consulte [Ejecución de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) para obtener más información.
+   >* Una vez finalizada la asignación de usuarios, puede volver a la página Migración de contenido con la ruta de exploración. La tarjeta Asignación de usuarios muestra el estado y la marca de tiempo. Clic **Transferencia de contenido** para poder crear un conjunto de migración para ejecutar la extracción. Consulte [Ejecución de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obtener más información.
 
 ### Reanudación del proceso de asignación de usuarios {#resume-user-mapping-process}
 

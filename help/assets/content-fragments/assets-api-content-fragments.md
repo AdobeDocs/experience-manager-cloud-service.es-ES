@@ -3,7 +3,7 @@ title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager as
 description: Obtenga información acerca de la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de la función de entrega sin encabezado de Adobe Experience Manager.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 11%
@@ -153,8 +153,8 @@ AEM Si la API de REST de Assets se utiliza en un entorno sin requisitos de auten
 >
 >Para obtener más información, consulte:
 >
->* [Explicación de CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
->* [AEM Vídeo: Desarrollo de CORS con la aplicación de la tecnología de la información (04:06).](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
+>* [Explicación de CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [AEM Vídeo: Desarrollo de CORS con la aplicación de la tecnología de la información (04:06).](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 En entornos con requisitos de autenticación específicos, se recomienda OAuth.
@@ -358,4 +358,4 @@ Consulte aquí las referencias detalladas de la API:
 Para obtener más información, consulte lo siguiente:
 
 * [Documentación de la API HTTP de Assets](/help/assets/mac-api-assets.md)
-* [AEM Sesión de Gem de: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=en)
+* [AEM Sesión de Gem de: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)

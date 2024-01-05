@@ -3,10 +3,10 @@ title: AEM Notas de la versión de las herramientas de migración de la versión
 description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.03.0 de
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
-source-git-commit: d7e5a14c2dfee41b4ab5af733218fe58d17871fa
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 10%
+source-wordcount: '301'
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ AEM Esta página describe las notas de la versión de las herramientas de migrac
 
 ### Fecha de la versión {#release-date-bpa}
 
-El 03 de marzo de 2023 es la fecha de lanzamiento del Analizador de prácticas recomendadas versión 2.1.40.
+La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.40 es el 3 de marzo de 2023.
 
 ### Novedades {#what-is-new-bpa}
 
@@ -37,8 +37,8 @@ La fecha de versión de la herramienta de transferencia de contenido v2.0.16 es 
 
 ### Novedades {#what-is-new-ctt}
 
-* La asignación de usuarios se ha optimizado e integrado en el paso de extracción de contenido. No es necesario realizar ninguna configuración y, de forma predeterminada, la asignación de usuarios se realiza automáticamente cuando el usuario inicia la extracción de contenido. El usuario tiene la opción de deshabilitar la asignación de usuarios si es necesario. Más información [aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
-* El paso de precopia mediante [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) se ha integrado con la herramienta de transferencia de contenido para acelerar significativamente las extracciones de contenido. La precopia se configura e instala automáticamente cuando se instala esta versión de CTT. De forma predeterminada, cuando se inicia la extracción, la precopia se ejecutará automáticamente para los conjuntos de migración de más de 200 GB. El usuario tiene la opción de desactivarla si es necesario. Más información [aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)
+* La asignación de usuarios se ha optimizado e integrado en el paso de extracción de contenido. No es necesario realizar ninguna configuración y, de forma predeterminada, la asignación de usuarios se realiza automáticamente cuando el usuario inicia la extracción de contenido. El usuario tiene la opción de deshabilitar la asignación de usuarios si es necesario. Más información [aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail)
+* El paso de precopia mediante [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) se ha integrado con la herramienta de transferencia de contenido para acelerar significativamente las extracciones de contenido. La precopia se configura e instala automáticamente cuando se instala esta versión de CTT. De forma predeterminada, cuando se inicia la extracción, la precopia se ejecutará automáticamente para los conjuntos de migración de más de 200 GB. El usuario tiene la opción de desactivarla si es necesario. Más información [aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)
 * Ahora, CTT se puede utilizar en servidores de Windows.
 
 ### Correcciones de errores {#bug-fixes-ctt}

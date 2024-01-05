@@ -2,7 +2,7 @@
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad del sistema de administración de imágenes con Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 0074f483bffa1cd7c2cc468a74730672511f0956
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 99%
@@ -213,7 +213,7 @@ Para poder acceder a los entornos de Cloud Manager o AEM as a Cloud Service, se 
 Consulte Definiciones de funciones para obtener más información sobre las funciones de los usuarios que rigen la disponibilidad de características específicas en Cloud Manager.
 
 >[!NOTE]
->Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Para obtener más información sobre cada una de las funciones con permisos específicos, tareas preconfiguradas o permisos asociados a cada función, consulte [Permisos basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es).
+>Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Para obtener más información sobre cada una de las funciones con permisos específicos, tareas preconfiguradas o permisos asociados a cada función, consulte [Permisos basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html).
 
 **Pasos para Añadir un usuario**
 

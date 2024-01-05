@@ -2,10 +2,10 @@
 title: Directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido
 description: Conozca las directrices y las prácticas recomendadas para utilizar la herramienta de transferencia de contenido.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 16%
+source-wordcount: '1401'
+ht-degree: 15%
 
 ---
 
@@ -35,7 +35,7 @@ No se admiten versiones anteriores a la 2.0.0 y se recomienda utilizar la versi�
 
 Las siguientes directrices y prácticas recomendadas se aplican a la nueva versión de la herramienta de transferencia de contenido:
 
-* Ejecutar [Limpieza de revisión](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=es) y [comprobaciones de coherencia del almacén de datos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=es) en el **origen** repositorio para que pueda identificar posibles problemas y reducir el tamaño del repositorio.
+* Ejecutar [Limpieza de revisión](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=es) y [comprobaciones de coherencia del almacén de datos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) en el **origen** repositorio para que pueda identificar posibles problemas y reducir el tamaño del repositorio.
 
 * En la fase de ingesta, Adobe recomienda ejecutar la ingesta utilizando *barrido* modo activado en el que se elimina el repositorio existente (autor o publicación) en el entorno del Cloud Service de Adobe Experience Manager AEM () de destino. A continuación, actualice con los datos del conjunto de migración. Este modo es más rápido que el modo sin borrado, donde el conjunto de migración se aplica sobre el contenido actual.
 
@@ -47,7 +47,7 @@ La fórmula general para calcular el espacio libre necesario en disco es la sigu
 
    * *tamaño del almacén de datos*: la herramienta de transferencia de contenido utiliza 64 GB, incluso si el almacén de datos real es más grande.
    * *tamaño del almacén de nodos*: el tamaño del directorio del almacén de segmentos o el tamaño de la base de datos MongoDB.
-Por lo tanto, para un tamaño de almacén de segmentos de 20 GB, el espacio libre requerido en disco sería de 94 GB.
+Por lo tanto, para un tamaño de almacén de segmentos de 20 GB, el espacio libre requerido en disco sería de 94 GB.
 
 * Se debe mantener un conjunto de migración a lo largo de la actividad de transferencia de contenido para admitir recargas de contenido. Se puede crear y mantener un máximo de 20 conjuntos de migración por proyecto en Cloud Acceleration Manager a la vez durante la actividad de transferencia de contenido. Si se necesitan más de 20 conjuntos de migración, cree un segundo proyecto en Cloud Acceleration Manager. Sin embargo, esto requiere administración de proyectos adicional y administración externa al producto para evitar que varios usuarios sobrescriban contenido en el destino.
 

@@ -2,7 +2,7 @@
 title: Centro de acciones
 description: Aproveche el Centro de Acciones para actuar convenientemente sobre incidentes y otra información importante
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 73%
@@ -72,5 +72,5 @@ En la tabla siguiente se enumeran los tipos de notificación admitidos actualmen
 | Tipo de notificación | Perfil de producto relacionado | Acción correctiva |
 |---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cola de replicación bloqueada | Problema | Desbloquear la cola siguiendo las instrucciones de la [Documentación de replicación](/help/operations/replication.md#troubleshooting) |
-| Consulta GraphQL persistente no válida | Problema | Corrija la consulta de GraphQL no válida haciendo referencia a la variable [Documentación de solución de problemas de consultas persistentes de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
+| Consulta GraphQL persistente no válida | Problema | Corrija la consulta de GraphQL no válida haciendo referencia a la variable [Documentación de solución de problemas de consultas persistentes de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Certificado S2S caducado | Proactivo | Obtenga información sobre cómo actualizar una credencial en la [documentación de Generación de tokens de acceso para las API del lado del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) |

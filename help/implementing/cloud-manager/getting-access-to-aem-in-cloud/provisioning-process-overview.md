@@ -1,10 +1,10 @@
 ---
 title: 'Proceso de aprovisionamiento: información general'
 description: 'Proceso de aprovisionamiento: información general'
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '330'
-ht-degree: 100%
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 98%
 
 ---
 
@@ -39,8 +39,8 @@ Para obtener más información, consulte [Incorporación a Experience Manager as
 ### Recursos y vínculos
 
 * [Compatibilidad con IMS para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=es)
-* [Permisos basados en roles en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=es#what-is-required)
-* [Acceder a Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=es#getting-access)
+* [Permisos basados en roles en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html#what-is-required)
+* [Acceder a Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#getting-access)
 
 
 ## Proceso de incorporación de Adobe Experience Manager as a Cloud Service
@@ -74,4 +74,4 @@ Tres métodos para incorporar usuarios, según el tamaño y la preferencia:
 ## Ayuda y recursos
 
 * [Primer inicio de sesión: Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-* [Configurar el acceso a AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=es#accessing)
+* [Configurar el acceso a AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#accessing)

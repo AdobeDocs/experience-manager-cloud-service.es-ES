@@ -2,9 +2,9 @@
 title: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1158'
 ht-degree: 83%
 
 ---
@@ -113,7 +113,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido versión
 
 ### Novedades {#what-is-new-ctt}
 
-* Comprobar protecciones de tamaño: la función de comprobación de tamaño de la herramienta de transferencia de contenido ayuda a reducir las transferencias de contenido fallidas.  Con la función Comprobar tamaño, los usuarios pueden 1) determinar si tienen suficiente espacio en disco en `crx-quickstart` antes de la extracción, y 2) estime el tamaño del conjunto de migración y verifique si es compatible. Si se infringen una o ambas comprobaciones, los usuarios ven advertencias en la IU de CTT. Con esta protección, puede evitar errores en la transferencia de contenido y discutir de forma proactiva las opciones de migración con el Servicio de atención al cliente de Adobe. Consulte [Determinar el tamaño del conjunto de migración y el espacio en disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es#migration-set-size) para obtener más información.
+* Comprobar protecciones de tamaño: la función de comprobación de tamaño de la herramienta de transferencia de contenido ayuda a reducir las transferencias de contenido fallidas.  Con la función Comprobar tamaño, los usuarios pueden 1) determinar si tienen suficiente espacio en disco en `crx-quickstart` antes de la extracción, y 2) estime el tamaño del conjunto de migración y verifique si es compatible. Si se infringen una o ambas comprobaciones, los usuarios ven advertencias en la IU de CTT. Con esta protección, puede evitar errores en la transferencia de contenido y discutir de forma proactiva las opciones de migración con el Servicio de atención al cliente de Adobe. Consulte [Determinar el tamaño del conjunto de migración y el espacio en disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) para obtener más información.
 
 ## Analizador de prácticas recomendadas {#bpa-release}
 

@@ -2,10 +2,10 @@
 title: Creación de un entorno
 description: En esta página se describe la creación de un entorno en Cloud Manager para Pantallas as a Cloud Service.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 9%
+source-wordcount: '194'
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 9%
 En esta sección se describe cómo crear un entorno para el programa en Cloud Manager.
 
 >[!NOTE]
->Consulte [Administración de entornos en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=es) para conocer cómo el usuario puede crear un entorno.
+>Consulte [Administración de entornos en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) para conocer cómo el usuario puede crear un entorno.
 
 ## Objetivo {#objective}
 

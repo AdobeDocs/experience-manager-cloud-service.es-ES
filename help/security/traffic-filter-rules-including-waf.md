@@ -2,7 +2,7 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '3357'
 ht-degree: 92%
@@ -54,7 +54,7 @@ De forma predeterminada, Adobe toma medidas para evitar la degradación del rend
 
 Los clientes pueden tomar medidas proactivas para mitigar los ataques de la capa de aplicación (capa 7) configurando reglas en varios niveles del flujo de distribución de contenido.
 
-Por ejemplo, en la capa de Apache, los clientes pueden configurar el [módulo de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#configuring-access-to-content-filter) o [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=es) para limitar el acceso a determinado contenido.
+Por ejemplo, en la capa de Apache, los clientes pueden configurar el [módulo de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter) o [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html) para limitar el acceso a determinado contenido.
 
 Y, tal como se describe en este artículo, las reglas de filtro de tráfico pueden implementarse en la red de distribución de contenido (CDN) administrada por Adobe mediante la canalización de configuración de Cloud Manager. Además de las reglas de filtro de tráfico basadas en propiedades como la dirección IP, la ruta y los encabezados o las reglas basadas en la configuración de límites de volumen, los clientes también pueden obtener una licencia de una potente subcategoría de reglas de filtro de tráfico denominadas reglas WAF.
 

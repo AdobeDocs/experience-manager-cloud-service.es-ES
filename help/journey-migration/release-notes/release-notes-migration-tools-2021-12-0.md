@@ -3,10 +3,10 @@ title: AEM Notas de la versión de las herramientas de migración de la versión
 description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2021.12.0 de
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 46%
+source-wordcount: '251'
+ht-degree: 45%
 
 ---
 
@@ -43,5 +43,5 @@ La fecha de versión de la herramienta de transferencia de contenido v1.7.10 es 
 
 ### Novedades {#what-is-new-ctt}
 
-* Alternar añadido a la fase de ingesta en la herramienta de transferencia de contenido para permitir que los usuarios deshabiliten [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) durante la ingesta. Para obtener velocidades de ingesta óptimas, la copia previa durante la ingesta debe deshabilitarse para conjuntos de migración pequeños o si solo se agregaron unos pocos blobs desde la última ingesta.
+* Alternar añadido a la fase de ingesta en la herramienta de transferencia de contenido para permitir que los usuarios deshabiliten [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante la ingesta. Para obtener velocidades de ingesta óptimas, la copia previa durante la ingesta debe deshabilitarse para conjuntos de migración pequeños o si solo se agregaron unos pocos blobs desde la última ingesta.
 * La asignación de usuarios se ha actualizado para utilizar la API de administración de usuarios mejorada que le permite obtener 2000 usuarios a la vez, lo que mejora significativamente el rendimiento.

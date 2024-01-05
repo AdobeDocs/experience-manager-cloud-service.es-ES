@@ -2,9 +2,9 @@
 title: Creación de una rama
 description: En esta página se describe la creación de una rama en Cloud Manager para Pantallas as a Cloud Service.
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '210'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 En esta sección se describe cómo crear una rama para el programa en Cloud Manager.
 
 >[!NOTE]
->Consulte [Uso del asistente en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=en) AEM para obtener información sobre cómo crear un proyecto de aplicación de en Cloud Manager mediante el asistente.
+>Consulte [Uso del asistente en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html) AEM para obtener información sobre cómo crear un proyecto de aplicación de en Cloud Manager mediante el asistente.
 
 ## Objetivo {#objective}
 

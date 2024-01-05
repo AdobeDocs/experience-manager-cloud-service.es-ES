@@ -3,9 +3,9 @@ title: Consideraciones de permisos para contenido sin encabezado
 description: Obtenga información acerca de diferentes consideraciones de permisos y ACL para una implementación sin encabezado con Adobe Experience Manager. Comprenda los diferentes perfiles y los niveles de permisos potenciales necesarios para los entornos de creación y publicación.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '811'
 ht-degree: 96%
 
 ---
@@ -22,7 +22,7 @@ El servicio de creación es donde los usuarios internos crean, administran y pub
 
 Como práctica recomendada, los permisos deben establecerse en Grupos en AEM. También conocidos como grupos locales, estos grupos se pueden administrar dentro del entorno de creación de AEM.
 
-La forma más sencilla de administrar los miembros del grupo es utilizar los grupos de Adobe Identity Management System (IMS) y asignar [grupos de IMS a grupos de AEM locales](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=es#managing-permissions-in-aem).
+La forma más sencilla de administrar los miembros del grupo es utilizar los grupos de Adobe Identity Management System (IMS) y asignar [grupos de IMS a grupos de AEM locales](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem).
 
 ![Flujo de permisos de Admin Console](assets/admin-console-aem-group-permissions.png)
 
