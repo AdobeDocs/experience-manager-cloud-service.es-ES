@@ -1,29 +1,29 @@
 ---
-title: Tipos de campo para el editor universal
-description: Conozca los diferentes tipos de campos que admite el editor universal y qué puede instrumentar para sus propias aplicaciones.
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+title: Tipos de campos
+description: Obtenga información sobre los distintos tipos de campos que el editor universal puede editar en el carril de componentes con ejemplos de cómo instrumentar su propia aplicación.
+source-git-commit: b1a188d01371665b4375087847625d89e47d8927
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 7%
+source-wordcount: '278'
+ht-degree: 8%
 
 ---
 
 
-# Tipos de campo para el editor universal {#field-types}
+# Tipos de campos {#field-types}
 
-Conozca los diferentes tipos de campos que admite el editor universal y qué puede instrumentar para sus propias aplicaciones.
+Obtenga información sobre los distintos tipos de campos que el editor universal puede editar en el carril de componentes con ejemplos de cómo instrumentar su propia aplicación.
 
 {{universal-editor-status}}
 
 ## Información general {#overview}
 
-Al adaptar sus propias aplicaciones para utilizarlas con el editor universal, debe instrumentar los componentes y definir qué tipos de datos pueden manipular en el editor.
+Al adaptar sus propias aplicaciones para utilizarlas con el editor universal, debe instrumentar los componentes y definir qué tipos de datos pueden manipular en el carril de componentes del editor.
 
-Este documento proporciona información general sobre los tipos de campo disponibles en el editor.
+Este documento proporciona información general sobre los tipos de campo disponibles junto con ejemplos de configuración.
 
 >[!TIP]
 >
->Si no conoce cómo instrumentar la aplicación para el editor universal, consulte el documento [AEM Información general del editor universal para desarrolladores de.](help/implementing/universal-editor/developer-overview.md)
+>Si no conoce cómo instrumentar la aplicación para el editor universal, consulte el documento [AEM Información general del editor universal para desarrolladores de.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Booleano {#boolean}
 
