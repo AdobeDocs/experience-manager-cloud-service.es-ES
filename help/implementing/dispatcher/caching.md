@@ -3,9 +3,9 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: AEM Obtenga información acerca de los conceptos básicos del almacenamiento en caché en as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
 workflow-type: tm+mt
-source-wordcount: '2775'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -241,6 +241,28 @@ En el caso de los entornos creados en octubre de 2023 o posterior, para almacena
 Envíe un ticket de asistencia si desea deshabilitar este comportamiento.
 
 En el caso de entornos creados antes de octubre de 2023, se recomienda configurar el de `ignoreUrlParams` propiedad como [documentado aquí](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+
+Existen dos formas de ignorar los parámetros de marketing. (Donde se prefiere el primero para ignorar la eliminación de caché mediante parámetros de consulta):
+
+1. Ignore todos los parámetros y permita selectivamente los parámetros utilizados.
+Solo en el ejemplo siguiente `page` y `product` Los parámetros de no se ignoran y las solicitudes se reenvían al editor.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. Permitir todos los parámetros excepto los de marketing. El archivo [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) define una lista de parámetros de marketing que se ignorarán y que se utilizarán con frecuencia. El Adobe no actualizará este archivo. Los usuarios pueden ampliarla en función de sus proveedores de marketing.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
 
 
 ## Invalidación de caché de Dispatcher {#disp}
