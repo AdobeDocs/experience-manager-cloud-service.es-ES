@@ -3,10 +3,10 @@ title: AEM ¿Cuáles son las diferencias entre los Cloud Service de Forms AEM y 
 description: Compare AEM 6.5 Forms y AEM Cloud Services y aprenda los cambios más importantes antes de actualizar o migrar a Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 0acaea02ad4ba647373eedecb444e9a7911d108d
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 72%
+source-wordcount: '1317'
+ht-degree: 67%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager Forms as a Cloud Service incluye algunos cambios import
 
   ![creación automática de un repositorio de Git en el programa de AEM as a Cloud Service](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
-* El flujo de desarrollo para Forms as a Cloud Service se alinea con el Arquetipo del proyecto de AEM para AEM Cloud Service. Con todo, se requieren algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. En un nivel superior, AEM requiere una separación de contenido y código en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Utilice la herramienta [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=es)Modernizador de repositorio para reestructurar los paquetes de proyectos existentes separando contenido y código en paquetes discretos para que sean compatibles con la estructura de proyectos definida para Adobe Experience Manager as a Cloud Service.
+* El flujo de desarrollo para Forms as a Cloud Service se alinea con el Arquetipo del proyecto de AEM para AEM Cloud Service. Con todo, se requieren algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. En un nivel superior, AEM requiere una separación de contenido y código en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Utilice la herramienta [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=es)Modernizador de repositorio para reestructurar los paquetes de proyectos existentes separando contenido y código en paquetes discretos para que sean compatibles con la estructura de proyectos definida para Adobe Experience Manager as a Cloud Service.
 
 * Antes de utilizar los paquetes de clientes con Forms as a Cloud Service, vuelva a compilar el código personalizado con la última versión de adobe-aemfd-docmanager.
 
@@ -52,7 +52,9 @@ Adobe Experience Manager Forms as a Cloud Service incluye algunos cambios import
 
   El [utilidad de migración](/help/forms/migrate-to-forms-as-a-cloud-service.md) le ayuda a migrar formularios que tienen reglas personalizadas (creadas en el editor de código). La utilidad convierte estas reglas en funciones personalizadas compatibles con Forms as a Cloud Service. Puede emplear las funciones reutilizables con el Editor de reglas para seguir obteniendo resultados con secuencias de comandos de reglas. Las funciones `onSubmitError` o `onSubmitSuccess` están ahora disponibles como acciones en el Editor de reglas.
 
-* **Servicio de relleno previo:** de forma predeterminada, el servicio de relleno previo combina los datos con un formulario adaptable en el cliente en lugar de combinar los datos en el Servidor en AEM 6.5 Forms. La funcionalidad ayuda a mejorar el tiempo necesario para rellenar previamente un formulario adaptable. Siempre puede configurarlo para ejecutar la acción de combinación en el servidor de Adobe Experience Manager Forms.
+<!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
+
+* **Servicio de relleno previo:** El servicio de prerrellenado recupera datos del servidor y los combina para prerrellenar el Forms adaptable en el lado del cliente. Esta función ayuda a mejorar el tiempo necesario para rellenar un formulario adaptable. Siempre puede configurar la variable [servicio de prerrellenar](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) para ejecutar la acción de combinación en Adobe Experience Manager Forms Server.
 
 * **Acciones de envío:** la acción de envío **Correo electrónico** proporciona opciones para enviar archivos adjuntos y adjuntar documentos de registro (DoR) mediante correo electrónico. Puede utilizarlo en lugar de la variable **Correo electrónico como PDF** AEM acción disponible en Forms de 6.5.
 
