@@ -3,10 +3,10 @@ title: Obtenga información sobre cómo buscar y descubrir recursos en [!DNL Ass
 description: Obtenga información sobre cómo buscar y descubrir recursos en la vista de AEM Assets. La potente funcionalidad de búsqueda le permite descubrir rápidamente el recurso adecuado y ayudarle a mejorar la velocidad del contenido.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 74%
+source-wordcount: '1470'
+ht-degree: 63%
 
 ---
 
@@ -29,6 +29,20 @@ Para buscar recursos, haga lo siguiente:
    * Busque con una palabra clave y, si quiere, cambie la carpeta. Pulse Intro.
 
    * Empiece a trabajar con un recurso visualizado hace poco directamente buscándolo. Haga clic en el cuadro de búsqueda y seleccione un recurso visualizado recientemente en las sugerencias.
+
+## Buscar recursos mediante el Adobe Firefly
+
+Si está buscando un recurso que no está disponible en ninguna de las carpetas de recursos, utilice la variable [!UICONTROL Adobe Firefly] función de búsqueda de recursos dentro de [!UICONTROL Adobe Experience Manager Assets]. Permite buscar de forma eficaz recursos que pueden no almacenarse en las carpetas designadas. Actualmente, solo pueden acceder a esta función los usuarios con derechos especiales. <br> Por ejemplo, puede buscar un recurso mediante la palabra clave `Bugatti Type 57`. Al buscar `Bugatti Type 57`, no se encuentran resultados.
+
+![Integración de Firefly](assets/firefly-integration.jpg)
+*Imagen: no se han encontrado resultados para Bugatti Type 57 en la carpeta de recursos.*
+
+En la barra de búsqueda, introduzca el nombre del recurso y haga clic en **[!UICONTROL Generar]**.
+
+![Integración de Firefly](assets/bugatti-type-57.jpg)
+*Imagen: recursos de referencia buscados mediante la función de búsqueda de recursos de Adobe Firefly.*
+
+Los recursos de muestra se muestran en la pantalla. Puede cargar estos recursos en su carpeta preferida para acceder fácilmente a ellos.
 
 ## Filtrado de los resultados de búsqueda {#refine-search-results}
 
@@ -120,7 +134,6 @@ Para eliminar filtros personalizados:
 
 1. Haga clic en **[!UICONTROL Confirmar]** para eliminar los filtros de la interfaz de usuario.
 
-
 ## Búsquedas guardadas {#saved-search}
 
 La funcionalidad de búsqueda es bastante fácil de usar en [!DNL Assets view]. Desde el cuadro de búsqueda, puede escribir una palabra clave y pulsar Intro para ver los resultados, o puede buscar rápidamente de nuevo las palabras clave buscadas recientemente con un solo clic.
@@ -146,11 +159,21 @@ When userA is searching and userB add an asset that matches search results, will
 
 Puede seleccionar los recursos que se muestran en los resultados de búsqueda y realizar las acciones siguientes:
 
+* **Buscar imagen similar**: busque un recurso de imagen similar en la interfaz de usuario de Assets en función de los metadatos y las etiquetas inteligentes.
+
 * **Detalles**: ver y editar las propiedades del recurso.
+
+* **Descargar**: descargar un recurso.
 
 * **Añadir a la colección**: añadir el recurso seleccionado a una colección.
 
-* **Descargar**: descargar un recurso.
+* **Fijar en Acceso rápido**: [fijar un recurso](my-workspace-assets-view.md) para un acceso más rápido cuando lo necesite más tarde. Todos los elementos fijados se muestran en la sección **Acceso rápido** de Mi espacio de trabajo.
+
+* **Abrir en Adobe Express**: edite una imagen en el Adobe Express integrado desde la pantalla de Adobe Experience Manager Assets.
+
+* **Editar**: edite la imagen con el Adobe Express.
+
+* **Compartir vínculo**: [compartir vínculos](share-links-for-assets-view.md) para un recurso con otros usuarios para que puedan acceder a él y descargarlo.
 
 * **Eliminar**: eliminar un recurso.
 
@@ -160,15 +183,11 @@ Puede seleccionar los recursos que se muestran en los resultados de búsqueda y 
 
 * **Cambiar nombre**: cambiar el nombre de un recurso.
 
+* **Copiar a bibliotecas**: agregue un recurso a la biblioteca.
+
 * **Asignar tareas**: asignar tareas a los usuarios de un recurso.
 
-* **Compartir vínculo**: [compartir vínculos](share-links-for-assets-view.md) para un recurso con otros usuarios para que puedan acceder a él y descargarlo.
-
 * **Ver**: [monitorizar las operaciones](manage-notifications-assets-view.md) realizadas en un recurso.
-
-* **Mostrar ubicación del archivo**: ir a la ubicación de la carpeta de recursos.
-
-* **Fijar en Acceso rápido**: [fijar un recurso](my-workspace-assets-view.md) para un acceso más rápido cuando lo necesite más tarde. Todos los elementos fijados se muestran en la sección **Acceso rápido** de Mi espacio de trabajo.
 
 ## Configurar la primera página de inicio de búsqueda {#configuring-search-first-homepage}
 
