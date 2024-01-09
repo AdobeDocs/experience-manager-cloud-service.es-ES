@@ -3,12 +3,13 @@ title: Trabajar con sus propios repositorios de GitHub en Cloud Manager
 description: Obtenga información sobre cómo configurar Cloud Manager para que funcione con sus propios repositorios de GitHub.
 feature: Release Information
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: ce9d65179d9cc1f02f786516554e07c95a89484d
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 70%
 
 ---
+
 
 # Trabajar con sus propios repositorios de GitHub en Cloud Manager {#byo-github}
 
@@ -54,7 +55,7 @@ Cloud Manager ahora conoce su repositorio de GitHub, pero aún necesita acceso. 
    ![Validación de propiedad de repositorio privado](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
 1. Cloud Manager utiliza una aplicación de GitHub para interactuar de forma segura con el repositorio.
-   * Un propietario de su organización de GitHub debe instalar la aplicación ubicada en `https://github.com/apps/cloud-manager-for-aem-stage` y otorgar acceso al repositorio.
+   * Un propietario de su organización de GitHub debe instalar la aplicación ubicada en `https://github.com/apps/cloud-manager-for-aem` y otorgar acceso al repositorio.
    * Consulte la documentación de GitHub para obtener más información sobre cómo hacerlo.
 
 1. Para mejorar la seguridad, debe crear un archivo secreto en la rama predeterminada del repositorio. Seleccionar **Generar**.
