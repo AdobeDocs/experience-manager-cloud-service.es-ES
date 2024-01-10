@@ -1,12 +1,12 @@
 ---
-title: Configuración de [!DNL Workfront for Experience Manager enhanced connector]
-description: Configuración de [!DNL Workfront for Experience Manager enhanced connector]
+title: Configurar [!DNL Workfront for Experience Manager enhanced connector]
+description: Configurar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1760'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] as a [
 
 >[!IMPORTANT]
 >
-> A partir de junio de 2022, Adobe lanzó una nueva integración nativa para conectar Workfront con Adobe Experience Manager Assets as a Cloud Service. Esta integración se ha convertido en el método requerido para conectar estas dos soluciones. Cualquier nueva implementación futura del conector mejorado (1.9.8 y posterior) para conectar Workfront con AEM Assets as a Cloud Service está bloqueada.
+> En junio de 2022, Adobe lanzó una nueva integración nativa para conectar Workfront con Adobe Experience Manager Assets as a Cloud Service. Esta integración se ha convertido en el método requerido para conectar estas dos soluciones. Cualquier nueva implementación futura del conector mejorado (1.9.8 y posterior) para conectar Workfront con AEM Assets as a Cloud Service está bloqueada.
 
 >[!IMPORTANT]
 >
@@ -63,6 +63,7 @@ Para suscribirse a los eventos, siga estos pasos:
 1. Vaya a la pestaña Carpetas vinculadas del proyecto en los servicios en la nube.
 1. Ruta principal de la carpeta vinculada: seleccione una carpeta en DAM en la que desee crear las carpetas vinculadas. Si se deja vacío, el valor predeterminado será /content/dam. Asegúrese de que el esquema de metadatos de Workfront Tools y el esquema de metadatos de la carpeta de carpetas vinculadas de Workfront se hayan aplicado a la carpeta seleccionada.
 1. Estructura de carpetas vinculadas: introduzca valores separados por comas. Cada valor debe ser `DE:<some-project-custom-form-field>`, Portfolio, Programa, Año, Nombre o algún &quot;Valor de cadena literal&quot; (este último con comillas). Actualmente está establecido en Portfolio, Programa, Año, DE: Tipo de proyecto, Nombre.
+1. Configuración de permisos: Añadir `jcr:all permissions` permisos para `/conf/workfront-tools/settings/cloudconfigs` para `wf-workfront-users` grupo.
 1. La casilla de verificación Generar título de carpeta vinculado en Workfront mediante los nombres de estructura de carpetas debe activarse si el título de la carpeta en Workfront debe incluir todas las carpetas de la estructura. De lo contrario, es el título de la última carpeta.
 1. Subcarpetas multicampo permite especificar una lista de carpetas que deben crearse como una carpeta secundaria de la carpeta vinculada.
 1. Estado del proyecto: seleccione el estado para el que se debe configurar el proyecto para crear la carpeta vinculada.
