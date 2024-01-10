@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
+source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 33%
+source-wordcount: '381'
+ht-degree: 32%
 
 ---
 
@@ -43,7 +43,7 @@ La activación de funciones 2023.12.0 proporciona el conjunto completo de funcio
 
 ### Problemas conocidos {#known-issues-14697}
 
-Ninguna.
+* GRANITE-49031: Regresión que resulta en `@JsonIgnore` anotación que se ignora en campos transitorios.
 
 ### Tecnologías integradas {#embedded-tech-14697}
 
