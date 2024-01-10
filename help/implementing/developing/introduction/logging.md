@@ -2,9 +2,9 @@
 title: AEM Registro para la as a Cloud Service
 description: AEM Obtenga información sobre cómo utilizar Registro para el registro as a Cloud Service para configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2755'
 ht-degree: 8%
 
 ---
@@ -397,7 +397,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 La variable REWRITE_LOG_LEVEL del archivo define los niveles de registro mod_rewrite `conf.d/variables/global.var`.
 
-Se puede establecer en error, warn, info, debug y trace1 - trace8, con un valor predeterminado de warn. Para depurar RewriteRules, se recomienda elevar el nivel de registro a trace2.
+Se puede establecer en error, warn, info, debug y trace1 - trace8, con un valor predeterminado de warn. Para depurar RewriteRules, se recomienda elevar el nivel de registro a trace2. Se recomienda depurar las reglas de reescritura utilizando [SDK de Dispatcher](../../dispatcher/validation-debug.md). AEM El nivel máximo de registro para el as a Cloud Service es de 3000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 `debug`. Por lo tanto, actualmente no es posible depurar y reescribir reglas en la nube.
 
 Consulte la [Documentación del módulo mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) para obtener más información.
 
